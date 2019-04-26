@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Экспорт шейдера
+title: Как выполнить Экспорт шейдера
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d0a962fe941f676369c4c3575647610df809d58
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844401"
 ---
-# <a name="how-to-export-a-shader"></a>Как выполнить  Экспорт шейдера
+# <a name="how-to-export-a-shader"></a>Как выполнить Экспорт шейдера
 
 В этом документе показано, как использовать **конструктор шейдеров**, чтобы экспортировать шейдер DGSL для использования в приложении.
 

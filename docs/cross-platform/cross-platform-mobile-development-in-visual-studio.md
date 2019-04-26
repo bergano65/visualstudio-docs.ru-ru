@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: fcf28d844124b7a2ae8a0b380739433261c5a3ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816190"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 
@@ -40,7 +40,7 @@ ms.locfileid: "58069688"
 |[См. дополнительные сведения об универсальных приложениях Windows в Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Сведения о сходстве между Swift и C#](https://aka.ms/scposter) (download.microsoft.com)|
 
-###  <a name="AndroidHTML"></a> Целевые устройства Android, iOS и Windows из единой базы кода
+### <a name="AndroidHTML"></a> Целевые устройства Android, iOS и Windows из единой базы кода
 
  Вы можете создавать собственные приложения для Android, iOS и Windows с помощью C# и F# (Visual Basic сейчас не поддерживается).  Чтобы приступить к работе, установите Visual Studio 2017 и выберите в программе установки вариант **Разработка мобильных приложений на .NET**.
 
@@ -56,7 +56,7 @@ ms.locfileid: "58069688"
 
  В зависимости от сложности конструкции приложения, возможно, имеет смысл использовать для его создания шаблоны *Xamarin.Forms* в группе шаблонов проектов **Мобильные приложения** . Xamarin.Forms — это набор средств разработки пользовательского интерфейса, с помощью которого можно создать единый интерфейс приложения для совместного использования на устройствах Android, iOS и Windows.  При компиляции решения Xamarin.Forms вы получаете приложение для Android, приложение для iOS и приложение для Windows. Дополнительные сведения см. в разделе [Дополнительные сведения о разработке мобильных приложений с помощью Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) и в [документации по Xamarin.Forms](/xamarin/xamarin-forms/).
 
-####  <a name="ShareHTML"></a> Совместное использование кода приложениями Android, iOS и Windows
+#### <a name="ShareHTML"></a> Совместное использование кода приложениями Android, iOS и Windows
 
  Если вы не используете Xamarin.Forms и предпочитаете разрабатывать приложения для каждой платформы отдельно, вы можете совместно использовать большую часть кода, не относящегося к пользовательскому интерфейсу, в проектах для разных платформ (Android, iOS и Windows). К нему относятся любая бизнес-логика, интеграция в облаке, доступ к базе данных или любой другой код, предназначенный для платформы .NET Framework. Единственным кодом, который нельзя совместно использовать, является код, предназначенный для конкретной платформы.
 
@@ -69,7 +69,7 @@ ms.locfileid: "58069688"
 |[Варианты совместного использования кода](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[Варианты общего доступа к коду в .NET](/dotnet/standard/cross-platform/) |
 
-###  <a name="WindowsHTML"></a> Целевые устройства Windows 10
+### <a name="WindowsHTML"></a> Целевые устройства Windows 10
 
  ![Устройства Windows](../cross-platform/media/windowsdevices.png "Устройства Windows")
 
@@ -84,7 +84,7 @@ ms.locfileid: "58069688"
 |[Разработка приложений для универсальной платформы Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Перенос приложений на универсальную платформу Windows (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
-##  <a name="HTML"></a> Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)
+## <a name="HTML"></a> Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)
 
  ![Устройства Windows, iOS и Android](../cross-platform/media/homedevices.png "Устройства Windows, iOS и Android")
 

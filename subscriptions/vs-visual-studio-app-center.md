@@ -7,24 +7,24 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о преимуществе Центра приложений Visual Studio, включенном в подписки Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 30953834e36cb88e79a800e0356ac59189165aee
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0d9f673e0b78b708883beb797809eac1303e2ff6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810866"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Центр приложений Visual Studio в подписках Visual Studio
 
 Центр приложений выполняет роль центра управления приложениями.
 
--  Здесь вы можете выполнять автоматическую сборку, проверять приложение на реальных устройствах и передавать его тем, кто тестирует бета-версии.
--  Здесь же собираются отчеты об аварийном завершении и аналитические данные по пользователям, включая пользовательские события.
--  За пару минут вы можете добавить в приложение push-уведомления.
+- Здесь вы можете выполнять автоматическую сборку, проверять приложение на реальных устройствах и передавать его тем, кто тестирует бета-версии.
+- Здесь же собираются отчеты об аварийном завершении и аналитические данные по пользователям, включая пользовательские события.
+- За пару минут вы можете добавить в приложение push-уведомления.
 
 ## <a name="activation-steps"></a>Процедура активации
 Начать работу с Центром приложений Visual Studio очень просто.
-1.  Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Найдите плитку Центра приложений Visual Studio и щелкните **Начало работы**.
     > [!div class="mx-imgBorder"]
@@ -48,13 +48,10 @@ ms.locfileid: "56843569"
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Включено                                                            |Да |
 | Visual Studio Dev Essentials | Н/Д  | Включено                                                            |Да |
 
-
 <sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), FTE, отраслевой партнер Visual Studio (VSIP), Imagine, Microsoft Partner Network (MPN), ПО и службы MCT, разработчик ПО и служб MCT, BizSpark, Most Valuable Professional (MVP), региональный директор (RD).*
-
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
-
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
@@ -62,15 +59,15 @@ ms.locfileid: "56843569"
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>Вопрос:  Происходит ошибка с сообщением о том, что браузер не поддерживается.  В чем проблема?
 Ответ.  Центр приложений использует современные возможности, которые доступны не во всех старых браузерах.  Если ваш браузер не поддерживается, выполните следующие действия.
-1.  Откройте другой браузер, например Microsoft Edge или последние версии Google Chrome, Firefox или Safari.
-2.  Подключитесь к Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и выполните вход.
-3.  Теперь щелкните ссылку **Начать работу** на плитке Центра приложений Visual Studio.
+1. Откройте другой браузер, например Microsoft Edge или последние версии Google Chrome, Firefox или Safari.
+2. Подключитесь к Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и выполните вход.
+3. Теперь щелкните ссылку **Начать работу** на плитке Центра приложений Visual Studio.
 
 Теперь вы сможете открыть портал Центра приложений и создать учетную запись.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Вам нужна помощь по работе с Центром приложений?
+- Вам нужна помощь по работе с Центром приложений?
     - Получите советы и ответы от команды Центра приложений в [центре справки Центра приложений](https://intercom.help/appcenter/).
     - Изучите подробную [документацию по Центру приложений](/appcenter/).
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

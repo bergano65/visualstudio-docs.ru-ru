@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: Как назначать подписки Visual Studio конечным пользователям для партнеров MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412392"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Управление подписками Visual Studio, предоставленными через Microsoft Partner Network (MPN)
 
@@ -42,7 +42,6 @@ ms.locfileid: "56842487"
     - Контактный адрес электронной почты
 13. После этого вход считается завершенным и подписчик получает доступ к преимуществам.
 
-
 ### <a name="competency-partners"></a>Партнеры с компетенциями
 1. Выберите **Требования**.
 2. Выберите **Привилегии**.
@@ -66,7 +65,7 @@ ms.locfileid: "56842487"
 
 > [!NOTE]
 > Роль контактного лица по техническим вопросам является обязательной для подписок Visual Studio.
->     - Стр. 8 — назначение подписок Visual Studio для партнеров с компетенциями.
+> - Стр. 8 — назначение подписок Visual Studio для партнеров с компетенциями.
 
 ## <a name="need-help"></a>Нужна помощь?
 Подписчики и администраторы программ могут обратиться напрямую в службу поддержки Microsoft Partner Network, чтобы устранить любые проблемы, в том числе с доступом к подпискам. Посетите страницу [поддержки для партнеров](https://partner.microsoft.com/support), чтобы получить помощь. (Для входа нужно ввести учетные данные MPN.)

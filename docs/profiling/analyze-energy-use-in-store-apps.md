@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e16261020a737651fc79c3fb3eb1da6a539cee34
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777262"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Анализ энергопотребления в приложениях универсальной платформы Windows
 
@@ -88,18 +88,18 @@ if (performance && performance.mark) {
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>Сбор данных профилирования расхода энергии приложением
 
-1.  В меню **Отладка** выберите **Запуск диагностики без отладки**.
+1. В меню **Отладка** выберите **Запуск диагностики без отладки**.
 
      ![Выбор расхода энергии в концентраторе диагностики](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
-2.  Выберите **Расход энергии** и нажмите кнопку **Запуск**.
+2. Выберите **Расход энергии** и нажмите кнопку **Запуск**.
 
     > [!NOTE]
     > При запуске профилировщика **Расход энергии** может появиться окно **Контроль учетных записей** с запросом на разрешение запуска файла *VsEtwCollector.exe*. Выберите **Да**.
 
-3.  Запустите приложение для сбора данных.
+3. Запустите приложение для сбора данных.
 
-4.  Чтобы остановить профилирование, вернитесь в Visual Studio (использовав сочетание клавиш Alt + Tab) и на странице "Концентратор диагностики" выберите **Остановка сбора** .
+4. Чтобы остановить профилирование, вернитесь в Visual Studio (использовав сочетание клавиш Alt + Tab) и на странице "Концентратор диагностики" выберите **Остановка сбора** .
 
      ![Остановка сбора данных](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 

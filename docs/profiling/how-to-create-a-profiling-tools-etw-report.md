@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310c43ea4dbdf1f50a76b574ec52baa589769034
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1208080a13c807b95e1a279606568324cab2b8cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439141"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Как выполнить Создание отчета трассировки событий Windows для средств профилирования
 Отчет трассировки событий для Windows информирует о событиях трассировки событий Windows, которые были сохранены в ходе сеанса анализа производительности для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Данные трассировки событий Windows собираются в двоичном *ETL*-файле. Дополнительные сведения об отчете трассировки событий Windows см. в статье [Отчет трассировки событий Windows](../profiling/event-tracing-for-windows-etw-report.md).
 
 > [!NOTE]
->  Отчеты трассировки событий Windows невозможно отобразить в интерфейсе [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+> Отчеты трассировки событий Windows невозможно отобразить в интерфейсе [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 - Сведения о сборе данных трассировки событий Windows с помощью интерфейса [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] см. в статье [Практическое руководство. Сбор данных трассировки событий Windows](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).
 
@@ -29,7 +29,7 @@ ms.locfileid: "56614471"
 
 ### <a name="to-generate-an-etw-report"></a>Создание отчета трассировки событий Windows
 
--   В окне **командной строки** введите следующую команду:
+- В окне **командной строки** введите следующую команду:
 
      *ToolsPath* **VSPerfReport** *VSPFile* **/Summary:ETW [/Xml]**
 

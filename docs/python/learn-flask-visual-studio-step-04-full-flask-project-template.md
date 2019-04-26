@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957321"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Шаг 4. Использование полного шаблона веб-проекта Flask
 
@@ -169,6 +169,7 @@ def about():
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 В папке *templates* вы видите файлы *JADE* вместо шаблонов *HTML*, и представления в *views.py* ссылаются на эти файлы в вызовах к `flask.render_template`. В противном случае код представлений будет тем же.
 
 Открыв один из файлов *JADE*, можно увидеть более короткое выражение шаблона. Например, вот содержимое *templates/layout.jade*, созданное с помощью шаблона "Веб-проект Flask/Jade":
@@ -229,7 +230,7 @@ block content
 ## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
-> [Шаблон веб-проекта опроса Flask](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+> [Шаблон веб-проекта опроса Flask](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
 
 ## <a name="go-deeper"></a>Дополнительные подробности
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о преимуществе сообщества Azure, включенном в некоторые подписки Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 78c6954cd6dbbee48a3754d7d58eaa34b2e17158
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 154c0164f5126fc38d0e0af5ec5703faacb9f94f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948331"
 ---
 # <a name="azure-community"></a>Сообщество Azure
 
@@ -28,8 +28,6 @@ ms.locfileid: "56842108"
 | [Портал управления Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [виртуальные машины Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc);                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-
-
 ## <a name="activation-steps"></a>Процедура активации
 Вы можете очень легко начать взаимодействие с сообществом Azure.
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -42,13 +40,12 @@ ms.locfileid: "56842108"
     > [!div class="mx-imgBorder"]
     > ![Форумы сообщества Azure](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  На форуме вы можете просмотреть темы и ответы, поискать ответы на свой вопрос или опубликовать новый вопрос.
+4. На форуме вы можете просмотреть темы и ответы, поискать ответы на свой вопрос или опубликовать новый вопрос.
     > [!div class="mx-imgBorder"]
     > ![Пример сообщества Azure](_img/vs-azure-community/vs-azure-community-example.png)
 
 ## <a name="eligibility"></a>Право на участие
 Доступность преимущества сообщества Azure зависит от уровня подписки, как показано ниже.
-
 
 |                                          Уровень подписки                                           |     Каналы      |    Преимущество    | Возможность возобновления |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
@@ -65,11 +62,10 @@ ms.locfileid: "56842108"
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
-
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Другие ресурсы сообщества Azure представлены на [странице поддержки](https://azure.microsoft.com/support/forums/) сообщества Azure.
--  [Документация по Azure](/azure/).
--  Вам нужна помощь по вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio?  Обратитесь в [службу поддержки по подпискам на Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
--  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+- Другие ресурсы сообщества Azure представлены на [странице поддержки](https://azure.microsoft.com/support/forums/) сообщества Azure.
+- [Документация по Azure](/azure/).
+- Вам нужна помощь по вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio?  Обратитесь в [службу поддержки по подпискам на Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+- У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

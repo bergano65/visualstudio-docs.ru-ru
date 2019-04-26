@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af6789bc858a9281084523b2e99c7daca38c4159
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407568"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 Метод `CommentMarkAtProfile` вставляет значение метки времени, числовую метку и строку комментария в *VSP*-файл. Значение метки времени можно использовать для синхронизации внешних событий. Чтобы вставить метку и комментарий, необходимо включить профилирование для потока, содержащего функцию CommentMarkAtProfile.
@@ -60,7 +60,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
  Для потока, содержащего функцию метки профиля, должно быть включено состояние профилирования, чтобы вставить метку и комментарий с помощью команды Mark или функций API (CommentMarkAtProfile, CommentMarkProfile или MarkProfile). Метки профилирования имеют глобальную область видимости. Например, вставленную в любом потоке метку профиля можно использовать для обозначения начала или конца сегмента данных в любом потоке в VSP-файле.
 
 > [!IMPORTANT]
->  Методы CommentMarkAtProfile следует использовать только при профилировании с инструментированием.
+> Методы CommentMarkAtProfile следует использовать только при профилировании с инструментированием.
 
 ## <a name="net-framework-equivalent"></a>Эквивалент .NET Framework
  *Microsoft.VisualStudio.Profiler.dll*

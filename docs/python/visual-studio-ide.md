@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957519"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Введение в интегрированную среду разработки Visual Studio (Python)
 
 *Интегрированная среда разработки* Visual Studio — это оригинальная среда запуска для Python и других языков программирования, которая позволяет редактировать, отлаживать и тестировать код, а затем публиковать приложения. Интегрированная среда разработки (IDE) — это многофункциональная программа, которую можно использовать для различных аспектов разработки программного обеспечения. Помимо стандартного редактора и отладчика, которые предлагаются в большинстве сред IDE, Visual Studio включает средства дополнения кода, графические среды REPL и другие функции, позволяющие упростить процесс разработки программного обеспечения.
 
-[![VVisual Studio с открытым проектом Python(media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![Visual Studio с открытым проектом Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 На этом рисунке показана среда Visual Studio, в которой открыт проект Python и несколько окон с основными инструментами, которые вы будете часто использовать.
 

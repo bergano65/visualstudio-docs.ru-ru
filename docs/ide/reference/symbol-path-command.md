@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23a7a59ca23dc444bcdc714ade2fce5bedb87e8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945132"
 ---
 # <a name="symbol-path-command"></a>Команда Symbol Path
 Задает список каталогов для поиска символов отладчиком.

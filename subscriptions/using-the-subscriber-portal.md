@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Сведения о полном наборе преимуществ, доступных на портале подписок Visual Studio
 searchscope: VS Subscription
 ms.openlocfilehash: fcf8d9c9ddd88fd6f00c0b59c92c5e51af7a6ca1
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809167"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Сведения об использовании портала подписчика (my.visualstudio.com)
 

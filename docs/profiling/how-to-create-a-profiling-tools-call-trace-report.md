@@ -11,24 +11,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdfe600192e61e8e7721c0e5486afafbedcaa6eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dfe32847a37453b6a24a58538b2642fba66e4971
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439129"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Как выполнить Создание отчета трассировки вызовов для средств профилирования
 *Отчет о трассировке вызовов* для средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] содержит сведения о времени для каждой точки входа и выхода в функциях приложения, а также для каждого вызова других функций вашей функцией. Отчеты о трассировке вызовов доступны для данных профилирования, только если они были собраны с помощью метода инструментирования.
 
 > [!NOTE]
->  Отчеты о трассировке вызовов невозможно отобразить в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Для создания файла значений с разделителями запятыми (*CSV*) или *XML*-файла следует использовать программу командной строки **VSPerfReport**. Дополнительные сведения об этой программе см. в разделе [VSPerfReport](../profiling/vsperfreport.md).
+> Отчеты о трассировке вызовов невозможно отобразить в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Для создания файла значений с разделителями запятыми (*CSV*) или *XML*-файла следует использовать программу командной строки **VSPerfReport**. Дополнительные сведения об этой программе см. в разделе [VSPerfReport](../profiling/vsperfreport.md).
 
 ### <a name="to-create-a-call-trace-report"></a>Создание отчета от трассировке вызовов
 
-1.  Откройте окно **командной строки**.
+1. Откройте окно **командной строки**.
 
-2.  В командной строке введите следующую команду:
+2. В командной строке введите следующую команду:
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
 
@@ -37,7 +37,6 @@ ms.locfileid: "56624221"
     |*ToolsPath*|Путь к инструментам программы командной строки средств профилирования. Дополнительные сведения см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
     |*VSPFile*|Файл данных профилирования (*VSP* или *VSPS*). Допускаются полные или частичные пути.|
     |Xml|Создает отчет в формате XML.|
-
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Сбор данных трассировки событий Windows](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)

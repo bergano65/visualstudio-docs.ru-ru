@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549315"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Практическое руководство. Отключение предупреждений компилятора
+# <a name="how-to-suppress-compiler-warnings"></a>Как выполнить Отключение предупреждений компилятора
 
 Отфильтровав предупреждения компилятора одного или нескольких видов, вы сможете убрать лишнюю информацию из журнала сборки. Например, вы можете регулировать объем выходных данных, изменяя уровень детализации журнала сборки: **обычный**, **подробный** или **диагностический**. Дополнительные сведения о детализации см. в разделе [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md).
 

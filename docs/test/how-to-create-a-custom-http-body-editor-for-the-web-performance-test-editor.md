@@ -8,14 +8,14 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8eef7dd68ba29f4a0100dfe5207c0b6179a76410
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2a90d0e02d5ae3ce3ce2e91d4d152244b06fd049
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950271"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Практическое руководство. Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Как выполнить Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 
 Чтобы изменить содержимое основного текста строки или двоичного основного текста запроса веб-служб, такого как запрос SOAP, REST, asmx, wcf, RIA или запрос веб-служб других типов, можно создать пользовательский редактор содержимого.
 
@@ -23,9 +23,9 @@ ms.locfileid: "58415074"
 
 Можно реализовать следующие типы редакторов.
 
--   **Редактор содержимого строк**. Этот редактор реализуется с помощью интерфейса <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>.
+- **Редактор содержимого строк**. Этот редактор реализуется с помощью интерфейса <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>.
 
--   **Редактор двоичного содержимого**. Этот редактор реализуется с помощью интерфейса <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
+- **Редактор двоичного содержимого**. Этот редактор реализуется с помощью интерфейса <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
 
 Эти интерфейсы содержатся в пространстве имен <xref:Microsoft.VisualStudio.TestTools.WebTesting>.
 
@@ -210,7 +210,7 @@ private MessageEditorControl messageEditorControl
 
 ### <a name="to-add-the-ibinaryhttpbodyeditorplugin-to-the-class"></a>Добавление интерфейса IBinaryHttpBodyEditorPlugin в класс
 
--   Напишите или скопируйте следующий код внутри класса XmlMessageEditor, добавленного в предыдущей процедуре, чтобы создать экземпляр класса Msbin1MessageEditor из интерфейса <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> и реализовать требуемые методы:
+- Напишите или скопируйте следующий код внутри класса XmlMessageEditor, добавленного в предыдущей процедуре, чтобы создать экземпляр класса Msbin1MessageEditor из интерфейса <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> и реализовать требуемые методы:
 
     ```csharp
     /// <summary>

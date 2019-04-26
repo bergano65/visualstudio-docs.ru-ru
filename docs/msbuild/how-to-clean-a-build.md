@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2385d359387090d0430fbea182fcef738b454a7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977297"
 ---
 # <a name="how-to-clean-a-build"></a>Как выполнить Очистка сборки
 При очистке сборки все промежуточные и выходные файлы удаляются, а остаются только файлы проекта и компонентов. Из файлов проекта и компонентов можно собрать новые экземпляры промежуточных и выходных файлов. Библиотека общих задач, предоставляемая вместе с [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], включает в себя задачу [Exec](../msbuild/exec-task.md), позволяющую запускать системные команды. Дополнительные сведения о библиотеке задач см. в разделе [Справочник по задачам](../msbuild/msbuild-task-reference.md).
@@ -28,11 +28,11 @@ ms.locfileid: "56603278"
 
 #### <a name="to-create-a-directory-for-output-items"></a>Создание каталога для выходных элементов
 
-1.  Используйте элемент `Property` для определения расположения и имени каталога. Например, создайте каталог с именем *BuiltApp* в каталоге, содержащем файлы проекта и исходные файлы:
+1. Используйте элемент `Property` для определения расположения и имени каталога. Например, создайте каталог с именем *BuiltApp* в каталоге, содержащем файлы проекта и исходные файлы:
 
      `<builtdir>BuiltApp</builtdir>`
 
-2.  Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Например:
+2. Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Например:
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -44,7 +44,7 @@ ms.locfileid: "56603278"
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Удаление каталога и всех файлов в нем
 
--   Используйте задачу `RemoveDir`, чтобы удалить каталог. Например:
+- Используйте задачу `RemoveDir`, чтобы удалить каталог. Например:
 
      `<RemoveDir Directories="$(builtdir)" />`
 

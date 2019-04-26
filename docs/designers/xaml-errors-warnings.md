@@ -8,12 +8,12 @@ ms.author: karann
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d92c266b0504f021328175d436216d9c86a6032
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3ae795b464d8a693371b1ebb9238a897debbf02
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892629"
 ---
 # <a name="xaml-errors-and-warnings"></a>Ошибки и предупреждения XAML
 
@@ -31,7 +31,6 @@ ms.locfileid: "55913110"
 
 > [!Note]
 > Некоторые ошибки или предупреждения не имеют соответствующего кода. Как правило, это ошибки, обнаруженные при помощи конструктора XAML.
-
 
 ## <a name="suppress-xaml-designer-errors"></a>Скрытие ошибок конструктора XAML
 

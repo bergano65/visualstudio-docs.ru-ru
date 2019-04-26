@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Сведения о подписках, предоставляемых по программе Microsoft for Startups.
 searchscope: VS Subscription
 ms.openlocfilehash: 06bd2dac43adbfbbd48aad6fff796a3dbdd023ca
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007788"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Подписки Visual Studio для начинающих компаний
 Начинающие компании, вступившие в программу Microsoft for Startups, могут получить пять [ежемесячных облачных подписок Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/). Это те же подписки, которые предлагаются на коммерческой основе, без специальных ограничений. Каждая подписка должна быть назначена конечному пользователю (который является лицензированным пользователем), прежде чем пользователь сможет запустить Visual Studio и VSTS распознает его как подписчика Visual Studio Enterprise в Azure DevOps Services.

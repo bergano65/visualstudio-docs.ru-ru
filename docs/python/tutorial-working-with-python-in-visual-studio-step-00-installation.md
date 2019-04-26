@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59367021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431307"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Установка поддержки Python в Visual Studio
 
@@ -47,5 +47,5 @@ ms.locfileid: "59367021"
 ## <a name="see-also"></a>См. также
 
 - [Определение существующего интерпретатора Python вручную](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installing-python-support-in-visual-studio.md)
+- [Установка поддержки Python в Visual Studio 2015 и более ранних версиях](installing-python-support-in-visual-studio.md)
 - [Расположения установки](installing-python-support-in-visual-studio.md#install-locations)

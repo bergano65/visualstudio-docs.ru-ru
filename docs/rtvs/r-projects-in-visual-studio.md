@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809924"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Создание проектов R в Visual Studio
 
@@ -62,7 +62,6 @@ ms.locfileid: "58515198"
 ## <a name="project-properties"></a>Свойства проекта
 
 Чтобы открыть страницу свойств проекта, щелкните правой кнопкой мыши проект в **обозревателе решений** и выберите **Свойства** или пункт меню **Проект > Свойства (имя проекта)**. В появившемся окне отображаются свойства проекта:
-
 
 | Tab | Свойство. | Описание |
 | --- | --- | --- |

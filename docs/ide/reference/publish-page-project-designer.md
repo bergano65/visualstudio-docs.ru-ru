@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00202ab13001a56d472027d538bc5560f936ef93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968894"
 ---
 # <a name="publish-page-project-designer"></a>Страница публикации в конструкторе проектов
 Страница **Публикация** **конструктора проектов** используется для настройки свойств развертывания ClickOnce.
@@ -26,7 +26,6 @@ ms.locfileid: "55909353"
 
 > [!NOTE]
 > Некоторые описанные здесь свойства ClickOnce можно также задать в **мастере публикаций**, доступном в меню **Сборка**, либо нажав кнопку **Мастер публикаций** на этой странице.
-
 
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
  **Расположение папки публикации**

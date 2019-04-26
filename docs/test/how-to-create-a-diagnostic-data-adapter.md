@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание адаптера диагностических данных
+title: Как выполнить Создание адаптера диагностических данных
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,14 +8,14 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950718"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>Практическое руководство. Создание адаптера диагностических данных
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>Как выполнить Создание адаптера диагностических данных
 
 Чтобы создать *адаптер диагностических данных*, нужно создать библиотеку классов с помощью Visual Studio и добавить в нее интерфейсы API адаптера диагностических данных, входящие в Visual Studio Enterprise. Любые необходимые данные можно отправить в <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> инфраструктуры в виде потока или файла при обработке событий, возникших во время тестового запуска. Потоки или файлы, отправляемые в объект <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>, при окончании теста сохраняются в виде вложений в результатах теста. При создании ошибки на основе этих результатов теста и при использовании [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] эти файлы также связываются с ошибкой.
 
@@ -54,19 +54,19 @@ ms.locfileid: "58416336"
 
 2. Добавьте сборку **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-   1.  В **обозревателе решений** щелкните правой кнопкой мыши пункт **Ссылки** и выберите команду **Добавить ссылку**.
+   1. В **обозревателе решений** щелкните правой кнопкой мыши пункт **Ссылки** и выберите команду **Добавить ссылку**.
 
-   2.  Выберите **.NET** и найдите **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2. Выберите **.NET** и найдите **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-   3.  Нажмите кнопку **ОК**.
+   3. Нажмите кнопку **ОК**.
 
 3. Добавьте сборку **Microsoft.VisualStudio.QualityTools.Common**.
 
-   1.  В **обозревателе решений** щелкните правой кнопкой мыши папку **Ссылки** и выберите команду **Добавить ссылку**.
+   1. В **обозревателе решений** щелкните правой кнопкой мыши папку **Ссылки** и выберите команду **Добавить ссылку**.
 
-   2.  Выберите **/.NET** и найдите **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2. Выберите **/.NET** и найдите **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-   3.  Нажмите кнопку **ОК**.
+   3. Нажмите кнопку **ОК**.
 
 4. Добавьте в класс файла следующие выражения с оператором `using`:
 

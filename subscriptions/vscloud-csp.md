@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: Сведения для поставщиков облачных решений о приобретении облачных подписок Visual Studio для клиентов и управлении ими.
 searchscope: VS Subscription
-ms.openlocfilehash: 59d61e687c061fffd2cc0a2b537364ca8b966271
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978514"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Покупайте облачные подписки Visual Studio для ваших клиентов и управляйте ими
 
@@ -20,10 +20,8 @@ ms.locfileid: "58323585"
 
 [Сравнение вариантов облачных подписок](https://visualstudio.microsoft.com/vs/pricing)
 
-
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
-
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -84,7 +82,6 @@ ms.locfileid: "58323585"
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Предприятие             |  Подписка                         | Ежемесячная подписка на Visual Studio Enterprise   |
 | Visual Studio     | Professional           |  Подписка                         | Ежемесячная подписка на Visual Studio Professional |
-
 
 Мы предлагаем скидку 5 % на шестую приобретаемую единицу (для одного клиента) каждый месяц для каждой подписки Visual Studio. Поэтому для каждого варианта подписки существует две строки. В одной строке указано "Минимальное значение" 0, что означает базовую цену за единицы с первой по пятую. В другой строке "Минимальное значение" равно 5, что означает цену со скидкой 5 %, которая применяется к шестой и последующим единицам.
 

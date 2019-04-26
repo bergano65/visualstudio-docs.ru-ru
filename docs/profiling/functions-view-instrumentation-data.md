@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34585e212acfd52186e12e8b38293178cc77c585
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969697"
 ---
 # <a name="functions-view---instrumentation-data"></a>Представление "Функции" — данные инструментирования
 В представлении отчета "Функции" данные профилирования перечисляются по имени функции.

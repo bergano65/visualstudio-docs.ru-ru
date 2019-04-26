@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6322e860cb45cecc3db5d5060e1322c41d57e695
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443142"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Написание средств ведения журнала с поддержкой многопроцессорности
 Поддержка нескольких процессоров в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] позволяет сократить время сборки проекта, но усложняет ведение журнала событий сборки. В среде с одним процессором события, сообщения, предупреждения и ошибки поступают в средство ведения журнала последовательно и вполне предсказуемо. Однако в многопроцессорной среде события из различных источников могут поступать одновременно или не по порядку. Для обеспечения такого сценария платформа [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] предоставляет средство ведения журнала с поддержкой многопроцессорности и новую модель ведения журнала, а также позволяет создавать пользовательские средства ведения журнала с перенаправлением.
@@ -62,9 +62,9 @@ public interface INodeLogger: ILogger
 
  Существует два способа использования модели распределенного ведения журналов, а именно:
 
--   настройка готового средства ведения журнала с перенаправлением с именем <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>;
+- настройка готового средства ведения журнала с перенаправлением с именем <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>;
 
--   создание собственного средства ведения журнала с перенаправлением.
+- создание собственного средства ведения журнала с перенаправлением.
 
 Вы можете изменить средство ConfigurableForwardingLogger в соответствии со своими предпочтениями. Для этого вызовите средство ведения журнала в командной строке с помощью *MSBuild.exe* и перечислите события сборки, которые средству ведения журнала следует перенаправлять в центральный узел.
 
@@ -78,7 +78,7 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 ```
 
 > [!NOTE]
->  В параметре `-dl` имена двух средств ведения журнала необходимо отделить звездочкой (*).
+> В параметре `-dl` имена двух средств ведения журнала необходимо отделить звездочкой (*).
 
  ConfigurableForwardingLogger используется точно так же, как и любое другое средство ведения журналов (см. описание в [этой статье](../msbuild/obtaining-build-logs-with-msbuild.md)), с той лишь разницей, что вместо обычного средства ведения журналов [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] подключается средство ConfigurableForwardingLogger и в качестве параметров указываются события, которые ConfigurableForwardingLogger будет передавать в центральный узел.
 

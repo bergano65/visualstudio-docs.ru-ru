@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о преимуществе LinkedIn Learning, которое входит в состав подписки LinkedIn Premium, включенной в некоторые подписки Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2f1e465be1d9c81235af1bad723f827a0f04147c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948687"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Преимущество LinkedIn Learning в подписках Visual Studio
 
@@ -28,7 +28,6 @@ ms.locfileid: "56841553"
 2. Найдите плитку LinkedIn Learning в категории "Образование" и щелкните ссылку **Получить код**.
    > [!div class="mx-imgBorder"]
    > ![Плитка преимущества LinkedIn Learning](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
-
 
 3. Если у вас уже есть учетная запись LinkedIn и вы вошли автоматически, вы немедленно перейдете на страницу активации преимущества LinkedIn Learning.  Если у вас есть учетная запись LinkedIn, но вы не вошли в нее автоматически, просто введите свои имя пользователя и пароль, а затем нажмите кнопку **Вход**.  Чтобы активировать предложение, перейдите к [этому шагу](#activate-your-offer).
 
@@ -80,7 +79,6 @@ ms.locfileid: "56841553"
    > [!div class="mx-imgBorder"]
    > ![Активация LinkedIn Learning](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
-
 16. Вы можете начать знакомиться с интересующими вас навыками.  Выберите их в списке рекомендаций, выполните поиск других навыков или нажмите кнопку **Пропустить**, чтобы продолжить работу, не выбирая навыков.
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning — навыки](_img/vs-linkedin/vs-linkedin-skills.png)
@@ -97,15 +95,13 @@ ms.locfileid: "56841553"
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | 3 месяца                                                            |Нет.  Доступно только для новых подписчиков         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 3 месяца                                             |  Нет.  Доступно только для новых подписчиков         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 3 месяца                                              | Нет.  Доступно только для новых подписчиков         |
-| Visual Studio Dev Essentials | Н/Д  | 3 месяца |Нет.  Доступно только для новых подписчиков |
+| Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д|
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
 
 <sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP).  Не включает следующие категории:  Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Most Valuable Professional (MVP), региональный директор (RD).  ПО и службы MCT.*
 
-
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
-
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
@@ -114,8 +110,8 @@ ms.locfileid: "56841553"
 Ответ.  Нет, предложение LinkedIn Learning доступно только новым подписчикам.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Нужна помощь с LinkedIn Learning?  Ознакомьтесь со следующими ресурсами:
+- Нужна помощь с LinkedIn Learning?  Ознакомьтесь со следующими ресурсами:
     - Справка по [использованию LinkedIn Learning](https://www.linkedin.com/help/learning).
     - Справка по общим вопросам о [LinkedIn](https://www.linkedin.com/help/linkedin), включая создание учетных записей и профилей, а также поддержку сети.
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

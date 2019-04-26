@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d84dc8aed00cf037efc8b35efa13fa712092c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 58691d5c6a7f44361d40a50898395ed1200a06c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817640"
 ---
 # <a name="link-task"></a>Связывание задачи
 Создает оболочку для компоновщика Visual C++ *link.exe*. Компоновщик связывает объектные файлы в формате COFF и библиотеки для создания исполняемого файла (*EXE*) или библиотеки динамической компоновки (DLL). Дополнительные сведения см. в разделе [Параметры компоновщика](/cpp/build/reference/linker-options).
@@ -43,7 +43,7 @@ ms.locfileid: "56627159"
 ## <a name="parameters"></a>Параметры
  Ниже приводятся параметры задачи **Link**. Большинство параметров задачи и некоторые наборы параметров соответствуют параметрам командной строки.
 
--   **AdditionalDependencies**
+- **AdditionalDependencies**
 
      Необязательный параметр типа **String[]**.
 
@@ -51,7 +51,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [Входные файлы LINK](/cpp/build/reference/link-input-files).
 
--   **AdditionalLibraryDirectories**
+- **AdditionalLibraryDirectories**
 
      Необязательный параметр типа **String[]**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [Параметр /LIBPATH (дополнительный параметр Libpath)](/cpp/build/reference/libpath-additional-libpath).
 
--   **AdditionalManifestDependencies**
+- **AdditionalManifestDependencies**
 
      Необязательный параметр типа **String[]**.
 
@@ -67,7 +67,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [Параметр /MANIFESTDEPENDENCY (определение зависимостей манифеста)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). См. также раздел [Файлы конфигурации издателя](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Необязательный параметр типа **String**.
 
@@ -75,7 +75,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [Параметры компоновщика](/cpp/build/reference/linker-options).
 
--   **AddModuleNamesToAssembly**
+- **AddModuleNamesToAssembly**
 
      Необязательный параметр типа **String[]**.
 
@@ -83,7 +83,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [Параметр /ASSEMBLYMODULE (добавление в сборку модуля MSIL)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
 
--   **AllowIsolation**
+- **AllowIsolation**
 
      Необязательный параметр **Boolean** .
 
@@ -91,7 +91,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [Параметр /ALLOWISOLATION (поиск манифеста)](/cpp/build/reference/allowisolation-manifest-lookup).
 
--   **AssemblyDebug**
+- **AssemblyDebug**
 
      Необязательный параметр **Boolean** .
 
@@ -99,7 +99,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [Параметр /ASSEMBLYDEBUG (добавление атрибута DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
--   **AssemblyLinkResource**
+- **AssemblyLinkResource**
 
      Необязательный параметр типа **String[]**.
 
@@ -107,13 +107,13 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [Параметр /ASSEMBLYLINKRESOURCE (компоновка с ресурсом .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
 
--   **AttributeFileTracking**
+- **AttributeFileTracking**
 
      Неявный параметр **Boolean**.
 
      Включает более детальное отслеживание файлов для обнаружения инкрементной компоновки. Всегда возвращает значение `true`.
 
--   **BaseAddress**
+- **BaseAddress**
 
      Необязательный параметр типа **String**.
 
@@ -121,7 +121,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/Base (базовый адрес)](/cpp/build/reference/base-base-address).
 
--   **BuildingInIDE**
+- **BuildingInIDE**
 
      Необязательный параметр **Boolean** .
 
@@ -129,7 +129,7 @@ ms.locfileid: "56627159"
 
      Этот параметр не имеет эквивалентного параметра компоновщика.
 
--   **CLRImageType**
+- **CLRImageType**
 
      Необязательный параметр типа **String**.
 
@@ -137,17 +137,17 @@ ms.locfileid: "56627159"
 
      Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.
 
-    -   **Default** - *\<отсутствует>*
+    - **Default** - *\<отсутствует>*
 
-    -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+    - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
 
-    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
+    - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
 
-    -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
+    - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
 
     Дополнительные сведения см. в разделе [/CLRIMAGETYPE (указание типа образа среды CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
--   **CLRSupportLastError**
+- **CLRSupportLastError**
 
      Необязательный параметр типа **String**.
 
@@ -155,15 +155,15 @@ ms.locfileid: "56627159"
 
      Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.
 
-    -   **Enabled** - **/CLRSupportLastError**
+    - **Enabled** - **/CLRSupportLastError**
 
-    -   **Disabled** - **/CLRSupportLastError:NO**
+    - **Disabled** - **/CLRSupportLastError:NO**
 
-    -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+    - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
 
     Дополнительные сведения см. в разделе [/CLRSUPPORTLASTERROR (сохранение кода последней ошибки для вызовов PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
--   **CLRThreadAttribute**
+- **CLRThreadAttribute**
 
      Необязательный параметр типа **String**.
 
@@ -171,15 +171,15 @@ ms.locfileid: "56627159"
 
      Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.
 
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
+    - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
 
-    -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
+    - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
 
-    -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+    - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
 
     Дополнительные сведения см. в разделе [/CLRTHREADATTRIBUTE (определение атрибута потока среды CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
--   **CLRUnmanagedCodeCheck**
+- **CLRUnmanagedCodeCheck**
 
      Необязательный параметр **Boolean** .
 
@@ -187,7 +187,7 @@ ms.locfileid: "56627159"
 
     Дополнительные сведения см. в разделе [Параметр /CLRUNMANAGEDCODECHECK (добавление атрибута SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
 
--   **CreateHotPatchableImage**
+- **CreateHotPatchableImage**
 
      Необязательный параметр типа **String**.
 
@@ -195,17 +195,17 @@ ms.locfileid: "56627159"
 
      Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.
 
-    -   **Enabled** - **/FUNCTIONPADMIN**
+    - **Enabled** - **/FUNCTIONPADMIN**
 
-    -   **X86Image** - **/FUNCTIONPADMIN:5**
+    - **X86Image** - **/FUNCTIONPADMIN:5**
 
-    -   **X64Image** - **/FUNCTIONPADMIN:6**
+    - **X64Image** - **/FUNCTIONPADMIN:6**
 
-    -   **ItaniumImage** - **/FUNCTIONPADMIN:16**
+    - **ItaniumImage** - **/FUNCTIONPADMIN:16**
 
     Дополнительные сведения см. в разделе [/FUNCTIONPADMIN (создание образа, допускающего оперативное обновление)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
--   **DataExecutionPrevention**
+- **DataExecutionPrevention**
 
      Необязательный параметр **Boolean** .
 
@@ -213,7 +213,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [Параметр /NXCOMPAT (совместимость с компонентом предотвращения выполнения данных)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention).
 
--   **DelayLoadDLLs**
+- **DelayLoadDLLs**
 
      Необязательный параметр типа **String[]**.
 
@@ -221,7 +221,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/DELAYLOAD (импорт с отложенной загрузкой)](/cpp/build/reference/delayload-delay-load-import).
 
--   **DelaySign**
+- **DelaySign**
 
      Необязательный параметр **Boolean** .
 
@@ -229,7 +229,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/DELAYSIGN (частичное подписание сборки)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
--   **Driver**
+- **Driver**
 
      Необязательный параметр типа **String**.
 
@@ -237,17 +237,17 @@ ms.locfileid: "56627159"
 
      Укажите одно из следующих значений, каждое из которых соответствует параметру компоновщика.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Driver** - **/Driver**
+    - **Driver** - **/Driver**
 
-    -   **UpOnly** - **/DRIVER:UPONLY**
+    - **UpOnly** - **/DRIVER:UPONLY**
 
-    -   **WDM** - **/DRIVER:WDM**
+    - **WDM** - **/DRIVER:WDM**
 
     Дополнительные сведения см. в разделе [/DRIVER (драйвер режима ядра Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
--   **EmbedManagedResourceFile**
+- **EmbedManagedResourceFile**
 
      Необязательный параметр типа **String[]**.
 
@@ -255,7 +255,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/ASSEMBLYRESOURCE (внедрение управляемого ресурса)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
--   **EnableCOMDATFolding**
+- **EnableCOMDATFolding**
 
      Необязательный параметр **Boolean** .
 
@@ -263,7 +263,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `ICF[= iterations]` в разделе [Параметр /OPT (оптимизация)](/cpp/build/reference/opt-optimizations).
 
--   **EnableUAC**
+- **EnableUAC**
 
      Необязательный параметр **Boolean** .
 
@@ -271,7 +271,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [Параметр /MANIFESTUAC (внедрение сведений о контроле учетных записей в манифест)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **EntryPointSymbol**
+- **EntryPointSymbol**
 
      Необязательный параметр типа **String**.
 
@@ -279,7 +279,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/Entry (символ точки входа)](/cpp/build/reference/entry-entry-point-symbol).
 
--   **FixedBaseAddress**
+- **FixedBaseAddress**
 
      Необязательный параметр **Boolean** .
 
@@ -287,7 +287,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/FIXED (фиксированный базовый адрес)](/cpp/build/reference/fixed-fixed-base-address).
 
--   **ForceFileOutput**
+- **ForceFileOutput**
 
      Необязательный параметр типа **String**.
 
@@ -295,15 +295,15 @@ ms.locfileid: "56627159"
 
      Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-    -   **Enabled** - **/FORCE**
+    - **Enabled** - **/FORCE**
 
-    -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
+    - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
 
-    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
+    - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
 
     Дополнительные сведения см. в разделе [/FORCE (принудительный вывод файла)](/cpp/build/reference/force-force-file-output).
 
--   **ForceSymbolReferences**
+- **ForceSymbolReferences**
 
      Необязательный параметр типа **String[]**.
 
@@ -311,7 +311,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/INCLUDE (принудительные ссылки на символы)](/cpp/build/reference/include-force-symbol-references).
 
--   **FunctionOrder**
+- **FunctionOrder**
 
      Необязательный параметр типа **String**.
 
@@ -319,7 +319,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/ORDER (расположение функций по порядку)](/cpp/build/reference/order-put-functions-in-order).
 
--   **GenerateDebugInformation**
+- **GenerateDebugInformation**
 
      Необязательный параметр **Boolean** .
 
@@ -327,7 +327,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/DEBUG (создание отладочной информации)](/cpp/build/reference/debug-generate-debug-info).
 
--   **GenerateManifest**
+- **GenerateManifest**
 
      Необязательный параметр **Boolean** .
 
@@ -335,7 +335,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/MANIFEST (создание манифеста параллельной сборки)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).
 
--   **GenerateMapFile**
+- **GenerateMapFile**
 
      Необязательный параметр **Boolean** .
 
@@ -343,7 +343,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/MAP (создание файла сопоставления)](/cpp/build/reference/map-generate-mapfile).
 
--   **HeapCommitSize**
+- **HeapCommitSize**
 
      Необязательный параметр типа **String**.
 
@@ -351,7 +351,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `commit` в разделе [/HEAP (определение размера кучи)](/cpp/build/reference/heap-set-heap-size). См. также описание параметра **HeapReserveSize**.
 
--   **HeapReserveSize**
+- **HeapReserveSize**
 
      Необязательный параметр типа **String**.
 
@@ -359,7 +359,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `reserve` в разделе [/HEAP (определение размера кучи)](/cpp/build/reference/heap-set-heap-size). См. также описание параметра **HeapCommitSize** в этой таблице.
 
--   **IgnoreAllDefaultLibraries**
+- **IgnoreAllDefaultLibraries**
 
      Необязательный параметр **Boolean** .
 
@@ -367,7 +367,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/NODEFAULTLIB (игнорирование библиотек)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **IgnoreEmbeddedIDL**
+- **IgnoreEmbeddedIDL**
 
      Необязательный параметр **Boolean** .
 
@@ -375,7 +375,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/IGNOREIDL (не преобразовывать атрибуты в MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
--   **IgnoreImportLibrary**
+- **IgnoreImportLibrary**
 
      Необязательный параметр **Boolean** .
 
@@ -383,7 +383,7 @@ ms.locfileid: "56627159"
 
      Этот параметр не соответствует параметру компоновщика.
 
--   **IgnoreSpecificDefaultLibraries**
+- **IgnoreSpecificDefaultLibraries**
 
      Необязательный параметр типа **String[]**.
 
@@ -391,7 +391,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/NODEFAULTLIB (игнорирование библиотек)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **ImageHasSafeExceptionHandlers**
+- **ImageHasSafeExceptionHandlers**
 
      Необязательный параметр **Boolean** .
 
@@ -399,13 +399,13 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/SAFESEH (образ содержит безопасные обработчики исключений)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
 
--   **ImportLibrary**
+- **ImportLibrary**
 
      Имя пользовательской библиотеки импорта, которая заменяет библиотеку, заданную по умолчанию.
 
      Дополнительные сведения см. в разделе [/IMPLIB (имя библиотеки импорта)](/cpp/build/reference/implib-name-import-library).
 
--   **KeyContainer**
+- **KeyContainer**
 
      Необязательный параметр типа **String**.
 
@@ -413,7 +413,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/KEYCONTAINER (определение контейнера ключей для подписи сборки)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). См. также описание параметра **KeyFile** в этой таблице.
 
--   **KeyFile**
+- **KeyFile**
 
      Необязательный параметр типа **String**.
 
@@ -421,7 +421,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/KEYFILE (определение ключа или пары ключей для подписания сборки)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). См. также описание параметра **KeyContainer**.
 
--   **LargeAddressAware**
+- **LargeAddressAware**
 
      Необязательный параметр **Boolean** .
 
@@ -429,7 +429,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/LARGEADDRESSAWARE (обработка больших адресов)](/cpp/build/reference/largeaddressaware-handle-large-addresses).
 
--   **LinkDLL**
+- **LinkDLL**
 
      Необязательный параметр **Boolean** .
 
@@ -437,7 +437,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [Параметр /DLL (сборка библиотеки DLL)](/cpp/build/reference/dll-build-a-dll).
 
--   **LinkErrorReporting**
+- **LinkErrorReporting**
 
      Необязательный параметр типа **String**.
 
@@ -445,17 +445,17 @@ ms.locfileid: "56627159"
 
      Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-    -   **NoErrorReport** - **/ERRORREPORT:NONE**
+    - **NoErrorReport** - **/ERRORREPORT:NONE**
 
-    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**
+    - **PromptImmediately** - **/ERRORREPORT:PROMPT**
 
-    -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
+    - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
 
-    -   **SendErrorReport** - **/ERRORREPORT:SEND**
+    - **SendErrorReport** - **/ERRORREPORT:SEND**
 
     Дополнительные сведения см. в разделе [/ERRORREPORT (создание отчетов о внутренних ошибках компоновщика)](/cpp/build/reference/errorreport-report-internal-linker-errors).
 
--   **LinkIncremental**
+- **LinkIncremental**
 
      Необязательный параметр **Boolean** .
 
@@ -463,7 +463,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/INCREMENTAL (инкрементная компоновка)](/cpp/build/reference/incremental-link-incrementally).
 
--   **LinkLibraryDependencies**
+- **LinkLibraryDependencies**
 
      Необязательный параметр **Boolean** .
 
@@ -471,7 +471,7 @@ ms.locfileid: "56627159"
 
      Этот параметр не соответствует параметру компоновщика.
 
--   **LinkStatus**
+- **LinkStatus**
 
      Необязательный параметр **Boolean** .
 
@@ -479,7 +479,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `STATUS` в разделе [/LTCG (создание кода во время компоновки)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **LinkTimeCodeGeneration**
+- **LinkTimeCodeGeneration**
 
      Необязательный параметр типа **String**.
 
@@ -487,21 +487,21 @@ ms.locfileid: "56627159"
 
      Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-    -   **Default** - *\<отсутствует>*
+    - **Default** - *\<отсутствует>*
 
-    -   **UseLinkTimeCodeGeneration** - **/LTCG**
+    - **UseLinkTimeCodeGeneration** - **/LTCG**
 
-    -   **PGInstrument** - **/LTCG:PGInstrument**
+    - **PGInstrument** - **/LTCG:PGInstrument**
 
-    -   **PGOptimization** - **/LTCG:PGOptimize**
+    - **PGOptimization** - **/LTCG:PGOptimize**
 
-    -   **PGUpdate**
+    - **PGUpdate**
 
          \- **/LTCG:PGUpdate**
 
     Дополнительные сведения см. в разделе [/LTCG (создание кода во время компоновки)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **ManifestFile**
+- **ManifestFile**
 
      Необязательный параметр типа **String**.
 
@@ -509,7 +509,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/MANIFESTFILE (определение имени файла манифеста)](/cpp/build/reference/manifestfile-name-manifest-file).
 
--   **MapExports**
+- **MapExports**
 
      Необязательный параметр **Boolean** .
 
@@ -517,13 +517,13 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `EXPORTS` в разделе [/MAPINFO (включение сведений в файл сопоставления)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
 
--   **MapFileName**
+- **MapFileName**
 
      Необязательный параметр типа **String**.
 
      Заменяет имя файла сопоставления, заданное по умолчанию, на указанное имя файла.
 
--   **MergedIDLBaseFileName**
+- **MergedIDLBaseFileName**
 
      Необязательный параметр типа **String**.
 
@@ -531,7 +531,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/IDLOUT (определение имени выходных файлов MIDL)](/cpp/build/reference/idlout-name-midl-output-files).
 
--   **MergeSections**
+- **MergeSections**
 
      Необязательный параметр типа **String**.
 
@@ -539,7 +539,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/MERGE (объединение разделов)](/cpp/build/reference/merge-combine-sections).
 
--   **MidlCommandFile**
+- **MidlCommandFile**
 
      Необязательный параметр типа **String**.
 
@@ -547,13 +547,13 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/MIDL (определение параметров командной строки MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).
 
--   **MinimumRequiredVersion**
+- **MinimumRequiredVersion**
 
      Необязательный параметр типа **String**.
 
      Задает минимальную необходимую версию подсистемы. Аргументы — десятичные числа в диапазоне от 0 до 65535.
 
--   **ModuleDefinitionFile**
+- **ModuleDefinitionFile**
 
      Необязательный параметр типа **String**.
 
@@ -561,7 +561,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/DEF (указание файла определения модуля)](/cpp/build/reference/def-specify-module-definition-file).
 
--   **MSDOSStubFileName**
+- **MSDOSStubFileName**
 
      Необязательный параметр типа **String**.
 
@@ -569,7 +569,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/STUB (имя файла заглушки MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).
 
--   **NoEntryPoint**
+- **NoEntryPoint**
 
      Необязательный параметр **Boolean** .
 
@@ -577,13 +577,13 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/NOENTRY (нет точки входа)](/cpp/build/reference/noentry-no-entry-point).
 
--   **ObjectFiles**
+- **ObjectFiles**
 
      Неявный параметр **String[]**.
 
      Определяет скомпонованные файлы объектов.
 
--   **OptimizeReferences**
+- **OptimizeReferences**
 
      Необязательный параметр **Boolean** .
 
@@ -591,7 +591,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `REF` в разделе [Параметр /OPT (оптимизация)](/cpp/build/reference/opt-optimizations).
 
--   **OutputFile**
+- **OutputFile**
 
      Необязательный параметр типа **String**.
 
@@ -599,19 +599,19 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/OUT (имя выходного файла)](/cpp/build/reference/out-output-file-name).
 
--   **PerUserRedirection**
+- **PerUserRedirection**
 
      Необязательный параметр **Boolean** .
 
      Если задано значение `true` и включена регистрация вывода, все записи в раздел реестра **HKEY_CLASSES_ROOT** будут перенаправляться в раздел **HKEY_CURRENT_USER**.
 
--   **PreprocessOutput**
+- **PreprocessOutput**
 
      Необязательный параметр `ITaskItem[]` .
 
      Определяет массив выходных элементов препроцессора, которые могут использоваться и создаваться задачами.
 
--   **PreventDllBinding**
+- **PreventDllBinding**
 
      Необязательный параметр **Boolean** .
 
@@ -619,7 +619,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/ALLOWBIND (запретит привязки DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
--   **Profile**
+- **Profile**
 
      Необязательный параметр типа **Boolean**.
 
@@ -627,7 +627,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/PROFILE (профилировщик средств оценки производительности)](/cpp/build/reference/profile-performance-tools-profiler).
 
--   **ProfileGuidedDatabase**
+- **ProfileGuidedDatabase**
 
      Необязательный параметр типа **String**.
 
@@ -635,7 +635,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/PGD (указание базы данных для профильной оптимизации)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).
 
--   **ProgramDatabaseFile**
+- **ProgramDatabaseFile**
 
      Необязательный параметр типа **String**.
 
@@ -643,7 +643,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/PDB (использование базы данных программы)](/cpp/build/reference/pdb-use-program-database).
 
--   **RandomizedBaseAddress**
+- **RandomizedBaseAddress**
 
      Необязательный параметр **Boolean** .
 
@@ -651,13 +651,13 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [Параметр /DYNAMICBASE (использование технологии Address space layout randomization)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization).
 
--   **RegisterOutput**
+- **RegisterOutput**
 
      Необязательный параметр **Boolean** .
 
      Если задано значение `true`, будут регистрироваться основные выходные файлы этой сборки.
 
--   **SectionAlignment**
+- **SectionAlignment**
 
      Необязательный параметр типа **Integer**.
 
@@ -665,7 +665,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/ALIGN (выравнивание разделов)](/cpp/build/reference/align-section-alignment).
 
--   **SetChecksum**
+- **SetChecksum**
 
      Необязательный параметр **Boolean** .
 
@@ -673,7 +673,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/RELEASE (определение контрольной суммы)](/cpp/build/reference/release-set-the-checksum).
 
--   **ShowProgress**
+- **ShowProgress**
 
      Необязательный параметр типа **String**.
 
@@ -681,29 +681,29 @@ ms.locfileid: "56627159"
 
      Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **LinkVerbose** - **/VERBOSE**
+    - **LinkVerbose** - **/VERBOSE**
 
-    -   **LinkVerboseLib** - **/VERBOSE:Lib**
+    - **LinkVerboseLib** - **/VERBOSE:Lib**
 
-    -   **LinkVerboseICF** - **/VERBOSE:ICF**
+    - **LinkVerboseICF** - **/VERBOSE:ICF**
 
-    -   **LinkVerboseREF** - **/VERBOSE:REF**
+    - **LinkVerboseREF** - **/VERBOSE:REF**
 
-    -   **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+    - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
 
-    -   **LinkVerboseCLR** - **/VERBOSE:CLR**
+    - **LinkVerboseCLR** - **/VERBOSE:CLR**
 
     Дополнительные сведения см. в разделе [/VERBOSE (печать сообщений о ходе выполнения)](/cpp/build/reference/verbose-print-progress-messages).
 
--   **Sources**
+- **Sources**
 
      Обязательный параметр `ITaskItem[]` .
 
      Определяет массив элементов исходного файла MSBuild, который может использоваться и создаваться задачами.
 
--   **SpecifySectionAttributes**
+- **SpecifySectionAttributes**
 
      Необязательный параметр типа **String**.
 
@@ -711,7 +711,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/SECTION (указание атрибутов раздела)](/cpp/build/reference/section-specify-section-attributes).
 
--   **StackCommitSize**
+- **StackCommitSize**
 
      Необязательный параметр типа **String**.
 
@@ -719,7 +719,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `commit` в разделе [/STACK (выделение памяти в стеке)](/cpp/build/reference/stack-stack-allocations).
 
--   **StackReserveSize**
+- **StackReserveSize**
 
      Необязательный параметр типа **String**.
 
@@ -727,7 +727,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `reserve` в разделе [/STACK (выделение памяти в стеке)](/cpp/build/reference/stack-stack-allocations).
 
--   **StripPrivateSymbols**
+- **StripPrivateSymbols**
 
      Необязательный параметр типа **String**.
 
@@ -735,7 +735,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/PDBSTRIPPED (пропуск частных символов)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
--   **SubSystem**
+- **SubSystem**
 
      Необязательный параметр типа **String**.
 
@@ -743,29 +743,29 @@ ms.locfileid: "56627159"
 
      Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Console** - **/SUBSYSTEM:CONSOLE**
+    - **Console** - **/SUBSYSTEM:CONSOLE**
 
-    -   **Windows** - **/SUBSYSTEM:WINDOWS**
+    - **Windows** - **/SUBSYSTEM:WINDOWS**
 
-    -   **Native** - **/SUBSYSTEM:NATIVE**
+    - **Native** - **/SUBSYSTEM:NATIVE**
 
-    -   **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**
+    - **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**
 
-    -   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+    - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
-    -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
+    - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
 
-    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+    - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-    -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
+    - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
 
-    -   **POSIX** - **/SUBSYSTEM:POSIX**
+    - **POSIX** - **/SUBSYSTEM:POSIX**
 
     Дополнительные сведения см. в разделе [/SUBSYSTEM (определение подсистемы)](/cpp/build/reference/subsystem-specify-subsystem).
 
--   **SupportNobindOfDelayLoadedDLL**
+- **SupportNobindOfDelayLoadedDLL**
 
      Необязательный параметр **Boolean** .
 
@@ -773,7 +773,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `NOBIND` в разделе [/DELAY (параметры отложенной загрузки импортов)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SupportUnloadOfDelayLoadedDLL**
+- **SupportUnloadOfDelayLoadedDLL**
 
      Необязательный параметр **Boolean** .
 
@@ -781,7 +781,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `UNLOAD` в разделе [/DELAY (параметры отложенной загрузки импортов)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Необязательный параметр **Boolean** .
 
@@ -789,7 +789,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/NOLOGO (отмена вывода начального заголовка) (компоновщик)](/cpp/build/reference/nologo-suppress-startup-banner-linker).
 
--   **SwapRunFromCD**
+- **SwapRunFromCD**
 
      Необязательный параметр **Boolean** .
 
@@ -797,7 +797,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `CD` в разделе [/SWAPRUN (загрузка выходных данных компоновщика в файл подкачки)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). См. также описание параметра **SwapRunFromNET**.
 
--   **SwapRunFromNET**
+- **SwapRunFromNET**
 
      Необязательный параметр **Boolean** .
 
@@ -805,7 +805,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `NET` в разделе [/SWAPRUN (загрузка выходных данных компоновщика в файл подкачки)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). См. также описание параметра **SwapRunFromCD** в этой таблице.
 
--   **TargetMachine**
+- **TargetMachine**
 
      Необязательный параметр типа **String**.
 
@@ -813,33 +813,33 @@ ms.locfileid: "56627159"
 
      Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **MachineARM** - **/MACHINE:ARM**
+    - **MachineARM** - **/MACHINE:ARM**
 
-    -   **MachineEBC** - **/MACHINE:EBC**
+    - **MachineEBC** - **/MACHINE:EBC**
 
-    -   **MachineIA64** - **/MACHINE:IA64**
+    - **MachineIA64** - **/MACHINE:IA64**
 
-    -   **MachineMIPS** - **/MACHINE:MIPS**
+    - **MachineMIPS** - **/MACHINE:MIPS**
 
-    -   **MachineMIPS16** - **/MACHINE:MIPS16**
+    - **MachineMIPS16** - **/MACHINE:MIPS16**
 
-    -   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
+    - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
 
-    -   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
+    - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
 
-    -   **MachineSH4** - **/MACHINE:SH4**
+    - **MachineSH4** - **/MACHINE:SH4**
 
-    -   **MachineTHUMB** - **/MACHINE:THUMB**
+    - **MachineTHUMB** - **/MACHINE:THUMB**
 
-    -   **MachineX64** - **/MACHINE:X64**
+    - **MachineX64** - **/MACHINE:X64**
 
-    -   **MachineX86** - **/MACHINE:X86**
+    - **MachineX86** - **/MACHINE:X86**
 
     Дополнительные сведения см. в разделе [/MACHINE (определение целевой платформы)](/cpp/build/reference/machine-specify-target-platform).
 
--   **TerminalServerAware**
+- **TerminalServerAware**
 
      Необязательный параметр **Boolean** .
 
@@ -847,13 +847,13 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/TSAWARE (создание приложения, поддерживающего сервер терминалов)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Необязательный параметр типа **String**.
 
      Задает каталог журнала отслеживания.
 
--   **TreatLinkerWarningAsErrors**
+- **TreatLinkerWarningAsErrors**
 
      Необязательный параметр **Boolean** .
 
@@ -861,7 +861,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/WX (обработка предупреждений компоновщика как ошибок)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).
 
--   **TurnOffAssemblyGeneration**
+- **TurnOffAssemblyGeneration**
 
      Необязательный параметр **Boolean** .
 
@@ -869,7 +869,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/NOASSEMBLY (создание модуля MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).
 
--   **TypeLibraryFile**
+- **TypeLibraryFile**
 
      Необязательный параметр типа **String**.
 
@@ -877,7 +877,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/TLBOUT (имя TLB-файла)](/cpp/build/reference/tlbout-name-dot-tlb-file).
 
--   **TypeLibraryResourceID**
+- **TypeLibraryResourceID**
 
      Необязательный параметр типа **Integer**.
 
@@ -885,7 +885,7 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в разделе [/TLBID (указание идентификатора ресурса для TypeLib)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
 
--   **UACExecutionLevel**
+- **UACExecutionLevel**
 
      Необязательный параметр типа **String**.
 
@@ -893,15 +893,15 @@ ms.locfileid: "56627159"
 
      Укажите одно из следующих значений, каждое из которых соответствует параметру командной строки.
 
-    -   **AsInvoker** - `level='asInvoker'`
+    - **AsInvoker** - `level='asInvoker'`
 
-    -   **HighestAvailable** - `level='highestAvailable'`
+    - **HighestAvailable** - `level='highestAvailable'`
 
-    -   **RequireAdministrator** - `level='requireAdministrator'`
+    - **RequireAdministrator** - `level='requireAdministrator'`
 
     Дополнительные сведения см. в описании аргумента `level` в разделе [Параметр /MANIFESTUAC (внедрение сведений о контроле учетных записей в манифест)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UACUIAccess**
+- **UACUIAccess**
 
      Необязательный параметр **Boolean** .
 
@@ -909,13 +909,13 @@ ms.locfileid: "56627159"
 
      Дополнительные сведения см. в описании аргумента `uiAccess` в разделе [Параметр /MANIFESTUAC (внедрение сведений о контроле учетных записей в манифест)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UseLibraryDependencyInputs**
+- **UseLibraryDependencyInputs**
 
      Необязательный параметр **Boolean** .
 
      Если задано значение `true`, будут использоваться входные данные библиотекаря вместо самого файла библиотеки при компоновке выходных данных библиотек для зависимостей проекта.
 
--   **Version**
+- **Version**
 
      Необязательный параметр типа **String**.
 

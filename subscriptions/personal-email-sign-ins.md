@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Подписки Visual Studio — почему я вижу адреса моих подписчиков в системах Hotmail и (или) Gmail?
 searchscope: VS Subscription
 ms.openlocfilehash: 0ba4029fcec0c8d35a58def14ab38afbb79e2fee
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539460"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Подписки Visual Studio — почему я вижу адреса моих подписчиков в системах Hotmail или Gmail?
 

@@ -209,7 +209,7 @@
         - name: Сообщения реляционного конструктора объектов
           href: o-r-designer-messages.md
           items:
-            - name: 'Выбранный класс невозможно удалить, потому что он используется как тип возвращаемого значения одного или нескольких методов DataContext'
+            - name: 'Выбранный класс невозможно удалить, потому что он используется как возвращаемый тип одного или нескольких методов DataContext'
               href: the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md
             - name: Строка подключения содержит учетные данные с текстовым паролем и не использует встроенную систему безопасности
               href: the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md
@@ -229,7 +229,7 @@
               href: this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md
             - name: 'Один или несколько выбранных элементов содержат тип данных, не поддерживаемый конструктором'
               href: one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md
-            - name: 'Невозможно отменить замену типа значений, возвращаемых методом DataContext'
+            - name: 'Невозможно отменить замену типа данных, возвращаемых методом DataContext'
               href: changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md
             - name: Невозможно изменить конструктор во время отладки
               href: the-designer-cannot-be-modified-while-debugging.md

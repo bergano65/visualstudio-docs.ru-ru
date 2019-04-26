@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7815f3b8788ac2fd3eaece89d6e2dbeeb49426d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bf6bc8ae841ad8ba0d3fd376176bdff2332fb958
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432005"
 ---
 # <a name="pf"></a>PF
 Параметр **PF** программы *VSPerfCmd.exe* задает событие профилирования, выборка которого осуществляется по ошибкам страниц, и при необходимости может изменить заданное по умолчанию число ошибок страницы в интервале выборки, равное 10.
 
 > [!NOTE]
->  Параметр **PF** нельзя использовать в 64-разрядных системах.
+> Параметр **PF** нельзя использовать в 64-разрядных системах.
 
 Параметр **PF** можно указывать только в командной строке, которая также содержит параметр **Launch** или **Attach**.
 

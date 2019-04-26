@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8ceb1b6360fb45c3894823bbbf817057f16d99
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa265a3b7ebde80f7398f0c5972d5265533890f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433474"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Как выполнить Определение расположения файлов символов с помощью командной строки
 Для отображения сведений о символах, например имен функций и номеров строк, программе командной строки VSPerfReport необходим доступ к файлам символов (*PDB*) профилируемых компонентов и системным файлам Windows. Файлы символов создаются при компиляции компонента. Дополнительные сведения см. в разделе [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport автоматически выполняет поиск следующих расположений файлов символов:
@@ -35,7 +35,7 @@ ms.locfileid: "56609935"
   Можно также использовать оба этих метода.
 
 > [!NOTE]
->  Если [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] установлен на локальном компьютере, расположение файлов символов Windows, вероятно, уже указано. Дополнительные сведения см. в разделе [Как Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md). Вам, тем не менее, потребуется настроить в VSPerfReport использование расположения и сервера, как описано далее в этом разделе.
+> Если [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] установлен на локальном компьютере, расположение файлов символов Windows, вероятно, уже указано. Дополнительные сведения см. в разделе [Как Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md). Вам, тем не менее, потребуется настроить в VSPerfReport использование расположения и сервера, как описано далее в этом разделе.
 
 ## <a name="specify-windows-symbol-files"></a>Задание файлов символов Windows
 

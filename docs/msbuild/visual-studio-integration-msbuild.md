@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e3881bc346c5074c7fd4277708a16e22d4acd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445381"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Интеграция Visual Studio (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] размещается в Visual Studio для загрузки и сборки управляемых проектов. Поскольку [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] отвечает за проект, в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] можно успешно использовать практически любой проект в формате [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], даже если проект был создан с помощью другого инструмента и участвует в процессе пользовательского построения.
@@ -63,7 +63,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
->  Некоторые имена типов элементов являются особыми для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , но они не приводятся в раскрывающемся меню.
+> Некоторые имена типов элементов являются особыми для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , но они не приводятся в раскрывающемся меню.
 
 ## <a name="in-process-compilers"></a>Внутрипроцессные компиляторы
  Если возможно, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] будет пытаться использовать внутрипроцессную версию компилятора [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] для повышения производительности. (Неприменимо к [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Чтобы при этом была обеспечена правильная работа, должны быть выполнены следующие условия:
@@ -75,13 +75,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-intellisense"></a>Функция IntelliSense в режиме разработки
  Чтобы получить поддержку IntelliSense в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] до того, как будет создана конечная сборка, должны выполняться следующие условия:
 
--   Должен существовать целевой объект с именем `Compile`.
+- Должен существовать целевой объект с именем `Compile`.
 
--   Либо целевой объект `Compile` , либо одна из его зависимостей должны вызывать задачу компилятора для проекта, например `Csc` или `Vbc`.
+- Либо целевой объект `Compile` , либо одна из его зависимостей должны вызывать задачу компилятора для проекта, например `Csc` или `Vbc`.
 
--   Либо целевой объект `Compile` , либо одна из его зависимостей должны инициировать получение компилятором всех необходимых параметров для IntelliSense, особенно всех ссылок.
+- Либо целевой объект `Compile` , либо одна из его зависимостей должны инициировать получение компилятором всех необходимых параметров для IntelliSense, особенно всех ссылок.
 
--   Должны выполняться условия, указанные в разделе [Внутрипроцессные компиляторы](#in-process-compilers).
+- Должны выполняться условия, указанные в разделе [Внутрипроцессные компиляторы](#in-process-compilers).
 
 ## <a name="build-solutions"></a>Создание решений
  В пределах [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]управление файлом решения и заказом на построение проекта осуществляется самим продуктом [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Если построение решения осуществляется с помощью *msbuild.exe* в командной строке, то [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняет синтаксический разбор файла решения и дает указание на выполнение построения проекта. В обоих случаях проекты строятся по отдельности в порядке зависимости, и взаимные ссылки между проектами не отслеживаются. В противоположность этому, при построении отдельных проектов с помощью *msbuild.exe* взаимные ссылки между проектами отслеживаются.
@@ -126,22 +126,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Выполнение целевых объектов в режиме разработки
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] пытается запустить выполнение целевых объектов с определенными именами при загрузке проекта. Эти целевые объекты включают в себя `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` и `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] запускает эти целевые объекты, что позволяет инициализировать компилятор, который обеспечивает функционирование IntelliSense. Возможна также инициализация отладчика и разрешение ссылок, отображаемых в обозревателе решений. Если эти целевые объекты отсутствуют, то загрузка и построение проекта будут выполняться правильно, но работа в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] в режиме разработки будет иметь функциональные ограничения.
 
-##  <a name="edit-project-files-in-visual-studio"></a>Изменение файлов проектов в Visual Studio
+## <a name="edit-project-files-in-visual-studio"></a>Изменение файлов проектов в Visual Studio
  Чтобы изменить непосредственно проект [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , можно открыть файл проекта в XML-редакторе Visual Studio.
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Выгрузка и изменение файла проекта в Visual Studio
 
-1.  В **обозревателе решений**откройте контекстное меню для своего проекта и выберите **Выгрузить проект**.
+1. В **обозревателе решений**откройте контекстное меню для своего проекта и выберите **Выгрузить проект**.
 
      К проекту добавляется пометка **(недоступный)**.
 
-2.  В **обозревателе решений** откройте контекстное меню для недоступного проекта и выберите **Изменить \<файл проекта>**.
+2. В **обозревателе решений** откройте контекстное меню для недоступного проекта и выберите **Изменить \<файл проекта>**.
 
      В XML-редакторе Visual Studio открывается файл проекта.
 
-3.  Измените, сохраните и закройте файл проекта.
+3. Измените, сохраните и закройте файл проекта.
 
-4.  В **обозревателе решений**откройте контекстное меню для недоступного проекта и выберите **Перезагрузить проект**.
+4. В **обозревателе решений**откройте контекстное меню для недоступного проекта и выберите **Перезагрузить проект**.
 
 ## <a name="intellisense-and-validation"></a>IntelliSense и проверка
  При использовании XML-редактора для изменения файлов проекта работой IntelliSense и функции проверки управляют файлы схемы [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . Они устанавливаются в кэш схемы, который можно найти по следующему пути *\<каталог установки Visual Studio>\Xml\Schemas\1033\MSBuild*.

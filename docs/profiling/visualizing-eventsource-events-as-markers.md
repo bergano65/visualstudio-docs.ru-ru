@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9ca24aa60e03c14bed607196d5d40a3d8f1c58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422092"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Визуализация событий EventSource как маркеров
 Визуализатор параллелизма может отображать события EventSource в качестве маркеров и предоставляет возможность настройки того, как должны отображаться эти маркеры. Чтобы просмотреть маркеры EventSource, зарегистрируйте GUID поставщика трассировки событий Windows с помощью диалогового окна [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). У визуализатора параллелизма по умолчанию есть соглашения по представлению события EventSource как [маркеров флагов](../profiling/flag-markers.md), [маркеров интервалов](../profiling/span-markers.md) и [маркеров сообщений](../profiling/message-markers.md). Вы можете настраивать то, как отображаются события EventSource, путем добавления пользовательских полей в события. Дополнительные сведения о маркерах см. в разделе [Маркеры визуализатора параллелизма](../profiling/concurrency-visualizer-markers.md). Дополнительные сведения о событиях EventSource см. в разделе <xref:System.Diagnostics.Tracing>.
@@ -23,11 +23,11 @@ ms.locfileid: "56639817"
 
 ### <a name="marker-type"></a>Тип маркера
 
-1.  События с [кодом](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start или win:Stop рассматриваются как начало или конец интервала соответственно.  Вложенные или перекрывающиеся интервалы не могут отображаться. Пары событий, которые начинаются в одном потоке и заканчиваются в другом, также не могут отображаться.
+1. События с [кодом](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start или win:Stop рассматриваются как начало или конец интервала соответственно.  Вложенные или перекрывающиеся интервалы не могут отображаться. Пары событий, которые начинаются в одном потоке и заканчиваются в другом, также не могут отображаться.
 
-2.  Событие, код которого отличен от win:Start и win:Stop, рассматривается как флаг маркера, если оно не имеет [уровень](/windows/desktop/WES/defining-severity-levels) (поле EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) win:Verbose или выше.
+2. Событие, код которого отличен от win:Start и win:Stop, рассматривается как флаг маркера, если оно не имеет [уровень](/windows/desktop/WES/defining-severity-levels) (поле EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) win:Verbose или выше.
 
-3.  Во всех остальных случаях это событие обрабатывается как сообщение.
+3. Во всех остальных случаях это событие обрабатывается как сообщение.
 
 ### <a name="importance"></a>Важность
  В приведенной ниже таблице определяется способ сопоставления уровня события и важности маркера.
@@ -91,7 +91,7 @@ ms.locfileid: "56639817"
  Используйте поле cvSpanId типа int, чтобы сопоставлять пары событий. Значение для каждой пары событий start — stop, представляющей интервал, должно быть уникальным. Обычно для параллельного кода это требует использования примитивов синхронизации, таких как <xref:System.Threading.Interlocked.Exchange%2A>, для обеспечения правильности ключа (значения, которое используется для CvSpanID).
 
 > [!NOTE]
->  Не поддерживается использование SpanID для вложения интервалов, их частичного перекрытия в одном потоке, а также обеспечения ситуации, когда интервал начинается в одном потоке, а завершается в другом.
+> Не поддерживается использование SpanID для вложения интервалов, их частичного перекрытия в одном потоке, а также обеспечения ситуации, когда интервал начинается в одном потоке, а завершается в другом.
 
 ## <a name="see-also"></a>См. также
 - [Маркеры визуализатора параллелизма](../profiling/concurrency-visualizer-markers.md)

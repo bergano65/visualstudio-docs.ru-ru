@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946668"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Как выполнить Настройка целевых платформ и задач
 Некоторые задачи MSBuild можно настроить так, чтобы они выполнялись в целевой среде, независимо от среды на компьютере разработчика. Например, если вы выполняете на 64-разрядном компьютере сборку приложения, предназначенного для 32-разрядной архитектуры, такие задачи можно выполнять в 32-разрядном процессе.

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71411ed03906e13ae666a12a67fbdb499d737b5f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945496"
 ---
 # <a name="security-page-project-designer"></a>Страница "Безопасность" в конструкторе проектов
 
@@ -34,7 +34,6 @@ ms.locfileid: "55936139"
 
 > [!NOTE]
 > При публикации приложения с помощью мастера **публикации** этот флажок устанавливается автоматически.
-
 
  При выборе этого параметра можно установить один из двух переключателей: **Это приложение с полным доверием** или **Это приложение с частичным доверием**.
 

@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения об активации подписки Parasoft Virtualize/SOA Test Professional, входящей в вашу подписку Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 89b079f9f797db58eb0afc887a70cdc78c48d886
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947328"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop в подписках Visual Studio
 
 Проводите тестирование на ранних этапах и как можно чаще.  Имитируйте и тестируйте поведение недоступных и развивающихся приложений и систем.  Ваш преимущество включает в себя бесплатную подписку на шесть месяцев.  В конце полугодовой подписки вы получите право на скидку в 25 % от цены годовой подписки.
-
 
 ## <a name="activation-steps"></a>Процедура активации
 
@@ -30,7 +29,6 @@ ms.locfileid: "56844117"
 3. Вы будете перенаправлены на веб-сайт Parasoft, где вы создадите учетную запись.  Просто укажите контактные данные и нажмите кнопку **Отправить**.
    > [!div class="mx-imgBorder"]
    > ![Создание учетной записи для преимущества Parasoft](_img/vs-parasoft/vs-parasoft-account-cropped.png)
-
 
 4. Создав учетную запись, вы увидите уведомление о том, что вам отправлено сообщение электронной почты с инструкциями по скачиванию.  (Если этого сообщения нет в папке "Входящие", не забудьте проверить папки нежелательной почты.)
 
@@ -83,14 +81,12 @@ ms.locfileid: "56844117"
 
 <sup>1</sup> *Включает следующие категории: Microsoft Partner Network (Enterprise).  Не включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Most Valuable Professional (MVP), региональный директор (RD).  ПО и службы MCT.*
 
-
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
-
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Нужна помощь с продуктами Parasoft?  Ознакомьтесь со следующими ресурсами:
+- Нужна помощь с продуктами Parasoft?  Ознакомьтесь со следующими ресурсами:
     - Техническая поддержка: https://www.parasoft.com/support/
     - Центр ресурсов Parasoft: https://www.parasoft.com/resources/
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

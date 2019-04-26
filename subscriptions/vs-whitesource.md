@@ -7,14 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения об активации учебной подписки WhiteSource Bolt, входящей в вашу подписку Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 482f0e5054b1b2ad7ea677b40d5d368004227ec8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ab373a21924aaac1a2a5660ed3032c69f04260e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811002"
 ---
-#  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt в подписках Visual Studio
+# <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt в подписках Visual Studio
 
 Находите и исправляйте уязвимости в продуктах с открытым исходным кодом и создавайте подробные отчеты об инвентаризации и лицензиях по всем компонентам с открытым исходным кодом в вашей сборке. Некоторые подписки Visual Studio предусматривают шесть месяцев бесплатного доступа.
 
@@ -37,7 +37,6 @@ ms.locfileid: "56842199"
 5. В разделе **Activate your account** (Активация учетной записи) страницы вам нужно будет выполнить четыре шага:
 
    - [Установите](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) расширение WhiteSource Bolt из Microsoft Visual Studio Marketplace. При отсутствии разрешений на установку расширений см. раздел [Установка бесплатных расширений для Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
-
 
 Нажмите зеленую кнопку **Установить**, если вы используете Azure DevOps Services, или кнопку **Загрузить** для Team Foundation Server.  В этом примере мы будем использовать Azure DevOps Services.
 > [!div class="mx-imgBorder"]
@@ -84,15 +83,13 @@ ms.locfileid: "56842199"
 
 <sup>1</sup> *Включает следующие категории:  Microsoft Partner Network (Enterprise).  Не включает следующие категории: прочие не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Most Valuable Professional (MVP), региональный директор (RD), ПО и службы MCT, Microsoft Partner Network (Professional).*
 
-
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
-
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 
--  Нужна помощь с WhiteSource Bolt?  Вы можете начать беседу с представителем WhiteSource Bolt на странице https://www.whitesourcesoftware.com/vse_whitesource_bolt/
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+- Нужна помощь с WhiteSource Bolt?  Вы можете начать беседу с представителем WhiteSource Bolt на странице https://www.whitesourcesoftware.com/vse_whitesource_bolt/
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

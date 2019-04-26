@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e211d4a685abc9c4a4137ade443ea3e5b90acf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 897ff07f78301553812f6855f3aa4bdb556a650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440191"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 Функция `CommentMarkProfile` вставляет числовую метку и текстовую строку в *VSP*-файл. Чтобы вставить метку и комментарий, необходимо включить профилирование для потока, содержащего функцию `CommentMarkProfile`.
@@ -57,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
  Метки профилирования имеют глобальную область видимости. Например, вставленную в любом потоке метку профиля можно использовать для обозначения начала или конца сегмента данных в любом потоке в *VSP*-файле.
 
 > [!IMPORTANT]
->  Метод CommentMarkProfile можно использовать только при профилировании с инструментированием.
+> Метод CommentMarkProfile можно использовать только при профилировании с инструментированием.
 
 ## <a name="net-framework-equivalent"></a>Эквивалент .NET Framework
  Microsoft.VisualStudio.Profiler.dll

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c5693a2edca0d81e21e73215e00f25aae939eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c79dfa33af5e0e80db682f272c5673856dbbcd8d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840386"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Как выполнить Использование резервных символов XML в файлах проектов
 При создании файлов проекта вам может потребоваться использовать зарезервированные символы XML, например, в значениях свойств или параметров задачи. Однако некоторые зарезервированные символы необходимо заменить именованными сущностями, чтобы файл проекта можно было проанализировать.
@@ -34,7 +34,7 @@ ms.locfileid: "56603878"
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>Использование двойных кавычек в файле проекта
 
--   Замените двойные кавычки соответствующей именованной сущностью &amp;quot;. Например, чтобы заключить в двойные кавычки список элементов `EXEFile`, введите:
+- Замените двойные кавычки соответствующей именованной сущностью &amp;quot;. Например, чтобы заключить в двойные кавычки список элементов `EXEFile`, введите:
 
     ```xml
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>

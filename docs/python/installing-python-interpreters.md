@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957420"
 ---
 # <a name="install-python-interpreters"></a>Установка интерпретаторов Python
 
@@ -66,4 +66,4 @@ Visual Studio отображает все известные окружения 
 - [Выбор интерпретатора для проекта](selecting-a-python-environment-for-a-project.md)
 - [Использование файла requirements.txt для зависимостей](managing-required-packages-with-requirements-txt.md)
 - [Пути поиска](search-paths.md)
-- [Справочная информация по вкладкам окна "Окружения Python"](python-environments-window-tab-reference.md)
+- [Справочная информация по окну "Окружения Python"](python-environments-window-tab-reference.md)

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996786"
 ---
 # <a name="item-metadata-in-task-batching"></a>Метаданные элементов в пакетной обработке задач
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может разделять списки элементов на разные категории или пакеты на основе метаданных элементов и поочередно выполнять задачи с использованием каждого пакета. Не так просто понять, какие именно элементы передаются с каким пакетом. В этом разделе рассматриваются наиболее распространенные сценарии, в которых используется пакетная обработка.

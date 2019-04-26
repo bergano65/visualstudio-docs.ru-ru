@@ -7,17 +7,16 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Сведения о том, как скачать и установить Visual Studio IDE, входящую в вашу подписку Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420803"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Использование преимущества Visual Studio 2019
 
 Как подписчик Visual Studio вы получаете доступ к интегрированной среде разработки Visual Studio.  Версия будет зависеть от уровня подписки.  Преимущество будет отображаться в виде плитки в категории "Сервис" на странице [Преимущества](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) портала подписчика.
-
 
 ## <a name="activation-steps"></a>Процедура активации
 
@@ -56,8 +55,10 @@ ms.locfileid: "59018146"
 14. Открывается Visual Studio. Теперь вы готовы начать работу с Visual Studio.
 
     ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![Начало работы с Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
     ::: moniker-end
 
 ## <a name="eligibility"></a>Право на участие
@@ -75,12 +76,10 @@ ms.locfileid: "59018146"
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
-
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
-
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Если вам нужна помощь с Visual Studio IDE, ознакомьтесь с этими ресурсами:
+- Если вам нужна помощь с Visual Studio IDE, ознакомьтесь с этими ресурсами:
     - Техническая поддержка: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
     - [Документация](/visualstudio/)
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.

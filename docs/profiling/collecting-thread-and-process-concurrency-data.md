@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c3310a87a4b25e560ea5303553e3eb75c0da001
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831536"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Сбор данных о параллелизме потоков и процессов
 
