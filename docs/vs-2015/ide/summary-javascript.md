@@ -1,5 +1,5 @@
 ---
-title: '&lt;Сводка&gt; (JavaScript) | Документация Майкрософт'
+title: '&lt;summary&gt; (JavaScript) | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 81d41918d61bbe95cfe19d2382535449a47deb8c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431424"
 ---
-# <a name="ltsummarygt-javascript"></a>&lt;Сводка&gt; (JavaScript)
+# <a name="ltsummarygt-javascript"></a>&lt;summary&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Указывает описание для функции или метода.  
@@ -33,16 +33,16 @@ ms.locfileid: "54775818"
   
 #### <a name="parameters"></a>Параметры  
  `locid`  
- Необязательный параметр. Идентификатор для локализации сведения о функции или метода. Идентификатор является либо член идентификатор или он соответствует `name` значение в набор сообщений, определяется альянсе метаданных атрибута. Тип идентификатора зависит от формата, указанного в [ \<loc >](../ide/loc-javascript.md) элемент.  
+ Необязательный параметр. Идентификатор для сведений о локализации для функции или метода. Идентификатор является идентификатором члена или соответствует значению атрибута `name` в наборе сообщений, определенном метаданными OpenAjax. Тип идентификатора зависит от формата, указанного в элементе [\<loc>](../ide/loc-javascript.md).  
   
  `description`  
  Необязательный параметр. Описание функции или метода.  
   
 ## <a name="remarks"></a>Примечания  
- Элементы, используемые для добавления заметок к функции, которые включают [ \<summary >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), и [ \<возвращает >](../ide/returns-javascript.md), должен быть помещен в тело функции до всех операторов.  
+ Элементы, используемые для добавления примечаний к функциям, которые включают [\<summary>](../ide/summary-javascript.md), [\<param>](../ide/param-javascript.md) и [\<returns>](../ide/returns-javascript.md), должны быть помещены в тело функции до всех операторов.  
   
 ## <a name="example"></a>Пример  
- Ниже показано, как использовать `<summary>` элемент.  
+ В следующем примере кода демонстрируется использование элемента `<summary>`.  
   
 ```javascript  
 function areaFunction(radiusParam)  
