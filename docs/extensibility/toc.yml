@@ -105,7 +105,7 @@
       href: subscribing-to-an-event.md
     - name: Расширение окна вывода
       href: extending-the-output-window.md
-    - name: 'Расширение окон свойств, списков задач, вывода и параметров'
+    - name: 'Расширение окон свойств, списка задач, вывода и параметров'
       href: extending-the-properties-task-list-output-and-options-windows.md
     - name: Создание модальных диалоговых окон и управление ими
       href: creating-and-managing-modal-dialog-boxes.md
@@ -191,6 +191,8 @@
               href: how-to-open-standard-editors.md
             - name: Открытие редакторов для открытых документов
               href: how-to-open-editors-for-open-documents.md
+        - name: "Руководство по миграции API расширяемости Конструктора\_XAML"
+          href: xaml-designer-extensibility-migration.md
 - name: Расширение проектов
   href: extending-projects.md
   items:
@@ -217,7 +219,7 @@
       href: extending-the-solution-explorer-filter.md
     - name: Управление загрузкой проекта в решении
       href: managing-project-loading-in-a-solution.md
-- name: Создание пользовательских шаблонов проектов и элементов
+- name: Создание настраиваемых шаблонов проекта и элемента
   href: creating-custom-project-and-item-templates.md
   items:
     - name: "Обновление настраиваемых шаблонов проектов и элементов для Visual Studio\_2017"
@@ -355,7 +357,7 @@
       href: exposing-properties-to-the-properties-window.md
     - name: Получение свойств проекта
       href: getting-project-properties.md
-- name: Расширение других частей Visual Studio
+- name: "Расширения других элементов Visual\_Studio"
   href: extending-other-parts-of-visual-studio.md
   items:
     - name: Создание расширения с помощью VSPackage
@@ -425,7 +427,7 @@
       href: ux-guidelines/evaluation-tools-for-visual-studio.md
     - name: Поддержка на уровне монитора
       href: ux-guidelines/per-monitor-awareness-extenders.md
-- name: Устранение проблем с разрешением экрана
+- name: "Решение проблем с\_DPI"
   href: addressing-dpi-issues2.md
 - name: Каталог и служба образов
   href: image-service-and-catalog.md
@@ -463,7 +465,7 @@
       href: troubleshooting-vspackages.md
 - name: Оболочка (изолированная или интегрированная)
   href: 'https://vspartner.com/pages/vsshells'
-- name: Доставка расширений Visual Studio
+- name: "Поставка расширений Visual\_Studio"
   href: shipping-visual-studio-extensions.md
   items:
     - name: Шаблон проекта VSIX
@@ -769,7 +771,7 @@
           href: vstextview-object.md
     - name: Глоссарий пакета SDK для Visual Studio
       href: visual-studio-sdk-glossary.md
-- name: Создание пакета средств разработки для программного обеспечения
+- name: Создание пакета средств разработки
   href: creating-a-software-development-kit.md
   items:
     - name: 'Пошаговое руководство. Создание пакета SDK с помощью C# или Visual Basic'
