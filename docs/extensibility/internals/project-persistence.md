@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c19b623efca921e7557a818c3915faf6ea158641
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859717"
 ---
 # <a name="project-persistence"></a>Сохранение проекта
 Основные проектные сохраняемости важно для вашего проекта. Большинство проектов использовать элементы проектов, которые представляют файлы; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] также поддерживает проекты, данные, не являющиеся файловыми. Должны сохраняться файлы, принадлежащие проекта и файл проекта. Интегрированная среда разработки указывает, что проект, чтобы сохранить само себя или элемента проекта.
@@ -43,5 +43,5 @@ ms.locfileid: "60087330"
  Методы в `IVsPersistHierarchyItem2` интерфейса используются для определения ли элемент может быть перезагружен, и если этот элемент может быть, перезагрузить его. Кроме того <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> метод может быть реализован для измененных элементов будет отброшен без сохранения.
 
 ## <a name="see-also"></a>См. также
-- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Создание экземпляров проекта с помощью фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

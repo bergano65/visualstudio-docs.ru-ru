@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: 51638db2cf258cc1a91c659c137c6a17811fa8c8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820701"
 ---
-# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Как выполнить  Настройка анализа кода для веб-приложения ASP.NET
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Практическое руководство. Настройка анализа кода для веб-приложения ASP.NET
 
 В Visual Studio, можно выбрать из списка анализа кода *наборов правил* для применения к [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] веб-приложения. Набор правил по умолчанию — минимально рекомендуемые правила Майкрософт. Вы можете выбрать другое правило, применяется для веб-сайта.
 

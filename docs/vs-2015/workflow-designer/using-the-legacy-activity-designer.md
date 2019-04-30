@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855769"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Использование конструктора действия для прежних версий
 В данном разделе описано использование конструктора действий в средстве [!INCLUDE[wfd1](../includes/wfd1-md.md)] более ранней версии. Используйте конструктор более ранней версии, если приложение должно ориентироваться на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

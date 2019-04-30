@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c7d22e191eecb3c650744c6ddbaa815de479752a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800151"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Функции API подключаемого модуля системы управления версиями
 API подключаемых модулей исходный элемент управления предоставляет следующие функции, которые должны быть реализованы системы управления версиями, подключаемый модуль, в соответствии с этого API. Подписи каждой функции и семантики, связанные с битовых флагов, и другие параметры, описаны в этой справке.
 
 ## <a name="initialization-and-housekeeping-functions"></a>Инициализация и функций по обслуживанию
 
-|Функция|Описание:|
+|Функция|Описание|
 |--------------|-----------------|
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|Закрывает проект.|
 |[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Запрашивает у пользователя Дополнительные параметры для данной команды.|
@@ -70,7 +70,7 @@ API подключаемых модулей исходный элемент уп
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Функции, поддерживающие расширенные возможности (версии 1.3 подключаемого модуля API управления источника)
  Эта группа функций определяет дополнительные функциональные возможности, включенные в версии 1.3 API подключаемых модулей управления источника. Они предоставляют доступ к более сложных функций системы управления версиями и возможностям.
 
-|Функция|Описание:|
+|Функция|Описание|
 |--------------|-----------------|
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Добавляет список файлов из системы управления версиями в текущий проект.|
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Извлекает список файлов из системы управления версиями без пользовательского интерфейса.|

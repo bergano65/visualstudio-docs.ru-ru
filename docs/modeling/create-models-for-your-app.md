@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811691"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
 
@@ -38,7 +38,7 @@ ms.locfileid: "55942626"
 
 |**Схема**|**Что показывает**|
 |-|-|
-|[Схемы зависимостей: Рекомендации](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Схемы зависимостей: Справочник по](../modeling/layer-diagrams-reference.md)|Высокоуровневая архитектура системы|
+|[Схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Схемы зависимостей: справочник](../modeling/layer-diagrams-reference.md)|Высокоуровневая архитектура системы|
 |Карты кода<br /><br /> [Сопоставление зависимостей во всех решениях](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)|Зависимости и другие отношения в имеющемся коде|
 |Схемы классов, созданные кодом<br /><br /> [Работа со схемами классов (конструктор классов)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Типы и их отношения в коде .NET|
 

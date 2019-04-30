@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 13bf20f9e1e642b948ddaa72ae9dca7bb457fba2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786778"
 ---
 # <a name="iscriptnode-interface"></a>Интерфейс IScriptNode
 Объект, реализующий `IScriptNode` интерфейс представляет веб-страницы.  
@@ -27,7 +27,7 @@ ms.locfileid: "58155843"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md)|Указывает, является ли объект все еще активна.|  
 |[IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)|Добавляет дочерний экземпляр `IScriptEntry`.|  

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4c7f28499b5d6e1e01caab1e6fd83fc5ab72ccf6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823870"
 ---
 # <a name="profilerheapobjectoptionalinfo-structure"></a>Структура PROFILER_HEAP_OBJECT_OPTIONAL_INFO
 Представляет Дополнительные сведения об объектах в куче.  
@@ -29,7 +29,7 @@ typedef struct _PROFILER_HEAP_OBJECT_OPTIONAL_INFO{    PROFILER_HEAP_OBJECT_OPTI
   
 ## <a name="members"></a>Участники  
   
-|Член|Тип|Описание:|  
+|Член|Тип|Описание|  
 |------------|----------|-----------------|  
 |Свойство|[Перечисление PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|Тип необязательные поля.|  
 |prototype|[Тип PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|Идентификатор объекта heap прототип объекта.|  

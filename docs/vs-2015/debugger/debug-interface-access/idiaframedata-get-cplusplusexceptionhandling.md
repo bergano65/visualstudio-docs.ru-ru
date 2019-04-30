@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 12ccb2770cc15962f3899b99f14dd8c7f342c3cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553036"
 ---
 # <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ HRESULT get_cplusplusExceptionHandling ( 
   
 #### <a name="parameters"></a>Параметры  
  `pRetVal`  
- [out] Возвращает `TRUE` Если обработка исключений C++ является по сути, в противном случае — возвращает `FALSE`.  
+ [out] Возвращает `TRUE` Если C++ обработка исключений является по сути, в противном случае — возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
   
 ## <a name="remarks"></a>Примечания  
- Для определения структурированных исключений действует обработки (это сильно отличается от обработки исключений C++), вызвать [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) метод.  
+ Для определения структурированных исключений действует обработки (который сильно отличается от C++ обработки исключений), вызовите [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) метод.  
   
 ## <a name="see-also"></a>См. также  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

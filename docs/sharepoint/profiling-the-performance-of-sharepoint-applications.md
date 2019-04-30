@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8b59a3de88403300a46b7992a2dad72e3d6b59e0
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563325"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Профилирование производительности приложений SharePoint
 
@@ -59,7 +59,7 @@ ms.locfileid: "54864141"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Пошаговое руководство: Профилирование приложения SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|В этом разделе показано выполнение анализа профиля выборки для приложения SharePoint.|
 |[Проверка производительности приложения перед выпуском](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|В этой статье описывается создание нагрузочных тестов, которые помогают нагрузочное тестирование приложений SharePoint.|

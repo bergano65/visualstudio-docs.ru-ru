@@ -12,11 +12,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 30ec67e1e58e0c546c70ecb87841293161463b1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429122"
 ---
 # <a name="project-model-core-components"></a>Основные компоненты модели проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ ms.locfileid: "58980714"
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Контрольный список. Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Не в сборке. Использование HierUtil7 проект классов для реализации типа проекта (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Вспомогательные средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Элементы модели проекта](../../extensibility/internals/elements-of-a-project-model.md)

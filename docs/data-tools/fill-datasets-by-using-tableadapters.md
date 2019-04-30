@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566925"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Заполнение наборов данных с помощью адаптеров таблицы
 
@@ -52,7 +52,7 @@ ms.locfileid: "55937998"
 
 ![Поток данных в клиентском приложении](../data-tools/media/clientdatadiagram.gif)
 
-Если адаптеры таблиц создаются с помощью **конструктор наборов данных**, классы адаптеров таблиц не создаются как вложенные классы <xref:System.Data.DataSet>. Они находятся в отдельных пространствах имен, характерные для каждого набора данных. Например, если у вас есть набор данных с именем `NorthwindDataSet`, адаптеры таблиц, связанные с <xref:System.Data.DataTable>s в `NorthwindDataSet` в `NorthwindDataSetTableAdapters` пространства имен. Для программного доступа к конкретному адаптеру таблиц, необходимо объявить новый экземпляр адаптера таблицы. Например:
+Если адаптеры таблиц создаются с помощью **конструктор наборов данных**, классы адаптеров таблиц не создаются как вложенные классы <xref:System.Data.DataSet>. Они находятся в отдельных пространствах имен, характерные для каждого набора данных. Например, если у вас есть набор данных с именем `NorthwindDataSet`, адаптеры таблиц, связанные с <xref:System.Data.DataTable>s в `NorthwindDataSet` в `NorthwindDataSetTableAdapters` пространства имен. Для программного доступа к конкретному адаптеру таблиц, необходимо объявить новый экземпляр адаптера таблицы. Пример:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -114,7 +114,7 @@ TableAdapters команды данных для чтения и записи и
 
 ## <a name="tableadapter-support-for-nullable-types"></a>Поддержка TableAdapter обнуляемые типы
 
-Адаптеры таблиц поддерживает типы nullable `Nullable(Of T)` и `T?`. Дополнительные сведения о типах, допускающих значение NULL, в Visual Basic см. в разделе [Типы значений, допускающие значение NULL](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Дополнительные сведения о типах, допускающие значения NULL в C#, см. в разделе [используют обнуляемые типы](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
+Адаптеры таблиц поддерживает типы nullable `Nullable(Of T)` и `T?`. Дополнительные сведения о типах, допускающих значение NULL, в Visual Basic см. в разделе [Типы значений, допускающие значение NULL](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Дополнительные сведения о допускающих значение NULL типов в C#, см. в разделе [используют обнуляемые типы](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
 
 <a name="tableadaptermanager-reference"></a>
 
@@ -129,9 +129,9 @@ TableAdapters команды данных для чтения и записи и
 |Член|Описание|
 |------------|-----------------|
 |Метод `UpdateAll`|Сохраняет все данные из всех таблиц данных.|
-|Свойство`BackUpDataSetBeforeUpdate` |Определяет, следует ли создавать резервную копию набора данных перед выполнением `TableAdapterManager.UpdateAll` метод. Логическое значение.|
+|Свойство `BackUpDataSetBeforeUpdate`|Определяет, следует ли создавать резервную копию набора данных перед выполнением `TableAdapterManager.UpdateAll` метод. Логическое значение.|
 |*tableName* `TableAdapter` свойство|Представляет адаптер таблицы. Созданный TableAdapterManager содержит свойство для каждого `TableAdapter` он управляет. Например, создает набор данных с таблицей Customers и Orders с TableAdapterManager, содержащий `CustomersTableAdapter` и `OrdersTableAdapter` свойства.|
-|Свойство`UpdateOrder` |Управляет порядком отдельные инструкции insert, update и команд delete. Задайте одно из значений в `TableAdapterManager.UpdateOrderOption` перечисления.<br /><br /> По умолчанию `UpdateOrder` присваивается **InsertUpdateDelete**. Это означает, что операции вставки, а затем обновляет, а затем удаляет выполняются для всех таблиц в наборе данных.|
+|Свойство `UpdateOrder`|Управляет порядком отдельные инструкции insert, update и команд delete. Задайте одно из значений в `TableAdapterManager.UpdateOrderOption` перечисления.<br /><br /> По умолчанию `UpdateOrder` присваивается **InsertUpdateDelete**. Это означает, что операции вставки, а затем обновляет, а затем удаляет выполняются для всех таблиц в наборе данных.|
 
 ## <a name="security"></a>Безопасность
 

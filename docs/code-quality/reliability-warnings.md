@@ -15,18 +15,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74c1a5202b05b3ffe6f9b6c5b24804fb259287c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825342"
 ---
 # <a name="reliability-warnings"></a>предупреждения надежности
 Предупреждения надежности поддерживают безотказность библиотек и приложений, таких как правильное использование памяти и потоков.
 
 ## <a name="in-this-section"></a>В этом разделе
 
-|Правило|Описание:|
+|Правило|Описание|
 |----------|-----------------|
 |[CA2000: Ликвидировать объекты перед потерей области](../code-quality/ca2000-dispose-objects-before-losing-scope.md)|Необходимо явно удалить объект до того, как все ссылки на него окажутся вне области действия, так как может произойти исключительное событие, которое воспрепятствует выполнению метода завершения объекта.|
 |[CA2001: Избегайте вызовов проблемных методов](../code-quality/ca2001-avoid-calling-problematic-methods.md)|Член вызывает потенциально опасный или проблемный метод.|

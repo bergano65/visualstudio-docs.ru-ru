@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2f6faa99ad0ff9d564522baad47f9d252157ff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556055"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Настройка меню и редактор элементов управления с помощью API прежних версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58993746"
  [Контекстные меню](../extensibility/context-menus.md)  
  Описывает контекстные меню редактора.  
   
- [Практическое руководство. Обновление строки состояния](../extensibility/how-to-update-the-status-bar.md)  
+ [Практическое руководство. Обновления строки состояния](../extensibility/how-to-update-the-status-bar.md)  
  Предоставляет инструкции по обновлению **строки состояния**.  
   
 ## <a name="related-sections"></a>Связанные разделы  

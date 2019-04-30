@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fd0574fe6093c6d53a63dfbbc97a7a313eaedc5f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788040"
 ---
 # <a name="iremotedebugapplicationthread-interface"></a>Интерфейс IRemoteDebugApplicationThread
 Представляет поток исполнения в определенном приложении.  
@@ -27,7 +27,7 @@ ms.locfileid: "58160005"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IRemoteDebugApplicationThread::GetSystemThreadId](../../winscript/reference/iremotedebugapplicationthread-getsystemthreadid.md)|Возвращает идентификатор зависящую от операционной системы, связанный с потоком.|  
 |[IRemoteDebugApplicationThread::GetApplication](../../winscript/reference/iremotedebugapplicationthread-getapplication.md)|Возвращает объект приложения, связанный с данным потоком.|  

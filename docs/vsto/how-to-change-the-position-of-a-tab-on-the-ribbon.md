@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 512dfda8c95ecd56fe44eb6878e6abc0d942a782
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826736"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Практическое руководство. Изменение положения вкладки на ленте
   Можно изменить порядок пользовательских вкладок на ленте с помощью **редактор коллекции вкладок**. Пользовательские вкладки можно разместить до или после встроенной вкладки на ленте. Встроенная вкладка — это вкладка, которая уже имеется на ленте приложения Microsoft Office. Например **данных** вкладка — это встроенная вкладка Excel.

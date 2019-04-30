@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826786"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Практическое руководство. Добавление элементов управления в представление Backstage
   Конструктор лент можно использовать для добавления элементов управления в меню, которое открывается при нажатии кнопки **файл** вкладки. При запуске приложения, элементы управления, добавляемые к **файл** вкладка отображается группа с именем **Add-ins**.

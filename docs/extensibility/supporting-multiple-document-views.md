@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bdd976c4710754d446c6b63e628427c42bf7da17
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432411"
 ---
 # <a name="supporting-multiple-document-views"></a>Поддержка представления нескольких документов
 Можно предоставить несколько представлений документа, создав разделяют данные документа и объекты представления документа для редактора. Приведены в некоторых случаях, в которых может потребоваться дополнительный документ-представление.

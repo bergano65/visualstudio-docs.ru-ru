@@ -1,13 +1,15 @@
 ---
 title: Ошибка в утверждении диалоговое окно | Документация Майкрософт
-ms.date: 11/04/2016
-ms.topic: reference
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.assertions
 dev_langs:
-- CSharp
-- VB
 - FSharp
+- VB
+- CSharp
 - C++
 helpviewer_keywords:
 - debugging assertions
@@ -15,27 +17,27 @@ helpviewer_keywords:
 - assertions, assertion failures
 - Assertion Failed dialog box
 ms.assetid: 64af5bed-e38b-420f-b9ce-d64f35100aae
-author: mikejo5000
+caps.latest.revision: 10
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
 ms.openlocfilehash: 39362adf5837e3293782df04627af9acd06fdd88
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564623"
 ---
 # <a name="assertion-failed-dialog-box"></a>Сбой проверочного утверждения - диалоговое окно
-Оператор утверждения задает условия, которые должны выполняться на определенных этапах работы программы. Если эти условия не выполняются, утверждение признается ложным, выполнение программы прерывается и появляется это диалоговое окно.
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-|Нажмите кнопку|Кому|
-|-----------|--------|
-|Повторить|Отладить утверждение или получить справку по утверждениям.|
-|Пропустить|Пропустить утверждение и продолжить выполнение программы.|
-|Прервать|Остановить выполнение программы и завершить сеанс отладки.|
-
-## <a name="see-also"></a>См. также раздел
-
-- [Проверочные утверждения C/C++](../debugger/c-cpp-assertions.md)
+Оператор утверждения задает условия, которые должны выполняться на определенных этапах работы программы. Если эти условия не выполняются, утверждение признается ложным, выполнение программы прерывается и появляется это диалоговое окно.  
+  
+|Нажмите кнопку|Кому|  
+|-----------|--------|  
+|Повторить|Отладить утверждение или получить справку по утверждениям.|  
+|Пропустить|Пропустить утверждение и продолжить выполнение программы.|  
+|Прервать|Остановить выполнение программы и завершить сеанс отладки.|  
+  
+## <a name="see-also"></a>См. также  
+ [Проверочные утверждения C/C++](../debugger/c-cpp-assertions.md)

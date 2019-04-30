@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537606"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Общие элементы пользовательского интерфейса (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "54756396"
 
  [Параметры, текстовый редактор, C/C++, Дополнительно](../../ide/reference/options-text-editor-c-cpp-advanced.md) позволяет задать дополнительные параметры для файлов C и C++.
 
- [Параметры, текстовый редактор, C#, форматирования](../../ide/reference/options-text-editor-csharp-formatting.md) позволяет задавать параметры форматирования для C# файлов.
+ [Параметры, текстовый редактор, C#, форматирование](../../ide/reference/options-text-editor-csharp-formatting.md) позволяет задавать параметры форматирования для файлов C#.
 
- [Параметры, текстовый редактор, C#, расширенные](../../ide/reference/options-text-editor-csharp-advanced.md) позволяет задать дополнительные параметры для C# файлов.
+ [Дополнительные параметры, текстовый редактор, C#,](../../ide/reference/options-text-editor-csharp-advanced.md) можно указать дополнительные параметры для файлов C#.
 
- [Параметры, текстовый редактор, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) позволяет задавать параметры IntelliSense для C# файлов.
+ [Параметры, текстовый редактор, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) позволяет задавать параметры IntelliSense для файлов C#.
 
  [Параметры, текстовый редактор, XAML, форматирование](../../ide/reference/options-text-editor-xaml-formatting.md) позволяет задавать параметры форматирования для файлов XAML.
 

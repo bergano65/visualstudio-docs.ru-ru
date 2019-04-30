@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429526"
 ---
 # <a name="project-persistence"></a>Сохранение проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,5 +45,5 @@ ms.locfileid: "60074246"
  Методы в `IVsPersistHierarchyItem2` интерфейса используются для определения ли элемент может быть перезагружен, и если этот элемент может быть, перезагрузить его. Кроме того <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> метод может быть реализован для измененных элементов будет отброшен без сохранения.  
   
 ## <a name="see-also"></a>См. также  
- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Контрольный список. Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Создание экземпляров проекта с помощью фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

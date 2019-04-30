@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557028"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Расширение системы проектов SharePoint
   С помощью набора шаблонов проектов и шаблонов элементов в Visual Studio можно создавать решения SharePoint. Эти шаблоны, требованиям многих сценариев разработки, однако вы можете столкнуться некоторых случаях, где они не предоставляют функциональные возможности, которые нужны. В этих случаях можно расширить системы проектов SharePoint.

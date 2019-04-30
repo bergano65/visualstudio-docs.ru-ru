@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566475"
 ---
 # <a name="n-tier-data-applications-overview"></a>Общие сведения об n-уровневых приложениях
 *N-уровневых* данных приложения, данные приложения, разделенные на несколько *уровни*. Также называется «распределенные приложения» и «многоуровневыми приложениями», n уровневые приложения разделяют обработку на несколько отдельных уровней, которые распределяются между клиентом и сервером. При разработке приложений, работающих с данными, должен иметь четкое разделение между различными уровнями, составляющих приложение.

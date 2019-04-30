@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d8296d28e884c746e09b427914af02213bbbaa7e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813040"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Практическое руководство. Программное отображение документов в режиме предварительного просмотра
   Если решение создает отчет, может потребоваться отображение отчета пользователю в режиме предварительного просмотра отчета.

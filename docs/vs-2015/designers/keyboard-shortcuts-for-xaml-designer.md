@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f59853d91d5e3f18ba662c722a5c47b7114e364e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428148"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Сочетания клавиш для конструктора XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,5 +49,5 @@ ms.locfileid: "54757612"
 |Заблокировать объекты в области рисования, когда фокус ввода установлен на окно "Структура документа"|CTRL+L|  
 |Разблокировать объекты в области рисования, когда фокус ввода установлен на окно "Структура документа"|SHIFT+CTRL+L|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846867"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Практическое руководство. Использование окна потоков GPU (C++)
 С помощью окна "Потоки GPU" можно просматривать потоки, выполняющиеся в графическом процессоре (GPU), и работать с этими потоками в отлаживаемом приложении. Дополнительные сведения о приложениях, которые выполняются в GPU, см. в разделе [Обзор C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
@@ -105,4 +105,4 @@ ms.locfileid: "60071360"
 ## <a name="see-also"></a>См. также
 - [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Практическое руководство. Использование окна контроля параллельных данных](../debugger/how-to-use-the-parallel-watch-window.md)
-- [Пошаговое руководство: Отладка приложения C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Пошаговое руководство: отладка приложения C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

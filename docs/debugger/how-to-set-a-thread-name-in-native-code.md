@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: Установка имени потока в машинном коде | Документация Майкрософт'
+title: Практическое руководство. Установка имени потока в машинном коде | Документация Майкрософт
 ms.date: 12/17/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847542"
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>Практическое руководство. Установка имен потока в машинном коде
+# <a name="how-to-set-a-thread-name-in-native-code"></a>Практическое руководство. Установка имени потока в машинном коде
 Именование потоков можно выполнить в любом выпуске Visual Studio. Именование потоков используется для идентификации потоков в **потоков** окно при отладке к выполняющемуся процессу. Задавать именованных потоков можно также полезно при выполнении последующего отладки с помощью проверки аварийных дампов, а также при анализе производительности собирает с помощью различных средств.
 
 ## <a name="ways-to-set-a-thread-name"></a>Способы задания имени потока
@@ -108,7 +108,7 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)
 - [Практическое руководство. Установка имени потока в управляемом коде](../debugger/how-to-set-a-thread-name-in-managed-code.md)

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dd95fe31949b51c7167337ad21c51251e84a19a7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864066"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Параметры командной строки devenv для разработки VSPackage
 
@@ -41,7 +41,7 @@ Visual Studio позволяет разработчикам автоматизи
 
 Документация по Visual Studio описывает уровень пользователя `devenv` параметры командной строки. Дополнительные сведения см. в разделе [командной строки devenv](../ide/reference/devenv-command-line-switches.md). `devenv` Средство также поддерживает дополнительные параметры командной строки, которые можно использовать с VSPackage разработки, развертывания и отладки.
 
-| Параметр командной строки | Описание: |
+| Параметр командной строки | Описание |
 |---------------------| - |
 | `/ResetSkipPkgs` | Очищает все параметры пропуска загрузки, добавленные пользователями, желающими исключить загрузку проблемных пакетов VSPackage, а затем запускает Visual Studio. Наличие тега SkipLoading отключает загрузку пакета VSPackage. Удаление этого тега снова включает загрузку пакета VSPackage.<br /><br /> У этого параметра нет аргументов. |
 | `/RootSuffix` | Запускает Visual Studio, используя альтернативное расположение. Следующая команда служит ярлыком, созданный установщиком Visual Studio SDK:<br /><br /> `devenv /RootSuffix exp`<br /><br /> В этом случае `exp` определяет расположение с определенной суффиксом (например, `10.0Exp` вместо `10.0`). Экспериментальный экземпляр позволяет отлаживать VSPackage отдельно от экземпляра Visual Studio, которая используется для написания кода.<br /><br /> Этот параметр может занять любая строка, которая определяет расположение, которое вы создали с помощью VSRegEx.exe. Дополнительные сведения см. в разделе [экспериментальный экземпляр](../extensibility/the-experimental-instance.md). |

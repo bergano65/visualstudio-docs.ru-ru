@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dd5bfc24fcf1cd8a465bafe1e5bcf6c4df61308c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796453"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Пошаговое руководство. Создание оформления представления, команд и параметров (направляющие столбцов)
 Вы можете расширить редактор текста или кода Visual Studio с командами и эффектов представления. В этой статье показано, как приступить к работе с компонентом популярное расширение, направляющие столбцов. Направляющие столбцов являются визуально света линий, рисуемых в представлении текстового редактора, чтобы помочь в управлении код, чтобы ширина определенных столбцов. В частности форматированный код может быть важно для примеры включают в документах, в блогах, или отчеты об ошибках.

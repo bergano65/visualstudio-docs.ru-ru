@@ -11,11 +11,11 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 5f873cdf2ebd394e48c1513135f1acdcd700c283
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816900"
 ---
 # <a name="profilerpropertytypesubstringinfo-structure"></a>PROFILER_PROPERTY_TYPE_SUBSTRING_INFO Structure
 Представляет сведения о типе подстроки, используются в связи. Используется в [структура PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).  
@@ -28,7 +28,7 @@ typedef struct _PROFILER_PROPERTY_TYPE_SUBSTRING_INFO {    UINT length;    LPCWS
   
 ## <a name="members"></a>Участники  
   
-|Член|Тип|Описание:|  
+|Член|Тип|Описание|  
 |------------|----------|-----------------|  
 |длина|UINT|Объект — целое число без знака.|  
 |value|LPCWSTR|Объект — LPCWSTR.|

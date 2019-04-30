@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df8cc7fa837e5308d2e6ba18501d7bfb93a83223
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829938"
 ---
 # <a name="baseclass"></a>BaseClass
 Каждый базовый класс для определяемого пользователем типа (UDT) символ определяется дочерний элемент с `SymTagBaseClass` тега. [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) свойство содержит символ для базовой определяемого пользователем ТИПА, а все свойства базового определяемого пользователем типа доступны как часть BaseClass-символ.
@@ -27,7 +27,7 @@ ms.locfileid: "56626402"
 ## <a name="properties"></a>Свойства
  Ниже приведены дополнительные допустимые свойства для данного типа символов.
 
-|Свойство.|Тип данных|Описание|
+|Свойство|Тип данных|Описание|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Модификатор доступа, примененный к этого базового класса. Один из [перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) значения.|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Символ, включающего класса (если таковые имеются).|
@@ -61,6 +61,6 @@ ms.locfileid: "56626402"
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|Идентификатор символа фигуры виртуальной таблицы.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Если базовый класс помечен как переменное.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Иерархия классов символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [UDT](../../debugger/debug-interface-access/udt.md)

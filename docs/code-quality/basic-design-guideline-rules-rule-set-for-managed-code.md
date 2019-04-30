@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571372"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Набор правил "Базовые нормы и правила разработки" для управляемого кода
 Можно использовать базовые правила и рекомендации по разработке Microsoft набора правил в сосредоточиться на создании кода проще для понимания и использования. Следует включить это правило, если проект содержит библиотечный код или если вы хотите принудительное применение рекомендаций для кода, который легко поддерживать.
