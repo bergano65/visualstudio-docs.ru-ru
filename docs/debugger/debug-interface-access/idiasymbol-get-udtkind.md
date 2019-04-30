@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92266de7c372fc6bcf7d0775ebb5ab01ea2e0308
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 34faf217f77bd30ba707f5ae17886b05dac8ab4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401348"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
 Извлекает все разнообразие определяемого пользователем типа (UDT).
@@ -39,8 +39,8 @@ HRESULT get_udtKind ( 
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Перечисление UdtKind](../../debugger/debug-interface-access/udtkind.md)

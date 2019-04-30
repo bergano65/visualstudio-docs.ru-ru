@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b270d742cab45bebc48e37dd557ce4cdb2470b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7bb6562c0eb74f537efb25be031e9c9be46d64b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402699"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство. Создание классов LINQ to SQL с помощью однотабличного наследования (реляционный конструктор объектов)
 [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) поддерживает наследование одиночных таблиц, как именно обычно осуществляется в реляционных системах. Это пошаговое руководство разворачивается после универсальных шагов, описанных в [как: Настройка наследования с помощью реляционного конструктора](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) раздела и обеспечивает некоторые реальные данные, чтобы продемонстрировать использование наследования в [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -45,7 +45,7 @@ ms.locfileid: "60114344"
 1. В **обозревателя серверов** или **обозреватель баз данных**, щелкните правой кнопкой мыши **таблиц** узел и нажмите кнопку **добавить новую таблицу**.
 
     > [!NOTE]
-    >  Может быть использована база данных Northwind или любая другая, к которой можно добавить таблицу.
+    > Может быть использована база данных Northwind или любая другая, к которой можно добавить таблицу.
 
 2. В **Конструкторе таблиц** добавьте в таблицу следующие столбцы:
 

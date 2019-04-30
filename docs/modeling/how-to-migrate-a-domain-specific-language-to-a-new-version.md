@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ca2366111e0e87e8e95db66f9bdb146016adb8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63d313534fab789c5e4e79fb644111314e054250
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445154"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Практическое руководство. Перенос предметно-ориентированного языка в новую версию
 Вы можете перенести проекты, определение и использование предметно ориентированного языка для [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] из версии [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , включенного в состав [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -53,7 +53,7 @@ ms.locfileid: "60040136"
    - Выберите проект или решение, чтобы просмотреть список изменений, это средство максимально.
 
        > [!NOTE]
-       >  Флажки, которые отображаются рядом с имена папок не оказывают влияния. Необходимо развернуть все папки, чтобы проверять проекты и решения.
+       > Флажки, которые отображаются рядом с имена папок не оказывают влияния. Необходимо развернуть все папки, чтобы проверять проекты и решения.
 
 4. Преобразуйте проекты.
 
@@ -74,7 +74,7 @@ ms.locfileid: "60040136"
    2. Нажмите кнопку **преобразовать все шаблоны** кнопку в заголовке обозревателя решений.
 
        > [!NOTE]
-       >  Это можно сделать ненужные. Дополнительные сведения см. в разделе [как автоматизировать преобразовать все шаблоны](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
+       > Это можно сделать ненужные. Дополнительные сведения см. в разделе [как автоматизировать преобразовать все шаблоны](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 6. Обновите пользовательский код в преобразованные проекты.
 

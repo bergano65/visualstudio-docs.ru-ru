@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441829"
 ---
 # <a name="events-in-office-projects"></a>События в проектах Office
   Каждый шаблон проекта Office автоматически создает несколько обработчиков событий. Обработчики событий для настроек на уровне документа несколько отличаются от обработчиков событий для надстроек VSTO.
@@ -82,7 +82,7 @@ ms.locfileid: "60094857"
     - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
->  Не удаляйте программным образом элементы управления во время работы обработчика событий **Shutdown** документа. Если возникает событие **Shutdown** , элементы пользовательского интерфейса документа становятся недоступными. Если элементы управления необходимо удалить до закрытия приложения, добавьте свой код в другой обработчик событий, например, **BeforeClose** или **BeforeSave**.
+> Не удаляйте программным образом элементы управления во время работы обработчика событий **Shutdown** документа. Если возникает событие **Shutdown** , элементы пользовательского интерфейса документа становятся недоступными. Если элементы управления необходимо удалить до закрытия приложения, добавьте свой код в другой обработчик событий, например, **BeforeClose** или **BeforeSave**.
 
 ### <a name="event-handler-method-declarations"></a>Объявления метода обработчика событий
  В каждое объявление метода обработчика событий передаются одни и те же аргументы: *sender* и *e*. В Excel аргумент *sender* ссылается на лист, например, `Sheet1` или `Sheet2`. В Microsoft Word аргумент *sender* ссылается на документ. Аргумент *e* ссылается на стандартные аргументы для события, которые не используются в этом случае.
@@ -95,7 +95,7 @@ ms.locfileid: "60094857"
  В следующем примере кода показаны обработчики событий по умолчанию в проектах на уровне документа для Excel.
 
 > [!NOTE]
->  В следующем примере кода показаны обработчики событий в классе `Sheet1` . Имена обработчиков событий в других классах ведущих элементов соответствуют имени класса. Например, в классе `Sheet2` обработчик событий **Startup** имеет имя `Sheet2_Startup`. В классе `ThisWorkbook` обработчик событий **Startup** имеет имя `ThisWorkbook_Startup`.
+> В следующем примере кода показаны обработчики событий в классе `Sheet1` . Имена обработчиков событий в других классах ведущих элементов соответствуют имени класса. Например, в классе `Sheet2` обработчик событий **Startup** имеет имя `Sheet2_Startup`. В классе `ThisWorkbook` обработчик событий **Startup** имеет имя `ThisWorkbook_Startup`.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
@@ -150,7 +150,7 @@ ms.locfileid: "60094857"
 - Событие <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> объекта <xref:Microsoft.Office.Interop.Outlook.Explorer> .
 
 > [!NOTE]
->  Чтобы Outlook принудительно создавал событие <xref:Microsoft.Office.Tools.AddInBase.Shutdown> при выходе, можно изменить реестр. Однако, если администратор отменяет эту настройку, любой код, добавленный в метод `ThisAddIn_Shutdown` , больше не будет выполняться при завершении работы Outlook. Дополнительные сведения см. в разделе [изменяет завершения работы для Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
+> Чтобы Outlook принудительно создавал событие <xref:Microsoft.Office.Tools.AddInBase.Shutdown> при выходе, можно изменить реестр. Однако, если администратор отменяет эту настройку, любой код, добавленный в метод `ThisAddIn_Shutdown` , больше не будет выполняться при завершении работы Outlook. Дополнительные сведения см. в разделе [изменяет завершения работы для Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
 
 ## <a name="see-also"></a>См. также
 - [Разработка решений Office](../vsto/developing-office-solutions.md)

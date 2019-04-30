@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e9bafcba14c65f6f117319180dad7538414885
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439363"
 ---
 # <a name="msbuild-inline-tasks"></a>Встроенные задачи MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "59670307"
   Элементы `Reference` и `Using` подходят для любого языка. Встроенные задачи можно написать на любом из поддерживаемых языков .NET CodeDom, например Visual Basic или Visual C#.  
   
 > [!NOTE]
->  Элементы, содержащиеся в элементе `Task`, характерны для фабрики задачи, в этом случае для фабрики кода задачи.  
+> Элементы, содержащиеся в элементе `Task`, характерны для фабрики задачи, в этом случае для фабрики кода задачи.  
   
 ### <a name="code-element"></a>Элемент Code  
  Последний дочерний элемент в элементе `Task` — `Code`. Элемент `Code` содержит код, который нужно скомпилировать в задачу, или определяет его местонахождение. Содержимое в элементе `Code` зависит от того, каким образом вы хотите написать задачу.  
@@ -87,7 +87,7 @@ ms.locfileid: "59670307"
   Вы также можете использовать атрибут `Source` элемента `Code`, чтобы указать расположение файла, содержащего код для задачи. Код в исходном файле должен иметь тип, заданный атрибутом `Type`. Если есть атрибут `Source`, тогда по умолчанию значением атрибута `Type` является `Class`. Если атрибут `Source` отсутствует, значением по умолчанию будет `Fragment`.  
   
 > [!NOTE]
->  При определении класса задачи в исходном файле имя класса должно быть согласовано с атрибутом `TaskName` соответствующего элемента [UsingTask](../msbuild/usingtask-element-msbuild.md).  
+> При определении класса задачи в исходном файле имя класса должно быть согласовано с атрибутом `TaskName` соответствующего элемента [UsingTask](../msbuild/usingtask-element-msbuild.md).  
   
 ## <a name="hello-world"></a>Hello World  
  Рассмотрим более сложную встроенную задачу. Задача HelloWorld отображает приветствие "Hello, world!". Оно отображается на устройстве регистрации ошибок по умолчанию. Как правило, это системная консоль или окно **вывода** Visual Studio. В примере элемент `Reference` используется просто для наглядности.  
@@ -193,4 +193,4 @@ File.WriteAllText(Path, content);
   
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
- [Пошаговое руководство: Создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)
+ [Пошаговое руководство: создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)

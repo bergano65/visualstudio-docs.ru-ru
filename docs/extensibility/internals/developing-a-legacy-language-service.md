@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a4cbc68e84c6593ca61be9234fcec3e88f3f333
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9603c8d7955a34ae42dd7339a708c12441e98634
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418663"
 ---
 # <a name="develop-a-legacy-language-service"></a>Разработка языковой службы прежних версий
 Этот раздел содержит ссылки на разделы, которые помогут вам создать языковой службы прежних версий.
@@ -29,7 +29,7 @@ ms.locfileid: "56631878"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы подробнее узнать о новых способах реализации языковой службы, см. в разделе [редактора и языковой службы расширения](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
 
 ## <a name="in-this-section"></a>Содержание раздела
 - [Модель языковой службы прежних версий](../../extensibility/internals/model-of-a-legacy-language-service.md)
@@ -52,7 +52,7 @@ ms.locfileid: "56631878"
 
  Описывает, как служба языка может предоставлять функциональные возможности для поддержки отладчика.
 
-- [Контрольный список: Создание языковой службы прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [Контрольный список. Создание языковой службы прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
 
  Содержит пошаговые инструкции для создания и интеграции службы языка для базового редактора.
 

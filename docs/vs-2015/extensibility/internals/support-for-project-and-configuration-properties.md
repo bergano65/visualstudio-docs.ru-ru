@@ -11,12 +11,12 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4c62bf12505bf04b8a680946ce848ea92709507
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408570"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Поддержка свойств конфигурации и проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "58993504"
  Это ответственность за проект, чтобы сохранить свойства проекта и настройка файла проекта.  
   
 > [!NOTE]
->  Проект можно оптимизировать сохраняемости, сохранение только значения свойств, которые отличаются от значения по умолчанию.  
+> Проект можно оптимизировать сохраняемости, сохранение только значения свойств, которые отличаются от значения по умолчанию.  
   
 ## <a name="support-for-project-and-configuration-properties"></a>Поддержка свойств конфигурации и проекта  
  `Microsoft.VisualStudio.Package.SettingsPage` Класс реализует страницы свойств проекта и конфигурации. Реализация по умолчанию `SettingsPage` предоставляет открытые свойства для пользователя в сетке свойств. `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` Метод выбирает классы, производные от `SettingsPage` для сетки свойств проекта. `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` Метод выбирает классы, производные от `SettingsPage` для сетки свойств конфигурации. Ваш проект следует переопределить эти методы, чтобы выбрать соответствующее свойство.  
@@ -65,7 +65,7 @@ ms.locfileid: "58993504"
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` и `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` сохранения свойства конфигурации.  
   
   > [!NOTE]
-  >  Реализации `Microsoft.VisualStudio.Package.SettingsPage` и `Microsoft.VisualStudio.Package.ProjectNode` классы используют `Microsoft.Build.BuildEngine` (MSBuild) методы для получения и задания свойств проекта и конфигурации из файла проекта.  
+  > Реализации `Microsoft.VisualStudio.Package.SettingsPage` и `Microsoft.VisualStudio.Package.ProjectNode` классы используют `Microsoft.Build.BuildEngine` (MSBuild) методы для получения и задания свойств проекта и конфигурации из файла проекта.  
   
   Класс производным от `SettingsPage` должен реализовывать `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` и `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` для сохранения свойства конфигурацию проекта или файла проекта.  
   
@@ -83,7 +83,7 @@ ms.locfileid: "58993504"
  <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, И <xref:System.ComponentModel.DescriptionAttribute> атрибуты определяют макета, добавления меток и описание свойств проекта и конфигурации на странице свойств. Эти атрибуты определения категории, отображаемое имя и описание параметра, соответственно.  
   
 > [!NOTE]
->  Эквивалентное атрибуты, SRCategory, LocDisplayName и SRDescription, использование строковых ресурсов для локализации и определяются в [MPF для проектов — Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+> Эквивалентное атрибуты, SRCategory, LocDisplayName и SRDescription, использование строковых ресурсов для локализации и определяются в [MPF для проектов — Visual Studio 2013](http://mpfproj12.codeplex.com/).  
   
  Рассмотрим следующий фрагмент кода:  
   

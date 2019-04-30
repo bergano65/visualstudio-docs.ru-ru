@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b848bdb4d0b71f5762601204195f0e81a1c2733
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443093"
 ---
 # <a name="how-to-localize-code"></a>Практическое руководство. Локализация кода
   Не локализованный код использует жестко заданные строковые значения. Локализовать строки кода, замените их вызовы <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, который является методом, который ссылается на локализованные ресурсы.
@@ -32,7 +32,7 @@ ms.locfileid: "60066290"
      Выберите **файл ресурсов** шаблона.
 
     > [!NOTE]
-    >  Не забудьте добавлять файл ресурсов на элемент проекта SharePoint, чтобы обеспечить доступность свойства типа развертывания. Это свойство необходимо далее в этой процедуре.
+    > Не забудьте добавлять файл ресурсов на элемент проекта SharePoint, чтобы обеспечить доступность свойства типа развертывания. Это свойство необходимо далее в этой процедуре.
 
 2. Имя файла ресурсов языка по умолчанию по своему усмотрению, дополненный *.resx* расширения, такие как *MyAppResources.resx*.
 

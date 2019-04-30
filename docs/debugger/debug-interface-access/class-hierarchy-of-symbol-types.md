@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67e32d855ec6d0c172542cbdacc235f6b3e1b003
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bc9981d324fe61cd3afe6cce4bc08d7b9b686c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402626"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Иерархия классов символьных типов
 В следующей таблице описаны символьных типов в иерархии классов.
@@ -43,9 +43,9 @@ ms.locfileid: "56604448"
 |[Измерение](../../debugger/debug-interface-access/dimension.md)|Символ для измерений массива.|
 
 > [!NOTE]
->  Каждый символ может иметь свойства, которые содержат сведения о символ, а также ссылки на другие символы. Эти свойства перечислены в разделах отдельных символов.
+> Каждый символ может иметь свойства, которые содержат сведения о символ, а также ссылки на другие символы. Эти свойства перечислены в разделах отдельных символов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
 - [Лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Символы и теги символов](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

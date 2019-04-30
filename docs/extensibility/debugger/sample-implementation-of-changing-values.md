@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e229bd791118b23e0b8c04a8a5384a4bbc3342c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c634d394fb6d30a22763cd12efe2d97ba5269986
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415624"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Пример реализации изменяющихся значений
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Каждого локального, отображаемый в **"Локальные"** окно имеет [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, связанный с ним. Это `IDebugProperty2` объект содержит имя, значение и тип локальной переменной. Когда пользователь изменяет значения локальной переменной, Visual Studio вызывает [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) для обновления значения локальной в памяти. В этом примере представлен локальной `CFieldProperty` класс, реализующий `IDebugProperty2` интерфейс.
 
 > [!NOTE]
->  Для **Watch** и **"Быстрая проверка"** выражения, значение после изменения представленного `CValueProperty` класс в примере MyCEE. Тем не менее реализация `IDebugProperty2::SetValueAsString` является таким же, как показано ниже.
+> Для **Watch** и **"Быстрая проверка"** выражения, значение после изменения представленного `CValueProperty` класс в примере MyCEE. Тем не менее реализация `IDebugProperty2::SetValueAsString` является таким же, как показано ниже.
 
  Реализация `IDebugProperty2::SetValueAsString` выполняет следующие задачи:
 

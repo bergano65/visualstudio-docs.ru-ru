@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 491e16454f52fb621306280351e1288f3de3a5e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 4af2d239c26c156fad0be7fb45bc04f601d35c83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437274"
 ---
 # <a name="idisperrorgetnext"></a>IDispError::GetNext
 Извлекает следующий `IDispError` объекта.  
@@ -50,7 +50,7 @@ HRESULT GetNext(
  Этот метод извлекает следующий `IDispError` объекта. Если это последняя `IDispError` объекта, этот метод возвращает значение NULL.  
   
 > [!NOTE]
->  Этот метод не реализован.  
+> Этот метод не реализован.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDispError](../../winscript/reference/idisperror-interface.md)

@@ -12,12 +12,12 @@ ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91c7525c293f4fe60dd446866d6e704c721a0795
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ac7e825bd33c184d580ada96843366f6d1627f22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438969"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58979814"
 Этот интерфейс представляет ссылку на свойство фрейма стека или некоторые другие свойства.  
   
 > [!NOTE]
->  `IDebugReference2` зарезервирован для использования в будущем и все его методы должны возвращать `E_NOTIMPL`.  
+> `IDebugReference2` зарезервирован для использования в будущем и все его методы должны возвращать `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -59,7 +59,7 @@ IDebugReference2 : IUnknown
 ## <a name="remarks"></a>Примечания  
   
 > [!NOTE]
->  Такое использование «свойства» не следует путать с, то есть переменную-член класса, несмотря на то что `IDebugReference2` может представлять такая сущность.  
+> Такое использование «свойства» не следует путать с, то есть переменную-член класса, несмотря на то что `IDebugReference2` может представлять такая сущность.  
   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) представляет свойство, хотя `IDebugReference2` представляет ссылку на свойство, обычно ссылку на объект в отлаживаемой программы.  
   

@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2386f1be805f6347fc32fba4ee8bfe57c8602329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436902"
 ---
 # <a name="vsix-project-template"></a>Шаблон проекта VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ ms.locfileid: "60096142"
  Развертывание VSIX поддерживает пакеты VSPackage, сборок, MEF компоненты, шаблоны проектов, шаблоны элементов, элементов управления и настраиваемые типы расширений.  
   
 > [!NOTE]
->  Чтобы использовать проекты VSIX, необходимо установить пакет SDK для Visual Studio. Дополнительные сведения о Visual Studio SDK, см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
+> Чтобы использовать проекты VSIX, необходимо установить пакет SDK для Visual Studio. Дополнительные сведения о Visual Studio SDK, см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>Где найти шаблоном проекта VSIX  
  Шаблон проекта VSIX доступен в **новый проект** диалоговое окно. Разверните **Visual Basic** узел или **Visual C#** узел, а затем выберите **расширяемости**.  
   
 > [!TIP]
->  Следует убедиться, что .NET Framework 4.5 или более поздней версии, указан в раскрывающемся списке в верхней части **новый проект** диалоговое окно.  
+> Следует убедиться, что .NET Framework 4.5 или более поздней версии, указан в раскрывающемся списке в верхней части **новый проект** диалоговое окно.  
   
 ## <a name="uses-of-the-vsix-project-template"></a>Использование шаблона проекта VSIX  
  Шаблон проекта VSIX имеет два основных применения:  

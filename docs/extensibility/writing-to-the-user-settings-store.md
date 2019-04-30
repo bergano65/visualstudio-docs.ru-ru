@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea782140405b55a6c5a90b01fb466586f66cc38
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444913"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Запись в хранилище параметров пользователя
 Пользовательские параметры, доступные для записи параметров, такие как в **Сервис / Параметры** диалоговое окно свойств windows и некоторых других диалоговых окон. Расширения Visual Studio может использовать для хранения небольших объемов данных. В этом пошаговом руководстве показано, как добавить Блокнот для Visual Studio в качестве внешнего инструмента, чтение и запись в хранилище параметров пользователя.
@@ -27,7 +27,7 @@ ms.locfileid: "60054109"
 3. Перейдите к средствам HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.
 
     > [!NOTE]
-    >  Убедитесь, что вы находитесь на ключ, который содержит \14.0Exp\ и не \14.0\\. При запуске экспериментальном экземпляре Visual Studio, настройки пользователя, в кусте реестра «14.0Exp».
+    > Убедитесь, что вы находитесь на ключ, который содержит \14.0Exp\ и не \14.0\\. При запуске экспериментальном экземпляре Visual Studio, настройки пользователя, в кусте реестра «14.0Exp».
 
 4. Щелкните правой кнопкой мыши подраздел \External Tools\, а затем нажмите кнопку **Экспорт**. Убедитесь, что **выбранный куст** выбран.
 

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443523"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Отладка расширений для инструментов SharePoint в Visual Studio
   Можно выполнять отладку расширения инструментов SharePoint в экспериментальном экземпляре или обычном экземпляре Visual Studio. Если вам необходимо устранить поведение расширения, можно также изменить значения реестра для отображения дополнительных сведений об ошибке и настроить, каким образом Visual Studio выполняет команды SharePoint.
@@ -102,7 +102,7 @@ ms.locfileid: "60094402"
 3. В **доступные процессы** выберите *vssphost.exe*.
 
     > [!NOTE]
-    >  Если vssphost.exe не отображается в списке, необходимо запустить *vssphost4.exe* процесса в экземпляре Visual Studio, в котором выполняется расширение. Как правило можно это сделать, выполнив действие, вызывающее Visual Studio для подключения к сайту SharePoint на компьютере разработчика. Например, Visual Studio запускает *vssphost4.exe* развернув узел подключения (узел, отображающий URL-адрес сайта) в разделе **подключения SharePoint** узел в **обозревателя серверов**  окна, или при добавлении определенных элементов проекта SharePoint, такие как **экземпляр списка** или **приемника событий** элементов в проект SharePoint.
+    > Если vssphost.exe не отображается в списке, необходимо запустить *vssphost4.exe* процесса в экземпляре Visual Studio, в котором выполняется расширение. Как правило можно это сделать, выполнив действие, вызывающее Visual Studio для подключения к сайту SharePoint на компьютере разработчика. Например, Visual Studio запускает *vssphost4.exe* развернув узел подключения (узел, отображающий URL-адрес сайта) в разделе **подключения SharePoint** узел в **обозревателя серверов**  окна, или при добавлении определенных элементов проекта SharePoint, такие как **экземпляр списка** или **приемника событий** элементов в проект SharePoint.
 
 4. Выберите **Attach** кнопки.
 

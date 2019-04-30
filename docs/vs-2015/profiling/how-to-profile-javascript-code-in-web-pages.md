@@ -13,12 +13,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f838974292a16a9aeaea11362848b06f5abe982
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c3a6526732ffa398d25b0c3c5d73fed771f6958
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443466"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Практическое руководство. Профилирование кода JavaScript на веб-страницах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60048519"
 - Internet Explorer 8 или более поздней версии.  
   
 > [!WARNING]
->  Для профилирования JavaScript в приложениях для Магазина Windows см. один из следующих разделов:  
+> Для профилирования JavaScript в приложениях для Магазина Windows см. один из следующих разделов:  
 > 
 > - [Время выполнения функций JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [время выполнения функций JavaScript на удаленном устройстве](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
 >   - [Анализ данных о времени выполнения функций JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  

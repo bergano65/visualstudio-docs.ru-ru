@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: de101e33e94889a44fe9bc4e21db857763b1c9aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447027"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Записи реестра для надстроек VSTO
   При развертывании надстроек VSTO, созданных с помощью Visual Studio, необходимо создать определенный набор записей реестра. Эти записи реестра предоставляют сведения, позволяющие приложению Microsoft Office обнаружить и загрузить надстройку VSTO.
@@ -33,7 +33,7 @@ ms.locfileid: "60071812"
  Дополнительные сведения об использовании записей реестра для надстроек VSTO во время процесса загрузки см. в разделе [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
->  В этом разделе текстовый *идентификатор надстройки* представляет собой уникальный идентификатор надстройки VSTO. По умолчанию идентификатором является имя сборки надстройки VSTO.
+> В этом разделе текстовый *идентификатор надстройки* представляет собой уникальный идентификатор надстройки VSTO. По умолчанию идентификатором является имя сборки надстройки VSTO.
 
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Регистрация надстроек VSTO для текущего пользователя и всех пользователей
  После установки надстройку VSTO можно зарегистрировать одним из двух способов.

@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ddd4ae3ed3a1a2a239c0efac0f25d04f589f8fa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437536"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Конструирование классов и типов (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54795516"
 **Конструктор классов** позволяет не только визуализировать классы и типы, но также и конструировать их. Подробнее это описано в следующих разделах.  
   
 > [!NOTE]
->  При работе с конструктором классов следует изучить выдаваемый им код, прежде чем выполнять его, чтобы убедиться в его соответствии текущему контексту безопасности.  
+> При работе с конструктором классов следует изучить выдаваемый им код, прежде чем выполнять его, чтобы убедиться в его соответствии текущему контексту безопасности.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Практическое руководство. Создание типов с помощью конструктора классов](../ide/how-to-create-types-by-using-class-designer.md)  
@@ -40,7 +40,7 @@ ms.locfileid: "54795516"
   
  Описывает, как определить ассоциации на диаграмме классов.  
   
- [Практическое руководство. Визуализация ассоциации коллекции в конструкторе класса (конструктор классов)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
+ [Практическое руководство. Визуализация ассоциации коллекции (конструктор классов)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
  Описывает, как определить ассоциацию коллекции в конструкторе классов.  
   
@@ -53,5 +53,5 @@ ms.locfileid: "54795516"
   
  [Рефакторинг классов и типов (конструктор классов)](../ide/refactoring-classes-and-types-class-designer.md)  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)

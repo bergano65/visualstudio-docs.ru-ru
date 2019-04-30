@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e329631f0bdeb79a068e4a791158f94cec3904ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2ad5a5424844896541e46d2afbc158320c7e5a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442398"
 ---
 # <a name="outlook-object-model-overview"></a>Обзор объектной модели Outlook
   Для разработки надстроек VSTO для Microsoft Office Outlook вы можете взаимодействовать с объектами, которые предоставляются объектной моделью Outlook. Объектная модель Outlook предоставляет классы и интерфейсы, которые представляют элементы пользовательского интерфейса. Например, объект <xref:Microsoft.Office.Interop.Outlook.Application> представляет все приложение, объект <xref:Microsoft.Office.Interop.Outlook.Folder> — папку, содержащую электронные сообщения или другие элементы, а объект <xref:Microsoft.Office.Interop.Outlook.MailItem> — электронное сообщение.
@@ -65,7 +65,7 @@ ms.locfileid: "60061935"
   Чтобы получить экземпляр <xref:Microsoft.Office.Interop.Outlook.Application> , используйте поле приложения `ThisAddIn` в своем проекте. Дополнительные сведения см. в разделе [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
 > [!NOTE]
->  Чтобы избежать получения предупреждений системы безопасности при использовании свойств и методов, блокируемых системой безопасности объектной модели Outlook, следует получать объекты Outlook из поля приложения `ThisAddIn` класса. Дополнительные сведения см. в разделе [рекомендации по обеспечению безопасности для решений Office](../vsto/specific-security-considerations-for-office-solutions.md).
+> Чтобы избежать получения предупреждений системы безопасности при использовании свойств и методов, блокируемых системой безопасности объектной модели Outlook, следует получать объекты Outlook из поля приложения `ThisAddIn` класса. Дополнительные сведения см. в разделе [рекомендации по обеспечению безопасности для решений Office](../vsto/specific-security-considerations-for-office-solutions.md).
 
 ### <a name="explorer-object"></a>Обозреватель объектов
  Объект <xref:Microsoft.Office.Interop.Outlook.Explorer> представляет окно, отображающее содержимое папки с такими элементами, как электронные сообщения, задачи и встречи. Объект <xref:Microsoft.Office.Interop.Outlook.Explorer> содержит методы и свойства, с помощью которых можно изменять окно, а также события, возникающие при изменении окна.

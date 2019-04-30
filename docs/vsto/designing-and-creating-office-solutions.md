@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b939640b0676ae34eedeed96c8a4b6b21a5a37e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ea209b380948196ee20cc4e2085fa46fab76efc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441843"
 ---
 # <a name="design-and-create-office-solutions"></a>Разработка и создание решений Office
 
@@ -49,12 +49,12 @@ Visual Studio предоставляет шаблоны проектов, кот
 
   При миграции проекта надстройки VSTO, который ориентирован на платформу .NET Framework 3.5, Visual Studio изменяет целевую платформу проекта на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, в зависимости от установленной версии Office.
 
-  Однако после того, как Visual Studio изменит целевую платформу, возможно, вам придется изменить некоторые части кода в проекте, если он использует определенные возможности. Дополнительные сведения о том, как изменить целевую платформу, см. в разделе [как: определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Дополнительные сведения об изменениях, может потребоваться внести в проект, см. в разделе [решений Office, перенос на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
+  Однако после того, как Visual Studio изменит целевую платформу, возможно, вам придется изменить некоторые части кода в проекте, если он использует определенные функции. Дополнительные сведения о том, как изменить целевую платформу, см. в разделе [как: определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Дополнительные сведения об изменениях, может потребоваться внести в проект, см. в разделе [решений Office, перенос на .NET Framework 4 или более поздней версии](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
 
   Если вы используете ClickOnce для развертывания решения Visual Studio изменяет целевую .NET Framework для проекта, убедитесь, что вы также выбираете соответствующую версию .NET Framework, в **предварительные требования** диалоговое окно. В случае изменения целевой платформы для своего проекта выбранное значение не будет изменяться автоматически. Дополнительные сведения см. в разделе [Как Установка необходимых компонентов на компьютерах конечных пользователей для запуска решений Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
 > [!NOTE]
->  В проектах Office, создаваемых с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], платформу .NET Framework 3.5 или более ранних версий использовать нельзя. Для проектов Office, создаваемых с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], требуются возможности, которые впервые появились в [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].
+> В проектах Office, создаваемых с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], платформу .NET Framework 3.5 или более ранних версий использовать нельзя. Для проектов Office, создаваемых с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], требуются возможности, которые впервые появились в [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Понять, когда основные сборки взаимодействия Office требуются на компьютерах конечных пользователей
  По умолчанию основные сборки взаимодействия Office (PIA) не обязательно должны быть установлены на компьютерах конечных пользователей, если **Embed Interop Types** каждой ссылки на Office PIA в проекте свойству **True**, Это значение по умолчанию. В этом сценарии сведения о типе для типов PIA, используемых в решении, внедряются в сборку решения при сборке проекта. Во время выполнения внедренные сведения о типах используется вместо основных сборок взаимодействия для вызова основанной на COM объектной моделью приложения Office. Дополнительные сведения о как внедренные типы из основных сборок взаимодействия в решении, см. в разделе [эквивалентность типов и внедренные типы взаимодействия](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).

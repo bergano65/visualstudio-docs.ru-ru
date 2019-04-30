@@ -11,12 +11,12 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71ead1b49c9bcefc193f8e1c896b35a478a771a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7b65eae0dcd71c2ad1bb3d72bf08ea90e69036a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441262"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Область тестирования 1. Добавление и открытие из системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60064860"
 - Для [!INCLUDE[vsvss](../../includes/vsvss-md.md)], добавьте из источника элемента управления также доступна из **файл**, **добавить**, **существующий проект**; поиск в [!INCLUDE[vsvss](../../includes/vsvss-md.md)] расположение.  
   
     > [!NOTE]
-    >  В этом тесте может использоваться путь локального файла или локальный сервер IIS (веб-сервер).  
+    > В этом тесте может использоваться путь локального файла или локальный сервер IIS (веб-сервер).  
   
 ## <a name="expected-behavior"></a>Ожидаемое поведение  
   

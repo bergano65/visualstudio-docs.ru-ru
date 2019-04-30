@@ -11,18 +11,18 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444768"
 ---
 # <a name="evaluating-locals"></a>Вычисление локальных переменных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) вызывается для получения значений локально, а также имя локальной переменной и тип. Поскольку значения локальной переменной зависит текущее состояние программы, значение локальной переменной необходимо получить из памяти. [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) объект используется для привязки [IDebugField](../../extensibility/debugger/reference/idebugfield.md) объект, представляющий локальный в соответствующее место в памяти, содержащий значение. Это расположение в памяти, представленного [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объекта.  
   

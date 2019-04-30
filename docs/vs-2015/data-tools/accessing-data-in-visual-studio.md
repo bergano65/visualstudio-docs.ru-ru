@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 02d40062b1202a261aa7be4ae306329a6a93b37a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: f0dd471e156f7a76462ac093c9ca54684f7dbc68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444488"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "59669462"
  Многими поставщиками базы данных и третьим сторонам поддерживается интеграция с Visual Studio, пакеты NuGet. Вы можете изучить предложения на сайте nuget.org или через диспетчер пакетов NuGet в Visual Studio (**средства** > **диспетчер пакетов NuGet** > **управление пакетами NuGet Пакетами для решения**). Другие продукты баз данных интеграции с Visual Studio в качестве расширения.   Эти предложения в коллекции Visual Studio можно просмотреть, перейдя по адресу **средства** > **расширения и обновления** и выбрав **Online** слева Панель диалогового окна.  Дополнительные сведения см. в разделе [установка систем баз данных, средства и примеры](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
->  Расширенная поддержка SQL Server 2005 закончилась 12 апреля 2016 г.   Нет никакой гарантии, что данные средства в Visual Studio 2015 и более поздних версий будет продолжать работать с SQL Server 2005, после этой даты. Дополнительные сведения см. в разделе [end-of-support объявление о выпуске для SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> Расширенная поддержка SQL Server 2005 закончилась 12 апреля 2016 г.   Нет никакой гарантии, что данные средства в Visual Studio 2015 и более поздних версий будет продолжать работать с SQL Server 2005, после этой даты. Дополнительные сведения см. в разделе [end-of-support объявление о выпуске для SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ### <a name="net-languages"></a>Языки .NET
  Все .NET доступ к данным, включая в .NET Core основан на ADO.NET, набор классов, определяющий интерфейс для доступа к любой тип источника данных, реляционных и нереляционных. Visual Studio предоставляет несколько средств и конструкторов, которые работают с ADO.NET для подключения к базам данных, обработки данных и представления данных пользователю. Документация в этом разделе описывается, как использовать эти средства. Также можно запрограммировать напрямую с объектами команды ADO.NET. Дополнительные сведения о прямого вызова API-интерфейсы ADO.NET, см. в разделе [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) в библиотеке MSDN.

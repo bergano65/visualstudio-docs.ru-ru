@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387504"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Чтение моделей и схем в других выпусках Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ ms.locfileid: "60073532"
  Поэтому если необходимо прочитать схему UML или схему слоев, необходимо также иметь доступ к проекту моделирования, в котором схема была создана. Для этого нужно либо открыть проект из [!INCLUDE[esprscc](../includes/esprscc-md.md)], либо получить копию файлов проекта.  
   
 > [!NOTE]
->  Это не относится к картам кода и схемам классов .NET, созданным из кода. Эти схемы можно просматривать независимо от проекта моделирования.  
+> Это не относится к картам кода и схемам классов .NET, созданным из кода. Эти схемы можно просматривать независимо от проекта моделирования.  
   
  Чтобы прочитать схему UML или схему слоев, необходимо как минимум иметь следующие файлы:  
   
 - Два файла схемы, который вы хотите прочитать, например, схемы **MyDiagram.classdiagram и MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Для схем слоев, должны также иметь файл с именем _Моя_схема_**. layerdiagram.suppressions**.  
+    > Для схем слоев, должны также иметь файл с именем _Моя_схема_**. layerdiagram.suppressions**.  
   
 - Файл проекта моделирования (**MyModel.modelproj**)  
   

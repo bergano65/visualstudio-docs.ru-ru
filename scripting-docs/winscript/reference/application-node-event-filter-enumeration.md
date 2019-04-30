@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5112f52e9d48417cfd63a514d22a034168c1aea
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3c1727c8d1526199d179fe137c9bf899959bc2ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422207"
 ---
 # <a name="applicationnodeeventfilter-enumeration"></a>Перечисление APPLICATION_NODE_EVENT_FILTER
 Указывает типы узлов, которые следует исключить при фильтрации документов кода. Используется в [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) и [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
->  Эти константы реализованы в PDM v10.0 и больше. Обнаружено в activdbg100.h.  
+> Эти константы реализованы в PDM v10.0 и больше. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -34,7 +34,7 @@ typedef enum tagAPPLICATION_NODE_EVENT_FILTER {    FILTER_EXCLUDE_NOTHING = 0,  
   
 ## <a name="members"></a>Участники  
   
-|Член|Значение|Описание:|  
+|Член|Значение|Описание|  
 |------------|-----------|-----------------|  
 |FILTER_EXCLUDE_NOTHING|0x00000000|Отправка всех событий.|  
 |FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|Исключайте узлы анонимного кода. Эти узлы используются средой выполнения JScript для `new Function([args,] <code>)'`.|  

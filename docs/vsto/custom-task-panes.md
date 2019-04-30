@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ab27c27873fc0addf1dbdbdbca81613d3015cc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445540"
 ---
 # <a name="custom-task-panes"></a>Настраиваемые области задач
   Области задач — это панели пользовательского интерфейса, которые обычно прикрепляются к одной стороне окна в приложении Microsoft Office. Настраиваемые области задач позволяют создать собственную область задач и предоставлять пользователям знакомый интерфейс для доступа к возможностям вашего решения. Например, интерфейс может содержать элементы управления, которые выполняют код для изменения документов или отображения данных из источника данных.
@@ -38,7 +38,7 @@ ms.locfileid: "60106206"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  Настраиваемая область задач отличается от панели действий. Панель действий является частью настроек на уровне документа для Microsoft Office Word и Microsoft Office Excel. Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).
+> Настраиваемая область задач отличается от панели действий. Панель действий является частью настроек на уровне документа для Microsoft Office Word и Microsoft Office Excel. Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).
 
 ## <a name="benefits-of-custom-task-panes"></a>Преимущества настраиваемых областей задач
  Настраиваемые области задач позволяют интегрировать ваши возможности в знакомый пользовательский интерфейс. Для быстрого создания настраиваемой области задач можно использовать инструменты Visual Studio.

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07586cd9b839a514ebe3a0677fb894a8d6e9c71f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f5fe9f47fca2b83e0095c67e59c2db54a4a04159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447058"
 ---
 # <a name="project-solutions"></a>Решения проектов
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office Project. Надстройки VSTO можно использовать для автоматизации Project, расширения функциональных возможностей этого продукта и настройки его пользовательского интерфейса.
@@ -32,7 +32,7 @@ ms.locfileid: "56642200"
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
 > [!NOTE]
->  Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.
+> Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.
 
 ## <a name="automate-project-by-using-the-project-object-model"></a>Автоматизация проекта с помощью объектной модели project
  Объектная модель Project предоставляет различные типы, которые можно использовать для автоматизации Project. Эти типы позволяют создавать код для выполнения общих задач, таких как программное создание и изменение задач в проекте.
@@ -47,7 +47,7 @@ ms.locfileid: "56642200"
  Все объекты и элементы в справочнике объектной модели VBA соответствуют типам и членам основной сборки взаимодействия Project. Например, объект календаря в справочнике по объектной модели VBA соответствует `Microsoft.Office.Interop.MSProject.Calendar` тип в основной сборке ВЗАИМОДЕЙСТВИЯ Project. Несмотря на то, что объектной модели VBA содержатся примеры кода для большинства свойств, методов и событий, необходимо преобразовать код VBA в этом справочнике в Visual Basic или Visual C#, если вы хотите использовать их в проекте надстройки VSTO проект, созданный с помощью Visual Studio.
 
 > [!NOTE]
->  В настоящее время справочная документация по основной сборке взаимодействия Project отсутствует.
+> В настоящее время справочная документация по основной сборке взаимодействия Project отсутствует.
 
 ### <a name="infrastructure-types-in-the-project-primary-interop-assembly"></a>Типы инфраструктуры в основной сборке взаимодействия project
  При написании кода, использующего основную сборку взаимодействия Project, можно заметить, что многие типы не описаны в справочнике по VBA. Эти дополнительные типы, используемые для преобразования объектов в объектной модели COM Project в управляемый код, не предназначены для непосредственного использования в коде.

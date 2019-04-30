@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1df66fcc2e7844bb05ff9a09e8fc71b6fb59ea9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 323286555bf1ed932b85ed6da84a344787fae265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438787"
 ---
 # <a name="listobject-control"></a>ListObject - элемент управления
   Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> — это список с событиями, который может быть привязан к данным. При добавлении списка в лист Visual Studio создает элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> , который можно запрограммировать напрямую, не обращаясь к объектной модели Microsoft Office Excel.
@@ -34,13 +34,13 @@ ms.locfileid: "60073636"
  В проектах уровня документа вы можете добавлять элементы управления <xref:Microsoft.Office.Tools.Excel.ListObject> в лист во время разработки или во время выполнения. В проектах надстройки VSTO можно добавить <xref:Microsoft.Office.Tools.Excel.ListObject> элементов управления в листы только во время выполнения. Дополнительные сведения см. в разделе [Как Добавление элементов управления ListObject на листы](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 > [!NOTE]
->  По умолчанию при закрытии листа динамически созданные объекты списка не сохраняются в листе как элементы управления ведущего приложения. Дополнительные сведения см. в разделе [добавить элементы управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> По умолчанию при закрытии листа динамически созданные объекты списка не сохраняются в листе как элементы управления ведущего приложения. Дополнительные сведения см. в разделе [добавить элементы управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="bind-data-to-the-control"></a>Привязка данных к элементу управления
  Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> поддерживает как простую, так и сложную привязку данных. <xref:Microsoft.Office.Tools.Excel.ListObject> Управления можно привязать к источнику данных с помощью <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> и <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> свойств во время разработки или <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> метод во время выполнения.
 
 > [!NOTE]
->  Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> обновляется автоматически, когда он привязан к источнику данных, например к объекту <xref:System.Data.DataTable>, который инициирует события при изменении данных. Если вы привязываете <xref:Microsoft.Office.Tools.Excel.ListObject> к источнику данных, который не инициирует события при изменении данных, необходимо вызывать метод <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> или <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> для обновления <xref:Microsoft.Office.Tools.Excel.ListObject>.
+> Элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> обновляется автоматически, когда он привязан к источнику данных, например к объекту <xref:System.Data.DataTable>, который инициирует события при изменении данных. Если вы привязываете <xref:Microsoft.Office.Tools.Excel.ListObject> к источнику данных, который не инициирует события при изменении данных, необходимо вызывать метод <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> или <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> для обновления <xref:Microsoft.Office.Tools.Excel.ListObject>.
 
  При добавлении <xref:Microsoft.Office.Tools.Excel.ListObject> в ячейку листа путем сопоставления повторяющегося элемента схемы с этой ячейкой Visual Studio автоматически сопоставляет <xref:Microsoft.Office.Tools.Excel.ListObject> с созданным набором данных. Однако автоматическая привязка <xref:Microsoft.Office.Tools.Excel.ListObject> к данным не выполняется. Выполните действия для привязки <xref:Microsoft.Office.Tools.Excel.ListObject> к набору данных во время разработки или во время выполнения в проекте уровня документа. Можно программно привязать <xref:Microsoft.Office.Tools.Excel.ListObject> к набору данных во время выполнения в надстройке VSTO.
 
@@ -49,7 +49,7 @@ ms.locfileid: "60073636"
  Можно быстро заполнить элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> путем привязки <xref:Microsoft.Office.Tools.Excel.ListObject> к источнику данных. При изменении данных в <xref:Microsoft.Office.Tools.Excel.ListObject>с привязкой к данным эти изменения также автоматически вносятся в источник данных. Если вы хотите заполнить <xref:Microsoft.Office.Tools.Excel.ListObject> , а затем разрешить пользователю изменение данных в <xref:Microsoft.Office.Tools.Excel.ListObject> без изменения источника данных, можно использовать метод <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> для отключения <xref:Microsoft.Office.Tools.Excel.ListObject> от источника данных. Дополнительные сведения см. в разделе [Как Заполнение элементов управления ListObject с данными](../vsto/how-to-fill-listobject-controls-with-data.md).
 
 > [!NOTE]
->  Привязка данных в перекрывающихся элементах управления <xref:Microsoft.Office.Tools.Excel.ListObject> не поддерживается.
+> Привязка данных в перекрывающихся элементах управления <xref:Microsoft.Office.Tools.Excel.ListObject> не поддерживается.
 
 ### <a name="improve-performance-in-listobject-controls"></a>Повысить производительность в элементах управления ListObject
  Считывание XML-файла в элемент управления <xref:Microsoft.Office.Tools.Excel.ListObject> с привязкой к данным происходит довольно медленно, если сначала привязать элемент управления, а затем вызвать <xref:System.Data.DataSet.ReadXml%2A> для заполнения набора данных. Чтобы повысить производительность, вызывайте <xref:System.Data.DataSet.ReadXml%2A> перед привязкой элемента управления.

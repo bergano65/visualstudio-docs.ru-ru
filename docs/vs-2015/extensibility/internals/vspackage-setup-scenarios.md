@@ -10,12 +10,12 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c94963b0ebfc6df454870222059a460b2868427d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 58b4350812900bc11e8aaa3222b3b0898db19e13
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440792"
 ---
 # <a name="vspackage-setup-scenarios"></a>Сценарии установки VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58994132"
  Как показано на рисунке, общие компоненты становятся частью Feat_Common компонента, который всегда устанавливается. Благодаря функции Feat_VS2002 и Feat_VS2003 видимым, пользователи могут выбирать во время установки в. какие версии [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] они хотят интегрировать VSPackage. Пользователи также могут использовать режим обслуживания установщика Windows для добавления или удаления компонентов, который в данном случае добавляет или удаляет сведения о регистрации VSPackage из разных версий [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Установка компонента отображаемый столбец 0 скрывает его. Значение столбца низкого уровня, например 1, гарантирует, что он будет всегда установлен. Дополнительные сведения см. в разделе [installlevel, ОЗНАЧАЮТ свойство](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) и [таблицы компонентов](http://msdn.microsoft.com/library/aa368585.aspx).  
+> Установка компонента отображаемый столбец 0 скрывает его. Значение столбца низкого уровня, например 1, гарантирует, что он будет всегда установлен. Дополнительные сведения см. в разделе [installlevel, ОЗНАЧАЮТ свойство](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) и [таблицы компонентов](http://msdn.microsoft.com/library/aa368585.aspx).  
   
 ## <a name="scenario-2-shared-vspackage-update"></a>Сценарий 2. Общие обновления пакета VSPackage  
  В этом случае поставляется обновленную версию установщика VSPackage в сценарии 1. Для целей обсуждения обновление добавляет поддержку [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], но также может быть проще безопасности обновления или исправления пакета обновления. Правила установщика Windows для установки новых компонентов требуют, что компоненты без изменений в системе не копируются повторно. В этом случае система с версии 1.0 уже присутствует перезапишет обновляемого компонента Comp_MyVSPackage.dll и позволить пользователям выбирать для добавления новой функции Feat_VS2005 с его компонентом Comp_VS2005_Reg.  
   
 > [!CAUTION]
->  Каждый раз, когда VSPackage является общим для нескольких версий [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], очень важно, что последующие версии пакета VSPackage обратной совместимости с предыдущими версиями платформы [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Там, где невозможно обеспечить обратную совместимость, необходимо использовать пакеты VSPackage side-by-side, закрытым. Дополнительные сведения см. в разделе [поддержка нескольких версий Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
+> Каждый раз, когда VSPackage является общим для нескольких версий [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], очень важно, что последующие версии пакета VSPackage обратной совместимости с предыдущими версиями платформы [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Там, где невозможно обеспечить обратную совместимость, необходимо использовать пакеты VSPackage side-by-side, закрытым. Дополнительные сведения см. в разделе [поддержка нескольких версий Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
  ![Изображение обновление пакета VS Shared VS](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
 Общий установщик обновлений VSPackage  

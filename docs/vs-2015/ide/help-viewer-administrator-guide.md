@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445695"
 ---
 # <a name="help-viewer-administrator-guide"></a>Руководство администратора Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60086602"
 - Источником справки по умолчанию по-прежнему будет Интернет.  
   
   > [!TIP]
-  >  Можно изменить источник по умолчанию для справки, изменив ключ реестра HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Дополнительные сведения см. в разделе [Переопределения диспетчера содержимого справки](../ide/help-content-manager-overrides.md).  
+  > Можно изменить источник по умолчанию для справки, изменив ключ реестра HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Дополнительные сведения см. в разделе [Переопределения диспетчера содержимого справки](../ide/help-content-manager-overrides.md).  
   
 - Клиентам по-прежнему будет предлагаться установить базовое содержимое справки при первом запуске Visual Studio. Можно отключить этот запрос, изменив ключ реестра HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
@@ -78,7 +78,7 @@ ms.locfileid: "60086602"
 - Пользователи должны обладать правами администратора, чтобы обновлять, добавлять или удалять локальное содержимое справки после того, как оно было установлено.  
   
   > [!TIP]
-  >  Если пользователи не имеют права администратора, рекомендуется отключить вкладку "Управление содержимым" в средстве просмотра справки. Дополнительные сведения см. в разделе [Переопределения диспетчера содержимого справки](../ide/help-content-manager-overrides.md).  
+  > Если пользователи не имеют права администратора, рекомендуется отключить вкладку "Управление содержимым" в средстве просмотра справки. Дополнительные сведения см. в разделе [Переопределения диспетчера содержимого справки](../ide/help-content-manager-overrides.md).  
   
   Предупреждения:  
   

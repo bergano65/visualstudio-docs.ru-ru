@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32e571f46b30e4f54322fc0138ebfc9b27e3753a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 3e13233950940c01c758a0faf07611c1426475e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412683"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Этот интерфейс представляет свойство кадра стека, свойство документа программы или некоторые другие свойства. Свойство обычно является результатом вычисления выражения.
 
 > [!NOTE]
->  Такое использование «свойства» не следует путать с, то есть переменную-член класса, несмотря на то что `IDebugProperty2` может представлять такая сущность.
+> Такое использование «свойства» не следует путать с, то есть переменную-член класса, несмотря на то что `IDebugProperty2` может представлять такая сущность.
 
 ## <a name="syntax"></a>Синтаксис
 

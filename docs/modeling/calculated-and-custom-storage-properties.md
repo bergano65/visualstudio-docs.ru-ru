@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440020"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Вычисляемые и пользовательские свойства хранилища
 Все свойства домена в доменный язык (DSL) могут отображаться на диаграмме и в обозревателе языка, а также может осуществляться программным кодом. Однако свойства отличаются способом, что их значения будут храниться.
@@ -50,7 +50,7 @@ ms.locfileid: "60060427"
      Dsl\GeneratedCode\DomainClasses.cs или DomainRelationships.cs открывается. Выше вызова метода выделенный комментарий предлагается предоставлять реализацию для Get*YourProperty*().
 
     > [!NOTE]
-    >  Этот файл создается из DslDefinition.dsl. Если изменить этот файл, изменения будут потеряны при очередном щелчке **преобразовать все шаблоны**. Вместо этого добавьте необходимый метод в отдельном файле.
+    > Этот файл создается из DslDefinition.dsl. Если изменить этот файл, изменения будут потеряны при очередном щелчке **преобразовать все шаблоны**. Вместо этого добавьте необходимый метод в отдельном файле.
 
 6. Создайте или откройте файл класса в отдельную папку, например значение CustomCode\\*YourDomainClass*. cs.
 

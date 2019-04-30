@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 82763f78673391ab6a308ba026a6b9e53c3b474b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438829"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Управление документами на сервере с помощью класса ServerDocument
   Можно использовать `ServerDocument` в класс [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] для управления несколькими аспектами настроек уровня документа, даже если не установлен Microsoft Office Word и Microsoft Office Excel. Можно выполнять следующие задачи:
@@ -38,7 +38,7 @@ ms.locfileid: "60045491"
  Дополнительные сведения о Visual Studio 2010 Tools для Office Runtime и расширения Office для платформы .NET Framework, см. в разделе [средств Visual Studio для среды](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 > [!NOTE]
->  Если у вас есть на устаревшие приложения, использующего `ServerDocument` в класс `Visual Studio Tools for Office` системы (версии 3.0 среды выполнения), `Visual Studio Tools for Office` система (среда выполнения версии 3.0) должна быть установлена на компьютерах под управлением приложения. `Visual Studio 2010 Tools for Office runtime` Не может запускать эти приложения.
+> Если у вас есть на устаревшие приложения, использующего `ServerDocument` в класс `Visual Studio Tools for Office` системы (версии 3.0 среды выполнения), `Visual Studio Tools for Office` система (среда выполнения версии 3.0) должна быть установлена на компьютерах под управлением приложения. `Visual Studio 2010 Tools for Office runtime` Не может запускать эти приложения.
 
 ## <a name="CachedData"></a> Работа с кэшированными данными в документе
  `ServerDocument` Класс предоставляет члены, которые можно использовать для работы с кэшем данных в настроенных документах. Дополнительные сведения о кэшированных данных, см. в разделе [кэшировать данные](../vsto/caching-data.md) и [доступа к данным в документах на сервере](../vsto/accessing-data-in-documents-on-the-server.md).

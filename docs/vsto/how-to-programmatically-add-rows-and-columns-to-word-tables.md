@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c590ed271897ac6aebb875bafcb1b6b50a753629
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 780d794874ae87f3310810f2b46127fdf2eb46c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419584"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Практическое руководство. Программное добавление строк и столбцов в таблицы Word
   В таблице Microsoft Office Word ячейки организованы по строкам и столбцам. Вы можете использовать метод <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> объекта <xref:Microsoft.Office.Interop.Word.Rows> для добавления строк в таблицу и метод <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> объекта <xref:Microsoft.Office.Interop.Word.Columns> для добавления столбцов.
@@ -30,7 +30,7 @@ ms.locfileid: "60078023"
  Следующие примеры кода можно использовать в настройке на уровне документа. Чтобы использовать эти примеры, выполняйте их из класса `ThisDocument` в своем проекте. В этих примерах предполагается, что документ, связанный с настройкой, уже содержит по крайней мере одну таблицу.
 
 > [!IMPORTANT]
->  Этот код выполняется только в тех проектах, которые создаются с помощью любого из следующих шаблонов проекта:
+> Этот код выполняется только в тех проектах, которые создаются с помощью любого из следующих шаблонов проекта:
 >
 > - Документ Word 2013
 > - Шаблон Word 2013
@@ -57,9 +57,9 @@ ms.locfileid: "60078023"
  Следующие примеры кода можно использовать в надстройке VSTO. Чтобы использовать эти примеры, выполняйте их из класса `ThisAddIn` в своем проекте. В этих примерах предполагается, что активный документ содержит хотя бы одну таблицу.
 
 > [!IMPORTANT]
->  Этот код выполняется только в тех проектах, которые создаются с помощью шаблонов Word VSTO.
+> Этот код выполняется только в тех проектах, которые создаются с помощью шаблонов Word VSTO.
 >
->  Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Word** сборки, а затем использовать классы из этой сборки для добавления строк и столбцов для таблицы. Дополнительные сведения см. в разделе [Как Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
+> Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Word** сборки, а затем использовать классы из этой сборки для добавления строк и столбцов для таблицы. Дополнительные сведения см. в разделе [Как Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
 
 ### <a name="to-add-a-row-to-a-table"></a>Добавление строки в таблицу
 

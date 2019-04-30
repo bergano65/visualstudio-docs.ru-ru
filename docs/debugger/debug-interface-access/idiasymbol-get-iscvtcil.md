@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 874e05c0ba738f3730c23dcd092921e4b8c02829
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: c185e2ece30a29801506347a393e138e49fd138b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399968"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 Получает флаг, указывающий модуль был ли преобразован из модуля общих промежуточного языка (CIL) модуль в машинном коде.
@@ -39,7 +39,7 @@ HRESULT get_isCVTCIL(
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
 ## <a name="remarks"></a>Примечания
  Это свойство доступно из `SymTagCompilandDetails` символ типа (см. в разделе [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).
@@ -51,6 +51,6 @@ HRESULT get_isCVTCIL(
 |Заголовок:|dia2.h|
 |Версия:|ПАКЕТ SDK для версии 8.0|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

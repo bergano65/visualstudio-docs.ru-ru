@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445022"
 ---
 # <a name="securing-clickonce-applications"></a>Защита приложений ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "60076202"
  Никогда не следует передавать аргументы, извлекаемые с помощью строки запроса, в базу данных или командную строку без проверки аргументов с целью убедиться, что они безопасны. Ненадежные аргументы — это аргументы, которые содержат escape-символы базы данных или командной строки, позволяющие злоумышленникам управлять приложением для выполнения произвольных команд.  
   
 > [!NOTE]
->  Аргументы строки запроса представляют единственный способ передачи аргументов в приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] при запуске. В приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] нельзя передавать аргументы из командной строки.  
+> Аргументы строки запроса представляют единственный способ передачи аргументов в приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] при запуске. В приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] нельзя передавать аргументы из командной строки.  
   
 ## <a name="deploying-obfuscated-assemblies"></a>Развертывание малопонятных сборок  
  Может возникнуть желание сделать приложение малопонятным с помощью Dotfuscator, чтобы предотвратить раскрытие программного кода приложения. Однако процедура запутывания кода сборки не встроена ни в интегрированную среду разработки Visual Studio, ни в процесс развертывания ClickOnce. Поэтому запутывание кода должно выполняться вне процесса развертывания, возможно, на этапе после построения. После построения проекта можно выполнить следующие шаги вручную, вне Visual Studio:  

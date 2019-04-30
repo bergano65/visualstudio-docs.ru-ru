@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440066"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Практическое руководство. Исключение файлов из сборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60052563"
     ```  
   
     > [!NOTE]
-    >  Нужно указать путь для обоих атрибутов. Если вы используете абсолютный путь для указания расположения файлов в атрибуте `Include`, нужно использовать абсолютный путь и в атрибуте `Exclude`. Если же вы используете относительный путь в атрибуте `Include`, такой путь нужно использовать и в атрибуте `Exclude`.  
+    > Нужно указать путь для обоих атрибутов. Если вы используете абсолютный путь для указания расположения файлов в атрибуте `Include`, нужно использовать абсолютный путь и в атрибуте `Exclude`. Если же вы используете относительный путь в атрибуте `Include`, такой путь нужно использовать и в атрибуте `Exclude`.  
   
 ## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Использование условий для исключения файла или каталога из входных данных для сборки  
  Если имеются элементы, которые требуется включить, например, в отладочную сборку, но не в сборку выпуска, можно использовать атрибут `Condition`, чтобы указать условия для включения элемента.  

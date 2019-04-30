@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7e89f2c7b9e834f9896ca3609fd3211e2d41862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420077"
 ---
 # <a name="graphics-pixel-history"></a>Журнал пикселей графики
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "60044074"
 3. Под интересующим вас примитивом перейдите по ссылке заголовка шейдера — например, перейдите по ссылке **Vertex Shader obj:30**, чтобы просмотреть исходный код шейдера вершин.  
   
     > [!TIP]
-    >  Номер объекта, например **obj:30**, идентифицирует этот шейдер во всем интерфейсе анализатора графики, таком как таблица объектов или окно этапов конвейера.  
+    > Номер объекта, например **obj:30**, идентифицирует этот шейдер во всем интерфейсе анализатора графики, таком как таблица объектов или окно этапов конвейера.  
   
 ##### <a name="to-debug-a-shader"></a>Отладка шейдера  
   

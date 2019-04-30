@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c7cc8a9d1767a289112b18dbfe7c81b9a010bae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422786"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Развертывание приложений ClickOnce для тестовых и рабочих серверов без повторного подписывания
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60066602"
 В этом разделе описана новая функция ClickOnce, введенная в .NET Framework версии 3.5, которая включает развертывание приложений ClickOnce из нескольких мест сети без повторного подписывания приложения ClickOnce или манифесты.  
   
 > [!NOTE]
->  Повторного подписывания по-прежнему является предпочтительным для развертывания новых версий приложений. По возможности используйте метод подписания заново. Дополнительные сведения см. в разделе [Mage.exe (средство создания и редактирования манифеста)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+> Повторного подписывания по-прежнему является предпочтительным для развертывания новых версий приложений. По возможности используйте метод подписания заново. Дополнительные сведения см. в разделе [Mage.exe (средство создания и редактирования манифеста)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
  Сторонних разработчиков и независимых поставщиков программного обеспечения можно согласиться на эту функцию, что облегчает пользователям обновлять свои приложения. Эта функция может использоваться в следующих ситуациях:  
   

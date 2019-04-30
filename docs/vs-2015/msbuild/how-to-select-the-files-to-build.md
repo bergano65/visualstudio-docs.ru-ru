@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437905"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Практическое руководство. Выбор файлов для сборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60064847"
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  Если элементы в коллекции элементов не находятся в том же каталоге, что и файл проекта, необходимо указать полный или относительный путь к элементу. Например, `Include="..\..\form2.cs"`.  
+    > Если элементы в коллекции элементов не находятся в том же каталоге, что и файл проекта, необходимо указать полный или относительный путь к элементу. Например, `Include="..\..\form2.cs"`.  
   
 #### <a name="to-declare-multiple-items"></a>Объявление нескольких элементов  
   
@@ -100,9 +100,9 @@ ms.locfileid: "60064847"
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  Чтобы указать входные данные для построения, необходимо использовать знаки подстановки в элементах; нельзя указать входные данные с помощью атрибута `Sources` в задачах [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], таких как [Csc](../msbuild/csc-task.md) или [Vbc](../msbuild/vbc-task.md). Следующий пример недопустим в файле проекта.  
+> Чтобы указать входные данные для построения, необходимо использовать знаки подстановки в элементах; нельзя указать входные данные с помощью атрибута `Sources` в задачах [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], таких как [Csc](../msbuild/csc-task.md) или [Vbc](../msbuild/vbc-task.md). Следующий пример недопустим в файле проекта.  
 >   
->  `<CSC Sources="*.cs">...</CSC>`  
+> `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>Пример  
  В примере ниже показан проект, в котором все входные файлы включены по отдельности.  

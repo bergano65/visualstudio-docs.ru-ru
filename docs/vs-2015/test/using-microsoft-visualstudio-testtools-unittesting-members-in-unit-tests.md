@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37ca201f071d4cd9eda595a6fee6b95a23b4f05e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445855"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Использование членов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "60095533"
 > [!NOTE]
 > Элементы атрибутов, имена которых заканчиваются строкой "Attribute", можно использовать как со строкой "Attribute", так и без нее. Например, следующие два примера кода выполняют одну и ту же задачу:
 >
->  `[TestClass()]`
+> `[TestClass()]`
 >
->  `[TestClassAttribute()]`
+> `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Элементы, используемые для управляемого данными тестирования
  Для настройки управляемых данными модульных тестов используются перечисленные ниже элементы. Дополнительные сведения см. в разделе [How To: Создание управляемого данными модульного теста](../test/how-to-create-a-data-driven-unit-test.md) и [Пошаговое руководство: С помощью файла конфигурации для определения источника данных](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).

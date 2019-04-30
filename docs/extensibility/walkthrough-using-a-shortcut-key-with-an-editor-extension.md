@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964486"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Пошаговое руководство. Сочетания клавиш в расширении редактора
 Можно ответить на сочетания клавиш в расширении редактора. Следующее пошаговое руководство демонстрирует добавление оформления представления для текстового представления с помощью сочетания клавиш. В этом пошаговом руководстве основан на шаблоне редактор оформление окна просмотра, а также вы можете добавить оформления с помощью + символ.

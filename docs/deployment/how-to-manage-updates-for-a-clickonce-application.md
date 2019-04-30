@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed5ae8486ebede9db2ab6b052c1fed789883ceaf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928563"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Практическое руководство. управление обновлениями для приложения ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут проверять обновления автоматически или программным способом. Как разработчик у вас есть множество гибко указывать время и способ обновления проверок, обязательных обновлений и где приложение должно проверять наличие обновлений.

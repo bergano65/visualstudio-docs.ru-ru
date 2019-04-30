@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23ea89b25ca1bd1e7aa48ab1782d23bd7db057f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437109"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Практическое руководство. Программное кэширование источника данных в документах Office
   Можно программно добавить объект данных в кэш данных в документе путем вызова `StartCaching` метода ведущего элемента, такого как <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, или <xref:Microsoft.Office.Tools.Excel.Worksheet>. Удаляет объект данных из кэша данных, вызвав `StopCaching` метод ведущего элемента.
@@ -52,7 +52,7 @@ ms.locfileid: "60109183"
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    >  Не вызывайте `StopCaching` из обработчика событий для `Shutdown` события документа или листа. К моменту `Shutdown` события, уже слишком поздно для изменения кэша данных. Дополнительные сведения о `Shutdown` событий, см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).
+    > Не вызывайте `StopCaching` из обработчика событий для `Shutdown` события документа или листа. К моменту `Shutdown` события, уже слишком поздно для изменения кэша данных. Дополнительные сведения о `Shutdown` событий, см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).
 
 ## <a name="see-also"></a>См. также
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438818"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Практическое руководство. Программная Защита листов Excel
   Возможность защиты в Microsoft Office Excel помогает предотвратить изменение объектов на листе пользователями и кодом. По умолчанию все ячейки заблокированы после включения защиты.
@@ -30,7 +30,7 @@ ms.locfileid: "60062221"
  В настройках на уровне документа можно защитить листы с помощью конструктора Excel. Лист также можно защитить программными средствами во время выполнения в проекте любого типа.
 
 > [!NOTE]
->  Невозможно добавлять элементы управления Windows Forms в защищенные области листа.
+> Невозможно добавлять элементы управления Windows Forms в защищенные области листа.
 
 ## <a name="use-the-designer"></a>С помощью конструктора
 

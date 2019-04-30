@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437461"
 ---
 # <a name="validate-your-uml-model"></a>Проверка модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60113317"
 - **Команда проверки.** Чтобы вызвать проверку в любое время, щелкните **проверить модель UML** на **архитектура** меню.  
   
   > [!NOTE]
-  >  Эта команда отображается только в том случае, если установлены ограничения проверки.  
+  > Эта команда отображается только в том случае, если установлены ограничения проверки.  
   
 - **При сохранении модели.** Ограничения проверки можно применять при сохранении модели. Они не позволяют пользователю сохранить модель, недопустимую с точки зрения интерпретации проекта.  
   

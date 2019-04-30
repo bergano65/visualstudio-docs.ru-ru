@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1aaff1fa5d31fe22c8a0b079498ffc07a11b9a7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446743"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Пошаговое руководство. Создание пользовательского основного приложения для текстовых шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60100330"
  Можно написать пользовательский узел, если вы хотите использовать *преобразования текстового шаблона* функциональные возможности из-за пределами [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или если вы хотите интегрировать эти функциональные возможности в пользовательские средства. Для создания пользовательского основного приложения необходимо создать класс, наследующий от <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Документацию по отдельным методам см. в разделе <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   
 > [!WARNING]
->  При создании расширения или пакета [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно воспользоваться службой создания текстовых шаблонов, а не создавать собственный узел. Дополнительные сведения см. в разделе [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+> При создании расширения или пакета [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] можно воспользоваться службой создания текстовых шаблонов, а не создавать собственный узел. Дополнительные сведения см. в разделе [вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
  В данном пошаговом руководстве представлены следующие задачи:  
   
@@ -732,7 +732,7 @@ ms.locfileid: "60100330"
 2. Добавьте в этот файл следующее:  
   
     > [!NOTE]
-    >  Язык программирования текстового шаблона не обязательно должны совпадать с языком программирования пользовательского основного приложения.  
+    > Язык программирования текстового шаблона не обязательно должны совпадать с языком программирования пользовательского основного приложения.  
   
     ```csharp  
     Text Template Host Test  
@@ -785,7 +785,7 @@ ms.locfileid: "60100330"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Вместо того чтобы вводить адрес, вы можно найти файл CustomHost.exe в **Windows Explorer** и затем перетащите файл в окне командной строки.  
+    > Вместо того чтобы вводить адрес, вы можно найти файл CustomHost.exe в **Windows Explorer** и затем перетащите файл в окне командной строки.  
   
 3. Введите пробел.  
   
@@ -796,7 +796,7 @@ ms.locfileid: "60100330"
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  Вместо того чтобы вводить адрес, вы может найти файл TestTemplate.tt в **Windows Explorer** и затем перетащите файл в окне командной строки.  
+    > Вместо того чтобы вводить адрес, вы может найти файл TestTemplate.tt в **Windows Explorer** и затем перетащите файл в окне командной строки.  
   
      Пользовательское ведущее приложение запустится и выполнит процесс преобразования текстового шаблона.  
   

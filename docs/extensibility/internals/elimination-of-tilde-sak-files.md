@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99d776e7d9891ca231fde4531b558de66568904f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 96704b52fb31085fad7546687a8803c85bcfbb47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418632"
 ---
 # <a name="elimination-of-sak-files"></a>Устранение ~ SAK-файлов
 В версии 1.2 API подключаемого модуля управления источника *~ SAK* файлы были заменены флаги возможностей и новые функции, которые позволяют обнаружить ли источник управления подключаемый модуль поддерживает *MSSCCPRJ* файл и общими извлеченными элементами.
@@ -48,7 +48,7 @@ Visual Studio .NET 2003 создан временные файлы, которы
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateTemporaryFilesInSourceControl** = *DWORD: 00000001*
 
 > [!NOTE]
->  Если этот раздел реестра имеет значение *DWORD: 00000000*, это эквивалентно, несуществующий ключ и Visual Studio по-прежнему пытается создать временные файлы. Тем не менее если раздел реестра имеет значение *DWORD: 00000001*, Visual Studio не пытается создать временные файлы. Вместо этого предполагается, что подключаемый модуль системы управления версиями не поддерживает *MSSCCPRJ.SCC* файл и не поддерживает общие извлечения.
+> Если этот раздел реестра имеет значение *DWORD: 00000000*, это эквивалентно, несуществующий ключ и Visual Studio по-прежнему пытается создать временные файлы. Тем не менее если раздел реестра имеет значение *DWORD: 00000001*, Visual Studio не пытается создать временные файлы. Вместо этого предполагается, что подключаемый модуль системы управления версиями не поддерживает *MSSCCPRJ.SCC* файл и не поддерживает общие извлечения.
 
 ## <a name="see-also"></a>См. также
 - [Новые возможности в исходный элемент управления Plug-in API версии 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

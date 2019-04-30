@@ -17,23 +17,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99fa06086bfad56b266b043716e82181aa4c97d5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 520d3f1414447abfc7c018d36853b72aefbbf15f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386170"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>Интерфейс IActiveScriptParseProcedureOld
 Позволяет текстом исходного кода для процедуры для добавления в скрипт. Интерпретируемые языки сценариев, у которых нет независимых среду разработки, таких как VBScript, это предоставляет альтернативный механизм (отличное от `IActiveScriptParse` или `IPersist*`) Добавление процедуры с помощью сценариев в пространстве имен.  
   
 > [!NOTE]
->  Этот интерфейс устарел, вместо него используется `IActiveScriptParseProcedure` интерфейс.  
+> Этот интерфейс устарел, вместо него используется `IActiveScriptParseProcedure` интерфейс.  
   
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IActiveScriptParseProcedureOld` интерфейс предоставляет следующие методы.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Выполняет синтаксический анализ данного кода процедуры и добавляет процедуру в пространстве имен.|  
   

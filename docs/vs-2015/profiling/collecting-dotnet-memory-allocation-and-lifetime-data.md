@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c40c2f824518ed00dacc41094c1b567f5de248ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 68decc73e14f8748d8434e05e50d6d3b48612d40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436768"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Сбор данных о выделении памяти для объектов .NET и времени их жизни
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60112823"
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  Можно собрать данные с использованием метода выборки или метода профилирования с инструментированием.  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60112823"
 - При использовании метода инструментирования профилировщик отслеживает только те объекты и операции выделения памяти .NET, которые создаются инструментированными модулями.  
   
 > [!IMPORTANT]
->  При сборе данных о памяти .NET (операции выделения, время жизни объектов или все вместе) с помощью метода выборки, все заданные пользователем события выборки игнорируются, и для сбора данных используются соответствующие события выделения памяти.  
+> При сборе данных о памяти .NET (операции выделения, время жизни объектов или все вместе) с помощью метода выборки, все заданные пользователем события выборки игнорируются, и для сбора данных используются соответствующие события выделения памяти.  
   
  Если включается профилирование операций выделения памяти .NET, также следует включить представление "Выделение". Если включается профилирование данных о времени жизни .NET, также следует включить представление "Время существования объектов". Дополнительные сведения см. в статьях [Allocations View](../profiling/dotnet-memory-allocations-view.md) (Представление "Выделение") и [Object Lifetime View](../profiling/object-lifetime-view.md) (Представление "Время существования объектов").  
   

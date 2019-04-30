@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436879"
 ---
 # <a name="property-pages-javascript"></a>Страницы свойств (JavaScript)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "59661910"
  Следующие параметры используются для задания общих свойств проекта.  
   
 > [!NOTE]
->  Некоторые параметры доступны только в приложениях для Магазина Windows.  
+> Некоторые параметры доступны только в приложениях для Магазина Windows.  
   
  **Путь для создаваемых файлов**  
  Указывает расположение выходных файлов для конфигурации проекта. Путь является относительным. Если ввести абсолютный путь, он будет сохранен в проекте. Путь по умолчанию — bin\Debug.  
@@ -62,7 +62,7 @@ ms.locfileid: "59661910"
  Следующие параметры используются для задания свойств поведения отладки в проекте.  
   
 > [!NOTE]
->  Некоторые параметры доступны только в приложениях для Магазина Windows.  
+> Некоторые параметры доступны только в приложениях для Магазина Windows.  
   
  **Отладчик для запуска**  
  Указывает узел по умолчанию для отладчика.  

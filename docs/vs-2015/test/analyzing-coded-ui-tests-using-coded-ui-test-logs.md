@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18dbd175ddbf01a826d2a24b5d750cb00b64d28b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8010ad1f8bbb1e49afe9e5e527e9639f2fb14601
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442814"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60098898"
      Автоматизированные тесты будут выполнены, будет предоставлена информация об их успешном выполнении или выполнении с ошибками.  
   
     > [!TIP]
-    >  Для просмотра обозревателя тестов из меню **Тест** наведите указатель на пункт **Окна** и выберите пункт **Обозреватель тестов**.  
+    > Для просмотра обозревателя тестов из меню **Тест** наведите указатель на пункт **Окна** и выберите пункт **Обозреватель тестов**.  
   
 4. В результатах обозревателя тестов щелкните ссылку **Выходные данные**.  
   

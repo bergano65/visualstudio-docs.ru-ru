@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b858a6c513c1b9e1caa4f17c1bd8af067de47365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dea8565810a904ff80a0790a9b219f3744b1e156
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425392"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Считывание XML-данных в набор данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ADO.NET предоставляет простые методы для работ
 5. Добавление кода для отображения XML-схемы на основе XML файла в <xref:System.Windows.Forms.TextBox> элемента управления  
   
 > [!NOTE]
->  Диалоговые окна и команды меню, которые вы видите, могут отличаться от описанных в справке в зависимости от текущих настроек или выпуска вы используете. Чтобы изменить параметры, на **средства** меню, выберите**Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Диалоговые окна и команды меню, которые вы видите, могут отличаться от описанных в справке в зависимости от текущих настроек или выпуска вы используете. Чтобы изменить параметры, на **средства** меню, выберите**Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Создание нового проекта  
  На этом шаге создайте проект Visual Basic или Visual C#, содержащий в этом пошаговом руководстве.  

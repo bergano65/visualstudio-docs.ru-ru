@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3562b74939fe9207ddcf10e98bd0b4d0d7d1bead
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2b2d4ee5feb0bed25ad41931f151e81db6edd3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442598"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Шаг 3. Назначение каждому элементу управления Label случайного значка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60085991"
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#14)]  
   
     > [!NOTE]
-    >  Используются имена iconLabel и control, поскольку они являются описательными. Можно заменить эти имена на любые другие и это не повлияет на работу кода (при условии, что имена будут изменены имена в каждом операторе внутри цикла).  
+    > Используются имена iconLabel и control, поскольку они являются описательными. Можно заменить эти имена на любые другие и это не повлияет на работу кода (при условии, что имена будут изменены имена в каждом операторе внутри цикла).  
   
      Метод `AssignIconsToSquares()` перебирает все элементы управления Label в TableLayoutPanel и выполняет одни и те же операторы для каждого из них. Эти операторы запрашивают случайные значки из списка, добавленного в разделе [Шаг 2. Добавление случайного объекта и списка значков](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (Вот почему в список включено по два значка. Это позволяет назначить пару значков случайным элементам управления Label.)  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60085991"
      Значки видимы, поскольку они не были скрыты. Чтобы скрыть их из игрока, можно задать для свойства `Forecolor` каждой метки тот же цвет, что и у свойства `BackColor`.  
   
     > [!TIP]
-    >  Другой способ скрывать элементы управления, например метки, — задать для свойства **Visible** значение `False`.  
+    > Другой способ скрывать элементы управления, например метки, — задать для свойства **Visible** значение `False`.  
   
 6. Чтобы скрыть значки, остановите программу и удалите метки комментариев с соответствующей строки кода в цикле `For Each`.  
   

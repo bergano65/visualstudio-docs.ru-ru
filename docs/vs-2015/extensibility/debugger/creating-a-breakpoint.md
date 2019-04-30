@@ -11,12 +11,12 @@ ms.assetid: 6f9f87bb-192e-45e0-9a7a-ffe729e87f7d
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7ebed92d4f9bc0c6ae01efb16bd07a1b37c553c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cde6d660506e05195ef9f5c0825845cee10ae5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383480"
 ---
 # <a name="creating-a-breakpoint"></a>Создание точки останова
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60087161"
 3. [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)  
   
     > [!NOTE]
-    >  **CanBind** вызывается только в том случае, когда пользователь создает точку останова из окна точек останова.  
+    > **CanBind** вызывается только в том случае, когда пользователь создает точку останова из окна точек останова.  
   
 4. [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)  
   
