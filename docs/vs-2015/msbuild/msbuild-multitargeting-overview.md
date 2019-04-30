@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d4221cfdc0d741264aa4667892117ba0cc24f9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5b60f44dd1d32a9d19814b4d2194e7586d86865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426851"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild: обзор настройки для различных версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60108286"
 С помощью MSBuild можно компилировать приложение для его запуска на любой из нескольких версий платформы .NET Framework, а также на любой из нескольких системных платформ. Например, можно компилировать приложение для запуска в .NET Framework 2.0 на 32-разрядной платформе, а также компилировать то же приложение для запуска в .NET Framework 4.5 на 64-разрядной платформе.  
   
 > [!IMPORTANT]
->  Несмотря на название "Настройка для различных версий" проект можно назначить одновременно только одной исполняющей среде и только одной платформе.  
+> Несмотря на название "Настройка для различных версий" проект можно назначить одновременно только одной исполняющей среде и только одной платформе.  
   
  Ниже перечислены некоторые возможности MSBuild для различных версий.  
   

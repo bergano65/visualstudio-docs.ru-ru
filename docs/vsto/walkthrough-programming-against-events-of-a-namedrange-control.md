@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dee6c5dadb1634f384fd04d67cb0701b2e972799
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446925"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Пошаговое руководство. Программа реакции на события элементов управления NamedRange
   В этом пошаговом руководстве демонстрируется добавление <xref:Microsoft.Office.Tools.Excel.NamedRange> управления на лист Microsoft Office Excel и программированию его событий с помощью средств разработки Office в Visual Studio.
@@ -37,7 +37,7 @@ ms.locfileid: "60049936"
 - Тестирование проекта.
 
 > [!NOTE]
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
@@ -119,7 +119,7 @@ ms.locfileid: "60049936"
      [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
 
     > [!NOTE]
-    >  Поскольку дважды щелкните ячейку в диапазоне Excel переходит в режим правки, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> событие возникает при перемещении выделения за пределы диапазона, даже если никаких изменений в текст.
+    > Поскольку дважды щелкните ячейку в диапазоне Excel переходит в режим правки, <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> событие возникает при перемещении выделения за пределы диапазона, даже если никаких изменений в текст.
 
 ## <a name="add-code-to-respond-to-the-selectionchange-event"></a>Добавьте код для реагирования на событие SelectionChange
 
@@ -131,7 +131,7 @@ ms.locfileid: "60049936"
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
 
     > [!NOTE]
-    >  Так как двойной щелчок по ячейке в диапазоне Excel приводит к перемещению в диапазон, <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> возникает до события <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> событием.
+    > Так как двойной щелчок по ячейке в диапазоне Excel приводит к перемещению в диапазон, <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> возникает до события <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> событием.
 
 ## <a name="test-the-application"></a>Тестирование приложения
  Теперь вы можете проверить книги, чтобы убедиться, что текст, описывающий события элемента <xref:Microsoft.Office.Tools.Excel.NamedRange> элемент управления вставляется в другой именованный диапазон, при возникновении события.

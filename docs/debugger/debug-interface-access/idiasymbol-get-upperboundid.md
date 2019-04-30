@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f3f0936982d91617674b43c7eaffc078ff098f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7711073319a5381a205672ae8023699a725b8936
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401145"
 ---
 # <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
 Извлекает идентификатор символа верхнюю границу измерения массива FORTRAN.
@@ -38,10 +38,10 @@ HRESULT get_upperBoundId ( 
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
 ## <a name="remarks"></a>Примечания
  Идентификатор — это уникальное значение, созданные с помощью пакета SDK доступа к интерфейсу отладки, чтобы пометить все символы как уникальный.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

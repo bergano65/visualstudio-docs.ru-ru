@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e87429c38d5b456eca08daa6675edcb0bd3f056
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ace66b8a28061ea7e8fdc7fa64f419042edf11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410137"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Создание расширения с помощью шаблона элемента редактора
 Можно использовать шаблоны элементов, включенных в Visual Studio SDK, чтобы создать простой редактор расширениями классификаторы, крайние элементы и поля в редактор. Шаблоны элементов редактора доступны для проектов Visual C# или Visual Basic VSIX.
@@ -63,7 +63,7 @@ ms.locfileid: "60079815"
  Этот шаблон оформления окна просмотра редактор создает оформления относительно окна просмотра, который добавляет фиолетовые коробке, содержащей красный контур в верхний правый угол окна просмотра.
 
 > [!NOTE]
->  **Просмотра** — это область представления текста, отображается в текущий момент.
+> **Просмотра** — это область представления текста, отображается в текущий момент.
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Создание расширения элемента оформления окна просмотра с помощью шаблона элемента оформления окна просмотра редактора
 

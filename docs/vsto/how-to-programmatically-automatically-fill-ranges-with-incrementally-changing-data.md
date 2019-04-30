@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4caede15b17478bb9649f09d9341931511b655f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: edb3a1bfaad8d662fb51a8527da6bef183fd05c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428172"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Практическое руководство. Программным образом автоматически заполнить диапазонов с постепенным изменением данных
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Метод <xref:Microsoft.Office.Interop.Excel.Range> позволяет также автоматического заполнения диапазона на листе значениями. Чаще всего <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод используется для хранения постепенно увеличения или уменьшения значения в диапазоне. Можно указать поведение, необязательную константу из <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> перечисления.
@@ -34,7 +34,7 @@ ms.locfileid: "60117893"
 - Диапазон, который требуется заполнить, переданный в качестве параметра <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод. Целевой диапазон должен включать диапазон, содержащий исходное значение.
 
     > [!NOTE]
-    >  Невозможно передать <xref:Microsoft.Office.Tools.Excel.NamedRange> управления вместо <xref:Microsoft.Office.Interop.Excel.Range>. Дополнительные сведения см. в разделе [программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+    > Невозможно передать <xref:Microsoft.Office.Tools.Excel.NamedRange> управления вместо <xref:Microsoft.Office.Interop.Excel.Range>. Дополнительные сведения см. в разделе [программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="example"></a>Пример
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]

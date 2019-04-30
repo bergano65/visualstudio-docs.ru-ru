@@ -12,12 +12,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: df04f8da29972b4be3967e5fd677a43e76ce1ac5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 553c502c100cbb6ed4ae249096af408af14423b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436123"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "60085640"
  Элемент верхнего уровня `Symbols` раздел [элемент GuidSymbol](../../extensibility/guidsymbol-element.md). `GuidSymbol` элементы сопоставляются имена идентификаторов GUID, используемых в интегрированной среде разработки для определения пакетов и их частей компонента.  
   
 > [!NOTE]
->  Идентификаторы GUID создается автоматически с шаблона пакета Visual Studio. Можно также создать уникальный идентификатор GUID, щелкнув **создать GUID** на **средства** меню.  
+> Идентификаторы GUID создается автоматически с шаблона пакета Visual Studio. Можно также создать уникальный идентификатор GUID, щелкнув **создать GUID** на **средства** меню.  
   
  Первый `GuidSymbol` элемент, «guid [Имя_пакета] Pkg», идентификатор GUID самого пакета. Это идентификатор GUID, который используется средой Visual Studio для загрузки пакета. Как правило он не имеет дочерних элементов.  
   

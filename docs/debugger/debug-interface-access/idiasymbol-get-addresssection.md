@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f24bd9c4a541caad54f963a4ea2924e80846e80d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f4ae24a194050868e1e2efbc5d29e7cf20e6cf5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402371"
 ---
 # <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
 Получает раздел часть опции адрес. Используется, когда [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) присваивается `LocIsStatic`.
@@ -39,7 +39,7 @@ HRESULT get_addressSection ( 
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
 ## <a name="remarks"></a>Примечания
  Для статических элементов, расположенных в внешней библиотеке DLL раздел, возвращаемого этим методом может быть 0, так как этот метод использует получение виртуального адреса элемента. Виртуальные адреса допустимы только если [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) метод в [IDiaSession](../../debugger/debug-interface-access/idiasession.md) интерфейс был вызван с параметром ненулевое значение, указав адрес загрузки библиотеки DLL.
@@ -53,6 +53,6 @@ HRESULT get_addressSection ( 
 |Заголовок:|dia2.h|
 |Версия:|ПАКЕТ SDK для версии 7.0|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md)

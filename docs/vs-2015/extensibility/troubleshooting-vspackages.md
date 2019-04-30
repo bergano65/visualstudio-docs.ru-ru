@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8c230fd2ecd9183b131662a1033be3402859001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430132"
 ---
 # <a name="troubleshooting-vspackages"></a>Устранение неполадок, связанных с пакетами VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "60060505"
 4. Откройте **вывода** окно экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , не смог загрузить VSPackage. В этом окне могут отображаться сведения о причину сбоя загрузки VSPackage.  
   
     > [!NOTE]
-    >  При запуске экспериментальной версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки (IDE), проверьте **вывода** окно обеих версий.  
+    > При запуске экспериментальной версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки (IDE), проверьте **вывода** окно обеих версий.  
   
 5. В журнале действий.  
   
@@ -87,7 +87,7 @@ ms.locfileid: "60060505"
     4. На **Отладка** меню, щелкните **начать отладку** или нажмите клавишу F5.  
   
         > [!NOTE]
-        >  При отладке проекта, создать или загрузить существующий экземпляр проекта сейчас.  
+        > При отладке проекта, создать или загрузить существующий экземпляр проекта сейчас.  
   
 2. Использование журнала действий.  
   

@@ -14,18 +14,18 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c63e20b802ff6c54ba17f8ddc55f390213e9043
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422460"
 ---
 # <a name="active-script-debugger-interfaces"></a>Интерфейсы отладчика активных скриптов
 Файлы заголовков activdbg.h и activdbg100.h предоставляют интерфейсы, перечисления и структуры, перечисленные в этом разделе. Они предназначены для отладки скрипта.  
   
 > [!NOTE]
->  `IJSDebug*` Интерфейсы и `IEnumJsStackFrames` интерфейс сначала были выпущены в Internet Explorer 11 для отладки машинного кода с помощью скрипта. Файл заголовка для этих интерфейсов является jscript9diag.h.  
+> `IJSDebug*` Интерфейсы и `IEnumJsStackFrames` интерфейс сначала были выпущены в Internet Explorer 11 для отладки машинного кода с помощью скрипта. Файл заголовка для этих интерфейсов является jscript9diag.h.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  Следующие интерфейсы отладки не зависящий от языка, зависящий от узла:  

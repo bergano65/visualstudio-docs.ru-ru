@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e55e108901d9be62531e459f2b7805f86cfe6a08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b5b8be97212f4510002a78e6565fc9884930db89
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446090"
 ---
 # <a name="refresh-an-app-javascript"></a>Обновление приложения (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60040645"
 - изменения свойств проекта и элементов, такие как изменения выбранного устройства отладки или изменения действия пакета для файла (в окне "Свойства").  
   
 > [!IMPORTANT]
->  При изменении ссылок, манифеста пакета или при внесении других изменений из списка выше необходимо остановить и перезапустить отладчик для обновления файлов с исходным кодом HTML, CSS и JavaScript.  
+> При изменении ссылок, манифеста пакета или при внесении других изменений из списка выше необходимо остановить и перезапустить отладчик для обновления файлов с исходным кодом HTML, CSS и JavaScript.  
   
 ### <a name="to-refresh-an-app"></a>Обновление приложения  
   

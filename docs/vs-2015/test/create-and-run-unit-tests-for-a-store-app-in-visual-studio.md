@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c328b8522913dcb8095c09a031b2a2c80f58030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fc24dc76e59a04b9485a71ba4dff44e0c7ba64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442797"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Создание и запуск модульных тестов для приложений Магазина в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60086771"
 Инструменты модульного тестирования Visual Studio 2012 Express для Windows 8 предназначены для разработчиков и групп, внедряющих модульное тестирование в свои методики разработки программного обеспечения. Модульные тесты предоставляют разработчикам и тест-инженерам эффективный и удобный способ поиска логических ошибок в методах классов в проектах Visual C#, Visual Basic и Visual C++.
 
 > [!NOTE]
->  Подразделы данного раздела описывают функциональность Visual Studio 2012 Express для Windows 8. Visual Studio Ultimate, VS Premium и VS Professional предоставляет дополнительные функции для модульного тестирования.
+> Подразделы данного раздела описывают функциональность Visual Studio 2012 Express для Windows 8. Visual Studio Ultimate, VS Premium и VS Professional предоставляет дополнительные функции для модульного тестирования.
 >
 > - В VS Ultimate, VS Premium и VS Professional можно использовать любые сторонние среды модульного тестирования или среды с открытым кодом, для которых создан адаптер надстройки для обозревателя тестов корпорации Майкрософт. Кроме того, с помощью VS Ultimate и VS Premium можно анализировать и отображать данные о покрытии кода для тестов.
 >   - В VS Ultimate можно запускать тесты после каждой сборки. Вы также можете использовать Microsoft Fakes — платформу изоляции для управляемого кода, позволяющую сосредоточиться на тестировании разрабатываемого кода за счет замены кода системы и сторонних функций.

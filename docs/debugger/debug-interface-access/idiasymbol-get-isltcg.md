@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b674e99bcb9bd621808b080fffa6873f96cfb707
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4f5fe47d8575c47756cce8fd1580ced5f3036766
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399958"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 Получает флаг, указывающий ли [единице компиляции](../../debugger/debug-interface-access/compiland.md) был связан с параметром компоновщика [/LTCG (Создание кода во время компоновки)](/cpp/build/reference/ltcg-link-time-code-generation), который помогает при оптимизации всей программы. Этот параметр применяется только к управляемым кодом.
@@ -39,7 +39,7 @@ HRESULT get_iSLTCG(
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
 ## <a name="requirements"></a>Требования
 
@@ -48,5 +48,5 @@ HRESULT get_iSLTCG(
 |Заголовок:|dia2.h|
 |Версия:|ПАКЕТ SDK для версии 8.0|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

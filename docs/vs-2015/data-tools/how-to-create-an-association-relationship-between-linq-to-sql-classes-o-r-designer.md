@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5b97247ebf16a588e8f28b4b4e6f7c512566226
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386763"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Практическое руководство. Создать ассоциацию (связь) между классами LINQ to SQL (реляционный конструктор объектов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60056774"
  Можно выбирать родительский класс и дочерний класс, когда диалоговое окно **Редактор ассоциаций** используется для создания ассоциации. Родительский класс представляет собой класс сущностей, который содержит первичный ключ; дочерний класс представляет собой класс сущностей, который содержит внешний ключ. Например, если были созданы классы сущностей, которые сопоставляются таблицам Northwind Customers и Orders, то класс Customer будет родительским классом, а класс Order будет дочерним классом.  
   
 > [!NOTE]
->  При перетаскивании таблиц из **обозревателя серверов**/**обозреватель баз данных** на [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), ассоциации создаются автоматически на основе в существующем отношения внешнего ключа в базе данных.  
+> При перетаскивании таблиц из **обозревателя серверов**/**обозреватель баз данных** на [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), ассоциации создаются автоматически на основе в существующем отношения внешнего ключа в базе данных.  
   
  После создания ассоциации при выборе ассоциации в конструкторе O/R, имеются некоторые конфигурируемые свойства в **свойства** окна. (Ассоциация представляет собой линию между связанными классами). В следующей таблице представлены описания свойств ассоциации.  
   

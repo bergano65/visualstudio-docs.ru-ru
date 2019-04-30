@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2be6fbafc1520e190cc52bea839c6cf9e208ca4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ad16165924a33a25dab2b1cfb49a0a7bbfe0875
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421533"
 ---
 # <a name="xmlnodes-control"></a>XMLNodes - элемент управления
   **Важные** сведения, изложенные в этом разделе, касающиеся Microsoft Word, представленных исключительно для преимущество и лиц и организаций, расположенных за пределами США и их территорий или использующие или разработки программ, выполняемых на, продукты Microsoft Word, лицензированные корпорацией Майкрософт до января 2010 г, при удалении реализация конкретной функции в Microsoft связана с пользовательским XML-из Microsoft Word. Эти сведения, касающиеся Microsoft Word может не читают или используют отдельным лицам или организациям в Соединенных Штатах Америки или их территориях, которые используете, или разработке программ, выполняемых на продукты Microsoft Word, лицензированные корпорацией Майкрософт, начиная с 10 января 2010 г. ; Эти продукты, будет вести себя так же, как продукты до этой даты или приобретенных и лицензируются для использования за пределами США.
@@ -30,7 +30,7 @@ ms.locfileid: "60090584"
  После того как Visual Studio создаст коллекцию узлов XML, элемент управления можно запрограммировать напрямую, не обращаясь к объектной модели Word. <xref:Microsoft.Office.Tools.Word.XMLNodes> Управления можно удалить только путем удаления сопоставления элементов из документа.
 
 > [!NOTE]
->  Если доступ к дочерним элементом элемента <xref:Microsoft.Office.Tools.Word.XMLNodes> управлять через <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> свойство возвращает <xref:Microsoft.Office.Interop.Word.XMLNode> объекта вместо <xref:Microsoft.Office.Tools.Word.XMLNode> элемента управления. Дополнительные сведения см. в разделе [программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Если доступ к дочерним элементом элемента <xref:Microsoft.Office.Tools.Word.XMLNodes> управлять через <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> свойство возвращает <xref:Microsoft.Office.Interop.Word.XMLNode> объекта вместо <xref:Microsoft.Office.Tools.Word.XMLNode> элемента управления. Дополнительные сведения см. в разделе [программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="bind-data-to-the-control"></a>Привязка данных к элементу управления
  <xref:Microsoft.Office.Tools.Word.XMLNodes> Управления не поддерживает привязку данных. Это обусловлено <xref:Microsoft.Office.Tools.Word.XMLNodes> управления не имеет возможности привязки сложных данных, и не может представлять простую привязку данных повторяющихся данных.

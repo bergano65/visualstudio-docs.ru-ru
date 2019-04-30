@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436497"
 ---
 # <a name="ribbon-xml"></a>XML-ленты
   Элемент Лента (XML) позволяет настраивать ленту с помощью XML. Использование элемента Лента (XML), если вы хотите настроить ленту способом, который не поддерживается элементом Лента (визуальный конструктор). Сравнение действий, выполняемых с каждым элементом, см. в разделе [Обзор ленты](../vsto/Ribbon-overview.md).
@@ -60,7 +60,7 @@ ms.locfileid: "60117548"
 - Определите метод обратного вызова в классе ленты.
 
 > [!NOTE]
->  Для Outlook необходимо будет выполнить еще одно действие. Дополнительные сведения см. в разделе [настройке ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+> Для Outlook необходимо будет выполнить еще одно действие. Дополнительные сведения см. в разделе [настройке ленты для Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
  Пошаговое руководство по автоматизации приложения на ленте, см. в разделе [Пошаговое руководство: Создание настраиваемой вкладки с помощью XML-код ленты](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).
 

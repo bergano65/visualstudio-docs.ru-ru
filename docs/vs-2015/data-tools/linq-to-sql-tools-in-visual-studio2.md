@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 44e12e616e453dcdc0390e8a6eb5b2065a51a6bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384046"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Средства LINQ to SQL в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ LINQ to SQL была первой технологии объектно реля
  ![Конструктор LINQ to SQL](../data-tools/media/raddata-linq-to-sql-designer.png "raddata конструктор LINQ to SQL")
 
 > [!IMPORTANT]
->  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Представляет собой простой объект реляционный модуль сопоставления в том случае, поскольку он поддерживает только отношения сопоставления 1:1. Другими словами, класс объекта может иметь сопоставляющее отношение только 1:1 с таблицей базы данных или представлением. Сложные сопоставления, например сопоставление класса сущностей с соединяемой таблицей, не поддерживается; Используйте Entity Framework для сложные сопоставления. Кроме того, конструктор является односторонним генератором объектного кода. Это означает, что только изменения, которые вы осуществляете на области конструктора, отражаются в файле кода. Изменения, вносимые в файл кода вручную, не отражаются в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Любые изменения, которые вы вручную осуществляете в файле кода принимаются, когда конструктор сохраняется и генерируется код. Сведения о том, как добавить пользовательский код и распространить классы, создаваемые [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], см. в разделе [как: Расширение кода, созданного конструктором O/R](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] Представляет собой простой объект реляционный модуль сопоставления в том случае, поскольку он поддерживает только отношения сопоставления 1:1. Другими словами, класс объекта может иметь сопоставляющее отношение только 1:1 с таблицей базы данных или представлением. Сложные сопоставления, например сопоставление класса сущностей с соединяемой таблицей, не поддерживается; Используйте Entity Framework для сложные сопоставления. Кроме того, конструктор является односторонним генератором объектного кода. Это означает, что только изменения, которые вы осуществляете на области конструктора, отражаются в файле кода. Изменения, вносимые в файл кода вручную, не отражаются в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Любые изменения, которые вы вручную осуществляете в файле кода принимаются, когда конструктор сохраняется и генерируется код. Сведения о том, как добавить пользовательский код и распространить классы, создаваемые [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], см. в разделе [как: Расширение кода, созданного конструктором O/R](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="creating-and-configuring-the-datacontext"></a>Создание и конфигурирование DataContext
  После добавления **LINQ to SQL Classes** проект и открытия [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], пустая область конструктора представляет пустой <xref:System.Data.Linq.DataContext> готовую к конфигурированию. <xref:System.Data.Linq.DataContext> настраивается с помощью сведений о соединении из первого объекта, который был перетащен в область конструктора... Поэтому <xref:System.Data.Linq.DataContext> конфигурируется с использованием информации о подключении из первого сброшенного в область конструктора элемента. Дополнительные сведения о <xref:System.Data.Linq.DataContext> см. класс, [методы DataContext (реляционный конструктор объектов)](../data-tools/datacontext-methods-o-r-designer.md).
@@ -53,7 +53,7 @@ LINQ to SQL была первой технологии объектно реля
  Можно создать <xref:System.Data.Linq.DataContext> методы, которые вызывают (сопоставляются) сохраненные процедуры и функции путем перетаскивания их из **обозревателя серверов**/**обозреватель баз данных** на [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Сохраненные процедуры добавляются в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] как методы <xref:System.Data.Linq.DataContext>.
 
 > [!NOTE]
->  При перетаскивании хранимые процедуры и функции из **обозревателя серверов**/**обозреватель баз данных** на [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], тип возвращаемого значения создаваемого <xref:System.Data.Linq.DataContext> метод отличается в зависимости от того, где вы сбросили элемент. Дополнительные сведения см. в разделе [методы DataContext (реляционный конструктор объектов)](../data-tools/datacontext-methods-o-r-designer.md).
+> При перетаскивании хранимые процедуры и функции из **обозревателя серверов**/**обозреватель баз данных** на [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], тип возвращаемого значения создаваемого <xref:System.Data.Linq.DataContext> метод отличается в зависимости от того, где вы сбросили элемент. Дополнительные сведения см. в разделе [методы DataContext (реляционный конструктор объектов)](../data-tools/datacontext-methods-o-r-designer.md).
 
 ## <a name="configuring-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Конфигурирование DataContext, чтобы использовать сохраненные процедуры для сохранения данных между классами сущностей и базой данных
  Как утверждалось ранее, можно создавать методы <xref:System.Data.Linq.DataContext>, которые вызывают сохраненные процедуры и функции. Кроме того, можно также назначать сохраненные процедуры, которые могут использоваться для поведения по умолчанию при [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] среды выполнения, которая выполняет Вставки, Обновления и удаления. Дополнительные сведения см. в разделе [Как назначить хранимые процедуры для выполнения обновлений, вставок и удалений (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).

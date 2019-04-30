@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 162f8df09b1f6ce9372a57728d653d5d3c20a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415722"
 ---
 # <a name="register-the-program"></a>Регистрация программы
 После модуля отладки приобрела порт, представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейс, следующим шагом Включение программы для отладки — для его регистрации в порт. После регистрации, эта программа доступна для отладки, одно из следующих способов:
@@ -38,7 +38,7 @@ ms.locfileid: "60070151"
      Пример обработчика отладки, запуска программы и зарегистрировав его с портом.
 
     > [!NOTE]
-    >  Этот пример кода является не единственным способом для запуска и возобновления процесса; Этот код является главным образом пример регистрации программы с портом.
+    > Этот пример кода является не единственным способом для запуска и возобновления процесса; Этот код является главным образом пример регистрации программы с портом.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.

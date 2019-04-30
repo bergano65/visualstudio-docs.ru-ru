@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0051f18c67fffc9801ad326745a0dc9dd63f4391
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2cdde46484f95aa57404ebe6b6cb4c86ef458c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440506"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>IDebugApplicationThreadEvents110 — интерфейс
 Добавляет дополнительные события потоков. Только эти события являются локальными. То есть можно подписаться на их только в процесса отладки, с помощью [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) уведомлений и негативной рекомендации методы для объектов потока приложения PDM (объекты, реализующие [IDebugApplicationThread Интерфейс](../../winscript/reference/idebugapplicationthread-interface.md)). Они происходят в потоке, в которой они получены из.  
   
 > [!IMPORTANT]
->  Этот интерфейс реализуется в PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> Этот интерфейс реализуется в PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="methods"></a>Методы  
  Интерфейс `IDebugActivationThreadEvents110` предоставляет следующие методы.  

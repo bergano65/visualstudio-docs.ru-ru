@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f20b090f880168b3561cba547db319813ba3fe02
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3e5800a6de15d2d59208022fa44d3c2f4c931e14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446573"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
 Возвращает диапазон символов, которые были добавлены с помощью `IDebugDocumentHelper::AddDeferredText` метода в исходном документе узла.  
@@ -58,7 +58,7 @@ HRESULT GetDeferredText(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_NOTIMPL`|Метод не реализован.|  
@@ -67,7 +67,7 @@ HRESULT GetDeferredText(
  Этот метод может возвращать `E_NOTIMPL`, если узел не вызывает `IDebugDocumentHelper::AddDeferredText`.  
   
 > [!NOTE]
->  Этот метод возвращает текст из исходного документа. Узел не хранить список изменений, или другие изменения в документе.  
+> Этот метод возвращает текст из исходного документа. Узел не хранить список изменений, или другие изменения в документе.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)   

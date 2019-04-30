@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b197bbc434ecf01ad5b6df332530ad719575aede
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76dac6e20cc85eeb5784b0b6e29ee8d1b23fbd92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432802"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Практическое руководство. Сбор данных счетчиков ЦП
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60104087"
 4. Для каждого собираемого события выберите событие и щелкните стрелку "вправо", чтобы добавить событие в список **Выбранные счетчики**.  
   
     > [!NOTE]
-    >  Дерево **Доступные счетчики производительности** отображается только в том случае, если установлен флажок **Сбор данных счетчиков ЦП**.  
+    > Дерево **Доступные счетчики производительности** отображается только в том случае, если установлен флажок **Сбор данных счетчиков ЦП**.  
   
 ## <a name="see-also"></a>См. также  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   

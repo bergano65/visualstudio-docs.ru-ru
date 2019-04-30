@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 2b23e10dfd00f4e1b9bde8520ef50aa60cd18b35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406743"
 ---
 # <a name="secure-clickonce-applications"></a>Защита приложений ClickOnce
 К приложению[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] могут применяться ограничения управления доступом для кода на платформе .NET Framework, позволяющие ограничить доступ кода к защищенным ресурсам и операциям. Важно понимать влияние управления доступом для кода, чтобы писать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] соответствующим образом. Для ограничения доступа приложение может использовать зоны с полным или частичным доверием, такие как Интернет и интрасеть.
@@ -71,7 +71,7 @@ ms.locfileid: "58866790"
  Никогда не следует передавать аргументы, извлекаемые с помощью строки запроса, в базу данных или командную строку без проверки аргументов с целью убедиться, что они безопасны. Ненадежные аргументы — это аргументы, которые содержат escape-символы базы данных или командной строки, позволяющие злоумышленникам управлять приложением для выполнения произвольных команд.
 
 > [!NOTE]
->  Аргументы строки запроса представляют единственный способ передачи аргументов в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] при запуске. В приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] нельзя передавать аргументы из командной строки.
+> Аргументы строки запроса представляют единственный способ передачи аргументов в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] при запуске. В приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] нельзя передавать аргументы из командной строки.
 
 ## <a name="deploying-obfuscated-assemblies"></a>Развертывание замаскированных сборок
  Visual Studio включает в себя бесплатную программу [PreEmptive Protection — Dotfuscator Community](../ide/dotfuscator/index.md), которую можно использовать для защиты приложений ClickOnce с помощью обфускации кода и активных мер по защите.  Дополнительные сведения см. в [разделе по ClickOnce руководства пользователя Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).

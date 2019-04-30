@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5b687f9fb705f8f8c8bee7ca611d618e012e8507
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443862"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Пошаговое руководство. Создание пакета SDK с помощью C# или Visual Basic
 В этом пошаговом руководстве вы узнаете, как создать простой пакет SDK для математической библиотеки с помощью Visual C# и затем пакета SDK в Visual Studio Extension (VSIX). Вы выполните следующие процедуры:
@@ -50,7 +50,7 @@ ms.locfileid: "60086641"
 8. В **конфигурации** столбец, убедитесь, что **SimpleMath** строки равен **выпуска**, а затем выберите **закрыть** кнопку, чтобы принять изменение.
 
    > [!IMPORTANT]
-   >  Пакет SDK для компонента SimpleMath включает только одну конфигурацию. Этой конфигурации должен содержать сборку выпуска, или приложения, использующие компонент не будет передавать сертификации[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
+   > Пакет SDK для компонента SimpleMath включает только одну конфигурацию. Этой конфигурации должен содержать сборку выпуска, или приложения, использующие компонент не будет передавать сертификации[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
 
 9. В **обозревателе решений**, откройте контекстное меню для **SimpleMath** узел проекта, а затем выберите **построения**.
 

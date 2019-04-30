@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff56ea4527fcc61c9b74c73df3b36c554c43072
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ade4bdfce2cd01864075e02648f233622cafc61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418426"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Важные команды для фильтров языковой службы
 Если вы хотите создать фильтр службы полнофункциональный язык, рассмотрите возможность обработки команды. Полный список идентификаторов команд определяется в <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> перечисления для управляемого кода и заголовка Stdidcmd.h-файле для неуправляемого [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] кода. Чтобы найти файл Stdidcmd.h в *путь установки Visual Studio SDK*\VisualStudioIntegration\Common\Inc.
@@ -24,7 +24,7 @@ ms.locfileid: "56602420"
 ## <a name="commands-to-handle"></a>Команды для дескриптора
 
 > [!NOTE]
->  Это не обязательно для фильтрации для каждой команды в следующей таблице.
+> Это не обязательно для фильтрации для каждой команды в следующей таблице.
 
 |Команда|Описание|
 |-------------|-----------------|

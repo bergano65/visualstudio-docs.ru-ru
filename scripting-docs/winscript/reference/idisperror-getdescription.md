@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aff28f0f552bcad6792e4d252a92e45e9a6fd38c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 5505113ee650c6618be5a95bc77244daf90cfcb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446947"
 ---
 # <a name="idisperrorgetdescription"></a>IDispError::GetDescription
 Возвращает текстовое описание ошибки.  
@@ -42,7 +42,7 @@ HRESULT GetDescription(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
@@ -50,7 +50,7 @@ HRESULT GetDescription(
  Текст, возвращенный в язык, указанный идентификатор языка (LCID), который был передан `IDispatchEx::InvokeEx` для метода, который обнаружил ошибку.  
   
 > [!NOTE]
->  Этот метод не реализован.  
+> Этот метод не реализован.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDispError](../../winscript/reference/idisperror-interface.md)   

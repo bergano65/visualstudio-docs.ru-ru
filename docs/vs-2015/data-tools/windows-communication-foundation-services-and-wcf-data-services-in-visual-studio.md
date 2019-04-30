@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443873"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Службы Windows Communication Foundation и службы данных WCF в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Visual Studio предоставляет средства для работы с
     ```
 
     > [!NOTE]
-    >  Замените *ServiceReference* с пространством имен для ссылки на службу и замените *Service1Client* с именем службы.
+    > Замените *ServiceReference* с пространством имен для ссылки на службу и замените *Service1Client* с именем службы.
 
 3. Список IntelliSense будет отображаться с помощью перегрузок для конструктора. Выберите `endpointConfigurationName As String` перегрузки.
 
 4. Перегрузке, введите `=` *ConfigurationName*, где *ConfigurationName* имя конечной точки, которую вы хотите использовать.
 
     > [!NOTE]
-    >  Если вы не знаете имена доступных конечных точек, их можно найти в файле app.config.
+    > Если вы не знаете имена доступных конечных точек, их можно найти в файле app.config.
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Чтобы найти доступные конечные точки для службы WCF
 
@@ -164,7 +164,7 @@ Visual Studio предоставляет средства для работы с
  По умолчанию при добавлении ссылки на службу в проект он настраивается для вызова методов синхронно. Можно изменить поведение асинхронный вызов методов, изменив параметр в **настроить ссылку на службу** диалоговое окно.
 
 > [!NOTE]
->  Этот параметр имеет значение на основе каждой службы. Если один метод для службы вызывается асинхронно, все методы должны вызываться асинхронно.
+> Этот параметр имеет значение на основе каждой службы. Если один метод для службы вызывается асинхронно, все методы должны вызываться асинхронно.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

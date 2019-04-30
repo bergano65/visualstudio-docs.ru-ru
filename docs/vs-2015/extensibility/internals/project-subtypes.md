@@ -11,12 +11,12 @@ ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2e1fe4a2ad528ac32bdd0b3535a8566f630b970e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5ad1e105d43c40782b13d8799b20626e57363c2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421833"
 ---
 # <a name="project-subtypes"></a>Подтипы проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58980353"
 Подтипов проекта позволяют настраивать или flavor поведение системы проектов из [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Настройки включают сохранение дополнительных данных в файле проекта, добавляя или фильтруя элементы в **Добавление нового элемента** » диалогового окна «Управление как сборки, отладки и развертывания и расширение проекта **свойство Страницы** диалоговое окно. Пакеты VSPackage реализовывать подтипов проекта, с помощью COM статистической обработки.  
   
 > [!NOTE]
->  Система проектов Visual C++ не поддерживает подтипов проекта. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] подтипов проекта самой используются для реализации проектов для смарт-устройств и SQL Server.  
+> Система проектов Visual C++ не поддерживает подтипов проекта. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] подтипов проекта самой используются для реализации проектов для смарт-устройств и SQL Server.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Разработка подтипов проекта](../../extensibility/internals/project-subtypes-design.md)  

@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439476"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Привязка элементов управления Windows Forms к данным
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "59668994"
  ![Привязка источника данных к сведения](../data-tools/media/raddata-bind-data-source-to-details.png "raddata привязки источника данных сведения")  
   
 > [!IMPORTANT]
->  Обратите внимание, что на предыдущем рисунке, перетащите свойство Orders таблицы клиентов, а не из таблицы Orders. Путем привязки к свойству Customer.Orders команд перехода, внесенные в элемент управления DataGridView, немедленно отражаются в элементы управления сведениями. При перетаскивании из таблицы Orders, элементы управления будет по-прежнему связан с набором данных, но не они не будут синхронизированы с DataGridView.  
+> Обратите внимание, что на предыдущем рисунке, перетащите свойство Orders таблицы клиентов, а не из таблицы Orders. Путем привязки к свойству Customer.Orders команд перехода, внесенные в элемент управления DataGridView, немедленно отражаются в элементы управления сведениями. При перетаскивании из таблицы Orders, элементы управления будет по-прежнему связан с набором данных, но не они не будут синхронизированы с DataGridView.  
   
  На следующем рисунке по умолчанию элементов управления с привязкой к данным, которые добавляются в форму, после привязки свойства заказов в таблице Customers к «Подробности» в **источников данных** окна.  
   

@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: 4c646f8f6dc228d42d6efb5ec44f3ec19a53a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408536"
 ---
-# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Удаленная отладка C# или проект Visual Basic в Visual Studio
+# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Удаленная отладка проекта C# или Visual Basic в Visual Studio
 Для отладки приложения Visual Studio, который был развернут на другом компьютере, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение, настройте проект для подключения к удаленному компьютеру из Visual Studio и затем запустите приложение.
 
 ![Компоненты удаленной отладки](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
@@ -90,7 +90,7 @@ ms.locfileid: "58355167"
 10. Скопируйте исполняемый файл, сборку которого вы только что выполнили, с компьютера с Visual Studio в созданную на удаленном компьютере папку.
 
     > [!CAUTION]
-    >  Не следует вносить изменения в код или перестроения (или необходимо повторить этот шаг). Исполняемый файл, скопированный на удаленный компьютер, должен в точности совпадать с локальным исходным кодом и символами.
+    > Не следует вносить изменения в код или перестроения (или необходимо повторить этот шаг). Исполняемый файл, скопированный на удаленный компьютер, должен в точности совпадать с локальным исходным кодом и символами.
 
     Можно скопировать в проект вручную, использовать Xcopy, Robocopy, Powershell или другие параметры.
 
@@ -116,7 +116,7 @@ ms.locfileid: "58355167"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка в Visual Studio](../debugger/index.md)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
 - [Настройка брандмауэра Windows для удаленной отладки](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

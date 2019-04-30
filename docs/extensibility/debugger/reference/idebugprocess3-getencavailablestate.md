@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b4098bd1f1a3279c918b1f150e3a4c45880ac5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 27acdda0dad152bcb18c4bef304b97190444c63d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413146"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Этот метод возвращает текущее состояние изменить и продолжить процесс. Поставщик пользовательский порт, всегда должны возвращать `E_NOTIMPL`.
@@ -45,7 +45,7 @@ int GetENCAvailableState(
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 > [!NOTE]
->  Поставщик пользовательский порт, всегда должны возвращать `E_NOTIMPL`.
+> Поставщик пользовательский порт, всегда должны возвращать `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Примечания
  Это состояние может зависеть от [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).

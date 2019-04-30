@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446701"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Пошаговое руководство. Создание кода с помощью текстовых шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60052887"
  В данном примере проекта шаблон считывает пример файла XML и создает классы, соответствующие каждому типу узла. В написанном вручную коде эти классы можно использовать для перехода по XML-файлу. Можно также запустить приложение для любых других файлов, использующих те же типы узлов. Пример XML-файла служит для предоставления примеров всех типов узлов, с которыми должно работать ваше приложение.  
   
 > [!NOTE]
->  Приложение [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), входящее в состав [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], может создавать строго типизированные классы из XML-файлов. Показанный здесь шаблон представлен в качестве примера.  
+> Приложение [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), входящее в состав [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], может создавать строго типизированные классы из XML-файлов. Показанный здесь шаблон представлен в качестве примера.  
   
  Ниже приведен пример файла:  
   
@@ -142,7 +142,7 @@ namespace MyProject
 2. В диалоговом окне **Добавление нового элемента** выберите в области **Шаблоны** элемент **Текстовый шаблон**.  
   
    > [!NOTE]
-   >  Убедитесь, что добавляется именно текстовый шаблон, а не предварительно преобразованный текстовый шаблон.  
+   > Убедитесь, что добавляется именно текстовый шаблон, а не предварительно преобразованный текстовый шаблон.  
   
 3. В директиве template файла измените значение атрибута `hostspecific` на `true`.  
   

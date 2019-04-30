@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439045"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Инициализация конструктора и конфигурация метаданных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60049261"
 1. Создание объекта, реализующего <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> класса.  
   
    > [!NOTE]
-   >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Класс никогда не должны размещаться на один и тот же объект как <xref:Microsoft.VisualStudio.Shell.Package> класса.  
+   > <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Класс никогда не должны размещаться на один и тот же объект как <xref:Microsoft.VisualStudio.Shell.Package> класса.  
   
 2. Регистрация класса, реализующего <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> как предоставление поддержки для расширения конструктора в пакете VSPackage, применяя экземпляров <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> и <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> в класс, предоставляющий реализацию VSPackage <xref:Microsoft.VisualStudio.Shell.Package> .  
   
@@ -93,7 +93,7 @@ ms.locfileid: "60049261"
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  В настоящее время в область конструктора поддерживает только создание компонентов, и таким образом только компоненты могут иметь локальные метаданные. В приведенном выше примере мы предпринималась попытка изменения свойства, такие как `Color` свойства объекта. Если `false` было передано в качестве глобального флага `CustomBrowser` никогда не будет отображаться, так как конструктор никогда не создает экземпляр `Color`. Установка для глобального флага `false` полезен для компонентов, таких как элементы управления, таймеры и диалоговые окна.  
+> В настоящее время в область конструктора поддерживает только создание компонентов, и таким образом только компоненты могут иметь локальные метаданные. В приведенном выше примере мы предпринималась попытка изменения свойства, такие как `Color` свойства объекта. Если `false` было передано в качестве глобального флага `CustomBrowser` никогда не будет отображаться, так как конструктор никогда не создает экземпляр `Color`. Установка для глобального флага `false` полезен для компонентов, таких как элементы управления, таймеры и диалоговые окна.  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   

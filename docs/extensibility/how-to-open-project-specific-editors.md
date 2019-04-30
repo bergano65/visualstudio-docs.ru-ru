@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11374ca0a65a5b430b819a9ef1bdf57f7434e923
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8482f2704fe81482d95c2c8e73ae6e8c8ffd272d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417136"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Практическое руководство. Открытие редакторов соответствующих проектов
 Если файл элемента, открываемый в проекте по своей природе привязана к конкретного редактора для этого проекта, проект необходимо открыть файл с помощью редактора определенного проекта. Файл не может быть делегирована вниз, чтобы механизм IDE для выбора редактора. Например вместо того чтобы использовать редактор стандартных растрового изображения, можно использовать этот параметр, редактор для конкретного проекта для указания в редакторе определенного точечного рисунка, который распознает сведения в файле, который является уникальным для проекта.
@@ -29,7 +29,7 @@ ms.locfileid: "60053758"
 1. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> метод (`RDT_EditLock`) для определения, является ли файл (объект данных документа) уже открыт.
 
     > [!NOTE]
-    >  Дополнительные сведения о данных документа и объекты представления документа, см. в разделе [представление данных и документа в специализированных редакторах документа](../extensibility/document-data-and-document-view-in-custom-editors.md).
+    > Дополнительные сведения о данных документа и объекты представления документа, см. в разделе [представление данных и документа в специализированных редакторах документа](../extensibility/document-data-and-document-view-in-custom-editors.md).
 
 2. Если файл уже открыт, resurface файл путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> метод и указав значение ido_activateifopen для `grfIDO` параметра.
 

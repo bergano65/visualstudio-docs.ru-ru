@@ -13,31 +13,31 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b8640636e48e2addedd5a59d30deb060cfdf118
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 49c211faf577df33bc6e7404eaa9631e734c9c36
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435317"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Структура файла [типы_содержимого].xml
 Содержит сведения о типах содержимого в пакете VSIX. Visual Studio использует файл [Content_Types] .xml для установки пакета, но не устанавливает сам файл.
 
 > [!NOTE]
->  Несмотря на то, что этот раздел относится только к [Content_Type] XML-файлы, которые используются в пакетах VSIX, тип файла [Content_Types] .xml является частью *Open Packaging Conventions (OPC)* standard. Дополнительные сведения см. в разделе [OPC: Новый стандартный для упаковки Your данных](http://go.microsoft.com/fwlink/?LinkID=148207) на сайте MSDN.
+> Несмотря на то, что этот раздел относится только к [Content_Type] XML-файлы, которые используются в пакетах VSIX, тип файла [Content_Types] .xml является частью *Open Packaging Conventions (OPC)* standard. Дополнительные сведения см. в разделе [OPC: Новый стандартный для упаковки Your данных](http://go.microsoft.com/fwlink/?LinkID=148207) на сайте MSDN.
 
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы
  В следующих разделах корневого элемента и его атрибуты и дочерние элементы.
 
 ### <a name="root-element"></a>Корневой элемент
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |`Types`|Содержит дочерние элементы, соответствующие типам файлов в пакете VSIX.|
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |`Xmlns`|(Обязательно). Расположение схемы, используемой для этого файл [Content_Types] .xml.|
 
@@ -56,7 +56,7 @@ ms.locfileid: "56721903"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |`Extension`|Расширение имени файла, файла в пакете VSIX.|
 |`ContentType`|Описывает тип содержимого, связанного с расширением имени файла.|
@@ -83,7 +83,7 @@ ms.locfileid: "56721903"
 
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Следующий файл [Content_Types] .xml описывает типичные пакета VSIX.
 
 ### <a name="code"></a>Код

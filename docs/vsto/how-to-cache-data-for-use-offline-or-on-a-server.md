@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 510d923d2503aeb6e07859813537c9094fe25b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419707"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Практическое руководство. Кэшировать данные для использования в автономном режиме или на сервере
   Можно пометить элемент данных должен кэшироваться в документе, чтобы он был доступен вне сети. Это также позволяет для данных в документе, чтобы управляться другой код, когда документ хранится на сервере.
@@ -32,7 +32,7 @@ ms.locfileid: "60094545"
  Можно пометить элемент данных должен быть помещен в кэш при объявлении элемента данных в коде, или, если вы используете <xref:System.Data.DataSet>, задав свойство **свойства** окна. Если элемент данных, не кэшируется <xref:System.Data.DataSet> или <xref:System.Data.DataTable>, убедитесь, что он соответствует критерию для кэширования в документе. Дополнительные сведения см. в разделе [кэшировать данные](../vsto/caching-data.md).
 
 > [!NOTE]
->  Наборы данных, созданных с помощью Visual Basic, которые помечены как **Cached** и **WithEvents** (включая наборы данных, при перетаскивании из **источников данных** окно или **Элементов** , имеющих **CacheInDocument** свойство значение **True**) содержат подчеркивания в своих именах в кэше. Например, если создать набор данных и назовите его **клиентов**, <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> будет называться **_Customers** в кэше. При использовании <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> для доступа к этой кэшированного элемента, необходимо указать **_Customers** вместо **клиентов**.
+> Наборы данных, созданных с помощью Visual Basic, которые помечены как **Cached** и **WithEvents** (включая наборы данных, при перетаскивании из **источников данных** окно или **Элементов** , имеющих **CacheInDocument** свойство значение **True**) содержат подчеркивания в своих именах в кэше. Например, если создать набор данных и назовите его **клиентов**, <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> будет называться **_Customers** в кэше. При использовании <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> для доступа к этой кэшированного элемента, необходимо указать **_Customers** вместо **клиентов**.
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>Для кэширования данных в документе, с помощью кода
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8dd2e677cae2e54a8dff716aef72f1d6abc6b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418467"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Практическое руководство. Создание файла vsct
 
@@ -80,7 +80,7 @@ ms.locfileid: "56602810"
     Это действие создает новую *.vsct* файл источника таблицы команд XML. Этот файл можно скомпилировать с помощью *Vsct.exe*, компилятора VSCT, как вы и другие *.vsct* файла.
 
    > [!NOTE]
-   >  Можно улучшить читаемость *.vsct* файла переформатировать комментарии XML.
+   > Можно улучшить читаемость *.vsct* файла переформатировать комментарии XML.
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
@@ -90,13 +90,13 @@ ms.locfileid: "56602810"
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Создание файла VSCT на основе файла CTO
 
-1.  Получите копии *.cto* файла и его соответствующее *.ctsym* файла.
+1. Получите копии *.cto* файла и его соответствующее *.ctsym* файла.
 
-2.  Поместите файлы в той же папке, что *vsct.exe* компилятора.
+2. Поместите файлы в той же папке, что *vsct.exe* компилятора.
 
-3.  В командной строке Visual Studio, перейдите в каталог, содержащий *.cto* и *.ctsym* файлов.
+3. В командной строке Visual Studio, перейдите в каталог, содержащий *.cto* и *.ctsym* файлов.
 
-4.  Тип
+4. Тип
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -111,9 +111,9 @@ ms.locfileid: "56602810"
 
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>Чтобы добавить vsct-файл для компиляции проекта
 
-1.  Откройте файл проекта в редакторе. Если проект загружен, сначала его необходимо выгрузить.
+1. Откройте файл проекта в редакторе. Если проект загружен, сначала его необходимо выгрузить.
 
-2.  Добавить [элемент ItemGroup](../../msbuild/itemgroup-element-msbuild.md) , содержащий `VSCTCompile` элемента, как показано в следующем примере.
+2. Добавить [элемент ItemGroup](../../msbuild/itemgroup-element-msbuild.md) , содержащий `VSCTCompile` элемента, как показано в следующем примере.
 
     ```xml
     <ItemGroup>
@@ -126,7 +126,7 @@ ms.locfileid: "56602810"
 
      `ResourceName` Элемент всегда должен иметь значение `Menus.ctmenu`.
 
-3.  Если проект содержит *.resx* добавьте `EmbeddedResource` элемент, содержащий `MergeWithCTO` элемента, как показано в следующем примере:
+3. Если проект содержит *.resx* добавьте `EmbeddedResource` элемент, содержащий `MergeWithCTO` элемента, как показано в следующем примере:
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -138,9 +138,9 @@ ms.locfileid: "56602810"
 
      Эта разметка должна находиться внутри `ItemGroup` элемент, содержащий внедренные ресурсы.
 
-4.  Открыть файл пакета, обычно с именем  *\<имя_проекта\>Package.cs* или  *\<имя_проекта\>Package.vb*, в редакторе.
+4. Открыть файл пакета, обычно с именем  *\<имя_проекта\>Package.cs* или  *\<имя_проекта\>Package.vb*, в редакторе.
 
-5.  Добавление `ProvideMenuResource` атрибута к классу пакета, как показано в следующем примере.
+5. Добавление `ProvideMenuResource` атрибута к классу пакета, как показано в следующем примере.
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]

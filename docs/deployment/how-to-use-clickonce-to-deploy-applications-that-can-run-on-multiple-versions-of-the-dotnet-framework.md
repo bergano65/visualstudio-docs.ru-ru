@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a98ad657fd1664a71b0b07063615923af4b9db2d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7e7d79dd1fc3d6c988701d0aa88cb4d0d299c2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406713"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое руководство. использование технологии ClickOnce для развертывания приложений, которые могут выполняться в нескольких версиях .NET Framework
 Можно развернуть приложение, предназначенное для нескольких версий платформы .NET Framework с помощью технологии развертывания ClickOnce. Это требует создания и обновление манифестов приложения и развертывания.
 
 > [!NOTE]
->  Прежде чем устанавливать приложение на несколько версий платформы .NET Framework, следует убедиться, что приложение работает с несколькими версиями платформы .NET Framework. Среда CLR версии отличается между [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] и .NET Framework 2.0, .NET Framework 3.0 и .NET Framework 3.5.
+> Прежде чем устанавливать приложение на несколько версий платформы .NET Framework, следует убедиться, что приложение работает с несколькими версиями платформы .NET Framework. Среда CLR версии отличается между [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] и .NET Framework 2.0, .NET Framework 3.0 и .NET Framework 3.5.
 
  Этот процесс включает следующие шаги:
 

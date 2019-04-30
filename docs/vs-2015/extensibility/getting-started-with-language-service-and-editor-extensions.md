@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4695e5f866ce9161ca9f90a0f39be441f5d71a44
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421128"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Начало работы с расширениями редактора и языковой службы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60039218"
  Чтобы приступить к созданию расширения редактора, используйте редактор шаблоны проектов, которые устанавливаются как часть пакета SDK для Visual Studio. Пакет SDK для Visual Studio — это загружаемый набор средств, которые упрощают процесс разработки расширений Visual Studio, либо с помощью пакетов VSPackage, либо с помощью Managed Extensibility Framework (MEF).  
   
 > [!NOTE]
->  Дополнительные сведения о Visual Studio SDK, см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
+> Дополнительные сведения о Visual Studio SDK, см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
   
  Мы рекомендуем изучить следующие основные понятия и технологии прежде чем писать собственные расширения редактора.  
   
@@ -36,7 +36,7 @@ ms.locfileid: "60039218"
  В редакторе Visual Studio использует Managed Extensibility Framework (MEF) для управления компонентами и расширения. MEF также позволяет разработчикам легко создавать расширения для ведущего приложения, такие как Visual Studio. В этом варианте определить расширение в соответствии с контракт MEF и экспортировать его в качестве компонента MEF. Ведущее приложение управляет компонентов, их поиск, их регистрация и убедившись, что они применяются в правильном контексте.  
   
 > [!NOTE]
->  Дополнительные сведения о MEF в редакторе, см. в разделе [Managed Extensibility Framework в редакторе](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+> Дополнительные сведения о MEF в редакторе, см. в разделе [Managed Extensibility Framework в редакторе](../extensibility/managed-extensibility-framework-in-the-editor.md).  
   
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Точки расширения редактора Visual Studio и расширения  
  Точки расширения редактора, компоненты MEF, которые можно настраивать и расширять. В некоторых случаях вы расширить эта точка расширения, реализовав интерфейс и экспортировав ее вместе с правильными метаданными. В других случаях просто объявить, что расширение и экспортируйте его как определенный тип.  
@@ -61,7 +61,7 @@ ms.locfileid: "60039218"
  При установке расширения на компьютере, включить двоичные файлы и манифест во вложенной папке, известно, что Visual Studio.  
   
 > [!WARNING]
->  У вас нет беспокоиться о манифесты и всех местах развертывания, если вы используете один из шаблонов расширяемости редактора, включенные в Visual Studio. Шаблоны содержат все необходимое для регистрации и развертывания расширения.  
+> У вас нет беспокоиться о манифесты и всех местах развертывания, если вы используете один из шаблонов расширяемости редактора, включенные в Visual Studio. Шаблоны содержат все необходимое для регистрации и развертывания расширения.  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>Запуск расширений в экспериментальном экземпляре  
  При разработке расширения, развернув ее в папке экспериментальные (в Windows Vista и Windows 7), можно изолировать вашей рабочей версии Visual Studio:  
@@ -84,9 +84,9 @@ ms.locfileid: "60039218"
   
  Также можно создать редактор компонентов MEF из расширения пакета Visual Studio. См Дополнительные сведения:  
   
-- [Пошаговое руководство: Использование командной оболочки в расширении редактора](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [Пошаговое руководство: использование командной оболочки в расширении редактора](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
-- [Пошаговое руководство: Использование сочетаний клавиш в расширении редактора](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [Пошаговое руководство: использование сочетаний клавиш в редакторе расширений](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>См. также  
  [Языковая служба и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md)

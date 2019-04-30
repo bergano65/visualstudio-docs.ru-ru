@@ -12,12 +12,12 @@ ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 443139194a9be59a26a812bd8026270749105a30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d41b075111797a12d68b4aa30c23e3cbacd8058a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432100"
 ---
 # <a name="saving-a-custom-document"></a>Сохранение настраиваемого документа
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60043764"
      В случае пользовательского редактора обмен данными между объектом данных документа и проект является закрытым. Таким образом любые вопросы специальные сохраняемости обрабатываются между этими двумя объектами.  
   
     > [!NOTE]
-    >  Если вы реализуете собственный сохраняемости, необходимо вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> способ сэкономить время. Этот метод проверяет, чтобы убедиться в том, что он безопасен для сохранения файла (например, файл не только для чтения).  
+    > Если вы реализуете собственный сохраняемости, необходимо вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> способ сэкономить время. Этот метод проверяет, чтобы убедиться в том, что он безопасен для сохранения файла (например, файл не только для чтения).  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

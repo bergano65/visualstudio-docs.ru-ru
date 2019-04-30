@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Отладка оптимизированного кода | Документация Майкрософт
+title: Практическое руководство. Отладка оптимизированного кода | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 756b8859c2f13c53eb46a0d9ae9d32836997f70f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387747"
 ---
-# <a name="how-to-debug-optimized-code"></a>Как выполнить отладку оптимизированного кода
+# <a name="how-to-debug-optimized-code"></a>Практическое руководство. отладку оптимизированного кода
 
 > [!NOTE]
 > Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, в меню "Сервис" выберите команду "Импорт и экспорт параметров". Дополнительные сведения см. в разделе [Сброс параметров](../ide/environment-settings.md#reset-settings).
@@ -77,7 +77,7 @@ ms.locfileid: "55035930"
 9. Выберите свойства конфигурации, C/C++, узел командной строки, страницы свойств проекта и добавьте `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` для **Дополнительные параметры** текстовое поле.
 
     > [!WARNING]
-    >  Для использования `/Zo` требуется Visual Studio 2013 с обновлением 3 или более поздняя версия.
+    > Для использования `/Zo` требуется Visual Studio 2013 с обновлением 3 или более поздняя версия.
     >
     >  Добавление параметра `/Zo` приведет к отключению режима [Изменить и продолжить](../debugger/edit-and-continue-visual-csharp.md).
 

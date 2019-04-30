@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dcb55ee2128d237c2be6f57da828ec3c5877cfdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445076"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Практическое руководство. Использование окна потоков GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,4 +108,4 @@ ms.locfileid: "60044522"
 ## <a name="see-also"></a>См. также  
  [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Практическое руководство. Использование окна контроля параллельных данных](../debugger/how-to-use-the-parallel-watch-window.md)   
- [Пошаговое руководство: Отладка приложения C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Пошаговое руководство: отладка приложения C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

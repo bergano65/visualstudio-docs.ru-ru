@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 390742c7b9dea5b39432a5998ec367555700d890
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 75d45f4aacad052d587950e5656dd74f153eba21
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446138"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58991365"
 Можно изменять параметры проекта для настройки отладки [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] в окне **Страницы свойств**, как описано в разделе [Настройка отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, в каком месте окна **Страницы свойств** можно найти параметры, связанные с отладчиком.  
   
 > [!WARNING]
->  Данный раздел не распространяется на приложения для Магазина. См. в разделе [начать сеанс отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+> Данный раздел не распространяется на приложения для Магазина. См. в разделе [начать сеанс отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
 ### <a name="debug-tab"></a>Вкладки отладчика  
   

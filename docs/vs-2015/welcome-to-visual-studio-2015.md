@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383434"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Вас приветствует Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60067733"
 Вас приветствует Visual Studio! У нас есть все необходимое для создания отличных приложений для устройств, настольных приложений, веб-приложений и облачных решений. Теперь можно писать код для iOS, Android и Windows в одной интегрированной среде разработки. Получите доступ к удобной и функциональной среде IntelliSense, воспользуйтесь преимуществами простой навигации по коду, быстрой сборки и развертывания в кратчайшие сроки. Visual Studio повышает продуктивность и позволяет удобно работать самостоятельно и в составе команды.
 
 > [!NOTE]
->  Щелкните здесь, чтобы ознакомиться с заметками о выпуске [обновления 3 для Visual Studio 2015](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
+> Щелкните здесь, чтобы ознакомиться с заметками о выпуске [обновления 3 для Visual Studio 2015](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
 >
->  Щелкните здесь, чтобы ознакомиться с заметками о выпуске [для Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+> Щелкните здесь, чтобы ознакомиться с заметками о выпуске [для Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
  Загрузите [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) бесплатно, чтобы сразу приступить к программированию. Для кросс-платформенной разработки необходимо установить дополнительные пакеты. (Дополнительные возможности можно найти в [других выпусках Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs).)
 

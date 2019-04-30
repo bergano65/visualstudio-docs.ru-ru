@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041e33f04c3f9d376dbc82839e2256b4000147f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445480"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Настройка возможностей пользовательского интерфейса с помощью интерфейсов расширяемости
   Средства разработки Office в Visual Studio предоставляют классы и конструкторы, которые обрабатывают многие сведения о реализации, когда вы используете их для создания настраиваемых панелей задач, настроек ленты и областей форм Outlook в надстройке VSTO. Однако при наличии особых потребностей вы также можете реализовать *интерфейс расширения* для каждого компонента.
@@ -63,7 +63,7 @@ ms.locfileid: "56622934"
 - Класс `TaskPaneUI` предоставляет пользовательский интерфейс панели задач. Атрибуты класса `TaskPaneUI` делают его доступным для COM, что позволяет приложениям Microsoft Office обнаруживать класс. В этом примере пользовательский интерфейс представляет собой пустой интерфейс <xref:System.Windows.Forms.UserControl>, однако вы можете добавить элементы управления, изменив код.
 
   > [!NOTE]
-  >  Чтобы предоставить класс `TaskPaneUI` COM, для проекта необходимо также задать свойство **Регистрация для COM-взаимодействия** .
+  > Чтобы предоставить класс `TaskPaneUI` COM, для проекта необходимо также задать свойство **Регистрация для COM-взаимодействия** .
 
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]

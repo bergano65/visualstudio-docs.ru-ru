@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b68e2f01cae577c7d0913e448aa832b586aa22b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: daf5251aa32f4101bfba21d053d72abceef1eb15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440852"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Пошаговое руководство. Вставка данных в книгу на сервере
   В этом пошаговом руководстве показано, как вставить данные в набор данных, который кэшируется в книге Microsoft Office Excel без запуска Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.
@@ -43,7 +43,7 @@ ms.locfileid: "60071698"
   Несмотря на то, что в этом пошаговом руководстве предполагается, что код выполняется на компьютере разработчика, код, рассмотренные в этом пошаговом руководстве можно использовать на сервере, который не установлен Excel.
 
 > [!NOTE]
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
@@ -251,7 +251,7 @@ ms.locfileid: "60071698"
    - Объект <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> , который используется для доступа к кэшу данных в книге.
 
      > [!NOTE]
-     >  В следующем коде предполагается, что вы используете книге, в которой *.xlsx* расширение файла. Если книгу в проекте с расширением другой файл, измените путь соответственно.
+     > В следующем коде предполагается, что вы используете книге, в которой *.xlsx* расширение файла. Если книгу в проекте с расширением другой файл, измените путь соответственно.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#3)]
      [!code-vb[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#3)]

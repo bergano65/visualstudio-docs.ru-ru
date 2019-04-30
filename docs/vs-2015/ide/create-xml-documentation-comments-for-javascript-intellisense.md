@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b13931746cc9668ea18ead71babd5140e971818
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90fb5b1c9a388d64e191915bbcbbe3de65f6aa99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437630"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Создание комментариев XML-документации для JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "60079283"
  Здесь представлен базового учебника по использованию комментариев XML-документации. Дополнительные сведения об использовании других элементов, таких как [ \<var >](../ide/var-javascript.md) и [ \<значение >](../ide/value-javascript.md)и Дополнительные примеры кода, см. в разделе [комментарии XML-документации ](../ide/xml-documentation-comments-javascript.md). Сведения о предоставлении сведения IntelliSense для асинхронного обратного вызова, таких как `Promise`, см. в разделе [ \<возвращает >](../ide/returns-javascript.md).  
   
 > [!NOTE]
->  Комментарии XML-документации доступны только из файлов, сборок и служб со ссылками.  
+> Комментарии XML-документации доступны только из файлов, сборок и служб со ссылками.  
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>Создание комментариев XML-документации для функции JavaScript  
   
 - В функцию, добавьте [ \<summary >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), и [ \<возвращает >](../ide/returns-javascript.md) элементов и перед каждым элементом, с три косой чертой (/ / /).  
   
     > [!NOTE]
-    >  Каждый элемент должен быть в одной строке.  
+    > Каждый элемент должен быть в одной строке.  
   
      В следующем примере функция JavaScript.  
   
@@ -118,7 +118,7 @@ ms.locfileid: "60079283"
 1. Создайте XML-файл, имеющий комментарии документации в формате MessageBundle альянсе.  
   
     > [!IMPORTANT]
-    >  MessageBundle — это рекомендуемый формат. Этот формат не поддерживается в Microsoft Ajax, или в файлах winmd. Дополнительные сведения об использовании в качестве альтернативы `VSDoc` форматирования, см. в разделе [ \<loc >](../ide/loc-javascript.md).  
+    > MessageBundle — это рекомендуемый формат. Этот формат не поддерживается в Microsoft Ajax, или в файлах winmd. Дополнительные сведения об использовании в качестве альтернативы `VSDoc` форматирования, см. в разделе [ \<loc >](../ide/loc-javascript.md).  
   
      Пример содержимого в файле расширения, который содержит локализованные сведения IntelliSense. Это XML-файл, расположенный в папке для определенного языка и региональных параметров, таких как Япония. Папка должна находиться в том же расположении, что js-файл, который содержит `<loc>` элемент. Имя файла XML-файла должно соответствовать `filename` параметр, указанный в `<loc>` элемент.  
   

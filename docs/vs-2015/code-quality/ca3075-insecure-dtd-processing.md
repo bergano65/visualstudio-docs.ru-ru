@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425441"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075. Обработка небезопасных DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "58991967"
 - Убедитесь, что метод Load() принимает экземпляр XmlReader во всех случаях InnerXml.
 
 > [!NOTE]
->  Это правило может ложно срабатывать в некоторых допустимых экземплярах XmlSecureResolver. Исправление этой проблемы будет выпущено ориентировочно в середине 2016 г.
+> Это правило может ложно срабатывать в некоторых допустимых экземплярах XmlSecureResolver. Исправление этой проблемы будет выпущено ориентировочно в середине 2016 г.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Отключайте правило этого предупреждения, только если уверены, что входные данные получены из доверенного источника.

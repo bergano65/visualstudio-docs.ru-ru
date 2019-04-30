@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411879"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Создание текста во время выполнения с помощью текстовых шаблонов T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ This report is Company Confidential.
 3. Введите имя для файла шаблона.  
   
     > [!NOTE]
-    >  Имя файла шаблона будет использоваться как имя класса в созданном коде. Таким образом он не должен иметь пробелов и знаков препинания.  
+    > Имя файла шаблона будет использоваться как имя класса в созданном коде. Таким образом он не должен иметь пробелов и знаков препинания.  
   
 4. Выберите **Добавить**.  
   
@@ -84,7 +84,7 @@ This report is Company Confidential.
 2. Установите для свойства **средства пользовательских** свойства **TextTemplatingFilePreprocessor**. В обозревателе решений в контекстном меню файла выберите **свойства**.  
   
     > [!NOTE]
-    >  Если свойство уже задано, убедитесь, что это **TextTemplatingFilePreprocessor** и не **TextTemplatingFileGenerator**. Это может произойти, если вы включили файл, уже имеет расширение **.tt**.  
+    > Если свойство уже задано, убедитесь, что это **TextTemplatingFilePreprocessor** и не **TextTemplatingFileGenerator**. Это может произойти, если вы включили файл, уже имеет расширение **.tt**.  
   
 3. Измените расширение имени файла для **.tt**. Несмотря на то, что этот шаг необязателен, его помощью можно избежать, открыв файл в том редакторе.  
   

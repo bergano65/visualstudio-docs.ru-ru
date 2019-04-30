@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6044e9c47a0dcbc95fd1503906cbd81ac8e44526
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422657"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Определение политики блокировки для создания сегментов, доступных только для чтения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ API неизменности [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visual
  Кроме того, как автор доменного языка с, можно определить *политика блокировки.* Политики блокировки определяет, какие виды блокировок разрешено, запрещено или обязательным. Например при публикации DSL, могут потребовать сторонних разработчиков, расширить ее с помощью новых команд. Но можно также использовать политики блокировки для предотвращения их изменений состояния только для чтения указанные части модели.  
   
 > [!NOTE]
->  Политики блокировки можно обойти с помощью отражения. Он предоставляет четкой границы для сторонних разработчиков, но не обеспечивают надежную защиту.  
+> Политики блокировки можно обойти с помощью отражения. Он предоставляет четкой границы для сторонних разработчиков, но не обеспечивают надежную защиту.  
   
  Дополнительные сведения и примеры можно найти по адресу [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkId=186128) веб-сайта.  
   

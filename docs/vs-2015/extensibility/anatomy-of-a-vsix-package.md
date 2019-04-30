@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e46a74651a838a2f9badfc8b9d43d00250ea1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 68ed49b2b22a8302fad0355dde3f937f6b67794b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443936"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Составляющие пакета VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58991333"
  Формат пакета VSIX соответствует стандарту Open Packaging Conventions (OPC). Пакет содержит двоичные файлы и вспомогательные файлы, а также файл [Content_Types] .xml и .vsix файл манифеста. Один пакет VSIX может содержать выходные данные из нескольких проектов или даже несколькими пакетами, которые имеют свои собственные манифестов.  
   
 > [!NOTE]
->  Имена файлов, включенных в пакетах VSIX не должны содержать пробелы, а также символы, которые зарезервированы в универсальных кодов ресурса (URI), как определенные в разделе [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> Имена файлов, включенных в пакетах VSIX не должны содержать пробелы, а также символы, которые зарезервированы в универсальных кодов ресурса (URI), как определенные в разделе [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>Манифест VSIX  
  Манифест VSIX содержит сведения о расширения должны быть установлены и соответствует схеме VSX. Дополнительные сведения см. в разделе [Справочник по схеме 1.0 VSIX расширения](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Пример манифеста VSIX, см. в разделе [элемент PackageManifest (корневой элемент, Схема VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  

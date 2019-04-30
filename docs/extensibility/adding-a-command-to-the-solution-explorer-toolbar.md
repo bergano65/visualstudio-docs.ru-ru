@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6eadc98ccdc0960e4b4bc400a94f06b90fe89bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50b782beeb0496d781bcb6e9bd15f70278c4db73
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410162"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Добавление команды на панели инструментов обозревателя решений
 В этом пошаговом руководстве показано, как добавить кнопку **обозревателе решений** панели инструментов.
@@ -27,7 +27,7 @@ ms.locfileid: "60069501"
  Дополнительные сведения о меню, команды панели инструментов и *.vsct* файлы, см. в разделе [команд, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
->  Используйте таблицы команд XML (*.vsct*) файлы вместо конфигурации таблицы команды (*.ctc*) файлы, чтобы определить, как меню и команды отображаются в пакетов VSPackage. Дополнительные сведения см. в разделе [Visual Studio Command Table (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Используйте таблицы команд XML (*.vsct*) файлы вместо конфигурации таблицы команды (*.ctc*) файлы, чтобы определить, как меню и команды отображаются в пакетов VSPackage. Дополнительные сведения см. в разделе [Visual Studio Command Table (. Файлы Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
  Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).

@@ -27,12 +27,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f622440c5bd0f0d09967eff56479459a4a3bfbb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 506425f4de218e258ca9a86bfad5154cbda5c223
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445041"
 ---
 # <a name="how-to-use-the-registers-window"></a>Практическое руководство. Использование окна регистров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60042879"
  Обобщенный Обзор в принципы использования регистров и окна регистров, см. в разделе [основы отладки: Регистрирует окно](../debugger/debugging-basics-registers-window.md).  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-registers-window"></a>Отображение окна регистров  
   
@@ -55,7 +55,7 @@ ms.locfileid: "60042879"
      Отладчик должен быть запущен либо находиться в режиме приостановки выполнения.  
   
     > [!NOTE]
-    >  Для скриптов и приложений SQL сведения о регистрах недоступны.  
+    > Для скриптов и приложений SQL сведения о регистрах недоступны.  
   
 ## <a name="see-also"></a>См. также  
  [Общие сведения об отладке: Окно "Регистры"](../debugger/debugging-basics-registers-window.md)   

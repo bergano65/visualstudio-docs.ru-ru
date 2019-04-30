@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4635030dad4b43aa27294c8425a70d3f53e5715e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 910ee20cf08c1d5a42e6b6a430f7b51ccddf4925
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429378"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Пошаговое руководство. Получение списка установленных фрагментов кода (реализация прежних версий)
 Фрагмент кода — это часть кода, который может быть вставлен в исходный буфер с помощью команды меню (что позволяет, задав список фрагментов кода) или путем выбора из списка завершения IntelliSense ярлык фрагмента.
@@ -106,7 +106,7 @@ ms.locfileid: "60056852"
 1. Следующий метод отображает порядок вызова `GetSnippets` метод при завершении операции синтаксического анализа. <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> Был вызван после операции синтаксического анализа, которая была запущена с указанием причины <xref:Microsoft.VisualStudio.Package.ParseReason>.
 
 > [!NOTE]
->  `expansionsList` Список массива кэшируется для повышения производительности. Фрагменты кода изменения не отражаются в списке, пока не будет остановлена и перезагружена языковой службы (например, остановив и перезапустив [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
+> `expansionsList` Список массива кэшируется для повышения производительности. Фрагменты кода изменения не отражаются в списке, пока не будет остановлена и перезагружена языковой службы (например, остановив и перезапустив [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
 
 ```csharp
 class TestLanguageService : LanguageService

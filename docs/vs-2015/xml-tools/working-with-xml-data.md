@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aef35ff50080e9b596cc63915da77851b549bc3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438859"
 ---
 # <a name="working-with-xml-data"></a>Работа с XML-данными
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ XML и связанные технологии играют важную рол�
  Visual Studio поддерживает отладку таблиц стилей XSLT. С помощью отладчика можно задавать точки останова в таблице стилей XSLT, переходить в таблицу стилей XSLT из кода и т. д.  
   
 > [!NOTE]
->  Отладка XSLT доступна в версиях Professional Edition и Team Edition.  
+> Отладка XSLT доступна в версиях Professional Edition и Team Edition.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [XML-редактор](../xml-tools/xml-editor.md)  

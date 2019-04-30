@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d20b8938f4d841bb42299b7aa9abaf633f72e7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1f02018ed9ddb6f91f965d28767cde55e4c3e524
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437310"
 ---
 # <a name="introduction-to-wpf"></a>Введение в WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,7 +208,7 @@ End Namespace
   Элемент управления <xref:System.Windows.Controls.DockPanel> позволяет дочерним элементам <xref:System.Windows.Controls.TextBox> сообщать, как они должны быть упорядочены. Для этого в <xref:System.Windows.Controls.DockPanel> реализовано свойство <xref:System.Windows.Controls.DockPanel.Dock%2A> , которое доступно дочерним элементам управления и позволяет каждому из них указывать стиль закрепления.  
   
 > [!NOTE]
->  Свойство, которое реализуется родительским элементом управления для использования дочерними элементами, представляет собой конструкцию WPF, называемую [присоединенным свойством](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
+> Свойство, которое реализуется родительским элементом управления для использования дочерними элементами, представляет собой конструкцию WPF, называемую [присоединенным свойством](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
   
  На рисунке ниже показан результат использования разметки XAML из предыдущего примера.  
   

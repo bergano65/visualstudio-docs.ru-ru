@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc878a7f4469d7f8ef8bf61d0d5f3b721f39b7e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d779294f991786f90faf8dd1de756749b6baffc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444168"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Практическое руководство. Создание проектов рабочих процессов (для прежних версий)
 Выполните следующие шаги для создания проекта [!INCLUDE[wf](../includes/wf-md.md)], ориентированного на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. В этой процедуре используется средство [!INCLUDE[wfd1](../includes/wfd1-md.md)] более ранней версии, поставляемое вместе с [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
@@ -33,7 +33,7 @@ ms.locfileid: "60117750"
 3. Выберите либо **.NET Framework 3.0** параметр или **.NET Framework 3.5** параметр в раскрывающемся списке в верхней части **новый проект** окно, чтобы открыть конструктор прежних версий.  
   
     > [!NOTE]
-    >  Параметр по умолчанию в [!INCLUDE[vs2010](../includes/vs2010-md.md)] — **.NET Framework 4**. Он предназначен для создания приложений [!INCLUDE[wf](../includes/wf-md.md)], работающих на платформе [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)], и не использует конструктор прежних версий.  
+    > Параметр по умолчанию в [!INCLUDE[vs2010](../includes/vs2010-md.md)] — **.NET Framework 4**. Он предназначен для создания приложений [!INCLUDE[wf](../includes/wf-md.md)], работающих на платформе [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)], и не использует конструктор прежних версий.  
   
 4. В **типы проектов** панели выберите проекты Visual C# или проекты Visual Basic, а затем выберите **рабочего процесса**.  
   

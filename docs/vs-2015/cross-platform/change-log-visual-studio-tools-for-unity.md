@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 99a254798ad3e222401a8346df454a70699c7feb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad20d4678c24458582f80cc819e6f6a651fb2790
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443021"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Журнал изменений (набор средств Visual Studio для Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -401,7 +401,7 @@ ms.locfileid: "60107545"
 - Исправлена обработка частей тем Visual Studio.
 
 > [!IMPORTANT]
->  C# является преобладающим языком в экосистеме Unity: новые примеры ресурсов написаны на C#, документация Unity будет по умолчанию создаваться на C# — мы удалили нашу базовую поддержку UnityScript и Boo, чтобы активнее сфокусироваться на возможностях C#. В результате теперь решения VSTU создаются только на C# и загружаются гораздо быстрее.
+> C# является преобладающим языком в экосистеме Unity: новые примеры ресурсов написаны на C#, документация Unity будет по умолчанию создаваться на C# — мы удалили нашу базовую поддержку UnityScript и Boo, чтобы активнее сфокусироваться на возможностях C#. В результате теперь решения VSTU создаются только на C# и загружаются гораздо быстрее.
 
 ## <a name="182"></a>1.8.2
  Выпущено 07.01.2014 г.
@@ -740,7 +740,7 @@ ms.locfileid: "60107545"
 - Исправлено преобразование PDB-символов в Unity 4.
 
 > [!IMPORTANT]
->  Вследствие поддержки Visual Studio 2012 нам пришлось переименовать несколько файлов, а некоторые другие переместить. Пакет UnityVS для импорта Unity теперь называется UnityVS 2010 или UnityVS 2012 (для Visual Studio 2010 или Visual Studio 2012 соответственно). Эта версия требует пересоздать файлы проекта UnityVS.
+> Вследствие поддержки Visual Studio 2012 нам пришлось переименовать несколько файлов, а некоторые другие переместить. Пакет UnityVS для импорта Unity теперь называется UnityVS 2010 или UnityVS 2012 (для Visual Studio 2010 или Visual Studio 2012 соответственно). Эта версия требует пересоздать файлы проекта UnityVS.
 
 ## <a name="106---internal-build"></a>1.0.6 — внутренняя сборка
  Выпущено 12.09.2012 г.

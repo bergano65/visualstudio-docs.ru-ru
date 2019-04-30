@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca4e817ae33d3129259de619e07bf256e6f544bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b392c962a2ddbed57ca1af934c0ef9d8b5175595
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418398"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Как добавить элементы пользовательского интерфейса в пакеты VSPackage
 Пакет VSPackage можно добавить элементы пользовательского интерфейса (UI), например меню, панелей инструментов и инструментов для Visual Studio с помощью параметра *.vsct* файла.
@@ -63,7 +63,7 @@ ms.locfileid: "60092322"
  Элемент верхнего уровня `Symbols` раздел [элемент GuidSymbol](../../extensibility/guidsymbol-element.md). `GuidSymbol` элементы сопоставляются имена идентификаторов GUID, используемых в интегрированной среде разработки для определения пакетов и их частей компонента.
 
 > [!NOTE]
->  Идентификаторы GUID создается автоматически с помощью шаблона пакета Visual Studio. Можно также создать уникальный идентификатор GUID, щелкнув **создать GUID** на **средства** меню.
+> Идентификаторы GUID создается автоматически с помощью шаблона пакета Visual Studio. Можно также создать уникальный идентификатор GUID, щелкнув **создать GUID** на **средства** меню.
 
  Первый `GuidSymbol` элемент, `guid<PackageName>Pkg`, — это GUID самого пакета. Это идентификатор GUID, который используется средой Visual Studio для загрузки пакета. Как правило он не имеет дочерних элементов.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424688"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Пошаговое руководство. Создание классов LINQ to SQL с помощью однотабличного наследования (реляционный конструктор объектов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60111978"
 1. В **обозревателя серверов**/**обозреватель баз данных**, щелкните правой кнопкой мыши **таблиц** узел и нажмите кнопку **добавить новую таблицу**.  
   
     > [!NOTE]
-    >  Может быть использована база данных Northwind или любая другая, к которой можно добавить таблицу.  
+    > Может быть использована база данных Northwind или любая другая, к которой можно добавить таблицу.  
   
 2. В Конструкторе таблиц добавьте в таблицу следующие столбцы:  
   
@@ -96,7 +96,7 @@ ms.locfileid: "60111978"
 2. Назовите проект **InheritanceWalkthrough**.  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] поддерживается в проектах Visual Basic и C#. Создайте новый проект на одном из этих языков.  
+    > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] поддерживается в проектах Visual Basic и C#. Создайте новый проект на одном из этих языков.  
   
 3. Нажмите кнопку **приложение Windows Forms** шаблона и нажмите кнопку **ОК**. Дополнительные сведения см. в разделе [клиентских приложений](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   

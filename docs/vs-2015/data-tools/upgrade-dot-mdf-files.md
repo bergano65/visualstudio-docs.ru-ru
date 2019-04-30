@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424912"
 ---
 # <a name="upgrade-mdf-files"></a>Обновление MDF-файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ ms.locfileid: "60079912"
   Может также потребоваться обновить файл базы данных, которая была создана с помощью более ранней версии SQL Server Express или LocalDB Если версия файла не совместима с экземпляром SQL Server Express или LocalDB, установленную в настоящее время. Чтобы устранить проблему, Visual Studio предложит обновить файл.  
   
 > [!IMPORTANT]
->  Мы рекомендуем использовать резервную копию файла базы данных перед его обновлением.  
+> Мы рекомендуем использовать резервную копию файла базы данных перед его обновлением.  
   
 > [!WARNING]
->  Если вы обновляете MDF-файла, который был создан в LocalDB 2014 г. (версия 12) 32-разрядная версия, до 2016 LocalDB (V13), вы не сможете снова откройте файл в 32-разрядной версии LocalDB.  В обновлении 2 для LocalDB V13 — только 64-разрядная.  
+> Если вы обновляете MDF-файла, который был создан в LocalDB 2014 г. (версия 12) 32-разрядная версия, до 2016 LocalDB (V13), вы не сможете снова откройте файл в 32-разрядной версии LocalDB.  В обновлении 2 для LocalDB V13 — только 64-разрядная.  
   
  Перед обновлением базы данных, учитывайте указанные ниже критерии.  
   

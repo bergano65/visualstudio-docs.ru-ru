@@ -8,12 +8,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e23e242060eea31ae79fd8a3998fb4ee5d734647
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc6ed31f96fc2021d0d9e104692f0440cfb78a5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433742"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Вопросы и ответы Преобразование надстроек в расширения VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,14 +21,14 @@ ms.locfileid: "60048679"
 Надстройки устарели. Чтобы сделать новое расширение Visual Studio, вам потребуется создать расширение VSIX. Ниже приведены ответы на некоторые часто задаваемые вопросы о конвертировании надстройки Visual Studio с расширением VSIX.  
   
 > [!WARNING]
->  Начиная с Visual Studio 2015 для проектов C# и Visual Basic, можно использовать проект VSIX и добавленных шаблонов элементов для команды меню, окна инструментов и пакетов VSPackage. Дополнительные сведения см. в разделе [новые возможности пакета SDK для Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+> Начиная с Visual Studio 2015 для проектов C# и Visual Basic, можно использовать проект VSIX и добавленных шаблонов элементов для команды меню, окна инструментов и пакетов VSPackage. Дополнительные сведения см. в разделе [новые возможности пакета SDK для Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
   
 > [!IMPORTANT]
->  Во многих случаях можно просто передать код надстройки в проект VSIX с элементом проекта VSPackage. Чтобы получить объект автоматизации DTE, следует вызвать <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> в методе <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+> Во многих случаях можно просто передать код надстройки в проект VSIX с элементом проекта VSPackage. Чтобы получить объект автоматизации DTE, следует вызвать <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> в методе <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
 >   
->  `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
+> `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
 >   
->  Дополнительные сведения см. в разделе [как запустить код надстройки в VSPackage?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) ниже.  
+> Дополнительные сведения см. в разделе [как запустить код надстройки в VSPackage?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) ниже.  
   
 ## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>Какое программное обеспечение требуется для разработки расширений VSIX  
  Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

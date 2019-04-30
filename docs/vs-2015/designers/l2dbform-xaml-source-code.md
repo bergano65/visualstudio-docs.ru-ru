@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 11b35534641ec01c9d622b35caacf2e68162e4e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f08045a83849bdbd5bf6fb51287a66806d3bf4d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403487"
 ---
 # <a name="l2dbformxaml-source-code"></a>Исходный код L2DBForm.xaml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="description"></a>Описание  
   
 > [!NOTE]
->  Рекомендуется скопировать расположенный ниже код в редактор кода, например редактор исходного кода C# в Visual Studio, чтобы было легче отслеживать номера строк.  
+> Рекомендуется скопировать расположенный ниже код в редактор кода, например редактор исходного кода C# в Visual Studio, чтобы было легче отслеживать номера строк.  
   
 ### <a name="code"></a>Код  
   
@@ -241,6 +241,6 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="comments"></a>Комментарии  
  Сведения об исходном коде C# для обработчиков событий, связанных с элементами интерфейса WPF, см. в статье [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md) (Исходный код L2DBForm.xaml.cs).  
   
-## <a name="see-also"></a>См. также раздел  
- [Walkthrough: LinqToXmlDataBinding Example](../designers/walkthrough-linqtoxmldatabinding-example.md)  (Пошаговое руководство. Пример LinqToXmlDataBinding)  
+## <a name="see-also"></a>См. также  
+ [Пошаговое руководство: Пример LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)

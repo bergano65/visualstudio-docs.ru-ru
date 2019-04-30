@@ -12,12 +12,12 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31a9b093fc912be9db573b89d8c6b09e927c8b87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc671963854e4fa0c2af763de5000fac82a839b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432519"
 ---
 # <a name="saving-data-in-project-files"></a>Сохранение данных в файлах проектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,7 +208,7 @@ ms.locfileid: "60048727"
     ```  
   
 > [!NOTE]
->  Все примеры кода, приведенные в этом разделе являются частью более крупного примера [примеры VSSDK](../misc/vssdk-samples.md).  
+> Все примеры кода, приведенные в этом разделе являются частью более крупного примера [примеры VSSDK](../misc/vssdk-samples.md).  
   
 ## <a name="see-also"></a>См. также  
  [Сохранение данных в файле проекта MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

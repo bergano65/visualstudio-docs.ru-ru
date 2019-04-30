@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88db1e11286c022552419fa70bb6847d36035c36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2fe405ea62562a9e7eb90948d92fcd5075887c8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420499"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Реализация языковой службы прежних версий
 Классы в managed package framework (MPF) можно использовать для реализации прежних версий языковой службы, которая поддерживает широкий спектр функций, например выделение синтаксиса, парные фигурные скобки и завершение IntelliSense.
@@ -23,7 +23,7 @@ ms.locfileid: "56602862"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы подробнее узнать о новых способах реализации языковой службы, см. в разделе [редактора и языковой службы расширения](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
 
 ## <a name="in-this-section"></a>В этом разделе
 - [Обзор языковой службы прежних версий](../../extensibility/internals/legacy-language-service-overview.md)
@@ -42,11 +42,11 @@ ms.locfileid: "56602862"
 
  Описывает два средства синтаксического анализа, которые необходимы для реализации всех возможностей службы языка с помощью MPF.
 
-- [Пошаговое руководство: Создание языковой службы прежних версий](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)
+- [Пошаговое руководство: создание языковой службы прежних версий](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)
 
  Предоставляет основные шаги, необходимые для реализации службы языка MPF в VSPackage.
 
-- [Пошаговое руководство: Получение списка фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+- [Пошаговое руководство: получение списка установленных фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
  Демонстрирует методы получения списка фрагментов кода.
 

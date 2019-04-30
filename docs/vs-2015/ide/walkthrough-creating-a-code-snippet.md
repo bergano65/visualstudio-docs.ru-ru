@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee4e0c6fd686398ae89b5c079d6efc1297a19f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b23640abec76f04199abe6e64888c641940e7a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388342"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Пошаговое руководство. Создание фрагмента кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60109813"
 Фрагмент кода можно создать всего в несколько шагов. Все, что необходимо сделать, — это создать XML-файл, заполнить соответствующие элементы и добавить в него код. В код можно также добавить ссылки и параметры замены. Вы можете добавить фрагмент в папку установки Visual Studio с помощью кнопки "Импорт" в диспетчере фрагментов кода (**Сервис/Диспетчер фрагментов кода**).  
   
 > [!TIP]
->  Сведения о способах написания фрагментов кода проще, поиск на веб-сайте CodePlex средства сообщества, например [Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033).  
+> Сведения о способах написания фрагментов кода проще, поиск на веб-сайте CodePlex средства сообщества, например [Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033).  
   
 ## <a name="snippet-template"></a>Шаблон фрагмента  
  Ниже приведен простой шаблон фрагмента.  

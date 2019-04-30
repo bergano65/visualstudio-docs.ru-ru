@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5c357fa5587d4fc5bf8c1752e20e7e0aa9df9835
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944779"
 ---
 # <a name="iprocessdebugmanagerremoveapplication"></a>IProcessDebugManager::RemoveApplication
 Удаляет приложение из выполняемого список приложений.  

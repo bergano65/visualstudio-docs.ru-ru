@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00a5194abfcabac37e49a2e35ed025fd0f85dbe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424817"
 ---
 # <a name="validate-data-in-datasets"></a>Проверка данных в наборах данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "60047141"
   По умолчанию каждое изменение столбцом инициирует четыре события. Во-первых, <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.ColumnChanged> события для конкретного столбца, которое необходимо изменить. Далее идут <xref:System.Data.DataTable.RowChanging> и <xref:System.Data.DataTable.RowChanged> события. Если несколько изменения вносятся в строку, событий возникает для каждого изменения.  
   
 > [!NOTE]
->  Строки данных <xref:System.Data.DataRow.BeginEdit%2A> метод приводит к отключению <xref:System.Data.DataTable.RowChanging> и <xref:System.Data.DataTable.RowChanged> события после каждого изменения отдельных столбцов. В этом случае событие не инициируется до <xref:System.Data.DataRow.EndEdit%2A> метод был вызван, когда <xref:System.Data.DataTable.RowChanging> и <xref:System.Data.DataTable.RowChanged> событий только один раз. Дополнительные сведения см. в разделе [отключение ограничений при заполнении набора данных](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+> Строки данных <xref:System.Data.DataRow.BeginEdit%2A> метод приводит к отключению <xref:System.Data.DataTable.RowChanging> и <xref:System.Data.DataTable.RowChanged> события после каждого изменения отдельных столбцов. В этом случае событие не инициируется до <xref:System.Data.DataRow.EndEdit%2A> метод был вызван, когда <xref:System.Data.DataTable.RowChanging> и <xref:System.Data.DataTable.RowChanged> событий только один раз. Дополнительные сведения см. в разделе [отключение ограничений при заполнении набора данных](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
  Выбор события зависит от того, насколько детальным необходимо проверки. Если важно перехватить ошибку сразу же при изменении столбца, проверкой сборки с помощью <xref:System.Data.DataTable.ColumnChanging> событий. В противном случае используйте <xref:System.Data.DataTable.RowChanging> событие, которое может перехватывать сразу несколько ошибок. Кроме того, если данные структурированы, чтобы проверки значения одного столбца на основе содержимого другого столбца, затем выполните проверку во время <xref:System.Data.DataTable.RowChanging> событий.  
   
@@ -86,7 +86,7 @@ ms.locfileid: "60047141"
 ## <a name="validate-data-during-column-changes"></a>Проверка данных в ходе изменения столбцов  
   
 > [!NOTE]
->  **Конструктор наборов данных** создает разделяемый класс, в какие проверки логику можно добавить к набору данных. Набор данных созданного конструктором не удалить или изменить любой код в разделяемом классе.  
+> **Конструктор наборов данных** создает разделяемый класс, в какие проверки логику можно добавить к набору данных. Набор данных созданного конструктором не удалить или изменить любой код в разделяемом классе.  
   
  Можно проверять данные при изменении значения в столбце данных, отвечая на <xref:System.Data.DataTable.ColumnChanging> событий. При возникновении это событие передает аргумент события (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>), содержащий значение, предлагаемых для текущего столбца. На основе содержимого из `e.ProposedValue`, вы можете:  
   
@@ -108,7 +108,7 @@ ms.locfileid: "60047141"
 2. Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие автоматически создает <xref:System.Data.DataTable.RowChanging> обработчик событий <xref:System.Data.DataTable> в файле разделяемого класса набора данных.  
   
     > [!TIP]
-    >  Дважды щелкните слева от имени таблицы, чтобы создать обработчик событий изменения строки. Если дважды щелкнуть имя таблицы, его можно изменить.  
+    > Дважды щелкните слева от имени таблицы, чтобы создать обработчик событий изменения строки. Если дважды щелкнуть имя таблицы, его можно изменить.  
   
      [!code-vb[VbRaddataValidating#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataValidating/VB/NorthwindDataSet.vb#3)]  
   
@@ -119,7 +119,7 @@ ms.locfileid: "60047141"
 2. Дважды щелкните заголовок таблицы, которую вы хотите проверить. Это действие создает файл разделяемого класса для <xref:System.Data.DataTable>.  
   
     > [!NOTE]
-    >  **Конструктор наборов данных** не создает автоматически обработчик событий для <xref:System.Data.DataTable.RowChanging> событий. Необходимо создать метод для обработки <xref:System.Data.DataTable.RowChanging> событие, а также выполнения код, чтобы подключить событие в методе инициализации таблицы.  
+    > **Конструктор наборов данных** не создает автоматически обработчик событий для <xref:System.Data.DataTable.RowChanging> событий. Необходимо создать метод для обработки <xref:System.Data.DataTable.RowChanging> событие, а также выполнения код, чтобы подключить событие в методе инициализации таблицы.  
   
 3. Скопируйте следующий код в разделяемый класс:  
   
@@ -147,7 +147,7 @@ ms.locfileid: "60047141"
  Каждая строка в таблице данных имеет <xref:System.Data.DataRow.RowState%2A> свойство, которое отслеживает текущее состояние этой строки, используя значения в <xref:System.Data.DataRowState> перечисления. Может возвращать измененных строк из таблицы набора данных или данных, вызвав `GetChanges` метод <xref:System.Data.DataSet> или <xref:System.Data.DataTable>. Убедитесь, что существуют изменения, перед вызовом метода `GetChanges` путем вызова <xref:System.Data.DataSet.HasChanges%2A> метод набора данных. Дополнительные сведения об использовании <xref:System.Data.DataSet.HasChanges%2A> см. в разделе [Практическое руководство. Проверка измененных строк](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
   
 > [!NOTE]
->  После фиксации изменений в таблицу данных или набора данных (путем вызова <xref:System.Data.DataSet.AcceptChanges%2A> метод), `GetChanges` метод не возвращает никаких данных. Если приложению для обработки измененных строк, необходимо обработать изменения перед вызовом `AcceptChanges` метод.  
+> После фиксации изменений в таблицу данных или набора данных (путем вызова <xref:System.Data.DataSet.AcceptChanges%2A> метод), `GetChanges` метод не возвращает никаких данных. Если приложению для обработки измененных строк, необходимо обработать изменения перед вызовом `AcceptChanges` метод.  
   
  Вызов <xref:System.Data.DataSet.GetChanges%2A> метод таблицы набора данных или данных возвращает новую таблицу данных или набора данных, которая содержит только записи, которые были изменены. Если вы хотите получить определенные записи — например, только новые записи или только измененные записи — можно передать значение из <xref:System.Data.DataRowState> перечисления в качестве параметра `GetChanges` метод.  
   
@@ -189,7 +189,7 @@ ms.locfileid: "60047141"
  При внесении изменений в строки данных, набора данных сохраняет исходные (<xref:System.Data.DataRowVersion>) и new (<xref:System.Data.DataRowVersion>) версии строки. Например, перед вызовом `AcceptChanges` метод, приложение может получить доступ в разных версиях запись (как определено в <xref:System.Data.DataRowVersion> перечисления) и соответственно обрабатывать изменения.  
   
 > [!NOTE]
->  Существуют различные версии строки, только в том случае, после его изменения и до ее `AcceptChanges` был вызван метод. После `AcceptChanges` был вызван метод, текущие и исходные версии ничем не отличаются.  
+> Существуют различные версии строки, только в том случае, после его изменения и до ее `AcceptChanges` был вызван метод. После `AcceptChanges` был вызван метод, текущие и исходные версии ничем не отличаются.  
   
  Передача <xref:System.Data.DataRowVersion> значение вместе с индексом столбца (или имя столбца в виде строки) возвращает значение из версии конкретной строки этого столбца. Измененный столбец определяется во время <xref:System.Data.DataTable.ColumnChanging> и <xref:System.Data.DataTable.ColumnChanged> события. Это хорошая возможность проверить различные версии строк для целей проверки. Тем не менее если ограничения временно приостановлена, эти события не будет вызываться, необходимо программным образом определите, какие столбцы были изменены. Это можно сделать с помощью итерации <xref:System.Data.DataTable.Columns%2A> сбора и сравнения различных <xref:System.Data.DataRowVersion> значения.  
   

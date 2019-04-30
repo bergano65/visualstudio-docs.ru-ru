@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417163"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Получить данные шрифта и цвета для цветовое выделение текста
 Процесс, который выполняет визуализацию или отображает цветом текста в элементы пользовательского интерфейса (UI) зависит от типа проекта, технологий и разработчиков предпочтений. **Шрифты и цвета** страницу свойств сохраняет параметры.
@@ -24,7 +24,7 @@ ms.locfileid: "60042411"
  Большинство реализаций, которые отображают цветом текст требуется <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> и связанные интерфейсы для параметры отображения представления, получение и сохранение текста.
 
 > [!NOTE]
->  При настройке базового редактора (который поддерживает **EditorCategory текст**), рекомендуется использовать технологию выделение цветом в языковой службе. Дополнительные сведения см. в разделе [Общие сведения о шрифте и цвете](../extensibility/font-and-color-overview.md).
+> При настройке базового редактора (который поддерживает **EditorCategory текст**), рекомендуется использовать технологию выделение цветом в языковой службе. Дополнительные сведения см. в разделе [Общие сведения о шрифте и цвете](../extensibility/font-and-color-overview.md).
 
 ## <a name="get-default-font-and-color-information"></a>Получить данные шрифта и цвета по умолчанию
  Все **шрифты и цвета** следует указать параметры окна, отображающие текст в **отображаемые элементы** одного **категории**. Дополнительные сведения см. в разделе [шрифты и цвета, среда, диалоговое окно «Параметры»](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
