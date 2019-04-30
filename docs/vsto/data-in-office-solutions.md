@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bb8cf959d5f1d915f5614dc2b92d74a603493f7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955980"
 ---
 # <a name="data-in-office-solutions"></a>Данные в решениях Office
   Многие решения Office позволяют пользователям извлекать или изменять данные. При создании решений Office с помощью среды Visual Studio существует несколько различных способов работы с данными.

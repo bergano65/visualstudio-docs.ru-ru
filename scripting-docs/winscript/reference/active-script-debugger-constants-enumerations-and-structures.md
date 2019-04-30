@@ -16,24 +16,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b287001371b80612a2b09a9672e59aff51309cc9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997340"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>Константы, перечисления и структуры отладчика активных скриптов
 Следующие константы, перечисления и структуры используются активными интерфейсами отладки.  
   
 ## <a name="constants-enumerations-and-structures"></a>Константы, перечисления и структуры  
   
-|Константы|Описание:|  
+|Константы|Описание|  
 |---------------|-----------------|  
 |[Константы APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)|Показывают текущее состояние отладки для приложений и потоков.|  
 |[Константы DEBUG_TEXT](../../winscript/reference/debug-text-constants.md)|Флаги параметров, используемых во время [IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md).|  
 |[Константы TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)|Описывают атрибуты документа.|  
   
-|Перечисления|Описание:|  
+|Перечисления|Описание|  
 |------------------|-----------------|  
 |[Константы APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)|Показывают текущее состояние отладки для приложений и потоков.|  
 |[Перечисление APPLICATION_NODE_EVENT_FILTER](../../winscript/reference/application-node-event-filter-enumeration.md)|Показывает узлы, которые должны быть исключены с помощью фильтра.|  
@@ -49,7 +49,7 @@ ms.locfileid: "58153101"
 |[Перечисление SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md)|Задает вид создаваемого исключения.|  
 |[SOURCE_TEXT_ATTR Constants](../../winscript/reference/source-text-attr-enumeration.md)|Описывают атрибуты отдельного символа исходного текста.|  
   
-|Структуры|Описание:|  
+|Структуры|Описание|  
 |----------------|-----------------|  
 |[Структура DebugStackFrameDescriptor](../../winscript/reference/debugstackframedescriptor-structure.md)|Перечисляет кадры стека и объединяет результаты нескольких перечислителей в одном потоке.|  
 |[Структура JS_NATIVE_FRAME](../../winscript/reference/js-native-frame-structure.md)|Представляет кадр стека.|  

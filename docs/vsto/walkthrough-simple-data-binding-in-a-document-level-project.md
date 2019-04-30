@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981066"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Пошаговое руководство. Простая привязка данных в проекте уровня документа
   В этом пошаговом руководстве демонстрируются основные принципы привязки данных в проекте уровня документа. Одного поля данных в базе данных SQL Server привязан к именованному диапазону в Microsoft Office Excel. Также показаны способы добавления элементов управления, которые позволяют прокручивать все записи в таблице.

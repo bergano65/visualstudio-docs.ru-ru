@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b9ddd9fb24aa83a6027d6d705de6a748a96b2e28
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979114"
 ---
 # <a name="idebugpropertyenumtypeall-interface"></a>Интерфейс IDebugPropertyEnumType_All
 `IDebugPropertyEnumType` Интерфейсы определяются таким образом, каждый из их идентификаторы IID можно передать в качестве фильтра для `IDebugProperty::EnumMembers` при запросе соответствующим перечислителем.  

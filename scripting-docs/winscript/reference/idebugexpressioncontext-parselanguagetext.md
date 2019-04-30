@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 50f9f398b9193c776f8e2a823b78ce7b8da438b1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946281"
 ---
 # <a name="idebugexpressioncontextparselanguagetext"></a>IDebugExpressionContext::ParseLanguageText
 Создает выражение отладки для указанного текста.  
@@ -52,7 +52,7 @@ HRESULT ParseLanguageText(
  `dwFlags`  
  [in] Сочетание следующих флагов отладки текст:  
   
-|Константа|Значение|Описание:|  
+|Константа|Значение|Описание|  
 |--------------|-----------|-----------------|  
 |DEBUG_TEXT_ISEXPRESSION|0x00000001|Указывает, что текст представляет собой выражение, в отличие от инструкции. Этот флаг может влиять на анализе текста в некоторых языках.|  
 |DEBUG_TEXT_RETURNVALUE|0x00000002|Если возвращаемое значение, он будет использоваться в вызывающем объекте.|  

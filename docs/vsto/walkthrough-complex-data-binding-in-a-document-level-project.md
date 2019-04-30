@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981680"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Пошаговое руководство. Сложная привязка данных в проекте уровня документа
   В этом пошаговом руководстве демонстрируются основные принципы сложная привязка данных в проекте уровня документа. Можно привязать несколько ячеек на листе Microsoft Office Excel к полям в базе данных "Борей" SQL Server.
