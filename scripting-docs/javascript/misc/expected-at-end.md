@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6179d628c8da58cffa76020f04e3fd1df3396b5d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935306"
 ---
 # <a name="expected-end"></a>Ожидалось "\@окончания"
 Предпринята попытка создать блока условно скомпилированного кода, но не содержал <strong>@end</strong> инструкции в конце. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] инструкции можно условно компилировать путем заключения в <strong>@if/ @end</strong> блока.  

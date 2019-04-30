@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 18c2d5396b01c238213d494c1452e8919ea9cdd6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971333"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Практическое руководство. Определение дескриптора типа параметра
   Дескриптор типа содержит свойства, описывающие тип данных параметра. Дескриптор типа может определить поле, сущность или коллекцию сущностей. Дополнительные сведения см. в разделе [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).

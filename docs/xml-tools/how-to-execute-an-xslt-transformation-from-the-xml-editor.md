@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e84b1c6303da4c0db39da1b3585a7d4548560feb
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001936"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Практическое руководство. Выполнение преобразования XSLT в редакторе XML
 
@@ -31,7 +31,7 @@ ms.locfileid: "57526377"
 
     - Добавьте в XML-документ инструкцию по обработке `xml-stylesheet`. Например добавьте следующую строку в прологе документа: `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
-       - или -
+       -или-
 
     - Добавление таблицы стилей XSLT с помощью **свойства** окна. Откройте в редакторе XML-файл, щелкните правой кнопкой мыши в редакторе и выберите **свойства**. В **свойства** окна в **таблицы стилей** поле и нажмите кнопку обзора (...). Выберите таблицу стилей XSLT, а затем выберите **откройте**.
 

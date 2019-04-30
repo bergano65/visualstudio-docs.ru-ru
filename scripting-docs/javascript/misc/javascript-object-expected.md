@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007514"
 ---
 # <a name="javascript-object-expected"></a>Ожидался объект JavaScript
 Была предпринята попытка передать отличный от[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объект встроенную функцию, ожидающую [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] объекта. Различные встроенные функции требуются объекты, определенные в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (в отличие от объектов, определенных внешний компонент как элемент управления или узла).  

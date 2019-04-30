@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972308"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Глобализация и локализация решений Excel
   Этот раздел содержит информацию об особенностях решений Microsoft Office Excel, которые будут выполняться на компьютерах, имеющих настройки Windows, отличные от настроек в английском формате. Большинство аспектов глобализации и локализации решений Microsoft Office аналогичны аспектам, возникающим при создании других типов решений с помощью Visual Studio. Общие сведения см. в разделе [Globalize и локализация приложений](../ide/globalizing-and-localizing-applications.md).

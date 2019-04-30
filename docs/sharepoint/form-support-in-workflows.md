@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 704e08524bb9aaf014dbd29e7df7361a7e1bbefe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967413"
 ---
 # <a name="form-support-in-workflows"></a>Поддержка форм в рабочих процессах
   Четыре типа форм можно использовать в рабочем процессе: ассоциации, инициации, задач и изменения. Эти типы форм могут основываться на форме ASPX или форму InfoPath. Уровень поддержки, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] предоставляет для определенной форме, зависит от нескольких факторов, которые описаны в следующих таблицах. Дополнительные сведения о типах форм рабочего процесса, см. в разделе [Workflow Forms Overview](http://go.microsoft.com/fwlink/?LinkId=185228).

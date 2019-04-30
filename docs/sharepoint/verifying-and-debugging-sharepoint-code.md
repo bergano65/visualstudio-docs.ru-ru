@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b57e07245631d37594d66ea7907b16efd817b2b
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008259"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Проверка и отладка кода SharePoint
 С помощью IntelliTrace и модульного тестирования вы сможете гораздо легче отлаживать свои решения SharePoint и проверять, что каждый метод в них работает правильно. Эти функции можно использовать для проектов SharePoint в Visual Studio, выполнив те же процедуры, что и для других типов проектов.
@@ -40,7 +40,7 @@ ms.locfileid: "54869493"
 
 ## <a name="related-articles"></a>Связанные статьи
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[IntelliTrace](../debugger/intellitrace.md)|Описаны более простые способы отладки решений Visual Studio с помощью IntelliTrace.|
 |[Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|Описывает использование IntelliTrace для поиска ошибок кода в проекте SharePoint.|
