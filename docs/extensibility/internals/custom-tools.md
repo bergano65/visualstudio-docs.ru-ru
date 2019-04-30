@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc6093d9bdbd780e1c8ddeb941f5f80dd479f77a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910158"
 ---
 # <a name="custom-tools"></a>Пользовательские инструменты
 *Пользовательские средства* позволяют связать с элементом в проекте это средство и запускать это средство, при каждом сохранении файла. Некоторые пользовательские инструменты, иногда называют *генераторов одного файла*, часто используются для реализации преобразователей, создающих код на основе данных и наоборот. Например, создать генераторов одного файла [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] исходный код из *.settings* и *.resx* файлов. Созданный исходный код предоставляет строго типизированный доступ к данным в *.settings* и *.resx* файлов. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] И [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] типов проектов поддерживают пользовательские средства; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] типы проектов — нет. Собственные типы проектов также может поддерживать пользовательские инструменты.

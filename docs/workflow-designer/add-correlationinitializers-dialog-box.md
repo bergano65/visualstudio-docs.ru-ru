@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21c030295d325ea1ee4d546356f8cda5ef6ffd3f
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946655"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Диалоговое окно «Добавление инициализаторов корреляции»
 
@@ -30,7 +30,7 @@ ms.locfileid: "57869906"
 
 В следующей таблице описаны элементы пользовательского интерфейса (UI) **Добавление инициализаторов корреляции** диалоговое окно:
 
-|Элемент пользовательского интерфейса|Описание:|
+|Элемент пользовательского интерфейса|Описание|
 |-|-----------------|
 |**Добавить инициализатор**|Нажмите кнопку **добавить initialize** служит для добавления в коллекцию дополнительный инициализатор.|
 |**Тип корреляции**|Указывает тип инициализатора корреляции. Может быть выбран один из четырех типов.<br /><br /> 1. Инициализатор корреляции обратного вызова для указания <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>.<br />2. Инициализатор контекстной корреляции для указания <xref:System.ServiceModel.Activities.CorrelationInitializer>.<br />3. Инициализатор корреляции «запрос-ответ» для указания <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer>.<br />4. Инициализатор корреляции запросов для указания <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.<br /><br /> Чтобы изменить **типа корреляции**<br /><br /> 1. Вкладки в указанную строку в **добавить инициализатор** DataGrid.<br />2. Чтобы установить фокус на **CorrelationTypeComboBox**, нажмите клавишу **Ctrl**+**вкладке**.<br />3. Нажмите клавиши Alt + Стрелка вниз всплывает **ComboBox** и изменить его.|

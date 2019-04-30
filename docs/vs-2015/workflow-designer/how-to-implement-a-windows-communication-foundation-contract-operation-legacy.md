@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 56866e084eac7dc3a3ac2a0b80baaa2533ccd285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931181"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Практическое руководство. Реализация операции контракта Windows Communication Foundation (для прежних версий)
 В этом разделе описывается реализация операции контракта [!INCLUDE[indigo1](../includes/indigo1-md.md)] с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, ориентированного на работу с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -29,7 +29,7 @@ ms.locfileid: "58992402"
   
    - Нажмите кнопку **добавить контракт** в правом верхнем углу диалогового окна. Будет создан новый контракт [!INCLUDE[indigo2](../includes/indigo2-md.md)] и операция.  
   
-      - или -  
+      -или-  
   
    - Нажмите кнопку **импорта** в правом верхнем углу диалогового окна. [Обзор и Выбор типа .NET диалоговое окно (для прежних версий)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) открывает. Найдите сборку или проект, который содержит нужный контракт. Выберите контракт и нажмите кнопку **ОК**.  
   

@@ -22,19 +22,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929772"
 ---
 # <a name="select-code-type-dialog-box"></a>Диалоговое окно "Выбор типа кода"
 Чтобы открыть это диалоговое окно, откройте диалоговое окно **Присоединение к процессу** и нажмите кнопку **Выбрать**.
 
  **Автоматически определять тип отлаживаемого кода** соответствующий отладчик будет выбран в зависимости от типа выполняемого кода.
 
- **Отладить код следующих типов:** в предоставленном списке выберите тип кода, необходимо выполнить отладку.
+ **Выполнять отладку кода следующих типов:** В предоставленном списке выберите тип кода, который планируется отлаживать.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Подключение к выполняющимся процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

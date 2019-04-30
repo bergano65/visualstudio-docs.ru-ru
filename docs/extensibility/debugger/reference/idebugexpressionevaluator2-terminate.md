@@ -1,60 +1,62 @@
 ---
 title: IDebugExpressionEvaluator2::Terminate | Документация Майкрософт
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
 - Terminate
 - IDebugExpressionEvaluator2::Terminate
 ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 3ef5f17354e45327a87ee77e5b437409719094e9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873974"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
-Останавливает и удаляет средство оценки выражений.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Синтаксис
-
-```cpp
-HRESULT Terminate (
-    void
-);
-```
-
-```csharp
-int Terminate ();
-```
-
-## <a name="return-value"></a>Возвращаемое значение
-В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
-
-## <a name="remarks"></a>Примечания
-Сообщает средство оценки выражений, когда он выполняется очистка.
-
-## <a name="example"></a>Пример
-В следующем примере показано, как реализовать этот метод для **ExpressionEvaluatorPackage** объекта, который предоставляет [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) интерфейс.
-
-```cpp
-STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)
-{
-    // scan the namespaces contained and delete
-    EEExtensionMethodCache **ppChild = NULL;
-    m_HashExtensionMethodCache.ResetHashIterator();
-    while (ppChild = m_HashExtensionMethodCache.IterateHash())
-    {
-        delete *ppChild;
-    }
-    return VBEEImplicitVariables::Terminate();
-}
-```
-
-## <a name="see-also"></a>См. также
-- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+Останавливает и удаляет средство оценки выражений.  
+  
+## <a name="syntax"></a>Синтаксис  
+  
+```cpp#  
+HRESULT Terminate (  
+    void  
+);  
+```  
+  
+```csharp  
+int Terminate ();  
+```  
+  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
+  
+## <a name="remarks"></a>Примечания  
+ Сообщает средство оценки выражений, когда он выполняется очистка.  
+  
+## <a name="example"></a>Пример  
+ В следующем примере показано, как реализовать этот метод для **ExpressionEvaluatorPackage** объекта, который предоставляет [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) интерфейс.  
+  
+```cpp#  
+STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)  
+{  
+    // scan the namespaces contained and delete  
+    EEExtensionMethodCache **ppChild = NULL;  
+    m_HashExtensionMethodCache.ResetHashIterator();  
+    while (ppChild = m_HashExtensionMethodCache.IterateHash())  
+    {  
+        delete *ppChild;  
+    }  
+    return VBEEImplicitVariables::Terminate();  
+}  
+```  
+  
+## <a name="see-also"></a>См. также  
+ [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

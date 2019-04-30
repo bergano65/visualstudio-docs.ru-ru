@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98f246f68b4f22dfeb4ba1899edd79495aff37fe
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908909"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Регистрация и выбор (пакет VSPackage системы управления версиями)
 Системы управления версиями, необходимо зарегистрировать VSPackage, чтобы предоставлять его для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Если более одной системы управления версиями VSPackage зарегистрирован, пользователь может выбрать какие VSPackage для загрузки в нужное время. См. в разделе [пакетов VSPackage](../../extensibility/internals/vspackages.md) узнать больше о пакеты VSPackage и их регистрации.

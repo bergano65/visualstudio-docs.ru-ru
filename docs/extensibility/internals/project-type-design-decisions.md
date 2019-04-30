@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5e420261810cec793cc553eac83bbc97edd1fb1c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909113"
 ---
 # <a name="project-type-design-decisions"></a>Проектные решения для типа проекта
 Прежде чем создавать новый тип проекта, нужно принять несколько решений проектирования, касающиеся типа проекта. Необходимо решить, какие типы элементов, которые будет содержать проекты, как будут сохранены файлы проекта и какие обязательства модели будет использоваться.
@@ -57,7 +57,7 @@ ms.locfileid: "56634549"
  При открытии объекты данных с помощью режима транзакций, изменения будут сохранены во временное расположение в памяти и не фиксируются до вручную не выбран для сохранения файла. В этот момент все изменения должны происходить вместе или не будут изменены.
 
 ## <a name="see-also"></a>См. также
-- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Сохранение проекта](../../extensibility/internals/project-persistence.md)
 - [Элементы модели проекта](../../extensibility/internals/elements-of-a-project-model.md)

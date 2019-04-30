@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a316d2af6ecb76c573cfb43e1334df1933a2989b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856219"
 ---
-# <a name="manage-vspackages"></a>Управление пакетов VSPackage
+# <a name="manage-vspackages"></a>Управление пакетами VSPackage
 В большинстве случаев не нужно беспокоиться об управлении пакеты VSPackage, так как шаблоны проектов и элементов, зарегистрировать и автоматически загрузить пакет. Однако в некоторых случаях может потребоваться узнать чуть подробнее для пакета управления.
 
 ## <a name="use-the-experimental-instance"></a>Использовать экспериментальный экземпляр

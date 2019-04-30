@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935683"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 Вызывает обработчик скриптов отказаться от любого текущего загруженного скрипта, теряют свое состояние и освободить все указатели на интерфейс, он имеет к другим объектам, таким образом ввод закрытом состоянии. Приемники событий, текст сразу же выполненного сценария и вызовов макросов, которые уже находятся в процессе выполнения завершены до изменения состояния (использовать [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) отменить выполняющийся поток скрипта). Этот метод должен вызываться путем создания узлов, до выпуска интерфейса для предотвращения проблем циклическая ссылка.  

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900506"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Развертывание ClickOnce в Windows Vista
 
@@ -42,11 +42,11 @@ Visual Studio предоставляет следующие возможност
 
    Этот подход также называется *виртуализации*. Используйте этот параметр для совместимости с существующими приложениями из более ранних версиях Visual Studio.
 
-  Новые свойства доступны на **приложения** страницы в конструкторе проектов (для визуального C# только проекты) и формат файла проекта MSBuild.
+  Новые свойства доступны на **приложения** страницы в конструкторе проектов (Visual C# только для проектов) и формат файла проекта MSBuild.
 
-  Метод настройки создания манифеста контроля учетных Записей в Интегрированной среде разработки Visual Studio зависит от типа проекта (Visual C# или Visual Basic).
+  Метод настройки создания манифеста контроля учетных Записей в Интегрированной среде разработки Visual Studio будет зависеть от типа проекта (Visual C# или Visual Basic).
 
-  * Дополнительные сведения о настройке Visual C# проектов для создания манифеста см. в разделе [страницы приложения, конструктор проектов (C#)](../ide/reference/application-page-project-designer-csharp.md).
+  * Сведения о настройке проектов Visual C# для создания манифеста см. в разделе [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).
 
   * Сведения о настройке проектов Visual Basic для создания манифеста, см. в разделе [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 

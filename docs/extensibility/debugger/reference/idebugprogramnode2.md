@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 51f49ca90837cf80c22856ae2e8f89a98da43d86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62869967"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 Этот интерфейс представляет собой программу, которые можно отлаживать.
@@ -37,7 +37,7 @@ IDebugProgramNode2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugProgramNode2`.
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[GetProgramName](../../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)|Возвращает имя программы.|
 |[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)|Получает имя процесса, размещающего программы.|

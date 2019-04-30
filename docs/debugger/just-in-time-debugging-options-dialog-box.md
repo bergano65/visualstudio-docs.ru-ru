@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23a285cf0ce017130a5fe76171c50082362e4856
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905939"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Страница "JIT-отладка", папка "Отладка", диалоговое окно "Параметры"
 Чтобы получить доступ к странице **JIT**, перейдите к меню **Сервис** и щелкните пункт **Параметры**. В диалоговом окне **Параметры** разверните узел **Отладка** и выберите **JIT**. Эта страница позволяет включить JIT-отладку для управляемого кода, машинного кода и скриптов. Дополнительные сведения см. в разделе [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md).
@@ -55,6 +55,6 @@ ms.locfileid: "56710478"
 
  **Отказано в доступе. Администратор должен включить JIT-отладку или восстановить установку Visual Studio.**
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Папка "Отладка", диалоговое окно "Параметры"](../debugger/debugging-options-dialog-box.md)
 - [Практическое руководство. Установка параметров отладчика](../debugger/how-to-specify-debugger-settings.md)

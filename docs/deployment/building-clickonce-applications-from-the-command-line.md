@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929156"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Построение приложений ClickOnce из командной строки
 В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], можно построить проекты из командной строки, даже если они созданы в интегрированной среде разработки (IDE). На самом деле, можно перестроить проект, созданный с помощью [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] на другом компьютере, имеющем только [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] установлен. Благодаря этому можно воспроизвести с помощью автоматизированного процесса сборки, например, при построении центра лабораторий или с помощью расширенные методы написания сценариев вне области построения самого проекта.
@@ -33,9 +33,9 @@ ms.locfileid: "58567845"
 
  «target» является показателем в MSBuild о том, как обработать команду. Основные цели будут целевой объект «сборка» и «опубликовать» целевой объект. Целевой объект построения является эквивалентом выбору построения команды (или нажав клавишу F5), в интегрированной среде разработки. Если требуется выполнить сборку проекта, этого можно, введя `msbuild`. Эта команда работает, поскольку целевой объект построения является целевым объектом по умолчанию для всех проектов, созданных [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Это означает, что не нужно явно указать целевой объект построения. Таким образом, введя `msbuild` выполняется та же операция, как ввести `msbuild /target:build`.
 
- `/target:publish` Команда сообщает MSBuild о необходимости вызова место назначения публикации. Целевой объект публикации зависит от целевой сборки. Это означает, что операция публикации является надмножеством операции построения. Например, если вы внесли изменения в один из Visual Basic или C# исходных файлов, соответствующая сборка будет автоматически перестроить с операции публикации.
+ `/target:publish` Команда сообщает MSBuild о необходимости вызова место назначения публикации. Целевой объект публикации зависит от целевой сборки. Это означает, что операция публикации является надмножеством операции построения. Например если вы внесли изменения в один из исходных файлов Visual Basic или C#, соответствующей сборке будет автоматически перестроить с операции публикации.
 
- Сведения о создании полной [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания, используя средство командной строки Mage.exe для создания вашего [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест, см. в разделе [Пошаговое руководство: развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Сведения о создании полной [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания, используя средство командной строки Mage.exe для создания вашего [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест, см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>Создание и создать базовое приложение ClickOnce с помощью MSBuild
 
@@ -169,4 +169,4 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>
 - <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>
 - [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)
-- [Пошаговое руководство. Развертывание приложения ClickOnce вручную](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

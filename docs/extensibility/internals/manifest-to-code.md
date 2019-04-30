@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909152"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Манифест, чтобы средство кода — это консольное приложение, которое принимает файл .imagemanifest службы образов в Visual Studio и создает файлы для ссылок на значения манифеста изображения в C++ или оболочки C#, VB или .vsct файлы для Visual Studio расширения. Это средство создает файлы программы-оболочки, которые могут использоваться для запрашивающего изображений из службы Visual Studio изображение непосредственно или для передачи значения манифеста через API-интерфейсы, если код не обработать какие-либо собственным пользовательским Интерфейсом и подготовки к просмотру.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ce8bca614d0af9c7b0557d5b5979797f127a47af
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860373"
 ---
 # <a name="implementing-single-file-generators"></a>Реализация генераторов одного файла
 Пользовательский инструмент — иногда называют генератором одного файла, можно использовать для расширения [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] и [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] систем в проекта [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Пользовательский инструмент — это компонент COM, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> интерфейс. Через этот интерфейс, пользовательский инструмент преобразует одного входного файла в один выходной файл. Результат преобразования может быть исходный код, или любой другой выходной полезны. Два примера файлов пользовательский код, сформированный svcutil.exe, код, созданный в ответ на изменения в визуальный конструктор и файлы, созданные с помощью языка описания служб (WSDL).
