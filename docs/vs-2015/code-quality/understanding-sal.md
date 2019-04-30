@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0a898096c282a22201d60995693144cc0e187812
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435403"
 ---
 # <a name="understanding-sal"></a>Основные сведения о языке SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -246,7 +246,7 @@ void OutOptCaller()
  `_Inout_` используется для добавления заметок к параметр-указатель, который может быть изменен с помощью функции. Указатель должен указывать на допустимый инициализированные данные перед вызовом, и даже, если он изменяется, по-прежнему должен иметь допустимое значение при возвращении. Заметка указывает, что функция может свободно чтение и запись в буфер одного элемента. Вызывающий должен предоставить буфер и инициализировать его.  
   
 > [!NOTE]
->  Как и `_Out_`, `_Inout_` необходимо применить к изменяемое значение.  
+> Как и `_Out_`, `_Inout_` необходимо применить к изменяемое значение.  
   
 ```cpp  
   

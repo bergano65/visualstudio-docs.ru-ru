@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cef35cd1aa19ad27e7c47227b726a44756b0fae8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60f1fe8330e3a40676738c4187273ee60215db6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427434"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Практическое руководство. Добавление элементов управления XMLMappedRange на листы
   При сопоставлении XML-элемент с ячейкой в Microsoft Office Excel, Visual Studio автоматически добавляет <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> лист элемента управления.
@@ -26,7 +26,7 @@ ms.locfileid: "60085724"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Элемент управления не доступен на **элементов** или **источников данных** окна. Кроме того, нельзя создать <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> управляет программным способом.
+> <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Элемент управления не доступен на **элементов** или **источников данных** окна. Кроме того, нельзя создать <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> управляет программным способом.
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Чтобы добавить элемент управления XMLMappedRange на лист
 
@@ -37,7 +37,7 @@ ms.locfileid: "60085724"
 3. На **разработчика** щелкните **источника**.
 
     > [!NOTE]
-    >  Если **разработчика** вкладка не отображается на ленте, необходимо включить ее. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Если **разработчика** вкладка не отображается на ленте, необходимо включить ее. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
      **Источник XML** отображается область задач.
 
@@ -58,7 +58,7 @@ ms.locfileid: "60085724"
      <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Создается и добавляется в проект.
 
     > [!NOTE]
-    >  При перетаскивании родительского элемента из **источник XML** область задач <xref:Microsoft.Office.Tools.Excel.ListObject> создается элемент управления.
+    > При перетаскивании родительского элемента из **источник XML** область задач <xref:Microsoft.Office.Tools.Excel.ListObject> создается элемент управления.
 
 ## <a name="see-also"></a>См. также
 - [Элемент управления XmlMappedRange](../vsto/xmlmappedrange-control.md)

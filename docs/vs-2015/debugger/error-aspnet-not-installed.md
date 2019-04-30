@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e60fe59b4d515f37593175f0b76d1562f170abfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447309"
 ---
 # <a name="error-aspnet-not-installed"></a>Ошибка: не установлено средство ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60059102"
      где *версии* представляет номер версии платформы .NET Framework, установленной на компьютере, например v1.0.370. Можно определить версию платформы, просмотрев `\WINDOWS\Microsoft.NET\Framework` каталога.  
   
     > [!NOTE]
-    >  В Windows Server 2003 можно установить [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], используя элемент **Установка и удаление программ** на "Панели управления".  
+    > В Windows Server 2003 можно установить [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], используя элемент **Установка и удаление программ** на "Панели управления".  
   
 ## <a name="see-also"></a>См. также  
  [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

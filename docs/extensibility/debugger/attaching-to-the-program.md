@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c21b3e03eba03503c769e07ca2a2d90c24c59dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3780558efae860ca54739a139bdffd04494a73b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411364"
 ---
 # <a name="attach-to-the-program"></a>Присоединение к программе
 После регистрации ваших программ с соответствующий порт, необходимо подключить отладчик к программу, которую требуется отладить.
@@ -50,12 +50,12 @@ ms.locfileid: "60045231"
      Эта команда возвращает `GUID` , используемый для идентификации программы. `GUID` Должны храниться в объекте представляет локальной программу DE, что он должен быть возвращен при `IDebugProgram2::GetProgramId` вызывается метод `IDebugProgram2` интерфейс.
 
     > [!NOTE]
-    >  Если вы реализуете `IDebugProgramNodeAttach2` интерфейс программы `GUID` передается `IDebugProgramNodeAttach2::OnAttach` метод. Это `GUID` используется для программы `GUID` возвращаемые `IDebugProgram2::GetProgramId` метод.
+    > Если вы реализуете `IDebugProgramNodeAttach2` интерфейс программы `GUID` передается `IDebugProgramNodeAttach2::OnAttach` метод. Это `GUID` используется для программы `GUID` возвращаемые `IDebugProgram2::GetProgramId` метод.
 
 3. Отправить [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) объект события для уведомления SDM, локальной `IDebugProgram2` объект был создан для представления программы для DE. Дополнительные сведения см. в разделе [отправки событий](../../extensibility/debugger/sending-events.md).
 
     > [!NOTE]
-    >  Это не то же самое `IDebugProgram2` объект, который был передан в `IDebugEngine2::Attach` метод. Ранее переданный `IDebugProgram2` объект распознается только номер порта и представляет собой отдельный объект.
+    > Это не то же самое `IDebugProgram2` объект, который был передан в `IDebugEngine2::Attach` метод. Ранее переданный `IDebugProgram2` объект распознается только номер порта и представляет собой отдельный объект.
 
 ## <a name="see-also"></a>См. также
 - [Вложение на основе запуска](../../extensibility/debugger/launch-based-attachment.md)

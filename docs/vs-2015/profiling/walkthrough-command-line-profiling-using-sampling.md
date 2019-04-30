@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e9c8f14fbec74b353550a1420a5ff3e119d6dce
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 96dfe49ce4e174680202cd60c3e8bca83cfbf575
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439683"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Пошаговое руководство. Командной строки, профилирование с помощью выборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60117438"
  Выборка — это метод профилирования, при котором конкретный процесс периодически опрашивается с целью определения активной функции. Полученные данные показывают, как часто функция находилась на вершине стека вызовов при выборочном опросе процесса.  
   
 > [!NOTE]
->  Программы командной строки средств профилирования расположены в подкаталоге \Team Tools\Performance Tools каталога установки Visual Studio. На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь в переменную среды PATH окна командной строки или в саму команду. Дополнительные сведения см. в статье [Указание пути к средствам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax — это 32-разрядное приложение.  
+> Программы командной строки средств профилирования расположены в подкаталоге \Team Tools\Performance Tools каталога установки Visual Studio. На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь в переменную среды PATH окна командной строки или в саму команду. Дополнительные сведения см. в статье [Указание пути к средствам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax — это 32-разрядное приложение.  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Профилирование приложения PeopleTrax с помощью метода выборки  
   

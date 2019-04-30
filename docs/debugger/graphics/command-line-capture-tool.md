@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be492ea3d9e61e25c28d8fc74ab870d7a6f959a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389694"
 ---
 # <a name="command-line-capture-tool"></a>Программа командной строки для захвата
 DXCap.exe — это программа командной строки для захвата и воспроизведения данных диагностики графики. Она поддерживает все функциональные уровни Direct3D версий 10–12.
@@ -63,7 +63,7 @@ DXCap.exe -info
  `-examine` `events` В режиме проверки параметр `events` определяет набор событий графики, непосредственные результаты которых необходимо сравнить. Например `-examine present,draw,copy,clear` ограничивает сравниваемые только события, относящиеся к указанным категориям.
 
 > [!TIP]
->  Мы рекомендуем начать с `-examine present,draw,copy,clear` так, как это будет выявлено большинство проблем, но значительно быстрее, чем более широкий набор событий. При необходимости вы можете указать другой набор событий для проверки, чтобы выявить другие проблемы.
+> Мы рекомендуем начать с `-examine present,draw,copy,clear` так, как это будет выявлено большинство проблем, но значительно быстрее, чем более широкий набор событий. При необходимости вы можете указать другой набор событий для проверки, чтобы выявить другие проблемы.
 
  `-haltonfail` В режиме проверки `-haltonfail` останавливает проверку при обнаружении различий между оборудованием и отрисовщик WARP. Проверка возобновляется после нажатия клавиши.
 
@@ -114,7 +114,7 @@ DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"
  Команда в приведенном выше примере захватывает графические данные из классической версии браузера Internet Explorer во время просмотра веб-страницы по адресу www.fishgl.com, которая использует API WebGL для отрисовки трехмерного содержимого.
 
 > [!NOTE]
->  Так как аргументы командной строки, находящиеся после имени приложения, передаются в него, аргументы, предназначенные для программы DXCap.exe, необходимо указать перед параметром `-c`.
+> Так как аргументы командной строки, находящиеся после имени приложения, передаются в него, аргументы, предназначенные для программы DXCap.exe, необходимо указать перед параметром `-c`.
 
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>Захват графических данных из приложения универсальной платформы Windows.
  Вы можете захватывать графические данные из приложения универсальной платформы Windows.
@@ -137,7 +137,7 @@ DXCap.exe -e map
 
  Приведенная выше команда перечисляет приложений универсальной платформы Windows, которые соответствуют «сопоставить»; Ниже приведен результат.
 
- **Пакет «Microsoft.BingMaps»:** **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName: Microsoft.BingMaps_2.1.2914.1734_x64 __8wekyb3d8bbwe** **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533** **имя: Microsoft.BingMaps** **издатель: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US** **версии: 2.1.2914.1734** **можно будет запустить приложения:** **идентификатор: AppexMaps** **Exe-файла: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: нет** **AppSpec (для запуска): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** в последней строке выходных данных для каждого перечисленного приложения приводится команда, можно использовать для захвата графических данных из него.
+ **Пакет "Microsoft.BingMaps":** **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533** **имя: Microsoft.BingMaps** **издателя: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US** **версии: 2.1.2914.1734** **можно будет запустить приложения:** **Идентификатор: AppexMaps** **exe-файла: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: Не** **AppSpec (для запуска): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** в последней строке выходных данных для каждого перечисленного приложения приводится команда, можно использовать для захвата графических данных из него.
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Захват определенных кадров или кадров в течение определенного интервала
  Используйте `-frame` чтобы указать кадры, которые необходимо записать через запятую или использовать диапазоны:

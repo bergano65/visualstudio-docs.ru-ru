@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411099"
 ---
 # <a name="vsix-manifest-designer"></a>Конструктор манифеста VSIX
 Изменяет файл манифеста пакета VSIX, который задает режим установки для расширения Visual Studio.
@@ -29,7 +29,7 @@ ms.locfileid: "56722867"
  Чтобы открыть **конструктор манифеста VSIX**, найдите *source.extension.vsixmanifest* файл **обозревателе решений**и откройте файл. Если файл не содержит допустимый XML-код, не открывается конструктор манифеста.
 
 > [!NOTE]
->  *Source.extension.vsixmanifest* файл — это выходные данные для *extension.vsixmanifest* при построении пакета.
+> *Source.extension.vsixmanifest* файл — это выходные данные для *extension.vsixmanifest* при построении пакета.
 
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
  **Конструктор манифеста VSIX** содержит четыре раздела, которые соответствуют следующие элементы верхнего уровня схемы:

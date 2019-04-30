@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411036"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Пошаговое руководство. Создание базового редактора и регистрации файла тип редактора
 В этом пошаговом руководстве показано, как создать пакет VSPackage, который запускает [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора при создании файла с *.myext* загружается расширение имени файла.
@@ -325,7 +325,7 @@ ms.locfileid: "60048209"
 3. Откройте **VSPackage.resx** файл, добавьте новую строку, задайте имя **101**и задайте значение `IDS_EDITORNAME`. Этот шаг предоставляет пакет с Идентификатором ресурса для доступа к строке, которую вы создали.
 
    > [!NOTE]
-   >  Если **VSPackage.resx** файл содержит другой строкой, которую `name` атрибут **101**, заменить другой уникальное числовое значение, здесь и далее.
+   > Если **VSPackage.resx** файл содержит другой строкой, которую `name` атрибут **101**, заменить другой уникальное числовое значение, здесь и далее.
 
 4. В **обозревателе решений**откройте **MyPackagePackage.cs** файла.
 

@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426037"
 ---
 # <a name="msbuild-transforms"></a>Преобразования MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59653493"
 ```  
   
 > [!NOTE]
->  Вы можете указать настраиваемый разделитель для преобразованного списка элементов точно так же, как и для стандартного списка элементов. Например, чтобы разделить преобразованный список элементов с помощью запятой (,), а не используемой по умолчанию точки с запятой (;), используйте следующий XML-код.  
+> Вы можете указать настраиваемый разделитель для преобразованного списка элементов точно так же, как и для стандартного списка элементов. Например, чтобы разделить преобразованный список элементов с помощью запятой (,), а не используемой по умолчанию точки с запятой (;), используйте следующий XML-код.  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  
@@ -111,4 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>См. также  
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
- [Практическое руководство. Инкрементное построение](../msbuild/how-to-build-incrementally.md)
+ [Практическое руководство. Инкрементная сборка](../msbuild/how-to-build-incrementally.md)

@@ -17,23 +17,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 8b48335ccaa8bd21cf9f6e108d043ecf706903bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441886"
 ---
 # <a name="debug-office-projects"></a>Отладка проектов Office
   Для отладки проектов Office можно использовать такие же инструменты Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , как и для других проектов [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Функциональные возможности отладчика[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , такие как возможность вставлять точки останова и просматривать переменные в окне **Локальные** , доступны и при отладке проектов Office. Дополнительные сведения о [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средства отладки, см. в разделе [отладки в Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 > [!TIP]
->  Чтобы упростить процесс отладки, перед выполнением сборки и отладки закройте все открытые экземпляры приложения Office.
+> Чтобы упростить процесс отладки, перед выполнением сборки и отладки закройте все открытые экземпляры приложения Office.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.
+> Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.
 
 ## <a name="start-and-stop-the-debugger"></a>Запуск и остановка отладчика
  Вы можете начать отладку проекта Office, так же, как отладку любых других [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проектов; например, можно нажать клавишу **F5** ключ. При запуске отладки проекта надстройки VSTO, запускается новый процесс для целевого приложения Office и загружается надстройка VSTO.

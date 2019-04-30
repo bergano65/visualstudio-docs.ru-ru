@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438067"
 ---
 # <a name="output-window"></a>Окно выходных данных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59668916"
 Окно **Вывод** может отображать сообщения о состоянии для различных функций в интегрированной среде разработки (IDE). Чтобы открыть окно **Вывод**, в строке меню выберите **Представление/Вывод** (или нажмите клавиши CTRL+ALT+O).  
   
 > [!WARNING]
->  Окно вывода не отображается в меню "Вид" в выпусках Visual Studio Express. Чтобы открыть его, используйте клавиши CTRL+ALT+O.  
+> Окно вывода не отображается в меню "Вид" в выпусках Visual Studio Express. Чтобы открыть его, используйте клавиши CTRL+ALT+O.  
   
 ## <a name="toolbar"></a>Toolbar  
  **Показать выходные данные из**  

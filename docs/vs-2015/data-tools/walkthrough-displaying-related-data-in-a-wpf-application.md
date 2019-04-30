@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7cd8a48092c39048d52a7ebe9cd27163ba32110
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424782"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Пошаговое руководство. Отображение связанных данных в приложении WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ ms.locfileid: "60065393"
 1. В **источников данных** окна, найдите **SalesOrderDetails** узел, который является дочерним объектом **SalesOrderHeaders** узла.  
   
    > [!NOTE]
-   >  Имеется также **SalesOrderDetails** узел, который является одноранговым в отношении **SalesOrderHeaders** узла. Убедитесь, что дочерний узел **SalesOrderHeaders** узла.  
+   > Имеется также **SalesOrderDetails** узел, который является одноранговым в отношении **SalesOrderHeaders** узла. Убедитесь, что дочерний узел **SalesOrderHeaders** узла.  
   
 2. Разверните дочерний **SalesOrderDetails** узла.  
   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b29b95b9c53f18d6f97ac2455dd30aa6e26ccde4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415479"
 ---
 # <a name="how-to-implement-undo-management"></a>Практическое руководство. Реализуйте механизмы управления отменой
 Основным интерфейсом для управления отката является <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, который реализуется с помощью среды. Для поддержки управления отменой, реализации единиц отката отдельные (то есть <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, который может содержать несколько отдельных шагов.
@@ -75,7 +75,7 @@ ms.locfileid: "60068617"
    `OleUndoManager` Класс представляет экземпляр стека одной операции отката. Таким образом только один объект диспетчера отмены на сущность данных отслеживается для отмены или повтора.
 
 > [!NOTE]
->  Объект диспетчера отмены широко применяется в текстовом редакторе, это общий компонент, который не имеет определенного поддержки для текстового редактора. Если вы хотите поддерживать многоуровневые операции отмены или повтора, для этого можно использовать этот объект.
+> Объект диспетчера отмены широко применяется в текстовом редакторе, это общий компонент, который не имеет определенного поддержки для текстового редактора. Если вы хотите поддерживать многоуровневые операции отмены или повтора, для этого можно использовать этот объект.
 
 ## <a name="see-also"></a>См. также
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>

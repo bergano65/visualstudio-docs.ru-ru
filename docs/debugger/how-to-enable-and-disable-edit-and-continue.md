@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3bee60a54576ab816c63cf60f2226ebbbaf50c44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388486"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Практическое руководство. Включение и отключение изменить и продолжить (C#, VB, C++)
 
@@ -46,7 +46,7 @@ ms.locfileid: "60070416"
 1. В **средства** > **параметры** > (или **Отладка** > **параметры**) > **отладки**  >  **Общие**выберите **изменить и продолжить** в области справа.
 
     > [!NOTE]
-    >  Если включено средство IntelliTrace и собираются как события IntelliTrace, так и сведения о вызовах, операция "Изменить и продолжить" становится недоступна. Дополнительные сведения см. в разделе [IntelliTrace](../debugger/intellitrace.md).
+    > Если включено средство IntelliTrace и собираются как события IntelliTrace, так и сведения о вызовах, операция "Изменить и продолжить" становится недоступна. Дополнительные сведения см. в разделе [IntelliTrace](../debugger/intellitrace.md).
 
 1. Для кода C++, убедитесь, что **включить собственный изменить и продолжить** выбран и задать дополнительные параметры:
     - **Применить изменения при продолжении (только машинный код)**

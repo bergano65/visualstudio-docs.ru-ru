@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63f86011b7794ca0ddd17b890e3374327db3af0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446943"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Обновление настроек ленты в проектах Office, которые переносятся на .NET Framework 4 или .NET Framework 4.5
   Если проект содержит настройку ленты, который был создан с помощью **Лента (визуальный конструктор)** элемента проекта, необходимо внести следующие изменения в код проекта, при изменении требуемой версии .NET framework [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или позже.
@@ -75,7 +75,7 @@ ms.locfileid: "60096547"
 3. В методе `InitializeComponent` измените код, который создает элемент управления ленты, чтобы код использовал один из вспомогательных методов объекта <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.
 
     > [!NOTE]
-    >  В проектах Visual C# необходимо расширить область `Component Designer generated code` так, чтобы она включала метод `InitializeComponent`.
+    > В проектах Visual C# необходимо расширить область `Component Designer generated code` так, чтобы она включала метод `InitializeComponent`.
 
      Например, предположим, что файл содержит следующую строку кода, которая создает экземпляр <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> с именем `button1` в проекте, ориентированном на .NET Framework 3.5.
 

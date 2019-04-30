@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93c30d9966dabdf7ad7b42bbad6ecbae5679e636
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53e227b2fdf97c406a86b31cee2a3c450948ee6b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434781"
 ---
 # <a name="save-data-in-project-files"></a>Сохранить данные в файлах проектов
 Подтип проекта можно сохранять и извлекать подтипа данных в файле проекта. Managed Package Framework (MPF) предоставляет два интерфейса для выполнения этой задачи:
@@ -206,7 +206,7 @@ ms.locfileid: "60070342"
     ```
 
 > [!NOTE]
->  Все примеры кода, приведенные в этом разделе являются частью более крупного примера в [примеры VSSDK](https://aka.ms/vs2015sdksamples).
+> Все примеры кода, приведенные в этом разделе являются частью более крупного примера в [примеры VSSDK](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>См. также
 - [Сохранять данные в файле проекта MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 506e39537614b50b72a515d882e5592c316cce26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d51474f2e242f764a84edaa9f2712418c859460
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408700"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Что&#39;возможности пакета SDK для Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,9 +63,9 @@ ms.locfileid: "60080882"
  Шаблоны элементов VS SDK используйте NuGet для их ссылки и средства сборки, поэтому вы получаете преимущества NuGet по умолчанию.
 
 > [!NOTE]
->  Вы можете использовать ссылочные сборки установлен пакет SDK для VS с проектами (расположенный в \<расположение установки Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) и существующие проекты расширения среды не обязательно должны быть обновлен для использования пакетов NuGet.  Проект **ссылается на / добавить ссылку на** диалогового окна будет продолжать использовать ссылочные сборки установлен пакет SDK для VS.
+> Вы можете использовать ссылочные сборки установлен пакет SDK для VS с проектами (расположенный в \<расположение установки Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) и существующие проекты расширения среды не обязательно должны быть обновлен для использования пакетов NuGet.  Проект **ссылается на / добавить ссылку на** диалогового окна будет продолжать использовать ссылочные сборки установлен пакет SDK для VS.
 >
->  Если вы хотите изменить существующие проекты для использования NuGet, см. в разделе [как: Миграция пакетов VSPackage в Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) которого имеется раздел об обновлении проектов расширяемости в пакеты NuGet.
+> Если вы хотите изменить существующие проекты для использования NuGet, см. в разделе [как: Миграция пакетов VSPackage в Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) которого имеется раздел об обновлении проектов расширяемости в пакеты NuGet.
 
 ## <a name="light-bulbs"></a>Лампочки
  Один из самых замечательных новых способов написания кода для расширения предоставляется в проекте Roslyn. Дополнительные сведения см. в разделе [Roslyn](https://github.com/dotnet/Roslyn).

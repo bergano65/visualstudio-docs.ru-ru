@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440594"
 ---
 # <a name="how-to-set-permissions"></a>Практическое руководство. Установка разрешений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60114578"
   Члены группы "Пользователи" могут запускать средства профилирования, если администратор предоставил им доступ к программному драйверу для этих средств. В последней процедуре, "Предоставление доступа к драйверу профилирования" описано, как предоставить доступ к этому драйверу.  
   
 > [!NOTE]
->  Для выполнения действий в этих процедурах требуются права администратора.  
+> Для выполнения действий в этих процедурах требуются права администратора.  
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Создание учетной записи пользователя с разрешениями пользователя  
   

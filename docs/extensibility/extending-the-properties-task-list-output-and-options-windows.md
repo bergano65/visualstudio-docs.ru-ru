@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417236"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Расширение windows свойства, список задач, выходные данные и параметры
 Можно получить доступ к любого окна инструментов в Visual Studio. В этом пошаговом руководстве показано, как интегрировать сведения о вашего окна инструментов в новую **параметры** страницы и новый параметр на **свойства** страницы, а также способ записи **список задач** и **вывода** windows.
@@ -33,7 +33,7 @@ ms.locfileid: "60078386"
 1. Создайте проект с именем **TodoList** с помощью шаблона VSIX и добавление шаблона элемента окна пользовательского инструмента с именем **TodoWindow**.
 
     > [!NOTE]
-    >  Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создание расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создание расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="set-up-the-tool-window"></a>Настройка окна инструментов
  Добавление текстового поля для ввода нового элемента ToDo, кнопку, чтобы добавить новый элемент в список и элемент ListBox для отображения элементов в списке.
@@ -41,7 +41,7 @@ ms.locfileid: "60078386"
 1. В *TodoWindow.xaml*, удалить элементы управления Button, TextBox и StackPanel от UserControl.
 
     > [!NOTE]
-    >  При этом не удаляются **button1_Click** обработчик событий, который будет использовать в дальнейшем.
+    > При этом не удаляются **button1_Click** обработчик событий, который будет использовать в дальнейшем.
 
 2. Из **все элементы управления WPF** раздел **элементов**, перетащите **холст** элемента управления в сетку.
 

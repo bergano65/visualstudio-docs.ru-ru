@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b0a34505cf32e0e3fd4dc18bfeab4588856dba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409951"
 ---
 # <a name="attach-after-a-launch"></a>Присоединение после запуска
 После запуска программы сеанса отладки готов для присоединения модуля отладки (DE) для указанной программы.
@@ -28,7 +28,7 @@ ms.locfileid: "60065588"
 - Если смысл установить связь между DE и программы, среде выполнения совместно создает DE. Такая схема оставляет SDM в одно адресное пространство и DE, среды выполнения и программы в другой. Такой подход является типичным для DE, который реализуется с помощью интерпретатора для запуска сценария языков.
 
     > [!NOTE]
-    >  Как DE присоединяется к программе зависит от реализации. Обмен данными между DE и программы также зависит от реализации.
+    > Как DE присоединяется к программе зависит от реализации. Обмен данными между DE и программы также зависит от реализации.
 
 ## <a name="implementation"></a>Реализация
  Программным образом, когда диспетчер отладки сеансов (SDM) сначала получает [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу для запуска, он вызывает [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) метод, передав ему [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) объект, который затем используется для передачи событий отладки SDM. `IDebugProgram2::Attach` Затем вызывает метод [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) метод. Дополнительные сведения о том, как получает SDM `IDebugProgram2` интерфейсом, см. в разделе [уведомление порта](../../extensibility/debugger/notifying-the-port.md).

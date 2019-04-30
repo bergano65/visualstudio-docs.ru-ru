@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8e6f39e420981615f391103c6cee431f930190bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 677a72f0378c62f2ca65515ec563069f22b9ff09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433013"
 ---
 # <a name="install-visual-studio-2015"></a>Установка Visual Studio 2015
 
@@ -53,7 +53,7 @@ ms.locfileid: "60118101"
  Настраиваемые компоненты включают Visual C++, Visual F#, SQL Server Data Tools, пакеты SDK и средства разработки кроссплатформенных мобильных приложений, а также сторонние пакеты SDK и расширения. Если вы не выбрали эти компоненты во время начальной установки, вы можете установить их позднее.
 
 > [!NOTE]
->  Выборочная установка автоматически включает компоненты установки по умолчанию.
+> Выборочная установка автоматически включает компоненты установки по умолчанию.
 
  Ниже приведен полный список настраиваемых компонентов.
 
@@ -70,7 +70,7 @@ ms.locfileid: "60118101"
  Visual Studio можно установить с установочного диска DVD, с помощью службы подписки Visual Studio из [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) веб-сайта, загрузив веб-установщик из [Visual Studio Загружает](http://go.microsoft.com/fwlink/?LinkId=517106) веб-сайта, или путем создания макета автономной установки (см. в разделе [Создание автономной установки Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) получить дополнительные сведения).
 
 > [!IMPORTANT]
->  Установка [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]должна выполняться от имени учетной записи администратора. Тем не менее для работы с [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] после установки они не нужны.
+> Установка [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]должна выполняться от имени учетной записи администратора. Тем не менее для работы с [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] после установки они не нужны.
 
  Для установки всех компонентов Visual Studio учетной записи локального администратора необходимо предоставить следующие права.
 

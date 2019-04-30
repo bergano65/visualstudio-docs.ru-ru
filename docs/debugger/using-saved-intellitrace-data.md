@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e124bb05fa42be48fc0c9054df9cb056d0680958
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408621"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>С помощью сохраненных данных IntelliTrace (C#, Visual Basic, C++)
 
@@ -64,7 +64,7 @@ ms.locfileid: "60081025"
     - В разделе **Шаги для воспроизведения**выберите ссылку **IntelliTrace** .
 
 > [!TIP]
->  Если файл IntelliTrace был закрыт во время отладки, его можно легко открыть снова. Перейдите в меню **Отладка** и выберите **IntelliTrace**, **Показать сводку журнала**. Можно также выбрать **Показать сводку журнала** в окне **IntelliTrace** . Эта команда доступна только при отладке с помощью IntelliTrace.
+> Если файл IntelliTrace был закрыт во время отладки, его можно легко открыть снова. Перейдите в меню **Отладка** и выберите **IntelliTrace**, **Показать сводку журнала**. Можно также выбрать **Показать сводку журнала** в окне **IntelliTrace** . Эта команда доступна только при отладке с помощью IntelliTrace.
 
 ## <a name="Understand"></a> Изучение журнала IntelliTrace
  Некоторые из следующих разделов в ITRACE-файле отображаются только в том случае, если данные собраны из определенного источника, например Test Manager или приложений SharePoint.

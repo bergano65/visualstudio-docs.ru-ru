@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a37ededab38cf27a002117f874d17d6a340000d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429172"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Практическое руководство. Настройка анализа кода для проекта управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60104321"
 В [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] и [!INCLUDE[vsPro](../includes/vspro-md.md)], можно выбрать из списка анализа кода *наборов правил* для применения к проекту управляемого кода. Набор правил по умолчанию — минимально рекомендуемые правила Майкрософт. Вы можете применить еще одно правило в проект или ко всем проектам в решении.  
   
 > [!NOTE]
->  Сведения о том, как настроить набор правил для веб-приложений ASP.NET см. в разделе [как: Настройка анализа кода для веб-приложения ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
+> Сведения о том, как настроить набор правил для веб-приложений ASP.NET см. в разделе [как: Настройка анализа кода для веб-приложения ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Чтобы настроить набор правил для проекта .NET Framework  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60104321"
 5. По умолчанию функция анализа кода выдает предупреждения, связанные с кодом, автоматически созданным внешними средствами. Чтобы просмотреть предупреждения из созданного кода, снимите **подавлять результаты из созданного кода** "флажок".  
   
     > [!NOTE]
-    >  Этот параметр не отключает ошибки и предупреждения из созданного кода, если ошибки и предупреждения появляются в формах и шаблонах. Вы можете просматривать и обслуживать исходный код для формы или шаблона.  
+    > Этот параметр не отключает ошибки и предупреждения из созданного кода, если ошибки и предупреждения появляются в формах и шаблонах. Вы можете просматривать и обслуживать исходный код для формы или шаблона.  
   
 6. В **выполнить этот набор правил** выполните одно из следующих:  
   

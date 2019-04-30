@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0b98fa4b3182db71567d61569cddf4cfae33ec1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d95708f940bfb12f67903f41d9f030a77877008d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442610"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Шаг 3. Добавление таймера с обратным отсчетом
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60094828"
 В третьей части этого учебника вам предстоит добавить таймер обратного отсчета для отслеживания количества секунд, оставшихся у игрока на решение задач викторины.  
   
 > [!NOTE]
->  Этот раздел входит в серию учебников, посвященных основам написания кода. Общие сведения об учебнике см. в разделе [Руководство 2. Создание математической викторины](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Этот раздел входит в серию учебников, посвященных основам написания кода. Общие сведения об учебнике см. в разделе [Руководство 2. Создание математической викторины](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-add-a-countdown-timer"></a>Добавление таймера с обратным отсчетом  
   
@@ -57,7 +57,7 @@ ms.locfileid: "60094828"
      Только что был добавлен оператор `if else`, в котором описывается, как программа принимает решение . Оператор `if else` представлен ниже.  
   
     > [!NOTE]
-    >  Следующий пример приведен исключительно для иллюстрации; не добавляйте его в свой проект.  
+    > Следующий пример приведен исключительно для иллюстрации; не добавляйте его в свой проект.  
   
     ```vb  
     If (something that your program will check) Then  

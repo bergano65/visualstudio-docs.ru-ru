@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 96a4795d83c4ef4b5bad2d7dc2d5f06f2f3ab4cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18ea10e25117ee5bf52c6369e575d70a989435db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444521"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Основы создания приложений с помощью Xamarin.Forms в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60097236"
 - [Завершение пользовательского интерфейса с помощью собственного интерфейса на разных платформах](#finish)
 
 > [!TIP]
->  Полный исходный код для этого проекта можно найти в [репозитории образцов xamarin-forms на GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
+> Полный исходный код для этого проекта можно найти в [репозитории образцов xamarin-forms на GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
 
 ## <a name="solution"></a> Настройка решения
  Эти шаги создают решение Xamarin.Forms, которое содержит переносимую библиотеку классов для общего кода и два добавленных пакета NuGet.
@@ -59,7 +59,7 @@ ms.locfileid: "60097236"
     - **WeatherApp.WinPhone (Windows Phone 8.1)**: проект, который содержит машинный код Windows Phone.
 
     > [!NOTE]
-    >  Вы можете удалить любой проект, нацеленный не на нужную вам платформу. В этом пошаговом руководстве мы будем ссылаться на проекты Android, iOS и Windows Phone 8.1. Работа с проектами UWP и Windows 8.1 аналогична работе с проектом Windows Phone 8.1.
+    > Вы можете удалить любой проект, нацеленный не на нужную вам платформу. В этом пошаговом руководстве мы будем ссылаться на проекты Android, iOS и Windows Phone 8.1. Работа с проектами UWP и Windows 8.1 аналогична работе с проектом Windows Phone 8.1.
 
      В каждом проекте с машинным кодом вы получите доступ к собственному конструктору для соответствующей платформы и можете при необходимости реализовать экраны и функции для конкретной платформы.
 

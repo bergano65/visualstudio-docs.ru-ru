@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c270ff9a31073835d8f907547cf0f532e237b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431247"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Практическое руководство. Добавление сущности в модель
   Чтобы создать сущность, добавьте элемент управления сущности из Visual Studio **элементов** в конструктор бизнес-данным (BDC).
@@ -40,7 +40,7 @@ ms.locfileid: "60089462"
      Отобразится новый идентификатор для сущности.
 
     > [!NOTE]
-    >  Можно изменить имя сущности и идентификатора в **свойства** окна.
+    > Можно изменить имя сущности и идентификатора в **свойства** окна.
 
 4. Определение полей сущности в классе. Можно добавить новый класс в проект или использовать существующий класс, созданный с помощью других средств, таких как реляционный конструктор объектов (O/R Designer). Следующий пример показывает класс сущностей с именем контакта.
 

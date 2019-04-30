@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: d8e2bbf51aa6266411558e91f3c17905d0c8605c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 75f7cb153a976614ff790095141a820af80b5834
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422755"
 ---
 # <a name="managed-package-framework-classes"></a>Классы Managed Package Framework
 Классы Managed Package Framework (MPF) можно использовать для создания пакетов VSPackage с помощью управляемого кода. Они предоставляют реализации по умолчанию для многих интерфейсов VSPackage. Скрывая детали и сложности реализации, MPF позволяет создавать продукты интеграции [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с минимальным объемом кода.  
   
 > [!WARNING]
->  Большинство сборок, содержащих классы MPF, поставляются вместе с Visual Studio SDK. Вы можете загрузить исходный код для MPF для проектов в разделе [Managed Package Framework для проектов](http://mpfproj11.codeplex.com/).  
+> Большинство сборок, содержащих классы MPF, поставляются вместе с Visual Studio SDK. Вы можете загрузить исходный код для MPF для проектов в разделе [Managed Package Framework для проектов](http://mpfproj11.codeplex.com/).  
   
 ## <a name="mpf-namespaces"></a>Пространства имен MPF  
  В следующей таблице перечислены пространства имен MPF, предоставляемые [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  

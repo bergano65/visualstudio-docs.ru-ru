@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414620"
 ---
 # <a name="inside-the-editor"></a>Компоненты редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ ms.locfileid: "60056046"
  Можно просмотреть содержимое моментального снимка текст как последовательность символов, или как последовательность строк. Символы и строки являются оба индексируются, начиная с нуля. Пустой текстовый снимок содержит нуль символов и одну пустую строку. Строка отделена любую допустимую последовательность символов разрыва строки Юникода или начало или конец буфера. Символы разрыва строки явно представлены в текстовом снимке, и разрывы строк в снимок текста, могут быть одинаковыми.  
   
 > [!NOTE]
->  Дополнительные сведения о символы разрыва строки в редакторе Visual Studio, см. в разделе [кодировки и разрывы строк](../ide/encodings-and-line-breaks.md).  
+> Дополнительные сведения о символы разрыва строки в редакторе Visual Studio, см. в разделе [кодировки и разрывы строк](../ide/encodings-and-line-breaks.md).  
   
  Представленный текстовую строку <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> объект, который можно получить из моментального снимка текста для некоторого числа или для определенной позиции.  
   

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399393"
 ---
 # <a name="general-debugging-options"></a>Общие параметры отладки
 
@@ -85,7 +85,7 @@ ms.locfileid: "59504423"
 **Включите поддержку ссылок на источник** Указывает отладчику Visual Studio для загрузки исходных файлов для *.pdb* файлы, содержащие ссылки на исходные данные. Дополнительные сведения о ссылки на источник, см. в разделе [спецификация источника ссылки](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
 > [!IMPORTANT]
->  Так как ссылка на источник будет загружать файлы по протоколу http или https, убедитесь, что вы доверяете *.pdb* файл.
+> Так как ссылка на источник будет загружать файлы по протоколу http или https, убедитесь, что вы доверяете *.pdb* файл.
 
 - **Вернуться к проверке подлинности с помощью диспетчера учетных данных Git для всех запросов со ссылкой на источник**   Если включена поддержка ссылок на источник, а ссылки на источник запроса не проходит проверку подлинности, Visual Studio затем вызывает Git Credential Manager.
 

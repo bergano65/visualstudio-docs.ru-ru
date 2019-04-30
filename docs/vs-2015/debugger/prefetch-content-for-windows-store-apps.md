@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7d8b859efa5fac2e3643f4d3a0bd694cd2edd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 04842202e8534c551212d7322ab74e9b0ace5848
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446184"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Предварительная загрузка контента для приложений Магазина Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "58980982"
    Теперь можно выполнять отладку, тестирование и анализ приложения с предварительно загруженными веб-ресурсами.  
   
 > [!NOTE]
->  Повторите эти действия, если необходимо добавить или изменить указанное веб-содержимое.  
+> Повторите эти действия, если необходимо добавить или изменить указанное веб-содержимое.  
   
 ## <a name="see-also"></a>См. также  
  [Запись блога. Запуск предварительной загрузки для приложений Windows Store в Visual Studio 2013 с обновлением 2](http://blogs.msdn.com/b/visualstudioalm/archive/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2.aspx)

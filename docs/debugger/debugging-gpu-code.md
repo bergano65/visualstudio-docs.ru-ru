@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1de8b942b64de56b93b2fece3f46b23413b6981
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea3286c2d4ae27afc7422700bd4f745ab28520fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399443"
 ---
 # <a name="debugging-gpu-code"></a>Отладка кода GPU
 Можно выполнять отладку кода C++, который выполняется в графическом процессоре (GPU). Поддержка отладки GPU в Visual Studio включает обнаружение состояния гонки, запуск процессов и присоединение к ним, а также интеграцию с окнами отладчика.
@@ -27,7 +27,7 @@ ms.locfileid: "60038285"
  Поддерживается отладка в [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] и [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Для отладки в программном эмуляторе требуется [!INCLUDE[win8](../debugger/includes/win8_md.md)] или [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Для отладки на оборудовании необходимо установить драйверы для видеокарты. Не все производители оборудования реализуют полный набор функций для отладки. См. информацию об ограничениях в документации производителя.
 
 > [!NOTE]
->  Независимые производители оборудования, желающие реализовать поддержку отладки GPU в Visual Studio, должны создать библиотеку DLL, реализующую интерфейс VSD3DDebug для взаимодействия с драйверами производителей.
+> Независимые производители оборудования, желающие реализовать поддержку отладки GPU в Visual Studio, должны создать библиотеку DLL, реализующую интерфейс VSD3DDebug для взаимодействия с драйверами производителей.
 
 ## <a name="configuring-gpu-debugging"></a>Настройка отладки GPU
  Отладчик не может прерывать выполнение одновременно кода ЦП и кода GPU при работе одного приложения. По умолчанию отладчик прерывает выполнение кода ЦП. Для отладки кода GPU следует выполнить одно из указанных ниже действий.
@@ -80,6 +80,6 @@ ms.locfileid: "60038285"
  При выполнении вычислений C++ AMP существует вероятность превышения контрольного времени ожидания, установленного предусмотренным в Windows механизмом обнаружения и исправления зависаний (TDR). При возникновении этой ошибки вычисления прекращаются и данные утрачиваются. Дополнительные сведения см. в разделе [Обработка ошибок TDR в C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).
 
 ## <a name="see-also"></a>См. также
-- [Пошаговое руководство: Отладка приложения C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Пошаговое руководство: отладка приложения C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Запуск отладки GPU в Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)

@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 36555d9b00c9aff3f594ae2217afe8434bb41542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442757"
 ---
 # <a name="how-to-start-spy"></a>Практическое руководство. Запуск Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60066713"
  При запуске Spy ++, если отображается сообщение, чтобы запросить разрешения, чтобы вносить изменения на компьютере, нажмите кнопку **Да**.  
   
 > [!NOTE]
->  Можно запустить только один экземпляр Spy ++. При попытке запустить другой экземпляр, то только что запущенного экземпляра получить фокус.  
+> Можно запустить только один экземпляр Spy ++. При попытке запустить другой экземпляр, то только что запущенного экземпляра получить фокус.  
   
 ### <a name="to-start-spy-from-visual-studio"></a>Запуск Spy ++ из Visual Studio  
   
@@ -35,7 +35,7 @@ ms.locfileid: "60066713"
      Поскольку Spy ++ работает. независимо друг от друга, после его запуска, можно закрыть Visual Studio.  
   
     > [!NOTE]
-    >  При записи сообщений в журнал с помощью Spy ++, он может привести к ОС, чтобы выполняться значительно медленнее.  
+    > При записи сообщений в журнал с помощью Spy ++, он может привести к ОС, чтобы выполняться значительно медленнее.  
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>Запуск Spy ++ в командной строке  
   

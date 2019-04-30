@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba4d98a1d6a59a35bf4aa279831036eecec99989
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440583"
 ---
 # <a name="how-to-use-xml-snippets"></a>Практическое руководство. использовать XML-фрагменты
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60055266"
  Следующие процедуры описывают, как получить доступ к **вставить фрагмент** команды.  
   
 > [!NOTE]
->  **Вставить фрагмент** команда также доступна через сочетание клавиш (CTRL + K, а затем CTRL + X).  
+> **Вставить фрагмент** команда также доступна через сочетание клавиш (CTRL + K, а затем CTRL + X).  
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Вставка фрагментов из контекстного меню  
   
@@ -60,7 +60,7 @@ ms.locfileid: "60055266"
 4. Нажмите клавишу TAB, затем еще раз TAB, чтобы вызвать XML-фрагмент.  
   
 > [!NOTE]
->  В некоторых случаях XML-фрагмент не вызывается. К примеру, если попытаться вставить элемент `xs:complexType` внутри узла `xs:element`, редактор не создает XML-фрагмент. Когда элемент `xs:complexType` используется внутри узла `xs:element`, отсутствуют необходимые атрибуты или вложенные элементы, поэтому редактор не имеет данных для вставки.  
+> В некоторых случаях XML-фрагмент не вызывается. К примеру, если попытаться вставить элемент `xs:complexType` внутри узла `xs:element`, редактор не создает XML-фрагмент. Когда элемент `xs:complexType` используется внутри узла `xs:element`, отсутствуют необходимые атрибуты или вложенные элементы, поэтому редактор не имеет данных для вставки.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Вставка фрагментов с помощью сокращенных имен  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60055266"
  Следующие процедуры описывают, как получить доступ к **окружить** команды.  
   
 > [!NOTE]
->  **Окружить** команда также доступна через сочетание клавиш (CTRL + K, а затем CTRL + S).  
+> **Окружить** команда также доступна через сочетание клавиш (CTRL + K, а затем CTRL + S).  
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Окружение с помощью контекстного меню  
   

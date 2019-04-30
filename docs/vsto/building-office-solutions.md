@@ -26,18 +26,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440329"
 ---
 # <a name="build-office-solutions"></a>Создание решений Office
   Сборка и отладка проектов Office в принципе не отличается от сборки и отладки других типов проектов в Visual Studio, например Windows Forms. В этом разделе описываются существующие различия. Общие сведения о том, как создавать приложения, см. в разделе [компиляция и сборка в Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
 > [!NOTE]
->  Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.
+> Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.
 
 ## <a name="project-output-for-office-projects"></a>Выходные данные проекта для проектов Office
  Выходным каталогом проектов Office является каталог *имя_проекта*\bin\release или *имя_проекта*\bin\debug. Нельзя выполнять сборку в каталог развертывания.
@@ -56,7 +56,7 @@ ms.locfileid: "60078932"
 - База данных программы (*PDB*) файла.
 
 > [!NOTE]
->  Если сборка решения выполняется не на локальный компьютер, а в удаленное расположение, добавьте полный путь к нему в список надежных расположений в центре управления безопасностью приложения. Дополнительные сведения см. в разделе Присвоение уровня доверия документам в [решений Office, защита](../vsto/securing-office-solutions.md).
+> Если сборка решения выполняется не на локальный компьютер, а в удаленное расположение, добавьте полный путь к нему в список надежных расположений в центре управления безопасностью приложения. Дополнительные сведения см. в разделе Присвоение уровня доверия документам в [решений Office, защита](../vsto/securing-office-solutions.md).
 
 ### <a name="application-level-projects"></a>Проекты уровня приложения
  При создании проекта надстройки VSTO, в выходных данных проекта включаются следующие элементы:

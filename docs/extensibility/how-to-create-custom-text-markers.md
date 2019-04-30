@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0462b4d6aac29c87d71506e3a535f21e2b91a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 717badcc52088568ae348dbb1b712b2202cc7a72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415560"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Практическое руководство. Создание настраиваемых текстовых маркеров
 Если вы хотите создать пользовательский текстовый маркер выделить или организации кода, выполните следующие действия:
@@ -41,7 +41,7 @@ ms.locfileid: "60103410"
     `<PackageGUID>` Идентификатор GUID пакета VSPackage реализует объект автоматизации.
 
    > [!NOTE]
-   >  Путь к корневому каталогу **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии >** может быть переопределен альтернативным корневым, если инициализируется оболочки Visual Studio, Дополнительные сведения см. [Параметры командной строки](../extensibility/command-line-switches-visual-studio-sdk.md).
+   > Путь к корневому каталогу **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии >** может быть переопределен альтернативным корневым, если инициализируется оболочки Visual Studio, Дополнительные сведения см. [Параметры командной строки](../extensibility/command-line-switches-visual-studio-sdk.md).
 
 2. Создайте четыре значения в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<версии > \Text Editor\External маркеры\\\<MarkerGUID >**
 

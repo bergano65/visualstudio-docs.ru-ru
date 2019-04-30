@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442959"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Редактирование схем последовательностей UML с помощью API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  Существует два вида схем последовательностей: те, которые были созданы вручную в UML-проекте моделирования, и те, которые были созданы из кода программы. Используйте свойство `UmlMode` для определения имеющейся схемы последовательностей.  
   
 > [!NOTE]
->  Это свойство возвращает значение false только для схем последовательностей, созданных из кода с помощью Visual Studio 2013 и более ранних версий. Сюда входят созданные из кода схемы последовательностей, перенесенные из Visual Studio 2013 и более ранних версий. Эта версия Visual Studio не поддерживает создание новых схем последовательностей.  
+> Это свойство возвращает значение false только для схем последовательностей, созданных из кода с помощью Visual Studio 2013 и более ранних версий. Сюда входят созданные из кода схемы последовательностей, перенесенные из Visual Studio 2013 и более ранних версий. Эта версия Visual Studio не поддерживает создание новых схем последовательностей.  
   
  Например, если нужно создать команду меню, видимую только на схемах последовательностей UML, метод `QueryStatus()` может включать в себя следующий оператор:  
   

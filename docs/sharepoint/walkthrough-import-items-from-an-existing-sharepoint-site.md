@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446613"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Пошаговое руководство. Импорт элементов из существующего сайта SharePoint
   В этом пошаговом руководстве показано, как импорт элементов из существующего сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint.
@@ -75,7 +75,7 @@ ms.locfileid: "60110879"
  Затем получите файл установки (.wsp) SharePoint, содержащий элементы SharePoint и элементов, которые вы хотите импортировать в ваш [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint. Если у вас еще нет WSP-файл, необходимо создать из существующего сайта SharePoint. В этом примере вы экспортируете сайта SharePoint по умолчанию в WSP-файла.
 
 > [!IMPORTANT]
->  Если появляется ошибка среды выполнения в следующей процедуре, необходимо выполнить процедуры в системе, которая имеет доступ к сайту SharePoint.
+> Если появляется ошибка среды выполнения в следующей процедуре, необходимо выполнить процедуры в системе, которая имеет доступ к сайту SharePoint.
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>Чтобы экспортировать существующий сайт SharePoint
 
@@ -117,7 +117,7 @@ ms.locfileid: "60110879"
 6. В **укажите новый источник проекта** странице, перейдите в расположение в системе, где был сохранен *.wsp* ранее файл и затем выберите **Далее** кнопки.
 
    > [!NOTE]
-   >  Если вы выберете **Готово** кнопки на этой странице, все доступные элементы в *.wsp* файл будет импортирован.
+   > Если вы выберете **Готово** кнопки на этой странице, все доступные элементы в *.wsp* файл будет импортирован.
 
 7. В **выберите элементы для импорта** снимите все флажки в списке, за исключением **Тестовый столбец**, а затем выберите **Готово** кнопки.
 

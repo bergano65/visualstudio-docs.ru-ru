@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae5d345da49ee33841a50622f3d1c59e2309890c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03fab773ed6842bc21552d060797b331d9f73770
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437036"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Фиксация внутрипроцессных изменений в элементах управления с привязкой к данным до сохранения данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60106297"
  Можно настроить приложение на автоматическую фиксацию изменений, даже если пользователь пытается сохранить данные без фиксации изменений в процессе сохранения процесса.  
   
 > [!NOTE]
->  Конструктор добавляет `BindingSource.EndEdit` код только для первого элемента, помещенной на форму. Таким образом, необходимо добавить строку кода для вызова <xref:System.Windows.Forms.BindingSource.EndEdit%2A> метод для каждого <xref:System.Windows.Forms.BindingSource> в форме. Можно вручную добавить строку кода для вызова <xref:System.Windows.Forms.BindingSource.EndEdit%2A> метод для каждого <xref:System.Windows.Forms.BindingSource>. Кроме того, можно добавить `EndEditOnAllBindingSources` метод в форму и вызовите его перед выполнением сохранения.  
+> Конструктор добавляет `BindingSource.EndEdit` код только для первого элемента, помещенной на форму. Таким образом, необходимо добавить строку кода для вызова <xref:System.Windows.Forms.BindingSource.EndEdit%2A> метод для каждого <xref:System.Windows.Forms.BindingSource> в форме. Можно вручную добавить строку кода для вызова <xref:System.Windows.Forms.BindingSource.EndEdit%2A> метод для каждого <xref:System.Windows.Forms.BindingSource>. Кроме того, можно добавить `EndEditOnAllBindingSources` метод в форму и вызовите его перед выполнением сохранения.  
   
  В следующем коде используется [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) запрос, чтобы выполнять итерации по всем <xref:System.Windows.Forms.BindingSource> компоненты и вызов <xref:System.Windows.Forms.BindingSource.EndEdit%2A> метод для каждого <xref:System.Windows.Forms.BindingSource> в форме.  
   

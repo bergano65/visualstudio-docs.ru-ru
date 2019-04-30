@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Добавление дополнительных сведений о коде с помощью _Analysis_assume
+title: Практическое руководство. Добавление дополнительных сведений о коде с помощью _Analysis_assume
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: badc2159085257f25a224a29cf1163b2b702fe60
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 25ce2a97acd248e546fdfab1a1b5c3f22e085f0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403121"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Как выполнить  Добавление дополнительных сведений о коде с помощью _Analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Практическое руководство. Добавление дополнительных сведений о коде с помощью _Analysis_assume
 Возможность создания подсказок для средства анализа кода для кода C/C++, который поможет в процессе анализа и снижают количество предупреждений. Для предоставления дополнительных сведений, используйте следующую функцию:
 
  `_Analysis_assume(`  `expr`  `)`
@@ -29,7 +29,7 @@ ms.locfileid: "55913604"
  Средство анализа кода предполагается, что условие, представленный с помощью выражения имеет значение true, если в точке, где отображается функция и сохраняет значение true, пока выражение будет изменено, например, путем присваивания переменной.
 
 > [!NOTE]
->  `_Analysis_assume` не влияет на оптимизации кода. За пределами средства анализа кода `_Analysis_assume` определяется как холостой.
+> `_Analysis_assume` не влияет на оптимизации кода. За пределами средства анализа кода `_Analysis_assume` определяется как холостой.
 
 ## <a name="example"></a>Пример
  В следующем коде используется `_Analysis_assume` для устранения предупреждения анализа кода [C6388](../code-quality/c6388.md):

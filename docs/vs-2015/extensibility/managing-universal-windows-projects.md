@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412337"
 ---
 # <a name="managing-universal-windows-projects"></a>Управление универсальными проектами Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ ms.locfileid: "60063690"
     ```  
   
     > [!IMPORTANT]
-    >  Если пользователь открыл проект C++ универсальной Windows приложение в экспериментальном экземпляре, приведенный выше код создает исключение. Это известная проблема. Чтобы избежать этого исключения, замените `foreach` блокировать над следующим:  
+    > Если пользователь открыл проект C++ универсальной Windows приложение в экспериментальном экземпляре, приведенный выше код создает исключение. Это известная проблема. Чтобы избежать этого исключения, замените `foreach` блокировать над следующим:  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -525,7 +525,7 @@ ms.locfileid: "60063690"
 9. Изменение общего элемента. Нельзя изменять общие элементы в проекте платформы; Вместо этого необходимо изменить их в общий проект, который является действительным владельцем этих элементов. Можно получить идентификатор соответствующего элемента в общем проекте с <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, предоставляя ему полный путь для общего элемента. Затем можно изменить общий элемент. Изменение распространяется на проекты платформы.  
   
     > [!IMPORTANT]
-    >  Вы должны докопаться ли элемент проекта является общий элемент перед внесением изменений.  
+    > Вы должны докопаться ли элемент проекта является общий элемент перед внесением изменений.  
   
      Следующий метод изменяет имя файла элемента проекта.  
   

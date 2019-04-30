@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b71b092bcadef24e564b14dd215bc9c328aa8e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430472"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите ее с шаблоном элемента в Visual Studio, можно также содержат мастер для шаблона. Мастер можно использовать для сбора сведений от пользователей, при использовании шаблона, чтобы добавить новый экземпляр элемента проекта в проект. Собранные сведения могут использоваться для инициализации элемента проекта.
@@ -34,7 +34,7 @@ ms.locfileid: "60081142"
 - Отладка и тестирование мастера.
 
 > [!NOTE]
->  Вы можете скачать пример из [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , показано, как создавать собственные действия для рабочего процесса.
+> Вы можете скачать пример из [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , показано, как создавать собственные действия для рабочего процесса.
 
 ## <a name="prerequisites"></a>Предварительные требования
  Для выполнения этого пошагового руководства, необходимо сначала создать решение CustomActionProjectItem, выполнив [Пошаговое руководство: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
@@ -125,12 +125,12 @@ ms.locfileid: "60081142"
 2. В представлении XAML замените следующий XAML текущего XAML. XAML определяет пользовательский Интерфейс, содержащий заголовок, элементы управления для указания поведения настраиваемого действия и кнопки навигации в нижней части окна.
 
     > [!NOTE]
-    >  Проект будет содержать некоторые ошибки компиляции, после добавления этого кода. Эти ошибки исчезнут при добавлении кода в последующих шагах.
+    > Проект будет содержать некоторые ошибки компиляции, после добавления этого кода. Эти ошибки исчезнут при добавлении кода в последующих шагах.
 
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    >  Окно, которое создается в этом XAML является производным от <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> базового класса. При добавлении настраиваемого поля диалогового окна WPF в Visual Studio, мы рекомендуем, что диалоговое окно производными этого класса иметь согласованный Дизайн с другими диалоговыми окнами в Visual Studio и избежать проблем, которые могут возникать с модальные диалоговые окна. Дополнительные сведения см. в разделе [Создание и управление модальные диалоговые окна](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > Окно, которое создается в этом XAML является производным от <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> базового класса. При добавлении настраиваемого поля диалогового окна WPF в Visual Studio, мы рекомендуем, что диалоговое окно производными этого класса иметь согласованный Дизайн с другими диалоговыми окнами в Visual Studio и избежать проблем, которые могут возникать с модальные диалоговые окна. Дополнительные сведения см. в разделе [Создание и управление модальные диалоговые окна](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Если вы разрабатываете проект Visual Basic, удалите `ItemTemplateWizard` пространства имен из `WizardWindow` имени класса в `x:Class` атрибут `Window` элемента. Этот элемент находится в первой строке XAML. Когда все будет готово, первая строка должна выглядеть следующим образом:
 
@@ -314,7 +314,7 @@ ms.locfileid: "60081142"
      Настраиваемое действие упаковывается и развертывается на сайте SharePoint, определяемое **URL-адрес сайта** свойства проекта и веб-браузер открывает страницу по умолчанию для этого сайта.
 
     > [!NOTE]
-    >  Если **отладка скриптов отключена** открывшемся диалоговом окне выберите **Да** кнопки.
+    > Если **отладка скриптов отключена** открывшемся диалоговом окне выберите **Да** кнопки.
 
 2. В области списков узла SharePoint, выберите **задачи** ссылку.
 
@@ -346,5 +346,5 @@ ms.locfileid: "60081142"
 - [Определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Создание шаблонов элементов и шаблоны проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Справочник по схеме шаблонов Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Практическое руководство. Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Практическое руководство. Использование мастеров для шаблонов проекта](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [Расположения по умолчанию настраиваемое действие и идентификаторы](http://go.microsoft.com/fwlink/?LinkId=181964)
