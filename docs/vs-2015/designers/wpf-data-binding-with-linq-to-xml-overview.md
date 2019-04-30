@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403417"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Общие сведения о привязке данных WPF с помощью LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "54774182"
  Эти динамические свойства являются особыми свойствами времени выполнения, дублирующими функциональность существующих методов и свойств в классах <xref:System.Xml.Linq.XAttribute> и <xref:System.Xml.Linq.XElement>. Динамические свойства были добавлены к этим классам только для того, чтобы позволить им выступать в роли динамических источников данных для WPF. С этой целью все динамические свойства реализуют уведомления об изменениях. Подробные сведения о динамических свойствах представлены в следующем разделе, [Динамические свойства LINQ to XML](../designers/linq-to-xml-dynamic-properties.md).  
   
 > [!NOTE]
->  Многие стандартные общие свойства различных классов в пространстве имен <xref:System.Xml.Linq> могут использоваться в качестве однократной привязки данных. Однако следует помнить, что в этом случае ни источник, ни цель не будут обновляться динамически.  
+> Многие стандартные общие свойства различных классов в пространстве имен <xref:System.Xml.Linq> могут использоваться в качестве однократной привязки данных. Однако следует помнить, что в этом случае ни источник, ни цель не будут обновляться динамически.  
   
 ### <a name="accessing-dynamic-properties"></a>Оценка динамических свойств  
  Динамические свойства в классах <xref:System.Xml.Linq.XAttribute> и <xref:System.Xml.Linq.XElement> не могут оцениваться как стандартные свойства. Например, в языках, совместимых со средой CLR, например в C#, с ними нельзя выполнять следующие действия.  
@@ -88,7 +88,7 @@ ms.locfileid: "54774182"
   
  Для реализации динамической привязки WPF динамические свойства используются со средствами пространства имен <xref:System.Windows.Data>, особенно с классом <xref:System.Windows.Data.Binding>.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Привязка данных WPF с помощью LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [Динамические свойства LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)   
  [XAML в WPF](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   

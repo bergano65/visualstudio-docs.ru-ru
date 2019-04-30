@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 939d9f36c9838f02e58bc433d1a7bb9bef43c28d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955412"
 ---
 # <a name="breakreason-enumeration"></a>Перечисление BREAKREASON
 Показывает, что вызвало прерывание.  
@@ -44,7 +44,7 @@ typedef enum tagBREAKREASON {
   
 ## <a name="members"></a>Участники  
   
-|Член|Описание:|  
+|Член|Описание|  
 |------------|-----------------|  
 |BREAKREASON_STEP|Модуль языка находится в пошаговом режиме.|  
 |BREAKREASON_BREAKPOINT|Модуль языка произошла явная точка останова.|  

@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc54f8a01e1bd8c7a35779fdcec66bcb64d01379
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7f841960eec9274139307f5fcc1bcaea9bb9fb8e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412855"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Выполняет шаг.
 
 > [!NOTE]
->  Этот метод является нерекомендуемым. Используйте [шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md) метод вместо этого.
+> Этот метод является нерекомендуемым. Используйте [шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md) метод вместо этого.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -63,7 +63,7 @@ int Step( 
  В случае любой синхронизации потоков или связи между потоками, другие потоки в программе следует запускать при отладке определенного потока.
 
 > [!WARNING]
->  В случае остановки или немедленно (синхронно) событие, чтобы не отправлять [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может зависнуть.
+> В случае остановки или немедленно (синхронно) событие, чтобы не отправлять [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может зависнуть.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

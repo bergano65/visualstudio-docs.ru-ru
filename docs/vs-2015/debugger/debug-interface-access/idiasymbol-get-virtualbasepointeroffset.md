@@ -1,47 +1,45 @@
 ---
 title: IDiaSymbol::get_virtualBasePointerOffset | Документация Майкрософт
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_virtualBasePointerOffset method
 ms.assetid: a4f2649c-6702-491c-90a1-d6d669258c51
-caps.latest.revision: 11
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca71b80f6462b83ca6171deab25fd86c07623fd5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.workload:
+- multiple
+ms.openlocfilehash: 57b6c71d5f4f5ced606d0c26cdbdbc8251c8d319
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386608"
 ---
 # <a name="idiasymbolgetvirtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Получает смещение виртуального базового указателя.
 
-Получает смещение виртуального базового указателя.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp#  
-HRESULT get_virtualBasePointerOffset (   
-   LONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает смещение для виртуального базового указателя.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_virtualBasePointerOffset ( 
+   LONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает смещение для виртуального базового указателя.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="see-also"></a>См. также  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="see-also"></a>См. также
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

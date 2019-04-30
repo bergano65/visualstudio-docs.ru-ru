@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9b026d71d5516fa41cef17833285f15fb039c89
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f807ca27598580beb011376e115025ab0c3168fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401468"
 ---
 # <a name="idiasymbolgethfadouble"></a>IDiaSymbol::get_hfaDouble
 Получает флаг, указывающий, содержит ли определяемого пользователем типа (UDT) однородных данных с плавающей запятой aggregate (HFA) типа double.
@@ -39,17 +39,17 @@ HRESULT get_hfaDouble( 
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
 ## <a name="remarks"></a>Примечания
 
 ## <a name="requirements"></a>Требования
- Заголовок: Dia2.h
+ Заголовок: dia2.h
 
  Библиотека: diaguids.lib
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

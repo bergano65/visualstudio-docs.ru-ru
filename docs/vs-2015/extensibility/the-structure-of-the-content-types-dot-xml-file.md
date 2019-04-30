@@ -13,12 +13,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 77810368ea6eea8f31a660e6487091459962e0b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4117e028611c2ff64102a97579d17d72f50407e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430151"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Структура Content_types] .xml файл
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58991873"
 Содержит сведения о типах содержимого в пакете VSIX. Visual Studio использует файл [Content_Types] .xml для установки пакета, но не устанавливает сам файл.  
   
 > [!NOTE]
->  Несмотря на то, что этот раздел относится только к [Content_Type] XML-файлы, которые используются в пакетах VSIX, тип файла [Content_Types] .xml является частью *Open Packaging Conventions (OPC)* standard. Дополнительные сведения см. в разделе [OPC: Новый стандартный для упаковки Your данных](http://go.microsoft.com/fwlink/?LinkID=148207) на сайте MSDN.  
+> Несмотря на то, что этот раздел относится только к [Content_Type] XML-файлы, которые используются в пакетах VSIX, тип файла [Content_Types] .xml является частью *Open Packaging Conventions (OPC)* standard. Дополнительные сведения см. в разделе [OPC: Новый стандартный для упаковки Your данных](http://go.microsoft.com/fwlink/?LinkID=148207) на сайте MSDN.  
   
 ## <a name="attributes-and-elements"></a>Атрибуты и элементы  
  В следующих разделах корневого элемента и его атрибуты и дочерние элементы.  

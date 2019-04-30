@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ab9315c428944de0b047192a789eac6aa654073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a446e91095d9498a6182d1f80d046382b64e876e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384305"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Практическое руководство. Включение и отключение преобразования во множественную форму (реляционный конструктор объектов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60098627"
 По умолчанию, при перетаскивании объектов базы данных, имена которых заканчиваются на s или ies из **обозревателя серверов**/**обозреватель баз данных** на [средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), имена сгенерированных классов сущностей изменяются с множественного числа на единственное. Это делается, чтобы более точно представить факт, что иллюстрируемый класс сущностей сопоставляется с единственной записью данных. Например, добавление таблицы Customers в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] дает класс сущностей с именем Customer, поскольку класс будет содержать данные только для одного клиента.  
   
 > [!NOTE]
->  Преобразование во множественную форму включено по умолчанию только в версии Visual Studio для английского языка.  
+> Преобразование во множественную форму включено по умолчанию только в версии Visual Studio для английского языка.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -33,7 +33,7 @@ ms.locfileid: "60098627"
 2. В диалоговом окне **Параметры** разверните пункт **Инструменты базы данных**.  
   
 > [!NOTE]
->  Выберите команду **Показать все настройки**, если узел **Средства базы данных** не виден.  
+> Выберите команду **Показать все настройки**, если узел **Средства базы данных** не виден.  
   
 1. Щелкните **Реляционный конструктор объектов**.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d98481630ee3f02a96ec0670404c3f9d77e5d5d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 39773bbf821a4b7cec416ff726bf84cbb46935f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432660"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Практическое руководство. Инструментирование собственного автономного компонента и сбор данных о времени с Profiler из командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60048831"
 В этом разделе описывается использование программ командной строки для средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с целью инструментирования таких собственных компонентов, как EXE- или DLL-файлы C++, а также для сбора подробных данных по использованию времени.  
 
 > [!NOTE]
->  Программы командной строки средств профилирования расположены в подкаталоге \Team Tools\Performance Tools каталога установки [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду. Дополнительные сведения см. в статье [Указание пути к средствам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Программы командной строки средств профилирования расположены в подкаталоге \Team Tools\Performance Tools каталога установки [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду. Дополнительные сведения см. в статье [Указание пути к средствам командной строки](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 
  Чтобы собрать подробные данные по использованию времени компонентом с помощью метода инструментирования, воспользуйтесь программой [VSInstr.exe](../profiling/vsinstr.md) для создания инструментированной версии компонента. Затем запустите профилировщик. При выполнении инструментированного компонента данные по времени автоматически сохраняются в файл данных. Вы можете приостановить и возобновить сбор данных в ходе сеанса профилирования.  
 

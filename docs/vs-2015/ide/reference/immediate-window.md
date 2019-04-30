@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e6bbbd4fa2ad051407ece3e05c1806c1231ef2e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437120"
 ---
 # <a name="immediate-window"></a>окно интерпретации
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60053406"
  Обе версии этой команды возвращают значение переменной `varA`.  
   
 > [!NOTE]
->  Чтобы выполнить команду [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] в окне **Интерпретация**, необходимо перед командой ввести знак больше (>). Чтобы ввести несколько команд, переключитесь в окно **Команда**.  
+> Чтобы выполнить команду [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] в окне **Интерпретация**, необходимо перед командой ввести знак больше (>). Чтобы ввести несколько команд, переключитесь в окно **Команда**.  
   
 ## <a name="design-time-expression-evaluation"></a>Вычисление выражений в процессе разработки  
  Окно **Интерпретация** можно использовать для выполнения функции или подпрограммы во время разработки.  

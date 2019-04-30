@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a1fc24d27d079576128cf437fb1ee05c2fc78404
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62f40ffaa4df57672238274ca3a459dd3204bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417088"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60081558"
 В этом разделе содержатся сведения об устранении проблем, которые могут возникать при использовании эмулятора Visual Studio для Android.
 
 > [!WARNING]
->  Когда эмулятор установлен, программа установки проверяет наличие необходимых компонентов для запуска программного обеспечения. Если необходимые компоненты не установлены, она отображает предупреждения, но он не требует их установки.
+> Когда эмулятор установлен, программа установки проверяет наличие необходимых компонентов для запуска программного обеспечения. Если необходимые компоненты не установлены, она отображает предупреждения, но он не требует их установки.
 
  В этом разделе содержатся следующие подразделы.
 
@@ -70,7 +70,7 @@ ms.locfileid: "60081558"
  ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
->  Это сообщение относится к эмулятору Visual Studio для Android и к эмулятору Windows Phone. Windows 8.1 и Windows 10 поддерживают эмулятор.
+> Это сообщение относится к эмулятору Visual Studio для Android и к эмулятору Windows Phone. Windows 8.1 и Windows 10 поддерживают эмулятор.
 
  Если отображается данное сообщение, проверьте [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) , чтобы узнать, можно ли запустить эмулятор.
 

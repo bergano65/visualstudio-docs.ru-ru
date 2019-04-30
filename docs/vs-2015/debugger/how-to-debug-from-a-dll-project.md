@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6496d38e753d2338966916d1d7855abca77ace34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438490"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Практическое руководство. Отладка из проекта DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60102254"
  Если управляемая библиотека DLL вызывается машинным кодом и вы хотите отладить и то, и другое, это можно указать в свойствах проекта. Дополнительные сведения см. в разделе [Как Отладка в смешанном режиме](../debugger/how-to-debug-in-mixed-mode.md).  
   
 > [!NOTE]
->  Вы не можете указать внешнее вызывающее приложение в выпусках Express для Visual Studio. Вместо этого необходимо добавить проект исполняемого файла в решение, задать его в качестве запускаемого проекта и вызвать методы в библиотеке DLL из проекта исполняемого файла.  
+> Вы не можете указать внешнее вызывающее приложение в выпусках Express для Visual Studio. Вместо этого необходимо добавить проект исполняемого файла в решение, задать его в качестве запускаемого проекта и вызвать методы в библиотеке DLL из проекта исполняемого файла.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>Чтобы задать вызывающее приложение в проекте C++  
   

@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
+dev_langs:
+- CPP
+- CSharp
 ms.openlocfilehash: 911869a1d727e466cbf2d43557946efaba1f7dd4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922834"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 Расширяет [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) интерфейс, чтобы обеспечить получение модулей и процессов.
@@ -32,7 +35,7 @@ IDebugCodeContext3 : IDebugCodeContext2
 ## <a name="methods"></a>Методы
  В дополнение к методам на `IDebugCodeContext2` интерфейс, этот интерфейс реализует следующие методы:
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|Извлекает ссылку на интерфейс модуля отладки.|
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Извлекает ссылку на интерфейс процесс отладки.|

@@ -1,5 +1,5 @@
 ---
-title: 'DA0017: высокая скорость подкачки активной памяти на диск | Документы Майкрософт'
+title: DA0017. Высокая скорость подкачки активной памяти на диск | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136a8489ed3eac621543cb40b004052c2c9d3324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 00df8bf8757b9dba35537942716c37f66675bf32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435865"
 ---
-# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: высокая скорость подкачки активной памяти на диск
+# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017. Высокая скорость подкачки активной памяти на диск
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ИД правила | DA0017 |  
@@ -37,7 +37,7 @@ ms.locfileid: "54803492"
 ## <a name="rule-description"></a>Описание правила  
   
 > [!NOTE]
->  Это информационное правило применяется, когда подкачка активной памяти достигает значительного уровня. При возникновении очень высокого уровня подкачки вместо него срабатывает правило предупреждения [DA0014: исключительно высокая скорость подкачки активной памяти на диск](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md).  
+> Это информационное правило применяется, когда подкачка активной памяти достигает значительного уровня. При возникновении очень высокого уровня подкачки вместо него срабатывает правило предупреждения [DA0014. Исключительно высокая скорость подкачки активной памяти на диск](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md).  
   
  Чрезмерная частота подкачки на диск может быть вызвана нехваткой физической памяти. Если операции подкачки начинают преобладать на физическом диске, где находится файл подкачки, они могут замедлить другие операции приложений на том же диске.  
   

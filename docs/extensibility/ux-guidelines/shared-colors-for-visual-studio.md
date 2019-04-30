@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430234"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Общие цвета для Visual Studio
 При разработке пользовательского интерфейса, который использует общие элементы оболочки Visual Studio, или вы хотите быть согласованы с аналогичными функциями элемента интерфейса, используйте существующие имена токенов в файлах определений пакетов для выбора и назначения цветов. Таким образом можно обеспечить согласованность пользовательского интерфейса со всей средой Visual Studio и его автоматическое обновление при добавлении или обновлении тем.
@@ -1413,7 +1413,7 @@ ms.locfileid: "60089568"
 #### <a name="BKMK_CommandDropDown"></a> Раскрывающиеся панели команд
 
 > [!IMPORTANT]
->  Раскрывающийся список похож на поле со списком, но не имеет области для ввода и редактирования текста. Если раскрывающийся список включает область для ввода и редактирования текста, используйте токены цветов, указанные для [командной строке поля со списком](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Раскрывающийся список похож на поле со списком, но не имеет области для ввода и редактирования текста. Если раскрывающийся список включает область для ввода и редактирования текста, используйте токены цветов, указанные для [командной строке поля со списком](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
 ![Команды панели раскрывающегося списка (красная линия)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303 042_DropdownRedline")<br />Команды панели раскрывающегося списка (красная линия)
 

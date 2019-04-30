@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d34b7a915f2eb2bd1ddf9440c543d652de8eb892
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b1096755c1647f976b76ab61be1c24b358d4363d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412631"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Этот интерфейс представляет ссылку на свойство фрейма стека или некоторые другие свойства.
 
 > [!NOTE]
->  `IDebugReference2` зарезервирован для использования в будущем и все его методы должны возвращать `E_NOTIMPL`.
+> `IDebugReference2` зарезервирован для использования в будущем и все его методы должны возвращать `E_NOTIMPL`.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,7 +40,7 @@ IDebugReference2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugReference2`.
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|Получает [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структура, описывающая эту ссылку.|
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Задает значение этой ссылки из строки.|
@@ -57,7 +57,7 @@ IDebugReference2 : IUnknown
 ## <a name="remarks"></a>Примечания
 
 > [!NOTE]
->  Такое использование «свойства» не следует путать с, то есть переменную-член класса, несмотря на то что `IDebugReference2` может представлять такая сущность.
+> Такое использование «свойства» не следует путать с, то есть переменную-член класса, несмотря на то что `IDebugReference2` может представлять такая сущность.
 
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) представляет свойство, хотя `IDebugReference2` представляет ссылку на свойство, обычно ссылку на объект в отлаживаемой программы.
 

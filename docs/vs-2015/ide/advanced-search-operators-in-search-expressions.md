@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c2b8df3878f67207b22127881722aedd8caae8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6befa20bcda7f30896fb2b04fadefb0eb5f21f8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408409"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Операторы расширенного поиска в выражениях поиска
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54775578"
 С помощью операторов расширенного поиска, можно уточнить поиск содержимого путем создания более сложных выражений на основе простых. Как показано в следующей таблице, эти операторы ограничивают контекст, в котором выполняется запрос.  
   
 > [!WARNING]
->  Операторы расширенного поиска вводятся с двоеточием на конце и без промежуточных пробелов перед двоеточием: только так поисковая система сможет распознать их.  
+> Операторы расширенного поиска вводятся с двоеточием на конце и без промежуточных пробелов перед двоеточием: только так поисковая система сможет распознать их.  
   
 |Условие, которое требуется найти|Использовать|Пример|Результат|  
 |-------------------|---------|-------------|------------|  
@@ -43,12 +43,12 @@ ms.locfileid: "54775578"
 |Язык программирования|Использовать|  
 |--------------------------|---------|  
 |Visual Basic|code:vb<br /><br /> или<br /><br /> code:visualbasic|  
-|C#|code:C#<br /><br /> или<br /><br /> code:csharp|  
+|C#|code:c#<br /><br /> или<br /><br /> code:csharp|  
 |C++|code:cpp<br /><br /> или<br /><br /> code:c++<br /><br /> или<br /><br /> code:cplusplus|  
 |F#|code:f#<br /><br /> или<br /><br /> code:fsharp|  
 |JavaScript|code:javascript<br /><br /> или<br /><br /> code:js|  
 |XAML|code:xaml|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Логические операторы в выражениях поиска](../ide/logical-operators-in-search-expressions.md)   
  [Советы по полнотекстовому поиску](../ide/full-text-search-tips.md)

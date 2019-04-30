@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d486189b557c0c1146be68e6c0328cb49d5ed291
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6e8b7242fcd82db1a0cfb82cf6cd6df5a9f75084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435415"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232. Отметьте точки входа Windows Forms меткой STAThread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58993819"
  <xref:System.STAThreadAttribute> Указывает, что потоковой моделью COM для приложения является однопотоковое подразделение. Данный атрибут должен находиться в точке входа любого приложения, использующего Windows Forms; если он отсутствует, компоненты Windows могут работать неправильно. Если атрибут отсутствует, приложение использует модель многопотокового подразделения, которая не поддерживается для Windows Forms.
 
 > [!NOTE]
->  [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] проекты, использующие платформы приложений нет необходимости пометить **Main** метод с STAThread. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Компилятор делает это автоматически.
+> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] проекты, использующие платформы приложений нет необходимости пометить **Main** метод с STAThread. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Компилятор делает это автоматически.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, добавьте <xref:System.STAThreadAttribute> атрибута к точке входа. Если <xref:System.MTAThreadAttribute?displayProperty=fullName> присутствует атрибут, удалите ее.

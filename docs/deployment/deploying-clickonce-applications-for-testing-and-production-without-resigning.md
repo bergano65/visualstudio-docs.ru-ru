@@ -19,18 +19,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e111b0d04b8e703a694917985a0559c05584e25b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d573de9889d286a7b634890e0d8b469541bc741f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407051"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Развертывание приложений ClickOnce для тестирования и рабочих серверов без повторного подписывания
 В этой статье описывается это функция появилась в .NET Framework версии 3.5, которая включает развертывание приложений ClickOnce из нескольких мест сети без повторного подписывания приложения ClickOnce или манифесты ClickOnce.
 
 > [!NOTE]
->  Повторного подписывания по-прежнему является предпочтительным для развертывания новых версий приложений. По возможности используйте метод подписания заново. Дополнительные сведения см. в разделе [*Mage.exe* (инструмент создания и изменения манифестов)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+> Повторного подписывания по-прежнему является предпочтительным для развертывания новых версий приложений. По возможности используйте метод подписания заново. Дополнительные сведения см. в разделе [*Mage.exe* (инструмент создания и изменения манифестов)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
  Сторонних разработчиков и независимых поставщиков программного обеспечения, можно выбрать эту функцию, что облегчает пользователям обновлять свои приложения. Эта функция может использоваться в следующих ситуациях:
 

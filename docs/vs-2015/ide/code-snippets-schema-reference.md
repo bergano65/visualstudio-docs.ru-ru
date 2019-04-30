@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b49b1aa1022b12dc2d409037a1241f51b469a14c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436241"
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60114513"
  Задает имя сборки, на которую ссылается фрагмент кода.  
   
 > [!NOTE]
->  Элемент `Assembly` поддерживается только фрагментами кода Visual Basic.  
+> Элемент `Assembly` поддерживается только фрагментами кода Visual Basic.  
   
  В качестве текстового значения элемента **Assembly** выступает либо понятное текстовое имя сборки, например `System.dll`, либо строгое имя сборки, например `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.  
   
@@ -240,7 +240,7 @@ is a great color. I love Blue.
  Задает функцию, выполняемую при получении фокуса литералом или объектом в Visual Studio.  
   
 > [!NOTE]
->  Элемент `Function` поддерживается только фрагментами кода Visual C#.  
+> Элемент `Function` поддерживается только фрагментами кода Visual C#.  
   
 ```xml  
 <Function>  
@@ -289,7 +289,7 @@ is a great color. I love Blue.
  Задает URL-адрес, по которому можно получить дополнительные сведения о фрагменте кода.  
   
 > [!NOTE]
->  Visual Studio не использует элемент `HelpUrl`. Этот элемент является частью схемы XML фрагментов кода IntelliSense, и все содержащие его фрагменты кода действительны, однако значение элемента никогда не используется.  
+> Visual Studio не использует элемент `HelpUrl`. Этот элемент является частью схемы XML фрагментов кода IntelliSense, и все содержащие его фрагменты кода действительны, однако значение элемента никогда не используется.  
   
 ```xml  
 <HelpUrl>  
@@ -325,7 +325,7 @@ is a great color. I love Blue.
  Задает импортируемые пространства имен, используемые фрагментом кода IntelliSense.  
   
 > [!NOTE]
->  Элемент `Import` поддерживается только в проектах Visual Basic.  
+> Элемент `Import` поддерживается только в проектах Visual Basic.  
   
 ```xml  
 <Import>  
@@ -346,7 +346,7 @@ is a great color. I love Blue.
  Группирует отдельные элементы `Import`.  
   
 > [!NOTE]
->  Элемент `Imports` поддерживается только в проектах Visual Basic.  
+> Элемент `Imports` поддерживается только в проектах Visual Basic.  
   
 ```xml  
 <Imports>  
@@ -428,7 +428,7 @@ is a great color. I love Blue.
  Задает пространство имен, которое требуется импортировать для компиляции и запуска фрагмента кода. Пространство имен, заданное в элементе `Namespace`, автоматически добавляется в оператор `Imports` в начале кода в том случае, если оно еще не существует.  
   
 > [!NOTE]
->  Элемент `Namespace` поддерживается только в проектах Visual Basic.  
+> Элемент `Namespace` поддерживается только в проектах Visual Basic.  
   
 ```xml  
 <Namespace>  
@@ -475,7 +475,7 @@ is a great color. I love Blue.
  Задает сведения о ссылках на сборки, требуемые фрагментом кода.  
   
 > [!NOTE]
->  Элемент `Reference` поддерживается только в проектах Visual Basic.  
+> Элемент `Reference` поддерживается только в проектах Visual Basic.  
   
 ```xml  
 <Reference>  
@@ -497,7 +497,7 @@ is a great color. I love Blue.
  Группирует отдельные элементы `Reference`.  
   
 > [!NOTE]
->  Элемент `References` поддерживается только в проектах Visual Basic.  
+> Элемент `References` поддерживается только в проектах Visual Basic.  
   
 ```xml  
 <References>  
@@ -517,7 +517,7 @@ is a great color. I love Blue.
  Задает краткий текст, используемый для вставки фрагмента кода. Текстовое значение элемента `Shortcut` может содержать только буквенно-цифровые знаки, дефисы ( - ) и символы подчеркивания ( _ ).  
   
 > [!CAUTION]
->  Символы "_" и "–" не поддерживаются в элементах Shortcut фрагментов кода C++.  
+> Символы "_" и "–" не поддерживаются в элементах Shortcut фрагментов кода C++.  
   
 ```xml  
 <Shortcut>  
@@ -644,7 +644,7 @@ is a great color. I love Blue.
  Задает URL-адрес, предоставляющий дополнительные сведения о сборке, на которую создается ссылка.  
   
 > [!NOTE]
->  Элемент `Url` поддерживается только в проектах Visual Basic.  
+> Элемент `Url` поддерживается только в проектах Visual Basic.  
   
 ```xml  
 <Url>  

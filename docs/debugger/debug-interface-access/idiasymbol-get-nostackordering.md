@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0774477ac200ca7c810cf4a7e5925c137b292c85
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d36a934fe9475613e916d51290ac6f8960a6b42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399284"
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
 Эта функция получает флаг, указывающий, можно ли сделать нет упорядоченности стека как часть проверки буфера стека ([/GS (проверка безопасности буфера)](/cpp/build/reference/gs-buffer-security-check) параметр компилятора).
@@ -39,7 +39,7 @@ HRESULT get_noStackOrdering(
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
 ## <a name="requirements"></a>Требования
 
@@ -48,6 +48,6 @@ HRESULT get_noStackOrdering(
 |Заголовок:|dia2.h|
 |Версия:|ПАКЕТ SDK для версии 8.0|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [/GS (проверка безопасности буфера)](/cpp/build/reference/gs-buffer-security-check)

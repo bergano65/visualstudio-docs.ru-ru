@@ -1,6 +1,6 @@
 ---
 title: Наборы правил анализатора
-ms.date: 07/20/2018
+ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387701"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Наборы правил для анализаторов Roslyn
 
@@ -25,7 +25,7 @@ ms.locfileid: "57867001"
 
 ## <a name="use-analyzer-rule-sets"></a>Использование наборов правил анализатора
 
-После того как вы [установить пакет NuGet анализатора](install-roslyn-analyzers.md), найдите предопределенное правило, задайте его *наборы правил* каталог, например *% USERPROFILE %\\.nuget\packages\ Microsoft.codequality.analyzers\<версии > \rulesets*. После этого вы можно перетащите, или скопируйте и вставьте один или несколько наборов правил, в проект Visual Studio в **обозревателе решений**.
+После того как вы [установить пакет NuGet анализатора](install-roslyn-analyzers.md), найдите предопределенное правило, задайте его *наборы правил* каталога. Например, если ссылка на `Microsoft.CodeAnalysis.FxCopAnalyzers` анализатора пакетов, то вы найдете его каталог наборов правил в *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<версии \>\rulesets*. После этого вы можно перетащите, или скопируйте и вставьте один или несколько наборов правил, в проект Visual Studio в **обозревателе решений**.
 
 Чтобы сделать активный набор правил для анализа набора правил, щелкните правой кнопкой мыши проект в **обозревателе решений** и выберите **свойства**. На страницах свойств проекта, выберите **анализа кода** вкладки. В разделе **выполнить этот набор правил**выберите **Обзор**, а затем выберите набор правил, который вы скопировали каталог проекта. Теперь вы видите только нарушения правил для этих правил, которые включены в выбранный набор правил.
 
@@ -54,7 +54,7 @@ ms.locfileid: "57867001"
 
 ## <a name="see-also"></a>См. также
 
-- [Анализаторы часто задаваемые вопросы](analyzers-faq.md)
+- [Часто задаваемые вопросы по анализаторам](analyzers-faq.md)
 - [Обзор анализаторов на платформе .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Установка анализаторов](install-roslyn-analyzers.md)
 - [Использовать анализаторы](use-roslyn-analyzers.md)

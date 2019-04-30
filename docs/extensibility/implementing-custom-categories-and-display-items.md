@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60ad63bd5a6fa3b8cca2a288e1c42b1a2ab326bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418842"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Реализовать пользовательские категории и отображать элементы
 VSPackage может предоставить контроль над шрифты и цвета текста для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) через пользовательские категории и отображаемые элементы.
@@ -88,7 +88,7 @@ VSPackage может предоставить контроль над шрифт
   - Отображаемые сведения для каждого члена **категории**.
 
   > [!NOTE]
-  >  Каждый **категории** должен содержать по крайней мере один **отображаемым элементом**.
+  > Каждый **категории** должен содержать по крайней мере один **отображаемым элементом**.
 
 - Интегрированная среда разработки использует <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> интерфейса позволяет определить объединение несколько категорий.
 
@@ -120,7 +120,7 @@ VSPackage может предоставить контроль над шрифт
      Это можно сделать через реализовать систему <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс. Несмотря на то что в основном для поддержки сохраняемости, <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> метод может быть использован для получения данные шрифта и цвета для **отображаемые элементы**. Дополнительные сведения см. в разделе [доступа хранятся параметры шрифта и цвета](../extensibility/accessing-stored-font-and-color-settings.md).
 
     > [!NOTE]
-    >  Чтобы обеспечить правильность результатов, полученных опроса, часто бывает полезно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> интерфейс, чтобы определить необходимость сброса кэша и обновления перед вызовом методов извлечения <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.
+    > Чтобы обеспечить правильность результатов, полученных опроса, часто бывает полезно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> интерфейс, чтобы определить необходимость сброса кэша и обновления перед вызовом методов извлечения <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.
 
 ## <a name="see-also"></a>См. также
 

@@ -10,12 +10,12 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e5900d5c818883ffc78b2399b937c80307b52c36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 11a98599a9812cd00650d113170ff55c01ac44db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435899"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Практическое руководство. Предоставить контекст для редакторов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "60116528"
      При **динамической справки** вызовы в окна <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> чтобы указать, что он обновляется, редактора или конструктора в это время можно обновить контекст соответствующим образом для любой подконтекстов и родительским контейнером контекста.  
   
     > [!NOTE]
-    >  `SetDirty` Флаг автоматически присваивается `true` каждый раз, когда добавляется или удаляется из контейнера контекстов контекста. **Динамической справки** окно вызывает только <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> на контейнер контекста при `SetDirty` флаг имеет значение `true`. Он сбрасывается до `false` после обновления.  
+    > `SetDirty` Флаг автоматически присваивается `true` каждый раз, когда добавляется или удаляется из контейнера контекстов контекста. **Динамической справки** окно вызывает только <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> на контейнер контекста при `SetDirty` флаг имеет значение `true`. Он сбрасывается до `false` после обновления.  
   
 3. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> Чтобы добавить контекст в активном контексте коллекцию или <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> удаляемый контекст.  
   
@@ -75,7 +75,7 @@ ms.locfileid: "60116528"
  Если вы создаете собственный редактор, необходимо выполнить все три процедуры, описанные в этом разделе, чтобы предоставить контекст для редактора.  
   
 > [!NOTE]
->  Чтобы правильно активировать окно редактора или конструктора и убедитесь, что команда правильное обновление маршрутизации, необходимо вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> этот компонент, чтобы сделать его окну.  
+> Чтобы правильно активировать окно редактора или конструктора и убедитесь, что команда правильное обновление маршрутизации, необходимо вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> этот компонент, чтобы сделать его окну.  
   
  Идентификатор SEID — это коллекция свойств, которые изменяются на основании выбора. Идентификатор SEID информация доступна через глобального выделения. Глобального выделения подключен в события, вызванные <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> интерфейс, и список всего содержимого, выбрал (текущий редактор, окно текущего средства, текущей иерархии и т. д.).  
   

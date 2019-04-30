@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbd637fa78e9290402990bdbbc237e0f431e14d7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2a0638b0e644242e471ff30bc58d550675089695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434684"
 ---
 # <a name="sccdirdiff-function"></a>Функция SccDirDiff
 Эта функция отображает различия между текущий локальный каталог на диске клиента и соответствующий проект в системе управления версиями.
@@ -58,7 +58,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>Возвращаемое значение
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |SCC_OK|Каталог на диске совпадает со значением в проект в системе управления версиями.|
 |SCC_I_FILESDIFFER|Каталог на диске отличается от проекта в системе управления версиями.|
@@ -83,7 +83,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|Если поддерживается подключаемый модуль, автоматически сравнивает каталогу с помощью по метке времени или, если не поддерживается, возвращается обратно SCC_DIFF_QD_CHECKSUM или SCC_DIFF_QD_CONTENTS.|
 
 > [!NOTE]
->  Эта функция использует те же флаги команды, как [SccDiff](../extensibility/sccdiff-function.md). Тем не менее подключаемый модуль системы управления версиями, можно не поддерживает операцию «quick-diff» для каталогов.
+> Эта функция использует те же флаги команды, как [SccDiff](../extensibility/sccdiff-function.md). Тем не менее подключаемый модуль системы управления версиями, можно не поддерживает операцию «quick-diff» для каталогов.
 
 ## <a name="see-also"></a>См. также
 - [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)

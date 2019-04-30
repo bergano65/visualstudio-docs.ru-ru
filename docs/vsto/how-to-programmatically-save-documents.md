@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0e455df89a3dfece2c5d4c8cd36a26af816f720a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419461"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Практическое руководство. Программное сохранение документов
   Существует несколько способов сохранения документов Microsoft Office Word. Можно сохранить документ без изменения имени документа или сохранении документа с новым именем.
@@ -54,14 +54,14 @@ ms.locfileid: "60056280"
  Метод SaveAs Сохранение документа с новым именем. Можно использовать этот метод <xref:Microsoft.Office.Tools.Word.Document> ведущего элемента в проекте уровня документа Word или собственного <xref:Microsoft.Office.Interop.Word.Document> объекта в любом проекте Word. Этот метод требует указания нового имени файла, что остальные аргументы необязательны.
 
 > [!NOTE]
->  При отображении **"Сохранить как"** диалоговое окно внутри класса <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> обработчик событий `ThisDocument` и задайте *отменить* параметр **false**, приложение может неожиданно прекратить работу. Если задать *отменить* параметр **true**, появится сообщение об ошибке, указывающее, что эта функция отключена.
+> При отображении **"Сохранить как"** диалоговое окно внутри класса <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> обработчик событий `ThisDocument` и задайте *отменить* параметр **false**, приложение может неожиданно прекратить работу. Если задать *отменить* параметр **true**, появится сообщение об ошибке, указывающее, что эта функция отключена.
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Чтобы сохранить документ, связанный с настройкой уровня документа с новым именем
 
 1. Вызовите <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> метод `ThisDocument` в своем проекте, используя полный путь и имя файла. Если файл с таким именем уже существует в этой папке, он будет перезаписан без запроса подтверждения. Чтобы использовать этот пример кода, запустите его из класса `ThisDocument` .
 
     > [!NOTE]
-    >  <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Метод вызывает исключение, если целевой каталог не существует или других проблем, сохранение файла. Рекомендуется использовать **try... catch** блокировать вокруг <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> метод или внутри вызывающего метода.
+    > <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> Метод вызывает исключение, если целевой каталог не существует или других проблем, сохранение файла. Рекомендуется использовать **try... catch** блокировать вокруг <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> метод или внутри вызывающего метода.
 
      [!code-vb[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#10)]
@@ -73,7 +73,7 @@ ms.locfileid: "60056280"
      В следующем примере кода Сохранение активного документа под новым именем. Чтобы использовать этот пример кода, запустите его из класса `ThisDocument` или `ThisAddIn` в своем проекте.
 
     > [!NOTE]
-    >  <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Метод вызывает исключение, если целевой каталог не существует или других проблем, сохранение файла. Рекомендуется использовать **try... catch** блокировать вокруг <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> метод или внутри вызывающего метода.
+    > <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> Метод вызывает исключение, если целевой каталог не существует или других проблем, сохранение файла. Рекомендуется использовать **try... catch** блокировать вокруг <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> метод или внутри вызывающего метода.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#10)]

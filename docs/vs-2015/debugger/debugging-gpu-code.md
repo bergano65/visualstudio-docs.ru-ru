@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07e3c15fad2758de965d0e13c2b64ac3ceebd2fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434867"
 ---
 # <a name="debugging-gpu-code"></a>Отладка кода GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60114136"
  Поддерживается отладка в [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)] и [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Для отладки в программном эмуляторе требуется [!INCLUDE[win8](../includes/win8-md.md)] или [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Для отладки на оборудовании необходимо установить драйверы для видеокарты. Не все производители оборудования реализуют полный набор функций для отладки. См. информацию об ограничениях в документации производителя.  
   
 > [!NOTE]
->  Независимые производители оборудования, желающие реализовать поддержку отладки GPU в Visual Studio, должны создать библиотеку DLL, реализующую интерфейс VSD3DDebug для взаимодействия с драйверами производителей.  
+> Независимые производители оборудования, желающие реализовать поддержку отладки GPU в Visual Studio, должны создать библиотеку DLL, реализующую интерфейс VSD3DDebug для взаимодействия с драйверами производителей.  
   
 ## <a name="configuring-gpu-debugging"></a>Настройка отладки GPU  
  Отладчик не может прерывать выполнение одновременно кода ЦП и кода GPU при работе одного приложения. По умолчанию отладчик прерывает выполнение кода ЦП. Для отладки кода GPU следует выполнить одно из указанных ниже действий.  

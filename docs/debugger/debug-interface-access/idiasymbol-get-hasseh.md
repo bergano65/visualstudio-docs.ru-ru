@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf5d6f31d25d72cd6bc71f9d8b17443b3d8fc8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 41987007dd5121dff8cce1eb91ea9e1c4d93578c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401439"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
-Получает флаг, указывающий, содержит ли функция любой [структурированная обработка исключений (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (например, __try /\__except блоков).
+Получает флаг, указывающий, содержит ли функция любой [структурированная обработка исключений (C /C++)](/cpp/cpp/structured-exception-handling-c-cpp) (например, __try /\__except блоков).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,7 +39,7 @@ HRESULT get_hasSEH(
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
 ## <a name="requirements"></a>Требования
 
@@ -48,6 +48,6 @@ HRESULT get_hasSEH(
 |Заголовок:|dia2.h|
 |Версия:|ПАКЕТ SDK для версии 8.0|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Структурированная обработка исключений (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp)

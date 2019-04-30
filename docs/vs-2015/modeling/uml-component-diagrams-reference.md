@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 581906741bb43eb221c6a0b6f6bb9aeccd2f3945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424386"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML-схемы компонентов: Ссылка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59656990"
  Дополнительные сведения об использовании схем компонентов в процессе разработки см. в разделе [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  В этом разделе описаны элементы, которые можно использовать на схемах компонентов. Более подробную информацию о рисовании схем компонентов см. в разделе [UML-схемы компонентов: Рекомендации по](../modeling/uml-component-diagrams-guidelines.md). Дополнительные сведения о том, как в целом схем моделирования см. в разделе [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md).  
+> В этом разделе описаны элементы, которые можно использовать на схемах компонентов. Более подробную информацию о рисовании схем компонентов см. в разделе [UML-схемы компонентов: Рекомендации по](../modeling/uml-component-diagrams-guidelines.md). Дополнительные сведения о том, как в целом схем моделирования см. в разделе [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Чтение схем компонентов  
  В таблице ниже описаны элементы, которые можно использовать на схеме компонентов, и их основные свойства. Полный список свойств элементов, см. в разделе [свойства элементов на UML-схемы компонентов](../modeling/properties-of-elements-on-uml-component-diagrams.md).  

@@ -12,12 +12,12 @@ ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 69a26aa18ceebcfd0f1b973499dc2e32995d58c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8c3ae2ce451f076c33ea5613b71c6d262c1d7a0e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430825"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ typedef BOOL (*POPLISTFUNC) (
  Для каждого файла, подключаемый модуль системы управления версиями, которые требуется добавить или удалить из списка файлов, он вызывает эту функцию, передавая `lpFileName`. `fAddRemove` Флаг указывает, новый файл для добавления в список или удалить старый файл. `nStatus` Дает состояние файла. После завершения добавления и удаления файлов подключаемого модуля SCC, она возвращает [SccPopulateList](../extensibility/sccpopulatelist-function.md) вызова.  
   
 > [!NOTE]
->  `SCC_CAP_POPULATELIST` Бит функции является обязательным для Visual Studio.  
+> `SCC_CAP_POPULATELIST` Бит функции является обязательным для Visual Studio.  
   
 ## <a name="see-also"></a>См. также  
  [Функции обратного вызова, реализованные интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30ffd684eb6527ee73e54cc590dc3e4b1d3c51d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429342"
 ---
 # <a name="web-project-essentials"></a>Основные компоненты веб-проекта
 Веб-проекты создания веб-приложений. Веб-проект можно использовать для создания веб-приложение имеет смарт-веб-страницы. Смарт-веб-страницы имеет серверный код, который выполняет визуализацию веб-страницы по запросу.
@@ -35,7 +35,7 @@ ms.locfileid: "60071335"
 - Отдельно от веб-сайта, сам находится файл решения веб-проекта. По умолчанию файлы решения приведены в \Documents and Settings\\*Ваша_учетная_запись*\My Documents\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*.
 
   > [!NOTE]
-  >  Если вы хотите сохранить файл решения веб-сайт, просто перенесите ее и снова открыть его.
+  > Если вы хотите сохранить файл решения веб-сайт, просто перенесите ее и снова открыть его.
 
 - При открытии веб-сайт, который имеет отсутствует файл решения в Visual Studio, для нее автоматически создается новый файл решения.
 

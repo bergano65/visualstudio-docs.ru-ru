@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436808"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Присоединение к выполняемым процессам с использованием отладчика Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,10 +133,10 @@ ms.locfileid: "60053303"
 |Отладка приложения универсальной Windows (UWP), OneCore, HoloLens и IoT, вы не запускали из Visual Studio|Отладка установленного пакета приложения|Н/Д|Используйте **отладка: другие целевые объекты отладки / Debug пакет установленные приложения** вместо **присоединение к процессу**|
 
 > [!WARNING]
->  Для присоединения к универсальному приложению Windows, которое написано на JavaScript, сначала необходимо включить отладку для приложения. См. раздел [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) в Центре разработчика Windows.
+> Для присоединения к универсальному приложению Windows, которое написано на JavaScript, сначала необходимо включить отладку для приложения. См. раздел [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) в Центре разработчика Windows.
 
 > [!NOTE]
->  Чтобы отладчик мог присоединиться к коду на языке C++, код должен предоставлять `DebuggableAttribute`. Это можно добавить в код автоматически, путем связывания с параметром [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) компоновщика.
+> Чтобы отладчик мог присоединиться к коду на языке C++, код должен предоставлять `DebuggableAttribute`. Это можно добавить в код автоматически, путем связывания с параметром [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) компоновщика.
 
 ## <a name="what-debugger-features-can-i-use"></a>Какие возможности отладчика можно использовать?
 

@@ -11,12 +11,12 @@ ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 812862c3eaf99b7459bb422e174f8fe155ea384a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d450e02d23159f186fd85bf1b687a2fb2c18e82a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432578"
 ---
 # <a name="how-to-use-the-activity-log"></a>Практическое руководство. Использование журнала действий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60042591"
 Пакеты VSPackage может записать события в журнале действий. Эта функция особенно полезна для отладки пакетов VSPackage в средах розничной торговли.  
   
 > [!TIP]
->  Журнал действий всегда включен. Visual Studio будет хранить скользящий буфер последние 100 записей, а также для первых десяти записей, которые имеют общие сведения о настройке.  
+> Журнал действий всегда включен. Visual Studio будет хранить скользящий буфер последние 100 записей, а также для первых десяти записей, которые имеют общие сведения о настройке.  
   
 ### <a name="to-write-an-entry-to-the-activity-log"></a>Для записи в журнал действий  
   

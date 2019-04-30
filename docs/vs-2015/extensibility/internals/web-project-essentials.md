@@ -10,12 +10,12 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7c7b3641a6c9fbc680f4a902b2f0e5d7bf331401
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b3208230b438eb52c68ef5709cbb0d6628b60ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430167"
 ---
 # <a name="web-project-essentials"></a>Основные компоненты веб-проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60090697"
 - Отдельно от веб-сайта, сам находится файл решения веб-проекта. По умолчанию файлы решения приведены в \Documents and Settings\\*Ваша_учетная_запись*\My Documents\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*.  
   
     > [!NOTE]
-    >  Если вы хотите сохранить файл решения веб-сайт, просто перенесите ее и снова открыть его.  
+    > Если вы хотите сохранить файл решения веб-сайт, просто перенесите ее и снова открыть его.  
   
 - При открытии веб-сайт, который имеет отсутствует файл решения в Visual Studio, для нее автоматически создается новый файл решения.  
   

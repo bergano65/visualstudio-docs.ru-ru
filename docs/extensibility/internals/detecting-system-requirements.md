@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420709"
 ---
 # <a name="detect-system-requirements"></a>Определить требования к системе
 Пакет VSPackage не может работать, если не установлена среда Visual Studio. При использовании установщика Windows для управления установкой вашего VSPackage, можно настроить программу установки, чтобы обнаруживать наличие установленного Visual Studio. Кроме того, можно также настроить для проверки системы другие требования, например, на конкретную версию Windows или определенный объем ОЗУ.
@@ -33,7 +33,7 @@ ms.locfileid: "60050511"
 При установке более нового выпуска, разделы реестра для этого выпуска также добавляются как и для более ранних версий. То есть, если установлен выпуск Enterprise, **установить** ключ имеет значение *1* для предприятия, а также в выпусках Professional и Community. Таким образом необходимо проверить только для самой последней версии, что нужно.
 
 > [!NOTE]
->  32-разрядные ключи в 64-разрядной версии редактора реестра, указанных в списке **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Visual Studio приведены в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
+> 32-разрядные ключи в 64-разрядной версии редактора реестра, указанных в списке **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Visual Studio приведены в разделе **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
 
 |Продукт|Ключ|
 |-------------|---------|

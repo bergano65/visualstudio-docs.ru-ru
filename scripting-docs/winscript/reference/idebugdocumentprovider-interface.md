@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5632134c86b5aa0e3cb769a68d2d4cfd944ff35c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008681"
 ---
 # <a name="idebugdocumentprovider-interface"></a>Интерфейс IDebugDocumentProvider
 Предоставляет средства для создания экземпляра документа по требованию.  
@@ -36,6 +36,6 @@ ms.locfileid: "58157214"
   
   Помимо методов, наследуемых от `IDebugDocumentInfo`, `IDebugDocumentProvider` интерфейс предоставляет следующие методы.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IDebugDocumentProvider::GetDocument](../../winscript/reference/idebugdocumentprovider-getdocument.md)|В результате документ создаваться, если он еще не существует.|

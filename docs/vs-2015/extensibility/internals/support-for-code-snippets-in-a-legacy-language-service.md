@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a96e6b10b68fc3b3275fbadb07de310c224da8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408456"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Поддержка фрагментов кода в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60104918"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [Пошаговое руководство: Реализация фрагментов кода](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
   
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Управляемые поддерживают Framework пакета для фрагментов кода  
  Managed package framework (MPF) поддерживает большинство функциональность фрагмента, чтение шаблона для вставки фрагмента кода и включение специальный режим правки. Поддержка осуществляется через <xref:Microsoft.VisualStudio.Package.ExpansionProvider> класса.  
@@ -395,4 +395,4 @@ namespace TestLanguagePackage
  [Функции службы устаревшего языка](../../extensibility/internals/legacy-language-service-features1.md)   
  [Регистрация языковой службы прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Фрагменты кода](../../ide/code-snippets.md)   
- [Пошаговое руководство: Получение списка фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+ [Пошаговое руководство: получение списка установленных фрагментов кода (реализация прежних версий)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

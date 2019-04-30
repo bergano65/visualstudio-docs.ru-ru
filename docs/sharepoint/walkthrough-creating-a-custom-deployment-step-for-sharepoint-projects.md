@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d4f42793c061436fee83e007def9f1d7e1d8f7c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430429"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Пошаговое руководство. Создание пользовательского шага развертывания для проектов SharePoint
   При развертывании проекта SharePoint, Visual Studio выполняет ряд шагов развертывания в определенном порядке. Visual Studio включает многие встроенные шаги развертывания, но можно также создать свои собственные.
@@ -74,7 +74,7 @@ ms.locfileid: "60040176"
 3. В **новый проект** диалогового окна разверните узел **Visual C#** или **Visual Basic** узлов и нажмите кнопку **расширяемости** узла.
 
     > [!NOTE]
-    >  **Расширяемости** узел доступен только в том случае, если установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе "Предварительные требования" ранее в этом разделе.
+    > **Расширяемости** узел доступен только в том случае, если установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе "Предварительные требования" ранее в этом разделе.
 
 4. В верхней части диалоговое окно, выберите **.NET Framework 4.5** в списке версий .NET Framework.
 
@@ -147,7 +147,7 @@ ms.locfileid: "60040176"
 1. В **DeploymentStepExtension** проекта, откройте файл кода UpgradeStep и вставьте в него следующий код.
 
     > [!NOTE]
-    >  После добавьте следующий код, проект будет содержать некоторые ошибки компиляции, но они будут исчезнуть при добавлении кода в последующих шагах.
+    > После добавьте следующий код, проект будет содержать некоторые ошибки компиляции, но они будут исчезнуть при добавлении кода в последующих шагах.
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
@@ -205,7 +205,7 @@ ms.locfileid: "60040176"
 6. В **тип** выберите **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. В **источника** выберите **проект в текущем решении**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "60040176"
 10. В **тип** , введите **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Этот элемент задает пользовательское расширение, которое вы хотите включить в расширение Visual Studio. Дополнительные сведения см. в разделе [активов элемент (Схема VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Этот элемент задает пользовательское расширение, которое вы хотите включить в расширение Visual Studio. Дополнительные сведения см. в разделе [активов элемент (Схема VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. В **источника** выберите **проект в текущем решении**.
 
@@ -262,7 +262,7 @@ ms.locfileid: "60040176"
 6. В разделе **Какова степень доверия для этого решения SharePoint**, выберите **развернуть как решение фермы** переключатель.
 
    > [!NOTE]
-   >  Шаг развертывания обновления не поддерживает изолированные решения.
+   > Шаг развертывания обновления не поддерживает изолированные решения.
 
 7. Выберите **Готово** кнопки.
 

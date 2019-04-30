@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431234"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Практическое руководство. Добавление и удаление компонентов и элементов в пакете с помощью обозревателя пакетов
   Чтобы настроить пакет для развертывания компонентов и элементов SharePoint, можно использовать обозреватель пакетов. Компоненты и элементы проектов SharePoint можно настроить в WSP-файле.
@@ -51,7 +51,7 @@ ms.locfileid: "60104464"
     - Откройте контекстное меню для компонента, выберите **Вырезать**, откройте контекстное меню для проекта, к которому вы хотите переместить компонент, а затем выберите **вставить**.
 
     > [!NOTE]
-    >  Эта процедура используется в случае, если в решении имеется несколько проектов SharePoint.
+    > Эта процедура используется в случае, если в решении имеется несколько проектов SharePoint.
 
 ## <a name="validate-a-feature-or-package"></a>Проверка компонента или пакета
  Проверка файлов можно выявлять потенциальные проблемы в функциях SharePoint и пакетов. Предупреждения и ошибки отображаются в окне вывода и окно списка ошибок.

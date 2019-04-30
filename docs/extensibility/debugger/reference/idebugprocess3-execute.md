@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295db356ea11bb24eb8e121aca0fe54c015ef5e9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 5f9afe4bb5087c7589415a6ae7fc143f5fd01b21
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413215"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 По-прежнему запускать этот процесс в остановленном состоянии. Очистить все предыдущие состояния выполнения (например, шаг), и процесс начинается снова выполните.
 
 > [!NOTE]
->  Этот метод следует использовать вместо [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).
+> Этот метод следует использовать вместо [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,7 +51,7 @@ int Execute(
  Когда пользователь начинает выполнение в остановленном состоянии, в какой-либо другой процесс потока, этот метод вызывается об этом процессе. Этот метод также вызывается, когда пользователь выбирает **запустить** команду **Отладка** меню в интегрированной среде разработки. Реализация этого метода может быть простым вызовом [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) метода в текущем потоке в процессе.
 
 > [!WARNING]
->  В случае остановки или немедленно (синхронно) событие, чтобы не отправлять [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может зависнуть.
+> В случае остановки или немедленно (синхронно) событие, чтобы не отправлять [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) при обработке этого вызова; в противном случае отладчик может зависнуть.
 
 ## <a name="see-also"></a>См. также
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

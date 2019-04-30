@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88bfb7d117f646a74c4242cbf851711e9179196
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430344"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Пошаговое руководство. Расширение типа элемента проекта SharePoint
   Можно использовать **Business Data Connectivity Model** элемент проекта для создания модели для службы бизнес-данным (BDC) в SharePoint. По умолчанию при создании модели с помощью этого элемента проекта, данные в модели не отображается для пользователей. Также необходимо создать внешний список в SharePoint, чтобы пользователи могли просматривать данные.
@@ -67,7 +67,7 @@ ms.locfileid: "60057866"
 3. В **новый проект** диалогового окна разверните узел **Visual C#** или **Visual Basic** узлов и нажмите кнопку **расширяемости** узла.
 
     > [!NOTE]
-    >  **Расширяемости** узел доступен только в том случае, если установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе "Предварительные требования" ранее в этом разделе.
+    > **Расширяемости** узел доступен только в том случае, если установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе "Предварительные требования" ранее в этом разделе.
 
 4. В списке в верхней части **новый проект** диалоговом окне выберите **.NET Framework 4.5**.
 
@@ -132,7 +132,7 @@ ms.locfileid: "60057866"
 1. Вставьте следующий код в файле кода ProjectItemExtension.
 
     > [!NOTE]
-    >  После добавления этого кода, проект будет содержать некоторые ошибки компиляции. Эти ошибки исчезнут при добавлении кода в последующих шагах.
+    > После добавления этого кода, проект будет содержать некоторые ошибки компиляции. Эти ошибки исчезнут при добавлении кода в последующих шагах.
 
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]
@@ -176,7 +176,7 @@ ms.locfileid: "60057866"
 6. В **тип** выберите **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. В **источника** выберите **проект в текущем решении**.
 

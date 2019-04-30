@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431434"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60081428"
  Если окно консоли JavaScript закрыто, его можно открыть при отладке в Visual Studio, выбрав **Отладка** > **Windows** > **Консоль JavaScript**.  
   
 > [!NOTE]
->  Если во время сеанса отладки окно недоступно, убедитесь, что в свойствах отладки проекта тип отладчика установлен на **Скрипт** .  
+> Если во время сеанса отладки окно недоступно, убедитесь, что в свойствах отладки проекта тип отладчика установлен на **Скрипт** .  
   
 ## <a name="console-object-commands"></a>команды объекта console  
  В этой таблице показан синтаксис для команд объекта `console` , которые можно использовать в окне консоли JavaScript или для отправки сообщений в консоль из кода. Этот объект предоставляет несколько форм, позволяющих при необходимости разделять информационные сообщения и сообщения об ошибках.  
@@ -43,7 +43,7 @@ ms.locfileid: "60081428"
  Чтобы отличить эту консоль от именованной консоли локальных объектов, можно воспользоваться более длинной командой из `window.console.[command]` .  
   
 > [!TIP]
->  Более ранние версии Visual Studio не поддерживают полный набор команд. Для быстрого получения информации о поддерживаемых командах используйте IntelliSense для объекта консоли.  
+> Более ранние версии Visual Studio не поддерживают полный набор команд. Для быстрого получения информации о поддерживаемых командах используйте IntelliSense для объекта консоли.  
   
 |Команда|Описание|Пример|  
 |-------------|-----------------|-------------|  

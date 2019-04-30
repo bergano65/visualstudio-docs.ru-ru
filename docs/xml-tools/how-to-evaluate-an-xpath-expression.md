@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1585b54d084e3471583f9388d63f5c17e65fc3a7
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002089"
 ---
 # <a name="evaluate-xpath-expressions"></a>Вычисление выражения XPath
 
@@ -28,7 +28,7 @@ ms.locfileid: "57526326"
 > [!NOTE]
 > Отладка XSLT доступна только в выпуске Visual Studio Enterprise.
 
-## <a name="evaluate-an-xpath-expression"></a>Оценка выражения XPath
+## <a name="evaluate-an-xpath-expression"></a>Вычисление выражения XPath
 
 В следующей процедуре используется *ниже average.xsl* и *books.xml* файлов из [Пошаговое руководство: Отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) страницы.
 

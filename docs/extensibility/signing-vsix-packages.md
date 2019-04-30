@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 952195ab33b9a7e35265f5ecf40a8de3cf958fb3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7d2da473d201ff02b65262190158da1818bb1816
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434575"
 ---
 # <a name="signing-vsix-packages"></a>Подписывание пакетов VSIX
 Расширения сборки не обязательно должны быть подписаны, прежде чем они могут работать в Visual Studio, но рекомендуется сделать это.
@@ -27,7 +27,7 @@ ms.locfileid: "56720592"
  Если вы хотите защитить ваше расширение и убедитесь, что оно не было изменено, можно добавить цифровую подпись в пакет VSIX. При подписании VSIX, установщик VSIX отобразит сообщение о том, что он подписан, а также дополнительные сведения о сама подпись. Если содержимое VSIX были изменены, а VSIX снова не подписана, установщик VSIX покажет, что подпись не является допустимым. Установка не прекращается, но пользователь получает предупреждение.
 
 > [!IMPORTANT]
->  Начиная с Visual Studio 2015, подписываются с использованием ничего, кроме SHA256 шифрование пакетов VSIX будет определяться как имеющий недопустимую подпись. Установка VSIX не блокируется, но пользователь отображается предупреждение.
+> Начиная с Visual Studio 2015, подписываются с использованием ничего, кроме SHA256 шифрование пакетов VSIX будет определяться как имеющий недопустимую подпись. Установка VSIX не блокируется, но пользователь отображается предупреждение.
 
 ## <a name="signing-a-vsix-with-vsixsigntool"></a>Подписи VSIX с VSIXSignTool
  SHA256 шифрование, подписи средство, доступное из [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) на сайте nuget.org в [VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).

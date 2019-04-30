@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 768bfc5de11f8b7fa6c3cd8988dbcc70633dde89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b104a7a0451da7f772077d2f566b36b9f601c17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433810"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Практическое руководство. Включить параметры безопасности ClickOnce-приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60082834"
      Теперь можно настроить параметры безопасности для приложения на странице «Безопасность».  
   
     > [!NOTE]
-    >  Этот флажок выбран автоматически каждый раз при публикации приложения с помощью **публикации** мастера.  
+    > Этот флажок выбран автоматически каждый раз при публикации приложения с помощью **публикации** мастера.  
   
 ### <a name="to-disable-clickonce-security-settings"></a>Чтобы отключить параметры безопасности ClickOnce-приложений  
   
@@ -57,7 +57,7 @@ ms.locfileid: "60082834"
      Приложение будет выполняться с параметрами безопасности полного доверия; все параметры для **безопасности** страницы будет игнорироваться.  
   
     > [!NOTE]
-    >  Каждый раз при публикации приложения с помощью мастера публикации, этот флажок будет установлен; После успешной публикации необходимо удалить ее.  
+    > Каждый раз при публикации приложения с помощью мастера публикации, этот флажок будет установлен; После успешной публикации необходимо удалить ее.  
   
 ## <a name="see-also"></a>См. также  
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   

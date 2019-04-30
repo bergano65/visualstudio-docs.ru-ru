@@ -13,11 +13,11 @@ ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
 ms.openlocfilehash: 4bfda342952820b4472a1f826273a7b9075faa9a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963997"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Добавление мобильных служб с помощью подключенных служб Visual Studio
 Visual Studio 2015 позволяет подключаться к мобильным службам Azure с помощью **добавить подключенную службу** диалоговое окно. Можно подключиться из любого C# клиентского приложения, все приложения JavaScript или кроссплатформенного приложения Cordova. После подключения можно создать и получить доступ к данным, создавать пользовательские интерфейсы API и запланированные задания или добавить поддержку Push-уведомлений.  Операция подключенной службы добавляет все соответствующие ссылки и код подключения. Можно также воспользоваться преимуществами встроенную поддержку проверки подлинности с помощью различных популярных схем идентификации, таких как Azure AD, Facebook, Twitter и учетные записи Майкрософт.

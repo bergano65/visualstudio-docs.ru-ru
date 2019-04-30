@@ -10,12 +10,12 @@ ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 56d9ea80054ec3732f62f70a582b95da32fdbe9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46ccdd87d44ee90c925992f4d7b997c9bbe09684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435526"
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Создание расширения с помощью шаблона элемента редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "60086719"
  Этот шаблон оформления окна просмотра редактор создает оформления относительно окна просмотра, который добавляет фиолетовые коробке, содержащей красный контур в верхний правый угол окна просмотра.  
   
 > [!NOTE]
->  *Просмотра* — это область представления текста, отображается в текущий момент.  
+> *Просмотра* — это область представления текста, отображается в текущий момент.  
   
 #### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Создание расширения элемента оформления окна просмотра с помощью шаблона элемента оформления окна просмотра редактора  
   

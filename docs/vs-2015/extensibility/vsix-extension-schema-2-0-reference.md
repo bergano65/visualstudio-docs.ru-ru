@@ -11,12 +11,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3e5808d23f34c6d9cfa5c355092e0fd55b5f4270
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a8c6d236f9f11f53e79e4239868815c7bbe9137
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436921"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Справочник по схеме 2.0 расширений VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60048663"
 Файл манифеста развертывания VSIX описывает содержимое пакета VSIX. Формат файла регулируется схемы. Эта схема версии 2.0 поддерживает добавление пользовательских типов и атрибутов.  Схема манифеста является расширяемой. XML-элементы и атрибуты, которые не понимает, игнорирует манифеста загрузчика.  
   
 > [!IMPORTANT]
->  Visual Studio 2015 можно загрузить VSIX-файлы в форматах Visual Studio 2010, Visual Studio 2012 или Visual Studio 2013.  
+> Visual Studio 2015 можно загрузить VSIX-файлы в форматах Visual Studio 2010, Visual Studio 2012 или Visual Studio 2013.  
   
 ## <a name="package-manifest-schema"></a>Схема манифеста пакета  
  Корневой элемент файла манифеста XML — `<PackageManifest>`, с одним атрибутом `Version`, которая является версией формат манифеста. Если значительных изменений в формат, формат версии будет изменяться. В этом разделе описывается формат манифеста версии 2.0, который указывается в манифесте, задав `Version` значение версии атрибуту = «2.0».  
@@ -129,7 +129,7 @@ ms.locfileid: "60048663"
         - Отдельная версия # — только указанной версии.  
   
         > [!IMPORTANT]
-        >  Версию схемы VSIX 2.0 появился в Visual Studio 2012. Для использования этой схемы вы должен иметь Visual Studio 2012 или более поздней версии установлен на компьютере и используйте VSIXInstaller.exe, входит в состав этого продукта. Можно ориентироваться на более ранних версиях Visual Studio с Visual Studio 2012 или более поздней версии установщик VSIX, но только с помощью более поздней версии установщика.  
+        > Версию схемы VSIX 2.0 появился в Visual Studio 2012. Для использования этой схемы вы должен иметь Visual Studio 2012 или более поздней версии установлен на компьютере и используйте VSIXInstaller.exe, входит в состав этого продукта. Можно ориентироваться на более ранних версиях Visual Studio с Visual Studio 2012 или более поздней версии установщик VSIX, но только с помощью более поздней версии установщика.  
   
     - `AnyAttribute*` — `<InstallationTarget>` Элемент допускает открытый набор атрибутов, которые будут доступны во время выполнения как словарь пары имя значение.  
   

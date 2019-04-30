@@ -10,12 +10,12 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a18d82ecc0d5bbffa8fb0eb4799910f32a10784a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b66015ef2e2ab0c8105b6f84486fa890adbf8b1f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438395"
 ---
 # <a name="properties-window-buttons"></a>Кнопки окна свойств
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58991774"
  **Страницы свойств** недоступна при `ISpecifyPropertyPages` не реализован для выбранного объекта. Отображение свойств зависимых от конфигурации, которые обычно связаны с решениями и проектами страницы свойств, но они могут быть также быть связаны с элементами проекта (например, в Visual C++).  
   
 > [!NOTE]
->  Не удается добавить кнопки панели инструментов для **свойства** окна с помощью неуправляемого кода. Чтобы добавить кнопку панели инструментов, необходимо создать управляемый объект, производный от <xref:System.Windows.Forms.Design.PropertyTab>.  
+> Не удается добавить кнопки панели инструментов для **свойства** окна с помощью неуправляемого кода. Чтобы добавить кнопку панели инструментов, необходимо создать управляемый объект, производный от <xref:System.Windows.Forms.Design.PropertyTab>.  
   
 ## <a name="see-also"></a>См. также  
  [Расширение свойств](../../extensibility/internals/extending-properties.md)

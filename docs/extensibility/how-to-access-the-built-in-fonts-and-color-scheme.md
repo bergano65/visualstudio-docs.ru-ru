@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415516"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Практическое руководство. Доступ к встроенной шрифты и цвета ccheme
 В среде разработки Visual Studio (IDE) имеет схему шрифтов и цветов, связанный с окном редактора. Можно получить доступ к этой схемы через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс.
@@ -39,7 +39,7 @@ ms.locfileid: "60068227"
      Этот GUID используется для уникальной идентификации категорию. Повторно использует эту категорию, IDE по умолчанию шрифты и цвета спецификации.
 
     > [!NOTE]
-    >  При получении данных шрифта и цвета с <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> или других интерфейсов, пакетов VSPackage использовать этот идентификатор GUID для ссылки на встроенные сведения.
+    > При получении данных шрифта и цвета с <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> или других интерфейсов, пакетов VSPackage использовать этот идентификатор GUID для ссылки на встроенные сведения.
 
 2. Имя категории должны добавляться в таблицу строк внутри ресурсов в пакете VSPackage (*.rc*) файл, таким образом, чтобы можно было локализовать при необходимости при отображении в интегрированной среде разработки.
 

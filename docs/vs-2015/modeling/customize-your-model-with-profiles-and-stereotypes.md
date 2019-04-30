@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f7e9aee38208a96ab75318a86810359392b5b8e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433345"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Настройка модели с помощью профилей и стереотипов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58980090"
  ![Класс UML со стереотипом. ](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")  
   
 > [!NOTE]
->  Если создать модель с помощью профиля, а затем отправить кому-либо эту модель, получатель не сможет видеть стереотипы, если на его компьютере не установлен тот же профиль.  
+> Если создать модель с помощью профиля, а затем отправить кому-либо эту модель, получатель не сможет видеть стереотипы, если на его компьютере не установлен тот же профиль.  
   
 ## <a name="related-topics"></a>См. также  
   

@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414545"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Установка приложений изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ ms.locfileid: "60062832"
 2. Определение компонентов, необходимых для оболочка и приложение оболочки, как показано в следующем примере.  
   
     > [!NOTE]
-    >  Некоторые элементы могут ссылаться на определения в других файлах .wxs.  
+    > Некоторые элементы могут ссылаться на определения в других файлах .wxs.  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -159,7 +159,7 @@ ms.locfileid: "60062832"
         ```  
   
     > [!NOTE]
-    >  Ниже приведены необходимые зависимости для приложений, оболочка (изолированная). DebuggerProxy MasterPkgDef, ресурсы (особенно .winprf-файл), приложения и PkgDefs.  
+    > Ниже приведены необходимые зависимости для приложений, оболочка (изолированная). DebuggerProxy MasterPkgDef, ресурсы (особенно .winprf-файл), приложения и PkgDefs.  
   
 ### <a name="registry-entries"></a>Записи реестра  
  Шаблон проекта оболочка (изолированная) включает в себя *имя_проекта*REG-файл для разделов реестра для слияния при установке. Эти записи реестра должны быть частью MSI-ФАЙЛ для установки и очистки в целях. Также необходимо создать соответствующие блоки реестра в ApplicationRegistry.wxs.  
@@ -211,7 +211,7 @@ ms.locfileid: "60062832"
  Чтобы определить, необходимо ли устанавливать Visual Studio Shell (изолированная), сначала определите, ли он установлен, проверив значение реестра HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install.  
   
 > [!NOTE]
->  Также эти значения считываются в блоке обнаружения оболочки в Product.wxs.  
+> Также эти значения считываются в блоке обнаружения оболочки в Product.wxs.  
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder указывает расположение, где была установлена оболочка Visual Studio, а вы можете проверить наличие файлов существует.  
   
@@ -369,4 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство: Создание базового приложения изолированной оболочки](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [Пошаговое руководство: создание базового приложения изолированной оболочки](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
