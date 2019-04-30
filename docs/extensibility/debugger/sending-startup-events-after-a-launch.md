@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c9363270593f1d492ec57d119f9a70f8371b0ac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2f82ab0b28c1052a0d6a4cb0b2db7e6bbaaba8cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420583"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Отправка событий запуска после запуска
 Когда модуль отладки (DE), подключенного к программе, он отправляет ряд событий запуска сеанса отладки.
@@ -31,7 +31,7 @@ ms.locfileid: "56685902"
 - Нагрузки событие завершения, когда код будет загружен и готов к выполнению, а также перед выполнением любого кода.
 
   > [!NOTE]
-  >  Когда это событие продолжает выполнение, инициализируются глобальные переменные и запустите программы запуска.
+  > Когда это событие продолжает выполнение, инициализируются глобальные переменные и запустите программы запуска.
 
 - Возможные других потоков, создания и события загрузки модулей.
 

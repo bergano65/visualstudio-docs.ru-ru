@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0af3634c2aeb851dab580922f8c282824f41626
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7037b49763d4fda844b7692052935a4eee7f7107
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420693"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Контрольный список. Создание языковой службы прежних версий
 Следующий контрольный список перечислены основные шаги, необходимые для создания службы языка для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] базовым редактором. Чтобы интегрировать службы языка в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], необходимо создать средство оценки выражений отладки. Дополнительные сведения см. в разделе [написать средство оценки выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) в [расширения отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
@@ -61,7 +61,7 @@ ms.locfileid: "60076007"
     Команды, которые должны быть обработаны зависят от служб, предоставляемых. Дополнительные сведения см. в разделе [важные команды для языковой службы фильтры](../../extensibility/internals/important-commands-for-language-service-filters.md).
 
     > [!NOTE]
-    >  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Интерфейс должен быть реализован на один и тот же объект как <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс.
+    > <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Интерфейс должен быть реализован на один и тот же объект как <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс.
 
 - Завершение операторов
 
