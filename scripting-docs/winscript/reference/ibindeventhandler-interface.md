@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6c65a659f333de282f380b9b6a6e462b40ec6c4d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991331"
 ---
 # <a name="ibindeventhandler-interface"></a>Интерфейс IBindEventHandler
 Позволяет вызывающему объекту указать объект, который обрабатывает заданный обработчик событий.  
@@ -26,6 +26,6 @@ ms.locfileid: "58159079"
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IBindEventHandler` интерфейс предоставляет следующие методы.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IBindEventHandler::BindHandler](../../winscript/reference/ibindeventhandler-bindhandler.md)|Связывает событие объекта.|

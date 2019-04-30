@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446717"
 ---
 # <a name="writing-a-t4-text-template"></a>Написание текстового шаблона T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Hello!
  Можно вставить блок текста в любое место кода, где допускается вставка оператора `Write();`.  
   
 > [!NOTE]
->  При внедрении блока текста в составной оператор, такой как цикл или условный, всегда используйте фигурные скобки {...} Чтобы задать текстового блока.  
+> При внедрении блока текста в составной оператор, такой как цикл или условный, всегда используйте фигурные скобки {...} Чтобы задать текстового блока.  
   
 ### <a name="expression-control-blocks"></a>Блоки управления выражениями  
  Блок управления выражением оценивает выражение и преобразует его в строку, которая вставляется в выходной файл.  

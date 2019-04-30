@@ -10,12 +10,12 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6f2ed846e8644f5f6e391d9c850016721186021e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0f8ac7b6cea0896c597dc46b8b5edd7072069840
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386033"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Изменение изолированной оболочки с помощью. Файл pkgdef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59663970"
 Файл pkgdef поддерживает параметры, которые можно использовать для настройки приложений изолированной оболочки. Он указывает значения, которые создаются при установке приложения на компьютере и которые ссылается оболочки Visual Studio при запуске приложения. Параметры организованы в файле, в соответствии с применимым разделам реестра.  
 
 > [!WARNING]
->  Обратите внимание на то, что файлах pkgdef, которые не объявлены в файле VSIXMANIFEST VSPackage не проверяются при запуске Visual Studio.  
+> Обратите внимание на то, что файлах pkgdef, которые не объявлены в файле VSIXMANIFEST VSPackage не проверяются при запуске Visual Studio.  
 
  Файл pkgdef содержит разделы, каждый из которых идентифицируется по ключу, либо `[$RootKey$]` или `[$RootKey$\` *подраздел*`]`, где $RootKey$ — это корневой ключ для приложения.  
 
@@ -53,7 +53,7 @@ ms.locfileid: "59663970"
  В следующих разделах описаны определенные разделы реестра, влияющие на поведение оболочки Visual Studio в изолированном режиме. В этом файле можно также определить дополнительными значениями реестра для приложения.  
 
 > [!NOTE]
->  Если параметр не указан в pkgdef-файл, выполняется без соответствующей записи в реестре.  
+> Если параметр не указан в pkgdef-файл, выполняется без соответствующей записи в реестре.  
 
 ## <a name="settings"></a>Параметры  
  Следующая таблица описывает значения, определенные в разделе [$RootKey$].  

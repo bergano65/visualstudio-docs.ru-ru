@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e292dad6c6b633d5f30f263f388d8e85bb6c541
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0a0df287db477c5bf768798f200ea0d97de6d1e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385944"
 ---
 # <a name="iactivescriptprofilercallback2-interface"></a>Интерфейс IActiveScriptProfilerCallback2
 Предоставляет методы, используемые обработчиком сценариев, чтобы уведомить объект профилировщика при возникновении событий объектной модели документа (DOM). Этот интерфейс реализуется объектом профилировщика.  
@@ -36,7 +36,7 @@ ms.locfileid: "60115280"
  Уведомление вызовов функций, не являющихся вызовами в модель DOM предоставлено [интерфейс IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md).  
   
 > [!NOTE]
->  Чтобы добавить возможность запуска и остановки профилирования, при выполнении сценарий, используйте следующие методы. С помощью этих методов, можно получить полный стек вызовов, если [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] выполняется при запуске или остановке профилирования.  
+> Чтобы добавить возможность запуска и остановки профилирования, при выполнении сценарий, используйте следующие методы. С помощью этих методов, можно получить полный стек вызовов, если [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] выполняется при запуске или остановке профилирования.  
 > 
 > - Вызовите [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) для уведомления профилировщика, что вы запустили профилирования.  
 >   - Вызовите [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) для уведомления профилировщика, что будет скоро остановить профилирование.  

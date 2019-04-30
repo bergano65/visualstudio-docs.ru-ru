@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8ffe18ea3407480faa69a6b9b3ba4309b28b279
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e30ab9ce498134426caa35e0c3c9f9652f683535
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445529"
 ---
 # <a name="workbook-host-item"></a>Ведущий элемент книги
   Ведущий элемент <xref:Microsoft.Office.Tools.Excel.Workbook> является типом, который расширяет тип <xref:Microsoft.Office.Interop.Excel.Workbook> из основной сборки взаимодействия для Excel. Ведущий элемент <xref:Microsoft.Office.Tools.Excel.Workbook> предоставляет все свойства, методы и события объекта <xref:Microsoft.Office.Interop.Excel.Workbook> , но также предоставляет дополнительные компоненты.
@@ -49,7 +49,7 @@ ms.locfileid: "56625268"
  Ведущий элемент <xref:Microsoft.Office.Tools.Excel.Workbook> не действует как контейнер для элементов управления ведущего приложения. Таким образом, нельзя добавлять в книгу какие-либо видимые элементы управления, но можно добавлять компоненты, например <xref:System.Data.DataSet>, чтобы эти компоненты могли совместно использоваться всеми листами. В проекте уровня документа компоненты, доступные для книги, можно найти на вкладках **Компонент** , **Данные** и **Все формы Windows** в **панели элементов**.
 
 > [!NOTE]
->  Средства разработки Office в Visual Studio не поддерживают общие книги.
+> Средства разработки Office в Visual Studio не поддерживают общие книги.
 
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>Понять ведущих элементах книги в проектах надстройки VSTO
  В проектах надстройки VSTO можно создавать <xref:Microsoft.Office.Tools.Excel.Workbook> ведущего элемента во время выполнения для любой книги, открытой в Excel. Для создания ведущего элемента <xref:Microsoft.Office.Tools.Excel.Workbook> используйте метод `GetVstoObject`. Дополнительные сведения см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).

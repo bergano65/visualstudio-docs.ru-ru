@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 873f4735cd1be2525b8b009dc94787b4eed394ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443713"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Практическое руководство. Присоединение и отсоединение средства обеспечения производительности к выполняемым процессам
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60095747"
 Профилировщик можно использовать для подключения к или отключения от выполняющегося процесса, чтобы упростить выборку и сбор данных производительности. Этот метод можно использовать для профилирования процесса, если необходимо запретить сбор данных о времени загрузки приложения или отследить производительность процесса после достижения им определенного состояния.  
   
 > [!NOTE]
->  Следующая процедура применима к подключению и отключению процессов из интегрированной среды разработки (IDE) [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Сведения об использовании средств командной строки см. в разделе [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md). Сведения о профилировании служб см. в разделе [Профилирование служб](../profiling/command-line-profiling-of-services.md).  
+> Следующая процедура применима к подключению и отключению процессов из интегрированной среды разработки (IDE) [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Сведения об использовании средств командной строки см. в разделе [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md). Сведения о профилировании служб см. в разделе [Профилирование служб](../profiling/command-line-profiling-of-services.md).  
   
  Процессы, доступные для профилирования, зависят от разрешений на доступ пользователя, заданных администратором компьютера. Учетная запись пользователя, например, имеет разрешения на следующее:  
   

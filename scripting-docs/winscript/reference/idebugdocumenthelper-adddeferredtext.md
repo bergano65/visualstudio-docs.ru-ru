@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1219543c438c79ad1add068262d9556dd2d7ce8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2f2a7c134142668613cc38cee9357e42cb95096
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433941"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
 Уведомляет вспомогательный метод, что заданный текст доступен, но он не поддерживает символы.  
@@ -46,7 +46,7 @@ HRESULT AddDeferredText(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_FAIL`|Этот метод не выполнен.|  
@@ -57,7 +57,7 @@ HRESULT AddDeferredText(
  Предполагается, что один вызов `IDebugDocumentText::GetText` можно получить символы из нескольких вызовов `AddDeferredText`. Вспомогательные классы может также потребоваться тот же самый набор отложенные символов более одного раза.  
   
 > [!NOTE]
->  Вызовы `AddDeferredText` не должны смешиваться с вызовами `AddUnicodeText` или `AddDBCSText`. В этом случае `E_FAIL` возвращается.  
+> Вызовы `AddDeferredText` не должны смешиваться с вызовами `AddUnicodeText` или `AddDBCSText`. В этом случае `E_FAIL` возвращается.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   

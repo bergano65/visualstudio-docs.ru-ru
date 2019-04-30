@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9af0a3dc7c08a415f320ce3560cdfc23c462d4c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f539fd0a20bf852b04b5a41aff829cdcf0e52cf3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445924"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Использование покрытия кода для определения объема протестированного кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60087525"
 3. Если результаты показывают низкое покрытие, проверьте, какие части кода не обрабатываются, и напишите несколько дополнительных тестов для их покрытия. Команды разработчиков обычно стремятся покрыть около 80 % кода. В некоторых случаях допустимо более низкое покрытие. Например, более низкое покрытие допустимо, когда некоторый код создается из стандартного шаблона.  
   
 > [!TIP]
->  Чтобы получить точные результаты, выполните следующие действия.  
+> Чтобы получить точные результаты, выполните следующие действия.  
 > 
 > - Убедитесь, что оптимизация компилятора отключена.  
 > 
@@ -240,7 +240,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 - Исключения должны компилироваться как неуправляемый (машинный) код с помощью настройки параметра компилятора или с помощью `#pragma managed(off)`.  
   
 > [!NOTE]
->  Чтобы исключить функции в коде C++/CLI, примените атрибут `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` к функции. Эта процедура не отличается от C#.  
+> Чтобы исключить функции в коде C++/CLI, примените атрибут `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` к функции. Эта процедура не отличается от C#.  
   
 ### <a name="including-or-excluding-additional-elements"></a>Включение или исключение дополнительных элементов  
  Анализ покрытия кода выполняется только для загруженных сборок, для которых PDB-файл доступен в том же каталоге, что и DLL-файл или EXE-файл. Поэтому в некоторых обстоятельствах можно расширить набор сборок, включенный путем получения копий соответствующих PDB-файлов.  

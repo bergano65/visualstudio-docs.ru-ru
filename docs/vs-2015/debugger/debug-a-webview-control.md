@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ffb19e85d7294c082f7eecb0dbffd8aa436a03c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f2da5b3122bd97fcbef0db7124049372c21983f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422084"
 ---
 # <a name="debug-a-webview-control"></a>Отладка элемента управления WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60065471"
 4. (Необязательно) Для отличных от Express версий Visual Studio, отключить отладку just-in-time (JIT), выбрав **средства**, **параметры**, **Отладка**, **Just-In-Time**, и отключив JIT-отладку для скрипта.  
   
     > [!NOTE]
-    >  Отключив JIT-отладку, вы можете скрыть диалоговые окна для необработанных исключений, возникающих на некоторых страницах. В Visual Studio Express JIT-отладка всегда отключена.  
+    > Отключив JIT-отладку, вы можете скрыть диалоговые окна для необработанных исключений, возникающих на некоторых страницах. В Visual Studio Express JIT-отладка всегда отключена.  
   
 5. Нажмите клавишу F5, чтобы начать отладку.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "60065471"
      ![Предназначенных для выбора в окне консоли JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
   
     > [!NOTE]
-    >  С помощью консоли вы можете одновременно взаимодействовать с отдельным `WebView`, `iFrame`, контрактом отправки данных или рабочим веб-процессом. Каждый элемент требует отдельного экземпляра узла веб-платформы (WWAHost.exe). Одновременно можно взаимодействовать с одним узлом.  
+    > С помощью консоли вы можете одновременно взаимодействовать с отдельным `WebView`, `iFrame`, контрактом отправки данных или рабочим веб-процессом. Каждый элемент требует отдельного экземпляра узла веб-платформы (WWAHost.exe). Одновременно можно взаимодействовать с одним узлом.  
   
 6. Просмотреть и изменить переменные в приложении или используйте команды консоли, как описано в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) и [команды консоли JavaScript](../debugger/javascript-console-commands.md).  
   

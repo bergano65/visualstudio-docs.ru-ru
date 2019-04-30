@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bba1d1b45c47a61f85bf37d4768a8f05ba0c3e87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439793"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Создание кода в редакторе кода и текста
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ ms.locfileid: "60077827"
  Разные языки Visual Studio предоставляют разные наборы функций, а в некоторых случаях одни и те же функции ведут себя по-разному в разных языках. Многие из этих отличий указаны в описаниях функций. Дополнительные сведения можно найти в разделах, посвященных конкретным языкам Visual Studio.  
 
 > [!IMPORTANT]
->  Работа функций в интегрированной среде разработки зависит от выпуска Visual Studio и используемых параметров. Они могут отличаться от описанных в этом разделе.  
+> Работа функций в интегрированной среде разработки зависит от выпуска Visual Studio и используемых параметров. Они могут отличаться от описанных в этом разделе.  
 
 ## <a name="editor-features"></a>Функции редактора  
 

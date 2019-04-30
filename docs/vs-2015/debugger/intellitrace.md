@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dfa2d0cb454dba07a036883a296d364cb3182afc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440152"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "60079309"
 |**Не поддерживается**|-C++, другие языки и скрипт<br />-Windows служб Silverlight, Xbox, или [!INCLUDE[winmobile](../includes/winmobile-md.md)] приложений|  
   
 > [!NOTE]
->  Нельзя использовать IntelliTrace для отладки уже выполняемого процесса. Необходимо запустить IntelliTrace при запуске процесса.  
+> Нельзя использовать IntelliTrace для отладки уже выполняемого процесса. Необходимо запустить IntelliTrace при запуске процесса.  
   
 ## <a name="IntelliTraceVSTraditional"></a> Зачем выполнять отладку с помощью IntelliTrace?  
  Традиционная отладка или отладка *в реальном времени* отображает только текущее состояние приложения с ограниченными данными о прошлых событиях. Необходимо либо сделать вывод об этих событиях на основании текущего состояния приложения, либо создать заново эти события, повторно запустив приложение.  
@@ -161,7 +161,7 @@ ms.locfileid: "60079309"
 - Указатели на дочерние объекты первого уровня без их значений (только информацию о том, являются ли они null или нет).  
   
 > [!NOTE]
->  IntelliTrace собирает только первые 256 объектов в массивах и первые 256 символов в строках.  
+> IntelliTrace собирает только первые 256 объектов в массивах и первые 256 символов в строках.  
   
  См. в разделе [настроить IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   

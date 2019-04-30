@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a44a6a3474d56b1254333731d79b2172fd6143b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407631"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Использование автономного сборщика данных IntelliTrace (C#, Visual Basic)
 
@@ -26,10 +26,10 @@ ms.locfileid: "60077659"
  Посмотрите IntelliTrace в действии: [Сбор и анализ данных IntelliTrace в производстве для отладки (видео Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
->  Те же данные IntelliTrace для веб-приложений и приложений SharePoint, которые выполняются на удаленных компьютерах, также можно собирать с помощью **Microsoft Monitoring Agent** в режиме **трассировки** .
+> Те же данные IntelliTrace для веб-приложений и приложений SharePoint, которые выполняются на удаленных компьютерах, также можно собирать с помощью **Microsoft Monitoring Agent** в режиме **трассировки** .
 >
->  События, связанные с производительностью, можно собирать в данных IntelliTrace путем запуска агента в режиме **монитора** . Режим**монитора** влияет на производительность в меньшей степени, чем режим **трассировки** или **Intelliтрассировки stand-alone collector**. После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе. См. в разделе [с помощью Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
->  Автономный сборщик IntelliTrace не поддерживает процесс моментальных снимков.
+> События, связанные с производительностью, можно собирать в данных IntelliTrace путем запуска агента в режиме **монитора** . Режим**монитора** влияет на производительность в меньшей степени, чем режим **трассировки** или **Intelliтрассировки stand-alone collector**. После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе. См. в разделе [с помощью Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> Автономный сборщик IntelliTrace не поддерживает процесс моментальных снимков.
 
  **Требования**
 
@@ -38,7 +38,7 @@ ms.locfileid: "60077659"
 - Visual Studio Enterprise (не Professional и не Community) на компьютере разработчика или на другом компьютере для открытия ITRACE-файлов
 
   > [!NOTE]
-  >  Убедитесь, что файлы символов (.pdb) сохранены. Для отладки с помощью IntelliTrace и пошагового выполнения кода необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. в разделе [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
+  > Убедитесь, что файлы символов (.pdb) сохранены. Для отладки с помощью IntelliTrace и пошагового выполнения кода необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. в разделе [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
 
   **FAQ**
 
@@ -111,7 +111,7 @@ ms.locfileid: "60077659"
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       >  Точка (**.**) сохраняет вложенные папки, которые содержат локализованные планы сбора данных.
+       > Точка (**.**) сохраняет вложенные папки, которые содержат локализованные планы сбора данных.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Настройка разрешений для каталога сборщика
 
@@ -216,7 +216,7 @@ ms.locfileid: "60077659"
      `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
-    >  После выполнения этой команды введите **Y** для подтверждения начала сбора данных.
+    > После выполнения этой команды введите **Y** для подтверждения начала сбора данных.
 
      Например, для сбора данных от приложения SharePoint в пуле приложений **SharePoint - 80** введите:
 
@@ -247,7 +247,7 @@ ms.locfileid: "60077659"
      `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
-    >  После выполнения этой команды введите **Y** для подтверждения останова сбора данных. В противном случае сборщик может продолжить процесс сбора данных, ITRACE-файл останется заблокирован, или в файле будут отсутствовать полезные данные.
+    > После выполнения этой команды введите **Y** для подтверждения останова сбора данных. В противном случае сборщик может продолжить процесс сбора данных, ITRACE-файл останется заблокирован, или в файле будут отсутствовать полезные данные.
 
 6. [Откройте файл ITRACE в Visual Studio Enterprise.](#BKMK_View_IntelliTrace_Log_Files)
 
@@ -275,7 +275,7 @@ ms.locfileid: "60077659"
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Откройте файл ITRACE в Visual Studio Enterprise.
 
 > [!NOTE]
->  Для отладки с помощью IntelliTrace и пошагового выполнения кода необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. в разделе [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
+> Для отладки с помощью IntelliTrace и пошагового выполнения кода необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. в разделе [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
 
 1. Переместите ITRACE-файл или скопируйте его на компьютер с Visual Studio Enterprise (не Professional и не Community).
 
@@ -284,7 +284,7 @@ ms.locfileid: "60077659"
      В Visual Studio отображается страница **Сводка IntelliTrace** . В большинстве разделов можно просматривать события или другие элементы, выбрать элемент и начать процесс отладки с помощью IntelliTrace в той точке, где и когда произошло событие. См. в разделе [использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
-    >  Для отладки с помощью IntelliTrace и пошагового выполнения кода на компьютере разработки необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. в разделе [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
+    > Для отладки с помощью IntelliTrace и пошагового выполнения кода на компьютере разработки необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. в разделе [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
 
 ## <a name="Minimizing"></a> Как получить подробные данные, не замедляя работу приложения?
  IntelliTrace может собирать большой объем данных, поэтому степень влияния на производительность приложения зависит от данных, собираемых с помощью IntelliTrace, а также типа кода, который данная программа анализирует. См. раздел [Оптимизация сбора данных IntelliTrace на рабочих серверах](http://go.microsoft.com/fwlink/?LinkId=255233).

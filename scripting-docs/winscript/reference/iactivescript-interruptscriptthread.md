@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: aa46bc95087b3defaf739cc3473c58e29a93071c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935512"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
 Прерывает выполнение выполняющийся поток скрипта (приемник событий, немедленное выполнение или вызов макроса). Этот метод может использоваться для прерывания сценария (например, из бесконечного цикла). Он может вызываться из потоков не основной не входили в выноске отличные от базовых объектов узла или [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) метод.  

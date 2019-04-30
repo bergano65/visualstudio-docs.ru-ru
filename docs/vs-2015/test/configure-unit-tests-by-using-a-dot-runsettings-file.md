@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a86811bb4d87dffcf9abdacae9bca1fdac4298ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442794"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "60043046"
  Если вам не требуется специальная конфигурация, *RUNSETTINGS-файл не нужен. Чаще всего он используется для настройки [объема протестированного кода](../test/customizing-code-coverage-analysis.md).  
   
 > [!NOTE]
->  **RUNSETTINGS-файл и TESTSETTINGS-файл**  
+> **RUNSETTINGS-файл и TESTSETTINGS-файл**  
 >   
->  Существует два вида типов файлов для настройки тестов. RUNSETTINGS-файлы используются для модульных тестов. А \*TESTSETTINGS-файлы применяются для [тестирования в лабораторной среде](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), тестов веб-производительности и нагрузки, а также для настройки некоторых типов адаптеров диагностических данных, таких как IntelliTrace и адаптеры журналов событий.  
+> Существует два вида типов файлов для настройки тестов. RUNSETTINGS-файлы используются для модульных тестов. А \*TESTSETTINGS-файлы применяются для [тестирования в лабораторной среде](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), тестов веб-производительности и нагрузки, а также для настройки некоторых типов адаптеров диагностических данных, таких как IntelliTrace и адаптеры журналов событий.  
 >   
->  В предыдущих выпусках Visual Studio вплоть до Visual Studio 2010 модульные тесты также настраивались с помощью *TESTSETTINGS-файлов. Это по-прежнему возможно, но тесты будут работать медленнее, чем при использовании аналогичных конфигураций в \*RUNSETTINGS-файле.  
+> В предыдущих выпусках Visual Studio вплоть до Visual Studio 2010 модульные тесты также настраивались с помощью *TESTSETTINGS-файлов. Это по-прежнему возможно, но тесты будут работать медленнее, чем при использовании аналогичных конфигураций в \*RUNSETTINGS-файле.  
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Настройка тестов с помощью файла RUNSETTINGS  
   

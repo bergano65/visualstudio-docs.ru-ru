@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4087e77fdd87aaa012e4d09013bb92ae5835bb0d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: fa831ff511ea507e03ca858b93383ff38ead9039
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446910"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 Возвращает путь к файлу справки и идентификатор раздела справки, который описывает ее, если это возможно.  
@@ -46,7 +46,7 @@ HRESULT GetHelpInfo(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
 |`E_FAIL`|Произошла ошибка поставщика.|  
@@ -57,7 +57,7 @@ HRESULT GetHelpInfo(
  Этот метод возвращает путь к файлу справки, а также идентификатор контекста в разделе, который описывает ее, если это возможно.  
   
 > [!NOTE]
->  Этот метод не реализован.  
+> Этот метод не реализован.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDispError](../../winscript/reference/idisperror-interface.md)

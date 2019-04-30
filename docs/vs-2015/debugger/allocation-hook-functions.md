@@ -24,12 +24,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d8d2aff47737443b998cfae8d16c3d95a5eb1d2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b617f0c154c14113370fff257c6837ce8314134a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439943"
 ---
 # <a name="allocation-hook-functions"></a>Функции-ловушки выделения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58993422"
 Функции-ловушки выделения, установленные с помощью [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), вызываются всякий раз при выделении, перераспределении или освобождении памяти. Этот тип ловушек может применяться для различных целей. Используйте их, например, для проверки, как приложение обрабатывает ситуации недостатка памяти, или для оценки шаблонов выделения, или для регистрации данных о выделении для дальнейшего анализа.  
   
 > [!NOTE]
->  Следует знать об ограничениях функций библиотеки CRT в функциях-ловушках выделения, описанных в разделе [Ловушки выделения и выделения памяти CRT](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
+> Следует знать об ограничениях функций библиотеки CRT в функциях-ловушках выделения, описанных в разделе [Ловушки выделения и выделения памяти CRT](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
   
  Функция-ловушка выделения должна иметь следующий прототип:  
   

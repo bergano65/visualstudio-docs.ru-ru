@@ -11,12 +11,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d93d14383ec755f14619f4d126c7f676acafc6c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445952"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Модульные тесты для универсальных методов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
->  При каждом выполнении теста SizeOfLinkedListTest его метод TestHelper вызывается два раза. Для прохождения теста оператор Assert каждый раз должен иметь значение true. В случае сбоя теста может быть непонятно, что вызвало сбой: вызов, указывающий `<int>`, или вызов, указывающий `<char>`. Чтобы найти ответ, можно проверить стек вызовов или задать точки останова в методе теста, а затем выполнить отладку во время выполнения теста. Дополнительные сведения см. в разделе [Как Отладка во время выполнения теста в решении ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
+> При каждом выполнении теста SizeOfLinkedListTest его метод TestHelper вызывается два раза. Для прохождения теста оператор Assert каждый раз должен иметь значение true. В случае сбоя теста может быть непонятно, что вызвало сбой: вызов, указывающий `<int>`, или вызов, указывающий `<char>`. Чтобы найти ответ, можно проверить стек вызовов или задать точки останова в методе теста, а затем выполнить отладку во время выполнения теста. Дополнительные сведения см. в разделе [Как Отладка во время выполнения теста в решении ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
 ### <a name="TypeConstraintNotSatisfied"></a> Пример 2. Использование ограничения типа  
  В этом примере показан модульный тест для универсального метода, использующий ограничение типа, которое не удовлетворяется. В первом разделе показан код из проекта тестируемого кода. Ограничение типа выделено.  

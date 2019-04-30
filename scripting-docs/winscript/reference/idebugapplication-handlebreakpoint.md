@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b05288a8863b2c555493d4a3f7ea8e2b7537d5a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 5e3444e6eedde9576216552e41abb0e97aafa2d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412380"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
 Приводит к блокировке текущего потока и отправляет уведомление точки останова в отладчике интегрированной среды разработки.  
@@ -54,7 +54,7 @@ HRESULT HandleBreakPoint(
  Модуль языка вызывает этот метод в контексте потока, который попадает на точку останова. Этот метод блокирует текущий поток и отправляет уведомление точки останова в отладчике интегрированной среды разработки. Когда отладчик возобновляет работу приложения, `pbra` параметр указывает, какое действие следует предпринять.  
   
 > [!NOTE]
->  Модуль языка могут быть вызваны потока для выполнения задач, таких как перечисления стека кадры или вычисления выражений во время точки останова.  
+> Модуль языка могут быть вызваны потока для выполнения задач, таких как перечисления стека кадры или вычисления выражений во время точки останова.  
   
  Этот метод вызывает `IApplicationDebugger::onHandleBreakPoint` для вызова.  
   

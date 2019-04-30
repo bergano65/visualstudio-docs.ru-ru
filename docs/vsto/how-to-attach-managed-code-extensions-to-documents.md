@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f56d51817491726e6011e965bfd6d68630bb0dbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441802"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Практическое руководство. Вложение расширений управляемого кода в документы
   Можно подключить сборку настройки для существующего документа Microsoft Office Word или книгу Microsoft Office Excel. Документ или книгу можно в любом формате, который поддерживается проекты Microsoft Office и средства разработки в Visual Studio. Дополнительные сведения см. в разделе [архитектура настроек на уровне документа](../vsto/architecture-of-document-level-customizations.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60044268"
  Чтобы прикрепить настройку к документу Word или Excel, используйте <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> метод <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса. Так как <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класс предназначен для запуска на компьютере, который не установлен Microsoft Office, этот метод можно использовать в решениях, которые не имеют отношения к разработке решений Microsoft Office (например, консоли или приложении Windows Forms).
 
 > [!NOTE]
->  Настройки не удастся загрузить, если код ожидает, что элементы управления, которых нет указанного документа.
+> Настройки не удастся загрузить, если код ожидает, что элементы управления, которых нет указанного документа.
 
  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Присоединять или отсоединять сборки VSTO в документ Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).
 

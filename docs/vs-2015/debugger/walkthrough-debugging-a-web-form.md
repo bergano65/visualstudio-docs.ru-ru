@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad6fa498fe9b89854f7fe3c74af9636b5b59e47f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56a11c24ad8a38cc837659ac063987573c0ba492
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444310"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Пошаговое руководство. Отладка веб-формы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60053823"
 Шаги данного руководства иллюстрируют способ отладки веб-приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], также известных как веб-формы. Оно содержит описание запуска и остановки выполнения, определения точек останова и проверки значений переменных в окне **Контрольное значение**.  
   
 > [!NOTE]
->  Для выполнения данного руководства необходимо обладать правами администратора на сервере. По умолчанию процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], aspnet_wp.exe или w3wp.exe, выполняется как процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Для отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] необходимо обладать правами администратора на компьютере, на котором выполняется [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Дополнительные сведения см. в статье [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
+> Для выполнения данного руководства необходимо обладать правами администратора на сервере. По умолчанию процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], aspnet_wp.exe или w3wp.exe, выполняется как процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Для отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] необходимо обладать правами администратора на компьютере, на котором выполняется [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Дополнительные сведения см. в статье [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от действующих параметров или выпуска среды. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   

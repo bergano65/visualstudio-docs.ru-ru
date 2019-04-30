@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443053"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Начало работы с набором средств Visual Studio для Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60105036"
 В этом разделе вы узнаете, как установить инструменты Visual Studio для Unity и настроить проект Unity для работы с Visual Studio.  
   
 > [!IMPORTANT]
->  В Unity 5.2 добавлена встроенная поддержка инструментов Visual Studio для Unity 2.1, что упрощает настройку проекта. Для использования этой возможности потребуется Unity 5.2.0 или более поздней версии в Windows и инструменты Visual Studio для Unity 2.1 или более поздней версии.  
+> В Unity 5.2 добавлена встроенная поддержка инструментов Visual Studio для Unity 2.1, что упрощает настройку проекта. Для использования этой возможности потребуется Unity 5.2.0 или более поздней версии в Windows и инструменты Visual Studio для Unity 2.1 или более поздней версии.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Для использования средств Visual Studio для Unity вам потребуется следующее:  
@@ -55,7 +55,7 @@ ms.locfileid: "60105036"
      [Скачать инструменты Visual Studio 2010 для Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Версии Visual Studio Express не поддерживают расширения, такие как набор средств Visual Studio для Unity. Visual Studio 2013 Community — это бесплатная версия Visual Studio, которая поддерживает набор средств Visual Studio для Unity и другие расширения. Для большинства пользователей версия Visual Studio Community является более предпочтительной, чем версия Express.  
+> Версии Visual Studio Express не поддерживают расширения, такие как набор средств Visual Studio для Unity. Visual Studio 2013 Community — это бесплатная версия Visual Studio, которая поддерживает набор средств Visual Studio для Unity и другие расширения. Для большинства пользователей версия Visual Studio Community является более предпочтительной, чем версия Express.  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>Ваш первый проект Unity с набором средств Visual Studio для Unity  
  Теперь, когда у вас есть все необходимое, вы готовы к своему первому проекту Unity с Visual Studio. Настройка проекта Unity производится по-разному в зависимости от того, какие версии Unity и инструментов Visual Studio для Unity установлены. Выполните приведенные ниже инструкции для установленной версии Unity и инструментов Visual Studio для Unity.  

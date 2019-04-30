@@ -10,12 +10,12 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 42d4209c691d052a1715ae9cfbab5b1e576848cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71ecff799f0da84ca47456467e190edcf95b0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442297"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Пошаговое руководство. Добавление функций в специализированный редактор
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60071438"
     2. Чтобы реагировать на изменения внешнего файла, реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> на объект данных документа в редакторе.  
   
         > [!NOTE]
-        >  Вызовите `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> получить указатель на `IVsFileChangeEx`.  
+        > Вызовите `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> получить указатель на `IVsFileChangeEx`.  
   
 7. Координируйте события редактирования документов с контролем исходного кода. Для этого выполните следующие действия.  
   
@@ -138,7 +138,7 @@ ms.locfileid: "60071438"
      <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
     > [!NOTE]
-    >  `IOleInPlaceComponent` Интерфейс используется для предотвращения слияние меню OLE 2.  
+    > `IOleInPlaceComponent` Интерфейс используется для предотвращения слияние меню OLE 2.  
   
      Ваш `IOleCommandTarget` реализация обрабатывает команды, такие как **Вырезать**, **копирования**, и **вставить**. При реализации `IOleCommandTarget`, решить, требуется ли редактора свой собственный vsct-файл для определения структуры меню свои собственные команды или если он может реализовывать стандартных команд, определенных в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Как правило редакторы использовать и расширять меню IDE и определить свои собственные панели инструментов. Тем не менее часто бывает редактора для определения собственных конкретных команд, помимо использования набора стандартных команд интегрированной среды разработки. Для этого редактора необходимо объявить стандартные команды, он использует, а затем определите новые команды, контекстные меню, меню верхнего уровня и панелей инструментов в vsct-файл. При создании активации на месте редактора, затем реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> и определить меню и панелей инструментов для редактора в vsct-файл вместо использования слияние меню OLE 2.  
   
@@ -156,4 +156,4 @@ ms.locfileid: "60071438"
   
 ## <a name="see-also"></a>См. также  
  [Дополнение к модели автоматизации](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Практическое руководство. Предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md)
+ [Практическое руководство. Предоставление контекста для редакторов](../extensibility/how-to-provide-context-for-editors.md)

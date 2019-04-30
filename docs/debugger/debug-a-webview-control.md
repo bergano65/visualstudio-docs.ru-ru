@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 726a61ae6c515d80fae13c8bfbac6a13943be6ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 43d545a52cbe066e4bb5002b57e9539b9a1b303c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402632"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Отладка элемента управления WebView в приложении UWP
 
@@ -42,7 +42,7 @@ ms.locfileid: "60081766"
 4. Для версий Visual Studio, не являющихся выпуском Express, отключите JIT-отладку, выбрав **Сервис > Параметры > Отладка > JIT** и отключив JIT-отладку для скрипта (необязательно).
 
     > [!NOTE]
-    >  Отключив JIT-отладку, вы можете скрыть диалоговые окна для необработанных исключений, возникающих на некоторых страницах. В Visual Studio Express JIT-отладка всегда отключена.
+    > Отключив JIT-отладку, вы можете скрыть диалоговые окна для необработанных исключений, возникающих на некоторых страницах. В Visual Studio Express JIT-отладка всегда отключена.
 
 5. Нажмите клавишу F5, чтобы начать отладку.
 
@@ -79,7 +79,7 @@ ms.locfileid: "60081766"
      ![Предназначенных для выбора в окне консоли JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
 
     > [!NOTE]
-    >  С помощью консоли вы можете одновременно взаимодействовать с отдельным `WebView`, `iFrame`, контрактом отправки данных или рабочим веб-процессом. Каждый элемент требует отдельного экземпляра узла веб-платформы (WWAHost.exe). Одновременно можно взаимодействовать с одним узлом.
+    > С помощью консоли вы можете одновременно взаимодействовать с отдельным `WebView`, `iFrame`, контрактом отправки данных или рабочим веб-процессом. Каждый элемент требует отдельного экземпляра узла веб-платформы (WWAHost.exe). Одновременно можно взаимодействовать с одним узлом.
 
 6. Просмотреть и изменить переменные в приложении или используйте команды консоли, как описано в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) и [команды консоли JavaScript](../debugger/javascript-console-commands.md).
 

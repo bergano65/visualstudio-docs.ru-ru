@@ -12,12 +12,12 @@ ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d82443e5b9380eef93abf26248871b5d98d68e68
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1f72a66e6dbfe2749910019760c16f6363498785
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403275"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58979892"
 Этот интерфейс представляет свойство кадра стека, свойство документа программы или некоторые другие свойства. Свойство обычно является результатом вычисления выражения.  
   
 > [!NOTE]
->  Такое использование «свойства» не следует путать с, то есть переменную-член класса, несмотря на то что `IDebugProperty2` может представлять такая сущность.  
+> Такое использование «свойства» не следует путать с, то есть переменную-член класса, несмотря на то что `IDebugProperty2` может представлять такая сущность.  
   
 ## <a name="syntax"></a>Синтаксис  
   

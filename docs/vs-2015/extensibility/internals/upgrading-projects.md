@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e838cb02aa1a620356f96d9e77f1752797ac409
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441241"
 ---
 # <a name="upgrading-projects"></a>Обновление проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60100603"
  После обновления все соответствующие файлы глобального, каждая фабрика проекта можно создать экземпляр проекта. Реализация проекта должна поддерживать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Затем вызывается метод для обновления всех элементов соответствующего проекта.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Метод не предоставляет службу SVsUpgradeLogger. Эту службу можно получить путем вызова <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
+> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Метод не предоставляет службу SVsUpgradeLogger. Эту службу можно получить путем вызова <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
   
 ## <a name="best-practices"></a>Рекомендации  
  Используйте <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> службы, чтобы проверить можно изменить файл, прежде чем изменять его, а затем сохранить их перед сохранением. Это поможет резервного копирования и обновления реализаций обрабатывать файлы проекта в системе управления версиями, файлы с недостаточно разрешений и т. д.  

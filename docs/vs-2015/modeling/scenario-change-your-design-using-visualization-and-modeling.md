@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403570"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Сценарий: Изменение проекта с помощью визуализации и моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ ms.locfileid: "60099680"
 - [Проверка кода по схемам слоев](../modeling/validate-code-with-layer-diagrams.md)  
   
   > [!NOTE]
-  >  Некоторые версии Visual Studio поддерживает проверку слоев, а также версии карт кода и UML-схем для визуализации и моделирования, доступные только для чтения. Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  > Некоторые версии Visual Studio поддерживает проверку слоев, а также версии карт кода и UML-схем для визуализации и моделирования, доступные только для чтения. Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="UnderstandingCommunicating"></a> Выяснение и передача сведений о системе  
  Схемы моделирования в Visual Studio можно использовать по мере необходимости или в соответствии с выбранным подходом к разработке, поскольку конкретный порядок их применения не установлен. Обычно за время работы над проектом команды обращаются к своим моделям итерационно и многократно. Каждая схема обеспечивает определенные средства, помогающие понять, описать и передать различные аспекты разрабатываемой системы.  

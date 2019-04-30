@@ -11,11 +11,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 48c5d365c632deb4d654d5115a141ba9933d7a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410242"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Удаленная отладка ASP.NET Core на удаленном компьютере IIS в Visual Studio
 Чтобы отладить приложение ASP.NET, который был развернут в службах IIS, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение затем прикрепление к выполняемому приложению из Visual Studio.

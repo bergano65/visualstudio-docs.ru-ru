@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444666"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Анализ проблем с памятью .NET Framework
 С помощью анализатора управляемой памяти Visual Studio вы можете найти утечки памяти и определить неэффективное использование памяти в коде .NET Framework. Минимальная версия .NET Framework целевого кода — .NET Framework 4.5.  
@@ -59,7 +59,7 @@ ms.locfileid: "60107662"
  Средство анализа памяти обрабатывает сведения в *файлы дампа* , содержащие сведения о куче. Можно создать файлы дампов в Visual Studio, или можно использовать такой инструмент, как [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) из [Windows Sysinternals](http://technet.microsoft.com/sysinternals). См. в разделе [что такое дамп и как его создать?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) в блоге Visual Studio Debugger Team.  
   
 > [!NOTE]
->  Большинство средств могут собирать данные дампа с полными данными памяти кучи или без них. Анализатору памяти Visual Studio требуются полные сведения о куче.  
+> Большинство средств могут собирать данные дампа с полными данными памяти кучи или без них. Анализатору памяти Visual Studio требуются полные сведения о куче.  
   
  **Получение дампа из Visual Studio**  
   

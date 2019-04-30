@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a46c424e8b2c44e0622edf4b4a615273580814
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 6a4bf5545deecccb647b5113c4335539c6acb488
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408592"
 ---
 # <a name="application-deployment-prerequisites"></a>Обязательные требования к развертыванию приложений
 
@@ -48,7 +48,7 @@ ms.locfileid: "59657596"
   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] позволяет определить недостающие необходимые компоненты, после чего вы сможете установить необходимые компоненты с помощью начальной загрузки. Дополнительные сведения см. в разделе [Как устанавливать необходимые компоненты для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
 
 > [!NOTE]
->  Чтобы изменить значения в манифестах, созданных такими инструментами, как [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и *MageUI.exe*, необходимо отредактировать манифест приложения в текстовом редакторе, а затем снова подписать манифест приложения и манифест развертывания. Дополнительные сведения см. в разделе [Как повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+> Чтобы изменить значения в манифестах, созданных такими инструментами, как [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и *MageUI.exe*, необходимо отредактировать манифест приложения в текстовом редакторе, а затем снова подписать манифест приложения и манифест развертывания. Дополнительные сведения см. в разделе [Как повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
  Если для развертывания приложения используются Visual Studio и ClickOnce, то выбираемые по умолчанию пакеты начального загрузчика будут зависеть от версии .NET Framework в решении. В случае изменения целевой версии .NET Framework необходимо будет обновить параметры в диалоговом окне **Необходимые компоненты** вручную.
 

@@ -26,12 +26,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b40e7814fb809298c71d0078e644c12bd5a9a9e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fda2a10cd559f940ab87e5cc8c26f5b47dbec194
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384040"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Практическое руководство. Отладка клиентов и серверов COM с помощью отладки RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,10 +49,10 @@ ms.locfileid: "60064964"
 4. Установите флажок **Отладка RPC**.  
   
     > [!NOTE]
-    >  Для отладки вызовов RPC необходимо иметь привилегии администратора или опытного пользователя.  
+    > Для отладки вызовов RPC необходимо иметь привилегии администратора или опытного пользователя.  
   
     > [!NOTE]
-    >  Выполнение удаленных вызовов процедур с заходом на удаленный сервер под управлением Microsoft Windows Vista будет работать только в том случае, если к удаленному серверу подключен отладчик машинного кода. В противном случае вызов RPC завершится сбоем без сообщения об ошибке. Или же вызов RPC будет выполнен, но пошаговое выполнение вызова RPC не будет работать.  
+    > Выполнение удаленных вызовов процедур с заходом на удаленный сервер под управлением Microsoft Windows Vista будет работать только в том случае, если к удаленному серверу подключен отладчик машинного кода. В противном случае вызов RPC завершится сбоем без сообщения об ошибке. Или же вызов RPC будет выполнен, но пошаговое выполнение вызова RPC не будет работать.  
   
 ## <a name="see-also"></a>См. также  
  [Отладка сервера и контейнеров COM](../debugger/com-server-and-container-debugging.md)   

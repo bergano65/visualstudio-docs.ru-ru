@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1306629a33b668104c3159c1ed2d5840cc4a3801
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 5ba918ef2d2bdbc35f7e46b6b8553037d3e5d281
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447104"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Примеры разработки решений Office и пошаговые руководства
   Этот раздел содержит образцы приложений, пример кода и поэтапные указания иллюстрируют синтаксис, структуру и приемы, используемые для построения решений Microsoft Office.
@@ -35,11 +35,11 @@ ms.locfileid: "56623649"
  Сведения о защите приложений, см. в разделе [решений Office, защита](../vsto/securing-office-solutions.md).
 
 > [!NOTE]
->  Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.
+> Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.
 
 ## <a name="in-this-section"></a>Содержание раздела
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Примеры разработки решений Office](../vsto/office-development-samples.md)|Ссылки на примеры приложений, которые иллюстрируют использование решений Office и SharePoint в Visual Studio.|
 |[Пошаговое руководство с использованием Word](../vsto/walkthroughs-using-word.md)|Список пошаговых руководств, которые содержат введение в средства разработки Office в Visual Studio и описывает, как можно интегрировать в бизнес-приложения Microsoft Office Word.|
@@ -50,7 +50,7 @@ ms.locfileid: "56623649"
 
 ## <a name="related-sections"></a>Связанные разделы
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Ссылки на сведения об установке, шаблоны проектов, основных сборок взаимодействия Office, и новые возможности при разработке решений Office.|
 |[Архитектура решений Office в Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Объясняет, как управляемый код рабочих решений Office с точки зрения разработчика и конечного пользователя и включает сведения о том, как работает с документами Office и приложений.|

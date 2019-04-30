@@ -8,12 +8,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 32d567ab4c71bdf4716a4c61464e1ee4ba6ecfa4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f135247241e8cf441cba2c1f63984dc69f7114c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438150"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Пошаговое руководство. Отображение предложений лампочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -179,7 +179,7 @@ ms.locfileid: "60099784"
 6. Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> метод, возвращающий массив <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> объектов, содержащих различные <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> объектов. Этот метод вызывается, когда она открыта лампочки.  
   
     > [!WARNING]
-    >  Следует убедиться в том, реализации `HasSuggestedActionsAsync()` и `GetSuggestedActions()` являются постоянной; это, если `HasSuggestedActionsAsync()` возвращает `true`, затем `GetSuggestedActions()` должны иметь некоторые действия для отображения. Во многих случаях `HasSuggestedActionsAsync()` вызывается непосредственно перед вызовом `GetSuggestedActions()`, но это не всегда так. Например, если пользователь вызывает действия лампочки, нажав клавишу (CTRL +.) только `GetSuggestedActions()` вызывается.  
+    > Следует убедиться в том, реализации `HasSuggestedActionsAsync()` и `GetSuggestedActions()` являются постоянной; это, если `HasSuggestedActionsAsync()` возвращает `true`, затем `GetSuggestedActions()` должны иметь некоторые действия для отображения. Во многих случаях `HasSuggestedActionsAsync()` вызывается непосредственно перед вызовом `GetSuggestedActions()`, но это не всегда так. Например, если пользователь вызывает действия лампочки, нажав клавишу (CTRL +.) только `GetSuggestedActions()` вызывается.  
   
     ```csharp  
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -328,7 +328,7 @@ ms.locfileid: "60099784"
     ```  
   
     > [!WARNING]
-    >  Действие лампочки **Invoke** метод не должен отображать пользовательский Интерфейс.  Если ваше действие вызвать новый пользовательский Интерфейс (например предварительного просмотра или выбора диалоговое окно), не имеют пользовательского интерфейса, непосредственно из пользовательского **Invoke** метод, но вместо этого запланировать для отображения пользовательского интерфейса после возврата из **Invoke**.  
+    > Действие лампочки **Invoke** метод не должен отображать пользовательский Интерфейс.  Если ваше действие вызвать новый пользовательский Интерфейс (например предварительного просмотра или выбора диалоговое окно), не имеют пользовательского интерфейса, непосредственно из пользовательского **Invoke** метод, но вместо этого запланировать для отображения пользовательского интерфейса после возврата из **Invoke**.  
   
 10. Чтобы завершить реализацию, добавьте `Dispose()` и `TryGetTelemetryId()` методы.  
   

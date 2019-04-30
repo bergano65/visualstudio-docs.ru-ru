@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25768f44ee51ee94d456d0652ab7575def3a259d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cd3c17a9e771ad9a1aee7526f24e3a8282f208d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443106"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Практическое руководство. Локализация разметки ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] страницы (ASPX), обычно используют жестко заданные строковые значения. Чтобы локализовать эти строки, замените их выражения, ссылающиеся на локализованные ресурсы.
@@ -36,7 +36,7 @@ ms.locfileid: "60057572"
     2. Чтобы добавить файл ресурсов в **обозревателе решений**, откройте контекстное меню для элемента проекта SharePoint и выберите **добавить** > **новый элемент**. В области **Visual Basic** или **Visual C#** узел, выберите **файл ресурсов** шаблона.
 
     > [!NOTE]
-    >  Не забудьте добавить файлы ресурсов на элемент проекта SharePoint, чтобы включить свойство типа развертывания. Это свойство необходимо далее в этой процедуре. Если решение не содержит элемента проекта SharePoint, можно добавить пустой проект SharePoint и удалите значение по умолчанию *Elements.xml* файл.
+    > Не забудьте добавить файлы ресурсов на элемент проекта SharePoint, чтобы включить свойство типа развертывания. Это свойство необходимо далее в этой процедуре. Если решение не содержит элемента проекта SharePoint, можно добавить пустой проект SharePoint и удалите значение по умолчанию *Elements.xml* файл.
 
 2. Имя файла ресурсов языка по умолчанию по своему усмотрению, дополненный *.resx* расширение, например MyAppResources.resx. Используйте же базовое имя для каждого локализованного файла ресурсов, но добавить язык и региональные параметры [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Например, имя немецкий локализованных ресурсов *MyAppResources.de-DE.resx*.
 

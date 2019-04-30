@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7576faf84b564e1ea10ef9def69819e5c77fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441575"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Практическое руководство. Задание файлов, публикуемых с помощью ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ ms.locfileid: "60046959"
 4. В **файлы приложения** выберите **группы** поле для файла, который вы хотите включить в новую группу.  
   
     > [!NOTE]
-    >  Файлы должны иметь **действие при построении** свойство значение **содержимого** до появления имена файлов в **файлы приложения** диалоговое окно.  
+    > Файлы должны иметь **действие при построении** свойство значение **содержимого** до появления имена файлов в **файлы приложения** диалоговое окно.  
   
 5. В **группа загрузки** выберите  **\<создать... >** из раскрывающегося списка.  
   
@@ -114,7 +114,7 @@ ms.locfileid: "60046959"
 5. В **группа загрузки** выберите группу из раскрывающегося списка.  
   
     > [!NOTE]
-    >  Невозможно изменить **группа загрузки** для файлов, которые требуются для запуска приложения.  
+    > Невозможно изменить **группа загрузки** для файлов, которые требуются для запуска приложения.  
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   

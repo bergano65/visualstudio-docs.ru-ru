@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436997"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Подключение к данным в базе данных Access (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60102969"
      ![Изменить поставщика данных для OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  Несмотря на то что источник **файл базы данных Microsoft Access (OLE DB)** выглядит как правильный выбор, используйте этот тип источника данных только для MDB-файлы базы данных.  
+    > Несмотря на то что источник **файл базы данных Microsoft Access (OLE DB)** выглядит как правильный выбор, используйте этот тип источника данных только для MDB-файлы базы данных.  
   
 8. В **поставщик OLE DB**выберите **поставщик Microsoft Office 12.0 Access базы данных ядра OLE DB**.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "60102969"
 9. В **имя сервера или файла**, укажите путь и имя ACCDB-файла, к которому вы хотите подключиться, а затем выберите **ОК**.  
   
     > [!NOTE]
-    >  Если файл базы данных имя пользователя и пароль, укажите их, прежде чем выбрать **ОК**.  
+    > Если файл базы данных имя пользователя и пароль, укажите их, прежде чем выбрать **ОК**.  
   
 10. Выберите **Далее** на **Выбор подключения базы данных** страницы.  
   

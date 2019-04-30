@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bcca366cb06916811a66da9f168684e704c50714
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 09f018982b81535ae23eafe7158aa88c0b6b08a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438347"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Ошибка: сбой удаленного входа в систему рабочей группы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60056009"
 - Если компьютер с Visual Studio и удаленный компьютер принадлежат рабочим группам, эта ошибка может возникать из-за установленного по умолчанию значения параметра **Локальной политики безопасности** на удаленном компьютере. Значение по умолчанию для параметра **Локальная политика безопасности**: **Гостевая — локальные пользователи удостоверяются как гости**. Чтобы производить отладку при таких настройках, необходимо установить параметр на удаленном компьютере в значение **Обычная — локальные пользователи удостоверяются как они сами**.  
   
 > [!NOTE]
->  Для выполнения следующих задач необходимо иметь права администратора.  
+> Для выполнения следующих задач необходимо иметь права администратора.  
   
 ### <a name="to-open-the-local-security-policy-window"></a>Открытие окна "Локальная политика безопасности"  
   

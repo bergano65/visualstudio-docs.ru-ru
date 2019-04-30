@@ -15,12 +15,12 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b215d969ba7898923e98f063a47132125d82119b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cf42be1e62bfb4895d29a61fcadc221d5c14bec9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443909"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Расширение окон свойств, списков задач, вывода и параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60042617"
 1. Создайте проект с именем **TodoList** с помощью шаблона VSIX и добавление шаблона элемента окна пользовательского инструмента с именем **TodoWindow**.  
   
     > [!NOTE]
-    >  Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="set-up-the-tool-window"></a>Настройка окна инструментов  
  Добавление текстового поля для ввода нового элемента ToDo, кнопку, чтобы добавить новый элемент в список и элемент ListBox для отображения элементов в списке.  
@@ -43,7 +43,7 @@ ms.locfileid: "60042617"
 1. В TodoWindow.xaml удалите элементы управления Button, TextBox и StackPanel от UserControl.  
   
     > [!NOTE]
-    >  При этом не удаляются **button1_Click** обработчик событий, который будет использовать в дальнейшем.  
+    > При этом не удаляются **button1_Click** обработчик событий, который будет использовать в дальнейшем.  
   
 2. Из **все элементы управления WPF** раздел **элементов**, перетащите **холст** элемента управления в сетку.  
   

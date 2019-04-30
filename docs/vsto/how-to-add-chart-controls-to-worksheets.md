@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fccd328c521789c8ebb4b32c49b2a03a46027eb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427767"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Практическое руководство. Добавление элементов управления диаграммой на листы
   Вы можете добавить <xref:Microsoft.Office.Tools.Excel.Chart> элементов управления на лист Microsoft Office Excel во время разработки и во время выполнения в настройках уровня документа. Можно также добавить <xref:Microsoft.Office.Tools.Excel.Chart> элементов управления во время выполнения в надстройках VSTO.
@@ -39,7 +39,7 @@ ms.locfileid: "60056319"
  Для добавления элемента управления <xref:Microsoft.Office.Tools.Excel.Chart> на лист можно использовать ту же процедуру, что и для добавления диаграммы в приложении.
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.Chart> Управления не доступен из **элементов** или **источников данных** окна.
+> <xref:Microsoft.Office.Tools.Excel.Chart> Управления не доступен из **элементов** или **источников данных** окна.
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Добавление элемента управления ведущего приложения «Диаграмма» на лист в Excel
 

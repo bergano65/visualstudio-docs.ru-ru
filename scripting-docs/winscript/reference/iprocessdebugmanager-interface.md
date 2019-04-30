@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d68c044cdc3d523841cc56814b8ca34bcd8aa037
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944788"
 ---
 # <a name="iprocessdebugmanager-interface"></a>Интерфейс IProcessDebugManager
 Основной интерфейс для диспетчера отладки процессов. Этот интерфейс может создать, добавить или удалить виртуальное приложение в процессе. Его можно перечислить кадров стека и потоки приложения.  
@@ -27,7 +27,7 @@ ms.locfileid: "58157247"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IProcessDebugManager::CreateApplication](../../winscript/reference/iprocessdebugmanager-createapplication.md)|Создает новый объект отладки приложения для этого приложения.|  
 |[IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)|Возвращает объект приложения по умолчанию для текущего процесса.|  

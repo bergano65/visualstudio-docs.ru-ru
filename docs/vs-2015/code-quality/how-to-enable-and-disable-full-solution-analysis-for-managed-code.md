@@ -11,18 +11,18 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: df06a17ecc093cf24a64e7c3aa11a096a61ee44f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436841"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Практическое руководство. Включение и отключение полного анализа решения для управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ПРИМЕЧАНИЕ
->  Этот раздел относится только к Visual Studio 2015 с обновлением 3 RC и более поздних версий.  
+> Этот раздел относится только к Visual Studio 2015 с обновлением 3 RC и более поздних версий.  
   
  *Полный анализ решения* — это компонент Visual Studio, можно выбрать, вы увидите проблемы анализа кода только в открытых файлов Visual C# или Visual Basic, в решении или в открытых и закрытых файлов решения Visual C# или Visual Basic.  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51e79850e2958ce295ab4d98f3ea191a5222a8fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1eb0b8b58d133a26c7970071b422e0c20f42c063
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433237"
 ---
 # <a name="customizing-the-model-explorer"></a>Настройка обозревателя моделей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60078919"
      Окно должно отображаться три **субъекта** узлы, которые имеют значок.  
   
 > [!NOTE]
->  Если вы задали значок узла для любого элемента, который отображается в созданный обозреватель, все узлы обозревателя будет отображаться значок. Если значок не было задано, узлов будет отображаться значок по умолчанию.  
+> Если вы задали значок узла для любого элемента, который отображается в созданный обозреватель, все узлы обозревателя будет отображаться значок. Если значок не было задано, узлов будет отображаться значок по умолчанию.  
   
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Изменить имя, отображаемое на узел обозревателя  
  Можно изменить способ отображения имен элементов модели в обозревателе. Ниже показано, как отобразить имя **задачи** , на который ссылается **комментарий** в узел комментария.  

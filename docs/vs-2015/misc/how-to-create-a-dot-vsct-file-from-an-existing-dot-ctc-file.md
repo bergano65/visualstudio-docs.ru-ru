@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b963436e9d968dd5ba3829e97d0fd0c52e49641
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443012"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Практическое руководство. Создать. Vsct-файл из существующего. Файла ctc
 Вы можете создать файл VSTC на основе XML из существующего исходного CTC-файла таблицы команд. Таким образом можно воспользоваться новым форматом компилятора таблицы команд [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] на основе XML (VSCT).  
@@ -42,7 +42,7 @@ ms.locfileid: "60117860"
      Будет создан исходный VSCT-файл таблицы команд XML. Этот файл можно скомпилировать с помощью Vsct.exe, компилятора VSCT, как и любой другой файл VSCT.  
   
     > [!NOTE]
-    >  Чтобы повысить удобочитаемость файла VSCT, можно переформатировать комментарии XML.  
+    > Чтобы повысить удобочитаемость файла VSCT, можно переформатировать комментарии XML.  
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Создать. Файл Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   

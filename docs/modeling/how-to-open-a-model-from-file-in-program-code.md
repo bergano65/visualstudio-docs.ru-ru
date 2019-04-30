@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18956cd3f4fa1a550808577f9e7fec9c9b193b4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 092af518cc6c6fb1d98025cda54a6a1d491940c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445135"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Практическое руководство. Открытие модели из файла в коде программы
 Модели DSL можно открыть в любом приложении.
@@ -31,7 +31,7 @@ ms.locfileid: "60095877"
 3. В окне свойств проекта на **приложения** вкладке **требуемой версии .NET framework** поле **.NET Framework 4**.
 
 > [!NOTE]
->  Может потребоваться сделать это, даже если вы выбрали **.NET Framework 4** в диалоговом окне создания проекта. Требуемая версия .NET framework не должно быть **клиентский профиль .NET Framework 4**.
+> Может потребоваться сделать это, даже если вы выбрали **.NET Framework 4** в диалоговом окне создания проекта. Требуемая версия .NET framework не должно быть **клиентский профиль .NET Framework 4**.
 
 ## <a name="references"></a>Ссылки
  Необходимо добавить эти ссылки в проект приложения Visual Studio:
