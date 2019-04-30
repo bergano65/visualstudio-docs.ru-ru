@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 872723e4aaf425b388ce8d05f9c8f9d631dd5ed9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854384"
 ---
 # <a name="thunk"></a>Thunk
 Каждый `thunk` определяется `SymTagThunk` тега.
@@ -26,7 +26,7 @@ ms.locfileid: "56619944"
 ## <a name="properties"></a>Свойства
  Ниже приведены свойства, которые являются допустимыми для данного типа символов.
 
-|Свойство.|Тип данных|Описание|
+|Свойство|Тип данных|Описание|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Атрибут модификатор доступа, один из [перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) значения (только в версии 8.0 пакет SDK для доступа к интерфейсу отладки или более поздней версии).|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Часть смещения расположения; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|
@@ -58,7 +58,7 @@ ms.locfileid: "56619944"
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|Смещение в виртуальной таблице этот преобразователь (только в версии 8.0 пакет SDK для доступа к интерфейсу отладки или более поздней версии).|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Если преобразователь помечается как volatile (только в версии 8.0 пакет SDK для доступа к интерфейсу отладки или более поздней версии).|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md)
 - [Перечисление THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)

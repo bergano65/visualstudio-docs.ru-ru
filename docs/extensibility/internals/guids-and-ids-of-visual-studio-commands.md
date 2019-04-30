@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860976"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Идентификаторы GUID и идентификаторы Visual Studio команды
 Значения GUID и идентификатор команды, добавленные в среде разработки Visual Studio (IDE) определяются в файлах .vsct, установленные как часть Visual Studio SDK. Дополнительные сведения см. в разделе [команды, определенные в интегрированной среде разработки, меню и групп](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).

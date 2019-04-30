@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a050ae24ddb5b796acf101e0432a5b64cd28031
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898575"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Практическое руководство. задание ссылки на веб-страницу технической поддержки
 При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, **URL-адрес поддержки** свойство идентифицирует веб-страницы или общей папке, где пользователи могут получить сведения о приложении. Это свойство является необязательным; Если указано, URL-адрес будет отображаться в запись приложения **Установка и удаление программ** диалоговое окно.

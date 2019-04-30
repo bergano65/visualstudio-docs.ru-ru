@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 109f6b85653a842f7c6fc9ce2d2c09b74113bbc7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583924"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Управление правами и общие сведения о расширениях управляемого кода
   Microsoft Office Word и Microsoft Office Excel предоставляют управления правами (IRM), это функция, которая может помочь предотвратить несанкционированного просмотра и изменения конфиденциальной информации. Дополнительные сведения о том, как работает управление правами см.

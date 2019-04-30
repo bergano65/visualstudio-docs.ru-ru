@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9998a8a07995f866b1833736b96e2884c5cba091
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892652"
 ---
 # <a name="about-file-name-extensions"></a>О расширения имен файлов
 При регистрации расширением файла пакета VSPackage, связывается с версией [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Это важно Если более одной версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] устанавливается на компьютере.

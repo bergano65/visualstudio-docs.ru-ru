@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cbe90c182ada4d7e69313ff570b2f7d26087170c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861936"
 ---
 # <a name="ide-constants"></a>Константы среды IDE
 
@@ -40,7 +40,7 @@ ms.locfileid: "54929562"
 
 ## <a name="editor-factory-flags"></a>Флаги фабрики редактора
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |[CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Устаревший флаг побитовым сочетанием как первый параметр <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> метод.|
 |[CEF. OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Побитовым сочетанием как первый параметр <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, метод, это указывает фабрика редактора должна внести необходимые исправления.|
@@ -49,7 +49,7 @@ ms.locfileid: "54929562"
 
 ## <a name="visual-studio-errors"></a>Ошибок Visual Studio
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Константа возвращена интерфейсами для асинхронного поведения при рассматриваемый объект в уже занят|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Ошибка HRESULT, относящиеся к Visual Studio для «несовместимые данные документа».|
@@ -65,7 +65,7 @@ ms.locfileid: "54929562"
 
 ## <a name="visual-studio-constants"></a>Константы Visual Studio
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Ошибка HRESULT для Visual Studio и, означающая «Проект перенаправлен».|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Константа, которая относится к Visual Studio для панели элементов «маркером».|

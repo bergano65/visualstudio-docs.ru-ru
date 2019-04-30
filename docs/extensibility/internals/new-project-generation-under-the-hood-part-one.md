@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860310"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Создание проекта: как это работает, часть 1
 Когда-нибудь думали о том, как создать собственный тип проекта? Интересно, что произойдет при создании нового проекта? Давайте взглянуть изнутри и что происходит в действительности.
@@ -213,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode** отображается как дочерний узел Visual C# просто узле Windows.
 
 ## <a name="see-also"></a>См. также
-- [Создание нового проекта. Это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [Создание проекта: как это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

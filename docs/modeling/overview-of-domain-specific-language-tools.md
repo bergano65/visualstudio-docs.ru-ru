@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e31d9c01ded7754fd10419f3fd0e18d9616a51eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814128"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Обзор средств доменных языков
 Средства доменного языка (DSL Tools), который размещаются в Visual Studio, позволяют разрабатывать доменного языка и затем создать все, что пользователи должны иметь для создания моделей, основанных на язык.
