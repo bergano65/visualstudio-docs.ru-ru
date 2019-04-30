@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5373be45884e5229fe03f88f364e75a9cb81f20
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918710"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 Этот интерфейс описывает метод.
@@ -37,7 +37,7 @@ IDebugMethodField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В дополнение к методам на [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) и [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейсы, этот интерфейс реализует следующие методы:
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md)|Создает перечислитель для параметров метода.|
 |[GetThis](../../../extensibility/debugger/reference/idebugmethodfield-getthis.md)|Получает указатель «this» объект, содержащий метод.|

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d5508e203b8ed5087f456c715c492d8f1ca7c86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823560"
 ---
 # <a name="maintainability-warnings"></a>предупреждения удобства обслуживания
 
@@ -27,7 +27,7 @@ ms.locfileid: "55943458"
 
 ## <a name="in-this-section"></a>В этом разделе
 
-| Правило | Описание: |
+| Правило | Описание |
 |-----------|-----------------------------------|
 | [CA1500: Имена переменных не должны совпадать с именами полей](../code-quality/ca1500-variable-names-should-not-match-field-names.md) | Метод экземпляра объявляет параметр или локальную переменную, имя которого совпадает с именем поля экземпляра объявляющего типа, что приводит к ошибкам. |
 | [CA1501: Избегайте излишнего наследования](../code-quality/ca1501-avoid-excessive-inheritance.md) | Тип расположен глубже четырех уровней в иерархии наследования. Глубокие иерархии вложенных типов трудно отслеживать, понимать и поддерживать. |

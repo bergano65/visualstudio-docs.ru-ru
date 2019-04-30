@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843830"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Добавление недавно использовавшийся списка в подменю
 Это пошаговое руководство построено на демонстрации в [Добавление подменю в меню](../extensibility/adding-a-submenu-to-a-menu.md)и показано, как добавить в подменю динамический список. Список динамического формирует основу для создания списка наиболее недавно использовавшихся Элементов.

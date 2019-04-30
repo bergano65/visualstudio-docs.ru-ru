@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: тестирование и отладка визуализатора | Документация Майкрософт'
+title: Практическое руководство. Тестирование и отладка визуализатора | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,16 +18,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f0353234e5a266ca1a344ce7bc304f27d8c3af95
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906288"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>Практическое руководство. Тестирование и отладка визуализатора
+# <a name="how-to-test-and-debug-a-visualizer"></a>Практическое руководство. тестирование и отладку визуализатора
 После написания визуализатора необходимо выполнить отладку и протестировать его.
 
-Одним из способов проверки визуализатора является установка его в Visual Studio и вызов из окна отладчика. (См. в разделе [как: Установка визуализатора](../debugger/how-to-install-a-visualizer.md).) При этом понадобится второй экземпляр Visual Studio для присоединения к визуализатору, запущенному на первом отладчике, и его отладки.
+Одним из способов проверки визуализатора является установка его в Visual Studio и вызов из окна отладчика. (См. [Практическое руководство. Установка визуализатора](../debugger/how-to-install-a-visualizer.md).) При этом понадобится второй экземпляр Visual Studio для присоединения к визуализатору, запущенному на первом отладчике, и его отладки.
 
 Более простой способ отладки визуализатора — запуск визуализатора из тестового драйвера. API визуализатора позволяет легко создать такой драйвер, который называется *узлом разработки визуализатора*.
 
@@ -53,7 +53,7 @@ ms.locfileid: "56700449"
 
     Более полный пример, см. в разделе [Пошаговое руководство: Написание визуализатора на C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
 
-## <a name="see-also"></a>См. также раздел
-- [Пошаговое руководство. Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+## <a name="see-also"></a>См. также
+- [Пошаговое руководство: Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Практическое руководство. Установка визуализатора](../debugger/how-to-install-a-visualizer.md)
 - [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)

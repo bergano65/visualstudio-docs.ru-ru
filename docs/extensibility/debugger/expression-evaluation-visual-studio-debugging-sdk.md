@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5b100ccac042aeed3ed8211c56fc1129311d850b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889857"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Вычисление выражений (Отладка SDK для Visual Studio)
 В режиме приостановки выполнения интегрированной среды разработки должны иметь простые выражения, включающие несколько переменных программы. Для выполнения их оценки, модуль отладки (DE) необходимо проанализировать и вычислить это выражение, вводимые в одно из окон интегрированной среды разработки.
@@ -30,7 +30,7 @@ ms.locfileid: "56723179"
 ## <a name="using-expression-evaluation"></a>С помощью вычисление выражений
  Чтобы использовать вычисление выражений, необходимо реализовать [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) метод и все методы [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) интерфейс, как показано в следующей таблице.
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|Вычисляет выражение асинхронно.|
 |[Abort](../../extensibility/debugger/reference/idebugexpression2-abort.md)|Завершает асинхронное выражение вычисления.|

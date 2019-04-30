@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f3b22dacdb0192df70f9fcb13b8a228188f129d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900330"
 ---
 # <a name="clickonce-reference"></a>Справочные сведения ClickOnce
 Ниже описана Структура XML-файлов, используемых для представления приложений ClickOnce.

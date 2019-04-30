@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ef1675480182796e1fe8bbe29baa5ed6a9d5f63
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898806"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Практическое руководство. Задание имени в меню "Пуск" для приложения ClickOnce
 Когда [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] установлено приложение для использования сетевой и автономный режим, чтобы добавляется запись **запустить** меню и **Установка и удаление программ** списка. По умолчанию, отображаемое имя совпадает с именем сборки приложения, но отображаемое имя можно изменить, задав **название продукта** в **параметры публикации** диалоговое окно.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ad74f92765ee449eab1e3089511a063e70d96a0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831937"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 Предоставляет методы, чтобы сделать стек стека, используя сведения в PDB-файл.
@@ -60,12 +60,12 @@ if (FAILED(hr))
 ```
 
 ## <a name="requirements"></a>Требования
-Заголовок: Dia2.h
+Заголовок: dia2.h
 
 Библиотека: diaguids.lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

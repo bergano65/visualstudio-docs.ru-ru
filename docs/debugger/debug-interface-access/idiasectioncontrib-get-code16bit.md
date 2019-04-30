@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4e9c190108cdbf1eb7be2d21927a95fe56fca75
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832474"
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
 Получает флаг, указывающий, содержит ли раздел 16-разрядного кода.
@@ -41,5 +41,5 @@ HRESULT get_code16bit(
 ## <a name="remarks"></a>Примечания
  Этот метод только указывает, является ли код 16-разрядное. Если код не 16-разрядный, это может быть что-нибудь еще, например, 32-разрядная или 64-разрядный код.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

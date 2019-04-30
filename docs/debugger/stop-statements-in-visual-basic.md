@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 329a3aa2805e8a95e14a5d78dc2231ade81ad6e4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929739"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Оператор Stop в Visual Basic
 Оператор "Stop" в Visual Basic является программной альтернативой заданию точки останова. Когда отладчик встречает оператор "Stop", он прерывает выполнение программы (переходит в режим приостановки выполнения). Программисты C# могут добиться того же результата с помощью вызова System.Diagnostics.Debugger.Break.
@@ -57,7 +57,7 @@ Debug.Assert(false)
 Debug.Fail("a clever output string goes here")
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Типы проектов C#, F# и Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Отладка управляемого кода](../debugger/debugging-managed-code.md)

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ea9ba8d42bbc008ecb4664ec167ba60ba4018fc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891369"
 ---
 # <a name="command-flag-eelement"></a>Флаг команды Eelement
 Изменение родительского элемента.
@@ -35,7 +35,7 @@ ms.locfileid: "56679421"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |AllowParams|Указывает, что пользователи могут вводить параметры команд в **команда** окно при вводе каноническое имя команды.<br /><br /> Допустимо для: `Button`|
 |AlwaysCreate|Меню создается, даже если он не имеет групп и кнопок.<br /><br /> Допустимо для: `Menu`|
@@ -70,7 +70,7 @@ ms.locfileid: "56679421"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Элемент Buttons](../extensibility/buttons-element.md)|Предоставляет группу для [элемент Button](../extensibility/button-element.md) элементов.|
 |[Элемент меню](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|

@@ -1,51 +1,52 @@
 ---
 title: IDebugObject::GetMemoryContext | Документация Майкрософт
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugObject::GetMemoryContext
 helpviewer_keywords:
 - IDebugObject::GetMemoryContext method
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: e47fd5a7a8285db6c9cdf923699eb4b8f79b451a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62872748"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
-Получает контекст памяти, представляющий адрес значения объекта.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Синтаксис
-
-```cpp
-HRESULT GetMemoryContext( 
-   IDebugMemoryContext2** pContext
-);
-```
-
-```csharp
-int GetMemoryContext(
-   ref IDebugMemoryContext2 pContext
-);
-```
-
-#### <a name="parameters"></a>Параметры
- `pContext`
-
- [out] Возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объект, представляющий адрес значения объекта.
-
-## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
-
-## <a name="remarks"></a>Примечания
- Контекст возвращаемый памяти указывает адрес значения, представленных в данном [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекта.
-
-## <a name="see-also"></a>См. также
-- [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
+Получает контекст памяти, представляющий адрес значения объекта.  
+  
+## <a name="syntax"></a>Синтаксис  
+  
+```cpp#  
+HRESULT GetMemoryContext(   
+   IDebugMemoryContext2** pContext  
+);  
+```  
+  
+```csharp  
+int GetMemoryContext(  
+   ref IDebugMemoryContext2 pContext  
+);  
+```  
+  
+#### <a name="parameters"></a>Параметры  
+ `pContext`  
+ [out] Возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объект, представляющий адрес значения объекта.  
+  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.  
+  
+## <a name="remarks"></a>Примечания  
+ Контекст возвращаемый памяти указывает адрес значения, представленных в данном [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекта.  
+  
+## <a name="see-also"></a>См. также  
+ [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

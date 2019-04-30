@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc0214ed8327354dc3662f039d33d032148f9437
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796334"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Пошаговое руководство. Настройка представления текста
 Текстовое представление можно настроить путем изменения любого из следующих свойств в его формат редактор карты:

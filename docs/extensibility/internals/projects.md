@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909194"
 ---
 # <a name="projects"></a>Проекты
 В Visual Studio проекты — это контейнеры, используемые разработчиками для организации файлов исходного кода и другие ресурсы, которые отображаются в **обозревателе решений**. Обычно проекты, файлы (например, CSPROJ-файл для проекта C#), в которых хранятся ссылки на файлы исходного кода и ресурсов, таких как файлы растровых изображений. Проекты позволяют организовать, построения, отладки и развертывания исходного кода, ссылки на веб-служб и баз данных и другие ресурсы. Пакеты VSPackage может расширить систему проекта Visual Studio тремя основными способами: *типы проектов*, *подтипы проекта*, и *пользовательские инструменты*.
@@ -37,7 +37,7 @@ ms.locfileid: "56840913"
 
  Описание веб-проект, который в свою очередь создают веб-приложений.
 
-- [Создание нового проекта. Это работает, часть один](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) и [Создание нового проекта: Это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [Создание проекта: Это работает, часть один](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) и [Создание нового проекта: как это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
 
  Объясняет, что фактически происходит при создании нового проекта.
 

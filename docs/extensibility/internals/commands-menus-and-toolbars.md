@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0634105b9b071ac4155adb3248abd2b4be19b29
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861999"
 ---
 # <a name="commands-menus-and-toolbars"></a>Команды, меню и панелей инструментов
 Меню и панелей инструментов, что пользователей получить доступ к командам в VSPackage. Команды — это функции, которые выполняют задачи, например печать документа, обновление представления или создание нового файла. Меню и панели инструментов — это удобные графические способы представления команд пользователям. Обычно связанные команды группируются в одном меню или на одной панели инструментов.

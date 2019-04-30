@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0d6a6cfeb3cb222d2ef58233b072f80e50c8d9e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891895"
 ---
 # <a name="add-icons-to-menu-commands"></a>Добавление значков для команды меню
 Команды могут отображаться на меню и панелей инструментов. На панели инструментов довольно часто команду, чтобы увидеть с помощью просто значок (для экономии места) при меню, что команды обычно отображается значок и текст.

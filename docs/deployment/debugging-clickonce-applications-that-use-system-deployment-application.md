@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1efa919349535a2cb73ca80f2015ef0d0df93cd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929004"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Отладка приложений ClickOnce, использующих System.Deployment.Application
 В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания можно настроить способ обновления приложения. Тем не менее, если вам нужно использовать и настраивать дополнительные [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] возможности развертывания, необходимо будет получить доступ к объектной модели развертывания, предоставляемые <xref:System.Deployment.Application>. Можно использовать <xref:System.Deployment.Application> API-интерфейсы для сложных задач, таких как:

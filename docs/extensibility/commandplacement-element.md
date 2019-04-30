@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f9367e412f66ded1fd009b31a4788ed4ecc86a2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891243"
 ---
 # <a name="commandplacement-element"></a>Элемент CommandPlacement
 Элемент CommandPlacement включает кнопки, группы и меню, должны быть включены в более чем одной группе или меню. С помощью элемента CommandPlacement, у вас нет полностью переопределить эти элементы, чтобы изменить внешний вид пользовательского интерфейса.
@@ -36,7 +36,7 @@ ms.locfileid: "56718187"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |guid|Обязательный. Идентификатор guid набора команд, как определено в [элемент Symbols](../extensibility/symbols-element.md).|
 |id|Обязательный. Идентификатор меню, группу или команду, чтобы поместить, как определено в `Symbols Element`.|
@@ -45,7 +45,7 @@ ms.locfileid: "56718187"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |Родительский|Обязательный. Меню или группы, на котором размещается элемент, чтобы разместить.|
 

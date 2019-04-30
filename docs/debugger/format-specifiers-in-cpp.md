@@ -25,13 +25,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896624"
 ---
-# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Описатели формата для C++ в отладчике Visual Studio
+# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Описатели для формата C++ в отладчике Visual Studio
 Можно изменить формат, в котором значение отображается в **Watch**, **"Видимые"**, и **"Локальные"** windows с помощью описателей формата.
 
 Можно также использовать описатели формата в **Интерпретация** окне **команда** окно в [точки трассировки](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)и даже в окнах исходного кода. Если вы приостановите выполнение выражения в этих окон, результат появится в [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). В подсказке по данным указывается описатель формата.
@@ -62,7 +62,7 @@ int main() {
 ::: moniker-end
 
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Описатели формата
-В следующих таблицах описываются спецификаторы формата, которые можно использовать в Visual Studio. Описатели, выделенные жирным шрифтом, поддерживаются только в том случае, для нового отладчика, а не для отладки взаимодействия с использованием C + +/ CLI.
+В следующих таблицах описываются спецификаторы формата, которые можно использовать в Visual Studio. Описатели, выделенные жирным шрифтом, поддерживаются только в том случае, для нового отладчика, а не для отладки взаимодействия с использованием C++выполняет.
 
 ::: moniker range=">= vs-2019" 
 
@@ -167,7 +167,7 @@ int main() {
 |wm|Номера сообщений Windows|0x0010|WM_CLOSE|
 |!|Raw-формат, игнорируя любые настройки представления типов данных|\<настраиваемое представление>|4|
 
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Описателях для адресов памяти при отладке взаимодействия с использованием C + +/ CLI
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Описатели для адресов памяти при отладке взаимодействия с использованием формата C++выполняет
 В следующей таблице описаны символы форматирования адресов памяти. Спецификатор адреса памяти можно использовать для любого значения или выражения, возвращающего адрес ячейки памяти.
 
 |Символ|Формат|Исходное контрольное значение|Отображаемое значение|

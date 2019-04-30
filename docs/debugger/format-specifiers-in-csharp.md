@@ -1,5 +1,5 @@
 ---
-title: Описатели в отладчике формата (C#) | Документация Майкрософт
+title: Форматирование указателей в отладчике (C#) | Документация Майкрософт
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -26,13 +26,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849847"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Описатели в формата C# в отладчике Visual Studio
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Определители формата в C# в отладчике Visual Studio
 Можно изменить формат, в котором значение отображается в **Watch** окна с помощью описателей формата. Можно также использовать описатели формата в **Интерпретация** окне **команда** окно в [точки трассировки](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)и в окнах исходного кода. Если вы приостановите выполнение выражения в этих окон, результат будет отображаться в [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) в указанный формат отображения.
 
 Чтобы использовать описатель формата, введите выражение переменной, за которым следует запятая и соответствующий спецификатор.

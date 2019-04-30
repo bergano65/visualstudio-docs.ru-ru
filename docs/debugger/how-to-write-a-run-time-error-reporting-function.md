@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff16a1443b05dc7021406cde03a4153f3234602
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905906"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Практическое руководство. Написание функции, сообщающей об ошибке во время выполнения (C++)
 Настраиваемая функция, сообщающая об ошибках, возникающих во время выполнения, должна иметь такое же объявление, что и `_CrtDbgReportW`. Она должна возвращать отладчику значение 1.
@@ -122,5 +122,5 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 [Настройка проверок во время выполнения машинного кода](../debugger/native-run-time-checks-customization.md)

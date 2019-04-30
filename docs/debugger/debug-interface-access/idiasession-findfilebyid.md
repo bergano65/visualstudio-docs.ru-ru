@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3454ff5ef087b67dda5d48849d4a6c4eceb7e52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839359"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
 Извлекает исходный файл, идентификатор файла источника.
@@ -46,7 +46,7 @@ HRESULT findFileById ( 
 ## <a name="remarks"></a>Примечания
  Идентификатор файла источника — это уникальное значение, используется внутренним образом для пакета SDK для доступа к интерфейсу отладки, чтобы сделать уникальным все исходные файлы. Этот метод обычно используется внутренне для пакета SDK для доступа к интерфейсу отладки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

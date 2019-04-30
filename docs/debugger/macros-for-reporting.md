@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c92424275a1dff69863b81fbf8567fbc4b84499
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905559"
 ---
 # <a name="macros-for-reporting"></a>Макросы для создания отчетов
 Для отладки, можно использовать **_RPTn** и **_RPTFn** макросы, определенные в CRTDBG. H, чтобы заменить использование `printf` инструкций. Не нужно их в inclose **#ifdef**s, так как они автоматически исчезают в выпуске построение **_DEBUG** не определена.
@@ -79,5 +79,5 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
 
  Кроме того, можно легко изменить пользовательский макрос для более или менее передачи сведений в различные назначения. Этот подход особенно полезна при развитии требований отладки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Методы отладки CRT](../debugger/crt-debugging-techniques.md)

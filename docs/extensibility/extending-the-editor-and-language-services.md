@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 823d9597e61d87d15ab9e96afad7d84703be68f9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912334"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Расширение редактора и языковой службы
 Можно добавить собственный редактор компонентов службы языка (например, технология IntelliSense) и расширить большинство функций уровней в редакторе кода Visual Studio.  Полный список можно расширить, см. в разделе [точки расширения редактора и служба языка](../extensibility/language-service-and-editor-extension-points.md).
@@ -28,7 +28,7 @@ ms.locfileid: "56716770"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Начало работы с расширениями редактора и служба языка](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|Объясняется, как создать расширение редактора.|
 |[В редакторе](../extensibility/inside-the-editor.md)|Описание общей структуры редактора и перечислены некоторые из его компонентов.|

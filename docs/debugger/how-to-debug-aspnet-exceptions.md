@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: 6a9c6d2c2159ca21f227beb2f8bd1a98b9420328
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894343"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Практическое руководство. отладку исключений ASP.NET
 Отладка исключений является важной частью разработки надежного приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Общие сведения об отладке исключений находится в [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md).

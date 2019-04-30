@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание общего выходного каталога | Документация Майкрософт
+title: Практическое руководство. Создание общего выходного каталога | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd3d32873b98187f2a24a0e31e8d24ae8b0a6a01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 63941028b4bf461184c4ea203d6b529c00195faf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584352"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Практическое руководство. Создание общего выходного каталога
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,14 +27,14 @@ ms.locfileid: "54805436"
   
 ### <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Помещение всех выходных данных решения в общий каталог  
   
-1.  Щелкните один проект в решении.  
+1. Щелкните один проект в решении.  
   
-2.  В меню **Проект** выберите пункт **Свойства**.  
+2. В меню **Проект** выберите пункт **Свойства**.  
   
-3.  В зависимости от типа проекта откройте вкладку **Компиляция** или **Сборка** и задайте в поле **Выходной путь** папку, которую хотите использовать для всех проектов в решении.  
+3. В зависимости от типа проекта откройте вкладку **Компиляция** или **Сборка** и задайте в поле **Выходной путь** папку, которую хотите использовать для всех проектов в решении.  
   
-4.  Повторите шаги 1–3 для всех проектов в решении.  
+4. Повторите шаги 1–3 для всех проектов в решении.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)   
  [Практическое руководство. Изменение выходного каталога сборки](../ide/how-to-change-the-build-output-directory.md)

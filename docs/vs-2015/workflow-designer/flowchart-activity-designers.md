@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d26c60dab3ab09d2fc9f42609568ab21ecd19104
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943397"
 ---
 # <a name="flowchart-activity-designers"></a>Конструктор действия блок-схемы
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] включает определенное количество системных действий, которые могут быть использованы для построения рабочих процессов. Данный раздел содержит действия, предоставленные системой и используемые для управления блок-схемами в пределах рабочего процесса. В следующих подразделах приводится описание этих действий, а также описание их использования.  

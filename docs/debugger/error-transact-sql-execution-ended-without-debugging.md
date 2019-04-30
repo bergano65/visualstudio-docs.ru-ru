@@ -1,5 +1,5 @@
 ---
-title: 'Ошибка: Выполнение Transact-SQL завершается без отладки | Документация Майкрософт'
+title: 'Ошибка: Выполнение Transact-SQL завершено без отладки | Документация Майкрософт'
 ms.date: 11/08/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71d1f14bef8eb69fa6c6fc4d9c3f669826079c99
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850163"
 ---
-# <a name="error-transact-sql-execution-ended-without-debugging"></a>Ошибка: выполнение Transact-SQL завершается без отладки
+# <a name="error-transact-sql-execution-ended-without-debugging"></a>Ошибка: Выполнение Transact-SQL завершается без отладки
 
 Эта ошибка возникает при попытке отладки Transact-SQL или процедуры SQLCLR и отладчик не получает сообщения об отладке от SQL Server.
 
@@ -40,15 +40,15 @@ ms.locfileid: "56722347"
 
   Чтобы устранить эту ошибку, необходимо:
 
-  - Проверить установленные параметры прав доступа. Дополнительные сведения см. в разделе [как: задать разрешения для SQL Server для отладки](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
+  - Проверить установленные параметры прав доступа. Дополнительные сведения см. в разделе [Как Задайте разрешения SQL Server для отладки](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
 
   - Удостовериться в том, что отладка SQL настроена верно.
 
   - Обратиться за консультацией к администратору сети или администратору базы данных.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Настройка отладки SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Практическое: задать разрешения SQL Server для отладки](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Практическое руководство. Задайте разрешения SQL Server для отладки](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
 - [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

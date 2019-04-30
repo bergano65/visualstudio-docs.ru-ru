@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b1bd68e9d647f9a44eaa8b975995f2d7de3d9640
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907545"
 ---
 # <a name="wizard-vsz-file"></a>Файл мастера (VSZ-файл)
 
@@ -36,7 +36,7 @@ Param="WIZARDUI = FALSE"
 
 Ниже приведены компоненты в VSZ-файле.
 
-|Отделение|Описание:|
+|Отделение|Описание|
 |----------|-----------------|
 |VSWizard|Первый параметр в файле — это номер версии формата файла шаблона. Этот номер версии должен быть 6.0, 7.0, 7.1 или 8.0. Другие номера не удается запустить и привести к ошибке Недопустимый формат.|
 |Мастер|Это поле содержит OLE идентификатор ProgID мастера, или строковое представление GUID CLSID мастер, который создается в интегрированной среде разработки.|

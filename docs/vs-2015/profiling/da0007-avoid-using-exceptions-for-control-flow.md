@@ -1,5 +1,5 @@
 ---
-title: DA0007. Избегайте использования исключений для потока управления | Документы Майкрософт
+title: DA0007. Избегайте использования исключений для потока управления | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2599282909c62e3a35702346f793dfd914c18ac4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580216"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007. Избегайте использования исключений для потока управления
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

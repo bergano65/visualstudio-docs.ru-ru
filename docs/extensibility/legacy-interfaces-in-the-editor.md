@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 044bf36845be70290291b79dee255c452f56f0a0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907482"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Устаревшие интерфейсы в редакторе
 В редакторе Visual Studio доступны из устаревшие интерфейсы. Пакет SDK для Visual Studio включает адаптеры, известный как *оболочек*, которые поддерживают эти интерфейсы для взаимодействия с новым редактором. Тем не менее рекомендуется обновить устаревший код, чтобы использовать новый редактор API. Ваш код будет демонстрировать лучшие показатели и использовании новых технологий, таких как Windows Presentation Foundation (WPF) и Managed Extensibility Framework (MEF).
 
 ## <a name="related-topics"></a>См. также
 
-| Заголовок | Описание: |
+| Заголовок | Описание |
 | - | - |
 | [Адаптировать устаревшего кода в редакторе](../extensibility/adapting-legacy-code-to-the-editor.md) | Объясняется, как адаптировать код в новый редактор. |
 | [Нового или измененного поведения с помощью редактора адаптеров](../extensibility/new-or-changed-behavior-with-editor-adapters.md) | Объясняет, как поведение редактора адаптеров отличается от более ранних версий редактора. |

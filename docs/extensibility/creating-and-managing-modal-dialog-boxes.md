@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dfd0fb71aaca9cb3de2d7cc6d3b6229042a4e7fa
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926410"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Создание и управление ими модальные диалоговые окна
 При создании модального диалогового окна в Visual Studio, необходимо убедитесь в том, что родительское окно окна отключен во время отображения диалогового, а затем повторно включить родительского окна, после закрытия окно. Если этого не сделать, появляется сообщение об ошибке: *Microsoft Visual Studio не удается завершить работу, так как модальное диалоговое окно является активным. Закройте это окно и повторите попытку.*

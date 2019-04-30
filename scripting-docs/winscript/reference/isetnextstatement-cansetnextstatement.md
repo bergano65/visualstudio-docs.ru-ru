@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: eb65faaf107c42b44201ea18c1150f8093b1654c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786619"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
 Этот метод определяет, можно ли задать точку выполнения, который определяет следующий оператор кода, который будет выполнен, в указанное расположение.  
@@ -44,7 +44,7 @@ HRESULT CanSetNextStatement(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Следующий оператор могут обновляться в контекст указанного кода.|  
 |`S_FALSE`|Следующий оператор нельзя обновить до контекст указанного кода.|  

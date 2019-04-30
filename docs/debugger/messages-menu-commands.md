@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845894"
 ---
 # <a name="messages-menu-commands"></a>Команды меню "Сообщения"
 **Сообщений** меню доступны команды для управления представлениями сообщений.

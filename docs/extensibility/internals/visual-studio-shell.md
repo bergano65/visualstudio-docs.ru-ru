@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 65f3090c6b96290527d2508ba47c899c81d6e6dd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908033"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Оболочки является основным агентом интеграции в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Оболочка предоставляет необходимые функции для выполнения пакетов VSPackage для совместного использования общих служб. Поскольку архитектуры цель [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] — vest основные функциональные возможности в пакеты VSPackage, оболочки — это платформа для предоставляют основные функциональные возможности и поддержки взаимодействия между его компонента пакетов VSPackage.

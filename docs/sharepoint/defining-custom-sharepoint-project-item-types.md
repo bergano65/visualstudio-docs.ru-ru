@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e5f32abba4c4cbdeab59ed66e38019d913e704e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580788"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Определение пользовательских типов элементов проектов SharePoint
   Определите новый тип элемента проекта SharePoint, если вы хотите создать новый тип элемента проекта SharePoint. Например Visual Studio не включает элементы проекта SharePoint для добавления полей или настраиваемые действия на сайте SharePoint. Можно определить собственные типы элементов проекта SharePoint для создания поля, настраиваемые действия и других типов компонентов SharePoint.

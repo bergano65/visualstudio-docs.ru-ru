@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 66591308c2b0c59cf310d3957131f80191cc51c3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905490"
 ---
 # <a name="native-run-time-checks-customization"></a>Настройка проверок во время выполнения машинного кода
 При выполнении компиляции с **/RTC** (проверки времени выполнения) или использовать `runtime_checks` директивы pragma библиотеки времени выполнения C предоставляет проверки времени выполнения в машинном коде. В некоторых случаях необходимо настроить проверки времени выполнения:
@@ -40,7 +40,7 @@ ms.locfileid: "56723595"
 
   Для настройки процесса проверки ошибок во время выполнения можно:
 
-- написать функцию, сообщающую об ошибке времени выполнения. Дополнительные сведения см. в разделе [как: написать функцию отчетов во время выполнения ошибки](../debugger/how-to-write-a-run-time-error-reporting-function.md).
+- написать функцию, сообщающую об ошибке времени выполнения. Дополнительные сведения см. в разделе [Как написать функцию, сообщающую об ошибке во время выполнения](../debugger/how-to-write-a-run-time-error-reporting-function.md).
 
 - настроить место назначения для сообщения об ошибке;
 
@@ -54,7 +54,7 @@ ms.locfileid: "56723595"
 ## <a name="query-for-information-about-run-time-checks"></a>Запрос сведений о проверках времени выполнения
  `_RTC_NumErrors` возвращает количество типов ошибок, обнаруженных в процессе проверки во время выполнения. Для получения краткого описания каждой ошибки можно использовать цикл от 0 до возвращенного `_RTC_NumErrors` значения, передавая номер итерации на каждом шаге в функцию `_RTC_GetErrDesc`. Дополнительные сведения см. в разделе [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) и [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Практическое руководство. Настройка проверок во время выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)
