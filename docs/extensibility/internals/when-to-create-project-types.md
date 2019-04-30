@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eaf8982afb01ee07eb8c2d672f351c6e917620a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907599"
 ---
 # <a name="when-to-create-project-types"></a>Когда следует создавать типы проектов
 Создание нового типа проекта предоставляет основу для настройки [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для пользователей. Тем не менее, создавать новый тип проекта не требуется для всех [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] настроек. Следующие рекомендации помогут вам определить необходимость новый тип проекта для вашего сценария.
@@ -59,5 +59,5 @@ ms.locfileid: "60094428"
 
 ## <a name="see-also"></a>См. также
 - [Редакторы и документов Windows](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
-- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

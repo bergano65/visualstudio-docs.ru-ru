@@ -1,5 +1,5 @@
 ---
-title: 'Как: Открытие представления сообщений из окна поиска | Документация Майкрософт'
+title: Практическое руководство. Открытие представления сообщений из окна поиска | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f5fef9288a662b6726c185b50a79c8007b586b42
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906584"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Практическое руководство. Открытие представления сообщений из окна поиска
+# <a name="how-to-open-messages-view-from-find-window"></a>Практическое руководство. открытие представления сообщений из окна поиска
 Может оказаться удобнее использовать **найти окно** диалоговое окно для выбора конечного окна, а затем откройте представление сообщений окна.
 
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Чтобы открыть окно представления сообщений с помощью диалогового окна поиска

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eec2d1dd536b70432b761d613389acdac80cd6d5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921275"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 Модуль отладки (DE) отправляет этот интерфейс диспетчер отладки сеансов (SDM) при создании экземпляра DE.
@@ -37,7 +37,7 @@ IDebugEngineCreateEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugEngineCreateEvent2`.
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Извлекает объект, представляющий только что созданный отладчик (DE).|
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 19ad68ce060eca252befb033b3181fc9da7a28c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890788"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Поле AsyncVoidMethodBuilder.m_objectIdForDebugger
 Представляет неактивно инициализированный объект, используемый отладчиком для уникальной идентификации этого построителя.

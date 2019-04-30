@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eb7b7e847c116f3aab38a12ec9801988bb8b3fc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912848"
 ---
 # <a name="stepping-in-break-mode"></a>Шаг с заходом в режиме приостановки выполнения
 В следующем разделе описывается процесс, который возникает, когда отладчик находится в режиме приостановки выполнения и необходимо пошаговое выполнение кода:

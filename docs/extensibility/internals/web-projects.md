@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0c0e796632966c43c052f70fc872d550b57ad7d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856972"
 ---
 # <a name="web-projects"></a>Веб-проекты
 Веб-проекта системы — это система, создающий веб-проектов. Веб-проектов, в свою очередь, создайте веб-приложений. Вы можете программировать с помощью традиционных языках программирования, таких как веб-страницы [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] или [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], для сбора и обработки информации от пользователя, сохранить его в базу данных и так далее. Веб-страницы с соответствующий код, называются смарт-веб-страниц.

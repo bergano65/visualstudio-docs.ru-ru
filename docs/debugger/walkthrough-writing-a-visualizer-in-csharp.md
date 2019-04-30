@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901252"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Пошаговое руководство. Написание визуализатора на C\#
 В данном пошаговом руководстве показано, как написать простой визуализатор, используя C#. Визуализатор, который вы создадите в данном пошаговом руководстве, показывает содержание строки, используя окно сообщений Windows Forms. Этот простой визуализатор строки сам по себе не очень полезен, но он демонстрирует основные действия для создания более полезных визуализаторов других типов данных.

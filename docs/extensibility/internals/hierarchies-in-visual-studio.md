@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909831"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Иерархии в Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) выводит проект как *иерархии*. В интегрированной среде разработки иерархия представляет собой дерево узлов, где каждый узел имеет набор связанных свойств. Объект *проекта иерархии* — это контейнер, в которой хранятся элементы проекта, связей элементов и связанных свойств элементов и команд.

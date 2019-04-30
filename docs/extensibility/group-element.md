@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 35528f694cf76c1971e07023125706c962e77fe2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911824"
 ---
 # <a name="group-element"></a>Элемент Group
 Определяет группу команды VSPackage.
@@ -34,7 +34,7 @@ ms.locfileid: "56708658"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |guid|Обязательный. Идентификатор GUID идентификатора GUID и идентификатора команды.|
 |id|Обязательный. Идентификатор GUID и идентификатора идентификатор команды.|
@@ -43,14 +43,14 @@ ms.locfileid: "56708658"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |Родительский|Необязательный параметр. Родительский элемент кнопки.|
 |Комментарий|Дополнительный комментарий.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Элемент Groups](../extensibility/groups-element.md)|Содержит записи, которые определяют группы команд пакета VSPackage.|
 

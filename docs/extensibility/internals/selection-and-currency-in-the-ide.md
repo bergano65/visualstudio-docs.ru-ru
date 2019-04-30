@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 612549e9aceb7a9bad6da2a5388dedd277469bad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908794"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Выбор и актуальность в интегрированной среде разработки
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) хранит сведения о пользователей выбранного в данный момент объектов с помощью выбора *контекст*. С контекстом выделения пакеты VSPackage могут принять участие в валюте, отслеживания двумя способами:

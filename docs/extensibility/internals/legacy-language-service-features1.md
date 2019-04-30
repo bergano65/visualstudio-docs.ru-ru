@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d2a1eea79b0ac2d80fb2b75043d4462e73928798
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909558"
 ---
 # <a name="legacy-language-service-features"></a>Функции службы устаревшего языка
 Службы языка framework (MPF) управляемых пакетов может поддерживать один или несколько [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] функции, такие как выделение синтаксических конструкций, IntelliSense и проверка точек останова. Каждый компонент может быть реализован независимо от других, но все требуют средство синтаксического анализа и сканер за исключением выделения синтаксиса, который требует только сканера.

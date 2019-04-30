@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb717363266b95397ea749e7465b07df75f60da2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916426"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Этот интерфейс выполняет маршалинг интерфейса, связанных с программой через границы процессов.
@@ -37,7 +37,7 @@ IDebugProviderProgramNode2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  Этот интерфейс реализует следующий метод:
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Возвращает заданный интерфейс через границы процессов.|
 

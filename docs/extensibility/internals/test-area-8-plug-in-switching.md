@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b308fb97a55f61645d038c9a81445f4561415e9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908881"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Область тестирования 8. Переключение подключаемых модулей
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) имеет пользовательский интерфейс (UI), чтобы изменить текущий модуль управления версиями. Эта область тестирования предоставляет тестовые случаи для процесса комплектации подключаемый модуль для решений системы управления версиями.

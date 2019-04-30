@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: af56a0ecda516fd7cf3e775d58459b08790f9148
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891385"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Параметры командной строки (Visual Studio SDK)
 *Devenv.exe*, исполняемый файл, который запускает [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), поддерживает параметры командной строки специально для разработки пакетов VSPackage. Пакеты VSPackage могут также предлагать свои собственные переключатели командной строки Devenv. Ниже представлены сведения о том, как использовать параметры командной строки в интегрированной среде разработки.

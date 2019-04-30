@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898137"
 ---
 # <a name="product-and-package-schema-reference"></a>Справочные сведения о схеме пакетов и продуктов
 Объект *файла продукта* является XML-манифест, описывающий все внешние зависимости, требуемые [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Примеры внешних зависимостей [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] и Microsoft Data Access Components (MDAC). Файл пакета похож на файл продукта, но используется для установки компонентов зависит от языка и региональных параметров, зависимости, такие как локализованных сборок, лицензионные соглашения и документации.
@@ -39,13 +39,13 @@ ms.locfileid: "56598990"
 
 |Элемент|Описание|Атрибуты|
 |-------------|-----------------|----------------|
-|[\<Продукт > элемент](../deployment/product-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файла продукта.|Нет|
-|[\<Пакет > элемент](../deployment/package-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файлов пакета.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts > элемент](../deployment/relatedproducts-element-bootstrapper.md)|Необязательный элемент, для файла продукта. Другие продукты, устанавливает или зависит от этого продукта.|Нет|
-|[\<InstallChecks > элемент](../deployment/installchecks-element-bootstrapper.md)|Обязательный элемент. Список проверок зависимостей для выполнения на локальном компьютере во время установки.|Нет|
-|[\<Команды > элемент](../deployment/commands-element-bootstrapper.md)|Обязательный элемент.  Выполняет одну или несколько проверок установки согласно `InstallChecks`и указывает, какой пакет следует установить проверка завершилась ошибкой.|Нет|
-|[\<PackageFiles > элемент](../deployment/packagefiles-element-bootstrapper.md)|Обязательный элемент. Список пакетов, которые могут быть установлены в процессе установки.|Нет|
-|[\<Строки > элемент](../deployment/strings-element-bootstrapper.md)|Обязательный элемент. Сохраняет локализованную версию строки имени и ошибка продукта.|Нет|
+|[Элемент \<Product>](../deployment/product-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файла продукта.|Нет|
+|[Элемент \<Package>](../deployment/package-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файлов пакета.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
+|[Элемент \<RelatedProducts>](../deployment/relatedproducts-element-bootstrapper.md)|Необязательный элемент, для файла продукта. Другие продукты, устанавливает или зависит от этого продукта.|Нет|
+|[Элемент \<InstallChecks>](../deployment/installchecks-element-bootstrapper.md)|Обязательный элемент. Список проверок зависимостей для выполнения на локальном компьютере во время установки.|Нет|
+|[Элемент \<Commands>](../deployment/commands-element-bootstrapper.md)|Обязательный элемент.  Выполняет одну или несколько проверок установки согласно `InstallChecks`и указывает, какой пакет следует установить проверка завершилась ошибкой.|Нет|
+|[Элемент \<PackageFiles>](../deployment/packagefiles-element-bootstrapper.md)|Обязательный элемент. Список пакетов, которые могут быть установлены в процессе установки.|Нет|
+|[Элемент \<Strings>](../deployment/strings-element-bootstrapper.md)|Обязательный элемент. Сохраняет локализованную версию строки имени и ошибка продукта.|Нет|
 
 ## <a name="remarks"></a>Примечания
  Схема пакета, используемое *Setup.exe*, программу-заглушку, создаваемые MS Build, начальная загрузка задачу, которая содержит немного логики жестко свои собственные. Схема управляет всеми аспектами процесса установки.

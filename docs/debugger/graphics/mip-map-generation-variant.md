@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895603"
 ---
 # <a name="mip-map-generation-variant"></a>Вариант создания MIP-карты
 Включает MIP-карты для текстур, не являющихся целевыми объектами отрисовки.
@@ -69,5 +69,5 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 > [!NOTE]
 > Если вы хотите предоставить собственное содержимое уровня MIP вместо автоматического его создания, вам необходимо создать текстуры с помощью редактора изображений, который поддерживает текстуры с MIP-картами, а затем загрузить файл и передать уровни MIP в `CreateTexture2D`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 [Вариант размера текстур: половина/четверть](half-quarter-texture-dimensions-variant.md)
