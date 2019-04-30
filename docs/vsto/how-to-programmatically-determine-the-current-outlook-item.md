@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5566538b428502c8e63e752463b0271daeac2918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814823"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Практическое руководство. Программное определение текущего элемента Outlook
   В этом примере используется `Explorer.SelectionChange` событий, чтобы отобразить имя текущей папки и некоторые сведения о выбранном элементе. Затем код отображает выбранный элемент.

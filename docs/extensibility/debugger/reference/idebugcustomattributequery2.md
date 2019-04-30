@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 23f76cfc71fab73d5d31fe3f47c3f8c552271aa7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921637"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 Определяет наличие настраиваемого атрибута для этого поля и, если он существует, возвращает сведения об атрибутах.
@@ -38,14 +38,14 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы **IDebugCustomAttributeQuery** интерфейс.
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|Определяет, существует ли настраиваемый атрибут по имени.|
 |[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|Возвращает сведения об атрибутах, для заданного настраиваемого атрибута.|
 
  В дополнение к **IDebugCustomAttributeQuery** методы, `IDebugCustomAttributeQuery2` реализует следующий метод:
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|Возвращает перечислитель для все настраиваемые атрибуты, вложенные в это поле.|
 

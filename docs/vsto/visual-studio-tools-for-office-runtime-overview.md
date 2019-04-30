@@ -27,11 +27,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e78d20fa0c7d4d0db6db50c2cbb5cde0b79023fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982336"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools для среды
   Для запуска решений, созданных с помощью средств разработчика Microsoft Office в Visual Studio, Visual Studio 2010 Tools для Office runtime должны устанавливаться на компьютерах конечных пользователей. Дополнительные сведения см. в разделе [Как Установка средств Visual Studio для распространяемого пакета среды выполнения Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools для Office runtime состоит из двух основных компонентов:

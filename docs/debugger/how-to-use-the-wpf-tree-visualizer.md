@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: da18990620644834192c38c24ced9a25ecb56215
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906113"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Практическое руководство. Использование визуализатора дерева WPF
 Визуализатор дерева WPF можно использовать для изучения визуального дерева объекта WPF, а также для просмотра свойств зависимостей WPF для объектов, содержащихся в дереве. Дополнительные сведения о визуальных деревьях см. в разделе [деревья в WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Дополнительные сведения о свойствах зависимостей см. в разделе [Общие сведения о свойствах зависимостей](/dotnet/framework/wpf/advanced/dependency-properties-overview).

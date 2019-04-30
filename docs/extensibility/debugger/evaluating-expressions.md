@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: de25fca07642414ec42f17c2e458b90ce94041cb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925795"
 ---
 # <a name="evaluate-expressions"></a>Вычисление выражений
 Выражения создаются на основе строк, переданные с **"Видимые"**, **Watch**, **"Быстрая проверка"**, или **Интерпретация** windows. При вычислении выражения, он создает строку печати, которая содержит имя и тип переменной или аргумента и его значение. Эта строка отображается в соответствующем окне интегрированной среды разработки.

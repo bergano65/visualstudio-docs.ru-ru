@@ -10,11 +10,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5efc22f6254ec0040dc4d767d7ac2831b4bd96f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949166"
 ---
 # <a name="state-machine-activity-designers"></a>Конструкторы действий конечных автоматов
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] включает ряд конструкторов действий, которые вы можете использовать для построения рабочих процессов. Этот раздел содержит предоставленные системой конструкторы действий, которые используются для создания рабочих процессов конечного автомата и управления ими. В следующих подразделах приводится описание этих конструкторов, а также описание их использования.  

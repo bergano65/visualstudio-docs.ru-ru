@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982327"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Использование функциональных возможностей Office в Visual Studio
   При создании проекта уровня документа, документа и сопоставленного приложения размещаются в Visual Studio, чтобы можно создать и работать непосредственно с документом. Если у вас есть Microsoft Office, откройте приложение в Visual Studio, обычно работает ожидаемым образом. Тем не менее некоторые функциональные возможности приложения, могут оказаться недоступными или.

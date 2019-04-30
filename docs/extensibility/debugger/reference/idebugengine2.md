@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 86458a501ba1bb321727663b6c8b995d329904f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920868"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 Этот интерфейс представляет модуля отладки (DE). Он используется для управления различными аспектами сеанса отладки, от создания точки останова для установки и очистки исключения.
@@ -37,7 +37,7 @@ IDebugEngine2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugEngine2`.
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Создает перечислитель для всех программ, для которого выполняется отладка, DE.|
 |[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Присоединяет DE к программе.|

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5dbf56278a3987fafa0e0a0263c17460b56fafaf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939252"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Вызов кода в надстройках VSTO из других решений Office
   Объект в надстройке VSTO можно предоставить другим решениям, включая другие решения Microsoft Office. Это полезно, если надстройка VSTO предоставляет службу, доступ к которой нужно предоставить другим решениям. Например если у вас есть надстройки VSTO для Microsoft Office Excel, которая выполняет вычисление финансовых данных из веб-службы, другие решения могут выполнять эти вычисления, вызывая надстройки VSTO для Excel во время выполнения.

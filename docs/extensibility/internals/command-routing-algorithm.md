@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 591a5bdbeaa8724eb51d5755066b382c08740bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910401"
 ---
 # <a name="command-routing-algorithm"></a>Алгоритм маршрутизации команд
 В Visual Studio команды обрабатываются ряд различных компонентов. Команды направляются из внутреннего контекста, который основывается на текущую выборку, самый внешний контекст (также известный как глобальные). Дополнительные сведения см. в разделе [команды доступности](../../extensibility/internals/command-availability.md).

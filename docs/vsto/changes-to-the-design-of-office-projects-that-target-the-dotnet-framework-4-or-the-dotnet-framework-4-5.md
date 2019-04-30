@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 046e0e5ab33d3eece5c44fcadb31ca93700587e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939490"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Изменения проектирования проектов Office, предназначенных для .NET Framework 4 или .NET Framework 4.5
   Начиная с версии [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], в Visual Studio появился ряд изменений в структуре проектов Office, которые ориентируются на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию. Если вы знакомы с проектами Office в предыдущих версиях Visual Studio, вам следует ознакомиться с этими изменениями до разработки проектов Office, ориентированных на платформу .NET Framework версии 4.0 или более поздней. По умолчанию, все проекты, создаваемые с помощью Visual Studio 2013 или более поздней версии, ориентируются на платформу .NET Framework 4.0 или более поздней версии.

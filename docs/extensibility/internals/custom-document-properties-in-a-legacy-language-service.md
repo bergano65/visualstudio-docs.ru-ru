@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98402a61629b48b25a8636aaf6a912e89c283951
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910048"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Настраиваемые свойства документа в языковой службы прежних версий
 Свойства документа, которые могут отображаться в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **свойства** окна. Языки программирования обычно не имеют свойства, связанные с отдельным исходных файлов. Тем не менее XML поддерживает свойства документа, которые влияют на кодирование, схемы и таблицы стилей.

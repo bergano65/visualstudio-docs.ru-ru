@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b3c996b8b97217deb130d8e11a68b7efae01ee05
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843765"
 ---
 # <a name="add-search-to-a-tool-window"></a>Добавление поиска в окно инструментов
 При создании или обновлении расширения окна инструментов, можно добавить функций поиска, появляющийся в Visual Studio. Эта функция включает в себя следующие компоненты:

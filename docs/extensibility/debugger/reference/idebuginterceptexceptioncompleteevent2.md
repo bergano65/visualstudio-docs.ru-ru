@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f3bd87a4ae370690a5b055a1c3033d336385b86d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873378"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
 Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) после завершения обработки события, перехваченные DE.
@@ -37,7 +37,7 @@ IDebugInterceptExceptionCompleteEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  `IDebugInterceptExceptionCompleteEvent2` Интерфейс реализует следующие методы.
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|Возвращает уникальное значение, связанное с обрабатываемое исключение.|
 

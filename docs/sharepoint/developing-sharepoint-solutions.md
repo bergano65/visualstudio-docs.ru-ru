@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6639a52eb71d7cd826a1882e6e79cf124f2045d6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967574"
 ---
 # <a name="develop-sharepoint-solutions"></a>Разработка решений SharePoint
   В [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеется несколько шаблонов типов проектов SharePoint для создания сайтов SharePoint и элементов сайтов. Список доступных типов проектов, см. в разделе [SharePoint проект и проект шаблоны элементов](../sharepoint/sharepoint-project-and-project-item-templates.md). Далее следует описание элементов и свойств проекта SharePoint.

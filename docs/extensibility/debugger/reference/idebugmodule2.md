@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6d2e7ae091964cd810acfcddcc4ea5ab81943c4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62872846"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 Этот интерфейс представляет модуль, то есть исполняемый модуль программы, например библиотеку DLL.
@@ -41,7 +41,7 @@ IDebugModule2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugModule2`.
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|Получает [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) , описывающий этот модуль.|
 |[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|УСТАРЕВШИЕ. НЕ ИСПОЛЬЗУЙТЕ. Повторно загружает символы для этого модуля.|

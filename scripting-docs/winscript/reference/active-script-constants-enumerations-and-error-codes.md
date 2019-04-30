@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 090b494e904fbef1c0d3d8b380f7a184a6042788
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954002"
 ---
 # <a name="active-script-constants-enumerations-and-error-codes"></a>Константы, перечисления и коды ошибок активных скриптов
 В этом разделе описываются перечисления и коды ошибок, используемые в обработчики сценариев Windows.  
@@ -29,7 +29,7 @@ ms.locfileid: "58150950"
   
 ## <a name="properties"></a>Свойства  
   
-|Свойство|Описание:|  
+|Свойство|Описание|  
 |--------------|-----------------|  
 |[Свойство SCRIPTPROP_HOSTKEEPALIVE](../../winscript/reference/scriptprop-hostkeepalive-property.md)|Используется для указания ли обработчик скриптов должен сохраняться полнофункциональный, при наличии ссылки на медиафайл.|  
   
@@ -48,7 +48,7 @@ ms.locfileid: "58150950"
   
 ## <a name="error-codes"></a>Коды ошибок  
   
-|Код ошибки|Описание:|  
+|Код ошибки|Описание|  
 |----------------|-----------------|  
 |[Код ошибки SCRIPT_E_PROPAGATE](../../winscript/reference/script-e-propagate-error-code.md)|Ошибка сценария передается вызывающему объекту, который может находиться в другом потоке.|  
 |[Код ошибки SCRIPT_E_RECORDED](../../winscript/reference/script-e-recorded-error-code.md)|Ошибка прошло между обработчик скриптов и узлом.|  

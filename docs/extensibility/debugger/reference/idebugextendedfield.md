@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ed0b7300fca935a88b6da9e878d87f5ce443bec9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873918"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
 Расширяет типы полей, которые доступны для поддержки универсальных типов в управляемом коде.
@@ -29,7 +29,7 @@ IDebugExtendedField : IDebugField
 ## <a name="methods"></a>Методы
  В дополнение к методам на [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, этот интерфейс реализует следующие методы:
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Возвращает значение указанного поля расширенного типа.|
 |[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|Определяет, представляет ли поле закрытым типом.|

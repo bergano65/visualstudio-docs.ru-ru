@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5766beb87626efd11ba50422d5f811d1ae1d91e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898702"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Строки&gt; элемент (установщик)
 Определяет локализованные строки названий продуктов, имена пакетов и сообщения об ошибках установки.

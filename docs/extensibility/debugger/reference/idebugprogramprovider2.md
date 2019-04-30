@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 74604e0b3446e33962c6a8e69a69bfc400f0e3e2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916701"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 Зарегистрированные, этот интерфейс позволяет сеанса отладки manager (SDM) для получения сведений о программах, которые были «опубликованы» через [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) интерфейс.
@@ -36,7 +36,7 @@ IDebugProgramProvider2 : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Получает сведения о программах под управлением, фильтруются в различными способами.|
 |[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Возвращает узел программы, получив идентификатор определенного процесса.|

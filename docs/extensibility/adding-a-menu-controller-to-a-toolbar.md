@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843856"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Добавить контроллер меню в панели инструментов
 Это пошаговое руководство построено [добавить панель инструментов в окно инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md) Пошаговое руководство и показано, как добавить контроллер меню в панели инструментов окна инструментов. Показанные здесь шаги также может применяться к панели инструментов, которая создается в [добавить панель инструментов](../extensibility/adding-a-toolbar.md) Пошаговое руководство.

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949491"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Совместная разработка решений Office
   Точно так же, они совместно работать над другими проектами Visual Studio в проекте Office могут работать несколько разработчиков. Visual Studio правильно определяет местоположение установки Microsoft Office на каждом компьютере, даже если Office устанавливается в разных расположениях. Однако существуют важные моменты, которые следует учитывать.

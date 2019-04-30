@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 823a91f15ef1dca47e8fd58db0646cd5248cfb1f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891256"
 ---
 # <a name="commands-element"></a>Элемент Commands
 Представляет коллекцию команд на панели инструментов для VSPackage. Коллекция может иметь до пяти подразделах, следующим образом: меню, группы, кнопки, комбинировать и точечные рисунки.
@@ -42,13 +42,13 @@ ms.locfileid: "56684030"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |пакет|GUID, определяющий VSPackage, предоставляющий команды.<br /><br /> Например, пакет = «guidVsPackage1Pkg».|
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Элемент меню](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|
 |[Элемент Groups](../extensibility/groups-element.md)|Содержит записи, которые определяют группы команд в VSPackage.|

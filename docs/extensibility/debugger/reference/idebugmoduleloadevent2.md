@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 689fd873bc753e885f0e1efad177a26d524bb030
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918545"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 Этот интерфейс отправляется ядром отладки (DE) диспетчер отладки сеансов (SDM) при загрузке или выгрузке модуля.

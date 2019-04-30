@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fd03e1a8615e75d3f00f79eb10b7a7ff97f0eb33
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977376"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Диалоговое окно «Корреляция по определению»
 **CorrelatesOn** диалоговое окно используется в [!INCLUDE[wfd1](../includes/wfd1-md.md)] изменение <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> свойство <xref:System.ServiceModel.Activities.Receive> действия. [!INCLUDE[crdefault](../includes/crdefault-md.md)] [Receive](../workflow-designer/receive-activity-designer.md) раздела.  

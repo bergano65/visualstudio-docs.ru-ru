@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83bed0588a0959ab85906d949e1b0752396223ae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852916"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Страница "Исходные файлы отладки", вкладка "Общие свойства", диалоговое окно "Страницы свойств решения"
 Эта страница свойств задает место, где отладчик будет осуществлять поиск исходных файлов при отладке решения.
@@ -38,7 +38,7 @@ ms.locfileid: "56609713"
 
  **Не выполнять поиск следующих исходных файлов** введите имена файлов, которые требуется отключить отладчик для чтения. Если отладчик найдет один из этих файлов в одном из указанных каталогов, отладчик пропустит этот файл. Если во время отладки появится диалоговое окно **Поиск исходного текста** и вы нажмете **Отмена**, искомый файл будет добавлен к этому списку, и отладчик прекратит поиск этого файла.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)

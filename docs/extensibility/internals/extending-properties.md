@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 84fef8d0f63f76c7810c94ade2e1eb58e55b94cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861313"
 ---
 # <a name="extend-properties"></a>Расширение свойств
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Свойства** окно браузер универсальных свойств для компонентов COM и COM + и поддерживает все [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] продуктов. **Свойства** окно работает с `ITypeInfo` введите сведения и метаданные COM +, чтобы перечислить свойства времени разработки для текущего выбранного объекта в любое другое окно в интегрированной среде разработки (IDE).

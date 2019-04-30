@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5759d810bf9180522508a6be54e5c94ffcfadb3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839385"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 Получает все дочерние элементы идентификатора указанного родительского элемента, которые соответствуют типу имя и символов.
@@ -66,7 +66,7 @@ IDiaEnumSymbols* pEnum;
 pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Обзор](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

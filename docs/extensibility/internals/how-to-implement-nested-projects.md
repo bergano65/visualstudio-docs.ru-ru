@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 96df14cc6e337402761d89d7161094b513473a78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860767"
 ---
 # <a name="how-to-implement-nested-projects"></a>Практическое руководство. Реализация вложенных проектов
 
@@ -88,6 +88,6 @@ ms.locfileid: "60104999"
 
 - [Добавление элементов в диалоговом окне Добавление нового элемента](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Контрольный список: Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Контекстные параметры](../../extensibility/internals/context-parameters.md)
 - [Файл мастера (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)

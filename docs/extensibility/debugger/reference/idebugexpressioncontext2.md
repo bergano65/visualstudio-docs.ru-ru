@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 559115358910fe3445ab12000d1e113167c7da82
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62874184"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 Этот интерфейс представляет контекст для вычисления выражений
@@ -37,7 +37,7 @@ IDebugExpressionContext2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugExpressionContext2`.
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[GetName](../../../extensibility/debugger/reference/idebugexpressioncontext2-getname.md)|Извлекает имя в контекст оценки.|
 |[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|Выполняет синтаксический анализ текстового выражения для оценки.|

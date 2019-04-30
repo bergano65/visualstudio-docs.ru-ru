@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2292c80c01bcc94b04842c1f77f92226705873eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860050"
 ---
 # <a name="legacy-language-service-overview"></a>Обзор языковой службы прежних версий
 Служба языка предоставляет поддержку редактора, которая позволяет реализовывать определенные [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] функции. Классы Managed Package Framework (MPF) языка службы обеспечивают полную поддержку для часто используемых функций и частичная поддержка других функций.

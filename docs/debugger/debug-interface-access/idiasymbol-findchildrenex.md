@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b833353beb009bb4eabbf000d45e0eb44a5794f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837879"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 Получает дочерние узлы, символа. Локальные символы, которые возвращаются включают сведения о динамической диапазона, если программа скомпилирована с оптимизацией на.
@@ -57,13 +57,13 @@ HRESULT findChildrenEx ( 
  Этот метод является расширенной версией [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).
 
 ## <a name="requirements"></a>Требования
- Заголовок: Dia2.h
+ Заголовок: dia2.h
 
  Библиотека: diaguids.lib
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

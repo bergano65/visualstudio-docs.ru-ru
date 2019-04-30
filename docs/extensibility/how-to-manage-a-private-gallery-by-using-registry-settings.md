@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 35a5c80785aa5d7f3e38dfb52b503c42d788e557
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862957"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Практическое руководство. Управление частной галереей с помощью параметров реестра
 Если вы являетесь администратором или разработчиком расширение изолированной оболочки, вы можете управлять доступом к элементам управления, шаблонов и средств в коллекции Visual Studio, коллекции примеров или закрытые коллекции. Чтобы сделать коллекции доступен или недоступен, создать *.pkgdef* файл, описывающий ключи реестра и их значения.

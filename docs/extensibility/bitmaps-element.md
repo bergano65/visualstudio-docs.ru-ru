@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d247a0df29cb14eec6dffa5e362f23693b59cc99
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891666"
 ---
 # <a name="bitmaps-element"></a>Элемент bitmaps
 Группы [точечный рисунок элемента](../extensibility/bitmap-element.md) элементов.
@@ -41,14 +41,14 @@ ms.locfileid: "56699643"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Элемент bitmaps](../extensibility/bitmaps-element.md)|Группирует элементы растрового изображения.|
 |[Элемент Bitmap](../extensibility/bitmap-element.md)|Определяет растрового изображения.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Элемент Commands](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов для VSPackage.|
 

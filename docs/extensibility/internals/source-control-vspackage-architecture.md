@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a3f8fea6457e6763fb5b4752d348a0ea906481a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908547"
 ---
 # <a name="source-control-vspackage-architecture"></a>Архитектура пакета VSPackage системы управления версиями
 Пакет системы управления версиями — пакет VSPackage, который использует службы, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] предоставляет интегрированную среду разработки. Взамен пакет системы управления версиями обеспечивает его функциональные возможности, что в систему управления версиями. Кроме того, пакет системы управления версиями является альтернативой более гибкими, чем интеграция системы управления версиями в подключаемый модуль системы управления версиями [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

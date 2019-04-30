@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ec28c704cb8fecb38395c0c7b3f3e3d22ead389b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863009"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Практическое руководство. Инициируют события, когда редактор теряет фокус
 Иногда бывает необходимо знать, когда редактор теряет фокус на рамку окна. Например может потребоваться для извлечения кода из окна кода после редакторе фокуса на нем. Следующая процедура описывает, как переходить для получения уведомлений о редакторе теряет фокус.

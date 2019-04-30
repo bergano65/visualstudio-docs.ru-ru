@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4cc3c2366ca20328f591b0661e8c2b3e5af1e45
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929195"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Диалоговое окно "Попадание в точку останова"
 С помощью этого диалогового окна можно произвести настройку действия, выполняемого при достижении точки останова.
@@ -34,6 +34,6 @@ ms.locfileid: "56717706"
 
  **Продолжить выполнение** этот элемент управления включен только тогда, когда **напечатать сообщение** выбран. При выборе указанного элемента управления точку останова можно использовать в качестве точки трассировки для отслеживания выполнения программы вместо останова при достижении точки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Использование точек останова](../debugger/using-breakpoints.md)
 - [Использование атрибута DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)

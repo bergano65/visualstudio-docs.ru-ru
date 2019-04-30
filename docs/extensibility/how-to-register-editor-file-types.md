@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f4aad26418c61ea450d697e294203b7f844577f
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862931"
 ---
 # <a name="how-to-register-editor-file-types"></a>Практическое руководство. Регистрация типов файлов в редакторе
 Самый простой способ зарегистрировать редактор типов файлов — с помощью регистрации атрибутов, предоставляемых в составе [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] классы managed package framework (MPF). При реализации пакета в машинный код [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], можно также написать скрипт реестра, который регистрирует редактора и связанные расширения.

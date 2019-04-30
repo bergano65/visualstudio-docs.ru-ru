@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851250"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Режим "Изменить и продолжить" (Visual Basic)
 "Изменить и продолжить" — это режим [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] для отладки, позволяющий изменять код в режиме приостановки. После применения изменений кода можно возобновить выполнение кода с новыми изменениями и увидеть их эффект.
@@ -45,7 +45,7 @@ ms.locfileid: "56699253"
  Подразделы данного раздела предоставляют дополнительные сведения об использовании этого режима и о том, какие виды изменений запрещены.
 
 ## <a name="in-this-section"></a>В этом разделе
- [Практическое: применение изменений в режим приостановки выполнения, изменить и продолжить](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) объясняется, как применять изменения кода в режиме приостановки выполнения.
+ [Практическое руководство. Применение изменений в режим приостановки выполнения, изменить и продолжить](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) объясняется, как применять изменения кода в режиме приостановки выполнения.
 
  [Поддерживаемые изменения кода (C# и Visual Basic)](../debugger/supported-code-changes-csharp.md) описывает типы изменений, которые не могут быть выполнены в [!INCLUDE [vb_current_short](../debugger/includes/vb_current_short_md.md)] изменить и продолжить.
 
