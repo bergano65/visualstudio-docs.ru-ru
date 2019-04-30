@@ -11,11 +11,11 @@ ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: a244463832ff5620efa74a2c7fd20d6d47d79e76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810710"
 ---
 # <a name="providing-a-custom-properties-window"></a>Предоставление пользовательского окна свойств
 Можно предоставить свой собственный **свойства** окна для данного проекта системы, вместо расширения **свойства** окна, предоставляемые [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки (IDE). Чаще всего обнаружены случай — когда вы самостоятельно реализовать объекта, находящегося в рамке окна.  

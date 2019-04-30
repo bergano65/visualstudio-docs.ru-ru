@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c3a6d3eb61f4e4a7504b184477ec1b3f2a8ba83
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829619"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Перечисляет различные исходные файлы, содержащиеся в источнике данных.
@@ -80,13 +80,13 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Требования
-Заголовок: Dia2.h
+Заголовок: dia2.h
 
 Библиотека: diaguids.lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)

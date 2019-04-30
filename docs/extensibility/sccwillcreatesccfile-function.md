@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1fa85c8a96f17508d2e2e53a8d14444dd857dad0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800288"
 ---
 # <a name="sccwillcreatesccfile-function"></a>Функция SccWillCreateSccFile
 Эта функция определяет, поддерживает ли подключаемый модуль системы управления версиями Создание MSSCCPRJ. Файл SCC для каждого заданного файла.
@@ -53,7 +53,7 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="return-value"></a>Возвращаемое значение
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |SCC_OK|Выполнено.|
 |SCC_E_INVALIDFILEPATH|Один из путей в массиве является недопустимым.|

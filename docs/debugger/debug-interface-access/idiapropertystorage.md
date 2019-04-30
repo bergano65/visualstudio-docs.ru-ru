@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81d1a256b4300510ed31c163d92cea89df884aac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832749"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 Позволяет считывать свойства постоянный набор свойств для доступа к интерфейсу отладки.
@@ -120,13 +120,13 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 ```
 
 ## <a name="requirements"></a>Требования
-Заголовок: Dia2.h
+Заголовок: dia2.h
 
 Библиотека: diaguids.lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

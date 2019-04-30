@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 466178015c725242b6bc4a28da1da6ded19b421f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820865"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Как выполнить  Настройка анализа кода для проекта управляемого кода
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Практическое руководство. Настройка анализа кода для проекта управляемого кода
 
 В Visual Studio можно выбрать из списка анализа кода [наборов правил](../code-quality/rule-set-reference.md)) для применения к проекту управляемого кода. По умолчанию **минимальные правила и рекомендации Майкрософт** выбран набор правил, но можно применять при необходимости задайте другое правило. Наборы правил могут применяться для одного или нескольких проектов в решении.
 

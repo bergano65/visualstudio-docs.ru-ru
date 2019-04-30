@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b25c47e6db79fe4b860b6e7c209f0fc8403d0fcd
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838497"
 ---
 # <a name="debugger-user-interface-xslt"></a>Пользовательский интерфейс отладчика (XSLT)
 
@@ -39,7 +39,7 @@ ms.locfileid: "57526016"
 
 Окно локальных значений также отображает стандартные переменные контекста, которые отслеживают контекст XSLT-преобразования. Следующая таблица описывает стандартные переменные контекста, используемые XSLT-отладчиком.
 
-|Имя|Описание|
+|name|Описание|
 |-|-----------------|
 |`last()`|Размер контекста.|
 |`position()`|Положение или индексное число узла контекста относительно размера контекста.|

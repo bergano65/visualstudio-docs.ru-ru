@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a74d6008db15cc8cd89daf4882d8952006dc547d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433088"
 ---
 # <a name="sccpopulatedirlist-function"></a>Функция SccPopulateDirList
 Эта функция определяет, какие каталоги и (при необходимости) файлы хранятся в системе управления версиями, при наличии списка каталогов для проверки.
@@ -63,7 +63,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="return-value"></a>Возвращаемое значение
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |SCC_OK|Операция успешно выполнена.|
 |SCC_E_UNKNOWNERROR|Произошла ошибка.|

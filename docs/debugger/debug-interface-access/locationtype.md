@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: faff61833cb130902efbd64d60a16f74c507a3e2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834134"
 ---
 # <a name="locationtype"></a>LocationType
 Указывает тип данных о географическом положении, содержащихся в символе.
@@ -74,7 +74,7 @@ enum LocationType {
 ## <a name="requirements"></a>Требования
 Заголовок: cvconst.h
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)

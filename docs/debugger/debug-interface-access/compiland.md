@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ecdd4284e4c7c417af6ebd935418d56cf601bb74
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555265"
 ---
 # <a name="compiland"></a>Compiland
 Имеется один `SymTagCompiland` символов для связанной каждую единицу компиляции файл .exe. Сведения о единице компиляции разбивается между символами с `SymTagCompiland` тег, который можно получить без загрузки символов дополнительной единице компиляции, и символы с `SymTagCompilandDetails` тег, который может потребоваться загрузка дополнительных символов.
@@ -26,7 +26,7 @@ ms.locfileid: "56613249"
 ## <a name="properties"></a>Свойства
  Ниже приведены свойства, которые являются допустимыми для данного типа символов.
 
-|Свойство.|Тип данных|Описание|
+|Свойство|Тип данных|Описание|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` Если изменить и продолжить был включен в компиляцию.|
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Символ для файла .exe.|
@@ -37,7 +37,7 @@ ms.locfileid: "56613249"
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Идентификатор индекса символа.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Возвращает `SymTagCompiland` (один из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значения).|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)
 - [CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)
 - [Лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

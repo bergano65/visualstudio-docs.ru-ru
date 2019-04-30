@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e6b47254a80c9cdadab6ca18f2fb8c3e8540fbd0
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827349"
 ---
 # <a name="safecontrol-element"></a>SafeControl - элемент
   Представляет элемент управления ASPX или веб-части, которое обозначается как безопасные для любого доступа пользователя к любой странице ASPX на сайте SharePoint.
@@ -38,7 +38,7 @@ ms.locfileid: "58324569"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |**Assembly**|Необязательный **xs: String** атрибута.<br /><br /> Имя сборки, в котором определен элемент управления ASPX или веб-части. По умолчанию использует этот атрибут **$SharePoint.Project.AssemblyFullName$** подставляемый в качестве имени сборки. Дополнительные сведения см. в разделе [подстановочных параметров](../sharepoint/replaceable-parameters.md).|
 |**IsSafe**|Необязательный **xs: Boolean** атрибута.<br /><br /> Указывает, является безопасная настройка для недоверенных пользователей для доступа к ли элемент управления ASPX или веб-части.|
@@ -52,7 +52,7 @@ ms.locfileid: "58324569"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[SafeControls](../sharepoint/safecontrols-element.md)|Представляет коллекцию элементов управления ASPX и веб-частей, отмеченных как безопасные для любого доступа пользователя к любой странице ASPX на сайте SharePoint.|
 

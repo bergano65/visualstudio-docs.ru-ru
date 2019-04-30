@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7220e435090cc688d32a2d6d26917a8c05510d4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806113"
 ---
 # <a name="parent-element"></a>Родительский элемент
 Группу можно только родительский кнопку или поле со списком. Родительского меню или группы, возможно, другие меню или группу. В [элемент CommandPlacement](../extensibility/commandplacement-element.md), этот элемент является обязательным; во всех остальных случаях это необязательно. Если этот элемент указан, предком `Group_Undefined:0` будет содержится в разрешении.
@@ -32,7 +32,7 @@ ms.locfileid: "56687917"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |guid|Обязательный. Идентификатор GUID из идентификатора GUID и идентификатора команды.|
 |id|Обязательный. Идентификатор команды идентификатор из GUID и идентификатора.|

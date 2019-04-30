@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d1e0af87618955c492bef68be45c8c623f41218
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554522"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Function (SDK для доступа к интерфейсу отладки)
 Каждая функция, определяемая параметром `SymTagFunction` символов.
@@ -25,7 +25,7 @@ ms.locfileid: "56634049"
 ## <a name="properties"></a>Свойства
  Ниже приведены свойства, которые являются допустимыми для данного типа символов.
 
-|Свойство.|`Data type`|Описание|
+|Свойство|`Data type`|Описание|
 |--------------|-----------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Одно из значений из [перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md), если функция является функцией-членом.|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Часть смещения расположения; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|
@@ -73,7 +73,7 @@ ms.locfileid: "56634049"
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|Если виртуальная функция, затем смещение в таблице виртуальных функций.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Если функция отмечена как переменное.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
 - [Лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md)

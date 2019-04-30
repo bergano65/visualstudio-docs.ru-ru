@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6470b7ddb8a28c2aa22a23a55976f1f8831c4363
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864148"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Данные документа и представление документа в специализированных редакторах
 Специализированный редактор состоит из двух частей: объект данных документа и объект представления документа. Объект данных документа предполагают их имена, представляет текстовые данные для отображения. Аналогичным образом объект представления документа (или «view») представляет один или несколько периодов, в котором отображается объект данных документа.

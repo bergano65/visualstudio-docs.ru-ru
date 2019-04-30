@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852097"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Диалоговые окна ошибок и предупреждений отладки
 Ниже перечислены диалоговые окна ошибок и предупреждений, которые могут возникнуть при отладке приложения.
@@ -57,7 +57,7 @@ ms.locfileid: "56700202"
  [Ошибка: отладка невозможна, поскольку в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>Связанные разделы
- [Отладка скриптов и веб-отладка: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Отладка скрипта и веб: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [Ошибки удаленной отладки](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: de2ed5d9c757d9082cd06c2aae5a8e51b0865714
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432386"
 ---
 # <a name="strings-element"></a>Элемент Strings
 Элемент строки должен содержать по крайней мере **ButtonText** дочерний элемент. Все дочерние элементы являются необязательными. Недопустимый XML символы, такие как «&» и "<" должны быть реализованы в виде сущностей ("&amp;«и»&lt;" и т. д).
@@ -54,7 +54,7 @@ ms.locfileid: "56699409"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Элемент Button](../extensibility/button-element.md)|Определяет элемент, который пользователь может взаимодействовать с.|
 |[Элемент Menu](../extensibility/menu-element.md)|Определяет отдельный элемент меню.|

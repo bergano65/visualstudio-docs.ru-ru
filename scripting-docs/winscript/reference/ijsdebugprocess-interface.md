@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 411679a03daf27046fdcede7ff48e76212bbd2fd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557950"
 ---
 # <a name="ijsdebugprocess-interface"></a>Интерфейс IJsDebugProcess
 Содержит процедуры для проверки и контроля в целевом процессе.  
@@ -31,7 +31,7 @@ IJsDebugProcess : public IUnknown;
   
 ### <a name="public-methods"></a>Открытые методы  
   
-|Имя|Описание:|  
+|name|Описание|  
 |----------|-----------------|  
 |[Метод IJsDebugProcess::CreateBreakPoint](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|Задает точку останова в позицию указанного документа.|  
 |[Метод IJsDebugProcess::CreateStackWalker](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|Фабричный метод для средства обхода стека.|  

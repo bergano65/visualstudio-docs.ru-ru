@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание начальных наборов | Документация Майкрософт
+title: Практическое руководство. Создание начальных наборов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fb7b601c04c73cd1f617e42c848edaf7dc65bde8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429370"
 ---
 # <a name="how-to-create-starter-kits"></a>Практическое руководство. Создание начальных наборов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,13 +47,13 @@ ms.locfileid: "54798950"
   
  Приведенные ниже разделы содержат сведения о создании шаблонов.  
   
- [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)  
+ [Практическое руководство. создание шаблонов проектов](../ide/how-to-create-project-templates.md)  
  Описывает, как использовать мастер **экспорта шаблонов** для создания шаблона.  
   
  [Практическое руководство. Обновление существующих шаблонов](../ide/how-to-update-existing-templates.md)  
  Описывает, как изменить экспортированный шаблон. Используйте эту процедуру для изменения файла VSTEMPLATE, чтобы настроить свой начальный набор.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 896832ac3e96e499aa564d5bce44dc06185090de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555251"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Сведения о единице компиляции разбивается между символами с `SymTagCompiland` тега (низкий деталей) и `SymTagCompilandDetails` тега (высокий уровень детализации). `SymTagCompilandDetails` требуется загрузка дополнительных символов. Тем не менее, он предоставляет широкий набор сведений о единице компиляции, который не входит в состав `SymTagCompiland` символов.
@@ -25,7 +25,7 @@ ms.locfileid: "56609232"
 ## <a name="properties"></a>Свойства
  Ниже приведены свойства, которые являются допустимыми для данного типа символов.
 
-|Свойство.|Тип данных|Описание|
+|Свойство|Тип данных|Описание|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_backEndBuild](../../debugger/debug-interface-access/idiasymbol-get-backendbuild.md)|`DWORD`|Номер сборки серверной части компилятора.|
 |[IDiaSymbol::get_backEndMajor](../../debugger/debug-interface-access/idiasymbol-get-backendmajor.md)|`DWORD`|Серверной части основной номер версии компилятора.|
@@ -53,6 +53,6 @@ ms.locfileid: "56609232"
 ## <a name="remarks"></a>Примечания
  Компиляторы часто возвращаются в виде, называемая компилятором двухэтапный; в некоторых версиях компилятора для каждого обрабатывается отдельной программы. Они известны как компиляторы интерфейсной и серверной части, соответственно, поэтому свойства символа для внутреннего и внешнего интерфейса номера версии.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Compiland](../../debugger/debug-interface-access/compiland.md)
 - [Лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

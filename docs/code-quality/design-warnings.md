@@ -15,18 +15,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c8da8b003f74b21ab0a6178742c28f85423dd2ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816803"
 ---
 # <a name="design-warnings"></a>Предупреждения конструктора
 Предупреждения конструктора поддерживают соблюдение рекомендации по разработке .NET Framework.
 
 ## <a name="in-this-section"></a>В этом разделе
 
-| Правило | Описание: |
+| Правило | Описание |
 | - | - |
 | [CA1000: Не объявляйте статические элементы в универсальных типах](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | При вызове статического элемента универсального типа нужно указать аргумент этого типа. При вызове универсального экземпляра элемента, не поддерживающего вывод типа, для элемента нужно указать аргумент типа. В этих двух случаях синтаксис для определения аргумента типа различен, и его можно легко спутать. |
 | [CA1001: типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md) | В классе объявляется и реализуется поле экземпляра, который является типом System.IDisposable и класс не реализует IDisposable. Класс, в котором объявляется поле IDisposable, неявно владеет неуправляемым ресурсом и должен реализовывать интерфейс IDisposable. |

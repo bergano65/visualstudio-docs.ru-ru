@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 654fdb6a921a0d6a25490b17f6f0ce3ffafa4ae4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863133"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Практическое руководство. Открытие редакторов для открытых документов
 Еще до открытия проекта окно документа проекта сначала следует определить ли файл уже открыт в окне документа для другого редактора. Файл можно открыть в редакторе конкретного проекта или воспользоваться одним из стандартных редакторов зарегистрировано [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

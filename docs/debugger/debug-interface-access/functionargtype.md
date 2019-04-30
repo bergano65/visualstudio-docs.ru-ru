@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fba667e3d73593a050a18f26a15670d6878fd79
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554440"
 ---
 # <a name="functionargtype"></a>FunctionArgType
 Каждый параметр функции определяется `SymTagFunctionArgType` символов.
@@ -25,7 +25,7 @@ ms.locfileid: "56636790"
 ## <a name="properties"></a>Свойства
  Ниже приведены дополнительные допустимые свойства для данного типа символов.
 
-|Свойство.|Тип данных|Описание|
+|Свойство|Тип данных|Описание|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Символ для родительского FunctionType.|
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Идентификатор символа родительского класса.|
@@ -36,6 +36,6 @@ ms.locfileid: "56636790"
 |[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Тип параметра.|
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|Идентификатор типа символа.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Иерархия классов символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [FunctionType](../../debugger/debug-interface-access/functiontype.md)

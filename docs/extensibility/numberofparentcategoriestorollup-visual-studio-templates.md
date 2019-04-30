@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b733b65a62db3cb39197fbdbed4c471651eae49a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433647"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Элемент NumberOfParentCategoriesToRollUp (шаблоны Visual Studio)
 Указывает количество родительских категориях, которые будут отображаться в **новый проект** диалоговое окно.
@@ -45,7 +45,7 @@ ms.locfileid: "56687951"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|
 

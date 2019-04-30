@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ec30f353c9257643a750306828d76ad2f6f87a26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829876"
 ---
 # <a name="block"></a>Block
 Каждый блок кода определяется `SymTagBlock` символов. Блок символы используются для идентификации вложенных областей внутри функции.
@@ -27,7 +27,7 @@ ms.locfileid: "56626262"
 ## <a name="properties"></a>Свойства
  Ниже приведены свойства, которые являются допустимыми для данного типа символов.
 
-|Свойство.|Тип данных|Описание|
+|Свойство|Тип данных|Описание|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Часть смещения расположения; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Раздел частью расположение; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|
@@ -41,7 +41,7 @@ ms.locfileid: "56626262"
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Возвращает `SymTagBlock` (один из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) значения).|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Возвращает виртуальный адрес этот блок в исполняемом файле.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Лексическая иерархия символьных типов](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md)
 - [Местоположения символов](../../debugger/debug-interface-access/symbol-locations.md)

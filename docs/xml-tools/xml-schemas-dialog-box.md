@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f5323582bfe945bc031b9fd02fcf96bb615bcceb
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57524927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807949"
 ---
-# <a name="xml-schemas-dialog-box"></a>Диалоговое окно «XML-схем»
+# <a name="xml-schemas-dialog-box"></a>Диалоговое окно "Схемы XML"
 
 **XML-схем** диалоговое окно используется для выбора какие схем XML схеме определения языка XSD для связывания с XML-документа. Можно выбрать схему из кэша схем или указать схему, которая не находится в кэше. Выбранные схемы считаются частью набора схем. Наборы схем применяются в технологии IntelliSense, а также служат для проверки правильности XML-документов.
 

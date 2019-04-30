@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e6e1d2c71ce7bdb876df997812644fbb819c8977
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912784"
 ---
 # <a name="error-handling-and-return-values"></a>Обработка ошибок и возвращаемые значения
 Пакеты VSPackage и COM используют ту же архитектуру для ошибки. `SetErrorInfo` И `GetErrorInfo` функции являются частью интерфейс (API) Win32. Любой пакет VSPackage в интегрированной среде разработки (IDE) можно вызвать эти глобальные API-интерфейсов Win32 для записи подробных сведений об ошибках информации при получении уведомление об ошибке. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Предоставляет сборок взаимодействия для управления сведений об ошибке.

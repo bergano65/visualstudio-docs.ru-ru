@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cdaa6cdd3275fa7fda8df33cbdb09a8edae158c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848771"
 ---
 # <a name="graphics-event-call-stack"></a>Стек вызовов событий графики
 Стек вызовов событий графики в анализаторе графики Visual Studio позволяет выявить связь между проблемными событиями графики и исходным кодом приложения.
@@ -41,5 +41,5 @@ ms.locfileid: "56700241"
 ### <a name="links-to-graphics-objects"></a>Ссылки на графические объекты
  Для анализа выбранного события графики могут понадобиться сведения об объектах Direct3D, с которыми оно связано. В окне **Стек вызовов событий графики** есть ссылки на эти сведения.
 
-## <a name="see-also"></a>См. также раздел
-- [Пошаговое руководство. Отсутствие объектов вследствие заливки вершин](walkthrough-missing-objects-due-to-vertex-shading.md)
+## <a name="see-also"></a>См. также
+- [Пошаговое руководство: Отсутствие объектов вследствие заливки вершин](walkthrough-missing-objects-due-to-vertex-shading.md)

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e35cb321772354de29b7b8466b6136c96cabf98d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798503"
 ---
 # <a name="layout-for-visual-studio"></a>Макет для Visual Studio
 Большинство диалоговых окон Visual Studio [макет диалогового окна программы](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), которые представляют собой unthemed диалоговые окна этого стандарта выполните [принципы макет диалогового окна Windows Desktop](/windows/desktop/uxguide/win-dialog-box). При перемещении Visual Studio для обновления его пользовательского интерфейса, более наглядными диалоговые окна есть новый дизайн, который устанавливает их возможности, как определение продукта. Эти [тематический макет диалогового окна](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) имеют вид темы.

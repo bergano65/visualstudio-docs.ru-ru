@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c894ce7466c253916794495649fa65d703e6d67
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 87d9e4ae8239994a7524cdd1da0b3cfe05ea42d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808188"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Несколько доменных языков в одном решении
 
@@ -40,15 +40,15 @@ ms.locfileid: "58416153"
 
 2. Объедините манифесты VSIX доменных языков:
 
-   1.  Open _YourVsixProject_**\source.extension.manifest**.
+   1. Open _YourVsixProject_**\source.extension.manifest**.
 
-   2.  Для каждого доменного языка выберите **добавить содержимое** и добавьте:
+   2. Для каждого доменного языка выберите **добавить содержимое** и добавьте:
 
-       -   `Dsl*` проект в качестве **компонент MEF**
+       - `Dsl*` проект в качестве **компонент MEF**
 
-       -   `DslPackage*` проект в качестве **компонент MEF**
+       - `DslPackage*` проект в качестве **компонент MEF**
 
-       -   `DslPackage*` проект в качестве **пакета VS**
+       - `DslPackage*` проект в качестве **пакета VS**
 
 3. Постройте решение.
 

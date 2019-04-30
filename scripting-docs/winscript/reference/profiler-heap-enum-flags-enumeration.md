@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d613ed3bcb4699f20d521f08b6c34d55d8363ba4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830361"
 ---
 # <a name="profilerheapenumflags-enumeration"></a>Перечисление PROFILER_HEAP_ENUM_FLAGS
 Флаги, представляющие ли предоставляется дополнительную информацию об объекте кучи, на который указывает указатель в объектном отношении. Используется в [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) метод.  

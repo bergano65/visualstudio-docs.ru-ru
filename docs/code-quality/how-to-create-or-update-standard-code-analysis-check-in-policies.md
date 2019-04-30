@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 768efb3e874f6427cd23f63f14671aa2db1bea71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816361"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Как выполнить  Создание или обновление стандартных политик возврата с анализом кода
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Практическое руководство. Создание или обновление стандартных политик возврата с анализом кода
 
 Вы можете потребовать, запуска анализа кода для всех проектов кода в проекте Azure DevOps с помощью политики возврата анализа кода. Обязательность анализа кода может повысить качество кода, который возвращается в базу кода.
 

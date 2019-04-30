@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a2637e801ba0d317e4c0abec8bd12197656dc844
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564142"
 ---
 # <a name="assertions-in-managed-code"></a>Утверждения в управляемом коде
 Оператор проверочного утверждения `Assert` проверяет выполнение условия, указанного в качестве аргумента для оператора `Assert`. Если условие выполняется, никаких действий не производится. Если же условие не выполняется, то утверждение выдает ошибку. При работе с отладочной сборкой выполнение программы приостанавливается.

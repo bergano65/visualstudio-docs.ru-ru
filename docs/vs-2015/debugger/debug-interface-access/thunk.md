@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 68e5542f3257ead72c13d454affbd0713325a7b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576373"
 ---
 # <a name="thunk"></a>Thunk
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58980545"
 ## <a name="properties"></a>Свойства  
  Ниже приведены свойства, которые являются допустимыми для данного типа символов.  
   
-|Свойство.|Тип данных|Описание|  
+|Свойство|Тип данных|Описание|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Атрибут модификатор доступа, один из [перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) значения (только в версии 8.0 пакет SDK для доступа к интерфейсу отладки или более поздней версии).|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Часть смещения расположения; Дополнительные сведения см. в разделе [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md).|  

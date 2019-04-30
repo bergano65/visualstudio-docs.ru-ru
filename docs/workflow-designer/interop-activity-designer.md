@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536429"
 ---
 # <a name="interop-activity-designer"></a>Конструктор действия Interop
 
@@ -46,7 +46,7 @@ ms.locfileid: "55942704"
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.Interop>. Значение по умолчанию — **взаимодействия**. Несмотря на то, что отображаемое имя не является обязательной, рекомендуется предоставить один.|
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|Да|Задает тип действия, содержащегося в действии <xref:System.Activities.Statements.Interop>. Заданный тип должен быть производным от класса <xref:System.Workflow.ComponentModel.Activity>.|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Задает тип действия, содержащегося в действии <xref:System.Activities.Statements.Interop>. Заданный тип должен быть производным от класса <xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>См. также
 

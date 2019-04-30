@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62e7740915d341eee1bbf5e112c4f09297c98be1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813803"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Практическое руководство. Обработка конфликтов развертывания
   Можно предоставить собственный код для обработки конфликтов развертывания для элемента проекта SharePoint. Например может определить, уже существует в месте развертывания все файлы в текущем элементе проекта и затем удалить существующие файлы перед развертыванием элемента текущего проекта. Дополнительные сведения о конфликтах развертывания см. в разделе [расширение SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

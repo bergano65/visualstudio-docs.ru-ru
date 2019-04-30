@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 32e0d8c37b4016412f6dca8772d22baf65799429
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832803"
 ---
 # <a name="idiastackframegetmaxstack"></a>IDiaStackFrame::get_maxStack
 Извлекает максимальное число байтов, в стек в кадре.
@@ -38,5 +38,5 @@ HRESULT get_maxStack ( 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если свойство не поддерживается. В противном случае возвращается код ошибки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

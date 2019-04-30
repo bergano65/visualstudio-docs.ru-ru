@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826749"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Практическое руководство. Кэширование данных в документе, защищенном паролем
   При добавлении данных в кэш данных в документе или книге, защищенной паролем, изменения в кэшированные данные не сохраняются автоматически. Можно сохранить изменения в кэшированных данных путем переопределения двух методов в проекте.

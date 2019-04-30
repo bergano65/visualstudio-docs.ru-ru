@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8d083cea518032c121a5cb9e9213abbbd7eaaf8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829863"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
 Извлекает элемент кадра данных с помощью индекса.
@@ -43,6 +43,6 @@ HRESULT Item ( 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

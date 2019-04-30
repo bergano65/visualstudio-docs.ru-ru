@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c5e617b57437033f4194d96647ebff9d1c4e2c2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814001"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Практическое руководство. Расширение узла SharePoint в обозревателе серверов
   Вы можете расширить узлы под **подключения SharePoint** узел в **обозревателя серверов**. Это полезно в том случае, если вы хотите добавить в существующий узел новые дочерние узлы, элементы контекстного меню или свойства. Дополнительные сведения см. в разделе [расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

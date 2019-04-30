@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 36b7076bf7f261e462802174c6f9014403606ac8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786962"
 ---
 # <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
 Возвращает язык сценариев, используемый узлом текущего скрипта.  

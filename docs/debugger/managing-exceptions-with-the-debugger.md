@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846678"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Управление исключениями с помощью отладчика в Visual Studio
 
@@ -100,7 +100,7 @@ ms.locfileid: "57428704"
 
   но не отображает `here` строки.
 
-- Объект C# консольное приложение ссылается на библиотеку классов с классом, который имеет два метода. Один метод вызывает исключение и обрабатывает его, а второй метод создает исключение, но не может обработать его.
+- Консольное приложение C# ссылается на библиотеку классов с классом, который имеет два метода. Один метод вызывает исключение и обрабатывает его, а второй метод создает исключение, но не может обработать его.
 
   ```csharp
   public class Class1
@@ -224,6 +224,6 @@ public class GenericException<T> : Exception
 
 - [Возобновление выполнения после исключения](../debugger/continuing-execution-after-an-exception.md)<br/>
 - [Практическое руководство. Анализ системного кода после исключения](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-- [Практическое руководство. Настройка проверок во время выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Практическое руководство. Проверки времени выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)<br/>
 - [Использование проверки кода во время выполнения без библиотеки среды выполнения языка C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

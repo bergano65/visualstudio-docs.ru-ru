@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 087bd1cb40be2129853807f3f43ea0e87615c36a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839791"
 ---
 # <a name="idialinenumbergetrelativevirtualaddress"></a>IDiaLineNumber::get_relativeVirtualAddress
 Возвращает относительный виртуальный адрес (RVA) блока.
@@ -38,5 +38,5 @@ HRESULT get_relativeVirtualAddress ( 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

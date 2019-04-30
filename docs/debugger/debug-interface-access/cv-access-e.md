@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90230bd95e1dbcd3e4c186257c6c36faad6ba1f7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555134"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 Задает область видимости (уровень доступа) для функций-членов и переменных.
@@ -45,7 +45,7 @@ typedef enum CV_access_e {
 ## <a name="requirements"></a>Требования
 Заголовок: cvconst.h
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

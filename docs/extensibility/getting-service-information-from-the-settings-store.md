@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fe38bf84510ea247c737477e421db8dbb15f63c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863146"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Получение сведений о службе из хранилища параметров
 Параметры хранилища можно использовать для поиска всех доступных служб или требуется определить, установлена ли определенная служба. Необходимо знать тип класса службы.

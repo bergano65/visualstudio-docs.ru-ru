@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820318"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Использование редактора набора правил анализа кода
 
@@ -48,7 +48,7 @@ ms.locfileid: "55937223"
 
 В следующей таблице описаны элементы управления на панели инструментов редактора набора правил.
 
-|Элемент управления ToolBar|Описание:|
+|Элемент управления ToolBar|Описание|
 |---------------------|-----------------|
 |**Развернуть все**|Показывает правила во всех группах.|
 |**Свернуть все**|Скрытие правил во всех группах.|

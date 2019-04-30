@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433023"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Доставка расширений Visual Studio
 После завершения разработки расширения, можно установить его на других компьютерах, поделиться с друзьями и коллегами или опубликовать его в Visual Studio Marketplace. В этом разделе мы расскажем, все, что необходимо сделать, чтобы публикуйте и обслуживайте расширения: работа с VSIX-файлы, публикации, локализация и обновления.
@@ -47,7 +47,7 @@ ms.locfileid: "56796599"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Начало работы с шаблоном проекта VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)|Объясняется, как использовать шаблон проекта VSIX для установки пользовательского шаблона проекта.|
 |[Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Компоненты пакета VSIX.|

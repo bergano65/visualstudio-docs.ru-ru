@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: 9cf5752c43e22f2df73fa6701374805cf4770a82
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563364"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Отладка служб Azure в Visual Studio
 
@@ -33,6 +33,6 @@ Visual Studio можно использовать для отладки служ
 
 - Удаленная отладка ASP.NET в Azure Service Fabric, см. в разделе [отладка удаленного приложения Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Отладка в Visual Studio](../debugger/index.md)

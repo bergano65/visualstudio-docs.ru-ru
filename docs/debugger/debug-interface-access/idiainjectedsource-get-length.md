@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8333c7e57c3cd3f240f8a72dd865e458b23bc299
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828640"
 ---
 # <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
 Возвращает число байтов кода.
@@ -41,6 +41,6 @@ HRESULT get_length ( 
 ## <a name="remarks"></a>Примечания
  Значение, возвращаемое этим методом, длина исходного кода и то же значение, возвращенное [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) метод.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
 - [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)

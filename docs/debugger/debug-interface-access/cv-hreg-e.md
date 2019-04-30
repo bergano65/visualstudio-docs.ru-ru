@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 37786442124eafea719454ac94c704984f1703f3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554978"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Указывает целевой регистра.
@@ -449,7 +449,7 @@ CV_M32R_ * регистрирует, Mitsubishi M32R процессор.
 ## <a name="requirements"></a>Требования:
 Заголовок: cvconst.h
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
 - [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)

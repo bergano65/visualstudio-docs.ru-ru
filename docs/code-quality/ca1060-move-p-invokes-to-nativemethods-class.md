@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a01c8ca81ab469d578d58e6195171c2e3b07704b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788678"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060. Переместите методы P/Invoke в класс NativeMethods
 
@@ -69,7 +69,7 @@ ms.locfileid: "55957004"
 
 ## <a name="nativemethods-example"></a>Пример NativeMethods
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Так как **NativeMethods** класс не должен быть помечен с помощью **SuppressUnmanagedCodeSecurityAttribute**, потребует P/Invoke, помещаются в ней **UnmanagedCode** разрешение. Так как большинство приложений выполняются с локального компьютера и работать с полным доверием, обычно это не проблема. Тем не менее, если при разработке повторно используемых библиотек, следует определить **SafeNativeMethods** или **UnsafeNativeMethods** класса.
 
  В следующем примере показан **Interaction.Beep** метод, который создает оболочку для **MessageBeep** функции из user32.dll. **MessageBeep** P/Invoke помещается в **NativeMethods** класса.
@@ -91,7 +91,7 @@ ms.locfileid: "55957004"
 
 ## <a name="unsafenativemethods-example"></a>Пример UnsafeNativeMethods
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Методы P/Invoke не может вызываться безопасно и может привести к побочным эффектам, которые должны быть помещены в класс, который называется **UnsafeNativeMethods**. Эти методы должны быть тщательно проверены, чтобы убедиться в том, что они не доступны пользователь непреднамеренно. Правило [CA2118: Проверьте использование SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) могут помочь в этом. Кроме того, методы должны иметь другое разрешение, требуемое вместо **UnmanagedCode** при их использовании.
 
  В следующем примере показан **Cursor.Hide** метод, который создает оболочку для **функция ShowCursor** функции из user32.dll.

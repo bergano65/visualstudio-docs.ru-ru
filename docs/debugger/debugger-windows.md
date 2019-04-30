@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: de19d073a3002c777c0458a99381ee943d297944
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852501"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Дополнительные сведения о Windows отладчика в Visual Studio
 
@@ -30,13 +30,13 @@ ms.locfileid: "57526351"
 |Контрольное значение|SHIFT+F9|[Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)|
 |Автоматические|CTRL+ALT+V, A|[Окна "Видимые" и "Локальные"](../debugger/autos-and-locals-windows.md)|
 |Локальные|CTRL+ALT+V, L|[Окна "Видимые" и "Локальные"](../debugger/autos-and-locals-windows.md)|
-|Стеки вызовов|CTRL+ALT+C|[Практическое руководство. Использование окна стека вызова](../debugger/how-to-use-the-call-stack-window.md)|
+|Стеки вызовов|CTRL+ALT+C|[Практическое руководство. использование окна "Стек вызовов"](../debugger/how-to-use-the-call-stack-window.md)|
 |Интерпретация|CTRL+ALT+I|[Окно интерпретации](../ide/reference/immediate-window.md)|
 |Параллельные стеки|CTRL+SHIFT+D, S|[Использование окна "Параллельные стеки"](../debugger/using-the-parallel-stacks-window.md)|
 |Контроль параллельных данных|CTRL+SHIFT+D, (1, 2, 3, 4)|[Начало отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Потоки|CTRL+ALT+H|[Отладка с помощью окна потоков](../debugger/how-to-use-the-threads-window.md)|
 |Модули|CTRL+ALT+U|[Практическое руководство. Использование окна модулей](../debugger/how-to-use-the-modules-window.md)|
-|Потоки GPU|-|[Практическое руководство. Использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
+|Потоки GPU|-|[Практическое руководство. использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Задачи|CTRL+SHIFT+D, K|[Использование окна задач](../debugger/using-the-tasks-window.md)|
 |Интерактивная отладка Python|SHIFT+ALT+I|[Интерактивная оболочка REPL для Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Консоль JavaScript|CTRL+ALT+V, C|[Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
@@ -48,6 +48,6 @@ ms.locfileid: "57526351"
 |Дизассемблированный код|CTRL+ALT+D|[Практическое руководство. Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)|
 |Регистры|CTRL+ALT+G|[Практическое руководство. Использование окна регистров](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

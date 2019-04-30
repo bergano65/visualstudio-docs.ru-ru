@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9434be46f357a97ad01f10ceec184ebe6c52eb43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565551"
 ---
 # <a name="crt-debug-library-use"></a>Работа с библиотекой отладки CRT
 Библиотека CRT предоставляет расширенную отладочную поддержку. Чтобы использовать отладочные библиотеки CRT, необходимо связать с [/DEBUG](/cpp/build/reference/debug-generate-debug-info) и скомпилируйте его с **/MDd**, **/MTd**, или **/LDd**.
@@ -47,7 +47,7 @@ ms.locfileid: "56624169"
 
  Дополнительные сведения о различных библиотеках времени выполнения см. в разделе [Библиотеки времени выполнения C](/cpp/c-runtime-library/crt-library-features).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Методы отладки CRT](../debugger/crt-debugging-techniques.md)
 - [/MD, /MT, /LD (использование библиотеки времени выполнения)](/cpp/build/reference/md-mt-ld-use-run-time-library)
