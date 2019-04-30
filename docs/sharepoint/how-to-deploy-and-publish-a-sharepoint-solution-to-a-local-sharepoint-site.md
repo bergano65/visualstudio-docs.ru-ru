@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813976"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Практическое руководство. Развертывание и публикация решения SharePoint на локальном сайте SharePoint
   Можно развернуть или публикации решений SharePoint на локальном сервере SharePoint на компьютере разработчика. Копии процесса развертывания *.wsp* файл на сервер SharePoint, устанавливает решение и активация компонентов. Публикация обрабатывать только копии *.wsp* файл на сервер SharePoint и устанавливает его. Необходимо вручную активировать его, чтобы включить эту функцию в SharePoint.

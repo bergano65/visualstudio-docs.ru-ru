@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2768a2e55b3e38158f2ef6b856a653a1a2c12dfa
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562407"
 ---
 # <a name="projectitem-element"></a>ProjectItem - элемент
   Представляет элемент проекта SharePoint. Этот элемент обязательный корневой элемент из *.spdata* файла.
@@ -44,7 +44,7 @@ ms.locfileid: "58322999"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |**DefaultFile**|Необязательный **xs: строка** атрибута.<br /><br /> Относительный путь, включая имя файла, файла, который открывается в редакторе Visual Studio при открытии элемента проекта SharePoint в **обозревателе решений**. Путь является относительным из папки, которая содержит *.spdata* файла.|
 |**FeatureReceiverClass**|Необязательный **xs: String** атрибута.<br /><br /> Полное имя класса-получателя компонента для этого элемента проекта SharePoint. Дополнительные сведения о приемниках компонентов см. в разделе [сведениями упаковки и развертывания в элементах проекта](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|
@@ -55,7 +55,7 @@ ms.locfileid: "58322999"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Необязательный элемент.<br /><br /> Представляет коллекцию пользовательских элементов данных, которые связаны с элементом проекта SharePoint.<br /><br /> Может включать только одну **ExtensionData** элемент.|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Необязательный элемент.<br /><br /> Представляет коллекцию значений свойств, которые входят в состав компонентом при его развертывании в SharePoint.<br /><br /> Может включать только одну **FeatureProperties** элемент.|

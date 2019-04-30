@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3e7139b92467c0b6622accce9530abf3e75fcea0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859615"
 ---
 # <a name="project-model-core-components"></a>Основные компоненты модели проекта
 В модели проекта разверните следующие таблицы. Таблицы предоставляют краткое описание каждого из интерфейсов и служб, указанных в модели и интерфейсы, а также службы, связанные с конкретными объектами. Кроме того в таблицах описываются другие интерфейсы, которые не являются обязательными в проект создания и обслуживания в зависимости от требований вашего проекта определенного типа.
@@ -101,7 +101,7 @@ ms.locfileid: "56636155"
 
 ## <a name="see-also"></a>См. также
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
-- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Не в сборке. Использование HierUtil7 проект классов для реализации типа проекта (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
 - [Вспомогательные средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Элементы модели проекта](../../extensibility/internals/elements-of-a-project-model.md)

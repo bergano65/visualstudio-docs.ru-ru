@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 259ada240d81b87d2d36e12cddcc28efe8d893f1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806100"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Это функция обратного вызова, присвоенный [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) функции, чтобы обновить коллекцию каталогов и (необязательно) имена файлов, чтобы узнать, которые являются в системе управления версиями.
@@ -50,7 +50,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="return-value"></a>Возвращаемое значение
  Интегрированная среда разработки возвращает код соответствующее сообщение об ошибке:
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |SCC_OK|Продолжайте обработку.|
 |SCC_I_OPERATIONCANCELED|Остановите обработку.|

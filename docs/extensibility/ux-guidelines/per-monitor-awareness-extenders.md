@@ -17,11 +17,11 @@ ms.topic: reference
 ms.workload:
 - multiple
 ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793647"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Для каждого монитора Awareness support для средств расширения Visual Studio
 Версий, предшествующих Visual Studio 2019 было контексте awareness точек на ДЮЙМ, установить система поддерживает функции, а не учитывать точек на ДЮЙМ (PMA) для каждого монитора. Выполнение в системе awareness привело к снижению visual возможности (например нечетким шрифты или значков) каждый раз, когда Visual Studio пришлось визуализации на мониторах с отличающимися масштабами факторов или удаленный компьютер в машин с помощью разных конфигурациях например (различных Windows масштабирование).

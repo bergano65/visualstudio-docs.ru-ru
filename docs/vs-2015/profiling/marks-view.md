@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb5fb56a011355abb991d6e8da122461045af2b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562870"
 ---
 # <a name="marks-view"></a>Представление меток
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54764928"
   
  Метки по умолчанию, которые автоматически подставляются в отчет, отмечая начало и завершение программы.  
   
- Данные счетчиков Windows на основе автоматически созданных меток также доступны в этом представлении. Дополнительные сведения см. в разделе [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md).  
+ Данные счетчиков Windows на основе автоматически созданных меток также доступны в этом представлении. Дополнительные сведения см. в разделе [Как Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md).  
   
  Чтобы создать фильтр для двух меток, выберите метки, щелкните правой кнопкой мыши и выберите команду **Добавить фильтр по меткам** или **Добавить фильтр по метке времени**.  
   
@@ -46,7 +46,7 @@ ms.locfileid: "54764928"
  Данные счетчика производительности Windows  
  При сборе данных счетчика производительности Windows значения отображаются в столбце с именем счетчика.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Обзор отчета о производительности](../profiling/performance-report-overview.md)   
  [< PAVE_OVER > Практическое: Настройка меток профилирования](http://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
  [< PAVE_OVER > Практическое: Добавление меток в файл данных Profiler](http://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   

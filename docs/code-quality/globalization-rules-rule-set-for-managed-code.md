@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 28199eb9fa09e2096939ffa8e678eb9812a61b1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816404"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Набор правил "Правила глобализации" для управляемого кода
 Можно использовать правила глобализации корпорации Майкрософт набора правил в основное внимание уделяется проблемам, которые могут препятствовать данных в приложении неправильно отображалось в разных языках, регионов и языков и региональных параметров. Следует включать этот набор, если приложение выполняется локализация, глобализация, правил или оба.
 
-|Правило|Описание:|
+|Правило|Описание|
 |----------|-----------------|
 |[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|Укажите MessageBoxOptions|
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Избегайте повторяющихся акселераторов|

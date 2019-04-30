@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 322f6f3352c1b0dfad4572d55e1ebe2388c8cc4a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823638"
 ---
 # <a name="profilerheapobjectrelationshipflags-enumeration"></a>Перечисление PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS
 Флаги, которые представляют, является ли объект кучи указывал в объектном отношении — это метод доступа get или Set. Используется в [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) метод при PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS значение, заданное в `enumFlags` параметра.  
@@ -29,7 +29,7 @@ typedef [v1_enum] enum {    PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE        
   
 ## <a name="members"></a>Участники  
   
-|Член|Значение|Описание:|  
+|Член|Значение|Описание|  
 |------------|-----------|-----------------|  
 |PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_NONE|0x00000000|Этот объект кучи, на который указывает указатель в объектном отношении не был определен как метод получения или задания.|  
 |PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS_IS_GET_ACCESSOR|0x00010000|Объект кучи, указанный в объектном отношении — это метод считывания. Эти сведения будут храниться в двух байтах (16 бит) из [PROFILER_HEAP_OBJECT_RELATIONSHIP.relationshipInfo](../../winscript/reference/profiler-heap-object-relationship-structure.md) поля.|  

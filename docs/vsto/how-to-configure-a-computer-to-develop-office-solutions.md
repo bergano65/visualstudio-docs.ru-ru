@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b1f87b9548aceab58e1a8e1c6178a1dca759c312
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825993"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Практическое руководство. Настройка компьютера для разработки решений Office
   Для настройки компьютера разработчика таким образом, чтобы было можно использовать Microsoft Office Developer Tools в Visual Studio, следуйте инструкциям в этой статье. Для выполнения следующих действий требуются права администратора на компьютере разработчика.

@@ -13,11 +13,11 @@ author: BillWagner
 ms.author: wiwagn
 manager: jillfra
 ms.openlocfilehash: 9ba9e17ba659d1148be9f3e05c3a7372d0496d09
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810597"
 ---
 # <a name="pre-selected-completion-list-items-in-c"></a>Заранее выбранные элементы списков завершения в C# #
 Это содержимое перемещено в [списки завершения в C#](../misc/completion-lists-in-csharp.md)

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554900"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Описывает запись в сопоставлении адрес.
@@ -52,6 +52,6 @@ struct DiaAddressMapEntry {
 ## <a name="requirements"></a>Требования
 Заголовок: dia2.h
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

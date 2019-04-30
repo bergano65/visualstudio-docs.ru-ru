@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f02545f1c19b57e46af302fbc0b2abaa7445612
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555053"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Задает язык исходного кода приложения или связанном модуле.
@@ -49,7 +49,7 @@ typedef enum CV_CFL_LANG {
 ## <a name="elements"></a>Элементы
 Язык приложения CV_CFL_C — C.
 
-Язык приложения CV_CFL_CXX — C++.
+Язык приложения CV_CFL_CXX C++.
 
 Язык приложения CV_CFL_FORTRAN — FORTRAN.
 
@@ -87,6 +87,6 @@ CV_CFL_CVTPGD приложения — это модуль POGO оптимизи
 ## <a name="requirements"></a>Требования
 Заголовок: cvconst.h
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

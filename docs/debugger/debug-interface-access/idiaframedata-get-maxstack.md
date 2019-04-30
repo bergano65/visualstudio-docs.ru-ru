@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b609ba9357e96d8e7ece4459e33991a599b47ee7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839970"
 ---
 # <a name="idiaframedatagetmaxstack"></a>IDiaFrameData::get_maxStack
 Извлекает максимальное число байтов, в стек в кадре.
@@ -41,6 +41,6 @@ HRESULT get_maxStack ( 
 ## <a name="remarks"></a>Примечания
  Значение, возвращаемое этим методом обычно используется в интерпретации строки программы (см. в разделе [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) метод для определения строки программы).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

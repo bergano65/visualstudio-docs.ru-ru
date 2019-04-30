@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566746"
 ---
 # <a name="handle-a-concurrency-exception"></a>Обработка исключения параллелизма
 
@@ -69,7 +69,7 @@ ms.locfileid: "55927221"
 
 1. В Visual Studio на **файл** меню, выберите **New** > **проекта**.
 
-2. Разверните **Visual C#**  или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
+2. Разверните **Visual C#** или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
 
 3. В средней области выберите **приложения Windows Forms** тип проекта.
 

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 39f2720efbcd8defffb9d0c77047a50e57939e95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818056"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Длина массива должна быть указана в виде конечного положительного числа
 При задании **длина** свойства существующего **массива** объект, указанный длина массива, который не является положительным числом или нулем. Эта ошибка возникает при попытке присвоить значение для **длина** свойство `Array` объект, который является отрицательным или не является числом (`NaN`). Обратите внимание, что [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] автоматически преобразует дробные числа в целыми числами.  

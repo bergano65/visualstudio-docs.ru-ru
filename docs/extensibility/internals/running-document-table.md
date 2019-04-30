@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859189"
 ---
 # <a name="running-document-table"></a>Запуск таблицы документов
 Интегрированная среда разработки поддерживает список всех открытых документов во внутренней структуре вызывается в таблице выполняющихся документов (RDT). Этот список включает все открытые документы в памяти независимо от ли эти документы момент редактируется. Документ является любой элемент, который сохранен, включая файлы в проекте или в файле основного проекта (например, файл с расширением VCXPROJ).

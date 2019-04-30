@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ece5c207a0244a55078ef44f9156e7e95cedf5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556693"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Практическое руководство. Добавить пользовательский узел SharePoint в обозревателе серверов
   Можно добавить пользовательские узлы под **подключения SharePoint** узел в **обозревателя серверов**. Это полезно, если требуется отображать дополнительные компоненты SharePoint, которые не отображаются в **обозревателя серверов** по умолчанию. Дополнительные сведения см. в разделе [расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

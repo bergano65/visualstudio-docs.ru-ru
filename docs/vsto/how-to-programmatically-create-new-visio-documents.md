@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 61fb1302ffb0a068122c333e196178dfa2b30d86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62574841"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Практическое руководство. Программное создание документов Visio
   При создании нового документа Microsoft Office Visio вы добавляете его в коллекцию `Microsoft.Office.Interop.Visio.Documents` открытых документов Visio. Соответственно, метод `Microsoft.Office.Interop.Visio.Documents.Add` создает новый документ Visio. Дополнительные сведения см. в справочной документации VBA для метода [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) .

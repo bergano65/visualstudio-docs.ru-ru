@@ -11,11 +11,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555974"
 ---
 # <a name="customizing-the-isolated-shell"></a>Настройка изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58992267"
  Вы можете настроить значок приложения, в которой значок, отображаемый по имени приложения в заголовке окна приложения. Скопируйте в каталог значок другой значок. В **обозревателе решений**, добавить значок для папки с файлами ресурсов. Затем откройте файл VSShellStub.rc и замените значение IDI_STUBPROGRAM именем значок "Создать". Дополнительные сведения см. в разделе [Пошаговое руководство: Создание базового приложения Isolated Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-command-line-logo"></a>Логотип командной строки  
- Можно настроить логотип командной строки, который является текст, отображаемый, когда приложение запускается из командной строки, изменив значение строки «CommandLineLogo» в *SolutionName*. Файл Application.pkgdef. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание базового приложения изолированной оболочки](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Можно настроить логотип командной строки, который является текст, отображаемый, когда приложение запускается из командной строки, изменив значение строки «CommandLineLogo» в *SolutionName*. Файл Application.pkgdef. Дополнительные сведения см. в разделе [Пошаговое руководство: создание базового приложения изолированной оболочки](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>Имя вложенной папки файлов пользователя  
  Можно изменить имя папки, приложение сохраняет пользовательских файлов, изменив значение строки «UserFilesSubFolderName» в *SolutionName*. Файл Application.pkgdef.  
@@ -58,7 +58,7 @@ ms.locfileid: "58992267"
  Можно настроить веб-страницы браузера, который является страницей, которое отображается при открытии окна веб-обозревателя, изменив значение строки «DefaultSearchPage» в *SolutionName*. Файл Application.pkgdef.  
   
 ##### <a name="the-default-home-page"></a>Домашняя страница по умолчанию  
- На домашней странице можно настраивать, изменяя значение в строке «DefaultHomePage» *SolutionName*. Файл Application.pkgdef. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание базового приложения изолированной оболочки](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ На домашней странице можно настраивать, изменяя значение в строке «DefaultHomePage» *SolutionName*. Файл Application.pkgdef. Дополнительные сведения см. в разделе [Пошаговое руководство: создание базового приложения изолированной оболочки](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>Следует ли скрыть основные принципы решения  
  Можно указать необходимость скрыть решения в приложении, изменив значение строки «HideSolutionConcept» в *SolutionName*. Файл Application.pkgdef. Чтобы скрыть решения, задайте значение `dword:00000001`и чтобы отобразить решения, задайте значение `dword:00000000`.  

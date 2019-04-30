@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 23c6ee5f8ff4d7a8a19c19bae55bb72eb5c8fd06
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823883"
 ---
 # <a name="profilerheapobjectrelationshiplist-structure"></a>Структура PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST
 Представляет список связей, принадлежащих объекту кучи.  
@@ -29,7 +29,7 @@ typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST{    UINT count;    [size_
   
 ## <a name="members"></a>Участники  
   
-|Член|Тип|Описание:|  
+|Член|Тип|Описание|  
 |------------|----------|-----------------|  
 |count|UINT|Количество связей объекта heap.|  
 |элементы|[Структура PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md)|Связи объекта heap.|

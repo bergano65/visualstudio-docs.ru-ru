@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0e0483f535dfd7a483d2b83728f78fa9c7167bcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814048"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Практическое руководство. Определить тип элемента проекта SharePoint
   Определите тип элемента проекта для создания пользовательского элемента проекта SharePoint. Дополнительные сведения см. в разделе [определение пользовательских типов элементов проектов SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).

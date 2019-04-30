@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bd3da83a25a05690e56d229f61ee709473171dd7
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799774"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;entryPoint&gt; элемент (Разработка решений Office в Visual Studio)
   Каждый элемент `entryPoint` пространства имен `vstav3` идентифицирует сборку настройки, которая должна запускаться при установке этого приложения [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .
@@ -96,7 +96,7 @@ ms.locfileid: "54873448"
 
 ## <a name="vsto-add-in-example"></a>Пример надстройки VSTO
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В приведенном ниже примере кода показан элемент `entryPoint` в манифесте приложения для решения Office уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4aadc089fba5c1f55488c72bfd5c3e46ebf59487
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813476"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Практическое руководство. Выполнения кода при развертывания или отзыва проекта SharePoint
   Если вы хотите выполнить дополнительные задачи после развертывания или отзыва проекта SharePoint, можно обрабатывать события, вызываемые с Visual Studio. Дополнительные сведения см. в разделе [SharePoint расширение упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

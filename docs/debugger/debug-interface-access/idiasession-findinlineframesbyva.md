@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aeb9d7b9925e8708ab100e68f88b28310da68fce
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827324"
 ---
 # <a name="idiasessionfindinlineframesbyva"></a>IDiaSession::findInlineFramesByVA
 Возвращает перечисление, которое позволяет клиентам выполнять итерацию всех встроенных кадров на указанный виртуальный адрес (VA).
@@ -45,7 +45,7 @@ HRESULT findInlineFramesByVA ( 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

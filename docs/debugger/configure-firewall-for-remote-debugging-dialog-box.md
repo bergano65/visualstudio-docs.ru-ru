@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75342630e347eaabe6854498c43294599afae5a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563738"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Настройка брандмауэра для удаленной отладки - диалоговое окно
 Данное диалоговое окно появляется тогда, когда межсетевой экран Windows блокирует получение отладчиком информации по сети. Для продолжения удаленной отладки в межсетевом экране необходимо создать "отверстие" для отладчика, чтобы тот мог беспрепятственно получать информацию.
@@ -40,7 +40,7 @@ ms.locfileid: "56637520"
 
  **Разрешить удаленную отладку с любого компьютера** включает удаленную отладку с компьютеров в любой точке сети. Это наименее безопасный вариант.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 19bade59105c1369d882b296abb19db2cd5945fb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807417"
 ---
 # <a name="ienumdebugcodecontextsskip"></a>IEnumDebugCodeContexts::Skip
 Пропускает заданное число сегментов в последовательности перечисления.  

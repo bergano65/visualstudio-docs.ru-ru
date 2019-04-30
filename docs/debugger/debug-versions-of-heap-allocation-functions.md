@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d00ea299ae7cebea5d6ad1a09837dc75e10568aa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852797"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Версии отладки функций выделения кучи
 Библиотека CRT содержит специальные отладочные версии функций выделения кучи. Эти функции называются так же, как и их версии для выпуска с присоединенным к ним _dbg. В этом разделе описываются различия между версией функции CRT для окончательного выпуска и версией _dbg; для примера взяты `malloc`и `_malloc_dbg`.
@@ -47,6 +47,6 @@ ms.locfileid: "56617344"
 
   Если _DEBUG не определен, вызовы `malloc` не задействуются, вызовы функций `_malloc_dbg` можно использовать для `malloc`, определение [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) игнорируется и исходные сведения о файле, относящиеся к запрос на выделение не предоставляется. Поскольку `malloc`не имеет параметра типа блока, запросы на тип `_CLIENT_BLOCK` обрабатываются как стандартные выделения.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Методы отладки CRT](../debugger/crt-debugging-techniques.md)

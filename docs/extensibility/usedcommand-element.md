@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 50cac2607a27443ef5a24ce00f34425ca418c513
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798408"
 ---
 # <a name="usedcommand-element"></a>Элемент UsedCommand
 Позволяет VSPackage для доступа к команде, которая определена в другом vsct-файл. Например, если VSPackage использует стандарт **копирования** команду, которая определяется [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] оболочки, можно добавить команду в меню или панели инструментов без повторной реализации.
@@ -32,7 +32,7 @@ ms.locfileid: "56689438"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |guid|Обязательный. Идентификатор GUID пары идентификатор GUID, который определяет команду.|
 |id|Обязательный. Идентификатор пары идентификатор GUID, который определяет команду.|
@@ -40,13 +40,13 @@ ms.locfileid: "56689438"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |Нет||
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Элемент UsedCommands](../extensibility/usedcommands-element.md)|Группирует элементы UsedCommand и другими признаками UsedCommands.|
 

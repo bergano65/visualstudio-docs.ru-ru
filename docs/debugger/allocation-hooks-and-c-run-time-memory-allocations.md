@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1840f6f5650b3491cf7898c1d8d6a6fcae19f906
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564978"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Ловушки выделения и выделения памяти CRT
 Очень важное условие для функций-ловушек выделения — что они должны явно обрабатывать `_CRT_BLOCK` блоков. Эти блоки являются выделения памяти, сделанные внутри функции библиотеки времени выполнения C при вызове функций библиотеки CRT, выделяющих внутреннюю память. Вы можете игнорировать `_CRT_BLOCK` функции-ловушки блоков, включив следующий код в начало выделения:
@@ -39,5 +39,5 @@ if ( nBlockUse == _CRT_BLOCK )
 
 Если посмотреть на исходные CRT-файлы, то можно увидеть, что стандартная функция-ловушка выделения **CrtDefaultAllocHook** (возвращающая просто значение **TRUE**) находится в собственном отдельном файле DBGHOOK.C. Если нужно, чтобы ловушка выделения вызывалась даже для выделений, сделанных в коде запуска CRT, выполняющемся перед функцией приложения **main**, то можно вместо использования [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) заменить эту стандартную функцию одной из своих.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Написание функций отладочных ловушек](../debugger/debug-hook-function-writing.md)

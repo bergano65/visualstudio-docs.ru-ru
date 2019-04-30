@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fb0a79cf2ef300df7e0cf4a745d8d22a30a80fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833250"
 ---
 # <a name="idiaenumsectioncontribsreset"></a>IDiaEnumSectionContribs::Reset
 Сбрасывает последовательность перечислений в начало.
@@ -31,5 +31,5 @@ HRESULT Reset();
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает `S_OK`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

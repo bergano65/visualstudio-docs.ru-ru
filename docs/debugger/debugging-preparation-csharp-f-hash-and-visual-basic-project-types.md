@@ -22,13 +22,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6cedb5e0b8dd80aadc3ee3a9507b2210811fb1bf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851853"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Подготовка к отладке: типы проектов C#, F# и Visual Basic
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Подготовка к отладке: Типы проектов C#, F# и Visual Basic
 В этом разделе описана отладка типов проектов C#, F# и [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], созданных шаблонами проекта [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
  Обратите внимание, что эти типы проектов, которые создают DLL свои выходные данные были сгруппированы в [отладка проектов DLL](../debugger/debugging-dll-projects.md) из-за их общих особенностей.
@@ -47,5 +47,5 @@ ms.locfileid: "56686890"
 
  [Отладка управляемого кода](../debugger/debugging-managed-code.md) описание общих проблем отладки и методов для приложения, написанные в управляемом коде.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Безопасность отладчика](../debugger/debugger-security.md)

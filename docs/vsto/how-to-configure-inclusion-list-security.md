@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ef4d25088e56f2223cb392dbc00c8454e1a291ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826383"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Практическое руководство. Настройка безопасности списка включения
   Если у вас есть разрешения администратора, вы можете настроить [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] запросы о доверии к элементу управления ли конечные пользователи получают возможность установки решений Office, сохранив решение о доверии в списке включения. Сведения о списках включений, см. в разделе [доверия Office решения с помощью списков включения](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2dc866cf392d2464756fc4e5cb19bfd02fcdea58
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838071"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 Извлекает байты контрольной суммы.
@@ -55,6 +55,6 @@ HRESULT get_checksum ( 
 
  Обычно контрольные суммы не более чем 32 байта, но не следует предполагать, что это максимальный размер контрольной суммы. Задайте `data` параметр `NULL` получить число байтов, необходимых для получения контрольной суммы. Затем выделить буфер соответствующего размера и вызвать этот метод еще раз с помощью нового буфера.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
 - [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)

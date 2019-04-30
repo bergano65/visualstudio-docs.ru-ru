@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8dbfc8081f980b7b9e978da782f1627a88a716a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809412"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704. Идентификаторы должны иметь правильное правописание
 
@@ -46,7 +46,7 @@ ms.locfileid: "55941288"
 
 - Символы подчеркивания обозначают окончание маркер и будут удалены. Например, Hello_world преобразуется в «Hello», «world».
 
-- Внедренные знаки амперсанда удаляются. Например, for&mat преобразуется в "format".
+- Внедренные знаки амперсанда удаляются. Например, & mat преобразуется в «format».
 
 ## <a name="language"></a>Язык
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6688844b5e5353d0d80ef2fb5fa2466a53f5f34a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840074"
 ---
 # <a name="idiaframedatagetlengthlocals"></a>IDiaFrameData::get_lengthLocals
 Возвращает число байтов в стек локальных переменных.
@@ -41,6 +41,6 @@ HRESULT get_lengthLocals ( 
 ## <a name="remarks"></a>Примечания
  Значение, возвращаемое этим методом обычно используется в интерпретации строки программы (см. в разделе [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) метод для определения строки программы).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

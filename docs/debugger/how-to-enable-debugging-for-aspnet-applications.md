@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: d383c559e605392b01ba2c476fd4ed5ae5d48625
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848365"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Отладка приложений ASP.NET или ASP.NET Core в Visual Studio
 
@@ -187,6 +187,6 @@ IIS Express используется по умолчанию и предвари
 - [Практическое руководство. Выполнение рабочего процесса с учетной записью пользователя](how-to-run-the-worker-process-under-a-user-account.md)
 - [Практическое руководство. Поиск имени процесса ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)
 - [Отладка развернутых веб-приложений](debugging-deployed-web-applications.md)
-- [Пошаговое руководство: отладка веб-формы](walkthrough-debugging-a-web-form.md)
+- [Пошаговое руководство: Отладка веб-формы](walkthrough-debugging-a-web-form.md)
 - [Практическое руководство. Отладка исключений ASP.NET](how-to-debug-aspnet-exceptions.md)
 - [Отладка веб-приложений: ошибки и устранение неполадок](debugging-web-applications-errors-and-troubleshooting.md)
