@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15fd1596fdede3d13d603e7df222395a7ef7a277
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545118"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120. Обеспечьте безопасность конструкторов сериализации
 
@@ -50,7 +50,7 @@ ms.locfileid: "55927910"
 ## <a name="related-rules"></a>Связанные правила
  [CA2229: реализуйте конструкторы сериализации](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2237: Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237. Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>См. также
 

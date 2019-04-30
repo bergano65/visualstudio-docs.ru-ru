@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 056403fd0f1c90f53105c84f30fc2be2383900bf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433439"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Элемент ProvideDefaultName (шаблоны Visual Studio)
 Указывает ли [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проекта система создаст имя по умолчанию для шаблона в **Добавление нового элемента** или **новый проект** диалоговое окно.
@@ -42,7 +42,7 @@ ms.locfileid: "56696861"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 58b2495adf66f6c83bc631650e2a0f06f5b7cdd0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433621"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Сохранить свойство элемента проекта
 Вы можете сохранить свойства, добавляемого элемента проекта, такие как автор исходного файла. Это можно сделать путем сохранения свойства в файле проекта.

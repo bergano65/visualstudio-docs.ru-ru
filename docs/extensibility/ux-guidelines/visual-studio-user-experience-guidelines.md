@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6345fa74d78ab50229cb692ece58723fea38124a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553657"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Руководство по работе пользователей Visual Studio
 Выполните Visual Studio руководство при разработке новых функций для Visual Studio. Эти рекомендации содержат сведения о распространенных моделей пользователя и шаблоны взаимодействия, конструкторы, новые пользовательские интерфейсы (UI) позволяют создавать пользовательские интерфейсы, которые являются простое и постоянное в среде разработки.

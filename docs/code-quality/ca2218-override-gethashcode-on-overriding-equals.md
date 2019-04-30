@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 155d983a68734038220ffb53aa7a5e9504abdb40
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541888"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218. Переопределяйте GetHashCode при переопределении Equals
 
@@ -62,7 +62,7 @@ ms.locfileid: "55922983"
 
 ## <a name="class-example"></a>Пример класса
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В следующем примере класса (ссылочный тип), который нарушает это правило.
 
 ### <a name="code"></a>Код
@@ -76,7 +76,7 @@ ms.locfileid: "55922983"
 
 ## <a name="structure-example"></a>Пример структуры
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В следующем примере структура (тип значения), который нарушает это правило.
 
 ### <a name="code"></a>Код

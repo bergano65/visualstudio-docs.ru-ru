@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97b03f1a3ceb8424cc3e533512f6d0d3e034f791
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554809"
 ---
 # <a name="dimension"></a>Измерение
 Каждый массив FORTRAN имеет измерения, который определяется параметром `SymTagDimension` символов.
@@ -25,7 +25,7 @@ ms.locfileid: "56637403"
 ## <a name="properties"></a>Свойства
  Ниже приведены дополнительные допустимые свойства для данного типа символов.
 
-|Свойство.|Тип данных|Описание|
+|Свойство|Тип данных|Описание|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_lowerBound](../../debugger/debug-interface-access/idiasymbol-get-lowerbound.md)|`IDiaSymbol*`|Нижняя граница массива измерения FORTRAN.|
 |[IDiaSymbol::get_lowerBoundId](../../debugger/debug-interface-access/idiasymbol-get-lowerboundid.md)|`DWORD`|Идентификатор символа, нижняя граница.|
@@ -34,6 +34,6 @@ ms.locfileid: "56637403"
 |[IDiaSymbol::get_upperBound](../../debugger/debug-interface-access/idiasymbol-get-upperbound.md)|`IDiaSymbol*`|Верхняя граница FORTRAN измерения массива.|
 |[IDiaSymbol::get_upperBoundId](../../debugger/debug-interface-access/idiasymbol-get-upperboundid.md)|`DWORD`|Идентификатор верхней границы символа.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [ArrayType](../../debugger/debug-interface-access/arraytype.md)
 - [Иерархия классов символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

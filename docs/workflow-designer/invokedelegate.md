@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 511d73ea2992887f31bc8750cc9ba32934bddd91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537092"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -37,7 +37,7 @@ ms.locfileid: "55925375"
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.InvokeDelegate>. Значение по умолчанию: InvokeDelegate.<br /><br /> Несмотря на то что <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, рекомендуется использовать один.|
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Да|Имя <xref:System.Activities.ActivityDelegate>, вызываемого, когда выполняется действие. Это свойство можно изменить в области конструктора и является обязательным.|
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|Имя <xref:System.Activities.ActivityDelegate>, вызываемого, когда выполняется действие. Это свойство можно изменить в области конструктора и является обязательным.|
 |<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Коллекция аргументов вызванного делегата. Ключами являются имена объектов параметров на <xref:System.Activities.ActivityDelegate>, а значения — аргументы которого выражения вычисляются и назначены соответствующие объекты параметра. Для отображения **DelegateArguments** диалоговое окно, где можно задать это свойство, нажмите кнопку с многоточием в **DelegateArguments** поле таблицы свойств. Нажмите кнопку **создать аргумент** поле для добавления аргументов.|
 
 ## <a name="see-also"></a>См. также

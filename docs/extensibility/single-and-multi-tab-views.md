@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3676a19b5b5b7a4050a7d48385e76954ad0bcc96
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432892"
 ---
 # <a name="single-and-multi-tab-views"></a>Представления с одной и несколькими вкладками
 Редактор можно создавать различные типы представлений. Одним из примеров является окном редактора кода, другой — это конструктор форм.
@@ -114,5 +114,5 @@ Error:
 
 ## <a name="see-also"></a>См. также
 - [Поддержка представления нескольких документов](../extensibility/supporting-multiple-document-views.md)
-- [Практическое руководство. Присоединение представлений в данные документа](../extensibility/how-to-attach-views-to-document-data.md)
+- [Практическое руководство. Вложение представлений в данные документа](../extensibility/how-to-attach-views-to-document-data.md)
 - [Создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)

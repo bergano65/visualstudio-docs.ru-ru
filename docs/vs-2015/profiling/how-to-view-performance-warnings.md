@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Просмотр предупреждений о производительности | Документы Майкрософт
+title: Практическое руководство. Просмотр предупреждений о производительности | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 382d8660adc482a2ab6c7417cf795f84b6fa9e25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420125"
 ---
 # <a name="how-to-view-performance-warnings"></a>Практическое руководство. Просмотр предупреждений о производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
