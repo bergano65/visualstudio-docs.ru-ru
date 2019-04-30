@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 972ad0d772eee9b876f43bc3e2fcd032d4b7e0ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851015"
 ---
 # <a name="edit-and-continue-visual-c"></a>Режим "Изменить и продолжить" (Visual C#)
  С помощью операции "Изменить и продолжить" для С# в процессе отладки можно вносить изменения в код в режиме приостановки выполнения. Изменения могут применяться без необходимости остановки и повторного запуска сеанса отладки. В режиме выполнения редактор исходного кода доступен только для чтения.
@@ -36,8 +36,8 @@ ms.locfileid: "56685369"
 
  Когда операция "Изменить и продолжить" включена, поддерживаемые изменения применяются автоматически при использовании команд отладчика, таких как **Продолжить**, **Шаг**, **Задать следующий оператор**, или при выполнении вычисления функции в окне отладчика.
 
- Дополнительные сведения см. в разделе [как: изменить и продолжить (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
+ Дополнительные сведения см. в разделе [Как использовать режим "Изменить и продолжить" (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Практическое руководство. Использование режима "Изменить и продолжить" (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [Поддерживаемые изменения кода (C# и Visual Basic)](../debugger/supported-code-changes-csharp.md)
