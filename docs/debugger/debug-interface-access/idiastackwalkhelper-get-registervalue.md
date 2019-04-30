@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 275941aaf3a1eb2cab6554b18c6d9aa66605121a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831836"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 Получает значение регистра.
@@ -46,6 +46,6 @@ HRESULT get_registerValue ( 
 ## <a name="remarks"></a>Примечания
  Несмотря на размер `pRetVal` параметра, следует хранить реализацию, что регистр обычно содержит только. Например 8-битным регистром содержит только младшие 8-битов заданного значения. Это 8-разрядное значение расширяется до 64-бит, при возврате из этого метода.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [Перечисление CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md)

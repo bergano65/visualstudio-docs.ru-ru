@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849301"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Пошаговое руководство. Отладка ошибок отрисовки, возникающих из-за заливки
 В этом пошаговом руководстве демонстрируется использование [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диагностики графики исследовать объект, который имеет неверный цвет из-за ошибки шейдера.

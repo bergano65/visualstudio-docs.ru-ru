@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6534f57c92776dcd3cde9083335becbd66002a32
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788121"
 ---
 # <a name="iremotedebugapplicationthreadgetstate"></a>IRemoteDebugApplicationThread::GetState
 Получает состояние данного потока.  
@@ -39,7 +39,7 @@ HRESULT GetState(
  `pState`  
  [out] Сочетание следующих флагов состояния потока:  
   
-|Константа|Значение|Описание:|  
+|Константа|Значение|Описание|  
 |--------------|-----------|-----------------|  
 |THREAD_STATE_RUNNING|0x00000001|Поток выполняется.|  
 |THREAD_STATE_SUSPENDED|0x00000002|Поток приостановлен.|  
@@ -49,7 +49,7 @@ HRESULT GetState(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

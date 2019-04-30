@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 854371293fd46893f41eef0abc36446f1c7955f0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422400"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Пространство имен Concurrency (визуализатор параллелизма)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,5 +42,5 @@ namespace Concurrency;
 ## <a name="requirements"></a>Требования  
  **Заголовок:** cvmarkersobj.h  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочник по библиотеке C](../profiling/c-library-reference.md)

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8b237ded8ac0d22500986a9d390834147f24a2c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433192"
 ---
 # <a name="sccgetuseroption-function"></a>Функция SccGetUserOption
 Эта функция получает различные параметры конкретного пользователя.
@@ -57,7 +57,7 @@ SCCRTN SccGetUserOption(
 ## <a name="remarks"></a>Примечания
  Эта команда поддерживает следующие параметры:
 
-|Параметр User|Описание:|
+|Параметр User|Описание|
 |-----------------|-----------------|
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|Определяет, хочет ли пользователь извлечь локальную версию файлов. `lpVal` назначается `SCC_USEROPT_COLV_YES` (пользователю нужно извлечь локальных файлов) или `SCC_USEROPT_COLV_NO`.|
 

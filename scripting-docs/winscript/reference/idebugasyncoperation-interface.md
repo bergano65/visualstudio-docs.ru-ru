@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 820ecc40924ace4153b76f46c8b8fd1603512ebb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821787"
 ---
 # <a name="idebugasyncoperation-interface"></a>Интерфейс IDebugAsyncOperation
 Диспетчер отладки процессов реализует `IDebugAsyncOperation` интерфейс. Вызывает модуль языка `IDebugApplication::CreateAsyncDebugOperation` метод для получения ссылки на этот интерфейс. Можно использовать модуль языка `IDebugAsyncOperation` интерфейс, чтобы предоставить асинхронный доступ к синхронной операции отладки.  
@@ -27,7 +27,7 @@ ms.locfileid: "58150820"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IDebugAsyncOperation::GetSyncDebugOperation](../../winscript/reference/idebugasyncoperation-getsyncdebugoperation.md)|Возвращает операцию синхронной отладки, связанного с данным объектом.|  
 |[IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)|Вызывает асинхронную операцию, чтобы начать.|  

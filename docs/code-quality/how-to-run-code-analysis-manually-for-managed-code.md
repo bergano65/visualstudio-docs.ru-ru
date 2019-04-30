@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 75b518e1bf59ebd0e92d7cef311277ccf7d98c82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815856"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Практическое руководство. Запуск анализа кода вручную для управляемого кода
 Средство анализа кода предоставляет сведения для вас о возможных дефектах в исходном коде. Можно выполнить анализ кода автоматически при каждой сборке проекта кода, а также можно выполнить анализ кода вручную. Правила, которые проверяются при выполнении анализа кода указаны на странице "Анализ кода" на страницах свойств проекта. Дополнительные сведения см. в разделе [Как Настройка анализа кода для проекта управляемого кода](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)

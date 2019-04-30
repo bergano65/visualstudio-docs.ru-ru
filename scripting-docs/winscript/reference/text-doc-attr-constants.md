@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d22b178d85d304f19e52727ef2c67d77f16da1b3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840087"
 ---
 # <a name="textdocattr-constants"></a>Константы TEXT_DOC_ATTR
 Описывают атрибуты документа.  
@@ -35,7 +35,7 @@ typedef DWORD TEXT_DOC_ATTR;
   
 ## <a name="constants"></a>Константы  
   
-|Константа|Значение|Описание:|  
+|Константа|Значение|Описание|  
 |--------------|-----------|-----------------|  
 |TEXT_DOC_ATTR_READONLY|0x00000001|Документ доступен только для чтения.|  
 |TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|Документ является первичным файлом этого дерева документа.|  

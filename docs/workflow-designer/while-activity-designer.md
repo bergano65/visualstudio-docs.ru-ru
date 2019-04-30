@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d9ea1f6bd42526eb0ea38c23cbf0f28c4346515
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433899"
 ---
 # <a name="while-activity-designer"></a>Конструктор действия While
 
@@ -29,7 +29,7 @@ ms.locfileid: "55953250"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает дополнительное понятное имя конструктора действия <xref:System.Activities.Statements.While> в заголовке. Значение по умолчанию - While. Можно изменить значение в **свойства** окна или напрямую в заголовке конструктора действий.<br /><br /> Несмотря на то что свойство <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же рекомендуется использовать.|
 |<xref:System.Activities.Statements.While.Body%2A>|False|Содержит действие, выполняемое при <xref:System.Activities.Statements.While.Condition%2A> принимает значение **true**.|
-|<xref:System.Activities.Statements.While.Condition%2A>|Да|Содержит выражение Visual Basic, которое вычисляется для определения ли действие в <xref:System.Activities.Statements.While.Body%2A> должен выполняться.|
+|<xref:System.Activities.Statements.While.Condition%2A>|True|Содержит выражение Visual Basic, которое вычисляется для определения ли действие в <xref:System.Activities.Statements.While.Body%2A> должен выполняться.|
 
 ## <a name="see-also"></a>См. также
 

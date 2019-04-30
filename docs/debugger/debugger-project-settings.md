@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852694"
 ---
 # <a name="debugger-project-settings"></a>Параметры проекта отладчика
 Определенные параметры проекта также влияют на отладку. Определяются такие элементы, как каталоги, которые просматривает отладчик; команда и параметры команды, используемые для запуска программы; тип отладочных данных, создаваемых для программы. Эти параметры можно изменить в диалоговом окне **Страницы свойств** .
@@ -29,11 +29,11 @@ ms.locfileid: "56695587"
  В этом разделе описываются доступные параметры и способы их установки.
 
 ## <a name="in-this-section"></a>В этом разделе
- [Практическое: Установка параметров отладчика](../debugger/how-to-specify-debugger-settings.md) описание параметров отладчика в **параметры** диалоговое окно.
+ [Практическое руководство. Установка параметров отладчика](../debugger/how-to-specify-debugger-settings.md) описание параметров отладчика в **параметры** диалоговое окно.
 
- [Практическое: Настройка отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md) описывает **Отладка** и **выпуска** параметры и способы переключения между ними.
+ [Практическое руководство. Набор конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md) описывает **Отладка** и **выпуска** параметры и способы переключения между ними.
 
- [Параметры для конфигурации отладки C++ проекта](../debugger/project-settings-for-a-cpp-debug-configuration.md) список свойств, доступных в **страницы свойств** диалоговое окно для проектов C или C++.
+ [Параметры для проекта C++ конфигурации отладки](../debugger/project-settings-for-a-cpp-debug-configuration.md) список свойств, доступных в **страницы свойств** диалоговое окно для C или C++ проектов.
 
  [Параметры для проекта C# конфигурации отладки](../debugger/project-settings-for-csharp-debug-configurations.md) список свойств, доступных в **страницы свойств** диалоговое окно для C# проектов.
 
@@ -48,5 +48,5 @@ ms.locfileid: "56695587"
 
  [Отладчик, параметры и Подготовка](../debugger/debugger-settings-and-preparation.md) описывает параметры отладчика и необходимую подготовку для отладки программы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] отладчика.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Безопасность отладчика](../debugger/debugger-security.md)

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829736"
 ---
 # <a name="basictype"></a>BasicType
 Задает базовый тип символа.
@@ -54,13 +54,13 @@ btNoType, базовый тип не указан.
 
 btVoid базовый тип является `void`.
 
-btChar базовый тип является `char` (C/C++ тип).
+btChar базовый тип является `char` (C /C++ типа).
 
 btWChar базовый тип представляет собой расширенный символ (Юникод) (`WCHAR`).
 
-btInt базовый тип является `signed int` (C/C++ тип).
+btInt базовый тип является `signed int` (C /C++ типа).
 
-btUInt базовый тип является `unsigned int` (C/C++ тип).
+btUInt базовый тип является `unsigned int` (C /C++ типа).
 
 btFloat базовый тип является числом с плавающей запятой (`FLOAT`).
 
@@ -68,9 +68,9 @@ btBCD базовый тип — это десятичное число зако�
 
 btBool базовый тип является логическое значение (`BOOL`).
 
-btLong базовый тип является `long int` (C/C++ тип).
+btLong базовый тип является `long int` (C /C++ типа).
 
-btULong базовый тип является `unsigned long int` (C/C++ тип).
+btULong базовый тип является `unsigned long int` (C /C++ типа).
 
 btCurrency базовый тип является currency.
 
@@ -92,7 +92,7 @@ btHresult базовый тип является `HRESULT`.
 ## <a name="requirements"></a>Требования
 Заголовок: cvconst.h
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
 - [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

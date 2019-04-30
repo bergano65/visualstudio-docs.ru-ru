@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce8d963d56a6ad79562db22ab0e59885730c24b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858421"
 ---
 # <a name="using-the-activity-designers"></a>Использование конструкторов действий
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] включает определенное количество системных действий, которые могут быть использованы для построения пользовательских рабочих процессов и действий. В этом разделе описываются категории системных действий и их конструкторы, которые доступны как системные функции. Темы индивидуальных действий и их соответствующих конструкторов внутри каждой из этих категорий описывают, что эти действия могут предпринять и предоставить руководство, как их следует использовать.  
