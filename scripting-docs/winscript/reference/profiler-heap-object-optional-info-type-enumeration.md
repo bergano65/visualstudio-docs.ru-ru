@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0a56b05c572ec5d91914dd046bfdfa39224a07de
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823612"
 ---
 # <a name="profilerheapobjectoptionalinfotype-enumeration"></a>Перечисление PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE
 Представляет различные типы данных необязательно. Используется в [структура PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md).  
@@ -29,7 +29,7 @@ typedef [v1_enum] enum {    PROFILER_HEAP_OBJECT_OPTIONAL_INFO_PROTOTYPE        
   
 ## <a name="members"></a>Участники  
   
-|Член|Значение|Описание:|  
+|Член|Значение|Описание|  
 |------------|-----------|-----------------|  
 |PROFILER_HEAP_OBJECT_OPTIONAL_INFO_PROTOTYPE|0x00000001|Сведения о прототипа кучи.|  
 |PROFILER_HEAP_OBJECT_OPTIONAL_INFO_FUNCTION_NAME|0x00000002|Сведения об объекте кучи имени функции.|  

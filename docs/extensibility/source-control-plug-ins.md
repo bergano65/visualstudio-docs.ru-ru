@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a717fdb885669ae4893dc4234c58233dec2957be
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800142"
 ---
 # <a name="source-control-plug-ins"></a>Подключаемые модули системы управления версиями
 В справочном разделе SDK подключаемого модуля управления источника содержит спецификацию полный интерфейс, позволяющий системы управления версиями для интеграции с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Указывает, синтаксис и семантику различные функции и типы данных, которые должны реализовывать подключаемый модуль системы управления версиями для взаимодействия с [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE).

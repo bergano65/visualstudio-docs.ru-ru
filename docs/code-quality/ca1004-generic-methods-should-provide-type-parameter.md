@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 94c21a81a7473e1697609ff3e46eb054ad304540
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779893"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004. Универсальные методы должны предоставлять параметр типа
 

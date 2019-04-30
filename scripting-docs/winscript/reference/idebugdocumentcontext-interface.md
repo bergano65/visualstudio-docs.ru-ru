@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: df4c8b8639a6d4b232f82cf87fff7b069829cc46
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783198"
 ---
 # <a name="idebugdocumentcontext-interface"></a>Интерфейс IDebugDocumentContext
 Предоставляет абстрактное представление части документа, отладка которого выполняется. Для текстовых документов это представление состоит из диапазона позицию символа.  
@@ -27,7 +27,7 @@ ms.locfileid: "58159465"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IDebugDocumentContext::GetDocument](../../winscript/reference/idebugdocumentcontext-getdocument.md)|Возвращает документ, содержащий этот контекст.|  
 |[IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)|Перечисляет контексты кода, связанный с данным контекстом документа.|

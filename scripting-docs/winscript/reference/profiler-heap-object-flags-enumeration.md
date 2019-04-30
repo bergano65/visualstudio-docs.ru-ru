@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f7fde5ed275691d78e534cd7b8d8e958a8f20325
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823844"
 ---
 # <a name="profilerheapobjectflags-enumeration"></a>Перечисление PROFILER_HEAP_OBJECT_FLAGS
 Флаги, которые представляют основные сведения об объекте кучи. Используется в [структура PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md).  
@@ -29,7 +29,7 @@ typedef [v1_enum] enum {    PROFILER_HEAP_OBJECT_FLAGS_NEW_OBJECT            = 0
   
 ## <a name="members"></a>Участники  
   
-|Член|Значение|Описание:|  
+|Член|Значение|Описание|  
 |------------|-----------|-----------------|  
 |PROFILER_HEAP_OBJECT_FLAGS_NEW_OBJECT|0x00000001|Этот объект кучи был выделен после предыдущего запроса перечисление кучи. [Тип PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md) значения можно использовать повторно, если этот объект собран.|  
 |PROFILER_HEAP_OBJECT_FLAGS_IS_ROOT|0x00000002|Этот объект кучи является корневой объект графы объектов.|  
