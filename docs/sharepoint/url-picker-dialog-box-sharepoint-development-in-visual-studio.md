@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d8f193e50053b5cdf0b89cf41b09471c513ee9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007956"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Диалоговое окно выбора URL-адрес (Разработка приложений SharePoint в Visual Studio)
   В диалоговом окне выбора URL-адреса можно выбрать такие файлы, как файлы эталонной страницы или файлы изображений, расположенные в вашем проекте или на локальном сервере, где выполняется SharePoint.

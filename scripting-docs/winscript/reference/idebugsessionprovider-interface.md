@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fe73901d92cb42675ff9ec981bd9b90dcca5d546
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979052"
 ---
 # <a name="idebugsessionprovider-interface"></a>Интерфейс IDebugSessionProvider
 Основной интерфейс, предоставленный с помощью отладчика интегрированной среды разработки для реализации узлов и языка инициировать отладки. Он устанавливает сеанс отладки для запущенного приложения. Этот интерфейс реализуется диспетчером отладки.  
@@ -27,6 +27,6 @@ ms.locfileid: "58148991"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IDebugSessionProvider::StartDebugSession](../../winscript/reference/idebugsessionprovider-startdebugsession.md)|Инициирует сеанс отладки с указанным приложением.|

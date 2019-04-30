@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7184be62a8ad2b65e81d1ad82f01f0ce3f4668c5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004892"
 ---
 # <a name="idebugsyncoperation-interface"></a>Интерфейс IDebugSyncOperation
 Позволяет модулю скриптов абстрагировать операцию (например, вычисление выражений), которую требуется выполнить вложенной в определенный заблокированный поток. Интерфейс также предоставляет механизм для отмены операций не отвечает.  

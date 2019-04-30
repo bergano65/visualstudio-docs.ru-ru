@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0d18c8f9eef6ddb1a38473eb19984bd9cf7dbd96
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001505"
 ---
 # <a name="isimpleconnectionpoint-interface"></a>Интерфейс ISimpleConnectionPoint
 Предоставляет простой способ для описания и перечисление событий, произошедших в конкретной точке подключения. Этот интерфейс также позволяет легко подключить `IDispatch` объекта на эти события. Этот интерфейс реализуется путем процесс отладки Manager (PDM) и потребляемых обработчиков сценариев.  

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a3825ad72c903b9e1f0d19d699e391666d39f876
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992309"
 ---
 # <a name="iactivescriptsitetraceinfo-interface"></a>Интерфейс IActiveScriptSiteTraceInfo
 Предоставляет метод для отправки сведений трассировки скрипта.  
@@ -25,5 +25,5 @@ ms.locfileid: "58155437"
   
 |||  
 |-|-|  
-|Метод|Описание:|  
+|Метод|Описание|  
 |[Метод IActiveScriptSiteTraceInfo::SendScriptTraceInfo](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md)|Отправляет сведения о трассировке, включающий тип события, контекст и оператора скрипта.|

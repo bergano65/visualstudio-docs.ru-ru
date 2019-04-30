@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 67e16e2825f03c9ae452e639d6a086bee584ac95
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992557"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 Реализовано узлом для создания сайта для обработчика сценариев Windows. Как правило этот сайт будет связан с контейнером всех объектов, видимых в сценарий (например, элементы управления ActiveX). Как правило этот контейнер будет соответствовать просматриваемую страницу или документ. Microsoft Internet Explorer, например, создать контейнер для каждой отображаемой странице HTML. Каждый ActiveX элемента управления (или другой объект автоматизации), на странице и обработчик скриптов, будет перечисляемый внутри этого контейнера.  
@@ -27,7 +27,7 @@ ms.locfileid: "58152646"
   
 |||  
 |-|-|  
-|Метод|Описание:|  
+|Метод|Описание|  
 |[IActiveScriptSite::GetLCID](../../winscript/reference/iactivescriptsite-getlcid.md)|Извлекает идентификатор языкового стандарта, используемый узлом для отображения элементов пользовательского интерфейса.|  
 |[IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)|Получает сведения об элементе, который был добавлен в обработчик посредством вызова [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) метод.|  
 |[IActiveScriptSite::GetDocVersionString](../../winscript/reference/iactivescriptsite-getdocversionstring.md)|Извлекает строку, однозначно определяющее текущую версию документа с точки зрения главного приложения определяемого узла.|  
