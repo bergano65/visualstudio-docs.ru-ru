@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d2f2a70df72f6dfcdc8946ca2f5afec9efa21a65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934433"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Предупреждение: зависимость &#39;файл&#39; в проекте &#39;проекта&#39; невозможно скопировать в каталог выполнения, поскольку она перезапишет ссылку &#39;файл.&#39;
 Существует конфликт между зависимостями. Чтобы запустить приложение, необходимо скопировать несколько разных файлов сборки с одним именем в каталог bin. Каталог запуска может разрешить конфликт, так как одна из зависимостей является первичной ссылкой.  

@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d871d469fc71beaa5c3e3323aad08eda3f546729
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434484"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Практическое руководство. Отладка исполняемого файла, не в состав решения Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60068708"
 5. Запустите исполняемый файл, выбрав команду выполнения, такие как **запустить**, из **Отладка** меню.  
   
     > [!NOTE]
-    >  Не все языки программирования поддерживают исполняемые проекты. Если необходимо использовать эту возможность, установите [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
+    > Не все языки программирования поддерживают исполняемые проекты. Если необходимо использовать эту возможность, установите [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
   
      При отладке исполняемого файла без исходного кода доступные возможности отладки ограничены, независимо от того, происходит ли присоединение к исполняемому файлу или же исполняемый файл добавляется в решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Если исполняемый файл был скомпонован без отладочной информации в совместимом формате, доступные функции крайне ограничены. Если имеется исходный код,лучшим решением является его импорт в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и создание отладочной сборки исполняемого файла в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   

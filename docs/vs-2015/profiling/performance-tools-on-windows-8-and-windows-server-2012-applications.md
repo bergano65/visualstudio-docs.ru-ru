@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d5fdd068894434c170c2525499a41c7c14b4e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bfd585a3185d83981d24c8dc77e62193c1363d4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442539"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства производительности в приложениях Windows 8 и Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60095845"
 Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым средства производительности Visual Studio собирают данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. В этом разделе описаны изменения средств производительности на платформах Windows 8 и Windows Server 2012.  
   
 > [!NOTE]
->  Средства производительности в других поддерживаемых версиях Windows (Windows 7, Windows Server 2008 R2) не изменились.  
+> Средства производительности в других поддерживаемых версиях Windows (Windows 7, Windows Server 2008 R2) не изменились.  
   
 ## <a name="BKMK_In_this_topic"></a> Содержание раздела  
  [Сбор данных в приложениях для Магазина Windows из интегрированной среды разработки Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
@@ -105,7 +105,7 @@ ms.locfileid: "60095845"
 - Скопируйте и запустите программу установки инструментов автономного профилировщика с компьютера Visual Studio. Программы установки находятся в папке *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Выберите программу установки для операционной системы удаленного компьютера (x86 или x64).  
   
 > [!NOTE]
->  Для сбора данных профилирования TIP необходимо установить автономный профилировщик с компьютера с Visual Studio на удаленный компьютер.  
+> Для сбора данных профилирования TIP необходимо установить автономный профилировщик с компьютера с Visual Studio на удаленный компьютер.  
   
  Следующие функции и параметры профилирования не поддерживаются при профилировании приложений Windows 8 Windows Server 2012 из командной строки.  
   

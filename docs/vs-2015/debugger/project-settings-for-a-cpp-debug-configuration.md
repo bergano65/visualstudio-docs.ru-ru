@@ -112,12 +112,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ea5740b66187f97cacb43edfc1ea0d77d6cb8d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 87b8913a95203d082a76e8b18a92d2f509cace16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446173"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Параметры проекта для конфигурации отладки C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +125,7 @@ ms.locfileid: "58994012"
 Можно изменить параметры проекта для конфигурации отладки C или Visual C++ в **страницы свойств** диалоговое окно, как описано в [как: настроить конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где в диалоговом окне **Страницы свойств** можно найти параметры, связанные с отладчиком.  
   
 > [!WARNING]
->  Параметры отладки проекта в **свойства конфигурации/Отладка** различаются категории для приложений Windows Store и компоненты, которые создаются на языке C++. См. в разделе [начать сеанс отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) в центре разработчиков Windows.  
+> Параметры отладки проекта в **свойства конфигурации/Отладка** различаются категории для приложений Windows Store и компоненты, которые создаются на языке C++. См. в разделе [начать сеанс отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) в центре разработчиков Windows.  
   
  Укажите используемый отладчик в **отладчик для запуска** поле со списком. В зависимости от выбора, будут отображены те или иные свойства.  
   

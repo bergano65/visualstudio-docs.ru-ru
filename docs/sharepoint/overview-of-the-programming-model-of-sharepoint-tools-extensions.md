@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421289"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Обзор модели программирования SharePoint средств расширения
   При создании расширения для инструментов SharePoint в Visual Studio сначала необходимо реализовать один или несколько интерфейсов расширения, предоставляемых инструментами SharePoint. Как правило, для реализации возможностей в расширении вы также будете использовать другие типы, предоставляемые инструментами SharePoint. В некоторых случаях можно также использовать типы в других объектных моделях, предоставляемых Visual Studio и SharePoint. Необходимо понять назначение каждого из этих объектных моделей и уметь использовать их друг с другом для создания расширений для инструментов SharePoint.
@@ -50,7 +50,7 @@ ms.locfileid: "60038474"
 - *Visual Studio автоматизации и интеграции объектные модели*. Эти объектные модели используются для доступа к возможностям Visual Studio, которые выходят за рамки объектной модели инструментов SharePoint.
 
     > [!NOTE]
-    >  Некоторые объекты в объектной модели инструментов SharePoint можно преобразовать в объекты в объектных моделях автоматизации и интеграции Visual Studio (и наоборот) с помощью службы проектов SharePoint. Дополнительные сведения см. в разделе [преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+    > Некоторые объекты в объектной модели инструментов SharePoint можно преобразовать в объекты в объектных моделях автоматизации и интеграции Visual Studio (и наоборот) с помощью службы проектов SharePoint. Дополнительные сведения см. в разделе [преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
 - *Объектные модели SharePoint server и клиента*. Эти объектные модели используются для изменения сайта SharePoint или получения данных с сайта SharePoint из контекста расширения инструментов SharePoint.
 

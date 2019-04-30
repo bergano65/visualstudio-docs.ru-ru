@@ -14,11 +14,11 @@ ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002451"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Отслеживание выделения в окне свойств
 Если вы хотите работать с **свойства** окна или **свойство** страниц, например, формы, текст или выделения, для которого требуется просмотреть свойства, то необходимо иметь полное представление о том, как вы Координируйте выбора. Например необходимо знать, есть ли у вас выбрать один элемент или множественный выбор. Затем необходимо объявлять тип выделения (одному или нескольким) в интегрированной среде разработки с помощью <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> интерфейс. Этот интерфейс предоставляет сведения, необходимые **свойства** окна.  

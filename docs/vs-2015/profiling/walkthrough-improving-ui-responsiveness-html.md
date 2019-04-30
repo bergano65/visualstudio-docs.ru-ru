@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433175"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Пошаговое руководство. Повышение скорости отклика пользовательского интерфейса (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60071646"
 1. В Visual Studio создайте проект универсального приложения Windows на JavaScript. (Выберите **Файл > Создать > Проект**.) Щелкните **JavaScript** в левой области, выберите **Windows**, **Windows 10**, а затем выберите **Универсальные приложения** или **Windows Phone**.  
   
 2. > [!IMPORTANT]
-    >  Результаты диагностики, приведенные в этом разделе, проверены в приложении Windows 8.  
+    > Результаты диагностики, приведенные в этом разделе, проверены в приложении Windows 8.  
   
 3. Выберите один из пустых шаблонов проектов в средней области, например **Пустое приложение**.  
   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2ba64bdcf299f52d0200e1fa66dead11a8824c14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429988"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Область тестирования 1. Добавление и открытие из системы управления версиями
 Этой системы управления версиями подключаемого модуля тестов описание области размещения решения или проекты в системе управления версиями и их извлечение из системы управления версиями.
@@ -37,7 +37,7 @@ ms.locfileid: "60083521"
 - Для [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], добавьте из источника элемента управления также доступна из **файл**, **добавить**, **существующий проект**; поиск в [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] расположение.
 
   > [!NOTE]
-  >  В этом тесте может использоваться путь локального файла или локальный сервер IIS (веб-сервер).
+  > В этом тесте может использоваться путь локального файла или локальный сервер IIS (веб-сервер).
 
 ## <a name="expected-behavior"></a>Ожидаемое поведение
 

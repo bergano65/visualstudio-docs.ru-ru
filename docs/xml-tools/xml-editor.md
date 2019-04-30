@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002484"
 ---
 # <a name="xml-editor"></a>Редактор XML
 
@@ -50,7 +50,7 @@ ms.locfileid: "57526195"
 
 [Профилировщик XSLT](../xml-tools/xslt-profiler.md) создает подробные сведения о производительности XSLT, отчеты, которые помогают измерять, оценивать и исправлять проблемы, связанные с производительностью, в код XSLT. Профилировщик XSLT также содержит полезные подсказки по оптимизации таблиц стилей XSL и XSLT.
 
-## <a name="xslt-hierarchy"></a>XSLT иерархии
+## <a name="xslt-hierarchy"></a>Иерархия XSLT
 
 [Средство XSLT иерархии](../xml-tools/walkthrough-using-xslt-hierarchy.md) позволяет добавлять точки останова в включаемая таблицы стилей и/или встроенные правила шаблона.
 

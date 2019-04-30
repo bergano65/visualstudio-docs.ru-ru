@@ -10,12 +10,12 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87a561ed3596b98f35e26e19e2c5851534aba564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b6c2810a81ada06152faea06e86a27f7907a643
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430101"
 ---
 # <a name="using-the-settings-store"></a>Использование хранилища параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,6 +84,6 @@ ms.locfileid: "60094829"
 2. Перейдите к HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
   
     > [!NOTE]
-    >  Убедитесь, что вы находитесь на ключ, который содержит \14.0Exp_Config\ и не \14.0_Config\\. Когда вы запускаете экспериментальном экземпляре Visual Studio, параметры конфигурации — в кусте реестра «14.0Exp_Config».  
+    > Убедитесь, что вы находитесь на ключ, который содержит \14.0Exp_Config\ и не \14.0_Config\\. Когда вы запускаете экспериментальном экземпляре Visual Studio, параметры конфигурации — в кусте реестра «14.0Exp_Config».  
   
 3. Разверните узел \Installed Products\. Если сообщение на предыдущих шагах **установки по средств разработчика Microsoft Windows Phone: Значение true,**, \Installed Products\ должен содержать узел средства для разработчиков Windows Phone. Если сообщение является **разработчиков Microsoft Windows Phone средства установлены: False**, \Installed Products\ не должен содержать узел средства для разработчиков Windows Phone.

@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 943493273808afdb2dfb099ff1f44900028e4dd6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433390"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Выбор шаблона решения на доменном языке
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58994421"
  Следующие шаблоны решения доступны в мастере конструктора доменного языка.  
   
 > [!NOTE]
->  Шаблоны предназначена для предоставления начальной DSL. Шаблоны с именем диаграммы классов и компонентов не полный UML-схемы. Если вы хотите создать модель UML, рассмотрите возможность средств, которые предоставляют набор схем, собранных в единую модель моделирования UML. Они могут расширяться и интегрироваться в DSL при помощи ModelBus. Дополнительные сведения см. в разделе [Создание моделей для приложения](../modeling/create-models-for-your-app.md).  
+> Шаблоны предназначена для предоставления начальной DSL. Шаблоны с именем диаграммы классов и компонентов не полный UML-схемы. Если вы хотите создать модель UML, рассмотрите возможность средств, которые предоставляют набор схем, собранных в единую модель моделирования UML. Они могут расширяться и интегрироваться в DSL при помощи ModelBus. Дополнительные сведения см. в разделе [Создание моделей для приложения](../modeling/create-models-for-your-app.md).  
   
 |Шаблон|Компоненты|Описание|  
 |--------------|--------------|-----------------|  

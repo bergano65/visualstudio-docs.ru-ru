@@ -6,12 +6,12 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 manager: jillfra
-ms.openlocfilehash: 9952cc804e548896fb4dec9f6c1a447835ba251e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 284a0da3aaf0b88f7f0d2c7fc3983ca3c6aacbc6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415271"
 ---
 # <a name="in-place-activation"></a>Активация на месте
 Если в представлении редактора размещаются элементы ActiveX или другие активные элементы управления, представление редактора следует реализовать как элемент ActiveX или как активный объект данных документа с помощью модели встроенной активации.
@@ -22,7 +22,7 @@ ms.locfileid: "56723777"
  При реализации элемента ActiveX можно размещать другие внедренные объекты. При реализации объекта данных документа рамка окна ограничивает возможность использования элементов ActiveX.
 
 > [!NOTE]
->  Интерфейсы <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> обеспечивают разделение данных и представления. Однако в Visual Studio такая возможность не поддерживается, и эти интерфейсы используются только для представления объекта представления документа.
+> Интерфейсы <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> обеспечивают разделение данных и представления. Однако в Visual Studio такая возможность не поддерживается, и эти интерфейсы используются только для представления объекта представления документа.
 
  Редакторы, использующие службу <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> , могут обеспечивать интеграцию с меню, панелями инструментов и командами путем вызова методов интерфейса <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> , реализуемого службой <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> . Редакторы также могут предоставлять и другие функциональные возможности Visual Studio, такие как отслеживание выделения и управление отменой действий. Дополнительные сведения см. в разделе [создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md).
 
@@ -32,7 +32,7 @@ ms.locfileid: "56723777"
  ![В&#45;поместите редактор активации](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor") редактор активации на месте
 
 > [!NOTE]
->  Из объектов, показанных на этой схеме, только объект `CYourEditorFactory` требуется для создания стандартного редактора. Если вы создаете настраиваемый редактор, реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> не нужно, так как ваш редактор, скорее всего, будет иметь собственный закрытый механизм сохраняемости. Дополнительные сведения см. в разделе [создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md).
+> Из объектов, показанных на этой схеме, только объект `CYourEditorFactory` требуется для создания стандартного редактора. Если вы создаете настраиваемый редактор, реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> не нужно, так как ваш редактор, скорее всего, будет иметь собственный закрытый механизм сохраняемости. Дополнительные сведения см. в разделе [создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md).
 
  Все интерфейсы, реализуемые для создания редактора встроенной активации, показаны в одном объекте `CYourEditorDocument` , но такая конфигурация поддерживает только одно представление данных документа. Дополнительные сведения о поддержке нескольких представлений данных документа, см. в разделе [поддерживать несколько представлений документа](../extensibility/supporting-multiple-document-views.md).
 

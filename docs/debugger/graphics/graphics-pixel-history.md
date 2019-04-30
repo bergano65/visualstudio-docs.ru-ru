@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bdabcdd19bd12729d7b505ef4897d38ba8ad69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23ada46a28d692daf238147ea07f34d440a99869
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388586"
 ---
 # <a name="graphics-pixel-history"></a>Журнал пикселей графики
 Окно журнала пикселей графики в анализаторе графики Visual Studio помогает понять влияние на конкретный пиксель событий Direct3D, которые происходят в кадре вашей игры или приложения.
@@ -59,7 +59,7 @@ ms.locfileid: "60100995"
 3. Под интересующим вас примитивом перейдите по ссылке заголовка шейдера — например, перейдите по ссылке **Vertex Shader obj:30**, чтобы просмотреть исходный код шейдера вершин.
 
     > [!TIP]
-    >  Номер объекта, например **obj:30**, идентифицирует этот шейдер во всем интерфейсе анализатора графики, таком как таблица объектов или окно этапов конвейера.
+    > Номер объекта, например **obj:30**, идентифицирует этот шейдер во всем интерфейсе анализатора графики, таком как таблица объектов или окно этапов конвейера.
 
 ##### <a name="to-debug-a-shader"></a>Отладка шейдера
 

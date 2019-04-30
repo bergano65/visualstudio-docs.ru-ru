@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434254"
 ---
 # <a name="troubleshooting-vspackages"></a>Устранение неполадок, связанных с пакетами VSPackage
 Ниже приведены распространенные проблемы, которые могут возникнуть с VSPackage и советы для решения проблем.
@@ -46,7 +46,7 @@ ms.locfileid: "60039737"
 4. Откройте **вывода** окно экземпляра [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , не смог загрузить VSPackage. В этом окне могут отображаться сведения о причину сбоя загрузки VSPackage.
 
    > [!NOTE]
-   >  При запуске экспериментальной версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), проверьте **вывода** окно обеих версий.
+   > При запуске экспериментальной версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), проверьте **вывода** окно обеих версий.
 
 5. В журнале действий.
 
@@ -85,7 +85,7 @@ ms.locfileid: "60039737"
     4. На **Отладка** меню, щелкните **начать отладку** или нажмите клавишу F5.
 
         > [!NOTE]
-        >  При отладке проекта, создать или загрузить существующий экземпляр проекта сейчас.
+        > При отладке проекта, создать или загрузить существующий экземпляр проекта сейчас.
 
 2. Использование журнала действий.
 

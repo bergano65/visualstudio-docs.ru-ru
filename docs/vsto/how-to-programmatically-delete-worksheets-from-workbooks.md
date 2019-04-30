@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ea87ac85ed187becb2f463dfe95fd3dcb812f28
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ecc39e72a336c390c85f1caf2c80c6643acbb61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412538"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Практическое руководство. Программное удаление листов из книг
   В книге можно удалить любой лист. Для удаления листа используйте ведущий элемент листа или получите доступ к листу с помощью коллекции листов книги.
@@ -29,7 +29,7 @@ ms.locfileid: "60066556"
  Если лист был добавлен в настройку на уровне документа во время разработки, для удаления указанного листа используйте метод <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A>. Следующий код удаляет лист из книги с помощью прямой ссылки на ведущий элемент листа.
 
 > [!IMPORTANT]
->  Этот код выполняется только в тех проектах, которые создаются с помощью любого из следующих шаблонов проекта:
+> Этот код выполняется только в тех проектах, которые создаются с помощью любого из следующих шаблонов проекта:
 >
 > - Книга Excel 2013
 > - Шаблон Excel 2013
@@ -55,7 +55,7 @@ ms.locfileid: "60066556"
   Следующий код удаляет лист из книги путем ссылки на лист через номер индекса **листы** коллекции. В этом коде предполагается, что новый лист был создан программным образом.
 
 > [!IMPORTANT]
->  Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Excel** сборки, а затем использовать классы из этой сборки для открытия книги и удалить лист. Дополнительные сведения см. в разделе [Как Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
+> Если вы хотите выполнить эту задачу в проекте любого другого типа, необходимо добавить ссылку на **Microsoft.Office.Interop.Excel** сборки, а затем использовать классы из этой сборки для открытия книги и удалить лист. Дополнительные сведения см. в разделе [Как Обращение к приложениям Office с помощью основных сборок взаимодействия](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) и [Справочник по основной сборке взаимодействия Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
 
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Удаление листа с помощью коллекции листов книги Excel
 

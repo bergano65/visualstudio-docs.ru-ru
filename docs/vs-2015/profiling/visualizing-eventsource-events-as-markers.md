@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431092"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Визуализация событий EventSource как маркеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "60044926"
  Используйте поле cvSpanId типа int, чтобы сопоставлять пары событий. Значение для каждой пары событий start — stop, представляющей интервал, должно быть уникальным. Обычно для параллельного кода это требует использования примитивов синхронизации, таких как <xref:System.Threading.Interlocked.Exchange%2A>, для обеспечения правильности ключа (значения, которое используется для CvSpanID).  
   
 > [!NOTE]
->  Не поддерживается использование SpanID для вложения интервалов, их частичного перекрытия в одном потоке, а также обеспечения ситуации, когда интервал начинается в одном потоке, а завершается в другом.  
+> Не поддерживается использование SpanID для вложения интервалов, их частичного перекрытия в одном потоке, а также обеспечения ситуации, когда интервал начинается в одном потоке, а завершается в другом.  
   
 ## <a name="see-also"></a>См. также  
  [Маркеры визуализатора параллелизма](../profiling/concurrency-visualizer-markers.md)

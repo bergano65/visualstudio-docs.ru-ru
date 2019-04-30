@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7a486ea4a448cb30b64631589f003854e8b1b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c9d005ef8bade9f83027c216d875d24aad602449
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418356"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Практическое руководство. Добавление метода Deleter
   Вы можете включить конечный пользователь мог удалить запись данных из внешнего списка на сайте SharePoint, добавив метод удаления для модели. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,10 +58,10 @@ ms.locfileid: "56644397"
 5. Добавьте код в метод удаления для удаления записи. В следующем примере удаляется элемент строки из заказа на продажу с помощью образца базы данных AdventureWorks для SQL Server.
 
    > [!NOTE]
-   >  Данный метод в этом примере использует два входных параметра.
+   > Данный метод в этом примере использует два входных параметра.
 
    > [!NOTE]
-   >  Замените значение `ServerName` поле с именем сервера.
+   > Замените значение `ServerName` поле с именем сервера.
 
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]

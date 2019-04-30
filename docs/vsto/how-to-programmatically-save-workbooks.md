@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419486"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Практическое руководство. Программное Сохранение книг Excel
   Сохранить книгу можно несколькими способами. Можно сохранить книгу без изменения пути к файлу. Если книга не сохранялась ранее, следует сохранить книгу, указав путь. Без явного пути Microsoft Office Excel сохраняет файл в текущей папке с именем, заданным при его создании. Можно также сохранить копию книги, не изменяя открытую книгу в памяти.
@@ -46,7 +46,7 @@ ms.locfileid: "60093063"
  Вы можете сохранить указанную книгу в новой папке или с новым именем, указав при необходимости формат файла, пароль, режим доступа и т. д.
 
 > [!NOTE]
->  Вы можете задать <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> свойства **False** перед сохранением книги с новым путем, так как для сохранения в некоторых форматах требуется взаимодействие. Этому свойству присвоить **False** Excel будет использовать все значения по умолчанию.
+> Вы можете задать <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> свойства **False** перед сохранением книги с новым путем, так как для сохранения в некоторых форматах требуется взаимодействие. Этому свойству присвоить **False** Excel будет использовать все значения по умолчанию.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Сохранение книги, связанной с настройкой на уровне документа
 

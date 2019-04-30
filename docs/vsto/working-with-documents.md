@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1b21f8c84082e19c1d9f43d6a2ae36d158a15c01
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008694"
 ---
 # <a name="work-with-documents"></a>Работа с документами
   В подразделах данного раздела приведены пошаговые инструкции и примеры кода для работы с документами в проектах Office с помощью объектной модели Microsoft Office Word.

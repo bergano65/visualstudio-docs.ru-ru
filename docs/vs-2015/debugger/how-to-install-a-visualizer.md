@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e223831b30f784094a2affa5cebb314cc6e997f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5726cea8b2e81c53b5f3fff963357946f26b199f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438229"
 ---
 # <a name="how-to-install-a-visualizer"></a>Практическое руководство. установку визуализатора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60059712"
 После создания визуализатора необходимо установить его так, чтобы он стал доступен в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Установка визуализатора — это простой процесс.  
   
 > [!NOTE]
->  В **Store** приложений, только стандартные текстовые визуализаторы HTML, XML и JSON поддерживаются. Пользовательские визуализаторы (то есть, созданные пользователем) не поддерживаются.  
+> В **Store** приложений, только стандартные текстовые визуализаторы HTML, XML и JSON поддерживаются. Пользовательские визуализаторы (то есть, созданные пользователем) не поддерживаются.  
   
 ### <a name="to-install-a-visualizer"></a>Установка визуализатора  
   

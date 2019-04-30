@@ -11,12 +11,12 @@ ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 03420aa0638fcf12fa36fb871b4a14d2695f0377
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d6d7243c8032b22f9abe89021af138f638729011
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437638"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Парные фигурные скобки в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58993166"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы узнать больше о новый способ реализовать парные фигурные скобки, см. в разделе [Пошаговое руководство: Отображение парных скобок](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
   
  <xref:Microsoft.VisualStudio.Package.AuthoringSink> Класс поддерживает оба пары и позволяющая утроить с <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> и <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> методы.  
   
@@ -42,7 +42,7 @@ ms.locfileid: "58993166"
 ## <a name="enabling-support-for-brace-matching"></a>Включение поддержки парные фигурные скобки  
  <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Можно задать атрибут `MatchBraces`, `MatchBracesAtCaret`, и `ShowMatchingBrace` именованные параметры, которые задать соответствующие свойства <xref:Microsoft.VisualStudio.Package.LanguagePreferences> класса. Свойства предпочтения языка также могут задаваться пользователем.  
   
-|Запись реестра|Свойство.|Описание|  
+|Запись реестра|Свойство|Описание|  
 |--------------------|--------------|-----------------|  
 |`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Включает парные фигурные скобки|  
 |`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Перемещает включает парные фигурные скобки, где находится курсор.|  

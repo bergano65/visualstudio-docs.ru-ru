@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a331e94ad57fc4ca23dc859415c61609025f799b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430393"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Пошаговое руководство. Создание веб-части Silverlight, отображающей данные OData для SharePoint
   SharePoint 2010 предоставляет свои данные списка с помощью OData. Служба OData реализована в SharePoint службой RESTful (ListData.svc). В данном пошаговом руководстве показано, как создать веб-часть SharePoint, в которой размещается приложение Silverlight. Приложение Silverlight отображает информацию списка извещений SharePoint с помощью ListData.svc. Дополнительные сведения см. в разделе [интерфейс REST SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) и [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
@@ -35,7 +35,7 @@ ms.locfileid: "60058256"
  Сначала необходимо создать приложение Silverlight в Visual Studio. Приложение Silverlight извлекает данные из списка извещений SharePoint с помощью службы ListData.svc.
 
 > [!NOTE]
->  Версии Silverlight младше 4.0 не поддерживают необходимые интерфейсы для ссылки на данные списка SharePoint.
+> Версии Silverlight младше 4.0 не поддерживают необходимые интерфейсы для ссылки на данные списка SharePoint.
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Чтобы создать приложение Silverlight и веб-часть Silverlight
 
@@ -73,7 +73,7 @@ ms.locfileid: "60058256"
 2. В **обозревателе решений**, откройте контекстное меню для **ссылки**, а затем выберите **Add Service Reference**.
 
     > [!NOTE]
-    >  Если вы используете Visual Basic, необходимо выбрать **Показать все файлы** значок в верхней части **обозревателе решений** для отображения **ссылки** узла.
+    > Если вы используете Visual Basic, необходимо выбрать **Показать все файлы** значок в верхней части **обозревателе решений** для отображения **ссылки** узла.
 
 3. В поле "адрес" **Add Service Reference** диалогового окна введите URL-адрес сайта SharePoint, такие как **http://MySPSite**и нажмите кнопку **Go** кнопки.
 
@@ -228,7 +228,7 @@ ms.locfileid: "60058256"
      Веб-часть Silverlight теперь должна отображать данные извещений с сайта SharePoint. По умолчанию страница хранится в страницах сайта в SharePoint.
 
     > [!NOTE]
-    >  При доступе к данным в Silverlight между доменами, Silverlight защищается от уязвимостей безопасности, которые могут быть использованы для эксплуатации веб-приложений в своих целях. Если возникли проблемы при доступе к удаленным данным в Silverlight, см. в разделе [внесения службы через границы домена](http://go.microsoft.com/fwlink/?LinkId=223276).
+    > При доступе к данным в Silverlight между доменами, Silverlight защищается от уязвимостей безопасности, которые могут быть использованы для эксплуатации веб-приложений в своих целях. Если возникли проблемы при доступе к удаленным данным в Silverlight, см. в разделе [внесения службы через границы домена](http://go.microsoft.com/fwlink/?LinkId=223276).
 
 ## <a name="see-also"></a>См. также
 - [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)

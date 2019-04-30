@@ -11,12 +11,12 @@ ms.assetid: 877756c9-4261-43d9-9f32-51bf06b4219f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1d84dd905c09b0bcc19833198b925f66dea245b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 32e4d34ec3d1fbe8753b4185cab76caa77038bd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434829"
 ---
 # <a name="project-configuration-object"></a>Объект конфигурации проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58991188"
  Поставщик конфигурации проекта управляет конфигурации проекта. Среда и другие пакеты, для получения доступа к и получения сведений о конфигурации проекта, вызывают интерфейсы, присоединенный к объекту поставщика конфигурации проекта.  
   
 > [!NOTE]
->  Не удается создать или изменить файлы конфигурации решения программным способом. Необходимо использовать `DTE.SolutionBuilder`. См. в разделе [конфигурации решения](../../extensibility/internals/solution-configuration.md) Дополнительные сведения.  
+> Не удается создать или изменить файлы конфигурации решения программным способом. Необходимо использовать `DTE.SolutionBuilder`. См. в разделе [конфигурации решения](../../extensibility/internals/solution-configuration.md) Дополнительные сведения.  
   
  Чтобы опубликовать отображаемое имя для использования в конфигурации пользовательского интерфейса, следует реализовать проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>. Среда вызывает метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, который возвращает список `IVsCfg` указатели, которые можно использовать для получения отображаемые имена сведения конфигурации и платформы, которые будут указаны в пользовательском Интерфейсе среды. Активная конфигурация и платформа определяются конфигурации проекта, хранящиеся в активной конфигурации решения. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A> Метод может использоваться для получения конфигурации активного проекта.  
   
@@ -38,7 +38,7 @@ ms.locfileid: "58991188"
  Еще один способ предоставления доступа к конфигурации проектов среды и других проектов — для проектов, чтобы предоставить реализацию `IVsCfgProvider2::GetCfgs` метод для возврата одного или нескольких объектов конфигурации. Проекты могут также реализовывать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>, который наследует от `IVsProjectCfg` и тем самым из `IVsCfg`, чтобы предоставить сведения, относящиеся к конфигурации. <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> поддерживает платформы и функциональные возможности для Добавление, удаление и переименование конфигурации проекта.  
   
 > [!NOTE]
->  Так, как Visual Studio больше не ограничены два типа конфигурации, не следует записывать код, обрабатывающий конфигураций с предположения о количестве конфигураций, и он должен быть записан в предположении, что проект, который содержит только один Конфигурация может быть Debug или Retail. Это делает использование <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> устаревшим.  
+> Так, как Visual Studio больше не ограничены два типа конфигурации, не следует записывать код, обрабатывающий конфигураций с предположения о количестве конфигураций, и он должен быть записан в предположении, что проект, который содержит только один Конфигурация может быть Debug или Retail. Это делает использование <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> устаревшим.  
   
  Вызов `QueryInterface` на объект, возвращенный из`IVsGetCfgProvider::GetCfgProvider` извлекает `IVsCfgProvider2`. Если `IVsGetCfgProvider` не найден, вызвав `QueryInterface` на `IVsProject3` объекта проекта, можно получить доступ к объект поставщика настроек путем вызова `QueryInterface` на иерархии корневой объект браузера для объекта, возвращаемого для `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)`, либо с помощью указатель на поставщик конфигурации, возвращаемые для `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`.  
   

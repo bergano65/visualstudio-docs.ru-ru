@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9531e3e36c6689e4a162649fcb9364067e5f6a13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc268136e898b7ef348b2910e080323347eb5716
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438625"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Пошаговое руководство. Вызов кода в надстройке VSTO из VBA
   В этом пошаговом руководстве показано, как предоставить объект в надстройке VSTO другим решениям Microsoft Office, включая Visual Basic для приложений (VBA) и надстроек VSTO COM.
@@ -113,7 +113,7 @@ ms.locfileid: "60106622"
 3. На ленте перейдите на вкладку **Разработчик** .
 
     > [!NOTE]
-    >  Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. В группе **Код** щелкните **Visual Basic**.
 

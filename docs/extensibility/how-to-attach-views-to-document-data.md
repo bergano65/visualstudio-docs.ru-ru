@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa4679b4e9cf9356921be47afb726c45216974ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b53748546633f8944ef0bd47ebc01326b322165e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417116"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Практическое руководство. Присоединение представлений данных документа
 Если у вас есть новое представление документа, можно присоединить ее к существующему объекту данных документа.
@@ -37,7 +37,7 @@ ms.locfileid: "56701398"
 4. Если закрыть этот документ, Visual Studio вызывает фабрикой редактора во второй раз. На этот вызов `DocDataExisting` параметр равен NULL. Реализации фабрики редактора можно затем откройте объект данных документа в ваш собственный редактор.
 
    > [!NOTE]
-   >  Чтобы определить, можно ли работать с существующим объектом данных документа, можно использовать закрытого набора знаний в реализации интерфейса путем приведения указатель на фактический [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] закрытая реализация класса. Например, реализовать все стандартные редакторы `IVsPersistFileFormat`, который наследует от <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Таким образом, можно вызвать `QueryInterface` для <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, и если идентификатор класса на существующий объект данных документа соответствует вашей реализации код класса, а затем можно работать с объектом данных документа.
+   > Чтобы определить, можно ли работать с существующим объектом данных документа, можно использовать закрытого набора знаний в реализации интерфейса путем приведения указатель на фактический [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] закрытая реализация класса. Например, реализовать все стандартные редакторы `IVsPersistFileFormat`, который наследует от <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Таким образом, можно вызвать `QueryInterface` для <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, и если идентификатор класса на существующий объект данных документа соответствует вашей реализации код класса, а затем можно работать с объектом данных документа.
 
 ## <a name="robust-programming"></a>Отказоустойчивость
  Когда Visual Studio вызывает вашу реализацию <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> метод, он передает обратно указатель на существующий объект данных документа в `punkDocDataExisting` параметра, если он существует. Проверьте объект данных документа, возвращаемый в `punkDocDataExisting` для определения, подходит ли объект данных документа для редактора, как описано в примечании на шаге 4 процедуры в этом разделе. Если это требуется, то фабрикой редактора должен предоставить во втором представлении данных, как описано в [поддерживать несколько представлений документа](../extensibility/supporting-multiple-document-views.md). В противном случае оно должно отображать соответствующее сообщение об ошибке.

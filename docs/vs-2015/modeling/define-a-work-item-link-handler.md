@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433119"
 ---
 # <a name="define-a-work-item-link-handler"></a>Определение обработчика связей рабочего элемента
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ namespace WorkItems
  В целях проверки запустите обработчик ссылок в режиме отладки.  
   
 > [!WARNING]
->  Вы должны быть уже подключены к управлению исходным кодом (SCC) TFS для создания рабочего элемента или связи с ним. При попытке открыть соединение с другим SCC TFS Visual Studio автоматически закрывает текущее решение. Убедитесь, что вы уже подключены соответствующему SCC, перед попыткой создания рабочего элемента или связи с ним. В последних выпусках Visual Studio команды меню недоступны, если вы не подключены к SCC.  
+> Вы должны быть уже подключены к управлению исходным кодом (SCC) TFS для создания рабочего элемента или связи с ним. При попытке открыть соединение с другим SCC TFS Visual Studio автоматически закрывает текущее решение. Убедитесь, что вы уже подключены соответствующему SCC, перед попыткой создания рабочего элемента или связи с ним. В последних выпусках Visual Studio команды меню недоступны, если вы не подключены к SCC.  
   
 #### <a name="to-test-the-link-handler"></a>Проверка обработчика ссылок  
   
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  Чтобы этот пример работал, необходимо добавить ссылку на проект в `System.Drawing.dll` и импортировать пространство имен `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Для других реализаций `OnWorkItemLinked` эти дополнительные действия не требуются.  
+> Чтобы этот пример работал, необходимо добавить ссылку на проект в `System.Drawing.dll` и импортировать пространство имен `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Для других реализаций `OnWorkItemLinked` эти дополнительные действия не требуются.  
   
 ### <a name="listening-for-link-removal"></a>Ожидание вызова при удалении ссылок  
  `OnWorkItemRemoved` вызывается один раз непосредственно перед удалением каждой связи рабочего элемента. При удалении элемента модели удаляются все связи.  

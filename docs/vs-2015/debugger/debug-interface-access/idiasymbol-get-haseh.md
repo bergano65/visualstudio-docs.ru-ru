@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b851661449c358fdfc4245ce55ec4ffbef24dd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e4badf13f21bae028ee782d23bc26b1c1348ebeb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446289"
 ---
 # <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ HRESULT get_hasEH(
   
 #### <a name="parameters"></a>Параметры  
  `pFlag`  
- [out] Возвращает `TRUE` Если функция имеет обработки исключений любого стиля C++; в противном случае возвращает `FALSE`.  
+ [out] Возвращает `TRUE` Если функция имеет один C++-стиля исключение обработки; в противном случае возвращает `FALSE`.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="requirements"></a>Требования  
   

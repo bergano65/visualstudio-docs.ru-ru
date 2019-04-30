@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9c714aec9bf4bb1fa28bd04a1b5e3375f98da4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410081"
 ---
 # <a name="create-a-custom-debug-engine"></a>Создание пользовательского модуля отладки
 Отладчик (DE) — это компонент, позволяет выполнить отладку конкретного архитектур во время выполнения. Обычно имеется только одна реализация DE каждой среды выполнения.
 
 > [!NOTE]
->  Несмотря на наличие отдельных реализаций DE Transact-SQL и JScript, VBScript и JScript совместно используют один DE.
+> Несмотря на наличие отдельных реализаций DE Transact-SQL и JScript, VBScript и JScript совместно используют один DE.
 
  DE работает с интерпретатором или операции система могла предоставлять такие операции отладки, как выполнение элемента управления, точки останова и оценки выражений. Эти службы реализуются с помощью интерфейсов DE и может вызвать отладчик для перехода между различные рабочие режимы. Дополнительные сведения см. в разделе [рабочие режимы](../../extensibility/debugger/operational-modes.md).
 

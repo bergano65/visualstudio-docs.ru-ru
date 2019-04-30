@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b2b3f87084d4bb1a64f2c43f860c7b8bcaae64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432392"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Добавление свойства отслеживания в определение доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ ms.locfileid: "60070489"
  Реализуйте `GetCustomProperties` метод для дескриптора типа для `ExampleModel` доменного класса.  
   
 > [!NOTE]
->  Код, создаваемый средств доменного языка для настраиваемого дескриптора типа для `ExampleModel` вызовы `GetCustomProperties`, однако средства DSL не создают код, который реализует метод.  
+> Код, создаваемый средств доменного языка для настраиваемого дескриптора типа для `ExampleModel` вызовы `GetCustomProperties`, однако средства DSL не создают код, который реализует метод.  
   
  Определение этот метод создает отслеживания дескриптор свойства для пространства имен, свойство отслеживания. Кроме того, предоставление атрибутов для свойства отслеживания позволяет **свойства** окно для отображения свойства правильно.  
   
@@ -344,7 +344,7 @@ ms.locfileid: "60070489"
  Реализуйте `GetCustomElementsValue` метод `ExampleModel` доменного класса.  
   
 > [!NOTE]
->  Код, создаваемый средств доменного языка для `ExampleModel` вызовы `GetCustomElementsValue`, однако средства DSL не создают код, который реализует метод.  
+> Код, создаваемый средств доменного языка для `ExampleModel` вызовы `GetCustomElementsValue`, однако средства DSL не создают код, который реализует метод.  
   
  Определение `GetCustomElementsValue` метод предоставляет логику для CustomElements вычисляемые свойства `ExampleModel`. Этот метод подсчитывает число `ExampleElement` доменных классов, пространство имен отслеживания свойство, которое имеет пользователь обновил значение и возвращает строку, представляющую это число как части общих элементов в модели.  
   
@@ -425,7 +425,7 @@ ms.locfileid: "60070489"
  Кроме того, добавьте хранилище для и методы для получения и задания, свойство пространства имен пользовательского хранилища `ExampleElement` доменного класса.  
   
 > [!NOTE]
->  Код, создаваемый средств доменного языка для `ExampleModel` вызовы get и настроить методы; Однако средства DSL не создают код, реализующий методы.  
+> Код, создаваемый средств доменного языка для `ExampleModel` вызовы get и настроить методы; Однако средства DSL не создают код, реализующий методы.  
   
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Добавление метода для настраиваемого дескриптора типа  
   
@@ -591,7 +591,7 @@ ms.locfileid: "60070489"
  Добавьте код для поддержки пользовательского поведения после загрузки XML-сериализации.  
   
 > [!NOTE]
->  Код, что средства DSL создают вызовы `OnPostLoadModel` и `OnPostLoadModelAndDiagram` методов; Однако средства DSL не создают код, который реализует эти методы.  
+> Код, что средства DSL создают вызовы `OnPostLoadModel` и `OnPostLoadModelAndDiagram` методов; Однако средства DSL не создают код, который реализует эти методы.  
   
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Добавление кода для поддержки пользовательского поведения после загрузки  
   

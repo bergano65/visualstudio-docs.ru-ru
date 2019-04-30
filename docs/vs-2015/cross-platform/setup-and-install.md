@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b1e34fa5d4f49d0dfa415e0ac47e55cea236307e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 646d8949004f44041fe75d1c6fed2e6f989b92c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435290"
 ---
 # <a name="setup-and-install"></a>Настройка и установка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60043314"
 Если у вас возникают проблемы с использованием Xamarin после установки и настройки, опубликуйте вопрос на сайте [forums.xamarin.com](http://forums.xamarin.com/).
   
 > [!NOTE]
->  Начиная с 31 марта 2016 года, Xamarin целиком включается во все выпуски Visual Studio, не требуя дополнительных затрат и отдельной лицензии. Xamarin Studio Community для Mac также предоставляется бесплатно для студентов, разработчиков OSS и небольших групп. Обратите внимание, что для существующих установок Visual Studio, настроенных с помощью более ранних лицензий Xamarin, требуется обновить Xamarin до версии 4.0.3.214 или более поздней. Для этого выберите **"Сервис" > "Параметры" > Xamarin > "Другие"**, щелкните ссылку **Проверить сейчас** и скачайте обновление до версии 4.0.3.214. После перезапуска Visual Studio выберите **"Сервис" > "Учетная запись Xamarin..."** и убедитесь, что отображается обновленное состояние.  
+> Начиная с 31 марта 2016 года, Xamarin целиком включается во все выпуски Visual Studio, не требуя дополнительных затрат и отдельной лицензии. Xamarin Studio Community для Mac также предоставляется бесплатно для студентов, разработчиков OSS и небольших групп. Обратите внимание, что для существующих установок Visual Studio, настроенных с помощью более ранних лицензий Xamarin, требуется обновить Xamarin до версии 4.0.3.214 или более поздней. Для этого выберите **"Сервис" > "Параметры" > Xamarin > "Другие"**, щелкните ссылку **Проверить сейчас** и скачайте обновление до версии 4.0.3.214. После перезапуска Visual Studio выберите **"Сервис" > "Учетная запись Xamarin..."** и убедитесь, что отображается обновленное состояние.  
   
  **Содержание раздела**  
   
@@ -56,7 +56,7 @@ ms.locfileid: "60043314"
 ## <a name="windows"></a> Настройка Windows (Visual Studio и Xamarin)  
   
 > [!TIP]
->  Эти инструкции предназначены для Visual Studio 2015. Чтобы использовать Xamarin с Visual Studio 2013 (требуется обновление 2), следуйте инструкциям по [прямой установке Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
+> Эти инструкции предназначены для Visual Studio 2015. Чтобы использовать Xamarin с Visual Studio 2013 (требуется обновление 2), следуйте инструкциям по [прямой установке Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
   
 1. [Скачать и запустить установщик для любого выпуска Visual Studio 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional или Enterprise). Visual Studio 2015 Community — это бесплатный выпуск; выпуски Professional и Enterprise можно использовать для ознакомления в течение 30 дней, после чего необходимо приобрести лицензию.  
   
@@ -83,7 +83,7 @@ ms.locfileid: "60043314"
     ![Проверка наличия обновлений Xamarin в параметрах Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-3.png "Кросс-платформенная установка Xamarin 3")  
   
    > [!NOTE]
-   >  Как отмечалось ранее, требуется обновить Xamarin до версии 4.0.3.214 или более поздней, чтобы избежать проблем с более ранними лицензиями Xamarin.  
+   > Как отмечалось ранее, требуется обновить Xamarin до версии 4.0.3.214 или более поздней, чтобы избежать проблем с более ранними лицензиями Xamarin.  
 
    Если вы не видите параметр для Xamarin в меню **"Сервис" > "Параметры"**, еще раз проверьте установку и попробуйте перезапустить Visual Studio. Можно выполнить поиск Xamarin в диалоговом окне "Параметры".
       

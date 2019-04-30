@@ -12,12 +12,12 @@ ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2fb579cf56d0fdf9e8c441a1393d934fcc7348d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8df85c03201e46768c43fb64cc41b7fa081eb91a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446837"
 ---
 # <a name="scchistory-function"></a>Функция SccHistory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ SCCRTN SccHistory(
  Обратите внимание, что при определенных обстоятельствах, анализируемый файл может измениться во время выполнения этого вызова. Например [!INCLUDE[vsvss](../includes/vsvss-md.md)] команда history дает пользователю возможность получить старую версию файла. В этом случае система управления подключаемый модуль возвращает `SCC_I_RELOAD` предупреждения интегрированной среды разработки, что необходимо перезагрузить файл.  
   
 > [!NOTE]
->  Если подключаемый модуль системы управления версиями не поддерживает эту функцию для массива файлов, могут отображаться только данные файла журнала для первого файла.  
+> Если подключаемый модуль системы управления версиями не поддерживает эту функцию для массива файлов, могут отображаться только данные файла журнала для первого файла.  
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   

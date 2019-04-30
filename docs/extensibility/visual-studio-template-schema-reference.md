@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df36d255f5277ff9c91901b1ebe12daaef3c7c19
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950943"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Справочник по схеме для Visual Studio шаблон
 Этот раздел содержит сведения о XML-элементы в *.vstemplate* файлы, которые представляют собой файлы, в которых хранятся метаданные для шаблонов проектов, шаблонов элементов и начальных наборов.

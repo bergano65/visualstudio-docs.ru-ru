@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1806e39e70d98ce7f47dda6bbc32a8f261b96acd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dc2fe8e6f9b0ed1e6970943ab5eedf1b62eb961
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432678"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Практическое руководство. Ограничение инструментирования указанными библиотеками DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "60091321"
 7. Необязательный параметр. Чтобы добавить другие DLL-файлы, щелкните правой кнопкой мыши элемент **Цели**, а затем выберите **Добавить целевой двоичный файл**. Выберите файлы в диалоговом окне **Добавление целевого двоичного файла**.  
   
     > [!NOTE]
-    >  Не указывайте исполняемый файл (EXE), который используется для запуска библиотеки DLL.  
+    > Не указывайте исполняемый файл (EXE), который используется для запуска библиотеки DLL.  
   
 ## <a name="see-also"></a>См. также  
  [Управление сбором данных](../profiling/controlling-data-collection.md)   

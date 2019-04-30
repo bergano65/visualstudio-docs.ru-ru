@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0862e6fc670be6cd3d3ca9fbf67f453aa0772a90
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009775"
 ---
 # <a name="appbreakflags-enumeration"></a>Перечисление APPBREAKFLAGS
 Показывают текущее состояние отладки для приложений и потоков.  
@@ -35,7 +35,7 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 ## <a name="members"></a>Участники  
   
-|Член|Значение|Описание:|  
+|Член|Значение|Описание|  
 |------------|-----------|-----------------|  
 |APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Модуль языка должно прерывать работу немедленно во всех потоках с BREAKREASON_DEBUGGER_BLOCK.|  
 |APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Модуль языка должно прерывать работу немедленно с BREAKREASON_DEBUGGER_HALT.|  

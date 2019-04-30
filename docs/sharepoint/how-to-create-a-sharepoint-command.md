@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49d253b63b682d81903003d6bdd148922989f274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d804acd19d585bf9517ce9b8d771290a1f1c214a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435457"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Практическое руководство. Создание команды SharePoint
   Если вы хотите использовать серверную объектную модель в расширения инструментов SharePoint, необходимо создать пользовательский *команды SharePoint* для вызова API. Команда SharePoint определяется в сборке, которая может напрямую вызывать серверную объектную модель.
@@ -33,7 +33,7 @@ ms.locfileid: "60082325"
     - Целевая платформа AnyCPU или x64 платформы. По умолчанию целевая платформа для проектов библиотек классов — AnyCPU. Дополнительные сведения о выборе целевой платформы см. в разделе [как: настроить целевые платформы в проектах](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
-    >  Команды SharePoint не может реализовать в том же проекте, который определяет расширение инструментов SharePoint, так как команды SharePoint предназначены для целевой платформы .NET Framework 3.5 и SharePoint средства расширения [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Необходимо определить команды SharePoint, используемых модулем в отдельном проекте. Дополнительные сведения см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+    > Команды SharePoint не может реализовать в том же проекте, который определяет расширение инструментов SharePoint, так как команды SharePoint предназначены для целевой платформы .NET Framework 3.5 и SharePoint средства расширения [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Необходимо определить команды SharePoint, используемых модулем в отдельном проекте. Дополнительные сведения см. в разделе [развертывания расширений для инструментов SharePoint в Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 2. Добавьте ссылки на следующие сборки:
 

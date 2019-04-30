@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9f6f3102e12a20aa9f7be7a66938b5a34b2cc348
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944323"
 ---
 # <a name="iremotedebugapplicationenumthreads"></a>IRemoteDebugApplication::EnumThreads
 Перечисляет все потоки, известно, связанного с приложением.  
@@ -42,7 +42,7 @@ HRESULT EnumThreads(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

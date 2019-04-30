@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f826168d3b198090ba58f409f096b4b12c760c70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 507bb70539019646f57f0aa9267573429d3fa202
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433562"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Практическое руководство. Добавление комментариев в рабочий процесс в конструкторе рабочих процессов
 Чтобы упростить создание более сложных рабочих процессов большего размера, [!INCLUDE[net_v45](../includes/net-v45-md.md)] дает разработчикам возможность добавлять заметки к следующим типам элементов в конструкторе.  
@@ -35,7 +35,7 @@ ms.locfileid: "60059673"
 - <xref:System.Activities.Argument>  
   
 > [!IMPORTANT]
->  Содержимое заметки сохраняется в виде обычного текста в файле XAML, связанном с рабочим процессом, и потенциально может быть прочитано другими. Избегайте добавлять в заметку конфиденциальные сведения.  
+> Содержимое заметки сохраняется в виде обычного текста в файле XAML, связанном с рабочим процессом, и потенциально может быть прочитано другими. Избегайте добавлять в заметку конфиденциальные сведения.  
   
 ### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Добавление заметки к действию в конструкторе  
   

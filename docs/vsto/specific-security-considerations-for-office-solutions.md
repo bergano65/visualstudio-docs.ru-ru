@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a29c813a5217e68541fd076eadf62bf54710014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436487"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Рекомендации по обеспечению безопасности для решений Office
   Средства безопасности, предоставляемые Microsoft .NET Framework и Microsoft Office, помогают защитить решения Office от различных угроз безопасности. В этом разделе описываются некоторые из этих угроз и даются рекомендации по защите от них. Здесь также приводятся сведения о влиянии параметров безопасности Microsoft Office на решения Office.
@@ -74,7 +74,7 @@ ms.locfileid: "60081324"
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
->  Если Outlook используется с Exchange, получение всех объектов Outlook из `ThisAddIn.Application` не гарантирует, что надстройка VSTO будет иметь доступ ко всей объектной модели Outlook. Например если администратор Exchange установил в Outlook автоматический запрет на все попытки для доступа к данным на адрес, с помощью объектной модели Outlook, то Outlook не разрешит в предыдущем примере кода для доступа к свойству To, несмотря на то, что в примере кода используется доверенное `ThisAddIn.Application` поля.
+> Если Outlook используется с Exchange, получение всех объектов Outlook из `ThisAddIn.Application` не гарантирует, что надстройка VSTO будет иметь доступ ко всей объектной модели Outlook. Например если администратор Exchange установил в Outlook автоматический запрет на все попытки для доступа к данным на адрес, с помощью объектной модели Outlook, то Outlook не разрешит в предыдущем примере кода для доступа к свойству To, несмотря на то, что в примере кода используется доверенное `ThisAddIn.Application` поля.
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Укажите, какие надстройки должны доверять при использовании Exchange
  При использовании Outlook с Exchange администраторы могут указать, что определенные надстройки VSTO могут выполняться без участия системы безопасности объектной модели. Надстройки VSTO Outlook, созданные с помощью решений Office в Visual Studio, не могут быть доверенными по отдельности; они могут быть доверенными только как группа.

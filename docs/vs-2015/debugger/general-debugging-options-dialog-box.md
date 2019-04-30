@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446481"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Страница "Общие", папка "Отладка", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ ms.locfileid: "59001918"
  Дает отладчику Visual Studio указание получать исходные файлы с серверов системы управления версиями, реализующих протокол SrcSrv (`srcsrv.dll`). Team Foundation Server и инструменты отладки для Windows — два исходных сервера, которые реализуют этот протокол. Дополнительные сведения о настройке SrcSrv см. в документации по инструментам отладки для Windows. Кроме того, см. в разделе [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
->  Поскольку при чтении PDB-файлов может выполняться произвольный код в файлах, убедитесь, что вы доверяете серверу.  
+> Поскольку при чтении PDB-файлов может выполняться произвольный код в файлах, убедитесь, что вы доверяете серверу.  
   
  **Выводить диагностические сообщения сервера системы управления версиями в окно вывода**  
  При включенной поддержке сервера системы управления версиями данный параметр включает вывод диагностических сведений.  

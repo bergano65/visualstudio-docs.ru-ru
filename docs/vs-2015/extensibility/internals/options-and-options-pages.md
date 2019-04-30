@@ -14,12 +14,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 350f0c873a0b6692d16dcbc987db32b63f68be72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438961"
 ---
 # <a name="options-and-options-pages"></a>Параметры и страницы параметров
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "58992690"
 - <xref:System.ComponentModel.DescriptionAttribute> Определяет описание параметра.  
   
   > [!NOTE]
-  >  Эквивалентное атрибуты, SRCategory, LocDisplayName и SRDescription, использование строковых ресурсов для локализации и определяются в [образец управляемого проекта](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > Эквивалентное атрибуты, SRCategory, LocDisplayName и SRDescription, использование строковых ресурсов для локализации и определяются в [образец управляемого проекта](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
   Рассмотрим следующий фрагмент кода:  
   
@@ -86,4 +86,4 @@ ms.locfileid: "58992690"
  Путь в реестре свойство автоматизации определяется путем объединения <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, параметры, слово и AutomationProperties странице категории и имени. Например, если страницы параметров имеет категорию "My Category", имя мою страницу сетки и <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, то свойство автоматизации имеет раздел реестра, HKEY_LOCAL_MACHINE\SOFTWARE\ Microsoft\VisualStudio\8.0Exp\AutomationProperties\My страница Category\My «сетка».  
   
 > [!NOTE]
->  Каноническое имя, Мои Category.My страница «Сетка», — значение подраздела имя этого ключа.
+> Каноническое имя, Мои Category.My страница «Сетка», — значение подраздела имя этого ключа.

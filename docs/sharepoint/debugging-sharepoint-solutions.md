@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60aa38d5042625393132ffceb3cc226f44e67645
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443498"
 ---
 # <a name="debug-sharepoint-solutions"></a>Отладка решений SharePoint
   Можно отлаживать решения SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчика. При запуске отладки, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] развертывает файлы проекта на сервере SharePoint, а затем открывает экземпляр сайта SharePoint в веб-браузере. Ниже описаны способы отладки приложений SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -103,7 +103,7 @@ ms.locfileid: "60060804"
 8. Для рабочих процессов, связываются с библиотеки SharePoint, списка или сайта, выбранного в **мастер настройки SharePoint**.
 
    > [!NOTE]
-   >  Это связывание происходит только в том случае, если вы выбрали **автоматически связать рабочий процесс** в мастере.
+   > Это связывание происходит только в том случае, если вы выбрали **автоматически связать рабочий процесс** в мастере.
 
 9. Выполняет настраиваемые команды после развертывания.
 
@@ -126,7 +126,7 @@ ms.locfileid: "60060804"
  При отладке проекта рабочего процесса, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] добавляет шаблон рабочего процесса (в зависимости от его типа) в библиотеку или список. После этого вы сможете в шаблон рабочего процесса вручную или путем добавления или обновления элемента. Затем можно использовать [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладку рабочего процесса.
 
 > [!NOTE]
->  При добавлении ссылки на другие сборки, убедитесь, что эти сборки установлены в глобальный кэш сборок ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). В противном случае не удастся решения рабочего процесса. Сведения об установке сборок см. в разделе [вручную запустить рабочий процесс на документ или элемент](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
+> При добавлении ссылки на другие сборки, убедитесь, что эти сборки установлены в глобальный кэш сборок ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). В противном случае не удастся решения рабочего процесса. Сведения об установке сборок см. в разделе [вручную запустить рабочий процесс на документ или элемент](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
 
  Тем не менее процесс развертывания не запускается рабочий процесс. Необходимо запустить рабочий процесс с сайта SharePoint. Можно также запустить рабочий процесс, с помощью клиентского приложения, такие как Microsoft Office Word 2010 или с помощью отдельного кода на стороне сервера. Используйте один из подходов, указанных в **мастер настройки SharePoint**.
 

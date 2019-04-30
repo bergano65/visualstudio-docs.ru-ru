@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411336"
 ---
 # <a name="create-a-settings-category"></a>Создание категории параметров
 
@@ -46,7 +46,7 @@ ms.locfileid: "60100591"
      Это создает ресурсы, это имя категории «My Category» объекта «My Settings» и описание категории «OptionInteger и OptionFloat».
 
     > [!NOTE]
-    >  Из этих трех только имя категории не отображается в **Импорт и экспорт параметров** мастера.
+    > Из этих трех только имя категории не отображается в **Импорт и экспорт параметров** мастера.
 
 3. В *MyToolsOptionsPackage.cs*, добавьте `float` свойство с именем `OptionFloat` для `OptionPageGrid` класса, как показано в следующем примере.
 
@@ -76,7 +76,7 @@ ms.locfileid: "60100591"
     ```
 
     > [!NOTE]
-    >  `OptionPageGrid` Категорию с именем «My Category» теперь состоит из двух свойств, `OptionInteger` и `OptionFloat`.
+    > `OptionPageGrid` Категорию с именем «My Category» теперь состоит из двух свойств, `OptionInteger` и `OptionFloat`.
 
 4. Добавить <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> для `MyToolsOptionsPackage` класса и присвойте ему CategoryName «My Category», присвойте ему ObjectName «My Settings» и присвоено значение true, isToolsOptionPage. Значение categoryResourceID, objectNameResourceID и DescriptionResourceID соответствующий строковый ресурс, идентификаторы созданные ранее.
 

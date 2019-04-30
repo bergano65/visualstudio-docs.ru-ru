@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ea06abff2237c0b9262ba01dcb243afe6c3c3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430456"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Пошаговое руководство. Вызов объектной модели клиента SharePoint в расширении обозревателя серверов
   В этом пошаговом руководстве показано, как вызывать клиентскую объектную модель SharePoint из расширения для **подключения SharePoint** узел в **обозревателя серверов**. Дополнительные сведения об использовании объектной модели клиента SharePoint см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -36,7 +36,7 @@ ms.locfileid: "60063118"
 - Отладка и тестирование расширения.
 
 > [!NOTE]
->  Расширение, которое создается в этом пошаговом руководстве напоминает расширение, создаваемые в [Пошаговое руководство: Расширения обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Для этого пошагового руководства используется объектная модель сервера SharePoint, но в этом пошаговом руководстве выполняются те же задачи с помощью клиентской объектной модели.
+> Расширение, которое создается в этом пошаговом руководстве напоминает расширение, создаваемые в [Пошаговое руководство: Расширения обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Для этого пошагового руководства используется объектная модель сервера SharePoint, но в этом пошаговом руководстве выполняются те же задачи с помощью клиентской объектной модели.
 
 ## <a name="prerequisites"></a>Предварительные требования
  Необходимы следующие компоненты на компьютере разработчика для выполнения этого пошагового руководства.
@@ -69,7 +69,7 @@ ms.locfileid: "60063118"
 3. В **новый проект** диалоговое окно последовательно раскройте элементы **Visual C#** или **Visual Basic** узлов, а затем выберите **расширяемости**.
 
     > [!NOTE]
-    >  **Расширяемости** узел доступен только в том случае, если установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе "Предварительные требования" ранее в этом разделе.
+    > **Расширяемости** узел доступен только в том случае, если установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе "Предварительные требования" ранее в этом разделе.
 
 4. В верхней части диалоговое окно, выберите **.NET Framework 4.5** в списке версий .NET Framework.
 
@@ -161,7 +161,7 @@ ms.locfileid: "60063118"
 1. Вставьте следующий код в **SiteNodeExtension** файл кода для **WebPartNodeExtension** проекта.
 
     > [!NOTE]
-    >  После добавления этого кода, проект будет содержать некоторые ошибки компиляции. Эти ошибки исчезнут при добавлении кода в последующих шагах.
+    > После добавления этого кода, проект будет содержать некоторые ошибки компиляции. Эти ошибки исчезнут при добавлении кода в последующих шагах.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -205,7 +205,7 @@ ms.locfileid: "60063118"
 6. В **добавить новый актив** отображаемое в диалоговом окне **тип** выберите **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. В **источника** выберите **проект в текущем решении**.
 

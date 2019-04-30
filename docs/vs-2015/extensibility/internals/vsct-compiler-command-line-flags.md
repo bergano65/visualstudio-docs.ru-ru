@@ -11,12 +11,12 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 935734d3ab21fd4ce69afaaf5fd4eef9ac417089
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440831"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Флаги командной строки компилятора VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
->  Символы - (дефис) и / (косая черта) являются оба принятые нотации, указывающие параметры командной строки.  
+> Символы - (дефис) и / (косая черта) являются оба принятые нотации, указывающие параметры командной строки.  
   
  Ниже приведены допустимые флаги и разъяснения к ним.  
   
@@ -61,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Укажите любые дополнительные определенные символы.|  
 |-I|Указать, что дополнительные пути поиска включаемых файлов, которые должны использоваться при разрешении ссылок на файлы.|  
 |-L|Укажите <xref:System.Globalization.CultureInfo> имя языка и региональных параметров, например «en US».|  
-|-E|Выдавать C# объектов указанного пространства имен для элементов команды, за которым следует [C&#124;H&#124;N]:*filename*где C = C#, H = заголовок C++, N = пространство имен. Пространство имен является обязательным для C#.|  
+|-E|Выдавать C# объектов указанного пространства имен для элементов команды, за которым следует [C&#124;H&#124;N]:*filename*где C = C#, H = C++ заголовок, N = пространство имен. Пространство имен является обязательным для C#.|  
 |-v|Подробные выходные данные.|  
   
  Переключатель -L указывает компилятору на необходимость выбрать группу строк для получения двоичного cto-файла, соответствующее заданной <xref:System.Globalization.CultureInfo> имя языка и региональных параметров. Имя заданного языка и региональных параметров должно соответствовать атрибуту языка из одного или нескольких [элемент Strings](../../extensibility/strings-element.md) в vsct-файле. Элемент строки имеет атрибут не языка, наследуется от содержащего [элемент CommandTable](../../extensibility/commandtable-element.md).  

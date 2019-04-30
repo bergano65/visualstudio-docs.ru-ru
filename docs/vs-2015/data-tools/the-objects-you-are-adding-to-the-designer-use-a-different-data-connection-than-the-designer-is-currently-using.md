@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 960d3123c45e44b2b1cdc64b896b15b82e655bb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 36ee348debee17b5bc9acf4cafd2dbbb6e5afeb9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425002"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using"></a>Добавляемые в конструктор объекты используют подключение данных, отличное от текущего подключения конструктора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60102847"
  При добавлении элементов к [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), все элементы используют общее подключение к данным. (Область конструктора предоставляет <xref:System.Data.Linq.DataContext>, которое использует единое подключение к данным для всех объектов на области конструктора). Если к конструктору добавляется объект, который использует подключение к данным, которое отличается от подключения к данным, в настоящее время используемого конструктором, появляется это сообщение. Для устранения этой ошибки можно выбрать поддержку существующего подключения. Если вы делаете это выбор, то выбранный объект не будет добавлен. В противном случае можно выбрать добавление объекта и переустановить соединение <xref:System.Data.Linq.DataContext> на новое соединение.  
   
 > [!NOTE]
->  Если щелкнуть **Да**, все классы сущностей в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] сопоставляются с новым соединением.  
+> Если щелкнуть **Да**, все классы сущностей в [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] сопоставляются с новым соединением.  
   
 ### <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>Для замены существующего подключения соединением, используемым выбранным объектом  
   

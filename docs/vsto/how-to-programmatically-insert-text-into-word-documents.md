@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412572"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Практическое руководство. Программная Вставка текста в документы Word
   Существует три основных способа вставки текста в документы Microsoft Office Word:
@@ -33,7 +33,7 @@ ms.locfileid: "60060637"
 - использование метода <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> объекта <xref:Microsoft.Office.Interop.Word.Selection> для вставки текста в позиции курсора или выделения.
 
 > [!NOTE]
->  Вы также можете вставить текст в элементы управления содержимым и закладки. Дополнительные сведения см. в разделе [элементы управления содержимым](../vsto/content-controls.md) и [элемент управления Bookmark](../vsto/bookmark-control.md).
+> Вы также можете вставить текст в элементы управления содержимым и закладки. Дополнительные сведения см. в разделе [элементы управления содержимым](../vsto/content-controls.md) и [элемент управления Bookmark](../vsto/bookmark-control.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

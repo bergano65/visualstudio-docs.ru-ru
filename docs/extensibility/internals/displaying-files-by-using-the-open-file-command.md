@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cc24e259ac5aaa8526d5855a1662c146e1438ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c4655d251d9020c1b8b4474865126dc98fa982f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420672"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Отображение файлов с помощью команды открытия файла
 Следующие шаги описывают, каким образом среда IDE обрабатывает **открыть файл** команды, которая доступна на **файл** меню в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Также описано, как проекты должна отвечать на вызовы, поступающие из этой команды.
@@ -31,7 +31,7 @@ ms.locfileid: "60112160"
     - Если файл не открыт, интегрированной среды разработки вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> для каждого проекта, чтобы определить, какой проект можно открыть файл запроса.
 
         > [!NOTE]
-        >  При реализации проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, укажите значение приоритета, указывающее уровень, по которому файл будет открыт проект. Приоритет значения приведены в <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> перечисления.
+        > При реализации проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, укажите значение приоритета, указывающее уровень, по которому файл будет открыт проект. Приоритет значения приведены в <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> перечисления.
 
 2. Каждый проект отвечает с уровнем приоритета, который обозначает степень важности помещаются на выполняется проект, чтобы открыть файл.
 

@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c85690b34f0db705fe2a17e2f98d5b4f11433b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434518"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Практическое руководство. Добавьте файл конфигурации приложения для C# проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60044980"
 Добавив файл конфигурации приложения (файл app.config) в проект C#, вы можете настроить способ, которым общеязыковая среда выполнения будет находить и загружать файлы сборки. Дополнительные сведения о файлах конфигурации см. в разделе [Обнаружение сборок в среде выполнения](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
   
 > [!NOTE]
->  Не поддерживает Windows Store <xref:System.Configuration>. В результате приложения Store не содержат шаблон app.config.  
+> Не поддерживает Windows Store <xref:System.Configuration>. В результате приложения Store не содержат шаблон app.config.  
   
  При построении проекта среда разработки автоматически копирует файл app.config, изменяет имя файла копии в соответствии с исполняемым файлом и затем перемещает копию в каталог bin.  
   

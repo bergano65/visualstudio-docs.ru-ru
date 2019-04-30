@@ -12,24 +12,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1d39e6feb2cddd0c573368db9bf50b1e77f2e48d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955499"
 ---
 # <a name="active-script-profiler-constants-enumerations-and-structures"></a>Константы, перечисления и структуры профилировщика активных скриптов
 Следующие перечисления используются интерфейсы Profiler активных скриптов.  
   
 ## <a name="constants-enumerations-and-structures"></a>Константы, перечисления и структуры  
   
-|Константы|Описание:|  
+|Константы|Описание|  
 |---------------|-----------------|  
 |[Тип PROFILER_EXTERNAL_OBJECT_ADDRESS](../../winscript/reference/profiler-external-object-address-type.md)|Адрес внешнего объекта профилировщика. Используется в [структура PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md) и [структура PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).|  
 |[Тип PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|Идентификатор объекта heap. Используется в [структура PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md)[структура PROFILER_HEAP_OBJECT_SCOPE_LIST](../../winscript/reference/profiler-heap-object-scope-list-structure.md), [структура PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md)и [Структура PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).|  
 |[Тип PROFILER_HEAP_OBJECT_NAME_ID](../../winscript/reference/profiler-heap-object-name-id-type.md)|Идентификатор имени объекта heap. Используется в [структура PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md).|  
   
-|Перечисления|Описание:|  
+|Перечисления|Описание|  
 |------------------|-----------------|  
 |[Перечисление PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md)|Указывает типы событий, которые должны быть профилированы.|  
 |[Перечисление PROFILER_HEAP_ENUM_FLAGS](../../winscript/reference/profiler-heap-enum-flags-enumeration.md)|Флаги, представляющие ли предоставляется дополнительную информацию об объекте кучи, на который указывает указатель в объектном отношении. Используется в [метод IActiveScriptProfilerControl5::EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md).|  
@@ -38,7 +38,7 @@ ms.locfileid: "58154729"
 |[Перечисление PROFILER_RELATIONSHIP_INFO](../../winscript/reference/profiler-relationship-info-enumeration.md)|Представляет сведения об объекте в связи. Используется в [структура PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).|  
 |[Перечисление PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md)|Указывает тип скрипта.|  
   
-|Структуры|Описание:|  
+|Структуры|Описание|  
 |----------------|-----------------|  
 |[Структура PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md)|Представляет объекты кучи для сбора [метод IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).|  
 |[Структура PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md)|Представляет Дополнительные сведения об объектах в куче.|  

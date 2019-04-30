@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9126a0d3bb552f525247cbfb2243504a1effaa92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435471"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Практическое руководство. Создать модель BDC
   Можно создать модель бизнес-данным (BDC) с помощью шаблона для данного типа элементов и последующим добавлением модели в любой проект SharePoint. Дополнительные сведения см. в разделе [Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md). Дополнительные сведения о способах проектирования модели см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60106661"
 1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
     > [!NOTE]
-    >  Если интерфейс IDE настроен на использование параметров разработки Visual Basic, выберите **файл** > **новый проект**.
+    > Если интерфейс IDE настроен на использование параметров разработки Visual Basic, выберите **файл** > **новый проект**.
 
      Откроется диалоговое окно **Новый проект** .
 
@@ -43,7 +43,7 @@ ms.locfileid: "60106661"
      Вы протестируете модель на сайте SharePoint, который вы указали.
 
     > [!IMPORTANT]
-    >  Необходимо развернуть проект как решение фермы, поскольку модели BDC поддерживают только решения фермы.
+    > Необходимо развернуть проект как решение фермы, поскольку модели BDC поддерживают только решения фермы.
 
      Создается пустой проект SharePoint.
 

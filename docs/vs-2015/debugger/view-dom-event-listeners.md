@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437687"
 ---
 # <a name="view-dom-event-listeners"></a>Просмотр прослушивателей событий DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60110483"
  В списке на **события** вкладке является динамическим. Если добавить прослушиватель событий во время выполнения приложения, в списке появится новый прослушиватель событий. Сведения о добавлении и удалении прослушивателей событий см. в разделе [советы по решению проблем с прослушивателями событий](#Tips) в этом разделе.
 
 > [!NOTE]
->  Прослушиватели событий для элементов кода, которые не являются элементами DOM, таких как `xhr`, не отображаются на **события** вкладки.
+> Прослушиватели событий для элементов кода, которые не являются элементами DOM, таких как `xhr`, не отображаются на **события** вкладки.
 
 ## <a name="view-event-listeners-for-dom-elements"></a>Просмотр прослушивателей событий для элементов DOM
  В этом примере показано приложение Магазина Windows Phone. Описанные здесь возможности проводника DOM также поддерживаются для приложений Магазина Windows.

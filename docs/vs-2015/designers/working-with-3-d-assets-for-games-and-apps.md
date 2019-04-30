@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90bf88beafee6f263695b3614cf6385419b33efe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 020c934d3427dda77c41fb410143972d6f48656b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438103"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Работа с трехмерными ресурсами для игр и приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "54797599"
  Вы можете использовать конструктор шейдеров [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], который представляет собой основанное на графах средство разработки шейдеров, чтобы создавать настраиваемые визуальные эффекты без навыков HLSL-программирования.  
   
 > [!NOTE]
->  Дополнительные сведения о том, как начать программировать на DirectX, см. в разделе [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Дополнительные сведения об отладке приложений на основе DirectX см. в разделе [Диагностика графики (отладка графики DirectX)](../debugger/visual-studio-graphics-diagnostics.md).  
+> Дополнительные сведения о том, как начать программировать на DirectX, см. в разделе [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Дополнительные сведения об отладке приложений на основе DirectX см. в разделе [Диагностика графики (отладка графики DirectX)](../debugger/visual-studio-graphics-diagnostics.md).  
   
 ## <a name="directx-version-compatibility"></a>Совместимость версий DirectX  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] использует DirectX для отрисовки двумерных и трехмерных ресурсов. Вы можете выбрать отрисовщик DirectX 11 или программный отрисовщик WARP (Windows Advanced Rasterization Platform). Отрисовщик DirectX 11 обеспечивает высокопроизводительную отрисовку с аппаратным ускорением на базе GPU с поддержкой DirectX 11 и DirectX 10 Отрисовщик WARP позволяет убедиться, что ваш ресурс работает на широком спектре компьютеров, включая компьютеры с устаревшим или интегрированным графическим оборудованием. Дополнительные сведения о WARP см. в [руководстве по Windows Advanced Rasterization Platform (WARP)](http://go.microsoft.com/fwlink/p/?LinkId=224634).  

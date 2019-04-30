@@ -11,12 +11,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441515"
 ---
 # <a name="configuration-options-overview"></a>Общие сведения о параметрах конфигурации
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58991377"
 |MyConfig|Н/Д|\<Параметры MyConfig Win64 >|  
   
 > [!NOTE]
->  Не удается создать конфигурацию решения «MyConfig», которая исключает платформы «Win32», если проект, который вы используете не поддерживает Win32.  
+> Не удается создать конфигурацию решения «MyConfig», которая исключает платформы «Win32», если проект, который вы используете не поддерживает Win32.  
   
  Изменение активной конфигурации решения выбирает набор конфигурации проекта, которые являются сборки, запуска, отладки или развертывания в этом решении. Например при изменении активной конфигурации решения с выпуска для отладки, все проекты в этом решении будет автоматически создана с конфигурацией проекта, указанного в конфигурации отладки решения. Конфигурации проектов обычно также именованный отладки, если пользователь внес изменения, вносимые вручную в среде Configuration Manager.  
   

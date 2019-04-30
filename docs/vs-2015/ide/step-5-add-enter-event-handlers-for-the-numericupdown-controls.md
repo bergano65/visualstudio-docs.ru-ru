@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e5956414b7d298c5bf198d6e1e7daf3bceb6638
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 970f0d592eca22b6f07bc4f938edcd0370ecf9d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434028"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60056371"
 В пятой части этого учебника вам предстоит добавить обработчики событий "Ввод", чтобы сделать ввод ответов на задачи головоломки немного удобнее. Этот код будет выделять и удалять текущее значение в каждом элементе управления NumericUpDown, как только игрок выберет элемент управления и начнет вводить другое значение.  
   
 > [!NOTE]
->  Этот раздел входит в серию учебников, посвященных основам написания кода. Общие сведения об учебнике см. в разделе [Руководство 2. Создание математической викторины](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Этот раздел входит в серию учебников, посвященных основам написания кода. Общие сведения об учебнике см. в разделе [Руководство 2. Создание математической викторины](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-verify-the-default-behavior"></a>Проверка поведения по умолчанию  
   

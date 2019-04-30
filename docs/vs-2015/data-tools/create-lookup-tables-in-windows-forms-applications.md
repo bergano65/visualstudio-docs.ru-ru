@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: adea3666c3f8b8d78c37b32a1a42f7f8b270369c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431172"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Создание таблиц подстановки в приложениях Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60102982"
 2. Разверните узлы в **источников данных** окно, пока не будут видны в родительской таблице и все ее столбцы и связанной дочерней таблицы и все ее столбцы.  
   
     > [!NOTE]
-    >  Узел дочерней таблицы является узел, который отображается в виде расширяемый дочерний узел в родительской таблице.  
+    > Узел дочерней таблицы является узел, который отображается в виде расширяемый дочерний узел в родительской таблице.  
   
 3. Измените тип удаления для дочерней таблицы **сведения** , выбрав **сведения** в списке элементов управления на узле дочерней таблицы. Дополнительные сведения см. в разделе [задать для элемента управления создается при перетаскивании из окна источников данных](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   

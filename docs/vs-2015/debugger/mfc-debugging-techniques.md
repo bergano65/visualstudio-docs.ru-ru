@@ -27,12 +27,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92718187fd8c83eb20ce8b39d323d60434f5f48f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a55b78cfa962abe4a1eecf778be9cdc6de3aa6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384068"
 ---
 # <a name="mfc-debugging-techniques"></a>Методы отладки MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -236,10 +236,10 @@ Total allocations: 67 bytes
  В программе MFC можно использовать [CMemoryState::DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) для помещения в дамп описания всех объектов в куче, которые не были освобождены. `DumpAllObjectsSince` помещает в дамп все объекты, размещенные с момента последней проверки состояния памяти [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Если вызова `Checkpoint` не было, `DumpAllObjectsSince` отображает все объекты и не-объекты, находящиеся в памяти на данный момент.  
   
 > [!NOTE]
->  Перед тем как использовать функцию создания дампа объектов MFC, необходимо [включить диагностическую трассировку](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
+> Перед тем как использовать функцию создания дампа объектов MFC, необходимо [включить диагностическую трассировку](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
   
 > [!NOTE]
->  MFC автоматически отображает все потерянные объекты при выходе из программы, поэтому в точке выхода не нужно создавать для этого дополнительный код.  
+> MFC автоматически отображает все потерянные объекты при выходе из программы, поэтому в точке выхода не нужно создавать для этого дополнительный код.  
   
  Следующий код — тест на утечку памяти путем сравнения двух состояний памяти и отображения всех объектов, если таковая обнаружилась.  
   

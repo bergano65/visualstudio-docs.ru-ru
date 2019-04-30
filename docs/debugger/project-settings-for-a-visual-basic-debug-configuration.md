@@ -23,18 +23,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a2c4a2cb44e2e93f4a09f26a7aa53623542567e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: f6d948595dcf34bba32708f04e4bdf2f16ba1166
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408667"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 Можно изменять параметры проекта для настройки отладки [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] в окне **Страницы свойств**, как описано в разделе [Настройка отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, в каком месте окна **Страницы свойств** можно найти параметры, связанные с отладчиком.
 
 > [!WARNING]
->  Этот раздел не распространяется на приложения универсальной платформы Windows. См. в разделе [начать сеанс отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Этот раздел не распространяется на приложения универсальной платформы Windows. См. в разделе [начать сеанс отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ### <a name="debug-tab"></a>Вкладки отладчика
 
@@ -57,5 +57,5 @@ ms.locfileid: "56720878"
 | **Определить константу DEBUG** | Определение этого символа разрешает условную компиляцию функций вывода из [класса Debug](/dotnet/api/system.diagnostics.debug). Если этот символ определен, методы класса Debug выводят информацию в [окно вывода](../ide/reference/output-window.md). Если этот символ не определен, методы класса Debug не компилируются и выходные данные не создаются. Этот символ должен определяться в отладочной версии и не должен определяться в окончательном выпуске программы. При задании этого символа для окончательного выпуска программы будет создаваться ненужный код, замедляющий ее работу. |
 | **Определить константу TRACE** | Определение этого символа разрешает условную компиляцию функций вывода из [класса Trace](/dotnet/api/system.diagnostics.trace). Если этот символ определен, методы класса Trace выводят информацию в [окно вывода](../ide/reference/output-window.md). Если этот символ не определен, методы класса Trace не компилируются и выходные данные не создаются. Этот символ определяется по умолчанию для обоих версий — отладочной и окончательной. |
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)
