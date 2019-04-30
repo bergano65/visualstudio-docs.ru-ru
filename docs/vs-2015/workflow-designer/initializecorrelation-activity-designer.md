@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 383a2e892c8f0962ab8c09d5e8984d3cc570ebaa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979986"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Конструктор действия InitializeCorrelation
 **InitializeCorrelation** конструктора действий используется для создания и настройки <xref:System.ServiceModel.Activities.InitializeCorrelation> действие, которое используется для соотнесения сообщений перед их отправкой или получением.  

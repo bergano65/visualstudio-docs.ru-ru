@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0135d9f782976f1d6ad6e2e09dc95c27cc66d846
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976736"
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>Отладка рабочих процессов с помощью конструктора рабочих процессов
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] предусматривает возможность отладки рабочих процессов и пользовательских действий. Процесс и поведение те же, что и для отладчика [!INCLUDE[vs2010](../includes/vs2010-md.md)] по умолчанию. Пункты в этом разделе описывают, как выполнять традиционные процедуры отладки и производить отладку XAML и выражений.  
