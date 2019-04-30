@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0ae7ed434d2f76036f0409fe21d4dd1493cd28b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979475"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Пошаговые руководства по разработке для SharePoint
   В следующем примере демонстрируются способы разработки и развертывания решений SharePoint с помощью [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 ## <a name="general"></a>Общие
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Пошаговое руководство: Добавление приемников событий компонентов](../sharepoint/walkthrough-add-feature-event-receivers.md)|Описывает способы добавления приемников событий компонентов, которые представляют собой методы, которые выполняются при функцию установлен, активирован, деактивирован или удален.|
 |[Пошаговое руководство: Создание столбца сайта, тип содержимого и списка для SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Демонстрируется создание настраиваемого поля, типа содержимого, определения списка из типа содержимого и экземпляр списка.|
@@ -33,21 +33,21 @@ ms.locfileid: "56619996"
 
 ## <a name="import-wizard"></a>Мастер импорта
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Пошаговое руководство: Импорт рабочего процесса для повторного использования SharePoint Designer в Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Демонстрирует импорт рабочего процесса повторного использования, созданные в SharePoint Designer 2010 в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта рабочего процесса SharePoint.|
 |[Пошаговое руководство: Импорт элементов из существующего сайта SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)|Демонстрирует импорт элементов из существующего сайта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint.|
 
 ## <a name="web-parts"></a>Веб-частей
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Пошаговое руководство: Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Показано, как создать веб-части с помощью **веб-часть** шаблона элемента в Visual Studio.|
 |[Пошаговое руководство: Создание веб-части для SharePoint с помощью конструктора](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Показано, как создать веб-часть визуально с помощью SharePoint **визуальной веб-части** шаблона проекта в Visual Studio.|
 
 ## <a name="workflows"></a>Рабочие процессы
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Пошаговое руководство: Создание и отладка решения рабочих процессов SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|В этой статье демонстрируется создание шаблона базовый последовательный рабочий процесс.|
 |[Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Показано, как создать базовый последовательный рабочий процесс, использующего формы связывания и запуска.|
@@ -57,14 +57,14 @@ ms.locfileid: "56619996"
 
 ## <a name="application-pages"></a>Страницы приложения
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Пошаговое руководство: Добавление страницы приложения в рабочий процесс](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Демонстрируется добавление страницы приложения, отображаются данные, извлекаемые из рабочего процесса в проект рабочего процесса.|
 |[Пошаговое руководство: Создание страницы приложения SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Показано, как создать страницу приложения и отладку этой страницы с помощью локального сайта SharePoint.|
 
 ## <a name="business-data-connectivity"></a>Подключение к данным для бизнеса
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Пошаговое руководство: Создание внешнего списка в SharePoint с помощью бизнес-данных](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Показано, как создать модель для службы BDC, которая возвращает сведения о контактах в образце базы данных.|
 
@@ -88,7 +88,7 @@ ms.locfileid: "56619996"
 
 ## <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Расширение узла подключений SharePoint в обозревателе серверов
 
-|Раздел|Описание:|
+|Раздел|Описание|
 |-----------|-----------------|
 |[Пошаговое руководство: Расширения обозревателя сервера для отображения веб-частей](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Показано, как добавить новые узлы для отображения веб-частей на сайтах SharePoint, которые отображаются в обозревателе серверов. В этом пошаговом руководстве также показано, как создать команду SharePoint для вызова объектной модели SharePoint server.|
 |[Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Показано, как добавить новые узлы для отображения веб-частей на сайтах SharePoint, которые отображаются в обозревателе серверов. В этом пошаговом руководстве также показано, как использовать клиентскую объектную модель SharePoint.|

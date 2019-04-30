@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8befb3da4e4b6f060a5f58aedec3604afe70aefb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992013"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
 Возвращает одно из стандартных внести в скрипт статистику.  
@@ -41,7 +41,7 @@ HRESULT GetStat(
  `stid`  
  [in] Указывает, какой статистики для возврата. Должен иметь значение:  
   
-|Константа|Значение|Описание:|  
+|Константа|Значение|Описание|  
 |--------------|-----------|-----------------|  
 |SCRIPTSTAT_STATEMENT_COUNT|1|Возвращает число инструкций, поскольку в сценарий, запущенный или сброса статистики.|  
   
@@ -54,7 +54,7 @@ HRESULT GetStat(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Возможные значения включают, но не ограничиваются значения в таблице ниже.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

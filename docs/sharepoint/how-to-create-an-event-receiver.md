@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966761"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Практическое руководство. Создание приемника событий
   Создав *приемников событий*, может отвечать, когда пользователь взаимодействует с элементами SharePoint, такие как списки или элементы списка. Например, код приемника событий может сработать, если пользователь изменит календарь или удалит имя из списка контактов. Следуя описанным в этом разделе процедурам, можно узнать, как добавить приемник событий в экземпляр списка.

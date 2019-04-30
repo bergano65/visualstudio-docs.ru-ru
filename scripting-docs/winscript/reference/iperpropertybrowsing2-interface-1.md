@@ -18,18 +18,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 156cf9a1e104b8a2d7ffe4e48bd39642ef1abbd0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944901"
 ---
 # <a name="iperpropertybrowsing2-interface-1"></a>Интерфейс IPerPropertyBrowsing2 1
 Обращается к сведения на страницах свойств, предлагаемых объекта.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |`GetDisplayString`|Возвращает текстовую строку, описывающую указанного свойства.|  
 |`MapPropertyToPage`|Возвращает идентификатор CLSID страницы свойств, позволяющая управлять указанное свойство.|  

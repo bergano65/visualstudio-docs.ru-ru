@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4a84d295a47d3391f27e7101ad815dca0c910aa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981412"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Пошаговое руководство. Создание вашей первой надстройки VSTO для проекта
   В этом пошаговом руководстве показано, как создать надстройку VSTO для Microsoft Office Project. Функции, создаваемые в таком решении, доступны для самого приложения независимо от того, какие проекты открыты. Дополнительные сведения см. в разделе [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).

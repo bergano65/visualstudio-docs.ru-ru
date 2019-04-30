@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6860a91067daa6da1d4223ae5060385087ad3433
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967335"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties - элемент
   Коллекция значений свойств, которые входят в состав компонентом при его развертывании в SharePoint. После развертывания функции значения свойств можно использовать в коде.
@@ -38,13 +38,13 @@ ms.locfileid: "58323533"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[FeatureProperty](../sharepoint/featureproperty-element.md)|Необязательный элемент.<br /><br /> Представляет пользовательское свойство, в формате ключ/значение.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Представляет элемент проекта SharePoint. Этот элемент обязательный корневой элемент из `.spdata` файла.|
 
@@ -53,7 +53,7 @@ ms.locfileid: "58323533"
 
 ## <a name="element-information"></a>Сведения об элементе
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |**Пространство имен**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Имя схемы**|Схема элемента проекта SharePoint|

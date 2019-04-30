@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 73cc930e6ec21694cf6c5df8e68cbe17ca469291
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976976"
 ---
 # <a name="creating-legacy-workflow-projects"></a>Создание проектов рабочих процессов для прежних версий
 В данном разделе описывается создание проектов рабочих процессов с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] более ранней версии, предоставляемого средой vs2010. Средство [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий ориентировано на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Он содержит сведения об использовании шаблонов проектов рабочего процесса, которые представлены в таблице ниже.  

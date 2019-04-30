@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961495"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Практическое руководство. Изменение размера элементов управления внутри ячеек листа Excel
   При изменении размера столбцов или строк на листе, все элементы управления ведущего приложения в ячейках автоматическое изменение размера высоты или ширины ячейки, который был изменен. Элементы управления Windows Forms не меняют размер автоматически по умолчанию.

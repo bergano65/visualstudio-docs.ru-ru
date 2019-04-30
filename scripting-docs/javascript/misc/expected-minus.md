@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e897133b39110f65dfadc091f77855cfef1f6f6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934903"
 ---
 # <a name="expected--"></a>Ожидалось "-"
 Предпринята попытка создать регулярное выражение литерала, но не содержит одно из символы косой черты (/). Так же, как строковые литералы записываются в виде символов, заключенный в кавычки, литералы регулярных выражений представляют собой символы, заключенный в символы косой черты (/).  

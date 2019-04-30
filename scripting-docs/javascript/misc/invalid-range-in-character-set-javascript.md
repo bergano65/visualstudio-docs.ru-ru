@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1cbfa4de401c2a1dc0626f8f00dbb0bd1bf24408
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007052"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Недопустимый диапазон в наборе символов (JavaScript)
 Предпринята попытка создать регулярное выражение с диапазоном набора недопустимый символ. Наборов символов должно находиться в диапазоне от одного символа, например, a – z или 0-9; Классы символов, таких как \w нельзя включить в набор символов. Первый символ в диапазоне, также должны следовать после второго знака в диапазоне. Пример:  

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 284b7f501d729a89ff31ab9fee187d3f3e19d4b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982099"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Пошаговое руководство. Изменение форматирования документа с использованием элементов управления CheckBox
   В этом пошаговом руководстве демонстрируется использование элементов управления Windows Forms в настройке уровня документа для Microsoft Office Word для изменения форматирования текста.

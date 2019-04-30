@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f5de8be3463ff0e96d516c8dec592d0aff3cfc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981439"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Пошаговое руководство. Создание первой надстройки VSTO для Excel
   В этом вводном пошаговом руководстве показано, как создавать надстройки уровня приложения для Microsoft Office Excel. Функции, создаваемые в подобном решении, доступны для приложения независимо от того, какие книги открыты.
