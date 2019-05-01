@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fcfcc2aed0fedefdc149b83e911d33cd3b54cdef
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977634"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>Интерфейс IMachineDebugManagerEvents
 Сигнализирует об изменениях в списке запущенных приложений, формируемом диспетчером отладки. Этот интерфейс может использоваться отладчиком интегрированной среды разработки для отображения динамического списка приложений.  

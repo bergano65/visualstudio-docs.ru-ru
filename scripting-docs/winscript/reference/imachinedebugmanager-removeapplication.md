@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ee70097ab87406d6ad39b244bdec61a72aea836
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977556"
 ---
 # <a name="imachinedebugmanagerremoveapplication"></a>IMachineDebugManager::RemoveApplication
 Удаляет приложение из выполняемого список приложений.  
@@ -42,7 +42,7 @@ HRESULT RemoveApplication(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

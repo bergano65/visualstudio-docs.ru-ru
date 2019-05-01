@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c9bf341adeaeb17c8986b1b30b12f58113aef562
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979000"
 ---
 # <a name="idebugsessionproviderex-interface"></a>Интерфейс IDebugSessionProviderEx
 Основной интерфейс, предоставляемый с помощью отладчика интегрированной среды разработки для отладки узла и инициирован языка. Он устанавливает сеанс отладки для запущенного приложения. Этот интерфейс реализуется диспетчера отладки.  
@@ -25,7 +25,7 @@ ms.locfileid: "58146777"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IDebugSessionProviderEx:CanJITDebug](../../winscript/reference/idebugsessionproviderex-canjitdebug.md)|Определяет, возможна ли отладка Just In Time с указанным приложением.|  
 |[IDebugSessionProviderEx:StartDebugSession](../../winscript/reference/idebugsessionproviderex-startdebugsession.md)|Инициирует сеанс отладки с указанным приложением.|

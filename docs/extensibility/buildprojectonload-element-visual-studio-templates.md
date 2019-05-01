@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 41baf6b8405e45600050e508b7fd7523e19533ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926597"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Элемент buildProjectOnload (шаблоны Visual Studio)
 Основана только новые проекты, как создать и добавить их в решение. Все решение не создается.
@@ -44,7 +44,7 @@ ms.locfileid: "55025726"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |`TemplateData`|Определяет, демонстрирующая ее отображение в обоих категорию шаблона и **новый проект** и **Добавление нового элемента** диалоговым окнам.|
 

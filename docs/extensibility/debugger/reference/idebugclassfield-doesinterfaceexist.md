@@ -1,51 +1,52 @@
 ---
 title: IDebugClassField::DoesInterfaceExist | Документация Майкрософт
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugClassField::DoesInterfaceExist
 helpviewer_keywords:
 - IDebugClassField::DoesInterfaceExist method
 ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 7884bff62321ed07c3a11a6db65855b1edea0adc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922628"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
-Определяет, если конкретный интерфейс определен в классе.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Синтаксис
-
-```cpp
-HRESULT DoesInterfaceExist( 
-   LPCOLESTR pszInterfaceName
-);
-```
-
-```csharp
-int DoesInterfaceExist(
-   [In] string pszInterfaceName
-);
-```
-
-#### <a name="parameters"></a>Параметры
- `pszInterfaceName`
-
- [in] Строка, содержащая искомое имя интерфейса.
-
-## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает значение S_OK, возвращает S_FALSE, если интерфейс не существует. в противном случае возвращает код ошибки.
-
-## <a name="remarks"></a>Примечания
- Этот метод фактически возвращает перечисление всех интерфейсов и выполняет поиск соответствующего интерфейса по списку.
-
-## <a name="see-also"></a>См. также
-- [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
+Определяет, если конкретный интерфейс определен в классе.  
+  
+## <a name="syntax"></a>Синтаксис  
+  
+```cpp#  
+HRESULT DoesInterfaceExist(   
+   LPCOLESTR pszInterfaceName  
+);  
+```  
+  
+```csharp  
+int DoesInterfaceExist(  
+   [In] string pszInterfaceName  
+);  
+```  
+  
+#### <a name="parameters"></a>Параметры  
+ `pszInterfaceName`  
+ [in] Строка, содержащая искомое имя интерфейса.  
+  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает значение S_OK, возвращает S_FALSE, если интерфейс не существует. в противном случае возвращает код ошибки.  
+  
+## <a name="remarks"></a>Примечания  
+ Этот метод фактически возвращает перечисление всех интерфейсов и выполняет поиск соответствующего интерфейса по списку.  
+  
+## <a name="see-also"></a>См. также  
+ [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

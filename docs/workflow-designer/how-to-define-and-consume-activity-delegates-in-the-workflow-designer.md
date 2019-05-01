@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949527"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Практическое руководство. Определение и использование делегатов действий в конструкторе рабочих процессов
 
@@ -70,17 +70,17 @@ ms.locfileid: "58415815"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Использование настраиваемого действия в рабочем процессе
 
-1.  Постройте проект, нажав клавишу **Ctrl**+**Shift**+**B**.
+1. Постройте проект, нажав клавишу **Ctrl**+**Shift**+**B**.
 
-2.  В **обозревателе решений**откройте **Workflow1.xaml** в конструкторе.
+2. В **обозревателе решений**откройте **Workflow1.xaml** в конструкторе.
 
-3.  Перетащите **MyForEach** действия из области элементов в область конструктора. Действие находится в разделе области элементов с тем же именем, что и проект.
+3. Перетащите **MyForEach** действия из области элементов в область конструктора. Действие находится в разделе области элементов с тем же именем, что и проект.
 
-4.  Задайте **элементы** свойство **MyForEach** действие **new Object [] {1, «abc»}**.
+4. Задайте **элементы** свойство **MyForEach** действие **new Object [] {1, «abc»}**.
 
-5.  Перетащите <xref:System.Activities.Statements.WriteLine> действия из **примитивы** панели элементов для **Delegate: текст** раздел **MyForEach** действия.
+5. Перетащите <xref:System.Activities.Statements.WriteLine> действия из **примитивы** панели элементов для **Delegate: текст** раздел **MyForEach** действия.
 
-6.  Задайте **текст** свойство <xref:System.Activities.Statements.WriteLine> действие **Argument.ToString()**.
+6. Задайте **текст** свойство <xref:System.Activities.Statements.WriteLine> действие **Argument.ToString()**.
 
 При выполнении рабочего процесса, в консоли отображаются следующие выходные данные:
 

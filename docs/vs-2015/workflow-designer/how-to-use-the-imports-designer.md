@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f1c305129a7f46c8d1841f28d8084535ec7e4d9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931034"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Практическое руководство. использовать конструктор импорта
 Конструктор импорта позволяет вводить пространства имен для типов, используемых в выражениях. Подобно тому как **импортирует** или **с помощью** ключевые слова в Visual Basic .NET и C#, указание пространств имен в конструктор импорта позволяют просто укажите имя типа в выражении, а не полное имя Имя типа версии.  
