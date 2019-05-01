@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2a231818def210f7c88ab031059f8561c67b33d1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944239"
 ---
 # <a name="iremotedebugapplication-interface"></a>Интерфейс IRemoteDebugApplication
 Представляет выполняющееся приложение. Он не должен соответствуют это процесс операционной системы. Как правило отладчик обращается приложение для отладки. Диспетчер отладки процессов обычно реализует объект приложения.  
@@ -27,7 +27,7 @@ ms.locfileid: "58159157"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|По-прежнему приложение, которое в настоящее время находится в точке останова.|  
 |[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Предписывает приложению переключиться в режим отладчика при первой возможности.|  

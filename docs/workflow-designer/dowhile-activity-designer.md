@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a0069d352897d2d98288988d549d9733a39b2c35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949738"
 ---
 # <a name="dowhile-activity-designer"></a>Конструктор действия DoWhile
 
@@ -28,7 +28,7 @@ ms.locfileid: "55918368"
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Statements.DoWhile.Body%2A>|False|Действие, которое выполняется, пока условие имеет **true**. Чтобы добавить <xref:System.Activities.Statements.DoWhile.Body%2A> действие, перетащите его из области элементов в **текст** поле **DoWhile** конструктора действий с текстом подсказки «Перетащить действие сюда».|
-|<xref:System.Activities.Statements.DoWhile.Condition%2A>|Да|Условие оценивается после каждой итерации цикла. Чтобы задать <xref:System.Activities.Statements.DoWhile.Condition%2A>, введите выражение Visual Basic в **условие** поле **DoWhile** действие конструктора или в сетке свойств.|
+|<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|Условие оценивается после каждой итерации цикла. Чтобы задать <xref:System.Activities.Statements.DoWhile.Condition%2A>, введите выражение Visual Basic в **условие** поле **DoWhile** действие конструктора или в сетке свойств.|
 
 ## <a name="see-also"></a>См. также
 

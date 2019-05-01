@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 16c785534b843977f28c9a1383ac93f33e216947
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908956"
 ---
 # <a name="source-control-integration-essentials"></a>Основные элементы интеграции системы управления версиями
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поддерживает два типа интеграция системы управления версиями: подключаемый модуль источника управления, который предоставляет базовые функциональные возможности и построен с использованием источника управления Plug-in API (прежнее название MSSCCI API) и интеграции решения управления исходный пакет VSPackage, предоставляет функциональные возможности более надежной.

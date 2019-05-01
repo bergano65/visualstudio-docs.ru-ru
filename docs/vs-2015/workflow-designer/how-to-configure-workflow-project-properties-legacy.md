@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f551b868b415eaf600a9345aff4ac4f0d61ff234
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931074"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Практическое руководство. Настройка свойств проекта рабочего процесса (для прежних версий)
 Следующие действия позволяют просмотреть или изменить свойства, которые связаны с проектами рабочего процесса.  
