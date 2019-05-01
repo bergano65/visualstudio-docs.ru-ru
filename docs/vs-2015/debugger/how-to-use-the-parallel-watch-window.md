@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b588168b62a9219d0de703a5deb6dbe153df6305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445085"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Практическое руководство. Использование окна параллельных контрольных значений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60050314"
 - Настраиваемый столбец, который может отображать компьютер, процесс, блок потоков, задачу и поток.  
   
   > [!TIP]
-  >  Необходимо открыть **параллельной задачи** окно, чтобы отобразить сведения о задаче в **контроль параллельных данных** окна.  
+  > Необходимо открыть **параллельной задачи** окно, чтобы отобразить сведения о задаче в **контроль параллельных данных** окна.  
   
 -  **\<Добавить контрольное значение >** столбца, в котором можно ввести выражения для просмотра.  
   
@@ -90,4 +90,4 @@ ms.locfileid: "60050314"
 ## <a name="see-also"></a>См. также  
  [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Практическое руководство. Использование окна потоков GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Пошаговое руководство: Отладка приложения C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Пошаговое руководство: отладка приложения C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
