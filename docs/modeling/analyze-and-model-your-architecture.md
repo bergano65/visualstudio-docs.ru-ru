@@ -3,39 +3,26 @@ title: Анализ и моделирование архитектуры
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio Ultimate, exploring code
-- Visual Studio Ultimate, visualizing code
 - diagrams - modeling
-- Visual Studio ALM, modeling
-- application, design
 - architecture
 - code visualization
 - application design
-- applications, architecture
 - code exploration
-- Visual Studio ALM, exploring code
 - modeling
 - application architecture
-- application, modeling
-- applications, modeling
 - architecture [Visual Studio ALM], modeling
 - application modeling
-- Visual Studio Ultimate, modeling
-- architecture [Visual Studio Ultimate], modeling
-- application, architecture
-- Visual Studio ALM, visualizing code
-- applications, designing
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 253f86f83805d11d7a1a6475fcbaf4eb76bfbc50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: be731ea81baaaa6e9f04b7546bc26ccea0549389
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62795673"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476631"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Анализ и моделирование архитектуры
 
@@ -49,22 +36,23 @@ ms.locfileid: "62795673"
 
 См. в разделе [сценария: Изменение проекта с помощью визуализации и моделирования](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
 
-## <a name="to"></a>Кому
+## <a name="article-reference"></a>Справочник по статье
 
 |||
 |-|-|
-|**Визуализация кода**<br /><br /> — См. в разделе организации и отношений в коде путем создания карт кода. Визуализация зависимостей между сборками, пространствами имен, классами, методами и т. д.<br />— См. в разделе структуры и членов классов для конкретного проекта путем создания схем классов из кода.<br />-Найти конфликты между кодом и дизайном путем создания схем зависимостей для проверки кода.|-   [Визуализация кода](../modeling/visualize-code.md)<br />-   [Работа с классами и другими типами (конструктор классов)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />-   [Видео: Понимание разработки из кода с помощью карт кода Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Видео: Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
-|**Определение архитектуры**<br /><br /> — Определение и наложение ограничений на зависимости между компонентами кода путем создания схем зависимостей.|-   [Видео: Проверка зависимостей архитектуры с помощью Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Проверка системы на соответствие требованиям и намеченной структуре**<br /><br /> — Проверка зависимостей кода с помощью схем зависимостей, которые описывают предполагаемую архитектуру и предотвратить изменения, которые могут конфликтовать с проектом.|-   [Видео: Проверка зависимостей архитектуры с помощью Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Настройка моделей и схем**<br /><br /> -Создание собственных доменных языков.|-   [Пакет SDK моделирования для Visual Studio — доменные языки](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
-|**Создание текстов с помощью шаблонов T4**<br /><br /> -Использование блоков текста и контроль логики внутри шаблонов для создания текстовых файлов.<br /> -Сборки шаблонов T4 с помощью MSBuild, входящих в Visual Studio|-   [Создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md)|
-|**Совместное использование моделей, схем и карт кода с помощью системы управления версиями Team Foundation**<br /><br /> -Поместить карт кода, проектов и схем зависимостей в системе управления версиями Team Foundation, вы можете использовать их.| |
+|**Визуализация кода**<br /><br />— См. в разделе организации и отношений в коде путем создания карт кода. Визуализация зависимостей между сборками, пространствами имен, классами, методами и т. д.<br />— См. в разделе структуры и членов классов для конкретного проекта путем создания схем классов из кода.<br />-Найти конфликты между кодом и дизайном путем создания схем зависимостей для проверки кода.|- [Визуализация кода](../modeling/visualize-code.md)<br />- [Работа с классами и другими типами (конструктор классов)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />- [Видео: Понимание разработки из кода с помощью карт кода Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />- [Видео: Проверка зависимостей архитектуры в режиме реального времени](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
+|**Определение архитектуры**<br /><br />— Определение и наложение ограничений на зависимости между компонентами кода путем создания схем зависимостей.|- [Видео: Проверка зависимостей архитектуры с помощью Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**Проверка системы на соответствие требованиям и намеченной структуре**<br /><br />— Проверка зависимостей кода с помощью схем зависимостей, которые описывают предполагаемую архитектуру и предотвратить изменения, которые могут конфликтовать с проектом.|- [Видео: Проверка зависимостей архитектуры с помощью Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**Настройка моделей и схем**<br /><br />-Создание собственных доменных языков.|- [Пакет SDK моделирования для Visual Studio — доменные языки](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
+|**Создание текстов с помощью шаблонов T4**<br /><br />-Использование блоков текста и контроль логики внутри шаблонов для создания текстовых файлов.<br /> -Сборки шаблонов T4 с помощью MSBuild, входящих в Visual Studio|- [Создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md)|
+|**Совместное использование моделей, схем и карт кода с помощью системы управления версиями Team Foundation**<br /><br />-Поместить карт кода, проектов и схем зависимостей в системе управления версиями Team Foundation, вы можете использовать их.| |
 
 Чтобы узнать, какие выпуски Visual Studio поддерживают каждую функцию, см. в разделе [Edition поддержка для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
 ## <a name="types-of-models-and-typical-uses"></a>Типы моделей и типичные способы применения
 
 ### <a name="code-maps"></a>Карты кода
+
 Карты кода помогают увидеть структуру кода и имеющиеся в нем отношения.
 
 **Типичные способы применения:**
@@ -77,8 +65,9 @@ ms.locfileid: "62795673"
 - [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-### <a name="dependency-diagram"></a>Диаграмма зависимостей
-Схемы зависимостей позволяют определить структуру приложения как набор слоев или блоков с явно заданными зависимостями. Можно выполнить проверку для обнаружения конфликтов между зависимостями в коде и зависимостями, описанными в схеме зависимостей.
+### <a name="dependency-diagrams"></a>Схемы зависимостей
+
+Схемы зависимостей позволяют определить структуру приложения как набор слоев или блоков с явно заданными зависимостями. Динамическая проверка показывает конфликты между зависимостями в коде и зависимостями, описанными в схеме зависимостей.
 
 **Типичные способы применения:**
 
@@ -92,7 +81,8 @@ ms.locfileid: "62795673"
 - [Проверка кода по схемам зависимостей](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Предметно-ориентированный язык
-Предметно-ориентированный язык представляет собой нотацию, разработанную для определенной цели. В Visual Studio обычно используется графическая нотация.
+
+Предметно-ориентированный язык представляет собой нотацию, разработанную для определенной цели. В Visual Studio он обычно используется графическая нотация.
 
 **Типичные способы применения:**
 
@@ -102,10 +92,6 @@ ms.locfileid: "62795673"
 **См. в разделе:**
 
 - [SDK моделирования для Visual Studio — доменные языки](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-## <a name="where-can-i-get-more-information"></a>Где можно получить дополнительные сведения?
-
-[Форум по средствам моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)
 
 ## <a name="see-also"></a>См. также
 
