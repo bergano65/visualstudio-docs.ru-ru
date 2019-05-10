@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6d6ad6fdb995c80043a831bd08aa1294f0fb33e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 43d8bd1a32328c47cd463fc6232466df5bdbd857
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913914"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461025"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Эта структура представляет собой адрес методу класса.
@@ -40,18 +43,18 @@ public struct METADATA_ADDRESS_METHOD {
 }
 ```
 
-## <a name="terms"></a>Термины
- tokMethod
+## <a name="members"></a>Участники
+ `tokMethod`\
 
  Идентификатор метода.
 
  [C++] `_mdToken` — `typedef` для 32-разрядных `int`.
 
- dwOffset
+ `dwOffset`\
 
  Смещение от начала класса в этот метод (может представлять смещения в таблице vtable).
 
- Версия хранилища данных
+ `dwVersion`\
 
  Версия метода (это значение является уникальным для поставщика символов).
 

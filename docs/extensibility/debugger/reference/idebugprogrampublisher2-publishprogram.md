@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1553070f9afecf6ce60ac51b94ecb3f05d0eb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869724"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457864"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Этот метод выполняет программу для отладчиков (DEs) и диспетчер отладки сеансов.
@@ -40,16 +43,16 @@ int PublishProgram(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `Engines`
+## <a name="parameters"></a>Параметры
+ `Engines`\
 
  [in] Массив идентификаторов GUID для DEs, которые можно запустить или присоединить к этой программе.
 
- `szFriendlyName`
+ `szFriendlyName`\
 
  [in] Понятное имя для программы (отображается в меню и диалоговых окон, показываемых пользователю).
 
- `pDebuggeeInterface`
+ `pDebuggeeInterface`\
 
  [in] `IUnknown` интерфейс для программы (это значение используется как файл cookie для уникальной идентификации программы; это же значение используется для отмены «публикации» программа)
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab1e9345cf599c4336b202d32fb71a9097fe629
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7dd77065791d36e89c43b51dd8e1494d8e69a369
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913614"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458382"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 Указывает состояние ожидающая точка останова (точку останова, которая еще не привязаны).
@@ -43,14 +46,18 @@ public enum enum_PENDING_BP_STATE { 
 };
 ```
 
-## <a name="members"></a>Участники
- PBPS_NONE заполнитель для нуля. Это значение никогда не возвращается.
+## <a name="fields"></a>Поля
+ `PBPS_NONE`\
+ Заполнитель для нуля. Это значение никогда не возвращается.
 
- PBPS_DELETED указывает, что ожидающая точка останова была удалена.
+ `PBPS_DELETED`\
+ Указывает, что ожидающая точка останова была удалена.
 
- PBPS_DISABLED указывает, ожидающая точка останова была отключена.
+ `PBPS_DISABLED`\
+ Указывает, ожидающая точка останова была отключена.
 
- PBPS_ENABLED указывает, что ожидающая точка останова включена.
+ `PBPS_ENABLED`\
+ Указывает, что ожидающая точка останова включена.
 
 ## <a name="remarks"></a>Примечания
  Использовать в качестве `state` членом [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) структуры.

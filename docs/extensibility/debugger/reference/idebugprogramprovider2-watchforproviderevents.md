@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76baf1330ec63d1032b69fa6cfddce4776742a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869806"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458983"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Позволяет процессу получать уведомления о событиях порт.
@@ -46,8 +49,8 @@ int WatchForProviderEvents(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `Flags`
+## <a name="parameters"></a>Параметры
+ `Flags`\
 
  [in] Сочетание флагов из [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) перечисления. Для этого вызова типичны следующие флаги:
 
@@ -58,23 +61,23 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был подключен к, но не запускается в отладчике.|
 |`PFLAG_REASON_WATCH`|Вызывающая сторона хочет слежения за событиями. Если этот флаг не установлен. затем удаляется событие обратного вызова, и вызывающий объект больше не получает уведомления.|
 
- `pPort`
+ `pPort`\
 
  [in] Порт вызывающий процесс выполняется на.
 
- `processId`
+ `processId`\
 
  [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, содержащую рассматриваемый идентификатор процесса, в которой находится программа.
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in] Массив идентификаторов GUID отладчиков, связанных с процессом.
 
- `guidLaunchingEngine`
+ `guidLaunchingEngine`\
 
  [in] Идентификатор GUID модуля отладки, который запустил процесс (если таковые имеются).
 
- `pEventCallback`
+ `pEventCallback`\
 
  [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) объект, получающий уведомления о событиях.
 

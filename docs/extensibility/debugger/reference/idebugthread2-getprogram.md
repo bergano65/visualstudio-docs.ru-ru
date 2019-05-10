@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d25c438e7779c3589ab2deda5ea78cad9799dd5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 44f673690341c6a20b250f401265fe2db9fd5727
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915562"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224092"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 Возвращает программу, в котором выполняется поток.
@@ -36,8 +39,8 @@ int GetProgram ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppProgram`
+## <a name="parameters"></a>Параметры
+ `ppProgram`\
 
  [out] Возвращает [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу, в которой выполняется данный поток.
 

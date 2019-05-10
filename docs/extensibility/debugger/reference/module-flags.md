@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3ec96c5ba806e6eff735edc8093868b19ebaf5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b090fecf532ef862660b26432e930830cdb1d12b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913839"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460959"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 Используется для описания модуля.
@@ -47,18 +50,24 @@ public enum enum_MODULE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Участники
- MODULE_FLAG_NONE указывает нет модулей.
+## <a name="fields"></a>Поля
+ `MODULE_FLAG_NONE`\
+ Указывает модуль не.
 
- MODULE_FLAG_SYSTEM указывает системном модуле.
+ `MODULE_FLAG_SYSTEM`\
+ Указывает системном модуле.
 
- MODULE_FLAG_SYMBOLS указан модуль символ.
+ `MODULE_FLAG_SYMBOLS`\
+ Задает модуль записи символов.
 
- MODULE_FLAG_64BIT задает 64-разрядного модуля.
+ `MODULE_FLAG_64BIT`\
+ Задает 64-разрядного модуля.
 
- MODULE_FLAG_OPTIMIZED указывает, модуль был оптимизирован. Это состояние отражается в **модули** окна.
+ `MODULE_FLAG_OPTIMIZED`\
+ Указывает, что модуль был оптимизирован. Это состояние отражается в **модули** окна.
 
- MODULE_FLAG_UNOPTIMIZED указывает, модуль не был оптимизирован. Это состояние отражается в **модули** окна. Это состояние по умолчанию.
+ `MODULE_FLAG_UNOPTIMIZED`\
+ Указывает, что модуль не был оптимизирован. Это состояние отражается в **модули** окна. Это состояние по умолчанию.
 
 ## <a name="remarks"></a>Примечания
  Используется для `m_dwModuleFlags` членом [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры.

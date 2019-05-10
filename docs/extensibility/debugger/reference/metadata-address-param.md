@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec1012ef689750dcd16679763baa942be55f1805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d978f8108d35ab999c8ac2aea6fc068d889d3a95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865603"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460987"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 Эта структура представляет параметр метода или функции.
@@ -40,12 +43,15 @@ public struct METADATA_ADDRESS_PARAM {
 }
 ```
 
-## <a name="terms"></a>Термины
- tokMethod идентификатор параметра метода является частью.
+## <a name="members"></a>Участники
+ `tokMethod`\
+ Идентификатор метода параметра является частью.
 
- tokParam идентификатор параметра.
+ `tokParam`\
+ Идентификатор параметра.
 
- dwIndex индекс параметра в списке параметров.
+ `dwIndex`\
+ Индекс параметра в списке параметров.
 
 ## <a name="remarks"></a>Примечания
  Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_PARAM` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).

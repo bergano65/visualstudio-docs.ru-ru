@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0eecc7331bc510366cd012e30cc1088ef6c60da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 76bec7cb621605933f8cc0b15ff6cb6e4dd6d70e
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868461"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224009"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 Извлекает сведения о методе по адресу указанного отладки.
@@ -47,32 +50,32 @@ int GetMethodFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pAddress`
+## <a name="parameters"></a>Параметры
+ `pAddress`\
 
  [in] Отладка адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
 
- `pGuid`
+ `pGuid`\
 
  [out] Уникальный идентификатор модуля.
 
- `pAppID`
+ `pAppID`\
 
  [out] Идентификатор домена приложения.
 
- `pTokenClass`
+ `pTokenClass`\
 
  [out] Токен, представляющий содержащего класса.
 
- `pTokenMethod`
+ `pTokenMethod`\
 
  [out] Токен, представляющий модуль.
 
- `pdwOffset`
+ `pdwOffset`\
 
  [out] Смещение в байтах от начала `pAddress` параметра.
 
- `pdwVersion`
+ `pdwVersion`\
 
  [out] Номер версии метода.
 

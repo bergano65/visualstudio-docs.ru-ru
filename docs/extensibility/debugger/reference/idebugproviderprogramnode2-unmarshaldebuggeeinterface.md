@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86c20e7c6828cfbf3ec31ba5dcbec9c7ee8478df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 887002086b50198ba192bde3f19390d3267a5c9d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869364"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457351"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 Получает указанный интерфейс через границы процессов.
@@ -38,12 +41,12 @@ int UnmarshalDebuggeeInterface(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `riid`
+## <a name="parameters"></a>Параметры
+ `riid`\
 
  [in] Идентификатор GUID интерфейса для получения.
 
- `ppvObject`
+ `ppvObject`\
 
  [out] Возвращает объект, реализующий требуемого интерфейса. [C++] это может быть приведен непосредственно в тип требуемого интерфейса. [C#] использовать <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> метод для получения требуемого интерфейса.
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 543d05e9d0917305f9f898cdae8e7add2c5949fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 64a05032118588679efcc455953b76227a973319
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225866"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 Этот метод возвращает прокси для объекта свойства.
@@ -38,12 +41,12 @@ int GetPropertyProxy(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwID`
+## <a name="parameters"></a>Параметры
+ `dwID`\
 
  [in] Идентификатор свойства прокси-сервер для извлечения.
 
- `proxy`
+ `proxy`\
 
  [out] Требуемого прокси-сервер в [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) интерфейс.
 

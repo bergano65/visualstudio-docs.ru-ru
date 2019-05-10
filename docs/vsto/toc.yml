@@ -1,12 +1,15 @@
 - name: Разработка приложений Office и SharePoint в Visual Studio
-  href: office-and-sharepoint-development-in-visual-studio.md
   items:
+    - name: Разработка приложений Office и SharePoint в Visual Studio
+      href: office-and-sharepoint-development-in-visual-studio.md
     - name: Создание надстроек VSTO для Office
-      href: create-vsto-add-ins-for-office-by-using-visual-studio.md
       items:
+        - name: Создание надстроек VSTO для Office
+          href: create-vsto-add-ins-for-office-by-using-visual-studio.md
         - name: Начало работы
-          href: getting-started-office-development-in-visual-studio.md
           items:
+            - name: Начало работы
+              href: getting-started-office-development-in-visual-studio.md
             - name: Общие сведения о разработке решений Office
               href: office-solutions-development-overview-vsto.md
             - name: 'Изменения проектирования проектов Office, предназначенных для .NET Framework 4 или .NET Framework 4.5'
@@ -14,8 +17,9 @@
             - name: Доступность функций по типам приложений Office и проектов
               href: features-available-by-office-application-and-project-type.md
             - name: Настройка компьютера для разработки решений Office
-              href: configuring-a-computer-to-develop-office-solutions.md
               items:
+                - name: Настройка компьютера для разработки решений Office
+                  href: configuring-a-computer-to-develop-office-solutions.md
                 - name: Настройка компьютера для разработки решений Office
                   href: how-to-configure-a-computer-to-develop-office-solutions.md
                 - name: Установка распространяемого пакета среды выполнения для набора средств Visual Studio для Office
@@ -35,11 +39,13 @@
             - name: Дополнительные ресурсы для разработки решений Office
               href: additional-resources-for-developing-office-solutions.md
         - name: Обновление и перенос решений Office
-          href: upgrading-and-migrating-office-solutions.md
           items:
+            - name: Обновление и перенос решений Office
+              href: upgrading-and-migrating-office-solutions.md
             - name: Перенос решений Office на платформу .NET Framework 4 или более поздней версии
-              href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
               items:
+                - name: Перенос решений Office на платформу .NET Framework 4 или более поздней версии
+                  href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
                 - name: 'Изменения, необходимые для выполнения проектов Office'
                   href: required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
                 - name: Обновление проектов Excel и Word
@@ -49,15 +55,17 @@
                 - name: Обновление областей формы в проектах Outlook
                   href: updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
         - name: Архитектура решений Office в Visual Studio
-          href: architecture-of-office-solutions-in-visual-studio.md
           items:
+            - name: Архитектура решений Office в Visual Studio
+              href: architecture-of-office-solutions-in-visual-studio.md
             - name: Архитектура настроек на уровне документа
               href: architecture-of-document-level-customizations.md
             - name: Архитектура надстроек VSTO
               href: architecture-of-vsto-add-ins.md
             - name: Общие сведения об инструментах Visual Studio для среды выполнения Office
-              href: visual-studio-tools-for-office-runtime-overview.md
               items:
+                - name: Общие сведения об инструментах Visual Studio для среды выполнения Office
+                  href: visual-studio-tools-for-office-runtime-overview.md
                 - name: Visual Studio Tools for Office Runtime Installation Scenarios
                   href: visual-studio-tools-for-office-runtime-installation-scenarios.md
                 - name: Сборки среды выполнения Visual Studio Tools for Office
@@ -67,8 +75,9 @@
             - name: Custom Document Properties Overview
               href: custom-document-properties-overview.md
         - name: Designing and Creating Office Solutions
-          href: designing-and-creating-office-solutions.md
           items:
+            - name: Designing and Creating Office Solutions
+              href: designing-and-creating-office-solutions.md
             - name: Общие сведения о шаблонах проектов Office
               href: office-project-templates-overview.md
             - name: Создание проектов Office в Visual Studio
@@ -86,8 +95,9 @@
             - name: Указание настроек для решений Office
               href: how-to-set-up-configuration-information-for-an-office-solution.md
             - name: Использование функциональных возможностей Office в Visual Studio
-              href: using-office-functionality-inside-of-visual-studio.md
               items:
+                - name: Использование функциональных возможностей Office в Visual Studio
+                  href: using-office-functionality-inside-of-visual-studio.md
                 - name: Защита документов в решениях уровня документа
                   href: document-protection-in-document-level-solutions.md
                 - name: Общие сведения об управлении правами на доступ к данным и расширениях управляемого кода
@@ -99,11 +109,13 @@
                 - name: Открытие решений Office без выполнения кода
                   href: how-to-open-office-solutions-without-running-code.md
         - name: Разработка решений Office
-          href: developing-office-solutions.md
           items:
+            - name: Разработка решений Office
+              href: developing-office-solutions.md
             - name: Написание кода в решениях Office
-              href: writing-code-in-office-solutions.md
               items:
+                - name: Написание кода в решениях Office
+                  href: writing-code-in-office-solutions.md
                 - name: Необязательные параметры в решениях Office
                   href: optional-parameters-in-office-solutions.md
                 - name: Позднее связывание в решениях Office
@@ -117,8 +129,9 @@
                 - name: Совместная разработка решений Office
                   href: collaborative-development-of-office-solutions.md
             - name: Приступая к программированию надстроек VSTO
-              href: programming-vsto-add-ins.md
               items:
+                - name: Приступая к программированию надстроек VSTO
+                  href: programming-vsto-add-ins.md
                 - name: Повышение производительности надстройки VSTO
                   href: improving-the-performance-of-a-vsto-add-in.md
                 - name: Расширение документов Word и книг Excel в надстройках VSTO в среде выполнения
@@ -130,11 +143,13 @@
                 - name: Настройка функций пользовательского интерфейса с помощью интерфейсов расширяемости
                   href: customizing-ui-features-by-using-extensibility-interfaces.md
             - name: Настройки программирования уровня документа
-              href: programming-document-level-customizations.md
               items:
+                - name: Настройки программирования уровня документа
+                  href: programming-document-level-customizations.md
                 - name: Объединение настроек VBA и настроек на уровне документа
-                  href: combining-vba-and-document-level-customizations.md
                   items:
+                    - name: Объединение настроек VBA и настроек на уровне документа
+                      href: combining-vba-and-document-level-customizations.md
                     - name: Предоставление доступа к коду со стороны VBA в проекте Visual Basic
                       href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
                     - name: 'Предоставление доступа к коду со стороны VBA в проекте Visual C#'
@@ -144,25 +159,29 @@
                     - name: 'Пошаговое руководство. Вызов кода из VBA в проекте Visual C#'
                       href: walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md
                 - name: Managing Documents on a Server by Using the ServerDocument Class
-                  href: managing-documents-on-a-server-by-using-the-serverdocument-class.md
                   items:
+                    - name: Managing Documents on a Server by Using the ServerDocument Class
+                      href: managing-documents-on-a-server-by-using-the-serverdocument-class.md
                     - name: Удаление расширений управляемого кода из документов
                       href: how-to-remove-managed-code-extensions-from-documents.md
                     - name: Вложение расширений управляемого кода в документы
                       href: how-to-attach-managed-code-extensions-to-documents.md
             - name: Настройка пользовательского интерфейса Office
-              href: office-ui-customization.md
               items:
+                - name: Настройка пользовательского интерфейса Office
+                  href: office-ui-customization.md
                 - name: Элементы управления в документах Office
-                  href: controls-on-office-documents.md
                   items:
+                    - name: Элементы управления в документах Office
+                      href: controls-on-office-documents.md
                     - name: Общие сведения о ведущих элементах и элементах управления ведущего приложения
                       href: host-items-and-host-controls-overview.md
                     - name: Программные ограничения ведущих элементов и элементов управления ведущего приложения
                       href: programmatic-limitations-of-host-items-and-host-controls.md
                     - name: Общие сведения об использовании элементов управления Windows Forms в документах Office
-                      href: windows-forms-controls-on-office-documents-overview.md
                       items:
+                        - name: Общие сведения об использовании элементов управления Windows Forms в документах Office
+                          href: windows-forms-controls-on-office-documents-overview.md
                         - name: Limitations of Windows Forms Controls on Office Documents
                           href: limitations-of-windows-forms-controls-on-office-documents.md
                         - name: Добавление элементов управления Windows Forms в документы Office
@@ -184,13 +203,15 @@
                         - name: Скрытие элементов управления на листах при печати
                           href: how-to-hide-controls-on-worksheets-when-printing.md
                     - name: Добавление элементов управления в документы Office во время выполнения
-                      href: adding-controls-to-office-documents-at-run-time.md
                       items:
+                        - name: Добавление элементов управления в документы Office во время выполнения
+                          href: adding-controls-to-office-documents-at-run-time.md
                         - name: Сохранение динамических элементов управления в документах Office
                           href: persisting-dynamic-controls-in-office-documents.md
                 - name: Обзор ленты
-                  href: ribbon-overview.md
                   items:
+                    - name: Обзор ленты
+                      href: ribbon-overview.md
                     - name: Приступая к настройке ленты
                       href: how-to-get-started-customizing-the-ribbon.md
                     - name: Конструктор лент
@@ -222,8 +243,9 @@
                     - name: Пошаговое руководство. Создание настраиваемой вкладки с помощью XML-ленты
                       href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
                 - name: Общие сведения о панели действий
-                  href: actions-pane-overview.md
                   items:
+                    - name: Общие сведения о панели действий
+                      href: actions-pane-overview.md
                     - name: Добавление области действий в документы Word или книги Excel
                       href: how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md
                     - name: Управление структурой элементов управления в панели действий
@@ -235,8 +257,9 @@
                     - name: Пошаговое руководство. Вставка текста в документ из панели действий
                       href: walkthrough-inserting-text-into-a-document-from-an-actions-pane.md
                 - name: Настраиваемые области задач
-                  href: custom-task-panes.md
                   items:
+                    - name: Настраиваемые области задач
+                      href: custom-task-panes.md
                     - name: Добавление настраиваемой панели задач в приложение
                       href: how-to-add-a-custom-task-pane-to-an-application.md
                     - name: Пошаговое руководство. Автоматизация приложения из настраиваемой области задач
@@ -256,11 +279,13 @@
                 - name: Пошаговое руководство. Сбор данных с использованием формы Windows
                   href: walkthrough-collecting-data-using-a-windows-form.md
             - name: Данные в решениях Office
-              href: data-in-office-solutions.md
               items:
+                - name: Данные в решениях Office
+                  href: data-in-office-solutions.md
                 - name: Привязка данных к элементам управления в решениях Office
-                  href: binding-data-to-controls-in-office-solutions.md
                   items:
+                    - name: Привязка данных к элементам управления в решениях Office
+                      href: binding-data-to-controls-in-office-solutions.md
                     - name: Заполнение листов данными из базы данных
                       href: how-to-populate-worksheets-with-data-from-a-database.md
                     - name: Заполнение документов данными из базы данных
@@ -284,18 +309,21 @@
                     - name: Пошаговое руководство. Сложная привязка данных в проекте надстройки VSTO
                       href: walkthrough-complex-data-binding-in-vsto-add-in-project.md
                 - name: Custom XML Parts Overview
-                  href: custom-xml-parts-overview.md
                   items:
+                    - name: Custom XML Parts Overview
+                      href: custom-xml-parts-overview.md
                     - name: Добавление настраиваемых частей XML в настройках на уровне документа
                       href: how-to-add-custom-xml-parts-to-document-level-customizations.md
                     - name: Добавление настраиваемых частей XML в документы с помощью надстроек VSTO
                       href: how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md
                 - name: Кэшированные данные в настройках уровня документа
-                  href: cached-data-in-document-level-customizations.md
                   items:
+                    - name: Кэшированные данные в настройках уровня документа
+                      href: cached-data-in-document-level-customizations.md
                     - name: Кэширование данных
-                      href: caching-data.md
                       items:
+                        - name: Кэширование данных
+                          href: caching-data.md
                         - name: Кэширование данных для автономного использования или для использования на сервере
                           href: how-to-cache-data-for-use-offline-or-on-a-server.md
                         - name: Программное кэширование источника данных в документе Office
@@ -305,8 +333,9 @@
                         - name: Пошаговое руководство. Создание иерархического отношения с помощью кэшированного набора данных
                           href: walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md
                     - name: Доступ к данным в документах на сервере
-                      href: accessing-data-in-documents-on-the-server.md
                       items:
+                        - name: Доступ к данным в документах на сервере
+                          href: accessing-data-in-documents-on-the-server.md
                         - name: Пошаговое руководство. Вставка данных в книгу на сервере
                           href: walkthrough-inserting-data-into-a-workbook-on-a-server.md
                         - name: Пошаговое руководство. Получение кэшированных данных из книги на сервере
@@ -314,8 +343,9 @@
                         - name: Пошаговое руководство. Изменение кэшированных данных в книге на сервере
                           href: walkthrough-changing-cached-data-in-a-workbook-on-a-server.md
                 - name: XML-схемы и данные в настройках на уровне документа
-                  href: xml-schemas-and-data-in-document-level-customizations.md
                   items:
+                    - name: XML-схемы и данные в настройках на уровне документа
+                      href: xml-schemas-and-data-in-document-level-customizations.md
                     - name: Сопоставление схем и документов Word в Visual Studio
                       href: how-to-map-schemas-to-word-documents-inside-visual-studio.md
                     - name: Сопоставление схем и листов в Visual Studio
@@ -325,8 +355,9 @@
             - name: Влияние функции "Автосохранение" на решения для Office
               href: how-autosave-impacts-office-solutions.md
             - name: Устранение неполадок при работе с решениями Office
-              href: troubleshooting-office-solutions.md
               items:
+                - name: Устранение неполадок при работе с решениями Office
+                  href: troubleshooting-office-solutions.md
                 - name: Устранение ошибок в решениях Office
                   href: troubleshooting-errors-in-office-solutions.md
                 - name: 'Повторное включение надстройки VSTO, которая была отключена'
@@ -346,14 +377,17 @@
             - name: Специальные возможности в проектах Office
               href: accessibility-in-office-projects.md
         - name: Решения Excel
-          href: excel-solutions.md
           items:
+            - name: Решения Excel
+              href: excel-solutions.md
             - name: Excel Object Model Overview
-              href: excel-object-model-overview.md
               items:
+                - name: Excel Object Model Overview
+                  href: excel-object-model-overview.md
                 - name: Работа с книгами
-                  href: working-with-workbooks.md
                   items:
+                    - name: Работа с книгами
+                      href: working-with-workbooks.md
                     - name: Программное создание книг Excel
                       href: how-to-programmatically-create-new-workbooks.md
                     - name: Программное открытие книг Excel
@@ -369,8 +403,9 @@
                     - name: Программное открытие текстовых файлов как книг Excel
                       href: how-to-programmatically-open-text-files-as-workbooks.md
                 - name: Работа с листами
-                  href: working-with-worksheets.md
                   items:
+                    - name: Работа с листами
+                      href: working-with-worksheets.md
                     - name: Программное добавление новых листов в книги Excel
                       href: how-to-programmatically-add-new-worksheets-to-workbooks.md
                     - name: Программное копирование листов Excel
@@ -406,8 +441,9 @@
                     - name: Программная сортировка данных на листах
                       href: how-to-programmatically-sort-data-in-worksheets.md
                 - name: Работа с диапазонами
-                  href: working-with-ranges.md
                   items:
+                    - name: Работа с диапазонами
+                      href: working-with-ranges.md
                     - name: Ссылки на диапазоны листов в коде программными средствами
                       href: how-to-programmatically-refer-to-worksheet-ranges-in-code.md
                     - name: 'Автоматическое заполнение диапазонов данными, значения которых изменяются с постоянным шагом, с помощью программных средств'
@@ -425,8 +461,9 @@
                     - name: Программное отображение строки в ячейке листа
                       href: how-to-programmatically-display-a-string-in-a-worksheet-cell.md
             - name: Автоматизация Excel с помощью расширенных объектов
-              href: automating-excel-by-using-extended-objects.md
               items:
+                - name: Автоматизация Excel с помощью расширенных объектов
+                  href: automating-excel-by-using-extended-objects.md
                 - name: Ведущий элемент книги
                   href: workbook-host-item.md
                 - name: Ведущие элементы листа
@@ -474,14 +511,17 @@
         - name: Решения InfoPath
           href: infopath-solutions.md
         - name: Решения Outlook
-          href: outlook-solutions.md
           items:
+            - name: Решения Outlook
+              href: outlook-solutions.md
             - name: Общие сведения об объектной модели Outlook
-              href: outlook-object-model-overview.md
               items:
+                - name: Общие сведения об объектной модели Outlook
+                  href: outlook-object-model-overview.md
                 - name: Работа с элементами контактов
-                  href: working-with-contact-items.md
                   items:
+                    - name: Работа с элементами контактов
+                      href: working-with-contact-items.md
                     - name: Программное получение доступа к контактам Outlook
                       href: how-to-programmatically-access-outlook-contacts.md
                     - name: Программный поиск определенного контакта
@@ -493,8 +533,9 @@
                     - name: Программное удаление контактов Outlook
                       href: how-to-programmatically-delete-outlook-contacts.md
                 - name: Работа с элементами почты
-                  href: working-with-mail-items.md
                   items:
+                    - name: Работа с элементами почты
+                      href: working-with-mail-items.md
                     - name: Программное создание элемента электронной почты
                       href: how-to-programmatically-create-an-e-mail-item.md
                     - name: Программная отправка сообщений по электронной почте
@@ -508,8 +549,9 @@
                     - name: Программное извлечение непрочитанных сообщений из папки "Входящие"
                       href: how-to-programmatically-retrieve-unread-messages-from-the-inbox.md
                 - name: Работа с папками
-                  href: working-with-folders.md
                   items:
+                    - name: Работа с папками
+                      href: working-with-folders.md
                     - name: Программный поиск в указанной папке
                       href: how-to-programmatically-search-within-a-specific-folder.md
                     - name: Программное извлечение папки по имени
@@ -521,8 +563,9 @@
                     - name: Программное перемещение элементов в Outlook
                       href: how-to-programmatically-move-items-in-outlook.md
                 - name: Работа с элементами календаря
-                  href: working-with-calendar-items.md
                   items:
+                    - name: Работа с элементами календаря
+                      href: working-with-calendar-items.md
                     - name: Программное создание встреч
                       href: how-to-programmatically-create-appointments.md
                     - name: Программное удаление встреч
@@ -534,8 +577,9 @@
                 - name: Программное определение текущего элемента Outlook
                   href: how-to-programmatically-determine-the-current-outlook-item.md
             - name: Creating Outlook Form Regions
-              href: creating-outlook-form-regions.md
               items:
+                - name: Creating Outlook Form Regions
+                  href: creating-outlook-form-regions.md
                 - name: Рекомендации по созданию областей формы Outlook
                   href: guidelines-for-creating-outlook-form-regions.md
                 - name: Добавление области формы в проект надстройки Outlook
@@ -555,23 +599,27 @@
             - name: Пошаговое руководство. Создание первой надстройки VSTO для Outlook
               href: walkthrough-creating-your-first-vsto-add-in-for-outlook.md
         - name: Решения PowerPoint
-          href: powerpoint-solutions.md
           items:
+            - name: Решения PowerPoint
+              href: powerpoint-solutions.md
             - name: Пошаговое руководство. Создание первой надстройки VSTO для PowerPoint
               href: walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md
         - name: Решения Project
-          href: project-solutions.md
           items:
+            - name: Решения Project
+              href: project-solutions.md
             - name: Пошаговое руководство. Создание первой надстройки VSTO для проекта
               href: walkthrough-creating-your-first-vsto-add-in-for-project.md
         - name: Решения Visio
-          href: visio-solutions.md
           items:
+            - name: Решения Visio
+              href: visio-solutions.md
             - name: Общие сведения об объектной модели Visio
               href: visio-object-model-overview.md
             - name: Работа с документами Visio
-              href: working-with-visio-documents.md
               items:
+                - name: Работа с документами Visio
+                  href: working-with-visio-documents.md
                 - name: Программное создание документов Visio
                   href: how-to-programmatically-create-new-visio-documents.md
                 - name: Программное открытие документов Visio
@@ -583,21 +631,25 @@
                 - name: Программная печать документов Visio
                   href: how-to-programmatically-print-visio-documents.md
             - name: Работа с фигурами Visio
-              href: working-with-visio-shapes.md
               items:
+                - name: Работа с фигурами Visio
+                  href: working-with-visio-shapes.md
                 - name: Программное добавление фигур в документ Visio
                   href: how-to-programmatically-add-shapes-to-a-visio-document.md
                 - name: Программное копирование и вставка фигур в документе Visio
                   href: how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md
         - name: Решения Word
-          href: word-solutions.md
           items:
+            - name: Решения Word
+              href: word-solutions.md
             - name: Общие сведения об объектной модели Word
-              href: word-object-model-overview.md
               items:
+                - name: Общие сведения об объектной модели Word
+                  href: word-object-model-overview.md
                 - name: Работа с документами
-                  href: working-with-documents.md
                   items:
+                    - name: Работа с документами
+                      href: working-with-documents.md
                     - name: Программное создание документов
                       href: how-to-programmatically-create-new-documents.md
                     - name: Программное открытие существующих документов
@@ -625,8 +677,9 @@
                     - name: Программное удаление всех комментариев из документа
                       href: how-to-programmatically-remove-all-comments-from-documents.md
                 - name: Работа с текстом в документах
-                  href: working-with-text-in-documents.md
                   items:
+                    - name: Работа с текстом в документах
+                      href: working-with-text-in-documents.md
                     - name: Программное определение и выделение диапазонов в документах
                       href: how-to-programmatically-define-and-select-ranges-in-documents.md
                     - name: Программное извлечение символов начала и завершения в диапазонах
@@ -660,8 +713,9 @@
                     - name: Программное добавление примечаний в текст документа
                       href: how-to-programmatically-add-comments-to-text-in-documents.md
                 - name: Работа с таблицами
-                  href: working-with-tables.md
                   items:
+                    - name: Работа с таблицами
+                      href: working-with-tables.md
                     - name: Программное создание таблиц в Word
                       href: how-to-programmatically-create-word-tables.md
                     - name: Программное заполнение таблиц свойствами документа Word
@@ -671,8 +725,9 @@
                     - name: Программное добавление текста и форматирования в ячейки таблиц Word
                       href: how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md
             - name: Автоматизация Word с помощью расширенных объектов
-              href: automating-word-by-using-extended-objects.md
               items:
+                - name: Автоматизация Word с помощью расширенных объектов
+                  href: automating-word-by-using-extended-objects.md
                 - name: Ведущий элемент документа
                   href: document-host-item.md
                 - name: Элементы управления содержимым
@@ -712,8 +767,9 @@
         - name: Отладка проектов Office
           href: debugging-office-projects.md
         - name: Обеспечение безопасности решений Office
-          href: securing-office-solutions.md
           items:
+            - name: Обеспечение безопасности решений Office
+              href: securing-office-solutions.md
             - name: Присвоение уровня доверия решениям Office
               href: granting-trust-to-office-solutions.md
             - name: Granting Trust to Documents
@@ -731,20 +787,23 @@
             - name: 'Устранение неполадок, связанных с безопасностью решений Office'
               href: troubleshooting-office-solution-security.md
         - name: Развертывание решения Office
-          href: deploying-an-office-solution.md
           items:
+            - name: Развертывание решения Office
+              href: deploying-an-office-solution.md
             - name: Развертывание решения Office с помощью ClickOnce
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: Развертывание решения Office с помощью установщика Windows
               href: deploying-an-office-solution-by-using-windows-installer.md
             - name: 'Устранение неполадок, связанных с развертыванием решения Office'
-              href: troubleshooting-office-solution-deployment.md
               items:
+                - name: 'Устранение неполадок, связанных с развертыванием решения Office'
+                  href: troubleshooting-office-solution-deployment.md
                 - name: Ведение журнала событий для решений Office
                   href: event-logging-for-office-solutions.md
         - name: Примеры и пошаговые руководства
-          href: office-development-samples-and-walkthroughs.md
           items:
+            - name: Примеры и пошаговые руководства
+              href: office-development-samples-and-walkthroughs.md
             - name: Примеры разработки решений Office
               href: office-development-samples.md
             - name: Пошаговые руководства с использованием Word
@@ -758,13 +817,15 @@
             - name: Пошаговые руководства по безопасности и развертыванию
               href: security-and-deployment-walkthroughs.md
         - name: Общие справочные материалы (разработка решений Office в Visual Studio)
-          href: general-reference-office-development-in-visual-studio.md
           items:
+            - name: Общие справочные материалы (разработка решений Office в Visual Studio)
+              href: general-reference-office-development-in-visual-studio.md
             - name: Office - основные сборки взаимодействия
               href: office-primary-interop-assemblies.md
             - name: Манифесты приложений для решений Office
-              href: application-manifests-for-office-solutions.md
               items:
+                - name: Манифесты приложений для решений Office
+                  href: application-manifests-for-office-solutions.md
                 - name: Элемент <customHostSpecified>
                   href: customhostspecified-element-office-development-in-visual-studio.md
                 - name: Элемент <addin>
@@ -806,8 +867,9 @@
             - name: Манифесты развертывания для решений Office
               href: deployment-manifests-for-office-solutions.md
             - name: Справочные материалы по пользовательскому интерфейсу (разработка решений Office в Visual Studio)
-              href: user-interface-reference-office-development-in-visual-studio.md
               items:
+                - name: Справочные материалы по пользовательскому интерфейсу (разработка решений Office в Visual Studio)
+                  href: user-interface-reference-office-development-in-visual-studio.md
                 - name: 'Клавиатура Microsoft Office Word, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"'
                   href: microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md
                 - name: 'Клавиатура Microsoft Office Excel, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"'
@@ -819,8 +881,9 @@
                 - name: Мастер публикации (разработка для Office в Visual Studio)
                   href: publish-wizard-office-development-in-visual-studio.md
             - name: Сообщения об ошибках (разработка для Office в Visual Studio)
-              href: error-messages-office-development-in-visual-studio.md
               items:
+                - name: Сообщения об ошибках (разработка для Office в Visual Studio)
+                  href: error-messages-office-development-in-visual-studio.md
                 - name: Microsoft Office не установлен на этом компьютере
                   href: microsoft-office-is-not-installed-on-this-computer.md
                 - name: 'Книга, использованная при создании данного проекта, содержит элемент управления ActiveX, который конструктору не удалось загрузить'
@@ -832,8 +895,9 @@
         - name: Справочные материалы по управляемому коду (разработка решений Office в Visual Studio)
           href: managed-reference-office-development-in-visual-studio.md
         - name: Справочные материалы по неуправляемым API (разработка решений Office в Visual Studio)
-          href: unmanaged-api-reference-office-development-in-visual-studio.md
           items:
+            - name: Справочные материалы по неуправляемым API (разработка решений Office в Visual Studio)
+              href: unmanaged-api-reference-office-development-in-visual-studio.md
             - name: Функция EnsureVSTOComponent
               href: ensurevstocomponent-function.md
             - name: Функция GetValidCompatibleFramework
@@ -841,15 +905,17 @@
             - name: Функция GetVstoSolutionMetadata
               href: getvstosolutionmetadata-function.md
             - name: IManagedAddin - интерфейс
-              href: imanagedaddin-interface.md
               items:
+                - name: IManagedAddin - интерфейс
+                  href: imanagedaddin-interface.md
                 - name: Метод загрузки
                   href: imanagedaddin-load.md
                 - name: Метод выгрузки
                   href: imanagedaddin-unload.md
             - name: Интерфейс IWefDebuggingSupport
-              href: iwefdebuggingsupport-interface.md
               items:
+                - name: Интерфейс IWefDebuggingSupport
+                  href: iwefdebuggingsupport-interface.md
                 - name: Метод GetAutoInsertExtensions
                   href: getautoinsertextensions-method.md
                 - name: Метод SetWefProcessId

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 542acd97b39813633c1207d90217498dd6fa77b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 68ccbcb4ae1e41c7f5d8cfd2311b236508e1f383
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867528"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223300"
 ---
 # <a name="ienumdebugboundbreakpoints2next"></a>IEnumDebugBoundBreakpoints2::Next
 Возвращает следующий набор элементов из перечисления.
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `celt`
+## <a name="parameters"></a>Параметры
+ `celt`\
 
  [in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
 
- `rgelt`
+ `rgelt`\
 
  [in, out] Массив [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) элементов для заполнения.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
 

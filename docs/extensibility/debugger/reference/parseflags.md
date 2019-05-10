@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56ba1933d1b63f9af863b115972f3ecf1dfc4346
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e5d298add846a7f3b7baf566f3c31e16c68b8dc5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913720"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460846"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Указывает, как выполнить синтаксический анализ выражения.
@@ -41,12 +44,15 @@ public enum enum_PARSEFLAGS { 
 };
 ```
 
-## <a name="members"></a>Участники
- PARSE_EXPRESSION указывает, что выражение не является оператором.
+## <a name="fields"></a>Поля
+ `PARSE_EXPRESSION`\
+ Указывает, что выражение не является оператором.
 
- PARSE_FUNCTION_AS_ADDRESS указывает, что выражение является для синтаксического анализа (и более поздней версии вычисляется) как адрес.
+ `PARSE_FUNCTION_AS_ADDRESS`\
+ Указывает выражение для синтаксического анализа (и более поздней версии вычисляется) как адрес.
 
- PARSE_DESIGN_TIME_EXPR_EVAL указывает, что выражение анализируется во время разработки (то есть, когда конструктор открыт).
+ `PARSE_DESIGN_TIME_EXPR_EVAL`\
+ Указывает, что выражение анализируется во время разработки (то есть, когда конструктор открыт).
 
 ## <a name="remarks"></a>Примечания
  Переданный в качестве параметра для [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) и [проанализировать](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) методы.

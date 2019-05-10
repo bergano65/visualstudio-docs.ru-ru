@@ -1,52 +1,54 @@
 ---
 title: IEnumDebugObjects::Skip | Документация Майкрософт
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IEnumDebugObjects::Skip
 helpviewer_keywords:
 - IEnumDebugObjects::Skip method
 ms.assetid: 957cead8-0a9c-4403-b190-b9fbadc49d42
-caps.latest.revision: 5
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 41865780df808231b929ef775d4e967b8c608595
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 017ba5823d33f32465dc58d3340ba8cd40712013
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62866825"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226524"
 ---
 # <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Этот метод пропускает указанное число элементов.
 
-Этот метод пропускает указанное число элементов.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp#  
-HRESULT Skip(  
-   [in] ULONG celt  
-);  
-```  
-  
-```csharp  
-int Skip(  
-   [In] uint celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `celt`  
- [in] Количество пропускаемых элементов.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем число оставшихся элементов; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Если `celt` указывает значения, большего, чем остальных элементов, перечислению задается до конца и `S_FALSE` возвращается.  
-  
-## <a name="see-also"></a>См. также  
- [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT Skip(
+   [in] ULONG celt
+);
+```
+
+```csharp
+int Skip(
+   [In] uint celt
+);
+```
+
+## <a name="parameters"></a>Параметры
+ `celt`\
+
+ [in] Количество пропускаемых элементов.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем число оставшихся элементов; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Если `celt` указывает значения, большего, чем остальных элементов, перечислению задается до конца и `S_FALSE` возвращается.
+
+## <a name="see-also"></a>См. также
+- [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

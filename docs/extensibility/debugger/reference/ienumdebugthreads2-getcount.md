@@ -1,52 +1,54 @@
 ---
 title: IEnumDebugThreads2::GetCount | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IEnumDebugThreads2::GetCount
 helpviewer_keywords:
 - IEnumDebugThreads2::GetCount
 ms.assetid: 81b7f139-d24e-4040-9adc-d664d77563ba
-caps.latest.revision: 11
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80e41fa777817af73ef744462de3f82487a653c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ef11fcb85e061d1ecb433a0b164e2252ee5d4bd1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914137"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461161"
 ---
 # <a name="ienumdebugthreads2getcount"></a>IEnumDebugThreads2::GetCount
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Возвращает число элементов в перечислении.
 
-Возвращает число элементов в перечислении.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp#  
-HRESULT GetCount(  
-   ULONG* pcelt  
-);  
-```  
-  
-```csharp  
-int GetCount(  
-   out uint pcelt  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pcelt`  
- [out] Возвращает число элементов в перечислении.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Этот метод не является частью обычной интерфейса перечисления модели COM, который указывает, что только `Next`, `Clone`, `Skip`, и `Reset` методы должны быть реализованы.  
-  
-## <a name="see-also"></a>См. также  
- [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetCount(
+   ULONG* pcelt
+);
+```
+
+```csharp
+int GetCount(
+   out uint pcelt
+);
+```
+
+## <a name="parameters"></a>Параметры
+ `pcelt`\
+
+ [out] Возвращает число элементов в перечислении.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Этот метод не является частью обычной интерфейса перечисления модели COM, который указывает, что только `Next`, `Clone`, `Skip`, и `Reset` методы должны быть реализованы.
+
+## <a name="see-also"></a>См. также
+- [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

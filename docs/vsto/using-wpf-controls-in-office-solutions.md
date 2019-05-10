@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8c447ce6b202fc3ccca65c6725e9eb3e5f13ecf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b0cd5939bf91a3f154cf28434f561ed93b1a597
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982251"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226668"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Использование элементов управления WPF в решениях Office
 
@@ -55,7 +55,7 @@ ms.locfileid: "62982251"
 
     - Для областей формы добавьте **область формы Outlook** элемента в проект. Дополнительные сведения см. в разделе [Как Добавление области формы в проект надстройки Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    - Для панелей действий, добавьте **элемента управления панели действий** или **пользовательский элемент управления** в проект элемент. Дополнительные сведения см. в разделе [Как Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) и [как: Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    - Для панелей действий, добавьте **элемента управления панели действий** или **пользовательский элемент управления** в проект элемент. Дополнительные сведения см. в разделе [Как Добавление панели действий в документы Word или книги Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
     - Настраиваемые области задач, добавьте **пользовательский элемент управления** в проект элемент. Дополнительные сведения см. в разделе [Как Добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 

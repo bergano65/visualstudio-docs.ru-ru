@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b65a148ece1bf93cf9924293695616713238462c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3fc2492b5962a71bf82d76b57d58eada9c6d3ee7
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867502"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223519"
 ---
 # <a name="ienumdebugcodecontexts2next"></a>IEnumDebugCodeContexts2::Next
 Возвращает следующий набор элементов из перечисления.
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `celt`
+## <a name="parameters"></a>Параметры
+ `celt`\
 
  [in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
 
- `rgelt`
+ `rgelt`\
 
  [in, out] Массив [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) элементов для заполнения.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
 

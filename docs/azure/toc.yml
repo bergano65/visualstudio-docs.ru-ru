@@ -24,8 +24,9 @@
     - name: Добавление Azure Active Directory (AD)
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: Добавление Cognitive Services
-      href: cognitive-services-connected-services.yml
       items:
+        - name: Добавление Cognitive Services
+          href: cognitive-services-connected-services.yml
         - name: Анализ текста
           href: /azure/cognitive-services/text-analytics/vs-text-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Поиск Bing

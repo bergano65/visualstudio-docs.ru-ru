@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00a7928b203d00e0f9b43250a463a8fb272ce755
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c2714a038c2cede4b351de92454bb74a5052805c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915188"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223578"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 Этот метод возвращает список визуализаторов типов, эта служба, о которых известно.
@@ -42,20 +45,20 @@ int GetCustomViewerList(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `celtSkip`
+## <a name="parameters"></a>Параметры
+ `celtSkip`\
 
  [in] Число визуализаторы для пропуска.
 
- `celRequested`
+ `celRequested`\
 
  [in] Число визуализаторы для извлечения (также указывает размер `rgViewers` массива).
 
- `rgViewers`
+ `rgViewers`\
 
  [in, out] Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур для заполнения.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Число фактически извлеченных визуализаторы.
 

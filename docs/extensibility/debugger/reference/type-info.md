@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9af633c49538a2b74163647d537526b35f2aa048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bbb64acfd71a6208fde3a5c3f84d6c5886ece72f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415802"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460737"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 Эта структура определяет различные виды информации о типа поля.
@@ -43,26 +46,29 @@ public struct TYPE_INFO {
 };
 ```
 
-#### <a name="parameters"></a>Параметры
- значение dwKind объект из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) перечисления, которое определяет способ интерпретации объединение.
+## <a name="members"></a>Участники
+ `dwKind`\
+ Значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) перечисления, которое определяет способ интерпретации объединение.
 
- type.typeMeta
+ `type.typeMeta`\
 
  [C++ только] Содержит [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) структуры, если `dwKind` является `TYPE_KIND_METADATA`.
 
- type.typePdb
+ `type.typePdb`\
 
  [C++ только] Содержит [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) структуры, если `dwKind` является `TYPE_KIND_PDB`.
 
- type.typeBuilt
+ `type.typeBuilt`\
 
  [C++ только] Содержит [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) структуры, если `dwKind` является `TYPE_KIND_BUILT`.
 
- Type.unused неиспользуемые заполнение.
+ `type.unused`\
+ Неиспользуемые заполнение.
 
- Введите имя объединения.
+ `type`\
+ Имя объединения.
 
- unionmember
+ `unionmember`\
 
  [C# только] Маршалинг, это тип подходящей структурой на основе `dwKind`.
 

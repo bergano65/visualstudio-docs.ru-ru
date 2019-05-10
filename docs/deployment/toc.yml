@@ -63,8 +63,9 @@
 - name: Практические руководства
   items:
     - name: Развертывание и безопасность технологии ClickOnce
-      href: clickonce-security-and-deployment.md
       items:
+        - name: Развертывание и безопасность технологии ClickOnce
+          href: clickonce-security-and-deployment.md
         - name: Выбор стратегии развертывания ClickOnce
           href: choosing-a-clickonce-deployment-strategy.md
         - name: Общие сведения о кэше ClickOnce
@@ -74,13 +75,15 @@
         - name: Развертывание ClickOnce в Windows Vista
           href: clickonce-deployment-on-windows-vista.md
         - name: Локализация приложений ClickOnce
-          href: localizing-clickonce-applications.md
           items:
+            - name: Локализация приложений ClickOnce
+              href: localizing-clickonce-applications.md
             - name: 'Публикация проекта, имеющего конкретный языковый стандарт'
               href: how-to-publish-a-project-that-has-a-specific-locale.md
         - name: Защита приложений ClickOnce
-          href: securing-clickonce-applications.md
           items:
+            - name: Защита приложений ClickOnce
+              href: securing-clickonce-applications.md
             - name: ClickOnce и технология Authenticode
               href: clickonce-and-authenticode.md
             - name: Общие сведения о развертывании доверенных приложений
@@ -104,8 +107,9 @@
             - name: Подписывание файлов установки с помощью программы SignTool.exe (ClickOnce)
               href: how-to-sign-setup-files-with-signtool-exe-clickonce.md
         - name: Публикация приложений ClickOnce
-          href: publishing-clickonce-applications.md
           items:
+            - name: Публикация приложений ClickOnce
+              href: publishing-clickonce-applications.md
             - name: Публикация приложения ClickOnce с помощью мастера публикации
               href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
             - name: Создание приложений ClickOnce для развертывания другими
@@ -129,8 +133,9 @@
             - name: Автоматическое увеличение номера версии публикации ClickOnce
               href: how-to-automatically-increment-the-clickonce-publish-version.md
             - name: 'Задание файлов, публикуемых с помощью ClickOnce'
-              href: how-to-specify-which-files-are-published-by-clickonce.md
               items:
+                - name: 'Задание файлов, публикуемых с помощью ClickOnce'
+                  href: how-to-specify-which-files-are-published-by-clickonce.md
                 - name: Включение файла данных в приложение ClickOnce
                   href: how-to-include-a-data-file-in-a-clickonce-application.md
             - name: Установка необходимых компонентов для приложения ClickOnce
@@ -144,13 +149,15 @@
             - name: Задание имени в меню "Пуск" для приложения ClickOnce
               href: how-to-specify-a-start-menu-name-for-a-clickonce-application.md
             - name: Задание ссылки на веб-страницу технической поддержки
-              href: how-to-specify-a-link-for-technical-support.md
               items:
+                - name: Задание ссылки на веб-страницу технической поддержки
+                  href: how-to-specify-a-link-for-technical-support.md
                 - name: Указание URL-адреса поддержки для определенных необходимых компонентов
                   href: how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md
             - name: Задание страницы публикации для приложения ClickOnce
-              href: how-to-specify-a-publish-page-for-a-clickonce-application.md
               items:
+                - name: Задание страницы публикации для приложения ClickOnce
+                  href: how-to-specify-a-publish-page-for-a-clickonce-application.md
                 - name: Настройка используемой по умолчанию веб-страницы для приложения ClickOnce
                   href: how-to-customize-the-default-web-page-for-a-clickonce-application.md
             - name: Включение автозапуска при установке с компакт-диска
@@ -160,8 +167,9 @@
             - name: Извлечение сведений строки запроса в интернет-приложении ClickOnce
               href: how-to-retrieve-query-string-information-in-an-online-clickonce-application.md
             - name: Отключение активации приложений ClickOnce по URL-адресу при помощи конструктора
-              href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
               items:
+                - name: Отключение активации приложений ClickOnce по URL-адресу при помощи конструктора
+                  href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
                 - name: Отключение активации по URL-адресу приложений ClickOnce
                   href: how-to-disable-url-activation-of-clickonce-applications.md
             - name: 'Развертывание приложений, которые могут выполняться в нескольких версиях .NET Framework'
@@ -169,15 +177,17 @@
             - name: Публикация приложения WPF с включенными визуальными стилями
               href: how-to-publish-a-wpf-application-with-visual-styles-enabled.md
             - name: Пошаговое руководство. Скачивание сборок по требованию с помощью конструктора
-              href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
               items:
+                - name: Пошаговое руководство. Скачивание сборок по требованию с помощью конструктора
+                  href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
                 - name: Пошаговое руководство. Скачивание сборок по требованию
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: Пошаговое руководство. Скачивание вспомогательных сборок по требованию с помощью конструктора
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
             - name: Пошаговое руководство. Развертывание приложения ClickOnce вручную
-              href: walkthrough-manually-deploying-a-clickonce-application.md
               items:
+                - name: Пошаговое руководство. Развертывание приложения ClickOnce вручную
+                  href: walkthrough-manually-deploying-a-clickonce-application.md
                 - name: 'Пошаговое руководство. Развертывание вручную приложения, которое не требует повторного подписывания'
                   href: walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md
             - name: Пошаговое руководство. Скачивание вспомогательных сборок по требованию
@@ -185,8 +195,9 @@
             - name: Пошаговое руководство. Создание пользовательского установщика
               href: walkthrough-creating-a-custom-installer-for-a-clickonce-application.md
         - name: Выбор стратегии обновления ClickOnce
-          href: choosing-a-clickonce-update-strategy.md
           items:
+            - name: Выбор стратегии обновления ClickOnce
+              href: choosing-a-clickonce-update-strategy.md
             - name: Выполнение обновлений приложения службой ClickOnce
               href: how-clickonce-performs-application-updates.md
             - name: Проверка обновлений для приложения программным способом
@@ -196,8 +207,9 @@
         - name: Примеры и пошаговые руководства по развертыванию ClickOnce
           href: clickonce-deployment-samples-and-walkthroughs.md
         - name: Устранение неполадок развертывания ClickOnce
-          href: troubleshooting-clickonce-deployments.md
           items:
+            - name: Устранение неполадок развертывания ClickOnce
+              href: troubleshooting-clickonce-deployments.md
             - name: Задание местоположения файла настраиваемого журнала для ошибок развертывания ClickOnce
               href: how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md
             - name: Указание подробных файлов журнала для развертывания ClickOnce
@@ -211,8 +223,9 @@
             - name: 'Отладка приложений ClickOnce, использующих System.Deployment.Application'
               href: debugging-clickonce-applications-that-use-system-deployment-application.md
     - name: Предварительные условия для развертывания приложения
-      href: application-deployment-prerequisites.md
       items:
+        - name: Предварительные условия для развертывания приложения
+          href: application-deployment-prerequisites.md
         - name: Предварительные условия для развертывания 64-разрядных приложений
           href: deploying-prerequisites-for-64-bit-applications.md
         - name: Создание пакетов начального загрузчика
@@ -226,8 +239,9 @@
         - name: Пошаговое руководство. Создание пользовательского загрузчика с предупреждением о конфиденциальности
           href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
         - name: Справочные сведения о схеме пакетов и продуктов
-          href: product-and-package-schema-reference.md
           items:
+            - name: Справочные сведения о схеме пакетов и продуктов
+              href: product-and-package-schema-reference.md
             - name: Элемент <Product> (загрузчик)
               href: product-element-bootstrapper.md
             - name: Элемент <Package> (загрузчик)
@@ -247,11 +261,13 @@
 - name: Ссылка
   items:
     - name: Справочные сведения ClickOnce
-      href: clickonce-reference.md
       items:
+        - name: Справочные сведения ClickOnce
+          href: clickonce-reference.md
         - name: ClickOnce Application Manifest
-          href: clickonce-application-manifest.md
           items:
+            - name: ClickOnce Application Manifest
+              href: clickonce-application-manifest.md
             - name: Элемент <assembly> (приложение ClickOnce)
               href: assembly-element-clickonce-application.md
             - name: Элемент <assemblyIdentity> (приложение ClickOnce)
@@ -267,8 +283,9 @@
             - name: Элемент <fileAssociation> (приложение ClickOnce)
               href: fileassociation-element-clickonce-application.md
         - name: Манифест развертывания ClickOnce
-          href: clickonce-deployment-manifest.md
           items:
+            - name: Манифест развертывания ClickOnce
+              href: clickonce-deployment-manifest.md
             - name: Элемент <assembly> (развертывание ClickOnce)
               href: assembly-element-clickonce-deployment.md
             - name: Элемент <assemblyIdentity> (развертывание ClickOnce)
