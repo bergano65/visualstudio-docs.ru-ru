@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c250cdfdef37a1c6eddfb266909deca1cc515f1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9f088bcfeebb570be911fbc8e37bed5995767ac9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869521"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457738"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 Получает [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структура, описывающая свойства.
@@ -46,28 +49,28 @@ int GetPropertyInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwFields`
+## <a name="parameters"></a>Параметры
+ `dwFields`\
 
  [in] Сочетание значений из [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) перечисления, указывающее, какие поля будут заполняться `pPropertyInfo` структуры.
 
- `nRadix`
+ `nRadix`\
 
  [in] Основание системы счисления для использования в любой числовой сведения о форматировании.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Указывает максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
 
- `rgpArgs`
+ `rgpArgs`\
 
  [in, out] Зарезервировано для будущего использования; присвоено значение null.
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in] Зарезервировано для будущего использования; имеет нулевое значение.
 
- `pPropertyInfo`
+ `pPropertyInfo`\
 
  [out] Объект [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры, который заполняется описание свойства.
 

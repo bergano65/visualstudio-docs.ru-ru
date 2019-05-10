@@ -1,6 +1,7 @@
 - name: Руководства по Visual Basic
-  href: index.yml
   items:
+    - name: Руководства по Visual Basic
+      href: index.yml
     - name: Обзор
       items:
         - name: О Visual Studio

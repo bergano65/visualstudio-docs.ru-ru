@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 835509048e888e13b91c53d9e35bd03d7aebdfed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28af715c307ebede5fa264c46cd42b85e8868674
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913505"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457957"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 Указанный тип получаемых сведений для процесса.
@@ -53,24 +56,33 @@ public enum enum_PROCESS_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Участники
- PIF_FILE_NAME Initialize и использование `bstrFileName` поле [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуры.
+## <a name="fields"></a>Поля
+ `PIF_FILE_NAME`\
+ Инициализация и использование `bstrFileName` поле [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуры.
 
- PIF_BASE_NAME Initialize и использование `bstrBaseName` поле `PROCESS_INFO` структуры.
+ `PIF_BASE_NAME`\
+ Инициализация и использование `bstrBaseName` поле `PROCESS_INFO` структуры.
 
- PIF_TITLE Initialize и использование `bstrTitle` поле `PROCESS_INFO` структуры.
+ `PIF_TITLE`\
+ Инициализация и использование `bstrTitle` поле `PROCESS_INFO` структуры.
 
- PIF_PROCESS_ID Initialize и использование `ProcessId` поле `PROCESS_INFO` структуры.
+ `PIF_PROCESS_ID`\
+ Инициализация и использование `ProcessId` поле `PROCESS_INFO` структуры.
 
- PIF_SESSION_ID Initialize и использование `dwSessionId` поле `PROCESS_INFO` структуры.
+ `PIF_SESSION_ID`\
+ Инициализация и использование `dwSessionId` поле `PROCESS_INFO` структуры.
 
- PIF_ATTACHED_SESSION_NAME Initialize и использование `bstrAttachedSessionName` поле `PROCESS_INFO` структуры.
+ `PIF_ATTACHED_SESSION_NAME`\
+ Инициализация и использование `bstrAttachedSessionName` поле `PROCESS_INFO` структуры.
 
- PIF_CREATION_TIME Initialize и использование `CreationTime` поле `PROCESS_INFO` структуры.
+ `PIF_CREATION_TIME`\
+ Инициализация и использование `CreationTime` поле `PROCESS_INFO` структуры.
 
- PIF_FLAGS Initialize и использование `Flags` поле `PROCESS_INFO` структуры.
+ `PIF_FLAGS`\
+ Инициализация и использование `Flags` поле `PROCESS_INFO` структуры.
 
- PIF_ALL заполнения всех полей.
+ `PIF_ALL`\
+ Заполняет все поля.
 
 ## <a name="remarks"></a>Примечания
  Передаваемый [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) метод, чтобы указать, какие поля [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуры должны быть инициализированы.

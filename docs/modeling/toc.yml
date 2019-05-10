@@ -1,13 +1,15 @@
 - name: Анализ и моделирование архитектуры
-  href: analyze-and-model-your-architecture.md
   items:
+    - name: Анализ и моделирование архитектуры
+      href: analyze-and-model-your-architecture.md
     - name: Новые возможности разработки в Visual Studio 2017
       href: what-s-new-for-design-in-visual-studio.md
     - name: Изменение проекта с помощью визуализации и моделирования
       href: scenario-change-your-design-using-visualization-and-modeling.md
     - name: Визуализация кода
-      href: visualize-code.md
       items:
+        - name: Визуализация кода
+          href: visualize-code.md
         - name: Карты кода для представления зависимостей
           href: map-dependencies-across-your-solutions.md
         - name: Совместное использование карт кода
@@ -31,22 +33,25 @@
         - name: Создание схем зависимостей на основе кода
           href: create-layer-diagrams-from-your-code.md
     - name: Создание моделей для приложения
-      href: create-models-for-your-app.md
       items:
+        - name: Создание моделей для приложения
+          href: create-models-for-your-app.md
         - name: 'Схемы зависимостей: Ссылка'
           href: layer-diagrams-reference.md
         - name: 'Схемы зависимостей: Рекомендации'
           href: layer-diagrams-guidelines.md
         - name: Общий доступ к моделям и экспорт схем
-          href: share-models-and-exporting-diagrams.md
           items:
+            - name: Общий доступ к моделям и экспорт схем
+              href: share-models-and-exporting-diagrams.md
             - name: Чтение моделей и схем в других выпусках Visual Studio
               href: read-models-and-diagrams-in-other-visual-studio-editions.md
             - name: Экспорт схем в виде изображений
               href: export-diagrams-as-images.md
     - name: Использование моделей в процессе разработки
-      href: use-models-in-your-development-process.md
       items:
+        - name: Использование моделей в процессе разработки
+          href: use-models-in-your-development-process.md
         - name: Моделирование требований пользователей
           href: model-user-requirements.md
         - name: Моделирование архитектуры приложения
@@ -58,15 +63,17 @@
         - name: Руководство по средствам проектирования архитектуры Visual Studio
           href: visual-studio-architecture-tooling-guidance.md
     - name: Проверка системы в ходе разработки
-      href: validate-your-system-during-development.md
       items:
+        - name: Проверка системы в ходе разработки
+          href: validate-your-system-during-development.md
         - name: Разработка тестов на основе модели
           href: develop-tests-from-a-model.md
         - name: Проверка кода по схемам зависимостей
           href: validate-code-with-layer-diagrams.md
     - name: Расширение схем зависимостей
-      href: extend-layer-diagrams.md
       items:
+        - name: Расширение схем зависимостей
+          href: extend-layer-diagrams.md
         - name: Добавление команд и жестов в схемы зависимостей
           href: add-commands-and-gestures-to-layer-diagrams.md
         - name: Добавление пользовательской проверки архитектуры в схемы зависимостей
@@ -74,8 +81,9 @@
         - name: Добавление пользовательских свойств в схемы зависимостей
           href: add-custom-properties-to-layer-diagrams.md
     - name: "SDK моделирования для Visual Studio\_— доменные языки"
-      href: modeling-sdk-for-visual-studio-domain-specific-languages.md
       items:
+        - name: "SDK моделирования для Visual Studio\_— доменные языки"
+          href: modeling-sdk-for-visual-studio-domain-specific-languages.md
         - name: Начало работы с предметно-ориентированными языками
           href: getting-started-with-domain-specific-languages.md
         - name: 'Сведения о моделях, классах и отношениях'
@@ -83,11 +91,13 @@
         - name: Определение доменного языка
           href: how-to-define-a-domain-specific-language.md
         - name: Настройка и расширение предметно-ориентированного языка
-          href: customizing-and-extending-a-domain-specific-language.md
           items:
+            - name: Настройка и расширение предметно-ориентированного языка
+              href: customizing-and-extending-a-domain-specific-language.md
             - name: Настройка представления схемы
-              href: customizing-presentation-on-the-diagram.md
               items:
+                - name: Настройка представления схемы
+                  href: customizing-presentation-on-the-diagram.md
                 - name: Определение фигур и соединителей
                   href: defining-shapes-and-connectors.md
                 - name: 'Управление цветом, типом линии и другими свойствами фигур'
@@ -113,8 +123,9 @@
             - name: Синтаксис пути домена
               href: domain-path-syntax.md
             - name: Свойства элементов модели
-              href: properties-of-model-elements.md
               items:
+                - name: Свойства элементов модели
+                  href: properties-of-model-elements.md
                 - name: Свойства определения доменного языка
                   href: properties-of-a-dsl-definition.md
                 - name: Свойства доменных классов
@@ -144,8 +155,9 @@
             - name: Совместное использование классов в разных предметно-ориентированных языках с помощью DSL-библиотеки
               href: sharing-classes-between-dsls-by-using-a-dsl-library.md
         - name: Написание специализированного кода в предметно-ориентированном языке
-          href: writing-code-to-customise-a-domain-specific-language.md
           items:
+            - name: Написание специализированного кода в предметно-ориентированном языке
+              href: writing-code-to-customise-a-domain-specific-language.md
             - name: Переопределение и расширение созданных классов
               href: overriding-and-extending-the-generated-classes.md
             - name: Работа с моделями и изменение их в коде программы
@@ -173,8 +185,9 @@
         - name: Проверка в доменных языках
           href: validation-in-a-domain-specific-language.md
         - name: Написание пользовательских команд и действий
-          href: writing-user-commands-and-actions.md
           items:
+            - name: Написание пользовательских команд и действий
+              href: writing-user-commands-and-actions.md
             - name: Изменение стандартной команды меню в предметно-ориентированном языке
               href: how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md
             - name: Добавление команды в контекстное меню
@@ -186,8 +199,9 @@
             - name: Предоставление и ограничение доступа к текущему выделению
               href: how-to-access-and-constrain-the-current-selection.md
         - name: Обработка и распространение изменений
-          href: responding-to-and-propagating-changes.md
           items:
+            - name: Обработка и распространение изменений
+              href: responding-to-and-propagating-changes.md
             - name: Вычисляемые и пользовательские свойства хранилища
               href: calculated-and-custom-storage-properties.md
             - name: Обработчики изменений значений свойств доменов
@@ -199,8 +213,9 @@
             - name: Изменение фигур и соединителей в соответствии с моделью
               href: updating-shapes-and-connectors-to-reflect-the-model.md
         - name: Формирование кода на базе предметно-ориентированного языка
-          href: generating-code-from-a-domain-specific-language.md
           items:
+            - name: Формирование кода на базе предметно-ориентированного языка
+              href: generating-code-from-a-domain-specific-language.md
             - name: Обращение к моделям из текстовых шаблонов
               href: accessing-models-from-text-templates.md
             - name: "Использование Visual Studio\_ModelBus в текстовом шаблоне"
@@ -214,8 +229,9 @@
         - name: "Настройка хранилища файлов и сериализации\_XML"
           href: customizing-file-storage-and-xml-serialization.md
         - name: Развертывание решений на предметно-ориентированных языках
-          href: deploying-domain-specific-language-solutions.md
           items:
+            - name: Развертывание решений на предметно-ориентированных языках
+              href: deploying-domain-specific-language-solutions.md
             - name: Развертывание доменного языка с использование MSI и VSIX
               href: msi-and-vsix-deployment-of-a-dsl.md
             - name: Несколько доменных языков в одном решении
@@ -227,8 +243,9 @@
         - name: "Создание предметно-ориентированного языка на основе\_WPF"
           href: creating-a-wpf-based-domain-specific-language.md
         - name: Работа с решениями на предметно-ориентированных языках
-          href: working-with-domain-specific-language-solutions.md
           items:
+            - name: Работа с решениями на предметно-ориентированных языках
+              href: working-with-domain-specific-language-solutions.md
             - name: О доменных языках
               href: about-domain-specific-languages.md
             - name: Обзор средств доменных языков
@@ -254,11 +271,13 @@
         - name: Справка по API SDK моделирования для Visual Studio
           href: api-reference-for-modeling-sdk-for-visual-studio.md
     - name: Создание кода и текстовые шаблоны T4
-      href: code-generation-and-t4-text-templates.md
       items:
+        - name: Создание кода и текстовые шаблоны T4
+          href: code-generation-and-t4-text-templates.md
         - name: Создание кода во время разработки с помощью текстовых шаблонов T4
-          href: design-time-code-generation-by-using-t4-text-templates.md
           items:
+            - name: Создание кода во время разработки с помощью текстовых шаблонов T4
+              href: design-time-code-generation-by-using-t4-text-templates.md
             - name: Пошаговое руководство. Создание кода с помощью текстовых шаблонов
               href: walkthrough-generating-code-by-using-text-templates.md
             - name: Создание кода в процессе построения
@@ -270,11 +289,13 @@
         - name: Создание текста во время выполнения с помощью текстовых шаблонов T4
           href: run-time-text-generation-with-t4-text-templates.md
         - name: "Написание текстового шаблона\_T4"
-          href: writing-a-t4-text-template.md
           items:
+            - name: "Написание текстового шаблона\_T4"
+              href: writing-a-t4-text-template.md
             - name: Директивы текстовых шаблонов T4
-              href: t4-text-template-directives.md
               items:
+                - name: Директивы текстовых шаблонов T4
+                  href: t4-text-template-directives.md
                 - name: Директива Template T4
                   href: t4-template-directive.md
                 - name: Директива Parameter T4
@@ -296,8 +317,9 @@
             - name: "Обращение к Visual\_Studio и другим основным приложениям из текстового шаблона"
               href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
             - name: Использование escape-последовательностей в текстовых шаблонах
-              href: using-escape-sequences-in-text-templates.md
               items:
+                - name: Использование escape-последовательностей в текстовых шаблонах
+                  href: using-escape-sequences-in-text-templates.md
                 - name: Создание шаблонов из шаблонов с помощью escape-последовательностей
                   href: how-to-generate-templates-from-templates-by-using-escape-sequences.md
         - name: "Отладка текстового шаблона\_T4"
@@ -307,13 +329,15 @@
         - name: Практическое руководство по текстовым шаблонам
           href: how-to-dot-dot-dot-with-text-templates.md
         - name: "Настройка преобразования текста\_T4"
-          href: customizing-t4-text-transformation.md
           items:
+            - name: "Настройка преобразования текста\_T4"
+              href: customizing-t4-text-transformation.md
             - name: Процесс преобразования текстового шаблона
               href: the-text-template-transformation-process.md
             - name: "Создание пользовательских обработчиков директив для текстовых шаблонов\_T4"
-              href: creating-custom-t4-text-template-directive-processors.md
               items:
+                - name: "Создание пользовательских обработчиков директив для текстовых шаблонов\_T4"
+                  href: creating-custom-t4-text-template-directive-processors.md
                 - name: Развертывание пользовательского обработчика директив
                   href: deploying-a-custom-directive-processor.md
                 - name: Пошаговое руководство. Создание пользовательского обработчика директив
@@ -321,8 +345,9 @@
             - name: "Вызов преобразования текста в расширении\_VS"
               href: invoking-text-transformation-in-a-vs-extension.md
             - name: Обработка текстовых шаблонов с помощью пользовательского основного приложения
-              href: processing-text-templates-by-using-a-custom-host.md
               items:
+                - name: Обработка текстовых шаблонов с помощью пользовательского основного приложения
+                  href: processing-text-templates-by-using-a-custom-host.md
                 - name: Пошаговое руководство. Создание пользовательского основного приложения для текстовых шаблонов
                   href: walkthrough-creating-a-custom-text-template-host.md
         - name: Справочник API по текстовым шаблонам T4

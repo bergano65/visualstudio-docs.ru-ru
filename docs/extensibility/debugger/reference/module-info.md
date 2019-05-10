@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3a11e368b6260d00f3f6ed0b19d94aa26bd31a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58531e64c88c89a92b5eee7f2eac7067cf42775f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865470"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458010"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 Описание определенного модуля (DLL, EXE-файла или сборки).
@@ -59,29 +62,41 @@ public struct MODULE_INFO { 
 ```
 
 ## <a name="members"></a>Участники
- dwValidFields объект сочетание флагов из [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) перечисление, указывающее, какие поля заполнены.
+ `dwValidFields`\
+ Сочетание флагов из [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) перечисление, указывающее, какие поля заполнены.
 
- m_bstrName имя модуля.
+ `m_bstrName`\
+ Имя модуля.
 
- m_bstrUrl URL-адрес модуля.
+ `m_bstrUrl`\
+ URL-адрес модуля.
 
- m_bstrVersion версии модуля.
+ `m_bstrVersion`\
+ Версия модуля.
 
- m_bstrDebugMessage необязательное сообщение о модуле, например, «не удается загрузить символы.»
+ `m_bstrDebugMessage`\
+ Необязательное сообщение о модуле, например, «не удается загрузить символы.»
 
- m_addrLoadAddress адрес загрузки модуля.
+ `m_addrLoadAddress`\
+ Адрес загрузки модуля.
 
- m_addrPreferredLoadAddress предпочтительный адрес загрузки модуля.
+ `m_addrPreferredLoadAddress`\
+ Предпочтительный адрес загрузки модуля.
 
- m_dwSize размер модуля.
+ `m_dwSize`\
+ Размер модуля.
 
- m_dwLoadOrder порядок загрузки модуля.
+ `m_dwLoadOrder`\
+ Порядок загрузки модуля.
 
- m_TimeStamp время последнего изменения файла символов.
+ `m_TimeStamp`\
+ Время последнего изменения файла символов.
 
- m_bstrUrlSymbolLocation расположение файла символов (например, «.\\«) указан в модуле. Использовать как начальную точку для найти символы для модуля.
+ `m_bstrUrlSymbolLocation`\
+ Расположение файла символов (например, «.\\«) указан в модуле. Использовать как начальную точку для найти символы для модуля.
 
- m_dwModuleFlags объект сочетание флагов из [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) перечисление, описывающее модуля.
+ `m_dwModuleFlags`\
+ Сочетание флагов из [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) перечисление, описывающее модуля.
 
 ## <a name="remarks"></a>Примечания
  Эта структура передается [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) метод, где он заполняется.

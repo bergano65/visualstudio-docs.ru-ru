@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3019671b98d3eb17c92d97c368f2f7338ee55a1d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913344"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460714"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Указывает состояние потока.
@@ -45,16 +48,21 @@ public enum enum_THREADSTATE { 
 };
 ```
 
-## <a name="members"></a>Участники
- THREADSTATE_RUNNING указывает, что поток выполняется.
+## <a name="fields"></a>Поля
+ `THREADSTATE_RUNNING`\
+ Указывает, что поток выполняется.
 
- THREADSTATE_STOPPED указывает, что поток остановлен из-за точки останова.
+ `THREADSTATE_STOPPED`\
+ Указывает, что поток остановлен из-за точки останова.
 
- THREADSTATE_FRESH указывает, что поток будет создана, но еще не выполняется код.
+ `THREADSTATE_FRESH`\
+ Указывает, что поток будет создана, но еще не выполняется код.
 
- THREADSTATE_DEAD указывает, что поток бездействует.
+ `THREADSTATE_DEAD`\
+ Указывает, что поток бездействует.
 
- THREADSTATE_FROZEN указывает, что поток заморожен (выполнение не может выполняться).
+ `THREADSTATE_FROZEN`\
+ Указывает, что поток заморожен (выполнение не может выполняться).
 
 ## <a name="remarks"></a>Примечания
  Используется для `dwThreadState` поле [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структуры.

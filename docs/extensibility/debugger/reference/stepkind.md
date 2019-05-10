@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa9c1805c7eaba480cd46ebc6e73ee370e3cbb22
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864795"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460773"
 ---
 # <a name="stepkind"></a>STEPKIND
 Задает тип шага для пошагового выполнения.
@@ -43,14 +46,18 @@ public enum enum_STEPKIND { 
 };
 ```
 
-## <a name="members"></a>Участники
- STEP_INTO шаги с заходом в функцию.
+## <a name="fields"></a>Поля
+ `STEP_INTO`\
+ Шаг с заходом в функцию.
 
- Действия STEP_OVER обходом функции.
+ `STEP_OVER`\
+ Шаги с обходом функции.
 
- STEP_OUT выходит из функции.
+ `STEP_OUT`\
+ Выходит из функции.
 
- Действия STEP_BACKWARDS обратно в функцию.
+ `STEP_BACKWARDS`\
+ Переход обратно в функцию.
 
 ## <a name="remarks"></a>Примечания
  Передается в качестве аргумента для [шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md) метод.

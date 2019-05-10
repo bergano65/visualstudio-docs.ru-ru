@@ -45,7 +45,7 @@ ms.locfileid: "63424946"
   
      В **обозревателе решений**, дважды щелкните файл IService1.vb или IService1.cs и найдите следующую строку:  
   
-     [! code-csharp [WCFWalkthrough № 4] (.. /Snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/CS/IService1 (2).cs 4)] [! кода — vb [WCFWalkthrough № 4] (.. /Snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/VB/IService1 (2).vb 4)]  
+     [!code-csharp [WCFWalkthrough № 4](../Snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/CS/IService1 (2).cs 4)]   [!кода — vb [WCFWalkthrough № 4](../Snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/VB/IService1 (2).vb 4)]  
   
      Измените тип параметра `value` на `String`:  
   
@@ -58,7 +58,7 @@ ms.locfileid: "63424946"
   
      В **обозревателе решений**, дважды щелкните файл Service1.vb или Service1.cs и найдите следующую строку:  
   
-     [! code-csharp [WCFWalkthrough #5] (.. /Snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/CS/Service1 (2).cs #5)] [! кода — vb [WCFWalkthrough #5] (.. /Snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/VB/Service1 (2).vb #5)]  
+     [!code-csharp [WCFWalkthrough #5](../Snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/CS/Service1 (2).cs #5)]   [!кода — vb [WCFWalkthrough #5](../Snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/VB/Service1 (2).vb #5)]  
   
      Измените тип параметра значения на `String`:  
   

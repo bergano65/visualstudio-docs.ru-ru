@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8609452919b5f2c2c3f94a7ef3853e1559b33e77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e1c6c70bf93d21953048f2a7e63ec051e5ae2b40
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915746"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226682"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 Этот метод возвращает поле, представляющее полному имени метода.
@@ -40,16 +43,16 @@ int GetMethodFieldsByName(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszFullName`
+## <a name="parameters"></a>Параметры
+ `pszFullName`\
 
  [in] Имя метода.
 
- `nameMatch`
+ `nameMatch`\
 
  [in] Выбирает тип соответствия, например, с учетом регистра.
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) перечислитель для полей, связанных с помощью этого метода.
 

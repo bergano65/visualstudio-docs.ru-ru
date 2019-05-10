@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6dbf712fc21338f8f5c4699ca2e11d5344dbad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915312"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224193"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Получает указанное число байтов из объекта.
@@ -40,16 +43,16 @@ int GetData(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dataSize`
+## <a name="parameters"></a>Параметры
+ `dataSize`\
 
  [in] Число байтов для получения ( `data` массива должен вмещать не менее это число байтов).
 
- `sizeGotten`
+ `sizeGotten`\
 
  [out] Возвращает число фактически извлеченных байтов.
 
- `data`
+ `data`\
 
  [in, out] Массив, заполненный запрошенные данные.
 
