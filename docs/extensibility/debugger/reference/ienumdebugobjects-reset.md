@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebeef5502787ad5ab745d72e42205d86320a8f20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 786adff86b35ed4d33b07a4144544adffe53ea75
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914471"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226461"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
 Этот метод выполняет сброс перечисления к первому элементу.
@@ -32,7 +35,7 @@ HRESULT Reset(void);
 int Reset();
 ```
 
-#### <a name="parameters"></a>Параметры
+## <a name="parameters"></a>Параметры
  Нет
 
 ## <a name="return-value"></a>Возвращаемое значение

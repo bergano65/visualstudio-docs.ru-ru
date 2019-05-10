@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2bffa499d24bc38008982c990efd19205e95f6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 75d934b4896614655a2043e1f6ba549d72f99e2d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869035"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457471"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 Извлекает уникальный идентификатор для метрики вычислителя выражения, заданную ее именем.
@@ -40,20 +43,20 @@ HRESULT GetEEMetricGuid(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `guidLang`
+## <a name="parameters"></a>Параметры
+ `guidLang`\
 
  [in] Уникальный идентификатор языка программирования.
 
- `guidVendor`
+ `guidVendor`\
 
  [in] Уникальный идентификатор поставщика.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Имя метрики.
 
- `pguidValue`
+ `pguidValue`\
 
  [out] Возвращает уникальный идентификатор метрики.
 

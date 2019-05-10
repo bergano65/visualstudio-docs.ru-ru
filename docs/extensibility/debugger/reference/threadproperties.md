@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55b3334c8bd28d3975f06aa39ca8c7fd719f1f9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59b0fd83202ea8a5514d1ed637404d4864bf6b57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913357"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460726"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Описывает свойства потока.
@@ -49,19 +52,26 @@ public struct THREADPROPERTIES { 
 ```
 
 ## <a name="members"></a>Участники
- dwFields объект сочетание флагов из [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) перечисление, описывающее, какие поля в этой структуре являются допустимыми.
+ `dwFields`\
+ Сочетание флагов из [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) перечисление, описывающее, какие поля в этой структуре являются допустимыми.
 
- dwThreadId идентификатор потока.
+ `dwThreadId`\
+ Идентификатор потока.
 
- счетчик приостановок dwSuspendCount потока.
+ `dwSuspendCount`\
+ Число приостановок потока.
 
- значение dwThreadState объект из [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) перечисление, указывающее состояние работы потока.
+ `dwThreadState`\
+ Значение из [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) перечисление, указывающее состояние работы потока.
 
- bstrPriority строка, указывающая приоритет потока; Например «Выше среднего», «Normal» или «Critical времени».
+ `bstrPriority`\
+ Строка, указывающая приоритет потока; Например «Выше среднего», «Normal» или «Critical времени».
 
- bstName имя потока.
+ `bstName`\
+ Имя потока.
 
- bstrLocation расположение потока (обычно верхний кадр стека), обычно выраженное как имя метода, где выполнение приостановлено.
+ `bstrLocation`\
+ Расположение потока (обычно верхний кадр стека), обычно выраженное как имя метода, где выполнение приостановлено.
 
 ## <a name="remarks"></a>Примечания
  Эта структура заполняется с помощью вызова [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) метод. Сведения, поэтому возвращаемые обычно используется при заполнении **потоков** окна.

@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b71d4b8ea58cbbe36e3fe48228789d4aee02af53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41a7a699506853d6891c7d7b66fef4082814c06a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567796"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460622"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Создание и настройка наборов данных в Visual Studio
+# <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Практическое руководство. Создание и настройка наборов данных в Visual Studio
 
 Набор данных является набор объектов для хранения данных из базы данных в памяти и поддерживает отслеживание изменений для включения создания, чтения, обновления и удаления (CRUD) с этими данными без необходимости всегда необходимо подключение к базе данных. Наборы данных были разработаны для простых *формы поверх данных* бизнес-приложений. Для новых приложений рассмотрите возможность использования Entity Framework для хранения и моделирования данных в памяти. Для работы с наборами данных, должны иметь базовые знания о основными понятиями баз данных.
 

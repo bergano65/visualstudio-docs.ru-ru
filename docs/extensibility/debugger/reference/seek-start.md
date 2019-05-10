@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e003b74faeb7c6ed165c43380a7c4c6b0520ea0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 341b321b529bc1359ba576cc26ec20cc99e96cb3
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864825"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458396"
 ---
 # <a name="seekstart"></a>SEEK_START
 Задает положение, с которого следует начать поиск в потоке Дизассемблированный код.
@@ -45,16 +48,21 @@ public enum enum_SEEK_START { 
 };
 ```
 
-## <a name="members"></a>Участники
- SEEK_START_BEGIN начинает поиск с начала текущего документа.
+## <a name="fields"></a>Поля
+ `SEEK_START_BEGIN`\
+ Начинает поиск с начала текущего документа.
 
- SEEK_START_END начинает поиск в конце текущего документа.
+ `SEEK_START_END`\
+ Начинает поиск в конце текущего документа.
 
- SEEK_START_CURRENT начинает поиск в текущей позиции текущего документа.
+ `SEEK_START_CURRENT`\
+ Начинает поиск в текущей позиции текущего документа.
 
- SEEK_START_CODECONTEXT начинает поиск в контексте данного кода текущего документа.
+ `SEEK_START_CODECONTEXT`\
+ Начинает поиск в контексте данного кода текущего документа.
 
- SEEK_START_CODELOCID начинает поиск в расположение идентификатора данного кода. Идентификаторы расположение кода можно получить путем вызова [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
+ `SEEK_START_CODELOCID`\
+ Начинает поиск в расположение идентификатора данного кода. Идентификаторы расположение кода можно получить путем вызова [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
 
 ## <a name="remarks"></a>Примечания
  Передается в качестве аргумента для [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) метод.
