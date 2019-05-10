@@ -10,28 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5519328ef69f98737a7744f0162bdc0951433a60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c164174b88ca9fdd815668084c1447e20de072c
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994715"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476566"
 ---
 # <a name="extend-dependency-diagrams"></a>Расширение схем зависимостей
 
-Можно написать код для создания и обновления схем зависимостей, а также для проверки структуры программного кода по схемам зависимостей в Visual Studio. Вы можете добавить команды, которые отображаются в контекстном меню схем, настроить жесты перетаскивания, а также получить доступ к модели слоев из текстовых шаблонов. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension (VSIX) и предоставить их другим пользователям Visual Studio.
+Можно написать код для создания и обновления схем зависимостей и для проверки структуры программного кода по схемам зависимостей в Visual Studio. Вы можете добавить команды, которые отображаются в контекстном меню схем, настроить жесты перетаскивания, а также получить доступ к модели слоев из текстовых шаблонов. Вы можете упаковать эти расширения в расширение Visual Studio Integration Extension (VSIX) и предоставить их другим пользователям Visual Studio.
 
- Дополнительные сведения о диаграммах зависимостей см. в разделе:
-
-- [Схемы зависимостей: справочник](../modeling/layer-diagrams-reference.md)
-
-- [Схемы зависимостей: рекомендации](../modeling/layer-diagrams-guidelines.md)
-
-- [Создание схем зависимостей на основе кода](../modeling/create-layer-diagrams-from-your-code.md)
-
-- [Проверка кода по схемам зависимостей](../modeling/validate-code-with-layer-diagrams.md)
-
-## <a name="prereqs"></a> Требования
+## <a name="requirements"></a>Требования
 
 На компьютере, где планируется разрабатывать расширения слоев, должны быть установлены следующие компоненты:
 
@@ -43,16 +33,7 @@ ms.locfileid: "62994715"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-На компьютере, где планируется выполнять расширения слоев, должна быть установлена подходящая версия Visual Studio.
-
-Чтобы узнать, какие версии Visual Studio поддерживают схемы зависимостей, см. в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
-
-## <a name="in-this-section"></a>В этом разделе
- [Добавление команд и жестов в схемы зависимостей](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
-
- [Добавление пользовательской проверки архитектуры в схемы зависимостей](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
-
- [Добавление пользовательских свойств в схемы зависимостей](../modeling/add-custom-properties-to-layer-diagrams.md)
+Необходимо иметь подходящий выпуск Visual Studio, установленной на компьютере, где вы хотите выполнять расширения слоев. Чтобы узнать, какие выпуски Visual Studio поддерживают схемы зависимостей, см. в разделе [Edition поддержка для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="see-also"></a>См. также
 
