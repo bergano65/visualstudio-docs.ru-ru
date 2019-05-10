@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16d2b9ae9c446d4c8082a8c35c9e4d1810233b95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f3485aa2e5650345c0b14c6cb8093034043285a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913865"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461012"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Указывает тип сообщения и причины.
@@ -47,18 +50,24 @@ public enum enum_MESSAGETYPE { 
 };
 ```
 
-## <a name="members"></a>Участники
- MT_OUTPUTSTRING указывает, что должно быть отправлено сообщение в окно вывода. Это взаимно исключают друг друга из `MT_MESSAGEBOX`.
+## <a name="fields"></a>Поля
+ `MT_OUTPUTSTRING`\
+ Указывает, что сообщения должны отправляться в окне вывода. Это взаимно исключают друг друга из `MT_MESSAGEBOX`.
 
- MT_MESSAGEBOX указывает, что сообщение должно отображаться в окне сообщения. Это взаимно исключают друг друга из `MT_OUTPUTSTRING`.
+ `MT_MESSAGEBOX`\
+ Указывает, что сообщения должны быть видны в окне сообщения. Это взаимно исключают друг друга из `MT_OUTPUTSTRING`.
 
- Значение маски MT_TYPE_MASK объект для изоляции назначения для сообщения.
+ `MT_TYPE_MASK`\
+ Значение маски для изоляции назначения для сообщения.
 
- MT_REASON_EXCEPTION указывает, что окно сообщения отображается из-за исключения. Это взаимно исключают друг друга из `MT_REASON_TRACEPOINT`.
+ `MT_REASON_EXCEPTION`\
+ Указывает, что окно сообщения отображается в результате исключения. Это взаимно исключают друг друга из `MT_REASON_TRACEPOINT`.
 
- MT_REASON_TRACEPOINT указывает, что окно сообщения отображается в результате обращения к точке трассировки. Это взаимно исключают друг друга для `MT_REASON_EXCEPTION`.
+ `MT_REASON_TRACEPOINT`\
+ Указывает, что в результате обращения к точке трассировки отображается окно сообщения. Это взаимно исключают друг друга для `MT_REASON_EXCEPTION`.
 
- Значение маски MT_REASON_MASK объект для изоляции причина для отображаемого сообщения.
+ `MT_REASON_MASK`\
+ Значение маски для изоляции причина для отображаемого сообщения.
 
 ## <a name="remarks"></a>Примечания
  Эти значения возвращаются из [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) и [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) методы.

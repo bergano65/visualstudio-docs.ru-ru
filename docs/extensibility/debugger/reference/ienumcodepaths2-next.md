@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803e8208ff1838c61da844b39d1423e8f99331cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 56f6c2b806e1e0a0e3d070722d27b6542ab39224
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223620"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 Возвращает следующий набор элементов из перечисления.
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `celt`
+## <a name="parameters"></a>Параметры
+ `celt`\
 
  [in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
 
- `rgelt`
+ `rgelt`\
 
  [in, out] Массив [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) элементов для заполнения.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
 

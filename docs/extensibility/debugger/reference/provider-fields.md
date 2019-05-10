@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c055c1cf9fffde227d4e52a9764b2559a2342b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 838a7dc0024e69335bf5c49c664bd491a6949d08
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864802"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460917"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 Указывает свойства, связанные с поставщиком программы.
@@ -39,10 +42,12 @@ public enum enum_PROVIDER_FIELDS {
 };
 ```
 
-## <a name="members"></a>Участники
- PFIELD_PROGRAM_NODES `ProgramNodes` поле является допустимым.
+## <a name="fields"></a>Поля
+ `PFIELD_PROGRAM_NODES`\
+ `ProgramNodes` Поле является допустимым.
 
- PFIELD_IS_DEBUGGER_PRESENT `fIsDebuggerPresent` поле является допустимым.
+ `PFIELD_IS_DEBUGGER_PRESENT`\
+ `fIsDebuggerPresent` Поле является допустимым.
 
 ## <a name="remarks"></a>Примечания
  Эти значения возвращаются в `Fields` членом [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры, чтобы указать, какие поля структуры явно были заполнены.

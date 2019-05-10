@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7b28010f117b1bb6616250f1e188bd5acb38cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 77306706c15be37a975742be917523095bec587f
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915864"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226436"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Этот метод сопоставляет контекст документа в массив адресов отладки.
@@ -42,20 +45,20 @@ int GetAddressesFromContext(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pDocContext`
+## <a name="parameters"></a>Параметры
+ `pDocContext`\
 
  [in] Контекст документа.
 
- `fStatmentOnly`
+ `fStatmentOnly`\
 
  [in] Если значение равно TRUE, ограничивает адреса отладки для одной инструкции.
 
- `ppEnumBegAddresses`
+ `ppEnumBegAddresses`\
 
  [out] Возвращает перечислитель для начала отладки адреса, связанные с этой инструкции или строке.
 
- `ppEnumEndAddresses`
+ `ppEnumEndAddresses`\
 
  [out] Возвращает [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) перечислитель для конечного адреса отладки, связанные с этой инструкции или строке.
 

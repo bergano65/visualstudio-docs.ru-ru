@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cd767b0bedc60e62154c3d4f4d834c769a16b4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 49f30f6b5bb1231f6bcbd77097454ae7a73a7a2c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868811"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458596"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 Извлекает уникальный идентификатор метрики с заданным именем.
@@ -40,20 +43,20 @@ private int GetMetricGuid(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszType`
+## <a name="parameters"></a>Параметры
+ `pszType`\
 
  [in] Тип метрики.
 
- `guidSection`
+ `guidSection`\
 
  [in] Уникальный идентификатор раздела.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Имя метрики.
 
- `pguidValue`
+ `pguidValue`\
 
  [out] Возвращает уникальный идентификатор метрики.
 

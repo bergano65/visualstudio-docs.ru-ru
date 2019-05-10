@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 385ef2aaaadc8d1f66eaf245f06dbfd299638fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f63b43c1e7e8035320c6d4c7b527e069904191a5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916722"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459011"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Извлекает список запуска программ из указанного процесса.
@@ -44,8 +47,8 @@ int GetProviderProcessData(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `Flags`
+## <a name="parameters"></a>Параметры
+ `Flags`\
 
  [in] Сочетание флагов из [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) перечисления. Для этого вызова типичны следующие флаги:
 
@@ -56,19 +59,19 @@ int GetProviderProcessData(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был подключен к, но не запускается в отладчике.|
 |`PFLAG_GET_PROGRAM_NODES`|Вызывающий объект запрашивает список узлов, программы должны быть возвращены.|
 
- `pPort`
+ `pPort`\
 
  [in] Порт вызывающий процесс выполняется на.
 
- `processId`
+ `processId`\
 
  [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, содержащую рассматриваемый идентификатор процесса, в которой находится программа.
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in] Массив идентификаторов GUID для обработчиков отладки, назначенный для отладки этого процесса (они будут использоваться для фильтрации программы, которые возвращаются реальные на основе что поддержки предоставленного ядер; Если все обработчики не заданы, то будут возвращены все программы).
 
- `pProcess`
+ `pProcess`\
 
  [out] Объект [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры, который заполняется запрашиваемые данные.
 

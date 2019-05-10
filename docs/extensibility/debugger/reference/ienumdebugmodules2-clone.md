@@ -1,52 +1,54 @@
 ---
 title: IEnumDebugModules2::Clone | Документация Майкрософт
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IEnumDebugModules2::Clone
 helpviewer_keywords:
 - IEnumDebugModules2::Clone
 ms.assetid: fd6d3abc-20d9-4f6f-9c8e-5bd29f68d47d
-caps.latest.revision: 10
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 62e8414bb880dfe19e4893578dfc7396d0bfe7c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a56330eb2992e517fd76fff12b6a35351c080ef1
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867037"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226723"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Возвращает копию текущего перечисления как отдельный объект.
 
-Возвращает копию текущего перечисления как отдельный объект.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp#  
-HRESULT Clone(  
-   IEnumDebugModules2** ppEnum  
-);  
-```  
-  
-```csharp  
-int Clone(  
-   out IEnumDebugModules2 ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `ppEnum`  
- [out] Возвращает копию этого перечисления как отдельный объект.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Копия перечисления имеет то же состояние, что исходный во время вызова этого метода. Тем не менее копии и исходного состояния отделены и могут изменяться по отдельности.  
-  
-## <a name="see-also"></a>См. также  
- [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT Clone(
+   IEnumDebugModules2** ppEnum
+);
+```
+
+```csharp
+int Clone(
+   out IEnumDebugModules2 ppEnum
+);
+```
+
+## <a name="parameters"></a>Параметры
+ `ppEnum`\
+
+ [out] Возвращает копию этого перечисления как отдельный объект.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Копия перечисления имеет то же состояние, что исходный во время вызова этого метода. Тем не менее копии и исходного состояния отделены и могут изменяться по отдельности.
+
+## <a name="see-also"></a>См. также
+- [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

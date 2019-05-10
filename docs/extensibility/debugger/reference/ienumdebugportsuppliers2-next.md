@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eba9fbf986579ad43677677b8397995119211a24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8ec7dc97d0cfe7940939f1c253a22b92d36f9537
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914866"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225445"
 ---
 # <a name="ienumdebugportsuppliers2next"></a>IEnumDebugPortSuppliers2::Next
 Возвращает следующий набор элементов из перечисления.
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `celt`
+## <a name="parameters"></a>Параметры
+ `celt`\
 
  [in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
 
- `rgelt`
+ `rgelt`\
 
  [in, out] Массив [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) элементов для заполнения.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
 

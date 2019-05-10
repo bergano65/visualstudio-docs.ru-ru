@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803d9569c611e3c4cd70f2c82ecd525716d8ddb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f6fb974bd5affc89eeacbfccace5c1e89218db5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913531"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457927"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 Задает требуемые свойства должны быть получены от поставщика программы.
@@ -49,20 +52,27 @@ public enum enum_PROVIDER_FLAGS {
 };
 ```
 
-## <a name="members"></a>Участники
- Указаны флаги PFLAG_NONE нет.
+## <a name="fields"></a>Поля
+ `PFLAG_NONE`\
+ Флаги не указан.
 
- Список программ на разных компьютерах вызывающий PFLAG_REMOTE_PORT [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_REMOTE_PORT`\
+ Вызывающий объект хочет список программ на разных компьютерах [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- PFLAG_DEBUGGEE процесс находится в состоянии отладки данным экземпляром класса [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_DEBUGGEE`\
+ Процесс находится в состоянии отладки данным экземпляром класса [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- PFLAG_ATTACH_TODEBUGGEE [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] присоединяется к отлаживаемой программы, но не запускать его.
+ `PFLAG_ATTACH_TODEBUGGEE`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] присоединяется к отлаживаемой программы, но не запускать его.
 
- PFLAG_REASON_WATCH [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] наблюдении за событиями.
+ `PFLAG_REASON_WATCH`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] наблюдает за событиями.
 
- Вызывающий PFLAG_GET_PROGRAM_NODES `ProgramNodes` поле [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры.
+ `PFLAG_GET_PROGRAM_NODES`\
+ Вызывающий `ProgramNodes` поле [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры.
 
- Вызывающий PFLAG_GET_IS_DEBUGGER_PRESENT `fIsTheDebuggerPresent` поле `PROVIDER_PROCESS_DATA` структуры.
+ `PFLAG_GET_IS_DEBUGGER_PRESENT`\
+ Вызывающий `fIsTheDebuggerPresent` поле `PROVIDER_PROCESS_DATA` структуры.
 
 ## <a name="remarks"></a>Примечания
  Эти флаги передаются следующие методы:

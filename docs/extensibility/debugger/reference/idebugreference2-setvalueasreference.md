@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4af17f49e95818ed664e74aab53687540f653ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0fc6e2fee354d6dcc76676bf02d4ed88e1799f26
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916328"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458644"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 Задает значение ссылки из другой ссылки. Зарезервировано для будущего использования.
@@ -42,20 +45,20 @@ int SetValueAsReference ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `rgpArgs`
+## <a name="parameters"></a>Параметры
+ `rgpArgs`\
 
  [in] Массив [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объектов, используемых для определения способа установки значения ссылки.
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in] Количество ссылок в массиве.
 
- `pValue`
+ `pValue`\
 
  [in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объект, из которого требуется задать значение свойства.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
 

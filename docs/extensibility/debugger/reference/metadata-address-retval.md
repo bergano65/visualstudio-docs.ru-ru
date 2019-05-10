@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913891"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460975"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Эта структура представляет значение, возвращаемое из метода или функции.
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>Термины
- Идентификатор метода tokMethod касается это возвращаемое значение.
+## <a name="members"></a>Участники
+ `tokMethod`\
+ Идентификатор метода это возвращаемое значение соответствует.
 
- dwCorType базовый тип возвращаемого значения. Это значение из `CorElementType` перечисление, определенное в [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] файле corhdr.h пакета SDK.
+ `dwCorType`\
+ Базовый тип возвращаемого значения. Это значение из `CorElementType` перечисление, определенное в [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] файле corhdr.h пакета SDK.
 
- dwSigSize размер подписи возвращаемое значение (в `rgSig`).
+ `dwSigSize`\
+ Размер подписи возвращаемое значение (в `rgSig`).
 
- rgSig массив байтов, формирующие подпись возвращаемого значения.
+ `rgSig`\
+ Массив байтов, формирующие подпись возвращаемого значения.
 
 ## <a name="remarks"></a>Примечания
  Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_RETVAL` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2621b88622e99ac95533e388197e483f2925f897
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d6f416d284c1712f8e52b2655a74e08f6f9cfe1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420831"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458331"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Задает тип сведений о символах для извлечения.
@@ -42,10 +45,12 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>Участники
- SSIF_NONE указывает на отсутствие флагов
+## <a name="fields"></a>Поля
+ `SSIF_NONE`\
+ Указывает флаги не
 
- SSIF_VERBOSE_SEARCH_INFO возвращает все совпадения при поиске путей, используемых для поиска символов
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ Возвращает все совпадения при поиске путей, используемых для поиска символов
 
 ## <a name="remarks"></a>Примечания
  Эти флаги передаются в качестве параметра [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) метод, чтобы определить объем сведений, завершился сбоем.

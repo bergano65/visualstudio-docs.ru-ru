@@ -1,6 +1,7 @@
 - name: 'Учебники по C#'
-  href: index.yml
   items:
+    - name: 'Учебники по C#'
+      href: index.yml
     - name: Обзор
       items:
         - name: О Visual Studio

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ffdf2359b719be0fa3cf0a17ae4ed70bc36b673
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913927"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461061"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Задает флаги запуска отладки.
@@ -43,14 +46,18 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="members"></a>Участники
-LAUNCH_DEBUG запускает процесс для отладки.
+## <a name="fields"></a>Поля
+`LAUNCH_DEBUG`\
+Запускает процесс для отладки.
 
-LAUNCH_NODEBUG запускает процесс без его отладки.
+`LAUNCH_NODEBUG`\
+Запускает процесс без его отладки.
 
-LAUNCH_ENABLE_ENC DEPRECATED, DO NOT USE.
+`LAUNCH_ENABLE_ENC`\
+РЕКОМЕНДУЕТСЯ ИСПОЛЬЗОВАТЬ, НЕ ИСПОЛЬЗУЙТЕ.
 
-LAUNCH_MERGE_ENV запускает процесс и объединяет среды с помощью запуска сервера.
+`LAUNCH_MERGE_ENV`\
+Запускает процесс и выполняет слияние среды с помощью запуска сервера.
 
 ## <a name="remarks"></a>Примечания
 Эти значения передаются в качестве аргумента [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) метод.

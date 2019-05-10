@@ -6,8 +6,9 @@
 - name: Средства Visual Studio для Apache Cordova
   href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Набор средств Visual Studio для Unity
-  href: visual-studio-tools-for-unity.md
   items:
+    - name: Набор средств Visual Studio для Unity
+      href: visual-studio-tools-for-unity.md
     - name: "Начало работы с инструментами Visual\_Studio для\_Unity"
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: "Использование инструментов Visual\_Studio для\_Unity"
@@ -15,8 +16,9 @@
     - name: "Использование .NET\_4.x в Unity"
       href: unity-scripting-upgrade.md
     - name: "Программирование с инструментами Visual\_Studio для\_Unity"
-      href: programming-visual-studio-tools-for-unity.md
       items:
+        - name: "Программирование с инструментами Visual\_Studio для\_Unity"
+          href: programming-visual-studio-tools-for-unity.md
         - name: 'Настройка файлов проекта, созданных в VSTU'
           href: customize-project-files-created-by-vstu.md
         - name: Совместное использование обратного вызова журнала Unity с VSTU
@@ -32,11 +34,13 @@
     - name: DevOps с приложениями Unity
       href: application-lifecycle-management-alm-with-unity-apps.md
 - name: Visual C++ для разработки кроссплатформенных мобильных приложений
-  href: visual-cpp-for-cross-platform-mobile-development.md
   items:
+    - name: Visual C++ для разработки кроссплатформенных мобильных приложений
+      href: visual-cpp-for-cross-platform-mobile-development.md
     - name: Установка Visual C++ для разработки кроссплатформенных мобильных приложений
-      href: install-visual-cpp-for-cross-platform-mobile-development.md
       items:
+        - name: Установка Visual C++ для разработки кроссплатформенных мобильных приложений
+          href: install-visual-cpp-for-cross-platform-mobile-development.md
         - name: Install and Configure Tools to Build using iOS
           href: install-and-configure-tools-to-build-using-ios.md
     - name: Создание приложения Android Native Activity
@@ -50,8 +54,9 @@
     - name: Примеры разработки кроссплатформенных мобильных приложений
       href: cross-platform-mobile-development-examples.md
     - name: Свойства кроссплатформенного проекта C++
-      href: cross-platform-prop-pages.md
       items:
+        - name: Свойства кроссплатформенного проекта C++
+          href: cross-platform-prop-pages.md
         - name: Общие свойства проекта (Android C++)
           href: general-android-prop-page.md
         - name: Свойства отладчика Android
@@ -67,8 +72,9 @@
 - name: Разработка приложений для универсальной платформы Windows (UWP)
   href: develop-apps-for-the-universal-windows-platform-uwp.md
 - name: Эмулятор Visual Studio для Android
-  href: visual-studio-emulator-for-android.md
   items:
+    - name: Эмулятор Visual Studio для Android
+      href: visual-studio-emulator-for-android.md
     - name: System requirements for the Visual Studio Emulator for Android
       href: system-requirements-for-the-visual-studio-emulator-for-android.md
     - name: "Устранение неполадок с эмулятором\_Android для Visual\_Studio"
