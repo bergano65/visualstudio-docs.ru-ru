@@ -24,14 +24,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39873fdd1bc41b32a69909a1061ec3fc7fb63b67
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429786"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531897"
 ---
-# <a name="how-to-manage-editor-modes"></a>Как выполнить Управление режимами редактора
+# <a name="how-to-manage-editor-modes"></a>Практическое руководство. Управление режимами редактора
 
 Предусмотрено несколько режимов отображения редактора кода Visual Studio.
 
@@ -63,6 +63,5 @@ ms.locfileid: "62429786"
 
 ## <a name="see-also"></a>См. также
 
-- [Настройка редактора](../ide/customizing-the-editor.md)
 - [Настройка макетов окон в Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Страница "Шрифты и цвета", папка "Среда", диалоговое окно "Параметры"](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

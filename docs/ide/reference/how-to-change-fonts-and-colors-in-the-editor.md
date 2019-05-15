@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7936f5a4de6b9feef64819ed85efb7d2ae55002e
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789596"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531530"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Как выполнить Изменение шрифтов и цветов в редакторе в Visual Studio
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Практическое руководство. Изменение шрифтов и цветов в редакторе в Visual Studio
 
 Вы можете изменить стандартное начертание, размер шрифта, а также цвет переднего плана и фона для различных текстовых **отображаемых элементов** в редакторе кода. При изменении параметров шрифта учитывайте следующее:
 
@@ -50,7 +50,6 @@ ms.locfileid: "62789596"
 
 ## <a name="see-also"></a>См. также
 
-- [Настройка редактора](../../ide/customizing-the-editor.md)
 - [Диалоговое окно "Параметры текстового редактора"](../../ide/reference/text-editor-options-dialog-box.md)
 - [Возможности редактора кода](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Практическое руководство. Изменение шрифтов и цветов в Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
