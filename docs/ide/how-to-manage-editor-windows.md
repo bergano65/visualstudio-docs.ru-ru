@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Управление окнами редактора
+title: Практическое руководство. Управление окнами редактора
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a8b6d1d4c39f09382dd0e4a12660bed31ad9b2d
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429019"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531944"
 ---
-# <a name="how-to-manage-editor-windows"></a>Как выполнить Управление окнами редактора
+# <a name="how-to-manage-editor-windows"></a>Практическое руководство. Управление окнами редактора
 
 Вы можете работать с кодом сразу в нескольких расположениях. Для этого можно разделить окно редактора или открыть несколько его экземпляров.
 
@@ -56,6 +56,5 @@ ms.locfileid: "62429019"
 
 ## <a name="see-also"></a>См. также
 
-- [Настройка редактора](../ide/customizing-the-editor.md)
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Настройка макетов окон](../ide/customizing-window-layouts-in-visual-studio.md)

@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4d2a6195fc2357eecc6f9e011a1a7a4c3fff789
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02ef55b44d57cecadb690637c17c0a35e9cb0659
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789488"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531617"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Как выполнить Управление переносом слов в редакторе
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Практическое руководство. Управление переносом слов в редакторе
 
 Флажок **Перенос по словам** можно устанавливать и снимать. Если этот флажок установлен, часть длинной строки, выступающая за пределы текущей ширины окна редактора кода, отображается на следующей строке. Если этот флажок снят, например для упрощения использования нумерации строк, окно можно прокрутить вправо, чтобы увидеть окончание длинной строки.
 
@@ -55,6 +55,5 @@ ms.locfileid: "62789488"
 
 ## <a name="see-also"></a>См. также
 
-- [Настройка редактора](../../ide/customizing-the-editor.md)
 - [Диалоговое окно "Параметры текстового редактора"](../../ide/reference/text-editor-options-dialog-box.md)
 - [Возможности редактора кода](../../ide/writing-code-in-the-code-and-text-editor.md)

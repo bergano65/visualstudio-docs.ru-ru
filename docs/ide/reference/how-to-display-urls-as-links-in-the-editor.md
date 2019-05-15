@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Отображение URL-адресов как ссылок в редакторе
+title: Практическое руководство. Отображение URL-адресов как ссылок в редакторе
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 250f222dcc3f2645c53a97416cc379a3066c45ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c03d9d48ca098932a09e42116deb3ba7ee14a623
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789609"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531654"
 ---
-# <a name="how-to-display-urls-as-links-in-the-editor"></a>Как выполнить Отображение URL-адресов как ссылок в редакторе
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Практическое руководство. Отображение URL-адресов как ссылок в редакторе
 
 Редактор кода может обрабатывать UR-адреса в коде как активные ссылки. При использовании этой функции URL-адреса:
 
@@ -45,6 +45,5 @@ ms.locfileid: "62789609"
 
 ## <a name="see-also"></a>См. также
 
-- [Настройка редактора](../../ide/customizing-the-editor.md)
 - [Диалоговое окно "Параметры текстового редактора"](../../ide/reference/text-editor-options-dialog-box.md)
 - [Возможности редактора кода](../../ide/writing-code-in-the-code-and-text-editor.md)

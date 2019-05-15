@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a7bcf7b57c6cdc7e0ff4ff5a851397b7c96b345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 986c52a365abcb1780b741af61414bfc758413db
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778671"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531928"
 ---
 # <a name="options-text-editor-general"></a>Параметры, текстовый редактор, общие
 
@@ -96,5 +96,5 @@ ms.locfileid: "62778671"
 - ["Параметры", "Текстовый редактор", "Все языки", "Вкладки"](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - ["Параметры", "Текстовый редактор", "Расширение файла"](../../ide/reference/options-text-editor-file-extension.md)
 - [Определение и настройка сочетаний клавиш](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [Настройка редактора](../../ide/customizing-the-editor.md)
+- [Настройка редактора](../how-to-change-text-case-in-the-editor.md)
 - [Использование технологии IntelliSense](../../ide/using-intellisense.md)

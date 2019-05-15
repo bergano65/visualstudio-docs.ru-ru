@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33d4f0cce0699c27068152827382eb7d8627b715
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824221"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531952"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Как выполнить изменение регистра текста в редакторе
+# <a name="how-to-change-text-case-in-the-editor"></a>Практическое руководство. изменение регистра текста в редакторе
 
 Для переключения регистра выбранного текста можно использовать команды меню или сочетания клавиш.
 
@@ -42,6 +42,5 @@ ms.locfileid: "62824221"
 
 ## <a name="see-also"></a>См. также
 
-- [Настройка редактора](../ide/customizing-the-editor.md)
 - [Диалоговое окно "Параметры текстового редактора"](../ide/reference/text-editor-options-dialog-box.md)
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)

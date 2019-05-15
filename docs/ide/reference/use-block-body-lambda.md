@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f055925a4da916bf88da802e7a4991b0362b057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789438"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531920"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Использование тела выражения или блока для лямбда-выражений
 
@@ -24,7 +24,7 @@ ms.locfileid: "62789438"
 
 **Что?** Позволяет выполнить рефакторинг лямбда-выражения для использования тела выражения или блока.
 
-**Когда?** Вы предпочитаете, чтобы в лямбда-выражениях использовалось тело выражения или блока. 
+**Когда?** Вы предпочитаете, чтобы в лямбда-выражениях использовалось тело выражения или блока.
 
 **Зачем?** Можно выполнить рефакторинг лямбда-выражений для повышения удобочитаемости в соответствии с предпочтениями пользователя.
 
@@ -40,4 +40,4 @@ ms.locfileid: "62789438"
 ## <a name="see-also"></a>См. также
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)
-- [Советы для разработчиков .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Советы для разработчиков .NET](../csharp-developer-productivity.md)

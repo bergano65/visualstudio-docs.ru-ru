@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0b9685ce6d4cf8ee6d4253c79759508cf43915e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7893ed676372cce94d883353139de91ef639aeb0
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968510"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531851"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>Преобразование цикла foreach в LINQ
 
@@ -44,9 +44,9 @@ ms.locfileid: "62968510"
 3. Выберите параметр **преобразования в LINQ** или **преобразования в форму вызова LINQ**.
 
    ![Пример результата преобразования в запрос LINQ](media/convert-foreach-to-LINQ-result.png)
-   
+
    ![Пример результата преобразования в форму вызова LINQ](media/convert-foreach-to-LINQ-callform-result.png)
-   
+
 ### <a name="sample-code"></a>Пример кода
 
 ```csharp
@@ -79,4 +79,4 @@ public class Class1
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)
 - [Окно просмотра изменений](../../ide/preview-changes.md)
-- [Советы для разработчиков .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Советы для разработчиков .NET](../csharp-developer-productivity.md)
