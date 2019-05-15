@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8545431dc0cb643ba18d415285447f8a66f66e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f54ad96b3e6e1832e63e858609a0a1d6ecbcc93e
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923709"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614782"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 Этот метод извлекает список псевдонимов из программы.
@@ -40,18 +43,15 @@ int GetAllAliases(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `uRequest`
+## <a name="parameters"></a>Параметры
+`uRequest`\
+[in] Максимальное количество псевдонимов для возврата (указывает длину массива, передаваемого в `ppAliases`).
 
- [in] Максимальное количество псевдонимов для возврата (указывает длину массива, передаваемого в `ppAliases`).
+`ppAliases`\
+[in, out] Массив байтов с помощью псевдонима (если это значение null и `uRequest` равно 0, будет возвращаться количество псевдонимов, которые могут быть возвращены `puFetched`).
 
- `ppAliases`
-
- [in, out] Массив байтов с помощью псевдонима (если это значение null и `uRequest` равно 0, будет возвращаться количество псевдонимов, которые могут быть возвращены `puFetched`).
-
- `puFetched`
-
- [out] Возвращает количество получить псевдонимы.
+`puFetched`\
+[out] Возвращает количество получить псевдонимы.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2fce11c4ddd5a2ca882749ff4ae4a9b3ee0434
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a12be8b3999639c69d479412e673b0e049629172
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723322"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615155"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
 Извлекает идентификатор процесса, которому принадлежит объект, представленный этим [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) интерфейс.
@@ -36,10 +39,9 @@ int GetProcessID (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pProcID`
-
- [out] Идентификатор процесса.
+## <a name="parameters"></a>Параметры
+`pProcID`\
+[out] Идентификатор процесса.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.

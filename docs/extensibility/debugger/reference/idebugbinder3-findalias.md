@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58675b5f9e963ec416a2c8586375a94f9c06ae69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2b0185b0c3f7f26cfe9ffa8806c5049af323c517
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877527"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614953"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 Этот метод осуществляет поиск псевдоним, заданному имени. Таким образом, найти все псевдонимы в программе.
@@ -38,14 +41,12 @@ int FindAlias(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pcstrName`
+## <a name="parameters"></a>Параметры
+`pcstrName`\
+[in] Имя псевдонима для поиска.
 
- [in] Имя псевдонима для поиска.
-
- `ppAlias`
-
- [out] Представленный псевдоним, найденный (если таковые имеются) [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) интерфейс.
+`ppAlias`\
+[out] Представленный псевдоним, найденный (если таковые имеются) [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) интерфейс.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` (Если псевдоним не найден) или код ошибки.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 116a08025f70c2cd1e4c87f775511bd20ac0e4ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bda142c4209d2b369a169036cd2ee6aa7d5bafe2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923634"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615030"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 Этот метод возвращает точный тип переменной.
@@ -38,14 +41,12 @@ int ResolveDynamicType(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pDynamic`
+## <a name="parameters"></a>Параметры
+`pDynamic`\
+[in] [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) представляющий тип переменной.
 
- [in] [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) представляющий тип переменной.
-
- `ppResolved`
-
- [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) определенные сведения о типе переменной.
+`ppResolved`\
+[out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) определенные сведения о типе переменной.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

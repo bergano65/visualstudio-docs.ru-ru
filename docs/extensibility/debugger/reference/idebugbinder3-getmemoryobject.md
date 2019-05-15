@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01cb000519647c415f68b369f5d2147a30e705e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7741ad4f7b587cbd31888e643557c744ca4200e2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923549"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614968"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 Этот метод извлекает объект памяти, который представляет этот объект привязан к памяти.
@@ -40,18 +43,15 @@ int GetMemoryObject(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pField`
+## <a name="parameters"></a>Параметры
+`pField`\
+[in] Указывает, какое поле для получения для объекта памяти.
 
- [in] Указывает, какое поле для получения для объекта памяти.
+`uConstant`\
+[in] Представляет адрес памяти или значение для значения константы.
 
- `uConstant`
-
- [in] Представляет адрес памяти или значение для значения константы.
-
- `ppObject`
-
- [out] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляет этот объект привязан к памяти.
+`ppObject`\
+[out] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляет этот объект привязан к памяти.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

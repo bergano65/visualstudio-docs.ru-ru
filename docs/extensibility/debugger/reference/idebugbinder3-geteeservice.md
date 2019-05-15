@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d709124a392ffb6b6cbbb5a29576a985fe6d0f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eaaaf52a0a577d8b802540ca9b4ae11ab9aa1dbd
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877563"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614899"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Этот метод возвращает запрошенную службу.
@@ -42,22 +45,18 @@ Int GetEEService(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `vendor`
+## <a name="parameters"></a>Параметры
+`vendor`\
+[in] `GUID` поставщика (допустимо значение null).
 
- [in] `GUID` поставщика (допустимо значение null).
+`language`\
+[in] `GUID` языка (допустимо значение null).
 
- `language`
+`iid`\
+[in] `IID` службы для получения.
 
- [in] `GUID` языка (допустимо значение null).
-
- `iid`
-
- [in] `IID` службы для получения.
-
- `ppService`
-
- [out] Интерфейс запрошенную службу.
+`ppService`\
+[out] Интерфейс запрошенную службу.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
