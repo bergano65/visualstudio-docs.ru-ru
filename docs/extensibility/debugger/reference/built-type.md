@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09f0438bed235729d390b784725b89abec201c7f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1a1ecf55b017319850f97c23d926a650c7e01680
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693533"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615348"
 ---
 # <a name="builttype"></a>BUILT_TYPE
 Эта структура указывает сведения о типом поля, взятое из метаданных.
@@ -40,12 +43,15 @@ public struct BUILT_TYPE {
 };
 ```
 
-#### <a name="parameters"></a>Параметры
-ulAppDomainID идентификатор приложения, от которого поступило символа. Это используется для уникальной идентификации экземпляра приложения.
+## <a name="members"></a>Участники
+`ulAppDomainID`\
+Идентификатор приложения, от которого поступило символа. Это используется для уникальной идентификации экземпляра приложения.
 
-guidModule идентификатор GUID модуля, содержащего это поле.
+`guidModule`\
+Идентификатор GUID модуля, содержащего это поле.
 
-pUnderlyingField [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) идентифицирующий базового поля, связанные с этим полем построения.
+`pUnderlyingField`\
+[IDebugField](../../../extensibility/debugger/reference/idebugfield.md) идентифицирующий базового поля, связанные с этим полем построения.
 
 ## <a name="remarks"></a>Примечания
 Эта структура является частью объединения в [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) структуры, когда `dwKind` поле `TYPE_INFO` структура присваивается `TYPE_KIND_BUILT` (значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Перечисление).

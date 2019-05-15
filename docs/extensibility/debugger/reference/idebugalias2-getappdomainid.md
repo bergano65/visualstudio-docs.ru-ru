@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 890e215c7e575e67a4360717851bab538966f419
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 17f6e487dee1b5ae490cfc2ab180eb872ed5b5d2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715054"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615098"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 Извлекает идентификатор для домена приложения.
@@ -35,10 +38,9 @@ int GetAppDomainId (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pappDomainId`
-
- [out] Возвращает идентификатор домена приложения.
+## <a name="parameters"></a>Параметры
+`pappDomainId`\
+[out] Возвращает идентификатор домена приложения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

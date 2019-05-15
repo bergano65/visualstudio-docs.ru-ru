@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19372b341a0a8ba49caa0208a9a2fbbfd0a6b29b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84f5e7db4b31607c05da32a09e5d691a85ef4173
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418695"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614818"
 ---
 # <a name="createpkgdef-utility"></a>Служебная программа CreatePkgDef
 Принимает DLL-файла для расширения Visual Studio, как параметр и создает *.pkgdef* файл сопровождающее *.dll* файл. *.Pkgdef* файл содержит всю информацию, которая в противном случае должна быть записана в системный реестр при установке расширения.
@@ -33,29 +33,54 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
 ## <a name="arguments"></a>Аргументы
- **/ out =&lt;FileName&gt;**  требуется. Задает имя *.pkgdef* выходной файл &lt;FileName&gt;.
+**/ out =&lt;имя файла&gt;**\
+Обязательный. Задает имя *.pkgdef* выходной файл &lt;FileName&gt;.
 
- **/ codebase** необязательно. Заставляет регистрации с **CodeBase** служебной программы.
+**/ codebase**\
+Необязательный параметр. Заставляет регистрации с **CodeBase** служебной программы.
 
- **/ Assembly** заставляет регистрации с **сборки** служебной программы.
+**/ Assembly**\
+Заставляет регистрации с **сборки** служебной программы.
 
- **&lt;AssemblyPath&gt;**  путь *.dll* файла, из которого требуется создать *.pkgdef*.
+**&lt;AssemblyPath&gt;**\
+Путь к *.dll* файла, из которого требуется создать *.pkgdef*.
 
 ## <a name="remarks"></a>Примечания
- Развертывание расширения с помощью *.pkgdef* файлов заменяет требования реестра из более ранних версиях Visual Studio.
+Развертывание расширения с помощью *.pkgdef* файлов заменяет требования реестра из более ранних версиях Visual Studio.
 
- *.Pkgdef* файлы должны быть установлены в одном из следующих расположений:
+::: moniker range=">=vs-2019"
 
-- *%LocalAppData%\Microsoft\Visual Studio\14.0\Extensions\\*
+*.Pkgdef* файлы должны быть установлены в одном из следующих расположений:
+
+- *%LocalAppData%\Microsoft\Visual Studio\16.0\Extensions\\*
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-  Если папка установки *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*, расширение будет распознаваться модулем Visual Studio, но будет отключена по умолчанию. Пользователь может включить расширение с помощью **расширения и обновления**.
+Если папка установки *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\*, расширение распознается средой Visual Studio, но отключена по умолчанию. Пользователь может включить расширение с помощью **Управление расширениями**.
 
-  Если папка установки *%vsinstalldir%\Common7\IDE\Extensions\\*, расширение включено по умолчанию.
+Если папка установки *%vsinstalldir%\Common7\IDE\Extensions\\*, расширение включено по умолчанию.
+
+> [!NOTE]
+> **Управление расширениями** средство не может использоваться для доступа к расширением, если он не установлен как часть пакета VSIX.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+*.Pkgdef* файлы должны быть установлены в одном из следующих расположений:
+
+- *%LocalAppData%\Microsoft\Visual Studio\15.0\Extensions\\*
+
+- *%vsinstalldir%\Common7\IDE\Extensions\\*
+
+Если папка установки *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\*, расширение распознается средой Visual Studio, но отключена по умолчанию. Пользователь может включить расширение с помощью **расширения и обновления**.
+
+Если папка установки *%vsinstalldir%\Common7\IDE\Extensions\\*, расширение включено по умолчанию.
 
 > [!NOTE]
 > **Расширения и обновления** средство не может использоваться для доступа к расширением, если он не установлен как часть пакета VSIX.
+
+::: moniker-end
 
 ## <a name="see-also"></a>См. также
 - [Служебная программа CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

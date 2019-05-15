@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5355e85007c04e523efa4030ca0603a01cf88c68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e9b445f8ec471774eaceb0d6dd06c44b7d167f79
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923771"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615206"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 Получает базовый индексы (нижней границы) для каждого индекса, учитывая количество измерений в массиве.
@@ -37,14 +40,12 @@ int GetBaseIndices (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwRank`
+## <a name="parameters"></a>Параметры
+`dwRank`\
+[in] Число измерений (рангом) массива.
 
- [in] Число измерений (рангом) массива.
-
- `dwIndices`
-
- [out] Базовый индексы (нижней границы) для массива.
+`dwIndices`\
+[out] Базовый индексы (нижней границы) для массива.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
