@@ -35,6 +35,8 @@
       href: install/install-visual-studio-versions-side-by-side.md
     - name: Выбор места установки
       href: install/change-installation-locations.md
+    - name: Импорт или экспорт конфигураций установки
+      href: install/import-export-installation-configurations.md
     - name: Устранение ошибок установки
       href: install/troubleshooting-installation-issues.md
     - name: Обновление Visual Studio
@@ -63,8 +65,6 @@
               href: install/create-a-network-installation-of-visual-studio.md
             - name: Обновление сетевой установки Visual Studio
               href: install/update-a-network-installation-of-visual-studio.md
-            - name: Импорт или экспорт конфигураций установки
-              href: install/import-export-installation-configurations.md
             - name: Рекомендации по сети
               items:
                 - name: "Установка и использование Visual\_Studio в среде, защищенной брандмауэром или прокси-сервером"
