@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2a89344785f997f3b878df7d827db6e4732860b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bbe12449849b656af2658c5bab667b0e611515e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384010"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685875"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Практическое руководство. Использование диагностики графики с устройством ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,12 +28,12 @@ ms.locfileid: "63384010"
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>Включение удаленной отладки на устройстве с архитектурой ARM  
   
-1. Установка [политику комплектов ARM](http://msdn.microsoft.com/windows/desktop/dn469188) на устройстве на основе ARM.  
+1. Установка [политику комплектов ARM](https://msdn.microsoft.com/windows/desktop/dn469188) на устройстве на основе ARM.  
   
 2. Установка [инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) на устройстве на основе ARM.  
   
 > [!IMPORTANT]
-> В случае с устройствами Windows Phone 8.1 необходимо зарегистрировать телефон для разработки. Для этого вы должны быть зарегистрированным разработчиком. Дополнительные сведения см. в разделе [как развернуть и запустить приложение для Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
+> В случае с устройствами Windows Phone 8.1 необходимо зарегистрировать телефон для разработки. Для этого вы должны быть зарегистрированным разработчиком. Дополнительные сведения см. в разделе [как развернуть и запустить приложение для Windows Phone 8](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
   
  Включив удаленную отладку на устройстве, сделайте его целевым объектом отладки и запустите диагностику графики.  
   

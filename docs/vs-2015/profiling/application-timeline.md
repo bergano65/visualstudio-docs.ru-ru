@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d49b870b83eeb4bce48c562f3944aacef871cd2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0dee5cff8700e5748832792c1056b51a878e3f3b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431067"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696896"
 ---
 # <a name="application-timeline"></a>Временная шкала приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +38,10 @@ ms.locfileid: "63431067"
 5. Windows 7  
   
 > [!NOTE]
-> Вы можете собирать и анализировать данные о загрузке ЦП и энергопотреблении вместе с данными средства **Временная шкала приложения** . См. в разделе [запуск средств профилирования без отладки](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> Вы можете собирать и анализировать данные о загрузке ЦП и энергопотреблении вместе с данными средства **Временная шкала приложения** . См. в разделе [запуск средств профилирования без отладки](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Сбор данных временной шкалы приложения  
- Скорость реагирования приложения можно профилировать на локальном компьютере, подключенном устройстве, симуляторе или эмуляторах Visual Studio либо на удаленном устройстве. См. в разделе [запуск средств профилирования без отладки](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
+ Скорость реагирования приложения можно профилировать на локальном компьютере, подключенном устройстве, симуляторе или эмуляторах Visual Studio либо на удаленном устройстве. См. в разделе [запуск средств профилирования без отладки](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
 > Если это возможно, запустите приложение непосредственно на устройстве. Производительность приложения, наблюдаемая на имитаторе или посредством подключения к удаленному рабочему столу, может отличаться от фактической производительности на устройстве. С другой стороны, сбор данных с помощью инструментов удаленной отладки Visual Studio не влияет на данные о производительности.  
@@ -121,5 +121,5 @@ ms.locfileid: "63431067"
   
 ## <a name="see-also"></a>См. также  
  [Блог группы разработчиков WPF: Новое средство анализа производительности пользовательского интерфейса для приложений WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
- [Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](http://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Улучшение производительности приложений WPF](http://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
+ [Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](https://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
+ [Улучшение производительности приложений WPF](https://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
