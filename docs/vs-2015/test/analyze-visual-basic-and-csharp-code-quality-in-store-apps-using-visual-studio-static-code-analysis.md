@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442877"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686556"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Анализ качества кода Visual Basic и C# в приложениях Магазина с помощью функций анализа статического кода Visual Studio
 
@@ -27,7 +27,7 @@ ms.locfileid: "63442877"
  Средство анализа кода в Visual Studio Express анализирует код с целью найти общие дефекты и нарушения рекомендаций программирования. Предупреждения, возникающие в ходе анализа кода, отличаются от ошибок и предупреждений компилятора, потому что средство анализа кода выполняет поиск конкретных шаблонов кода, которые являются допустимыми, но, тем не менее, могут вызвать проблемы при использовании кода вами или другими специалистами. Анализ кода позволяет находить дефекты в коде, которые невозможно обнаружить в процессе тестирования. Регулярный запуск средства анализа кода в процессе разработки позволяет создать приложение более высокого качества.
 
 > [!NOTE]
-> В Visual Studio Ultimate, Visual Studio Premium и Visual Studio Professional можно пользоваться всеми функциональными возможностями анализа кода. См. статью [Анализ качества приложений с помощью средств анализа кода](http://msdn.microsoft.com/library/dd264897.aspx) в библиотеке MSDN.
+> В Visual Studio Ultimate, Visual Studio Premium и Visual Studio Professional можно пользоваться всеми функциональными возможностями анализа кода. См. статью [Анализ качества приложений с помощью средств анализа кода](https://msdn.microsoft.com/library/dd264897.aspx) в библиотеке MSDN.
 
 ## <a name="in-this-topic"></a>Содержание раздела
  Рассматриваются следующие вопросы:
@@ -98,12 +98,12 @@ ms.locfileid: "63442877"
 ## <a name="BKMK_Warnings"></a> Предупреждения анализа кода Visual Basic и C#
  Анализ кода вызывает следующие предупреждения:
 
- [CA1001: типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: удалите пустые завершающие методы](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: удалите пустые завершающие методы](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: следует высвобождать высвобождаемые поля](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: следует высвобождать высвобождаемые поля](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: реализуйте конструкторы сериализации](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: реализуйте конструкторы сериализации](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: перегрузите оператор равенства на переопределяющем типе ValueType.Equals](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: перегрузите оператор равенства на переопределяющем типе ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)

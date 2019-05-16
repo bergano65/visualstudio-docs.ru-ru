@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 120297a7e1b3c1e973f1775d769ab6deb8c2902a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436997"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705564"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Подключение к данным в базе данных Access (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -118,7 +118,7 @@ ms.locfileid: "63436997"
      Объект DataSet добавляется в проект, и таблицы и представления отображаются в окне **Источники данных**.  
   
 ## <a name="security"></a>Безопасность  
- Хранение конфиденциальных сведений (например, пароля) может повлиять на безопасность приложений. Использование проверки подлинности Windows (также называемой встроенными средствами безопасности) — более безопасный способ управления доступом к базе данных. Дополнительные сведения см. в разделе [Защита сведений о подключении](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).  
+ Хранение конфиденциальных сведений (например, пароля) может повлиять на безопасность приложений. Использование проверки подлинности Windows (также называемой встроенными средствами безопасности) — более безопасный способ управления доступом к базе данных. Дополнительные сведения см. в разделе [Защита сведений о подключении](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).  
   
 ## <a name="next-steps"></a>Следующие шаги  
  Набор данных, который вы только что создали, теперь доступна в **источников данных** окна. Теперь можно выполнить любую из следующих задач:  
@@ -131,7 +131,7 @@ ms.locfileid: "63436997"
   
 ## <a name="see-also"></a>См. также
 
- [Подготовка приложения к получению данных](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Подготовка приложения к получению данных](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Проверка данных](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Примеры работы с данными](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)
+ [Проверка данных](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Примеры работы с данными](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)

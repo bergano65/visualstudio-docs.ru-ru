@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e4d721fca8d429fe81de30306a8823e3d7fd9cab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442871"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681679"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Практическое руководство. Упаковка расширения (развертывания VSIX) вручную
 Вы можете создать пакет VSIX для инкапсуляции расширения [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для развертывания. Создать пакет можно тремя способами.  
@@ -26,7 +26,7 @@ ms.locfileid: "63442871"
   В этом документе описывается третий вариант.  
   
 ## <a name="creating-a-vsix-package"></a>Создание пакета VSIX  
- Чтобы вручную упаковать расширение, добавьте файлы extension.manifest и [Content_Types].xml в проект расширения, поместите их в сжатый файл вместе с выходными данными сборки и переименуйте сжатый файл так, чтобы он имел расширение VSIX. Упаковываемое расширения должно иметь тип, поддерживаемый [схемой VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+ Чтобы вручную упаковать расширение, добавьте файлы extension.manifest и [Content_Types].xml в проект расширения, поместите их в сжатый файл вместе с выходными данными сборки и переименуйте сжатый файл так, чтобы он имел расширение VSIX. Упаковываемое расширения должно иметь тип, поддерживаемый [схемой VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
 > Имена файлов в пакетах VSIX не должны содержать пробелы, а также символы, которые зарезервированы в универсальных кодов ресурса (URI), как определенные в разделе [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
@@ -37,7 +37,7 @@ ms.locfileid: "63442871"
   
 2. Создайте XML-файл и назовите его `extension.vsixmanifest`.  
   
-3. Заполните файл extension.vsixmanifest в соответствии со схемой VSIX. Пример манифеста см. в разделе [Элемент PackageManifest (корневой элемент, схема VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3. Заполните файл extension.vsixmanifest в соответствии со схемой VSIX. Пример манифеста см. в разделе [Элемент PackageManifest (корневой элемент, схема VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
 4. Создайте еще один XML-файл и назовите его `[Content_Types].xml`.  
   
@@ -56,4 +56,4 @@ ms.locfileid: "63442871"
 ## <a name="see-also"></a>См. также  
  [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Элемент PackageManifest (корневой элемент, Схема VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [Элемент PackageManifest (корневой элемент, Схема VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

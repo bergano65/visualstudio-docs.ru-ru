@@ -12,19 +12,19 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fa63e84cd7655ebf8a48ff47a8d844a471c193cd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d127aaa85cdd8da9e5daebe5c7841e0f6e85238d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651621"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674873"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Страница "Параметры"", свойства узла "Текстовый редактор"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 В этом документе описываются некоторые из страниц (или коллекций свойств) диалогового окна **Параметры**, связанных с категорией **Текстовый редактор** — `DTE.Properties("TextEditor", <Property Page>)`. Заголовок каждого из подразделов представляет собой вызов, используемый для доступа к коллекции `Properties`, а таблицы содержат списки свойств в коллекции.  
   
- Макросы Visual Basic в разделе [Управление параметрами](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) демонстрируют, как отображать текущие параметры и их значения для каждой страницы диалогового окна **Параметры**.  
+ Макросы Visual Basic в разделе [Управление параметрами](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) демонстрируют, как отображать текущие параметры и их значения для каждой страницы диалогового окна **Параметры**.  
   
 ## <a name="general"></a>Общие  
  `DTE.Properties("TextEditor", "General")`  
@@ -66,7 +66,7 @@ ms.locfileid: "59651621"
 |CutCopyBlankLines|Get/Set (Boolean)|Вырезает или копирует пустые строки при их выборе.|  
   
 ## <a name="see-also"></a>См. также раздел  
- [Управление параметрами](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [Определение имен элементов свойств на страницах параметров](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [Управление параметрами](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Определение имен элементов свойств на страницах параметров](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Страница "Параметры", свойства узла "Среда"](../../ide/reference/options-page-environment-node-properties.md)   
  [Страница "Параметры", свойства узла "Шрифты и цвета"](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

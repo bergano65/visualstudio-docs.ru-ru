@@ -11,12 +11,12 @@ ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 98b3892d10b003d6236ae9ccfbebb83a602a5877
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cde3b86e19788c41df6e8f1c79a6bf829f491170
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979604"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675249"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Файлы таблицы команд Visual Studio (VSCT-файлы)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "58979604"
  [Разработка файлов таблицы команд XML (VSCT-файлы)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  Содержит инструкции по определению vsct-файлы.  
   
- [Практическое руководство. Создать. Файл Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
+ [Практическое руководство. Создание VSCT-файла](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
  Сравнение методов для создания vsct-файл. Описание процесса создания нового vsct-файл вручную.  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Справочник по схемам XML VSCT](../../extensibility/vsct-xml-schema-reference.md)  
  Подробное описание каждого раздела файла конфигурации XML таблицы команд.  
   
- [Конфигурации таблицы команды (. Файлах ctc)](http://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [Конфигурации таблицы команды (. Файлах ctc)](https://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
  Представляет обзор устаревшие .ctc формата файла.  
   
  [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  

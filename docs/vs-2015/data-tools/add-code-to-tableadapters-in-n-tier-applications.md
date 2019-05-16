@@ -17,17 +17,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: aa406ab366c9bfb51f506c2dbba0a8408d7ba377
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444504"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688542"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Добавление кода для объектов TableAdapter в n-уровневых приложениях
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Вы можете расширить функциональные возможности `TableAdapter` , создав файл разделяемого класса для `TableAdapter` и добавления к нему кода (вместо добавления кода к *DatasetName*. Файл DataSet.Designer). Разделяемые классы позволяют коду для конкретного класса необходимо распределить между несколькими физическими файлами. Дополнительные сведения см. в разделе [частичного](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) или [partial (тип)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
+Вы можете расширить функциональные возможности `TableAdapter` , создав файл разделяемого класса для `TableAdapter` и добавления к нему кода (вместо добавления кода к *DatasetName*. Файл DataSet.Designer). Разделяемые классы позволяют коду для конкретного класса необходимо распределить между несколькими физическими файлами. Дополнительные сведения см. в разделе [частичного](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) или [partial (тип)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
   
  Код, который определяет `TableAdapter` создается каждый раз при внесении изменений `TableAdapter`. Этот код также создается при внесении изменений во время выполнения мастеров, изменяющих конфигурацию `TableAdapter`. Чтобы предотвратить удаление во время повторного формирования кода `TableAdapter`, добавьте код в файл разделяемого класса `TableAdapter`.  
   
@@ -73,6 +73,6 @@ ms.locfileid: "63444504"
 ## <a name="see-also"></a>См. также  
  [Общие сведения о данных в N-уровневых приложениях](../data-tools/n-tier-data-applications-overview.md)   
  [Добавление кода для наборов данных в n уровневых приложениях](../data-tools/add-code-to-datasets-in-n-tier-applications.md)   
- [Адаптеры таблиц](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)   
- [Общие сведения о компоненте TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)   
- [Общие сведения о иерархическое обновление](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
+ [Адаптеры таблиц](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)   
+ [Общие сведения о компоненте TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)   
+ [Общие сведения о иерархическое обновление](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)

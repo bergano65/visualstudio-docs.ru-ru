@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 189e5c622d19ce3e122e01bfbe4b886bd2a830b7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e974269cccb65db66ee59735f7acc5de494e2106
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063391"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697834"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>На 64-разрядных платформах Windows отладка в смешанном режиме поддерживается только при использовании платформы Microsoft.NET Framework версии 4.0 или выше
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ NET Framework версии ранее чем 4 не поддерживает о�
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-- См. в разделе [настройки отладки SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+- См. в разделе [настройки отладки SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
 ## <a name="see-also"></a>См. также  
  [Отладка 64-разрядных приложений](../debugger/debug-64-bit-applications.md)

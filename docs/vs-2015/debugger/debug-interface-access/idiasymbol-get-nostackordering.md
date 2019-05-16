@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c852ca5eb68982e8f78849f14aa3562744469c6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5e07bf52f86cbf55c46c82f685afd63327545dcd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435762"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698228"
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Эта функция получает флаг, указывающий, можно ли сделать нет упорядоченности стека как часть проверки буфера стека ([/GS (проверка безопасности буфера)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) параметр компилятора).  
+Эта функция получает флаг, указывающий, можно ли сделать нет упорядоченности стека как часть проверки буфера стека ([/GS (проверка безопасности буфера)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) параметр компилятора).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -52,4 +52,4 @@ HRESULT get_noStackOrdering(
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [/GS (проверка безопасности буфера)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)
+ [/GS (проверка безопасности буфера)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)

@@ -10,12 +10,12 @@ ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ff124246c3dc80074432e40eebf6e00e8b90b3f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a5a99ebdf2366ce6a60a6a724afc7d742db7150f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991285"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705793"
 ---
 # <a name="source-control-plug-ins"></a>Подключаемые модули системы управления версиями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "58991285"
  Описывает, как отключить предупреждения.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Образец подключаемого модуля управления источника](http://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ [Образец подключаемого модуля управления источника](https://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
  Предоставляет пример функции подключаемого модуля системы управления версиями.  
   
  [Руководство по тестированию подключаемых модулей системы управления версиями](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  

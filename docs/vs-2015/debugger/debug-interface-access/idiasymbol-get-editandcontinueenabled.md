@@ -13,17 +13,17 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a910b2aee7a2859ae799819a9ccb155d13d3388b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 74ac007a3b9d42677c77989ea36c6e20f9cd35f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444090"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697717"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, является ли модуль был скомпилирован с помощью [/Z7, / Zi, /ZI (формат отладочной информации)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) параметр компилятора.  
+Получает флаг, указывающий, является ли модуль был скомпилирован с помощью [/Z7, / Zi, /ZI (формат отладочной информации)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) параметр компилятора.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -52,4 +52,4 @@ HRESULT get_editAndContinueEnabled ( 
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [/Z7, /Zi, /ZI (формат отладочной информации)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+ [/Z7, /Zi, /ZI (формат отладочной информации)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

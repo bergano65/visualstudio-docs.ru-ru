@@ -25,18 +25,18 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3db776586a74fc1063a0553bb1dcf9ac62537965
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9524ab08ab955609f29f437e8a1576af02738aa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444806"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704454"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Практическое руководство. отладку элемента управления ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ПРИМЕЧАНИЕ
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, в меню "Сервис" выберите команду "Импорт и экспорт параметров". Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, в меню "Сервис" выберите команду "Импорт и экспорт параметров". Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Чтобы выполнить отладку элемента управления ActiveX, задайте контейнер (исполняемый файл) для элемента управления.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "63444806"
      Если не задавать контейнер в диалоговом окне **Страницы свойств проекта**, его можно будет задать при запуске отладки. При выборе команды запуска отладки появится диалоговое окно [Исполняемый файл для сеанса отладки](../debugger/executable-for-debugging-session-dialog-box.md). Задайте в диалоговом окне путь к контейнеру.  
   
 ## <a name="see-also"></a>См. также  
- [Элементы управления ActiveX](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
- [Тестирование свойств и событий с использованием тестового контейнера](http://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
+ [Элементы управления ActiveX](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
+ [Тестирование свойств и событий с использованием тестового контейнера](https://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
  [Отладка COM и ActiveX](../debugger/com-and-activex-debugging.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)

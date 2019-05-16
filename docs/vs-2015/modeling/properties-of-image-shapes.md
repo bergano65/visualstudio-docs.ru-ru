@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e342ec8438aeac6acd149ed93e8ce8a281a63323
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d51801c1be56504fa4bf4ed2046d463db0e99aae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992766"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701503"
 ---
 # <a name="properties-of-image-shapes"></a>Свойства фигур изображений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "58992766"
   
   Фигур изображений имеют свойства, которые перечислены в следующей таблице.  
   
-|Свойство.|Описание|Значение по умолчанию|  
+|Свойство|Описание|Значение по умолчанию|  
 |--------------|-----------------|-------------|  
 |Цвет заливки|Цвет заливки этой фигуры.|Белый|  
 |Режим градиентной заливки|Отображение режима заливки градиента данной фигуры.|Горизонтально|  
@@ -75,4 +75,4 @@ ms.locfileid: "58992766"
 |Изображение|Путь к файлу изображения, используемый для этой фигуры.|\<none>|  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий средств предметно-ориентированных языков](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

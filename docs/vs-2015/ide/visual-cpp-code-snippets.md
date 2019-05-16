@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd24ef7e852d84d3213e024e53e325c0ba1d59fb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 884ec6cc25fd2ef415dc71055361344d79021d5e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762083"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696380"
 ---
 # <a name="visual-c-code-snippets"></a>Фрагменты кода Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "54762083"
   
 - В меню **Правка > IntelliSense** выберите пункт **Вставить фрагмент**.  
   
-- Нажмите клавиши **CTRL+K+X**.  
+- Нажмите клавиши **CTRL + K + X**  
   
   Должен появиться список вариантов, начинающийся с **#if**. Если выбрать **#if**, в файл должен добавиться следующий код:  
   
@@ -49,7 +49,7 @@ ms.locfileid: "54762083"
   
 2. В меню **Правка > IntelliSense** выберите пункт **Разместить во фрагменте**.  
   
-3. Нажмите клавиши **CTRL+K+S**.  
+3. Нажмите клавиши **CTRL + K + S**  
   
    Выберите **#if**. Результат должен быть примерно таким:  
   
@@ -138,7 +138,7 @@ for (int i = length - 1; i >= 0; i--)
 }  
 ```  
   
- Фрагмент **rfor** предоставляет цикл for [на основе диапазона](http://msdn.microsoft.com/library/5750ba1d-ba48-4236-a923-e32de8345c2d) (ссылку):  
+ Фрагмент **rfor** предоставляет цикл for [на основе диапазона](https://msdn.microsoft.com/library/5750ba1d-ba48-4236-a923-e32de8345c2d) (ссылку):  
   
 ```cpp  
 for (auto& i : v)  

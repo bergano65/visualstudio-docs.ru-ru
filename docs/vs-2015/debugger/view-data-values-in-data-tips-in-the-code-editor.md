@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 689d01c7e22cca430693a85e6dedcc7706fda41d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fd2c7bf67b5c2e7f25b4193462883b53cda8db87
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437690"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700109"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Просмотр значений данных в подсказках по данным в редакторе кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,6 +143,6 @@ ms.locfileid: "63437690"
   
 ## <a name="see-also"></a>См. также  
  [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)   
- [Практическое руководство. Используйте диалоговое окно "Быстрая проверка"](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Практическое руководство. Используйте диалоговое окно "Быстрая проверка"](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)   
- [Практическое руководство. Изменение числового формата отладчика Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
+ [Практическое руководство. Изменение числового формата отладчика Windows](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

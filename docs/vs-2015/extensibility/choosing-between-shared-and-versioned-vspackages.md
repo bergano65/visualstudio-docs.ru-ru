@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088149"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685331"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Выбор между общими пакетами VSPackage и пакетами с контролем версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60088149"
   
     - Программирование VSPackage для адаптации к версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в котором он выполняется. При сбое запросов для новых служб VSPackage может предложить другие службы, которые поддерживаются в более старых версиях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-- Регистрация VSPackage соответствующим образом. Дополнительные сведения см. в разделе [регистрации VSPackage](../extensibility/internals/vspackage-registration.md) и [регистрации управляемого VSPackage](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+- Регистрация VSPackage соответствующим образом. Дополнительные сведения см. в разделе [регистрации VSPackage](../extensibility/internals/vspackage-registration.md) и [регистрации управляемого VSPackage](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
 - Регистрация расширений файлов соответствующим образом. Дополнительные сведения см. в разделе [Регистрация расширений имен файлов для развертываний Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   

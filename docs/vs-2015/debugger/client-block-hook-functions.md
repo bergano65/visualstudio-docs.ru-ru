@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3eb0891911e5dacbad2447ba3d141a81286e7dc8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5b1c754255ba0bc659c9b6968ad8ba0dea629ec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991842"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702321"
 ---
 # <a name="client-block-hook-functions"></a>Функции-ловушки клиентского блока
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ void YourClientDump(void *, size_t)
   
  Другими словами, функция-ловушка должна принимать указатель типа **void** на начало блока выделения и значение типа **size_t**, показывающее размер выделения, и возвращать тип `void`. Все остальное задается по желанию.  
   
- Один раз установленная с помощью[_CrtSetDumpClient`_CLIENT_BLOCK`, функция-ловушка будет вызываться всякий раз при дампе блока ](http://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033). [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) можно применять для получения сведений о типе или подтипе выводимых блоков.  
+ Один раз установленная с помощью[_CrtSetDumpClient`_CLIENT_BLOCK`, функция-ловушка будет вызываться всякий раз при дампе блока ](https://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033). [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) можно применять для получения сведений о типе или подтипе выводимых блоков.  
   
  Указатель на функцию, который передается `_CrtSetDumpClient`, имеет тип **_CRT_DUMP_CLIENT**, как определено в CRTDBG.H:  
   
@@ -53,5 +53,5 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
   
 ## <a name="see-also"></a>См. также  
  [Написание функций отладочных ловушек](../debugger/debug-hook-function-writing.md)   
- [Образец crt_dbg2](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)   
- [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b)
+ [Образец crt_dbg2](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)   
+ [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b)

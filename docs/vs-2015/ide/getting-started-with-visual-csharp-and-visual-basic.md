@@ -16,19 +16,19 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eec821993ec1aef2f8b2ad6ad8f5109c07d1156
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584700"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674768"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Начало работы с Visual C# и Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Этот раздел хорошо подходит для тех, кто начинает изучать Visual C# или Microsoft Visual Basic. Набор документации "Приступая к работе" содержит ссылки на набор последовательных занятий для ознакомления с языками Visual C# и Visual Basic. Желаем успехов в создании первоклассных программ!  
   
- Дополнительные сведения по Visual C++ см. в разделе [Ресурсы, посвященные Visual C++](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
+ Дополнительные сведения по Visual C++ см. в разделе [Ресурсы, посвященные Visual C++](https://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Пошаговое руководство: Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  

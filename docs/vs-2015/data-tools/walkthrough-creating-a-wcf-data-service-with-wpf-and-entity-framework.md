@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56e39a8ed17cfa99bd8141e2176d42dd7d3d6274
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 12d7e9c25cdf4e0431a7e4b5e3639dc59b76790c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424856"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703168"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "63424856"
   
 - Наличие учебной базы данных Northwind.  
   
-     Если база данных не установлена на компьютере разработчика, загрузите ее с веб-узла [Центра загрузки Майкрософт](http://go.microsoft.com/fwlink/?LinkID=98088). Инструкции см. в разделе [Загрузка примеров баз данных](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
+     Если база данных не установлена на компьютере разработчика, загрузите ее с веб-узла [Центра загрузки Майкрософт](http://go.microsoft.com/fwlink/?LinkID=98088). Инструкции см. в разделе [Загрузка примеров баз данных](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
   
 ## <a name="creating-the-service"></a>Создание службы  
  Чтобы создать службу [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], необходимо добавить веб-проект, создать [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] и службу из модели.  

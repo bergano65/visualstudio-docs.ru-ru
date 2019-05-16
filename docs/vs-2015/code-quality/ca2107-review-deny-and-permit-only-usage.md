@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d6ba41720ff97ffe9a085774477b2a9ee6426dbe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082156"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687388"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107. Проверьте использование Deny и Permit Only
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "60082156"
  Метод содержит проверку безопасности, которая задает действие безопасности PermitOnly или Deny.
 
 ## <a name="rule-description"></a>Описание правила
- [Использование метода PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) и <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> действия по обеспечению безопасности должен использоваться только те, кто имеет специальными знаниями в области из [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] безопасности. Код, который использует эти действия безопасности, должен быть тщательно проанализирован на предмет безопасности.
+ [Использование метода PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) и <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> действия по обеспечению безопасности должен использоваться только те, кто имеет специальными знаниями в области из [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] безопасности. Код, который использует эти действия безопасности, должен быть тщательно проанализирован на предмет безопасности.
 
  Запретить изменяет поведение по умолчанию стека, которая происходит в ответ на требование безопасности. Он позволяет задать разрешения, которые не должны предоставляться в течение метода отказа, независимо от того, фактические разрешения вызывающих методов в стеке вызовов. Если обход стека обнаруживается метод, который будет защищен Deny, и если затребованное разрешение включается в запрещенные разрешения, обход стека не выполняется. PermitOnly также изменяет поведение по умолчанию стека. Оно позволяет коду указывать только те разрешения, которые могут предоставляться независимо от разрешений от вызывающих объектов. Если обход стека определяет метод, который будет защищен PermitOnly и если затребованное разрешение не включается в разрешения, которые определяются PermitOnly, обход стека не выполняется.
 
  Код, основанный на эти действия, необходимо тщательно оценить уязвимостей в системе безопасности из-за ограниченной пригодностью и поведении. Рассмотрим следующий пример.
 
-- [Требования связывания](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) не затрагивает Deny или PermitOnly.
+- [Требования связывания](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) не затрагивает Deny или PermitOnly.
 
 - Если Deny или PermitOnly происходит в том же кадре стека, как запрос, вызывающий стека, действия безопасности не оказывают влияния.
 
@@ -80,4 +80,4 @@ ms.locfileid: "60082156"
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [Правила написания безопасного кода](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [переопределения проверок безопасности](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [использование метода PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [Правила написания безопасного кода](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [переопределения проверок безопасности](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [использование метода PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

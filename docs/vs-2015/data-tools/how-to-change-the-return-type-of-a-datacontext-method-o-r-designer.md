@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b51eff1525e166768c78b84a799f06e22045fb91
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dd954761bdac5d453cb21331513cf92df9d415c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386826"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684747"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Практическое руководство. изменение типа возвращаемого значения метода DataContext (реляционный конструктор объектов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,6 +44,6 @@ ms.locfileid: "63386826"
   
 ## <a name="see-also"></a>См. также  
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Методы DataContext (реляционный конструктор объектов)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Практическое руководство. Создание методов DataContext, сопоставленных с хранимыми процедурами и функциями (реляционный конструктор объектов)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 869a756b1995a1ae5de3736fcee4ccede6cb46e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a09f32f90ffca081fb8bf405f5d661160e8d4adf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427118"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686367"
 ---
 # <a name="trusted-application-deployment-overview"></a>Общие сведения о развертывании доверенных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "63427118"
   
 - Пространство имен <xref:System.Security.Cryptography?displayProperty=fullName> .  
   
-- Компонент Internet Explorer CertMgr.exe, который существует во всех версиях Windows начиная с Windows 98. Дополнительные сведения см. в разделе [Certmgr.exe (средство диспетчера сертификатов)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- Компонент Internet Explorer CertMgr.exe, который существует во всех версиях Windows начиная с Windows 98. Дополнительные сведения см. в разделе [Certmgr.exe (средство диспетчера сертификатов)](https://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Создание приложения ClickOnce  
  Приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] — это клиентское приложение [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , объединенное с файлами манифеста, которые описывают это приложение и поставляют параметры установки. Можно включить свою программу в приложение [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , воспользовавшись командой **Опубликовать** в . [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того, можно создать все файлы, необходимые для развертывания [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , с помощью средств в составе [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Подробные инструкции по [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания, см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
@@ -88,12 +88,12 @@ ms.locfileid: "63427118"
  Развертывание надежных приложений относится к [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]и может использоваться только с приложениями [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
 ### <a name="sign-the-deployment"></a>Подписывание развертывания  
- После получения сертификата необходимо воспользоваться им, чтобы подписать развертывание. При развертывании приложения с помощью мастера публикации [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] мастер автоматически создает для вас сертификат теста, если вы не задали сертификат самостоятельно. Однако для того чтобы предоставить сертификат центра сертификации, можно также использовать окно «Конструктор проектов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ».  Также см. раздел [Как Публикация приложения ClickOnce с помощью мастера публикации](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) или [как: опубликовать приложение ClickOnce с помощью мастера публикации](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
+ После получения сертификата необходимо воспользоваться им, чтобы подписать развертывание. При развертывании приложения с помощью мастера публикации [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] мастер автоматически создает для вас сертификат теста, если вы не задали сертификат самостоятельно. Однако для того чтобы предоставить сертификат центра сертификации, можно также использовать окно «Конструктор проектов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ».  Также см. раздел [Как Публикация приложения ClickOnce с помощью мастера публикации](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) или [как: опубликовать приложение ClickOnce с помощью мастера публикации](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
   
 > [!CAUTION]
 > Не рекомендуется развертывать приложение с тестовым сертификатом.  
   
- Также можно подписать приложение с помощью средства Mage.exe или MageUI.exe из набора SDK. Дополнительные сведения см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Полный список параметров командной строки, связанных с подписыванием развертывания, см. в разделе [Mage.exe (средство редактирования и Manifest Generation)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+ Также можно подписать приложение с помощью средства Mage.exe или MageUI.exe из набора SDK. Дополнительные сведения см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Полный список параметров командной строки, связанных с подписыванием развертывания, см. в разделе [Mage.exe (средство редактирования и Manifest Generation)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
 ### <a name="publish-the-application"></a>Публикация приложения  
  Сразу после подписывания манифестов [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение готово быть опубликованным в месте установки. Местом установки может являться веб-сервер, общая папка или локальный диск. Когда клиент обращается к манифесту развертывания в первый раз, диспетчер доверия должен выбрать, предоставлены ли приложению [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] установленным надежным издателем права на выполнение с более высоким уровнем доверия. Диспетчер доверия определяет это, сравнивая сертификат, использованный для подписывания развертывания, с сертификатами, которые хранятся в хранилище надежных издателей клиента. Если диспетчер доверия находит соответствие, приложение выполняется с более высоким уровнем доверия.  
@@ -105,5 +105,5 @@ ms.locfileid: "63427118"
  Развертывание надежных приложений можно использовать для предоставления доверия более высокого уровня приложениям [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , развернутым через Интернет или общую папку организации. Не нужно использовать развертывание надежных приложений для приложений [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , распространяемых на компакт-диске, потому что по умолчанию этим приложениям предоставлено полное доверие.  
   
 ## <a name="see-also"></a>См. также  
- [Mage.exe (средство создания и редактирования манифеста)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [Mage.exe (средство создания и редактирования манифеста)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

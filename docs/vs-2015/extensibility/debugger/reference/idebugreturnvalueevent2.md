@@ -12,12 +12,12 @@ ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7e65aeb2caab8793c8b5d3cd1656f9bbb41cbf57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b3a6ece54b76d38891f99cc96afa52df72d7138a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989317"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676422"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugReturnValueEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- DE реализует этот интерфейс, чтобы передавать возвращаемое значение из функции, которая зашел из или за определенный период. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) для доступа к `IDebugEvent2` интерфейс.  
+ DE реализует этот интерфейс, чтобы передавать возвращаемое значение из функции, которая зашел из или за определенный период. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) интерфейс должен быть реализован на один и тот же объект как следующий интерфейс. Использует SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) для доступа к `IDebugEvent2` интерфейс.  
   
 ## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
  DE создает и отправляет этот объект события, чтобы передавать возвращаемое значение функции. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функцию обратного вызова, предоставляемую SDM, когда он присоединен к отлаживаемой программы.  

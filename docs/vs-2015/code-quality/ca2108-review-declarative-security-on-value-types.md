@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b8bafb021e2a73b0a5bed7feba21fbb38fff8ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6a17bf57f00923cfd31bd477f211ba66169672a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991792"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687366"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108. Проверьте объявляемые параметры безопасности типов значений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58991792"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный тип значения защищен [данные и моделирование](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) или [требования связывания](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d).
+ Открытый или защищенный тип значения защищен [данные и моделирование](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) или [требования связывания](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d).
 
 ## <a name="rule-description"></a>Описание правила
  Типы значений выделенных и инициализировать с конструкторы по умолчанию до выполнения других конструкторов. Если тип значения защищен Demand или LinkDemand и вызывающий объект не имеет разрешений, которые не удовлетворяют проверки безопасности, какому-либо конструктору по умолчанию не удастся и будет выдано исключение безопасности. Тип значения не освобождается; он остается в состоянии, задайте его конструктором по умолчанию. Не следует предполагать, что вызывающий объект, который передает экземпляр типа значения имеет разрешение на создание или доступ к экземпляру.
@@ -60,4 +60,4 @@ ms.locfileid: "58991792"
  **Новые значения SecuredTypeStructure 100 100**
 **новые значения SecuredTypeStructure 200 200**
 ## <a name="see-also"></a>См. также
- [Требования связывания](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [данные и моделирование](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Требования связывания](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [данные и моделирование](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

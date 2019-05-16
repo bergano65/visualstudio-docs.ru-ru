@@ -12,12 +12,12 @@ ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 272946c80f5df2c96d4cf2bf20ea988c71766d46
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 479827cc83486d6bb9c68d0749b8870cd6c41861
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100577"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694763"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ IDebugProperty3 : IDebugProperty2
  Модуль отладки (DE) реализует этот интерфейс на тот же объект, реализующий [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) для обеспечения поддержки длинных строк, идентификаторы свойств и пользовательских средств просмотра.  
   
 ## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Вызовите [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) на `IDebugProperty2` интерфейс для получения этого интерфейса.  
+ Вызовите [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) на `IDebugProperty2` интерфейс для получения этого интерфейса.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  Помимо методов, наследуемых от `IDebugProperty2`, `IDebugProperty3` интерфейс предоставляет следующие методы.  

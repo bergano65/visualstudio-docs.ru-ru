@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be15b683a6e173d813ea13eaa0cc400a40e68206
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439174"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690510"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Управление исключениями с помощью отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -186,5 +186,5 @@ public class GenericException<T> : Exception
  [Практическое руководство. Анализ системного кода после исключения](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [Практическое руководство. Настройка проверок во время выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)   
  [Использование среды выполнения проверки без библиотеки времени выполнения C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Помощник по исключениям](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+ [Помощник по исключениям](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Основы отладки](../debugger/debugger-basics.md)

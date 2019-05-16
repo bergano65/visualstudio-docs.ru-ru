@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38239bd431f3e66e1a694361f3727c843fbf29d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0459168da627b8e67ad669486b70eb7758118d92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558467"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688191"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Работа с наборами данных в n-уровневых приложениях
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "62558467"
  [Пошаговое руководство: Создание n-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  Содержит пошаговые инструкции по созданию типизированного набора данных и разделения кода адаптера таблицы и набора данных на несколько проектов.  
   
- [Пошаговое руководство: Добавление проверки в N-уровневое приложение](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Пошаговое руководство: Добавление проверки в N-уровневое приложение](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
  Содержит пошаговые инструкции по добавлению проверки в приложение, который был создан в пошаговом руководстве данных n уровневого приложения.  
   
 ## <a name="reference"></a>Ссылка  
@@ -71,4 +71,4 @@ ms.locfileid: "62558467"
 - [Иерархическое обновление](../data-tools/hierarchical-update.md)   
 - [Инструменты для работы с наборами данных в Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
 - [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
-- [N-уровневые и удаленные приложения и LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+- [N-уровневые и удаленные приложения и LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4929464f04ecb630f4c6898f7b2cc1ce132a79a9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 973d5f6e78449756f96e75407655df7c74c391bf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445981"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705923"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Тестирование приложений SharePoint 2010 с помощью закодированных тестов пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,8 +145,8 @@ uiGridKeyboardInputEdit.Text=value;
   
 ## <a name="see-also"></a>См. также  
  [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
- [Применение веб-тестов производительности и нагрузочных тестов для приложений SharePoint 2010 и 2013](http://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
- [Создание решений SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
- [Проверка и отладка кода SharePoint](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)   
- [Построение и отладка решений SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
- [Профилирование производительности приложений SharePoint](http://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+ [Применение веб-тестов производительности и нагрузочных тестов для приложений SharePoint 2010 и 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
+ [Создание решений SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
+ [Проверка и отладка кода SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)   
+ [Построение и отладка решений SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
+ [Профилирование производительности приложений SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

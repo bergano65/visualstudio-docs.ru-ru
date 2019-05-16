@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ecf43708b854ebee444d2117bc32df41907118a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442724"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685932"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Практическое руководство. Вызов событий приостановки, возобновления и фоновых событий для приложений для Магазина Windows в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63442724"
 
  Кроме того, в этом разделе описывается, как отладить **Фоновые задачи**. Фоновые задачи позволяют выполнять определенные операции в фоновом процессе, даже если приложение не выполняется. Можно использовать отладчик, чтобы перевести приложение в режим отладки, а затем, не запуская пользовательский интерфейс, запустить фоновую задачу и начать ее отладку.
 
- Дополнительные сведения об управлении жизненным циклом процессов и фоновых задачах см. в разделе [Launching, resuming, and multitasking](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
+ Дополнительные сведения об управлении жизненным циклом процессов и фоновых задачах см. в разделе [Launching, resuming, and multitasking](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
 
 ## <a name="BKMK_In_this_topic"></a> Содержание раздела
  [События управления жизненным циклом процессов активации](#BKMK_Trigger_Process_Lifecycle_Management_events)
@@ -63,7 +63,7 @@ ms.locfileid: "63442724"
      Обратите внимание, что команда **Приостановить и завершить работу** закрывает приложение и завершает сеанс отладки.
 
 ## <a name="BKMK_Trigger_background_tasks"></a> Активация фоновых задач
- Любое приложение может зарегистрировать фоновую задачу, чтобы отвечать на некоторые системные события, даже если приложение не выполняется. Фоновые задачи не могут выполнять код, который непосредственно обновляет пользовательский интерфейс; вместо этого они показывают пользователю сведения об обновлениях плитки, обновлениях эмблемы и всплывающие уведомления. Дополнительные сведения см. в разделе [Supporting your app with background tasks](http://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e).
+ Любое приложение может зарегистрировать фоновую задачу, чтобы отвечать на некоторые системные события, даже если приложение не выполняется. Фоновые задачи не могут выполнять код, который непосредственно обновляет пользовательский интерфейс; вместо этого они показывают пользователю сведения об обновлениях плитки, обновлениях эмблемы и всплывающие уведомления. Дополнительные сведения см. в разделе [Supporting your app with background tasks](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e).
 
  Можно активировать события, которые запускают фоновые задачи для приложения, из отладчика.
 
@@ -125,4 +125,4 @@ ms.locfileid: "63442724"
 4. Выберите журнал **Диагностические** .
 
 ## <a name="see-also"></a>См. также
- [Тестирование приложений Store с помощью Visual Studio](../test/testing-store-apps-with-visual-studio.md) [отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [жизненного цикла приложения](http://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching, resuming и многозадачность](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Тестирование приложений Store с помощью Visual Studio](../test/testing-store-apps-with-visual-studio.md) [отладка приложений в Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [жизненного цикла приложения](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching, resuming и многозадачность](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

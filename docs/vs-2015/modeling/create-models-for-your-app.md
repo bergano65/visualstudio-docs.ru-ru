@@ -37,12 +37,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: feb0c1a5f486654844c592b6b946dedc9e2e02c0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 03f525d3b996875097ddee433d0e9ad887ee728f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002195"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679469"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ ms.locfileid: "59002195"
 |[Моделирование требований пользователей](../modeling/model-user-requirements.md)|Используйте модели для уточнения потребностей пользователей и передачи информации о них.|  
 |[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|Используйте модели, чтобы описать общую структуру и поведение системы, а также обеспечить ее соответствие потребностям пользователей.|  
 |[Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)|Убедитесь, что программное обеспечение соответствует потребностям пользователей и общей архитектуре системы.|  
-|[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)<br /><br /> [Использование моделей в гибкой разработке](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Используйте модели, чтобы изучить и изменить систему во время разработки.|  
+|[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)<br /><br /> [Использование моделей в гибкой разработке](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Используйте модели, чтобы изучить и изменить систему во время разработки.|  
 |[Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)|Упорядочивайте модели в рамках проекта большого или среднего размера.|  
   
 ## <a name="external-resources"></a>Внешние ресурсы  

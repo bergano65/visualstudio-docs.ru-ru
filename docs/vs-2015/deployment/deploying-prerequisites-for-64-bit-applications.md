@@ -19,12 +19,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f416a22bc7cbdd374622c89a1826ebff8af9450
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92f30e8e059475c907da184aa59a8e4b7a2cf19f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990541"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675556"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>Предварительные условия для развертывания 64-разрядных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +47,4 @@ ms.locfileid: "58990541"
 ## <a name="see-also"></a>См. также  
  [Развертывание приложений, служб и компонентов](../deployment/deploying-applications-services-and-components.md)   
  [Практическое руководство. Установка необходимых компонентов для приложения ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [64-разрядные приложения](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+ [64-разрядные приложения](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

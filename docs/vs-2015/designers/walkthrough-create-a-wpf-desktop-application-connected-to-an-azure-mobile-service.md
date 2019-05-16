@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421254"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693559"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Пошаговое руководство. Создание классического приложения WPF, подключенного к мобильной службе Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63421254"
   
 - Активная учетная запись Microsoft Azure  
   
-    - Зарегистрировать бесплатную пробную учетную запись можно [здесь](http://azure.microsoft.com/pricing/free-trial/).  
+    - Зарегистрировать бесплатную пробную учетную запись можно [здесь](https://azure.microsoft.com/pricing/free-trial/).  
   
     - Вы можете активировать [преимущества подписки MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). С подпиской MSDN вы каждый месяц получаете кредиты, которые можно использовать для оплаты служб Azure.  
   
@@ -566,7 +566,7 @@ ms.locfileid: "63421254"
   
  Вы можете сделать пользовательский интерфейс более привлекательным, добавив цвета, фигуры, графические элементы и даже анимацию. См. раздел [Разработка XAML в Visual Studio и Blend для Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
   
- С помощью мобильных служб Azure можно подключаться к существующим базам данных SQL или другим источникам данных. См. [документацию по мобильным службам](http://azure.microsoft.com/services/app-service/mobile/).  
+ С помощью мобильных служб Azure можно подключаться к существующим базам данных SQL или другим источникам данных. См. [документацию по мобильным службам](https://azure.microsoft.com/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство: Создание первого классического приложения WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)   

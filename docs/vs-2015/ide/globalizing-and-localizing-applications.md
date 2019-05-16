@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49702a40e081b4836e078a77368148451a29636d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fe8671142aeda4972f9ac218fe536b4a991649a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794374"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704371"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Глобализация и локализация приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ ms.locfileid: "54794374"
  [Глобализация приложения (приложения для Магазина Windows на C#, VB, C++ и XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
  Содержит инструкции и рекомендации по глобализации и локализации вашего приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], созданного с помощью XAML и Visual C#, Visual Basic или Visual C++.  
   
- [Рекомендации по разработке международных приложений](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Рекомендации по разработке международных приложений](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Содержит общие сведения о программировании для международной аудитории.  
   
- [Общие сведения о библиотеке классов](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
+ [Общие сведения о библиотеке классов](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
  Представляет классы, интерфейсы и типы значений, которые облегчают и оптимизируют процесс разработки, а также обеспечивают доступ к функциям системы.  
   
  <xref:System.Globalization>  

@@ -9,24 +9,24 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06db94841a45f648461822c5f205cb68bbb2b1c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 48c020c978b593a94ecd4d60109245f6acb718b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437724"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684093"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Использование Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Самая актуальная документация по Visual Studio, см. в разделе [с помощью Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent).
 
-Вы можете локально проверять размещенные в IIS веб-приложения ASP.NET и приложения SharePoint 2010 и 2013 на наличие ошибок, проблем производительности и других неполадок с помощью агента **Microsoft Monitoring Agent** События диагностики, созданные агентом, можно сохранять в файле журнала IntelliTrace (ITRACE). Затем можно открыть файл журнала, в Visual Studio Enterprise (но не выпуск Professional или Community), выполнить отладку с помощью любых средств диагностики Visual Studio. Для сбора диагностических данных IntelliTrace и данных метода можно запустить агент в режиме **трассировки** . Microsoft Monitoring Agent можно интегрировать с [Application Insights](/azure/azure-monitor/app/app-insights-overview) и [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе.  
+Вы можете локально проверять размещенные в IIS веб-приложения ASP.NET и приложения SharePoint 2010 и 2013 на наличие ошибок, проблем производительности и других неполадок с помощью агента **Microsoft Monitoring Agent** События диагностики, созданные агентом, можно сохранять в файле журнала IntelliTrace (ITRACE). Затем можно открыть файл журнала, в Visual Studio Enterprise (но не выпуск Professional или Community), выполнить отладку с помощью любых средств диагностики Visual Studio. Для сбора диагностических данных IntelliTrace и данных метода можно запустить агент в режиме **трассировки** . Microsoft Monitoring Agent можно интегрировать с [Application Insights](/azure/azure-monitor/app/app-insights-overview) и [System Center Operation Manager](https://technet.microsoft.com/library/hh205987.aspx). После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе.  
   
 > [!NOTE]
 > Можно также собирать диагностические данные и данные метода IntelliTrace для веб-приложений, приложений Sharepoint, WPF и Windows Form на удаленных компьютерах без изменения целевой среды с помощью **автономного сборщика IntelliTrace**. Автономный сборщик в меньшей степени влияет на уровень производительности, чем Microsoft Monitoring Agent в режиме **монитора** . См. в разделе [использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
- Если вы пользуетесь пакетом System Center 2012, то, применяя агент Microsoft Monitoring Agent совместно с Operations Manager, вы можете получать оповещения о проблемах и создавать рабочие элементы Team Foundation Server со ссылками на сохраненные журналы IntelliTrace. Затем можно делегировать отладку рабочих элементов другим разработчикам. См. раздел [Интеграция Operations Manager с процессом разработки](http://technet.microsoft.com/library/jj614609.aspx) и [Отслеживание с помощью Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).  
+ Если вы пользуетесь пакетом System Center 2012, то, применяя агент Microsoft Monitoring Agent совместно с Operations Manager, вы можете получать оповещения о проблемах и создавать рабочие элементы Team Foundation Server со ссылками на сохраненные журналы IntelliTrace. Затем можно делегировать отладку рабочих элементов другим разработчикам. См. раздел [Интеграция Operations Manager с процессом разработки](https://technet.microsoft.com/library/jj614609.aspx) и [Отслеживание с помощью Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).  
   
  Перед началом работы убедитесь, что у вас есть надлежащий исходный код и символы для встроенного и развернутого кода. Тогда, начав отладку, вы сможете сразу же перейти к коду приложения и просматривать диагностические события в журнале IntelliTrace. [Настройте сборки](../debugger/diagnose-problems-after-deployment.md) таким образом, чтобы программа Visual Studio могла автоматически находить и открывать соответствующий источник развернутого кода.  
   
@@ -37,13 +37,13 @@ ms.locfileid: "63437724"
 3. [Шаг 3. Сохраните записанные события](#SaveEvents)  
   
 ## <a name="SetUpMonitoring"></a> Шаг 1. Настройте Microsoft Monitoring Agent.  
- Настройте изолированный агент на веб-сервере, чтобы выполнить локальное отслеживание, не изменяя приложение. Если вы пользуетесь System Center 2012, см. раздел [Установка Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465156.aspx).  
+ Настройте изолированный агент на веб-сервере, чтобы выполнить локальное отслеживание, не изменяя приложение. Если вы пользуетесь System Center 2012, см. раздел [Установка Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465156.aspx).  
   
 ### <a name="SetUpStandaloneMMA"></a> Настройка изолированного агента  
   
 1. Убедитесь, что:  
   
-    - На веб-сервере установлены [поддерживаемые версии Internet Information Services (IIS)](http://technet.microsoft.com/library/dn465154.aspx).  
+    - На веб-сервере установлены [поддерживаемые версии Internet Information Services (IIS)](https://technet.microsoft.com/library/dn465154.aspx).  
   
     - На веб-сервере установлена платформа .NET Framework версии 3.5, 4 или 4.5.  
   
@@ -77,7 +77,7 @@ ms.locfileid: "63437724"
   
      **PS C:>Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**  
   
-3. Актуальные статьи справки вы найдете на[веб-сайте TechNet](http://technet.microsoft.com/systemcenter/default) .  
+3. Актуальные статьи справки вы найдете на[веб-сайте TechNet](https://technet.microsoft.com/systemcenter/default) .  
   
 #### <a name="FullPermissionsITLog"></a> Вопрос. Инструкции по настройке разрешений для пула приложений  
  **Ответ.** Это можно сделать с помощью команды **icacls** в Windows или проводника Windows. Пример:  
@@ -111,7 +111,7 @@ ms.locfileid: "63437724"
   7. Убедитесь, что пул приложений имеет разрешение на **Чтение и выполнение**.  
   
 ## <a name="MonitorEvents"></a> Шаг 2. Запустите отслеживание приложения.  
- Приступите к отслеживанию приложения с помощью команды [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) Windows PowerShell. Если вы пользуетесь System Center 2012, см. раздел [Отслеживание веб-приложений с помощью Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
+ Приступите к отслеживанию приложения с помощью команды [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) Windows PowerShell. Если вы пользуетесь System Center 2012, см. раздел [Отслеживание веб-приложений с помощью Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 1. На веб-сервере откройте окно командной строки **Windows PowerShell** или **Windows PowerShell ISE** с правами администратора.  
   
@@ -137,7 +137,7 @@ ms.locfileid: "63437724"
   
     |||  
     |-|-|  
-    |*"\<имя_приложения >»*|Укажите путь к имени веб-сайта и веб-приложения в IIS. При желании можно также указать путь IIS.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> -или-<br /><br /> **«IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Его можно посмотреть в диспетчере IIS. Пример:<br /><br /> ![Путь к веб-сайт IIS и веб-приложение](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> Можно также использовать команды [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) и [Get-WebApplication](http://technet.microsoft.com/library/ee790554.aspx) .|  
+    |*"\<имя_приложения >»*|Укажите путь к имени веб-сайта и веб-приложения в IIS. При желании можно также указать путь IIS.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> -или-<br /><br /> **«IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Его можно посмотреть в диспетчере IIS. Пример:<br /><br /> ![Путь к веб-сайт IIS и веб-приложение](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> Можно также использовать команды [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) и [Get-WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|  
     |*\<monitoringMode >*|Выберите режим отслеживания.<br /><br /> <ul><li>**Монитор**: запись минимальных сведений о событиях исключения и производительности. В этом режиме используется план сбора данных по умолчанию.</li><li>**Трассировка**: запись сведений на уровне функций и отслеживание приложений SharePoint 2010 и приложений SharePoint 2013 с использованием указанного плана сбора данных. При выборе этого режима работа приложения может замедляться.<br /><br /> <ul><li>[Вопрос. Как настроить разрешения для пула приложений?](#FullPermissionsITLog)</li><li>[Вопрос. Как получить подробные данные, не замедляя работу приложения?](#Minimizing)</li></ul><br />     В этом примере записываются события приложения SharePoint, размещенного на сайте SharePoint.<br /><br />     **Start-WebApplicationMonitoring «FabrikamSharePointSite\FabrikamSharePointApp» трассировка «C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml» «C:\IntelliTraceLogs»**</li><li>**Пользовательский**: запись пользовательских сведений с помощью заданного пользовательского плана сбора данных. Если после запуска отслеживания изменить план сбора данных, отслеживание необходимо перезапустить.</li></ul>|  
     |*"\<outputPath >»*|Укажите полный путь к каталогу для сохранения журналов IntelliTrace. Каталог необходимо создать перед началом отслеживания.|  
     |*\<UInt32>*|Укажите максимальный размер журнала IntelliTrace. По умолчанию максимальный размер журнала IntelliTrace — 250 МБ.<br /><br /> Если размер журнала превосходит это ограничение, агент записывает новые записи вместо наиболее старых. Это ограничение можно изменить с помощью параметра **-MaximumFileSizeInMegabytes** или атрибута `MaximumLogFileSize` в плане сбора данных.|  
@@ -231,7 +231,7 @@ ms.locfileid: "63437724"
   Агент записывает значения `id`, `Employee.Id`, `Employee.Name` и объекта `Employee` , возвращаемого из метода `AlterEmployee` . Однако он не записывает какую-либо информацию об объекте `Address` , а просто указывает, имеет ли он значение NULL или нет. Также агент не записывает данные о локальных переменных в методе `AlterEmployee` , за исключением случаев, когда эти локальные переменные используются в качестве параметров других методов. Тогда они записываются как параметры метода.  
   
 ## <a name="SaveEvents"></a> Шаг 3. Сохраните записанные события  
- Если вы обнаружите ошибку или проблему производительности, сохраните записанные события в журнал IntelliTrace. Агент создает журнал, только если события записывались. Если вы пользуетесь System Center 2012, см. раздел [Отслеживание веб-приложений с помощью Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
+ Если вы обнаружите ошибку или проблему производительности, сохраните записанные события в журнал IntelliTrace. Агент создает журнал, только если события записывались. Если вы пользуетесь System Center 2012, см. раздел [Отслеживание веб-приложений с помощью Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Как сохранить записанные события и продолжить отслеживание  
  Выполните следующие шаги, если требуется создать журнал IntelliTrace, не перезапуская приложение и не останавливая отслеживание. Агент продолжает отслеживание даже при перезапуске сервера или приложения.  

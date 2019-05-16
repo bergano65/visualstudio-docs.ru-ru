@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 913594f47288715e0050643f365f9225810f6ded
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423242"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682352"
 ---
 # <a name="code-snippet-picker"></a>выбор фрагмента кода
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,6 +56,6 @@ ms.locfileid: "62423242"
   
 ## <a name="see-also"></a>См. также  
  [Рекомендации по использованию фрагментов кода](../../ide/best-practices-for-using-code-snippets.md)   
- [Фрагменты кода IntelliSense в Visual Basic](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Фрагменты кода IntelliSense в Visual Basic](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Установка закладок в коде](../../ide/setting-bookmarks-in-code.md)   
  [Практическое руководство. Использование окружающих фрагментов кода](../../ide/how-to-use-surround-with-code-snippets.md)

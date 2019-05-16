@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4c5713adc98a0b6ed3f57e604e2e1874b3d95f0a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428272"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678865"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Синхронизированные параметры в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63428272"
 ## <a name="synchronized-settings"></a>Синхронизированные параметры
  По умолчанию синхронизируются следующие параметры.
 
-- Параметры разработки (необходимо выбрать набор параметров при первом запуске Visual Studio, но этот выбор можно изменить в любое время). Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+- Параметры разработки (необходимо выбрать набор параметров при первом запуске Visual Studio, но этот выбор можно изменить в любое время). Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 - Следующие параметры на страницах **Сервис &#124; Параметры**:
 

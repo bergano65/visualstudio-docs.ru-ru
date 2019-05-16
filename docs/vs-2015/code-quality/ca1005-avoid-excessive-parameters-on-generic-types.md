@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 68631328fb95489f6f81e7f527f1e46a2ce54d44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bc2986a81b0b21b2e2a4fd87b9c5a453e7d05c32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990163"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704300"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005. Не используйте слишком много параметров в универсальных типах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +60,4 @@ ms.locfileid: "58990163"
  [CA1007: Используйте универсальные типы в том случае, если это уместно](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>См. также
- [Универсальные шаблоны](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
+ [Универсальные шаблоны](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

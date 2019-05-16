@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb963afb4a1cbc029ee8490a9c35d1b09e8c3338
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db13165c584399952dc491cf714ac84ee4de7598
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447325"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697431"
 ---
 # <a name="error-firewall-no-authentication"></a>Ошибка: брандмауэр без проверки подлинности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,4 +31,4 @@ ms.locfileid: "63447325"
 > [!NOTE]
 > Удаленный отладчик может автоматически настроить межсетевой экран Windows. Если вместо межсетевого экрана Windows используется другой межсетевой экран, например программный или аппаратный межсетевой экран другого производителя, его необходимо настроить вручную, чтобы он допускал выполнение удаленной отладки. Для этого необходимо разрешить трафик через порты TCP/IP, прослушиваемые программой msvsmon.exe. По умолчанию это порты 4018 и 4019, при этом порт 4018 используется во всех операционных системам, тогда как порт 4019 используется только в Windows x64 для разрешения отладки процессов x86.  
   
- Дополнительные сведения см. в разделе [задать удаленных инструментов на устройстве](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).
+ Дополнительные сведения см. в разделе [задать удаленных инструментов на устройстве](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).

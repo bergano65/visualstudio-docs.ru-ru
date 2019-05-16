@@ -25,12 +25,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7db5f2869c1118a04f1aa734e5067ece4b268833
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 71f3b5b2c910bbbd61607f9112122569e5d3562e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430530"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685608"
 ---
 # <a name="how-to-manage-editor-modes"></a>Практическое руководство. Управление режимами редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "63430530"
 Предусмотрено несколько режимов отображения редактора кода Visual Studio.  
   
 > [!NOTE]
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="enabling-full-screen-mode"></a>Включение полноэкранного режима  
  Включив режим **Во весь экран**, вы можете скрыть все окна инструментов и просматривать только окна документов.  

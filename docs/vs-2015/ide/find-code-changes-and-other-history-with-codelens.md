@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b090833d766e36ba597bb32e8a6c793d674add88
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 100cd424b60ce09db8c62c049b38f4c301ebe26f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383950"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704841"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Поиск изменений кода и других журналов с помощью CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "63383950"
   
 - Team Foundation Server 2013 или более поздней версии, Visual Studio Team Services или Git  
   
-- [Lync 2010 или более поздней версии или Skype для бизнеса](http://technet.microsoft.com/lync)(для связи с коллегами, не выходя из редактора кода)  
+- [Lync 2010 или более поздней версии или Skype для бизнеса](https://technet.microsoft.com/lync)(для связи с коллегами, не выходя из редактора кода)  
   
   Для кода на Visual C# .NET или Visual Basic .NET, который хранится вместе с системой управления версиями Team Foundation (TFVC) или Git, сведения CodeLens предоставляются на уровнях класса и метода (индикаторы*уровня кода элемента* ). Если репозиторий Git находится в TfGit, можно также получить ссылки на рабочие элементы TFS.  
   
@@ -83,7 +83,7 @@ ms.locfileid: "63383950"
   
  ![CodeLens: Получение журнала изменений для кода в TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
- Период времени по умолчанию — последние 12 месяцев. Если код хранится в Team Foundation Server, это ограничение можно изменить, выполнив [команду TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) вместе с [командой CodeIndex](../ide/codeindex-command.md) и флагом **/indexHistoryPeriod** .  
+ Период времени по умолчанию — последние 12 месяцев. Если код хранится в Team Foundation Server, это ограничение можно изменить, выполнив [команду TFSConfig](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) вместе с [командой CodeIndex](../ide/codeindex-command.md) и флагом **/indexHistoryPeriod** .  
   
  Чтобы просмотреть подробный журнал всех изменений, включая сделанные более года назад, выберите параметр **Показать все изменения файла**.  
   
@@ -222,7 +222,7 @@ ms.locfileid: "63383950"
   
 - Включите CodeLens. Откройте меню **Инструменты**и последовательно выберите пункты **Параметры**, **Текстовый редактор**, **Все языки**, **CodeLens**.  
   
-- Если код хранится в TFS, с помощью [команды CodeIndex](../ide/codeindex-command.md) и [команды TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)убедитесь, что индексирование кода включено.  
+- Если код хранится в TFS, с помощью [команды CodeIndex](../ide/codeindex-command.md) и [команды TFS Config](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)убедитесь, что индексирование кода включено.  
   
 - Индикаторы, связанные с TFS, отображаются, только когда рабочие элементы связаны с кодом и имеются разрешения на открытие связанных рабочих элементов. [Убедитесь в наличии разрешений члена команды.](/azure/devops/organizations/security/view-permissions)  
   
@@ -283,4 +283,4 @@ ms.locfileid: "63383950"
  **Ответ.** **Локальная версия** стрелка указывает на последний набор изменений в локальной версии этого файла. Если на сервере находятся более новые наборы изменений, они отображаются над или под стрелкой **Локальная версия** в зависимости от порядка сортировки наборов изменений.  
   
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Вопрос: Можно ли управлять тем, как CodeLens обрабатывает код для отображения журнала и связанных элементов?  
- **Ответ.** Да, если код находится в TFS, используйте [команда CodeIndex](../ide/codeindex-command.md) с [командой TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).
+ **Ответ.** Да, если код находится в TFS, используйте [команда CodeIndex](../ide/codeindex-command.md) с [командой TFS Config](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).

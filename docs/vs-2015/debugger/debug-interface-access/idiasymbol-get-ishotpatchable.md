@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3ddad4542ef41190093e1dac743f60e4edadd400
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 20fc0bf766baf2fcdee32c654d10dbd4813da698
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421960"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703680"
 ---
 # <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, является ли модуль был скомпилирован с помощью [/hotpatch (создать образ с обновлениями)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) параметр компилятора.  
+Получает флаг, указывающий, является ли модуль был скомпилирован с помощью [/hotpatch (создать образ с обновлениями)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) параметр компилятора.  
   
 ## <a name="syntax"></a>Синтаксис  
   

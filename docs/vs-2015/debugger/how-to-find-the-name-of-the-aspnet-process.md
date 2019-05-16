@@ -17,12 +17,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc6d1ac72ef425a137f2a673b70b1c3215ed8001
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 53072013c1665687262d30f4a0c2720641c920be
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438267"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685963"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Практическое руководство. Поиск имени процесса ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "63438267"
   Более ранние версии приложений ASP при внутрипроцессном выполнении выполняются в процессе inetinfo.exe.  
   
 > [!NOTE]
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>Определение, размещен ли код проекта в файловой системе или IIS  
   

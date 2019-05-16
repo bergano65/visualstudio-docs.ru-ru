@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88a8d30b6eff7f4d7d2754ea383f7b544cc615ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a84de037661992d1ee185bea2a70db74dac5e618
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417064"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686356"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63417064"
   
  Как уже говорилось в [локализация приложений ClickOnce](../deployment/localizing-clickonce-applications.md), может включать несколько вспомогательных сборок для нескольких языков и региональных параметров в пределах одного [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания. По умолчанию [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] загружает все вспомогательные сборки в развертывание на клиентском компьютере, хотя один клиент, вероятно, потребует только одну вспомогательную сборку.  
   
- Это пошаговое руководство показывает, как пометить вспомогательные сборки как необязательные и загрузить только сборку, необходимую клиентскому компьютеру для текущих настроек языка и региональных параметров. В следующей процедуре используются средства, доступные в [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Эту задачу также можно выполнить в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Также см. в разделе [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) или [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Это пошаговое руководство показывает, как пометить вспомогательные сборки как необязательные и загрузить только сборку, необходимую клиентскому компьютеру для текущих настроек языка и региональных параметров. В следующей процедуре используются средства, доступные в [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Эту задачу также можно выполнить в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Также см. в разделе [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора](https://msdn.microsoft.com/library/ms366788\(v=vs.110\)) или [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора](https://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 > [!NOTE]
 > В целях тестирования в следующем примере кода программным образом задается следующий язык и региональные параметры: `ja-JP`. В подразделе «Дальнейшие действия» далее в этом разделе приводятся сведения о том, как настроить этот код для производственной среды.  
@@ -51,9 +51,9 @@ ms.locfileid: "63417064"
      [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/CS/Program.cs#1)]
      [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/VB/Form1.vb#1)]  
   
-2. Создайте вспомогательные сборки для приложения с помощью [Resgen.exe (генератор файлов ресурсов)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) или [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Создайте вспомогательные сборки для приложения с помощью [Resgen.exe (генератор файлов ресурсов)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) или [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-3. Создайте манифест приложения или откройте существующий манифест приложения с помощью MageUI.exe. Дополнительные сведения об использовании этого инструмента см. в разделе [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+3. Создайте манифест приложения или откройте существующий манифест приложения с помощью MageUI.exe. Дополнительные сведения об использовании этого инструмента см. в разделе [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 4. Щелкните вкладку **Файлы** .  
   

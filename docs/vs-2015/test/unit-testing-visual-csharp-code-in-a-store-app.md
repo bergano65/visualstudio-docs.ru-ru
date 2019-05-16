@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 144097837eba5c8feeb5a424134fec887d51befe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445942"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695259"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Модульное тестирование кода Visual C# в приложениях Магазина
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63445942"
 >   - Проводите тесты после каждой сборки.  
 >   - VS Enterprise также содержит Microsoft Fakes — платформу изоляции управляемого кода, которая позволяет сосредоточиться на тестировании вашего собственного кода путем замены кода, реализующего системные и сторонние функции.  
 > 
->   Дополнительные сведения см. в разделе [Проверка кода с помощью модульных тестов](http://msdn.microsoft.com/library/dd264975.aspx) в библиотеке MSDN.  
+>   Дополнительные сведения см. в разделе [Проверка кода с помощью модульных тестов](https://msdn.microsoft.com/library/dd264975.aspx) в библиотеке MSDN.  
   
 ## <a name="BKMK_In_this_topic"></a> Содержание раздела  
  [Создание решения и проекта модульного теста](#BKMK_Create_the_solution_and_the_unit_test_project)  

@@ -12,12 +12,12 @@ ms.assetid: 24ba362e-5be1-481a-b071-e1ebd3cae6e8
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3deae20a9b40076dc9a20eda4f621c8df3f0f392
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b2543dbb94e666cd02e55f0ddd84e1d0a5f4da4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992520"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675521"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugBreakpointBoundEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Примечания для разработчиков  
- DE реализует этот интерфейс как часть поддержки точек останова. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс (использует SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) для доступа к `IDebugEvent2` интерфейс).  
+ DE реализует этот интерфейс как часть поддержки точек останова. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) на один и тот же объект как этот интерфейс должен быть реализован интерфейс (использует SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) для доступа к `IDebugEvent2` интерфейс).  
   
 ## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
  DE создает и отправляет этот объект события в том случае, если ожидающая точка останова успешно привязан к отлаживаемой программы. Это событие отправляется с помощью [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) функции обратного вызова, предоставляемой SDM, если он присоединен к отлаживаемой программы.  

@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e5ca0c60511ee9537041f3a41f44a0e1f55b5a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc4d918f3eae9088e2b36b7bebbb69ce130e26d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441354"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674138"
 ---
 # <a name="options-text-editor-c-intellisense"></a>"Параметры", "Текстовый редактор", C#, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63441354"
 Страница **IntelliSense** служит для изменения параметров, влияющих на поведение IntelliSense для Visual C#. Чтобы получить доступ к странице свойств **IntelliSense**, щелкните **Параметры** в меню **Сервис**, затем щелкните **C#** в папке **Текстовый редактор** и выберите **IntelliSense.**  
   
 > [!NOTE]
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Страница **IntelliSense** содержит следующие свойства:  
   
@@ -41,10 +41,10 @@ ms.locfileid: "63441354"
  Если этот параметр выбран, IntelliSense автоматически отображает список завершения при начале ввода. Если этот параметр не выбран, функцию завершения IntelliSense можно вызвать из **IntelliSense** или с помощью сочетания клавиш CTRL+ПРОБЕЛ.  
   
  **Помещать ключевые слова в списки завершения**  
- Если этот параметр выбран, IntelliSense добавляет ключевые слова C#, например [class](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), в список завершения.  
+ Если этот параметр выбран, IntelliSense добавляет ключевые слова C#, например [class](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), в список завершения.  
   
  **Помещать фрагменты кода в списки завершения**  
- Если этот параметр выбран, IntelliSense добавляет псевдонимы для фрагментов кода C# в список завершения. Если псевдоним фрагмента кода совпадает с ключевым словом, например [class](http://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), оно заменяется ярлыком. Дополнительные сведения см. в разделе [Фрагменты кода Visual C#](../../ide/visual-csharp-code-snippets.md).  
+ Если этот параметр выбран, IntelliSense добавляет псевдонимы для фрагментов кода C# в список завершения. Если псевдоним фрагмента кода совпадает с ключевым словом, например [class](https://msdn.microsoft.com/library/b95d8815-de18-4c3f-a8cc-a0a53bdf8690), оно заменяется ярлыком. Дополнительные сведения см. в разделе [Фрагменты кода Visual C#](../../ide/visual-csharp-code-snippets.md).  
   
 ## <a name="selection-in-completion-lists"></a>Выделение в списках завершения  
  **Зафиксирован после ввода следующих знаков**  
@@ -72,5 +72,5 @@ ms.locfileid: "63441354"
   
 ## <a name="see-also"></a>См. также раздел  
  [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)   
- [Комментарии XML-документации](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
+ [Комментарии XML-документации](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [Использование технологии IntelliSense](../../ide/using-intellisense.md)

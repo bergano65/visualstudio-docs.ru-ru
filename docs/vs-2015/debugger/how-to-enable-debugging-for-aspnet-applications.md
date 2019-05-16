@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 07036fd7c1db7dc8b56502ab9c914f1ba808e876
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059959"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703665"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Практическое руководство. Включение отладки для приложений ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60059959"
 Для включения отладки необходимо включить ее на странице **Свойства проекта** и в файле web.config приложения.  
   
 > [!NOTE]  
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Включение отладки ASP.NET в свойствах проекта (Visual Basic/C#)  
   

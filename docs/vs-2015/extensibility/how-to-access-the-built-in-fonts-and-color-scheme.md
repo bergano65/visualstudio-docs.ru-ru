@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a43fb3a22ecb2d04542eacf07bf883590868b75b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430922"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685306"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Практическое руководство. Доступ к встроенной шрифтов и цветовой схемы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "63430922"
   
 2. Имя категории должны добавляться в таблицу строк в файле ресурсов (.rc) в пакете VSPackage, таким образом, чтобы можно было локализовать при необходимости при отображении в интегрированной среде разработки.  
   
-    Дополнительные сведения см. в разделе [Добавление или удаление строки](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
+    Дополнительные сведения см. в разделе [Добавление или удаление строки](https://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Чтобы зарегистрировать категории, с помощью встроенных шрифты и цвета  
   

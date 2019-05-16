@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 165ad365ea094a9f0b5771490e14e889160f3f96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d973d7ff5464b76228e917c83b3e62116e115718
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989723"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693805"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052. Типы со статическими заполнителями должны быть запечатаны
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58989723"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный тип содержит только статические члены и не объявлен с [запечатанный](http://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f) ([NotInheritable](http://msdn.microsoft.com/library/5c4da7c9-9562-4653-a947-1972e992f9f9)) модификатор.
+ Открытый или защищенный тип содержит только статические члены и не объявлен с [запечатанный](https://msdn.microsoft.com/library/8e4ed5d3-10be-47db-9488-0da2008e6f3f) ([NotInheritable](https://msdn.microsoft.com/library/5c4da7c9-9562-4653-a947-1972e992f9f9)) модификатор.
 
 ## <a name="rule-description"></a>Описание правила
  В этом правиле предполагается, что тип, который содержит только статические члены не предназначен для наследоваться, так как тип не поддерживает любые функции, которые могут переопределяться в производном типе. Тип, который предназначен не обязан иметь производные классы должны быть помечены `sealed` модификатор, чтобы запретить его использование в качестве базового типа.

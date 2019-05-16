@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b57f3de72272e8d1ecc567b150d073cd8d69611
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c29bd6a58d510d98f2a08c96d0cd0bc774e197e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443769"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679999"
 ---
 # <a name="localizing-clickonce-applications"></a>Локализация приложений ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "63443769"
  Преимущество такого подхода заключается в создании одного развертывания, что значительно упрощает локализованное развертывание. Во время выполнения будет использоваться соответствующая вспомогательная сборка в зависимости от языка и региональных параметров по умолчанию ОС Windows пользователя. Недостатком данного подхода является то, что все вспомогательные сборки загружаются всякий раз при установке или обновлении приложения на клиентском компьютере. Если приложение имеет большое количество строк или у клиентов медленное сетевое подключение, этот процесс может повлиять на производительность во время обновления приложения.  
   
 > [!NOTE]
-> При использовании этого подхода предполагается, что приложение изменяет высоту, ширину и положение элементов управления автоматически, адаптируя внешний вид с учетом разного размера текстовых строк в разных культурах. Windows Forms содержит разнообразные элементы управления и технологии, которые позволяют разрабатывать форму так, чтобы ее было удобно локализовать, включая элементы управления <xref:System.Windows.Forms.FlowLayoutPanel> и <xref:System.Windows.Forms.TableLayoutPanel>, а также свойство <xref:System.Windows.Forms.Control.AutoSize%2A>.  Также см. раздел [Как Поддержки локализации в Windows Forms, с помощью функции AutoSize и элемента управления TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+> При использовании этого подхода предполагается, что приложение изменяет высоту, ширину и положение элементов управления автоматически, адаптируя внешний вид с учетом разного размера текстовых строк в разных культурах. Windows Forms содержит разнообразные элементы управления и технологии, которые позволяют разрабатывать форму так, чтобы ее было удобно локализовать, включая элементы управления <xref:System.Windows.Forms.FlowLayoutPanel> и <xref:System.Windows.Forms.TableLayoutPanel>, а также свойство <xref:System.Windows.Forms.Control.AutoSize%2A>.  Также см. раздел [Как Поддержки локализации в Windows Forms, с помощью функции AutoSize и элемента управления TableLayoutPanel](https://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Создание одного развертывания для каждого языка и региональных параметров  
  В этой стратегии развертывания создается несколько развертываний. В каждое развертывание включается только одна вспомогательная сборка, необходимая для конкретного языка и региональных параметров, и помечается, что развертывание соответствует определенному языку и региональным параметрам.  
@@ -70,7 +70,7 @@ ms.locfileid: "63443769"
   
  Загрузка вспомогательных сборок по требованию несколько отличается от загрузки по требованию других типов сборок. Дополнительные сведения и примеры кода по включению данного сценария с помощью [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] средства для [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], см. в разделе [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Этот сценарий также можно включить в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Также см. в разделе [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) или [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Этот сценарий также можно включить в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Также см. в разделе [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора](https://msdn.microsoft.com/library/ms366788\(v=vs.110\)) или [Пошаговое руководство: Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора](https://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Тестирование локализованных приложений ClickOnce перед развертыванием  
  Вспомогательная сборка будет использоваться для приложения Windows Forms только в том случае, если для свойства <xref:System.Threading.Thread.CurrentUICulture%2A> для основного потока приложения задан язык и региональные параметры вспомогательной сборки . Клиенты на местах, вероятно, уже пользуются локализованной версией Windows, в которой нужный язык и региональные параметры по умолчанию заданы правильно.  
@@ -84,4 +84,4 @@ ms.locfileid: "63443769"
 ## <a name="see-also"></a>См. также  
  [\<assemblyIdentity > элемент](../deployment/assemblyidentity-element-clickonce-deployment.md)   
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Глобализация Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)
+ [Глобализация Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)

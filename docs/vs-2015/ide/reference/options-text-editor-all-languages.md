@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fc37f11d5f01af041610e066a9896f8e0e244fcc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e3d62bf388725b454d771e8cdd59ec963775eeb1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443381"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674754"
 ---
 # <a name="options-text-editor-all-languages"></a>Параметры, текстовый редактор, все языки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "63443381"
  Неактивная галочка отображается в том случае, если параметр был выбран на странице общих параметров для некоторых, но не для всех языков программирования.  
   
 > [!NOTE]
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="statement-completion"></a>Завершение операторов  
  Автоматическое перечисление элементов  

@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b8f81f22ffe566524e45a62330bc95c8ce00016
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444971"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686371"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "63444971"
   
 - .deploy  
   
-  Тем не менее, этот параметр можно отключить, сняв **использовать расширение файла «.deploy»** параметр [Publish Options Dialog Box](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), в этом случае необходимо настроить веб-сервер, чтобы разблокировать все расширения файлов используемые в приложении.  
+  Тем не менее, этот параметр можно отключить, сняв **использовать расширение файла «.deploy»** параметр [Publish Options Dialog Box](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), в этом случае необходимо настроить веб-сервер, чтобы разблокировать все расширения файлов используемые в приложении.  
   
   Вы должны будете настроить .manifest .application и .deploy, например, если используются службы IIS, где не установлена [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], или если вы используете другой веб-сервер (например, Apache).  
   
@@ -54,7 +54,7 @@ ms.locfileid: "63444971"
   
  Можно также применить исправление для .NET Framework 2.0, чтобы включить эту функцию. Дополнительные сведения см. в разделе http://go.microsoft.com/fwlink/?LinkId=158730.  
   
- Дополнительные сведения см. в разделе [ \<defaultProxy > (сетевые параметры)](http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
+ Дополнительные сведения см. в разделе [ \<defaultProxy > (сетевые параметры)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
 ## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce и веб-браузере совместимость  
  В настоящее время [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] установок запускаются только в том случае, если URL-адрес манифеста развертывания открывается с помощью Internet Explorer. Развертывание, URL-адрес которого открывается из другого приложения, такие как Microsoft Office Outlook, успешно запускаются только в том случае, если Internet Explorer устанавливается как веб-браузер по умолчанию.  
@@ -92,7 +92,7 @@ ms.locfileid: "63444971"
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce и подключенные диски  
- Если вы используете Visual Studio для публикации приложения ClickOnce, нельзя указать подключенный диск размещения установки. Тем не менее можно изменить приложение ClickOnce для установки с подключенного диска, с помощью создания и редактирования манифеста (Mage.exe и MageUI.exe). Дополнительные сведения см. в разделе [Mage.exe (средство редактирования и Manifest Generation)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) и [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+ Если вы используете Visual Studio для публикации приложения ClickOnce, нельзя указать подключенный диск размещения установки. Тем не менее можно изменить приложение ClickOnce для установки с подключенного диска, с помощью создания и редактирования манифеста (Mage.exe и MageUI.exe). Дополнительные сведения см. в разделе [Mage.exe (средство редактирования и Manifest Generation)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) и [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Протокол FTP не поддерживается для установки приложений  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] поддерживает установку приложений с любого файлового сервера или 1.1 веб-сервера HTTP. FTP, протокол передачи файлов не поддерживается для установки приложений. FTP можно использовать только для публикации приложений. В следующей таблице перечислены эти различия:  

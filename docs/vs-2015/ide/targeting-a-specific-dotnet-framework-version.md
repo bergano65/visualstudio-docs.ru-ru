@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11658e8cfe96da9c56b7cc1a63839510ed3c829
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429240"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679150"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Настройка конкретной версии платформы .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "62429240"
  Содержит сведения об указании конкретной версии [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] для проекта Visual Basic, Visual C# или Visual F#.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Настройка веб-проектов ASP.NET для различных версий .NET Framework](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
+ [Настройка веб-проектов ASP.NET для различных версий .NET Framework](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  Описание использования этой версии Visual Studio для разработки веб-приложений, выполняемых в более ранних версиях платформы .NET Framework.  
   
  [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md)  
@@ -45,5 +45,5 @@ ms.locfileid: "62429240"
  [Страница "Приложение" в конструкторе проектов (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
  Описывает элемент управления **Целевая рабочая среда** в конструкторе проектов для проектов [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
- [Практическое руководство. Изменение требуемой версии .NET Framework и набора средств платформы](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [Практическое руководство. Изменение требуемой версии .NET Framework и набора средств платформы](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  Описывает процедуру изменения параметров проектов Visual C++ для переориентации на другую версию .NET Framework и использования других наборов средств платформы.

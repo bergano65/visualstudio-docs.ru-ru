@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445636"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683856"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Интеграция Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  С этой целью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проверяет условия в `PropertyGroup`, `ItemGroup`, `Import`, свойствах и элементах объекта.  
   
 ## <a name="additional-build-actions"></a>Дополнительные действия при построении  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] дает возможность изменить имя типа элемента файла в проекте с помощью свойства **Действие при построении** в окне [Свойства файла](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). В этом меню всегда приводятся имена типов элементов`Compile`, `EmbeddedResource`, `Content`и `None` наряду со всеми другими именами типов элементов, которые уже используются в проекте. Чтобы быть уверенным в том, что в этом меню всегда будут доступны все пользовательские имена типов элементов, эти имена можно добавлять к типу элемента под названием `AvailableItemName`. Например, при добавлении следующих имен к файлу проекта одновременно будет добавлен пользовательский тип `JScript` к этому меню для всех проектов, которые его импортируют:  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] дает возможность изменить имя типа элемента файла в проекте с помощью свойства **Действие при построении** в окне [Свойства файла](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). В этом меню всегда приводятся имена типов элементов`Compile`, `EmbeddedResource`, `Content`и `None` наряду со всеми другими именами типов элементов, которые уже используются в проекте. Чтобы быть уверенным в том, что в этом меню всегда будут доступны все пользовательские имена типов элементов, эти имена можно добавлять к типу элемента под названием `AvailableItemName`. Например, при добавлении следующих имен к файлу проекта одновременно будет добавлен пользовательский тип `JScript` к этому меню для всех проектов, которые его импортируют:  
   
 ```  
 <ItemGroup>  

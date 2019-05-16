@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821420"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676702"
 ---
 # <a name="use-roslyn-analyzers"></a>Использование анализаторов Roslyn
 
@@ -56,7 +56,7 @@ ms.locfileid: "62821420"
 Чтобы изменить активный набор правил для проекта, перейдите к **анализа кода** вкладки свойств проекта. Выберите набор в списке правил **выполнить этот набор правил**. Чтобы открыть набор правил, выберите **откройте**.
 
 > [!NOTE]
-> Проекты .NET core и .NET Standard не поддерживают команды меню для наборов правил в **обозревателе решений**, например **открыть активный набор правил**. Чтобы указать нестандартный набор правил для проекта .NET Core или .NET Standard, вручную [добавить **CodeAnalysisRuleSet** свойство в файл проекта](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Можно настроить правила в набор правил в Visual Studio пользовательский Интерфейс редактора набора правил.
+> Проекты .NET core и .NET Standard не поддерживают команды меню для наборов правил в **обозревателе решений**, например **открыть активный набор правил**. Чтобы указать нестандартный набор правил для проекта .NET Core или .NET Standard, вручную [добавить **CodeAnalysisRuleSet** свойство](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) к файлу проекта. Можно настроить правила в набор правил в Visual Studio пользовательский Интерфейс редактора набора правил.
 
 ## <a name="rule-severity"></a>Важность правил
 

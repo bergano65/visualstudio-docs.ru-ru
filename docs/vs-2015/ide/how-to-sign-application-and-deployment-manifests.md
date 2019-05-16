@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6dbcc6f74d39353ae38b7298851cb1bab5fb0fe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435183"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685424"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Практическое руководство. Подписание приложения и манифесты развертывания
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "63435183"
   
  Подписывание манифестов ClickOnce для приложений на базе EXE является необязательным. Дополнительные сведения см. в разделе "Создание неподписанных манифестов" этого документа.  
   
- Сведения о создании файлов ключей см. в статье [Практическое руководство. Создание пары открытого и закрытого ключей](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Сведения о создании файлов ключей см. в статье [Практическое руководство. Создание пары открытого и закрытого ключей](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] поддерживает только файлы ключей для обмена личной информацией (PFX). Тем не менее, можно выбрать другие типы сертификатов из хранилища сертификатов текущего пользователя Windows, щелкнув **Выбрать из хранилища** на странице **Подписывание** свойств проекта.  
@@ -93,7 +93,7 @@ ms.locfileid: "63435183"
   
 2. На странице **Подписывание** снимите флажок **Подписать манифесты ClickOnce**.  
   
-3. Выполните сброс версии публикации, чтобы доступной была только одна версия приложения. По умолчанию Visual Studio автоматически увеличивает номер редакции для версии публикации при каждой публикации приложения. Дополнительные сведения см. в разделе [Как Установка ClickOnce версии публикации](../deployment/how-to-set-the-clickonce-publish-version.md).  
+3. Выполните сброс версии публикации, чтобы доступной была только одна версия приложения. По умолчанию Visual Studio автоматически увеличивает номер редакции для версии публикации при каждой публикации приложения. Дополнительные сведения см. в разделе [Практическое руководство. Установка ClickOnce версии публикации](../deployment/how-to-set-the-clickonce-publish-version.md).  
   
 4. Опубликуйте приложение.  
   
@@ -109,7 +109,7 @@ ms.locfileid: "63435183"
 3. Опубликуйте приложение.  
   
 ## <a name="see-also"></a>См. также  
- [Сборки со строгими именами](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Практическое руководство. Создание пары открытого и закрытого ключей](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Сборки со строгими именами](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Практическое руководство. Создание пары открытого и закрытого ключей](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Страница "Подписывание" в конструкторе проектов](../ide/reference/signing-page-project-designer.md)   
  [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)

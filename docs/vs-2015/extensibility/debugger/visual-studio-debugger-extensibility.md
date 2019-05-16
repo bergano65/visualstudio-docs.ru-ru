@@ -11,12 +11,12 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 528716c4ea354ab63dc7fcab2b3f90fe2860b655
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e337e87d162ac59cc6bb45676c1411692dd1a3bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989960"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675266"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Расширяемость отладчика Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Visual Studio включает отладчик полностью интера�
   
  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] Включает в себя полный Справочник ко всем [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] элементы, необходимые для создания нового DE. Кроме того существуют, примеры и учебники, которые помогут приступить к работе.  
   
- Пример end-to-end языка системы проекта с отладкой поддержки, см. в разделе [пример IronPython](http://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Пример end-to-end языка системы проекта с отладкой поддержки, см. в разделе [пример IronPython](https://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
   
  В следующих разделах рассматривается расширение отладчика с помощью [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0da69de4a91ebabce4af99e26195b349ef5daa60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e69bd59782c2caa1dcb878df4e5316df798b0f21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411414"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680979"
 ---
 # <a name="text-template-utility-methods"></a>Служебные методы для текстовых шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "63411414"
 Существует несколько методов, которые всегда доступны для вас при написании кода [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] текстового шаблона. Эти методы определяются в <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
-> Можно также использовать другие методы и служб, предоставляемых средой узла в шаблоне регулярных (без предварительной обработки) текста. Например, можно разрешить пути к файлам, ведения журнала ошибок и получить службы, предоставляемые [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и любой загруженных пакетов.  Дополнительные сведения см. в разделе [доступ к Visual Studio из текстового шаблона](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Можно также использовать другие методы и служб, предоставляемых средой узла в шаблоне регулярных (без предварительной обработки) текста. Например, можно разрешить пути к файлам, ведения журнала ошибок и получить службы, предоставляемые [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и любой загруженных пакетов.  Дополнительные сведения см. в разделе [доступ к Visual Studio из текстового шаблона](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ## <a name="write-methods"></a>Написание методов  
  Можно использовать `Write()` и `WriteLine()` методы можно добавлять текст в стандартный блок кода, вместо использования блока кода выражения. В следующих блоках кода функционально эквивалентны.  

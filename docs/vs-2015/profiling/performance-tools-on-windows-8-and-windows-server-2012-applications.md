@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bfd585a3185d83981d24c8dc77e62193c1363d4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb77271c37b02104a0e1695d5495ff085518acad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442539"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675293"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства производительности в приложениях Windows 8 и Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,19 +60,19 @@ ms.locfileid: "63442539"
   
   [Запуск приложений Магазина Windows на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
-  [Анализ производительности приложений](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [Анализ производительности приложений](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
-- [Время выполнения функций JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
+- [Время выполнения функций JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [Время выполнения функций JavaScript на удаленном устройстве](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [Время выполнения функций JavaScript на удаленном устройстве](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
-- [Анализ данных о времени выполнения функций JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [Анализ данных о времени выполнения функций JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows на локальном компьютере](http://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows на локальном компьютере](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
-- [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows на удаленном устройстве](http://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [Профилирование кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows на удаленном устройстве](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
-- [Анализ данных о производительности кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows](http://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Анализ данных о производительности кода Visual C++, Visual C# и Visual Basic в приложениях для Магазина Windows](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
   [Содержание раздела](#BKMK_In_this_topic)  
   
@@ -136,7 +136,7 @@ ms.locfileid: "63442539"
   
    **Сбор данных об уровневом взаимодействии на удаленном компьютере**  
   
-   Чтобы собирать сведения об уровневом взаимодействии на удаленный компьютер, необходимо скопировать и установить файл **vs\_profiler\_**_\<платформа>_**\_**_\<язык>_**.exe** из папки _%VSInstallDir%_**\Team Tools\Performance Tools\Setups**, расположенный на компьютере с Visual Studio. Невозможно использовать средства профилирования в пакете загрузки [Инструменты удаленной отладки для Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+   Чтобы собирать сведения об уровневом взаимодействии на удаленный компьютер, необходимо скопировать и установить файл **vs\_profiler\_**_\<платформа>_**\_**_\<язык>_**.exe** из папки _%VSInstallDir%_**\Team Tools\Performance Tools\Setups**, расположенный на компьютере с Visual Studio. Невозможно использовать средства профилирования в пакете загрузки [Инструменты удаленной отладки для Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
    Для сбора данных профилирования можно использовать [VSPerfCmd](../profiling/vsperfcmd.md) или [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) .  
   

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7e65f7e01971e6cf27bfad75e1536e83b833bd3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432438"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680789"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Поддержка пакета SDK для Visual Studio
 Несколько вариантов поддержки доступны для пользователей с вопросами о том, как расширения Visual Studio интегрированной среды разработки (IDE).
@@ -45,7 +45,7 @@ ms.locfileid: "62432438"
 ## <a name="included-support"></a>Включить поддержку
 
 ### <a name="visual-studio-product-support"></a>Поддержка продукта Visual Studio
- Некоторые поддержка включена при покупке [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] продуктов. Дополнительные сведения см. в разделе [поддержки Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Корпорация Майкрософт поддерживает выделенный поддержки, чтобы ответить на вопросы о [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширяемости.
+ Некоторые поддержка включена при покупке [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] продуктов. Дополнительные сведения см. в разделе [поддержки Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Корпорация Майкрософт поддерживает выделенный поддержки, чтобы ответить на вопросы о [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] расширяемости.
 
 ### <a name="msdn-subscription-support"></a>Поддержка по подписке MSDN
  Пакеты подписки MSDN также могут включать некоторую поддержку. Дополнительные сведения см. в разделе [Техническая поддержка подписчиков MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).
@@ -67,4 +67,4 @@ ms.locfileid: "62432438"
 
 ## <a name="see-also"></a>См. также
 
-- [Обращайтесь к нам](../ide/talk-to-us.md)
+- [Обращайтесь к нам](../ide/feedback-options.md)

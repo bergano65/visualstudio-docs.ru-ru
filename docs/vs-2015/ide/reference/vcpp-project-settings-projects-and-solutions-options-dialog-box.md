@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66110f6544bc19476bb4ecdfd6929fb4e26f0b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 65115be12d00f335272c65083be4a323a604b646
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082438"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689354"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -78,5 +78,5 @@ ms.locfileid: "60082438"
  В **обозревателе решений** отображаются файлы проекта, а также файлы из папки проекта на диске.  
   
 ## <a name="see-also"></a>См. также раздел  
- [Сборка программ C/C++](http://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008)   
- [Справочные сведения о сборке C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)
+ [Сборка программ C/C++](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008)   
+ [Справочные сведения о сборке C/C++](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)

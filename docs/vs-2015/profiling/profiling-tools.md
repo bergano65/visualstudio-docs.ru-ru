@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780848"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686283"
 ---
 # <a name="profiling-tools"></a>Средства профилирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54780848"
 ## <a name="memory-usage"></a>Использование памяти  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- С помощью средства **Использование памяти** вы сможете находить утечки памяти и выявлять неэффективное использование памяти во время отладки. Это средство можно использовать для создания снимков управляемой и собственной памяти в куче. Это средство работает с классическими приложениями, универсальными приложениями Windows и приложениями ASP.NET. Средство **Использование памяти** можно запустить из окна **Средства диагностики** во время отладки (**Отладка / Windows / Показать средства диагностики**) или вне отладчика (**Отладка / Профилировщик производительности...**). Дополнительные сведения см. в статьях [Memory Usage](../profiling/memory-usage.md) (Использование памяти) и [Memory Usage without Debugging](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) (Использование памяти без отладки).  
+ С помощью средства **Использование памяти** вы сможете находить утечки памяти и выявлять неэффективное использование памяти во время отладки. Это средство можно использовать для создания снимков управляемой и собственной памяти в куче. Это средство работает с классическими приложениями, универсальными приложениями Windows и приложениями ASP.NET. Средство **Использование памяти** можно запустить из окна **Средства диагностики** во время отладки (**Отладка / Windows / Показать средства диагностики**) или вне отладчика (**Отладка / Профилировщик производительности...**). Дополнительные сведения см. в статьях [Memory Usage](../profiling/memory-usage.md) (Использование памяти) и [Memory Usage without Debugging](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) (Использование памяти без отладки).  
   
 ## <a name="cpu-usage"></a>Использование ЦП  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  

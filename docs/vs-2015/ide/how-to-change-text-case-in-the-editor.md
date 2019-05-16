@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0beb86e3cb939a33a6b0fab3922b2a31a88a3307
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a81545b4316415d1868413d41113bd5c4fdd4b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439259"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695844"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Практическое руководство. Изменение регистра текста в редакторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63439259"
 Для переключения регистра выбранного текста можно использовать команды меню или сочетания клавиш.  
   
 > [!NOTE]
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в **справке** в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в **справке** в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Процедура  
   

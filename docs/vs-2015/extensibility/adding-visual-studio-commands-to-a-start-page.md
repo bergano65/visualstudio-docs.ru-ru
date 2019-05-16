@@ -11,19 +11,19 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a2042ef9a96eed99636ea0a2f5f09d99cd35ea2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429015"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699151"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Добавление команд Visual Studio на начальную страницу
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При создании настраиваемой начальной страницы, можно добавить в него команды Visual Studio. В этом документе описываются различные способы для привязки команд Visual Studio к объектам XAML на начальной странице.  
   
- Дополнительные сведения о командах в XAML см. в разделе [сведения о системе команд](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
+ Дополнительные сведения о командах в XAML см. в разделе [сведения о системе команд](https://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
   
 ## <a name="adding-commands-from-the-command-well"></a>Добавление команд из команды также  
  Начальная страница создана в [Создание настраиваемая начальная страница](../extensibility/creating-a-custom-start-page.md) добавлены <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> и <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> пространства имен, как показано ниже.  
@@ -94,7 +94,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ## <a name="adding-commands-with-the-dte-object"></a>Добавление команд с помощью объекта DTE  
  Можно получить доступ к объект DTE из начальной страницы, как в разметке, так и в коде.  
   
- В разметке, доступен с помощью [привязка расширения разметки](http://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) синтаксис для вызова <xref:EnvDTE.DTE> объекта. Этот подход можно использовать для привязки к простые свойства, например те, которые возвращают коллекции, но нельзя привязать к методам или служб. В следующем примере показан <xref:System.Windows.Controls.TextBlock> элемент управления, который привязывается к <xref:EnvDTE._DTE.Name%2A> свойство и <xref:System.Windows.Controls.ListBox> элемента управления, который перечисляет <xref:EnvDTE.Window.Caption%2A> свойства коллекции, который возвращается <xref:EnvDTE._DTE.Windows%2A> свойство.  
+ В разметке, доступен с помощью [привязка расширения разметки](https://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) синтаксис для вызова <xref:EnvDTE.DTE> объекта. Этот подход можно использовать для привязки к простые свойства, например те, которые возвращают коллекции, но нельзя привязать к методам или служб. В следующем примере показан <xref:System.Windows.Controls.TextBlock> элемент управления, который привязывается к <xref:EnvDTE._DTE.Name%2A> свойство и <xref:System.Windows.Controls.ListBox> элемента управления, который перечисляет <xref:EnvDTE.Window.Caption%2A> свойства коллекции, который возвращается <xref:EnvDTE._DTE.Windows%2A> свойство.  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  

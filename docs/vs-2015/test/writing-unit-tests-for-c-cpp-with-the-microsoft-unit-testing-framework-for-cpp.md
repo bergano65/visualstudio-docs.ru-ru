@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d238b5923c6f1377ec68717c8ed658bc74fe8e6a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437963"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695285"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Написание модульных тестов для языка C/C++ с использованием платформы модульного тестирования Майкрософт для C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63437963"
   
     - Добавьте оператор `#include` для файла `.h`, содержащего объявления внешне доступных функций DLL.  
   
-         Файл `.h` должен содержать объявления функций, отмеченных `_declspec(dllimport)`. Кроме того, можно экспортировать методы, используя DEF-файл. Дополнительные сведения см. в статье [Импортирование и экспортирование](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
+         Файл `.h` должен содержать объявления функций, отмеченных `_declspec(dllimport)`. Кроме того, можно экспортировать методы, используя DEF-файл. Дополнительные сведения см. в статье [Импортирование и экспортирование](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
   
          Модульные тесты могут получать доступ только к функциям, экспортированным из тестируемой библиотеки DLL.  
   
@@ -168,7 +168,7 @@ ms.locfileid: "63437963"
   
      ![Новый проект кода DLL и H-файл с макросами API](../test/media/utecpp07.png "UteCpp07")  
   
-     Оператор объявления `__declspec(dllexport)` делает открытые и защищенные члены класса видимыми вне библиотеки DLL. Для получения дополнительной информации см. [Using dllimport and dllexport in C++ Classes](http://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
+     Оператор объявления `__declspec(dllexport)` делает открытые и защищенные члены класса видимыми вне библиотеки DLL. Для получения дополнительной информации см. [Using dllimport and dllexport in C++ Classes](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
   
 4. В основной CPP-файл добавьте минимальное тело функции.  
   
@@ -395,7 +395,7 @@ ms.locfileid: "63437963"
 ## <a name="see-also"></a>См. также раздел  
  [Модульное тестирование существующих приложений C++ с использованием обозревателя тестов](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [Использование пространства имен Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
- [Общие сведения о взаимодействии управляемого и неуправляемого кода](http://msdn.microsoft.com/library/ms973872.aspx)   
+ [Общие сведения о взаимодействии управляемого и неуправляемого кода](https://msdn.microsoft.com/library/ms973872.aspx)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)   
- [Пошаговое руководство: Создание и использование библиотеки динамической компоновки (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [Импортирование и экспортирование](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+ [Пошаговое руководство: Создание и использование библиотеки динамической компоновки (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [Импортирование и экспортирование](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

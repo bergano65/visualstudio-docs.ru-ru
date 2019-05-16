@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001295"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686664"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Перенос приложений на универсальную платформу Windows (UWP)
 Вручную внесите необходимые изменения в существующие файлы проектов для приложений Магазина Windows 8.1, Windows Phone 8.1 или универсальных приложений Windows, созданных с помощью версии-кандидата Visual Studio 2015, чтобы их можно было использовать в окончательной первоначальной версии Visual Studio 2015. (Если у вас есть универсальное приложение Windows 8.1 с проектом приложения Windows и проектом Windows Phone, инструкции по миграции нужно будет выполнить для каждого проекта.)  
@@ -29,7 +29,7 @@ ms.locfileid: "63001295"
   
 - [Изменения, которые необходимо внести для существующих проектов модульных тестов универсальных приложений Windows, созданных с помощью версии-кандидата Visual Studio 2015](#MigrateUnitTest).  
   
-  Если вы не хотите вносить все эти изменения, узнайте, как [перенести существующие приложения](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) в новый проект универсального приложения Windows.  
+  Если вы не хотите вносить все эти изменения, узнайте, как [перенести существующие приложения](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) в новый проект универсального приложения Windows.  
   
 ## <a name="MigrateCSharp"></a> Перенос C# и Visual Basic Windows Store 8.1 или Windows Phone 8.1 приложения универсальную платформу Windows  
   
@@ -110,7 +110,7 @@ ms.locfileid: "63001295"
   
     6. Добавить \<EnableDotNetNativeCompatibleProfile > элемент и присвойте ему значение: **true**.  
   
-    7. Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Если проект включает ресурсы, не масштабируется при 200, необходимо добавить \<UapDefaultAssetScale > со значением, равным масштаб ресурсов элемент PropertyGroup. Узнайте больше о [ресурсах и масштабах](http://msdn.microsoft.com/library/jj679352.aspx).  
+    7. Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Если проект включает ресурсы, не масштабируется при 200, необходимо добавить \<UapDefaultAssetScale > со значением, равным масштаб ресурсов элемент PropertyGroup. Узнайте больше о [ресурсах и масштабах](https://msdn.microsoft.com/library/jj679352.aspx).  
   
          Теперь ваш \<PropertyGroup > элемент должен выглядеть как в этом примере:  
   
@@ -272,7 +272,7 @@ ms.locfileid: "63001295"
   
     4. Добавить \<EnableDotNetNativeCompatibleProfile > элемент и присвойте ему значение: true.  
   
-    5. Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Если проект включает ресурсы, не масштабируется при 200, необходимо добавить \<UapDefaultAssetScale > со значением, равным масштаб ресурсов элемент PropertyGroup. Узнайте больше о [ресурсах и масштабах](http://msdn.microsoft.com/library/jj679352.aspx).  
+    5. Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Если проект включает ресурсы, не масштабируется при 200, необходимо добавить \<UapDefaultAssetScale > со значением, равным масштаб ресурсов элемент PropertyGroup. Узнайте больше о [ресурсах и масштабах](https://msdn.microsoft.com/library/jj679352.aspx).  
   
     6. Для Windows Phone проекты, измените значение \<ApplicationType > с Windows Phone для Windows Store.  
   
@@ -651,7 +651,7 @@ ms.locfileid: "63001295"
   
 4. Найти \<PropertyGroup > элемент, содержащий \<TargetPlatformVersion > и \<TargetPlatformMinVersion > элементы. Измените существующее значение \<TargetPlatformVersion > и \<TargetPlatformMinVersion > элементы находятся в той же версии универсальной платформы Windows, который вы установили.  
   
-    Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Проекты, созданные с помощью Visual Studio 2015 RC включены ресурсы с масштабом 100, нужно будет добавить \<UapDefaultAssetScale > со значением, равным 100 элемент PropertyGroup. Узнайте больше о [ресурсах и масштабах](http://msdn.microsoft.com/library/jj679352.aspx).  
+    Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Проекты, созданные с помощью Visual Studio 2015 RC включены ресурсы с масштабом 100, нужно будет добавить \<UapDefaultAssetScale > со значением, равным 100 элемент PropertyGroup. Узнайте больше о [ресурсах и масштабах](https://msdn.microsoft.com/library/jj679352.aspx).  
   
 5. При добавлении ссылок на пакет SDK расширения UWP (например, Windows Mobile SDK) потребуется обновить версию пакета SDK. Например, это \<SDKReference > элемент:  
   
@@ -761,7 +761,7 @@ ms.locfileid: "63001295"
   
      Добавить \<EnableDotNetNativeCompatibleProfile > элемент и присвойте ему значение true, если элемент еще не существует.  
   
-     Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Проекты, созданные с помощью Visual Studio 2015 RC включены ресурсы с масштабом 100, нужно будет добавить \<UapDefaultAssetScale > со значением, равным 100 элемент PropertyGroup. Узнайте больше о [ресурсах и масштабах](http://msdn.microsoft.com/library/jj679352.aspx).  
+     Масштаб ресурса по умолчанию для универсальных приложений Windows — 200. Проекты, созданные с помощью Visual Studio 2015 RC включены ресурсы с масштабом 100, нужно будет добавить \<UapDefaultAssetScale > со значением, равным 100 элемент PropertyGroup. Узнайте больше о [ресурсах и масштабах](https://msdn.microsoft.com/library/jj679352.aspx).  
   
      Поэтому эта \<PropertyGroup > элемент теперь будет примерно следующим:  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 239fdcea9b8b9613bcdaa2419aba211c2a2a98f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429128"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686330"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Пошаговое руководство. Развертывание вручную приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -206,8 +206,8 @@ ms.locfileid: "63429128"
  Если необходимо развернуть новую версию приложения, создайте новый каталог с именем новой версии — например, 1.0.0.1—and скопируйте файлы нового приложения в новый каталог. Далее необходимо выполнить приведенные выше шаги, чтобы создать и подписать новый манифест приложения и обновить и подписать манифест развертывания. Будьте внимательны указать ту же версию, более поздней версии в Mage.exe `-New` и `–Update` вызовы, как [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] обновляет только новые версии с наибольшее целое число слева. Если вы использовали MageUI.exe, можно обновить манифест развертывания, открыв его, выбрав **ссылка приложения** вкладки, щелкнув **выбрать манифест** кнопку, а затем выбрав обновленный манифест приложения.  
   
 ## <a name="see-also"></a>См. также  
- [Mage.exe (средство создания и редактирования манифеста)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
+ [Mage.exe (средство создания и редактирования манифеста)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)

@@ -10,19 +10,19 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30ba0d48676438f19581e93a3af3c900569f5d5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8588efe9ce460a34fc71f44bc0116b5977afe7aa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112263"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705936"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Пример надстройки Excel для закодированного тестирования пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Этот пример надстройки для [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] разработан специально для поддержки закодированных тестов пользовательского интерфейса листов Excel, записываемых и запускаемых в Visual Studio Enterprise. Надстройка создается с помощью набора средств Visual Studio для Office.  
   
- Дополнительные сведения о создании надстройки Excel см. в разделе [Пошаговое руководство: Создание вашей первой надстройками VSTO для Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) или поиска MSDN для «Excel Add-In».  
+ Дополнительные сведения о создании надстройки Excel см. в разделе [Пошаговое руководство: Создание вашей первой надстройками VSTO для Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) или поиска MSDN для «Excel Add-In».  
   
  Хотя надстройка Excel не является основным предметом этой документации по расширению закодированных тестов пользовательского интерфейса для Excel, несколько комментариев могут пригодиться.  
   
@@ -47,5 +47,5 @@ ms.locfileid: "60112263"
   
 ## <a name="see-also"></a>См. также  
  [Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
- [Пошаговое руководство: Создание первой надстройки VSTO для Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
- [Office and SharePoint Development](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329) (Разработка приложений Office и SharePoint)
+ [Пошаговое руководство: Создание первой надстройки VSTO для Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
+ [Office and SharePoint Development](https://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329) (Разработка приложений Office и SharePoint)

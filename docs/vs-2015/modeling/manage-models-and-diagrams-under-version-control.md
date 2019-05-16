@@ -11,17 +11,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440953"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680293"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Работа с моделями и схемами в системе управления версиями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Для управления различными версиями проектов моделирования и схем, включая карты кода (файлы DGML), используйте [систему управления версиями Team Foundation или Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)на локальном сервере Team Foundation или в облаке через Visual Studio Team Services.  
+Для управления различными версиями проектов моделирования и схем, включая карты кода (файлы DGML), используйте [систему управления версиями Team Foundation или Git](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)на локальном сервере Team Foundation или в облаке через Visual Studio Team Services.  
   
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -77,7 +77,7 @@ ms.locfileid: "63440953"
   
 - Изменение свойств отношений, пересекающих границы пакета.  
   
-- Дополнительные сведения о блокировках извлечения см. в разделе [Извлечение и изменение файлов](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+- Дополнительные сведения о блокировках извлечения см. в разделе [Извлечение и изменение файлов](https://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>Перемещение файла схемы в папку проекта или из нее  
   
