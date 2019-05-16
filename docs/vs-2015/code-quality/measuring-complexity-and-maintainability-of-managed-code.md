@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 677af3ccbad28ed4eca3db2f98b82ef432b48676
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1f2ee066e448c0c039c4288c39aa13a646bc46a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980384"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697457"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Оценка сложности и удобства сопровождения управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ ms.locfileid: "58980384"
   
  [Работа с данными метрик кода](../code-quality/working-with-code-metrics-data.md)  
   
- [Практическое руководство. Копирование результатов метрики кода в буфер обмена](http://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
+ [Практическое руководство. Копирование результатов метрики кода в буфер обмена](https://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
   
- [Практическое руководство. Экспорт в Excel результатов метрики кода](http://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
+ [Практическое руководство. Экспорт в Excel результатов метрики кода](https://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
   
- [Практическое руководство. Создание рабочего элемента на основе результата](http://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
+ [Практическое руководство. Создание рабочего элемента на основе результата](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
   
 ## <a name="see-also"></a>См. также  
  [Устранение неполадок с метриками кода](../code-quality/troubleshooting-code-metrics-issues.md)   
- [Выполнение общих задач разработки](http://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)
+ [Выполнение общих задач разработки](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

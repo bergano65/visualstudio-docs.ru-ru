@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9fa341b781028db1836e963c99ae5069ce8fe18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f16d21889421a00fc2723412f34b426f75847822
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433599"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701624"
 ---
 # <a name="codeindex-command"></a>Команда CodeIndex
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "63433599"
   
  **Необходимые разрешения**  
   
- Для использования команды **CodeIndex** необходимо являться членом группы безопасности **Администраторы Team Foundation**. См. [Справочник по разрешениям Team Foundation Server](http://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).  
+ Для использования команды **CodeIndex** необходимо являться членом группы безопасности **Администраторы Team Foundation**. См. [Справочник по разрешениям Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).  
   
 > [!NOTE]
 > Для выполнения этой команды необходимо открыть окно командной строки с повышенными привилегиями, даже если вы вошли в систему, используя учетные данные администратора. Также эту команду необходимо выполнять для Team Foundation с уровня приложения.  
@@ -125,5 +125,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```  
   
 ## <a name="see-also"></a>См. также раздел  
- [Управление конфигурацией сервера с помощью TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
- [Средства командной строки для TFS](http://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)
+ [Управление конфигурацией сервера с помощью TFSConfig](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
+ [Средства командной строки для TFS](https://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)

@@ -11,12 +11,12 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b9161420df2c45aae9ddc0c206a80002a0450710
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MTE95
+ms.openlocfilehash: b84292e35fd07a7ab3d47c36a6a6c7a79224c201
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842878"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698146"
 ---
 # <a name="visual-studio-samples"></a>Примеры Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "56842878"
 |Область|Описание|
 |----------|-----------------|
 |[Примеры из центра разработчиков Windows](http://go.microsoft.com/fwlink/?LinkID=255278)|Описание разработки приложений [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].|
-|[Примеры по платформе .NET Framework](http://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Описание различных аспектов [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] в C# и Visual Basic.|
+|[Примеры по платформе .NET Framework](https://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Описание различных аспектов [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] в C# и Visual Basic.|
 |[Примеры C#](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)|Показывает, как использовать различные возможности C#.|
 |[Примеры Visual Basic](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=VB&f%5B0%5D.Text=VB.NET)|Показывает, как использовать различные возможности Visual Basic.|
 |[Примеры F#](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=F%23&f%5B0%5D.Text=F%23)|Показывает, как использовать различные возможности F#.|
 |[Примеры JavaScript](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=JavaScript)|Показывает, как использовать различные функции в JavaScript.|
 |[Примеры C++](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)|Показывает, как использовать различные функции в C++.|
 |[Примеры DirectX](http://code.msdn.microsoft.com/site/search?query=DirectX&f%5B1%5D.Value=DirectX&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=C%20%20&f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Text=Invalid%20Value&ac=2)|Показывает способы использования DirectX.|
-|[Примеры разработки решений Office](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Показывает способы использования средств разработки Office в Visual Studio. Наиболее актуальные примеры см. в разделе [Примеры разработчиков MSDN: сведения о коде](http://go.microsoft.com/fwlink/?LinkID=248199).|
+|[Примеры разработки решений Office](https://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Показывает способы использования средств разработки Office в Visual Studio. Наиболее актуальные примеры см. в разделе [примеры разработчиков MSDN: Обучайтесь через код](http://go.microsoft.com/fwlink/?LinkID=248199).|
 |[Примеры VSSDK](https://aka.ms/vs2015sdksamples)|Описание способов расширения Visual Studio.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Начало работы с Visual C# и Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)

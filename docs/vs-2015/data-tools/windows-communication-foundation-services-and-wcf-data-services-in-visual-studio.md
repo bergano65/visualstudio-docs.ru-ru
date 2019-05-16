@@ -33,17 +33,17 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68f2b400cc92673131dea2fc281b830df86019f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443873"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704386"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Службы Windows Communication Foundation и службы данных WCF в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio предоставляет средства для работы с Windows Communication Foundation (WCF) и [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], технологии Microsoft для создания распределенных приложений. В этом разделе содержатся вводные служб из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] перспективы. Полную документацию см. в разделе [служб данных WCF 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a).
+Visual Studio предоставляет средства для работы с Windows Communication Foundation (WCF) и [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], технологии Microsoft для создания распределенных приложений. В этом разделе содержатся вводные служб из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] перспективы. Полную документацию см. в разделе [служб данных WCF 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a).
 
 ## <a name="what-is-wcf"></a>Что такое WCF?
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] — Это унифицированный платформа для создания безопасной, надежной, транзакций и с возможностью взаимодействия распределенных приложений. Он заменяет старые технологии взаимодействия между процессами, таких как службы ASMX Интернета, .NET Remoting, Enterprise Services (DCOM) и MSMQ. WCF объединяет в себе функциональные возможности всех этих технологий в единую модель программирования. Это упрощает процесс разработки распределенных приложений.
@@ -92,21 +92,21 @@ Visual Studio предоставляет средства для работы с
 
  При выборе шаблона файлы добавляются в контракт службы, реализация службы и конфигурации службы. Все необходимые атрибуты уже добавлены, создание простых «Hello, World!» типа службы, и вам не нужно писать код. Само собой, необходимо добавить код для предоставления функций и методов для реальной службы, но шаблоны обеспечивают основу.
 
- Дополнительные сведения о шаблонах WCF, см. в разделе [шаблоны WCF в Visual Studio](http://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f).
+ Дополнительные сведения о шаблонах WCF, см. в разделе [шаблоны WCF в Visual Studio](https://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f).
 
 #### <a name="wcf-service-host"></a>Узел службы WCF
  При запуске [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] отладчика (нажав клавишу F5) для проекта службы WCF, узел службы WCF, автоматически запускается средство для размещения службы локально. Узел службы WCF перечисление служб в проекте службы WCF, загружает конфигурацию проекта и создает экземпляр узла для каждой найденной службы.
 
  С помощью узла службы WCF, вы можете проверить службы WCF без создания дополнительного кода или фиксации в конкретном узле во время разработки.
 
- Дополнительные сведения об узле службы WCF, см. в разделе [узел службы WCF (WcfSvcHost.exe)](http://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
+ Дополнительные сведения об узле службы WCF, см. в разделе [узел службы WCF (WcfSvcHost.exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
 
 #### <a name="wcf-test-client"></a>Тестовый клиент WCF
  Средство тестовый клиент WCF позволяет вводить тестовые параметры, отправлять в службу WCF и просматривать ответную службы. Он предоставляет удобную практику тестирования, используя этот продукт с узлом службы WCF службы. Это средство можно найти в папке \Common7\IDE, устанавливаемая для Visual Studio 2015 на диске C: — здесь: **C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\\**.
 
  При нажатии клавиши F5 для отладки проекта службы WCF, тестовый клиент WCF открывает и отображает список конечных точек службы, которые определены в файле конфигурации. Можно протестировать эти параметры и запустить службу и повторите эту процедуру для последовательного тестирования и проверки службы.
 
- Дополнительные сведения о тестовом клиенте WCF, см. в разделе [тестовый клиент WCF (WcfTestClient.exe)](http://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7).
+ Дополнительные сведения о тестовом клиенте WCF, см. в разделе [тестовый клиент WCF (WcfTestClient.exe)](https://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7).
 
 ### <a name="accessing-wcf-services-in-visual-studio"></a>Доступ к службам WCF в Visual Studio
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] упрощает задачу создания клиентов WCF, автоматически создавая прокси и конечную точку для службы, добавленные с помощью **Add Service Reference** диалоговое окно. Все необходимые сведения о конфигурации добавляется в файл app.config. Большинство случаев все, что нужно сделать — это создать службу для использования в.
@@ -236,12 +236,12 @@ Visual Studio предоставляет средства для работы с
 |-----------|-----------------|
 |[Пошаговое руководство: Создание простой службы WCF в Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Пошаговая демонстрация создания и использования служб WCF в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Пошаговое руководство: Создание службы данных WCF с помощью WPF и Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Пошаговая демонстрация того, как создать и использовать [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|[Использование средств разработки WCF](http://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|Описываются способы создания и тестирования служб WCF в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|[Практическое руководство. Добавление, обновление или удаление ссылки на службу](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Описывает добавление, обновление или удаление службы WCF из проекта.|
+|[Использование средств разработки WCF](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|Описываются способы создания и тестирования служб WCF в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Практическое руководство. Добавление, обновление или удаление ссылки на службу](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Описывает добавление, обновление или удаление службы WCF из проекта.|
 |[Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Описывает, как использовать [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Диагностика ссылок на службы](../data-tools/troubleshooting-service-references.md)|Приведены некоторые распространенные ошибки, которые могут возникнуть с помощью ссылок на службы и способов их устранения.|
 |[Отладка служб WCF](../debugger/debugging-wcf-services.md)|Описание общих проблем отладки и методов, которыми можно столкнуться при отладке службы WCF.|
-|[Общие сведения о Windows Communication Foundation проверки подлинности службы](http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Описывает способы использования WCF для предоставления службы роли веб-сайта.|
+|[Общие сведения о Windows Communication Foundation проверки подлинности службы](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Описывает способы использования WCF для предоставления службы роли веб-сайта.|
 |[Пошаговое руководство: Создание n-уровневого приложения для работы с данными](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Содержит пошаговые инструкции по созданию типизированного набора данных и разделения кода адаптера таблицы и набора данных на несколько проектов.|
 |[Диалоговое окно "Настроить ссылку на службу"](../data-tools/configure-service-reference-dialog-box.md)|Описание элементов пользовательского интерфейса из **настроить ссылку на службу** диалоговое окно.|
 

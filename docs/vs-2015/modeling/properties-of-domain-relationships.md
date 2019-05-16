@@ -11,19 +11,19 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56deef795d1b48dc1b49d8ab255fc7a4fbf7379e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6e30843b0a60ed4183491c16ff9992df8773fd1a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989101"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701890"
 ---
 # <a name="properties-of-domain-relationships"></a>Свойства доменных связей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В следующей таблице свойства связаны с доменной связи. Сведения о доменных связей, см. в разделе [Общие сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. в разделе [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-|Свойство.|Описание|Значение по умолчанию|  
+|Свойство|Описание|Значение по умолчанию|  
 |--------------|-----------------|-------------|  
 |Модификатор доступа|Уровень доступа доменной связи (`public` или `internal`).|`public`|  
 |Настраиваемые атрибуты|Используется для добавления атрибутов для класса исходного кода, созданный из доменной связи.|\<none>|  
@@ -41,4 +41,4 @@ ms.locfileid: "58989101"
 |Ключевое слово Help|Необязательное ключевое слово, используемое для индексации справки F1 для доменной связи.|\<none>|  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий средств предметно-ориентированных языков](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

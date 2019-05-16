@@ -11,17 +11,17 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436187"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695934"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Создание пользовательского интерфейса с помощью Blend для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Blend для Visual Studio помогает разрабатывать классические, веб-приложения Windows, приложения [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) и [Магазина Windows](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) на основе XAML. Этот инструмент предоставляет те же основные возможности конструктора XAML, что и Visual Studio, а также визуальные конструкторы для дополнительных задач, таких как анимация и управление поведением.
+Blend для Visual Studio помогает разрабатывать классические, веб-приложения Windows, приложения [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) и [Магазина Windows](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx) на основе XAML. Этот инструмент предоставляет те же основные возможности конструктора XAML, что и Visual Studio, а также визуальные конструкторы для дополнительных задач, таких как анимация и управление поведением.
 
  Так как Blend для Visual Studio входит в состав Visual Studio, скачивать отдельно его не нужно. Однако требуется выбрать этот компонент в установщике Visual Studio, чтобы установить его на компьютере.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aef35ff50080e9b596cc63915da77851b549bc3f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c9b653451a467cc6ac7d48ad08d937f8f8462a5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438859"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703230"
 ---
 # <a name="working-with-xml-data"></a>Работа с XML-данными
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,10 +58,10 @@ XML и связанные технологии играют важную рол�
  [Отладка XSLT](../xml-tools/debugging-xslt.md)  
  Описывает процесс отладки таблиц стилей с помощью отладчика Visual Studio.  
   
- [Справочник по XML-стандартам](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ [Справочник по XML-стандартам](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  Сведения о технологиях XML, в том числе XML, определении типа документа (DTD), языке определения схемы XML (XSD) и XSLT.
   
- [Веб-служб XML в управляемом коде](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
+ [Веб-служб XML в управляемом коде](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  Описывает процедуры создания и развертывания веб-служб с поддержкой XML и доступа к этим веб-службам.  
   
 ## <a name="see-also"></a>См. также  
