@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9463e46a7341a7da5c4aa79ae477d6aa0ff0c6cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444570"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686648"
 ---
 # <a name="how-to-create-an-activity-library"></a>Практическое руководство. создать библиотеку действий
 Пользовательские действия используются для определенных бизнес-процессов в рабочем процессе. В [!INCLUDE[vs2010](../includes/vs2010-md.md)] имеется шаблон библиотеки действий, который позволяет визуально создавать такие пользовательские действия при помощи средства [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -48,5 +48,5 @@ ms.locfileid: "63444570"
     > В теле настраиваемого действия допускается включать только одно дочернее действие; однако это дочернее действие может состоять из нескольких компонентов, например, действия <xref:System.Activities.Statements.Sequence> или <xref:System.Activities.Statements.Flowchart> activity.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое руководство. Создание действия](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Практическое руководство. Создание действия](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Создание проекта рабочего процесса](../workflow-designer/creating-a-workflow-project.md)

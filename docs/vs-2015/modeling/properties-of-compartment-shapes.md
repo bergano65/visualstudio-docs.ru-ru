@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69fac0b8ef5c17a8d66d32730e189f2813aa1158
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9176fe7bc7f9824610b7a77f1e1ef3b374b69ef3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979763"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701717"
 ---
 # <a name="properties-of-compartment-shapes"></a>Свойства фигур, состоящих из секций
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58979763"
   
  Фигуры секций имеют свойства, которые перечислены в следующей таблице.  
   
-|Свойство.|Описание|Значение по умолчанию|  
+|Свойство|Описание|Значение по умолчанию|  
 |--------------|-----------------|-------------|  
 |По умолчанию, разверните узел свернутого состояния|Если `Expanded`, секции отображаются при создании. Если `Collapsed`, они не являются.|Разреженный|  
 |Цвет заливки|Цвет заливки этой фигуры.|Белый|  
@@ -60,4 +60,4 @@ ms.locfileid: "58979763"
 |Ключевое слово Help|Ключевое слово, используемое для индексации справки F1 для данной фигуры.|\<none>|  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий средств предметно-ориентированных языков](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -23,12 +23,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73865d68c191d1287c1cf8a33095259bd9d659ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d5b10d3e40d889ffa9e7743d65de487c2d823cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979766"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698729"
 ---
 # <a name="edit-and-continue"></a>Изменить и продолжить
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "58979766"
   
  Этот раздел содержит следующие подразделы:  
   
- [Практическое руководство. Применение изменений кода явным образом](http://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
+ [Практическое руководство. Применение изменений кода явным образом](https://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
   
  [Практическое руководство. включение и выключение режима "Изменить и продолжить"](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
  [Практическое руководство. остановка внесения изменений в код](../debugger/how-to-stop-code-changes.md)  
   
- [Точка выполнения](http://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
+ [Точка выполнения](https://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
   
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -55,5 +55,5 @@ ms.locfileid: "58979766"
   
 ## <a name="see-also"></a>См. также  
  [Безопасность отладчика](../debugger/debugger-security.md)   
- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Основы отладки](../debugger/debugger-basics.md)

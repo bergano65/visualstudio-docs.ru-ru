@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408435"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685719"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Построение и очистка проектов и решений в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63408435"
 Процедуры, описанные в этом разделе, используются для построения, перестроения или очистки всех или некоторые проектов или элементов проекта в решении. Пошаговые инструкции см. в разделе [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
-> Пользовательский интерфейс в вашем выпуске Visual Studio может отличаться от приведенного в этом разделе в зависимости от ваших текущих параметров. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Пользовательский интерфейс в вашем выпуске Visual Studio может отличаться от приведенного в этом разделе в зависимости от ваших текущих параметров. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Сборка, перестроение или очистка всего решения
 
@@ -110,4 +110,4 @@ ms.locfileid: "63408435"
     - Нажмите сочетание клавиш CTRK+Break.
 
 ## <a name="see-also"></a>См. также
- [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md) [получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md) [компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md) [основные сведения о конфигурации построения](../ide/understanding-build-configurations.md) [Отладочные и выпускные конфигурации проекта](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ построение ссылки](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [командной строки devenv](../ide/reference/devenv-command-line-switches.md) [решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)
+ [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md) [получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md) [компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md) [основные сведения о конфигурации построения](../ide/understanding-build-configurations.md) [Отладочные и выпускные конфигурации проекта](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ построение ссылки](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [командной строки devenv](../ide/reference/devenv-command-line-switches.md) [решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)

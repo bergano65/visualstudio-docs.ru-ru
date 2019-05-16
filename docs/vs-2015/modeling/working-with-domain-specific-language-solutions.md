@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eab5a1b645023537ffee182804554f483d81f727
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9c69af03e88a8debf10763c1a62e82fe0e9430e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980869"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700582"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Работа с решениями на доменных языках
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,5 +49,5 @@ ms.locfileid: "58980869"
  [Практическое руководство. Расширение конструктора предметно-ориентированных языков](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  Вы можете настроить конструктор DSL с помощью команд меню.  
   
- [Автоматизация преобразования все шаблоны](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [Автоматизация преобразования все шаблоны](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  Чтобы избежать, щелкнув преобразовать все шаблоны, его можно сделать автоматически в процессе построения.

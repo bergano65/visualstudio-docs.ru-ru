@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef4d1221b59e6f1e5ed3de94f91742bbea778462
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428608"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679329"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ IntelliSense с кодом Visual C#
   
     2. Откроется окно **IntelliSense** и отобразит компонент **openFileDialog1**. Нажмите клавишу TAB, чтобы выбрать его. (в Visual Basic он начинается с заглавной буквы, поэтому будет представлен **OpenFileDialog1**; убедитесь, что выделен **OpenFileDialog1**).  
   
-         Дополнительные сведения о `OpenFileDialog` см. в разделе [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
+         Дополнительные сведения о `OpenFileDialog` см. в разделе [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
   
     3. Введите точку (`.`). Так как точка введена сразу после элемента **openFileDialog1**, окно **IntelliSense** открывается с методами и свойствами компонента **OpenFileDialog**. Это те же самые свойства, которые отображаются в окне **Свойства** при выборе этого окна в конструкторе Windows Forms. Также можно выбрать методы, которые дают указания компонентам на выполнение определенных действий (например, открыть диалоговое окно).  
   
@@ -67,7 +67,7 @@ IntelliSense с кодом Visual C#
   
     4. Начните набирать `ShowDialog` (для IntelliSense регистр значения не имеет). Метод `ShowDialog()` будет открывать диалоговое окно **Открыть файл**. После выделения **ShowDialog** в окне нажмите клавишу TAB. Также можно выделить "ShowDialog" и нажать клавишу F1 для получения соответствующей справки.  
   
-         Дополнительные сведения о методе `ShowDialog()` см. в разделе [Метод ShowDialog](http://msdn.microsoft.com/library/c7ykbedk.aspx).  
+         Дополнительные сведения о методе `ShowDialog()` см. в разделе [Метод ShowDialog](https://msdn.microsoft.com/library/c7ykbedk.aspx).  
   
     5. При использовании метода в элементе управления или компоненте (такое использование называется *вызов метода*) необходимо добавить круглые скобки. Введите открывающую и закрывающую скобки сразу после "g" в разделе `ShowDialog`: `()`; теперь строка должна принять вид "openFileDialog1.ShowDialog()".  
   
@@ -83,7 +83,7 @@ IntelliSense с кодом Visual C#
   
     8. Чтобы открыть значение DialogResult в окне **IntelliSense**, введите точку. Введите букву `O` и нажмите клавишу TAB, чтобы вставить **ОК**.  
   
-         Дополнительные сведения о `DialogResult` см. в разделе [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
+         Дополнительные сведения о `DialogResult` см. в разделе [DialogResult](https://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
   
         > [!NOTE]
         > Первая строка кода должна быть завершена. В Visual C# это выглядит следующим образом.  

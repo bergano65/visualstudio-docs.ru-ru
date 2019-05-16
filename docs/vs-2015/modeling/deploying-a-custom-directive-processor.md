@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c485209f47e2d119fe469a59fe379f7cabe03813
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 14bb73043a3c206f5b7397717a113e479a4163d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422590"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699687"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Развертывание пользовательского обработчика директив
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63422590"
   
  Альтернативные методы таковы:  
   
-- [Расширение Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Предоставляет способ установки и удаления процессора директив на вашем и других компьютерах. Обычно можно упаковывать другие функции в тот же VSIX.  
+- [Расширение Visual Studio (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Предоставляет способ установки и удаления процессора директив на вашем и других компьютерах. Обычно можно упаковывать другие функции в тот же VSIX.  
   
 - [VSPackage](../extensibility/internals/vspackages.md). Вы определяете VSPackage, содержащий помимо процессора директив и другие функции; это удобный метод регистрации процессора директив.  
   
@@ -34,7 +34,7 @@ ms.locfileid: "63422590"
   Эти методы необходимо использовать только в том случае, если требуется преобразовать текстовый шаблон в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Если используется в вашем собственном приложении, это пользовательское основное приложение отвечает за поиск процессора директив для каждой директивы.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Развертывание процессора директив в VSIX  
- Можно добавить пользовательский процессор директив [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+ Можно добавить пользовательский процессор директив [Visual Studio Extension (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Необходимо убедиться, что следующие два элемента содержатся в файле с расширением vsix:  
   

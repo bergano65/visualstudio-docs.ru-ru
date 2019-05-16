@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021927c9ff109e74956507b993c1c7192d109852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd28cad3036aaca1445cba7b4531580a2a44812
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756495"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691695"
 ---
 # <a name="performance-rules-by-id"></a>Правила производительности по идентификаторам
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54756495"
 |[DA0006. Переопределение Equals() для типов значений](../profiling/da0006-override-equals-parens-for-value-types.md)|Вызовы метода Equals или операторов равенства открытого типа составляют значительную часть данных профилирования. Рекомендуется использовать более эффективный метод.|  
 |[DA0007. Избегайте использования исключений для потока управления](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|Высокая частота вызовов обработчиков исключений .NET Framework в данных профилирования. Рекомендуется использовать другую логику потока управления для уменьшения числа вызываемых исключений.|  
 |[DA0008. Собрано несколько образцов](../profiling/da0008-few-samples-collected.md)|В сеансе профилирования было собрано небольшое число выборок. Для получения значительных результатов рекомендуется использовать более высокую частоту выборки или более долгий запуск.|  
-|[DA0009. Большой % времени в JIT](http://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Значительная доля времени выполнения приложения была потрачена в JIT-компиляторе.|  
+|[DA0009. Большой % времени в JIT](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Значительная доля времени выполнения приложения была потрачена в JIT-компиляторе.|  
 |[DA0010. Затратный метод GetHashCode](../profiling/da0010-expensive-gethashcode.md)|Вызовы метода GetHashCode типа составляют значительную часть данных профилирования, или метод выделяет память.|  
 |[DA0011. Затратный метод CompareTo](../profiling/da0011-expensive-compareto.md)|Метод CompareTo типа является затратным или выделяет память.|  
 |[DA0012. Слишком много вызовов метода Reflection](../profiling/da0012-significant-amount-of-reflection.md)|Вызовы методов System.Reflection, таких как InvokeMember и GetMember, или методов Type, таких как MemberInvoke, составляют значительную часть данных профилирования. Рекомендуется по возможности заменить эти методы ранней привязкой к методам зависимых сборок.|  

@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfb0cd2931c7e07644b62993811ea1aaf0a8e99e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54757662"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685696"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,10 +59,10 @@ ms.locfileid: "54757662"
 ## <a name="see-also"></a>См. также раздел  
  [Страница "Приложение" в конструкторе проектов (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Страница "Приложение" в конструкторе проектов (C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [Знакомство с конструктором проектов](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Знакомство с конструктором проектов](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Защита приложений ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Управление свойствами отладки](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Управление свойствами компиляции](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Управление свойствами отладки](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Управление свойствами компиляции](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Управление ресурсами приложения (.NET)](../ide/managing-application-resources-dotnet.md)   
  [Управление параметрами приложения (.NET)](../ide/managing-application-settings-dotnet.md)

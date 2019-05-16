@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33ce391523a256bcb195deccf0c14868b5eae707
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444321"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683085"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Пошаговое руководство. Отладка многопоточных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "63444321"
   
      Появится новый проект консольного приложения. Когда проект будет создан, откроется файл исходного кода. В зависимости от выбранного языка файл исходного кода может называться Module1.vb, Program.cs или MyThreadWalkthroughApp.cpp  
   
-6. Удалите код, который отображается в исходном файле и замените его кодом примера, который отображается в разделе «Создание потока» раздела [создание потоков и передача данных во время запуска](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
+6. Удалите код, который отображается в исходном файле и замените его кодом примера, который отображается в разделе «Создание потока» раздела [создание потоков и передача данных во время запуска](https://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
   
 7. В меню **Файл** выберите команду **Сохранить все**.  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac9800025bd55237a4f1d19ca6f07c78c757b603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9ce72d69cb64b0421771324803a785546fa884f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978741"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693756"
 ---
 # <a name="pseudovariables"></a>Псевдопеременные
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ $handles
 |`$clk`|Отображает время в циклах синхронизации.|  
 |`$user`|Отображает структуру с данными учетной записи для учетной записи, под которой выполняется приложение. По соображениям безопасности сведения о паролях не отображаются.|  
 |`$exceptionstack`|Отображает трассировку стека текущего исключения среды выполнения Windows. `$ exceptionstack` работает только в приложениях для Магазина Windows, выполняемых в Windows 8.1 или более поздней версии. `$ exceptionstack` не поддерживается для исключений C++ и SHE|  
-|`$ReturnValue`|Отображает возвращаемое значение метода .NET Framework. См. в разделе [анализ значений, возвращаемых из вызовов методов](http://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
+|`$ReturnValue`|Отображает возвращаемое значение метода .NET Framework. См. в разделе [анализ значений, возвращаемых из вызовов методов](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
   
  В C# и Visual Basic можно использовать псевдопеременные, указанные в этой таблице:  
   
@@ -68,8 +68,8 @@ $handles
 |`$delete` или `$$delete`|Удаляет неявную переменную, которая была создана в окне **Интерпретация**. Синтаксис `$delete,` *переменной* или`$delete,` *переменной*`.`|  
 |`$objectids` или `$listobjectids`|Отображает все идентификаторы активных объектов в виде дочерних элементов указанного выражения. Синтаксис `$objectid,` *выражение* или`$listobjectids,` *выражение*`.`|  
 |`$` *N* `#`|Отображает объект с идентификатором, равным *N*.|  
-|`$dynamic`|Отображает специальный узел **динамического представления** для объекта, который реализует `IDynamicMetaObjectProvider`. Интерфейс. Синтаксис: `$dynamic,` *объект*. Эта функция применима только к коду, который использует платформу .NET Framework 4. См. в разделе [динамическое представление](http://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
+|`$dynamic`|Отображает специальный узел **динамического представления** для объекта, который реализует `IDynamicMetaObjectProvider`. Интерфейс. Синтаксис: `$dynamic,` *объект*. Эта функция применима только к коду, который использует платформу .NET Framework 4. См. в разделе [динамическое представление](https://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
   
 ## <a name="see-also"></a>См. также  
  [Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)   
- [Окна переменных](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [Окна переменных](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

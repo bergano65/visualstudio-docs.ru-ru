@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3dff5e6ecf60d389730841e99b87db584465e020
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430115"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695480"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>С помощью меток текста с помощью API прежних версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63430115"
 |[Практическое руководство. Создание пользовательских текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)|Описывает, как создать и добавить пользовательский текстовый тип маркера для текстового представления.|  
 |[Практическое руководство. Использование текстовых маркеров](../extensibility/how-to-use-text-markers.md)|Описание способов добавления меток текста.|  
 |[Компоненты основного редактора](../extensibility/inside-the-core-editor.md)|Описание возможностей базовым редактором и подробные сведения о том, как настроить базовый редактор.|  
-|[Возможности редактора](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Описывает функции, доступные в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовым редактором.|  
+|[Возможности редактора](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Описывает функции, доступные в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовым редактором.|  
   
 ## <a name="reference"></a>Ссылка  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

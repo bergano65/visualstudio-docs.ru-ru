@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8af5414b1c775a17421b87b9c18d58c34f544405
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666771"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698650"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Разработка приложений для универсальной платформы Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "59666771"
   
  **Что такое универсальная платформа Windows?**  
   
- Это просто коллекция контрактов и версий. Они позволяют нацеливаться на среду, в которой может работать приложение. Больше не нужно нацеливаться на операционную систему. Теперь приложение можно нацеливать на одно или несколько семейств устройств. Более подробную информацию можно получить в этом [руководстве по платформе](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
+ Это просто коллекция контрактов и версий. Они позволяют нацеливаться на среду, в которой может работать приложение. Больше не нужно нацеливаться на операционную систему. Теперь приложение можно нацеливать на одно или несколько семейств устройств. Более подробную информацию можно получить в этом [руководстве по платформе](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
 ## <a name="requirements"></a>Требования  
  Средства разработки универсальных приложений Windows поставляются с эмуляторами, которые можно использовать для просмотра своих приложений на разных устройствах. Чтобы использовать эти эмуляторы, необходимо установить соответствующее программное обеспечение на физическом компьютере. Физический компьютер должен работать под управлением версии Windows 8.1 Профессиональная (x64) или более поздней и иметь процессор, который поддерживает клиент Hyper-V и преобразование адресов второго уровня (SLAT). Если на виртуальной машине выполнена установка Visual Studio, эмуляторы на ней работать не могут.  
@@ -55,8 +55,8 @@ ms.locfileid: "59666771"
   Конструктор XAML можно использовать только на платформе разработки Windows 10.  
   
 ## <a name="universal-windows-apps"></a>Универсальные приложения Windows  
- Выберите предпочтительный язык разработки (C#, Visual Basic, C++ или JavaScript), чтобы [создать универсальное приложение Windows для устройств Windows 10](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Или просмотрите [этот видеоролик о начале работы](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
+ Выберите предпочтительный язык разработки (C#, Visual Basic, C++ или JavaScript), чтобы [создать универсальное приложение Windows для устройств Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Или просмотрите [этот видеоролик о начале работы](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
   
- При наличии существующих приложений Магазина Windows 8.1, приложений для Windows Phone 8.1 или универсальных приложений Windows, созданных с помощью версии-кандидата Visual Studio 2015, [перенесите эти существующие приложения](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) , чтобы использовать последнюю версию универсальной платформы Windows.  
+ При наличии существующих приложений Магазина Windows 8.1, приложений для Windows Phone 8.1 или универсальных приложений Windows, созданных с помощью версии-кандидата Visual Studio 2015, [перенесите эти существующие приложения](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) , чтобы использовать последнюю версию универсальной платформы Windows.  
   
  После создания универсального приложения Windows необходимо [упаковать его](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) , чтобы установить его на устройстве Windows 10 или отправить в Магазин Windows.

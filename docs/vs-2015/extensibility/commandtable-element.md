@@ -13,12 +13,12 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 538de61fed22f4bcfcb38022b41a81d1239f5f4e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 22cbe4fc34ae41f89709d5b20f2c1188edcd0de3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988970"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685304"
 ---
 # <a name="commandtable-element"></a>Элемент CommandTable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ CommandTable является корневым элементом файла .vs
 |[Элемент VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Необязательный параметр. Определяет статические видимость команды и панели инструментов.|  
 |[Элемент KeyBindings](../extensibility/keybindings-element.md)|Необязательный параметр. Задает сочетания клавиш, если таковые имеются, для команд.|  
 |[Элемент UsedCommands](../extensibility/usedcommands-element.md)|Необязательный параметр. Разрешает VSPackage при необходимости реализовать свою собственную версию функции, изначально поддерживаемые других пакетов VSPackage.|  
-|[Элемент Symbols](http://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Необязательный параметр. Содержит все данные символов--идентификаторы GUID, идентификаторы и т.д. — для компилятора.|  
+|[Элемент Symbols](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Необязательный параметр. Содержит все данные символов--идентификаторы GUID, идентификаторы и т.д. — для компилятора.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   

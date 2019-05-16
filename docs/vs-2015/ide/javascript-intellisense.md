@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4985196feb8c2ddd5996c51210e39f9e503e953f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412308"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675172"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ IntelliSense помогает быстрее писать код, допуска
 </asp:ScriptManager>
 ```
 
- IntelliSense также поддерживает файлы скрипта, внедренные в качестве ресурсов в сборку в веб-приложениях ASP.NET AJAX. См. подробнее о [внедрении в сборку файла JavaScript в качестве ресурса](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
+ IntelliSense также поддерживает файлы скрипта, внедренные в качестве ресурсов в сборку в веб-приложениях ASP.NET AJAX. См. подробнее о [внедрении в сборку файла JavaScript в качестве ресурса](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 #### <a name="ReferenceDirectives"></a> Директивы ссылок
  Директивы `reference` позволяют [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] устанавливать отношение между редактируемым скриптом и другими скриптами. Директива `reference` позволяет включить файл скрипта в контекст программирования текущего файла скрипта. Эта дает возможность для IntelliSense ссылаться извне на определенные функции, типы и поля в процессе программирования.
@@ -284,5 +284,5 @@ IntelliSense помогает быстрее писать код, допуска
 - [Завершение операторов с использованием идентификаторов](../ide/statement-completion-for-identifiers.md)
 - [Комментарии XML-документации](../ide/xml-documentation-comments-javascript.md)
 - [Сведения об объектной модели DHTML](http://go.microsoft.com/fwlink/?LinkID=92344)
-- [Отображение списка членов](http://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [Отображение списка членов](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [Атрибут SRC &#124; Свойство src](http://go.microsoft.com/fwlink/?LinkId=92345)

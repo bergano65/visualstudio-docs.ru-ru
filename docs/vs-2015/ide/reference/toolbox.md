@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47f0567b07f12d17d721881c98c670ad74800190
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f7477017edc3c00a155064152f1d5df77bd35e63
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419740"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689371"
 ---
 # <a name="toolbox"></a>Панель элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,22 +33,22 @@ ms.locfileid: "63419740"
  На **панели элементов** отображаются только элементы, соответствующие типу файла, с которым вы работаете. Можно выполнить поиск по панели элементов, чтобы дополнительно отфильтровать отображаемые элементы. Если для проекта необходим элемент управления, который не поддерживается в профиле клиента, можно настроить проект для всей платформы, изменив его свойства.  
   
 > [!NOTE]
-> Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Справка по вкладкам панели элементов  
  Следующие документы содержат дополнительную информацию по конкретным вкладкам **панели элементов**.  
   
-- [Панель элементов, вкладка "Данные"](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [Панель элементов, вкладка "Данные"](https://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
-- [Панель элементов, вкладка "Компоненты"](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [Панель элементов, вкладка "Компоненты"](https://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
-- [Вкладка "HTML", панель элементов](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [Вкладка "HTML", панель элементов](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
-- [Панель элементов, вкладка "Данные"](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [Панель элементов, вкладка "Данные"](https://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
-- [Панель элементов, вкладка "Компоненты"](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [Панель элементов, вкладка "Компоненты"](https://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
-- [Вкладка "HTML", панель элементов](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [Вкладка "HTML", панель элементов](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>См. также раздел  
  [Использование панели элементов](../../ide/using-the-toolbox.md)

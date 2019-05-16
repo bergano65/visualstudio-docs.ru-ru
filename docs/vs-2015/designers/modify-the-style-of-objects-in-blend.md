@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ee1e1bc8762ae21ea69db5215d4dc472858d720
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5ca94c88a1f131065b7d5de57e9cdc200696d58
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442451"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681428"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Изменение стиля объектов в Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,12 +95,12 @@ ms.locfileid: "63442451"
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [создать стиль](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Применение стиля или шаблона к элементу управления  
- Щелкните правой кнопкой мыши объект на панели [Объекты и временная шкала](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), выберите элемент **Изменить шаблон**, а затем нажмите кнопку **Применить ресурс**.  
+ Щелкните правой кнопкой мыши объект на панели [Объекты и временная шкала](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), выберите элемент **Изменить шаблон**, а затем нажмите кнопку **Применить ресурс**.  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Восстановление стиля или шаблона элемента управления по умолчанию  
- Выберите элемент управления и на панели [Свойства](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) найдите свойство **Стиль** или **Шаблон**. Затем нажмите кнопку **Дополнительные параметры** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") и выберите в контекстном меню пункт **Сброс**.  
+ Выберите элемент управления и на панели [Свойства](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) найдите свойство **Стиль** или **Шаблон**. Затем нажмите кнопку **Дополнительные параметры** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") и выберите в контекстном меню пункт **Сброс**.  
   
 ## <a name="Visual"></a> Визуальные состояния: Изменение внешнего вида элемента управления в зависимости от его состояния  
  Элементы управления могут иметь различное визуальное представление в зависимости от действий пользователя. Например, можно сделать, чтобы кнопка становилась зеленой при нажатии пользователя, или запустить анимацию. Уменьшить или увеличить интервал времени между визуальными состояниями можно с помощью переходов.  

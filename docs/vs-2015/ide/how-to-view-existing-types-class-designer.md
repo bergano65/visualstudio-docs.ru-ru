@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 45a4dd40e00182084686841279f81eb1de9d8a28
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c33ae053a605e50aa8d1940fc97f3c0f687b48fa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424583"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695335"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Практическое руководство. Просмотр существующих типов (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "63424583"
    Кроме того, чтобы просмотреть типы в проекте, можно перетащить один или более типов из узла проекта в «Окне классов» на схему классов.  
   
 > [!TIP]
-> Если представление классов не открыто, откройте его из меню **Вид**. Дополнительные сведения о представлении классов см. в разделе [Просмотр классов и их членов](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+> Если представление классов не открыто, откройте его из меню **Вид**. Дополнительные сведения о представлении классов см. в разделе [Просмотр классов и их членов](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
  Чтобы отобразить типы на схеме в месте по умолчанию, выберите один или несколько типов в представлении классов, щелкните правой кнопкой мыши выбранные типы и выберите команду **Просмотр схемы класса**.  
   

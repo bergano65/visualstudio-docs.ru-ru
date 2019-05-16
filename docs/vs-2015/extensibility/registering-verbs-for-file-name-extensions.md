@@ -10,19 +10,19 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbd97310163a4eb3ae5502c6341dc73322ca653d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432550"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685272"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Регистрация команд для расширений имен файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Сопоставление расширения имени файла с приложением, как правило, имеет предпочитаемым действием, которое происходит при двойном щелчке файла. Этот предпочитаемый действия связанного действия, например открытым, соответствующее действие.  
   
- Вы можете зарегистрировать команд, которые связаны с программный идентификатор (ProgID) для расширения с помощью оболочки раздел, расположенный в HKEY_CLASSES_ROOT\\*progid*\shell. Дополнительные сведения см. в разделе [типы файлов](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ Вы можете зарегистрировать команд, которые связаны с программный идентификатор (ProgID) для расширения с помощью оболочки раздел, расположенный в HKEY_CLASSES_ROOT\\*progid*\shell. Дополнительные сведения см. в разделе [типы файлов](https://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
 ## <a name="registering-standard-verbs"></a>Регистрация стандартных команд  
  Операционная система распознает следующие стандартные команды:  

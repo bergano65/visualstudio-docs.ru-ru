@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a2449e9686f71cfd932a2bf6047ed0208da1d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114812"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674998"
 ---
 # <a name="managing-application-settings-net"></a>Управление параметрами приложения (.NET)
 
@@ -59,7 +59,7 @@ ms.locfileid: "60114812"
 >
 > Если информация для строки подключения берется из внешнего источника (например пользователь задает идентификатор пользователя и пароль), то необходимо следить за тем, чтобы значения, которые используются для составления строки подключения, не содержали дополнительных параметров строки подключения, изменяющих действие подключения.
 >
-> Рассмотрите возможность использования функции защищенной конфигурации для шифрования секретной информации в файле конфигурации. Дополнительные сведения см. в статье [Защита сведений о соединении](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).
+> Рассмотрите возможность использования функции защищенной конфигурации для шифрования секретной информации в файле конфигурации. Дополнительные сведения см. в статье [Защита сведений о соединении](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).
 
 > [!NOTE]
 > Из-за отсутствия модели файла конфигурации для библиотек классов, параметры приложений не применяются для проектов библиотек классов. Исключением является Visual Studio Tools для проекта Office DLL, который может иметь файл конфигурации.
@@ -74,7 +74,7 @@ ms.locfileid: "60114812"
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Доступ или изменение параметров приложения во время выполнения в Visual Basic
 
-В проектах [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] во время выполнения доступ к параметрам приложения можно получить с помощью объекта `My.Settings` . На странице **Параметры** нажмите кнопку **Просмотреть код** , чтобы просмотреть файл Settings.vb. Файл Settings.vb определяет класс `Settings` , который позволяет обрабатывать эти события в классе параметров: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>и <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Обратите внимание, что класс `Settings` в файле Settings.vb является частичным классом, который отображает только принадлежащий пользователю код, а не весь сгенерированный класс. Более подробную информацию о доступе к параметрам приложения с помощью объекта `My.Settings` см. в разделе [Accessing Application Settings](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
+В проектах [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] во время выполнения доступ к параметрам приложения можно получить с помощью объекта `My.Settings` . На странице **Параметры** нажмите кнопку **Просмотреть код** , чтобы просмотреть файл Settings.vb. Файл Settings.vb определяет класс `Settings` , который позволяет обрабатывать эти события в классе параметров: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>и <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Обратите внимание, что класс `Settings` в файле Settings.vb является частичным классом, который отображает только принадлежащий пользователю код, а не весь сгенерированный класс. Более подробную информацию о доступе к параметрам приложения с помощью объекта `My.Settings` см. в разделе [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
 
 Значения любого изменяемого пользователем во время выполнения приложения параметра, область действия которого ограничивается пользователем (например положение формы), хранятся в файле User.config. Обратите внимание, что значения по умолчанию по-прежнему сохраняются в файл app.config.
 
@@ -98,8 +98,8 @@ Properties.Settings.Default.FirstUserSetting = "abc";
 Properties.Settings.Default.Save();
 ```
 
-Общие сведения о доступе к параметрам приложений с помощью класса `Settings` см. в разделе [Общие сведения о параметрах приложений](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Информацию об итерации параметров см. в этой [записи форума](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Общие сведения о доступе к параметрам приложений с помощью класса `Settings` см. в разделе [Общие сведения о параметрах приложений](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Информацию об итерации параметров см. в этой [записи форума](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Доступ к параметрам приложения](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [Доступ к параметрам приложения](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

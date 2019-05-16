@@ -17,17 +17,17 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02f7c89db63fbd2276dd6e59a619a62e4b485870
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6cd353610cc3d9122c14f608f0278d4afc501e0f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108190"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686840"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Практическое руководство. Использование визуализатора дерева WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Визуализатор дерева WPF можно использовать для изучения визуального дерева объекта WPF, а также для просмотра свойств зависимостей WPF для объектов, содержащихся в дереве. Дополнительные сведения о визуальных деревьях см. в разделе [деревья в WPF](http://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649). Дополнительные сведения о свойствах зависимостей см. в разделе [Общие сведения о свойствах зависимостей](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
+Визуализатор дерева WPF можно использовать для изучения визуального дерева объекта WPF, а также для просмотра свойств зависимостей WPF для объектов, содержащихся в дереве. Дополнительные сведения о визуальных деревьях см. в разделе [деревья в WPF](https://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649). Дополнительные сведения о свойствах зависимостей см. в разделе [Общие сведения о свойствах зависимостей](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
   
  При открытии визуализатора дерева WPF отобразятся две панели: **визуального дерева** в левой части и **свойства** _имя_**:**  _Тип_ на правой панели. Выберите любой объект в **визуального дерева** области и **свойства** _имя_**:**_тип_ область автоматически обновляется для отображения свойств для этого объекта.  
   
@@ -66,5 +66,5 @@ ms.locfileid: "60108190"
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Использование визуализатора](../misc/how-to-use-a-visualizer.md)   
  [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)   
- [Деревья в WPF](http://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649)   
- [Общие сведения о свойствах зависимости](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)
+ [Деревья в WPF](https://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649)   
+ [Общие сведения о свойствах зависимости](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)

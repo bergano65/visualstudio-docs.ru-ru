@@ -17,17 +17,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bfd6cc62fc93ca3a535fb60c4ea5e1323c720558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425100"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690236"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Разделение наборов данных и TableAdapter на разные проекты
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Типизированные наборы данных были усовершенствованы, чтобы [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) и классы наборов данных могут быть созданы в отдельные проекты. Это дает возможность быстро разделять слои приложения и создавать многоуровневые приложения.  
+Типизированные наборы данных были усовершенствованы, чтобы [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) и классы наборов данных могут быть созданы в отдельные проекты. Это дает возможность быстро разделять слои приложения и создавать многоуровневые приложения.  
   
  Следующая процедура описывает процесс использования конструктора наборов данных для создания кода набора данных в проект, который отличается от проекта, который содержит созданный `TableAdapter` кода.  
   
@@ -70,4 +70,4 @@ ms.locfileid: "63425100"
  [Пошаговое руководство: Создание данных N-уровневого приложения](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Иерархическое обновление](../data-tools/hierarchical-update.md)   
  [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)

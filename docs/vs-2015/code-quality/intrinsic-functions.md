@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 1ebe75fae15069efc5e76ac59e6f16f9ca06d1ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e5284ae41f961d8e027590b4296037236e7108f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979551"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699439"
 ---
 # <a name="intrinsic-functions"></a>Встроенные функции
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ ms.locfileid: "58979551"
 |Комментарий|Описание|  
 |----------------|-----------------|  
 |`_String_length_(param)`|`param` — количество элементов в строке до, но не включая завершающий нуль-символ. Это примечание зарезервировано для типов символ строки.|  
-|`strlen(param)`|`param` — количество элементов в строке до, но не включая завершающий нуль-символ. Это примечание зарезервировано для использования на символ, массивами и похоже на функцию среды выполнения C [strlen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
-|`wcslen(param)`|`param` число элементов в строке до (но не включая) завершающий нуль-символ. Это примечание зарезервировано для использования на расширенный символ, массивами и похоже на функцию среды выполнения C [wcslen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`strlen(param)`|`param` — количество элементов в строке до, но не включая завершающий нуль-символ. Это примечание зарезервировано для использования на символ, массивами и похоже на функцию среды выполнения C [strlen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`wcslen(param)`|`param` число элементов в строке до (но не включая) завершающий нуль-символ. Это примечание зарезервировано для использования на расширенный символ, массивами и похоже на функцию среды выполнения C [wcslen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
   
 ## <a name="see-also"></a>См. также  
  [Использование аннотаций SAL для сокращения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

@@ -29,17 +29,17 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6ae74c51f0f738bc596fbe5c789011630927707c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105478"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702258"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Возобновление выполнения после исключения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Когда отладчик приостанавливает выполнение из–за возникновения исключения, появляется диалоговое окно. Для Visual Basic или C#, вы увидите [исключениям](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) диалоговое окно, по умолчанию. Для C++, вы увидите старые **исключение** диалоговое окно. Если вы используете Visual Basic или C#, но отключен **исключениям** в **параметры** диалоговом окне вы увидите **исключение** диалоговое окно.  
+Когда отладчик приостанавливает выполнение из–за возникновения исключения, появляется диалоговое окно. Для Visual Basic или C#, вы увидите [исключениям](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) диалоговое окно, по умолчанию. Для C++, вы увидите старые **исключение** диалоговое окно. Если вы используете Visual Basic или C#, но отключен **исключениям** в **параметры** диалоговом окне вы увидите **исключение** диалоговое окно.  
   
  Когда **исключениям** или **исключение** откроется диалоговое окно, можно попытаться устранить неполадку, вызвавшую исключение.  
   

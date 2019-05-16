@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3a316006ba8983e00906e041d243d8f7c82d6277
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071776"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684283"
 ---
 # <a name="using-dump-files"></a>Использование файлов дампа
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,11 +76,11 @@ ms.locfileid: "60071776"
   
 - Visual Studio поддерживает отладку файлов дампа, создаваемых приложениями в машинных кодах на устройствах ARM. Visual Studio также поддерживает отладку файлов дампа, создаваемых управляемыми приложениями на устройствах ARM, но только в отладчике машинного кода.  
   
-- Для отладки [режима ядра](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) файлы в Visual Studio 2013 дампа, загрузите [Windows 8.1 версии для отладки средства для Windows](http://msdn.microsoft.com/windows/hardware/gg463009). См. в разделе [Kernel Debugging in Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+- Для отладки [режима ядра](https://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) файлы в Visual Studio 2013 дампа, загрузите [Windows 8.1 версии для отладки средства для Windows](https://msdn.microsoft.com/windows/hardware/gg463009). См. в разделе [Kernel Debugging in Visual Studio](https://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
 - Visual Studio не поддерживает отладку файлов дампа, сохраненных в старом формате, известном как [дампа пользовательского режима полного](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Обратите внимание, что "полный дамп в режиме пользователя" и "дамп с кучей" — это не одно и то же.  
   
-- Для отладки с помощью [SOS.dll (расширение отладки SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) в Visual Studio, необходимо установить отладки средства для Windows, входящего в набор драйверов Windows (WDK). См. в разделе [Предварительная версия Windows 8.1: Скачайте комплекты, материалы и средства](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Для отладки с помощью [SOS.dll (расширение отладки SOS)](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) в Visual Studio, необходимо установить отладки средства для Windows, входящего в набор драйверов Windows (WDK). См. в разделе [Предварительная версия Windows 8.1: Скачайте комплекты, материалы и средства](https://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
@@ -91,7 +91,7 @@ ms.locfileid: "60071776"
   
 - С помощью [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md) включен, вы можете подключить отладчик к аварийному процессу, который выполняется вне отладчика, а затем сохраните файл дампа. См. в разделе [присоединение к выполняемым процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
-  Файлы дампа также можно создавать с помощью любой программы, которая поддерживает формат минидампов Windows. Например **Procdump** программы командной строки из [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) можно создавать файлы аварийного дампа процесса на основе триггеров или по требованию. См. в разделе [требования и ограничения](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) в этом разделе, Дополнительные сведения об использовании других средств для создания файлов дампа.  
+  Файлы дампа также можно создавать с помощью любой программы, которая поддерживает формат минидампов Windows. Например **Procdump** программы командной строки из [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) можно создавать файлы аварийного дампа процесса на основе триггеров или по требованию. См. в разделе [требования и ограничения](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) в этом разделе, Дополнительные сведения об использовании других средств для создания файлов дампа.  
   
   ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   

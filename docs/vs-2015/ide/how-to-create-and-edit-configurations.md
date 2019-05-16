@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 35cda86854bede07c8f1d4830f05607b7fab3643
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422905"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680415"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Практическое руководство. Создание и изменение конфигураций
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "63422905"
   
      Откроется окно **Страницы свойств**.  
   
-     Можно задать свойства для конфигураций. Например, для конфигурации выпуска можно задать оптимизацию кода при сборке решения, а для конфигурации отладки — указать, что включен символ условной компиляции `DEBUG`. См. подробнее о параметрах страницы свойств в статье [Знакомство с конструктором проектов](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+     Можно задать свойства для конфигураций. Например, для конфигурации выпуска можно задать оптимизацию кода при сборке решения, а для конфигурации отладки — указать, что включен символ условной компиляции `DEBUG`. См. подробнее о параметрах страницы свойств в статье [Знакомство с конструктором проектов](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 ## <a name="creating-and-modifying-project-configurations"></a>Создание и изменение конфигураций проектов  
   
@@ -126,4 +126,4 @@ ms.locfileid: "63422905"
 ## <a name="see-also"></a>См. также раздел  
  [Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)   
  [Building and Cleaning Projects and Solutions in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)  (Построение и очистка проектов и решений в Visual Studio)  
- [NIB. Практическое руководство. Изменение свойств проекта и параметров конфигурации](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB. Практическое руководство. Изменение свойств проекта и параметров конфигурации](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

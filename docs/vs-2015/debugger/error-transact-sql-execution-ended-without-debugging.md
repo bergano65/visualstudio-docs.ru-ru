@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 910b84e7a024547208ea2e7ae1d6a6897cf60893
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cdfcaa42c55f87711b0889c6a67d1a4799b84fed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431892"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681075"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Ошибка: Выполнение Transact-SQL завершается без отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ ms.locfileid: "62431892"
   
   Чтобы устранить эту ошибку, необходимо:  
   
-- Проверить установленные параметры прав доступа. Дополнительные сведения см. в разделе [Как Задайте разрешения SQL Server для отладки](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+- Проверить установленные параметры прав доступа. Дополнительные сведения см. в разделе [Практическое руководство. Задайте разрешения SQL Server для отладки](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
 - Удостовериться в том, что отладка SQL настроена верно.  
   
 - Обратиться за консультацией к администратору сети или администратору базы данных.  
   
 ## <a name="see-also"></a>См. также  
- [Настройка отладки SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [Практическое руководство. Задайте разрешения SQL Server для отладки](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [Настройка отладки SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [Практическое руководство. Задайте разрешения SQL Server для отладки](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

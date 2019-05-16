@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7dda5f0f9d613a2e6704b0f8b1f688c76a759752
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117412"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705904"
 ---
 # <a name="troubleshooting-code-coverage"></a>Устранение неполадок с покрытием кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ ms.locfileid: "60117412"
  Убедитесь, что сборка не была загружена из кэша образов в машинном коде.  
   
  Объяснение  
- Из соображений производительности сборки образов в машинном коде не анализируются. См. дополнительные сведения о [файле Ngen.exe (генераторе образов в машинном коде)](http://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
+ Из соображений производительности сборки образов в машинном коде не анализируются. См. дополнительные сведения о [файле Ngen.exe (генераторе образов в машинном коде)](https://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
   
  Решение  
  Используйте MSIL-версию сборки. Не обрабатывайте ее с помощью NGen.  

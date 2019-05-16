@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078b7f5535dc80261917ef662b3a2f0069cb33a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992215"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687299"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117. APTCA-типы должны расширять только базовые APTCA-типы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58992215"
  Открытый или защищенный тип в сборке с <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> атрибут наследует от типа, объявленного в сборку, которая не имеет атрибута.
 
 ## <a name="rule-description"></a>Описание правила
- По умолчанию, открытые или защищенные типы в сборках со строгими именами неявно защищены [требования наследования](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) полного доверия. Сборки со строгими именами, имеющие <xref:System.Security.AllowPartiallyTrustedCallersAttribute> атрибут (APTCA) нет эту защиту. Атрибут отменяет требование наследования. Это позволяет предоставлять типы, объявленные в сборке, наследуемые по типам, не имеющие полного доверия.
+ По умолчанию, открытые или защищенные типы в сборках со строгими именами неявно защищены [требования наследования](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) полного доверия. Сборки со строгими именами, имеющие <xref:System.Security.AllowPartiallyTrustedCallersAttribute> атрибут (APTCA) нет эту защиту. Атрибут отменяет требование наследования. Это позволяет предоставлять типы, объявленные в сборке, наследуемые по типам, не имеющие полного доверия.
 
  Если в полностью доверенной сборке присутствует атрибут APTCA и тип в сборке наследует от типа, который не позволяет частично доверенным вызывающим объектам, возможен уязвимости безопасности. Если два типа `T1` и `T2` удовлетворять следующим условиям, злоумышленники могут использовать тип `T1` обходить требование наследования неявное полного доверия, который защищает `T2`:
 
@@ -84,4 +84,4 @@ ms.locfileid: "58992215"
  [CA2116: Методы APTCA должны вызывать только методы APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>См. также
- [Правила написания безопасного кода](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [сборки .NET Framework, вызываться частично доверенного кода](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [использование библиотек из частично доверенного кода](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [требования наследования](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+ [Правила написания безопасного кода](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [сборки .NET Framework, вызываться частично доверенного кода](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [использование библиотек из частично доверенного кода](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [требования наследования](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

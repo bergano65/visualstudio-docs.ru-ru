@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76729bd44d196028fd88bd13718a34518b1fbde4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: df2fb0c6505bc5fa756443bd50fdb31ff151e7d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052328"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673676"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Практическое руководство. использовать точки останова в XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Точки останова можно задать в таблице стилей XSLT или в исходном XML-документе. Если задать точку останова на теге, то при выполнении точка останова переходит к следующему оператору, у которого есть сведения исходной строки.  
   
- Дополнительные сведения см. в разделе [основы отладки: Точки останова](http://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
+ Дополнительные сведения см. в разделе [основы отладки: Точки останова](https://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
   
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Задание точки останова в таблице стилей  
  Точки останова можно задать на открывающих тегах, закрывающих тегах и текстовых узлах таблицы стилей XSLT. Точки останова можно также задать в коде блока скрипта.  

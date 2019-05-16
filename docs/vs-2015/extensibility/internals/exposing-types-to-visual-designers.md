@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2db026367e43c1092cf9744817449ce51556a4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f4d6c0e163b751f1873fdb941e85c273dcc4fde5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436314"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691206"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Предоставление типов конструкторам визуальных элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "63436314"
      При компиляции временного PE только исходный файл, предоставленный компилятору является выходные данные пользовательского инструмента. Таким образом пользовательское средство, которое использует временный PE необходимо создать выходные файлы, которые могут быть скомпилированы независимо от других файлов в проекте.  
   
 ## <a name="see-also"></a>См. также  
- [Знакомство с объектом BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [Знакомство с объектом BuildManager](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [Реализация генераторов одного файла](../../extensibility/internals/implementing-single-file-generators.md)   
  [Определение пространства имен по умолчанию проекта](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Регистрация генераторов одного файла](../../extensibility/internals/registering-single-file-generators.md)

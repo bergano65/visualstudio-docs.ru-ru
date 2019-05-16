@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 684bf375568b83333ac5e4c9f88eeae00449cd42
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f3b4898166ec24cb429463f55f8b166056123e78
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443252"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683867"
 ---
 # <a name="understanding-build-configurations"></a>Общие сведения о конфигурациях построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,9 @@ ms.locfileid: "63443252"
 Вы можете сохранять разные конфигурации решения и свойства проекта для использования разных типов сборок. Чтобы создать, выбрать, изменить или удалить конфигурацию, можно использовать **Configuration Manager**. Чтобы открыть его, выберите в строке меню **Сборка**, **Configuration Manager** или просто введите **Configuration** в поле **Быстрый запуск**. Можно также использовать список **Конфигурации решения** на панели инструментов **Стандартные**, чтобы выбрать конфигурацию или открыть **Configuration Manager**.  
   
 > [!NOTE]
-> Если вы не можете найти параметры конфигурации решения на панели инструментов и не можете получить доступ к **Configuration Manager**, можно применить параметры развертывания [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Дополнительные сведения см. в разделе [Как Управление конфигурациями с применением параметров разработчика Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
+> Если вы не можете найти параметры конфигурации решения на панели инструментов и не можете получить доступ к **Configuration Manager**, можно применить параметры развертывания [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Дополнительные сведения см. в разделе [Практическое руководство. Управление конфигурациями с применением параметров разработчика Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
   
- По умолчанию конфигурации отладки и выпусков включены в проекты, которые создаются с использованием шаблонов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Конфигурация отладки поддерживает отладку приложения, а конфигурация выпусков выполняет сборку версии приложения, которую можно развернуть. Дополнительные сведения см. в разделе [Как настроить конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). Можно также создать пользовательские конфигурации решений и проектов. Дополнительные сведения см. в разделе [Как Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md).  
+ По умолчанию конфигурации отладки и выпусков включены в проекты, которые создаются с использованием шаблонов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Конфигурация отладки поддерживает отладку приложения, а конфигурация выпусков выполняет сборку версии приложения, которую можно развернуть. Дополнительные сведения см. в разделе [Практическое руководство. настроить конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). Можно также создать пользовательские конфигурации решений и проектов. Дополнительные сведения см. в разделе [Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="solution-configurations"></a>Конфигурации решения  
  Конфигурация решения указывает, как следует создавать и развертывать проекты в решении. Чтобы изменить конфигурацию решения или определить новую конфигурацию в **Configuration Manager**, в меню **Активная конфигурация решения** щелкните **Изменить** или **Создать**.  
@@ -88,5 +88,5 @@ ms.locfileid: "63443252"
  [Пошаговое руководство: Построение приложения](../ide/walkthrough-building-an-application.md)   
  [Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)   
  [Решения и проекты](../ide/solutions-and-projects-in-visual-studio.md)   
- [Справочные сведения о построении C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   
+ [Справочные сведения о построении C/C++](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   
  [Параметры командной строки для команды Devenv](../ide/reference/devenv-command-line-switches.md)

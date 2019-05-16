@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 48632a08b3ed59d65b7a551244c295b012bef665
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444738"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690980"
 ---
 # <a name="devenv-command-line-switches"></a>Параметры командной строки для команды Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "63444738"
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Запускает [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и записывает все действия в файл журнала.|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) или `/r`|Компилирует и запускает указанное решение.|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Компилирует и выполняет указанное решение, свертывая окно IDE при выполнении решения и закрывая IDE после завершения выполнения.|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Инициирует использование в IDE переменных среды PATH, INCLUDE и LIB для компиляции на [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] вместо параметров, указанных в диалоговом окне **Параметры** в разделе "Каталоги VC++" параметров **проектов**. Дополнительные сведения см. в разделе [Установка переменных пути и среды при построении из командной строки](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4).|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Инициирует использование в IDE переменных среды PATH, INCLUDE и LIB для компиляции на [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] вместо параметров, указанных в диалоговом окне **Параметры** в разделе "Каталоги VC++" параметров **проектов**. Дополнительные сведения см. в разделе [Установка переменных пути и среды при построении из командной строки](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4).|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Открывает указанные файлы в запущенном экземпляре этого приложения. Если нет запущенных экземпляров, то запускается новый экземпляр с упрощенной структурой окна.|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Запускает экземпляр среды IDE Visual Studio без загрузки указанной надстройки.|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Запускает [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] в безопасном режиме и загружает только среду и службы по умолчанию, а также прилагаемые версии сторонних пакетов.|  

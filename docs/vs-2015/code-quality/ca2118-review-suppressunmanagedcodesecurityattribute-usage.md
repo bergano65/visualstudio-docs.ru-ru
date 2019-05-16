@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4fdbf84cc981dfe9e7cee73fba06867250d2fc33
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059179"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687283"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118. Проверьте использование атрибута SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60059179"
  Открытый или защищенный тип или член <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> атрибута.
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> изменяет поведение системы безопасности по умолчанию для элементов, выполняющих неуправляемый код с помощью COM-взаимодействия или платформы вызова. Как правило, система открывает [данные и моделирование](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) на разрешение неуправляемого кода. Это требование происходит во время выполнения для каждого вызова члена, а также проверяет каждый источник вызова в стеке вызовов для разрешения. Когда атрибут присутствует, система создает [требования связывания](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) для разрешения: разрешения непосредственно вызывающего метода проверяются в том случае, если вызывающий является JIT-компиляции.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> изменяет поведение системы безопасности по умолчанию для элементов, выполняющих неуправляемый код с помощью COM-взаимодействия или платформы вызова. Как правило, система открывает [данные и моделирование](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) на разрешение неуправляемого кода. Это требование происходит во время выполнения для каждого вызова члена, а также проверяет каждый источник вызова в стеке вызовов для разрешения. Когда атрибут присутствует, система создает [требования связывания](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) для разрешения: разрешения непосредственно вызывающего метода проверяются в том случае, если вызывающий является JIT-компиляции.
 
  Этот атрибут служит в основном для повышения производительности; однако, прирост производительности сопряжен со значительными рисками безопасности. Если атрибут помещается на открытые члены, которые вызова собственных методов, вызывающих в стеке вызовов (кроме непосредственного вызывающего объекта) не требуется разрешение неуправляемого кода на исполнение неуправляемого кода. В зависимости от действий открытого члена и обрабатывать входные данные он может разрешить ненадежных вызывающих объектов для доступа к функциям, как правило, недоступны надежному коду.
 
@@ -72,4 +72,4 @@ ms.locfileid: "60059179"
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>См. также
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Правила написания безопасного кода](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Оптимизация безопасности](http://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [данные и моделирование](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [требования связывания](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Правила написания безопасного кода](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Оптимизация безопасности](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [данные и моделирование](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [требования связывания](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

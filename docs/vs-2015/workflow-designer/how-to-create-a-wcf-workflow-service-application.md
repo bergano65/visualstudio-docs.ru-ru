@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40b1d2961fa0f0187d11bd87df54ff2ad3124275
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0c258ea081e95179c507f76413ae2a5fc7d71a5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433524"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705852"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Практическое руководство. создать служебное приложение рабочего процесса WCF
 [!INCLUDE[indigo1](../includes/indigo1-md.md)] служебные приложения рабочего потока представляют собой распределенные службы коммуникаций, которые передают сообщения клиентам и обратно, из одного процесса в другой. В [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] реализация контракта службы на стороне службы выполняется декларативно с помощью действий рабочего процесса способом, аналогичным тому, который реализован в службах рабочих процессов .NET Framework 3.5.  
@@ -43,5 +43,5 @@ ms.locfileid: "63433524"
 8. Шаблон проекта создает определение службы как XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] открывает конструктор с действием <xref:System.Activities.Statements.Sequence>, которое содержит набор действий <xref:System.ServiceModel.Activities.Receive> и <xref:System.ServiceModel.Activities.SendReply>.  
   
 ## <a name="see-also"></a>См. также  
- [Практическое руководство. Создание действия](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Практическое руководство. Создание действия](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Создание проекта рабочего процесса](../workflow-designer/creating-a-workflow-project.md)

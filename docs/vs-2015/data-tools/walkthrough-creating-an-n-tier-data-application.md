@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 57a370dd8fd243deba8db9b9a928202d25c7836d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424746"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675627"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Пошаговое руководство. Создание N-уровневого приложения для работы с данными
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ N-уровня * данных приложения, приложения, дос
   
 - Создание типизированного набора данных с помощью **мастера настройки источника данных**.  
   
-- Разделение созданного [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) и набора данных на отдельные проекты.  
+- Разделение созданного [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) и набора данных на отдельные проекты.  
   
 - Создание службы WCF для вызова уровня доступа к данным.  
   
@@ -381,7 +381,7 @@ N-уровня * данных приложения, приложения, дос
 ## <a name="next-steps"></a>Следующие шаги  
  В зависимости от требований приложения существуют несколько шагов, которые, возможно, потребуется выполнить после сохранения связанных данных в приложении Windows. Ниже приводится перечень рекомендаций, позволяющих улучшить данное приложение.  
   
-- Добавьте проверку в набор данных. Сведения см. в разделе [Пошаговое руководство: Добавление проверки в N-уровневое приложение](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+- Добавьте проверку в набор данных. Сведения см. в разделе [Пошаговое руководство: Добавление проверки в N-уровневое приложение](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
 - Добавьте в службу дополнительные методы для обновления данных в базе данных.  
   

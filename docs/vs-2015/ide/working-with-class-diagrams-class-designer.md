@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b344621ea7980ce24c56a59a67edfe72f871f5ae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3243f43176f2d62edbc33f66ce2da85f32c26c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443404"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698121"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Работа со схемами классов (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63443404"
   
  Кроме определения того, что именно показывает каждая диаграмма классов, также можно изменить способ представления данных. Дополнительные сведения см. в статье [Практическое руководство. Настройка схем классов (конструктор классов)](../ide/how-to-customize-class-diagrams-class-designer.md).  
   
- После точной настройки одной или нескольких схем классов можно скопировать их в документы Microsoft Office и распечатать или экспортировать в виде графических файлов. Дополнительные сведения см. в разделе [Как Копирование элементов схемы классов в документ Microsoft Office (конструктор классов)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [как: Печать схем классов (конструктор классов)](../ide/how-to-print-class-diagrams-class-designer.md) и [как: Экспорт схем классов как изображений (конструктор классов)](../ide/how-to-export-class-diagrams-as-images-class-designer.md).  
+ После точной настройки одной или нескольких схем классов можно скопировать их в документы Microsoft Office и распечатать или экспортировать в виде графических файлов. Дополнительные сведения см. в разделе [Практическое руководство. Копирование элементов схемы классов в документ Microsoft Office (конструктор классов)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [как: Печать схем классов (конструктор классов)](../ide/how-to-print-class-diagrams-class-designer.md) и [как: Экспорт схем классов как изображений (конструктор классов)](../ide/how-to-export-class-diagrams-as-images-class-designer.md).  
   
 > [!NOTE]
 > Конструктор классов не отслеживает расположение исходных файлов, поэтому, изменение структуры проекта или перемещение исходных файлов в проекте может привести к тому, что конструктор классов не будет отслеживать тип, особенно исходный тип для typedef, базовые классы или типы ассоциаций. Может возникнуть ошибка вида **Конструктору классов не удалось отобразить этот тип**. В этом случае перетащите измененный или перемещенный исходный код в схему классов и повторно отобразите ее.  
@@ -69,4 +69,4 @@ ms.locfileid: "63443404"
 ## <a name="see-also"></a>См. также  
  [Просмотр типов и отношений (конструктор классов)](../ide/viewing-types-and-relationships-class-designer.md)   
  [Практическое руководство. Настройка схем классов (конструктор классов)](../ide/how-to-customize-class-diagrams-class-designer.md)   
- [Практическое руководство. Удаление фигур типов из схем классов (конструктор классов)](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)
+ [Практическое руководство. Удаление фигур типов из схем классов (конструктор классов)](https://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

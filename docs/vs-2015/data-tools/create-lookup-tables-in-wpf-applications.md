@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8401a41c479dea70289cd0ebf072fc3b57eff78d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cd92d75e297055b65d05bef42d497e65c2a996d6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434508"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697927"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Создание таблиц подстановки в приложениях WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "63434508"
   
     - Набор данных или модели EDM.
 
-    - Служба данных WCF, служба WCF или веб-службы. Дополнительные сведения см. в разделе [Как подключиться к данным в службе](../data-tools/how-to-connect-to-data-in-a-service.md).  
+    - Служба данных WCF, служба WCF или веб-службы. Дополнительные сведения см. в разделе [Практическое руководство. подключиться к данным в службе](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    - Объекты. Дополнительные сведения см. в разделе [Как Подключение к данным в объектах](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
+    - Объекты. Дополнительные сведения см. в разделе [Практическое руководство. Подключение к данным в объектах](https://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
     > Перед созданием таблицы подстановки, две связанные таблицы или объекты должны существовать в качестве источника данных для проекта.  

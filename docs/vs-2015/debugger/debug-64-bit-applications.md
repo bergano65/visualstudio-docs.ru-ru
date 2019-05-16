@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d603d2435183581cac92a7c6dae6a4044d8f8fe5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f67acff26d346b915f6b457fc0887f1d5f2ec3b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087434"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695903"
 ---
 # <a name="debug-64-bit-applications"></a>Отладка 64-разрядных приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60087434"
   
 1. Создайте решение Visual Studio, например консольное приложение C#.  
   
-2. С помощью Configuration Manager задайте для конфигурации 64-разрядный режим. Дополнительные сведения см. в разделе [Как настроить целевые платформы в проектах](../ide/how-to-configure-projects-to-target-platforms.md).  
+2. С помощью Configuration Manager задайте для конфигурации 64-разрядный режим. Дополнительные сведения см. в разделе [Практическое руководство. настроить целевые платформы в проектах](../ide/how-to-configure-projects-to-target-platforms.md).  
   
 3. На этом этапе запускается 64-разрядная версия удаленного отладчика (msvsmon.exe). Он работает до тех пор, пока открыто решение с 64-разрядной конфигурацией.  
   
@@ -58,8 +58,8 @@ ms.locfileid: "60087434"
 - Программа не отвечает на запросы, или возникла проблема с производительностью Visual Studio. Если проблема возникает регулярно, можно собрать дампы Visual Studio (devenv.exe) и рабочего процесса (msvsmon.exe) и отправить их в корпорацию Майкрософт. 
   
 ## <a name="see-also"></a>См. также  
- [64-разрядные приложения](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Настройка программ для 64-разрядных систем](http://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [64-разрядные приложения](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [Настройка программ для 64-разрядных систем](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
  [Поддержка 64-разрядных сред IDE Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
  [Использование файлов дампа](../debugger/using-dump-files.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

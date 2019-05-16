@@ -8,17 +8,17 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 08d88ce08c6c91cbf46bcc6d15cbf098d61e604d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412337"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679934"
 ---
 # <a name="managing-universal-windows-projects"></a>Управление универсальными проектами Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Универсальные приложения Windows, приложений, предназначенных для Windows 8.1 и Windows Phone 8.1, что позволяет разработчикам использовать код и другие ресурсы на обеих платформах. Общий код и ресурсы хранятся в общем проекте, хотя специфические для платформы код и ресурсы хранятся в разных проектах, один для Windows, а другой — для Windows Phone. Дополнительные сведения об универсальных приложениях Windows, см. в разделе [универсальных приложений Windows](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Расширения Visual Studio, которые управляют проекты следует иметь в виду, что проекты универсальных приложений для Windows имеют структуру, отличную от одной платформы приложений. В этом пошаговом руководстве показано, как для перемещения общего проекта и общие элементы управления.  
+Универсальные приложения Windows, приложений, предназначенных для Windows 8.1 и Windows Phone 8.1, что позволяет разработчикам использовать код и другие ресурсы на обеих платформах. Общий код и ресурсы хранятся в общем проекте, хотя специфические для платформы код и ресурсы хранятся в разных проектах, один для Windows, а другой — для Windows Phone. Дополнительные сведения об универсальных приложениях Windows, см. в разделе [универсальных приложений Windows](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Расширения Visual Studio, которые управляют проекты следует иметь в виду, что проекты универсальных приложений для Windows имеют структуру, отличную от одной платформы приложений. В этом пошаговом руководстве показано, как для перемещения общего проекта и общие элементы управления.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

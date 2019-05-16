@@ -13,19 +13,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a17db8fbdb281139ba095070130e6c608954b5a7
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64878170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676294"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Практическое руководство. Настройка анализа кода для проекта управляемого кода
+# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>Практическое руководство. Настройка статического анализа кода для управляемого кода
 
 В Visual Studio, можно выбрать из списка анализа кода [наборов правил](../code-quality/rule-set-reference.md) для применения к проекту управляемого кода. По умолчанию **минимальные правила и рекомендации Майкрософт** выбран набор правил, но можно применять при необходимости задайте другое правило. Наборы правил могут применяться для одного или нескольких проектов в решении.
 
-> [!TIP]
-> Сведения о том, как настроить набор правил для веб-приложений ASP.NET см. в разделе [как: Настройка анализа кода для веб-приложения ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+Сведения о том, как настроить набор правил для веб-приложений ASP.NET см. в разделе [как: Настройка анализа кода для веб-приложения ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+
+> [!NOTE]
+> Эта статья относится к статического анализа кода, а не [анализаторов Roslyn](use-roslyn-analyzers.md), который не запустить анализ кода после сборки.
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Чтобы настроить набор правил для проекта .NET Framework
 

@@ -12,12 +12,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 48f079d29fee5587617f95791bc6de7148741735
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1171197ba55c2fe3fa59ccc9ca918fa0c8f9e727
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069393"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699133"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Добавление пользовательского элемента на начальную страницу
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,5 +187,5 @@ ms.locfileid: "60069393"
      Отображать пользовательской начальной страницы. Если вы хотите изменить любые файлы, необходимо закрыть экспериментальный экземпляр, внесите изменения, скопируйте и вставьте измененных файлов и повторно открыть экспериментальный экземпляр, чтобы просмотреть изменения.  
   
 ## <a name="see-also"></a>См. также  
- [Контейнерные элементы управления WPF](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
- [Пошаговое руководство: Добавление пользовательского XAML начальную страницу](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Контейнерные элементы управления WPF](https://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
+ [Пошаговое руководство: добавление настраиваемого XAML-файла на начальную страницу](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

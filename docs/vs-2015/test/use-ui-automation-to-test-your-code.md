@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 329b3abc06cbe212215b8e4981aacb79f668e6c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442895"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695308"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Использование модели автоматизации пользовательского интерфейса для тестирования кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -445,19 +445,19 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ## <a name="VerifyCodeUsingCUITWhatsNext"></a> Дальнейшие действия
  **Дополнительные параметры для выполнения закодированных тестов пользовательского интерфейса**. Вы можете выполнять закодированные тесты пользовательского интерфейса напрямую из Visual Studio, как было сказано ранее. Кроме того, автоматизированные тесты ИП можно запускать в [!INCLUDE[TCMext](../includes/tcmext-md.md)] или [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. Если закодированные тесты ИП автоматизированы, они, в отличие от других автоматических тестов, должны взаимодействовать с рабочим столом при их выполнении.
 
-- [Практическое руководство. Запуск тестов из Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [Практическое руководство. Запуск тестов из Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
 
-- [Запуск автоматических тестов в Microsoft Test Manager](http://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
+- [Запуск автоматических тестов в Microsoft Test Manager](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [Практическое руководство. Настройка и запуск запланированных тестов после построения приложения](http://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [Практическое руководство. Настройка и запуск запланированных тестов после построения приложения](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
-- [Выполнение тестов в процессе сборки](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
+- [Выполнение тестов в процессе сборки](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
-- [Запуск автоматических тестов из командной строки](http://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
+- [Запуск автоматических тестов из командной строки](https://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
 
 - [Практическое руководство. Настройка агента тестирования для выполнения тестов, взаимодействующих с рабочим столом](/visualstudio/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop?view=vs-2015)
 
-- [&#91;удалено&#93; Использование закодированных тестов пользовательского интерфейса в нагрузочных тестах](http://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
+- [&#91;удалено&#93; Использование закодированных тестов пользовательского интерфейса в нагрузочных тестах](https://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
 
   **Добавление поддержки пользовательских элементов управления**.  Платформа закодированных тестов пользовательского интерфейса поддерживает не все возможные пользовательские интерфейсы, в частности она может не поддерживать тестируемый пользовательский интерфейс. Например, невозможно напрямую создать закодированный тест пользовательского интерфейса приложения [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Однако можно создать расширение среды обработки закодированных тестов пользовательского интерфейса, которое будет поддерживать пользовательский элемент управления.
 
@@ -465,7 +465,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Закодированные тесты ИП часто используются для автоматизации ручных тестов. Дополнительные сведения см. в разделе [Testing for Continuous Delivery with Visual Studio 2012 — Глава 5: Автоматизация системных тестов](http://go.microsoft.com/fwlink/?LinkID=255196). Дополнительные сведения о ручных тестах см. в разделе [&#91;удалено&#93; Создание ручных тестовых случаев с помощью Microsoft Test Manager](http://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Дополнительные сведения об автоматизированных тестах см. в разделе [Создание автоматических системных тестов](http://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Закодированные тесты ИП часто используются для автоматизации ручных тестов. Дополнительные сведения см. в разделе [Testing for Continuous Delivery with Visual Studio 2012 — Глава 5: Автоматизация системных тестов](http://go.microsoft.com/fwlink/?LinkID=255196). Дополнительные сведения о ручных тестах см. в разделе [&#91;удалено&#93; Создание ручных тестовых случаев с помощью Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Дополнительные сведения об автоматизированных тестах см. в разделе [Создание автоматических системных тестов](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Внешние ресурсы
 
@@ -486,7 +486,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Улучшение качества кода](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
+- [Улучшение качества кода](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [Пошаговое руководство: создание, изменение и поддержка закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Составляющие закодированного теста пользовательского интерфейса](../test/anatomy-of-a-coded-ui-test.md)
 - [Рекомендации по выполнению закодированных тестов пользовательского интерфейса](../test/best-practices-for-coded-ui-tests.md)
@@ -494,4 +494,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - [Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
 - [Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Обновление закодированных тестов пользовательского интерфейса с версии Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-- [Создание закодированного теста пользовательского интерфейса из существующей записи действий](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)
+- [Создание закодированного теста пользовательского интерфейса из существующей записи действий](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)

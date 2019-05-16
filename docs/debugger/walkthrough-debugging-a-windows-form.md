@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407585"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678928"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Пошаговое руководство. Отладка формы Windows Form
 Форма Windows Forms — один из наиболее распространенных вариантов управляемых приложений. На основе формы Windows Forms создается стандартное приложение Windows. Можно реализовать данный примере на Visual Basic, C# или C++.
@@ -165,23 +165,24 @@ ms.locfileid: "63407585"
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. На **Отладка** меню, выберите **Запуск без отладки**.
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     Форма Windows Forms запустится из Windows, как и при двойном щелчке исполняемого файла. Отладчик не будет присоединен.
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. На **Отладка** меню, выберите **присоединение к процессу**. (Эта команда также доступна на **средства** меню.)
 
-     The **Attach to Process** dialog box appears.
+     Откроется диалоговое окно **Присоединение к процессу** .
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. В **доступные процессы** области, найдите имя процесса (Walkthrough_SimpleDebug.exe) в **процесс** столбец и щелкните его.
 
-5. Click the **Attach** button.
+5. Нажмите кнопку **Attach** кнопки.
 
-6. In your Windows Form, click the one and only button.
+6. В форме Windows Forms нажмите единственную кнопку.
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     Отладчик прервет выполнение формы Windows Forms на точке останова.
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>См. также
+- [Отладка управляемого кода](../debugger/debugging-managed-code.md)
+- [Безопасность отладчика](../debugger/debugger-security.md)
