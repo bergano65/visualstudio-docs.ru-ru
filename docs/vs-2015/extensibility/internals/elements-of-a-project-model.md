@@ -12,12 +12,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e47712df1f76556ced8c69abb8bf5af085d01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f3b07068939e34b5c9e9487761177c0e12f5654
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979070"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700117"
 ---
 # <a name="elements-of-a-project-model"></a>Элементы модели проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58979070"
   
 - Каждый проект должен содержать файл шаблона или мастер, чтобы инициализировать новый файл проекта, когда пользователь создает новый проект через [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] пользовательского интерфейса. Например [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] шаблоны инициализации, что со временем стать VCPROJ-файлами.  
   
-  Ниже показаны интерфейсы, службы и объекты, которые составляют реализацию типичный проект. Вспомогательные приложения, HierUtil7, можно использовать для создания базовых объектов и других программирования шаблона. Дополнительные сведения о HierUtil7 вспомогательного приложения, см. в разделе [не в сборке: Использование HierUtil7 проект классов для реализации типа проекта (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+  Ниже показаны интерфейсы, службы и объекты, которые составляют реализацию типичный проект. Вспомогательные приложения, HierUtil7, можно использовать для создания базовых объектов и других программирования шаблона. Дополнительные сведения о HierUtil7 вспомогательного приложения, см. в разделе [не в сборке: Использование HierUtil7 проект классов для реализации типа проекта (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
   ![График Visual Studio проект модели](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
   модель проекта  
@@ -44,8 +44,8 @@ ms.locfileid: "58979070"
   Проекты может поддерживать команды и поэтому необходимо реализовать <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс для участия в маршрутизации команд через контекст команды идентификаторы GUID.  
   
 ## <a name="see-also"></a>См. также  
- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Не в сборке. Использование HierUtil7 проект классов для реализации типа проекта (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Контрольный список. Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Не в сборке. Использование HierUtil7 проект классов для реализации типа проекта (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Основные компоненты модели проекта](../../extensibility/internals/project-model-core-components.md)   
  [Создание экземпляров проекта с помощью фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [Практическое руководство. Получение службы](../../extensibility/how-to-get-a-service.md)   

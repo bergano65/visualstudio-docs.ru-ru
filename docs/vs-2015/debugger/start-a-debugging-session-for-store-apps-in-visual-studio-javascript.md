@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 630b2896e7446cf62982dd62ed12f9f7b7ca4aa9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4b4e861c8985ee37a8c2d9b7f9286d6284bb4f91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685025"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Запуск сеанса отладки для приложений Магазина в Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -213,7 +213,7 @@ ms.locfileid: "63427296"
 
 ### <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Настройте приложение для запуска в режиме отладки.
 
-1. Установите инструменты удаленной отладки Visual Studio на устройстве, на котором установлено приложение. См. в разделе [установки средств удаленного](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
+1. Установите инструменты удаленной отладки Visual Studio на устройстве, на котором установлено приложение. См. в разделе [установки средств удаленного](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
 
 2. В меню "Пуск" найдите и запустите `Debuggable Package Manager`.
 

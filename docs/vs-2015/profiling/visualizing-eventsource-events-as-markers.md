@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431092"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690218"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Визуализация событий EventSource как маркеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "63431092"
   
 ### <a name="marker-type"></a>Тип маркера  
   
-1. События с [кодом](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start или win:Stop рассматриваются как начало или конец интервала соответственно.  Вложенные или перекрывающиеся интервалы не могут отображаться. Пары событий, которые начинаются в одном потоке и заканчиваются в другом, также не могут отображаться.  
+1. События с [кодом](https://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start или win:Stop рассматриваются как начало или конец интервала соответственно.  Вложенные или перекрывающиеся интервалы не могут отображаться. Пары событий, которые начинаются в одном потоке и заканчиваются в другом, также не могут отображаться.  
   
-2. Событие, код которого отличен от win:Start и win:Stop, рассматривается как флаг маркера, если оно не имеет [уровень](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (поле EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) win:Verbose или выше.  
+2. Событие, код которого отличен от win:Start и win:Stop, рассматривается как флаг маркера, если оно не имеет [уровень](https://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (поле EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) win:Verbose или выше.  
   
 3. Во всех остальных случаях это событие обрабатывается как сообщение.  
   

@@ -17,19 +17,19 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: edec23d840723e37ecb469aadc412e5659e95007
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0ac931dfcf7b56619707a2bd42a32f5a369b04d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071022"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704990"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Создание пользовательского элемента управления Windows Forms с простой привязкой данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При отображении данных на формах в приложениях Windows вы можете выбрать имеющиеся элементы управления в **области элементов** или создать пользовательские элементы управления, если вашему приложению требуется функциональность, отсутствующая в стандартных элементах управления. В этом пошаговом руководстве демонстрируется создание элемента управления, реализующего <xref:System.ComponentModel.DefaultBindingPropertyAttribute>. Элементы управления, реализующие <xref:System.ComponentModel.DefaultBindingPropertyAttribute>, могут содержать одно свойство, которое можно привязать к данным. Такие элементы управления похожи на <xref:System.Windows.Forms.TextBox> или <xref:System.Windows.Forms.CheckBox>.  
   
- Дополнительные сведения о создании элементов управления, см. в разделе [Разработка Windows Forms элементов управления во время разработки](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
+ Дополнительные сведения о создании элементов управления, см. в разделе [Разработка Windows Forms элементов управления во время разработки](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
  При создании элементов управления для использования в сценариях привязки данных, должны реализовывать один из следующих атрибутов привязки к данным:  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60071022"
   
 2. Назовите проект **SimpleControlWalkthrough**.  
   
-3. Выберите **приложения Windows** и нажмите кнопку **ОК**. Дополнительные сведения см. в разделе [клиентских приложений](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Выберите **приложения Windows** и нажмите кнопку **ОК**. Дополнительные сведения см. в разделе [клиентских приложений](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Создается проект **SimpleControlWalkthrough**, который добавляется в **Обозреватель решений**.  
   

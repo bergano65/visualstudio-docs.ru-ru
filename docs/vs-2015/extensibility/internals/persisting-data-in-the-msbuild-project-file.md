@@ -10,19 +10,19 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4563cd912295cf447b8268c0b9f54e39d11e921f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 39d2ab449c3623a90dd76729b46a9f353900fc88
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051886"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704120"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Сохранение данных в файле проекта MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Подтип проекта может возникнуть потребность сохранять подтипа данных в файл проекта для последующего использования. Подтип проекта использует сохраняемость файлов в проект для отвечать следующим требованиям:  
   
-1. Сохранять данные, используемые в рамках создания проекта. (Дополнительные сведения о Microsoft Build Engine, см. в разделе [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Сведения, связанные с построением можете сделать следующее.  
+1. Сохранять данные, используемые в рамках создания проекта. (Дополнительные сведения о Microsoft Build Engine, см. в разделе [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Сведения, связанные с построением можете сделать следующее.  
   
     1. Данные, зависящие от конфигурации. То есть данные, хранящиеся в элементы MSBuild с пустым или отсутствующим условия.  
   

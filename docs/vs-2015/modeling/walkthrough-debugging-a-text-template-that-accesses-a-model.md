@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b589050c156e4c3d1e322bfa5996364016cbe38e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 26ff566c9d9ff833a92668d06c818245ed55d066
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446734"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700573"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63446734"
 При изменении или добавлении текстовых шаблонов в решении доменного языка, могут возникнуть ошибки, когда обработчик преобразует шаблон к исходному коду, или при компиляции созданного кода. Следующий пример демонстрирует некоторые из вещей, которые можно сделать, чтобы отладка текстового шаблона.  
   
 > [!NOTE]
-> Дополнительные сведения о тексте шаблоны в целом, см. в разделе [создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md). Дополнительные сведения об отладке текстовых шаблонов см. в разделе [Пошаговое руководство: Отладка текстового шаблона](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+> Дополнительные сведения о тексте шаблоны в целом, см. в разделе [создание кода и текстовые шаблоны T4](../modeling/code-generation-and-t4-text-templates.md). Дополнительные сведения об отладке текстовых шаблонов см. в разделе [Пошаговое руководство: Отладка текстового шаблона](https://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Создание решений предметно ориентированного языка  
  В этой процедуре вы создадите решение предметно ориентированного языка, которое имеет следующие характеристики:  

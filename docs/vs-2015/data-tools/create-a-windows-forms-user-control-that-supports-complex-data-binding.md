@@ -18,19 +18,19 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b263dd4e00fcb7a519ab89ecc693bd6216e0eeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0c27ec5be48b37f95068a2be6c8605a97d122d21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097158"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705003"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Создание пользовательского элемента управления Windows Forms со сложной привязкой данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При отображении данных на формах в приложениях Windows вы можете выбрать имеющиеся элементы управления в **области элементов** или создать пользовательские элементы управления, если вашему приложению требуется функциональность, отсутствующая в стандартных элементах управления. В этом пошаговом руководстве демонстрируется создание элемента управления, реализующего <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Элементы управления, реализующие <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>, содержат свойство `DataSource` и `DataMember`, которое можно привязать к данным. Такие элементы управления похожи на <xref:System.Windows.Forms.DataGridView> или <xref:System.Windows.Forms.ListBox>.  
   
- Дополнительные сведения о создании элементов управления, см. в разделе [Разработка Windows Forms элементов управления во время разработки](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
+ Дополнительные сведения о создании элементов управления, см. в разделе [Разработка Windows Forms элементов управления во время разработки](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
  При создании элементов управления для использования в сценариях привязки к данным необходимо реализовать один из следующих атрибутов привязки к данным:  
   
@@ -52,9 +52,9 @@ ms.locfileid: "60097158"
   
 - Реализация атрибута `ComplexBindingProperty`.  
   
-- Создание набора данных с помощью [мастер настройки источника данных](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Создание набора данных с помощью [мастер настройки источника данных](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
-- Задайте **клиентов** в таблицу [окна "Источники данных"](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) для использования нового сложного элемента управления.  
+- Задайте **клиентов** в таблицу [окна "Источники данных"](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) для использования нового сложного элемента управления.  
   
 - Добавьте новый элемент управления, перетащив его из **окна "Источники данных"** на **Form1**.  
   
@@ -72,7 +72,7 @@ ms.locfileid: "60097158"
   
 2. Присвойте проекту имя **ComplexControlWalkthrough**.  
   
-3. Выберите **приложения Windows**и нажмите кнопку **ОК**. Дополнительные сведения см. в разделе [клиентских приложений](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Выберите **приложения Windows**и нажмите кнопку **ОК**. Дополнительные сведения см. в разделе [клиентских приложений](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Создается проект **ComplexControlWalkthrough**, который добавляется в **Обозреватель решений**.  
   
@@ -173,4 +173,4 @@ ms.locfileid: "60097158"
 ## <a name="see-also"></a>См. также  
  [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Задать для элемента управления создается при перетаскивании из окна источников данных](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
- [Элементы управления Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)
+ [Элементы управления Windows Forms](https://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)

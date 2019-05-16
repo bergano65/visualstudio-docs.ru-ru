@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91d84b6a763dd3fecfac8a030f8514c91e5ac61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976986"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704716"
 ---
 # <a name="creating-a-workflow-project"></a>Создание проекта рабочего процесса
 Рабочие процессы, службы рабочего процесса [!INCLUDE[indigo1](../includes/indigo1-md.md)], настраиваемые действия и настраиваемые конструкторы действий можно создавать с помощью шаблонов проектов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. В этом разделе описано создание библиотек и приложений с помощью шаблонов проектов, доступных в среде [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -44,7 +44,7 @@ ms.locfileid: "62976986"
  Описывает добавление дополнительных действий рабочего процесса, конструкторов и других элементов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], таких как действия кода, в существующий проект.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Разработка рабочих процессов](http://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
+ [Разработка рабочих процессов](https://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
   
 ## <a name="see-also"></a>См. также  
  [Использование конструктора рабочих процессов](../workflow-designer/using-the-workflow-designer.md)

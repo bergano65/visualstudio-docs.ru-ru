@@ -10,12 +10,12 @@ ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 515540eee455fcf22151e336897dd5f586867a82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b58314d64536ecf33cc5589609ee5524a9352629
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980062"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700826"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "58980062"
   
 3. Вызов <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> и передавая ему элементы выбранной иерархии в `VSHPROPID_BrowseObject` заполняет параметр <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> объекта.  
   
-4. Объект, производный от [интерфейса IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) возвращается для <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> запрошенный элемент и среде помещает его в <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (см. следующий шаг). Если вызов завершается сбоем, среда предоставляет второй вызов `IVsHierarchy::GetProperty`, передав его в контейнере выделения <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> , указать или несколько элементов иерархии.  
+4. Объект, производный от [интерфейса IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) возвращается для <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> запрошенный элемент и среде помещает его в <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (см. следующий шаг). Если вызов завершается сбоем, среда предоставляет второй вызов `IVsHierarchy::GetProperty`, передав его в контейнере выделения <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> , указать или несколько элементов иерархии.  
   
     Проект VSPackage не приводит к созданию <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> так, как окно предоставляемую среду пакет VSPackage, реализующий его (например, **обозревателе решений**) создает <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> от его имени.  
   

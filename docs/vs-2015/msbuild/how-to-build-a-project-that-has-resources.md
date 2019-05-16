@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0806df31b7e1f225ecefc823cbcbdb0a72ff2058
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660272"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686516"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Практическое руководство. Построение проекта, содержащего ресурсы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,18 +31,18 @@ ms.locfileid: "59660272"
   
 #### <a name="to-compile-resources-with-msbuild"></a>Компиляция ресурсов с помощью MSBuild  
   
-1.  Определите файлы ресурсов проекта и передайте их в задачу `GenerateResource` в виде списков элементов или имен файлов.  
+1. Определите файлы ресурсов проекта и передайте их в задачу `GenerateResource` в виде списков элементов или имен файлов.  
   
-2.  Укажите параметр `OutputResources` задачи `GenerateResource`, позволяющий задать имена выходных файлов ресурсов.  
+2. Укажите параметр `OutputResources` задачи `GenerateResource`, позволяющий задать имена выходных файлов ресурсов.  
   
-3.  Используйте элемент `Output` задачи, чтобы сохранить значение параметра `OutputResources` в элементе.  
+3. Используйте элемент `Output` задачи, чтобы сохранить значение параметра `OutputResources` в элементе.  
   
-4.  Используйте элемент, созданный из элемента `Output`, в качестве входных данных для другой задачи.  
+4. Используйте элемент, созданный из элемента `Output`, в качестве входных данных для другой задачи.  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода показано как элемент `Output` указывает, что атрибут `OutputResources` задачи `GenerateResource` будет содержать скомпилированные файлы ресурсов `alpha.resources` и `beta.resources`, и что эти два файла будет помещены в список элементов `Resources`. Определив эти файлы RESOURCES как коллекцию элементов с таким же именем, вы можете легко использовать их в качестве входных данных для другой задачи, например [Csc](../msbuild/csc-task.md).  
   
- Эта задача аналогична использованию параметра **/compile** для программы [Resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4):  
+ Эта задача аналогична использованию параметра **/compile** для программы [Resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4):  
   
  `Resgen.exe /compile alpha.resx,alpha.resources /compile beta.txt,beta.resources`  
   
@@ -83,4 +83,4 @@ ms.locfileid: "59660272"
 [MSBuild](msbuild.md)  
  [Задача GenerateResource](../msbuild/generateresource-task.md)   
  [Задача Csc](../msbuild/csc-task.md)   
- [Resgen.exe (генератор файлов ресурсов)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
+ [Resgen.exe (генератор файлов ресурсов)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)

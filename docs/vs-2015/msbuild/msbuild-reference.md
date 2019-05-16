@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b80e0e7daed1c426ea30c3da9a4e2324d33f48bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650304"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683016"
 ---
 # <a name="msbuild-reference"></a>Справочные сведения о MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "59650304"
  Список символов, которые должны использоваться в составе "escape-последовательностей" для обеспечения их правильной интерпретации. Escape-последовательность — это ряд символов, который означает, что следующие за ним символы должны интерпретироваться по-другому.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Общие сведения о MSBuild. ](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Представляет [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] и ссылки на разделы, в которых объясняется, как использовать его для создания проектов.  
+ [Общие сведения о MSBuild. ](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Представляет [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] и ссылки на разделы, в которых объясняется, как использовать его для создания проектов.  
   
  <xref:Microsoft.Build.Conversion>  
  Содержит ссылку на пространство имен Conversion.  

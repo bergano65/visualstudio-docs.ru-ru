@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061714"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687699"
 ---
 # <a name="when-to-create-project-types"></a>Когда следует создавать типы проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "60061714"
 |Задача|Описание|  
 |----------|-----------------|  
 |Обработка команд|Любой пакет VSPackage может обрабатывать команды.|  
-|Создание редактора|Пользовательские редакторы могут быть зарегистрированы. Дополнительные сведения см. в разделе [Windows документа и редакторы](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Создание редактора|Пользовательские редакторы могут быть зарегистрированы. Дополнительные сведения см. в разделе [Windows документа и редакторы](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
 |Владеющий windows|Окна инструментов и документов можно создать без добавления нового типа проекта.|  
 |Предоставление доступа к свойствам в окне «Свойства»|Все объекты могут предоставлять свойства.|  
   
@@ -60,6 +60,6 @@ ms.locfileid: "60061714"
  Подтипов проекта можно использовать для расширения тип управляемого проекта без необходимости создавать новый тип проекта. Подтипов проекта используйте агрегирование COM для расширения возможностей управляемых проектов, написанных на Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] или [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. С помощью агрегирование COM можно повторно использовать большую часть реализации проекта под управлением системы и настраивать для конкретного сценария через агрегирование и использование поддержка интерфейсов. Дополнительные сведения о подтипов проекта, см. в разделе [подтипов проекта](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>См. также  
- [Редакторы и документов Windows](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Редакторы и документов Windows](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Контрольный список. Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

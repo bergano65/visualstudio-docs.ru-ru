@@ -9,19 +9,19 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db27e8665d74477f3bb668831cbfaeef00d622bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424804"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700217"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Пошаговое руководство. Настройка операций вставки, обновления и удаления в классах сущностей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляет визуальную область конструктора для создания и редактирования [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] классов (классов сущностей), основанных на объектах в базе данных. С помощью [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), вы можете использовать технологию LINQ для доступа к базам данных SQL. Дополнительные сведения см. в разделе [Встроенный язык запросов LINQ](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+[Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляет визуальную область конструктора для создания и редактирования [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] классов (классов сущностей), основанных на объектах в базе данных. С помощью [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), вы можете использовать технологию LINQ для доступа к базам данных SQL. Дополнительные сведения см. в разделе [Встроенный язык запросов LINQ](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
- По умолчанию логику для выполнения обновлений обеспечивает среда выполнения [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. Среда выполнения по умолчанию создает инструкции Вставить, Обновить и Удалить, основываясь на схеме таблицы (определения столбцов и информация о первичных ключах). Если вы не хотите использовать поведение по умолчанию, то можно конфигурировать поведение обновления и назначить конкретные сохраненные процедуры для выполнения команд Вставить, Обновить и Удалить, необходимых для работы с данными в базе данных. Можно также сделать это, когда поведение по умолчанию не сгенерировано, например, когда ваши классы сущностей сопоставляются с представлениями. Кроме того, можно отменить поведение обновления по умолчанию, когда база данных требует доступа к таблице через сохраненные процедуры. Дополнительные сведения см. в разделе [Настройка операций за счет хранимых процедур](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
+ По умолчанию логику для выполнения обновлений обеспечивает среда выполнения [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. Среда выполнения по умолчанию создает инструкции Вставить, Обновить и Удалить, основываясь на схеме таблицы (определения столбцов и информация о первичных ключах). Если вы не хотите использовать поведение по умолчанию, то можно конфигурировать поведение обновления и назначить конкретные сохраненные процедуры для выполнения команд Вставить, Обновить и Удалить, необходимых для работы с данными в базе данных. Можно также сделать это, когда поведение по умолчанию не сгенерировано, например, когда ваши классы сущностей сопоставляются с представлениями. Кроме того, можно отменить поведение обновления по умолчанию, когда база данных требует доступа к таблице через сохраненные процедуры. Дополнительные сведения см. в разделе [Настройка операций за счет хранимых процедур](https://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
   
 > [!NOTE]
 > Данное пошаговое руководство требует наличия хранимых процедур **InsertCustomer**, **UpdateCustomer** и **DeleteCustomer** в базе данных Northwind.
@@ -65,7 +65,7 @@ ms.locfileid: "63424804"
     > [!NOTE]
     > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] поддерживается в проектах [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] и C#. Поэтому создайте новый проект на одном из этих языков.  
   
-3. Нажмите кнопку **приложение Windows Forms** шаблона и нажмите кнопку **ОК**. Дополнительные сведения см. в разделе [клиентских приложений](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Нажмите кнопку **приложение Windows Forms** шаблона и нажмите кнопку **ОК**. Дополнительные сведения см. в разделе [клиентских приложений](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Создается и добавляется в проект UpdatingwithSProcsWalkthrough **обозревателе решений**.  
   
@@ -89,7 +89,7 @@ ms.locfileid: "63424804"
      Создастся класс сущностей с именем **Customer**. Он имеет свойства, соответствующие столбцам в таблице Customers. Класс сущностей имеет имя **Customer** (не **Customers**), поскольку он представляет одного клиента из таблицы Customers.  
   
     > [!NOTE]
-    > Такой метод переименования называется *преобразованием во множественную форму*. Его можно включить или отключить [параметры](../ide/reference/options-dialog-box-visual-studio.md). Дополнительные сведения см. в разделе [Как включить и отключить преобразование во множественную форму (реляционный конструктор объектов)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
+    > Такой метод переименования называется *преобразованием во множественную форму*. Его можно включить или отключить [параметры](../ide/reference/options-dialog-box-visual-studio.md). Дополнительные сведения см. в разделе [Практическое руководство. включить и отключить преобразование во множественную форму (реляционный конструктор объектов)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
   
 3. В меню **Build** щелкните пункт **Build UpdatingwithSProcsWalkthrough** для создания проекта.  
   
@@ -253,14 +253,14 @@ ms.locfileid: "63424804"
 ## <a name="next-steps"></a>Следующие шаги  
  В зависимости от требований приложения есть несколько шагов, которые возможно потребуется выполнить после создания классов сущностей [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. Ниже приводится перечень рекомендаций, позволяющих улучшить данное приложение.  
   
-- Реализуйте конкурентную проверку во время обновлений. Сведения см. в разделе [оптимистичный параллелизм: Общие сведения о](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
+- Реализуйте конкурентную проверку во время обновлений. Сведения см. в разделе [оптимистичный параллелизм: Общие сведения о](https://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   
-- Добавьте запросы LINQ в данные фильтра Сведения см. в разделе [введение в запросы LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
+- Добавьте запросы LINQ в данные фильтра Сведения см. в разделе [введение в запросы LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
 ## <a name="see-also"></a>См. также  
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Запросы LINQ to SQL](http://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Запросы LINQ to SQL](https://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
  [Методы DataContext (реляционный конструктор объектов)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Практическое руководство. Назначение хранимых процедур для выполнения обновлений, вставок и удалений (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [PAVE новые возможности для разработки данных приложений в Visual Studio 2012](http://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)
+ [PAVE новые возможности для разработки данных приложений в Visual Studio 2012](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)

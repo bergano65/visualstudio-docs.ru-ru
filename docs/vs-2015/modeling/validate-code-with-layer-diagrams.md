@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1a0ce9cfaa09a5332d0bce39b31f946b7b5a177
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d7df6e4a4bddc2d3e9bf7ab84375a65a6d2c98
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437485"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700654"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Проверка кода по схемам слоев
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ ms.locfileid: "63437485"
 |Скрыть все подавленные ошибки в **список ошибок** окно|Щелкните правой кнопкой мыши **список ошибок** окна **Управление ошибками проверки**, а затем нажмите кнопку **скрыть все подавленные ошибки**.|  
   
 ## <a name="ValidateAuto"></a> Автоматическая проверка кода  
- Проверку слоев можно выполнять при каждом выполнении локальной сборки. Если команда использует Team Foundation Build, можно выполнить проверку слоев с записью с проверкой изменений, которые можно задать путем создания пользовательской задачи MSBuild, и использовать отчеты по сборке для сбора ошибок проверки. Чтобы создать с условным возвратом, см. в разделе [использование процесса сборки с условным возвратом для проверки изменений](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
+ Проверку слоев можно выполнять при каждом выполнении локальной сборки. Если команда использует Team Foundation Build, можно выполнить проверку слоев с записью с проверкой изменений, которые можно задать путем создания пользовательской задачи MSBuild, и использовать отчеты по сборке для сбора ошибок проверки. Чтобы создать с условным возвратом, см. в разделе [использование процесса сборки с условным возвратом для проверки изменений](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Автоматическая проверка кода во время локальной сборки  
   
@@ -197,15 +197,15 @@ ms.locfileid: "63437485"
   
    Дополнительные сведения об ошибках проверки см. в разделе [понимание и устранение ошибок проверки слоев](#UnderstandingValidationErrors). Дополнительные сведения о [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] см. в разделах:  
   
-- [Построение приложения](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Построение приложения](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-- [Использование шаблона по умолчанию для рабочего процесса сборки](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
+- [Использование шаблона по умолчанию для рабочего процесса сборки](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
   
-- [Изменение прежней сборки, основанный на файле UpgradeTemplate.xaml](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
+- [Изменение прежней сборки, основанный на файле UpgradeTemplate.xaml](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
   
-- [Настройка шаблона процесса сборки](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Настройка шаблона процесса сборки](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-- [Отслеживание хода выполнения запуска построения](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
+- [Отслеживание хода выполнения запуска построения](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
 ## <a name="TroubleshootingValidation"></a> Устранение неполадок проверки слоев  
  Следующая таблица описывает проблемы проверки слоев и способы их устранения. Эти проблемы отличаются от ошибок, возникающих из-за несоответствия между кодом и структурой. Дополнительные сведения об этих ошибках см. в разделе [понимание и устранение ошибок проверки слоев](#UnderstandingValidationErrors).  

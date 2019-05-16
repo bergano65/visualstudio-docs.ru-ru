@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fab67780f113c2348fa30e80c4174d1f26f130f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 448396ebf8bf6318a22d7c6b05037d3ea43b0fd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109067"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697130"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Вопросы безопасности при работе с XML-данными
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +42,4 @@ ms.locfileid: "60109067"
 - Подсистема управляемой отладки загружает средство оценки выражений XSLT. Подсистема управляемой отладки исходит из того, что весь код запускается с пользовательского локального компьютера. Соответственно, класс <xref:System.Xml.Xsl.XslCompiledTransform> загружает файл XSLT на пользовательский локальный компьютер. Вероятность того, что произойдет повышение прав доступа на выполнение, уменьшается путем запуска всех преобразований XSLT в новом домене приложения с ограниченными разрешениями.  
   
 ## <a name="see-also"></a>См. также  
- [Домены приложений](http://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)
+ [Домены приложений](https://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)

@@ -18,19 +18,19 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437323"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704489"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Практическое руководство. Отладка приложения с частичным доверием
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Применяется к приложениям Windows и консольным приложениям.  
   
- [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md) упрощает развертывание приложений с частичным доверием, которые используют преимущества [Code Access Security](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) для ограничения доступа к ресурсам компьютера.  
+ [Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md) упрощает развертывание приложений с частичным доверием, которые используют преимущества [Code Access Security](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) для ограничения доступа к ресурсам компьютера.  
   
  Отладка приложения частичного доверия может быть сложной задачей, так как приложения частичного доверия имеют различные права (и поэтому ведут себя по-разному) в зависимости от того, откуда они установлены. Если из интернета, то у приложения частичного доверия будут мало прав. Если из локальной интрасети, прав будет больше, а если с локального компьютера, оно будет иметь полные права. Также возможны настраиваемые зоны, с настраиваемыми разрешениями. Может потребоваться отладка приложений частичного доверия при любых условиях из упомянутых. К счастью, Visual Studio упрощает и это.  
   
