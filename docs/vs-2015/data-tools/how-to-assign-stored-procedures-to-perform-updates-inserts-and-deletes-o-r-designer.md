@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b5834e00cfaf43d1e5230ffbb221dbd5044d687
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 759b3268edd6155d733c18779ebf7ca4efc44a44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386831"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688856"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Практическое руководство. назначение хранимых процедур для выполнения обновлений, вставок и удалений (реляционный конструктор объектов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63386831"
 Сохраненные процедуры можно добавлять в реляционный конструктор объектов и выполнять как обычные методы <xref:System.Data.Linq.DataContext>. Они также могут использоваться для переопределения [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] поведение во время выполнения, которая выполняет вставки, обновления и удаления, когда изменения сохраняются из классов сущностей в базу данных (например, при вызове <xref:System.Data.Linq.DataContext.SubmitChanges%2A> метод).  
   
 > [!NOTE]
-> Если хранимые процедуры возвращают значения, которые должны отправляться обратно на клиент (например, значения, вычисляемые в хранимой процедуре), создайте в хранимых процедурах выходные параметры. Если использовать выходные параметры невозможно, то вместо применения переопределений, созданных реляционным конструктором объектов, реализуйте разделяемый метод. Элементы, сопоставляемые со значениями, созданными базой данных, должны получать соответствующие значения после успешного завершения операций INSERT или UPDATE. Дополнительные сведения см. в разделе [обязанности разработчика в переопределении поведения по умолчанию](http://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).  
+> Если хранимые процедуры возвращают значения, которые должны отправляться обратно на клиент (например, значения, вычисляемые в хранимой процедуре), создайте в хранимых процедурах выходные параметры. Если использовать выходные параметры невозможно, то вместо применения переопределений, созданных реляционным конструктором объектов, реализуйте разделяемый метод. Элементы, сопоставляемые со значениями, созданными базой данных, должны получать соответствующие значения после успешного завершения операций INSERT или UPDATE. Дополнительные сведения см. в разделе [обязанности разработчика в переопределении поведения по умолчанию](https://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).  
   
 > [!NOTE]
 > [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] автоматически обрабатывает значения, генерируемые в базе данных, на принадлежность к столбцам ключей (автоприращение), rowguidcol (созданный базой данных уникальный идентификатор GUID) и столбцам отметок времени. Генерируемые базой данных значения в других типах столбцов будут неожиданно давать нулевое значение. Для возврата генерируемых базой данных значений нужно вручную задать <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> в `true` и <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> в одно из следующих: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync> или <xref:System.Data.Linq.Mapping.AutoSync>.  
@@ -67,6 +67,6 @@ ms.locfileid: "63386831"
 ## <a name="see-also"></a>См. также  
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Методы DataContext (реляционный конструктор объектов)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Пошаговое руководство: Создание классов LINQ to SQL (реляционный конструктор объектов)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Операции вставки, обновления и удаления](http://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
+ [Пошаговое руководство: Создание классов LINQ to SQL (реляционный конструктор объектов)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Операции вставки, обновления и удаления](https://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
