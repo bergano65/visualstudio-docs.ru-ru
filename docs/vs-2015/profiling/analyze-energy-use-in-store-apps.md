@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67dd471808b938428d1c9e3f2d5b10c36f2bc914
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435106"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696992"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Анализ энергопотребления приложениями Магазина
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,12 +55,12 @@ ms.locfileid: "63435106"
   
  **Добавление делений в код C#, Visual Basic, C++**  
   
- Для добавления пользовательского деления в код C#, Visual Basic, C++ сначала создайте объект [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) . Затем добавьте вызовы методов [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) в тех местах кода, которые требуется отметить. Используйте [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) в вызовах.  
+ Для добавления пользовательского деления в код C#, Visual Basic, C++ сначала создайте объект [Windows.Foundation.Diagnostics LoggingChannel](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) . Затем добавьте вызовы методов [LoggingChannel.LogMessage](https://msdn.microsoft.com/library/windows/apps/dn264210.aspx) в тех местах кода, которые требуется отметить. Используйте [LoggingLevel.Information](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) в вызовах.  
   
  При выполнении метода пользовательская отметка добавляется в данные профилирования вместе с сообщением.  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel реализует интерфейс [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (проецируемый как [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) в C# и VB). Чтобы избежать утечки системных ресурсов, вызовите [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx) ()(Windows.Foundation.Diagnostics.LoggingChannel.Dispose() в C# и VB) после завершения работы с каналом ведения журнала.  
+> - Windows.Foundation.Diagnostics LoggingChannel реализует интерфейс [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (проецируемый как [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) в C# и VB). Чтобы избежать утечки системных ресурсов, вызовите [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx) ()(Windows.Foundation.Diagnostics.LoggingChannel.Dispose() в C# и VB) после завершения работы с каналом ведения журнала.  
 >   - Каждый открытый канал ведения журнала должен иметь уникальное имя. При попытке создать новый канал ведения журнала с тем же именем, что и у существующего канала, вызывается исключение.  
   
  См. пример Windows SDK [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) .  
@@ -148,7 +148,7 @@ if (performance && performance.mark) {
   
 ## <a name="BKMK_Other_resources"></a> Другие источники  
   
-- В разделах **Управление состояниями подключений и затратами** для [C#/VB/C++ и XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) и [JavaScript и HTML](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) в Центре разработки для Windows описываются API-интерфейсы Windows, предоставляющие информацию о сетевых подключениях, которую приложение может использовать для минимизации затрат на сетевой трафик.  
+- В разделах **Управление состояниями подключений и затратами** для [C#/VB/C++ и XAML](https://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) и [JavaScript и HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) в Центре разработки для Windows описываются API-интерфейсы Windows, предоставляющие информацию о сетевых подключениях, которую приложение может использовать для минимизации затрат на сетевой трафик.  
   
      Имитатор Visual Studio для приложений Магазина Windows позволяет имитировать свойства подключений для передачи данных API-интерфейсов, предоставляющих информацию о сети. См. раздел [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).  
   

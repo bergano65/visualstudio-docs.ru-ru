@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1f74502472a72416d33bcf48e473977d694e545f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428200"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695112"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Пошаговое руководство. Создание и запуск модульных тестов для приложений Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Visual Studio включает поддержку модульного тест�
     > [!NOTE]
     > Выбранные функции должны включать только возможности, необходимые для правильного функционирования модульного теста [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] . Эти возможности никогда не должны включать функции, которые не входят в состав тестируемого приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], и обычно должны представлять собой подмножество функций, определенных для тестируемого приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].  
   
-     См. дополнительные сведения о [настройке пакета приложения Windows 8.1 с помощью конструктора манифеста](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
+     См. дополнительные сведения о [настройке пакета приложения Windows 8.1 с помощью конструктора манифеста](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
      ![Манифест модульного теста](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
   
@@ -149,4 +149,4 @@ Visual Studio включает поддержку модульного тест�
   
 ## <a name="see-also"></a>См. также  
  [Тестирование приложений Магазина с помощью Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Сборка и тестирование приложений для магазина Windows с использованием Team Foundation Build](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [Сборка и тестирование приложений для магазина Windows с использованием Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

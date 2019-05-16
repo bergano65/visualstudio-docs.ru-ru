@@ -21,18 +21,18 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3ee5b3e5202ce5bcb8d7ef11b1b60db05624aaf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0dde41d1ccee5b63c5cd84862ba4f4ffe51745d2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434937"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696243"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Практическое руководство. отладку встроенного кода ассемблера
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ПРИМЕЧАНИЕ
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от действующих параметров или выпуска среды. Чтобы изменить параметры, в меню "Сервис" выберите команду "Импорт и экспорт параметров". Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от действующих параметров или выпуска среды. Чтобы изменить параметры, в меню "Сервис" выберите команду "Импорт и экспорт параметров". Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  В отладчике представлены два окна для отладки встроенного кода ассемблера — окно **Дизассемблирование** и окно **Регистры**.  
   

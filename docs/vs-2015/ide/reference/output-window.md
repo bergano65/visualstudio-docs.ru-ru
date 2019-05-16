@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7173abd87a9e7345e7d7caee02d2bb333f507514
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438067"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696059"
 ---
 # <a name="output-window"></a>Окно выходных данных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,14 +61,14 @@ ms.locfileid: "63438067"
   
  Также можно запрограммировать приложения для записи диагностических сообщений во время выполнения в область **Вывод**. Для этого используйте члены класса <xref:System.Diagnostics.Debug> или <xref:System.Diagnostics.Trace> в пространстве имен <xref:System.Diagnostics> библиотеки классов .NET Framework. Члены класса <xref:System.Diagnostics.Debug> отображают выходные данные при сборке конфигураций отладки проекта или решения; члены класса <xref:System.Diagnostics.Trace> отображают выходные данные при сборке конфигурации отладки или выпуска. Дополнительные сведения см. в разделе [Диагностические сообщения в окне вывода](../../debugger/diagnostic-messages-in-the-output-window.md).  
   
- В [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] можно создать настраиваемые этапы и события сборки, предупреждения и ошибки которых отображаются и учитывается в области **Вывод**. Нажав клавишу F1 на строке выходных данных, можно отобразить соответствующий раздел справки. Дополнительные сведения см. в разделе [Форматирование выходных данных этапа настраиваемой сборки или события сборки](http://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
+ В [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] можно создать настраиваемые этапы и события сборки, предупреждения и ошибки которых отображаются и учитывается в области **Вывод**. Нажав клавишу F1 на строке выходных данных, можно отобразить соответствующий раздел справки. Дополнительные сведения см. в разделе [Форматирование выходных данных этапа настраиваемой сборки или события сборки](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
   
 ## <a name="scrolling-behavior"></a>Поведение прокрутки  
  Если в окне вывода используется автоматическая прокрутка и вы выполняете переход с помощью мыши или клавиш со стрелками, автоматическая прокрутка останавливается. Чтобы возобновить автопрокрутку, нажмите клавиши CTRL+END.  
   
 ## <a name="see-also"></a>См. также  
  [Диагностические сообщения в окне вывода](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [Практическое руководство. Управление окном вывода](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [Практическое руководство. Управление окном вывода](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Компилирование и сборка](../../ide/compiling-and-building-in-visual-studio.md)   
  [Общие сведения о конфигурациях построения](../../ide/understanding-build-configurations.md)   
- [Общие сведения о библиотеке классов](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
+ [Общие сведения о библиотеке классов](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

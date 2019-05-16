@@ -11,17 +11,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7a27b2744247bba78575b0387a958bda5990d8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c839350dd37f71d4f3368e077f4d9afe1b2bb2f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071620"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701925"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Пошаговое руководство. Привязка к данным в конструкторе XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В конструкторе XAML можно задать свойства привязки данных с помощью монтажной панели и окна свойств. В примере в этом пошаговом руководстве показано, как привязать данные к элементу управления. В частности, это пошаговое руководство показывает, как создать простой класс корзины для покупок, имеющий [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) с именем `ItemCount`, а затем привязать свойство `ItemCount` к свойству **Text** элемента управления [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx).  
+В конструкторе XAML можно задать свойства привязки данных с помощью монтажной панели и окна свойств. В примере в этом пошаговом руководстве показано, как привязать данные к элементу управления. В частности, это пошаговое руководство показывает, как создать простой класс корзины для покупок, имеющий [DependencyProperty](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) с именем `ItemCount`, а затем привязать свойство `ItemCount` к свойству **Text** элемента управления [TextBlock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx).  
   
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Создание класса для использования в качестве источника данных  
   
@@ -66,7 +66,7 @@ ms.locfileid: "60071620"
     End Class  
     ```  
   
-     Этот код задает значение 0 как число элементов по умолчанию с помощью объекта [PropertyMetadata](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx).  
+     Этот код задает значение 0 как число элементов по умолчанию с помощью объекта [PropertyMetadata](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx).  
   
 5. В меню **Файл** выберите **Сборка** и **Построить решение**.  
   
@@ -74,7 +74,7 @@ ms.locfileid: "60071620"
   
 1. В обозревателе решений откройте контекстное меню файла MainWindow.xaml и выберите **Конструктор представлений**.  
   
-2. На панели элементов выберите элемент управления [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), чтобы добавить его на форму.  
+2. На панели элементов выберите элемент управления [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), чтобы добавить его на форму.  
   
 3. Выбрав `Grid`, в окне "Свойства" нажмите кнопку **Создать** рядом со свойством **DataContext**.  
   
@@ -100,4 +100,4 @@ ms.locfileid: "60071620"
   
 ## <a name="see-also"></a>См. также  
  [Создание пользовательского интерфейса с помощью Конструктора XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB: Добавить преобразователь значений-диалоговое окно](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+ [NIB: Добавить преобразователь значений-диалоговое окно](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

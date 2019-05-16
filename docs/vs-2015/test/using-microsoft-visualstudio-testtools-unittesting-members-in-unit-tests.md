@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8bbf75bfe218945453d25440c868a95675168631
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445855"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705890"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Использование членов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "63445855"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Атрибуты, используемые для установки порядка вызовов
- Кодовая точка, оформленная одним из перечисленных ниже атрибутов, вызывается в указанный момент времени. Дополнительные сведения см. в разделе [Составляющие модульного теста](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Кодовая точка, оформленная одним из перечисленных ниже атрибутов, вызывается в указанный момент времени. Дополнительные сведения см. в разделе [Составляющие модульного теста](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Для сборок
  Методы AssemblyInitialize и AssemblyCleanup вызываются сразу после загрузки сборки и непосредственно перед ее выгрузкой.
@@ -64,7 +64,7 @@ ms.locfileid: "63445855"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Атрибуты, используемые для идентификации тестовых классов и методов
- Каждый тестовый класс должен иметь атрибут TestClass, а каждый тестовый метод — атрибут TestMethod. Дополнительные сведения см. в разделе [Составляющие модульного теста](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Каждый тестовый класс должен иметь атрибут TestClass, а каждый тестовый метод — атрибут TestMethod. Дополнительные сведения см. в разделе [Составляющие модульного теста](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -118,7 +118,7 @@ ms.locfileid: "63445855"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>
 
 ## <a name="classes-used-with-private-accessors"></a>Классы, используемые с закрытыми методами доступа
- Как описывается в разделе [Использование Publicize для создания закрытого метода доступа](http://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb), вы можете создать модульный тест для закрытого метода. При этом создается класс закрытых методов доступа, являющийся экземпляром объекта класса PrivateObject. Класс PrivateObject является классом-оболочкой, использующим отражение в рамках процесса доступа через закрытые методы. Аналогичным является класс PrivateType, но вместо вызова закрытых методов экземпляра используется вызов закрытых статических методов.
+ Как описывается в разделе [Использование Publicize для создания закрытого метода доступа](https://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb), вы можете создать модульный тест для закрытого метода. При этом создается класс закрытых методов доступа, являющийся экземпляром объекта класса PrivateObject. Класс PrivateObject является классом-оболочкой, использующим отражение в рамках процесса доступа через закрытые методы. Аналогичным является класс PrivateType, но вместо вызова закрытых методов экземпляра используется вызов закрытых статических методов.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>
 

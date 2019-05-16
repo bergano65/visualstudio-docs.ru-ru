@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf491eae46c22d0804c66ab51071740e42de631c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905691"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678805"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace для Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -73,7 +73,7 @@ IntelliTrace также может помочь в отладке ошибок, 
 
 - Сеанс тестирования в Microsoft Test Manager.
 
-- Веб-приложения ASP.NET, размещенные в IIS, или приложения SharePoint 2010 и SharePoint 2013, работающие в развертывании при использовании Microsoft Monitoring Agent, как отдельно, так и вместе с System Center 2012. См. в разделе [использовать автономный сборщик IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) и [мониторинг с помощью Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).
+- Веб-приложения ASP.NET, размещенные в IIS, или приложения SharePoint 2010 и SharePoint 2013, работающие в развертывании при использовании Microsoft Monitoring Agent, как отдельно, так и вместе с System Center 2012. См. в разделе [использовать автономный сборщик IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) и [мониторинг с помощью Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).
 
 Ниже приведено несколько примеров того, как IntelliTrace облегчает отладку.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7de5d9189906d72c96372acb1a361d315f973df6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15320289c3f668f2bc0a84d9653110d02536a32e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938226"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694502"
 ---
 # <a name="pick-activity-designer"></a>Конструктор действия Pick
 Действие <xref:System.Activities.Statements.Pick> обеспечивает поток управления на основе событий. Действие выполняет одну из нескольких ветвей в ответ на запускающее событие.  
@@ -40,5 +40,5 @@ ms.locfileid: "62938226"
   
 ## <a name="see-also"></a>См. также  
  [Поток управления](../workflow-designer/control-flow-activity-designers.md)   
- [Действие Pick](http://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
- [Использование действия Pick](http://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)
+ [Действие Pick](https://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
+ [Использование действия Pick](https://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)

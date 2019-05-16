@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 206f13610b22253a3b711413721411a1ff075570
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 69ec18362f596633fa508f1f842db027e59a616b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991886"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701536"
 ---
 # <a name="properties-of-port-shapes"></a>Свойства фигур портов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58991886"
   
  Фигур портов имеют свойства, которые перечислены в следующей таблице.  
   
-|Свойство.|Описание|Значение по умолчанию|  
+|Свойство|Описание|Значение по умолчанию|  
 |--------------|-----------------|-------------|  
 |Цвет заливки|Цвет заливки этой фигуры.|Белый|  
 |Режим градиентной заливки|Отображение режима заливки градиента данной фигуры.|Горизонтально|  
@@ -58,4 +58,4 @@ ms.locfileid: "58991886"
 |Ключевое слово Help|Ключевое слово, используемое для индексации справки F1 для данной фигуры.|\<none>|  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий средств предметно-ориентированных языков](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

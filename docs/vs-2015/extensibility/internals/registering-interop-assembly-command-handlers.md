@@ -11,23 +11,23 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cfb8b493190429f6f3a0a6295d65db2c151639c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d2822e9eef36806f5c251813925fb4244242519
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436616"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705816"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Регистрация обработчиков команд сборки взаимодействия
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Необходимо зарегистрировать VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] таким образом, чтобы интегрированной среде разработки (IDE) правильно направляет его команды.  
   
- Можно обновить реестр путем редактирования вручную или с помощью файла регистратора (RGS). Для получения дополнительной информации см. [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+ Можно обновить реестр путем редактирования вручную или с помощью файла регистратора (RGS). Для получения дополнительной информации см. [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
  Managed Package Framework (MPF) предоставляет следующие функциональные возможности через <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> класса.  
   
- [Команда справочнике по формату таблицы](http://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) ресурсы находятся в неуправляемых вспомогательные библиотеки DLL пользовательского интерфейса.  
+ [Команда справочнике по формату таблицы](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) ресурсы находятся в неуправляемых вспомогательные библиотеки DLL пользовательского интерфейса.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Регистрация обработчика команды пакета VSPackage  
  Пакет VSPackage, выступающий в качестве обработчика для пользовательского интерфейса (UI) — на основе команды требуется запись реестра с именем VSPackage `GUID`. Этот параметр реестра указывает расположение файла ресурсов пользовательского интерфейса в пакете VSPackage и ресурса меню в этом файле. Саму запись реестра находится в папке HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<версии >* \Menus, где  *\<версии >* — Это версия [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], например 9.0.  

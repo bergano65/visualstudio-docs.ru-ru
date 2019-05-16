@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c0e5eb3173a90478266e1a5a5b7c9eb19243278d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3b8ddc642fda143743e312fa1915087d553938a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990947"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696114"
 ---
 # <a name="preparing-to-debug-aspnet"></a>Подготовка к отладке ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58990947"
  [Условия для удаленной отладки веб-приложений](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  Список предварительных условий для отладки веб-приложения на удаленном сервере.  
   
- [Практическое руководство. Настроить службы IIS в Windows Server 2003](http://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
+ [Практическое руководство. Настроить службы IIS в Windows Server 2003](https://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
  Описаны специальные шаги настройки, необходимые для системных требований для отладки [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] в операционной системе [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)].  
   
  [Практическое руководство. Отладка резидентной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
@@ -56,4 +56,4 @@ ms.locfileid: "58990947"
  [Основы отладки](../debugger/debugger-basics.md)   
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [Конфигурация ASP.NET и IIS](http://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)
+ [Конфигурация ASP.NET и IIS](https://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)

@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fb5fb56a011355abb991d6e8da122461045af2b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77cf26d9746336a614b36d7dcd443b841afa06f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562870"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699752"
 ---
 # <a name="marks-view"></a>Представление меток
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "62562870"
   
  Метки по умолчанию, которые автоматически подставляются в отчет, отмечая начало и завершение программы.  
   
- Данные счетчиков Windows на основе автоматически созданных меток также доступны в этом представлении. Дополнительные сведения см. в разделе [Как Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md).  
+ Данные счетчиков Windows на основе автоматически созданных меток также доступны в этом представлении. Дополнительные сведения см. в разделе [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md).  
   
  Чтобы создать фильтр для двух меток, выберите метки, щелкните правой кнопкой мыши и выберите команду **Добавить фильтр по меткам** или **Добавить фильтр по метке времени**.  
   
@@ -48,7 +48,7 @@ ms.locfileid: "62562870"
   
 ## <a name="see-also"></a>См. также  
  [Обзор отчета о производительности](../profiling/performance-report-overview.md)   
- [< PAVE_OVER > Практическое: Настройка меток профилирования](http://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
- [< PAVE_OVER > Практическое: Добавление меток в файл данных Profiler](http://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
+ [< PAVE_OVER > Практическое: Настройка меток профилирования](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
+ [< PAVE_OVER > Практическое: Добавление меток в файл данных Profiler](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
  [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)   
- [[NIB] Окно управления сбором данных](http://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+ [[NIB] Окно управления сбором данных](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

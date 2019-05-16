@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ab699ad2a70a63fe3f8124cc87960f104a3b4cc2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0cef64ae0b1aa5c6fee6422675e10b65c4713d2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663314"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703251"
 ---
 # <a name="msbuild-concepts"></a>Основные возможности MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59663314"
 |[Задачи](../msbuild/msbuild-tasks.md)|Описывает процесс создания блока исполняемого кода, с помощью которого [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] выполняет атомарные операции построения.|  
 |[Сравнение свойств и элементов](../msbuild/comparing-properties-and-items.md)|Сравнивает свойства и элементы MSBuild. И то, и другое используется для передачи данных задачам, проверки условий и хранения значений, которые будут использоваться в файле проекта.|  
 |[Специальные символы в MSBuild](../msbuild/msbuild-special-characters.md)|Объясняет, как записывать некоторые символы, зарезервированные [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] для специального применения в определенных контекстах, в виде escape-последовательностей.|  
-|[Пошаговое руководство: Создание файла проекта MSBuild с нуля](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Содержит описание способов пошагового создания основного файла проекта путем использования только текстового редактора.|  
+|[Пошаговое руководство: создание файла проекта MSBuild с нуля](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Содержит описание способов пошагового создания основного файла проекта путем использования только текстового редактора.|  
 |[Пошаговое руководство: Использование MSBuild](../msbuild/walkthrough-using-msbuild.md)|Содержит вводную информацию о стандартных блоках MSBuild и описание способов записи, управления и отладки проектов MSBuild без выхода из интегрированной среды разработки Visual Studio.|  
 |[Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)|Содержит ссылки на документы, содержащие справочную информацию.|  
-|[MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Предоставляет общие сведения о схеме XML для файла проекта и показывает способ управления процессами, осуществляющими сборку программного обеспечения.|
+|[MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Предоставляет общие сведения о схеме XML для файла проекта и показывает способ управления процессами, осуществляющими сборку программного обеспечения.|

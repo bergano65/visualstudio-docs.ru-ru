@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80faa2ceb48cfec933d2287b70d304564a8106a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62585117"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704452"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Начало работы с C++ в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "62585117"
 
      Сообщение об ошибке также отобразится в окне **Список ошибок** . Можно отобразить это окно, выбрав в строке меню **Вид**, **Список ошибок**.
 
-     [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) включается в файл заголовка \<iostream\>.
+     [cout](https://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) включается в файл заголовка \<iostream\>.
 
 2. Для включения заголовка iostream введите следующий код после `#include "stdafx.h"`:
 

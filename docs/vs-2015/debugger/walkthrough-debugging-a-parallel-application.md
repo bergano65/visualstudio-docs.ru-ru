@@ -22,17 +22,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad496bb55bae8d9e08035408059e454430ab4e39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092985"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705288"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Пошаговое руководство. Отладка параллельного приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В этом пошаговом руководстве описывается использование окон **Параллельные задачи** и **Параллельные стеки** для отладки параллельного приложения. Эти окна помогают понять и проверить поведение во время выполнения кода, использующего [библиотеки параллельных задач (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) или [среда выполнения с параллелизмом](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Примеры кода, приведенные в этом пошаговом руководстве, имеют встроенные точки останова. Возможности диалоговых окон **Параллельные задачи** и **Параллельные стеки** показаны после прерывания выполнения программы.  
+В этом пошаговом руководстве описывается использование окон **Параллельные задачи** и **Параллельные стеки** для отладки параллельного приложения. Эти окна помогают понять и проверить поведение во время выполнения кода, использующего [библиотеки параллельных задач (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) или [среда выполнения с параллелизмом](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Примеры кода, приведенные в этом пошаговом руководстве, имеют встроенные точки останова. Возможности диалоговых окон **Параллельные задачи** и **Параллельные стеки** показаны после прерывания выполнения программы.  
   
  В этом пошаговом руководстве рассматриваются следующие задачи:  
   
@@ -308,7 +308,7 @@ ms.locfileid: "60092985"
  [Отладка многопоточных приложений](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Основы отладки](../debugger/debugger-basics.md)   
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
- [Параллельное программирование](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Среда выполнения с параллелизмом](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Параллельное программирование](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Среда выполнения с параллелизмом](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Использование окна "Параллельные стеки"](../debugger/using-the-parallel-stacks-window.md)   
  [Использование окна задач](../debugger/using-the-tasks-window.md)

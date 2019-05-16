@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421128"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703759"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Начало работы с расширениями редактора и языковой службы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63421128"
  Мы рекомендуем изучить следующие основные понятия и технологии прежде чем писать собственные расширения редактора.  
   
 ## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>В Windows Presentation Foundation (WPF) и расширения редактора  
- Пользовательский интерфейс (UI) редактора Visual Studio реализуется с помощью Windows Presentation Foundation (WPF). WPF предоставляет богатые возможности visual и согласованную модель программирования, которая отделяет визуальных характеристик элемента кода от бизнес-логики. Можно использовать множество элементов WPF и функций при создании расширения редактора. Дополнительные сведения см. в разделе [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
+ Пользовательский интерфейс (UI) редактора Visual Studio реализуется с помощью Windows Presentation Foundation (WPF). WPF предоставляет богатые возможности visual и согласованную модель программирования, которая отделяет визуальных характеристик элемента кода от бизнес-логики. Можно использовать множество элементов WPF и функций при создании расширения редактора. Дополнительные сведения см. в разделе [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
   
 ## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Managed Extensibility Framework (MEF) и расширения редактора  
  В редакторе Visual Studio использует Managed Extensibility Framework (MEF) для управления компонентами и расширения. MEF также позволяет разработчикам легко создавать расширения для ведущего приложения, такие как Visual Studio. В этом варианте определить расширение в соответствии с контракт MEF и экспортировать его в качестве компонента MEF. Ведущее приложение управляет компонентов, их поиск, их регистрация и убедившись, что они применяются в правильном контексте.  

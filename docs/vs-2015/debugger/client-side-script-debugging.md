@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5b8108f0751cbb8848a70b99f23dd3f204ccff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990252"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702378"
 ---
 # <a name="client-side-script-debugging"></a>Отладка клиентского скрипта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58990252"
 Отладчик Visual Studio предоставляет всеобъемлющую среду отладки для обнаружения и исправления ошибок в скриптах на стороне клиента на страницах ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Открытие документов скрипта  
- Используйте окно **Обозреватель решений** , чтобы просмотреть списки серверных и клиентских документов скрипта. В окне **Обозреватель решений**можно открыть любой документ скрипта. Дополнительные сведения см. в разделе [Как просмотреть документы скриптов](../debugger/how-to-view-script-documents.md).  
+ Используйте окно **Обозреватель решений** , чтобы просмотреть списки серверных и клиентских документов скрипта. В окне **Обозреватель решений**можно открыть любой документ скрипта. Дополнительные сведения см. в разделе [Практическое руководство. просмотреть документы скриптов](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Сопоставление точек останова  
  В Visual Studio невозможно непосредственно отлаживать код на стороне сервера, но можно установить точку останова в файле, находящемся на сервере. Visual Studio автоматически сопоставляет точку останова с соответствующим расположением в файле на стороне клиента и создает сопоставленную точку останова в коде на стороне клиента.  
@@ -38,7 +38,7 @@ ms.locfileid: "58990252"
 ## <a name="manually-or-automatically-attaching-to-script"></a>Автоматическое присоединение к скрипту или присоединение к скрипту в ручном режиме  
  Чтобы начать отладку скрипта в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], отладчику необходимо выполнить присоединение к скрипту, для которого необходимо выполнить отладку. Присоединение может быть выполнено в ручном режиме или автоматически.  
   
- Можно выполнить присоединение в ручном режиме, используя интерфейс отладчика [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , чтобы выбрать процесс выполняющегося скрипта, к которому необходимо выполнить присоединение. Дополнительные сведения см. в разделе [Как выполнить присоединение к скрипту](../debugger/how-to-attach-to-script.md).  
+ Можно выполнить присоединение в ручном режиме, используя интерфейс отладчика [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , чтобы выбрать процесс выполняющегося скрипта, к которому необходимо выполнить присоединение. Дополнительные сведения см. в разделе [Практическое руководство. выполнить присоединение к скрипту](../debugger/how-to-attach-to-script.md).  
   
  Отладчик автоматически выполняет присоединение к скрипту при возникновении одного из следующих условий:  
   
@@ -60,11 +60,11 @@ ms.locfileid: "58990252"
 ## <a name="debugging-ajax-script-applications"></a>Отладка приложений Ajax-скриптов  
  Веб-приложения с включенной технологией Ajax делают сложным использование кода скрипта и ставят проблемы специальной отладки. Дополнительные сведения о методах отладки Ajax см. в разделе  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)можно открыть любой документ скрипта.  
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)можно открыть любой документ скрипта.  
   
 ## <a name="see-also"></a>См. также  
  [Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Ограничения на отладку скриптов](../debugger/limitations-on-script-debugging.md)   
- [Окна переменных](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [Окна переменных](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Окно интерпретации](../ide/reference/immediate-window.md)   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

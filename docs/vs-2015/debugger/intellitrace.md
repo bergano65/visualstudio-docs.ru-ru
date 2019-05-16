@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dfa2d0cb454dba07a036883a296d364cb3182afc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ea7378e72d970bf53470b4434222aa4a1a4d9a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440152"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690525"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +48,8 @@ ms.locfileid: "63440152"
   
 |||  
 |-|-|  
-|**Отладка приложения с помощью IntelliTrace**<br /><br /> — Отображение прошлых событий.<br />-Show me сведений о вызовах с прошлыми событиями.<br />-Сохранение сеанса IntelliTrace.<br />-Элемент управления данных, собираемых IntelliTrace.|-   [Пошаговое руководство: Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Возможности IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Настройка IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Отладка с ведением журнала](../debugger/historical-debugging.md)|  
-|**Сбор данных IntelliTrace во время тестового сеанса в Test Manager**|-   [Сбор дополнительных данных диагностики в ручных тестах](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
+|**Отладка приложения с помощью IntelliTrace**<br /><br /> — Отображение прошлых событий.<br />-Show me сведений о вызовах с прошлыми событиями.<br />-Сохранение сеанса IntelliTrace.<br />-Элемент управления данных, собираемых IntelliTrace.|-   [Пошаговое руководство: Использование IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Возможности IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Настройка IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Отладка с ведением журнала](../debugger/historical-debugging.md)|  
+|**Сбор данных IntelliTrace во время тестового сеанса в Test Manager**|-   [Сбор дополнительных данных диагностики в ручных тестах](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
 |**Сбор данных IntelliTrace из развернутых приложений**|-   [Использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Запуск отладки из файла журнала IntelliTrace (файл .iTrace)**|-   [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -57,7 +57,7 @@ ms.locfileid: "63440152"
   
 |||  
 |-|-|  
-|**Поддерживается**|— Приложения Visual Basic и Visual C#, которые используют .NET Framework 2.0 или более поздней версии.<br />     Можно отлаживать большинство приложений, включая ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 и 64-разрядные приложения.<br />     Для отладки приложений SharePoint с помощью IntelliTrace, см. в разделе [Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Отладка приложений Microsoft Azure с помощью IntelliTrace, см. в разделе [отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
+|**Поддерживается**|— Приложения Visual Basic и Visual C#, которые используют .NET Framework 2.0 или более поздней версии.<br />     Можно отлаживать большинство приложений, включая ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 и 64-разрядные приложения.<br />     Для отладки приложений SharePoint с помощью IntelliTrace, см. в разделе [Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Отладка приложений Microsoft Azure с помощью IntelliTrace, см. в разделе [отладка опубликованной облачной службы с помощью IntelliTrace и Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Ограниченная поддержка**|- F# приложений в экспериментальном режиме<br />-Поддерживается только для событий приложений Windows Store|  
 |**Не поддерживается**|-C++, другие языки и скрипт<br />-Windows служб Silverlight, Xbox, или [!INCLUDE[winmobile](../includes/winmobile-md.md)] приложений|  
   
@@ -77,7 +77,7 @@ ms.locfileid: "63440152"
   
 - Сеанс тестирования в Microsoft Test Manager.  
   
-- Веб-приложения ASP.NET, размещенные в IIS, или приложения SharePoint 2010 и SharePoint 2013, работающие в развертывании при использовании Microsoft Monitoring Agent, как отдельно, так и вместе с System Center 2012. См. в разделе [использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) и [мониторинг с помощью Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).  
+- Веб-приложения ASP.NET, размещенные в IIS, или приложения SharePoint 2010 и SharePoint 2013, работающие в развертывании при использовании Microsoft Monitoring Agent, как отдельно, так и вместе с System Center 2012. См. в разделе [использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) и [мониторинг с помощью Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).  
   
   Ниже приведено несколько примеров того, как IntelliTrace облегчает отладку.  
   
@@ -91,7 +91,7 @@ ms.locfileid: "63440152"
   
 - Приложение аварийно завершает работу на тестовом компьютере, но успешно выполняется на компьютере разработчика.  
   
-   Можно собирать данные IntelliTrace из Microsoft Test Manager, сохранить эти данные в файле .iTrace и вложить этот файл в рабочий элемент Team Foundation Server для последующего изучения. См. в разделе [сбор дополнительных данных диагностики в ручных тестах](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) и [использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
+   Можно собирать данные IntelliTrace из Microsoft Test Manager, сохранить эти данные в файле .iTrace и вложить этот файл в рабочий элемент Team Foundation Server для последующего изучения. См. в разделе [сбор дополнительных данных диагностики в ручных тестах](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) и [использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
   
 - В развернутом приложении происходит ошибка или сбой.  
   
@@ -104,7 +104,7 @@ ms.locfileid: "63440152"
 ## <a name="WhatData"></a> Какие данные собирает IntelliTrace?  
  **Сбор сведений о событиях**  
   
- По умолчанию IntelliTrace записывает только события IntelliTrace — события отладчика, исключения, события .NET Framework и другие системные события, которые помогут вам в процессе отладки. Можно выбрать типы событий IntelliTrace, которые необходимо собирать, за исключением событий отладчика и исключений, которые собираются всегда. См. в разделе [настроить IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ По умолчанию IntelliTrace записывает только события IntelliTrace — события отладчика, исключения, события .NET Framework и другие системные события, которые помогут вам в процессе отладки. Можно выбрать типы событий IntelliTrace, которые необходимо собирать, за исключением событий отладчика и исключений, которые собираются всегда. См. в разделе [настроить IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 - **События отладчика**  
   
@@ -146,7 +146,7 @@ ms.locfileid: "63440152"
   
   - [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
-  - [Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Сбор сведений о вызовах функции**  
   
@@ -163,23 +163,23 @@ ms.locfileid: "63440152"
 > [!NOTE]
 > IntelliTrace собирает только первые 256 объектов в массивах и первые 256 символов в строках.  
   
- См. в разделе [настроить IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ См. в разделе [настроить IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
  **Сбор сведений о модуле**  
   
- Для того, чтобы контролировать размер собираемой IntelliTrace информации о вызовах, укажите только интересующие модули. Это может повысить производительность приложения во время сбора информации. См. в разделе [настроить IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Для того, чтобы контролировать размер собираемой IntelliTrace информации о вызовах, укажите только интересующие модули. Это может повысить производительность приложения во время сбора информации. См. в разделе [настроить IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ## <a name="AffectPerformance"></a> Замедлит ли IntelliTrace работу приложения?  
  По умолчанию IntelliTrace собирает данные только для выбранных событий IntelliTrace. В зависимости от структуры и организации кода возможно замедление работы приложения. Например, частая запись события IntelliTrace может замедлить работу приложения. Также может потребоваться рассмотреть возможность рефакторинга приложения.  
   
- Сбор сведений о вызовах может значительно замедлить выполнение приложения. Это также может увеличить размер любых файлов журнала IntelliTrace (ITRACE-файлов), которые сохраняются на диск. Чтобы свести к минимуму указанные эффекты, собирайте информацию о вызовах только в важных для вас модулях.  Чтобы изменить максимальный размер ITRACE-файлов, последовательно выберите **Сервис**, **Параметры**, **IntelliTrace**, **Дополнительно**. См. в разделе [настроить IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Сбор сведений о вызовах может значительно замедлить выполнение приложения. Это также может увеличить размер любых файлов журнала IntelliTrace (ITRACE-файлов), которые сохраняются на диск. Чтобы свести к минимуму указанные эффекты, собирайте информацию о вызовах только в важных для вас модулях.  Чтобы изменить максимальный размер ITRACE-файлов, последовательно выберите **Сервис**, **Параметры**, **IntelliTrace**, **Дополнительно**. См. в разделе [настроить IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ## <a name="in-this-section"></a>Содержание раздела  
  [Возможности IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Настройка IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
+ [Настройка IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
   
- [Включение данных диагностической трассировки в сообщения об ошибках, которые трудно воспроизвести](http://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
+ [Включение данных диагностической трассировки в сообщения об ошибках, которые трудно воспроизвести](https://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
   
  [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md)  
   

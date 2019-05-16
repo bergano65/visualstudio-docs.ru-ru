@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 612ef2485b0ef8b666833470e980667da16c2a97
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bebaeba2cc6f74a3ddbf059ca802252ad0bab6cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099121"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696158"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Практическое руководство. построить и запустить пример LinqToXmlDataBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе показано создание и построение проекта среды Visual Studio LinqToXmlDataBinding, а также запуск полученного в результате образца программы WPF LinqToXmlDataBinding.  
   
- Дополнительные сведения о создании проектов в среде Visual Studio см. на странице [Разработка приложений в Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68).  
+ Дополнительные сведения о создании проектов в среде Visual Studio см. на странице [Разработка приложений в Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68).  
   
 ## <a name="creating-and-populating-the-project"></a>Создание и заполнение проекта данными  
   
@@ -79,4 +79,4 @@ ms.locfileid: "60099121"
 ## <a name="see-also"></a>См. также  
  [Пример связывания с данными в WPF с помощью LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
  [Пошаговое руководство: Пример LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [Разработка приложений в Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)
+ [Разработка приложений в Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)

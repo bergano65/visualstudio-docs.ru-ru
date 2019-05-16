@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa0735f25b7e6b0007172c8c42eb06222a0425fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: fb08a016261ac0836ba6dd2dde5d8b0812aab806
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439459"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704915"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,15 +53,15 @@ ms.locfileid: "63439459"
   
   Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.  
   
-- Службы данных WCF. Дополнительные сведения см. в разделе [Обзор](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Службы данных WCF. Дополнительные сведения см. в разделе [Обзор](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
 - Модели данных в [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
   
-- Модели EDM и ADO.NET Entity Framework. Дополнительные сведения см. в разделе [Обзор Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Модели EDM и ADO.NET Entity Framework. Дополнительные сведения см. в разделе [Обзор Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- Работа с Конструктором WPF. Дополнительные сведения см. в разделе [WPF и Silverlight Обзор конструктора](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Работа с Конструктором WPF. Дополнительные сведения см. в разделе [WPF и Silverlight Обзор конструктора](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-service-project"></a>Создание проекта службы  
  Начните работу с данным пошаговым руководством с создания проекта для [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
@@ -326,7 +326,7 @@ ms.locfileid: "63439459"
  [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Привязка элементов управления WPF к данным в Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Привязка элементов управления WPF к набору данных](../data-tools/bind-wpf-controls-to-a-dataset.md)   
- [Обзор](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)   
- [Общие сведения об Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)   
- [WPF и общие сведения о конструкторе Silverlight](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
- [Общие сведения о привязке данных](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [Обзор](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)   
+ [Общие сведения об Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)   
+ [WPF и общие сведения о конструкторе Silverlight](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [Общие сведения о привязке данных](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

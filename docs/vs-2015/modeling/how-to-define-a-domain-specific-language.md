@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 863daa41820b8a08f6cd9a6af26c6169fcda97db
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441061"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697260"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Определение доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,7 +214,7 @@ ms.locfileid: "63441061"
   
 ##### <a name="to-test-the-new-domain-classes"></a>Чтобы проверить новые классы доменов, сделайте следующее.  
   
-1. **Щелкните преобразовать все шаблоны** на панели инструментов в обозревателе решений, чтобы сгенерировать код конструктора DSL. Этот шаг можно автоматизировать. Дополнительные сведения см. в разделе [как автоматизировать преобразовать все шаблоны](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1. **Щелкните преобразовать все шаблоны** на панели инструментов в обозревателе решений, чтобы сгенерировать код конструктора DSL. Этот шаг можно автоматизировать. Дополнительные сведения см. в разделе [как автоматизировать преобразовать все шаблоны](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. **Постройте и запустите DSL.** Нажмите клавишу F5 или сочетание клавиш CTRL + F5 для запуска нового экземпляра [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в экспериментальном режиме. В экспериментальном экземпляре [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] откройте или создайте файл с расширением вашего DSL.  
   

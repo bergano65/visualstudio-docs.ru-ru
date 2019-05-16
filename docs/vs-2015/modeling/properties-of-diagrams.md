@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 287e9362162c00a5292815ebacfb8047b2a0bb7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d669d01339b92c64cfe03ccb3ae897a1816aeac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994136"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701761"
 ---
 # <a name="properties-of-diagrams"></a>Свойства схем
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58994136"
   
  Ниже перечислены свойства схемы.  
   
-|Свойство.|Описание|Значение по умолчанию|  
+|Свойство|Описание|Значение по умолчанию|  
 |--------------|-----------------|-------------|  
 |Цвет заливки|Цвет заливки для схемы.|Белый|  
 |Цвет текста|Цвет текста, который отображается на схеме.|Черный|  
@@ -50,4 +50,4 @@ ms.locfileid: "58994136"
 |Ключевое слово Help|Ключевое слово, используемое для индексации справки F1 для этой схеме.|\<none>|  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий средств предметно-ориентированных языков](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

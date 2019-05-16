@@ -11,19 +11,19 @@ ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d5b22479996bca6ee69c1334d79f012024b865d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35942f6babf18967e11f268ef0412acb4cc8edf7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991518"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687469"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Установка пакетов VSPackage с помощью установщика Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Интеграция пакета VSPackage в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] требует не только копирование файлов на компьютере пользователя. Установщик вашего VSPackage необходимо установить VSPackage и его зависимых файлов и зарегистрировать, так и их интеграция в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. VSPackage может воспользоваться преимуществами функций интеграции, такие как отображение значка на [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -заставка экрана и диалогового окна About.  
   
- Файлы установщика Microsoft Windows являются рекомендуемым способом распространения пакетов VSPackage. Пакеты установщика Windows для использования можно запустить в любой операционной системе Windows, поддерживаемых [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [установщика Windows](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0).  
+ Файлы установщика Microsoft Windows являются рекомендуемым способом распространения пакетов VSPackage. Пакеты установщика Windows для использования можно запустить в любой операционной системе Windows, поддерживаемых [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [установщика Windows](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0).  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Основные сведения об установщике Windows](../../extensibility/internals/windows-installer-basics.md)  

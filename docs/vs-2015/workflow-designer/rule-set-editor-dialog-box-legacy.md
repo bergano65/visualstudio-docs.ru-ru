@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438890"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703198"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Диалоговое окно «Редактор набора правил» (для прежних версий)
 Здесь описывается, как использовать **редактор набора правил** диалогового окна в прежних версий [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -76,7 +76,7 @@ ms.locfileid: "63438890"
   
   Приоритет оператора выражения определяется правилами приоритета операторов языка C#.  
   
-  Дополнительные сведения об условиях см. в разделе [использование условий в рабочих процессах](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
+  Дополнительные сведения об условиях см. в разделе [использование условий в рабочих процессах](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Функции Halt и Update  
  **Действия Then:** и **действия Else:** выражения поддерживают **Halt** и **обновления** функции. Для использования **Halt** функции, введите **Halt** в **действие Then:** или **действие Else:** текстовое поле. **Halt** действие вызывает немедленно прерывает выполнение набора правил и управление возвращается вызывающему коду. Использовании **обновления** функция прямых логических цепочках.  

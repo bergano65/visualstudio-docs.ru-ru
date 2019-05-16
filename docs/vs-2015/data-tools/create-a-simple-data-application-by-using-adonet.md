@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70fca5b1329dc9091e0672b41de0798d93aba01a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436982"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705168"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Создание простого приложения для работы с данными с помощью ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ ms.locfileid: "63436982"
 5. В **значение** столбца, введите строку подключения (без каких-либо за пределами кавычки), а затем сохраните изменения.  
   
 > [!NOTE]
-> В реальном приложении, следует хранить строку подключения безопасно, как описано в разделе [строки подключения и файлы конфигурации](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> В реальном приложении, следует хранить строку подключения безопасно, как описано в разделе [строки подключения и файлы конфигурации](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Получить строку подключения  
   
@@ -726,7 +726,7 @@ End Namespace
 |NC-12|Используйте `ExecuteNonQuery` метод `cmdNewCustomer` для запуска `Sales.uspNewCustomer` хранимой процедуры. Эта хранимая процедура запускается `INSERT` инструкции, а не запрос.|  
 |NC-13|Значение `@CustomerID` возвращается как значение идентификатора из базы данных. Поскольку это целое число, вам придется преобразовать его в строку для отображения на **Customer ID** текстовое поле.<br /><br /> -Вы объявили `parsedCustomerID` в шаге NC-2.<br />-Store `@CustomerID` значение в `parsedCustomerID` для последующего использования.<br />-Преобразуйте возвращенный идентификатор клиента в строку и вставьте ее в `txtCustomerID.Text`.|  
 |NC-14|Для этого примера добавьте простое предложение catch (не рабочего уровня).|  
-|NC-15|Всегда закрывайте подключение, после того как закончите его использование, чтобы его можно было вернуть в пул подключений. См. в разделе [пул (ADO.NET) соединение с SQL Server](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
+|NC-15|Всегда закрывайте подключение, после того как закончите его использование, чтобы его можно было вернуть в пул подключений. См. в разделе [пул (ADO.NET) соединение с SQL Server](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
 |NC-16|Определите метод для проверки наличия имени клиента.<br /><br /> — Если текстовое поле не заполнено, выводит сообщение и возвращать `false`, так как необходимо указать имя, чтобы создать учетную запись.<br />– Если текстовое поле не является пустым, возвращается `true`.|  
 |NC-17|Добавление кода в обработчик события нажатия кнопки `btnPlaceOrder`.|  
 |NC-18|Создание оболочки для кода события `btnPlaceOrder_Click` путем вызова `isPlaceOrderReady`, чтобы процедура `uspPlaceNewOrder` не выполнялась, если отсутствуют необходимые входные данные.|  

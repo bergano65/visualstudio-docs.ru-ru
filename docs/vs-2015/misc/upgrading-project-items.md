@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3619e187c7856cf03ee60c8a04cbe527bf0a69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434180"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698687"
 ---
 # <a name="upgrading-project-items"></a>Обновление элементов проекта
 При добавлении или управлять элементами внутри системы проектов, которые не реализуют, может потребоваться принять участие в процессе обновления проекта. Crystal Reports является примером элемента, который можно добавить в систему проектов.  
@@ -38,5 +38,5 @@ ms.locfileid: "62434180"
 2. Во время вашего элемента проекта получает уведомление о обновления проекта, **мастера преобразования Visual Studio** по-прежнему отображается. Таким образом, следует использовать методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> интерфейс для предоставления сообщений обновления пользовательского интерфейса мастера.  
   
 ## <a name="see-also"></a>См. также  
- [Мастер преобразования Visual Studio](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Мастер преобразования Visual Studio](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Обновление пользовательских проектов](../misc/upgrading-custom-projects.md)

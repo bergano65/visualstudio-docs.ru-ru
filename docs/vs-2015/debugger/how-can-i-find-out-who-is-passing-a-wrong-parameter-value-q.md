@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa3f96cd6ee5ff3c4f78a3e9a9bc89b2037066fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b0787a0d700859e7728762fd7846911fcd41e369
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053836"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704554"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Как определить, откуда передается неправильное значение параметра?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ ms.locfileid: "60053836"
   
 6. Запустите программу повторно. Точка останова заставит программу прервать выполнение на начале функции, когда параметр `Var` получит значение `3`.  
   
-7. Затем в окне "Стек вызовов" можно найти вызывающую функцию, чтобы перейти к ее исходному коду. Дополнительные сведения см. в разделе [Как использовать окно "Стек вызовов"](../debugger/how-to-use-the-call-stack-window.md).  
+7. Затем в окне "Стек вызовов" можно найти вызывающую функцию, чтобы перейти к ее исходному коду. Дополнительные сведения см. в разделе [Практическое руководство. использовать окно "Стек вызовов"](../debugger/how-to-use-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>См. также  
  [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
- [Точки останова](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Точки останова](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Отладка машинного кода](../debugger/debugging-native-code.md)
