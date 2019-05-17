@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Экспорт текстуры для использования с приложениями Direct2D и Javascipt
+title: Экспорт текстуры для приложений Direct2D и JavaScript
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844388"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459206"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Как выполнить Экспорт текстуры для использования с приложениями Direct2D и Javascipt
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Практическое руководство. Экспорт текстуры для использования с приложениями Direct2D и JavaScript
 
 Конвейер содержимого изображения может создавать текстуры, которые совместимы с внутренними соглашениями Direct2D по преобразованию для просмотра. Текстуры такого рода можно применять в приложениях, использующих Direct2D, а также в приложениях UWP, созданных с помощью JavaScript.
 
@@ -39,11 +39,11 @@ ms.locfileid: "62844388"
 
 - Текстуры должны предоставляться в формате *DDS* с использованием одного из следующих форматов блочного сжатия.
 
-    - Сжатие BC1_UNORM
+   - Сжатие BC1_UNORM
 
-    - Сжатие BC2_UNORM
+   - Сжатие BC2_UNORM
 
-    - Сжатие BC3_UNORM
+   - Сжатие BC3_UNORM
 
 - MIP-карты не поддерживаются.
 

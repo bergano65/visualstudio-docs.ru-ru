@@ -1,0 +1,980 @@
+- name: Интегрированная среда разработки Visual Studio
+  items:
+    - name: Интегрированная среда разработки Visual Studio
+      href: visual-studio-ide.md
+    - name: Оптимизация времени запуска Visual Studio
+      href: optimize-visual-studio-startup-time.md
+    - name: Перемещение по интегрированной среде разработки
+      href: how-to-move-around-in-the-visual-studio-ide.md
+    - name: Поиск и использование расширений Visual Studio
+      href: finding-and-using-visual-studio-extensions.md
+    - name: Get Started Developing with Visual Studio
+      items:
+        - name: Get Started Developing with Visual Studio
+          href: get-started-developing-with-visual-studio.md
+        - name: 'Начало работы с Visual C# и Visual Basic'
+          items:
+            - name: 'Начало работы с Visual C# и Visual Basic'
+              href: getting-started-with-visual-csharp-and-visual-basic.md
+            - name: Создание простого приложения
+              href: walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
+            - name: Руководство 1. Создание средства просмотра рисунков
+              items:
+                - name: Руководство 1. Создание средства просмотра рисунков
+                  href: tutorial-1-create-a-picture-viewer.md
+                - name: Шаг 1. Создание проекта приложения Windows Forms
+                  href: step-1-create-a-windows-forms-application-project.md
+                - name: Шаг 2. Запуск программы
+                  href: step-2-run-your-program.md
+                - name: Шаг 3. Настройка свойств формы
+                  href: step-3-set-your-form-properties.md
+                - name: Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel
+                  href: step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+                - name: Шаг 5. Добавление элементов управления в форму
+                  href: step-5-add-controls-to-your-form.md
+                - name: Шаг 6. Присвоение имен элементам управления "Кнопка"
+                  href: step-6-name-your-button-controls.md
+                - name: Шаг 7. Добавление компонентов Dialog в форму
+                  href: step-7-add-dialog-components-to-your-form.md
+                - name: Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"
+                  href: step-8-write-code-for-the-show-a-picture-button-event-handler.md
+                - name: 'Шаг 9. Проверка, комментирование и тестирование кода'
+                  href: step-9-review-comment-and-test-your-code.md
+                - name: Шаг 10. Написание кода дополнительных кнопок и флажка
+                  href: step-10-write-code-for-additional-buttons-and-a-check-box.md
+                - name: Шаг 11. Запуск программы и изучение других возможностей
+                  href: step-11-run-your-program-and-try-other-features.md
+            - name: Руководство 2. Создание ограниченной по времени математической головоломки
+              items:
+                - name: Руководство 2. Создание ограниченной по времени математической головоломки
+                  href: tutorial-2-create-a-timed-math-quiz.md
+                - name: Шаг 1. Создание проекта и добавление в форму элементов управления Label
+                  href: step-1-create-a-project-and-add-labels-to-your-form.md
+                - name: Шаг 2. Создание задачи на сложение случайных чисел
+                  href: step-2-create-a-random-addition-problem.md
+                - name: Шаг 3. Добавление таймера с обратным отсчетом
+                  href: step-3-add-a-countdown-timer.md
+                - name: Шаг 4. Добавление метода CheckTheAnswer()
+                  href: step-4-add-the-checktheanswer-parens-method.md
+                - name: Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
+                  href: step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+                - name: Шаг 6. Добавление задачи на вычитание
+                  href: step-6-add-a-subtraction-problem.md
+                - name: Шаг 7. Добавление задач на умножение и деление
+                  href: step-7-add-multiplication-and-division-problems.md
+                - name: Шаг 8. Настройка головоломки
+                  href: step-8-customize-the-quiz.md
+            - name: Руководство 3. Создание игры "Подбери пару"
+              items:
+                - name: Руководство 3. Создание игры "Подбери пару"
+                  href: tutorial-3-create-a-matching-game.md
+                - name: Шаг 1. Создание проекта и добавление таблицы в форму
+                  href: step-1-create-a-project-and-add-a-table-to-your-form.md
+                - name: Шаг 2. Добавление случайного объекта и списка значков
+                  href: step-2-add-a-random-object-and-a-list-of-icons.md
+                - name: Шаг 3. Назначение каждой метке случайного значка
+                  href: step-3-assign-a-random-icon-to-each-label.md
+                - name: Шаг 4. Добавление к каждой метке обработчика событий щелчка мышью
+                  href: step-4-add-a-click-event-handler-to-each-label.md
+                - name: Шаг 5. Добавление ссылок на метки
+                  href: step-5-add-label-references.md
+                - name: Шаг 6. Добавление таймера
+                  href: step-6-add-a-timer.md
+                - name: Шаг 7. Отмена исчезновения пар значков
+                  href: step-7-keep-pairs-visible.md
+                - name: 'Шаг 8. Добавление метода для проверки, выиграл ли игрок'
+                  href: step-8-add-a-method-to-verify-whether-the-player-won.md
+                - name: Шаг 9. Изучение других возможностей
+                  href: step-9-try-other-features.md
+        - name: Начало работы с C++
+          href: getting-started-with-cpp-in-visual-studio.md
+        - name: Начало работы с отладкой в Visual Studio 2015
+          href: getting-started-with-debugging-in-visual-studio-2015.md
+        - name: Проекты и решения
+          href: solutions-and-projects-in-visual-studio.md
+        - name: Creating Solutions and Projects
+          href: creating-solutions-and-projects.md
+        - name: Добавление и удаление элементов проекта
+          href: adding-and-removing-project-items.md
+        - name: Управление свойствами проекта и решения
+          href: managing-project-and-solution-properties.md
+        - name: Управление ссылками в проекте
+          items:
+            - name: Управление ссылками в проекте
+              href: managing-references-in-a-project.md
+            - name: Добавление и удаление ссылок с помощью диспетчера ссылок
+              href: how-to-add-or-remove-references-by-using-the-reference-manager.md
+            - name: Добавление ссылок с использованием NuGet или расширения SDK
+              href: adding-references-using-nuget-versus-an-extension-sdk.md
+            - name: Добавление или удаление импортированных пространств имен (Visual Basic)
+              href: how-to-add-or-remove-imported-namespaces-visual-basic.md
+            - name: Troubleshooting Broken References
+              href: troubleshooting-broken-references.md
+        - name: Application Properties
+          href: application-properties.md
+        - name: Управление ресурсами приложения (.NET)
+          href: managing-application-resources-dotnet.md
+        - name: Управление параметрами приложения (.NET)
+          href: managing-application-settings-dotnet.md
+        - name: Управление сборками и подписывание манифестов
+          items:
+            - name: Управление сборками и подписывание манифестов
+              href: managing-assembly-and-manifest-signing.md
+            - name: Подписывание манифестов приложения и развертывания
+              href: how-to-sign-application-and-deployment-manifests.md
+        - name: 'Задание значка приложения (Visual Basic, C#)'
+          href: how-to-specify-an-application-icon-visual-basic-csharp.md
+        - name: Настройка конкретной версии платформы .NET Framework
+          items:
+            - name: Настройка конкретной версии платформы .NET Framework
+              href: targeting-a-specific-dotnet-framework-version.md
+            - name: Обзор настройки для различных версий в Visual Studio
+              href: visual-studio-multi-targeting-overview.md
+            - name: Определение целевой версии .NET Framework
+              href: how-to-target-a-version-of-the-dotnet-framework.md
+        - name: Создание шаблонов проектов и элементов
+          items:
+            - name: Создание шаблонов проектов и элементов
+              href: creating-project-and-item-templates.md
+            - name: Создание шаблонов проектов
+              href: how-to-create-project-templates.md
+            - name: Создание многопроектных шаблонов
+              href: how-to-create-multi-project-templates.md
+            - name: Создание шаблонов элементов
+              href: how-to-create-item-templates.md
+            - name: Создание многофайловых шаблонов элементов
+              href: how-to-create-multi-file-item-templates.md
+            - name: Создание веб-шаблонов вручную
+              href: how-to-manually-create-web-templates.md
+            - name: Создание начальных наборов
+              href: how-to-create-starter-kits.md
+            - name: Размещение и упорядочение шаблонов
+              href: how-to-locate-and-organize-project-and-item-templates.md
+            - name: Настройка шаблонов
+              items:
+                - name: Настройка шаблонов
+                  href: customizing-project-and-item-templates.md
+                - name: Обновление существующих шаблонов
+                  href: how-to-update-existing-templates.md
+                - name: Замена параметров в шаблоне
+                  href: how-to-substitute-parameters-in-a-template.md
+                - name: 'Устранение неполадок, связанных с шаблонами'
+                  href: how-to-troubleshoot-templates.md
+            - name: Справочник по шаблонам Visual Studio
+              items:
+                - name: Справочник по шаблонам Visual Studio
+                  href: visual-studio-template-reference.md
+                - name: Параметры шаблона
+                  href: template-parameters.md
+    - name: Создание кода
+      items:
+        - name: Создание кода
+          href: writing-code-in-the-code-and-text-editor.md
+        - name: Finding and Replacing Text
+          items:
+            - name: Finding and Replacing Text
+              href: finding-and-replacing-text.md
+            - name: Использование регулярных выражений в Visual Studio
+              href: using-regular-expressions-in-visual-studio.md
+            - name: Поиск/Команда - окно
+              href: find-command-box.md
+            - name: Поиск в файлах
+              href: find-in-files.md
+            - name: Заменить в файлах
+              href: replace-in-files.md
+        - name: Кодировки и разрывы строк
+          href: encodings-and-line-breaks.md
+        - name: Структуризация
+          href: outlining.md
+        - name: Рефакторинг
+          href: refactoring-in-visual-studio.md
+        - name: Советы по повышению производительности
+          items:
+            - name: Советы по повышению производительности
+              href: productivity-tips-for-visual-studio.md
+            - name: Советы и рекомендации
+              href: tips-and-tricks-for-visual-studio.md
+            - name: Определение и настройка сочетаний клавиш
+              items:
+                - name: Определение и настройка сочетаний клавиш
+                  href: identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
+                - name: Сочетания клавиш по умолчанию для часто используемых команд
+                  href: default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
+                - name: Сочетания клавиш по умолчанию
+                  href: default-keyboard-shortcuts-in-visual-studio.md
+        - name: Using IntelliSense
+          items:
+            - name: Using IntelliSense
+              href: using-intellisense.md
+            - name: Возможности IntelliSense в Visual Basic
+              items:
+                - name: Возможности IntelliSense в Visual Basic
+                  href: visual-basic-specific-intellisense.md
+                - name: Фильтрованные списки завершения в Visual Basic
+                  href: filtered-completion-lists-in-visual-basic.md
+            - name: 'IntelliSense для Visual C#'
+              href: visual-csharp-intellisense.md
+            - name: Основанная на тестировании поддержка с возможностью "Создание в результате использования"
+              href: walkthrough-test-first-support-with-the-generate-from-usage-feature.md
+            - name: IntelliSense для JavaScript
+              items:
+                - name: IntelliSense для JavaScript
+                  href: javascript-intellisense.md
+                - name: Создание комментариев JSDoc
+                  href: create-jsdoc-comments-for-javascript-intellisense.md
+                - name: Создание комментариев к XML-документации
+                  href: create-xml-documentation-comments-for-javascript-intellisense.md
+                - name: Расширение IntelliSense для JavaScript
+                  href: extending-javascript-intellisense.md
+                - name: Завершение операторов с использованием идентификаторов
+                  href: statement-completion-for-identifiers.md
+                - name: Настройка IntelliSense для RequireJS
+                  href: customizing-intellisense-for-requirejs.md
+                - name: Комментарии к XML-документации
+                  items:
+                    - name: Комментарии к XML-документации
+                      href: xml-documentation-comments-javascript.md
+                    - name: \<deprecated>
+                      href: deprecated-javascript.md
+                    - name: \<field>
+                      href: field-javascript.md
+                    - name: \<loc>
+                      href: loc-javascript.md
+                    - name: \<param>
+                      href: param-javascript.md
+                    - name: \<returns>
+                      href: returns-javascript.md
+                    - name: \<signature>
+                      href: signature-javascript.md
+                    - name: \<summary>
+                      href: summary-javascript.md
+                    - name: \<value>
+                      href: value-javascript.md
+                    - name: \<var>
+                      href: var-javascript.md
+            - name: IntelliSense для Visual C++
+              href: visual-cpp-intellisense.md
+            - name: Создание XML-примечаний к коду
+              href: supplying-xml-code-comments.md
+        - name: Настройка редактора
+          items:
+            - name: Настройка редактора
+              href: customizing-the-editor.md
+            - name: Изменение регистра текста в редакторе
+              href: how-to-change-text-case-in-the-editor.md
+            - name: Управление режимами редактора
+              href: how-to-manage-editor-modes.md
+            - name: Управление окнами редактора
+              href: how-to-manage-editor-windows.md
+        - name: Отслеживание кода путем настройки полосы прокрутки
+          href: how-to-track-your-code-by-customizing-the-scrollbar.md
+        - name: Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)
+          href: how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md
+        - name: Выполнение быстрых действий с лампочками
+          href: perform-quick-actions-with-light-bulbs.md
+        - name: Фрагменты кода
+          items:
+            - name: Фрагменты кода
+              href: code-snippets.md
+            - name: Создание фрагмента кода
+              href: walkthrough-creating-a-code-snippet.md
+            - name: Распространение фрагментов кода
+              href: how-to-distribute-code-snippets.md
+            - name: 'Фрагменты кода Visual C#'
+              href: visual-csharp-code-snippets.md
+            - name: Фрагменты кода Visual C++
+              href: visual-cpp-code-snippets.md
+            - name: Функции фрагмента кода
+              href: code-snippet-functions.md
+            - name: 'Восстановление фрагментов кода для рефакторинга в C#'
+              href: how-to-restore-csharp-refactoring-snippets.md
+            - name: Использование окружающих фрагментов кода
+              href: how-to-use-surround-with-code-snippets.md
+            - name: Рекомендации по использованию фрагментов кода
+              href: best-practices-for-using-code-snippets.md
+            - name: 'Устранение неполадок, связанных с использованием фрагментов'
+              href: troubleshooting-snippets.md
+            - name: Справочник по схеме фрагментов кода
+              href: code-snippets-schema-reference.md
+        - name: Использование панели элементов
+          href: using-the-toolbox.md
+        - name: Просмотр структуры кода
+          items:
+            - name: Просмотр структуры кода
+              href: viewing-the-structure-of-code.md
+            - name: Значки представления классов и обозревателя объектов
+              href: class-view-and-object-browser-icons.md
+            - name: Разработка и просмотр классов и типов
+              items:
+                - name: Разработка и просмотр классов и типов
+                  href: designing-and-viewing-classes-and-types.md
+                - name: Работа с классами и другими типами (конструктор классов)
+                  items:
+                    - name: Работа с классами и другими типами (конструктор классов)
+                      href: working-with-classes-and-other-types-class-designer.md
+                    - name: Работа со схемами классов (конструктор классов)
+                      items:
+                        - name: Работа со схемами классов (конструктор классов)
+                          href: working-with-class-diagrams-class-designer.md
+                        - name: Добавление диаграмм классов в проекты (конструктор классов)
+                          href: how-to-add-class-diagrams-to-projects-class-designer.md
+                        - name: Настройка диаграмм классов (конструктор классов)
+                          href: how-to-customize-class-diagrams-class-designer.md
+                        - name: Копирование элементов диаграммы классов в документ Microsoft Office (конструктор классов)
+                          href: how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md
+                        - name: Экспорт диаграмм классов как изображений (конструктор классов)
+                          href: how-to-export-class-diagrams-as-images-class-designer.md
+                        - name: Печать диаграмм классов (конструктор классов)
+                          href: how-to-print-class-diagrams-class-designer.md
+                        - name: Добавление комментариев в диаграммы классов (конструктор классов)
+                          href: how-to-add-comments-to-class-diagrams-class-designer.md
+                    - name: Конструирование классов и типов (конструктор классов)
+                      items:
+                        - name: Конструирование классов и типов (конструктор классов)
+                          href: designing-classes-and-types-class-designer.md
+                        - name: Создание типов с помощью конструктора классов
+                          href: how-to-create-types-by-using-class-designer.md
+                        - name: Создание наследования между типами (конструктор классов)
+                          href: how-to-create-inheritance-between-types-class-designer.md
+                        - name: Создание ассоциаций между типами (конструктор классов)
+                          href: how-to-create-associations-between-types-class-designer.md
+                        - name: Визуализация ассоциации коллекции (конструктор классов)
+                          href: how-to-visualize-a-collection-association-class-designer.md
+                        - name: Создание и настройка членов типов (конструктор классов)
+                          items:
+                            - name: Создание и настройка членов типов (конструктор классов)
+                              href: creating-and-configuring-type-members-class-designer.md
+                            - name: Сочетания клавиш и кнопок мыши в схеме классов и окне "Сведения о классе" (конструктор классов)
+                              href: keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md
+                    - name: Просмотр типов и отношений (конструктор классов)
+                      items:
+                        - name: Просмотр типов и отношений (конструктор классов)
+                          href: viewing-types-and-relationships-class-designer.md
+                        - name: Просмотр существующих типов (конструктор классов)
+                          href: how-to-view-existing-types-class-designer.md
+                        - name: Просмотр наследования между типами (конструктор классов)
+                          href: how-to-view-inheritance-between-types-class-designer.md
+                        - name: Переключение между представлением в виде членов и представлением в виде ассоциации (конструктор классов)
+                          href: how-to-change-between-member-notation-and-association-notation-class-designer.md
+                    - name: Рефакторинг классов и типов (конструктор классов)
+                      items:
+                        - name: Рефакторинг классов и типов (конструктор классов)
+                          href: refactoring-classes-and-types-class-designer.md
+                        - name: Реализация интерфейса (конструктор классов)
+                          href: how-to-implement-an-interface-class-designer.md
+                        - name: Разделение класса на разделяемые классы (конструктор классов)
+                          href: how-to-split-a-class-into-partial-classes-class-designer.md
+                        - name: 'Создание типа, допускающего значение NULL (конструктор классов)'
+                          href: how-to-create-a-nullable-type-class-designer.md
+                    - name: Работа с кодом Visual C++ (конструктор классов)
+                      items:
+                        - name: Работа с кодом Visual C++ (конструктор классов)
+                          href: working-with-visual-cpp-code-class-designer.md
+                        - name: Классы Visual C++ в конструкторе классов
+                          href: visual-cpp-classes-in-class-designer.md
+                        - name: Структуры Visual C++ в конструкторе классов
+                          href: visual-cpp-structures-in-class-designer.md
+                        - name: Перечисления Visual C++ в конструкторе классов
+                          href: visual-cpp-enumerations-in-class-designer.md
+                        - name: Операторы typedef языка Visual C++ в конструкторе классов
+                          href: visual-cpp-typedefs-in-class-designer.md
+                    - name: Дополнительные сведения об ошибках конструктора классов
+                      href: additional-information-about-class-designer-errors.md
+        - name: Установка закладок в коде
+          href: setting-bookmarks-in-code.md
+        - name: Использование списка задач
+          href: using-the-task-list.md
+        - name: Поиск изменений кода и других журналов
+          items:
+            - name: Поиск изменений кода и других журналов
+              href: find-code-changes-and-other-history-with-codelens.md
+            - name: Команда CodeIndex
+              href: codeindex-command.md
+        - name: 'Использование среды разработки Visual Studio для C#'
+          items:
+            - name: 'Использование среды разработки Visual Studio для C#'
+              href: ../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md
+            - name: 'Добавление файла конфигурации приложения в проект C#'
+              href: ../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md
+            - name: Метаданные как исходный код
+              href: ../csharp-ide/metadata-as-source.md
+            - name: 'Рефакторинг (C#)'
+              items:
+                - name: 'Рефакторинг (C#)'
+                  href: ../csharp-ide/refactoring-csharp.md
+                - name: 'Рефакторинг для извлечения метода (C#)'
+                  href: ../csharp-ide/extract-method-refactoring-csharp.md
+                - name: 'Переименовать рефакторинг (C#)'
+                  href: ../csharp-ide/rename-refactoring-csharp.md
+                - name: 'Рефакторинг для инкапсуляции поля (C#)'
+                  href: ../csharp-ide/encapsulate-field-refactoring-csharp.md
+                - name: 'Рефакторинг для извлечения интерфейса (C#)'
+                  href: ../csharp-ide/extract-interface-refactoring-csharp.md
+                - name: 'Рефакторинг для удаления параметров (C#)'
+                  href: ../csharp-ide/remove-parameters-refactoring-csharp.md
+                - name: 'Рефакторинг для упорядочения параметров (C#)'
+                  href: ../csharp-ide/reorder-parameters-refactoring-csharp.md
+    - name: Отладка в Visual Studio
+      href: ../debugger/debugging-in-visual-studio.md
+    - name: Профилирование
+      href: ../profiling/profiling-tools.md
+    - name: Улучшение качества кода
+      href: ../test/unit-test-your-code.md
+    - name: Разработка пользовательских интерфейсов
+      href: ../designers/designing-user-interfaces.md
+    - name: Анализ и моделирование архитектуры
+      href: ../modeling/analyze-and-model-your-architecture.md
+    - name: Компилирование и сборка
+      items:
+        - name: Компилирование и сборка
+          href: compiling-and-building-in-visual-studio.md
+        - name: Сборка приложения
+          href: walkthrough-building-an-application.md
+        - name: Построение и очистка проектов и решений в Visual Studio
+          items:
+            - name: Построение и очистка проектов и решений в Visual Studio
+              href: building-and-cleaning-projects-and-solutions-in-visual-studio.md
+            - name: Изменение выходного каталога сборки
+              href: how-to-change-the-build-output-directory.md
+            - name: Создание общего выходного каталога
+              href: how-to-build-to-a-common-output-directory.md
+            - name: Указание настраиваемых событий построения в Visual Studio
+              href: specifying-custom-build-events-in-visual-studio.md
+            - name: Назначение нескольких запускаемых проектов
+              href: how-to-set-multiple-startup-projects.md
+            - name: Создание и удаление зависимостей проекта
+              href: how-to-create-and-remove-project-dependencies.md
+            - name: 'Просмотр, сохранение и настройка файлов журнала сборки'
+              href: how-to-view-save-and-configure-build-log-files.md
+            - name: Исключение проектов из сборки
+              href: how-to-exclude-projects-from-a-build.md
+            - name: Подавление предупреждений компилятора
+              href: how-to-suppress-compiler-warnings.md
+        - name: Общие сведения о конфигурациях построения
+          items:
+            - name: Общие сведения о конфигурациях построения
+              href: understanding-build-configurations.md
+            - name: Создание и изменение конфигураций
+              href: how-to-create-and-edit-configurations.md
+            - name: Управление конфигурациями с применением параметров разработчика Visual Basic
+              href: how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
+            - name: Сборка с использованием нескольких конфигураций
+              href: how-to-build-multiple-configurations-simultaneously.md
+        - name: Общие сведения о платформах построения
+          items:
+            - name: Общие сведения о платформах построения
+              href: understanding-build-platforms.md
+            - name: Настройка целевых платформ в проектах
+              href: how-to-configure-projects-to-target-platforms.md
+            - name: Настройка нескольких целевых платформ в проектах
+              href: how-to-configure-projects-to-target-multiple-platforms.md
+        - name: Указание событий сборки (Visual Basic)
+          href: how-to-specify-build-events-visual-basic.md
+        - name: 'Указание событий сборки (C#)'
+          href: how-to-specify-build-events-csharp.md
+        - name: Configuring Warnings in Visual Basic
+          href: configuring-warnings-in-visual-basic.md
+        - name: Отключение главного процесса
+          items:
+            - name: Отключение главного процесса
+              href: how-to-disable-the-hosting-process.md
+            - name: Главный процесс (vshost.exe)
+              href: hosting-process-vshost-exe.md
+        - name: Создание среды сборки из нескольких компьютеров
+          href: walkthrough-creating-a-multiple-computer-build-environment.md
+    - name: 'Развертывание приложений, служб и компонентов'
+      href: ../deployment/deploying-applications-services-and-components.md
+    - name: Поддержка 64-разрядных сред IDE Visual Studio
+      href: visual-studio-ide-64-bit-support.md
+    - name: Примеры Visual Studio
+      href: visual-studio-samples.md
+    - name: Учетные записи пользователей и обновления
+      items:
+        - name: Учетные записи пользователей и обновления
+          href: user-accounts-and-updates.md
+        - name: Вход в Visual Studio
+          href: signing-in-to-visual-studio.md
+        - name: Работа с несколькими учетными записями пользователя
+          href: work-with-multiple-user-accounts.md
+        - name: Разблокирование Visual Studio
+          href: how-to-unlock-visual-studio.md
+        - name: Уведомления
+          href: visual-studio-notifications.md
+    - name: Персонализация среды IDE
+      items:
+        - name: Персонализация среды IDE
+          href: personalizing-the-visual-studio-ide.md
+        - name: Изменение шрифтов и цветов
+          href: how-to-change-fonts-and-colors-in-visual-studio.md
+        - name: Настройка меню и панелей инструментов
+          href: how-to-customize-menus-and-toolbars-in-visual-studio.md
+        - name: Настройка макетов окон
+          href: customizing-window-layouts-in-visual-studio.md
+        - name: Настройка начальной страницы
+          href: customizing-the-start-page-for-visual-studio.md
+        - name: Управление внешними инструментами
+          href: managing-external-tools.md
+        - name: Синхронизированные параметры
+          href: synchronized-settings-in-visual-studio.md
+    - name: Безопасность
+      items:
+        - name: Безопасность
+          href: security-in-visual-studio.md
+        - name: Защита приложений
+          href: securing-applications.md
+        - name: Обеспечение безопасности
+          href: maintaining-security.md
+        - name: Разрешения пользователей
+          href: user-permissions-and-visual-studio.md
+        - name: Библиография по вопросам безопасности
+          href: security-bibliography.md
+    - name: Примеры Visual Studio
+      href: visual-studio-samples.md
+    - name: Окно справки (Майкрософт)
+      items:
+        - name: Окно справки (Майкрософт)
+          href: microsoft-help-viewer.md
+        - name: Установка окна справки (Microsoft)
+          href: microsoft-help-viewer-installation.md
+        - name: Руководство администратора Help Viewer
+          items:
+            - name: Руководство администратора Help Viewer
+              href: help-viewer-administrator-guide.md
+            - name: Аргументы командной строки для диспетчера содержимого справки
+              href: command-line-arguments-for-the-help-content-manager.md
+            - name: Переопределение диспетчера содержимого справки
+              href: help-content-manager-overrides.md
+        - name: Установка локального содержимого и управление им
+          href: install-and-manage-local-content.md
+        - name: Поиск сведений
+          items:
+            - name: Поиск сведений
+              href: locate-information.md
+            - name: Поиск разделов в указателе
+              items:
+                - name: Поиск разделов в указателе
+                  href: how-to-find-topics-in-the-index.md
+                - name: Советы по поиску в указателе
+                  href: index-search-tips.md
+            - name: Поиск разделов в содержании
+              href: how-to-find-topics-in-the-table-of-contents.md
+            - name: Поиск разделов
+              items:
+                - name: Поиск разделов
+                  href: how-to-search-for-topics.md
+                - name: Советы по полнотекстовому поиску
+                  href: full-text-search-tips.md
+                - name: Логические операторы в выражениях поиска
+                  href: logical-operators-in-search-expressions.md
+                - name: Операторы расширенного поиска в выражениях поиска
+                  href: advanced-search-operators-in-search-expressions.md
+                - name: Настройка результатов поиска
+                  href: how-to-customize-search-results.md
+        - name: Управление окном средства просмотра справки
+          href: manage-the-help-viewer-window.md
+        - name: Сохранение разделов для дальнейшего использования
+          href: retain-topics-for-later-use.md
+        - name: Настройка средства просмотра справки
+          href: customize-the-help-viewer.md
+        - name: Устранение неполадок средства просмотра справки
+          href: troubleshooting-the-help-viewer.md
+        - name: Специальные возможности средства просмотра справки
+          items:
+            - name: Специальные возможности средства просмотра справки
+              href: accessibility-features-of-the-help-viewer.md
+            - name: Сочетания клавиш (средство просмотра справки)
+              href: shortcut-keys-help-viewer.md
+    - name: Глобализация и локализация приложений
+      items:
+        - name: Глобализация и локализация приложений
+          href: globalizing-and-localizing-applications.md
+        - name: Знакомство с международными приложениями на платформе .NET Framework
+          href: introduction-to-international-applications-based-on-the-dotnet-framework.md
+        - name: Локализация приложений
+          items:
+            - name: Локализация приложений
+              href: localizing-applications.md
+            - name: Иерархическая организация ресурсов для локализации
+              href: hierarchical-organization-of-resources-for-localization.md
+            - name: Безопасность и локализованные вспомогательные сборки
+              href: security-and-localized-satellite-assemblies.md
+            - name: Номера версий основных и вспомогательных локализованных сборок
+              href: version-numbers-for-main-and-localized-satellite-assemblies.md
+            - name: Языки нейтральных ресурсов для локализации
+              href: neutral-resources-languages-for-localization.md
+        - name: Глобализация приложений
+          items:
+            - name: Глобализация приложений
+              href: globalizing-applications.md
+            - name: 'Классы, соответствующие определенному языку и региональным параметрам, для глобальных форм Windows Forms и Web Forms'
+              href: culture-specific-classes-for-global-windows-forms-and-web-forms.md
+        - name: Создание приложений для языков с двунаправленным письмом
+          items:
+            - name: Создание приложений для языков с двунаправленным письмом
+              href: creating-applications-in-bi-directional-languages.md
+            - name: Сохранение и открытие файлов с определенной кодировкой
+              href: how-to-save-and-open-files-with-encoding.md
+    - name: Добавление поддержки редактора Visual Studio для других языков
+      href: adding-visual-studio-editor-support-for-other-languages.md
+    - name: Ссылка
+      items:
+        - name: Общие элементы пользовательского интерфейса (Visual Studio)
+          items:
+            - name: Общие элементы пользовательского интерфейса (Visual Studio)
+              href: reference/general-user-interface-elements-visual-studio.md
+            - name: Иерархия вызовов
+              href: reference/call-hierarchy.md
+            - name: 'Выбор элементов панели элементов, компоненты WPF'
+              href: reference/choose-toolbox-items-wpf-components.md
+            - name: выбор фрагмента кода
+              href: reference/code-snippet-picker.md
+            - name: Командное окно
+              href: reference/command-window.md
+            - name: Преобразование - диалоговое окно
+              href: reference/convert-dialog-box.md
+            - name: Окно "Список ошибок"
+              href: reference/error-list-window.md
+            - name: Свойства файлов (JavaScript)
+              href: reference/file-properties-javascript.md
+            - name: Переход к строке
+              href: reference/go-to-line.md
+            - name: окно интерпретации
+              href: reference/immediate-window.md
+            - name: Прочие файлы
+              href: reference/miscellaneous-files.md
+            - name: Диалоговое окно "Параметры"
+              href: reference/options-dialog-box-visual-studio.md
+            - name: Диалоговое окно "Параметры среды"
+              items:
+                - name: Диалоговое окно "Параметры среды"
+                  href: reference/environment-options-dialog-box.md
+                - name: 'Страница "Общие", папка "Среда", диалоговое окно "Параметры"'
+                  href: reference/general-environment-options-dialog-box.md
+                - name: 'Страница "Автовосстановление", папка "Среда", диалоговое окно "Параметры"'
+                  href: reference/autorecover-environment-options-dialog-box.md
+                - name: 'Страница "Документы", папка "Среда", диалоговое окно "Параметры"'
+                  href: reference/documents-environment-options-dialog-box.md
+                - name: 'Страница «Расширения и обновления», папка «Среда», диалоговое окно «Параметры»'
+                  href: reference/extensions-and-updates-environment-options-dialog-box.md
+                - name: '"Поиск и замена", "Среда", диалоговое окно "Параметры"'
+                  href: reference/find-and-replace-environment-options-dialog-box.md
+                - name: 'Страница "Шрифты и цвета", папка "Среда", диалоговое окно "Параметры"'
+                  href: reference/fonts-and-colors-environment-options-dialog-box.md
+                - name: 'Страница "Параметры импорта и экспорта", папка "Среда", диалоговое окно "Параметры"'
+                  href: reference/import-and-export-settings-environment-options-dialog-box.md
+                - name: 'Страница "Язык интерфейса", папка "Среда", диалоговое окно "Параметры"'
+                  href: reference/international-settings-environment-options-dialog-box.md
+                - name: 'Страница «Клавиатура», папка «Среда», диалоговое окно «Параметры»'
+                  href: reference/keyboard-environment-options-dialog-box.md
+                - name: 'Страница «Уведомления», папка «Среда», диалоговое окно «Параметры»'
+                  href: reference/notifications-environment-options-dialog-box.md
+                - name: 'Страница «Быстрый запуск», папка «Среда», диалоговое окно «Параметры»'
+                  href: reference/quick-launch-environment-options-dialog-box.md
+                - name: 'Начальная страница, папка «Среда», диалоговое окно «Параметры»'
+                  href: reference/startup-environment-options-dialog-box.md
+                - name: 'Страница «Синхронизированные параметры», папка «Среда», диалоговое окно «Параметры»'
+                  href: reference/synchronized-settings-environment-options-dialog-box.md
+                - name: 'Страница «Вкладки и окна», папка «Среда», диалоговое окно «Параметры»'
+                  href: reference/tabs-and-windows-environment-options-dialog-box.md
+                - name: 'Страница "Список задач", папка "Среда", диалоговое окно "Параметры"'
+                  href: reference/task-list-environment-options-dialog-box.md
+                - name: 'Страница "Браузер", папка "Среда", диалоговое окно "Параметры"'
+                  href: reference/web-browser-environment-options-dialog-box.md
+                - name: 'Страница “Параметры”, свойства узла “Среда”'
+                  href: reference/options-page-environment-node-properties.md
+            - name: Диалоговое окно "Параметры текстового редактора"
+              items:
+                - name: Диалоговое окно "Параметры текстового редактора"
+                  href: reference/text-editor-options-dialog-box.md
+                - name: Изменение шрифтов и цветов в редакторе
+                  href: reference/how-to-change-fonts-and-colors-in-the-editor.md
+                - name: Управление переносом слов в редакторе
+                  href: reference/how-to-manage-word-wrap-in-the-editor.md
+                - name: Отображение номеров строк в редакторе
+                  href: reference/how-to-display-line-numbers-in-the-editor.md
+                - name: Отображение URL-адресов как ссылок в редакторе
+                  href: reference/how-to-display-urls-as-links-in-the-editor.md
+                - name: Настройка параметров языка редактора
+                  href: reference/setting-language-specific-editor-options.md
+                - name: 'Параметры, текстовый редактор, общие'
+                  href: reference/options-text-editor-general.md
+                - name: '"Параметры", "Текстовый редактор", "Расширение файла"'
+                  href: reference/options-text-editor-file-extension.md
+                - name: 'Параметры, текстовый редактор, все языки'
+                  href: reference/options-text-editor-all-languages.md
+                - name: '"Параметры", "Текстовый редактор", "Все языки", "Вкладки"'
+                  href: reference/options-text-editor-all-languages-tabs.md
+                - name: '"Параметры", "Текстовый редактор", Basic (Visual Basic)'
+                  href: reference/options-text-editor-basic-visual-basic.md
+                - name: '"Параметры", "Текстовый редактор", C/C++, "Форматирование"'
+                  href: reference/options-text-editor-c-cpp-formatting.md
+                - name: '"Параметры", "Текстовый редактор", C/C++, "Дополнительно"'
+                  href: reference/options-text-editor-c-cpp-advanced.md
+                - name: '"Параметры", "Текстовый редактор", C/C++, "Экспериментальный"'
+                  href: reference/options-text-editor-c-cpp-experimental.md
+                - name: '"Параметры", "Текстовый редактор", C#, "Форматирование"'
+                  href: reference/options-text-editor-csharp-formatting.md
+                - name: '"Параметры", "Текстовый редактор", C#, "Дополнительно"'
+                  href: reference/options-text-editor-csharp-advanced.md
+                - name: '"Параметры", "Текстовый редактор", C#, IntelliSense'
+                  href: reference/options-text-editor-csharp-intellisense.md
+                - name: '"Параметры", "Текстовый редактор", JavaScript, "Форматирование"'
+                  href: reference/options-text-editor-javascript-formatting.md
+                - name: '"Параметры", "Текстовый редактор", JavaScript, IntelliSense'
+                  href: reference/options-text-editor-javascript-intellisense.md
+                - name: '"Параметры", "Текстовый редактор", XAML, "Форматирование"'
+                  href: reference/options-text-editor-xaml-formatting.md
+                - name: 'Страница "Параметры", свойства узла "Шрифты и цвета"'
+                  href: reference/options-page-fonts-and-colors-node-properties.md
+                - name: 'Страница "Параметры"", свойства узла "Текстовый редактор"'
+                  href: reference/options-page-text-editor-node-properties.md
+            - name: 'Страница "Параметры", свойства узла отладки'
+              href: reference/options-page-debugging-node-properties.md
+            - name: Окно выходных данных
+              href: reference/output-window.md
+            - name: Справочник по свойствам проектов
+              items:
+                - name: Справочник по свойствам проектов
+                  href: reference/project-properties-reference.md
+                - name: 'Application Page, Project Designer (Visual Basic)'
+                  items:
+                    - name: 'Application Page, Project Designer (Visual Basic)'
+                      href: reference/application-page-project-designer-visual-basic.md
+                    - name: Диалоговое окно "Сведения о сборке"
+                      href: reference/assembly-information-dialog-box.md
+                - name: 'Страница "Приложение" в конструкторе проектов (C#)'
+                  href: reference/application-page-project-designer-csharp.md
+                - name: 'Страница "Событий построения" в конструкторе проектов (C#)'
+                  items:
+                    - name: 'Страница "Событий построения" в конструкторе проектов (C#)'
+                      href: reference/build-events-page-project-designer-csharp.md
+                    - name: Диалоговое окно "Командная строка события "После построения"" или "Командная строка события "До построения""
+                      href: reference/pre-build-event-post-build-event-command-line-dialog-box.md
+                - name: 'Страница "Построение" в конструкторе проектов (C#)'
+                  items:
+                    - name: 'Страница "Построение" в конструкторе проектов (C#)'
+                      href: reference/build-page-project-designer-csharp.md
+                    - name: 'Диалоговое окно "Дополнительные параметры компилятора" (C#)'
+                      href: reference/advanced-build-settings-dialog-box-csharp.md
+                - name: '"Анализ кода", конструктор проекта'
+                  href: reference/code-analysis-project-designer.md
+                - name: Страница "Компиляция" в конструкторе проектов (Visual Basic)
+                  items:
+                    - name: Страница "Компиляция" в конструкторе проектов (Visual Basic)
+                      href: reference/compile-page-project-designer-visual-basic.md
+                    - name: Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)
+                      href: reference/advanced-compiler-settings-dialog-box-visual-basic.md
+                    - name: Диалоговое окно "События построения" (Visual Basic)
+                      href: reference/build-events-dialog-box-visual-basic.md
+                - name: Страница "Отладка" в конструкторе проектов
+                  href: reference/debug-page-project-designer.md
+                - name: 'Страница "Мои расширения", конструктор проектов'
+                  href: reference/my-extensions-page-project-designer-visual-basic.md
+                - name: Страница публикации в конструкторе проектов
+                  items:
+                    - name: Страница публикации в конструкторе проектов
+                      href: reference/publish-page-project-designer.md
+                    - name: Диалоговое окно «Необходимые компоненты»
+                      href: reference/prerequisites-dialog-box.md
+                - name: Страница "Ссылки" в конструкторе проектов (Visual Basic)
+                  href: reference/references-page-project-designer-visual-basic.md
+                - name: Страница "Безопасность" в конструкторе проектов
+                  items:
+                    - name: Страница "Безопасность" в конструкторе проектов
+                      href: reference/security-page-project-designer.md
+                    - name: Диалоговое окно "Дополнительные параметры безопасности"
+                      href: reference/advanced-security-settings-dialog-box.md
+                - name: Страница "Службы" в конструкторе проектов
+                  items:
+                    - name: Страница "Службы" в конструкторе проектов
+                      href: reference/services-page-project-designer.md
+                    - name: Диалоговое окно "Дополнительные параметры служб"
+                      href: reference/advanced-settings-for-services-dialog-box.md
+                - name: Страница "Подписывание" в конструкторе проектов
+                  href: reference/signing-page-project-designer.md
+                - name: 'Страница "Параметры Visual Basic по умолчанию", папка "Проекты", диалоговое окно "Параметры"'
+                  href: reference/visual-basic-defaults-projects-options-dialog-box.md
+                - name: 'Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры"'
+                  href: reference/vcpp-project-settings-projects-and-solutions-options-dialog-box.md
+            - name: Типы файлов проектов и решений
+              href: reference/project-and-solution-file-types.md
+            - name: '«Проекты и решения», «Диалоговое окно параметров»'
+              items:
+                - name: '«Проекты и решения», «Диалоговое окно параметров»'
+                  href: reference/projects-and-solutions-options-dialog-box.md
+                - name: 'Диалоговое окно "Параметры",  проекты и решения, сборка и запуск'
+                  href: reference/options-dialog-box-projects-and-solutions-build-and-run.md
+                - name: '«Диалоговое окно параметров», «Проекты и решения», «Веб-проекты»'
+                  href: reference/options-dialog-box-projects-and-solutions-web-projects.md
+            - name: Страницы свойств (JavaScript)
+              href: reference/property-pages-javascript.md
+            - name: Окно свойств
+              href: reference/properties-window.md
+            - name: Панель элементов
+              items:
+                - name: Панель элементов
+                  href: reference/toolbox.md
+                - name: 'Вкладка "Компоненты", панель элементов'
+                  href: reference/toolbox-components-tab.md
+                - name: 'Панель элементов, вкладка "Данные"'
+                  href: reference/toolbox-data-tab.md
+                - name: 'Вкладка HTML, панель элементов'
+                  href: reference/toolbox-html-tab.md
+        - name: Параметры командной строки для команды Devenv
+          items:
+            - name: Параметры командной строки для команды Devenv
+              href: reference/devenv-command-line-switches.md
+            - name: /?
+              href: reference/q-devenv-exe.md
+            - name: /Build
+              href: reference/build-devenv-exe.md
+            - name: /Clean
+              href: reference/clean-devenv-exe.md
+            - name: /Command
+              href: reference/command-devenv-exe.md
+            - name: /DebugExe
+              href: reference/debugexe-devenv-exe.md
+            - name: /Deploy
+              href: reference/deploy-devenv-exe.md
+            - name: /Diff
+              href: reference/diff.md
+            - name: /Edit
+              href: reference/edit-devenv-exe.md
+            - name: /LCID
+              href: reference/lcid-devenv-exe.md
+            - name: /Log
+              href: reference/log-devenv-exe.md
+            - name: /Out
+              href: reference/out-devenv-exe.md
+            - name: /Project
+              href: reference/project-devenv-exe.md
+            - name: /ProjectConfig
+              href: reference/projectconfig-devenv-exe.md
+            - name: /Rebuild
+              href: reference/rebuild-devenv-exe.md
+            - name: /ResetAddin
+              href: reference/resetaddin-devenv-exe.md
+            - name: /InstallVSTemplates
+              href: reference/installvstemplates-devenv-exe.md
+            - name: /ResetSettings
+              href: reference/resetsettings-devenv-exe.md
+            - name: /ResetSkipPkgs
+              href: reference/resetskippkgs-devenv-exe.md
+            - name: /Run
+              href: reference/run-devenv-exe.md
+            - name: /Runexit
+              href: reference/runexit-devenv-exe.md
+            - name: /SafeMode
+              href: reference/safemode-devenv-exe.md
+            - name: /Setup
+              href: reference/setup-devenv-exe.md
+            - name: /Updateconfiguration
+              href: reference/updateconfiguration-devenv-exe.md
+            - name: /Upgrade
+              href: reference/upgrade-devenv-exe.md
+            - name: /UseEnv
+              href: reference/useenv-devenv-exe.md
+        - name: Команды Visual Studio
+          items:
+            - name: Команды Visual Studio
+              href: reference/visual-studio-commands.md
+            - name: Visual Studio Command Aliases
+              href: reference/visual-studio-command-aliases.md
+            - name: Команда Add Existing Item
+              href: reference/add-existing-item-command.md
+            - name: Команда Add Existing Project
+              href: reference/add-existing-project-command.md
+            - name: Команда Add New Item
+              href: reference/add-new-item-command.md
+            - name: Команда Alias
+              href: reference/alias-command.md
+            - name: Команда Evaluate Statement
+              href: reference/evaluate-statement-command.md
+            - name: Команда Find
+              href: reference/find-command.md
+            - name: Команда Find in Files
+              href: reference/find-in-files-command.md
+            - name: Команда Go To
+              href: reference/go-to-command.md
+            - name: Импорт и экспорт параметров - команда
+              href: reference/import-and-export-settings-command.md
+            - name: Команда List Call Stack
+              href: reference/list-call-stack-command.md
+            - name: Команда List Disassembly
+              href: reference/list-disassembly-command.md
+            - name: Команда List Memory
+              href: reference/list-memory-command.md
+            - name: Команда List Modules
+              href: reference/list-modules-command.md
+            - name: Команда List Registers
+              href: reference/list-registers-command.md
+            - name: Команда List Source
+              href: reference/list-source-command.md
+            - name: Команда List Threads
+              href: reference/list-threads-command.md
+            - name: Команда Log Command Window Output
+              href: reference/log-command-window-output-command.md
+            - name: Команда New File
+              href: reference/new-file-command.md
+            - name: Команда Open File
+              href: reference/open-file-command.md
+            - name: Команда Open Project
+              href: reference/open-project-command.md
+            - name: Команда Open Solution
+              href: reference/open-solution-command.md
+            - name: Команда Print
+              href: reference/print-command.md
+            - name: Команда Quick Watch
+              href: reference/quick-watch-command.md
+            - name: Команда Replace
+              href: reference/replace-command.md
+            - name: Команда Replace In Files
+              href: reference/replace-in-files-command.md
+            - name: Команда Set Current Process
+              href: reference/set-current-process.md
+            - name: Команда Set Current Stack Frame
+              href: reference/set-current-stack-frame-command.md
+            - name: Команда Set Current Thread
+              href: reference/set-current-thread-command.md
+            - name: Команда Set Radix
+              href: reference/set-radix-command.md
+            - name: Команда Shell
+              href: reference/shell-command.md
+            - name: Команда ShowWebBrowser
+              href: reference/showwebbrowser-command.md
+            - name: Команда Start
+              href: reference/start-command.md
+            - name: Команда Symbol Path
+              href: reference/symbol-path-command.md
+            - name: Команда Toggle Breakpoint
+              href: reference/toggle-breakpoint-command.md
+            - name: Команда Watch
+              href: reference/watch-command.md
+        - name: Средства XML
+          href: ../xml-tools/xml-tools-in-visual-studio.md
+        - name: Справочные материалы по Visual Studio для приложений
+          href: reference/visual-studio-for-applications-reference.md
+        - name: MSBuild
+          href: ../msbuild/msbuild.md
+        - name: Ресурсы для устранения неполадок интегрированной среды разработки
+          href: reference/resources-for-troubleshooting-integrated-development-environment-errors.md
+        - name: Специальные функции для людей с ограниченными возможностями
+          items:
+            - name: Специальные функции для людей с ограниченными возможностями
+              href: reference/accessibility-for-people-with-disabilities.md
+            - name: Специальные возможности Visual Studio
+              items:
+                - name: Специальные возможности Visual Studio
+                  href: reference/accessibility-features-of-visual-studio.md
+                - name: Настройка специальных возможностей в интегрированной среде разработки
+                  href: reference/how-to-set-ide-accessibility-options.md
+                - name: Работа с клавиатуры
+                  href: reference/how-to-use-the-keyboard-exclusively.md
+                - name: Специальные возможности. Советы и рекомендации
+                  href: reference/accessibility-tips-and-tricks.md
+            - name: 'Продукты и службы корпорации Майкрософт, поддерживающие специальные возможности'
+              href: reference/accessibility-products-and-services-from-microsoft.md
+            - name: Ресурсы для создания приложений со специальными возможностями
+              href: reference/resources-for-designing-accessible-applications.md
+        - name: Требуется проверка подлинности на прокси-сервере
+          href: reference/proxy-authorization-required.md

@@ -12,9 +12,9 @@
     - name: Учебники
       expanded: true
       items:
-        - name: Руководство. Использование многоконтейнерного приложения с Docker Compose
+        - name: Использование многоконтейнернего приложения с Docker Compose
           href: tutorial-multicontainer.md
-        - name: Руководство. Kubernetes в Visual Studio
+        - name: Kubernetes в Visual Studio
           href: tutorial-kubernetes-tools.md
     - name: Практическое руководство
       items:
@@ -24,6 +24,8 @@
           href: hosting-web-apps-in-docker.md
         - name: Развертывание в службе приложений Azure
           href: deploy-app-service.md
+        - name: Просмотр и диагностика контейнеров
+          href: view-and-diagnose-containers.md
         - name: Настройка инструментов для контейнеров
           href: container-tools-configure.md
     - name: Устранение неполадок

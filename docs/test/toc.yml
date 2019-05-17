@@ -1,10 +1,9 @@
-- name: Инструменты тестирования для Visual Studio
+- name: Средства тестирования Visual Studio
   href: improve-code-quality.md
-- name: Сценарии тестирования
-  href: developer-testing-scenarios.md
 - name: Модульное тестирование
-  href: unit-test-your-code.md
   items:
+    - name: Основные сведения о средствах модульного тестирования
+      href: unit-test-your-code.md
     - name: Начало работы
       href: getting-started-with-unit-testing.md
     - name: Основные сведения о модульных тестах
@@ -14,8 +13,9 @@
     - name: Команда "Создать модульные тесты"
       href: create-unit-tests-menu.md
     - name: IntelliTest
-      href: generate-unit-tests-for-your-code-with-intellitest.md
       items:
+        - name: Практическое руководство. Создание модульных тестов с помощью IntelliTest
+          href: generate-unit-tests-for-your-code-with-intellitest.md
         - name: Обзор
           href: intellitest-manual/introduction.md
         - name: Начало работы
@@ -38,9 +38,10 @@
           href: intellitest-manual/warnings-and-errors.md
     - name: Установка платформ модульного тестирования сторонних поставщиков
       href: install-third-party-unit-test-frameworks.md
-    - name: Выполнение модульных тестов с помощью обозревателя тестов
-      href: run-unit-tests-with-test-explorer.md
+    - name: Обозреватель тестов
       items:
+        - name: Выполнение модульных тестов с помощью обозревателя тестов
+          href: run-unit-tests-with-test-explorer.md
         - name: Вопросы и ответы по обозревателю тестов
           href: test-explorer-faq.md
     - name: Запуск тестов из командной строки
@@ -59,18 +60,20 @@
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Использование классов assert
           href: using-the-assert-classes.md
-        - name: "Изоляция тестируемого кода с помощью Microsoft\_Fakes"
-          href: isolating-code-under-test-with-microsoft-fakes.md
+        - name: Microsoft Fakes
           items:
+            - name: "Изоляция тестируемого кода с помощью Microsoft\_Fakes"
+              href: isolating-code-under-test-with-microsoft-fakes.md
             - name: Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании
               href: using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md
             - name: Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании
               href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
             - name: 'Формирование и компиляция кода, а также соглашения об именовании в Microsoft Fakes'
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
-        - name: 'Создание модульного теста, управляемого данными'
-          href: how-to-create-a-data-driven-unit-test.md
+        - name: Модульные тесты на основе данных
           items:
+            - name: 'Создание модульного теста, управляемого данными'
+              href: how-to-create-a-data-driven-unit-test.md
             - name: Пошаговое руководство. Использование файла конфигурации для определения источника данных
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Модульные тесты для универсальных методов
@@ -79,9 +82,10 @@
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
         - name: Пример проекта для создания модульных тестов
           href: sample-project-for-creating-unit-tests.md
-    - name: "Написание модульных тестов для кода\_C/C++"
-      href: writing-unit-tests-for-c-cpp.md
+    - name: "Модульные тесты для кода\_C/C++"
       items:
+        - name: "Написание модульных тестов для кода\_C/C++"
+          href: writing-unit-tests-for-c-cpp.md
         - name: Использование платформы модульного тестирования Майкрософт для C++
           href: how-to-use-microsoft-test-framework-for-cpp.md
         - name: Использование платформы тестирования Google для C++
@@ -104,16 +108,18 @@
           href: unit-testing-visual-csharp-code-in-a-store-app.md
         - name: Пошаговое руководство. Создание и выполнение модульных тестов для приложений UWP
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
-    - name: Использование покрытия кода для определения объема протестированного кода
-      href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+    - name: Покрытие кода
       items:
+        - name: Использование покрытия кода для определения объема протестированного кода
+          href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
         - name: Настройка анализа объема протестированного кода
           href: customizing-code-coverage-analysis.md
         - name: Устранение неполадок в объеме протестированного кода
           href: troubleshooting-code-coverage.md
 - name: Live Unit Testing
-  href: live-unit-testing-intro.md
   items:
+    - name: Вступление
+      href: live-unit-testing-intro.md
     - name: Новые возможности в Live Unit Testing
       href: live-unit-testing-whats-new.md
     - name: Начало работы с Live Unit Testing
@@ -126,19 +132,22 @@
   items:
     - name: Краткое руководство. Создание проекта нагрузочного тестирования
       href: quickstart-create-a-load-test-project.md
-    - name: Настройка нагрузочных тестов
-      href: edit-load-tests.md
+    - name: Конфигурация нагрузочного теста
       items:
-        - name: Изменение сценариев
-          href: edit-load-test-scenarios.md
+        - name: Настройка нагрузочных тестов
+          href: edit-load-tests.md
+        - name: Сценарии и тестовые наборы
           items:
+            - name: Изменение сценариев
+              href: edit-load-test-scenarios.md
             - name: Свойства сценариев
               href: load-test-scenario-properties.md
             - name: Тестовый набор
               href: edit-the-test-mix-in-a-load-test-scenario.md
-            - name: Модель тестового набора
-              href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
+            - name: Модели тестового набора
               items:
+                - name: Обзор
+                  href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
                 - name: Изменение моделей тестового набора
                   href: edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md
             - name: Набор браузеров
@@ -148,8 +157,9 @@
             - name: Профиль обработки
               href: edit-think-times-in-load-test-scenarios.md
             - name: Шаблоны нагрузки
-              href: edit-load-patterns-to-model-virtual-user-activities.md
               items:
+                - name: Шаблоны нагрузки
+                  href: edit-load-patterns-to-model-virtual-user-activities.md
                 - name: Свойство времени для увеличения шага
                   href: how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md
             - name: Отсрочки запуска
@@ -160,9 +170,10 @@
               href: how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md
             - name: Распределение задержки шага
               href: how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md
-        - name: Изменение наборов счетчиков
-          href: specify-counter-sets-and-threshold-rules-for-load-testing.md
+        - name: Наборы счетчиков
           items:
+            - name: Изменение наборов счетчиков
+              href: specify-counter-sets-and-threshold-rules-for-load-testing.md
             - name: Добавление счетчиков
               href: how-to-add-counters-to-counter-sets-using-the-load-test-editor.md
             - name: Пользовательские наборы счетчиков
@@ -171,9 +182,10 @@
               href: how-to-manage-counter-sets-using-the-load-test-editor.md
             - name: Добавление правила порога
               href: how-to-add-a-threshold-rule-using-the-load-test-editor.md
-        - name: Изменить параметры запуска
-          href: configure-load-test-run-settings.md
+        - name: Параметры запуска
           items:
+            - name: Изменить параметры запуска
+              href: configure-load-test-run-settings.md
             - name: Свойства параметров запуска
               href: load-test-run-settings-properties.md
             - name: Добавление дополнительных параметров запуска
@@ -181,8 +193,9 @@
             - name: Контекстные параметры
               href: how-to-add-context-parameters-to-a-load-test-run-setting.md
             - name: Параметры ведения журнала
-              href: modify-load-test-logging-settings.md
               items:
+                - name: Изменение параметров ведения журнала
+                  href: modify-load-test-logging-settings.md
                 - name: Максимальный размер журнала
                   href: how-to-specify-the-maximum-size-for-the-log-file.md
                 - name: Тесты со сбоями
@@ -194,8 +207,9 @@
             - name: Частота выборки
               href: how-to-specify-the-sample-rate-for-a-load-test.md
             - name: Выбор параметра запуска
-              href: how-to-select-the-active-run-setting-for-a-load-test.md
               items:
+                - name: Выбор параметра запуска
+                  href: how-to-select-the-active-run-setting-for-a-load-test.md
                 - name: Командная строка
                   href: how-to-select-a-load-test-run-setting-from-the-command-line.md
     - name: Пошаговое руководство. Создание и запуск нагрузочного теста
@@ -211,8 +225,9 @@
         - name: Динамические параметры
           href: fix-non-detectable-dynamic-parameters-in-a-web-performance-test.md
     - name: Контроллеры и агенты тестирования
-      href: configure-test-agents-and-controllers-for-load-tests.md
       items:
+        - name: Обзор
+          href: configure-test-agents-and-controllers-for-load-tests.md
         - name: Требования
           href: test-controller-and-test-agent-requirements-for-load-testing.md
         - name: Управление контроллерами и агентами тестирования
@@ -241,9 +256,10 @@
           href: code-a-custom-extraction-rule-for-a-web-performance-test.md
         - name: Создание пользовательского правила проверки
           href: code-a-custom-validation-rule-for-a-web-performance-test.md
-        - name: Создание пользовательского кода и подключаемых модулей
-          href: create-custom-code-and-plug-ins-for-load-tests.md
+        - name: Пользовательский код и подключаемые модули
           items:
+            - name: Создание пользовательского кода и подключаемых модулей
+              href: create-custom-code-and-plug-ins-for-load-tests.md
             - name: Создание подключаемого модуля веб-теста производительности
               href: how-to-create-a-web-performance-test-plug-in.md
             - name: Создание подключаемого модуля уровня запроса
@@ -256,14 +272,16 @@
               href: how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md
     - name: Диагностика для нагрузочных тестов
       items:
-        - name: Создание адаптера диагностических данных
-          href: create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md
+        - name: Адаптеры диагностических данных
           items:
+            - name: Создание адаптера диагностических данных
+              href: create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md
             - name: Создание
               href: how-to-create-a-diagnostic-data-adapter.md
-        - name: Сбор диагностических данных с помощью параметров тестирования
-          href: collect-diagnostic-information-using-test-settings.md
+        - name: Сбор диагностических данных
           items:
+            - name: Сбор диагностических данных с помощью параметров тестирования
+              href: collect-diagnostic-information-using-test-settings.md
             - name: Создание параметров тестирования
               href: how-to-create-a-test-setting-for-a-distributed-load-test.md
             - name: Настройка профилировщика ASP.NET
@@ -274,21 +292,24 @@
           href: how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md
         - name: Запись экрана и речи
           href: how-to-include-recordings-of-the-screen-and-voice-during-tests.md
-    - name: Анализ результатов
-      href: analyze-load-test-results-using-the-load-test-analyzer.md
+    - name: Результаты испытаний
       items:
+        - name: Анализ результатов
+          href: analyze-load-test-results-using-the-load-test-analyzer.md
         - name: Доступ к результатам
           href: how-to-access-load-test-results-for-analysis.md
         - name: Обзор
           href: load-test-results-summary-overview.md
         - name: Представление "Таблицы"
-          href: analyze-load-test-results-and-errors-in-the-tables-view.md
           items:
+            - name: Представление "Таблицы"
+              href: analyze-load-test-results-and-errors-in-the-tables-view.md
             - name: Время отклика веб-страницы
               href: how-to-view-web-page-response-time-in-a-load-test.md
         - name: Представление диаграмм
-          href: analyze-load-test-results-in-the-graphs-view.md
           items:
+            - name: Представление диаграмм
+              href: analyze-load-test-results-in-the-graphs-view.md
             - name: Добавление и удаление счетчиков
               href: how-to-add-and-delete-counters-on-graphs-in-load-test-results.md
             - name: Создание пользовательских диаграмм
@@ -298,8 +319,9 @@
             - name: Увеличение масштаба
               href: how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md
         - name: Представление "Сведения"
-          href: analyze-load-test-virtual-user-activity-in-the-details-view.md
           items:
+            - name: Представление "Сведения"
+              href: analyze-load-test-virtual-user-activity-in-the-details-view.md
             - name: Анализ активности виртуальных пользователей
               href: how-to-analyze-virtual-user-activity-during-a-load-test.md
             - name: Пошаговое руководство. Использование диаграммы активности
@@ -313,8 +335,9 @@
         - name: Создание отчета в Word
           href: how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md
         - name: Репозитории результатов
-          href: manage-load-test-results-in-the-load-test-results-repository.md
           items:
+            - name: Репозитории результатов
+              href: manage-load-test-results-in-the-load-test-results-repository.md
             - name: Выбор репозитория
               href: how-to-select-a-load-test-results-repository.md
             - name: Импорт результатов
@@ -326,8 +349,9 @@
         - name: Создание надстройки для средства просмотра результатов
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
 - name: Автоматизация тестирования пользовательского интерфейса
-  href: use-ui-automation-to-test-your-code.md
   items:
+    - name: Обзор
+      href: use-ui-automation-to-test-your-code.md
     - name: 'Пошаговое руководство. Создание, изменение и поддержка закодированного теста пользовательского интерфейса'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
     - name: Тестирование приложений UWP с помощью закодированных тестов пользовательского интерфейса
@@ -359,8 +383,9 @@
     - name: Расширение платформы закодированных тестов пользовательского интерфейса
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
 - name: Управление тестовой лабораторией
-  href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:
+    - name: Использование лабораторной среды
+      href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
     - name: Использование функций сборки и выпуска для автоматического тестирования
       href: lab-management/use-build-or-rm-instead-of-lab-management.md
     - name: Установка агентов и контроллеров тестирования

@@ -1,8 +1,8 @@
 - name: Разработка приложений с конструктором рабочих процессов
   items:
-    - name: Разработка приложений с конструктором рабочих процессов
+    - name: Обзор и предварительные требования
       href: developing-applications-with-the-workflow-designer.md
-    - name: Создание проекта рабочего процесса
+    - name: Проекты рабочих процессов
       items:
         - name: Создание проекта рабочего процесса
           href: creating-a-workflow-project.md
@@ -28,11 +28,10 @@
       href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
     - name: Конструкторы действий
       items:
-        - name: Конструкторы действий
-          href: using-the-activity-designers.md
         - name: Конструкторы действия управления потоком
           items:
-            - name: Конструкторы действия управления потоком
+            - name: Общие сведения и справочные материалы
+              displayName: Control flow activity designers
               href: control-flow-activity-designers.md
             - name: Конструктор действия DoWhile
               href: dowhile-activity-designer.md
@@ -56,7 +55,8 @@
               href: while-activity-designer.md
         - name: Конструктор действия блок-схемы
           items:
-            - name: Конструктор действия блок-схемы
+            - name: Общие сведения и справочные материалы
+              displayName: Flow chart activity designers
               href: flowchart-activity-designers.md
             - name: Конструктор действия блок-схемы
               href: flowchart-activity-designer.md
@@ -66,7 +66,8 @@
               href: flowswitch-t-activity-designer.md
         - name: Конструкторы действий конечных автоматов
           items:
-            - name: Конструкторы действий конечных автоматов
+            - name: Общие сведения и справочные материалы
+              displayName: State machine activity designers
               href: state-machine-activity-designers.md
             - name: Конструктор действий StateMachine
               href: statemachine-activity-designer.md
@@ -78,7 +79,8 @@
               href: transition-activity-designer.md
         - name: Конструкторы действий обмена сообщениями
           items:
-            - name: Конструкторы действий обмена сообщениями
+            - name: Общие сведения и справочные материалы
+              displayName: Messaging activity designers
               href: messaging-activity-designers.md
             - name: Конструктор действия CorrelationScope
               href: correlationscope-activity-designer.md
@@ -96,7 +98,8 @@
               href: transactedreceivescope-activity-designer.md
         - name: Конструкторы действий среды выполнения
           items:
-            - name: Конструкторы действий среды выполнения
+            - name: Общие сведения и справочные материалы
+              displayName: Run-time activity designers
               href: runtime-activity-designers.md
             - name: Конструктор действия Persist
               href: persist-activity-designer.md
@@ -104,7 +107,8 @@
               href: terminateworkflow-activity-designer.md
         - name: Конструкторы действий с базовыми функциями
           items:
-            - name: Конструкторы действий с базовыми функциями
+            - name: Общие сведения и справочные материалы
+              displayName: Primitives activity designers
               href: primitives-activity-designers.md
             - name: Конструктор действий Assign
               href: assign-activity-designer.md
@@ -118,7 +122,8 @@
               href: writeline-activity-designer.md
         - name: Конструкторы действий транзакций
           items:
-            - name: Конструкторы действий транзакций
+            - name: Общие сведения и справочные материалы
+              displayName: Transaction activity designers
               href: transaction-activity-designers.md
             - name: Конструктор действия CancellationScope
               href: cancellationscope-activity-designer.md
@@ -132,7 +137,8 @@
               href: transactionscope-activity-designer.md
         - name: Конструкторы действий коллекций
           items:
-            - name: Конструкторы действий коллекций
+            - name: Общие сведения и справочные материалы
+              displayName: Collection activity designers
               href: collection-activity-designers.md
             - name: Конструктор действия AddToCollection<T>
               href: addtocollection-t-activity-designer.md
@@ -144,7 +150,8 @@
               href: removefromcollection-t-activity-designer.md
         - name: Конструкторы действий обработки ошибок
           items:
-            - name: Конструкторы действий обработки ошибок
+            - name: Общие сведения и справочные материалы
+              displayName: Error handling activity designers
               href: error-handling-activity-designers.md
             - name: Конструктор действия Rethrow
               href: rethrow-activity-designer.md
@@ -154,11 +161,12 @@
               href: trycatch-activity-designer.md
         - name: Конструкторы действий миграции
           items:
-            - name: Конструкторы действий миграции
+            - name: Общие сведения и справочные материалы
+              displayName: Migration activity designers
               href: migration-activity-designers.md
             - name: Конструктор действия Interop
               href: interop-activity-designer.md
-    - name: Отладка рабочих процессов
+    - name: Отладка
       items:
         - name: Отладка рабочих процессов
           href: debugging-workflows-with-the-workflow-designer.md
@@ -168,10 +176,8 @@
           href: how-to-debug-xaml-with-the-workflow-designer.md
         - name: Неподдерживаемые сценарии отладки
           href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: справочник по пользовательскому интерфейсу
+    - name: Справочник по пользовательскому интерфейсу
       items:
-        - name: справочник по пользовательскому интерфейсу
-          href: workflow-designer-ui-help.md
         - name: Диалоговое окно "Обзор и выбор типа .NET"
           href: browse-and-select-a-dotnet-type-dialog-box.md
         - name: Диалоговое окно «Корреляция по определению»

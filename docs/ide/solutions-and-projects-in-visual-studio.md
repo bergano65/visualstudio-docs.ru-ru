@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0116a8c4fa6326a1176c132aef59a789daabffca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979655"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461530"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Решения и проекты в Visual Studio
 
@@ -67,6 +67,8 @@ ms.locfileid: "62979655"
 Самый простой способ создать проект — начать с шаблона проекта для приложения или веб-сайта определенного типа. Шаблон проекта состоит из базового набора предварительно созданных файлов кода, файлов конфигурации, активов и параметров. Эти шаблоны доступны в диалоговом окне создания проекта (**Файл** > **Создать** > **Проект**). Дополнительные сведения см. в разделе [Создание проектов и решений](../ide/creating-solutions-and-projects.md).
 
 Вы можете также создать пользовательские шаблоны проектов и элементов. Дополнительные сведения см. в статье [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md).
+
+При создании нового проекта он сохраняется по умолчанию в *%USERPROFILE%\source\repos*. Вы можете настроить это расположение при помощи параметра **Размещение проектов** в разделе **Сервис** > **Параметры** > **Проекты и решения** > **Расположения**. Дополнительные сведения см. в разделе [ страница "Проекты и решения", диалоговое окно "Параметры"](../ide/reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="manage-projects-in-solution-explorer"></a>Управление проектами в обозревателе решений
 

@@ -1,26 +1,27 @@
 ---
 title: Использование Boost.Test для C++
-ms.date: 01/29/2018
+description: Используйте Boost.Test для создания модульных тестов в Visual Studio.
+ms.date: 05/06/2019
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed4d024b7d10f4432c6a2326f07bb068075971f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf962ec4ecade1bb88d9e301d62eb6ab8a5131cf
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970538"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226104"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Использование Boost.Test для C++ в Visual Studio
 
-В **Visual Studio 2017 версии 15.5** и более поздних адаптер теста Boost.Test интегрирован в среду IDE Visual Studio как компонент рабочей нагрузки **Разработка классических приложений на C++**.
+В Visual Studio 2017 и более поздних версиях адаптер теста Boost.Test интегрирован в среду IDE Visual Studio как компонент рабочей нагрузки **Разработка классических приложений на C++**.
 
 ![Адаптер теста для Boost.Test](media/cpp-boost-component.png)
 
-Если у вас не установлена рабочая нагрузка **Разработка классических приложений на C++**, откройте **установщик Visual Studio** и нажмите кнопку **Изменить**. Выберите рабочую нагрузку **Разработка классических приложений на C++**, а затем нажмите кнопку **Изменить**.
+Если у вас не установлена рабочая нагрузка **Разработка классических приложений на C++**, откройте **Установщик Visual Studio**. Выберите рабочую нагрузку **Разработка классических приложений на C++**, а затем нажмите кнопку **Изменить**.
 
 ## <a name="install-boost"></a>Установка Boost
 
@@ -48,7 +49,7 @@ ms.locfileid: "62970538"
 
 Шаблон элемента использует вариант Boost.Test с одним заголовком, но вы можете изменить путь в #include, чтобы указать автономный вариант библиотеки. Дополнительные сведения см. в разделе [Добавление директив include](#add-include-directives).
 
-## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Создание тестового проекта (Visual Studio 2017 версии 15.5)
+## <a name="create-a-test-project"></a>Создание тестового проекта
 
 В Visual Studio 2017 версии 15.5 для Boost.Test нет предварительно настроенного тестового проекта или шаблонов элементов. Поэтому необходимо создать и настроить проект консольного приложения, в котором будут помещаться тесты.
 

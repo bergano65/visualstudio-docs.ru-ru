@@ -12,10 +12,11 @@
 ### [Скачивание программного обеспечения](subscriber-downloads.md)
 #### [Список доступного для скачивания программного обеспечения](software-download-list.md)
 ### [Получение ключей продукта и управление ими](product-keys.md)
+### [Visual Studio с GitHub Enterprise](access-github.md)
+### [Преимущества для подписчиков](subscriber-benefits.md)
 ### Visual Studio Dev Essentials
 #### [Присоединение к программе Visual Studio Dev Essentials](join-dev-essentials.md)
 #### [Выход из программы Visual Studio Dev Essentials](leave-vsde.md)
-### [Преимущества для подписчиков](subscriber-benefits.md)
 ## Использование преимуществ для подписчиков
 ### Инструменты
 #### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md)
@@ -72,6 +73,7 @@
 #### [Использование максимума](maximum-usage.md)
 #### [Подписки, срок действия которых истек](handle-expired-license.md)
 #### [Подписчики, которые используют для входа личную электронную почту](personal-email-sign-ins.md)
+### [Управление Visual Studio в GitHub Enterprise](assign-github.md)
 ## Приобретение подписок на Visual Studio
 ### [Сравнение вариантов подписок](https://visualstudio.microsoft.com/vs/pricing)
 ### Приобретение подписок на облачные службы
