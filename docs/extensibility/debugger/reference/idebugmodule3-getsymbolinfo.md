@@ -83,9 +83,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\symbols\user32.pdb... Файл не найден. ** 
- **c:\winnt\symbols\user32.pdb... Версия не совпадает. ** 
- ** \\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Символы загружены.**
+**c:\symbols\user32.pdb... Файл не найден.**
+**c:\winnt\symbols\user32.pdb... Версия не совпадает.**
+**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Символы загружены.**
 
 ## <a name="see-also"></a>См. также
 
