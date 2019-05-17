@@ -20,9 +20,10 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Средства Entity Framework
       href: entity-data-model-tools-in-visual-studio.md
-    - name: Средства набора данных
-      href: dataset-tools-in-visual-studio.md
+    - name: Наборы данных
       items:
+        - name: Средства набора данных
+          href: dataset-tools-in-visual-studio.md
         - name: Типизированные и нетипизированные наборы данных
           href: typed-vs-untyped-datasets.md
         - name: Общие сведения об адаптере таблиц TableAdapter
@@ -37,18 +38,21 @@
   items:
     - name: Создание базы данных
       href: create-a-sql-database-by-using-a-designer.md
-    - name: Добавление подключений
-      href: add-new-connections.md
+    - name: Подключения
       items:
+        - name: Добавление подключений
+          href: add-new-connections.md
         - name: Сохранение и изменение строк подключения
           href: how-to-save-and-edit-connection-strings.md
         - name: Подключение к данным в базе данных Access
           href: connect-to-data-in-an-access-database-windows-forms.md
     - name: Добавление источников данных .NET
       href: add-new-data-sources.md
-    - name: Использование средств LINQ to SQL
-      href: linq-to-sql-tools-in-visual-studio2.md
+    - name: Инструменты LINQ to SQL
       items:
+        - name: Обзор
+          displayName: LINQ to SQL tools
+          href: linq-to-sql-tools-in-visual-studio2.md
         - name: Изменения типа возвращаемого значения метода DataContext
           href: how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md
         - name: 'Создание методов DataContext, сопоставленных с хранимыми процедурами'
@@ -71,16 +75,17 @@
           href: how-to-turn-pluralization-on-and-off-o-r-designer.md
     - name: Использование средств набора данных
       items:
-        - name: Создание и настройка наборов данных в Visual Studio
-          href: create-and-configure-datasets-in-visual-studio.md
+        - name: Создание наборов данных
           items:
+            - name: Создание и настройка наборов данных
+              href: create-and-configure-datasets-in-visual-studio.md
             - name: Создание связей между наборами данных
               href: relationships-in-datasets.md
-            - name: Создание наборов данных с помощью конструктора наборов данных
+            - name: Создание набора данных с помощью конструктора наборов данных
               href: walkthrough-creating-a-dataset-with-the-dataset-designer.md
             - name: Создание таблиц данных с помощью конструктора наборов данных
               href: walkthrough-creating-a-datatable-in-the-dataset-designer.md
-        - name: адаптеры таблиц TableAdapter
+        - name: Настройка адаптеров таблиц
           items:
             - name: Создание и настройка адаптеров таблиц TableAdapter
               href: create-and-configure-tableadapters.md
@@ -99,8 +104,10 @@
         - name: Проверка данных в наборах данных
           href: validate-data-in-datasets.md
         - name: Сохранение данных обратно в базу данных
-          href: save-data-back-to-the-database.md
           items:
+            - name: Обзор
+              displayName: Save data to database
+              href: save-data-back-to-the-database.md
             - name: Вставка новых записей в базу данных
               href: insert-new-records-into-a-database.md
             - name: Обновление данных с помощью адаптера таблицы TableAdapter
@@ -109,9 +116,10 @@
               href: hierarchical-update.md
             - name: Обработка исключения параллелизма
               href: handle-a-concurrency-exception.md
-            - name: Сохранение данных с помощью транзакции
-              href: save-data-by-using-a-transaction.md
+            - name: Транзакции
               items:
+                - name: Сохранение данных с помощью транзакции
+                  href: save-data-by-using-a-transaction.md
                 - name: Пошаговое руководство. Сохранение данных в транзакции
                   href: save-data-in-a-transaction.md
             - name: Сохранение данных в базе данных (несколько таблиц)
@@ -122,7 +130,7 @@
               href: save-data-with-the-tableadapter-dbdirect-methods.md
             - name: Сохранение набора данных в формате XML
               href: save-a-dataset-as-xml.md
-        - name: Наборы данных запросов
+        - name: Выполнение запросов к наборам данных
           href: query-datasets.md
         - name: n-уровневые приложения
           items:
@@ -132,18 +140,20 @@
               href: add-code-to-datasets-in-n-tier-applications.md
             - name: Добавление кода для объектов TableAdapter в n-уровневых приложениях
               href: add-code-to-tableadapters-in-n-tier-applications.md
-            - name: Разделение наборов данных и TableAdapter на разные проекты
+            - name: Разделение наборов данных и адаптеров таблиц TableAdapter по проектам
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: Привязка элементов управления к источникам данных
-      href: bind-controls-to-data-in-visual-studio.md
+    - name: Элементы управления
       items:
+        - name: Привязка элементов управления к источникам данных
+          href: bind-controls-to-data-in-visual-studio.md
         - name: 'Задание поведения, при котором элемент управления создается при перетаскивании из окна "Источники данных"'
           href: set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md
         - name: Добавление пользовательских элементов управления в окно "Источники данных"
           href: add-custom-controls-to-the-data-sources-window.md
-        - name: Привязка элементов управления WPF к данным
-          href: bind-wpf-controls-to-data-in-visual-studio.md
+        - name: Элементы управления WPF
           items:
+            - name: Привязка элементов управления WPF к данным
+              href: bind-wpf-controls-to-data-in-visual-studio.md
             - name: Привязка элементов управления WPF к набору данных
               href: bind-wpf-controls-to-a-dataset.md
             - name: Привязка элементов управления WPF к службе данных WCF
@@ -154,9 +164,10 @@
               href: display-related-data-in-wpf-applications.md
             - name: Привязка элементов управления к рисункам из базы данных
               href: bind-controls-to-pictures-from-a-database.md
-        - name: Привязка элементов управления Windows Forms к данным
-          href: bind-windows-forms-controls-to-data-in-visual-studio.md
+        - name: Элементы управления Windows Forms
           items:
+            - name: Привязка элементов управления Windows Forms к данным
+              href: bind-windows-forms-controls-to-data-in-visual-studio.md
             - name: Фильтрация и сортировка данных в приложении Windows Forms
               href: filter-and-sort-data-in-a-windows-forms-application.md
             - name: Фиксация внутрипроцессных изменений в элементах управления с привязкой к данным до сохранения данных
@@ -178,8 +189,10 @@
         - name: Настройка способа создания подписи для элемента управления с привязкой к данным в Visual Studio
           href: customize-how-visual-studio-creates-captions-for-data-bound-controls.md
     - name: Службы Windows Communication Foundation и WCF Data Services
-      href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
       items:
+        - name: Общие сведения о WCF в Visual Studio
+          displayName: Windows Communication Foundation Services and WCF Data Services
+          href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
         - name: Работа с концептуальной моделью
           href: working-with-a-conceptual-model-wcf-data-services.md
         - name: Подключение к данным в службе
@@ -207,9 +220,9 @@
         - name: Наследование классов данных
           href: data-class-inheritance-o-r-designer.md
         - name: Сообщения реляционного конструктора объектов
-          href: o-r-designer-messages.md
           items:
             - name: 'Выбранный класс невозможно удалить, потому что он используется как возвращаемый тип одного или нескольких методов DataContext'
+              displayName: O/R Designer messages
               href: the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md
             - name: Строка подключения содержит учетные данные с текстовым паролем и не использует встроенную систему безопасности
               href: the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md

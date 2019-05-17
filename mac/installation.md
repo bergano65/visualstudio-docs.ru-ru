@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b8fdceb1f4cfcfc54f9e37aea3a93f765976a3
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983001"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615458"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Установка Visual Studio для Mac 2019
 
@@ -82,7 +82,7 @@ ms.locfileid: "62983001"
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Приложения .NET Core, веб-приложения ASP.NET Core, разработка игр Unity
 
-Другие рабочие нагрузки описаны [на этой странице](/visualstudio/mac/workloads).
+Другие рабочие нагрузки описаны [на этой странице](workloads.md).
 
 ## <a name="related-video"></a>Связанные видео
 

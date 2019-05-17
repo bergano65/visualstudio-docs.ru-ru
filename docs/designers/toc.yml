@@ -1,12 +1,15 @@
 - name: Разработка пользовательских интерфейсов
-  href: designing-user-interfaces.md
   items:
-    - name: "Проектирование XAML в Visual\_Studio"
-      href: designing-xaml-in-visual-studio.md
+    - name: Ориентация средства
+      href: designing-user-interfaces.md
+    - name: XAML
       items:
+        - name: "Проектирование XAML в Visual\_Studio"
+          href: designing-xaml-in-visual-studio.md
         - name: Конструктор XAML
-          href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
           items:
+            - name: Обзор
+              href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
             - name: Работа с элементами
               href: working-with-elements-in-xaml-designer.md
             - name: Упорядочение объектов в контейнеры макета
@@ -22,8 +25,9 @@
             - name: "Ошибки и предупреждения\_XAML"
               href: xaml-errors-warnings.md
         - name: Blend для Visual Studio
-          href: creating-a-ui-by-using-blend-for-visual-studio.md
           items:
+            - name: Обзор
+              href: creating-a-ui-by-using-blend-for-visual-studio.md
             - name: Вставка элементов управления и изменение их поведения
               href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
             - name: 'Вставка изображений, видео- и аудиоклипов'
@@ -37,8 +41,9 @@
             - name: Отображение данных
               href: display-data-in-blend.md
             - name: Сочетания клавиш и клавиши-модификаторы
-              href: keyboard-shortcuts-and-modifier-keys-in-blend.md
               items:
+                - name: Обзор
+                  href: keyboard-shortcuts-and-modifier-keys-in-blend.md
                 - name: Сочетания клавиш
                   href: keyboard-shortcuts-in-blend.md
                 - name: Клавиши-модификаторы монтажной панели
@@ -50,23 +55,24 @@
             - name: "Продукты и службы для\_Blend со специальными возможностями"
               href: accessibility-products-and-services-blend.md
     - name: Windows Presentation Foundation (WPF)
-      href: getting-started-with-wpf.md
       items:
+        - name: Начало работы
+          href: getting-started-with-wpf.md
         - name: Общие сведения о WPF
           href: introduction-to-wpf.md
-        - name: "Привязка данных WPF с помощью LINQ to\_XML"
-          href: wpf-data-binding-with-linq-to-xml-overview.md
+        - name: 'привязка данных,'
           items:
+            - name: "Привязка данных WPF с помощью LINQ to\_XML"
+              href: wpf-data-binding-with-linq-to-xml-overview.md
             - name: "Динамические свойства LINQ to\_XML"
-              href: linq-to-xml-dynamic-properties.md
               items:
+                - name: Обзор
+                  href: linq-to-xml-dynamic-properties.md
                 - name: Динамические свойства класса XAttribute
-                  href: xattribute-class-dynamic-properties.md
                   items:
                     - name: Value (динамическое свойство XAttribute)
                       href: value-xattribute-dynamic-property.md
                 - name: "Динамические свойства класса\_XElement"
-                  href: xelement-class-dynamic-properties.md
                   items:
                     - name: Attribute (динамическое свойство XElement)
                       href: attribute-xelement-dynamic-property.md
@@ -80,40 +86,43 @@
                       href: value-xelement-dynamic-property.md
                     - name: Xml (динамическое свойство XElement)
                       href: xml-xelement-dynamic-property.md
-                - name: Пример
-                  href: wpf-data-binding-using-linq-to-xml-example.md
+                - name: Примеры
                   items:
+                    - name: Привязка данных WPF к XML с помощью LINQ
+                      href: wpf-data-binding-using-linq-to-xml-example.md
                     - name: Сборка и запуск примера LinqToXmlDataBinding
                       href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
                     - name: Пошаговое руководство. Привязка данных LINQ to XML
                       href: walkthrough-linqtoxmldatabinding-example.md
-                      items:
-                        - name: Исходный код L2DBForm.xaml
-                          href: l2dbform-xaml-source-code.md
-                        - name: Исходный код L2DBForm.xaml.cs
-                          href: l2dbform-xaml-cs-source-code.md
-    - name: Работа с трехмерными ресурсами для игр и приложений
-      href: working-with-3-d-assets-for-games-and-apps.md
+                    - name: Исходный код L2DBForm.xaml
+                      href: l2dbform-xaml-source-code.md
+                    - name: Исходный код L2DBForm.xaml.cs
+                      href: l2dbform-xaml-cs-source-code.md
+    - name: Трехмерные ресурсы
       items:
-        - name: Работа с текстурами и изображениями
-          href: working-with-textures-and-images.md
+        - name: Работа с трехмерными ресурсами для игр и приложений
+          href: working-with-3-d-assets-for-games-and-apps.md
+        - name: Практическое руководство. Использование трехмерных ресурсов в игре или приложении
+          href: using-3-d-assets-in-your-game-or-app.md
+        - name: Текстуры и изображения
           items:
+            - name: Работа с текстурами и изображениями
+              href: working-with-textures-and-images.md
             - name: редактор изображений
               href: image-editor.md
             - name: Примеры редактора изображений
-              href: image-editor-examples.md
               items:
                 - name: Создание простейшей текстуры
                   href: how-to-create-a-basic-texture.md
                 - name: Создание и изменение MIP-уровней
                   href: how-to-create-and-modify-mip-levels.md
-        - name: Работа с трехмерными моделями
-          href: working-with-3-d-models.md
+        - name: Трехмерные модели
           items:
+            - name: Работа с трехмерными моделями
+              href: working-with-3-d-models.md
             - name: Редактор моделей
               href: model-editor.md
             - name: Примеры редактора моделей
-              href: model-editor-examples.md
               items:
                 - name: Создание простейшей трехмерной модели
                   href: how-to-create-a-basic-3-d-model.md
@@ -123,14 +132,16 @@
                   href: how-to-model-3-d-terrain.md
                 - name: Применение шейдера к трехмерной модели
                   href: how-to-apply-a-shader-to-a-3-d-model.md
-        - name: Работа с шейдерами
-          href: working-with-shaders.md
+        - name: Шейдеры
           items:
+            - name: Работа с шейдерами
+              href: working-with-shaders.md
             - name: Конструктор шейдеров
               href: shader-designer.md
             - name: Узлы конструктора шейдеров
-              href: shader-designer-nodes.md
               items:
+                - name: Обзор
+                  href: shader-designer-nodes.md
                 - name: Константные узлы
                   href: constant-nodes.md
                 - name: Узлы параметров
@@ -144,7 +155,6 @@
                 - name: Узлы фильтров
                   href: filter-nodes.md
             - name: Примеры конструктора шейдеров
-              href: shader-designer-examples.md
               items:
                 - name: Создание простейшего шейдера цвета
                   href: how-to-create-a-basic-color-shader.md
@@ -162,8 +172,7 @@
                   href: walkthrough-creating-a-realistic-3-d-billiard-ball.md
                 - name: Экспорт шейдера
                   href: how-to-export-a-shader.md
-        - name: Использование трехмерных ресурсов в игре или приложении
-          href: using-3-d-assets-in-your-game-or-app.md
+        - name: Экспорт текстур
           items:
             - name: 'Экспорт текстуры, содержащей MIP-карты'
               href: how-to-export-a-texture-that-contains-mipmaps.md

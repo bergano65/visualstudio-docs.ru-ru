@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960637"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226044"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Создание приложения Vue.js с помощью инструментов Node.js для Visual Studio
 
@@ -71,10 +71,10 @@ Vue.js предоставляет официальный интерфейс ко
 1. Откройте Visual Studio и создайте новый проект.
 
     ::: moniker range=">=vs-2019"
-    Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите клавиши **CTRL+Q**, чтобы открыть поле поиска, введите **asp.net** и выберите **Создать проект веб-приложения ASP.NET Core**. В появившемся диалоговом окне выберите **Создать**.
+    Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите клавиши **CTRL+Q**, чтобы открыть поле поиска, введите **asp.net** и выберите **Создать проект веб-приложения ASP.NET Core**. В появившемся диалоговом окне введите имя **client-app**, а затем выберите команду **Создать**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    В верхней строке меню выберите **Файл** > **Создать** > **Проект**. На левой панели диалогового окна **Новый проект** разверните узел **Visual C#** и выберите **Интернет**. В средней области выберите **Веб-приложение ASP.NET Core** и нажмите кнопку **ОК**.
+    В верхней строке меню выберите **Файл** > **Создать** > **Проект**. На левой панели диалогового окна **Новый проект** разверните узел **Visual C#** и выберите **Интернет**. В средней области выберите **Веб-приложение ASP.NET Core**, присвойте ему имя **client-app** и нажмите кнопку **ОК**.
     ::: moniker-end
 
     Если шаблон проекта **Веб-приложение ASP.NET Core** отсутствует, сначала установите рабочую нагрузку **ASP.NET и разработка веб-приложений** и рабочую нагрузку разработки **NET Core**. Чтобы установить рабочую нагрузку, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Создать проект** (выберите пункты **Файл** > **Создать** > **Проект**). Запускается Visual Studio Installer. Выберите необходимые рабочие нагрузки.
@@ -100,14 +100,14 @@ Vue.js предоставляет официальный интерфейс ко
 
 1. Перейдите в командную строку и измените текущий каталог на корневую папку проекта.
 
-1. Введите `vue init webpack ClientApp` и выполните дальнейшие действия, чтобы указать дополнительные данные.
+1. Введите `vue init webpack client-app` и выполните дальнейшие действия, чтобы указать дополнительные данные.
 
     > [!NOTE]
     > Для преобразования файлов *.vue* необходимо использовать WebPack или аналогичную платформу с загрузчиком. С помощью TypeScript и Visual Studio выполнить компиляцию файлов *.vue* нельзя. Это же касается и объединения — с помощью TypeScript нельзя преобразовать модули ES2015 (т. е. операторы `import` и `export`) в единый итоговый файл *.js* для загрузки в браузер. Снова-таки, воспользуйтесь WebPack. Сделать это из среды Visual Studio с помощью MSBuild можно с помощью шаблона Visual Studio. Сейчас готовые шаблоны ASP.NET для разработки Vue.js не предоставляются.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Изменение конфигурации webpack для вывода скомпилированных файлов в wwwroot
 
-* Откройте файл *./ClientApp/config/index.js* и измените `build.index` и `build.assetsRoot` на путь wwwroot:
+* Откройте файл *./client-app/config/index.js* и измените `build.index` и `build.assetsRoot` на путь wwwroot:
 
     ```js
     // Template for index.html
@@ -117,15 +117,15 @@ Vue.js предоставляет официальный интерфейс ко
     assetsRoot: path.resolve(__dirname, '../../wwwroot'),
     ```
 
-#### <a name="indicate-the-project-to-build-the-clientapp-each-time-that-a-build-is-triggered"></a>Указание проекта для сборки ClientApp при каждом запуске сборки
+#### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Указание проекта для сборки клиентского приложения при каждом запуске сборки
 
 1. В Visual Studio перейдите в раздел **Проект** > **Свойства** > **События сборки**.
 
-1. В **командной строке событий перед сборкой** введите `npm --prefix ./ClientApp run build`.
+1. В **командной строке событий перед сборкой** введите `npm --prefix ./client-app run build`.
 
 #### <a name="configure-webpacks-output-module-names"></a>Настройка имен модулей вывода webpack
 
-* Откройте файл *./ClientApp/build/webpack.base.conf.js* и добавьте следующие свойства для выходного свойства:
+* Откройте файл *./client-app/build/webpack.base.conf.js* и добавьте следующие свойства для выходного свойства:
 
     ```js
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
@@ -138,7 +138,7 @@ Vue.js предоставляет официальный интерфейс ко
 
 1. Перейдите в командную строку и измените текущий каталог на корневую папку проекта.
 
-1. Введите `vue create ClientApp` и выберите **Выбрать компоненты вручную**.
+1. Введите `vue create client-app` и выберите **Выбрать компоненты вручную**.
 
 1. Выберите **Typescript**, а затем другие необходимые параметры.
 
@@ -146,11 +146,11 @@ Vue.js предоставляет официальный интерфейс ко
 
 #### <a name="configure-a-vuejs-project-for-typescript"></a>Настройка проекта Vue.js для TypeScript
 
-1. Откройте файл *./ClientApp/tsconfig.json* и добавьте `noEmit:true` в параметры компилятора.
+1. Откройте файл *./client-app/tsconfig.json* и добавьте `noEmit:true` в параметры компилятора.
 
     Этот параметр позволяет избежать загромождения проекта при каждой сборке в Visual Studio.
 
-1. Затем создайте файл *vue.config.js* в *./ClientApp/* и добавьте следующий код.
+1. Затем создайте файл *vue.config.js* в *./client-app/* и добавьте следующий код.
 
     ```js
     module.exports = {
@@ -169,7 +169,7 @@ Vue.js предоставляет официальный интерфейс ко
 
 #### <a name="build-with-vue-cli-30"></a>Сборка с vue-cli 3.0
 
-Неизвестная проблема с vue-cli 3.0 препятствует автоматизации сборки. Каждый раз при попытке обновления папки wwwroot выполняйте команду `npm run build` в папке ClientApp.
+Неизвестная проблема с vue-cli 3.0 препятствует автоматизации сборки. Каждый раз при попытке обновления папки wwwroot выполняйте команду `npm run build` в папке client-app.
 
 ## <a name="limitations"></a>Ограничения
 
@@ -179,7 +179,7 @@ Vue.js предоставляет официальный интерфейс ко
 * TypeScript не распознает *VUE*-файлы как модули. Вам нужен файл, который содержит подобный код, чтобы сообщить TypeScript, как выглядят *VUE*-файлы (шаблон vue-cli 3.0 уже включает этот файл).
 
     ```js
-    // ./ClientApp/vue-shims.d.ts
+    // ./client-app/vue-shims.d.ts
     declare module "*.vue" {
         import Vue from "vue";
         export default Vue;

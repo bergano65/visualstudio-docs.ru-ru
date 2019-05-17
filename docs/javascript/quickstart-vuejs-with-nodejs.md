@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226502"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Краткое руководство. Создание первого веб-приложения Visual Studio.js с помощью Visual Studio
 
@@ -59,12 +59,12 @@ ms.locfileid: "62840619"
 1. Создайте новый проект.
 
     ::: moniker range=">=vs-2019"
-    Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите **CTRL + Q**, чтобы открыть поле поиска, введите **Basic Vue.js** и выберите **Простое веб-приложение Vue.js** (JavaScript или TypeScript). В появившемся диалоговом окне выберите **Создать**.
+    Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите **CTRL + Q**, чтобы открыть поле поиска, введите **Basic Vue.js** и выберите **Простое веб-приложение Vue.js** (JavaScript или TypeScript). В появившемся диалоговом окне введите имя **basic-vuejs**, а затем выберите команду **Создать**.
 
     ![Шаблон Vue.js](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** разверните узел **JavaScript** или **TypeScript** и выберите **Node.js**. В средней области выберите **Простое веб-приложение Vue.js** и нажмите кнопку **ОК**.
+    В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** разверните узел **JavaScript** или **TypeScript** и выберите **Node.js**. В средней области выберите **Простое веб-приложение Vue.js**, введите **basic-vuejs** и нажмите кнопку **ОК**.
 
     ![Шаблон Vue.js](../javascript/media/vuejs-template.png)
     ::: moniker-end

@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783959"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461619"
 ---
-# <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Настройка контроллеров и агентов тестирования для нагрузочного тестирования
+# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Обзор контроллеров и агентов тестирования для нагрузочного тестирования
 
 Visual Studio может использовать физические компьютеры или виртуальные машины для создания симулированной нагрузки для приложения. Эти машины должны быть установлены как единый тестовый контроллер и один или несколько тестовых агентов. Контроллер тестирования и агенты тестирования можно использовать для создания нагрузки большей, чем способен создать отдельный компьютер.
 

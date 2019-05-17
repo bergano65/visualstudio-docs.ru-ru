@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: facbbf5903d683ea3a13bdd875dfe2b6c63b6367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
+ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786403"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64850755"
 ---
 # <a name="import-or-export-installation-configurations"></a>Импорт или экспорт конфигураций установки
 
@@ -48,7 +48,7 @@ ms.locfileid: "62786403"
 
    ![Экспорт конфигурации с карты продукта в установщике Visual Studio](../install/media/vs-2019/vs-installer-export-config.png)
 
-1. Найдите или введите расположение, в котором нужно сохранить файл .vconfig, и выберите **Просмотреть сведения**.
+1. Найдите или введите расположение, в котором нужно сохранить VSCONFIG-файл, и выберите команду **Просмотреть сведения**.
 
    ![Экспорт конфигурации из установщика Visual Studio](../install/media/vs-2019/export-configuration-confirmation.png)
 
@@ -62,7 +62,7 @@ ms.locfileid: "62786403"
 
 1. На карте продукта нажмите кнопку **Дополнительно** и выберите **Импортировать конфигурацию**.
 
-1. Найдите файл .vconfig для импорта и выберите **Просмотреть сведения**.
+1. Найдите VSCONFIG-файл для импорта и выберите команду **Просмотреть сведения**.
 
 1. Убедитесь, что выбраны нужные рабочие нагрузки и компоненты, и нажмите кнопку **Закрыть**.
 
