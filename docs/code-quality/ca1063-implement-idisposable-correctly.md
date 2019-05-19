@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788559"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842010"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063. Правильно реализуйте IDisposable
 
@@ -90,7 +90,7 @@ ms.locfileid: "62788559"
 
 Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
 
-```
+```ini
 dotnet_code_quality.ca1063.api_surface = private, internal
 ```
 

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 114b44ec566554c81f5caf3b8ac474f9c5a75c07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b66e28804e85b04b1492a20828c42a9b5efd3cf8
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806473"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841040"
 ---
 # <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012. Проверьте код на наличие уязвимостей к внедрению регулярных выражений
 
@@ -40,7 +40,7 @@ ms.locfileid: "62806473"
 > Это правило не может отслеживать данные между сборками. Например если одна сборка считывает входные данные запроса HTTP, а затем передает его в другую сборку, которая создает регулярное выражение, это правило не будет выдавать предупреждение.
 
 > [!NOTE]
-> Нет настраиваемое ограничение на глубину это правило будет анализировать поток данных между вызовами метода. См. в разделе [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) по настройке используется ограничение в `.editorconfig` файлов.
+> Нет настраиваемое ограничение на глубину это правило будет анализировать поток данных между вызовами метода. См. в разделе [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) по настройке ограничение в файле EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 

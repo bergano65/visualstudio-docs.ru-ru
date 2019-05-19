@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94666390cc49f365b9f036b076bcd97d68d4edb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: abe9b53a02f5a2c12b734c793557c69868a973e8
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806645"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841504"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217. Не помечайте перечисляемые типы с помощью FlagsAttribute
 
@@ -56,7 +56,7 @@ ms.locfileid: "62806645"
 
 Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
 
-```
+```ini
 dotnet_code_quality.ca2217.api_surface = private, internal
 ```
 

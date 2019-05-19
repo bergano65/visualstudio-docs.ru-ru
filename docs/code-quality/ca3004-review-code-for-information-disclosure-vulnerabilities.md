@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 82f763d9a6b1ec27975aa80054456a6bbbaeaa2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e8c8c58a01b9527df472907c8b55a9d175dd91d
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541273"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841613"
 ---
 # <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004. Проверьте код на наличие уязвимостей к раскрытию информации
 
@@ -40,7 +40,7 @@ ms.locfileid: "62541273"
 > Это правило не может отслеживать данные между сборками. Например если одна сборка перехватывает исключение и затем передает его в другую сборку, которая выдает исключение, это правило не будет выдавать предупреждение.
 
 > [!NOTE]
-> Нет настраиваемое ограничение на глубину это правило будет анализировать поток данных между вызовами метода. См. в разделе [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) по настройке используется ограничение в `.editorconfig` файлов.
+> Нет настраиваемое ограничение на глубину это правило будет анализировать поток данных между вызовами метода. См. в разделе [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) по настройке ограничение в файле EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
@@ -77,7 +77,7 @@ public partial class WebForm : System.Web.UI.Page
 ```vb
 Imports System
 
-Partial Public Class WebForm 
+Partial Public Class WebForm
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, eventArgs As EventArgs)
@@ -116,7 +116,7 @@ public partial class WebForm : System.Web.UI.Page
 ```vb
 Imports System
 
-Partial Public Class WebForm 
+Partial Public Class WebForm
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, eventArgs As EventArgs)
