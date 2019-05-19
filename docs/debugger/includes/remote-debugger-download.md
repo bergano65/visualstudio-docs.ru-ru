@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 22db75783734a695ded937d8e6b93431568acd5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fec32bf187d629c5fd99ce27eb17a61db39d3873
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902895"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65839723"
 ---
 На удаленном устройстве или сервер, который требуется отладить на, а не компьютера с Visual Studio Загрузите и установите правильную версию инструментов удаленной отладки по ссылкам в следующей таблице.
 
@@ -24,7 +24,7 @@ ms.locfileid: "62902895"
 
 |Версия|Ссылка|Примечания|
 |-|-|-|
-|Visual Studio 2019|[Инструменты удаленной отладки](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2019)|Совместимость со всеми версиями Visual Studio 2019. Скачайте версию, которая соответствует операционной системе устройства (x 86, x64 или ARM64). В Windows Server, см. в разделе [разблокировать на загрузку файла](../../debugger/remote-debugging-unblock-file-download.md) загрузить инструменты удаленной отладки.|
+|Visual Studio 2019|[Инструменты удаленной отладки](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)|Совместимость со всеми версиями Visual Studio 2019. Скачайте версию, которая соответствует операционной системе устройства (x 86, x64 или ARM64). В Windows Server, см. в разделе [разблокировать на загрузку файла](../../debugger/remote-debugging-unblock-file-download.md) загрузить инструменты удаленной отладки.|
 |Visual Studio 2017|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Совместимость со всеми версиями Visual Studio 2017. Скачайте версию, которая соответствует операционной системе устройства (x 86, x64 или ARM64). В Windows Server, см. в разделе [разблокировать на загрузку файла](../../debugger/remote-debugging-unblock-file-download.md) загрузить инструменты удаленной отладки.|
 |Visual Studio 2015|[Инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Инструменты удаленной отладки для Visual Studio 2015 доступны из My.VisualStudio.com. При появлении присоединиться к бесплатным [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) программы или войдите с помощью идентификатор вашей подписки Visual Studio. В Windows Server, см. в разделе [разблокировать на загрузку файла](../../debugger/remote-debugging-unblock-file-download.md) загрузить инструменты удаленной отладки.|
 |Visual Studio 2013|[Инструменты удаленной отладки](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Загрузить страницу в документации по Visual Studio 2013|

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b743fa6c7c3189cd062328ab003f9eabe7874de9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 603dc08650ca5e54cac3f590f5d32de98e3ae5da
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541328"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841460"
 ---
 # <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001. Проверьте код на наличие уязвимостей к внедрению кода SQL
 
@@ -40,7 +40,7 @@ ms.locfileid: "62541328"
 > Это правило не может отслеживать данные между сборками. Например если одна сборка считывает входные данные запроса HTTP, а затем передает его в другую сборку, которая выполняет команду SQL, это правило не будет выдавать предупреждение.
 
 > [!NOTE]
-> Нет настраиваемое ограничение на глубину это правило будет анализировать поток данных между вызовами метода. См. в разделе [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) по настройке используется ограничение в `.editorconfig` файлов.
+> Нет настраиваемое ограничение на глубину это правило будет анализировать поток данных между вызовами метода. См. в разделе [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) по настройке ограничение в файле EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
