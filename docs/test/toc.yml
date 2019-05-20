@@ -80,8 +80,6 @@
           href: unit-tests-for-generic-methods.md
         - name: "Настройка модульных тестов для предыдущей версии .NET\_Framework"
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
-        - name: Пример проекта для создания модульных тестов
-          href: sample-project-for-creating-unit-tests.md
     - name: "Модульные тесты для кода\_C/C++"
       items:
         - name: "Написание модульных тестов для кода\_C/C++"
@@ -119,6 +117,7 @@
 - name: Live Unit Testing
   items:
     - name: Вступление
+      displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
     - name: Новые возможности в Live Unit Testing
       href: live-unit-testing-whats-new.md
@@ -147,6 +146,7 @@
             - name: Модели тестового набора
               items:
                 - name: Обзор
+                  displayName: Test mix models
                   href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
                 - name: Изменение моделей тестового набора
                   href: edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md
@@ -196,8 +196,6 @@
               items:
                 - name: Изменение параметров ведения журнала
                   href: modify-load-test-logging-settings.md
-                - name: Максимальный размер журнала
-                  href: how-to-specify-the-maximum-size-for-the-log-file.md
                 - name: Тесты со сбоями
                   href: how-to-specify-if-test-failures-are-saved-to-test-logs.md
             - name: Хранилище сведений о синхронизации
@@ -227,6 +225,7 @@
     - name: Контроллеры и агенты тестирования
       items:
         - name: Обзор
+          displayName: Test controllers and test agents
           href: configure-test-agents-and-controllers-for-load-tests.md
         - name: Требования
           href: test-controller-and-test-agent-requirements-for-load-testing.md
@@ -348,16 +347,18 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: Создание надстройки для средства просмотра результатов
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: Автоматизация тестирования пользовательского интерфейса
+- name: Автоматизация пользовательского интерфейса с помощью закодированного теста пользовательского интерфейса
   items:
     - name: Обзор
+      displayName: Coded UI test
       href: use-ui-automation-to-test-your-code.md
     - name: 'Пошаговое руководство. Создание, изменение и поддержка закодированного теста пользовательского интерфейса'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
     - name: Тестирование приложений UWP с помощью закодированных тестов пользовательского интерфейса
       href: test-uwp-app-with-coded-ui-test.md
-    - name: "Назначение уникального свойства автоматизации элементам управления\_UWP"
-      href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
+      items:
+        - name: "Назначение уникального свойства автоматизации элементам управления\_UWP"
+          href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
       href: using-html5-controls-in-coded-ui-tests.md
     - name: Создание управляемого данными закодированного теста пользовательского интерфейса
