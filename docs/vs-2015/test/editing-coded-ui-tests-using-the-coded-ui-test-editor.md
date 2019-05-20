@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ca980b9f51b5c66b5ddfde18c0fb464c73faf99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416506"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686575"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Изменение закодированных тестов пользовательского интерфейса с помощью редактора закодированных тестов пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "63416506"
   
  Для изменения свойств действия пользовательского интерфейса, в области **Действие пользовательского интерфейса** разверните метод теста, который содержит действие пользовательского интерфейса, свойства для которого необходимо изменить, и выделите действие пользовательского интерфейса, а затем измените свойства с помощью окна свойств.  
   
- Например, если сервер недоступен и имеется действие пользовательского интерфейса, связанное с веб-браузером, сообщающее **Перейти на веб-страницу <http://Contoso1/default.aspx’>**, можно изменить URL-адрес на `‘ http://Contoso2/default.aspx’`.  
+ Например, если сервер недоступен и имеется действие пользовательского интерфейса, связанное с веб-браузером, сообщающее **Перейти на веб-страницу <http://Contoso1/default.aspx’>**, можно изменить URL-адрес на `‘http://Contoso2/default.aspx’`.  
   
  ![Свойства элемента управления](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Изменение свойств элемента управления  
@@ -219,5 +219,5 @@ ms.locfileid: "63416506"
  [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
  [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Создание управляемого данными закодированного теста пользовательского интерфейса](../test/creating-a-data-driven-coded-ui-test.md)   
- [Создание закодированного теста пользовательского интерфейса из существующей записи действий](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
+ [Создание закодированного теста пользовательского интерфейса из существующей записи действий](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [Пошаговое руководство: создание, изменение и поддержка закодированного теста пользовательского интерфейса](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
