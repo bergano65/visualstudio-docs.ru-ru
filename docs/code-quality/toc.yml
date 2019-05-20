@@ -103,12 +103,10 @@
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Наборы правил для пакетов анализатора
           href: analyzer-rule-sets.md
-        - name: Наборы правил для управляемого кода
-          items:
-            - name: Наборы правил для управляемого кода
-              href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: "Настройка анализа кода для веб-приложения\_ASP.NET"
-              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+        - name: Настройка наборов правил для статического анализа кода
+          href: how-to-configure-code-analysis-for-a-managed-code-project.md
+        - name: "Настройка анализа кода для веб-приложения\_ASP.NET"
+          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: "Наборы правил для кода\_C++"
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
         - name: Создание настраиваемого набора правил
