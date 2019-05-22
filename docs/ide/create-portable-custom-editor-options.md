@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794139"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845995"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -20,7 +20,13 @@ ms.locfileid: "62794139"
 
 Параметры EditorConfig поддерживаются различными редакторами кода и интегрированными средами разработки, включая Visual Studio. Этот файл является переносимым компонентом, который передается вместе с кодом и позволяет применять стили написания кода даже вне среды Visual Studio.
 
-При добавлении файла EditorConfig в проект в Visual Studio форматирование имеющегося кода не изменяется, если не отформатировать документ (**Правка** > **Дополнительно** > **Форматировать документ** или клавиши **CTRL**+**K**, **CTRL**+**D** в профиле по умолчанию). Тем не менее все новые строки кода форматируются в соответствии с параметрами, заданными в файле EditorConfig. Вы можете выбрать, какие параметры EditorConfig команда **Форматировать документ** будет применять к [странице параметров **форматирования**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+При добавлении файла EditorConfig в проект в Visual Studio форматирование имеющегося кода не изменяется, если не отформатировать документ (**Правка** > **Дополнительно** > **Форматировать документ** или клавиши **CTRL**+**K**, **CTRL**+**D** в профиле по умолчанию). Тем не менее все новые строки кода форматируются в соответствии с параметрами, заданными в файле EditorConfig.
+
+::: moniker range="vs-2017"
+
+Вы можете выбрать, какие параметры EditorConfig команда **Форматировать документ** будет применять к [странице параметров **форматирования**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
+::: moniker-end
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [EditorConfig в Visual Studio для Mac](/visualstudio/mac/editorconfig).
@@ -73,7 +79,7 @@ ms.locfileid: "62794139"
 
 1. Измените файл по своему усмотрению, например:
 
-   ```EditorConfig
+   ```ini
    root = true
 
    [*.{cs,vb}]
@@ -104,7 +110,7 @@ ms.locfileid: "62794139"
 
 Если необходимо переопределить только некоторые параметры, просто укажите их в файле *EDITORCONFIG*. Переопределяются только те свойства, которые явно перечислены в файле более низкого уровня. Другие параметры из файлов *EDITORCONFIG* более высокого уровня будут применяться по-прежнему. Чтобы к этой части базы кода _не_ применялись параметры из _любых_ файлов *EDITORCONFIG* более высокого уровня, добавьте свойство ```root=true``` в файл *EDITORCONFIG* более низкого уровня:
 
-```EditorConfig
+```ini
 # top-most EditorConfig file
 root = true
 ```
@@ -135,7 +141,7 @@ Visual Studio позволяет редактировать файлы *EDITORCO
 
 Добавьте в проект новый файл *EDITORCONFIG* с приведенным ниже содержимым. Параметр `[*.cs]` означает, что это изменение применяется только к файлам кода на C# в проекте.
 
-```EditorConfig
+```ini
 # Top-most EditorConfig file
 root = true
 
