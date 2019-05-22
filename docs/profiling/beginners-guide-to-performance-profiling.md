@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36d280cd62420b9805d0a4359df1b72ae452236d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 950e37fd1f1f42f534522c09a8322311c06cebd6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777812"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688514"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Измерение производительности приложения посредством анализа использования ЦП
 Средства профилирования Visual Studio можно использовать для анализа проблем с производительностью в приложении. Эта процедура демонстрирует работу с вкладкой **Загрузка ЦП** средств диагностики для получения данных о производительности для приложения. Средства диагностики поддерживаются для разработки приложений .NET в Visual Studio, включая ASP.NET, и для разработки машинного кода или кода C++.

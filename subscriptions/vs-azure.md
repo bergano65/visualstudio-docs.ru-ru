@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о том, как активировать преимущество Azure, входящее в вашу подписку Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948492"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685926"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 
@@ -102,7 +102,7 @@ ms.locfileid: "62948492"
 
 Если в вашей подписке установлена предельная сумма расходов и до истечения срока действия не предпринимались никакие действия, то подписки Azure будут отключены. Чтобы перевести подписку в режим с оплатой по мере использования и продолжить ее использование, добавьте платежное средство и [отключите предельную сумму расходов](/azure/billing/billing-spending-limit/).
 
-Если вы предпочитаете не продолжать эту подписку Azure для Visual Studio, вы можете переместить ресурсы, такие как виртуальные машины и базы данных, в другую подписку Azure и [отменить](http://azure.microsoft.com/support/cancel-account/) эту подписку в любое время.
+Если вы предпочитаете не продолжать эту подписку Azure для Visual Studio, вы можете переместить ресурсы, такие как виртуальные машины и базы данных, в другую подписку Azure и [отменить](https://azure.microsoft.com/support/cancel-account/) эту подписку в любое время.
 
 Если вы считаете, что получили это сообщение по ошибке, обратитесь в [службу поддержки клиентов Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 
