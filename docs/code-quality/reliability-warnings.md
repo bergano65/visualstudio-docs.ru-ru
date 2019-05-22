@@ -14,17 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74c1a5202b05b3ffe6f9b6c5b24804fb259287c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 009422eaf9ac81af6e8f9d48732655b2528c85a0
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825342"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976149"
 ---
-# <a name="reliability-warnings"></a>предупреждения надежности
-Предупреждения надежности поддерживают безотказность библиотек и приложений, таких как правильное использование памяти и потоков.
+# <a name="reliability-warnings"></a>Предупреждения, связанные с надежностью
 
-## <a name="in-this-section"></a>В этом разделе
+Предупреждения надежности поддерживают безотказность библиотек и приложений, таких как правильное использование памяти и потоков. Правила надежности включают:
 
 |Правило|Описание|
 |----------|-----------------|
@@ -34,3 +33,4 @@ ms.locfileid: "62825342"
 |[CA2003: Не следует обрабатывать нити как потоки](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Управляемый поток обрабатывается как поток Win32.|
 |[CA2004: Удалите вызов GC. KeepAlive](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|При переходе к использованию SafeHandle удалите все вызовы метода GC. KeepAlive (объект). В этом случае классы не следует вызывать сборки Мусора. Для их обработки KeepAlive, при условии, что они используют не метод завершения, а класс SafeHandle для завершения работы операционной системы.|
 |[CA2006: Используйте SafeHandle для инкапсуляции машинных ресурсов](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|Использование указателя IntPtr в управляемом коде может указывать на потенциальную проблему безопасности и надежности. Необходимо изучить все случаи использования указателя IntPtr, чтобы определить, не следует ли использовать вместо него класс SafeHandle или другую подобную технологию.|
+|[CA2007: Не следует напрямую ожидать задачу](../code-quality/ca2007-do-not-directly-await-task.md)|Асинхронный метод [ожидает](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> напрямую.|
