@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a2c93e032175ce556d5504ed8b3f57dcf619a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d108613c7a557c189a2c42880a5618b42e0bd3b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842708"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209388"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Получает значение, на которую указывает как ряд последовательных байтах.
@@ -42,22 +45,18 @@ int GetBytes(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwStart`
+## <a name="parameters"></a>Параметры
+`dwStart`\
+[in] Указывает смещение в байтах от начала объекта.
 
- [in] Указывает смещение в байтах от начала объекта.
+`dwCount`\
+[in] Число байтов для получения.
 
- `dwCount`
+`pBytes`\
+[in, out] Массив, который заполняется значение как ряд последовательных байтах, начиная с заданного смещения из объекта, на которые указывают.
 
- [in] Число байтов для получения.
-
- `pBytes`
-
- [in, out] Массив, который заполняется значение как ряд последовательных байтах, начиная с заданного смещения из объекта, на которые указывают.
-
- `pdwBytes`
-
- [out] Возвращает число фактически извлеченных байтов.
+`pdwBytes`\
+[out] Возвращает число фактически извлеченных байтов.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.

@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f52205cd530e638146abe423890d6477fe62b45d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 524598a4fdac3e9b06a91623d6ff2d37a1919ffa
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457347"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212087"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 Извлекает значение метрики, заданную ее именем.
@@ -44,21 +44,17 @@ private int GetMetricDword(
 ```
 
 ## <a name="parameters"></a>Параметры
- `pszType`\
+`pszType`\
+[in] Тип метрики.
 
- [in] Тип метрики.
+`guidSection`\
+[in] Уникальный идентификатор раздела.
 
- `guidSection`\
+`pszMetric`\
+[in] Имя метрики.
 
- [in] Уникальный идентификатор раздела.
-
- `pszMetric`\
-
- [in] Имя метрики.
-
- `pdwValue`\
-
- [out] Возвращает значение метрики.
+`pdwValue`\
+[out] Возвращает значение метрики.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e401e009cd4119704e72dec09614ec013aa9eee0
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: cbd7bd7655769668ce2a279150f444fd196235fb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223548"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212603"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 Возвращает номер строки значение указанного свойства или поля.
@@ -43,17 +43,14 @@ int GetValueDisplayStringCount (
 ```
 
 ## <a name="parameters"></a>Параметры
- `displayKind`\
+`displayKind`\
+[in] Значение из [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) перечисления.
 
- [in] Значение из [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) перечисления.
+`propertyOrField`\
+[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, который представляет свойство или поле.
 
- `propertyOrField`\
-
- [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, который представляет свойство или поле.
-
- `pcelt`\
-
- [out] Возвращает число строк, значение для отображения.
+`pcelt`\
+[out] Возвращает число строк, значение для отображения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

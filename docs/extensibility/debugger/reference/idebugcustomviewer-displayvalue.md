@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8734d97dfc8bcd7be2b12ce657071597deaea7a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c374cfa79b91d70895f94be4f1c3f28c5ac4c02
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921624"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205162"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Этот метод вызывается для отображения указанного значения.
@@ -42,22 +45,18 @@ int DisplayValue(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `hwnd`
+## <a name="parameters"></a>Параметры
+`hwnd`\
+[in] Родительское окно
 
- [in] Родительское окно
+`dwID`\
+[in] Идентификатор для пользовательских средств просмотра, которые поддерживают более одного типа.
 
- `dwID`
+`pHostServices`\
+[in] Зарезервировано. Всегда задано значение null.
 
- [in] Идентификатор для пользовательских средств просмотра, которые поддерживают более одного типа.
-
- `pHostServices`
-
- [in] Зарезервировано. Всегда задано значение null.
-
- `pDebugProperty`
-
- [in] Интерфейс, который может использоваться для получения значения для отображения.
+`pDebugProperty`\
+[in] Интерфейс, который может использоваться для получения значения для отображения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

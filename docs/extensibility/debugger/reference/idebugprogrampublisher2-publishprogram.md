@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: fb2fc0da42bf3895f6eefac96441dde2fa6eede9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457864"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203712"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Этот метод выполняет программу для отладчиков (DEs) и диспетчер отладки сеансов.
@@ -44,17 +44,14 @@ int PublishProgram(
 ```
 
 ## <a name="parameters"></a>Параметры
- `Engines`\
+`Engines`\
+[in] Массив идентификаторов GUID для DEs, которые можно запустить или присоединить к этой программе.
 
- [in] Массив идентификаторов GUID для DEs, которые можно запустить или присоединить к этой программе.
+`szFriendlyName`\
+[in] Понятное имя для программы (отображается в меню и диалоговых окон, показываемых пользователю).
 
- `szFriendlyName`\
-
- [in] Понятное имя для программы (отображается в меню и диалоговых окон, показываемых пользователю).
-
- `pDebuggeeInterface`\
-
- [in] `IUnknown` интерфейс для программы (это значение используется как файл cookie для уникальной идентификации программы; это же значение используется для отмены «публикации» программа)
+`pDebuggeeInterface`\
+[in] `IUnknown` интерфейс для программы (это значение используется как файл cookie для уникальной идентификации программы; это же значение используется для отмены «публикации» программа)
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

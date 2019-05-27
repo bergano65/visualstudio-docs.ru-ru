@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03ac1d4f979c6b6ce504160216d42f055820d69c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a8c3d6a3509e9b415b2c006e16eb5056eb79d065
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457813"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203925"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 Получает системный идентификатор процесса для процесса, размещающего программы.
@@ -40,9 +40,8 @@ int GetHostPid ( 
 ```
 
 ## <a name="parameters"></a>Параметры
- `pdwHostPid`\
-
- [out] Возвращает идентификатор системы процесс размещения.
+`pdwHostPid`\
+[out] Возвращает идентификатор системы процесс размещения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

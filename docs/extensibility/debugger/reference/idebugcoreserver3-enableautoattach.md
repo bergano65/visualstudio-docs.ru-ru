@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c1bf5f210d9b37b35d43a393a25b1c9df44a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8a1b714856811ccd9b8e95d074cfc95740e27e5f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875890"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205522"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Включает автоматическое присоединение для указанного отладчики.
@@ -42,22 +45,18 @@ int EnableAutoAttach(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `rgguidSpecificEngines`
+## <a name="parameters"></a>Параметры
+`rgguidSpecificEngines`\
+[in] Массив идентификаторов GUID для каждого ядра отладки, чтобы пометить как автоматическое присоединение.
 
- [in] Массив идентификаторов GUID для каждого ядра отладки, чтобы пометить как автоматическое присоединение.
+`celtSpecificEngines`\
+[in] Число ядер, указанный в `rgguidSpecificEngines`.
 
- `celtSpecificEngines`
+`pszStartPageUrl`\
+[in] Начальный URL-адрес для использования при присоединении автоматически.
 
- [in] Число ядер, указанный в `rgguidSpecificEngines`.
-
- `pszStartPageUrl`
-
- [in] Начальный URL-адрес для использования при присоединении автоматически.
-
- `pbstrSessionID`
-
- [out] Идентификатор сеанса, который был подключен автоматически.
+`pbstrSessionID`\
+[out] Идентификатор сеанса, который был подключен автоматически.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Один код ошибки- `E_AUTO_ATTACH_NOT_REGISTERED`, который указывает, что фабрика класса auto-attach не был зарегистрирован.

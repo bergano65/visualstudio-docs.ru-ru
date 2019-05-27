@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e800d8d57d34c0ed99cb3cfa9a3f6a7b871a034d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4a6b6a516e9827a05eb7eb2c36bee408ad3a5587
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458604"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212126"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 Извлекает метрики файла вычислителя выражений, заданной имя или метрики.
@@ -44,21 +44,17 @@ private int GetEEMetricFile(
 ```
 
 ## <a name="parameters"></a>Параметры
- `guidLang`\
+`guidLang`\
+[in] Уникальный идентификатор языка программирования.
 
- [in] Уникальный идентификатор языка программирования.
+`guidVendor`\
+[in] Уникальный идентификатор поставщика.
 
- `guidVendor`\
+`pszMetric`\
+[in] Имя метрики.
 
- [in] Уникальный идентификатор поставщика.
-
- `pszMetric`\
-
- [in] Имя метрики.
-
- `pbstrValue`\
-
- [out] Возвращает содержимое файла метрик в виде строки.
+`pbstrValue`\
+[out] Возвращает содержимое файла метрик в виде строки.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

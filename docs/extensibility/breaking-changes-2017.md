@@ -9,13 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-monikerRange: vs-2017
-ms.openlocfilehash: e7363a0779721e4fb36106d6ee77324c341517ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26f0facec34c04e5b228e346d1559ffe4f179fa1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926839"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212241"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Изменения в расширяемости Visual Studio 2017
 
@@ -64,7 +63,7 @@ Visual Studio 2017 появилась VSIX v3 формата (версия 3) д
 
 * Сборки, которые только были установлены в глобальный кэш СБОРОК:
 
-   Теперь эти сборки устанавливаются в <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> или *\Common7\IDE\PrivateAssemblies [INSTALLDIR]*. Эти папки являются частью пути пробы процесс Visual Studio.
+   Теперь эти сборки устанавливаются в <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> или *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* . Эти папки являются частью пути пробы процесс Visual Studio.
 
 * Сборки, которые были установлены в путь без проверки и в глобальный кэш СБОРОК:
 
@@ -106,8 +105,8 @@ Visual Studio 2017 появилась VSIX v3 формата (версия 3) д
 
 * Ранее установленные Visual Studio много разделов реестра в системы **HKEY_LOCAL_MACHINE** и **HKEY_CURRENT_USER** кустов в Visual Studio конкретного ключа:
 
-  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Разделы реестра, созданные MSI-установщики и расширений на уровне компьютера.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Разделы реестра, созданные Visual Studio для хранения параметров конкретного пользователя.
+  * **HKLM\Software\Microsoft\VisualStudio\{Version}** : Разделы реестра, созданные MSI-установщики и расширений на уровне компьютера.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}** : Разделы реестра, созданные Visual Studio для хранения параметров конкретного пользователя.
   * **HKCU\Software\Microsoft\VisualStudio\{Version}_Config**: Копия выше разделе Visual Studio HKLM, а также разделы реестра, перенесенных слиянием с *.pkgdef* файлы с расширениями.
 
 * Чтобы снизить влияние на реестр, Visual Studio теперь использует [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) функции для хранения разделов реестра в закрытый двоичный файл в разделе *[VSAPPDATA]\privateregistry.bin*. Только очень небольшое количество клавиш для Visual Studio определенного остаются в системном реестре.

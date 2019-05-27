@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cfdfb05d45996e87ea749dffa89915a175d9274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ad964c4f9759368d6d687386274e221bb7cf73a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920702"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212473"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Этот метод запускает процесс с помощью модуля отладки (DE).
@@ -60,58 +63,45 @@ int LaunchSuspended(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszMachine`
+## <a name="parameters"></a>Параметры
+`pszMachine`\
+[in] Имя компьютера, в котором для запуска процесса. Используйте значение null, чтобы указать локальный компьютер.
 
- [in] Имя компьютера, в котором для запуска процесса. Используйте значение null, чтобы указать локальный компьютер.
+`pPort`\
+[in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) интерфейс, представляющий порт, который программа будет запускаться в.
 
- `pPort`
+`pszExe`\
+[in] Имя исполняемого файла для запуска.
 
- [in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) интерфейс, представляющий порт, который программа будет запускаться в.
+`pszArgs`\
+[in] Аргументы для передачи в исполняемый файл. Может иметь значение null, если аргументы не используются.
 
- `pszExe`
+`pszDir`\
+[in] Имя рабочего каталога, используемого исполняемого объекта. Может иметь значение null, если нет рабочего каталога является обязательным.
 
- [in] Имя исполняемого файла для запуска.
+`bstrEnv`\
+[in] Блок среды нулем строк, следуют дополнительные символ конца строки NULL.
 
- `pszArgs`
+`pszOptions`\
+[in] Параметры для исполняемого файла.
 
- [in] Аргументы для передачи в исполняемый файл. Может иметь значение null, если аргументы не используются.
+`dwLaunchFlags`\
+[in] Указывает [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) для сеанса.
 
- `pszDir`
+`hStdInput`\
+[in] Дескриптор альтернативного входного потока. Может быть равен 0, если перенаправление не требуется.
 
- [in] Имя рабочего каталога, используемого исполняемого объекта. Может иметь значение null, если нет рабочего каталога является обязательным.
+`hStdOutput`\
+[in] Дескриптор Альтернативный выходной поток. Может быть равен 0, если перенаправление не требуется.
 
- `bstrEnv`
+`hStdError`\
+[in] Обработка в поток вывода альтернативного ошибки. Может быть равен 0, если перенаправление не требуется.
 
- [in] Блок среды нулем строк, следуют дополнительные символ конца строки NULL.
+`pCallback`\
+[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, получающий события отладчика.
 
- `pszOptions`
-
- [in] Параметры для исполняемого файла.
-
- `dwLaunchFlags`
-
- [in] Указывает [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) для сеанса.
-
- `hStdInput`
-
- [in] Дескриптор альтернативного входного потока. Может быть равен 0, если перенаправление не требуется.
-
- `hStdOutput`
-
- [in] Дескриптор Альтернативный выходной поток. Может быть равен 0, если перенаправление не требуется.
-
- `hStdError`
-
- [in] Обработка в поток вывода альтернативного ошибки. Может быть равен 0, если перенаправление не требуется.
-
- `pCallback`
-
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, получающий события отладчика.
-
- `ppDebugProcess`
-
- [out] Возвращает результат в виде [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, представляющий запущенный процесс.
+`ppDebugProcess`\
+[out] Возвращает результат в виде [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, представляющий запущенный процесс.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

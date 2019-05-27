@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8663e9e7d8c0428b362bbdbb099141ac86d01ee1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 63cda29c6f21cda89742ba218808bc76ffae627a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918085"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204491"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
 Получает имя порта.
@@ -36,10 +39,9 @@ int GetPortName( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pbstrPortName`
-
- [out] Возвращает имя порта.
+## <a name="parameters"></a>Параметры
+`pbstrPortName`\
+[out] Возвращает имя порта.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

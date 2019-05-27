@@ -1,8 +1,8 @@
 ---
 title: Импорт или экспорт конфигураций установки
 titleSuffix: ''
-description: Из этой статьи вы узнаете, как использовать функцию конфигурации импорта и экспорта в Visual Studio
-ms.date: 04/19/2019
+description: Узнайте, как экспортировать конфигурацию установки в VSCONFIG-файл, чтобы поделиться с другими пользователями, а также импортировать его, чтобы клонировать.
+ms.date: 05/18/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64850755"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65849037"
 ---
 # <a name="import-or-export-installation-configurations"></a>Импорт или экспорт конфигураций установки
 
-Вы можете настроить Visual Studio в своей организации с помощью файла конфигурации установки. Для этого просто экспортируйте сведения о рабочей нагрузке и компоненте в файл .vsconfig с помощью установщика Visual Studio. Затем вы сможете импортировать конфигурацию в новые или существующие установки.
+Вы можете настроить Visual Studio в своей организации с помощью файлов конфигурации установки. Для этого просто экспортируйте сведения о рабочей нагрузке и компоненте в файл .vsconfig с помощью установщика Visual Studio. Затем вы сможете импортировать конфигурацию в новые или существующие установки или поделиться с другими пользователями.
 
 Ниже описывается порядок действий.
 
