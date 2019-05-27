@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95a06a283b417432fd755f100f8c2e68a0325571
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: bb1121786c07be83dac480474a5b3b934779beec
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225885"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198867"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 Этот метод возвращает новый объект для визуализатора. Этот метод всегда создает новый объект из существующего объекта.
@@ -40,9 +40,8 @@ int GetNewObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>Параметры
- `ppObject`\
-
- [out] Новый объект.
+`ppObject`\
+[out] Новый объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
