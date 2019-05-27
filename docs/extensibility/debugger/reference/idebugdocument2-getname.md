@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ef243afd607a565e2c7a8e6f557f0b9906c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1e653f7f735be43f2edeb4bd3c7935d3c89a9e58
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875721"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204753"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 Возвращает имя документа в одну из нескольких форм.
@@ -38,14 +41,12 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `gnType`
+## <a name="parameters"></a>Параметры
+`gnType`\
+[in] Значение из [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) перечисление, определяющее тип имени для возврата.
 
- [in] Значение из [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) перечисление, определяющее тип имени для возврата.
-
- `pbstrFileName`
-
- [out] Возвращает строку, содержащую имя документа.
+`pbstrFileName`\
+[out] Возвращает строку, содержащую имя документа.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

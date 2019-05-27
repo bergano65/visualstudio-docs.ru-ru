@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82b2e6da51b695bdc6fd2fd031a1f9decf484daa
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 78060933846d60d1e8721cda676ac837ea2bff06
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457659"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200184"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Получает список пользовательских средств просмотра, связанных с данным свойством.
@@ -47,20 +47,16 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Параметры
 `celtSkip`\
-
- [in] Количество представлений, чтобы пропустить.
+[in] Количество представлений, чтобы пропустить.
 
 `celtRequested`\
-
- [in] Количество средств просмотра для получения (также указывает размер `rgViewers` массива).
+[in] Количество средств просмотра для получения (также указывает размер `rgViewers` массива).
 
 `rgViewers`\
-
- [in, out] Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур для заполнения.
+[in, out] Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур для заполнения.
 
 `pceltFetched`\
-
- [out] Возвращает фактическое количество средств просмотра.
+[out] Возвращает фактическое количество средств просмотра.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

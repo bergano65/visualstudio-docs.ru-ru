@@ -1,7 +1,7 @@
 ---
 title: Установка и использование в среде, защищенной брандмауэром или прокси-сервером
 description: Узнайте, какие URL-адреса доменов, порты и протоколы может потребоваться внести в список разрешений или открыть, если в организации применяется брандмауэр или прокси-сервер.
-ms.date: 03/30/2019
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974713"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976219"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером
 
@@ -37,7 +37,7 @@ ms.locfileid: "62974713"
 
 ## <a name="install-visual-studio"></a>Установка Visual Studio
 
-### <a name="urls-to-whitelist"></a>URL-адреса для добавления в список разрешений
+### <a name="urls-to-add-to-an-allow-list"></a>URL-адреса, добавляемые в список разрешений
 
 С учетом того, что Visual Studio Installer скачивает файлы из различных доменов и их серверов загрузки, ниже приведены URL-адреса доменов, которые нужно добавить в список разрешений как доверенные с помощью пользовательского интерфейса или скриптов развертывания.
 
@@ -79,7 +79,7 @@ ms.locfileid: "62974713"
 
 ## <a name="use-visual-studio-and-azure-services"></a>Использование Visual Studio и служб Azure
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>URL-адреса для добавления в список разрешений, а также порты и протоколы для открытия
+### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>URL-адреса для добавления в список разрешений, а также порты и протоколы для открытия
 
 Ниже приведены URL-адреса доменов, которые нужно добавить в список разрешений, а также порты и протоколы, которые нужно открыть, чтобы обеспечить доступ к всем необходимым компонентам при использовании Visual Studio или служб Azure, расположенных за брандмауэром или прокси-сервером.
 

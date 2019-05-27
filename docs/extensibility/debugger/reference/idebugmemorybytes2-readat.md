@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f787ad06b4e7d612007b6448287b5062ae1b0efd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a8b93aa895588f743f4cc7c6b6adfa207590936d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873315"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210557"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Считывает последовательность байтов, начиная с заданного расположения.
@@ -45,26 +48,21 @@ int ReadAt(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pStartContext`
+## <a name="parameters"></a>Параметры
+`pStartContext`\
+[in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объект, который указывает, где начинается чтение байтов.
 
- [in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объект, который указывает, где начинается чтение байтов.
+`dwCount`\
+[in] Число байтов для чтения. Также определяет длину `rgbMemory` массива.
 
- `dwCount`
+`rgbMemory`\
+[in, out] Массив, заполненный байты непосредственного чтения.
 
- [in] Число байтов для чтения. Также определяет длину `rgbMemory` массива.
+`pdwRead`\
+[out] Возвращает число фактически считанных смежных байтов.
 
- `rgbMemory`
-
- [in, out] Массив, заполненный байты непосредственного чтения.
-
- `pdwRead`
-
- [out] Возвращает число фактически считанных смежных байтов.
-
- `pdwUnreadable`
-
- [in, out] Возвращает число байтов, может быть прочитан. Может иметь значение null, если клиент не хочет число байтов, может быть прочитан.
+`pdwUnreadable`\
+[in, out] Возвращает число байтов, может быть прочитан. Может иметь значение null, если клиент не хочет число байтов, может быть прочитан.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.

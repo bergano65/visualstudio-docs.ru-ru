@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a93d909fbc8882c5864097a2a36c36749327a2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3504ba7ec668e243b72536b940f0779a5c0b728d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843138"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200875"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Этот метод преобразует строку выражения проанализированное выражение.
@@ -46,30 +49,24 @@ int Parse(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `upstrExpression`
+## <a name="parameters"></a>Параметры
+`upstrExpression`\
+[in] Строка выражения, который необходимо проанализировать.
 
- [in] Строка выражения, который необходимо проанализировать.
+`dwFlags`\
+[in] Коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, которые определяют, как выражение для синтаксического анализа.
 
- `dwFlags`
+`nRadix`\
+[in] Основание системы счисления для использования для интерпретации все числовые данные.
 
- [in] Коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, которые определяют, как выражение для синтаксического анализа.
+`pbstrError`\
+[out] Возвращает ошибку в виде удобочитаемого текста.
 
- `nRadix`
+`pichError`\
+[out] Возвращает позицию символа начинается ошибка в строке выражения.
 
- [in] Основание системы счисления для использования для интерпретации все числовые данные.
-
- `pbstrError`
-
- [out] Возвращает ошибку в виде удобочитаемого текста.
-
- `pichError`
-
- [out] Возвращает позицию символа начинается ошибка в строке выражения.
-
- `ppParsedExpression`
-
- [out] Возвращает проанализированное выражение в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.
+`ppParsedExpression`\
+[out] Возвращает проанализированное выражение в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
