@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 080af74ee83c5a2816cc5e7a89f29c59d2b75c7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ac19bd3ed139b15744e408b7114c6879a17e2c61
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842999"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199869"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 Получает поле или переменная (если таковые имеются), может резервного свойства, представленного этим объектом.
@@ -36,10 +39,9 @@ int GetBackingFieldForProperty(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppObject`
-
- [out] [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) описывающий резервное поле.
+## <a name="parameters"></a>Параметры
+`ppObject`\
+[out] [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) описывающий резервное поле.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.

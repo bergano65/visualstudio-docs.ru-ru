@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1276a1c1a076c624ffcfd78c3b7f9d09df2a6e01
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b354c7c31f4633fd307f54954c5d5115436097d0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224022"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207351"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Этот метод сопоставляет позицию документов в массив адресов отладки.
@@ -46,21 +46,17 @@ int GetAddressesFromPosition( 
 ```
 
 ## <a name="parameters"></a>Параметры
- `pDocPos`\
+`pDocPos`\
+[in] Позиция документа.
 
- [in] Позиция документа.
+`fStatmentOnly`\
+[in] Если значение равно TRUE, ограничивает адреса отладки для одной инструкции.
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out] Возвращает перечислитель для начала отладки адреса, связанные с этой инструкции или строке.
 
- [in] Если значение равно TRUE, ограничивает адреса отладки для одной инструкции.
-
- `ppEnumBegAddresses`\
-
- [out] Возвращает перечислитель для начала отладки адреса, связанные с этой инструкции или строке.
-
- `ppEnumEndAddresses`\
-
- [out] Возвращает [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) перечислитель для конечного адреса отладки, связанные с этой инструкции или строке.
+`ppEnumEndAddresses`\
+[out] Возвращает [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) перечислитель для конечного адреса отладки, связанные с этой инструкции или строке.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

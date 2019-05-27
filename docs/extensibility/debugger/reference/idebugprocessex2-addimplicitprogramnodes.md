@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6203b12defbe70d3807508953d85f39ff725a746
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 411b0b40d6c47f240472c82f727d955dda8df2df
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917608"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204083"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 Этот метод добавляет узел программы для каждого ядра отладки (DE) указан.
@@ -40,18 +43,15 @@ int AddImplicitProgramNodes(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `guidLaunchingEngine`
+## <a name="parameters"></a>Параметры
+`guidLaunchingEngine`\
+[in] `GUID` Из Развернутой, будет использоваться для запуска программ (и предполагается, что добавлять свои собственные узлы программы).
 
- [in] `GUID` Из Развернутой, будет использоваться для запуска программ (и предполагается, что добавлять свои собственные узлы программы).
+`rgguidSpecificEngines`\
+[in] Массив `GUID`s из DEs, какие программы будут добавлены узлы.
 
- `rgguidSpecificEngines`
-
- [in] Массив `GUID`s из DEs, какие программы будут добавлены узлы.
-
- `celtSpecificEngines`
-
- [in] Число `GUID`s в `rgguidSpecificEngines` массива.
+`celtSpecificEngines`\
+[in] Число `GUID`s в `rgguidSpecificEngines` массива.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

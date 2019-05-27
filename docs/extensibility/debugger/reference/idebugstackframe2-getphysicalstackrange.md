@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ac507c2eac00d025a36bed3e4c3461a6b3fab2f0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457279"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212866"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Получает представление зависит от компьютера диапазона физических адресов, связанных с кадром стека.
@@ -42,13 +42,11 @@ int GetPhysicalStackRange ( 
 ```
 
 ## <a name="parameters"></a>Параметры
- `paddrMin`\
+`paddrMin`\
+[out] Возвращает наименьший физический адрес, связанный с данным кадром стека.
 
- [out] Возвращает наименьший физический адрес, связанный с данным кадром стека.
-
- `paddrMax`\
-
- [out] Возвращает наибольший физический адрес, связанный с данным кадром стека.
+`paddrMax`\
+[out] Возвращает наибольший физический адрес, связанный с данным кадром стека.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

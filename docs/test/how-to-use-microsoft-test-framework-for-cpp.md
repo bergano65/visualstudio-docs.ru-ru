@@ -1,18 +1,18 @@
 ---
 title: Использование платформы модульного тестирования Майкрософт для C++
-ms.date: 05/01/2019
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461481"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934486"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Использование платформы модульного тестирования Майкрософт для C++ в Visual Studio
 
@@ -30,16 +30,16 @@ ms.locfileid: "65461481"
 
    1. В **обозревателе решений** щелкните правой кнопкой мыши узел проекта тестируемой программы, а затем выберите пункты **Свойства** > **Свойства конфигурации** > **Каталоги VC++**.
 
-   2. Щелкните стрелку вниз в следующих строках и выберите **\<Изменить>** :
+   2. Щелкните стрелку вниз в следующих строках и выберите **\<Изменить>** . Добавьте следующие пути:
 
       | Каталог | Свойство. |
       |-| - |
-      | **Каталоги включаемых файлов** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
-      | **Каталоги библиотек** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
+      | **Каталоги включаемых файлов** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
+      | **Каталоги библиотек** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
 
 2. Добавьте файл модульного тестирования С++:
 
-   - Щелкните правой кнопкой мыши узел проекта в **обозревателе решений** и последовательно выберите **Добавить** > **Новый элемент** > **Модульный тест C++**.
+   - Щелкните правой кнопкой мыши узел проекта в **обозревателе решений** и последовательно выберите **Добавить** > **Новый элемент** > **Файл C++ (.cpp)** .
 
 ## <a name="write-the-tests"></a>Написание тестов
 

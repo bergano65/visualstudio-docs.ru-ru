@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f255d509d69741dd99c9f6dac3ce298d7e5fa0bd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921676"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205296"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Извлекает настраиваемый атрибут с заданным именем.
@@ -39,18 +42,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pszCustomAttributeName`
+## <a name="parameters"></a>Параметры
+`pszCustomAttributeName`\
+[in] Имя настраиваемого атрибута.
 
- [in] Имя настраиваемого атрибута.
-
-`ppBlob`
-
+`ppBlob`\
 [in, out] Массив байтов, которые содержат данные настраиваемого атрибута.
 
-`pdwLen`
-
- [out] Длина в байтах `ppBlob` параметра.
+`pdwLen`\
+[out] Длина в байтах `ppBlob` параметра.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успеха возвращает `S_OK`. Если настраиваемый атрибут не существует, возвращает `S_FALSE`. В противном случае возвращается код ошибки.

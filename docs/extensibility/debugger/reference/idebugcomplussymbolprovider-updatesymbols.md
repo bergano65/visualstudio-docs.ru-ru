@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da13452e125e2cf6452a1e2e2ab617b38de7ee28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f01683a568617b56783dd7a9acd6ec9fd00ba1e4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922477"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206042"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 Обновляет отладочные символы в память из указанного потока данных.
@@ -39,18 +42,15 @@ int UpdateSymbols (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`ulAppDomainID`
+## <a name="parameters"></a>Параметры
+`ulAppDomainID`\
+[in] Идентификатор домена приложения.
 
- [in] Идентификатор домена приложения.
+`guidModule`\
+[in] Уникальный идентификатор модуля.
 
-`guidModule`
-
- [in] Уникальный идентификатор модуля.
-
-`pUpdateStream`
-
- [in] Поток данных, содержащий обновленные отладочные символы.
+`pUpdateStream`\
+[in] Поток данных, содержащий обновленные отладочные символы.
 
 ## <a name="example"></a>Пример
 В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.

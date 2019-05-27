@@ -1,95 +1,96 @@
 ---
 title: IDebugComPlusSymbolProvider::UnloadSymbols | Документация Майкрософт
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - UnloadSymbols
 - IDebugComPlusSymbolProvider::UnloadSymbols
 ms.assetid: 53e3ddc1-ab47-4097-8fef-b26e5504b37a
-caps.latest.revision: 10
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a4b5d47f16126b49a3e3d8f01977a0c757011c34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1a17e758ce92f72f5bb7cb68c23668ac61c04101
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876547"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206064"
 ---
 # <a name="idebugcomplussymbolproviderunloadsymbols"></a>IDebugComPlusSymbolProvider::UnloadSymbols
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Выгружает отладочные символы для указанного модуля из памяти.
 
-Выгружает отладочные символы для указанного модуля из памяти.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp#  
-HRESULT UnloadSymbols(  
-   ULONG32 ulAppDomainID,  
-   GUID    guidModule  
-);  
-```  
-  
-```csharp  
-int UnloadSymbols(  
-   uint ulAppDomainID,  
-   Guid guidModule  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `ulAppDomainID`  
- [in] Идентификатор домена приложения.  
-  
- `guidModule`  
- [in] Уникальный идентификатор модуля.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.  
-  
-```cpp#  
-HRESULT CDebugSymbolProvider::UnloadSymbols(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule  
-)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<CModule> pmodule;  
-    Module_ID idModule(ulAppDomainID, guidModule);  
-  
-    METHOD_ENTRY( CDebugSymbolProvider::UnloadSymbols );  
-  
-#if DEBUG  
-  
-    DebugVerifyModules();  
-#endif  
-  
-    IfFailGo( GetModule( idModule, &pmodule ) );  
-  
-#if DEBUG  
-  
-    DebugVerifyModules();  
-#endif  
-  
-    RemoveModule( pmodule );  
-    pmodule->Cleanup();  
-  
-Error:  
-#if DEBUG  
-  
-    DebugVerifyModules();  
-#endif  
-  
-    METHOD_EXIT( CDebugSymbolProvider::UnloadSymbols, hr );  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>См. также  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT UnloadSymbols(
+    ULONG32 ulAppDomainID,
+    GUID    guidModule
+);
+```
+
+```csharp
+int UnloadSymbols(
+    uint ulAppDomainID,
+    Guid guidModule
+);
+```
+
+## <a name="parameters"></a>Параметры
+`ulAppDomainID`\
+[in] Идентификатор домена приложения.
+
+`guidModule`\
+[in] Уникальный идентификатор модуля.
+
+## <a name="return-value"></a>Возвращаемое значение
+В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="example"></a>Пример
+В следующем примере показано, как реализовать этот метод для **CDebugSymbolProvider** объекта, который предоставляет [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) интерфейс.
+
+```cpp
+HRESULT CDebugSymbolProvider::UnloadSymbols(
+    ULONG32 ulAppDomainID,
+    GUID guidModule
+)
+{
+    HRESULT hr = S_OK;
+    CComPtr<CModule> pmodule;
+    Module_ID idModule(ulAppDomainID, guidModule);
+
+    METHOD_ENTRY( CDebugSymbolProvider::UnloadSymbols );
+
+#if DEBUG
+
+    DebugVerifyModules();
+#endif
+
+    IfFailGo( GetModule( idModule, &pmodule ) );
+
+#if DEBUG
+
+    DebugVerifyModules();
+#endif
+
+    RemoveModule( pmodule );
+    pmodule->Cleanup();
+
+Error:
+#if DEBUG
+
+    DebugVerifyModules();
+#endif
+
+    METHOD_EXIT( CDebugSymbolProvider::UnloadSymbols, hr );
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>См. также
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8eee7a9225a54bb5ca965845b66aaa9adcdbe05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3a9c10449d324b33d601840ed24d5f8db9a4b1ae
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875296"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199147"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
 Уведомляет отладочный пакет о том, что текст была введена в документ.
@@ -38,14 +41,12 @@ int onInsert( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pos`
+## <a name="parameters"></a>Параметры
+`pos`\
+[in] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая указывает, где был вставлен текст.
 
- [in] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая указывает, где был вставлен текст.
-
- `dwNumToInsert`
-
- [in] Указывает количество символов текста, которые были вставлены.
+`dwNumToInsert`\
+[in] Указывает количество символов текста, которые были вставлены.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb90dbb44b274e84c7cc22d09249b26b6ee491f1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 86f4aaa20fb034af15895c79a372bc4f2c47fc87
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458278"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207065"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 Извлекает идентификатор домена приложения, указанного адреса отладки.
@@ -41,13 +41,11 @@ int GetAppIDFromAddress(
 ```
 
 ## <a name="parameters"></a>Параметры
- `pAddress`\
+`pAddress`\
+[in] Отладка адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
 
- [in] Отладка адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
-
- `pAppID`\
-
- [out] Идентификатор домена приложения.
+`pAppID`\
+[out] Идентификатор домена приложения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 307b6d25f2e45276ead7c4b360ae191a01059104
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c41c9fda7cc4a169c905dae799ec6cb58c2e3c9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876973"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203173"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
 Уведомляет отладчик (DE), ли отменить в текущем положении кода или просто продолжить выполнение.
@@ -36,10 +39,9 @@ int CanStop ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `fCanStop`
-
- [in] Ненулевое значение (`TRUE`) Если DE остановки в текущее расположение кода; в противном случае — нуль (`FALSE`).
+## <a name="parameters"></a>Параметры
+`fCanStop`\
+[in] Ненулевое значение (`TRUE`) Если DE остановки в текущее расположение кода; в противном случае — нуль (`FALSE`).
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

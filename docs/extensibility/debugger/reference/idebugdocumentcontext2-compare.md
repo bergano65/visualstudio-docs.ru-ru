@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1416092661ee26bff773ea1a439c241a0f5c5fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 037dc4232753bbae8e15a0a2cf4bd42781910cb9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921519"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204729"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 Сравнивает этот контекст документа, в указанный массив контекстов документа.
@@ -42,22 +45,18 @@ int Compare( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `compare`
+## <a name="parameters"></a>Параметры
+`compare`\
+[in] Значение из [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) перечисление, указывающее тип выполняемого сравнения.
 
- [in] Значение из [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) перечисление, указывающее тип выполняемого сравнения.
+`rgpDocContextSet`\
+[in] Массив [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) объекты, представляющие контекстов документа, с которым производится сравнение.
 
- `rgpDocContextSet`
+`dwDocContextSetLen`\
+[in] Длина массива контекстов документа для сравнения.
 
- [in] Массив [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) объекты, представляющие контекстов документа, с которым производится сравнение.
-
- `dwDocContextSetLen`
-
- [in] Длина массива контекстов документа для сравнения.
-
- `pdwDocContext`
-
- [out] Возвращает индекс в `rgpDocContextSet` массив первый контекст документа, который удовлетворяет условию сравнения.
+`pdwDocContext`\
+[out] Возвращает индекс в `rgpDocContextSet` массив первый контекст документа, который удовлетворяет условию сравнения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает `S_OK` Если найдено соответствие. Возвращает `S_FALSE` Если совпадений не найдено. В противном случае возвращается код ошибки.
