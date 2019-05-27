@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dc5e6ef5317e24e53215dad8f32bc95ee400762
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f0b1c2dbde9131d4dee25ff4d6535f8c835aafae
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921361"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211814"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 Получает имя файла исходного файла, содержащий положение документа.
@@ -36,10 +39,9 @@ int GetFileName( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pbstrFileName`
-
- [out] Возвращает имя файла исходного файла.
+## <a name="parameters"></a>Параметры
+`pbstrFileName`\
+[out] Возвращает имя файла исходного файла.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

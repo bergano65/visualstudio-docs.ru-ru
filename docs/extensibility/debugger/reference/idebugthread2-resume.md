@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5fc7b8f5cf5cd5360a60e8c6fbf3b6bf43415575
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 3b96ddd99c2d3377a5c48bb40660e17671ded0ca
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226000"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199531"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Возобновляет выполнение потока.
@@ -40,9 +40,8 @@ int Resume ( 
 ```
 
 ## <a name="parameters"></a>Параметры
- `pdwSuspendCount`\
-
- [out] Возвращает счетчик приостановок после операции возобновления.
+`pdwSuspendCount`\
+[out] Возвращает счетчик приостановок после операции возобновления.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

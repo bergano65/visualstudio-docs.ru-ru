@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 510ffebfd1bbff116b4899663baac7cf6f1087d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0a6dbb866e72dcdb0993b4739ba34b5fda29e403
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923106"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210020"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
 Возвращает точку останова, которые стали свободной.
@@ -36,10 +39,9 @@ int GetBreakpoint(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`ppBP`
-
- [out] Возвращает [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) объект, представляющий точку останова, которые стали свободной.
+## <a name="parameters"></a>Параметры
+`ppBP`\
+[out] Возвращает [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) объект, представляющий точку останова, которые стали свободной.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

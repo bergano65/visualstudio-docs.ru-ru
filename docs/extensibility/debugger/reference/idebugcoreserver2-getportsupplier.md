@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c7219f3940eb101c652725b5d7a180206108b85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ec665e3da8961b801c7e95efaee8bff3994b6b4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875838"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205628"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
 Получает поставщика конкретного порта.
@@ -38,14 +41,12 @@ int GetPortSupplier( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `guidPortSupplier`
+## <a name="parameters"></a>Параметры
+`guidPortSupplier`\
+[in] Идентификатор GUID поставщика порта, который требуется получить.
 
- [in] Идентификатор GUID поставщика порта, который требуется получить.
-
- `ppPortSupplier`
-
- [out] Возвращает [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) объект, представляющий поставщик нужный порт.
+`ppPortSupplier`\
+[out] Возвращает [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) объект, представляющий поставщик нужный порт.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

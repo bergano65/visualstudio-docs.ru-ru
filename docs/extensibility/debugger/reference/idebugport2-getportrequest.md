@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8a103316a292c444a35b8c819968d98cda777b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a25863ab07c4f68f0c961692981d4125c213818b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871807"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209199"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 Получает описание порта, который ранее использовался для создания порта (если доступно).
@@ -36,10 +39,9 @@ int GetPortRequest( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppRequest`
-
- [out] Возвращает [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) объект, представляющий запрос, который использовался для создания порта.
+## <a name="parameters"></a>Параметры
+`ppRequest`\
+[out] Возвращает [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) объект, представляющий запрос, который использовался для создания порта.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  Возвращает `E_PORT_NO_REQUEST` Если порт не был создан с помощью [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) порт запроса.

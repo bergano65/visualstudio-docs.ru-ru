@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399393"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037387"
 ---
 # <a name="general-debugging-options"></a>Общие параметры отладки
 
@@ -136,7 +136,7 @@ ms.locfileid: "63399393"
 
 - **Показать средства среды выполнения в приложении** Показывает **динамическое визуальное дерево** команды в панели инструментов в главном окне отлаживаемого приложения XAML. Этот параметр впервые появился в Visual Studio 2015 с обновлением 2.
 
-- **Включить функцию "Изменить и продолжить" в XAML**   Позволяет использовать изменить и продолжить с кодом XAML.
+- **Включить XAML "Горячий" перезагрузить**: Позволяет использовать функцию "Горячий" перезагрузить XAML с кодом XAML, когда приложение запущено. (Эта функция раньше назывался «"XAML Изменить и продолжить»)
 
 **Включить средства диагностики при отладке** При отладке появится окно **Средства диагностики**.
 

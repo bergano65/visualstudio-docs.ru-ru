@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45919c6c9fafceecca2cb53fa9c2c9f43b68e382
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 26f88e6e955b83bf96b0664ffc6daba9a5430aa9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870010"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203954"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 Возвращает заголовок, понятное имя или имя файла, размещающего процесса данной программы.
@@ -38,14 +41,12 @@ int GetHostName( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwType`
+## <a name="parameters"></a>Параметры
+`dwType`\
+[in] Значение из [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) перечисления.
 
- [in] Значение из [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) перечисления.
-
- `pbstrHostName`
-
- [out] Возвращает имя запрошенного размещающего процесса.
+`pbstrHostName`\
+[out] Возвращает имя запрошенного размещающего процесса.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

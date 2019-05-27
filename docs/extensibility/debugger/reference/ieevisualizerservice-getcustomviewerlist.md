@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2714a038c2cede4b351de92454bb74a5052805c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 5b78afc3ace3764856fd0a83899be2eae597239e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223578"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203673"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 Этот метод возвращает список визуализаторов типов, эта служба, о которых известно.
@@ -46,21 +46,17 @@ int GetCustomViewerList(
 ```
 
 ## <a name="parameters"></a>Параметры
- `celtSkip`\
+`celtSkip`\
+[in] Число визуализаторы для пропуска.
 
- [in] Число визуализаторы для пропуска.
+`celRequested`\
+[in] Число визуализаторы для извлечения (также указывает размер `rgViewers` массива).
 
- `celRequested`\
+`rgViewers`\
+[in, out] Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур для заполнения.
 
- [in] Число визуализаторы для извлечения (также указывает размер `rgViewers` массива).
-
- `rgViewers`\
-
- [in, out] Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур для заполнения.
-
- `pceltFetched`\
-
- [out] Число фактически извлеченных визуализаторы.
+`pceltFetched`\
+[out] Число фактически извлеченных визуализаторы.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

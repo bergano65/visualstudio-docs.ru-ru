@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 853e0eccbe744578a9ae3001725dd3cf2d001fa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 253303024aaf2beb1616a47f9ee0dfcd2749289d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920267"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199970"
 ---
 # <a name="idebugerrorbreakpoint2getpendingbreakpoint"></a>IDebugErrorBreakpoint2::GetPendingBreakpoint
 Получает ожидающая точка останова, которая вызвала ошибку.
@@ -36,10 +39,9 @@ int GetPendingBreakpoint ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppPendingBreakpoint`
-
- [out] Возвращает [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) , представляющий ожидающая точка останова, которую не удалось привязать.
+## <a name="parameters"></a>Параметры
+`ppPendingBreakpoint`\
+[out] Возвращает [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) , представляющий ожидающая точка останова, которую не удалось привязать.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

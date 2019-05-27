@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95b94dca9ef948a07b5c6458a9c8c53c8612eddd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55c36c6649b8ff2b1b0bebc57012970625a964b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920164"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199945"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 Возвращает информацию, позволяющую конструкции понятное сообщение.
@@ -46,30 +49,24 @@ int GetErrorMessage(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pMessageType`
+## <a name="parameters"></a>Параметры
+`pMessageType`\
+[out] Возвращает значение из [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) перечисление, описывающее тип сообщения.
 
- [out] Возвращает значение из [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) перечисление, описывающее тип сообщения.
+`pbstrErrorFormat`\
+[out] Формат окончательное сообщение для пользователя (см. в разделе «Примечания» Дополнительные сведения).
 
- `pbstrErrorFormat`
+`hrErrorReason`\
+[out] Код ошибки сообщения посвящен.
 
- [out] Формат окончательное сообщение для пользователя (см. в разделе «Примечания» Дополнительные сведения).
+`pdwType`\
+[out] Серьезность ошибки (использовать константы MB_XXX для `MessageBox`, например `MB_EXCLAMATION` или `MB_WARNING`).
 
- `hrErrorReason`
+`pbstrHelpFileName`\
+[out] Путь к файлу справки (указано значение null, если отсутствует файл справки).
 
- [out] Код ошибки сообщения посвящен.
-
- `pdwType`
-
- [out] Серьезность ошибки (использовать константы MB_XXX для `MessageBox`, например `MB_EXCLAMATION` или `MB_WARNING`).
-
- `pbstrHelpFileName`
-
- [out] Путь к файлу справки (указано значение null, если отсутствует файл справки).
-
- `pdwHelpId`
-
- [out] Идентификатор раздела справки для отображения (значение 0, если ни одного раздела).
+`pdwHelpId`\
+[out] Идентификатор раздела справки для отображения (значение 0, если ни одного раздела).
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

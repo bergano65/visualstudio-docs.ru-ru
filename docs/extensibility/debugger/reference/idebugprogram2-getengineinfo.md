@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe8b6768bf67cab4a4d69e82c509db0bd6f93543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1b03fe660cd6b909c1d86871556e4f0e6ecb945
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917265"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212300"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 Возвращает имя и идентификатор GUID для обработчика отладки (DE), выполнение программы.
@@ -38,14 +41,12 @@ int GetEngineInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pbstrEngine`
+## <a name="parameters"></a>Параметры
+`pbstrEngine`\
+[out] Возвращает имя DE, выполнение программы.
 
- [out] Возвращает имя DE, выполнение программы.
-
- `pguidEngine`
-
- [out] Возвращает идентификатор GUID для DE, выполнение программы.
+`pguidEngine`\
+[out] Возвращает идентификатор GUID для DE, выполнение программы.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

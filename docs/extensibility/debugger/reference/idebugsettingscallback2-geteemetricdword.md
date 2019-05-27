@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3c8349b8a7f7b823d4596f167889a227b166b7a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e3661186357e82170cc67f6e3744e8662ebae76c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457371"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212129"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 Извлекает значение, соответствующее заданной метрики средство оценки выражений.
@@ -44,21 +44,17 @@ private int GetEEMetricDword(
 ```
 
 ## <a name="parameters"></a>Параметры
- `guidLang`\
+`guidLang`\
+[in] Уникальный идентификатор языка программирования.
 
- [in] Уникальный идентификатор языка программирования.
+`guidVendor`\
+[in] Уникальный идентификатор поставщика.
 
- `guidVendor`\
+`pszMetric`\
+[in] Имя метрики.
 
- [in] Уникальный идентификатор поставщика.
-
- `pszMetric`\
-
- [in] Имя метрики.
-
- `pdwValue`\
-
- [out] Возвращает значение, соответствующее строке метрик.
+`pdwValue`\
+[out] Возвращает значение, соответствующее строке метрик.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

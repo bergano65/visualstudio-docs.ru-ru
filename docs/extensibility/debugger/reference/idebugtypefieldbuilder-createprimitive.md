@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 06e88c22cb367be5bfb3d9328da24b049a743889
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 4b6958d52ee7fb20a5eb1839f2ed926ae14b888a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223982"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199392"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 Создает объект, представляющий тип-примитив.
@@ -41,13 +41,11 @@ int CreatePrimitive (
 ```
 
 ## <a name="parameters"></a>Параметры
- `dwElementType`\
+`dwElementType`\
+[in] Значение из [перечисление CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , представляющий тип-примитив.
 
- [in] Значение из [перечисление CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) , представляющий тип-примитив.
-
- `pTypeField`\
-
- [out] Возвращает интерфейс IDebugField для нового типа.
+`pTypeField`\
+[out] Возвращает интерфейс IDebugField для нового типа.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

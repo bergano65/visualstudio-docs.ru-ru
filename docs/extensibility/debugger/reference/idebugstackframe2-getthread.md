@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad712371049151b18daf3b70abd5063e6421efba
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b0977c537984d091e550329298367f5e02a360ed
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458564"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198699"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 Получает поток, связанный с кадром стека.
@@ -40,9 +40,8 @@ int GetThread ( 
 ```
 
 ## <a name="parameters"></a>Параметры
- `ppThread`\
-
- [out] Возвращает [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток.
+`ppThread`\
+[out] Возвращает [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

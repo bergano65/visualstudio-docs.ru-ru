@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 23c00147b0d42c848d01e0e2a08df80672750e71
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 3a4672d0cb7548417ed2d1de923e52d43e6242ba
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226421"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207316"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 Этот метод возвращает тип поля класса, представляющий полное имя класса.
@@ -44,17 +44,14 @@ int GetClassTypeByName(
 ```
 
 ## <a name="parameters"></a>Параметры
- `pszClassName`\
+`pszClassName`\
+[in] Имя класса.
 
- [in] Имя класса.
+`nameMatch`\
+[in] Выбирает тип соответствия, например, с учетом регистра. Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления.
 
- `nameMatch`\
-
- [in] Выбирает тип соответствия, например, с учетом регистра. Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления.
-
- `ppField`\
-
- [out] Возвращает тип класса, представленные как [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) интерфейс.
+`ppField`\
+[out] Возвращает тип класса, представленные как [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) интерфейс.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

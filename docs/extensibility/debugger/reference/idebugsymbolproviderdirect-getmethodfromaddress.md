@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76bec7cb621605933f8cc0b15ff6cb6e4dd6d70e
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 65bc4e95fbf73517e4f247a60404eff9e6747ef7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224009"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206953"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 Извлекает сведения о методе по адресу указанного отладки.
@@ -51,33 +51,26 @@ int GetMethodFromAddress(
 ```
 
 ## <a name="parameters"></a>Параметры
- `pAddress`\
+`pAddress`\
+[in] Отладка адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
 
- [in] Отладка адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+`pGuid`\
+[out] Уникальный идентификатор модуля.
 
- `pGuid`\
+`pAppID`\
+[out] Идентификатор домена приложения.
 
- [out] Уникальный идентификатор модуля.
+`pTokenClass`\
+[out] Токен, представляющий содержащего класса.
 
- `pAppID`\
+`pTokenMethod`\
+[out] Токен, представляющий модуль.
 
- [out] Идентификатор домена приложения.
+`pdwOffset`\
+[out] Смещение в байтах от начала `pAddress` параметра.
 
- `pTokenClass`\
-
- [out] Токен, представляющий содержащего класса.
-
- `pTokenMethod`\
-
- [out] Токен, представляющий модуль.
-
- `pdwOffset`\
-
- [out] Смещение в байтах от начала `pAddress` параметра.
-
- `pdwVersion`\
-
- [out] Номер версии метода.
+`pdwVersion`\
+[out] Номер версии метода.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

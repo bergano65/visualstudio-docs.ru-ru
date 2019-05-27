@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08534abc468ac358d7c5eeba25129d9752f84e5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0dfbe855f5bdcbfda384e7a9a180fc8f86595b85
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872833"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211938"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 Определяет, было ли определено определенного настраиваемого атрибута.
@@ -36,10 +39,9 @@ int IsCustomAttributeDefined(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszCustomAttributeName`
-
- [in] Строка, содержащая имя настраиваемого атрибута для поиска.
+## <a name="parameters"></a>Параметры
+`pszCustomAttributeName`\
+[in] Строка, содержащая имя настраиваемого атрибута для поиска.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение S_OK, если настраиваемого атрибута определен в этом методе, в противном случае возвращает значение S_FALSE.

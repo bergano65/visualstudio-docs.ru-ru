@@ -17,16 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 197128fadb660ab06686d13ec304a5d9d1698070
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d466dec85a0bdf242120ef5e88a0d5f5d2ac48e
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778141"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934517"
 ---
 # <a name="custombuild-task"></a>Задача CustomBuild
 
-Создает программу-оболочку для компилятора Visual C++ (cmd.exe).
+Создает программу-оболочку для компилятора Visual C++ (cmd.exe). Этот класс является производным от [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), но не использует отслеживание файлов для обнаружения зависимостей между файлами. Все зависимости должны быть явно указаны как AdditionalDependencies, чтобы инкрементная сборка работала должным образом.
+
 
 ## <a name="parameters"></a>Параметры
 
@@ -35,7 +36,7 @@ ms.locfileid: "62778141"
 |Параметр|Описание|
 |---------------|-----------------|
 |**BuildSuffix**|Необязательный параметр типа **string**.|
-|**Sources**|Обязательный параметр **ITaskItem[]**.|
+|**Sources**|Обязательный параметр **ITaskItem[]** .|
 |**TrackerLogDirectory**|Необязательный параметр типа **string**.|
 
 ## <a name="see-also"></a>См. также

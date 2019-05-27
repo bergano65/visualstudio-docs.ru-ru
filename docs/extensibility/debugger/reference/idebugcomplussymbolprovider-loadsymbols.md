@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c19070dce95a1f88398fe57d03e9d578086e9ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa910e483e4c743058d3671d8b873c5f88b4269e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922454"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206151"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 Загружает указанный отладочные символы в памяти.
@@ -45,30 +48,24 @@ int LoadSymbols(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`ulAppDomainID`
+## <a name="parameters"></a>Параметры
+`ulAppDomainID`\
+[in] Идентификатор домена приложения.
 
- [in] Идентификатор домена приложения.
+`guidModule`\
+[in] Уникальный идентификатор mondule.
 
-`guidModule`
+`baseAddress`\
+[in] Базовый адрес памяти.
 
- [in] Уникальный идентификатор mondule.
+`pUnkMetadataImport`\
+[in] Объект, содержащий метаданные символ.
 
-`baseAddress`
+`bstrModuleName`\
+[in] Имя модуля.
 
- [in] Базовый адрес памяти.
-
-`pUnkMetadataImport`
-
- [in] Объект, содержащий метаданные символ.
-
-`bstrModuleName`
-
- [in] Имя модуля.
-
-`bstrSymSearchPath`
-
- [in] Путь для поиска файла символов.
+`bstrSymSearchPath`\
+[in] Путь для поиска файла символов.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

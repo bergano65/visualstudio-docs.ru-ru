@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90d56149d4e942c8fe5206fad3ce740f510a451d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8ce275d0875970fe23ed20d624df6d3b94489757
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458947"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211662"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 Делает недоступной для отладки программы.
@@ -40,9 +40,8 @@ int UnpublishProgram(
 ```
 
 ## <a name="parameters"></a>Параметры
- `pDebuggeeInterface`\
-
- [in] `IUnknown` Интерфейс для программы. Это то же значение, передаваемое [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) метод и однозначно идентифицирует программу удаления (то есть он используется как файл cookie).
+`pDebuggeeInterface`\
+[in] `IUnknown` Интерфейс для программы. Это то же значение, передаваемое [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) метод и однозначно идентифицирует программу удаления (то есть он используется как файл cookie).
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

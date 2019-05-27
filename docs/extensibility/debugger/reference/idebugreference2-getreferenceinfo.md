@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 391f4bc6eb0480d26fd616afcea222db3b7be4b7
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 400fe23ae80ad1e0f00e8571e96471fa267a5efc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457387"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211913"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
 Получает [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структура, описывающая ссылку. Зарезервировано для будущего использования.
@@ -50,29 +50,23 @@ int GetReferenceInfo ( 
 ```
 
 ## <a name="parameters"></a>Параметры
- `dwFields`\
+`dwFields`\
+[in] Сочетание флагов из [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) перечисление, определения полей для заполнения [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры.
 
- [in] Сочетание флагов из [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) перечисление, определения полей для заполнения [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры.
+`nRadix`\
+[in] Основание системы счисления для использования в любой числовой сведения о форматировании.
 
- `nRadix`\
+`dwTimeout`\
+[in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
 
- [in] Основание системы счисления для использования в любой числовой сведения о форматировании.
+`rgpArgs`\
+[in] Массив [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объектов. Зарезервировано для будущего использования; присвоено значение null.
 
- `dwTimeout`\
+`dwArgCount`\
+[in] Число ссылочных аргументов в `rgpArgs` массива. Зарезервировано для будущего использования; значение 0.
 
- [in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
-
- `rgpArgs`\
-
- [in] Массив [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объектов. Зарезервировано для будущего использования; присвоено значение null.
-
- `dwArgCount`\
-
- [in] Число ссылочных аргументов в `rgpArgs` массива. Зарезервировано для будущего использования; значение 0.
-
- `pReferenceInfo`\
-
- [out] Объект [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры, который заполняется описание свойства.
+`pReferenceInfo`\
+[out] Объект [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры, который заполняется описание свойства.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Всегда возвращает значение `E_NOTIMPL`.

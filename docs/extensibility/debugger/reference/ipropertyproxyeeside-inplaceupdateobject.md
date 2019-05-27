@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a233a37f83ff3f75b5cf0ec103e59da91f1473bd
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a083b3d2eeb05a07837b826b5cb35ccedb0c1722
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458462"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198725"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 Обновляет данные объекта с данным объектом и возвращает новый объект данных, предоставляющий новые данные объекта.
@@ -42,13 +42,11 @@ int InPlaceUpdateObject(
 ```
 
 ## <a name="parameters"></a>Параметры
- `dataIn`\
+`dataIn`\
+[in] [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий новые данные.
 
- [in] [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий новые данные.
-
- `dataOut`\
-
- [out] Возвращает новый `IEEDataStorage` объект, содержащий замененными данными.
+`dataOut`\
+[out] Возвращает новый `IEEDataStorage` объект, содержащий замененными данными.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

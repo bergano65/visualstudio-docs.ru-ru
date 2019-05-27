@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc32ea0d07779f82bb741b99632ec16a950e5da2
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: fe8f9dafa4543148ed373295f9c694e7678491a9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223965"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207169"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Этот метод создает перечислитель для пространств имен, связанных с адресом отладки.
@@ -42,13 +42,11 @@ int GetNamespacesUsedAtAddress(
 ```
 
 ## <a name="parameters"></a>Параметры
- `pAddress`\
+`pAddress`\
+[in] Адрес отладки.
 
- [in] Адрес отладки.
-
- `ppEnum`\
-
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) перечислитель для пространств имен.
+`ppEnum`\
+[out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) перечислитель для пространств имен.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

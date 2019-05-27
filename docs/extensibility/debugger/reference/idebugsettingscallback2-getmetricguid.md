@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49f30f6b5bb1231f6bcbd77097454ae7a73a7a2c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 45dadc5d3292d989163df085e00f61207940d442
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458596"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212074"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 Извлекает уникальный идентификатор метрики с заданным именем.
@@ -44,21 +44,17 @@ private int GetMetricGuid(
 ```
 
 ## <a name="parameters"></a>Параметры
- `pszType`\
+`pszType`\
+[in] Тип метрики.
 
- [in] Тип метрики.
+`guidSection`\
+[in] Уникальный идентификатор раздела.
 
- `guidSection`\
+`pszMetric`\
+[in] Имя метрики.
 
- [in] Уникальный идентификатор раздела.
-
- `pszMetric`\
-
- [in] Имя метрики.
-
- `pguidValue`\
-
- [out] Возвращает уникальный идентификатор метрики.
+`pguidValue`\
+[out] Возвращает уникальный идентификатор метрики.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
