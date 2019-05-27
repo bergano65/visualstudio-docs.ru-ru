@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fb50271801d895ca73dbbc915ff95320183d032
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6ad65d9300c45073aec049d9050a180d49bf5c17
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872915"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211968"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 Создает перечислитель для Статические локальные переменные метода.
@@ -36,10 +39,9 @@ int EnumStaticLocals(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppLocals`
-
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список статических локальных переменных. Возвращает значение null, если нет статических локальных переменных.
+## <a name="parameters"></a>Параметры
+`ppLocals`\
+[out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список статических локальных переменных. Возвращает значение null, если нет статических локальных переменных.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK, или возвращает значение S_FALSE, если нет статических локальных переменных. В противном случае возвращается код ошибки.

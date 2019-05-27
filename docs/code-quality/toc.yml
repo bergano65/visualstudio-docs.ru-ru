@@ -383,6 +383,8 @@
               href: ca1505-avoid-unmaintainable-code.md
             - name: CA1506. Избегайте чрезмерной взаимозависимости классов
               href: ca1506-avoid-excessive-class-coupling.md
+            - name: 'CA1507: Используйте nameof вместо строки'
+              href: ca1507.md
         - name: 'Предупреждения, связанные с мобильностью'
           items:
             - name: 'Предупреждения, связанные с мобильностью'

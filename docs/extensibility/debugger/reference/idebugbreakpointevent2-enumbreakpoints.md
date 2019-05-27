@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b9ce3894af04b30c0f14c8d5afce8be920b1cae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d3871dbcbcc28eda37c294c33538466564f84906
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876879"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199800"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 Создает перечислитель для всех точек останова, триггерами и текущей позиции кода.
@@ -36,10 +39,9 @@ int EnumBreakpoints(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppEnum`
-
- [out] Возвращает [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) объект, который перечисляет все точки останова, связанную с текущим расположением кода.
+## <a name="parameters"></a>Параметры
+`ppEnum`\
+[out] Возвращает [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) объект, который перечисляет все точки останова, связанную с текущим расположением кода.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

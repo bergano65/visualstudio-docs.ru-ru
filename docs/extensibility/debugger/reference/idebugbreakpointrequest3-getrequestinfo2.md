@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06458649d091be104c5509e37aa35029a119c84f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58c313ebc56035d40d4743b9411c476434c82123
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877004"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199753"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 Этот метод получает данные запроса точки останова, описывающие этот запрос точки останова.
@@ -38,14 +41,12 @@ int GetRequestInfo2(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwFields`
+## <a name="parameters"></a>Параметры
+`dwFields`\
+[in] Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисление, определите, какие поля из `pBPRequestInfo` должны быть заполнены.
 
- [in] Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисление, определите, какие поля из `pBPRequestInfo` должны быть заполнены.
-
- `bBPRequestInfo`
-
- [out] [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры для заполнения.
+`bBPRequestInfo`\
+[out] [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры для заполнения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

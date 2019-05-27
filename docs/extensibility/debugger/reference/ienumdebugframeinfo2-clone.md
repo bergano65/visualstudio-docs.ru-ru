@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6708dfec4f5668675769d2c306df7107ac0a6325
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 7bfd96f1a52fe908e414b16bb7bd003b459059d4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226566"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208007"
 ---
 # <a name="ienumdebugframeinfo2clone"></a>IEnumDebugFrameInfo2::Clone
 Возвращает копию текущего перечисления как отдельный объект.
@@ -40,9 +40,8 @@ int Clone(
 ```
 
 ## <a name="parameters"></a>Параметры
- `ppEnum`\
-
- [out] Возвращает копию этого перечисления как отдельный объект.
+`ppEnum`\
+[out] Возвращает копию этого перечисления как отдельный объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

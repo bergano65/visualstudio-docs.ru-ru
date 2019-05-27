@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Узнайте о преимуществе для разработчиков Office 365, предусмотренном подпиской Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947237"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934585"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Преимущество подписки разработчика Office 365 в подписках Visual Studio
 
-Обладатели некоторых подписок Visual Studio Enterprise получают преимущество подписки разработчика Office 365.  Подписка разработчика Office 365 позволяет разрабатывать, тестировать и развертывать надстройки для Microsoft Office и Microsoft SharePoint.  Это преимущество предоставляется для одного клиента и 25 пользователей.
+Обладатели некоторых подписок Visual Studio получают преимущество подписки разработчика Office 365.  Подписка разработчика Office 365 позволяет разрабатывать, тестировать и развертывать надстройки для Microsoft Office и Microsoft SharePoint.  Это преимущество предоставляется для одного клиента и 25 пользователей.
 
 ## <a name="activation-steps"></a>Процедура активации
 
@@ -67,7 +67,7 @@ ms.locfileid: "62947237"
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Включено      |  Да          |
-| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                            |Н/Д         |
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Включено                                                            |Да         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                             |  Н/Д         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              | Н/Д         |
 | Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |

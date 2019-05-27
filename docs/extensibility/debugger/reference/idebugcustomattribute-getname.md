@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed12526422a38b7b3b629a0acafc019b2e94a5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2556a424e5109e75b667e9f32ecac5cc26ca781b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921886"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205340"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Получает имя настраиваемого атрибута.
@@ -36,10 +39,9 @@ int GetName(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `bstrName`
-
- [out] Возвращает строку, содержащую имя настраиваемого атрибута.
+## <a name="parameters"></a>Параметры
+`bstrName`\
+[out] Возвращает строку, содержащую имя настраиваемого атрибута.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.

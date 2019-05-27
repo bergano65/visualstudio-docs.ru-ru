@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a5ecd42b0ddf0138e98e2159fae1236ca02b473
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9e6225099b3b88cbbbb73884cbd93be4f7976e50
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919451"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200843"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 Создает объект с помощью отсутствует конструктор.
@@ -38,14 +41,12 @@ int CreateObjectNoConstructor(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pClassObject`
+## <a name="parameters"></a>Параметры
+`pClassObject`\
+[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, представляющий тип создаваемого объекта.
 
- [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объект, представляющий тип создаваемого объекта.
-
- `ppObject`
-
- [out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляющий только что созданный объект.
+`ppObject`\
+[out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляющий только что созданный объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02022a4276da39fb863ccfed8ed02aa9d20f9c5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4a8c6ab62707f3a6b90d520e3cc32a1e75821071
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916992"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199019"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 
@@ -42,19 +45,16 @@ int Attach_V7 (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
+## <a name="parameters"></a>Параметры
 
-`pMDMProgram`
+`pMDMProgram`\
+[in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) интерфейс, который представляет присоединение к программе.
 
- [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) интерфейс, который представляет присоединение к программе.
+`pCallback`\
+[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) интерфейс, который будет использоваться для отправки событий отладки SDM.
 
- `pCallback`
-
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) интерфейс, который будет использоваться для отправки событий отладки SDM.
-
- `dwReason`
-
- [in] Значение из [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) перечисления, которое указывает причину для присоединения.
+`dwReason`\
+[in] Значение из [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) перечисления, которое указывает причину для присоединения.
 
 ## <a name="return-value"></a>Возвращаемое значение
 

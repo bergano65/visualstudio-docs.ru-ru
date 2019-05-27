@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f0f11c3b1770ca32b34f7a5480d5d56acc2b2478
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919989"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201046"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Выполняет синтаксический анализ выражения в виде текста для дальнейшего определения.
@@ -46,30 +49,24 @@ int ParseText(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pszCode`
+## <a name="parameters"></a>Параметры
+`pszCode`\
+[in] Выражение для синтаксического анализа.
 
- [in] Выражение для синтаксического анализа.
+`dwFlags`\
+[in] Сочетание флагов из [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) перечисления, который управляет синтаксического анализа.
 
-`dwFlags`
+`nRadix`\
+[in] Основание системы счисления для использования при анализе все числовые данные в `pszCode`.
 
- [in] Сочетание флагов из [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) перечисления, который управляет синтаксического анализа.
+`ppExpr`\
+[out] Возвращает [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , представляющий проанализированное выражение. оно будет готов для привязки и оценки.
 
-`nRadix`
+`pbstrError`\
+[out] Возвращает сообщение об ошибке, если выражение содержит ошибку.
 
- [in] Основание системы счисления для использования при анализе все числовые данные в `pszCode`.
-
-`ppExpr`
-
- [out] Возвращает [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , представляющий проанализированное выражение. оно будет готов для привязки и оценки.
-
-`pbstrError`
-
- [out] Возвращает сообщение об ошибке, если выражение содержит ошибку.
-
-`pichError`
-
- [out] Возвращает индекс символа ошибки в `pszCode` Если выражение содержит ошибку.
+`pichError`\
+[out] Возвращает индекс символа ошибки в `pszCode` Если выражение содержит ошибку.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

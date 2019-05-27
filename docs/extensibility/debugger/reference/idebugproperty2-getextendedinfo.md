@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa66f61c7e72f1c629fe664baf2c2a5dcc9631e2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7d9e2ff4b853baec5da19b4c62cffe4e86102736
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458889"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211604"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Возвращает расширенные сведения для свойства.
@@ -42,13 +42,11 @@ int GetExtendedInfo ( 
 ```
 
 ## <a name="parameters"></a>Параметры
- `guidExtendedInfo`\
+`guidExtendedInfo`\
+[in] Идентификатор GUID, который определяет тип расширенные сведения, которые требуется извлечь. Дополнительные сведения см. примечания.
 
- [in] Идентификатор GUID, который определяет тип расширенные сведения, которые требуется извлечь. Дополнительные сведения см. примечания.
-
- `pExtendedInfo`\
-
- [out] Возвращает `VARIANT` (C++) или объект (C#), можно использовать для получения этих данных расширенного свойства. Например, этот параметр может возвращать `IUnknown` интерфейс, который можно запросить для [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) интерфейс. Дополнительные сведения см. примечания.
+`pExtendedInfo`\
+[out] Возвращает `VARIANT` (C++) или объект (C#), можно использовать для получения этих данных расширенного свойства. Например, этот параметр может возвращать `IUnknown` интерфейс, который можно запросить для [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) интерфейс. Дополнительные сведения см. примечания.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` Если нет для получения расширенной информации.

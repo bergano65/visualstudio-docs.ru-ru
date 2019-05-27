@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о преимуществе CAST Highlight, доступном в некоторых подписках Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947920"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805341"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Преимущество CAST Highlight в подписках Visual Studio
 
@@ -107,6 +107,6 @@ ms.locfileid: "62947920"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Если вы еще не активировали преимущество Azure, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и активировать бесплатный кредит Azure.
+Если вы еще не активировали преимущество Azure, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и начать использовать деньги на счете в Azure.
 
 Не забудьте ознакомиться с демонстрацией, руководством пользователя и видеоруководствами, упомянутыми в письме Грега.

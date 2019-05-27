@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 022712c0be8dfb569ba097bc4a86f8b02de93633
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ca994aaf03103e6d668d78a7d3a683ddbc988eb7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457410"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210094"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Задает значение ссылки из строки. Зарезервировано для будущего использования.
@@ -44,17 +44,14 @@ int SetValueAsString ( 
 ```
 
 ## <a name="parameters"></a>Параметры
- `pszValue`\
+`pszValue`\
+[in] Значение в виде строки.
 
- [in] Значение в виде строки.
+`dwRadix`\
+[in] Основание системы счисления для использования в любой числовой сведения о форматировании.
 
- `dwRadix`\
-
- [in] Основание системы счисления для использования в любой числовой сведения о форматировании.
-
- `dwTimeout`\
-
- [in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
+`dwTimeout`\
+[in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Всегда возвращает значение `E_NOTIMPL`.

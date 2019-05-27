@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30dfd7b9605cf26f5cc562e6768d1f035f6b484e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e7dd35666120924de9b5eb712a784c6765aa347b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917680"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208845"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
 Извлекает массив уникальных идентификаторов для доступных отладчиков.
@@ -35,10 +38,9 @@ public int GetEngineFilter(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pEngineArray`
-
- [out] Ссылка на структуру, содержащую уникальные идентификаторы для обработчиков отладки.
+## <a name="parameters"></a>Параметры
+`pEngineArray`\
+[out] Ссылка на структуру, содержащую уникальные идентификаторы для обработчиков отладки.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

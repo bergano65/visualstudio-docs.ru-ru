@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8f7f778e0dfd55e9db175c4e279c92b72e427e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f04000d3e2675f766ae343836320aa7433ade87d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873289"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211991"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 Сравнивает контекста памяти для каждого контекста в заданном массиве так, как указывает флаги сравнения, возвращает индекс первого контекста, который соответствует.
@@ -43,22 +46,18 @@ int Compare(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `compare`
+## <a name="parameters"></a>Параметры
+`compare`\
+[in] Значение из [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) перечисление, определяющее тип сравнения.
 
- [in] Значение из [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) перечисление, определяющее тип сравнения.
+`rgpMemoryContextSet`\
+[in] Массив ссылок на [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объектов для сравнения.
 
- `rgpMemoryContextSet`
+`dwMemoryContextSetLen`\
+[in] Число контекстов в `rgpMemoryContextSet` массива.
 
- [in] Массив ссылок на [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объектов для сравнения.
-
- `dwMemoryContextSetLen`
-
- [in] Число контекстов в `rgpMemoryContextSet` массива.
-
- `pdwMemoryContext`
-
- [out] Возвращает индекс первого контекста памяти, который удовлетворяет условию сравнения.
+`pdwMemoryContext`\
+[out] Возвращает индекс первого контекста памяти, который удовлетворяет условию сравнения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_COMPARE_CANNOT_COMPARE` Если невозможно сравнить двух контекстах.

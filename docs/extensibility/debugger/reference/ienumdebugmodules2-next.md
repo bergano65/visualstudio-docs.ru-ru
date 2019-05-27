@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c417847fc0c601f571e7bad23af07d2393f93f29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9c0776ae10e53a90aaeae7c63b08f486f5272667
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62866911"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203558"
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
 Возвращает следующий набор элементов из перечисления.
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `celt`
+## <a name="parameters"></a>Параметры
+`celt`\
+[in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
 
- [in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
+`rgelt`\
+[in, out] Массив [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) элементов для заполнения.
 
- `rgelt`
-
- [in, out] Массив [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) элементов для заполнения.
-
- `pceltFetched`
-
- [out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
+`pceltFetched`\
+[out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.

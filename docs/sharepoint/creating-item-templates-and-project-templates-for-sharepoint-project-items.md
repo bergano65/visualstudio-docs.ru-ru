@@ -1,5 +1,5 @@
 ---
-title: Создание элемента шаблоны и шаблоны проектов для элементов проекта SharePoint | Документация Майкрософт
+title: Элементы проекта элемента шаблоны/шаблонов для SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f8332b12b05c1d5db1f09afabacbba5e8ba83e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f41783689e572ca823788e1a8dbcf772f07e924
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952699"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177614"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Создание шаблонов элементов и шаблоны проектов для элементов проектов SharePoint
 
@@ -66,7 +66,7 @@ ms.locfileid: "62952699"
 |Объект *.vstemplate* файла|Этот файл предоставляет сведения, необходимые для отображения шаблона в Visual Studio **новый проект** диалоговое окно и создать проект на основе шаблона. Дополнительные сведения см. в разделе [файлы метаданных шаблонов Visual Studio](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |Объект *.csproj* или *.vbproj* файла|Это файл проекта. Он определяет содержимое и параметры конфигурации проекта.|
 |*Package.Package*|Этот файл определяет пакет развертывания для проекта. При использовании конструктора пакетов для настройки пакета решения для проекта Visual Studio сохраняет данные о пакете решения в этом файле.<br /><br /> При создании пользовательского шаблона проекта SharePoint, рекомендуется включать только минимальное необходимое содержимое в *Package.package* файл и настроить пакет решения с помощью интерфейсов API в <xref:Microsoft.VisualStudio.SharePoint.Packages> пространство имен в расширении, который связан с шаблоном проекта. После этого шаблон проекта защищен от изменений, вносимых в структуре *Package.package* файл. Пример, демонстрирующий создание *Package.package* с минимально необходимым содержимое файла, см. в разделе [Пошаговое руководство: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Если вы хотите изменить *Package.package* файл напрямую, вы можете проверить содержимое с помощью схемы на *% Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\PackageModelSchema.xsd* .|
-|*Package.Template.xml*|Этот файл служит основой для файла манифеста решения (*manifest.xml*) для пакета решения SharePoint (*.wsp*), созданный из проекта. Если вы хотите указать определенное поведение, которое не должно изменять в соответствии с типом проекта, можно добавить содержимое к этому файлу. Дополнительные сведения см. в разделе [стандартный блок: Решения](http://go.microsoft.com/fwlink/?LinkId=169186) и [решение схемы](http://go.microsoft.com/fwlink/?LinkId=177794).<br /><br /> При построении пакета из проекта решения Visual Studio объединяет содержимое *Package.package* и *Package.Template.xml* файлы в решение файл манифеста. Дополнительные сведения о построении пакетов решений, см. в разделе [как: Создание пакета решения SharePoint с помощью задач MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
+|*Package.Template.xml*|Этот файл служит основой для файла манифеста решения (*manifest.xml*) для пакета решения SharePoint ( *.wsp*), созданный из проекта. Если вы хотите указать определенное поведение, которое не должно изменять в соответствии с типом проекта, можно добавить содержимое к этому файлу. Дополнительные сведения см. в разделе [стандартный блок: Решения](http://go.microsoft.com/fwlink/?LinkId=169186) и [решение схемы](http://go.microsoft.com/fwlink/?LinkId=177794).<br /><br /> При построении пакета из проекта решения Visual Studio объединяет содержимое *Package.package* и *Package.Template.xml* файлы в решение файл манифеста. Дополнительные сведения о построении пакетов решений, см. в разделе [как: Создание пакета решения SharePoint с помощью задач MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
 
  Ниже перечислены дополнительные файлы, которые могут быть включены в шаблон проекта.
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f9afe4bb5087c7589415a6ae7fc143f5fd01b21
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4b2870a50f4ab8bb0358e2e38529e996b143b7ae
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413215"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202382"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 По-прежнему запускать этот процесс в остановленном состоянии. Очистить все предыдущие состояния выполнения (например, шаг), и процесс начинается снова выполните.
@@ -39,10 +42,9 @@ int Execute(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pThread`
-
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) объект, представляющий выполнение потока.
+## <a name="parameters"></a>Параметры
+`pThread`\
+[in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) объект, представляющий выполнение потока.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

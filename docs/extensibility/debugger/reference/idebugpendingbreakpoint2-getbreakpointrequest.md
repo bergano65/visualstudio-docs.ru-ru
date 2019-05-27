@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c49f81fc28420dc95cc2c263d4bba41d6c041b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c753df9d2acb24dbb0950158ebf2dd399b8d24a9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842734"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209579"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 Возвращает точки останова запрос, который был использован для создания этого ожидающая точка останова.
@@ -37,10 +40,9 @@ int GetBreakpointRequest( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppBPRequest`
-
- [out] Возвращает [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) объект, представляющий запроса точки останова, которая использовалась для создания данного ожидающих точек останова.
+## <a name="parameters"></a>Параметры
+`ppBPRequest`\
+[out] Возвращает [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) объект, представляющий запроса точки останова, которая использовалась для создания данного ожидающих точек останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.

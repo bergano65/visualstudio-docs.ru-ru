@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 188cc4e8b1c58a7fd8f9f1c99b8d5f544710ef8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 02bc1245026480f97bcc21f1af086f87284022df
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875853"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205414"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 Возвращает сведения об атрибутах как большой двоичный объект байтов.
@@ -38,14 +41,12 @@ int GetAttributeBytes(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppBlob`
+## <a name="parameters"></a>Параметры
+`ppBlob`\
+[in, out] Массив, который заполняется байты атрибута.
 
- [in, out] Массив, который заполняется байты атрибута.
-
- `pdwLen`
-
- [in, out] Указывает максимальное число байтов для возврата в `ppBlob` массива и возвращает количество байтов, фактически записанных в массив.
+`pdwLen`\
+[in, out] Указывает максимальное число байтов для возврата в `ppBlob` массива и возвращает количество байтов, фактически записанных в массив.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c437d6b44777289abe6f079456ff2a8aba5e4a2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 961388298dffa936d00b948424ae7312293e72ea
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458713"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212972"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 Получение списка выбранного дочернего элемента ссылки. Зарезервировано для будущего использования.
@@ -50,29 +50,23 @@ int EnumChildren ( 
 ```
 
 ## <a name="parameters"></a>Параметры
- `dwFields`\
+`dwFields`\
+[in] Сочетание флагов из [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) перечисления, указывающее, какие поля в перечисленных [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть заполнены.
 
- [in] Сочетание флагов из [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) перечисления, указывающее, какие поля в перечисленных [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры должны быть заполнены.
+`dwRadix`\
+[in] Основание системы счисления для использования в любой числовой сведения о форматировании.
 
- `dwRadix`\
+`dwAttribFilter`\
+[in] Сочетание флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисления, используемый в качестве фильтра в сочетании с `pszNameFilter` параметр, чтобы выбрать, какие структуры, которые необходимо перечислить.
 
- [in] Основание системы счисления для использования в любой числовой сведения о форматировании.
+`pszNameFilter`\
+[in] Строка, указывающая фильтр, например «MyX», используется в сочетании с `dwAttribFilter` параметр для выбора структуры, которые необходимо перечислить.
 
- `dwAttribFilter`\
+`dwTimeout`\
+[in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
 
- [in] Сочетание флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисления, используемый в качестве фильтра в сочетании с `pszNameFilter` параметр, чтобы выбрать, какие структуры, которые необходимо перечислить.
-
- `pszNameFilter`\
-
- [in] Строка, указывающая фильтр, например «MyX», используется в сочетании с `dwAttribFilter` параметр для выбора структуры, которые необходимо перечислить.
-
- `dwTimeout`\
-
- [in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
-
- `ppEnum`\
-
- [out] Возвращает [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) , содержащий список свойств запрошенного дочернего.
+`ppEnum`\
+[out] Возвращает [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) , содержащий список свойств запрошенного дочернего.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Всегда возвращает значение `E_NOTIMPL`.

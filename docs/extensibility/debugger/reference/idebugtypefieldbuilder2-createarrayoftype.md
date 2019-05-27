@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 545c2cc9565d70ea40d6a38516eac4c03fc3497d
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 56954d1cf33974fc93aa966db6b5be0d03d1c979
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226252"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199348"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 Создает массив указанного типа и размера.
@@ -43,17 +43,14 @@ int CreateArrayOfType (
 ```
 
 ## <a name="parameters"></a>Параметры
- `pTypeField`\
+`pTypeField`\
+[in] Тип элементов, которые будет содержать массив.
 
- [in] Тип элементов, которые будет содержать массив.
+`rank`\
+[in] Число элементов в массиве.
 
- `rank`\
-
- [in] Число элементов в массиве.
-
- `pArrayOfTypeField`\
-
- [out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекты, представляющие новый массив.
+`pArrayOfTypeField`\
+[out] Возвращает [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекты, представляющие новый массив.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1 | Документация Майкрософт
+title: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 60e4f4e035b381b8bfda8e14ee705471b0fad2b8
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430387"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177563"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 1
   Проекты SharePoint являются контейнерами для одного или нескольких элементов проекта SharePoint. Системы проектов SharePoint в Visual Studio можно расширить путем создания собственных типов элементов проектов SharePoint и связывая их с шаблоном проекта. В этом пошаговом руководстве мы определим тип элемента проекта для создания столбца сайта, и затем вы создадите шаблон проекта, который может использоваться для создания нового проекта, содержащего элемента проекта столбца сайта.

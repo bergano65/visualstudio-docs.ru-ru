@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eb1106bce363bcf1b817853cafc77d192adad86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3c1f4ae2284c1933e7cc3d63ce0079fe3db4f7d7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921841"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204656"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 Возвращает язык, связанный с данным контекстом документа.
@@ -38,14 +41,12 @@ int GetLanguageInfo(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pbstrLanguage`
+## <a name="parameters"></a>Параметры
+`pbstrLanguage`\
+[out] Возвращает имя языка, который реализует код в контексте этого документа.
 
- [out] Возвращает имя языка, который реализует код в контексте этого документа.
-
-`pguidLanguage`
-
- [out] Возвращает GUID языка, который реализует код в контексте этого документа. Например, `guidVBScriptLang` или `guidCPPLang`. Этот идентификатор GUID не ограничивается языками, предоставляемые [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+`pguidLanguage`\
+[out] Возвращает GUID языка, который реализует код в контексте этого документа. Например, `guidVBScriptLang` или `guidCPPLang`. Этот идентификатор GUID не ограничивается языками, предоставляемые [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

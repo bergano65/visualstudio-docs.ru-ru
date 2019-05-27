@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о преимуществе CloudPilot, доступном в некоторых подписках Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78c72f68c8553e7e80b6f26846c19ffcb5f91184
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948427"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805369"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Преимущество CloudPilot в подписках Visual Studio
 
@@ -86,4 +86,4 @@ ms.locfileid: "62948427"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Если вы еще не активировали преимущество Azure, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и активировать бесплатный кредит Azure.
+Если вы еще не активировали преимущество Azure, входящее в состав вашей подписки, посетите [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) и щелкните плитку Azure в категории "Сервис", чтобы настроить подписку Azure и начать использовать деньги на счете в Azure.

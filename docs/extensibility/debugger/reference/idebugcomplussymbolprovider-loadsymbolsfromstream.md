@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fb22dfdfb92b4955624a587a340d9f57eb2d59c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 310f290eb19f7ec56f1508104a0c67241397e6fe
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876524"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206143"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 Загружает отладочные символы, учитывая потока данных.
@@ -43,26 +46,21 @@ int LoadSymbolsFromStream(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`ulAppDomainID`
+## <a name="parameters"></a>Параметры
+`ulAppDomainID`\
+[in] Идентификатор домена приложения.
 
- [in] Идентификатор домена приложения.
+`guidModule`\
+[in] Уникальный идентификатор модуля.
 
-`guidModule`
+`baseAddress`\
+[in] Базовый адрес памяти.
 
- [in] Уникальный идентификатор модуля.
+`pUnkMetadataImport`\
+[in] Объект, содержащий метаданные символ.
 
-`baseAddress`
-
- [in] Базовый адрес памяти.
-
-`pUnkMetadataImport`
-
- [in] Объект, содержащий метаданные символ.
-
-`pStream`
-
- [in] Поток данных, содержащий символы.
+`pStream`\
+[in] Поток данных, содержащий символы.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

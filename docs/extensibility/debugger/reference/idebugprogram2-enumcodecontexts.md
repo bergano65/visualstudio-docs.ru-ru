@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77d92a65b77cbec94a6c74852393627af6763bad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 88eb307836fa2a340ec3ba99577fc0be76352958
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917388"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200401"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 Извлекает список контексты для заданной позиции в файле исходного кода.
@@ -38,14 +41,11 @@ int EnumCodeContexts( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pDocPos`
+## <a name="parameters"></a>Параметры
+`pDocPos`\
+[in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) объект, представляющий абстрактный позиции в файле исходного кода, известные в интегрированную среду разработки.
 
- [in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) объект, представляющий абстрактный позиции в файле исходного кода, известные в интегрированную среду разработки.
-
- `ppEnum`
-
- [out] Возвращает [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) , содержащий список контексты кода.
+`ppEnum` [out] Возвращает [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) , содержащий список контексты кода.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c9e660e27397c530d4ef06c8ddfa3312ee4888cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458983"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203725"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Позволяет процессу получать уведомления о событиях порт.
@@ -50,9 +50,8 @@ int WatchForProviderEvents(
 ```
 
 ## <a name="parameters"></a>Параметры
- `Flags`\
-
- [in] Сочетание флагов из [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) перечисления. Для этого вызова типичны следующие флаги:
+`Flags`\
+[in] Сочетание флагов из [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) перечисления. Для этого вызова типичны следующие флаги:
 
 |Flag|Описание|
 |----------|-----------------|
@@ -61,25 +60,20 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был подключен к, но не запускается в отладчике.|
 |`PFLAG_REASON_WATCH`|Вызывающая сторона хочет слежения за событиями. Если этот флаг не установлен. затем удаляется событие обратного вызова, и вызывающий объект больше не получает уведомления.|
 
- `pPort`\
+`pPort`\
+[in] Порт вызывающий процесс выполняется на.
 
- [in] Порт вызывающий процесс выполняется на.
+`processId`\
+[in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, содержащую рассматриваемый идентификатор процесса, в которой находится программа.
 
- `processId`\
+`EngineFilter`\
+[in] Массив идентификаторов GUID отладчиков, связанных с процессом.
 
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, содержащую рассматриваемый идентификатор процесса, в которой находится программа.
+`guidLaunchingEngine`\
+[in] Идентификатор GUID модуля отладки, который запустил процесс (если таковые имеются).
 
- `EngineFilter`\
-
- [in] Массив идентификаторов GUID отладчиков, связанных с процессом.
-
- `guidLaunchingEngine`\
-
- [in] Идентификатор GUID модуля отладки, который запустил процесс (если таковые имеются).
-
- `pEventCallback`\
-
- [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) объект, получающий уведомления о событиях.
+`pEventCallback`\
+[in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) объект, получающий уведомления о событиях.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

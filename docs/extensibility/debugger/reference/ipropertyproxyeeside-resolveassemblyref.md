@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87b72f7bf9d91f7e59bd5550149ed7cf09f8827d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 68efedbf9e8fa19025c7e7f1e47ed70cc1e9d1cc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458113"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198704"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 Определяет расположение ссылки указанной управляемой сборки.
@@ -48,25 +48,20 @@ int ResolveAssemblyRef(
 ```
 
 ## <a name="parameters"></a>Параметры
- `assemName`\
+`assemName`\
+[in] Имя сборки для решения.
 
- [in] Имя сборки для решения.
+`assemBytes`\
+[out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки, связанный со ссылкой.
 
- `assemBytes`\
+`assemPdb`\
+[out] Возвращает `IEEDataStorage` объект, содержащий символ хранить данные, связанные с этой ссылкой.
 
- [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки, связанный со ссылкой.
+`assemLocation`\
+[out] Возвращает путь данной ссылки.
 
- `assemPdb`\
-
- [out] Возвращает `IEEDataStorage` объект, содержащий символ хранить данные, связанные с этой ссылкой.
-
- `assemLocation`\
-
- [out] Возвращает путь данной ссылки.
-
- `alr`\
-
- [out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение этой ссылки сборки.
+`alr`\
+[out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение этой ссылки сборки.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

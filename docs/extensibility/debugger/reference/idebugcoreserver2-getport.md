@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44e801318a2a997e7c1ab2f863b737c4d6693e14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 578826eba2cd89ba045590ae110f57949e572064
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922271"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205653"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 Извлекает определенный порт.
@@ -38,14 +41,12 @@ int GetPort( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `guidPort`
+## <a name="parameters"></a>Параметры
+`guidPort`\
+[in] GUID порта для извлечения.
 
- [in] GUID порта для извлечения.
-
- `ppPort`
-
- [out] Возвращает [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) объект, представляющий нужный порт.
+`ppPort`\
+[out] Возвращает [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) объект, представляющий нужный порт.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_PORTSUPPLIER_NO_PORT` Если нет порта с заданным идентификатором.

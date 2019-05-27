@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c6ce5664a75e2eae7066361cea1bfdaa808331b5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 196a600b574963a4bca3a774309a9f9763cd9fa3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226615"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208188"
 ---
 # <a name="ienumdebugerrorbreakpoints2next"></a>IEnumDebugErrorBreakpoints2::Next
 Возвращает следующий набор элементов из перечисления.
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>Параметры
- `celt`\
+`celt`\
+[in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
 
- [in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
+`rgelt`\
+[in, out] Массив [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) элементов для заполнения.
 
- `rgelt`\
-
- [in, out] Массив [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) элементов для заполнения.
-
- `pceltFetched`\
-
- [out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
+`pceltFetched`\
+[out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.

@@ -1,7 +1,7 @@
 ---
 title: Анализ кода FxCop и анализаторы FxCop
 ms.date: 09/06/2018
-ms.topic: overview
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
 author: gewarren
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab7816e7e1472101f0e84c05a4975f19e3902e27
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
-ms.translationtype: HT
+ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65613551"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037265"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Часто задаваемые вопросы, посвященные FxCop и анализаторам FxCop
 
@@ -48,6 +48,10 @@ ms.locfileid: "65613551"
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
+
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Какие правила были перенесены анализаторы FxCop?
+
+Сведения о том, какие правила анализа статического кода были перенесены [анализаторы FxCop](install-fxcop-analyzers.md), см. в разделе [состояние порта правила Fxcop](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>См. также
 

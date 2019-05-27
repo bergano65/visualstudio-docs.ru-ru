@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b17636d5f346475018e27c72562807b44b39460c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2d6f6672349d6a37d0f7b5e43c9a68d765d3abc7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872902"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203000"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
 Возвращает модуль, для которого создается загрузке или выгрузке.
@@ -40,18 +43,15 @@ int GetModule( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pModule`
+## <a name="parameters"></a>Параметры
+`pModule`\
+[out] Возвращает [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , представляющий модуль, который загрузкой или выгрузкой.
 
- [out] Возвращает [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , представляющий модуль, который загрузкой или выгрузкой.
+`pbstrDebugMessage`\
+[in, out] Возвращает необязательное сообщение, описывающее данное событие. Если этот параметр имеет значение null, сообщение не запрашивается.
 
- `pbstrDebugMessage`
-
- [in, out] Возвращает необязательное сообщение, описывающее данное событие. Если этот параметр имеет значение null, сообщение не запрашивается.
-
- `pbLoad`
-
- [in, out] Ненулевое значение (`TRUE`) Если модуль является загрузка и ноль (`FALSE`) Если модуль выгружается. Если этот параметр имеет значение null, состояние не запрашивается.
+`pbLoad`\
+[in, out] Ненулевое значение (`TRUE`) Если модуль является загрузка и ноль (`FALSE`) Если модуль выгружается. Если этот параметр имеет значение null, состояние не запрашивается.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

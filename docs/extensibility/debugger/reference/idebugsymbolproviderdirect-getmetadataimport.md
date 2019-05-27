@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17ba4ac3deb72185094c0f943adf5a2ae235fa95
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: c2b6a97dd00edc66699fbf815ed56031ed74ac3b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224069"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207038"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 Извлекает сведения о импорта метаданных.
@@ -43,17 +43,14 @@ int GetMetaDataImport (
 ```
 
 ## <a name="parameters"></a>Параметры
- `guid`\
+`guid`\
+[in] Уникальный идентификатор для модуля.
 
- [in] Уникальный идентификатор для модуля.
+`appID`\
+[in] Идентификатор домена приложения.
 
- `appID`\
-
- [in] Идентификатор домена приложения.
-
- `ppImport`\
-
- [out] Возвращает объект, содержащий метаданные Импорт данных.
+`ppImport`\
+[out] Возвращает объект, содержащий метаданные Импорт данных.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

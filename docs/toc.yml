@@ -16,10 +16,10 @@
   items:
     - name: Установка Visual Studio
       href: install/install-visual-studio.md
-    - name: Учетные записи
+    - name: Учетные записи персонализации
       items:
         - name: Выполните вход в Visual Studio
-          displayName: peronalization accounts
+          displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: Работа с несколькими учетными записями пользователя
           href: ide/work-with-multiple-user-accounts.md
@@ -43,15 +43,13 @@
       href: install/update-visual-studio.md
     - name: Изменение Visual Studio
       href: install/modify-visual-studio.md
-    - name: Установка средства просмотра справки
-      href: help-viewer/installation.md
     - name: Восстановите Visual Studio.
       href: install/repair-visual-studio.md
     - name: Удаление Visual Studio
       href: install/uninstall-visual-studio.md
     - name: Руководство администратора Visual Studio
       items:
-        - name: Руководство администратора
+        - name: Обзор
           href: install/visual-studio-administrator-guide.md
         - name: Использование командной строки
           items:
@@ -138,6 +136,8 @@
           href: install/advanced-build-tools-container.md
         - name: Известные проблемы для контейнеров
           href: install/build-tools-container-issues.md
+    - name: Установка средства просмотра справки
+      href: help-viewer/installation.md
 - name: Краткие руководства
   items:
     - name: Ориентация Visual Studio
@@ -231,6 +231,8 @@
               items:
                 - name: Создание шаблонов проектов и элементов
                   href: ide/creating-project-and-item-templates.md
+                - name: Добавление тегов в шаблон
+                  href: ide/template-tags.md
                 - name: Создание шаблонов проектов
                   href: ide/how-to-create-project-templates.md
                 - name: Создание многопроектных шаблонов
