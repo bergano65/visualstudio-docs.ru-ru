@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d6dd1d1b28ac4419604635b68767237eb6ce7d4
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 40c0cd23c8f89707bf1ef166b9059819448048e2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458958"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211684"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 Делает узел программы доступными для использования отладчиков (DEs) и сеанс отладки manager (SDM).
@@ -40,9 +40,8 @@ int PublishProgramNode(
 ```
 
 ## <a name="parameters"></a>Параметры
- `pProgramNode`\
-
- [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , представляющий узел программы, чтобы сделать доступными.
+`pProgramNode`\
+[in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , представляющий узел программы, чтобы сделать доступными.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

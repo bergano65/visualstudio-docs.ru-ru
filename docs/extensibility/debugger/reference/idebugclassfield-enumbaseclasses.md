@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74889ed04dceb133c80467d20f723f9561b6e25c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7a5e58899f260f6fdeb9cf33c1e9f2e77a283ada
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922769"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203233"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 Создает перечислитель для базовых классов данного класса.
@@ -36,10 +39,10 @@ int EnumBaseClasses(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppEnum`
+## <a name="parameters"></a>Параметры
+`ppEnum`\
 
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список базовых классов. Возвращает значение null, если нет базовых классов.
+[out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список базовых классов. Возвращает значение null, если нет базовых классов.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK, возвращает S_SH_NO_BASE_CLASSES, если отсутствие базовых классов (и `ppEnum` установлено в значение null); в противном случае возвращает код ошибки.

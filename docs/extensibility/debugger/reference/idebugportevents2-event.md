@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da493c3d818cab1cb9a7e0ad82de3ca2fa9ef3ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1dfc461aa7c1fc73d18ec6e52fd316e6a1eed7f3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872014"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209138"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 Этот метод отправляет события, которые обозначают созданием и удалением процессов и программ на порте.
@@ -46,26 +49,21 @@ int Event(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pMachine`
+## <a name="parameters"></a>Параметры
+`pMachine`\
+[in] [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) , представляющий сервер отладки (имеется один для каждого экземпляра [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]), в котором произошло событие.
 
- [in] [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) , представляющий сервер отладки (имеется один для каждого экземпляра [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]), в котором произошло событие.
+`pPort`\
+[in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) объект, который представляет порт, в котором произошло событие.
 
- `pPort`
+`pProcess`\
+[in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, представляющий процесс, в котором произошло событие.
 
- [in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) объект, который представляет порт, в котором произошло событие.
+`pProgram`\
+[in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу, в котором произошло событие.
 
- `pProcess`
-
- [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, представляющий процесс, в котором произошло событие.
-
- `pProgram`
-
- [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу, в котором произошло событие.
-
- `pEvent`
-
- [in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) объекта, которое идентифицирует событие. Ниже приведены возможные события.
+`pEvent`\
+[in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) объекта, которое идентифицирует событие. Ниже приведены возможные события.
 
 - [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)
 
@@ -75,7 +73,8 @@ int Event(
 
 - [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
 
-  `riidEvent` [in] Идентификатор GUID события. Так как событие приводится к [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) перед вызовом этого метода, этот идентификатор позволяет проще определить, какое событие отправляется.
+`riidEvent`\
+[in] Идентификатор GUID события. Так как событие приводится к [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) перед вызовом этого метода, этот идентификатор позволяет проще определить, какое событие отправляется.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

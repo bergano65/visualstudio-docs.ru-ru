@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f841960eec9274139307f5fcc1bcaea9bb9fb8e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 37ff30958d0f8343c5dc77c441087334524d3cd1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412855"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212554"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Выполняет шаг.
@@ -43,18 +46,15 @@ int Step( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pThread`
+## <a name="parameters"></a>Параметры
+`pThread`\
+[in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в настоящее время шаг.
 
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в настоящее время шаг.
+`sk`\
+[in] Значение из [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) перечисление, указывающее тип шага.
 
- `sk`
-
- [in] Значение из [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) перечисление, указывающее тип шага.
-
- `step`
-
- [in] Значение из [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) перечисление, указывающее единицы шага (например, путем инструкцию или инструкции).
+`step`\
+[in] Значение из [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) перечисление, указывающее единицы шага (например, путем инструкцию или инструкции).
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

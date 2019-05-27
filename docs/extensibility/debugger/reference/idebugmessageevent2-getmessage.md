@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6214d9240b51878d175496994831d767aa83375d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f0a1524a6c24b21dc9a167a7df286f60f48873
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918738"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210369"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 Получает сообщение для отображения.
@@ -45,26 +48,21 @@ int GetMessage( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pMessageType`
+## <a name="parameters"></a>Параметры
+`pMessageType`\
+[out] Возвращает значение из [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) перечисление, описывающее тип сообщения.
 
- [out] Возвращает значение из [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) перечисление, описывающее тип сообщения.
+`pbstrMessage`\
+[out] Возвращает сообщение.
 
- `pbstrMessage`
+`pdwType`\
+[out] Возвращает тип сообщения, используя правила Win32 `MessageBox` функции. См. в разделе [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) функция сведения.
 
- [out] Возвращает сообщение.
+`pbstrHelpFileName`\
+[in, out] Возвращает имя файла справки. Может быть значение null (C++) или пустое значение (C#), если нет файла справки.
 
- `pdwType`
-
- [out] Возвращает тип сообщения, используя правила Win32 `MessageBox` функции. См. в разделе [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) функция сведения.
-
- `pbstrHelpFileName`
-
- [in, out] Возвращает имя файла справки. Может быть значение null (C++) или пустое значение (C#), если нет файла справки.
-
- `pdwHelpId`
-
- [in, out] Возвращает идентификатор справки. Может быть 0, если нет справки, на которое имеется связанное с этим сообщением.
+`pdwHelpId`\
+[in, out] Возвращает идентификатор справки. Может быть 0, если нет справки, на которое имеется связанное с этим сообщением.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed978355aa752730cfb43390b3e4b6f80d327f83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bfee65537512398cad2f4b86d51ebefac230fb1c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919459"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212227"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 Этот метод сравнивает это поле с указанным полем на предмет равенства.
@@ -36,10 +39,9 @@ int Equal(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pField`
-
- [in] Поле для сравнения с этим параметром.
+## <a name="parameters"></a>Параметры
+`pField`\
+[in] Поле для сравнения с этим параметром.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Если поля не изменилось, возвращает `S_OK`. Если поля не совпадают, возвращает `S_FALSE.` в противном случае возвращает код ошибки.

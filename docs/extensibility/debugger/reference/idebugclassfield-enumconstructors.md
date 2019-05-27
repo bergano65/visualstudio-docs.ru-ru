@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ecc2e2fba9dbddc12a58866c7edcde51b148af1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bb31af11ae4ecc2618e577df6e3b1e2e45a0cbc7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922704"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203217"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 Создает перечислитель для конструкторов для данного класса.
@@ -38,14 +41,12 @@ int EnumConstructors(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `cMatch`
+## <a name="parameters"></a>Параметры
+`cMatch`\
+[in] Значение из [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) перечисления, указывающее тип конструкторов для перечисления.
 
- [in] Значение из [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) перечисления, указывающее тип конструкторов для перечисления.
-
- `ppEnum`
-
- [out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список конструкторов. Возвращает значение null, если конструкторы отсутствуют.
+`ppEnum`\
+[out] Возвращает [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) объект, представляющий список конструкторов. Возвращает значение null, если конструкторы отсутствуют.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK, или возвращает S_FALSE, если конструкторы отсутствуют. В противном случае возвращается код ошибки.
