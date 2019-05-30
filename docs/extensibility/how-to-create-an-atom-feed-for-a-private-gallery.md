@@ -6,23 +6,23 @@ helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 094bff5c761a45e936f14f79587b4846d3838610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 027a7f70240695e64051ef6c16fd3e5469d75900
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862996"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340883"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Практическое руководство. Создание канала для закрытой коллекции Atom
 Можно создать Atom RSS-канал в расположение в интрасети, содержащий расширения и добавить веб-канале, **расширения и обновления** качестве частной коллекции. Дополнительные сведения см. в статье [Закрытые коллекции](../extensibility/private-galleries.md).
 
 ## <a name="create-an-atom-feed"></a>Создать канал Atom
- Чтобы создать канал в качестве частной коллекции Atom, сначала собрать расширений (*.vsix* файлы) в папку. Если вы хотите, чтобы можно упорядочить их по вложенным папкам. Необходимо также следующие ресурсы:
+ Чтобы создать канал в качестве частной коллекции Atom, сначала собрать расширений ( *.vsix* файлы) в папку. Если вы хотите, чтобы можно упорядочить их по вложенным папкам. Необходимо также следующие ресурсы:
 
 - *Atom.xml* файл, который делает доступными расширения качестве частной коллекции. Сведения о подключении *atom.xml* файл **расширения и обновления**, см. в разделе [закрытые коллекции](../extensibility/private-galleries.md).
 

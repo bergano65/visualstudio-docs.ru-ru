@@ -7,17 +7,17 @@ helpviewer_keywords:
 - commands [Visual Studio]
 - toolbars [Visual Studio], commands
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0634105b9b071ac4155adb3248abd2b4be19b29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aed5a91a819658fb141abb4301b9b9499ed602c6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861999"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311162"
 ---
 # <a name="commands-menus-and-toolbars"></a>Команды, меню и панелей инструментов
 Меню и панелей инструментов, что пользователей получить доступ к командам в VSPackage. Команды — это функции, которые выполняют задачи, например печать документа, обновление представления или создание нового файла. Меню и панели инструментов — это удобные графические способы представления команд пользователям. Обычно связанные команды группируются в одном меню или на одной панели инструментов.
@@ -28,7 +28,7 @@ ms.locfileid: "62861999"
 
 - При создании команды необходимо также создать для нее обработчик событий. Обработчик событий определяет, когда команда видна или включена, позволяет изменить ее текст и гарантирует, что команда отвечает соответствующим образом ("маршрутизируется") при активации. В большинстве экземпляров среда IDE обрабатывает команды с помощью интерфейса <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>. Команды в маршруте [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] указаны в виде иерархии, начиная с корневого контекста команды на основе локального выбора и до внешнего контекста на основе глобального выделения. Команды, добавленные в главное меню, становятся сразу доступными для использования в сценариях. Дополнительные сведения см. в разделе [команды MenuCommand и. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md) и [объекты контекста выбора](../../extensibility/internals/selection-context-objects.md).
 
-  Для определения новых меню и панелей инструментов, необходимо описать их в таблицы команд Visual Studio (*.vsct*) файла. Шаблон пакета Visual Studio создает этот файл, а также элементы, необходимые для поддержки любые команды, панелей инструментов и редакторов, выбранных в шаблоне. Кроме того, можно написать собственный *.vsct* файл, с помощью схемы XML, описанной здесь: [Справочник по схемам VSCT XML](../../extensibility/vsct-xml-schema-reference.md).
+  Для определения новых меню и панелей инструментов, необходимо описать их в таблицы команд Visual Studio ( *.vsct*) файла. Шаблон пакета Visual Studio создает этот файл, а также элементы, необходимые для поддержки любые команды, панелей инструментов и редакторов, выбранных в шаблоне. Кроме того, можно написать собственный *.vsct* файл, с помощью схемы XML, описанной здесь: [Справочник по схемам VSCT XML](../../extensibility/vsct-xml-schema-reference.md).
 
   Дополнительные сведения о работе с *.vsct* файлы, см. в разделе [Visual Studio командные table (.vsct) файлы](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
