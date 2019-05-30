@@ -7,17 +7,17 @@ helpviewer_keywords:
 - language services [managed package framework], outlining
 - outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7aa01918b8de718fc26c0dc0249615b327150020
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7af8ab4615cff7462a47dfb11b193660eb62274c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422886"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314882"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Структурирование в языковой службе прежних версий
 Структурирование позволяет свернуть сложную программу в обзор или структуры. Например в C# можно свернуть все методы в одну строку, содержащую только сигнатуру метода. Кроме того структуры и классы можно свернуть, чтобы отобразить только имена структур и классов. Из единственного метода сложную логику можно свернуть, чтобы показать Общая последовательность действий, отображая только первая часть инструкции, такие как `foreach`, `if`, и `while`.

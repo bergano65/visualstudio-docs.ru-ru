@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861769"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340789"
 ---
 # <a name="inside-the-editor"></a>В редакторе
 
@@ -108,7 +108,7 @@ ms.locfileid: "62861769"
 
 #### <a name="spans-and-normalizedspancollections"></a>Диапазоны и NormalizedSpanCollections
 
-Объект <xref:Microsoft.VisualStudio.Text.Span> представляет интервал, который может применяться к диапазону текста в текстовом снимке. Моментальный снимок имеют отсчитываемый от нуля, чтобы диапазоны можно запустить в любой позиции, включая ноль. `End` Диапазона равно сумме его `Start` свойство и его `Length` свойство. Объект `Span` не включает символ, который индексируется по `End` свойство. Например, область, которая имеет Start = 5 и длина = 3 имеет конечный = 8, и он содержит знаки в позициях, 5, 6 и 7. Нотация для этой области является 5..8).
+Объект <xref:Microsoft.VisualStudio.Text.Span> представляет интервал, который может применяться к диапазону текста в текстовом снимке. Моментальный снимок имеют отсчитываемый от нуля, чтобы диапазоны можно запустить в любой позиции, включая ноль. `End` Диапазона равно сумме его `Start` свойство и его `Length` свойство. Объект `Span` не включает символ, который индексируется по `End` свойство. Например, область, которая имеет Start = 5 и длина = 3 имеет конечный = 8, и он содержит знаки в позициях, 5, 6 и 7. Нотация для этой области является [5..8).
 
 Два диапазоны пересекаются, если они содержат любые общие позиции, включая конечное положение. Таким образом, пересечение [3, 5) и [2, 7) — [3, 5) и пересечение [3, 5) и [5, 7) — [5, 5). (Обратите внимание, что [5, 5) — это пустой диапазон.)
 

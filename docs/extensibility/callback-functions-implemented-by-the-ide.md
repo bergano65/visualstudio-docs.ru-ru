@@ -6,22 +6,22 @@ helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc3b4423b54975c773de743b093f882f1fd9c42c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dff6ee0a81472ea556aaca478a2ff33db93fe871
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926940"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321176"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Функции обратного вызова, реализованные интегрированной среды разработки
 Чтобы интеграция с по интегрированной среде разработки (IDE) как простой, как можно и для обеспечения единой конечных пользователей, подключаемый модуль системы управления версиями можно использовать функции обратного вызова, реализуемые интегрированной среды разработки с. Подключаемый модуль может вызывать эти функции в соответствующее время во время операции управления версиями для передачи информации в интегрированную среду разработки; Эти сведения затем можно отобразить интегрированной среды разработки как внедренные элементы в его собственном пользовательском Интерфейсе. Пользователь имеет возможность менее фрагментированных в этом сценарии, чем если подключаемый модуль используются свой UI.
 
- Обязательный заголовок файл *scc.h*. Расположение по умолчанию — *\Program Files\VSIP 8.0\EnvSDK\common\inc\\*. Это также в папку VSIP, образец подключаемого модуля управления источника в *\Program Files\VSIP 8.0\MSSCCI\\*.
+ Обязательный заголовок файл *scc.h*. Расположение по умолчанию — *\Program Files\VSIP 8.0\EnvSDK\common\inc\\* . Это также в папку VSIP, образец подключаемого модуля управления источника в *\Program Files\VSIP 8.0\MSSCCI\\* .
 
 ## <a name="in-this-section"></a>Содержание раздела
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) описывает функцию обратного вызова, используемый [SccOpenProject](../extensibility/sccopenproject-function.md) для отображения сообщений из системы управления версиями, подключаемый модуль через среду IDE.

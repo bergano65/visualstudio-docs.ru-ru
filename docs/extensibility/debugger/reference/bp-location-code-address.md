@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_ADDRESS structure
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cce96e2edfcbc0dcb6dc4c6ff0e58617ad792ad8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+ms.openlocfilehash: 51137b5a5a69c80ecd7129d4c645f63b5805d27d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698005"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319130"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 Описывает расположение точки останова по адресу в коде.
@@ -34,13 +36,17 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 ```
 
 ## <a name="members"></a>Участники
-`bstrContext` Контекст точки останова, обычно имя метода или функции материал в стеке вызовов.
+`bstrContext`\
+Контекст точки останова, обычно имя метода или функции материал в стеке вызовов.
 
-`bstrModuleUrl` URL-адрес модуля, содержащего точку останова.
+`bstrModuleUrl`\
+URL-адрес модуля, содержащего точку останова.
 
-`bstrFunction` Имя функции, содержащей точку останова.
+`bstrFunction`\
+Имя функции, содержащей точку останова.
 
-`bstrAddress` Адрес точки останова, который анализируется с вычислитель выражений, чтобы привязать его к [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объекта.
+`bstrAddress`\
+Адрес точки останова, который анализируется с вычислитель выражений, чтобы привязать его к [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) объекта.
 
 ## <a name="remarks"></a>Примечания
 Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.

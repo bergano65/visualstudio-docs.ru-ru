@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2964c833abfa25b57678680f8b821f992cb31de8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3dc51691d4d424ee4d1c1a450f1e4e32b78e0e6e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689191"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319298"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 Указывает тип ошибки точки останова.
@@ -57,28 +60,39 @@ public enum enum_BP_ERROR_TYPE {
 };
 ```
 
-## <a name="members"></a>Участники
-BPET_NONE указывает не ошибка точки останова.
+## <a name="fields"></a>Поля
+`BPET_NONE`\
+Указывает ошибки не точки останова.
 
-BPET_TYPE_WARNING идентифицирует ошибку стиле предупреждение точки останова.
+`BPET_TYPE_WARNING`\
+Идентифицирует ошибку стиле предупреждение точки останова.
 
-BPET_TYPE_ERROR указывает ошибку стиля ошибки точки останова.
+`BPET_TYPE_ERROR`\
+Указывает ошибку стиля ошибки точки останова.
 
-BPET_SEV_HIGH идентифицирует ошибку точки останова с высокой важностью.
+`BPET_SEV_HIGH`\
+Идентифицирует ошибку точки останова с высокой важностью.
 
-BPET_SEV_GENERAL идентифицирует ошибку серьезности средняя точка останова.
+`BPET_SEV_GENERAL`\
+Идентифицирует ошибку серьезности средняя точка останова.
 
-BPET_SEV_LOW идентифицирует ошибку низкая серьезность точки останова.
+`BPET_SEV_LOW`\
+Идентифицирует ошибку низкая серьезность точки останова.
 
-BPET_TYPE_MASK идентифицирует ошибку стиле маска точки останова.
+`BPET_TYPE_MASK`\
+Идентифицирует ошибку стиле маска точки останова.
 
-BPET_SEV_MASK идентифицирует ошибку серьезности маска style точки останова.
+`BPET_SEV_MASK`\
+Идентифицирует ошибку серьезности маска style точки останова.
 
-BPET_GENERAL_WARNING идентифицирует ошибку общие предупреждение style точки останова.
+`BPET_GENERAL_WARNING`\
+Идентифицирует ошибку общие предупреждение style точки останова.
 
-BPET_GENERAL_ERROR идентифицирует ошибку общие стиля ошибки точки останова.
+`BPET_GENERAL_ERROR`\
+Идентифицирует ошибку общие стиля ошибки точки останова.
 
-BPET_ALL задает все типы ошибок точки останова.
+`BPET_ALL`\
+Указывает типы ошибок все точки останова.
 
 ## <a name="remarks"></a>Примечания
 Эти значения могут объединяться с помощью побитовой `OR` и используются для `dwType` членом [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры. Переданный в качестве параметра для [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) метод.

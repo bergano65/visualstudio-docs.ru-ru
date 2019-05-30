@@ -7,17 +7,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - colors, accessing built-in schemes
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2abc6606d33e4b59faeb1838bcb173fd51a28616
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415516"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340972"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Практическое руководство. Доступ к встроенной шрифты и цвета ccheme
 В среде разработки Visual Studio (IDE) имеет схему шрифтов и цветов, связанный с окном редактора. Можно получить доступ к этой схемы через <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> интерфейс.
@@ -41,7 +41,7 @@ ms.locfileid: "63415516"
     > [!NOTE]
     > При получении данных шрифта и цвета с <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> или других интерфейсов, пакетов VSPackage использовать этот идентификатор GUID для ссылки на встроенные сведения.
 
-2. Имя категории должны добавляться в таблицу строк внутри ресурсов в пакете VSPackage (*.rc*) файл, таким образом, чтобы можно было локализовать при необходимости при отображении в интегрированной среде разработки.
+2. Имя категории должны добавляться в таблицу строк внутри ресурсов в пакете VSPackage ( *.rc*) файл, таким образом, чтобы можно было локализовать при необходимости при отображении в интегрированной среде разработки.
 
      Дополнительные сведения см. в разделе [Добавление или удаление строки](/cpp/windows/adding-or-deleting-a-string).
 
@@ -49,7 +49,7 @@ ms.locfileid: "63415516"
 
 1. Создайте специальный тип записи реестра категории в следующем расположении:
 
-     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<версия Visual Studio > \FontAndColors\\\<категории >*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<версия Visual Studio > \FontAndColors\\\<категории >* ]
 
      *\<Категория >* нелокализованное имя категории.
 

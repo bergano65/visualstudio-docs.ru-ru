@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae68c77e2d6a41adfff6b49e55bbc6df4393fec7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1bdcbc4171c8a481ee0c45456ef5600f5150c6d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701723"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317586"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 Задает имя тип файлов для извлечения.
@@ -49,20 +52,27 @@ public enum enum_GETNAME_TYPE {
 };
 ```
 
-## <a name="members"></a>Участники
-GN_NAME указывает понятное имя документа или контекста.
+## <a name="fields"></a>Поля
+`GN_NAME`\
+Указывает понятное имя документа или контекста.
 
-GN_FILENAME указывает полный путь документа или контекста.
+`GN_FILENAME`\
+Указывает полный путь документа или контекста.
 
-GN_BASENAME указывает имя базового файла, а не полный путь документа или контекста.
+`GN_BASENAME`\
+Указывает имя базового файла, а не полный путь документа или контекста.
 
-GN_MONIKERNAME указывает уникальное имя документа или контекста в виде моникер.
+`GN_MONIKERNAME`\
+Указывает уникальное имя документа или контекста в виде моникер.
 
-URL-адрес GN_URL имя документа или контекста.
+`GN_URL`\
+Задает имя URL-адрес документа или контекста.
 
-GN_TITLE указывает название документа, если он существует.
+`GN_TITLE`\
+Указывает заголовок документа, если он существует.
 
-Обрабатывает GN_STARTPAGEURL Возвращает начальный URL-адрес для "страницы".
+`GN_STARTPAGEURL`\
+Получает URL-адрес начальной страницы для процессов.
 
 ## <a name="remarks"></a>Примечания
 Эти значения передаются как параметры для [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), и [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) методы, чтобы указать, какие имени для возврата.

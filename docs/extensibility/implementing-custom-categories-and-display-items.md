@@ -6,17 +6,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4eeb8af06ee4e3285e15afbb3571fb2845adef98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418842"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321403"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Реализовать пользовательские категории и отображать элементы
 VSPackage может предоставить контроль над шрифты и цвета текста для [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE) через пользовательские категории и отображаемые элементы.
@@ -45,7 +45,7 @@ VSPackage может предоставить контроль над шрифт
 
 ## <a name="to-create-or-identify-categories"></a>Для создания и определения категорий
 
-- Создать специальный тип категории записи реестра в разделе *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >*\FontAndColors\\ `<Category>`]*
+- Создать специальный тип категории записи реестра в разделе *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<версия Visual Studio > *\FontAndColors\\ `<Category>`]*
 
    *\<Категория >* нелокализованное имя категории.
 
@@ -60,7 +60,7 @@ VSPackage может предоставить контроль над шрифт
 
 ## <a name="to-create-or-identify-groups"></a>Чтобы создать или определить группы
 
-- Создать специальный тип категории записи реестра в разделе *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >*\FontAndColors\\*  \<группы >*]*
+- Создать специальный тип категории записи реестра в разделе *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<версия Visual Studio > *\FontAndColors\\*  \<группы > *]*
 
    *\<группы >* нелокализованное имя группы.
 

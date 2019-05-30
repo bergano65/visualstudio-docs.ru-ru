@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19c73e47e8c07ebcf7c1124e6e59d80f76101458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409991"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341658"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Создание системы базового проекта, часть 1
 В Visual Studio проекты — это контейнеры, используемые разработчиками для организации файлов исходного кода и других ресурсов. Проекты отображаются как дочерние элементы решений в **обозревателе решений**. Проекты позволяют упорядочивать, создание, отладку и развертывать исходный код и создавать ссылки на Web services, баз данных и другие ресурсы.
@@ -224,7 +224,7 @@ Templates
 
     Перестроение регистрирует шаблон проекта.
 
-   Параметры `defaultProjectExtension` и `possibleProjectExtensions` присваивается расширение имени файла проекта (*.myproj*). `projectTemplatesDirectory` Параметр имеет значение относительный путь к *шаблоны* папки. Во время сборки этот путь будет преобразуются в полной сборки и добавляется в реестр, чтобы зарегистрировать систему проекта.
+   Параметры `defaultProjectExtension` и `possibleProjectExtensions` присваивается расширение имени файла проекта ( *.myproj*). `projectTemplatesDirectory` Параметр имеет значение относительный путь к *шаблоны* папки. Во время сборки этот путь будет преобразуются в полной сборки и добавляется в реестр, чтобы зарегистрировать систему проекта.
 
 ## <a name="test-the-template-registration"></a>Проверка регистрации шаблона
  Шаблон регистрации указывает Visual Studio расположение папки шаблона проекта Visual Studio можно отображать имя шаблона и значок в **новый проект** диалоговое окно.
