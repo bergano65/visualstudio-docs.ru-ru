@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Проверка обновлений для приложения программным способом с помощью API развертывания ClickOnce | Документация Майкрософт
+title: Автоматическое обновление приложений с помощью API развертывания ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90499ae5dadac705d759270996f647b2d1a65445
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9f47c82311f26c5ca469f03783b785545bda2182
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406602"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260822"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Практическое руководство. проверку обновлений для приложения программным способом с помощью функций API развертывания технологии ClickOnce
 ClickOnce обеспечивает два способа обновления приложения после его развертывания. Во-первых можно настроить развертывание ClickOnce автоматически проверять наличие обновлений, через определенные промежутки времени. Во втором методе, можно написать код, использующий <xref:System.Deployment.Application.ApplicationDeployment> для проверки наличия обновлений на основе события, например запрос пользователя.
@@ -30,7 +30,7 @@ ClickOnce обеспечивает два способа обновления п
  Чтобы обновить приложение ClickOnce программно, необходимо указать расположение для обновления. Иногда это называется поставщик развертывания. Дополнительные сведения об установке данного свойства см. в разделе [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
 > [!NOTE]
-> Можно также использовать метод, описанный ниже для развертывания приложения из одного расположения, но обновить ее из другого. Дополнительные сведения см. в разделе [Как задать альтернативное местоположение для обновлений развертывания](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).
+> Можно также использовать метод, описанный ниже для развертывания приложения из одного расположения, но обновить ее из другого. Дополнительные сведения см. в разделе [Практическое руководство. задать альтернативное местоположение для обновлений развертывания](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).
 
 ### <a name="to-check-for-updates-programmatically"></a>Чтобы проверить наличие обновлений программным способом
 

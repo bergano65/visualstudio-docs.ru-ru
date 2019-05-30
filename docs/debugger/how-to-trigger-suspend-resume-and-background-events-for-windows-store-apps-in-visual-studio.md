@@ -1,5 +1,5 @@
 ---
-title: Триггер приостановки, возобновления и фоновых событий во время отладки универсальной платформы Windows | Документация Майкрософт
+title: Активация событий приостановки/возобновления/фона при отладке универсальной платформы Windows
 ms.custom: seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c0c5c6a1bfb161f8eed37cbf9c95740596977852
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aefa6bad31b15445ab4b294f8c2e8a80e320e88c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388502"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263346"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Активация приостановки, возобновления и фоновых событий во время отладки приложения UWP в Visual Studio
 Если в данный момент отладка не выполняется, приложение **Управление жизненным циклом процесса** Windows управляет состоянием выполнения приложения: запуском, приостановкой, возобновлением и завершением работы приложения в ответ на действия пользователя и состояние устройства. При отладке Windows отключает эти события активации. В этом разделе описывается запуск этих событий в отладчике.

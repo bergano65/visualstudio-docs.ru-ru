@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Публикация расширения Visual Studio с помощью командной строки | Документация Майкрософт
+title: Публикация расширения с помощью командной строки
 ms.date: 07/12/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: be9585158235dadb6e415e88e42e2d324ba8fcbe
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966270"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261667"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Пошаговое руководство. Публикация расширения Visual Studio с помощью командной строки
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793456"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037010"
 ---
 # <a name="project-and-item-templates"></a>Шаблоны проектов и элементов
 
@@ -27,7 +27,7 @@ ms.locfileid: "62793456"
 
 Для пользователей эти шаблоны представляют собой отправную точку, с которой можно начать создание новых проектов или расширение текущих проектов. Шаблоны проектов предоставляют файлы, необходимые для конкретного типа проекта, включая стандартные ссылки на сборки, задают свойства проекта и параметры компилятора по умолчанию. По сложности шаблоны элементов могут варьироваться от одного пустого файла с определенным расширением до нескольких файлов исходного кода, которые содержат код заглушек, файлы сведений о конструкторе и внедренные ресурсы.
 
-Вы можете использовать установленные шаблоны, создавать собственные шаблоны, а также скачивать и использовать шаблоны, созданные сообществом. Дополнительные сведения см. в разделе [Как Создание шаблонов проектов](../ide/how-to-create-project-templates.md) и [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md).
+Вы можете использовать установленные шаблоны, создавать собственные шаблоны, а также скачивать и использовать шаблоны, созданные сообществом. Дополнительные сведения см. в разделе [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md) и [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Содержимое шаблона
 
@@ -47,7 +47,7 @@ ms.locfileid: "62793456"
 
 ::: moniker-end
 
-   Дополнительные сведения о *VSTEMPLATE*-файлах см. в статье [Параметры шаблона](../ide/template-parameters.md).
+   Дополнительные сведения о *VSTEMPLATE*-файлах см. в статьях о [тегах шаблона](template-tags.md) и [параметрах шаблона](../ide/template-parameters.md).
 
 Если эти файлы сжаты в *ZIP*-файл и помещены в соответствующую папку, Visual Studio автоматически отображает их в следующих расположениях:
 
@@ -70,7 +70,8 @@ ms.locfileid: "62793456"
 ## <a name="see-also"></a>См. также
 
 - [Практическое руководство. создание шаблонов проектов](../ide/how-to-create-project-templates.md)
-- [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+- [Практическое руководство. создание шаблонов элементов](../ide/how-to-create-item-templates.md)
+- [Теги шаблона](template-tags.md)
 - [Параметры шаблона](../ide/template-parameters.md)
 - [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
 - [Пакеты NuGet в шаблонах Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

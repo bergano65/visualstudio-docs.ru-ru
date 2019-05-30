@@ -9,17 +9,17 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93283854760c4ab8309d3769550beb664c14f41b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423967"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314653"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Сведения о параметрах в языковой службе прежних версий
 Подсказка о параметрах IntelliSense предоставляет пользователям указания о где они находятся в конструкции языка.

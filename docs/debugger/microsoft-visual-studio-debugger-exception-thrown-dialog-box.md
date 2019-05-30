@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a684002360f59d33e61c40261afc1bfd515511e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9fd0035ca0764f3673e07b4e3289b87773c8349b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408528"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261340"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Отладчик Microsoft Visual Studio (создание исключения) - диалоговое окно
 В программе возникло исключение. Это диалоговое окно сообщает о типе вызванного исключения. В коде должна быть предусмотрена обработка этого исключения. Для обработки исключения можно выбрать один из следующих вариантов:
@@ -44,4 +44,4 @@ ms.locfileid: "63408528"
 ## <a name="see-also"></a>См. также
 - [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md)
 - [Рекомендации по обработке исключений](/dotnet/standard/exceptions/best-practices-for-exceptions)
-- [Обработка исключений](/cpp/windows/exception-handling-cpp-component-extensions)
+- [Обработка исключений](/cpp/extensions/exception-handling-cpp-component-extensions)

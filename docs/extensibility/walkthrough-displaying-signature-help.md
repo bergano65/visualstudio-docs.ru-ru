@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89d81ee2e860dead62352cc14cef95e21536c29d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 403009367f6cdf8a9fd1ebb750ee9bb020690685
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965171"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312422"
 ---
 # <a name="walkthrough-display-signature-help"></a>Пошаговое руководство. Отобразить справку по сигнатурам
 Справка по сигнатурам (также известный как *сведения о параметрах*) отображается подпись метода во всплывающей подсказке, когда пользователь вводит символ начала списка параметра (обычно открывающая скобка). Как параметр и параметр разделитель (обычно запятой) типизированы, подсказка обновляется для отображения следующего параметра полужирным шрифтом. Справка по сигнатурам можно определить одним из следующих способов: в контексте языковой службы, определите расширение имени файла и тип содержимого и отображения справки сигнатуры для только этого типа либо отображения справки сигнатуры для существующих типов (например, «text»). В этом пошаговом руководстве показано, как для отображения справки сигнатуры для типа содержимого «text».

@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce | Документация Майкрософт
+title: Загрузка сборок по требованию с помощью API развертывания ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99d8804b5c6050665508a9a1a6edc8b37fe7ff0c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f52d853399bb568407b5022dca7f6288e3901a7a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405861"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262910"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Пошаговое руководство. Загрузка сборок по требованию с помощью API развертывания ClickOnce
 По умолчанию все сборки включены в [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения загружаются при первом запуске приложения. Тем не менее возможно, частей приложения, которые используются с небольшого набора пользователей. В этом случае рекомендуется скачивать сборку только при создании одного из ее типов. В следующем примере показано, как пометить определенные сборки в приложении как "необязательные" и скачивать их с помощью классов в пространстве имен <xref:System.Deployment.Application>, когда среда CLR нуждается в них.

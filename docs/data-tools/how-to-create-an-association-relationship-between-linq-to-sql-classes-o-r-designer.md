@@ -1,5 +1,5 @@
 ---
-title: Создание отношения между классами LINQ to SQL с помощью реляционного конструктора объектов
+title: Отношения между классами LINQ to SQL (реляционный конструктор объектов)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6b6f0b1f3afec1231778a54c82422d6761995eb1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51999b1fe9396eaa393491d9a96b184a674621da
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402795"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260431"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Практическое руководство. Создание ассоциации между классами LINQ to SQL (реляционный конструктор объектов)
 Ассоциации между классами сущностей в [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] аналогичны отношениям между таблицами в базе данных. Ассоциации между классами сущностей можно создавать, используя диалоговое окно **Редактор ассоциаций**.

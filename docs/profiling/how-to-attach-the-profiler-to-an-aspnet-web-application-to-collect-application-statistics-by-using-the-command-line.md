@@ -1,5 +1,5 @@
 ---
-title: Присоединение профилировщика к веб-приложению ASP.NET для сбора статистики приложения
+title: Присоединение Profiler к веб-приложению ASP.NET для получения статистики приложения
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 15c8fad4971e81ae91aebc8ad56be13ff0e33754
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4ff01635e754f2f615247e998aad765c1b366e69
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439558"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261420"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Как выполнить Присоединение профилировщика к веб-приложению ASP.NET для сбора статистики приложения с помощью командной строки
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора статистики приложения с помощью командной строки
 В этой статье описывается, как с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], выполняемых из командной строки, подключить профилировщик к приложению ASP.NET и собрать статистические данные по производительности с использованием метода выборки.
 
 > [!NOTE]
@@ -40,7 +40,7 @@ ms.locfileid: "63439558"
 
 2. Инициализируйте переменные среды профилирования. Тип:
 
-    **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]
+    **VSPerfClrEnv /globalsampleon** [ **/samplelineoff**]
 
    - Параметр **/globalsampleon** включает выборку.
 
@@ -48,7 +48,7 @@ ms.locfileid: "63439558"
 
 3. Перезагрузите компьютер.
 
-4. Запуск профилировщика. Type:**VSPerfCmd** [/start](../profiling/start.md)**:sample** [/output](../profiling/output.md)**:**`OutputFile`[`Options`]
+4. Запуск профилировщика. Type:**VSPerfCmd** [/start](../profiling/start.md) **:sample** [/output](../profiling/output.md) **:** `OutputFile`[`Options`]
 
    - Параметр **/start:sample** инициализирует профилировщик.
 
@@ -61,7 +61,7 @@ ms.locfileid: "63439558"
 
    | Параметр | Описание |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Указывает домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце **Имя пользователя** на вкладке **Процессы** диспетчера задач Windows. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Указывает домен и имя пользователя учетной записи, которая является владельцем рабочего процесса ASP.NET. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от пользователя, вошедшего в систему. Владелец процесса указан в столбце **Имя пользователя** на вкладке **Процессы** диспетчера задач Windows. |
    | [/crossession](../profiling/crosssession.md) | Включает профилирование процессов в других сеансах входа. Этот параметр является обязательным, если приложение ASP.NET выполняется в другом сеансе. Идентификатор сеанса указан в столбце "Идентификатор сеанса" на вкладке "Процессы" диспетчера задач Windows. **/CS** можно указать как краткую версию **/crosssession**. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Задает счетчик производительности Windows, данные которого будут собираться во время профилирования. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500 мс. |
@@ -69,7 +69,7 @@ ms.locfileid: "63439558"
 
 5. Запустите веб-приложение ASP.NET обычным образом.
 
-6. Подключите профилировщик к рабочему процессу ASP.NET. Введите: **VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]
+6. Подключите профилировщик к рабочему процессу ASP.NET. Введите: **VSPerfCmd** [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md) **:** `Version`]
 
    - `PID` задает идентификатор рабочего процесса ASP.NET; `ProcName` задает имя рабочего процесса. Просмотреть идентификаторы и имена всех запущенных процессов можно в диспетчере задач Windows.
 
@@ -78,7 +78,7 @@ ms.locfileid: "63439558"
    |Событие выборки|Описание|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:** `Interval`|Изменяет интервал выборки на число неостановленных циклов, которые указываются с помощью свойства `Interval`.|
-   |[/pf](../profiling/pf.md)[**:**`Interval`]|Изменяет событие выборки на "ошибки страниц". Если указано свойство `Interval`, задает количество ошибок страниц между выборками. Значение по умолчанию — 10.|
+   |[/pf](../profiling/pf.md)[ **:** `Interval`]|Изменяет событие выборки на "ошибки страниц". Если указано свойство `Interval`, задает количество ошибок страниц между выборками. Значение по умолчанию — 10.|
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Изменяет событие выборки на "системные вызовы" из процесса к ядру операционной системы (syscall). Если указано свойство `Interval`, задает количество вызовов между выборками. Значение по умолчанию — 10.|
    |[/counter](../profiling/counter.md) **:** `Config`|Изменяет событие выборки и интервал на "счетчик производительности процессора" и интервал, указанный в `Config`.|
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|Указывает версию профилируемой среды CLR, если в приложении загружено несколько версий среды выполнения.|
@@ -94,9 +94,9 @@ ms.locfileid: "63439558"
 
     |Параметр|Описание|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` **/processoff:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса, который указан в `PID`.|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором `PID` или именем процесса (ProcName). **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` **/processoff:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса, который указан в `PID`.|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором `PID` или именем процесса (ProcName). **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
 
 ## <a name="end-the-profiling-session"></a>Завершение сеанса профилирования
  Для завершения сеанса профилирования закройте веб-приложение [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], а затем воспользуйтесь командой **IISReset** служб IIS, чтобы закрыть рабочий процесс [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Вызовите команду **VSPerfCmd** [/shutdown](../profiling/shutdown.md), чтобы завершить работу профилировщика и закрыть файл данных профилирования.

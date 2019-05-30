@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4385ad73b29f1266bb368a781da11279f887942b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847364"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261966"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Соглашения об именовании в среде .NET для EditorConfig
 
@@ -209,6 +209,6 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 
 ## <a name="see-also"></a>См. также
 
+- [Соглашения об именовании для Roslyn](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
 - [Соглашения по оформлению и написанию кода на .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Создание переносимых, настраиваемых параметров редактора](../ide/create-portable-custom-editor-options.md)
-- [Файл EDITORCONFIG для платформы компиляторов .NET](https://github.com/dotnet/roslyn/blob/master/.editorconfig).

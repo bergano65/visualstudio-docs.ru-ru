@@ -1,5 +1,5 @@
 ---
-title: Устранение неполадок и известные проблемы (инструменты Visual Studio для Unity) | Документы Майкрософт
+title: Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815590"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261118"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
 
@@ -54,7 +54,7 @@ ms.locfileid: "62815590"
 
 Некоторые подключаемые модули Unity, такие как Parse, FMOD, UMP (Universal Media Player), ZFBrowser или Embedded Browser, используют собственные потоки. Эта проблема возникает, когда подключаемый модуль подключает собственный поток к среде выполнения, что блокирует вызовы ОС. Это означает, что Unity не может прервать этот поток для отладчика (или перезагрузить домен) и перестает отвечать на запросы.
 
-Для FMOD существует обходной путь. Вы можете передать [флаг](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) инициализации `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE`, чтобы отключить асинхронную обработку и выполнять всю обработку в основном потоке.
+Для FMOD существует обходной путь. Вы можете передать [флаг](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) инициализации `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE`, чтобы отключить асинхронную обработку и выполнять всю обработку в основном потоке.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Несовместимый проект в Visual Studio
 

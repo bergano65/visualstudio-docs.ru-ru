@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa1adbecc4114d53f2cdaa9e03296ed7f6144b6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ae1d142058b2f655bb55e5140a6ad6ac5f119742
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679169"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263502"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Публикация веб-приложения на веб-сайте с помощью Visual Studio
 
@@ -24,7 +24,7 @@ ms.locfileid: "65679169"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Если вам нужно опубликовать классическое приложение Windows в общую сетевую папку, см. раздел [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# или Visual Basic). Для C + +/ CLR см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Если вам нужно опубликовать классическое приложение Windows в общую сетевую папку, см. раздел [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# или Visual Basic). Для C + +/ CLR см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-a-web-site"></a>Публикация на веб-сайте
 

@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b634b25c7bfaf71294993cc48c960508d764839
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406769"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263236"
 ---
 # <a name="clickonce-security-and-deployment"></a>Развертывание и безопасность технологии ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — это технология развертывания, которая позволяет создавать самостоятельно обновляющиеся приложения Windows, которые могут устанавливаться и запускаться с минимальным вмешательством пользователя. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] обеспечивает полную поддержку публикации и обновления приложений, развернутых с использованием технологии ClickOnce, если вы разработали проектами с помощью Visual Basic и Visual C#. Сведения о развертывании приложений Visual C++, см. в разделе [развертывание ClickOnce для приложений Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — это технология развертывания, которая позволяет создавать самостоятельно обновляющиеся приложения Windows, которые могут устанавливаться и запускаться с минимальным вмешательством пользователя. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] обеспечивает полную поддержку публикации и обновления приложений, развернутых с использованием технологии ClickOnce, если вы разработали проектами с помощью Visual Basic и Visual C#. Сведения о развертывании приложений Visual C++, см. в разделе [развертывание ClickOnce для приложений Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] предназначена для решения трех основных проблем развертывания:
 
@@ -38,7 +38,7 @@ ms.locfileid: "63406769"
   В прошлом эти проблемы иногда вынуждали разработчиков принимать решение о создании веб-приложений вместо приложения на основе Windows, жертвуя широкими возможностями пользовательского интерфейса для простоты установки. С помощью приложения, развернутые с помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], можно использовать преимущества обеих технологий.
 
 ## <a name="what-is-a-clickonce-application"></a>Что такое приложение ClickOnce?
- Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение является любой Windows Presentation Foundation (*.xbap*), Windows Forms (*.exe*), консольное приложение (*.exe*), или решения Office (*.dll*) опубликовать при помощи [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] технологии. Вы можете опубликовать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения тремя разными способами: с веб-страницы, из общей сетевой папки или с носителя, например компакт-диска. Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут устанавливаться на компьютере конечного пользователя и запускать локально, даже в том случае, если компьютер находится в автономном режиме, или она могут выполняться в интерактивном режиме без установки ничего на компьютере конечного пользователя. Дополнительные сведения см. в разделе [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение является любой Windows Presentation Foundation ( *.xbap*), Windows Forms ( *.exe*), консольное приложение ( *.exe*), или решения Office ( *.dll*) опубликовать при помощи [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] технологии. Вы можете опубликовать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения тремя разными способами: с веб-страницы, из общей сетевой папки или с носителя, например компакт-диска. Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут устанавливаться на компьютере конечного пользователя и запускать локально, даже в том случае, если компьютер находится в автономном режиме, или она могут выполняться в интерактивном режиме без установки ничего на компьютере конечного пользователя. Дополнительные сведения см. в разделе [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения могут обновляться самостоятельно; они могут проверять наличие новых версий по мере их доступности и автоматически заменять все обновленные файлы. Разработчик может указать поведение обновления; сетевой администратор также может управлять стратегиями обновления, например, устанавливая обязательность обновления. Обновления можно также понизить до более ранней версии конечным пользователем или администратором. Дополнительные сведения см. в разделе [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
@@ -54,13 +54,13 @@ ms.locfileid: "63406769"
  Управление доступом для кода помогает ограничить доступ кода к защищенным ресурсам. В большинстве случаев вы можете ограничить разрешения зон Интернета или локальной интрасети. Используйте **безопасности** странице в **ProjectDesigner** чтобы запросить зону, подходящую для приложения. Кроме того, можно выполнять отладку приложений с ограниченными правами для имитации взаимодействия с пользователем. Дополнительные сведения см. в статье [Управление доступом для кода для приложения ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
 ### <a name="clickonce-trust-prompt"></a>Запрос о доверии ClickOnce
- Если приложение запрашивает больше разрешений, чем позволяет зона, конечный пользователь может предложено доверии. Пользователь может решить, если приложения ClickOnce, такие как приложения Windows Forms, приложения Windows Presentation Foundation, консольные приложения, приложения браузера XAML и решений Office являются доверенными для запуска. Дополнительные сведения см. в разделе [Как настроить поведение запроса о доверии ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
+ Если приложение запрашивает больше разрешений, чем позволяет зона, конечный пользователь может предложено доверии. Пользователь может решить, если приложения ClickOnce, такие как приложения Windows Forms, приложения Windows Presentation Foundation, консольные приложения, приложения браузера XAML и решений Office являются доверенными для запуска. Дополнительные сведения см. в разделе [Практическое руководство. настроить поведение запроса о доверии ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
 ## <a name="how-clickonce-deployment-works"></a>Как работает развертывание ClickOnce
  Ядро [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] архитектура развертывания основана на двух файлах манифеста XML: манифест приложения и манифест развертывания. Файлы используются для описания установки приложения ClickOnce из и как они будут обновлены при обновлении.
 
 ### <a name="publish-clickonce-applications"></a>Публикация приложений ClickOnce
- В манифесте приложения описывается само приложение. Сюда входят сборки, зависимости и файлы, составляющие приложение, необходимые разрешения и расположение, где будут доступны обновления. Разработчик приложения создает манифест приложения с помощью мастера публикации в Visual Studio или создания манифеста и Editing Tool (*Mage.exe*) в [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Дополнительные сведения см. в разделе [Как опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ В манифесте приложения описывается само приложение. Сюда входят сборки, зависимости и файлы, составляющие приложение, необходимые разрешения и расположение, где будут доступны обновления. Разработчик приложения создает манифест приложения с помощью мастера публикации в Visual Studio или создания манифеста и Editing Tool (*Mage.exe*) в [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Дополнительные сведения см. в разделе [Практическое руководство. опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
  Манифест развертывания содержит описание развертывания приложения. Сюда входят расположение манифеста приложения и версию приложения, которое должно запускаться клиентами.
 

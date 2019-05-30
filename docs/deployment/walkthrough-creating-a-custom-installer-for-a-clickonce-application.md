@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce | Документация Майкрософт
+title: Создание пользовательского установщика для приложения ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 597d0a29e153659359d3a6591970750bfd4de770
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e6969490789b4f5747c28f33e91c7d61e97de52e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405747"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263461"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce
 Любое приложение на основе *.exe* автоматически устанавливается и обновляется с помощью настраиваемого установщика файл. Пользовательский установщик можно реализовать настраиваемый пользовательский интерфейс во время установки, включая пользовательские диалоговые окна для обслуживания и обеспечения безопасности. Для выполнения операции установки, использует пользовательский установщик <xref:System.Deployment.Application.InPlaceHostingManager> класса. В этом пошаговом руководстве показано, как создать пользовательский установщик, который автоматически устанавливает приложения ClickOnce.
