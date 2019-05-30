@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Укажите URL-адрес поддержки для определенных необходимых компонентов в развертывании ClickOnce | Документация Майкрософт
+title: URL-адрес поддержки для необходимых компонентов в развертывании ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f79aec7a8882f87bc98f822d4fb4f0c1961bd69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf115ad6ce8fb589e9b1c617f40053cf95af2b9c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928605"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263209"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Практическое руководство. указание URL-адреса поддержки для определенных необходимых компонентов в развертывании ClickOnce
 Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания можно проверить ряд необходимых условий, которые должны быть доступны на клиентском компьютере для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] для запуска приложения. Эти зависимости включают требуемая Минимальная версия [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], версию операционной системы и все сборки, которые должны быть предварительно установлены в глобальный кэш сборок (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], тем не менее, не может выполнить любые из этих предварительных требований; Если необходимый компонент не найден, он просто останавливает установку и отображает диалоговое окно, объясняющее, почему произошел сбой установки.

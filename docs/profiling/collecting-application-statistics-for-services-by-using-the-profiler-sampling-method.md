@@ -1,5 +1,5 @@
 ---
-title: Сбор статистики приложения для служб с помощью метода выборки профилировщика | Документы Майкрософт
+title: Сбор статистики приложения с помощью метода выборки Profiler
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9e71f1d8219f61946bc8242514429130530fb12
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f9b2de87e77abc701f14211cb49e82220c4c935d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440246"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263010"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Сбор статистики приложения для служб с помощью метода выборки профилировщика
 В этом разделе описываются процедуры и параметры сбора статистики о производительности для служб Windows с помощью метода выборки из командной строки.

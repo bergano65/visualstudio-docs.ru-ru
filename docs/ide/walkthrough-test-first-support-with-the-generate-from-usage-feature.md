@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Основанная на тестировании разработка с помощью возможности "Создание в результате использования"
+title: Основанная на тестировании разработка с помощью возможности "Создание в результате использования"
 ms.date: 10/09/2017
 dev_langs:
 - VB
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 186713daa3d4c913926779f79ffc61ff488578d5
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432038"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262853"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Пошаговое руководство. Основанная на тестировании разработка с помощью возможности "Создание в результате использования"
 
@@ -38,7 +38,7 @@ ms.locfileid: "63432038"
 
 2. В **обозревателе решений** щелкните правой кнопкой мыши значок решения в верхней части окна и выберите команду **Добавить** > **Новый проект**.
 
-3. Создайте проект **Проект модульного теста (.NET Framework)**.
+3. Создайте проект **Проект модульного теста (.NET Framework)** .
 
    ::: moniker range="vs-2017"
 
@@ -93,7 +93,7 @@ ms.locfileid: "63432038"
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Так как код ссылается на два неопределенных свойства `Automobile`, под `Model` и `TopSpeed` появляется волнистая линия подчеркивания. Наведите указатель мыши на `Model` и выберите значок **Быстрые действия** в виде лампочки с ошибкой, а затем выберите **Создайте свойство "Automobile.Model"**.
+2. Так как код ссылается на два неопределенных свойства `Automobile`, под `Model` и `TopSpeed` появляется волнистая линия подчеркивания. Наведите указатель мыши на `Model` и выберите значок **Быстрые действия** в виде лампочки с ошибкой, а затем выберите **Создайте свойство "Automobile.Model"** .
 
 3. Аналогичным образом создайте заглушку для свойства `TopSpeed`.
 
@@ -107,11 +107,11 @@ ms.locfileid: "63432038"
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2. Под красной волнистой линией щелкните значок **Быстрые действия** в виде лампочки с ошибкой и выберите пункт **Создать конструктор в "Automobile"**.
+2. Под красной волнистой линией щелкните значок **Быстрые действия** в виде лампочки с ошибкой и выберите пункт **Создать конструктор в "Automobile"** .
 
      В файле класса `Automobile` обратите внимание на то, что новый конструктор проверил имена локальных переменных, используемых в вызове конструктора, обнаружил свойства с одинаковыми именами в классе `Automobile` и создал в теле конструктора код для хранения значений аргументов в свойствах `Model` и `TopSpeed` .
 
-3. После создания нового конструктора под вызовом конструктора по умолчанию в `DefaultAutomobileIsInitializedCorrectly`отображается волнистая линия. Сообщение об ошибке указывает на то, что класс `Automobile` не имеет конструктора, который не принимает ни одного аргумента. Чтобы создать явный конструктор по умолчанию без параметров, щелкните значок **Быстрые действия** в виде лампочки с ошибкой и выберите пункт **Создать конструктор в "Automobile"**.
+3. После создания нового конструктора под вызовом конструктора по умолчанию в `DefaultAutomobileIsInitializedCorrectly`отображается волнистая линия. Сообщение об ошибке указывает на то, что класс `Automobile` не имеет конструктора, который не принимает ни одного аргумента. Чтобы создать явный конструктор по умолчанию без параметров, щелкните значок **Быстрые действия** в виде лампочки с ошибкой и выберите пункт **Создать конструктор в "Automobile"** .
 
 ### <a name="generate-a-stub-for-a-method"></a>Создание заглушки метода
 Предположим, что согласно спецификации новый объект `Automobile` может быть переведен в состояние `IsRunning`, если его свойства `Model` и `TopSpeed` содержат значения, отличные от значений по умолчанию.
@@ -121,9 +121,9 @@ ms.locfileid: "63432038"
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2. Щелкните значок **Быстрые действия** в виде лампочки с ошибкой для вызова метода `myAuto.Start`, а затем выберите пункт **Создать метод "Automobile.Start"**.
+2. Щелкните значок **Быстрые действия** в виде лампочки с ошибкой для вызова метода `myAuto.Start`, а затем выберите пункт **Создать метод "Automobile.Start"** .
 
-3. Щелкните значок **Быстрые действия** в виде лампочки для свойства `IsRunning`, а затем выберите пункт **Создайте свойство "Automobile.IsRunning"**.
+3. Щелкните значок **Быстрые действия** в виде лампочки для свойства `IsRunning`, а затем выберите пункт **Создайте свойство "Automobile.IsRunning"** .
 
      Класс `Automobile` теперь содержит метод с именем `Start()` и свойство с именем `IsRunning`.
 
