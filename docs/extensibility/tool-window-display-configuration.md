@@ -6,17 +6,17 @@ helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4498cc0bf7a1a9eab69ecc16b4fb31c3c5e4048c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432165"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316406"
 ---
 # <a name="tool-window-display-configuration"></a>Конфигурация отображения окна инструментов
 Когда VSPackage регистрирует окно инструментов, положения по умолчанию, размер, стиль закрепления и другие сведения о видимости указывается в необязательных значений. Дополнительные сведения о регистрации окна инструментов, см. в разделе [средство Windows в реестре](../extensibility/tool-windows-in-the-registry.md)

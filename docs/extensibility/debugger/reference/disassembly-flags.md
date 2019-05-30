@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c4602fa1b8d30e9119bb39e925cf7768ae1cbcf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0160a14a4ad20e7144e48f767fad88951ca1e473
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682431"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318389"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 Задает флаги для Дизассемблированный код.
@@ -47,18 +50,24 @@ public enum enum_DISASSEMBLY_FLAGS {
 };
 ```
 
-## <a name="members"></a>Участники
-DF_DOCUMENTCHANGE указывает, что эта инструкция находится в другой документ, отличный от предыдущего.
+## <a name="fields"></a>Поля
+`DF_DOCUMENTCHANGE`\
+Указывает, что эта инструкция находится в другой документ, отличный от предыдущего.
 
-DF_DISABLED указывает, что эта инструкция будет выполнена.
+`DF_DISABLED`\
+Указывает, что эта инструкция будет выполнена.
 
-DF_INSTRUCTION_ACTIVE указывает, что эта инструкция является одним из далее инструкциям для выполнения (может быть несколько).
+`DF_INSTRUCTION_ACTIVE`\
+Указывает, что эта инструкция является одним из далее инструкциям для выполнения (может быть несколько).
 
-DF_DATA указывает, что эта инструкция действительно является данных (не в коде).
+`DF_DATA`\
+Указывает, что эта инструкция действительно данных (не в коде).
 
-DF_HASSOURCE указывает, что эта инструкция имеет источника. Некоторые инструкции, такие как коллекции кода профилирования или сборки мусора, имеют нет соответствующего источника.
+`DF_HASSOURCE`\
+Указывает, что эта инструкция имеет источник. Некоторые инструкции, такие как коллекции кода профилирования или сборки мусора, имеют нет соответствующего источника.
 
-Указывает, что DF_DOCUMENT_CHECKSUM `bstrDocumentUrl` поле содержит данные контрольной суммы после URL-адрес документа. См. в разделе "Примечания" [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуру как хранятся данные контрольной суммы.
+`DF_DOCUMENT_CHECKSUM`\
+Указывает, что `bstrDocumentUrl` поле содержит данные контрольной суммы после URL-адрес документа. См. в разделе "Примечания" [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуру как хранятся данные контрольной суммы.
 
 ## <a name="remarks"></a>Примечания
 Используется в качестве `dwFlags` членом [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) структуры.

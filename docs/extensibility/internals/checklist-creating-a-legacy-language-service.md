@@ -6,17 +6,17 @@ helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7037b49763d4fda844b7692052935a4eee7f7107
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1dd7153a6b39d7e5d60e21c42c64daa255de2269
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420693"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329386"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Контрольный список. Создание языковой службы прежних версий
 Следующий контрольный список перечислены основные шаги, необходимые для создания службы языка для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] базовым редактором. Чтобы интегрировать службы языка в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], необходимо создать средство оценки выражений отладки. Дополнительные сведения см. в разделе [написать средство оценки выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) в [расширения отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
@@ -109,7 +109,7 @@ ms.locfileid: "63420693"
 
 - Структуризация
 
-     Существует несколько вариантов для поддержки структуры. Например, можно поддерживать **свернуть в определения** команды, укажите редактором структурные области или поддержки областей, управляемое клиентом. Дополнительные сведения см. в разделе [Как Расширенная поддержка структурирования в языковой службы прежних версий](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).
+     Существует несколько вариантов для поддержки структуры. Например, можно поддерживать **свернуть в определения** команды, укажите редактором структурные области или поддержки областей, управляемое клиентом. Дополнительные сведения см. в разделе [Практическое руководство. Расширенная поддержка структурирования в языковой службы прежних версий](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).
 
 - Регистрация языковой службы
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9c0c5ed3f4432deeb26e97ff21f6d89de9ee109
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8f05596b12151b3a40b87c6fc2f15659a38e3431
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720319"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337692"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 Указывает состояние исключения.
@@ -73,36 +76,51 @@ public enum enum_EXCEPTION_STATE {
 };
 ```
 
-## <a name="members"></a>Участники
-EXCEPTION_NONE не останавливайте на исключении.
+## <a name="fields"></a>Поля
+`EXCEPTION_NONE`\
+Не останавливайте на исключении.
 
-EXCEPTION_STOP_FIRST_CHANCE останавливается на первой обработки исключения. При описании события исключения, этот флаг указывает, что исключение это событие исключения первого шанса.
+`EXCEPTION_STOP_FIRST_CHANCE`\
+Останавливается на первой обработки исключения. При описании события исключения, этот флаг указывает, что исключение это событие исключения первого шанса.
 
-EXCEPTION_STOP_SECOND_CHANCE останавливается на второй обработки исключения. При описании события исключения, указывает, что события исключения является событие второй возможности захвата исключений.
+`EXCEPTION_STOP_SECOND_CHANCE`\
+На второй срабатывание исключения останавливается. При описании события исключения, указывает, что события исключения является событие второй возможности захвата исключений.
 
-EXCEPTION_STOP_USER_FIRST_CHANCE останавливается на первой обработки исключения режима пользователя. При описании события исключения, указывает, что события исключения является событием исключения первого шанса пользователя.
+`EXCEPTION_STOP_USER_FIRST_CHANCE`\
+Останавливается на первой обработки исключения режима пользователя. При описании события исключения, указывает, что события исключения является событием исключения первого шанса пользователя.
 
-EXCEPTION_STOP_USER_UNCAUGHT остановитесь, когда не перехватывается исключение режима пользователя. При описании события исключения, указывает, что события исключения является событие исключения режима пользователя неперехваченных.
+`EXCEPTION_STOP_USER_UNCAUGHT`\
+Остановитесь, когда не перехватывается исключение режима пользователя. При описании события исключения, указывает, что события исключения является событие исключения режима пользователя неперехваченных.
 
-EXCEPTION_STOP_ALL остановить по любому исключению. Не используется при описании события исключения.
+`EXCEPTION_STOP_ALL`\
+Остановите по любому исключению. Не используется при описании события исключения.
 
-EXCEPTION_CANNOT_BE_CONTINUED при описании события исключения, указывает, что исключение не может быть продолжено из.
+`EXCEPTION_CANNOT_BE_CONTINUED`\
+При описании события исключения, указывает, что исключение не может быть продолжено из.
 
-EXCEPTION_CODE_SUPPORTED указывает, что исключение имеет код, который поддерживает его. Используемые при отображении исключения
+`EXCEPTION_CODE_SUPPORTED`\
+Указывает, что исключение имеет код, который поддерживает его. Используемые при отображении исключения
 
-EXCEPTION_CODE_DISPLAY_IN_HEX указывает, что код исключения должно отображаться в шестнадцатеричном формате. Для отображения исключение.
+`EXCEPTION_CODE_DISPLAY_IN_HEX`\
+Указывает, что код исключения должно отображаться в шестнадцатеричном формате. Для отображения исключение.
 
-EXCEPTION_JUST_MY_CODE_SUPPORTED указывает, что код исключения поддерживает JustMyCode. Для отображения исключение.
+`EXCEPTION_JUST_MY_CODE_SUPPORTED`\
+Указывает, что код исключения поддерживает JustMyCode. Для отображения исключение.
 
-EXCEPTION_MANAGED_DEBUG_ASSISTANT указывает, что отладчик управляемого кода должен обрабатывать исключения. В противном случае набор, по умолчанию отладчик обрабатывает исключения. Эти данные передаются [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) метода и не используется в [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры.
+`EXCEPTION_MANAGED_DEBUG_ASSISTANT`\
+Указывает, что отладчик управляемого кода должен обрабатывать исключения. В противном случае набор, по умолчанию отладчик обрабатывает исключения. Эти данные передаются [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) метода и не используется в [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры.
 
-EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT OBSOLETE, DO NOT USE.
+`EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT`\
+УСТАРЕВШИЕ, НЕ ИСПОЛЬЗУЙТЕ.
 
-EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT OBSOLETE, DO NOT USE.
+`EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT`\
+УСТАРЕВШИЕ, НЕ ИСПОЛЬЗУЙТЕ.
 
-EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT OBSOLETE, DO NOT USE.
+`EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT`\
+УСТАРЕВШИЕ, НЕ ИСПОЛЬЗУЙТЕ.
 
-EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT OBSOLETE, DO NOT USE.
+`EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT`\
+УСТАРЕВШИЕ, НЕ ИСПОЛЬЗУЙТЕ.
 
 ## <a name="remarks"></a>Примечания
 Используется в качестве `dwState` членом [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) структуры, в которых указывается состояние исключения и что можно сделать о нем.

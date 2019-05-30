@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], automation model
 ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37a5fb96d7f1e63bf28a9227333362ff79f3cd3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: be793e5cc4db30fa410e0218a7f780b6c2826838
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62857510"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324600"
 ---
 # <a name="using-the-automation-model"></a>Использование модели автоматизации
 После подключения VSPackage в службу автоматизации, можно получить свойства и методы, вызвав <xref:EnvDTE.DTEClass.GetObject%2A> метод <xref:EnvDTE._DTE> объекта, передав строку, представляющую объект, который нужно получить.

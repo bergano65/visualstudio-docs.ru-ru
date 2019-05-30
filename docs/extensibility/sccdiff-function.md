@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed96b7c893ba3ececb33be5dda55093b70c28659
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 52da17cbb7f6349d99a04709bbe469501394d4e5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434694"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327506"
 ---
 # <a name="sccdiff-function"></a>Функция SccDiff
 Эта функция отображает (или при необходимости просто проверяет наличие) различия между текущего файла (на локальном диске) и его последней возвращенной версии в источнике системы управления версиями.

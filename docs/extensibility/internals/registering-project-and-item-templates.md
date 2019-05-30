@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84beaf97bda8d94872be22c6f5d247a746d1ecd3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859483"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319503"
 ---
 # <a name="registering-project-and-item-templates"></a>Регистрация шаблонов проектов и элементов
 Типы проектов необходимо регистрировать каталоги, где находятся их шаблонов проектов и элементов проекта. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] использует сведения о регистрации, связанные с типами вашего проекта, чтобы определить, что нужно показывать в **Добавление нового проекта** и **Добавление нового элемента** диалоговым окнам.
@@ -117,7 +117,8 @@ ms.locfileid: "62859483"
  \WizardFiles
 
 ## <a name="see-also"></a>См. также
+
 - [Добавление проекта и шаблонов элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Мастера](../../extensibility/internals/wizards.md)
-- [Локализация приложений](../../ide/localizing-applications.md)
+- [Локализация приложений](../../ide/globalizing-and-localizing-applications.md)
 - [CATID для объектов, которые обычно используются для расширения проектов](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

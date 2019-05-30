@@ -8,17 +8,17 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f5e7db4b31607c05da32a09e5d691a85ef4173
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 6ab5866949d6ccfa9f3b1037abf7801ce40ace3d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614818"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332285"
 ---
 # <a name="createpkgdef-utility"></a>Служебная программа CreatePkgDef
 Принимает DLL-файла для расширения Visual Studio, как параметр и создает *.pkgdef* файл сопровождающее *.dll* файл. *.Pkgdef* файл содержит всю информацию, которая в противном случае должна быть записана в системный реестр при установке расширения.
@@ -33,7 +33,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
 ## <a name="arguments"></a>Аргументы
-**/ out =&lt;имя файла&gt;**\
+**/ out =&lt;имя файла&gt;** \
 Обязательный. Задает имя *.pkgdef* выходной файл &lt;FileName&gt;.
 
 **/ codebase**\
@@ -42,7 +42,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 **/ Assembly**\
 Заставляет регистрации с **сборки** служебной программы.
 
-**&lt;AssemblyPath&gt;**\
+**&lt;AssemblyPath&gt;** \
 Путь к *.dll* файла, из которого требуется создать *.pkgdef*.
 
 ## <a name="remarks"></a>Примечания
@@ -56,9 +56,9 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-Если папка установки *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\*, расширение распознается средой Visual Studio, но отключена по умолчанию. Пользователь может включить расширение с помощью **Управление расширениями**.
+Если папка установки *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\* , расширение распознается средой Visual Studio, но отключена по умолчанию. Пользователь может включить расширение с помощью **Управление расширениями**.
 
-Если папка установки *%vsinstalldir%\Common7\IDE\Extensions\\*, расширение включено по умолчанию.
+Если папка установки *%vsinstalldir%\Common7\IDE\Extensions\\* , расширение включено по умолчанию.
 
 > [!NOTE]
 > **Управление расширениями** средство не может использоваться для доступа к расширением, если он не установлен как часть пакета VSIX.
@@ -73,9 +73,9 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 
 - *%vsinstalldir%\Common7\IDE\Extensions\\*
 
-Если папка установки *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\*, расширение распознается средой Visual Studio, но отключена по умолчанию. Пользователь может включить расширение с помощью **расширения и обновления**.
+Если папка установки *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\* , расширение распознается средой Visual Studio, но отключена по умолчанию. Пользователь может включить расширение с помощью **расширения и обновления**.
 
-Если папка установки *%vsinstalldir%\Common7\IDE\Extensions\\*, расширение включено по умолчанию.
+Если папка установки *%vsinstalldir%\Common7\IDE\Extensions\\* , расширение включено по умолчанию.
 
 > [!NOTE]
 > **Расширения и обновления** средство не может использоваться для доступа к расширением, если он не установлен как часть пакета VSIX.

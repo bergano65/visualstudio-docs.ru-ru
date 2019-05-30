@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO2 structure
 ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81028ef1d4096a9aa434f6a402ee57124100bf9c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8f9c601cf1620d002bd86b8bc110d28bdb533e61
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695353"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352944"
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
 Содержит сведения, необходимые для реализации точки останова, включая идентификатор GUID поставщика, ограничения и трассировки.
@@ -61,31 +64,44 @@ public struct BP_REQUEST_INFO2 {
 ```
 
 ## <a name="members"></a>Участники
-`dwFields` Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисление, указывающее, какие поля заполнены.
+`dwFields`\
+Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисление, указывающее, какие поля заполнены.
 
-`guidLanguage` GUID языка.
+`guidLanguage`\
+GUID языка.
 
-`bpLocation` [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру, которая указывает тип точки останова.
+`bpLocation`\
+[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру, которая указывает тип точки останова.
 
-`pProgram` [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий приложение, в котором происходит точки останова.
+`pProgram`\
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий приложение, в котором происходит точки останова.
 
-`bstrProgramName` Имя приложения, в котором происходит точки останова.
+`bstrProgramName`\
+Имя приложения, в котором происходит точки останова.
 
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором происходит точки останова.
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором происходит точки останова.
 
-`bstrThreadName` Имя потока, в котором происходит точки останова.
+`bstrThreadName`\
+Имя потока, в котором происходит точки останова.
 
-`bpCondition` [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структуру, которая описывает условия, при которых точка останова будет срабатывать.
+`bpCondition`\
+[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структуру, которая описывает условия, при которых точка останова будет срабатывать.
 
-`bpPassCount` [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуру, содержащую сведения о подсчете pass точки останова.
+`bpPassCount`\
+[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуру, содержащую сведения о подсчете pass точки останова.
 
-`dwFlags` Сочетание флагов из [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления, указывающее флаги для запрошенного точки останова.
+`dwFlags`\
+Сочетание флагов из [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления, указывающее флаги для запрошенного точки останова.
 
-`guidVendor` Идентификатор GUID поставщика. Может иметь значение null.
+`guidVendor`\
+Идентификатор GUID поставщика. Может иметь значение null.
 
-`bstrConstraint` Имя ограничения точки останова. Может иметь значение null.
+`bstrConstraint`\
+Имя ограничения точки останова. Может иметь значение null.
 
-`bstrTracepoint` Имя точки трассировки. Может иметь значение null.
+`bstrTracepoint`\
+Имя точки трассировки. Может иметь значение null.
 
 ## <a name="remarks"></a>Примечания
 Эта структура возвращается [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) метод.

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 681564b2148fb9554e80105c2e18b1d220bb37ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 669b8880e3fe378b05cc258bf473d74d0e5401b6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862852"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324819"
 ---
 # <a name="how-to-troubleshoot-services"></a>Практическое руководство. Устранение неполадок служб
 Существует несколько распространенных проблем, которые могут возникнуть при попытке получения службы.
@@ -38,7 +38,7 @@ if (log == null) return;
 
 ## <a name="to-troubleshoot-a-service"></a>Устранение неполадок со службой
 
-1. Проверьте в системный реестр, чтобы увидеть ли службы был правильно зарегистрирован. Дополнительные сведения см. в разделе [Как Предоставляет службу](../extensibility/how-to-provide-a-service.md).
+1. Проверьте в системный реестр, чтобы увидеть ли службы был правильно зарегистрирован. Дополнительные сведения см. в разделе [Практическое руководство. Предоставляет службу](../extensibility/how-to-provide-a-service.md).
 
     Следующие *.reg* фрагмент файла показано, как служба SVsTextManager может быть зарегистрирована:
 

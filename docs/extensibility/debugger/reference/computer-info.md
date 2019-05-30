@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - COMPUTER_INFO structure
 ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 980527de1681d773edcf1586f209ed25e2699502
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55d3eb6c321875b479d8df597b963fc3ac30db12
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680351"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346576"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
 Описание компьютера, на котором выполняется отладчик.
@@ -40,12 +43,15 @@ public struct COMPUTER_INFO
 }
 ```
 
-## <a name="terms"></a>Термины
-wProcessorArchitecture определяет архитектуру процессора.
+## <a name="members"></a>Участники
+`wProcessorArchitecture`\
+Указывает архитектуру процессора.
 
-wSuiteMask определяет набор маски.
+`wSuiteMask`\
+Определяет набор маски.
 
-dwOperatingSystemVersion номер версии операционной системы.
+`dwOperatingSystemVersion`\
+Номер версии операционной системы.
 
 ## <a name="remarks"></a>Примечания
 Эта структура возвращается [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) метод.

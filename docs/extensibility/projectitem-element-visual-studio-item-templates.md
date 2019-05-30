@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <ProjectItem> element [Visual Studio item templates]
 - ProjectItem element [Visual Studio item templates]
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a853deb99314711917c9db549bc28dc447e3a32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 30446b1aa32b31c640a8f56142dc60fcff4a5458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434823"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335998"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Элемент ProjectItem (шаблоны элементов Visual Studio)
 Указывает файл, включенный в шаблон элемента.
@@ -78,7 +78,7 @@ ms.locfileid: "63434823"
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>
 ```
 
- При создании элемента на основе этого шаблона, имя файла будет основываться на имя, введенное пользователем в **Добавление нового элемента** диалоговое окно. Это полезно в тех случаях, когда создание многофайловых шаблонов элементов. Дополнительные сведения см. в разделе [Как Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md) и [параметров шаблона](../ide/template-parameters.md).
+ При создании элемента на основе этого шаблона, имя файла будет основываться на имя, введенное пользователем в **Добавление нового элемента** диалоговое окно. Это полезно в тех случаях, когда создание многофайловых шаблонов элементов. Дополнительные сведения см. в разделе [Практическое руководство. Создание многофайловых шаблонов элементов](../ide/how-to-create-multi-file-item-templates.md) и [параметров шаблона](../ide/template-parameters.md).
 
 ## <a name="example"></a>Пример
  В следующем примере показано метаданные для стандартного шаблона элемента для [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] класса.

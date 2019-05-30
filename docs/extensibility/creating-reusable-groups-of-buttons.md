@@ -7,17 +7,17 @@ helpviewer_keywords:
 - VSPackages, creating reusable button groups
 - buttons, creating reusable groups
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48ab55b58eee8f6444b253c09db1eeedcc8c5692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 454e42ba0b99d47048fa54527e8771f8294dcbc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411356"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351993"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Создание повторно используемых групп кнопок
 Группа команды — это коллекция команд, которые всегда отображаются вместе в меню или панели инструментов. Любую группу команды могут быть использованы повторно, присвоив его другой родительский элемент меню в разделе CommandPlacements *.vsct* файла.
@@ -28,7 +28,7 @@ ms.locfileid: "63411356"
 
 1. Создайте проект VSIX с именем `ReusableButtons`. Дополнительные сведения см. в разделе [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. При открытии проекта, Добавление пользовательской команды шаблона элемента с именем **ReusableCommand**. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#** > **расширяемости** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для *ReusableCommand.cs*.
+2. При открытии проекта, Добавление пользовательской команды шаблона элемента с именем **ReusableCommand**. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#**  > **расширяемости** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для *ReusableCommand.cs*.
 
 3. В *.vsct* файл, перейдите в разделе "символы" и найдите элемент GuidSymbol, содержащий группы и команды для проекта. Она должна называться guidReusableCommandPackageCmdSet.
 
