@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Использование технологии ClickOnce для развертывания приложений, которые могут выполняться на различных версиях платформы .NET Framework | Документация Майкрософт
+title: Использование технологии ClickOnce для развертывания приложений multitarget
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e7e7d79dd1fc3d6c988701d0aa88cb4d0d299c2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de3ca40696549ad9208ffd181f8dbc4e7f092b5d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406713"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263201"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое руководство. использование технологии ClickOnce для развертывания приложений, которые могут выполняться в нескольких версиях .NET Framework
 Можно развернуть приложение, предназначенное для нескольких версий платформы .NET Framework с помощью технологии развертывания ClickOnce. Это требует создания и обновление манифестов приложения и развертывания.
@@ -45,7 +45,7 @@ ms.locfileid: "63406713"
 
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Для создания манифестов приложения и развертывания
 
-- Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [Как Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).
+- Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).
 
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Чтобы изменить манифест развертывания, чтобы получить список нескольких версий .NET Framework
 
@@ -100,7 +100,7 @@ ms.locfileid: "63406713"
 
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Обновление и повторное подписание приложения и развертывания манифестов
 
-- Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [Как повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+- Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [Практическое руководство. повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>См. также
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

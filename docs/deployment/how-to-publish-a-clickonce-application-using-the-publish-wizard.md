@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации | Документация Майкрософт
+title: Публикация приложения ClickOnce с помощью мастера публикации
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eac5778320b45b841cdff2c8d95f6a591386712
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c3880fdc8d1d83fd36fdf09fea9e0c955b02236
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406724"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263267"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Практическое руководство. публикацию приложения ClickOnce с помощью мастера публикации
 Чтобы сделать приложение ClickOnce доступным для пользователей, необходимо опубликовать его в общей папке, на FTP-сервере или на съемном носителе. Приложение можно опубликовать с помощью мастера публикации. Дополнительные свойства, связанные с публикацией, доступны на странице **Публикация** в **конструкторе проектов**. Дополнительные сведения см. в разделе [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md).

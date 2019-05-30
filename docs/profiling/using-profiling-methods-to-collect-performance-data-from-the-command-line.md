@@ -1,5 +1,5 @@
 ---
-title: Использование методов профилирования для сбора данных производительности из командной строки | Документы Майкрософт
+title: Использование методов профилирования из командной строки для получения данных о производительности
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831448"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263828"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Использование методов профилирования для сбора данных о производительности из командной строки
 Выбор программ командной строки и параметров средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] зависит от таких факторов, как тип профилируемого приложения, метод профилирования, который нужно использовать, а также от того, какой код (машинный или [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]) использовался для написания приложения.

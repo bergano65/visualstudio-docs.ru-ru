@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fc518281880923f92caf5c517254dc424b49b5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9f8a2ec71db9b11ebcbe20ba780a0f142fc30a0d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415283"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318428"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Практическое руководство. Перенос проектов расширяемости в Visual Studio 2015
 Вот как можно обновить расширение.
@@ -35,7 +35,7 @@ ms.locfileid: "63415283"
 
 4. Постройте решение. Файлы сборки развертываются для:
 
-     *%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< создавать имя\>\\< имя проекта\>\\< версия проекта\>\\*.
+     *%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< создавать имя\>\\< имя проекта\>\\< версия проекта\>\\* .
 
 ### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Чтобы обновить проект расширяемости NuGet VS SDK ссылаться на сборки
 

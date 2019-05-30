@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581643"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262940"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Пошаговое руководство. Создание среды построения из нескольких компьютеров
 
@@ -169,7 +169,7 @@ Visual Studio с установленной рабочей нагрузкой **
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Скопируйте только следующие файлы из папки *Debug_NonRedist\x86* или *Debug_NonRedist\x64* на компьютере построения, как описывается в разделе [Подготовка тестового компьютера для запуска исполняемого файла отладки](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). Другие файлы не копируются.
+5. Скопируйте только следующие файлы из папки *Debug_NonRedist\x86* или *Debug_NonRedist\x64* на компьютере построения, как описывается в разделе [Подготовка тестового компьютера для запуска исполняемого файла отладки](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Другие файлы не копируются.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -407,5 +407,5 @@ Visual Studio с установленной рабочей нагрузкой **
 
 ## <a name="see-also"></a>См. также
 
-- [Подготовка тестового компьютера для выполнения исполняемого файла отладки](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Подготовка тестового компьютера для выполнения исполняемого файла отладки](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)

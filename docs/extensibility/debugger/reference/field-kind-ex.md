@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97a2d4e76ebe1ed206ebbc2eea09b15865b86a2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fd481883c826ff21a82b52bdd82de087b6219b58
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700027"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309019"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 Перечисляет дополнительные типы полей, [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) может содержаться в объекте. Это перечисление расширяет [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) перечисления.
@@ -41,12 +44,15 @@ public enum enum_FIELD_KIND_EX
 };
 ```
 
-## <a name="members"></a>Участники
-FIELD_KIND_EX_NONE поле не содержит расширенного типа.
+## <a name="fields"></a>Поля
+`FIELD_KIND_EX_NONE`\
+Поле не содержит расширенного типа.
 
-Поле FIELD_TYPE_EX_METHODVAR содержит переменную в метод.
+`FIELD_TYPE_EX_METHODVAR`\
+Поле содержит переменную в метод.
 
-Поле FIELD_TYPE_EX_CLASSVAR содержит переменной класса.
+`FIELD_TYPE_EX_CLASSVAR`\
+Поле содержит переменной класса.
 
 ## <a name="requirements"></a>Требования
 Заголовок: Sh.h

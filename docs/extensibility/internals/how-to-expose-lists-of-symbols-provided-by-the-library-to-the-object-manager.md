@@ -9,17 +9,17 @@ helpviewer_keywords:
 - lists, symbols for the object manager
 - symbols, exposing lists to the object manager
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93791cda512ee8d74664e1b8b04890da74e399ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d8b9660fd1e59307b1ad576a72629feea5482433
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420611"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328785"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Практическое руководство. Раскрывать списки символов, предоставляемые библиотекой в диспетчер объектов
 Средства просмотра символов, **представление классов**, **обозреватель объектов**, **Обозреватель вызовов** и **результаты поиска символа**, передавать запросы для новых данных [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов. Диспетчер объектов находит соответствующие библиотеки и запрашивает новые списки символов. Библиотеки отвечает, предоставляя запрошенные данные для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] диспетчера объектов через <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Диспетчера объектов вызывает методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> интерфейс для получения данных и использует его для заполнения или обновите представления из средств просмотра символов.

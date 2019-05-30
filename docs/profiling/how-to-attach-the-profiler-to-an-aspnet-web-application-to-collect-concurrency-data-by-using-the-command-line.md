@@ -1,5 +1,5 @@
 ---
-title: Присоединение профилировщика к приложению ASP.NET для сбора данных параллелизма
+title: Присоединение Profiler к приложению ASP.NET для сбора данных о параллелизме
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 443086a77adbd872c63eab5b432ec7144acb9d69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4911b41058c2546ea373302d326535be775877ba
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974292"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261571"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Как выполнить Присоединение профилировщика к веб-приложению ASP.NET для сбора данных о параллелизме при помощи командной строки
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к веб-приложению ASP.NET для сбора данных о параллелизме при помощи командной строки
 В этой статье описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для подключения профилировщика к приложению ASP.NET и сбора данных о параллелизме потоков и процессов.
 
 Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.
@@ -33,13 +33,13 @@ ms.locfileid: "62974292"
 
    - Параметр [/start](../profiling/start.md) инициализирует профилировщик для сбора данных о конфликтах ресурсов.
 
-   - Параметр [/output](../profiling/output.md)**:**`OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
+   - Параметр [/output](../profiling/output.md) **:** `OutputFile` является обязательным для параметра **/start**. `OutputFile` указывает имя и расположение файла данных профилирования (VSP-файла).
 
      С параметром **/start** можно использовать любой из параметров, приведенных в следующей таблице.
 
    | Параметр | Описание |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` | Задает необязательные домен и имя пользователя учетной записи, которой будет предоставлен доступ к профилировщику. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` | Задает необязательные домен и имя пользователя учетной записи, которой будет предоставлен доступ к профилировщику. |
    | [/crosssession](../profiling/crosssession.md) | Включает профилирование процессов в других сеансах входа. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Задает счетчик производительности Windows, данные которого будут собираться во время профилирования. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Используется с только с параметром **/wincounter**. Указывает время (в миллисекундах) между событиями сбора счетчика производительности Windows. Значение по умолчанию — 500. |
@@ -47,7 +47,7 @@ ms.locfileid: "62974292"
 
 2. Запустите приложение ASP.NET обычным образом.
 
-3. Подключите профилировщик к рабочему процессу ASP.NET. Для этого введите следующую команду: **VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`].
+3. Подключите профилировщик к рабочему процессу ASP.NET. Для этого введите следующую команду: **VSPerfCmd /attach:** `PID` [ **/targetclr:** `Version`].
 
    - `PID` задает идентификатор или имя рабочего процесса ASP.NET. Идентификаторы всех запущенных процессов можно просмотреть в диспетчере задач Windows.
 
@@ -62,9 +62,9 @@ ms.locfileid: "62974292"
 
     |Параметр|Описание|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором (`PID`) или именем (*ProcName*) процесса. **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** запускает сбор данных для процесса с указанным идентификатором (`PID`) или именем (*ProcName*) процесса. **/detach** останавливает сбор данных для указанного процесса или для всех процессов, если конкретный процесс не задан.|
 
 ## <a name="end-the-profiling-session"></a>Завершение сеанса профилирования
  Для завершения сеанса профилирования профилировщик не должен выполнять сбор данных. Вы можете остановить сбор данных из приложения, профилируемого с помощью метода параллелизма, перезапустив рабочий процесс ASP.NET или вызвав параметр **VSPerfCmd /detach**. Затем можно вызвать параметр **VSPerfCmd /shutdown**, чтобы завершить работу профилировщика и закрыть файл данных профилирования. Команда **VSPerfClrEnv/globaloff** очищает переменные среды профилирования, однако конфигурация системы не сбрасывается до перезагрузки компьютера.

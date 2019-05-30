@@ -9,17 +9,17 @@ helpviewer_keywords:
 - keyboard shortcuts
 - menu items
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dc28a64d42d2184734142c68aef95cbc3b1d245
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9bfcf3a94a5615df892ab0ad88dca44c16e97b8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410120"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352187"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Привязка сочетания клавиш к пунктам меню
 Чтобы привязать сочетания клавиш для команды меню, просто добавьте записи для *.vsct* файл для пакета. В этом разделе объясняется, как сопоставить сочетания клавиш для пользовательской кнопки, пункт меню или панели инструментов команды и как применить назначения клавиш в редакторе по умолчанию или ограничить ее специализированный редактор.

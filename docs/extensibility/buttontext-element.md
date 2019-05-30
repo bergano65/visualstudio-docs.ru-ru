@@ -6,17 +6,17 @@ helpviewer_keywords:
 - ButtonText element (VSCT XML schema)
 - VSCT XML schema elements, ButtonText
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 519ba206b334ef9c955245c152fb14663366472b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe2440258e95ad0d61998b24dae54b731a998c47
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891604"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321217"
 ---
 # <a name="buttontext-element"></a>Элемент ButtonText
 Это поле позволяет указать текст, отображаемый в различные меню. По умолчанию `ButtonText` элемент появляется в контроллеры меню. `ButtonText` Элемент становится значением по умолчанию, если другие текстовые поля будут пусты. `ButtonText` Элемент не может быть пустым, даже если указаны другие текстовые поля.

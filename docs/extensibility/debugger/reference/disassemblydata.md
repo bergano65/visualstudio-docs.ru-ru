@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d9eb61a3f017f61ef717a27e89cb7426bad26
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: edc91cf8599a8591b70d14c49611ff64d5e957e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712480"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318227"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Описывает одну инструкцию Дизассемблированный код для интегрированной среде разработки (IDE) для отображения.
@@ -61,33 +64,45 @@ public struct DisassemblyData { 
 ```
 
 ## <a name="members"></a>Участники
-`dwFields` [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) константа, указывающая, какие поля заполнены.
+`dwFields`\
+[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) константа, указывающая, какие поля заполнены.
 
-`bstrAddress` Адрес как смещение от некоторых отправной точки (обычно начало соответствующего функции).
+`bstrAddress`\
+Адрес как смещение от некоторых отправной точки (обычно начало соответствующего функции).
 
-`bstrCodeBytes` Байты кода для данной инструкции.
+`bstrCodeBytes`\
+Байты кода для данной инструкции.
 
-`bstrOpcode` Код операции для данной инструкции.
+`bstrOpcode`\
+Код операции для данной инструкции.
 
-`bstrOperands` Операнды для данной инструкции.
+`bstrOperands`\
+Операнды для данной инструкции.
 
-`bstrSymbol` Имя символа, если таковое имеется, связанный с адресом (открытых символов, метки и т. д.).
+`bstrSymbol`\
+Имя символа, если таковое имеется, связанный с адресом (открытых символов, метки и т. д.).
 
-`uCodeLocationId` Идентификатор расположения кода это дисассемблированный строки. Если адрес контекста кода из одной строки больше, чем адрес контекста кода другого идентификатора расположения Дизассемблированный код первого также будет больше, чем второй идентификатор расположение кода.
+`uCodeLocationId`\
+Идентификатор расположения кода это дисассемблированный строки. Если адрес контекста кода из одной строки больше, чем адрес контекста кода другого идентификатора расположения Дизассемблированный код первого также будет больше, чем второй идентификатор расположение кода.
 
-`posBeg` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , соответствующий позиции в документе, в котором начинаются данные Дизассемблированный код.
+`posBeg`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , соответствующий позиции в документе, в котором начинаются данные Дизассемблированный код.
 
-`posEnd` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , соответствующий позиции в документе, где заканчивается данных Дизассемблированный код.
+`posEnd`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) , соответствующий позиции в документе, где заканчивается данных Дизассемблированный код.
 
-`bstrDocumentUrl` Для текстовых документов, которые могут быть представлены как имена файлов `bstrDocumentUrl` вводится имя файла, где можно найти источник, используя формат `file://file name`.
+`bstrDocumentUrl`\
+Для текстовых документов, которые могут быть представлены как имена файлов `bstrDocumentUrl` вводится имя файла, где можно найти источник, используя формат `file://file name`.
 
 Для текстовых документов, которые невозможно представить как имена файлов `bstrDocumentUrl` — это уникальный идентификатор для документа, и отладчик должен реализовывать [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) метод.
 
 Это поле также может содержать дополнительные сведения о контрольных суммах. Дополнительные сведения см. примечания.
 
-`dwByteOffset` Число байтов, которое считается инструкции от начала строки кода.
+`dwByteOffset`\
+Число байтов, которое считается инструкции от начала строки кода.
 
-`dwFlags` [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) константа, указывающая, какие флаги активны.
+`dwFlags`\
+[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) константа, указывающая, какие флаги активны.
 
 ## <a name="remarks"></a>Примечания
 Каждый `DisassemblyData` структура описывает одну инструкцию дизассемблированного кода. Возвращаемый массив этих структур [чтения](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) метод.

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bd66b245da88b26c75c612ab7e45ccc01b4ab607
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859189"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318719"
 ---
 # <a name="running-document-table"></a>Запуск таблицы документов
 Интегрированная среда разработки поддерживает список всех открытых документов во внутренней структуре вызывается в таблице выполняющихся документов (RDT). Этот список включает все открытые документы в памяти независимо от ли эти документы момент редактируется. Документ является любой элемент, который сохранен, включая файлы в проекте или в файле основного проекта (например, файл с расширением VCXPROJ).

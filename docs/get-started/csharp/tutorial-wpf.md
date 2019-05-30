@@ -1,5 +1,5 @@
 ---
-title: Учебник. Создание приложения Hello World в Windows Presentation Foundation (WPF) на C#
+title: Создание приложения Hello World с помощью WPF на C#
 description: Создание простого приложения Windows Desktop .NET на языке C# в Visual Studio с помощью платформы пользовательского интерфейса Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
 ms.date: 03/28/2019
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcff4d75361d3758321360cc051bf5040dbb61ac
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426535"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261696"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Учебник. Создание простого приложения на C\#
 
@@ -62,7 +62,7 @@ ms.locfileid: "62426535"
 
      ![В строке меню выберите "Файл", "Создать", "Проект"](../media/exploreide-filenewproject.png)
 
-1. В диалоговом окне **Новый проект** выберите категорию **Установленные** > **Visual C#** > **Рабочий стол Windows**, а затем выберите шаблон **Приложения WPF (.NET Framework)**. Присвойте проекту имя **HelloWPFApp** и щелкните **ОК**.
+1. В диалоговом окне **Новый проект** выберите категорию **Установленные** > **Visual C#**  > **Рабочий стол Windows**, а затем выберите шаблон **Приложения WPF (.NET Framework)** . Присвойте проекту имя **HelloWPFApp** и щелкните **ОК**.
 
      ![Шаблон приложения WPF в диалоговом окне нового проекта Visual Studio](media/exploreide-newprojectcsharp.png)
 
@@ -308,7 +308,7 @@ IsChecked="True"
 
 3. Выполните сборку решения, выбрав **Сборка** > **Собрать решение**.
 
-Поздравляем с завершением этого учебника! Построенный файл *.exe* находится в каталоге решения и проекта (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Поздравляем с завершением этого учебника! Построенный файл *.exe* находится в каталоге решения и проекта ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>См. также
 

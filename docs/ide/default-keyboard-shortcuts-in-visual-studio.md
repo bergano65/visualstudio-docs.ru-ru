@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962045"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261323"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 
@@ -125,7 +125,8 @@ ms.locfileid: "62962045"
 |Debug.StepIntoSpecific|**SHIFT+ALT+F11**|
 |Debug.StepOut|**SHIFT+F11**|
 |Debug.StepOutCurrentProcess|**CTRL+SHIFT+ALT+F11**|
-|Debug.StepOver|**F10**|
+|Debug.StepOver|**F10** (при отладке выполняет шаг с обходом)|
+|Debug.StepOver|**F10** (если отладка не выполнялась, запускает ее и приостанавливает на первой строке пользовательского кода)|
 |Debug.StepOverCurrentProcess|**CTRL+ALT+F10**|
 |Debug.StopDebugging|**SHIFT+F5**|
 |Debug.StopPerformanceAnalysis|**SHIFT+ALT+F2**|
@@ -293,9 +294,9 @@ ms.locfileid: "62962045"
 
 |Команды|Сочетания клавиш|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**CTRL+[**, **O** (латинская буква O)<br /><br /> или<br /><br /> **CTRL+[**, **CTRL+O** (латинская буква O)|
-|SolutionExplorer.PendingChangesFilter|**CTRL+[**, **P**<br /><br /> или<br /><br /> **CTRL+[**, **CTRL+P**|
-|SolutionExplorer.SyncWithActiveDocument|**CTRL+[**, **S**<br /><br /> или<br /><br /> **CTRL+[**, **CTRL+S**|
+|SolutionExplorer.OpenFilesFilter|**CTRL+[** , **O** (латинская буква O)<br /><br /> или<br /><br /> **CTRL+[** , **CTRL+O** (латинская буква O)|
+|SolutionExplorer.PendingChangesFilter|**CTRL+[** , **P**<br /><br /> или<br /><br /> **CTRL+[** , **CTRL+P**|
+|SolutionExplorer.SyncWithActiveDocument|**CTRL+[** , **S**<br /><br /> или<br /><br /> **CTRL+[** , **CTRL+S**|
 
 ### <a name="bkmk_team"></a> Команда
 
@@ -803,7 +804,7 @@ ms.locfileid: "62962045"
 | Edit.GotoBraceExtend | **CTRL+SHIFT+]** |
 | Edit.GotoRecent | **CTRL + T, R** |
 | Edit.GotoNextIssueinFile | **ALT+PGDN** |
-| Edit.GotoPreviousIssueinFile **ALT + PGUP** |
+| Edit.GotoPreviousIssueinFile | **ALT+PGUP** |
 | Edit.HideSelection | **CTRL+M, CTRL+H** |
 | Edit.IncreaseFilterLevel | **ALT+.** |
 | Edit.IncrementalSearch | **CTRL+I** |

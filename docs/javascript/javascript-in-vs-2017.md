@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553376"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263030"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript в Visual Studio 2017
 
@@ -247,7 +247,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 ### <a name="vsdoc"></a>VSDoc
 
 Комментарии к XML-документации (иногда называемые VSDoc) в прошлом можно было использовать для добавления в исходный код вспомогательных данных в дополнение к результатам IntelliSense.
-Теперь VSDoc больше не поддерживаются и вместо них используется принятый для JavaScript стандарт [JSDoc](http://usejsdoc.org/about-getting-started.html) с более удобным синтаксисом.
+Теперь VSDoc больше не поддерживаются и вместо них используется принятый для JavaScript стандарт [JSDoc](https://jsdoc.app/about-getting-started.html) с более удобным синтаксисом.
 
 ### <a name="intellisensejs-extensions"></a>Расширения `.intellisense.js`
 

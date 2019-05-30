@@ -1,5 +1,5 @@
 ---
-title: Вопросы настройки клиента в развертываниях ClickOnce сервера и | Документация Майкрософт
+title: Проблемы конфигурации сервера и клиента в развертываниях ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406782"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263477"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 Если вы используете Internet Information Services (IIS) в Windows Server, и развертывание содержит тип файла, который не распознается Windows, например файл Microsoft Word, сервер IIS не будет передавать этот файл и не будет выполнено развертывание.
@@ -128,7 +128,7 @@ ms.locfileid: "63406782"
 ## <a name="http-compression-issues"></a>Проблемы сжатие HTTP
  С помощью [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], можно выполнять загрузки с помощью HTTP-сжатие, технологию веб-сервера, который использует алгоритм GZIP для сжатия потока данных перед отправкой потока клиенту. Клиент — в этом случае [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]— разворачивает поток перед чтением файлов.
 
- Если используются службы IIS, вы можете легко включить сжатие HTTP. Тем не менее, при активации сжатия HTTP, она включена только для определенных типов файлов, а именно, HTML и текстовые файлы. Чтобы включить сжатие для сборок (*.dll*), XML (*.xml*), манифесты развертывания (*.application*) и манифесты приложений (*.manifest*), необходимо добавить этих файлов типы в списке типов для сжатия службами IIS. Пока вы не добавите типы файлов для развертывания, будет сжат только текст и HTML-файлы.
+ Если используются службы IIS, вы можете легко включить сжатие HTTP. Тем не менее, при активации сжатия HTTP, она включена только для определенных типов файлов, а именно, HTML и текстовые файлы. Чтобы включить сжатие для сборок ( *.dll*), XML ( *.xml*), манифесты развертывания ( *.application*) и манифесты приложений ( *.manifest*), необходимо добавить этих файлов типы в списке типов для сжатия службами IIS. Пока вы не добавите типы файлов для развертывания, будет сжат только текст и HTML-файлы.
 
  Подробные инструкции для служб IIS см. в разделе [способы указания дополнительных типов документов для сжатия HTTP](http://go.microsoft.com/fwlink/?LinkId=178459).
 

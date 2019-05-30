@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64256f44e9de5bbfd9e65dd6410b9911aaf5075
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e1fbc0bf5412888f246a1f396b146780013b6c6
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997610"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263052"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio
 
@@ -28,7 +28,7 @@ ms.locfileid: "62997610"
 
 Рекомендуем выполнить обновление до [последней версии](/visualstudio/releasenotes/vs2017-relnotes/) Visual Studio 2017, чтобы иметь доступ к новым компонентам, исправлениям и улучшениям.
 
-И если вы хотите опробовать следующую версию, вы можете также скачать [релиз-кандидат](//visualstudio/releases/2019/release-notes/) Visual Studio 2019.
+И если вы хотите опробовать следующую версию, вы можете также скачать [релиз-кандидат](/visualstudio/releases/2019/release-notes/) Visual Studio 2019.
 
 > [!IMPORTANT]
 > Чтобы установить, обновить или изменить среду Visual Studio, необходимо войти в учетную запись с правами администратора. Дополнительные сведения см. в разделе [Разрешения пользователей и Visual Studio](../ide/user-permissions-and-visual-studio.md).
