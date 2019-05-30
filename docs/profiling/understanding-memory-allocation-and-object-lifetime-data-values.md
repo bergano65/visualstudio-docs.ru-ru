@@ -1,5 +1,5 @@
 ---
-title: Общие сведения о выделении памяти и значениях времени существования объектов | Документы Майкрософт
+title: Общие сведения о выделении памяти и значениях данных о времени существования объекта
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc9dd62c3d264d3b502845cb4d0f3e9c2a8fa78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b652ac052b26054c85955a144d4414d4fe43c005
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821886"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263808"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Общие сведения о выделении памяти и значениях данных о времени существования объекта
 

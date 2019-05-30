@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eccfc06cd48513e7a72eb23bbde11188f2e50dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9062b1f3811b0b2b596cfb7fa016bca00143f332
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696885"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261071"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Отладчик Microsoft Visual Studio (создание исключения) - диалоговое окно
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ ms.locfileid: "65696885"
 ## <a name="see-also"></a>См. также  
  [Управление исключениями с помощью отладчика](../debugger/managing-exceptions-with-the-debugger.md)   
  [Рекомендации по обработке исключений](https://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539)   
- [Обработка исключений](https://msdn.microsoft.com/library/ccb11fe8-6938-41ac-b477-a183e85865b9)
+ [Обработка исключений](/cpp/extensions/exception-handling-cpp-component-extensions)
