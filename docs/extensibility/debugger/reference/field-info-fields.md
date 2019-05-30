@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9614d3b99df71c9bfa8328478348385472f1a8fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710010"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337674"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Указывает, какую информацию нужно извлечь о [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.
@@ -47,14 +50,18 @@ public enum enum_FIELD_INFO_FIELDS {
 };
 ```
 
-## <a name="members"></a>Участники
-FIF_FULLNAME Initialize и использование `bstrFullName` в [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) структуры.
+## <a name="fields"></a>Поля
+`FIF_FULLNAME`\
+Инициализация и использование `bstrFullName` в [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) структуры.
 
-FIF_NAME Initialize и использование `bstrName` в `FIELD_INFO` структуры.
+`FIF_NAME`\
+Инициализация и использование `bstrName` в `FIELD_INFO` структуры.
 
-FIF_TYPE Initialize и использование `bstrType` в `FIELD_INFO` структуры.
+`FIF_TYPE`\
+Инициализация и использование `bstrType` в `FIELD_INFO` структуры.
 
-FIF_MODIFIERS Initialize и использование `bstrModifiers` в `FIELD_INFO` структуры.
+`FIF_MODIFIERS`\
+Инициализация и использование `bstrModifiers` в `FIELD_INFO` структуры.
 
 ## <a name="remarks"></a>Примечания
 Эти значения также передаются в качестве аргумента [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) метод, чтобы указать, какие поля из [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) структуры должны быть инициализированы.

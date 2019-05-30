@@ -4,16 +4,16 @@ ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: gregvanl
+ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862826"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324901"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Практическое руководство. Обеспечить совместимость с Visual Studio 2017 и Visual Studio 2015 расширения
 
@@ -51,7 +51,7 @@ ms.locfileid: "62862826"
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Убедитесь, что нет ссылки в файле project.json
 
-Далее в этом документе мы вставим операторы условного импорта в для вашей **.csproj* файл. Это не будет работать, если ссылки NuGet хранятся в *project.json*. Таким образом, рекомендуется переместить все ссылки NuGet на *packages.config* файла.
+Далее в этом документе мы вставим операторы условного импорта в для вашей * *.csproj* файл. Это не будет работать, если ссылки NuGet хранятся в *project.json*. Таким образом, рекомендуется переместить все ссылки NuGet на *packages.config* файла.
 Если проект содержит *project.json* файла:
 
 * Запишите все ссылки в *project.json*.

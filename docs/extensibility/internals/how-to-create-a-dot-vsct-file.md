@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95b085975a86db248517751fde7bd88c8bc2e35e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418467"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328758"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Практическое руководство. Создание файла vsct
 
-Существует несколько способов для создания конфигурации таблицы команд Visual Studio на основе XML (*.vsct*) файла.
+Существует несколько способов для создания конфигурации таблицы команд Visual Studio на основе XML ( *.vsct*) файла.
 
 - Можно создать новый пакет VSPackage в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] шаблона пакета.
 
@@ -45,7 +45,7 @@ ms.locfileid: "63418467"
 
 6. В списке XSD-схемы, выберите *vsct.xsd* схемы. Если он отсутствует в списке, нажмите кнопку **добавить** и затем найдите файл на локальном диске. Нажмите кнопку **ОК** при завершении работы.
 
-7. В XML-файле введите *< CommandTable* и нажмите клавишу **вкладке**. Закрыть тег, введя *>*.
+7. В XML-файле введите *< CommandTable* и нажмите клавишу **вкладке**. Закрыть тег, введя *>* .
 
     Это действие создает базовое *.vsct* файла.
 
