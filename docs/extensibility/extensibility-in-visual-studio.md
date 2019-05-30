@@ -3,17 +3,17 @@ title: Расширяемость в Visual Studio | Документация М
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 81b0dbe6-ddf3-4899-b09c-a3837037231d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 426ffcd5d764cf5141fede28ccee74326311a618
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0267aab863ad653074a597fff513db36870a75c2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863107"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342763"
 ---
 # <a name="extensibility-in-visual-studio"></a>Расширяемость в Visual Studio
 В Visual Studio предусмотрено множество возможностей расширяемости. Можно создавать собственные пакеты SDK, Windows, Windows Phone и пакеты SDK для Azure (которые устанавливаются как часть Visual Studio) и расширить самой среды Visual Studio.

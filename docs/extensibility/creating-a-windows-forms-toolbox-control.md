@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3887a2d54f2744504f587b848bc1395090c3904c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891098"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345414"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Создание элемента управления панели элементов Windows Forms
 
@@ -35,7 +35,7 @@ ms.locfileid: "62891098"
 
 1. Создайте проект VSIX с именем `MyWinFormsControl`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговом окне, выполняя поиск «vsix».
 
-2. При открытии проекта добавьте **элемента управления панели элементов Windows Forms** шаблон элемента с именем `Counter`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#** > **расширяемости** и выберите **элемента управления панели элементов Windows Forms**
+2. При открытии проекта добавьте **элемента управления панели элементов Windows Forms** шаблон элемента с именем `Counter`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#**  > **расширяемости** и выберите **элемента управления панели элементов Windows Forms**
 
 3. Это добавляет пользовательский элемент управления, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> необходимо вставить элемент управления в **элементов**и **Microsoft.VisualStudio.ToolboxControl** запись ресурса в манифест VSIX для развертывания.
 

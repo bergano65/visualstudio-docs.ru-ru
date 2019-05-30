@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a7d8d056fb816a428d78a8e13455cf6ccdd8a90
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f52ef7e723b583d593f6f0d4fc18f5f6909b131
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705837"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346527"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 Указывает протокол, используемый для обмена данными между сервером отладки и отладки пакета (DE).
@@ -48,20 +51,27 @@ public enum CONNECTION_PROTOCOL {
 };
 ```
 
-#### <a name="parameters"></a>Параметры
-Нет CONNECTION_NONE соединения на сервере.
+## <a name="fields"></a>Поля
+`CONNECTION_NONE`\
+Нет подключение к серверу.
 
-CONNECTION_UNKNOWN объект соединения, но это неизвестного типа.
+`CONNECTION_UNKNOWN`\
+Подключение установлено, но это неизвестного типа.
 
-Соединение CONNECTION_LOCAL предназначено для локального сервера.
+`CONNECTION_LOCAL`\
+Соединение предназначено для локального сервера.
 
-CONNECTION_PIPE подключение осуществляется через именованный канал.
+`CONNECTION_PIPE`\
+Подключение осуществляется через именованный канал.
 
-CONNECTION_TCPIP соединение использует протокол TCP/IP.
+`CONNECTION_TCPIP`\
+Соединение использует протокол TCP/IP.
 
-CONNECTION_HTTP подключения используется протокол HTTP (через веб-сервер).
+`CONNECTION_HTTP`\
+Соединение использует протокол HTTP (с помощью веб-сервера).
 
-Было установлено какое-либо иное подключения CONNECTION_OTHER (это значение не используется в настоящее время).
+`CONNECTION_OTHER`\
+Было установлено какое-либо иное подключения (это значение не используется в настоящее время).
 
 ## <a name="remarks"></a>Примечания
 Эти значения возвращаются из [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) метод.

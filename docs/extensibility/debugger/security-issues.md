@@ -6,17 +6,17 @@ helpviewer_keywords:
 - security [Debugging SDK]
 - debugging [Debugging SDK], security
 ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f68db1a4c6fb3ea2a7f9542c1a9d2d313359554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dc31022611d7148d2cb52182b2a10336215afdc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913112"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345612"
 ---
 # <a name="security-issues"></a>Проблемы безопасности
 Чтобы отладить программу, с помощью Visual Studio, только разрешения, необходимые являются те же, что разработчику требуется для запуска программы. Это включает в себя удаленной отладки для большинства ситуаций. В некоторых ситуациях с использованием других служб, таких как службы IIS, могут требовать более высокого уровня разрешений.

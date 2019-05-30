@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12dfcdf646d6584890e8f78cbe561a84d6f00752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d8f14be1922bb82c2a169e38f370c11231f59f0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891640"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321143"
 ---
 # <a name="capability-flags"></a>Флаги возможностей
 SCC_CAP_*xxx* флаги имеют битовых флагов, используемый для указания возможности подключаемого модуля системы управления версиями. SCC_EXCAP_*xxx* флаги имеют добавочные флаги, которые указывают расширенные возможности и устранить до целых чисел.

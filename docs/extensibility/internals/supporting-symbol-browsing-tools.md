@@ -13,17 +13,17 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87612ebc9bbcaf14bdf25d91a4e5dbe018c22143
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 649ba0583a70d0d53d8b12f26573daf3c52cf5e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428761"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331205"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Вспомогательные средства просмотра символов
 **Обозреватель объектов**, **представление классов**, **Обозреватель вызовов** и **результаты поиска символа** средства предоставляют средства в Visual Studio для просмотра символов. Эти средства просмотра представлений иерархическом дереве символов и отображения связей между символы в дереве. Символы могут представлять пространства имен, объекты, классы, члены класса и остальных элементов языка, содержащиеся в различных компонентов. Компоненты включают проекты Visual Studio, внешних [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] компоненты и библиотеки типов (TLB). Дополнительные сведения см. в разделе [Просмотр структуры кода](../../ide/viewing-the-structure-of-code.md).

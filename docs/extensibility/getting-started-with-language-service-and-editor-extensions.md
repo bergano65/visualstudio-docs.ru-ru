@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acb18a6471a7d2debbb20107dc780f67857327ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7bd39ab8abde2fdbe337073e7cfaa7ea457b022f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415564"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342451"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Начало работы с расширениями редактора и служба языка
 Для добавления функций языка, таких как структурирование, парные фигурные скобки, IntelliSense и лампочки, чтобы выбранном языке программирования или к любому типу содержимого можно использовать расширения редактора. Вы также можете настроить внешний вид и поведение редактора в Visual Studio, например текст конструкций, поля, элементы оформления и других визуальных элементов. Также можно определить свой собственный тип содержимого и затем указать внешний вид и поведение представления текста, в которых отображается содержимое.

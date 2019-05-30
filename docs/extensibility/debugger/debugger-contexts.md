@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fc77e24a1a9ca72d6f689247f0de6a9e0bf26cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 011999929fd4cb1508bf4958629e622684f35739
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62890010"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345997"
 ---
 # <a name="debugger-contexts"></a>Контексты отладчика
 В [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] отладки, отладчик (DE) работает одновременно в нескольких разных контекстах, следующим образом:

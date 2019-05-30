@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control plug-ins, getting started
 - getting started, source control plug-ins
 ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74fe044f5ce00697be36fc69413e0bf7d0042e62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71645c7e5334b24c294265a60581cc4a00eec8aa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909946"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328936"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Начало работы с подключаемых модулей системы управления версиями
 Создание подключаемого модуля системы управления версиями, необходимо создать библиотеку DLL, которая реализует функции, определенные в API подключаемых модулей управления источника, а затем зарегистрировать библиотеку DLL с [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] чтобы сделать его доступным для использования в системе управления версиями исходного кода.

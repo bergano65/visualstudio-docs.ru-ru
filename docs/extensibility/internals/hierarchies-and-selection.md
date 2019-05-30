@@ -7,17 +7,17 @@ helpviewer_keywords:
 - selection
 - hierarchies
 ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 741d61f4f3a62638e56aabb1f62f97aac4519d0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3d59a5160b5c20a3243426eaf1fda4b72e58e93
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861017"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328869"
 ---
 # <a name="hierarchies-and-selection"></a>Иерархии и выбор
 При настройке [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], необходимо понимать как [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] обрабатывает иерархии как проекты и как он использует контекст выбора, чтобы определить, будет отображаться для пользователя. В этом разделе рассматриваются основные понятия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] иерархии и выбор.

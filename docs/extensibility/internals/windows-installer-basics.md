@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9978e12d5b4d94a5f860bfdd5d3dc90ae6fef3ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fc52f846d7883d32f567df449a93c2626a710f81
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431027"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323049"
 ---
 # <a name="windows-installer-basics"></a>Основные сведения об установщике Windows
 Установщик Windows устанавливает и удаляет приложения или программных продуктов на компьютере пользователя, выполнения этих задач в блоках, именуемых компоненты установщика Windows (иногда называется WICs или просто компонентов). Идентификатор GUID идентифицирует каждый WIC, который является основной единицей установки и подсчет ссылок для настройки с помощью установщика Windows.
