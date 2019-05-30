@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Добавление надежного издателя на клиентский компьютер для приложений ClickOnce | Документация Майкрософт
+title: Добавление надежного издателя на клиентский компьютер для приложений ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fdbcb3da2e2b3c335b55ca66449d6264c2cf16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 426096670df1099568cadc2af68ae0ff50ca71e5
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407618"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263165"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Практическое руководство. добавление надежного издателя на клиентский компьютер для приложений ClickOnce
 С помощью технологии развертывания доверенных приложений можно настроить клиентские компьютеры так, чтобы ваши приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] выполнялись с более высоким уровнем доверия без вывода запроса пользователю. Следующие процедуры показывают, как использовать программу командной строки CertMgr.exe для добавления сертификата издателя в хранилище надежных издателей на клиентском компьютере.

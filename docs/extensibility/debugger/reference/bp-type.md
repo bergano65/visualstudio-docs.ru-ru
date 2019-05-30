@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2fab9a97ef944b153287a58671193324aecf52c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 69774df555c4258ef36a65a3a18e6ce3fccbe555
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711479"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350568"
 ---
 # <a name="bptype"></a>BP_TYPE
 Определяет точку останова в месте кода, — это расположение данных или — еще один тип точки останова.
@@ -43,14 +46,18 @@ public enum enum_BP_TYPE {
 };
 ```
 
-## <a name="members"></a>Участники
-BPT_NONE указывает не тип точки останова.
+## <a name="fields"></a>Поля
+`BPT_NONE`\
+Указывает тип точки останова не.
 
-BPT_CODE задает точку останова кода.
+`BPT_CODE`\
+Задает точку останова кода.
 
-BPT_DATA задает точки останова по данным.
+`BPT_DATA`\
+Задает точку останова по данным.
 
-Указывает BPT_SPECIAL введите точку останова, которая не является ни код, ни данных. Этот тип является устаревшим и не должны использоваться.
+`BPT_SPECIAL`\
+Задает точку останова, которая не является ни код, ни тип данных. Этот тип является устаревшим и не должны использоваться.
 
 ## <a name="remarks"></a>Примечания
 Переданный в качестве параметра для [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) и [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) методы.

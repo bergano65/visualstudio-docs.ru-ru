@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80d4081a567c67b73200f4f1d0e1d6bee32871e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411036"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312780"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Пошаговое руководство. Создание базового редактора и регистрации файла тип редактора
 В этом пошаговом руководстве показано, как создать пакет VSPackage, который запускает [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] базового редактора при создании файла с *.myext* загружается расширение имени файла.
@@ -28,7 +28,7 @@ ms.locfileid: "63411036"
 
 1. В разделе **расширения Visual Basic**. Язык проекта по умолчанию — Visual Basic.
 
-2. В разделе **расширения Visual C#**. Язык проекта по умолчанию — C#.
+2. В разделе **расширения Visual C#** . Язык проекта по умолчанию — C#.
 
 3. В разделе **расширения других типов проектов**. Язык проекта по умолчанию — C++.
 

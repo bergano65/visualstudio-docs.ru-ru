@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ef0d68df50d89f0ec22631a731ea9eb50dad46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 96c6e1cc5c26819854099a0b7a493472fca8155e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415492"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351923"
 ---
 # <a name="how-to-implement-error-markers"></a>Практическое руководство. Реализовать маркеры ошибок
 Маркеры ошибок (или красными волнистыми линиями) являются наиболее сложных настроек текстового редактора для реализации. Однако преимущества, которые они предоставляют пользователям вашего VSPackage значительно перевешивают затраты на обеспечение. Маркеры ошибок может привести к некоторой пометить текст, который ваши средства синтаксического анализа языка считает, что неправильное волнистой или волнистой красной линией. Он помогает программистам визуально отображается неправильный код.
@@ -26,11 +26,11 @@ ms.locfileid: "63415492"
 
 1. Выделите текст, в котором следует разместить красной волнистой линией.
 
-2. Создайте маркер типа `MARKER_CODESENSE_ERROR`. Дополнительные сведения см. в разделе [Как Добавление маркеров стандартный текст](../extensibility/how-to-add-standard-text-markers.md).
+2. Создайте маркер типа `MARKER_CODESENSE_ERROR`. Дополнительные сведения см. в разделе [Практическое руководство. Добавление маркеров стандартный текст](../extensibility/how-to-add-standard-text-markers.md).
 
 3. После этого передайте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> указатель на интерфейс.
 
-   Этот процесс также позволяет создать текст подсказки или специальные контекстного меню над заданной маркером. Дополнительные сведения см. в разделе [Как Добавление маркеров стандартный текст](../extensibility/how-to-add-standard-text-markers.md).
+   Этот процесс также позволяет создать текст подсказки или специальные контекстного меню над заданной маркером. Дополнительные сведения см. в разделе [Практическое руководство. Добавление маркеров стандартный текст](../extensibility/how-to-add-standard-text-markers.md).
 
    Следующие объекты необходимы, прежде чем можно будет отобразить маркеры ошибок.
 

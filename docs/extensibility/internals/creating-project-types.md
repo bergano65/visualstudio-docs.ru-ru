@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3d983da91fadbb0eb78eab6d0fa5bb02cca193
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 005765cb66a23f2efcf0c8defb323120d79bef60
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910011"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314567"
 ---
 # <a name="create-project-types"></a>Создание типов проектов
 Вы можете расширить [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , создав новый тип проекта. Чтобы создать новый тип проекта, необходимо понимать несколько базовых понятий и выполнить ряд действий. В следующих разделах приводятся общие сведения для создания типов проектов.
@@ -57,7 +57,7 @@ ms.locfileid: "62910011"
 
 - [Установка пакетов VSPackage с помощью установщика Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- Показано, как предоставить свой собственный уникальный идентификатор пакета VSPackage и как программы-оболочки для библиотеки DLL VSPackage и другие сведения в пакет установщика Windows (*. MSI* файл) для развертывания клиентов.
+ Показано, как предоставить свой собственный уникальный идентификатор пакета VSPackage и как программы-оболочки для библиотеки DLL VSPackage и другие сведения в пакет установщика Windows ( *. MSI* файл) для развертывания клиентов.
 
 - [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 

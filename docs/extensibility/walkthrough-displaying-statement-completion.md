@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4529fa9cd52c1e9e54049386d39e85ea8efcbe5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f117209c8e1d57c64ab53df608fe55ae27f0cff0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965197"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312410"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Пошаговое руководство. Отображение завершения операторов
 Завершение операторов на основе языка можно реализовать путем определения идентификаторов, для которых вы хотите предоставить завершения и затем активировать сеанс завершения. Можно определить завершение операторов в контексте языковой службы, определите расширение имени файла и тип содержимого и затем отобразить завершение только этого типа. Или вы можете активировать завершение существующий тип контента, например, «обычный текст». В этом пошаговом руководстве показано, как требуется активировать завершение операторов для типа содержимого «обычный текст», который является типом содержимого текстовых файлов. Тип содержимого «text» является предком всех других типов содержимого, включая код и XML-файлы.

@@ -1,5 +1,5 @@
 ---
-title: Просмотр структуры кода в окне "Представление классов", "Иерархия вызовов", "Обозреватель объектов" и окне определения кода
+title: Окна "Представление классов", "Иерархия вызовов", "Обозреватель объектов" и окно определения кода
 ms.date: 05/18/2018
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e2ec8e3e51036749030036eee6ff1d268a44f69
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582087"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263072"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Просмотр структуры кода с помощью разных окон инструментов
 

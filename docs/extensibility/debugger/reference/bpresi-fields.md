@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BPRESI_FIELDS enumeration
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fac4c65047c51d1213d8be4352c1b8e6efc35c8e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 82a286bea92c778ab150cacdc80d79f8ac283469
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680572"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350484"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 Указывает сведения, которые требуется получить о успешного разрешения точки останова.
@@ -43,14 +46,18 @@ public enum enum_BPRESI_FIELDS {
 };
 ```
 
-## <a name="members"></a>Участники
-BPRESI_BPRESLOCATION Initialize и использование `bpResLocation` (точки останова разрешения) поле [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры.
+## <a name="fields"></a>Поля
+`BPRESI_BPRESLOCATION`\
+Initialize и использование `bpResLocation` (точки останова разрешения) поле [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры.
 
-BPRESI_PROGRAM Initialize и использование `pProgram` поле `BP_RESOLUTION_INFO` структуры.
+`BPRESI_PROGRAM`\
+Инициализация и использование `pProgram` поле `BP_RESOLUTION_INFO` структуры.
 
-BPRESI_THREAD Initialize и использование `pThread` поле `BP_RESOLUTION_INFO` структуры.
+`BPRESI_THREAD`\
+Инициализация и использование `pThread` поле `BP_RESOLUTION_INFO` структуры.
 
-BPRESI_ALLFIELDS указывает все поля.
+`BPRESI_ALLFIELDS`\
+Указывает все поля.
 
 ## <a name="remarks"></a>Примечания
 Передаваемый [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) метод, чтобы указать, какие поля [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры должны быть инициализированы.

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. изменение типа возвращаемого значения метода DataContext (реляционный конструктор объектов)
+title: Изменить тип возвращаемого значения метода DataContext (реляционный конструктор объектов)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03e24c11e18f092823ad8dd8c4479b50e531b78b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 18e54938248dd52ee331e4df7bd2388105522657
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402821"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260565"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Практическое руководство. изменение типа возвращаемого значения метода DataContext (реляционный конструктор объектов)
 Тип возвращаемого значения <xref:System.Data.Linq.DataContext> метод (созданный на основе хранимой процедуры или функции) зависит от того, где вы переместили сохраненную процедуру или функцию в **реляционный конструктор объектов**. Если вы сбрасываете элемент прямо в существующий класс сущностей, то создается метод <xref:System.Data.Linq.DataContext>, который имеет тип возврата создаваемого класса сущностей (если схема данных, возвращенная сохраненной процедурой или функцией совпадает с формой класса сущностей). Если Вы сбрасываете элемент на пустую область **реляционный конструктор объектов**, <xref:System.Data.Linq.DataContext> создается метод, который возвращает автоматически сгенерированный тип. Можно изменить тип возвращаемого значения метода <xref:System.Data.Linq.DataContext> после его добавления в область методов. Чтобы проверить или изменить тип возврата метода <xref:System.Data.Linq.DataContext>, выберите его и щелкните по свойству **Тип возврата** в окне **Свойства**.

@@ -7,18 +7,18 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о преимуществе Office 365, входящем в состав некоторых подписок Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 9f3df6923101bf5b8b4a2592460e96b57416c1c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947731"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263127"
 ---
-# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 профессиональный плюс в подписках Visual Studio
+# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 профессиональный плюс в подписках Visual Studio
 
 Создайте лучшие условия работы. Работайте только с последними версиями приложений из любого расположения. Подписка Office 365 профессиональный плюс поставляется с приложениями категории "Премиум", такими как Word, Excel, PowerPoint, OneNote, Outlook, Publisher и Access (последние два доступны только на компьютере). Приложения можно установить на нескольких устройствах, включая персональные компьютеры, компьютеры Mac, устройства iPad, устройства iPhone, планшеты и телефоны с Android. Кроме того, в подписке Office 365 предоставляются 1 ТБ хранилища OneDrive, 60 минут Skype в месяц, а также поддерживаемые Майкрософт службы чата и телефонных звонков. С этой подпиской вы получите последние версии приложений. Кроме того вам будут автоматически предоставляться обновления, когда они будут доступны.
 
-## <a name="getting-started-with-office-365-pro-plus"></a>Начало работы с Office 365 профессиональный плюс
+## <a name="getting-started-with-office-365-proplus"></a>Начало работы с Office 365 профессиональный плюс
 
 Чтобы скачать и активировать Office 365 профессиональный плюс, сделайте следующее:
 1. Войдите в подписку Visual Studio Enterprise.
