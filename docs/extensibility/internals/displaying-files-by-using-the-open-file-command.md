@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Open File command
 - persistence, supporting Open File command
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c4655d251d9020c1b8b4474865126dc98fa982f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19fda87f0e2692d30b9a99777ca11edd7b3906f0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420672"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324337"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Отображение файлов с помощью команды открытия файла
 Следующие шаги описывают, каким образом среда IDE обрабатывает **открыть файл** команды, которая доступна на **файл** меню в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Также описано, как проекты должна отвечать на вызовы, поступающие из этой команды.
@@ -49,7 +49,7 @@ ms.locfileid: "63420672"
 
 4. Как только среда интегрированной разработки определяет, какой проект открывает файл, он вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> метод для этого проекта.
 
-5. Проект затем может открыть файл с помощью редактора определенного проекта или стандартного редактора. Дополнительные сведения см. в разделе [Как Открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md) и [как: Открытие стандартных редакторов](../../extensibility/how-to-open-standard-editors.md), соответственно.
+5. Проект затем может открыть файл с помощью редактора определенного проекта или стандартного редактора. Дополнительные сведения см. в разделе [Практическое руководство. Открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md) и [как: Открытие стандартных редакторов](../../extensibility/how-to-open-standard-editors.md), соответственно.
 
 ## <a name="see-also"></a>См. также
 - [Отображение файлов с помощью команды Открыть с помощью](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)

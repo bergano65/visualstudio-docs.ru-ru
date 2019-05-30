@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a21c8d547cb2167da018c13e788fe2c95bd504ac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434254"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338030"
 ---
 # <a name="troubleshooting-vspackages"></a>Устранение неполадок, связанных с пакетами VSPackage
 Ниже приведены распространенные проблемы, которые могут возникнуть с VSPackage и советы для решения проблем.
@@ -50,7 +50,7 @@ ms.locfileid: "63434254"
 
 5. В журнале действий.
 
-    Дополнительные сведения см. в разделе [Как Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).
+    Дополнительные сведения см. в разделе [Практическое руководство. Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).
 
 6. Дополнительные сведения об исключениях, создаваемых интегрированной среды разработки **исключения** на **Отладка** меню, чтобы включить исключения. В **исключения** диалоговом выберите типы исключений, о которых нужно получить дополнительные сведения.
 
@@ -66,7 +66,7 @@ ms.locfileid: "63434254"
 
    1. Найти идентификатор CLSID объекта VSPackage в пакеты разделе реестра:
 
-        HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages
+        HKLM\Software\Microsoft\Visual Studio\\ *\<version>* \Packages
 
    2. Проверьте правильность пути, задаваемый подраздел SatelliteDll.
 
@@ -89,7 +89,7 @@ ms.locfileid: "63434254"
 
 2. Использование журнала действий.
 
-     Трассировки поведение VSPackage, записывая данные в журнал действий в ключевых точках. Этот метод особенно полезен, при запуске пакета VSPackage в сфере розничной торговли. Дополнительные сведения см. в разделе [Как Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).
+     Трассировки поведение VSPackage, записывая данные в журнал действий в ключевых точках. Этот метод особенно полезен, при запуске пакета VSPackage в сфере розничной торговли. Дополнительные сведения см. в разделе [Практическое руководство. Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).
 
 3. Используйте открытые символы.
 
@@ -119,7 +119,7 @@ ms.locfileid: "63434254"
 
 2. Для неуправляемого кода, найдите идентификатор CLSID объекта VSPackage в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] системного реестра CLSID:
 
-    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<version>* \CLSID
 
    Убедитесь, что операция InprocServer32 имеет правильный путь к библиотеке dll VSPackage.
 

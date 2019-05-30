@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a657c59cba31ea48298179a41ab1024a0b7e948f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860310"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326629"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Создание проекта: как это работает, часть 1
 Когда-нибудь думали о том, как создать собственный тип проекта? Интересно, что произойдет при создании нового проекта? Давайте взглянуть изнутри и что происходит в действительности.
@@ -78,7 +78,7 @@ devenv /installvstemplates
 
  \<Путь установки Visual Studio > \VC#\VCSPackages\1033\csprojui.dll
 
- Чтобы проверить это, откройте файл в проводнике и перетащите csprojui.dll в каталоге Visual Studio... В строке таблице показано, что resource #2345 заголовок **Visual C#**.
+ Чтобы проверить это, откройте файл в проводнике и перетащите csprojui.dll в каталоге Visual Studio... В строке таблице показано, что resource #2345 заголовок **Visual C#** .
 
 ##### <a name="sortpriority"></a>SortPriority
  Этот параметр определяет положение корневого узла в **типы проектов** дерева.

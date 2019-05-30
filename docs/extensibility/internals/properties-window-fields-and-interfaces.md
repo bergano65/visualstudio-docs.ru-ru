@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf74bb93901cbd1637efd22690b8b1ba52f6b97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 379eaa6e154b77d10463514a63978708bf2b89d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425738"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347886"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 Модель для выбора определить, какие данные будут отображаться в **свойства** окна основана на окно, которое имеет фокус в интегрированной среде разработки. Каждой окна, а объект внутри выбранного окна, может иметь свой объект контекста выбора, в контексте глобального выделения. Среде обновляет контекст глобального выделения значениями из рамки окна, когда это окно имеет фокус. При изменении фокуса, заканчивается контекст выделения.

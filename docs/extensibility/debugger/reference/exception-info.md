@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_INFO structure
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c5863c9ebb790ebcbc267f62cc2a0a1fd14603c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5c4fc29aee8d14e9c73dcf5665eff3ea611985d1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686266"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337795"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
 Описывает исключение или ошибка времени выполнения, выводится отлаживаемой программы.
@@ -47,17 +50,23 @@ public struct EXCEPTION_INFO {
 ```
 
 ## <a name="members"></a>Участники
-pProgram [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу, в котором произошло исключение.
+`pProgram`\
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу, в котором произошло исключение.
 
-bstrProgramName имя программы, в котором произошло исключение.
+`bstrProgramName`\
+Имя программы, в котором произошло исключение.
 
-bstrExceptionName имя исключения.
+`bstrExceptionName`\
+Имя исключения.
 
-dwCode идентификационный код ошибки исключения или во время выполнения.
+`dwCode`\
+Идентификационный код ошибки исключения или во время выполнения.
 
-значение dwState объект из [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) перечисление, определяющее состояние исключения.
+`dwState`\
+Значение из [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) перечисление, определяющее состояние исключения.
 
-Идентификатор языка guidType идентификатор GUID, либо `guidLang` или `guidEng`.
+`guidType`\
+Идентификатор GUID языка, либо `guidLang` или `guidEng`.
 
 ## <a name="remarks"></a>Примечания
 Эта структура передается в качестве параметра [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) и [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) методы. Эта структура также передается [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) метод для заполнения.

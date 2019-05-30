@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420525"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334913"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Практическое руководство. Установка подключаемого модуля системы управления версиями
 Создание подключаемого модуля системы управления версиями состоит из трех этапов:
@@ -64,7 +64,7 @@ ms.locfileid: "63420525"
 
 3. Добавьте подраздел, **SourceCodeControlProvider**в разделе **HKEY_LOCAL_MACHINE** в **программного обеспечения** подраздел.
 
-    В этом подразделе реестра **ProviderRegKey** присваивается строка, представляющая подраздела, помещенную в реестре на шаге 1. Шаблон **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *программного обеспечения\\< название_организации\>\\< название продукта \>*.
+    В этом подразделе реестра **ProviderRegKey** присваивается строка, представляющая подраздела, помещенную в реестре на шаге 1. Шаблон **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *программного обеспечения\\< название_организации\>\\< название продукта \>* .
 
     Ниже приведен пример содержимого для такого подраздела.
 
@@ -77,7 +77,7 @@ ms.locfileid: "63420525"
 
 4. Создайте подраздел с именем **InstalledSCCProviders** под **SourceCodeControlProvider** подраздел, а затем поместите одну запись в этом подразделе.
 
-    Имя этой записи понятное пользователю имя поставщика (то же как значение, указанное для операции SCCServerName), и значение, опять же, подраздел, созданное на шаге 1. Шаблон **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< отображаемое имя\>** = *программного обеспечения\\< компании имя\>\\< название продукта\>*.
+    Имя этой записи понятное пользователю имя поставщика (то же как значение, указанное для операции SCCServerName), и значение, опять же, подраздел, созданное на шаге 1. Шаблон **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< отображаемое имя\>**  = *программного обеспечения\\< компании имя\>\\< название продукта\>* .
 
     Пример:
 
