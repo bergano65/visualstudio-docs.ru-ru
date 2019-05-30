@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO_FLAGS enumeration
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54bb93fa6f88c02731691728bceacdd4a5fe2036
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 56990cf324c09764137b344f875322e80e613403
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694352"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350492"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 Указывает сведения для получения о кадр стека.
@@ -97,68 +100,99 @@ public enum enum_FRAMEINFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Участники
-FIF_FUNCNAME Initialize и использование `m_bstrFuncName` поля.
+## <a name="fields"></a>Поля
+`FIF_FUNCNAME`\
+Инициализация и использование `m_bstrFuncName` поля.
 
-FIF_RETURNTYPE Initialize и использование `m_bstrReturnType` поля.
+`FIF_RETURNTYPE`\
+Инициализация и использование `m_bstrReturnType` поля.
 
-FIF_ARGS Initialize и использование `m_bstrArgs` поля.
+`FIF_ARGS`\
+Инициализация и использование `m_bstrArgs` поля.
 
-FIF_LANGUAGE Initialize и использование `m_bstrLanguage` поля.
+`FIF_LANGUAGE`\
+Инициализация и использование `m_bstrLanguage` поля.
 
-FIF_MODULE Initialize и использование `m_bstrModule` поля.
+`FIF_MODULE`\
+Инициализация и использование `m_bstrModule` поля.
 
-FIF_STACKRANGE Initialize и использование `m_addrMin` и `m_addrMax` поля (stack диапазона).
+`FIF_STACKRANGE`\
+Инициализация и использование `m_addrMin` и `m_addrMax` поля (stack диапазона).
 
-FIF_FRAME Initialize и использование `m_pFrame` поля.
+`FIF_FRAME`\
+Инициализация и использование `m_pFrame` поля.
 
-FIF_DEBUGINFO Initialize и использование `m_fHasDebugInfo` поля.
+`FIF_DEBUGINFO`\
+Инициализация и использование `m_fHasDebugInfo` поля.
 
-FIF_STALECODE Initialize и использование `m_fStaleCode` поля.
+`FIF_STALECODE`\
+Инициализация и использование `m_fStaleCode` поля.
 
-FIF_ANNOTATEDFRAME Initialize и использование `m_fAnnotatedFrame` поля.
+`FIF_ANNOTATEDFRAME`\
+Инициализация и использование `m_fAnnotatedFrame` поля.
 
-FIF_DEBUG_MODULEP Initialize и использование `m_pModule` поля.
+`FIF_DEBUG_MODULEP`\
+Инициализация и использование `m_pModule` поля.
 
-FIF_FUNCNAME_FORMAT форматирует имя функции. Результат возвращается в `m_bstrFunName` поля и другие поля не заполнены.
+`FIF_FUNCNAME_FORMAT`\
+Форматирует имя функции. Результат возвращается в `m_bstrFunName` поля и другие поля не заполнены.
 
-FIF_FUNCNAME_RETURNTYPE добавляет тип возвращаемого значения на `m_bstrFuncName` поля.
+`FIF_FUNCNAME_RETURNTYPE`\
+Добавляет тип возвращаемого значения на `m_bstrFuncName` поля.
 
-Аргументы, добавляет FIF_FUNCNAME_ARGS `m_bstrFuncName` поля.
+`FIF_FUNCNAME_ARGS`\
+Добавляет аргументы `m_bstrFuncName` поля.
 
-Язык, который добавляет FIF_FUNCNAME_LANGUAGE `m_bstrFuncName` поля.
+`FIF_FUNCNAME_LANGUAGE`\
+Язык, который добавляет `m_bstrFuncName` поля.
 
-FIF_FUNCNAME_MODULE добавляет имя модуля для `m_bstrFuncName` поля.
+`FIF_FUNCNAME_MODULE`\
+Добавляет имя модуля для `m_bstrFuncName` поля.
 
-FIF_FUNCNAME_LINES добавляет число строк, которые должны `m_bstrFuncName` поля.
+`FIF_FUNCNAME_LINES`\
+Добавляет число строк, которые должны `m_bstrFuncName` поля.
 
-Добавляет FIF_FUNCNAME_OFFSET `m_bstrFuncName` поле Смещение в байтах от начала строки, если `FIF_FUNCNAME_LINES` указан. Если `FIF_FUNCNAME_LINES` не указан, или если номера строк недоступны, добавляет смещение в байтах от начала функции.
+`FIF_FUNCNAME_OFFSET`\
+Добавляет `m_bstrFuncName` поле Смещение в байтах от начала строки, если `FIF_FUNCNAME_LINES` указан. Если `FIF_FUNCNAME_LINES` не указан, или если номера строк недоступны, добавляет смещение в байтах от начала функции.
 
-FIF_FUNCNAME_ARGS_TYPES добавляет тип каждого аргумента для `m_bstrFuncName` поля.
+`FIF_FUNCNAME_ARGS_TYPES`\
+Добавляет тип каждого аргумента для `m_bstrFuncName` поля.
 
-FIF_FUNCNAME_ARGS_NAMES добавляет имя для каждого аргумента `m_bstrFuncName` поля.
+`FIF_FUNCNAME_ARGS_NAMES`\
+Добавляет имя для каждого аргумента `m_bstrFuncName` поля.
 
-FIF_FUNCNAME_ARGS_VALUES добавляет значение каждого аргумента для `m_bstrFuncName` поля.
+`FIF_FUNCNAME_ARGS_VALUES`\
+Добавляет значение каждого аргумента для `m_bstrFuncName` поля.
 
-FIF_FUNCNAME_ARGS_ALL добавляет тип, имя и значение всех аргументов `m_bstrFuncName` поля.
+`FIF_FUNCNAME_ARGS_ALL`\
+Добавляет тип, имя и значение всех аргументов `m_bstrFuncName` поля.
 
-FIF_ARGS_TYPES извлекаются и отформатирован типов аргументов.
+`FIF_ARGS_TYPES`\
+Типы аргументов извлекаются и отформатирован.
 
-FIF_ARGS_NAMES извлекаются имена аргументов и формат.
+`FIF_ARGS_NAMES`\
+Имена аргументов извлекаются и отформатирован.
 
-FIF_ARGS_VALUES значения аргументов извлекаются и отформатирован.
+`FIF_ARGS_VALUES`\
+Значения аргументов извлекаются и отформатирован.
 
-Получить FIF_ARGS_ALL и формат типа, имя и значение всех аргументов.
+`FIF_ARGS_ALL`\
+Извлечения и форматирования типа, имя и значение всех аргументов.
 
-FIF_ARGS_NOFORMAT указывает, что аргументы имеют формат (например, не Добавьте открывающую и закрывающую скобки вокруг списка аргументов и не добавлять разделитель между аргументами).
+`FIF_ARGS_NOFORMAT`\
+Указывает, что аргументы не быть отформатированы (например, не Добавьте открывающую и закрывающую скобки вокруг списка аргументов и не добавлять разделитель между аргументами).
 
-FIF_ARGS_NO_FUNC_EVAL указывает, что вычисление (свойство) функции не следует при извлечении значения аргументов.
+`FIF_ARGS_NO_FUNC_EVAL`\
+Указывает, что вычисление функций (свойство) не следует использовать при извлечении значения аргументов.
 
-FIF_FILTER_NON_USER_CODE модуль отладки — отфильтровать кадры не написанный пользователем код, чтобы они не включаются.
+`FIF_FILTER_NON_USER_CODE`\
+Модуль отладки — отфильтровать кадры не написанный пользователем код, чтобы они не включаются.
 
-FIF_ARGS_NO_TOSTRING не допускают `ToString()` функции оценки или форматирования при возврате аргументы функции.
+`FIF_ARGS_NO_TOSTRING`\
+Не разрешать `ToString()` функции оценки или форматирования при возврате аргументы функции.
 
-Сведения о кадре FIF_DESIGN_TIME_EXPR_EVAL следует получить из размещенного домена приложения, а не процесс размещения.
+`FIF_DESIGN_TIME_EXPR_EVAL`\
+Сведения о кадре должен быть получить из размещенного домена приложения, а не процесс размещения.
 
 ## <a name="remarks"></a>Примечания
 Эти флаги передаются [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) и [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) методы, чтобы указать, какие поля должны быть инициализированы в [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структурой или структурами.

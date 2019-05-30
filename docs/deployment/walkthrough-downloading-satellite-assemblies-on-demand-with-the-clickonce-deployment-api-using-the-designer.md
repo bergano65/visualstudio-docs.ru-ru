@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора | Документация Майкрософт
+title: Загрузить вспомогательную сборку по запросу с помощью конструктора ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb3003ebf8fe102caac1dabfb4c87de521a57c77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f510ef4ad81188997e1d572e7aa3b52b65883269
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405904"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263405"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Пошаговое руководство. Загрузка вспомогательных сборок по требованию с помощью API развертывания ClickOnce с помощью конструктора
 Приложения Windows Forms можно настроить для нескольких языков и региональных параметров, воспользовавшись вспомогательными сборками. *Вспомогательная сборка* — это сборка, содержащая ресурсы приложения для языка, отличного от языка и региональных параметров приложения по умолчанию.

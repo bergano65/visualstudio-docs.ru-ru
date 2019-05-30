@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b27df2b9b93276ade06f97c9e80fd0c0483ef963
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415156"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309987"
 ---
 # <a name="configuration-options-overview"></a>Общие сведения о параметрах конфигурации
 В проекты [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] может поддерживать несколько конфигураций, которые можно использовать, отладки, выполнения и/или развернутой. Конфигурация представляет сборки типа, описанного с именованным набором свойств, обычно параметры компилятора и расположения файлов. По умолчанию новые решения содержат две конфигурации *Отладка* и *выпуска*. Эти конфигурации можно применять с помощью их параметров по умолчанию или изменить в соответствии с конкретными требованиями решения или проекта. Некоторые пакеты можно создать двумя способами: как редактор ActiveX или как компонент на месте. Для поддержки нескольких конфигураций, однако не обязательно проектов. Если имеется только одна конфигурация, что конфигурация сопоставляется все конфигурации решения.

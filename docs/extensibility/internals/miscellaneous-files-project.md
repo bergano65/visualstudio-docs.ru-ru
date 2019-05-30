@@ -8,24 +8,24 @@ helpviewer_keywords:
 - Solution Items folder
 - files, opening with Miscellaneous Files project
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a1d0530d6a7a759bfab557be1a3d80fcfc9df78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd3cf792b10905d0f124266601e791dc91259ce2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860089"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349279"
 ---
 # <a name="miscellaneous-files-project"></a>Проект прочих файлов
 При открытии элементов проекта, интегрированная среда разработки присваивает проекта прочих файлов любые элементы, которые не являются членами всех проектов в решении.
 
  Проекты играют важную роль при определении того, какой редактор используется в том случае, когда пользователь открывает элемент проекта. Проект может разрабатываться для открытия определенных файлов с помощью редактора определенного проекта или стандартного редактора.
 
- Проектный редактор обычно требует, что пользователь иметь специальные сведения или использовать специальные интерфейсы из проекта. Дополнительные сведения см. в разделе [Как Открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md).
+ Проектный редактор обычно требует, что пользователь иметь специальные сведения или использовать специальные интерфейсы из проекта. Дополнительные сведения см. в разделе [Практическое руководство. Открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md).
 
  Стандартный редактор можно открыть любой файл конкретного расширения в любом проекте. Пользователь может настраивать некоторые стандартные редакторы, такие как [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] текстовый редактор для проектов, но по-прежнему сохранить их общедоступных символов. Стандартные редакторы создаются с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод.
 

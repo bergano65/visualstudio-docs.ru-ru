@@ -6,21 +6,21 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ea614be39456f5d6a31ea6c9c12221b4db09bbd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909318"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311010"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Создание проекта: как это работает, часть 2
 
-В [Создание нового проекта: За кулисами, часть первая](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) мы узнали, каким образом **новый проект** диалоговое окно, окно заполняется. Предположим, что вы выбрали **приложение Windows Visual C#**, заполненный **имя** и **расположение** текстовые поля и щелчка OK.
+В [Создание нового проекта: За кулисами, часть первая](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) мы узнали, каким образом **новый проект** диалоговое окно, окно заполняется. Предположим, что вы выбрали **приложение Windows Visual C#** , заполненный **имя** и **расположение** текстовые поля и щелчка OK.
 
 ## <a name="generating-the-solution-files"></a>Создание файлов решения
  Выбрав шаблон приложения направляет [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] распаковка и открытие соответствующих VSTEMPLATE-файл и запустить шаблон для интерпретации команд XML в этом файле. Эти команды создают проектов и элементов проектов в новом или существующем решении.

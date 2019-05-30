@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b443c4530a71897d11731c023af57215eac8706a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6f3662b5107d517f19b4803a37de4ebcf235bc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434191"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353487"
 ---
-# <a name="using-text-markers-with-the-legacy-api"></a>С помощью меток текста с помощью API прежних версий
+# <a name="using-text-markers-with-the-legacy-api"></a>Использование текстовых маркеров с помощью API прежних версий
 Текстовая метка — с плавающей запятой диапазон текста в буфере, которые могут повлиять на отображение и поведение области текста. Маркеры включают точки останова, закладок, волнистых линий и только для чтения областей. Текстовые метки, по сути отличаются от Цветовая подсветка синтаксиса. Цветовая подсветка синтаксиса — это быстрый способ взаимодействия синтаксис языка, который связан с области текста. Цветовая подсветка синтаксиса запрашивается обычно в том случае, когда Windows перерисовывает экрана, когда важна скорость. Цветовая подсветка синтаксиса изменяет цвет текста. Текстовые метки можно изменить множество других свойств текста. Текстовые метки можно «float» и применить специальное поведение и его выделение цветом.
 
  Из-за снижению производительности, связанные с текстовые метки не следует создавать много маркеры для вашей текстовых буферов. Каждый маркер обновляется каждый раз, что пользователь редактирует содержимое буфера.

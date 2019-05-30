@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717667"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350559"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 Предоставляет причину, по которой был отсоединен точку останова.
@@ -43,14 +46,18 @@ public enum enum_BP_UNBOUND_REASON {
 };
 ```
 
-## <a name="members"></a>Участники
-BPUR_UNKNOWN Причина неизвестна.
+## <a name="fields"></a>Поля
+`BPUR_UNKNOWN`\
+Причина неизвестна.
 
-Код, который содержит точку останова BPUR_CODE_UNLOADED был выгружен.
+`BPUR_CODE_UNLOADED`\
+Код, который содержит точку останова, был выгружен.
 
-Точка останова BPUR_BREAKPOINT_REBIND были привязаны повторно в другом месте. Это может произойти после изменения и продолжить работу, если точка останова перемещается или привязана точка останова в файл с путем, который больше не является допустимым.
+`BPUR_BREAKPOINT_REBIND`\
+Точка останова были привязаны повторно в другом месте. Это может произойти после изменения и продолжить работу, если точка останова перемещается или привязана точка останова в файл с путем, который больше не является допустимым.
 
-Чтобы находиться в состоянии ошибки, после привязки определяется BPUR_ BREAKPOINT_ERROR точки останова. Это происходит для управляемых точек останова, условия которых больше не действительны.
+`BPUR_ BREAKPOINT_ERROR`\
+Чтобы находиться в состоянии ошибки, после привязки определяется точка останова. Это происходит для управляемых точек останова, условия которых больше не действительны.
 
 ## <a name="remarks"></a>Примечания
 Возвращенный [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) метод.

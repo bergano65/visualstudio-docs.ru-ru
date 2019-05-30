@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc088ac5c534e77de2aae919019396ccf2c344e2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910776"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312105"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Проектирование table (.vsct) команда XML-файлы
-Таблицы команд XML (*.vsct*) файл описывает макета и внешнего вида элементов команду для VSPackage. Команда элементы включают кнопки, поля со списком, меню, панелей инструментов и группы элементов команды. В этой статье описываются файлы таблицы команд XML, как они влияют на элементы команды и меню и способах их создания.
+Таблицы команд XML ( *.vsct*) файл описывает макета и внешнего вида элементов команду для VSPackage. Команда элементы включают кнопки, поля со списком, меню, панелей инструментов и группы элементов команды. В этой статье описываются файлы таблицы команд XML, как они влияют на элементы команды и меню и способах их создания.
 
 ## <a name="commands-menus-groups-and-the-vsct-file"></a>Команды, меню, группы и vsct-файл
  *.Vsct* файлы организованы команд, меню и группы команд. Теги XML в *.vsct* файл представляют каждый из этих элементов, а также другие связанные элементы, такие как кнопки, размещения команд и точечные рисунки.
@@ -64,7 +64,7 @@ ms.locfileid: "62910776"
 
 Новый компилятор *vsct.exe*, компилирует оба *.ctc* и *.vsct* файлов. Старый *ctc.exe* компилятора, однако не распознает или компиляции *.vsct* файлов.
 
-Можно использовать *vsct.exe* компилятору преобразовать существующее поле *.cto* файл в *.vsct* файла. Дополнительные сведения см. в разделе [Как Создание файла vsct на основе существующего файла cto](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+Можно использовать *vsct.exe* компилятору преобразовать существующее поле *.cto* файл в *.vsct* файла. Дополнительные сведения см. в разделе [Практическое руководство. Создание файла vsct на основе существующего файла cto](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
 
 ## <a name="the-vsct-file-elements"></a>Элементы файла .vsct
  Таблицы команд имеет следующие иерархии и элементов:

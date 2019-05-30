@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bbb4af7b4269376d912ba312cfe8aacfef2e4ff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c15726a3725b756e646e73804643f6b1ab36374
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692766"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318268"
 ---
 # <a name="displaykind"></a>DisplayKind
 Перечисляет допустимые значения, представляющие типы данных с [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта и отображать для пользователя.
@@ -41,12 +44,15 @@ public enum enum_DisplayKind
 };
 ```
 
-#### <a name="parameters"></a>Параметры
-DisplayKind_Value значение поля.
+## <a name="fields"></a>Поля
+`DisplayKind_Value`\
+Значение поля.
 
-DisplayKind_Name имя поля.
+`DisplayKind_Name`\
+Имя поля.
 
-DisplayKind_Type тип поля.
+`DisplayKind_Type`\
+Тип поля.
 
 ## <a name="requirements"></a>Требования
 Заголовок: EE.h

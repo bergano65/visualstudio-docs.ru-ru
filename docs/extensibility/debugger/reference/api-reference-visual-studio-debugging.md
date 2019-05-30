@@ -5,24 +5,24 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d415644897d7dd481f47c93a3b951db23fda843
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f880596854eb376d386bc6a96d789c54767f39d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686357"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351864"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Справочник API (отладка Visual Studio)
 В справочном разделе включает в себя общие сведения об API, направляющей, демонстрирует синтаксис и использование для всех элементов API, а также целый ряд примеров кода. Все ссылки перечислены в алфавитном порядке по категориям.
 
  В следующей таблице приведены распространенные `HRESULT` значения, возвращаемые методами.
 
-|name|Описание:|Значение|
+|name|Описание|Значение|
 |----------|-----------------|-----------|
 |S_OK|Выполнено.|0x00000000|
 |E_UNEXPECTED|Непредвиденная ошибка.|0x8000FFFF|
@@ -37,10 +37,10 @@ ms.locfileid: "56686357"
 |E_ACCESSDENIED|Ошибка доступа.|0x80070005|
 
 > [!NOTE]
->  Когда [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отладки метод возвращает `S_OK`, предполагается, что все указатели параметра являются допустимыми, то есть проверка не проводится на out параметр указателей при `S_OK` возвращается.
+> Когда [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] отладки метод возвращает `S_OK`, предполагается, что все указатели параметра являются допустимыми, то есть проверка не проводится на out параметр указателей при `S_OK` возвращается.
 >
 > [!NOTE]
->  Недопустимый или `NULL` [параметров out] может привести к сбою в работе интегрированной среды разработки.
+> Недопустимый или `NULL` [параметров out] может привести к сбою в работе интегрированной среды разработки.
 
 ## <a name="see-also"></a>См. также
 - [Интерфейсы](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)

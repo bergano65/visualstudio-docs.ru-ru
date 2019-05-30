@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Настройка веб-страницы по умолчанию для ClickOnce-приложения | Документация Майкрософт
+title: Настройка веб-страницы по умолчанию для приложения ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e132ea3592f18aad9b7b96bb32e8d7b6dac712cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66d304be4e2435b6ec1ecafe8aeb473b83fa1033
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406983"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263335"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Практическое руководство. Настройка используемой по умолчанию веб-страницы для приложения ClickOnce
 При публикации приложения ClickOnce на веб-узле, веб-странице автоматически создается и публикуется вместе с приложением. Страница по умолчанию содержит имя приложения и ссылки для установки приложения, установите необходимые компоненты или справку на сайте MSDN.
@@ -30,7 +30,7 @@ ms.locfileid: "63406983"
 > [!NOTE]
 > Действительные ссылки, которые отображаются на странице зависят от компьютера, где просмотре страницы и что необходимые компоненты установлены.
 
- Имя по умолчанию для веб-страницы — *Publish.htm*; можно изменить имя в **конструктор проектов**. Дополнительные сведения см. в разделе [Как задать страницу публикации для приложения ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
+ Имя по умолчанию для веб-страницы — *Publish.htm*; можно изменить имя в **конструктор проектов**. Дополнительные сведения см. в разделе [Практическое руководство. задать страницу публикации для приложения ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
 
  *Publish.htm* веб-страницы публикуется только в том случае, если обнаружено более новой версии.
 
@@ -39,7 +39,7 @@ ms.locfileid: "63406983"
 
 ### <a name="to-customize-the-publish-web-page"></a>Для настройки веб-страница публикации
 
-1. Публикация приложения ClickOnce на расположение в Интернете. Дополнительные сведения см. в разделе [Как опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+1. Публикация приложения ClickOnce на расположение в Интернете. Дополнительные сведения см. в разделе [Практическое руководство. опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 2. На веб-сервере, откройте *Publish.htm* файл в Visual Web Designer или другого редактора HTML.
 

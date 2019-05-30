@@ -3,17 +3,17 @@ title: Добавление команд на панели инструмент�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4f8cfba8-0653-4ccc-a2da-acf064c83aa7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c3b6e313bdf6641359c22e2dfa900d1b705a848
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 816fce5f53935b6e8c8cd89fba169557305350c4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843790"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309953"
 ---
 # <a name="add-commands-to-toolbars"></a>Добавление команды на панели инструментов
 Панель инструментов представляет собой горизонтальную или вертикальную полосу, содержащую кнопки, привязанный к командам. Можно добавить собственные команды панели инструментов на многих различных окон в Visual Studio: главное окно Visual Studio, в обозревателе решений и свои собственные пользовательские окна инструментов.

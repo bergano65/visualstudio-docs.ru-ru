@@ -7,17 +7,17 @@ helpviewer_keywords:
 - vsix
 - packages
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2ae77a390553fc95c7a29d24eff70fde231b7b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d8f0b748e80726d69e5b826982596a0a32675bd7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410027"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352279"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Составляющие пакета VSIX
 Пакет VSIX является *.vsix* файл, содержащий одно или несколько расширений Visual Studio вместе с метаданными Visual Studio использует для классификации и установить расширения. Эти метаданные содержатся в манифесте VSIX и *[Content_Types] .xml* файл. Пакет VSIX также может содержать один или несколько *Extension.vsixlangpack* файлы для обеспечения локализованный текст программы установки и может содержать дополнительные пакеты VSIX для установки зависимостей.

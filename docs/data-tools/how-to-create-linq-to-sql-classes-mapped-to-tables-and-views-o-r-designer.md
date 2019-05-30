@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. создание классов LINQ to SQL, сопоставленных с таблицами и представлениями (реляционный конструктор объектов)
+title: LINQ и карты для классов SQL для таблиц и представлений (реляционный конструктор объектов)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b9fb62fe3b6d92c617fc89f083aadcd262579e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4a923dd102d93aaf7ed545c022f5f12087f8a6b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567013"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260600"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Практическое руководство. создание классов LINQ to SQL, сопоставленных с таблицами и представлениями (реляционный конструктор объектов)
 
@@ -26,7 +26,7 @@ ms.locfileid: "62567013"
 
 Перетаскиванием таблиц или представлений из **обозревателя серверов** или **обозреватель баз данных** на **реляционный конструктор объектов** создает классы сущностей в дополнение к <xref:System.Data.Linq.DataContext> методы, используются для выполнения обновлений.
 
-По умолчанию среда выполнения [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] создает логический компонент для сохранения изменений из класса обновляемых сущностей обратно в базу данных. Этот логический компонент основан таблицы (определения столбцов и информация о первичных ключах). Если такое поведение вам не нужно, можно настроить класс сущностей, чтобы использовать сохраненные процедуры для выполнения Inserts, Updates и Deletes вместо использования поведения во время выполнения по умолчанию [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]. Дополнительные сведения см. в разделе [Как назначить хранимые процедуры для выполнения обновлений, вставок и удалений (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+По умолчанию среда выполнения [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] создает логический компонент для сохранения изменений из класса обновляемых сущностей обратно в базу данных. Этот логический компонент основан таблицы (определения столбцов и информация о первичных ключах). Если такое поведение вам не нужно, можно настроить класс сущностей, чтобы использовать сохраненные процедуры для выполнения Inserts, Updates и Deletes вместо использования поведения во время выполнения по умолчанию [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]. Дополнительные сведения см. в разделе [Практическое руководство. назначить хранимые процедуры для выполнения обновлений, вставок и удалений (реляционный конструктор объектов)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

@@ -18,17 +18,17 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17b906f721bea6e4183575eced962e9ed830cda1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 592bf358c24bee146290e8b3a00e28a0870f452d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675440"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263802"
 ---
 # <a name="clickonce-security-and-deployment"></a>Развертывание и безопасность технологии ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] — это технология развертывания, которая позволяет создавать самостоятельно обновляющиеся приложения Windows, которые могут устанавливаться и запускаться с минимальным вмешательством пользователя. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] обеспечивает полную поддержку публикации и обновления приложений, развернутых с использованием технологии ClickOnce, если вы разработали проектами с помощью Visual Basic и Visual C#. Сведения о развертывании приложений Visual C++, см. в разделе [развертывание ClickOnce для приложений Visual C++](https://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] — это технология развертывания, которая позволяет создавать самостоятельно обновляющиеся приложения Windows, которые могут устанавливаться и запускаться с минимальным вмешательством пользователя. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] обеспечивает полную поддержку публикации и обновления приложений, развернутых с использованием технологии ClickOnce, если вы разработали проектами с помощью Visual Basic и Visual C#. Сведения о развертывании приложений Visual C++, см. в разделе [развертывание ClickOnce для приложений Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] предназначена для решения трех основных проблем развертывания:  
   

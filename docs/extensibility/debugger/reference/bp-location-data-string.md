@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_DATA_STRING structure
 ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 056b7efc01b9536184c3e443156e27e328bdd2b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+ms.openlocfilehash: cf8e2958f55ca13ab050302a24ad9e5ae185d81a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689100"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353094"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 Используется для задания точки останова по данным, которые основаны на строку, пользователь может ввести в интегрированной среде разработки (IDE).
@@ -34,13 +36,17 @@ typedef struct _BP_LOCATION_DATA_STRING {
 ```
 
 ## <a name="members"></a>Участники
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в который происходит точки останова.
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в который происходит точки останова.
 
-`bstrContext` Контекст точки останова в коде, обычно имя метода или функции материал в стеке вызовов.
+`bstrContext`\
+Контекст точки останова в коде, обычно имя метода или функции материал в стеке вызовов.
 
-`bstrDataExpr` Строка данных пользователь вводит задается точка останова.
+`bstrDataExpr`\
+Строка данных пользователь вводит задается точка останова.
 
-`dwNumElements` Число элементов в строке данных, в котором происходит точки останова.
+`dwNumElements`\
+Число элементов в строке данных, в котором происходит точки останова.
 
 ## <a name="remarks"></a>Примечания
 Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.

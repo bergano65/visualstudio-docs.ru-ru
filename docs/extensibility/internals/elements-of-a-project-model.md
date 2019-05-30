@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project models
 - projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e14086ea395ffe65a52f47d0bfaa320fb19bc8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b37997c4245d8234d72ae14a9dda23f44fe2b26
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910090"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351587"
 ---
 # <a name="elements-of-a-project-model"></a>Элементы модели проекта
 Интерфейсы и реализации всех проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] совместно использовать базовую структуру: модель проекта для данного типа проекта. В модели проекта, являющийся VSPackage, при разработке, создании объектов, соответствующих проектные решения и работающих вместе с глобальных функций, предоставляемых интегрированной среды разработки. Несмотря на то, что вы управляете, как сохраняется элемент проекта, например, уведомления, что файл должен сохраняться не управлять. Когда пользователь помещает фокус на элемент Открытие проекта и выбирает **Сохранить** на **файл** меню [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] меню панели код типа проекта необходимо перехватывать команды из интегрированной среды разработки, сохранится файл, и отправьте уведомление обратно в интегрированной среде разработки, что файл не изменен.

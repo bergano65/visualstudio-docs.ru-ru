@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b573c85a6a19e2f84bcb2a6cae8b0c55768255
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675582"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260688"
 ---
 # <a name="deploying-applications-services-and-components"></a>Развертывание приложений, служб и компонентов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +52,6 @@ ms.locfileid: "65675582"
 |**Развертывание классических приложений:** С помощью развертывания ClickOnce, можно опубликовать классического приложения для веб-сервера или общей сетевой папки. Затем пользователи смогут устанавливать приложение одним щелчком.|[Развертывание и безопасность технологии ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
 |**Создайте программу установки:** Можно создать программу установки с помощью InstallShield Limited Edition, в которое осуществляется бесплатно.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
 |**Поддержка существующей программы установки:** продолжайте использовать программу установки, созданную в более ранней версии Visual Studio, установив расширение проектов установщиков Visual Studio.|[Расширение проектов установщиков Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> Документация по проектам установщиков доступна по ссылке: [Развертывание с помощью установщика Visual Studio](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Развертывание приложения Visual C++:** Среда выполнения Visual C++ с помощью приложения можно развернуть с помощью центральное развертывание, локальное развертывание или статическое связывание.|[Развертывание классических приложений неуправляемого кода (Visual C++)](https://msdn.microsoft.com/library/zebw5zk9.aspx)|  
+|**Развертывание приложения Visual C++:** Среда выполнения Visual C++ с помощью приложения можно развернуть с помощью центральное развертывание, локальное развертывание или статическое связывание.|[Развертывание классических приложений неуправляемого кода (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**Развертывание приложения для тестирования:** Чтобы иметь возможности для реализации более сложных сценариев разработки и тестирования, можно развертывать приложения в виртуальных средах.|[Тестирование в лабораторной среде](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
 |**Установка необходимых компонентов:** Вы можете установить компоненты, необходимые для классических приложений, путем настройки универсального установщика, также называемого начальным загрузчиком.|[Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)|
