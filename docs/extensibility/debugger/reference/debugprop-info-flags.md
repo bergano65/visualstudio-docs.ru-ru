@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_INFO_FLAGS enumeration
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 131e014e3714df708c5ef1526ecb911531c5a5c3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ae512bec8f88be81a0c45ddf541c94d78b483284
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689113"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318374"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 Указывает, какую информацию нужно извлечь сведения об объекте debug свойство.
@@ -67,32 +70,45 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Участники
-DEBUGPROP_INFO_FULLNAME Initialize и использование `bstrFullName` поля.
+## <a name="fields"></a>Поля
+`DEBUGPROP_INFO_FULLNAME`\
+Инициализация и использование `bstrFullName` поля.
 
-DEBUGPROP_INFO_NAME Initialize и использование `bstrName` поля.
+`DEBUGPROP_INFO_NAME`\
+Инициализация и использование `bstrName` поля.
 
-DEBUGPROP_INFO_TYPE Initialize и использование `bstrType` поля.
+`DEBUGPROP_INFO_TYPE`\
+Инициализация и использование `bstrType` поля.
 
-DEBUGPROP_INFO_VALUE Initialize и использование `bstrValue` поля.
+`DEBUGPROP_INFO_VALUE`\
+Инициализация и использование `bstrValue` поля.
 
-DEBUGPROP_INFO_ATTRIB Initialize и использование `dwAttrib` поля.
+`DEBUGPROP_INFO_ATTRIB`\
+Инициализация и использование `dwAttrib` поля.
 
-DEBUGPROP_INFO_PROP Initialize и использование `pProperty` поле, содержащее [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) интерфейс.
+`DEBUGPROP_INFO_PROP`\
+Инициализация и использование `pProperty` поле, содержащее [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) интерфейс.
 
-DEBUGPROP_INFO_VALUE_AUTOEXPAND указывает, что поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.
+`DEBUGPROP_INFO_VALUE_AUTOEXPAND`\
+Указывает, что поле значения должен содержать значение развернутый автоматически, если он доступен для этого типа объектов.
 
-DEBUGPROP_INFO_VALUE_NOFUNCEVAL устарело.
+`DEBUGPROP_INFO_VALUE_NOFUNCEVAL`\
+Не рекомендуется.
 
-DEBUGPROP_INFO_VALUE_RAW не возвращают значений гибко и членов (то есть не форматировать значения).
+`DEBUGPROP_INFO_VALUE_RAW`\
+Не возвращают значений гибко и членов (то есть не форматировать значения).
 
-DEBUGPROP_INFO_VALUE_NO_TOSTRING не возвращают все особые Синтезированная значения (например, не следует вызывать `ToString()` объекта для получения значения).
+`DEBUGPROP_INFO_VALUE_NO_TOSTRING`\
+Не возвращают все особые Синтезированная значения (например, не следует вызывать `ToString()` объекта для получения значения).
 
-DEBUGPROP_INFO_NONE указывает, что флаги не установлены.
+`DEBUGPROP_INFO_NONE`\
+Указывает, что флаги не установлены.
 
-DEBUGPROP_INFO_STANDARD Initialize и использование `dwAttrib`, `bstrName`, `bstrType`, и `bstrValue` поля.
+`DEBUGPROP_INFO_STANDARD`\
+Инициализация и использование `dwAttrib`, `bstrName`, `bstrType`, и `bstrValue` поля.
 
-DEBUGPROP_INFO_All указывает маску всех флагов.
+`DEBUGPROP_INFO_All`\
+Указывает маску всех флагов.
 
 ## <a name="remarks"></a>Примечания
 Эти значения передаются [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), и [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) методы, чтобы указать, какие поля должны быть инициализированы [ DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структуры.

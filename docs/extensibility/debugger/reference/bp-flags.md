@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_FLAGS enumeration
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe346d708110cf16b85e84d61aeb25ee335c0e96
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 31f5153c3a2d0b55829a7743840fe8a791f023d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688437"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319224"
 ---
 # <a name="bpflags"></a>BP_FLAGS
 Предоставляет необязательные флаги, которые могут использоваться для указания дополнительных сведений при задании точки останова.
@@ -41,12 +44,15 @@ public enum enum_BP_FLAGS {
 };
 ```
 
-## <a name="members"></a>Участники
-BP_FLAG_NONE указывает нет флага точки останова.
+## <a name="fields"></a>Поля
+`BP_FLAG_NONE`\
+Задает флаг без точки останова.
 
-BP_FLAG_MAP_DOCPOSITION указывает, что модуль отладки (DE) должны сопоставляться с помощью документа положение точки останова. Это значение применимо только к точки останова в скрипт ориентированного исходных файлов таких как Active Server Pages (ASP).
+`BP_FLAG_MAP_DOCPOSITION`\
+Указывает, что модуль отладки (DE) должны сопоставляться с помощью документа положение точки останова. Это значение применимо только к точки останова в скрипт ориентированного исходных файлов таких как Active Server Pages (ASP).
 
-BP_FLAG_DONT_STOP указывает, точки останова, которые должны обрабатываться с помощью обработчика отладки, но, отладчик в конечном счете следует не остановить существует (то есть [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) не следует отправлять объект события). Этот флаг предназначен для использования главным образом с использованием точек трассировки.
+`BP_FLAG_DONT_STOP`\
+Указывает, что точка останова должны обрабатываться с помощью обработчика отладки, но что модуль отладки в конечном счете следует останавливает существует (то есть [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) не следует отправлять объект события). Этот флаг предназначен для использования главным образом с использованием точек трассировки.
 
 ## <a name="remarks"></a>Примечания
 Используется для `dwFlags` членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.

@@ -5,22 +5,22 @@ ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e867c9e83bf353e57d75ee611fe1074efcc9cfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8817ca48ff0a3f44a973986a173e647ce89c662c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859110"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318691"
 ---
 # <a name="service-essentials"></a>Основные компоненты службы
 Служба представляет собой контракт между двух пакетов VSPackage. Один пакет VSPackage предоставляет ряд интерфейсов для другого пакета VSPackage для использования. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] сам является коллекцию пакетов VSPackage, предоставляющий службы для других пакетов VSPackage.
 
- Например можно использовать службу SVsActivityLog получить интерфейс IVsActivityLog, который можно использовать для записи в журнал действий. Дополнительные сведения см. в разделе [Как Использование журнала действий](../../extensibility/how-to-use-the-activity-log.md).
+ Например можно использовать службу SVsActivityLog получить интерфейс IVsActivityLog, который можно использовать для записи в журнал действий. Дополнительные сведения см. в разделе [Практическое руководство. Использование журнала действий](../../extensibility/how-to-use-the-activity-log.md).
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] также предоставляет некоторые встроенные службы, которые не зарегистрированы. Пакеты VSPackage можно заменить встроенные или других служб, предоставляя переопределение службы. Для любой службы разрешена только одна служба переопределения.
 
@@ -36,7 +36,7 @@ ms.locfileid: "62859110"
 
 - Службы или переопределения службы, они загружаются по требованию, то есть, поставщик услуг загружается при запросе службы, предоставляемые им в другом пакете VSPackage.
 
-- Для поддержки загрузки по требованию, поставщик услуг регистрирует глобальные службы в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения см. в разделе [Как Предоставляет службу](../../extensibility/how-to-provide-a-service.md).
+- Для поддержки загрузки по требованию, поставщик услуг регистрирует глобальные службы в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Дополнительные сведения см. в разделе [Практическое руководство. Предоставляет службу](../../extensibility/how-to-provide-a-service.md).
 
 - После получения службы, используйте [QueryInterface](/cpp/atl/queryinterface) (неуправляемый код) или приведения (управляемый код) для получения требуемого интерфейса, например:
 
