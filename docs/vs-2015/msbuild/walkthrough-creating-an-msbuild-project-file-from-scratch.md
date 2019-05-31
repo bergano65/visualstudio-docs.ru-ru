@@ -249,7 +249,7 @@ ms.locfileid: "65682362"
 >   
 > `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
-> лучше, чем   
+> лучше, чем  
 >   
 > `<OutputPath>Bin</OutputPath>`  
 >   

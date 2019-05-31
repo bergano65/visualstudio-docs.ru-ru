@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создать пользовательский элемент управления для страницы приложения SharePoint или веб-части | Документация Майкрософт
+title: Создание пользовательского элемента управления для части страницы или веб-приложения SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a88a59e9b87a193329433e5eb0625afa1428026
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446509"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401482"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Практическое руководство. Создать пользовательский элемент управления для части страницы или веб-приложения SharePoint
   Можно создавать пользовательские элементы управления, которые предоставляют пользовательские функции для решения SharePoint, и эти функции можно повторно использовать в проекте. Можно включить пользовательские элементы управления в веб-часть или страницу приложения, добавить другие элементы управления ASP.NET и SharePoint и определить свойства и методы для элемента управления. Дополнительные сведения о пользовательских элементах управления см. в разделе [создавать многократно используемые элементы управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) и [пользовательских элементов управления и серверных элементов управления в SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -37,7 +37,7 @@ ms.locfileid: "63446509"
 
 4. В **установленные** панели выберите **Office/SharePoint** узла.
 
-5. В списке шаблонов SharePoint выберите **пользовательский элемент управления (только для решения фермы)**.
+5. В списке шаблонов SharePoint выберите **пользовательский элемент управления (только для решения фермы)** .
 
     > [!NOTE]
     > Пользовательские элементы управления работают только в решениях фермы.

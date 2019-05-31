@@ -39,7 +39,7 @@ ms.locfileid: "62898588"
 
 2. Перейдите на вкладку **Публикация**.
 
-3. В поле URL-адрес установки, введите расположение установки, используя полный URL-адрес в формате *http://www.microsoft.com/ApplicationName*, или UNC-путь в формате  *\\\Server\ApplicationName*.
+3. В поле URL-адрес установки, введите расположение установки, используя полный URL-адрес в формате *http://www.microsoft.com/ApplicationName* , или UNC-путь в формате  *\\\Server\ApplicationName*.
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Указание расположения, в которое копируются файлы средой Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)

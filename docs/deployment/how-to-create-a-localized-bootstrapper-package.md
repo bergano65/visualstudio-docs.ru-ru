@@ -24,7 +24,7 @@ ms.locfileid: "63406826"
 
  По умолчанию в Visual Studio 2010 локализованные пакеты начальной загрузки включены только для .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 и F# Runtime 4.0. Чтобы создать локализованные пакеты для других начальных загрузчиков, сделайте следующее.
 
-1. Создайте папку с именем после имени языкового стандарта в *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >*.
+1. Создайте папку с именем после имени языкового стандарта в *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >* .
 
 2. Создайте файл, содержащий условия лицензионного соглашения на использование программного обеспечения, для пакета начального загрузчика и сохраните его в новую папку.
 
@@ -76,9 +76,9 @@ ms.locfileid: "63406826"
 
 1. Создайте папку с именем *fr*. Имя папки должно совпадать с именем языкового стандарта.
 
-     На 32-разрядных компьютерах эту папку необходимо создать в папке *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
+     На 32-разрядных компьютерах эту папку необходимо создать в папке *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* .
 
-     На 64-разрядных компьютерах — в папке *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
+     На 64-разрядных компьютерах — в папке *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* .
 
 2. Сохраните локализованную версию условий лицензионного соглашения на использование программного обеспечения в папку с именем *fr*.
 

@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60038670"
@@ -39,7 +39,7 @@ ms.locfileid: "60038670"
   
 2. Создание пустого проекта VSIX.  
   
-     В меню **Файл** последовательно выберите пункты **Создать** и **Проект**. Выберите либо **Visual Basic** или **Visual C#**. Выбранный узел и выберите **расширяемости**, а затем выберите **проект VSIX**.  
+     В меню **Файл** последовательно выберите пункты **Создать** и **Проект**. Выберите либо **Visual Basic** или **Visual C#** . Выбранный узел и выберите **расширяемости**, а затем выберите **проект VSIX**.  
   
 3. Добавьте ZIP-файл в проект. Задайте его **Копировать в выходной каталог** свойства `Copy Always`.  
   

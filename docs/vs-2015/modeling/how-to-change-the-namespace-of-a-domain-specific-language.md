@@ -49,7 +49,7 @@ ms.locfileid: "65690565"
   
 10. Сброс Visual Studio экспериментального экземпляра.  
   
-    1. Удалить **\Users\\**_{имя}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
+    1. Удалить **\Users\\** _{имя}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
   
     2. В Windows **запустить** меню, выберите **все программы**, **Microsoft Visual Studio 2010 SDK**, **средства**, **сброса Экспериментальный экземпляр**.  
   

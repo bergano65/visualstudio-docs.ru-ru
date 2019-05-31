@@ -59,7 +59,7 @@ ms.locfileid: "63434377"
   
     - На **приложения** вкладке **требуемой версии .NET framework** для **4.6.1**.  
   
-    - На **Отладка** на вкладке **запуск внешней программы** введите  **\<путь установки Visual Studio > \Common7\IDE\devenv.exe.**.  
+    - На **Отладка** на вкладке **запуск внешней программы** введите  **\<путь установки Visual Studio > \Common7\IDE\devenv.exe.** .  
   
          В **аргументы командной строки** введите /**rootsuffix Exp**.  
   
@@ -105,7 +105,7 @@ ms.locfileid: "63434377"
   
     - Сохраните и закройте файл.  
   
-11. Постройте решение. Созданные файлы развертываются **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.  
+11. Постройте решение. Созданные файлы развертываются **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** .  
   
 12. Приступите к отладке. Открыть второй экземпляр Visual Studio.  
   

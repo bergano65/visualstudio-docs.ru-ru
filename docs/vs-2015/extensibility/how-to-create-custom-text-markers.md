@@ -34,7 +34,7 @@ ms.locfileid: "63435983"
   
 1. Создайте запись реестра следующим образом:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* \Text Editor\External Markers\\ *\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>является `GUID` используется для идентификации добавляемого маркера  
   
@@ -43,9 +43,9 @@ ms.locfileid: "63435983"
     *\<PackageGUID >* – идентификатор GUID VSPackage, реализующий объект автоматизации.  
   
    > [!NOTE]
-   > Путь к корневому каталогу HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >* может быть переопределен альтернативным корневым, если инициализируется оболочки Visual Studio, Дополнительные сведения см. [Параметры командной строки](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > Путь к корневому каталогу HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<версии >* может быть переопределен альтернативным корневым, если инициализируется оболочки Visual Studio, Дополнительные сведения см. [Параметры командной строки](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2. Создайте четыре значения в разделе HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >* \Text Editor\External маркеры\\*\<MarkerGUID >*  
+2. Создайте четыре значения в разделе HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<версии >* \Text Editor\External маркеры\\ *\<MarkerGUID >*  
   
    - (Значение по умолчанию)  
   

@@ -61,14 +61,14 @@ ms.locfileid: "63438904"
   
  Кроме того, можно воспользоваться параметром **/Trace** для включения подробных данных о времени вместе с данными о памяти .NET:  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Сбор данных взаимодействия уровней  
   
 > [!WARNING]
 > Данные профилирования уровневого взаимодействия можно собирать с помощью [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] или [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Однако данные профилирования уровневого взаимодействия можно просматривать только в [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] и [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
-> Для сбора данных TIP в Windows 8 или Windows Server 2012 необходимо использовать параметр инструментирования (**/trace**).  
+> Для сбора данных TIP в Windows 8 или Windows Server 2012 необходимо использовать параметр инструментирования ( **/trace**).  
   
  Чтобы собрать данные об уровневом взаимодействии вместе с данными выборки, воспользуйтесь командной строкой:  
   
@@ -80,14 +80,14 @@ ms.locfileid: "63438904"
   
  Чтобы собрать данные об уровневом взаимодействии вместе с данными о памяти .NET, воспользуйтесь командной строкой:  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_  
   
 ## <a name="UsingNoWait"></a> Использование параметра /nowait  
  По умолчанию командная строка после команды **vsperfaspnetcmd** не возвращается. Для принудительного возврата командной строки можно воспользоваться следующим синтаксисом. Затем в окне командной строки можно выполнить другие операции. Для завершения профилирования воспользуйтесь параметром **/shutdown** в отдельной команде **vsperfaspnetcmd**.  
   
  Чтобы начать профилирование, воспользуйтесь следующей командной строкой:  
   
- **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
   
  Для завершения профилирования воспользуйтесь следующей командной строкой:  
   
