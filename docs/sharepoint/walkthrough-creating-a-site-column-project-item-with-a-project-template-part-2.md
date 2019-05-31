@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2 | Документация Майкрософт
+title: Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 821638c09b64d9cf7045f8985a54cb5e4223d019
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436721"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401106"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Пошаговое руководство. Создание элемента проекта столбца сайта с помощью шаблона проекта, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите ее с помощью шаблона проекта в Visual Studio, можно также содержат мастер для шаблона. Мастер можно использовать для сбора сведений от пользователей, при использовании шаблона для создания нового проекта, который содержит элемент проекта. Собранные сведения могут использоваться для инициализации элемента проекта.
@@ -51,7 +51,7 @@ ms.locfileid: "63436721"
 
   Знание следующие основные понятия будут полезны, но не требуется для выполнения данного пошагового руководства:
 
-- Мастеров для шаблонов проектов и элементов в Visual Studio. Дополнительные сведения см. в разделе [Как Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md) и <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс.
+- Мастеров для шаблонов проектов и элементов в Visual Studio. Дополнительные сведения см. в разделе [Практическое руководство. Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md) и <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс.
 
 - Столбцы сайта в SharePoint. Дополнительные сведения см. в разделе [столбцы](http://go.microsoft.com/fwlink/?LinkId=183547).
 
@@ -116,7 +116,7 @@ ms.locfileid: "63436721"
 
 3. Убедитесь, что требуемая версия .NET framework имеет значение .NET Framework 4.5, не 4.5 клиентский профиль .NET Framework.
 
-     Дополнительные сведения см. в разделе [Как определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+     Дополнительные сведения см. в разделе [Практическое руководство. определить целевую версию .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 4. Откройте контекстное меню для **ProjectTemplateWizard** проекта, выберите **добавить**, а затем выберите **новый элемент**.
 
@@ -160,7 +160,7 @@ ms.locfileid: "63436721"
 
 13. Если вы разрабатываете проект Visual Basic, импортировать пространство имен ProjectTemplateWizard в проект с помощью **конструктор проектов**.
 
-     Дополнительные сведения см. в разделе [Как Добавление или удаление импортированных пространств имен &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).
+     Дополнительные сведения см. в разделе [Практическое руководство. Добавление или удаление импортированных пространств имен &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).
 
 #### <a name="to-configure-the-sharepointcommands-project"></a>Чтобы настроить проект SharePointcommands
 

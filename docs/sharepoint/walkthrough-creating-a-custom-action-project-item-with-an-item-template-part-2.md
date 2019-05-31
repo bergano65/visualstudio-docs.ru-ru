@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2 | Документация Майкрософт
+title: Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fa4915b9621789c68ed994440de3a1ef544c40c
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430472"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401166"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Пошаговое руководство. Создание элемента проекта настраиваемого действия с помощью шаблона элемента, часть 2
   После определения пользовательского типа элемента проекта SharePoint и свяжите ее с шаблоном элемента в Visual Studio, можно также содержат мастер для шаблона. Мастер можно использовать для сбора сведений от пользователей, при использовании шаблона, чтобы добавить новый экземпляр элемента проекта в проект. Собранные сведения могут использоваться для инициализации элемента проекта.
@@ -47,7 +47,7 @@ ms.locfileid: "63430472"
 
   Знание следующие основные понятия будут полезны, но не требуется для выполнения данного пошагового руководства:
 
-- Мастеров для шаблонов проектов и элементов в Visual Studio. Дополнительные сведения см. в разделе [Как Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md) и <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс.
+- Мастеров для шаблонов проектов и элементов в Visual Studio. Дополнительные сведения см. в разделе [Практическое руководство. Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md) и <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> интерфейс.
 
 - Пользовательские действия в SharePoint. Дополнительные сведения см. в разделе [настраиваемое действие](http://go.microsoft.com/fwlink/?LinkId=177800).
 
