@@ -1,5 +1,5 @@
 ---
-title: Программирование основных понятиях и функциях для расширений инструментов SharePoint | Документация Майкрософт
+title: Основные понятия программирования и возможности для расширения инструментов SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fc538b8a13458d82d23fe6039eb9c1e9406be52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 215beaf21d704927792ae316df9b4c0ef3f98c44
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562485"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401742"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Основные понятия программирования и функции для расширения инструментов SharePoint
   Существует несколько важных концепций программирования и функций, которые связаны с инструментов SharePoint в Visual Studio. Эти понятия и функции играют важную роль в большинство расширений средств SharePoint.

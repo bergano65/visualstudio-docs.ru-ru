@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание пакета решения SharePoint с помощью задачи MSBuild | Документация Майкрософт
+title: Создание пакета решения SharePoint с помощью задачи MSBuild
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 432daff22616950e0a97164190a94082bf2db354
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966839"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401499"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Практическое руководство. Создание пакета решения SharePoint с помощью задач MSBuild
-  Сборки, очистки и проверки пакета SharePoint (*.wsp*) с помощью командной строки задачи MSBuild на компьютере разработчика. Эти команды также можно использовать для автоматизации процесса сборки с помощью Team Foundation Server на компьютере построения.
+  Сборки, очистки и проверки пакета SharePoint ( *.wsp*) с помощью командной строки задачи MSBuild на компьютере разработчика. Эти команды также можно использовать для автоматизации процесса сборки с помощью Team Foundation Server на компьютере построения.
 
 ## <a name="build-a-sharepoint-package"></a>Создать пакет SharePoint
 

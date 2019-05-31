@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных | Документация Майкрософт
+title: Создание внешнего списка в SharePoint, с помощью бизнес-данных
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf9c7d13e6aaac85d3bac4254247a3c07b39b5c3
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965223"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401069"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных
 
@@ -70,7 +70,7 @@ ms.locfileid: "62965223"
 
      Откроется диалоговое окно **Добавление нового элемента**.
 
-8. В **шаблоны** панели выберите **Business Data Connectivity Model (только для решения фермы)**, назовите проект **AdventureWorksContacts**, а затем выберите **Добавить** кнопки.
+8. В **шаблоны** панели выберите **Business Data Connectivity Model (только для решения фермы)** , назовите проект **AdventureWorksContacts**, а затем выберите **Добавить** кнопки.
 
 ## <a name="add-data-access-classes-to-the-project"></a>Добавьте в проект классы доступа к данным
 

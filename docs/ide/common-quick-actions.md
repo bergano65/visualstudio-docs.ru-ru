@@ -448,7 +448,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Преобразование в интерполированную строку
 
-[Интерполированные строки](/dotnet/csharp/language-reference/keywords/interpolated-strings) позволяют легко выразить строки с внедренными переменными по аналогии с методом **[String.Format](/dotnet/api/system.string.format#overloads)**.  Это быстрое действие распознает использование сцепленных строк или оператора **String.Format** и переключается на использование интерполированной строки.
+[Интерполированные строки](/dotnet/csharp/language-reference/keywords/interpolated-strings) позволяют легко выразить строки с внедренными переменными по аналогии с методом **[String.Format](/dotnet/api/system.string.format#overloads)** .  Это быстрое действие распознает использование сцепленных строк или оператора **String.Format** и переключается на использование интерполированной строки.
 
 ```csharp
 // Before

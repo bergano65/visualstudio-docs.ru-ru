@@ -1,5 +1,5 @@
 ---
-title: Обзор модели программирования для SharePoint расширений средств | Документация Майкрософт
+title: Обзор SharePoint модели программирования расширений средств
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb496b077f1ff55fda53d3325765e8e58911096
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421289"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401787"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Обзор модели программирования SharePoint средств расширения
   При создании расширения для инструментов SharePoint в Visual Studio сначала необходимо реализовать один или несколько интерфейсов расширения, предоставляемых инструментами SharePoint. Как правило, для реализации возможностей в расширении вы также будете использовать другие типы, предоставляемые инструментами SharePoint. В некоторых случаях можно также использовать типы в других объектных моделях, предоставляемых Visual Studio и SharePoint. Необходимо понять назначение каждого из этих объектных моделей и уметь использовать их друг с другом для создания расширений для инструментов SharePoint.
@@ -55,7 +55,7 @@ ms.locfileid: "63421289"
 - *Объектные модели SharePoint server и клиента*. Эти объектные модели используются для изменения сайта SharePoint или получения данных с сайта SharePoint из контекста расширения инструментов SharePoint.
 
 ### <a name="sharepoint-tools-object-model"></a>Объектной модели инструментов SharePoint
- Расширения инструментов SharePoint используют типы в объектной модели инструментов SharePoint для определения основного поведения и функциональных возможностей расширения. В следующих таблицах описываются пространств имен, которые включены в этой объектной модели по сборке, которая содержит их.
+ Расширения инструментов SharePoint используют типы в объектной модели инструментов SharePoint для определения основного поведения и функциональных возможностей расширения. В следующих таблицах описываются пространств имен, которые включаются в этой объектной модели, сборку, которая содержит их.
 
 #### <a name="microsoftvisualstudiosharepointdll"></a>Microsoft.VisualStudio.SharePoint.dll
 
@@ -66,7 +66,7 @@ ms.locfileid: "63421289"
 |<xref:Microsoft.VisualStudio.SharePoint.Explorer>|Содержит типы, используемые для расширения узлов в группе **подключения SharePoint** узел в **обозревателя серверов** окна, или для определения новых типов узлов. Дополнительные сведения см. в разделе [расширение узла подключений SharePoint в обозревателе серверов](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|
 |<xref:Microsoft.VisualStudio.SharePoint.Features>|Содержит типы, используемые для доступа к определениям компонентов в проекте SharePoint.|
 |<xref:Microsoft.VisualStudio.SharePoint.Packages>|Содержит типы, используемые для доступа к определениям пакетов в решении SharePoint.|
-|<xref:Microsoft.VisualStudio.SharePoint.Validation>|Содержит типы, используемые для настройки поведения проверки компонентов и пакетов для проектов SharePoint. Дополнительные сведения см. в разделе [Как Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
+|<xref:Microsoft.VisualStudio.SharePoint.Validation>|Содержит типы, используемые для настройки поведения проверки компонентов и пакетов для проектов SharePoint. Дополнительные сведения см. в разделе [Практическое руководство. Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|
 
 #### <a name="microsoftvisualstudiosharepointcommandsdll"></a>Microsoft.VisualStudio.SharePoint.Commands.dll
 

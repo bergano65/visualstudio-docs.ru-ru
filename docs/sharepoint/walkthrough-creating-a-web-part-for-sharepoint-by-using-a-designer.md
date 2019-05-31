@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора | Документация Майкрософт
+title: Создание веб-части для SharePoint с помощью конструктора
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a22d814ce50dea1ee67ed3bf1f071839e60a797
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9963c2f7e829e9d295ca254aa651e37e3ad08efd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965301"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401148"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора
 
@@ -81,7 +81,7 @@ ms.locfileid: "62965301"
 
 5. В конструкторе выберите **Button1** кнопки.
 
-6. В строке меню выберите **представление** > **окно "Свойства"**.
+6. В строке меню выберите **представление** > **окно "Свойства"** .
 
      **Свойства** откроется окно.
 

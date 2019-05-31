@@ -39,7 +39,7 @@ ms.locfileid: "63447068"
 
 - Абсолютный или относительный путь в стандарт Windows форматирования, такие как *C:\Deploy\MyApplication* или *\MyApplication*.
 
-- Путь универсальными именами (UNC), такие как  *\\\ServerName\MyApplication\\*.
+- Путь универсальными именами (UNC), такие как  *\\\ServerName\MyApplication\\* .
 
 - URL-адрес веб-сайта, такие как http://www.microsoft.com/MyApplication.
 

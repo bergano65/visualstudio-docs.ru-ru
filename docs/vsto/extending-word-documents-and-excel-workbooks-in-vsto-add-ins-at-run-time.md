@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 11171cf619e77508852178ee442ce6e26f9b573f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2058029bfc188cd3284768e3d1782f7cda96c5c1
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437245"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402111"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Расширение документов Word и книг Excel в надстройках VSTO во время выполнения
   Надстройку VSTO можно использовать для настройки документов Word и книг Excel одним из описанных ниже способов.

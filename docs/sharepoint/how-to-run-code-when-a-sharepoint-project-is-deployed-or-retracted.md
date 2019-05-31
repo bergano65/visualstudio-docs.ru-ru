@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Выполнения кода при проекта SharePoint является развертывания или отзыва | Документация Майкрософт
+title: Выполнения кода при развертывания или отзыва проекта SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4aadc089fba5c1f55488c72bfd5c3e46ebf59487
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e3f46ff9d2e83307f745180288e69839a0d336e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813476"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401762"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Практическое руководство. Выполнения кода при развертывания или отзыва проекта SharePoint
   Если вы хотите выполнить дополнительные задачи после развертывания или отзыва проекта SharePoint, можно обрабатывать события, вызываемые с Visual Studio. Дополнительные сведения см. в разделе [SharePoint расширение упаковки и развертывания](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
@@ -32,7 +32,7 @@ ms.locfileid: "62813476"
 
    - [Практическое руководство. Определить тип элемента проекта SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 
-2. В расширении, доступ к <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объекта. Дополнительные сведения см. в разделе [Как Службе project SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).
+2. В расширении, доступ к <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> объекта. Дополнительные сведения см. в разделе [Практическое руководство. Службе project SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).
 
 3. Обрабатывать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> и <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> события службы проекта.
 

@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Программная Защита документов и их частей
+title: Защита документов и их частей программным способом
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62d84dcb7ce22f1199d12a958250a465cd25a49c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 30cb3d0b9ad04a3a0195f3b58ba5856de94d09d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412458"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402187"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Практическое руководство. Программная Защита документов и их частей
   Вы можете добавлять защиту в документы Microsoft Office Word, чтобы запретить пользователям вносить изменения в документ.
@@ -31,7 +31,7 @@ ms.locfileid: "63412458"
 > [!NOTE]
 > В следующем примере защита паролем не используется; однако вы можете рассмотреть возможность использования пароля при добавлении защиты документов. Дополнительные сведения см. в примере системы защиты документов по адресу [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).
 
- Для защиты частей документов можно также использовать элементы управления содержимым. Дополнительные сведения см. в разделе [Как Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
+ Для защиты частей документов можно также использовать элементы управления содержимым. Дополнительные сведения см. в разделе [Практическое руководство. Защита частей документов с помощью элементов управления содержимым](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
 ## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>Защитить документ, который является частью настройки уровня документа
 
