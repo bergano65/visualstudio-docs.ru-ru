@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f21edd218b815785161e8d68af76b0f6c2594a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68b9df33051de1c4b4bb70321e0caff7df2e91f4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912738"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348109"
 ---
 # <a name="description-element-visual-studio-templates"></a>Элемент Description (шаблоны Visual Studio)
 Указывает описание шаблона, как оно отображается в любом **новый проект** или **Добавление нового элемента** диалоговое окно.
@@ -42,8 +42,8 @@ ms.locfileid: "62912738"
 
 |Атрибут|Описание|
 |---------------|-----------------|
-|`Package`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Идентификатор GUID, указывающий пакет Visual Studio.|
-|`ID`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Указывает идентификатор ресурса Visual Studio.|
+|`Package`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Идентификатор GUID, определяющий идентификатор пакета Visual Studio.|
+|`ID`|Необязательный атрибут для сложных пользовательских скриптов.<br /><br /> Определяет идентификатор ресурса Visual Studio.|
 
 ### <a name="child-elements"></a>Дочерние элементы
  Отсутствует.
@@ -55,7 +55,7 @@ ms.locfileid: "62912738"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет категорию шаблона и то, отображается ли он в диалоговом окне **Новый проект** или **Добавить новый элемент** .|
 
 ## <a name="text-value"></a>Текстовое значение
- Текстовое значение является обязательным, если `Package` и `ID` используются атрибуты.
+ Текстовое значение является обязательным, если не используются атрибуты `Package` и `ID`.
 
  Текст содержит описание шаблона.
 
