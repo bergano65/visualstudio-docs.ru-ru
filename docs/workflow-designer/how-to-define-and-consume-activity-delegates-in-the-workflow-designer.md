@@ -1,5 +1,5 @@
 ---
-title: 'Конструктор рабочих процессов - как: Определение и использование делегатов действий'
+title: 'Конструктор рабочих процессов: Определение и использование делегатов действий'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949527"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431797"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Практическое руководство. Определение и использование делегатов действий в конструкторе рабочих процессов
 
@@ -34,7 +34,7 @@ ms.locfileid: "62949527"
 
 5. Нажмите кнопку **создать аргумент**. Назовите новый аргумент **элементы**.
 
-6. В **тип аргумента** столбец, выберите **массив [T]**.
+6. В **тип аргумента** столбец, выберите **массив [T]** .
 
 7. В браузере типов выберите **объект** , а затем выберите **ОК**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "62949527"
 
 14. В **тип переменной** столбец, выберите **Int32**. Оставьте **область** как **хотя**и **по умолчанию** пустой столбец.
 
-15. Задайте **условие** свойство <xref:System.Activities.Statements.While> действие **индекс < Items.Length;**.
+15. Задайте **условие** свойство <xref:System.Activities.Statements.While> действие **индекс < Items.Length;** .
 
 16. Перетащите <xref:System.Activities.Statements.InvokeDelegate> действия из **примитивы** панели элементов для **текст** из <xref:System.Activities.Statements.While> действия.
 
@@ -60,7 +60,7 @@ ms.locfileid: "62949527"
 
 18. В **свойства** сетки для <xref:System.Activities.Statements.InvokeDelegate> действия, нажмите кнопку **...**  кнопку **аргументов делегата** свойство.
 
-19. В **значение** столбец с именем аргумента **аргумент**, введите **Items [Index]**. Нажмите кнопку **ОК** закрыть **DelegateArguments** диалоговое окно.
+19. В **значение** столбец с именем аргумента **аргумент**, введите **Items [Index]** . Нажмите кнопку **ОК** закрыть **DelegateArguments** диалоговое окно.
 
 20. Перетащите действие <xref:System.Activities.Statements.Assign> на горизонтальную линию под действием <xref:System.Activities.Statements.InvokeDelegate>. <xref:System.Activities.Statements.Assign> Создается действие и <xref:System.Activities.Statements.Sequence> должен содержать два действия автоматически создается действие **текст** раздел **MyForEach** действия. Требуется последовательность, так как **текст** раздел может содержать только одно действие. Автоматическое создание нового <xref:System.Activities.Statements.Sequence> действие — это новая функция платформы .NET Framework 4.5.
 
@@ -76,11 +76,11 @@ ms.locfileid: "62949527"
 
 3. Перетащите **MyForEach** действия из области элементов в область конструктора. Действие находится в разделе области элементов с тем же именем, что и проект.
 
-4. Задайте **элементы** свойство **MyForEach** действие **new Object [] {1, «abc»}**.
+4. Задайте **элементы** свойство **MyForEach** действие **new Object [] {1, «abc»}** .
 
 5. Перетащите <xref:System.Activities.Statements.WriteLine> действия из **примитивы** панели элементов для **Delegate: текст** раздел **MyForEach** действия.
 
-6. Задайте **текст** свойство <xref:System.Activities.Statements.WriteLine> действие **Argument.ToString()**.
+6. Задайте **текст** свойство <xref:System.Activities.Statements.WriteLine> действие **Argument.ToString()** .
 
 При выполнении рабочего процесса, в консоли отображаются следующие выходные данные:
 
