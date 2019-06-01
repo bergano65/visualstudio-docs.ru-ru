@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53dce8b6b468dd5754b5708afccdcbe6cb908d1d
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854137"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432215"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Запись и воспроизведение работающих приложений ASP.NET на виртуальных машинах Azure с помощью отладчика моментальных снимков
 
@@ -44,14 +44,14 @@ ms.locfileid: "62854137"
 * Отладка во время путешествия доступна для следующих веб-приложений виртуальной Машины Azure:
   * Приложения ASP.NET (AMD64) в .NET Framework 4.8 или более поздней версии.
 
-## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Откройте свой проект и запустить отладчик моментальных снимков с включенной отладкой путешествия в времени
+## <a name="start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Запуск отладчика моментальных снимков с включенной отладкой путешествия в времени
 
 1. Откройте проект, для которого вы хотите собирать время командировки записи.
 
     > [!IMPORTANT]
     > Чтобы запустить обнаруживают проблему, необходимо открыть *же версию исходного кода* , опубликованный в службе виртуальных Машин Azure.
 
-1. Выберите **Отладка > Подключить Snapshot Debugger...**. Выберите веб-приложение развертывается в виртуальной Машине Azure и учетную запись хранилища Azure. Выберите **включить отладка во время путешествия** Предварительный просмотр параметр и нажмите кнопку **Attach**.
+1. Выберите **Отладка > Подключить Snapshot Debugger...** . Выберите веб-приложение развертывается в виртуальной Машине Azure и учетную запись хранилища Azure. Выберите **включить отладка во время путешествия** Предварительный просмотр параметр и нажмите кнопку **Attach**.
 
       ![Выбор ресурса Azure](../debugger/media/time-travel-debugging-select-azure-resource-vm.png)
 
@@ -99,7 +99,7 @@ ms.locfileid: "62854137"
 
    ![Начало отладки](../debugger/media/time-travel-debugging-step-commands.png)
 
-   Можно также использовать **"Локальные"**, **Watches**, и **стек вызовов** windows, а также оценивать выражения.
+   Можно также использовать **"Локальные"** , **Watches**, и **стек вызовов** windows, а также оценивать выражения.
 
    ![Проверка данных моментальных снимков](../debugger/media/time-travel-debugging-start-debugging.png)
 
