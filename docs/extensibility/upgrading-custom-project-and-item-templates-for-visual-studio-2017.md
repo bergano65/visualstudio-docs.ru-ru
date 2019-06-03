@@ -120,7 +120,7 @@ ms.locfileid: "66316339"
 
 ```
 
- Сведения, предоставляемые [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) элемент остается неизменным.  **\<VSTemplateContainer >** элемент указывает на файл VSTEMPLATE для связанного шаблона.
+ Сведения, предоставляемые [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) элемент остается неизменным. **\<VSTemplateContainer >** элемент указывает на файл VSTEMPLATE для связанного шаблона.
 
  Ниже приведен VSTEMPLATE-файл элемента по умолчанию, созданные Visual Studio 2015.
 
@@ -172,7 +172,7 @@ ms.locfileid: "66316339"
 </VSTemplateManifest>
 ```
 
- Сведения, предоставляемые  **\<TemplateData >** элемент остается неизменным.  **\<VSTemplateContainer >** элемент указывает на файл VSTEMPLATE для связанного шаблона
+ Сведения, предоставляемые  **\<TemplateData >** элемент остается неизменным. **\<VSTemplateContainer >** элемент указывает на файл VSTEMPLATE для связанного шаблона
 
  Дополнительные сведения о различных элементов vstman-файле, см. в разделе [Visual Studio шаблон манифеста Справочник по схеме](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
