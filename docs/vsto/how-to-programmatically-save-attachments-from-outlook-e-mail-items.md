@@ -3,7 +3,6 @@ title: Практическое руководство. Программное �
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
-- VB
 - CSharp
 helpviewer_keywords:
 - Outlook [Office development in Visual Studio], attachments
@@ -16,25 +15,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 874f19e0ae4e752a36ce95deab669ab46bfbf038
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d222924e753db1b476a5d7729e2c794a8ab305e2
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419525"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462118"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Практическое руководство. Программное сохранение вложений из элементов электронной почты Outlook
-  В данном примере вложения электронной почты сохраняются в указанную папку, если почта поступает в папки "Входящие".
+
+В данном примере вложения электронной почты сохраняются в указанную папку, если почта поступает в папки "Входящие".
 
 > [!IMPORTANT]
 > Этот пример работает только в том случае, если вы добавите папку с именем **TestFileSave** в корневом каталоге.
 
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+[!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Пример
- [!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]
+
+[!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>См. также
+
 - [Работа с элементами почты](../vsto/working-with-mail-items.md)
 - [Практическое руководство. Программное извлечение папки по имени](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [Практическое руководство. Программное выполнение действий при получении сообщения электронной почты](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
