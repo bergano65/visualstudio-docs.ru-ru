@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1796ca10226e4aa5d0242bea89cc01f8452cf9e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943991"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402076"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Учебник. Открытие проекта из репозитория
 
@@ -177,9 +177,9 @@ ms.locfileid: "62943991"
 
 Если вы готовы создавать код в Visual Studio, переходите к любому из следующих учебников по конкретным языкам:
 
-- [Учебники по Visual Studio | **C#**](./csharp/index.yml)
+- [Учебники по Visual Studio | **C#** ](./csharp/index.yml)
 - [Учебники по Visual Studio | **Visual Basic**](./visual-basic/index.yml)
-- [Учебники по Visual Studio | **C++**](/cpp/get-started/)
+- [Учебники по Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
 - [Учебники по Visual Studio | **Python**](/visualstudio/python/)
 - [Учебники по Visual Studio | **JavaScript**, **TypeScript** и **Node.js**](/visualstudio/javascript/)
 
