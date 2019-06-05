@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Узнайте о преимуществе для разработчиков Office 365, предусмотренном подпиской Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934585"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501189"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Преимущество подписки разработчика Office 365 в подписках Visual Studio
 
@@ -82,6 +82,6 @@ ms.locfileid: "65934585"
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 
-- Вам нужна помощь с использованием подписки для разработчиков Office? Изучите ресурсы [поддержки](https://developer.microsoft.com/office/support) в [центре разработки для Office](https://developer.microsoft.com/office).
+- Вам нужна помощь с использованием подписки для разработчиков Office? Изучите ресурсы [поддержки](https://developer.microsoft.com/office/docs#officecommunity) в [центре разработки для Office](https://developer.microsoft.com/office).
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
