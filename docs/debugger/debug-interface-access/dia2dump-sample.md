@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c8b92ae2f607ae449b7b4392fc3638fcdcb6a80
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554874"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715339"
 ---
 # <a name="dia2dump-sample"></a>Пример файла Dia2dump
 
@@ -42,9 +42,9 @@ ms.locfileid: "62554874"
 
 1. В **обозревателе решений**, выберите проект файла Dia2Dump (не решение).
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [Работа со свойствами проекта](/cpp/ide/working-with-project-properties).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [Работа со свойствами проекта](/cpp/build/working-with-project-properties).
 
-1. Откройте **свойства конфигурации** > **C/C++** > **Общие** страницу свойств.
+1. Откройте **свойства конфигурации** > **C/C++**  > **Общие** страницу свойств.
 
 1. В **Дополнительные каталоги включаемых файлов** свойства, выберите в раскрывающемся списке и нажмите кнопку **изменить**.
 

@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3032c73d92f69e6380427bfc675ee263a3eb013f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564838"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714475"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Службы Windows Communication Foundation и службы данных WCF в Visual Studio
 
@@ -56,7 +56,7 @@ Windows Communication Foundation (WCF) — это унифицированный
 
 ### <a name="wcf-programming-model"></a>Модель программирования WCF
 
-Модель программирования WCF основана на связи между двумя сущностями: службы WCF и клиент WCF. Модель программирования инкапсулируется в <xref:System.ServiceModel> пространства имен в .NET Framework.
+Модель программирования WCF основана на связи между двумя сущностями: службы WCF и клиент WCF. Модель программирования инкапсулируется в <xref:System.ServiceModel> пространства имен в .NET.
 
 ### <a name="wcf-service"></a>Служба WCF
 
@@ -228,7 +228,7 @@ Visual Studio упрощает задачу создания клиентов WC
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Практическое руководство. Настройка службы для повторного использования существующих типов
 
-При добавлении в проект ссылки на службу в локальном проекте создаются все типы, заданные в службе. Во многих случаях это создает повторяющиеся типов, если служба использует общие типы .NET Framework или при определении типов в общей библиотеке.
+При добавлении в проект ссылки на службу в локальном проекте создаются все типы, заданные в службе. Во многих случаях это создает повторяющиеся типов, если служба использует общие типы .NET или типы заданы в общей библиотеке.
 
 Чтобы избежать этой проблемы, по умолчанию общих типов в сборках, на которую указывает ссылка. Если вы хотите отключить совместное использование типов для одной или нескольких сборок, это можно сделать в **Настройка ссылок на службы** диалоговое окно.
 
