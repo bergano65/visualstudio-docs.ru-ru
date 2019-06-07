@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704656"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401732"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода
 
@@ -365,9 +365,9 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 ### <a name="continue-the-analysis"></a>Продолжение анализа
 
-Однако последние два тестовых метода вызывают беспокойство. Нельзя быть уверенным, какое именно условие тестируемого метода создает исключение при запуске любого из тестов. Если каким-либо способом разделить эти два условия, а именно отрицательную сумму по дебету и сумму, большую, чем баланс, то это увеличит достоверность проведения тестов.
+Тестируемый метод можно дополнительно улучшить. При такой реализации мы не можем знать, какое условие (`amount > m_balance` или `amount < 0`) приводят к исключению, возвращаемому в ходе теста. Нам просто известно, что `ArgumentOutOfRangeException` где-то возникает в методе. Было бы лучше знать, какое условие в `BankAccount.Debit` вызвало исключение (`amount > m_balance` или `amount < 0`), чтобы быть уверенными в том, что наш метод правильно проверяет свои аргументы.
 
-Еще раз посмотрев на тестируемый метод и заметив, что оба условных оператора используют конструктор `ArgumentOutOfRangeException`, который просто получает имя аргумента в качестве параметра:
+Еще раз проанализировав тестируемый метод `BankAccount.Debit`, можно заметить, что оба условных оператора используют конструктор `ArgumentOutOfRangeException`, который просто получает имя аргумента в качестве параметра:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

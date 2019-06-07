@@ -9,14 +9,14 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d66b7f15bd1fb988c82cea934973e15cb4c6fe2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 277c2ad8ffa6ebad55de3957f3d98917a4765ee1
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970709"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431989"
 ---
-# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Как выполнить Указание числа повторов теста в параметрах выполнения нагрузочного теста
+# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Практическое руководство. Указание числа повторов теста в параметрах выполнения нагрузочного теста
 
 После создания нагрузочного теста с помощью **мастера тестовой нагрузки** можно с помощью **редактора тестовой нагрузки** изменять свойства сценариев в соответствии с требованиями и целями тестирования. Дополнительные сведения см. в разделе [Пошаговое руководство: создание и запуск нагрузочного теста](../test/walkthrough-create-and-run-a-load-test.md).
 

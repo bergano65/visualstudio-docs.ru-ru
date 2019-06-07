@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 740d6336ab4258d3111dd6708de859108e22365e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840450"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402069"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Шаг 2. Создание первого веб-приложения ASP.NET Core
 
@@ -111,6 +111,9 @@ public void OnGet()
 ```
 
 Теперь вы увидите фактическое время сервера в браузере при переходе к приложению.
+
+> [!NOTE]
+> Выходные данные могут отличаться от показанных на рисунке, так как формат вывода ToShortDateTimeString зависит от текущих настроек языка и региональных параметров. См. раздел <xref:System.DateTime.ToShortTimeString>.
 
 ![Visual Studio 2019. Проект ASP.NET Core в браузере](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
