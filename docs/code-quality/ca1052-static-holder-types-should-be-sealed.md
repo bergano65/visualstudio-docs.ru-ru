@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 346a7f4cc7c7a8e6f579f94c6294ce9577fa01c7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842092"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744593"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052. Типы со статическими заполнителями должны быть запечатаны
 
@@ -46,7 +46,7 @@ CA1052 правило предполагает, что тип, который с
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, пометьте тип как `sealed` или `NotInheritable`. Если целевой платформой является .NET Framework 2.0 или более поздней версии, лучшим подходом является пометить тип как `static` или `Shared`. Таким образом не нужно объявить закрытый конструктор для предотвращения создания класса.
+Чтобы устранить нарушение этого правила, пометьте тип как `sealed` или `NotInheritable`. Если проект предназначен для платформы .NET Framework 2.0 или более поздней версии, лучшим подходом является пометить тип как `static` или `Shared`. Таким образом не нужно объявить закрытый конструктор для предотвращения создания класса.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 
