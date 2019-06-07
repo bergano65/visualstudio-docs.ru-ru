@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/21/2019
+ms.date: 05/30/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: d72eca3efd73c20d6cf4fb837df0554f218585f1
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: a9677097757650c3af66452a22ae3abd0dd4fe18
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037085"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431968"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Основной редактор Visual Studio (включен в Visual Studio Enterprise 2019)
 
@@ -367,7 +367,7 @@ Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 Targeting Pac
 Microsoft.VisualStudio.Component.VC.140 | MSVC версии 140 — средства сборки C++ VS 2015 (версия 14.00) | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | MFC C++ для средств сборки версии 142 (x86 и x64) | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.CLI.Support | Поддержка C++/CLI для средств сборки версии 142 (14.21) | 16.1.28829.92 | Optional
-Microsoft.VisualStudio.Component.VC.Llvm.Clang | Windows için clang derleyicisi | 16.1.28916.169 | Optional
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | Компилятор Clang для Windows | 16.1.28916.169 | Optional
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Модули C++ для средств сборки версии 142 (x64 или x86 — экспериментальная) | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC версии 141 — средства сборки C++ для VS 2017 для 64- или 32-разрядных систем (версия 14.16) | 16.1.28829.92 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Пакет SDK для Windows 10 (10.0.16299.0) | 16.0.28517.75 | Optional
@@ -898,7 +898,7 @@ Microsoft.VisualStudio.Component.AzureDevOps.OfficeIntegration | Установ�
 Microsoft.VisualStudio.Component.Git | Git для Windows | 16.0.28625.61
 Microsoft.VisualStudio.Component.LinqToSql | Инструменты LINQ to SQL | 16.0.28625.61
 Microsoft.VisualStudio.Component.TestTools.CodedUITest | Закодированный тест ИП | 16.0.28327.66
-Microsoft.VisualStudio.Component.VC.14.20.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ARM | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM (версия 14.20) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.ARM.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM с устранением рисков Spectre (версия 14.20) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.ARM64 | MSVC версии 142 — средства сборки C++ для VS 2019 для ARM64 (версия 14.20) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.ARM64.Spectre | MSVC версии 142 — библиотеки C++ для VS 2019 для ARM64 с устранением рисков Spectre (версия 14.20) | 16.1.28829.92

@@ -13,22 +13,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261323"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501176"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 
 Дополнительные сведения о специальных возможностях клавиатуры см. в статьях [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md) и [Практическое руководство. Работа только с клавиатуры](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-Сочетания клавиш позволяют получать доступ к различным командам и окнам Visual Studio. В этом разделе перечислены сочетания клавиш по умолчанию для профиля "Обычные параметры среды разработки", который мог быть выбран при установке Visual Studio. Независимо от выбранного профиля сочетание клавиш для той или иной команды можно определить, открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**. Кроме того, сочетания клавиш можно настраивать, назначая командам другие сочетания клавиш.
+Сочетания клавиш позволяют получать доступ к различным командам и окнам Visual Studio. В этом разделе перечислены сочетания клавиш по умолчанию для профиля **обычных параметров**, который мог быть выбран при установке Visual Studio. Независимо от выбранного профиля сочетание клавиш для той или иной команды можно определить, открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**. Кроме того, сочетания клавиш можно настраивать, назначая командам другие сочетания клавиш.
 
 Список распространенных сочетаний клавиш и другие сведения о средствах повышения производительности см. в руководствах по работе со [стандартными сочетаниями клавиш для часто используемых команд в Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) и [клавиатурой](../ide/tips-and-tricks-for-visual-studio.md), а также в [советах по повышению производительности](../ide/productivity-tips-for-visual-studio.md).
-
-В следующей таблице перечислены разделы, команды которых являются глобальными и доступны с помощью сочетаний клавиш из любого раздела Visual Studio.
 
 |||||
 |-|-|-|-|
@@ -36,11 +34,13 @@ ms.locfileid: "66261323"
 |[Архитектура](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Контекстные меню редактора](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Контекстные меню проекта и решения](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Обозреватель тестов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[Сборка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Файл](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Рефакторинг](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Инструменты](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
 |[Контекстные меню представления классов](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Справка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Обозреватель решений](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Вид](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[Отладка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Нагрузочное тестирование](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Команда](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Окно](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
+|[Отладка](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Нагрузочный тест](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Команда](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Окно](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
 |[Контекстные меню отладчика](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Другие контекстные меню](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Контекстные меню Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
-|[Концентратор диагностики](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
+|[Центр диагностики](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-## <a name="bkmk_global"></a> Глобальные
+## <a name="global-shortcuts"></a>Глобальные сочетания клавиш
+
+Следующие сочетания клавиш являются *глобальными*. Это означает, что их можно использовать в любом окне Visual Studio, которое находится в фокусе.
 
 ### <a name="bkmk_analyze"></a> Анализ
 
@@ -161,6 +161,7 @@ ms.locfileid: "66261323"
 |Edit.Cut|**CTRL+X**<br /><br /> или<br /><br /> **SHIFT+DELETE**|
 |Edit.CycleClipboardRing|**CTRL+SHIFT+V**<br /><br /> или<br /><br /> **CTRL+SHIFT+INS**|
 |Edit.Delete|**Удалить**|
+|Edit.Duplicate|**CTRL+D**|
 |Edit.Find|**CTRL+F**|
 |Edit.FindAllReferences|**SHIFT+F12**|
 |Edit.FindinFiles|**CTRL+SHIFT+F**|
@@ -170,11 +171,12 @@ ms.locfileid: "66261323"
 |Edit.FindPreviousSelected|**CTRL+SHIFT+F3**|
 |Edit.GenerateMethod|**CTRL+K, CTRL+M**|
 |Edit.GoTo|**CTRL+G**|
+|Edit.GoToAll|**CTRL+,** или **CTRL+T**|
 |Edit.GoToDeclaration|**CTRL+F12**|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToFindCombo|**CTRL+D**|
-|Edit.GoToNextLocation|**F8**|
-|Edit.GoToPrevLocation|**SHIFT+F8**|
+|Edit.GoToMember|**CTRL+1, CTRL+M**, **CTRL+1, M** или **ALT+\\**|
+|Edit.GoToNextLocation|**F8** (Следующая ошибка в списке ошибок или окне вывода)|
+|Edit.GoToPrevLocation|**SHIFT+F8** (Предыдущая ошибка в списке ошибок или окне вывода)|
 |Edit.InsertSnippet|**CTRL+K, CTRL+X**|
 |Edit.MoveControlDown|**CTRL+СТРЕЛКА ВНИЗ**|
 |Edit.MoveControlDownGrid|**СТРЕЛКА ВНИЗ**|
@@ -184,10 +186,9 @@ ms.locfileid: "66261323"
 |Edit.MoveControlRightGrid|**СТРЕЛКА ВПРАВО**|
 |Edit.MoveControlUp|**CTRL+СТРЕЛКА ВВЕРХ**|
 |Edit.MoveControlUpGrid|**СТРЕЛКА ВВЕРХ**|
-|Edit.NavigateTo|**CTRL+,**|
 |Edit.NextBookmark|**CTRL+K, CTRL+N**|
 |Edit.NextBookmarkInFolder|**CTRL+SHIFT+K, CTRL+SHIFT+N**|
-|Edit.OpenFile|**CTRL+SHIFT+G**|
+|Edit.OpenFile|**CTRL+SHIFT+G** (Открывается файл, на имя которого наведен курсор)|
 |Edit.Paste|**CTRL+V**<br /><br /> или<br /><br /> **SHIFT+INS**|
 |Edit.PreviousBookmark|**CTRL+K, CTRL+P**|
 |Edit.PreviousBookmarkInFolder|**CTRL+SHIFT+K, CTRL+SHIFT+P**|
@@ -346,7 +347,6 @@ ms.locfileid: "66261323"
 |Tools.AttachtoProcess|**CTRL+ALT+P**|
 |Tools.CodeSnippetsManager|**CTRL+K, CTRL+B**|
 |Tools.ForceGC|**CTRL+SHIFT+ALT+F12, CTRL+SHIFT+ALT+F12**|
-|Tools.GoToCommandLine|**CTRL+/**|
 
 ### <a name="bkmk_view"></a> Вид
 
@@ -354,7 +354,7 @@ ms.locfileid: "66261323"
 |--------------| - |
 |View.AllWindows|**SHIFT+ALT+M**|
 |View.ArchitectureExplorer|**CTRL+\\, CTRL+R**|
-|View.Backward|**ALT+СТРЕЛКА ВЛЕВО**|
+|View.Backward|**ALT+СТРЕЛКА ВЛЕВО** (Работает не так, как View.NavigateBackward в текстовом редакторе)|
 |View.BookmarkWindow|**CTRL+K, CTRL+W**|
 |View.BrowseNext|**CTRL+SHIFT+1**|
 |View.BrowsePrevious|**CTRL+SHIFT+2**|
@@ -369,7 +369,7 @@ ms.locfileid: "66261323"
 |View.ErrorList|**CTRL+\\, E**<br /><br /> или<br /><br /> **CTRL+\\, CTRL+E**|
 |View.F#Interactive|**CTRL+ALT+F**|
 |View.FindSymbolResults|**CTRL+ALT+F12**|
-|View.Forward|**ALT+СТРЕЛКА ВПРАВО**|
+|View.Forward|**ALT+СТРЕЛКА ВПРАВО** (Работает не так, как View.NavigateForward в текстовом редакторе)|
 |View.ForwardBrowseContext|**CTRL+SHIFT+7**|
 |View.FullScreen|**SHIFT+ALT+ВВОД**|
 |View.NavigateBackward|**CTRL+-**|
@@ -379,7 +379,7 @@ ms.locfileid: "66261323"
 |View.ObjectBrowser|**CTRL+ALT+J**|
 |View.ObjectBrowserGoToSearchCombo|**CTRL+K, CTRL+R**|
 |View.Output|**CTRL+ALT+O** (латинская буква O)|
-|View.PopBrowseContex|**CTRL+SHIFT+8**|
+|View.PopBrowseContext|**CTRL+SHIFT+8** (Только C++)|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**SHIFT+F4**|
 |View.ResourceView|**CTRL+SHIFT+E**|
@@ -779,7 +779,6 @@ ms.locfileid: "66261323"
 | Edit.CharRight | **СТРЕЛКА ВПРАВО** |
 | Edit.CharRightExtend | **SHIFT+СТРЕЛКА ВПРАВО** |
 | Edit.CharRightExtendColumn | **SHIFT+ALT+СТРЕЛКА ВПРАВО** |
-| Edit.CharTranspose | **CTRL+T** |
 | Edit.ClearBookmarks | **CTRL+K, CTRL+L** |
 | Edit.CollapseAllOutlining | **CTRL+M, CTRL+A** |
 | Edit.CollapseCurrentRegion | **CTRL+M, CTRL+S** |

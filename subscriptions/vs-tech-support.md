@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Сведения о том, как активировать преимущество технической поддержки, входящее в вашу подписку Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811536"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402029"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Активация и использование преимущества технической поддержки в подписках Visual Studio
 
@@ -90,6 +90,9 @@ ms.locfileid: "62811536"
 
    > [!div class="mx-imgBorder"]
    > ![Отправка обращения в рамках преимущества технической поддержки — выбор плана](_img/vs-tech-support/vs-tech-support-choose-plan.png)
+
+   > [!NOTE]
+   > Если ваш план поддержки отсутствует, вернитесь на предыдущую страницу и щелкните **Далее** еще раз.  Если план поддержки все равно не отображается, скопируйте текст своего обращения в службу поддержки в буфер обмена, обновите страницу и повторно создайте обращение.
 
 6. Выполните оставшиеся шаги (серьезность, контактная информация, проверка).   После отправки обращения вы увидите подтверждение того, что инцидент успешно отправлен и вы можете прикрепить файлы. Вашему обращению будет назначен специалист, который свяжется с вами выбранным вами способом для разрешения проблемы.
 

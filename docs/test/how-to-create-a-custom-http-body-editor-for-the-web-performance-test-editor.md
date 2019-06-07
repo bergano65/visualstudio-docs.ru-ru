@@ -8,14 +8,14 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a90d0e02d5ae3ce3ce2e91d4d152244b06fd049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b56195ce7cb6e52433e19dc2a7ae4b42e7580724
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950271"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431832"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Как выполнить Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Практическое руководство. Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 
 Чтобы изменить содержимое основного текста строки или двоичного основного текста запроса веб-служб, такого как запрос SOAP, REST, asmx, wcf, RIA или запрос веб-служб других типов, можно создать пользовательский редактор содержимого.
 
@@ -264,7 +264,7 @@ private MessageEditorControl messageEditorControl
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Сборка и развертывание подключаемых модулей
 
-1. В меню **Сборка** выберите пункт **Сборка \<имя проекта библиотеки элементов управления Windows Form>**.
+1. В меню **Сборка** выберите пункт **Сборка \<имя проекта библиотеки элементов управления Windows Form>** .
 
 2. Закройте все экземпляры Visual Studio.
 
@@ -285,7 +285,7 @@ private MessageEditorControl messageEditorControl
 
 3. По завершении записи в редакторе веб-тестов производительности разверните запрос веб-службы и выберите узел **Текст строки** или **Двоичный основной текст**.
 
-4. В окне **Свойства** выберите пункт "Текст строки" или "Двоичный основной текст" и нажмите кнопку с многоточием **(…)**.
+4. В окне **Свойства** выберите пункт "Текст строки" или "Двоичный основной текст" и нажмите кнопку с многоточием **(…)** .
 
    Откроется диалоговое окно **Изменение данных основного текста HTTP**.
 

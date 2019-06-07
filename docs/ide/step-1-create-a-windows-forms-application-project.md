@@ -1,6 +1,6 @@
 ---
 title: Шаг 1. Создание проекта приложения Windows Forms
-ms.date: 03/23/2019
+ms.date: 06/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b28b69f2a5f2b02c483c5d6813943297b13f173
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979874"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501060"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Шаг 1. Создание проекта приложения Windows Forms
 
@@ -28,14 +28,13 @@ ms.locfileid: "62979874"
 
 ## <a name="open-visual-studio-2017"></a>Откройте Visual Studio 2017.
 
-1. В строке меню выберите **Файл** > **Создать** > **Проект**. Диалоговое окно должно выглядеть следующим образом.
+1. В строке меню выберите **Файл** > **Создать** > **Проект**. Диалоговое окно должно выглядеть так же, как на следующем снимке экрана.
 
-     ![Диалоговое окно "Новый проект"](../ide/media/newprojectdialogcallouts.png)<br/>
-*Диалоговое окно **Новый проект***
+     ![Диалоговое окно "Новый проект"](../ide/media/newprojectdialogcallouts.png)<br/>*Диалоговое окно* ***Новый проект***
 
-2. Выберите **Visual C#** или **Visual Basic** в левой области диалогового окна **Новый проект**.
+2. Выберите **Visual C#** или **Visual Basic** в левой области диалогового окна **Новый проект**, а затем — **Классическое приложение Windows**.
 
-3. В списке шаблонов выберите **Приложение Windows Forms (.NET Framework)** . Назовите новую форму **PictureViewer** и нажмите кнопку **ОК**.
+3. В списке шаблонов выберите **Приложение Windows Forms (.NET Framework)** . Назовите новую форму *PictureViewer* и нажмите кнопку **ОК**.
 
     >[!NOTE]
     >Если вы не видите шаблон **Приложение Windows Forms (.NET Framework)** , используйте Visual Studio Installer, чтобы установить рабочую нагрузку **Разработка классических приложений .NET**.<br/><br/>![Рабочая нагрузка разработки классических приложений .NET в Visual Studio Installer](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Дополнительные сведения см. в разделе [Установка Visual Studio](../install/install-visual-studio.md).
@@ -50,7 +49,7 @@ ms.locfileid: "62979874"
 
    ![Просмотр окна "Создание проекта"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. В поле поиска окна **Создание проекта** введите *Windows Forms*. Затем выберите **Visual Basic** в списке языков и **Windows** в списке платформ. 
+1. В поле поиска окна **Создание проекта** введите *Windows Forms*. Затем выберите **Visual Basic** в списке языков и **Windows** в списке платформ.
 
    Применив фильтры языка и платформы, выберите шаблон **Приложение Windows Forms (.NET Framework)** и нажмите кнопку **Далее**.
 
@@ -59,13 +58,13 @@ ms.locfileid: "62979874"
    > [!NOTE]
    > Если шаблон **Приложение Windows Forms (.NET Framework)** отсутствует, его можно установить из окна **Создание проекта**. В сообщении **Не нашли то, что искали?** выберите ссылку **Установка других средств и компонентов**.
    >
-   > ![Ссылка "Установка других средств и компонентов" из сообщения "Не нашли то, что искали?" в окне "Создание проекта"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![Ссылка "Установка других средств и компонентов" из сообщения "Не нашли то, что искали?" в окне "Создание проекта"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > После этого в Visual Studio Installer выберите рабочую нагрузку **Разработка классических приложений .NET**.
-   > 
+   >
    > ![Рабочая нагрузка .NET Core в Visual Studio Installer](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Затем нажмите кнопку **Изменить** в Visual Studio Installer. Вам может быть предложено сохранить результаты работы; в таком случае сделайте это. Выберите **Продолжить**, чтобы установить рабочую нагрузку. 
+   > Затем нажмите кнопку **Изменить** в Visual Studio Installer. Вам может быть предложено сохранить результаты работы; в таком случае сделайте это. Выберите **Продолжить**, чтобы установить рабочую нагрузку.
 
 1. В поле **Имя проекта** окна *Настроить новый проект* введите **PictureViewer**. Затем нажмите **Создать**.
 

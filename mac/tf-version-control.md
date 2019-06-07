@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: d98ffc8c9d864afaf0b42d029a4d65850f64d806
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20c739057bcbded922df62ce00e1b0c7e07d9f75
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972827"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500996"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Подключение к системе управления версиями Team Foundation
 
@@ -115,7 +115,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 В коллекции Visual Studio для Mac есть расширение системы управления версиями Team Foundation, которое предлагает ограниченную поддержку для подключения к TFVC. Расширение не поддерживается и имеет несколько известных проблем, поэтому при его использовании ваша работа может отличаться.
 
-Чтобы установить расширение, запустите Visual Studio для Mac и выберите меню **Visual Studio > Расширения**. На вкладке **Gallery** выберите **Version Control > Team Foundation Version Control for TFS and Azure DevOps** и щелкните **Установить...**.
+Чтобы установить расширение, запустите Visual Studio для Mac и выберите меню **Visual Studio > Расширения**. На вкладке **Gallery** выберите **Version Control > Team Foundation Version Control for TFS and Azure DevOps** и щелкните **Установить...** .
 
 ![Диспетчер расширений](media/tfvc-install.png)
 
@@ -129,7 +129,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 ### <a name="using-the-extension"></a>Использование расширения
 
-После установки расширения в меню выберите **Version Control > TFS/Azure DevOps > Open from Remote Repository...**.
+После установки расширения в меню выберите **Version Control > TFS/Azure DevOps > Open from Remote Repository...** .
 
 ![Элемент меню, чтобы открыть расширение](media/tfvc-source-control-explorer-devops.png)
 
@@ -241,7 +241,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 Для использования обычной проверки подлинности нужно включить **альтернативные учетные данные** в Azure DevOps Services, выполнив следующие действия:
 
-1. Войдите в свою организацию Azure DevOps в качестве владельца (https://dev.azure.com/{organization}/{project}).
+1. Войдите в Azure DevOps своей организации с правами владельца (https:\//dev.azure.com/ваша_организация/имя_проекта).
 
 2. На панели инструментов организации нажмите на значок шестеренки и выберите пункт **Политика**:
 
