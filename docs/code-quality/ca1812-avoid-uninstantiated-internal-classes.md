@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714264"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744700"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812. Избегайте неиспользуемых внутренних классов
 
@@ -58,7 +58,7 @@ ms.locfileid: "66714264"
 
 Чтобы устранить нарушение этого правила, удалите тип или добавьте код, который его использует. Если тип содержит только `static` методы, добавьте один из следующих к типу, чтобы запретить компилятору выполнять выпуска конструктор открытого экземпляра по умолчанию:
 
-- `static` Модификатор для C# типы, предназначенные [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] или более поздней версии.
+- `static` Модификатор для C# типов, предназначенных для .NET Framework 2.0 или более поздней версии.
 
 - Закрытый конструктор для типов, предназначенных для .NET Framework версий 1.0 и 1.1.
 

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e285ead27b8d3d7c674a138d5f06c69a7e88d1fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9746119c746679817076c86e3d5a9080cec30d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779298"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744687"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031. Не перехватывайте типы общих исключений
 
@@ -47,7 +47,7 @@ ms.locfileid: "62779298"
  Для этого правила отключать вывод предупреждений не следует. Перехват типы общих исключений может скрыть проблемы времени выполнения от пользователя библиотеки и может сделать отладку намного сложнее.
 
 > [!NOTE]
-> Начиная с [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], общеязыковой среды выполнения (CLR) больше не передает исключения поврежденного состояния, возникающие в операционную систему и управляемого кода, например нарушения прав доступа в [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], для обработки в управляемом коде. Если вы хотите компиляции приложения в [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] или более поздней версии и поддерживать обработка исключений поврежденного состояния, можно применить <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибут к методу, который обрабатывает исключения поврежденного состояния.
+> Начиная с .NET Framework 4, среда CLR (CLR) больше не предоставляет исключения поврежденного состояния, которые происходят в операционную систему и управляемого кода, например нарушения прав доступа в [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], для обработки в управляемом коде. Если вы хотите компиляции приложения в .NET Framework 4 или более поздней версии и поддерживать обработку исключений поврежденного состояния, вы можете применить <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибут к методу, который обрабатывает исключения поврежденного состояния.
 
 ## <a name="example"></a>Пример
  В следующем примере показано, тип, который нарушает это правило и тип, реализующий правильно `catch` блока.
