@@ -8,34 +8,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 900a555f5e4ba4c1750dcbedc526a233e422bd43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a7b284b370f248ed2497ece835036679af2e5a8
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005700"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747020"
 ---
 # <a name="migration-activity-designers"></a>Конструкторы действий миграции
 
-Конструкторы операций миграции используются для вызова рабочего процесса 3.0 или 3.5 действия из рабочего процесса, предназначенных для .NET Framework 4. Содержащиеся в этом разделе представлены рекомендации по использованию конструкторов действий конструктора рабочих процессов.
+Конструкторы действий миграции используется для вызова рабочего процесса 3.0 или 3.5 действия рабочий процесс, который предназначен для .NET Framework 4 или более поздней версии.
+
+Содержащиеся в этом разделе представлены рекомендации по использованию конструкторов действий конструктора рабочих процессов.
 
 ## <a name="related-sections"></a>Связанные разделы
- Сведения о других типах конструкторов действий см. в следующих подразделах.
 
- [Поток управления](../workflow-designer/control-flow-activity-designers.md)
+Других типах конструкторов действий см. в следующих разделах:
 
- [Блок-схема](../workflow-designer/flowchart-activity-designers.md)
+- [Поток управления](../workflow-designer/control-flow-activity-designers.md)
 
- [Использование конструкторов действий](../workflow-designer/using-the-activity-designers.md)
+- [Блок-схема](../workflow-designer/flowchart-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+- [Использование конструкторов действий](../workflow-designer/using-the-activity-designers.md)
 
- [Среда выполнения](../workflow-designer/runtime-activity-designers.md)
+- [Messaging](../workflow-designer/messaging-activity-designers.md)
 
- [Примитивы](../workflow-designer/primitives-activity-designers.md)
+- [Среда выполнения](../workflow-designer/runtime-activity-designers.md)
 
- [Транзакция](../workflow-designer/transaction-activity-designers.md)
+- [Примитивы](../workflow-designer/primitives-activity-designers.md)
 
- [Коллекция](../workflow-designer/collection-activity-designers.md)
+- [Транзакция](../workflow-designer/transaction-activity-designers.md)
 
- [Обработка ошибок](../workflow-designer/error-handling-activity-designers.md)
+- [Коллекция](../workflow-designer/collection-activity-designers.md)
+
+- [Обработка ошибок](../workflow-designer/error-handling-activity-designers.md)

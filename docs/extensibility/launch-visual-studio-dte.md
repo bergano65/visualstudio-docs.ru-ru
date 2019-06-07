@@ -1,20 +1,21 @@
 ---
-title: Запустите Visual Studio, с помощью DTE
+title: Запуск Visual Studio с помощью DTE
+titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
 author: gewarren
-ms.author: ''
+ms.author: gewarren
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f597c1a8312edde94539285d68750f0cf127790e
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 399f98964dca29eccfd7d3c2bb691205f373a3b3
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64879361"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747002"
 ---
-# <a name="launch-visual-studio-using-dte"></a>Запустите Visual Studio, с помощью DTE
+# <a name="launch-visual-studio-using-dte"></a>Запуск Visual Studio с помощью DTE
 
 Начиная с Visual Studio 2017, механизм для запуска Visual Studio с помощью DTE отличается запуск предыдущих версий Visual Studio. Это изменение было необходимо, так как Visual Studio 2017 и более поздних версий поддерживает side-by-side установок основных выпусков (например, можно установить предварительной версии и версии, установленный параллельно).
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b96327205369d0280a865b632801edbf199745
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407855"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746031"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; элемент (развертывание ClickOnce)
 Идентифицирует версии платформы .NET Framework, где можно установить и выполнять это приложение.
@@ -41,7 +41,7 @@ ms.locfileid: "63407855"
 ```
 
 ## <a name="elements-and-attributes"></a>Элементы и атрибуты
- `compatibleFrameworks` Элемент является обязательным для манифестов развертывания, предназначенные [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] среды выполнения, предоставляемые [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] или более поздней версии. `compatibleFrameworks` Содержит один или несколько `framework` элементы, которые задают версий платформы .NET Framework, для которых можно запустить это приложение. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Среда выполнения будет запускаться приложение на первом доступных `framework` в этом списке.
+ `compatibleFrameworks` Элемент является обязательным для манифестов развертывания, предназначенные [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] среды выполнения .NET Framework 4 или более поздней версии. `compatibleFrameworks` Содержит один или несколько `framework` элементы, которые задают версий платформы .NET Framework, для которых можно запустить это приложение. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Среда выполнения будет запускаться приложение на первом доступных `framework` в этом списке.
 
  В следующей таблице перечислены атрибут, `compatibleFrameworks` поддерживает элемент.
 
@@ -61,7 +61,7 @@ ms.locfileid: "63407855"
 ## <a name="remarks"></a>Примечания
 
 ## <a name="example"></a>Пример
- В следующем коде показано в примере `compatibleFrameworks` элемент [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания. Это развертывание может выполняться [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Оно также может выполняться [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] так как он является надмножеством [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
+ В следующем коде показано в примере `compatibleFrameworks` элемент [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания. Это развертывание может выполняться [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Оно также может выполняться на платформе .NET Framework 4, так как он является надмножеством [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
 
 ```xml
 <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b68ea8c66b26ee2463969ca71b8f0e5ac78b3f0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a4e8f7bc60704842a8a0e940b336b4bb79093b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823599"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745136"
 ---
 # <a name="interoperability-warnings"></a>предупреждения взаимодействия
 
@@ -32,7 +32,7 @@ ms.locfileid: "62823599"
 | [CA1400: Должны существовать точки входа P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | Открытый или защищенный метод, помеченный атрибутом System.Runtime.InteropServices.DllImportAttribute. Не удается найти неуправляемую библиотеку либо не удается сопоставить метод функции в библиотеке. |
 | [CA1401: P/Invoke не должны быть видимыми](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | Открытый или защищенный метод в открытом типе имеет атрибут System.Runtime.InteropServices.DllImportAttribute (также реализуется с помощью ключевого слова Declare в Visual Basic). Такие методы не следует делать видимыми. |
 | [CA1402: Не используйте перегрузки в интерфейсах, видимых COM](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | Когда перегруженные методы предоставляются клиентам COM, сохраняется имя только первой перегрузки метода. Последующие перегрузки переименовываются уникальным образом путем добавления к имени символа подчеркивания (_) и целого числа, соответствующего порядку объявления перегрузки. |
-| [CA1403: Типы с автомакетом не должны быть видимыми для COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | Видимый для модели COM тип значения помечается атрибутом System.Runtime.InteropServices.StructLayoutAttribute, имеющим значение LayoutKind.Auto. Макеты этих типов можно изменить в разных версиях .NET Framework, которая приведет к разрыву COM-клиентам, которые ожидают определенного макета. |
+| [CA1403: Типы с автомакетом не должны быть видимыми для COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | Видимый для модели COM тип значения помечается атрибутом System.Runtime.InteropServices.StructLayoutAttribute, имеющим значение LayoutKind.Auto. Макеты этих типов можно изменить между версиями .NET, в которых нарушит работу клиентов COM, которые ожидают определенного макета. |
 | [CA1404: Вызывайте GetLastError сразу после P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | Выполняется вызов метода Marshal.GetLastWin32Error или эквивалентной [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] Функция GetLastError, а непосредственно предшествующий вызов не на платформу вызова метода. |
 | [CA1405: Базовые типы типу видимых COM должны быть видимыми для COM](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md) | Тип, видимый для модели COM, наследует от типа, который не является видимым для COM. |
 | [CA1406: Не используйте аргументы Int64 для клиентов Visual Basic 6](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md) | Клиенты COM Visual Basic 6 не может получить доступ к 64-разрядных целых чисел. |

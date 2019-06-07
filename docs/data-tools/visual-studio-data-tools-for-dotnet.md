@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a454218bbddb6c135ff7dc2a5910e6e4a9b3c7e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565092"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745311"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools для .NET
 
-Visual Studio и .NET Framework вместе предоставляют обширный API и поддержка средств для подключения к базам данных, моделирование данных в памяти и отображения данных в пользовательском интерфейсе. Классы .NET Framework, которые предоставляют функциональные возможности доступа к данным, называются [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, вместе с данными, инструменты Visual Studio была разработана в основном для поддержки реляционных баз данных и XML. Наши дни многие поставщики базы данных NoSQL или сторонних разработчиков, предлагают поставщиков ADO.NET.
+Visual Studio и .NET вместе предоставляют обширный API и поддержка средств для подключения к базам данных, моделирование данных в памяти и отображения данных в пользовательском интерфейсе. Классы .NET, которые предоставляют функциональные возможности доступа к данным, называются [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, вместе с данными, инструменты Visual Studio была разработана в основном для поддержки реляционных баз данных и XML. Наши дни многие поставщики базы данных NoSQL или сторонних разработчиков, предлагают поставщиков ADO.NET.
 
-[.NET core](/dotnet/core/) поддерживает ADO.NET, за исключением наборов данных и связанных типов. Если вы ориентируетесь на .NET Core и требовать уровень объектно реляционного сопоставления (ORM), используйте [Entity Framework Core](/ef/core/).
+[.NET core](/dotnet/core/) поддерживает ADO.NET, за исключением наборов данных и их связанных типов. Если целевой платформой является .NET Core и требовать уровень объектно реляционного сопоставления (ORM), используйте [Entity Framework Core](/ef/core/).
 
 В примере ниже показан упрощенное представление базовая архитектура:
 

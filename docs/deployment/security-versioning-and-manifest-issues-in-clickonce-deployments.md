@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a13e6ce35b798a79d3c8a283aa941b801ff03141
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263489"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745609"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Вопросы безопасности, контроля версий и манифестов в развертываниях ClickOnce
 
@@ -59,7 +59,7 @@ ms.locfileid: "66263489"
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Укажите отдельных сборок платформы .NET Framework в манифесте
 
-Приложение не будет работать для загрузки, если изменено вручную [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания для ссылки на более старую версию [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] сборки. Например, если вы добавили ссылку на сборку System.Net для версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] до версии, указанной в манифесте, то может возникнуть ошибка. В общем случае не следует указывать ссылки на отдельные [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] сборки, как версия [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] от которой работает приложение указано как зависимость в манифесте приложения.
+Приложение не будет работать для загрузки, если изменено вручную [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания для ссылки на более старой версии сборки .NET Framework. Например если вы добавили ссылку на сборку System.Net для версии платформы .NET Framework до версии, указанной в манифесте, то возникнет ошибка. В общем случае не следует указывать ссылки на отдельные сборки .NET Framework, так как версия платформы .NET Framework, относительно которой выполняется приложение, указанная как зависимость в манифесте приложения.
 
 ## <a name="manifest-parsing-issues"></a>Манифест, ошибок при анализе
 

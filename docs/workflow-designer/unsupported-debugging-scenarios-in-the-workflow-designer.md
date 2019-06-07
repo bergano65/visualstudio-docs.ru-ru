@@ -8,18 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433881"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747274"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Неподдерживаемые сценарии отладки в конструкторе рабочих процессов
 
-Конструктор рабочих процессов в .NET Framework 4 добавлено множество новых функций, но по-прежнему существует несколько сценариев отладки, которые не поддерживаются.
-
-Ниже приведены неподдерживаемые конструктора рабочих процессов, сценариях отладки.
+В конструкторе рабочих процессов не поддерживает следующие сценарии отладки:
 
 - После изменения кода выполнение не может быть продолжено.
 
@@ -29,7 +27,7 @@ ms.locfileid: "62433881"
 
 - Конструктор рабочих процессов нельзя использовать для отладки рабочих процессов, созданных в коде без применения конструктора.
 
-- В конструкторе .NET Framework 4 нельзя отлаживать рабочие процессы, созданные в более ранних версиях Windows Workflow Foundation (WF).
+- Нельзя отлаживать рабочие процессы, созданные в более ранних версиях Windows Workflow Foundation (WF) в .NET Framework 4 или более поздней версии.
 
 - Точки останова нельзя определить для связей между действиями или узлами <xref:System.Activities.Statements.Flowchart>.
 

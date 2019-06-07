@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407631"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746107"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Использование автономного сборщика данных IntelliTrace (C#, Visual Basic)
 
@@ -106,12 +106,12 @@ ms.locfileid: "63407631"
 
    2. Перейдите в каталог сборщика, например: **C:\IntelliTraceCollector**
 
-   3. Чтобы развернуть файл IntelliTraceCollection.cab, используйте команду **expand** , включая точку (**.**) в конце:
+   3. Чтобы развернуть файл IntelliTraceCollection.cab, используйте команду **expand** , включая точку ( **.** ) в конце:
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > Точка (**.**) сохраняет вложенные папки, которые содержат локализованные планы сбора данных.
+       > Точка ( **.** ) сохраняет вложенные папки, которые содержат локализованные планы сбора данных.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Настройка разрешений для каталога сборщика
 
@@ -157,7 +157,7 @@ ms.locfileid: "63407631"
 
             - В 64-разрядных операционных системах откройте контекстное меню для **Windows PowerShell**. Выберите **Запуск от имени администратора**.
 
-            - В 32-разрядных операционных системах откройте контекстное меню для **Windows PowerShell (x86)**. Выберите **Запуск от имени администратора**.
+            - В 32-разрядных операционных системах откройте контекстное меню для **Windows PowerShell (x86)** . Выберите **Запуск от имени администратора**.
 
     2. В окне командной строки PowerShell с помощью команды **Import-Module** импортируйте файл **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
@@ -377,9 +377,7 @@ ms.locfileid: "63407631"
 
 ## <a name="WhereElse"></a> Где еще можно получить данные IntelliTrace?
 
-- Из сеанса отладки в Visual Studio Enterprise IntelliTrace, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
-
-- В сеансе тестирования в Microsoft Test Manager, см. в разделе [как: Сбор данных IntelliTrace для отладки сложных проблем](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+Можно получить данные IntelliTrace из IntelliTrace сеанса отладки в Visual Studio Enterprise. См. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>Где можно получить дополнительные сведения?
  [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)

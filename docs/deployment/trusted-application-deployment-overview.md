@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3d4339295c47ee6bc8915eecfb581d9a0e8a4bed
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406638"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747667"
 ---
 # <a name="trusted-application-deployment-overview"></a>Общие сведения о развертывании доверенных приложений
 Этот раздел содержит общие сведения о том, как развертывать приложения [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с повышенными правами с помощью технологии развертывания доверенных приложений.
@@ -80,7 +80,7 @@ ms.locfileid: "63406638"
 - Компонент Internet Explorer *CertMgr.exe*, который существует во всех версиях Windows начиная с Windows 98. Дополнительные сведения см. в разделе [Certmgr.exe (средство диспетчера сертификатов)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Создание приложения ClickOnce
- Приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] — это клиентское приложение [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , объединенное с файлами манифеста, которые описывают это приложение и поставляют параметры установки. Можно включить свою программу в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , воспользовавшись командой **Опубликовать** в . [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, можно создать все файлы, необходимые для развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , с помощью средств в составе [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Подробные инструкции по [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания, см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения — это клиентское приложение .NET Framework, объединенное с файлами манифеста, которые описывают приложение и поставляют параметры установки. Можно включить свою программу в приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , воспользовавшись командой **Опубликовать** в . [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Кроме того, можно создать все файлы, необходимые для развертывания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , с помощью средств в составе [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Подробные инструкции по [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания, см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
  Развертывание надежных приложений относится к [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]и может использоваться только с приложениями [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 
