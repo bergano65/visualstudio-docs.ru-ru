@@ -25,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898137"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745611"
 ---
 # <a name="product-and-package-schema-reference"></a>Справочные сведения о схеме пакетов и продуктов
-Объект *файла продукта* является XML-манифест, описывающий все внешние зависимости, требуемые [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Примеры внешних зависимостей [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] и Microsoft Data Access Components (MDAC). Файл пакета похож на файл продукта, но используется для установки компонентов зависит от языка и региональных параметров, зависимости, такие как локализованных сборок, лицензионные соглашения и документации.
+Объект *файла продукта* является XML-манифест, описывающий все внешние зависимости, требуемые [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Внешние зависимости примеры .NET Framework и Microsoft Data Access Components (MDAC). Файл пакета похож на файл продукта, но используется для установки компонентов зависит от языка и региональных параметров, зависимости, такие как локализованных сборок, лицензионные соглашения и документации.
 
  Файл продукта и пакета состоит из верхнего уровня `Product` или `Package` элемент, каждый из которых содержит следующие элементы.
 
@@ -53,7 +53,7 @@ ms.locfileid: "62898137"
  `InstallChecks` тесты, setup.exe следует выполнить для проверки наличия заданного пакета. `PackageFiles` Перечисляет все пакеты, которые процесс установки может потребоваться установить, если заданный тест завершается неуспешно. Каждая запись команды в группе команды выполняет один из тестов, описываемого `InstallChecks`и указывает, какой `PackageFile` для запуска при неудачной проверке. Можно использовать `Strings` элемент локализовать названия продуктов и сообщений об ошибках, которые можно использовать один единый двоичный файл установки для установки приложения для любого числа языков.
 
 ## <a name="example"></a>Пример
- В следующем примере кода показано создание файла продукта для установки [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ В следующем примере кода показано создание файла продукта для установки .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

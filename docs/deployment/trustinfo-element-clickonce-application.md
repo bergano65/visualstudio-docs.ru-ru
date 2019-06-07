@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d6ac13c6eb76bff5ffc07043fd20063700237fc
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927303"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745586"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>Элемент &lt;trustInfo&gt; (приложение ClickOnce)
 Описывает минимальные разрешения безопасности, необходимые для запуска приложения на клиентском компьютере.
@@ -87,7 +87,7 @@ ms.locfileid: "62927303"
      Обязательный. Обозначает версию разрешения. Обычное значение — `1`.
 
 ## <a name="ipermission"></a>IPermission
- Необязательный параметр. Этот элемент является дочерним по отношению к элементу `PermissionSet` . Элемент `IPermission` полностью обозначает класс разрешений в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Элемент `IPermission` содержит следующие атрибуты, но может иметь и атрибуты дополнительные, соответствующие свойствам в классе разрешений. Чтобы узнать синтаксис конкретного разрешения, см. примеры, перечисленные в файле Security.config.
+ Необязательный параметр. Этот элемент является дочерним по отношению к элементу `PermissionSet` . `IPermission` Элемент полностью обозначает класс разрешений в .NET Framework. Элемент `IPermission` содержит следующие атрибуты, но может иметь и атрибуты дополнительные, соответствующие свойствам в классе разрешений. Чтобы узнать синтаксис конкретного разрешения, см. примеры, перечисленные в файле Security.config.
 
 - `class`
 

@@ -12,17 +12,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eea3cb0abe4c0e1151b15680bbab984f9131c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: de7bb2ee0335322e0b089fd2af81026b1f6bd1ca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321027"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747792"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Выбор между общих и с контролем версий пакетов VSPackage
 Разные версии Visual Studio могут сосуществовать на одном компьютере. Пакеты VSPackage может поддерживать любое сочетание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] версий.
 
- Вы можете включить side-by-side установки пакетов VSPackage, одним из двух стратегий, общий стратегию или с контролем версий. Оба вместить наличие нескольких версий [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и связанных версий [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Вы можете включить side-by-side установки пакетов VSPackage, одним из двух стратегий, общий стратегию или с контролем версий. Оба вместить наличие нескольких версий [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] и связанных версий платформы .NET Framework.
 
  В общей стратегии, один пакет VSPackage зарегистрирован для использования в нескольких версиях [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. В стратегии с версиями, устанавливаются несколько библиотек DLL VSPackage, один для каждой версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , которую поддерживаете.
 

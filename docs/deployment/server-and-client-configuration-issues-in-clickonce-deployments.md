@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 71b9df9a8422d1b24a3e5476005942113356c353
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263477"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747427"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 Если вы используете Internet Information Services (IIS) в Windows Server, и развертывание содержит тип файла, который не распознается Windows, например файл Microsoft Word, сервер IIS не будет передавать этот файл и не будет выполнено развертывание.
@@ -41,7 +41,7 @@ ms.locfileid: "66263477"
 
   Тем не менее, этот параметр можно отключить, сняв **использовать расширение файла «.deploy»** параметр [Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), в этом случае необходимо настроить веб-сервер, чтобы разблокировать все расширения файлов используемые в приложении.
 
-  Вы должны будете настроить *.manifest*, *.application*, и *.deploy*, например, если используются службы IIS, где не установлена [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], или если вы являетесь с помощью другого веб-сервера (например, Apache).
+  Вы должны будете настроить *.manifest*, *.application*, и *.deploy*, например, если используются службы IIS, где не установлена платформа .NET Framework, или если вы являетесь с помощью другого веб-сервера (например, Apache).
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce и Secure Sockets Layer (SSL)
  Объект [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение будет работать по протоколу SSL, за исключением случаев, когда Internet Explorer инициирует запрос SSL-сертификат. Запрос может инициироваться, когда существует проблема с сертификат, например когда имена узлов не совпадают или сертификата истек. Чтобы сделать [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] работать через SSL-подключение, убедитесь, что сертификат находится в актуальном состоянии, а данные сертификата соответствует данные сайта.
@@ -121,7 +121,7 @@ ms.locfileid: "66263477"
   Конкретные инструкции по настройке типы MIME в Windows Server, см. в статье базы знаний Майкрософт KB326965, «IIS 6.0 не обслуживает неизвестные типы MIME» в [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).
 
 ## <a name="content-type-mappings"></a>Сопоставления типов содержимого
- При публикации по протоколу HTTP, тип содержимого (также известный как тип MIME) для *.application* файл должен быть «application/x-ms приложение». Если у вас есть [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] установлен на сервере, это будет задано для вас автоматически. Если это не установлен, то необходимо создать ассоциацию MIME-типа для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] виртуального корня приложения (или всего сервера).
+ При публикации по протоколу HTTP, тип содержимого (также известный как тип MIME) для *.application* файл должен быть «application/x-ms приложение». Если у вас есть .NET Framework 2.0 установлен на сервере, это будут устанавливаться для вас автоматически. Если это не установлен, то необходимо создать ассоциацию MIME-типа для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] виртуального корня приложения (или всего сервера).
 
  Если развертывание выполняется с помощью сервера IIS, запустите <em>inetmgr.</em> EXE-файл и добавить новый тип содержимого «application/x-ms приложение» для *.application* расширения.
 

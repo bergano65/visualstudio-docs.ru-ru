@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540876"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745202"
 ---
 # <a name="code-analysis-application-errors"></a>Ошибки, возникающие анализа кода
 
@@ -46,8 +46,8 @@ ms.locfileid: "62540876"
 |[CA0065](ca0065.md)|Неподдерживаемая конструкция метаданных: Тип "*TypeName*«содержит свойство и поле с тем же именем»*PropertyFieldName*"|
 |[CA0066](ca0066.md)|Значение "*VersionID*" для **/targetframeworkversion** не является распознаваемым версией.|
 |[CA0067](ca0067.md)|Каталог не найден.|
-|[CA0068](ca0068.md)|Отладка не удалось найти сведения для целевой сборки *«Имя_сборки»*.|
-|[CA0069](ca0069.md)|Использование альтернативной платформы. *FrameworkVersion1* не найден. С помощью *FrameworkVersion2* вместо этого. Для получения оптимальных результатов анализа убедитесь, что установлена правильная платформа .NET Framework.|
+|[CA0068](ca0068.md)|Отладка не удалось найти сведения для целевой сборки *«Имя_сборки»* .|
+|[CA0069](ca0069.md)|Использование альтернативной платформы. *FrameworkVersion1* не найден. С помощью *FrameworkVersion2* вместо этого. Для получения оптимальных результатов анализа убедитесь, что установлен надлежащей версии .NET framework.|
 |[CA0070](ca0070.md)|Не удается загрузить сборку или тип, из-за разрешений безопасности.|
 |[CA0501](ca0501.md)|Не удалось прочитать отчет о результатах.|
 |[CA0502](ca0502.md)|Язык не поддерживается.|

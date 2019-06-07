@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc3cdf49746340c76855e9afb000c754464d6223
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929156"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746083"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Построение приложений ClickOnce из командной строки
-В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], можно построить проекты из командной строки, даже если они созданы в интегрированной среде разработки (IDE). На самом деле, можно перестроить проект, созданный с помощью [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] на другом компьютере, имеющем только [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] установлен. Благодаря этому можно воспроизвести с помощью автоматизированного процесса сборки, например, при построении центра лабораторий или с помощью расширенные методы написания сценариев вне области построения самого проекта.
+В [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], можно построить проекты из командной строки, даже если они созданы в интегрированной среде разработки (IDE). На самом деле, можно перестроить проект, созданный с помощью [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] на другом компьютере, имеющем только установлена платформа .NET Framework. Благодаря этому можно воспроизвести с помощью автоматизированного процесса сборки, например, при построении центра лабораторий или с помощью расширенные методы написания сценариев вне области построения самого проекта.
 
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Использование MSBuild для воспроизведения развертывания приложений ClickOnce
  При вызове msbuild/target: Publish, в командной строке, он сообщает системе MSBuild для сборки проекта и создания [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения в папке публикации. Это эквивалентно выбору **публикации** в интегрированной среде разработки.
@@ -73,7 +73,7 @@ ms.locfileid: "62929156"
 
 5. Введите `msbuild /target:publish`.
 
-   Описанные выше действия создадут полное [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания приложения во вложенной папке проекта с именем **публикации**. *CmdLineDemo.application* является [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания. Папка *CmdLineDemo_1.0.0.0* содержит файлы *CmdLineDemo.exe* и *CmdLineDemo.exe.manifest*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения. *Setup.exe* является загрузчик, который по умолчанию настроен на установку [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Папка DotNetFX содержит распространяемые компоненты для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Это весь набор файлов, необходимых для развертывания приложения через Интернет или с помощью UNC-путь или CD/DVD.
+   Описанные выше действия создадут полное [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] развертывания приложения во вложенной папке проекта с именем **публикации**. *CmdLineDemo.application* является [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания. Папка *CmdLineDemo_1.0.0.0* содержит файлы *CmdLineDemo.exe* и *CmdLineDemo.exe.manifest*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест приложения. *Setup.exe* является загрузчик, который по умолчанию настроен для установки .NET Framework. Папка DotNetFX содержит распространяемые компоненты для .NET Framework. Это весь набор файлов, необходимых для развертывания приложения через Интернет или с помощью UNC-путь или CD/DVD.
 
 ## <a name="publish-properties"></a>Параметры публикации
  При публикации приложения в приведенных выше процедурах, следующие свойства будут вставлены в файле проекта с помощью мастера публикации. Эти свойства непосредственно влияют на способ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] создается приложение.

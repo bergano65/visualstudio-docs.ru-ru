@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e6e5bf2152fffb06acfb8b5e1f3283da75a19a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900362"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745956"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;зависимость&gt; элемент (приложение ClickOnce)
 Определяет зависимость платформы или сборки, необходимые для приложения.
@@ -126,7 +126,7 @@ ms.locfileid: "62900362"
 |-----------------------| - |
 | `dependencyType` | Обязательный. Указывает тип зависимости. Допустимые значения: `preprequisite` и `install`. `install` Сборка устанавливается как часть [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Объект `prerequisite` сборки должен присутствовать в глобальный кэш сборок (GAC) перед [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение разрешено устанавливать. |
 | `allowDelayedBinding` | Обязательный. Указывает, можно ли загрузить программными средствами во время выполнения сборки. |
-| `group` | Необязательный параметр. Если `dependencyType` атрибут имеет значение `install`, назначает это именованная группа сборки устанавливаются, только по запросу. Дополнительные сведения см. в разделе [Пошаговое руководство: загрузка сборок по требованию с помощью API развертывания ClickOnce с использованием конструктора](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Если значение `framework` и `dependencyType` атрибут имеет значение `prerequisite`, определяет сборку как часть платформы .NET Framework. Глобальный кэш (GAC) не проверяется для этой сборки, при установке на [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] и более поздних версий. |
+| `group` | Необязательный параметр. Если `dependencyType` атрибут имеет значение `install`, назначает это именованная группа сборки устанавливаются, только по запросу. Дополнительные сведения см. в разделе [Пошаговое руководство: загрузка сборок по требованию с помощью API развертывания ClickOnce с использованием конструктора](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Если значение `framework` и `dependencyType` атрибут имеет значение `prerequisite`, определяет сборку как часть платформы .NET Framework. Глобальный кэш (GAC) не проверяется для этой сборки, при установке на .NET Framework 4 и более поздних версий. |
 | `codeBase` | Требуется, если `dependencyType` атрибут имеет значение `install`. Путь к зависимой сборки. Может быть абсолютный путь или путь относительно кода манифеста базовым. Этот путь должен быть допустимым URI в порядке для манифеста сборки был допустимым. |
 | `size` | Требуется, если `dependencyType` атрибут имеет значение `install`. Размер зависимой сборки, в байтах. |
 

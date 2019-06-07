@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: df9c1f83e8a839c7e767c3145e734eba80add485
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e92885e652c9456503bfa75fbce5640c377b684
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566089"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745339"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Работа с концептуальной модели (службы данных WCF)
 
@@ -27,7 +27,7 @@ ms.locfileid: "62566089"
 
 | Раздел | Описание |
 | - | - |
-| [Практическое руководство. Выполнение запросов к службе данных](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Показано, как выполнять запросы к службе данных из [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] приложения. |
+| [Практическое руководство. Выполнение запросов к службе данных](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Показано, как выполнять запросы к службе данных в приложении .NET. |
 | [Практическое руководство. Спроецировать результаты запроса](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Показано, как уменьшить объем данных, возвращаемых по запросу службы данных. |
 
  При использовании концептуальной модели, можно определить, какие данные является допустимым на языке, который совпадает с доменом. Можно определить допустимые данные в модели, или можно добавить проверку для операций, выполняемых в службе сущности или данных.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50fb7800c4446e7d13334957ee9f5f6534f254bf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f8ef27f9af5626b716339281c010c62c2515fb8b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338227"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746844"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Извлекает интерфейс управляемого кода, который представляет значение, связанное с данным псевдонимом.
@@ -47,7 +47,7 @@ int GetICorDebugValue(
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.
 
 ## <a name="remarks"></a>Примечания
- Этот метод применим только к значениям управляемых ( `ICorDebugValue` доступен интерфейс в [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] и определен в [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] пакета SDK в файле CorDebug.IDL).
+ Этот метод применим только к значениям управляемых ( `ICorDebugValue` является интерфейсом, доступных в .NET Framework и определен в пакете SDK для .NET Framework в файле CorDebug.IDL).
 
 ## <a name="see-also"></a>См. также
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
