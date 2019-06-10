@@ -7,8 +7,10 @@
     - name: Краткое руководство
       expanded: true
       items:
-        - name: Средства для контейнеров в Visual Studio
+        - name: Приложение ASP.NET Core в контейнере
           href: container-tools.md
+        - name: Одностраничное приложение React.js в контейнере
+          href: container-tools-react.md
     - name: Учебники
       expanded: true
       items:
