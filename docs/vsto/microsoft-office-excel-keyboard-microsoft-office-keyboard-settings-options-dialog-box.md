@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office Excel Keyboard, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"
+title: Клавиатуры Excel Office, настройки клавиатуры, диалоговое окно "Параметры"
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63f3bfc9295501d5f9b8f0267037302cdbb04a76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 090e943df2b61352c2342218c3c71c8f0e60eaad
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970222"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836035"
 ---
 # <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel Keyboard, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"
   Microsoft Office Excel и Visual Studio, как обрабатывать сочетания клавиш. Же сочетания клавиш могут соответствовать разным командам в Excel и в Visual Studio. Когда Excel открыт в проекте уровня документа в Visual Studio, только одно приложение за раз получает сочетания клавиш. По умолчанию Visual Studio получает нажатие сочетания клавиш, но может сделать их получения, если документ имеет фокус, выбрав Excel **Инамическая схема клавиатуры**.

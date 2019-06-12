@@ -1,5 +1,5 @@
 ---
-title: Как выполнить построить и запустить пример LinqToXmlDataBinding
+title: Практическое руководство. построить и запустить пример LinqToXmlDataBinding
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d53f8d08222eb35660f7a4454164d6b821a976d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897563"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714837"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Как выполнить Сборка и запуск примера LinqToXmlDataBinding
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Практическое руководство. Сборка и запуск примера LinqToXmlDataBinding
 
 В этом разделе показано создание и построение проекта среды Visual Studio LinqToXmlDataBinding, а также запуск полученного в результате образца программы WPF LinqToXmlDataBinding.
 
@@ -22,7 +22,9 @@ ms.locfileid: "62897563"
 
 ## <a name="create-the-project"></a>Создание проекта
 
-1. Запустите Visual Studio и создайте **приложение WPF** на C# с именем **LinqToXmlDataBinding**. В проекте необходимо использовать .NET Framework 3.5 (или более поздней версии).
+1. Запустите Visual Studio и создайте **приложение WPF** на C# с именем **LinqToXmlDataBinding**.
+
+   В проекте необходимо использовать .NET Framework 3.5 (или более поздней версии).
 
 1. Добавьте в проект ссылки для следующих сборок .NET, если они еще не заданы:
 

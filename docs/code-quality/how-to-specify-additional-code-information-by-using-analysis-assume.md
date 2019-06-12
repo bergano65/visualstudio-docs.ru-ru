@@ -12,29 +12,31 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 09db0ff784c7d8fa5a9889487f6090ad9afbfea0
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: f23dd3821744687d4f595ad404bc076e1d05af7b
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260871"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835912"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Практическое руководство. Добавление дополнительных сведений о коде с помощью _Analysis_assume
+
 Возможность создания подсказок для средства анализа кода для кода C/C++, который поможет в процессе анализа и снижают количество предупреждений. Для предоставления дополнительных сведений, используйте следующую функцию:
 
- `_Analysis_assume(`  `expr`  `)`
+`_Analysis_assume(`  `expr`  `)`
 
- `expr` -любое выражение, которое предполагается, что имеют значение true.
+`expr` -любое выражение, которое предполагается, что имеют значение true.
 
- Средство анализа кода предполагается, что условие, представленный с помощью выражения имеет значение true, если в точке, где отображается функция и сохраняет значение true, пока выражение будет изменено, например, путем присваивания переменной.
+Средство анализа кода предполагается, что условие, представленный с помощью выражения имеет значение true, если в точке, где отображается функция и сохраняет значение true, пока выражение будет изменено, например, путем присваивания переменной.
 
 > [!NOTE]
 > `_Analysis_assume` не влияет на оптимизации кода. За пределами средства анализа кода `_Analysis_assume` определяется как холостой.
 
 ## <a name="example"></a>Пример
- В следующем коде используется `_Analysis_assume` для устранения предупреждения анализа кода [C6388](../code-quality/c6388.md):
 
-```
+В следующем коде используется `_Analysis_assume` для устранения предупреждения анализа кода [C6388](../code-quality/c6388.md):
+
+```cpp
 #include<windows.h>
 #include<codeanalysis\sourceannotations.h>
 
@@ -56,4 +58,5 @@ void test( )
 ```
 
 ## <a name="see-also"></a>См. также
- [__assume](/cpp/intrinsics/assume)
+
+- [__assume](/cpp/intrinsics/assume)

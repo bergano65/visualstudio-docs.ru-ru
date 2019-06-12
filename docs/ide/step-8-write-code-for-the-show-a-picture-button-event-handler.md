@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2e67692daed4d00b841b7472e7d13ede0ca500
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 61bb5391f52bcfc587664259821d02ff2786acd3
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420412"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820694"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"
 
@@ -87,7 +87,7 @@ ms.locfileid: "63420412"
         >
         >  `If OpenFileDialog1.ShowDialog() = DialogResult.OK Then`
 
-    9. Теперь добавьте несколько строк кода. Их можно ввести вручную (или копировать и вставить), однако попробуйте использовать для добавления строк IntelliSense. Чем больше вы знакомы с IntelliSense, тем быстрее можете писать собственный код. Итоговая реализация метода `showButton_Click()` будет выглядеть следующим образом. (Выберите вкладку **VB** для просмотра версии кода для Visual Basic.)
+    9. Теперь добавьте несколько строк кода. Их можно ввести вручную (или копировать и вставить), однако попробуйте использовать для добавления строк IntelliSense. Чем больше вы знакомы с IntelliSense, тем быстрее можете писать собственный код. Итоговая реализация метода `showButton_Click()` будет выглядеть следующим образом.
 
          [!code-csharp[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)]
          [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]

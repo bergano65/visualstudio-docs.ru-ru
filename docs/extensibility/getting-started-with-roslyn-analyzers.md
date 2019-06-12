@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebe4922c79e546ad4ee5ae50179424bff9746a15
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bb224d1c84f9216ed303c919118af4997be2405c
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342402"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835915"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Начало работы с анализаторами Roslyn
 
@@ -21,22 +21,19 @@ ms.locfileid: "66342402"
 
 ## <a name="get-started"></a>Начало работы
 
-[Общие сведения о анализаторов Roslyn кода в реальном времени и пошаговое руководство](https://msdn.microsoft.com/magazine/dn879356.aspx)
+[Обзор анализаторов Roslyn](../code-quality/roslyn-analyzers-overview.md)
+
+[Учебник. Написать первый анализатора и код исправления](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 
 [Добавление исправления кода Пошаговое руководство: Предоставления пользователям исправления проблем, анализатор](https://msdn.microsoft.com/magazine/dn904670.aspx)
-
-[Общие сведения и пошаговое руководство в реальном мире анализатора](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [Анализатор Roslyn в реальном мире](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) , вы также можете посмотреть как [говорить](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [Несколько примеров на GitHub, сгруппированы в три вида анализаторы](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-[Введение и обзор несколько анализаторов](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>См. также
 
-- [Обзор анализаторов Roslyn](../code-quality/roslyn-analyzers-overview.md)
-- [Учебник. Написать первый анализатора и код исправления](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 - [Справочник по версии пакета платформы компилятора .NET](roslyn-version-support.md)
 - [Дополнительные документы на сайте GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [Правила FxCop, реализовано с помощью анализаторов Roslyn](http://roslynanalyzersstatus.azurewebsites.net/)

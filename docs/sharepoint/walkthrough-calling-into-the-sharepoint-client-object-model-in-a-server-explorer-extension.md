@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов | Документация Майкрософт
+title: 'Обозреватель серверов: Расширение узла подключений SharePoint'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430456"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835944"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Пошаговое руководство. Вызов объектной модели клиента SharePoint в расширении обозревателя серверов
   В этом пошаговом руководстве показано, как вызывать клиентскую объектную модель SharePoint из расширения для **подключения SharePoint** узел в **обозревателя серверов**. Дополнительные сведения об использовании объектной модели клиента SharePoint см. в разделе [вызова объектной модели SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -240,7 +240,7 @@ ms.locfileid: "63430456"
 
     2. В **Добавление подключения SharePoint** диалоговом окне введите URL-адрес для сайта SharePoint, к которому вы хотите подключиться, а затем выберите **ОК** кнопки.
 
-         Чтобы указать сайт SharePoint на компьютере разработчика, введите **http://localhost**.
+         Чтобы указать сайт SharePoint на компьютере разработчика, введите **http://localhost** .
 
 3. Разверните узел подключения (в котором отображаются URL-адрес сайта), а затем разверните дочерний узел узла (например, **сайт группы**).
 
