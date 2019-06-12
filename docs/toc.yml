@@ -583,88 +583,13 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Работа с файлами XML и XSLT
           href: xml-tools/xml-tools-in-visual-studio.md
-        - name: Разработка приложений с поддержкой множества языков
-          displayName: Globalization localization world-ready
-          href: ide/globalizing-and-localizing-applications.md
-        - name: Языки с двунаправленным письмом
-          href: ide/creating-applications-in-bi-directional-languages.md
-        - name: Дополнительные руководства
+        - name: Разработка инклюзивных приложений
           items:
-            - name: 'Создание приложения WPF на C# или Visual Basic'
-              href: /visualstudio/get-started/csharp/tutorial-wpf
-            - name: Руководства по приложениям Windows Forms
-              items:
-                - name: "Учебник\_1. Создание средства просмотра рисунков (C#)"
-                  items:
-                    - name: Обзор
-                      displayName: Tutorial 1 Picture viewer
-                      href: ide/tutorial-1-create-a-picture-viewer.md
-                    - name: "Шаг\_1. Создание проекта приложения Windows\_Forms"
-                      href: ide/step-1-create-a-windows-forms-application-project.md
-                    - name: "Шаг\_2. Запуск программы"
-                      href: ide/step-2-run-your-program.md
-                    - name: Шаг 3. Настройка свойств формы
-                      href: ide/step-3-set-your-form-properties.md
-                    - name: "Шаг\_4. Создание макета формы с помощью элемента управления TableLayoutPanel"
-                      href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-                    - name: "Шаг\_5. Добавление элементов управления в форму"
-                      href: ide/step-5-add-controls-to-your-form.md
-                    - name: "Шаг\_6. Присвоение имен элементам управления \"Кнопка\""
-                      href: ide/step-6-name-your-button-controls.md
-                    - name: "Шаг\_7. Добавление компонентов диалогового окна в форму"
-                      href: ide/step-7-add-dialog-components-to-your-form.md
-                    - name: "Шаг\_8. Написание кода для обработчика событий кнопки \"Показать рисунок\""
-                      href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-                    - name: "Шаг\_9. Проверка, комментирование и тестирование кода"
-                      href: ide/step-9-review-comment-and-test-your-code.md
-                    - name: "Шаг\_10. Написание кода для дополнительных кнопок и флажка"
-                      href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-                    - name: "Шаг\_11. Запуск программы и изучение других функций"
-                      href: ide/step-11-run-your-program-and-try-other-features.md
-                - name: "Учебник\_2. Создание математического теста с ограничением по времени (C#)"
-                  items:
-                    - name: Обзор
-                      displayName: Tutorial 2 Timed math quiz
-                      href: ide/tutorial-2-create-a-timed-math-quiz.md
-                    - name: "Шаг\_1. Создание проекта и добавление в форму элементов управления Label"
-                      href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-                    - name: "Шаг\_2. Создание задачи на сложение случайных чисел"
-                      href: ide/step-2-create-a-random-addition-problem.md
-                    - name: Шаг 3. Добавление таймера с обратным отсчетом
-                      href: ide/step-3-add-a-countdown-timer.md
-                    - name: "Шаг\_4. Добавление метода CheckTheAnswer()"
-                      href: ide/step-4-add-the-checktheanswer-parens-method.md
-                    - name: "Шаг\_5. Добавление обработчиков событий входа для элементов управления NumericUpDown"
-                      href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-                    - name: "Шаг\_6. Добавление задачи на вычитание"
-                      href: ide/step-6-add-a-subtraction-problem.md
-                    - name: "Шаг\_7. Добавление задач на умножение и деление"
-                      href: ide/step-7-add-multiplication-and-division-problems.md
-                    - name: "Шаг\_8. Настройка теста"
-                      href: ide/step-8-customize-the-quiz.md
-                - name: "Учебник\_3. Создание игры \"Подбери пару!\" (C#)"
-                  items:
-                    - name: Обзор
-                      displayName: Tutorial 3 Matching game
-                      href: ide/tutorial-3-create-a-matching-game.md
-                    - name: "Шаг\_1. Создание проекта и добавление таблицы в форму"
-                      href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-                    - name: "Шаг\_2. Добавление случайного объекта и списка значков"
-                      href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-                    - name: Шаг 3. Назначение каждому элементу управления Label случайного значка
-                      href: ide/step-3-assign-a-random-icon-to-each-label.md
-                    - name: "Шаг\_4. Добавление обработчика событий Click к каждому элементу управления Label"
-                      href: ide/step-4-add-a-click-event-handler-to-each-label.md
-                    - name: "Шаг\_5. Добавление ссылок на элементы управления Label"
-                      href: ide/step-5-add-label-references.md
-                    - name: "Шаг\_6. Добавление таймера"
-                      href: ide/step-6-add-a-timer.md
-                    - name: "Шаг\_7. Отмена исчезновения пар значков"
-                      href: ide/step-7-keep-pairs-visible.md
-                    - name: "Шаг\_8. Добавление метода для проверки того, выиграл ли игрок"
-                      href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-                    - name: "Шаг\_9. Изучение других возможностей"
-                      href: ide/step-9-try-other-features.md
+            - name: Разработка приложений с поддержкой специальных возможностей
+              href: ide/reference/resources-for-designing-accessible-applications.md
+            - name: Разработка приложений с поддержкой множества языков
+              displayName: Globalization localization world-ready
+              href: ide/globalizing-and-localizing-applications.md
     - name: Доступ к данным...
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
@@ -799,8 +724,6 @@
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: 'Продукты и службы корпорации Майкрософт, поддерживающие специальные возможности'
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
-        - name: Ресурсы для создания приложений со специальными возможностями
-          href: ide/reference/resources-for-designing-accessible-applications.md
 - name: Ссылка
   items:
     - name: Общие элементы пользовательского интерфейса
@@ -1170,6 +1093,8 @@
           href: ide/user-permissions-and-visual-studio.md
         - name: "Windows\_Information\_Protection (WIP)"
           href: ide/exempt-visual-studio-from-wip.md
+    - name: Ввод данных на языках с двунаправленным письмом
+      href: ide/use-bidirectional-languages.md
     - name: Окно справки (Майкрософт)
       items:
         - name: Обзор

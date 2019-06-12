@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fef5f63d8c3fd843ed6f92a313102a9c9879003f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582609"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715371"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Настройка проекта C++ для IntelliSense
 
@@ -45,8 +45,6 @@ ms.locfileid: "62582609"
 Для проектов Makefile, которые основаны на шаблоне проектов NMake, выберите на левой панели **NMake**, а затем **Путь поиска включаемых файлов** в категории **IntelliSense**:
 
 ![Пути включаемых файлов в проекте Makefile](media/vcpp-intellisense-makefile-include-paths.png)
-
-Дополнительные сведения см. в разделе [Как Использование IntelliSense для проектов Makefile](/cpp/ide/how-to-enable-intellisense-for-makefile-projects).
 
 ### <a name="open-folder-projects"></a>Проекты в виде папок
 

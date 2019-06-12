@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842010"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820633"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063. Правильно реализуйте IDisposable
 
@@ -52,7 +52,7 @@ ms.locfileid: "65842010"
 
 Нарушение любого из этих шаблонов активирует предупреждение ca1063 следует.
 
-Каждый незапечатанный тип, который объявляет и реализует <xref:System.IDisposable> интерфейс необходимо предоставить собственный `protected virtual void Dispose(bool)` метод. `Dispose()` необходимо вызвать `Dipose(true)`, а также вызывать метод завершения `Dispose(false)`. При создании незапечатанный тип, который объявляет и реализует <xref:System.IDisposable> интерфейс, необходимо определить `Dispose(bool)` и вызывать его. Дополнительные сведения см. в разделе [очистки неуправляемых ресурсов (руководство по .NET)](/dotnet/standard/garbage-collection/unmanaged) и [удаляемости](/dotnet/standard/design-guidelines/dispose-pattern).
+Каждый незапечатанный тип, который объявляет и реализует <xref:System.IDisposable> интерфейс необходимо предоставить собственный `protected virtual void Dispose(bool)` метод. `Dispose()` необходимо вызвать `Dispose(true)`, а также вызывать метод завершения `Dispose(false)`. При создании незапечатанный тип, который объявляет и реализует <xref:System.IDisposable> интерфейс, необходимо определить `Dispose(bool)` и вызывать его. Дополнительные сведения см. в разделе [очистки неуправляемых ресурсов (руководство по .NET)](/dotnet/standard/garbage-collection/unmanaged) и [удаляемости](/dotnet/standard/design-guidelines/dispose-pattern).
 
 По умолчанию это правило считывает только типы, видимые извне, но это [можно настроить](#configurability).
 

@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff2fbc41a3e5a9388a3cae7776a22c8671703d1f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568538"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820407"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Подключение к данным в базе данных Access (Windows Forms)
 
-Можно подключиться к базе данных Access (либо *.mdf* файл или *.accdb* файл) с помощью Visual Studio. После того как определено подключение, источник данных отображается в окне **Источник данных**. Здесь можно перетаскивать таблицы и представления на формы.
+Можно подключиться к базе данных Access (либо *.mdb* файл или *.accdb* файл) с помощью Visual Studio. После того как определено подключение, источник данных отображается в окне **Источник данных**. Здесь можно перетаскивать таблицы и представления на формы.
 
 ## <a name="prerequisites"></a>Предварительные требования
 

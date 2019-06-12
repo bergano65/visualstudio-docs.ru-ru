@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899340"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820433"
 ---
 # <a name="draw-shapes-and-paths"></a>Рисование фигур и контуров
 
@@ -93,8 +93,8 @@ ms.locfileid: "62899340"
 |||||
 |-|-|-|-|
 |![Две фигуры до объединения](../designers/media/b1_1.png)|Две фигуры до объединения|![Пересечение](../designers/media/b1_4.png)|Пересечение|
-|![Исключение наложения](../designers/media/b1_2.png)|Объединение|![](../designers/media/b1_5.png)|Исключение перекрытия|
-|![Subtract](../designers/media/b1_3.png)|Divide|![](../designers/media/b1_6.png)|Subtract|
+|![Объединение](../designers/media/b1_2.png)|Объединение|![Исключение наложения](../designers/media/b1_5.png)|Исключение перекрытия|
+|![Divide](../designers/media/b1_3.png)|Divide|![Subtract](../designers/media/b1_6.png)|Subtract|
 
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами. Объединение контуров](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 

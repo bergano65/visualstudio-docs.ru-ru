@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c4c55461960e48a7ecce74dd9f88e371853e705
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445197"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820982"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Определение доменного языка
 Для определения доменного языка (DSL), создается решение Visual Studio на основе шаблона. Ключевой частью решения является схема определения DSL, которая хранится в файле DslDefinition.dsl. Определение DSL определяет классы и фигуры DSL. После внесения изменений и добавления элементов можно добавить программный код для более детальной настройки DSL.
@@ -99,7 +99,7 @@ ms.locfileid: "63445197"
 
  При запуске решения, созданные на **минимальный язык** шаблона, в экспериментальном экземпляре Visual Studio будет выглядеть следующим образом:
 
- ![](../modeling/media/dsl_min.png)
+ ![Доменного дерева образец конкретного языка в Visual Studio](../modeling/media/dsl_min.png)
 
  Работа с инструментами Создайте элементы и соедините их.
 
