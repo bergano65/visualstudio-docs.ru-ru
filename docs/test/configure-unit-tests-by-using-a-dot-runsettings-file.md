@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5030498702808dc9d41a5daa12520893c3de2627
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531989"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746560"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
-Модульные тесты в Visual Studio можно настроить с помощью файла *.runsettings*. Например, можно изменить версию платформы .NET Framework, на которой выполняются тесты, каталог для результатов теста и данные, собранные во время тестового запуска.
+Модульные тесты в Visual Studio можно настроить с помощью файла *.runsettings*. Например можно изменить версию .NET, на котором выполняются тесты, каталог для результатов теста, или данные, собранные во время тестового запуска.
 
 Файлы параметров запуска являются необязательными. Если вам не требуется специальная конфигурация, файл *.runsettings* не нужен. Чаще всего файл *.runsettings* используют для настройки [анализа объема протестированного кода](../test/customizing-code-coverage-analysis.md).
 

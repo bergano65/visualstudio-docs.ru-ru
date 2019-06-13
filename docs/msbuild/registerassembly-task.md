@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9ebe23cab26d6a90e16623917b61d261ed12f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 488ae44a89c203b70e6c8e635d99eb699349156e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974648"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747320"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly - задача
-Cчитывает метаданные указанной сборки и добавляет в реестр необходимые записи, что позволяет COM-клиентам прозрачно создавать классы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Поведение этой задачи близко к поведению [средства регистрации сборок Regasm.exe](/dotnet/framework/tools/regasm-exe-assembly-registration-tool), но не идентично ему.
+Считывает метаданные из указанной сборки и добавляет необходимые записи в реестр, что позволяет COM-клиентам прозрачно создавать классы .NET Framework. Поведение этой задачи близко к поведению [средства регистрации сборок Regasm.exe](/dotnet/framework/tools/regasm-exe-assembly-registration-tool), но не идентично ему.
 
 ## <a name="parameters"></a>Параметры
  В следующей таблице приводятся параметры задачи `RegisterAssembly` .

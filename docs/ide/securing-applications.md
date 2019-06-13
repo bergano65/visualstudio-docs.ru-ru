@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6398a28394c8918d574a3b3eca4cf54b21f3d7bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c5b0f4c748cd923ca02cb16ba374747c20d12d7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979540"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747654"
 ---
 # <a name="secure-applications"></a>Обеспечение безопасности приложений
 
@@ -40,7 +40,7 @@ ms.locfileid: "62979540"
 
 ## <a name="see-also"></a>См. также
 
-- [Безопасность в .NET Framework](/dotnet/standard/security/index)
+- [Безопасность в .NET](/dotnet/standard/security/index)
 - [Безопасность в Azure](/azure/security/)
 - [Руководство по безопасности системы Windows 10 Mobile](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Функции безопасности платформы Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)

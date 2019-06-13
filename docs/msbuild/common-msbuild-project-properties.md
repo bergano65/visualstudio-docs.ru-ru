@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934521"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745890"
 ---
 # <a name="common-msbuild-project-properties"></a>Общие свойства проектов MSBuild
 В следующей таблице перечислены часто используемые свойства, определяемые в файлах проектов Visual Studio или включаемые в *TARGETS*-файлы, предоставляемые MSBuild.
@@ -118,7 +118,7 @@ ms.locfileid: "65934521"
 | Satellite_Win32Resource | Вставляет во вспомогательную сборку ресурс Win32 (*RES*-файл). |
 | SubsystemVersion | Задает минимальную версию подсистемы, которую может использовать созданный исполняемый файл. Это свойство эквивалентно переключателю `/subsystemversion` компилятора. Сведения о значении по умолчанию этого свойства см. в описании [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) или [/subsystemversion (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Версия платформы .NET Compact Framework, необходимая для запуска собираемого приложения. Задание этого свойства позволяет ссылаться на определенные сборки платформы, которые иначе могут быть недоступны. |
-| TargetFrameworkVersion | Версия [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], необходимая для запуска собираемого приложения. Задание этого свойства позволяет ссылаться на определенные сборки платформы, которые иначе могут быть недоступны. |
+| TargetFrameworkVersion | Версия .NET Framework, который необходим для запуска собираемого приложения. Задание этого свойства позволяет ссылаться на определенные сборки платформы, которые иначе могут быть недоступны. |
 | TreatWarningsAsErrors | Логический параметр, который, будучи установлен в значение `true`, дает указание обрабатывать все предупреждения как ошибки. Этот параметр эквивалентен переключателю компилятора `/nowarn`. |
 | UseHostCompilerIfAvailable | Логический параметр, который, будучи установлен в значение `true`, дает задаче сборки указание использовать внутрипроцессный объект компилятора, если он доступен. Этот параметр используется только [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | Utf8Output | Логический параметр, который, будучи установлен в значение `true`, ведет журнал выходных данных компилятора в кодировке UTF-8. Этот параметр эквивалентен переключателю компилятора `/utf8Output`. |

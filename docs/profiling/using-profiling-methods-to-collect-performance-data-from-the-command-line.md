@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5b5f2c1d350f487b6490d0c2b4ce4fe0b83bb38f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263828"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746777"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Использование методов профилирования для сбора данных о производительности из командной строки
-Выбор программ командной строки и параметров средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] зависит от таких факторов, как тип профилируемого приложения, метод профилирования, который нужно использовать, а также от того, какой код (машинный или [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]) использовался для написания приложения.
+Выбор [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] командной строки средств профилирования и параметры зависит от факторов, таких как тип приложения, что при профилировании, метода профилирования, который вы хотите использовать, и написана ли целевого приложения в машинный код или .NET Код платформы.
 
  В этом разделе подразделы, касающиеся процедур командной строки, упорядочены в соответствии с выбранным методом профилирования.
 
@@ -50,9 +50,9 @@ ms.locfileid: "66263828"
 - [Службы в машинном коде](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Применение методов анализа использования памяти .NET для сбора сведений о выделении памяти и времени существования объектов
- Метод анализа использования памяти средств профилирования .NET позволяет собирать сведения о выделении памяти [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], а также сведения о времени существования объектов в [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Метод памяти средств профилирования .NET позволяет собирать данные о выделении памяти .NET Framework и сведения о времени существования объектов в .NET Framework.
 
- Вы можете запустить целевое приложение с помощью профилировщика, присоединить профилировщик к выполняемому экземпляру приложения и создать инструментированные версии приложения для сбора подробных сведений о времени вместе с данными использования памяти [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Можно запустить целевое приложение с помощью профилировщика; можно присоединить профилировщик к запущенному экземпляру приложения; и можно создать инструментированные версии приложения для сбора подробных данных о времени вместе с данными памяти .NET Framework.
 
 |Задача|Тип целевого приложения|
 |----------|-----------------------------|

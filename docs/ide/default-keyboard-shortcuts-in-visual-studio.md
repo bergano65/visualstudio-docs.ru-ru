@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501176"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820926"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 
@@ -59,6 +59,7 @@ ms.locfileid: "66501176"
 
 |Команды|Сочетания клавиш|
 |--------------| - |
+|Build.BuildSelection|**CTRL + B** (Visual Studio 2019 г.)|
 |Build.BuildSolution|**CTRL+SHIFT+B**|
 |Build.Cancel|**CTRL+BREAK**|
 |Build.Compile|**CTRL+F7**|
@@ -77,7 +78,6 @@ ms.locfileid: "66501176"
 |Debug.ApplyCodeChanges|**ALT+F10**|
 |Debug.Autos|**CTRL+ALT+V, A**|
 |Debug.BreakAll|**CTRL+ALT+BREAK**|
-|Debug.BreakatFunction|**CTRL+B**|
 |Debug.Breakpoints|**CTRL+ALT+B**|
 |Debug.CallStack|**CTRL+ALT+C**|
 |Debug.DeleteAllBreakpoints|**CTRL+SHIFT+F9**|
@@ -86,6 +86,7 @@ ms.locfileid: "66501176"
 |Debug.DOMExplorer|**CTRL+ALT+V, D**|
 |Debug.EnableBreakpoint|**CTRL+F9**|
 |Debug.Exceptions|**CTRL+ALT+E**|
+|Debug.FunctionBreakpoint|**CTRL + K, B** (Visual Studio 2019 г.)<br />**CTRL**+**B** (Visual Studio 2017 г.)|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**CTRL+SHIFT+F11**|
 |Debug.Graphics.StartDiagnostics|**ALT+F5**|
 |Debug.Immediate|**CTRL+ALT+I**|
@@ -109,7 +110,7 @@ ms.locfileid: "66501176"
 |Debug.ParallelWatch3|**CTRL+SHIFT+D, 3**|
 |Debug.ParallelWatch4|**CTRL+SHIFT+D, 4**|
 |Debug.Processes|**CTRL+ALT+Z**|
-|Debug.QuickWatch|**SHIFT+F9**<br /><br /> или<br /><br /> **CTRL+ALT+Q**|
+|Debug.QuickWatch|**SHIFT + F9** или **Ctrl + Alt + Q**|
 |Debug.RefreshWindowsapp|**CTRL+SHIFT+R**|
 |Debug.Registers|**CTRL+ALT+G**|
 |Debug.Restart|**CTRL+SHIFT+F5**|

@@ -2,7 +2,7 @@
 title: Поддержки Python в Visual Studio под управлением Windows
 titleSuffix: ''
 description: Сведения о возможностях Python в Visual Studio, которые делают ее лучшей интегрированной средой разработки на Python в Windows (также называются инструментами Python для Visual Studio, PTVS).
-ms.date: 03/12/2019
+ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8bcc0be91892494a81dd42f141da9c77329767cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f218db0d10e6a7e959b3a5fdc2f38ceff2299c9b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785240"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747569"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Работа с Python в Visual Studio под управлением Windows
 
@@ -37,6 +37,11 @@ Visual Studio является мощной интегрированной ср�
 - Выполните одно или несколько кратких руководств, чтобы создать проект. Если вы не уверены, сначала прочитайте статью [Quickstart: Open and run Python code in a folder](quickstart-05-python-visual-studio-open-folder.md) (Краткое руководство. Открытие и запуск кода Python в папке) или [Краткое руководство. Создание первого веб-приложения Python с помощью Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 ::: moniker-end
 - Пройдите руководство [Работа с Python в Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md), в котором описана полная процедура.
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio поддерживает все официально поддерживаемые версии Python, в соответствии с [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). В частности версия 2.7, 3.5, 3.6 и 3.7.
+::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Поддержка нескольких интерпретаторов
 
@@ -150,9 +155,9 @@ Visual Studio позволяет управлять постоянно возр�
 
 ## <a name="azure-sdk-for-python"></a>Пакет Azure SDK для Python
 
-Рабочая нагрузка Python включает пакет SDK Azure для Python, что упрощает использование служб Azure в приложениях для Windows, Mac OS X и Linux.
+Библиотеки Azure для Python упростить использование служб Azure в приложения Windows, Mac OS X и Linux. Их можно использовать для создания и управления ресурсами Azure, а также для подключения к службам Azure. 
 
-Дополнительные сведения см. в статье [Пакет Azure SDK для Python](/python/azure/?view=azure-python).
+Дополнительные сведения см. в разделе [пакет Azure SDK для Python](/python/azure/?view=azure-python) и [библиотеки Azure для Python](/python/azure/python-sdk-azure-overview?view=azure-python) .
 
 ## <a name="questions-and-answers"></a>Вопросы и ответы
 
