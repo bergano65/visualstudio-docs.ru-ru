@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b836a0fef26f34e83f7238ebe4f6c64731b84257
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d7bf2432e37278c924d1604e735feec7b848b01
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977673"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747558"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath - задача
-Извлекает путь к сборкам [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+Извлекает путь к сборкам платформы .NET Framework.
 
 ## <a name="task-parameters"></a>Параметры задачи
 В следующей таблице приводятся параметры задачи `GetFrameworkPath` .
@@ -41,12 +41,12 @@ ms.locfileid: "62977673"
 |`Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к самым новым сборкам платформы, если они есть. В противном случае возвращает значение `null`.|
 
 ## <a name="remarks"></a>Примечания
-Если установлено несколько версий [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], эта задача возвращает версию, для которой предназначен [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+Если установлено несколько версий платформы .NET Framework, эта задача возвращает версию, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может работать.
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
-Следующий пример использует задачу `GetFrameworkPath` для сохранения пути к [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в свойстве `FrameworkPath`.
+В следующем примере используется `GetFrameworkPath` задачи, чтобы сохранить путь к .NET Framework в `FrameworkPath` свойство.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

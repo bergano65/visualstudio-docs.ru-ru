@@ -9,15 +9,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 39a335f9215db3502fa38c01b501f0476bb4f186
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 9b77d4e27edd470d83941e29d5d7a2314cd2a8e1
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261505"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746269"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Практическое руководство. Присоединение профилировщика к службе .NET для сбора данных о параллелизме при помощи командной строки
-В этой статье описывается использование программ командной строки средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для подключения профилировщика к службе [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] и сбора данных о параллелизме потоков и процессов с помощью метода выборки.
+В этой статье описывается использование [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] командной строки средств профилирования для подключения профилировщика к .NET Framework, службы и сбора данных о параллелизме потоков и процессов с помощью метода выборки.
 
 > [!NOTE]
 > Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Для приложений универсальной платформы Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).

@@ -6,20 +6,21 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2093d6d0f6d123bf6d904b225c17714a98c5ee9a
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971459"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835895"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Удаление Visual Studio для Mac
 
-Существует несколько продуктов Xamarin, обеспечивающих разработку кроссплатформенных приложений, включая автономные приложения, такие как Visual Studio для Mac.
-
-Используйте это руководство для удаления индивидуальных продуктов, перейдя в соответствующий раздел, или воспользуйтесь скриптами, приведенными в разделе [Скрипт удаления](#uninstall-script), чтобы удалить все.
+В этом руководстве можно использовать для удаления каждого компонента в Visual Studio для Mac по отдельности, перейдя в соответствующий раздел, или можно использовать скрипты, описанные в [сценария удаления](#uninstall-script) раздел, чтобы удалить все.
 
 Если ранее вы установили Xamarin Studio на компьютере, в дополнение к описанным ниже действиям может потребоваться выполнить указания из руководства по [удалению Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac).
+
+> [!NOTE]
+> Эта информация удаляется только 2019 г. Visual Studio или 2017 для Mac с компьютера. Чтобы удалить Visual Studio Code, см. в разделе [эту проблему](https://github.com/Microsoft/vscode/issues/52151) подробные сведения.
 
 ## <a name="uninstall-script"></a>Скрипт удаления
 
@@ -103,7 +104,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
-Можно также удалить следующий каталог, содержащий разные папки и файлы Xamarin. Но учитывайте, что этот каталог содержит ключи подписывания Android. См. дополнительные сведения об **[удалении пакета SDK для Android и пакета SDK для Java](#uninstall-android-sdk-and-java-sdk)**:
+Можно также удалить следующий каталог, содержащий разные папки и файлы Xamarin. Но учитывайте, что этот каталог содержит ключи подписывания Android. См. дополнительные сведения об **[удалении пакета SDK для Android и пакета SDK для Java](#uninstall-android-sdk-and-java-sdk)** :
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin

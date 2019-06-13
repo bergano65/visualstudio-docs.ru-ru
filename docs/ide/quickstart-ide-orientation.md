@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da6c19341a1e1ab37b38ae4f5379ee5aaace5b87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f039081309f29e0cd86b3d56ae102b4e55d82ad
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954364"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820973"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Краткое руководство. Знакомство с интегрированной средой разработки Visual Studio
 
@@ -51,7 +51,7 @@ ms.locfileid: "62954364"
 
 После запуска Visual Studio вы прежде всего увидите начальное окно. Окно запуска помогает быстрее добраться до кода. Здесь есть действия, позволяющие клонировать или извлечь код, открыть существующий проект или решение, создать новый проект или просто открыть папку с файлами кода.
 
-[![](media/vs-2019/start-window-labeled.png "Начальное окно в Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+[![Откройте окно в Visual Studio 2019 г.](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
 Если вы используете Visual Studio впервые, список последних проектов будет пустым.
 
@@ -71,7 +71,7 @@ ms.locfileid: "62954364"
 
    ![Поиск шаблонов проектов на начальной странице Visual Studio](media/start-page-search-templates.png)
 
-   Visual Studio предоставляет различные шаблоны проектов, которые помогут вам быстро приступить к написанию кода. Выберите шаблон проекта C# **Консольное приложение (.NET Framework)**. (Кроме того, если вы работаете с Visual Basic, C++, Javascript или другим языком разработки, вы можете создать проект на одном из этих языков. Рассматриваемый нами пользовательский интерфейс выглядит одинаково для всех языков программирования.)
+   Visual Studio предоставляет различные шаблоны проектов, которые помогут вам быстро приступить к написанию кода. Выберите шаблон проекта C# **Консольное приложение (.NET Framework)** . (Кроме того, если вы работаете с Visual Basic, C++, Javascript или другим языком разработки, вы можете создать проект на одном из этих языков. Рассматриваемый нами пользовательский интерфейс выглядит одинаково для всех языков программирования.)
 
 1. В открывшемся диалоговом окне **Новый проект** оставьте имя проекта по умолчанию и нажмите кнопку **ОК**.
 

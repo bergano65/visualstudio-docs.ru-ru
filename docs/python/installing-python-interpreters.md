@@ -1,7 +1,7 @@
 ---
 title: Выбор и установка интерпретаторов Python
 description: Полный список интерпретаторов Python, поддерживаемых в Visual Studio, с краткими инструкциями по поиску их установщиков.
-ms.date: 03/13/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3cfe5e54e4893ffa0bed6e3be1bf142fdda60be
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957420"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747148"
 ---
 # <a name="install-python-interpreters"></a>Установка интерпретаторов Python
 
@@ -26,6 +26,11 @@ ms.locfileid: "62957420"
 ::: moniker-end
 
 Кроме того, любой интерпретатор из приведенной ниже таблицы можно установить вручную, не используя Visual Studio Installer. Например, если вы установили Anaconda 3 еще до установки Visual Studio, нет необходимости снова устанавливать этот дистрибутив с помощью Visual Studio Installer. Вы также можете установить интерпретатор вручную, если, например, доступна новая версия, которая пока что не отображается в установщике Visual Studio.
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio поддерживает все официально поддерживаемые версии Python, в соответствии с [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). В частности версия 2.7, 3.5, 3.6 и 3.7.
+::: moniker-end
 
 Для **Visual Studio 2015 и более ранних версий** нужно вручную установить один из интерпретаторов.
 

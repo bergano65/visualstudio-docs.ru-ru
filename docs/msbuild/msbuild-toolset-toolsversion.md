@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9250382284fffbc3f1761f8143903327fa845832
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b7da41b1b82299bd32d1af805ea6226690e79115
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436862"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747386"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Набор инструментов MSBuild (ToolsVersion)
 
@@ -48,7 +48,7 @@ ms.locfileid: "63436862"
 
 ## <a name="how-the-toolsversion-attribute-works"></a>Принцип действия атрибута ToolsVersion
 
- При создании проекта в Visual Studio или обновлении существующего проекта атрибут с именем `ToolsVersion` автоматически включается в файл проекта, а его значение соответствует версии MSBuild, включенной в выпуск Visual Studio. Дополнительные сведения см. в статье [Обзор настройки для различных версий в Visual Studio](../ide/visual-studio-multi-targeting-overview.md).
+ При создании проекта в Visual Studio или обновлении существующего проекта атрибут с именем `ToolsVersion` автоматически включается в файл проекта, а его значение соответствует версии MSBuild, включенной в выпуск Visual Studio. Дополнительные сведения см. в разделе [Framework targeting Обзор](../ide/visual-studio-multi-targeting-overview.md).
 
  Если значение `ToolsVersion` определено в файле проекта, MSBuild использует это значение для определения значений свойств набора инструментов, доступных для проекта. Одно из свойств набора инструментов — это `$(MSBuildToolsPath)`. Оно определяет путь к инструментам .NET Framework. Обязательным является только это свойство набора инструментов (или `$(MSBuildBinPath)`).
 

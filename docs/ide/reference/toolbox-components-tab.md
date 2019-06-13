@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f5e486d49dca8290c9063625132f673bf79c3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f040b9bb64c2192bc6b376f5d0397ee5438071
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944949"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747750"
 ---
 # <a name="toolbox-components-tab"></a>Панель элементов, вкладка "Компоненты"
 
-Отображает компоненты, которые можно добавить в конструкторы Visual Basic и C# для Windows Forms. В дополнение к компонентам .NET Framework, которые входят в состав Visual Studio (например, <xref:System.Messaging.MessageQueue> и <xref:System.Diagnostics.EventLog>), на этой вкладке можно добавить собственные или сторонние компоненты.
+Отображает компоненты, которые можно добавить в конструкторы Visual Basic и C# для Windows Forms. В дополнение к компонентам .NET, которые входят в состав Visual Studio, такие как <xref:System.Messaging.MessageQueue> и <xref:System.Diagnostics.EventLog> компонентов, можно добавить ваши собственные или сторонние компоненты на эту вкладку.
 
 Чтобы отобразить эту вкладку, откройте конструктор Windows Forms. Выберите **Представление** > **Панель элементов**. На **панели элементов** выберите вкладку **Компоненты**.
 

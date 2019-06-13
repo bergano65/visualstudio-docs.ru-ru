@@ -1,5 +1,5 @@
 ---
-title: Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
+title: API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 ms.date: 11/04/2017
 ms.topic: reference
 ms.author: mblome
@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 045f205ff5450b09d4ec4e76e14493a988bae375
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784086"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820763"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 В этом разделе перечислены открытые члены пространства имен `Microsoft::VisualStudio::CppUnitTestFramework`. С помощью этих интерфейсов API можно создавать модульные тесты для C++ на основе собственной платформы модульного тестирования Майкрософт. В конце раздела приводится [пример использования](#example).
 
- Файлы заголовков расположены в папке _папка_установки_Visual_Studio_2012[x86]_**\VC\UnitTest\include**.
+ Файлы заголовков расположены в папке _папка_установки_Visual_Studio_2012[x86]_ **\VC\UnitTest\include**.
 
- Файлы библиотек расположены в папке _папка_установки_Visual_Studio_2012[x86]_**\VC\UnitTest\lib**.
+ Файлы библиотек расположены в папке _папка_установки_Visual_Studio_2012[x86]_ **\VC\UnitTest\lib**.
 
 Пути к заголовкам и библиотекам автоматически настраиваются в собственном тестовом проекте.
 

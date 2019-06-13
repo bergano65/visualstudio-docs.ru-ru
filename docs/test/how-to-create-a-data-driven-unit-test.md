@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615432"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745858"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Практическое руководство. создание модульного теста, управляемого данными
 
@@ -89,7 +89,7 @@ public TestContext TestContext
 В методе теста получить доступ к данным можно через свойство индексатора `DataRow` `TestContext`.
 
 > [!NOTE]
-> .NET Core не поддерживает атрибут [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). При попытке получить доступ к данным тестирования таким образом в проекте модульного теста для .NET Core или универсальной платформы Windows вы увидите сообщение об ошибке **"'TestContext' не содержит определение для 'DataRow', и доступный метод расширения 'DataRow', принимающий первый аргумент типа 'TestContext', не найден (возможно, отсутствует директива using или ссылка на сборку?)"**.
+> .NET Core не поддерживает атрибут [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). При попытке получить доступ к данным тестирования таким образом в проекте модульного теста для .NET Core или универсальной платформы Windows вы увидите сообщение об ошибке **"'TestContext' не содержит определение для 'DataRow', и доступный метод расширения 'DataRow', принимающий первый аргумент типа 'TestContext', не найден (возможно, отсутствует директива using или ссылка на сборку?)"** .
 
 ## <a name="write-the-test-method"></a>Написание метода теста
 
@@ -179,4 +179,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Модульное тестирование кода](../test/unit-test-your-code.md)
 - [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)
-- [Написание модульных тестов для платформы .NET Framework с использованием платформы модульного тестирования Майкрософт для управляемого кода](../test/unit-test-your-code.md)
+- [Написание модульных тестов для .NET с помощью платформы модульного тестирования Майкрософт](../test/unit-test-your-code.md)
