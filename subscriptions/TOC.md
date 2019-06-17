@@ -14,9 +14,7 @@
 ### [Получение ключей продукта и управление ими](product-keys.md)
 ### [Visual Studio с GitHub Enterprise](access-github.md)
 ### [Преимущества для подписчиков](subscriber-benefits.md)
-### Visual Studio Dev Essentials
-#### [Присоединение к программе Visual Studio Dev Essentials](join-dev-essentials.md)
-#### [Выход из программы Visual Studio Dev Essentials](leave-vsde.md)
+### [Visual Studio Dev Essentials](join-dev-essentials.md)
 ## Использование преимуществ для подписчиков
 ### Инструменты
 #### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md)
@@ -33,7 +31,6 @@
 #### [Учетная запись разработчика Windows](vs-windows-dev.md)
 #### [Подписка на Office 365](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
-#### [Современные требования для TFS](vs-modernreq.md)
 #### [Оплата за Azure по мере использования](vs-azure-payg.md)
 ### [Профессиональное развитие](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)

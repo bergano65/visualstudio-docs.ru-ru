@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db966d2c0ac048bd650500ed6ab191e6bc867e36
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62853120"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043310"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Дополнительные советы по повышению производительности и рекомендации для отладчика в Visual Studio
 
@@ -78,7 +78,7 @@ ms.locfileid: "62853120"
 
 2. Запустите отладчик (**F5**) и заканчивается в точке останова.
 
-3. Найдите переменную в **"Локальные"** окна (**Отладка > Windows > "Локальные"**), щелкните переменную правой кнопкой мыши и выберите **создать идентификатор объекта**.
+3. Найдите переменную в **"Локальные"** окна (**Отладка > Windows > "Локальные"** ), щелкните переменную правой кнопкой мыши и выберите **создать идентификатор объекта**.
 
     ![Создать идентификатор объекта](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
@@ -170,4 +170,5 @@ ms.locfileid: "62853120"
 - [7 Скрытые жемчужины в Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>См. также
-[Сочетания клавиш](../ide/tips-and-tricks-for-visual-studio.md)
+
+[Сочетания клавиш](../ide/productivity-shortcuts.md)

@@ -109,7 +109,7 @@
             - name: Обзор
               displayName: Tutorial 1 Picture viewer
               href: ../ide/tutorial-1-create-a-picture-viewer.md
-            - name: "Шаг\_1. Создайте проект приложения Windows Forms"
+            - name: "Шаг\_1. Создание проекта приложения Windows Forms"
               href: ../ide/step-1-create-a-windows-forms-application-project.md
             - name: "Шаг\_2. Запуск программы"
               href: ../ide/step-2-run-your-program.md
