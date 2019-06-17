@@ -72,7 +72,7 @@
 ## ASP.NET Core
 ### [Поддержка .NET Core](net-core-support.md)
 ### [Начало работы с ASP.NET Core](asp-net-core.md)
-### [Приложений ASP.NET Core в Visual Studio для Mac](building-asp-net-core.md)
+### [Создание приложений ASP.NET Core в Visual Studio для Mac](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript и TypeScript](javascript.md)
 ## Azure
@@ -83,7 +83,7 @@
 ## Разработка игр на Unity
 ### [Разработка игр на Unity](unity-tools.md)
 ### [Установка](setup-vsmac-tools-unity.md)
-### [Приступая к работе с Unity](unity-walkthrough.md)
+### [Начало работы с Unity](unity-walkthrough.md)
 ### [Использование инструментов Unity](using-vsmac-tools-unity.md)
 ### [Использование .NET 4.x в Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Журнал изменений (набор средств Visual Studio для Unity)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
@@ -97,3 +97,6 @@
 ## [Сообщить о проблеме](report-a-problem.md)
 ## [Устранение неполадок. Почему не отображаются все шаблоны?](troubleshooting-no-templates.md)
 ## [Устранение неполадок. Сбой средства обновления при получении сведений](updater-troubleshooting.md)
+
+# [Заметки о выпуске](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [Предварительные заметки о выпуске](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
