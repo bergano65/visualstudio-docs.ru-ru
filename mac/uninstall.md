@@ -15,12 +15,12 @@ ms.locfileid: "66835895"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Удаление Visual Studio для Mac
 
-В этом руководстве можно использовать для удаления каждого компонента в Visual Studio для Mac по отдельности, перейдя в соответствующий раздел, или можно использовать скрипты, описанные в [сценария удаления](#uninstall-script) раздел, чтобы удалить все.
+Используйте это руководство для удаления индивидуальных компонентов Visual Studio для Mac, перейдя в соответствующий раздел, или воспользуйтесь скриптами, приведенными в разделе [Скрипт удаления](#uninstall-script), чтобы удалить все.
 
 Если ранее вы установили Xamarin Studio на компьютере, в дополнение к описанным ниже действиям может потребоваться выполнить указания из руководства по [удалению Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac).
 
 > [!NOTE]
-> Эта информация удаляется только 2019 г. Visual Studio или 2017 для Mac с компьютера. Чтобы удалить Visual Studio Code, см. в разделе [эту проблему](https://github.com/Microsoft/vscode/issues/52151) подробные сведения.
+> Эта информация позволяет удалить с вашего компьютера только Visual Studio 2019 или 2017 для Mac. Сведения об удалении Visual Studio Code см. в [этом вопросе](https://github.com/Microsoft/vscode/issues/52151).
 
 ## <a name="uninstall-script"></a>Скрипт удаления
 

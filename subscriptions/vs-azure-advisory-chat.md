@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Узнайте, как воспользоваться преимуществом "Чат с Помощником по Azure", включенным в подписки Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 03e55b29cea867d438ef0536a2db7ee9c4f47e36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5d547062fa820ff868fe12f8cb899d9d1e508b8
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809116"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033175"
 ---
 # <a name="azure-advisory-chat"></a>Чат с Помощником по Azure
 
@@ -38,11 +38,11 @@ ms.locfileid: "62809116"
 
 |                                                      Уровень подписки                                                      |     Каналы      |    Преимущество    | Возможность возобновления |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                                      Visual Studio Enterprise (ценовая категория "Стандартный")                                       | Корпоративная лицензия, Azure, розничная версия |   Один год    |    Да     |
+|                                      Visual Studio Enterprise (ценовая категория "Стандартный")                                       | Корпоративная лицензия, Azure, розничная версия |   Один год    |    Yes     |
 | Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка), Visual Studio Enterprise (ежемесячная облачная подписка, не для перепродажи (NFR) <sup>1</sup>) |        Все        | Недоступно |     Нет     |
 |                                          Visual Studio Test Professional (стандартная)                                          |        Все        | Недоступно |     Нет     |
 |                                                  MSDN Platforms (стандартная)                                                   |        Все        | Недоступно |     Нет     |
-|                                                 Visual Studio Dev Essentials                                                 |        Н/Д        | Недоступно |     Нет     |
+
 
 <sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), Most Valuable Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), BizSpark, Imagine, MCT*
 

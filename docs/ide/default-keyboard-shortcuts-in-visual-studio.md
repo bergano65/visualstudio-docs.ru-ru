@@ -59,7 +59,7 @@ ms.locfileid: "66820926"
 
 |Команды|Сочетания клавиш|
 |--------------| - |
-|Build.BuildSelection|**CTRL + B** (Visual Studio 2019 г.)|
+|Build.BuildSelection|**CTRL+B** (Visual Studio 2019)|
 |Build.BuildSolution|**CTRL+SHIFT+B**|
 |Build.Cancel|**CTRL+BREAK**|
 |Build.Compile|**CTRL+F7**|
@@ -86,7 +86,7 @@ ms.locfileid: "66820926"
 |Debug.DOMExplorer|**CTRL+ALT+V, D**|
 |Debug.EnableBreakpoint|**CTRL+F9**|
 |Debug.Exceptions|**CTRL+ALT+E**|
-|Debug.FunctionBreakpoint|**CTRL + K, B** (Visual Studio 2019 г.)<br />**CTRL**+**B** (Visual Studio 2017 г.)|
+|Debug.FunctionBreakpoint|**CTRL+K, B** (Visual Studio 2019)<br />**CTRL**+**B** (Visual Studio 2017)|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**CTRL+SHIFT+F11**|
 |Debug.Graphics.StartDiagnostics|**ALT+F5**|
 |Debug.Immediate|**CTRL+ALT+I**|
@@ -110,7 +110,7 @@ ms.locfileid: "66820926"
 |Debug.ParallelWatch3|**CTRL+SHIFT+D, 3**|
 |Debug.ParallelWatch4|**CTRL+SHIFT+D, 4**|
 |Debug.Processes|**CTRL+ALT+Z**|
-|Debug.QuickWatch|**SHIFT + F9** или **Ctrl + Alt + Q**|
+|Debug.QuickWatch|**SHIFT+F9** или **CTRL+ALT+Q**|
 |Debug.RefreshWindowsapp|**CTRL+SHIFT+R**|
 |Debug.Registers|**CTRL+ALT+G**|
 |Debug.Restart|**CTRL+SHIFT+F5**|

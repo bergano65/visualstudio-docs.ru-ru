@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Узнайте о преимуществе для разработчиков Office 365, предусмотренном подпиской Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 12851dcb19824ceccb16bacbba2fdeec29c7df47
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501189"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032719"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Преимущество подписки разработчика Office 365 в подписках Visual Studio
 
@@ -66,12 +66,12 @@ ms.locfileid: "66501189"
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Включено      |  Да          |
-| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Включено                                                            |Да         |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Включено      |  Yes          |
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Включено                                                            |Yes         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                             |  Н/Д         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              | Н/Д         |
-| Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
+||
 
 <sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, BizSpark, разработчик ПО и служб MCT, ПО и службы MCT.  Не включает следующие категории:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD).*
 

@@ -152,7 +152,7 @@ ms.locfileid: "66746588"
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
-В следующем примере используется `GenerateBootstrapper` задач для установки приложения, который должен быть установлен в качестве необходимого компонента .NET Framework 2.0.
+В следующем примере используется задача `GenerateBootstrapper` для установки приложения, требующего установки .NET Framework 2.0 в качестве необходимого компонента.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

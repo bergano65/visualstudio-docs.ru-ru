@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о преимуществе обучения Skill Me Up на платформе Opsgility, входящем в некоторые подписки Visual Studio.
 searchscope: VS Subscriptions
-ms.openlocfilehash: 110ae0871e907a33dce20b059188919f645b4401
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c986eac1c98d2ba7b511cc01f03a823ced496d63
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947012"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032820"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Преимущество обучения Skill Me Up на платформе Opsgility в подписках Visual Studio
 
@@ -39,8 +39,8 @@ ms.locfileid: "62947012"
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | 3 месяца                                                            |Нет.  Доступно только для новых подписчиков         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 3 месяца                                             |  Нет.  Доступно только для новых подписчиков         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 3 месяца                                              | Нет.  Доступно только для новых подписчиков         |
-| Visual Studio Dev Essentials | Н/Д  | Недоступно | Н/Д  |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
+||
 
 *Не включает следующие категории:  Microsoft Partner Network (MPN), Most Valuable Professional (MVP), Microsoft Certified Trainer, BizSpark, Imagine, не для перепродажи (NFR), FTE*
 

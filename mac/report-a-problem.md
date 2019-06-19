@@ -6,12 +6,12 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 11/16/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 3513f4e120db3bab61348f0ee1f0f452d09ded15
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 04fc7b1f7ac0505d8d4daf8c3a7836dd48cfad14
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501102"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132176"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Как сообщить о проблеме в Visual Studio для Mac
 
@@ -42,9 +42,6 @@ ms.locfileid: "66501102"
    ![Найдите подобные проблемы и проголосуйте за них](media/report-problem-image4.png)
 
 1. Если вы не нашли возникшую у вас проблему, выберите элемент **Сообщить о новой проблеме** в боковой части экрана.
-
-   > [!NOTE]
-   > Кнопка **Сообщить о новой проблеме** отображается только в интерфейсе Visual Studio для Mac для сообщества разработчиков. Вы не сможете сообщить о проблеме напрямую на сайте [сообщества разработчиков](https://developercommunity.visualstudio.com/).
 
 1. Создайте описательное название проблемы, чтобы мы передали этот случай соответствующей команде разработчиков Visual Studio для Mac.
 

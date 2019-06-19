@@ -26,7 +26,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747320"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly - задача
-Считывает метаданные из указанной сборки и добавляет необходимые записи в реестр, что позволяет COM-клиентам прозрачно создавать классы .NET Framework. Поведение этой задачи близко к поведению [средства регистрации сборок Regasm.exe](/dotnet/framework/tools/regasm-exe-assembly-registration-tool), но не идентично ему.
+Считывает метаданные указанной сборки и добавляет в реестр необходимые записи, что позволяет COM-клиентам прозрачно создавать классы .NET Framework. Поведение этой задачи близко к поведению [средства регистрации сборок Regasm.exe](/dotnet/framework/tools/regasm-exe-assembly-registration-tool), но не идентично ему.
 
 ## <a name="parameters"></a>Параметры
  В следующей таблице приводятся параметры задачи `RegisterAssembly` .

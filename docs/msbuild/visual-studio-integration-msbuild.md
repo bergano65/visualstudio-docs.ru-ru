@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, содержащую исходную спецификацию элемента ссылки.
 
-  - `ResolvedFrom`, значение которого установлено «{targetframeworkdirectory}», если он был разрешен из каталога .NET Framework.
+  - `ResolvedFrom`, для которого было задано значение "{TargetFrameworkDirectory}", если он был разрешен из каталога .NET Framework.
 
 - Ссылки COM:
 
