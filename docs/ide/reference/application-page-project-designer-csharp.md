@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744995"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160061"
 ---
 # <a name="application-page-project-designer-c"></a>Страница "Приложение" в конструкторе проектов (C#)
 
@@ -61,7 +61,7 @@ ms.locfileid: "66744995"
 > [!NOTE]
 > Пакеты необходимых компонентов, перечисленные в диалоговом окне [Необходимые компоненты](../../ide/reference/prerequisites-dialog-box.md), устанавливаются автоматически при первом открытии этого диалогового окна. В случае последующего изменения целевой платформы проекта потребуется выбрать необходимые компоненты вручную, чтобы они соответствовали новой целевой платформе.
 
-Дополнительные сведения см. в разделе [Практическое руководство. Определение целевой версии .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) и [Общие сведения о настройке для платформы](../../ide/visual-studio-multi-targeting-overview.md).
+Дополнительные сведения см. в статье [Общие сведения о настройке для платформы](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Тип выходных данных**
 

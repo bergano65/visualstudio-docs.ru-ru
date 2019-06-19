@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 4503066cab8e7ca324e7c81317999b737c750dd6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746532"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159942"
 ---
 # <a name="output-window"></a>окно выходных данных
 
@@ -67,7 +67,7 @@ ms.locfileid: "66746532"
 
 Также можно запрограммировать приложения для записи диагностических сообщений во время выполнения в область **Вывод**. Для этого используйте члены класса <xref:System.Diagnostics.Debug> или <xref:System.Diagnostics.Trace> в пространстве имен <xref:System.Diagnostics> API .NET. Члены класса <xref:System.Diagnostics.Debug> отображают выходные данные при сборке конфигураций отладки проекта или решения; члены класса <xref:System.Diagnostics.Trace> отображают выходные данные при сборке конфигурации отладки или выпуска. Дополнительные сведения см. в разделе [Диагностические сообщения в окне вывода](../../debugger/diagnostic-messages-in-the-output-window.md).
 
-В C++ можно создать настраиваемые этапы и события сборки, предупреждения и ошибки которых отображаются и учитываются в области **Вывод**. Нажав клавишу **F1** на строке выходных данных, можно отобразить соответствующий раздел справки. Дополнительные сведения см. в разделе [Форматирование выходных данных этапа настраиваемой сборки или события сборки](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event).
+В C++ можно создать настраиваемые этапы и события сборки, предупреждения и ошибки которых отображаются и учитываются в области **Вывод**. Нажав клавишу **F1** на строке выходных данных, можно отобразить соответствующий раздел справки. Дополнительные сведения см. в разделе [Форматирование выходных данных этапа настраиваемой сборки или события сборки](/cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event).
 
 ## <a name="scroll-behavior"></a>Поведение прокрутки
 
