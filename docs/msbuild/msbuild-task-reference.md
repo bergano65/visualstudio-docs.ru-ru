@@ -169,7 +169,7 @@ ms.locfileid: "66747373"
 
 - [Задача GetFrameworkPath](../msbuild/getframeworkpath-task.md)
 
- Извлекает путь к сборкам платформы .NET Framework.
+ Извлекает путь к сборкам .NET Framework.
 
 - [Задача GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)
 

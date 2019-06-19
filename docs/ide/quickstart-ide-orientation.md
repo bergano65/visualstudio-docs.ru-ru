@@ -51,7 +51,7 @@ ms.locfileid: "66820973"
 
 После запуска Visual Studio вы прежде всего увидите начальное окно. Окно запуска помогает быстрее добраться до кода. Здесь есть действия, позволяющие клонировать или извлечь код, открыть существующий проект или решение, создать новый проект или просто открыть папку с файлами кода.
 
-[![Откройте окно в Visual Studio 2019 г.](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
+[![Окно запуска в Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
 Если вы используете Visual Studio впервые, список последних проектов будет пустым.
 

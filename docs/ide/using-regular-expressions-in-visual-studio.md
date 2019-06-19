@@ -25,7 +25,7 @@ ms.locfileid: "66747739"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Использование регулярных выражений в Visual Studio
 
-Visual Studio использует [регулярных выражений .NET](/dotnet/standard/base-types/regular-expressions) для поиска и замены текста.
+В Visual Studio [регулярные выражения .NET](/dotnet/standard/base-types/regular-expressions) используются для поиска и замены текста.
 
 ## <a name="replacement-patterns"></a>Шаблоны для замены
 

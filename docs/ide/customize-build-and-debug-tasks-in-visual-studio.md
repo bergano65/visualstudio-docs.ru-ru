@@ -314,6 +314,6 @@ Visual Studio считывает часть параметров из файла
 
 - [Разработка кода без использования проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Проекты "Открыть папку" для C++)
-- [Проекты CMake дляC++](/cpp/build/cmake-projects-in-visual-studio)
+- [Проекты CMake для C++](/cpp/build/cmake-projects-in-visual-studio)
 - [NMAKE reference](/cpp/build/reference/nmake-reference) (Справочник по NMAKE)
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -24,7 +24,7 @@ ms.locfileid: "66820873"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Разработка глобализованных и локализованных приложений
 
-Разработка для международных версий за счет использования служб, встроенных в Visual Studio можно [.NET](/dotnet/standard/globalization-localization/).
+Система Visual Studio упрощает разработку международных версий за счет применения служб, встроенных в [.NET](/dotnet/standard/globalization-localization/).
 
 Например, система проектов для приложений Windows Forms может создавать файлы ресурсов как для резервных, так и для каждых дополнительных языка и региональных параметров пользовательского интерфейса. При сборке проекта в Visual Studio файлы ресурсов компилируются из формата Visual Studio XML (RESX) в промежуточный двоичный формат (RESOURCES) и затем внедряются во вспомогательные сборки. Дополнительные сведения см. в разделе [Файлы ресурсов в Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) и [Создание вспомогательных сборок для классических приложений](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 
@@ -50,6 +50,6 @@ Visual Studio можно использовать для создания при
 
 ## <a name="see-also"></a>См. также
 
-- [Поддержка языки с двунаправленным письмом в Visual Studio](use-bidirectional-languages.md)
+- [Поддержка языков с двунаправленным письмом в Visual Studio](use-bidirectional-languages.md)
 - [Глобализация и локализация приложений .NET](/dotnet/standard/globalization-localization/)
 - [Ресурсы в приложениях .NET](/dotnet/framework/resources/)

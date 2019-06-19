@@ -187,13 +187,13 @@ ms.locfileid: "66820954"
 
 ::: moniker range="vs-2017"
 
-2. Чтобы переименовать класс, выберите **Да** в диалоговом окне, всплывающее и спрашивается, хотите ли вы также переименовать ссылки на элемент кода.
+2. Чтобы переименовать класс, выберите **Да** в открывшемся диалоговом окне, предлагающем также переименовать ссылки на элемент кода.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Чтобы переименовать класс, поместите курсор в `UnitTest1` в редакторе кода, щелкните правой кнопкой мыши и выберите **Переименовать**. Введите название **BankAccountTests** и нажмите клавишу **ВВОД**.
+2. Чтобы переименовать класс, поместите курсор в `UnitTest1` в редакторе кода, щелкните правой кнопкой мыши и выберите команду **Переименовать**. Введите название **BankAccountTests** и нажмите клавишу **ВВОД**.
 
 ::: moniker-end
 
@@ -352,7 +352,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-Используйте <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A> метод для подтверждения того, что правильное исключение. Этот метод вызывает сбой, если не теста <xref:System.ArgumentOutOfRangeException> возникает исключение. Если временно изменить тестируемый метод для вызова более общего исключения <xref:System.ApplicationException> при значении суммы по дебету меньше нуля, то тест работает правильно &mdash; то есть завершается неудачно.
+Мы используем метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A> для подтверждения правильности созданного исключения. Этот метод приводит к тому, что тест не будет пройден, если не возникнет исключения <xref:System.ArgumentOutOfRangeException>. Если временно изменить тестируемый метод для вызова более общего исключения <xref:System.ApplicationException> при значении суммы по дебету меньше нуля, то тест работает правильно &mdash; то есть завершается неудачно.
 
 Чтобы проверить случай, когда размер списания превышает баланс, выполните следующие действия:
 
@@ -362,7 +362,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 3. Присвоить `debitAmount` значение, превышающее баланс.
 
-Выполнение двух тестов и убедитесь, что они прошли.
+Выполните два теста и убедитесь, что они пройдены.
 
 ### <a name="continue-the-analysis"></a>Продолжение анализа
 
@@ -401,7 +401,7 @@ if (amount < 0)
 
 ### <a name="refactor-the-test-methods"></a>Рефакторинг тестовых методов
 
-Рефакторинг тестовых методов, удалив вызов <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>. Вызов `Debit()` в `try/catch` block, перехвата определенного исключения, ожидается, что и проверке его связанное сообщение. Метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> обеспечивает возможность сравнения двух строк.
+Выполните рефакторинг методов теста, удалив вызов <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>. Заключите вызов `Debit()` в блок `try/catch`, перехватите конкретное ожидаемое исключение и проверьте соответствующее ему сообщение. Метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> обеспечивает возможность сравнения двух строк.
 
 В этом случае метод `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` может выглядеть следующим образом:
 

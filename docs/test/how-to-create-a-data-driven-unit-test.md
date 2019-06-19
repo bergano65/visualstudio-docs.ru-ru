@@ -179,4 +179,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Модульное тестирование кода](../test/unit-test-your-code.md)
 - [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)
-- [Написание модульных тестов для .NET с помощью платформы модульного тестирования Майкрософт](../test/unit-test-your-code.md)
+- [Написание модульных тестов для .NET с использованием платформы модульного тестирования Майкрософт](../test/unit-test-your-code.md)

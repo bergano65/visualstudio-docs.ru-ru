@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bcff4d75361d3758321360cc051bf5040dbb61ac
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 886a17b4b702802faa06f28ab1df485b56de9636
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261696"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043550"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Учебник. Создание простого приложения на C\#
 
@@ -312,4 +312,4 @@ IsChecked="True"
 
 ## <a name="see-also"></a>См. также
 
-- [Советы по повышению производительности](../../ide/productivity-tips-for-visual-studio.md)
+- [Советы по повышению производительности](../../ide/productivity-features.md)

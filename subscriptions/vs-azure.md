@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о том, как активировать преимущество Azure, входящее в вашу подписку Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685926"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032202"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Использование Microsoft Azure по подпискам Visual Studio
 
@@ -24,24 +24,23 @@ ms.locfileid: "65685926"
 
 |                 Уровень подписки или программа                 |           Преимущество           |                         Возможность возобновления                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise — уровень "Стандартный"               |     Ежемесячный кредит в размере 150 долл. США     |                             Да                             ||
+|              Visual Studio Enterprise — уровень "Стандартный"               |     Ежемесячный кредит в размере 150 долл. США     |                             Yes                             ||
 |               Visual Studio Enterprise — месячная подписка               |        Недоступно        |                                                             |
-|             Visual Studio Professional — уровень "Стандартный"              |     Ежемесячный кредит в размере 50 долл. США      |                             Да
+|             Visual Studio Professional — уровень "Стандартный"              |     Ежемесячный кредит в размере 50 долл. США      |                             Yes
 |              Visual Studio Professional — месячная подписка              |        Недоступно        |                                                             |
-|                    Visual Studio Test Pro                    |     Ежемесячный кредит в размере 50 долл. США      |                             Да                             |
-|                        MSDN Platforms                        |     Ежемесячный кредит в размере 100 долл. США     |                             Да                             |
-|                 Visual Studio Dev Essentials                 | Бесплатные службы + кредит в размере 200 долл. США | Службы бесплатны на постоянной основе.  Только однократный кредит в размере 200 долл. США. |
-|               Visual Studio Enterprise — NFR\*               |     Ежемесячный кредит в размере 150 долл. США     |                             Да                             |
-|                Visual Studio Enterprise — FTE                |     Ежемесячный кредит в размере 150 долл. США     |                             Да                             |
-|     Visual Studio Enterprise — Microsoft Partner Network     |     Ежемесячный кредит в размере 150 долл. США     |                             Да                             |
+|                    Visual Studio Test Pro                    |     Ежемесячный кредит в размере 50 долл. США      |                             Yes                             |
+|                        MSDN Platforms                        |     Ежемесячный кредит в размере 100 долл. США     |                             Yes                             |
+|               Visual Studio Enterprise — NFR\*               |     Ежемесячный кредит в размере 150 долл. США     |                             Yes                             |
+|                Visual Studio Enterprise — FTE                |     Ежемесячный кредит в размере 150 долл. США     |                             Yes                             |
+|     Visual Studio Enterprise — Microsoft Partner Network     |     Ежемесячный кредит в размере 150 долл. США     |                             Yes                             |
 |    Visual Studio Professional — Microsoft Partner Network    |        Недоступно        |                                                             |
 |        Visual Studio Enterprise — Imagine (уровень "Стандартный")         |        Недоступно        |                                                             |
 |         Visual Studio Enterprise — Imagine (уровень "Премиум")         |        Недоступно        |                                                             |
-|             Visual Studio Enterprise — BizSpark              |     Ежемесячный кредит в размере 150 долл. США     |                             Да                             |
-|      Visual Studio Enterprise — программное обеспечение и службы MCT      |     Ежемесячный кредит в размере 100 долл. США     |                             Да                             |
-| Visual Studio Enterprise — программное обеспечение и службы для разработчика MCT |     Ежемесячный кредит в размере 150 долл. США     |                             Да                             |
+|             Visual Studio Enterprise — BizSpark              |     Ежемесячный кредит в размере 150 долл. США     |                             Yes                             |
+|      Visual Studio Enterprise — программное обеспечение и службы MCT      |     Ежемесячный кредит в размере 100 долл. США     |                             Yes                             |
+| Visual Studio Enterprise — программное обеспечение и службы для разработчика MCT |     Ежемесячный кредит в размере 150 долл. США     |                             Yes                             |
 
-* Включает следующие категории: не для перепродажи (NFR), Most Valuable Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP).
+\* Включает следующие категории: не для перепродажи (NFR), Most Valuable Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP).
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

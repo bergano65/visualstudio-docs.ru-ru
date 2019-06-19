@@ -30,7 +30,7 @@ ms.locfileid: "66820653"
 
 ::: moniker range=">=vs-2019"
 
-[![В интегрированной среде разработки для Visual Studio 2019 г.](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
+[![Интегрированная среда разработки Visual Studio 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 

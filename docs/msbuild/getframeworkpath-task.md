@@ -26,7 +26,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747558"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath - задача
-Извлекает путь к сборкам платформы .NET Framework.
+Извлекает путь к сборкам .NET Framework.
 
 ## <a name="task-parameters"></a>Параметры задачи
 В следующей таблице приводятся параметры задачи `GetFrameworkPath` .
@@ -41,12 +41,12 @@ ms.locfileid: "66747558"
 |`Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к самым новым сборкам платформы, если они есть. В противном случае возвращает значение `null`.|
 
 ## <a name="remarks"></a>Примечания
-Если установлено несколько версий платформы .NET Framework, эта задача возвращает версию, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может работать.
+Если установлено несколько версий .NET Framework, эта задача возвращает версию, для которой предназначен [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
-В следующем примере используется `GetFrameworkPath` задачи, чтобы сохранить путь к .NET Framework в `FrameworkPath` свойство.
+Следующий пример использует задачу `GetFrameworkPath` для сохранения пути к .NET Framework в свойстве `FrameworkPath`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

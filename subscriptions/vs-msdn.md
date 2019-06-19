@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Зарегистрируйтесь, чтобы получить подписку MSDN Magazine, входящую в состав вашей подписки Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0c659bdd7eb2eee0d1899eab5d5df850a5206e92
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947374"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032847"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Преимущество MSDN Magazine в подписках Visual Studio
 
@@ -52,7 +52,7 @@ ms.locfileid: "62947374"
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Печатный выпуск                                             |  Нет.  Доступно только для новых подписчиков         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Печатный выпуск                                              | Нет.  Доступно только для новых подписчиков         |
 |Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная)   | Azure |Недоступно      |  Н/Д         |
-|Visual Studio Dev Essentials| Н/Д |Цифровой выпуск       |  Да|
+||
 
 <sup>1</sup> *Печатный выпуск:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*
 

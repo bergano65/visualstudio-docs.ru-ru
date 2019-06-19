@@ -33,7 +33,7 @@ ms.locfileid: "66714491"
 |Тестовая платформа  |Минимальная версия адаптера Visual Studio  |Минимальная версия платформы  |
 |---------|---------|---------|
 |xUnit.net |xunit.runner.visualstudio версии 2.2.0-beta3-build1187 |xunit 1.9.2 |
-|NUnit |NUnit3TestAdapter версии 3.7.0 |NUnit версии 3.5.0 |
+|NUnit |NUnit3TestAdapter версии 3.7.0 |NUnit версии 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 Если у вас есть старые тестовые проекты на основе MSTest, которые ссылаются на `Microsoft.VisualStudio.QualityTools.UnitTestFramework`, и вы не хотите переходить на более новые пакеты NuGet MSTest, выполните обновление до Visual Studio 2017 версии 15.4 или более поздней версии.

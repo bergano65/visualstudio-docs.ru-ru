@@ -29,7 +29,7 @@ ms.locfileid: "66747148"
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio поддерживает все официально поддерживаемые версии Python, в соответствии с [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). В частности версия 2.7, 3.5, 3.6 и 3.7.
+> Visual Studio поддерживает все официально поддерживаемые версии Python, указанные организацией [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). В частности, версии 2.7, 3.5, 3.6 и 3.7.
 ::: moniker-end
 
 Для **Visual Studio 2015 и более ранних версий** нужно вручную установить один из интерпретаторов.
