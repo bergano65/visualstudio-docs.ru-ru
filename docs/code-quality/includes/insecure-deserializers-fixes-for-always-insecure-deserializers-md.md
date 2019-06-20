@@ -4,11 +4,11 @@ ms.author: paulming
 ms.date: 05/01/2019
 ms.topic: include
 ms.openlocfilehash: bc423f10cfbae0b7a0cdaedb72f6891a0e12d228
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65840809"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67254370"
 ---
 - По возможности вместо этого используйте безопасный сериализатор и **не позволяет злоумышленнику указать произвольный тип для десериализации**. Некоторые более безопасным сериализаторах включают:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>

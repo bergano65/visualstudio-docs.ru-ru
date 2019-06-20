@@ -1,10 +1,10 @@
 ---
 ms.topic: include
 ms.openlocfilehash: fa36478a9374cfbf5350d010b509d617063e61f7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65844980"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253965"
 ---
 Инструменты доменного языка
