@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 2f617006caadb80b5177469cb204dfca7841abfb
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65844843"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261799"
 ---
  Набор средств Visual Studio для Office (cреда выполнения) 

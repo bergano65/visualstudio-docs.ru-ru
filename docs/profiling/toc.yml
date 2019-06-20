@@ -24,9 +24,9 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Практические руководства
   items:
-    - name: Анализ использования ЦП
+    - name: Загрузка ЦП.
       href: cpu-usage.md
-    - name: Анализ данных об использовании памяти
+    - name: Использование памяти
       items:
         - name: Анализ данных об использовании памяти
           href: analyze-memory-usage.md
@@ -48,7 +48,7 @@
       href: javascript-memory.md
     - name: Анализ скорости реагирования пользовательского интерфейса HTML
       href: html-ui-responsiveness.md
-    - name: Использование обозревателя производительности
+    - name: Обозреватель производительности
       items:
         - name: Использование обозревателя производительности
           href: performance-explorer.md
@@ -56,7 +56,7 @@
           href: performance-tools-on-windows-8-and-windows-server-2012-applications.md
         - name: Обзоры (средства оценки производительности)
           items:
-            - name: Обзоры (средства оценки производительности)
+            - name: Обзор средств оценки производительности
               href: overviews-performance-tools.md
             - name: Общие сведения о сеансе анализа производительности
               href: performance-session-overview.md
@@ -78,7 +78,7 @@
               href: performance-session-properties.md
             - name: Профилирование и безопасность Windows Vista
               href: profiling-and-windows-vista-security.md
-        - name: Начало работы со средствами оценки производительности
+        - name: Начало работы
           items:
             - name: Начало работы со средствами оценки производительности
               href: getting-started-with-performance-tools.md
@@ -88,7 +88,7 @@
               href: how-to-collect-performance-data-for-a-web-site.md
             - name: Создание сеансов анализа производительности вручную
               href: how-to-manually-create-performance-sessions.md
-        - name: Настройка сеансов анализа производительности
+        - name: Настроить
           items:
             - name: Настройка сеансов анализа производительности
               href: configuring-performance-sessions.md
@@ -96,7 +96,7 @@
               href: how-to-reference-windows-symbol-information.md
             - name: Выбор методов сбора данных
               href: how-to-choose-collection-methods.md
-            - name: Использование метода выборки для сбора статистики производительности
+            - name: Сбор статистики производительности
               items:
                 - name: Использование метода выборки для сбора статистики производительности
                   href: collecting-performance-statistics-by-using-sampling.md
@@ -106,7 +106,7 @@
                   href: how-to-collect-line-level-sampling-data.md
             - name: Сбор данных о выделении памяти для объектов .NET и времени их жизни
               href: collecting-dotnet-memory-allocation-and-lifetime-data.md
-            - name: Сбор подробных сведений о времени с помощью инструментирования
+            - name: Сбор подробных сведений о времени
               items:
                 - name: Сбор подробных сведений о времени с помощью инструментирования
                   href: collecting-detailed-timing-data-by-using-instrumentation.md
@@ -124,7 +124,7 @@
               href: collecting-thread-and-process-concurrency-data.md
             - name: Сбор данных о взаимодействии уровней
               href: collecting-tier-interaction-data.md
-            - name: Сбор дополнительных данных о производительности
+            - name: Дополнительные данные о производительности
               items:
                 - name: Сбор дополнительных данных о производительности
                   href: collecting-additional-performance-data.md
@@ -148,7 +148,7 @@
               href: how-to-specify-the-dotnet-framework-runtime.md
         - name: Управление сбором данных
           items:
-            - name: Управление сбором данных
+            - name: Как управлять сбором данных
               href: controlling-data-collection.md
             - name: Начало и окончания сбора данных о производительности
               href: how-to-start-and-end-performance-data-collection.md
@@ -162,11 +162,11 @@
               href: how-to-limit-instrumentation-to-specific-functions.md
             - name: Исключение и включение малых функций при инструментировании
               href: how-to-exclude-or-include-short-functions-from-instrumentation.md
-        - name: Анализ данных из средств оценки производительности
+        - name: Данные средств оценки производительности
           items:
             - name: Анализ данных из средств оценки производительности
               href: analyzing-performance-tools-data.md
-            - name: Использование правил производительности для анализа данных
+            - name: Правила производительности для анализа
               items:
                 - name: Использование правил производительности для анализа данных
                   href: using-performance-rules-to-analyze-data.md
@@ -176,13 +176,13 @@
                   href: how-to-configure-performance-rules.md
                 - name: Справочник по правилам производительности
                   items:
-                    - name: Справочник по правилам производительности
+                    - name: Обзор справочника по правилам производительности
                       href: performance-rules-reference.md
                     - name: Правила производительности по идентификаторам
                       href: performance-rules-by-id.md
                     - name: Правила производительности использования в .NET Framework
                       items:
-                        - name: Правила производительности использования в .NET Framework
+                        - name: Обзор правил производительности использования в .NET Framework
                           href: dotnet-framework-usage-performance-rules.md
                         - name: DA0001. Использование StringBuilder для объединений
                           href: da0001-use-stringbuilder-for-concatenations.md
@@ -216,7 +216,7 @@
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: Правила производительности памяти и подкачки
                       items:
-                        - name: Правила производительности памяти и подкачки
+                        - name: Обзор правил производительности памяти и подкачки
                           href: memory-and-paging-performance-rules.md
                         - name: DA0014. Исключительно высокая скорость подкачки активной памяти на диск
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
@@ -224,7 +224,7 @@
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: Правила использования средств профилирования
                       items:
-                        - name: Правила использования средств профилирования
+                        - name: Обзор правил использования средств профилирования
                           href: profiling-tools-usage-rules.md
                         - name: DA0002. Отсутствует файл VSPerfCorProf.dll
                           href: da0002-vsperfcorprof-dll-is-missing.md
@@ -242,7 +242,7 @@
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: Правила производительности отслеживания ресурсов
                       items:
-                        - name: Правила производительности отслеживания ресурсов
+                        - name: Обзор правил производительности отслеживания ресурсов
                           href: resource-monitoring-performance-rules.md
                         - name: DA0501. Средняя загрузка ЦП профилируемым процессом
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
@@ -258,13 +258,13 @@
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: Представления отчетов о производительности
               items:
-                - name: Представления отчетов о производительности
+                - name: Обзор представлений отчетов о производительности
                   href: performance-report-views.md
                 - name: Обзор отчета о производительности
                   href: performance-report-overview.md
                 - name: Представления общих данных
                   items:
-                    - name: Представления общих данных
+                    - name: Обзор представлений общих данных
                       href: common-data-views.md
                     - name: Представление "Процесс"
                       href: process-view.md
@@ -290,7 +290,7 @@
                       href: event-tracing-for-windows-etw-report.md
                 - name: Представления данных метода выборки профилировщика
                   items:
-                    - name: Представления данных метода выборки профилировщика
+                    - name: Обзор представлений данных метода выборки профилировщика
                       href: profiler-sampling-method-data-views.md
                     - name: "Представление \"Сводка\"\_— данные выборки"
                       href: summary-view-sampling-data.md
@@ -308,7 +308,7 @@
                       href: instruction-pointers-ips-view-sampling-data.md
                 - name: Представление данных метода инструментирования
                   items:
-                    - name: Представление данных метода инструментирования
+                    - name: Обзор представлений данных метода инструментирования
                       href: instrumentation-method-data-views.md
                     - name: "Представление \"Сводка\"\_— данные инструментирования"
                       href: summary-view-instrumentation-data.md
@@ -322,7 +322,7 @@
                       href: functions-view-instrumentation-data.md
                 - name: Представления данных в памяти .NET
                   items:
-                    - name: Представления данных в памяти .NET
+                    - name: Обзор представлений данных в памяти .NET
                       href: dotnet-memory-data-views.md
                     - name: "Представление \"Сводка\"\_— данные в памяти .NET"
                       href: summary-view-dotnet-memory-data.md
@@ -352,7 +352,7 @@
                       href: functions-view-dotnet-memory-instrumentation-data.md
                 - name: Представления данных о конфликтах ресурсов
                   items:
-                    - name: Представления данных о конфликтах ресурсов
+                    - name: Обзор представлений данных о конфликтах ресурсов
                       href: resource-contention-data-views.md
                     - name: "Представление \"Сводка\"\_— представление \"Состязание за ресурсы\""
                       href: summary-view-resource-contention-view.md
@@ -378,11 +378,11 @@
                       href: instruction-pointers-ips-view-contention-data.md
                 - name: Представления взаимодействия между уровнями
                   items:
-                    - name: Представления взаимодействия между уровнями
+                    - name: Обзор представлений взаимодействия между уровнями
                       href: tier-interaction-views.md
                     - name: '"Взаимодействие между уровнями" - представление'
                       href: tier-interactions-view.md
-            - name: Настройка представлений отчетов средств оценки производительности
+            - name: Настройка представлений
               items:
                 - name: Настройка представлений отчетов средств оценки производительности
                   href: customizing-performance-tools-report-views.md
@@ -400,7 +400,7 @@
                   href: how-to-filter-profiling-tools-report-views-to-display-just-my-code.md
         - name: Сравнение файлов данных о производительности
           items:
-            - name: Сравнение файлов данных о производительности
+            - name: Обзор сравнения файлов данных о производительности
               href: comparing-performance-data-files.md
             - name: Сравнение файлов данных о производительности
               href: how-to-compare-performance-data-files.md
@@ -408,7 +408,7 @@
           href: saving-symbol-information-with-performance-data-files.md
         - name: Сохранение и экспорт данных средств оценки производительности
           href: saving-and-exporting-performance-tools-data.md
-        - name: Использование средств профилирования из командной строки
+        - name: Средства профилирования в командной строке
           items:
             - name: Использование средств профилирования из командной строки
               href: using-the-profiling-tools-from-the-command-line.md
@@ -420,11 +420,11 @@
               href: using-profiling-methods-to-collect-performance-data-from-the-command-line.md
             - name: Добавление данных о взаимодействии уровней из командной строки
               href: adding-tier-interaction-data-from-the-command-line.md
-            - name: Профилирование автономных приложений из командной строки
+            - name: Автономные приложения
               items:
                 - name: Профилирование автономных приложений из командной строки
                   href: command-line-profiling-of-stand-alone-applications.md
-                - name: Сбор статистики по автономным приложениям с помощью командной строки профилировщика
+                - name: Сбор статистики приложения для автономных приложений
                   items:
                     - name: Сбор статистики по автономным приложениям с помощью командной строки профилировщика
                       href: collecting-application-statistics-for-stand-alone-applications.md
@@ -434,7 +434,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md
                     - name: Присоединение профилировщика к собственному автономному приложению и сбор статистики приложения с помощью командной строки
                       href: how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md
-                - name: Сбор подробных сведений о времени для автономного приложения с помощью командной строки профилировщика
+                - name: Сбор подробных сведений о времени для автономного приложения
                   items:
                     - name: Сбор подробных сведений о времени для автономного приложения с помощью командной строки профилировщика
                       href: collecting-detailed-timing-data-for-a-stand-alone-application.md
@@ -442,7 +442,7 @@
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md
                     - name: Инструментирование собственного автономного компонента и сбор данных о времени с помощью профилировщика из командной строки
                       href: how-to-instrument-a-native-component-and-collect-timing-data.md
-                - name: Сбор данных о параллелизме для автономных приложений с помощью командной строки профилировщика
+                - name: Сбор сведений о параллелизме для автономных приложений
                   items:
                     - name: Сбор данных о параллелизме для автономных приложений с помощью командной строки профилировщика
                       href: collecting-concurrency-data-for-stand-alone-applications.md
@@ -454,7 +454,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md
                     - name: Присоединение профилировщика к собственному автономному приложению и сбор данных о параллелизме при помощи командной строки
                       href: how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md
-                - name: Сбор данных памяти .NET Framework для автономных приложений с помощью командной строки профилировщика
+                - name: Сбор сведений о памяти .NET Framework для автономных приложений
                   items:
                     - name: Сбор данных памяти .NET Framework для автономных приложений с помощью командной строки профилировщика
                       href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
@@ -466,19 +466,19 @@
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
                 - name: Пошаговое руководство. Профилирование из командной строки с помощью метода выборки
                   href: walkthrough-command-line-profiling-using-sampling.md
-            - name: Профилирование веб-приложений ASP.NET из командной строки
+            - name: Веб-приложения ASP.NET
               items:
                 - name: Профилирование веб-приложений ASP.NET из командной строки
                   href: command-line-profiling-of-aspnet-web-applications.md
                 - name: Быстрое профилирование веб-сайтов с помощью средства VSPerfASPNETCmd
                   href: rapid-web-site-profiling-with-vsperfaspnetcmd.md
-                - name: Сбор статистики по веб-приложениям ASP.NET при помощи метода выборки профилировщика из командной строки
+                - name: Сбор статистики по веб-приложениям ASP.NET при помощи метода выборки профилировщика
                   items:
                     - name: Сбор статистики по веб-приложениям ASP.NET при помощи метода выборки профилировщика из командной строки
                       href: collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md
                     - name: Присоединение профилировщика к веб-приложению ASP.NET для сбора статистики приложения с помощью командной строки
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
-                - name: Сбор подробных данных о времени для веб-приложения ASP.NET с использованием метода инструментирования профилировщика из командной строки
+                - name: Сбор подробных данных о времени для веб-приложения ASP.NET с использованием метода инструментирования профилировщика
                   items:
                     - name: Сбор подробных данных о времени для веб-приложения ASP.NET с использованием метода инструментирования профилировщика из командной строки
                       href: collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md
@@ -486,13 +486,13 @@
                       href: how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md
                     - name: Инструментирование динамически скомпилированного веб-приложения ASP.NET и сбор профилировщиком подробных данных о времени с помощью командной строки
                       href: how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md
-                - name: Сбор данных о параллелизме для веб-приложений ASP.NET с помощью командной строки профилировщика
+                - name: Сбор данных о параллелизме для веб-приложений ASP.NET
                   items:
                     - name: Сбор данных о параллелизме для веб-приложений ASP.NET с помощью командной строки профилировщика
                       href: collecting-concurrency-data-for-an-aspnet-web-application.md
                     - name: Присоединение профилировщика к веб-приложению ASP.NET для сбора данных о параллелизме при помощи командной строки
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md
-                - name: Сбор данных об использовании памяти для веб-приложений ASP.NET с помощью командной строки профилировщика
+                - name: Сбор данных о памяти из веб-приложений ASP.NET
                   items:
                     - name: Сбор данных об использовании памяти для веб-приложений ASP.NET с помощью командной строки профилировщика
                       href: collecting-memory-data-from-an-aspnet-web-application.md
@@ -516,7 +516,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
                     - name: Присоединение профилировщика к собственной службе для сбора статистики приложения с помощью командной строки
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md
-                - name: Сбор подробных данных о времени для служб с использованием метода инструментирования из командной строки профилировщика
+                - name: Сбор подробных данных о времени для служб с использованием метода инструментирования
                   items:
                     - name: Сбор подробных данных о времени для служб с использованием метода инструментирования из командной строки профилировщика
                       href: collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md
@@ -524,7 +524,7 @@
                       href: how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
                     - name: Инструментирование собственной службы и сбор подробных данных об использовании времени с помощью командной строки профилировщика
                       href: how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
-                - name: Сбор данных р параллелизме для службы с помощью средств командной строки профилировщика
+                - name: Сбор данных параллелизма для службы
                   items:
                     - name: Сбор данных р параллелизме для службы с помощью средств командной строки профилировщика
                       href: collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md
@@ -532,7 +532,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md
                     - name: Присоединение профилировщика к собственной службе для сбора данных о параллелизме при помощи командной строки
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md
-                - name: 'Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика'
+                - name: Сбор данных памяти из служб .NET Framework
                   items:
                     - name: 'Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика'
                       href: collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md
@@ -542,7 +542,7 @@
                       href: how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md
             - name: Создание отчетов профилировщика из командной строки
               items:
-                - name: Создание отчетов профилировщика из командной строки
+                - name: Обзор создания отчетов профилировщика из командной строки
                   href: creating-profiler-reports-from-the-command-line.md
                 - name: Создание базовых отчетов профилирования из командной строки
                   href: creating-basic-profiling-reports-from-the-command-line.md
@@ -560,7 +560,7 @@
               href: how-to-install-the-stand-alone-profiler.md
             - name: Справочник по средствам профилирования из командной строки
               items:
-                - name: Справочник по средствам профилирования из командной строки
+                - name: Обзор справочника по средствам профилирования из командной строки
                   href: command-line-profiling-tools-reference.md
                 - name: VSInstr
                   href: vsinstr.md
@@ -638,11 +638,11 @@
           href: profiling-on-hpc-high-performance-computing-clusters.md
         - name: Интерфейсы API средств профилирования
           items:
-            - name: Интерфейсы API средств профилирования
+            - name: Обзор API средств профилирования
               href: profiling-tools-apis.md
             - name: Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)
               items:
-                - name: Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)
+                - name: Обзор справочника по API-интерфейсам профилировщика Visual Studio (машинный код)
                   href: visual-studio-profiler-api-reference-native.md
                 - name: CommentMarkAtProfile
                   href: commentmarkatprofile.md
@@ -670,7 +670,7 @@
           href: troubleshooting-performance-tools-issues.md
     - name: Визуализатор параллелизма
       items:
-        - name: Визуализатор параллелизма
+        - name: Обзор визуализатора параллелизма
           href: concurrency-visualizer.md
         - name: Общие шаблоны для неправильно работающих многопоточных приложений
           href: common-patterns-for-poorly-behaved-multithreaded-applications.md
@@ -678,7 +678,7 @@
           href: utilization-navigator.md
         - name: Представление использования
           items:
-            - name: Представление использования
+            - name: Обзор представления использования
               href: utilization-view.md
             - name: Граф использования ЦП
               href: cpu-utilization-graph.md
@@ -696,7 +696,7 @@
               href: gpu-activity-other-processes.md
         - name: Представление "Потоки" (параллельная производительность)
           items:
-            - name: Представление "Потоки" (параллельная производительность)
+            - name: Обзор представления "Потоки" (параллельная производительность)
               href: threads-view-parallel-performance.md
             - name: Отчет профиля времени блокировки
               href: blocking-time-profile-report.md
@@ -760,7 +760,7 @@
               href: zoom-control-threads-view.md
         - name: Представление "Ядра"
           items:
-            - name: Представление "Ядра"
+            - name: Обзор представления "Ядра"
               href: cores-view.md
             - name: Легенда представления "Ядра"
               href: cores-view-legend.md
@@ -774,7 +774,7 @@
           href: advanced-settings-dialog-box-concurrency-visualizer.md
         - name: Маркеры визуализатора параллелизма
           items:
-            - name: Маркеры визуализатора параллелизма
+            - name: Обзор маркеров визуализатора параллелизма
               href: concurrency-visualizer-markers.md
             - name: Маркеры флагов
               href: flag-markers.md
@@ -786,13 +786,13 @@
               href: visualizing-eventsource-events-as-markers.md
         - name: Пакет SDK визуализатора параллелизма
           items:
-            - name: Пакет SDK визуализатора параллелизма
+            - name: Обзор пакета SDK визуализатора параллелизма
               href: concurrency-visualizer-sdk.md
             - name: Использование пакета SDK визуализатора параллелизма для создания маркеров
               href: how-to-use-the-concurrency-visualizer-markers-sdk.md
             - name: Справочник по библиотеке C++
               items:
-                - name: Справочник по библиотеке C++
+                - name: Обзор справочника по библиотеке C++
                   href: cpp-library-reference.md
                 - name: Пространство имен Concurrency (визуализатор параллелизма)
                   items:
@@ -830,7 +830,7 @@
                           href: marker-importance-enumeration.md
             - name: Справочник по библиотеке C
               items:
-                - name: Справочник по библиотеке C
+                - name: Обзор справочника по библиотеке C
                   href: c-library-reference.md
                 - name: Функция CvCreateDefaultMarkerSeriesOfDefaultProvider
                   href: cvcreatedefaultmarkerseriesofdefaultprovider-function.md

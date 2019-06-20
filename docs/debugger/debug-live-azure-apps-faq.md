@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b76ad81a2c075a11ff55dcbd7fbc5e8a4b3fe7
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431850"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255991"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Вопросы и ответы по отладке моментальных снимков в Visual Studio
 
@@ -169,7 +169,7 @@ ms.locfileid: "66431850"
     - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
     > [!WARNING]
-    > Все изменения параметров приложения будет инициировать перезапуск приложения. Дополнительные сведения о параметрах приложения [здесь](https://docs.microsoft.com/azure/app-service/web-sites-configure#app-settings). 
+    > Все изменения параметров приложения будет инициировать перезапуск приложения. Дополнительные сведения о параметрах приложения см. в разделе [настроить приложение службы приложений на портале Azure](/azure/app-service/web-sites-configure).
 
 Для AKS:
 1. Обновление Dockerfile для удаления в разделах, соответствующих [отладчик моментальных снимков Visual Studio на образы Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
