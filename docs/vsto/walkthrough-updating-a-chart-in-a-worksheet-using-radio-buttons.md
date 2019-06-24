@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Обновление диаграммы на листе с помощью переключателей
+title: Обновление диаграммы на листе с помощью переключателей
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a827e688e260adcb93e81b55520c747dd99ed0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86e289ad8a316f7026d6fda46bb3e424164437fb
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421746"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67329017"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Пошаговое руководство. Обновление диаграммы на листе с помощью переключателей
   В этом пошаговом руководстве описываются основные принципы с помощью переключателей на лист Microsoft Office Excel, чтобы дать пользователю возможность быстро переключаться между вариантами. В этом случае параметры изменение стиля диаграммы.
@@ -93,7 +93,7 @@ ms.locfileid: "63421746"
 
 1. Создайте проект книги Excel с именем **Моя диаграмма Excel**. В мастере выберите **Копировать существующий документ**.
 
-     Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 2. Нажмите кнопку **Обзор** кнопку и перейдите к книге, созданную ранее в этом пошаговом руководстве.
 

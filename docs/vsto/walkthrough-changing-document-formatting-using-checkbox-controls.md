@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Изменение форматирования документа с использованием элементов управления CheckBox
+title: Изменение форматирования документа с использованием элементов управления CheckBox
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 284b7f501d729a89ff31ab9fee187d3f3e19d4b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24c3cb8d76551bb477f9c13cc56c313519f3b617
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982099"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328727"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Пошаговое руководство. Изменение форматирования документа с использованием элементов управления CheckBox
   В этом пошаговом руководстве демонстрируется использование элементов управления Windows Forms в настройке уровня документа для Microsoft Office Word для изменения форматирования текста.
@@ -52,7 +52,7 @@ ms.locfileid: "62982099"
 
 1. Создайте проект документа Word с именем **форматирование Word**. В мастере выберите **создания документа**.
 
-     Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio открывает новый документ Word в конструкторе и добавляет **форматирование Word** проект **обозревателе решений**.
 

@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Отображаемый текст в текстовом поле на листе с помощью кнопки
+title: Отображаемый текст в текстовом поле в лист с помощью кнопки
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f74eaa8618ce497a760754d084f390a4d1b8c1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436096"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328708"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Пошаговое руководство. Отображаемый текст в текстовом поле на листе с помощью кнопки
   В этом пошаговом руководстве описываются основные принципы использования кнопок и текстовых полей на листах Microsoft Office Excel и созданию проектов Excel, с помощью средств разработки Office в Visual Studio. Чтобы просмотреть результат в виде готового кода, см [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).
@@ -50,7 +50,7 @@ ms.locfileid: "63436096"
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1. Создайте проект книги Excel с именем **кнопка Excel**. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект книги Excel с именем **кнопка Excel**. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio открывает новую книгу Excel в конструкторе и добавляет **кнопка Excel** проект **обозревателе решений**.
 

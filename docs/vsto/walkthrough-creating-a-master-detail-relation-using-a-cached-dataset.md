@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создайте отношение основной/подробности, с помощью кэшированного набора данных
+title: Создание главного иерархического отношения с помощью кэшированного набора данных
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3380b9c5302ed6e8a1bf6965f5fb1f259e3a6682
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438554"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328355"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Пошаговое руководство. Создайте отношение основной/подробности, с помощью кэшированного набора данных
   В этом пошаговом руководстве демонстрируется создание иерархического отношения на листе и кэширование данных, решения можно использовать в автономном режиме.
@@ -54,7 +54,7 @@ ms.locfileid: "63438554"
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1. Создайте проект книги Excel с именем **Мой основной / подробности**, с помощью Visual Basic или C#. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект книги Excel с именем **Мой основной / подробности**, с помощью Visual Basic или C#. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
    Visual Studio открывает новую книгу Excel в конструкторе и добавляет **Мой основной / подробности** проект **обозревателе решений**.
 
