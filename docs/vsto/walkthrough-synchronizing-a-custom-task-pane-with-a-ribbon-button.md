@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Синхронизация настраиваемой области задач с кнопкой на ленте
+title: Синхронизация настраиваемой области задач с кнопкой ленты
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb74c56536a749629def4654f90206808e3b87e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443969"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328334"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Пошаговое руководство. Синхронизация настраиваемой области задач с кнопкой на ленте
   В этом пошаговом руководстве демонстрируется создание настраиваемой области задач, пользователи могут скрывать и отображать, щелкая выключатель на ленте. Рекомендуется всегда создавать элемент пользовательского интерфейса, например кнопку, который пользователи могут нажать для отображения или скрытия настраиваемой области задач. Это необходимо по той причине, что приложения Microsoft Office не имеют встроенных средств для отображения и скрытия настраиваемых областей задач.
@@ -60,7 +60,7 @@ ms.locfileid: "63443969"
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1. Создайте проект надстройки Excel с именем **SynchronizeTaskPaneAndRibbon**с помощью шаблона проекта надстройки Excel. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект надстройки Excel с именем **SynchronizeTaskPaneAndRibbon**с помощью шаблона проекта надстройки Excel. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] откроет файл с исходным кодом **ThisAddIn.cs** или **ThisAddIn.vb** и добавит проект **SynchronizeTaskPaneAndRibbon** в **обозреватель решений**.
 
@@ -71,7 +71,7 @@ ms.locfileid: "63443969"
 
 1. В меню **Проект** выберите пункт **Добавить новый элемент**.
 
-2. В диалоговом окне **Добавление нового элемента** выберите элемент **Лента (визуальный конструктор)**.
+2. В диалоговом окне **Добавление нового элемента** выберите элемент **Лента (визуальный конструктор)** .
 
 3. Измените имя новой ленты на **ManageTaskPaneRibbon**и нажмите кнопку **Добавить**.
 

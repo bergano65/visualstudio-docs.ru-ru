@@ -7,12 +7,12 @@ author: madskristensen
 ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9136268bf1bfb7ccebf79de035fb19f40223002
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3075ca5092dd1b8a69aa4b34c0e507505cf7123
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324702"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309682"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Практическое руководство. Использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio
 
@@ -140,6 +140,10 @@ Visual Studio позволяет загружать пакеты VSPackage, пр
 |ActiveProjectCapability:\<выражение >|Термин имеет значение true, если указанного выражения совпадает с возможности активного проекта. Выражение может быть нечто вроде VB &#124; CSharp.|
 |SolutionHasProjectCapability:\<выражение >|Аналогично выше, но условие равно true, если решение содержит любой загруженный проект, который соответствует выражению.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|Термин будет иметь значение true, каждый раз, когда решение содержит проект, который является flavored (Сводное) и у flavor, идентификатор GUID типа проекта для данного сопоставления.|
+|ProjectAddedItem:\<шаблон >| Термин имеет значение true, при добавлении файла, соответствующего «pattern» в проекте в soluion, в котором открыт.|
+|ActiveProjectOutputType:\<outputType>|Термин имеет значение true при выводе тип для активного проекта, обеспечивающее точное совпадение.  OutputType может быть целым числом или <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE> типа.|
+|ActiveProjectBuildProperty:\<buildProperty>=\<regex>|Термин имеет значение true, если активный проект имеет свойство указанной сборки, а значение свойства соответствует к предоставлен фильтр регулярных выражений. Ссылаться на [сохранение данных в файлах проекта MSBuild](internals/persisting-data-in-the-msbuild-project-file.md) для получения дополнительных сведений о свойства сборки.|
+|SolutionHasProjectBuildProperty:\<buildProperty>=\<regex>|Термин имеет значение true, если решение содержит проект загружен в свойстве указанной сборки, а значение свойства соответствует к предоставлен фильтр регулярных выражений.|
 
 ## <a name="compatibility-with-cross-version-extension"></a>Совместимость с разными версиями расширения
 

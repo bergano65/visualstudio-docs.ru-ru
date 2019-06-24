@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Отображаемый текст в текстовом поле документа с помощью кнопки
+title: Отображаемый текст в текстовом поле в документе, с помощью кнопки
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443828"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328755"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Пошаговое руководство. Отображаемый текст в текстовом поле документа с помощью кнопки
   В этом пошаговом руководстве демонстрируется использование кнопок и текстовых полей в настройке уровня документа для Microsoft Office Word.
@@ -46,7 +46,7 @@ ms.locfileid: "63443828"
 
 1. Создайте проект документа Word с именем **Моя кнопка Word**. В мастере выберите **создания документа**.
 
-     Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio открывает новый документ Word в конструкторе и добавляет **Моя кнопка Word** проект **обозревателе решений**.
 

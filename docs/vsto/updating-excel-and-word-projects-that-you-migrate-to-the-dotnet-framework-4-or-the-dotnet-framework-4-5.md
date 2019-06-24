@@ -1,5 +1,5 @@
 ---
-title: Обновление проектов Excel и Word, которые переносятся на .NET Framework 4 или .NET Framework 4.5
+title: Обновление Excel или Word проект перенесен на .NET Framework 4 или 4.5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fd80f4a72151fdebb3f0445024963a65db981e63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: afbfcf5cf9c3bbb02d4034251c7a3836056e314c
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436476"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67329018"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Обновление проектов Excel и Word, которые переносятся на .NET Framework 4 или .NET Framework 4.5
   Если у вас есть проект Excel или Word, в котором используется любой из следующих компонентов, необходимо изменить код, если целевая версия .NET Framework меняется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю:

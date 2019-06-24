@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Изменение форматирования листа с использованием элементов управления CheckBox
+title: Изменение форматирования листа с использованием элементов управления CheckBox
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438617"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328703"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Пошаговое руководство. Изменение форматирования листа с использованием элементов управления CheckBox
   В этом пошаговом руководстве описываются основные принципы использования флажков на листе Microsoft Office Excel для изменения форматирования. Будет использовать средства разработки Office в Visual Studio для создания и добавления кода в проект. Чтобы просмотреть результат в виде готового кода, см [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).
@@ -49,7 +49,7 @@ ms.locfileid: "63438617"
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1. Создайте проект книги Excel с именем **форматирование Excel**. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект книги Excel с именем **форматирование Excel**. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio открывает новую книгу Excel в конструкторе и добавляет **форматирование Excel** проект **обозревателе решений**.
 
