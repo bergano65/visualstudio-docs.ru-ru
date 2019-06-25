@@ -4,9 +4,7 @@ description: Узнайте, как настроить роли для обла�
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
@@ -50,8 +48,6 @@ ms.locfileid: "62552450"
 
     > [!IMPORTANT]
     > При выборе конкретной конфигурации службы некоторые ее свойства будут отключены, так как их можно задать только для всех конфигураций. Чтобы изменить эти свойства, выберите пункт **Все конфигурации**.
-    >
-    >
 
     ![Список конфигураций службы для облачной службы Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
