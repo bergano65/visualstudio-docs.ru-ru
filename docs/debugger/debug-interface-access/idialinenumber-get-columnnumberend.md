@@ -1,18 +1,17 @@
 ---
 title: IDiaLineNumber::get_columnNumberEnd | Документация Майкрософт
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaLineNumber::get_columnNumberEnd method
 ms.assetid: 02fa56c1-87b6-405a-adee-3bb6bc62de2d
-caps.latest.revision: 11
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+ms.workload:
+- multiple
 ms.openlocfilehash: 567df436093b53432e44e21fb96f0d092b71c81d
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
@@ -21,27 +20,26 @@ ms.lasthandoff: 04/23/2019
 ms.locfileid: "62839853"
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Получает номер столбца источника от единицы, которой заканчивается выражения или оператора.
 
-Получает номер столбца источника от единицы, которой заканчивается выражения или оператора.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp#  
-HRESULT get_columnNumberEnd (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает номер столбца, в которой заканчивается выражения или оператора. Если значение равно нулю, сведения о столбце окончания отсутствует.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Значение столбца, возвращаемого этим методом является байтовое смещение в строку в позицию после последнего символа в строке инструкции.  
-  
-## <a name="see-also"></a>См. также  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_columnNumberEnd ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает номер столбца, в которой заканчивается выражения или оператора. Если значение равно нулю, сведения о столбце окончания отсутствует.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Значение столбца, возвращаемого этим методом является байтовое смещение в строку в позицию после последнего символа в строке инструкции.
+
+## <a name="see-also"></a>См. также
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
