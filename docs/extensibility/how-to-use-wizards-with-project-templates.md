@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3831cbc484fde7c61dbe1baf5ecd9ab07556a7f5
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352044"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342418"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Практическое руководство. Использование мастеров для шаблонов проектов
 
@@ -68,7 +68,7 @@ Visual Studio предоставляет <xref:Microsoft.VisualStudio.TemplateWi
 
 3. Добавьте сборку как ресурс проекта VSIX. Откройте *source.extension.vsixmanifest* файл и выберите **активы** вкладки. В **добавить новый актив** окне для **тип** выберите **Microsoft.VisualStudio.Assembly**, для **источника** выберите **A проект в текущем решении**, а также для **проекта** выберите **MyProjectWizard**.
 
-4. Добавьте следующие ссылки в проект VSIX. (В **обозревателе решений**, в узле проекта VSIX, выберите **ссылки**, щелкните правой кнопкой мыши и выберите **добавить ссылку**.) В **добавить ссылку** диалоговое окно, в **Framework** вкладке, найти **System.Windows Forms** сборки и выберите его. Теперь выберите **расширения** вкладки. Найти **EnvDTE** сборки и выберите его. Также найти **Microsoft.VisualStudio.TemplateWizardInterface** сборки и выберите его. Нажмите кнопку **ОК**.
+4. Добавьте следующие ссылки в проект VSIX. (В **обозревателе решений**, в узле проекта VSIX, выберите **ссылки**, щелкните правой кнопкой мыши и выберите **добавить ссылку**.) В **добавить ссылку** диалоговое окно, в **Framework** вкладке, найти **System.Windows Forms** сборки и выберите его. Кроме того, найдите и выберите **системы** и **System.Drawing** сборок. Теперь выберите **расширения** вкладки. Найти **EnvDTE** сборки и выберите его. Также найти **Microsoft.VisualStudio.TemplateWizardInterface** сборки и выберите его. Нажмите кнопку **ОК**.
 
 5. Добавьте класс для реализации мастера в проект VSIX. (В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта VSIX и выберите **добавить**, затем **новый элемент**, затем **класс**.) Назовите класс **WizardImplementation**.
 
@@ -157,7 +157,7 @@ Visual Studio предоставляет <xref:Microsoft.VisualStudio.TemplateWi
 
    - <xref:System.Object> Массив, содержащий набор параметров передано мастера с помощью Visual Studio.
 
-     В этом примере значение параметра из пользовательской формы ввода для <xref:System.Collections.Generic.Dictionary%602> параметра. Каждый экземпляр `$custommessage$` параметр в проекте будут заменены на текст, введенный пользователем. Добавьте следующие сборки в проект: **Система** и **System.Drawing**.
+     В этом примере значение параметра из пользовательской формы ввода для <xref:System.Collections.Generic.Dictionary%602> параметра. Каждый экземпляр `$custommessage$` параметр в проекте будут заменены на текст, введенный пользователем.
 
 7. Теперь создайте **UserInputForm**. В *WizardImplementation.cs* добавьте следующий код в конце `WizardImplementation` класса.
 
