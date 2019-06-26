@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980193"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309813"
 ---
 # <a name="overview-report-a-problem"></a>Общие сведения: Сообщение о проблеме
 
@@ -80,7 +80,7 @@ ms.locfileid: "62980193"
 
 - - -
 
-![Состояние "Закрыто — не ошибка" для отчета о проблеме в сообществе разработчиков](../ide/media/ProblemStates/ClosedNotaBug.jpg)
+![Состояние "Закрыто — не ошибка" для отчета о проблеме в сообществе разработчиков](../ide/media/ProblemStates/ClosedNotABug.jpg)
 
 Состояние **Закрыто — не ошибка** указывает, что описанные функции предусмотрены проектом.
 
