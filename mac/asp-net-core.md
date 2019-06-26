@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53fd740d8a32954de566ab7d383004e4f503ca2c
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985612"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258900"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Начало работы с ASP.NET Core
 
@@ -236,7 +236,7 @@ ms.locfileid: "62985612"
 
 Это руководство содержит вводные сведения о платформе ASP.NET Core. Он описывает, что это такое, когда ее можно использовать и как работать с ней в Visual Studio для Mac.
 Дополнительные сведения о дальнейших действиях см. в следующих руководствах:
-- Документы по [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
+- Документы по [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc).
 - [Создание серверных служб для собственных мобильных приложений](/aspnet/core/mobile/native-mobile-backend), где описано, как создать службу REST с помощью ASP.NET Core для приложения Xamarin.Forms.
 - [Практическая лабораторная работа ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 
