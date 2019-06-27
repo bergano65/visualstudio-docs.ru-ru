@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf482d5ae90894e66e790423b514cc349701f8
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900552"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67399022"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce и технология Authenticode
 *Authenticode* — это технология Майкрософт, которая использует шифрование по отраслевому стандарту для подписания кода приложения цифровыми сертификатами, которые удостоверяют подлинность издателя приложения. Используя Authenticode для развертывания приложения, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] снижает риск заражения программой-трояном. Программа-троян — это вирус или другая вредоносная программа, которые злоумышленник представляет как легальную программу, исходящую из авторитетного и заслуживающего доверия источника. Подписание развертываний [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с помощью цифрового сертификата — это необязательный шаг, позволяющий убедиться, что сборки и файлы не были изменены.
@@ -33,7 +33,7 @@ ms.locfileid: "62900552"
 ## <a name="authenticode-and-code-signing"></a>Authenticode и подписывание кода
  *Цифровой сертификат* — это файл, содержащий пару из открытого и закрытого криптографических ключей вместе с метаданными, описывающими издателя, которому был выдан сертификат, и агентство, выдавшее сертификат.
 
- Существуют различные типы сертификатов Authenticode. Каждый из них настроен для разных типов подписывания. Для приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] требуется сертификат Authenticode, пригодный для подписания кода. Если попытаться войти приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с помощью другого типа сертификата, например цифрового сертификата электронной почты, он не будет работать. Дополнительные сведения см. в разделе [Знакомство с подписыванием кода](http://go.microsoft.com/fwlink/?LinkId=179452).
+ Существуют различные типы сертификатов Authenticode. Каждый из них настроен для разных типов подписывания. Для приложений [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] требуется сертификат Authenticode, пригодный для подписания кода. Если попытаться войти приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] с помощью другого типа сертификата, например цифрового сертификата электронной почты, он не будет работать. Дополнительные сведения см. в разделе [Знакомство с подписыванием кода](https://docs.microsoft.com/windows/desktop/seccrypto/cryptography-tools).
 
  Сертификат для подписывания кода можно получить одним из трех способов:
 
