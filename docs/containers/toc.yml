@@ -30,5 +30,15 @@
           href: view-and-diagnose-containers.md
         - name: Настройка инструментов для контейнеров
           href: container-tools-configure.md
+        - name: Запуск модульных тестов
+          href: container-unit-testing.md
+    - name: Основные понятия
+      items:
+        - name: Создание контейнерных приложений
+          href: container-build.md
     - name: Устранение неполадок
       href: troubleshooting-docker-errors.md
+    - name: Ссылка
+      items:
+        - name: Свойства MSBuild для проектов контейнеров
+          href: container-msbuild-properties.md
