@@ -5,6 +5,7 @@
 ## [Установка и использование в среде, защищенной брандмауэром или прокси-сервером](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 ## [Установка предварительной версии](/visualstudio/mac/install-preview)
 ## [Обновление](/visualstudio/mac/update)
+## [Обновление до Visual Studio 2019 для Mac](/visualstudio/mac/update-vsmac-8.0)
 ## [Удаление](/visualstudio/mac/uninstall)
 
 # [Учетные записи пользователей](/visualstudio/mac/user-accounts)
