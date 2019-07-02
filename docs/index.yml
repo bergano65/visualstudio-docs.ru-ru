@@ -8,12 +8,12 @@ metadata:
   description: Узнайте, как с помощью Visual Studio разрабатывать приложения, службы и инструменты для любых платформ и устройств на вашем языке программирования.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
+  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/07/2019
-  ms.locfileid: "66462866"
+  ms.lasthandoff: 07/01/2019
+  ms.locfileid: "67493714"
 highlightedContent:
   items:
   - title: Настройка и установка
@@ -161,21 +161,48 @@ additionalContent:
   - title: Рабочие нагрузки
     items:
     - title: Веб и облако
-      summary: "[Веб-разработка](/aspnet/) </br>\n[Разработка и управление в Azure](azure/index.yml) </br>\n[Python](python/index.yml) </br>\n[Node.js](javascript/index.yml) </br>\n[Хранение и обработка данных](data-tools/index.md) </br>\n[Обработка и анализ данных](python/data-science-and-analytical-applications-workload.md) </br>\n[Разработка для Office и Sharepoint](https://developer.microsoft.com/office/docs) \n"
+      links:
+      - text: Веб-разработка
+        url: /aspnet/
+      - text: Разработка и управление в Azure
+        url: /visualstudio/azure
+      - text: Python
+        url: /visualstudio/python
+      - text: Node.js
+        url: /visualstudio/javascript
+      - text: Хранение и обработка данных
+        url: data-tools/index.md
+      - text: Обработка и анализ данных
+        url: python/data-science-and-analytical-applications-workload.md
+      - text: Разработка для Office и Sharepoint
+        url: https://developer.microsoft.com/office/docs
     - title: Windows
-      summary: >
-        [Разработка классических приложений на .NET](/dotnet/framework/develop-client-apps) </br>
-
-        [Разработка на универсальной платформе Windows](cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) </br>
-
-        [Разработка для Windows на C++](/cpp/windows/desktop-applications-visual-cpp)
+      links:
+      - text: Разработка классических приложений .NET
+        url: /dotnet/framework/develop-client-apps
+      - text: Разработка на универсальной платформе Windows
+        url: cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
+      - text: Разработка для Windows на C++
+        url: /cpp/windows/desktop-applications-visual-cpp
     - title: Мобильные приложения и игры
-      summary: "[Разработка мобильных приложений на .NET (Xamarin)](/xamarin/) </br>\n[Разработка игр с помощью Unity](cross-platform/visual-studio-tools-for-unity.md) </br>\n[Разработка мобильных приложений на JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (только Visual Studio 2017 и 2015) </br>\n[Разработка мобильных приложений на языке C++](/visualstudio/cross-platform/) </br>\n[Разработка игр на языке C++](/windows/uwp/gaming/e2e) \n"
+      links:
+      - text: Разработка мобильных приложений на .NET (Xamarin)
+        url: /xamarin/
+      - text: Разработка игр с помощью Unity
+        url: cross-platform/visual-studio-tools-for-unity.md
+      - text: Разработка мобильных приложений на языке JavaScript
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
+        note: (Visual Studio 2017 and 2015 only)
+      - text: Разработка мобильных приложений на C++
+        url: /visualstudio/cross-platform/
+      - text: Разработка игр на C++
+        url: /windows/uwp/gaming/e2e
     - title: Другие наборы инструментов
-      summary: >
-        [Разработка расширений Visual Studio](extensibility/index.md) </br>
-
-        [Разработка для Linux на C++](/cpp/linux/) </br>
-
-        [Кроссплатформенная разработка .NET Core](/dotnet/core/)
+      links:
+      - text: Разработка расширений Visual Studio
+        url: extensibility/index.md
+      - text: Разработка приложений для Linux на C++
+        url: /cpp/linux/
+      - text: Кроссплатформенная разработка .NET Core
+        url: /dotnet/core/
   footer: '[Блоги](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Сообщение о проблемах](ide/talk-to-us.md) - [Сообщество разработчиков](https://developercommunity.visualstudio.com/spaces/8/index.html)'

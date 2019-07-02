@@ -377,14 +377,20 @@
                       href: ide/reference/convert-foreach-linq.md
                     - name: Преобразование запроса LINQ в оператор foreach
                       href: ide/reference/convert-linq-to-foreach.md
+                    - name: Преобразование инструкции switch в выражение switch
+                      href: ide/reference/convert-switch-statement-to-switch-expression.md
                     - name: Инкапсуляция поля
                       href: ide/reference/encapsulate-field.md
                     - name: Извлечение интерфейса
                       href: ide/reference/extract-interface.md
                     - name: Извлечение метода
                       href: ide/reference/extract-method.md
+                    - name: Создание параметра
+                      href: ide/reference/generate-parameter.md
                     - name: Встроенная временная переменная
                       href: ide/reference/inline-temporary-variable.md
+                    - name: Завершение IntelliSense для неимпортируемых типов
+                      href: ide/reference/intellisense-completion-unimported-types.md
                     - name: Инверсия условных выражений и логических операций
                       href: ide/reference/invert-conditional-logical.md
                     - name: Инвертирование инструкции if
@@ -393,6 +399,8 @@
                       href: ide/reference/move-declaration-near-reference.md
                     - name: Перемещение типа в соответствующий файл
                       href: ide/reference/move-type-to-matching-file.md
+                    - name: Перемещение типа в пространство имен
+                      href: ide/reference/move-type-to-namespace.md
                     - name: Подъем элемента в иерархии
                       href: ide/reference/pull-members-up.md
                     - name: Завершение регулярного выражения через IntelliSense
@@ -401,6 +409,8 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: Переименовать
                       href: ide/reference/rename.md
+                    - name: Сортировка директив using
+                      href: ide/reference/sort-usings.md
                     - name: Разбиение и объединение операторов If
                       href: ide/reference/split-or-merge-if-statement.md
                     - name: Синхронизация пространства имен и имени папки
@@ -470,10 +480,16 @@
                 - name: Использование файлов EditorConfig для стиля кода
                   displayName: Configure code style analyzers
                   href: ide/create-portable-custom-editor-options.md
-                - name: Соглашения по оформлению и написанию кода на .NET
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: Соглашения об именовании .NET
-                  href: ide/editorconfig-naming-conventions.md
+                - name: Соглашения о написании кода на .NET
+                  items:
+                    - name: Обзор
+                      href: ide/editorconfig-code-style-settings-reference.md
+                    - name: Языковые соглашения
+                      href: ide/editorconfig-language-conventions.md
+                    - name: Соглашения по форматированию
+                      href: ide/editorconfig-formatting-conventions.md
+                    - name: Соглашения об именах
+                      href: ide/editorconfig-naming-conventions.md
             - name: Настройка полосы прокрутки
               href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
             - name: Установка закладок в коде

@@ -1,6 +1,6 @@
 ---
 title: Аннотация структур и классов
-ms.date: 11/04/2016
+ms.date: 06/28/2019
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -24,14 +24,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: fa459e3461ef5e58eb1e5b0c675c7e1b408d6f88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571424"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493634"
 ---
 # <a name="annotating-structs-and-classes"></a>Аннотация структур и классов
+
 Вы можете добавить примечание к структурам и членам классов, используя примечания, которые действуют как инварианты — предполагается, что они будут выполнены в любом вызове функции или функции входа и выхода, которая содержит включающую структуру в качестве значения параметров или результатов.
 
 ## <a name="struct-and-class-annotations"></a>Структура и класс заметки
@@ -75,6 +76,39 @@ ms.locfileid: "62571424"
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
     ```
+
+## <a name="example"></a>Пример
+
+```cpp
+#include <sal.h>
+// For FIELD_OFFSET macro
+#include <windows.h>
+
+// This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
+_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+struct MyBuffer
+{
+    static int MaxBufferSize;
+    
+    _Field_z_
+    const char* name;
+    
+    int firstField;
+
+    // ... other fields
+
+    _Field_range_(1, MaxBufferSize)
+    int bufferSize;
+    _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
+    int buffer[0];
+};
+```
+
+Примечания в этом примере:
+
+- `_Field_z_` равно `_Null_terminated_`.  `_Field_z_` для имени поля указывает, что в поле имени строку, завершающуюся символом null.
+- `_Field_range_` для `bufferSize` указывает, что значение `bufferSize` не может превышать 1 и `MaxBufferSize` (оба числа включительно).
+- Конечные результаты из `_Struct_size_bytes_` и `_Field_size_` заметки являются эквивалентными. Для структур или классов, которые имеют аналогичный макет `_Field_size_` проще читать и обслуживать, так как она содержит меньшее число ссылок и вычислений, чем эквивалент `_Struct_size_bytes_` заметки. `_Field_size_` не требует преобразования в размер в байтах. Если размер в байтах является единственным параметром, например, для поля указателя типа void, `_Field_size_bytes_` может использоваться. Если оба `_Struct_size_bytes_` и `_Field_size_` существует, оба будут доступны для средства. Возлагается средство что делать, если две заметки не согласен.
 
 ## <a name="see-also"></a>См. также
 
