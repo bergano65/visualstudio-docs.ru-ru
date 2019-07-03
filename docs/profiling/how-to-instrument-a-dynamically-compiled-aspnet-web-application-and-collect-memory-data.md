@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Инструментирование динамически скомпилированного веб-приложения ASP.NET и сбор данных по использованию памяти с помощью командной строки профилировщика | Документация Майкрософт
+title: Командная строка Profiler. Инструментирование динамического приложения ASP.NET и получение данных об использовании памяти
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 172f4a367aa520ebd0fac62d25007713c47e5801
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f784807a99c288663bee381bfc1e481dd9d5d8e4
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386276"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031989"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Как выполнить Инструментирование динамически скомпилированного веб-приложения ASP.NET и сбор данных об использовании памяти с помощью командной строки профилировщика
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Практическое руководство. Инструментирование динамически скомпилированного веб-приложения ASP.NET и сбор данных об использовании памяти с помощью командной строки профилировщика
 В этом разделе описывается использование программ командной строки Средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] для сбора подробных сведений о времени существования объектов и выделении памяти .NET для динамически скомпилированного веб-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] с помощью метода профилирования с инструментированием.
 
 > [!NOTE]
@@ -39,7 +39,7 @@ ms.locfileid: "63386276"
 
      **VSPerfClrEnv /globaltracegc**
 
-     - или -
+     -или-
 
      **VSPerfClrEnv /globaltracegclife**
 
@@ -66,9 +66,9 @@ ms.locfileid: "63386276"
    > [!NOTE]
    > Параметры **/user** и **/crosssession** обычно являются обязательными для приложений ASP.NET.
 
-   | Параметр | Описание |
+   | Параметр | ОПИСАНИЕ |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Задает необязательный домен и имя пользователя учетной записи, которая является владельцем рабочего процесса [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от вошедшего в систему. Имя указано в столбце **Имя пользователя** на вкладке **Процессы** диспетчера задач Windows. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Задает необязательный домен и имя пользователя учетной записи, которая является владельцем рабочего процесса [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Этот параметр является обязательным, если процесс выполняется от имени пользователя, отличного от вошедшего в систему. Имя указано в столбце **Имя пользователя** на вкладке **Процессы** диспетчера задач Windows. |
    | [/crossession](../profiling/crosssession.md) | Включает профилирование процессов в других сеансах. Этот параметр является обязательным, если приложение выполняется в другом сеансе. Идентификатор сеанса указан в столбце **Идентификатор сеанса** на вкладке **Процессы** диспетчера задач Windows. **/CS** можно указать как краткую версию **/crosssession**. |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | Запускает профилировщик в состоянии приостановки сбора данных. Используйте параметр [/globalon](../profiling/globalon-and-globaloff.md) для возобновления профилирования. |
    | [/counter](../profiling/counter.md) **:** `Config` | Собирает данные из счетчика производительности процессора, указанного в `Config`. Сведения счетчика добавляются в данные, собранные для каждого события профилирования. |
@@ -85,11 +85,11 @@ ms.locfileid: "63386276"
 
 - Следующие пары параметров запускают и останавливают сбор данных. Каждый параметр необходимо указывать в отдельной командной строке. Сбор данных можно включать и отключать несколько раз.
 
-    |Параметр|Описание|
+    |Параметр|ОПИСАНИЕ|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает (**/globalon**) или останавливает (**/globaloff**) сбор данных для всех процессов.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает (**/processon**) или останавливает (**/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Запускает (**/threadon**) или останавливает (**/threadoff**) сбор данных для потока с указанным идентификатором потока (`TID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Запускает ( **/globalon**) или останавливает ( **/globaloff**) сбор данных для всех процессов.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Запускает ( **/processon**) или останавливает ( **/processoff**) сбор данных для процесса с указанным идентификатором процесса (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Запускает ( **/threadon**) или останавливает ( **/threadoff**) сбор данных для потока с указанным идентификатором потока (`TID`).|
 
 - Можно также использовать параметр **VSPerfCmd.exe**[/mark](../profiling/mark.md) для добавления метки профилирования в файл данных. Команда **/mark** добавляет идентификатор, метку времени и необязательную определяемую пользователем текстовую строку. Метки можно использовать для фильтрации данных в представлениях отчетов и данных профилировщика.
 

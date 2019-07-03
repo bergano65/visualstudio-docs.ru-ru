@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976238"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328832"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
@@ -90,7 +90,7 @@ ms.locfileid: "65976238"
 
 Вы также можете сохранять наборы исправлений как профили. Например, если у вас есть небольшой набор целевых исправлений, которые часто применяются при написании кода, а также другой полный набор исправлений, которые применяются перед проверкой кода, вы можете настроить разные профили для решения этих задач.
 
-   ![Снимок экрана: новое средство очистки кода в Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Снимок экрана: средство настройки очистки кода в Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>Отрисовка, учитывающая параметры монитора (PMA)
 

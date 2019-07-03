@@ -1,5 +1,5 @@
 ---
-title: Обзор возможностей развертывания
+title: Первое знакомство с развертыванием
 description: Сведения о вариантах развертывания приложений из среды Visual Studio.
 ms.custom: mvc
 ms.date: 01/29/2019
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261975"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032552"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Знакомство с возможностями развертывания в Visual Studio
 
@@ -120,6 +120,16 @@ ms.locfileid: "66261975"
 ## <a name="continuous-deployment"></a>Непрерывное развертывание
 
 Для непрерывного развертывания приложения можно использовать Azure Pipelines. Дополнительные сведения см. в статьях [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) и [Развертывание в Azure](/azure/devops/deploy-azure/index?view=vsts).
+
+## <a name="deploy-a-sql-database"></a>Развертывание базы данных SQL
+
+- [Изменение целевой платформы и публикация проекта базы данных (SQL Server Data Tools (SSDT))](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
+
+- [Развертывание проекта Analysis Services (SQL Server Analysis Services)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
+
+- [Развертывание проектов и пакетов Integration Services (MSSQL Integration Services)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+
+- [Создание и развертывание в локальной базе данных](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>Развертывания приложений других типов
 

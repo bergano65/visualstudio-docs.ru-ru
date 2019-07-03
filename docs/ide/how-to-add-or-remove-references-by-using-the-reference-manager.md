@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745815"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160159"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Практическое руководство. Добавление и удаление ссылок с помощью диспетчера ссылок
 
@@ -92,7 +92,7 @@ ms.locfileid: "66745815"
 
 - Компонент, использующий новую версию платформы, не совместим с проектом, нацеленным на более раннюю версию платформы.
 
-   Сведения об изменении целевой версии платформы для проекта см. в разделе [Практическое руководство. Определение целевой версии платформы](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Сведения об изменении целевой версии платформы для проекта см. в статье [Общие сведения о настройке для платформы](visual-studio-multi-targeting-overview.md).
 
 - Компонент, использующий .NET Framework 4, несовместим с проектом, нацеленным на .NET Framework 4.5.
 

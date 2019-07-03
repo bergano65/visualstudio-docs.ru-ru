@@ -1,5 +1,5 @@
 ---
-title: Сбор подробных данных по времени для служб с использованием метода инструментирования из командной строки профилировщика | Документы Майкрософт
+title: Командная строка Profiler. Инструментирование для получения сведений о времени для службы
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6144ee367e7cf53ceb901bfe65cce9999f1e4680
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9271974857da4fffa7d053afdb2b160fb72ede4
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949074"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033046"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Сбор подробных данных о времени для служб с использованием метода инструментирования из командной строки профилировщика
 В этом разделе описываются процедуры и параметры сбора подробных данных по производительности для служб Windows с помощью метода инструментирования из командной строки.

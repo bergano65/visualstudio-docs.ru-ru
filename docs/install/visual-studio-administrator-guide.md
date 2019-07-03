@@ -2,7 +2,7 @@
 title: Руководство администратора Visual Studio
 titleSuffix: ''
 description: Дополнительные сведения о способах развертывания Visual Studio в корпоративной среде.
-ms.date: 05/22/2019
+ms.date: 06/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037494"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328785"
 ---
 # <a name="visual-studio-administrator-guide"></a>Руководство администратора Visual Studio
 
@@ -40,7 +40,7 @@ ms.locfileid: "66037494"
 
 * Определите потребности обслуживания.
 
-  Если организации требуется подольше оставаться на определенном наборе функций, но также нужно получать регулярные обновления обслуживания, следует использовать план обслуживания. Дополнительные сведения см. в разделе ***Варианты поддержки для клиентов Enterprise и Professional*** в разделе [Жизненный цикл и обслуживание продукта Visual Studio ](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
+  Если организации требуется подольше оставаться на определенном наборе функций, но также нужно получать регулярные обновления обслуживания, следует использовать план обслуживания. Дополнительные сведения см. в разделе ***Support options for Enterprise and Professional customers*** (Варианты поддержки для клиентов Enterprise и Professional) статьи [Visual Studio Product Lifecycle and Servicing](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) (Жизненный цикл и обслуживание продукта Visual Studio ), а также в статье [Обновление Visual Studio во время обслуживания](update-servicing-baseline.md).
 
   Если вы планируете применять обновления вместе с накопительным пакетом обновлений, вы можете обойтись последними обновлениями.
 
@@ -62,7 +62,7 @@ ms.locfileid: "66037494"
 
 * Определите потребности обслуживания.
 
-  Если организации требуется подольше оставаться на определенном наборе функций, но также нужно получать регулярные обновления обслуживания, следует использовать план обслуживания. Дополнительные сведения см. в разделе ***Варианты поддержки для более старых версий Visual Studio*** в разделе [Жизненный цикл и обслуживание продукта Visual Studio ](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio).
+  Если организации требуется подольше оставаться на определенном наборе функций, но также нужно получать регулярные обновления обслуживания, следует использовать план обслуживания. Дополнительные сведения см. в разделе ***Support for older versions of Visual Studio*** (Поддержка предыдущих версий Visual Studio) статьи [Visual Studio Product Lifecycle and Servicing](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) (Жизненный цикл и обслуживание продукта Visual Studio ), а также в статье [Обновление Visual Studio во время обслуживания](update-servicing-baseline.md).
 
   Если вы планируете применять обновления вместе с накопительным пакетом обновлений, вы можете обойтись последними обновлениями.
 

@@ -1,6 +1,6 @@
 ---
 title: Элемент Target (MSBuild) | Документы Майкрософт
-ms.date: 03/13/2017
+ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e48d28f5270cd43da22d070f30706ce75a1655c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b9910a677f5442e10c62a0623043033edd899c3
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939304"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141178"
 ---
 # <a name="target-element-msbuild"></a>Элемент Target (MSBuild)
 Содержит набор задач для [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для последовательного выполнения.
@@ -55,7 +55,7 @@ ms.locfileid: "62939304"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание|
+|Атрибут|ОПИСАНИЕ|
 |---------------|-----------------|
 |`Name`|Обязательный атрибут.<br /><br /> Имя целевого объекта.|
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Если условие принимает значение `false`, целевой объект не будет выполнять тело целевого объекта или любые целевые объекты, заданные в атрибуте `DependsOnTargets`. Дополнительные сведения об условиях см. в разделе [Условия](../msbuild/msbuild-conditions.md).|
@@ -70,7 +70,7 @@ ms.locfileid: "62939304"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-| Элемент | Описание |
+| Элемент | ОПИСАНИЕ |
 | - | - |
 | [Задача](../msbuild/task-element-msbuild.md) | Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Целевой объект может содержать нуль и более задач. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Содержит набор определяемых пользователем элементов `Property`. Начиная с .NET Framework 3.5 элемент `Target` может содержать элементы `PropertyGroup`. |
@@ -85,6 +85,8 @@ ms.locfileid: "62939304"
 
 ## <a name="remarks"></a>Примечания
  Первый целевой объект для выполнения задается во время выполнения. Целевые объекты могут иметь зависимости от других целевых объектов. Например, целевой объект для развертывания зависит от целевого объекта для компиляции. Обработчик [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняет зависимости в том порядке, в котором они появляются в атрибуте `DependsOnTargets`, слева направо. Дополнительные сведения см. в разделе [Целевые объекты](../msbuild/msbuild-targets.md).
+
+ Поведение MSBuild зависит от порядка импорта, то есть всегда используется последнее обработанное определение целевого объекта с определенным атрибутом `Name`.
 
  Целевой объект выполняется только один раз во время сборки, даже если от него зависит несколько целевых объектов.
 

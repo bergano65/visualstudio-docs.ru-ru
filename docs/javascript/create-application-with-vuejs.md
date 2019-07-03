@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226044"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033137"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Создание приложения Vue.js с помощью инструментов Node.js для Visual Studio
 
@@ -43,7 +43,7 @@ Visual Studio поддерживает разработку приложений
     Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , если вы еще не сделали этого.
     ::: moniker-end
 
-    Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...**, после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.
+    Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...** , после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.
 
 * Чтобы создать проект ASP.NET Core, вам нужны ASP.NET и рабочие нагрузки веб-разработки и кроссплатформенной разработки .NET Core.
 
@@ -169,7 +169,15 @@ Vue.js предоставляет официальный интерфейс ко
 
 #### <a name="build-with-vue-cli-30"></a>Сборка с vue-cli 3.0
 
-Неизвестная проблема с vue-cli 3.0 препятствует автоматизации сборки. Каждый раз при попытке обновления папки wwwroot выполняйте команду `npm run build` в папке client-app.
+Неизвестная проблема с vue-cli 3.0 может препятствовать автоматизации сборки. Каждый раз при попытке обновления папки wwwroot выполняйте команду `npm run build` в папке client-app.
+
+Кроме того, с помощью свойств проекта ASP.NET можно скомпилировать проект vue-cli 3.0 как событие перед сборкой. Щелкните проект правой кнопкой мыши, выберите **Свойства**и добавьте следующие команды на вкладку **Сборка** в текстовом поле **Командная строка события перед сборкой**.
+
+``` cmd
+cd ./client-app
+npm run build
+cd ../
+```
 
 ## <a name="limitations"></a>Ограничения
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747338"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043411"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Практическое руководство. Просмотр и изменение кода с помощью окна "Показать определение" (ALT+F12)
 
@@ -86,4 +86,4 @@ ms.locfileid: "66747338"
 
 - [Навигация по коду](../ide/navigating-code.md)
 - [Функции "Перейти к определению" и "Показать определение"](../ide/go-to-and-peek-definition.md)
-- [Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md)
+- [Возможности для повышения продуктивности в Visual Studio](../ide/productivity-features.md)

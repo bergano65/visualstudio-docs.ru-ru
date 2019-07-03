@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: a97aa7dfcc1cc46d64813ea7714629cb8557055d
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 0b6c4eb391014342a18ec3fe56a03a651463105c
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714887"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160086"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Использование CTest для C++ в Visual Studio 2017 и более поздних версиях
 
-Система CMake (которая включает в себя CTest) по умолчанию интегрирована в среду IDE Visual Studio как компонент рабочей нагрузки **Разработка классических приложений на C++** . Если вам нужно установить ее на компьютере, откройте программу Visual Studio Installer, нажмите кнопку **Разработка классических приложений на C++** , а затем выберите команду **Изменить**. Установите флажок [Инструменты CMake для Visual C++](/cpp/build/cmake-tools-for-visual-cpp) в списке компонентов рабочей нагрузки.
+Система CMake (которая включает в себя CTest) по умолчанию интегрирована в среду IDE Visual Studio как компонент рабочей нагрузки **Разработка классических приложений на C++** . Если вам нужно установить ее на компьютере, откройте программу Visual Studio Installer, нажмите кнопку **Разработка классических приложений на C++** , а затем выберите команду **Изменить**. Выберите **Средства CMake C++ для Windows** в списке компонентов рабочей нагрузки.
 
 ## <a name="to-write-tests"></a>Написание тестов
 
-Поддержка CMake в Visual Studio не распространяется на систему проектов Visual Studio. Поэтому тесты CTest создаются и настраиваются так же, как в любой среде CMake. Дополнительные сведения об использовании CMake в Visual Studio см. в статье об [инструментах CMake для Visual C++](/cpp/ide/cmake-tools-for-visual-cpp).
+Поддержка CMake в Visual Studio не распространяется на систему проектов Visual Studio. Поэтому тесты CTest создаются и настраиваются так же, как в любой среде CMake. Дополнительные сведения об использовании CMake в Visual Studio см. в статье о [проектах CMake в Visual Studio](/cpp/build/cmake-projects-in-visual-studio).
 
 ## <a name="to-run-tests"></a>Выполнение тестов
 
