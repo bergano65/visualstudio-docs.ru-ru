@@ -13,20 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820926"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160042"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 
-Дополнительные сведения о специальных возможностях клавиатуры см. в статьях [Специальные возможности. Советы и рекомендации](../ide/reference/accessibility-tips-and-tricks.md) и [Практическое руководство. Работа только с клавиатуры](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Сочетания клавиш позволяют получать доступ к различным [командам](reference/visual-studio-commands.md) и окнам Visual Studio. В этом разделе перечислены сочетания клавиш по умолчанию для команд в профиле **обычных параметров**, который мог быть выбран при установке Visual Studio. Независимо от выбранного профиля сочетание клавиш для той или иной команды можно [определить](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md), открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**. Кроме того, сочетания клавиш можно настраивать, назначая командам другие сочетания клавиш.
 
-Сочетания клавиш позволяют получать доступ к различным командам и окнам Visual Studio. В этом разделе перечислены сочетания клавиш по умолчанию для профиля **обычных параметров**, который мог быть выбран при установке Visual Studio. Независимо от выбранного профиля сочетание клавиш для той или иной команды можно определить, открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**. Кроме того, сочетания клавиш можно настраивать, назначая командам другие сочетания клавиш.
+Список распространенных сочетаний клавиш и другие сведения о средствах повышения производительности см. в следующих статьях:
 
-Список распространенных сочетаний клавиш и другие сведения о средствах повышения производительности см. в руководствах по работе со [стандартными сочетаниями клавиш для часто используемых команд в Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) и [клавиатурой](../ide/tips-and-tricks-for-visual-studio.md), а также в [советах по повышению производительности](../ide/productivity-tips-for-visual-studio.md).
+- [Сочетания клавиш по умолчанию для часто используемых команд](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Советы по использованию клавиатуры](../ide/productivity-shortcuts.md)
+- [Советы по повышению производительности](../ide/productivity-features.md).
+
+Подробные сведения о специальных возможностях в Visual Studio см. в статьях [Советы и рекомендации по специальным возможностям для Visual Studio](../ide/reference/accessibility-tips-and-tricks.md) и [Практическое руководство. Работа только с клавиатуры](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 |||||
 |-|-|-|-|
@@ -785,6 +789,7 @@ ms.locfileid: "66820926"
 | Edit.CollapseCurrentRegion | **CTRL+M, CTRL+S** |
 | Edit.CollapseTag | **CTRL+M, CTRL+T** |
 | Edit.CollapseToDefinitions | **CTRL+M, CTRL+O** (латинская буква O) |
+| Edit.ContractSelection | **Shift+Alt+-** (только для языков, отличных от C++) |
 | Edit.CommentSelection | **CTRL+K, CTRL+C** |
 | Edit.CompleteWord | **CTRL+ПРОБЕЛ**<br /><br /> или<br /><br /> **ALT+СТРЕЛКА ВПРАВО** |
 | Edit.CopyParameterTip | **CTRL+SHIFT+ALT+C** |
@@ -797,6 +802,8 @@ ms.locfileid: "66820926"
 | Edit.DocumentStartExtend | **CTRL+SHIFT+HOME** |
 | Edit.ExpandAllOutlining | **CTRL+M, CTRL+X** |
 | Edit.ExpandCurrentRegion | **CTRL+M, CTRL+E** |
+| Edit.ExpandSelection | **Shift+Alt+=** (только для языков, отличных от C++) |
+| Edit.ExpandSelectiontoContainingBlock | **Shift+Alt+]** |
 | Edit.FormatDocument | **CTRL+K, CTRL+D** |
 | Edit.FormatSelection | **CTRL+K, CTRL+F** |
 | Edit.GotoAll | **CTRL+T**<br /><br /> или<br /><br /> **CTRL+,** |
@@ -1150,5 +1157,4 @@ ms.locfileid: "66820926"
 
 ## <a name="see-also"></a>См. также
 
-- [Редактор изображений для значков](/cpp/windows/image-editor-for-icons)
-- [Использование технологии IntelliSense](../ide/using-intellisense.md)
+- [Команды Visual Studio](reference/visual-studio-commands.md)

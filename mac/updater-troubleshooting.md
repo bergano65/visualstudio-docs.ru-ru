@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: 2b89ea7155b27f9c5b54dae38d4e823895fad705
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 554633b2fc5d47d9cc4824ff9d8bf2febfbcd1f8
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783309"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309631"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Устранение неполадок: Сбой средства обновления при получении сведений
 
@@ -23,3 +23,4 @@ ms.locfileid: "62783309"
 - Если это сообщение об ошибке не исчезает, попробуйте выполнить обновление с помощью установщика, если на вашем компьютере есть файл **.dmg** (его можно скачать на сайте [visualstudio.com](https://visualstudio.microsoft.com/vs/mac/)).
     - Установщик обновит все установленные компоненты на компьютере.
     - Повторно запустив установщик, вы также сможете установить недостающие компоненты, которые не были установлены ранее.
+- Кроме того, можно попробовать удалить скачанные кэшированные данные. Для этого удалите файл, расположенный в `~/Library/Caches/VisualStudio/7.0/TempDownload/index.xml`.

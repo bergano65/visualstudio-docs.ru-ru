@@ -7,12 +7,12 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 description: Сведения о преимуществах технической поддержки, которая прилагается к подпискам Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 50b6245be908bffc0d2abb9db7f74ed14f878224
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94c8ac818fbdee17c75c508f509e93b50c3871ec
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427485"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033107"
 ---
 # <a name="technical-support-benefits-included-with-visual-studio-subscriptions"></a>Преимущества технической поддержки, которая прилагается к подпискам Visual Studio
 
@@ -29,6 +29,6 @@ ms.locfileid: "62427485"
 
 - [Техническая поддержка](vs-tech-support.md): квалифицированная поддержка поможет устранить проблемы в нерабочей среде, предоставив замену или ремонт.
 
-- [Приоритетная поддержка](vs-priority-support.md): задайте свой вопрос на любом из специализированных форумов. Если сообщество разработчиков не ответит в течение двух дней, с вами свяжется специалист корпорации Майкрософт. (Только для учетных записей Майкрософт.)
+- [Форумы сообщества разработчиков](vs-priority-support.md): доступ ко всем форумам Microsoft Developer Network. 
 
 - [Concierge Chat](vs-concierge-chat.md): за помощью в поиске технической документации и сведений о продукте или использовании преимуществ подписки обратитесь к нам.

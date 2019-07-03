@@ -1,18 +1,18 @@
 ---
 title: Управление подписками Visual Studio
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 06/24/2019
 ms.topic: conceptual
 description: Сведения о максимально эффективном использовании подписок Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d03dbd24b6fd8f00248e0c0d653359f9995da0d
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833975"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365426"
 ---
 # <a name="managing-subscriptions"></a>Управление подписками
 
@@ -125,6 +125,12 @@ ms.locfileid: "62833975"
    > [!div class="mx-imgBorder"]
    > ![Изменение сведений в профиле](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
+### <a name="setting-communications-preferences"></a>Настройка параметров сообщений
+Если вы хотите получать регулярные новости о вашей подписке и преимуществах, включая ежемесячные информационные бюллетени, касающиеся подписок Visual Studio, [измените настройки](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), установив флажки для подписок Visual Studio в своем профиле Visual Studio. Вы можете изменить эти настройки и отменить подписку в любое время. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Настройка параметров](_img/manage-vs-subscriptions/change-prefs.png)
+   
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Связывание подписки с существующими подписками Azure DevOps Services или Azure
 
 Если вы входите в подписку с помощью личной учетной записи Майкрософт и у вас есть подписка, включающая службы Azure DevOps Services или Microsoft Azure, с которой используется рабочая или учебная учетная запись под управлением Azure, вы можете связать эти две подписки. Это называется альтернативной учетной записью и позволяет продолжать входить в подписку с помощью учетной записи Майкрософт, а также иметь доступ к существующим ресурсам Azure, Azure DevOps Services или IDE, которые связаны с рабочей или учебной учетной записью.

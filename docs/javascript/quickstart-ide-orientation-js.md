@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2c20f25b005e738769d1c8663387f0a427e5dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9d776c061982b60640944737b27cda927f79e59
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62841046"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033165"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Знакомство с интегрированной средой разработки Visual Studio
 
@@ -37,7 +37,7 @@ ms.locfileid: "62841046"
 
 Первым, что вы увидите после запуска Visual Studio, будет окно запуска. Окно запуска помогает быстрее добраться до кода. Оно отображает параметры, чтобы закрыть или извлечь код, открыть существующий проект или решение, создать новый проект или просто открыть папку, содержащую некоторые файлы кода.
 
-[![](media/vs-2019/start-window.png "Начальное окно в Visual Studio 2019")](media/vs-2019/start-window.png)
+[![Начальное окно в Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
 
 Если вы используете Visual Studio впервые, список последних проектов будет пустым.
 

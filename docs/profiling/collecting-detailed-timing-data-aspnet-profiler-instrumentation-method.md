@@ -1,5 +1,5 @@
 ---
-title: Сбор подробных сведений о времени для веб-приложения ASP.NET с использованием метода инструментирования профилировщика из командной строки | Документы Майкрософт
+title: VSPerfCmd. Получение данных о времени для веб-приложения ASP.NET с помощью метода инструментирования
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 79e8ad7842070d13941ad921ccb25ba502209eb0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 87e7f5f49072326028405e153cffe94ce1ca63f2
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405960"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033065"
 ---
 # <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Сбор подробных данных о времени для веб-приложения ASP.NET с использованием метода инструментирования профилировщика из командной строки
 В этом разделе описываются процедуры и параметры для сбора подробных данных по производительности веб-приложения [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] с использованием программы командной строки **VSPerfCmd** и метода инструментирования.

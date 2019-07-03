@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f218db0d10e6a7e959b3a5fdc2f38ceff2299c9b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c137b6bd8a38ac606a547ce961c4f040e60c6d87
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747569"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043362"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Работа с Python в Visual Studio под управлением Windows
 
@@ -40,7 +40,7 @@ Visual Studio является мощной интегрированной ср�
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio поддерживает все официально поддерживаемые версии Python, указанные организацией [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). В частности, версии 2.7, 3.5, 3.6 и 3.7.
+> Visual Studio поддерживает Python версии 2.7, а также 3.5 и выше. Visual Studio можно использовать для редактирования кода, написанного на языке Python других версий, но эти версии официально не поддерживаются, а функции, такие как IntelliSense и отладка, могут не работать.
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Поддержка нескольких интерпретаторов
