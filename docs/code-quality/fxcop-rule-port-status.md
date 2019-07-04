@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0d78e7dcd7dfd203a15510037b277b8c2633805e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4a458a50be6161e320b3ffbbe702e21f9f502c77
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038650"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559665"
 ---
 # <a name="fxcop-rule-port-status"></a>Состояние порта правила FxCop
 
 Если вы ранее использовали статического анализа кода в предыдущей версии Visual Studio, может возникнуть вопрос, какой из этих правил доступны в текущей реализации как [анализаторы FxCop](install-fxcop-analyzers.md). На этой странице перечислены правила, подключаются, а также те, которые еще не были перенесены и ли планируется переносить их.
 
-## <a name="ported-rules"></a>Перенесенном правила
+## <a name="ported-rules"></a>Перенесенные правила
 
 [Автоматически созданные страницы документации](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) в анализаторов roslyn репозитория имеет самого свежего списка правил, которые были перенесены анализаторы FxCop. Эта страница также имеет дополнительные сведения, например, включено ли правило по умолчанию, и если он имеет связанный *исправление кода*. ([Средства исправления кода](../ide/quick-actions.md) , одним щелчком исправления доступны в меню значок лампочки в Visual Studio.)
 
@@ -67,8 +67,8 @@ ms.locfileid: "66038650"
 [CA1063](ca1063-implement-idisposable-correctly.md) | Правильно реализуйте IDisposable
 [CA1064](ca1064-exceptions-should-be-public.md) | Исключения должны быть общими
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Не вызывайте исключения в непредвиденных местах
-CA1066 | Тип {0} следует реализовать IEquatable<T> так как оно переопределяет Equals
-CA1067 | Переопределить Object.Equals(object) при реализации IEquatable<T>
+CA1066 | Тип {0} следует реализовать IEquatable\<T > так как оно переопределяет Equals
+CA1067 | Переопределить Object.Equals(object) при реализации IEquatable\<T >
 CA1068 | Параметры CancellationToken, должен быть последним
 CA1200 | Старайтесь не использовать теги cref с префиксом
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Не передавайте литералы в качестве локализованных параметров
