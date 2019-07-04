@@ -1204,6 +1204,15 @@
         - name: Отправка сообщения о проблеме с состоянием и часто задаваемые вопросы
           displayName: Developer Community
           href: ide/report-a-problem.md
+        - name: "Создание минидампов со всеми стеками вызовов для процесса Visual\_Studio"
+          displayName: Create minidumps with call stacks
+          href: ide/report-a-problem-minidumps.md
+        - name: Создание журналов по проблемам MSBuild
+          displayName: Create logs for MSBuild problems
+          href: ide/msbuild-logs.md
+        - name: Сбор журналов трассировки событий с помощью PerfView
+          displayName: ETL trace with PerfView
+          href: ide/report-a-problem-perfview.md
     - name: Предложить функцию для Visual Studio
       href: ide/suggest-a-feature.md
     - name: Конфиденциальность данных сообщества разработчиков
