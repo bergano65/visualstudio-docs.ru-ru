@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetCodeLocationId
 ms.assetid: 567adfb8-2f54-499a-a027-e4ecb82277ef
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8169d5ec4c212cbf09ff3273f0338b3e905d721
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58e3b12ecbc75b7d07d60ac399412dc5b0deb73b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712779"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351686"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
 Возвращает идентификатор расположения кода для контекста кода.
@@ -38,14 +41,11 @@ int GetCodeLocationId( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pCodeContext`
+## <a name="parameters"></a>Параметры
+`pCodeContext`\
+[in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) объект для преобразования в идентификатор.
 
- [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) объект для преобразования в идентификатор.
-
- `puCodeLocationId`
-
- [out] Возвращает идентификатор расположение кода. См. заметки.
+`puCodeLocationId` [out] Возвращает идентификатор расположение кода. См. заметки.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_CODE_CONTEXT_OUT_OF_SCOPE` Если контекст кода является допустимым, но за пределами области действия.

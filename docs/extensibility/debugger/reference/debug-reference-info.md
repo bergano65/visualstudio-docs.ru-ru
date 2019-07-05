@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REFERENCE_INFO structure
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c82e1d3894b9fa3ffbdffb5ab69c134ff73e0df7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c22ab1a7d0cb03f66455f76c1d9878a9df76604e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720293"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346135"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 Описывает ссылку.
@@ -49,19 +52,26 @@ public struct DEBUG_REFERENCE_INFO {
 ```
 
 ## <a name="members"></a>Участники
-dwFields объект сочетание флагов из [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) перечисление, указывающее, какие поля заполнены.
+`dwFields`\
+Сочетание флагов из [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) перечисление, указывающее, какие поля заполнены.
 
-bstrName, определяемое пользователем имя [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объекта.
+`bstrName`\
+Определяемое пользователем имя [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объекта.
 
-bstrType ссылку типа как отформатированную строку.
+`bstrType`\
+Ссылочный тип, как отформатированную строку.
 
-bstrValue значение ссылки как отформатированную строку
+`bstrValue`\
+Значение ссылки как отформатированную строку
 
-dwAttrib объект сочетание флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисление, указывающее флаги для атрибутов свойства отладки.
+`dwAttrib`\
+Сочетание флагов из [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) перечисление, указывающее флаги для атрибутов свойства отладки.
 
-значение dwRefType объект из [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) перечисление, указывающее, является ли тип ссылки строгие или слабые.
+`dwRefType`\
+Значение из [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) перечисление, указывающее, является ли тип ссылки строгие или слабые.
 
-m_pReference [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , указывающий справочные сведения.
+`m_pReference`\
+[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , указывающий справочные сведения.
 
 ## <a name="remarks"></a>Примечания
 Эта структура передается в вызов [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) метод для заполнения. Эта структура также возвращается как часть списка из [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) интерфейс, который, в свою очередь, возвращается из вызова [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) метод.

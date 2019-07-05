@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 36e827c0a4eda91081da349e7832ed19369963ee
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 83327543c414c726eb39f18c236c372fced8c470
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38941286"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256366"
 ---
 SQL Server 2005

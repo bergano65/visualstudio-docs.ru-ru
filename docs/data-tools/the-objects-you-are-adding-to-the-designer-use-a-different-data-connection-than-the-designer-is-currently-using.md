@@ -1,5 +1,5 @@
 ---
-title: Добавляемые в конструктор объекты используют подключение данных, отличное от текущего подключения конструктора
+title: Объекты, добавленные в конструктор используйте другое подключение к данным
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 332ed2f3-3377-4d51-8e3b-fdb98231978e
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e0864ec07250ed5886f864d4233aeb902ecf5ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85e0c17eeb4cfbd786faac338c8b908c5a7f363
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565626"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260927"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Объекты, добавляемые в конструктор используют другое подключение к данным чем конструктор
 
@@ -36,5 +36,4 @@ ms.locfileid: "62565626"
 
 ## <a name="see-also"></a>См. также
 
-- [Сообщения реляционного конструктора объектов](../data-tools/o-r-designer-messages.md)
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

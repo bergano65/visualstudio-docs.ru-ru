@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b0b8108470d5f9f14c76e422591a536648b5485e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790164"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350992"
 ---
 # <a name="create-an-options-page"></a>Создайте страницу параметров
 
@@ -37,7 +37,7 @@ ms.locfileid: "58790164"
 
 1. Все расширения Visual Studio начинается с развертывания проект VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `MyToolsOptionsExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, выполняя поиск «vsix».
 
-2. Добавьте пакет VSPackage, добавив элемент шаблона пакета Visual Studio с именем `MyToolsOptionsPackage`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **диалоговое окно Add New Item**, перейдите в меню **элементы Visual C#** > **расширяемости** и выберите **пакета Visual Studio**. В **имя** в нижней части диалогового окна, измените имя файла для `MyToolsOptionsPackage.cs`. Дополнительные сведения о том, как создать пакет VSPackage, см. в разделе [создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
+2. Добавьте пакет VSPackage, добавив элемент шаблона пакета Visual Studio с именем `MyToolsOptionsPackage`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **диалоговое окно Add New Item**, перейдите в меню **элементы Visual C#**  > **расширяемости** и выберите **пакета Visual Studio**. В **имя** в нижней части диалогового окна, измените имя файла для `MyToolsOptionsPackage.cs`. Дополнительные сведения о том, как создать пакет VSPackage, см. в разделе [создание расширения с помощью VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
 
 ### <a name="to-create-the-tools-options-property-grid"></a>Создание сетки свойств Сервис-Параметры
 
@@ -247,7 +247,7 @@ ms.locfileid: "58790164"
 
      Этот код вызывает <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> создать или получить `OptionPageGrid` экземпляра. `OptionPageGrid` вызовы <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> для загрузки своих параметров, которые являются общедоступными свойствами.
 
-2. Теперь Добавление пользовательской команды шаблона элемента с именем **MyToolsOptionsCommand** для отображения значения. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#** > **расширяемости** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для *MyToolsOptionsCommand.cs*.
+2. Теперь Добавление пользовательской команды шаблона элемента с именем **MyToolsOptionsCommand** для отображения значения. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#**  > **расширяемости** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для *MyToolsOptionsCommand.cs*.
 
 3. В *MyToolsOptionsCommand* файл, замените текст команды `ShowMessageBox` следующим кодом:
 

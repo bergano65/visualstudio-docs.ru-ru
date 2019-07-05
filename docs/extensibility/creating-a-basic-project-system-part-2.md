@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d6dfcae8855c2bdb821f61be65de39282db87dfd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681313"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336998"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Создание системы базового проекта, часть 2
 Первого пошагового руководства в этой серии [Создание системы базового проекта, часть 1](../extensibility/creating-a-basic-project-system-part-1.md), демонстрируется создание системы базового проекта. В этом пошаговом руководстве развития системы базового проекта шаблона Visual Studio, страницу свойств и другие функции. Прежде чем начать, необходимо выполнить первого пошагового руководства.
@@ -42,7 +42,7 @@ ms.locfileid: "56681313"
 ## <a name="create-a-visual-studio-template"></a>Создание шаблона Visual Studio
 - [Создание системы базового проекта, часть 1](../extensibility/creating-a-basic-project-system-part-1.md) показано, как создать шаблон базовый проект и добавить его в систему проектов. Также показано, как зарегистрировать этот шаблон с помощью Visual Studio с помощью <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> атрибут, который записывает полный путь к *\\Templates\Projects\SimpleProject\\* папка в системе реестр.
 
-С помощью шаблона Visual Studio (*.vstemplate* файла) вместо базового проекта шаблона, можно управлять как шаблон появится в **новый проект** диалоговое окно, и способ параметров шаблона заменить. Объект *.vstemplate* файл — это файл XML, который описывает, как исходные файлы должны быть включены при создании проекта с помощью шаблона проекта системы. Сама система проекта создается путем сбора *.vstemplate* файл и исходные файлы в *ZIP-файл* файла и разворачивать путем копирования *ZIP-файл* в папку, Известные для Visual Studio. Эта процедура описывается более подробно далее в этом пошаговом руководстве.
+С помощью шаблона Visual Studio ( *.vstemplate* файла) вместо базового проекта шаблона, можно управлять как шаблон появится в **новый проект** диалоговое окно, и способ параметров шаблона заменить. Объект *.vstemplate* файл — это файл XML, который описывает, как исходные файлы должны быть включены при создании проекта с помощью шаблона проекта системы. Сама система проекта создается путем сбора *.vstemplate* файл и исходные файлы в *ZIP-файл* файла и разворачивать путем копирования *ZIP-файл* в папку, Известные для Visual Studio. Эта процедура описывается более подробно далее в этом пошаговом руководстве.
 
 1. В [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], откройте SimpleProject решение, которое вы создали, следуя [Создание системы базового проекта, часть 1](../extensibility/creating-a-basic-project-system-part-1.md).
 
@@ -175,7 +175,7 @@ ZipProjects:
 ```
 
 ## <a name="deploy-a-visual-studio-template"></a>Развертывание шаблона Visual Studio
-Шаблоны Visual Studio не содержат сведения о пути. Таким образом, шаблон *ZIP-файл* файл должен быть развернут в расположении, известно, что Visual Studio. Расположение папки Шаблоны_проекта обычно является *\Microsoft\VisualStudio\14.0Exp\ProjectTemplates < % LOCALAPPDATA % >*.
+Шаблоны Visual Studio не содержат сведения о пути. Таким образом, шаблон *ZIP-файл* файл должен быть развернут в расположении, известно, что Visual Studio. Расположение папки Шаблоны_проекта обычно является *\Microsoft\VisualStudio\14.0Exp\ProjectTemplates < % LOCALAPPDATA % >* .
 
 Чтобы развернуть свою фабрику проекта, программа установки требуются права администратора. Развертывание шаблонов в узле установки Visual Studio: *...\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates*.
 
@@ -207,7 +207,7 @@ ZipProjects:
 
 В этом разделе показано, как создать дочерний узел консоли для типа проекта SimpleProject.
 
-1. Переименуйте *\\Templates\Projects\SimpleProject\\* папку  *\\Templates\Projects\ConsoleApp\\*.
+1. Переименуйте *\\Templates\Projects\SimpleProject\\* папку  *\\Templates\Projects\ConsoleApp\\* .
 
 2. В **свойства** окно, выберите все пять файлов в *\\Templates\Projects\ConsoleApp\\* папку и убедитесь, что **действие при построении**присваивается **ZipProject**.
 

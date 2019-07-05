@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetBreakpointType
 ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ab8bc16da26b1c47ecdda79db361e24b68e2e82
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a8e8d7c77b9020df577e611f8a27116fa7a7b6db
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709139"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352883"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 Получает тип точки останова, представленный данным разрешением.
@@ -36,10 +39,9 @@ int GetBreakpointType( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pBPType`
-
- [out] Возвращает значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисления, указывающее тип данной точки останова.
+## <a name="parameters"></a>Параметры
+`pBPType`\
+[out] Возвращает значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисления, указывающее тип данной точки останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает значение E_FAIL, если `bpResLocation` в соответствующем поле [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структура не является допустимой.

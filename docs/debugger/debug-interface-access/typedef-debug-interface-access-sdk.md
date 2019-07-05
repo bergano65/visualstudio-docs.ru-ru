@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1928667be38cc2b0aa56800ca66924d6159f0c4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853528"
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef (SDK для доступа к интерфейсу отладки)
 Символы с `SymTagTypedef` теги вводят имена для других типов.
@@ -25,7 +25,7 @@ ms.locfileid: "56597924"
 ## <a name="properties"></a>Свойства
  Ниже приведены дополнительные допустимые свойства для данного типа символов.
 
-|Свойство.|Тип данных|Описание|
+|Свойство|Тип данных|Описание|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|Один из [перечисление BasicType](../../debugger/debug-interface-access/basictype.md) значения.|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Родительский класс это определение типа, если таковые имеются.|
@@ -57,5 +57,5 @@ ms.locfileid: "56597924"
 ## <a name="remarks"></a>Примечания
  Так как определение типа может представлять класс, указатель или определяемого пользователем типа (UDT), символ для typedef совместно использует те же свойства, как один из этих типов, символов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Иерархия классов символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

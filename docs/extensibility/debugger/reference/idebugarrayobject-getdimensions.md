@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetDimensions method
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96079e3f82fccc958cc4b9123f8af4227393845f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 781da7eadce78d5332befe91231131f02341574b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697030"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318996"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 Возвращает размерность массива.
@@ -38,14 +38,12 @@ int GetDimensions(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwCount`
+## <a name="parameters"></a>Параметры
+`dwCount`\
+[in] Число измерений для извлечения.
 
- [in] Число измерений для извлечения.
-
- `dwDimensions`
-
- [in, out] Массив, который заполняется размеров каждого измерения. `dwCount` Указывает максимальный размер `dwDimensions` массива.
+`dwDimensions`\
+[in, out] Массив, который заполняется размеров каждого измерения. `dwCount` Указывает максимальный размер `dwDimensions` массива.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.

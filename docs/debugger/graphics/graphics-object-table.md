@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20a78d7bb3e27ddfd0a5a248436b5c5392558410
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848451"
 ---
 # <a name="graphics-object-table"></a>Таблица графических объектов
 Таблица графических объектов в компоненте анализа графики Visual Studio помогает разобраться в работе объектов Direct3D, которые поддерживают кадр вашей игры или вашего приложения.
@@ -109,6 +109,6 @@ ms.locfileid: "56713455"
 |**uint64**|64-разрядное целочисленное значение без знака. То же, что и **u8byte**.|
 |**bool**|Логическое значение (`true` или `false`). Каждое значение логического типа представлено 32-разрядным значением.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Диагностика графики (отладка графики DirectX)](visual-studio-graphics-diagnostics.md)
-- [Пошаговое руководство. Отсутствие объектов вследствие состояния устройства](walkthrough-missing-objects-due-to-device-state.md)
+- [Пошаговое руководство: Отсутствие объектов вследствие состояния устройства](walkthrough-missing-objects-due-to-device-state.md)

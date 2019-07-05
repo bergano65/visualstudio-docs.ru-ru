@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: eff7b4b880526909c293e16aa32ae7045bcdf297
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62780038"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714387"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003. Используйте экземпляры обработчика универсальных событий
 
@@ -41,7 +41,7 @@ ms.locfileid: "62780038"
 
 ## <a name="rule-description"></a>Описание правила
 
-До появления .NET, для передачи пользовательских сведений в обработчик событий, новый делегат приходилось объявляться, задает класс, который является производным от <xref:System.EventArgs?displayProperty=fullName> класса. Это больше не имеет значение true, если в .NET. Платформы .NET Framework, представлен <xref:System.EventHandler%601?displayProperty=fullName> делегат, универсальный делегат, позволяющий любой класс, производный от <xref:System.EventArgs> должна использоваться вместе с обработчик событий.
+До появления .NET, для передачи пользовательских сведений в обработчик событий, новый делегат приходилось объявляться, задает класс, который является производным от <xref:System.EventArgs?displayProperty=fullName> класса. В .NET, универсального <xref:System.EventHandler%601?displayProperty=fullName> делегат позволяет любой класс, производный от <xref:System.EventArgs> должна использоваться вместе с обработчик событий.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
@@ -57,7 +57,7 @@ ms.locfileid: "62780038"
 
 Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
 
-```
+```ini
 dotnet_code_quality.ca1003.api_surface = private, internal
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: Как выполнить  Обеспечение поддерживаемого кода с помощью политики возврата с анализом кода
+title: Использовать политику возврата с анализом кода
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7139c952b40957a564fcd4074b1c931817dfb851
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0924d3c7b6f39e4ec026a77ee8e0418361e311ba
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911226"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260923"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Как выполнить  Обеспечение простоты поддержки кода с политикой возврата анализа кода
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Практическое руководство. Обеспечение простоты поддержки кода с политикой возврата анализа кода
 
 Разработчики могут использовать средство метрики кода для измерения сложности и удобства поддержки кода, но не может вызывать метрики кода как часть политики возврата. Тем не менее можно включить правила анализа кода, проверка соответствия кода стандартам метрик кода и принудительное применение правил с помощью политик возврата. Дополнительные сведения о метриках кода см. в разделе [значения метрик кода](../code-quality/code-metrics-values.md).
 

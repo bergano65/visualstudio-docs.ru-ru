@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_LOCATION structure
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ed287f2d90e1ee92c7e0fd4ae685fbb9f38854f4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662911"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350584"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Задает структуру разрешения расположения точки останова.
@@ -46,35 +49,29 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>Участники
-`bpType` Значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисление, указывающее способ интерпретации `bpResLocation` объединение или `unionmemberX` членов.
+`bpType`\
+Значение из [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) перечисление, указывающее способ интерпретации `bpResLocation` объединение или `unionmemberX` членов.
 
-`bpResLocation.bpresCode`
+`bpResLocation.bpresCode`\
+[C++ только] Содержит [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) структуры, если `bpType`  =  `BPT_CODE`.
 
- [C++ только] Содержит [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) структуры, если `bpType`  =  `BPT_CODE`.
+`bpResLocation.bpresData`\
+[C++ только] Содержит [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) структуры, если `bpType`  =  `BPT_DATA`.
 
-`bpResLocation.bpresData`
+`bpResLocation.unused`\
+[C++ только] Заполнитель.
 
- [C++ только] Содержит [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) структуры, если `bpType`  =  `BPT_DATA`.
+`unionmember1`\
+[C# только] См. в разделе "Примечания" о том, как интерпретировать.
 
-`bpResLocation.unused`
+`unionmember2`\
+[C# только] См. в разделе "Примечания" о том, как интерпретировать.
 
- [C++ только] Заполнитель.
+`unionmember3`\
+[C# только] См. в разделе "Примечания" о том, как интерпретировать.
 
-`unionmember1`
-
- [C# только] См. в разделе "Примечания" о том, как интерпретировать.
-
-`unionmember2`
-
- [C# только] См. в разделе "Примечания" о том, как интерпретировать.
-
-`unionmember3`
-
- [C# только] См. в разделе "Примечания" о том, как интерпретировать.
-
-`unionmember4`
-
- [C# только] См. в разделе "Примечания" о том, как интерпретировать.
+`unionmember4`\
+[C# только] См. в разделе "Примечания" о том, как интерпретировать.
 
 ## <a name="remarks"></a>Примечания
 Эта структура является членом [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) и [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры.

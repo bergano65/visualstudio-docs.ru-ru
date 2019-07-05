@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 086c4546d72042d2b2c7c1789cdf1695bc54b81d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e57607cdfa8790c9b9fd4e692956f7bb823981a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955392"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744860"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903. Используйте API только из целевой рабочей среды
 
@@ -46,7 +46,7 @@ ms.locfileid: "55955392"
 |.NET Framework 3,5|.NET Framework 3.5 SP1|
 |.NET Framework 4|Н/Д|
 
- Для изменения целевой платформы проекта см. в разделе [предназначенных для определенной версии .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+ Для изменения целевой платформы проекта см. в разделе [как: Определение целевой версии .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы удалить зависимость от пакета обновления, удалите все случаи использования нового члена или типа. Если это зависимость добавлена специально отключить предупреждение, или отключить это правило.
@@ -67,4 +67,4 @@ ms.locfileid: "55955392"
 ## <a name="see-also"></a>См. также
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [Настройка конкретной версии платформы .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Framework, предназначенных для обзора](../ide/visual-studio-multi-targeting-overview.md)

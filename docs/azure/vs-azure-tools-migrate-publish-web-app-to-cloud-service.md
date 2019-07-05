@@ -1,22 +1,20 @@
 ---
-title: Перенос и публикация веб-приложения в облачную службу Azure
+title: Перенос приложения в облачную службу Azure и его и публикация
 description: Узнайте, как перенести и опубликовать веб-приложение в облачную службу Azure путем использования Visual Studio.
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: aa0af441071c90ca42d7aa7169c75803bebeb255
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ca6fd7461ac928751192a18b00f255d7bad2a30
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62551394"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260619"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Как выполнить Перенос и публикация веб-приложения в облачную службу Azure из Visual Studio
 
@@ -49,7 +47,7 @@ ms.locfileid: "62551394"
 
 ### <a name="use-an-azure-sql-database-for-your-application"></a>Использование базы данных SQL Azure для приложения
 
-Если имеется строка подключения для веб-приложения, которое использует локальную базу данных SQL Server, нужно перенести базу данных в базу данных SQL Azure и обновить строку подключения. Руководство по этому процессу см. в следующих статьях:
+Если имеется строка подключения для веб-приложения, которое использует локальную базу данных SQL Server, нужно перенести базу данных в Базу данных SQL Azure и обновить строку подключения. Руководство по этому процессу см. в следующих статьях:
 
 - [Миграция базы данных SQL Server в базу данных SQL в облаке](/azure/sql-database/sql-database-cloud-migrate)
 - [Использование .NET (C#) с Visual Studio для подключения и создания запросов к базе данных SQL Azure](/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).
@@ -58,11 +56,11 @@ ms.locfileid: "62551394"
 
 1. Создайте необходимые учетные записи хранения и облачной службы в подписке Azure, как описано в статье [Подготовка к публикации или развертыванию приложения Azure из Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. В Visual Studio щелкните проект приложения правой кнопкой мыши и выберите **Опубликовать в Microsoft Azure...** (эта команда отличается от команды "Опубликовать…".).
-1. В открывшемся окне **Публикация приложения Azure** выполните вход, используя учетную запись с подпиской Azure, и выберите **Далее >**.
+1. В открывшемся окне **Публикация приложения Azure** выполните вход, используя учетную запись с подпиской Azure, и выберите **Далее >** .
 1. На вкладке **Параметры > Common Settings (Общие параметры)** выберите целевую облачную службу из раскрывающегося списка **Облачная служба**, а также среду и конфигурации.
-1. На вкладке **Параметры > Advanced Settings (Дополнительные параметры)** выберите учетную запись хранения, а затем нажмите **Далее >**.
+1. На вкладке **Параметры > Advanced Settings (Дополнительные параметры)** выберите учетную запись хранения, а затем нажмите **Далее >** .
 1. На вкладке **Диагностика** выберите, следует ли отправлять сведения в Application Insights.
-1. Выберите **Далее >**, чтобы просмотреть сводки, а затем **Publish** (Опубликовать), чтобы запустить развертывание.
+1. Выберите **Далее >** , чтобы просмотреть сводки, а затем **Publish** (Опубликовать), чтобы запустить развертывание.
 1. В Visual Studio откроется окно журнала действий, в котором вы можете отслеживать ход выполнения.
 
     ![VST_AzureActivityLog](./media/vs-azure-tools-migrate-publish-web-app-to-cloud-service/IC744149.png)
@@ -92,13 +90,17 @@ ms.locfileid: "62551394"
 1. Укажите строку подключения в файле `web.config` в следующем формате и сохраните этот файл:
 
     ```xml
-    <addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
     Обновите значение *connectionString* , используя строку подключения ADO.NET для базы данных SQL Azure, следующим образом:
 
     ```xml
-    XMLCopy<addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
 ## <a name="supported-project-templates"></a>Поддерживаемые шаблоны проектов

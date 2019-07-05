@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 994140f915fa7d27df01b515d7e5655b73266fba
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: a3443f74303c6ee90724c48eccdcedb761a130b9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38811691"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255035"
 ---
 Служба данных WCF

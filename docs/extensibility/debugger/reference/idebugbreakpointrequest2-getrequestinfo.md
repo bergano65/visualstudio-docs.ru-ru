@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2::GetRequestInfo
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90e813bd12a5dbdbe98f2cd0032e6c79ada37159
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3523c72fa1a7ea14fbf1b4a69caf04cfebb82911
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686302"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352900"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 Получает сведения о запросе точки останова, описывающее этот запрос точки останова.
@@ -38,14 +41,12 @@ int GetRequestInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwFields`
+## <a name="parameters"></a>Параметры
+`dwFields`\
+[in] Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, определяющее, какие поля в `pBPRequestInfo` параметр должны заполняться.
 
- [in] Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисления, определяющее, какие поля в `pBPRequestInfo` параметр должны заполняться.
-
- `pBPRequestInfo`
-
- [out] Указывает [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) структуры необходимо заполнить описание запроса точки останова.
+`pBPRequestInfo`\
+[out] Указывает [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) структуры необходимо заполнить описание запроса точки останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

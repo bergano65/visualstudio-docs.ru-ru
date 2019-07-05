@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19da4fdea411901af72c5be2f159964632d68558
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 3e2b1cbb6837ca139e735bef17bc0c2712d9cae7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400203"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
 Извлекает обозначение register расположения при [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) присваивается `LocIsEnregistered`.
@@ -39,11 +39,11 @@ HRESULT get_registerId ( 
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
 ## <a name="remarks"></a>Примечания
  Если символ является относительно регистр, то есть если символа [перечисление LocationType](../../debugger/debug-interface-access/locationtype.md) присваивается `LocIsRegRel`, использовать `get_registerId` метод, а затем с помощью вызова [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) метод для получения смещения из реестра, где находится символ.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Перечисление LocationType](../../debugger/debug-interface-access/locationtype.md)

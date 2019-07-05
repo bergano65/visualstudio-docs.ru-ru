@@ -7,21 +7,21 @@ helpviewer_keywords:
 - Watch window, expressions
 - expression evaluation, Watch window expressions
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9fecd6960b07edb84e946899024ffbbe71bf39c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fe575cf0db9f6f1c2dd15da96d3d0a17648aee4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094974"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315520"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Оценка выражения окна контрольных значений
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Когда выполнение приостанавливается, Visual Studio вызывает модуль отладки (DE), чтобы определить текущее значение каждого выражения в его список наблюдения за. DE вычисляет каждое выражение, с помощью вычислителя выражений (EE) и Visual Studio отображает его значение в **Watch** окна.
 
@@ -45,7 +45,7 @@ ms.locfileid: "60094974"
  Поскольку синтаксический анализ сложное выражение может занять гораздо больше, чем операции по оценке его, в результате вычисления выражения разбивается на два этапа: (1) синтаксический анализ выражения и 2) оценить проанализированное выражение. Таким образом, вычисление может выполняться много раз, но выражение необходимо выполнить синтаксический анализ только один раз. Промежуточные проанализированное выражение возвращается из EE в [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) объект, который в свою очередь инкапсулированы и возвращенные DE как [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объекта. `IDebugExpression` Объект откладывает все оценку для `IDebugParsedExpression` объекта.
 
 > [!NOTE]
->  Это необходимо для EE придерживаться Этот двухэтапный процесс, несмотря на то, что Visual Studio предполагается, что это; EE позволяет анализировать и оценивать в одном шаге при [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) вызывается (это как работает этот пример MyCEE, например). Если ваш язык можно сформировать сложные выражения, можно разделить на этапе синтаксического анализа на этапе оценки. Это может повысить производительность в отладчике Visual Studio, когда многие просмотреть выражений появляются.
+> Это необходимо для EE придерживаться Этот двухэтапный процесс, несмотря на то, что Visual Studio предполагается, что это; EE позволяет анализировать и оценивать в одном шаге при [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) вызывается (это как работает этот пример MyCEE, например). Если ваш язык можно сформировать сложные выражения, можно разделить на этапе синтаксического анализа на этапе оценки. Это может повысить производительность в отладчике Visual Studio, когда многие просмотреть выражений появляются.
 
 ## <a name="in-this-section"></a>Содержание раздела
  [Пример реализации вычисления выражений](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md) использует выборку MyCEE для процесса вычисления выражения.

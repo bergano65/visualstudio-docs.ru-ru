@@ -6,17 +6,20 @@ helpviewer_keywords:
 - AreSymbolsLoaded
 - IDebugComPlusSymbolProvider::AreSymbolsLoaded
 ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a53b1a1ad377543107154e355a47b7100dcb2f16
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 452cfb7758b110621ead9bc9e7e71f9bfab1e924
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686604"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338839"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 Определяет, если для указанного модуля, заданному идентификатору домена приложения загружаются символы отладки.
@@ -37,14 +40,12 @@ int AreSymbolsLoaded (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`ulAppDomainID`
+## <a name="parameters"></a>Параметры
+`ulAppDomainID`\
+[in] Идентификатор домена приложения.
 
- [in] Идентификатор домена приложения.
-
-`guidModule`
-
- [in] Уникальный идентификатор для модуля.
+`guidModule`\
+[in] Уникальный идентификатор для модуля.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Если отладочные символы загружены, возвращает `S_OK`; в противном случае возвращает `S_FALSE`.

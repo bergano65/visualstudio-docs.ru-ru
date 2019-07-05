@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetBreakpointResolution method
 - IDebugBoundBreakpoint2::GetBreakpointResolution method
 ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1e3e4cfe144713b7747f74e754a3a265cbbdb15
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6b4532d6d59679b5268007540a3842e681d829ab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712169"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320536"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 Получает разрешение точек останова, который описывает эту точку останова.
@@ -37,10 +40,9 @@ int GetBreakpointResolution( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`ppBPResolution`
-
- [out] Возвращает [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) интерфейс, который представляет одно из следующих:
+## <a name="parameters"></a>Параметры
+`ppBPResolution`\
+[out] Возвращает [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) интерфейс, который представляет одно из следующих:
 
 - Объект разрешения точки останова, описывающий расположение в коде, где был привязан точку останова кода.
 

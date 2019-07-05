@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2::ParseText
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 170183924c31933f77903a89851c15c463c326e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677969"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325915"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Выполняет синтаксический анализ выражения в виде текста для дальнейшего определения.
@@ -46,30 +49,24 @@ int ParseText(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pszCode`
+## <a name="parameters"></a>Параметры
+`pszCode`\
+[in] Выражение для синтаксического анализа.
 
- [in] Выражение для синтаксического анализа.
+`dwFlags`\
+[in] Сочетание флагов из [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) перечисления, который управляет синтаксического анализа.
 
-`dwFlags`
+`nRadix`\
+[in] Основание системы счисления для использования при анализе все числовые данные в `pszCode`.
 
- [in] Сочетание флагов из [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) перечисления, который управляет синтаксического анализа.
+`ppExpr`\
+[out] Возвращает [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , представляющий проанализированное выражение. оно будет готов для привязки и оценки.
 
-`nRadix`
+`pbstrError`\
+[out] Возвращает сообщение об ошибке, если выражение содержит ошибку.
 
- [in] Основание системы счисления для использования при анализе все числовые данные в `pszCode`.
-
-`ppExpr`
-
- [out] Возвращает [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) , представляющий проанализированное выражение. оно будет готов для привязки и оценки.
-
-`pbstrError`
-
- [out] Возвращает сообщение об ошибке, если выражение содержит ошибку.
-
-`pichError`
-
- [out] Возвращает индекс символа ошибки в `pszCode` Если выражение содержит ошибку.
+`pichError`\
+[out] Возвращает индекс символа ошибки в `pszCode` Если выражение содержит ошибку.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

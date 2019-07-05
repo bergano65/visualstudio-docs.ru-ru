@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd447f0d68eb729c0bd25a65e99e871d7927c49b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898588"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Практическое руководство. указание расположения, из которого будет производиться установка пользователями
 При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, расположение, где пользователи могут загрузить и установить приложение не обязательно расположение, где первоначально было опубликовано приложение. Например в некоторых организациях разработчик может опубликовать приложение на промежуточном сервере, и затем администратор перемещает приложение на веб-сервере.
@@ -39,7 +39,7 @@ ms.locfileid: "60087681"
 
 2. Перейдите на вкладку **Публикация**.
 
-3. В поле URL-адрес установки, введите расположение установки, используя полный URL-адрес в формате *http://www.microsoft.com/ApplicationName*, или UNC-путь в формате  *\\\Server\ApplicationName*.
+3. В поле URL-адрес установки, введите расположение установки, используя полный URL-адрес в формате *http://www.microsoft.com/ApplicationName* , или UNC-путь в формате  *\\\Server\ApplicationName*.
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Указание расположения, в которое копируются файлы средой Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)

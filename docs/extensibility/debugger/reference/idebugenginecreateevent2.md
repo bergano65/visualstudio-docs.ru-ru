@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineCreateEvent2 interface
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eec2d1dd536b70432b761d613389acdac80cd6d5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 088de1540a07e85bfb474308987302d8a7c613ba
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702308"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352462"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 Модуль отладки (DE) отправляет этот интерфейс диспетчер отладки сеансов (SDM) при создании экземпляра DE.
@@ -37,7 +37,7 @@ IDebugEngineCreateEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugEngineCreateEvent2`.
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|Извлекает объект, представляющий только что созданный отладчик (DE).|
 

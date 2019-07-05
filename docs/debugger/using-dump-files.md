@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff4cc9501552b0a482e93aa1917a175680d6d78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f0b7edf8ef2670b70dbee25b70cac7b0597490b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099994"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676360"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Файлы дампа в отладчике Visual Studio
 
@@ -74,7 +74,7 @@ ms.locfileid: "60099994"
 1. Чтобы указать путь и выберите имя для файла дампа, затем установите **Сохранить**.
 
 >[!NOTE]
->Можно создать файлы дампа с помощью любой программы, которая поддерживает формат минидампов Windows. Такой программой, например, может быть программа командной строки **Procdump** из [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default), которая может создавать файлы аварийного дампа процесса на основе триггеров или по требованию. См. в разделе [требования и ограничения](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) сведения об использовании других средств для создания файлов дампа.
+>Можно создать файлы дампа с помощью любой программы, которая поддерживает формат минидампов Windows. Такой программой, например, может быть программа командной строки **Procdump** из [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default), которая может создавать файлы аварийного дампа процесса на основе триггеров или по требованию. См. в разделе [требования и ограничения](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) сведения об использовании других средств для создания файлов дампа.
 
 ## <a name="BKMK_Open_a_dump_file"></a> Открытие файла дампа
 

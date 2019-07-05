@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::WriteAt method
 - WriteAt method
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e23ec439e352f6aa4e3b4d307bea76ebfdcf00
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5eefaee08d64952681e91711cdf8347186123e57
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714716"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347138"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 Записывает указанное число байтов памяти, начиная с указанного адреса.
@@ -41,18 +44,15 @@ int WriteAt(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pStartContext`
+## <a name="parameters"></a>Параметры
+`pStartContext`\
+[in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объект, который указывает, где начинается запись байтов.
 
- [in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объект, который указывает, где начинается запись байтов.
+`dwCount`\
+[in] Число байтов для записи.
 
- `dwCount`
-
- [in] Число байтов для записи.
-
- `rgbMemory`
-
- [in] Запись байтов. Этот массив предполагается, что по крайней мере `dwCount` байт размером.
+`rgbMemory`\
+[in] Запись байтов. Этот массив предполагается, что по крайней мере `dwCount` байт размером.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если не все байты, может быть записан или возвращает код ошибки (обычно `E_FAIL`).

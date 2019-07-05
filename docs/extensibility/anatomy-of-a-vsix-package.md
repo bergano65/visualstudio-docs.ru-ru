@@ -7,17 +7,17 @@ helpviewer_keywords:
 - vsix
 - packages
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70563378ca3599c1e558cd9e359979383e10f78b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d8f0b748e80726d69e5b826982596a0a32675bd7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721528"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352279"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Составляющие пакета VSIX
 Пакет VSIX является *.vsix* файл, содержащий одно или несколько расширений Visual Studio вместе с метаданными Visual Studio использует для классификации и установить расширения. Эти метаданные содержатся в манифесте VSIX и *[Content_Types] .xml* файл. Пакет VSIX также может содержать один или несколько *Extension.vsixlangpack* файлы для обеспечения локализованный текст программы установки и может содержать дополнительные пакеты VSIX для установки зависимостей.
@@ -25,7 +25,7 @@ ms.locfileid: "56721528"
  Формат пакета VSIX соответствует стандарту Open Packaging Conventions (OPC). Пакет содержит двоичные файлы и вспомогательные файлы, вместе с *[Content_Types] .xml* файл и *.vsix* файл манифеста. Один пакет VSIX может содержать выходные данные из нескольких проектов или даже несколькими пакетами, которые имеют свои собственные манифестов.
 
 > [!NOTE]
->  Имена файлов, включенных в пакетах VSIX не должны содержать пробелы, а также символы, которые зарезервированы в универсальных кодов ресурса (URI), как определенные в разделе [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).
+> Имена файлов, включенных в пакетах VSIX не должны содержать пробелы, а также символы, которые зарезервированы в универсальных кодов ресурса (URI), как определенные в разделе [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).
 
 ## <a name="the-vsix-manifest"></a>Манифест VSIX
  Манифест VSIX содержит сведения о расширения должны быть установлены и соответствует схеме VSX. Дополнительные сведения см. в разделе [Справочник по схеме 1.0 расширение VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Пример манифеста VSIX, см. в разделе [элемент PackageManifest (корневой элемент, Схема VSX)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).

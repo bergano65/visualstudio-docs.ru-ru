@@ -1,5 +1,5 @@
 ---
-title: Отладка диалоговое окно страниц свойств источника файлы, общие свойства решения | Документация Майкрософт
+title: Отладка страницы свойств источника файлов/общее решение или свойства
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83bed0588a0959ab85906d949e1b0752396223ae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 631ec8ed4f6b5cd410b3af51c55fa87935b9cddf
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609713"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263135"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Страница "Исходные файлы отладки", вкладка "Общие свойства", диалоговое окно "Страницы свойств решения"
 Эта страница свойств задает место, где отладчик будет осуществлять поиск исходных файлов при отладке решения.
@@ -38,7 +38,7 @@ ms.locfileid: "56609713"
 
  **Не выполнять поиск следующих исходных файлов** введите имена файлов, которые требуется отключить отладчик для чтения. Если отладчик найдет один из этих файлов в одном из указанных каталогов, отладчик пропустит этот файл. Если во время отладки появится диалоговое окно **Поиск исходного текста** и вы нажмете **Отмена**, искомый файл будет добавлен к этому списку, и отладчик прекратит поиск этого файла.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)

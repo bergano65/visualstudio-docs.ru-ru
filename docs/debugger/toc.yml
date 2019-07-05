@@ -38,22 +38,26 @@
   items:
     - name: Навигация по коду с помощью отладчика
       href: navigating-through-code-with-the-debugger.md
-    - name: Использование точек останова
-      href: using-breakpoints.md
+    - name: Приостановка кода
       items:
+        - name: Использование точек останова
+          href: using-breakpoints.md
         - name: Устранение неполадок точек останова
           href: troubleshooting-breakpoints.md
     - name: Проверка данных
-      href: debugger-windows.md
       items:
+        - name: Проверка данных в окнах отладчика
+          href: debugger-windows.md
         - name: Проверка переменных
           href: autos-and-locals-windows.md
-        - name: Установка контрольных значений для переменных
-          href: watch-and-quickwatch-windows.md
+        - name: Просмотр переменных
           items:
+            - name: Установка контрольных значений для переменных
+              href: watch-and-quickwatch-windows.md
             - name: Выражения в отладчике
-              href: expressions-in-the-debugger.md
               items:
+                - name: Использование выражений отладчика
+                  href: expressions-in-the-debugger.md
                 - name: Определители формата в C++
                   href: format-specifiers-in-cpp.md
                 - name: Оператор контекста (C++)
@@ -66,14 +70,16 @@
           href: view-data-values-in-data-tips-in-the-code-editor.md
         - name: Просмотр строковых значений в визуализаторе
           href: view-strings-visualizer.md
-        - name: Просмотр дизассемблированного кода
-          href: how-to-use-the-disassembly-window.md
+        - name: Дизассемблированный код
           items:
+            - name: Просмотр дизассемблированного кода
+              href: how-to-use-the-disassembly-window.md
             - name: Перемещение вверх или вниз в области памяти
               href: how-to-page-up-or-down-in-memory.md
-        - name: Просмотр значений регистров
-          href: how-to-use-the-registers-window.md
+        - name: Значения регистров
           items:
+            - name: Просмотр значений регистров
+              href: how-to-use-the-registers-window.md
             - name: Сведения об окне регистров
               href: debugging-basics-registers-window.md
             - name: Отображение и скрытие групп регистров
@@ -84,35 +90,40 @@
           href: memory-windows.md
         - name: Просмотр свойств XAML во время отладки
           href: inspect-xaml-properties-while-debugging.md
-    - name: Просмотр стека вызовов
-      href: how-to-use-the-call-stack-window.md
+    - name: Стек вызовов
       items:
+        - name: Просмотр стека вызовов
+          href: how-to-use-the-call-stack-window.md
         - name: Создание визуальной карты стека вызовов
           href: map-methods-on-the-call-stack-while-debugging-in-visual-studio.md
         - name: Смешанный код и отсутствующие данные в окне стека вызовов
           href: mixed-code-and-missing-information-in-the-call-stack-window.md
-    - name: Изменение кода и продолжение отладки
-      href: edit-and-continue.md
+    - name: Приостановка кода и продолжение
       items:
+        - name: Изменение кода и продолжение отладки
+          href: edit-and-continue.md
         - name: Включение и выключение режима "Изменить и продолжить"
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: Остановка внесения изменений в код
           href: how-to-stop-code-changes.md
         - name: Edit and Continue (Visual C++)
-          href: edit-and-continue-visual-cpp.md
           items:
+            - name: Изменить и продолжить (Visual C++)
+              href: edit-and-continue-visual-cpp.md
             - name: Поддерживаемые изменения кода (C++)
               href: supported-code-changes-cpp.md
         - name: 'Режим "Изменить и продолжить" (Visual C#)'
-          href: edit-and-continue-visual-csharp.md
           items:
+            - name: 'Изменить и продолжить (C#)'
+              href: edit-and-continue-visual-csharp.md
             - name: 'Изменить и продолжить (C#)'
               href: how-to-use-edit-and-continue-csharp.md
             - name: Поддерживаемые изменения кода
               href: supported-code-changes-csharp.md
         - name: Режим "Изменить и продолжить" (Visual Basic)
-          href: edit-and-continue-visual-basic.md
           items:
+            - name: Изменить и продолжить (Visual Basic)
+              href: edit-and-continue-visual-basic.md
             - name: '"Изменить и продолжить" в режиме приостановки выполнения'
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
         - name: Создание и отладка выполняющегося кода XAML
@@ -121,37 +132,42 @@
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Просмотр данных отладчика
       items:
-        - name: Просмотр модулей
-          href: how-to-use-the-modules-window.md
+        - name: Модули
           items:
+            - name: Просмотр модулей
+              href: how-to-use-the-modules-window.md
             - name: 'Поиск библиотеки DLL, в которой произошел сбой программы'
               href: how-to-find-which-dll-your-program-crashed-in.md
         - name: Просмотр документов скриптов
           href: how-to-view-script-documents.md
-    - name: Советы и рекомендации по работе с отладчиком
-      href: debugger-tips-and-tricks.md
+    - name: Советы и рекомендации
       items:
+        - name: Советы и рекомендации по работе с отладчиком
+          href: debugger-tips-and-tricks.md
         - name: Присоединение к выполняемым процессам с использованием отладчика
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
         - name: Отладка во время разработки
           href: walkthrough-debugging-at-design-time.md
-        - name: Выполнение отладки с помощью JIT-отладчика
-          href: debug-using-the-just-in-time-debugger.md
+        - name: JIT-отладчик
           items:
+            - name: Выполнение отладки с помощью JIT-отладчика
+              href: debug-using-the-just-in-time-debugger.md
             - name: Отключение JIT-отладки
               href: just-in-time-debugging-in-visual-studio.md
     - name: Настройка отладки
       items:
-        - name: Управление исключениями с помощью отладчика
-          href: managing-exceptions-with-the-debugger.md
+        - name: Исключения
           items:
+            - name: Управление исключениями с помощью отладчика
+              href: managing-exceptions-with-the-debugger.md
             - name: Возобновление выполнения после исключения
               href: continuing-execution-after-an-exception.md
             - name: Анализ системного кода после исключения
               href: how-to-examine-system-code-after-an-exception.md
-            - name: Проверки времени выполнения машинного кода
-              href: how-to-use-native-run-time-checks.md
+            - name: Проверки в машинном коде во время выполнения
               items:
+                - name: Проверки времени выполнения машинного кода
+                  href: how-to-use-native-run-time-checks.md
                 - name: Настройка проверок во время выполнения машинного кода
                   href: native-run-time-checks-customization.md
                 - name: 'Написание функции, сообщающей об ошибке во время выполнения'
@@ -162,19 +178,22 @@
           href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
         - name: Отладка пользовательского кода
           href: just-my-code.md
-        - name: Параметры отладчика и подготовка
-          href: debugger-settings-and-preparation.md
+        - name: Параметры отладчика
           items:
+            - name: Параметры отладчика и подготовка
+              href: debugger-settings-and-preparation.md
             - name: Параметры проекта отладчика
-              href: debugger-project-settings.md
               items:
+                - name: Параметры проекта
+                  href: debugger-project-settings.md
                 - name: Установка параметров отладчика
                   href: how-to-specify-debugger-settings.md
                 - name: Конфигурации отладки и выпуска
                   href: how-to-set-debug-and-release-configurations.md
-                - name: Параметры проекта для конфигурации отладки C++
-                  href: project-settings-for-a-cpp-debug-configuration.md
+                - name: Параметры проекта (C++)
                   items:
+                    - name: Параметры проекта для конфигурации отладки C++
+                      href: project-settings-for-a-cpp-debug-configuration.md
                     - name: Включение параметров отладки в Visual C++ (-D_DEBUG)
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Параметры страниц свойств для веб-проектов
@@ -183,9 +202,10 @@
                   href: project-settings-for-csharp-debug-configurations.md
                 - name: Параметры проекта для конфигурации отладки Visual Basic
                   href: project-settings-for-a-visual-basic-debug-configuration.md
-            - name: Отладка проектов библиотеки DLL
-              href: debugging-dll-projects.md
+            - name: Проекты DLL
               items:
+                - name: Отладка проектов библиотеки DLL
+                  href: debugging-dll-projects.md
                 - name: Отладка из проекта DLL
                   href: how-to-debug-from-a-dll-project.md
                 - name: Отладка в смешанном режиме
@@ -198,24 +218,28 @@
               href: debugging-and-the-hosting-process.md
             - name: Указание версии платформы .NET Framework для отладки
               href: how-to-specify-a-dotnet-framework-version-for-debugging.md
-        - name: Создание пользовательских представлений данных
-          href: viewing-data-in-the-debugger.md
+        - name: Пользовательские представления
           items:
-            - name: Создание пользовательских представлений для объектов C++
-              href: create-custom-views-of-native-objects.md
+            - name: Создание пользовательских представлений данных
+              href: viewing-data-in-the-debugger.md
+            - name: Пользовательские представления (C++)
               items:
+                - name: Создание пользовательских представлений для объектов C++
+                  href: create-custom-views-of-native-objects.md
                 - name: Совместимость пользовательского визуализатора Visual C++
                   href: visual-cpp-custom-visualizer-compatibility.md
-            - name: Создание настраиваемых представлений управляемых объектов
-              href: create-custom-views-of-dot-managed-objects.md
+            - name: Пользовательские представления (управляемые)
               items:
+                - name: Создание настраиваемых представлений управляемых объектов
+                  href: create-custom-views-of-dot-managed-objects.md
                 - name: Указание отображаемых сведений для отладчика
                   href: using-the-debuggerdisplay-attribute.md
                 - name: Указание отображаемого типа для отладчика
                   href: using-debuggertypeproxy-attribute.md
-            - name: Создание пользовательских визуализаторов данных
-              href: create-custom-visualizers-of-data.md
+            - name: Пользовательские визуализаторы
               items:
+                - name: Создание пользовательских визуализаторов данных
+                  href: create-custom-visualizers-of-data.md
                 - name: Архитектура визуализатора
                   href: visualizer-architecture.md
                 - name: 'Пошаговое руководство. Создание визуализатора на C#'
@@ -233,8 +257,9 @@
         - name: Восстановление скрытых команд отладчика
           href: how-to-restore-hidden-debugger-commands.md
     - name: Удаленная отладка
-      href: remote-debugging.md
       items:
+        - name: Удаленная отладка
+          href: remote-debugging.md
         - name: Удаленная отладка ASP.NET Core на компьютере со службами IIS
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: Удаленная отладка ASP.NET на компьютере со службами IIS
@@ -251,9 +276,10 @@
           href: configure-the-windows-firewall-for-remote-debugging.md
         - name: "Разблокировка скачивания в Windows\_Server"
           href: remote-debugging-unblock-file-download.md
-        - name: Ошибки удаленной отладки и их устранение
-          href: remote-debugging-errors-and-troubleshooting.md
+        - name: Справочник по ошибкам удаленной отладки
           items:
+            - name: Ошибки удаленной отладки и их устранение
+              href: remote-debugging-errors-and-troubleshooting.md
             - name: Монитор удаленной отладки Microsoft Visual Studio на удаленном компьютере не имеет разрешения на подключение к этому компьютеру
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
             - name: При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе.
@@ -298,14 +324,16 @@
               href: error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md
             - name: Удаленный компьютер не отображается в диалоговом окне удаленных подключений
               href: error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md
-    - name: Отладка многопоточных приложений
-      href: debug-multithreaded-applications-in-visual-studio.md
+    - name: Многопотоковая отладка приложений
       items:
+        - name: Отладка многопоточных приложений
+          href: debug-multithreaded-applications-in-visual-studio.md
         - name: Начало отладки многопоточных приложений
           href: get-started-debugging-multithreaded-apps.md
         - name: Средства для отладки потоков и процессов
-          href: debug-threads-and-processes.md
           items:
+            - name: Отладка потоков и процессов
+              href: debug-threads-and-processes.md
             - name: Использование окна "Параллельные стеки"
               href: using-the-parallel-stacks-window.md
             - name: Использование окна контроля параллельных данных
@@ -335,8 +363,9 @@
         - name: Установка имени потока в управляемом коде
           href: how-to-set-a-thread-name-in-managed-code.md
     - name: IntelliTrace
-      href: intellitrace.md
       items:
+        - name: Обзор IntelliTrace
+          href: intellitrace.md
         - name: Просмотр моментальных снимков с помощью IntelliTrace
           href: view-snapshots-with-intellitrace.md
         - name: Просмотр событий с помощью IntelliTrace
@@ -347,9 +376,10 @@
           href: historical-debugging.md
         - name: Анализ приложения при помощи отладки с ведением журнала
           href: historical-debugging-inspect-app.md
-        - name: Диагностика проблем после развертывания
-          href: diagnose-problems-after-deployment.md
+        - name: После развертывания
           items:
+            - name: Диагностика проблем после развертывания
+              href: diagnose-problems-after-deployment.md
             - name: Использование автономного сборщика данных IntelliTrace
               href: using-the-intellitrace-stand-alone-collector.md
             - name: Использование Microsoft Monitoring Agent
@@ -358,9 +388,10 @@
           href: using-saved-intellitrace-data.md
         - name: Справочник по API для расширения IntelliTrace
           href: api-reference-for-intellitrace-extensibility.md
-    - name: Отладка служб Azure
-      href: debug-azure-apps.md
+    - name: Службы Azure
       items:
+        - name: Отладка служб Azure
+          href: debug-azure-apps.md
         - name: Отладка живого приложения Azure
           href: debug-live-azure-applications.md
         - name: Отладка живого приложения виртуальной машины Azure
@@ -373,17 +404,20 @@
           href: debug-live-azure-apps-troubleshooting.md
         - name: Отладка перехода по времени работающей виртуальной машины Azure
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
-    - name: Отладка конкретных типов приложений
-      href: debugging-applications.md
+    - name: Типы приложений
       items:
+        - name: Отладка конкретных типов приложений
+          href: debugging-applications.md
         - name: Отладка 64-разрядных приложений
           href: debug-64-bit-applications.md
-        - name: Отладка приложений UWP
-          href: debugging-windows-store-and-windows-universal-apps.md
+        - name: Приложения универсальной платформы Windows
           items:
-            - name: Запуск сеанса отладки для приложения UWP
-              href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
+            - name: Отладка приложений UWP
+              href: debugging-windows-store-and-windows-universal-apps.md
+            - name: Запуск сеанса отладки (UWP)
               items:
+                - name: Запуск сеанса отладки для приложения UWP
+                  href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
                 - name: Отладка приложений UWP на удаленном компьютере
                   href: run-windows-store-apps-on-a-remote-machine.md
                 - name: Запуск приложений UWP в симуляторе
@@ -394,9 +428,10 @@
               href: debug-installed-app-package.md
             - name: Отладка XAML в Blend
               href: debug-xaml-in-blend.md
-            - name: Отладка HTML и CSS
-              href: quickstart-debug-html-and-css.md
+            - name: HTML и CSS
               items:
+                - name: Отладка HTML и CSS
+                  href: quickstart-debug-html-and-css.md
                 - name: Обновление приложения (JavaScript)
                   href: refresh-an-app-javascript.md
                 - name: Отладка элемента управления WebView
@@ -409,12 +444,14 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Предварительное получение содержимого для приложений Microsoft Store
               href: prefetch-content-for-windows-store-apps.md
-        - name: Отладка управляемого кода
-          href: debugging-managed-code.md
+        - name: Управляемый код
           items:
-            - name: 'Подготовка к отладке. Типы проектов C#, F# и Visual Basic'
-              href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
+            - name: Отладка управляемого кода
+              href: debugging-managed-code.md
+            - name: Подготовка к отладке
               items:
+                - name: 'Подготовка к отладке. Типы проектов C#, F# и Visual Basic'
+                  href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
                 - name: Управляемая отладка. Рекомендуемые значения свойств
                   href: managed-debugging-recommended-property-settings.md
                 - name: Подготовка к отладке. приложения Windows Forms
@@ -441,18 +478,20 @@
               href: error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md
             - name: Отладка исходного кода .NET Framework
               href: how-to-debug-dotnet-framework-source.md
-            - name: Отладка WPF
-              href: debugging-wpf.md
+            - name: WPF
               items:
+                - name: Отладка WPF
+                  href: debugging-wpf.md
                 - name: Использование визуализатора дерева WPF
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: Отображение данных трассировки WPF
                   href: how-to-display-wpf-trace-information.md
             - name: 'Отладка F#'
               href: debugging-f-hash.md
-        - name: Отладка машинного кода
-          href: debugging-native-code.md
+        - name: Машинный код
           items:
+            - name: Отладка машинного кода
+              href: debugging-native-code.md
             - name: Подготовка к отладке. Типы проектов Visual C++
               href: debugging-preparation-visual-cpp-project-types.md
             - name: Отладка оптимизированного кода
@@ -465,9 +504,10 @@
               href: how-to-debug-inline-assembly-code.md
             - name: Методы отладки MFC
               href: mfc-debugging-techniques.md
-            - name: Методы отладки CRT
-              href: crt-debugging-techniques.md
+            - name: Отладка CRT
               items:
+                - name: Методы отладки CRT
+                  href: crt-debugging-techniques.md
                 - name: Использование библиотеки отладки CRT
                   href: crt-debug-library-use.md
                 - name: Макросы для создания отчетов
@@ -476,14 +516,16 @@
                   href: debug-versions-of-heap-allocation-functions.md
                 - name: Сведения о куче отладки CRT
                   href: crt-debug-heap-details.md
-                - name: Написание функций отладочных ловушек
-                  href: debug-hook-function-writing.md
+                - name: Функции ловушек
                   items:
+                    - name: Написание функций отладочных ловушек
+                      href: debug-hook-function-writing.md
                     - name: Функции-ловушки клиентского блока
                       href: client-block-hook-functions.md
                     - name: Функции-ловушки выделения
-                      href: allocation-hook-functions.md
                       items:
+                        - name: Отладка функций-ловушек выделения
+                          href: allocation-hook-functions.md
                         - name: Ловушки выделения и выделения памяти CRT
                           href: allocation-hooks-and-c-run-time-memory-allocations.md
                     - name: Отчетные функции-ловушки
@@ -491,8 +533,9 @@
                 - name: Нахождение утечек памяти с помощью библиотеки CRT
                   href: finding-memory-leaks-using-the-crt-library.md
             - name: Вопросы и ответы по отладке машинного кода
-              href: debugging-native-code-faqs.md
               items:
+                - name: Вопросы и ответы по отладке машинного кода
+                  href: debugging-native-code-faqs.md
                 - name: Как отладить нарушение доступа?
                   href: how-can-i-debug-an-access-violation-q.md
                 - name: Как отладить нарушения доступа при запуске программы без отладчика?
@@ -513,17 +556,20 @@
                   href: how-can-i-debug-windows-api-functions-q.md
                 - name: 'Возврат к функции, вызвавшей MFC, при прерывании работы в MFC'
                   href: how-to-get-back-to-the-function-that-called-mfc-if-halted.md
-            - name: Отладка COM и ActiveX
-              href: com-and-activex-debugging.md
+            - name: COM и ActiveX
               items:
-                - name: Отладка сервера и контейнеров COM
-                  href: com-server-and-container-debugging.md
+                - name: Отладка COM и ActiveX
+                  href: com-and-activex-debugging.md
+                - name: Сервера и контейнер COM
                   items:
+                    - name: Отладка сервера и контейнеров COM
+                      href: com-server-and-container-debugging.md
                     - name: Отладка клиентов и серверов COM с помощью отладки RPC
                       href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
-                - name: Отладка элемента ActiveX
-                  href: how-to-debug-an-activex-control.md
+                - name: Элемент управления ActiveX
                   items:
+                    - name: Отладка элемента ActiveX
+                      href: how-to-debug-an-activex-control.md
                     - name: Отладка элемента ActiveX с привязкой данных
                       href: debugging-a-data-bound-activex-control.md
                 - name: Средства отладки модели COM
@@ -534,9 +580,10 @@
           href: debugging-gpu-code.md
         - name: Диагностика графики
           href: graphics/toc.yml
-        - name: Отладка приложений ASP.NET
-          href: how-to-enable-debugging-for-aspnet-applications.md
+        - name: ASP.NET
           items:
+            - name: Отладка приложений ASP.NET
+              href: how-to-enable-debugging-for-aspnet-applications.md
             - name: 'Отладка ASP.NET: системные требования'
               href: aspnet-debugging-system-requirements.md
             - name: Выполнение рабочего процесса с учетной записью пользователя
@@ -549,12 +596,14 @@
               href: walkthrough-debugging-a-web-form.md
             - name: Отладка исключений ASP.NET
               href: how-to-debug-aspnet-exceptions.md
-            - name: Отладка веб-приложений. Ошибки и устранение неполадок
-              href: debugging-web-applications-errors-and-troubleshooting.md
+            - name: 'Веб-приложения: Ошибки и устранение неполадок'
               items:
-                - name: Отладка веб-приложений. Устранение неполадок
-                  href: debugging-web-applications-troubleshooting.md
+                - name: Отладка веб-приложений. Ошибки и устранение неполадок
+                  href: debugging-web-applications-errors-and-troubleshooting.md
+                - name: 'Веб-приложения: Устранение неполадок'
                   items:
+                    - name: Отладка веб-приложений. Устранение неполадок
+                      href: debugging-web-applications-troubleshooting.md
                     - name: Проверка параметров свойства IIS
                       href: how-to-verify-iis-property-settings.md
                 - name: Веб-узел использует IP-адрес
@@ -569,42 +618,48 @@
                   href: error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md
                 - name: Время ожидания при отладке веб-служб
                   href: error-timeout-while-debugging-web-services.md
-                - name: Не удается запустить отладку на веб-сервере
-                  href: error-unable-to-start-debugging-on-the-web-server.md
+                - name: Невозможно начать отладку
                   items:
+                    - name: Не удается запустить отладку на веб-сервере
+                      href: error-unable-to-start-debugging-on-the-web-server.md
                     - name: Веб-серверу не удалось найти запрошенный ресурс
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Веб-сервер настроен неправильно
                       href: error-the-web-server-is-not-configured-correctly.md
-        - name: Отладка веб-приложений
-          href: debugging-web-applications.md
+        - name: Веб-приложения
           items:
+            - name: Отладка веб-приложений
+              href: debugging-web-applications.md
             - name: JavaScript Console commands
               href: javascript-console-commands.md
             - name: Сочетания клавиш (HTML и JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: Отладка клиентского скрипта
-              href: client-side-script-debugging.md
+            - name: Клиентские скрипты
               items:
+                - name: Отладка клиентского скрипта
+                  href: client-side-script-debugging.md
                 - name: Ограничения на отладку скриптов
                   href: limitations-on-script-debugging.md
-                - name: Присоединение к скрипту
-                  href: how-to-attach-to-script.md
+                - name: Присоединение (скрипт)
                   items:
+                    - name: Присоединение к скрипту
+                      href: how-to-attach-to-script.md
                     - name: 'Предупреждение: Отладка скриптов отключена'
                       href: warning-script-debugging-disabled.md
-        - name: Отладка служб WCF
-          href: debugging-wcf-services.md
+        - name: Службы WCF
           items:
+            - name: Отладка служб WCF
+              href: debugging-wcf-services.md
             - name: Ограничения на отладку WCF
               href: limitations-on-wcf-debugging.md
             - name: Работа со службами WCF
               href: how-to-step-into-wcf-services.md
             - name: Отладка резидентной службы WCF
               href: how-to-debug-a-self-hosted-wcf-service.md
-    - name: Использование файлов дампа
-      href: using-dump-files.md
+    - name: Файлы дампа
       items:
+        - name: Использование файлов дампа
+          href: using-dump-files.md
         - name: API расширяемости сводки файла дампа
           href: dump-file-summary-extensibility-api.md
     - name: Безопасность отладчика
@@ -612,15 +667,17 @@
 - name: Ссылка
   items:
     - name: Справочник по пользовательскому отладочному интерфейсу
-      href: debugging-user-interface-reference.md
       items:
+        - name: Справочник по пользовательскому интерфейсу для отладки
+          href: debugging-user-interface-reference.md
         - name: Выбор точек останова - диалоговое окно
           href: choose-breakpoints-dialog-box.md
         - name: Настройка брандмауэра для удаленной отладки - диалоговое окно
           href: configure-firewall-for-remote-debugging-dialog-box.md
-        - name: 'Отладка, диалоговое окно "Параметры"'
-          href: debugging-options-dialog-box.md
+        - name: Параметры отладки
           items:
+            - name: 'Отладка, диалоговое окно "Параметры"'
+              href: debugging-options-dialog-box.md
             - name: 'Страница "Общие", папка "Отладка", диалоговое окно "Параметры"'
               href: general-debugging-options-dialog-box.md
             - name: 'Страница "JIT-отладка", папка "Отладка", диалоговое окно "Параметры"'
@@ -643,9 +700,10 @@
           href: symbol-load-information-dialog-box.md
         - name: Диалоговое окно "При попадании в точку останова"
           href: when-breakpoint-is-hit-dialog-box.md
-        - name: Диалоговое окно ошибок и предупреждений отладки
-          href: debugging-errors-and-warning-dialog-boxes.md
+        - name: Ошибки и предупреждения отладки
           items:
+            - name: Диалоговое окно ошибок и предупреждений отладки
+              href: debugging-errors-and-warning-dialog-boxes.md
             - name: Сбой проверочного утверждения - диалоговое окно
               href: assertion-failed-dialog-box.md
             - name: Не удается изменить значение - диалоговое окно
@@ -698,12 +756,14 @@
               href: mixed-mode-debugging-is-only-supported-when-using-microsoft-dotnet-framework-2-0-or-3-0.md
     - name: SDK для доступа к интерфейсу отладки
       href: debug-interface-access/debug-interface-access-sdk.md
-    - name: Справка по Spy++
-      href: spy-increment-help.md
+    - name: Spy++
       items:
-        - name: Использование Spy++
-          href: using-spy-increment.md
+        - name: Справка по Spy++
+          href: spy-increment-help.md
+        - name: Руководство по Spy++
           items:
+            - name: Использование Spy++
+              href: using-spy-increment.md
             - name: Введение в Spy++
               href: introducing-spy-increment.md
             - name: Запуск Spy++
@@ -718,21 +778,24 @@
               href: how-to-change-fonts.md
             - name: Сворачивание и разворачивание деревьев Spy++
               href: how-to-expand-and-collapse-spy-increment-trees.md
-        - name: Представления Spy++
-          href: spy-increment-views.md
+        - name: Представления в Spy++
           items:
-            - name: Представление окон
-              href: windows-view.md
+            - name: Представления Spy++
+              href: spy-increment-views.md
+            - name: Windows
               items:
+                - name: Представление окон
+                  href: windows-view.md
                 - name: Использование средства поиска
                   href: how-to-use-the-finder-tool.md
                 - name: Поиск окна в представлении окон
                   href: how-to-search-for-a-window-in-windows-view.md
                 - name: Отображение свойств окна
                   href: how-to-display-window-properties.md
-            - name: Представление сообщений
-              href: messages-view.md
+            - name: Сообщения
               items:
+                - name: Представление сообщений
+                  href: messages-view.md
                 - name: Управление представлением "Сообщения"
                   href: how-to-control-messages-view.md
                 - name: Открытие представления сообщений из окна поиска
@@ -745,26 +808,30 @@
                   href: message-codes.md
                 - name: Отображение свойств сообщения
                   href: how-to-display-message-properties.md
-            - name: Представление процессов
-              href: processes-view.md
+            - name: Процессы
               items:
+                - name: Представление процессов
+                  href: processes-view.md
                 - name: Поиск процесса в представлении процессов
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: Отображение свойств процесса
                   href: how-to-display-process-properties.md
-            - name: Представление потоков
-              href: threads-view.md
+            - name: Потоки
               items:
+                - name: Представление потоков
+                  href: threads-view.md
                 - name: Поиск потока в представлении потоков
                   href: how-to-search-for-a-thread-in-threads-view.md
                 - name: Отображение свойств потока
                   href: how-to-display-thread-properties.md
         - name: Справочник по Spy++
-          href: spy-increment-reference.md
           items:
+            - name: Обзор справочника по Spy++
+              href: spy-increment-reference.md
             - name: Команды меню
-              href: menu-commands.md
               items:
+                - name: Обзор команд меню
+                  href: menu-commands.md
                 - name: Команды меню Spy
                   href: spy-menu-commands.md
                 - name: Команды меню "Дерево"
@@ -782,8 +849,9 @@
             - name: Диалоговое окно "Шрифт" (Справка по Microsoft Spy++)
               href: font-dialog-box-microsoft-spy-increment-help.md
             - name: Средства поиска для представлений Spy++
-              href: search-tools-for-spy-increment-views.md
               items:
+                - name: Обзор средства поиска для представлений Spy++
+                  href: search-tools-for-spy-increment-views.md
                 - name: Диалоговое окно "Поиск окна"
                   href: find-window-dialog-box.md
                 - name: Диалоговое окно "Поиск окна"
@@ -794,9 +862,10 @@
                   href: process-search-dialog-box.md
                 - name: Диалоговое окно "Поиск потока"
                   href: thread-search-dialog-box.md
-            - name: Диалоговое окно "Свойства окна"
-              href: window-properties-dialog-box.md
+            - name: Свойства окна
               items:
+                - name: Диалоговое окно "Свойства окна"
+                  href: window-properties-dialog-box.md
                 - name: Вкладка "Общие" диалогового окна "Свойства окна"
                   href: general-tab-window-properties-dialog-box.md
                 - name: Вкладка "Стили" диалогового окна "Свойства окна"
@@ -807,9 +876,10 @@
                   href: class-tab-window-properties-dialog-box.md
                 - name: Вкладка "Процесс" диалогового окна "Свойства окна"
                   href: process-tab-window-properties-dialog-box.md
-            - name: Диалоговое окно "Параметры сообщения"
-              href: message-options-dialog-box.md
+            - name: Параметры сообщения
               items:
+                - name: Диалоговое окно "Параметры сообщения"
+                  href: message-options-dialog-box.md
                 - name: Вкладка "Окна" диалогового окна "Параметры сообщения"
                   href: windows-tab-message-options-dialog-box.md
                 - name: Вкладка "Сообщения" диалогового окна "Параметры сообщения"
@@ -818,9 +888,10 @@
                   href: output-tab-message-options-dialog-box.md
             - name: Диалоговое окно "Свойства сообщения"
               href: message-properties-dialog-box.md
-            - name: Диалоговое окно "Свойства процесса"
-              href: process-properties-dialog-box.md
+            - name: Свойства процесса
               items:
+                - name: Диалоговое окно "Свойства процесса"
+                  href: process-properties-dialog-box.md
                 - name: Вкладка "Общие" диалогового окна "Свойства процесса"
                   href: general-tab-process-properties-dialog-box.md
                 - name: Вкладка "Память" диалогового окна "Свойства процесса"
@@ -829,14 +900,16 @@
                   href: page-file-tab-process-properties-dialog-box.md
                 - name: Вкладка "Пространство" диалогового окна "Свойства процесса"
                   href: space-tab-process-properties-dialog-box.md
-            - name: Диалоговое окно "Свойства потока"
-              href: thread-properties-dialog-box.md
+            - name: Свойства потока
               items:
+                - name: Диалоговое окно "Свойства потока"
+                  href: thread-properties-dialog-box.md
                 - name: Вкладка "Общие" диалогового окна "Свойства потока"
                   href: general-tab-thread-properties-dialog-box.md
             - name: Прочие диалоговые окна
-              href: other-dialog-boxes.md
               items:
+                - name: Дополнительные диалоговые окна
+                  href: other-dialog-boxes.md
                 - name: О Microsoft Spy++
                   href: about-microsoft-spy-increment.md
                 - name: Уведомление об авторских правах для справки по Spy++

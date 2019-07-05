@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetFunctionLineOffset
 - GetFunctionLineOffset
 ms.assetid: 51460f5a-4e98-427a-8315-27246e24fb61
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73bd3184396ec020e8337efe6397503263be5359
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c1edec584cfd11e469db8a3f1468dcdfc5768e01
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706292"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336783"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 Извлекает адрес в функцию, которая представляет смещение заданной строки.
@@ -39,18 +42,15 @@ int GetFunctionLineOffset(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pAddress`
+## <a name="parameters"></a>Параметры
+`pAddress`\
+[in] Адрес, представляющий функцию.
 
- [in] Адрес, представляющий функцию.
+`dwLine`\
+[in] Смещение от начала функции линии.
 
-`dwLine`
-
- [in] Смещение от начала функции линии.
-
-`ppNewAddress`
-
- [out] Новый адрес, который представляет смещение от начала функции линии.
+`ppNewAddress`\
+[out] Новый адрес, который представляет смещение от начала функции линии.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

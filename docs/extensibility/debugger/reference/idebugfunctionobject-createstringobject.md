@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateStringObject method
 ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dd79223d3b51195e9f45490cc8aa95c10aca8e8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 620aef7474f7f669e22fcb44c7df2611dc50bafb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689906"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313614"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 Создает объект string.
@@ -38,14 +41,12 @@ int CreateStringObject(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pcstrString`
+## <a name="parameters"></a>Параметры
+`pcstrString`\
+[in] Строковое значение для создаваемого строкового объекта.
 
- [in] Строковое значение для создаваемого строкового объекта.
-
- `ppObject`
-
- [out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , представляющий только что созданный строковый объект.
+`ppObject`\
+[out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , представляющий только что созданный строковый объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.

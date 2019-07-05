@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::GetMemoryContext method
 ms.assetid: 801c5b60-acff-4822-b23d-e9c7bbca8a0f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7c647f12e80adab70dd626347d52e07505e3704
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9876d4e4315041f4a4212a7ef50077982f3d2df0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720462"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327267"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 Этот метод преобразует адрес объекта или адрес памяти контекста памяти.
@@ -40,18 +43,15 @@ int GetMemoryContext(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pField`
+## <a name="parameters"></a>Параметры
+`pField`\
+[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описывающий объект, который требуется найти. Если `NULL`, затем с помощью `dwConstant` вместо этого.
 
- [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) описывающий объект, который требуется найти. Если `NULL`, затем с помощью `dwConstant` вместо этого.
+`dwConstant`\
+[in] Адрес памяти константы, например 0x5000.
 
- `dwConstant`
-
- [in] Адрес памяти константы, например 0x5000.
-
- `ppMemCxt`
-
- [out] Возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс, который представляет адрес объекта, или адрес в памяти.
+`ppMemCxt`\
+[out] Возвращает [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс, который представляет адрес объекта, или адрес в памяти.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

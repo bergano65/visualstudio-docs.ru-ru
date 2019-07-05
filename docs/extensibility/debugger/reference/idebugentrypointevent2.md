@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEntryPointEvent2 interface
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d682c43a8d1714ddcd32fc310db98b648a5a32af
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5c2cd0f92e5bd954c8247fa86c39f3ad206aa99b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715987"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345100"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 Модуль отладки (DE) отправляет этот интерфейс диспетчер отладки сеансов (SDM) в том случае, когда программа близок к выполнению первой инструкции кода пользователя.

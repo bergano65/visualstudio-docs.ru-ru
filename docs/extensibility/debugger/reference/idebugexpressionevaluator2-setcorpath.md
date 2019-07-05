@@ -6,17 +6,20 @@ helpviewer_keywords:
 - SetCorPath
 - IDebugExpressionEvaluator2::SetCorPath
 ms.assetid: 27b614ff-7325-4f9b-8da4-61ee020c9410
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2495100a7ce52bcd937018414ed7198cf4ca0b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e8300f3cfc54ece6a57c31fcca819ffd8d275d28
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706565"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313163"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
 Задает путь к общеязыковой среды выполнения (CLR), загрузить в отладчик.
@@ -35,10 +38,9 @@ int SetCorPath(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pcstrCorPath`
-
- [in] Путь к CLR загружен в отладчик.
+## <a name="parameters"></a>Параметры
+`pcstrCorPath`\
+[in] Путь к CLR загружен в отладчик.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

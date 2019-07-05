@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetState method
 - IDebugBoundBreakpoint2::GetState method
 ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 716721a94b5fa31bfff6dfcae647e1de2f45a995
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d930b1a68b97548c02edd35fa48ef8f3a1935181
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715613"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314492"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 Получает состояние данная связанная точка останова.
@@ -37,10 +40,9 @@ int GetState( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pState`
-
- [out] Возвращает значение из [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисление, описывающее состояние точки останова.
+## <a name="parameters"></a>Параметры
+`pState`\
+[out] Возвращает значение из [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) перечисление, описывающее состояние точки останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

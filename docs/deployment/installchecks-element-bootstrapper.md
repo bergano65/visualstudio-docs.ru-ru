@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 79bbb413c31c77e59ec39b706d4937421096168f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666459"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747531"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; элемент (установщик)
 `InstallChecks` Элемент поддерживает запуск тестов на локальном компьютере, чтобы убедиться в том, что все соответствующие предварительные требования для приложения были установлены.
@@ -144,7 +144,7 @@ ms.locfileid: "59666459"
  Хотя элементов, расположенных под `InstallChecks` определить какие тесты нужно запускать, но не выполняют их. Для выполнения тестов, необходимо создать `Command` элементов, расположенных под `Commands` элемент.
 
 ## <a name="example"></a>Пример
- В следующем примере кода показано `InstallChecks` элемент, так как он используется в файле продукта для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ В следующем примере кода показано `InstallChecks` элемент, так как он используется в файле продуктов для платформы .NET Framework.
 
 ```xml
 <InstallChecks>

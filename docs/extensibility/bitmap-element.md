@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5881681871f541c238fa44b03f6e21fd95a3a395
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cba0f5ccd3228466740a9fb907e6c20ce5400c48
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689282"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333583"
 ---
 # <a name="bitmap-element"></a>Элемент Bitmap
 Определяет растрового изображения. Растровое изображение загружается из ресурса или из файла.
@@ -32,7 +32,7 @@ ms.locfileid: "56689282"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |guid|Обязательный. Идентификатор GUID идентификатора GUID и идентификатора команды.<br /><br /> Атрибут guid для точечного рисунка не связан с любой VSPackage или другие группы команд.  Оно должно быть уникальным для определение битовой карты и не должны использоваться в любых других целях.|
 |Идентификатор ресурса|Идентификатор GUID и идентификатора идентификатор команды. Идентификатор ресурса или атрибут href не требуется.<br /><br /> Атрибут resID имеет целочисленный идентификатор ресурса, определяет набора точечных рисунков, который должен быть загружен во время объединения таблицы команд.  При загрузке таблицы команд, растровых изображений, заданных идентификатором ресурса будет загружаться из ресурсов одного модуля.|

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 ms.assetid: 31b7d151-9ce2-438e-b405-f8cc46b9f537
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13085a14a8ef7684056897dd2bb8d049e82fe94a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 91c0ecb800ebd97314677fd896329eb8110cee4c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692636"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351378"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 Уведомляет получатель события о том, что атрибуты документа были обновлены.
@@ -36,10 +39,9 @@ int onUpdateDocumentAttributes( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `textdocattr`
-
- [in] Сочетание флагов из [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) перечисление, указывающее обновленные атрибуты документа.
+## <a name="parameters"></a>Параметры
+`textdocattr`\
+[in] Сочетание флагов из [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) перечисление, указывающее обновленные атрибуты документа.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

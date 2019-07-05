@@ -6,17 +6,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding to IDE
 - IDE, adding toolbars
 ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0485b6649396239d2b6501c65e801a03767d5df1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 12fcf63c09d805f23fcbf0d041ab41ede7f85f32
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082299"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352350"
 ---
 # <a name="add-a-toolbar"></a>Добавить панель инструментов
 В этом пошаговом руководстве показано, как добавить панель инструментов в интегрированной среде разработки Visual Studio.
@@ -87,7 +87,7 @@ ms.locfileid: "60082299"
 
 6. Щелкните правой кнопкой мыши в строке меню Visual Studio, чтобы получить список панелей инструментов. Выберите **тестирования инструментов**.
 
-7. Теперь вы увидите на панели инструментов значок справа от Find в значок файлов. Если щелкнуть значок, появится окно сообщения с текстом **ToolbarTestCommandPackage. Внутри IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
+7. Теперь вы увидите на панели инструментов значок справа от Find в значок файлов. Если щелкнуть значок, появится окно сообщения с текстом **ToolbarTestCommandPackage. Внутри IDEToolbar.ToolbarTestCommand.MenuItemCallback()** .
 
 ## <a name="see-also"></a>См. также
 - [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be3fb721fd058f127b4d361c769d4cdfdc1e4b92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 392afc210798611442a12d5f51f150ddc79f85ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408362"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Пошаговое руководство. Написание визуализатора на Visual Basic
 В данном пошаговом руководстве демонстрируется создание простого визуализатора с помощью [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Визуализатор, который будет создан в данном пошаговом руководстве, отображает содержимое строки с помощью окна сообщения Windows Forms. Этот строковый визуализатор – простой пример, на основе которого можно создавать визуализаторы для других типов данных, более подходящих для ваших проектов.
@@ -56,7 +56,7 @@ ms.locfileid: "60050893"
 2. Измените имя с Class1.vb на что-нибудь более осмысленное, например DebuggerSide.vb.
 
    > [!NOTE]
-   >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически изменит объявление класса в DebuggerSide.vb в соответствии с новым именем файла.
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] автоматически изменит объявление класса в DebuggerSide.vb в соответствии с новым именем файла.
 
 3. В **обозревателе решений** щелкните правой кнопкой мыши **My First Visualizer** и в контекстном меню выберите команду **Добавить ссылку**.
 

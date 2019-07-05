@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentText2::GetText
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d2906c4421c570542579d0326167cd6ecbafb395
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678362"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330650"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Получение текста из указанной позиции в документе.
@@ -42,22 +45,18 @@ int GetText(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pos`
+## <a name="parameters"></a>Параметры
+`pos`\
+[in] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая указывает расположение текста, который требуется получить.
 
- [in] Объект [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) структуру, которая указывает расположение текста, который требуется получить.
+`cMaxChars`\
+[in] Максимальное количество символов текста, который требуется получить.
 
-`cMaxChars`
+`pText`\
+[in, out] Указатель на буфер, который должен быть заполнен с помощью требуемый текст. Этот буфер должен иметь возможность содержать по крайней мере `cMaxChars` число расширенных символов.
 
- [in] Максимальное количество символов текста, который требуется получить.
-
-`pText`
-
- [in, out] Указатель на буфер, который должен быть заполнен с помощью требуемый текст. Этот буфер должен иметь возможность содержать по крайней мере `cMaxChars` число расширенных символов.
-
-`pcNumChars`
-
- [out] Возвращает число фактически полученных символов.
+`pcNumChars`\
+[out] Возвращает число фактически полученных символов.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

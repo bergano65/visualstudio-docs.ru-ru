@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: df4dfa880104b9989e49761beb823c960de85391
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56725025"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346058"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Извлекает настраиваемый атрибут с заданным именем.
@@ -39,18 +42,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pszCustomAttributeName`
+## <a name="parameters"></a>Параметры
+`pszCustomAttributeName`\
+[in] Имя настраиваемого атрибута.
 
- [in] Имя настраиваемого атрибута.
-
-`ppBlob`
-
+`ppBlob`\
 [in, out] Массив байтов, которые содержат данные настраиваемого атрибута.
 
-`pdwLen`
-
- [out] Длина в байтах `ppBlob` параметра.
+`pdwLen`\
+[out] Длина в байтах `ppBlob` параметра.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успеха возвращает `S_OK`. Если настраиваемый атрибут не существует, возвращает `S_FALSE`. В противном случае возвращается код ошибки.

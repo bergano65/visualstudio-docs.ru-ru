@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetResolutionInfo
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b82921c2d08ed74ba05bb2ccf8ecfb642fa9cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6e5b847590a066f10580eeaaa3d600089b70a2e0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701113"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352859"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 Возвращает сведения о разрешении точки останова, описывающий эту точку останова.
@@ -38,14 +41,12 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwFields`
+## <a name="parameters"></a>Параметры
+`dwFields`\
+[in] Сочетание флагов из [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) перечисление, определите, какие поля из `pBPResolutionInfo` параметр должны заполняться.
 
- [in] Сочетание флагов из [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) перечисление, определите, какие поля из `pBPResolutionInfo` параметр должны заполняться.
-
- `pBPResolutionInfo`
-
- [out] [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры необходимо заполнить сведения о данной точки останова.
+`pBPResolutionInfo`\
+[out] [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) структуры необходимо заполнить сведения о данной точки останова.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

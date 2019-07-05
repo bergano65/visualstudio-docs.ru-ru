@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsFunctionDeleted
 ms.assetid: b276bd25-6658-4898-bc36-04ecdf92aa2f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d056b14da0b41cf26278fc1e8cd0087332b682f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0c16b4e89e89477a5dd11a7d358f441c62f13db8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678882"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336560"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
 Определяет, что функция по адресу указанного отладки удаляется.
@@ -34,10 +37,9 @@ int IsFunctionDeleted(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pAddress`
-
- [in] Представленный адрес отладки [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс. Этот адрес должен быть METHOD_ADDRESS.
+## <a name="parameters"></a>Параметры
+`pAddress`\
+[in] Представленный адрес отладки [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс. Этот адрес должен быть METHOD_ADDRESS.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Если функция удаляется, возвращает `S_OK`. Если функция существует, возвращает `S_FALSE`.

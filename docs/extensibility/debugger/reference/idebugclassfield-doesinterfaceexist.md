@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::DoesInterfaceExist method
 ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7884bff62321ed07c3a11a6db65855b1edea0adc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 57bf8d0af54773b03fd23994b83fe6d2fac1306c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688411"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337232"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 Определяет, если конкретный интерфейс определен в классе.
@@ -36,10 +39,9 @@ int DoesInterfaceExist(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszInterfaceName`
-
- [in] Строка, содержащая искомое имя интерфейса.
+## <a name="parameters"></a>Параметры
+`pszInterfaceName`\
+[in] Строка, содержащая искомое имя интерфейса.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK, возвращает S_FALSE, если интерфейс не существует. в противном случае возвращает код ошибки.

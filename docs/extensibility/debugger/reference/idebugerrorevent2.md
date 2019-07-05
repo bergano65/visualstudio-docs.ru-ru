@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorEvent2 interface
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ba7e17cb07e1a2d57d75dc573ceca5ebd522b2e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 945b04fc2d5a370ef4b2d17abd90e6bdaa818553
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681170"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327661"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 Этот интерфейс задает сообщение об ошибке возвращаются пользователю.
@@ -37,7 +37,7 @@ IDebugErrorEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  Этот интерфейс реализует следующий метод:
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |`GetErrorMessage`|Возвращает сообщение об ошибке в понятном виде.|
 

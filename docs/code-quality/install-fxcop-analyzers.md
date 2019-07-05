@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 017077717f5353fed941124d69d258beaab04e40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e2fc29723f66fce0fda72a9af1fe40888bd2ce3
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823692"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820641"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Установка анализаторы FxCop в Visual Studio
 
@@ -43,7 +43,7 @@ ms.locfileid: "62823692"
 
 | Версия Visual Studio | Версия пакета анализатора FxCop |
 | - | - |
-| Visual Studio 2017 версии 15,8 и более поздние версии | [2.9.2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.2) |
+| Visual Studio 2019 (все версии)<br />Visual Studio 2017 версии 15,8 и более поздние версии | [2.9.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.3) |
 | Visual Studio 2017 версии 15.5 для версии 15.7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
 | Visual Studio 2017 версии 15.3 для 15.4 | [2.3.0-Beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Visual Studio 2017 версии 15.0 для 15.2 | [2.0.0-Beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
@@ -53,9 +53,9 @@ ms.locfileid: "62823692"
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>Чтобы установить анализаторы FxCop как VSIX
 
-В Visual Studio 2017 версии 15.5 и более поздних версий, можно установить [Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) расширение, которое содержит все анализаторы FxCop для управляемых проектов.
-
 ::: moniker range="vs-2017"
+
+В Visual Studio 2017 версии 15.5 и более поздних версий, можно установить [Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) расширение, которое содержит все анализаторы FxCop для управляемых проектов.
 
 1. В Visual Studio выберите **средства** > **расширения и обновления**.
 
@@ -64,40 +64,52 @@ ms.locfileid: "62823692"
    > [!NOTE]
    > Кроме того, чтобы скачать расширение непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
 
+2. Разверните **Online** в левой области, а затем выберите **Visual Studio Marketplace**.
+
+3. В поле поиска введите «анализ кода» и проверьте наличие **Microsoft Code Analysis 2017** расширения.
+
+   ![Расширение Microsoft Code Analysis 2017](media/extensions-and-updates-code-analysis.png)
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
+[Microsoft Code Analysis 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019) расширения содержит все анализаторы FxCop для управляемых проектов. Чтобы установить это расширение:
 
 1. В Visual Studio выберите **расширения** > **Управление расширениями**.
 
    **Управление расширениями** откроется диалоговое окно.
 
    > [!NOTE]
-   > Кроме того, чтобы скачать расширение непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+   > Кроме того, чтобы скачать расширение непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019).
+
+2. Разверните **Online** в левой области, а затем выберите **Visual Studio Marketplace**.
+
+3. В поле поиска введите «анализ кода» и проверьте наличие **Microsoft Code Analysis 2019** расширения.
+
+   ![Расширение Microsoft Code Analysis 2019](media/manage-extensions-code-analysis.png)
 
 ::: moniker-end
 
-1. Разверните **Online** в левой области, а затем выберите **Visual Studio Marketplace**.
-
-1. В поле поиска введите «анализ кода» и проверьте наличие **Microsoft Code Analysis 2017** расширения.
-
-   ![Расширение Microsoft Code Analysis](media/extensions-and-updates-code-analysis.png)
-
-1. Выберите **загрузить**.
+4. Выберите **загрузить**.
 
    Расширение загружается.
 
-1. Выберите **ОК** чтобы закрыть диалоговое окно, а затем закройте все экземпляры Visual Studio для запуска **установщик VSIX**.
+5. Выберите **ОК** чтобы закрыть диалоговое окно, а затем закройте все экземпляры Visual Studio для запуска **установщик VSIX**.
 
    **Установщик VSIX** откроется диалоговое окно.
 
+   ::: moniker range="vs-2017"
+
    ![Установщик VSIX для анализа кода Microsoft](media/vsix-installer-code-analysis.png)
 
-1. Выберите **изменить** чтобы начать установку.
+   ::: moniker-end
 
-1. После одну-две минуты не завершит установку. Нажмите кнопку **Закрыть**.
+6. Выберите **изменить** чтобы начать установку.
 
-1. Снова откройте Visual Studio.
+   После одну-две минуты не завершит установку.
+
+7. Выберите **закрыть**, затем снова откройте Visual Studio.
 
 ::: moniker range="vs-2017"
 

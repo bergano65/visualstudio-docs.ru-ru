@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5c7a915301dabc0afcfae450c87a435d12e10d15
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042385"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745667"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Устранение неполадок, приводящих к определенным ошибкам в развертываниях ClickOnce
 В этой статье перечислены следующие распространенные ошибки, которые могут возникнуть при развертывании [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, а также шаги по устранению каждой проблемы.
@@ -36,7 +36,7 @@ ms.locfileid: "60042385"
 
  Во-первых, убедитесь, что сервер настроен для связи *.application* расширение с содержимым типа «application/x-ms приложение».
 
- Если сервер настроен правильно, убедитесь, что [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] установлен на компьютере. Если [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] установлен, и вы по-прежнему видите эту проблему, попробуйте удалить и переустановить [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] необходимо повторно зарегистрировать тип содержимого на клиенте.
+ Если сервер настроен правильно, проверьте, что в .NET Framework 2.0 установлен на компьютере. Если установлен .NET Framework 2.0 и вы по-прежнему возникает эта проблема, попробуйте удалить и установить .NET Framework 2.0, чтобы повторно зарегистрировать содержимое введите на стороне клиента.
 
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Появляется сообщение об ошибке «не удалось получить приложение. Файлы, отсутствующие в развертывании» или «загрузка приложения было прервано, проверьте наличие ошибок сети и повторите попытку позже»
  Это сообщение указывает, что один или несколько файлов, на которую ссылается [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифесты не могут быть загружены. Самый простой способ устранения этой ошибки — в попытке загрузить URL-адрес, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] говорит: не удается загрузить. Ниже приведены некоторые возможные причины:

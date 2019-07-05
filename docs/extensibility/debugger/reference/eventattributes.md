@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EVENTATTRIBUTES enumeration
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58417471e37dd335c2fa751492f2db357274417a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a3361d27a9e0a4a1f56035c0d2af20d9fa9a9303
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686903"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337769"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 Определяет атрибуты события.
@@ -49,20 +52,27 @@ public enum enum_EVENTATTRIBUTES {
 };
 ```
 
-## <a name="members"></a>Участники
-EVENT_ASYNCHRONOUS указывает, что событие является асинхронным, и требуется ответ на событие.
+## <a name="fields"></a>Поля
+`EVENT_ASYNCHRONOUS`\
+Указывает, что событие является асинхронным, и требуется ответ на событие.
 
-EVENT_SYNCHRONOUS указывает, что событие является синхронным, Ответить с помощью параметра [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
+`EVENT_SYNCHRONOUS`\
+Указывает, что событие является синхронным, Ответить с помощью параметра [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).
 
-EVENT_STOPPING указывает, что это событие остановки. Необходимо использовать вместе с `EVENT_ASYNCHRONOUS` или `EVENT_SYNCHRONOUS`.
+`EVENT_STOPPING`\
+Указывает, что это событие остановки. Необходимо использовать вместе с `EVENT_ASYNCHRONOUS` или `EVENT_SYNCHRONOUS`.
 
-EVENT_ASYNC_STOP указывает событие асинхронной остановки. В настоящее время нет такого события. Этот флаг является только заполнителем.
+`EVENT_ASYNC_STOP`\
+Указывает событие асинхронной остановки. В настоящее время нет такого события. Этот флаг является только заполнителем.
 
-EVENT_SYNC_STOP указывает на событие синхронной остановке (сочетание `EVENT_SYNCHRONOUS` и `EVENT_STOPPING`). Это значение используется модулем отладки (DE), когда он отправляет событие stopping. Ответ осуществляется посредством вызова [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [шаг](../../../extensibility/debugger/reference/idebugprogram2-step.md), или [Продолжить](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
+`EVENT_SYNC_STOP`\
+Указывает на событие синхронной остановке (сочетание `EVENT_SYNCHRONOUS` и `EVENT_STOPPING`). Это значение используется модулем отладки (DE), когда он отправляет событие stopping. Ответ осуществляется посредством вызова [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [шаг](../../../extensibility/debugger/reference/idebugprogram2-step.md), или [Продолжить](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
 
-EVENT_IMMEDIATE указывает событие, которое отправляется немедленно и синхронно в интегрированную среду разработки. Этот флаг используется в сочетании с другими флагами как `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, или `EVENT_SYNC_STOP` для указания типа события и тот факт, что механизм ответа (при наличии) будет известен.
+`EVENT_IMMEDIATE`\
+Указывает событие, которое отправляется немедленно и синхронно в интегрированную среду разработки. Этот флаг используется в сочетании с другими флагами как `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, или `EVENT_SYNC_STOP` для указания типа события и тот факт, что механизм ответа (при наличии) будет известен.
 
-EVENT_EXPRESSION_EVALUATION события является результатом вычисления выражения.
+`EVENT_EXPRESSION_EVALUATION`\
+Это событие является результатом вычисления выражения.
 
 ## <a name="remarks"></a>Примечания
 Эти значения передаются в `dwAttrib` параметр [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) метод.

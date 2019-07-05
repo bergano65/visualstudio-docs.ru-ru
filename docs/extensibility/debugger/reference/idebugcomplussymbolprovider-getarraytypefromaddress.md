@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetArrayTypeFromAddress
 - IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 ms.assetid: cc0c53f1-8c0f-49fa-8dbe-bc155e9ce0ef
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5d6e06a30d6c76cc36bf7a7d64f97016bc60803
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dff0080dbdbe0c312f82ce66a3556ed50f9220a6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712740"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338701"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 Извлекает сведения о типе о заданного массива, указанного адреса его отладки.
@@ -41,22 +44,18 @@ int GetArrayTypeFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pAddress`
+## <a name="parameters"></a>Параметры
+`pAddress`\
+[in] Представленный адрес отладки [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
 
- [in] Представленный адрес отладки [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+`pSig`\
+[in] Массив, для проверки.
 
-`pSig`
+`dwSigLength`\
+[in] Длина в байтах `pSig` массива.
 
- [in] Массив, для проверки.
-
-`dwSigLength`
-
- [in] Длина в байтах `pSig` массива.
-
-`ppField`
-
- [out] Возвращает тип, представленный [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) интерфейс.
+`ppField`\
+[out] Возвращает тип, представленный [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) интерфейс.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

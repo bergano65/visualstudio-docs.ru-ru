@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 626911d4eb9f23655ad2808e1e79ec6635cb8b00
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 308ef67bab1d91ace71a5e741a1ed998037a9868
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678609"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352736"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 Преобразует строку выражения проанализированное выражение с учетом поставщик символов и адрес оценке кадра.
@@ -48,38 +51,30 @@ HRESULT Parse2 (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`upstrExpression`
+## <a name="parameters"></a>Параметры
+`upstrExpression`\
+[in] Строка выражения, который необходимо проанализировать.
 
- [in] Строка выражения, который необходимо проанализировать.
+`dwFlags`\
+[in] Коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, которые определяют, как выражение для синтаксического анализа.
 
-`dwFlags`
+`nRadix`\
+[in] Основание системы счисления для использования для интерпретации все числовые данные.
 
- [in] Коллекция [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) константы, которые определяют, как выражение для синтаксического анализа.
+`pSymbolProvider`\
+[in] Интерфейс поставщика символов.
 
-`nRadix`
+`pAddress`\
+[in] Адрес оценке кадра.
 
- [in] Основание системы счисления для использования для интерпретации все числовые данные.
+`pbstrError`\
+[out] Возвращает ошибку в виде удобочитаемого текста.
 
-`pSymbolProvider`
+`pichError`\
+[out] Возвращает позицию символа начинается ошибка в строке выражения.
 
- [in] Интерфейс поставщика символов.
-
-`pAddress`
-
- [in] Адрес оценке кадра.
-
-`pbstrError`
-
- [out] Возвращает ошибку в виде удобочитаемого текста.
-
-`pichError`
-
- [out] Возвращает позицию символа начинается ошибка в строке выражения.
-
-`ppParsedExpression`
-
- [out] Возвращает проанализированное выражение в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.
+`ppParsedExpression`\
+[out] Возвращает проанализированное выражение в [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

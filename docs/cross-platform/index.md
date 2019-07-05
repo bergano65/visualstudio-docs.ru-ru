@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.technology: vs-ide-mobile
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: d9c50abb749829843c7794688b94bf84f5bc1fb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f52b537a5e6a02dbaccb02f275c380d0ec355fdf
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824923"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160121"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Документация по разработке мобильных приложений на C++
 
@@ -92,7 +92,7 @@ ms.locfileid: "62824923"
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">Интегрированная среда разработки и средства разработки Visual C++</a><p>
+                        <p><a href="/cpp/ide/read-and-understand-code-cpp">Чтение и написание кода</a><p>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@ ms.locfileid: "62824923"
                 <div class="card">
                     <div class="cardText">
                         <h3>Платформы</h3>
-                        <p><a href="/cpp/windows/universal-windows-apps-cpp">Документация по универсальной платформе Windows (UWP)</a></p>
+                        <p><a href="/cpp/cppcx/universal-windows-apps-cpp">Документация по универсальной платформе Windows (UWP)</a></p>
                         <p><a href="https://developer.apple.com/reference">Документация по API для iOS</a></p>
                         <p><a href="https://developer.android.com/guide/index.html">Документация по API для Android</a></p>
                     </div>

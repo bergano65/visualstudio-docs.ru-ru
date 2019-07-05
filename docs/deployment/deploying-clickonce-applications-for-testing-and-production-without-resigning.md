@@ -1,5 +1,5 @@
 ---
-title: Развертывание приложений ClickOnce для тестовых и рабочих серверов без повторного подписывания | Документация Майкрософт
+title: Развертывание приложений ClickOnce без повторного подписывания
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,18 +19,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e111b0d04b8e703a694917985a0559c05584e25b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0b1abda86c8fdd80c20b03a6d3869d025d0a7aaa
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065510"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263297"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Развертывание приложений ClickOnce для тестирования и рабочих серверов без повторного подписывания
 В этой статье описывается это функция появилась в .NET Framework версии 3.5, которая включает развертывание приложений ClickOnce из нескольких мест сети без повторного подписывания приложения ClickOnce или манифесты ClickOnce.
 
 > [!NOTE]
->  Повторного подписывания по-прежнему является предпочтительным для развертывания новых версий приложений. По возможности используйте метод подписания заново. Дополнительные сведения см. в разделе [*Mage.exe* (инструмент создания и изменения манифестов)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+> Повторного подписывания по-прежнему является предпочтительным для развертывания новых версий приложений. По возможности используйте метод подписания заново. Дополнительные сведения см. в разделе [*Mage.exe* (инструмент создания и изменения манифестов)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
  Сторонних разработчиков и независимых поставщиков программного обеспечения, можно выбрать эту функцию, что облегчает пользователям обновлять свои приложения. Эта функция может использоваться в следующих ситуациях:
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: fc124c767ac9a84e62c17fb868e1dc114642f884
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194831"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349033"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Создание элемента управления панели элементов WPF
 
@@ -31,7 +31,7 @@ ms.locfileid: "58194831"
 
 1. Создайте проект VSIX с именем `MyToolboxControl`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, выполняя поиск «vsix».
 
-2. При открытии проекта добавьте **элемента управления панели элементов WPF** шаблон элемента с именем `MyToolboxControl`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#** > **расширяемости** и выберите **элемента управления панели элементов WPF**. В **имя** в нижней части окна, измените имя командного файла для *MyToolboxControl.cs*.
+2. При открытии проекта добавьте **элемента управления панели элементов WPF** шаблон элемента с именем `MyToolboxControl`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#**  > **расширяемости** и выберите **элемента управления панели элементов WPF**. В **имя** в нижней части окна, измените имя командного файла для *MyToolboxControl.cs*.
 
     Теперь решение содержит пользовательский элемент управления, `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> , добавляющий элемент управления **элементов**и **Microsoft.VisualStudio.ToolboxControl** запись ресурса в манифест VSIX для  развертывание.
 

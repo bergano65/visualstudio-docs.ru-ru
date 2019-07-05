@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cf2939f0484c6defb76b88fb072fcd4b51849b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4f72ba56b27d87d785ca561bad0de6e59dfdc2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779723"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744765"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007. По возможности используйте универсальные объекты
 
@@ -34,7 +34,7 @@ ms.locfileid: "62779723"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Видимый извне метод содержит ссылочный параметр типа <xref:System.Object?displayProperty=fullName>и включенная сборка предназначена [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Видимый извне метод содержит ссылочный параметр типа <xref:System.Object?displayProperty=fullName>, а включающая сборка предназначена для .NET Framework 2.0.
 
 ## <a name="rule-description"></a>Описание правила
  Параметр ссылки — это параметр, измененный с использованием `ref` (`ByRef` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ключевое слово. Тип аргумента, переданное для ссылочного параметра должно совпадать с типом ссылочного параметра. Чтобы использовать тип, который является производным от типа ссылочного параметра, тип необходимо сначала привести и присваивается переменной ссылочного типа параметра. Использование универсального метода позволяет всех типов, ограничения, передаваемый в метод без предварительного приведения к типу параметра в ссылочный тип.

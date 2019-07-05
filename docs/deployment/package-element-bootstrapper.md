@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654585"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745764"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Пакет&gt; элемент (установщик)
 `Package` Элемент является элементом верхнего уровня XML в файле пакета.
@@ -147,10 +147,10 @@ ms.locfileid: "59654585"
 |--------------------| - |
 | `Culture` | Обязательный. Определяет язык и региональные параметры для этого пакета, который определяет язык, который будет использоваться. Этот атрибут является ключом к `Strings` элемент, который содержит строки, зависящие от языка и региональных параметров для названия продуктов и сообщений об ошибках во время установки. |
 | `Name` | Обязательный. Имя пакета, который отображается для разработчика в средстве, например [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Этот атрибут является ключом к `Strings` элемент, который должен содержать `String` элемент с `Name` и `Culture` свойства заданы в соответствии с `Name` и `Culture` свойства `Package`. |
-| `LicenseAgreement` | Необязательный параметр. Задает имя файла в распространяемом пакете, который содержит лицензионное соглашение (EULA).  Этот файл может быть либо обычный текст (*.txt*) или в формате RTF. (*.rtf*) |
+| `LicenseAgreement` | Необязательный параметр. Задает имя файла в распространяемом пакете, который содержит лицензионное соглашение (EULA).  Этот файл может быть либо обычный текст ( *.txt*) или в формате RTF. ( *.rtf*) |
 
 ## <a name="example"></a>Пример
- В следующем примере кода показан файл полного пакета для распространения [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ В следующем примере кода показан файл полный пакет для платформы .NET Framework 2.0.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

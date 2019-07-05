@@ -7,14 +7,16 @@
     - name: Краткое руководство
       expanded: true
       items:
-        - name: Средства для контейнеров в Visual Studio
+        - name: Приложение ASP.NET Core в контейнере
           href: container-tools.md
+        - name: Одностраничное приложение React.js в контейнере
+          href: container-tools-react.md
     - name: Учебники
       expanded: true
       items:
-        - name: Руководство. Использование многоконтейнерного приложения с Docker Compose
+        - name: Использование многоконтейнернего приложения с Docker Compose
           href: tutorial-multicontainer.md
-        - name: Руководство. Kubernetes в Visual Studio
+        - name: Kubernetes в Visual Studio
           href: tutorial-kubernetes-tools.md
     - name: Практическое руководство
       items:
@@ -24,7 +26,17 @@
           href: hosting-web-apps-in-docker.md
         - name: Развертывание в службе приложений Azure
           href: deploy-app-service.md
+        - name: Просмотр и диагностика контейнеров
+          href: view-and-diagnose-containers.md
         - name: Настройка инструментов для контейнеров
           href: container-tools-configure.md
+    - name: Основные понятия
+      items:
+        - name: Создание контейнерных приложений
+          href: container-build.md
     - name: Устранение неполадок
       href: troubleshooting-docker-errors.md
+    - name: Справочники
+      items:
+        - name: Свойства MSBuild для проектов контейнеров
+          href: container-msbuild-properties.md

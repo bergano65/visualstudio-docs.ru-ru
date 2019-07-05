@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EVALFLAGS enumeration
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9d59262349891a5c0483297039578c5de4a7b72
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2a56f7d5fe4741fa887814691eddcf8df93030cd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696276"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337880"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Указывает флаги, определяющие вычисления выражения.
@@ -49,20 +52,27 @@ public enum enum_EVALFLAGS {
 }
 ```
 
-## <a name="members"></a>Участники
-EVAL_RETURNVALUE указывает, что возвращаемое значение, если таковое имеется, вычисляется.
+## <a name="fields"></a>Поля
+`EVAL_RETURNVALUE`\
+Указывает, что возвращаемое значение, если таковое имеется, вычисляется.
 
-EVAL_NOSIDEEFFECTS указывает, что не нужно разрешать побочные эффекты.
+`EVAL_NOSIDEEFFECTS`\
+Указывает, что побочные эффекты не разрешается.
 
-EVAL_ALLOWBPS указывает остановку в точки останова.
+`EVAL_ALLOWBPS`\
+Указывает остановки точек останова.
 
-Указывает EVAL_ALLOWERRORREPORT отчетов об ошибках для узла разрешено. В основном используется для вычисления выражений в скрипте в Internet Explorer.
+`EVAL_ALLOWERRORREPORT`\
+Указывает отчетов к узлу разрешен об ошибках. В основном используется для вычисления выражений в скрипте в Internet Explorer.
 
-Функции EVAL_FUNCTION_AS_ADDRESS силы для оценки в качестве адреса, вместо вызова функции.
+`EVAL_FUNCTION_AS_ADDRESS`\
+Функции силы для оценки в качестве адреса, вместо вызова функции.
 
-Функция предотвращает EVAL_NOFUNCEVAL патчем. Например, рассмотрим `int` маркера в выражении `myExpression(int) + 10`. Эта функция может вычисляться правильно, как адрес, а не как значение.
+`EVAL_NOFUNCEVAL`\
+Запрещает вычисляется функция. Например, рассмотрим `int` маркера в выражении `myExpression(int) + 10`. Эта функция может вычисляться правильно, как адрес, а не как значение.
 
-EVAL_NOEVENTS флаг, указывающий, что события, происходящие во время вычисления выражения не следует отправлять в диспетчер отладки сеансов (SDM) или в интегрированную среду разработки.
+`EVAL_NOEVENTS`\
+Флаг, указывающий, что события, происходящие во время вычисления выражения не следует отправлять в диспетчер отладки сеансов (SDM) или в интегрированную среду разработки.
 
 ## <a name="remarks"></a>Примечания
 Эти флаги передаются в качестве аргумента [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) и [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) методы.

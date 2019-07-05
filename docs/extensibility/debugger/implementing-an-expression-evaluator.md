@@ -6,21 +6,21 @@ helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0c2de0d0c50e562bc3e1d971bc771bbc521bfc7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 66a1a0cb78036982923d20e39a3a4c32b288e459
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717693"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326194"
 ---
 # <a name="implement-an-expression-evaluator"></a>Реализация вычислителя выражений
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Вычисления выражения является сложным взаимодействием между модуль отладки (DE), поставщик символов (SP), объект модуля привязки и средство оценки выражений (EE). Эти четыре компонента соединены с интерфейсами, реализованный в одном компоненте и использованы другим.
 
@@ -46,7 +46,7 @@ ms.locfileid: "56717693"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  Запускает EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` предоставляет механизм для описания результат вычисления выражения, такие как локальная переменная, примитив или объект для Visual Studio, которая затем отображает соответствующую информацию в **"Локальные"**, **контрольных значений** , или **Интерпретация** окна.
+  Запускает EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` предоставляет механизм для описания результат вычисления выражения, такие как локальная переменная, примитив или объект для Visual Studio, которая затем отображает соответствующую информацию в **"Локальные"** , **контрольных значений** , или **Интерпретация** окна.
 
   SP присваивается EE путем DE, когда он запрашивает сведения. Хранимая процедура выполняется интерфейсы, которые описывают адреса и поля, такие как следующие интерфейсы, а также производных:
 

@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d2ce13fc55c94514bb9da24e43a5c54671becde5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bfe17100fcdcb0d475a7467233caa51ba7895225
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080661"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747475"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Практическое руководство. Указание версии платформы .NET Framework для отладки (C#, Visual Basic, F#)
 
-Отладчик Visual Studio поддерживает отладку более старых версий Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] и текущей версии. Если запускать приложение из Visual Studio, отладчик всегда может определить правильную версию платформы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] для отлаживаемого приложения. Тем не менее, если приложение уже работает и его запуске отладки нажатием клавиши **присоединить к**, отладчик не всегда можно определить более старой версии [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. В этом случае появится сообщение об ошибке следующего содержания:
+Отладчик Visual Studio поддерживает отладку более старых версиях Microsoft .NET Framework, а также в текущей версии. При запуске приложения из Visual Studio, отладчик всегда может определить правильную версию платформы .NET Framework для отлаживаемого приложения. Тем не менее, если приложение уже работает и его запуске отладки нажатием клавиши **присоединить к**, отладчик не всегда можно определить старую версию платформы .NET Framework. В этом случае появится сообщение об ошибке следующего содержания:
 
 ``` cmd
-The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] version your application is going to use.
+The debugger has made an incorrect assumption about the .NET Framework version your application is going to use.
 ```
 
 В редких случаях, где отображается эта ошибка можно задать раздел реестра для указания отладчику, какую версию использовать.
@@ -62,7 +62,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
 
 9. Закройте **Редактор реестра**.
 
-     Если при запуске отладки по-прежнему возникает сообщение об ошибке, проверьте, что в реестре введен правильный номер версии. Также убедитесь, что используется поддерживаемая Visual Studio версия платформы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Отладчик совместим с текущей версией платформы .NET Framework и предыдущими версиями, но может не обладать прямой совместимостью с будущими версиями.
+     Если при запуске отладки по-прежнему возникает сообщение об ошибке, проверьте, что в реестре введен правильный номер версии. Кроме того, убедитесь, что вы используете версию .NET Framework, поддерживаемая Visual Studio. Отладчик совместим с текущей версией платформы .NET Framework и предыдущими версиями, но может не обладать прямой совместимостью с будущими версиями.
 
 ## <a name="see-also"></a>См. также
 - [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)

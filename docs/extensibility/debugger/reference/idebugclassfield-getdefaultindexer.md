@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::GetDefaultIndexer method
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d884b8e066b539b925e50d4f49f65168ca6156c0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 95387f65382c970ec2e9847e95ff49e139cf69b8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723569"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350756"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Получает имя индексатора по умолчанию.
@@ -36,10 +39,8 @@ int GetDefaultIndexer(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pbstrIndexer`
-
- [out] Возвращает строку, содержащую имя индексатора по умолчанию.
+## <a name="parameters"></a>Параметры
+`pbstrIndexer` [out] Возвращает строку, содержащую имя индексатора по умолчанию.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK, или возвращает S_FALSE, если нет индексатора по умолчанию. В противном случае возвращается код ошибки.

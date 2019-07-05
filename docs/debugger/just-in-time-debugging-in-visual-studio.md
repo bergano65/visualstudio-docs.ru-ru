@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c848281a89213a216bd8ec3ac1e651b6dfc32e4
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905725"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Отключение JIT-отладки
 
@@ -32,7 +32,7 @@ JIT-отладчик предоставляет вариант для запус
 
 - Если вы пытаетесь запустить веб-приложения, Запретить отладку скриптов:
 
-  В Windows **панели управления** > **сеть и Интернет** > **обозревателя**выберите **Disable сценариев отладки () Internet Explorer)** и **отключить отладку сценариев (другие)**. Параметры и конкретные шаги зависят от версии Windows и в браузере.
+  В Windows **панели управления** > **сеть и Интернет** > **обозревателя**выберите **Disable сценариев отладки () Internet Explorer)** и **отключить отладку сценариев (другие)** . Параметры и конкретные шаги зависят от версии Windows и в браузере.
 
   ![JIT-компилятора обозревателя](../debugger/media/jitinternetoptions.png "JIT браузера")
 

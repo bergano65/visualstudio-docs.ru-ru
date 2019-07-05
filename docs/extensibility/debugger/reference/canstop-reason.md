@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CANSTOP_REASON enumeration
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbc4143c61a0223fe3940b4167748727d1ebd560
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 18861d7aa19281528e9a100f57399451194598a9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711622"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327254"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 Используется для определения того, если программы можно остановить выполнение после достижения определенной точке выполнения.
@@ -39,10 +42,12 @@ public enum enum_CANSTOP_REASON {
 };
 ```
 
-## <a name="members"></a>Участники
-CANSTOP_ENTRYPOINT указывает точку входа данной программы.
+## <a name="fields"></a>Поля
+`CANSTOP_ENTRYPOINT`\
+Определяет точку входа данной программы.
 
-CANSTOP_STEPIN указывает шаг с заходом в функцию.
+`CANSTOP_STEPIN`\
+Указывает, шаг с заходом в функцию.
 
 ## <a name="remarks"></a>Примечания
 Передается в качестве аргумента для [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) метод подтверждения с сеанса отладки Manager (SDM), если необходимо остановить после достижения точки входа программы или шаг с заходом в функции или метода.

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsHiddenCode
 ms.assetid: 1352c6ab-7b92-4a16-b2d2-6520b628830e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0c9ef5f6000d3d8b3e446dddc460928e6bf626b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0fff87eff48f5d52c67bba0914654a9646697988
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688450"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321623"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
 Определяет, если код по адресу указанного отладчик будет скрыт.
@@ -34,10 +37,9 @@ int IsHiddenCode(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pAddress`
-
- [in] Адрес отладки, представленного [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+## <a name="parameters"></a>Параметры
+`pAddress`\
+[in] Адрес отладки, представленного [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Если код является скрытым, возвращает `S_OK`; в противном случае возвращает `S_FALSE`.

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ae024f0d91c980fa8e787b21c93d32a6431203e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895848"
 ---
 # <a name="endcapture"></a>EndCapture
 Завершает интервал захвата, начатый функцией `BeginCapture`.
@@ -29,6 +29,6 @@ void EndCapture();
 
  Для захвата интервала необходимо подготовить приложение к захвату и записи данных графики — то есть вам необходимо вызвать метод [Init](init.md) через экземпляр `VsgDbg` класса перед вызовом метода `BeginCapture` или `EndCapture`.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [BeginCapture](begincapture.md)
 - [CaptureCurrentFrame](capturecurrentframe.md)

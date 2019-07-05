@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorEvent2::GetErrorMessage
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95b94dca9ef948a07b5c6458a9c8c53c8612eddd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 049f7a78a414df8202d64c1f25eaba854818c88d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707358"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327715"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 Возвращает информацию, позволяющую конструкции понятное сообщение.
@@ -46,30 +49,24 @@ int GetErrorMessage(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pMessageType`
+## <a name="parameters"></a>Параметры
+`pMessageType`\
+[out] Возвращает значение из [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) перечисление, описывающее тип сообщения.
 
- [out] Возвращает значение из [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) перечисление, описывающее тип сообщения.
+`pbstrErrorFormat`\
+[out] Формат окончательное сообщение для пользователя (см. в разделе «Примечания» Дополнительные сведения).
 
- `pbstrErrorFormat`
+`hrErrorReason`\
+[out] Код ошибки сообщения посвящен.
 
- [out] Формат окончательное сообщение для пользователя (см. в разделе «Примечания» Дополнительные сведения).
+`pdwType`\
+[out] Серьезность ошибки (использовать константы MB_XXX для `MessageBox`, например `MB_EXCLAMATION` или `MB_WARNING`).
 
- `hrErrorReason`
+`pbstrHelpFileName`\
+[out] Путь к файлу справки (указано значение null, если отсутствует файл справки).
 
- [out] Код ошибки сообщения посвящен.
-
- `pdwType`
-
- [out] Серьезность ошибки (использовать константы MB_XXX для `MessageBox`, например `MB_EXCLAMATION` или `MB_WARNING`).
-
- `pbstrHelpFileName`
-
- [out] Путь к файлу справки (указано значение null, если отсутствует файл справки).
-
- `pdwHelpId`
-
- [out] Идентификатор раздела справки для отображения (значение 0, если ни одного раздела).
+`pdwHelpId`\
+[out] Идентификатор раздела справки для отображения (значение 0, если ни одного раздела).
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

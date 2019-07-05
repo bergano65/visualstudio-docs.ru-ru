@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c4a5338422ce99b0bb5a1b8fa003652f3c68212
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 97af3e1bcee89462b7060aaefa8f1fb452d2ab03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400701"
 ---
 # <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
 Получает язык источника.
@@ -39,8 +39,8 @@ HRESULT get_language ( 
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Перечисление CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md)

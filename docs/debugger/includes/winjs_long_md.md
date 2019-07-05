@@ -13,10 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 6c49541f0993e3989aa3291fc5bbc851132f3061
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a16fb8b0da7a74a9cb0d48cf6f7f338b3586db4b
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256057"
 ---
 Библиотека Windows для JavaScript (WinJS)

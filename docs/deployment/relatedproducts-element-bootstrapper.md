@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b8c07cf03dc83969c3500c80b8ee215e3ad69
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 42756b21e631ec14e9c590833f6f0e95a317cc22
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621634"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747461"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; элемент (установщик)
 `RelatedProducts` Элемент определяет другие продукты, которые зависят от или включены в текущий продукт.
@@ -74,7 +74,7 @@ ms.locfileid: "56621634"
 |`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|
 
 ## <a name="example"></a>Пример
- В следующем примере кода указывает, что установщик Microsoft устанавливается вместе с [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]и поэтому не требует отдельной установки.
+ В следующем примере кода указывает, что установщик Microsoft устанавливается вместе с .NET Framework и поэтому не требует отдельной установки.
 
 ```xml
 <RelatedProducts>

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - CreateStringObjectWithLength
 - IDebugFunctionObject2::CreateStringObjectWithLength
 ms.assetid: 1f43ec66-1615-4a4c-8b9d-e933f549f96d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02ee13b62a2238624f1c6d42c52bf67db2ceaae4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ce0fdafc6835fdccc87638e17d3bbd01a1415abb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710413"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313505"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
 Создает строковый объект, который имеет указанную длину.
@@ -39,18 +42,15 @@ int CreateStringObjectWithLength (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pcstrString`
+## <a name="parameters"></a>Параметры
+`pcstrString`\
+[in] Строковое значение для создаваемого строкового объекта.
 
- [in] Строковое значение для создаваемого строкового объекта.
+`uiLength`\
+[in] Длина строки в байтах.
 
- `uiLength`
-
- [in] Длина строки в байтах.
-
- `ppObject`
-
- [out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , представляющий только что созданный строковый объект.
+`ppObject`\
+[out] Возвращает [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , представляющий только что созданный строковый объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

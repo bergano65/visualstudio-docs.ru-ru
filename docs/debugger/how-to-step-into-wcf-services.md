@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: пошаговая отладка служб WCF | Документация Майкрософт'
+title: Практическое руководство. Пошаговая отладка служб WCF | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fe025ed3050f25ec53175c543adfaf7cb48c506
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906482"
 ---
-# <a name="how-to-step-into-wcf-services"></a>Практическое руководство. Пошаговая отладка служб WCF
+# <a name="how-to-step-into-wcf-services"></a>Практическое руководство. пошаговую отладку служб WCF
 В [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] можно выполнить пошаговую отладку службы WFC. Если служба WFC находится в том же решении [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], что и клиент, можно задавать точки останова внутри службы WCF.
 
  Для начала работы необходимо включить отладку в файле app.config или Web.config. Сведения о том, как включить отладку и ограничениях на пошаговую отладку в службах WCF, см. в разделе [ограничения на отладку WCF](../debugger/limitations-on-wcf-debugging.md).
@@ -40,7 +40,7 @@ ms.locfileid: "56689815"
 
 5. Проведите выполнение до точки останова, затем начните пошаговую отладку. Отладчик выполнит пошаговую отладку службы автоматически.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка служб WCF](../debugger/debugging-wcf-services.md)
 - [Ограничения на отладку WCF](../debugger/limitations-on-wcf-debugging.md)
 - [Практическое руководство. Отладка резидентной службы WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

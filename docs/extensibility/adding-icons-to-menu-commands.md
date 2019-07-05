@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d6a6cfeb3cb222d2ef58233b072f80e50c8d9e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d1c54ee6b448e5830b478f10029a0d2d958e7699
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056436"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352362"
 ---
 # <a name="add-icons-to-menu-commands"></a>Добавление значков для команды меню
 Команды могут отображаться на меню и панелей инструментов. На панели инструментов довольно часто команду, чтобы увидеть с помощью просто значок (для экономии места) при меню, что команды обычно отображается значок и текст.
@@ -57,7 +57,7 @@ ms.locfileid: "60056436"
 
     - Задайте `guid` значение имени `<GuidSymbol>` элемент, созданный на предыдущем шаге.
 
-    - Задайте `href` значение относительный путь к файлу точечного рисунка (в данном случае **ресурсы\\< имя файла значка\>**.
+    - Задайте `href` значение относительный путь к файлу точечного рисунка (в данном случае **ресурсы\\< имя файла значка\>** .
 
     - Задайте `usedList` значение IDSymbol, созданную ранее. Этот атрибут задает разделенный запятыми список значков, для использования в VSPackage. Значки, отсутствующие в списке, компиляции исключенные формы.
 

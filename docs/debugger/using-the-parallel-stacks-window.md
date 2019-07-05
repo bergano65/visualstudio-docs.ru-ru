@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902425"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Просмотр потоков и задач в окне параллельных стеков (C#, Visual Basic, C++)
 
@@ -137,7 +137,7 @@ ms.locfileid: "56712545"
 
 ## <a name="see-also"></a>См. также
 - [Начало отладки многопоточных приложений](../debugger/get-started-debugging-multithreaded-apps.md)
-- [Пошаговое руководство. Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)
+- [Пошаговое руководство: отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
 - [Отладка управляемого кода](../debugger/debugging-managed-code.md)
 - [Параллельное программирование](/dotnet/standard/parallel-programming/index)

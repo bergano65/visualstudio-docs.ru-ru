@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetExtendedInfo method
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0321dfbdc719d8e155bb1ee035032e2862bb90e0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3ddae4ea7ecc58d67279ae638d19bf95ec2cc591
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679051"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352654"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 Этот метод возвращает расширенные сведения о поле.
@@ -40,23 +43,20 @@ int GetExtendedInfo(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `guidExtendedInfo`
+## <a name="parameters"></a>Параметры
+`guidExtendedInfo`\
+[in] Выбирает возвращаемые данные. Допустимые значения:
 
- [in] Выбирает возвращаемые данные. Допустимые значения:
-
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |`guidConstantValue`|Значение в виде последовательности байтов.|
 |`guidConstantType`|Тип в виде сигнатура типа.|
 
- `prgBuffer`
+`prgBuffer`\
+[out] Возвращает расширенные сведения.
 
- [out] Возвращает расширенные сведения.
-
- `pdwLen`
-
- [in, out] Возвращает размер расширенных сведений, в байтах.
+`pdwLen`\
+[in, out] Возвращает размер расширенных сведений, в байтах.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - components [Visual Studio SDK], debugging
 - debugging [Debugging SDK], components
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04865145afc5df7edc21611511878263021d4e37
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 28afdd7f12e7d83b042f5c705c85fa567fdbb979
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697290"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345894"
 ---
 # <a name="debugger-components"></a>Компоненты отладчика
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Отладчик реализуется в виде пакета VSPackage и управление сеансом отладки всего. Сеанс отладки включает в себя следующие элементы:

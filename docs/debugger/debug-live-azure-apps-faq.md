@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea593ad5f88ba29f6b1c0d7c64a129b8f71c7f5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58857078"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255991"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Вопросы и ответы по отладке моментальных снимков в Visual Studio
 
@@ -49,7 +49,7 @@ ms.locfileid: "58857078"
 
 Чтобы удалить расширение сайта Snapshot Debugger в Службе приложений, выполните следующие действия.
 
-1. С помощью Cloud Explorer отключите Службу приложений в Visual Studio или на портале Azure.
+1. Отключите службу приложений с помощью Cloud Explorer в Visual Studio или портала Azure.
 1. Последовательно перейдите к сайту Kudu Службы приложений (то есть yourappservice.**scm**.azurewebsites.net), а затем к пункту **Расширения сайта**.
 1. Чтобы его удалить, в расширении сайта Snapshot Debugger нажмите кнопку со значком "X".
 
@@ -57,10 +57,148 @@ ms.locfileid: "58857078"
 
 Чтобы выполнить отладку моментальных снимков, сделанных в Azure, расширению Snapshot Debugger необходимо открыть набор портов. Это те же порты, которые требуются для удаленной отладки. Список портов приведен в [этой](../debugger/remote-debugger-port-assignments.md) статье.
 
+#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>Как отключить расширение удаленного отладчика?
+
+Для служб приложений:
+1. Отключите расширение удаленного отладчика через портал Azure для службы приложений.
+2. Портал Azure > колонка ресурсов вашей службы приложений > *параметры приложения*
+3. Перейдите к *Отладка* раздела и нажмите кнопку *Off* кнопку для *удаленной отладки*.
+
+Для AKS:
+1. Обновление Dockerfile для удаления в разделах, соответствующих [отладчик моментальных снимков Visual Studio на образы Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
+2. Перестройте и повторно разверните измененный образ Docker.
+
+Для масштабирования виртуальных машин и виртуальных машин наборы удалите пулы KeyVaults и NAT для входящего Трафика удаленного отладчика расширения, сертификаты, следующим образом:
+
+1. Удалите расширение удаленного отладчика  
+
+   Чтобы отключить удаленный отладчик для виртуальных машин и масштабируемых наборов виртуальных машин несколькими способами:  
+
+      - Отключить удаленный отладчик с помощью Cloud Explorer  
+
+         - Cloud Explorer > ресурс виртуальной машины > Отключить отладку (отключение отладки не существует для масштабируемого набора в Cloud Explorer виртуальных машин).  
+
+
+      - Отключить удаленный отладчик с помощью сценариев и командлетов PowerShell  
+
+         Для виртуальной машины:  
+
+         ```
+         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
+         ```
+
+         Для масштабируемых наборов виртуальных машин:  
+         ```
+         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName  
+         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name  
+         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension  
+         ```
+
+      - Отключение удаленного отладчика на портале Azure
+         - Портал Azure > колонка ресурсов задает виртуальной машины или виртуальные машины масштабируемого > расширения  
+         - Удалить расширение Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
+
+
+         > [!NOTE]
+         > Масштабируемые наборы виртуальных машин — портал не поддерживает удаление DebuggerListener порты. Необходимо будет использовать Azure PowerShell. Дополнительные сведения см. далее.
+  
+2. Удаление сертификатов и хранилище ключей Azure
+
+   При установке расширения удаленного отладчика для виртуальной машины или масштабируемые наборы виртуальных машин, для проверки подлинности клиента VS с Azure виртуальные машины создаются сертификаты клиента и сервера/масштабируемых наборов виртуальных машин ресурсы.  
+
+   - Сертификат клиента  
+
+      Этот сертификат является самозаверяющий сертификат, находящийся в хранилище сертификатов: / CurrentUser/My /  
+
+      ```
+      Thumbprint                                Subject  
+      ----------                                -------  
+
+      1234123412341234123412341234123412341234  CN=ResourceName  
+      ```
+
+      — Один из способов удалить этот сертификат с компьютера с помощью PowerShell
+
+      ```
+      $ResourceName = 'ResourceName' # from above  
+      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item  
+      ```
+
+   - Сертификат сервера
+      - Соответствующий отпечаток сертификата сервера развертывается как секрет в хранилище ключей Azure. VS попытается найти или создать хранилище ключей с префиксом MSVSAZ * в регион, соответствующий виртуальной машины или масштабируемые наборы виртуальных машин ресурсов. Все виртуальные машины или виртуальной машине масштабируемые наборы ресурсов, развернутых в этом регионе таким образом будут совместно использовать одного хранилища Key Vault.  
+      - Чтобы удалить секрет отпечаток сертификата сервера, перейдите на портал Azure и найти хранилище ключей MSVSAZ * в том же регионе, на котором размещается ваш ресурс. Удаление секрета, который требуется создать метки `remotedebugcert<<ResourceName>>`  
+      - Также необходимо будет удалить секрет сервера из ресурса с помощью PowerShell.  
+
+      Для виртуальных машин:  
+
+      ```
+      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()  
+      Update-AzVM -ResourceGroupName $rgName -VM $vm  
+      ```
+                        
+      Для масштабируемых наборов виртуальных машин:  
+
+      ```
+      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()  
+      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss  
+      ```
+                        
+3. Удалите все пулы NAT для входящего Трафика DebuggerListener (масштабируемый набор виртуальных машин только)  
+
+   Удаленный отладчик вводит пулы NAT входящие DebuggerListener, которые применяются к подсистеме балансировки нагрузки в масштабируемом наборе.  
+
+   ```
+   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools  
+   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
+                
+   if ($LoadBalancerName)  
+   {
+      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName  
+      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
+      Set-AzLoadBalancer -LoadBalancer $lb  
+   }
+   ```
+
+#### <a name="how-do-i-disable-snapshot-debugger"></a>Как отключить отладчик моментальных снимков?
+
+Для службы приложений:
+1. Отключите отладчик моментальных снимков на портале Azure для службы приложений.
+2. Портал Azure > колонка ресурсов вашей службы приложений > *параметры приложения*
+3. Удалить следующие параметры приложения на портале Azure и сохраните изменения. 
+    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
+    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+
+    > [!WARNING]
+    > Все изменения параметров приложения будет инициировать перезапуск приложения. Дополнительные сведения о параметрах приложения см. в разделе [настроить приложение службы приложений на портале Azure](/azure/app-service/web-sites-configure).
+
+Для AKS:
+1. Обновление Dockerfile для удаления в разделах, соответствующих [отладчик моментальных снимков Visual Studio на образы Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
+2. Перестройте и повторно разверните измененный образ Docker.
+
+Для масштабируемых наборов виртуальных машин и виртуальных машин:
+
+Существует несколько способов, чтобы отключить отладчик моментальных снимков:
+- Cloud Explorer > виртуальной машины или виртуальные машины масштабируемого набора ресурсов > отключить диагностику
+
+- Портал Azure > виртуальной машины или виртуальные машины масштабируемого набора колонки ресурсов > расширения > Microsoft.Insights.VMDiagnosticsSettings удалить расширение
+
+- Командлеты PowerShell из [Az PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+
+    Виртуальная машина:
+    ```
+        Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings 
+    ```
+    
+    Масштабируемые наборы виртуальных машин:
+    ```
+        $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+        Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
+    ```
+
 ## <a name="see-also"></a>См. также
 
 - [Отладка в Visual Studio](../debugger/index.md)
 - [Отладка работающих приложений ASP.NET, с помощью отладчика моментальных снимков](../debugger/debug-live-azure-applications.md)
-- [Отладка динамического ASP.NET Azure Machines\Virtual машин масштабируемые наборы виртуальных машин с помощью отладчика моментальных снимков](../debugger/debug-live-azure-virtual-machines.md)
+- [Отладка динамического масштабируемых наборов виртуальных машин Machines\Virtual ASP.NET Azure, с помощью отладчика моментальных снимков](../debugger/debug-live-azure-virtual-machines.md)
 - [Отладка с помощью отладчика моментальных снимков Kubernetes динамической ASP.NET в Azure](../debugger/debug-live-azure-kubernetes.md)
 - [Устранение неполадок и известные проблемы для отладки моментальных снимков](../debugger/debug-live-azure-apps-troubleshooting.md)

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetAddressesInModuleFromPosition
 - IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 ms.assetid: f901c66e-f53c-4ea0-8004-d8fcbf46f916
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153f891e9ab5497f90eeefc02191f9227c0108c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3000b93a9ce7f3ba56325943d48c5ac686ddde38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723673"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338714"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 Сопоставляет позицию документ в указанном модуле массив адресов отладки.
@@ -45,30 +48,24 @@ int GetAddressesInModuleFromPosition(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ulAppDomainID`
+## <a name="parameters"></a>Параметры
+`ulAppDomainID`\
+[in] Идентификатор домена приложения.
 
- [in] Идентификатор домена приложения.
+`guidModule`\
+[in] Уникальный идентификатор модуля.
 
- `guidModule`
+`pDocPos`\
+[in] Позиция документа.
 
- [in] Уникальный идентификатор модуля.
+`fStatmentOnly`\
+[in] Если `TRUE`, ограничивает адреса отладки для одной инструкции.
 
- `pDocPos`
+`ppEnumBegAddresses`\
+[out] Возвращает перечислитель для начала отладки адресов, которые связаны с этой инструкции или строке.
 
- [in] Позиция документа.
-
- `fStatmentOnly`
-
- [in] Если `TRUE`, ограничивает адреса отладки для одной инструкции.
-
- `ppEnumBegAddresses`
-
- [out] Возвращает перечислитель для начала отладки адресов, которые связаны с этой инструкции или строке.
-
- `ppEnumEndAddresses`
-
- [out] Возвращает перечислитель для конечного адреса отладки, которые связаны с этой инструкции или строке.
+`ppEnumEndAddresses`\
+[out] Возвращает перечислитель для конечного адреса отладки, которые связаны с этой инструкции или строке.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

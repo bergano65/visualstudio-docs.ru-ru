@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d348675ca8670aa27035d31657d06bc2c4e0a829
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075354"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678928"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Пошаговое руководство. Отладка формы Windows Form
 Форма Windows Forms — один из наиболее распространенных вариантов управляемых приложений. На основе формы Windows Forms создается стандартное приложение Windows. Можно реализовать данный примере на Visual Basic, C# или C++.
@@ -48,7 +48,7 @@ ms.locfileid: "60075354"
 
      Откроется диалоговое окно **Новый проект** .
 
-2. В области "Типы проектов" разверните узел **Visual Basic**, **Visual C#** или **Visual C++**, затем
+2. В области "Типы проектов" разверните узел **Visual Basic**, **Visual C#** или **Visual C++** , затем
 
     1. Для Visual Basic или Visual C#, выберите **Windows Desktop** > **приложение формы Windows**.
 
@@ -112,7 +112,7 @@ ms.locfileid: "60075354"
      Появится красная точка, и текст строки будет выделен красным цветом. Красная точка представляет точку останова. Дополнительные сведения см. в разделе [Точки останова](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Если приложение запускается из отладчика, выполнение этого приложения будет приостановлено отладчиком на строке с помеченным кодом. После этого можно просмотреть состояние приложения и произвести его отладку.
 
     > [!NOTE]
-    >  Можно также щелкнуть правкой кнопкой мыши любую строку кода, выбрать пункт **Точка останова**, затем щелкнуть **Вставить точку останова**, чтобы добавить точку останова в эту строку.
+    > Можно также щелкнуть правкой кнопкой мыши любую строку кода, выбрать пункт **Точка останова**, затем щелкнуть **Вставить точку останова**, чтобы добавить точку останова в эту строку.
 
 2. В меню **Отладка** выберите команду **Пуск**.
 
@@ -165,23 +165,24 @@ ms.locfileid: "60075354"
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. На **Отладка** меню, выберите **Запуск без отладки**.
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     Форма Windows Forms запустится из Windows, как и при двойном щелчке исполняемого файла. Отладчик не будет присоединен.
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. На **Отладка** меню, выберите **присоединение к процессу**. (Эта команда также доступна на **средства** меню.)
 
-     The **Attach to Process** dialog box appears.
+     Откроется диалоговое окно **Присоединение к процессу** .
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. В **доступные процессы** области, найдите имя процесса (Walkthrough_SimpleDebug.exe) в **процесс** столбец и щелкните его.
 
-5. Click the **Attach** button.
+5. Нажмите кнопку **Attach** кнопки.
 
-6. In your Windows Form, click the one and only button.
+6. В форме Windows Forms нажмите единственную кнопку.
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     Отладчик прервет выполнение формы Windows Forms на точке останова.
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>См. также
+- [Отладка управляемого кода](../debugger/debugging-managed-code.md)
+- [Безопасность отладчика](../debugger/debugger-security.md)

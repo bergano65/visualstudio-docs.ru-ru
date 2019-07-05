@@ -13,16 +13,16 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 103000c2ded944236762ffd55603877ece7b7968
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 13ca035b01ec8af1277d70b3c792293a1af4687a
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38809464"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256211"
 ---
 Ниже показано только простую конфигурацию служб IIS. Более подробные сведения или установить на компьютер Windows Desktop, см. в разделе [публикация в службах IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration) или [IIS 8.0 с ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-Для операционных систем Windows Server, используйте **Добавить роли и компоненты** мастера через **управление** ссылку или **панели мониторинга** ссылку в **диспетчера серверов**. На этапе **Роли сервера** установите флажок **Веб-сервер (IIS)**.
+Для операционных систем Windows Server, используйте **Добавить роли и компоненты** мастера через **управление** ссылку или **панели мониторинга** ссылку в **диспетчера серверов**. На этапе **Роли сервера** установите флажок **Веб-сервер (IIS)** .
 
 ![Роль "Веб-сервер (IIS)" выбрана на странице "Выбор ролей сервера".](../media/remotedbg-server-roles-ws2012.png)
 

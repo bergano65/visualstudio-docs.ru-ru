@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetTypeFromAddress
 - GetTypeFromAddress
 ms.assetid: 01f21ff9-e8a5-4e5f-9f7b-1b6de8b1432f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48e1e90c69688cf1ef5388e74060e38087d50920
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7cc1a0e5bb25edcbfae047a088c20884330e81ee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691414"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336703"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 Извлекает тип символа, указанного адреса его отладки.
@@ -37,14 +40,12 @@ int GetTypeFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pAddress`
+## <a name="parameters"></a>Параметры
+`pAddress`\
+[in] Адрес отладки, представленного [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
 
- [in] Адрес отладки, представленного [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
-
-`ppField`
-
- [out] Возвращает тип массива, так как оно представлено [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) интерфейс.
+`ppField`\
+[out] Возвращает тип массива, так как оно представлено [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) интерфейс.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

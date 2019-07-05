@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpointResolution2::GetResolutionInfo
 ms.assetid: d94c4f60-8796-4848-86ee-186bbaa613f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f399c82e5bc5619e0690cb27245baab9944c9377
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fefea5081278800b330dac665862a360b4a0c15b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874622"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327826"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
 Возвращает сведения об устранении ошибки точки останова.
@@ -38,13 +41,11 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`dwFields`
-
+## <a name="parameters"></a>Параметры
+`dwFields`\
 [in] Сочетание флагов из [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) перечисление, определите, какие поля из `pErrorResolutionInfo` , для заполнения.
 
-`pErrorResolutionInfo`
-
+`pErrorResolutionInfo`\
 [in, out] [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) структуры, который заполняется описание разрешение точек останова.
 
 ## <a name="return-value"></a>Возвращаемое значение

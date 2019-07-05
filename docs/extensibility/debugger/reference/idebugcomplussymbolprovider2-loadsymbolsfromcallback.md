@@ -6,17 +6,20 @@ helpviewer_keywords:
 - LoadSymbolsFromCallback
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 ms.assetid: 905315ba-8e9b-4889-b9da-98e1441950ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d0d31530c5b0b81f3a8e622893874efecfbea5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 88964d7631681d779132738352acae356aae60a5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720748"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334677"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 Загружает отладочные символы, используя указанный метод обратного вызова.
@@ -47,34 +50,27 @@ int LoadSymbolsFromCallback(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`ulAppDomainID`
+## <a name="parameters"></a>Параметры
+`ulAppDomainID`\
+[in] Идентификатор домена приложения.
 
- [in] Идентификатор домена приложения.
+`guidModule`\
+[in] Уникальный идентификатор модуля.
 
-`guidModule`
+`pUnkMetadataImport`\
+[in] Объект, содержащий метаданные символ.
 
- [in] Уникальный идентификатор модуля.
+`pUnkCorDebugModule`\
+[in] Объект, реализующий [интерфейс ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
-`pUnkMetadataImport`
+`bstrModuleName`\
+[in] Имя модуля.
 
- [in] Объект, содержащий метаданные символ.
+`bstrSymSearchPath`\
+[in] Путь для поиска файла символов.
 
-`pUnkCorDebugModule`
-
- [in] Объект, реализующий [интерфейс ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`bstrModuleName`
-
- [in] Имя модуля.
-
-`bstrSymSearchPath`
-
- [in] Путь для поиска файла символов.
-
-`pCallback`
-
- [in] Объект, представляющий метод обратного вызова.
+`pCallback`\
+[in] Объект, представляющий метод обратного вызова.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

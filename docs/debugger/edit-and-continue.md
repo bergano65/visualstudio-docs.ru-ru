@@ -22,20 +22,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008dde8239c2b4b70220159275b12066b8cf70bb
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851019"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Изменение кода и продолжение отладки в Visual Studio (C#, VB, C++)
 "Изменить и продолжить" это режим, позволяющий экономить время за счет внесения изменений в исходный код, в то время как программа находится в режиме приостановки выполнения. При возобновлении выполнения программы с помощью команды **Продолжить** или **шаг**изменить и продолжить автоматически применяет изменения кода, с некоторыми ограничениями. Это позволяет вносить изменения в код во время сеанса отладки, без необходимости остановки, перекомпиляции всего приложения и перезапуска сеанса отладки.
 
  Этот раздел содержит следующие подразделы:
 
- [Практическое руководство. Включение и выключение режима "Изменить и продолжить"](../debugger/how-to-enable-and-disable-edit-and-continue.md)
+ [Практическое руководство. включение и выключение режима "Изменить и продолжить"](../debugger/how-to-enable-and-disable-edit-and-continue.md)
 
- [Остановка внесения изменений в код](../debugger/how-to-stop-code-changes.md)
+ [Практическое руководство. остановка внесения изменений в код](../debugger/how-to-stop-code-changes.md)
 
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
 
@@ -45,7 +45,7 @@ ms.locfileid: "57525507"
 
  [Функция "Изменить и продолжить" не поддерживается для языка F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Безопасность отладчика](../debugger/debugger-security.md)
 - [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

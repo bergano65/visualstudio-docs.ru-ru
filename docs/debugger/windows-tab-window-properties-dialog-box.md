@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce1015741b2a1e7ba1608eea7f198b726e808f7f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900787"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Вкладка "Окна" диалогового окна "Свойства окна"
 Используйте **Windows** вкладке отображаются сведения об окнах, связанных с выбранным окном. Для отображения [диалоговое окно "Свойства окна"](../debugger/window-properties-dialog-box.md), перемещение фокуса к [представление Windows](../debugger/windows-view.md) окна. Выберите любой узел окна в дереве, а затем выберите **свойства** из **представление** меню.

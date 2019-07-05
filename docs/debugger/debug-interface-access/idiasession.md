@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c69383eacfdb39a65cd9a791185d6793e9e6f681
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832311"
 ---
 # <a name="idiasession"></a>IDiaSession
 Предоставляет контекст запроса для символов отладки.
@@ -34,7 +34,7 @@ IDiaSession : IUnknown
 |Метод|Описание|
 |------------|-----------------|
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Извлекает адрес загрузки исполняемого файла, соответствующее символов в данном хранилище символов. Это же значение, которое было передано `put_loadAddress` метод.|
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Задает адрес загрузки исполняемого файла, соответствующее к символам в данном хранилище символов. **Примечание:** очень важно для вызова этого метода при получении `IDiaSession` объекта и перед началом работы с помощью объекта.|
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Задает адрес загрузки исполняемого файла, соответствующее к символам в данном хранилище символов. **Примечание.**  Очень важно для вызова этого метода при получении `IDiaSession` объекта и перед началом работы с помощью объекта.|
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Извлекает ссылку на глобальную область.|
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Возвращает перечислитель для всех таблиц, содержащихся в хранилище символов.|
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Возвращает перечислитель для всех именованных символов в статических расположениях.|
@@ -110,13 +110,13 @@ void InitializeDIA(const char *szFilename)
 ```
 
 ## <a name="requirements"></a>Требования
-Заголовок: Dia2.h
+Заголовок: dia2.h
 
 Библиотека: diaguids.lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Интерфейсы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [Обзор](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [Exe](../../debugger/debug-interface-access/exe.md)

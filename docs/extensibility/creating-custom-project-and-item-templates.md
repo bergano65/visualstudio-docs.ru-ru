@@ -3,17 +3,17 @@ title: Создание пользовательских проектов и ш�
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01af6001bd116fd2b523668eddbdc68d2dd5beab
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: b110999f397ff73f72fd2951f4c07c6d4697476f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194474"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352004"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Создание пользовательских шаблонов проектов и элементов
 

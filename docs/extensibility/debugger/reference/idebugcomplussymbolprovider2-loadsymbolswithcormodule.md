@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 - LoadSymbolsWithCorModule
 ms.assetid: b6abf3a4-ce60-4e66-9637-82ce911148de
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2c8265ce0d09b592418082d159fd82d2afaf9fad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682184"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334633"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 Загружает отладочные символы, которые получает **ICorDebugModule** объекта.
@@ -47,34 +50,27 @@ int LoadSymbolsWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`ulAppDomainID`
+## <a name="parameters"></a>Параметры
+`ulAppDomainID`\
+[in] Идентификатор домена приложения.
 
- [in] Идентификатор домена приложения.
+`guidModule`\
+[in] Уникальный идентификатор модуля.
 
-`guidModule`
+`baseAddress`\
+[in] Базовый адрес памяти.
 
- [in] Уникальный идентификатор модуля.
+`pUnkMetadataImport`\
+[in] Объект, содержащий метаданные символов отладки.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Объект, реализующий [интерфейс ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Базовый адрес памяти.
+`bstrModuleName`\
+[in] Имя модуля.
 
-`pUnkMetadataImport`
-
- [in] Объект, содержащий метаданные символов отладки.
-
-`pUnkCorDebugModule`
-
- [in] Объект, реализующий [интерфейс ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`bstrModuleName`
-
- [in] Имя модуля.
-
-`bstrSymSearchPath`
-
- [in] Путь для поиска файла символов.
+`bstrSymSearchPath`\
+[in] Путь для поиска файла символов.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac2e430abdc068070457dcf362e39dcbc0b398
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 059770b28b9e885608769f3844f91097a16d66cf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797556"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714254"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708. Идентификаторы должны отличаться не только прописными и строчными буквами
 
@@ -48,13 +48,13 @@ ms.locfileid: "62797556"
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 
-Для этого правила отключать вывод предупреждений не следует. Библиотека может стать недоступной в некоторых языках платформы .NET Framework.
+Для этого правила отключать вывод предупреждений не следует. Библиотека может стать недоступной в некоторых языках .NET.
 
 ## <a name="configurability"></a>Возможность настройки
 
 Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
 
-```
+```ini
 dotnet_code_quality.ca1708.api_surface = private, internal
 ```
 

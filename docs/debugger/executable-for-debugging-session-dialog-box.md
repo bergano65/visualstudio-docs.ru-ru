@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41b93ae19afd54b6e22458d1ba12029d5bb93cf3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849964"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>Исполняемый файл для сеанса отладки - диалоговое окно
 
@@ -37,7 +37,7 @@ ms.locfileid: "56682795"
 
  После ввода, эти параметры хранятся в страницах свойств проекта, поэтому не нужно будет вводить их повторно для последующих сеансов отладки. Если возникнет необходимость в их изменении, можно открыть окно "Страницы свойств" и задать требуемые значения. Дополнительные сведения об указании исполняемого файла для сеанса отладки см. в разделе [Отладка библиотек DLL](../debugger/how-to-debug-from-a-dll-project.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Отладка в Visual Studio](../debugger/index.md)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

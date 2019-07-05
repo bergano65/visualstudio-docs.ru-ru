@@ -1,5 +1,5 @@
 ---
-title: 'Практическое: элемент управления представлением "сообщения" | Документация Майкрософт'
+title: Практическое руководство. Элемент управления представлением "сообщения" | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0007d1ad1e87b2e1f2d34b039b4105bb525578a7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894637"
 ---
 # <a name="how-to-control-messages-view"></a>Практическое руководство. Управление представлением "Сообщения"
 С помощью Spy ++, у вас есть значительной степени контролировать содержимое [представления сообщений](../debugger/messages-view.md) окна. Вы можете [запускать и останавливать](../debugger/how-to-start-and-stop-the-message-log-display.md) отображение сообщений в любое время и вы можете указать:

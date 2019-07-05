@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1ea05511369d36b881afcaf7c161f796fd4925
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bc70b27793e722db4a07107d419b383a76207322
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678258"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330157"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Присоединяет отладчик (DE) к программе или программы. Вызывается диспетчером сеанса отладки (SDM), в то время когда DE выполняется в процессе для SDM.
@@ -44,26 +47,21 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pProgram`
+## <a name="parameters"></a>Параметры
+`pProgram`\
+[in] Массив [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объекты, представляющие программы должны быть присоединены к. Это порт программы.
 
- [in] Массив [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объекты, представляющие программы должны быть присоединены к. Это порт программы.
+`rgpProgramNodes`\
+[in] Массив [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объекты, представляющие программы узлов, по одному для каждой программы. Узлы программы в этом массиве представляют же программы, как показано на `pProgram`. Узлы программы предоставляется таким образом, DE может распознавать программы, чтобы присоединить.
 
- `rgpProgramNodes`
+`celtPrograms`\
+[in] Количество программ и узлах программы `pProgram` и `rgpProgramNodes` массивов.
 
- [in] Массив [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) объекты, представляющие программы узлов, по одному для каждой программы. Узлы программы в этом массиве представляют же программы, как показано на `pProgram`. Узлы программы предоставляется таким образом, DE может распознавать программы, чтобы присоединить.
+`pCallback`\
+[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, используемый для отправки событий отладки SDM.
 
- `celtPrograms`
-
- [in] Количество программ и узлах программы `pProgram` и `rgpProgramNodes` массивов.
-
- `pCallback`
-
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, используемый для отправки событий отладки SDM.
-
- `dwReason`
-
- [in] Значение из [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) перечисления, которое указывает причину для присоединения этих программ. Дополнительные сведения см. в разделе "Примечания".
+`dwReason`\
+[in] Значение из [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) перечисления, которое указывает причину для присоединения этих программ. Дополнительные сведения см. в разделе "Примечания".
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

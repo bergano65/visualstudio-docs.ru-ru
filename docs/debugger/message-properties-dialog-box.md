@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846119"
 ---
 # <a name="message-properties-dialog-box"></a>Диалоговое окно "Свойства сообщения"
 Используйте это диалоговое окно, чтобы получить дополнительные сведения о конкретном сообщении. Чтобы отобразить это диалоговое окно, перемещение фокуса к [представления сообщений](../debugger/messages-view.md) окна. Выберите любой узел сообщения в дереве, а затем выберите **свойства** из **представление** меню.

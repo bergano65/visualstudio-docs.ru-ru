@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2::GetName
 ms.assetid: c2b70d22-17af-4986-a7e3-930910367216
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20004fd424bbb394c4c6d0a80df94d408e86285c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d53d7f497700d4e23587927adc0c2cee37824daa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706526"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325866"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
 Извлекает имя в контекст оценки.
@@ -36,10 +39,9 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pbstrName`
-
- [out] Возвращает имя контекста вычисления.
+## <a name="parameters"></a>Параметры
+`pbstrName`\
+[out] Возвращает имя контекста вычисления.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

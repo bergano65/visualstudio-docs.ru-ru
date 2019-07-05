@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898640"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Практическое руководство. включение файла данных в приложение ClickOnce
 Каждый [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение, которое установить назначается каталог данных на локальном диске конечного компьютера где приложения могут управлять собственными данными. Файлы данных могут содержать файлы любого типа: текстовые файлы, XML-файлы или даже базы данных Microsoft Access (*.mdb*) файлы. Ниже показано, как добавить файл данных любого типа в вашей [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.

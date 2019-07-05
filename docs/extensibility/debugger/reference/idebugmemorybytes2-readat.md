@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::ReadAt method
 - ReadAt method
 ms.assetid: b413684d-4155-4bd4-ae30-ffa512243b5f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f787ad06b4e7d612007b6448287b5062ae1b0efd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a1083239dbb00e5b953fe7a72c27a350ffe34cc2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718239"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314298"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Считывает последовательность байтов, начиная с заданного расположения.
@@ -45,26 +48,21 @@ int ReadAt(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pStartContext`
+## <a name="parameters"></a>Параметры
+`pStartContext`\
+[in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объект, который указывает, где начинается чтение байтов.
 
- [in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объект, который указывает, где начинается чтение байтов.
+`dwCount`\
+[in] Число байтов для чтения. Также определяет длину `rgbMemory` массива.
 
- `dwCount`
+`rgbMemory`\
+[in, out] Массив, заполненный байты непосредственного чтения.
 
- [in] Число байтов для чтения. Также определяет длину `rgbMemory` массива.
+`pdwRead`\
+[out] Возвращает число фактически считанных смежных байтов.
 
- `rgbMemory`
-
- [in, out] Массив, заполненный байты непосредственного чтения.
-
- `pdwRead`
-
- [out] Возвращает число фактически считанных смежных байтов.
-
- `pdwUnreadable`
-
- [in, out] Возвращает число байтов, может быть прочитан. Может иметь значение null, если клиент не хочет число байтов, может быть прочитан.
+`pdwUnreadable`\
+[in, out] Возвращает число байтов, может быть прочитан. Может иметь значение null, если клиент не хочет число байтов, может быть прочитан.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.

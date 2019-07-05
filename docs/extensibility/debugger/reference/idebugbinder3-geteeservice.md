@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetEEService method
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d709124a392ffb6b6cbbb5a29576a985fe6d0f2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3afc38551dc04e7fc7f6d55df81c5b7248127acd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700137"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327136"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Этот метод возвращает запрошенную службу.
@@ -42,22 +45,18 @@ Int GetEEService(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `vendor`
+## <a name="parameters"></a>Параметры
+`vendor`\
+[in] `GUID` поставщика (допустимо значение null).
 
- [in] `GUID` поставщика (допустимо значение null).
+`language`\
+[in] `GUID` языка (допустимо значение null).
 
- `language`
+`iid`\
+[in] `IID` службы для получения.
 
- [in] `GUID` языка (допустимо значение null).
-
- `iid`
-
- [in] `IID` службы для получения.
-
- `ppService`
-
- [out] Интерфейс запрошенную службу.
+`ppService`\
+[out] Интерфейс запрошенную службу.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2::Evaluate
 ms.assetid: bc54c652-904b-4297-a6db-faa329684881
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 441126724c78c2045e3e870fcdf7baa23f9149c3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a830dadd9d24f5ecb815db5a89342c5acd281a9c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708788"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313405"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
 Вызывает функцию и возвращает результирующее значение как объект.
@@ -42,26 +45,21 @@ int Evaluate (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppParams`
+## <a name="parameters"></a>Параметры
+`ppParams`\
+[in] Массив [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекты, которые представляют входные параметры. Каждый из этих параметров был создан с помощью одного из методов создания в этом интерфейсе.
 
- [in] Массив [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) объекты, которые представляют входные параметры. Каждый из этих параметров был создан с помощью одного из методов создания в этом интерфейсе.
+`dwParams`\
+[in] Число параметров в `ppParams` массива.
 
- `dwParams`
+`dwEvalFlags`\
+[in] Сочетание флагов из [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисления, укажите, каким образом будет осуществляться вычисления.
 
- [in] Число параметров в `ppParams` массива.
+`dwTimeout`\
+[in] Указывает максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте **БЕСКОНЕЧНЫЙ** для неограниченного времени ожидания.
 
- `dwEvalFlags`
-
- [in] Сочетание флагов из [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) перечисления, укажите, каким образом будет осуществляться вычисления.
-
- `dwTimeout`
-
- [in] Указывает максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте **БЕСКОНЕЧНЫЙ** для неограниченного времени ожидания.
-
- `ppResult`
-
- [out] Возвращает **IDebugObject** , представляющий значение функции в виде объекта.
+`ppResult`\
+[out] Возвращает **IDebugObject** , представляющий значение функции в виде объекта.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e4008872a7cb96386ef702d21ba8a18d96037d83
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: bfedb55c0dcdb1077faea03bca56488ab3da1525
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869261"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842466"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024. По возможности используйте свойства
 
@@ -75,7 +75,7 @@ ms.locfileid: "57869261"
 
 Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
 
-```
+```ini
 dotnet_code_quality.ca1024.api_surface = private, internal
 ```
 

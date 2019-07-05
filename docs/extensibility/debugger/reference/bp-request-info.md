@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO structure
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54af482e8896ce1905700312e59bd156c40b556d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 25967fa5ddc6f827435c03c2883eacb522c79f42
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697823"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353008"
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 Содержит сведения, необходимые для реализации точки останова.
@@ -55,25 +58,35 @@ public struct BP_REQUEST_INFO {
 ```
 
 ## <a name="members"></a>Участники
-`dwFields` Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисление, указывающее, какие поля заполнены.
+`dwFields`\
+Сочетание флагов из [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) перечисление, указывающее, какие поля заполнены.
 
-`guidLanguage` GUID языка.
+`guidLanguage`\
+GUID языка.
 
-`bpLocation` [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру, которая указывает тип точки останова.
+`bpLocation`\
+[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру, которая указывает тип точки останова.
 
-`pProgram` [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий приложение, в котором происходит точки останова.
+`pProgram`\
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий приложение, в котором происходит точки останова.
 
-`bstrProgramName` Имя приложения, в котором происходит точки останова.
+`bstrProgramName`\
+Имя приложения, в котором происходит точки останова.
 
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором происходит точки останова.
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) , представляющий поток, в котором происходит точки останова.
 
-`bstrThreadName` Имя потока, в котором происходит точки останова.
+`bstrThreadName`\
+Имя потока, в котором происходит точки останова.
 
-`bpCondition` [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структуру, которая описывает условия, при которых точка останова будет срабатывать.
+`bpCondition`\
+[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) структуру, которая описывает условия, при которых точка останова будет срабатывать.
 
-`bpPassCount` [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуру, содержащую сведения о подсчете pass точки останова.
+`bpPassCount`\
+[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) структуру, содержащую сведения о подсчете pass точки останова.
 
-`dwFlags` Сочетание флагов из [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления, указывающее флаги для запрошенного точки останова.
+`dwFlags`\
+Сочетание флагов из [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) перечисления, указывающее флаги для запрошенного точки останова.
 
 ## <a name="remarks"></a>Примечания
 Эта структура возвращается [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) метод.

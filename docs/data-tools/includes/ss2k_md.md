@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 1b7a81285bcedfe5542af7f9d985ff0bc23bfe81
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 3ce75656db861e9b90ca2ed8f91646c3697aa0d7
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38945863"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255010"
 ---
 SQL Server 2000

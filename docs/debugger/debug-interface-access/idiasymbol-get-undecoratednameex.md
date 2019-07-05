@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83fda196a50c433de182a64f39faef7a6ba6cb17
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400563"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Извлекает часть или вся недекорированное имя для C++ внутреннее имя (компоновка).
@@ -38,19 +38,19 @@ HRESULT get_undecoratedNameEx( 
 
  `pRetVal`
 
-[out] Возвращает внешнее имя для C++ декорированное имя.
+[out] Возвращает недекорированное имя для C++ декорированное имя.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
 ## <a name="remarks"></a>Примечания
  `undecorateOptions` Может представлять собой сочетание следующих флагов.
 
 > [!NOTE]
->  Помечать имена не определены в пакете SDK для доступа к интерфейсу отладки, поэтому вам нужно добавить объявления в код или использовать необработанные значения.
+> Помечать имена не определены в пакете SDK для доступа к интерфейсу отладки, поэтому вам нужно добавить объявления в код или использовать необработанные значения.
 
 |Flag|Значение|Описание|
 |----------|-----------|-----------------|
@@ -75,5 +75,5 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Отключает проверку для допустимых символах идентификаторов.|
 |UNDNAME_NO_PTR64|0x20000|Не включает ptr64 в выходных данных.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

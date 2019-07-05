@@ -4,8 +4,6 @@ description: Узнайте, как указать учетные данные, 
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -40,6 +38,6 @@ ms.locfileid: "62572201"
 ## <a name="next-steps"></a>Следующие шаги
 
 - [Документация по веб-приложениям](https://docs.microsoft.com/azure/app-service/)
-- [Развертывание приложения в службе приложений Azure](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [Развертывание приложения в службе приложений Azure](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
 - [Развертывание веб-заданий с помощью Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Создание и развертывание облачной службы](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

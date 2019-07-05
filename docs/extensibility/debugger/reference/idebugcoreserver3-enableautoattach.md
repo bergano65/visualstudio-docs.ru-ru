@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c1bf5f210d9b37b35d43a393a25b1c9df44a7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9eb8beed7f32e9c6fb64212f73a41a35544259bb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691271"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326976"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Включает автоматическое присоединение для указанного отладчики.
@@ -42,22 +45,18 @@ int EnableAutoAttach(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `rgguidSpecificEngines`
+## <a name="parameters"></a>Параметры
+`rgguidSpecificEngines`\
+[in] Массив идентификаторов GUID для каждого ядра отладки, чтобы пометить как автоматическое присоединение.
 
- [in] Массив идентификаторов GUID для каждого ядра отладки, чтобы пометить как автоматическое присоединение.
+`celtSpecificEngines`\
+[in] Число ядер, указанный в `rgguidSpecificEngines`.
 
- `celtSpecificEngines`
+`pszStartPageUrl`\
+[in] Начальный URL-адрес для использования при присоединении автоматически.
 
- [in] Число ядер, указанный в `rgguidSpecificEngines`.
-
- `pszStartPageUrl`
-
- [in] Начальный URL-адрес для использования при присоединении автоматически.
-
- `pbstrSessionID`
-
- [out] Идентификатор сеанса, который был подключен автоматически.
+`pbstrSessionID`\
+[out] Идентификатор сеанса, который был подключен автоматически.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Один код ошибки- `E_AUTO_ATTACH_NOT_REGISTERED`, который указывает, что фабрика класса auto-attach не был зарегистрирован.

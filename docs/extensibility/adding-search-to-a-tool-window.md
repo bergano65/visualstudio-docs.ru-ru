@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding search
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3c996b8b97217deb130d8e11a68b7efae01ee05
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6ab733e42e883816e5f9a6e8fb513bfd6267a9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077593"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309916"
 ---
 # <a name="add-search-to-a-tool-window"></a>Добавление поиска в окно инструментов
 При создании или обновлении расширения окна инструментов, можно добавить функций поиска, появляющийся в Visual Studio. Эта функция включает в себя следующие компоненты:
@@ -106,7 +106,7 @@ ms.locfileid: "60077593"
      В верхней части окна инструментов, появляется элемент управления поиска с **поиска** водяного знака и значок увеличение аварийного доступа. Тем не менее поиск не работает еще, так как процесс поиска не реализован.
 
 ## <a name="to-add-the-search-implementation"></a>Чтобы добавить реализацию поиска
- При включении поиска на <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, как в предыдущей процедуре, окна инструментов создает узел поиска. Этот узел настраивает и управляет процессами поиска, они всегда выполняются в фоновом потоке. Так как <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> класс управляет созданием узел поиска и параметра вверх поиска, требуется только создать задачу поиска и предоставить метод поиска. Процесс поиска выполняется в фоновом потоке и вызовы к элементу управления окна инструмента, происходят в потоке пользовательского интерфейса. Таким образом, необходимо использовать <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> метод для управления все вызовы, выполненные в работе с элементом управления.
+ При включении поиска на <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, как в предыдущей процедуре, окна инструментов создает узел поиска. Этот узел настраивает и управляет процессами поиска, они всегда выполняются в фоновом потоке. Так как <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> класс управляет созданием узел поиска и параметра вверх поиска, требуется только создать задачу поиска и предоставить метод поиска. Процесс поиска выполняется в фоновом потоке и вызовы к элементу управления окна инструмента, происходят в потоке пользовательского интерфейса. Таким образом, необходимо использовать [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) метод для управления все вызовы, выполненные в работе с элементом управления.
 
 1. В *TestSearch.cs* добавьте следующие `using` инструкции:
 
@@ -127,7 +127,7 @@ ms.locfileid: "60077593"
 
     - Переопределяет <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> метод, чтобы создать задачу поиска.
 
-    - Переопределяет <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> метод, чтобы восстановить состояние текстового поля. Этот метод вызывается, когда пользователь отменяет задачу поиска и когда пользователь задает или отменяет параметры или фильтры. Оба <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> вызываются в потоке пользовательского интерфейса. Таким образом, вам не требуется доступ к текстовое поле с помощью параметра <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> метод.
+    - Переопределяет <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> метод, чтобы восстановить состояние текстового поля. Этот метод вызывается, когда пользователь отменяет задачу поиска и когда пользователь задает или отменяет параметры или фильтры. Оба <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> вызываются в потоке пользовательского интерфейса. Таким образом, вам не требуется доступ к текстовое поле с помощью параметра [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) метод.
 
     - Создает класс с именем `TestSearchTask` , наследуемый от <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, который предоставляет реализацию по умолчанию <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.
 
@@ -471,7 +471,7 @@ ms.locfileid: "60077593"
 
 6. Выберите нужный фильтр.
 
-     Содержит поле поиска **строк: «четными»**, и отображаются следующие результаты:
+     Содержит поле поиска **строк: «четными»** , и отображаются следующие результаты:
 
      Хороший 2
 

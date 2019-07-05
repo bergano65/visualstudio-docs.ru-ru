@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 55b863d1bff16fb0170e749d00ebb212588b2dd3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ebbbd2eb0cf47763868a6c23ef2637bdd4009b2e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403044"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261058"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Устранение неполадок с эмулятором Android для Visual Studio
 В этом разделе содержатся сведения об устранении неполадок, которые могут возникать при использовании эмулятора Visual Studio для Android.
@@ -143,7 +143,7 @@ ms.locfileid: "63403044"
 
 - Убедитесь, что соблюдены минимальные требования к оборудованию и применяются корректные параметры BIOS.
 
-   Для эмулятора и Windows 8 Hyper-V требуется 64-разрядный процессор с преобразованием адресов второго уровня (SLAT). Для Intel вам потребуется, в частности, процессор Core i3, i5 или i7 (или один из многих вариантов Xeon). Список микросхем AMD см. [здесь](http://support.amd.com/en-us).
+   Для эмулятора и Windows 8 Hyper-V требуется 64-разрядный процессор с преобразованием адресов второго уровня (SLAT). Для Intel вам потребуется, в частности, процессор Core i3, i5 или i7 (или один из многих вариантов Xeon). Список микросхем AMD см. [здесь](https://www.amd.com/en/support).
 
   1. Убедитесь, что ваш компьютер удовлетворяет [требованиям к системе](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetLanguageInfo
 ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4afcb2a8fd9de89b74fccec373e71e19264fe56
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08138fcd67e7d4fd5115ac13fe1b8348f76245d8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712493"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339017"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 Получает сведения о языке для этого контекста кода.
@@ -38,14 +41,12 @@ int GetLanguageInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pbstrLanguage`
+## <a name="parameters"></a>Параметры
+`pbstrLanguage`\
+[in, out] Возвращает строку, содержащая имя языка, такие как "C++.»
 
- [in, out] Возвращает строку, содержащую имя языка, например «C++».
-
- `pguidLanguage`
-
- [in, out] Возвращает идентификатор GUID для языка кода контекста, например, `guidCPPLang`.
+`pguidLanguage`\
+[in, out] Возвращает идентификатор GUID для языка кода контекста, например, `guidCPPLang`.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

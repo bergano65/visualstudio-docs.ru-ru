@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
 - breakpoints, methods
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1781e6aab84bfcdc665ef0d779130decc9c6421
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1eec6f966720b5240a92a926a003c38a40d4aabc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091958"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332505"
 ---
 # <a name="breakpoint-related-methods"></a>Методы, связанные с точки останова
 Отладчик (DE) должны поддерживать параметр точек останова. Отладка в Visual Studio поддерживает следующие типы точек останова:

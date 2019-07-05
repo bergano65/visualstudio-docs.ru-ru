@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac6a7582c6fa59665390cfdb6b613fff6e36709
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62836840"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 Получает флаг, указывающий, соответствует ли символ к общей переменной локальной группы в коде, скомпилированном для ускорителя C++ AMP.
@@ -30,12 +30,12 @@ HRESULT get_isAcceleratorGroupSharedLocal(
 #### <a name="parameters"></a>Параметры
  `pFlag`
 
-[out] Указатель на `BOOL` , указывающее, соответствует ли символ к общей переменной локальной группы в коде, скомпилированном для ускорителя C++ AMP. Если `TRUE`, `get_baseDataSlot` и `get_baseDataOffset` методы могут использоваться для получения сведения о расположении хранения для переменной.
+[out] Указатель на `BOOL` , указывающее, соответствует ли символ к общей переменной локальной группы в коде, скомпилированном для C++ ускоритель AMP. Если `TRUE`, `get_baseDataSlot` и `get_baseDataOffset` методы могут использоваться для получения сведения о расположении хранения для переменной.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_baseDataSlot](../../debugger/debug-interface-access/idiasymbol-get-basedataslot.md)
 - [IDiaSymbol::get_baseDataOffset](../../debugger/debug-interface-access/idiasymbol-get-basedataoffset.md)

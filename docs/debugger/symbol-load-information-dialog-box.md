@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5606101d4c4a790db57f2a5b051bc128ea50c684
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901932"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Диалоговое окно "Сведения о загрузке символов"
 Диалоговое окно **Сведения о загрузке символов** вызывается путем щелчка правой кнопкой мыши в окне **Модули** и выбора команды **Сведения о загрузке символов**.
@@ -30,5 +30,5 @@ ms.locfileid: "56702763"
 
  **Параметры символов** нажмите эту кнопку, чтобы изменить параметры символов в **параметры** диалоговое окно (**Отладка** категории **символы** страницы). На этой странице можно добавлять или удалять места расположения символов, определять место расположения локального кэша при использовании сервера символов и управлять поиском местоположений символов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

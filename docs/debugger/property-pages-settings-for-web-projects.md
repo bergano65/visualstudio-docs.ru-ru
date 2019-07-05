@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903945"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Параметры страниц свойств для веб-проектов
 Можно изменить значения свойств для конфигурации отладки веб-узла в диалоговом окне **Окна свойств**, как описано в разделе [Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где в диалоговом окне **Страницы свойств** можно найти параметры, связанные с отладчиком.
@@ -52,5 +52,5 @@ ms.locfileid: "56690530"
 | **Отладка SQL Server** | Разрешает отладку объектов базы данных SQL Server. |
 | **Отладка Silverlight** | Обеспечивает отладку компонентов Silverlight. |
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)

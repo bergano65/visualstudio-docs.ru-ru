@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetAttributedClassesForLanguage
 - IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 ms.assetid: e5b1b8b6-52a6-4ade-9a36-644abfa9f4b2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10d25cb9e58ac3eb38282a3ef2a2f631b6ba0e66
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4baf00c91d424282e80740bfa097957aa074997d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706240"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336876"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 Извлекает классы с помощью указанного атрибута, которые реализуются на указанном языке программирования.
@@ -39,18 +42,15 @@ int GetAttributedClassesForLanguage (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`guidLanguage`
+## <a name="parameters"></a>Параметры
+`guidLanguage`\
+[in] Уникальный идентификатор для языка.
 
- [in] Уникальный идентификатор для языка.
+`pstrAttribute`\
+[in] Строка атрибута.
 
-`pstrAttribute`
-
- [in] Строка атрибута.
-
-`ppEnum`
-
- [out] Возвращает перечисление классов атрибутов.
+`ppEnum`\
+[out] Возвращает перечисление классов атрибутов.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

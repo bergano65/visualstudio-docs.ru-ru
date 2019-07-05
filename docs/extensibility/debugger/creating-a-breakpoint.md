@@ -6,17 +6,17 @@ helpviewer_keywords:
 - breakpoints, creating
 - debugging [Debugging SDK], creating breakpoints
 ms.assetid: 6f9f87bb-192e-45e0-9a7a-ffe729e87f7d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1e1dd08cb6b27624e7b83a595ca0937bcc6003d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8448e2fc358398aec60a01523376d9e4329f3400
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112241"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345946"
 ---
 # <a name="create-a-breakpoint"></a>Создание точки останова
 Ниже описывается процесс создания точки останова.
@@ -31,7 +31,7 @@ ms.locfileid: "60112241"
 3. [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 
     > [!NOTE]
-    >  **CanBind** вызывается только в том случае, когда пользователь создает точку останова из **точки останова** окна.
+    > **CanBind** вызывается только в том случае, когда пользователь создает точку останова из **точки останова** окна.
 
 4. [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ecd6bc2c5612424b91a9b2cd121de780848be8bd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903747"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Вкладка "Процесс" диалогового окна "Свойства окна"
 Используйте **процесс** вкладку для идентификации процесса выбранного окна. Для отображения [диалоговое окно "Свойства окна"](../debugger/window-properties-dialog-box.md), перемещение фокуса к [представление Windows](../debugger/windows-view.md) окна. Выберите любой узел окна в дереве, а затем выберите **свойства** из **представление** меню.

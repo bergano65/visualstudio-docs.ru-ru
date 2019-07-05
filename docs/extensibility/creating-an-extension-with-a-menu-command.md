@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e8e98a20fafc825af0cf9486c8a9939c02e3b5f
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: fb18792e2d0d357bb131af6c12e97425cd72fd05
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194526"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345371"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Создание расширения с помощью команды меню
 
@@ -32,7 +32,7 @@ ms.locfileid: "58194526"
 
 1. Создайте проект VSIX с именем **FirstMenuCommand**. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, выполняя поиск «vsix».
 
-2. При открытии проекта, Добавление пользовательской команды шаблона элемента с именем **FirstCommand**. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#** > **расширяемости** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для *FirstCommand.cs*.
+2. При открытии проекта, Добавление пользовательской команды шаблона элемента с именем **FirstCommand**. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить** > **новый элемент**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#**  > **расширяемости** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для *FirstCommand.cs*.
 
 3. Выполните сборку решения и запустите отладку.
 
@@ -50,7 +50,7 @@ ms.locfileid: "58194526"
 
 ::: moniker-end
 
-Теперь перейдите к **средства** меню в экспериментальном экземпляре. Вы должны увидеть **вызова FirstCommand** команды. На этом этапе появится окно сообщения с текстом **FirstCommandPackage внутри FirstMenuCommand.FirstCommand.MenuItemCallback()**. Мы рассмотрим фактически запустить Блокнот этой команды в следующем разделе.
+Теперь перейдите к **средства** меню в экспериментальном экземпляре. Вы должны увидеть **вызова FirstCommand** команды. На этом этапе появится окно сообщения с текстом **FirstCommandPackage внутри FirstMenuCommand.FirstCommand.MenuItemCallback()** . Мы рассмотрим фактически запустить Блокнот этой команды в следующем разделе.
 
 ## <a name="change-the-menu-command-handler"></a>Изменить обработчик команд меню
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79cad67993107bd9643df628b05b30a27dc72085
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: fcf510cd9c74e22e0d028552b26c85b1f3d59bd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402519"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
 Получает модификатор доступа члена класса.
@@ -39,7 +39,7 @@ HRESULT get_access ( 
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
 
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
 
 ## <a name="requirements"></a>Требования
 
@@ -48,6 +48,6 @@ HRESULT get_access ( 
 |Заголовок:|dia2.h|
 |Версия:|ПАКЕТ SDK для версии 7.0|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Перечисление CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)

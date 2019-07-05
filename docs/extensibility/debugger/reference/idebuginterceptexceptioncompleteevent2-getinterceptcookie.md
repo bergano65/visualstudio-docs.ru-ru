@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 ms.assetid: 07b20866-e598-4783-9ecc-6aa8625c8804
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 400f0c6785a9cf9096caba9403886a2009905859
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58967be9befc7061ea8005009b1628966a93de0f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700982"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349502"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 Вызывается после завершения обработки перехваченные исключения.
@@ -36,10 +39,9 @@ int GetInterceptCookie(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pqwCookie`
-
- [out] Уникальное значение, связанное с исключением, которое было перехвачено.
+## <a name="parameters"></a>Параметры
+`pqwCookie`\
+[out] Уникальное значение, связанное с исключением, которое было перехвачено.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

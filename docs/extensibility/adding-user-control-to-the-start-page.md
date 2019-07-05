@@ -7,18 +7,18 @@ helpviewer_keywords:
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c662374b8ed0abc7e1c178fb4ff07d5033de8a54
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703244"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352296"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Добавить пользовательский элемент управления на начальную страницу
 
@@ -179,7 +179,7 @@ ms.locfileid: "56703244"
 
 1. Скопируйте файл XAML и все вспомогательные текстовые файлы или разметки файлы, к *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\*  папки.
 
-2. Если начальная страница ссылается на все элементы или типы в сборках, которые не установлены в Visual Studio, скопируйте сборки, а затем вставьте их в _папка установки Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.
+2. Если начальная страница ссылается на все элементы или типы в сборках, которые не установлены в Visual Studio, скопируйте сборки, а затем вставьте их в _папка установки Visual Studio_ **\Common7\IDE\ PrivateAssemblies\\** .
 
 3. В командной строке Visual Studio, введите **devenv/rootsuffix Exp** открыть экспериментальный экземпляр Visual Studio.
 

@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901965"
 ---
 # <a name="supported-code-changes-c"></a>Поддерживаемые изменения кода (C++)
 В Visual C+ большинство типов изменений, вносимых в код, обрабатывается в режиме «Изменить и продолжить». Некоторые изменения, однако, не могут быть применены во время выполнения программы. Чтобы применить эти изменения, необходимо остановить выполнение и собрать обновленную версию кода.

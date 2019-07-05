@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406826"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Практическое руководство. Создание пакета локализованного начального загрузчика
 Закончив создание пакета начального загрузчика, вы можете сформировать его локализованные версии, создав по два или несколько файлов для каждого языкового стандарта: файл условий лицензионного соглашения на использование программного обеспечения (например, *eula.rtf*) и манифест пакета (*package.xml*).
 
  По умолчанию в Visual Studio 2010 локализованные пакеты начальной загрузки включены только для .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 и F# Runtime 4.0. Чтобы создать локализованные пакеты для других начальных загрузчиков, сделайте следующее.
 
-1. Создайте папку с именем после имени языкового стандарта в *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >*.
+1. Создайте папку с именем после имени языкового стандарта в *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >* .
 
 2. Создайте файл, содержащий условия лицензионного соглашения на использование программного обеспечения, для пакета начального загрузчика и сохраните его в новую папку.
 
 3. Создайте манифест пакета с именем *package.xml*, обновите строки и культуру и сохраните файл в новую папку. Если вы уже создали начальный загрузчик для Visual Studio с целевым языком, на этом этапе можно просто скопировать файл Visual Studio *package.xml* и внести в него необходимые изменения.
 
 > [!NOTE]
->  Если для развертывания приложений используется проект установки, приложение можно локализовать, изменив свойство **Локализация**.
+> Если для развертывания приложений используется проект установки, приложение можно локализовать, изменив свойство **Локализация**.
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -76,9 +76,9 @@ ms.locfileid: "60061493"
 
 1. Создайте папку с именем *fr*. Имя папки должно совпадать с именем языкового стандарта.
 
-     На 32-разрядных компьютерах эту папку необходимо создать в папке *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
+     На 32-разрядных компьютерах эту папку необходимо создать в папке *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* .
 
-     На 64-разрядных компьютерах — в папке *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
+     На 64-разрядных компьютерах — в папке *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* .
 
 2. Сохраните локализованную версию условий лицензионного соглашения на использование программного обеспечения в папку с именем *fr*.
 

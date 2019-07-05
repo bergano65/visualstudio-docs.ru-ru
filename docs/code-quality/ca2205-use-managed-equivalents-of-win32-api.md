@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b049f55d9361b409504cd798b7c878efb5c79ee6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 99d53296ad72aef1910a39299be64c7cb03dd49a
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950218"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714715"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205. Используйте управляемые эквиваленты Win32 API
 
@@ -35,7 +35,7 @@ ms.locfileid: "55950218"
 
 ## <a name="cause"></a>Причина
 
-Неуправляемого определен метод, и существует метод с эквивалентной функциональностью в библиотеке классов .NET Framework.
+Неуправляемого определен метод, и существует метод с эквивалентной функциональностью в .NET.
 
 ## <a name="rule-description"></a>Описание правила
 

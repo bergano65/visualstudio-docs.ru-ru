@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4a21f07d4fd4fe055ebee4d6c7d5cd1faed0a3b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853278"
 ---
 # <a name="vtableshape"></a>VTableShape
 [VTable](../../debugger/debug-interface-access/vtable.md) символ указан символ дочерний класс, определяемый `SymTagVTableShape` тега.
@@ -26,7 +26,7 @@ ms.locfileid: "56616330"
 ## <a name="properties"></a>Свойства
  Ниже приведены дополнительные допустимые свойства для данного типа символов.
 
-|Свойство.|Тип данных|Описание|
+|Свойство|Тип данных|Описание|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` Если класс таблицы VTable помечается как константа.|
 |[IDiaSymbol::get_count](../../debugger/debug-interface-access/idiasymbol-get-count.md)|`DWORD`|Количество записей в таблице VTable.|
@@ -37,6 +37,6 @@ ms.locfileid: "56616330"
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` Если класс таблицы VTable не выровнен.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Если класс таблицы VTable помечается как переменное.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Иерархия классов символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [VTable](../../debugger/debug-interface-access/vtable.md)

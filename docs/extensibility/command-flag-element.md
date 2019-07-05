@@ -6,17 +6,17 @@ helpviewer_keywords:
 - CommandFlag element (VSCT XML schema)
 - VSCT XML schema elements, CommandFlag
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea9ba8d42bbc008ecb4664ec167ba60ba4018fc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3a38708d6256556693b7ab1dfc8c04b79f484ee8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679421"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334835"
 ---
 # <a name="command-flag-eelement"></a>Флаг команды Eelement
 Изменение родительского элемента.
@@ -35,7 +35,7 @@ ms.locfileid: "56679421"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |AllowParams|Указывает, что пользователи могут вводить параметры команд в **команда** окно при вводе каноническое имя команды.<br /><br /> Допустимо для: `Button`|
 |AlwaysCreate|Меню создается, даже если он не имеет групп и кнопок.<br /><br /> Допустимо для: `Menu`|
@@ -70,7 +70,7 @@ ms.locfileid: "56679421"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Элемент Buttons](../extensibility/buttons-element.md)|Предоставляет группу для [элемент Button](../extensibility/button-element.md) элементов.|
 |[Элемент меню](../extensibility/menus-element.md)|Определяет все меню, которые реализует VSPackage.|

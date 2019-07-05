@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineCreateEvent2::GetEngine
 ms.assetid: 187d24ed-9f9a-4418-a0ef-b8a19f54652c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be6119f7542f47238f63e5b75453a46be2a32f5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6befd6d61934026207a64a064d26fd825ce6591b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693351"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352436"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 Извлекает объект, представляющий только что созданный отладчик (DE).
@@ -36,10 +39,9 @@ int GetEngine( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pEngine`
-
- [out] Возвращает [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) , представляющий только что созданный DE.
+## <a name="parameters"></a>Параметры
+`pEngine`\
+[out] Возвращает [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) , представляющий только что созданный DE.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

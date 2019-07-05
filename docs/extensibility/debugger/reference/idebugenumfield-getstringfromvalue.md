@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetStringFromValue method
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98d7e976e0cd37ad1397666471c89da3d47d45d3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cd7466e5390cff747532dca0343680cf359db46a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710374"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345088"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 Этот метод получает имя константы перечисления, учитывая его значение.
@@ -38,14 +41,12 @@ int GetStringFromValue(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `value`
+## <a name="parameters"></a>Параметры
+`value`\
+[in] Значение, для которого необходимо получить имя перечисления констант.
 
- [in] Значение, для которого необходимо получить имя перечисления констант.
-
- `pbstrValue`
-
- [out] Возвращает имя константы перечисления.
+`pbstrValue`\
+[out] Возвращает имя константы перечисления.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если значение не имеет связанного имени, либо возвращает код ошибки.

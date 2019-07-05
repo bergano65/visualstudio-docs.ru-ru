@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetLocalVariablelayout
 - IDebugComPlusSymbolProvider::GetLocalVariablelayout
 ms.assetid: b7328d85-e5e9-4d9f-bcd1-e7711fd33878
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5ed664c3c9b018be6e29b5129c375d1e8f5eb41
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c92bdab6c3bbe7196e5f1df68758bcce4a9f2063
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723855"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336765"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
 Извлекает структуру локальных переменных для набора методов.
@@ -43,26 +46,21 @@ int GetLocalVariablelayout(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`ulAppDomainID`
+## <a name="parameters"></a>Параметры
+`ulAppDomainID`\
+[in] Идентификатор домена приложения.
 
- [in] Идентификатор домена приложения.
+`guidModule`\
+[in] Уникальный идентификатор модуля.
 
-`guidModule`
+`cMethods`\
+[in] Число метод токены `rgMethodTokens` массива.
 
- [in] Уникальный идентификатор модуля.
+`rgMethodTokens`\
+[in] Массив, метод маркеров.
 
-`cMethods`
-
- [in] Число метод токены `rgMethodTokens` массива.
-
-`rgMethodTokens`
-
- [in] Массив, метод маркеров.
-
-`pStreamLayout`
-
- [out] Текстовый поток, содержащий структуру переменных.
+`pStreamLayout`\
+[out] Текстовый поток, содержащий структуру переменных.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

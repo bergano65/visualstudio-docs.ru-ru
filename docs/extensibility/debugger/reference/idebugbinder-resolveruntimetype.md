@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::ResolveRuntimeType method
 ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d4622e1de76406568cda4761005c5482f3169d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b2954b5f2a1ac4dd14485a1b924423ba53fddcb7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699201"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315169"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 Этот метод определяет тип времени выполнения объекта.
@@ -38,14 +41,12 @@ int ResolveRuntimeType(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pObject`
+## <a name="parameters"></a>Параметры
+`pObject`\
+[in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) разрешаться.
 
- [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) разрешаться.
-
- `ppResolved`
-
- [out] Возвращает тип объекта в виде [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+`ppResolved`\
+[out] Возвращает тип объекта в виде [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

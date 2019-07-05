@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903536"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Удаленная отладка проекта Visual C++ в Visual Studio
 Для отладки приложения Visual Studio на другом компьютере, установите и запустите инструменты удаленной отладки на компьютере, где приложение будет развернуто, настройте проект для подключения к удаленному компьютеру из Visual Studio, а затем развернуть и запустить приложение.
@@ -106,7 +106,7 @@ ms.locfileid: "57526067"
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [Отладка в Visual Studio](../debugger/index.md)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
 - [Настройка брандмауэра Windows для удаленной отладки](../debugger/configure-the-windows-firewall-for-remote-debugging.md)

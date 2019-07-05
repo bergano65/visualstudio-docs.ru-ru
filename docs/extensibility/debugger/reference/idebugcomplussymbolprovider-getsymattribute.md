@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymAttribute
 - GetSymAttribute
 ms.assetid: 6cbaac92-a60b-4165-a7f5-c34407770f3c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc0b5f5c8b435358464bd8b8f3984aee54af79b1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d4da2269211d4ae3e61061cbd3dee5f9d5e1264
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701229"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336691"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 Извлекает отладочные символы с атрибутом заданный родительский объект для указанного модуля.
@@ -47,34 +50,27 @@ int GetSymAttribute (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`ulAppDomainID`
+## <a name="parameters"></a>Параметры
+`ulAppDomainID`\
+[in] Идентификатор домена приложения.
 
- [in] Идентификатор домена приложения.
+`guidModule`\
+[in] Уникальный идентификатор модуля.
 
-`guidModule`
+`tokParent`\
+[in] Токен для родительского атрибута.
 
- [in] Уникальный идентификатор модуля.
+`pstrName`\
+[in] Имя модуля.
 
-`tokParent`
+`cBuffer`\
+[in] Число байтов, необходимых для выходных данных `buffer`.
 
- [in] Токен для родительского атрибута.
+`pcBuffer`\
+[out] Длина выходного `buffer`.
 
-`pstrName`
-
- [in] Имя модуля.
-
-`cBuffer`
-
- [in] Число байтов, необходимых для выходных данных `buffer`.
-
-`pcBuffer`
-
- [out] Длина выходного `buffer`.
-
-`buffer`
-
- [out] Массив, содержащий символы.
+`buffer`\
+[out] Массив, содержащий символы.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::GetCustomAttributeByName
 ms.assetid: 7428dfeb-8929-41b2-9b99-cb343a86c02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e6275f67e07c88cb337c77bc672394af539b8e2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7d874a00c3c82108c224f18922f2b4853279beaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693403"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322205"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 Получает настраиваемые атрибуты байтов, заданному имени настраиваемого атрибута.
@@ -40,18 +43,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszCustomAttributeName`
+## <a name="parameters"></a>Параметры
+`pszCustomAttributeName`\
+[in] Строка, содержащая имя настраиваемого атрибута для поиска.
 
- [in] Строка, содержащая имя настраиваемого атрибута для поиска.
+`ppBlob`\
+[in, out] Массив, который заполняется байты настраиваемого атрибута.
 
- `ppBlob`
-
- [in, out] Массив, который заполняется байты настраиваемого атрибута.
-
- `pdwLen`
-
- [in, out] Указывает максимальное число байтов для возврата в `ppBlob` массива и возвращает количество байтов, фактически записанных в массив.
+`pdwLen`\
+[in, out] Указывает максимальное число байтов для возврата в `ppBlob` массива и возвращает количество байтов, фактически записанных в массив.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK, или возвращает S_FALSE, если настраиваемый атрибут не существует. В противном случае возвращается код ошибки.

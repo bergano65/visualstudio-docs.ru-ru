@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c09245056bf7e947985bfa55dc9cc4a3a96b8cf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846278"
 ---
 # <a name="message-codes"></a>Коды сообщений
 Каждая строка сообщения, отображаемая в [представления сообщений](../debugger/messages-view.md) содержит «P», элемента, "элемента," или «R». Эти коды имеют следующий смысл:

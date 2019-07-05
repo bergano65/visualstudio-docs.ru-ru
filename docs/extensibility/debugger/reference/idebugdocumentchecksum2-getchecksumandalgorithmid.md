@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
 - GetChecksumAndAlgorithmI
 ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f1a00b34aa640f9198649552ad7f1620d9b026d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 20cf33743d222e160458afcdcf186022a7405fa3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704622"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350071"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 Извлекает идентификатор документа контрольной суммы и алгоритм Получает максимальное число байтов для использования.
@@ -41,22 +44,18 @@ public int GetChecksumAndAlgorithmId(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pRetVal`
+## <a name="parameters"></a>Параметры
+`pRetVal`\
+[out] Уникальный идентификатор алгоритма подсчета контрольной суммы.
 
- [out] Уникальный идентификатор алгоритма подсчета контрольной суммы.
+`cMaxBytes`\
+[in] Максимальное число байтов, которое должно использоваться для контрольной суммы.
 
-`cMaxBytes`
+`pChecksum`\
+[out] Значение контрольной суммы.
 
- [in] Максимальное число байтов, которое должно использоваться для контрольной суммы.
-
-`pChecksum`
-
- [out] Значение контрольной суммы.
-
-`pcNumBytes`
-
- [out] Фактическое число байтов, используемых для контрольной суммы.
+`pcNumBytes`\
+[out] Фактическое число байтов, используемых для контрольной суммы.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

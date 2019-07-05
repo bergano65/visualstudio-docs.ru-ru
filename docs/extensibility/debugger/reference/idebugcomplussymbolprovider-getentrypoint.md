@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetEntryPoint
 - GetEntryPoint
 ms.assetid: 9640e121-1da1-41f9-8e66-76efca36baf2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f57cfec75e186fabb7611b14815375571b6349ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 43b99524a409d6938fd38b2623a5ec715accbbaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722334"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336796"
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
 Извлекает точку входа приложения.
@@ -39,18 +42,15 @@ int GetEntryPoint(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`ulAppDomainID`
+## <a name="parameters"></a>Параметры
+`ulAppDomainID`\
+[in] Идентификатор домена приложения.
 
- [in] Идентификатор домена приложения.
+`guidModule`\
+[in] Уникальный идентификатор для модуля.
 
-`guidModule`
-
- [in] Уникальный идентификатор для модуля.
-
-`ppAddress`
-
- [out] Возвращает точку входа, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+`ppAddress`\
+[out] Возвращает точку входа, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651842"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747514"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; элемент (установщик)
 `PackageFiles` Элемент содержит `PackageFile` элементы, которые определяют установочные пакеты, выполняемые в результате использования `Command` элемент.
@@ -62,7 +62,7 @@ ms.locfileid: "59651842"
 | `Hash` | Необязательный параметр. Хэш SHA1 файла пакета. Используется для проверки целостности файла во время установки. Если идентичный хэш не может быть вычислено из файла пакета, пакет не устанавливается. |
 
 ## <a name="example"></a>Пример
- В следующем примере кода определяет пакеты для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] распространяемый пакет и его зависимости, такие как установщик Windows.
+ В следующем примере кода определяет пакеты для распространяемого пакета .NET Framework и его зависимостей, таких как установщик Windows.
 
 ```xml
 <PackageFiles>

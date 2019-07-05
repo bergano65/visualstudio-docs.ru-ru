@@ -7,12 +7,12 @@ ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: b1ffebc17d7915c7845a27cc2864623fa2f2d263
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de80c61a9cd264f0b538e8efa5ebab6dc34b1ced
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898456"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263187"
 ---
 # <a name="deployment-in-visual-studio"></a>Развертывание в Visual Studio
 
@@ -263,7 +263,7 @@ Visual Studio предоставляет несколько различных �
         </a>
     </li>
     <li>
-        <a href="/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project">
+        <a href="/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -281,7 +281,7 @@ Visual Studio предоставляет несколько различных �
         </a>
     </li>
     <li>
-        <a href="/cpp/ide/clickonce-deployment-for-visual-cpp-applications">
+        <a href="/cpp/windows/clickonce-deployment-for-visual-cpp-applications">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

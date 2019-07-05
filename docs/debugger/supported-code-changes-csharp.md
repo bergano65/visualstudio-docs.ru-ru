@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929730"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Поддерживаемые изменения кода (C# и Visual Basic)
 Операция "Изменить и продолжить" обрабатывает большинство типов изменений, вносимых в код внутри тела метода. Однако большинство изменений за пределами тела метода и некоторые изменения в теле метода во время отладки применены быть не могут. Чтобы такие неподдерживаемые изменения вступили в силу, необходимо остановить отладку и заново запустить ее для обновленной версии кода.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetName
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ef243afd607a565e2c7a8e6f557f0b9906c86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 31eddcc07adc181e179c3f3edba669fff85fa565
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701021"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310269"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 Возвращает имя документа в одну из нескольких форм.
@@ -38,14 +41,12 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `gnType`
+## <a name="parameters"></a>Параметры
+`gnType`\
+[in] Значение из [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) перечисление, определяющее тип имени для возврата.
 
- [in] Значение из [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) перечисление, определяющее тип имени для возврата.
-
- `pbstrFileName`
-
- [out] Возвращает строку, содержащую имя документа.
+`pbstrFileName`\
+[out] Возвращает строку, содержащую имя документа.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

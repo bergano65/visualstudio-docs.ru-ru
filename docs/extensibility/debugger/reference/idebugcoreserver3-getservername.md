@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetServerName
 ms.assetid: 0fc3fcf5-d6a3-4a00-bf14-458b8645714e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26136955a8956006a5c6795d5fc28ea9079f3efb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6fe2a6425e55e3e0fdb56dc1e4cb4429dd9d4df3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693429"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327028"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 Извлекает имя сервера.
@@ -36,13 +39,12 @@ int GetServerName(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pbstrName`
-
- [out] Возвращает имя сервера.
+## <a name="parameters"></a>Параметры
+`pbstrName`\
+[out] Возвращает имя сервера.
 
 > [!NOTE]
->  Вызывающий объект несет ответственность за освобождение строки.
+> Вызывающий объект несет ответственность за освобождение строки.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

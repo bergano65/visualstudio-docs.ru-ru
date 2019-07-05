@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8175fc05b05bfd3375fe0dcc0702741266801137
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828216"
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
 Получает флаг, указывающий, содержит ли раздел исполняемый код.
@@ -38,5 +38,5 @@ HRESULT get_code ( 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

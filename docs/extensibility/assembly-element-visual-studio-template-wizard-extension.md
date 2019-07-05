@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Assembly element [Visual Studio Template Wizard Extension]
 - <Assembly> element [Visual Studio Template Wizard Extension]
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc3ec9052a9d912e5563e4db1f8afc8d9daf9d6e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 68fb795005f1f653893147f7013117112f803211
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699851"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352228"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Элемент ASSEMBLY (расширение мастера шаблонов Visual Studio)
 Указывает имя или строгое имя сборки, реализующей `IWizard` интерфейс.
@@ -43,7 +43,7 @@ ms.locfileid: "56699851"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Содержит элементы регистрации для настройки мастера шаблонов.|
 

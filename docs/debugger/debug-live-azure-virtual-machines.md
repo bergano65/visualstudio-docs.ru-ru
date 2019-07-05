@@ -1,5 +1,5 @@
 ---
-title: Отладка динамических виртуальных машин ASP.NET Azure и масштабируемых наборов виртуальных машин Azure
+title: Отладка live ASP.NET Azure виртуальных машин и масштабируемых наборов
 description: Узнайте, как настроить точки моментальных снимков и просмотреть моментальные снимки с помощью Snapshot Debugger.
 ms.custom: ''
 ms.date: 02/06/2019
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 38cf8b5c2af174b026c507fc5c668f826707adf3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663198"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263361"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Отладка динамических приложений ASP.NET на виртуальных машинах Azure и масштабируемых наборах виртуальных машин Azure с помощью Snapshot Debugger
 
@@ -50,7 +50,7 @@ ms.locfileid: "59663198"
     > [!IMPORTANT]
     > Отладка моментальных снимков, необходимо открыть *же версию исходного кода* , опубликованный в службе виртуальных Machine\Virtual машины масштабируемого набора Azure.
 
-1. Выберите **Отладка > Подключить Snapshot Debugger...**. Выберите виртуальный Machine\Virtual машины масштабируемого набора Azure развертывается веб-приложения и учетная запись хранилища Azure и нажмите кнопку **Attach**.
+1. Выберите **Отладка > Подключить Snapshot Debugger...** . Выберите виртуальный Machine\Virtual машины масштабируемого набора Azure развертывается веб-приложения и учетная запись хранилища Azure и нажмите кнопку **Attach**.
 
       ![Запуск отладчика моментальных снимков из меню "Отладка"](../debugger/media/snapshot-debug-menu-attach.png)
 

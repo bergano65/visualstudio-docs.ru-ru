@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825481"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195243"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Обзор анализаторов на платформе .NET Compiler Platform
 
-Анализаторы .NET Compiler Platform ("Roslyn") выполняют анализ стиля, качества, удобства, структуры и других характеристик кода, а также выявляют проблемы в нем. Visual Studio содержит встроенный набор анализаторов, которые анализируют код на C# или Visual Basic при его наборе. Вы можете настроить параметры таких встроенных анализаторов на странице [параметров текстового редактора](../ide/code-styles-and-quick-actions.md) или в [файле .editorconfig](../ide/editorconfig-code-style-settings-reference.md). Вы можете установить дополнительные анализаторы в виде расширений Visual Studio или пакетов NuGet.
+Анализаторы .NET Compiler Platform ("Roslyn") выполняют анализ стиля, качества, удобства, структуры и других характеристик кода, а также выявляют проблемы в нем. Visual Studio содержит встроенный набор анализаторов, которые анализируют код на C# или Visual Basic при его наборе. Вы можете настроить параметры таких встроенных анализаторов на странице [параметров текстового редактора](../ide/code-styles-and-code-cleanup.md) или в [файле .editorconfig](../ide/editorconfig-code-style-settings-reference.md). Вы можете установить дополнительные анализаторы в виде расширений Visual Studio или пакетов NuGet.
 
 Если анализатор обнаруживает нарушения правил, они помечаются в редакторе кода (*волнистая линия* под соответствующим кодом) и в окне **Список ошибок**.
 
@@ -79,6 +79,14 @@ ms.locfileid: "62825481"
 ### <a name="rule-severity"></a>Важность правил
 
 Вы не можете задать важность правил из анализаторов, которые были установлены как расширение Visual Studio. Чтобы настроить [важность правила](../code-quality/use-roslyn-analyzers.md#rule-severity), установите анализаторы как пакет NuGet.
+
+### <a name="categories"></a>Категории
+
+Ниже приведены различные типы анализаторов, которые помогают анализировать код. 
+
+- Анализаторы, рекомендованные корпорацией Майкрософт: [анализаторы FXCop](../code-quality/fxcop-analyzers.yml).
+- Анализаторы интегрированной среды разработки Visual Studio: [EditorConfig](../ide/code-styles-and-code-cleanup.md)
+- Анализаторы сторонних поставщиков: [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
 ## <a name="next-steps"></a>Следующие шаги
 

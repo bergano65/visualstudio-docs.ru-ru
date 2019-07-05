@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IVsAppCommandLine::GetOption method
 - command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 376dcee6f23ec2633efe1b23f77552ebf33341f2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: de0044544a97134380900d3e55f54c8fb34431fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722607"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352336"
 ---
 # <a name="add-command-line-switches"></a>Добавить параметры командной строки
 Можно добавить параметры командной строки, которые применяются к VSPackage при *devenv.exe* выполняется. Используйте <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> для объявления имени параметра и его свойств. В этом примере добавляется параметр MySwitch для подкласса VSPackage с именем **AddCommandSwitchPackage** без аргументов и с пакетом VSPackage, загружаются автоматически.
@@ -31,10 +31,10 @@ ms.locfileid: "56722607"
 
 ||||
 |-|-|-|-|
-| Параметр | Описание:|
+| Параметр | Описание|
 | Аргументы | Число аргументов для параметра. Может быть «*», или список аргументов. |
 | DemandLoad | Загрузите пакет VSPackage автоматически, если задано значение 1, в противном случае — значение 0. |
-| HelpString | Строка или ресурс идентификатор справки строки для отображения с **devenv /?**. |
+| HelpString | Строка или ресурс идентификатор справки строки для отображения с **devenv /?** . |
 | name | Переключатель. |
 | PackageGuid | Идентификатор GUID пакета. |
 

@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 291414e213c4037502aca43d99027594bb813493
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 38a41fc3fa03a530d3b8fd39c57bf744924f4a9e
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38941469"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256500"
 ---
  Набор средств Visual Studio для Office (cреда выполнения) 

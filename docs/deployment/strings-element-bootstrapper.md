@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5766beb87626efd11ba50422d5f811d1ae1d91e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632346"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747415"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Строки&gt; элемент (установщик)
 Определяет локализованные строки названий продуктов, имена пакетов и сообщения об ошибках установки.
@@ -52,7 +52,7 @@ ms.locfileid: "56632346"
 |`Name`|Обязательный. Имя строки.|
 
 ## <a name="example"></a>Пример
- В следующем примере кода указывает, все строки на английском языке для [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] установщика.
+ В следующем примере кода задает все строки на английском языке для установщика .NET Framework.
 
 ```xml
 <Strings>

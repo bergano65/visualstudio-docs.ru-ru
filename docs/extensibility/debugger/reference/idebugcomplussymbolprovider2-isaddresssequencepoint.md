@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 - IsAddressSequencePoint
 ms.assetid: 89b27c57-5295-428b-8229-a402500d8cd3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc56d0bda7d8b1797c29db6c2e72a5efc3d586d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e6531bbb3d375eea30c6e863cdef905c82aa33ef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717979"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334695"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 Определяет, является ли адрес отладки с указанной точкой следования.
@@ -35,10 +38,9 @@ int IsAddressSequencePoint(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pAddress`
-
- [in] Отладка адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+## <a name="parameters"></a>Параметры
+`pAddress`\
+[in] Отладка адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Если адрес отладки является точкой следования, возвращает `S_OK`; в противном случае возвращает `S_FALSE`.

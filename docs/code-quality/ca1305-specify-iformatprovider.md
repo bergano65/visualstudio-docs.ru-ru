@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797533"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714686"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305. Указывайте IFormatProvider
 
@@ -36,7 +36,7 @@ ms.locfileid: "62797533"
 
 Метод или конструктор вызывает один или несколько членов, которые имеют перегрузки, принимающие <xref:System.IFormatProvider?displayProperty=fullName> параметра и этот метод или конструктор не вызывает перегрузку, принимающую <xref:System.IFormatProvider> параметра.
 
-Это правило не учитывает вызовы методов .NET Framework, задокументированы в качестве пропуск <xref:System.IFormatProvider> параметра. Правило также игнорирует следующие методы:
+Это правило не учитывает вызовы методов .NET, задокументированы в качестве пропуск <xref:System.IFormatProvider> параметра. Правило также игнорирует следующие методы:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ ms.locfileid: "62797533"
 
 ## <a name="rule-description"></a>Описание правила
 
-Когда <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> или <xref:System.IFormatProvider> не предоставляется значение по умолчанию, поставляемое перегруженным членом, возможно, не нужных во всех языковых стандартах. Кроме того члены .NET Framework выберите язык и региональные параметры по умолчанию и исходя из предположения, которые могут быть неправильными в коде. Чтобы убедиться, что код работает правильно для сценариев, необходимо предоставить сведения об особенностях языка и региональных параметров в соответствии с приведенным ниже рекомендациям:
+Когда <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> или <xref:System.IFormatProvider> не предоставляется значение по умолчанию, поставляемое перегруженным членом, возможно, не нужных во всех языковых стандартах. Кроме того члены .NET выберите язык и региональные параметры по умолчанию и исходя из предположения, которые могут быть неправильными в коде. Чтобы убедиться, что код работает правильно для сценариев, необходимо предоставить сведения об особенностях языка и региональных параметров в соответствии с приведенным ниже рекомендациям:
 
 - Если значение будет отображаться для пользователя, используйте текущий язык и региональные параметры. См. раздел <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 

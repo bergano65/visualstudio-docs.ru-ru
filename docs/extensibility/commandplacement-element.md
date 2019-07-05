@@ -6,17 +6,17 @@ helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9367e412f66ded1fd009b31a4788ed4ecc86a2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3c43dab922d51d2d3f96ffaba0ef24f8f0e18fa1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718187"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341870"
 ---
 # <a name="commandplacement-element"></a>Элемент CommandPlacement
 Элемент CommandPlacement включает кнопки, группы и меню, должны быть включены в более чем одной группе или меню. С помощью элемента CommandPlacement, у вас нет полностью переопределить эти элементы, чтобы изменить внешний вид пользовательского интерфейса.
@@ -36,7 +36,7 @@ ms.locfileid: "56718187"
 
 ### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |guid|Обязательный. Идентификатор guid набора команд, как определено в [элемент Symbols](../extensibility/symbols-element.md).|
 |id|Обязательный. Идентификатор меню, группу или команду, чтобы поместить, как определено в `Symbols Element`.|
@@ -45,7 +45,7 @@ ms.locfileid: "56718187"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |Родительский|Обязательный. Меню или группы, на котором размещается элемент, чтобы разместить.|
 

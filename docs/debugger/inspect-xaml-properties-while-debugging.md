@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d5b04a64ea75458d23e64e83a405a103ae70a100
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906079"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Просмотр свойств XAML во время отладки
 Вы можете получить представление о выполнении кода XAML в режиме реального времени с помощью **динамического визуального дерева** и **динамического обозревателя свойств**. Эти средства обеспечивают представление элементов пользовательского интерфейса выполняющегося приложения XAML в виде дерева, а также отображение свойств среды выполнения любого выбранного элемента интерфейса.

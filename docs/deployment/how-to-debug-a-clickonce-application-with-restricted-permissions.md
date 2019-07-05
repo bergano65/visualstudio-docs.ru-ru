@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями | Документация Майкрософт
+title: Отладка приложения ClickOnce с ограниченными разрешениями
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4072cef2a47db1177a8ee7b630bd8febccc5e0b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 78577f197f952b46d474fb3fd61c72008857c4be
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049587"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263314"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями
 Как разработчик вы, скорее всего, работаете на компьютере разработчика с разрешениями полного доверия и поэтому не увидите те исключения безопасности, возникающие при отладке приложения ClickOnce, с которыми может столкнуться конечный пользователь, работающий с ограниченными разрешениями.

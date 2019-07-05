@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 02ef202436e12ae075c41f507577bacaa968c60b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100591"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341583"
 ---
 # <a name="create-a-settings-category"></a>Создание категории параметров
 
@@ -46,7 +46,7 @@ ms.locfileid: "60100591"
      Это создает ресурсы, это имя категории «My Category» объекта «My Settings» и описание категории «OptionInteger и OptionFloat».
 
     > [!NOTE]
-    >  Из этих трех только имя категории не отображается в **Импорт и экспорт параметров** мастера.
+    > Из этих трех только имя категории не отображается в **Импорт и экспорт параметров** мастера.
 
 3. В *MyToolsOptionsPackage.cs*, добавьте `float` свойство с именем `OptionFloat` для `OptionPageGrid` класса, как показано в следующем примере.
 
@@ -76,7 +76,7 @@ ms.locfileid: "60100591"
     ```
 
     > [!NOTE]
-    >  `OptionPageGrid` Категорию с именем «My Category» теперь состоит из двух свойств, `OptionInteger` и `OptionFloat`.
+    > `OptionPageGrid` Категорию с именем «My Category» теперь состоит из двух свойств, `OptionInteger` и `OptionFloat`.
 
 4. Добавить <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> для `MyToolsOptionsPackage` класса и присвойте ему CategoryName «My Category», присвойте ему ObjectName «My Settings» и присвоено значение true, isToolsOptionPage. Значение categoryResourceID, objectNameResourceID и DescriptionResourceID соответствующий строковый ресурс, идентификаторы созданные ранее.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60100591"
 
      **Выбор параметров для экспорта** появится страница.
 
-7. Нажмите кнопку **"Мои параметры"**.
+7. Нажмите кнопку **"Мои параметры"** .
 
      **Описание** примет **OptionInteger и OptionFloat**.
 

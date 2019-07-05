@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: fd3db58fa1ac0e3e1b1ea35901530be44c28ea12
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: eafe06a5654c14d60a78e20fb43f8b09172ddd29
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38944830"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67254767"
 ---
 Реляционный конструктор объектов

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::SetRegistryRoot method
 ms.assetid: 790886d8-1975-4d3c-9a75-cd86c1faf4ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7b1d6fd8bb959bc789f52a2955abb13ee4f1165
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d2f64272b38b6a41e8637e884f19da62d2fd1a1e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678115"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325613"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 Этот метод задает корень реестра. Используется для отладки side-by-side.
@@ -36,10 +39,9 @@ int SetRegistryRoot(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ustrRegistryRoot`
-
- [in] Новый корень реестра.
+## <a name="parameters"></a>Параметры
+`ustrRegistryRoot`\
+[in] Новый корень реестра.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

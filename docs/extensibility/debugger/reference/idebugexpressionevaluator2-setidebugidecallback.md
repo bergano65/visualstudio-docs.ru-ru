@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetIDebugIDECallback
 - SetIDebugIDECallback
 ms.assetid: f01c40ad-ef4b-477b-8304-602c6972bc88
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ac5027421ff73e00ee34d9928be6525187a6ae8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3799d0ba88f5c5f021d3717f29f5a08a836607dd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679298"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338614"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
 Включает модуль отладки для передачи в обратный вызов средство оценки выражений во время инициализации.
@@ -35,10 +38,9 @@ int SetIDebugIDECallback (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pCallback`
-
- [in] Интерфейс для обратного вызова.
+## <a name="parameters"></a>Параметры
+`pCallback`\
+[in] Интерфейс для обратного вызова.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

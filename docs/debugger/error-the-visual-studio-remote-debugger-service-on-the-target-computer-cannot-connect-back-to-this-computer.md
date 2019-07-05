@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f406ac338edfc79c3d8fd802d1cb43d0224f21
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c07557fa64f86349a3baf8956d99b937ceab9f5a
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107163"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043440"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Ошибка: Службе удаленного отладчика Visual Studio не удается подключиться к этому компьютеру
-Эта ошибка означает, что служба удаленного отладчика Visual Studio запущена под управлением учетной записи пользователя, которая не может пройти проверку подлинности при попытке подключиться к компьютеру, с которого происходит отладка.
+Эта ошибка означает, что службу удаленного отладчика под управлением учетной записи пользователя, не может проверить подлинность при попытке подключения к компьютеру, отладка которого выполняется из. Эта ошибка может возникать при удаленной отладке с помощью ядру отладки и удаленный отладчик запущен как служба.
 
  В следующей таблице показано, какие учетные записи имеют доступ к компьютеру:
 

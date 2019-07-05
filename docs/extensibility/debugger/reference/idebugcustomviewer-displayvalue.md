@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer::DisplayValue
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8734d97dfc8bcd7be2b12ce657071597deaea7a8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9d6ff987e12e70a9d3dd443cfafc45d2698469b8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717927"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335694"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Этот метод вызывается для отображения указанного значения.
@@ -42,22 +45,18 @@ int DisplayValue(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `hwnd`
+## <a name="parameters"></a>Параметры
+`hwnd`\
+[in] Родительское окно
 
- [in] Родительское окно
+`dwID`\
+[in] Идентификатор для пользовательских средств просмотра, которые поддерживают более одного типа.
 
- `dwID`
+`pHostServices`\
+[in] Зарезервировано. Всегда задано значение null.
 
- [in] Идентификатор для пользовательских средств просмотра, которые поддерживают более одного типа.
-
- `pHostServices`
-
- [in] Зарезервировано. Всегда задано значение null.
-
- `pDebugProperty`
-
- [in] Интерфейс, который может использоваться для получения значения для отображения.
+`pDebugProperty`\
+[in] Интерфейс, который может использоваться для получения значения для отображения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

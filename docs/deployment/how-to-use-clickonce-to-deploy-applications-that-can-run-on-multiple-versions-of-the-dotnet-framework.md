@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Использование технологии ClickOnce для развертывания приложений, которые могут выполняться на различных версиях платформы .NET Framework | Документация Майкрософт
+title: Использование технологии ClickOnce для развертывания приложений multitarget
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a98ad657fd1664a71b0b07063615923af4b9db2d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 38418a1ca11c23ab12d64deadfb91079bc957493
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096053"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747485"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое руководство. использование технологии ClickOnce для развертывания приложений, которые могут выполняться в нескольких версиях .NET Framework
 Можно развернуть приложение, предназначенное для нескольких версий платформы .NET Framework с помощью технологии развертывания ClickOnce. Это требует создания и обновление манифестов приложения и развертывания.
 
 > [!NOTE]
->  Прежде чем устанавливать приложение на несколько версий платформы .NET Framework, следует убедиться, что приложение работает с несколькими версиями платформы .NET Framework. Среда CLR версии отличается между [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] и .NET Framework 2.0, .NET Framework 3.0 и .NET Framework 3.5.
+> Прежде чем устанавливать приложение на несколько версий платформы .NET Framework, следует убедиться, что приложение работает с несколькими версиями платформы .NET Framework. Среда CLR версии отличается от .NET Framework 4 и .NET Framework 2.0, .NET Framework 3.0 и .NET Framework 3.5.
 
  Этот процесс включает следующие шаги:
 
@@ -45,7 +45,7 @@ ms.locfileid: "60096053"
 
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Для создания манифестов приложения и развертывания
 
-- Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [Как Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).
+- Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).
 
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Чтобы изменить манифест развертывания, чтобы получить список нескольких версий .NET Framework
 
@@ -88,7 +88,7 @@ ms.locfileid: "60096053"
    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">
    ```
 
-3. Обновить номер версии `<assemblyIdentity>` элемент для Microsoft.Windows.CommonLanguageRuntime номеру версии для платформы .NET Framework, который является наименьшим общим знаменателем. Например, если приложение предназначено для .NET Framework 3.5 и [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], номер версии используйте 2.0.50727.0 и XML должен выглядеть следующим образом:
+3. Обновить номер версии `<assemblyIdentity>` элемент для Microsoft.Windows.CommonLanguageRuntime номеру версии для платформы .NET Framework, который является наименьшим общим знаменателем. Например если приложение предназначено для .NET Framework 3.5 и .NET Framework 4, номер версии используйте 2.0.50727.0 и XML должен выглядеть следующим образом:
 
    ```xml
    <dependency>
@@ -100,7 +100,7 @@ ms.locfileid: "60096053"
 
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Обновление и повторное подписание приложения и развертывания манифестов
 
-- Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [Как повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+- Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [Практическое руководство. повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>См. также
 - [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)

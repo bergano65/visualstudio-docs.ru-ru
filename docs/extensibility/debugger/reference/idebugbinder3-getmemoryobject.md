@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetMemoryObject method
 ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01cb000519647c415f68b369f5d2147a30e705e0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b5386d6b4d32b34b708b7d213cf1a6e96ec0651a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679857"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327036"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 Этот метод извлекает объект памяти, который представляет этот объект привязан к памяти.
@@ -40,18 +43,15 @@ int GetMemoryObject(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pField`
+## <a name="parameters"></a>Параметры
+`pField`\
+[in] Указывает, какое поле для получения для объекта памяти.
 
- [in] Указывает, какое поле для получения для объекта памяти.
+`uConstant`\
+[in] Представляет адрес памяти или значение для значения константы.
 
- `uConstant`
-
- [in] Представляет адрес памяти или значение для значения константы.
-
- `ppObject`
-
- [out] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляет этот объект привязан к памяти.
+`ppObject`\
+[out] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) представляет этот объект привязан к памяти.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2::LaunchSuspended
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cfdfb05d45996e87ea749dffa89915a175d9274
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cef6382009d8139b8c166ce6b75a692e8e309557
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709568"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337184"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Этот метод запускает процесс с помощью модуля отладки (DE).
@@ -60,58 +63,45 @@ int LaunchSuspended(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszMachine`
+## <a name="parameters"></a>Параметры
+`pszMachine`\
+[in] Имя компьютера, в котором для запуска процесса. Используйте значение null, чтобы указать локальный компьютер.
 
- [in] Имя компьютера, в котором для запуска процесса. Используйте значение null, чтобы указать локальный компьютер.
+`pPort`\
+[in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) интерфейс, представляющий порт, который программа будет запускаться в.
 
- `pPort`
+`pszExe`\
+[in] Имя исполняемого файла для запуска.
 
- [in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) интерфейс, представляющий порт, который программа будет запускаться в.
+`pszArgs`\
+[in] Аргументы для передачи в исполняемый файл. Может иметь значение null, если аргументы не используются.
 
- `pszExe`
+`pszDir`\
+[in] Имя рабочего каталога, используемого исполняемого объекта. Может иметь значение null, если нет рабочего каталога является обязательным.
 
- [in] Имя исполняемого файла для запуска.
+`bstrEnv`\
+[in] Блок среды нулем строк, следуют дополнительные символ конца строки NULL.
 
- `pszArgs`
+`pszOptions`\
+[in] Параметры для исполняемого файла.
 
- [in] Аргументы для передачи в исполняемый файл. Может иметь значение null, если аргументы не используются.
+`dwLaunchFlags`\
+[in] Указывает [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) для сеанса.
 
- `pszDir`
+`hStdInput`\
+[in] Дескриптор альтернативного входного потока. Может быть равен 0, если перенаправление не требуется.
 
- [in] Имя рабочего каталога, используемого исполняемого объекта. Может иметь значение null, если нет рабочего каталога является обязательным.
+`hStdOutput`\
+[in] Дескриптор Альтернативный выходной поток. Может быть равен 0, если перенаправление не требуется.
 
- `bstrEnv`
+`hStdError`\
+[in] Обработка в поток вывода альтернативного ошибки. Может быть равен 0, если перенаправление не требуется.
 
- [in] Блок среды нулем строк, следуют дополнительные символ конца строки NULL.
+`pCallback`\
+[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, получающий события отладчика.
 
- `pszOptions`
-
- [in] Параметры для исполняемого файла.
-
- `dwLaunchFlags`
-
- [in] Указывает [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) для сеанса.
-
- `hStdInput`
-
- [in] Дескриптор альтернативного входного потока. Может быть равен 0, если перенаправление не требуется.
-
- `hStdOutput`
-
- [in] Дескриптор Альтернативный выходной поток. Может быть равен 0, если перенаправление не требуется.
-
- `hStdError`
-
- [in] Обработка в поток вывода альтернативного ошибки. Может быть равен 0, если перенаправление не требуется.
-
- `pCallback`
-
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) объект, получающий события отладчика.
-
- `ppDebugProcess`
-
- [out] Возвращает результат в виде [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, представляющий запущенный процесс.
+`ppDebugProcess`\
+[out] Возвращает результат в виде [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, представляющий запущенный процесс.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

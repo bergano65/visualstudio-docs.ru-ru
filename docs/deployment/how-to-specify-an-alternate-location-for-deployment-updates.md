@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a1c072cb8415e8e0a20615c0c963e683f48b56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d312a213f630c3cc94a5a58ab41ed2014ca13bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406568"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Практическое руководство. задание альтернативного местоположения для обновлений развертывания
 Вы можете установить ваш [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application из компакт-диске или в общей папке, а приложение должно проверять наличие периодических обновлений в Интернете. Таким образом, приложение может обновляться из Интернета после начальной установки, можно указать альтернативное расположение для обновлений в манифесте развертывания.
 
 > [!NOTE]
->  Чтобы установить локально для использования этой функции необходимо настроить приложение. Дополнительные сведения см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Кроме того, при установке [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения из сети, настройка альтернативного местоположения причины [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] использует это местоположение для первоначальной установки и все последующие обновления. Если установить приложение локально (например, с компакт-диска), первоначальной установки выполняется с помощью исходного носителя, а все последующие обновления будут использовать альтернативное расположение.
+> Чтобы установить локально для использования этой функции необходимо настроить приложение. Дополнительные сведения см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Кроме того, при установке [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения из сети, настройка альтернативного местоположения причины [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] использует это местоположение для первоначальной установки и все последующие обновления. Если установить приложение локально (например, с компакт-диска), первоначальной установки выполняется с помощью исходного носителя, а все последующие обновления будут использовать альтернативное расположение.
 
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Задание альтернативного местоположения для обновлений с помощью MageUI.exe (служебная программа на базе Windows Forms)
 
@@ -53,7 +53,7 @@ ms.locfileid: "60041358"
 3. Сохраните файл.
 
    > [!NOTE]
-   >  Теперь нужно повторно подписать файла с *Mage.exe*. Дополнительные сведения см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+   > Теперь нужно повторно подписать файла с *Mage.exe*. Дополнительные сведения см. в разделе [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="net-framework-security"></a>Безопасность платформы .NET Framework
  Если установить приложение с автономного носителя, например компакт-диска, и компьютер находится в сети, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] сначала проверяет URL-адрес, определяемое `<deploymentProvider>` тег в манифесте развертывания, чтобы определить, содержит ли расположение обновлений в более поздней версии приложение. В этом случае [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] устанавливает приложение непосредственно из него, а не из исходного каталога установки, и общеязыковой среды выполнения (CLR) определяет доверия для приложения уровня с помощью `<deploymentProvider>`. Если компьютер находится в автономном режиме, или `<deploymentProvider>` недоступен, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] установки с компакт-диска, а среда CLR предоставляет доверие, на основе точки установки; для установки компакт-диска, это означает, приложение получает полного доверия. Все последующие обновления будут наследовать этот уровень доверия.

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903650"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Псевдопеременные в отладчике Visual Studio
 Псевдопеременные — термины, используемые для отображения определенных сведений в окне переменных или в диалоговом окне **Быстрая проверка**. Псевдопеременная вводится таким же способом, что и обычная переменная. Однако псевдопеременные не являются переменными и не соответствуют именам переменных в программе.

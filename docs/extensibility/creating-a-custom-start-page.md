@@ -3,18 +3,18 @@ title: Создание настраиваемой начальной стран
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4fc12744dbf979a338cbc551a715284dffdf7385
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2b0b8c6fde31f4f4d9573381e511465e60086add
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090134"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336669"
 ---
 # <a name="creating-a-custom-start-page"></a>Создание настраиваемой начальной страницы
 
@@ -24,7 +24,7 @@ ms.locfileid: "60090134"
 
 Во-первых, обеспечить пустую начальную страницу с помощью создания *.xaml* файл, который имеет структуру тег, который Visual Studio распознает. Затем добавьте разметки и кода для создания внешний вид и функциональность.
 
-1. Создайте новый проект типа **приложение WPF** (**Visual C#** > **Windows Desktop**).
+1. Создайте новый проект типа **приложение WPF** (**Visual C#**  > **Windows Desktop**).
 
 2. Добавьте ссылку на `Microsoft.VisualStudio.Shell.14.0`.
 

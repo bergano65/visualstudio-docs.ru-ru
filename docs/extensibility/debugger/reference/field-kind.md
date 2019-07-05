@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b965def820771b0bab883c1bdd9bf90d18414e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9ff49f0723153880e88a21376aadec26b250a62b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680378"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344474"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 Указывает тип поля, содержащегося в [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.
@@ -121,72 +124,105 @@ public enum enum_FIELD_KIND {
 };
 ```
 
-## <a name="members"></a>Участники
-FIELD_KIND_TYPE указывает на то, что поле только для типа.
+## <a name="fields"></a>Поля
+`FIELD_KIND_TYPE`\
+Указывает, что поле только для типа.
 
-FIELD_KIND_SYMBOL указывает, что поле — это символ, с типом, имя и другие сведения.
+`FIELD_KIND_SYMBOL`\
+Указывает, что поле — это символ, с типом, имя и другие сведения.
 
-FIELD_TYPE_PRIMITIVE указывает, что поле имеет тип-примитив.
+`FIELD_TYPE_PRIMITIVE`\
+Указывает, что поле имеет тип-примитив.
 
-FIELD_TYPE_STRUCT указывает на то, что поле структуры.
+`FIELD_TYPE_STRUCT`\
+Указывает, что поле является структурой.
 
-FIELD_TYPE_CLASS указывает, что поле является классом.
+`FIELD_TYPE_CLASS`\
+Указывает, что поле является классом.
 
-FIELD_TYPE_INTERFACE указывает, что поле является интерфейсом.
+`FIELD_TYPE_INTERFACE`\
+Указывает, что поле является интерфейсом.
 
-FIELD_TYPE_UNION указывает на то, что поле объединения.
+`FIELD_TYPE_UNION`\
+Указывает, что поле объединения.
 
-FIELD_TYPE_ARRAY указывает, что поле является массивом.
+`FIELD_TYPE_ARRAY`\
+Указывает, что поле является массивом.
 
-FIELD_TYPE_METHOD указывает, что поле является методом.
+`FIELD_TYPE_METHOD`\
+Указывает, что поле является методом.
 
-FIELD_TYPE_BLOCK указывает, что поле представляет собой блок.
+`FIELD_TYPE_BLOCK`\
+Указывает, что поле представляет собой блок.
 
-FIELD_TYPE_POINTER указывает, что поле является указателем.
+`FIELD_TYPE_POINTER`\
+Указывает, что поле является указателем.
 
-FIELD_TYPE_ENUM указывает на то, что поле перечисляемого типа данных.
+`FIELD_TYPE_ENUM`\
+Указывает, что поле перечисляемого типа данных.
 
-FIELD_TYPE_LABEL указывает на то, что поле метки.
+`FIELD_TYPE_LABEL`\
+Указывает, что поле метки.
 
-FIELD_TYPE_TYPEDEF указывает на то, что поле является определением типа.
+`FIELD_TYPE_TYPEDEF`\
+Указывает, что поле является определением типа.
 
-FIELD_TYPE_BITFIELD указывает на то, что поле битовое поле.
+`FIELD_TYPE_BITFIELD`\
+Указывает, что поле битовое поле.
 
-FIELD_TYPE_NAMESPACE указывает на то, что поле пространство имен.
+`FIELD_TYPE_NAMESPACE`\
+Указывает, что поле является пространством имен.
 
-FIELD_TYPE_MODULE указывает, что поле является модулем.
+`FIELD_TYPE_MODULE`\
+Указывает, что поле является модулем.
 
-FIELD_TYPE_DYNAMIC указывает, что поле является динамическим.
+`FIELD_TYPE_DYNAMIC`\
+Указывает, что поле является динамическим.
 
-FIELD_TYPE_PROP указывает, что поле является свойством.
+`FIELD_TYPE_PROP`\
+Указывает, что поле является свойством.
 
-FIELD_TYPE_INNERCLASS указывает на то, что поле вложенного класса.
+`FIELD_TYPE_INNERCLASS`\
+Указывает, что поле является внутренним классом.
 
-FIELD_TYPE_REFERENCE указывает, что поле является ссылкой.
+`FIELD_TYPE_REFERENCE`\
+Указывает, что поле является ссылкой.
 
-FIELD_TYPE_EXTENDED зарезервированная для будущего использования.
+`FIELD_TYPE_EXTENDED`\
+Зарезервировано для будущего использования.
 
-FIELD_SYM_MEMBER указывает, что поле является членом.
+`FIELD_SYM_MEMBER`\
+Указывает, что поле является членом.
 
-FIELD_SYM_LOCAL указывает, что поле является локальным.
+`FIELD_SYM_LOCAL`\
+Указывает, что поле является локальным.
 
-FIELD_SYM_PARAMETER указывает, что поле является параметром.
+`FIELD_SYM_PARAMETER`\
+Указывает, что поле является параметром.
 
-FIELD_SYM_THIS указывает на то, что поле указателя «this».
+`FIELD_SYM_THIS`\
+Указывает, что поле имеет указатель «this».
 
-FIELD_SYM_GLOBAL указывает, что поле является глобальным.
+`FIELD_SYM_GLOBAL`\
+Указывает, что поле является глобальным.
 
-FIELD_SYM_PROP_GETTER указывает, что поле извлекает свойства.
+`FIELD_SYM_PROP_GETTER`\
+Указывает, что поле извлекает свойства.
 
-FIELD_SYM_PROP_SETTER указывает, что поле задает свойства.
+`FIELD_SYM_PROP_SETTER`\
+Указывает, что поле задает свойства.
 
-FIELD_SYM_EXTENDED зарезервированная для будущего использования.
+`FIELD_SYM_EXTENDED`\
+Зарезервировано для будущего использования.
 
-FIELD_KIND_MASK указывает маску для типов полей.
+`FIELD_KIND_MASK`\
+Указывает маску для типов полей.
 
-FIELD_TYPE_MASK указывает маску для типов полей.
+`FIELD_TYPE_MASK`\
+Указывает маску для типов полей.
 
-FIELD_SYM_MASK указывает маску для символьной информации.
+`FIELD_SYM_MASK`\
+Указывает маску для символьной информации.
 
 ## <a name="remarks"></a>Примечания
 Возвращается из вызова [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) метод.

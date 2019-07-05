@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9011f0becd893fa4ca966c40013844b0be47e46d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832024"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
 Извлекает перечислитель кадр стека для x86 платформ.
@@ -46,7 +46,7 @@ HRESULT getEnumFrames( 
 ## <a name="remarks"></a>Примечания
  Чтобы получить список кадров стека в любой другой платформы, вызовите [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) метод.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 - [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

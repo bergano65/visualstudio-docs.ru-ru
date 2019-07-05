@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e596f2e970df487a31628ab0bd29051172b950e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89edba30a95d61268aebb26de8d973f6201c0fcf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796683"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714765"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210. Сборки должны иметь допустимые строгие имена
 
@@ -64,11 +64,11 @@ ms.locfileid: "62796683"
 
 Используйте один из следующих процедур.
 
-- Используйте средство компоновщик сборок (Al.exe), предоставляемых .NET Framework SDK.
+- Используйте [средство компоновщик сборок (Al.exe)](/dotnet/framework/tools/al-exe-assembly-linker).
+
+- Для .NET Framework 2.0, используйте `/keyfile` или `/keycontainer` параметр компилятора [/keyfile (определение ключа или пары ключей для подписи сборки)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) или  [ /keycontainer (определение контейнера ключей для подписи сборки)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) параметров компоновщика с C++).
 
 - Для .NET Framework v1.0 и v1.1, использовать <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> или <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> атрибута.
-
-- Для [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], либо использовать `/keyfile` или `/keycontainer` параметр компилятора [/keyfile (определение ключа или пары ключей для подписи сборки)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) или  [ /keycontainer (определение контейнера ключей для подписи сборки)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) параметров компоновщика с ++).
 
 ### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>Подписать сборку строгим именем в Visual Studio
 
@@ -90,7 +90,7 @@ ms.locfileid: "62796683"
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Подписать сборку строгим именем вне Visual Studio
 
-Используйте средство строгих имен (Sn.exe), предоставляемый .NET Framework SDK. Дополнительные сведения см. на странице [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool) (Sn.exe: средство строгих имен).
+Используйте [средство строгих имен (Sn.exe)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 252e9d17ba272dd61af87427ad91f42d2fcd13ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a558ce97e642c38b5c54c1a2e3d01cce2e2e280
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897897"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715457"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Проектирование XAML в Visual Studio
 
@@ -52,7 +52,7 @@ Visual Studio и Blend для Visual Studio предоставляют визу�
 
 - **Team Explorer:** используя обозреватель Team Explorer, вы можете управлять проектами с помощью репозиториев GIT и TFS, чтобы облегчить командную работу. Дополнительные сведения см. в разделе [Работа в Team Explorer](/azure/devops/user-guide/work-team-explorer).
 
-- **NuGet:** управление пакетами NuGet возможно как в Visual Studio, так и в Blend для Visual Studio. NuGet — это диспетчер пакетов для .NET Framework, позволяющий упростить установку и удаление пакетов в решении.
+- **NuGet:** управление пакетами NuGet возможно как в Visual Studio, так и в Blend для Visual Studio. NuGet — это диспетчер пакетов для .NET, позволяющий упростить установку и удаление пакетов в решении.
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Расширенные возможности Blend для Visual Studio
 

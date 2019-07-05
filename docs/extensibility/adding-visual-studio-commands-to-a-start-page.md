@@ -6,18 +6,18 @@ helpviewer_keywords:
 - start page commands
 - vs:VSCommands
 ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8461fdd3fd0aaedbbdd770a4e2762c4912c3ce0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 86fe084d2dab10ed7370f5fc5b99931491b096be
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040163"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352283"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Добавление команд Visual Studio для начальной страницы
 
@@ -50,7 +50,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```
 
 > [!NOTE]
->  `x:` Псевдоним, который ссылается на схемы XAML, является обязательным в начале всех команд.
+> `x:` Псевдоним, который ссылается на схемы XAML, является обязательным в начале всех команд.
 
  Можно задать значение `Command` свойство для любой команды, который может быть организован **команда** окна. Список доступных команд, см. в разделе [псевдонимы команд Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
@@ -66,7 +66,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  Для вызова команды из зарегистрированные объекты VSPackage используется тот же синтаксис, который используется для вызова других команд Visual Studio. Например, если установленный VSPackage добавляет **Домашняя страница** команды **представление** меню, можно вызвать эту команду, задав `CommandParameter` для `View.HomePage`.
 
 > [!NOTE]
->  Если вызвать команду, которая связана с помощью VSPackage, необходимо загрузить пакет, при вызове команды.
+> Если вызвать команду, которая связана с помощью VSPackage, необходимо загрузить пакет, при вызове команды.
 
 ## <a name="add-commands-from-assemblies"></a>Добавить команды из сборок
  Чтобы вызвать команду из сборки, кода или к нему доступ в пакет VSPackage, который не связан с командой меню, необходимо создать псевдоним для сборки и затем вызвать псевдоним.
@@ -90,7 +90,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```
 
 > [!NOTE]
->  Необходимо скопировать сборку и вставьте его в *... \\\Common7\IDE\PrivateAssemblies {папка установки visual Studio}\* чтобы убедиться в том, он загружается, прежде чем он вызывается.
+> Необходимо скопировать сборку и вставьте его в *... \\\Common7\IDE\PrivateAssemblies {папка установки visual Studio}\* чтобы убедиться в том, он загружается, прежде чем он вызывается.
 
 ## <a name="add-commands-with-the-dte-object"></a>Добавьте команды с объектом DTE
  Можно получить доступ к объект DTE из начальной страницы, как в разметке, так и в коде.

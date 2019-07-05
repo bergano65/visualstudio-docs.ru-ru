@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer interface
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c576de860183353831eb9cc33293ead11123c59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 46561bbab71b12d924edec96650736c8b1576894
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700163"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328035"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Этот интерфейс позволяет вычислитель выражений (EE) для отображения значения свойства в формате необходим.
@@ -37,7 +37,7 @@ EE реализует этот интерфейс для отображения 
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
 Этот интерфейс реализует следующий метод:
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Не все, что необходим для отображения заданного значения.|
 

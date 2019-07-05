@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d7a1ff749d340110707296c9d4958d13a3faa952
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065588"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350923"
 ---
 # <a name="attach-after-a-launch"></a>Присоединение после запуска
 После запуска программы сеанса отладки готов для присоединения модуля отладки (DE) для указанной программы.
@@ -28,7 +28,7 @@ ms.locfileid: "60065588"
 - Если смысл установить связь между DE и программы, среде выполнения совместно создает DE. Такая схема оставляет SDM в одно адресное пространство и DE, среды выполнения и программы в другой. Такой подход является типичным для DE, который реализуется с помощью интерпретатора для запуска сценария языков.
 
     > [!NOTE]
-    >  Как DE присоединяется к программе зависит от реализации. Обмен данными между DE и программы также зависит от реализации.
+    > Как DE присоединяется к программе зависит от реализации. Обмен данными между DE и программы также зависит от реализации.
 
 ## <a name="implementation"></a>Реализация
  Программным образом, когда диспетчер отладки сеансов (SDM) сначала получает [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу для запуска, он вызывает [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) метод, передав ему [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) объект, который затем используется для передачи событий отладки SDM. `IDebugProgram2::Attach` Затем вызывает метод [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) метод. Дополнительные сведения о том, как получает SDM `IDebugProgram2` интерфейсом, см. в разделе [уведомление порта](../../extensibility/debugger/notifying-the-port.md).

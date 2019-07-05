@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5403803a4da0821978a8c6bbfc31e45c31104640
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818232"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715278"
 ---
 # <a name="access-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 
@@ -152,6 +152,6 @@ ms.locfileid: "62818232"
 
 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;описывает возможности запросов, встроенных в C# и Visual Basic и общей модели для запроса реляционных баз данных, XML документы, наборы данных и коллекциям в памяти.
 
-[Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;рассматривается работа с возможности .NET Framework XML данные отладки XSLT, XML и архитектура XML-запрос.
+[Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;рассматривается работа с возможности .NET XML данные отладки XSLT, XML и архитектура XML-запрос.
 
-[XML-документы и данные](/dotnet/standard/data/xml/index)&mdash;здесь приводится обзор подробного и интегрированного набора классов, которые работают с XML-документами и данными в .NET Framework.
+[XML-документы и данные](/dotnet/standard/data/xml/index)&mdash;здесь приводится обзор подробного и интегрированного набора классов, которые работают с XML-документами и данными в .NET.

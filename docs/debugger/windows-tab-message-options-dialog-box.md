@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929172"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Вкладка "Окна" диалогового окна "Параметры сообщения"
 Используйте **Windows** tab, чтобы задать область сообщений, перечисленных в [представления сообщений](../debugger/messages-view.md). Для отображения [диалоговое окно "Параметры сообщения"](../debugger/message-options-dialog-box.md), выберите **сообщений журнала** из **Spy** меню.

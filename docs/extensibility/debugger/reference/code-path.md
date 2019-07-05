@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CODE_PATH structure
 ms.assetid: 2d4b2890-4c9d-47e1-83c0-df9c6436427f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e09cd77308f83c2b9fb1b9cba70076ad797eb2e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 516122ee8aaaa0ed18537369eeeffb05be3ebf1c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714952"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327225"
 ---
 # <a name="codepath"></a>CODE_PATH
 Описывает вызов метода или функции.
@@ -39,9 +42,11 @@ public struct CODE_PATH {
 ```
 
 ## <a name="members"></a>Участники
-bstrName имя пути кода.
+`bstrName`\
+Имя пути кода.
 
-pCode [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , определяющий, где в код, чтобы шаг с заходом в функцию.
+`pCode`\
+[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) , определяющий, где в код, чтобы шаг с заходом в функцию.
 
 ## <a name="remarks"></a>Примечания
 Эта структура используется для реализации, шаг с заходом в функцию. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) возвращает все вызовы от текущего расположения в отлаживаемой программы. Эта структура представляет один такой вызов.

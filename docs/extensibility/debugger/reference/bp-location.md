@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION union
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85f8c915f5c0d6d81214220f78c7db0544777cda
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d0d196342c834ed9f7fd9bf70859ae2b061344e2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663327"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353029"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 Указывает тип структуры, используемые для описания расположения точки останова.
@@ -51,51 +54,41 @@ public struct BP_LOCATION {
 ```
 
 ## <a name="members"></a>Участники
-`bpLocationType` Значение из [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) перечисления, используемые для интерпретации `bpLocation` объединение или `unionmemberX` членов.
+`bpLocationType`\
+Значение из [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) перечисления, используемые для интерпретации `bpLocation` объединение или `unionmemberX` членов.
 
-`bpLocation`.`bplocCodeFileLine`
+`bpLocation`.`bplocCodeFileLine`\
+[C++ только] Содержит [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) структуры, если `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.
 
- [C++ только] Содержит [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) структуры, если `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.
+`bpLocation.bplocCodeFuncOffset`\
+[C++ только] Содержит [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) структуры, если `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`.
 
-`bpLocation.bplocCodeFuncOffset`
+`bpLocation.bplocCodeContext`\
+[C++ только] Содержит [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) структуры, если `bpLocationType`  =  `BPLT_CODE_CONTEXT`.
 
- [C++ только] Содержит [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) структуры, если `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`.
+`bpLocation.bplocCodeString`\
+[C++ только] Содержит [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) структуры, если `bpLocationType`  =  `BPLT_CODE_STRING`.
 
-`bpLocation.bplocCodeContext`
+`bpLocation.bplocCodeAddress`\
+[C++ только] Содержит [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) структуры, если `bpLocationType`  =  `BPLT_CODE_ADDRESS`.
 
- [C++ только] Содержит [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) структуры, если `bpLocationType`  =  `BPLT_CODE_CONTEXT`.
+`bpLocation.bplocDataString`\
+[C++ только] Содержит [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) структуры, если `bpLocationType`  =  `BPLT_DATA_STRING`.
 
-`bpLocation.bplocCodeString`
+`bpLocation.bplocResolution`\
+[C++ только] Содержит [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) структуры, если `bpLocationType`  =  `BPLT_RESOLUTION`.
 
- [C++ только] Содержит [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) структуры, если `bpLocationType`  =  `BPLT_CODE_STRING`.
+`unionmember1`\
+[C# только] См. в разделе "Примечания" о том, как интерпретировать.
 
-`bpLocation.bplocCodeAddress`
+`unionmember2`\
+[C# только] См. в разделе "Примечания" о том, как интерпретировать.
 
- [C++ только] Содержит [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) структуры, если `bpLocationType`  =  `BPLT_CODE_ADDRESS`.
+`unionmember3`\
+[C# только] См. в разделе "Примечания" о том, как интерпретировать.
 
-`bpLocation.bplocDataString`
-
- [C++ только] Содержит [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) структуры, если `bpLocationType`  =  `BPLT_DATA_STRING`.
-
-`bpLocation.bplocResolution`
-
- [C++ только] Содержит [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) структуры, если `bpLocationType`  =  `BPLT_RESOLUTION`.
-
-`unionmember1`
-
- [C# только] См. в разделе "Примечания" о том, как интерпретировать.
-
-`unionmember2`
-
- [C# только] См. в разделе "Примечания" о том, как интерпретировать.
-
-`unionmember3`
-
- [C# только] См. в разделе "Примечания" о том, как интерпретировать.
-
-`unionmember4`
-
- [C# только] См. в разделе "Примечания" о том, как интерпретировать.
+`unionmember4`\
+[C# только] См. в разделе "Примечания" о том, как интерпретировать.
 
 ## <a name="remarks"></a>Примечания
 Эта структура является членом [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) и [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) структуры.

@@ -1,12 +1,16 @@
 - name: Разработка пользовательских интерфейсов
-  href: designing-user-interfaces.md
   items:
-    - name: "Проектирование XAML в Visual\_Studio"
-      href: designing-xaml-in-visual-studio.md
+    - name: Ориентация средства
+      href: designing-user-interfaces.md
+    - name: XAML
       items:
+        - name: "Проектирование XAML в Visual\_Studio"
+          href: designing-xaml-in-visual-studio.md
         - name: Конструктор XAML
-          href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
           items:
+            - name: Обзор
+              displayName: XAML Designer
+              href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
             - name: Работа с элементами
               href: working-with-elements-in-xaml-designer.md
             - name: Упорядочение объектов в контейнеры макета
@@ -22,8 +26,10 @@
             - name: "Ошибки и предупреждения\_XAML"
               href: xaml-errors-warnings.md
         - name: Blend для Visual Studio
-          href: creating-a-ui-by-using-blend-for-visual-studio.md
           items:
+            - name: Обзор
+              displayName: Blend for Visual Studio
+              href: creating-a-ui-by-using-blend-for-visual-studio.md
             - name: Вставка элементов управления и изменение их поведения
               href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
             - name: 'Вставка изображений, видео- и аудиоклипов'
@@ -37,8 +43,9 @@
             - name: Отображение данных
               href: display-data-in-blend.md
             - name: Сочетания клавиш и клавиши-модификаторы
-              href: keyboard-shortcuts-and-modifier-keys-in-blend.md
               items:
+                - name: Обзор
+                  href: keyboard-shortcuts-and-modifier-keys-in-blend.md
                 - name: Сочетания клавиш
                   href: keyboard-shortcuts-in-blend.md
                 - name: Клавиши-модификаторы монтажной панели
@@ -50,23 +57,26 @@
             - name: "Продукты и службы для\_Blend со специальными возможностями"
               href: accessibility-products-and-services-blend.md
     - name: Windows Presentation Foundation (WPF)
-      href: getting-started-with-wpf.md
       items:
+        - name: Начало работы
+          displayName: Windows Presentation Foundation (WPF)
+          href: getting-started-with-wpf.md
         - name: Общие сведения о WPF
           href: introduction-to-wpf.md
-        - name: "Привязка данных WPF с помощью LINQ to\_XML"
-          href: wpf-data-binding-with-linq-to-xml-overview.md
+        - name: 'привязка данных,'
           items:
+            - name: "Привязка данных WPF с помощью LINQ to\_XML"
+              href: wpf-data-binding-with-linq-to-xml-overview.md
             - name: "Динамические свойства LINQ to\_XML"
-              href: linq-to-xml-dynamic-properties.md
               items:
+                - name: Обзор
+                  displayName: LINQ to XML dynamic properties
+                  href: linq-to-xml-dynamic-properties.md
                 - name: Динамические свойства класса XAttribute
-                  href: xattribute-class-dynamic-properties.md
                   items:
                     - name: Value (динамическое свойство XAttribute)
                       href: value-xattribute-dynamic-property.md
                 - name: "Динамические свойства класса\_XElement"
-                  href: xelement-class-dynamic-properties.md
                   items:
                     - name: Attribute (динамическое свойство XElement)
                       href: attribute-xelement-dynamic-property.md
@@ -80,40 +90,116 @@
                       href: value-xelement-dynamic-property.md
                     - name: Xml (динамическое свойство XElement)
                       href: xml-xelement-dynamic-property.md
-                - name: Пример
-                  href: wpf-data-binding-using-linq-to-xml-example.md
+                - name: Примеры
                   items:
+                    - name: Привязка данных WPF к XML с помощью LINQ
+                      href: wpf-data-binding-using-linq-to-xml-example.md
                     - name: Сборка и запуск примера LinqToXmlDataBinding
                       href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
                     - name: Пошаговое руководство. Привязка данных LINQ to XML
                       href: walkthrough-linqtoxmldatabinding-example.md
-                      items:
-                        - name: Исходный код L2DBForm.xaml
-                          href: l2dbform-xaml-source-code.md
-                        - name: Исходный код L2DBForm.xaml.cs
-                          href: l2dbform-xaml-cs-source-code.md
-    - name: Работа с трехмерными ресурсами для игр и приложений
-      href: working-with-3-d-assets-for-games-and-apps.md
+                    - name: Исходный код L2DBForm.xaml
+                      href: l2dbform-xaml-source-code.md
+                    - name: Исходный код L2DBForm.xaml.cs
+                      href: l2dbform-xaml-cs-source-code.md
+    - name: Windows Forms
       items:
-        - name: Работа с текстурами и изображениями
-          href: working-with-textures-and-images.md
+        - name: "Учебник\_1. Создание средства просмотра рисунков (C#)"
           items:
+            - name: Обзор
+              displayName: Tutorial 1 Picture viewer
+              href: ../ide/tutorial-1-create-a-picture-viewer.md
+            - name: "Шаг\_1. Создание проекта приложения Windows Forms"
+              href: ../ide/step-1-create-a-windows-forms-application-project.md
+            - name: "Шаг\_2. Запуск программы"
+              href: ../ide/step-2-run-your-program.md
+            - name: Шаг 3. Настройка свойств формы
+              href: ../ide/step-3-set-your-form-properties.md
+            - name: "Шаг\_4. Создание макета формы с помощью элемента управления TableLayoutPanel"
+              href: ../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+            - name: "Шаг\_5. Добавление элементов управления в форму"
+              href: ../ide/step-5-add-controls-to-your-form.md
+            - name: "Шаг\_6. Присвоение имен элементам управления \"Кнопка\""
+              href: ../ide/step-6-name-your-button-controls.md
+            - name: "Шаг\_7. Добавление компонентов диалогового окна в форму"
+              href: ../ide/step-7-add-dialog-components-to-your-form.md
+            - name: "Шаг\_8. Написание кода для обработчика событий кнопки \"Показать рисунок\""
+              href: ../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
+            - name: "Шаг\_9. Проверка, комментирование и тестирование кода"
+              href: ../ide/step-9-review-comment-and-test-your-code.md
+            - name: "Шаг\_10. Написание кода для дополнительных кнопок и флажка"
+              href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
+            - name: "Шаг\_11. Запуск программы и изучение других функций"
+              href: ../ide/step-11-run-your-program-and-try-other-features.md
+        - name: "Учебник\_2. Создание математического теста с ограничением по времени (C#)"
+          items:
+            - name: Обзор
+              displayName: Tutorial 2 Timed math quiz
+              href: ../ide/tutorial-2-create-a-timed-math-quiz.md
+            - name: "Шаг\_1. Создание проекта и добавление в форму элементов управления Label"
+              href: ../ide/step-1-create-a-project-and-add-labels-to-your-form.md
+            - name: "Шаг\_2. Создание задачи на сложение случайных чисел"
+              href: ../ide/step-2-create-a-random-addition-problem.md
+            - name: Шаг 3. Добавление таймера с обратным отсчетом
+              href: ../ide/step-3-add-a-countdown-timer.md
+            - name: "Шаг\_4. Добавление метода CheckTheAnswer()"
+              href: ../ide/step-4-add-the-checktheanswer-parens-method.md
+            - name: "Шаг\_5. Добавление обработчиков событий входа для элементов управления NumericUpDown"
+              href: ../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+            - name: "Шаг\_6. Добавление задачи на вычитание"
+              href: ../ide/step-6-add-a-subtraction-problem.md
+            - name: "Шаг\_7. Добавление задач на умножение и деление"
+              href: ../ide/step-7-add-multiplication-and-division-problems.md
+            - name: "Шаг\_8. Настройка теста"
+              href: ../ide/step-8-customize-the-quiz.md
+        - name: "Учебник\_3. Создание игры \"Подбери пару!\" (C#)"
+          items:
+            - name: Обзор
+              displayName: Tutorial 3 Matching game
+              href: ../ide/tutorial-3-create-a-matching-game.md
+            - name: "Шаг\_1. Создание проекта и добавление таблицы в форму"
+              href: ../ide/step-1-create-a-project-and-add-a-table-to-your-form.md
+            - name: "Шаг\_2. Добавление случайного объекта и списка значков"
+              href: ../ide/step-2-add-a-random-object-and-a-list-of-icons.md
+            - name: Шаг 3. Назначение каждому элементу управления Label случайного значка
+              href: ../ide/step-3-assign-a-random-icon-to-each-label.md
+            - name: "Шаг\_4. Добавление обработчика событий Click к каждому элементу управления Label"
+              href: ../ide/step-4-add-a-click-event-handler-to-each-label.md
+            - name: "Шаг\_5. Добавление ссылок на элементы управления Label"
+              href: ../ide/step-5-add-label-references.md
+            - name: "Шаг\_6. Добавление таймера"
+              href: ../ide/step-6-add-a-timer.md
+            - name: "Шаг\_7. Отмена исчезновения пар значков"
+              href: ../ide/step-7-keep-pairs-visible.md
+            - name: "Шаг\_8. Добавление метода для проверки того, выиграл ли игрок"
+              href: ../ide/step-8-add-a-method-to-verify-whether-the-player-won.md
+            - name: "Шаг\_9. Изучение других возможностей"
+              href: ../ide/step-9-try-other-features.md
+    - name: Трехмерные ресурсы
+      items:
+        - name: Работа с трехмерными ресурсами для игр и приложений
+          href: working-with-3-d-assets-for-games-and-apps.md
+        - name: Практическое руководство. Использование трехмерных ресурсов в игре или приложении
+          href: using-3-d-assets-in-your-game-or-app.md
+        - name: Текстуры и изображения
+          items:
+            - name: Работа с текстурами и изображениями
+              href: working-with-textures-and-images.md
             - name: редактор изображений
               href: image-editor.md
             - name: Примеры редактора изображений
-              href: image-editor-examples.md
               items:
                 - name: Создание простейшей текстуры
                   href: how-to-create-a-basic-texture.md
                 - name: Создание и изменение MIP-уровней
                   href: how-to-create-and-modify-mip-levels.md
-        - name: Работа с трехмерными моделями
-          href: working-with-3-d-models.md
+        - name: Трехмерные модели
           items:
+            - name: Работа с трехмерными моделями
+              href: working-with-3-d-models.md
             - name: Редактор моделей
               href: model-editor.md
             - name: Примеры редактора моделей
-              href: model-editor-examples.md
               items:
                 - name: Создание простейшей трехмерной модели
                   href: how-to-create-a-basic-3-d-model.md
@@ -123,14 +209,17 @@
                   href: how-to-model-3-d-terrain.md
                 - name: Применение шейдера к трехмерной модели
                   href: how-to-apply-a-shader-to-a-3-d-model.md
-        - name: Работа с шейдерами
-          href: working-with-shaders.md
+        - name: Шейдеры
           items:
+            - name: Работа с шейдерами
+              href: working-with-shaders.md
             - name: Конструктор шейдеров
               href: shader-designer.md
             - name: Узлы конструктора шейдеров
-              href: shader-designer-nodes.md
               items:
+                - name: Обзор
+                  displayName: Shader designer nodes
+                  href: shader-designer-nodes.md
                 - name: Константные узлы
                   href: constant-nodes.md
                 - name: Узлы параметров
@@ -144,9 +233,9 @@
                 - name: Узлы фильтров
                   href: filter-nodes.md
             - name: Примеры конструктора шейдеров
-              href: shader-designer-examples.md
               items:
                 - name: Создание простейшего шейдера цвета
+                  displayName: Shader designer example
                   href: how-to-create-a-basic-color-shader.md
                 - name: Создание простейшего шейдера с моделью освещения Ламберта
                   href: how-to-create-a-basic-lambert-shader.md
@@ -162,14 +251,13 @@
                   href: walkthrough-creating-a-realistic-3-d-billiard-ball.md
                 - name: Экспорт шейдера
                   href: how-to-export-a-shader.md
-        - name: Использование трехмерных ресурсов в игре или приложении
-          href: using-3-d-assets-in-your-game-or-app.md
+        - name: Экспорт текстур
           items:
             - name: 'Экспорт текстуры, содержащей MIP-карты'
               href: how-to-export-a-texture-that-contains-mipmaps.md
             - name: Экспорт текстуры с предварительным умножением альфа-канала
               href: how-to-export-a-texture-that-has-premultiplied-alpha.md
-            - name: "Экспорт текстуры для использования с приложениями Direct2D и\_Javascipt"
+            - name: Экспорт текстуры для использования с приложениями Direct2D и JavaScript
               href: how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
     - name: "Библиотека изображений Visual\_Studio"
       href: the-visual-studio-image-library.md
