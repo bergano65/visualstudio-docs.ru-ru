@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007723"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Справочник по схеме для элемента проекта SharePoint
   Visual Studio использует схему элемента проекта SharePoint для проверки содержимого *.spdata* файлов. *.Spdata* файл определяет содержимое и поведение элемента проекта SharePoint. Дополнительные сведения о содержимом элементов проекта SharePoint, см. в разделе [создание элементов, шаблоны и шаблоны проектов для элементов проектов SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).
@@ -37,7 +37,7 @@ ms.locfileid: "56608725"
 
  Корневой элемент — [ProjectItem](../sharepoint/projectitem-element.md) элемент. Ниже перечислены все элементы, определенные схемой.
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Представляет коллекцию пользовательских элементов данных, которые связаны с элементом проекта SharePoint.|
 |[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|Представляет пользовательский элемент данных, связанный с элементом проекта SharePoint, в формате ключ/значение. Ключ и значение должны быть строками.|

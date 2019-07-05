@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - STEPUNIT enumeration
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f1d6742b28badf39a5c9273d2891c2da9a9d5f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 803aafb60d7ada5b3339735fc0a10c66bb4925e0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712129"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329179"
 ---
 # <a name="stepunit"></a>STEPUNIT
 Указывает единицу шага для пошагового выполнения.
@@ -41,12 +44,15 @@ enum enum_STEPUNIT { 
 };
 ```
 
-## <a name="members"></a>Участники
- Действия STEP_STATEMENT инструкцией.
+## <a name="fields"></a>Поля
+ `STEP_STATEMENT`\
+ Действия инструкцией.
 
- Действия STEP_LINE линией.
+ `STEP_LINE`\
+ Действия с помощью строки.
 
- Действия STEP_INSTRUCTION инструкцией.
+ `STEP_INSTRUCTION`\
+ Действия по инструкциям.
 
 ## <a name="remarks"></a>Примечания
  Передается в качестве аргумента для [шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md) метод.

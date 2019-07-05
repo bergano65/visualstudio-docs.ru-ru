@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044926"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690218"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Визуализация событий EventSource как маркеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60044926"
   
 ### <a name="marker-type"></a>Тип маркера  
   
-1. События с [кодом](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start или win:Stop рассматриваются как начало или конец интервала соответственно.  Вложенные или перекрывающиеся интервалы не могут отображаться. Пары событий, которые начинаются в одном потоке и заканчиваются в другом, также не могут отображаться.  
+1. События с [кодом](https://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start или win:Stop рассматриваются как начало или конец интервала соответственно.  Вложенные или перекрывающиеся интервалы не могут отображаться. Пары событий, которые начинаются в одном потоке и заканчиваются в другом, также не могут отображаться.  
   
-2. Событие, код которого отличен от win:Start и win:Stop, рассматривается как флаг маркера, если оно не имеет [уровень](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (поле EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) win:Verbose или выше.  
+2. Событие, код которого отличен от win:Start и win:Stop, рассматривается как флаг маркера, если оно не имеет [уровень](https://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (поле EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) win:Verbose или выше.  
   
 3. Во всех остальных случаях это событие обрабатывается как сообщение.  
   
@@ -94,7 +94,7 @@ ms.locfileid: "60044926"
  Используйте поле cvSpanId типа int, чтобы сопоставлять пары событий. Значение для каждой пары событий start — stop, представляющей интервал, должно быть уникальным. Обычно для параллельного кода это требует использования примитивов синхронизации, таких как <xref:System.Threading.Interlocked.Exchange%2A>, для обеспечения правильности ключа (значения, которое используется для CvSpanID).  
   
 > [!NOTE]
->  Не поддерживается использование SpanID для вложения интервалов, их частичного перекрытия в одном потоке, а также обеспечения ситуации, когда интервал начинается в одном потоке, а завершается в другом.  
+> Не поддерживается использование SpanID для вложения интервалов, их частичного перекрытия в одном потоке, а также обеспечения ситуации, когда интервал начинается в одном потоке, а завершается в другом.  
   
 ## <a name="see-also"></a>См. также  
  [Маркеры визуализатора параллелизма](../profiling/concurrency-visualizer-markers.md)

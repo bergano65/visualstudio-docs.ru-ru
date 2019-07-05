@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943476"
 ---
 # <a name="flowchart-activity-designer"></a>Конструктор действия блок-схемы
 Действие <xref:System.Activities.Statements.Flowchart> служит для создания рабочих процессов, в которых определяются и поддерживаются сложные элементы управления потоком. <xref:System.Activities.Statements.Flowchart> можно создать в коде или с помощью [!INCLUDE[wfd2](../includes/wfd2-md.md)]. В этом разделе описана работа в [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Конструктор действия рабочего процесса [!INCLUDE[wfd1](../includes/wfd1-md.md)] позволяет разработчику создавать рабочие процессы естественным образом.  

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MESSAGETYPE enumeration
 ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16d2b9ae9c446d4c8082a8c35c9e4d1810233b95
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c17860bb47f493031e6db1134aec498611b07f1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687514"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339195"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Указывает тип сообщения и причины.
@@ -47,18 +50,24 @@ public enum enum_MESSAGETYPE { 
 };
 ```
 
-## <a name="members"></a>Участники
- MT_OUTPUTSTRING указывает, что должно быть отправлено сообщение в окно вывода. Это взаимно исключают друг друга из `MT_MESSAGEBOX`.
+## <a name="fields"></a>Поля
+ `MT_OUTPUTSTRING`\
+ Указывает, что сообщения должны отправляться в окне вывода. Это взаимно исключают друг друга из `MT_MESSAGEBOX`.
 
- MT_MESSAGEBOX указывает, что сообщение должно отображаться в окне сообщения. Это взаимно исключают друг друга из `MT_OUTPUTSTRING`.
+ `MT_MESSAGEBOX`\
+ Указывает, что сообщения должны быть видны в окне сообщения. Это взаимно исключают друг друга из `MT_OUTPUTSTRING`.
 
- Значение маски MT_TYPE_MASK объект для изоляции назначения для сообщения.
+ `MT_TYPE_MASK`\
+ Значение маски для изоляции назначения для сообщения.
 
- MT_REASON_EXCEPTION указывает, что окно сообщения отображается из-за исключения. Это взаимно исключают друг друга из `MT_REASON_TRACEPOINT`.
+ `MT_REASON_EXCEPTION`\
+ Указывает, что окно сообщения отображается в результате исключения. Это взаимно исключают друг друга из `MT_REASON_TRACEPOINT`.
 
- MT_REASON_TRACEPOINT указывает, что окно сообщения отображается в результате обращения к точке трассировки. Это взаимно исключают друг друга для `MT_REASON_EXCEPTION`.
+ `MT_REASON_TRACEPOINT`\
+ Указывает, что в результате обращения к точке трассировки отображается окно сообщения. Это взаимно исключают друг друга для `MT_REASON_EXCEPTION`.
 
- Значение маски MT_REASON_MASK объект для изоляции причина для отображаемого сообщения.
+ `MT_REASON_MASK`\
+ Значение маски для изоляции причина для отображаемого сообщения.
 
 ## <a name="remarks"></a>Примечания
  Эти значения возвращаются из [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) и [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) методы.

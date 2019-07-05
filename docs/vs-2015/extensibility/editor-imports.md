@@ -10,12 +10,12 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1fc32d0126d912acab104ecefe3cb62d80b8513f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991231"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690322"
 ---
 # <a name="editor-imports"></a>Импорт в редакторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58991231"
  Чтобы использовать редактор импорта, импортируйте его как поля или свойства класса, который экспортирует в компоненте Managed Extensibility Framework.  
   
 > [!NOTE]
->  Дополнительные сведения о Managed Extensibility Framework, см. в разделе [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Дополнительные сведения о Managed Extensibility Framework, см. в разделе [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ## <a name="import-syntax"></a>Синтаксис импорта  
  Приведенный ниже показано, как импортировать редактора параметры фабрики служб.  
@@ -44,17 +44,17 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Дополнительные примеры использования imports см. в разделе ниже пошаговых руководства:  
   
- [Пошаговое руководство: Создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Пошаговое руководство: создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [Пошаговое руководство: Настройка представления текста](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [Пошаговое руководство: настройка представления текста](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Пошаговое руководство: Выделение текста](../extensibility/walkthrough-highlighting-text.md)  
+ [Пошаговое руководство: выделение текста](../extensibility/walkthrough-highlighting-text.md)  
   
- [Пошаговое руководство: Отображение всплывающих подсказок для кратких сведений](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Пошаговое руководство: отображение всплывающих подсказок для кратких сведений](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Пошаговое руководство: Отображение справки сигнатуры](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Пошаговое руководство: отображение справки по цифровым подписям](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Пошаговое руководство: Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)  
   
  [Пошаговое руководство: Отображение смарт-тегов](../misc/walkthrough-displaying-smarttags.md)  
   

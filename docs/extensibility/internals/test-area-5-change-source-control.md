@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], changing
 - source control plug-ins, changing source control
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4f3cedf9f26d695c6cae5e15113ed5cda0942e2e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649255"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329853"
 ---
 # <a name="test-area-5-change-source-control"></a>Область тестирования 5. Смена системы управления версиями
 Эта область тестирования подключаемый модуль системы управления версиями процесс изменения системы управления версиями с помощью **Смена системы управления версиями** команды.

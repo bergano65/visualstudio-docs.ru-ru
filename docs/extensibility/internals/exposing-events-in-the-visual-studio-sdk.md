@@ -6,17 +6,17 @@ helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cc905e359d7bcb2946d627ebcb3c28067233fa0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 29fd9df90f58807ab3d48e077dcfa02d75eff837
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603161"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352604"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Предоставления событий в Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] позволяет источника события с помощью автоматизации. Рекомендуется, вы источник события для проектов и элементов проектов.
@@ -68,7 +68,7 @@ ms.locfileid: "56603161"
 
  *AutomationEvents.h* и *AutomationEvents.cpp* содержать объявления и реализации классов в следующей таблице.
 
-|Класс|Описание:|
+|Класс|Описание|
 |-----------|-----------------|
 |`CAutomationEvents`|Реализует объект корневого события, полученные из `DTE.Events` объекта.|
 |`CProjectsEventsContainer` и `CProjectItemsEventsContainer`|Реализации объектов источника событий, которые инициируют соответствующие события.|

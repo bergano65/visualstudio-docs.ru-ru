@@ -3,17 +3,17 @@ title: Основы UX для Visual Studio | Документация Майк�
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e97aa60a983eef3034eab28f7835edc1abb6734
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 45e4f1389317c67665d1b03e936a33380cb7ecf2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098666"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310811"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials for Visual Studio
 
@@ -134,10 +134,10 @@ ms.locfileid: "60098666"
 #### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Подчеркивание, используется в качестве метки группы, не гиперссылки
  Подчеркивание текста следует использовать только для гиперссылки.
 
- **Неправильный:**\
+ **Неправильный:** \
  ![Подчеркнутый текст, не являющегося гиперссылкой — это шаблон защиты от Visual Studio. ](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102 g_GroupLabelIncorrect")<br />Подчеркнутый текст, не являющегося гиперссылкой — это шаблон защиты от Visual Studio.
 
- **Хороший:**\
+ **Хороший:** \
  ![Стиль правильно, без гиперссылки текст отображается недекорируемое шрифт среды разработки. ](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102 h_GroupLabelCorrect")<br />Стиль правильно, без гиперссылки текст отображается недекорируемое шрифт среды разработки.
 
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Щелкнув по результатов "флажок" во всплывающем диалоге

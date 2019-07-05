@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryContext2::Add method
 - Add method
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf072972854d837695dcacd4f84984bf342e30e3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c1cafbf22e51f867948491e2925c085bd387ea84
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707189"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347089"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 Добавляет указанное значение к текущему контексту и возвращает новый контекст.
@@ -39,14 +42,12 @@ int Add(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwCount`
+## <a name="parameters"></a>Параметры
+`dwCount`\
+[in] Значение, добавляемое к текущему контексту.
 
- [in] Значение, добавляемое к текущему контексту.
-
- `ppMemCxt`
-
- [out] Возвращает новый [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объекта.
+`ppMemCxt`\
+[out] Возвращает новый [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) объекта.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

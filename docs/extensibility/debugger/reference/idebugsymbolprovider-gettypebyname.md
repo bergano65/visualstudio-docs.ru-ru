@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetTypeByName method
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ba8c20be22a6f6a9a990f9de042ac2dab4c72a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fca036da331795c0f7c17f848bbea1e682796894
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695015"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347412"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 Этот метод сопоставляет имя символа типа символа.
@@ -40,18 +43,15 @@ int GetTypeByName(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszClassName`
+## <a name="parameters"></a>Параметры
+`pszClassName`\
+[in] Имя символа.
 
- [in] Имя символа.
+`nameMatch`\
+[in] Выбирает тип соответствия, например, с учетом регистра. Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления.
 
- `nameMatch`
-
- [in] Выбирает тип соответствия, например, с учетом регистра. Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления.
-
- `ppField`
-
- [out] Возвращает тип символа как [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.
+`ppField`\
+[out] Возвращает тип символа как [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) объекта.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

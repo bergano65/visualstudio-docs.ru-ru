@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003663"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746588"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper - задача
 Задача обеспечивает автоматическое обнаружение, скачивание и установку приложения и необходимых для него компонентов. Она служит единым установщиком, объединяющим отдельные установщики для всех компонентов, образующих приложение.
@@ -152,7 +152,7 @@ ms.locfileid: "63003663"
 Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Пример
-В следующем примере используется задача `GenerateBootstrapper` для установки приложения, требующего установки [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] в качестве необходимого компонента.
+В следующем примере используется задача `GenerateBootstrapper` для установки приложения, требующего установки .NET Framework 2.0 в качестве необходимого компонента.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

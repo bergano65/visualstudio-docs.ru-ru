@@ -1,43 +1,42 @@
 - name: Руководства по Visual Basic
   href: index.yml
+- name: Обзор
   items:
-    - name: Обзор
-      items:
-        - name: О Visual Studio
-          href: visual-studio-ide.md
-        - name: О редакторе кода
-          href: tutorial-editor.md
-        - name: О проектах и решениях
-          href: tutorial-projects-solutions.md
-        - name: Другие возможности Visual Studio
-          href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-    - name: Создание приложения
-      expanded: true
-      items:
-        - name: Создание консольного приложения
-          href: tutorial-console.md
-        - name: "Создание приложения\_UWP"
-          href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-        - name: Создание приложения WPF
-          href: tutorial-wpf.md
-        - name: Создание веб-приложения
-          href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
-        - name: Создание приложения Windows Forms
-          href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-    - name: Знакомство с Visual Studio
-      expanded: true
-      items:
-        - name: Открытие проекта из репозитория
-          href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-        - name: Создание и редактирование кода
-          href: tutorial-editor.md
-        - name: Компиляция и сборка
-          href: ../../ide/compiling-and-building-in-visual-studio.md
-        - name: Отладка кода
-          href: ../visual-basic/tutorial-debugger.md
-        - name: Модульное тестирование
-          href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-        - name: Развертывание проекта
-          href: ../../deployment/index.md
-        - name: Доступ к данным
-          href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    - name: О Visual Studio
+      href: visual-studio-ide.md
+    - name: О редакторе кода
+      href: tutorial-editor.md
+    - name: О проектах и решениях
+      href: tutorial-projects-solutions.md
+    - name: Другие возможности Visual Studio
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+- name: Создание приложения
+  expanded: true
+  items:
+    - name: Создание консольного приложения
+      href: tutorial-console.md
+    - name: "Создание приложения\_UWP"
+      href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    - name: Создание приложения WPF
+      href: tutorial-wpf.md
+    - name: Создание веб-приложения
+      href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
+    - name: Создание приложения Windows Forms
+      href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+- name: Знакомство с Visual Studio
+  expanded: true
+  items:
+    - name: Открытие проекта из репозитория
+      href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    - name: Создание и редактирование кода
+      href: tutorial-editor.md
+    - name: Компиляция и сборка
+      href: ../../ide/compiling-and-building-in-visual-studio.md
+    - name: Отладка кода
+      href: ../visual-basic/tutorial-debugger.md
+    - name: Модульное тестирование
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    - name: Развертывание проекта
+      href: ../../deployment/index.md
+    - name: Доступ к данным
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0de5d5560c2e840fd2df7fdc5811c5eea0747da8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b172ffbf481ea077d099288b3b79254b89b13a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432746"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Практическое руководство. Создание отчета трассировки событий Windows для средств профилирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60106505"
 Отчет трассировки событий для Windows информирует о событиях трассировки событий Windows, которые были сохранены в ходе сеанса анализа производительности для средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Данные трассировки событий Windows собираются в двоичном ETL-файле. Дополнительные сведения об отчете трассировки событий Windows см. в [этой статье](../profiling/event-tracing-for-windows-etw-report.md).  
   
 > [!NOTE]
->  Отчеты трассировки событий Windows невозможно отобразить в интерфейсе [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+> Отчеты трассировки событий Windows невозможно отобразить в интерфейсе [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 - Сведения о сборе данных трассировки событий Windows с помощью интерфейса [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] см. в статье [Практическое руководство. Сбор трассировки событий Windows (ETW) данных](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   

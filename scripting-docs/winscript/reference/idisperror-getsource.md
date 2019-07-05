@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f793675d40c87e4c64c2a83d37327f5222d8d1f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 8a84640f020a1ff255b8c7e5dd753752e0d310a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446881"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
 Возвращает программный идентификатор зависит от языка для класса или приложения, в котором возникла ошибка.  
@@ -42,7 +42,7 @@ HRESULT GetSource(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
@@ -50,7 +50,7 @@ HRESULT GetSource(
  Этот метод используется для определения класса или приложения, в которой возникло исключение. Программный идентификатор могут быть возвращены в язык, указанный идентификатор языка (LCID), предоставленный во время вызова.  
   
 > [!NOTE]
->  Этот метод не реализован.  
+> Этот метод не реализован.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDispError](../../winscript/reference/idisperror-interface.md)

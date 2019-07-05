@@ -7,17 +7,17 @@ helpviewer_keywords:
 - ~sak files
 - source control plug-ins, ~SAK files
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99d776e7d9891ca231fde4531b558de66568904f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e409a08ba295bb55eb1fcfcd2a048a9bdb5ea7c9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641472"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327540"
 ---
 # <a name="elimination-of-sak-files"></a>Устранение ~ SAK-файлов
 В версии 1.2 API подключаемого модуля управления источника *~ SAK* файлы были заменены флаги возможностей и новые функции, которые позволяют обнаружить ли источник управления подключаемый модуль поддерживает *MSSCCPRJ* файл и общими извлеченными элементами.
@@ -48,7 +48,7 @@ Visual Studio .NET 2003 создан временные файлы, которы
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateTemporaryFilesInSourceControl** = *DWORD: 00000001*
 
 > [!NOTE]
->  Если этот раздел реестра имеет значение *DWORD: 00000000*, это эквивалентно, несуществующий ключ и Visual Studio по-прежнему пытается создать временные файлы. Тем не менее если раздел реестра имеет значение *DWORD: 00000001*, Visual Studio не пытается создать временные файлы. Вместо этого предполагается, что подключаемый модуль системы управления версиями не поддерживает *MSSCCPRJ.SCC* файл и не поддерживает общие извлечения.
+> Если этот раздел реестра имеет значение *DWORD: 00000000*, это эквивалентно, несуществующий ключ и Visual Studio по-прежнему пытается создать временные файлы. Тем не менее если раздел реестра имеет значение *DWORD: 00000001*, Visual Studio не пытается создать временные файлы. Вместо этого предполагается, что подключаемый модуль системы управления версиями не поддерживает *MSSCCPRJ.SCC* файл и не поддерживает общие извлечения.
 
 ## <a name="see-also"></a>См. также
 - [Новые возможности в исходный элемент управления Plug-in API версии 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

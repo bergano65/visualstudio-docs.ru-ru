@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2b4b30607d5d0c677f7ef5e2401bc55c2398eb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecbd3582257d4c141c82be95c0e7ea06504ffcf
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945585"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65839602"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Диалоговое окно "Параметры" (Visual Studio)
 
@@ -45,4 +45,4 @@ ms.locfileid: "62945585"
 
 ## <a name="see-also"></a>См. также
 
-- [Настройка редактора](../../ide/customizing-the-editor.md)
+- [Настройка редактора](../how-to-change-text-case-in-the-editor.md)

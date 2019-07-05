@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsString
 ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e3ac6bda70a25baf7546c709849c650372c649
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2cb58326f36e88768ab9144f08ded8c85410e1c9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699617"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339817"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Задает значение ссылки из строки. Зарезервировано для будущего использования.
@@ -40,18 +43,15 @@ int SetValueAsString ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszValue`
+## <a name="parameters"></a>Параметры
+`pszValue`\
+[in] Значение в виде строки.
 
- [in] Значение в виде строки.
+`dwRadix`\
+[in] Основание системы счисления для использования в любой числовой сведения о форматировании.
 
- `dwRadix`
-
- [in] Основание системы счисления для использования в любой числовой сведения о форматировании.
-
- `dwTimeout`
-
- [in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
+`dwTimeout`\
+[in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Всегда возвращает значение `E_NOTIMPL`.

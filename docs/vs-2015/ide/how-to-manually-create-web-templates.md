@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Создание веб-шаблонов вручную | Документация Майкрософт
+title: Практическое руководство. Создание веб-шаблонов вручную | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4884ef313d969ae59b8aea704490eeb2e4e5a91c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a505fe3428a8e16c321eee4764f8a62fff65511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431104"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Практическое руководство. Создание веб-шаблонов вручную
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54782214"
 Создание веб-шаблона отличается от создания других типов шаблонов. Так как шаблоны веб-проектов отображаются в диалоговом окне **Добавить новый веб-сайт**, а элементы веб-проекта классифицируются по языку программирования, файл VSTEMPLATE должен указывать, что это веб-шаблон, а также задавать язык программирования.  
   
 > [!NOTE]
->  Веб-шаблоны должны содержать пустой файл WEBPROJ, указанный с помощью атрибута `File` элемента `Project`. Хотя веб-проектам не нужны файлы проекта, этот файл необходим для правильной работы веб-шаблона.  
+> Веб-шаблоны должны содержать пустой файл WEBPROJ, указанный с помощью атрибута `File` элемента `Project`. Хотя веб-проектам не нужны файлы проекта, этот файл необходим для правильной работы веб-шаблона.  
   
 ### <a name="to-manually-create-a-web-template"></a>Создание веб-шаблонов вручную  
   
@@ -47,7 +47,7 @@ ms.locfileid: "54782214"
   
    - VisualBasic  
   
-     Например:  
+     Пример:  
   
    ```  
    <TemplateData>  
@@ -86,6 +86,6 @@ ms.locfileid: "54782214"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

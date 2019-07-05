@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e9c6dadd9e553d456bfb46d054a7ae727aa087
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5ee567dff65f184f604fb390ec19ebbf6d1e0208
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682756"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334012"
 ---
 # <a name="sccadd-function"></a>Функция SccAdd
 Эта функция добавляет новые файлы системы управления версиями.
@@ -68,7 +68,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>Возвращаемое значение
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |SCC_OK|Добавить операция выполнена успешно.|
 |SCC_E_FILEALREADYEXISTS|Выбранный файл уже существует в системе управления версиями.|
@@ -85,7 +85,7 @@ SCCRTN SccAdd(
  Обычные `fOptions` здесь заменяются массива, `pfOptions`, с одним `LONG` параметр спецификации каждого файла. Это потому, что тип файла может отличаться от файла к файлу.
 
 > [!NOTE]
->  Не допускается указывать оба `SCC_FILETYPE_TEXT` и `SCC_FILETYPE_BINARY` параметры для одного файла, но допускается указывать ни одного. Установка не совпадает со значением параметра `SCC_FILETYPE_AUTO`, в этом случае система управления подключаемый модуль автоматически определяют тип файла.
+> Не допускается указывать оба `SCC_FILETYPE_TEXT` и `SCC_FILETYPE_BINARY` параметры для одного файла, но допускается указывать ни одного. Установка не совпадает со значением параметра `SCC_FILETYPE_AUTO`, в этом случае система управления подключаемый модуль автоматически определяют тип файла.
 
  Ниже приведен список флагов, используемых в `pfOptions` массива:
 

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0907370ae8ad3c0d5e6b5ebc3c8bcab842474249
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056774"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684773"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Практическое руководство. Создать ассоциацию (связь) между классами LINQ to SQL (реляционный конструктор объектов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60056774"
  Можно выбирать родительский класс и дочерний класс, когда диалоговое окно **Редактор ассоциаций** используется для создания ассоциации. Родительский класс представляет собой класс сущностей, который содержит первичный ключ; дочерний класс представляет собой класс сущностей, который содержит внешний ключ. Например, если были созданы классы сущностей, которые сопоставляются таблицам Northwind Customers и Orders, то класс Customer будет родительским классом, а класс Order будет дочерним классом.  
   
 > [!NOTE]
->  При перетаскивании таблиц из **обозревателя серверов**/**обозреватель баз данных** на [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), ассоциации создаются автоматически на основе в существующем отношения внешнего ключа в базе данных.  
+> При перетаскивании таблиц из **обозревателя серверов**/**обозреватель баз данных** на [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), ассоциации создаются автоматически на основе в существующем отношения внешнего ключа в базе данных.  
   
  После создания ассоциации при выборе ассоциации в конструкторе O/R, имеются некоторые конфигурируемые свойства в **свойства** окна. (Ассоциация представляет собой линию между связанными классами). В следующей таблице представлены описания свойств ассоциации.  
   
@@ -50,7 +50,7 @@ ms.locfileid: "60056774"
   
 ## <a name="see-also"></a>См. также  
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Пошаговое руководство: Создание классов LINQ to SQL (реляционный конструктор объектов)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Пошаговое руководство: Создание классов LINQ to SQL (реляционный конструктор объектов)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Методы DataContext (реляционный конструктор объектов)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Практическое руководство. Представить первичные ключи](http://msdn.microsoft.com/library/63c65289-6539-42b2-8493-891c232018fa)
+ [Практическое руководство. Представить первичные ключи](https://msdn.microsoft.com/library/63c65289-6539-42b2-8493-891c232018fa)

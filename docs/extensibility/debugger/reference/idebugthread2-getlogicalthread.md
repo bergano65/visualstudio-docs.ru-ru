@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetLogicalThread
 ms.assetid: bce6230e-41d4-49b7-a050-2dde5efb6805
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e8dbd78ef262479fbc8405b77fa0cf53f8087a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1e8c1543383b3d0df0166b50359caf0f80a8b3ef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723296"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320227"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 Отладчики не реализуют этот метод.
@@ -38,14 +41,12 @@ int GetLogicalThread( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pStackFrame`
+## <a name="parameters"></a>Параметры
+`pStackFrame`\
+[in] [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , представляющий кадр стека.
 
- [in] [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , представляющий кадр стека.
-
- `ppLogicalThread`
-
- [out] Возвращает `IDebugLogicalThread2` интерфейс, который представляет логический поток. Реализация ядра отладки следует выбрать значение null.
+`ppLogicalThread`\
+[out] Возвращает `IDebugLogicalThread2` интерфейс, который представляет логический поток. Реализация ядра отладки следует выбрать значение null.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Отладка ядра реализации всегда возвращают `E_NOTIMPL`.

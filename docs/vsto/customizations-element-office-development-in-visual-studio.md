@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8600fd67cd28073544824374135c6966e19b63a0
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445506"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;настройки&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `customizations` пространства имен `vstov4` содержит все сведения об установке и загрузке каждого решения Office.
@@ -72,7 +72,7 @@ ms.locfileid: "54864245"
  В приведенном ниже примере кода показан элемент `customizations` для настройки на уровне документа.
 
 > [!NOTE]
->  Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
+> Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
 
@@ -88,7 +88,7 @@ ms.locfileid: "54864245"
 
 ## <a name="example-of-a-vsto-add-in"></a>Пример надстройки VSTO
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В следующем примере кода показано `customizations` элемент для надстройки VSTO. Это надстройка VSTO для Outlook, в которой используются области форм. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код

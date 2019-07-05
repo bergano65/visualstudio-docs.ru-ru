@@ -1,5 +1,5 @@
 ---
-title: Приступить к программированию настроек на уровне документа для Excel
+title: 'Excel: Приступить к программированию настроек на уровне документа'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 221f755ff934946ca829aa2abe088aeec864cf87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2c1ff264eb1a4ca7afdc424cef7edf15bae06554
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114241"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402155"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Приступить к программированию настроек на уровне документа для Excel
   Если вы начальном этапе создания настроек уровня документа для Microsoft Office Excel с помощью Visual Studio, вот что вам необходимо знать.

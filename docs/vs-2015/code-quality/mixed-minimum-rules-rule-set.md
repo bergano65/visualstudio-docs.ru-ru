@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fbc8239fc3472d5dd5e8a24ca2b0c125d57cca21
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7c690389b5abc3b6e37aed1629ae5a640a5d99a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653077"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682207"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Набор правил "Минимальные правила для смешанного кода"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "59653077"
 |                              [C6504](../code-quality/c6504.md)                              |                                              Значение NULL у переменной, не являющейся указателем                                              |
 |                              [C6505](../code-quality/c6505.md)                              |                                               MustCheck для Void                                               |
 |                              [C6506](../code-quality/c6506.md)                              |                                      Размер буфера для массива или переменной, не являющейся указателем                                      |
-|        [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Несовпадение NULL на уровне разыменовывания 0                                       |
+|        [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Несовпадение NULL на уровне разыменовывания 0                                       |
 |                              [C6508](../code-quality/c6508.md)                              |                                           Попытка записи константы                                            |
 |                              [C6509](../code-quality/c6509.md)                              |                                          Использование return в предусловии                                          |
 |                              [C6510](../code-quality/c6510.md)                              |                                        Завершение нулем у переменной, не являющейся указателем                                         |
@@ -70,11 +70,11 @@ ms.locfileid: "59653077"
 |                              [C6516](../code-quality/c6516.md)                              |                                          Нет свойств у атрибута                                           |
 |                              [C6517](../code-quality/c6517.md)                              |                                       Допустимый размер у буфера, недоступного для чтения                                       |
 |                              [C6518](../code-quality/c6518.md)                              |                                     Записываемый размер у буфера, недоступного для записи                                      |
-|        [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        Недопустимый размер у разыменования строки                                        |
+|        [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        Недопустимый размер у разыменования строки                                        |
 |                              [C6522](../code-quality/c6522.md)                              |                                           Недопустимый размер у строкового типа                                            |
-|        [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Недопустимый размер у параметра строки                                         |
+|        [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Недопустимый размер у параметра строки                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   Недоступное расположение у строки недопустимого размера                                    |
-|        [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Недопустимый размер у типа буфера строки                                        |
+|        [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Недопустимый размер у типа буфера строки                                        |
 |                              [C6527](../code-quality/c6527.md)                              |              Недопустимая аннотация: Свойство «NeedsRelease» не может использоваться для значений типа void               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       Неизвестный стиль строки формата                                        |
 |                              [C6540](../code-quality/c6540.md)                              | Если для данной функции использовать аннотации атрибута, все ее существующие аннотации __declspec станут недействительными  |

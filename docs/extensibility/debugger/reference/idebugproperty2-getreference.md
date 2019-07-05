@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetReference method
 ms.assetid: 2fa97d9b-c3d7-478e-ba5a-a933f40a0103
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abff655b41dbc55735b7dea2934f7d396aae5f4c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 49763b0f8a0d7d0c016326d69a22a57d8ff32403
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698122"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342938"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 Возвращает ссылку на значение свойства.
@@ -36,10 +39,9 @@ int GetReference(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppRererence`
-
- [out] Возвращает [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объект, представляющий ссылку на значение свойства.
+## <a name="parameters"></a>Параметры
+`ppRererence`\
+[out] Возвращает [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объект, представляющий ссылку на значение свойства.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки, обычно `E_NOTIMPL` или `E_GETREFERENCE_NO_REFERENCE`.

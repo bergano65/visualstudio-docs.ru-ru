@@ -7,17 +7,17 @@ helpviewer_keywords:
 - symbol handler, interfaces
 - symbol handler, evaluating variables
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e98d792da99cafb670f64f572a1d6e3e4597f8e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ec20da7f2860d2b74cde0286a8480d28738c0a31
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715731"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329151"
 ---
 # <a name="symbol-provider-interfaces"></a>Интерфейсы поставщика символов
 Ниже перечислены интерфейсы обработки символов для [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].
@@ -25,7 +25,7 @@ ms.locfileid: "56715731"
 ## <a name="discussion"></a>Обсуждение
  Эти интерфейсы используются для оценки переменных в стеке вызовов в режиме приостановки выполнения. Они реализуются только для общих поставщиков символ среды выполнения языка (SP).
 
-|Интерфейс|Реализуется|Описание:|
+|Интерфейс|Реализуется|Описание|
 |---------------|--------------------|-----------------|
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|Представляет адрес элемента.|
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|Представляет собой адрес элемента, предоставление доступа к идентификатор процесса.|

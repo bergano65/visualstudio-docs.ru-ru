@@ -7,16 +7,19 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f8cfd597d2bfe8642c5b83940ceb03b7dd06e69
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983001"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309786"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Установка Visual Studio для Mac 2019
 
 Чтобы приступить к разработке собственных кроссплатформенных приложений .NET в macOS, установите Visual Studio 2019 для Mac. Для этого выполните следующие действия.
+
+ > [!div class="button"]
+ > [Скачайте Visual Studio для Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
 
 ## <a name="requirements"></a>Требования
 
@@ -43,9 +46,21 @@ ms.locfileid: "62983001"
 
     [![Перейдите по ссылкам на заявление о конфиденциальности и условия лицензии, а затем продолжите установку, если вы согласны](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
 
-6. Появится список доступных рабочих нагрузок. Выберите нужные нагрузки:
+6. Появится список доступных рабочих нагрузок. Выберите нужные компоненты:
 
-    [![Выберите, какие дополнительные функции рабочей нагрузки вы хотите установить](media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![Выберите, какие дополнительные функции рабочей нагрузки вы хотите установить](media/install-selection.png)](media/install-selection.png#lightbox)
+
+   Если вы не хотите устанавливать все платформы, выберите нужные с помощью приведенных ниже рекомендаций.
+
+   * **Приложения, использующие Xamarin**:
+      - Xamarin.Forms — выберите платформы **Android** и **iOS**.
+      - Только iOS — выберите платформу **iOS** (вам нужно также установить [**Xcode**](https://developer.apple.com/xcode/)).
+      - Только Android — выберите платформу **Android** (вам нужно также выбрать соответствующие зависимости).
+      - Только Mac— выберите платформу **macOS** (вам нужно также установить [**Xcode**](https://developer.apple.com/xcode/)).
+      - Полностью кроссплатформенные приложения Xamarin — выберите платформы **Android**, **iOS** и **macOS**.
+   * **Приложения .NET Core** — выберите платформу **.NET Core**.
+   * **Веб-приложения ASP.NET Core** — выберите платформу **.NET Core**.
+   * **Разработка кроссплатформенных игр Unity** — не нужно устанавливать дополнительные платформы, кроме Visual Studio для Mac. Дополнительные сведения об установке расширения Unity вы найдете в [руководстве по установке Unity](/visualstudio/mac/setup-vsmac-tools-unity).
 
 7. Выбрав нужные параметры, нажмите кнопку **Установить**.
 8. Установщик будет отображать ход выполнения, по мере загрузки и установки Visual Studio для Mac и выбранных рабочих нагрузок. Может быть предложено ввести пароль, чтобы предоставить привилегии, необходимые для установки.
@@ -82,7 +97,7 @@ ms.locfileid: "62983001"
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Приложения .NET Core, веб-приложения ASP.NET Core, разработка игр Unity
 
-Другие рабочие нагрузки описаны [на этой странице](/visualstudio/mac/workloads).
+Другие рабочие нагрузки описаны [на этой странице](workloads.md).
 
 ## <a name="related-video"></a>Связанные видео
 

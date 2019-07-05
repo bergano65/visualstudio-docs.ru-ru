@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef8a152293ef5e1cf9137540abb5590eb43c057a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424452"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML-схемы компонентов: Рекомендации
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60056787"
  Дополнительные сведения об использовании схем компонентов в процессе разработки см. в разделе [Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md).  
   
 > [!NOTE]
->  Подробные инструкции по созданию схем моделирования описаны в [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md).  
+> Подробные инструкции по созданию схем моделирования описаны в [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-component-diagram"></a>Создание схемы компонентов  
   
@@ -157,7 +157,7 @@ ms.locfileid: "60056787"
          В компоненте отобразится предоставленный интерфейс. Рядом отобразится тег действия.  
   
         > [!NOTE]
-        >  Если вы используете **вставить** вместо **вставить ссылку**, будет создан новый интерфейс, с новым именем.  
+        > Если вы используете **вставить** вместо **вставить ссылку**, будет создан новый интерфейс, с новым именем.  
   
     3. Если вы хотите создать требуемый интерфейс, щелкните тег действия и нажмите кнопку **преобразовать в требуемый интерфейс**.  
   

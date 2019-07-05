@@ -1,5 +1,5 @@
 ---
-title: Обновление областей формы в проектах Outlook, которые переносятся на .NET Framework 4 или .NET Framework 4.5
+title: Обновление областей формы Outlook в проектах миграции на .NET Framework 4, 4.5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fed87ee8106c3e8a09c341b9de4709060627dac1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048273"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836047"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Обновление областей формы в проектах Outlook, которые переносятся на .NET Framework 4 или .NET Framework 4.5
   Если требуемая версия .NET Framework для проекта надстройки VSTO для Outlook с областью формы изменяется на [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более позднюю версию, необходимо внести некоторые изменения в создаваемый код области формы и в любой код, который создает экземпляры определенных классов области формы во время выполнения.

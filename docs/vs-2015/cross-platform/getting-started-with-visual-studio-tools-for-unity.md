@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4532b7e566bbd315d9acbdef43198e0f91f5f195
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105036"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263555"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Начало работы с набором средств Visual Studio для Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60105036"
 В этом разделе вы узнаете, как установить инструменты Visual Studio для Unity и настроить проект Unity для работы с Visual Studio.  
   
 > [!IMPORTANT]
->  В Unity 5.2 добавлена встроенная поддержка инструментов Visual Studio для Unity 2.1, что упрощает настройку проекта. Для использования этой возможности потребуется Unity 5.2.0 или более поздней версии в Windows и инструменты Visual Studio для Unity 2.1 или более поздней версии.  
+> В Unity 5.2 добавлена встроенная поддержка инструментов Visual Studio для Unity 2.1, что упрощает настройку проекта. Для использования этой возможности потребуется Unity 5.2.0 или более поздней версии в Windows и инструменты Visual Studio для Unity 2.1 или более поздней версии.  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Для использования средств Visual Studio для Unity вам потребуется следующее:  
@@ -55,7 +55,7 @@ ms.locfileid: "60105036"
      [Скачать инструменты Visual Studio 2010 для Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Версии Visual Studio Express не поддерживают расширения, такие как набор средств Visual Studio для Unity. Visual Studio 2013 Community — это бесплатная версия Visual Studio, которая поддерживает набор средств Visual Studio для Unity и другие расширения. Для большинства пользователей версия Visual Studio Community является более предпочтительной, чем версия Express.  
+> Версии Visual Studio Express не поддерживают расширения, такие как набор средств Visual Studio для Unity. Visual Studio 2013 Community — это бесплатная версия Visual Studio, которая поддерживает набор средств Visual Studio для Unity и другие расширения. Для большинства пользователей версия Visual Studio Community является более предпочтительной, чем версия Express.  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>Ваш первый проект Unity с набором средств Visual Studio для Unity  
  Теперь, когда у вас есть все необходимое, вы готовы к своему первому проекту Unity с Visual Studio. Настройка проекта Unity производится по-разному в зависимости от того, какие версии Unity и инструментов Visual Studio для Unity установлены. Выполните приведенные ниже инструкции для установленной версии Unity и инструментов Visual Studio для Unity.  
@@ -68,7 +68,7 @@ ms.locfileid: "60105036"
   
  В противном случае, если у вас нет опыта работы с Unity, ознакомьтесь с базовым учебным пособием. На странице "Изучение Unity" найдите учебники с примерами проектов, с которых вы можете начать, а также с уроками, которые позволят вам создать собственную игру с помощью Unity. На данной странице имеются удобные учебники для нескольких различных игр.  
   
- [Учебники – страница "Изучение Unity"](http://unity3d.com/learn/tutorials/modules)  
+ [Учебники — страница "Изучение Unity"](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2. Настройка редактора Unity для использования набора средств Visual Studio для Unity  
  Чтобы в проекте можно было использовать инструменты Visual Studio для Unity, просто задайте Visual Studio в качестве внешнего редактора скриптов. В редакторе Unity в главном меню выберите пункт **Edit &gt; Preferences**(Правка &gt; Настройки), а затем в диалоговом окне **Unity Preferences** (Настройки Unity) выберите **External Tools**(Внешние средства). Далее укажите в качестве значения свойства **External Script Editor** (Внешний редактор скриптов) версию Visual Studio, которую нужно использовать (для этой версии Visual Studio должны быть установлены инструменты Visual Studio для Unity), и убедитесь в том, что задано свойство **Editor Attaching** (Присоединение редактора).  
@@ -90,7 +90,7 @@ ms.locfileid: "60105036"
   
  В противном случае, если у вас нет опыта работы с Unity, ознакомьтесь с базовым учебным пособием. На странице "Изучение Unity" найдите учебники с примерами проектов, с которых вы можете начать, а также с уроками, которые позволят вам создать собственную игру с помощью Unity. На данной странице имеются удобные учебники для нескольких различных игр.  
   
- [Учебники – страница "Изучение Unity"](http://unity3d.com/learn/tutorials/modules)  
+ [Учебники — страница "Изучение Unity"](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2. Настройка редактора Unity для использования набора средств Visual Studio для Unity  
  Если вы используете существующий проект Unity или не импортировали пакет unitypackage инструментов Visual Studio на этапе создания проекта, необходимо импортировать этот пакет. В редакторе Unity в главном меню выберите **Assets &gt; Import Package &gt; Visual Studio 2015 Tools** (Ресурсы &gt; Импорт пакета &gt; Набор средств Visual Studio 2015) (вы увидите вариант для версии Visual Studio, которую вы установили).  
@@ -104,7 +104,7 @@ ms.locfileid: "60105036"
 #### <a name="3---launch-visual-studio-from-unity-editor"></a>3. Запуск Visual Studio из редактора Unity  
  Теперь необходимо запустить Visual Studio из Unity. При этом создается решение Visual Studio для вашего проекта, которое открывается в Visual Studio.  
   
- В редакторе Unity в главном меню выберите **"Средства Visual Studio", "Открыть в Visual Studio"**.  
+ В редакторе Unity в главном меню выберите **"Средства Visual Studio", "Открыть в Visual Studio"** .  
   
  ![Открытие проекта Unity в Visual Studio.](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   

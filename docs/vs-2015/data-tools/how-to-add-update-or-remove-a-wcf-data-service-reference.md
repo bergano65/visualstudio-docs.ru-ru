@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e7f70808ff91ec32ef52deedc05724f9bac3f7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 970f3828319e2e9c016baa66bb1e5fc2032b81ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387039"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Практическое руководство. Добавление, обновление или удаление ссылки на службу данных WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60079149"
 2. В **адрес** введите URL-адрес для службы и нажмите кнопку **Go** для поиска службы. Если служба реализует безопасности имени и пароля пользователя, вы может запрашиваться имя пользователя и пароль.  
   
     > [!NOTE]
-    >  Ссылаться на службы следует только из надежного источника. Добавление ссылок из ненадежного источника может нарушить безопасность.  
+    > Ссылаться на службы следует только из надежного источника. Добавление ссылок из ненадежного источника может нарушить безопасность.  
   
      Можно также выбрать URL-адрес из **адрес** списка, в котором хранятся предыдущие 15 URL-адреса, по которым были найдены допустимые метаданные служб.  
   
@@ -91,7 +91,7 @@ ms.locfileid: "60079149"
      Клиент службы будет удален из решения, и метаданные, описывающие службы будут удалены из файла app.config.  
   
     > [!NOTE]
-    >  Любой код, который ссылается на ссылку на службу, необходимо удалить вручную.  
+    > Любой код, который ссылается на ссылку на службу, необходимо удалить вручную.  
   
 ## <a name="see-also"></a>См. также  
  [Службы Windows Communication Foundation и службы данных WCF в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

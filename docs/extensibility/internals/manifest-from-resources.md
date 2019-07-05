@@ -3,17 +3,17 @@ title: Манифест из ресурсов | Документация Май�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 917397003d0e14bc9b5ff707926adf5f04f73baa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859948"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328622"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Консольное приложение, которое принимает список ресурсов изображений (PNG- или .xaml-файлы) и создает файл .imagemanifest, который позволяет этих образов для использования в службе Visual Studio изображение является манифест из ресурсов средства. Кроме того это средство можно использовать для добавления картинок в существующих .imagemanifest. Это средство можно использовать для добавления поддержку высокого DPI и темы для изображений в расширение Visual Studio. Следует включены в файле созданный .imagemanifest и развернут как часть расширений Visual Studio (VSIX).

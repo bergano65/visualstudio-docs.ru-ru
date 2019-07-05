@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950323"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263738"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Обновление существующего приложения для использования MSBuild 15
 
@@ -49,7 +49,7 @@ ms.locfileid: "62950323"
 ```xml
 <ItemGroup>
   <PackageReference Include="Microsoft.Build" Version="15.1.548" ExcludeAssets="runtime" />
-  <PackageReference Include="Microsoft.Build.Utilities" Version="15.1.548" ExcludeAssets="runtime" />
+  <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.1.548" ExcludeAssets="runtime" />
 </ItemGroup>
 ```
 
@@ -71,7 +71,7 @@ ms.locfileid: "62950323"
 
 Выполните сборку проекта и проверьте выходной каталог, чтобы убедиться в том, что в нем нет сборок *Microsoft.Build.\*.dll*, кроме сборки *Microsoft.Build.Locator.dll*, которая будет добавлена в следующем шаге.
 
-### <a name="add-package-reference"></a>Добавление ссылки на пакет
+### <a name="add-package-reference-for-microsoftbuildlocator"></a>Добавление ссылки на пакет Microsoft.Build.Locator
 
 Добавьте ссылку на пакет NuGet [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/).
 
@@ -80,6 +80,8 @@ ms.locfileid: "62950323"
       <Version>1.1.2</Version>
     </PackageReference>
 ```
+
+Не указывайте `ExcludeAssets=runtime` для пакета Microsoft.Build.Locator.
 
 ### <a name="register-instance-before-calling-msbuild"></a>Регистрация экземпляра перед вызовом MSBuild
 

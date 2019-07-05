@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f8366b8a18c2512aa55f2bab70ac9523e9265f5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f8500d7ad1e03e08fa852afe9b8b77e49562f355
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700306"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345633"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 
@@ -41,20 +44,17 @@ public struct METADATA_ADDRESS_LOCAL {
 }
 ```
 
-## <a name="terms"></a>Термины
+## <a name="members"></a>Участники
 
-`tokMethod`
-
+`tokMethod`\
 Идентификатор метода или функции локальной переменной является частью.
 
 [C++] `_mdToken` — `typedef` для 32-разрядных `int`.
 
-`pLocal`
-
+`pLocal`\
 Токен, адрес которого эта структура представляет.
 
-`dwIndex`
-
+`dwIndex`\
 Может быть индекс данной локальной переменной в методе или функции или любое другое значение (зависящие от языка).
 
 ## <a name="remarks"></a>Примечания
@@ -62,12 +62,12 @@ public struct METADATA_ADDRESS_LOCAL {
 Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_LOCAL` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).
 
 > [!WARNING]
-> [C++] Если `pLocal` не равно null, то нужно вызвать `Release` маркеров указателя (`addr` — это поле в [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуры):
+> [C++ только] Если `pLocal` не равно null, то нужно вызвать `Release` маркеров указателя (`addr` — это поле в [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) структуры):
 >
 > ```cpp
 > if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
 > {
-     addr.addr.addrLocal.pLocal->Release();
+>     addr.addr.addrLocal.pLocal->Release();
 > }
 > ```
 

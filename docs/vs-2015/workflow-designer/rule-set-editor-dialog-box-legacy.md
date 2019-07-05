@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993726"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703198"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Диалоговое окно «Редактор набора правил» (для прежних версий)
 Здесь описывается, как использовать **редактор набора правил** диалогового окна в прежних версий [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -26,12 +26,12 @@ ms.locfileid: "58993726"
  **Редактор набора правил** диалоговое окно используется для создания и изменения [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) наборов, которые будут сериализованы в файл с расширением RULES правил.  
   
 > [!NOTE]
->  Если вы хотите открыть файл с расширением RULES **редактор XML с кодировкой**, необходимо закрыть связанное окно конструктора для рабочего процесса или действия.  
+> Если вы хотите открыть файл с расширением RULES **редактор XML с кодировкой**, необходимо закрыть связанное окно конструктора для рабочего процесса или действия.  
   
  Сведения о доступе к **редактор набора правил** диалоговом окне см. в разделе [как: Создать набор правил PolicyActivity (для прежних версий)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
->  Редактор правил [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий, используемый для работы с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], не поддерживает настройку для различных версий.  
+> Редактор правил [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий, используемый для работы с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], не поддерживает настройку для различных версий.  
   
  В следующей таблице описаны элементы пользовательского интерфейса (UI) **редактор набора правил** диалоговое окно.  
   
@@ -76,7 +76,7 @@ ms.locfileid: "58993726"
   
   Приоритет оператора выражения определяется правилами приоритета операторов языка C#.  
   
-  Дополнительные сведения об условиях см. в разделе [использование условий в рабочих процессах](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
+  Дополнительные сведения об условиях см. в разделе [использование условий в рабочих процессах](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Функции Halt и Update  
  **Действия Then:** и **действия Else:** выражения поддерживают **Halt** и **обновления** функции. Для использования **Halt** функции, введите **Halt** в **действие Then:** или **действие Else:** текстовое поле. **Halt** действие вызывает немедленно прерывает выполнение набора правил и управление возвращается вызывающему коду. Использовании **обновления** функция прямых логических цепочках.  

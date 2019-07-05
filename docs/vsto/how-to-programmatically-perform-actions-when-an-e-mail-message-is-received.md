@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Программное выполнение действий при получении сообщения электронной почты
+title: Программное выполнение действий при получении сообщения электронной почты
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31f195d6b83a93363c3b2ef3bfa7d829f5fc822d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a0787db2f7055bc65871227b9fcf8cbbb60ec1d8
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612352"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402201"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Практическое руководство. Программное выполнение действий при получении сообщения электронной почты
   Этот пример выполняет пользовательские действия, когда пользователь получает сообщение электронной почты.

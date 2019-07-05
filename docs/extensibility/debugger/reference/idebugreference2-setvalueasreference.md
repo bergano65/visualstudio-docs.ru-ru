@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsReference
 ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4af17f49e95818ed664e74aab53687540f653ba
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 108061d4957b03d049897985da849ab86563ea47
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721164"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339755"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 Задает значение ссылки из другой ссылки. Зарезервировано для будущего использования.
@@ -42,22 +45,18 @@ int SetValueAsReference ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `rgpArgs`
+## <a name="parameters"></a>Параметры
+`rgpArgs`\
+[in] Массив [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объектов, используемых для определения способа установки значения ссылки.
 
- [in] Массив [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объектов, используемых для определения способа установки значения ссылки.
+`dwArgCount`\
+[in] Количество ссылок в массиве.
 
- `dwArgCount`
+`pValue`\
+[in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объект, из которого требуется задать значение свойства.
 
- [in] Количество ссылок в массиве.
-
- `pValue`
-
- [in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) объект, из которого требуется задать значение свойства.
-
- `dwTimeout`
-
- [in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
+`dwTimeout`\
+[in] Максимальное время в миллисекундах для ожидания перед возвратом из этого метода. Используйте `INFINITE` для неограниченного времени ожидания.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Всегда возвращает значение `E_NOTIMPL`.

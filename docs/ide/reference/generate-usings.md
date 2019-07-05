@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790052"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531633"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Создание директив using в Visual Studio
 
@@ -32,7 +32,7 @@ ms.locfileid: "62790052"
 
 1. Скопируйте код в одном файле и вставьте его в другой, не включая необходимые операторы `using`. Итоговая ошибка сопровождается исправлением кода, которое добавляет отсутствующие операторы `using`.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Это предложения нужно включить в разделе **Сервис > Параметры > Текстовый редактор > C# > Дополнительно > Директивы using**.
 
 2. Нажмите клавиши CTRL+. чтобы открыть меню **Быстрые действия и рефакторинг**.
@@ -47,4 +47,4 @@ ms.locfileid: "62790052"
 
 - [Создание кода](../code-generation-in-visual-studio.md)
 - [Просмотр изменений](../../ide/preview-changes.md)
-- [Советы для разработчиков .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Советы для разработчиков .NET](../csharp-developer-productivity.md)

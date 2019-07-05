@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 32fec95757e3baf1b62230457cc048aba38af8c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c1c56b3081f9e74ff9ab864639772c18bd758df6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101643"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686778"
 ---
 # <a name="debugger-security"></a>Безопасность отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "60101643"
  Дополнительные сведения см. в разделе [удаленной отладки](../debugger/remote-debugging.md).  
   
 ### <a name="web-services-debugging-security"></a>Безопасность при отладке веб-служб  
- Локальная отладка безопаснее, но поскольку на веб-сервере скорее всего нет [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , локальная отладка может быть нецелесообразной. Как правило, отладка веб-служб, за исключением отладки во время разработки, выполняется удаленно, поэтому рекомендации по безопасности удаленной отладки также применимы к отладке веб-служб. Ниже приведены дополнительные практические рекомендации. Для получения дополнительной информации см. [Debugging XML Web Services](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
+ Локальная отладка безопаснее, но поскольку на веб-сервере скорее всего нет [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , локальная отладка может быть нецелесообразной. Как правило, отладка веб-служб, за исключением отладки во время разработки, выполняется удаленно, поэтому рекомендации по безопасности удаленной отладки также применимы к отладке веб-служб. Ниже приведены дополнительные практические рекомендации. Для получения дополнительной информации см. [Debugging XML Web Services](https://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
   
 - Не запускайте отладку на веб-сервере, который подвергался угрозе.  
   

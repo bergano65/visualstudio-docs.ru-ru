@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 45f8d742af1cd6a0ed73f3beda24e829b417e81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424320"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML-схемы вариантов использования: Ссылка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58990875"
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  В этом разделе описаны элементы, доступные в схемах вариантов использования. Дополнительные сведения о рисовании схем вариантов использования см. в разделе [UML-схемы вариантов использования: Рекомендации по](../modeling/uml-use-case-diagrams-guidelines.md). Дополнительные сведения о способах создания и схем моделирования см. в разделе [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md).  
+> В этом разделе описаны элементы, доступные в схемах вариантов использования. Дополнительные сведения о рисовании схем вариантов использования см. в разделе [UML-схемы вариантов использования: Рекомендации по](../modeling/uml-use-case-diagrams-guidelines.md). Дополнительные сведения о способах создания и схем моделирования см. в разделе [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-use-case-diagrams"></a>Чтение схем вариантов использования  
  В таблицах в следующих разделах описаны элементы, которые можно использовать на схеме вариантов использования, и их основные свойства. Полный список свойств, см. в разделе [схемы вариантов использования свойства элементов на UML](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).  

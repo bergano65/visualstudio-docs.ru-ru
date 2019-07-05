@@ -1,0 +1,78 @@
+- name: Разработка кроссплатформенных мобильных приложений
+  items:
+    - name: Разработка кроссплатформенных мобильных приложений
+      href: cross-platform-mobile-development-in-visual-studio.md
+    - name: Visual Studio и Xamarin
+      items:
+        - name: Visual Studio и Xamarin
+          href: visual-studio-and-xamarin.md
+        - name: Настройка и установка
+          href: setup-and-install.md
+        - name: Подробности о разработке мобильных приложений с использованием Xamarin
+          href: learn-about-mobile-development-with-xamarin.md
+        - name: Проверка окружения Xamarin
+          href: verify-your-xamarin-environment.md
+        - name: Основы создания приложений с помощью Xamarin.Forms в Visual Studio
+          href: learn-app-building-basics-with-xamarin-forms-in-visual-studio.md
+        - name: Создание приложений с нативным пользовательским интерфейсом с использованием Xamarin в Visual Studio
+          href: build-apps-with-native-ui-using-xamarin-in-visual-studio.md
+        - name: Управление жизненным циклом приложений (ALM) для приложений Xamarin
+          href: application-lifecycle-management-alm-with-xamarin-apps.md
+        - name: 'Программа установки, установка и проверки для пользователей Mac'
+          href: setup-install-and-verifications-for-mac-users.md
+    - name: Средства Visual Studio для Apache Cordova
+      href: visual-studio-tools-for-apache-cordova.md
+    - name: Набор средств Visual Studio для Unity
+      items:
+        - name: Набор средств Visual Studio для Unity
+          href: visual-studio-tools-for-unity.md
+        - name: Обзор
+          href: overview-of-visual-studio-tools-for-unity.md
+        - name: Начало работы
+          href: getting-started-with-visual-studio-tools-for-unity.md
+        - name: Применение набора средств Visual Studio для Unity
+          href: using-visual-studio-tools-for-unity.md
+        - name: Программирование с набором средств Visual Studio для Unity
+          items:
+            - name: Программирование с набором средств Visual Studio для Unity
+              href: programming-visual-studio-tools-for-unity.md
+            - name: "Пример\_— создание файла проекта"
+              href: customize-project-files-created-by-vstu.md
+            - name: "Пример\_— обратный вызов журнала"
+              href: share-the-unity-log-callback-with-vstu.md
+        - name: Устранение неполадок и известные проблемы
+          href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+        - name: Журнал изменений
+          href: change-log-visual-studio-tools-for-unity.md
+        - name: Использование управления жизненным циклом приложения (ALM) с приложениями Unity
+          href: application-lifecycle-management-alm-with-unity-apps.md
+    - name: Visual C++ для разработки кроссплатформенных мобильных приложений
+      items:
+        - name: Visual C++ для разработки кроссплатформенных мобильных приложений
+          href: visual-cpp-for-cross-platform-mobile-development.md
+        - name: Установка Visual C++ для разработки кроссплатформенных мобильных приложений
+          items:
+            - name: Установка Visual C++ для разработки кроссплатформенных мобильных приложений
+              href: install-visual-cpp-for-cross-platform-mobile-development.md
+            - name: Install and Configure Tools to Build using iOS
+              href: install-and-configure-tools-to-build-using-ios.md
+        - name: Создание приложения Android Native Activity
+          href: create-an-android-native-activity-app.md
+        - name: Создание приложения OpenGL ES в Android и iOS
+          href: build-an-opengl-es-application-on-android-and-ios.md
+        - name: Импорт проекта XCode
+          href: import-an-xcode-project.md
+        - name: Изменения в синхронизации между XCode и Visual Studio
+          href: sync-changes-between-xcode-and-visual-studio.md
+        - name: Примеры разработки кроссплатформенных мобильных приложений
+          href: cross-platform-mobile-development-examples.md
+    - name: Разработка приложений для универсальной платформы Windows (UWP)
+      href: develop-apps-for-the-universal-windows-platform-uwp.md
+    - name: Эмулятор Visual Studio для Android
+      items:
+        - name: Эмулятор Visual Studio для Android
+          href: visual-studio-emulator-for-android.md
+        - name: System requirements for the Visual Studio Emulator for Android
+          href: system-requirements-for-the-visual-studio-emulator-for-android.md
+        - name: Troubleshooting the Visual Studio Emulator for Android
+          href: troubleshooting-the-visual-studio-emulator-for-android.md

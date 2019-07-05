@@ -1,9 +1,10 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 6d5cd42e96686832594b725192d7845f641261a5
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: b80eaee1a371dfbaa356ba0fe6c9e0c81fc87667
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253935"
 ---
 Team Foundation Server

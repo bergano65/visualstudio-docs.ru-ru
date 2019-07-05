@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Изменение форматирования листа с использованием элементов управления CheckBox
+title: Изменение форматирования листа с использованием элементов управления CheckBox
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aba73d5fc6c1609a3347178765ba516840b5176e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061693"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328703"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Пошаговое руководство. Изменение форматирования листа с использованием элементов управления CheckBox
   В этом пошаговом руководстве описываются основные принципы использования флажков на листе Microsoft Office Excel для изменения форматирования. Будет использовать средства разработки Office в Visual Studio для создания и добавления кода в проект. Чтобы просмотреть результат в виде готового кода, см [примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md).
@@ -35,7 +35,7 @@ ms.locfileid: "60061693"
 - Тестирование проекта.
 
 > [!NOTE]
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
@@ -49,7 +49,7 @@ ms.locfileid: "60061693"
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1. Создайте проект книги Excel с именем **форматирование Excel**. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект книги Excel с именем **форматирование Excel**. Убедитесь, что **создания документа** выбран. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio открывает новую книгу Excel в конструкторе и добавляет **форматирование Excel** проект **обозревателе решений**.
 
@@ -94,7 +94,7 @@ ms.locfileid: "60061693"
      Далее будет необходимо перетащить <xref:Microsoft.Office.Tools.Excel.NamedRange> управления на лист.
 
     > [!NOTE]
-    >  Можно также добавить <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления, введя **textFont** в **имя** поле.
+    > Можно также добавить <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления, введя **textFont** в **имя** поле.
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>Добавление текста в элементе управления NamedRange
 

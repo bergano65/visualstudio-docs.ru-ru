@@ -3,18 +3,18 @@ title: Пошаговое руководство. Сохранение поль�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 2362bda715a95e4228b6e4f882f1f8fb708667dd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 79a54867044961d972e2ded452958d2463038e7d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086576"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318523"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Пошаговое руководство. Сохранить настройки пользователя на начальной странице
 

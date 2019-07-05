@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 638aba87698b32b18f41f8b389485893f880743f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8fc60ff83113193f854c3264b7384738dea64f03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674346"
 ---
 # <a name="memory-usage-without-debugging"></a>Использование памяти без отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60050170"
   
 - Сравнение моментальных снимков для поиска первопричины возникновения проблем с памятью.  
   
-  В этом разделе описывается применение инструмента "Использование памяти" для анализа универсального приложения Windows на XAML. Если вы хотите проанализировать использование памяти в универсальных приложениях Windows на базе JavaScript и HTML, см. статью [Analyze memory usage (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx) (Анализ использования памяти [JavaScript]).  
+  В этом разделе описывается применение инструмента "Использование памяти" для анализа универсального приложения Windows на XAML. Если вы хотите проанализировать использование памяти в универсальных приложениях Windows на базе JavaScript и HTML, см. статью [Analyze memory usage (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx) (Анализ использования памяти [JavaScript]).  
   
 ## <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Запуск диагностического сеанса по использованию памяти  
   
@@ -204,7 +204,7 @@ ms.locfileid: "60050170"
   
 ## <a name="see-also"></a>См. также  
  [Память JavaScript](../profiling/javascript-memory.md)   
- [Анализ производительности приложений](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
- [Запуск средств анализа производительности](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
- [Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Анализ производительности приложений](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
+ [Запуск средств анализа производительности](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
+ [Рекомендации по повышению производительности приложений Магазина Windows на C++, C# и Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706) (Диагностика проблем, связанных с памятью, с помощью нового средства "Использование памяти" в Visual Studio)

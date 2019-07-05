@@ -3,17 +3,20 @@ title: Пошаговое руководство. Создание пакета 
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 6bb9ae53dfb2e849c35c05fe5187cddcf301622c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086641"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312643"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Пошаговое руководство. Создание пакета SDK с помощью C# или Visual Basic
 В этом пошаговом руководстве вы узнаете, как создать простой пакет SDK для математической библиотеки с помощью Visual C# и затем пакета SDK в Visual Studio Extension (VSIX). Вы выполните следующие процедуры:
@@ -28,7 +31,7 @@ ms.locfileid: "60086641"
 
 ## <a name="createClassLibrary"></a> Для создания компонента среды выполнения Windows SimpleMath
 
-1. В строке меню выберите **файл** > **New** > **новый проект**.
+1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
 2. В списке шаблонов разверните **Visual C#** или **Visual Basic**, выберите **Windows Store** узел, а затем выберите **компонента среды выполнения Windows** шаблона.
 
@@ -50,7 +53,7 @@ ms.locfileid: "60086641"
 8. В **конфигурации** столбец, убедитесь, что **SimpleMath** строки равен **выпуска**, а затем выберите **закрыть** кнопку, чтобы принять изменение.
 
    > [!IMPORTANT]
-   >  Пакет SDK для компонента SimpleMath включает только одну конфигурацию. Этой конфигурации должен содержать сборку выпуска, или приложения, использующие компонент не будет передавать сертификации[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
+   > Пакет SDK для компонента SimpleMath включает только одну конфигурацию. Этой конфигурации должен содержать сборку выпуска, или приложения, использующие компонент не будет передавать сертификации [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
 
 9. В **обозревателе решений**, откройте контекстное меню для **SimpleMath** узел проекта, а затем выберите **построения**.
 
@@ -137,7 +140,7 @@ ms.locfileid: "60086641"
 
 23. В строке меню выберите **представление** > **свойства** (клавиатуры: Выберите **F4** ключ).
 
-24. В **свойства** измените **действие при построении** свойства **содержимого**, а затем измените **включить в VSIX** свойства  **Значение true,**.
+24. В **свойства** измените **действие при построении** свойства **содержимого**, а затем измените **включить в VSIX** свойства  **Значение true,** .
 
 25. В **обозревателе решений**, повторите эту процедуру для **SimpleMath.pri**.
 
@@ -153,7 +156,7 @@ ms.locfileid: "60086641"
 
 ## <a name="createSample"></a> Чтобы создать приложение-пример, использующий библиотеку классов
 
-1. В строке меню выберите **файл** > **New** > **новый проект**.
+1. В строке меню выберите **Файл** > **Создать** > **Проект**.
 
 2. В списке шаблонов разверните **Visual C#** или **Visual Basic**, а затем выберите **Windows Store** узла.
 
@@ -163,11 +166,11 @@ ms.locfileid: "60086641"
 
 5. В списке ссылочных типов, разверните **Windows**, а затем выберите **расширения**.
 
-6. В области сведений выберите **пакета SDK для простой математической** расширения.
+6. В области сведений выберите **WinRT математическую библиотеку** расширения.
 
     Отображение дополнительных сведений о вашем пакете SDK. Вы можете выбрать **Подробнее** ссылку, чтобы открыть https://msdn.microsoft.com/, как указано в файле SDKManifest.xml ранее в этом пошаговом руководстве.
 
-7. В **диспетчер ссылок** выберите **пакета SDK для простой математической** , а затем нажать **ОК** кнопки.
+7. В **диспетчер ссылок** выберите **WinRT математическую библиотеку** , а затем нажать **ОК** кнопки.
 
 8. В строке меню выберите **представление** > **обозреватель объектов**.
 
@@ -181,11 +184,11 @@ ms.locfileid: "60086641"
 
     ```xml
     <Page
-        x:Class="WinRTMathTestCS.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTestCS"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">
@@ -207,11 +210,11 @@ ms.locfileid: "60086641"
 
     ```xml
     <Page
-        x:Class="WinRTMathTest.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTest"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">

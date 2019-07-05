@@ -1,5 +1,5 @@
 ---
-title: Средства производительности в приложениях Windows 8 и Windows Server 2012 | Документы Майкрософт
+title: Средства оценки производительности в приложениях Windows 8 и Windows Server 2012
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8258c259b7f065e28ba7a6e199ddddb432dfb4b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798207"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262958"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Средства оценки производительности в приложениях Windows 8 и Windows Server 2012
 
@@ -109,7 +109,7 @@ ms.locfileid: "62798207"
 
 **Сбор данных об уровневом взаимодействии на удаленном компьютере**
 
-Чтобы собирать сведения об уровневом взаимодействии на удаленный компьютер, необходимо скопировать и установить файл **vs\_profiler\_**_\<платформа>_**\_**_\<язык>_**.exe** из папки *%VSInstallDir%\Team Tools\Performance Tools\Setups*, расположенный на компьютере с Visual Studio. Нельзя использовать средства профилирования в пакете загрузки [Удаленная отладка](../debugger/remote-debugging.md).
+Чтобы собирать сведения об уровневом взаимодействии на удаленный компьютер, необходимо скопировать и установить файл **vs\_profiler\_** _\<платформа>_ **\_** _\<язык>_ **.exe** из папки *%VSInstallDir%\Team Tools\Performance Tools\Setups*, расположенный на компьютере с Visual Studio. Нельзя использовать средства профилирования в пакете загрузки [Удаленная отладка](../debugger/remote-debugging.md).
 
 Для сбора данных профилирования можно использовать [VSPerfCmd](../profiling/vsperfcmd.md) или [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) .
 

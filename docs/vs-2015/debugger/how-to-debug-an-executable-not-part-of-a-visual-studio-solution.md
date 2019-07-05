@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e33233fd313cd6a73013ce55333a860663ddb601
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068708"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704527"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Практическое руководство. Отладка исполняемого файла, не в состав решения Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,11 +61,11 @@ ms.locfileid: "60068708"
 5. Запустите исполняемый файл, выбрав команду выполнения, такие как **запустить**, из **Отладка** меню.  
   
     > [!NOTE]
-    >  Не все языки программирования поддерживают исполняемые проекты. Если необходимо использовать эту возможность, установите [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
+    > Не все языки программирования поддерживают исполняемые проекты. Если необходимо использовать эту возможность, установите [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
   
      При отладке исполняемого файла без исходного кода доступные возможности отладки ограничены, независимо от того, происходит ли присоединение к исполняемому файлу или же исполняемый файл добавляется в решение [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Если исполняемый файл был скомпонован без отладочной информации в совместимом формате, доступные функции крайне ограничены. Если имеется исходный код,лучшим решением является его импорт в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и создание отладочной сборки исполняемого файла в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>См. также  
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
  [Безопасность отладчика](../debugger/debugger-security.md)   
- [DBG-файлы](http://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)
+ [DBG-файлы](https://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)

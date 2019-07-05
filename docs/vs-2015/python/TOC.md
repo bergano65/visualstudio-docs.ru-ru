@@ -1,7 +1,0 @@
-# [Python](getting-started-with-python.md)
-## [Начало работы с PTVS. Настройка Visual Studio](getting-started-with-ptvs-setting-up-visual-studio.md)
-## [Начало работы с PTVS. Приступаем к программированию (проекты)](getting-started-with-ptvs-start-coding-projects.md)
-## [Начало работы с PTVS. Редактирование кода](getting-started-with-ptvs-editing-code.md)
-## [Начало работы с PTVS. Отладка](getting-started-with-ptvs-debugging.md)
-## [Начало работы с PTVS. Интерактивный Python](getting-started-with-ptvs-interactive-python.md)
-## [Начало работы с PTVS. Создание веб-сайта в Azure](getting-started-with-ptvs-building-a-website-in-azure.md)

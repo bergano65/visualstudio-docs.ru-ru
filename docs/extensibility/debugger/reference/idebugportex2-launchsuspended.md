@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::LaunchSuspended
 ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d946097d7a8f50cab65b41aaef73654dfbd18a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 94810761e546b0cae9eca32fc76bc0bfd396c7e7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703205"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311119"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Запускает исполняемый файл.
@@ -50,38 +53,30 @@ int LaunchSuspended( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszExe`
+## <a name="parameters"></a>Параметры
+`pszExe`\
+[in] Имя исполняемого файла для запуска. Это может быть полный путь или относительно рабочего каталога, указанного в `pszDir` параметра.
 
- [in] Имя исполняемого файла для запуска. Это может быть полный путь или относительно рабочего каталога, указанного в `pszDir` параметра.
+`pszArgs`\
+[in] Аргументы для передачи в исполняемый файл. Может иметь значение null, если аргументы не используются.
 
- `pszArgs`
+`pszDir`\
+[in] Имя рабочего каталога, используемого исполняемого объекта. Может иметь значение null, если нет рабочего каталога является обязательным.
 
- [in] Аргументы для передачи в исполняемый файл. Может иметь значение null, если аргументы не используются.
+`bstrEnv`\
+[in] Блок среды нулем строк, следуют дополнительные символ конца строки NULL.
 
- `pszDir`
+`hStdInput`\
+[in] Дескриптор альтернативного входного потока. Может быть равен 0, если перенаправление не требуется.
 
- [in] Имя рабочего каталога, используемого исполняемого объекта. Может иметь значение null, если нет рабочего каталога является обязательным.
+`hStdOutput`\
+[in] Дескриптор Альтернативный выходной поток. Может быть равен 0, если перенаправление не требуется.
 
- `bstrEnv`
+`hStdError`\
+[in] Обработка в поток вывода альтернативного ошибки. Может быть равен 0, если перенаправление не требуется.
 
- [in] Блок среды нулем строк, следуют дополнительные символ конца строки NULL.
-
- `hStdInput`
-
- [in] Дескриптор альтернативного входного потока. Может быть равен 0, если перенаправление не требуется.
-
- `hStdOutput`
-
- [in] Дескриптор Альтернативный выходной поток. Может быть равен 0, если перенаправление не требуется.
-
- `hStdError`
-
- [in] Обработка в поток вывода альтернативного ошибки. Может быть равен 0, если перенаправление не требуется.
-
- `ppPortProcess`
-
- [out] Возвращает [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) объект, представляющий запущенный процесс.
+`ppPortProcess`\
+[out] Возвращает [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) объект, представляющий запущенный процесс.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - IntelliSense, Complete Word
 - Complete Word
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f81895766a94bd22e533ead3078b3852ed68ca0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 26495f909d815b32ff8a75c2529ba30eabf3b5c8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599860"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309715"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Завершение машинных слов в языковой службе прежних версий
 Завершение слов заполняет недостающие символы на частично введенного слова. Если имеется только один из возможных завершения, слово завершения при вводе знака завершения. Если частичное соответствует более одной возможности, отображается список возможных завершений. Символ завершения может быть любой символ, который не используется для идентификаторов.
@@ -25,7 +25,7 @@ ms.locfileid: "56599860"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
 
 ## <a name="implementation-steps"></a>Действия по внедрению
 

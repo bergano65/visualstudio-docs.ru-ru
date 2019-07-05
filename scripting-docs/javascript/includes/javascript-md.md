@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: ee620923ff5fc510555dc37083a135ee93b5404b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818057"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261757"
 ---
 JavaScript

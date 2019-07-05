@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dc3185b644a1045428ead9f2c9851916df3249c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 532486c66b6feb5c397b9167e2b1cd6197513fa8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698239"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343401"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 Возвращает идентификаторы GUID для всех возможных отладчики (DE), которые можно отлаживать этой программы.
@@ -40,18 +43,15 @@ int EnumPossibleEngines( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `celtBuffer`
+## <a name="parameters"></a>Параметры
+`celtBuffer`\
+[in] Число GUID DE для возврата. Это также указывает максимальный размер `rgguidEngines` массива.
 
- [in] Число GUID DE для возврата. Это также указывает максимальный размер `rgguidEngines` массива.
+`rgguidEngines`\
+[in, out] Массив идентификаторов GUID DE для заполнения.
 
- `rgguidEngines`
-
- [in, out] Массив идентификаторов GUID DE для заполнения.
-
- `pceltEngines`
-
- [out] Возвращает фактическое количество GUID DE, которые возвращаются.
+`pceltEngines`\
+[out] Возвращает фактическое количество GUID DE, которые возвращаются.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` или [C#] 0x8007007A, если буфер недостаточно велик.

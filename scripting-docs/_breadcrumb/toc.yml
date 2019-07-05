@@ -12,7 +12,7 @@
           items: null
         - name: "Интерфейсы сценариев\_Windows"
           tocHref: /scripting/winscript/
-          topicHref: /scripting/winscript/windows-scripting-interfaces
+          topicHref: /scripting/winscript/windows-script-interfaces
           items:
             - name: Ссылка
               tocHref: /scripting/winscript/reference/

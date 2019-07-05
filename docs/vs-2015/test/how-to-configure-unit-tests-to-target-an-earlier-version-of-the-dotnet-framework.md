@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e31f0170d10e3b8088ec9860a6bb9a3ad5306b0f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: be8c468e8b6aac70d44485b1560a84524a4ef540
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042668"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686420"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Практическое руководство. Настройка модульных тестов для более ранней версии .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60042668"
   
   **Тестирование приложений SharePoint**  
   
-  Перечисленные выше возможности также позволяют с помощью Visual Studio создавать модульные тесты и тесты интеграции для приложений SharePoint. [!INCLUDE[crabout](../includes/crabout-md.md)] О способах разработки приложений SharePoint в Visual Studio см. в разделах [Создание решений SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Построение и отладка решений SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) и [Проверка и отладка кода SharePoint](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
+  Перечисленные выше возможности также позволяют с помощью Visual Studio создавать модульные тесты и тесты интеграции для приложений SharePoint. [!INCLUDE[crabout](../includes/crabout-md.md)] О способах разработки приложений SharePoint в Visual Studio см. в разделах [Создание решений SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Построение и отладка решений SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) и [Проверка и отладка кода SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
   
   **Ограничения**  
   
@@ -95,7 +95,7 @@ ms.locfileid: "60042668"
      Откроется диалоговое окно **Новый проект**.  
   
     > [!WARNING]
-    >  Для сборки модульных тестов C++/CLI для предыдущей версии платформы .NET Framework для Visual C++ следует использовать соответствующую версию Visual Studio. Например, чтобы задать .NET Framework 3.5 в качестве целевой версии, необходимо установить [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] и [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] с пакетом обновления 1 (SP1).  
+    > Для сборки модульных тестов C++/CLI для предыдущей версии платформы .NET Framework для Visual C++ следует использовать соответствующую версию Visual Studio. Например, чтобы задать .NET Framework 3.5 в качестве целевой версии, необходимо установить [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] и [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] с пакетом обновления 1 (SP1).  
   
 2. В области **Установленные шаблоны** разверните узел **Visual C++**. Выберите **Тест**, а затем шаблон **Тестовый проект**.  
   
@@ -126,7 +126,7 @@ ms.locfileid: "60042668"
 8. В обозревателе решений выберите в контекстном меню нового тестового проекта Visual C++ пункт **Перезагрузить проект**.  
   
 ## <a name="see-also"></a>См. также  
- [Создание и запуск модульных тестов для существующего кода](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Создание решений SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
- [Построение и отладка решений SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
+ [Создание и запуск модульных тестов для существующего кода](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Создание решений SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
+ [Построение и отладка решений SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

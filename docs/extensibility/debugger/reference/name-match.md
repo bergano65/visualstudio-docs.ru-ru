@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - NAME_MATCH enumeration
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50ae796a4662b51c186e6e9d69bf41771d040c8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 09ddb4653d1f13024360daca30eab40ebf57df0f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087956"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346732"
 ---
 # <a name="namematch"></a>NAME_MATCH
 Выбирает параметр case для сопоставления имен.
@@ -40,12 +43,15 @@ public enum NameMatchOptions { 
 }
 ```
 
-## <a name="members"></a>Участники
- nmNone, параметры не указаны.
+## <a name="fields"></a>Поля
+ `nmNone`\
+ Параметры не указаны.
 
- nmCaseSensitive указывает, что имена для сопоставления чувствительны к регистру.
+ `nmCaseSensitive`\
+ Указывает, что имена для сравнения с учетом регистра.
 
- nmCaseInsensitive указывает, что имена для сравнения регистр не учитывается.
+ `nmCaseInsensitive`\
+ Указывает, что имена для сопоставления не учитывается регистр.
 
 ## <a name="remarks"></a>Примечания
  Передается в качестве аргумента для следующих методов:

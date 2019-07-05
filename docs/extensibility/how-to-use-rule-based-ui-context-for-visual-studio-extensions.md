@@ -3,16 +3,16 @@ title: Практическое руководство. Использовать
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f78753afdf8d0ded233b2451db42dee73c41de0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c3075ca5092dd1b8a69aa4b34c0e507505cf7123
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682197"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309682"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Практическое руководство. Использовать контекст пользовательского интерфейса на основе правил для расширений Visual Studio
 
@@ -70,14 +70,14 @@ Visual Studio позволяет загружать пакеты VSPackage, пр
 
    ```xml
    <VisibilityConstraints>
-       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="UIContextGuid"/>
    </VisibilityConstraints>
    ```
 
 4. В разделе "символы" добавьте определение параметра UIContext:
 
    ```xml
-   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
+   <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
     Теперь команды контекстного меню  *\*.config* файлы будут видны только элемент, выбранный в обозревателе решений при *.config* пакет будет не удается загрузить файл пока один из них выбран команды.
@@ -129,7 +129,7 @@ Visual Studio позволяет загружать пакеты VSPackage, пр
 
 Ниже приведены различные виды терминов, которые поддерживаются.
 
-|Термин|Описание:|
+|Термин|Описание|
 |-|-|
 |{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|Идентификатор GUID ссылается на контекст пользовательского интерфейса. Термин будет иметь значение true, каждый раз, когда контекст пользовательского интерфейса active и false в противном случае.|
 |HierSingleSelectionName:\<шаблон >|Термин будет иметь значение true, каждый раз, когда выделение в активной иерархии является один элемент и имя выбранного элемента соответствует регулярное выражение .net в «pattern».|
@@ -140,6 +140,10 @@ Visual Studio позволяет загружать пакеты VSPackage, пр
 |ActiveProjectCapability:\<выражение >|Термин имеет значение true, если указанного выражения совпадает с возможности активного проекта. Выражение может быть нечто вроде VB &#124; CSharp.|
 |SolutionHasProjectCapability:\<выражение >|Аналогично выше, но условие равно true, если решение содержит любой загруженный проект, который соответствует выражению.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|Термин будет иметь значение true, каждый раз, когда решение содержит проект, который является flavored (Сводное) и у flavor, идентификатор GUID типа проекта для данного сопоставления.|
+|ProjectAddedItem:\<шаблон >| Термин имеет значение true, при добавлении файла, соответствующего «pattern» в проекте в soluion, в котором открыт.|
+|ActiveProjectOutputType:\<outputType>|Термин имеет значение true при выводе тип для активного проекта, обеспечивающее точное совпадение.  OutputType может быть целым числом или <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE> типа.|
+|ActiveProjectBuildProperty:\<buildProperty>=\<regex>|Термин имеет значение true, если активный проект имеет свойство указанной сборки, а значение свойства соответствует к предоставлен фильтр регулярных выражений. Ссылаться на [сохранение данных в файлах проекта MSBuild](internals/persisting-data-in-the-msbuild-project-file.md) для получения дополнительных сведений о свойства сборки.|
+|SolutionHasProjectBuildProperty:\<buildProperty>=\<regex>|Термин имеет значение true, если решение содержит проект загружен в свойстве указанной сборки, а значение свойства соответствует к предоставлен фильтр регулярных выражений.|
 
 ## <a name="compatibility-with-cross-version-extension"></a>Совместимость с разными версиями расширения
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe2e782723b35a8cdd5505c60f74d1be12bb2077
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409547"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Пошаговое руководство. Добавление страницы приложения в рабочий процесс
   В этом пошаговом руководстве демонстрируется добавление страницы приложения, отображаются данные, извлекаемые из рабочего процесса в проект рабочего процесса. Оно основано на проекте, описанную в разделе [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -295,7 +295,7 @@ ms.locfileid: "60083046"
     ```
 
     > [!WARNING]
-    >  Обязательно замените "TestServer" в коде на допустимое имя сервера с SharePoint.
+    > Обязательно замените "TestServer" в коде на допустимое имя сервера с SharePoint.
 
 ## <a name="test-the-application-page"></a>Тестирование страницы приложения
  Затем определите ли на странице приложения правильно отображает данные о затратах.

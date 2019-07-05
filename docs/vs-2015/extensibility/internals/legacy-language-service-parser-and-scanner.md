@@ -11,12 +11,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1db922974c587cdeadc131d17c44cbab4b49af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 64f9a9f4d0785f033191ab527084f0dddb1ff104
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434367"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Средство синтаксического анализа и сканер языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ namespace MyNamespace
  В отличие от средства синтаксического анализа, который используется как часть компилятора, (где маркеры преобразуются в некоторую форму исполняемого кода) средства синтаксического анализа языка службы может быть вызван по разным причинам и во многих разных контекстах. Как реализовать этот подход в <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса принимает разработчик. Важно помнить, что <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод может вызываться в фоновом потоке.  
   
 > [!CAUTION]
->  <xref:Microsoft.VisualStudio.Package.ParseRequest> Структура содержит ссылку на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объекта. Это <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объект не может использоваться в фоновом потоке. На самом деле многие базовые классы MPF не может использоваться в фоновом потоке. К ним относятся <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> классов и любой другой класс, который прямо или косвенно взаимодействует с представлением.  
+> <xref:Microsoft.VisualStudio.Package.ParseRequest> Структура содержит ссылку на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объекта. Это <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объект не может использоваться в фоновом потоке. На самом деле многие базовые классы MPF не может использоваться в фоновом потоке. К ним относятся <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> классов и любой другой класс, который прямо или косвенно взаимодействует с представлением.  
   
  Это средство синтаксического анализа обычно анализирует источник в момент первой он вызывается или когда синтаксический анализ причин значение <xref:Microsoft.VisualStudio.Package.ParseReason> прав. Последующие вызовы <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод обработки небольшая часть анализируемого кода и могут выполняться гораздо быстрее, используя результаты предыдущей операции полного синтаксического анализа. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Метод передает результаты операции анализа через <xref:Microsoft.VisualStudio.Package.AuthoringSink> и <xref:Microsoft.VisualStudio.Package.AuthoringScope> объектов. <xref:Microsoft.VisualStudio.Package.AuthoringSink> Объект используется для сбора сведений по определенной причине синтаксического анализа, например, сведения о диапазоны фигурные или сигнатур метода, которые имеют списки параметров. <xref:Microsoft.VisualStudio.Package.AuthoringScope> Предоставляет коллекции, объявления и подписи методов, а также поддержку для перехода к дополнительной изменить параметр (**перейти к определению**, **перейти к объявлению**, **перейти к Ссылаться на**).  
   

@@ -11,12 +11,12 @@ ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2ee09c334394e363d9621ddec887bd5d83726fba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59d25c338cb0c7406c533afeceaf3675fbd16e96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441272"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Цветовая маркировка синтаксиса в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60103580"
 Модель простого палитры  
   
 > [!NOTE]
->  Службы цветового выделения синтаксических конструкций отделен от общих [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] механизм для выделения текста цветом. Дополнительные сведения об общей [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] механизм поддержки выделения цветом, см. в разделе [использование шрифтов и цветов](../../extensibility/using-fonts-and-colors.md).  
+> Службы цветового выделения синтаксических конструкций отделен от общих [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] механизм для выделения текста цветом. Дополнительные сведения об общей [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] механизм поддержки выделения цветом, см. в разделе [использование шрифтов и цветов](../../extensibility/using-fonts-and-colors.md).  
   
  Помимо палитры языковая служба может предоставлять пользовательских цветных элементов, используемые редактором рекламы, что он передает пользовательских цветных элементов. Это можно сделать, реализовав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> тот же объект, реализующий интерфейс <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейс. Возвращает количество пользовательских цветных элементов, когда вызывает редактор <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> метод и он возвращает отдельные настраиваемого цветного элемента, когда вызывает редактор <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> метод.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "60103580"
 2. VSPackage теперь можно получить и использовать объект палитры следующим образом:  
   
     > [!NOTE]
-    >  Пакеты VSPackage, использующих базовый редактор не нужно явным образом получить объекты палитры службы языка. Как только экземпляр базового редактора Получает службу языка, он выполняет все задачи Раскраска, показано ниже.  
+    > Пакеты VSPackage, использующих базовый редактор не нужно явным образом получить объекты палитры службы языка. Как только экземпляр базового редактора Получает службу языка, он выполняет все задачи Раскраска, показано ниже.  
   
     1. Получить объект палитру языковой службы, который реализует `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> интерфейсы, путем вызова <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> метод на языковой службе <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> объекта.  
   
@@ -62,7 +62,7 @@ ms.locfileid: "60103580"
     3. Использовать цветовое выделение сведения, возвращаемые функцией <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> метод для отображения выделенного текста.  
   
 > [!NOTE]
->  Помимо использования палитру языковой службы, пакет VSPackage можно также использовать общего назначения [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] механизм цветовой подсветки текста. Дополнительные сведения о механизме см. в разделе [использование шрифтов и цветов](../../extensibility/using-fonts-and-colors.md).  
+> Помимо использования палитру языковой службы, пакет VSPackage можно также использовать общего назначения [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] механизм цветовой подсветки текста. Дополнительные сведения о механизме см. в разделе [использование шрифтов и цветов](../../extensibility/using-fonts-and-colors.md).  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Реализация цветовой маркировки синтаксиса](../../extensibility/internals/implementing-syntax-coloring.md)  

@@ -1,5 +1,5 @@
 ---
-title: Сбор данных по использованию памяти для веб-приложений ASP.NET с помощью командной строки профилировщика | Документы Майкрософт
+title: Получение данных об использовании памяти из веб-приложения ASP.NET с помощью командной строки Profiler
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a9e6bfce4b9137283a9413168fe320e292195c12
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 03851869b2067efd014752ab854f30c2d4874711
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405871"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263544"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Сбор данных об использовании памяти для веб-приложений ASP.NET с помощью командной строки профилировщика
 В этом разделе описаны процедуры и параметры сбора данных по выделению памяти и времени существования объектов для веб-приложения ASP.NET с помощью программы командной строки **VSPerfCmd**.

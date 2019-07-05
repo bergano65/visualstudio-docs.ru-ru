@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project files
 - project files, saving data
 ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93c30d9966dabdf7ad7b42bbad6ecbae5679e636
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f1fc94b1fcb2529b41f1c74e2c6bfb9758171669
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070342"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334062"
 ---
 # <a name="save-data-in-project-files"></a>Сохранить данные в файлах проектов
 Подтип проекта можно сохранять и извлекать подтипа данных в файле проекта. Managed Package Framework (MPF) предоставляет два интерфейса для выполнения этой задачи:
@@ -206,7 +206,7 @@ ms.locfileid: "60070342"
     ```
 
 > [!NOTE]
->  Все примеры кода, приведенные в этом разделе являются частью более крупного примера в [примеры VSSDK](https://aka.ms/vs2015sdksamples).
+> Все примеры кода, приведенные в этом разделе являются частью более крупного примера в [примеры VSSDK](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>См. также
 - [Сохранять данные в файле проекта MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18dbd175ddbf01a826d2a24b5d750cb00b64d28b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7040b4dd07eebb4332634d5d8ffc1d9bc8d8c06b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098898"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686479"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60098898"
      Автоматизированные тесты будут выполнены, будет предоставлена информация об их успешном выполнении или выполнении с ошибками.  
   
     > [!TIP]
-    >  Для просмотра обозревателя тестов из меню **Тест** наведите указатель на пункт **Окна** и выберите пункт **Обозреватель тестов**.  
+    > Для просмотра обозревателя тестов из меню **Тест** наведите указатель на пункт **Окна** и выберите пункт **Обозреватель тестов**.  
   
 4. В результатах обозревателя тестов щелкните ссылку **Выходные данные**.  
   
@@ -109,4 +109,4 @@ ms.locfileid: "60098898"
   
 ## <a name="see-also"></a>См. также  
  [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)   
- [Практическое руководство. Запуск тестов из Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+ [Практическое руководство. Запуск тестов из Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

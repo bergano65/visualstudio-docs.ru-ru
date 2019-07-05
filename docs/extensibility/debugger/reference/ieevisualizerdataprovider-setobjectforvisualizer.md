@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::SetObjectForVisualizer method
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a55328c4148aa911d86b8f2daf05ba84a50ff444
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 34fb0e8c4ae8b2b4371234e9cf09d9c21727dfdf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711548"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350199"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Этот метод изменяет объект, представляющий визуализатор.
@@ -40,18 +43,15 @@ int SetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pNewObject`
+## <a name="parameters"></a>Параметры
+`pNewObject`\
+[in] Задаваемый объект.
 
- [in] Задаваемый объект.
+`error`\
+[out] Если произошла ошибка при установке объекта, эта строка содержит сообщение об ошибке.
 
- `error`
-
- [out] Если произошла ошибка при установке объекта, эта строка содержит сообщение об ошибке.
-
- `pException`
-
- [out] Если произошла ошибка, этот объект содержит сведения об исключении.
+`pException`\
+[out] Если произошла ошибка, этот объект содержит сведения об исключении.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

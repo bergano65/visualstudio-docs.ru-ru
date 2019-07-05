@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61c81cef552c18eab5aa737b3460d539abfbdcfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446998"
 ---
 # <a name="ribbon-designer"></a>Конструктор лент
   Конструктор лент — основа для визуальной разработки. Используйте конструктор лент для добавления пользовательских вкладок, групп и элементов управления на ленту приложения Microsoft Office.
@@ -47,7 +47,7 @@ ms.locfileid: "60103645"
 - [Добавление элементов управления в представление Backstage](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
->  Существуют некоторые задачи, которые невозможно выполнить с помощью конструктора лент. Дополнительные сведения об этих задачах и как их выполнения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).
+> Существуют некоторые задачи, которые невозможно выполнить с помощью конструктора лент. Дополнительные сведения об этих задачах и как их выполнения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).
 
  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Использование конструктора ленты для настройки ленты в Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130312).
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, restrictions on string lengths
 ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b989fc18ae14790b001b7eca9b403a65c0dfa9b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ab797f76ec6f6118fe4f86a410dbfcfe1e61aa04
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716692"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334175"
 ---
 # <a name="restrictions-on-string-lengths"></a>Ограничения длины строки
 API подключаемых модулей управления источника ограничивает длину строки, используемые в различных функций.
@@ -30,7 +30,7 @@ API подключаемых модулей управления источни�
 |`SCC_PRJPATH_LEN`|300|
 
 > [!NOTE]
->  Длина не содержит завершающего `null`. Другие константы с суффиксом «_размер» вместо «_LEN» учитывает пространство для завершающего `null`.
+> Длина не содержит завершающего `null`. Другие константы с суффиксом «_размер» вместо «_LEN» учитывает пространство для завершающего `null`.
 
 |Константа|Значение|
 |--------------|-----------|

@@ -13,20 +13,20 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4d3d15f6d38ab494c586f22cc428d5e00442e84
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5e79969c3b4be22a3c9bb01f06297f54b0734ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617006"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746012"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Вспомогательные средства просмотра символов
-**Обозреватель объектов**, **представление классов**, **Обозреватель вызовов** и **результаты поиска символа** средства предоставляют средства в Visual Studio для просмотра символов. Эти средства просмотра представлений иерархическом дереве символов и отображения связей между символы в дереве. Символы могут представлять пространства имен, объекты, классы, члены класса и остальных элементов языка, содержащиеся в различных компонентов. Компоненты включают проекты Visual Studio, внешних [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] компоненты и библиотеки типов (TLB). Дополнительные сведения см. в разделе [Просмотр структуры кода](../../ide/viewing-the-structure-of-code.md).
+**Обозреватель объектов**, **представление классов**, **Обозреватель вызовов** и **результаты поиска символа** средства предоставляют средства в Visual Studio для просмотра символов. Эти средства просмотра представлений иерархическом дереве символов и отображения связей между символы в дереве. Символы могут представлять пространства имен, объекты, классы, члены класса и остальных элементов языка, содержащиеся в различных компонентов. Компоненты включают проекты Visual Studio, внешние компоненты .NET Framework и библиотеки типов (TLB). Дополнительные сведения см. в разделе [Просмотр структуры кода](../../ide/viewing-the-structure-of-code.md).
 
 ## <a name="symbol-browsing-libraries"></a>Библиотеки просмотра символов
  Как язык исполнителя можно расширить возможности просмотра символов Visual Studio путем создания библиотек, отслеживать символы в компонентах и предоставляют списки по принципу символов в диспетчер объектов Visual Studio через набор интерфейсов. Описывается библиотека <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> интерфейс. Диспетчер объектов Visual Studio отвечает на запросы для новых данных с помощью средств просмотра символов, получение данных из библиотеки и организуя их. Затем заполняет или обновляет средства запрошенные данные. Для получения ссылки на диспетчер объектов Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, передайте <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> идентификатор для службы `GetService` метод.
@@ -46,9 +46,9 @@ ms.locfileid: "56617006"
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Manager вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> метод, чтобы определить, если указанный элемент списка является расширяемым и содержит дочерние элементы. Если пользовательский Интерфейс отправляет запрос, чтобы развернуть элемент, диспетчер объектов запрашивает дочерний список символов путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> метод. Процесс продолжается с разными частями дерева, создаваемую по запросу.
 
 > [!NOTE]
->  Для реализации поставщика символов машинного кода, используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> интерфейсов.
+> Для реализации поставщика символов машинного кода, используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> интерфейсов.
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Зарегистрировать библиотеку с помощью диспетчера объектов](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [Практическое руководство. Раскрывать списки символов, предоставляемые библиотекой в диспетчер объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [Практическое руководство. Регистрация библиотеки с помощью диспетчера объектов](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [Практическое руководство. Предоставление списка символов, переданных из библиотеки в диспетчер объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
 - [Практическое руководство. Определение символов в библиотеке](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

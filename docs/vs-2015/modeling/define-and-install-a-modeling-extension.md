@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60049741"
@@ -116,7 +116,7 @@ ms.locfileid: "60049741"
   
     1. В контекстном меню проекта в **обозревателе решений**выберите пункт **Открыть папку в проводнике Windows**.  
   
-    2. Найдите файл **bin\\\*\\**_Ваш_проект_**.vsix**  
+    2. Найдите файл **bin\\\*\\** _Ваш_проект_ **.vsix**  
   
 2. Скопируйте файл **.vsix** на компьютер, где необходимо установить расширение. Это может быть как ваш собственный компьютер, так и любой другой.  
   

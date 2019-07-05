@@ -18,24 +18,24 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081428"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690583"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
- Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Информация в этом разделе относится к приложениям Магазина Windows, приложениям Магазина Windows Phone и приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova. Информацию о командах консоли, поддерживаемых в приложениях Cordova, см. в разделе [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Информацию об использование консоли в инструментах Internet Explorer, вызываемых кнопкой F12, см. в [этой статье](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Информация в этом разделе относится к приложениям Магазина Windows, приложениям Магазина Windows Phone и приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova. Информацию о командах консоли, поддерживаемых в приложениях Cordova, см. в разделе [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Информацию об использование консоли в инструментах Internet Explorer, вызываемых кнопкой F12, см. в [этой статье](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Если окно консоли JavaScript закрыто, его можно открыть при отладке в Visual Studio, выбрав **Отладка** > **Windows** > **Консоль JavaScript**.  
   
 > [!NOTE]
->  Если во время сеанса отладки окно недоступно, убедитесь, что в свойствах отладки проекта тип отладчика установлен на **Скрипт** .  
+> Если во время сеанса отладки окно недоступно, убедитесь, что в свойствах отладки проекта тип отладчика установлен на **Скрипт** .  
   
 ## <a name="console-object-commands"></a>команды объекта console  
  В этой таблице показан синтаксис для команд объекта `console` , которые можно использовать в окне консоли JavaScript или для отправки сообщений в консоль из кода. Этот объект предоставляет несколько форм, позволяющих при необходимости разделять информационные сообщения и сообщения об ошибках.  
@@ -43,7 +43,7 @@ ms.locfileid: "60081428"
  Чтобы отличить эту консоль от именованной консоли локальных объектов, можно воспользоваться более длинной командой из `window.console.[command]` .  
   
 > [!TIP]
->  Более ранние версии Visual Studio не поддерживают полный набор команд. Для быстрого получения информации о поддерживаемых командах используйте IntelliSense для объекта консоли.  
+> Более ранние версии Visual Studio не поддерживают полный набор команд. Для быстрого получения информации о поддерживаемых командах используйте IntelliSense для объекта консоли.  
   
 |Команда|Описание|Пример|  
 |-------------|-----------------|-------------|  

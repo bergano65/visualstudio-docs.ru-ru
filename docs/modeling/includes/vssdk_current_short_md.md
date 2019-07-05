@@ -1,10 +1,10 @@
 ---
 ms.topic: include
-ms.openlocfilehash: a702ee2879419795014164d69da870ddaa75ca8a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dbf8bfcfb2b7f914360fd4d8ef4af2f17d8da811
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38940749"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253975"
 ---
 SDK для Visual Studio

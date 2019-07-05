@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04dee7bad28b6176ffb9499bfcdb5ff2dddc3e8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd4435ed0930a920cd36e741ac7461e6f95ba815
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994463"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701513"
 ---
 # <a name="properties-of-swimlanes"></a>Свойства дорожек
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58994463"
   
  Дорожки имеют свойства, которые перечислены в следующей таблице.  
   
-|Свойство.|Описание|Значение по умолчанию|  
+|Свойство|Описание|Значение по умолчанию|  
 |--------------|-----------------|-------------|  
 |Цвет заливки для тела|Цвет заливки для тела дорожки.|Белый|  
 |Цвет заливки заголовка|Цвет заливки для заголовка дорожки.|Темно-серый|  
@@ -55,4 +55,4 @@ ms.locfileid: "58994463"
 |Ключевое слово Help|Ключевое слово, используемое для индексации справки F1 для этой дорожки.|\<none>|  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий средств предметно-ориентированных языков](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

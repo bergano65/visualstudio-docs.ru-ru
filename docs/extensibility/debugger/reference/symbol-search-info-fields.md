@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SYMBOL_SEARCH_INFO_FIELDS enumeration
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc50da1cec68103045365a021e039dd18eced85e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 86a7fb7c891d0c22bc415920014e905cf3d9c6fa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717655"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322364"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Задает тип сведений о символах для извлечения.
@@ -42,16 +45,18 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>Участники
- SSIF_NONE указывает на отсутствие флагов
+## <a name="fields"></a>Поля
+ `SSIF_NONE`\
+ Указывает флаги не
 
- SSIF_VERBOSE_SEARCH_INFO возвращает все совпадения при поиске путей, используемых для поиска символов
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ Возвращает все совпадения при поиске путей, используемых для поиска символов
 
 ## <a name="remarks"></a>Примечания
  Эти флаги передаются в качестве параметра [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) метод, чтобы определить объем сведений, завершился сбоем.
 
 > [!NOTE]
->  В настоящее время только `SSIF_VERBOSE_SEARCH_INFO` поддерживается, и он должен быть указан как `dwFlags` параметр `IDebugModule3::GetSymbolInfo`. Все остальные значения сообщение об ошибке.
+> В настоящее время только `SSIF_VERBOSE_SEARCH_INFO` поддерживается, и он должен быть указан как `dwFlags` параметр `IDebugModule3::GetSymbolInfo`. Все остальные значения сообщение об ошибке.
 
 ## <a name="requirements"></a>Требования
  Header: msdbg.h

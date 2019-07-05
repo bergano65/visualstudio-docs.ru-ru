@@ -1,16 +1,19 @@
 - name: MsBuild
-  href: msbuild.md
   items:
+    - name: MsBuild
+      href: msbuild.md
     - name: "Новые возможности в MSBuild\_16.0"
       href: whats-new-msbuild-16-0.md
     - name: "Новые возможности MSBuild\_15.0"
       href: what-s-new-in-msbuild-15-0.md
     - name: Основные возможности MSBuild
-      href: msbuild-concepts.md
       items:
-        - name: Свойства MSBuild
-          href: msbuild-properties.md
+        - name: "Основные возможности MSBuild\_— общие сведения"
+          href: msbuild-concepts.md
+        - name: Свойства
           items:
+            - name: Свойства MSBuild
+              href: msbuild-properties.md
             - name: Использование переменных среды в построении
               href: how-to-use-environment-variables-in-a-build.md
             - name: Использование ссылки на имя или расположение файла проекта
@@ -19,9 +22,10 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: Функции свойств
               href: property-functions.md
-        - name: Элементы MSBuild
-          href: msbuild-items.md
+        - name: Элементы
           items:
+            - name: Элементы MSBuild
+              href: msbuild-items.md
             - name: Выбор файлов для сборки
               href: how-to-select-the-files-to-build.md
             - name: Исключение файлов из сборки
@@ -32,9 +36,10 @@
               href: item-definitions.md
             - name: Функции элементов
               href: item-functions.md
-        - name: Цели MSBuild
-          href: msbuild-targets.md
+        - name: Целевые объекты
           items:
+            - name: Цели MSBuild
+              href: msbuild-targets.md
             - name: Порядок построения целевого объекта
               href: target-build-order.md
             - name: Инкрементные построения
@@ -51,65 +56,74 @@
               href: how-to-clean-a-build.md
             - name: Использование пакета SDK проекта MSBuild
               href: how-to-use-project-sdk.md
-        - name: Задачи MSBuild
-          href: msbuild-tasks.md
+        - name: Задачи
           items:
+            - name: Задачи MSBuild
+              href: msbuild-tasks.md
             - name: Написание задач
               href: task-writing.md
             - name: Игнорирование ошибок в задачах
               href: how-to-ignore-errors-in-tasks.md
             - name: 'Построение проекта, содержащего ресурсы'
               href: how-to-build-a-project-that-has-resources.md
-            - name: Встроенные задачи MSBuild
-              href: msbuild-inline-tasks.md
+            - name: Встроенные задачи
               items:
+                - name: Встроенные задачи MSBuild
+                  href: msbuild-inline-tasks.md
                 - name: Пошаговое руководство. Создание встроенной задачи
                   href: walkthrough-creating-an-inline-task.md
             - name: Встроенные задачи MSBuild с RoslynCodeTaskFactory
               href: msbuild-roslyncodetaskfactory.md
         - name: Сравнение свойств и элементов
           href: comparing-properties-and-items.md
-        - name: Специальные символы в MSBuild
-          href: msbuild-special-characters.md
+        - name: Специальные символы
           items:
+            - name: Специальные символы в MSBuild
+              href: msbuild-special-characters.md
             - name: Пропуск специальных знаков в MSBuild
               href: how-to-escape-special-characters-in-msbuild.md
             - name: Использование резервных символов XML в файлах проектов
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: Дополнительные возможности MSBuild
-      href: msbuild-advanced-concepts.md
+    - name: Дополнительные возможности
       items:
-        - name: Пакетная обработка в MSBuild
-          href: msbuild-batching.md
+        - name: Дополнительные возможности MSBuild
+          href: msbuild-advanced-concepts.md
+        - name: Пакетная обработка
           items:
+            - name: Пакетная обработка в MSBuild
+              href: msbuild-batching.md
             - name: Метаданные элементов в пакетной обработке задач
               href: item-metadata-in-task-batching.md
             - name: Метаданные элементов в пакетной обработке целевых объектов
               href: item-metadata-in-target-batching.md
         - name: Преобразования MSBuild
           href: msbuild-transforms.md
-        - name: Интеграция Visual Studio (MSBuild)
-          href: visual-studio-integration-msbuild.md
+        - name: Интеграция Visual Studio
           items:
+            - name: Интеграция Visual Studio (MSBuild)
+              href: visual-studio-integration-msbuild.md
             - name: Расширение процесса построения Visual Studio
               href: how-to-extend-the-visual-studio-build-process.md
             - name: Запуск построения из интегрированной среды разработки
               href: starting-a-build-from-within-the-ide.md
             - name: Регистрация расширений платформы .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Параллельное построение нескольких проектов с помощью MSBuild
-          href: building-multiple-projects-in-parallel-with-msbuild.md
+        - name: Параллельная сборка нескольких проектов
           items:
+            - name: Параллельное построение нескольких проектов с помощью MSBuild
+              href: building-multiple-projects-in-parallel-with-msbuild.md
             - name: Использование нескольких процессоров при построении проектов
               href: using-multiple-processors-to-build-projects.md
             - name: Эффективное использование памяти при построении больших проектов
               href: using-memory-efficiently-when-you-build-large-projects.md
-        - name: 'MSBuild: обзор настройки для различных версий'
-          href: msbuild-multitargeting-overview.md
+        - name: Настройка для различных версий
           items:
-            - name: Набор инструментов MSBuild (ToolsVersion)
-              href: msbuild-toolset-toolsversion.md
+            - name: 'MSBuild: обзор настройки для различных версий'
+              href: msbuild-multitargeting-overview.md
+            - name: Набор инструментов (ToolsVersion)
               items:
+                - name: Набор инструментов MSBuild (ToolsVersion)
+                  href: msbuild-toolset-toolsversion.md
                 - name: Стандартные и настраиваемые конфигурации наборов инструментов
                   href: standard-and-custom-toolset-configurations.md
                 - name: Переопределение параметров ToolsVersion
@@ -118,16 +132,18 @@
               href: msbuild-target-framework-and-target-platform.md
             - name: Разрешение сборок во время разработки
               href: resolving-assemblies-at-design-time.md
-            - name: Настройка целевых платформ и задач
-              href: configuring-targets-and-tasks.md
+            - name: Конфигурация целевых платформ и задач
               items:
+                - name: Настройка целевых платформ и задач
+                  href: configuring-targets-and-tasks.md
                 - name: Настройка целевых платформ и задач
                   href: how-to-configure-targets-and-tasks.md
             - name: 'Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework'
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: Отслеживание файлов
-          href: file-tracking.md
           items:
+            - name: "Отслеживание файлов\_— общие сведения"
+              href: file-tracking.md
             - name: EndTrackingContext
               href: endtrackingcontext.md
             - name: ResumeTracking
@@ -150,9 +166,10 @@
           href: customize-your-build.md
         - name: Рекомендации по MSBuild
           href: msbuild-best-practices.md
-    - name: Ведение журнала в MSBuild
-      href: logging-in-msbuild.md
+    - name: Ведение журнала
       items:
+        - name: "Ведение журнала в MSBuild\_— общие сведения"
+          href: logging-in-msbuild.md
         - name: Получение журналов построения с помощью MSBuild
           href: obtaining-build-logs-with-msbuild.md
         - name: Средства ведения журнала построения
@@ -168,11 +185,13 @@
     - name: Пошаговое руководство. Создание файла проекта MSBuild с нуля
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: Справочные сведения о MSBuild
-      href: msbuild-reference.md
       items:
+        - name: "Справка по MSBuild\_— общие сведения"
+          href: msbuild-reference.md
         - name: Справочные сведения о схеме файлов проектов MSBuild
-          href: msbuild-project-file-schema-reference.md
           items:
+            - name: "Справка по схеме файлов проектов MSBuild\_— общие сведения"
+              href: msbuild-project-file-schema-reference.md
             - name: Элемент Choose (MSBuild)
               href: choose-element-msbuild.md
             - name: Элемент Import (MSBuild)
@@ -217,12 +236,14 @@
               href: usingtask-element-msbuild.md
             - name: Элемент When (MSBuild)
               href: when-element-msbuild.md
-        - name: Справочные сведения о задачах MSBuild
-          href: msbuild-task-reference.md
+        - name: Справочные сведения о задачах
           items:
-            - name: 'Задачи MSBuild, относящиеся к Visual C++'
-              href: msbuild-tasks-specific-to-visual-cpp.md
+            - name: "Справка по задачам MSBuild\_— общие сведения"
+              href: msbuild-task-reference.md
+            - name: 'Задачи, относящиеся к Visual C++'
               items:
+                - name: "Задачи MSBuild, относящиеся к Visual C++\_— общие сведения"
+                  href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: Задача BscMake
                   href: bscmake-task.md
                 - name: Задача CL
@@ -417,14 +438,16 @@
           href: msbuild-well-known-item-metadata.md
         - name: Файлы ответов MSBuild
           href: msbuild-response-files.md
-        - name: Справочные сведения о WPF для MSBuild
-          href: wpf-msbuild-reference.md
+        - name: Справка по WPF
           items:
+            - name: "Справка по WPF для MSBuild\_— общие сведения"
+              href: wpf-msbuild-reference.md
             - name: TARGETS-файлы WPF
               href: wpf-dot-targets-files.md
-            - name: Справочные сведения о задачах WPF для MSBuild
-              href: wpf-msbuild-task-reference.md
+            - name: Справка по задачам WPF
               items:
+                - name: "Справка по задачам WPF для MSBuild\_— общие сведения"
+                  href: wpf-msbuild-task-reference.md
                 - name: Задача FileClassifier
                   href: fileclassifier-task.md
                 - name: Задача GenerateTemporaryTargetAssembly
@@ -446,8 +469,9 @@
         - name: 'Знаки, требующие отключения их специального значения'
           href: special-characters-to-escape.md
     - name: Программное использование MSBuild
-      href: msbuild-api.md
       items:
+        - name: Программное использование MSBuild
+          href: msbuild-api.md
         - name: "Обновление до MSBuild\_15"
           href: updating-an-existing-application.md
     - name: Глоссарий MSBuild

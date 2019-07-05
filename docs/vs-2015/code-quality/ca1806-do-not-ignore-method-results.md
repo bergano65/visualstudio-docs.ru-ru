@@ -15,12 +15,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c0af1f7270cca341b713c5036b2c457f5964c0bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 117e26fca367c8cf00604bebe01a00f4df58a0ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437398"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806. Не игнорируйте результаты метода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "58992049"
   
  Если метод A вызывает метод B, но не использует новый экземпляр строки, возвращаемое методом, B. Передайте экземпляр в качестве аргумента другому методу, присвойте экземпляр переменной. Или удалите вызов, если он не нужен.  
   
- - или -  
+ -или-  
   
  Если метод A вызывает метод B, но не использует HRESULT или код ошибки, метод возвращает. Используйте результат в условном операторе, присвоить результат переменной или передайте его в качестве аргумента другому методу.  
   
@@ -73,7 +73,7 @@ ms.locfileid: "58992049"
  Пример метода, использует ли объект, он создает.  
   
 > [!NOTE]
->  Это нарушение невозможно воспроизвести в Visual Basic.  
+> Это нарушение невозможно воспроизвести в Visual Basic.  
   
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/cpp/FxCop.Usage.DoNotIgnoreMethodResults3.cpp#1)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/cs/FxCop.Usage.DoNotIgnoreMethodResults3.cs#1)]

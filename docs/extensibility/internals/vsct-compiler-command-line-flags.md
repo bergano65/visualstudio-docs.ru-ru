@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSCT files, compiling
 - command-table file compilation (VSCT files)
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf68857aca2d94f8a929f8191fb32b8d67cbbb4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b0e70d6695b76df9a6ef66586713e27a61697ae
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601660"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332906"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Флаги командной строки компилятора VSCT
 Компилятора таблицы команд Visual Studio (VSCT) предоставляет параметры командной строки для обеспечения успешной компиляции vsct-файлы.
@@ -50,7 +50,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```
 
 > [!NOTE]
->  Символы - (дефис) и / (косая черта) являются оба принятые нотации, указывающие параметры командной строки.
+> Символы - (дефис) и / (косая черта) являются оба принятые нотации, указывающие параметры командной строки.
 
  Ниже приведены допустимые флаги и разъяснения к ним.
 
@@ -59,7 +59,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Укажите любые дополнительные определенные символы.|
 |-I|Указать, что дополнительные пути поиска включаемых файлов, которые должны использоваться при разрешении ссылок на файлы.|
 |-L|Укажите <xref:System.Globalization.CultureInfo> имя языка и региональных параметров, например «en US».|
-|-E|Выдавать C# объектов указанного пространства имен для элементов команды, за которым следует [C&#124;H&#124;N]:*filename*где C = C#, H = заголовок C++, N = пространство имен. Пространство имен является обязательным для C#.|
+|-E|Выдавать C# объектов указанного пространства имен для элементов команды, за которым следует [C&#124;H&#124;N]:*filename*где C = C#, H = C++ заголовок, N = пространство имен. Пространство имен является обязательным для C#.|
 |-v|Подробные выходные данные.|
 
  Переключатель -L указывает компилятору на необходимость выбрать группу строк для получения двоичного cto-файла, соответствующее заданной <xref:System.Globalization.CultureInfo> имя языка и региональных параметров. Имя заданного языка и региональных параметров должно соответствовать атрибуту языка из одного или нескольких [элемент Strings](../../extensibility/strings-element.md) в vsct-файле. Элемент строки имеет атрибут не языка, наследуется от содержащего [элемент CommandTable](../../extensibility/commandtable-element.md).

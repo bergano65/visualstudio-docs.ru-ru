@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73bbfc4557324a221e993ed51c300b6924abd6c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a3d5033bc9953aa00efb950eabce5e7346952f9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444154"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Практическое руководство. вызвать отладчик рабочего процесса
 Как правило, отладка рабочих процессов похожа на отладку программ, написанных на других языках программирования Visual Studio. Запуск отладчика рабочих процессов:  
@@ -26,7 +26,7 @@ ms.locfileid: "60099524"
 - Используйте удаленную отладку. Сведения об использовании удаленной отладки, см. в разделе [как: Включить удаленную отладку](http://go.microsoft.com/fwlink/?LinkId=196257).  
   
     > [!NOTE]
-    >  Если приложение рабочего процесса предназначено x86 архитектуры и размещается на компьютере под управлением 64-разрядной операционной системы, удаленная отладка не будет работать без [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] установлен на удаленном компьютере или цель приложения рабочего процесса изменена на **Любой ЦП**.  
+    > Если приложение рабочего процесса предназначено x86 архитектуры и размещается на компьютере под управлением 64-разрядной операционной системы, удаленная отладка не будет работать без [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] установлен на удаленном компьютере или цель приложения рабочего процесса изменена на **Любой ЦП**.  
   
 ### <a name="stepping-through-code"></a>Пошаговая отладка  
   

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966904"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Практическое руководство. Добавление и удаление элементов в компонентах SharePoint
   При создании решения SharePoint, Visual Studio добавляет элементы проекта SharePoint по умолчанию для компонента. Перед развертыванием можно добавлять и удалять элементы проекта SharePoint, чтобы изменить функцию SharePoint.

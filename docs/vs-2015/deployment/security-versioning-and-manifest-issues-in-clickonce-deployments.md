@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4864d37cb5930075b292ee765bce9b288794019
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444988"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Вопросы безопасности, контроля версий и манифестов в развертываниях ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ ms.locfileid: "60043684"
  Если вы хотите переместить или скопировать приложение, необходимо также обновить `deploymentProvider` пути, таким образом, чтобы клиент фактически устанавливается из нового расположения. Обновление этого пути является главным образом после установки приложения. Для интерактивных приложений, которые всегда запускаются через исходный URL-адрес, параметр `deploymentProvider` является необязательным. Если `deploymentProvider` не установлен, он будет учитываться; в противном случае — значение URL-адрес, используемый для запуска приложения будет использоваться как базовый URL-адрес для загрузки файлов приложения.  
   
 > [!NOTE]
->  Каждый раз при обновлении манифеста необходимо также подписать его снова.  
+> Каждый раз при обновлении манифеста необходимо также подписать его снова.  
   
 ## <a name="see-also"></a>См. также  
  [Устранение неполадок развертывания ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   

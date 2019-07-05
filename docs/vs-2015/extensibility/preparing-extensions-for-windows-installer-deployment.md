@@ -10,12 +10,12 @@ ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 45355ff34b2a088c63f6d303e771d7a5008cb80c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 76d7f879fade99914bf3f56ade0ec1270e14f4c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117997"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694591"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Подготовка расширений для развертывания с помощью установщика Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,5 +57,5 @@ ms.locfileid: "60117997"
 5. Добавьте оставшиеся файлы проекта установки.  
   
 ## <a name="see-also"></a>См. также  
- [Развертывание с помощью установщика Visual Studio](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [Пошаговое руководство: Создание настраиваемых действий](http://msdn.microsoft.com/4bd4b63a-2b91-431e-839c-5752443f0eaf)
+ [Развертывание с помощью установщика Visual Studio](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   
+ [Пошаговое руководство: Создание настраиваемых действий](https://msdn.microsoft.com/4bd4b63a-2b91-431e-839c-5752443f0eaf)

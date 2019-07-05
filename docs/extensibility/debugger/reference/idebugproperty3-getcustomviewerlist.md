@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerList
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf31379f99c9cde8b0050b080797f3a4e70acea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d8a439863f577237699950b3d70eb15d75ec77a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722737"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348872"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Получает список пользовательских средств просмотра, связанных с данным свойством.
@@ -42,22 +45,18 @@ int GetCustomViewerList(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`celtSkip`
+## <a name="parameters"></a>Параметры
+`celtSkip`\
+[in] Количество представлений, чтобы пропустить.
 
- [in] Количество представлений, чтобы пропустить.
+`celtRequested`\
+[in] Количество средств просмотра для получения (также указывает размер `rgViewers` массива).
 
-`celtRequested`
+`rgViewers`\
+[in, out] Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур для заполнения.
 
- [in] Количество средств просмотра для получения (также указывает размер `rgViewers` массива).
-
-`rgViewers`
-
- [in, out] Массив [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) структур для заполнения.
-
-`pceltFetched`
-
- [out] Возвращает фактическое количество средств просмотра.
+`pceltFetched`\
+[out] Возвращает фактическое количество средств просмотра.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4016597d6c88cfe03ebf823e2fea17730b69562
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 932b770f38f75d26028eceb6c0addc2ababeef6d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090983"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696348"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Практическое руководство. Создание консольных приложений последовательных рабочих процессов (для прежних версий)
 Выполните следующие шаги для создания проекта консольного приложения последовательного рабочего процесса с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, предоставленного средой [!INCLUDE[vs2010](../includes/vs2010-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,7 +34,7 @@ ms.locfileid: "60090983"
 3. Выберите либо **.NET Framework 3.0** параметр или **.NET Framework 3.5** параметр в раскрывающемся списке в верхней части **новый проект** окно, чтобы открыть конструктор прежних версий.  
   
     > [!NOTE]
-    >  Параметр по умолчанию в [!INCLUDE[vs2010](../includes/vs2010-md.md)] — **.NET Framework 4**. Он предназначен для создания приложений [!INCLUDE[wf](../includes/wf-md.md)], работающих на платформе [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)], и не использует конструктор прежних версий.  
+    > Параметр по умолчанию в [!INCLUDE[vs2010](../includes/vs2010-md.md)] — **.NET Framework 4**. Он предназначен для создания приложений [!INCLUDE[wf](../includes/wf-md.md)], работающих на платформе [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)], и не использует конструктор прежних версий.  
   
 4. В **типы проектов** области, выберите проекты Visual C# или проекты Visual Basic (в разделе **другие языки**), а затем выберите **рабочего процесса**.  
   
@@ -54,4 +54,4 @@ ms.locfileid: "60090983"
   
 ## <a name="see-also"></a>См. также  
  [Создание проектов рабочих процессов для прежних версий](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Разработка рабочих процессов](http://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)
+ [Разработка рабочих процессов](https://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)

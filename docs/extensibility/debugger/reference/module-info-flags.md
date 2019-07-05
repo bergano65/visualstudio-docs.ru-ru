@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FLAGS enumeration
 ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6db802fba0d6cd6b6f9b91dd40f6046491fb1f2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d8cc60510e29cdf502b0a91b434966d1ea47860d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688879"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346685"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 Указывает состояние символы для модуля.
@@ -37,8 +40,9 @@ public enum enum_MODULE_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Участники
- MIF_SYMBOLS_LOADED на как минимум один набор символов был загружен в модуле (в противном случае не были загружены символы).
+## <a name="fields"></a>Поля
+ `MIF_SYMBOLS_LOADED`\
+ По крайней мере один набор символов был загружен в модуле (в противном случае не были загружены символы).
 
 ## <a name="remarks"></a>Примечания
  Это значение возвращается по [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) метод.

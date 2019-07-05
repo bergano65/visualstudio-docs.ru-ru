@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59259d8186803d966e79f27012e6be6c22b47dd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414707"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Практическое руководство. Создание простейшего шейдера цвета
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60117763"
    Ниже показан готовый граф шейдера и предварительный просмотр шейдера, примененного к кубу.  
   
 > [!NOTE]
->  На рисунке был указан оранжевый цвет для лучшей демонстрации эффекта шейдера.  
+> На рисунке был указан оранжевый цвет для лучшей демонстрации эффекта шейдера.  
   
  ![Граф шейдера и его результаты на трехмерной модели](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")  
   

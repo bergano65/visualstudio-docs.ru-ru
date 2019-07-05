@@ -13,12 +13,12 @@ ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a500b84f04f5f9dce37515edae71fda509a63bbb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426352"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ int GetSymbolInfo(
  Если метод завершается успешно, возвращается `S_OK`; в противном случае он возвращает код ошибки.  
   
 > [!NOTE]
->  Возвращаемая строка (в `MODULE_SYMBOL_SEARCH_INFO` структуры) могут быть пустыми даже в том случае, если `S_OK` возвращается. В этом случае отсутствуют сведения поиска для возврата.  
+> Возвращаемая строка (в `MODULE_SYMBOL_SEARCH_INFO` структуры) могут быть пустыми даже в том случае, если `S_OK` возвращается. В этом случае отсутствуют сведения поиска для возврата.  
   
 ## <a name="remarks"></a>Примечания  
  Если `bstrVerboseSearchInfo` поле `MODULE_SYMBOL_SEARCH_INFO` структура не является пустым, то он содержит список пути поиска и результаты поиска. Путь, а затем кнопку с многоточием («...»), а затем результат имеет формат списка. Если имеется несколько пар результирующий путь, каждая пара отделяется пару «\r\n» (каретки возврата и перевода строки). Шаблон выглядит следующим образом:  
@@ -66,7 +66,7 @@ int GetSymbolInfo(
  В этом примере этот метод возвращает три пути с три разные результаты. Каждая строка завершается парой каретки возврата и перевода строки. В примере выходных данных просто выводит результаты поиска в одну строку.  
   
 > [!NOTE]
->  Результат состояния — это все, что сразу после «...» до конца строки.  
+> Результат состояния — это все, что сразу после «...» до конца строки.  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  

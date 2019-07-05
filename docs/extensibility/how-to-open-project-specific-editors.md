@@ -7,17 +7,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], opening project-specific editors
 - projects [Visual Studio SDK], opening folders
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11374ca0a65a5b430b819a9ef1bdf57f7434e923
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2e85913f6eead81bcbc2424ef1087f64a3f2446e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053758"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319242"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Практическое руководство. Открытие редакторов соответствующих проектов
 Если файл элемента, открываемый в проекте по своей природе привязана к конкретного редактора для этого проекта, проект необходимо открыть файл с помощью редактора определенного проекта. Файл не может быть делегирована вниз, чтобы механизм IDE для выбора редактора. Например вместо того чтобы использовать редактор стандартных растрового изображения, можно использовать этот параметр, редактор для конкретного проекта для указания в редакторе определенного точечного рисунка, который распознает сведения в файле, который является уникальным для проекта.
@@ -29,7 +29,7 @@ ms.locfileid: "60053758"
 1. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> метод (`RDT_EditLock`) для определения, является ли файл (объект данных документа) уже открыт.
 
     > [!NOTE]
-    >  Дополнительные сведения о данных документа и объекты представления документа, см. в разделе [представление данных и документа в специализированных редакторах документа](../extensibility/document-data-and-document-view-in-custom-editors.md).
+    > Дополнительные сведения о данных документа и объекты представления документа, см. в разделе [представление данных и документа в специализированных редакторах документа](../extensibility/document-data-and-document-view-in-custom-editors.md).
 
 2. Если файл уже открыт, resurface файл путем вызова <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> метод и указав значение ido_activateifopen для `grfIDO` параметра.
 

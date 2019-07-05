@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa9a7666fb233ac54db8fc3bfd50b055e7bf937d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d355a05ba2d805349a84a842a00b699d6c1ef272
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980526"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696283"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий ли [единице компиляции](../../debugger/debug-interface-access/compiland.md) был связан с параметром компоновщика [/LTCG (Создание кода во время компоновки)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2), который помогает при оптимизации всей программы. Этот параметр применяется только к управляемым кодом.  
+Получает флаг, указывающий ли [единице компиляции](../../debugger/debug-interface-access/compiland.md) был связан с параметром компоновщика [/LTCG (Создание кода во время компоновки)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2), который помогает при оптимизации всей программы. Этот параметр применяется только к управляемым кодом.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,7 +41,7 @@ HRESULT get_iSLTCG(
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="requirements"></a>Требования  
   

@@ -34,12 +34,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 938f0c9ce735ddfbca07bb9f2448fa71d243b634
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 213535d983f95f304b8e0fba3241fa502577f0f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438059"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Диалоговое окно "Командная строка события "После построения"" или "Командная строка события "До построения""
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,14 +47,14 @@ ms.locfileid: "59658037"
 Вы можете ввести события до или после сборки для [страницы "События сборки" в конструкторе проектов (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) прямо в поле ввода или выбрать макросы, выполняемые до или после сборки, в списке доступных макросов.  
   
 > [!NOTE]
->  События перед сборкой не выполняются, если проект актуален и сборка не запускается.  
+> События перед сборкой не выполняются, если проект актуален и сборка не запускается.  
   
 ## <a name="ui-element-list"></a>Список элементов пользовательского интерфейса  
  **Поле ввода командной строки**  
  Содержит события для запуска до или после сборки.  
   
 > [!NOTE]
->  Добавьте оператор `call` перед всеми командами после сборки, запускающими BAT-файлы. Например, `call C:\MyFile.bat` или `call C:\MyFile.bat call C:\MyFile2.bat`.  
+> Добавьте оператор `call` перед всеми командами после сборки, запускающими BAT-файлы. Например, `call C:\MyFile.bat` или `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
  **Макросы**  
  Развертывает поле ввода, чтобы отобразить список макросов для вставки в поле ввода командной строки.  

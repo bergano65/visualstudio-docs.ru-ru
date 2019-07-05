@@ -1,31 +1,32 @@
 ---
-title: Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
-ms.date: 11/04/2017
+title: API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
+ms.date: 06/13/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 045f205ff5450b09d4ec4e76e14493a988bae375
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3634dcd7cf136aa52de3ebf6bf5bfc3d57632d2c
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784086"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132146"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 В этом разделе перечислены открытые члены пространства имен `Microsoft::VisualStudio::CppUnitTestFramework`. С помощью этих интерфейсов API можно создавать модульные тесты для C++ на основе собственной платформы модульного тестирования Майкрософт. В конце раздела приводится [пример использования](#example).
 
- Файлы заголовков расположены в папке _папка_установки_Visual_Studio_2012[x86]_**\VC\UnitTest\include**.
+ Файлы заголовков расположены в папке _папка_установки_Visual_Studio_2012[x86]_ **\VC\UnitTest\include**.
 
- Файлы библиотек расположены в папке _папка_установки_Visual_Studio_2012[x86]_**\VC\UnitTest\lib**.
+ Файлы библиотек расположены в папке _папка_установки_Visual_Studio_2012[x86]_ **\VC\UnitTest\lib**.
 
 Пути к заголовкам и библиотекам автоматически настраиваются в собственном тестовом проекте.
 
 ## <a name="In_this_topic"></a> Содержание раздела
- [CppUnitTest.h](#cppUnitTest_h)
+
+[CppUnitTest.h](#cppUnitTest_h)
 
 - [Создание тестовых классов и методов](#create_test_classes_and_methods)
 
@@ -184,7 +185,7 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
- Добавляет атрибуты, определенные с одним или несколькими макросами `TEST_METHOD_ATTRIBUTE`, в тестовый метод *testClassName*.
+ Добавляет атрибуты, определенные с одним или несколькими макросами `TEST_METHOD_ATTRIBUTE`, в тестовый метод *testMethodName*.
 
  Макрос `TEST_METHOD_ATTRIBUTE` определяет атрибут с именем *attributeName* и значением *attributeValue*.
 
@@ -215,37 +216,38 @@ END_TEST_MODULE_ATTRIBUTE()
  Макрос `TEST_MODULE_ATTRIBUTE` определяет атрибут с именем *attributeName* и значением *attributeValue*.
 
 #### <a name="pre_defined_attributes"></a> Стандартные атрибуты
- Стандартные макросы атрибутов можно заменить макросами `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE` или `TEST_MODULE_ATTRIBUTE`, описанными выше.
+
+ Эти предварительно определенные макросы атрибутов предоставляются для удобства реализации распространенных сценариев. Их можно заменить описанным выше макросом `TEST_METHOD_ATTRIBUTE`.
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
- Определите атрибут с именем `Owner` и значением *ownerAlias*.
+ Определяет `TEST_METHOD_ATTRIBUTE` с именем `Owner` и значение атрибута для *ownerAlias*.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
- Определите атрибут с именем `Description` и значением *description*.
+ Определяет `TEST_METHOD_ATTRIBUTE` с именем `Description` и значение атрибута для *description*.
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
- Определите атрибут с именем `Priority` и значением *priority*.
+ Определяет `TEST_METHOD_ATTRIBUTE` с именем `Priority` и значение атрибута для *priority*.
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
- Определите атрибут с именем `WorkItem` и значением *workItem*.
+ Определяет `TEST_METHOD_ATTRIBUTE` с именем `WorkItem` и значение атрибута для *workItem*.
 
 ```cpp
 TEST_IGNORE()
 ```
 
- Определите атрибут с именем `Ignore` и значением `true`.
+ Определяет `TEST_METHOD_ATTRIBUTE` с именем `Ignore` и значение атрибута для `true`.
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 

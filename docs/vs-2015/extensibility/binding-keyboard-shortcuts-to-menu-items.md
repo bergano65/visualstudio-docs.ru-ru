@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c799d2733c4deca07cdcbe087b1b694f9d1725e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405627"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Привязка сочетаний клавиш к пунктам меню
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58992839"
 4. Попробуйте различные сочетания клавиш, пока не найдете не сопоставлен.  
   
    > [!NOTE]
-   >  Сочетания клавиш, нажмите клавиши ALT может открыть меню и не непосредственно выполнить команду. Таким образом **в настоящий момент используется** поле может быть пустым, при вводе ярлык, который включает в себя ALT. Убедитесь, что ярлык не открывается меню, закрывая **параметры** диалоговое окно и нажав клавиши.  
+   > Сочетания клавиш, нажмите клавиши ALT может открыть меню и не непосредственно выполнить команду. Таким образом **в настоящий момент используется** поле может быть пустым, при вводе ярлык, который включает в себя ALT. Убедитесь, что ярлык не открывается меню, закрывая **параметры** диалоговое окно и нажав клавиши.  
   
    В следующей процедуре предполагается, что у вас есть существующие VSPackage с командой меню. Если вам нужна помощь, сделать это, рассмотрим [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -55,7 +55,7 @@ ms.locfileid: "58992839"
 2. Создать пустой `<KeyBindings>` разделе после `<Commands>` если его еще нет.  
   
    > [!WARNING]
-   >  Дополнительные сведения о привязки клавиш, см. в разделе [сочетание клавиш](../extensibility/keybinding-element.md).  
+   > Дополнительные сведения о привязки клавиш, см. в разделе [сочетание клавиш](../extensibility/keybinding-element.md).  
   
     В `<KeyBindings>` разделе, создайте `<KeyBinding>` запись.  
   

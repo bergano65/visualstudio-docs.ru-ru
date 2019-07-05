@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Программное кэширование источника данных в документах Office
+title: Кэширование источника данных в документ Office программным способом
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5e63b478fb16965f639a76dad0cbc3b2715bc7e2
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109183"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401404"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Практическое руководство. Программное кэширование источника данных в документах Office
   Можно программно добавить объект данных в кэш данных в документе путем вызова `StartCaching` метода ведущего элемента, такого как <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, или <xref:Microsoft.Office.Tools.Excel.Worksheet>. Удаляет объект данных из кэша данных, вызвав `StopCaching` метод ведущего элемента.
@@ -52,7 +52,7 @@ ms.locfileid: "60109183"
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    >  Не вызывайте `StopCaching` из обработчика событий для `Shutdown` события документа или листа. К моменту `Shutdown` события, уже слишком поздно для изменения кэша данных. Дополнительные сведения о `Shutdown` событий, см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).
+    > Не вызывайте `StopCaching` из обработчика событий для `Shutdown` события документа или листа. К моменту `Shutdown` события, уже слишком поздно для изменения кэша данных. Дополнительные сведения о `Shutdown` событий, см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).
 
 ## <a name="see-also"></a>См. также
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c055c1cf9fffde227d4e52a9764b2559a2342b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 923ae0bc3ca03dabee7b5d4bca74d24c7f7d5815
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684355"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329372"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 Указывает свойства, связанные с поставщиком программы.
@@ -39,10 +42,12 @@ public enum enum_PROVIDER_FIELDS {
 };
 ```
 
-## <a name="members"></a>Участники
- PFIELD_PROGRAM_NODES `ProgramNodes` поле является допустимым.
+## <a name="fields"></a>Поля
+ `PFIELD_PROGRAM_NODES`\
+ `ProgramNodes` Поле является допустимым.
 
- PFIELD_IS_DEBUGGER_PRESENT `fIsDebuggerPresent` поле является допустимым.
+ `PFIELD_IS_DEBUGGER_PRESENT`\
+ `fIsDebuggerPresent` Поле является допустимым.
 
 ## <a name="remarks"></a>Примечания
  Эти значения возвращаются в `Fields` членом [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры, чтобы указать, какие поля структуры явно были заполнены.

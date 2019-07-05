@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Программное заполнение таблиц Word свойствами документа
+title: Заполнение таблиц Word свойствами документа программными средствами
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8a7e87268b021d8bc8a14b1b5d99f3331c0f431
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e296a63c208bc1c3316f89b7b4003f16daf3c93e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631592"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177781"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Практическое руководство. Программное заполнение таблиц Word свойствами документа
   Следующий пример создает таблицу Microsoft Office Word в верхней части документа и заполняет свойства ведущего документа.

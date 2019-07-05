@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b88d3541bc9c3b2f890c2aadf0103c48d3dad865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433299"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -238,7 +238,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  Многие аспекты поведения доменного языка в отношении копирования, вставки, создания и удаления объектов определяются экземпляром <xref:Microsoft.VisualStudio.Modeling.ElementOperations>, который соединен со схемой. Можно изменить поведение доменного языка, создав собственный производный класс из класса <xref:Microsoft.VisualStudio.Modeling.ElementOperations> и переопределив свойство <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> класса схемы.  
   
 > [!TIP]
->  Дополнительные сведения о настройке модели с помощью программного кода, см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+> Дополнительные сведения о настройке модели с помощью программного кода, см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
  ![Схема последовательностей для операции копирования](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")  
   

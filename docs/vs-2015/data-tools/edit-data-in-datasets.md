@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7cbc9519c86b2bf4967e567b29355eb6d8a176a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105010"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699771"
 ---
 # <a name="edit-data-in-datasets"></a>Изменение данных в наборах данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60105010"
  [!code-vb[VbRaddataEditing#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#5)]  
   
 ## <a name="to-insert-new-rows-into-a-dataset"></a>Для вставки новых строк в набор данных  
- Приложения, использующие элементы управления с привязкой к данным обычно Добавление новых записей с помощью **Add New** кнопку [элемент управления BindingNavigator](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
+ Приложения, использующие элементы управления с привязкой к данным обычно Добавление новых записей с помощью **Add New** кнопку [элемент управления BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
   
  Чтобы вручную добавить новые записи в набор данных, создания новой строки данных путем вызова метода в таблице. Затем добавьте строки <xref:System.Data.DataRow> коллекции (<xref:System.Data.DataTable.Rows%2A>) из <xref:System.Data.DataTable>:  
   
@@ -63,7 +63,7 @@ ms.locfileid: "60105010"
      Этот метод не удаляет записи физически. Вместо этого он помечает записи для удаления.  
   
     > [!NOTE]
-    >  Если вы получаете свойство count <xref:System.Data.DataRowCollection>, результирующее значение включает записи, которые были помечены для удаления. Чтобы получить точное число записей, которые не помечены для удаления, можно организовать цикл по коллекции, просмотрев <xref:System.Data.DataRow.RowState%2A> свойство каждой записи. (Имеют помеченные на удаление записи <xref:System.Data.DataRow.RowState%2A> из <xref:System.Data.DataRowState>.) Кроме того можно создать представление данных набора данных, фильтры на основе состояния строки и получить свойство count оттуда.  
+    > Если вы получаете свойство count <xref:System.Data.DataRowCollection>, результирующее значение включает записи, которые были помечены для удаления. Чтобы получить точное число записей, которые не помечены для удаления, можно организовать цикл по коллекции, просмотрев <xref:System.Data.DataRow.RowState%2A> свойство каждой записи. (Имеют помеченные на удаление записи <xref:System.Data.DataRow.RowState%2A> из <xref:System.Data.DataRowState>.) Кроме того можно создать представление данных набора данных, фильтры на основе состояния строки и получить свойство count оттуда.  
   
      В следующем примере показан вызов <xref:System.Data.DataRow.Delete%2A> метод, чтобы пометить первую строку в `Customers` таблицу как удаленный:  
   
@@ -79,7 +79,7 @@ ms.locfileid: "60105010"
   
 - Каждая строка измененных данных содержит несколько версий этой строки (<xref:System.Data.DataRowVersion>), исходной версии (до изменений) и текущей версии (после изменений). В течение периода, если ожидается изменение (время, когда можно ответить на <xref:System.Data.DataTable.RowChanging> событий) третья версия — предложенная — также доступен.
   
-  <xref:System.Data.DataSet.HasChanges%2A> Метод набора данных возвращает `true` Если были внесены изменения в наборе данных. После определения существования измененных строк, можно вызвать `GetChanges` метод <xref:System.Data.DataSet> или <xref:System.Data.DataTable> для возвращения набора измененных строк. Дополнительные сведения см. в разделе [Как Получение измененных строк](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  <xref:System.Data.DataSet.HasChanges%2A> Метод набора данных возвращает `true` Если были внесены изменения в наборе данных. После определения существования измененных строк, можно вызвать `GetChanges` метод <xref:System.Data.DataSet> или <xref:System.Data.DataTable> для возвращения набора измененных строк. Дополнительные сведения см. в разделе [Практическое руководство. Получение измененных строк](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Чтобы определить, были ли внесены изменения в строки  
   

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::GetManagedViewerCreationData
 ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd92f8a93427264966bb44bbf44d5e519cb9459a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 435f6924948ab1273abbded633bcce757b57d9b3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714898"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329515"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 Извлекает сведения о средстве просмотра для этого типа свойства для создания экземпляра этого средства просмотра.
@@ -46,30 +49,24 @@ int GetManagedViewerCreationData(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `assemName`
+## <a name="parameters"></a>Параметры
+`assemName`\
+[out] Возвращает имя сборки, содержащий этот объект.
 
- [out] Возвращает имя сборки, содержащий этот объект.
+`assemBytes`\
+[out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки этого объекта (это значение null, если ни одного байта доступны).
 
- `assemBytes`
+`assemPdb`\
+[out] Возвращает `IEEDataStorage` объект, содержащий символ хранить сведения для этого объекта (это та значение null, если нет хранилища символов).
 
- [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки этого объекта (это значение null, если ни одного байта доступны).
+`className`\
+[out] Возвращает имя класса, содержащий этот объект.
 
- `assemPdb`
+`alr`\
+[out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение сборки.
 
- [out] Возвращает `IEEDataStorage` объект, содержащий символ хранить сведения для этого объекта (это та значение null, если нет хранилища символов).
-
- `className`
-
- [out] Возвращает имя класса, содержащий этот объект.
-
- `alr`
-
- [out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение сборки.
-
- `replacementOk`
-
- [out] Возвращает ненулевое значение (`TRUE`), если значение этого объекта можно изменить; ноль (`FALSE`), если объект доступен только для чтения.
+`replacementOk`\
+[out] Возвращает ненулевое значение (`TRUE`), если значение этого объекта можно изменить; ноль (`FALSE`), если объект доступен только для чтения.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

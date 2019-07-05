@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3c9a067c8388a398834f5fb1862072544bb0e53c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419795"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689375"
 ---
 # <a name="toolbox-data-tab"></a>Панель элементов, вкладка "Данные"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63419795"
 Отображение объектов данных, которые можно добавлять в формы и компоненты. Вкладка **Данные** **панели элементов** появляется при создании проекта, для которого есть связанный конструктор. **Панель элементов** по умолчанию отображается в интегрированной среде разработки Visual Studio; чтобы открыть **панель элементов**, выберите в меню **Вид** пункт **Панель элементов**.  
   
 > [!TIP]
-> Запуск мастера настройки источников данных позволяет автоматически создать и настроить большинство элементов данных. Дополнительные сведения см. в статье [Creating Data Applications with Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293) (Создание приложений данных с помощью Visual Studio).  
+> Запуск мастера настройки источников данных позволяет автоматически создать и настроить большинство элементов данных. Дополнительные сведения см. в статье [Creating Data Applications with Visual Studio](https://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293) (Создание приложений данных с помощью Visual Studio).  
   
 ## <a name="ui-element-list"></a>Список элементов пользовательского интерфейса  
  Чтобы перейти непосредственно на страницу справочника по .NET Framework для конкретного компонента, нажмите клавишу **F1** для элемента на **панели элементов** или для элемента компонента в области конструктора.  
@@ -39,8 +39,8 @@ ms.locfileid: "63419795"
 |<xref:System.Windows.Forms.BindingNavigator>|Представляет пользовательский интерфейс для перехода и обработки для элементов управления в форме, которые привязываются к данным.|  
   
 ## <a name="see-also"></a>См. также раздел  
- [Пошаговые руководства работы с данными](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Пошаговые руководства работы с данными](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Привязка элементов управления Windows Forms к данным в Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Подготовка приложения к получению данных](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Привязка элементов управления к данным в Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Проверка данных](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Проверка данных](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

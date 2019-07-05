@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a1fc24d27d079576128cf437fb1ee05c2fc78404
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4e9aa77848c3784b1df7a2c1f32651b8d00e5998
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081558"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263382"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60081558"
 В этом разделе содержатся сведения об устранении проблем, которые могут возникать при использовании эмулятора Visual Studio для Android.
 
 > [!WARNING]
->  Когда эмулятор установлен, программа установки проверяет наличие необходимых компонентов для запуска программного обеспечения. Если необходимые компоненты не установлены, она отображает предупреждения, но он не требует их установки.
+> Когда эмулятор установлен, программа установки проверяет наличие необходимых компонентов для запуска программного обеспечения. Если необходимые компоненты не установлены, она отображает предупреждения, но он не требует их установки.
 
  В этом разделе содержатся следующие подразделы.
 
@@ -70,7 +70,7 @@ ms.locfileid: "60081558"
  ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
->  Это сообщение относится к эмулятору Visual Studio для Android и к эмулятору Windows Phone. Windows 8.1 и Windows 10 поддерживают эмулятор.
+> Это сообщение относится к эмулятору Visual Studio для Android и к эмулятору Windows Phone. Windows 8.1 и Windows 10 поддерживают эмулятор.
 
  Если отображается данное сообщение, проверьте [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) , чтобы узнать, можно ли запустить эмулятор.
 
@@ -143,7 +143,7 @@ ms.locfileid: "60081558"
 
 - Убедитесь, что соблюдены минимальные требования к оборудованию и применяются корректные параметры BIOS.
 
-   Для эмулятора и Windows 8 Hyper-V требуется 64-разрядный процессор с преобразованием адресов второго уровня (SLAT). Для Intel вам потребуется, в частности, процессор Core i3, i5 или i7 (или один из многих вариантов Xeon). Список микросхем AMD см. [здесь](http://support.amd.com/en-us).
+   Для эмулятора и Windows 8 Hyper-V требуется 64-разрядный процессор с преобразованием адресов второго уровня (SLAT). Для Intel вам потребуется, в частности, процессор Core i3, i5 или i7 (или один из многих вариантов Xeon). Список микросхем AMD см. [здесь](https://www.amd.com/en/support).
 
   1. Убедитесь, что ваш компьютер удовлетворяет [требованиям к системе](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).
 

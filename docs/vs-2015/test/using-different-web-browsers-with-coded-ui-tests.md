@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d3854f4844fba3b3c1a0a519f06d59d31c4f7072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445881"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60100408"
  **Запись.** Для записи теста веб-приложений с помощью Internet Explorer нужно использовать построитель закодированных тестов пользовательского интерфейса. При необходимости можно добавить код проверки и пользовательский код для тестируемых элементов управления с помощью предопределенного набора свойств, как это обычно происходит в случае закодированных тестов пользовательского интерфейса. Дополнительные сведения см. в разделе [Использование модели автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md).  
   
 > [!NOTE]
->  Невозможно записать закодированные тесты пользовательского интерфейса с помощью веб-браузеров Google Chrome или Mozilla Firefox.  
+> Невозможно записать закодированные тесты пользовательского интерфейса с помощью веб-браузеров Google Chrome или Mozilla Firefox.  
   
  **Воспроизведение с помощью Internet Explorer.** Если браузер не указан явно, тесты будут выполняться в Internet Explorer по умолчанию. Можно явно указать браузер для использования, задав свойство **BrowserWindow.CurrentBrowser** в тестовом коде. Для использования Internet Explorer это свойство должно иметь значение **IE** или **Internet Explorer**.  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60100408"
 3. Выберите расширение и нажмите кнопку **Скачать**.  
   
    > [!TIP]
-   >  Кроме того, компоненты Selenium для выполнения закодированных тестов пользовательского интерфейса можно скачать [здесь](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+   > Кроме того, компоненты Selenium для выполнения закодированных тестов пользовательского интерфейса можно скачать [здесь](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
    Дополнительные сведения о создании и использовании закодированных тестов пользовательского интерфейса см. в разделе [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   

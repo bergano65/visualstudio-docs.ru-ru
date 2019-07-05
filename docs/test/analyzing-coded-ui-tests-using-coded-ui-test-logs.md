@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822746"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432309"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса
 
@@ -24,23 +24,23 @@ ms.locfileid: "62822746"
 
 В зависимости от сценария используйте один из указанных ниже методов, чтобы включить ведение журнала.
 
-- Целевая версия .NET Framework 4 без файла *App.config* присутствует в тестовом проекте.
+- Если файл *App.config* отсутствует в проекте теста, сделайте следующее:
 
-   1. Откройте файл *QTAgent32_40.exe.config*. По умолчанию этот файл находится в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Определите, какой процесс *QTAgent\*.exe* запускается при выполнении теста. Для этого можно воспользоваться вкладкой **Подробности** в **диспетчере задач** Windows.
+   
+   2. Откройте соответствующий файл *.config* из папки *% ProgramFiles (x86) %\Microsoft Visual Studio\\\<версии >\\\<выпуск > \Common7\IDE*. Например, если запускается процесс *QTAgent_40.exe*, откройте файл *QTAgent_40.exe.config*.
 
-   2. Задайте требуемый уровень журнала в значении EqtTraceLevel.
+   2. Задайте требуемый уровень журнала в значении **EqtTraceLevel**.
+   
+      ```xml
+      <!-- You must use integral values for "value".
+           Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
+      <add name="EqtTraceLevel" value="4" />
+      ```
 
    3. Сохраните файл.
 
-- Целевая версия .NET Framework 4.5 без файла *App.config* присутствует в тестовом проекте.
-
-   1. Откройте файл *QTAgent32.exe.config*. По умолчанию этот файл находится в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
-
-   2. Задайте требуемый уровень журнала в значении EqtTraceLevel.
-
-   3. Сохраните файл.
-
-- Файл *App.config* присутствует в тестовом проекте.
+- Если файл *App.config* присутствует в проекте теста, сделайте следующее:
 
     - Откройте файл *App.config* проекта и добавьте следующий код в узле конфигурации:
 
@@ -54,11 +54,13 @@ ms.locfileid: "62822746"
 
 - Включение ведения журнала в коде теста:
 
-   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
+   ```csharp
+   Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
+   ```
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Шаг 2. Запуск кодированного теста пользовательского интерфейса и просмотр журнала
 
-При запуске закодированного теста пользовательского интерфейса после внесения изменений в файл *QTAgent32.exe.config* вы увидите выходную ссылку в результатах **обозревателя тестов**. Если выбран подробный уровень трассировки (verbose), файлы журнала создаются не только при ошибке теста, но и при успешном выполнении теста.
+При запуске закодированного теста пользовательского интерфейса после внесения изменений в файл *QTAgent\*.exe.config* вы увидите выходную ссылку в результатах **обозревателя тестов**. Если выбран подробный уровень трассировки **verbose**, файлы журнала создаются не только при ошибке теста, но и при успешном выполнении теста.
 
 1. В меню **Тест** выберите **Окна** и щелкните **Обозреватель тестов**.
 

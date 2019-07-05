@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2::Clone
 ms.assetid: fd6d3abc-20d9-4f6f-9c8e-5bd29f68d47d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62e8414bb880dfe19e4893578dfc7396d0bfe7c0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fe930c4fbcc25dbe8f8c8c02b68b3ee40ac25129
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710634"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350277"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 Возвращает копию текущего перечисления как отдельный объект.
@@ -36,10 +39,9 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppEnum`
-
- [out] Возвращает копию этого перечисления как отдельный объект.
+## <a name="parameters"></a>Параметры
+`ppEnum`\
+[out] Возвращает копию этого перечисления как отдельный объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

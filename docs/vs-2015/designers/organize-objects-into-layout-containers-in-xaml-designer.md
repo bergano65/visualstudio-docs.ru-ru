@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c2aef08695d2cea04d23a343d318680bc53f44c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432602"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Упорядочивание объектов в макеты-контейнеры в конструкторе XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60059205"
  Эта страница содержит описание панелей макета и элементов управления и ссылки на видеоролики, которые помогут вам приступить к работе с данными элементами.  
   
 > [!NOTE]
->  Некоторые из видео могут ссылаться на Blend или Expression Blend, которые используют тот же конструктор XAML, что и Visual Studio и Blend для Visual Studio.  
+> Некоторые из видео могут ссылаться на Blend или Expression Blend, которые используют тот же конструктор XAML, что и Visual Studio и Blend для Visual Studio.  
   
 ## <a name="layout-panels"></a>Панели макета  
  Запустите страницу, выбрав одну из таких панелей макета. Ваша страница может иметь несколько панелей макета. Например, вы можете начать работу с панели макета **Сетка**, а затем добавить в определенную область **Сетки** элемент **StackPanel**, чтобы можно было расположить элементы управления по вертикали в этой области.  

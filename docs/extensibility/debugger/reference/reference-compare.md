@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_COMPARE enumeration
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b518e9bcfd77f489dd38a96eb8e378610841feb5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d166917ec9770e3f8d1f41f3774676278b894724
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707722"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322348"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 Указывает тип сравнения для ссылки.
@@ -41,12 +44,15 @@ public enum enum_REFERENCE_COMPARE { 
 };
 ```
 
-## <a name="members"></a>Участники
- REF_COMPARE_EQUAL указывает, обозначающая неравенство.
+## <a name="fields"></a>Поля
+ `REF_COMPARE_EQUAL`\
+ Указывает, обозначающая неравенство.
 
- REF_COMPARE_LESS_THAN указывает менее-чем сравнения.
+ `REF_COMPARE_LESS_THAN`\
+ Указывает менее-чем сравнения.
 
- Указывает, больше REF_COMPARE_GREATER_THAN-сравнение.
+ `REF_COMPARE_GREATER_THAN`\
+ Указывает, больше — сравнение.
 
 ## <a name="remarks"></a>Примечания
  Передается в качестве аргумента для [сравнения](../../../extensibility/debugger/reference/idebugreference2-compare.md) метод.

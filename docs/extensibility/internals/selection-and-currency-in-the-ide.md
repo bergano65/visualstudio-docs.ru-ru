@@ -8,17 +8,17 @@ helpviewer_keywords:
 - selection, Visual Studio IDE
 - IDE, currency
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612549e9aceb7a9bad6da2a5388dedd277469bad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 23ce55a85fd6f1408c623a49fc16b8766c535dfc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098822"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318701"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Выбор и актуальность в интегрированной среде разработки
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Интегрированной среды разработки (IDE) хранит сведения о пользователей выбранного в данный момент объектов с помощью выбора *контекст*. С контекстом выделения пакеты VSPackage могут принять участие в валюте, отслеживания двумя способами:

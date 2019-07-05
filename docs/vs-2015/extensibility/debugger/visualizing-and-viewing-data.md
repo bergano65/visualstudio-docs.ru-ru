@@ -11,12 +11,12 @@ ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 40f06ee57c5c889c2004dbd5b85e269bfd0841ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 719a2b3d073d90ff3977496c7f98ebecb1ab48a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991951"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696313"
 ---
 # <a name="visualizing-and-viewing-data"></a>Визуализация и просмотр данных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ ms.locfileid: "58991951"
  [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) получается путем вызова [CreateVisualizerService](../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md). Этот метод требует [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md) интерфейс, который получается из [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) передается интерфейс [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). `IEEVisualizerServiceProvider::CreateVisualizerService` также требуется [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md) и [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) интерфейсов, которые были переданы `IDebugParsedExpression::EvaluateSync`. Окончательный интерфейс, необходимый для создания `IEEVisualizerService` интерфейс [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md) интерфейс, который реализует EE. Этот интерфейс позволяет вносить изменения в свойство визуализации. Все свойства данные заключаются в [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) интерфейс, который реализуется также с помощью EE.  
   
 ### <a name="accessing-property-data"></a>Доступ к данным свойство  
- Доступ к данным свойство осуществляется с помощью [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md) интерфейс. Чтобы получить этот интерфейс, Visual Studio вызывает [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) для свойства объекта, чтобы получить [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md) интерфейс (на тот же объект, реализующий [ IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) интерфейс), а затем вызывает [GetPropertyProxy](../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) метод, чтобы получить `IPropertyProxyEESide` интерфейс.  
+ Доступ к данным свойство осуществляется с помощью [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md) интерфейс. Чтобы получить этот интерфейс, Visual Studio вызывает [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) для свойства объекта, чтобы получить [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md) интерфейс (на тот же объект, реализующий [ IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) интерфейс), а затем вызывает [GetPropertyProxy](../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) метод, чтобы получить `IPropertyProxyEESide` интерфейс.  
   
  Все данные, передаваемые в `IPropertyProxyEESide` интерфейс, инкапсулировано в [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md) интерфейс. Этот интерфейс представляет собой массив байтов и реализуется Visual Studio и EE. Если данные свойства должен быть изменен, Visual Studio создает `IEEDataStorage` объект, содержащий новые данные и вызовы [CreateReplacementObject](../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) с этим объектом данных, чтобы получить новый `IEEDataStorage` объект, который в свою очередь, — передаваемый [InPlaceUpdateObject](../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md) для обновления данных свойства. `IPropertyProxyEESide::CreateReplacementObject` позволяет EE для создания экземпляра свой собственный класс, реализующий `IEEDataStorage` интерфейс.  
   
 ## <a name="supporting-custom-viewers"></a>Поддержка пользовательских средств просмотра  
- Флаг `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` задается в `dwAttrib` поле [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) структуры (возвращается путем вызова [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)) чтобы указать, что объект имеет связанное пользовательское средство просмотра с ним. Если этот флаг установлен, Visual Studio получает [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) интерфейс из [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) интерфейса с помощью [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3).  
+ Флаг `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` задается в `dwAttrib` поле [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) структуры (возвращается путем вызова [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)) чтобы указать, что объект имеет связанное пользовательское средство просмотра с ним. Если этот флаг установлен, Visual Studio получает [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) интерфейс из [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) интерфейса с помощью [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3).  
   
  Если пользователь выбирает пользовательское средство просмотра, Visual Studio создает пользовательское средство просмотра с помощью средства просмотра `CLSID` предоставляемые `IDebugProperty3::GetCustomViewerList` метод. Visual Studio, затем вызывает [DisplayValue](../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) отображать значение для пользователя.  
   

@@ -14,18 +14,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3691a874121c00dcccc69958eb5746a2c1d78122
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992029"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
 Этот интерфейс реализуется узлов, которые поддерживают пользовательский интерфейс на один и тот же объект как [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Узлы, которые не поддерживают пользовательского интерфейса, такие как серверы, не реализует `IActiveScriptSiteWindow` интерфейс. Обработчик скриптов обращается к этот интерфейс путем вызова `QueryInterface` из `IActiveScriptSite`.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IActiveScriptSiteWindow::GetWindow](../../winscript/reference/iactivescriptsitewindow-getwindow.md)|Извлекает дескриптор окна, который может выступать в качестве владельца всплывающее окно, которое необходимо отобразить обработчика скриптов.|  
 |[IActiveScriptSiteWindow::EnableModeless](../../winscript/reference/iactivescriptsitewindow-enablemodeless.md)|В результате узел для включения или отключения основного окна, а также любой немодальных диалоговых окон.|  

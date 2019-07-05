@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a4169d57cd5b004ded9fbc9b8a16bf7537754b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417573"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Диалоговое окно "Обзор и выбор типа .NET"
 В **свойства** окна, диалоговые окна или конструкторы, такие как конструктор переменных, при выборе **Выбор типов...** в списке типов данных является **Обзор и Выбор типа .NET** диалоговое окно (которое в сокращенной форме называют «Обозреватель типов»). В этом диалоговом окне из представления в виде дерева сборок и проектов можно выбрать тип.  
@@ -31,7 +31,7 @@ ms.locfileid: "60079841"
 - При добавлении захвата в действие <xref:System.Activities.Statements.TryCatch>.  
   
 > [!NOTE]
->  Браузер типов может отображать типы массива массивов Visual Basic, но не типы многомерных массивов. См. в разделе [массивы массивов](http://go.microsoft.com/fwlink/?LinkId=195226) и [многомерные массивы](http://go.microsoft.com/fwlink/?LinkId=195227) подробные сведения.  
+> Браузер типов может отображать типы массива массивов Visual Basic, но не типы многомерных массивов. См. в разделе [массивы массивов](http://go.microsoft.com/fwlink/?LinkId=195226) и [многомерные массивы](http://go.microsoft.com/fwlink/?LinkId=195227) подробные сведения.  
   
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Выбор значения или ссылочного типа из браузера типов  
   

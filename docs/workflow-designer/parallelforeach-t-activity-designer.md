@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be522112dd4cfa16744d0c9e54601ba7a0492704
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004226"
 ---
 # <a name="parallelforeach-activity-designer"></a>Конструктор действия ParallelForEach
 
@@ -45,8 +45,8 @@ ms.locfileid: "55912629"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию — **ParallelForEach\<Int32 >**. Можно при необходимости изменить значение в **свойства** сетки или напрямую в заголовке конструктора действий.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Действие, выполняемое для каждого элемента в коллекции. Чтобы добавить <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> действие, перетащите его из области элементов в **текст** поле **ParallelForEach\<T >** конструктора действий с текстом подсказки «Перетащить действие сюда».|
-|**TypeArgument**|Да|Тип элементов в <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> коллекции, указанной в универсальном параметре *T*. По умолчанию **TypeArgument** присваивается **Int32**. Чтобы изменить тип T в **ParallelForEach < T\>**  конструктора действий, измените значение свойства **TypeArgument** поле со списком в сетке свойств.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Да|Коллекция элементов для итерации. Чтобы задать <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, введите выражение Visual Basic в **значения** поле на **ForEach < T\>**  конструктора действий, в поле с текстом подсказки «Введите выражение VB» или  **Значения** поле **свойства** окна.|
+|**TypeArgument**|True|Тип элементов в <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> коллекции, указанной в универсальном параметре *T*. По умолчанию **TypeArgument** присваивается **Int32**. Чтобы изменить тип T в **ParallelForEach < T\>**  конструктора действий, измените значение свойства **TypeArgument** поле со списком в сетке свойств.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|Коллекция элементов для итерации. Чтобы задать <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, введите выражение Visual Basic в **значения** поле на **ForEach < T\>**  конструктора действий, в поле с текстом подсказки «Введите выражение VB» или  **Значения** поле **свойства** окна.|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Оценивается после каждого выполнения итерации. Если результат оценки равен true, то запланированные ожидающие итерации отменяются. Если это свойство не задано, все запланированные инструкции выполняются до завершения.|
 
 По умолчанию итератор цикла является именованным элементом. Можно изменить имя переменной итератора в **ForEach** поле **ParallelForEach\<T >** конструктора действий. Цикличный итератор можно использовать в выражениях в дочерних действиях действия <xref:System.Activities.Statements.ParallelForEach%601>.

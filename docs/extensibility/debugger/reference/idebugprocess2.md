@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2 interface
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6ef6df6419f43201555f1dcc275b44d2a0e9737
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0bea73c1bce5367d9686e835bb58dd99a83cc818
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685749"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314130"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Этот интерфейс представляет процесс, работающий с портом. Если порт локального порта, затем `IDebugProcess2` обычно представляет физического процесса на локальном компьютере.

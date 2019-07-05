@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE_FLAGS enumeration
 ms.assetid: 85522449-3fd8-4da5-b0fe-a43160e0c33b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7614b0633f6490e8c3bb6837ed89fda67575c71e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f3b51d7c30650087c6611b79ec0b91e2a6bb83b1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691505"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349895"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 Задает флаги состояния ожидающая точка останова.
@@ -39,10 +42,10 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Участники
- Заполнитель PBPSF_NONE.
+## <a name="fields"></a>Поля
+ `PBPSF_NONE` Заполнитель.
 
- PBPSF_VIRTUALIZED приведены виртуализированных ожидающие точки останова, который необходимо привязать каждый раз при загрузке нового кода.
+ `PBPSF_VIRTUALIZED` Указывает виртуализированных ожидающие точки останова, который необходимо привязать каждый раз при загрузке нового кода.
 
 ## <a name="remarks"></a>Примечания
  Используется для `flags` членом [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) структуры.

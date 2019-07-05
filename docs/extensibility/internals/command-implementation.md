@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c307f54deff676ce1add8c745e9d92f1bb3fd657
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089757"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342200"
 ---
 # <a name="command-implementation"></a>Реализация команды
 Чтобы реализовать команду в VSPackage, необходимо выполнить следующие задачи:

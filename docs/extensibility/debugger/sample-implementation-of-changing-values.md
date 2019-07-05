@@ -6,26 +6,26 @@ helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], expression evaluation
 ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e229bd791118b23e0b8c04a8a5384a4bbc3342c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f500ecd327fd641af2bdf881a26e35024d2b856d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085537"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315039"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Пример реализации изменяющихся значений
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [образец средства оценки выражений управляемый](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Каждого локального, отображаемый в **"Локальные"** окно имеет [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) объект, связанный с ним. Это `IDebugProperty2` объект содержит имя, значение и тип локальной переменной. Когда пользователь изменяет значения локальной переменной, Visual Studio вызывает [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) для обновления значения локальной в памяти. В этом примере представлен локальной `CFieldProperty` класс, реализующий `IDebugProperty2` интерфейс.
 
 > [!NOTE]
->  Для **Watch** и **"Быстрая проверка"** выражения, значение после изменения представленного `CValueProperty` класс в примере MyCEE. Тем не менее реализация `IDebugProperty2::SetValueAsString` является таким же, как показано ниже.
+> Для **Watch** и **"Быстрая проверка"** выражения, значение после изменения представленного `CValueProperty` класс в примере MyCEE. Тем не менее реализация `IDebugProperty2::SetValueAsString` является таким же, как показано ниже.
 
  Реализация `IDebugProperty2::SetValueAsString` выполняет следующие задачи:
 

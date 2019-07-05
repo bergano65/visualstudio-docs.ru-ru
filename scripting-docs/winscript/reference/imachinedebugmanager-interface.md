@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6db8989fc6c932723a9b95017854635396b0deda
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977647"
 ---
 # <a name="imachinedebugmanager-interface"></a>Интерфейс IMachineDebugManager
 Основной интерфейс для диспетчера отладки. Этот интерфейс аналогичен `IMachineDebugManagerCookie` интерфейс.  
@@ -27,7 +27,7 @@ ms.locfileid: "58157965"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Добавляет приложению выполнения список приложений.|  
 |[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Удаляет приложение из выполняемого список приложений.|  

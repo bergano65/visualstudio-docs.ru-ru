@@ -7,17 +7,17 @@ helpviewer_keywords:
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be0a0e62942c369d47947582bf746332e201577
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b950ea6dde73ecb7f20ef45e945106e8711aefb0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623818"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353347"
 ---
 # <a name="registering-a-project-type"></a>Регистрация типа проекта
 При создании нового типа проекта, необходимо создать записи реестра, которые позволяют [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для распознавания и работать с типом проекта. Обычно создают эти записи реестра с помощью файла сценария (.rgs) реестра.
@@ -25,7 +25,7 @@ ms.locfileid: "56623818"
  В следующем примере операторы из реестра укажите пути по умолчанию и данных там, где это применимо, а затем таблицу, которая содержит элементы из скрипта реестра для каждой инструкции. Таблицы содержат записи скрипта и Дополнительные сведения об инструкциях.
 
 > [!NOTE]
->  Следующие сведения реестра предназначен пример типа и целей записей в реестре сценарии, которые можно будет записывать для регистрации типа проекта. Фактические записи и их использование может отличаться в зависимости от определенных требований типа проекта. Ознакомьтесь с примерами, доступные для поиска, сильно напоминает типа разрабатываемого проекта и просмотрите скрипт реестра для данного примера.
+> Следующие сведения реестра предназначен пример типа и целей записей в реестре сценарии, которые можно будет записывать для регистрации типа проекта. Фактические записи и их использование может отличаться в зависимости от определенных требований типа проекта. Ознакомьтесь с примерами, доступные для поиска, сильно напоминает типа разрабатываемого проекта и просмотрите скрипт реестра для данного примера.
 
  В следующих примерах показаны из HKEY_CLASSES_ROOT.
 
@@ -79,7 +79,7 @@ ms.locfileid: "56623818"
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"
 ```
 
-|name|Тип|Данные|Описание:|
+|name|Тип|Данные|Описание|
 |----------|----------|----------|-----------------|
 |`@` (По умолчанию)|REG_SZ|`FigPrj Project VSPackage`|Это локализуемые имя зарегистрировано VSPackage (типа проекта).|
 |`InprocServer32`|REG_SZ|`%MODULE%`|Путь к типу проекта библиотеки DLL. Загружает эту библиотеку DLL интегрированной среды разработки и передает VSPackage CLSID для `DllGetClassObject` для получения <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> для создания <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> объекта.|
@@ -130,7 +130,7 @@ ms.locfileid: "56623818"
    "SortPriority"=dword:00000064
 ```
 
-|name|Тип|Данные|Описание:|
+|name|Тип|Данные|Описание|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrj Project`|Имя по умолчанию для проектов этого типа.|
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Идентификатор ресурса имени должно быть извлечено из вспомогательной библиотеки DLL зарегистрирован в пакеты.|
@@ -170,7 +170,7 @@ ms.locfileid: "56623818"
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|name|Тип|Данные|Описание:|
+|name|Тип|Данные|Описание|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|Идентификатор ресурса для шаблоны новых проектов.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Путь для проектов типа зарегистрированных проекта по умолчанию.|
@@ -265,6 +265,6 @@ ms.locfileid: "56623818"
  Это означает, что если вы включите PROJECT_TYPE = entry EF в VSZ-файле, находит среды, ваши .vsz файлы в каталоге ProductDir, указанном ранее.
 
 ## <a name="see-also"></a>См. также
-- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Элементы модели проекта](../../extensibility/internals/elements-of-a-project-model.md)
 - [Создание экземпляров проекта с помощью фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ec010680a490d538b1cdbe6d3994f075adaf193
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 394ae909121bc2e80dee14506b3c0399956d1b4d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083781"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309589"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Точки расширения редактора и служба языка
 Редактор предоставляет точки расширения, которые можно использовать как части Managed Extensibility Framework (MEF) компонентов, включая большинство функций службы языка. Ниже приведены категории точки основным расширением.
@@ -113,7 +113,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  Чтобы связать тип содержимого с расширением имени файла, используйте <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>.
 
 > [!NOTE]
->  В Visual Studio, расширения имен файлов регистрируются с помощью <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> о пакете службы языка. <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> Связывает тип содержимого MEF с расширением имени файла, который был зарегистрирован таким образом.
+> В Visual Studio, расширения имен файлов регистрируются с помощью <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> о пакете службы языка. <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> Связывает тип содержимого MEF с расширением имени файла, который был зарегистрирован таким образом.
 
  Чтобы экспортировать определение типа содержимого расширение имени файла, необходимо включить следующие атрибуты:
 
@@ -269,7 +269,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: сопоставленный элемент оформления.
 
   > [!NOTE]
-  >  Пример <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, см. в разделе Определение HighlightWordTag в [Пошаговое руководство: Выделение текста](../extensibility/walkthrough-highlighting-text.md).
+  > Пример <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, см. в разделе Определение HighlightWordTag в [Пошаговое руководство: Выделение текста](../extensibility/walkthrough-highlighting-text.md).
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: связанные с регионами, которые можно разворачивать и сворачивать в создания структуры.
 
@@ -315,7 +315,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Чтобы применить тег данного определения формата, ссылаться на имя, заданные в атрибуте name класса (не отображаемое имя).
 
 > [!NOTE]
->  Пример <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, см. Описание класса HighlightWordFormatDefinition в [Пошаговое руководство: Выделение текста](../extensibility/walkthrough-highlighting-text.md).
+> Пример <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, см. Описание класса HighlightWordFormatDefinition в [Пошаговое руководство: Выделение текста](../extensibility/walkthrough-highlighting-text.md).
 
 ## <a name="extend-adornments"></a>Расширить элементы оформления
  Элементы оформления определить визуальные эффекты, которые можно добавить либо к тексту, который отображается в виде текста или к тексту просматривать сам. Можно определить собственные оформления в качестве любого типа <xref:System.Windows.UIElement>.
@@ -507,7 +507,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
 
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> является устаревшим для <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> является устаревшим для <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.
 
  Кроме того необходимо реализовать поставщик того же типа:
 
@@ -520,7 +520,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
 
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> является устаревшим для <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> является устаревшим для <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.
 
  Необходимо экспортировать поставщика, а также следующие атрибуты:
 

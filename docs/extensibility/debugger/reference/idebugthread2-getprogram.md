@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetProgram
 ms.assetid: 8c9c5ea1-2031-472e-bc8f-30e22e754566
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d25c438e7779c3589ab2deda5ea78cad9799dd5f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bc803d08e26780712dbec6318a928022c3ce862e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714118"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320260"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 Возвращает программу, в котором выполняется поток.
@@ -36,10 +39,9 @@ int GetProgram ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppProgram`
-
- [out] Возвращает [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу, в которой выполняется данный поток.
+## <a name="parameters"></a>Параметры
+`ppProgram`\
+[out] Возвращает [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу, в которой выполняется данный поток.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - DisplayPortPicker
 - IDebugPortPicker::DisplayPortPicker
 ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e115c4e45784b2072bf626d90ebab0d980491e4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 815b44735e36489991da84216e2fcc6db8e6fab4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687358"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308756"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 Отображает указанный диалоговое окно, которое позволяет пользователю выбрать порт.
@@ -37,14 +40,12 @@ public int DisplayPortPicker(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `hwndParentDialog`
+## <a name="parameters"></a>Параметры
+`hwndParentDialog`\
+[in] Дескриптор родительского диалогового окна.
 
- [in] Дескриптор родительского диалогового окна.
-
- `pbstrPortId`
-
- [out] Строка идентификатора порта.
+`pbstrPortId`\
+[out] Строка идентификатора порта.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращаемое значение, равное `S_FALSE` (или возвращаемое значение, равное `S_OK` с `BSTR` присвоено `NULL`) указывает, что пользователь нажал **отменить**.

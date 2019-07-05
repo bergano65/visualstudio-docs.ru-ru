@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_TYPE structure
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a39ce54d1cb1fb1a3773b4241be35214421f08a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3d608e4e9bf9987eb1dd430a9e22660c1da6a90a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865681"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746700"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 Эта структура указывает сведения о типом поля, взятое из метаданных.
@@ -40,17 +43,14 @@ public struct METADATA_TYPE {
 };
 ```
 
-#### <a name="parameters"></a>Параметры
- ulAppDomainID
-
+## <a name="parameters"></a>Параметры
+ `ulAppDomainID`\
  Идентификатор приложения, от которого поступило символа. Это используется для уникальной идентификации экземпляра приложения.
 
- guidModule
-
+ `guidModule`\
  Идентификатор GUID модуля, содержащего это поле.
 
- tokClass
-
+ `tokClass`\
  Идентификатор маркера метаданных этого типа.
 
  [C++] `_mdToken` — `typedef` для 32-разрядных `int`.
@@ -58,7 +58,7 @@ public struct METADATA_TYPE {
 ## <a name="remarks"></a>Примечания
  Эта структура является частью объединения в [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) структуры, когда `dwKind` поле `TYPE_INFO` структура присваивается `TYPE_KIND_METADATA` (значение из [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Перечисление).
 
- `tokClass` Значение является маркером метаданных, который уникально определяет тип. Дополнительные сведения о том, как интерпретировать старшие разряды идентификатор маркера метаданных см. в разделе `CorTokenType` перечисления в файле corhdr.h в [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] пакета SDK.
+ `tokClass` Значение является маркером метаданных, который уникально определяет тип. Дополнительные сведения о том, как интерпретировать старшие разряды идентификатор маркера метаданных см. в разделе `CorTokenType` перечисления в файле corhdr.h в пакете SDK для .NET Framework.
 
 ## <a name="requirements"></a>Требования
  Заголовок: sh.h

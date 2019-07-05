@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76a45297062b42b559f07867b20bdadac79cc082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386848"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Практическое руководство. Просмотр и изменение кода с помощью "Показать определение" (Alt + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60055735"
  Команду **Показать определение** можно применить при работе с кодом C#, Visual Basic и C++. В Visual Basic в разделе **Показать определение** отображается ссылка на **обозреватель объектов** для символов, которые не имеют метаданных определения (например, встроенных типов .NET Framework).  
   
 > [!IMPORTANT]
->  В версиях Express приложения Visual Studio 2013 данную команду использовать нельзя.  
+> В версиях Express приложения Visual Studio 2013 данную команду использовать нельзя.  
   
 ## <a name="working-with-peek-definition"></a>Работа с окном "Показать определение"  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60055735"
     |Переключение между окном редактора кода и окном определения|SHIFT+ESC|  
   
     > [!NOTE]
-    >  Для редактирования кода в окне **Показать определение** можно также использовать те же сочетания клавиш, что и в любом другом окне Visual Studio.  
+    > Для редактирования кода в окне **Показать определение** можно также использовать те же сочетания клавиш, что и в любом другом окне Visual Studio.  
   
 ## <a name="see-also"></a>См. также  
  [Советы по повышению производительности](../ide/productivity-tips-for-visual-studio.md)

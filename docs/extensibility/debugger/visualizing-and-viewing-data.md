@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], viewing data
 - debugging [Debugging SDK], visualizing data
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 852616ac77096a5b31078d64051f67f6cbb3ecb6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8b29d1135df370232324edec9d1bd4a23397b17e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683382"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348343"
 ---
 # <a name="visualizing-and-viewing-data"></a>Визуализация и просмотр данных
 Визуализаторов типов и пользовательских средств просмотра представить данные способом, который быстро применяется для разработчика. Средство оценки выражений (EE) можно поддерживать визуализаторов сторонних типов, а также предоставить свои собственные пользовательские средства просмотра.

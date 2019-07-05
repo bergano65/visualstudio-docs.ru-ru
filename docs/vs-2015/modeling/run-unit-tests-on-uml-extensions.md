@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cf83fdf92133284271ea696bccef31af1bd72dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079854"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701708"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Выполнение модульных тестов для расширений UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ namespace UnitTests
       // Find the ModelingProject and IModelStore:  
       foreach (Project project in ModelSolution.Projects)  
       {  
-        // http://msdn.microsoft.com/library/ee791691.aspx  
+        // https://msdn.microsoft.com/library/ee791691.aspx  
         ModelingProject = project as IModelingProject;  
         if (ModelingProject != null)  
         {  
@@ -382,6 +382,6 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  Это наименее рекомендуемый способ. Старые версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] включали служебную программу, которая автоматически создавала метод доступа для каждого открытого метода. Опыт показывает, что хотя это и удобно, но приводит к тому, что модульные тесты становятся сильно привязанными к внутренней структуре приложения, для тестирования которого они используются. В результате приходится делать лишнюю работу в случае изменения требований или архитектуры, так как тесты нужно изменять вместе с реализацией. Кроме того, любые ошибочные допущения в проекте реализации также встраиваются в тесты, что не позволяет им находить ошибки.  
   
 ## <a name="see-also"></a>См. также  
- [Anatomy of a Unit Test](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)  (Составляющие модульного теста)  
+ [Anatomy of a Unit Test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)  (Составляющие модульного теста)  
  [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML — быстрый ввод текста](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)

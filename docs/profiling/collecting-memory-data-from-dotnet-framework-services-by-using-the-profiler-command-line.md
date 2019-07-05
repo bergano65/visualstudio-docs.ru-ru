@@ -1,5 +1,5 @@
 ---
-title: Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика | Документы Майкрософт
+title: Командная строка Profiler. Получение данных об использовании памяти из служб .NET
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d39a81bbf504a36d65b86ffa35901eeaf1b0916b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831659"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747820"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Сбор данных об использовании памяти, полученных из служб .NET Framework, с помощью командной строки профилировщика
-В этом разделе описываются процедуры и параметры сбора данных о выделении памяти и времени существования для службы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] с использованием метода выборки в командной строке.
+В этом разделе описываются процедуры и параметры сбора данных о выделении памяти и времени существования для службы .NET Framework с использованием метода выборки в командной строке.
 
 ## <a name="common-tasks"></a>Типичные задачи
 

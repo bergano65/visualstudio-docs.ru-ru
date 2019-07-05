@@ -11,24 +11,24 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082962"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695934"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Создание пользовательского интерфейса с помощью Blend для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Blend для Visual Studio помогает разрабатывать классические, веб-приложения Windows, приложения [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) и [Магазина Windows](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) на основе XAML. Этот инструмент предоставляет те же основные возможности конструктора XAML, что и Visual Studio, а также визуальные конструкторы для дополнительных задач, таких как анимация и управление поведением.
+Blend для Visual Studio помогает разрабатывать классические, веб-приложения Windows, приложения [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) и [Магазина Windows](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx) на основе XAML. Этот инструмент предоставляет те же основные возможности конструктора XAML, что и Visual Studio, а также визуальные конструкторы для дополнительных задач, таких как анимация и управление поведением.
 
  Так как Blend для Visual Studio входит в состав Visual Studio, скачивать отдельно его не нужно. Однако требуется выбрать этот компонент в установщике Visual Studio, чтобы установить его на компьютере.
 
  Если вы не работали раньше с Blend для Visual Studio, ознакомьтесь с уникальными возможностями этого инструмента. В этом разделе содержится краткий обзор по теме.
 
 > [!NOTE]
->  Обзор общих возможностей конструктора, таких как область рисования, окно структуры документа и окно устройства, см. в разделе [Создание пользовательского интерфейса с помощью конструктора XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+> Обзор общих возможностей конструктора, таких как область рисования, окно структуры документа и окно устройства, см. в разделе [Создание пользовательского интерфейса с помощью конструктора XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
  **Содержание раздела**
 

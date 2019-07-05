@@ -9,11 +9,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 8292e22bac6063a36286930584e1d7c227913511
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949706"
 ---
 # <a name="finalstate-activity-designer"></a>Конструктор FinalState Activity
 
@@ -21,7 +21,7 @@ ms.locfileid: "55911641"
 
 ## <a name="using-the-finalstate-activity-designer"></a>Использование конструктора действий FinalState
 
-**FinalState** конструктор используется для создания <xref:System.Activities.Statements.State> , предварительно настраиваемого как завершающее состояние конечного автомата. Объект <xref:System.Activities.Statements.State> , созданного при помощи <xref:System.Activities.Core.Presentation.FinalState> имеет конструктор действия его <xref:System.Activities.Statements.State.IsFinal%2A> свойство значение **true**, не имеет <xref:System.Activities.Statements.State.Exit%2A> действия и не переходы, исходящие из него. Чтобы использовать <xref:System.Activities.Core.Presentation.FinalState> конструктора действий, чтобы добавить <xref:System.Activities.Statements.State> действие, которое предварительно настроенного как завершающее состояние конечного автомата, перетащите **FinalState** конструктор из **конечный автомат**раздел **элементов** и поместите его в конструктор рабочего процесса. Конструктор действий <xref:System.Activities.Core.Presentation.FinalState> можно перетащить в <xref:System.Activities.Statements.StateMachine> и переходы, добавленные позже. Переход также можно создать при сбросе конструктора действий <xref:System.Activities.Core.Presentation.FinalState> на поверхность. Дополнительные сведения о создании переходов см. в разделе [перехода](../workflow-designer/transition-activity-designer.md).
+**FinalState** конструктор используется для создания <xref:System.Activities.Statements.State> , предварительно настраиваемого как завершающее состояние конечного автомата. Объект <xref:System.Activities.Statements.State> , созданного при помощи <xref:System.Activities.Core.Presentation.FinalState> имеет конструктор действия его <xref:System.Activities.Statements.State.IsFinal%2A> свойство значение **true**, не имеет <xref:System.Activities.Statements.State.Exit%2A> действия и не переходы, исходящие из него. Чтобы использовать <xref:System.Activities.Core.Presentation.FinalState> конструктора действий, чтобы добавить <xref:System.Activities.Statements.State> действие, которое предварительно настроенного как завершающее состояние конечного автомата, перетащите **FinalState** конструктор из **конечный автомат**раздел **элементов** и поместите его в конструктор рабочего процесса. Конструктор действий <xref:System.Activities.Core.Presentation.FinalState> можно перетащить в <xref:System.Activities.Statements.StateMachine> и переходы, добавленные позже. Переход также можно создать при помещении конструктора действий <xref:System.Activities.Core.Presentation.FinalState> на поверхность. Дополнительные сведения о создании переходов см. в разделе [перехода](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Свойства действия состояния в конструкторе рабочих процессов
 

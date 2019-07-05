@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc42301901c6642a54dcb6b84de52a4acc198b4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e19b65ea4b3c4cd87b1f9d6a3db9e6f8ae64d16d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720423"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332245"
 ---
 # <a name="sccdirqueryinfo-function"></a>Функция SccDirQueryInfo
 Эта функция проверяет список полных каталогов для их текущее состояние.
@@ -66,7 +66,7 @@ LPLONG  lpStatus
  Интегрированная среда разработки использует эту функцию перед переименованием каталог для проверки, является ли каталог в системе управления версиями, запрашивая, имеет ли она соответствующего проекта. Если каталог не существует в системе управления версиями, интегрированной среды разработки можно указать правильное предупреждение для пользователя.
 
 > [!NOTE]
->  Если подключаемый модуль системы управления версиями решил не реализовывать один или несколько из указанных значений состояния, Нереализованная битов задается равным нулю.
+> Если подключаемый модуль системы управления версиями решил не реализовывать один или несколько из указанных значений состояния, Нереализованная битов задается равным нулю.
 
 ## <a name="see-also"></a>См. также
 - [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetPointerAddress
 - IDebugPointerObject3::GetPointerAddress
 ms.assetid: 4cc5af04-9e70-420d-8230-ef3108df6d51
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1066453c502d7935e43f1af467431f9b9a8f80b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 625230d6e04fe374c46e94a2e916df3eb025172a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706825"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343787"
 ---
 # <a name="idebugpointerobject3getpointeraddress"></a>IDebugPointerObject3::GetPointerAddress
 Извлекает адрес указателя.
@@ -35,10 +38,8 @@ int GetPointerAddress (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `puAddress`
-
- [out] Возвращает адрес указателя.
+## <a name="parameters"></a>Параметры
+`puAddress` [out] Возвращает адрес указателя.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FLAGS enumeration
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803d9569c611e3c4cd70f2c82ecd525716d8ddb3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8408481efbcaa67ce60d2dbfc9166b5dd0fd5223
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687501"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350030"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 Задает требуемые свойства должны быть получены от поставщика программы.
@@ -49,20 +52,27 @@ public enum enum_PROVIDER_FLAGS {
 };
 ```
 
-## <a name="members"></a>Участники
- Указаны флаги PFLAG_NONE нет.
+## <a name="fields"></a>Поля
+ `PFLAG_NONE`\
+ Флаги не указан.
 
- Список программ на разных компьютерах вызывающий PFLAG_REMOTE_PORT [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_REMOTE_PORT`\
+ Вызывающий объект хочет список программ на разных компьютерах [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- PFLAG_DEBUGGEE процесс находится в состоянии отладки данным экземпляром класса [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_DEBUGGEE`\
+ Процесс находится в состоянии отладки данным экземпляром класса [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- PFLAG_ATTACH_TODEBUGGEE [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] присоединяется к отлаживаемой программы, но не запускать его.
+ `PFLAG_ATTACH_TODEBUGGEE`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] присоединяется к отлаживаемой программы, но не запускать его.
 
- PFLAG_REASON_WATCH [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] наблюдении за событиями.
+ `PFLAG_REASON_WATCH`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] наблюдает за событиями.
 
- Вызывающий PFLAG_GET_PROGRAM_NODES `ProgramNodes` поле [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры.
+ `PFLAG_GET_PROGRAM_NODES`\
+ Вызывающий `ProgramNodes` поле [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) структуры.
 
- Вызывающий PFLAG_GET_IS_DEBUGGER_PRESENT `fIsTheDebuggerPresent` поле `PROVIDER_PROCESS_DATA` структуры.
+ `PFLAG_GET_IS_DEBUGGER_PRESENT`\
+ Вызывающий `fIsTheDebuggerPresent` поле `PROVIDER_PROCESS_DATA` структуры.
 
 ## <a name="remarks"></a>Примечания
  Эти флаги передаются следующие методы:

@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14da091149f44d185d783c071f67294b7d2431e6
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195025"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705787"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 JavaScript — полноправный язык в Visual Studio. При написании кода JavaScript в интегрированной среде разработки Visual Studio можно использовать большинство или все стандартные средства редактирования (фрагменты кода, IntelliSense и т. д.). Код JavaScript можно написать для многих типов приложений и служб.
 
- См. справочную документацию по языку [JavaScript](http://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).
+ См. справочную документацию по языку [JavaScript](https://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).
 
  Определенные версии Visual Studio или специальные расширения Visual Studio могут потребоваться для разработки конкретных типов приложений и служб с помощью HTML и JavaScript. В следующем списке приводятся ссылки на дополнительные сведения.
 
@@ -29,12 +29,12 @@ JavaScript — полноправный язык в Visual Studio. При нап
 
 - Для создания приложений для платформ [Магазин Windows](http://dev.windows.com/develop) и [Windows Phone](http://dev.windows.com/develop) (а также универсальных приложений с поддержкой двух этих платформ) [доступны эти средства](https://developer.microsoft.com/windows/downloads).
 
-- Для создания облачных служб посетите [сайт Microsoft Azure](http://azure.microsoft.com/documentation/).
+- Для создания облачных служб посетите [сайт Microsoft Azure](https://azure.microsoft.com/documentation/).
 
 - Для создания веб-сайтов и веб-приложений посетите [сайт ASP.NET](http://www.asp.net/get-started/websites).
 
   > [!NOTE]
-  >  Можно создать пустой веб-сайт ASP.NET и использовать его для программирования кода HTML, CSS и JavaScript. Файл Webconfig, предоставляемый ASP.NET, дает возможность выполнять отладку в Visual Studio (кроме того, при запуске приложения можно использовать инструменты F12).
+  > Можно создать пустой веб-сайт ASP.NET и использовать его для программирования кода HTML, CSS и JavaScript. Файл Webconfig, предоставляемый ASP.NET, дает возможность выполнять отладку в Visual Studio (кроме того, при запуске приложения можно использовать инструменты F12).
 
   Редактор JavaScript в Visual Studio обеспечивает поддержку IntelliSense. См. дополнительные сведения об [IntelliSense для JavaScript](../ide/javascript-intellisense.md).
 
@@ -45,7 +45,7 @@ JavaScript — полноправный язык в Visual Studio. При нап
 |-------------|-----------------|
 |Классы|Новый синтаксис поддерживает объявление [классов](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Обещания|[Обещания](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) упрощают создание асинхронного и более чистого кода. Конструкторы обещаний поддерживаются вместе со служебными методами `all` и `race`.|
-|Итераторы|Теперь можно выполнить итерацию поддерживающих итерацию объектов (включая массивы, объекты, похожие на массивы, и итераторы), вызывая пользовательский обработчик итераций с операторами, которые должны быть исполнены для значения каждого свойства по отдельности. См. дополнительные сведения см. об [итераторах и генераторах](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Примечание.** Генераторы пока не поддерживаются.|
+|Итераторы|Теперь можно выполнить итерацию поддерживающих итерацию объектов (включая массивы, объекты, похожие на массивы, и итераторы), вызывая пользовательский обработчик итераций с операторами, которые должны быть исполнены для значения каждого свойства по отдельности. См. дополнительные сведения см. об [итераторах и генераторах](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Примечание.**  Генераторы пока не поддерживаются.|
 |Функции со стрелкой|Функция со стрелкой (=>) предоставляет сокращенный синтаксис для ключевого слова `function` с лексической привязкой `this`.|
 |Новые методы для встроенных объектов|Встроенные объекты [Array Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) и [String Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) предоставляют множество новых служебных функций и свойств для обработки и инспектирования данных.|
 |Усовершенствования объектного литерала|Объекты теперь поддерживают вычисляемые свойства, точные определения методов и сокращенный синтаксис для свойств, значения которых инициализируются в переменную с таким же именем. См. дополнительные сведения о [создании объектов](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|

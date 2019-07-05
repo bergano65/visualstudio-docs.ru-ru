@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Использование файла конфигурации для определения источника данных
+title: Использование файла конфигурации для определения источника данных
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976209"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746765"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
 
@@ -62,16 +62,16 @@ ms.locfileid: "62976209"
 
 2. В элементе **configSections** создайте элемент **section**.
 
-3. В элементе **section** добавьте атрибут с именем `name` и задайте для него значение `microsoft.visualstudio.testtools`. Добавьте еще один атрибут с именем `type` и задайте для него значение `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. В элементе **section** добавьте атрибут с именем `name` и задайте для него значение `microsoft.visualstudio.testtools`. Добавьте еще один атрибут с именем `type` и задайте для него значение `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`.
 
 Элемент **section** должен принять следующий вид:
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> Имя сборки должно соответствовать сборке .NET Framework Microsoft Visual Studio, которую вы используете. При использовании .NET Framework 3.5 Visual Studio задайте в качестве значения версии 9.0.0.0. Если вы используете .NET Framework 2.0 Visual Studio, задайте версию 8.0.0.0.
+> Имя сборки должно соответствовать версии, которую вы используете.
 
 ## <a name="define-connection-strings"></a>Определение строк подключения
 

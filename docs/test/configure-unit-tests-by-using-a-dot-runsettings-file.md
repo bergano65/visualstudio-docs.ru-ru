@@ -1,22 +1,22 @@
 ---
 title: Настройка модульных тестов с помощью RUNSETTINGS-файла
-ms.date: 02/28/2018
+ms.date: 06/14/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e09d1cb2e57955f3177fff4e5b54c78eadcd659e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539175"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160197"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
-Модульные тесты в Visual Studio можно настроить с помощью файла *.runsettings*. Например, можно изменить версию платформы .NET Framework, на которой выполняются тесты, каталог для результатов теста и данные, собранные во время тестового запуска.
+Модульные тесты в Visual Studio можно настроить с помощью файла *.runsettings*. Например, можно изменить версию платформы .NET, на которой выполняются тесты, каталог для результатов теста и данные, собранные во время тестового запуска.
 
 Файлы параметров запуска являются необязательными. Если вам не требуется специальная конфигурация, файл *.runsettings* не нужен. Чаще всего файл *.runsettings* используют для настройки [анализа объема протестированного кода](../test/customizing-code-coverage-analysis.md).
 
@@ -24,13 +24,15 @@ ms.locfileid: "62539175"
 
 Файлы параметров запуска можно использовать для настройки тестов, которые запускаются из [командной строки](vstest-console-options.md), в интегрированной среде разработки или в [рабочем процессе сборки](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) с помощью Azure Test Plans или Team Foundation Server (TFS).
 
-### <a name="specify-a-run-settings-file-in-the-ide"></a>Указание файла параметров запуска в интегрированной среде разработки
+### <a name="ide"></a>IDE
 
-Последовательно выберите **Тест** > **Параметры тестирования** > **Выбрать файл параметров тестирования**, а затем файл *.runsettings*. В меню **Параметры тестирования** появится файл, который можно выбрать или отменить. Если файл параметров запуска выбран, он применяется при каждом выборе функции **Анализ объема протестированного кода**.
+Чтобы указать файл параметров запуска в интегрированной среде разработки, выберите **Тест** > **Параметры тестирования** > **Выбрать файл параметров тестирования**, а затем файл *.runsettings*.
 
 ![Выбор файла параметров тестирования в Visual Studio](media/select-test-settings-file.png)
 
-### <a name="specify-a-run-settings-file-at-the-command-line"></a>Указание файла параметров тестирования в командной строке
+В меню **Параметры тестирования** появится файл, который можно выбрать или отменить. Если файл параметров запуска выбран, он применяется при каждом выборе функции **Анализ объема протестированного кода**.
+
+### <a name="command-line"></a>Командная строка
 
 Для запуска тестов из командной строки используйте *vstest.console.exe* и укажите файл параметров с помощью параметра **/Settings**.
 
@@ -52,6 +54,12 @@ ms.locfileid: "62539175"
 
    ```cmd
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
+   ```
+
+   или
+
+   ```cmd
+   vstest.console.exe --settings:test.runsettings test.dll
    ```
 
 Дополнительные сведения см. в статье [Параметры командной строки для VSTest.Console.exe](vstest-console-options.md).
@@ -82,7 +90,7 @@ ms.locfileid: "62539175"
   <!-- Configurations that affect the Test Framework -->
   <RunConfiguration>
     <MaxCpuCount>1</MaxCpuCount>
-    <!-- Path relative to solution directory -->
+    <!-- Path relative to directory that contains .runsettings file-->
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
@@ -174,7 +182,7 @@ ms.locfileid: "62539175"
 |Узел|По умолчанию|Значения|
 |-|-|-|
 |**ResultsDirectory**||Каталог для сохранения результатов тестов.|
-|**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Этот параметр указывает, какая версия платформы модульных тестов используется для поиска и выполнения тестов. Эта версия может отличаться от версии платформы .NET, указанной в свойствах сборки проекта модульного теста.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` для источников .NET Core, `FrameworkUap10` для источников на основе UWP, `Framework45` для .NET Framework 4.5 и более поздней версии, `Framework40` для .NET Framework 4.0 и `Framework35` для .NET Framework 3.5.<br /><br />Этот параметр указывает, какая версия платформы модульных тестов используется для поиска и выполнения тестов. Эта версия может отличаться от версии платформы .NET, указанной в свойствах сборки проекта модульного теста.<br /><br />Если опустить элемент `TargetFrameworkVersion` в файле *.runsettings*, платформа автоматически определит версию .NET на основе двоичных файлов сборки.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|False|false, true|
 |**TestAdaptersPaths**||Один или несколько путей к каталогу, где находятся адаптеры TestAdapters|
@@ -263,5 +271,6 @@ public void HomePageTest()
 
 ## <a name="see-also"></a>См. также
 
+- [Настройка тестового запуска](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Настройка анализа объема протестированного кода](../test/customizing-code-coverage-analysis.md)
 - [Задача теста Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

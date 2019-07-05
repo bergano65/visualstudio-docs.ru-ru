@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26b917b04314c99ba6575842b8e102113b22b469
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8204b13aa0405d01590e4aeb0fe43a92b41c226f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431264"
 ---
 # <a name="how-to-add-an-updater-method"></a>Практическое руководство. Добавление метода Updater
   Можно разрешить пользователям обновлять бизнес-данные во внешнем списке SharePoint, создав *Updater* метод. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -50,7 +50,7 @@ ms.locfileid: "56596963"
      Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
 
    > [!NOTE]
-   >  Если идентификатор типа сущности представляет поле в таблицу базы данных, который создается автоматически, задайте **поле средства предобновления** свойства **True**.
+   > Если идентификатор типа сущности представляет поле в таблицу базы данных, который создается автоматически, задайте **поле средства предобновления** свойства **True**.
 
 4. В **обозревателе решений**, откройте контекстное меню файла кода службы, созданный для сущности и затем выберите **Просмотр кода**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "56596963"
 5. Добавьте код к методу Update для обновления данных. В следующем примере обновляется сведения для контакта в образце базы данных AdventureWorks для SQL Server.
 
    > [!NOTE]
-   >  Замените значение `ServerName` поле с именем сервера.
+   > Замените значение `ServerName` поле с именем сервера.
 
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]

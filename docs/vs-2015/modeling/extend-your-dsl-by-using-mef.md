@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5685adb5a10ddc109ec8a4695e1dbfae6d30a6df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: be514104ebc3cd908cd9469c6b674a22f9dad401
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114253"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696188"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Расширение доменного языка с помощью MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60114253"
   
  Кроме того при включении MEF в DSL, он может быть проще писать некоторые функции вашего DSL, даже если все они создаются вместе с DSL.  
   
- Дополнительные сведения о MEF см. в разделе [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+ Дополнительные сведения о MEF см. в разделе [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Чтобы включить вашего DSL, который необходимо расширить платформой MEF  
   
@@ -32,7 +32,7 @@ ms.locfileid: "60114253"
     Имя файла: `CommandExtensionVSCT.tt`  
   
    > [!IMPORTANT]
-   >  Задайте идентификатор GUID в этом файле, чтобы совпадал с CommandSetId GUID, который определен в DslPackage\GeneratedCode\Constants.tt  
+   > Задайте идентификатор GUID в этом файле, чтобы совпадал с CommandSetId GUID, который определен в DslPackage\GeneratedCode\Constants.tt  
   
    ```  
    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -131,7 +131,7 @@ ms.locfileid: "60114253"
   
    - Эта сборка обычно имеет имя, которое заканчивается на «. DSL.dll».  
   
-   - Если у вас есть доступ к проекту DSL, можно найти файл сборки в каталоге **Dsl\bin\\\\***  
+   - Если у вас есть доступ к проекту DSL, можно найти файл сборки в каталоге **Dsl\bin\\\\** *  
   
    - Если у вас есть доступ к DSL VSIX-файлу, вы можете найти сборку, изменив расширение VSIX-файл на «ZIP». Распакуйте ZIP-файл.  
   
@@ -147,7 +147,7 @@ ms.locfileid: "60114253"
   
    - System.Windows.Forms.dll  
   
-4. Создайте проект VSIX в одном решении. Для этого в **новый проект** диалогового окна последовательно раскройте элементы **Visual Basic** или **Visual C#**, нажмите кнопку **расширяемости**, а затем выберите  **Проект VSIX**.  
+4. Создайте проект VSIX в одном решении. Для этого в **новый проект** диалогового окна последовательно раскройте элементы **Visual Basic** или **Visual C#** , нажмите кнопку **расширяемости**, а затем выберите  **Проект VSIX**.  
   
 5. В обозревателе решений щелкните правой кнопкой мыши проект VSIX и нажмите кнопку **Назначить запускаемым проектом**.  
   
@@ -247,7 +247,7 @@ namespace MyMefExtension
 ### <a name="gesture-handlers"></a>Обработчики жестов  
  Обработчик жестов умеет работать с объектами при перетаскивании на схему, в любом месте внутри или за пределами [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Следующий пример позволяет пользователю перетаскивать файлы из проводника Windows в схеме. Он создает элементы, которые содержат имена файлов.  
   
- Вы можете написать обработчики для обработки перетаскивания с другими моделями DSL и UML-модели. Дополнительные сведения см. в разделе [Как Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+ Вы можете написать обработчики для обработки перетаскивания с другими моделями DSL и UML-модели. Дополнительные сведения см. в разделе [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ```  
   
@@ -376,6 +376,6 @@ namespace MefExtension
   
 ## <a name="see-also"></a>См. также  
  [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
- [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
+ [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
  [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md)

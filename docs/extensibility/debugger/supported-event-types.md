@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d74448479fc71af493ef720586541d92d614b24f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9c4ee45e1a3a7efeb990fcb6f9073420a99dbe7c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696302"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351093"
 ---
 # <a name="supported-event-types"></a>Поддерживаемые типы событий
 Отладка в Visual Studio в настоящее время поддерживает следующие типы событий:
@@ -43,7 +43,7 @@ ms.locfileid: "56696302"
     Интерфейсы [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) и [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) являются примерами событий остановки.
 
   > [!NOTE]
-  >  Остановка асинхронных событий не поддерживаются. Это ошибка для отправки события асинхронной остановки.
+  > Остановка асинхронных событий не поддерживаются. Это ошибка для отправки события асинхронной остановки.
 
 ## <a name="discussion"></a>Обсуждение
  Фактическую реализацию событий зависит от структуры вашей DE. Тип каждое событие, отправленное определяется его атрибутов, которые настраиваются при создании DE. Например, может отправить один DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) как событие асинхронной, то время как другой может отправлять как событие остановки.
@@ -51,7 +51,7 @@ ms.locfileid: "56696302"
  В следующей таблице указано, какие программы и поток параметры являются обязательными для какие события, а также типы событий. Любое событие может быть синхронным. Событие не должен быть синхронными.
 
 > [!NOTE]
->  [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) он необходим для всех событий.
+> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) он необходим для всех событий.
 
 |событие|IDebugProgram2|IDebugThread2|События остановки|
 |-----------|--------------------|-------------------|---------------------|
@@ -62,8 +62,8 @@ ms.locfileid: "56696302"
 |[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Нет|
 |[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|Обязательно|Обязательно|Да|
 |[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|Обязательно|Обязательно|Нет|
-|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|Не допускается|Не допускается|Нет|
-|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|Не допускается|Не допускается|Нет|
+|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|Нельзя использовать|Нельзя использовать|Нет|
+|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|Нельзя использовать|Нельзя использовать|Нет|
 |[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|Обязательно|Обязательно|Да|
 |[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Может быть|
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|Обязательно|Обязательно|Да|

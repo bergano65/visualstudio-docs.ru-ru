@@ -3,17 +3,17 @@ title: Отложенная загрузка документов | Докуме
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a3520b2bf1d6111e945f037502a589feed0d80a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 42c8e7acb934c66baf804639e35deba59a9a8c81
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335328"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312145"
 ---
 # <a name="delayed-document-loading"></a>Отложенная загрузка документов
 
@@ -65,4 +65,4 @@ ms.locfileid: "56335328"
 
 Нет не обозначена указать документ был ли инициализирован, чтобы он может быть трудно узнать, если расширение после инициализации. Можно задать раздел реестра, который упрощает проверку подлинности, так как вызывает Заголовок каждого документа, который не был инициализирован полностью текста *[заглушка]* в заголовке.
 
-В **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad**, задайте **StubTabTitleFormatString** для  *{0} [заглушка]*.
+В **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad**, задайте **StubTabTitleFormatString** для  *{0} [заглушка]* .

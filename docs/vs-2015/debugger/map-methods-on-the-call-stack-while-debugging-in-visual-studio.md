@@ -28,14 +28,14 @@ helpviewer_keywords:
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
 caps.latest.revision: 43
 author: MikeJo5000
-ms.author: mikejo
+ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5afc30707a2bffdfe6286289e5e93ca9321a4957
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b55c677f4ba241260f1ebebc024a150dcd23eb19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432170"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Сопоставление методов в визуализации стека вызовов при отладке в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ ms.locfileid: "60092959"
  ![Отображение полей в методе на карте кода со стеком вызовов](../debugger/media/debuggermap-showfields.png "DebuggerMap_ShowFields")
 
 > [!NOTE]
->  По умолчанию при добавлении элементов в сопоставление также добавляются узлы родительской группы, соответствующие, например, классу, пространству имен или сборке. Хотя эта возможность полезна, вы можете постоянно карты простой, отключение этой функции через **включить родительские элементы** кнопки на панели инструментов карты или нажимая клавиши **CTRL** при добавлении элементов.
+> По умолчанию при добавлении элементов в сопоставление также добавляются узлы родительской группы, соответствующие, например, классу, пространству имен или сборке. Хотя эта возможность полезна, вы можете постоянно карты простой, отключение этой функции через **включить родительские элементы** кнопки на панели инструментов карты или нажимая клавиши **CTRL** при добавлении элементов.
 
  ![Поля, связанные с методом на карте кода со стеком вызовов](../debugger/media/debuggermap-showedfields.png "DebuggerMap_ShowedFields")
 

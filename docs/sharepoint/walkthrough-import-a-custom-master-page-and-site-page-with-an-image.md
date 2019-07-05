@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Импорт пользовательской главной страницы и страницы с изображением сайта | Документация Майкрософт
+title: Импорт пользовательской главной страницы и страницы сайта с изображением
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bd2d9054571e52bc9fbb3906bc1880bb94e407a
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834391"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400900"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Пошаговое руководство. Импорт пользовательской главной страницы и страницы сайта с изображением
   В этом пошаговом руководстве показано, как импортировать настраиваемую эталонную страницу и страницу сайта с изображением в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint.
@@ -27,7 +27,7 @@ ms.locfileid: "62834391"
 
 - Создайте пользовательскую главную страницу и страницу сайта, используя образ в SharePoint Designer.
 
-- Экспорт пользовательской главной страницы, изображения и страницы сайта в решение SharePoint (*.wsp*) файла.
+- Экспорт пользовательской главной страницы, изображения и страницы сайта в решение SharePoint ( *.wsp*) файла.
 
 - Импорт и развертывание *.wsp* файл в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проекта SharePoint с помощью проекта Импорт пакета решения SharePoint.
 
@@ -127,7 +127,7 @@ ms.locfileid: "62834391"
 6. Сохраните страницу обновленного сайта.
 
 ## <a name="export-the-items-from-sharepoint"></a>Экспорт элементов из SharePoint
- Экспорт элементов из SharePoint в решение SharePoint (*.wsp*) файла.
+ Экспорт элементов из SharePoint в решение SharePoint ( *.wsp*) файла.
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>Для экспорта элементов из SharePoint Designer
 

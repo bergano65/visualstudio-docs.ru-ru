@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetParent
 ms.assetid: 58780469-fe25-4d84-9187-67940ca0767f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30fa28ba52d40698447c6607be4b694466bb6127
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1cd550cf602ca1333477a699a32e501961c74821
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680156"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342988"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 Возвращает свойство родительского свойства.
@@ -36,10 +39,9 @@ int GetParent ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppParent`
-
- [out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объект, представляющий родительский объект свойства.
+## <a name="parameters"></a>Параметры
+`ppParent`\
+[out] Возвращает [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) объект, представляющий родительский объект свойства.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `S_GETPARENT_NO_PARENT` Если родительский элемент отсутствует.

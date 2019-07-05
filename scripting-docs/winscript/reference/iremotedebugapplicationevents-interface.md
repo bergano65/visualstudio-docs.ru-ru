@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 052a408d6e92066c14617f46f722d3e603985195
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943808"
 ---
 # <a name="iremotedebugapplicationevents-interface"></a>Интерфейс IRemoteDebugApplicationEvents
 `IRemoteDebugApplicationEvents` Это интерфейс событий, предоставленные приложением отладки. Этот интерфейс всегда вызывается из потока отладчика.  
@@ -27,7 +27,7 @@ ms.locfileid: "58150989"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IRemoteDebugApplicationEvents::OnConnectDebugger](../../winscript/reference/iremotedebugapplicationevents-onconnectdebugger.md)|Мероприятие connect обрабатывает отладчика.|  
 |[IRemoteDebugApplicationEvents::OnDisconnectDebugger](../../winscript/reference/iremotedebugapplicationevents-ondisconnectdebugger.md)|Отладчик обрабатывает события отключения.|  

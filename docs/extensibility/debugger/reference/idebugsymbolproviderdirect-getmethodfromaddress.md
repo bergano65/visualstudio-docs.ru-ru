@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetMethodFromAddress
 - GetMethodFromAddress
 ms.assetid: 33ffd197-1221-41bc-a9f6-f133ebdcb783
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0eecc7331bc510366cd012e30cc1088ef6c60da
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 89a110886837c793d45842db6ed80690626dd9d6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683471"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335169"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 Извлекает сведения о методе по адресу указанного отладки.
@@ -47,34 +50,27 @@ int GetMethodFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pAddress`
+## <a name="parameters"></a>Параметры
+`pAddress`\
+[in] Отладка адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
 
- [in] Отладка адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
+`pGuid`\
+[out] Уникальный идентификатор модуля.
 
- `pGuid`
+`pAppID`\
+[out] Идентификатор домена приложения.
 
- [out] Уникальный идентификатор модуля.
+`pTokenClass`\
+[out] Токен, представляющий содержащего класса.
 
- `pAppID`
+`pTokenMethod`\
+[out] Токен, представляющий модуль.
 
- [out] Идентификатор домена приложения.
+`pdwOffset`\
+[out] Смещение в байтах от начала `pAddress` параметра.
 
- `pTokenClass`
-
- [out] Токен, представляющий содержащего класса.
-
- `pTokenMethod`
-
- [out] Токен, представляющий модуль.
-
- `pdwOffset`
-
- [out] Смещение в байтах от начала `pAddress` параметра.
-
- `pdwVersion`
-
- [out] Номер версии метода.
+`pdwVersion`\
+[out] Номер версии метода.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

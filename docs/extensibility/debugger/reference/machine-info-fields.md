@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO_FIELDS enumeration
 ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a22a1868a47fd4b54b19cf224f995897775b4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 79bd733d987511a624235c06b5dbe83206e0c5bd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708411"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339348"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 Указывает, какого рода информацию необходимо вернуть для конкретного компьютера.
@@ -41,12 +44,15 @@ public enum enum_MACHINE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Участники
- MCIF_NAME Initialize и использование `bstrName` в структуре.
+## <a name="fields"></a>Поля
+ `MCIF_NAME`\
+ Инициализация и использование `bstrName` в структуре.
 
- MCIF_FLAGS Initialize и использование `Flags` в структуре.
+ `MCIF_FLAGS`\
+ Инициализация и использование `Flags` в структуре.
 
- MIF_ALL Initialize/использовать все поля в структуре.
+ `MIF_ALL`\
+ Инициализировать или использовать все поля в структуре.
 
 ## <a name="remarks"></a>Примечания
  Эти значения передаются [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) метод, чтобы указать, какие элементы [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) структуры должны быть инициализированы.

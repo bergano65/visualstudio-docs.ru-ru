@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117555"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702693"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Практическое руководство. отладку в высокопроизводительном кластере
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60117555"
   
  При отладке на кластере высокой производительности можно использовать все окна отладки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и методы, которые доступны для удаленной отладки. Однако, так как отладка происходит удаленно, то внешнее окно консоли не доступно.  
   
- Окна **Потоки** и **Процессы** особенно полезны для отладки параллельных приложений. Советы по использованию этих окон см. в разделе [как: Использование окна процессов](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) и [как: Использование окна потоков](../debugger/how-to-use-the-threads-window.md).  
+ Окна **Потоки** и **Процессы** особенно полезны для отладки параллельных приложений. Советы по использованию этих окон см. в разделе [как: Использование окна процессов](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) и [как: Использование окна потоков](../debugger/how-to-use-the-threads-window.md).  
   
  Следующие процедуры показывают некоторые методы, которые особенно полезны для отладки на кластере высокой производительности.  
   
@@ -103,7 +103,7 @@ ms.locfileid: "60117555"
 ## <a name="see-also"></a>См. также  
  [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Удаленная отладка](../debugger/remote-debugging.md)   
- [Практическое руководство. Использование окна процессов](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Практическое руководство. Использование окна процессов](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
  [Практическое руководство. Использование окна потоков](../debugger/how-to-use-the-threads-window.md)   
- [Потоков и процессов](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Потоков и процессов](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Использование точек останова](../debugger/using-breakpoints.md)

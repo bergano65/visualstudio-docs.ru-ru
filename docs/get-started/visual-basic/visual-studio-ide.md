@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38cf992612126e8d24f05b23efd8af7fff4b4a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dfcc4a01dfd5e9b63dc16afa0c2b3286419c193
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966686"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820653"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Введение в интегрированную среду разработки Visual Studio (Visual Basic)
 
@@ -30,7 +30,7 @@ ms.locfileid: "62966686"
 
 ::: moniker range=">=vs-2019"
 
-[![](media/vs-2019/ide-overview.png "Интегрированная среда разработки Visual Studio")](media/vs-2019/ide-overview.png#lightbox)
+[![Интегрированная среда разработки Visual Studio 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -283,7 +283,7 @@ ms.locfileid: "62966686"
 
    В диалоговом окне **Создать проект** отображается несколько *шаблонов проекта*. Шаблон содержит основные файлы и параметры, необходимые для данного типа проекта.
 
-1. В меню **Visual Basic** выберите категорию **.NET Core**, а затем — шаблон **Консольное приложение (.NET Core)**. В текстовом поле **Имя** введите **HelloWorld**, а затем нажмите кнопку **ОК**.
+1. В меню **Visual Basic** выберите категорию **.NET Core**, а затем — шаблон **Консольное приложение (.NET Core)** . В текстовом поле **Имя** введите **HelloWorld**, а затем нажмите кнопку **ОК**.
 
    ![Шаблон приложения .NET Core](media/overview-npd.png)
 
@@ -306,7 +306,7 @@ ms.locfileid: "62966686"
 
    ![Параметры меню "Отладка" -> "Запустить без отладки"](../media/overview-start-without-debugging.png)
 
-   Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!**. Теперь у вас есть выполняемое приложение.
+   Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!** . Теперь у вас есть выполняемое приложение.
 
    ![Окно консоли](../media/overview-console-window.png)
 
@@ -373,7 +373,7 @@ ms.locfileid: "62966686"
 
    ![Параметры меню "Отладка" -> "Запустить без отладки"](media/vs-2019/start-without-debugging.png)
 
-   Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!**. Теперь у вас есть выполняемое приложение.
+   Когда Visual Studio создаст приложение, откроется окно консоли с сообщением **Hello World!** . Теперь у вас есть выполняемое приложение.
 
    ![Окно консоли](../media/vs-2019/overview-console-window.png)
 

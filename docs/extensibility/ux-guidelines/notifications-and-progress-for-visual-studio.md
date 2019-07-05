@@ -3,17 +3,17 @@ title: Уведомления и ход выполнения для Visual Studi
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc5ddb4561c2c353271babe590a9e5b2b3c2e510
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c5ca3f02c37a76e31ad76f6875110487dffefd49
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044294"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310888"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Уведомления и ход выполнения для Visual Studio
 ## <a name="BKMK_NotificationSystems"></a> Системы отправки уведомлений
@@ -417,7 +417,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 - На вкладке документа
 
 > [!IMPORTANT]
->  Его можно разместить на информационную панель, чтобы предоставить сообщение о глобальном контексте. Это будет отображаться между панелями элементов и в контейнере документа. Это не рекомендуется, так как это вызывает проблемы с «переход и jerk» интегрированной среды разработки и следует избегать, если только абсолютно необходимые и соответствующие.
+> Его можно разместить на информационную панель, чтобы предоставить сообщение о глобальном контексте. Это будет отображаться между панелями элементов и в контейнере документа. Это не рекомендуется, так как это вызывает проблемы с «переход и jerk» интегрированной среды разработки и следует избегать, если только абсолютно необходимые и соответствующие.
 
 #### <a name="placing-an-infobar-in-a-toolwindowpane"></a>Размещение на информационную панель в ToolWindowPane
  Метод ToolWindowPane.AddInfoBar(IVsInfoBar) можно добавить на информационную панель в окно инструментов. Этот API можно либо добавить IVsInfoBar (какие InfoBarModel является реализация по умолчанию), или IVsUIElement.

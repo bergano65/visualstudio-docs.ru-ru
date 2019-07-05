@@ -1,9 +1,10 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 8f06aa39acd1bbd0dff9da3df6549cc001f3e9a2
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: be2cebf6b18ffa4a8702c2932fa8079828ff22f2
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253933"
 ---
 Test Manager

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d58234dbe503f8d086e081464c2e38f759a75e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1d5fdffa76f273bc8ff7b7bdf18ce9db99a9052e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067096"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323413"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Пошаговое руководство. Создание языковой службы прежних версий
 С помощью управляемых пакетов (MPF) языка классов framework для реализации службы языка в [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] прост. Вам потребуется VSPackage для размещения службы языка, сама служба языка и средство синтаксического анализа для вашего языка.

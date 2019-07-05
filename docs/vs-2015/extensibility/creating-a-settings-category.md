@@ -10,17 +10,17 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 04151a6fd3b934dd39e795cafc375974ac5a6b33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d14e60ec28fb5f8ba80f9986c4316058539b35e6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043670"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695026"
 ---
 # <a name="creating-a-settings-category"></a>Создание категории параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В этом пошаговом руководстве вы создать категорию параметров Visual Studio и использовать его для сохранения значений и восстановить значения из файла параметров. Категория параметров — это группа связанных свойств, которые отображаются в виде «точки настраиваемых параметров;» то есть как флажок в **Импорт и экспорт параметров** мастера. (Его можно найти на **средства** меню.) Параметры будут сохранены или восстановлены как категория, и отдельные параметры не отображаются в мастере. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+В этом пошаговом руководстве вы создать категорию параметров Visual Studio и использовать его для сохранения значений и восстановить значения из файла параметров. Категория параметров — это группа связанных свойств, которые отображаются в виде «точки настраиваемых параметров;» то есть как флажок в **Импорт и экспорт параметров** мастера. (Его можно найти на **средства** меню.) Параметры будут сохранены или восстановлены как категория, и отдельные параметры не отображаются в мастере. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Создание категории параметров, производный от класса <xref:Microsoft.VisualStudio.Shell.DialogPage> класса.  
   
@@ -47,7 +47,7 @@ ms.locfileid: "60043670"
      Это создает ресурсы, это имя категории «My Category» объекта «My Settings» и описание категории «OptionInteger и OptionFloat».  
   
     > [!NOTE]
-    >  Из этих трех только имя категории не отображается в мастере импорта и экспорта параметров.  
+    > Из этих трех только имя категории не отображается в мастере импорта и экспорта параметров.  
   
 3. Добавьте в MyToolsOptionsPackage.cs, `float` свойство с именем `OptionFloat` для `OptionPageGrid` класса, как показано в следующем примере.  
   
@@ -77,7 +77,7 @@ ms.locfileid: "60043670"
     ```  
   
     > [!NOTE]
-    >  `OptionPageGrid` Категорию с именем «My Category» теперь состоит из двух свойств, `OptionInteger` и `OptionFloat`.  
+    > `OptionPageGrid` Категорию с именем «My Category» теперь состоит из двух свойств, `OptionInteger` и `OptionFloat`.  
   
 4. Добавить <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> для `MyToolsOptionsPackage` класса и присвойте ему CategoryName «My Category», присвойте ему ObjectName «My Settings» и присвоено значение true, isToolsOptionPage. Значение categoryResourceID, objectNameResourceID и DescriptionResourceID соответствующий строковый ресурс, идентификаторы созданные ранее.  
   

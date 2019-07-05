@@ -3,17 +3,17 @@ title: Практическое руководство. Предоставляе
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9a03c4282fb7c2719f0f408759be972ead0f866
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9628a3e352d2662fe150ec7ef4cda7c79a2fdffa
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110301"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365678"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Практическое руководство. Предоставить асинхронной службы Visual Studio
 Если вы хотите получить службы без блокировки потока пользовательского интерфейса, необходимо создать асинхронный и загрузить пакет в фоновом потоке. Для этой цели можно использовать <xref:Microsoft.VisualStudio.Shell.AsyncPackage> вместо <xref:Microsoft.VisualStudio.Shell.Package>, добавьте службу с помощью специальных асинхронных методов асинхронной пакета.
@@ -74,7 +74,7 @@ ms.locfileid: "60110301"
             await TaskScheduler.Default;
             // do background operations that involve IO or other async methods
 
-            await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
+            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
             // query Visual Studio services on main thread unless they are documented as free threaded explicitly.
             // The reason for this is the final cast to service interface (such as IVsShell) may involve COM operations to add/release references.
 
@@ -157,13 +157,13 @@ public sealed class TestAsyncPackage : AsyncPackage
         this.AddService(typeof(STextWriterService), CreateTextWriterService);
 
         ITextWriterService textService = await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;
-
-        await textService.WriteLineAsync(<userpath>), "this is a test");
+        string userpath = @"C:\MyDir\MyFile.txt";
+        await textService.WriteLineAsync(userpath, "this is a test");
     }
 
     ```
 
-     Не забудьте изменить  *\<userpath >* имя файла и путь, который лучше всего подходит на вашем компьютере!
+     Не забудьте изменить `userpath` имя файла и путь, который лучше всего подходит на вашем компьютере!
 
 2. Постройте и запустите код. Когда появится в экспериментальном экземпляре Visual Studio, откройте решение. В результате `AsyncPackage` Настройка автоматической загрузки. При запуске инициализатора следует найти файл в указанном расположении.
 
@@ -189,8 +189,9 @@ public sealed class TestAsyncPackage : AsyncPackage
 
         ITextWriterService textService =
            await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;
-
-        await textService.WriteLineAsync((<userpath>, "this is a test");
+        
+        string userpath = @"C:\MyDir\MyFile.txt";
+        await textService.WriteLineAsync(userpath, "this is a test");
 
         await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
         TestAsyncCommand.Initialize(this);
@@ -218,8 +219,8 @@ public sealed class TestAsyncPackage : AsyncPackage
            await AsyncServiceProvider.GlobalProvider.GetServiceAsync(typeof(STextWriterService))
               as ITextWriterService;
 
-        // don't forget to change <userpath> to a local path
-        await textService.WriteLineAsync((<userpath>),"this is a test");
+        string userpath = @"C:\MyDir\MyFile.txt";
+        await textService.WriteLineAsync(userpath, "this is a test");
        }
 
     ```

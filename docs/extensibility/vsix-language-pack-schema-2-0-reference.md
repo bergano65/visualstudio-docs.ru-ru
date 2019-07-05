@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - dagriffe
 ms.openlocfilehash: acea36031b98693e1d618986720d9932f76a0a63
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953105"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Справочник по схеме 2.0 VSIX языкового пакета
 
@@ -32,7 +32,7 @@ ms.locfileid: "56702529"
 
 В рамках `<PackageLanguagePackManifest>` элемент, должен существовать следующий элемент:
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |`<Metadata>`| Элемент-контейнер для всех метаданных локализованного пакета
 
@@ -40,7 +40,7 @@ ms.locfileid: "56702529"
 
 В рамках `<Metadata>` элемент может иметь следующие элементы:
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |`<DisplayName>`|Локализованное имя модуля для установки|
 |`<Description>`|Локализованное описание устанавливаемое расширение|
@@ -67,7 +67,7 @@ ms.locfileid: "56702529"
 
 ## <a name="see-also"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Локализация пакетов VSIX](../extensibility/localizing-vsix-packages.md)|Показан способ предоставления поддержки локализованной установки для пакета VSIX.|
 |[Справочник по схеме 2.0 расширения VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)|Манифест VSIX описывает содержимое *.vsix* файл развертывания. Файл развертывания позволяет установить это расширение Visual Studio с помощью **расширения и обновления** диалоговое окно.|

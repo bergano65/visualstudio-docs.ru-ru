@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a43fb3a22ecb2d04542eacf07bf883590868b75b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091529"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685306"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Практическое руководство. Доступ к встроенной шрифтов и цветовой схемы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "60091529"
     Этот GUID используется для уникальной идентификации категорию<strong>.</strong> Повторно использует эту категорию, IDE по умолчанию шрифты и цвета спецификации.  
   
    > [!NOTE]
-   >  При получении данных шрифта и цвета с <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> или других интерфейсов, пакетов VSPackage использовать этот идентификатор GUID для ссылки на встроенные сведения.  
+   > При получении данных шрифта и цвета с <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> или других интерфейсов, пакетов VSPackage использовать этот идентификатор GUID для ссылки на встроенные сведения.  
   
 2. Имя категории должны добавляться в таблицу строк в файле ресурсов (.rc) в пакете VSPackage, таким образом, чтобы можно было локализовать при необходимости при отображении в интегрированной среде разработки.  
   
-    Дополнительные сведения см. в разделе [Добавление или удаление строки](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
+    Дополнительные сведения см. в разделе [Добавление или удаление строки](https://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Чтобы зарегистрировать категории, с помощью встроенных шрифты и цвета  
   

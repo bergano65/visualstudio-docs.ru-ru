@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432132"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Предоставление свойств в окно свойств
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +177,7 @@ ms.locfileid: "60117145"
 10. Установите флажок **MyToolWindow** окна. **IsChecked** в **свойства** окна изменяется на **True**. Снимите флажок в **MyToolWindow** окна. **IsChecked** в **свойства** окна изменяется на **False**. Измените значение свойства **IsChecked** в **свойства** окна. Флажок в **MyToolWindow** окна меняется в соответствии с новым значением.  
   
     > [!NOTE]
-    >  Если необходимо уничтожить объект, который отображается в **свойства** окна, вызовите `OnSelectChange` с `null` контейнер выделения первой. После удаления, свойство или объект, можно изменить для контейнера выделения, который был обновлен <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> и <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> перечислены.  
+    > Если необходимо уничтожить объект, который отображается в **свойства** окна, вызовите `OnSelectChange` с `null` контейнер выделения первой. После удаления, свойство или объект, можно изменить для контейнера выделения, который был обновлен <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> и <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> перечислены.  
   
 ## <a name="changing-selection-lists"></a>Изменение списков выбора  
  В этом разделе добавьте список выбора для основных свойств класса и используйте интерфейс окна инструментов, чтобы выбрать список выбора для отображения.  
@@ -261,7 +261,7 @@ ms.locfileid: "60117145"
 6. Установите флажок в **MyToolWindow** окна. **Свойства** окно отображает `Simple` объект свойства, **SomeText** и **ReadOnly**. Снимите флажок. Открытые свойства окна отображаются в **свойства** окна.  
   
     > [!NOTE]
-    >  Отображаемое имя **SomeText** — **текст моего**.  
+    > Отображаемое имя **SomeText** — **текст моего**.  
   
 ## <a name="best-practice"></a>Рекомендации  
  В этом пошаговом руководстве <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> реализуется так, доступный для выбора объект коллекции и коллекции выбранного объекта и той же коллекции. Только выбранный объект отображается в списке обозревателя свойств. Более полная реализация ISelectionContainer см. в примерах Reference.toolwindow на языке.  

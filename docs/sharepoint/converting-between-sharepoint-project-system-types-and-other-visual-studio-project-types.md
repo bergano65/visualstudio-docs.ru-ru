@@ -1,5 +1,5 @@
 ---
-title: Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio | Документация Майкрософт
+title: 'Преобразование: Типами системы проектов SharePoint из других типов'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 553d6a4dfb60079aa16487f276d6f392926bb089
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 40ea60a8df5bc0bcd033c60a83d742ed3249cc53
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066563"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835999"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Преобразование между типами системы проектов SharePoint и другими типами проектов Visual Studio
   В некоторых случаях может быть объект в системе проектов SharePoint, и вы хотите использовать функции соответствующего объекта в объектной модели автоматизации Visual Studio или объектной модели интеграции и наоборот. В таких случаях можно использовать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> метод службы проектов SharePoint для преобразования объекта в другой объектной модели.

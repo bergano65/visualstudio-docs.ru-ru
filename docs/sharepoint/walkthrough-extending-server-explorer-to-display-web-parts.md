@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430339"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Пошаговое руководство. Расширения обозревателя сервера для отображения веб-частей
   В Visual Studio, можно использовать **подключения SharePoint** узел **обозревателя серверов** для просмотра компонентов на сайтах SharePoint. Тем не менее **обозревателя серверов** не отображать некоторые компоненты по умолчанию. В этом пошаговом руководстве, вы расширите **обозревателя серверов** , чтобы он отображал галерею веб-частей на каждый из которых подключен сайта SharePoint.
@@ -40,7 +40,7 @@ ms.locfileid: "60040576"
 - Отладка и тестирование расширения.
 
 > [!NOTE]
->  Альтернативная версия данного пошагового руководства, использующего клиентскую объектную модель для SharePoint вместо его серверную объектную модель, см. в разделе [Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
+> Альтернативная версия данного пошагового руководства, использующего клиентскую объектную модель для SharePoint вместо его серверную объектную модель, см. в разделе [Пошаговое руководство: Вызов клиентской объектной модели SharePoint в расширении обозревателя серверов](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
  Необходимы следующие компоненты на компьютере разработчика для выполнения этого пошагового руководства.
@@ -75,7 +75,7 @@ ms.locfileid: "60040576"
 3. В **новый проект** диалогового окна разверните узел **Visual C#** или **Visual Basic** узлов и нажмите кнопку **расширяемости** узла.
 
     > [!NOTE]
-    >  **Расширяемости** узел доступен только в том случае, если установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе "Предварительные требования" ранее в этом разделе.
+    > **Расширяемости** узел доступен только в том случае, если установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе "Предварительные требования" ранее в этом разделе.
 
 4. В верхней части диалоговое окно, выберите **.NET Framework 4.5** в списке версий .NET Framework.
 
@@ -211,7 +211,7 @@ ms.locfileid: "60040576"
 1. В проекте WebPartNodeExtension откройте файл кода SiteNodeExtension и вставьте в него следующий код.
 
     > [!NOTE]
-    >  После добавьте следующий код, проект будет содержать некоторые ошибки компиляции, но они будут исчезнуть при добавлении кода в последующих шагах.
+    > После добавьте следующий код, проект будет содержать некоторые ошибки компиляции, но они будут исчезнуть при добавлении кода в последующих шагах.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -266,7 +266,7 @@ ms.locfileid: "60040576"
 1. В строке меню последовательно выберите **Сборка**  >  **Собрать решение**.
 
     > [!WARNING]
-    >  На этом этапе проекта WebPartNode могут иметь ошибка сборки, так как файл манифеста VSIX не имеет значения для автора. Эта ошибка исчезнет при добавлении значения в последующих шагах.
+    > На этом этапе проекта WebPartNode могут иметь ошибка сборки, так как файл манифеста VSIX не имеет значения для автора. Эта ошибка исчезнет при добавлении значения в последующих шагах.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Создание пакета VSIX для развертывания расширения
  Чтобы развернуть расширение, используйте проекта VSIX в решении для создания пакета VSIX. Во-первых настройте пакет VSIX, изменив файл source.extension.vsixmanifest проекта VSIX. Затем создайте пакет VSIX, построения решения.
@@ -290,7 +290,7 @@ ms.locfileid: "60040576"
 6. В **тип** выберите **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Это значение соответствует `MefComponent` элемент в файл extension.vsixmanifest. Этот элемент задает имя сборки расширения в пакете VSIX. Дополнительные сведения см. в разделе [MEFComponent элемент (Схема VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. В **источника** выберите **проект в текущем решении**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "60040576"
 10. В **тип** введите **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Этот элемент задает пользовательское расширение, которое вы хотите включить в расширение Visual Studio. Дополнительные сведения см. в разделе [активов элемент (Схема VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Этот элемент задает пользовательское расширение, которое вы хотите включить в расширение Visual Studio. Дополнительные сведения см. в разделе [активов элемент (Схема VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. В **источника** выберите **проект в текущем решении** элемента списка.
 

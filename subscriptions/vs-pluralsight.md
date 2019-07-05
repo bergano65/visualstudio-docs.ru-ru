@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: Сведения об учебной подписке Pluralsight, входящей в выбранные подписки Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: f0028d8dffb70e38ef818a8de7945b22f9664328
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc96d9c088a270342be792a2e7514e172a72ea45
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947558"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032775"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "62947558"
    - Установите флажок, чтобы принять условия политики использования и конфиденциальности.
    - Нажмите кнопку **I agree, activate benefit** (Я принимаю условия активации преимущества).
      > [!div class="mx-imgBorder"]
-     > ![Активация преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > ![Активация преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
      > ![Условия использования преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
@@ -72,9 +72,9 @@ ms.locfileid: "62947558"
 |         Visual Studio Professional (ценовая категория "Стандартный")          | Корпоративная лицензия, Azure, розничная версия |   3 месяца    | Да<sup>2</sup> |
 |              Visual Studio Test Professional (стандартная)              |    Корпоративная лицензия, розничная версия     |   3 месяца    | Нет |
 |                      MSDN Platforms (стандартная)                       |    Корпоративная лицензия, розничная версия     |   3 месяца    | Нет |
-|                     Visual Studio Dev Essentials                     |        Н/Д         |   1 месяц    |       Нет       |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) |       Azure       | Недоступно |       Н/Д       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Программа      | Недоступно |       Н/Д       |
+||
 
 <sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), BizSpark, разработчик ПО и служб MCT, ПО и службы MCT, Most Valuable Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f3bc987cf097f3573b40d4d907204c742608fd0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 61a39d3b68deec2dd51c49113355a8ed6c69325c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709282"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348819"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Задает значение этого свойства и возвращает сообщение об ошибке, при необходимости.
@@ -42,22 +45,18 @@ int SetValueAsStringWithError(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pszValue`
+## <a name="parameters"></a>Параметры
+`pszValue`\
+[in] Задаваемое значение.
 
- [in] Задаваемое значение.
+`dwRadix`\
+[in] Основание системы счисления задаваемое значение.
 
-`dwRadix`
+`dwTimeout`\
+[in] Продолжительность времени ожидания задать значения (`INFINITE` означает бесконечное ожидание).
 
- [in] Основание системы счисления задаваемое значение.
-
-`dwTimeout`
-
- [in] Продолжительность времени ожидания задать значения (`INFINITE` означает бесконечное ожидание).
-
-`errorString`
-
- [out] Если произошла ошибка при установке значения, содержит причину сбоя.
+`errorString`\
+[out] Если произошла ошибка при установке значения, содержит причину сбоя.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

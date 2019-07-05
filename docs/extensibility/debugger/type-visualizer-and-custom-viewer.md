@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 219632bce50b6942d46e4061a3c7eaf8f70adfd5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01f058f959c9af78e196112cc49b63d293e8e31d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685967"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341267"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Визуализатор типов и пользовательское средство просмотра
 Тип визуализатора — это компонент, который отображает часть данных в определенном формате. Формат — полностью до кто реализует визуализатор, будь то, как конечный пользователь или стороннего поставщика визуализаторов.

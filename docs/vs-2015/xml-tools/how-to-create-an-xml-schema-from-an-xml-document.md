@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a732f0c6a9758de3ebd918559203b13a56d6a0ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066069"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697789"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Практическое руководство. создать схему XML из XML-документа
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60066069"
   
   Созданные схемы затем используются для обеспечения поддержки технологии IntelliSense в XML-документе.  
   
-  Дополнительные сведения о модуле выведения схемы см. в разделе [выведение схемы XML](http://msdn.microsoft.com/library/b18e7ffd-3c04-482d-9934-ba2f6a59b2c9).  
+  Дополнительные сведения о модуле выведения схемы см. в разделе [выведение схемы XML](https://msdn.microsoft.com/library/b18e7ffd-3c04-482d-9934-ba2f6a59b2c9).  
   
 ### <a name="to-create-an-xml-schema"></a>Создание XML-схемы  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60066069"
      Схемы можно сохранять на диск, добавлять в проект или удалять.  
   
     > [!NOTE]
-    >  **Create Schema** команда также доступна из контекстного меню редактора XML и **XML** меню.  
+    > **Create Schema** команда также доступна из контекстного меню редактора XML и **XML** меню.  
   
 ## <a name="see-also"></a>См. также  
  [XML-редактор](../xml-tools/xml-editor.md)

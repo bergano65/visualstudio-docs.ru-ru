@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6260233d564421ce3fc32c9700c4430989a4f53b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933131"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493724"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Начало работы с ASP.NET Core
 
@@ -234,7 +234,7 @@ public class Startup
 
 Это руководство содержит вводные сведения о платформе ASP.NET Core. Он описывает, что это такое, когда ее можно использовать и как работать с ней в Visual Studio для Mac.
 Дополнительные сведения о дальнейших действиях см. в следующих руководствах:
-- Документы по [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
+- Документы по [ASP.NET Core](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc).
 - [Создание серверных служб для собственных мобильных приложений](/aspnet/core/mobile/native-mobile-backend), где описано, как создать службу REST с помощью ASP.NET Core для приложения Xamarin.Forms.
 - [Практическая лабораторная работа ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 

@@ -8,12 +8,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fc09d8570eed04c559e1b94f65319739bbc4ee13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1b77dc7e01ae791379dda52b305ebcdbbf68447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433917"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60103297"
  Программа установки пытается автоматически настроить при установке эмулятора. После успешной настройки необходимых компонентов эмулятор работает надлежащим образом. В противном случае необходимые компоненты потребуется включить вручную. Если нужно вручную настроить необходимые компоненты, используются те же действия и средства, которые описаны [здесь](https://msdn.microsoft.com/library/windows/apps/jj863509\(v=vs.105\).aspx) для эмулятора Windows Phone.
 
 > [!IMPORTANT]
->  Программа установки эмулятора проверяет выполнение предварительных требований для запуска эмулятора Visual Studio для Android. Если необходимые компоненты не установлены и не требуются для программы установки, выводятся предупреждения.
+> Программа установки эмулятора проверяет выполнение предварительных требований для запуска эмулятора Visual Studio для Android. Если необходимые компоненты не установлены и не требуются для программы установки, выводятся предупреждения.
 
  В этом разделе содержатся следующие подразделы.
 

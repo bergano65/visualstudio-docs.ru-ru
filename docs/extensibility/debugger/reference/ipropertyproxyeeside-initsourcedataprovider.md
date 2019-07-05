@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::InitSourceDataProvider
 ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fb0d2b960c2bafd1a2d502e41c8a435a5205d11
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 725ac07c85dd31edaf97200a7a8668ff3efd9ab9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687488"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329526"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 Инициализирует исходные данные для этого объекта и возвращает объект, содержащий исходные данные.
@@ -36,10 +39,9 @@ int InitSourceDataProvider(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dataOut`
-
- [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объекта
+## <a name="parameters"></a>Параметры
+`dataOut`\
+[out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объекта
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

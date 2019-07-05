@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581643"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262940"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Пошаговое руководство. Создание среды построения из нескольких компьютеров
 
@@ -62,7 +62,7 @@ Visual Studio с установленной рабочей нагрузкой **
 - На компьютере с архитектурой x86 установка по умолчанию производится в папку *C:\Program Files\Microsoft Visual Studio*
 - На компьютере с архитектурой x64 установка по умолчанию производится в папку *C:\Program Files (x86)\Microsoft Visual Studio*
 
-Обратите внимание, что имя папки *Program Files* зависит от установленной операционной системы. На компьютере с архитектурой x86 она называется *Program Files*. На компьютере с архитектурой x64 эта папка называется *Program Files (x86)*. Независимо от архитектуры системы в этом пошаговом руководстве папка *Program Files* обозначается как *%ProgramFiles%*.
+Обратите внимание, что имя папки *Program Files* зависит от установленной операционной системы. На компьютере с архитектурой x86 она называется *Program Files*. На компьютере с архитектурой x64 эта папка называется *Program Files (x86)* . Независимо от архитектуры системы в этом пошаговом руководстве папка *Program Files* обозначается как *%ProgramFiles%* .
 
 > [!NOTE]
 > На компьютере сборки все соответствующие файлы должны быть на одном диске. При этом буква диска может отличаться от буквы диска на главном компьютере, на котором находится Visual Studio. В любом случае необходимо учитывать расположение файлов при создании записей реестра, как описано далее в этом документе.
@@ -169,7 +169,7 @@ Visual Studio с установленной рабочей нагрузкой **
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Скопируйте только следующие файлы из папки *Debug_NonRedist\x86* или *Debug_NonRedist\x64* на компьютере построения, как описывается в разделе [Подготовка тестового компьютера для запуска исполняемого файла отладки](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). Другие файлы не копируются.
+5. Скопируйте только следующие файлы из папки *Debug_NonRedist\x86* или *Debug_NonRedist\x64* на компьютере построения, как описывается в разделе [Подготовка тестового компьютера для запуска исполняемого файла отладки](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Другие файлы не копируются.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -330,7 +330,7 @@ Visual Studio с установленной рабочей нагрузкой **
 
      В рамках этой процедуры этот каталог называется %Depot%.
 
-2. Скопируйте каталоги и файлы, которые описываются в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) этого пошагового руководства, и вставьте их в созданный только что каталог *%Depot%*. Например, скопируйте файлы из каталога *%ProgramFiles%\Windows Kits\8.0\bin* в *%Depot%\Windows Kits\8.0\bin*.
+2. Скопируйте каталоги и файлы, которые описываются в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) этого пошагового руководства, и вставьте их в созданный только что каталог *%Depot%* . Например, скопируйте файлы из каталога *%ProgramFiles%\Windows Kits\8.0\bin* в *%Depot%\Windows Kits\8.0\bin*.
 
 3. После вставки файлов в каталог *%Depot%* внесите следующие изменения:
 
@@ -407,5 +407,5 @@ Visual Studio с установленной рабочей нагрузкой **
 
 ## <a name="see-also"></a>См. также
 
-- [Подготовка тестового компьютера для выполнения исполняемого файла отладки](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Подготовка тестового компьютера для выполнения исполняемого файла отладки](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)

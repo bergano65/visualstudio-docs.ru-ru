@@ -14,14 +14,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e09f3a9dfcc6c26e9dd575f4a127884e28def1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 58c949eaeaf8e780fa6a85d61dea272d21fb8be1
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064080"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476556"
 ---
 # <a name="t4-text-template-directives"></a>Директивы текстовых шаблонов T4
+
 Директивы представляют собой инструкции для процессора преобразования текстового шаблона.
 
 Синтаксис директив таков:

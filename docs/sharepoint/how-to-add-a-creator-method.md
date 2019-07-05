@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c1596213b618ba67cd4bf1406f63c0754fd9b96
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 38312384c3e6ce51aa1b5b0b16df378286fc58b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443580"
 ---
 # <a name="how-to-add-a-creator-method"></a>Практическое руководство. Добавление метода Creator
   Метод создания добавляет новые данные в источник данных сущности. Служба бизнес-данным (BDC) вызывает этот метод, при выборе пользователем **новый элемент** кнопку **ленты** списка, который основан на модели. Дополнительные сведения см. в разделе [проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,7 +58,7 @@ ms.locfileid: "56619320"
 5. Добавьте код в метод Creator, который добавляет данные к источнику данных. В следующем примере добавляется контакт с образцом базы данных AdventureWorks для SQL Server.
 
    > [!NOTE]
-   >  Замените значение `ServerName` поле с именем сервера.
+   > Замените значение `ServerName` поле с именем сервера.
 
     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]

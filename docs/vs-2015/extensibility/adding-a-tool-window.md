@@ -11,12 +11,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cc12854574f21c1d75f57bae592d6a504db9b189
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9099bc79a555f908ddda12dc9da83f015791fd86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444835"
 ---
 # <a name="adding-a-tool-window"></a>Добавление окна инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60087577"
 1. Создайте проект с именем **FirstToolWin** с помощью шаблона VSIX и добавление шаблона элемента окна пользовательского инструмента с именем **FirstToolWindow**.  
   
     > [!NOTE]
-    >  Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="add-a-control-to-the-tool-window"></a>Добавление элемента управления окна инструментов  
   
@@ -264,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      Первый именованный параметр — `Style` и его значение равно `Tabbed`, который означает, что окно вкладки в существующее окно. Положение закрепления задается `Window` параметра, n данном случае GUID **обозревателе решений**.  
   
     > [!NOTE]
-    >  Дополнительные сведения о типах окон в интегрированной среде разработки см. в разделе <xref:EnvDTE.vsWindowType>.  
+    > Дополнительные сведения о типах окон в интегрированной среде разработки см. в разделе <xref:EnvDTE.vsWindowType>.  
   
 ## <a name="testing-the-tool-window"></a>Тестирование окна инструментов  
   

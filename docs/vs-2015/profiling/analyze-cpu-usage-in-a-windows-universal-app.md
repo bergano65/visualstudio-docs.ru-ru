@@ -15,22 +15,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: fcc31e2f7fb06f58f07b0af58a1375466b16cc23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 105efab7a28f0a21bd7567262ff8ec214715b8ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053056"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704580"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Анализ загрузки ЦП в универсальных приложениях для Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
- Если вам нужно проанализировать проблемы с производительностью в своем приложении, следует сначала понять, как оно использует ЦП. Средство **Загрузка ЦП** показывает, в какой части кода затрачивается больше всего ресурсов ЦП. Чтобы сконцентрироваться на определенных сценариях, этот инструмент можно запустить вместе с инструментом [Скорость реагирования ИП XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) и/или [Расход энергии](../profiling/analyze-energy-use-in-store-apps.md) в рамках одного сеанса диагностики.  
+ Если вам нужно проанализировать проблемы с производительностью в своем приложении, следует сначала понять, как оно использует ЦП. Средство **Загрузка ЦП** показывает, в какой части кода затрачивается больше всего ресурсов ЦП. Чтобы сконцентрироваться на определенных сценариях, этот инструмент можно запустить вместе с инструментом [Скорость реагирования ИП XAML](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) и/или [Расход энергии](../profiling/analyze-energy-use-in-store-apps.md) в рамках одного сеанса диагностики.  
   
 > [!NOTE]
->  Инструмент **Загрузка ЦП** нельзя использовать с приложениями Silverlight 8.1 Windows Phone.  
+> Инструмент **Загрузка ЦП** нельзя использовать с приложениями Silverlight 8.1 Windows Phone.  
   
  В этом пошаговом руководстве рассматривается сбор и анализ данных о загрузке ЦП для простого универсального XAML-приложения для Windows.  
   

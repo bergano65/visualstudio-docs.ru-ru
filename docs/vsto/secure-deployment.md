@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1000504ad83706bd028af4bd668da7483e478b7a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978382"
 ---
 # <a name="secure-deployment"></a>Безопасное развертывание
   При создании решения Office, на компьютере разработчика обновляется автоматически, чтобы кода в проекте для запуска. Тем не менее, при развертывании решения, необходимо предоставить свидетельство, на котором основывается решение о доверии подписи решения с помощью сертификата или с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ключ запроса доверия. Дополнительные сведения см. в разделе [предоставления доверия решениям Office](../vsto/granting-trust-to-office-solutions.md).

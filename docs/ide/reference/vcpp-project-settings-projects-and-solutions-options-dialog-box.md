@@ -1,5 +1,5 @@
 ---
-title: Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры"
+title: Параметры проекта C++
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 186db68e9b69b98a9fe9d9a2a8c8941302304cb2
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789331"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263079"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры"
 В этом диалоговом окне можно определять параметры проекта и сборки [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], связанные с файлами журналов, производительности и другими вспомогательными файлами.
@@ -32,7 +32,7 @@ ms.locfileid: "62789331"
 
 1. В меню **Сервис** выберите пункт **Параметры**.
 
-2. Выберите **Проекты и решения**, а затем **Параметры проекта VC++**.
+2. Выберите **Проекты и решения**, а затем **Параметры проекта VC++** .
 
 ## <a name="build-logging"></a>Журнал сборки
  **Да**

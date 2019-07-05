@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793556"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746867"
 ---
 # <a name="create-solutions-and-projects"></a>Создание решений и проектов
 
@@ -61,11 +61,11 @@ ms.locfileid: "62793556"
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Создание проекта .NET, настроенного для конкретной версии .NET Framework
 
-При создании проекта можно указать определенную версию .NET Framework, которая должна использоваться в нем.
+При создании проекта .NET Framework можно указать определенную версию платформы .NET Framework, которую он должен использовать. (При создании проекта .NET Core версию платформы указывать не нужно.)
 
 ::: moniker range="vs-2017"
 
-Чтобы указать версию .NET Framework, в диалоговом окне **Новый проект** выберите версию в раскрывающемся меню **Framework**.
+Чтобы указать версию .NET Framework, выберите ее в раскрывающемся меню **Платформа** диалогового окна **Новый проект**.
 
 ![Раскрывающийся список Framework в диалоговом окне "Новый проект"](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "62793556"
 
 ::: moniker range=">=vs-2019"
 
-Чтобы указать версию .NET Framework, на странице **Создание проекта** выберите значение в раскрывающемся меню **Платформа**.
+Чтобы указать версию .NET Framework, выберите ее в раскрывающемся меню **Платформа** диалогового окна **Создание проекта**.
 
 ![Средство выбора платформы при настройке нового проекта](media/vs-2019/configure-new-project-framework.png)
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0b04692ed30e69e8904919748a6db0d0eff49f54
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5b72b2c3bd6b03d1d3f3e50135c2ddf4758a4bd9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082286"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683044"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>Пакеты VSPackage и Managed Package Framework
 Путем создания VSPackage в управляемом пакете классов framework (MPF), а не с помощью COM-взаимодействия классов можно сократить время разработки.  
@@ -25,7 +25,7 @@ ms.locfileid: "60082286"
   
 - Используйте [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] шаблон проекта пакета  
   
-     Дополнительные сведения см. в разделе [Пошаговое руководство: Создание команды меню с помощью шаблона пакета Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Дополнительные сведения см. в разделе [Пошаговое руководство: Создание команды меню с помощью шаблона пакета Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 - Создание VSPackage без [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] шаблон проекта пакета  
   
@@ -36,7 +36,7 @@ ms.locfileid: "60082286"
  Описание и перечислены пространства имен MPF класс и DLL-файлы.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Пошаговое руководство: Создание команды меню с помощью шаблона пакета Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+ [Пошаговое руководство: Создание команды меню с помощью шаблона пакета Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  В этой статье описывается создание управляемого пакета VSPackage.  
   
  [Управляемые пакеты VSPackage](../misc/managed-vspackages.md)  

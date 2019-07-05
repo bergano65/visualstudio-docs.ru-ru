@@ -10,12 +10,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd99d223d8071b4f0c10052b0b42c421d2360e2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a6598e2f1a178845b3ad2017716576439185379e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426451"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Управление загрузкой проекта в решении
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
  Если диспетчер загрузки решения предназначен для управления решения, загрузка в целом, его можно реализовать как часть пакета VSPackage. Пакета должно быть присвоено автозагрузки, добавив <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> в VSPackage со значением <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Диспетчер загрузки решения может быть активизирована в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод.  
   
 > [!NOTE]
->  Дополнительные сведения о Автозагрузка пакетов, см. в разделе [Загрузка пакетов VSPackage](../extensibility/loading-vspackages.md).  
+> Дополнительные сведения о Автозагрузка пакетов, см. в разделе [Загрузка пакетов VSPackage](../extensibility/loading-vspackages.md).  
   
  Так как Visual Studio распознает только последние диспетчер загрузки решения, которое необходимо активировать, диспетчеры нагрузки общие решения всегда должен определить, существует ли существующий диспетчер нагрузки перед активацией сами. Если вызов GetProperty() службы решения для <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> возвращает `null`, отсутствует диспетчер нагрузки активного решения. Если он не возвращает значение null, проверьте, является ли объект так же, как ваш диспетчер загрузки решения.  
   
@@ -114,4 +114,4 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: этот метод приводит к проекту в `guidProjectID` для загрузки перед возвращением метода.  
   
 > [!NOTE]
->  . По умолчанию загружаются только проекты, которые имеют по требованию и приоритеты загрузки в фоновом режиме загружаются, но если <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> флаг передается в метод, за исключением тех, которые помечены для загрузки явно будут загружены все проекты.
+> . По умолчанию загружаются только проекты, которые имеют по требованию и приоритеты загрузки в фоновом режиме загружаются, но если <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> флаг передается в метод, за исключением тех, которые помечены для загрузки явно будут загружены все проекты.

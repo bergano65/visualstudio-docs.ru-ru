@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::ResolveAssemblyRef
 ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3294c19455b5ddf36ebecff52dab4908be84afab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3d2fd21b39e171238319c857ad0384db1d7635d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681417"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353463"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 Определяет расположение ссылки указанной управляемой сборки.
@@ -44,26 +47,21 @@ int ResolveAssemblyRef(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `assemName`
+## <a name="parameters"></a>Параметры
+`assemName`\
+[in] Имя сборки для решения.
 
- [in] Имя сборки для решения.
+`assemBytes`\
+[out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки, связанный со ссылкой.
 
- `assemBytes`
+`assemPdb`\
+[out] Возвращает `IEEDataStorage` объект, содержащий символ хранить данные, связанные с этой ссылкой.
 
- [out] Возвращает [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) объект, содержащий байты сборки, связанный со ссылкой.
+`assemLocation`\
+[out] Возвращает путь данной ссылки.
 
- `assemPdb`
-
- [out] Возвращает `IEEDataStorage` объект, содержащий символ хранить данные, связанные с этой ссылкой.
-
- `assemLocation`
-
- [out] Возвращает путь данной ссылки.
-
- `alr`
-
- [out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение этой ссылки сборки.
+`alr`\
+[out] Возвращает значение из [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) перечисление, указывающее расположение этой ссылки сборки.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

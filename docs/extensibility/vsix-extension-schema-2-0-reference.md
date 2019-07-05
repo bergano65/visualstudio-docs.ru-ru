@@ -6,23 +6,23 @@ helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a029345afb8b54c85d35e500e4ada48c02c54ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2c6672fea1f3998f46c171ab7e9164291e12588f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114526"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322854"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Справочник по схеме 2.0 расширения VSIX
 Файл манифеста развертывания VSIX описывает содержимое пакета VSIX. Формат файла регулируется схемы. Эта схема версии 2.0 поддерживает добавление пользовательских типов и атрибутов.  Схема манифеста является расширяемой. XML-элементы и атрибуты, которые не понимает, игнорирует манифеста загрузчика.
 
 > [!IMPORTANT]
->  Visual Studio 2015 можно загрузить VSIX-файлы в форматах Visual Studio 2010, Visual Studio 2012 или Visual Studio 2013.
+> Visual Studio 2015 можно загрузить VSIX-файлы в форматах Visual Studio 2010, Visual Studio 2012 или Visual Studio 2013.
 
 ## <a name="package-manifest-schema"></a>Схема манифеста пакета
  Корневой элемент файла манифеста XML — `<PackageManifest>`. Он имеет один атрибут `Version`, которая является версией формат манифеста. Если значительных изменений в формат, формат версии изменяется. В этой статье описывается формат манифеста версии 2.0, который указывается в манифесте, задав `Version` равным значению версии = «2.0».

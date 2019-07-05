@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Создание пользовательских компонентов и правилам проверки пакета для решений SharePoint | Документация Майкрософт
+title: Решения SharePoint. Создание пользовательских функций, пакета правил проверки
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 061a86ee301378bc8b456d370eddd19d2f91bbb6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a10118a0c83f9e17e32efd293a9a824e38a0942a
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109209"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835928"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Практическое руководство. Создание пользовательских компонентов и пакетов правила проверки для решений SharePoint
-  Можно создать пользовательские правила проверки для проверки пакета решения, созданные Visual Studio. Можно выполнить полную проверку на весь компонент или пакет, выбрав **Validate** в контекстном меню, пакета или компонента в **PackagingExplorer**. Частичная проверка выполняется при добавлении нового проекта SharePonit или функции в проект, чтобы определить, пакета или компонента будет находиться в допустимом состоянии.
+  Можно создать пользовательские правила проверки для проверки пакета решения, созданные Visual Studio. Можно выполнить полную проверку на весь компонент или пакет, выбрав **Validate** в контекстном меню, пакета или компонента в **PackagingExplorer**. Частичная проверка выполняется при добавлении новой функции или элементов проекта SharePoint в проект, чтобы определить, пакета или компонента будет находиться в допустимом состоянии.
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>Чтобы создать настраиваемое правило проверки пакета
 

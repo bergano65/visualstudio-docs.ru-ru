@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetSymbolInfo method
 - IDebugModule3::GetSymbolInfo method
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5fedebe6a8e411e09b527841bd0ded3854749ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd952242db8b7394fa8915319686ac431b84947d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717446"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323951"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Извлекает список путей, для которых выполняется поиск символов, а также результаты поиска каждого пути.
@@ -39,14 +42,12 @@ int GetSymbolInfo(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`dwFields`
+## <a name="parameters"></a>Параметры
+`dwFields`\
+[in] Сочетание флагов из [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) перечисление, определяющее, какие поля `pInfo` должны быть заполнены.
 
- [in] Сочетание флагов из [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) перечисление, определяющее, какие поля `pInfo` должны быть заполнены.
-
-`pInfo`
-
- [out] Объект [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) структуры, члены которого должны быть заполнены с использованием указанных сведений об. Если это значение null, этот метод возвращает `E_INVALIDARG`.
+`pInfo`\
+[out] Объект [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) структуры, члены которого должны быть заполнены с использованием указанных сведений об. Если это значение null, этот метод возвращает `E_INVALIDARG`.
 
 ## <a name="return-value"></a>Возвращаемое значение
 Если метод завершается успешно, возвращается `S_OK`; в противном случае он возвращает код ошибки.
@@ -83,9 +84,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\symbols\user32.pdb... Файл не найден. ** 
- **c:\winnt\symbols\user32.pdb... Версия не совпадает. ** 
- ** \\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Символы загружены.**
+**c:\symbols\user32.pdb... Файл не найден.** 
+**c:\winnt\symbols\user32.pdb... Версия не совпадает.** 
+ **\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Символы загружены.**
 
 ## <a name="see-also"></a>См. также
 

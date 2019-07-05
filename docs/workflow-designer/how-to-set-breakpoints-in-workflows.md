@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7503d0b0bee201a9617e90966c9f75ac6333f228
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949528"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Как выполнить  Задание точек останова в рабочих процессах
+# <a name="how-to-set-breakpoints-in-workflows"></a>Практическое руководство. Задание точек останова в рабочих процессах
 
 При использовании конструктора рабочих процессов, можно задать точки останова в графических рабочих процессах, как это делается в коде Visual Basic или C#. Как ожидалось, выполнение рабочего процесса останавливается в каждой заданной точке останова.
 

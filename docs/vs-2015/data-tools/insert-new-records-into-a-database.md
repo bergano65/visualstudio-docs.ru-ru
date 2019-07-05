@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 001f3a3c74f792fbe3028b6915cb350d359221a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3f7ccd6af16d89c18f5a5bba63f6afc50de391c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043140"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688715"
 ---
 # <a name="insert-new-records-into-a-database"></a>Вставка новых записей в базу данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60043140"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Для вставки новых записей в базу данных с помощью TableAdapter.Update-метод  
   
-1. Добавление новых записей в нужные <xref:System.Data.DataTable> путем создания нового <xref:System.Data.DataRow> и добавления его в <xref:System.Data.DataTable.Rows%2A> коллекции. Дополнительные сведения см. в разделе [Как Добавление строк в объект DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Добавление новых записей в нужные <xref:System.Data.DataTable> путем создания нового <xref:System.Data.DataRow> и добавления его в <xref:System.Data.DataTable.Rows%2A> коллекции. Дополнительные сведения см. в разделе [Практическое руководство. Добавление строк в объект DataTable](https://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
 2. После добавления новых строк <xref:System.Data.DataTable>, вызовите `TableAdapter.Update` метод. Можно управлять объемом данных для обновления путем передачи всего <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, массив <xref:System.Data.DataRow>s или одной <xref:System.Data.DataRow>.  
   
@@ -65,7 +65,7 @@ ms.locfileid: "60043140"
 - Вызов метода `Insert` метод, передав значения для каждого столбца в качестве параметров.  
   
     > [!NOTE]
-    >  Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.  
+    > Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.  
   
      [!code-csharp[VbRaddataSaving#15](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#15)]
      [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  

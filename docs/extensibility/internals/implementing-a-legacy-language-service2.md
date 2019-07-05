@@ -5,26 +5,26 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], implementing
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8592103bad3f6949f37a190c25633398af89a166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6105f46740dc854f4c498adad5bbd5fe675b41f6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622947"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335144"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Реализация языковой службы прежних версий
 Для реализации языковой службы, с помощью managed package framework (MPF), должен быть производным от класса <xref:Microsoft.VisualStudio.Package.LanguageService> класса и реализовать следующие абстрактные методы и свойства:
 
 - метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> ;
 
-- метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>;
+- метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> ;
 
-- метод <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>;
+- метод <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> ;
 
 - Свойство <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>.
 
@@ -193,7 +193,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-languageservice-class"></a>В классе LanguageService
 
-|Метод|Возвращается|Описание:|
+|Метод|Возвращается|Описание|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Для поддержки пользовательских дополнения к текстовому представлению.|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|Для поддержки настраиваемых свойств документа.|
@@ -210,7 +210,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-source-class"></a>В классе источника
 
-|Метод|Возвращается|Описание:|
+|Метод|Возвращается|Описание|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Для настройки внешнего вида списки завершения IntelliSense (этот метод обычно не переопределяется).|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Для поддержки маркеров в списке задач Список ошибок; в частности поддержка возможности, недоступные при открытии файла и переход к строке, которая вызвала ошибку.|
@@ -220,7 +220,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-authoringscope-class"></a>В классе AuthoringScope
 
-|Метод|Возвращается|Описание:|
+|Метод|Возвращается|Описание|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|Список объявлений, такие как члены или типы. Этот метод должен быть реализован, но также может возвращать значение null. Если этот метод возвращает допустимый объект, объект должен представлять собой экземпляр версии <xref:Microsoft.VisualStudio.Package.Declarations> класса.|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|Предоставляет список сигнатур метода в данном контексте. Этот метод должен быть реализован, но также может возвращать значение null. Если этот метод возвращает допустимый объект, объект должен представлять собой экземпляр версии <xref:Microsoft.VisualStudio.Package.Methods> класса.|

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSourceServerModule::GetSourceServerData
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc99d014c1e31616ebd2a6cc16608a1d1bc741ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e24fb48014d8a336e9d46ceb8471e2efe126de1f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683874"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321899"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 Извлекает массив сведения об исходном сервере.
@@ -36,14 +39,12 @@ public int GetSourceServerData(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`pDataByteCount`
+## <a name="parameters"></a>Параметры
+`pDataByteCount`\
+[out] Число байтов в массиве данных.
 
- [out] Число байтов в массиве данных.
-
-`ppData`
-
- [out] Ссылка на массив данных.
+`ppData`\
+[out] Ссылка на массив данных.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

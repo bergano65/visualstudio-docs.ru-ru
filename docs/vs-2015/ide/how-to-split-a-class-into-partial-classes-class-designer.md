@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9f42fd4b43ec9aaced9d47d0c5670e6f0b0d711
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 23d344d2f350b5b7a2e376e8856c916d9baa01f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435176"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702611"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Практическое руководство. Разделение класса в разделяемые классы (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "63435176"
 > [!NOTE]
 > Visual Basic использует определения разделяемых классов для отделения автоматически созданного кода от кода, созданного пользователем. Этот код разбивается на отдельные исходные файлы. Например, **конструктор форм Windows Forms** определяет разделяемые классы для элементов управления, таких как `Form`. Не следует изменять код, созданный в этих элементах управления.  
   
- Дополнительные сведения о разделяемых типах в Visual Basic см. в статье [Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448).  
+ Дополнительные сведения о разделяемых типах в Visual Basic см. в статье [Partial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448).  
   
 ## <a name="example"></a>Пример  
  Чтобы разделить определение класса в Visual Basic, используйте ключевое слово `Partial`, как показано в следующем примере.  
@@ -76,7 +76,7 @@ public partial class Employee
 ```  
   
 ## <a name="see-also"></a>См. также раздел  
- [Разделяемые классы и методы](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)   
- [Разделяемый (тип)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)   
- [Разделяемый (метод) (справочник по C#)](http://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137)   
- [Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)
+ [Разделяемые классы и методы](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)   
+ [Разделяемый (тип)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)   
+ [Разделяемый (метод) (справочник по C#)](https://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137)   
+ [Partial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)

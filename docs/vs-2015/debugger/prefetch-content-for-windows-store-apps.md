@@ -14,19 +14,19 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7d8b859efa5fac2e3643f4d3a0bd694cd2edd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4e0d9c73277a913a7539ab5eeed4cca738d9bd5c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980982"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700760"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Предварительная загрузка контента для приложений Магазина Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Применяется только к Windows] (.. /Image/windows_only_content.PNG «windows_only_content»)  
   
- Для ускорения приложения Windows Store, вы можете запросить Windows для предварительной загрузки некоторых веб-содержимого, например веб-страниц или изображений, в приложения [WinINet](http://msdn.microsoft.com/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](http://msdn.microsoft.com/library/aa383630.aspx)кэша. Эта функциональность называется предварительной загрузкой. Он особенно эффективен для содержимого, которое используется при запуске, но также можно выполнять предварительную загрузку другого часто используемого содержимого. Методы класса [Windows.Networking.BackgroundTransfer.ContentPrefetcher](http://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) позволяют указывать URI содержимого, которое необходимо предварительно загрузить. Примеры добавления функциональности ContentPrefetcher в приложение см. в разделе [Пример предварительной загрузки содержимого](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) для Windows SDK.  
+ Для ускорения приложения Windows Store, вы можете запросить Windows для предварительной загрузки некоторых веб-содержимого, например веб-страниц или изображений, в приложения [WinINet](https://msdn.microsoft.com/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](https://msdn.microsoft.com/library/aa383630.aspx)кэша. Эта функциональность называется предварительной загрузкой. Он особенно эффективен для содержимого, которое используется при запуске, но также можно выполнять предварительную загрузку другого часто используемого содержимого. Методы класса [Windows.Networking.BackgroundTransfer.ContentPrefetcher](https://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) позволяют указывать URI содержимого, которое необходимо предварительно загрузить. Примеры добавления функциональности ContentPrefetcher в приложение см. в разделе [Пример предварительной загрузки содержимого](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) для Windows SDK.  
   
  Windows использует эвристику для определения времени и необходимости выполнения предварительной загрузки, а также того, какие ресурсы будут загружены. Эта эвристика учитывает условия питания и системной сети, историю использования приложения пользователем, а также результаты предыдущих попыток предварительной загрузки. В Visual Studio можно использовать команду **Запустить предварительную загрузку приложения для Microsoft Store**, чтобы принудить Windows к игнорированию эвристики ContentPrefetcher и выполнению предварительной загрузки всего указанного веб-содержимого. Это может быть полезно, если требуется протестировать поведение или производительность приложения с содержимым, которое необходимо предварительно загрузить в известном состоянии (либо загруженном, либо незагруженном).  
   
@@ -42,7 +42,7 @@ ms.locfileid: "58980982"
    Теперь можно выполнять отладку, тестирование и анализ приложения с предварительно загруженными веб-ресурсами.  
   
 > [!NOTE]
->  Повторите эти действия, если необходимо добавить или изменить указанное веб-содержимое.  
+> Повторите эти действия, если необходимо добавить или изменить указанное веб-содержимое.  
   
 ## <a name="see-also"></a>См. также  
  [Запись блога. Запуск предварительной загрузки для приложений Windows Store в Visual Studio 2013 с обновлением 2](http://blogs.msdn.com/b/visualstudioalm/archive/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2.aspx)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - language services
 - Visual Studio, language services
 ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 339e23411f10e8cde32900feea4618c0806faacf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 14bee804d532138ddf5c9b63039f4bfb8abbe02c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645333"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344836"
 ---
 # <a name="legacy-language-service-extensibility"></a>Расширяемость языковой службы прежних версий
 Языковая служба обеспечивает поддержку определенного языка для редактирования исходного кода в интегрированной среде разработки.

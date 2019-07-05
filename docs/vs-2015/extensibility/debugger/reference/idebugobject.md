@@ -12,18 +12,18 @@ ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 157e4ef5a6f8875a85de1108f94028ef25d25075
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c179a4443c23373fb92adf522ee0af34acb19c3f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989037"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695271"
 ---
 # <a name="idebugobject"></a>IDebugObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Этот интерфейс представляет объект, который создает связыватель для инкапсуляции значения символов и выражения.  
   
@@ -37,7 +37,7 @@ IDebugObject : IUnknown
  Вычислитель выражений реализует этот интерфейс для представления объекта.  
   
 ## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Этот интерфейс является базовым классом для всех объектов, которые использует средство оценки выражений в проанализированного выражения. Он возвращается вызовом [привязать](../../../extensibility/debugger/reference/idebugbinder-bind.md) метод. [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) получает более специализированных интерфейсов из этого интерфейса.  
+ Этот интерфейс является базовым классом для всех объектов, которые использует средство оценки выражений в проанализированного выражения. Он возвращается вызовом [привязать](../../../extensibility/debugger/reference/idebugbinder-bind.md) метод. [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) получает более специализированных интерфейсов из этого интерфейса.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugObject`.  

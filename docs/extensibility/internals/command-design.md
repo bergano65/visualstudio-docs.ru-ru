@@ -6,23 +6,23 @@ helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c176a558d7d5956c1d41593f5d0cc71184a9a820
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e1644cfa71296c4233cf17b6b225933aeeb3d477
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635245"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342178"
 ---
 # <a name="command-design"></a>Конструктор команд
 При добавлении команды VSPackage, необходимо указать которых может отображаться, когда он становится доступен, и способ их обработки.
 
 ## <a name="define-commands"></a>Определение команд
- Чтобы определить новые команды, включают таблицы команд Visual Studio (*.vsct*) файл в проект VSPackage. Если вы создали VSPackage с помощью шаблона пакета Visual Studio, проект содержит один из этих файлов. Дополнительные сведения см. в разделе [Visual Studio командные table (.vsct) файлы](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+ Чтобы определить новые команды, включают таблицы команд Visual Studio ( *.vsct*) файл в проект VSPackage. Если вы создали VSPackage с помощью шаблона пакета Visual Studio, проект содержит один из этих файлов. Дополнительные сведения см. в разделе [Visual Studio командные table (.vsct) файлы](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
  Visual Studio объединяет все *.vsct* файлах его находит, таким образом, чтобы его можно отобразить команды. Поскольку эти файлы отличаются от двоичных VSPackage, загрузить пакет, чтобы найти команды имеет Visual Studio. Дополнительные сведения см. в разделе [как пакеты VSPackage добавить элементы пользовательского интерфейса](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
 
@@ -36,7 +36,7 @@ ms.locfileid: "56635245"
 ## <a name="visual-studio-command-environment"></a>Команда среды Visual Studio
  Visual Studio можно разместить любое количество пакетов VSPackage, а каждый вносить свой вклад в свой собственный набор команд. Среде отображает только команды, которые подходят для текущей задачи. Дополнительные сведения см. в разделе [команды доступности](../../extensibility/internals/command-availability.md) и [объекты контекста выбора](../../extensibility/internals/selection-context-objects.md).
 
- Пакет VSPackage, который определяет новые команды, меню, панели инструментов или контекстного меню сведения его команды для Visual Studio во время установки с помощью записи реестра, которые ссылаются на ресурсы в собственных или управляемых сборках. Каждый ресурс, затем ссылается на ресурс двоичные данные (*.cto*) файл, который создается при компиляции таблицы команд Visual Studio (*.vsct*) файла. Это позволяет Visual Studio для предоставления наборов объединенных команд, меню и панелей инструментов без необходимости загружать каждого установленного пакета VSPackage.
+ Пакет VSPackage, который определяет новые команды, меню, панели инструментов или контекстного меню сведения его команды для Visual Studio во время установки с помощью записи реестра, которые ссылаются на ресурсы в собственных или управляемых сборках. Каждый ресурс, затем ссылается на ресурс двоичные данные ( *.cto*) файл, который создается при компиляции таблицы команд Visual Studio ( *.vsct*) файла. Это позволяет Visual Studio для предоставления наборов объединенных команд, меню и панелей инструментов без необходимости загружать каждого установленного пакета VSPackage.
 
 ### <a name="command-organization"></a>Команда организации
  Среде помещает команды, группы, приоритет и меню.
@@ -60,7 +60,7 @@ ms.locfileid: "56635245"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Реализация команды](../../extensibility/internals/command-implementation.md)|В этой статье описывается реализация команд в VSPackage.|
 |[Доступность команд](../../extensibility/internals/command-availability.md)|Описывается, как Visual Studio контекст определяет, какие команды доступны.|

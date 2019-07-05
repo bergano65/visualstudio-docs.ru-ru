@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortId
 ms.assetid: 837cb924-c113-4224-aa86-3e02b33dfa70
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ed27e5bc70a26c19784b3b543da791fdf1ff0bd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bc118bae5de4cc0b68498219b025f4144e4c5c82
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685629"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343750"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
 Получает идентификатор порта.
@@ -36,10 +39,9 @@ int GetPortId( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pguidPort`
-
- [out] Возвращает идентификатор GUID, определяющий порт.
+## <a name="parameters"></a>Параметры
+`pguidPort`\
+[out] Возвращает идентификатор GUID, определяющий порт.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

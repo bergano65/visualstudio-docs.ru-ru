@@ -9,17 +9,17 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 93283854760c4ab8309d3769550beb664c14f41b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086317"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314653"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Сведения о параметрах в языковой службе прежних версий
 Подсказка о параметрах IntelliSense предоставляет пользователям указания о где они находятся в конструкции языка.
@@ -27,7 +27,7 @@ ms.locfileid: "60086317"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
 
 ## <a name="how-parameter-info-tooltips-work"></a>Как работают параметр отображение кратких сведений
  При вводе инструкцию в редакторе VSPackage отображается небольшой подсказки окно, содержащее определение оператора ввода. Например, если ввести инструкцию Microsoft Foundation Classes (MFC) (такие как `pMainFrame ->UpdateWindow`) и нажмите клавишу открывающей скобки, чтобы начать со списком параметров, отображается подсказка метода Отображение определения `UpdateWindow` метод.

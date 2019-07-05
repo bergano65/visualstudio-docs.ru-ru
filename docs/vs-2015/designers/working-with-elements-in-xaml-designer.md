@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403450"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690030"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403450"
 Элементы к приложению XAML (элементы управления, макеты и фигуры) можно добавлять, работая непосредственно с кодом, или с помощью конструктора XAML. В этом разделе описывается работа с элементами в конструкторе XAML в Visual Studio или Blend для Visual Studio.  
   
 ## <a name="adding-an-element-to-a-layout"></a>Добавление элемента к макету  
- *Макет* — это процесс изменения размеров и положения элементов в пользовательском интерфейсе. Для размещения визуальных элементов необходимо поместить их в структуру [Панель](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). `Panel` имеет дочернее свойство, которое является коллекцией типов [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx). Вы можете использовать различные дочерние элементы `Panel`, такие как [Canvas](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) и [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), в качестве контейнеров макета и для размещения и упорядочения элементов на странице.  
+ *Макет* — это процесс изменения размеров и положения элементов в пользовательском интерфейсе. Для размещения визуальных элементов необходимо поместить их в структуру [Панель](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). `Panel` имеет дочернее свойство, которое является коллекцией типов [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). Вы можете использовать различные дочерние элементы `Panel`, такие как [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) и [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), в качестве контейнеров макета и для размещения и упорядочения элементов на странице.  
   
  По умолчанию панель `Grid` используется в качестве контейнера макета верхнего уровня на странице или форме. Можно добавлять панели макета, элементы управления и другие элементы на верхнем уровне макета страницы.  
   
@@ -34,7 +34,7 @@ ms.locfileid: "63403450"
   
     - Перетащите элемент с **панели элементов** в область рисования.  
   
-    - На **панели элементов** выберите один из инструментов рисования (например, [Эллипс](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) или [Прямоугольник](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) и создайте объект на активной панели.  
+    - На **панели элементов** выберите один из инструментов рисования (например, [Эллипс](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) или [Прямоугольник](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) и создайте объект на активной панели.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Изменение порядка слоев элементов  
  Если на монтажной панели конструктора XAML имеется два элемента, один из них будет находиться перед другим в структуре слоев. В нижней части списка элементов в окне "Структура документа" находится первый передний элемент (если не задано свойство **ZIndex** элемента). При вставке элемента на страницу, форму или в контейнер макета элемент автоматически помещается перед другими элементами в активном элементе контейнера. Чтобы изменить порядок элементов, можно использовать команды **Порядок** или перетаскивать элементы в дереве объектов в окне "Структура документа".  

@@ -3,17 +3,17 @@ title: Синхронно автозагруженные расширения
 ms.date: 02/16/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3831fb06d23f622f85a55f5efd0a5650ca5e47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b18642269326c516c2af0baef57cb306f60ae6a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799042"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316717"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Синхронно автозагруженные расширения
 
@@ -29,7 +29,7 @@ ms.locfileid: "62799042"
 
 - Щелкните **больше не показывать это сообщение** чтобы закрыть уведомление. При выборе этого параметра также предотвращает все будущие уведомления от синхронно расширений загружаться автоматически. Пользователи по-прежнему получать уведомления о других возможностях Visual Studio.
 
-### <a name="performance-manager-dialog"></a>Диалоговое окно Диспетчер производительности
+## <a name="performance-manager-dialog"></a>Диалоговое окно Диспетчер производительности
 
 ![диалоговое окно диспетчера производительности](media/performance-manager.png)
 
@@ -39,3 +39,17 @@ ms.locfileid: "62799042"
 * Пользователи могут связаться со своих поставщиков расширений для процесса миграции.
 
 Авторы расширений можно найти инструкции по миграции пакетов для асинхронной автозагрузки в [миграция AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Укажите параметры синхронной автозагрузки, с помощью групповой политики
+
+Начиная с Visual Studio 2019 обновления 1 по умолчанию, синхронные автозагрузки блоки установки Visual Studio. Когда вы включаете групповой политики, можно настроить Visual Studio, чтобы разрешить синхронной автозагрузки на отдельных компьютерах. Для этого задайте политику на основе реестра в следующем разделе:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+
+Запись = **разрешено**
+
+Value = (DWORD)
+* **0** синхронной Автозагрузка не допускается
+* **1** допускается синхронной автозагрузки
+
+Дополнительные сведения о параметрах синхронной автозагрузки в Visual Studio 2019 обновлением 1 см. в разделе [синхронной поведение автозагрузки](https://aka.ms/AA52xzw) страницы.

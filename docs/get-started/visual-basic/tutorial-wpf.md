@@ -1,8 +1,8 @@
 ---
-title: Учебник. Создание приложения Hello World в Windows Presentation Foundation (WPF) на Visual Basic
+title: Создание приложения Hello World с помощью WPF на Visual Basic
 description: Создание простого приложения Windows Desktop .NET на Visual Basic в Visual Studio с помощью платформы пользовательского интерфейса Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 924b3000ffa0648a9086ed4771e921a939859804
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965937"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043556"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Учебник. Создание простого приложения с помощью Visual Basic
 
@@ -67,7 +67,7 @@ ms.locfileid: "62965937"
 
      ![В строке меню выберите "Файл", "Создать", "Проект"](../media/exploreide-filenewproject.png)
 
-2. В диалоговом окне **Новый проект** выберите **Установленные** > **Visual Basic** >  категорию **Рабочий стол Windows**, а затем выберите шаблон **Приложения WPF (.NET Framework)**. Присвойте проекту имя **HelloWPFApp** и щелкните **ОК**.
+2. В диалоговом окне **Новый проект** выберите **Установленные** > **Visual Basic** >  категорию **Рабочий стол Windows**, а затем выберите шаблон **Приложения WPF (.NET Framework)** . Присвойте проекту имя **HelloWPFApp** и щелкните **ОК**.
 
      ![Шаблон приложения WPF в диалоговом окне нового проекта Visual Studio](media/exploreide-newproject-vb.png)
 
@@ -131,7 +131,7 @@ Visual Studio создает решение и проект HelloWPFApp, а в *
 Разметка XAML должна выглядеть приблизительно так, как в следующем примере:
 
 ```xaml
-<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+<TextBlock HorizontalAlignment="Left" Margin="381,100,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 ```
 
 ### <a name="customize-the-text-in-the-text-block"></a>Настройка текста в текстовом блоке
@@ -298,9 +298,20 @@ IsChecked="True"
 
 3. Выполните сборку решения, выбрав **Сборка** > **Собрать решение**.
 
-Поздравляем с завершением этого учебника! Построенный файл *.exe* находится в каталоге решения и проекта (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Поздравляем с завершением этого учебника! Построенный файл *.exe* находится в каталоге решения и проекта ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>См. также
 
-- [Новые возможности Visual Studio 2017](../../ide/whats-new-visual-studio.md)
-- [Советы по повышению производительности](../../ide/productivity-tips-for-visual-studio.md)
+::: moniker range="vs-2017"
+
+- [Новые возможности Visual Studio 2017](../../ide/whats-new-visual-studio-2017.md)
+- [Советы по повышению производительности](../../ide/productivity-features.md)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Новые возможности Visual Studio 2019](../../ide/whats-new-visual-studio-2019.md)
+- [Советы по повышению производительности](../../ide/productivity-features.md)
+
+::: moniker-end

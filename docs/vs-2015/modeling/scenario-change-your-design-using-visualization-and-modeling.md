@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbb123b952287de0b519bfdd40b0d9a851a0b81f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099680"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686879"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Сценарий: Изменение проекта с помощью визуализации и моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ ms.locfileid: "60099680"
 - [Проверка кода по схемам слоев](../modeling/validate-code-with-layer-diagrams.md)  
   
   > [!NOTE]
-  >  Некоторые версии Visual Studio поддерживает проверку слоев, а также версии карт кода и UML-схем для визуализации и моделирования, доступные только для чтения. Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  > Некоторые версии Visual Studio поддерживает проверку слоев, а также версии карт кода и UML-схем для визуализации и моделирования, доступные только для чтения. Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="UnderstandingCommunicating"></a> Выяснение и передача сведений о системе  
  Схемы моделирования в Visual Studio можно использовать по мере необходимости или в соответствии с выбранным подходом к разработке, поскольку конкретный порядок их применения не установлен. Обычно за время работы над проектом команды обращаются к своим моделям итерационно и многократно. Каждая схема обеспечивает определенные средства, помогающие понять, описать и передать различные аспекты разрабатываемой системы.  
@@ -297,11 +297,11 @@ ms.locfileid: "60099680"
   
  Пример  
   
-- [Определите процесс сборки](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [Определите процесс сборки](https://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
-- [Использование процесса сборки с условным возвратом для проверки изменений](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [Использование процесса сборки с условным возвратом для проверки изменений](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
-- [Настройка шаблона процесса сборки](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Настройка шаблона процесса сборки](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
 ### <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
@@ -336,13 +336,13 @@ ms.locfileid: "60099680"
   
   Пример  
   
-- [Отслеживание работы с помощью Visual Studio Team Services или Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [Отслеживание работы с помощью Visual Studio Team Services или Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 - [Связывание элементов модели и рабочих элементов](../modeling/link-model-elements-and-work-items.md)  
   
-- [Диаграммы, панели мониторинга и отчеты для Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [Диаграммы, панели мониторинга и отчеты для Visual Studio ALM](https://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
-- [Создание невыполненной работы и задач с помощью Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [Создание невыполненной работы и задач с помощью Project](https://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ### <a name="TestValidateCheckInCode"></a> Тестирование, проверка и возврат кода  
  Выполнив очередную задачу, команды возвращают свой код в систему управления версиями Team Foundation и получают от Team Foundation Server напоминания, если забудут это сделать. Прежде чем Team Foundation Server примет возвращенные результаты, команды должны провести модульные тесты и проверку слоев для проверки кода по тестовым случаям и на соответствие проекту. Они используют Team Foundation Server для регулярного выполнения сборок, автоматических модульных тестов и проверки слоев. Это позволяет им контролировать соответствие кода перечисленным ниже критериям.  
@@ -359,13 +359,13 @@ ms.locfileid: "60099680"
   
   Пример  
   
-- [Тестирование приложения](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [Тестирование приложения](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
 - [Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)  
   
 - [Использование управления версиями](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
-- [Построение приложения](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Построение приложения](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ## <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Компаниям Lucerne и Dinner Now необходимо объединить свои платежные системы. В следующих разделах показано, как схемы моделирования в Visual Studio помогают им выполнить эту задачу.  
@@ -888,6 +888,6 @@ ms.locfileid: "60099680"
  [Визуализация кода](../modeling/visualize-code.md)   
  [Создание моделей для приложения](../modeling/create-models-for-your-app.md)   
  [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)   
- [Использование моделей в гибкой разработке](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Использование моделей в гибкой разработке](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Проверка системы во время разработки](../modeling/validate-your-system-during-development.md)   
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)

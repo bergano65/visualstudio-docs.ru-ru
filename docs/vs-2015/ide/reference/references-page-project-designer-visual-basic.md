@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4cdda457fec0b98e6d90760376688727b9018f8b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114370"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689840"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Страница "Ссылки" в конструкторе проектов (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60114370"
  Нажмите эту кнопку, чтобы получить доступ к диалоговому окну **Пути для ссылок**.  
   
 > [!NOTE]
->  Если система проектов находит ссылку на сборку, система разрешает ссылку путем поиска в следующих расположениях в указанном порядке.  
+> Если система проектов находит ссылку на сборку, система разрешает ссылку путем поиска в следующих расположениях в указанном порядке.  
 > 
 > 1. Папка проекта Файлы проекта папки отображаются в **обозревателе решений**, если команда **Показать все файлы** не действует.  
 >    2. Папки, указанные в диалоговом окне **Пути для ссылок**.  
@@ -87,7 +87,7 @@ ms.locfileid: "60114370"
 - пространства имен XML, такие как `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
   
 ## <a name="see-also"></a>См. также  
- [NIB Практическое: Добавление и удаление ссылок с помощью диалогового окна "Добавление ссылок"](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB Практическое: Добавление и удаление ссылок с помощью диалогового окна "Добавление ссылок"](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Практическое руководство. Добавление или удаление импортированных пространств имен (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
- [NIB: Добавить ссылку веб-диалоговое окно](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)   
- [Оператор Imports (пространство имен XML)](http://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)
+ [NIB: Добавить ссылку веб-диалоговое окно](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)   
+ [Оператор Imports (пространство имен XML)](https://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)

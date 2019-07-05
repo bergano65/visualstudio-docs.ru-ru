@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Программным способом поиска и замены текста в документах
+title: Поиск и замена текста в документах программным способом
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9799e958903c56f5a3423f86736668a2affd87da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6508fee244dd50a1d2fd42203c2982b959b0e547
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071451"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328902"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Практическое руководство. Программным способом поиска и замены текста в документах
   Объект <xref:Microsoft.Office.Interop.Word.Find> является членом объектов <xref:Microsoft.Office.Interop.Word.Selection> и <xref:Microsoft.Office.Interop.Word.Range>, каждый из которых можно использовать для поиска текста в документах Microsoft Office Word. Команда замены является расширением команды поиска.

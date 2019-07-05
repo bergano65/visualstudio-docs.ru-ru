@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a33911ffe8c28dd84166e3e16ac6b7f0f48f583c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438140"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263019"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Пошаговое руководство. Создание среды построения из нескольких компьютеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ ms.locfileid: "63438140"
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Скопируйте только следующие файлы из папки \Debug_NonRedist\x86\ или \Debug_NonRedist\x64\ на компьютере построения, как описывается в разделе [Подготовка тестового компьютера для запуска исполняемого файла отладки](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Другие файлы не копируются.  
+5. Скопируйте только следующие файлы из папки \Debug_NonRedist\x86\ или \Debug_NonRedist\x64\ на компьютере построения, как описывается в разделе [Подготовка тестового компьютера для запуска исполняемого файла отладки](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Другие файлы не копируются.  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ ms.locfileid: "63438140"
          Для собственной 64-разрядной архитектуры построения задайте ссылку на 64-разрядную версию MSBuild.  
   
 ## <a name="see-also"></a>См. также раздел  
- [Подготовка тестового компьютера для выполнения исполняемого файла отладки](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [Подготовка тестового компьютера для выполнения исполняемого файла отладки](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)   
  [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)

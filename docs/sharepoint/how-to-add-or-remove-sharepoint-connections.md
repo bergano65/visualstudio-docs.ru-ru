@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70594f8c881289bd394f33353f237bdab71c91f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3c094ad703727903e7109d6a748b8383e4cad7d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435488"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Практическое руководство. Добавление и удаление подключений SharePoint
   Обозреватель серверов позволяет просматривать сайты SharePoint, а также для подключения к данным. Тем не менее, чтобы можно было просматривать содержимое на сайте SharePoint необходимо добавить его в **подключения SharePoint** узла.
@@ -41,7 +41,7 @@ ms.locfileid: "60077372"
 3. Выберите сайт, а затем в строке меню выберите **изменить** > **удалить**.
 
     > [!NOTE]
-    >  Этот шаг не удаляет сам сайт; он удаляется только подключение из **обозревателя серверов**.
+    > Этот шаг не удаляет сам сайт; он удаляется только подключение из **обозревателя серверов**.
 
 ## <a name="see-also"></a>См. также
 - [Просмотр подключений SharePoint с помощью обозревателя серверов](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

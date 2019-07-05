@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c21b50aab30d3ce7603ab8e5f7e6582332e94628
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104269"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685401"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Практическое руководство. Указание событий сборки (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60104269"
  События сборки указываются в диалоговом окне **События сборки**, которое можно открыть со страницы **Компиляция** **конструктора проектов**.  
   
 > [!NOTE]
->  Visual Basic Express не поддерживает запись событий сборки. Она поддерживается только в полных версиях Visual Studio.  
+> Visual Basic Express не поддерживает запись событий сборки. Она поддерживается только в полных версиях Visual Studio.  
   
 ## <a name="how-to-specify-pre-build-and-post-build-events"></a>Как указать события перед сборкой и после нее  
   
@@ -45,10 +45,10 @@ ms.locfileid: "60104269"
 4. Введите аргументы командной строки для действий перед сборкой и после нее и нажмите кнопку **ОК**.  
   
     > [!NOTE]
-    >  Добавьте оператор `call` перед всеми командами после сборки, запускающими BAT-файлы. Например, `call C:\MyFile.bat` или `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Добавьте оператор `call` перед всеми командами после сборки, запускающими BAT-файлы. Например, `call C:\MyFile.bat` или `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
     > [!NOTE]
-    >  Если событие перед сборкой или после сборки завершается ошибкой, можно прервать сборку, задав завершение действия события с кодом, отличным от нуля (0), что означает успешное выполнение действия.  
+    > Если событие перед сборкой или после сборки завершается ошибкой, можно прервать сборку, задав завершение действия события с кодом, отличным от нуля (0), что означает успешное выполнение действия.  
   
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Пример Как изменить данные манифеста с помощью события после сборки  
  В следующей процедуре демонстрируется, как задать минимальную версию операционной системы в манифесте приложения с помощью команды EXE, вызываемой из события после сборки (файл exe.manifest файл в каталоге проекта). Минимальная версия операционной системы — число из четырех частей, например 4.10.0.0. Чтобы это сделать, команда изменит раздел `<dependentOS>` манифеста:  
@@ -165,7 +165,7 @@ ms.locfileid: "60104269"
     ```  
   
 ## <a name="see-also"></a>См. также  
- [Управление свойствами компиляции](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Управление свойствами компиляции](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Страница "Публикация" в конструкторе проектов](../ide/reference/publish-page-project-designer.md)   
  [Диалоговое окно «Командная строка события "До сборки" или "После сборки"»](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   

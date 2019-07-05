@@ -18,17 +18,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33c466d3c7a619de87baccd2713c9a595283d5ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4cba42203cb5d42e2518d2f1ead7fb998d9b6425
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422799"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680638"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Практическое руководство. Настройка проекта для конкретной платформы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] позволяет настраивать приложения для различных платформ, включая 64-разрядные платформы. Дополнительные сведения о поддержке 64-разрядных платформ в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] см. в разделе [64-разрядные приложения](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] позволяет настраивать приложения для различных платформ, включая 64-разрядные платформы. Дополнительные сведения о поддержке 64-разрядных платформ в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] см. в разделе [64-разрядные приложения](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>Нацеливание на платформы с помощью диспетчера конфигураций  
  **Диспетчер конфигураций** позволяет быстро добавить новую платформу для нацеливания проекта. Если выбрать одну из платформ, входящих в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], свойства проекта изменяются под сборку проекта для выбранной платформы.  
@@ -57,14 +57,14 @@ ms.locfileid: "63422799"
   
  Способ выполнения этой задачи зависит от используемого языка программирования. Дополнительные сведения см. на следующих страницах:  
   
-- Для проектов [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] см. раздел [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+- Для проектов [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] см. раздел [/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
 - Для проектов [!INCLUDE[csprcs](../includes/csprcs-md.md)] см. раздел [Страница "Сборка", конструктор проектов (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
-- Для проектов [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] см. раздел [/clr (компиляция CLR)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+- Для проектов [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] см. раздел [/clr (компиляция CLR)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 ## <a name="see-also"></a>См. также раздел  
  [Общие сведения о платформах построения](../ide/understanding-build-platforms.md)   
- [/platform (параметры компилятора C#)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
- [64-разрядные приложения](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [/platform (параметры компилятора C#)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
+ [64-разрядные приложения](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Поддержка 64-разрядных сред IDE Visual Studio](../ide/visual-studio-ide-64-bit-support.md)

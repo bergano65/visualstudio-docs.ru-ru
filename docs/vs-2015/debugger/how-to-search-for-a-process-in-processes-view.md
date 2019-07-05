@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431732"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Практическое руководство. поиск процесса в представлении процессов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58980548"
 4. Очистите все поля, для которых вы не хотите указать значения.  
   
    > [!TIP]
-   >  Чтобы найти все процессы, принадлежащие модулю, снимите **процесс** объекта и введите имя модуля в **модуль** поле. Затем с помощью **Найти далее** для продолжения поиска.  
+   > Чтобы найти все процессы, принадлежащие модулю, снимите **процесс** объекта и введите имя модуля в **модуль** поле. Затем с помощью **Найти далее** для продолжения поиска.  
   
 5. Выберите **вверх** или **вниз** для исходное направление поиска.  
   

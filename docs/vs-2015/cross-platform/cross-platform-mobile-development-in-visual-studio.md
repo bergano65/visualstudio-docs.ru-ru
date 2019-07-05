@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 01b767e4b2aceeb50ca72ef6852934f4b0502b98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114318"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698820"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60114318"
 
 |**Дополнительные сведения**|
 |--------------------|
-|Выберите нужный вариант совместного использования кода: на основе общих проектов, проектов переносимой библиотеки классов или обоих этих проектов.<br /><br /> [Совместное использование кода несколькими платформами](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (блог .NET Framework)<br /><br /> [Варианты совместного использования кода](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Параметры совместного использования кода с платформой .NET Framework](http://msdn.microsoft.com/library/dn720832.aspx) (библиотека MSDN)|
+|Выберите нужный вариант совместного использования кода: на основе общих проектов, проектов переносимой библиотеки классов или обоих этих проектов.<br /><br /> [Совместное использование кода несколькими платформами](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (блог .NET Framework)<br /><br /> [Варианты совместного использования кода](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Параметры совместного использования кода с платформой .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (библиотека MSDN)|
 
 ### <a name="WindowsHTML"></a> Целевые устройства Windows 10
  ![Устройства Windows](../cross-platform/media/windowsdevices.png "WindowsDevices")
@@ -90,7 +90,7 @@ ms.locfileid: "60114318"
 |**Дополнительные сведения**|
 |--------------------|
 |[Дополнительные сведения об универсальных приложениях Windows](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Центр разработки для Windows)|
-|[Создание первого приложения](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Центр разработки для Windows)|
+|[Создание первого приложения](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Центр разработки для Windows)|
 |[Разработка приложений для универсальной платформы Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Перенос приложений на универсальную платформу Windows (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
@@ -171,6 +171,6 @@ ms.locfileid: "60114318"
 
 ## <a name="see-also"></a>См. также
 
-- [Добавление API Office 365 в проект Visual Studio](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
-- [Мобильные службы Azure](http://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
+- [Добавление API Office 365 в проект Visual Studio](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
+- [Мобильные службы Azure](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
 - [Application Insights](/azure/application-insights/app-insights-overview)

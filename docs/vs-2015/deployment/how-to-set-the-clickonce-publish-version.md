@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bca76d104550a8607de82c9092f57d43c027e63c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ec5d5d742b5a0749d1d5d52cee0a0545dd8570f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436208"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Практическое руководство. Установка версии публикации приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60104483"
  `Publish Version` Может быть установлено на **публикации** странице **конструктор проектов**.  
   
 > [!NOTE]
->  Имеется параметр проекта, который автоматически увеличивает `Publish Version` свойство каждый раз при публикации приложения; этот параметр включен по умолчанию. Дополнительные сведения см. в разделе [Как автоматически увеличить номера версии публикации ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
+> Имеется параметр проекта, который автоматически увеличивает `Publish Version` свойство каждый раз при публикации приложения; этот параметр включен по умолчанию. Дополнительные сведения см. в разделе [Как автоматически увеличить номера версии публикации ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
   
 ### <a name="to-change-the-publish-version"></a>Изменение версии публикации  
   
@@ -43,7 +43,7 @@ ms.locfileid: "60104483"
 3. В **версия публикации** поле, приращение **основных**, **незначительные**, **построения**, или **редакции** версии номера.  
   
     > [!NOTE]
-    >  Вы никогда не следует уменьшения номером версии; Это может привести к непредсказуемым обновления поведение.  
+    > Вы никогда не следует уменьшения номером версии; Это может привести к непредсказуемым обновления поведение.  
   
 ## <a name="see-also"></a>См. также  
  [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   

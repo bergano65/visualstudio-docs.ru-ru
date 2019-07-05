@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::IsCustomAttributeDefined method
 ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08534abc468ac358d7c5eeba25129d9752f84e5a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f088a3e0fb3cd88d2b5d178ed61441d52c9efe16
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324127"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 Определяет, было ли определено определенного настраиваемого атрибута.
@@ -36,10 +39,9 @@ int IsCustomAttributeDefined(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszCustomAttributeName`
-
- [in] Строка, содержащая имя настраиваемого атрибута для поиска.
+## <a name="parameters"></a>Параметры
+`pszCustomAttributeName`\
+[in] Строка, содержащая имя настраиваемого атрибута для поиска.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает значение S_OK, если настраиваемого атрибута определен в этом методе, в противном случае возвращает значение S_FALSE.

@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 885f96a4e1e43fe422c6fd9cfaa414fe5871bce1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107662"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688576"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Анализ проблем с памятью .NET Framework
 С помощью анализатора управляемой памяти Visual Studio вы можете найти утечки памяти и определить неэффективное использование памяти в коде .NET Framework. Минимальная версия .NET Framework целевого кода — .NET Framework 4.5.  
@@ -47,7 +47,7 @@ ms.locfileid: "60107662"
  ![К началу](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Содержание](#BKMK_Contents)  
   
 ## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Определение проблемы с памятью в приложении  
- Самым очевидным признаком проблем с памятью служит производительность приложения, особенно ее падение с течением времени. Ухудшение производительности других приложений во время работы вашего приложения также может указывать на проблему с памятью. Если возможно возникновение проблем с памятью, использовать диспетчером задач или [системный монитор Windows](http://technet.microsoft.com/library/cc749249.aspx) для ее дальнейшего изучения. Например, посмотрите, существуют ли случаи увеличения общего объема памяти, которые вы не можете объяснить — возможно, это источник утечки памяти:  
+ Самым очевидным признаком проблем с памятью служит производительность приложения, особенно ее падение с течением времени. Ухудшение производительности других приложений во время работы вашего приложения также может указывать на проблему с памятью. Если возможно возникновение проблем с памятью, использовать диспетчером задач или [системный монитор Windows](https://technet.microsoft.com/library/cc749249.aspx) для ее дальнейшего изучения. Например, посмотрите, существуют ли случаи увеличения общего объема памяти, которые вы не можете объяснить — возможно, это источник утечки памяти:  
   
  ![Постоянный рост емкости памяти в мониторе ресурсов](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
@@ -56,10 +56,10 @@ ms.locfileid: "60107662"
  ![Пиковые объемы используемой памяти в диспетчере ресурсов](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
 ## <a name="BKMK_Collect_memory_snapshots"></a> Сбор снимков памяти  
- Средство анализа памяти обрабатывает сведения в *файлы дампа* , содержащие сведения о куче. Можно создать файлы дампов в Visual Studio, или можно использовать такой инструмент, как [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) из [Windows Sysinternals](http://technet.microsoft.com/sysinternals). См. в разделе [что такое дамп и как его создать?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) в блоге Visual Studio Debugger Team.  
+ Средство анализа памяти обрабатывает сведения в *файлы дампа* , содержащие сведения о куче. Можно создать файлы дампов в Visual Studio, или можно использовать такой инструмент, как [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) из [Windows Sysinternals](https://technet.microsoft.com/sysinternals). См. в разделе [что такое дамп и как его создать?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) в блоге Visual Studio Debugger Team.  
   
 > [!NOTE]
->  Большинство средств могут собирать данные дампа с полными данными памяти кучи или без них. Анализатору памяти Visual Studio требуются полные сведения о куче.  
+> Большинство средств могут собирать данные дампа с полными данными памяти кучи или без них. Анализатору памяти Visual Studio требуются полные сведения о куче.  
   
  **Получение дампа из Visual Studio**  
   

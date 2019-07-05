@@ -7,17 +7,17 @@ helpviewer_keywords:
 - language services [managed package framework], IntelliSense Parameter Info
 - Parameter Info (IntelliSense), supporting in language services [managed package framework]
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 838e057fd0063df6a1c592dfefee759b56b9f89b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ed95be7611c4733e2d10691bb0bf5eeb798a67b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041199"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314672"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Сведения о параметрах в языковой службе прежних версий
 Сведения о параметрах IntelliSense — tooltip, отображающий сигнатура метода, когда пользователь вводит в списке параметров начального символа (обычно открывающей круглой скобкой) для списка параметров метода. Каждый параметр вводится и имеет тип разделителя параметра (обычно запятой), подсказка обновляется для отображения следующего параметра полужирным шрифтом.
@@ -27,7 +27,7 @@ ms.locfileid: "60041199"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
 
 ## <a name="implementation"></a>Реализация
  Средство синтаксического анализа следует задать значение триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> устанавливается при обнаружении начального символа параметр списка (часто открывающая скобка). Она должна задать <xref:Microsoft.VisualStudio.Package.TokenTriggers> активировать при нахождении разделителя параметров (часто запятая). В этом случае сведения о параметрах всплывающей подсказки для обновления и отображения следующего параметра полужирным шрифтом. Средство синтаксического анализа следует задать значение триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> при если находит конечный символ списка параметров (часто закрывающая круглая скобка).
@@ -35,7 +35,7 @@ ms.locfileid: "60041199"
  <xref:Microsoft.VisualStudio.Package.TokenTriggers> Значение триггера инициирует вызов <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> метод, который в свою очередь вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> средство синтаксического анализа метод синтаксического анализа причину <xref:Microsoft.VisualStudio.Package.ParseReason>. Если средство синтаксического анализа определяет, что перед списком параметров начального символа идентификатора является именем распознанных метод, он возвращает список сопоставлении сигнатур методов в <xref:Microsoft.VisualStudio.Package.AuthoringScope> объекта. Если найдены все подписи метода, сведения о параметрах всплывающей подсказки отображается с подписью, первой в списке. Этой подсказкой обновляется, как введено несколько подписи. При вводе конечный символ списка параметров, сведения о параметрах всплывающей подсказки удаляется из представления.
 
 > [!NOTE]
->  Чтобы убедиться, что сведения о параметрах всплывающей подсказки имеет правильный формат, необходимо переопределить свойства на <xref:Microsoft.VisualStudio.Package.Methods> классе, чтобы предоставить соответствующие символы. Базовый <xref:Microsoft.VisualStudio.Package.Methods> предполагается, что класс C#-стиль сигнатуру метода. См. в разделе <xref:Microsoft.VisualStudio.Package.Methods> класс Дополнительные сведения о том, как это можно сделать.
+> Чтобы убедиться, что сведения о параметрах всплывающей подсказки имеет правильный формат, необходимо переопределить свойства на <xref:Microsoft.VisualStudio.Package.Methods> классе, чтобы предоставить соответствующие символы. Базовый <xref:Microsoft.VisualStudio.Package.Methods> предполагается, что класс C#-стиль сигнатуру метода. См. в разделе <xref:Microsoft.VisualStudio.Package.Methods> класс Дополнительные сведения о том, как это можно сделать.
 
 ## <a name="enabling-support-for-the-parameter-info"></a>Включение поддержки для сведения о параметрах
  Для поддержки сведения о параметрах подсказки, необходимо задать `ShowCompletion` именованный параметр из <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> для `true`. Языковая служба считывает значение этой записи реестра из <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> свойство.

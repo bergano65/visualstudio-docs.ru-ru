@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
 - automation [Visual Studio SDK], VSPackages
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b72e1493e8ab00f3aa98f3a9bd8e1e1dd30201e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9685d14651a40fd26842e0d922fefbc0075c00c5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614341"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341483"
 ---
 # <a name="providing-automation-for-vspackages"></a>Предоставление автоматизации для пакетов VSPackage
 Существует два основных способа для обеспечения автоматизации пакетов VSPackage: путем реализации объекты VSPackage и реализации объектов автоматизации standard. Как правило они используются вместе для расширения модели автоматизации среды.
@@ -33,7 +33,7 @@ ms.locfileid: "56614341"
  Архитектура событий среды предлагает другое место, можно добавлять собственные объекты определенного VSPackage. Например путем создания собственных объектов событий с уникальным, вы можете расширить модель событий среды для проектов. Может потребоваться предоставить свои собственные события, при добавлении нового элемента в проект собственного типа. Дополнительные сведения см. в разделе [предоставление событий](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md).
 
 #### <a name="window-objects"></a>Объекты окон
- Windows может снова передавать объект автоматизации определенного VSPackage в среду, при вызове. Объект, который является производным от реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, <xref:EnvDTE.IExtensibleObject> или `IDispatch` , передает обратно свойства, расширяя объект окна, в котором он размещен. Например этот подход можно использовать для предоставления службы автоматизации для элемента управления, находящегося в рамке окна. Этот объект и другие объекты, которые она может расширить семантика вам для разработки. Дополнительные сведения см. в разделе [Как Автоматизация для Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md).
+ Windows может снова передавать объект автоматизации определенного VSPackage в среду, при вызове. Объект, который является производным от реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, <xref:EnvDTE.IExtensibleObject> или `IDispatch` , передает обратно свойства, расширяя объект окна, в котором он размещен. Например этот подход можно использовать для предоставления службы автоматизации для элемента управления, находящегося в рамке окна. Этот объект и другие объекты, которые она может расширить семантика вам для разработки. Дополнительные сведения см. в разделе [Практическое руководство. Автоматизация для Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md).
 
 #### <a name="options-pages-on-the-tools-menu"></a>Параметры страницы в меню "Сервис"
  Можно создавать страницы для расширения инструментов, модель автоматизации параметры реализации страницы и добавления сведений в реестр, чтобы создать свои собственные параметры. На страницах можно затем вызывать с помощью объектной модели среды, как и все остальные параметры страницы. Если для разработки компонента, добавляемого в среде с помощью пакетов VSPackage требуются параметры страницы, то необходимо добавить также поддержка модели автоматизации. Дополнительные сведения см. в разделе [Поддержка автоматизации страниц параметров](../../extensibility/internals/automation-support-for-options-pages.md).

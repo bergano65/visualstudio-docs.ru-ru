@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39360019e798a5f76bfe5344aca6f02abbbfa6a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 507bce496405f615343a9c109ff71196d814af08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438731"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools для сценарии установки среды выполнения Office
   Можно установить Visual Studio 2010 Tools для Office runtime тремя способами:
@@ -46,7 +46,7 @@ ms.locfileid: "56638612"
  При установке Office Developer Tools в Visual Studio расширения Office для [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] и [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] всегда устанавливаются на компьютере разработчика. Расширения Office для платформы .NET Framework 3.5 устанавливаются только в том случае, если .NET Framework 3.5 уже имеется на компьютере разработчика. Если вы устанавливаете платформу .NET Framework 3.5 после установки [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], среда выполнения автоматически установит расширения Office для .NET Framework 3.5 при первом создании проекта Office, ориентированном на .NET Framework 3.5.
 
 > [!WARNING]
->  Создать проект Office, ориентированный на платформу .NET Framework 3.5, с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] или более поздней версии, нельзя.
+> Создать проект Office, ориентированный на платформу .NET Framework 3.5, с помощью [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] или более поздней версии, нельзя.
 
  Дополнительные сведения об установке Office developer tools см. в разделе [как: Настройка компьютера для разработки решений Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 

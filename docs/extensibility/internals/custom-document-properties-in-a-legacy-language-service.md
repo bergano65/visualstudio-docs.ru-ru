@@ -7,17 +7,17 @@ helpviewer_keywords:
 - document properties, custom
 - language services [managed package framework], custom document properties
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98402a61629b48b25a8636aaf6a912e89c283951
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8422e35e5241cf1cef30d0ba4a1fe7815323d091
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605843"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312906"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Настраиваемые свойства документа в языковой службы прежних версий
 Свойства документа, которые могут отображаться в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **свойства** окна. Языки программирования обычно не имеют свойства, связанные с отдельным исходных файлов. Тем не менее XML поддерживает свойства документа, которые влияют на кодирование, схемы и таблицы стилей.

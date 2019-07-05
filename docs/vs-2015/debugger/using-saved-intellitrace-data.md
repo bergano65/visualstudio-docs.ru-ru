@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3409cf6f5f86ea4e4649049f3cc1c49fbb1f5c7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3681523595c6e4db50a2a05a7a325decc065cfc5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092712"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684392"
 ---
 # <a name="using-saved-intellitrace-data"></a>Использование сохраненных данных IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,8 @@ ms.locfileid: "60092712"
     |**Источник**|**См. разделы**|  
     |----------------|-------------|  
     |Сеанс IntelliTrace в Visual Studio Enterprise (но не в выпусках Professional или Community)|[Возможности IntelliTrace](../debugger/intellitrace-features.md)|  
-    |Сеанс тестирования в Microsoft Test Manager. Это прикрепляет ITRACE-файл к рабочему элементу Team Foundation Server.|[Сбор дополнительных данных диагностики в ручных тестах](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
-    |Microsoft Monitoring Agent либо отдельно, либо вместе с System Center 2012 R2 Operations Manager для веб-приложений ASP.NET и приложений SharePoint, работающих в развертывании|-   [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md)<br />-   [Новые возможности для System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
+    |Сеанс тестирования в Microsoft Test Manager. Это прикрепляет ITRACE-файл к рабочему элементу Team Foundation Server.|[Сбор дополнительных данных диагностики в ручных тестах](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
+    |Microsoft Monitoring Agent либо отдельно, либо вместе с System Center 2012 R2 Operations Manager для веб-приложений ASP.NET и приложений SharePoint, работающих в развертывании|-   [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md)<br />-   [Новые возможности для System Center 2012 R2 Operations Manager](https://technet.microsoft.com/library/dn249700.aspx)|  
   
 ## <a name="GetStarted"></a> Выберите действие  
   
@@ -66,7 +66,7 @@ ms.locfileid: "60092712"
     - В разделе **Шаги для воспроизведения**выберите ссылку **IntelliTrace** .  
   
 > [!TIP]
->  Если файл IntelliTrace был закрыт во время отладки, его можно легко открыть снова. Перейдите в меню **Отладка** и выберите **IntelliTrace**, **Показать сводку журнала**. Можно также выбрать **Показать сводку журнала** в окне **IntelliTrace** . Эта команда доступна только при отладке с помощью IntelliTrace.  
+> Если файл IntelliTrace был закрыт во время отладки, его можно легко открыть снова. Перейдите в меню **Отладка** и выберите **IntelliTrace**, **Показать сводку журнала**. Можно также выбрать **Показать сводку журнала** в окне **IntelliTrace** . Эта команда доступна только при отладке с помощью IntelliTrace.  
   
 ## <a name="Understand"></a> Изучение журнала IntelliTrace  
  Некоторые из следующих разделов в ITRACE-файле отображаются только в том случае, если данные собраны из определенного источника, например Test Manager или приложений SharePoint.  
@@ -207,7 +207,7 @@ ms.locfileid: "60092712"
   
     ![Журнал IntelliTrace &#45; необработанные исключения SharePoint](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   Пошаговое руководство, см. в разделе [Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Для типов данных, регистрируемых агентом, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).  
+   Пошаговое руководство, см. в разделе [Пошаговое руководство: Отладка приложения SharePoint с помощью IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Для типов данных, регистрируемых агентом, см. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).  
   
 ### <a name="ThreadsList"></a> Список потоков  
  Изучите записанные потоки, которые работали в целевом процессе. Можно начать отладку с первого допустимого события IntelliTrace в выделенном потоке.  
@@ -258,14 +258,14 @@ ms.locfileid: "60092712"
 |----------------|-------------------|  
 |**Имя модуля**|Имя файла модуля|  
 |**Путь к модулю**|Расположение на диске, где был загружен модуль|  
-|**Идентификатор модуля**|Уникальный идентификатор модуля, характерный для конкретной версии и соответствующий файлам символов (PDB). См. раздел [Finding symbol (.pdb) files and source files](http://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**Идентификатор модуля**|Уникальный идентификатор модуля, характерный для конкретной версии и соответствующий файлам символов (PDB). См. раздел [Finding symbol (.pdb) files and source files](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
 ### <a name="where-can-i-get-more-information"></a>Где можно получить дополнительные сведения?  
  [Использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [Возможности IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Сбор дополнительных данных диагностики в ручных тестах](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
+ [Сбор дополнительных данных диагностики в ручных тестах](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   

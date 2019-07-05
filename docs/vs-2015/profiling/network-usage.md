@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 62f6847e03484838f232a9b64f392ca0938f213d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114503"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673824"
 ---
 # <a name="network-usage"></a>Использование сети
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,14 +24,14 @@ ms.locfileid: "60114503"
  Средство «Сеть» поддерживает только приложения универсальной платформы для Windows. Другие платформы в настоящее время не поддерживаются.  
   
 > [!NOTE]
->  Более полное описание средства "Сеть" см. в разделе [Introducing Visual Studio’s network tool](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx) (Введение в средство "Сеть" Visual Studio).  
+> Более полное описание средства "Сеть" см. в разделе [Introducing Visual Studio’s network tool](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx) (Введение в средство "Сеть" Visual Studio).  
   
 ## <a name="collecting-network-tool-data"></a>Сбор данных средством «Сеть»  
  Средство **Сеть** следует запускать с открытым проектом Visual Studio на компьютере Visual Studio.  
   
 1. Откройте проект в Visual Studio.  
   
-2. В меню выберите **Отладка, Профилировщик производительности**. Выберите Сеть и нажмите кнопку **Запуск**.  
+2. В меню выберите **Отладка, Профилировщик производительности**. Выберите **Сеть** и нажмите кнопку **Запуск**.  
   
 3. Средство «Сеть» начнет сбор HTTP-трафика вашего приложения.  
   
@@ -74,6 +74,6 @@ ms.locfileid: "60114503"
 3. Ответ кнопки «Качественная печать» (на вкладке «Текст») поможет проанализировать полезные данные ответов JSON, XML, HTML, CSS, JavaScript и TypeScript и повысит удобочитаемость содержимого.  
   
 ## <a name="see-also"></a>См. также  
- [Запуск средств профилирования без отладки](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Запуск средств профилирования без отладки](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Блог о Visual Studio. Введение в инспектор сети Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Видео на Channel 9. Средства диагностики VS — новый Profiler сети](http://channel9.msdn.com/Series/ConnectOn-Demand/206)

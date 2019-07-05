@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 46a9b8ce099146b6bae853557404c7bfabbbfb6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c035c05480279012fba1101c3a60b020d34b1890
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993054"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687344"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115. Вызывайте GC.KeepAlive при использовании собственных ресурсов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "58993054"
  В следующем примере `BadMethod` не включает вызов `GC.KeepAlive` и таким образом нарушает правило. `GoodMethod` содержит Исправленный код.
 
 > [!NOTE]
->  В этом примере приведен код, несмотря на то, что код компилируется и выполняется, предупреждение не возникает, так как неуправляемый ресурс не при создании или освобождении.
+> В этом примере приведен код, несмотря на то, что код компилируется и выполняется, предупреждение не возникает, так как неуправляемый ресурс не при создании или освобождении.
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 
@@ -64,4 +64,4 @@ ms.locfileid: "58993054"
  <xref:System.GC.KeepAlive%2A?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName>
  <xref:System.Object.Finalize%2A?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>
- [Шаблон ликвидации](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Шаблон ликвидации](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

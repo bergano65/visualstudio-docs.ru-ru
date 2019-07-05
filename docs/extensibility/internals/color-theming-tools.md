@@ -3,17 +3,17 @@ title: Цвет темы инструменты | Документация Ма�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5840662956a43a8bc1ad7232dae8fc86ea6fb068
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b5ddf0121631525831f5f4e6971571321700b38b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089548"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338679"
 ---
 # <a name="color-theme-tools"></a>Цвет темы средства
 Пакет SDK для Visual Studio предоставляет несколько средств для создания и управления ими цветовые темы.

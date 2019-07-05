@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b32966dd8a64c4688878ab2843893a1f2a9a3cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5923bc99906cf4bcad8ea92ad74a30470fb41a1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432734"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Практическое руководство. Установка автономного Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60069670"
 В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] предусмотрен автономный профилировщик для запуска из командной строки, который может выполняться без установки интегрированной среды разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Подобная ситуация возникает в том случае, если для установки среды разработки на компьютере нет необходимости или возможности. Например, среду разработки не следует устанавливать на рабочем веб-сервере.  
   
 > [!NOTE]
->  При использовании автономного профилировщика для сбора данных по производительности веб-сайта ASP.NET программа командной строки [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) предпочтительнее программы [VSPerfCmd](../profiling/vsperfcmd.md).  
+> При использовании автономного профилировщика для сбора данных по производительности веб-сайта ASP.NET программа командной строки [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) предпочтительнее программы [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Установка автономного профилировщика  
   
@@ -34,12 +34,12 @@ ms.locfileid: "60069670"
 2. Добавьте пути к файлам vsintr.exe и msdis150.dll в системный путь.  
   
     > [!NOTE]
-    >  При установке [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] по умолчанию файлы vsinstr.exe и msdis150.dll находятся в папке \Program Files\Visual Studio 10\Team Tools\Performance Tools.  
+    > При установке [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] по умолчанию файлы vsinstr.exe и msdis150.dll находятся в папке \Program Files\Visual Studio 10\Team Tools\Performance Tools.  
   
 3. В командной строке введите **VSInstr**.  
   
     > [!NOTE]
-    >  Если отображаются сведения об использовании файла vsinstr.exe, установка выполнена правильно. Если выводится сообщение об ошибке, в котором указывается, что файл vsinstr.exe или одна из его зависимостей не найдены, проверьте правильность задания путей, как описано в шаге 2.  
+    > Если отображаются сведения об использовании файла vsinstr.exe, установка выполнена правильно. Если выводится сообщение об ошибке, в котором указывается, что файл vsinstr.exe или одна из его зависимостей не найдены, проверьте правильность задания путей, как описано в шаге 2.  
   
 4. Настройте сервер символов, присвоив переменной **_NT_SYMBOL_PATH** значение **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**.  
   
@@ -48,7 +48,7 @@ ms.locfileid: "60069670"
      **start %COMSPEC%**  
   
     > [!NOTE]
-    >  Подробные инструкции по настройке пакета сервера символов см. в статье [Практическое руководство. Сведения о символах Windows ссылку](../profiling/how-to-reference-windows-symbol-information.md).  
+    > Подробные инструкции по настройке пакета сервера символов см. в статье [Практическое руководство. Сведения о символах Windows ссылку](../profiling/how-to-reference-windows-symbol-information.md).  
   
 6. Для сериализации символов в файл данных профилирования (VSP) используется средство [VSPerfReport](../profiling/vsperfreport.md). Следует использовать параметры **VSPerfReport /summary:all /packsymbols**. Если символы в файл данных не вставлены, убедитесь в том, что переменная среды _NT_SYMBOL_PATH задана.  
   

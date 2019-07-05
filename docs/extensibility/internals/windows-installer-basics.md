@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fc52f846d7883d32f567df449a93c2626a710f81
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066264"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323049"
 ---
 # <a name="windows-installer-basics"></a>Основные сведения об установщике Windows
 Установщик Windows устанавливает и удаляет приложения или программных продуктов на компьютере пользователя, выполнения этих задач в блоках, именуемых компоненты установщика Windows (иногда называется WICs или просто компонентов). Идентификатор GUID идентифицирует каждый WIC, который является основной единицей установки и подсчет ссылок для настройки с помощью установщика Windows.
@@ -53,7 +53,7 @@ ms.locfileid: "60066264"
  Два набора правил определения развертывания ресурсов с помощью компонентов вашей установки. Один набор правил сохраняется с помощью установщика Windows, хотя должны применяться как автор установки второго набора.
 
 > [!NOTE]
->  Применение правил установщика Windows происходит только в том случае, если выполняется проверка файла MSI-файл. Тем не менее являются предупреждение следует считать эти правила и рекомендации. Дополнительные сведения см. в разделе [проверка установки базы данных](/windows/desktop/Msi/validating-an-installation-database) и [проверка пакета](/windows/desktop/Msi/package-validation).
+> Применение правил установщика Windows происходит только в том случае, если выполняется проверка файла MSI-файл. Тем не менее являются предупреждение следует считать эти правила и рекомендации. Дополнительные сведения см. в разделе [проверка установки базы данных](/windows/desktop/Msi/validating-an-installation-database) и [проверка пакета](/windows/desktop/Msi/package-validation).
 
 #### <a name="installer-enforced-rules"></a>Правила применяются установщика
 

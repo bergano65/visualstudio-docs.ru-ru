@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Установка сведений о конфигурации для решения Office
+title: Установка сведений о конфигурации для решения Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 159708bfad49e6a4a303363c6a0e9dd83b23d8e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c477068b3aee3325acae0887e11da908d6c33a85
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632021"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328890"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Практическое руководство. Установка сведений о конфигурации для решения Office
   Файлы конфигурации можно использовать для настройки параметров, относящихся к решениям Office. Можно указать параметры, такие как политику привязки сборок, удаленные объекты, отладки и параметры трассировки.

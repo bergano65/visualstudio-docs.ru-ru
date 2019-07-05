@@ -5,30 +5,30 @@ ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab8e0712e5bb6f504b5b71a5ef6a3eca59167cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dfb00665caae499c0088f4ba5163c85ffacdbd85
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047768"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336262"
 ---
 # <a name="open-a-dynamic-tool-window"></a>Открытие динамического окна инструментов
 Окна инструментов обычно открываются из команды в меню или соответствующих сочетаний клавиш. В некоторых случаях Однако может потребоваться окна инструментов, которое открывается при определенном контексте пользовательского интерфейса применяется и закрывается при контекст пользовательского интерфейса больше не применяется. Типы окон инструментов называются *динамическое* или *автоматическим отображением*.
 
 > [!NOTE]
->  Список предварительно определенных контекстов пользовательского интерфейса, см. в разделе <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>.
+> Список предварительно определенных контекстов пользовательского интерфейса, см. в разделе <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>.
 
  Если вы хотите открыть динамического окна инструментов при запуске и существует возможность создания переход на другой, необходимо реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx> интерфейс и проверить условия сбоя в <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx.QueryShowTool%2A> метод. Чтобы оболочке известно о наличии динамического окна инструментов, должен быть открыт во время запуска, необходимо добавить `SupportsDynamicToolOwner` (задано значение 1) в пакет регистрации. Это значение не является частью стандарта <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>, поэтому необходимо создать настраиваемый атрибут, чтобы добавить его. Дополнительные сведения о настраиваемых атрибутах см. в разделе [использование пользовательского атрибута регистрации для регистрации расширения](../extensibility/registering-and-unregistering-vspackages.md#using-a-custom-registration-attribute-to-register-an-extension).
 
  Используйте <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> для открытия окна инструментов. Окно инструментов создается при необходимости.
 
 > [!NOTE]
->  Пользователь может быть закрывает динамического окна инструментов. Если вы хотите создать команду меню, поэтому пользователь может снова откройте окно инструментов, в том же контексте пользовательского интерфейса, что окно инструментов, а в противном случае отключено должно быть включено команду меню.
+> Пользователь может быть закрывает динамического окна инструментов. Если вы хотите создать команду меню, поэтому пользователь может снова откройте окно инструментов, в том же контексте пользовательского интерфейса, что окно инструментов, а в противном случае отключено должно быть включено команду меню.
 
 ## <a name="to-open-a-dynamic-tool-window"></a>Открытие динамического окна инструментов
 

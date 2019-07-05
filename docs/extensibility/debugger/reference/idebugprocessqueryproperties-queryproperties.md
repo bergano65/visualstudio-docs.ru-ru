@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperties
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3644a8d8b8834056e5cf61fc8647d5c47056208
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a26cbb1781561b6fb4d54da3cfaea9a9fbae7699
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701463"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311584"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 Этот метод запрашивает заданных значений свойств процесса отладки.
@@ -36,14 +39,12 @@ int QueryProperties(
    out object[ ]              rgtPropValues);
 ```
 
-#### <a name="parameters"></a>Параметры
- `celt`
+## <a name="parameters"></a>Параметры
+`celt`\
+[in] Размер массива, содержащего определения свойств и значений свойств.
 
- [in] Размер массива, содержащего определения свойств и значений свойств.
-
- `dwPropType`
-
- [in] Массив, содержащий определения запрашиваемого свойства. Допустимые значения:
+`dwPropType`\
+[in] Массив, содержащий определения запрашиваемого свойства. Допустимые значения:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -51,7 +52,8 @@ int QueryProperties(
 
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
-  `pvarPropValue` [out] Массив, содержащий значения свойств.
+`pvarPropValue`\
+[out] Массив, содержащий значения свойств.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

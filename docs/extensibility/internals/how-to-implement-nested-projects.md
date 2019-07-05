@@ -6,17 +6,17 @@ helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96df14cc6e337402761d89d7161094b513473a78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f7219824bf7cc13f8fe00ebc9be0320e557f0fcf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104999"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328675"
 ---
 # <a name="how-to-implement-nested-projects"></a>Практическое руководство. Реализация вложенных проектов
 
@@ -88,6 +88,6 @@ ms.locfileid: "60104999"
 
 - [Добавление элементов в диалоговом окне Добавление нового элемента](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Контрольный список: Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Контекстные параметры](../../extensibility/internals/context-parameters.md)
 - [Файл мастера (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25ee5a4e9a84201f93783bcef64f92ec74206fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1af00ebc2f6fdc1bc32a5a6784b88068d4e3ffb2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422751"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693385"
 ---
 # <a name="code-analysis-application-errors"></a>Ошибки, возникающие при анализе кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +59,6 @@ ms.locfileid: "62422751"
 
 ## <a name="related-sections"></a>Связанные разделы
 
-- [Рекомендации по написанию безопасного кода](http://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
+- [Рекомендации по написанию безопасного кода](https://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-- [Ресурсы для устранения неполадок в средствах управления жизненным циклом приложения](http://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)
+- [Ресурсы для устранения неполадок в средствах управления жизненным циклом приложения](https://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

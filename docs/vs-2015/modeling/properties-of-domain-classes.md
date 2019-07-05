@@ -11,19 +11,19 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a5f2b2fa8c2ff39b0a7ec3e982145567602ab10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c668317fba69100701fac95bfa333ed7b3446488
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989102"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701969"
 ---
 # <a name="properties-of-domain-classes"></a>Свойства доменных классов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Доменные классы имеют свойства, в следующей таблице. Сведения о доменных классов, см. в разделе [Общие сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md). Дополнительные сведения об использовании этих свойств см. в разделе [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-|Свойство.|Описание|Значение по умолчанию|  
+|Свойство|Описание|Значение по умолчанию|  
 |--------------|-----------------|-------------|  
 |Модификатор доступа|Уровень доступа класса домена (`public` или `internal`).|`public`|  
 |Настраиваемые атрибуты|Используется для добавления атрибутов для класса исходного кода, созданный из данного доменного класса.|\<none>|  
@@ -39,4 +39,4 @@ ms.locfileid: "58989102"
 |Ключевое слово Help|Необязательное ключевое слово, используемое для индексации справки F1 для данного доменного класса.|\<none>|  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий средств предметно-ориентированных языков](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

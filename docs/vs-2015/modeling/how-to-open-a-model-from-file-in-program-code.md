@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0c0374f50894cefbb240c6349c9c2450734501d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c87b197219cec112a9235f4af6fb1a51ae793a88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441016"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Практическое руководство. Открытие модели из файла в коде программы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60071854"
 3. В окне свойств проекта на **приложения** вкладке **требуемой версии .NET framework** поле **.NET Framework 4**.  
   
 > [!NOTE]
->  Может потребоваться сделать это, даже если вы выбрали **.NET Framework 4** в диалоговом окне создания проекта. Требуемая версия .NET framework не должно быть **клиентский профиль .NET Framework 4**.  
+> Может потребоваться сделать это, даже если вы выбрали **.NET Framework 4** в диалоговом окне создания проекта. Требуемая версия .NET framework не должно быть **клиентский профиль .NET Framework 4**.  
   
 ## <a name="references"></a>Ссылки  
  Необходимо добавить эти ссылки на ваш [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проект приложения:  

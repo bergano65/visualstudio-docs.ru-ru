@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1e490ac500d5598866dbf66e3562dbb156fecb6e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083521"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331100"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Область тестирования 1. Добавление и открытие из системы управления версиями
 Этой системы управления версиями подключаемого модуля тестов описание области размещения решения или проекты в системе управления версиями и их извлечение из системы управления версиями.
@@ -37,7 +37,7 @@ ms.locfileid: "60083521"
 - Для [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], добавьте из источника элемента управления также доступна из **файл**, **добавить**, **существующий проект**; поиск в [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] расположение.
 
   > [!NOTE]
-  >  В этом тесте может использоваться путь локального файла или локальный сервер IIS (веб-сервер).
+  > В этом тесте может использоваться путь локального файла или локальный сервер IIS (веб-сервер).
 
 ## <a name="expected-behavior"></a>Ожидаемое поведение
 

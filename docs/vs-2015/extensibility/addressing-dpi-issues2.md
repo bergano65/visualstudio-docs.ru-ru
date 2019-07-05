@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9b8bc5963ba9263d72800cc473cfa56324884ace
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049546"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699269"
 ---
 # <a name="addressing-dpi-issues"></a>Устранение проблем с разрешением экрана
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  Не используйте вспомогательные функции в статических переменных уровня класса или модуля. Библиотека также использует статические элементы для синхронизации потоков, и вы можете столкнуться проблемы порядок инициализации. Преобразование этих статических элементов в нестатических-переменные члены или помещать их в функцию (поэтому они конструировать при первом доступе).  
+> Не используйте вспомогательные функции в статических переменных уровня класса или модуля. Библиотека также использует статические элементы для синхронизации потоков, и вы можете столкнуться проблемы порядок инициализации. Преобразование этих статических элементов в нестатических-переменные члены или помещать их в функцию (поэтому они конструировать при первом доступе).  
   
  Для доступа к DPI вспомогательные функции из управляемого кода, который будет выполняться в среде Visual Studio:  
   
@@ -228,7 +228,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>Включение поддержки HDPI для WebOC  
  По умолчанию элементы управления WebOC (например, элемент управления WebBrowser в WPF или интерфейса IWebBrowser2) не включайте обнаружение HDPI и поддержки. Результатом будет внедренный элемент управления с Показывать содержимое, которое слишком мало, на экране с высоким разрешением. Ниже описано, как для поддержки высокого DPI в экземпляре WebOC конкретных web.  
   
- Реализация интерфейса IDocHostUIHandler (см. в статье MSDN на [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) интерфейса):  
+ Реализация интерфейса IDocHostUIHandler (см. в статье MSDN на [IDocHostUIHandler](https://msdn.microsoft.com/library/aa753260.aspx) интерфейса):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -307,7 +307,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- При необходимости реализовать интерфейс ICustomDoc (см. в статье MSDN на [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) интерфейса):  
+ При необходимости реализовать интерфейс ICustomDoc (см. в статье MSDN на [ICustomDoc](https://msdn.microsoft.com/library/aa753272.aspx) интерфейса):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

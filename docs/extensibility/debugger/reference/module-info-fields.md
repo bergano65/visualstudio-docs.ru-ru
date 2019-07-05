@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4302a911e58a23bdcd58bb054c1fc90c389fed6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2ba419d0b10174e375cd15313fbc0770bf9d8cc0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708395"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311378"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 Задает флаги для отладки модуля.
@@ -61,32 +64,45 @@ public enum enum_MODULE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Участники
- MIF_NONE Initialize/использовать ни одно из полей в структуре.
+## <a name="fields"></a>Поля
+ `MIF_NONE`\
+ Инициализировать или использовать ни одно из полей в структуре.
 
- MIF_NAME Initialize и использование `m_bstrName` в [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры.
+ `MIF_NAME`\
+ Инициализация и использование `m_bstrName` в [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры.
 
- MIF_URL Initialize и использование `m_bstrUrl` в `MODULE_INFO` структуры.
+ `MIF_URL`\
+ Инициализация и использование `m_bstrUrl` в `MODULE_INFO` структуры.
 
- MIF_VERSION Initialize и использование `m_bstrVersion` в `MODULE_INFO` структуры.
+ `MIF_VERSION`\
+ Инициализация и использование `m_bstrVersion` в `MODULE_INFO` структуры.
 
- MIF_DEBUGMESSAGE Initialize и использование `m_bstrDebugMessage` в `MODULE_INFO` структуры.
+ `MIF_DEBUGMESSAGE`\
+ Инициализация и использование `m_bstrDebugMessage` в `MODULE_INFO` структуры.
 
- MIF_LOADADDRESS Initialize и использование `m_addrLoadAddress` в `MODULE_INFO` структуры.
+ `MIF_LOADADDRESS`\
+ Инициализация и использование `m_addrLoadAddress` в `MODULE_INFO` структуры.
 
- MIF_PREFFEREDADDRESS Initialize и использование `m_addrPreferredLoadAddress` в `MODULE_INFO` структуры.
+ `MIF_PREFFEREDADDRESS`\
+ Инициализация и использование `m_addrPreferredLoadAddress` в `MODULE_INFO` структуры.
 
- MIF_SIZE Initialize и использование `m_dwSize` в `MODULE_INFO` структуры.
+ `MIF_SIZE`\
+ Инициализация и использование `m_dwSize` в `MODULE_INFO` структуры.
 
- MIF_LOADORDER Initialize и использование `m_dwLoadOrder` в `MODULE_INFO` структуры.
+ `MIF_LOADORDER`\
+ Инициализация и использование `m_dwLoadOrder` в `MODULE_INFO` структуры.
 
- MIF_TIMESTAMP Initialize и использование `m_TimeStamp` в `MODULE_INFO` структуры.
+ `MIF_TIMESTAMP`\
+ Инициализация и использование `m_TimeStamp` в `MODULE_INFO` структуры.
 
- MIF_URLSYMBOLLOCATION Initialize и использование `m_bstrUrlSymbolLocation` в `MODULE_INFO` структуры.
+ `MIF_URLSYMBOLLOCATION`\
+ Инициализация и использование `m_bstrUrlSymbolLocation` в `MODULE_INFO` структуры.
 
- MIF_FLAGS Initialize и использование `m_dwModuleFlags` в `MODULE_INFO` структуры.
+ `MIF_FLAGS`\
+ Инициализация и использование `m_dwModuleFlags` в `MODULE_INFO` структуры.
 
- MIF_ALLFIELDS Initialize и использование всех полей в `MODULE_INFO` структуры.
+ `MIF_ALLFIELDS`\
+ Инициализация и использование всех полей в `MODULE_INFO` структуры.
 
 ## <a name="remarks"></a>Примечания
  Эти значения передаются в качестве аргумента [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) метод, чтобы указать, какие поля [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры должны быть инициализированы.

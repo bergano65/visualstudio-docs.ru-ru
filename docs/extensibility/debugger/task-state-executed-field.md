@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_EXECUTED field, Task class [.NET Framework debug engines]
 ms.assetid: 75b8f9d0-b908-40d0-b109-70feaed2ab0c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a822a47948df80c84ed6845590d5ec2a8c91ec6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 290404da17b5e66ab447003db966cdb74a9087f0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684914"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348374"
 ---
 # <a name="taskstateexecuted-field"></a>Поле TASK_STATE_EXECUTED
 Задача выполняется, но еще не завершилась.

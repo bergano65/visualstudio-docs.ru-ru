@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: a621faece8ed0cef3dd48d46fc41857af6e62c9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccdedcb82b06ec2723555f8dedcf3b628e392137
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983806"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976136"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Общие сведения о Visual Studio 2019 для Mac
 
@@ -115,7 +115,7 @@ Visual Studio для Mac интегрируется с системами упр
 ## <a name="next-steps"></a>Следующие шаги
 
 - [Установка Visual Studio для Mac](installation.md)
-- [Просмотр доступных рабочих нагрузок](/visualstudio/mac/workloads/)
+- [Просмотр доступных рабочих нагрузок](workloads.md)
 
 ## <a name="related-video"></a>Связанные видео
 

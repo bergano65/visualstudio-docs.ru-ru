@@ -13,12 +13,12 @@ ms.assetid: b5ffc736-efc7-4ca8-964d-5536ff891b0e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8c02973faf1d65ff8be79cd387666f35651db7bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 08028f2b03f3ea36cc72172ca8f9de31740b49f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417912"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ int Attach_V7 ( 
 ## <a name="remarks"></a>Примечания  
   
 > [!WARNING]
->  Начиная с версии [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], этот метод больше не используется и всегда должны возвращать `E_NOTIMPL`. См. в разделе [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) интерфейс альтернативный подход, если узел программы должен указывать, он не может быть присоединен к или если узел программы именно просто установить программу `GUID`. В противном случае реализация [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) метод.  
+> Начиная с версии [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], этот метод больше не используется и всегда должны возвращать `E_NOTIMPL`. См. в разделе [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) интерфейс альтернативный подход, если узел программы должен указывать, он не может быть присоединен к или если узел программы именно просто установить программу `GUID`. В противном случае реализация [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) метод.  
   
 ## <a name="prior-to-visual-studio-2005"></a>До Visual Studio 2005  
  Этот метод должен быть реализован только в том случае, если выполняется DE в адресном пространстве отлаживаемой программы. В противном случае этот метод должен возвращать `S_FALSE`.  

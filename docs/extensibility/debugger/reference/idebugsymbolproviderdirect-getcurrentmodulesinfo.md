@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetCurrentModulesInfo
 - GetCurrentModulesInfo
 ms.assetid: b3b45ed2-ea4e-4389-b78a-11fc9796a6c1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95dc42b0e65ad0f849dd95e0ffead122e4cd1ebf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 67afbf985a8fb9934c1a105d1620becc80f00535
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699552"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347429"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 Извлекает сведения о модулях в группе символов.
@@ -43,26 +46,21 @@ int GetCurrentModulesInfo(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pCount`
+## <a name="parameters"></a>Параметры
+`pCount`\
+[in] Число модулей в `ppGuids` массива.
 
- [in] Число модулей в `ppGuids` массива.
+`ppGuids`\
+[in] Массив, содержащий уникальные идентификаторы для модулей.
 
- `ppGuids`
+`pADIds`\
+[in] Идентификаторы доменов приложений.
 
- [in] Массив, содержащий уникальные идентификаторы для модулей.
+`pCurrentState`\
+[in] Текущее состояние группы символов.
 
- `pADIds`
-
- [in] Идентификаторы доменов приложений.
-
- `pCurrentState`
-
- [in] Текущее состояние группы символов.
-
- `ppCDModItfs`
-
- [out] Возвращает объект, содержащий модули в группе символов.
+`ppCDModItfs`\
+[out] Возвращает объект, содержащий модули в группе символов.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

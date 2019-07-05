@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Программным способом хранения и извлечения значений дат в диапазонах Excel
+title: Store & извлечение значений дат в диапазонах Excel программным способом
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d855ffd91ccdc07a2d69401d7a8611175cc60941
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082910"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328926"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Практическое руководство. Программным способом хранения и извлечения значений дат в диапазонах Excel
   Можно сохранять и извлекать значения в <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.
@@ -34,7 +34,7 @@ ms.locfileid: "60082910"
  Если вы храните значение даты, которое находится в течение или после 1/1/1900 диапазон с помощью средств разработки Office в Visual Studio, он хранится в формате OLE-автоматизации (OA). Необходимо использовать <xref:System.DateTime.FromOADate%2A> метод для извлечения значение даты OLE-автоматизации (OA). Если дата является более ранней, чем 1/1/1900 г., он хранится в виде строки.
 
 > [!NOTE]
->  Даты Excel отличаются от даты OLE-автоматизации для первых двух месяцев 1900. Существуют также различия Если **система дат 1904** флажок. В примерах кода не используют эти различия.
+> Даты Excel отличаются от даты OLE-автоматизации для первых двух месяцев 1900. Существуют также различия Если **система дат 1904** флажок. В примерах кода не используют эти различия.
 
 ## <a name="use-a-namedrange-control"></a>Использование элемента управления NamedRange
 

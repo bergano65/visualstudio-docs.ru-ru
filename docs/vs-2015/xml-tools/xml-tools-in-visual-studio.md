@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07cb1a790640d01448b6331986519bf1bef619e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 906f08c0020eb288c1bcd318327be18dc8d08ca5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651725"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695318"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Средства XML в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ ms.locfileid: "59651725"
 ## <a name="reference"></a>Ссылка
  [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) предоставляет [редактор XML](http://go.microsoft.com/fwlink/?LinkId=228249) синтаксического анализа дерева через [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) для любых XML-документов.
 
- [Справочник по стандартам XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) содержит сведения о технологиях XML, включая XML, определение типа документа (DTD), язык определения схемы XML (XSD) и XSLT.
+ [Справочник по стандартам XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) содержит сведения о технологиях XML, включая XML, определение типа документа (DTD), язык определения схемы XML (XSD) и XSLT.
 
  <xref:System.Xml?displayProperty=fullName> Описание классов и другие элементы, составляющие <xref:System.Xml> пространства имен и ссылки на более подробные сведения для каждого элемента.
 
  <xref:System.Xml.Serialization?displayProperty=fullName> Описание классов и другие элементы, составляющие <xref:System.Xml.Serialization> пространства имен и ссылки на более подробные сведения о каждом элементе.
 
 ## <a name="related-sections"></a>Связанные разделы
- [XML объекта модели (DOM)](http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) описывает как <xref:System.Xml.XmlDocument> и связанные с ним классы соответствуют объектной модели документов W3C (Core) уровня 1 и спецификации пространству имен уровня 2.
+ [XML объекта модели (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) описывает как <xref:System.Xml.XmlDocument> и связанные с ним классы соответствуют объектной модели документов W3C (Core) уровня 1 и спецификации пространству имен уровня 2.
 
- [Чтение XML с XmlReader](http://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) описывает как <xref:System.Xml.XmlReader> предоставляет однонаправленное только для чтения к данным XML в XML-потоке.
+ [Чтение XML с XmlReader](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) описывает как <xref:System.Xml.XmlReader> предоставляет однонаправленное только для чтения к данным XML в XML-потоке.
 
- [Запись XML-кода с помощью XmlWriter](http://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) описывает как <xref:System.Xml.XmlWriter> Однонаправленная пересылать только способ формирования XML-потоки и помогает создавать XML-документов, соответствующих стандарту W3C.
+ [Запись XML-кода с помощью XmlWriter](https://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) описывает как <xref:System.Xml.XmlWriter> Однонаправленная пересылать только способ формирования XML-потоки и помогает создавать XML-документов, соответствующих стандарту W3C.
 
- [Преобразования XSLT](http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) описывает как <xref:System.Xml.Xsl.XslCompiledTransform> класс реализует рекомендации XSLT 1.0.
+ [Преобразования XSLT](https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) описывает как <xref:System.Xml.Xsl.XslCompiledTransform> класс реализует рекомендации XSLT 1.0.
 
- [Обработка XML-данных с помощью модели данных XPath](http://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) описывает как <xref:System.Xml.XPath.XPathNavigator> класс может обрабатывать XML-данные, хранящиеся в <xref:System.Xml.XPath.XPathDocument> или <xref:System.Xml.XmlDocument> объекта. Класс <xref:System.Xml.XPath.XPathNavigator> основан на XQuery 1.0 и модели данных XPath 2.0 и может использоваться для просмотра и редактирования данных XML.
+ [Обработка XML-данных с помощью модели данных XPath](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) описывает как <xref:System.Xml.XPath.XPathNavigator> класс может обрабатывать XML-данные, хранящиеся в <xref:System.Xml.XPath.XPathDocument> или <xref:System.Xml.XmlDocument> объекта. Класс <xref:System.Xml.XPath.XPathNavigator> основан на XQuery 1.0 и модели данных XPath 2.0 и может использоваться для просмотра и редактирования данных XML.
 
- [Объектной модели схемы XML (SOM)](http://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) описаны классы, используемые для создания и обработки XML-схем, предоставляя <xref:System.Xml.Schema.XmlSchema> класс для загрузки и изменения схемы.
+ [Объектной модели схемы XML (SOM)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) описаны классы, используемые для создания и обработки XML-схем, предоставляя <xref:System.Xml.Schema.XmlSchema> класс для загрузки и изменения схемы.

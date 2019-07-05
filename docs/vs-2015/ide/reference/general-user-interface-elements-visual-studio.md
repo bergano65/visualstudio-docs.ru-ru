@@ -9,12 +9,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a510ad25e741fc5924597d4b26841518c63f83a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537606"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690962"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Общие элементы пользовательского интерфейса (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,6 +69,6 @@ ms.locfileid: "62537606"
 
  [Панель элементов, вкладка "HTML"](../../ide/reference/toolbox-html-tab.md) позволяет добавлять HTML-теги в рабочую область конструирования.
 
- [Общие, CSS, текстовый редактор, диалоговое окно "Параметры"](http://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) позволяет задавать параметры для файлов CSS.
+ [Общие, CSS, текстовый редактор, диалоговое окно "Параметры"](https://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) позволяет задавать параметры для файлов CSS.
 
- [Проверка, HTML, текстовый редактор, диалоговое окно "Параметры"](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) позволяет указать параметры для HTML-страниц.
+ [Проверка, HTML, текстовый редактор, диалоговое окно "Параметры"](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) позволяет указать параметры для HTML-страниц.

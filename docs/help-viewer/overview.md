@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c79b685382eff3e6ca5a37fa9fb087136595dc76
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975691"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746956"
 ---
 # <a name="microsoft-help-viewer"></a>Окно справки (Майкрософт)
 
-Вы можете установить различные продукты и технологии и просмотреть содержимое их справки на локальном компьютере, используя окно справки (Майкрософт). Эти продукты включают Visual Studio, .NET Framework, справочник по языку, SQL Server и сведения по разработке Windows. Окно справки позволяет вам:
+Вы можете установить различные продукты и технологии и просмотреть содержимое их справки на локальном компьютере, используя окно справки (Майкрософт). Эти продукты включают Visual Studio, справочник по языку .NET, SQL Server и сведения по разработке Windows. Окно справки позволяет вам:
 
 - Скачайте наборы содержимого, которые также называют книгами. Это может быть удобно, если вам нужно работать автономно и по-прежнему иметь доступ к документации.
 

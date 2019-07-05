@@ -14,21 +14,21 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e91c1433fde85a9ec828a6a018bee986fdc7aa5c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988137"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Построение и отладка решений SharePoint
   Как правило, построение и отладка решений SharePoint является таким же, как построение и отладка других типов проектов в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. В этом разделе описываются существующие различия.
 
 ## <a name="project-output-for-sharepoint-solutions"></a>Выходные данные проекта для решений SharePoint
- Построение решений SharePoint создаются сборки и пакет решения (*.wsp*) файла. В следующей таблице показано расположение этих файлов во время построения.
+ Построение решений SharePoint создаются сборки и пакет решения ( *.wsp*) файла. В следующей таблице показано расположение этих файлов во время построения.
 
 |Создание элемента|Выходная папка|
 |----------------|-------------------|
-|Сборка, база данных программы (*.pdb*), и *.wsp* файлов.|*\<ИмяПроекта > \bin\debug* или  *\<имя_проекта > \bin\release*|
+|Сборка, база данных программы ( *.pdb*), и *.wsp* файлов.|*\<ИмяПроекта > \bin\debug* или  *\<имя_проекта > \bin\release*|
 |Файлы элементов проекта SharePoint.|*\<Имя проекта > \pkg\debug* или  *\<имя_проекта > \pkg\release*|
 |Создание промежуточных файлов.|*\<Имя проекта > \obj\debug* или  *\<имя_проекта > \obj\release*|
 |Пакет промежуточных файлов.|*\<Имя проекта > \pkgobj\debug* или  *\<имя_проекта > \pkgobj\release*|

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: de300a7af8492e6431f6b8513cde84a15895ad96
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786312"
 ---
 # <a name="isetnextstatement-interface"></a>Интерфейс ISetNextStatement
 Этот интерфейс реализуется интерпретатор, чтобы разрешить диспетчер отладки процессов обновить текущую инструкцию. Он реализован в объект кадра стека, и PDM получает этот интерфейс, через QueryInterface.  
@@ -27,7 +27,7 @@ ms.locfileid: "58148429"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[ISetNextStatement::CanSetNextStatement](../../winscript/reference/isetnextstatement-cansetnextstatement.md)|Определяет, можно ли установить точку выполнения в указанное расположение.|  
 |[ISetNextStatement::SetNextStatement](../../winscript/reference/isetnextstatement-setnextstatement.md)|Установка точки выполнения в указанное расположение.|

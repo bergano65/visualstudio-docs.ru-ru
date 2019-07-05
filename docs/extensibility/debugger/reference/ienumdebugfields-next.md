@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Next method
 ms.assetid: 22c177a2-af81-4234-812b-f9b47be245a2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a39725f316e63b8c6768471164b69feb47c05728
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee2cc5273b5ec47f99916a308312f6d26c718033
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698564"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350422"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 Этот метод возвращает следующий набор элементов из перечисления.
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `celt`
+## <a name="parameters"></a>Параметры
+`celt`\
+[in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
 
- [in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
+`rgelt`\
+[in, out] Массив [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) элементов для заполнения.
 
- `rgelt`
-
- [in, out] Массив [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) элементов для заполнения.
-
- `pceltFetched`
-
- [out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
+`pceltFetched`\
+[out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.

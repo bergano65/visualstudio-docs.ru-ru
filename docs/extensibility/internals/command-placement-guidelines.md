@@ -7,17 +7,17 @@ helpviewer_keywords:
 - small command sets
 - command sets
 ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c04ea981fc190b2e0074e767e086303e6950f2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f4cc3dfa8aaeba01709ae74ca9a1d9d54f3c1743
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076189"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342117"
 ---
 # <a name="command-placement-guidelines"></a>Рекомендации по размещению команд
 Советы и рекомендации для позиционирования команд в среде разработки Visual Studio (IDE) зависит от размера набора команд. Команды определяются и расположена в соответствии со сведения в *.vsct* файлов.

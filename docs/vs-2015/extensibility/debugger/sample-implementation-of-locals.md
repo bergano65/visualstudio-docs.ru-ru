@@ -11,18 +11,18 @@ ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ab81718837f6af8a230348d5e0a34f1da0a2c7bb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6e943fd7ba27fe21029bab4d818803186147476e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092049"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704888"
 ---
 # <a name="sample-implementation-of-locals"></a>Пример реализации локальных переменных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Вот Общие сведения о том, как Visual Studio получает "Локальные" для метода от вычислитель выражений (EE):  
   
@@ -66,7 +66,7 @@ ms.locfileid: "60092049"
  [Контекст вычислений](../../extensibility/debugger/evaluation-context.md)  
  Предоставляет аргументы, передаваемые во время DE вызывает средство оценки выражений (EE).  
   
- [Пример MyCEE](http://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
+ [Пример MyCEE](https://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
  Демонстрирует реализацию подход к созданию вычислитель выражений для языка MyC.  
   
 ## <a name="see-also"></a>См. также  

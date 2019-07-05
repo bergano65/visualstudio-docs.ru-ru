@@ -2,7 +2,7 @@
 title: Создание веб-приложения ASP.NET Core на C#
 description: Пошаговые инструкции по созданию в Visual Studio приложения Hello World на C# и ASP.NET Core
 ms.custom: mvc,seodec18
-ms.date: 03/23/2019
+ms.date: 06/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ea01ff2671212c8dfeb023d145cfd224a5feb2f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e701fd45230295222ffc6e17c05052e01b47189
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954753"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745037"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Краткое руководство. Создание первого веб-приложения ASP.NET Core с помощью Visual Studio
 
@@ -75,7 +75,7 @@ ms.locfileid: "62954753"
    ![Диалоговое окно "Создать веб-приложение ASP.NET Core"](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Если **ASP.NET Core 2.1** или более поздняя версия не отображается, убедитесь, что вы используете самый последний выпуск Visual Studio. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio](../install/update-visual-studio.md).
+   > Если **ASP.NET Core 2.1** не отображается, убедитесь, что вы используете самый последний выпуск Visual Studio. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio](../install/update-visual-studio.md).
 
 Через некоторое время файл проекта откроется в Visual Studio.
 
@@ -110,7 +110,7 @@ ms.locfileid: "62954753"
 
    ![В окне "Настроить новый проект" назовите проект "HelloWorld"](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
-1. Убедитесь, что в верхнем раскрывающемся меню диалогового окна **Create a new ASP.NET Core Web Application** (Создание веб-приложения ASP.NET Core) отображается **ASP.NET Core 2.1** или более поздней версии. Выберите **Веб-приложение**, включающее примеры Razor Pages. Затем выберите **Создать**.
+1. Убедитесь, что в верхнем раскрывающемся меню диалогового окна **Создать веб-приложение ASP.NET Core** отображается **ASP.NET Core 2.1**. Выберите **Веб-приложение**, включающее примеры Razor Pages. Затем выберите **Создать**.
 
    ![Окно "Create a new ASP.NET Core Web Application" (Создание веб-приложения ASP.NET Core)](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
 
@@ -132,7 +132,7 @@ ms.locfileid: "62954753"
 
    ![Код HTML для области дополнительной информации в редакторе Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Измените текст для чтения "дополнительная информация" на **Hello World!**.
+1. Измените текст для чтения "дополнительная информация" на **Hello World!** .
 
    ![Изменение значения по умолчанию кода HTML для области дополнительной информации в редакторе Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 

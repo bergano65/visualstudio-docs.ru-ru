@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Узнайте о преимуществе для разработчиков Office 365, предусмотренном подпиской Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12851dcb19824ceccb16bacbba2fdeec29c7df47
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947237"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032719"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Преимущество подписки разработчика Office 365 в подписках Visual Studio
 
-Обладатели некоторых подписок Visual Studio Enterprise получают преимущество подписки разработчика Office 365.  Подписка разработчика Office 365 позволяет разрабатывать, тестировать и развертывать надстройки для Microsoft Office и Microsoft SharePoint.  Это преимущество предоставляется для одного клиента и 25 пользователей.
+Обладатели некоторых подписок Visual Studio получают преимущество подписки разработчика Office 365.  Подписка разработчика Office 365 позволяет разрабатывать, тестировать и развертывать надстройки для Microsoft Office и Microsoft SharePoint.  Это преимущество предоставляется для одного клиента и 25 пользователей.
 
 ## <a name="activation-steps"></a>Процедура активации
 
@@ -66,12 +66,12 @@ ms.locfileid: "62947237"
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Включено      |  Да          |
-| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                            |Н/Д         |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Включено      |  Yes          |
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Включено                                                            |Yes         |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                             |  Н/Д         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              | Н/Д         |
-| Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure                                       | Недоступно                                                           |Н/Д|
+||
 
 <sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, BizSpark, разработчик ПО и служб MCT, ПО и службы MCT.  Не включает следующие категории:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD).*
 
@@ -82,6 +82,6 @@ ms.locfileid: "62947237"
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 
-- Вам нужна помощь с использованием подписки для разработчиков Office? Изучите ресурсы [поддержки](https://developer.microsoft.com/office/support) в [центре разработки для Office](https://developer.microsoft.com/office).
+- Вам нужна помощь с использованием подписки для разработчиков Office? Изучите ресурсы [поддержки](https://developer.microsoft.com/office/docs#officecommunity) в [центре разработки для Office](https://developer.microsoft.com/office).
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

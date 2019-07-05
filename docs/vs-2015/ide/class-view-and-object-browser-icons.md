@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ef14396e681f77eca469f40b2253c8a64296423d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422844"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Значки представления классов и обозревателя объектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "54785053"
 |----------|-----------------|----------|-----------------|  
 |![Символ пространства имен](../ide/media/vxnamespace-icon.gif "vxNamespace_Icon")|Пространство имен|![Символ объявления](../ide/media/vxmethod-icon.gif "vxMethod_Icon")|Метод или функция|  
 |![Значок класса](../ide/media/vxclass-icon.gif "vxClass_Icon")|Класс|![Символ оператора](../ide/media/vxoperator-icon.gif "vxOperator_Icon")|Оператор|  
-|![Символ интерфейса без описания операций](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|Интерфейс|![Символ свойства](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|Свойство.|  
+|![Символ интерфейса без описания операций](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|Интерфейс|![Символ свойства](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|Свойство|  
 |![Символ структуры](../ide/media/vxstruct-icon.gif "vxStruct_Icon")|Структура|![Значок поля](../ide/media/vxfield-icon.gif "vxField_Icon")|Поле или переменная|  
 |![Символ объединения](../ide/media/vxunion-icon.gif "vxUnion_Icon")|Объединение|![Символ события](../ide/media/vxevent-icon.gif "vxEvent_Icon")|событие|  
 |![Символ перечисления](../ide/media/vxenum-icon.gif "vxEnum_Icon")|Enum|![Значок константы](../ide/media/vxconstant-icon.gif "vxConstant_Icon")|Константа|  
@@ -50,7 +50,7 @@ ms.locfileid: "54785053"
  Приведенные ниже сигнальные значки применяются ко всем перечисленным выше значкам и указывают их доступность.  
   
 > [!NOTE]
->  Если ваш проект включен в базу данных управления версиями, могут отображаться дополнительные сигнальные значки, указывающие состояние управления версиями, например, возвращено или извлечено.  
+> Если ваш проект включен в базу данных управления версиями, могут отображаться дополнительные сигнальные значки, указывающие состояние управления версиями, например, возвращено или извлечено.  
   
 |Значок|Описание|  
 |----------|-----------------|  
@@ -61,5 +61,5 @@ ms.locfileid: "54785053"
 |![Сигнальный символ "Дружественный&#47;внутренний"](../ide/media/vxsignal-icon-diamond.gif "vxSignal_Icon_Diamond")|Дружественный/внутренний. Доступен только из проекта.|  
 |![Сигнальный символ "Стрелка"](../ide/media/vxsignal-icon-arrow.gif "vxSignal_Icon_Arrow")|Ярлык. Ярлык объекта.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Просмотр структуры кода](../ide/viewing-the-structure-of-code.md)

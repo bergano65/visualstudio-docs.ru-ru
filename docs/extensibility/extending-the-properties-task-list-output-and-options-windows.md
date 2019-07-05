@@ -1,5 +1,5 @@
 ---
-title: Расширение свойств, список задач, выходные данные и параметры Windows | Документация Майкрософт
+title: Расширение свойств, список задач, выходные данные, параметры windows
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5186d7c16f89201b43ebabc49215c0afff4bbfd4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078386"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337118"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Расширение windows свойства, список задач, выходные данные и параметры
 Можно получить доступ к любого окна инструментов в Visual Studio. В этом пошаговом руководстве показано, как интегрировать сведения о вашего окна инструментов в новую **параметры** страницы и новый параметр на **свойства** страницы, а также способ записи **список задач** и **вывода** windows.
@@ -33,7 +33,7 @@ ms.locfileid: "60078386"
 1. Создайте проект с именем **TodoList** с помощью шаблона VSIX и добавление шаблона элемента окна пользовательского инструмента с именем **TodoWindow**.
 
     > [!NOTE]
-    >  Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создание расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создание расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="set-up-the-tool-window"></a>Настройка окна инструментов
  Добавление текстового поля для ввода нового элемента ToDo, кнопку, чтобы добавить новый элемент в список и элемент ListBox для отображения элементов в списке.
@@ -41,7 +41,7 @@ ms.locfileid: "60078386"
 1. В *TodoWindow.xaml*, удалить элементы управления Button, TextBox и StackPanel от UserControl.
 
     > [!NOTE]
-    >  При этом не удаляются **button1_Click** обработчик событий, который будет использовать в дальнейшем.
+    > При этом не удаляются **button1_Click** обработчик событий, который будет использовать в дальнейшем.
 
 2. Из **все элементы управления WPF** раздел **элементов**, перетащите **холст** элемента управления в сетку.
 

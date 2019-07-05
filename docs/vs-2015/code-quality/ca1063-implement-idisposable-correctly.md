@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 90f218165c0543c1881857191efd202717c6e372
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081402"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820880"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063. Правильно реализуйте IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60081402"
 
   Нарушение любого из этих шаблонов приведет к выводу предупреждения.
 
-  Каждый незапечатанного корневого типа IDisposable необходимо предоставить собственный защищенный виртуальный void Dispose(bool) метод. Dispose() должны вызывать Dipose(true) и Finalize должен вызывать Dispose(false). Если вы создаете незапечатанного корневого типа IDisposable, необходимо определить Dispose(bool) и вызывать его. Дополнительные сведения см. в разделе [очистки неуправляемых ресурсов](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) в [рекомендации по разработке Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) раздел документации .NET Framework.
+  Каждый незапечатанного корневого типа IDisposable необходимо предоставить собственный защищенный виртуальный void Dispose(bool) метод. Dispose() должны вызывать Dispose(true) и Finalize должен вызывать Dispose(false). Если вы создаете незапечатанного корневого типа IDisposable, необходимо определить Dispose(bool) и вызывать его. Дополнительные сведения см. в разделе [очистки неуправляемых ресурсов](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) в [рекомендации по разработке Framework](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) раздел документации .NET Framework.
 
 ## <a name="rule-description"></a>Описание правила
  Все типы IDisposable должны правильно реализовывать шаблон "Dispose".

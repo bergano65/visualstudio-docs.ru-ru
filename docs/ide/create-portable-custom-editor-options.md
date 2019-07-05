@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f48a690513c80b02683df61a0abf68a3cad58293
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794139"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328803"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Создание переносимых настраиваемых параметров редактора с EditorConfig
 
@@ -20,7 +20,13 @@ ms.locfileid: "62794139"
 
 Параметры EditorConfig поддерживаются различными редакторами кода и интегрированными средами разработки, включая Visual Studio. Этот файл является переносимым компонентом, который передается вместе с кодом и позволяет применять стили написания кода даже вне среды Visual Studio.
 
-При добавлении файла EditorConfig в проект в Visual Studio форматирование имеющегося кода не изменяется, если не отформатировать документ (**Правка** > **Дополнительно** > **Форматировать документ** или клавиши **CTRL**+**K**, **CTRL**+**D** в профиле по умолчанию). Тем не менее все новые строки кода форматируются в соответствии с параметрами, заданными в файле EditorConfig. Вы можете выбрать, какие параметры EditorConfig команда **Форматировать документ** будет применять к [странице параметров **форматирования**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+При добавлении файла EditorConfig в проект в Visual Studio форматирование имеющегося кода не изменяется, если не отформатировать документ (**Правка** > **Дополнительно** > **Форматировать документ** или клавиши **CTRL**+**K**, **CTRL**+**D** в профиле по умолчанию). Тем не менее все новые строки кода форматируются в соответствии с параметрами, заданными в файле EditorConfig.
+
+::: moniker range="vs-2017"
+
+Вы можете выбрать, какие параметры EditorConfig команда **Форматировать документ** будет применять к [странице параметров **форматирования**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
+::: moniker-end
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [EditorConfig в Visual Studio для Mac](/visualstudio/mac/editorconfig).
@@ -49,15 +55,15 @@ ms.locfileid: "62794139"
 - insert\_final_newline
 - корневой
 
-Параметры редактора EditorConfig поддерживаются во всех языках, поддерживаемых Visual Studio, за исключением XML. Кроме того, EditorConfig поддерживает соглашения о [стиле кода](../ide/editorconfig-code-style-settings-reference.md) и [именовании](../ide/editorconfig-naming-conventions.md) для C# и Visual Basic.
+Параметры редактора EditorConfig поддерживаются во всех языках, поддерживаемых Visual Studio, за исключением XML. Кроме того, EditorConfig поддерживает соглашения о [стиле кода](../ide/editorconfig-code-style-settings-reference.md), в том числе соглашения о [языке](../ide/editorconfig-language-conventions.md), [форматировании](../ide/editorconfig-formatting-conventions.md) и [именовании](../ide/editorconfig-naming-conventions.md) для C# и Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Добавление и удаление файлов EditorConfig
 
-Добавление файла EditorConfig в проект или базу кода не приводит к преобразованию существующих стилей в новые. Например, если в качестве отступов в файле используются символы табуляции, при добавлении файла EditorConfig, в котором отступы задаются пробелами, символы отступа не преобразовываются в пробелы автоматически. Тем не менее все новые строки кода форматируются в соответствии с файлом EditorConfig. Кроме того, при форматировании документа (**Правка** > **Дополнительно** > **Форматировать документ** или клавиши **Ctrl**+**K**, **Ctrl**+**D**) параметры, заданные в файле EditorConfig, применяются к имеющимся строкам кода.
+При добавлении файла EditorConfig в проект или базу кода, все новые строки создаваемого кода форматируются в соответствии с параметрами в файле EditorConfig. Но само по себе добавление файла EditorConfig не приводит к преобразованию существующих стилей в новые, пока вы не запустите форматирование документа. Например, если в качестве отступов в файле используются символы табуляции, при добавлении файла EditorConfig, в котором отступы задаются пробелами, символы отступа не преобразовываются в пробелы автоматически. При форматировании документа (**Правка** > **Дополнительно** > **Форматировать документ** или клавиши **Ctrl**+**K**, **Ctrl**+**D**) параметры, заданные в файле EditorConfig, применяются к имеющимся строкам кода.
 
-Если удалить файл EditorConfig из проекта или базы кода, вам необходимо закрыть и снова открыть все файлы кода, чтобы восстановить глобальные параметры редактора для новых строк кода.
+После удаления файла EditorConfig из проекта или базы кода вам придется закрыть и снова открыть все файлы кода, если нужно восстановить глобальные параметры редактора для новых строк кода.
 
-### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>Добавление файла EditorConfig в проект или решение
+### <a name="add-an-editorconfig-file-to-a-project"></a>Добавление файла EditorConfig в проект
 
 1. Откройте проект или решение в Visual Studio. Выберите узел проекта или решения в зависимости от того, следует ли применять настройки файла *EDITORCONFIG* ко всем проектам в решении или только к одному. В проекте или решении также можно выбрать папку, в которую будет добавлен файл *EDITORCONFIG*.
 
@@ -65,34 +71,27 @@ ms.locfileid: "62794139"
 
    Откроется диалоговое окно **Добавление нового элемента**.
 
-1. В категориях слева выберите **Общие**, а затем шаблон **Текстовый файл**. В текстовом поле **Имя** введите `.editorconfig`, а затем нажмите кнопку **ОК**.
+1. В поле поиска введите строку **editorconfig**.
+
+   В результатах поиска отобразятся два шаблона элементов для **файла editorconfig**.
+
+   ![Шаблоны элементов для файла EditorConfig в Visual Studio](media/editorconfig-item-templates.png)
+
+1. Выберите шаблон **файл editorconfig (по умолчанию)** , чтобы добавить файл EditorConfig, заполненный двумя основными параметрами EditorConfig для стиля и размера отступов. Вы также можете выбрать шаблон **файл editorconfig (.NET)** , чтобы добавить файл EditorConfig с настроенными стандартными [соглашениями .NET по стилю кода, форматированию и именованию](../ide/editorconfig-code-style-settings-reference.md).
 
    В обозревателе решений появится файл *EDITORCONFIG*, который откроется в редакторе.
 
-   ![EDITORCONFIG-файл в обозревателе решений](media/editorconfig-in-solution-explorer.png)
+   ![EDITORCONFIG-файл в обозревателе решений и редакторе](media/editorconfig-dotnet.png)
 
-1. Измените файл по своему усмотрению, например:
-
-   ```EditorConfig
-   root = true
-
-   [*.{cs,vb}]
-   indent_size = 4
-   trim_trailing_whitespace = true
-
-   [*.cs]
-   csharp_new_line_before_open_brace = methods
-   ```
+1. Измените файл по своему усмотрению.
 
 ### <a name="other-ways-to-add-an-editorconfig-file"></a>Другие способы добавления файла EditorConfig
 
 Существует несколько способов добавления в проект файла EditorConfig:
 
-- Установите [расширение языковой службы EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig), чтобы упростить добавление пустого файла *.editorconfig* в проект. После установки этого расширения просто выберите пункты **Добавить** > **.editorconfig File** в контекстном меню узла решения, узла проекта или любой папки в **обозревателе решений**. Это расширение также упрощает редактирование файла *.editorconfig*.
+- [Функция определения кода](/visualstudio/intellicode/code-style-inference) IntelliCode для Visual Studio позволяет настроить стили кода по существующему коду. Она создает непустой файл EditorConfig с определенными параметрами для вашего стиля кода.
 
-   ![Добавление EDITORCONFIG-файла с расширением](media/editorconfig-extension-add.png)
-
-- Попробуйте [расширение IntelliCode](/visualstudio/intellicode/intellicode-visual-studio). Это экспериментальное расширение определяет стили существующего кода, а затем создает непустой файл *.editorconfig* с помощью параметров определенного стиля.
+- Начиная с Visual Studio 2019 вы можете [создать файл EditorConfig для настроенных параметров стиля кода](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) через пункт меню **Средства** > **Параметры**.
 
 ## <a name="file-hierarchy-and-precedence"></a>Иерархия и приоритет файлов
 
@@ -104,7 +103,7 @@ ms.locfileid: "62794139"
 
 Если необходимо переопределить только некоторые параметры, просто укажите их в файле *EDITORCONFIG*. Переопределяются только те свойства, которые явно перечислены в файле более низкого уровня. Другие параметры из файлов *EDITORCONFIG* более высокого уровня будут применяться по-прежнему. Чтобы к этой части базы кода _не_ применялись параметры из _любых_ файлов *EDITORCONFIG* более высокого уровня, добавьте свойство ```root=true``` в файл *EDITORCONFIG* более низкого уровня:
 
-```EditorConfig
+```ini
 # top-most EditorConfig file
 root = true
 ```
@@ -135,7 +134,7 @@ Visual Studio позволяет редактировать файлы *EDITORCO
 
 Добавьте в проект новый файл *EDITORCONFIG* с приведенным ниже содержимым. Параметр `[*.cs]` означает, что это изменение применяется только к файлам кода на C# в проекте.
 
-```EditorConfig
+```ini
 # Top-most EditorConfig file
 root = true
 
@@ -169,7 +168,6 @@ dir .editorconfig /s
 ## <a name="see-also"></a>См. также
 
 - [Соглашения о стиле кода .NET](../ide/editorconfig-code-style-settings-reference.md)
-- [Соглашения об именовании .NET](../ide/editorconfig-naming-conventions.md)
 - [Поддержка EditorConfig для языковой службы](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Возможности редактора кода](writing-code-in-the-code-and-text-editor.md)

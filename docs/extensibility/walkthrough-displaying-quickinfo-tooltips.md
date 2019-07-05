@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef70f9a776163419819e2283a031261c6e84a159
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b7cb51edb41109d9664e5aeda0a5393d2cd34f38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076366"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312435"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Пошаговое руководство. Отображение всплывающих подсказок для кратких сведений
 Кратких сведений является функцией IntelliSense, отображающий сигнатуры методов и описания, когда пользователь перемещает указатель на имя метода. Характеристики на основе языка, например кратких сведений можно реализовать путем определения идентификаторов, для которых вы хотите предоставить описания кратких сведений, а также Создание всплывающей подсказки, в которой для отображения содержимого. Кратких сведений можно определить в контексте службы языка, можно определить тип имени собственного файла расширения и содержимого и отображения кратких сведений для только этого типа или можно отобразить кратких сведений для существующих типов (например, «text»). В этом пошаговом руководстве показано, как для отображения кратких сведений для типа содержимого «text».

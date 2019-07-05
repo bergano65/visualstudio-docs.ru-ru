@@ -11,12 +11,12 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e39dcbcdb3fe8396c3d4d42003a7aa40b5f527a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f980c9d14bc2d0c9728f87374828cf690737429c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436409"
 ---
 # <a name="getting-a-port"></a>Получение порта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58993615"
  Этот фрагмент кода показано, как использовать порт, передаваемое [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) Регистрация узла программы в [ResumeProcess для](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Параметры, не связанные непосредственно с этой концепции опущены для ясности.  
   
 > [!NOTE]
->  В этом примере используется порт для запуска и возобновить процесс и предполагается, что [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) интерфейс реализуется через порт. Это отнюдь не единственный способ выполнения этих задач, и возможно, что порт может не даже будет задействована отличных от и программа [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) предоставленные ему.  
+> В этом примере используется порт для запуска и возобновить процесс и предполагается, что [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) интерфейс реализуется через порт. Это отнюдь не единственный способ выполнения этих задач, и возможно, что порт может не даже будет задействована отличных от и программа [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) предоставленные ему.  
   
 ```cpp#  
 // This is an IDebugEngineLaunch2 method.  

@@ -12,12 +12,12 @@ ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0737607a8905e96e02b7189761198a7e9e3915b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 661cf6833c292d5ff4015649d494ee3a7d04fdbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419883"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ int GetStringChars(
  `rgString`  
  [out] Возвращает строку.  
   
- [Только в C++], `rgString` — это указатель на буфер, получающий строки символы Юникода. Этот буфер должен быть по крайней мере `buflen` символов (не байтов) в размер.  
+ [C++ только], `rgString` — это указатель на буфер, получающий строки символы Юникода. Этот буфер должен быть по крайней мере `buflen` символов (не байтов) в размер.  
   
  `pceltFetched`  
  [out] Где возвращается число символов, фактически хранятся в буфере. (Может быть `NULL` в C++.)  
@@ -61,7 +61,7 @@ int GetStringChars(
  В C++, следует принять меры, чтобы гарантировать, что буфер не ниже `buflen` символов Юникода. Обратите внимание, что символ Юникода 2 байт.  
   
 > [!NOTE]
->  В C++ возвращаемая строка не включает завершающий нуль-символ. Если он задан, `pceltFetched` будет указать число символов в строке.  
+> В C++ возвращаемая строка не включает завершающий нуль-символ. Если он задан, `pceltFetched` будет указать число символов в строке.  
   
 ## <a name="example"></a>Пример  
 <!-- TODO: review snippet reference  [!CODE [[cpp]]([cpp])]  -->  

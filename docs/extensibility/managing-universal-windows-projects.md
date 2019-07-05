@@ -3,17 +3,17 @@ title: Управление проектами универсальной Window
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 39ab595bd607f8530f899ca803a0dfeaa5178542
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047402"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340548"
 ---
 # <a name="manage-universal-windows-projects"></a>Управление проектами универсальной Windows
 
@@ -293,7 +293,7 @@ ms.locfileid: "60047402"
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. Теперь попробуйте все в деле. Нажмите клавишу F5, чтобы запустить экспериментальный экземпляр. Создайте проект приложения универсальной концентратора C# в экспериментальном экземпляре (в **новый проект** диалоговом окне **Visual C#** > **Windows**  >   **Windows 8** > **универсальной** > **приложение центра**). После загрузки решения, перейдите к **средства** меню и выберите пункт **вызова TestUniversalProject**, а затем проверить текст в **выходные данные** области. Вы должны увидеть примерно следующее:
+16. Теперь попробуйте все в деле. Нажмите клавишу F5, чтобы запустить экспериментальный экземпляр. Создайте проект приложения универсальной концентратора C# в экспериментальном экземпляре (в **новый проект** диалоговом окне **Visual C#**  > **Windows**  >   **Windows 8** > **универсальной** > **приложение центра**). После загрузки решения, перейдите к **средства** меню и выберите пункт **вызова TestUniversalProject**, а затем проверить текст в **выходные данные** области. Вы должны увидеть примерно следующее:
 
     ```
     Found shared project: HubApp.Shared

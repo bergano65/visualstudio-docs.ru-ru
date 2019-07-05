@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 00b041b4cb2009d247572d1e47dfff40d8548927
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003603"
 ---
 # <a name="active-script-authoring-interfaces"></a>Интерфейсы для создания активных скриптов
 Файл заголовка ActivAut.h предоставляет интерфейсы, перечисленные в этом разделе.  

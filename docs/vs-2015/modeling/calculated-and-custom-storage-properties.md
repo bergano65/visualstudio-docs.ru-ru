@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 673b6bda444fd097b2ce4f4eee87c9f558e64c08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a5aa6edaaba54f9c08921a594b90ca1a7352e4da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433451"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Вычисляемые и пользовательские свойства хранилища
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60069619"
      Dsl\GeneratedCode\DomainClasses.cs или DomainRelationships.cs открывается. Выше вызова метода выделенный комментарий предлагается предоставлять реализацию для Get*YourProperty*().  
   
     > [!NOTE]
-    >  Этот файл создается из DslDefinition.dsl. Если изменить этот файл, изменения будут потеряны при очередном щелчке **преобразовать все шаблоны**. Вместо этого добавьте необходимый метод в отдельном файле.  
+    > Этот файл создается из DslDefinition.dsl. Если изменить этот файл, изменения будут потеряны при очередном щелчке **преобразовать все шаблоны**. Вместо этого добавьте необходимый метод в отдельном файле.  
   
 6. Создайте или откройте файл класса в отдельную папку, например значение CustomCode\\*YourDomainClass*. cs.  
   

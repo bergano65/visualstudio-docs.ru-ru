@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993443"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686773"
 ---
 # <a name="debugger-windows"></a>Окна отладчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ ms.locfileid: "58993443"
 |Контроль параллельных данных|CTRL+SHIFT+D, (1, 2, 3, 4)|[Использование окна "Параллельные стеки"](../debugger/using-the-parallel-stacks-window.md)|  
 |Контрольное значение|CTRL+ALT+W, (1, 2, 3, 4)|[Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)|  
 |Контрольное значение|SHIFT+F9|[Окна "Контрольные значения" и "Быстрая проверка"](../debugger/watch-and-quickwatch-windows.md)|  
-|Авто|CTRL+ALT+V, A|[Окна переменных](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|Локальные|CTRL+ALT+V, L|[Окна переменных](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Авто|CTRL+ALT+V, A|[Окна переменных](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Локальные|CTRL+ALT+V, L|[Окна переменных](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Интерпретация|CTRL+ALT+I|[Окно интерпретации](../ide/reference/immediate-window.md)|  
 |Интерактивная отладка Python|SHIFT+ALT+I|[Начало работы с PTVS. Интерактивный Python](../python/getting-started-with-ptvs-interactive-python.md)|  
 |Консоль JavaScript|CTRL+ALT+V, C|[Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  

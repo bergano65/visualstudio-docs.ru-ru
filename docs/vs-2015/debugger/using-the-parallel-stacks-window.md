@@ -18,17 +18,17 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df764ac38f437be33b71e7a816709a46234f751e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993509"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684222"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Использование окна "Параллельные стеки"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Параллельные стеки** окно полезен при отладке многопоточных приложений. Его **представление "Потоки"** содержит сведения о стеке вызова для всех потоков в приложении. Оно также позволяет переходить в различные потоки и кадры стека в потоках. В управляемом коде **представление "задачи"** отображает стеки вызова <xref:System.Threading.Tasks.Task?displayProperty=fullName> объектов. В машинном коде **представление "задачи"** отображает стеки вызова [группы задач](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [параллельные алгоритмы](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [асинхронных агентов](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)и [упрощенных задач](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
+**Параллельные стеки** окно полезен при отладке многопоточных приложений. Его **представление "Потоки"** содержит сведения о стеке вызова для всех потоков в приложении. Оно также позволяет переходить в различные потоки и кадры стека в потоках. В управляемом коде **представление "задачи"** отображает стеки вызова <xref:System.Threading.Tasks.Task?displayProperty=fullName> объектов. В машинном коде **представление "задачи"** отображает стеки вызова [группы задач](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [параллельные алгоритмы](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [асинхронных агентов](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)и [упрощенных задач](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
   
 ## <a name="threads-view"></a>Представление потоков  
  На следующем рисунке показан поток, идущий от Main через A до B, а затем во внешний код. Два других потока начались во внешнем коде, а затем перешли к A, но один из потоков продолжился в объект B и затем во внешний код, а другой потом продолжился в объект C и затем в метод AnonymousMethod.  
@@ -121,7 +121,7 @@ ms.locfileid: "58993509"
  [Пошаговое руководство: Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Основы отладки](../debugger/debugger-basics.md)   
  [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
- [Параллельное программирование](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Параллельное программирование](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [Использование окна задач](../debugger/using-the-tasks-window.md)   
  [Пошаговое руководство: Отладка параллельного приложения](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Класс Task](../extensibility/debugger/task-class-internal-members.md)

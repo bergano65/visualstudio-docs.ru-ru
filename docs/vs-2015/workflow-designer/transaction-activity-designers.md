@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b73a28e9a3f0fb5a3b5aa618296fe5a44b88cff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976580"
 ---
 # <a name="transaction-activity-designers"></a>Конструкторы действий транзакций
 Конструкторы операций транзакций используются для создания и настройки действий транзакций, например, компенсации и подтверждения. В подразделах этого раздела и перечисленных в следующей таблице приводится описание использования действия [!INCLUDE[wfd2](../includes/wfd2-md.md)] и конструкторов шаблонов.  

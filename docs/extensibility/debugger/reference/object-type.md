@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f0aafc5b41d9020c80cd2b86c9048db1d333bfd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 726e4978ac2c474b1f23b90f409f25b8a58aceab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708528"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349920"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 Указывает тип объекта из средство оценки выражений.
@@ -65,36 +68,51 @@ public enum enum_OBJECT_TYPE { 
 };
 ```
 
-## <a name="members"></a>Участники
- OBJECT_TYPE_BOOLEAN указывает, что объект является логическое значение.
+## <a name="fields"></a>Поля
+ `OBJECT_TYPE_BOOLEAN`\
+ Указывает, что объект является логическое значение.
 
- OBJECT_TYPE_CHAR указывает, что объект является знаком.
+ `OBJECT_TYPE_CHAR`\
+ Указывает, что объект является знаком.
 
- OBJECT_TYPE_I1 указывает, что объект является однобайтовое целое число со знаком.
+ `OBJECT_TYPE_I1`\
+ Указывает, что объект является однобайтовое целое число со знаком.
 
- OBJECT_TYPE_U1 указывает, что объект является однобайтовое целое число без знака.
+ `OBJECT_TYPE_U1`\
+ Указывает, что объект является однобайтовое целое число без знака.
 
- OBJECT_TYPE_I2 указывает, что объект находится двухбайтовое целое число со знаком.
+ `OBJECT_TYPE_I2`\
+ Указывает, что объект находится двухбайтовое целое число со знаком.
 
- OBJECT_TYPE_U2 указывает, что объект находится двухбайтовое целое число без знака.
+ `OBJECT_TYPE_U2`\
+ Указывает, что объект находится двухбайтовое целое число без знака.
 
- OBJECT_TYPE_I4 указывает, что объект является четырехбайтовое целое число со знаком.
+ `OBJECT_TYPE_I4`\
+ Указывает, что объект является четырехбайтовое целое число со знаком.
 
- OBJECT_TYPE_U4 указывает, что объект является 4 байтовым беззнаковым целым числом.
+ `OBJECT_TYPE_U4`\
+ Указывает, что объект является 4 байтовым беззнаковым целым числом.
 
- OBJECT_TYPE_I8 указывает, что объект является 8 байтовое целое число со знаком.
+ `OBJECT_TYPE_I8`\
+ Указывает, что объект является 8 байтовое целое число со знаком.
 
- OBJECT_TYPE_U8 указывает, что объект является 8 байтовое целое число без знака.
+ `OBJECT_TYPE_U8`\
+ Указывает, что объект является 8 байтовое целое число без знака.
 
- OBJECT_TYPE_R4 указывает, что объект является числом с плавающей запятой размером 4 байта.
+ `OBJECT_TYPE_R4`\
+ Указывает, что объект является числом с плавающей запятой размером 4 байта.
 
- OBJECT_TYPE_R8 указывает, что объект является 8 байтовое число с плавающей запятой.
+ `OBJECT_TYPE_R8`\
+ Указывает, что объект является 8 байтовое число с плавающей запятой.
 
- OBJECT_TYPE_OBJECT указывает, что объект является объектом.
+ `OBJECT_TYPE_OBJECT`\
+ Указывает, что объект является объектом.
 
- OBJECT_TYPE_NULL указывает, что объект имеет значение NULL.
+ `OBJECT_TYPE_NULL`\
+ Указывает, что объект имеет значение NULL.
 
- OBJECT_TYPE_CLASS указывает, что объект является классом.
+ `OBJECT_TYPE_CLASS`\
+ Указывает, что объект является классом.
 
 ## <a name="remarks"></a>Примечания
  Передается в качестве аргумента для [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) и [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) методы.

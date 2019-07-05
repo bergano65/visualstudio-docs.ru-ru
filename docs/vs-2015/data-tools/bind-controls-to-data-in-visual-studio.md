@@ -19,12 +19,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d0e34075fbadcc998dba09d1b7c13a5ffacc606
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61693f30044a8ac5888bebb519dd156ab1e9510b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556924"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705573"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Привязка элементов управления к данным в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "62556924"
 
  1. Создание модели с помощью **модели EDM** мастера, затем перетащить нужные объекты в конструктор.
 
- 2. Классы LINQ to SQL не отображаются в окне **Источники данных**. Однако можно добавить новый источник данных объектов, основанный на классах LINQ to SQL, а затем перетащить нужные объекты в конструктор, чтобы создать элементы управления с привязкой к данным. Дополнительные сведения см. в разделе [Пошаговое руководство: создание классов LINQ to SQL (реляционный конструктор объектов)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
+ 2. Классы LINQ to SQL не отображаются в окне **Источники данных**. Однако можно добавить новый источник данных объектов, основанный на классах LINQ to SQL, а затем перетащить нужные объекты в конструктор, чтобы создать элементы управления с привязкой к данным. Дополнительные сведения см. в разделе [Пошаговое руководство: создание классов LINQ to SQL (реляционный конструктор объектов)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
 
 ## <a name="data-sources-window"></a>Источники данных - окно
  Источники данных доступны в проекте как элементы в окне **Источники данных**. Это окно является видимым или доступен из **представление** меню, когда поверхность разработки формы является активным окном в проекте. Можно перетащить элементы из этого окна для создания элементов управления, привязанных к базовым данным и источники данных можно также настроить, щелкнув правой кнопкой мыши.
@@ -71,4 +71,4 @@ ms.locfileid: "62556924"
 |Настройте заголовки для элементов управления.|[Настройка способа создания подписи для элемента управления с привязкой к данным в Visual Studio](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
 ## <a name="see-also"></a>См. также
- [Visual Studio data tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [привязки данных Windows Forms](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)
+ [Visual Studio data tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [привязки данных Windows Forms](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

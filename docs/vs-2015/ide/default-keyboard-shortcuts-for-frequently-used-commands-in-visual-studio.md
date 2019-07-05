@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac18bfbc06c6d9d3387c208cad7c83bbc21bb80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c64207f6ab26c78492db9feae80698b0af5679d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437511"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60068877"
 Для доступа к часто используемым командам Visual Studio можно использовать следующие сочетания клавиш по умолчанию. Полный список команд, которые имеют сочетания клавиш по умолчанию, см. в разделе [Сочетания клавиш по умолчанию](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
->  Сочетание клавиш для той или иной команды можно определить, открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**.
+> Сочетание клавиш для той или иной команды можно определить, открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**.
 
  **Содержание раздела**
 

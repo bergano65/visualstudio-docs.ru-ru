@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438758"
 ---
 # <a name="visio-object-model-overview"></a>Обзор объектной модели Visio
   Для разработки решений Office для Microsoft Office Visio вы можете взаимодействовать с объектной моделью Visio. Эта объектная модель состоит из классов и интерфейсов, которые предоставляются в основной сборке взаимодействия для Visio и определены в пространстве имен `Microsoft.Office.Interop.Visio`.
@@ -67,7 +67,7 @@ ms.locfileid: "60096560"
  Все объекты и элементы в справочнике объектной модели VBA соответствуют типам и членам основной сборки взаимодействия Visio. Например `Document` в справочнике по объектной модели VBA соответствует типу Microsoft.Office.Interop.Visio.Document в основной сборке ВЗАИМОДЕЙСТВИЯ Visio. Несмотря на то что в справочнике по объектной модели VBA содержатся примеры кода для большинства свойств, методов и событий, необходимо преобразовать код VBA в этом справочнике в код Visual Basic или Visual C#, если требуется использовать их в проекте надстройки Visio VSTO, создаваемом с помощью Visual Studio.
 
 > [!NOTE]
->  В настоящее время справочная документация по основной сборке взаимодействия Visio отсутствует.
+> В настоящее время справочная документация по основной сборке взаимодействия Visio отсутствует.
 
  Соответствующие примеры кода и дополнительные средства для создания решений Visio, см. в разделе [пакет средств разработки программного обеспечения Visio 2010](http://go.microsoft.com/fwlink/?LinkId=196501).
 

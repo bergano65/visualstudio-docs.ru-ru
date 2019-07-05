@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Извлечение знаков начала и завершения в диапазонах программным способом
+title: Начать & конец символов в диапазонах программным способом
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041693d5d81fb13e812b260171ec95a2bd183a6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8e0f04d5f70c99ea3404a95b04a7ea668a37e0f2
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095091"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328946"
 ---
 # <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Практическое руководство. Извлечение знаков начала и завершения в диапазонах программным способом
   В этом примере показано, как получить позиции символов начала и конца диапазона.

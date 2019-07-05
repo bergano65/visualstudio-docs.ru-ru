@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office Word Keyboard, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"
+title: Клавиатуры Word Office, настройки клавиатуры, диалоговое окно "Параметры"
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6506fec976822ea4a4e675c9961395c952a7a35f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5180aa2f4c5022cedcba2c5377d2ff2ac14ffb28
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604097"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835979"
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Word Keyboard, настройки клавиатуры Microsoft Office, диалоговое окно "Параметры"
   Microsoft Office Word и Visual Studio и обрабатывать сочетания клавиш. Же сочетания клавиш могут соответствовать разным командам в Word и в Visual Studio. При открытом в проекте уровня документа в Visual Studio Word только одно приложение за раз получает сочетания клавиш. По умолчанию Visual Studio получает нажатие сочетания клавиш, но может сделать их получения, если документ имеет фокус, выбрав Word **Инамическая схема клавиатуры**.

@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ded1741c9364ca9fa706441b5cfa313ce6e58569
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3bdc65a145b64071087d72fce9967c67cc2f8426
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002867"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687532"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Компоненты пакета SDK для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ ms.locfileid: "59002867"
  Шаблоны содержат структуры проекта и основные файлы, необходимые для создания определенного типа приложений, управления, библиотеки или класса. Для разработки программного обеспечения, похожий на один из шаблонов следует создать проект, основанный на шаблоне, а затем измените файлы в этом проекте.  
   
 > [!NOTE]
->  Эта архитектура шаблона не поддерживается для [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] проектов. Сведения о создании [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] шаблоны проектов, см. в разделе [Разработка мастера](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
+> Эта архитектура шаблона не поддерживается для [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] проектов. Сведения о создании [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] шаблоны проектов, см. в разделе [Разработка мастера](https://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
   
  Дополнительные сведения см. в разделе [добавление проектов и шаблонов элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   

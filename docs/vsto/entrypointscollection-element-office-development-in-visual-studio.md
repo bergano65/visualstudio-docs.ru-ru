@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4e877e186538622b3604e850040cbed0b018911d
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951896"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `entryPointsCollection` пространства имен `vstav3` содержит все элементы `entryPoints` , связанные с решениями Office.
@@ -53,7 +53,7 @@ ms.locfileid: "54871173"
 
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В приведенном ниже примере кода показан элемент `entryPointsCollection` в манифесте приложения для решения на уровне документа, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
@@ -99,7 +99,7 @@ ms.locfileid: "54871173"
 
 ## <a name="vsto-add-in-example"></a>Пример надстройки VSTO
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В приведенном ниже примере кода показан элемент `entryPointsCollection` манифеста приложения для решения на уровне приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код

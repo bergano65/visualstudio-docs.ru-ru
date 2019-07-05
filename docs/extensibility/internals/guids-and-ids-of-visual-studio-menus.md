@@ -10,17 +10,17 @@ helpviewer_keywords:
 - guid
 - menus
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 279b9cc03b79efe2fbf9daa7457f5dce88e7a432
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 26171ae9f4464c3b8b63762d92e9a91d5a4b8420
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597872"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329105"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Меню идентификаторы GUID и идентификаторы Visual Studio
 В этой статье перечисляет значения GUID и идентификатор меню и группы в строке меню Visual Studio. Эти значения определены в *.vsct* файлы, которые устанавливаются как часть Visual Studio SDK. Дополнительные сведения см. в разделе [команды, определенные в интегрированной среде разработки, меню и групп](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -56,10 +56,11 @@ ms.locfileid: "56597872"
 |Построить|IDM_VS_MENU_BUILD|
 |Формат|IDM_VS_MENU_FORMAT|
 |Инструменты|IDM_VS_MENU_TOOLS|
+|Расширения|IDM_VS_MENU_EXTENSIONS|
 |Окно|IDM_VS_MENU_WINDOW|
 |Надстройки|IDM_VS_MENU_ADDINS|
 |Сообщество|IDM_VS_MENU_COMMUNITY|
-|Справка|IDM_VS_MENU_HELP|
+|Help|IDM_VS_MENU_HELP|
 
 ## <a name="groups-on-visual-studio-menus"></a>Группы меню Visual Studio
  В следующих списках приведены группы, полученные непосредственно из меню в строке меню Visual Studio. Самый быстрый способ добавить команду в меню Visual Studio — присвоить одной из этих групп в качестве родительского элемента. Группы, которые получены из подменю не отображаются в этом разделе.
@@ -159,7 +160,7 @@ ms.locfileid: "56597872"
 
 |Группа|ID|
 |-----------|--------|
-|Новый|IDG_VS_WINDOW_NEW|
+|Оператор new|IDG_VS_WINDOW_NEW|
 |Закрепления и закрытия|IDG_VS_DOCKCLOSE|
 |Закрепления или скрыть|IDG_VS_DOCKHIDE|
 |Упорядочить|IDG_VS_WINDOW_ARRANGE|
@@ -178,7 +179,7 @@ ms.locfileid: "56597872"
  Следующая иерархия показывает подменю, которые связаны с меню в строке меню Visual Studio. Так, как только группа может включать меню в виде родительского, каждый подменю необходимо опускаются из группы, меню, вместо непосредственно из меню. Дополнительные сведения о связи между меню, подменю и групп см. в разделе [Добавление подменю в меню](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
->  Имена меню в строке меню Visual Studio не отображаются отдельно в этой иерархии, так как их можно вывести из соглашения об именовании для групп в интегрированной среде разработки, следующим образом: *IDG_VS_\<имя меню\>_\<имя группы\>*.
+> Имена меню в строке меню Visual Studio не отображаются отдельно в этой иерархии, так как их можно вывести из соглашения об именовании для групп в интегрированной среде разработки, следующим образом: *IDG_VS_\<имя меню\>_\<имя группы\>* .
 
 |Родительская группа|Подменю|Дочерние группы|
 |------------------|-------------|------------------|

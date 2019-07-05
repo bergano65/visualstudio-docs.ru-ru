@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3dff5e6ecf60d389730841e99b87db584465e020
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979953"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695480"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>С помощью меток текста с помощью API прежних версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ ms.locfileid: "58979953"
  Из-за снижению производительности, связанные с текстовые метки не следует создавать много маркеры для вашей текстовых буферов. Каждый маркер обновляется каждый раз, что пользователь редактирует содержимое буфера.  
   
 > [!NOTE]
->  Пользователи могут изменять цвет тип видимым маркера, но не его форма и стиля. Дополнительные сведения см. в разделе [шрифты и цвета, среда, диалоговое окно параметров](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+> Пользователи могут изменять цвет тип видимым маркера, но не его форма и стиля. Дополнительные сведения см. в разделе [шрифты и цвета, среда, диалоговое окно параметров](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
 ## <a name="related-topics"></a>См. также  
   
 |Заголовок|Описание|  
 |-----------|-----------------|  
-|[Практическое руководство. Добавление маркеров стандартного текста](../extensibility/how-to-add-standard-text-markers.md)|Описывает способы добавления стандартного текста тип маркера, предоставляемые [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовым редактором для представления текста.|  
-|[Практическое руководство. Реализовать маркеры ошибок](../extensibility/how-to-implement-error-markers.md)|Описывается реализация экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] маркер, который используется для указания ошибок с помощью красными волнистыми линиями.|  
-|[Практическое руководство. Создание настраиваемых текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)|Описывает, как создать и добавить пользовательский текстовый тип маркера для текстового представления.|  
-|[Практическое руководство. Использовать текстовые метки](../extensibility/how-to-use-text-markers.md)|Описание способов добавления меток текста.|  
+|[Практическое руководство. Добавление стандартных текстовых маркеров](../extensibility/how-to-add-standard-text-markers.md)|Описывает способы добавления стандартного текста тип маркера, предоставляемые [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовым редактором для представления текста.|  
+|[Практическое руководство. Реализация маркеров ошибок](../extensibility/how-to-implement-error-markers.md)|Описывается реализация экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] маркер, который используется для указания ошибок с помощью красными волнистыми линиями.|  
+|[Практическое руководство. Создание пользовательских текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)|Описывает, как создать и добавить пользовательский текстовый тип маркера для текстового представления.|  
+|[Практическое руководство. Использование текстовых маркеров](../extensibility/how-to-use-text-markers.md)|Описание способов добавления меток текста.|  
 |[Компоненты основного редактора](../extensibility/inside-the-core-editor.md)|Описание возможностей базовым редактором и подробные сведения о том, как настроить базовый редактор.|  
-|[Возможности редактора](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Описывает функции, доступные в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовым редактором.|  
+|[Возможности редактора](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Описывает функции, доступные в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовым редактором.|  
   
 ## <a name="reference"></a>Ссылка  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

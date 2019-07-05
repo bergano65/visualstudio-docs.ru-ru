@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::CreateAlias method
 ms.assetid: 54a05920-5d13-4f67-962b-d1a7f013dff9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226d584a2773a342b8247ff337e686be2da6bf9b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: efab749b7850cc3c7e3a29a62240ce9502f99843
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690647"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317401"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 Создает уникальный идентификатор или псевдоним для этого объекта или возвращает существующий псевдоним.
@@ -36,10 +39,9 @@ int CreateAlias(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ppAlias`
-
- [out] Псевдоним новой (или существующей).
+## <a name="parameters"></a>Параметры
+`ppAlias`\
+[out] Псевдоним новой (или существующей).
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает значение S_OK; в противном случае возвращает код ошибки.

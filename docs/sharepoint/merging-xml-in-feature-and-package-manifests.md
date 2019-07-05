@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8af9386d192c6dd96669dbfada298317cf5fe0e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429284"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Слияние XML в манифестах компонентов и пакетов
   Компоненты и пакеты определяются [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файлов манифеста. Эти манифесты в пакете представляют собой сочетание данных, сформированных из конструкторов и пользовательского [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] введенного пользователем в шаблон манифеста. Во время упаковки [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] сливает пользовательские [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] инструкции с предоставляемыми конструктором [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] для формирования в пакете [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] файл манифеста. Одинаковые элементы, за исключением указанных далее в исключения слияния, объединяются во избежание [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ошибок проверки после развертывания файлов в SharePoint и сделать файл манифеста файлы становится компактнее и эффективнее.
@@ -55,7 +55,7 @@ ms.locfileid: "56646308"
 |CustomUpgradeActionParameter|name|
 
 > [!NOTE]
->  Поскольку единственный способ изменить элемент CustomUpgradeAction в настраиваемом [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] редактора, эффект слияния не мал.
+> Поскольку единственный способ изменить элемент CustomUpgradeAction в настраиваемом [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] редактора, эффект слияния не мал.
 
 ## <a name="package-manifest-elements"></a>Элементы манифеста пакета
  Ниже приведен список всех элементов манифеста пакета, которые могут быть объединены и их уникальный ключ, который используется для сопоставления.

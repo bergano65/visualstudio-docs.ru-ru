@@ -6,17 +6,17 @@ helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a92554843c1bdde48123515cb2548b2c513ef756
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7b8ed17e67246479772636d67bc8d9f218a3a3fc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092309"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333475"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Средство синтаксического анализа и сканер языковой службы прежних версий
 Анализатор является сердцем языковой службы. Классы Managed Package Framework (MPF) языка требуется средство синтаксического анализа языка, чтобы выбрать сведения о коде отображения. Средство синтаксического анализа разделяет текст на лексических маркеров, а затем определяет эти маркеры по типу и функциональные возможности.
@@ -66,7 +66,7 @@ namespace MyNamespace
  В отличие от средства синтаксического анализа, который используется как часть компилятора, (где маркеры преобразуются в некоторую форму исполняемого кода) средства синтаксического анализа языка службы может быть вызван по разным причинам и во многих разных контекстах. Как реализовать этот подход в <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса принимает разработчик. Важно помнить, что <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод может вызываться в фоновом потоке.
 
 > [!CAUTION]
->  <xref:Microsoft.VisualStudio.Package.ParseRequest> Структура содержит ссылку на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объекта. Это <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объект не может использоваться в фоновом потоке. На самом деле многие базовые классы MPF не может использоваться в фоновом потоке. К ним относятся <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> классов и любой другой класс, который прямо или косвенно взаимодействует с представлением.
+> <xref:Microsoft.VisualStudio.Package.ParseRequest> Структура содержит ссылку на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объекта. Это <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объект не может использоваться в фоновом потоке. На самом деле многие базовые классы MPF не может использоваться в фоновом потоке. К ним относятся <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> классов и любой другой класс, который прямо или косвенно взаимодействует с представлением.
 
  Это средство синтаксического анализа обычно анализирует источник в момент первой он вызывается или когда синтаксический анализ причин значение <xref:Microsoft.VisualStudio.Package.ParseReason> прав. Последующие вызовы <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод обработки небольшая часть анализируемого кода и могут выполняться гораздо быстрее, используя результаты предыдущей операции полного синтаксического анализа. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Метод передает результаты операции анализа через <xref:Microsoft.VisualStudio.Package.AuthoringSink> и <xref:Microsoft.VisualStudio.Package.AuthoringScope> объектов. <xref:Microsoft.VisualStudio.Package.AuthoringSink> Объект используется для сбора сведений по определенной причине синтаксического анализа, например, сведения о диапазоны фигурные или сигнатур метода, которые имеют списки параметров. <xref:Microsoft.VisualStudio.Package.AuthoringScope> Предоставляет коллекции, объявления и подписи методов, а также поддержку для перехода к дополнительной изменить параметр (**перейти к определению**, **перейти к объявлению**, **перейти к Ссылаться на**).
 

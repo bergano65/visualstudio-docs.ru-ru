@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 03/05/2017
 ms.author: ghogen
 ms.openlocfilehash: 8c96713a06c66fe34e34417e9e8595ba07e50485
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62989820"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Создание проектов Azure с помощью командной строки
 С помощью Microsoft Build Engine (MSBuild) можно выполнять сборку продуктов в лабораторных средах, где приложение Visual Studio не установлено. MSBuild использует для файлов проекта расширяемый формат XML, который полностью поддерживается Майкрософт. С помощью формата файлов MSBuild вы можете описать, какие именно элементы должны быть собраны для одной или нескольких платформ и конфигураций.

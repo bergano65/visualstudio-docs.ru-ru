@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3680af73c281a01a7938805f859e0ff88c1ba44
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b6f6dee7850610b222cf26964dd4811fcf79b5a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641238"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329394"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Создание экземпляров проекта с помощью фабрик проектов
 Типы проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] использовать *фабрики проектов* для создания экземпляров объектов проекта. Фабрику проекта похоже на стандартный класс фабрики для создаваемых посредством функции CoCreateInstance COM-объектов. Тем не менее объекты проекта не создаваемых посредством функции CoCreateInstance; они могут создаваться только с помощью фабрики проектов.
@@ -48,4 +48,4 @@ ms.locfileid: "56641238"
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>
-- [Контрольный список: Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)

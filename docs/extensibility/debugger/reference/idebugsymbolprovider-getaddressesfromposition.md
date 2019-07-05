@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromPosition method
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e615abb8bf4a535f88dd1df483540ac84e5ca5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dcaef1e9675ae395826865604833fdb6683df944
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705220"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310185"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Этот метод сопоставляет позицию документов в массив адресов отладки.
@@ -42,22 +45,18 @@ int GetAddressesFromPosition( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pDocPos`
+## <a name="parameters"></a>Параметры
+`pDocPos`\
+[in] Позиция документа.
 
- [in] Позиция документа.
+`fStatmentOnly`\
+[in] Если значение равно TRUE, ограничивает адреса отладки для одной инструкции.
 
- `fStatmentOnly`
+`ppEnumBegAddresses`\
+[out] Возвращает перечислитель для начала отладки адреса, связанные с этой инструкции или строке.
 
- [in] Если значение равно TRUE, ограничивает адреса отладки для одной инструкции.
-
- `ppEnumBegAddresses`
-
- [out] Возвращает перечислитель для начала отладки адреса, связанные с этой инструкции или строке.
-
- `ppEnumEndAddresses`
-
- [out] Возвращает [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) перечислитель для конечного адреса отладки, связанные с этой инструкции или строке.
+`ppEnumEndAddresses`\
+[out] Возвращает [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) перечислитель для конечного адреса отладки, связанные с этой инструкции или строке.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

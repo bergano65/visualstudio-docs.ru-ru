@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetInfo method
 - IDebugModule2::GetInfo method
 ms.assetid: de337e66-294f-4ac9-b21e-71fac7418e36
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0a5ad3d7651e89c2ef864a184155e8b0a430d79
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1fe5060f66c56a033fb0bdcc8ae7dee368d2824e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694807"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323972"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 Возвращает сведения об этом модуле.
@@ -39,14 +42,12 @@ int GetInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwFields`
+## <a name="parameters"></a>Параметры
+`dwFields`\
+[in] Сочетание флагов из [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) перечисление, указать, какие поля из `pInfo` , для заполнения.
 
- [in] Сочетание флагов из [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) перечисление, указать, какие поля из `pInfo` , для заполнения.
-
- `pInfo`
-
- [in, out] Объект [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры, который заполняется описание модуля.
+`pInfo`\
+[in, out] Объект [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) структуры, который заполняется описание модуля.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

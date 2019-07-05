@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b561a4aebe34ac943b0163e66dfbf2edf423eedb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f53083c49504146aca545da73bd38950493efcd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429210"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Свойства MsBuild, поддерживаемые в SharePoint
   Любой [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] свойство, определенное в файле Microsoft.VisualStudio.SharePoint.targets, файле проекта или файле пользователя проекта может использоваться в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проектов SharePoint. Помимо общих [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] свойства проекта, SharePoint определяет дополнительные свойства, характерные для проектов SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "56599692"
  Для обеспечения гибкости, вместо использования жестко запрограммированных строк в **Командная строка до развертывания** и **строка команды после развертывания** полях на странице свойств SharePoint, можно использовать SharePoint свойства в качестве аргументов. Например, вместо указания определенной [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] строку для сайта SharePoint, можно вместо этого использовать `$(SharePointSiteUrl)`.
 
 > [!NOTE]
->  Можно использовать либо [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] синтаксис переменной `$(` *propertyName* `)` или синтаксис переменной среды `%` *propertyName* `%` Чтобы задать свойство.
+> Можно использовать либо [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] синтаксис переменной `$(` *propertyName* `)` или синтаксис переменной среды `%` *propertyName* `%` Чтобы задать свойство.
 
 ## <a name="see-also"></a>См. также
 

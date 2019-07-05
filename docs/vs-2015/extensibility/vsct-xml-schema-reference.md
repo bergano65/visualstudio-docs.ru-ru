@@ -11,12 +11,12 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e56de828d3b357762da98cde3b9591033c6b5d19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441482"
 ---
 # <a name="vsct-xml-schema-reference"></a>Справочник по схемам XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58993695"
  Файл конфигурации (.vsct) таблицы команд на основе XML определяет командных элементов, предоставляемых VSPackage интегрированной среде разработки (IDE). Эти элементы включают элементы меню, меню, панелей инструментов и поля со списком.  
   
 > [!NOTE]
->  Компилятора VSCT можно запустить препроцессора в vsct-файле. Так как это обычно включает препроцессора, можно определить C++ и макросы, имеющие тот же синтаксис, который используется в файлах C++. В качестве примера приведены в vsct-файлом, файл **новый проект** мастер создает для проекта VSPackage.  
+> Компилятора VSCT можно запустить препроцессора в vsct-файле. Так как это обычно включает препроцессора, можно определить C++ и макросы, имеющие тот же синтаксис, который используется в файлах C++. В качестве примера приведены в vsct-файлом, файл **новый проект** мастер создает для проекта VSPackage.  
   
 ## <a name="optional-elements"></a>Необязательные элементы  
  Некоторые элементы VSCT являются необязательными. Если `Parent` аргумент не задан, Group_Undefined:0 будет неявно. Если `Icon` аргумент не задан, будет неявно guidOfficeIcon:msotcidNoIcon. При определении сочетания клавиш эмуляция, который обычно используется, является необязательным.  

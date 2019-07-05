@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c325ab6cb12813000c981e978e728c251b06c55
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2cf0db9fa776116f1536ae137444160385a8b6a1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720904"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347710"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Получает представление зависит от компьютера диапазона физических адресов, связанных с кадром стека.
@@ -38,14 +41,12 @@ int GetPhysicalStackRange ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `paddrMin`
+## <a name="parameters"></a>Параметры
+`paddrMin`\
+[out] Возвращает наименьший физический адрес, связанный с данным кадром стека.
 
- [out] Возвращает наименьший физический адрес, связанный с данным кадром стека.
-
- `paddrMax`
-
- [out] Возвращает наибольший физический адрес, связанный с данным кадром стека.
+`paddrMax`\
+[out] Возвращает наибольший физический адрес, связанный с данным кадром стека.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

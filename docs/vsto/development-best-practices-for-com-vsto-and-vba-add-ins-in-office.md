@@ -1,5 +1,5 @@
 ---
-title: Рекомендации по разработке для COM, VSTO и VBA надстройки в Office
+title: 'Рекомендации по разработке: COM, VSTO и VBA надстройки в Office'
 ms.date: 07/25/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fcc2fe575bd6b526f5f66d936625c87e91b0b39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4689f14a6ce66f509a7af1f4a9a1d50a0f8d37cd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111185"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401417"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Рекомендации по разработке для COM, VSTO и VBA надстройки в Office
   Если вы разрабатываете надстройки COM, VSTO и VBA для Office, выполните рекомендации по разработке, описанные в этой статье.   Это поможет обеспечить:

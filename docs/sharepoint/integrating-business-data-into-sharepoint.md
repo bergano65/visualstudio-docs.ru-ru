@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fbbdba27b5ccc52e64575aad018af4ca20cf2e14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008807"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Интеграция бизнес-данных в SharePoint
   Вы можете интегрировать бизнес-данные в SharePoint. Бизнес-данные могут поступать из внутренних серверных приложений, таких как [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel и SAP, или веб-службы. Пользователей можно просмотреть, добавить, обновить или удалить бизнес-данных с помощью внешних списков или деловых данных веб-частей в SharePoint.  Пользователи также могут работать этот данным в автономном режиме в приложении Microsoft Office, например Microsoft Outlook. Дополнительные сведения см. в разделе [где можно указать внешние данные](http://go.microsoft.com/fwlink/?LinkId=169295).
@@ -51,7 +51,7 @@ ms.locfileid: "56612729"
 
 ## <a name="related-topics"></a>См. также
 
-|Заголовок|Описание:|
+|Заголовок|Описание|
 |-----------|-----------------|
 |[Создание модели подключения к бизнес-данных](../sharepoint/creating-a-business-data-connectivity-model.md)|Показано, как создать новую модель или импорт модели, экспортированные из SharePoint.|
 |[Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)|В этой статье описывается разработка элементы модели с помощью средств разработки Visual Studio.|

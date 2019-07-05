@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::GetENCAvailableState
 ms.assetid: 98a5d527-8a72-476c-8e92-0bff3d97c195
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b4098bd1f1a3279c918b1f150e3a4c45880ac5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 99ec4ff53fe9baad2c3a36f252c652f37822ba83
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719422"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313954"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Этот метод возвращает текущее состояние изменить и продолжить процесс. Поставщик пользовательский порт, всегда должны возвращать `E_NOTIMPL`.
@@ -36,16 +39,15 @@ int GetENCAvailableState(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pReason`
-
- [out] Значение из [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) перечисления.
+## <a name="parameters"></a>Параметры
+`pReason`\
+[out] Значение из [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) перечисления.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
 
 > [!NOTE]
->  Поставщик пользовательский порт, всегда должны возвращать `E_NOTIMPL`.
+> Поставщик пользовательский порт, всегда должны возвращать `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Примечания
  Это состояние может зависеть от [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).

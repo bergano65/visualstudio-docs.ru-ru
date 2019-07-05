@@ -10,12 +10,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 00a2f5e4e405ff2cba7275cd4c1310db850632b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2af9e0765fb5bc73a35bebfc2f50f5d2a41122d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435968"
 ---
 # <a name="how-to-implement-error-markers"></a>Практическое руководство. Реализовать маркеры ошибок
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60118036"
 1. В представлении, что и фильтруемый фильтр получает указатель на поставщик задач, связанных с данными этого представления.  
   
     > [!NOTE]
-    >  Можно использовать один и тот же фильтр команды для подсказок метода, завершение операторов, маркеры ошибок и т. д.  
+    > Можно использовать один и тот же фильтр команды для подсказок метода, завершение операторов, маркеры ошибок и т. д.  
   
 2. Если фильтр получает событие, указывающее на то, что вы переместили на другую строку, задание создается на наличие ошибок.  
   
@@ -59,4 +59,4 @@ ms.locfileid: "60118036"
  [С помощью меток текста с помощью API прежних версий](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Практическое руководство. Добавление маркеров стандартного текста](../extensibility/how-to-add-standard-text-markers.md)   
  [Практическое руководство. Создание настраиваемых текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)   
- [Практическое руководство. Использовать текстовые метки](../extensibility/how-to-use-text-markers.md)
+ [Практическое руководство. Использование текстовых маркеров](../extensibility/how-to-use-text-markers.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e105ef33202781dcf3a2f82706827156e76548eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421815"
 ---
 # <a name="just-my-code"></a>Только мой код
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "60084340"
  ![Включить только мой код в диалоговом окне Параметры](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
   
 > [!NOTE]
->  **Включить только мой код** параметр — это глобальный параметр, который применяется ко всем проектам Visual Studio на всех языках.  
+> **Включить только мой код** параметр — это глобальный параметр, который применяется ко всем проектам Visual Studio на всех языках.  
   
 ### <a name="BKMK_Override_call_stack_filtering"></a> Фильтрация стека вызовов переопределения  
  На экранах стека вызовов, таких как окна стека вызовов и задач, режим "Только мой код" сворачивает код, не написанный пользователем, в кадр с аннотациями и подписью `[External Code]`. Для просмотра свернутых кадров выберите **Показать внешний код** в контекстном меню стека вызова отображаться.  
   
 > [!NOTE]
->  **Показать внешний код** параметр сохраняется в профилировщик текущего пользователя. Он применяется ко всем проектам на всех языках, открываемых этим пользователем.  
+> **Показать внешний код** параметр сохраняется в профилировщик текущего пользователя. Он применяется ко всем проектам на всех языках, открываемых этим пользователем.  
   
 ## <a name="BKMK__NET_Framework_Just_My_Code"></a> Только мой код .NET framework  
   

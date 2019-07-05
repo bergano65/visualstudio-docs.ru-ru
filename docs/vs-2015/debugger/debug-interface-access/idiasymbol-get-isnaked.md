@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0d0704419596808c0e79d5c66fae056cf8dd7b3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 64989ca10416ab2ad9606c94b3f3bc977f60c5ee
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993158"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702348"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Получает флаг, указывающий, имеет ли функция [с атрибутом naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) атрибут (то есть функция имеет без кода пролога и эпилога, компилятор добавляет).  
+Получает флаг, указывающий, имеет ли функция [с атрибутом naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) атрибут (то есть функция имеет без кода пролога и эпилога, компилятор добавляет).  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,7 +41,7 @@ HRESULT get_isNaked(
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="requirements"></a>Требования  
   
@@ -52,4 +52,4 @@ HRESULT get_isNaked(
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Вызовы функций с атрибутом naked](http://msdn.microsoft.com/library/2a66847a-a43f-4541-a7be-c9f5f29b5fdb)
+ [Вызовы функций с атрибутом naked](https://msdn.microsoft.com/library/2a66847a-a43f-4541-a7be-c9f5f29b5fdb)

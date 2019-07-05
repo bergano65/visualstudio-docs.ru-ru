@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortPicker::SetSite
 ms.assetid: 7319e187-adfe-4b3f-aec9-521356fb5a8a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0964c94334ca0815b4410f6858dca5502b2f8a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 33d6d12bd21a6ab208fed019c1e0f763bce86724
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678466"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340348"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 Задает поставщик службы.
@@ -34,10 +37,9 @@ public int SetSite(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pSP`
-
- [in] Ссылка на интерфейс поставщика службы.
+## <a name="parameters"></a>Параметры
+`pSP`\
+[in] Ссылка на интерфейс поставщика службы.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

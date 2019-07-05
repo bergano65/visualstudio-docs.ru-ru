@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK]
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ebe9a3d1c314a8e3b15ae7588f38abfd50518d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 47e6686c82dcb0272fa9b3b3c4d3b7c73afe4475
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636282"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335434"
 ---
 # <a name="contribute-to-the-automation-model"></a>Участие в модели автоматизации
 Visual Studio предоставляет набор интерфейсов автоматизации для настройки среды. Модель автоматизации — объектная модель, который позволяет конечным пользователям для создания надстроек Visual Studio и расширения.

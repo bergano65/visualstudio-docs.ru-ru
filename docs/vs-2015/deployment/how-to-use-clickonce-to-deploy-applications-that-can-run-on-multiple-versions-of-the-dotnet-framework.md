@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 164fe64f360e41c06ef3f7bfd2d8091a6ebefecd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095481"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679938"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Практическое руководство. Использование технологии ClickOnce для развертывания приложений, которые могут выполняться на различных версиях платформы .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60095481"
 Можно развернуть приложение, предназначенное для нескольких версий платформы .NET Framework с помощью технологии развертывания ClickOnce. Это требует создания и обновление манифестов приложения и развертывания.  
   
 > [!NOTE]
->  Прежде чем устанавливать приложение на несколько версий платформы .NET Framework, следует убедиться, что приложение работает с несколькими версиями платформы .NET Framework. Среда CLR версии отличается между [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] и .NET Framework 2.0, .NET Framework 3.0 и .NET Framework 3.5.  
+> Прежде чем устанавливать приложение на несколько версий платформы .NET Framework, следует убедиться, что приложение работает с несколькими версиями платформы .NET Framework. Среда CLR версии отличается между [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] и .NET Framework 2.0, .NET Framework 3.0 и .NET Framework 3.5.  
   
  Этот процесс включает следующие шаги:  
   
@@ -48,7 +48,7 @@ ms.locfileid: "60095481"
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Для создания манифестов приложения и развертывания  
   
-- Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [Как Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).  
+- Используйте мастер публикации или страницы публикации в конструкторе проектов для публикации приложения и создания приложения и файлы манифеста развертывания. Дополнительные сведения см. в разделе [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) или [страницы публикации, конструктор проектов](../ide/reference/publish-page-project-designer.md).  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Чтобы изменить манифест развертывания, чтобы получить список нескольких версий .NET Framework  
   
@@ -103,11 +103,11 @@ ms.locfileid: "60095481"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Обновление и повторное подписание приложения и развертывания манифестов  
   
-- Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [Как Повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+- Обновление и повторное подписание манифестов приложения и развертывания. Дополнительные сведения см. в разделе [Практическое руководство. Повторно подписать манифесты приложения и развертывания](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [\<compatibleFrameworks > элемент](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [\<зависимость > элемент](../deployment/dependency-element-clickonce-application.md)   
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Схема файла конфигурации](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)
+ [Схема файла конфигурации](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)

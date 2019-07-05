@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e7139b92467c0b6622accce9530abf3e75fcea0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6966f7a0dbde78e996f81adc4d8d8d406489d298
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859615"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328393"
 ---
 # <a name="project-model-core-components"></a>Основные компоненты модели проекта
 В модели проекта разверните следующие таблицы. Таблицы предоставляют краткое описание каждого из интерфейсов и служб, указанных в модели и интерфейсы, а также службы, связанные с конкретными объектами. Кроме того в таблицах описываются другие интерфейсы, которые не являются обязательными в проект создания и обслуживания в зависимости от требований вашего проекта определенного типа.

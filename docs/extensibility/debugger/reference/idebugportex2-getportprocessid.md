@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::GetPortProcessId
 ms.assetid: be85be66-47e6-415f-b0ca-24599aa5f13c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f55915297daa877b2a7e73ab0cccda1a2d70b991
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc1cb77d15c8825e0eb11243b40a08ff8287adbd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723426"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311646"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 Получает идентификатор процесса сам класс port.
@@ -36,10 +39,9 @@ int GetPortProcessId ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pdwProcessId`
-
- [out] Возвращает идентификатор процесса физического порта сам.
+## <a name="parameters"></a>Параметры
+`pdwProcessId`\
+[out] Возвращает идентификатор процесса физического порта сам.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

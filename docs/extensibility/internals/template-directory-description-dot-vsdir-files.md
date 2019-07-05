@@ -7,17 +7,17 @@ helpviewer_keywords:
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89152fcb003886087704107f2d4c2a66d3313cc3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad06428905f924e0e339882057ee4e657da47e8a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050366"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331105"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Файлы описания каталога шаблона (VSDIR-файлы)
 Файл описания каталога шаблона (VSDir-) — это текстовый файл, который позволяет среде разработки (IDE) для отображения папок, мастера VSZ-файлы и файлы шаблонов, связанных с проектом в диалоговых окнах. Содержание включает одну запись для каждого файла или папки. Объединяются все файлов VSDir в расположении, на которую указывает ссылка, несмотря на то, что только один VSDir-файл, как правило, предоставляется для описания несколько папок, мастера или файлы шаблонов.

@@ -6,23 +6,23 @@ helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0699e3a7ad4a56f7e102ca896359290cd7dbecb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 53888f85a41fdd5bef3985c4da986609a032e377
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053134"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309355"
 ---
 # <a name="how-to-use-the-activity-log"></a>Практическое руководство. Использование журнала действий
 Пакеты VSPackage может записать события в журнале действий. Эта функция особенно полезна для отладки пакетов VSPackage в средах розничной торговли.
 
 > [!TIP]
->  Журнал действий всегда включен. Visual Studio будет хранить скользящий буфер последние 100 записей, а также первые 10 записей, которые имеют общие сведения о настройке.
+> Журнал действий всегда включен. Visual Studio будет хранить скользящий буфер последние 100 записей, а также первые 10 записей, которые имеют общие сведения о настройке.
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>Для записи в журнал действий
 
@@ -48,7 +48,7 @@ ms.locfileid: "60053134"
 
 2. После закрытия Visual Studio, найти журнал действий во вложенной папке для данных Visual Studio:
 
-   <em>*%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
+   <em> *%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
 
 3. Откройте журнал действий в любом текстовом редакторе. Ниже приведен типичный записи:
 

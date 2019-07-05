@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b6d44e99b584ec347abd407753f965170658969b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079608"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685414"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Создание системы базового проекта. Часть 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60079608"
 - Создание страницы свойств проекта.  
   
 > [!NOTE]
->  Действия, описанные в этом пошаговом руководстве основаны на проекте C#. Тем не менее за исключением особенностей, таких как расширения имен файлов и кода, можно использовать те же действия для проекта Visual Basic.  
+> Действия, описанные в этом пошаговом руководстве основаны на проекте C#. Тем не менее за исключением особенностей, таких как расширения имен файлов и кода, можно использовать те же действия для проекта Visual Basic.  
   
 ## <a name="creating-a-visual-studio-template"></a>Создание шаблона Visual Studio  
  [Создание базовой системы проекта, часть 1](../extensibility/creating-a-basic-project-system-part-1.md) показано, как создать шаблон базовый проект и добавить его в систему проектов. Также показано, как зарегистрировать этот шаблон с помощью Visual Studio с помощью <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> атрибут, который записывает полный путь к папке \Templates\Projects\SimpleProject\ в системном реестре.  
@@ -100,7 +100,7 @@ ms.locfileid: "60079608"
 - \<ProjectType > типа проекта в имена элементов **новый проект** диалоговое окно. Это имя заменяет имя параметра атрибута ProvideProjectFactory проекта.  
   
   > [!NOTE]
-  >  \<ProjectType > должен соответствовать `LanguageVsTemplate` аргумент `ProvideProjectFactory` атрибута в файле SimpleProjectPackage.cs.  
+  > \<ProjectType > должен соответствовать `LanguageVsTemplate` аргумент `ProvideProjectFactory` атрибута в файле SimpleProjectPackage.cs.  
   
   \<TemplateContent > разделе описываются эти файлы, которые создаются при создании нового проекта:  
   
@@ -115,7 +115,7 @@ ms.locfileid: "60079608"
   Дополнительные сведения об элементах в схеме шаблона Visual Studio, см. в разделе [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md).  
   
 > [!NOTE]
->  Если проект имеет более одного шаблона Visual Studio, каждый шаблон находится в отдельной папке. Каждый файл в этой папке должен иметь **действие при построении** присвоено **ZipProject**.  
+> Если проект имеет более одного шаблона Visual Studio, каждый шаблон находится в отдельной папке. Каждый файл в этой папке должен иметь **действие при построении** присвоено **ZipProject**.  
   
 ## <a name="adding-a-minimal-vsct-file"></a>Добавление минимальным vsct-файл  
  Visual Studio должна выполняться в режиме для распознавания нового или измененного шаблона Visual Studio. Режим установки требует vsct-файл должен присутствовать. Таким образом необходимо добавить минимальный vsct-файл в проект.  
@@ -281,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ — это имя, указанное пользователем в **новый проект** диалоговое окно, изменить, чтобы удалить все небезопасные символы и пробелы.  
   
-  Полный список параметров шаблона см. в разделе [Параметры шаблона](../ide/template-parameters.md).  Если вы хотите создать собственный пользовательский шаблон параметров, см. в разделе [NIB: Практическое руководство. Передать пользовательские параметры для шаблонов](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Полный список параметров шаблона см. в разделе [Параметры шаблона](../ide/template-parameters.md).  Если вы хотите создать собственный пользовательский шаблон параметров, см. в разделе [NIB: Практическое руководство. Передать пользовательские параметры для шаблонов](https://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Для замены параметров шаблона проекта  
   

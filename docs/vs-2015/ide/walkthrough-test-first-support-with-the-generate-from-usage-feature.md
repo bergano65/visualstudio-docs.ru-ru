@@ -12,12 +12,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaca69818524df134aa9ad7514ee5e0227b6a812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1dd1598d73cdbd77bc6fe0cb35e639c0fb484b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443433"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Пошаговое руководство. Основанная на тестировании поддержка с помощью функции Generate From Usage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "60084990"
 2. Найдите объявление класса `UnitTest1` и переименуйте его в `AutomobileTest`. Если в C# есть конструктор `UnitTest1()` , переименуйте его в `AutomobileTest()`.  
   
     > [!NOTE]
-    >  Теперь функция IntelliSense поддерживает два режима завершения инструкций: *режим завершения* и *режим предложений*. Режим предложений следует применять в тех случаях, когда классы и члены используются до их определения. Когда открыто окно IntelliSense, для переключения между режимом завершения и режимом предложений можно нажать клавиши CTRL+ALT+ПРОБЕЛ. Дополнительные сведения см. в разделе [Using IntelliSense](../ide/using-intellisense.md) . Режим предложений поможет вам при вводе `Automobile` в следующем шаге.  
+    > Теперь функция IntelliSense поддерживает два режима завершения инструкций: *режим завершения* и *режим предложений*. Режим предложений следует применять в тех случаях, когда классы и члены используются до их определения. Когда открыто окно IntelliSense, для переключения между режимом завершения и режимом предложений можно нажать клавиши CTRL+ALT+ПРОБЕЛ. Дополнительные сведения см. в разделе [Using IntelliSense](../ide/using-intellisense.md) . Режим предложений поможет вам при вводе `Automobile` в следующем шаге.  
   
 3. Найдите метод `TestMethod1()` и переименуйте его в `DefaultAutomobileIsInitializedCorrectly()`. Внутри этого метода создайте экземпляр класса с именем `Automobile`, как показано в приведенных ниже примерах. Отобразится волнистая линия подчеркивания, свидетельствующая об ошибке компиляции, а под именем типа отобразится смарт-тег. Расположение смарт-тега зависит от того, используется ли [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] или [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   

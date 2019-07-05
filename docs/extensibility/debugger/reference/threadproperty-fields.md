@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTY_FIELDS enumeration
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 641687dbcfa6bf50ba9e848de589662d282d0c7b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9da7b995826b905af7faf6cac3fa0fc3d5ceba5e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715273"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316207"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 Указывает, какие сведения о потоке требуется получить.
@@ -49,20 +52,27 @@ public enum enum_THREADPROPERTY_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Участники
- TPF_ID Initialize и использование `dwThreadId` поле [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структуры.
+## <a name="fields"></a>Поля
+ `TPF_ID`\
+ Инициализация и использование `dwThreadId` поле [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структуры.
 
- TPF_SUSPENDCOUNT Initialize и использование `dwSuspendCount` поле `THREADPROPERTIE`структура.
+ `TPF_SUSPENDCOUNT`\
+ Инициализация и использование `dwSuspendCount` поле `THREADPROPERTIE`структура.
 
- TPF_STATE Initialize и использование `dwThreadState` поле `THREADPROPERTIE`структура.
+ `TPF_STATE`\
+ Инициализация и использование `dwThreadState` поле `THREADPROPERTIE`структура.
 
- TPF_PRIORITY Initialize и использование `bstrPriority` поле `THREADPROPERTIE`структура.
+ `TPF_PRIORITY`\
+ Инициализация и использование `bstrPriority` поле `THREADPROPERTIE`структура.
 
- TPF_NAME Initialize и использование `bstrName` поле `THREADPROPERTIE`структура.
+ `TPF_NAME`\
+ Инициализация и использование `bstrName` поле `THREADPROPERTIE`структура.
 
- TPF_LOCATION Initialize и использование `bstrLocation` поле `THREADPROPERTIE`структура.
+ `TPF_LOCATION`\
+ Инициализация и использование `bstrLocation` поле `THREADPROPERTIE`структура.
 
- TPF_ALLFIELDS указывает все поля.
+ `TPF_ALLFIELDS`\
+ Указывает все поля.
 
 ## <a name="remarks"></a>Примечания
  Эти значения передаются в качестве аргумента [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) метод, чтобы указать, какие поля [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) структуры должны быть инициализированы.

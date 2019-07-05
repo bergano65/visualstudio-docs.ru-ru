@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bd4b15fb7c0f1cbc0630779ecef0373977bb2056
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993031"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694211"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Работа со схемой определений доменных языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,4 +75,4 @@ ms.locfileid: "58993031"
  Если доменная связь включает производные отношения, или если у него есть внедрения или ссылочных отношений с другими доменными связями, можно отобразить связь как класс, щелкнув правой кнопкой мыши связь и нажмите кнопку **Показать как класс** . Связь будет отображаться с **свойства домена** секции и покажет деревьями наследования и отношений.  
   
 ## <a name="see-also"></a>См. также  
- [Глоссарий средств предметно-ориентированных языков](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

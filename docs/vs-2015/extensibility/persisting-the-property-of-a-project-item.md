@@ -11,12 +11,12 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ccb468c5eca88207594a66d956717caf260666db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4adcf0f5c5770f5d3ffc0e0ed9bffdb108869c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441543"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Сохранение свойства элемента проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58990027"
   
 ### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Для получения иерархии проекта с помощью объекта DTE  
   
-1.  Добавьте следующий код к VSPackage:  
+1. Добавьте следующий код к VSPackage:  
   
     ```csharp  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
@@ -43,7 +43,7 @@ ms.locfileid: "58990027"
   
 ### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Сохранить свойство элемента проекта с помощью объекта DTE  
   
-1.  Добавьте приведенный ниже код в метод в предыдущей процедуре:  
+1. Добавьте приведенный ниже код в метод в предыдущей процедуре:  
   
     ```csharp  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -60,7 +60,7 @@ ms.locfileid: "58990027"
   
 ### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Для получения иерархии проекта, с помощью IVsMonitorSelection  
   
-1.  Добавьте следующий код к VSPackage:  
+1. Добавьте следующий код к VSPackage:  
   
     ```csharp  
     IVsHierarchy hierarchy = null;  
@@ -102,11 +102,11 @@ ms.locfileid: "58990027"
     }  
     ```  
   
-2.  
+2. 
   
 ### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Для сохранения выбранного проекта свойство item, учитывая иерархии проекта.  
   
-1.  Добавьте приведенный ниже код в метод в предыдущей процедуре:  
+1. Добавьте приведенный ниже код в метод в предыдущей процедуре:  
   
     ```  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -119,16 +119,16 @@ ms.locfileid: "58990027"
   
 ### <a name="to-verify-that-the-property-is-persisted"></a>Чтобы убедиться, что свойство сохраняется  
   
-1.  Запустить [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и затем откройте или создайте решение.  
+1. Запустить [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и затем откройте или создайте решение.  
   
-2.  Выберите проект элемент VsPkg.cs в **обозревателе решений**.  
+2. Выберите проект элемент VsPkg.cs в **обозревателе решений**.  
   
-3.  Использовать точки останова или в противном случае определить загрузку пакета VSPackage и что SetItemAttribute выполняется.  
+3. Использовать точки останова или в противном случае определить загрузку пакета VSPackage и что SetItemAttribute выполняется.  
   
     > [!NOTE]
-    >  Вы можете автозагрузки VSPackage в контексте UI <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Дополнительные сведения см. в разделе [Загрузка пакетов VSPackage](../extensibility/loading-vspackages.md).  
+    > Вы можете автозагрузки VSPackage в контексте UI <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Дополнительные сведения см. в разделе [Загрузка пакетов VSPackage](../extensibility/loading-vspackages.md).  
   
-4.  Закрыть [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и затем откройте файл проекта в блокноте. Вы должны увидеть \<Author > тег со значением Tom, следующим образом:  
+4. Закрыть [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и затем откройте файл проекта в блокноте. Вы должны увидеть \<Author > тег со значением Tom, следующим образом:  
   
     ```  
     <Compile Include="VsPkg.cs">  

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87ddc0e21a3945ed522014b86174a578c04faa2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e243ccfc92c5e17dd25e6d77dede439daac08761
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62800110"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747717"
 ---
 # <a name="supply-undo-support-to-designers"></a>Поддержка функции отмены поставок для конструкторов
 
@@ -29,7 +29,7 @@ ms.locfileid: "62800110"
 
 - Укажите сохраняемость и CodeDOM поддержка путем реализации <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> и <xref:System.ComponentModel.Design.IComponentChangeService> классы.
 
-Дополнительные сведения о создании дизайнеры, использующие [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], см. в разделе [расширить поддержку времени разработки](/previous-versions/37899azc(v=vs.140)).
+Дополнительные сведения о создании дизайнеры, использующие .NET Framework, см. в разделе [расширить поддержку времени разработки](/previous-versions/37899azc(v=vs.140)).
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Предоставляет инфраструктуру отмены по умолчанию путем:
 
@@ -50,7 +50,7 @@ ms.locfileid: "62800110"
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Когда следует использовать явные конструктора отмены поддержки
  Конструкторы необходимо указывать свои собственные механизмы управления отменой, если они используют графический пользовательский интерфейс, называется адаптер представления, отличной от предоставляемых <xref:System.Windows.Forms.Control>.
 
- Примером этого может созданию продукта с существует веб-графический интерфейс, а не [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-на основе графического интерфейса.
+ Примером этого может созданию продукта с веб-графический интерфейс, а не графический интерфейс на базе .NET Framework.
 
  В таком случае необходимо зарегистрировать этот адаптер представления с помощью Visual Studio с помощью <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>и обеспечивает управление явного отката.
 
@@ -59,7 +59,7 @@ ms.locfileid: "62800110"
 ## <a name="undo-support-features-of-the-designer"></a>Отменить функции поддержки конструктора
  Пакет SDK для среды предоставляет реализации по умолчанию интерфейсов, необходимых для обеспечения отмены поддержки, который может использоваться конструкторами неиспользование <xref:System.Windows.Forms.Control> основе классы для их пользовательские интерфейсы или стандартную модель CodeDOM и сохраняемость.
 
- <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Класс является производным от [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] <xref:System.ComponentModel.Design.UndoEngine> класса, используя реализацию <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> класса для управления операции отмены.
+ <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Класс является производным от .NET Framework <xref:System.ComponentModel.Design.UndoEngine> класса, используя реализацию <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> класса для управления операции отмены.
 
  Visual Studio предоставляет следующие функции для отмены конструктора:
 

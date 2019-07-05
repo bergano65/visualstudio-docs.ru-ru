@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027057ff5c6f8d33038329a8e6029dcb4eeac477
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 3da08f41566e5b6d2a501a9e020d589b85988016
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194312"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351937"
 ---
 # <a name="how-to-get-a-service"></a>Практическое руководство. Получение службы
 
@@ -29,7 +29,7 @@ ms.locfileid: "58194312"
 
 1. Все расширения Visual Studio начинается с развертывания проект VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] проект VSIX с именем `GetServiceExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, выполняя поиск «vsix».
 
-2. Теперь Добавление пользовательской команды шаблона элемента с именем **GetServiceCommand**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#** > **расширяемости** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для *GetServiceCommand.cs*. Дополнительные сведения о том, как создать пользовательскую команду [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. Теперь Добавление пользовательской команды шаблона элемента с именем **GetServiceCommand**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C#**  > **расширяемости** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для *GetServiceCommand.cs*. Дополнительные сведения о том, как создать пользовательскую команду [создание расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md)
 
 3. В *GetServiceCommand.cs*, удалите основную часть `MenuItemCommand` метод и добавьте следующий код:
 

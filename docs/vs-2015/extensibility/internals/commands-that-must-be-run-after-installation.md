@@ -10,12 +10,12 @@ ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8448b00085ab7e7a151c935eee4d8a8b1423bd1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 158119759f8e90161e1f3b5267be498dfc1c9b38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441524"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Команды, которые необходимо выполнить после установки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "58993392"
 Если для развертывания расширения через MSI-файл, необходимо запустить `devenv /setup` как часть установки в порядке для Visual Studio для обнаружения расширений.  
   
 > [!NOTE]
->  Сведения этого раздела относятся к поиск DevEnv в Visual Studio 2008 и более ранних версий. Сведения об обнаружении DevEnv с более поздними версиями Visual Studio, см. в разделе [обнаружение требования к системе](../../extensibility/internals/detecting-system-requirements.md).  
+> Сведения этого раздела относятся к поиск DevEnv в Visual Studio 2008 и более ранних версий. Сведения об обнаружении DevEnv с более поздними версиями Visual Studio, см. в разделе [обнаружение требования к системе](../../extensibility/internals/detecting-system-requirements.md).  
   
 ## <a name="finding-devenvexe"></a>Поиск devenv.exe  
  Вы можете найти каждой версии devenv.exe из реестра значения, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] установщиков записывают, используя таблицу RegLocator и AppSearch таблицы для хранения значений реестра как свойства. Дополнительные сведения см. в разделе [обнаружение требования к системе](../../extensibility/internals/detecting-system-requirements.md).  
@@ -39,7 +39,7 @@ ms.locfileid: "58993392"
   
 ### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>Строки таблицы AppSearch соответствующих строк в таблицах RegLocator  
   
-|Свойство.|Signature_|  
+|Свойство|Signature_|  
 |--------------|-----------------|  
 |DEVENV_EXE_2002|RL_DevenvExe_2002|  
 |DEVENV_EXE_2003|RL_DevenvExe_2003|  
@@ -59,7 +59,7 @@ ms.locfileid: "58993392"
   
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>Строки таблицы настраиваемое действие для запуска devenv.exe  
   
-|Действие|Тип|Исходный код|целевого объекта|  
+|Действие|Тип|Source|целевого объекта|  
 |------------|----------|------------|------------|  
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/ Setup|  
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/ Setup|  
@@ -69,7 +69,7 @@ ms.locfileid: "58993392"
  Настраиваемые действия должны быть авторизованы в таблицу InstallExecuteSequence запланировать их для выполнения во время установки. Использовать соответствующее свойство в каждой строке столбца условие для предотвращения настраиваемого действия из выполняются, если это версия [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] не установлен в системе.  
   
 > [!NOTE]
->  `Null` свойства имеют значение `False` при использовании в условиях.  
+> `Null` свойства имеют значение `False` при использовании в условиях.  
   
  Значение столбца последовательности для каждого пользовательского действия зависит от других значений последовательности, в пакет установщика Windows. Значения последовательности должны быть таким образом, что настраиваемые действия devenv.exe, запуск от имени максимально близко к непосредственно перед стандартное действие функции installfinalize запущенных установок.  
   

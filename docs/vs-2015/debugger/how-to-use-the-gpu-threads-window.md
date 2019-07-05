@@ -19,17 +19,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dcb55ee2128d237c2be6f57da828ec3c5877cfdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c7b97c346cc933e14292fbb1198bfb69ecf59717
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044522"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696162"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Практическое руководство. Использование окна потоков GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-С помощью окна "Потоки GPU" можно просматривать потоки, выполняющиеся в графическом процессоре (GPU), и работать с этими потоками в отлаживаемом приложении. Дополнительные сведения о приложениях, которые выполняются в GPU, см. в разделе [Обзор C++ AMP](http://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
+С помощью окна "Потоки GPU" можно просматривать потоки, выполняющиеся в графическом процессоре (GPU), и работать с этими потоками в отлаживаемом приложении. Дополнительные сведения о приложениях, которые выполняются в GPU, см. в разделе [Обзор C++ AMP](https://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
   
  В окне "Потоки GPU" имеется таблица, каждая строка которой представляет набор потоков GPU, имеющих одинаковые значения в каждом столбце. Элементы, содержащиеся в столбцах, можно сортировать, переупорядочивать, удалять и группировать. С помощью окна "Потоки GPU" можно помечать потоки и снимать с них пометки, можно замораживать (приостанавливать) и размораживать (возобновлять) потоки. Окно "Потоки GPU" содержит следующие столбцы:  
   
@@ -108,4 +108,4 @@ ms.locfileid: "60044522"
 ## <a name="see-also"></a>См. также  
  [Отладка многопоточных приложений](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Практическое руководство. Использование окна контроля параллельных данных](../debugger/how-to-use-the-parallel-watch-window.md)   
- [Пошаговое руководство: Отладка приложения C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Пошаговое руководство: отладка приложения C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

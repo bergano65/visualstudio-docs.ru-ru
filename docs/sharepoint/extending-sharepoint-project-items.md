@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967400"
 ---
 # <a name="extend-sharepoint-project-items"></a>Расширение элементов проектов SharePoint
   Создание расширения элемента проекта, если вы хотите добавить функции к типу элемента проекта SharePoint, который уже установлен в Visual Studio. Например, можно создать расширение для встроенной **приемника событий** или **определение списка** элементы проекта в Visual Studio, или можно создать расширение для пользовательского типа элемента проекта. Кроме того, можно создать расширение для всех типов элементов проекта SharePoint.
@@ -38,12 +38,12 @@ ms.locfileid: "56597664"
 ## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>Взаимосвязь между расширениям элемента проекта и экземпляров элементов проекта
  При создании расширения элемента проекта, Visual Studio загружает расширение, когда элемент проекта, сопоставленного типа добавляется в проект SharePoint. Например, при создании расширения для **приемника событий** элементов проекта, Visual Studio загружает расширение, когда пользователь добавляет **приемника событий** элемент проекта в проект. Visual Studio использует один экземпляр расширения для всех экземпляров типа элемента проекта. В предыдущем примере, если пользователь добавит секунды **приемника событий** элемента проекта в проект, один и тот же экземпляр расширения используется для настройки второго элемента проекта.
 
- Чтобы открыть экземпляр конкретного типа элемента проекта, вы расширяете, обработку одного из <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> *события* параметра в текущей реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> метод. Например, чтобы определить, когда вы расширяемого типа элемента проекта добавляется в проект, обрабатывать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> событий. Дополнительные сведения см. в разделе [Как Создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).
+ Чтобы открыть экземпляр конкретного типа элемента проекта, вы расширяете, обработку одного из <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> события *projectItemType* параметра в текущей реализации <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> метод. Например, чтобы определить, когда вы расширяемого типа элемента проекта добавляется в проект, обрабатывать <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> событий. Дополнительные сведения см. в разделе [Как Создание расширения элемента проекта SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).
 
 ## <a name="identifiers-for-sharepoint-project-items"></a>Идентификаторы для элементов проекта SharePoint
  Каждый элемент проекта SharePoint имеет соответствующий идентификатор строки. Необходимо знать идентификатор для элемента проекта, если вы хотите выполнять следующие задачи:
 
-- Создание расширения элемента проекта. В этом случае необходимо передать идентификатор для элемента проекта, который вы хотите расширить конструктору <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Чтобы создать расширение для всех элементов типов проектов, передайте **\\*** строковое значение.
+- Создание расширения элемента проекта. В этом случае необходимо передать идентификатор для элемента проекта, который вы хотите расширить конструктору <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Чтобы создать расширение для всех элементов типов проектов, передайте **\\** * строковое значение.
 
 - Добавьте элемент проекта в проект программным способом. В этом случае необходимо передать идентификатор элемента проекта <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> метод.
 

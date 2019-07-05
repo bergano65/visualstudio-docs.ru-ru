@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 35c81dd879866d6a707e58add4a4fa94a254a918
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a92d0ead091167437904c384b8f9afca2a3ab89c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433028"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696209"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Практическое руководство. Переход с ознакомительного выпуска Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,4 +44,4 @@ ms.locfileid: "63433028"
     > Для регистрации и разблокировки любого из выпусков Visual Studio требуется подключение к Интернету. После регистрации Visual Studio наличие подключение к Интернету является необязательным.
 
 ## <a name="see-also"></a>См. также раздел
- [Установка Visual Studio](../install/install-visual-studio-2015.md) [Вход в Visual Studio](../ide/signing-in-to-visual-studio.md) [Практическое руководство. Поиск ключа продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Поиск или изменение ключа продукта для Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Установка Visual Studio](../install/install-visual-studio-2015.md) [Вход в Visual Studio](../ide/signing-in-to-visual-studio.md) [Практическое руководство. Поиск ключа продукта Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Поиск или изменение ключа продукта для Team Foundation Server](https://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

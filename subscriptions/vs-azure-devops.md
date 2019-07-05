@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Узнайте, как использовать службы Azure DevOps в качестве подписчика Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 08511fda1cc91d84929ee4fd095e82a0656d26a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99f2ca88f5cc5c543f546ff71a8f414f44adf177
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947822"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032219"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Преимущества Azure DevOps для подписчиков Visual Studio
 
@@ -26,12 +26,17 @@ ms.locfileid: "62947822"
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup>, FTE  | Azure Boards и Azure Repos (уровень "Базовый"), Azure Test Plans, Azure Artifacts, Azure Pipelines (локальное размещение)       |  Да          |
-| Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                        | Azure Boards и Azure Repos (уровень "Базовый")                                                            |  Да          |
-| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Azure Boards и Azure Repos (уровень "Базовый"), Azure Test Plans                                              |  Да          |
-| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Azure Boards и Azure Repos (уровень "Базовый"), Azure Test Plans                                              |  Да          |
+| Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup>, FTE  | Azure Boards и Azure Repos (уровень "Базовый"), Azure Test Plans, Azure Artifacts<sup>2</sup>, Azure Pipelines (локальное размещение)       |  Yes          |
+| Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                        | Azure Boards и Azure Repos (уровень "Базовый"), Azure Artifacts<sup>2</sup>                                                            |  Yes          |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Azure Boards и Azure Repos (уровень "Базовый"), Azure Test Plans                                              |  Yes          |
+| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Azure Boards и Azure Repos (уровень "Базовый"), Azure Test Plans                                              |  Yes          |
+||
 
 <sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), Most Valuable Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (Enterprise), BizSpark, разработчик ПО и служб MCT. Не включает следующие категории: ПО и службы MCT, Imagine.*
+
+<sup>2</sup>  *Включает 2 ГБ, предоставляемых бесплатно*
+
+
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
@@ -41,7 +46,7 @@ ms.locfileid: "62947822"
 
 Дополнительные сведения о возможностях Azure DevOps:
 
-- [Azure Boards и Azure Repos (уровень "Базовый")](https://visualstudio.microsoft.com/team-services/compare-features/)
+- [Azure Boards и Azure Repos (уровень "Базовый")](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 

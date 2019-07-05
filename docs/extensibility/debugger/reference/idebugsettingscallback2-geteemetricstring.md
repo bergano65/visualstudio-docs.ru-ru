@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricString
 ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2091cd052923fe375bf9ba90ffdad50c993f5b4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cd4ac00a03204ac9104ea965145874ac950f7304
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703842"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322091"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 Извлекает строковое значение метрики вычислителя выражений, заданную ее именем.
@@ -40,22 +43,18 @@ private int GetEEMetricString(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `guidLang`
+## <a name="parameters"></a>Параметры
+`guidLang`\
+[in] Уникальный идентификатор языка программирования.
 
- [in] Уникальный идентификатор языка программирования.
+`guidVendor`\
+[in] Уникальный идентификатор поставщика.
 
- `guidVendor`
+`pszMetric`\
+[in] Имя метрики.
 
- [in] Уникальный идентификатор поставщика.
-
- `pszMetric`
-
- [in] Имя метрики.
-
- `pbstrValue`
-
- [out] Возвращает строковое значение метрики.
+`pbstrValue`\
+[out] Возвращает строковое значение метрики.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

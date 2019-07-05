@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 120297a7e1b3c1e973f1775d769ab6deb8c2902a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102969"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705564"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Подключение к данным в базе данных Access (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60102969"
      ![Изменить поставщика данных для OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  Несмотря на то что источник **файл базы данных Microsoft Access (OLE DB)** выглядит как правильный выбор, используйте этот тип источника данных только для MDB-файлы базы данных.  
+    > Несмотря на то что источник **файл базы данных Microsoft Access (OLE DB)** выглядит как правильный выбор, используйте этот тип источника данных только для MDB-файлы базы данных.  
   
 8. В **поставщик OLE DB**выберите **поставщик Microsoft Office 12.0 Access базы данных ядра OLE DB**.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "60102969"
 9. В **имя сервера или файла**, укажите путь и имя ACCDB-файла, к которому вы хотите подключиться, а затем выберите **ОК**.  
   
     > [!NOTE]
-    >  Если файл базы данных имя пользователя и пароль, укажите их, прежде чем выбрать **ОК**.  
+    > Если файл базы данных имя пользователя и пароль, укажите их, прежде чем выбрать **ОК**.  
   
 10. Выберите **Далее** на **Выбор подключения базы данных** страницы.  
   
@@ -118,7 +118,7 @@ ms.locfileid: "60102969"
      Объект DataSet добавляется в проект, и таблицы и представления отображаются в окне **Источники данных**.  
   
 ## <a name="security"></a>Безопасность  
- Хранение конфиденциальных сведений (например, пароля) может повлиять на безопасность приложений. Использование проверки подлинности Windows (также называемой встроенными средствами безопасности) — более безопасный способ управления доступом к базе данных. Дополнительные сведения см. в разделе [Защита сведений о подключении](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).  
+ Хранение конфиденциальных сведений (например, пароля) может повлиять на безопасность приложений. Использование проверки подлинности Windows (также называемой встроенными средствами безопасности) — более безопасный способ управления доступом к базе данных. Дополнительные сведения см. в разделе [Защита сведений о подключении](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).  
   
 ## <a name="next-steps"></a>Следующие шаги  
  Набор данных, который вы только что создали, теперь доступна в **источников данных** окна. Теперь можно выполнить любую из следующих задач:  
@@ -131,7 +131,7 @@ ms.locfileid: "60102969"
   
 ## <a name="see-also"></a>См. также
 
- [Подготовка приложения к получению данных](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Подготовка приложения к получению данных](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Проверка данных](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Примеры работы с данными](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)
+ [Проверка данных](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Примеры работы с данными](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)

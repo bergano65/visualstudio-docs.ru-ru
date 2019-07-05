@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 729639c99747ce7f7358ad3c4b0b6374bd64d010
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992614"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683936"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Использование атрибута DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58992614"
  Будет ли отладчик выполнять неявный вызов метода `ToString()` , зависит от заданных пользователем параметров в диалоговом окне **Сервис &gt; Параметры &gt; Отладка** . В Visual Basic неявный вызов метода `ToString()` не производится.  
   
 > [!IMPORTANT]
->  Если в диалоговом окне **Сервис &gt; Параметры &gt; Отладка** установлен флажок **Показывать базовую структуру объектов в окнах переменных** , то атрибут `DebuggerDisplay` игнорируется.  
+> Если в диалоговом окне **Сервис &gt; Параметры &gt; Отладка** установлен флажок **Показывать базовую структуру объектов в окнах переменных** , то атрибут `DebuggerDisplay` игнорируется.  
   
  В следующей таблице показано несколько примеров возможного использования атрибута `DebuggerDisplay` для вывода строк удобочитаемого вида.  
   
@@ -180,4 +180,4 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [повышение эффективности отладки с помощью атрибутов просмотра отладчика](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [повышение эффективности отладки с помощью атрибутов просмотра отладчика](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

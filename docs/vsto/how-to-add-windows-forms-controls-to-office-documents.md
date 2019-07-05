@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 849bffa36050970e164083f7bb90353f18cff01a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9241cb34ca380b2efe0b3c2ceb7f5d11376bef2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427490"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Практическое руководство. Добавление элементов управления Windows Forms в документы Office
   Вы можете добавить элементы управления Windows Forms в документы Microsoft Office Word и Microsoft Office Excel во время разработки в проектах уровня документа. Во время выполнения можно добавить элементы управления в настройках уровня документа и надстроек VSTO. Например, можно добавить элемент управления <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> на лист, чтобы пользователи могли выбрать из списка параметров.
@@ -49,7 +49,7 @@ ms.locfileid: "60047115"
 2. В **стандартные элементы управления** вкладке **элементов**, щелкните элемент управления, который вы хотите добавить и перетащите его в документ.
 
     > [!NOTE]
-    >  При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строке формул**. Этот текст обязательный, его не следует удалять.
+    > При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строке формул**. Этот текст обязательный, его не следует удалять.
 
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>Рисование элемента управления Windows Forms в документе
 
@@ -62,7 +62,7 @@ ms.locfileid: "60047115"
      Элемент управления добавляется в документ с указанным местоположением и размером.
 
     > [!NOTE]
-    >  При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строка формул**. Этот текст обязательный, его не следует удалять.
+    > При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строка формул**. Этот текст обязательный, его не следует удалять.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>Добавление элемента управления Windows Forms в документ двойным щелчком элемента управления
 
@@ -75,7 +75,7 @@ ms.locfileid: "60047115"
      Элемент управления добавляется в документ с размером по умолчанию.
 
     > [!NOTE]
-    >  При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строке формул**. Этот текст обязательный, его не следует удалять.
+    > При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строке формул**. Этот текст обязательный, его не следует удалять.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>Добавление элемента управления Windows Forms в документ двойным щелчком элемента управления
 
@@ -86,7 +86,7 @@ ms.locfileid: "60047115"
      Элемент управления добавляется в центр документа или активной области документа.
 
     > [!NOTE]
-    >  При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строке формул**. Этот текст обязательный, его не следует удалять.
+    > При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строке формул**. Этот текст обязательный, его не следует удалять.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>Добавление элемента управления Windows Forms в документ нажатием клавиши ВВОД
 
@@ -97,7 +97,7 @@ ms.locfileid: "60047115"
      Элемент управления добавляется в центр документа или активной области документа.
 
     > [!NOTE]
-    >  При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строке формул**. Этот текст обязательный, его не следует удалять.
+    > При выборе элемента управления в Excel вы увидите **=EMBED("WinForms.Control.Host","")** в **строке формул**. Этот текст обязательный, его не следует удалять.
 
 ## <a name="runtimedoclevel"></a> Добавление элементов управления во время выполнения в проектах уровня документа
  Можно программно добавить элементы управления Windows Forms в документ во время выполнения. В Word используйте методы свойства <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> класса `ThisDocument`. В Excel, используйте методы <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> свойство `Sheet` *n* класса. У каждого метода есть несколько перегрузок, которые позволяют указать расположение элемента управления разными способами.
@@ -125,7 +125,7 @@ ms.locfileid: "60047115"
 1. Используйте метод с именем Add\<*класс элемента управления*> (где *класс элемента управления* — это имя класса элемента управления Windows Forms, который вы хотите добавить, например <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>).
 
     > [!NOTE]
-    >  В надстройке VSTO проектах, предназначенных [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, необходимо добавить ссылку на *Microsoft.Office.Tools.Excel.v4.0.Utilities.dll* или *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* сборки, чтобы можно было открыть добавления\<*класс элемента управления*> методы.
+    > В надстройке VSTO проектах, предназначенных [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или более поздней версии, необходимо добавить ссылку на *Microsoft.Office.Tools.Excel.v4.0.Utilities.dll* или *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* сборки, чтобы можно было открыть добавления\<*класс элемента управления*> методы.
 
      В следующем примере кода показано, как добавить <xref:Microsoft.Office.Tools.Word.Controls.Button> в первый абзац активного документа с помощью надстройки VSTO для Word.
 

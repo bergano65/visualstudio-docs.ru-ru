@@ -3,15 +3,15 @@ title: Расширение Visual Studio для Mac
 description: Возможности и функции Visual Studio для Mac можно расширить с помощью модулей, называемых пакетами расширения. В первой части этого руководства создается простой пакет расширения Visual Studio для Mac для вставки даты и времени в документ. Во второй части руководства описаны базовые принципы работы системы пакетов расширения, а также некоторые основные API, составляющие основу Visual Studio для Mac.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/14/2017
+ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1753eef9987bc59be55298489e10c5698eb944cc
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983167"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033122"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Расширение Visual Studio для Mac
 
@@ -28,7 +28,7 @@ Visual Studio для Mac состоит из набора модулей, наз
 Преимуществом такой модульной конструкции является расширяемость Visual Studio для Mac — существует множество точек расширения, которые можно использовать в пользовательских пакетах расширения. К примерам текущих пакетов расширения относится поддержка C# и F#, инструментов отладчика и шаблонов проектов.
 
 > [!NOTE]
-> **Примечание**. Если у вас есть проект Add-in Maker, созданный в версии, предшествующей Add-in Maker 1.2, нужно перенести этот проект согласно приведенному [здесь](https://mhut.ch/addinmaker/1.2) описанию.
+> Если у вас есть проект Add-in Maker, созданный в версии, предшествующей Add-in Maker 1.2, нужно перенести этот проект согласно приведенному [здесь](https://mhut.ch/addinmaker/1.2) описанию.
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -36,7 +36,7 @@ Visual Studio для Mac состоит из набора модулей, наз
 
 ## <a name="attribute-files"></a>Файлы атрибутов
 
-Пакеты расширения хранят метаданные о своем имени, версии, зависимостях и другие сведения в атрибутах C#. Add-in Maker создает два файла — `AddinInfo.cs` и `AssemblyInfo.cs` — для хранения и упорядочивания этих сведений. Пакеты расширения должны иметь в своем *атрибуте Addin* уникальный идентификатор и пространство имен:
+Пакеты расширения хранят метаданные о своем имени, версии, зависимостях и другие сведения в атрибутах C#. Add-in Maker создает два файла — `AddinInfo.cs` и `AssemblyInfo.cs` — для хранения и упорядочивания этих сведений. Пакеты расширения должны иметь в *атрибуте `Addin`* уникальный идентификатор и пространство имен:
 
 ```csharp
 [assembly:Addin (
@@ -46,7 +46,7 @@ Visual Studio для Mac состоит из набора модулей, наз
 )]
 ```
 
-Пакеты расширения также должны объявлять зависимости для пакетов расширения, владеющих точками расширения, к которым они подключаются. Ссылки на них автоматически задаются во время сборки.
+Пакеты расширения также должны объявлять зависимости для пакетов расширения, владеющих точками расширения, к которым они подключаются и на которые автоматически создаются ссылки в процессе сборки.
 
 Кроме того, дополнительные ссылки могут добавляться через узел ссылок надстройки на панели решения для проекта, как показано на следующем рисунке:
 
@@ -81,10 +81,10 @@ Visual Studio для Mac состоит из набора модулей, наз
 
 Узел расширения содержит атрибут пути, указывающий точку расширения, к которому он подключен, в данном случае это `/MonoDevelop/Ide/Commands/Edit`. Кроме того, он выступает в качестве родительского узла для команды. Узел команды имеет следующие атрибуты:
 
-* **id** — задает идентификатор для этой команды. Идентификаторы команд должны объявляться как члены перечисления и используются для подключения команд к элементам CommandItem.
-* **_label** — текст, отображаемый в меню.
-* **_description** — текст, отображаемый в качестве подсказки для кнопок на панели инструментов.
-* **defaultHandler** — указывает класс `CommandHandler`, на котором основана команда.
+* `id` — задает идентификатор для этой команды. Идентификаторы команд должны объявляться как члены перечисления и используются для подключения команд к элементам CommandItem.
+* `_label` — текст, который будет отображаться в меню.
+* `_description` — текст, который будет отображаться в качестве подсказки для кнопок на панели инструментов.
+* `defaultHandler` — определяет класс `CommandHandler`, на котором основана эта команда.
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -96,7 +96,7 @@ Visual Studio для Mac состоит из набора модулей, наз
 </Extension>
 ```
 
-CommandItem помещает команду, указанную в его атрибуте идентификатора, в меню. Этот CommandItem расширяет точку расширения `/MonoDevelop/Ide/MainMenu/Edit`, что приводит к отображению метки команды в **меню правки**. Обратите внимание, что **идентификатор** в CommandItem соответствует идентификатору узла команды `InsertDate`. Если удалить CommandItem, параметр **Insert Date** (Вставить дату) исчез бы из меню правки.
+CommandItem помещает в меню команду, указанную в атрибуте `id`. Этот CommandItem расширяет точку расширения `/MonoDevelop/Ide/MainMenu/Edit`, что приводит к отображению метки команды в **меню правки**. Обратите внимание, что ИД элемента CommandItem соответствует идентификатору узла Command (`InsertDate`). Если вы удалите элемент CommandItem, из меню правки исчезнет пункт **Insert Date** (Вставить дату).
 
 ### <a name="command-handlers"></a>Обработчики команд
 
@@ -129,7 +129,7 @@ public enum DateInserterCommands
 }
 ```
 
-Это объединяет Command и CommandItem — CommandItem вызывает Command при выборе CommandItem в **меню правки**.
+Теперь элементы Command и CommandItem связаны друг с другом: CommandItem вызывает Command при выборе CommandItem в **меню правки**.
 
 ## <a name="ide-apis"></a>API интегрированной среды разработки
 
@@ -158,6 +158,35 @@ public enum DateInserterCommands
 * Рефакторинг
 * Обработчики выражения
 * Подсветка синтаксиса
+
+## <a name="extending-the-new-editor"></a>Расширение нового редактора
+
+Visual Studio для Mac [предоставляет новый собственный пользовательский интерфейс Cocoa для редактирования текста](https://aka.ms/vs/mac/editor/learn-more), созданный на основе тех же слоев редактирования, что и Visual Studio в Windows.
+
+Одним из многих преимуществ совместного использования редактора в Visual Studio и Visual Studio для Mac можно считать то, что предназначенный для редактора Visual Studio код можно легко адаптировать для работы в Visual Studio для Mac.
+
+> [!NOTE]
+> В настоящее время новый редактор поддерживает только файлы C#. Другие языки и форматы файлов будут открываться в старом редакторе. Но и в старом редакторе реализованы некоторые API редактора Visual Studio, описанные ниже.
+
+### <a name="visual-studio-editor-overview"></a>Обзор редактора Visual Studio
+
+![Архитектура редактора Visual Studio](media/vs-editor-architecture.png)
+
+Прежде чем рассматривать особенности расширения Visual Studio для Mac, будет полезно глубже изучить сам редактор. Ниже перечислены несколько ресурсов, которые помогут вам лучше понять его.
+
+* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
+* [MEF в редакторе](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [Компоненты редактора](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
+* [Языковая служба и точки расширения редактора](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Видеоинструкция по архитектуре редактора](https://www.youtube.com/watch?v=PkYVztKjO9A)
+
+Для работы с этими ресурсами вам нужно знать основные концепции: [`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) и [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview).
+
+* В этом контексте `ITextBuffer` обозначает хранимое в памяти представление текста, которое может изменяться с течением времени. Свойство `CurrentSnapshot` объекта `ITextBuffer` возвращает *неизменяемое* представление текущего содержимого буфера в формате экземпляра `ITextSnapshot`. При внесении изменений в буфере свойство CurrentSnapshot мгновенно обновляется до последней версии. Анализаторы могут изучать снимок текста в любом потоке, и его содержимое гарантированно никогда не меняется.
+
+* По сути, `ITextView` является представлением для пользовательского интерфейса того состояния, в котором `ITextBuffer` отрисовывается на экране редактора. Оно содержит ссылку на текстовый буфер, а также `Caret`, `Selection` и другие концепции пользовательского интерфейса.
+
+Для любого конкретного [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5) вы можете получить соответствующие базовые `ITextBuffer` и `ITextView` с помощью `Document.GetContent<ITextBuffer>()` и `Document.GetContent<ITextView>()` соответственно.
 
 ## <a name="additional-information"></a>Дополнительные сведения
 

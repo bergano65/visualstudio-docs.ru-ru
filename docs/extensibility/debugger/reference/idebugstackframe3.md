@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3 interface
 ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee9310ff6dff36e09b5d0db356659ada427dd3a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0960f0f527d844afcc44947f1204db78d4d91a38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697407"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352061"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 Этот интерфейс расширяет [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) обрабатывать перехваченные исключения.
@@ -50,7 +50,7 @@ IDebugStackFrame3 : IDebugStackFrame2
  Путем перехвата исключений, отладчик может открыть пользователю внести изменения состояния отлаживаемой программы, а затем возобновить выполнение в точке, где возникло исключение.
 
 > [!NOTE]
->  Перехваченные исключения допускаются только в управляемом коде, то есть в программе, которая работает в группе Common Language Runtime (CLR).
+> Перехваченные исключения допускаются только в управляемом коде, то есть в программе, которая работает в группе Common Language Runtime (CLR).
 
  Модуль отладки указывает, что он поддерживает перехват исключения, задав «metricExceptions» в значение 1 во время выполнения с помощью `SetMetric` функции. Дополнительные сведения см. в разделе [вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).
 

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a809eee1eb5460e245f64156385f759870adbd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0419100cbc5fcd543eb250fa85cbfe2ebd1c97f
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970280"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531585"
 ---
 # <a name="invert-if-statement"></a>Инверсия инструкции if
 
@@ -47,4 +47,4 @@ ms.locfileid: "62970280"
 ## <a name="see-also"></a>См. также
 
 - [Рефакторинг](../refactoring-in-visual-studio.md)
-- [Советы для разработчиков .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Советы для разработчиков .NET](../csharp-developer-productivity.md)

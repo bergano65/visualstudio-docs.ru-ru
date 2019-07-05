@@ -7,17 +7,17 @@ helpviewer_keywords:
 - GUIDs, VSPackages
 - CATIDs for VSPackages
 ms.assetid: 0c7fdb66-ed96-4b36-89f6-021bca573572
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2af331bd100cfedd75e6ab1c90ad7a75c5c83961
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5a9a5643a217fb9be3147417ffd0405ab9b0cc9f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649437"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324264"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID для объектов, которые обычно используются для расширения проектов
 В следующей таблице перечислены идентификаторы CATID, которые используются для расширения `Project` и `ProjectItem` объектов автоматизации для [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], и [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] проектов. Эти идентификаторы CATID определяются в *VSLangProj.olb*.

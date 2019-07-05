@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugObject::IsProxy
 - IsProxy
 ms.assetid: 06c66b87-db95-4400-ab26-5d33e743a439
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 037245524446ded2ec250f1d4a04e21bf5924a61
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9e72df4bd42df8d060ffab5f5ba5a2f44cbc06f9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678427"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323422"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
 Определяет, является ли объект прозрачный прокси-сервер.
@@ -35,10 +38,9 @@ int IsProxy (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pfIsProxy`
-
- [out] `TRUE` Если объект является прозрачным прокси; в противном случае `FALSE`.
+## <a name="parameters"></a>Параметры
+`pfIsProxy`\
+[out] `TRUE` Если объект является прозрачным прокси; в противном случае `FALSE`.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

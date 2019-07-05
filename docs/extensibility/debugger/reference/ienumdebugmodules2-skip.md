@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2::Skip
 ms.assetid: 61dc42f4-8544-45bb-8da0-fb22cccec7da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0789743324361f9bb274ca0307905131b26bb4a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 160dbdedb9dc5f2188036203c2a0b881672dd9ef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708294"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339706"
 ---
 # <a name="ienumdebugmodules2skip"></a>IEnumDebugModules2::Skip
 Пропускает заданное число элементов.
@@ -36,10 +39,9 @@ int Skip(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `celt`
-
- [in] Количество пропускаемых элементов.
+## <a name="parameters"></a>Параметры
+`celt`\
+[in] Количество пропускаемых элементов.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если `celt` больше, чем число оставшихся элементов; в противном случае возвращает код ошибки.

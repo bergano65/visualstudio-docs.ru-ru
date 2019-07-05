@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445381"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747437"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Интеграция Visual Studio (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] размещается в Visual Studio для загрузки и сборки управляемых проектов. Поскольку [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] отвечает за проект, в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] можно успешно использовать практически любой проект в формате [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], даже если проект был создан с помощью другого инструмента и участвует в процессе пользовательского построения.
 
  В данной статье рассматриваются конкретные аспекты размещения [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] продуктом [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], которые необходимо учитывать при настройке проектов и файлов в формате *.targets*, которые требуется загрузить в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] с последующей сборкой. Это поможет вам обеспечить наличие в настраиваемом проекте таких функций [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , как IntelliSense и отладка.
 
- Дополнительные сведения о проектах C++ см. в статье [Файлы проекта](/cpp/ide/project-files).
+ Дополнительные сведения о проектах C++ см. в статье [Файлы проекта](/cpp/build/reference/project-files).
 
 ## <a name="project-file-name-extensions"></a>Расширения имени файла проекта
  Файл *MSBuild.exe* распознает любое расширение имени файла проекта, если оно соответствует шаблону *.\*proj*. Однако [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] распознает только подмножество расширений этих имен файлов проекта, определяющее языковую систему проекта, которая будет загружать проект. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не имеет не зависящей от языка системы проекта, основанной на использовании [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .
@@ -133,9 +133,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 1. В **обозревателе решений**откройте контекстное меню для своего проекта и выберите **Выгрузить проект**.
 
-     К проекту добавляется пометка **(недоступный)**.
+     К проекту добавляется пометка **(недоступный)** .
 
-2. В **обозревателе решений** откройте контекстное меню для недоступного проекта и выберите **Изменить \<файл проекта>**.
+2. В **обозревателе решений** откройте контекстное меню для недоступного проекта и выберите **Изменить \<файл проекта>** .
 
      В XML-редакторе Visual Studio открывается файл проекта.
 
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, содержащую исходную спецификацию элемента ссылки.
 
-  - `ResolvedFrom`, значение которого установлено "{TargetFrameworkDirectory}", если он был разрешен из каталога [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .
+  - `ResolvedFrom`, для которого было задано значение "{TargetFrameworkDirectory}", если он был разрешен из каталога .NET Framework.
 
 - Ссылки COM:
 

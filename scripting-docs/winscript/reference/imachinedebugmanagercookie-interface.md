@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fdc02498360f2e3900012166474c5d1e35abd6ee
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977689"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>Интерфейс IMachineDebugManagerCookie
 Аналогичную `IMachineDebugManager` интерфейс, `IMachineDebugManagerCookie` интерфейс поддерживает файлы cookie отладки.  
@@ -31,7 +31,7 @@ ms.locfileid: "58151054"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Добавляет приложению выполнения список приложений.|  
 |[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Возвращает перечислитель текущего списка выполняющихся приложений.|  

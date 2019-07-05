@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b858a6c513c1b9e1caa4f17c1bd8af067de47365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114903"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692557"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Считывание XML-данных в набор данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ADO.NET предоставляет простые методы для работ
 5. Добавление кода для отображения XML-схемы на основе XML файла в <xref:System.Windows.Forms.TextBox> элемента управления  
   
 > [!NOTE]
->  Диалоговые окна и команды меню, которые вы видите, могут отличаться от описанных в справке в зависимости от текущих настроек или выпуска вы используете. Чтобы изменить параметры, на **средства** меню, выберите**Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Диалоговые окна и команды меню, которые вы видите, могут отличаться от описанных в справке в зависимости от текущих настроек или выпуска вы используете. Чтобы изменить параметры, на **средства** меню, выберите**Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Создание нового проекта  
  На этом шаге создайте проект Visual Basic или Visual C#, содержащий в этом пошаговом руководстве.  
@@ -59,7 +59,7 @@ ADO.NET предоставляет простые методы для работ
   
 2. Задайте для проекта имя `ReadingXML`.  
   
-3. Выберите **приложения Windows**, а затем выберите **ОК**. Дополнительные сведения см. в разделе [клиентских приложений](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Выберите **приложения Windows**, а затем выберите **ОК**. Дополнительные сведения см. в разделе [клиентских приложений](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **ReadingXML** проекта создается и добавляется к **обозревателе решений**.  
   
@@ -246,7 +246,7 @@ ADO.NET предоставляет простые методы для работ
 - Измените данные в наборе данных и записать его в базу данных.
   
 ## <a name="see-also"></a>См. также  
- [Пошаговые руководства работы с данными](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Пошаговые руководства работы с данными](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Доступ к данным в Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [Подготовка приложения к получению данных](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Подготовка приложения к получению данных](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

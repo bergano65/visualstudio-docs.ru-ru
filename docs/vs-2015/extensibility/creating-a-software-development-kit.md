@@ -8,12 +8,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: acad28e365c70a89c50b77e141e428468b9a6df2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 791400746247d71c06e133d10469132f38544b21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109794"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689995"
 ---
 # <a name="creating-a-software-development-kit"></a>Создание пакета средств разработки для программного обеспечения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ ms.locfileid: "60109794"
   
 2. Папка ссылок: двоичные файлы, которые содержат API-интерфейсы. Это могут быть файлы метаданных Windows (WinMD) или сборки.  
   
-3. Папку Redist: файлов, которые необходимы для среды выполнения и отладки и должны получить упакованы как часть приложения пользователя. Все двоичные файлы должны находиться под \redist\\< config\>\\< arch\>, и двоичными именами должны иметь следующий формат, чтобы обеспечить уникальность:  **\<компании >.\< продукт >. \<цель >. \<расширения >**. Например, Microsoft.Cpp.Build.dll. Все файлы с именами, которые могут конфликтовать с именами файлов из других пакетов SDK (например, файлы javascript, css, pri, xaml, png и jpg) должны находиться под \redist\\< config\>\\< arch\> \\< sdkname\>\ Кроме файлов, связанные с XAML управляет. Эти файлы должны находиться под \redist\\< config\>\\< arch\>\\< componentname\>\\.  
+3. Папку Redist: файлов, которые необходимы для среды выполнения и отладки и должны получить упакованы как часть приложения пользователя. Все двоичные файлы должны находиться под \redist\\< config\>\\< arch\>, и двоичными именами должны иметь следующий формат, чтобы обеспечить уникальность:  **\<компании >.\< продукт >. \<цель >. \<расширения >** . Например, Microsoft.Cpp.Build.dll. Все файлы с именами, которые могут конфликтовать с именами файлов из других пакетов SDK (например, файлы javascript, css, pri, xaml, png и jpg) должны находиться под \redist\\< config\>\\< arch\> \\< sdkname\>\ Кроме файлов, связанные с XAML управляет. Эти файлы должны находиться под \redist\\< config\>\\< arch\>\\< componentname\>\\.  
   
 4. Папка DesignTime: файлы, которые необходимо только предварительного-run/отладка времени и не должны быть упакованы как часть приложения пользователя. Это могут быть документы XML, библиотеки, заголовки, двоичные файлы времени разработки для элементов, MSBuild артефакты и т. д. Любой пакет SDK, который предназначен для использования собственного проекта должна иметь *SDKName*PROPS-файл. Ниже показан пример этого типа файла.  
   
@@ -148,7 +148,7 @@ SupportedArchitectures = "x86;x64;ARM"
 SupportsMultipleVersions = "Error"  
 CopyRedistToSubDirectory = "."  
 DependsOn = "SDKB, version=2.0"  
-MoreInfo = "http://msdn.microsoft.com/MySDK">  
+MoreInfo = "https://msdn.microsoft.com/MySDK">  
 <File Reference = "MySDK.Sprint.winmd" Implementation = "XNASprintImpl.dll">  
 <Registration Type = "Flipper" Implementation = "XNASprintFlipperImpl.dll" />  
 <Registration Type = "Flexer" Implementation = "XNASprintFlexerImpl.dll" />  

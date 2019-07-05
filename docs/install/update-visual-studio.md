@@ -2,7 +2,7 @@
 title: Обновление Visual Studio
 titleSuffix: ''
 description: Пошаговые инструкции по обновлению Visual Studio до последней версии.
-ms.date: 03/30/2019
+ms.date: 06/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,20 +15,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64256f44e9de5bbfd9e65dd6410b9911aaf5075
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997610"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67290660"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio
 
 ::: moniker range="vs-2017"
 
-Рекомендуем выполнить обновление до [последней версии](/visualstudio/releasenotes/vs2017-relnotes/) Visual Studio 2017, чтобы иметь доступ к новым компонентам, исправлениям и улучшениям.
+Мы рекомендуем выполнить обновление до [последнего выпуска](/visualstudio/releasenotes/vs2017-relnotes/) Visual Studio 2017, чтобы иметь доступ к новым компонентам, исправлениям и улучшениям.
 
-И если вы хотите опробовать следующую версию, вы можете также скачать [релиз-кандидат](//visualstudio/releases/2019/release-notes/) Visual Studio 2019.
+А если вы хотите опробовать самую свежую версию, попробуйте скачать [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019).
 
 > [!IMPORTANT]
 > Чтобы установить, обновить или изменить среду Visual Studio, необходимо войти в учетную запись с правами администратора. Дополнительные сведения см. в разделе [Разрешения пользователей и Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -94,7 +94,7 @@ ms.locfileid: "62997610"
    > [!NOTE]
    > На компьютере под управлением Windows 10 установщик можно найти в списке по букве **V** (**Установщик Visual Studio**) или по букве **M** (**Установщик Microsoft Visual Studio**).
 
-1. На странице **Продукт** установщика найдите установленный у вас выпуск Visual Studio.
+1. На странице **Продукт** установщика найдите установленный ранее выпуск Visual Studio.
 
 1. Если обновление доступно, вы увидите кнопку **Обновить**. (Поиск доступных обновлений может занять несколько секунд.)
 
@@ -131,8 +131,8 @@ ms.locfileid: "62997610"
 
 В Visual Studio выводятся уведомления о доступности обновления для самой среды Visual Studio или для любых ее компонентов, а также об определенных событиях в среде Visual Studio.
 
-* Желтый цвет флажка уведомления означает, что доступно обновление Visual Studio для установки.
-* Красный цвет флажка уведомления означает проблему с лицензией.
+* Желтый цвет флажка уведомления означает, что для установки доступно обновление Visual Studio.
+* Красный цвет флажка уведомления предупреждает о проблеме с лицензией.
 * Черный цвет флажка уведомления означает, что имеются дополнительные или информационные сообщения для просмотра.
 
 Выберите флажок уведомления, чтобы открыть **центр уведомлений**, а затем выберите уведомления, в отношении которых необходимо предпринять меры. Уведомление можно также проигнорировать или закрыть.
@@ -150,7 +150,7 @@ ms.locfileid: "62997610"
    > [!NOTE]
    > На компьютере под управлением Windows 10 установщик можно найти в списке по букве **V** (**Установщик Visual Studio**) или по букве **M** (**Установщик Microsoft Visual Studio**).
 
-1. На странице **Продукт** установщика найдите установленный у вас выпуск Visual Studio.
+1. На странице **Продукт** установщика найдите установленный ранее выпуск Visual Studio.
 
 1. Если обновление доступно, вы увидите кнопку **Обновить**. (Поиск доступных обновлений может занять несколько секунд.)
 
@@ -162,7 +162,9 @@ ms.locfileid: "62997610"
 
 ::: moniker range="vs-2019"
 
-Рекомендуем выполнить обновление до [последней версии](/visualstudio/releases/2019/release-notes/) Visual Studio 2019, чтобы иметь доступ к новым компонентам, исправлениям и улучшениям.
+Мы рекомендуем выполнить обновление до [последнего выпуска](/visualstudio/releases/2019/release-notes/) Visual Studio 2019, чтобы иметь доступ к новым компонентам, исправлениям и улучшениям.
+
+Установите Visual Studio 2019 бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
 
 > [!IMPORTANT]
 > Чтобы установить, обновить или изменить среду Visual Studio, необходимо войти в учетную запись с правами администратора. Дополнительные сведения см. в разделе [Разрешения пользователей и Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -170,7 +172,7 @@ ms.locfileid: "62997610"
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Для Visual Studio для Mac см. раздел [Обновление Visual Studio для Mac](/visualstudio/mac/update).
 
-Ниже описано, как можно обновить предварительную версию Visual&nbsp;Studio&nbsp;2019&nbsp; или версию-кандидат Visual&nbsp;Studio&nbsp;2019&nbsp;.
+Ниже описано, как можно обновить Visual&nbsp;Studio&nbsp;2019.
 
 ## <a name="use-the-visual-studio-installer"></a>Использование Visual Studio Installer
 
@@ -182,7 +184,7 @@ ms.locfileid: "62997610"
 
 1. В установщике найдите установленный у вас выпуск Visual Studio.
 
-   Например, если вы ранее установили Visual&nbsp;Studio Community&nbsp;2019&nbsp;, релиз-кандидат, и для него есть обновление, в установщике будет отображаться сообщение **Доступно обновление**.
+   Например, если вы ранее установили Visual&nbsp;Studio Community&nbsp;2019 и для этого выпуска есть обновление, в установщике будет отображаться сообщение **Доступно обновление**.
 
      ![Выберите выпуск Visual Studio 2019, который вы хотите обновить](media/vs2019-update-visual-studio-community-rc.png "Выберите выпуск Visual Studio 2019, который вы хотите обновить")
 
@@ -202,7 +204,7 @@ ms.locfileid: "62997610"
 
 1. В меню Windows **Пуск** выберите **Visual Studio 2019**.
 
-    ![Открытие версии-кандидата Visual Studio 2019](media/vs2019-visual-studio-rc.png "Открытие Visual Studio 2019 из Windows")
+    ![Открытие Visual Studio 2019](media/vs2019-visual-studio-rc.png "Открытие Visual Studio 2019 из Windows")
 
 1. В разделе **Приступая к работу** выберите любой параметр, чтобы открыть интегрированную среду разработки.
 
@@ -262,7 +264,9 @@ ms.locfileid: "62997610"
 
 ## <a name="see-also"></a>См. также
 
+* [Параллельная установка версий Visual Studio](install-visual-studio-versions-side-by-side.md)
 * [Обновление сетевой установки Visual Studio](update-a-network-installation-of-visual-studio.md)
+* [Обновление Visual Studio во время обслуживания](update-servicing-baseline.md)
 * [Обновление Visual Studio для Mac](/visualstudio/mac/update)
 * [Изменение Visual Studio](modify-visual-studio.md)
 * [Удаление Visual Studio](uninstall-visual-studio.md)

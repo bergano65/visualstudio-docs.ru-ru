@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 740ca4ec-79fa-4b98-8f9a-2a137f9f7f98
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 197c2890613ac376b8c494467b86576b1980b00b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f56ab0ea97026d6162a40e5be481e78904d75315
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723231"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342323"
 ---
 # <a name="groups-element"></a>Элемент Groups
 Содержит записи, которые определяют группы команд пакета VSPackage.
@@ -41,14 +41,14 @@ ms.locfileid: "56723231"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Элемент Group](../extensibility/group-element.md)|Представляет группу одной команды.|
 |[Элемент Groups](../extensibility/groups-element.md)|Содержит записи, которые определяют группы команд пакета VSPackage.|
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[Элемент Commands](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов для VSPackage.|
 

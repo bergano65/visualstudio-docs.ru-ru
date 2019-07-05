@@ -12,26 +12,26 @@ ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 40f5a659617d8ca83ffd6f69282349f520ea92f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b174af9e107c13c3d8a79f00493fe5dbdd180ec6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436398"
 ---
 # <a name="getting-local-properties"></a>Получение локальных свойств
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Visual Studio вызывает [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) для получения [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) объект, предоставляющий доступ ко всем локальным переменным для отображения в **"Локальные"** окна. Visual Studio, затем вызывает [Далее](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) для ввода сведений, отображаемых для каждого локального. В этом примере класс `CEnumPropertyInfo` реализует `IEnumDebugPropertyInfo2` интерфейс.  
   
  Эта реализация `IEnumDebugPropertyInfo2::Next` выполняет следующие задачи:  
   
-1.  Этот массив, где будет храниться информация о очищается.  
+1. Этот массив, где будет храниться информация о очищается.  
   
-2.  Вызовы [Далее](../../extensibility/debugger/reference/ienumdebugfields-next.md) для каждого локального хранения возвращенного [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) в массиве должны быть возвращены. [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) передан объект при этом `CEnumPropertyInfo` создании экземпляра класса.  
+2. Вызовы [Далее](../../extensibility/debugger/reference/ienumdebugfields-next.md) для каждого локального хранения возвращенного [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) в массиве должны быть возвращены. [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) передан объект при этом `CEnumPropertyInfo` создании экземпляра класса.  
   
 ## <a name="managed-code"></a>Управляемый код  
  В этом примере показана реализация `IEnumDebugPropertyInfo2::EnumChildren` для метода "Локальные" в управляемом коде.  

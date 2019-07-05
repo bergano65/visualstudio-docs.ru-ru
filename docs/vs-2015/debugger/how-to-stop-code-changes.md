@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba3ee5d8ee04b4a0f2cd360d6b213c69c6f8d1bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 739538d82a478f182c06de0e34b13f8a1bd2b2e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994071"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690057"
 ---
 # <a name="how-to-stop-code-changes"></a>Практическое руководство. остановку внесения изменений в код
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58994071"
 Пока режим "Изменить и продолжить" находится в процессе внесения изменений в код, можно остановить эту операцию.  
   
 > [!CAUTION]
->  Остановка внесения изменений кода в управляемом коде может привести к непредсказуемым результатам. Внесение изменений в управляемый код – обычно быстрый процесс, поэтому редко есть необходимость его останавливать.  
+> Остановка внесения изменений кода в управляемом коде может привести к непредсказуемым результатам. Внесение изменений в управляемый код – обычно быстрый процесс, поэтому редко есть необходимость его останавливать.  
   
 ### <a name="to-stop-applying-code-changes"></a>Остановка внесения изменений в код  
   
@@ -45,4 +45,4 @@ ms.locfileid: "58994071"
   
 ## <a name="see-also"></a>См. также  
  [Изменить и продолжить](../debugger/edit-and-continue.md)   
- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

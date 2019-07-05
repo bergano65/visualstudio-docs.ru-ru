@@ -1,7 +1,7 @@
 ---
 title: Создание сетевой установки
 description: Узнайте, как создать сетевую точку установки для развертывания Visual Studio на предприятии.
-ms.date: 03/30/2019
+ms.date: 04/26/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974103"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365332"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Создание сетевой установки Visual Studio
 
-Обычно администратор предприятия создает точку сетевой установки для развертывания на клиентских рабочих станциях. Среда Visual Studio разработана таким образом, чтобы вы могли кэшировать файлы для первоначальной установки вместе со всеми обновлениями продуктов в одну папку. (Этот процесс также известен как _создание макета_.) 
+Обычно администратор предприятия создает точку сетевой установки для развертывания на клиентских рабочих станциях. Среда Visual Studio разработана таким образом, чтобы вы могли кэшировать файлы для первоначальной установки вместе со всеми обновлениями продуктов в одну папку. (Этот процесс также известен как _создание макета_.)
 
 Это сделано для того, чтобы клиентские рабочие станции могли использовать то же сетевое расположение для управления установкой, даже если они еще не были обновлены до последнего сервисного обновления.
 
@@ -145,13 +145,13 @@ xcopy /e c:\vsoffline \\server\products\VS2019
 * Чтобы загрузить две рабочие нагрузки со всеми рекомендуемыми компонентами:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * Чтобы загрузить две рабочие нагрузки со всеми рекомендуемыми и дополнительными компонентами, выполните следующую команду:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
 ::: moniker range="vs-2017"
@@ -225,11 +225,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 Если вы используете параметр `--wait`, то в зависимости от результата операции переменная среды `%ERRORLEVEL%` получает одно из следующих значений.
 
-  | **Значение** | **Результат** |
-  | --------- | ---------- |
-  | 0 | Операция выполнена успешно. |
-  | 3010 | Операция выполнена успешно, но перед началом работы необходимо выполнить перезагрузку. |
-  | Другое | Произошел сбой — проверьте журналы для получения дополнительных сведений |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 ## <a name="update-a-network-install-layout"></a>Обновление макета сетевой установки
 
@@ -241,9 +237,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 > [!NOTE]
 > Начальные загрузчики Visual Studio, доступные на веб-сайте [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), скачивают и устанавливают последний выпуск Visual Studio, доступный на момент очередного запуска.
-> 
+>
 > Если вы скачаете *загрузчик* Visual Studio сегодня, но запустите его через шесть месяцев, будет установлен выпуск Visual Studio, актуальный на момент запуска загрузчика.
-> 
+>
 > Если же вы создадите *макет* и используете его для установки, на основе этого макета будет установлена определенная версия Visual Studio, включенная в этот макет. Даже если в Интернете уже существует новая версия, вы получите только ту версию Visual Studio, которая включена в ваш макет.
 
 ::: moniker-end
@@ -252,9 +248,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 > [!NOTE]
 > Начальные загрузчики Visual Studio, доступные на веб-сайте [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), скачивают и устанавливают последний выпуск Visual Studio, доступный на момент очередного запуска.
-> 
+>
 > Если вы скачаете *загрузчик* Visual Studio сегодня, но запустите его через шесть месяцев, будет установлен выпуск Visual Studio, актуальный на момент запуска загрузчика.
-> 
+>
 > Если же вы создадите *макет* и используете его для установки, на основе этого макета будет установлена определенная версия Visual Studio, включенная в этот макет. Даже если в Интернете уже существует новая версия, вы получите только ту версию Visual Studio, которая включена в ваш макет.
 
 ::: moniker-end
@@ -267,13 +263,14 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 Также доступен [**чат поддержки в реальном времени**](https://visualstudio.microsoft.com/vs/support/#talktous), предназначенный для оказания помощи при проблемах с установкой (только на английском языке).
 
-У нас есть и другие возможности технической поддержки. Список доступных вариантов вы найдете на странице в статье [Talk to us](../ide/talk-to-us.md) (Свяжитесь с нами).
+У нас есть и другие возможности технической поддержки. Список можно найти на нашей странице [отзывов](../ide/feedback-options.md).
 
 ## <a name="see-also"></a>См. также
 
-* [Обновление сетевой установки Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-* [Жизненный цикл и обслуживание продуктов Visual Studio](/visualstudio/releases/2019/servicing/)
-* [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
-* [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)
+- [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)
+- [Обновление сетевой установки Visual Studio](update-a-network-installation-of-visual-studio.md)
+- [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md)
+- [Жизненный цикл и обслуживание продуктов Visual Studio](/visualstudio/releases/2019/servicing/)
+- [Обновление Visual Studio во время обслуживания](update-servicing-baseline.md)
+- [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)

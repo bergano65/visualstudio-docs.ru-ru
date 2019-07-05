@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b619421c2d1eb9d8c2a4853c7a6ce5c3fbb7ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6b3c2a7e23aba13cbe843c33510a81b66ba2b815
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445412"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Диалоговое окно «Выбор набора правил» (для прежних версий)
 Здесь описывается, как использовать **выбрать набор правил** диалогового окна в прежних версий [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -39,7 +39,7 @@ ms.locfileid: "58993861"
  Дополнительные сведения о том, как создавать и изменять наборы правил см. в разделе [правила задайте диалоговое окно редактора (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
   
 > [!WARNING]
->  Редактор правил [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий, используемый для работы с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], не поддерживает настройку для различных версий.  
+> Редактор правил [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий, используемый для работы с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], не поддерживает настройку для различных версий.  
   
  Дополнительные сведения об условиях см. в разделе [использование условий в рабочих процессах](http://go.microsoft.com/fwlink?LinkID=65009).  
   

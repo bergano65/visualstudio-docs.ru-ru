@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991967"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693414"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075. Обработка небезопасных DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58991967"
  Если вы используете небезопасные экземпляры <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> или ссылаетесь на источники внешних сущностей, средство синтаксического анализа может принять недоверенные входные данные и раскрыть конфиденциальную информацию злоумышленникам.
 
 ## <a name="rule-description"></a>Описание правила
- [DTD](https://msdn.microsoft.com/library/aa468547.aspx) — это один из двух способов определения допустимости документа средством синтаксического анализа XML, как указано в  [стандарте XML 1.0 консорциума W3C](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных угрозах [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , которые могут привести к атакам типа [отказ в обслуживании (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Это правило активируется, если:
+ [DTD](https://msdn.microsoft.com/library/aa468547.aspx) — это один из двух способов определения допустимости документа средством синтаксического анализа XML, как указано в  [стандарте XML 1.0 консорциума W3C](http://www.w3.org/TR/2008/REC-xml-20081126/). Это правило ищет свойства и экземпляры, в которых принимаются недоверенные данные, для предупреждения разработчиков о возможных угрозах [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , которые могут привести к атакам типа [отказ в обслуживании (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Это правило активируется, если:
 
 - обработка DtdProcessing включена в экземпляре <xref:System.Xml.XmlReader> , который разрешает внешние сущности XML с использованием <xref:System.Xml.XmlUrlResolver>;
 
@@ -59,7 +59,7 @@ ms.locfileid: "58991967"
 
 - Отключите обработку DTD при работе с недоверенными источниками, задав <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> свойства **true** .
 
-- Класс XmlTextReader содержит полное требование наследования доверия. См. в разделе [требования наследования](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Дополнительные сведения.
+- Класс XmlTextReader содержит полное требование наследования доверия. См. в разделе [требования наследования](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Дополнительные сведения.
 
   .NET 4 и более поздней версии
 
@@ -68,7 +68,7 @@ ms.locfileid: "58991967"
 - Убедитесь, что метод Load() принимает экземпляр XmlReader во всех случаях InnerXml.
 
 > [!NOTE]
->  Это правило может ложно срабатывать в некоторых допустимых экземплярах XmlSecureResolver. Исправление этой проблемы будет выпущено ориентировочно в середине 2016 г.
+> Это правило может ложно срабатывать в некоторых допустимых экземплярах XmlSecureResolver. Исправление этой проблемы будет выпущено ориентировочно в середине 2016 г.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Отключайте правило этого предупреждения, только если уверены, что входные данные получены из доверенного источника.

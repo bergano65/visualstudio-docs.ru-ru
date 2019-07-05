@@ -12,17 +12,15 @@
 ### [Скачивание программного обеспечения](subscriber-downloads.md)
 #### [Список доступного для скачивания программного обеспечения](software-download-list.md)
 ### [Получение ключей продукта и управление ими](product-keys.md)
-### Visual Studio Dev Essentials
-#### [Присоединение к программе Visual Studio Dev Essentials](join-dev-essentials.md)
-#### [Выход из программы Visual Studio Dev Essentials](leave-vsde.md)
+### [Visual Studio с GitHub Enterprise](access-github.md)
 ### [Преимущества для подписчиков](subscriber-benefits.md)
+### [Visual Studio Dev Essentials](join-dev-essentials.md)
 ## Использование преимуществ для подписчиков
 ### Инструменты
 #### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Деньги на счете в Azure](vs-azure.md)
 #### [Подписка на Office 365 для разработчиков](vs-office-dev.md)
-#### [RStudio](vs-rstudio.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Центр приложений Visual Studio](vs-visual-studio-app-center.md)
@@ -32,14 +30,12 @@
 #### [Учетная запись разработчика Windows](vs-windows-dev.md)
 #### [Подписка на Office 365](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
-#### [Современные требования для TFS](vs-modernreq.md)
 #### [Оплата за Azure по мере использования](vs-azure-payg.md)
 ### [Профессиональное развитие](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
 #### [Skill Me Up](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
-#### [Обучение Xamarin University](vs-xamarin.md)
 #### [Подписка на журнал MSDN](vs-msdn.md)
 ### [Преимущества поддержки](technical-support.md)
 #### [Чат с Помощником по Azure](vs-azure-advisory-chat.md)
@@ -72,6 +68,7 @@
 #### [Использование максимума](maximum-usage.md)
 #### [Подписки, срок действия которых истек](handle-expired-license.md)
 #### [Подписчики, которые используют для входа личную электронную почту](personal-email-sign-ins.md)
+### [Управление Visual Studio в GitHub Enterprise](assign-github.md)
 ## Приобретение подписок на Visual Studio
 ### [Сравнение вариантов подписок](https://visualstudio.microsoft.com/vs/pricing)
 ### Приобретение подписок на облачные службы

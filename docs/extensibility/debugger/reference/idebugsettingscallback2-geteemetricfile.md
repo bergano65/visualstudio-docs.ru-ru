@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricFile
 ms.assetid: 3a0bf9e5-bbd2-4d15-840d-8244732787fc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 370ee63ff31bcb0eeba82fbb55fd37166de7ff52
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 824b947af25ef825d4f02983e17ecad3105028f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721242"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322144"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 Извлекает метрики файла вычислителя выражений, заданной имя или метрики.
@@ -40,22 +43,18 @@ private int GetEEMetricFile(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `guidLang`
+## <a name="parameters"></a>Параметры
+`guidLang`\
+[in] Уникальный идентификатор языка программирования.
 
- [in] Уникальный идентификатор языка программирования.
+`guidVendor`\
+[in] Уникальный идентификатор поставщика.
 
- `guidVendor`
+`pszMetric`\
+[in] Имя метрики.
 
- [in] Уникальный идентификатор поставщика.
-
- `pszMetric`
-
- [in] Имя метрики.
-
- `pbstrValue`
-
- [out] Возвращает содержимое файла метрик в виде строки.
+`pbstrValue`\
+[out] Возвращает содержимое файла метрик в виде строки.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

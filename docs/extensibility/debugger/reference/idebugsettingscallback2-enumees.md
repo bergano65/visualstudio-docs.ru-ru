@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::EnumEEs
 ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d64a568f4df1e4e1705e90ba186287c0b96a85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dc9073ae5244b05234b3f37874bd6bcd6347954f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708216"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322157"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Перечисляет вычислители выражений доступны, учитывая идентификаторы языка и поставщика.
@@ -40,22 +43,18 @@ public int EnumEEs(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `celtBuffer`
+## <a name="parameters"></a>Параметры
+`celtBuffer`\
+[in] Количество элементов в `pceltEEs` буфера.
 
- [in] Количество элементов в `pceltEEs` буфера.
+`rgguidLang`\
+[in, out] Уникальный идентификатор для языка программирования.
 
- `rgguidLang`
+`rgguidVendor`\
+[in, out] Уникальный идентификатор для поставщика.
 
- [in, out] Уникальный идентификатор для языка программирования.
-
- `rgguidVendor`
-
- [in, out] Уникальный идентификатор для поставщика.
-
- `pceltEEs`
-
- [in, out] Массив вычислители выражений.
+`pceltEEs`\
+[in, out] Массив вычислители выражений.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

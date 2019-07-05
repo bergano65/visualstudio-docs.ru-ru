@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortSupplier
 ms.assetid: 3e2431b0-0e19-450d-8e1d-d7c314c8f872
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64d165fedf791e26cf291ed4b6255de81873953a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00579205a2e97d69f3a4305e09fac2146bb78d37
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694768"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326794"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 Получает указанный процесс, работающий с портом.
@@ -38,14 +41,12 @@ int GetProcess( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `ProcessId`
+## <a name="parameters"></a>Параметры
+`ProcessId`\
+[in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структура, задающая идентификатор процесса.
 
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структура, задающая идентификатор процесса.
-
- `ppProcess`
-
- [out] Возвращает [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, представляющий процесс.
+`ppProcess`\
+[out] Возвращает [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) объект, представляющий процесс.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

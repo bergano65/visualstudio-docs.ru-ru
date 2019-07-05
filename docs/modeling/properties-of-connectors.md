@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 754f479b99eef44159994425ddd7a0d812bcf2ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970813"
 ---
 # <a name="properties-of-connectors"></a>Свойства соединителей
 Соединители представляют собой доменная связь в созданном конструкторе.
@@ -23,7 +23,7 @@ ms.locfileid: "55909236"
 
  Соединители имеют свойства, которые перечислены в следующей таблице.
 
-|Свойство.|Описание|Значение по умолчанию|
+|Свойство|Описание|Значение по умолчанию|
 |-|-|-|
 |Цвет|Цвет этого соединителя.|Черный|
 |Тип штриха|Тип штриха для линии данного соединителя (сплошная, тире, точка, DashDot, DashDotDot или настраиваемый).|Сплошная|

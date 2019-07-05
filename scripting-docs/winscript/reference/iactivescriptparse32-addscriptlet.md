@@ -11,11 +11,11 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: b5a680eea5f5695d3a7253b9cf722af6ebf537c6
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954896"
 ---
 # <a name="iactivescriptparse32addscriptlet"></a>IActiveScriptParse32::AddScriptlet
 Сценарий кода добавляет к скрипту. Этот метод используется в средах, где сохраняемого состояния сценария переплетен с элементами документа узла и узла несет ответственность за восстановление сценарий, а не через `IPersist*` интерфейс. Основной относятся, например HTML языках сценариев, которые Разрешить сценарии кода, внедренного в HTML-документе должны быть присоединены к внутренних событий (к примеру, ONCLICK="button1.text='Exit"»).  

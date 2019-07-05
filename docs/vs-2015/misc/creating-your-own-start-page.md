@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc465ca5bc9474aaba51042d453a57ee7ec124ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432303"
 ---
 # <a name="creating-your-own-start-page"></a>Создание собственной начальной страницы
 Настраиваемую начальную страницу можно создать с помощью шаблона проекта начальной страницы или путем создания пустой начальной страницы.  
@@ -31,7 +31,7 @@ ms.locfileid: "60037899"
 1. Скачайте и установите [шаблон проекта начальной страницы](http://go.microsoft.com/fwlink/?LinkId=186204) из коллекции Visual Studio.  
   
     > [!WARNING]
-    >  На данный момент шаблон проекта начальной страницы Visual Studio 2010 еще не обновлен. Сведения об обновлении этого шаблона см. в разделе [как: Обновление настраиваемой начальной страницы Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    > На данный момент шаблон проекта начальной страницы Visual Studio 2010 еще не обновлен. Сведения об обновлении этого шаблона см. в разделе [как: Обновление настраиваемой начальной страницы Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2. Установив шаблон, создайте с его помощью проект начальной страницы.  
   
@@ -101,4 +101,4 @@ ms.locfileid: "60037899"
   
 ## <a name="see-also"></a>См. также  
  [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Пошаговое руководство: Добавление пользовательского XAML начальную страницу](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Пошаговое руководство: добавление настраиваемого XAML-файла на начальную страницу](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

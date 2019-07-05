@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - language services, developing
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a4cbc68e84c6593ca61be9234fcec3e88f3f333
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6aa21b2f2e8b0321e829fd27fde1d833a63e7ecb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631878"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351577"
 ---
 # <a name="develop-a-legacy-language-service"></a>Разработка языковой службы прежних версий
 Этот раздел содержит ссылки на разделы, которые помогут вам создать языковой службы прежних версий.
@@ -29,7 +29,7 @@ ms.locfileid: "56631878"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы подробнее узнать о новых способах реализации языковой службы, см. в разделе [редактора и языковой службы расширения](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
 
 ## <a name="in-this-section"></a>Содержание раздела
 - [Модель языковой службы прежних версий](../../extensibility/internals/model-of-a-legacy-language-service.md)
@@ -52,7 +52,7 @@ ms.locfileid: "56631878"
 
  Описывает, как служба языка может предоставлять функциональные возможности для поддержки отладчика.
 
-- [Контрольный список: Создание языковой службы прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [Контрольный список. Создание языковой службы прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
 
  Содержит пошаговые инструкции для создания и интеграции службы языка для базового редактора.
 

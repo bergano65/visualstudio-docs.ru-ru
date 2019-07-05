@@ -7,12 +7,12 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93159487d4d00b70a801e235f9a22eb35d6183c0
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998072"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500987"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Установка Visual Studio 2017 для Mac
 
@@ -67,7 +67,7 @@ ms.locfileid: "62998072"
       - Полностью кроссплатформенные приложения Xamarin — выберите платформы **Android**, **iOS** и **macOS**.
    * **Приложения .NET Core** — выберите платформу **.NET Core**.
    * **Веб-приложения ASP.NET Core** — выберите платформу **.NET Core**.
-   * **Разработка кроссплатформенных игр Unity** — не нужно устанавливать дополнительные платформы, кроме Visual Studio для Mac. Дополнительные сведения об установке расширения Unity вы найдете в [руководстве по установке Unity](/visualstudio/macm/setup-vsmac-tools-unity).
+   * **Разработка кроссплатформенных игр Unity** — не нужно устанавливать дополнительные платформы, кроме Visual Studio для Mac. Дополнительные сведения об установке расширения Unity вы найдете в [руководстве по установке Unity](/visualstudio/mac/setup-vsmac-tools-unity).
 
    На этом экране установки отображается версия и размер каждого компонента. Вы можете щелкнуть каждый из компонентов, чтобы отобразить список его зависимостей (для Android), просмотреть скачиваемые им дополнительные пакеты (для .NET Core) или просмотреть обязательные дополнительные приложения (для iOS и macOS):
 

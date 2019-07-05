@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: faca5ef7bc89bc16d646f66fb897f1dc44eb831a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955364"
 ---
 # <a name="breakpointstate-enumeration"></a>Перечисление BREAKPOINT_STATE
 Показывает состояние точки останова.  
@@ -39,7 +39,7 @@ typedef enum tagBREAKPOINT_STATE {
   
 ## <a name="members"></a>Участники  
   
-|Член|Описание:|  
+|Член|Описание|  
 |------------|-----------------|  
 |BREAKPOINT_DELETED|Точка останова не существует, но по-прежнему существуют ссылки на него.|  
 |BREAKPOINT_DISABLED|Точка останова существует, но отключен.|  

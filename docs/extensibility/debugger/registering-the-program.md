@@ -6,17 +6,17 @@ helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 60bc94efb9d3b2026de31c6018b466d432bf98f8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070151"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315960"
 ---
 # <a name="register-the-program"></a>Регистрация программы
 После модуля отладки приобрела порт, представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейс, следующим шагом Включение программы для отладки — для его регистрации в порт. После регистрации, эта программа доступна для отладки, одно из следующих способов:
@@ -38,7 +38,7 @@ ms.locfileid: "60070151"
      Пример обработчика отладки, запуска программы и зарегистрировав его с портом.
 
     > [!NOTE]
-    >  Этот пример кода является не единственным способом для запуска и возобновления процесса; Этот код является главным образом пример регистрации программы с портом.
+    > Этот пример кода является не единственным способом для запуска и возобновления процесса; Этот код является главным образом пример регистрации программы с портом.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.

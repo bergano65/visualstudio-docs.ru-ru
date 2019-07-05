@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4977a6394a5732d92391c3405519345484a6629f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8186a5961aeb728e683f3ee011766e980e070eea
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056930"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686402"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Формирование и компиляция кода, а также соглашения об именовании в Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,7 +134,7 @@ ms.locfileid: "60056930"
       PublicKey=<Test_assembly_public_key>)]  
   ```  
   
-  Если сборка с оболочкой совместимости имеет строгое имя, платформа Fakes автоматически назначает созданной сборке Fakes строгую подпись. Тестовой сборке следует назначить строгую подпись. См. статью [Создание и использование сборок со строгими именами](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
+  Если сборка с оболочкой совместимости имеет строгое имя, платформа Fakes автоматически назначает созданной сборке Fakes строгую подпись. Тестовой сборке следует назначить строгую подпись. См. статью [Создание и использование сборок со строгими именами](https://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
   Платформа Fakes использует один и тот же ключ для подписывания всех созданных сборок, поэтому этот фрагмент кода можно использовать в качестве основы для добавления атрибута **InternalsVisibleTo** для сборки Fakes в код сборки с оболочкой совместимости.  
   

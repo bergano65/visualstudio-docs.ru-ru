@@ -13,24 +13,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c67ff6e458f8350ef36a8a454e017b3ce6ea114
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 85704ed9e9a9493ef02e4d4d68a84a2d1623533f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446858"
 ---
 # <a name="idisperror-interface"></a>Интерфейс IDispError
 Предоставляет подробные контекстные сведения об ошибке.  
   
 > [!NOTE]
->  Этот интерфейс не реализован.  
+> Этот интерфейс не реализован.  
   
  Помимо методов, наследуемых от `IUnknown`, `IDispError` интерфейс предоставляет следующие методы.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IDispError::QueryErrorInfo](../../winscript/reference/idisperror-queryerrorinfo.md)|Извлекает определенный тип сведений об ошибке.|  
 |[IDispError::GetNext](../../winscript/reference/idisperror-getnext.md)|Извлекает следующий `IDispError` объекта.|  

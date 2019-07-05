@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea106d98dbd18f224e7f2a9d95734eff591dfc2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077879"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476655"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Добавление команд и жестов в схемы зависимостей
 
@@ -28,7 +28,7 @@ ms.locfileid: "60077879"
 
 ## <a name="requirements"></a>Требования
 
-См. раздел [Требования](../modeling/extend-layer-diagrams.md#prereqs).
+См. раздел [Требования](../modeling/extend-layer-diagrams.md#requirements).
 
 ## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Определение команды или жеста в новом расширении VSIX
 

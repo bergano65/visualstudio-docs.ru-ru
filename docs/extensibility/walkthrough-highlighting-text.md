@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99dbc928834cddade1c434f9d5d5d8e68c40825b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e7ae97c500ced1da67013fd6f12307edc0828dbf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106037"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312471"
 ---
 # <a name="walkthrough-highlight-text"></a>Пошаговое руководство. Выделение цветом текста
 Можно добавить различные визуальные эффекты к редактору, создав составные части Managed Extensibility Framework (MEF). В этом пошаговом руководстве показано, как можно выделить каждое вхождение текущего слова в текстовом файле. Если когда встречается более одного раза в текстовый файл и поместите курсор в одно вхождение, каждое вхождение будет выделен.
@@ -351,7 +351,7 @@ ms.locfileid: "60106037"
  Чтобы создать ваш средство создания тегов, необходимо реализовать <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Этот класс является частью компонента MEF, поэтому вам нужно задать правильные атрибуты, чтобы этот модуль был распознан.
 
 > [!NOTE]
->  Дополнительные сведения о MEF см. в разделе [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+> Дополнительные сведения о MEF см. в разделе [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ### <a name="to-create-a-tagger-provider"></a>Для создания поставщика средство создания тегов
 

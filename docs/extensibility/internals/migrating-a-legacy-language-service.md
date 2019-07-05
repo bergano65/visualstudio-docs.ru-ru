@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc0797fe993a9a640c3fcc15f0c6dc364a55687d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 43e4a119ae84f7b86b9b1a54f1f55dc2ffa78b15
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110970"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349259"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Миграция языковой службы прежних версий
 Можно перенести языковой службы прежних версий до более поздней версии Visual Studio путем обновления проекта и добавление в проект файл source.extension.vsixmanifest. Сама служба языка будет продолжать работать по-прежнему, так как в редакторе Visual Studio адаптирует его.
@@ -23,13 +23,13 @@ ms.locfileid: "60110970"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы подробнее узнать о новых способах реализации языковой службы, см. в разделе [редактора и языковой службы расширения](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.
 
 ## <a name="migrating-a-visual-studio-2008-language-service-solution-to-a-later-version"></a>Переход на более поздней версии Visual Studio 2008 решения на языке службы
  Ниже показано, как адаптировать с именем RegExLanguageService пример Visual Studio 2008. В этом примере в установке Visual Studio 2008 SDK можно найти в *путь установки Visual Studio SDK*\VisualStudioIntegration\Samples\IDE\CSharp\Example.RegExLanguageService\ папки.
 
 > [!IMPORTANT]
->  Если служба языка не определять цвета, необходимо явно задать <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> для `true` в VSPackage:
+> Если служба языка не определять цвета, необходимо явно задать <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute.RequestStockColors%2A> для `true` в VSPackage:
 
 ```
 [Microsoft.VisualStudio.Shell.ProvideLanguageService(typeof(YourLanguageService), YourLanguageServiceName, 0, RequestStockColors = true)]
@@ -57,7 +57,7 @@ ms.locfileid: "60110970"
 
     - На **приложения** вкладке **требуемой версии .NET framework** для **4.6.1**.
 
-    - На **Отладка** на вкладке **запуск внешней программы** введите  **\<путь установки Visual Studio > \Common7\IDE\devenv.exe.**.
+    - На **Отладка** на вкладке **запуск внешней программы** введите  **\<путь установки Visual Studio > \Common7\IDE\devenv.exe.** .
 
          В **аргументы командной строки** введите /**rootsuffix Exp**.
 
@@ -103,7 +103,7 @@ ms.locfileid: "60110970"
 
     - Сохраните и закройте файл.
 
-11. Постройте решение. Созданные файлы развертываются **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.
+11. Постройте решение. Созданные файлы развертываются **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** .
 
 12. Приступите к отладке. Открыть второй экземпляр Visual Studio.
 

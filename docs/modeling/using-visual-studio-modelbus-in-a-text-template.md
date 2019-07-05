@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33fe66319cda75ebdfc6fb47c9da6789cabc8e60
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9324c33e383029fa6f98a9b890309cc0a11eb95d
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064613"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226270"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Использование Visual Studio ModelBus в текстовом шаблоне
 
@@ -35,7 +35,7 @@ ms.locfileid: "60064613"
 
 1. Если целевой объект в решение DSL не содержит **ModelBusAdapter** проект, создайте его с помощью мастера расширение Modelbus:
 
-    1. Скачайте и установите расширение Visual Studio ModelBus, если вы еще не сделали это. Дополнительные сведения см. в разделе [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Скачайте и установите расширение Visual Studio ModelBus, если вы еще не сделали это. Дополнительные сведения см. в разделе [Visualization and Modeling SDK](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
     2. Откройте файл определения DSL. Щелкните правой кнопкой мыши область конструктора, а затем нажмите кнопку **включить Modelbus**.
 

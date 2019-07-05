@@ -27,18 +27,18 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f332ef1a52ae49e51025614745fc1b5c4a44e07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b592515692e23dce49c125c7895bd158904b653f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078295"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696125"
 ---
 # <a name="how-to-use-the-modules-window"></a>Практическое руководство. Использование окна модулей
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ПРИМЕЧАНИЕ
->  Эта возможность недоступна при отладке SQL и скриптов.  
+> Эта возможность недоступна при отладке SQL и скриптов.  
   
  **Модули** окне перечислены библиотеки DLL и EXE-файла, которые используются приложением и отображает соответствующую информацию для каждого.  
   
@@ -78,6 +78,6 @@ ms.locfileid: "60078295"
 2. Пункты **параметры автоматической загрузки символов** и нажмите кнопку **всегда загружать вручную** или **по умолчанию**. Изменения вступают в силу только после перезапуска сеанса отладки.  
   
 ## <a name="see-also"></a>См. также  
- [Прерывание выполнения](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [Прерывание выполнения](https://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)   
  [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

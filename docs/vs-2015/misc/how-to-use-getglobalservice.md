@@ -10,11 +10,11 @@ ms.assetid: 4cdf5ab5-9f09-4caf-9011-2dcb2c62f1b7
 caps.latest.revision: 14
 manager: jillfra
 ms.openlocfilehash: 1c1fb48e4bb354ef403b39b0f1320ead92f43967
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948186"
 ---
 # <a name="how-to-use-getglobalservice"></a>Практическое руководство. Использование GetGlobalService
 Иногда может потребоваться доступ к службе из окна инструментов или контейнер, который не был помещен в узел, в противном случае размещения с поставщиком услуг, не знает о службу, которую вы хотите управлять. Например может потребоваться запись в журнале действий в элементе управления. Дополнительные сведения об этих и других сценариев см. в разделе [как: Устранение неполадок в службах](../extensibility/how-to-troubleshoot-services.md).  

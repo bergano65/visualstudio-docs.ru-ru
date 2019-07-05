@@ -6,11 +6,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 048edb85742e71e6236d1491565a007bf7da84b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553809"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259546"
 ---
 В таблицах на этой странице перечислены идентификаторы, которые можно использовать для установки Visual Studio из командной строки или в качестве зависимости в манифесте VSIX. По мере выхода обновлений для Visual Studio здесь будут появляться новые компоненты.
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - commands, project systems
 - project systems, environment-defined commands
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f5ee29a52546e7f2111189f54d64c160a94cea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49a79a46fdcc6c969a489efb12eefb6bbc674126
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646920"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311882"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Команды, определенные в интегрированной среде разработки, для расширения систем проектов
 Если вы хотите расширить системы проектов, можно использовать команды и команды, предоставляемые группы [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки.
@@ -26,7 +26,7 @@ ms.locfileid: "56646920"
 ## <a name="command-menus"></a>Команды меню
  В следующей таблице показаны команды меню, которые являются полезные расположений применить высокого уровня команды, которые вызывают расширитель проекта.
 
-|Команда меню|Описание:|
+|Команда меню|Описание|
 |------------------|-----------------|
 |IDM_VS_MENU_PROJECT|**Проекта** меню верхнего уровня.|
 |IDM_VS_TOOL_PROJWIN|**Обозревателе решений** панели инструментов.|
@@ -34,7 +34,7 @@ ms.locfileid: "56646920"
 ## <a name="shortcut-menus"></a>Контекстные меню
  В следующей таблице показаны контекстные меню, которые применяются при выборе одного узла в **обозревателе решений**, или при наличии однородных множественный в **обозревателе решений**, когда это все выбранные узлы имеют тот же тип.
 
-|Контекстное меню|Описание:|
+|Контекстное меню|Описание|
 |-------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|Применяется, если выбран узел проекта.|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|Применяется, когда выбран файл.|
@@ -56,7 +56,7 @@ ms.locfileid: "56646920"
 ## <a name="command-groups"></a>Группы команд
  В следующей таблице показаны группы команд, которые можно использовать при расширении проекты, и для доступа к <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> контекстное меню.
 
-|Группа команд|Описание:|
+|Группа команд|Описание|
 |-------------------|-----------------|
 |IDG_VS_CTXT_PROJECT_BUILD|Команды для создания, повторного построения и развертывания проекта.|
 |IDG_VS_CTXT_COMPILELINK|Команды для компиляции и компоновки проекта.|

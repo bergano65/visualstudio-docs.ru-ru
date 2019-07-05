@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9811963b6130c3b0c144feee928de915a4bd9ba9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104100"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697007"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Практическое руководство. начать отладку XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60104100"
  При отладке приложения можно сделать шаг с входом в код XSLT. Если нажать клавишу F11 при вызове <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName>, отладчик может войти в код XSLT.  
   
 > [!NOTE]
->  Выполнение шага со входом в код XSLT из класса <xref:System.Xml.Xsl.XslTransform> не поддерживается. Класс <xref:System.Xml.Xsl.XslCompiledTransform> является единственным обработчиком XSLT, поддерживающим вход в код XSLT при отладке.  
+> Выполнение шага со входом в код XSLT из класса <xref:System.Xml.Xsl.XslTransform> не поддерживается. Класс <xref:System.Xml.Xsl.XslCompiledTransform> является единственным обработчиком XSLT, поддерживающим вход в код XSLT при отладке.  
   
 #### <a name="to-start-debugging-an-xslt-application"></a>Начало отладки приложения XSLT  
   
@@ -89,4 +89,4 @@ namespace ConsoleApplication
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство: Отладка таблицы стилей XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   
- [Обзор пошагового выполнения кода](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)
+ [Обзор пошагового выполнения кода](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

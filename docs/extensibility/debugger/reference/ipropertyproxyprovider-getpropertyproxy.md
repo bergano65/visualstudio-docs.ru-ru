@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyProvider::GetPropertyProxy
 ms.assetid: 3ebb7515-5bfe-48f4-9b8d-721b8f664eb6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44a267b39ab630646803165a31f01b0bb4b45f47
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7c7769fc58b41101be8a06cf49b309fda3e64a81
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693793"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353422"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 Извлекает интерфейс свойство прокси-сервера для идентификатора указанного прокси-сервера.
@@ -38,14 +41,12 @@ int GetPropertyProxy(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwID`
+## <a name="parameters"></a>Параметры
+`dwID`\
+[in] Идентификатор требуемого свойства прокси-сервера.
 
- [in] Идентификатор требуемого свойства прокси-сервера.
-
- `proxy`
-
- [out] Возвращает [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) объекта.
+`proxy`\
+[out] Возвращает [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) объекта.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

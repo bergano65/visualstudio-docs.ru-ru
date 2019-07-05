@@ -7,21 +7,21 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluators
 - expression evaluation, examples
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7b933277a2c509356037e585b7d2256a587c233
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0135c8dd61ca2505c1458bc157b574e6bcbee09a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090545"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315075"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Пример реализации вычисления выражений
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [вычислитель выражений управляемого образец](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [вычислитель выражений управляемого образец](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Для **Watch** выражения окна, Visual Studio вызывает [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) для создания [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) объекта. `IDebugExpressionContext2::ParseText` Создает экземпляр вычислитель выражений (EE) и вызывает метод [проанализировать](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) для получения [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) объекта.
 
@@ -34,7 +34,7 @@ ms.locfileid: "60090545"
 3. Возвращает `IDebugParsedExpression` интерфейс из `CParsedExpression` объекта.
 
 > [!NOTE]
->  В приведенных ниже примерах и в образце MyCEE средство оценки выражений не различал синтаксический анализ на основе оценки.
+> В приведенных ниже примерах и в образце MyCEE средство оценки выражений не различал синтаксический анализ на основе оценки.
 
 ## <a name="managed-code"></a>Управляемый код
  Следующий код показывает реализацию `IDebugExpressionEvaluator::Parse` в управляемом коде. Эта версия метода откладывает для синтаксического анализа [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) код для синтаксического анализа, оценке и в то же время (см. в разделе [оценки выражения контрольных значений](../../extensibility/debugger/evaluating-a-watch-expression.md)).

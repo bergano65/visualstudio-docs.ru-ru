@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugBoundBreakpoints2::Next
 ms.assetid: cb3a249f-2282-4bdc-b6d8-a4ee4bfb8365
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 542acd97b39813633c1207d90217498dd6fa77b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 92de3edb5e0720654714555f6073c19561450c3c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867528"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314176"
 ---
 # <a name="ienumdebugboundbreakpoints2next"></a>IEnumDebugBoundBreakpoints2::Next
 Возвращает следующий набор элементов из перечисления.
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `celt`
+## <a name="parameters"></a>Параметры
+`celt`\
+[in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
 
- [in] Количество извлекаемых элементов. Также указывает максимальный размер `rgelt` массива.
+`rgelt`\
+[in, out] Массив [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) элементов для заполнения.
 
- `rgelt`
-
- [in, out] Массив [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) элементов для заполнения.
-
- `pceltFetched`
-
- [out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
+`pceltFetched`\
+[out] Возвращает количество элементов, фактически возвращенных в `rgelt`.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` меньше, чем запрошенное количество элементов может быть возвращено; в противном случае возвращает код ошибки.

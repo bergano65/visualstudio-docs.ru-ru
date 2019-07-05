@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c133bb3f8ef56378c20b985aa118e48e71109cea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b93c512bafd8b15682ed081c7778660ef52fd1f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065263"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692502"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Сохранение данных с помощью транзакции
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "60065263"
  Проекты не создаются со ссылкой на сборку System.Transactions, поэтому вам нужно вручную добавить ссылку на проекты, использующие транзакции.  
   
 > [!NOTE]
->  <xref:System.Transactions> Пространство имен поддерживается в Windows 2000 или более поздней версии.  
+> <xref:System.Transactions> Пространство имен поддерживается в Windows 2000 или более поздней версии.  
   
- Самый простой способ реализации транзакции является создание экземпляра <xref:System.Transactions.TransactionScope> объекта в `using` инструкции. (Дополнительные сведения см. в разделе [Оператор Using](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1), и [инструкцией](http://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3).) Код, выполняемый в рамках `using` инструкции участвует в транзакции.  
+ Самый простой способ реализации транзакции является создание экземпляра <xref:System.Transactions.TransactionScope> объекта в `using` инструкции. (Дополнительные сведения см. в разделе [Оператор Using](https://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1), и [инструкцией](https://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3).) Код, выполняемый в рамках `using` инструкции участвует в транзакции.  
   
  Чтобы зафиксировать транзакцию, вызвать <xref:System.Transactions.TransactionScope.Complete%2A> метод в последнем операторе в с помощью блокируется.  
   

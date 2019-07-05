@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: db8c0c092ad8bc1435f939c862cf3fa7fc52179e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058880"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689149"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Устранение исключений: System.ServiceModel.Security.MessageSecurityException
 Объект <xref:System.ServiceModel.Security.MessageSecurityException> исключение создается, когда [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] определяет, что сообщение не защищено правильно или было изменено. Эта ошибка возникает чаще всего, если выполняются все следующие условия:  
@@ -35,7 +35,7 @@ ms.locfileid: "60058880"
  Если удаленный пользователь может запустить веб–узел с помощью [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server, а также работать с веб–службой или службой WCF, можно создать пользовательскую привязку службы или отключить безопасность NTLM.  
   
 > [!IMPORTANT]
->  Не рекомендуется отключать безопасность NTLM. Это может представлять угрозу безопасности.  
+> Не рекомендуется отключать безопасность NTLM. Это может представлять угрозу безопасности.  
   
  При создании пользовательской привязки службы по–прежнему выполняется защита с помощью проверки подлинности NTLM.  
   
@@ -74,7 +74,7 @@ ms.locfileid: "60058880"
    Выполните следующие действия для отключения безопасности NTLM при работе со ссылкой на службу WCF.  
   
 > [!IMPORTANT]
->  Не рекомендуется отключать безопасность NTLM. Это может представлять угрозу безопасности.  
+> Не рекомендуется отключать безопасность NTLM. Это может представлять угрозу безопасности.  
   
 #### <a name="to-turn-off-ntlm-security"></a>Чтобы отключить безопасность NTLM  
   
@@ -86,4 +86,4 @@ ms.locfileid: "60058880"
   
 ## <a name="see-also"></a>См. также  
  <xref:System.ServiceModel.Security.MessageSecurityException>   
- [Использование помощника по исключениям](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+ [Использование помощника по исключениям](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

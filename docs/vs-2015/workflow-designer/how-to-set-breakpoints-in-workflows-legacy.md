@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cec06813890523e604234ccefdbcd7d1de31653
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444182"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Практическое руководство. Указание точек останова в рабочих процессах (для прежних версий)
 В этом разделе описывается задание точек останова в приложениях [!INCLUDE[wf](../includes/wf-md.md)], построенных с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий. Используйте средство [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий, если приложение [!INCLUDE[wf2](../includes/wf2-md.md)] должно ориентироваться на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -39,7 +39,7 @@ ms.locfileid: "60069969"
      Этот вариант также можно использовать для установки новой точки останова при отладке, когда отладчик останавливается в точке останова.  
   
     > [!NOTE]
-    >  Задание точек останова в вызванных рабочих процессах не поддерживается.  
+    > Задание точек останова в вызванных рабочих процессах не поддерживается.  
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>Чтобы задать точку останова с использованием команды "Создать точку останова" из меню "Отладка"  
   
@@ -52,7 +52,7 @@ ms.locfileid: "60069969"
 3. Укажите имя действия в **функция** текстовое поле, используя следующий синтаксис: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
   
     > [!NOTE]
-    >  При необходимости, вместо использования имени действия в **функция** текстовое поле, можно установить точку останова путем указания абсолютного пути действия рабочего процесса. Например, предположим, что у вас есть решение рабочего процесса с именем **WorkflowConsoleApplication1** и рабочий процесс в решении с именем **Workflow1** , использующий действие с именем **Delay1**. Можно использовать имя действия **Delay1** или укажите путь в формате **Delay1:WorkflowConsoleApplication1.Workflow1** или **Delay1:WorkflowConsoleApplication1.Workflow1: {} 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
+    > При необходимости, вместо использования имени действия в **функция** текстовое поле, можно установить точку останова путем указания абсолютного пути действия рабочего процесса. Например, предположим, что у вас есть решение рабочего процесса с именем **WorkflowConsoleApplication1** и рабочий процесс в решении с именем **Workflow1** , использующий действие с именем **Delay1**. Можно использовать имя действия **Delay1** или укажите путь в формате **Delay1:WorkflowConsoleApplication1.Workflow1** или **Delay1:WorkflowConsoleApplication1.Workflow1: {} 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
   
 4. Выберите **используйте IntelliSense** флажок для проверки имени функции.  
   

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - language services [managed package framework], Autos window
 - Autos window, supporting in language services [managed package framework]
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fdff9237ef30884d5bfaad424edfffec62a8f58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2842cb7a11765f0d460681dee0187c62ff31061c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613262"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309830"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Поддержка окна видимых переменных в языковой службе прежних версий
 **"Видимые"** окне отображаются выражения, такие как переменные и параметры, которые находятся в области, при приостановке отлаживаемой программы (из-за точки останова или исключение). Выражения могут включать переменные, локальные или глобальные и параметры, которые были изменены в локальной области. **"Видимые"** окна можно также включить экземпляров класса, структуры или другого типа. Все, что позволяет оценить вычислитель выражений потенциально могут быть отображены в **"Видимые"** окна.

@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dab4013bf3921a2af4f69d464c10d1e70f9407b3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996990"
 ---
 # <a name="edit-xslt-style-sheets"></a>Изменение таблиц стилей XSLT
 
-Редактор XML может также использоваться для редактирования таблиц стилей XSLT. Можно воспользоваться преимуществами стандартных возможностей редактора, таких как технология IntelliSense, структурирование, XML-фрагменты и др. Кроме того, имеются новые функции, облегчающие разработку на языке XSLT.
+Редактор XML может также использоваться для редактирования таблиц стилей XSLT. Можно воспользоваться преимуществами стандартных возможностей редактора, таких как технология IntelliSense, структурирование, XML-фрагменты и др. Кроме того, имеются новые возможности, облегчающие разработку на языке XSLT.
 
 ## <a name="xslt-features"></a>Возможности XSLT
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3ddc8bcef8612459ce9816e79250ba8b93194292
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071335"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323312"
 ---
 # <a name="web-project-essentials"></a>Основные компоненты веб-проекта
 Веб-проекты создания веб-приложений. Веб-проект можно использовать для создания веб-приложение имеет смарт-веб-страницы. Смарт-веб-страницы имеет серверный код, который выполняет визуализацию веб-страницы по запросу.
@@ -32,10 +32,10 @@ ms.locfileid: "60071335"
 
   - Проект веб-приложения (WAP) создает один исполняемый файл, который сочетает в себе код для всех смарт-веб-страниц, а также все исходные файлы в папке/App_Code.
 
-- Отдельно от веб-сайта, сам находится файл решения веб-проекта. По умолчанию файлы решения приведены в \Documents and Settings\\*Ваша_учетная_запись*\My Documents\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*.
+- Отдельно от веб-сайта, сам находится файл решения веб-проекта. По умолчанию файлы решения приведены в \Documents and Settings\\*Ваша_учетная_запись*\My Documents\\ *\<Visual Studio ### >* \Projects\\ *YourWebSite*.
 
   > [!NOTE]
-  >  Если вы хотите сохранить файл решения веб-сайт, просто перенесите ее и снова открыть его.
+  > Если вы хотите сохранить файл решения веб-сайт, просто перенесите ее и снова открыть его.
 
 - При открытии веб-сайт, который имеет отсутствует файл решения в Visual Studio, для нее автоматически создается новый файл решения.
 

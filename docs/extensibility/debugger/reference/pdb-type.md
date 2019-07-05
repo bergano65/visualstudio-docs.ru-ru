@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PDB_TYPE structure
 ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5972a6da9422917ef61fb07c9124edca24032ee2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3121106b84111d20bf2915c0f9398fa92807cfd9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701255"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349903"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 
@@ -41,18 +44,15 @@ public struct PDB_TYPE {
 };
 ```
 
-## <a name="parameters"></a>Параметры
+## <a name="members"></a>Участники
 
-`ulAppDomainID`
-
+`ulAppDomainID`\
 Идентификатор приложения, от которого поступило символа. Это используется для уникальной идентификации экземпляра приложения.
 
-`guidModule`
-
+`guidModule`\
 Идентификатор GUID модуля, содержащего это поле.
 
-`symid`
-
+`symid`\
 Идентификатор символ, соответствующий этому полю.
 
 ## <a name="remarks"></a>Примечания

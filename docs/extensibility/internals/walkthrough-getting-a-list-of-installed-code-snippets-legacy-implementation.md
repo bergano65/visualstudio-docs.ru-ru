@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets, retrieving list
 - GetSnippets method
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4635030dad4b43aa27294c8425a70d3f53e5715e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: de116d6abb995375ba04ae1e8407eba7754ae5e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056852"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323375"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Пошаговое руководство. Получение списка установленных фрагментов кода (реализация прежних версий)
 Фрагмент кода — это часть кода, который может быть вставлен в исходный буфер с помощью команды меню (что позволяет, задав список фрагментов кода) или путем выбора из списка завершения IntelliSense ярлык фрагмента.
@@ -106,7 +106,7 @@ ms.locfileid: "60056852"
 1. Следующий метод отображает порядок вызова `GetSnippets` метод при завершении операции синтаксического анализа. <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> Был вызван после операции синтаксического анализа, которая была запущена с указанием причины <xref:Microsoft.VisualStudio.Package.ParseReason>.
 
 > [!NOTE]
->  `expansionsList` Список массива кэшируется для повышения производительности. Фрагменты кода изменения не отражаются в списке, пока не будет остановлена и перезагружена языковой службы (например, остановив и перезапустив [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
+> `expansionsList` Список массива кэшируется для повышения производительности. Фрагменты кода изменения не отражаются в списке, пока не будет остановлена и перезагружена языковой службы (например, остановив и перезапустив [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
 
 ```csharp
 class TestLanguageService : LanguageService

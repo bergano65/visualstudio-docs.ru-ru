@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c3a8c6f397bbafdbdb29ecbb193c4200a26335c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943372"
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Практическое руководство. Добавление действий в область элементов (для прежних версий)
 При построении решения рабочего процесса с помощью прежних версий [!INCLUDE[wfd1](../includes/wfd1-md.md)] излюбленного [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], пользовательские действия можно добавить в проект рабочего процесса и размещать их конструкторы в **элементов** для простой доступ. Вы можете также добавить действия непосредственно к **элементов** из библиотеки динамической компоновки (DLL).  

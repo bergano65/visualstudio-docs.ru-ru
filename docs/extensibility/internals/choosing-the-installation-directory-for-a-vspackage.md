@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 249efe70cdcc2cf8ef600ca4d9e009e094e1b105
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106271"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309122"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Выберите каталог установки для VSPackage
 VSPackage и ее вспомогательные файлы должны находиться в файловой системе пользователя. Расположение зависит ли VSPackage является управляемым или неуправляемым, схема управления версиями side-by-side и выбор пользователя.
@@ -55,7 +55,7 @@ VSPackage и ее вспомогательные файлы должны нах�
 
 4. Системы по умолчанию код языка с помощью варианта по умолчанию.
 
-5. США Английский (*. \1033* или *. \0x409*).
+5. США Английский ( *. \1033* или *. \0x409*).
 
 Если библиотека DLL VSPackage содержит ресурсы и **SatelliteDll\DllName** запись реестра указывает на нее, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] пытается загрузить их в списке выше.
 

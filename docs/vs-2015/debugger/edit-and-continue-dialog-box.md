@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46e5990b92dae5086d2986c8df9c8ba4106e913c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77fd48cd8e64be296231ff847b31d940d3d5831c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428590"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704146"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Изменить и продолжить - диалоговое окно
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,4 +37,4 @@ ms.locfileid: "62428590"
   
 ## <a name="see-also"></a>См. также  
  [Безопасность отладчика](../debugger/debugger-security.md)   
- [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Страница "Изменить и продолжить", папка "Отладка", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

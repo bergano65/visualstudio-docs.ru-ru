@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - JMC_CODE_SPEC structure
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fd27ee043e55b4dd43be956e41dd870be550562
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9bc6d5c57c3d3c53b043f1ff5140beb8055a8c0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707748"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339266"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
 Эта структура используется для задания данных JustMyCode для модуля.
@@ -39,9 +42,11 @@ public struct JMC_CODE_SPEC {
 ```
 
 ## <a name="members"></a>Участники
-fIsUserCode ненулевое значение (`TRUE`) Если модуль будет считаться пользовательского кода; в противном случае — нуль (`FALSE`) Если модуль должен обрабатываться как внешний код и не для отладки.
+`fIsUserCode`\
+Ненулевое значение (`TRUE`) Если модуль будет считаться пользовательского кода; в противном случае — нуль (`FALSE`) Если модуль должен обрабатываться как внешний код и не для отладки.
 
-bstrModuleName имя модуля в вопросе.
+`bstrModuleName`\
+Имя модуля в вопросе.
 
 ## <a name="remarks"></a>Примечания
 Эта структура передается как список таких структур для [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) метод.

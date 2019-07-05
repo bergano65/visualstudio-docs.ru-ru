@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59f26e4e8972f02740db45760e5b2e876c300bd1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b4487020232b897d62711bb9053f43ad2ef2694f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045405"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338109"
 ---
 # <a name="using-the-settings-store"></a>Использование хранилища параметров
 Существует два типа хранилищ параметры:
@@ -82,6 +82,6 @@ ms.locfileid: "60045405"
 2. Перейдите к HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.
 
     > [!NOTE]
-    >  Убедитесь, что вы находитесь на ключ, который содержит \14.0Exp_Config\ и не \14.0_Config\\. Когда вы запускаете экспериментальном экземпляре Visual Studio, параметры конфигурации — в кусте реестра «14.0Exp_Config».
+    > Убедитесь, что вы находитесь на ключ, который содержит \14.0Exp_Config\ и не \14.0_Config\\. Когда вы запускаете экспериментальном экземпляре Visual Studio, параметры конфигурации — в кусте реестра «14.0Exp_Config».
 
-3. Разверните узел \Installed Products\. Если сообщение на предыдущих шагах **установки по средств разработчика Microsoft Windows Phone: Значение true,**, \Installed Products\ должен содержать узел средства для разработчиков Windows Phone. Если сообщение является **разработчиков Microsoft Windows Phone средства установлены: False**, \Installed Products\ не должен содержать узел средства для разработчиков Windows Phone.
+3. Разверните узел \Installed Products\. Если сообщение на предыдущих шагах **установки по средств разработчика Microsoft Windows Phone: Значение true,** , \Installed Products\ должен содержать узел средства для разработчиков Windows Phone. Если сообщение является **разработчиков Microsoft Windows Phone средства установлены: False**, \Installed Products\ не должен содержать узел средства для разработчиков Windows Phone.

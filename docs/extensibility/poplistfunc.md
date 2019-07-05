@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - POPLISTFUNC callback function
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b73a7f34c663661ae9cc2e2805e5fb6bd11480
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f3125c17ad30eec6c374c38df7d4baa9e299314a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696445"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336217"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Этот обратный вызов передается [SccPopulateList](../extensibility/sccpopulatelist-function.md) Интегрированной средой разработки и используется подключаемый модуль системы управления версиями, чтобы обновить список файлов или каталогов (также указан для `SccPopulateList` функции).
@@ -47,7 +47,7 @@ typedef BOOL (*POPLISTFUNC) (
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |`TRUE`|Подключаемый модуль можно продолжить вызов этой функции.|
 |`FALSE`|Возникла проблема со стороны интегрированной среды разработки (например, из-за нехватки памяти). Подключаемый модуль должен остановить операцию.|
@@ -56,7 +56,7 @@ typedef BOOL (*POPLISTFUNC) (
  Для каждого файла, подключаемый модуль системы управления версиями, которые требуется добавить или удалить из списка файлов, он вызывает эту функцию, передавая `lpFileName`. `fAddRemove` Флаг указывает, новый файл для добавления в список или удалить старый файл. `nStatus` Дает состояние файла. После завершения добавления и удаления файлов подключаемого модуля SCC, она возвращает [SccPopulateList](../extensibility/sccpopulatelist-function.md) вызова.
 
 > [!NOTE]
->  `SCC_CAP_POPULATELIST` Бит функции является обязательным для Visual Studio.
+> `SCC_CAP_POPULATELIST` Бит функции является обязательным для Visual Studio.
 
 ## <a name="see-also"></a>См. также
 - [Функции обратного вызова, реализованные интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)

@@ -6,22 +6,22 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1eac2d38e0444cb6ee6624863d1cb3e33bae3314
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9c3bc5e10c928c50bca1ea3879531885f4580519
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678440"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309639"
 ---
 # <a name="keybinding-element"></a>Элемент KeyBinding
 Элемент KeyBinding указывает сочетания клавиш для команд.
 
- Команды могут иметь одного или двух привязок клавиш, связанных с ними. Пример одной привязки ключей — **Ctrl**+**S** для **Сохранить** команды. Двойной сочетания клавиш требуют двух последовательных сочетания клавиш для запуска команды. Пример двойного привязки ключей — <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** Чтобы установить закладку.
+ Команды могут иметь одного или двух привязок клавиш, связанных с ними. Пример одной привязки ключей — **Ctrl**+**S** для **Сохранить** команды. Двойной сочетания клавиш требуют двух последовательных сочетания клавиш для запуска команды. Пример двойного привязки ключей — <strong>Ctrl *+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** Чтобы установить закладку.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -48,7 +48,7 @@ ms.locfileid: "56678440"
 
 ### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |Родительский||
 |Комментарий||

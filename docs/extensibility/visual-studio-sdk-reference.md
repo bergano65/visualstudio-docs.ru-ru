@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio SDK, reference
 - reference, Visual Studio SDK
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62f5547da6e2181590b231175a409c505f3da7a0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 692297a22017ad3bb934bc80cc05c9b90f62ecbc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685759"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322185"
 ---
 # <a name="visual-studio-sdk-reference"></a>Справочник по Visual Studio SDK
 Этот раздел содержит сведения о пространствах имен, связанные пространства имен и другие области интересов Visual Studio для разработчиков, использующих пакет SDK для Visual Studio.

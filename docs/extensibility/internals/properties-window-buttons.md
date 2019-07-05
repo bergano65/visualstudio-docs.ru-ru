@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7726fe13c90c3a2732b7a6131ae4093a9051a62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2040dd9294b19db7fc2806222b13e12e6abdf4ad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625651"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347888"
 ---
 # <a name="properties-window-buttons"></a>Кнопки окна свойств
 В зависимости от языка разработки и тип продукта, по умолчанию на панели инструментов отображаются определенные кнопки **свойства** окна. Во всех случаях **по категориям**, **Alphabetized**, **свойства**, и **страницы свойств** отображаются кнопки. В Visual C# и Visual Basic **события** также отображается кнопка ". В некоторых проектах Visual C++ **сообщения VC ++** и **переопределяет VC** отображаются кнопки. Дополнительные кнопки может отображаться для других типов проектов. Дополнительные сведения о кнопках в **свойства** окно, см. в разделе [окно "Свойства"](../../ide/reference/properties-window.md).
@@ -34,7 +34,7 @@ ms.locfileid: "56625651"
  **Страницы свойств** недоступна при `ISpecifyPropertyPages` не реализован для выбранного объекта. Отображение свойств зависимых от конфигурации, которые обычно связаны с решениями и проектами страницы свойств, но они могут быть также быть связаны с элементами проекта (например, в Visual C++).
 
 > [!NOTE]
->  Не удается добавить кнопки панели инструментов для **свойства** окна с помощью неуправляемого кода. Чтобы добавить кнопку панели инструментов, необходимо создать управляемый объект, производный от <xref:System.Windows.Forms.Design.PropertyTab>.
+> Не удается добавить кнопки панели инструментов для **свойства** окна с помощью неуправляемого кода. Чтобы добавить кнопку панели инструментов, необходимо создать управляемый объект, производный от <xref:System.Windows.Forms.Design.PropertyTab>.
 
 ## <a name="see-also"></a>См. также
 - [Расширение свойств](../../extensibility/internals/extending-properties.md)

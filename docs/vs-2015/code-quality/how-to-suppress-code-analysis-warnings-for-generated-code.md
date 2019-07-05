@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 038ea6d6daec4c387d3344809d62bbbd67a12eee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9949a72abc46f2212fe448e193a06cce90b6df7c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438976"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Практическое руководство. Отключение предупреждений в ходе анализа созданного кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60057585"
  **Подавлять результаты из созданного кода** флажок на странице свойств анализа кода проекта позволяет выбрать, хотите ли вы см. в разделе предупреждений анализа кода код, созданный с помощью стороннего средства.  
   
 > [!NOTE]
->  Этот параметр не отключает анализ кода ошибки и предупреждения из созданного кода, когда ошибки и предупреждения появляются в формах и шаблонах. Вы можете просматривать и обслуживать исходный код для формы или шаблона.  
+> Этот параметр не отключает анализ кода ошибки и предупреждения из созданного кода, когда ошибки и предупреждения появляются в формах и шаблонах. Вы можете просматривать и обслуживать исходный код для формы или шаблона.  
   
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Чтобы отключить предупреждения для сформированного кода в проекте  
   

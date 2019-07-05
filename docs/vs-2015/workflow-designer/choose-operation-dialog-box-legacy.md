@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b9d40f3627cd24aa7758a0d599eb6e5d770c9f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b42ecd7ad38144786ff12d5cad20c9e8a1437646
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417554"
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>Диалоговое окно «Выбор операции» (для прежних версий)
 Здесь описывается, как использовать **выбрать операцию** диалогового окна в прежних версий [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -36,7 +36,7 @@ ms.locfileid: "58979277"
 |**Разрешения**|Вкладка содержит свойства пользователей <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> и <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A>, которые разрешается вызывать этой операции. Например, если только пользователи из группы администраторов разрешено вызывать эту операцию, то необходимо написать «Администраторы» **роли** текстовое поле.<br /><br /> Эта вкладка активна для обеих операций, созданных с помощью **ChooseOperation** диалоговое окно и операций, которые были импортированы через **импорта** кнопки.|  
   
 > [!NOTE]
->  **Выбрать операцию** диалоговое окно показывает только контракты или операции, которые используются другими <xref:System.Workflow.Activities.SendActivity> действий рабочего процесса. Аналогичным образом **выбрать операцию** диалоговое окно для <xref:System.Workflow.Activities.ReceiveActivity> действий показывает только контракты или операции, которые используются другими **ReceiveActivity** действий рабочего процесса.  
+> **Выбрать операцию** диалоговое окно показывает только контракты или операции, которые используются другими <xref:System.Workflow.Activities.SendActivity> действий рабочего процесса. Аналогичным образом **выбрать операцию** диалоговое окно для <xref:System.Workflow.Activities.ReceiveActivity> действий показывает только контракты или операции, которые используются другими **ReceiveActivity** действий рабочего процесса.  
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Реализация операции контракта WCF (для прежних версий)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   

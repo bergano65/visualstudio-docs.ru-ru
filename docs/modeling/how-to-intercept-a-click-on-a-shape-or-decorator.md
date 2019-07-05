@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531e723bbc7c1b288a73f1ea036cb24efcf8ce4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2b4677413fd06176136935e583073f611d1a127a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445187"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Практическое руководство. Перехват щелчка фигуры или декоратора
 Следующие процедуры демонстрируют перехват щелчка фигуры или декоратора значка. Может перехватывать щелчков, производит двойной щелчок, перетаскивает, и другие жесты и сделать элемент отвечать.
@@ -34,7 +34,7 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
->  Задайте `e.Handled` для `true`, если вам не нужно событие передается содержащего фигуры или схемы.
+> Задайте `e.Handled` для `true`, если вам не нужно событие передается содержащего фигуры или схемы.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>Для перехвата щелкает декораторов
  Декораторы образа переносятся на экземпляр класса ImageField, который имеет метод OnDoubleClick. Может перехватывать щелчков, при написании подкласса ImageField. Поля определяются в методе InitializeShapeFields. Таким образом необходимо изменить этот метод для создания экземпляра подклассе, а не регулярное ImageField. Метод InitializeShapeFields — в созданном коде класса shape. Можно переопределить класс фигуры, если задать его `Generates Double Derived` свойства, как описано в следующей процедуре.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76baf1330ec63d1032b69fa6cfddce4776742a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eb0968f96300ab62e4b4ee4b34b3e7f574f4b0fc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698629"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343434"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Позволяет процессу получать уведомления о событиях порт.
@@ -46,37 +49,31 @@ int WatchForProviderEvents(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `Flags`
+## <a name="parameters"></a>Параметры
+`Flags`\
+[in] Сочетание флагов из [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) перечисления. Для этого вызова типичны следующие флаги:
 
- [in] Сочетание флагов из [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) перечисления. Для этого вызова типичны следующие флаги:
-
-|Flag|Описание:|
+|Flag|Описание|
 |----------|-----------------|
 |`PFLAG_REMOTE_PORT`|Вызывающий объект выполняется на удаленном компьютере.|
 |`PFLAG_DEBUGGEE`|Вызывающий объект находится в состоянии отладки (Дополнительные сведения о маршалинга значение возвращается для каждого узла).|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Вызывающий объект был подключен к, но не запускается в отладчике.|
 |`PFLAG_REASON_WATCH`|Вызывающая сторона хочет слежения за событиями. Если этот флаг не установлен. затем удаляется событие обратного вызова, и вызывающий объект больше не получает уведомления.|
 
- `pPort`
+`pPort`\
+[in] Порт вызывающий процесс выполняется на.
 
- [in] Порт вызывающий процесс выполняется на.
+`processId`\
+[in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, содержащую рассматриваемый идентификатор процесса, в которой находится программа.
 
- `processId`
+`EngineFilter`\
+[in] Массив идентификаторов GUID отладчиков, связанных с процессом.
 
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) структуру, содержащую рассматриваемый идентификатор процесса, в которой находится программа.
+`guidLaunchingEngine`\
+[in] Идентификатор GUID модуля отладки, который запустил процесс (если таковые имеются).
 
- `EngineFilter`
-
- [in] Массив идентификаторов GUID отладчиков, связанных с процессом.
-
- `guidLaunchingEngine`
-
- [in] Идентификатор GUID модуля отладки, который запустил процесс (если таковые имеются).
-
- `pEventCallback`
-
- [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) объект, получающий уведомления о событиях.
+`pEventCallback`\
+[in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) объект, получающий уведомления о событиях.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

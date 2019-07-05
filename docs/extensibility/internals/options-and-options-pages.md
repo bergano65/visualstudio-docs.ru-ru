@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4397ba075c0f0ebd066dc885991a34f08586008b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c336503b80e2af34ac58c7debde16895d7f2585
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618358"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314852"
 ---
 # <a name="options-and-options-pages"></a>Параметры и страницы параметров
 Щелкнув **параметры** на **средства** откроется меню **параметры** диалоговое окно. Параметры в этом диалоговом окне Собирательно называются страницы параметров. Дерево в области навигации включает параметры категории, и каждая категория имеет страницы параметров. При выборе страницы ее содержимое отображается в области справа. Эти страницы позволяют изменить значения параметров, которые определяют состояния пакета VSPackage.
@@ -59,7 +59,7 @@ ms.locfileid: "56618358"
 - <xref:System.ComponentModel.DescriptionAttribute> Определяет описание параметра.
 
   > [!NOTE]
-  >  Эквивалентное атрибуты, SRCategory, LocDisplayName и SRDescription, использование строковых ресурсов для локализации и определяются в [образец управляемого проекта](http://go.microsoft.com/fwlink/?LinkId=122774).
+  > Эквивалентное атрибуты, SRCategory, LocDisplayName и SRDescription, использование строковых ресурсов для локализации и определяются в [образец управляемого проекта](http://go.microsoft.com/fwlink/?LinkId=122774).
 
   Рассмотрим следующий фрагмент кода:
 
@@ -84,4 +84,4 @@ ms.locfileid: "56618358"
  Путь в реестре свойство автоматизации определяется путем объединения <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, параметры, слово и AutomationProperties странице категории и имени. Например, если страницы параметров имеет категорию "My Category", имя мою страницу сетки и <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, то свойство автоматизации имеет раздел реестра, HKEY_LOCAL_MACHINE\SOFTWARE\ Microsoft\VisualStudio\8.0Exp\AutomationProperties\My страница Category\My «сетка».
 
 > [!NOTE]
->  Каноническое имя, Мои Category.My страница «Сетка», — значение подраздела имя этого ключа.
+> Каноническое имя, Мои Category.My страница «Сетка», — значение подраздела имя этого ключа.

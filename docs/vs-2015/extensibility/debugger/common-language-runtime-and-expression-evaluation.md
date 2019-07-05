@@ -11,18 +11,18 @@ ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0fb29119fd0598547925cad5ca82ab40ab693a07
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b75cb1b0604f3611c0e51c6f458939433d2a5470
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383532"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Вычисления выражений и среда CLR
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Компиляторы, такие как Visual Basic и C# (произносится как "Си-шарп"), которые предназначены для Common Language Runtime (CLR), создают промежуточного языка MSIL (Microsoft), который затем скомпилировать в машинный код. Среда CLR предоставляет механизм отладки (DE), выполнить отладку полученного кода. Если вы планируете интегрировать собственный язык программирования в СРЕДЕ Visual Studio, вы можно скомпилировать в код MSIL и поэтому не нужно будет написать собственные DE. Тем не менее необходимо написать вычислитель выражений (EE), который способен вычисление выражений в контексте языка программирования.  
   

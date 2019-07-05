@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2754a8ea663d888bb8ba2e2ff0276911976ff0af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802633"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696559"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense для Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ ms.locfileid: "54802633"
 - Идентификатор BYE в строке 12 подчеркнут фиолетовой волнистой линией. Этот идентификатор не определен в неактивном на данный момент проекте Android.NativeActivity.  
   
 ## <a name="single-file-intellisense"></a>IntelliSense для одного файла  
- При открытии одного файла за пределами любого проекта функции IntelliSense по-прежнему остаются доступными. Вы можете включить или отключить определенные возможности, последовательно выбрав **"Текстовый редактор", "C/C++", "Дополнительно"**, чтобы включить или выключить возможности IntelliSense. Чтобы настроить IntelliSense для одиночных файлов, которые не входят в проект, найдите **IntelliSense и обзор файлов, не входящих в проект** в разделе **Дополнительно**. См. [Интерактивный учебник по Visual C++](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
+ При открытии одного файла за пределами любого проекта функции IntelliSense по-прежнему остаются доступными. Вы можете включить или отключить определенные возможности, последовательно выбрав **"Текстовый редактор", "C/C++", "Дополнительно"**, чтобы включить или выключить возможности IntelliSense. Чтобы настроить IntelliSense для одиночных файлов, которые не входят в проект, найдите **IntelliSense и обзор файлов, не входящих в проект** в разделе **Дополнительно**. См. [Интерактивный учебник по Visual C++](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
   
  ![IntelliSense для одного файла Visual C&#43;&#43;](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   
@@ -95,5 +95,5 @@ ms.locfileid: "54802633"
   
  ![Добавление пути к файлу заголовка.](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Использование технологии IntelliSense](../ide/using-intellisense.md)

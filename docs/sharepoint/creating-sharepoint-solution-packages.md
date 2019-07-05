@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952732"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Создание пакетов решений SharePoint
   С помощью конструктора пакетов, можно создавать и настраивать пакеты развертывания. Например можно добавить элементы проекта SharePoint и компонентов, сброса на сервере IIS, задавать области активации компонентов и определять зависимости компонента. Конструктор также создает манифест, XML-файл с описанием каждого пакета.

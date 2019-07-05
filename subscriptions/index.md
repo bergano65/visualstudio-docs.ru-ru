@@ -8,12 +8,12 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Добро пожаловать в подписки Visual Studio
 Searchscope: VS Subscription
-ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1515b7da3cadb8397f38554498fb4880db2d3b03
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62579946"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259477"
 ---
 # <a name="visual-studio-subscriptions"></a>Подписки Visual Studio
 
@@ -169,7 +169,7 @@ ms.locfileid: "62579946"
                 <div class="card">
                     <div class="cardText">
                         <h3>Облачные службы</h3>
-                        <p>С подпиской Visual Studio вы можете получить                         ежемесячный кредит Azure и бесплатный доступ к службам Azure,                         а также тарифы на разработку и тестирование со скидкой и эксклюзивный                            доступ к коллекции образов с предварительно                                  настроенными виртуальными машинами, доступной только подписчикам. В зависимости от                               подписки облачные службы могут включать следующее.</p>
+                        <p>С подпиской Visual Studio вы можете получить                         ежемесячный кредит Azure и для доступа к службам Azure,                         а также тарифы на разработку и тестирование со скидкой и эксклюзивный                            доступ к коллекции образов с предварительно                                  настроенными виртуальными машинами, доступной только подписчикам. В зависимости от                               подписки облачные службы могут включать следующее.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Центр приложений Visual Studio</a></li>
@@ -194,7 +194,6 @@ ms.locfileid: "62579946"
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (бизнес, технологии и творчество)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (облако, разработка, мобильные технологии и данные)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (обработка и анализ данных, ИИ)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a> (мобильная разработка)</li>
                             <li><a href="/visualstudio/subscriptions/vs-opsgility">Обучение Opsgility</a> (облачные технологии)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Обращения в службу профессиональной технической поддержки Майкрософт</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Чат с Помощником по Azure</a></li>

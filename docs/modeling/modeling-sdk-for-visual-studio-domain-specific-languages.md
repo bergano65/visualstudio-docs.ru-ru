@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4b955dc6f79c689ca30d8d9876d0888b14127490
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867452"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476530"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK моделирования для Visual Studio — доменные языки
 
@@ -41,38 +41,3 @@ MSDK позволяет быстро разработать модель в ви
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 [Связанные записи в блогах](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
-
-Руководство по передовым технологиям и устранению неполадок, см. в статье [форум по Visual Studio DSL и расширяемость средств моделирования](http://go.microsoft.com/fwlink/?LinkID=186074).
-
-## <a name="in-this-section"></a>В этом разделе
- [Начало работы с доменными языками](../modeling/getting-started-with-domain-specific-languages.md)
-
- [Сведения о моделях, классах и отношениях](../modeling/understanding-models-classes-and-relationships.md)
-
- [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)
-
- [Настройка и расширение доменного языка](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
- [Проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md)
-
- [Написание кода для настройки доменного языка](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
- [Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)
-
- [Общие сведения о коде доменных языков](../modeling/understanding-the-dsl-code.md)
-
- [Настройка хранилища файлов и XML-сериализации](../modeling/customizing-file-storage-and-xml-serialization.md)
-
- [Развертывание решений на доменных языках](../modeling/deploying-domain-specific-language-solutions.md)
-
- [Создание доменного языка на основе Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
-
- [Создание доменного языка на основе WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
- [Практическое руководство. Расширение конструктора предметно-ориентированных языков](../modeling/how-to-extend-the-domain-specific-language-designer.md)
-
- [Выпуски Visual Studio, поддерживаемые пакетом SDK визуализации и моделирования](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
-
- [Практическое руководство. Перенос предметно-ориентированного языка в новую версию](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
-
- [Справка по API SDK моделирования для Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

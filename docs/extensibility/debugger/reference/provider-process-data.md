@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_PROCESS_DATA structure
 ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d021efe197fcc15c99a1138d75e1343fc092efde
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 18b60d68b8c36c1d0c4fcd2a90e25732108460ee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684342"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347239"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 Эта структура предоставляет сведения о процессах, запущенных на компьютере.
@@ -41,11 +44,14 @@ public struct PROVIDER_PROCESS_DATA {
 ```
 
 ## <a name="members"></a>Участники
- Сочетание флагов из поля [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) перечисления, указывающее, какие поля заполнены.
+ `Fields`\
+ Сочетание флагов из [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) перечисления, указывающее, какие поля заполнены.
 
- Объект ProgramNodes [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) структуру, содержащую массив узлов программы.
+ `ProgramNodes`\
+ Объект [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) структуру, содержащую массив узлов программы.
 
- fIsDebuggerPresent ненулевое значение (`TRUE`) Если [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] работы отладчика, ноль (`FALSE`) Если это не так.
+ `fIsDebuggerPresent`\
+ Ненулевое значение (`TRUE`) Если [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] работы отладчика, ноль (`FALSE`) Если это не так.
 
 ## <a name="remarks"></a>Примечания
  Эта структура передается [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) метод, где он заполняется.

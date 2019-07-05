@@ -9,17 +9,17 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d2a2311d0a8c1e9470b5053ac4f5f309a1a4d0c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bcd32aef240732b67a2c490e3738c9b3d2921ffc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992352"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698055"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Вызов преобразования текста в расширении VS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Если вы создаете [расширение Visual Studio](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14) такие как команды меню или [предметно ориентированного языка](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), службы текстовых шаблонов можно использовать для преобразования текстовых шаблонов. Получите службу типа <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> и выполните приведение к типу <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.  
+Если вы создаете [расширение Visual Studio](https://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14) такие как команды меню или [предметно ориентированного языка](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), службы текстовых шаблонов можно использовать для преобразования текстовых шаблонов. Получите службу типа <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> и выполните приведение к типу <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.  
   
 ## <a name="getting-the-text-templating-service"></a>Получение службы текстовых шаблонов  
   

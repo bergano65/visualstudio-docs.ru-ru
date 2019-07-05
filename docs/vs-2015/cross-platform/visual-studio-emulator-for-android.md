@@ -8,12 +8,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 211741a94623ede593c7f6ba9e5988cea094ae90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a33d7928e6e2555f0cfd484059b062ae801d8633
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442088"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Эмулятор Visual Studio для Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "60060531"
  Эмулятор для Android Visual Studio можно удалить с помощью компонента "Установка и удаление программ" панели управления.  
   
 > [!NOTE]
->  Удаление Visual Studio не приведет к удалению эмулятора. Эмулятор необходимо удалить отдельно.  
+> Удаление Visual Studio не приведет к удалению эмулятора. Эмулятор необходимо удалить отдельно.  
   
  При удалении эмулятора Visual Studio для Android виртуальные адаптеры Ethernet Hyper-V, созданные для эмулятора, не удаляются автоматически. Можно вручную удалить эти виртуальные адаптеры (если они не используются). Для этого откройте диспетчер Hyper-V, выберите один из VHD-образов эмулятора, перейдите на вкладку "Сеть" и выберите **Удалить** для каждого адаптера, который отображается на этой вкладке.  
   

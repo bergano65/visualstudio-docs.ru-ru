@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437086"
 ---
 # <a name="code-metrics-values"></a>Значения метрик кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60049567"
 - **Сложность организации циклов** — измеряет структурной сложности кода. Она создается в расчете количества разных путей кода в потоке программы. Это программа, которая имеет сложный поток управления требует более тщательного тестирования для достижения приемлемого уровня покрытия кода и будет более простым в обслуживании.  
   
     > [!NOTE]
-    >  В некоторых случаях вычисления цикломатической сложности для метода в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] отличается от более ранних версий. Дополнительные сведения см. в разделе «Изменения в Visual Studio 2010 сложность вычислений разделе кода» из [Устранение неполадок с метриками кода](../code-quality/troubleshooting-code-metrics-issues.md).  
+    > В некоторых случаях вычисления цикломатической сложности для метода в [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] отличается от более ранних версий. Дополнительные сведения см. в разделе «Изменения в Visual Studio 2010 сложность вычислений разделе кода» из [Устранение неполадок с метриками кода](../code-quality/troubleshooting-code-metrics-issues.md).  
   
 - **Глубина наследования** — указывает количество определений классов, расширяющих возможности к корню иерархии классов. Чем глубже иерархия, тем сложнее возможно, чтобы понять, где определены конкретные методы и поля или / переопределяются.  
   

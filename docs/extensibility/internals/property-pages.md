@@ -7,17 +7,17 @@ helpviewer_keywords:
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5df98f898c585d89c9bc493e606947f89b3206d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48809f0e8dd65c5a6ecd47f2874498ebba694a2a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909398"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341529"
 ---
 # <a name="property-pages"></a>Страницы свойств
 Пользователи могут просматривать и изменять зависящие от конфигурации и - не зависят от свойств проекта с помощью страницы свойств. Объект **страницы свойств** кнопка включена в **свойства** окне или на панели инструментов обозревателя решений для объектов, которые предоставляют вид страницы свойств для выбранного объекта. Страницы свойств, создаваемые в среде и доступны для решения и проекты. Они тем не менее, также могут быть доступны для элементов проекта, которые делают использование свойств зависимости от конфигурации. Эта возможность может быть использовано, когда файлы проекта требуют параметров коммутатора компилятора было создано правильно.

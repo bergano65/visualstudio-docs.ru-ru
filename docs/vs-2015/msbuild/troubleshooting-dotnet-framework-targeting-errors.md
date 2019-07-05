@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85f57d03ac52562c5cbebc27f410570c03e33d3f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ae55e34f929acca6c708dfc39477f3bd6546f53f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668175"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703786"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,10 +54,10 @@ ms.locfileid: "59668175"
 ```  
   
 > [!NOTE]
->  После этого закройте проект, повторно откройте и перестройте его, чтобы все ссылки наверняка разрешились правильно.  
+> После этого закройте проект, повторно откройте и перестройте его, чтобы все ссылки наверняка разрешились правильно.  
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Определение целевой версии платформы .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)  (Профиль клиента .NET Framework)  
+ [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)  (Профиль клиента .NET Framework)  
  [Targeting a Specific .NET Framework Version](../ide/targeting-a-specific-dotnet-framework-version.md)  (Нацеливание на определенную версию .NET Framework)  
  [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d9f1a68db05ac0d909108ce77587ae4b071c9a2b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935475"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
 Возвращает сведения о языке.  
@@ -39,7 +39,7 @@ HRESULT GetLanguageFlags(
  `pgrfasa`  
  [out] Флаги, которые содержат сведения о языке. Может быть сочетанием следующих значений:  
   
-|Константа|Значение|Описание:|  
+|Константа|Значение|Описание|  
 |--------------|-----------|-----------------|  
 |fasaPreferInternalHandler|0x0001|Язык, является предпочтительным для создания обработчика события скрипта с помощью сценария создания ядра вместо приложения.|  
 |fasaSupportInternalHandler|0x0002|Язык поддерживает сценарий обработчики событий, создаваемых сценарием разработки ядра.|  
@@ -48,7 +48,7 @@ HRESULT GetLanguageFlags(
 ## <a name="return-value"></a>Возвращаемое значение  
  Объект `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

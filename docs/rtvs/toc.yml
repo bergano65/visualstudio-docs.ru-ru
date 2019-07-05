@@ -19,15 +19,17 @@
 - name: Практические руководства
   items:
     - name: Проекты R
-      href: r-projects-in-visual-studio.md
       items:
+        - name: Проекты R
+          href: r-projects-in-visual-studio.md
         - name: Диспетчер пакетов
           href: r-package-manager-in-visual-studio.md
         - name: Интеграция SQL Server
           href: integrating-sql-server-with-r.md
     - name: Редактирование кода
-      href: editing-r-code-in-visual-studio.md
       items:
+        - name: Редактирование кода
+          href: editing-r-code-in-visual-studio.md
         - name: IntelliSense
           href: r-intellisense.md
         - name: Выделение
@@ -35,8 +37,9 @@
         - name: Фрагменты кода
           href: code-snippets-for-r.md
     - name: Рабочие области (локальные и удаленные)
-      href: r-workspaces-in-visual-studio.md
       items:
+        - name: Рабочие области (локальные и удаленные)
+          href: r-workspaces-in-visual-studio.md
         - name: Настройка удаленных рабочих областей
           href: setting-up-remote-r-workspaces.md
         - name: "Удаленная служба\_R для\_Linux"

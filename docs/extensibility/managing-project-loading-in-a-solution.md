@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solutions, managing project loading
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a80430c4a5dcf5526445275b89fa2da7f02f5529
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061311"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340587"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Управление загрузкой проекта в решении
 Решения Visual Studio может содержать большое количество проектов. Visual Studio по умолчанию задается для загрузки всех проектов в решении во время открытия решения и не разрешает пользователю доступ к любой из проектов, пока все они завершения загрузки. Когда процесс загрузки проекта хватит на более чем за две минуты, отображается индикатор хода выполнения, в число проектов, загруженных и общее число проектов. Пользователь может выгрузить проекты при работе в решении с несколькими проектами, но эта процедура имеет определенные недостатки: выгруженные проекты не были собраны как часть команды Перестроить решение и закрытия IntelliSense описания типов и членов проекты не отображаются.
@@ -44,7 +44,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
  Если диспетчер загрузки решения предназначен для управления решения, загрузка в целом, его можно реализовать как часть пакета VSPackage. Пакета должно быть присвоено автозагрузки, добавив <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> в VSPackage со значением <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Диспетчер загрузки решения может быть активизирована в <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> метод.
 
 > [!NOTE]
->  Дополнительные сведения о Автозагрузка пакетов, см. в разделе [Загрузка пакетов VSPackage](../extensibility/loading-vspackages.md).
+> Дополнительные сведения о Автозагрузка пакетов, см. в разделе [Загрузка пакетов VSPackage](../extensibility/loading-vspackages.md).
 
  Так как Visual Studio распознает только последние диспетчер загрузки решения, которое необходимо активировать, диспетчеры нагрузки общие решения всегда должен определить, существует ли существующий диспетчер нагрузки перед активацией сами. Если вызов `GetProperty()` службу решения для [__VSPROPID4. VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>) возвращает `null`, отсутствует диспетчер нагрузки активного решения. Если он не возвращает значение null, проверьте, является ли объект так же, как ваш диспетчер загрузки решения.
 

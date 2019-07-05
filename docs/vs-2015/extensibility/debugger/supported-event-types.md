@@ -10,12 +10,12 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d82bce8546d4c63a82f4850097ca92c804399a66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446438"
 ---
 # <a name="supported-event-types"></a>Поддерживаемые типы событий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58994034"
     Интерфейсы [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) и [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) являются примерами событий остановки.  
   
   > [!NOTE]
-  >  Остановка асинхронных событий не поддерживаются. Это ошибка для отправки события асинхронной остановки.  
+  > Остановка асинхронных событий не поддерживаются. Это ошибка для отправки события асинхронной остановки.  
   
 ## <a name="discussion"></a>Обсуждение  
  Фактическую реализацию событий зависит от структуры вашей DE. Тип каждое событие, отправленное определяется его атрибутов, которые настраиваются при создании DE. Например, может отправить один DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) как событие асинхронной, то время как другой может отправлять как событие остановки.  
@@ -53,7 +53,7 @@ ms.locfileid: "58994034"
  В следующей таблице указано, какие программы и поток параметры являются обязательными для какие события, а также типы событий. Любое событие может быть синхронным. Событие не должен быть синхронными.  
   
 > [!NOTE]
->  [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) он необходим для всех событий.  
+> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) он необходим для всех событий.  
   
 |событие|IDebugProgram2|IDebugThread2|События остановки|  
 |-----------|--------------------|-------------------|---------------------|  

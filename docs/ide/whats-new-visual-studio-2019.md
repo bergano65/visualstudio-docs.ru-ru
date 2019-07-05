@@ -2,7 +2,7 @@
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
-ms.date: 04/23/2019
+ms.date: 05/22/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432020"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328832"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
-**Обновлено для [выпуска 16.0](/visualstudio/releases/2019/release-notes/)**
+**Обновлено для [выпуска 16.1](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Скачивание Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -63,7 +63,7 @@ ms.locfileid: "63432020"
 
 ### <a name="intellicode"></a>IntelliCode
 
-[Visual Studio IntelliCode](/visualstudio/intellicode/) — это расширение, которое повышает эффективность разработки программного обеспечения с помощью искусственного интеллекта (ИИ). Для создания рекомендаций IntelliCode анализирует 2000 проектов с открытым кодом на GitHub (&mdash;каждый из которых имеет более 100 звезд&mdash;).
+[Visual Studio IntelliCode](/visualstudio/intellicode/) повышает эффективность разработки программного обеспечения с помощью искусственного интеллекта (ИИ). Для создания рекомендаций IntelliCode анализирует 2000 проектов с открытым кодом на GitHub (&mdash;каждый из которых имеет более 100 звезд&mdash;).
 
  ![Анимация IntelliCode в Visual Studio 2019](media/vs-2019/IntelliCode.gif)
 
@@ -74,23 +74,33 @@ ms.locfileid: "63432020"
 * выполняет поиск трудновыявляемых ошибок в коде;
 * при проверке обращает внимание на те участки кода, которые действительно требуют проверки.
 
-Изначально, в первой предварительной версии расширения IntelliCode для Visual Studio, поддерживался только язык C#. Теперь мы добавили поддержку C++ и XAML в Visual Studio.
+Изначально, в первой предварительной версии расширения IntelliCode для Visual Studio, поддерживался только язык C#. Теперь, в **версии 16.1**, мы добавили встроенную поддержку C++ и XAML в Visual Studio. (Поддержка C++, TypeScript и JavaScript находится на стадии предварительной версии.)
 
 А если вы используете C#, мы также добавили возможность обучения пользовательской модели на основе собственного кода.
 
-Подробнее об IntelliCode см. в записи блога, посвященной [оптимизации работы с Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/).
+Дополнительные сведения о IntelliCode см. в сообщениях в блогах [Объявление об общедоступности IntelliCode, а также обзор возможностей](https://devblogs.microsoft.com/visualstudio/announcing-the-general-availability-of-intellicode-plus-a-sneak-peek/) и [Пишите больше, прокручивайте меньше с помощью Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/).
 
 ### <a name="code-cleanup"></a>Очистка кода
 
 Новый индикатор работоспособности документа дополнен новой командой очистки кода. Эту новую команду можно использовать для определения и устранения предупреждений и предложений одним нажатием кнопки.
 
-Функция очистки выполнит форматирование кода и применит исправления согласно [текущим параметрам](code-styles-and-quick-actions.md) и [файлам editorconfig](create-portable-custom-editor-options.md).
+Функция очистки выполнит форматирование кода и применит исправления согласно [текущим параметрам](code-styles-and-code-cleanup.md) и [файлам editorconfig](create-portable-custom-editor-options.md).
 
    ![Снимок экрана: новое средство очистки кода в Visual Studio 2019](media/vs-2019/code-cleanup-profile.png)
 
 Вы также можете сохранять наборы исправлений как профили. Например, если у вас есть небольшой набор целевых исправлений, которые часто применяются при написании кода, а также другой полный набор исправлений, которые применяются перед проверкой кода, вы можете настроить разные профили для решения этих задач.
 
-   ![Снимок экрана: новое средство очистки кода в Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Снимок экрана: средство настройки очистки кода в Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+
+### <a name="per-monitor-aware-pma-rendering"></a>Отрисовка, учитывающая параметры монитора (PMA)
+
+Если вы используете мониторы, на которых настроены разные коэффициенты масштабирования отображения, или удаленно подключаетесь к компьютеру, коэффициенты масштабирования отображения которого отличаются от основного устройства, вы можете заметить, что изображение Visual Studio выглядит размытым или отображается с некорректным масштабом.
+
+В выпуске Visual Studio 2019 мы реализуем в Visual Studio отрисовку, учитывающую параметры монитора (PMA). Теперь Visual Studio правильно отображается независимо от того, какие используются коэффициенты масштабирования отображения.
+
+   ![Отрисовка, учитывающая параметры монитора (PMA) в Visual Studio 2019](media/vs-2019/pma-dpi-scaling.png)
+
+Дополнительные сведения см. в записи блога [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Улучшенная работа с несколькими мониторами в Visual Studio 2019).
 
 ## <a name="collaborate"></a>Совместная работа
 
@@ -104,7 +114,7 @@ ms.locfileid: "63432020"
 
    ![Снимок экрана: новое окно запуска в Visual Studio 2019](media/vs-2019/start-window-dark.png)
 
-С помощью этого окна запуска можно быстро перейти к коду несколькими способами. Мы включили возможность клонирования или извлечения кода из репозитория.  
+С помощью этого окна запуска можно быстро перейти к коду несколькими способами. Мы включили возможность клонирования или извлечения кода из репозитория.
 
    ![Анимация нового интерфейса Git-first в Visual Studio 2019](media/vs-2019/git-first.gif)
 
@@ -128,7 +138,7 @@ ms.locfileid: "63432020"
 
    ![Снимок экрана: новое окно запуска в Visual Studio 2019](media/vs-2019/pr-experience.png)
 
-Чтобы приступить к работе, скачайте расширение [Запросы на вытягивание для Visual Studio](https://aka.ms/pr4vs) из Visual Studio Marketplace.
+Дополнительные сведения см. в записи блога [Проверка кода с помощью расширения для запросов на вытягивание в Visual Studio](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/).
 
 ## <a name="debug"></a>Отладка
 
@@ -178,9 +188,9 @@ ms.locfileid: "63432020"
 
 Зачем отправлять отзыв группе Visual Studio? Потому что мы серьезно относимся к отзывам клиентов. Они влияют на многие наши действия.
 
-* Если вы хотите внести предложение по улучшению Visual Studio, это можно сделать с помощью средства [Отправить предложение](talk-to-us.md#i-want-to-make-a-suggestion-about-visual-studio-features).
+* Если вы хотите внести предложение по улучшению Visual Studio, это можно сделать с помощью средства [Предложить функцию](suggest-a-feature.md).
 
-* В случае зависания, сбоя или других проблем с производительностью вы можете предоставить нам шаги для воспроизведения и вспомогательные файлы с помощью средства [Сообщить о проблеме](talk-to-us.md#i-want-to-report-a-problem-with-visual-studio).
+* В случае зависания, сбоя или других проблем с производительностью вы можете предоставить нам шаги для воспроизведения и вспомогательные файлы с помощью средства [Сообщить о проблеме](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>См. также
 
@@ -188,4 +198,5 @@ ms.locfileid: "63432020"
 * [Заметки о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Новые возможности пакета SDK для Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Объявление о выходе Visual Studio 2019 для Mac](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Конференция Microsoft Build 2019](https://www.microsoft.com/build)
 * [Конференция Microsoft Connect(); 2018](https://www.microsoft.com/connectevent)

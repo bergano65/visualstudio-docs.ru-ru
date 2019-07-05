@@ -6,17 +6,20 @@ helpviewer_keywords:
 - CreatePointerToType
 - IDebugTypeFieldBuilder::CreatePointerToType
 ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c4f143f8726f8dc3d9a1d60e6c51a5de1976bb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b8947090c56376b03da83cfd81296604b6bd642a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693832"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319905"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Создает указатель к заданному типу.
@@ -37,14 +40,12 @@ int CreatePointerToType(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pTypeField`
+## <a name="parameters"></a>Параметры
+`pTypeField`\
+[in] Тип, чтобы они указывали. Он представлен [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс.
 
- [in] Тип, чтобы они указывали. Он представлен [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс.
-
- `pPtrToTypeField`
-
- [out] Возвращает указателя, представленного новый **IDebugField** объекта.
+`pPtrToTypeField`\
+[out] Возвращает указателя, представленного новый **IDebugField** объекта.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricString
 - GetMetricString
 ms.assetid: ecc875a2-8ac6-444c-a839-5191a780fd6b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c92709afbc5341a7507c89dc948daeae1f798b4e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 119fa1ac0f90cd6ebef22633130a3683c039a204
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705811"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321973"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 Извлекает строковое значение метрики, заданную ее именем.
@@ -41,22 +44,18 @@ private int GetMetricString(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszType`
+## <a name="parameters"></a>Параметры
+`pszType`\
+[in] Тип метрики.
 
- [in] Тип метрики.
+`guidSection`\
+[in] Уникальный идентификатор раздела.
 
- `guidSection`
+`pszMetric`\
+[in] Имя метрики.
 
- [in] Уникальный идентификатор раздела.
-
- `pszMetric`
-
- [in] Имя метрики.
-
- `pbstrValue`
-
- [out] Возвращает строковое значение метрики.
+`pbstrValue`\
+[out] Возвращает строковое значение метрики.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

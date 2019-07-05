@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059257"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686441"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Настройка анализа покрытия кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "60059257"
 ```  
   
 > [!WARNING]
->  Разрешение символов может занять время, особенно при использовании удаленного расположения файлов со множеством сборок. Поэтому рекомендуется скопировать удаленные PDB-файлы в то же локальное расположение, в котором находятся двоичные файлы (DLL и EXE).  
+> Разрешение символов может занять время, особенно при использовании удаленного расположения файлов со множеством сборок. Поэтому рекомендуется скопировать удаленные PDB-файлы в то же локальное расположение, в котором находятся двоичные файлы (DLL и EXE).  
   
 ### <a name="excluding-and-including"></a>Исключение и включение  
  Можно исключить указанные сборки из анализа покрытия кода. Пример:  
@@ -101,7 +101,7 @@ ms.locfileid: "60059257"
 ### <a name="regular-expressions"></a>Регулярные выражения  
  Узлы включения и исключения используют регулярные выражения. Дополнительные сведения см. в разделе [Using Regular Expressions in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md) (Использование регулярных выражений в Visual Studio). Регулярные выражения не равнозначны подстановочным знакам. В частности:  
   
-1. **\.\\*** соответствует строке любых символов  
+1. **\.\\** * соответствует строке любых символов  
   
 2. **\\.** соответствует точке (".")  
   
@@ -134,7 +134,7 @@ ms.locfileid: "60059257"
 ```  
   
 > [!WARNING]
->  Если в регулярном выражении есть ошибка, например круглые скобки без escape-последовательности или непарные круглые скобки, то анализ покрытия кода не выполняется.  
+> Если в регулярном выражении есть ошибка, например круглые скобки без escape-последовательности или непарные круглые скобки, то анализ покрытия кода не выполняется.  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Другие способы включения или исключения элементов  
  См. [пример в конце этого раздела](#sample).  
@@ -181,7 +181,7 @@ ms.locfileid: "60059257"
  В меню **Тест** выберите **Параметры тестирования**, щелкните **Выбрать файл параметров теста** и выберите RUNSETTINGS-файл. В меню "Параметры тестирования" отобразится файл, который можно выбрать или отменить. Если RUNSETTINGS-файл выбран, он применяется при каждом выполнении команды **Анализ покрытия кода**.  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Настройка параметров запуска в тесте командной строки  
- Для выполнения тестов из командной строки используйте vstest.console.exe. Файл параметров является параметром этой служебной программы. Дополнительные сведения см. в статье [Использование VSTest.console из командной строки](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
+ Для выполнения тестов из командной строки используйте vstest.console.exe. Файл параметров является параметром этой служебной программы. Дополнительные сведения см. в статье [Использование VSTest.console из командной строки](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
 1. Запустите командную строку разработчика Visual Studio.  
   
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - IVsLanguageInfo interface
 - language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5c907885e91cc3b7765ff94528a30a84b17ee46
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3a626111fc1f2eb8790cdfe2a146f63eba7fbab3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631410"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333495"
 ---
 # <a name="legacy-language-service-interfaces"></a>Интерфейсы языковой службы прежних версий
 Для любого конкретного языка программирования и одновременно может быть только один экземпляр службы языка. Тем не менее одной языковой службы может обслуживать несколько редакторов.
@@ -52,4 +52,4 @@ ms.locfileid: "56631410"
 
 ## <a name="see-also"></a>См. также
 - [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)
-- [Контрольный список: Создание языковой службы прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [Контрольный список. создание языковой службы прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

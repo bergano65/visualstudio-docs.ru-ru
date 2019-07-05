@@ -1,5 +1,5 @@
 ---
-title: 'Конструктор рабочих процессов - как: выполнить отладку XAML в конструкторе рабочих процессов'
+title: 'Конструктор рабочих процессов: Отладка XAML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cdbf5fa21c8fcf9069db9a7348d4ed576fc342c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0d22668089581dcf44609756a4e7f8f4527dd751
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065887"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431817"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Практическое руководство. выполнить отладку XAML в конструкторе рабочих процессов
 

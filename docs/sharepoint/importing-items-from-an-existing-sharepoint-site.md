@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58f4dd6df35b9101ed3cd2a45943efc8078229f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444363"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Импорт элементов из существующего сайта SharePoint
   Шаблон проекта "Импорт пакета решения SharePoint" позволяет многократно использовать элементы, такие как типы контента и поля, из существующих сайтов SharePoint в новом решении SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Хотя большинство импортированных решений можно запускать без изменений, существуют некоторые ограничения и вопросы, которые необходимо учитывать, особенно если вы изменяете какие-либо элементы после их импорта.
 
 > [!NOTE]
->  Для импорта многократно используемых рабочих процессов используйте шаблон проекта "Импорт рабочего процесса с возможностью повторного использования". [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Руководства по импорту многократно используемых рабочих процессов](../sharepoint/guidelines-for-importing-reusable-workflows.md).
+> Для импорта многократно используемых рабочих процессов используйте шаблон проекта "Импорт рабочего процесса с возможностью повторного использования". [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Руководства по импорту многократно используемых рабочих процессов](../sharepoint/guidelines-for-importing-reusable-workflows.md).
 
 ## <a name="supported-sharepoint-solutions"></a>Поддерживаемые решения SharePoint
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] полностью поддерживает импорт решений, созданных в [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] и [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].

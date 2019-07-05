@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a21c8d547cb2167da018c13e788fe2c95bd504ac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039737"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338030"
 ---
 # <a name="troubleshooting-vspackages"></a>Устранение неполадок, связанных с пакетами VSPackage
 Ниже приведены распространенные проблемы, которые могут возникнуть с VSPackage и советы для решения проблем.
@@ -46,11 +46,11 @@ ms.locfileid: "60039737"
 4. Откройте **вывода** окно экземпляра [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , не смог загрузить VSPackage. В этом окне могут отображаться сведения о причину сбоя загрузки VSPackage.
 
    > [!NOTE]
-   >  При запуске экспериментальной версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), проверьте **вывода** окно обеих версий.
+   > При запуске экспериментальной версии [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] из [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] интегрированной среды разработки (IDE), проверьте **вывода** окно обеих версий.
 
 5. В журнале действий.
 
-    Дополнительные сведения см. в разделе [Как Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).
+    Дополнительные сведения см. в разделе [Практическое руководство. Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).
 
 6. Дополнительные сведения об исключениях, создаваемых интегрированной среды разработки **исключения** на **Отладка** меню, чтобы включить исключения. В **исключения** диалоговом выберите типы исключений, о которых нужно получить дополнительные сведения.
 
@@ -66,7 +66,7 @@ ms.locfileid: "60039737"
 
    1. Найти идентификатор CLSID объекта VSPackage в пакеты разделе реестра:
 
-        HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages
+        HKLM\Software\Microsoft\Visual Studio\\ *\<version>* \Packages
 
    2. Проверьте правильность пути, задаваемый подраздел SatelliteDll.
 
@@ -85,11 +85,11 @@ ms.locfileid: "60039737"
     4. На **Отладка** меню, щелкните **начать отладку** или нажмите клавишу F5.
 
         > [!NOTE]
-        >  При отладке проекта, создать или загрузить существующий экземпляр проекта сейчас.
+        > При отладке проекта, создать или загрузить существующий экземпляр проекта сейчас.
 
 2. Использование журнала действий.
 
-     Трассировки поведение VSPackage, записывая данные в журнал действий в ключевых точках. Этот метод особенно полезен, при запуске пакета VSPackage в сфере розничной торговли. Дополнительные сведения см. в разделе [Как Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).
+     Трассировки поведение VSPackage, записывая данные в журнал действий в ключевых точках. Этот метод особенно полезен, при запуске пакета VSPackage в сфере розничной торговли. Дополнительные сведения см. в разделе [Практическое руководство. Использование журнала действий](../extensibility/how-to-use-the-activity-log.md).
 
 3. Используйте открытые символы.
 
@@ -119,7 +119,7 @@ ms.locfileid: "60039737"
 
 2. Для неуправляемого кода, найдите идентификатор CLSID объекта VSPackage в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] системного реестра CLSID:
 
-    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<version>* \CLSID
 
    Убедитесь, что операция InprocServer32 имеет правильный путь к библиотеке dll VSPackage.
 

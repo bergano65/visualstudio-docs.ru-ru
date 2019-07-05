@@ -11,12 +11,12 @@ ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00023c7b8e624d5b97726720f0f7642a38c5a4f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 67ebbde52facf50eff534322d85a926968acdf0d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048779"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705949"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Пример проекта для создания модульных тестов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "60048779"
   
 - [Пошаговое руководство: Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Пошаговое руководство по созданию и настройке модульных тестов, их выполнению и изучению результатов.  
   
-- [Пошаговое руководство: Выполнение тестов и Просмотр покрытия кода](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). В этом пошаговом руководстве описан порядок просмотра данных о покрытии кода, отражающих тестируемую часть кода проекта.  
+- [Пошаговое руководство: Выполнение тестов и Просмотр покрытия кода](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). В этом пошаговом руководстве описан порядок просмотра данных о покрытии кода, отражающих тестируемую часть кода проекта.  
   
-- [Walkthrough: using the command-line test utility](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867) (Пошаговое руководство. Использование служебной программы для тестирования командной строки). В этом пошаговом руководстве с помощью программы командной строки MSTest.exe выполняются тесты и просматриваются результаты.  
+- [Walkthrough: using the command-line test utility](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867) (Пошаговое руководство. Использование служебной программы для тестирования командной строки). В этом пошаговом руководстве с помощью программы командной строки MSTest.exe выполняются тесты и просматриваются результаты.  
   
 ## <a name="sample-code"></a>Пример кода  
  Единственная умышленно допущенная в этом примере ошибка заключается в том, что у метода Debit в m_balance += amount вместо знака плюс перед знаком равно должен стоять минус.  
@@ -133,5 +133,5 @@ namespace BankAccountNS
   
 ## <a name="see-also"></a>См. также  
  [Пошаговое руководство: Создание и запуск модульных тестов для управляемого кода](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
- [Пошаговое руководство: Выполнение тестов и Просмотр покрытия кода](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
- [Пошаговое руководство. Использование служебной программы для тестирования с интерфейсом командной строки](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)
+ [Пошаговое руководство: Выполнение тестов и Просмотр покрытия кода](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
+ [Пошаговое руководство. Использование служебной программы для тестирования с интерфейсом командной строки](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)

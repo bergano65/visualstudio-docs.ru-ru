@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::Enable method
 - Enable method
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d6498ffbad5fef4d387139b41cefc3d54468245
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f05424cfb9e3188c3b4306ad961de24f6757e807
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720826"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311682"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Переключает состояние выполнения ожидающая точка останова.
@@ -37,10 +40,9 @@ int Enable(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`fEnable`
-
- [in] Задайте ненулевое значение (`TRUE`) чтобы включить точку останова или до нуля (`FALSE`) для отключения.
+## <a name="parameters"></a>Параметры
+`fEnable`\
+[in] Задайте ненулевое значение (`TRUE`) чтобы включить точку останова или до нуля (`FALSE`) для отключения.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращает `E_BP_DELETED` Если точка останова была удалена.

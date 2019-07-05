@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f7ffc67bd1175a84bf5708c613661a169c093dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994524"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697026"
 ---
 # <a name="debugger-user-interface-xslt"></a>Пользовательский интерфейс отладчика (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "58994524"
 |`position()`|Положение или индексное число узла контекста относительно размера контекста.|  
 |`self::node()`|Значение узла контекста.|  
   
- Дополнительные сведения см. в разделе [Как Изменение контекста отладчика](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
+ Дополнительные сведения см. в разделе [Практическое руководство. Изменение контекста отладчика](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
   
 ## <a name="output-window"></a>Окно выходных данных  
  Окно «Вывод» показывает все сообщения об ошибках или исключения безопасности, происходящие во время отладки.  
@@ -56,7 +56,7 @@ ms.locfileid: "58994524"
  Список задач включает все ошибки, которые происходят в блоках скрипта в файле XSLT.  
   
 > [!NOTE]
->  Отладчик XSLT не выдает предупреждений, поэтому они никогда не появляются в списке задач.  
+> Отладчик XSLT не выдает предупреждений, поэтому они никогда не появляются в списке задач.  
   
 ## <a name="breakpoints-window"></a>Окно точек останова  
  Окно точек останова показывает все точки останова, заданные в текущем проекте. Если точка останова добавляется, пока окно просматривается, окно автоматически обновляется, чтобы отображать новую точку останова.  
@@ -91,7 +91,7 @@ ms.locfileid: "58994524"
   
 - Определяемые пользователем функции не допускаются.  
   
-  Дополнительные сведения см. в разделе [Как Оценка выражения XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Дополнительные сведения см. в разделе [Практическое руководство. Оценка выражения XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>Окно дизассемблирования  
  Окно дизассемблирования показывает код сборки, формируемый XSLT-компилятором. Это окно можно использовать так же, как и все остальные окна дизассемблирования среды Visual Studio.  
@@ -101,4 +101,4 @@ ms.locfileid: "58994524"
 ## <a name="see-also"></a>См. также  
  [Отладка XSLT](../xml-tools/debugging-xslt.md)   
  [Основы отладки](../debugger/debugger-basics.md)   
- [Окна переменных](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [Окна переменных](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetInfo
 ms.assetid: 19c6870b-b94e-453c-bf19-82ce95b79d26
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0aeb888b2cc81dac6157ef0944703227799e61e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ad560386991a0545510e1b74a140d17cc35fcbe3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868758"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352115"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 Возвращает описание кадра стека.
@@ -40,18 +43,15 @@ int GetInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `dwFieldSpec`
+## <a name="parameters"></a>Параметры
+`dwFieldSpec`\
+[in] Сочетание флагов из [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) перечисления, указывающее, какие поля `pFrameInfo` параметра должны быть заполнены.
 
- [in] Сочетание флагов из [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) перечисления, указывающее, какие поля `pFrameInfo` параметра должны быть заполнены.
+`nRadix`\
+[in] Основание системы счисления для использования в любой числовой сведения о форматировании.
 
- `nRadix`
-
- [in] Основание системы счисления для использования в любой числовой сведения о форматировании.
-
- `pFrameInfo`
-
- [out] Объект [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структуры, который заполняется описание кадра стека.
+`pFrameInfo`\
+[out] Объект [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структуры, который заполняется описание кадра стека.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

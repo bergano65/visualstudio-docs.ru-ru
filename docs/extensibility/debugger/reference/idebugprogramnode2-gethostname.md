@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetHostName
 ms.assetid: 16aad1ff-ad34-4394-a2e4-5621374a7729
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19bb7f56077abd276936fe8342e74ecda6f5770a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 61e38cbb41cc6503ee39072c99ffcbee9f08a4a3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707384"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351135"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 Получает имя процесса, размещающего программы.
@@ -38,14 +41,12 @@ int GetHostName (
 );
 ```
 
-#### <a name="parameters"></a>Параметры
-`dwHostNameType`
+## <a name="parameters"></a>Параметры
+`dwHostNameType`\
+[in] Значение из [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) перечисление, указывающее тип имени для возврата.
 
- [in] Значение из [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) перечисление, указывающее тип имени для возврата.
-
-`pbstrHostName`
-
- [out] Возвращает имя размещающего процесса.
+`pbstrHostName`\
+[out] Возвращает имя размещающего процесса.
 
 ## <a name="return-value"></a>Возвращаемое значение
 В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5e772d5dddcdde2306212e8a8fc48b9e39ae47a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443179"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696401"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Классы Visual C++ в конструкторе классов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > Команда **Показать производные классы** в коде C++ не поддерживается. Чтобы просмотреть производные классы, перейдите в представление классов, разверните узел типа, затем разверните вложенную папку **Производные типы** и перетащите нужные типы на схему классов.  
   
- Дополнительные сведения о множественном наследовании классов см. в разделах [Множественное наследование (NOTINBUILD)](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) и [Несколько базовых классов](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
+ Дополнительные сведения о множественном наследовании классов см. в разделах [Множественное наследование (NOTINBUILD)](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) и [Несколько базовых классов](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
 ## <a name="abstract-classes"></a>Абстрактные классы  
  Конструктор классов поддерживает абстрактные классы (также называются "абстрактными базовыми классами"). Для этих классов не создаются экземпляры, но от них могут наследоваться другие классы. Используя пример из раздела "Множественное наследование" этого документа, вы можете создавать экземпляры класса `Bird` в виде отдельных объектов, как показано ниже:  
@@ -121,7 +121,7 @@ typedef struct
   
  Структуры также могут быть анонимными. Конструктор классов отображает анонимные классы и структуры таким же образом, как и соответствующие типы. Несмотря на то что можно объявить и отобразить анонимные классы и структуры, конструктор классов не будет использовать указанное имя тега. В этом случае будет использоваться имя, созданное в представлении классов. Класс или структура отображается в представлении и дизайнере классов в виде элемента с именем **__unnamed**.  
   
- Дополнительные сведения об анонимных классах см. в разделе [Типы анонимных классов](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
+ Дополнительные сведения об анонимных классах см. в разделе [Типы анонимных классов](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
   
 ## <a name="template-classes"></a>Классы шаблона  
  Конструктор классов поддерживает визуализацию классов шаблона. Поддерживаются вложенные объявления. В следующей таблице показаны некоторые типичные объявления.  
@@ -171,8 +171,8 @@ typedef struct
   
 ## <a name="see-also"></a>См. также раздел  
  [Working with Visual C++ Code (Class Designer)](../ide/working-with-visual-cpp-code-class-designer.md)  (Работа с кодом Visual C++ (конструктор классов))  
- [Классы и структуры](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [Типы анонимных классов](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [Множественное наследование (NOTINBUILD)](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [Несколько базовых классов](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
- [Шаблоны](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+ [Классы и структуры](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [Типы анонимных классов](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
+ [Множественное наследование (NOTINBUILD)](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [Несколько базовых классов](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
+ [Шаблоны](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6e4ec765d61da4d727fc9b500602c0619569ff67
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992329"
 ---
 # <a name="iactivescriptsiteinterruptpoll-interface"></a>Интерфейс IActiveScriptSiteInterruptPoll
 `IActiveScriptSiteInterruptPoll` Интерфейс позволяет ведущему приложению указать, что следует прервать сценарий.  
@@ -30,6 +30,6 @@ ms.locfileid: "58146010"
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IActiveScriptSiteInterruptPoll` интерфейс предоставляет следующий метод.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IActiveScriptSiteInterruptPoll::QueryContinue](../../winscript/reference/iactivescriptsiteinterruptpoll-querycontinue.md)|Позволяет ведущему приложению указать, что следует прервать сценарий.|

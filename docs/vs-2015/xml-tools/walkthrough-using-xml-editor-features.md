@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27e9d1ce86064c23e3a293382ff7f83389d693f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55e7cdc06b1876fe40310f5af44152a70e4a4375
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438880"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>Пошаговое руководство. Использование возможностей редактора XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60109065"
 В этом пошаговом руководстве подробно описан процесс создания нового XML-документа. В нем также используются некоторые функции XML Editor, благодаря которым это приложение становится очень полезным при создании XML-документов.  
   
 > [!NOTE]
->  Прежде чем начать работу с пошаговым руководством, сохраните файл hireDate.xsd (содержится ниже в данном разделе) на локальном компьютере.  
+> Прежде чем начать работу с пошаговым руководством, сохраните файл hireDate.xsd (содержится ниже в данном разделе) на локальном компьютере.  
   
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Создание нового XML-файла и связывание его со схемой XML  
   

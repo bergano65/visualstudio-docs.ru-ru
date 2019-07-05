@@ -30,12 +30,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994215"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682426"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Обнаружение утечек памяти с помощью библиотеки CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "58994215"
   
  Для правильной работы функций CRT операторы `#include` должны следовать в приведенном здесь порядке.  
   
- Включение заголовочного файла crtdbg.h сопоставляет функции `malloc` и [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) с их отладочными версиями, [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) и `free`, которые отслеживают выделение и освобождение памяти. Это сопоставление используется только в отладочных построениях, в которых определен `_DEBUG`. В окончательных построениях используются первоначальные функции `malloc` и `free` .  
+ Включение заголовочного файла crtdbg.h сопоставляет функции `malloc` и [free](https://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) с их отладочными версиями, [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) и `free`, которые отслеживают выделение и освобождение памяти. Это сопоставление используется только в отладочных построениях, в которых определен `_DEBUG`. В окончательных построениях используются первоначальные функции `malloc` и `free` .  
   
  Оператор `#define` сопоставляет базовые версии функций кучи CRT соответствующим отладочным версиям. Если оператор `#define` не используется, дамп утечки памяти будет менее подробным.  
   
@@ -67,7 +67,7 @@ ms.locfileid: "58994215"
 _CrtDumpMemoryLeaks();  
 ```  
   
- Если у приложения несколько точек выхода, не требуется вручную размещать вызовы функции [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) в каждой точке выхода. Вызов функции `_CrtSetDbgFlag` в начале приложения приведет к автоматическому вызову функции `_CrtDumpMemoryLeaks` в каждой точке выхода. Необходимо установить два показанных здесь битовых поля:  
+ Если у приложения несколько точек выхода, не требуется вручную размещать вызовы функции [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) в каждой точке выхода. Вызов функции `_CrtSetDbgFlag` в начале приложения приведет к автоматическому вызову функции `_CrtDumpMemoryLeaks` в каждой точке выхода. Необходимо установить два показанных здесь битовых поля:  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -82,7 +82,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Интерпретация отчета об утечке памяти  
- Если приложение не определяет `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) отображает отчет об утечке памяти, выглядящий следующим образом:  
+ Если приложение не определяет `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) отображает отчет об утечке памяти, выглядящий следующим образом:  
   
 ```  
 Detected memory leaks!  
@@ -109,7 +109,7 @@ Object dump complete.
   
 - Номер выделения памяти, в этом примере — `18` .  
   
-- [Тип блока](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), в этом примере — `normal` .  
+- [Тип блока](https://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), в этом примере — `normal` .  
   
 - Расположение памяти в шестнадцатеричном формате, в этом примере — `0x00780E80` .  
   

@@ -18,19 +18,19 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df037f4ee9bb6a89b6d74ffd454abc5bdb13dd8e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a54558c2aa760ea9bb318b527a49d01efcfbef04
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065341"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694079"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Создание пользовательского элемента управления Windows Forms с подстановочной привязкой данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При отображении данных на формах Windows Forms вы можете выбрать имеющиеся элементы управления в **области элементов** или создать пользовательские элементы управления, если вашему приложению требуется функциональность, отсутствующая в стандартных элементах управления. В этом пошаговом руководстве демонстрируется создание элемента управления, реализующего <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Элементы управления, реализующие <xref:System.ComponentModel.LookupBindingPropertiesAttribute>, могут содержать три свойства, которые можно привязать к данным. Такие элементы управления похожи на <xref:System.Windows.Forms.ComboBox>.  
   
- Дополнительные сведения о создании элементов управления, см. в разделе [Разработка Windows Forms элементов управления во время разработки](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
+ Дополнительные сведения о создании элементов управления, см. в разделе [Разработка Windows Forms элементов управления во время разработки](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829).  
   
  При создании элементов управления для использования в сценариях привязки к данным необходимо реализовать один из следующих атрибутов привязки к данным:  
   

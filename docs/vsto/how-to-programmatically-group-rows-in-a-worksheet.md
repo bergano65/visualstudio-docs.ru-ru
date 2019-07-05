@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2498029b5570a1576f62bcf042a7b87f856f3de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 269ecdb67fe58a5ad2aff6af63ba6ea45647811a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412622"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Практическое руководство. Программная группировка строк на листах
   Вы можете сгруппировать один или несколько целых строк. Чтобы создать группу на листе, используйте <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.
@@ -43,7 +43,7 @@ ms.locfileid: "60076658"
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
 
     > [!NOTE]
-    >  Разгруппирование строк, вызвать <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> метод.
+    > Разгруппирование строк, вызвать <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> метод.
 
 ## <a name="use-native-excel-ranges"></a>Использование собственного диапазонах Excel
  В коде предполагается, что у вас есть три диапазона Excel с именем `data2001`, `data2002`, и `dataAll` на рабочем листе.
@@ -56,7 +56,7 @@ ms.locfileid: "60076658"
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]
 
     > [!NOTE]
-    >  Разгруппирование строк, вызвать <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> метод.
+    > Разгруппирование строк, вызвать <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> метод.
 
 ## <a name="see-also"></a>См. также
 - [Работа с листами](../vsto/working-with-worksheets.md)

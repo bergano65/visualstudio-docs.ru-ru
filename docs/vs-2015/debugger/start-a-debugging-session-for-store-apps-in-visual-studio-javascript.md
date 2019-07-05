@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c5fb2db92c70144e38aa3ca2110b8b3d5c354e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4b4e861c8985ee37a8c2d9b7f9286d6284bb4f91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105124"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685025"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Запуск сеанса отладки для приложений Магазина в Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60105124"
  В этом разделе описывается запуск сеанса отладки приложений Магазина Windows, написанных на JavaScript и HTML5. Вы можете начать отладку одним нажатием или настроить сеанс отладки под конкретные сценарии, а затем выбрать способ запуска приложения.
 
 > [!NOTE]
->  Для приложений, написанных на XAML и Visual C#, Visual C++ или Visual Basic, см. в разделе [начать сеанс отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Для приложений, написанных на XAML и Visual C#, Visual C++ или Visual Basic, см. в разделе [начать сеанс отладки (VB, C#, C++ и XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ## <a name="BKMK_In_this_topic"></a> Содержание раздела
  [Содержание раздела](#BKMK_In_this_topic)
@@ -117,7 +117,7 @@ ms.locfileid: "60105124"
    ![Выберите подключение к удаленному отладчику](../debugger/media/vsrun-pro-selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  В диалоговом окне "Выбрать подключение к удаленному отладчику" отображаются компьютеры в локальной подсети и компьютеры, непосредственно подключенные к компьютеру Visual Studio с помощью кабеля Ethernet. Чтобы указать другой компьютер, введите имя в поле **Имя компьютера** .
+  > В диалоговом окне "Выбрать подключение к удаленному отладчику" отображаются компьютеры в локальной подсети и компьютеры, непосредственно подключенные к компьютеру Visual Studio с помощью кабеля Ethernet. Чтобы указать другой компьютер, введите имя в поле **Имя компьютера** .
 
   ![Применяется только к Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -178,7 +178,7 @@ ms.locfileid: "60105124"
  Чтобы настроить установленное приложение для выполнения в режиме отладки, выполните следующие действия.
 
 > [!NOTE]
->  В начале выполнения этой процедуры приложение не должно выполняться.
+> В начале выполнения этой процедуры приложение не должно выполняться.
 
 1. В меню **Отладка** выберите команду **Отладка Installed App Package**.
 
@@ -213,7 +213,7 @@ ms.locfileid: "60105124"
 
 ### <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Настройте приложение для запуска в режиме отладки.
 
-1. Установите инструменты удаленной отладки Visual Studio на устройстве, на котором установлено приложение. См. в разделе [установки средств удаленного](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
+1. Установите инструменты удаленной отладки Visual Studio на устройстве, на котором установлено приложение. См. в разделе [установки средств удаленного](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
 
 2. В меню "Пуск" найдите и запустите `Debuggable Package Manager`.
 
@@ -226,9 +226,9 @@ ms.locfileid: "60105124"
 ### <a name="BKMK_Attach_the_debugger"></a> Подключение отладчика
 
 > [!TIP]
->  Приложения JavaScript выполняются в экземпляре процесса wwahost.exe. Если при вложении в приложение выполняются другие приложения JavaScript, вам потребуется знать числовой идентификатор процесса того wwahost.exe, где выполняется приложение.
+> Приложения JavaScript выполняются в экземпляре процесса wwahost.exe. Если при вложении в приложение выполняются другие приложения JavaScript, вам потребуется знать числовой идентификатор процесса того wwahost.exe, где выполняется приложение.
 >
->  Самый простой способ решения данной проблемы заключается в закрытии всех других приложений JavaScript. В противном случае вы можете открыть диспетчер задач Windows перед запуском приложения и записать идентификаторы процессов wwahost.exe. При указании процесса для вложения в **доступные процессы** диалоговом окне wwahost.exe приложения будет иметь идентификатор, отличаются от записанных вами.
+> Самый простой способ решения данной проблемы заключается в закрытии всех других приложений JavaScript. В противном случае вы можете открыть диспетчер задач Windows перед запуском приложения и записать идентификаторы процессов wwahost.exe. При указании процесса для вложения в **доступные процессы** диалоговом окне wwahost.exe приложения будет иметь идентификатор, отличаются от записанных вами.
 
  Чтобы подключить отладчик, выполните следующие действия.
 

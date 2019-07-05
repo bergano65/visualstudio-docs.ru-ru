@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 438658af3f182ea732d0fefef0f5a5d6ecbefa03
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961596"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Практическое руководство. Удаление расширений управляемого кода из документов
   Можно программно удалить сборку настройки из документа или книги, которая является частью настройки уровня документа для Microsoft Office Word или Microsoft Office Excel. Затем пользователи могут открывать документы и просматривать содержимое, но любой собственный пользовательский интерфейс (UI), добавляемые в документы не будут отображаться и код не будет выполняться.

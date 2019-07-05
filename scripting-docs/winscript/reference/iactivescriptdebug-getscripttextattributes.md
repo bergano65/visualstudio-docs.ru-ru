@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: faec7cf65bed39a038c5ab7cc09d9908063a2c63
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009549"
 ---
 # <a name="iactivescriptdebuggetscripttextattributes"></a>IActiveScriptDebug::GetScriptTextAttributes
 Возвращает атрибуты текста для произвольный блок текста сценария.  
@@ -52,7 +52,7 @@ HRESULT GetScriptTextAttributes(
  `dwFlags`  
  [in] Флаги, связанные с блоком скрипта. Может представлять собой сочетание этих значений:  
   
-|Константа|Значение|Описание:|  
+|Константа|Значение|Описание|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Указывает, что идентификаторы и точка операторы должны идентифицироваться с флагами SOURCETEXT_ATTR_IDENTIFIER и SOURCETEXT_ATTR_MEMBERLOOKUP, соответственно.|  
 |GETATTRFLAG_THIS|0x0100|Указывает, что идентификатор для текущего объекта должна определяться с флагом SOURCETEXT_ATTR_THIS.|  
@@ -64,7 +64,7 @@ HRESULT GetScriptTextAttributes(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

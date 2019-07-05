@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control plug-ins, getting items from source control
 - source control [Visual Studio SDK], getting items from
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 31f5f9b9657b0577d6b8e36166049fe46ac2a907
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067187"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331036"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Область тестирования 2. Получение элементов из системы управления версиями
 Эта область тестирования охватывает тестовых случаев для извлечения элементов из хранилища версий с помощью команды Get. Эти тестовые случаи могут применяться к локальным и веб-проектов.

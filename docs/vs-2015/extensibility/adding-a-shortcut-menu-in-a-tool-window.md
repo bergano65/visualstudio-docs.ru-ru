@@ -13,12 +13,12 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 604e5792c17e1458faccfd6518ab8cd5e7e303f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 60ac63be54c235187e66a85c541f925e1e34cafd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093739"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689862"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Добавление контекстного меню в окно инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60093739"
   
  В этом пошаговом руководстве показано, как создать контекстное меню, как меню Visual Studio, путем объявления элементов меню в vsct-файле и затем с помощью Managed Package Framework для их реализации в классе, который определяет окно инструментов. Этот подход облегчает доступ к Visual Studio команды, элементы пользовательского интерфейса и объектной модели автоматизации.  
   
- Кроме того, если контекстное меню не затронет функциональность Visual Studio, можно использовать <xref:System.Windows.FrameworkElement.ContextMenu%2A> свойства элемента XAML для пользовательского элемента управления. Дополнительные сведения см. в разделе [ContextMenu](http://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
+ Кроме того, если контекстное меню не затронет функциональность Visual Studio, можно использовать <xref:System.Windows.FrameworkElement.ContextMenu%2A> свойства элемента XAML для пользовательского элемента управления. Дополнительные сведения см. в разделе [ContextMenu](https://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

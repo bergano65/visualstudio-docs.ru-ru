@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 085e5ae408155227c1d60e312b7e9623be2e3897
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 50565363f2fc88e40816bdfc4773e436e960ee06
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064457"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312885"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Пошаговое руководство. Добавление компонентов в специализированный редактор
 После создания настраиваемого редактора, можно добавить дополнительные функции к нему.
@@ -49,7 +49,7 @@ ms.locfileid: "60064457"
     2. Чтобы реагировать на изменения внешнего файла, реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> на объект данных документа в редакторе.
 
         > [!NOTE]
-        >  Вызовите `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> для получения указателя на `IVsFileChangeEx`.
+        > Вызовите `QueryService` на <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> для получения указателя на `IVsFileChangeEx`.
 
 7. Координируйте события редактирования документов с контролем исходного кода. Выполните следующие действия.
 
@@ -115,7 +115,7 @@ ms.locfileid: "60064457"
 
 12. Реализация поддержки контекстной справки.
 
-     Этот шаг позволяет обеспечить поддержку справки F1 и динамической справки окна, для элементов в редакторе. Дополнительные сведения см. в разделе [Как Предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md).
+     Этот шаг позволяет обеспечить поддержку справки F1 и динамической справки окна, для элементов в редакторе. Дополнительные сведения см. в разделе [Практическое руководство. Предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md).
 
 13. Предоставляют объектную модель автоматизации из редактора, реализовав `IDispatch` интерфейс.
 
@@ -136,7 +136,7 @@ ms.locfileid: "60064457"
    <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>
 
   > [!NOTE]
-  >  `IOleInPlaceComponent` Интерфейс используется для предотвращения слияние меню OLE 2.
+  > `IOleInPlaceComponent` Интерфейс используется для предотвращения слияние меню OLE 2.
 
    Ваш `IOleCommandTarget` реализация обрабатывает команды, такие как **Вырезать**, **копирования**, и **вставить**. При реализации `IOleCommandTarget`, решить, является ли ваш редактор должен иметь собственную *.vsct* файл, чтобы определить свой собственный структура команды меню или если он может реализовывать стандартных команд, определенных в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Как правило редакторы использовать и расширять меню IDE и определить свои собственные панели инструментов. Тем не менее часто бывает редактора для определения собственных конкретных команд, помимо использования набора стандартных команд интегрированной среды разработки. Редактора необходимо объявить стандартные команды, он использует и затем определить новые команды, контекстные меню, меню верхнего уровня и панелей инструментов в *.vsct* файла. При создании активации на месте редактора, реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> и определить для редактора в меню и панелей инструментов *.vsct* файл, а не с помощью OLE 2 слияние меню.
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_RETVAL structure
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2ff96d5ca9d292d9e2952b9a2e5e1f628b54d43b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707813"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746348"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Эта структура представляет значение, возвращаемое из метода или функции.
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>Термины
- Идентификатор метода tokMethod касается это возвращаемое значение.
+## <a name="members"></a>Участники
+ `tokMethod`\
+ Идентификатор метода это возвращаемое значение соответствует.
 
- dwCorType базовый тип возвращаемого значения. Это значение из `CorElementType` перечисление, определенное в [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] файле corhdr.h пакета SDK.
+ `dwCorType`\
+ Базовый тип возвращаемого значения. Это значение из `CorElementType` перечисление, определенное в файле corhdr.h пакета SDK для .NET Framework.
 
- dwSigSize размер подписи возвращаемое значение (в `rgSig`).
+ `dwSigSize`\
+ Размер подписи возвращаемое значение (в `rgSig`).
 
- rgSig массив байтов, формирующие подпись возвращаемого значения.
+ `rgSig`\
+ Массив байтов, формирующие подпись возвращаемого значения.
 
 ## <a name="remarks"></a>Примечания
  Эта структура является частью объединения в [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) структуры, когда `dwKind` поле `DEBUG_ADDRESS_UNION` структура присваивается `ADDRESS_KIND_RETVAL` (значение из [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Перечисление).

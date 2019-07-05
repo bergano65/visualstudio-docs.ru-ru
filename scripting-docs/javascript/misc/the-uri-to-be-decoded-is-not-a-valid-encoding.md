@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8fd8add72d016bc3f2e815f41c29c735505c8817
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006225"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>Декодируемый URI закодирован неправильно
 Предпринята попытка декодировать неправильно сформированное универсальный код (ресурса URI). Коды URI имеют специальный синтаксис; Большинство неалфавитных символов должны быть закодированы, прежде чем они могут использоваться в URI. Можно использовать `encodeURI` и `encodeURIComponent` методы для создания URI из обычной [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] строка.  

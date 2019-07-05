@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2 interface
 ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2427bfbc70c992cfcd41217aec56aa94d825faae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e1b1934a73e096200eba1370320cc0b55eb46ac5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713429"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308892"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
 Этот интерфейс регистрирует или отменяет регистрацию программы, которые можно отлаживать с портом, в котором он выполняется на.
@@ -37,7 +37,7 @@ IDebugPortNotify2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
  В следующей таблице показаны методы `IDebugPortNotify2`.
 
-|Метод|Описание:|
+|Метод|Описание|
 |------------|-----------------|
 |[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Регистрирует порт, на котором он выполняется на программы, которые можно отлаживать.|
 |[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Отменяет регистрацию программы, можно отлаживать из порт, к которому он работает под управлением.|

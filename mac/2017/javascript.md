@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: ed84e5478ae7a15905a5555a318bd656c664710e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82f3426cbba06a27f2d2f74fdd167f003ebb3eae
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997487"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501085"
 ---
 # <a name="javascript-and-typescript-support"></a>Поддержка JavaScript и TypeScript
 
@@ -39,7 +39,7 @@ Visual Studio для Mac использует [JavaScript Language Service](/vis
 IntelliSense для JavaScript в Visual Studio для Mac может опираться на определение типов, JSDoc или объявлений TypeScript.
 
 - **Определение типа** — тип объекта определяется окружающему контексту кода. Дополнительные сведения см. в разделе [IntelliSense на основе определения типа](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference) документации по Visual Studio.
-- **JSDoc** — бывают случаи, когда определение типа не предоставляет правильные сведения о типе. В этих случаях сведения о типе предоставляются явно с помощью заметок [JSDoc](http://usejsdoc.org/about-getting-started.html). Дополнительные сведения см. в разделе [IntelliSense на основе JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc) документации по Visual Studio
+- **JSDoc** — бывают случаи, когда определение типа не предоставляет правильные сведения о типе. В этих случаях сведения о типе предоставляются явно с помощью заметок [JSDoc](https://jsdoc.app/about-getting-started.html). Дополнительные сведения см. в разделе [IntelliSense на основе JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc) документации по Visual Studio
 - **Файл объявлений TypeScript** — файлы `.d.ts`, используемые для предоставления значений для IntelliSense для JavaScript. Типы, объявленные в этом файле, могут использоваться как типы в комментариях JSDoc. Дополнительные сведения см. в разделе [IntelliSense на основе файлов объявления TypeScript](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files) документации по Visual Studio.
 
     ![Добавление файла определения TypeScript](media/javascript-image3.png)

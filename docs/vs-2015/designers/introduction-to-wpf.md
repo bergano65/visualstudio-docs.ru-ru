@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d20b8938f4d841bb42299b7aa9abaf633f72e7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7b4061a5bc253782e7ca28478259efb4027c61f9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074613"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674741"
 ---
 # <a name="introduction-to-wpf"></a>Введение в WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ End Namespace
 ## <a name="Controls"></a> Элементы управления  
  Возможности взаимодействия с пользователем, обеспечиваемые моделью приложения, реализуются с помощью сконструированных элементов управления. В WPF «элемент управления» — это общий термин, который относится к категории классов WPF, размещаемых в окне или на странице, имеющих пользовательский интерфейс и реализующих некоторое поведение.  
   
- Более подробную информацию см. в разделе [Элементы управления](http://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599).  
+ Более подробную информацию см. в разделе [Элементы управления](https://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599).  
   
 ### <a name="wpf-controls-by-function"></a>Функциональная классификация элементов управления WPF  
  Ниже перечислены встроенные элементы управления WPF.  
@@ -208,7 +208,7 @@ End Namespace
   Элемент управления <xref:System.Windows.Controls.DockPanel> позволяет дочерним элементам <xref:System.Windows.Controls.TextBox> сообщать, как они должны быть упорядочены. Для этого в <xref:System.Windows.Controls.DockPanel> реализовано свойство <xref:System.Windows.Controls.DockPanel.Dock%2A> , которое доступно дочерним элементам управления и позволяет каждому из них указывать стиль закрепления.  
   
 > [!NOTE]
->  Свойство, которое реализуется родительским элементом управления для использования дочерними элементами, представляет собой конструкцию WPF, называемую [присоединенным свойством](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
+> Свойство, которое реализуется родительским элементом управления для использования дочерними элементами, представляет собой конструкцию WPF, называемую [присоединенным свойством](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
   
  На рисунке ниже показан результат использования разметки XAML из предыдущего примера.  
   

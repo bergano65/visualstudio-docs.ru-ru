@@ -9,8 +9,9 @@
     - name: Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения"
       href: data-science-and-analytical-applications-workload.md
 - name: Установка
-  href: installing-python-support-in-visual-studio.md
   items:
+    - name: Установка
+      href: installing-python-support-in-visual-studio.md
     - name: Установка интерпретаторов Python
       href: installing-python-interpreters.md
 - name: Краткие руководства
@@ -75,8 +76,9 @@
 - name: Основные понятия
   items:
     - name: Проекты Python
-      href: managing-python-projects-in-visual-studio.md
       items:
+        - name: Проекты Python
+          href: managing-python-projects-in-visual-studio.md
         - name: Шаблоны веб-проектов
           href: python-web-application-project-templates.md
         - name: Шаблон веб-проекта Django
@@ -88,8 +90,9 @@
 - name: Практические руководства
   items:
     - name: Управление средами Python
-      href: managing-python-environments-in-visual-studio.md
       items:
+        - name: Управление средами Python
+          href: managing-python-environments-in-visual-studio.md
         - name: Выбор интерпретатора для проекта
           href: selecting-a-python-environment-for-a-project.md
         - name: Использование файла requirements.txt для зависимостей
@@ -101,8 +104,9 @@
         - name: Настройка веб-приложений для работы с IIS
           href: configure-web-apps-for-iis-windows.md
     - name: "Редактирование кода\_Python"
-      href: editing-python-code-in-visual-studio.md
       items:
+        - name: "Редактирование кода\_Python"
+          href: editing-python-code-in-visual-studio.md
         - name: Код формата
           href: formatting-python-code.md
         - name: Рефакторинг кода
@@ -112,13 +116,15 @@
     - name: Задание пользовательских команд меню
       href: defining-custom-python-project-commands.md
     - name: Интерактивный Python (REPL)
-      href: python-interactive-repl-in-visual-studio.md
       items:
+        - name: Интерактивный Python (REPL)
+          href: python-interactive-repl-in-visual-studio.md
         - name: Использование IPython REPL
           href: interactive-repl-ipython.md
     - name: Отладка
-      href: debugging-python-in-visual-studio.md
       items:
+        - name: Отладка
+          href: debugging-python-in-visual-studio.md
         - name: Отладка кода на удаленных компьютерах с Linux
           href: debugging-python-code-on-remote-linux-machines.md
     - name: Публикация в службу приложений Azure в Linux

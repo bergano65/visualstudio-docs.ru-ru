@@ -11,12 +11,12 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6643c52ff8e5801c562524e99c4e3f03c00f74b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980359"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687487"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Создание проекта: как это работает, часть 2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58980359"
 ## <a name="generating-the-solution-files"></a>Создание файлов решения  
  Выбрав шаблон приложения направляет [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] распаковка и открытие соответствующих VSTEMPLATE-файл и запустить шаблон для интерпретации команд XML в этом файле. Эти команды создают проектов и элементов проектов в новом или существующем решении.  
   
- Шаблон распаковывает источника файлы, называемые шаблоны элементов, из той же папки ZIP-файл, содержащий VSTEMPLATE-файл. Этот шаблон копирует эти файлы в новый проект, настройка их соответствующим образом. Обзор шаблонов проектов и элементов, см. в разделе [NIB: Шаблоны Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Шаблон распаковывает источника файлы, называемые шаблоны элементов, из той же папки ZIP-файл, содержащий VSTEMPLATE-файл. Этот шаблон копирует эти файлы в новый проект, настройка их соответствующим образом. Обзор шаблонов проектов и элементов, см. в разделе [NIB: Шаблоны Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
   
 ### <a name="template-parameter-replacement"></a>Замена параметров шаблона  
  Когда шаблон копирует шаблон элемента в новый проект, он заменяет любые параметры шаблона строк в файле. Параметр шаблона — это специальный маркер, и после идти знак доллара, например, $date$.  
@@ -156,5 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Создание нового проекта. За кулисами часть 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Создание проекта: как это работает, часть 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

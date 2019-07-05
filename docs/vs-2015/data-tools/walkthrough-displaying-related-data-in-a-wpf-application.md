@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 560852fc25a3e00134e4ed8b6bd06205248b208d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065393"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688424"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Пошаговое руководство. Отображение связанных данных в приложении WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "60065393"
   
   Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.  
   
-- Модели EDM и ADO.NET Entity Framework. Дополнительные сведения см. в разделе [Обзор Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Модели EDM и ADO.NET Entity Framework. Дополнительные сведения см. в разделе [Обзор Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- Работа с Конструктором WPF. Дополнительные сведения см. в разделе [WPF и Silverlight Обзор конструктора](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Работа с Конструктором WPF. Дополнительные сведения см. в разделе [WPF и Silverlight Обзор конструктора](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="creating-the-project"></a>Создание проекта  
  Создайте новый проект WPF для отображения записей заказов.  
@@ -167,7 +167,7 @@ ms.locfileid: "60065393"
 1. В **источников данных** окна, найдите **SalesOrderDetails** узел, который является дочерним объектом **SalesOrderHeaders** узла.  
   
    > [!NOTE]
-   >  Имеется также **SalesOrderDetails** узел, который является одноранговым в отношении **SalesOrderHeaders** узла. Убедитесь, что дочерний узел **SalesOrderHeaders** узла.  
+   > Имеется также **SalesOrderDetails** узел, который является одноранговым в отношении **SalesOrderHeaders** узла. Убедитесь, что дочерний узел **SalesOrderHeaders** узла.  
   
 2. Разверните дочерний **SalesOrderDetails** узла.  
   

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40eefc62eef318bcd9c52a1cbbb966377b3616f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62805814"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744756"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Элемент RequiredFrameworkVersion (шаблоны Visual Studio)
 
@@ -86,4 +86,4 @@ ms.locfileid: "62805814"
 
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Использовать конкретную версию платформы .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Framework, предназначенных для обзора](../ide/visual-studio-multi-targeting-overview.md)

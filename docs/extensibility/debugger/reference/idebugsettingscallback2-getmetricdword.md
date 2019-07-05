@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricDword
 ms.assetid: 831a5a1a-c4af-4520-9fdf-3a731aeff85c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85451229b9b34f63150b315521621368c60cb1ac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc685d043b405fbd78a446722e41df4ca584b8e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697667"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322042"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 Извлекает значение метрики, заданную ее именем.
@@ -40,22 +43,18 @@ private int GetMetricDword(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszType`
+## <a name="parameters"></a>Параметры
+`pszType`\
+[in] Тип метрики.
 
- [in] Тип метрики.
+`guidSection`\
+[in] Уникальный идентификатор раздела.
 
- `guidSection`
+`pszMetric`\
+[in] Имя метрики.
 
- [in] Уникальный идентификатор раздела.
-
- `pszMetric`
-
- [in] Имя метрики.
-
- `pdwValue`
-
- [out] Возвращает значение метрики.
+`pdwValue`\
+[out] Возвращает значение метрики.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

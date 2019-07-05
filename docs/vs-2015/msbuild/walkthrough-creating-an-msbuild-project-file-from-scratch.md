@@ -11,19 +11,19 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445612"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682362"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Пошаговое руководство. Создание файла проекта MSBuild с нуля
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Языки программирования, предназначенные для платформы .NET Framework, используют файлы проекта MSBuild для описания и контроля процесса построения приложения. Если для создания файла проекта MSBuild используется Visual Studio, соответствующий XML добавляется в файл автоматически. Тем не менее, понимание принципов организации XML и способов его изменения, позволяющих контролировать построение, может вам пригодиться.  
   
- Сведения о создании файла проекта для проекта C++ см. в разделе [MSBuild (Visual C++)](http://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
+ Сведения о создании файла проекта для проекта C++ см. в разделе [MSBuild (Visual C++)](https://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
   
  Это пошаговое руководство содержит описание способов создания основного файла с использованием только текстового редактора. Руководство включает следующие шаги.  
   
@@ -249,7 +249,7 @@ ms.locfileid: "63445612"
 >   
 > `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
-> лучше, чем   
+> лучше, чем  
 >   
 > `<OutputPath>Bin</OutputPath>`  
 >   

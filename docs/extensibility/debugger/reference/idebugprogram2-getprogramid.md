@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetProgramId
 ms.assetid: 2c31c0aa-2b71-46c7-849c-356e237d26f8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfec12193efda49a520a40418b93f2d4cef6b1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: aba5ac3e17cb86219c065b5ed2372e127ad03dd2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712896"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320771"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
 Возвращает идентификатор GUID для этой программы.
@@ -36,10 +39,9 @@ int GetProgramId( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pguidProgramId`
-
- [out] Возвращает `GUID` для этой программы.
+## <a name="parameters"></a>Параметры
+`pguidProgramId`\
+[out] Возвращает `GUID` для этой программы.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

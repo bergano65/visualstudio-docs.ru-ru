@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 693cf6d746f51862415f2f30e46d48a998047f14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437437"
 ---
 # <a name="attaching-after-a-launch"></a>Присоединение после запуска
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60113122"
 - Если смысл для упрощения взаимодействия между DE и программой, среда выполнения совместно создает DE. Это оставляет SDM в одно адресное пространство и DE, среды выполнения и программы в другой. Это характерно для DE, который реализуется с помощью интерпретатора для запуска сценария языков.  
   
     > [!NOTE]
-    >  Как DE присоединяется к программе зависит от реализации. Обмен данными между DE и программы также зависит от реализации.  
+    > Как DE присоединяется к программе зависит от реализации. Обмен данными между DE и программы также зависит от реализации.  
   
 ## <a name="implementation"></a>Реализация  
  Программным образом, когда диспетчер отладки сеансов (SDM) сначала получает [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу для запуска, он вызывает [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) метод, передав ему [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) объект, который затем используется для передачи событий отладки SDM. `IDebugProgram2::Attach` Затем вызывает метод [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) метод. Дополнительные сведения о том, как получает SDM `IDebugProgram2` интерфейсом, см. в разделе [уведомление порта](../../extensibility/debugger/notifying-the-port.md).  

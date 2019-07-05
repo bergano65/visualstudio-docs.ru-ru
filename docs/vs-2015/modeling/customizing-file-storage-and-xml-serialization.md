@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6211e33f8ef14687df3c70841ef61a2f25d10457
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b41f5f6a3d937f23db1039fdab5e1cf7e36960ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433265"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Настройка хранилища файлов и XML-сериализации
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60062403"
  Кроме того, можно написать программный код для более широких возможностей настройки.  
   
 > [!NOTE]
->  Если вы хотите сохранить модель в определенном формате, но не нужно повторно загрузить его из этой формы, рассмотрите возможность использования текстовых шаблонов для создания выходных данных из модели, а не пользовательскую схему сериализации. Дополнительные сведения см. в разделе [создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md).  
+> Если вы хотите сохранить модель в определенном формате, но не нужно повторно загрузить его из этой формы, рассмотрите возможность использования текстовых шаблонов для создания выходных данных из модели, а не пользовательскую схему сериализации. Дополнительные сведения см. в разделе [создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ## <a name="model-and-diagram-files"></a>Модель и файлы схемы  
  Каждая модель обычно сохраняется в двух файлах:  

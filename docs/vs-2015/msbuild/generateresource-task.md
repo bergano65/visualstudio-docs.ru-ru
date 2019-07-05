@@ -19,17 +19,17 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: caa267aa44a72d180195a30b41fa7a2c03033bdf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 712d0de957ff7f780567c927fb1b18b100f8f6ca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668409"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703521"
 ---
 # <a name="generateresource-task"></a>Задача GenerateResource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Преобразовывает файлы формата TXT и RESX (файлы ресурсов на основе XML) и двоичные RESOURCES-файлы среды CLR, которые могут быть внедрены в двоичный исполняемый файл среды выполнения или скомпилированы во вспомогательные сборки. Обычно эта задача используется для преобразования файлов формата TXT и RESX в RESOURCES-файлы. Задача `GenerateResource` функционально аналогична [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
+Преобразовывает файлы формата TXT и RESX (файлы ресурсов на основе XML) и двоичные RESOURCES-файлы среды CLR, которые могут быть внедрены в двоичный исполняемый файл среды выполнения или скомпилированы во вспомогательные сборки. Обычно эта задача используется для преобразования файлов формата TXT и RESX в RESOURCES-файлы. Задача `GenerateResource` функционально аналогична [resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
   
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `GenerateResource` .  
@@ -56,11 +56,11 @@ ms.locfileid: "59668409"
 |`StronglyTypedNamespace`|Необязательный параметр `String` .<br /><br /> Указывает пространство имен, используемое в создаваемом источнике класса для строго типизированного ресурса. Если этот параметр не указан, все строго типизированные ресурсы находятся в глобальном пространстве имен.|  
 |`TLogReadFiles`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`, доступный только для чтения.<br /><br /> Получает массив элементов, представляющих журналы отслеживания чтения.|  
 |`TLogWriteFiles`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`, доступный только для чтения.<br /><br /> Получает массив элементов, представляющих журналы отслеживания записи.|  
-|`ToolArchitecture`|(Необязательно [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Используется, чтобы определить, нужно ли использовать Tracker.exe для создания ResGen.exe.<br /><br /> Должна обеспечиваться возможность синтаксического анализа до элемента перечисления <xref:Microsoft.Build.Utilities.ExecutableType>. Если задано значение `String.Empty`, используется эвристика для определения архитектуры по умолчанию. Для члена перечисления Microsoft.Build.Utilities.ExecutableType следует задать синтаксический анализ.|  
-|`TrackerFrameworkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает путь к соответствующему расположению .NET Framework, содержащему FileTracker.dll.<br /><br /> Если значение задано, пользователь отвечает за то, чтобы разрядность передаваемого файла FileTracker.dll соответствовала разрядности файла ResGen.exe, который планируется использовать. Если значение не задано, задача определяет соответствующее расположение на основе текущей версии .NET Framework.|  
-|`TrackerLogDirectory`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает промежуточный каталог, в котором будут размещены журналы отслеживания для выполнения этой задачи.|  
-|`TrackerSdkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает путь к соответствующему расположению Windows SDK, содержащему Tracker.exe.<br /><br /> Если значение задано, пользователь отвечает за то, чтобы разрядность передаваемого файла Tracker.exe соответствовала разрядности файла ResGen.exe, который планируется использовать. Если значение не задано, задача определяет соответствующее расположение на основе текущей версии Windows SDK.|  
-|`TrackFileAccess`|Необязательно () [логическое]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Если задано значение true, используется каталог входного файла для разрешения относительных путей к файлам.|  
+|`ToolArchitecture`|Дополнительный (строковый<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметр.<br /><br /> Используется, чтобы определить, нужно ли использовать Tracker.exe для создания ResGen.exe.<br /><br /> Должна обеспечиваться возможность синтаксического анализа до элемента перечисления <xref:Microsoft.Build.Utilities.ExecutableType>. Если задано значение `String.Empty`, используется эвристика для определения архитектуры по умолчанию. Для члена перечисления Microsoft.Build.Utilities.ExecutableType следует задать синтаксический анализ.|  
+|`TrackerFrameworkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Задает путь к соответствующему расположению .NET Framework, содержащему FileTracker.dll.<br /><br /> Если значение задано, пользователь отвечает за то, чтобы разрядность передаваемого файла FileTracker.dll соответствовала разрядности файла ResGen.exe, который планируется использовать. Если значение не задано, задача определяет соответствующее расположение на основе текущей версии .NET Framework.|  
+|`TrackerLogDirectory`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Задает промежуточный каталог, в котором будут размещены журналы отслеживания для выполнения этой задачи.|  
+|`TrackerSdkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Задает путь к соответствующему расположению Windows SDK, содержащему Tracker.exe.<br /><br /> Если значение задано, пользователь отвечает за то, чтобы разрядность передаваемого файла Tracker.exe соответствовала разрядности файла ResGen.exe, который планируется использовать. Если значение не задано, задача определяет соответствующее расположение на основе текущей версии Windows SDK.|  
+|`TrackFileAccess`|Необязательный (логический<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) параметр.<br /><br /> Если задано значение true, используется каталог входного файла для разрешения относительных путей к файлам.|  
 |`UseSourcePath`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение `true`, задается каталог входного файла, который должен использоваться для разрешения относительных путей к файлам.|  
   
 ## <a name="remarks"></a>Примечания  

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3ab7b0617f09b98c9e30c7f198ef0e2aaa301e33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931001"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;ADDIN&gt; элемент (Разработка решений Office в Visual Studio)
   **Addin** элемент `vstav3` пространство имен содержит информацию, предназначенную для надстройки Microsoft Office, VSTO и настроек уровня документа, разработанные с помощью Visual Studio.
@@ -70,7 +70,7 @@ ms.locfileid: "55926311"
 
 ## <a name="document-level-customization-example"></a>Пример настройки на уровне документа
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В следующем примере кода показано **addin** элемент в решении Office уровня документа, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код
@@ -134,7 +134,7 @@ ms.locfileid: "55926311"
 
 ## <a name="vsto-add-in-example"></a>Пример надстройки VSTO
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В следующем примере кода показано **addin** элемент в решении Office уровня приложения, которое развертывается с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - STEPKIND enumeration
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7adf835cd3809eeb3d4db664cf5febcfa2a0597b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715873"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329161"
 ---
 # <a name="stepkind"></a>STEPKIND
 Задает тип шага для пошагового выполнения.
@@ -43,14 +46,18 @@ public enum enum_STEPKIND { 
 };
 ```
 
-## <a name="members"></a>Участники
- STEP_INTO шаги с заходом в функцию.
+## <a name="fields"></a>Поля
+ `STEP_INTO`\
+ Шаг с заходом в функцию.
 
- Действия STEP_OVER обходом функции.
+ `STEP_OVER`\
+ Шаги с обходом функции.
 
- STEP_OUT выходит из функции.
+ `STEP_OUT`\
+ Выходит из функции.
 
- Действия STEP_BACKWARDS обратно в функцию.
+ `STEP_BACKWARDS`\
+ Переход обратно в функцию.
 
 ## <a name="remarks"></a>Примечания
  Передается в качестве аргумента для [шаг](../../../extensibility/debugger/reference/idebugprocess3-step.md) метод.

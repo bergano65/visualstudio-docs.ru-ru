@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetSize
 ms.assetid: a404ddd9-d940-4513-97cd-f52b8ab6a560
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 681cede68a2d649cd9f072b6c10e8476a9625f6e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5512a9d07c859dc548f91611bfc8d0c05621c0ff
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683432"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329779"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 Получает размер в байтах, значение ссылки. Зарезервировано для будущего использования.
@@ -36,10 +39,9 @@ int GetSize ( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pdwSize`
-
- [out] Возвращает размер в байтах, значение ссылки.
+## <a name="parameters"></a>Параметры
+`pdwSize`\
+[out] Возвращает размер в байтах, значение ссылки.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Всегда возвращает значение `E_NOTIMPL`.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNextAddress method
 ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 574111db390388ee1d0c572a3a8825c3a2ae9469
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f358abe84987b9c7c1a5a1df36fdf480f62ee64b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722763"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347531"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 Возвращает адрес отладки, следующий за адресом заданной отладочной в методе.
@@ -40,18 +43,15 @@ int GetNextAddress( 
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pAddress`
+## <a name="parameters"></a>Параметры
+`pAddress`\
+[in] Указанного адреса отладки.
 
- [in] Указанного адреса отладки.
+`fStatementOnly`\
+[in] Если значение равно TRUE, ограничивает адреса отладки для одной инструкции.
 
- `fStatementOnly`
-
- [in] Если значение равно TRUE, ограничивает адреса отладки для одной инструкции.
-
- `ppAddress`
-
- [out] Возвращает следующий адрес отладки.
+`ppAddress`\
+[out] Возвращает следующий адрес отладки.
 
 ## <a name="return-value"></a>Возвращаемое значение
  Возвращает допустимый `HRESULT`, обычно S_OK.

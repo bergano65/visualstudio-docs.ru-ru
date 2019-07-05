@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0fc22e0c8ae0b0bdaf0729b3cdb3847cd25f580f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008295"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Пошаговое руководство. Добавление приемников событий компонентов
   Приемники событий приведены методы, которые выполняются при возникновении одного из следующих событий, связанных с функции в SharePoint.

@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c1d3fc6cee9a4149e378a5886b33322ab85c9cf8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042357"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699467"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Отображение модели UML на схемах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,7 +102,7 @@ ms.locfileid: "60042357"
  `Context.CurrentDiagram as IClassDiagram;`  
   
 > [!NOTE]
->  Экземпляр `IDiagram` (и его подтипы, такие как `IClassDiagram`) является действительным только в рамках обрабатываемой команды. Не рекомендуется сохранять объект `IDiagram` в переменной, которая сохраняется при возвращении управления пользователю.  
+> Экземпляр `IDiagram` (и его подтипы, такие как `IClassDiagram`) является действительным только в рамках обрабатываемой команды. Не рекомендуется сохранять объект `IDiagram` в переменной, которая сохраняется при возвращении управления пользователю.  
   
  Дополнительные сведения см. в разделе [определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
@@ -183,21 +183,21 @@ namespace AlignCommand
   // This command will straighten them up.  
   
   // Place this file in a menu command extension project.  
-  // See http://msdn.microsoft.com/library/ee329481.aspx  
+  // See https://msdn.microsoft.com/library/ee329481.aspx  
   
   [Export(typeof(ICommandExtension))]  
   [ClassDesignerExtension] // TODO: Add other diagram types if needed  
   class CommandExtension : ICommandExtension  
   {  
     /// <summary>  
-    /// See http://msdn.microsoft.com/library/ee329481.aspx  
+    /// See https://msdn.microsoft.com/library/ee329481.aspx  
     /// </summary>  
     [Import]  
     IDiagramContext context { get; set; }  
   
     /// <summary>  
     /// Transaction context.  
-    /// See http://msdn.microsoft.com/library/ee330926.aspx  
+    /// See https://msdn.microsoft.com/library/ee330926.aspx  
     /// </summary>  
     [Import]  
     ILinkedUndoContext linkedUndo { get; set; }  

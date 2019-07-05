@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTIES structure
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55b3334c8bd28d3975f06aa39ca8c7fd719f1f9e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a0e39102fa66c04a15042ffd82086ac66d3058ca
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694482"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316185"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Описывает свойства потока.
@@ -49,19 +52,26 @@ public struct THREADPROPERTIES { 
 ```
 
 ## <a name="members"></a>Участники
- dwFields объект сочетание флагов из [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) перечисление, описывающее, какие поля в этой структуре являются допустимыми.
+ `dwFields`\
+ Сочетание флагов из [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) перечисление, описывающее, какие поля в этой структуре являются допустимыми.
 
- dwThreadId идентификатор потока.
+ `dwThreadId`\
+ Идентификатор потока.
 
- счетчик приостановок dwSuspendCount потока.
+ `dwSuspendCount`\
+ Число приостановок потока.
 
- значение dwThreadState объект из [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) перечисление, указывающее состояние работы потока.
+ `dwThreadState`\
+ Значение из [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) перечисление, указывающее состояние работы потока.
 
- bstrPriority строка, указывающая приоритет потока; Например «Выше среднего», «Normal» или «Critical времени».
+ `bstrPriority`\
+ Строка, указывающая приоритет потока; Например «Выше среднего», «Normal» или «Critical времени».
 
- bstName имя потока.
+ `bstName`\
+ Имя потока.
 
- bstrLocation расположение потока (обычно верхний кадр стека), обычно выраженное как имя метода, где выполнение приостановлено.
+ `bstrLocation`\
+ Расположение потока (обычно верхний кадр стека), обычно выраженное как имя метода, где выполнение приостановлено.
 
 ## <a name="remarks"></a>Примечания
  Эта структура заполняется с помощью вызова [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) метод. Сведения, поэтому возвращаемые обычно используется при заполнении **потоков** окна.

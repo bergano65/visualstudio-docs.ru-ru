@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b52d5a97fc3c2e3a6bf5b4bb938bad9da50d3a7d
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58991832"
@@ -74,13 +74,13 @@ ms.locfileid: "58991832"
 
  В этом примере формируются следующие данные:
 
- **Указатель Changing - передаются по значению:**
+ **Указатель Changing - передаются по значению:** 
 **12345**
 **12345**
 **Changing указатель - передается по ссылке:** 
- ** 12345**
+**12345**
 **12345 ABCDE**
-**передача по возвращаемое значение:**
+**передача по возвращаемое значение:** 
 **12345 ABCDE**
 ## <a name="try-pattern-methods"></a>Попробуйте методы шаблона
 

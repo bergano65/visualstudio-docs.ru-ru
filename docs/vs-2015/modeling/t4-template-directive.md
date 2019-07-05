@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 38831d0f647ce423dc62fb51823a6757a1ac0872
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070840"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695879"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60070840"
  `compilerOptions="optimize+"`  
   
  Допустимые значения:  
- Любые допустимые параметры компилятора. Дополнительные сведения см. в разделе [C# параметры компилятора, упорядоченные по категориям](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) и [Visual Basic параметры компилятора, упорядоченные по категориям](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
+ Любые допустимые параметры компилятора. Дополнительные сведения см. в разделе [C# параметры компилятора, упорядоченные по категориям](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) и [Visual Basic параметры компилятора, упорядоченные по категориям](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
   
  Игнорируется для шаблонов времени выполнения (предварительно обработанных).  
   
@@ -212,7 +212,7 @@ This is the common footer.
  Кроме того, в качестве базового класса можно использовать обычный, созданный вручную класс. Базовый класс должен предоставлять методы, используемые производным классом.  
   
 > [!WARNING]
->  Если атрибуты `inherits` и `hostspecific` используются совместно, укажите hostspecific="trueFromBase" в производном классе и host="true" в базовом классе. Это позволит избежать двойного определения свойства `Host` в созданном коде.  
+> Если атрибуты `inherits` и `hostspecific` используются совместно, укажите hostspecific="trueFromBase" в производном классе и host="true" в базовом классе. Это позволит избежать двойного определения свойства `Host` в созданном коде.  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>Наследование в текстовом шаблоне времени разработки  
  Во время разработки текстовый шаблон является файл, для которого **пользовательское средство** присваивается **TextTemplatingFileGenerator**. Этот шаблон позволяет создать выходной файл кода или текста, формирующего часть проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. При создании выходного файла шаблон сначала преобразуется в промежуточный файл программного кода, который обычно не видно пользователю. Атрибут `inherits` задает базовый класс для данного промежуточного кода.  

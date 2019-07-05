@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 536919d4db8b13f12af1f3277daa0c148fd57916
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a855ecbc65211234b29808fc9e4cf256cd6b25f7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709711"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353585"
 ---
 # <a name="sccinitialize-function"></a>Функция SccInitialize
 Эта функция инициализирует подключаемый модуль системы управления версиями и предоставляет возможности и ограничения в интегрированной среде разработки (IDE).
@@ -73,7 +73,7 @@ SCCRTN SccInitialize (
 ## <a name="return-value"></a>Возвращаемое значение
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |SCC_OK|Инициализация элемента управления источника завершилась успешно.|
 |SCC_E_INITIALIZEFAILED|Не удалось инициализировать систему.|

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e7a0e1e616fdee2dac58c8a5a1d24ed120b28bc2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991979"
 ---
 # <a name="iactivescriptstats-interface"></a>Интерфейс IActiveScriptStats
 Позволяет ведущему приложению запросить статистику выполняемого сценария. Узел может использовать эту информацию для определения того, если скрипт занял слишком много времени.  
@@ -27,7 +27,7 @@ ms.locfileid: "58152565"
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)|Возвращает одно из стандартных внести в скрипт статистику.|  
 |[IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)|Возвращает статистику пользовательского скрипта.|  

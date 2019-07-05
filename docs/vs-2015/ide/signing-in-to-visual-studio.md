@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083963"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679838"
 ---
 # <a name="signing-in-to-visual-studio"></a>Вход в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60083963"
 
 - **Предоставляет доступ в обширному ряду преимуществ** из программы Visual Studio Dev Essentials, включая бесплатное программное обеспечение, обучение, поддержку и многое другое. Дополнительные сведения см. в разделе [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
 
-- **Синхронизация параметров Visual Studio** . Настраиваемые параметры, например привязки клавиш, макет окна и цветовая тема, вступают в силу сразу после входа в Visual Studio на любом другом устройстве. См. раздел [Синхронизированные параметры в Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Синхронизация параметров Visual Studio** . Настраиваемые параметры, например привязки клавиш, макет окна и цветовая тема, вступают в силу сразу после входа в Visual Studio на любом другом устройстве. См. раздел [Синхронизированные параметры в Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
 - **Неограниченная по времени разблокировка выпуска Visual Studio Express** . Вы можете использовать любой из выпусков Visual Studio Express столько, сколько потребуется; ограничение ознакомительного периода в 30 дней снимается.
 

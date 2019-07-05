@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 96f4d628d32aec9a0f7eb2d091a017edfba3d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dfae7d858dbb462ec6a93de9eb63b1b3b2a711ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685822"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Практическое руководство. Добавление дополнительных сведений о коде с помощью _Analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58990170"
  Средство анализа кода предполагается, что условие, представленный с помощью выражения имеет значение true, если в точке, где отображается функция и сохраняет значение true, пока выражение будет изменено, например, путем присваивания переменной.  
   
 > [!NOTE]
->  `__analysis_assume` не влияет на оптимизации кода. За пределами средства анализа кода `__analysis_assume` определяется как холостой.  
+> `__analysis_assume` не влияет на оптимизации кода. За пределами средства анализа кода `__analysis_assume` определяется как холостой.  
   
 ## <a name="example"></a>Пример  
  В следующем коде используется `__analysis_assume` для устранения предупреждения анализа кода [C6388](../code-quality/c6388.md):  
@@ -59,4 +59,4 @@ void test( )
 ```  
   
 ## <a name="see-also"></a>См. также  
- [__assume](http://msdn.microsoft.com/library/d8565123-b132-44b1-8235-5a8c8bff85a7)
+ [__assume](https://msdn.microsoft.com/library/d8565123-b132-44b1-8235-5a8c8bff85a7)

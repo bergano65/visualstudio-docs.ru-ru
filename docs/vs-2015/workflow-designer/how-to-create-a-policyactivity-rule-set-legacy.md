@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bf1fd84d884068d11d15d614f5e281577bd3ce55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433574"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Практическое руководство. Создание набора правил PolicyActivity (для прежних версий)
 В этом разделе описывается создание набора правил действия политики с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, ориентированного на работу с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -28,7 +28,7 @@ ms.locfileid: "60050790"
  После перетаскивания **политики** элемент действия из **элементов** в область конструктора рабочих процессов необходимо выбрать существующее правило или создать новый набор правил для [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) действия. Выберите существующий набор с помощью правил [правила задайте диалоговое окно Выбор (для прежних версий)](../workflow-designer/select-rule-set-dialog-box-legacy.md) и наборы правил создаются с помощью [правила задайте диалоговое окно редактора (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
   
 > [!NOTE]
->  Вы можете открыть [правила задайте диалоговое окно редактора (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) диалоговое окно по двойному щелчку на [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) действие, которое находится в области конструктора рабочих процессов.  
+> Вы можете открыть [правила задайте диалоговое окно редактора (для прежних версий)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) диалоговое окно по двойному щелчку на [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) действие, которое находится в области конструктора рабочих процессов.  
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Выбор или создание набора правил для действия PolicyActivity  
   

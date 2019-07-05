@@ -6,12 +6,12 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8dd993f918d9f2d884b9e2d082a71c9c4eebc9cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5373f1fa9d6bb596e099f3b7396ef13c91ee5a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387642"
 ---
 # <a name="verify-your-xamarin-environment"></a>Проверка окружения Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60097210"
  ![Результаты создания нового проекта из шаблона пустого приложения &#40;нативного и переносимого&#41;](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin Verify 1")  
   
 > [!NOTE]
->  Если шаблонов там нет, см. раздел [Нет шаблонов проектов Xamarin? Попробуйте это](#missing) в нижней части этой страницы.  
+> Если шаблонов там нет, см. раздел [Нет шаблонов проектов Xamarin? Попробуйте это](#missing) в нижней части этой страницы.  
   
 ## <a name="android"></a>Android  
   
@@ -59,7 +59,7 @@ ms.locfileid: "60097210"
         - Для Windows 7 и более ранних версий ОС: выберите Xamarin Player для Android в раскрывающемся списке и нажмите клавишу F5 для запуска. Дополнительные сведения о Xamarin Player и его диспетчере устройств, а также советы по устранению проблем см. в статье [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com).  
   
 > [!NOTE]
->  В Visual Studio можно заметить наличие на панели инструментов кнопки диспетчера эмулятора Android (показано на следующем рисунке), по нажатию которой открывается диспетчер устройств, используемый конкретно для настройки эмулятора Google Android.  Это не оказывает влияния ни на эмулятор Visual Studio для Android, ни на Xamarin Player, каждый из которых имеет свой диспетчер устройств для настройки профилей.  See [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blog) and [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) for details.  
+> В Visual Studio можно заметить наличие на панели инструментов кнопки диспетчера эмулятора Android (показано на следующем рисунке), по нажатию которой открывается диспетчер устройств, используемый конкретно для настройки эмулятора Google Android.  Это не оказывает влияния ни на эмулятор Visual Studio для Android, ни на Xamarin Player, каждый из которых имеет свой диспетчер устройств для настройки профилей.  See [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blog) and [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) for details.  
 > ![Проверка CrossPlat Xamarin 7](../cross-platform/media/crossplat-xamarin-verify-7.png "Проверка CrossPlat Xamarin 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  

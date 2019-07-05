@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94598cd14b25fa598cdfde4e3033bb2877bcbe40
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974986"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836114"
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 
@@ -632,7 +632,11 @@ $selected$ is a great color. I love $selected$.
 | - |-----------------|
 |[Элемент Object](../ide/code-snippets-schema-reference.md#object-element)|Определяет доступные для редактирования поля объектов фрагмента кода.|
 
- Текстовое значение является обязательным. Данный текст задает тип объекта.
+Текстовое значение является обязательным. Данный текст задает тип объекта. Например:
+
+```xml
+<Type>System.Data.SqlClient.SqlConnection</Type>
+```
 
 ## <a name="url-element"></a>Элемент Url
 

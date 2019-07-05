@@ -9,23 +9,23 @@ helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fae92cd0a2903753f5b02ca33308a83cdab67c7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 09f062575cc7d0978fbacede32cfe22d0f98a71c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694911"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335957"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>Элемент ProjectItem (шаблоны проектов Visual Studio)
 Указывает файл, включенный в шаблон проекта.
 
 > [!NOTE]
->  `ProjectItem` Элемент принимает различные атрибуты в зависимости от того, является ли шаблон для проекта или элемента. В этом разделе объясняется `ProjectItem` элемент для шаблонов проектов. Объяснение `ProjectItem` элемент для шаблонов элементов, см. в разделе [элемент ProjectItem (шаблоны элементов Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).
+> `ProjectItem` Элемент принимает различные атрибуты в зависимости от того, является ли шаблон для проекта или элемента. В этом разделе объясняется `ProjectItem` элемент для шаблонов проектов. Объяснение `ProjectItem` элемент для шаблонов элементов, см. в разделе [элемент ProjectItem (шаблоны элементов Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).
 
  \<VSTemplate > \<TemplateContent > \<проекта > \<ProjectItem >
 
@@ -92,7 +92,7 @@ ms.locfileid: "56694911"
    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>
    ```
 
-2. Откройте файл проекта (*.vbproj* для [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] проекта) в текстовом редакторе или [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+2. Откройте файл проекта ( *.vbproj* для [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] проекта) в текстовом редакторе или [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 3. Найдите строку в файле проекта, который выглядит как в следующем коде XML:
 

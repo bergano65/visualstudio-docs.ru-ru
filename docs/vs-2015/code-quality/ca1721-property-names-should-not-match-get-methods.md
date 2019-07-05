@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9a3dcf6566267cebdfeecb91f57bf139be46de2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 94d120a7656fc9270543ceeb57063124764c4bca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431188"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721. Имена свойств не должны совпадать с именами методов get
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "59001963"
  Для этого правила отключать вывод предупреждений не следует.
 
 > [!NOTE]
->  Это предупреждение можно не указывать, если вызвана реализация интерфейса IExtenderProvider метод Get.
+> Это предупреждение можно не указывать, если вызвана реализация интерфейса IExtenderProvider метод Get.
 
 ## <a name="example"></a>Пример
  В следующем примере содержится метод и свойство, которое нарушает это правило.

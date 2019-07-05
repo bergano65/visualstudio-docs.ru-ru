@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 27975f4055a433891251c675bff3aacaaa9f6bb3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680192"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339369"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Задает флаги запуска отладки.
@@ -43,14 +46,18 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="members"></a>Участники
-LAUNCH_DEBUG запускает процесс для отладки.
+## <a name="fields"></a>Поля
+`LAUNCH_DEBUG`\
+Запускает процесс для отладки.
 
-LAUNCH_NODEBUG запускает процесс без его отладки.
+`LAUNCH_NODEBUG`\
+Запускает процесс без его отладки.
 
-LAUNCH_ENABLE_ENC DEPRECATED, DO NOT USE.
+`LAUNCH_ENABLE_ENC`\
+РЕКОМЕНДУЕТСЯ ИСПОЛЬЗОВАТЬ, НЕ ИСПОЛЬЗУЙТЕ.
 
-LAUNCH_MERGE_ENV запускает процесс и объединяет среды с помощью запуска сервера.
+`LAUNCH_MERGE_ENV`\
+Запускает процесс и выполняет слияние среды с помощью запуска сервера.
 
 ## <a name="remarks"></a>Примечания
 Эти значения передаются в качестве аргумента [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) метод.

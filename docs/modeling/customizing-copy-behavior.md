@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414817"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 Доменный язык (DSL) создана с пакет SDK моделирования и визуализации Visual Studio можно изменить, что происходит, когда пользователь копирует и вставляет элементы.
@@ -232,7 +232,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  Многие аспекты поведения Доменного языка в отношении копирования, вставки, создания и удаления объектов определяются экземпляром <xref:Microsoft.VisualStudio.Modeling.ElementOperations> который соединен в схему. Можно изменить поведение Доменного языка путем наследования класса из <xref:Microsoft.VisualStudio.Modeling.ElementOperations> и переопределение <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> свойство класса схемы.
 
 > [!TIP]
->  Дополнительные сведения о настройке модели с помощью программного кода, см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> Дополнительные сведения о настройке модели с помощью программного кода, см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
  ![Схема последовательностей для операции копирования](../modeling/media/dslcopyseqdiagram.png)
 

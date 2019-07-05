@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5ed07ce5ed48abfb377dde5fc4d5dc128d881b4a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009202"
 ---
 # <a name="iactivescriptparseprocedure"></a>IActiveScriptParseProcedure
 Если обработчик скриптов Windows позволяет текстом исходного кода для процедуры для добавления в скрипт, он реализует `IActiveScriptParseProcedure` интерфейс. Интерпретируемые языки сценариев, которые имеют не независимых среду разработки, таких как VBScript, это предоставляет альтернативный механизм (отличное от `IActiveScriptParse` или `IPersist`*) для добавления к пространству имен процедуры с помощью сценариев.  
@@ -27,7 +27,7 @@ ms.locfileid: "58151353"
   
 |||  
 |-|-|  
-|Метод|Описание:|  
+|Метод|Описание|  
 |[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|Выполняет синтаксический анализ данного кода процедуры и добавляет процедуру в пространство имен.|  
   
 ## <a name="see-also"></a>См. также  

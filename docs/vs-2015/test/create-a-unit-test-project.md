@@ -8,12 +8,12 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca472a8db08f337d873f0e43475a9231f2999b13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f792c29b50be5bbadf34980b81f7c5dd329cccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442832"
 ---
 # <a name="create-a-unit-test-project"></a>Создание проекта модульного теста
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60096625"
 Модульные тесты зачастую отражают структуру тестируемого кода. Например, отдельный проект модульного теста может быть создан для каждого проекта в продукте. Тестовый проект может находиться в том же решении, что и рабочий код, или в отдельном решении. В решении может быть несколько проектов модульных тестов.  
   
 > [!NOTE]
->  Расположение модульных тестов для машинного кода и структура тестового проекта могут отличаться от структуры, описанной в этом разделе. Дополнительные сведения см. в разделе [Добавление модульных тестов в существующие приложения C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).  
+> Расположение модульных тестов для машинного кода и структура тестового проекта могут отличаться от структуры, описанной в этом разделе. Дополнительные сведения см. в разделе [Добавление модульных тестов в существующие приложения C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).  
   
 ## <a name="to-create-a-unit-test-project"></a>Создание проекта модульного теста  
   

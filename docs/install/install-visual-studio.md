@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974946"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263728"
 ---
 # <a name="install-visual-studio"></a>Установка Visual Studio
 
@@ -88,7 +88,7 @@ ms.locfileid: "62974946"
 
 ::: moniker range="vs-2017"
 
-Сведения об использовании предыдущих версий Visual Studio параллельно с Visual Studio 2017 см. в разделе [Совместимость с предыдущими версиями](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases/).
+Сведения об использовании предыдущих версий Visual Studio параллельно с Visual Studio 2017 см. в разделе [Совместимость с предыдущими версиями](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
 
 ::: moniker-end
 
@@ -203,7 +203,7 @@ ms.locfileid: "62974946"
 
 Язык по умолчанию можно изменить еще одним способом — запустив установщик из командной строки. Например, можно принудительно запустить установщик на английском языке, выполнив команду `vs_installer.exe --locale en-US`. Программа установки запомнит этот параметр и использует его при следующем запуске. Установщик поддерживает следующие токены языков: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru и tr-tr.
 
-## <a name="step-7---change-the-installation-location-optional"></a>Шаг 7. Изменение расположения установки (дополнительно)
+## <a name="step-7---select-the-installation-location-optional"></a>Шаг 7. Выбор расположения установки (дополнительно)
 
 ::: moniker range="vs-2017"
 
@@ -217,7 +217,7 @@ ms.locfileid: "62974946"
 
 Вы можете уменьшить место, занимаемое установкой Visual Studio на системном диске. Вы можете переместить кэш загрузки, общие компоненты, пакеты SDK и средства на другие диски и оставить Visual Studio на самом быстром диске.
 
-  ![Visual Studio 2019 — изменение расположения установки](media/vs-2019/vs-installer-installation-locations.png "Изменение расположения установки")
+  ![Visual Studio 2019 — выбор расположения установки](media/vs-2019/vs-installer-installation-locations.png "Выберите расположение установки")
 
 ::: moniker-end
 

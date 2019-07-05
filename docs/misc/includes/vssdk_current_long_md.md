@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 9019b6dc0c6b731e9e0af84c2b4eba91cebb88a9
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: c937324bf566f30526dde9792ee8a5d5f15d9295
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38941833"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258727"
 ---
  SDK для Visual Studio 

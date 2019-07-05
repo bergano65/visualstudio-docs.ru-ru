@@ -23,12 +23,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0f2bd51570c8ad1976b6fc9eb5674177f9342833
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07c5853b673657c3ce8e90467a13bbac3f430b6e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556626"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698988"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Привязка элементов управления Windows Forms к данным в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "62556626"
 
  ![Операции перетаскивания источника данных](../data-tools/media/raddata-data-source-drag-operation.png "операции перетаскивания raddata источника данных")
 
- Общие сведения о создании элементов управления с привязкой к данным в Visual Studio см. в разделе [привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Дополнительные сведения о привязке данных в Windows Forms, см. в разделе [привязки данных Windows Forms](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
+ Общие сведения о создании элементов управления с привязкой к данным в Visual Studio см. в разделе [привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Дополнительные сведения о привязке данных в Windows Forms, см. в разделе [привязки данных Windows Forms](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
 
 ## <a name="in-this-section"></a>Содержание раздела
 
@@ -64,17 +64,17 @@ ms.locfileid: "62556626"
 
  Дополнительные сведения о <xref:System.Windows.Forms.BindingSource> компонента, см. в разделе:
 
-- [Компонент BindingSource](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [Компонент BindingSource](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
-- [Общие сведения о компоненте BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
+- [Общие сведения о компоненте BindingSource](https://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
-- [Архитектура компонента BindingSource](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
+- [Архитектура компонента BindingSource](https://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator - элемент управления
- Этот компонент предоставляет пользовательский интерфейс для перехода по данным, отображаемым в приложении Windows. Дополнительные сведения см. в разделе [Элемент управления BindingNavigator](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
+ Этот компонент предоставляет пользовательский интерфейс для перехода по данным, отображаемым в приложении Windows. Дополнительные сведения см. в разделе [Элемент управления BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
 
 ## <a name="datagridview-control"></a>DataGridView - элемент управления
- Для отображения и редактирования табличных данных с использованием разного рода источников данных, используйте <xref:System.Windows.Forms.DataGridView> элемента управления. Вы можете привязывать данные к <xref:System.Windows.Forms.DataGridView> с помощью <xref:System.Windows.Forms.DataGridView.DataSource%2A> свойство. Дополнительные сведения см. в разделе [Обзор элемента управления DataGridView](http://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
+ Для отображения и редактирования табличных данных с использованием разного рода источников данных, используйте <xref:System.Windows.Forms.DataGridView> элемента управления. Вы можете привязывать данные к <xref:System.Windows.Forms.DataGridView> с помощью <xref:System.Windows.Forms.DataGridView.DataSource%2A> свойство. Дополнительные сведения см. в разделе [Обзор элемента управления DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
 
 ## <a name="see-also"></a>См. также
  [Привязка элементов управления к данным в Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

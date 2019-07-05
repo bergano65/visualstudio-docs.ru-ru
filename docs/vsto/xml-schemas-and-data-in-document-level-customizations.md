@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb8bc9b9d3149112517d893cd3a704826b6d92d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421697"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>XML-схемы и данные в настройках уровня документа
   **Важные** сведения, изложенные в этом разделе, касающиеся Microsoft Word, представленных исключительно для преимущество и лиц и организаций, расположенных за пределами США и их территорий или использующие или разработки программ, выполняемых на, продукты Microsoft Word, лицензированные корпорацией Майкрософт до января 2010 г, при удалении реализация конкретной функции в Microsoft связана с пользовательским XML-из Microsoft Word. Эти сведения, касающиеся Microsoft Word может не читают или используют отдельным лицам или организациям в Соединенных Штатах Америки или их территориях, которые используете, или разработке программ, выполняемых на продукты Microsoft Word, лицензированные корпорацией Майкрософт, начиная с 10 января 2010 г. ; Эти продукты, будет вести себя так же, как продукты до этой даты или приобретенных и лицензируются для использования за пределами США.
@@ -33,7 +33,7 @@ ms.locfileid: "60117933"
  Visual Studio предоставляет сопоставленных элементов схемы в настройках уровня документа, как элементы управления в модели программирования. Для Excel Visual Studio добавляет поддержку для привязки элементов управления к данным в базах данных, веб-служб и объектов. Для Word и Excel Visual Studio добавляет поддержку панелей действий, которые можно использовать с документом схем для создания взаимодействия пользователей с решениями. Дополнительные сведения см. в разделе [Общие сведения о панели действий](../vsto/actions-pane-overview.md).
 
 > [!NOTE]
->  Составные XML-схемы нельзя использовать в решениях Excel.
+> Составные XML-схемы нельзя использовать в решениях Excel.
 
 ## <a name="objects-created-when-schemas-are-attached-to-excel-workbooks"></a>Объекты, созданные при присоединении схем к книгам Excel
  При присоединении схемы с книгой, Visual Studio автоматически создает несколько объектов и добавляет их в проект. Эти объекты не должны удаляться с помощью средств Visual Studio, так как они управляются с помощью Excel. Чтобы удалить их, удалите сопоставленные элементы из рабочего листа или отсоедините схему с помощью средств Excel.
@@ -52,13 +52,13 @@ ms.locfileid: "60117933"
 - BindingSource. При создании <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> путем сопоставления неповторяющегося элемента схемы в лист, <xref:System.Windows.Forms.BindingSource> создается и <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> привязан элемент управления <xref:System.Windows.Forms.BindingSource>. Необходимо привязать <xref:System.Windows.Forms.BindingSource> для экземпляра источника данных, которые соответствуют схеме сопоставляются с документа, например: экземпляр типизированного <xref:System.Data.DataSet> класс, который был создан. Создать привязку, задав <xref:System.Windows.Forms.BindingSource.DataSource%2A> и <xref:System.Windows.Forms.BindingSource.DataMember%2A> свойства, которые представлены на **свойства** окна.
 
     > [!NOTE]
-    >  <xref:System.Windows.Forms.BindingSource> Не создается для <xref:Microsoft.Office.Tools.Excel.ListObject> объектов. Необходимо вручную связать <xref:Microsoft.Office.Tools.Excel.ListObject> к источнику данных, задав <xref:System.Windows.Forms.BindingSource.DataSource%2A> и <xref:System.Windows.Forms.BindingSource.DataMember%2A> свойств в **свойства** окна.
+    > <xref:System.Windows.Forms.BindingSource> Не создается для <xref:Microsoft.Office.Tools.Excel.ListObject> объектов. Необходимо вручную связать <xref:Microsoft.Office.Tools.Excel.ListObject> к источнику данных, задав <xref:System.Windows.Forms.BindingSource.DataSource%2A> и <xref:System.Windows.Forms.BindingSource.DataMember%2A> свойств в **свойства** окна.
 
 ### <a name="office-mapped-schemas-and-the-visual-studio-data-sources-window"></a>Office сопоставлены схемы и в окне источников данных Visual Studio
  Функциональность сопоставляемых схем Office и Visual Studio **источников данных** окно может помочь представить данные на листе Excel для создания отчетов или редактирования. В обоих случаях можно перетащить элементы данных на листе Excel. Оба метода создания элемента управления с привязкой через <xref:System.Windows.Forms.BindingSource> к источнику данных, такие как <xref:System.Data.DataSet> или веб-службы.
 
 > [!NOTE]
->  При сопоставлении повторяющегося элемента схемы в лист, Visual Studio создает <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Автоматически не привязан к данным с помощью <xref:System.Windows.Forms.BindingSource>. Необходимо вручную связать <xref:Microsoft.Office.Tools.Excel.ListObject> к источнику данных, задав <xref:System.Windows.Forms.BindingSource.DataSource%2A> и <xref:System.Windows.Forms.BindingSource.DataMember%2A> свойств в **свойства** окна.
+> При сопоставлении повторяющегося элемента схемы в лист, Visual Studio создает <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Автоматически не привязан к данным с помощью <xref:System.Windows.Forms.BindingSource>. Необходимо вручную связать <xref:Microsoft.Office.Tools.Excel.ListObject> к источнику данных, задав <xref:System.Windows.Forms.BindingSource.DataSource%2A> и <xref:System.Windows.Forms.BindingSource.DataMember%2A> свойств в **свойства** окна.
 
  В следующей таблице показаны некоторые различия между двумя методами.
 

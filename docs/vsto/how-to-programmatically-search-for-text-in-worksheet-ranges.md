@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 800dcfaa7ae171d1bf3812bef3a8bedda3f2bd21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e0befc61b39030bd7144cef10b54e70dc71e33a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419544"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Практическое руководство. Программный поиск текста в диапазонах листа
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Метод <xref:Microsoft.Office.Interop.Excel.Range> позволяет искать текст в диапазоне. Этот текст может также быть любой из строки ошибок, которые могут отображаться в ячейке листа, такие как `#NULL!` или `#VALUE!`. Дополнительные сведения о строках ошибок см. в разделе [ошибка значений ячеек](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
@@ -29,7 +29,7 @@ ms.locfileid: "56616980"
  Следующий пример выполняет поиск в диапазоне с именем `Fruits` и изменяет параметры шрифта для ячеек, содержащих слово «apples». В этой процедуре также используется <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> метод, который использует предыдущий набор параметров, чтобы повторить поиск поиска. Указывается ячейка, после которого следует выполнить поиск и <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> всем остальным занимается метод.
 
 > [!NOTE]
->  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Метода поиск с начала диапазона поиска после достижения конца диапазона. Код необходимо убедиться, что поиск не обтекает бесконечный цикл. В этом примере показан один из способов обработки это с помощью <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> свойство.
+> <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Метода поиск с начала диапазона поиска после достижения конца диапазона. Код необходимо убедиться, что поиск не обтекает бесконечный цикл. В этом примере показан один из способов обработки это с помощью <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> свойство.
 
  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Использование методов Find в надстройке Excel? ](http://go.microsoft.com/fwlink/?LinkID=130294).
 

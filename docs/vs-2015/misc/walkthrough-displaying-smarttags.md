@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436517"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Пошаговое руководство. Отображение смарт-тегов
 Смарт-теги устарели и были заменены меню лампочки. См. [Пошаговое руководство: Отображение предложений лампочки](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -24,7 +24,7 @@ ms.locfileid: "60110444"
  Хотя смарт-теги являются частью реализации IntelliSense в редакторе, их можно реализовать путем создания подкласса <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> и последующей реализации интерфейсов <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> и <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>.  
   
 > [!NOTE]
->  Аналогичным образом можно реализовать другие виды тегов.  
+> Аналогичным образом можно реализовать другие виды тегов.  
   
  Приведенное ниже Пошаговое руководство показывает, как создать смарт-тег, который отображается в текущем слове и имеет два предлагаемых действия: **Преобразовать в верхний регистр** и **преобразовать в нижний регистр**.  
   
@@ -183,4 +183,4 @@ ms.locfileid: "60110444"
 5. При нажатии кнопки должно отображаться два предлагаемых действия: **Преобразовать в верхний регистр** и **преобразовать в нижний регистр**. Если выбрать первое действие, все символы текущего слова должны преобразоваться в верхний регистр. Если выбрать второе действие, все символы должны преобразоваться в нижний регистр.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Пошаговое руководство: связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

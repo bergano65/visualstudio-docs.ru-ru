@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 19280ccd2564cdbec14a1d74ae8babb9447c05e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7c9b267893bacef8c9126b1a17b4eb444af6a1dd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103733"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692887"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ IDiaSymbol : IUnknown
  В следующей таблице показаны методы `IDiaSymbol`.  
   
 > [!NOTE]
->  Символы будут возвращены значимых данных для только некоторые из этих методов, в зависимости от типа символов. Если метод возвращает `S_OK`, а затем этот метод возвратил значимых данных.  
+> Символы будут возвращены значимых данных для только некоторые из этих методов, в зависимости от типа символов. Если метод возвращает `S_OK`, а затем этот метод возвратил значимых данных.  
   
 |Метод|Описание|  
 |------------|-----------------|  
@@ -102,7 +102,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|Получает флаг, указывающий, содержит ли функция longjmp команды (часть обработки исключений в стиле C).|  
 |[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|Получает флаг, указывающий, содержит ли модуль управляемого кода.|  
 |[IDiaSymbol::get_hasNestedTypes](../../debugger/debug-interface-access/idiasymbol-get-hasnestedtypes.md)|Получает флаг, указывающий, имеет ли тип пользовательских данных, вложенные определения типов.|  
-|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|Получает флаг, указывающий, имеет ли проверки безопасности, которые скомпилированы в функции или единице компиляции (через [/GS (проверка безопасности буфера)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) переключатель компилятора).|  
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|Получает флаг, указывающий, имеет ли проверки безопасности, которые скомпилированы в функции или единице компиляции (через [/GS (проверка безопасности буфера)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) переключатель компилятора).|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|Получает флаг, указывающий, имеет ли функция структурированную обработку исключений в стиле Win32.|  
 |[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|Получает флаг, указывающий, содержит ли функция setjmp команды.|  
 |[IDiaSymbol::get_indirectVirtualBaseClass](../../debugger/debug-interface-access/idiasymbol-get-indirectvirtualbaseclass.md)|Получает флаг, указывающий, является ли тип пользовательских данных косвенного виртуального базового класса.|  
@@ -117,12 +117,12 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|Получает флаг, указывающий, был ли преобразован в машинный код модуля из общих промежуточного языка (CIL).|  
 |[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|Получает флаг, указывающий, выровнены ли элементы типа пользовательских данных для определенных границ.|  
 |[IDiaSymbol::get_isHLSLData](../../debugger/debug-interface-access/idiasymbol-get-ishlsldata.md)|Указывает, представляет ли этот символ языке высокий уровень шейдер (HLSL) данных.|  
-|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|Получает флаг, указывающий, является ли модуль был скомпилирован с помощью [/hotpatch (создать образ с обновлениями)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) параметр компилятора.|  
+|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|Получает флаг, указывающий, является ли модуль был скомпилирован с помощью [/hotpatch (создать образ с обновлениями)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) параметр компилятора.|  
 |[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|Получает флаг, указывающий ли управляемой единицы компиляции был связан с LTCG компоновщика.|  
 |[IDiaSymbol::get_isMatrixRowMajor](../../debugger/debug-interface-access/idiasymbol-get-ismatrixrowmajor.md)|Указывает, является ли матрица основной строки.|  
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|Получает флаг, указывающий, является ли управляемой единицы компиляции .netmodule (содержащий только метаданные).|  
 |[IDiaSymbol::get_isMultipleInheritance](../../debugger/debug-interface-access/idiasymbol-get-ismultipleinheritance.md)|Указывает, является ли `this` указатель указывает на элемент данных с множественным наследованием.|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|Получает флаг, указывающий, имеет ли функция [с атрибутом naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) атрибута.|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|Получает флаг, указывающий, имеет ли функция [с атрибутом naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) атрибута.|  
 |[IDiaSymbol::get_isOptimizedAway](../../debugger/debug-interface-access/idiasymbol-get-isoptimizedaway.md)|Указывает, оптимизирована ли переменная немедленно.|  
 |[IDiaSymbol::get_isPointerBasedOnSymbolValue](../../debugger/debug-interface-access/idiasymbol-get-ispointerbasedonsymbolvalue.md)|Указывает, является ли `this` указатель зависит от значения символа.|  
 |[IDiaSymbol::get_isPointerToDataMember](../../debugger/debug-interface-access/idiasymbol-get-ispointertodatamember.md)|Указывает, является ли этот символ указатель на элемент данных.|  
@@ -152,8 +152,8 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_msil](../../debugger/debug-interface-access/idiasymbol-get-msil.md)|Получает флаг, указывающий на то, относится ли символ к кода промежуточного языка MSIL (Microsoft).|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|Извлекает имя символа.|  
 |[IDiaSymbol::get_nested](../../debugger/debug-interface-access/idiasymbol-get-nested.md)|Получает флаг, указывающий, вложен ли определяемый пользователем тип.|  
-|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|Получает флаг, указывающий, помечен ли функция [noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) атрибута.|  
-|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|Получает флаг, указывающий, является ли функция объявлена с помощью [noreturn](http://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) атрибута.|  
+|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|Получает флаг, указывающий, помечен ли функция [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) атрибута.|  
+|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|Получает флаг, указывающий, является ли функция объявлена с помощью [noreturn](https://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) атрибута.|  
 |[IDiaSymbol::get_noStackOrdering](../../debugger/debug-interface-access/idiasymbol-get-nostackordering.md)|Получает флаг, указывающий, можно ли сделать нет упорядоченности стека как часть проверки буфера стека.|  
 |[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|Получает флаг, указывающее, является ли функция или метки никогда не достигнут.|  
 |[IDiaSymbol::get_numberOfAcceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-numberofacceleratorpointertags.md)|Возвращает число тегов указатель сочетаний клавиш в функции заглушки C++ AMP.|  
@@ -264,7 +264,7 @@ IDiaSymbol : IUnknown
  В этом примере показано, как для отображения локальных переменных функции в данной относительный виртуальный адрес. Здесь также показано, как символы различных типов связаны друг с другом.  
   
 > [!NOTE]
->  `CDiaBSTR` — Это класс, который заключает в оболочку `BSTR` и автоматически обрабатывает освобождение строки, когда экземпляр выходит из области.  
+> `CDiaBSTR` — Это класс, который заключает в оболочку `BSTR` и автоматически обрабатывает освобождение строки, когда экземпляр выходит из области.  
   
 ```cpp#  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  

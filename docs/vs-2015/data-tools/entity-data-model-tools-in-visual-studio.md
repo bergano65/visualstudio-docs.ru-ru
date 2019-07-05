@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db58bb1826aab9a26dcec6a9475c49fc99057891
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: da608c7f937a09d56b25b87625580e5047d560cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661105"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705047"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Средства модели EDM в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "59661105"
 - Можно использовать **мастер обновления моделей** для обновления вашей концептуальную модель, модель хранения и сопоставления, когда были внесены изменения в основную базу данных.
 
   > [!NOTE]
-  >  Начиная с Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] средства не поддерживают [!INCLUDE[ss2k](../includes/ss2k-md.md)].
+  > Начиная с Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] средства не поддерживают [!INCLUDE[ss2k](../includes/ss2k-md.md)].
 
   Средства позволяют создать или изменить EDMX-файла. Этот файл содержит сведения, описывающие концептуальной модели, модели хранения и сопоставления между ними. Дополнительные сведения см. в разделе [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).
 
@@ -53,8 +53,8 @@ ms.locfileid: "59661105"
 
 |Заголовок|Описание|
 |-----------|-----------------|
-|[ADO.NET Entity Framework](http://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Описывает использование [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] средств, который [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] предоставляет для создания приложений.|
-|[Сущностная модель данных](http://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Предоставляет ссылки и сведения для работы с данными, используемый приложений на платформе [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
+|[ADO.NET Entity Framework](https://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Описывает использование [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] средств, который [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] предоставляет для создания приложений.|
+|[Сущностная модель данных](https://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Предоставляет ссылки и сведения для работы с данными, используемый приложений на платформе [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
 |[Приступая к работе на полной .NET (консоль, WinForms, WPF, и т.д.)](/ef/ef6/get-started)|Предоставляет учебники по созданию классических приложений .NET, использующих Entity Framework 7.|
 |[ASP.NET 5 приложения в новую базу данных](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|В этой статье описывается создание нового приложения ASP.NET 5 с помощью Entity Framework 7.|
 

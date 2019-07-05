@@ -7,24 +7,24 @@ helpviewer_keywords:
 - VSPackages, registering
 - VSPackages, registration manifests
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc97aad2d3a056a61ae925816ac6d2457918db65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 931950c399d853fc6296bf56e9fce0619c0e7e41
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100785"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328839"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Практическое руководство. Создание сведений реестра для установщика
 
 *RegPkg.exe* служебная программа может использоваться для создания манифеста регистрации для управляемого пакета VSPackage. Манифест могут быть включены в установочный пакет установщика Windows. RegPkg также можно создать файл, которое может быть включено в исходном файле установки на основе [набора инструментов Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=62238).
 
 > [!IMPORTANT]
->  RegPkg создает имена путей, относящихся к системе разработки, поэтому каждый раз при использовании RegPkg, необходимо изменить выходные данные для использования соответствующего установщика Windows в формате свойства. Например `InprocServer32` значение должно быть  *\<SystemFolder\>mscoree.dll* и пути следует использовать *\<#filekey\>* и  *\<$componentkey\>*. Настройка выходных данных таким образом поддерживает компьютеры с Windows, установлен на другом диске или в другом каталоге, локализованном каталоге имена и пути, которые пользователи могут выбирать. Дополнительные сведения см. в разделе [форматированный](http://go.microsoft.com/fwlink/?LinkId=71120) в пакете SDK для установщика Windows. При выполнении RegPkg соглашения для пути системы разработки — например, идентификаторы в формате файлов *соответствует\<filename\>*— требуется сделать меньшее количество изменений.
+> RegPkg создает имена путей, относящихся к системе разработки, поэтому каждый раз при использовании RegPkg, необходимо изменить выходные данные для использования соответствующего установщика Windows в формате свойства. Например `InprocServer32` значение должно быть  *\<SystemFolder\>mscoree.dll* и пути следует использовать *\<#filekey\>* и  *\<$componentkey\>* . Настройка выходных данных таким образом поддерживает компьютеры с Windows, установлен на другом диске или в другом каталоге, локализованном каталоге имена и пути, которые пользователи могут выбирать. Дополнительные сведения см. в разделе [форматированный](http://go.microsoft.com/fwlink/?LinkId=71120) в пакете SDK для установщика Windows. При выполнении RegPkg соглашения для пути системы разработки — например, идентификаторы в формате файлов *соответствует\<filename\>* — требуется сделать меньшее количество изменений.
 
 ## <a name="to-create-a-registration-manifest"></a>Создание регистрации манифеста
 

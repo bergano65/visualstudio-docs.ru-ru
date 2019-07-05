@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetContainerField method
 ms.assetid: d6b56b4f-a96b-4fa7-87c1-bac4e58fa766
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e215222b8637d97378dc9db24f995ab76123f00
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d3d4407659c9f94996c39dfd95ce0705bc8b66e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705155"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335190"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 Этот метод возвращает поле, содержащее адрес отладки.
@@ -38,14 +41,12 @@ int GetContainerField(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pAddress`
+## <a name="parameters"></a>Параметры
+`pAddress`\
+[in] Адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
 
- [in] Адрес, представленный [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) интерфейс.
-
- `ppContainerField`
-
- [out] Возвращает контейнер поля, представленного [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейс.
+`ppContainerField`\
+[out] Возвращает контейнер поля, представленного [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) интерфейс.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

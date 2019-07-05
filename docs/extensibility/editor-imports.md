@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99619efa5181fbcf299e99cde60b8879731c0c74
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b8c33ddcc712011556df76dbea71ddab432d9a31
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715639"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334597"
 ---
 # <a name="editor-imports"></a>Импорт в редакторе
 Вы можете импортировать несколько служб редактора фабрик и брокеров, которые предоставляют расширения с различными видами доступ к базовым редактором. Например, вы можете импортировать <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> добавив <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> для данного типа содержимого. (Этот навигатор позволяет выполнять различные виды поисковые запросы на текстовый буфер).
@@ -23,7 +23,7 @@ ms.locfileid: "56715639"
  Чтобы использовать редактор импорта, импортируйте его как поля или свойства класса, который экспортирует в компоненте Managed Extensibility Framework.
 
 > [!NOTE]
->  Дополнительные сведения о Managed Extensibility Framework, см. в разделе [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+> Дополнительные сведения о Managed Extensibility Framework, см. в разделе [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ## <a name="import-syntax"></a>Синтаксис импорта
  Приведенный ниже показано, как импортировать редактора параметры фабрики служб.
@@ -73,7 +73,7 @@ internal SVsServiceProvider ServiceProvider = null;
 |------------|--------------|
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Связь расширений файлов и <xref:Microsoft.VisualStudio.Utilities.IContentType> объектов.|
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Коллекция объектов <xref:Microsoft.VisualStudio.Utilities.IContentType>.|
-|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|Объекты <xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>.|
+|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation> Объекты.|
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Многие объекты адаптера редактора:<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|
 |<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> Объект для данного представления текста.|
 |<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>|Объект <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|

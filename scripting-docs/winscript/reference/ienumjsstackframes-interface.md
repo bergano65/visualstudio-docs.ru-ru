@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2e8302737fb4abf96c55d3ae70424cc03579b270
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963329"
 ---
 # <a name="ienumjsstackframes-interface"></a>Интерфейс IEnumJsStackFrames
 Реализуется отладчиком для предоставления стека раскрутки для jscript9diag.dll для JavaScript.  
@@ -31,7 +31,7 @@ IEnumJsStackFrames : public IUnknown;
   
 ### <a name="public-methods"></a>Открытые методы  
   
-|Имя|Описание:|  
+|name|Описание|  
 |----------|-----------------|  
 |[Метод IEnumJsStackFrames::Next](../../winscript/reference/ienumjsstackframes-next-method.md)|Получает заданное число фрагментов.|  
 |[Метод IEnumJsStackFrames::Reset](../../winscript/reference/ienumjsstackframes-reset-method.md)|Сбрасывает кадр стека в положение перед первым элементом.|  

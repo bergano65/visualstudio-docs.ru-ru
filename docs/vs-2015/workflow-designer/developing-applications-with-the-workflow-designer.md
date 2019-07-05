@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9eea79978b7b61de1e56d787b5a4cd9797be1aa6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073973"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704790"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Разработка приложений с помощью конструктора рабочего процесса
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] - это визуальный конструктор и отладчик для графического создания и отладки приложений [!INCLUDE[wf](../includes/wf-md.md)] в [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)], размещенном в среде разработки [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Он позволяет создавать сложные приложения рабочего процесса, библиотеки действий и службы [!INCLUDE[indigo1](../includes/indigo1-md.md)] с помощью шаблонов и конструкторов действий. [!INCLUDE[crabout](../includes/crabout-md.md)] рабочие процессы, см. в разделе [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] - это визуальный конструктор и отладчик для графического создания и отладки приложений [!INCLUDE[wf](../includes/wf-md.md)] в [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)], размещенном в среде разработки [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Он позволяет создавать сложные приложения рабочего процесса, библиотеки действий и службы [!INCLUDE[indigo1](../includes/indigo1-md.md)] с помощью шаблонов и конструкторов действий. [!INCLUDE[crabout](../includes/crabout-md.md)] рабочие процессы, см. в разделе [Windows Workflow Foundation &#91;.NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Ниже представлены несколько конструкторских особенностей, отделяющих эту новую версию [!INCLUDE[wfd2](../includes/wfd2-md.md)] от более старых версий [!INCLUDE[wfd2](../includes/wfd2-md.md)]:  
   
@@ -65,8 +65,8 @@ ms.locfileid: "60073973"
  [Разработка приложений рабочих процессов, предназначенных для платформы .NET 3.0 или .NET 3.5](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  Содержит руководство по использованию конструктора прежних версий, предназначенного для работы с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
- [Повторному размещению конструктора &#91;образцы WF&#93;](http://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
+ [Повторному размещению конструктора &#91;образцы WF&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
  В этом образце показано, как создать макет WPF, содержащий конструктор.  
   
- [Пользовательские конструкторы действий](http://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
+ [Пользовательские конструкторы действий](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
  В данном разделе содержатся образцы действий, использующих пользовательские конструкторы для отображения в конструкторе рабочих процессов.

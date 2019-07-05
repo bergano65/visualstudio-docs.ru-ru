@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e788abb51425e0f2656c10ba860602a36c8aad8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b2cbf516b5ed999623c05e7f68656199363906bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408445"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Справка по API SDK моделирования для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "58993661"
 Пакет SDK моделирования и визуализации Visual Studio предоставляет платформу, на котором строятся на предметно ориентированных языков (DSL) и средства UML.
 
 > [!NOTE]
->  Сведения об API моделирования UML, см. в разделе [Справочник по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md). Сведения о преобразования текста, см. в разделе [Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md).
+> Сведения об API моделирования UML, см. в разделе [Справочник по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md). Сведения о преобразования текста, см. в разделе [Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md).
 
  Этот раздел содержит справочные сведения о пространствах имен, имена которых начинаются с «Microsoft.VisualStudio.Modeling».
 

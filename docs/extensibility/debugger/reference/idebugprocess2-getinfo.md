@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetInfo
 ms.assetid: 46021dce-bb97-46c3-b0cc-e5b3b68acc35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2a3b8b1ef028562502454994da18e799b8f28b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e6227e8a4397dac03e9ecc70eedf2b902888cdbb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703555"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353144"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 Возвращает описание процесса.
@@ -38,14 +41,12 @@ int GetInfo(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `Fields`
+## <a name="parameters"></a>Параметры
+`Fields`\
+[in] Сочетание значений из [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) перечисления, указывающее, какие поля `pProcessInfo` параметра должны быть заполнены.
 
- [in] Сочетание значений из [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) перечисления, указывающее, какие поля `pProcessInfo` параметра должны быть заполнены.
-
- `pProcessInfo`
-
- [out] Объект [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуру, которая содержит описание процесса.
+`pProcessInfo`\
+[out] Объект [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) структуру, которая содержит описание процесса.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

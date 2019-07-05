@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a9aa9dd59a568ae766a7cd0939c41a4bcd97f640
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062052"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337304"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Связанные службы и интерфейсы (пакет VSPackage системы управления версиями)
 В этом разделе перечислены все интерфейсы, относящиеся к VSPackage, в элемент управления источником [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Системы управления версиями VSPackage реализует некоторые из этих интерфейсов и использует другим пользователям для выполнения задач системы управления версиями.

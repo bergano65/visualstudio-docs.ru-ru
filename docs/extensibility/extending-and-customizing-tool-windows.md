@@ -6,17 +6,17 @@ helpviewer_keywords:
 - user interfaces, essentials
 - tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d5c45c523263f469df7e89c484c252f1ed843d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c0eafb5a95151d6c3a805ad4d51c847f2fbe269d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699357"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341151"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Расширение и настройка окон инструментов
 Visual Studio предоставляет несколько разных типов окон, например окон инструментов, окон документов и диалоговых окнах. Другие окна, такие как **свойства** окне **выходные данные** окно и **список задач** окно, являются типами окна инструментов.

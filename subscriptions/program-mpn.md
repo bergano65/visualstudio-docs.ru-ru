@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о предлагаемых подписках, применяемых правилах и количестве подписок, предлагаемых в MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945405"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805304"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 Партнеры, получившие компетенцию или купившие Action Pack в MPN, имеют право на использование подписок Visual Studio. Эти подписки выдаются каждому пользователю отдельно и действуют только при назначении конкретному пользователю, который работает в партнерской организации.
@@ -47,12 +47,12 @@ ms.locfileid: "62945405"
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Подписки для партнеров, купивших Action Pack
 Партнеры с компетенцией не могут приобрести Action Pack. Партнер может приобрести только один Action Pack.
 
-За Action Pack партнер получает **3 подписки на Visual Studio Professional (MPN)**. Visual Studio Professional (MPN) — это индивидуальное предложение, не имеющее коммерческого эквивалента на рынке. Компоненты предложения:
+За Action Pack партнер получает **3 подписки на Visual Studio Professional (MPN)** . Visual Studio Professional (MPN) — это индивидуальное предложение, не имеющее коммерческого эквивалента на рынке. Компоненты предложения:
 - Visual Studio Professional — только последняя версия
 - Windows Enterprise — только последняя версия и только для разработки и тестирования
 - Windows Server — только последняя версия и только для разработки и тестирования
 
-Подписчики Visual Studio Professional (MPN) также могут загрузить и использовать бесплатное программное обеспечение для разработки, включая SQL Server Developer Edition.
+Подписчики Visual Studio Professional (MPN) также могут скачать и использовать программное обеспечение для разработки, включая SQL Server Developer Edition.
 
 Подписка Visual Studio Professional (MPN) не включает преимущества Azure DevOps Services, ежемесячные кредиты Azure, техническую поддержку, обучение и другие преимущества подписчиков, доступные при приобретении подписки Visual Studio.
 

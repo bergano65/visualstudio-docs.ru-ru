@@ -11,18 +11,18 @@ ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9b1f052392edab92dfd566c14bb0e452ca0056bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3595daa51fddf5c9c027d5643382918d85f83cc1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435675"
 ---
 # <a name="registering-an-expression-evaluator"></a>Регистрация вычислителя выражений
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Средство оценки выражений (EE) необходимо зарегистрировать себя в качестве фабрики класса со среды Windows COM и Visual Studio. EE реализовано как библиотеку DLL так, что он может внедряться в адресное пространство ядра (DE) отладки или адресное пространство Visual Studio, в зависимости от того, который создает экземпляр сущности EE.  
   
@@ -104,7 +104,7 @@ namespace EEMC
  Реализует EE DLL `DllRegisterServer` функции для регистрации в среде COM, а также Visual Studio.  
   
 > [!NOTE]
->  Пример реестра MyCEE кода кода можно найти в dllentry.cpp файл, который находится в VSIP установку с использованием EnVSDK\MyCPkgs\MyCEE.  
+> Пример реестра MyCEE кода кода можно найти в dllentry.cpp файл, который находится в VSIP установку с использованием EnVSDK\MyCPkgs\MyCEE.  
   
 ### <a name="dll-server-process"></a>Процесс сервера библиотеки DLL  
  При регистрации EE, сервер библиотеки DLL:  
@@ -121,7 +121,7 @@ namespace EEMC
     |`metricEngine`|`GUID`s подсистемы отладки (DE), которые работают с этой EE|  
   
     > [!NOTE]
-    >  `metricLanguage``GUID` Определяет язык, имя, но он является `guidLang` аргумент `SetEEMetric` , который выбирает язык. Когда компилятор формирует файла отладочной информации, он должен записывать соответствующий `guidLang` таким образом, чтобы DE знает, какие EE для использования. DE обычно запрашивают поставщик символов для данного языка `GUID`, который хранится в файле сведения отладки.  
+    > `metricLanguage``GUID` Определяет язык, имя, но он является `guidLang` аргумент `SetEEMetric` , который выбирает язык. Когда компилятор формирует файла отладочной информации, он должен записывать соответствующий `guidLang` таким образом, чтобы DE знает, какие EE для использования. DE обычно запрашивают поставщик символов для данного языка `GUID`, который хранится в файле сведения отладки.  
   
 3. Регистрирует с помощью Visual Studio, создав ключи в разделе HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, где *X.Y* — это версия Visual Studio для регистрации.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1da058cbbdda71758e9a158cfd6778a044797093
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039292"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703817"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Создание параметризованных запросов адаптера таблицы TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60039292"
 > При создании параметризованного запроса, используйте нотацию параметров, относящиеся к базе данных, разработки по. Например, источники данных Access и OleDb используют вопросительный знак "?" для обозначения параметров, поэтому предложение WHERE должно иметь следующий вид: `WHERE City = ?`.  
   
 > [!NOTE]
-> Диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от ваших текущих параметров или выпуска, который вы используете. Чтобы изменить параметры, перейдите к **средства** меню и выберите **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от ваших текущих параметров или выпуска, который вы используете. Чтобы изменить параметры, перейдите к **средства** меню и выберите **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-parameterized-tableadapter-query"></a>Создание параметризованного запроса адаптера таблицы 
   

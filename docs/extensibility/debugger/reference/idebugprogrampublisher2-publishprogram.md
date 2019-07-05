@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgram
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1553070f9afecf6ce60ac51b94ecb3f05d0eb9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d4f0b279bafe5291679237efdaada7907ddc515
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698772"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343372"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Этот метод выполняет программу для отладчиков (DEs) и диспетчер отладки сеансов.
@@ -40,18 +43,15 @@ int PublishProgram(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `Engines`
+## <a name="parameters"></a>Параметры
+`Engines`\
+[in] Массив идентификаторов GUID для DEs, которые можно запустить или присоединить к этой программе.
 
- [in] Массив идентификаторов GUID для DEs, которые можно запустить или присоединить к этой программе.
+`szFriendlyName`\
+[in] Понятное имя для программы (отображается в меню и диалоговых окон, показываемых пользователю).
 
- `szFriendlyName`
-
- [in] Понятное имя для программы (отображается в меню и диалоговых окон, показываемых пользователю).
-
- `pDebuggeeInterface`
-
- [in] `IUnknown` интерфейс для программы (это значение используется как файл cookie для уникальной идентификации программы; это же значение используется для отмены «публикации» программа)
+`pDebuggeeInterface`\
+[in] `IUnknown` интерфейс для программы (это значение используется как файл cookie для уникальной идентификации программы; это же значение используется для отмены «публикации» программа)
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.

@@ -1,16 +1,21 @@
 - name: Средства XML в Visual Studio
-  href: xml-tools-in-visual-studio.md
   items:
+    - name: Обзор
+      href: xml-tools-in-visual-studio.md
     - name: Редактор XML
-      href: xml-editor.md
       items:
+        - name: Обзор
+          displayName: XML editor
+          href: xml-editor.md
         - name: Проверка XML-документа
           href: xml-document-validation.md
         - name: Функции IntelliSense редактора XML
           href: xml-editor-intellisense-features.md
         - name: XML-фрагменты
-          href: xml-snippets.md
           items:
+            - name: Обзор
+              displayName: XML snippets overview
+              href: xml-snippets.md
             - name: Использование фрагментов XML
               href: how-to-use-xml-snippets.md
             - name: Создание фрагмента из схемы XML
@@ -44,11 +49,14 @@
         - name: Диалоговое окно "Схемы XML"
           href: xml-schemas-dialog-box.md
     - name: Конструктор схемы XML
-      href: xml-schema-designer.md
       items:
+        - name: Обзор
+          displayName: XML Schema Designer overview
+          href: xml-schema-designer.md
         - name: Обозреватель схемы XML
-          href: xml-schema-explorer.md
           items:
+            - name: Обозреватель схемы XML
+              href: xml-schema-explorer.md
             - name: Поиск набора схем
               href: searching-the-schema-set.md
             - name: 'Сортировка, фильтрация и группировка'
@@ -57,9 +65,10 @@
               href: context-menus-xml-schema-explorer.md
             - name: Интеграция литералов XML
               href: integration-of-xml-literals-with-xml-schema-explorer.md
-        - name: Рабочая область конструктора схем XML
-          href: xml-schema-designer-workspace.md
+        - name: Рабочая область
           items:
+            - name: Общие сведения о представлениях
+              href: xml-schema-designer-workspace.md
             - name: Начальное представление
               href: start-view.md
             - name: Представление модели содержимого
@@ -91,17 +100,19 @@
             - name: Диаграммы печати
               href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
             - name: Образец XSD-файлов
-              href: sample-xsd-files.md
               items:
                 - name: Простая схема
+                  displayName: Sample XSD files
                   href: sample-xsd-file-simple-schema.md
                 - name: Схема заказа на покупку
                   href: sample-xsd-file-purchase-order-schema.md
                 - name: Отношения
                   href: sample-xsd-file-relationships.md
     - name: Отладка XSLT
-      href: debugging-xslt.md
       items:
+        - name: Обзор
+          displayName: XSLT debugging
+          href: debugging-xslt.md
         - name: Пошаговое руководство. Отладка таблицы стилей XSLT
           href: walkthrough-debug-an-xslt-style-sheet.md
         - name: Вычисление выражения XPath

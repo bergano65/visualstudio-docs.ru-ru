@@ -7,13 +7,15 @@
 - name: Создание первого расширения. Hello World
   href: extensibility-hello-world.md
 - name: "Новые возможности пакета SDK для Visual Studio\_2019"
-  href: whats-new-visual-studio-2019-sdk.md
   items:
+    - name: "Новые возможности пакета SDK для Visual Studio\_2019"
+      href: whats-new-visual-studio-2019-sdk.md
     - name: Синхронно автозагруженные расширения
       href: synchronously-autoloaded-extensions.md
 - name: "Новые возможности пакета SDK для Visual Studio\_2017"
-  href: what-s-new-in-the-visual-studio-2017-sdk.md
   items:
+    - name: "Новые возможности пакета SDK для Visual Studio\_2017"
+      href: what-s-new-in-the-visual-studio-2017-sdk.md
     - name: Критические изменения в расширяемости
       href: breaking-changes-2017.md
     - name: "Поддержка NGen в VSIX\_v3"
@@ -29,13 +31,15 @@
 - name: Расширение перехода для Visual Studio
   href: how-to-roundtrip-VSIXs.md
 - name: Протокол языкового сервера
-  href: language-server-protocol.md
   items:
+    - name: Протокол языкового сервера
+      href: language-server-protocol.md
     - name: Добавление расширения протокола языкового сервера
       href: adding-an-lsp-extension.md
 - name: Открыть папку
-  href: open-folder.md
   items:
+    - name: Открыть папку
+      href: open-folder.md
     - name: Рабочие области
       href: workspaces.md
     - name: Контексты файла
@@ -47,8 +51,9 @@
     - name: Построить
       href: workspace-build.md
 - name: Расширение меню и команд
-  href: extending-menus-and-commands.md
   items:
+    - name: Расширение меню и команд
+      href: extending-menus-and-commands.md
     - name: Создание расширения с помощью команды меню
       href: creating-an-extension-with-a-menu-command.md
     - name: Добавление меню в строку меню Visual Studio
@@ -72,8 +77,9 @@
     - name: Локализация команд меню
       href: localizing-menu-commands.md
 - name: Добавление команд на панели инструментов
-  href: adding-commands-to-toolbars.md
   items:
+    - name: Добавление команд на панели инструментов
+      href: adding-commands-to-toolbars.md
     - name: Добавление панели инструментов
       href: adding-a-toolbar.md
     - name: Добавление панели инструментов в окно инструментов
@@ -85,8 +91,9 @@
     - name: Динамическое добавление элементов меню
       href: dynamically-adding-menu-items.md
 - name: Расширение и настройка окон инструментов
-  href: extending-and-customizing-tool-windows.md
   items:
+    - name: Расширение и настройка окон инструментов
+      href: extending-and-customizing-tool-windows.md
     - name: Создание расширения с помощью окна инструментов
       href: creating-an-extension-with-a-tool-window.md
     - name: Добавление окна инструментов
@@ -110,13 +117,15 @@
     - name: Создание модальных диалоговых окон и управление ими
       href: creating-and-managing-modal-dialog-boxes.md
 - name: Расширения редактора и языковой службы
-  href: editor-and-language-service-extensions.md
   items:
+    - name: Расширения редактора и языковой службы
+      href: editor-and-language-service-extensions.md
     - name: Создание расширения с помощью шаблона элемента редактора
       href: creating-an-extension-with-an-editor-item-template.md
     - name: Расширение редактора и языковых служб
-      href: extending-the-editor-and-language-services.md
       items:
+        - name: Расширение редактора и языковых служб
+          href: extending-the-editor-and-language-services.md
         - name: Начало работы с расширениями редактора и языковой службы
           href: getting-started-with-language-service-and-editor-extensions.md
         - name: Компоненты редактора
@@ -160,8 +169,9 @@
         - name: Пошаговое руководство. Доступ к объекту DTE из расширения редактора
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
     - name: Создание специализированных редакторов и конструкторов
-      href: creating-custom-editors-and-designers.md
       items:
+        - name: Создание специализированных редакторов и конструкторов
+          href: creating-custom-editors-and-designers.md
         - name: Пошаговое руководство. Создание специализированного редактора
           href: walkthrough-creating-a-custom-editor.md
         - name: Пошаговое руководство. Добавление функций в специализированный редактор
@@ -173,8 +183,9 @@
         - name: Цветовая маркировка синтаксиса в специализированных редакторах
           href: syntax-coloring-in-custom-editors.md
         - name: Данные документа и представление документа в специализированных редакторах
-          href: document-data-and-document-view-in-custom-editors.md
           items:
+            - name: Данные документа и представление документа в специализированных редакторах
+              href: document-data-and-document-view-in-custom-editors.md
             - name: Поддержка представления нескольких документов
               href: supporting-multiple-document-views.md
             - name: Упрощенное внедрение
@@ -194,8 +205,9 @@
         - name: "Руководство по миграции API расширяемости Конструктора\_XAML"
           href: xaml-designer-extensibility-migration.md
 - name: Расширение проектов
-  href: extending-projects.md
   items:
+    - name: Расширение проектов
+      href: extending-projects.md
     - name: Создание системы базового проекта. Часть 1
       href: creating-a-basic-project-system-part-1.md
     - name: Создание системы базового проекта. Часть 2
@@ -213,15 +225,17 @@
     - name: Управление универсальными проектами Windows
       href: managing-universal-windows-projects.md
 - name: Расширение решений
-  href: extending-solutions.md
   items:
+    - name: Расширение решений
+      href: extending-solutions.md
     - name: Расширение фильтра обозревателя решений
       href: extending-the-solution-explorer-filter.md
     - name: Управление загрузкой проекта в решении
       href: managing-project-loading-in-a-solution.md
 - name: Создание настраиваемых шаблонов проекта и элемента
-  href: creating-custom-project-and-item-templates.md
   items:
+    - name: Создание настраиваемых шаблонов проекта и элемента
+      href: creating-custom-project-and-item-templates.md
     - name: "Обновление настраиваемых шаблонов проектов и элементов для Visual Studio\_2017"
       href: upgrading-custom-project-and-item-templates-for-visual-studio-2017.md
     - name: Устранение неполадок обнаружения шаблонов
@@ -229,8 +243,9 @@
     - name: Использование мастеров для шаблонов проекта
       href: how-to-use-wizards-with-project-templates.md
     - name: Справочник по схеме шаблонов Visual Studio
-      href: visual-studio-template-schema-reference.md
       items:
+        - name: Справочник по схеме шаблонов Visual Studio
+          href: visual-studio-template-schema-reference.md
         - name: Элемент AppliesTo (шаблоны Visual Studio)
           href: appliesto-element-visual-studio-templates.md
         - name: Элемент Assembly (шаблоны Visual Studio)
@@ -338,8 +353,9 @@
     - name: Справочник по схемам манифеста шаблонов Visual Studio
       href: visual-studio-template-manifest-schema-reference.md
 - name: Расширение параметров и настроек пользователя
-  href: extending-user-settings-and-options.md
   items:
+    - name: Расширение параметров и настроек пользователя
+      href: extending-user-settings-and-options.md
     - name: Создание страницы параметров
       href: creating-an-options-page.md
     - name: Создание категории параметров
@@ -351,15 +367,17 @@
     - name: Запись в хранилище параметров пользователя
       href: writing-to-the-user-settings-store.md
 - name: Расширение свойств и окна свойств
-  href: extending-properties-and-the-property-window.md
   items:
+    - name: Расширение свойств и окна свойств
+      href: extending-properties-and-the-property-window.md
     - name: Предоставление свойств в окно свойств
       href: exposing-properties-to-the-properties-window.md
     - name: Получение свойств проекта
       href: getting-project-properties.md
 - name: "Расширения других элементов Visual\_Studio"
-  href: extending-other-parts-of-visual-studio.md
   items:
+    - name: "Расширения других элементов Visual\_Studio"
+      href: extending-other-parts-of-visual-studio.md
     - name: Создание расширения с помощью VSPackage
       href: creating-an-extension-with-a-vspackage.md
     - name: Создание элемента управления панели инструментов WPF
@@ -369,8 +387,9 @@
     - name: Расширение строки состояния
       href: extending-the-status-bar.md
     - name: Создание настраиваемой начальной страницы
-      href: creating-a-custom-start-page.md
       items:
+        - name: Создание настраиваемой начальной страницы
+          href: creating-a-custom-start-page.md
         - name: Пошаговое руководство. Добавление настраиваемого XAML-файла на начальную страницу
           href: walkthrough-adding-custom-xaml-to-the-start-page.md
         - name: Добавление пользовательского элемента на начальную страницу
@@ -386,29 +405,33 @@
 - name: Расширяемость проектов Visual Studio C++
   href: visual-cpp-project-extensibility.md
 - name: Руководство по работе пользователей Visual Studio
-  href: ux-guidelines/visual-studio-user-experience-guidelines.md
   items:
+    - name: Руководство по работе пользователей Visual Studio
+      href: ux-guidelines/visual-studio-user-experience-guidelines.md
     - name: Основы UX
       href: ux-guidelines/ux-essentials-for-visual-studio.md
     - name: Шрифты и форматирование
       href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
     - name: Настройка цветов и стиля
-      href: ux-guidelines/colors-and-styling-for-visual-studio.md
       items:
+        - name: Настройка цветов и стиля
+          href: ux-guidelines/colors-and-styling-for-visual-studio.md
         - name: Общие цвета
           href: ux-guidelines/shared-colors-for-visual-studio.md
         - name: Справочник по значениям цвета
           href: ux-guidelines/color-value-reference-for-visual-studio.md
     - name: Изображения и значки
-      href: ux-guidelines/images-and-icons-for-visual-studio.md
       items:
+        - name: Изображения и значки
+          href: ux-guidelines/images-and-icons-for-visual-studio.md
         - name: Словарь визуального языка
           href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
     - name: Меню и команды
       href: ux-guidelines/menus-and-commands-for-visual-studio.md
     - name: Шаблоны взаимодействия
-      href: ux-guidelines/interaction-patterns-for-visual-studio.md
       items:
+        - name: Шаблоны взаимодействия
+          href: ux-guidelines/interaction-patterns-for-visual-studio.md
         - name: Шаблоны приложений
           href: ux-guidelines/application-patterns-for-visual-studio.md
         - name: Шаблоны стандартных элементов управления
@@ -432,8 +455,9 @@
 - name: Каталог и служба образов
   href: image-service-and-catalog.md
 - name: Использование и предоставление служб
-  href: using-and-providing-services.md
   items:
+    - name: Использование и предоставление служб
+      href: using-and-providing-services.md
     - name: Получение службы
       href: how-to-get-a-service.md
     - name: Предоставление службы
@@ -443,8 +467,9 @@
     - name: 'Устранение неполадок, связанных со службами'
       href: how-to-troubleshoot-services.md
 - name: Управление пакетами VSPackage
-  href: managing-vspackages.md
   items:
+    - name: Управление пакетами VSPackage
+      href: managing-vspackages.md
     - name: Экспериментальный экземпляр
       href: the-experimental-instance.md
     - name: Регистрация и отмена регистрации пакетов VSPackage
@@ -466,8 +491,9 @@
 - name: Оболочка (изолированная или интегрированная)
   href: 'https://vspartner.com/pages/vsshells'
 - name: "Поставка расширений Visual\_Studio"
-  href: shipping-visual-studio-extensions.md
   items:
+    - name: "Поставка расширений Visual\_Studio"
+      href: shipping-visual-studio-extensions.md
     - name: Шаблон проекта VSIX
       href: vsix-project-template.md
     - name: Приступая к работе с использованием шаблона проекта VSIX
@@ -481,8 +507,9 @@
     - name: Добавление зависимости в пакет VSIX
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: Составляющие пакета VSIX
-      href: anatomy-of-a-vsix-package.md
       items:
+        - name: Составляющие пакета VSIX
+          href: anatomy-of-a-vsix-package.md
         - name: "Справочник по схеме\_2.0 расширений VSIX"
           href: vsix-extension-schema-2-0-reference.md
         - name: 'Структура файла [типы_содержимого].xml'
@@ -490,8 +517,9 @@
         - name: Конструктор манифеста VSIX
           href: vsix-manifest-designer.md
     - name: Локализация пакетов VSIX
-      href: localizing-vsix-packages.md
       items:
+        - name: Локализация пакетов VSIX
+          href: localizing-vsix-packages.md
         - name: Справочник по схеме языкового пакета 2.0 VSIX
           href: vsix-language-pack-schema-2-0-reference.md
     - name: Обновление расширения Visual Studio
@@ -501,20 +529,23 @@
     - name: Подписывание пакетов VSIX
       href: signing-vsix-packages.md
     - name: Private Galleries
-      href: private-galleries.md
       items:
+        - name: Private Galleries
+          href: private-galleries.md
         - name: Создание веб-канала Atom для частной коллекции
           href: how-to-create-an-atom-feed-for-a-private-gallery.md
         - name: Управление частной коллекцией с помощью параметров реестра
           href: how-to-manage-a-private-gallery-by-using-registry-settings.md
     - name: Поддержка нескольких версий Visual Studio
-      href: supporting-multiple-versions-of-visual-studio.md
       items:
+        - name: Поддержка нескольких версий Visual Studio
+          href: supporting-multiple-versions-of-visual-studio.md
         - name: Выбор между общими пакетами VSPackage и пакетами с контролем версий
           href: choosing-between-shared-and-versioned-vspackages.md
         - name: Регистрация расширений имен файлов для параллельных развертываний
-          href: registering-file-name-extensions-for-side-by-side-deployments.md
           items:
+            - name: Регистрация расширений имен файлов для параллельных развертываний
+              href: registering-file-name-extensions-for-side-by-side-deployments.md
             - name: Сведения о расширениях имен файлов
               href: about-file-name-extensions.md
             - name: Указание обработчиков файлов для расширений имен файлов
@@ -523,20 +554,24 @@
               href: registering-verbs-for-file-name-extensions.md
             - name: Управление параллельными сопоставлениями файлов
               href: managing-side-by-side-file-associations.md
-    - name: Обнаружение Visual Studio
+    - name: Расположение Visual Studio
       href: locating-visual-studio.md
+    - name: Запуск Visual Studio с помощью DTE
+      href: launch-visual-studio-dte.md
 - name: Компоненты пакета SDK для Visual Studio
   href: internals/toc.yml
 - name: Поддержка пакета SDK для Visual Studio
   href: support-for-the-visual-studio-sdk.md
 - name: Справочник по пакету SDK для Visual Studio
-  href: visual-studio-sdk-reference.md
   items:
+    - name: Справочник по пакету SDK для Visual Studio
+      href: visual-studio-sdk-reference.md
     - name: IntelliSenseHostFlags
       href: intellisensehostflags.md
     - name: Справочник по схемам XML VSCT
-      href: vsct-xml-schema-reference.md
       items:
+        - name: Справочник по схемам XML VSCT
+          href: vsct-xml-schema-reference.md
         - name: Элемент CommandTable
           href: commandtable-element.md
         - name: Элемент Extern
@@ -546,51 +581,61 @@
         - name: Элемент Define
           href: define-element.md
         - name: Элемент Commands
-          href: commands-element.md
           items:
+            - name: Элемент Commands
+              href: commands-element.md
             - name: Элемент Menus
-              href: menus-element.md
               items:
+                - name: Элемент Menus
+                  href: menus-element.md
                 - name: Элемент Menu
                   href: menu-element.md
             - name: Элемент Groups
-              href: groups-element.md
               items:
+                - name: Элемент Groups
+                  href: groups-element.md
                 - name: Элемент Group
                   href: group-element.md
             - name: Элемент Buttons
-              href: buttons-element.md
               items:
+                - name: Элемент Buttons
+                  href: buttons-element.md
                 - name: Элемент Button
                   href: button-element.md
             - name: Элемент Bitmaps
-              href: bitmaps-element.md
               items:
+                - name: Элемент Bitmaps
+                  href: bitmaps-element.md
                 - name: Элемент Bitmap
                   href: bitmap-element.md
             - name: Элемент Combos
-              href: combos-element.md
               items:
+                - name: Элемент Combos
+                  href: combos-element.md
                 - name: Элемент Combo
                   href: combo-element.md
         - name: Элемент CommandPlacements
-          href: commandplacements-element.md
           items:
+            - name: Элемент CommandPlacements
+              href: commandplacements-element.md
             - name: Элемент CommandPlacement
               href: commandplacement-element.md
         - name: Элемент VisibilityConstraints
-          href: visibilityconstraints-element.md
           items:
+            - name: Элемент VisibilityConstraints
+              href: visibilityconstraints-element.md
             - name: Элемент VisibilityItem
               href: visibilityitem-element.md
         - name: Элемент KeyBindings
-          href: keybindings-element.md
           items:
+            - name: Элемент KeyBindings
+              href: keybindings-element.md
             - name: Элемент KeyBinding
               href: keybinding-element.md
         - name: Элемент UsedCommands
-          href: usedcommands-element.md
           items:
+            - name: Элемент UsedCommands
+              href: usedcommands-element.md
             - name: Элемент UsedCommand
               href: usedcommand-element.md
         - name: Элемент Parent
@@ -598,8 +643,9 @@
         - name: Элемент Icon
           href: icon-element.md
         - name: Элемент Strings
-          href: strings-element.md
           items:
+            - name: Элемент Strings
+              href: strings-element.md
             - name: Элемент ButtonText
               href: buttontext-element.md
             - name: Элемент CommandName
@@ -607,18 +653,21 @@
         - name: Элемент CommandFlag
           href: command-flag-element.md
         - name: Элемент Symbols
-          href: symbols-element.md
           items:
+            - name: Элемент Symbols
+              href: symbols-element.md
             - name: Элемент GuidSymbol
-              href: guidsymbol-element.md
               items:
+                - name: Элемент GuidSymbol
+                  href: guidsymbol-element.md
                 - name: Элемент IDSymbol
                   href: idsymbol-element.md
         - name: Условные атрибуты схемы XML VSCT
           href: vsct-xml-schema-conditional-attributes.md
     - name: Идентификаторы GUID и константы в пакете SDK для Visual Studio
-      href: guids-and-constants-in-the-visual-studio-sdk.md
       items:
+        - name: Идентификаторы GUID и константы в пакете SDK для Visual Studio
+          href: guids-and-constants-in-the-visual-studio-sdk.md
         - name: Идентификаторы GUID среды IDE
           href: ide-guids.md
         - name: Константы среды IDE
@@ -626,11 +675,13 @@
     - name: Константы COM в управляемом коде
       href: com-constants-in-managed-code.md
     - name: Подключаемые модули системы управления версиями
-      href: source-control-plug-ins.md
       items:
+        - name: Подключаемые модули системы управления версиями
+          href: source-control-plug-ins.md
         - name: Функции API подключаемого модуля системы управления версиями
-          href: source-control-plug-in-api-functions.md
           items:
+            - name: Функции API подключаемого модуля системы управления версиями
+              href: source-control-plug-in-api-functions.md
             - name: Функция SccAdd
               href: sccadd-function.md
             - name: Функция SccAddFilesFromSCC
@@ -708,8 +759,9 @@
             - name: Функция SccWillCreateSccFile
               href: sccwillcreatesccfile-function.md
         - name: 'Функции обратного вызова, реализуемые интегрированной средой разработки'
-          href: callback-functions-implemented-by-the-ide.md
           items:
+            - name: 'Функции обратного вызова, реализуемые интегрированной средой разработки'
+              href: callback-functions-implemented-by-the-ide.md
             - name: LPTEXTOUTPROC
               href: lptextoutproc.md
             - name: POPLISTFUNC
@@ -721,8 +773,9 @@
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
         - name: Перечислители.
-          href: enumerators.md
           items:
+            - name: Перечислители.
+              href: enumerators.md
             - name: Перечислитель кода команды
               href: command-code-enumerator.md
             - name: Перечислитель сообщений
@@ -750,8 +803,9 @@
         - name: Отключение предупреждений о совместимости для подключаемых модулей системы управления версиями
           href: how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md
     - name: Параметры командной строки (пакет SDK для Visual Studio)
-      href: command-line-switches-visual-studio-sdk.md
       items:
+        - name: Параметры командной строки (пакет SDK для Visual Studio)
+          href: command-line-switches-visual-studio-sdk.md
         - name: Параметры командной строки для команды devenv для разработки VSPackage
           href: devenv-command-line-switches-for-vspackage-development.md
         - name: Добавление параметров командной строки
@@ -759,8 +813,9 @@
     - name: Обработка ошибок и возвращаемые значения
       href: error-handling-and-return-values.md
     - name: Объекты
-      href: objects.md
       items:
+        - name: Объекты
+          href: objects.md
         - name: Объект VSCodeWindow
           href: vscodewindow-object.md
         - name: Объект VSCodeWindowManager
@@ -772,8 +827,9 @@
     - name: Глоссарий пакета SDK для Visual Studio
       href: visual-studio-sdk-glossary.md
 - name: Создание пакета средств разработки
-  href: creating-a-software-development-kit.md
   items:
+    - name: Создание пакета средств разработки
+      href: creating-a-software-development-kit.md
     - name: 'Пошаговое руководство. Создание пакета SDK с помощью C# или Visual Basic'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: Пошаговое руководство. Создание пакета SDK с помощью C++
@@ -781,8 +837,9 @@
     - name: Пошаговое руководство. Создание пакета SDK с помощью JavaScript
       href: walkthrough-creating-an-sdk-using-javascript.md
 - name: Расширяемость платформы компилятора .NET (Roslyn)
-  href: dotnet-compiler-platform-roslyn-extensibility.md
   items:
+    - name: Расширяемость платформы компилятора .NET (Roslyn)
+      href: dotnet-compiler-platform-roslyn-extensibility.md
     - name: Начало работы с анализаторами Roslyn
       href: getting-started-with-roslyn-analyzers.md
     - name: Анализаторы Roslyn и библиотека для ImmutableArrays с поддержкой кода

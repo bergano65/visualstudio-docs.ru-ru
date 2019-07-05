@@ -6,17 +6,17 @@ helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d50800e527c6e79100bf699172f7fc30881b3299
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102722"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332735"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Создание родительской папки контейнера для решений
 В исходный элемент управления Plug-in API версии 1.2 пользователь может указать место назначения элемента управления источника один корневой для всех веб-проектов в решении. Это единственный корневой называется Super единой корневой (SUR).

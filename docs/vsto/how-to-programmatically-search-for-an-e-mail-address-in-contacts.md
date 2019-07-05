@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Программный поиск адреса электронной почты в контактах
+title: Найти адрес электронной почты в контактах программным способом
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 178549a815fd9a17377986a5b19e02db12ec76d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 26e32314db68ae064edac5537222447625cb051d
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115228"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328973"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Практическое руководство. Программный поиск адреса электронной почты в контактах
   В этом примере в папке контактов осуществляется поиск контактов, в адресах электронной почты которых содержится доменное имя **example.com** .

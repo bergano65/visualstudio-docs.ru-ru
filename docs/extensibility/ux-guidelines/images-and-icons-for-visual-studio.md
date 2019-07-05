@@ -3,17 +3,17 @@ title: Изображения и значки для Visual Studio | Докум�
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d57c06cbc465537e0ac523c8133a718369b5ea69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: becbd47ca49f44a84a2f58be9f2185e3d61b099b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087798"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335340"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Изображения и значки для Visual Studio
 ## <a name="BKMK_ImageUseInVisualStudio"></a> Использование изображений в Visual Studio

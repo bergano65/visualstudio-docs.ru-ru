@@ -13,12 +13,12 @@ ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5f450453ce8e336fecb401e30bc777c7b9c8ef7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 010ee75efd84f016b0eb68fa9f715102026a4678
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441489"
 ---
 # <a name="createpkgdef-utility"></a>Служебная программа CreatePkgDef
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58990489"
 Принимает DLL-файла для расширения Visual Studio, как параметр и создает файл pkgdef, сопровождающее DLL-файл. Файл pkgdef содержит всю информацию, которая в противном случае должна быть записана в системный реестр при установке расширения.  
   
 > [!NOTE]
->  Большая часть шаблонов проектов, которые включены в пакет SDK для Visual Studio автоматически создать файлах pkgdef как часть процесса построения. Этот документ предназначен для тех, кто хочет, чтобы преобразовать существующие пакеты, чтобы использовать развертывание .pkgdef или создание пакетов вручную.  
+> Большая часть шаблонов проектов, которые включены в пакет SDK для Visual Studio автоматически создать файлах pkgdef как часть процесса построения. Этот документ предназначен для тех, кто хочет, чтобы преобразовать существующие пакеты, чтобы использовать развертывание .pkgdef или создание пакетов вручную.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -53,7 +53,7 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
  Файлах pkgdef должен устанавливаться в одном из следующих расположений: %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ или %vsinstalldir%\Common7\IDE\Extensions\\. Если папка установки — %localappdata%\Microsoft\Visual Studio\14.0\Extensions\\, расширение будет распознаваться модулем Visual Studio, но будет отключена по умолчанию. Пользователь может включить расширение с помощью **расширения и обновления**. Если папка установки — %vsinstalldir%\Common7\IDE\Extensions\\, расширение включено по умолчанию.  
   
 > [!NOTE]
->  **Расширения и обновления** средство не может использоваться для доступа к расширением, если он не установлен как часть пакета VSIX.  
+> **Расширения и обновления** средство не может использоваться для доступа к расширением, если он не установлен как часть пакета VSIX.  
   
 ## <a name="see-also"></a>См. также  
  [Служебная программа CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

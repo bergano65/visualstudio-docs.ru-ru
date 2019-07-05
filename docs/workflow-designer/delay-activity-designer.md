@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e69c82899cb5f7aa24235641ae517709686170a7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949764"
 ---
 # <a name="delay-activity-designer"></a>Конструктор действия Delay
 
@@ -38,7 +38,7 @@ ms.locfileid: "55932850"
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.Delay>. Значение по умолчанию - Delay. Несмотря на то что <xref:System.Activities.Activity.DisplayName%2A> значение не является обязательным, рекомендуется использовать один.|
-|<xref:System.Activities.Statements.Delay.Duration%2A>|Да|Период времени, на который задерживается выполнение рабочего процесса. Это свойство задается в таблице свойств. Введите литерал <xref:System.TimeSpan> в формате 00:00:00 или выражение Visual Basic для указания периода времени.|
+|<xref:System.Activities.Statements.Delay.Duration%2A>|True|Период времени, на который задерживается выполнение рабочего процесса. Это свойство задается в таблице свойств. Введите литерал <xref:System.TimeSpan> в формате 00:00:00 или выражение Visual Basic для указания периода времени.|
 
 ## <a name="see-also"></a>См. также
 

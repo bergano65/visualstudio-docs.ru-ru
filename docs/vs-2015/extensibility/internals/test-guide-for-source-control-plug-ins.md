@@ -14,12 +14,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9efe5ffcd0428a11df69e3c80f28fdecaeb99aaf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a3ed1acdbf8d09616c413fa832dc452af277434b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441199"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Руководство по тестированию подключаемых модулей системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60100362"
 Этот раздел содержит рекомендации для тестирования системы управления версиями подключаемого модуля с [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Предоставляется широкий обзор наиболее распространенных областей тестирования, а также некоторые более сложные областей, которые может оказаться проблемой. В этом обзоре не предполагается исчерпывающий список тестовых случаев.  
   
 > [!NOTE]
->  Некоторые исправления ошибок и улучшения до последней версии [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки может выявить проблемы с существующего исходного элемента управления подключаемые модули, которые ранее не были найдены при использовании предыдущих версий [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Настоятельно рекомендуется провести тестирование вашей текущей системой управления версиями подключаемого модуля для областей, перечисленных в этом разделе описано, даже если изменения не были внесены в подключаемый модуль с момента предыдущей версии [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+> Некоторые исправления ошибок и улучшения до последней версии [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки может выявить проблемы с существующего исходного элемента управления подключаемые модули, которые ранее не были найдены при использовании предыдущих версий [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Настоятельно рекомендуется провести тестирование вашей текущей системой управления версиями подключаемого модуля для областей, перечисленных в этом разделе описано, даже если изменения не были внесены в подключаемый модуль с момента предыдущей версии [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="common-preparation"></a>Распространенные подготовки  
  Компьютер с [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и встраиваемый модуль управления версиями целевой установлена, обязателен. Аналогичным образом настроить второй машины можно использовать для некоторых открытия из системы управления версиями тесты.  
@@ -57,7 +57,7 @@ ms.locfileid: "60100362"
   
 ## <a name="test-areas-covered-in-this-section"></a>Тест, описываемые в этом разделе  
   
-- [Область тестирования 1. Добавление и открытие из системы управления версиями](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+- [Область тестирования 1. Добавление и открытие элементов в системе управления версиями](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
     - Case 1a. Добавить решение в систему управления версиями  
   
@@ -65,9 +65,9 @@ ms.locfileid: "60100362"
   
     - Вариант 1c: Добавьте решение из системы управления версиями  
   
-- [Область тестирования 2. Получить из системы управления версиями](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+- [Область тестирования 2. Получение элементов из системы управления версиями](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
-- [Область тестирования 3. Ознакомьтесь с / отменить извлечение](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+- [Область тестирования 3. Извлечение и отмена извлечения](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
     - Вариант 3. Ознакомьтесь с / отменить извлечение  
   
@@ -81,7 +81,7 @@ ms.locfileid: "60100362"
   
     - Case 3Д. Отменить извлечение  
   
-- [Область тестирования 4. Зарегистрируйся](../../extensibility/internals/test-area-4-check-in.md)  
+- [Область тестирования 4. Запись после изменения](../../extensibility/internals/test-area-4-check-in.md)  
   
     - Case 4а. Элементы, измененные  
   
@@ -89,7 +89,7 @@ ms.locfileid: "60100362"
   
     - Вариант 4c. Добавление проектов  
   
-- [Область тестирования 5. Смена системы управления версиями](../../extensibility/internals/test-area-5-change-source-control.md)  
+- [Область тестирования 5. Смена системы управления версиями](../../extensibility/internals/test-area-5-change-source-control.md)  
   
     - Case 5а. Привязка  
   
@@ -97,11 +97,11 @@ ms.locfileid: "60100362"
   
     - Вариант 5c. повторную привязку  
   
-- [Область тестирования 6. Удаление](../../extensibility/internals/test-area-6-delete.md)  
+- [Область тестирования 6. Удаление](../../extensibility/internals/test-area-6-delete.md)  
   
-- [Область тестирования 7. Предоставить общий доступ](../../extensibility/internals/test-area-7-share.md)  
+- [Область тестирования 7. Общий доступ](../../extensibility/internals/test-area-7-share.md)  
   
-- [Области тестирования 8. Переключение подключаемых модулей](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+- [Область тестирования 8. Переключение подключаемых модулей](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
     - Case 8a: Автоматическое изменение  
   

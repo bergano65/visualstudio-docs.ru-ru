@@ -1,5 +1,5 @@
 ---
-title: Добавление узлов в рабочую область из начального представления в конструктор XML-схем
+title: Добавлять узлы в рабочую область из начального представления в конструктор XML-схем
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad76a2606d5e6fedec162cea4a89505efbb8b39f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1a62b2225eec77b2b7e2a9f00af0ff5492640c19
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111666"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432178"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Практическое руководство. Добавление узлов в рабочую область из начального представления
 

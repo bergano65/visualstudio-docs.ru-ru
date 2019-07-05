@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetClassTypeByName method
 ms.assetid: 2c748909-51dc-49b7-b193-19f96fca1138
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f701415c011b304ac886669de5da8f813b26220
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc8ffe528b0cf416aa9319039be9be7223fe08f9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699604"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335251"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 Этот метод возвращает тип поля класса, представляющий полное имя класса.
@@ -40,18 +43,15 @@ int GetClassTypeByName(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
- `pszClassName`
+## <a name="parameters"></a>Параметры
+`pszClassName`\
+[in] Имя класса.
 
- [in] Имя класса.
+`nameMatch`\
+[in] Выбирает тип соответствия, например, с учетом регистра. Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления.
 
- `nameMatch`
-
- [in] Выбирает тип соответствия, например, с учетом регистра. Значение из [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) перечисления.
-
- `ppField`
-
- [out] Возвращает тип класса, представленные как [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) интерфейс.
+`ppField`\
+[out] Возвращает тип класса, представленные как [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) интерфейс.
 
 ## <a name="return-value"></a>Возвращаемое значение
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
