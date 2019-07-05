@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9302ae3119bceb466e3d681036753bd8237cbeae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316339"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559760"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Обновление настраиваемых шаблонов проектов и элементов для Visual Studio 2017
 
@@ -180,9 +180,9 @@ ms.locfileid: "66316339"
 
 Некоторые расширения на основе MSI развертывать шаблоны для общих расположений шаблона, такие как следующие каталоги:
 
-- **\<Каталог установки Visual Studio > \Common7\IDE\\< Шаблоны_проекта/ItemTemplates >**
+- **\<Каталог установки Visual Studio > \Common7\IDE\\< Шаблоны_проекта/ItemTemplates\>**
 
-- **\<Каталог установки Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< проект/ItemTemplates >**
+- **\<Каталог установки Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< проектов и элементов\>**
 
 Если расширение выполняет развертывание на основе MSI, необходимо вручную создать манифест шаблона и убедитесь, что он включен в установку расширения. В приведенных выше примерах .vstman сравнения и [Visual Studio шаблон манифеста Справочник по схеме](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
