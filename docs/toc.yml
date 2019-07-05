@@ -1,4 +1,4 @@
-- name: Документация по Visual Studio
+﻿- name: Документация по Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
 - name: Обзор
@@ -750,7 +750,7 @@
           href: ide/default-keyboard-shortcuts-in-visual-studio.md
     - name: Команды Visual Studio
       items:
-        - name: Ссылка
+        - name: Справочник
           displayName: Visual Studio commands
           href: ide/reference/visual-studio-commands.md
         - name: Псевдонимы команд

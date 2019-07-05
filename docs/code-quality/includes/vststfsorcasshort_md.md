@@ -1,4 +1,4 @@
----
+﻿---
 translation.priority.ht:
 - cs-cz
 - de-de

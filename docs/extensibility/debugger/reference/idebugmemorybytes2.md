@@ -1,4 +1,4 @@
----
+﻿---
 title: IDebugMemoryBytes2 | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
