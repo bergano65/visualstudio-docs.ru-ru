@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 813f06f55b6ae8f03a8d5a8e452ca05c4fe2054c
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67255991"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586837"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Вопросы и ответы по отладке моментальных снимков в Visual Studio
 
@@ -70,92 +70,91 @@ ms.locfileid: "67255991"
 
 Для масштабирования виртуальных машин и виртуальных машин наборы удалите пулы KeyVaults и NAT для входящего Трафика удаленного отладчика расширения, сертификаты, следующим образом:
 
-1. Удалите расширение удаленного отладчика  
+1. Удалите расширение удаленного отладчика
 
-   Чтобы отключить удаленный отладчик для виртуальных машин и масштабируемых наборов виртуальных машин несколькими способами:  
+   Чтобы отключить удаленный отладчик для виртуальных машин и масштабируемых наборов виртуальных машин несколькими способами:
 
-      - Отключить удаленный отладчик с помощью Cloud Explorer  
+      - Отключить удаленный отладчик с помощью Cloud Explorer
 
-         - Cloud Explorer > ресурс виртуальной машины > Отключить отладку (отключение отладки не существует для масштабируемого набора в Cloud Explorer виртуальных машин).  
+         - Cloud Explorer > ресурс виртуальной машины > Отключить отладку (отключение отладки не существует для масштабируемого набора в Cloud Explorer виртуальных машин).
 
+      - Отключить удаленный отладчик с помощью сценариев и командлетов PowerShell
 
-      - Отключить удаленный отладчик с помощью сценариев и командлетов PowerShell  
+         Для виртуальной машины:
 
-         Для виртуальной машины:  
-
+         ```powershell
+         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
          ```
-         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
-         ```
 
-         Для масштабируемых наборов виртуальных машин:  
-         ```
-         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName  
-         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name  
-         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension  
+         Для масштабируемых наборов виртуальных машин:
+
+         ```powershell
+         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name
+         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
          ```
 
       - Отключение удаленного отладчика на портале Azure
-         - Портал Azure > колонка ресурсов задает виртуальной машины или виртуальные машины масштабируемого > расширения  
-         - Удалить расширение Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
-
+         - Портал Azure > колонка ресурсов задает виртуальной машины или виртуальные машины масштабируемого > расширения
+         - Удалить расширение Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
 
          > [!NOTE]
          > Масштабируемые наборы виртуальных машин — портал не поддерживает удаление DebuggerListener порты. Необходимо будет использовать Azure PowerShell. Дополнительные сведения см. далее.
-  
+
 2. Удаление сертификатов и хранилище ключей Azure
 
-   При установке расширения удаленного отладчика для виртуальной машины или масштабируемые наборы виртуальных машин, для проверки подлинности клиента VS с Azure виртуальные машины создаются сертификаты клиента и сервера/масштабируемых наборов виртуальных машин ресурсы.  
+   При установке расширения удаленного отладчика для виртуальной машины или масштабируемые наборы виртуальных машин, для проверки подлинности клиента VS с Azure виртуальные машины создаются сертификаты клиента и сервера/масштабируемых наборов виртуальных машин ресурсы.
 
-   - Сертификат клиента  
+   - Сертификат клиента
 
-      Этот сертификат является самозаверяющий сертификат, находящийся в хранилище сертификатов: / CurrentUser/My /  
+      Этот сертификат является самозаверяющий сертификат, находящийся в хранилище сертификатов: / CurrentUser/My /
 
       ```
-      Thumbprint                                Subject  
-      ----------                                -------  
+      Thumbprint                                Subject
+      ----------                                -------
 
-      1234123412341234123412341234123412341234  CN=ResourceName  
+      1234123412341234123412341234123412341234  CN=ResourceName
       ```
 
       — Один из способов удалить этот сертификат с компьютера с помощью PowerShell
 
-      ```
-      $ResourceName = 'ResourceName' # from above  
-      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item  
+      ```powershell
+      $ResourceName = 'ResourceName' # from above
+      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item
       ```
 
    - Сертификат сервера
-      - Соответствующий отпечаток сертификата сервера развертывается как секрет в хранилище ключей Azure. VS попытается найти или создать хранилище ключей с префиксом MSVSAZ * в регион, соответствующий виртуальной машины или масштабируемые наборы виртуальных машин ресурсов. Все виртуальные машины или виртуальной машине масштабируемые наборы ресурсов, развернутых в этом регионе таким образом будут совместно использовать одного хранилища Key Vault.  
-      - Чтобы удалить секрет отпечаток сертификата сервера, перейдите на портал Azure и найти хранилище ключей MSVSAZ * в том же регионе, на котором размещается ваш ресурс. Удаление секрета, который требуется создать метки `remotedebugcert<<ResourceName>>`  
-      - Также необходимо будет удалить секрет сервера из ресурса с помощью PowerShell.  
+      - Соответствующий отпечаток сертификата сервера развертывается как секрет в хранилище ключей Azure. VS попытается найти или создать хранилище ключей с префиксом MSVSAZ * в регион, соответствующий виртуальной машины или масштабируемые наборы виртуальных машин ресурсов. Все виртуальные машины или виртуальной машине масштабируемые наборы ресурсов, развернутых в этом регионе таким образом будут совместно использовать одного хранилища Key Vault.
+      - Чтобы удалить секрет отпечаток сертификата сервера, перейдите на портал Azure и найти хранилище ключей MSVSAZ * в том же регионе, на котором размещается ваш ресурс. Удаление секрета, который требуется создать метки `remotedebugcert<<ResourceName>>`
+      - Также необходимо будет удалить секрет сервера из ресурса с помощью PowerShell.
 
-      Для виртуальных машин:  
+      Для виртуальных машин:
 
+      ```powershell
+      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVM -ResourceGroupName $rgName -VM $vm
       ```
-      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVM -ResourceGroupName $rgName -VM $vm  
-      ```
-                        
-      Для масштабируемых наборов виртуальных машин:  
 
-      ```
-      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss  
-      ```
-                        
-3. Удалите все пулы NAT для входящего Трафика DebuggerListener (масштабируемый набор виртуальных машин только)  
+      Для масштабируемых наборов виртуальных машин:
 
-   Удаленный отладчик вводит пулы NAT входящие DebuggerListener, которые применяются к подсистеме балансировки нагрузки в масштабируемом наборе.  
+      ```powershell
+      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
+      ```
 
-   ```
-   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools  
-   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-                
-   if ($LoadBalancerName)  
+3. Удалите все пулы NAT для входящего Трафика DebuggerListener (масштабируемый набор виртуальных машин только)
+
+   Удаленный отладчик вводит пулы NAT входящие DebuggerListener, которые применяются к подсистеме балансировки нагрузки в масштабируемом наборе.
+
+   ```powershell
+   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
+   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+
+   if ($LoadBalancerName)
    {
-      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName  
-      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-      Set-AzLoadBalancer -LoadBalancer $lb  
+      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName
+      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+      Set-AzLoadBalancer -LoadBalancer $lb
    }
    ```
 
@@ -164,12 +163,12 @@ ms.locfileid: "67255991"
 Для службы приложений:
 1. Отключите отладчик моментальных снимков на портале Azure для службы приложений.
 2. Портал Azure > колонка ресурсов вашей службы приложений > *параметры приложения*
-3. Удалить следующие параметры приложения на портале Azure и сохраните изменения. 
-    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
-    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+3. Удалить следующие параметры приложения на портале Azure и сохраните изменения.
+   - INSTRUMENTATIONENGINE_EXTENSION_VERSION
+   - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-    > [!WARNING]
-    > Все изменения параметров приложения будет инициировать перезапуск приложения. Дополнительные сведения о параметрах приложения см. в разделе [настроить приложение службы приложений на портале Azure](/azure/app-service/web-sites-configure).
+   > [!WARNING]
+   > Все изменения параметров приложения будет инициировать перезапуск приложения. Дополнительные сведения о параметрах приложения см. в разделе [настроить приложение службы приложений на портале Azure](/azure/app-service/web-sites-configure).
 
 Для AKS:
 1. Обновление Dockerfile для удаления в разделах, соответствующих [отладчик моментальных снимков Visual Studio на образы Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
@@ -184,16 +183,18 @@ ms.locfileid: "67255991"
 
 - Командлеты PowerShell из [Az PowerShell](https://docs.microsoft.com/powershell/azure/overview)
 
-    Виртуальная машина:
-    ```
-        Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings 
-    ```
-    
-    Масштабируемые наборы виртуальных машин:
-    ```
-        $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
-        Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
-    ```
+   Виртуальная машина:
+
+   ```powershell
+      Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
+
+   Масштабируемые наборы виртуальных машин:
+
+   ```powershell
+      $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+      Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
 
 ## <a name="see-also"></a>См. также
 

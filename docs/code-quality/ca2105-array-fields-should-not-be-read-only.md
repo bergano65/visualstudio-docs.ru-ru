@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0650738d4883e5458f5352155de04884498b5b9e
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 9f8a02ae357dbf36cb4d3e4bd21aaad0fed3a320
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159987"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586576"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105. Поля массивов не должны быть доступны только для чтения
 
@@ -77,7 +77,7 @@ After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades,
 
 ## <a name="related-rules"></a>Связанные правила
 
- - [CA2104: Не объявляйте чтения только изменяемые ссылочные типы](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md) 
+- [CA2104: Не объявляйте чтения только изменяемые ссылочные типы](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)
 
 ## <a name="see-also"></a>См. также
 
