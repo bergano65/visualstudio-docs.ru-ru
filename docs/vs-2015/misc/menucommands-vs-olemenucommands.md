@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
-ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000950"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624458"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>команды MenuCommand и OleMenuCommand
-Вы можете создавать команды меню на основе объекта <xref:System.ComponentModel.Design.MenuCommand> или <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> и реализовывать соответствующие обработчики событий. В большинстве случаев можно использовать <xref:System.ComponentModel.Design.MenuCommand>, как это делает шаблон проекта VSPackage, но иногда может потребоваться использовать <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
+Вы можете создавать команды меню путем наследования из <xref:System.ComponentModel.Design.MenuCommand> или <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , а также реализации соответствующих обработчиков событий. В большинстве случаев можно использовать <xref:System.ComponentModel.Design.MenuCommand>, как это делает шаблон проекта VSPackage, но иногда может потребоваться использовать <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
   
  Команды, которые VSPackage делает доступными в IDE, должны быть видимы и включены, чтобы пользователь смог их применять. Если команды создаются в VSCT-файле с помощью шаблона Visual Studio Package для проектов, то они видимы и включены по умолчанию. Устанавливая некоторые флаги команд, например `DynamicItemStart`, можно изменить это поведение по умолчанию. Видимость, включенность и другие свойства команды также можно изменять в коде во время выполнения, обратившись к объекту <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , связанному с командой.  
   
@@ -115,7 +115,7 @@ ms.locfileid: "63000950"
    </CommandPlacements>
    ```
       
-        Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
+      Если создать несколько размещений команд, имеющих одинаковые пары GUID:ID и разные родительские группы, меню будет отображаться в нескольких местах. Дополнительные сведения см. в описании элемента [CommandPlacements](../extensibility/commandplacements-element.md) .  
   
     Дополнительные сведения о связях и группах команд см. в разделе [группы кнопок для повторного использования создание](../extensibility/creating-reusable-groups-of-buttons.md).  
   
