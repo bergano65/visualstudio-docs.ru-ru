@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Узнайте, как воспользоваться преимуществом "Чат с Помощником по Azure", включенным в подписки Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: c5d547062fa820ff868fe12f8cb899d9d1e508b8
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 329aa109349a8f97e64cc478b7e843ca4d7b24e3
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033175"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586969"
 ---
 # <a name="azure-advisory-chat"></a>Чат с Помощником по Azure
 
@@ -42,7 +42,6 @@ ms.locfileid: "67033175"
 | Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка), Visual Studio Enterprise (ежемесячная облачная подписка, не для перепродажи (NFR) <sup>1</sup>) |        Все        | Недоступно |     Нет     |
 |                                          Visual Studio Test Professional (стандартная)                                          |        Все        | Недоступно |     Нет     |
 |                                                  MSDN Platforms (стандартная)                                                   |        Все        | Недоступно |     Нет     |
-
 
 <sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), Most Valuable Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), BizSpark, Imagine, MCT*
 

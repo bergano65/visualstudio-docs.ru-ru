@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Узнайте, как использовать службы Azure DevOps в качестве подписчика Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 99f2ca88f5cc5c543f546ff71a8f414f44adf177
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: ece1a09f900cad499082d3bf41a7d9f0a97a09ac
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032219"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586912"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Преимущества Azure DevOps для подписчиков Visual Studio
 
@@ -35,8 +35,6 @@ ms.locfileid: "67032219"
 <sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), Most Valuable Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (Enterprise), BizSpark, разработчик ПО и служб MCT. Не включает следующие категории: ПО и службы MCT, Imagine.*
 
 <sup>2</sup>  *Включает 2 ГБ, предоставляемых бесплатно*
-
-
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

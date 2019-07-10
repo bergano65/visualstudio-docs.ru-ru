@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о преимуществе сообщества Azure, включенном в некоторые подписки Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: afeed3f51e9a7ac00885906711c943f63896c80e
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 5cfdb90a42b7dc3baa68da21e7856a62ba7593b8
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032262"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586946"
 ---
 # <a name="azure-community"></a>Сообщество Azure
 
@@ -54,7 +54,6 @@ ms.locfileid: "67032262"
 |                              Visual Studio Test Professional (стандартная)                               |    Корпоративная лицензия, розничная версия     |   Один год    |    Yes     |
 |                                       MSDN Platforms (стандартная)                                       |    Корпоративная лицензия, розничная версия     |   Один год    |    Yes     |
 | Visual Studio Enterprise (ежемесячная облачная), Visual Studio Professional (ежемесячная облачная), не для перепродажи (NFR) <sup>1</sup> |        Все        | Недоступно |     Нет     |
-
 
 <sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), Microsoft FTE, Most Valuable Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT).*
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309798"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587030"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Вложение файлов в обозревателе решений
 
@@ -110,7 +110,8 @@ ms.locfileid: "67309798"
 > [!NOTE]
 > - Если вы не указали определенные расширения файлов для правила `pathSegment`, оно применяется ко всем расширениям. То есть любой файл с таким же именем и расширением, что и другой файл, но с дополнительным расширением в середине, будет вложен в другой файл.
 > - Вы можете ограничить действие правила `pathSegment` определенными расширениями файлов, указав их следующим образом:
->    ```
+>
+>    ```json
 >    "pathSegment": {
 >       "add": {
 >         ".*": [

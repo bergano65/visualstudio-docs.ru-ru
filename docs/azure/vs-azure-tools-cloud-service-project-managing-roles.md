@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: c982d999f3fa974db6ea409ee85e3bb7bbc57414
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b431803a8edee146db0341e02ea7f845099e22d0
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550965"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624038"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Управление ролями в облачных службах Azure с помощью Visual Studio
 После создания облачной службы Azure можно добавить в нее новые роли или удалить из нее существующие. Вы можете импортировать существующий проект и преобразовать его в роль. Например, можно импортировать веб-приложение ASP.NET и использовать его в качестве веб-роли.
@@ -46,26 +46,28 @@ ms.locfileid: "62550965"
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Повторное добавление роли в проект облачной службы Azure
 Если вы удалите роль из своего проекта облачной службы, но позже захотите снова добавить ее в проект, то будут добавлены только объявления роли и ее основные атрибуты, такие как сведения диагностики и информация о конечных точках. В файлы `ServiceDefinition.csdef` или `ServiceConfiguration.cscfg` не добавляются другие ресурсы и ссылки. Если вы хотите добавить эту информацию в файлы, то придется сделать это вручную.
 
-Предположим, вы удалили роль веб-службы, а затем решили вернуть ее обратно в решение. Если это сделать, то произойдет ошибка. Чтобы ее избежать, необходимо добавить элемент `<LocalResources>`, показанный в следующем XML-блоке, обратно в файл `ServiceDefinition.csdef`. Используйте имя роли веб-службы, добавленной в проект, в составе атрибута name для элемента **\<LocalStorage>**. В этом примере используется роль веб-службы с именем **WCFServiceWebRole1**.
+Предположим, вы удалили роль веб-службы, а затем решили вернуть ее обратно в решение. Если это сделать, то произойдет ошибка. Чтобы ее избежать, необходимо добавить элемент `<LocalResources>`, показанный в следующем XML-блоке, обратно в файл `ServiceDefinition.csdef`. Используйте имя роли веб-службы, добавленной в проект, в составе атрибута name для элемента **\<LocalStorage>** . В этом примере используется роль веб-службы с именем **WCFServiceWebRole1**.
 
-    <WebRole name="WCFServiceWebRole1">
-        <Sites>
-          <Site name="Web">
-            <Bindings>
-              <Binding name="Endpoint1" endpointName="Endpoint1" />
-            </Bindings>
-          </Site>
-        </Sites>
-        <Endpoints>
-          <InputEndpoint name="Endpoint1" protocol="http" port="80" />
-        </Endpoints>
-        <Imports>
-          <Import moduleName="Diagnostics" />
-        </Imports>
-       <LocalResources>
-          <LocalStorage name="WCFServiceWebRole1.svclog" sizeInMB="1000" cleanOnRoleRecycle="false" />
-       </LocalResources>
-    </WebRole>
+```xml
+<WebRole name="WCFServiceWebRole1">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+    </Endpoints>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <LocalResources>
+      <LocalStorage name="WCFServiceWebRole1.svclog" sizeInMB="1000" cleanOnRoleRecycle="false" />
+    </LocalResources>
+</WebRole>
+```
 
 ## <a name="next-steps"></a>Следующие шаги
 - [Настройка ролей для облачной службы Azure в среде Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md)

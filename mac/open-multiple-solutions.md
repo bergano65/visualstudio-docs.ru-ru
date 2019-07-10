@@ -1,17 +1,17 @@
 ---
-title: Как выполнить Открытие нескольких решений в Visual Studio для Mac
+title: Практическое руководство. Открытие нескольких решений в Visual Studio для Mac
 description: Узнайте, как открыть несколько решений в Visual Studio для Mac и несколько экземпляров приложения.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: 031ce885faa29e587fe5d48210d8e13b48fcdc4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 479ef72d2f14d0d1f9de5d193ca76ae2c6128daa
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937984"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691385"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Открытие нескольких решений или экземпляров Visual Studio для Mac
 
@@ -43,7 +43,7 @@ ms.locfileid: "62937984"
 
 Кроме того, если решение открывалось недавно, можно выполнить указанные ниже действия.
 
-1. Выберите **File (Файл)** > **Recent Solutions (Последние решения)**.
+1. Выберите **File (Файл)**  > **Recent Solutions (Последние решения)** .
 
     ![Снимок экрана меню Recent Solutions (Последние решения)](media/open-multiple-solutions-image2.png)
 

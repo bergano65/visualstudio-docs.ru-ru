@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 3ca6fd7461ac928751192a18b00f255d7bad2a30
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 0c3bc28131a6e8f341e5fac52ed10725e6a7a40c
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260619"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624126"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Как выполнить Перенос и публикация веб-приложения в облачную службу Azure из Visual Studio
 
@@ -47,7 +47,7 @@ ms.locfileid: "66260619"
 
 ### <a name="use-an-azure-sql-database-for-your-application"></a>Использование базы данных SQL Azure для приложения
 
-Если имеется строка подключения для веб-приложения, которое использует локальную базу данных SQL Server, нужно перенести базу данных в Базу данных SQL Azure и обновить строку подключения. Руководство по этому процессу см. в следующих статьях:
+Если имеется строка подключения для веб-приложения, которое использует локальную базу данных SQL Server, нужно перенести базу данных в базу данных SQL Azure и обновить строку подключения. Руководство по этому процессу см. в следующих статьях:
 
 - [Миграция базы данных SQL Server в базу данных SQL в облаке](/azure/sql-database/sql-database-cloud-migrate)
 - [Использование .NET (C#) с Visual Studio для подключения и создания запросов к базе данных SQL Azure](/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).
@@ -75,13 +75,13 @@ ms.locfileid: "66260619"
 
 В следующей таблице приведены сведения о запуске приложения в Azure.
 
-   | Тип веб-приложения | Выполнение в Azure |
-   | --- | --- | --- |
-   | Веб-приложение ASP.NET<br/>(включая MVC 2, MVC 3, MVC 4) | Выберите URL-адрес **журнала действий Azure** на вкладке **Развертывание**. |
-   | Пустое веб-приложение ASP.NET | Если в приложении уже имеется страница по умолчанию `.aspx`, выберите URL-адрес на вкладке **Развертывание** для **журнала действий Azure**. Чтобы перейти на другую страницу, введите в браузере следующий URL-адрес: `<deployment_url>/<page_name>.aspx` |
-   | Приложение Silverlight<br/>Бизнес-приложение Silverlight<br/>Приложение навигации Silverlight | Перейдите к заданной странице вашего приложения, используя URL-адрес в следующем формате: `<deployment_url>/<page_name>.aspx` |
-    Приложение службы WCF<br/>Приложение службы рабочего процесса WCF | Задайте `.svc` файл в качестве начальной страницы для проекта службы WCF. Затем перейдите на страницу `<deployment_url>/<service_file>.svc` |
-   | Динамические сущности ASP.NET<br/>Платформа динамических данных ASP.NET типа Linq to SQL | Обновите строку подключения (как описано в следующем разделе). Затем перейдите на страницу `<deployment_url>/<page_name>.aspx`. Для Linq to SQL необходимо использовать базу данных SQL Azure. |
+| Тип веб-приложения | Выполнение в Azure |
+| --- | --- |
+| Веб-приложение ASP.NET<br/>(включая MVC 2, MVC 3, MVC 4) | Выберите URL-адрес **журнала действий Azure** на вкладке **Развертывание**. |
+| Пустое веб-приложение ASP.NET | Если в приложении уже имеется страница по умолчанию `.aspx`, выберите URL-адрес на вкладке **Развертывание** для **журнала действий Azure**. Чтобы перейти на другую страницу, введите в браузере следующий URL-адрес: `<deployment_url>/<page_name>.aspx` |
+| Приложение Silverlight<br/>Бизнес-приложение Silverlight<br/>Приложение навигации Silverlight | Перейдите к заданной странице вашего приложения, используя URL-адрес в следующем формате: `<deployment_url>/<page_name>.aspx` |
+| Приложение службы WCF<br/>Приложение службы рабочего процесса WCF | Задайте `.svc` файл в качестве начальной страницы для проекта службы WCF. Затем перейдите на страницу `<deployment_url>/<service_file>.svc` |
+| Динамические сущности ASP.NET<br/>Платформа динамических данных ASP.NET типа Linq to SQL | Обновите строку подключения (как описано в следующем разделе). Затем перейдите на страницу `<deployment_url>/<page_name>.aspx`. Для Linq to SQL необходимо использовать базу данных SQL Azure. |
 
 ## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>Обновление строки подключения для динамических сущностей ASP.NET
 

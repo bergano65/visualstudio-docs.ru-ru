@@ -17,23 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d466dec85a0bdf242120ef5e88a0d5f5d2ac48e
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 04f33f3852f051e1f492cb2b6dca44fcdb260e11
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934517"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587009"
 ---
 # <a name="custombuild-task"></a>Задача CustomBuild
 
 Создает программу-оболочку для компилятора Visual C++ (cmd.exe). Этот класс является производным от [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), но не использует отслеживание файлов для обнаружения зависимостей между файлами. Все зависимости должны быть явно указаны как AdditionalDependencies, чтобы инкрементная сборка работала должным образом.
 
-
 ## <a name="parameters"></a>Параметры
 
 В следующей таблице приводятся параметры задачи **CustomBuild**.
 
-|Параметр|Описание|
+|Параметр|ОПИСАНИЕ|
 |---------------|-----------------|
 |**BuildSuffix**|Необязательный параметр типа **string**.|
 |**Sources**|Обязательный параметр **ITaskItem[]** .|

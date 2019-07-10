@@ -1,17 +1,17 @@
 ---
 title: Расширение Visual Studio для Mac
 description: Возможности и функции Visual Studio для Mac можно расширить с помощью модулей, называемых пакетами расширения. В первой части этого руководства создается простой пакет расширения Visual Studio для Mac для вставки даты и времени в документ. Во второй части руководства описаны базовые принципы работы системы пакетов расширения, а также некоторые основные API, составляющие основу Visual Studio для Mac.
-author: conceptdev
-ms.author: crdun
+author: alanjclark
+ms.author: alcl
 ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 1753eef9987bc59be55298489e10c5698eb944cc
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033122"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691661"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Расширение Visual Studio для Mac
 
