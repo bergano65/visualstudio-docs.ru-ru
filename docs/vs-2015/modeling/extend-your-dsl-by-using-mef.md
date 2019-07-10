@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be514104ebc3cd908cd9469c6b674a22f9dad401
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a1b90f37dcdadc53b6f2a81b9b4e9a860dd6a529
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696188"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692523"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Расширение доменного языка с помощью MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,7 +131,7 @@ ms.locfileid: "65696188"
   
    - Эта сборка обычно имеет имя, которое заканчивается на «. DSL.dll».  
   
-   - Если у вас есть доступ к проекту DSL, можно найти файл сборки в каталоге **Dsl\bin\\\\** *  
+   - Если у вас есть доступ к проекту DSL, можно найти файл сборки в каталоге **Dsl\\bin\\\***  
   
    - Если у вас есть доступ к DSL VSIX-файлу, вы можете найти сборку, изменив расширение VSIX-файл на «ZIP». Распакуйте ZIP-файл.  
   
@@ -159,7 +159,7 @@ ms.locfileid: "65696188"
   
    1. В **source.extension.vsixmanifest**, нажмите кнопку **добавить ссылку**  
   
-   2. В диалоговом окне щелкните **полезных данных, добавить** и найдите VSIX-файл DSL. VSIX-файл создается в решение DSL в ** DslPackage\bin\\\\***.  
+   2. В диалоговом окне щелкните **полезных данных, добавить** и найдите VSIX-файл DSL. VSIX-файл создается в решение DSL в **DslPackage\\bin\\\*** .  
   
        Это позволяет пользователям устанавливать DSL и расширения, в то же время. Если пользователь уже установил DSL, будет устанавливаться только расширения.  
   

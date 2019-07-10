@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af3f393aea8d1ecddaf021c896839d663b7d4028
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860402"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692117"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Отладка интерактивных приложений ASP.NET Azure с использованием Snapshot Debugger
 
@@ -63,19 +63,19 @@ ms.locfileid: "62860402"
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-2. Выберите **Отладка > Подключить Snapshot Debugger...**. Выберите Службу приложений Azure, в которой развернут ваш проект, и учетную запись хранения Azure, а затем нажмите **Подключить**.
+2. Выберите **Отладка > Подключить Snapshot Debugger...** . Выберите Службу приложений Azure, в которой развернут ваш проект, и учетную запись хранения Azure, а затем нажмите **Подключить**.
 
-      ![Запуск отладчика моментальных снимков из меню "Отладка"](../debugger/media/snapshot-debug-menu-attach.png)
+   ![Запуск отладчика моментальных снимков из меню "Отладка"](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![Выбор ресурса Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
+   ![Выбор ресурса Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
 
 ::: moniker-end
 
-  > [!IMPORTANT]
-  > При первом выборе функции **Подключить Snapshot Debugger** вам будет предложено установить расширение сайта Snapshot Debugger в Службу приложений Azure. Для этой установки требуется перезапуск Службы приложений Azure.
+   > [!IMPORTANT]
+   > При первом выборе функции **Подключить Snapshot Debugger** вам будет предложено установить расширение сайта Snapshot Debugger в Службу приложений Azure. Для этой установки требуется перезапуск Службы приложений Azure.
 
-  > [!NOTE]
-  > Расширение сайта Application Insights также поддерживает отладку моментальных снимков. При возникновении сообщения об ошибке из-за того, что расширение сайта устарело, ознакомьтесь со статьей [Устранение неполадок и известные проблемы для отладки моментальных снимков в Visual Studio](../debugger/debug-live-azure-apps-troubleshooting.md) для получения подробной информации об обновлении.
+   > [!NOTE]
+   > Расширение сайта Application Insights также поддерживает отладку моментальных снимков. При возникновении сообщения об ошибке из-за того, что расширение сайта устарело, ознакомьтесь со статьей [Устранение неполадок и известные проблемы для отладки моментальных снимков в Visual Studio](../debugger/debug-live-azure-apps-troubleshooting.md) для получения подробной информации об обновлении.
 
    Visual Studio теперь находится в режиме отладки моментальных снимков.
    ![Режим отладки моментальных снимков](../debugger/media/snapshot-message.png)
