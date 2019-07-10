@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Сведения о том, как администраторы могут устранить проблему, связанную с превышением числа назначений подписок
 searchscope: VS Subscription
-ms.openlocfilehash: 6217dcd3cef9a65db3e45ba76f57167f47535671
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: 06da8c460e9660857b0f03062bde5bd983bd176d
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945139"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587002"
 ---
 # <a name="overallocated-subscriptions"></a>Подписки с превышенным числом назначений
 
@@ -43,8 +43,8 @@ ms.locfileid: "64945139"
 >
 > В целях соблюдения требований лицензионных соглашений в отношении подписки клиент отвечает за проверку того, что для каждой назначенной таким образом подписки GitHub присутствует соответствующая подписка Visual Studio с GitHub, назначенная на портале управления.
 
-
 Дополнительные сведения об управлении [подписками Visual Studio с GitHub Enterprise](assign-github.md).
 
 ## <a name="support-resources"></a>Ресурсы поддержки
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.

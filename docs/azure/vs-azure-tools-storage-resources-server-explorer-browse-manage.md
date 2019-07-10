@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: f4cfa0abb9a6b61bdb5c27d3dd4243250162aa37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22c266516a2810191f05bb3de1d7215ea65dd040
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427784"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624107"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Просмотр и администрирование ресурсов хранилища с помощью обозревателя сервера
 
@@ -74,7 +74,7 @@ ms.locfileid: "62427784"
 
 1. Выберите контейнер BLOB-объектов в Cloud Explorer. В окне контейнера нажмите кнопку **Передать BLOB-объект**.
 
-1. В диалоговом окне **Отправить новый файл** нажмите кнопку **Обзор**, чтобы указать необходимый файл, а затем введите имя папки в поле **Папка (необязательно)**.
+1. В диалоговом окне **Отправить новый файл** нажмите кнопку **Обзор**, чтобы указать необходимый файл, а затем введите имя папки в поле **Папка (необязательно)** .
 
    ![Отправка файла в папку BLOB-объектов](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -94,7 +94,7 @@ ms.locfileid: "62427784"
 
 Отображаемые BLOB-объекты можно фильтровать по общему префиксу.
 
-Например, если ввести префикс **hello** в текстовое поле фильтра и нажать кнопку **Выполнить** (**!**), отобразятся только большие двоичные объекты, начинающиеся со слова "hello".
+Например, если ввести префикс **hello** в текстовое поле фильтра и нажать кнопку **Выполнить** ( **!** ), отобразятся только большие двоичные объекты, начинающиеся со слова "hello".
 
 ![Текстовое поле фильтра](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -183,7 +183,7 @@ BLOB-объект откроется в редакторе по умолчани
 
 В конструкторе таблиц откройте контекстное меню для сущности (одна строка) или свойства (одна ячейка) и выберите пункт **Изменить**.
 
-    ![Add or edit a table entity](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Добавление или изменение сущности таблицы](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Сущности в одной таблице не обязательно должны иметь одинаковый набор свойств (столбцов). При просмотре и изменении данных таблицы не забывайте о следующих ограничениях:
 

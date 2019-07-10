@@ -1,15 +1,15 @@
 ---
 title: Руководство. Создание многоконтейнерного приложения с помощью Docker Compose
 description: Узнайте, как управлять несколькими контейнерами и организовать между ними обмен данными в Visual Studio для Mac
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.date: 06/17/2019
-ms.openlocfilehash: df130e86de7f35c43459a70a12c0e9cfafbbe3a4
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 7570788b50a83d9a74657408d4f38fbce21bd1c3
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67196109"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691706"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Создание многоконтейнерного приложения с помощью Docker Compose
 
@@ -82,14 +82,14 @@ services:
    ```
 
 1. В файл *Index.cshtml* добавьте строку для отображения `ViewData["Message"]`, чтобы файл выглядел примерно так:
-    
+
       ```cshtml
       @page
       @model IndexModel
       @{
           ViewData["Title"] = "Home page";
       }
-    
+
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
           <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -98,7 +98,7 @@ services:
       ```
 
 1. Теперь перейдите в проект веб-API и добавьте в контроллер Values код с пользовательским сообщением API для вызова, который вы добавили из *webfrontend*:
-    
+
       ```csharp
         // GET api/values/5
         [HttpGet("{id}")]
@@ -107,6 +107,7 @@ services:
             return "webapi (with value " + id + ")";
         }
       ```
+
 1. Настройте проект `docker-compose` в качестве запускаемого проекта и запустите команду **Пуск > Начать отладку**. Если все настроено правильно, вы увидите следующее сообщение: Hello from webfrontend and webapi (with value 1) (Привет от webfrontend и веб-API (со значением 1)), как показано ниже:
 
 ![Выполнение решения с несколькими контейнерами docker](media/docker-multicontainer-debug.png)

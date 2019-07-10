@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
 searchscope: VS Subscription
-ms.openlocfilehash: de95cd0d1cc49006e451bf00c34757ab7daa5c0b
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 3dc72dbc801679e9baa4bc54b0343270d2f00a29
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465129"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586899"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
 
@@ -103,7 +103,6 @@ ms.locfileid: "67465129"
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Вопрос: Что делать, если мне нужно уменьшить количество подписок для моих клиентов?
 
 Ответ. Администратор компании сможет уменьшить количество подписок, открыв страницу https://manage.visualstudio.com и выполнив соответствующие инструкции из этой статьи. Система *не* распределит сумму пропорционально. Чтобы получить возмещение, необходимо обратиться в отдел выставления счетов Azure.
-
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>Вопрос: Если я отменю подписку, смогу ли я позднее приобрести другую годовую облачную подписку?
 Ответ.  Приобретение новой годовой облачной подписки будет недоступно, но у вас есть много других вариантов приобретения подписок на Visual Studio.  Подробная информация собрана на странице [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

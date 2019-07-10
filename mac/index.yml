@@ -3,8 +3,8 @@ documentType: LandingData
 title: "Документация по Visual\_Studio 2019 для Mac"
 metadata:
   description: "Эта статья знакомит с возможностями Visual\_Studio для\_Mac."
-  author: conceptdev
-  ms.author: crdun
+  author: asb3993
+  ms.author: amburns
   ms.date: 04/02/2019
   ms.topic: landing-page
   ms.prod: visual-studio-mac

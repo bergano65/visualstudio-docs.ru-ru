@@ -1,17 +1,17 @@
 ---
 title: Отладка — визуализации данных
 description: Отладка — это типичная и неотъемлемая часть программирования. Visual Studio для Mac предоставляет обширный набор функций для облегчения отладки. Эта статья рассматривает различные визуализации данных, которые можно просматривать при проверке объектов в отладчике.
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62984399"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691734"
 ---
 # <a name="data-visualizations"></a>Визуализации данных
 
@@ -48,7 +48,7 @@ Rectangle/RectangleF или CGRect в iOS и Mac отображает разме
 
 ![Визуализация цветов](media/data-visualizations-image14.png)
 
-## <a name="images"></a>Изображения
+## <a name="images"></a>Образы
 
 Носитель отрисовывается в масштабе вплоть до максимального размера 250 пикселей, после чего масштабируется для сохранения размера:
 

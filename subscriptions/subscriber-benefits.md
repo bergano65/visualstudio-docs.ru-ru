@@ -7,17 +7,16 @@ ms.date: 06/28/2019
 ms.topic: conceptual
 description: Узнайте о преимуществах, предусмотренных подпиской Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 27ec141156de16c4bca8862ed88f89731924d1af
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493736"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586992"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Преимущества, предусмотренные подпиской Visual Studio
 
 В рамках подписок Visual Studio (прежнее название — подписки MSDN) предлагается самый широкий набор инструментов для разработки, развертывания и администрирования великолепных приложений на различных платформах и устройствах, включая Windows, iOS, Android и Linux.  Определенные преимущества будут отличаться в зависимости от типа вашей подписки.  Чтобы максимально расширить диапазон возможностей для наших подписчиков, мы время от времени корректируем набор предоставляемых преимуществ, выбирая самые новые и полезные технологии, обучающие материалы и доступные преимущества от наших партнеров.
-
 
 На [портале для подписчиков](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:) преимущества делятся на три категории:
 
