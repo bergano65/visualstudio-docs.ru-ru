@@ -1,17 +1,20 @@
 ---
 title: Миграция расширяемость конструктора XAML
-ms.date: 04/17/2019
+ms.date: 07/09/2019
 ms.topic: conceptual
 author: lutzroeder
 ms.author: lutzr
 manager: jillfra
+dev_langs:
+- csharp
+- vb
 monikerRange: vs-2019
-ms.openlocfilehash: f83c40a67dc36301816b2384242d790a9f776044
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447362"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784476"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Миграция расширяемость конструктора XAML
 
@@ -44,7 +47,7 @@ ms.locfileid: "63447362"
 
 Модель расширяемости поверхности изоляции не допускает для расширений, чтобы он зависел от библиотеки фактического элемента управления, и таким образом, расширения не может ссылаться на типы из библиотеки элементов управления. Например *MyLibrary.designtools.dll* следует не зависят от *MyLibrary.dll*.
 
-Такие зависимости были наиболее распространенных при регистрации метаданных для типов с помощью таблиц атрибутов. Типы код расширения, который ссылается на библиотеки элементов управления напрямую через [typeof](/dotnet/csharp/language-reference/keywords/typeof) подставляется в новых интерфейсов API с помощью имен строковых типов:
+Такие зависимости были наиболее распространенных при регистрации метаданных для типов с помощью таблиц атрибутов. Типы код расширения, который ссылается на библиотеки элементов управления напрямую через [typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) в Visual Basic), подставляется в новых интерфейсов API с помощью имен строковых типов:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -68,6 +71,27 @@ public class AttributeTableProvider : IProvideAttributeTable
 }
 ```
 
+```vb
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Metadata
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Features
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Model
+
+<Assembly: ProvideMetadata(GetType(AttributeTableProvider))>
+
+Public Class AttributeTableProvider
+    Implements IProvideAttributeTable
+
+    Public ReadOnly Property AttributeTable As AttributeTable Implements IProvideAttributeTable.AttributeTable
+        Get
+            Dim builder As New AttributeTableBuilder
+            builder.AddCustomAttributes("MyLibrary.MyControl", New DescriptionAttribute(Strings.MyControlDescription))
+            builder.AddCustomAttributes("MyLibrary.MyControl", New FeatureAttribute(GetType(MyControlDefaultInitializer)))
+            Return builder.CreateTable()
+        End Get
+    End Property
+End Class
+```
+
 ## <a name="feature-providers-and-model-api"></a>Поставщики функций и API модели
 
 Поставщики функций реализуются в сборках, расширение и загруженных в процесс Visual Studio. `FeatureAttribute` продолжат ссылаться на типы поставщика функцию напрямую с помощью [typeof](/dotnet/csharp/language-reference/keywords/typeof).
@@ -84,6 +108,16 @@ TypeDefinition buttonType = ModelFactory.ResolveType(
 if (type != null && buttonType != type.IsSubclassOf(buttonType))
 {
 }
+```
+
+```vb
+Dim type As TypeDefinition = ModelFactory.ResolveType(
+    item.Context, New TypeIdentifier("MyLibrary.MyControl"))
+Dim buttonType As TypeDefinition = ModelFactory.ResolveType(
+    item.Context, New TypeIdentifier("System.Windows.Controls.Button"))
+If type?.IsSubclassOf(buttonType) Then
+
+End If
 ```
 
 API-интерфейсы, удаленное из набора API расширяемости поверхности изоляции:
@@ -123,7 +157,7 @@ API-интерфейсы, удаленное из набора API расшир�
 * `ModelService.Find(ModelItem startingItem, Predicate<Type> match)`
 * `ModelItem.ItemType`
 * `ModelProperty.AttachedOwnerType`
-* "ModelProperty.PropertyType
+* `ModelProperty.PropertyType`
 * `FeatureManager.CreateFeatureProviders(Type featureProviderType, Type type)`
 * `FeatureManager.CreateFeatureProviders(Type featureProviderType, Type type, Predicate<Type> match)`
 * `FeatureManager.InitializeFeatures(Type type)`
@@ -140,7 +174,7 @@ API-интерфейсы, удаленное из набора API расшир�
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-Известные типы-примитивы, такие как `int`, `string`, или `Thickness` может передаваться в API модели как экземпляры .NET Framework и будет преобразован в соответствующий объект в целевом процессе среда выполнения. Пример:
+Известные типы-примитивы, такие как `Int32`, `String`, или `Thickness` может передаваться в API модели как экземпляры .NET Framework и будет преобразован в соответствующий объект в целевом процессе среда выполнения. Например:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -154,6 +188,20 @@ public class MyControlDefaultInitializer : DefaultInitializer
     base.InitializeDefaults(item);
   }
 }
+```
+
+```vb
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Features
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Model
+
+Public Class MyControlDefaultInitializer
+    Inherits DefaultInitializer
+
+    Public Overrides Sub InitializeDefaults(item As ModelItem)
+        item.Properties!Width.SetValue(800.0)
+        MyBase.InitializeDefaults(item)
+    End Sub
+End Class
 ```
 
 ## <a name="limited-support-for-designdll-extensions"></a>Ограниченная поддержка. design.dll расширений
