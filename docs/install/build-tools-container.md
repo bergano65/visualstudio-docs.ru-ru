@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ce2fe1d40c0aeddf12a898919150a32c0c77d72e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 1c7d4b2cb910a6e6ee55ecb783fe124958d251e2
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177636"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624113"
 ---
 # <a name="install-build-tools-into-a-container"></a>Установка Build Tools в контейнер
 
@@ -28,101 +28,13 @@ ms.locfileid: "66177636"
 
 Если возможностей средств Visual Studio Build Tools недостаточно для сборки исходного кода, эти же инструкции можно использовать для других продуктов Visual Studio. Однако имейте в виду, что контейнеры Windows не поддерживают интерактивный пользовательский интерфейс, поэтому все команды должны быть автоматизированы.
 
-## <a name="overview"></a>Обзор
+## <a name="before-you-begin"></a>Подготовка к работе
 
-С помощью [Docker](https://www.docker.com/what-docker) вы создаете образ, на основе которого можно создавать контейнеры для сборки исходного кода. Пример файла Dockerfile устанавливает последнюю версию средств Visual Studio Build Tools и ряд других полезных программ, часто применяемых для сборки исходного кода. Собственный файл Dockerfile можно изменить, включив в него другие средства и скрипты для проведения тестов, публикации выходных данных сборки и других задач.
+Ниже предполагается, что вы знакомы с некоторыми функциями [Docker](https://www.docker.com/what-docker). Если вы еще знаете, как работать с Docker в Windows, прочитайте статью об [установке и настройке модуля Docker в Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
 
-Если вы уже установили Docker для Windows, вы можете перейти к шагу 3.
+Используемый далее базовый образ является примером и может не подойти для вашей системы. Ознакомьтесь со статьей [Windows container version compatibility](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) (Совместимость версий контейнеров Windows), чтобы определить, какой базовый образ вам следует использовать для среды.
 
-## <a name="step-1-enable-hyper-v"></a>Шаг 1. Включение Hyper-V
-
-По умолчанию технология Hyper-V отключена. Ее необходимо включить для запуска Docker для Windows, так как в настоящее время в Windows 10 поддерживается только изоляция Hyper-V.
-
-* [Включение Hyper-V в Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
-* [Включение Hyper-V в Windows Server 2016](https://docs.microsoft.com/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
-
-> [!NOTE]
-> На компьютере должна быть включена виртуализация. Как правило, она включена по умолчанию, однако если установить Hyper-V не удалось, обратитесь к документации по вашей системе за инструкциями по включению виртуализации.
-
-## <a name="step-2-install-docker-for-windows"></a>Шаг 2. Установка Docker для Windows
-
-Если вы используете Windows 10, то можете [скачать и установить Docker Community Edition](https://docs.docker.com/docker-for-windows/install). Если вы используете Windows Server 2016, следуйте [инструкциям по установке Docker Enterprise Edition](https://docs.docker.com/install/windows/docker-ee).
-
-## <a name="step-3-switch-to-windows-containers"></a>Шаг 3. Переключение на контейнеры Windows
-
-Средства Build Tools можно установить только в Windows, для чего нужно [переключиться на контейнеры Windows](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers). Контейнеры Windows в Windows 10 поддерживают только [изоляцию Hyper-V](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container), в то время как в Windows Server 2016 они поддерживают как изоляцию Hyper-V, так и изоляцию процессов.
-
-## <a name="step-4-expand-maximum-container-disk-size"></a>Шаг 4. Увеличение максимального размера диска для контейнеров
-
-Средства Visual Studio Build Tools, и тем более среда Visual Studio, требуют много места на диске для установки всех компонентов. Хотя используемый в качестве примера файл Dockerfile отключает кэш пакетов, размер диска для образов контейнеров следует увеличить до необходимого. В настоящее время увеличить размер диска в Windows можно только путем изменения конфигурации Docker.
-
-**Windows 10**
-
-1. В области уведомлений [щелкните правой кнопкой мыши значок Docker для Windows](https://docs.docker.com/docker-for-windows/#docker-settings) и выберите пункт **Параметры**.
-
-1. [Выберите раздел "Управляющая программа"](https://docs.docker.com/docker-for-windows/#docker-daemon).
-
-1. [Нажмите кнопку **Основные**](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file), чтобы переключиться в режим **Дополнительно**.
-
-1. Добавьте приведенное ниже свойство массива JSON, чтобы увеличить дисковое пространство до 127 ГБ (этого более чем достаточно для средств Build Tools с учетом накопления данных в будущем).
-
-   ```json
-   {
-     "storage-opts": [
-       "size=127G"
-     ]
-   }
-   ```
-
-   Это свойство добавляется к уже имеющимся. Например, после внесения этих изменений файл конфигурации управляющей программы по умолчанию должен выглядеть так:
-
-   ```json
-   {
-     "registry-mirrors": [],
-     "insecure-registries": [],
-     "debug": true,
-     "experimental": true,
-     "storage-opts": [
-       "size=127G"
-     ]
-   }
-   ```
-
-   Дополнительные параметры конфигурации и советы см. в статье [Docker Engine on Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) (Docker Engine в Windows).
-
-1. Нажмите кнопку **Применить**.
-
-**Windows Server 2016**
-
-1. Остановите службу docker.
-
-   ```shell
-   sc.exe stop docker
-   ```
-
-1. В командной строке с повышенными привилегиями отредактируйте файл "%ProgramData%\Docker\config\daemon.json" (или иной файл, указанный в `dockerd --config-file`).
-
-1. Добавьте приведенное ниже свойство массива JSON, чтобы увеличить дисковое пространство до 127 ГБ (этого более чем достаточно для средств Build Tools с учетом накопления данных в будущем).
-
-   ```json
-   {
-     "storage-opts": [
-       "size=120G"
-     ]
-   }
-   ```
-
-   Это свойство добавляется к уже имеющимся. Дополнительные параметры конфигурации и советы см. в статье [Docker Engine on Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) (Docker Engine в Windows).
- 
-1. Сохраните и закройте файл.
-
-1. Запустите службу docker.
-
-   ```shell
-   sc.exe start docker
-   ```
-
-## <a name="step-5-create-and-build-the-dockerfile"></a>Шаг 5. Создание и сборка Dockerfile
+## <a name="create-and-build-the-dockerfile"></a>Создание и сборка Dockerfile
 
 Сохраните приведенный ниже пример Dockerfile в новый файл на диске. Если файл имеет имя Dockerfile, он распознается по умолчанию.
 
@@ -177,9 +89,9 @@ ms.locfileid: "66177636"
    ```
 
    > [!WARNING]
-   > Если образ основан непосредственно на microsoft/windowsservercore или mcr.microsoft.com/windows/servercore (см. статью блога о [переходе Майкрософт на модель объединения каталогов контейнеров](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/)), платформа .NET Framework может не установиться правильно, причем сообщения об ошибках выводиться не будут. После завершения установки управляемый код может не запускаться. Вместо этого создайте образ на основе [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) или более поздней версии. Также обратите внимание, что образы, для которых указана версия 4.7.1 или более поздняя, могут использовать PowerShell в качестве `SHELL` по умолчанию, что будет приводить к сбою инструкций `RUN` и `ENTRYPOINT`.
+   > Если образ основан непосредственно на microsoft/windowsservercore или mcr.microsoft.com/windows/servercore (см. статью блога о [переходе Майкрософт на модель объединения каталогов контейнеров](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/)), платформа .NET Framework может не установиться правильно, причем сообщения об ошибках выводиться не будут. После завершения установки управляемый код может не запускаться. Вместо этого создайте образ на основе [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) или более поздней версии. Также обратите внимание, что образы, для которых указана версия 4.7.2 или более поздняя, могут использовать PowerShell в качестве `SHELL` по умолчанию, что будет приводить к сбою инструкций `RUN` и `ENTRYPOINT`.
    >
-   > Visual Studio 2017 версии 15.8 или более ранней (любого продукта) не будет правильно установлена на образ mcr\.microsoft\.com\/windows\/servercore:1809 или более поздней версии. При этом сообщение об ошибке не отображается.
+   > Visual Studio 2017 версии 15.8 или более ранней (любого продукта) не будет правильно установлена на образ mcr.microsoft.com/windows/servercore:1809 или более поздней версии. При этом сообщение об ошибке не отображается.
    >
    > Список версий ОС контейнеров, поддерживаемых определенными версиями ОС узлов, см. в статье [Windows container version compatibility](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility). Сведения об известных проблемах с контейнерами [см. в этой статье](build-tools-container-issues.md).
 
@@ -217,7 +129,7 @@ ms.locfileid: "66177636"
    ```
 
    > [!WARNING]
-   > Если образ основан непосредственно на microsoft/windowsservercore, платформа .NET Framework может не установиться правильно, причем сообщения об ошибках выводиться не будут. После завершения установки управляемый код может не запускаться. Вместо этого создайте образ на основе [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) или более поздней версии. Также обратите внимание, что образы, для которых указана версия 4.7.1 или более поздняя, могут использовать PowerShell в качестве `SHELL` по умолчанию, что будет приводить к сбою инструкций `RUN` и `ENTRYPOINT`.
+   > Если образ основан непосредственно на microsoft/windowsservercore, платформа .NET Framework может не установиться правильно, причем сообщения об ошибках выводиться не будут. После завершения установки управляемый код может не запускаться. Вместо этого создайте образ на основе [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) или более поздней версии. Также обратите внимание, что образы, для которых указана версия 4.8 или более поздняя, могут использовать PowerShell в качестве `SHELL` по умолчанию, что будет приводить к сбою инструкций `RUN` и `ENTRYPOINT`.
    >
    > Список версий ОС контейнеров, поддерживаемых определенными версиями ОС узлов, см. в статье [Windows container version compatibility](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility). Сведения об известных проблемах с контейнерами [см. в этой статье](build-tools-container-issues.md).
 
@@ -249,7 +161,7 @@ ms.locfileid: "66177636"
 
    ::: moniker-end
 
-## <a name="step-6-using-the-built-image"></a>Шаг 6. Использование собранного образа
+## <a name="using-the-built-image"></a>Использование собранного образа
 
 После создания образа его можно запустить в контейнере для выполнения как интерактивной, так и автоматической сборки. В этом примере используется Командная строка разработчика, поэтому PATH и другие переменные среды уже настроены.
 
