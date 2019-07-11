@@ -2,7 +2,7 @@
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
-ms.date: 05/22/2019
+ms.date: 06/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328832"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552868"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
@@ -41,8 +41,8 @@ ms.locfileid: "67328832"
 
 ## <a name="develop"></a>Разработка
 
-Экономьте время с помощью новых функций.
-<br><br>
+Посмотрите видео ниже, чтобы узнать, как вы можете экономить время благодаря новым возможностям. <br><br>*Длительность видео: 3:00 мин.*
+
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>Улучшенный поиск
@@ -104,8 +104,8 @@ ms.locfileid: "67328832"
 
 ## <a name="collaborate"></a>Совместная работа
 
-Объединяйте усилия для решения проблем.
-<br><br>
+Посмотрите видео ниже, чтобы узнать, как решать проблемы совместно с другими специалистами. <br><br>*Длительность видео: 4:22 мин.*
+
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
 ### <a name="cloud-first-workflow"></a>Рабочий процесс на базе облака
@@ -142,8 +142,8 @@ ms.locfileid: "67328832"
 
 ## <a name="debug"></a>Отладка
 
-Сосредотачивайтесь на важном благодаря точному определению целевых объектов.
-<br><br>
+Посмотрите видео ниже, чтобы узнать, как быстро находить проблемный код при отладке. <br><br>*Длительность видео: 3:54 мин.*
+
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>Повышение производительности

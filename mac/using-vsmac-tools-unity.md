@@ -3,14 +3,14 @@ title: Применение инструментов Visual Studio для Mac д
 description: В этом руководстве описывается использование инструментов Visual Studio для Mac для Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 04/02/2019
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: daffb7721164ae49888a894bec7cad3ac74801a4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966055"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692217"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Применение инструментов Visual Studio для Mac для Unity
 
@@ -26,7 +26,7 @@ ms.locfileid: "62966055"
 
 ## <a name="unity-documentation-access"></a>Доступ к документации по Unity
 
-Инструменты Visual Studio для Mac для Unity включают в себя ярлык для доступа к документации по API Unity. Чтобы обратиться к документации по API Unity из Visual Studio для Mac, наведите курсор на соответствующий API Unity и нажмите **⌘ COMMAND+‘**.
+Инструменты Visual Studio для Mac для Unity включают в себя ярлык для доступа к документации по API Unity. Чтобы обратиться к документации по API Unity из Visual Studio для Mac, наведите курсор на соответствующий API Unity и нажмите **⌘ COMMAND+‘** .
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense для сообщений Unity
 Подсистема Unity осуществляет широковещательную передачу сообщений в скрипты MonoBehaviour, позволяя разработчикам писать код, который реагирует на сообщения, такие как OnMouseDown, OnTriggerEnter и т. д. Так как это не виртуальные методы в базовом классе MonoBehaviour, в некоторых IDE, например MonoDevelop, не хватает функций завершения кода для сообщений Unity.
@@ -61,7 +61,7 @@ ms.locfileid: "62966055"
 
 ## <a name="adding-new-unity-files-and-folders"></a>Добавление новых файлов и папок Unity
 
-Хотя вы всегда можете добавить новые файлы в проект Unity с помощью редактора Unity, Visual Studio для Mac позволяет легко создавать новые скрипты, шейдеры и папки Unity с помощью Visual Studio.
+Хотя вы всегда можете добавить новые файлы в проект Unity с помощью редактора Unity, Visual Studio для Mac позволяет легко создавать новые скрипты, шейдеры, структуры, перечисления и папки Unity с помощью Visual Studio.
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>Добавление нового скрипта C# MonoBehaviour
 
