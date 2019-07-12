@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433153"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825931"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Определение обработчика жестов на схеме моделирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -282,34 +282,34 @@ ms.locfileid: "63433153"
   
 - `ShapeElement target`. Фигура или схема, на которую пользователь перетащил объекты.  
   
-     `ShapeElement`. Класс реализации, лежащий в основе инструментов моделирования UML. Чтобы снизить риск приведения модели и схем UML в несогласованное состояние, рекомендуется не использовать методы этого класса напрямую. Вместо этого инкапсулируйте элемент в `IShape`, а затем с помощью методов, описанных в [отображение модели UML на схемах](../modeling/display-a-uml-model-on-diagrams.md).  
-  
-    - Получение оболочки `IShape`:  
-  
-        ```  
-        IShape targetIShape = target.CreateIShape(target);  
-        ```  
-  
-    - Получение элемента модели, который является целевым объектом операции перетаскивания или двойного щелчка:  
-  
-        ```  
-        IElement target = targetIShape.Element;  
-        ```  
-  
-         Его можно привести к более конкретному типу элемента.  
-  
-    - Получение хранилища моделей UML, которое содержит модель UML:  
-  
-        ```  
-        IModelStore modelStore =   
-          targetIShape.Element.GetModelStore();   
-        ```  
-  
-    - Получение доступа к основному приложению и поставщику услуг:  
-  
-        ```  
-        target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
-        ```  
+    `ShapeElement`. Класс реализации, лежащий в основе инструментов моделирования UML. Чтобы снизить риск приведения модели и схем UML в несогласованное состояние, рекомендуется не использовать методы этого класса напрямую. Вместо этого инкапсулируйте элемент в `IShape`, а затем с помощью методов, описанных в [отображение модели UML на схемах](../modeling/display-a-uml-model-on-diagrams.md).  
+
+  - Получение оболочки `IShape`:  
+
+      ```  
+      IShape targetIShape = target.CreateIShape(target);  
+      ```  
+
+  - Получение элемента модели, который является целевым объектом операции перетаскивания или двойного щелчка:  
+
+      ```  
+      IElement target = targetIShape.Element;  
+      ```  
+
+        You can cast this to a more specific type of element.  
+
+  - Получение хранилища моделей UML, которое содержит модель UML:  
+
+      ```  
+      IModelStore modelStore =   
+        targetIShape.Element.GetModelStore();   
+      ```  
+
+  - Получение доступа к основному приложению и поставщику услуг:  
+
+      ```  
+      target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
+      ```  
   
 - `DiagramDragEventArgs eventArgs`. Этот параметр содержит исходный объект операции перетаскивания в сериализованной форме.  
   

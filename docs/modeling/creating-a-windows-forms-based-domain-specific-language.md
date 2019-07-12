@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ad4e3c3007a00245f632e4645deb1014b5c22508
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746807"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821392"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Создание форм Windows доменного языка
 
@@ -59,9 +59,9 @@ Windows Forms можно использовать для отображения 
 
 - `UI` Проект содержит рабочий образец элемента управления формы, привязанный к линии DSL. Тем не менее он не будут работать при изменении определения DSL. `UI` Проект содержит:
 
-    - Класс Windows Forms с именем `ModelViewControl`.
+  - Класс Windows Forms с именем `ModelViewControl`.
 
-    - Файл с именем `DataBinding.cs` , содержащий дополнительные частичное определение `ModelViewControl`. Чтобы просмотреть его содержимое в **обозревателе решений**, откройте контекстное меню для файла и выберите **Просмотр кода**.
+  - Файл с именем `DataBinding.cs` , содержащий дополнительные частичное определение `ModelViewControl`. Чтобы просмотреть его содержимое в **обозревателе решений**, откройте контекстное меню для файла и выберите **Просмотр кода**.
 
 ### <a name="about-the-ui-project"></a>О проекте пользовательского интерфейса
 

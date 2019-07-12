@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa0472ae7ad7200ead372057f1dd778c077f764e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 573196ebc0a0719cf736f1299eebae4eb6dcdb73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566219"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821928"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Считывание XML-данных в набор данных
 
@@ -119,9 +119,9 @@ ADO.NET предоставляет простые методы для работ
 
 - Два <xref:System.Windows.Forms.Button> элементов управления.
 
-    - Одна кнопка считывает XML-файл в набор данных и отображает его в <xref:System.Windows.Forms.DataGridView> элемента управления.
+  - Одна кнопка считывает XML-файл в набор данных и отображает его в <xref:System.Windows.Forms.DataGridView> элемента управления.
 
-    - Вторая кнопка извлекает схему из набора данных, а также через <xref:System.IO.StringWriter> отображает его в <xref:System.Windows.Forms.TextBox> элемента управления.
+  - Вторая кнопка извлекает схему из набора данных, а также через <xref:System.IO.StringWriter> отображает его в <xref:System.Windows.Forms.TextBox> элемента управления.
 
 ### <a name="to-add-controls-to-the-form"></a>Для добавления элементов управления в форму
 
@@ -137,7 +137,7 @@ ADO.NET предоставляет простые методы для работ
 
 3. Задайте следующие свойства:
 
-    |Элемент управления|Свойство|Параметр|
+    |Элемент управления|Свойство.|Параметр|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**ScrollBars**|**По вертикали**|

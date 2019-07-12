@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690551"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825394"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Практическое руководство. Добавление обработчика перетаскивания
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "65690551"
   
 - В первых двух частях описываются альтернативные методы определения обработчика жестов.  
   
-    - [Определение обработчиков жестов путем переопределения методов ShapeElement](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`, и другие методы можно переопределить.  
-  
-    - [Определение обработчиков жестов с помощью MEF](#MEF). Используйте этот метод, чтобы разрешить сторонним разработчикам определять собственные обработчики в вашем DSL. В этом случае после установки вашего DSL пользователи смогут установить сторонние расширения.  
+  - [Определение обработчиков жестов путем переопределения методов ShapeElement](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`, и другие методы можно переопределить.  
+
+  - [Определение обработчиков жестов с помощью MEF](#MEF). Используйте этот метод, чтобы разрешить сторонним разработчикам определять собственные обработчики в вашем DSL. В этом случае после установки вашего DSL пользователи смогут установить сторонние расширения.  
   
 - [Декодирование перетаскиваемого элемента](#extracting). Элементы можно перетаскивать из любого окна, рабочего стола и даже доменного языка.  
   
@@ -140,7 +140,7 @@ using System.Linq;
   
   - diagramEventArgs.Data.GetDataFormats() — перечисление форматов, в которых можно декодировать перетаскиваемый объект. Например, если пользователь перетаскивает файл с рабочего стола, доступные форматы включают имя файла ("`FileNameW`").  
   
-  - `diagramEventArgs.Data.GetData(format)` — Декодирование перетаскиваемого объекта в указанном формате. Приведите объект в соответствующий тип. Пример:  
+  - `diagramEventArgs.Data.GetData(format)` — Декодирование перетаскиваемого объекта в указанном формате. Приведите объект в соответствующий тип. Например:  
   
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1ecb5981a8111f3fca013d3b5f115155ac7baf89
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690030"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824849"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "65690030"
   
 - В конструкторе XAML выполните одно из следующих действий.  
   
-    - Дважды щелкните элемент на **панели элементов** (или выберите элемент на панели элементов и нажмите клавишу ВВОД).  
-  
-    - Перетащите элемент с **панели элементов** в область рисования.  
-  
-    - На **панели элементов** выберите один из инструментов рисования (например, [Эллипс](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) или [Прямоугольник](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) и создайте объект на активной панели.  
+  - Дважды щелкните элемент на **панели элементов** (или выберите элемент на панели элементов и нажмите клавишу ВВОД).  
+
+  - Перетащите элемент с **панели элементов** в область рисования.  
+
+  - На **панели элементов** выберите один из инструментов рисования (например, [Эллипс](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) или [Прямоугольник](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) и создайте объект на активной панели.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Изменение порядка слоев элементов  
  Если на монтажной панели конструктора XAML имеется два элемента, один из них будет находиться перед другим в структуре слоев. В нижней части списка элементов в окне "Структура документа" находится первый передний элемент (если не задано свойство **ZIndex** элемента). При вставке элемента на страницу, форму или в контейнер макета элемент автоматически помещается перед другими элементами в активном элементе контейнера. Чтобы изменить порядок элементов, можно использовать команды **Порядок** или перетаскивать элементы в дереве объектов в окне "Структура документа".  
@@ -121,5 +121,5 @@ ms.locfileid: "65690030"
   
 - В окне "Структура документа" или в области рисования щелкните правой кнопкой мыши элемент и последовательно выберите **Макет**, **Сброс** *имя_свойства*, где *имя_свойства* — это свойство, которое нужно переустановить (или выберите **Макет**, **Сбросить все**, чтобы переустановить все свойства макета элемента).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Создание пользовательского интерфейса с помощью конструктора XAML в Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
