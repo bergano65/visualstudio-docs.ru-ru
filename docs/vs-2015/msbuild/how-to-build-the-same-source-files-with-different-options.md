@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045607"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821674"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Практическое руководство. Построение одинаковых исходных файлов с различными параметрами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,13 +55,13 @@ ms.locfileid: "60045607"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Задание свойства проекта в командной строке  
   
-- Используйте параметр **/property** с указанием свойства и его значения. Пример:  
+- Используйте параметр **/property** с указанием свойства и его значения. Например:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - или  
+     \- или -  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -69,13 +69,13 @@ ms.locfileid: "60045607"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Задание нескольких свойств проекта в командной строке  
   
-- Используйте параметр **/property** или **/p** с указанием свойств и их значений либо используйте один параметр **/property** или **/p**, указав несколько свойствами через точку с запятой (;). Пример:  
+- Используйте параметр **/property** или **/p** с указанием свойств и их значений либо используйте один параметр **/property** или **/p**, указав несколько свойствами через точку с запятой (;). Например:  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   - или-  
+   \- или -  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  

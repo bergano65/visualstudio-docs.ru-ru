@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e1a4eeeaf6cc979fd9ee7c3ea36a900899596a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33481307ea6065b0421cd3ae20e54ca778ee4fd4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447164"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826023"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Объединение VBA и настроек уровня документа
   Код Visual Basic для приложений (VBA) можно использовать в документе, который является частью настройки на уровне документа для Microsoft Office Word или Microsoft Office Excel. Код VBA можно вызывать в документе из сборки настройки, или проект можно настроить таким образом, чтобы позволить коду VBA в документе вызывать код в сборке настройки.
@@ -88,9 +88,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - Документ должен иметь одно из следующих расширений имени файла:
 
-    - Для Word: *.docm* или *.doc*
+  - Для Word: *.docm* или *.doc*
 
-    - Для Excel: *.xlsm*, *.xltm*, *.xls*, или *.xlt*
+  - Для Excel: *.xlsm*, *.xltm*, *.xls*, или *.xlt*
 
 - Документ должен уже содержать проект VBA, который содержит в себе код VBA.
 

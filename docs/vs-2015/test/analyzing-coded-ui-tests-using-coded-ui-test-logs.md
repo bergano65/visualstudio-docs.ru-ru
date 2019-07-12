@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7040b4dd07eebb4332634d5d8ffc1d9bc8d8c06b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90e8e85882225fbecb4947de234081ccfc26fbbb
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686479"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824215"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Анализ закодированных тестов пользовательского интерфейса с помощью журналов закодированных тестов пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,35 +34,35 @@ ms.locfileid: "65686479"
   
 - Целевая версия .NET Framework 4 без файла App.config присутствует в проекте теста.  
   
-    - Откройте файл **QTAgent32_40.exe.config**.  
-  
-         По умолчанию этот файл находится в папке **\<диск:>\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Задайте требуемый уровень журнала в значении EqtTraceLevel.  
-  
-         Сохраните файл.  
-  
+  - Откройте файл **QTAgent32_40.exe.config**.  
+
+    По умолчанию этот файл находится в папке **\<диск:>\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
+
+    Задайте требуемый уровень журнала в значении EqtTraceLevel.  
+
+    Сохраните файл.  
+
 - Целевая версия .NET Framework 4.5 без файла App.config присутствует в проекте теста.  
   
-    - Откройте файл **QTAgent32.exe.config**.  
-  
-         По умолчанию этот файл находится в папке **\<диск:>\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Задайте требуемый уровень журнала в значении EqtTraceLevel.  
-  
-         Сохраните файл.  
+  - Откройте файл **QTAgent32.exe.config**.  
+
+    По умолчанию этот файл находится в папке **\<диск:>\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
+
+    Задайте требуемый уровень журнала в значении EqtTraceLevel.  
+
+    Сохраните файл.  
   
 - Файл App.config присутствует в проекте теста.  
   
-    - Откройте файл App.config в проекте.  
-  
-         Добавьте следующий код в узле конфигурации:  
-  
-         `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
+  - Откройте файл App.config в проекте.  
+
+    Добавьте следующий код в узле конфигурации:  
+
+    `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
   
 - Включение ведения журнала в коде теста  
   
-    - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
+  - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
 ### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Шаг 2. Запуск кодированного теста пользовательского интерфейса и просмотр журнала  
  При запуске закодированного теста пользовательского интерфейса после внесения изменений в файл **QTAgent32.exe.config** вы увидите выходную ссылку в результатах обозревателя тестов. Если выбран подробный уровень трассировки ("verbose"), файлы журнала создаются не только при ошибке теста, но и при успешном выполнении теста.  

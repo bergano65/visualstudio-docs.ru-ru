@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 169bf374b5c7ee34f75743e363d56c3737000cbc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424912"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823444"
 ---
 # <a name="upgrade-mdf-files"></a>Обновление MDF-файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,9 +104,9 @@ ms.locfileid: "63424912"
   
 - В Visual Studio откройте проект без ее обновление.  
   
-    - Чтобы запустить проект, нажмите клавишу F5.  
-  
-    - Чтобы изменить базу данных, откройте MDF-файл в **обозревателе решений**и разверните узел в **обозревателя серверов** для работы с базой данных.  
+  - Чтобы запустить проект, нажмите клавишу F5.  
+
+  - Чтобы изменить базу данных, откройте MDF-файл в **обозревателе решений**и разверните узел в **обозревателя серверов** для работы с базой данных.  
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Чтобы сделать SQL Server Express database engine по умолчанию  
   

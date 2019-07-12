@@ -12,20 +12,20 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fbb2f118d903eae2124e705f14c7aa7b51bf9c4d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403257"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821832"
 ---
-# <a name="accessing-stored-font-and-color-settings"></a>Доступ к хранимой шрифтов и цветов
+# <a name="accessing-stored-font-and-color-settings"></a>Доступ к хранимым параметрам шрифтов и цветов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Интегрированной среды разработки (IDE) сохраняет измененные параметры шрифтов и цветов в реестре. Можно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс для доступа к этим параметрам.  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Чтобы начать сохранение состояния шрифтов и цветов  
- Данные шрифта и цвета хранится по категориям в следующий раздел реестра: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<версия Visual Studio >* \FontAndColors\\  *\<CategoryGUID >*], где  *\<CategoryGUID >* является GUID категории.  
+ Данные шрифта и цвета хранится по категориям в следующий раздел реестра: [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<версия Visual Studio >* \FontAndColors\\  *\<CategoryGUID >* ], где  *\<CategoryGUID >* является GUID категории.  
   
  Таким образом Чтобы инициировать сохраняемости, пакет VSPackage должен:  
   
@@ -35,16 +35,16 @@ ms.locfileid: "63403257"
   
 - Используйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> метод для открытия категории, которые необходимо сохранить, используя GUID категории в и флаг режима в качестве аргументов.  
   
-     Режим, определяемое `fFlags` аргумент, создается на основе значений в <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> перечисления. Элементы управления в этом режиме.  
-  
-    - Параметры, которые можно получить с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.  
-  
-    - Все параметры или только те пользователи изменять и который можно получить через <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.  
-  
-    - Способ добавления изменений в параметры пользователя.  
-  
-    - Формат значений цвета, которые используются.  
-  
+  Режим, определяемое `fFlags` аргумент, создается на основе значений в <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> перечисления. Элементы управления в этом режиме.  
+
+  - Параметры, которые можно получить с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.  
+
+  - Все параметры или только те пользователи изменять и который можно получить через <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.  
+
+  - Способ добавления изменений в параметры пользователя.  
+
+  - Формат значений цвета, которые используются.  
+
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Для сохранения состояния использования шрифтов и цветов  
  Сохранение шрифты и цвета состоит из:  
   

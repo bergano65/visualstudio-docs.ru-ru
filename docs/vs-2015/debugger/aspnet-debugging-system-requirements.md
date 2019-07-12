@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa8951be6da4d77ffb51b6bc8f09a796b373a944
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439942"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826262"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Отладка ASP.NET: Требования к системе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "63439942"
   
 - При локальной отладке [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и веб-приложение выполняются на одном и том же компьютере. Существуют две версии этого сценария:  
   
-    - код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] располагается в файловой системе;  
-  
-    - код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] располагается на веб-сайте служб IIS.  
+  - код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] располагается в файловой системе;  
+
+  - код [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] располагается на веб-сайте служб IIS.  
   
 - При удаленной отладке [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] выполняется на клиентском компьютере и используется для отладки веб-приложения, работающего на удаленном (серверном) компьютере.  
   
@@ -42,9 +42,9 @@ ms.locfileid: "63439942"
   
  Чтобы выполнить отладку рабочего процесса [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , необходимо иметь разрешение на отладку этого процесса. По умолчанию приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] выполняются от имени учетной записи пользователя **ASPNET** . Если рабочий процесс выполняется от имени учетной записи **ASPNET**или **NETWORK SERVICE**, для его отладки необходимо иметь права администратора.  
   
- Имя рабочего процесса [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] варьируется в зависимости от сценария отладки и версии служб IIS. Дополнительные сведения см. в разделе [Как найти имя процесса ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
+ Имя рабочего процесса [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] варьируется в зависимости от сценария отладки и версии служб IIS. Дополнительные сведения см. в разделе [Практическое руководство. найти имя процесса ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
- Вы можете изменить учетную запись пользователя, от имени которой должен выполняться рабочий процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Для этого следует внести соответствующие изменения в файл machine.config на сервере, на котором запускаются службы IIS. Оптимальный способ сделать это — с помощью **Диспетчера служб IIS**. Дополнительные сведения см. в разделе [Как выполнить рабочий процесс с учетной записью пользователя](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
+ Вы можете изменить учетную запись пользователя, от имени которой должен выполняться рабочий процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Для этого следует внести соответствующие изменения в файл machine.config на сервере, на котором запускаются службы IIS. Оптимальный способ сделать это — с помощью **Диспетчера служб IIS**. Дополнительные сведения см. в разделе [Практическое руководство. выполнить рабочий процесс с учетной записью пользователя](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
   
  Если в качестве учетной записи, от имени которой должен запускаться рабочий процесс [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , указать собственную учетную запись, то обладать правами администратора на сервере, на котором работают службы IIS, не потребуется.  
   

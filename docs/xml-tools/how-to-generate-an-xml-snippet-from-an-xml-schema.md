@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001919"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825756"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Практическое руководство. Создание XML-фрагмент из схемы XML
 
@@ -25,11 +25,11 @@ ms.locfileid: "63001919"
 
 - Текущий элемент в редакторе должен быть пустым, не имеющим атрибутов. Например, все приведенные ниже элементы являются правильными.
 
-    - `<Account`
+  - `<Account`
 
-    - `<Account>`
+  - `<Account>`
 
-    - `<Account></Account>`
+  - `<Account></Account>`
 
 - Курсор должен находиться непосредственно справа от имени элемента.
 
@@ -56,7 +56,7 @@ ms.locfileid: "63001919"
 
      Новый файл открывается в редакторе. Этот файл содержит XML-декларацию по умолчанию: `<?xml version="1.0" encoding="utf-8">`.
 
-3. В окне свойств документа нажмите кнопку обзора (**...** ) на **схемы** поля.
+3. В окне свойств документа нажмите кнопку обзора ( **...** ) на **схемы** поля.
 
      **XSD-схемы** диалоговое окно.
 
@@ -90,7 +90,7 @@ ms.locfileid: "63001919"
 
 4. Нажмите клавишу **вкладке** для создания XML-данных для `Contact` элемента на основании информации схемы.
 
-## <a name="input"></a>Входные данные
+## <a name="input"></a>Ввод
 
  В этом пошаговом руководстве используется следующий файл схемы.
 

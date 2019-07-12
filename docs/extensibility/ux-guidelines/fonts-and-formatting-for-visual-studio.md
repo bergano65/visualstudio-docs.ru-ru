@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f510568c977579fa3e48d57db548040d16dcb574
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335489"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824335"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Шрифты и форматирование для Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> Шрифт среды разработки
@@ -388,17 +388,17 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="italics"></a>Курсив
  Visual Studio не использует курсивом или полужирным курсивом.
 
-#### <a name="color"></a>Цвет
+#### <a name="color"></a>Color
 
 - Синий зарезервирован для гиперссылок (навигации и команды) и никогда не следует использовать для ориентации.
 
 - Для этих целей можно окрасить большего размера заголовков (шрифт среды разработки x 155% или более поздней версии):
 
-    - Для предоставления привлекательность сигнатуру пользовательского интерфейса Visual Studio
+  - Для предоставления привлекательность сигнатуру пользовательского интерфейса Visual Studio
 
-    - Для привлечения внимания к конкретной области
+  - Для привлечения внимания к конкретной области
 
-    - Подписчикам, которые делают стандартную среду темно-серый/черный цвет текста
+  - Подписчикам, которые делают стандартную среду темно-серый/черный цвет текста
 
 - Цвет в заголовки должны использовать существующие Visual Studio фирменные цвета, главным образом основной фиолетовым #FF68217A.
 

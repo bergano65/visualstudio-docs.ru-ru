@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70036cd8add5c9c72262f29ba92fa6c7eaf8977d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401501"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64817137"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 Получает флаг, указывающий, содержит ли функция использование [longjmp](/cpp/c-runtime-library/reference/longjmp) команды (связан с [setjmp](/cpp/c-runtime-library/reference/setjmp) команды, они образуют метод C-стиля обработки исключений).

@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47e7c2b6e02aab3b6b1df0c54ba91668bbb2673c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436850"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825817"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Практическое руководство. Создание или обновление стандартных политик возврата с анализом кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ ms.locfileid: "63436850"
   
 - Из **выполнить этот набор правил** список, используйте один из следующих методов:  
   
-    - Выберите набор стандартных правил Майкрософт.  
-  
-    - Чтобы выбрать настраиваемый набор правил, щелкните  **\<выбрать набор правил из системы управления версиями... >** , а затем введите путь управления версиями в браузере системы управления версиями набора правил. Используется следующий синтаксис пути системы управления версиями:  
-  
-    - **$/** `TeamProjectName` **/** `VersionControlPath`  
-  
-    - Дополнительные сведения о том, как создать и применить правило настраиваемой политики, см. в разделе [реализация пользовательских политик возврата для управляемого кода](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+  - Выберите набор стандартных правил Майкрософт.  
+
+  - Чтобы выбрать настраиваемый набор правил, щелкните  **\<выбрать набор правил из системы управления версиями... >** , а затем введите путь управления версиями в браузере системы управления версиями набора правил. Используется следующий синтаксис пути системы управления версиями:  
+
+  - **$/** `TeamProjectName` **/** `VersionControlPath`  
+
+  - Дополнительные сведения о том, как создать и применить правило настраиваемой политики, см. в разделе [реализация пользовательских политик возврата для управляемого кода](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>См. также  
  [Создание и использование политик возврата с анализом кода](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
