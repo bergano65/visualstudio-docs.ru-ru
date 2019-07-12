@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430417"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825802"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Пошаговое руководство. Создание расширения проекта SharePoint
   В этом пошаговом руководстве показано, как создавать расширения для проектов SharePoint. Можно использовать расширение проекта реагировать на события уровня проекта, например при проект добавлен, удален или переименован. Также можно добавлять пользовательские свойства или ответное действие при изменении значения свойства. В отличие от расширений элемента проекта расширения проекта нельзя связать с определенным типом проекта SharePoint. При создании расширения проекта, расширение загружается при открытии любого проекта SharePoint в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -30,11 +30,11 @@ ms.locfileid: "63430417"
 
 - Создание [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] расширения для проектов SharePoint, выполняющий следующие:
 
-    - Добавляет настраиваемое свойство проекта в окне «Свойства». Свойство применяется к любому проекту SharePoint.
+  - Добавляет настраиваемое свойство проекта в окне «Свойства». Свойство применяется к любому проекту SharePoint.
 
-    - Использует объектную модель проекта SharePoint, Добавление сопоставленной папки в проект.
+  - Использует объектную модель проекта SharePoint, Добавление сопоставленной папки в проект.
 
-    - Использует [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] объектной модели автоматизации (DTE), чтобы удалить сопоставленную папку из проекта.
+  - Использует [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] объектной модели автоматизации (DTE), чтобы удалить сопоставленную папку из проекта.
 
 - Построение [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] пакета Extension (VSIX) для развертывания сборки расширения свойств проекта.
 

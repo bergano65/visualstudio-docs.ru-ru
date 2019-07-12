@@ -7,12 +7,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b6af3e24d4e563ebbbcf0a233d85a1cd038cb3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b3c5558079772a8ddc4c4826ba68d1866c220ba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316366"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823982"
 ---
 # <a name="troubleshooting-template-installation"></a>Устранение неполадок установки шаблона
 
@@ -59,9 +59,9 @@ ms.locfileid: "66316366"
 
 - **FullPathToTemplate**, который имеет следующие значения:
 
-    - 1 для развертывания на основе манифеста
+  - 1 для развертывания на основе манифеста
 
-    - 0 для развертывания на основе диска
+  - 0 для развертывания на основе диска
 
 - **TemplateFileName**
 

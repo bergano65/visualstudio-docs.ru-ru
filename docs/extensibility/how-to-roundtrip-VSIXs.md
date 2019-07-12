@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324901"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826032"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Практическое руководство. Обеспечить совместимость с Visual Studio 2017 и Visual Studio 2015 расширения
 
@@ -57,8 +57,8 @@ ms.locfileid: "66324901"
 * Запишите все ссылки в *project.json*.
 * Из **обозревателе решений**, удалить *project.json* файл из проекта. При этом будут удалены *project.json* файла и удаляет его из проекта.
 * Добавьте ссылки на пакеты NuGet обратно в проект:
-    * Щелкните правой кнопкой мыши **решение** и выберите **управление пакетами NuGet для решения**.
-    * Visual Studio автоматически создает *packages.config* файл для вас.
+  * Щелкните правой кнопкой мыши **решение** и выберите **управление пакетами NuGet для решения**.
+  * Visual Studio автоматически создает *packages.config* файл для вас.
 
 > [!NOTE]
 > Если проект содержал EnvDTE пакеты, их нужно добавить, щелкнув правой кнопкой мыши **ссылки** выбора **добавьте ссылку на** и добавив соответствующую ссылку. Использование пакетов NuGet может вызывать ошибки при попытке сборки проекта.
@@ -165,7 +165,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * Добавить дополнительные условные операторы, чтобы `<import>` теги, которые имеют Microsoft.VSSDK.BuildTools ссылку. Вставить `'$(VisualStudioVersion)' != '14.0' And` в начале оператора условия. Эти инструкции будут отображаться в верхнем и нижнем колонтитуле CSPROJ-файле.
 
-Пример:
+Например:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
@@ -173,7 +173,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * Добавить дополнительные условные операторы, чтобы `<import>` теги, которые имеют Microsoft.VisualStudio.Sdk.BuildTasks.14.0. Вставить `'$(VisualStudioVersion)' == '14.0' And` в начале оператора условия. Эти инструкции будут отображаться в верхнем и нижнем колонтитуле CSPROJ-файле.
 
-Пример:
+Например:
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,7 +181,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * Добавить дополнительные условные операторы, чтобы `<Error>` теги, которые имеют Microsoft.VSSDK.BuildTools ссылку. Это можно сделать путем вставки `'$(VisualStudioVersion)' != '14.0' And` в начале оператора условия. Эти инструкции будут отображаться в нижнем колонтитуле CSPROJ-файле.
 
-Пример:
+Например:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
@@ -189,7 +189,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * Добавить дополнительные условные операторы, чтобы `<Error>` теги, которые имеют Microsoft.VisualStudio.Sdk.BuildTasks.14.0. Вставить `'$(VisualStudioVersion)' == '14.0' And` в начале оператора условия. Эти инструкции будут отображаться в нижнем колонтитуле CSPROJ-файле.
 
-Пример:
+Например:
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />

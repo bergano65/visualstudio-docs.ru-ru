@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b3b47264190afcc75431a55ad6b8b4512f26ea0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d931325bd9e323fdf8fa31848a5c2671b5382543
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858179"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825224"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Неподдерживаемые сценарии отладки в конструкторе рабочих процессов
 В конструкторе рабочих процессов в [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] добавлено множество новых возможностей, но при этом существует несколько сценариев отладки, которые он не поддерживает. В этом документе описаны сценарии отладки, не поддерживаемые конструктором рабочих процессов.  
@@ -41,16 +41,16 @@ ms.locfileid: "62858179"
   
 - В окне «Точка останова» и в контекстном меню при отладке рабочих процессов не поддерживаются следующие столбцы и параметры.  
   
-    - Условие  
-  
-    - Число попаданий  
-  
-    - Счетчик числа попаданий  
-  
-    - Функция  
-  
-    - Данные  
-  
-    - Процесс  
-  
-    - К дизассемблированному коду
+  - Условие  
+
+  - Число попаданий  
+
+  - Счетчик числа попаданий  
+
+  - Функция  
+
+  - Данные  
+
+  - Процесс  
+
+  - К дизассемблированному коду

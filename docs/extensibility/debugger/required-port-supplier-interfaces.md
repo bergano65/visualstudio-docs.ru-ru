@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d4f475a186c3873937e6c8c38d092a944585d4a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dfc7b25a54bd17ecf759a25d603997380076c5d1
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315912"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823418"
 ---
 # <a name="required-port-supplier-interfaces"></a>Интерфейс поставщика необходимого порта
 Поставщика порта необходимо реализовать [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) интерфейс.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -25,19 +25,19 @@ ms.locfileid: "66315912"
 
 - [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)
 
-     Описание порта и перечисляет все процессы, запущенные на порт.
+  Описание порта и перечисляет все процессы, запущенные на порт.
 
 - [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)
 
-     Предоставляет для запуска и завершения процессов в порт.
+  Предоставляет для запуска и завершения процессов в порт.
 
 - [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)
 
-     Предоставляет механизм для программ, работающих в контексте этого порта уведомлять его создание узла программы и удаления. Дополнительные сведения см. в разделе [программировать узлы](../../extensibility/debugger/program-nodes.md).
+  Предоставляет механизм для программ, работающих в контексте этого порта уведомлять его создание узла программы и удаления. Дополнительные сведения см. в разделе [программировать узлы](../../extensibility/debugger/program-nodes.md).
 
 - `IConnectionPointContainer`
 
-     Предоставляет точку подключения для [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).
+  Предоставляет точку подключения для [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).
 
 ## <a name="port-supplier-operation"></a>Операции поставщика порта
  [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) приемник получает уведомления, когда обработка и программы создаются и удаляются через порт. Для отправки требуется порт [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) при создании процесса и [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) при уничтожении процесса на порте. Порт для отправки также требуется [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) при создании программы и [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) при уничтожении программы в процесс, выполняющийся в порт.
@@ -48,37 +48,37 @@ ms.locfileid: "66315912"
 
 - [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)
 
-     Описывает процесс физического. По крайней мере должны быть реализованы следующие методы:
+  Описывает процесс физического. По крайней мере должны быть реализованы следующие методы:
 
-    - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)
+  - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)
 
-    - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)
+  - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)
 
-    - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)
+  - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)
 
-    - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
+  - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 
-    - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)
+  - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)
 
-    - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
+  - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
 
 - [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)
 
-     Предоставляет способ для SDM, подключать и отключать сам из процесса.
+  Предоставляет способ для SDM, подключать и отключать сам из процесса.
 
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)
 
-     Описывает логические программы. По крайней мере должны быть реализованы следующие методы:
+  Описывает логические программы. По крайней мере должны быть реализованы следующие методы:
 
-    - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)
+  - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)
 
-    - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
+  - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
 
-    - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
+  - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
 
 - [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)
 
-     Предоставляет способ для SDM для присоединения к этой программе.
+  Предоставляет способ для SDM для присоединения к этой программе.
 
 ## <a name="see-also"></a>См. также
 - [Реализация поставщика порта](../../extensibility/debugger/implementing-a-port-supplier.md)
