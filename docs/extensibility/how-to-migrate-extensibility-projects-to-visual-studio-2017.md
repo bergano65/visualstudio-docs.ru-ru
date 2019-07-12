@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f5edad198727ea33d3bf293fa0ee1baf3afb5b3b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319315"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823903"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017
 
@@ -62,8 +62,8 @@ ms.locfileid: "66319315"
 * Редактирование файла манифеста расширения (обычно называют *source.extension.vsixmanifest*).
 * Убедитесь, `InstallationTarget` включает 15.0.
 * Добавьте необходимые условия для установки требуется (как показано в следующем примере).
-   * Мы рекомендуем указать только идентификаторы компонентов для установки необходимых компонентов.
-   * См. в разделе, в конце этого документа [инструкции по выявлению идентификаторы компонентов](#find-component-ids).
+  * Мы рекомендуем указать только идентификаторы компонентов для установки необходимых компонентов.
+  * См. в разделе, в конце этого документа [инструкции по выявлению идентификаторы компонентов](#find-component-ids).
 
 Пример
 
@@ -120,12 +120,12 @@ ms.locfileid: "66319315"
 
 * Создайте проект VSIX.
 * Распакуйте формируемый VSIX.
-   * По умолчанию, VSIX-файл находится в *bin/Debug* или *bin/Release* как *.vsix [YourCustomExtension]* .
-   * Переименуйте *.vsix* для *ZIP-файл* позволяет легко просмотреть содержимое.
+  * По умолчанию, VSIX-файл находится в *bin/Debug* или *bin/Release* как *.vsix [YourCustomExtension]* .
+  * Переименуйте *.vsix* для *ZIP-файл* позволяет легко просмотреть содержимое.
 * Проверка существования три файла:
-   * *extension.vsixmanifest*
-   * *manifest.JSON*
-   * *catalog.json*
+  * *extension.vsixmanifest*
+  * *manifest.JSON*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>Проверьте, если установлены все необходимые компоненты
 
@@ -141,11 +141,11 @@ ms.locfileid: "66319315"
 ![Установщик VSIX в Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
 * Необязательные: Проверьте в предыдущих версиях Visual Studio.
-   * Подтверждает обратной совместимости.
-   * Должен работать для Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
+  * Подтверждает обратной совместимости.
+  * Должен работать для Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
 * Необязательные: Проверьте, что средство проверки версии установщик VSIX соответствует выбору версий.
-   * Включает предыдущие версии Visual Studio (если установлена).
-   * Включает в себя Visual Studio 2017.
+  * Включает предыдущие версии Visual Studio (если установлена).
+  * Включает в себя Visual Studio 2017.
 
 Если недавно был открыт Visual Studio, может появиться диалоговое окно следующим образом:
 

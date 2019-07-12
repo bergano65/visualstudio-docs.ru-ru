@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321360"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823811"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Изменения в расширяемости Visual Studio 2017
 
@@ -63,35 +63,35 @@ Visual Studio 2017 появилась VSIX v3 формата (версия 3) д
 
 * Сборки, которые только были установлены в глобальный кэш СБОРОК:
 
-   Теперь эти сборки устанавливаются в <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> или *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* . Эти папки являются частью пути пробы процесс Visual Studio.
+  Теперь эти сборки устанавливаются в <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> или *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* . Эти папки являются частью пути пробы процесс Visual Studio.
 
 * Сборки, которые были установлены в путь без проверки и в глобальный кэш СБОРОК:
 
-   * Копия в глобальном кэше СБОРОК удалена из программы установки.
-   * Объект *.pkgdef* файл был добавлен, чтобы указать запись базового кода для сборки.
+  * Копия в глобальном кэше СБОРОК удалена из программы установки.
+  * Объект *.pkgdef* файл был добавлен, чтобы указать запись базового кода для сборки.
 
-      Пример:
+    Например:
 
-      ```xml
-      [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
-      "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
-      "publicKeyToken"="Public Key Token"
-      "culture"="neutral"
-      "version"=15.0.0.0
-      ```
+    ```
+    [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
+    "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
+    "publicKeyToken"="Public Key Token"
+    "culture"="neutral"
+    "version"=15.0.0.0
+    ```
 
-      Во время выполнения подсистема pkgdef Visual Studio объединяет эти записи в файл конфигурации среды выполнения в процесс Visual Studio (в разделе *[VSAPPDATA]\devenv.exe.config*) как [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) элементы. Это рекомендуемый способ позволяют найти сборку в процесс Visual Studio, так как позволяет избежать поиска с помощью проверки пути.
+    Во время выполнения подсистема pkgdef Visual Studio объединяет эти записи в файл конфигурации среды выполнения в процесс Visual Studio (в разделе *[VSAPPDATA]\devenv.exe.config*) как [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) элементы. Это рекомендуемый способ позволяют найти сборку в процесс Visual Studio, так как позволяет избежать поиска с помощью проверки пути.
 
 ### <a name="reacting-to-this-breaking-change"></a>Реагирование на это критическое изменение
 
 * Если расширение выполняется в рамках процесса Visual Studio:
 
-   * Код будет возможность найти базовые сборки Visual Studio.
-   * Рассмотрите возможность использования *.pkgdef* файл, чтобы указать путь к сборкам, при необходимости.
+  * Код будет возможность найти базовые сборки Visual Studio.
+  * Рассмотрите возможность использования *.pkgdef* файл, чтобы указать путь к сборкам, при необходимости.
 
 * Если расширение выполняется вне процесса Visual Studio:
 
-   Попробуйте найти базовые сборки Visual Studio в разделе <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> или *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* с помощью сопоставителя файл или сборку конфигурации.
+  Попробуйте найти базовые сборки Visual Studio в разделе <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> или *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* с помощью сопоставителя файл или сборку конфигурации.
 
 ## <a name="change-reduce-registry-impact"></a>Изменение: Сокращение влияния реестра
 

@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 922edcd45dd42c8da5a9ec4dc8d3e8f450ceea09
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089579"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823603"
 ---
 # <a name="resource-details-view---contention-data"></a>Представление "Сведения о ресурсах" — сведения о состязаниях
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ ms.locfileid: "60089579"
   
 - Выполните одно из следующих действий.  
   
-    - Чтобы вернуться к прежнему масштабу, щелкните **Уменьшить**.  
-  
-    - Чтобы в представлении отобразилась вся временная шкала, щелкните **Сброс масштаба**.  
-  
+  - Чтобы вернуться к прежнему масштабу, щелкните **Уменьшить**.  
+
+  - Чтобы в представлении отобразилась вся временная шкала, щелкните **Сброс масштаба**.  
+
 #### <a name="to-view-the-call-stack-of-an-event"></a>Просмотр стека вызовов события  
   
 - На временной шкале щелкните полосу события.  

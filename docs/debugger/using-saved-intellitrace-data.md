@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b9217031866a53e229cb03838b1be835019b62ba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746155"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825605"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>С помощью сохраненных данных IntelliTrace (C#, Visual Basic, C++)
 
@@ -56,11 +56,11 @@ ms.locfileid: "66746155"
 
 - Если ITRACE-файл прикреплен к рабочему элементу Team Foundation Server, выполните следующие действия в рабочем элементе.
 
-    - В разделе **Все ссылки**найдите ITRACE-файл. Откройте его.
+  - В разделе **Все ссылки**найдите ITRACE-файл. Откройте его.
 
-         \- или -
+    \- или -
 
-    - В разделе **Шаги для воспроизведения**выберите ссылку **IntelliTrace** .
+  - В разделе **Шаги для воспроизведения**выберите ссылку **IntelliTrace** .
 
 > [!TIP]
 > Если файл IntelliTrace был закрыт во время отладки, его можно легко открыть снова. Перейдите в меню **Отладка** и выберите **IntelliTrace**, **Показать сводку журнала**. Можно также выбрать **Показать сводку журнала** в окне **IntelliTrace** . Эта команда доступна только при отладке с помощью IntelliTrace.
@@ -158,7 +158,7 @@ ms.locfileid: "66746155"
 
 1. Скопируйте идентификатор корреляции SharePoint из его источника.
 
-    Пример:
+    Например:
 
     ![IntelliTrace &#45; ошибку SharePoint &#45; идентификатор корреляции](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 

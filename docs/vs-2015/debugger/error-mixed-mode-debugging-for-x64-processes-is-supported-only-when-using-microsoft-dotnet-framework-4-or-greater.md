@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48379cbc9ba2fa5aa663d1cce48236aecd154124
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 190a6e890ce31ce2aa66ff474bb9e4b1976a6c46
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697376"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823999"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Ошибка: Отладка в смешанном режиме для процессов x64 поддерживается только при использовании платформы Microsoft .NET Framework 4 или выше
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "65697376"
   
 - Выполните одно из следующих действий.  
   
-    - Обновите [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] до версии 4.  
-  
-    - Постройте для отладки 32-разрядную версию приложения.  
+  - Обновите [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] до версии 4.  
+
+  - Постройте для отладки 32-разрядную версию приложения.  
   
 ## <a name="see-also"></a>См. также  
  [Настройка инструментов удаленной отладки в устройстве](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

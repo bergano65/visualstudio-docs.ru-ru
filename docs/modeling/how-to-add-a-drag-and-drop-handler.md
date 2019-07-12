@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15e0d305140e6e04464091df59432a2cd261796
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993488"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821938"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Практическое руководство. Добавление обработчика перетаскивания
 
@@ -68,7 +68,7 @@ using System.Linq;
 
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Этот метод вызывается при двойном щелчке фигуры или схемы.
 
-     Дополнительные сведения см. в разделе [Как Перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+     Дополнительные сведения см. в разделе [Практическое руководство. Перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Определите `IsAcceptableDropItem(e)`, чтобы задать допустимость перетаскиваемого элемента, и ProcessDragDropItem(e), чтобы обновить модель после перетаскивания элемента. Прежде всего, эти методы должны извлечь элемент из аргументов события. Сведения о том, как это сделать, см. в разделе [как для получения ссылки на перетаскиваемый элемент](#to-send-an-object-from-a-source-dsl).
 
@@ -126,13 +126,13 @@ MEF (Managed Extensibility Framework) позволяет определять к
 
 - <xref:System.Windows.Forms.IDataObject>  `Data` -Это свойство содержит сериализованные версии исходных объектов, обычно в нескольких форматах. Наиболее полезные функции:
 
-    - diagramEventArgs.Data.GetDataFormats() — список форматов, в которых можно декодировать перетаскиваемый объект. Например, если пользователь перетаскивает файл с рабочего стола, доступные форматы включают имя файла ("`FileNameW`").
+  - diagramEventArgs.Data.GetDataFormats() — список форматов, в которых можно декодировать перетаскиваемый объект. Например, если пользователь перетаскивает файл с рабочего стола, доступные форматы включают имя файла ("`FileNameW`").
 
-    - `diagramEventArgs.Data.GetData(format)` — Декодирование перетаскиваемого объекта в указанном формате. Приведите объект в соответствующий тип. Пример:
+  - `diagramEventArgs.Data.GetData(format)` — Декодирование перетаскиваемого объекта в указанном формате. Приведите объект в соответствующий тип. Например:
 
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
+    `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         Также можно передавать такие объекты, как ссылки шины модели от источника в собственный пользовательский формат. Дополнительные сведения см. в разделе [способы отправки ссылок шины модели при перетаскивании](#to-send-an-object-from-a-source-dsl).
+    Также можно передавать такие объекты, как ссылки шины модели от источника в собственный пользовательский формат. Дополнительные сведения см. в разделе [способы отправки ссылок шины модели при перетаскивании](#to-send-an-object-from-a-source-dsl).
 
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` — Используйте это свойство, если вы хотите, чтобы пользователи перетаскивать элементы из доменного языка или модели UML. Прототип группы элементов содержит один или несколько объектов, ссылок и их значений свойств. Он также используется в операции вставки и при добавлении элемента из панели элементов. В прототипе объекты и их типы обозначаются идентификаторами GUID. Например, этот код позволяет пользователю перетаскивать элементы классов из схемы UML или Обозревателя моделей UML:
 
@@ -574,6 +574,6 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>См. также
 
 - [Настройка функции копирования](../modeling/customizing-copy-behavior.md)
-- [Развертывание решений на доменных языках](../modeling/deploying-domain-specific-language-solutions.md)
+- [Развертывание решений на доменных языках](msi-and-vsix-deployment-of-a-dsl.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

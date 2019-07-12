@@ -1,79 +1,80 @@
 ---
 title: IDiaSymbol::get_undecoratedNameEx | Документация Майкрософт
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_undecoratedNameEx method
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
-author: mikejo5000
+caps.latest.revision: 14
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
 ms.openlocfilehash: f9c50f5d352d8a52b0eb8b125992b2c325e48234
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386777"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64811866"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
-Извлекает часть или вся недекорированное имя для C++ внутреннее имя (компоновка).
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Синтаксис
-
-```C++
-HRESULT get_undecoratedNameEx( 
-   DWORD undecorateOptions,
-   BSTR* pRetval
-);
-```
-
-#### <a name="parameters"></a>Параметры
- `undecoratedOptions`
-
-[in] Включение управления, что возвращается сочетание флагов. См. в разделе "Примечания" конкретные значения, и что они делают.
-
- `pRetVal`
-
-[out] Возвращает недекорированное имя для C++ декорированное имя.
-
-## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
-
+Извлекает часть или вся недекорированное имя для C++ внутреннее имя (компоновка).  
+  
+## <a name="syntax"></a>Синтаксис  
+  
+```cpp#  
+HRESULT get_undecoratedNameEx(   
+   DWORD undecorateOptions,  
+   BSTR* pRetval  
+);  
+```  
+  
+#### <a name="parameters"></a>Параметры  
+ `undecoratedOptions`  
+ [in] Включение управления, что возвращается сочетание флагов. См. в разделе "Примечания" конкретные значения, и что они делают.  
+  
+ `pRetVal`  
+ [out] Возвращает недекорированное имя для C++ декорированное имя.  
+  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
+  
 > [!NOTE]
-> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
-
-## <a name="remarks"></a>Примечания
- `undecorateOptions` Может представлять собой сочетание следующих флагов.
-
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
+  
+## <a name="remarks"></a>Примечания  
+ `undecorateOptions` Может представлять собой сочетание следующих флагов.  
+  
 > [!NOTE]
-> Помечать имена не определены в пакете SDK для доступа к интерфейсу отладки, поэтому вам нужно добавить объявления в код или использовать необработанные значения.
-
-|Flag|Значение|Описание|
-|----------|-----------|-----------------|
-|UNDNAME_COMPLETE|0x0000|Включает полное undecoration.|
-|UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Удаляет начальные символы подчеркивания от корпорации Майкрософт расширить ключевые слова.|
-|UNDNAME_NO_MS_KEYWORDS|0x0002|Отключает расширения Microsoft расширенных ключевые слова.|
-|UNDNAME_NO_FUNCTION_RETURNS|0x0004|Отключает расширения типа возвращаемого значения для основного объявления.|
-|UNDNAME_NO_ALLOCATION_MODEL|0x0008|Отключает расширения модели объявления.|
-|UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Отключает расширения языка спецификатора объявления.|
-|UNDNAME_RESERVED1|0x0020|ЗАРЕЗЕРВИРОВАНО.|
-|UNDNAME_RESERVED2|0x0040|ЗАРЕЗЕРВИРОВАНО.|
-|UNDNAME_NO_THISTYPE|0x0060|Отключает все модификаторы на `this` типа.|
-|UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Отключает расширения описатели доступа для участников.|
-|UNDNAME_NO_THROW_SIGNATURES|0x0100|Отключает расширения из throw — «сигнатур» для функций и указателей на функции.|
-|UNDNAME_NO_MEMBER_TYPE|0x0200|Отключает расширения `static` или `virtual` членов.|
-|UNDNAME_NO_RETURN_UDT_MODEL|0x0400|Отключает расширения Microsoft модели для определяемого пользователем ТИПА возвращает.|
-|UNDNAME_32_BIT_DECODE|0x0800|Undecorates декорированные имена в 32-разрядной.|
-|UNDNAME_NAME_ONLY|0x1000|Возвращает только имя для основного объявление; Возвращает только [области::] имя.  При развертывании шаблона params.|
-|UNDNAME_TYPE_ONLY|0x2000|Входные данные — это просто тип кодирования; выполняет композицию абстрактный декларатор.|
-|UNDNAME_HAVE_PARAMETERS|0x4000|Доступны параметры реальных шаблона.|
-|UNDNAME_NO_ECSU|0x8000|Подавляет enum/классом, структурой или объединением.|
-|UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Отключает проверку для допустимых символах идентификаторов.|
-|UNDNAME_NO_PTR64|0x20000|Не включает ptr64 в выходных данных.|
-
-## <a name="see-also"></a>См. также
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Помечать имена не определены в пакете SDK для доступа к интерфейсу отладки, поэтому вам нужно добавить объявления в код или использовать необработанные значения.  
+  
+|Flag|Значение|Описание|  
+|----------|-----------|-----------------|  
+|UNDNAME_COMPLETE|0x0000|Включает полное undecoration.|  
+|UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Удаляет начальные символы подчеркивания от корпорации Майкрософт расширить ключевые слова.|  
+|UNDNAME_NO_MS_KEYWORDS|0x0002|Отключает расширения Microsoft расширенных ключевые слова.|  
+|UNDNAME_NO_FUNCTION_RETURNS|0x0004|Отключает расширения типа возвращаемого значения для основного объявления.|  
+|UNDNAME_NO_ALLOCATION_MODEL|0x0008|Отключает расширения модели объявления.|  
+|UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Отключает расширения языка спецификатора объявления.|  
+|UNDNAME_RESERVED1|0x0020|ЗАРЕЗЕРВИРОВАНО.|  
+|UNDNAME_RESERVED2|0x0040|ЗАРЕЗЕРВИРОВАНО.|  
+|UNDNAME_NO_THISTYPE|0x0060|Отключает все модификаторы на `this` типа.|  
+|UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Отключает расширения описатели доступа для участников.|  
+|UNDNAME_NO_THROW_SIGNATURES|0x0100|Отключает расширения из throw — «сигнатур» для функций и указателей на функции.|  
+|UNDNAME_NO_MEMBER_TYPE|0x0200|Отключает расширения `static` или `virtual` членов.|  
+|UNDNAME_NO_RETURN_UDT_MODEL|0x0400|Отключает расширения Microsoft модели для определяемого пользователем ТИПА возвращает.|  
+|UNDNAME_32_BIT_DECODE|0x0800|Undecorates декорированные имена в 32-разрядной.|  
+|UNDNAME_NAME_ONLY|0x1000|Возвращает только имя для основного объявление; Возвращает только [области::] имя.  При развертывании шаблона params.|  
+|UNDNAME_TYPE_ONLY|0x2000|Входные данные — это просто тип кодирования; выполняет композицию абстрактный декларатор.|  
+|UNDNAME_HAVE_PARAMETERS|0x4000|Доступны параметры реальных шаблона.|  
+|UNDNAME_NO_ECSU|0x8000|Подавляет enum/классом, структурой или объединением.|  
+|UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Отключает проверку для допустимых символах идентификаторов.|  
+|UNDNAME_NO_PTR64|0x20000|Не включает ptr64 в выходных данных.|  
+  
+## <a name="see-also"></a>См. также  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

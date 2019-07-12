@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df415b9ad56e8e9b740da57709d039737f1bd24a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e53a31a274a356d5686c3225ed2635e6c61231c2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697907"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824713"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Инструменты для работы с наборами данных в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ ms.locfileid: "65697907"
 
 - Используйте **мастер настройки адаптера таблицы** для указания запроса или хранимой процедуры, которая заполняет набор данных и какие операции базы данных (update, delete и т. д.) для реализации. Дополнительные сведения см. в следующих разделах.
 
-    - [Заполнение наборов данных с помощью адаптера таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Заполнение наборов данных с помощью адаптера таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Изменение данных в наборах данных](../data-tools/edit-data-in-datasets.md)
+  - [Изменение данных в наборах данных](../data-tools/edit-data-in-datasets.md)
 
-    - [Проверка данных в наборах данных](../data-tools/validate-data-in-datasets.md)
+  - [Проверка данных в наборах данных](../data-tools/validate-data-in-datasets.md)
 
-    - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
+  - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
 
 - Запросы и поиск данных в наборе данных. Дополнительные сведения см. в разделе [запрашивайте наборы данных](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] позволяет [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) над данными в <xref:System.Data.DataSet> объекта. Дополнительные сведения см. в разделе [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 

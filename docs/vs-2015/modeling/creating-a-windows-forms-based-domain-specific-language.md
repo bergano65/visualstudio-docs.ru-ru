@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93518a6ca5fa6464bf8f2e72f11cfa90b4dd4dd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433333"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825594"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Создание доменного языка на основе Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ Windows Forms можно использовать для отображения 
 
 - `UI` Проект содержит рабочий образец элемента управления формы, привязанный к линии DSL. Тем не менее он не будут работать при изменении определения DSL. `UI` Проект содержит:  
 
-    - Класс Windows Forms с именем `ModelViewControl`.  
+  - Класс Windows Forms с именем `ModelViewControl`.  
 
-    - Файл с именем `DataBinding.cs` , содержащий дополнительные частичное определение `ModelViewControl`. Чтобы просмотреть его содержимое в **обозревателе решений**, откройте контекстное меню для файла и выберите **Просмотр кода**.  
+  - Файл с именем `DataBinding.cs` , содержащий дополнительные частичное определение `ModelViewControl`. Чтобы просмотреть его содержимое в **обозревателе решений**, откройте контекстное меню для файла и выберите **Просмотр кода**.  
 
 ### <a name="about-the-ui-project"></a>О проекте пользовательского интерфейса  
  При обновлении в файл определения DSL, для определения собственного DSL, необходимо будет обновить элемент управления в `UI` проекта для отображения в DSL. В отличие от `Dsl` и `DslPackage` проектов, образец `UI` проект не был создан из `DslDefinitionl.dsl`. Можно добавить файлы для создания кода, если требуется, несмотря на то, что в этом пошаговом руководстве, не рассматривается.  
@@ -241,7 +241,7 @@ Windows Forms можно использовать для отображения 
 
 1. В режиме конструктора FarmControl.cs выберите простой поля, например имя, размер или IsOrganic.  
 
-2. В окне «Свойства» разверните **DataBindings** и откройте **(Дополнительно)**.  
+2. В окне «Свойства» разверните **DataBindings** и откройте **(Дополнительно)** .  
 
      В **форматирование и дополнительная привязка** диалогового окна в разделе **режим обновления источника данных**, выберите **OnPropertyChanged**.  
 

@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 19d651e6b55fd5d18ece318e20aa7db67cf57fee
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698820"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824192"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Кроссплатформенная разработка для мобильных устройств в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "65698820"
 
 - [Сборка приложения для устройств Android, iOS и Windows (.NET Framework)](#NET)
 
-    - [Целевые устройства Android, iOS и Windows из единой базы кода](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+  - [Целевые устройства Android, iOS и Windows из единой базы кода](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    - [Целевые устройства Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+  - [Целевые устройства Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
 - [Сборка приложения для устройств Android, iOS и Windows (HTML/JavaScript)](#HTML)
 
@@ -54,7 +54,7 @@ ms.locfileid: "65698820"
 |[Сведения об эмуляторе Visual Studio для Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ### <a name="AndroidHTML"></a> Целевые устройства Android, iOS и Windows из единой базы кода
- Вы можете создавать собственные приложения для Android, iOS и Windows с помощью C# и F# (Visual Basic сейчас не поддерживается).  Чтобы начать работу, установите Visual Studio 2015, выбрав вариант **Пользовательские параметры** в установщике и установив флажок **Кроссплатформенная разработка для мобильных устройств > C#/.NET (Xamarin)**. Вы также можете начать работу с [установщика Xamarin](https://www.xamarin.com/download), который необходим, чтобы установить Xamarin для Visual Studio 2013.
+ Вы можете создавать собственные приложения для Android, iOS и Windows с помощью C# и F# (Visual Basic сейчас не поддерживается).  Чтобы начать работу, установите Visual Studio 2015, выбрав вариант **Пользовательские параметры** в установщике и установив флажок **Кроссплатформенная разработка для мобильных устройств > C#/.NET (Xamarin)** . Вы также можете начать работу с [установщика Xamarin](https://www.xamarin.com/download), который необходим, чтобы установить Xamarin для Visual Studio 2013.
 
  Если у вас уже установлен Visual Studio 2015, запустите программу установки из меню **Панель управления > Программы и компоненты**, выбрав тот же вариант **Пользовательские параметры**, который использовался выше для установки Xamarin.
 

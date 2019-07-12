@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715210"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821366"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Инструменты для работы с наборами данных в Visual Studio
 
@@ -75,13 +75,13 @@ Visual Studio предоставляет средства для упрощен�
 
 - Используйте **мастер настройки адаптера таблицы** для указания запроса или хранимой процедуры, которая заполняет набор данных и какие операции базы данных (update, delete и т. д.) для реализации. Дополнительные сведения см. в следующих разделах.
 
-    - [Заполнение наборов данных с помощью адаптера таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Заполнение наборов данных с помощью адаптера таблицы](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Изменение данных в наборах данных](../data-tools/edit-data-in-datasets.md)
+  - [Изменение данных в наборах данных](../data-tools/edit-data-in-datasets.md)
 
-    - [Проверка данных в наборах данных](../data-tools/validate-data-in-datasets.md)
+  - [Проверка данных в наборах данных](../data-tools/validate-data-in-datasets.md)
 
-    - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
+  - [Сохранение данных обратно в базу данных](../data-tools/save-data-back-to-the-database.md)
 
 - Запросы и поиск данных в наборе данных. Дополнительные сведения см. в разделе [запрашивайте наборы данных](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] позволяет [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) над данными в <xref:System.Data.DataSet> объекта. Дополнительные сведения см. в разделе [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 

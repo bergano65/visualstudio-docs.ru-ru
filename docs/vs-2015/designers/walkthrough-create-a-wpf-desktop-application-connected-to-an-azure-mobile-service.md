@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ac6e9a890c8009e493341b4bcda87f1e3e162d90
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693559"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824552"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Пошаговое руководство. Создание классического приложения WPF, подключенного к мобильной службе Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "65693559"
   
 - Активная учетная запись Microsoft Azure  
   
-    - Зарегистрировать бесплатную пробную учетную запись можно [здесь](https://azure.microsoft.com/pricing/free-trial/).  
-  
-    - Вы можете активировать [преимущества подписки MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). С подпиской MSDN вы каждый месяц получаете кредиты, которые можно использовать для оплаты служб Azure.  
+  - Зарегистрировать бесплатную пробную учетную запись можно [здесь](https://azure.microsoft.com/pricing/free-trial/).  
+
+  - Вы можете активировать [преимущества подписки MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). С подпиской MSDN вы каждый месяц получаете кредиты, которые можно использовать для оплаты служб Azure.  
   
 ## <a name="create-a-project-and-add-references"></a>Создание проекта и добавление ссылок  
  Сначала нужно создать проект WPF и добавить пакет NuGet, позволяющий подключаться к мобильным службам Azure.  

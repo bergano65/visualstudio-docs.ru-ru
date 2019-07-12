@@ -8,12 +8,12 @@ ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 07d650e127b5f15abbfac8aef179bb9e01a36297
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 24ea04e59178248c7a9795a2f928c311ba83db2e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096495"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824074"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Средства оценки для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,11 +51,11 @@ ms.locfileid: "60096495"
 
 - Убедитесь, что кнопки, команды и ссылки на команды, запустите пользовательский Интерфейс для захвата ввод данных пользователем заканчиваются на многоточие **[...]** .
 
-     Примеры
+  Примеры
 
-    - **[Дополнительно]**  кнопку в диалоговом окне.
+  - **[Дополнительно]**  кнопку в диалоговом окне.
 
-    - Параметры команды в меню «Инструменты» (**Сервис > Параметры**) не должны получить многоточие, так как запуск самого диалогового окна является целью команды.
+  - Параметры команды в меню «Инструменты» (**Сервис > Параметры**) не должны получить многоточие, так как запуск самого диалогового окна является целью команды.
 
 - Убедитесь, что пользовательский Интерфейс содержит не сокращаются, за исключением стандартных условия. К примеру HTML, ни TCP/IP необходимо уточнять, хотя нехватки памяти (недостаточно памяти) и PII (персональные данные) должен.
 
@@ -147,9 +147,9 @@ ms.locfileid: "60096495"
 
 - Если поле является обязательным полем, должно быть соответствующим образом обозначены, проверьте:
 
-    - ей присваивается фон `Environment.ControlEditRequiredBackground` и переднего плана `Environment.ControlEditRequiredHintText`
+  - ей присваивается фон `Environment.ControlEditRequiredBackground` и переднего плана `Environment.ControlEditRequiredHintText`
 
-    - Это текст подсказки в элементе управления, который отображается в виде **"\<требуется >»**
+  - Это текст подсказки в элементе управления, который отображается в виде **"\<требуется >»**
 
 #### <a name="button-controls"></a>Элементы управления "Кнопка"
 
@@ -171,11 +171,11 @@ ms.locfileid: "60096495"
 
 - Убедитесь, что используемые цвета VS:
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - Убедитесь, что гиперссылки отображаются синий не линией, если встроен в абзаце.
 
