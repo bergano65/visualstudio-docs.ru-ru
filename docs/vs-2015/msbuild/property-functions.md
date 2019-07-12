@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065186"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826176"
 ---
 # <a name="property-functions"></a>Функции свойств
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "60065186"
   
 - [Синтаксис функции свойства](#BKMK_Syntax)  
   
-    - [Функции свойства строки](#BKMK_String)  
-  
-    - [Функции статического свойства](#BKMK_Static)  
-  
-    - [Вызов методов экземпляра в статических свойствах](#BKMK_InstanceMethods)  
-  
-    - [Функции свойства MSBuild](#BKMK_PropertyFunctions)  
+  - [Функции свойства строки](#BKMK_String)  
+
+  - [Функции статического свойства](#BKMK_Static)  
+
+  - [Вызов методов экземпляра в статических свойствах](#BKMK_InstanceMethods)  
+
+  - [Функции свойства MSBuild](#BKMK_PropertyFunctions)  
   
 - [Вложенные функции свойства](#BKMK_Nested)  
   
@@ -188,7 +188,7 @@ ms.locfileid: "60065186"
   
  Приведем список функций свойства MSBuild.  
   
-|Подпись функции|Описание|  
+|Подпись функции|ОПИСАНИЕ|  
 |------------------------|-----------------|  
 |Сложение double(double a, double b)|Сложение двух значений double.|  
 |Сложение long(long a, long b)|Сложение двух значений long.|  
@@ -332,6 +332,6 @@ Output:
 -->  
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 [MSBuild Properties](msbuild-properties1.md)  (Свойства MSBuild)  
 [MSBuild Overview](msbuild.md) (Общие сведения о MSBuild)

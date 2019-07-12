@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e822ae5f50436a2f1b0b4863b7e6cf3a7d5d0963
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441829"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826060"
 ---
 # <a name="events-in-office-projects"></a>События в проектах Office
   Каждый шаблон проекта Office автоматически создает несколько обработчиков событий. Обработчики событий для настроек на уровне документа несколько отличаются от обработчиков событий для надстроек VSTO.
@@ -56,13 +56,13 @@ ms.locfileid: "63441829"
 
 - Для проектов Microsoft Office Excel обработчики событий имеют следующие имена:
 
-    - `Sheet1_Startup`
+  - `Sheet1_Startup`
 
-    - `Sheet2_Startup`
+  - `Sheet2_Startup`
 
-    - `Sheet3_Startup`
+  - `Sheet3_Startup`
 
-    - `ThisWorkbook_Startup`
+  - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Shutdown - событие
  Событие **Shutdown** возникает для каждого ведущего элемента (документа или листа), когда домен приложения, в который загружен ваш код, готов к выгрузке. Это самая последняя операция, которая должна быть вызвана в классе при выгрузке.
@@ -73,13 +73,13 @@ ms.locfileid: "63441829"
 
 - Для проектов Microsoft Office Excel обработчики событий имеют следующие имена:
 
-    - `Sheet1_Shutdown`
+  - `Sheet1_Shutdown`
 
-    - `Sheet2_Shutdown`
+  - `Sheet2_Shutdown`
 
-    - `Sheet3_Shutdown`
+  - `Sheet3_Shutdown`
 
-    - `ThisWorkbook_Shutdown`
+  - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
 > Не удаляйте программным образом элементы управления во время работы обработчика событий **Shutdown** документа. Если возникает событие **Shutdown** , элементы пользовательского интерфейса документа становятся недоступными. Если элементы управления необходимо удалить до закрытия приложения, добавьте свой код в другой обработчик событий, например, **BeforeClose** или **BeforeSave**.

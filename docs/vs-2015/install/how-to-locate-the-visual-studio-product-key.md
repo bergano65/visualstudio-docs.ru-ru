@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2223ab7dfbf37a0be1c9600065ddaad8ea4dfd19
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0210f66bcfeaad8143ac4eee78b7b086c36eb164
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098732"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823213"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>How to: Locate the Visual Studio Product Key
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "60098732"
 
 - Ключ продукта может находиться в одном из перечисленных мест.
 
-    - На установочном носителе (если применимо).
+  - На установочном носителе (если применимо).
 
-    - На веб-сайте [My.VisualStudio.com](https://my.visualstudio.com/productkeys).
+  - На веб-сайте [My.VisualStudio.com](https://my.visualstudio.com/productkeys).
 
-    - В документации или в других материалах, полученных от поставщика, у которого закуплено программное обеспечение.
+  - В документации или в других материалах, полученных от поставщика, у которого закуплено программное обеспечение.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Практическое руководство. Обновление с пробной версии Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [Установка Visual Studio](../install/install-visual-studio-2015.md) [Технический документ о Visual Studio и лицензировании MSDN](http://go.microsoft.com/fwlink/?LinkId=191417)

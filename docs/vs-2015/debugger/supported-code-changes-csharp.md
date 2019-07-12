@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117659"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823540"
 ---
 # <a name="supported-code-changes-c"></a>Поддерживаемые изменения кода (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,17 +57,17 @@ ms.locfileid: "60117659"
   
 - отладка кода LINQ в определенных обстоятельствах; Дополнительные сведения см. в разделе [Отладка LINQ](../debugger/debugging-linq.md).  
   
-    - запись переменной, которая не была записана ранее;  
-  
-    - Изменение типа выражения запроса (например, select a = > выберите новые {A = a};)  
-  
-    - удаление `where` с активным оператором;  
-  
-    - удаление `let` с активным оператором;  
-  
-    - удаление `join` с активным оператором;  
-  
-    - удаление `orderby` с активным оператором.  
+  - запись переменной, которая не была записана ранее;  
+
+  - Изменение типа выражения запроса (например, select a = > выберите новые {A = a};)  
+
+  - удаление `where` с активным оператором;  
+
+  - удаление `let` с активным оператором;  
+
+  - удаление `join` с активным оператором;  
+
+  - удаление `orderby` с активным оператором.  
   
 - отладка в смешанном режиме (машинный код/управляемый код);  
   
