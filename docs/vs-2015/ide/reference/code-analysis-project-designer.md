@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fa2aa4b3055ff49f59da329ea828e0dbcfc8ec05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "62419940"
 ---
 # <a name="code-analysis-project-designer"></a>"Анализ кода", конструктор проекта
@@ -63,7 +63,7 @@ ms.locfileid: "62419940"
  Правила использования  
  Включает или отключает правила использования. Вы также можете расширить эту запись, чтобы включить или отключить отдельные правила.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Анализ для предупреждений управляемого кода](../../code-quality/code-analysis-for-managed-code-warnings.md)   
  [Общие сведения об анализе управляемого кода](../../code-quality/code-analysis-for-managed-code-overview.md)   
  [Пошаговое руководство. Проверка управляемого кода на наличие дефектов](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

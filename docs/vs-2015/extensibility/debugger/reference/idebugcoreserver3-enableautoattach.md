@@ -1,69 +1,67 @@
 ---
 title: IDebugCoreServer3::EnableAutoAttach | Документация Майкрософт
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugCoreServer3::EnableAutoAttach
 helpviewer_keywords:
 - IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 45362c9456b99d6cec0af01dcb29844d02363a27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "62569799"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-Включает автоматическое присоединение для указанного отладчики.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Синтаксис
-
-```cpp
-HRESULT EnableAutoAttach(
-   GUID*     rgguidSpecificEngines,
-   DWORD     celtSpecificEngines,
-   LPCOLESTR pszStartPageUrl,
-   BSTR*     pbstrSessionId
-);
-```
-
-```csharp
-int EnableAutoAttach(
-   Guid[]     rgguidSpecificEngines,
-   uint       celtSpecificEngines,
-   string     pszStartPageUrl,
-   out string pbstrSessionId
-);
-```
-
-#### <a name="parameters"></a>Параметры
- `rgguidSpecificEngines`
-
- [in] Массив идентификаторов GUID для каждого ядра отладки, чтобы пометить как автоматическое присоединение.
-
- `celtSpecificEngines`
-
- [in] Число ядер, указанный в `rgguidSpecificEngines`.
-
- `pszStartPageUrl`
-
- [in] Начальный URL-адрес для использования при присоединении автоматически.
-
- `pbstrSessionID`
-
- [out] Идентификатор сеанса, который был подключен автоматически.
-
-## <a name="return-value"></a>Возвращаемое значение
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Один код ошибки- `E_AUTO_ATTACH_NOT_REGISTERED`, который указывает, что фабрика класса auto-attach не был зарегистрирован.
-
-## <a name="remarks"></a>Примечания
- При запуске программы, связанный с указанным URL-адрес, указанный отладчики автоматически к работе и подключен.
-
-## <a name="see-also"></a>См. также
-- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
+Включает автоматическое присоединение для указанного отладчики.  
+  
+## <a name="syntax"></a>Синтаксис  
+  
+```cpp#  
+HRESULT EnableAutoAttach(  
+   GUID*     rgguidSpecificEngines,  
+   DWORD     celtSpecificEngines,  
+   LPCOLESTR pszStartPageUrl,  
+   BSTR*     pbstrSessionId  
+);  
+```  
+  
+```csharp  
+int EnableAutoAttach(  
+   Guid[]     rgguidSpecificEngines,  
+   uint       celtSpecificEngines,  
+   string     pszStartPageUrl,  
+   out string pbstrSessionId  
+);  
+```  
+  
+#### <a name="parameters"></a>Параметры  
+ `rgguidSpecificEngines`  
+ [in] Массив идентификаторов GUID для каждого ядра отладки, чтобы пометить как автоматическое присоединение.  
+  
+ `celtSpecificEngines`  
+ [in] Число ядер, указанный в `rgguidSpecificEngines`.  
+  
+ `pszStartPageUrl`  
+ [in] Начальный URL-адрес для использования при присоединении автоматически.  
+  
+ `pbstrSessionID`  
+ [out] Идентификатор сеанса, который был подключен автоматически.  
+  
+## <a name="return-value"></a>Возвращаемое значение  
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Один код ошибки- `E_AUTO_ATTACH_NOT_REGISTERED`, который указывает, что фабрика класса auto-attach не был зарегистрирован.  
+  
+## <a name="remarks"></a>Примечания  
+ При запуске программы, связанный с указанным URL-адрес, указанный отладчики автоматически к работе и подключен.  
+  
+## <a name="see-also"></a>См. также  
+ [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

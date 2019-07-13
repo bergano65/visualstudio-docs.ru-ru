@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b17bc1936d077e379ff9eca7460fab1a3a37722
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338408"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852206"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>Установка за пределами папки расширений
+# <a name="install-outside-the-extensions-folder"></a>Установка за пределами папки расширений
 
-Начиная с Visual Studio 2017 и VSIX v3 (версия 3), теперь поддерживаются для установки расширения ресурсов за пределами папки расширений. В настоящее время как расположения правильность установки (где сопоставленного [INSTALLDIR] каталог установки экземпляра Visual Studio) включены следующие расположения:
+Начиная с Visual Studio 2017 и VSIX v3 средств расширения (версия 3), можно установить за пределами папки расширений. В настоящее время как расположения правильность установки (где сопоставленного [INSTALLDIR] каталог установки экземпляра Visual Studio) включены следующие расположения:
 
 * \MSBuild [INSTALLDIR]
 * [INSTALLDIR] \Xml\Schemas
@@ -25,9 +25,10 @@ ms.locfileid: "66338408"
 * \Licenses [INSTALLDIR]
 * \Common7\IDE\ReferenceAssemblies [INSTALLDIR]
 * \Common7\IDE\RemoteDebugger [INSTALLDIR]
-* [INSTALLDIR]\Common7\IDE\VC\VCTargets
+* [INSTALLDIR] \Common7\IDE\VC\VCTargets (только поддерживается для Visual Studio 2017; устаревшие компоненты для Visual Studio 2019 г. и более поздние версии)
 
->**Примечание.** Формат VSIX не позволяют установить за пределами структуры папок установки VS.
+> [!NOTE]
+> Формат VSIX не позволяет установить вне структуры папки установки Visual Studio. 
 
 Для поддерживают установку на эти каталоги, VSIX необходимо установить «для каждого экземпляра на уровне компьютера». Эту функцию можно включить, установив флажок «все пользователи» в конструкторе extension.vsixmanifest:
 
@@ -49,7 +50,8 @@ ms.locfileid: "66338408"
  </ProjectReference>
 ```
 
->**Примечание.** Можно изменить CSPROJ-файл напрямую, если вы предпочитаете.
+> [!NOTE]
+> Можно изменить CSPROJ-файл напрямую, если вы предпочитаете.
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>Как задать вложенный путь в разделе InstallRoot
 

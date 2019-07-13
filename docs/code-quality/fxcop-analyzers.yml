@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Перенос из анализа кода FxCop анализаторы платформы компилятора .NET
+title: Перенос из двоичный анализ (FxCop) для анализа источника (анализаторы FxCop)
 metadata:
   title: Документация по переносу FxCop
-  description: 'Узнайте, как для миграции из прежних версий FxCop анализаторы для анализа кода.'
-  ms.date: 07/18/2018
+  description: 'Сведения о переносе из прежних версий двоичный анализ (FxCop) на источник анализа (анализаторы FxCop), при анализе кода.'
+  ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -14,7 +14,7 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: 'Узнайте об анализе кода в первый раз, а также способы перехода с FxCop для анализа управляемого кода, с помощью анализаторов новым образом.'
+  description: 'Узнайте, как анализировать код в первый раз или как перенести из двоичный анализ (FxCop) в новый способ анализа управляемого кода с помощью анализа источника (анализаторы FxCop).'
   aside:
     image:
       alt: Распространенные логотип задачи управления
@@ -25,7 +25,7 @@ abstract:
 sections:
   - title: Вопросы и ответы
     items:
-      - html: Получите ответы на некоторые <a href="fxcop-analyzers-faq.md">ответы на вопросы о</a> о различиях между FxCop и анализаторы.
+      - html: Получите ответы на некоторые <a href="fxcop-analyzers-faq.md">ответы на вопросы о</a> о различиях между двоичный анализ FxCop и анализ источника с помощью анализаторов FxCop.
   - title: Если вы еще не работали с анализом кода...
     items:
       - type: list
@@ -53,7 +53,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: Использование командной строки
-  - title: Если вы являетесь пользователем FxCop...
+  - title: Если вы сейчас используете двоичный анализ (FxCop)...
     items:
       - type: list
         style: cards
@@ -61,7 +61,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>Ознакомьтесь с различиями анализа анализатора кода и статические (FxCop).</p>
+            html: <p>Ознакомьтесь с различиями двоичный анализ (FxCop) и анализ источника (анализаторы FxCop).</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: Чем отличается?
@@ -71,7 +71,7 @@ sections:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: "Установка анализаторов\_FxCop"
           - href: fxcop-rule-port-status.md
-            html: '<p>Список правил FxCop анализа статического кода, которые были перенесены анализаторы FxCop.</p>'
+            html: '<p>Список правил двоичный анализ (FxCop), которые были перенесены в анализ источника (анализаторы FxCop).</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
             title: Правила перенесенном и unported
