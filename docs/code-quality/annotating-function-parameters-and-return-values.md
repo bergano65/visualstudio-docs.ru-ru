@@ -1,6 +1,6 @@
 ---
 title: Создание примечаний к параметрам и возвращаемым значениям функций
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,18 +119,21 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388549"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852172"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Создание примечаний к параметрам и возвращаемым значениям функций
 В этой статье описываются типичные способы использования заметок параметры простой функции — скалярных величин и указатели на структуры и классы и в большинстве буферов.  В этой статье также показано распространенных шаблонов использования для заметки. Дополнительные заметки, относящиеся к функции, см. в разделе [Аннотация поведения функций](../code-quality/annotating-function-behavior.md)
@@ -216,7 +219,7 @@ ms.locfileid: "63388549"
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     Другими словами, каждый элемент, который существует в буфере до `s` в состоянии предварительной находится в состоянии после параметра допустимым.  Пример:
+     Другими словами, каждый элемент, который существует в буфере до `s` в состоянии предварительной находится в состоянии после параметра допустимым.  Например:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -244,7 +247,7 @@ ms.locfileid: "63388549"
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     Другими словами, каждый элемент, который существует в буфере до `s` в состоянии предварительной находится в состоянии после параметра допустимым.  Пример:
+     Другими словами, каждый элемент, который существует в буфере до `s` в состоянии предварительной находится в состоянии после параметра допустимым.  Например:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -285,6 +288,7 @@ ms.locfileid: "63388549"
      Указатель на массив, завершающаяся символом null, для которого выражение `p`  -  `_Curr_` (то есть `p` минус `_Curr_`) определен соответствующий языковым стандартом.  Элементы до версии `p` больше не нужно быть допустимым в состоянии предварительной и должен быть допустимым в состоянии после.
 
 ## <a name="optional-pointer-parameters"></a>Необязательные операторы указателя параметров
+
  Если содержит аннотацию параметра указатель `_opt_`, он указывает, что параметр может иметь значение null. В противном случае заметка выполняет совпадает с версией, не включает в себя `_opt_`. Ниже приведен список `_opt_` варианты заметок параметр указателя:
 
 ||||
@@ -384,6 +388,7 @@ ms.locfileid: "63388549"
    Возвращаемый указатель указывает на допустимый буфер, если функция выполняется успешно, или значение null, если функция завершается с ошибкой. Эта заметка является для ссылочного параметра.
 
 ## <a name="output-reference-parameters"></a>Выходными ссылочными параметрами
+
  Ссылочный параметр обычно используется для выходных параметров.  Для простых выходными ссылочными параметрами — например, `int&`—`_Out_` обеспечивает правильное семантику.  Тем не менее, в том случае, когда выходное значение является указателем, например `int *&`— эквивалент указатель заметок, такие как `_Outptr_ int **` не обеспечивают правильное семантику.  Чтобы кратко выразить семантика выходными ссылочными параметрами для типов указателей, использование этих составных заметок:
 
  **Заметки и описания**
@@ -445,13 +450,62 @@ ms.locfileid: "63388549"
      Результат должен быть допустимым в состоянии после, но может иметь значение null в состоянии отправки. Указывает на допустимый буфер `s` байтов, допустимых элементов.
 
 ## <a name="return-values"></a>Возвращаемые значения
+
  Возвращаемое значение функции напоминает `_Out_` параметра, но находится в другой уровень de-reference, и не нужно рассмотреть понятие указатель на результат.  Следующие заметки, возвращаемое значение является объектом с заметками, скалярным, указатель на структуру или указатель на буфер. Эти заметки имеют ту же семантику, что и соответствующий `_Out_` заметки.
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
+## <a name="format-string-parameters"></a>Параметры строки формата
+
+- `_Printf_format_string_` Указывает, что параметр является строка формата для использования в `printf` выражение.
+
+     **Пример**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_` Указывает, что параметр является строка формата для использования в `scanf` выражение.
+
+     **Пример**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_` Указывает, что параметр является строка формата для использования в `scanf_s` выражение.
+
+     **Пример**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args; 
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args); 
+           return ret;
+    }
+    ```
+
 ## <a name="other-common-annotations"></a>Другие распространенные аннотации
+
  **Заметки и описания**
 
 - `_In_range_(low, hi)`
@@ -481,7 +535,7 @@ ms.locfileid: "63388549"
 
 - `_Struct_size_bytes_(size)`
 
-     Применяется к объявлению структуры или класса.  Указывает, что допустимый объект этого типа может быть больше объявленного типа, с числом байтов, которые получают по `size`.  Пример:
+     Применяется к объявлению структуры или класса.  Указывает, что допустимый объект этого типа может быть больше объявленного типа, с числом байтов, которые получают по `size`.  Например:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
@@ -490,6 +544,7 @@ ms.locfileid: "63388549"
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>Связанные ресурсы
+
  [Блог команды анализа кода](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>См. также

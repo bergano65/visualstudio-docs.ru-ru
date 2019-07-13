@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852097"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852228"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Диалоговые окна ошибок и предупреждений отладки
 Ниже перечислены диалоговые окна ошибок и предупреждений, которые могут возникнуть при отладке приложения.
@@ -37,6 +37,8 @@ ms.locfileid: "62852097"
  [Диалоговое окно "Не удается изменить значение"](../debugger/cannot-change-value-dialog-box.md)
 
  [Отладчику не удается отобразить исходный код или дизассемблированный код](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
+ 
+ [Службы, нехватке памяти выполнение отладчика](../debugger/error-debugger-services-no-memory.md)
 
  [Диалоговое окно "Исполняемый файл для сеанса отладки"](../debugger/executable-for-debugging-session-dialog-box.md)
 
