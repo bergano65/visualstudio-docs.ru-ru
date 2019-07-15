@@ -664,7 +664,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: Безопасность отладчика
       href: debugger-security.md
-- name: Ссылка
+- name: Справочники
   items:
     - name: Справочник по пользовательскому отладочному интерфейсу
       items:
@@ -710,6 +710,8 @@
               href: cannot-change-value-dialog-box.md
             - name: Отладчику не удается отобразить исходный код или дизассемблированный код
               href: debugger-cannot-display-source-code-or-disassembly.md
+            - name: Службам отладки недостаточно памяти
+              href: error-debugger-services-no-memory.md
             - name: Исполняемый файл для сеанса отладки - диалоговое окно
               href: executable-for-debugging-session-dialog-box.md
             - name: Диалоговое окно "Изменить и продолжить" (C++)
