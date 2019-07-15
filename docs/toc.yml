@@ -16,15 +16,6 @@
   items:
     - name: Установка Visual Studio
       href: install/install-visual-studio.md
-    - name: Учетные записи персонализации
-      items:
-        - name: Выполните вход в Visual Studio
-          displayName: personalization accounts
-          href: ide/signing-in-to-visual-studio.md
-        - name: Работа с несколькими учетными записями пользователя
-          href: ide/work-with-multiple-user-accounts.md
-        - name: Расширение пробной версии или обновление лицензии
-          href: ide/how-to-unlock-visual-studio.md
     - name: Установка в автономном режиме
       items:
         - name: Создание автономной установки Visual Studio
@@ -61,9 +52,7 @@
           items:
             - name: Создание сетевой установки Visual Studio
               href: install/create-a-network-installation-of-visual-studio.md
-            - name: Обновление сетевой установки Visual Studio
-              href: install/update-a-network-installation-of-visual-studio.md
-            - name: Рекомендации по сети
+            - name: Рекомендации относительно сети
               items:
                 - name: "Установка и использование Visual\_Studio в среде, защищенной брандмауэром или прокси-сервером"
                   href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
@@ -77,29 +66,33 @@
               href: install/automatically-apply-product-keys-when-deploying-visual-studio.md
             - name: Настройка параметров по умолчанию для корпоративного развертывания Visual Studio
               href: install/set-defaults-for-enterprise-deployments.md
-            - name: Отключение или перемещение кэша пакетов
-              href: install/disable-or-move-the-package-cache.md
-            - name: Управление обновлением развертываний Visual Studio
-              href: install/controlling-updates-to-visual-studio-deployments.md
-            - name: Обновление Visual Studio во время обслуживания
-              href: install/update-servicing-baseline.md
-        - name: Управление установками
+            - name: Развертывание средства просмотра справки
+              items:
+                - name: Руководство администратора Help Viewer
+                  href: help-viewer/administrator-guide.md
+                - name: Аргументы командной строки для диспетчера содержимого справки
+                  href: help-viewer/command-line-arguments.md
+                - name: Переопределение диспетчера содержимого справки
+                  href: help-viewer/behavior-overrides.md
+        - name: Управление установками и их обновление
           items:
             - name: Средства для обнаружения экземпляров Visual Studio и управления ими
               href: install/tools-for-managing-visual-studio-instances.md
+            - name: Обновление сетевой установки Visual Studio
+              href: install/update-a-network-installation-of-visual-studio.md
+            - name: Обновление Visual Studio во время обслуживания
+              href: install/update-servicing-baseline.md
+            - name: Управление обновлением развертываний Visual Studio
+              href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: Управление изменениями полезных данных пакетов
+              href: install/changed-payloads.md
+            - name: Отключение или перемещение кэша пакетов
+              href: install/disable-or-move-the-package-cache.md
         - name: Управление подписками
           items:
             - name: "Подписки на Visual\_Studio: Общие сведения для администраторов"
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: Развертывание средства просмотра справки
-          items:
-            - name: Руководство администратора Help Viewer
-              href: help-viewer/administrator-guide.md
-            - name: Аргументы командной строки для диспетчера содержимого справки
-              href: help-viewer/command-line-arguments.md
-            - name: Переопределение диспетчера содержимого справки
-              href: help-viewer/behavior-overrides.md
-        - name: Справочник
+        - name: Справочники
           items:
             - name: Идентификаторы рабочих нагрузок и компонентов Visual Studio
               items:
@@ -126,8 +119,6 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Feedback Client
                   href: install/workload-component-id-vs-feedback-client.md
-            - name: Изменения полезных данных пакета
-              href: install/changed-payloads.md
             - name: Номера сборки и даты выпуска Visual Studio
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Использование Visual Studio на виртуальной машине Azure
@@ -175,7 +166,7 @@
       href: python/
     - name: Node.js
       href: javascript/
-- name: Практические руководства
+- name: Руководства
   items:
     - name: Разработка
       items:
@@ -261,7 +252,7 @@
               href: ide/visual-studio-ide-64-bit-support.md
         - name: Разработка без использования проектов и решений
           items:
-            - name: Практическое руководство. Разработка без проекта
+            - name: 'Практическое руководство: Разработка без проекта'
               displayName: Open folder
               href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
             - name: Настройка задач сборки и отладки
@@ -316,7 +307,7 @@
                       href: ide/best-practices-for-using-code-snippets.md
                     - name: Создавайте фрагменты кода
                       items:
-                        - name: Пошаговое руководство. Создание фрагмента кода
+                        - name: Пошаговое руководство Создание фрагмента кода
                           href: ide/walkthrough-creating-a-code-snippet.md
                         - name: Распространение фрагментов кода
                           href: ide/how-to-distribute-code-snippets.md
@@ -407,7 +398,7 @@
                       href: ide/reference/regex-completion-through-intellisense.md
                     - name: Удаление недостижимого кода
                       href: ide/reference/remove-unreachable-code.md
-                    - name: Переименовать
+                    - name: Переименование
                       href: ide/reference/rename.md
                     - name: Сортировка директив using
                       href: ide/reference/sort-usings.md
@@ -425,7 +416,7 @@
                       href: ide/reference/unused-values-parameters.md
                     - name: 'Параметры переноса, отступа и выравнивания'
                       href: ide/reference/wrap-align-indent-parameters.md
-                - name: Пошаговое руководство. Создание кода в результате использования
+                - name: Пошаговое руководство Создание кода в результате использования
                   href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
             - name: IntelliSense
               items:
@@ -488,7 +479,7 @@
                       href: ide/editorconfig-language-conventions.md
                     - name: Соглашения по форматированию
                       href: ide/editorconfig-formatting-conventions.md
-                    - name: Соглашения об именах
+                    - name: Соглашения об именовании.
                       href: ide/editorconfig-naming-conventions.md
             - name: Настройка полосы прокрутки
               href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
@@ -602,7 +593,7 @@
         - name: Обзор
           displayName: Compile build
           href: ide/compiling-and-building-in-visual-studio.md
-        - name: Пошаговое руководство. Создание приложения
+        - name: Пошаговое руководство Создание приложения
           href: ide/walkthrough-building-an-application.md
         - name: Сборка и очистка проектов и решений
           items:
@@ -656,7 +647,7 @@
           href: ide/how-to-specify-build-events-csharp.md
         - name: Настройка предупреждений в Visual Basic
           href: ide/configuring-warnings-in-visual-basic.md
-        - name: Пошаговое руководство. Создание среды построения из нескольких компьютеров
+        - name: Пошаговое руководство Создание среды построения из нескольких компьютеров
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Отладка...
       href: debugger/index.md
@@ -718,6 +709,15 @@
           displayName: 'marketplace, gallery, vsix'
         - name: Управление внешними инструментами
           href: ide/managing-external-tools.md
+        - name: Учетные записи персонализации
+          items:
+            - name: Вход в Visual Studio
+              displayName: personalization accounts
+              href: ide/signing-in-to-visual-studio.md
+            - name: Работа с несколькими учетными записями пользователя
+              href: ide/work-with-multiple-user-accounts.md
+            - name: Расширение пробной версии или обновление лицензии
+              href: ide/how-to-unlock-visual-studio.md
     - name: Производительность Visual Studio
       items:
         - name: Оптимизация производительности
@@ -728,7 +728,7 @@
           href: ide/filtered-solutions.md
         - name: Советы и рекомендации
           href: ide/visual-studio-performance-tips-and-tricks.md
-    - name: Специальные возможности
+    - name: Возможности доступа
       items:
         - name: Управление специальными возможностями
           href: ide/reference/accessibility-features-of-visual-studio.md
@@ -974,7 +974,7 @@
                   href: ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box.md
             - name: Диалоговое окно "Параметры конструктора XAML"
               href: ide/reference/xaml-designer.md
-        - name: Окно выходных данных
+        - name: Окно вывода
           href: ide/reference/output-window.md
         - name: Свойства проекта
           items:
@@ -1139,7 +1139,7 @@
                   href: help-viewer/logical-operators-search-expressions.md
         - name: Настройка окна справки
           href: help-viewer/customize.md
-        - name: Специальные возможности
+        - name: Возможности доступа
           href: help-viewer/accessibility-features.md
         - name: Сочетания клавиш
           href: help-viewer/shortcut-keys.md
@@ -1165,7 +1165,7 @@
       items:
         - name: График выпуска
           href: /visualstudio/productinfo/release-rhythm/
-        - name: "Visual\_Studio\_2017"
+        - name: "Visual Studio\_2017"
           items:
             - name: Заметки о текущем выпуске
               href: /visualstudio/releasenotes/vs2017-relnotes/
@@ -1179,7 +1179,7 @@
               href: /visualstudio/productinfo/vs2017-compatibility-vs/
             - name: Требования к системе
               href: /visualstudio/productinfo/vs2017-system-requirements-vs/
-        - name: Visual Studio 2019
+        - name: "Visual Studio\_2019"
           items:
             - name: Заметки о текущем выпуске
               href: /visualstudio/releases/2019/release-notes/
@@ -1226,6 +1226,6 @@
           href: ide/diagnostic-data-collection.md
     - name: Ресурсы для устранения неполадок интегрированной среды разработки
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
-    - name: Отзывы
+    - name: Отзыв
       displayName: Feedback
       href: ide/feedback-options.md
