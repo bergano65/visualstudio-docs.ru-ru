@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178336"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Практическое руководство. Выбор цели для первой сборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60076423"
   
 #### <a name="to-specify-one-initial-target"></a>Задание одного начального целевого объекта  
   
-- Укажите целевой объект по умолчанию в атрибуте `InitialTargets` элемента `Project`. Пример:  
+- Укажите целевой объект по умолчанию в атрибуте `InitialTargets` элемента `Project`. Например:  
   
    `<Project InitialTargets="Clean">`  
   
@@ -47,7 +47,7 @@ ms.locfileid: "60076423"
   
 #### <a name="to-specify-one-default-target"></a>Задание одного целевого объекта по умолчанию  
   
-- Укажите целевой объект по умолчанию в атрибуте `DefaultTargets` элемента `Project`. Пример:  
+- Укажите целевой объект по умолчанию в атрибуте `DefaultTargets` элемента `Project`. Например:  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -64,13 +64,13 @@ ms.locfileid: "60076423"
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Использование целевого объекта, отличного от заданного по умолчанию, в первую очередь  
   
-- Укажите целевой объект в качестве первого с помощью параметра командной строки **/target**. Пример:  
+- Укажите целевой объект в качестве первого с помощью параметра командной строки **/target**. Например:  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Использование нескольких целевых объектов, отличных от заданных по умолчанию, в первую очередь  
   
-- Задайте целевые объекты, разделяя их точками с запятой или запятыми, с помощью параметра командной строки **/target**. Пример:  
+- Задайте целевые объекты, разделяя их точками с запятой или запятыми, с помощью параметра командной строки **/target**. Например:  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   

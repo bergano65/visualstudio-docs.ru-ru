@@ -12,13 +12,13 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204344"
 ---
-# <a name="font-and-color-overview"></a>Шрифт и цвет Обзор
+# <a name="font-and-color-overview"></a>Общие сведения о шрифтах и цветах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе рассматриваются параметры шрифта и цвета текста в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки (IDE). Он также понятия, категории и отображаемых элементов, и он описывает, как использовать атрибуты текста в пакеты VSPackage и базовым редактором.  
@@ -73,7 +73,7 @@ ms.locfileid: "58979088"
   
 - Оба возможность использовать встроенные отображаемые элементы из **EditorCategory текст** и расширять их.  
   
-   Дополнительные сведения см. в разделе [Как Использование встроенных цветных элементов](../extensibility/internals/how-to-use-built-in-colorable-items.md) и [пользовательских цветных элементов](../extensibility/internals/custom-colorable-items.md).  
+   Дополнительные сведения см. в разделе [Практическое руководство. Использование встроенных цветных элементов](../extensibility/internals/how-to-use-built-in-colorable-items.md) и [пользовательских цветных элементов](../extensibility/internals/custom-colorable-items.md).  
   
 - Автоматическое сохранение текущего состояния обоих встроенных и пользовательских отображение элементов с **текстовый редактор** категории.  
   

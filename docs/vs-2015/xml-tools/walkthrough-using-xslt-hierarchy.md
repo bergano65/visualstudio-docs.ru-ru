@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158627"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>Пошаговое руководство. Использование XSLT иерархии
+# <a name="walkthrough-using-xslt-hierarchy"></a>Пошаговое руководство. Использование иерархии XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Средство XSLT иерархии yпрощает многие задачи разработки XML. Таблица стилей XSLT часто использует инструкции `includes` и `imports`. Компиляция начинается с основной таблицы стилей. Ошибка, возникшая в ходе компиляции таблицы стилей XSLT, может иметь причиной другой источник, отличный от основной таблицы стилей. Для устранения ошибки или изменения таблицы стилей может потребоваться доступ к включенным или импортированным таблицам стилей. Пошаговое выполнение таблицы стилей в отладчике может открывать включенные и импортированные таблицы стилей и в какой-то момент может потребовать добавления точки останова в одной или более включенной таблице стилей.  

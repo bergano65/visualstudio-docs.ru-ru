@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2e06fd709b2d076b6fa8de7f104e907eb1b35a42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190956"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
  Основное различие между `IDebugCodeContext2` интерфейс и [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) интерфейс является то, что `IDebugCodeContext2` всегда по краю инструкции. Это означает, что `IDebugCodeContext2` всегда указывает на начало инструкции, тогда как `IDebugMemoryContext2` может указывать на любой байт памяти в архитектуре во время выполнения. `IDebugCodeContext2` увеличивается по инструкции, а не по размеру основное хранилище (обычно в байтах).  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

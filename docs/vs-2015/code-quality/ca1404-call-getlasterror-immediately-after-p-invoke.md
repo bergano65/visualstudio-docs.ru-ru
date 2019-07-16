@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: e33c724d2cebb9423f2e475d95bf42ac5e2cc966
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200305"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404. Вызывайте GetLastError сразу после P/Invoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "60053290"
 
  [CA1400: Должны существовать точки входа P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: P/Invoke не должны быть видимыми](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: МЕТОДЫ P/Invoke не должны быть видимыми](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
  [CA2101: Укажите тип маршалинга для строковых аргументов P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 

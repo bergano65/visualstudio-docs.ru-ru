@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154839"
 ---
 # <a name="msbuild-glossary"></a>Глоссарий MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,7 +110,7 @@ ms.locfileid: "54768991"
 
  Файл проекта содержит сценарий MSBuild, который управляет сборкой. Файлы проектов обычно имеют расширение, которое заканчивается на PROJ, например CSPROJ или VBPROJ. Файлы проектов могут импортировать файлы свойств и файлы целевых объектов.
 
- свойство;
+ свойство
 
  Свойство представляет собой пару "ключ — значение", используемую для управления процессом сборки. Дополнительные сведения см. в разделе [Свойства MSBuild](msbuild-properties1.md).
 
