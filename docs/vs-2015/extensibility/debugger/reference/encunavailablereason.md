@@ -13,11 +13,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0ebdc5518579223a0081f30a0affd3a45e91604e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198773"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ public enum EncUnavailableReason {
  Это перечисление предназначено для внутреннего использования только по [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]. [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) и [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) всегда должны возвращать методы как реализованный поставщика пользовательского порта `E_NOTIMPL`.  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.idl  
+ Заголовок: msdbg.idl  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

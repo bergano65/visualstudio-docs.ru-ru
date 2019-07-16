@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7846ade8dba2ce849acf62311e508c157b07dd3e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186758"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Анимирование объектов в конструкторе XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,5 +40,5 @@ ms.locfileid: "54805513"
 |![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Анимация кнопки](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|Создание интересных эффектов, которые отображаются на кнопке при наведении на нее курсора.|  
 |![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание анимации и работа с плавностью](https://www.youtube.com/watch?v=mAJXYrwxGYo)|Анимация эффектов, которые отображаются в том случае, когда пользователь нажимает кнопку на изображении калькулятора.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
