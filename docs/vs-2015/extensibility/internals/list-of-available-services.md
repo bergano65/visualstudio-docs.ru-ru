@@ -12,11 +12,11 @@ caps.latest.revision: 50
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203819"
 ---
 # <a name="list-of-available-services"></a>Список доступных служб
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59002582"
 |Служба|Интерфейс|Visual Studio|Visual Studio 2005|Описание|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|Да|Да|Используется VSPackages, для получения <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> интерфейса из элемента управления ActiveX для упрощения асинхронные переносы данных.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Нет|Да|Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> C/C++ ID: SID_SDTE|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Нет|Да|Получает объект расширения времени разработки (DTE), используемый для автоматизации.<br /><br /> КОД C/C++: SID_SDTE|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate>|<xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate>|Да|Да|Реализуется для отображения обработчик событий по умолчанию для элемента управления конструктора форм.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch>|IDispatch|Да|Да|Позволяет VSPackage для доступа к интерфейсу автоматизации другом пакете VSPackage или элементом управления.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib>|<xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib>|Да|Да|Позволяет VSPackage добавьте или создайте библиотеку расширенных типов.|  

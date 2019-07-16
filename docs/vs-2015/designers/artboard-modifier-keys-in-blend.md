@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 10a605de597159130aa14bf7dd623b387e27bc97
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162695"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Клавиши-модификаторы монтажной панели в Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "54771335"
 |Переключение между открытыми документами|Нажмите клавиши CTRL+TAB.|  
 |Открытие панели **Активы**|Нажмите клавиши CTRL+точка (.).|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Сочетания клавиш](../designers/keyboard-shortcuts-in-blend.md)   
  [Клавиши-модификаторы инструмента "Перо"](../designers/pen-tool-modifier-keys-in-blend.md)   
  [Клавиши-модификаторы инструмента "Прямой выбор"](../designers/direct-selection-tool-modifier-keys-in-blend.md)

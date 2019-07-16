@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 54e2e44650179cafb4fd4cc9169ac27810bbdf91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183348"
 ---
 # <a name="customizing-the-editor"></a>Настройка редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54804823"
  [Практическое руководство. Управление режимами редактора](../ide/how-to-manage-editor-modes.md)  
  Описание использования полного экрана и режимов виртуального пространства.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Создание кода](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Установка закладок в коде](../ide/setting-bookmarks-in-code.md)   
  [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../ide/reference/general-environment-options-dialog-box.md)   

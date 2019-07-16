@@ -20,18 +20,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198878"
 ---
 # <a name="debugger-settings-and-preparation"></a>Параметры отладчика и подготовка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Раздел описывает параметры отладчика и необходимую подготовку для отладки программы отладчиком [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Если программа создается в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] с использованием шаблонов проектов, то эти параметры устанавливаются корректно в конфигурации отладчика.  
   
- Дополнительные сведения см. в разделе [Как настроить конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Дополнительные сведения см. в разделе [Практическое руководство. настроить конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Параметры проекта отладчика](../debugger/debugger-project-settings.md)  

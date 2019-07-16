@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176690"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Практическое руководство. Создание многопроектных шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,14 +49,14 @@ ms.locfileid: "60096456"
   
   Корневой VSTEMPLATE-файл многопроектного шаблона отличается от однопроектного шаблона следующим образом:  
   
-- Атрибут `Type` элемента `VSTemplate` содержит значение `ProjectGroup`. Пример:  
+- Атрибут `Type` элемента `VSTemplate` содержит значение `ProjectGroup`. Например:  
   
   ```  
   <VSTemplate Version="2.0.0" Type="ProjectGroup"  
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
   ```  
   
-- Элемент `TemplateContent` содержит элемент `ProjectCollection` с одним или несколькими элементами `ProjectTemplateLink`, которые определяют пути к файлам VSTEMPLATE для включенных проектов. Пример:  
+- Элемент `TemplateContent` содержит элемент `ProjectCollection` с одним или несколькими элементами `ProjectTemplateLink`, которые определяют пути к файлам VSTEMPLATE для включенных проектов. Например:  
   
   ```  
   <TemplateContent>  
@@ -81,7 +81,7 @@ ms.locfileid: "60096456"
   
 1. Создайте проекты для включения в многопроектный шаблон.  
   
-2. Создайте VSTEMPLATE-файлы для каждого проекта. Дополнительные сведения см. в разделе [Как Создание шаблонов проектов](../ide/how-to-create-project-templates.md).  
+2. Создайте VSTEMPLATE-файлы для каждого проекта. Дополнительные сведения см. в разделе [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md).  
   
 3. Создайте корневой VSTEMPLATE-файл, который будет содержать метаданные для многопроектного шаблона. Дополнительные сведения см. в первом примере в следующем разделе.  
   

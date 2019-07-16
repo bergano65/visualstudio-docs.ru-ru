@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161539"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Настройка брандмауэра Windows для удаленной отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

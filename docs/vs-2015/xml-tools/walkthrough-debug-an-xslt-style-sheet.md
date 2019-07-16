@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158638"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Пошаговое руководство. Отладка таблицы стилей XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60085107"
   
     Таблица стиля откроется в XML-редакторе.  
   
-3. Нажмите кнопку обзора (**...** ) на **ввода** поле из окна свойств документа.  
+3. Нажмите кнопку обзора ( **...** ) на **ввода** поле из окна свойств документа.  
   
 4. Найдите файл books.xml и нажмите кнопку **откройте**.  
   
@@ -75,7 +75,7 @@ ms.locfileid: "60085107"
   
      Это позволяет увидеть значение цены книги, и его можно легко сравнить со значением `$bookAverage`. Так как цена книги ниже средней, условие `xsl:if` должно выполняться.  
   
-## <a name="step-through-the-code"></a>Пошаговое прохождение кода   
+## <a name="step-through-the-code"></a>Пошаговое прохождение кода  
  Отладчик позволяет выполнять код по одной строке.  
   
 #### <a name="to-step-through-the-code"></a>Пошаговое прохождение кода  

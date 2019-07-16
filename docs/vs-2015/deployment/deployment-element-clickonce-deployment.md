@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a55b5519d5abb7b40aeca23fed1bc2f8ea2cc33d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194643"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;развертывание&gt; элемент (развертывание ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ ms.locfileid: "58978798"
 |`minimumRequiredVersion`|Необязательный параметр. Указывает минимальную версию этого приложения, можно запустить на клиентском компьютере. Если номер версии приложения меньше, чем номер версии в манифесте развертывания, приложение не запустится. Номера версий должен быть указан в формате `N.N.N.N`, где `N` является целое число без знака. Если `install` атрибут `false`, `minimumRequiredVersion` не должен быть установлен.|  
 |`mapFileExtensions`|Необязательный параметр. По умолчанию — `false`. Если `true`, все файлы в развертывании должны иметь расширение .deploy. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] удалит это расширение этих файлов сразу после загрузки файлов с веб-сервера. При публикации приложения с помощью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], он автоматически добавляет это расширение ко всем файлам. Этот параметр разрешает все файлы в [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] развертывания для загрузки с веб-сервера, который блокирует передачу файлов, заканчивающиеся на «небезопасный» расширения, например .exe.|  
 |`disallowUrlActivation`|Необязательный параметр. По умолчанию — `false`. Если `true`, предотвращает установленного приложения при запуске, щелкнув URL-адрес или введя URL-адреса в Internet Explorer. Если `install` атрибут не задан, этот атрибут игнорируется.|  
-|`trustURLParameters`|Необязательный параметр. По умолчанию — `false`. Если `true`, позволяет URL-адрес должен содержать параметры строки запроса, которые передаются в приложение, много like аргументы командной строки передаются в приложение командной строки. Дополнительные сведения см. в разделе [Как извлечь сведения строки запроса в интернет-приложении ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Если `disallowUrlActivation` атрибут `true`, `trustUrlParameters` должен быть исключен из манифеста, либо явно задано значение `false`.|  
+|`trustURLParameters`|Необязательный параметр. По умолчанию — `false`. Если `true`, позволяет URL-адрес должен содержать параметры строки запроса, которые передаются в приложение, много like аргументы командной строки передаются в приложение командной строки. Дополнительные сведения см. в разделе [Практическое руководство. извлечь сведения строки запроса в интернет-приложении ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Если `disallowUrlActivation` атрибут `true`, `trustUrlParameters` должен быть исключен из манифеста, либо явно задано значение `false`.|  
   
  `deployment` Элемент также содержит следующие дочерние элементы.  
   
-## <a name="subscription"></a>subscription  
+## <a name="subscription"></a>подписка  
  Необязательный параметр. Содержит `update` элемент. У элемента `subscription` нет атрибутов. Если `subscription` элемент не существует, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения никогда не будет проверять наличие обновлений. Если `install` атрибут `deployment` элемент является `false`, `subscription` элемент обрабатывается, так как [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение, запускаемое из сети, всегда использует последнюю версию.  
   
 ## <a name="update"></a>обновить  

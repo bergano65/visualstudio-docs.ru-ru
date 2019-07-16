@@ -11,11 +11,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 811cdfa2cbae85d6509e7cd883c5675b81639fa0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198434"
 ---
 # <a name="model-for-source-control-packages"></a>Модель для пакетов системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58993306"
  ![SCC&#95;примеры ТРОЙКИ](../../extensibility/internals/media/scc-tup.gif "SCC_TUP")  
 Проекта системы управления версиями пример  
   
-## <a name="interfaces"></a>интерфейсов,  
+## <a name="interfaces"></a>Интерфейсы  
  Вы можете реализовать систему управления версиями для новых типов проекта в Visual Studio, используя список интерфейсов, показано в следующей таблице.  
   
 |Интерфейс|Использовать|  

@@ -11,11 +11,11 @@ caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202011"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Пошаговое руководство. Отображение завершения операторов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,4 +204,4 @@ ms.locfileid: "60045022"
 4. При вводе сначала «a» и затем «d», должен отображаться список, содержащий «сложение» и «адаптации». Обратите внимание на то, что выбран сложения. При вводе другой «d», этот список должен содержать только «дополнение», который теперь можно выбрать. Можно зафиксировать «дополнение», нажав клавишу ПРОБЕЛ, Tab или ввод или закрыть список, введя Esc или любую другую клавишу.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Пошаговое руководство: связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

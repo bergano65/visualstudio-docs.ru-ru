@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204081"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Практическое руководство. Подавлять уведомления об изменении файла
+# <a name="how-to-suppress-file-change-notifications"></a>Практическое руководство. Отключение уведомлений об изменении файла
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При изменении физического файла, представляющий текстовый буфер, откроется диалоговое окно с сообщением **вы хотите сохранить изменения следующих элементов?** Это называется уведомления об изменении файла. Если много изменений будут в файл, тем не менее, это диалоговое окно, отображающее снова и снова может быстро стать раздражает.  

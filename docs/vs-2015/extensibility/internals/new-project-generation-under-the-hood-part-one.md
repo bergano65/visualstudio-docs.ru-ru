@@ -12,11 +12,11 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184160"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Создание проекта: как это работает, часть 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60054242"
 devenv /setup  
 ```  
   
- или  
+ или диспетчер конфигурации служб  
   
 ```  
 devenv /installvstemplates  
@@ -80,7 +80,7 @@ devenv /installvstemplates
   
  \<Путь установки Visual Studio > \VC#\VCSPackages\1033\csprojui.dll  
   
- Чтобы проверить это, откройте файл в проводнике и перетащите csprojui.dll в каталоге Visual Studio... В строке таблице показано, что resource #2345 заголовок **Visual C#**.  
+ Чтобы проверить это, откройте файл в проводнике и перетащите csprojui.dll в каталоге Visual Studio... В строке таблице показано, что resource #2345 заголовок **Visual C#** .  
   
 ##### <a name="sortpriority"></a>SortPriority  
  Этот параметр определяет положение корневого узла в **типы проектов** дерева.  
@@ -215,4 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** отображается как дочерний узел Visual C# просто узле Windows.  
   
 ## <a name="see-also"></a>См. также  
- [Создание нового проекта. Это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Создание проекта: как это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156321"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Практическое руководство. Применение шейдера к трехмерной модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60094781"
   
    ![Трехмерная сцена, показывающая эффект основного цвета](../designers/media/digit-3d-model-effect.png "Digit-3D-Model-Effect")  
   
-   После применения шейдера к модели его можно открыть в конструкторе шейдеров, выбрав модель, и нажав кнопку с многоточием (**...** ) в окне **Свойства** для свойства **(Дополнительно)** из группы свойств **Эффект**.  
+   После применения шейдера к модели его можно открыть в конструкторе шейдеров, выбрав модель, и нажав кнопку с многоточием ( **...** ) в окне **Свойства** для свойства **(Дополнительно)** из группы свойств **Эффект**.  
   
 ## <a name="see-also"></a>См. также  
  [Практическое руководство. Создание простейшей трехмерной модели](../designers/how-to-create-a-basic-3-d-model.md)   

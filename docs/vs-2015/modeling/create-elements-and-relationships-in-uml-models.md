@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159633"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Создание элементов и отношений в моделях UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60099277"
 ### <a name="obtain-the-owner-of-the-element-you-want-to-create"></a>Получение владельца элемента, который необходимо создать  
  Модель создает одно дерево, так что каждый элемент, кроме корня модели, имеет одного владельца. Корень модели имеет тип `IModel`, который является типом `IPackage`.  
   
- Создавать элемент, который будет отображаться на определенной схеме, например на текущей схеме пользователя, как правило, необходимо в пакете, связанном с этой схемой. Пример:  
+ Создавать элемент, который будет отображаться на определенной схеме, например на текущей схеме пользователя, как правило, необходимо в пакете, связанном с этой схемой. Например:  
   
 ```  
 IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;  
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>Вызов метода создания для владельца  
- Имя метода имеет вид: `Create`*OwnedType*`()`. Пример:  
+ Имя метода имеет вид: `Create`*OwnedType*`()`. Например:  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -93,14 +93,14 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 3. Задайте свойства отношения, такие как имя.  
   
-     Пример:  
+     Например:  
   
     ```  
     IAssociation association = subject.Package.CreateAssociation(subject, observer);  
     association .Name = "Observes";  
     ```  
   
-4. Задайте свойства каждого окончания отношения. Параметров `MemberEnds` всегда два. Пример:  
+4. Задайте свойства каждого окончания отношения. Параметров `MemberEnds` всегда два. Например:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  

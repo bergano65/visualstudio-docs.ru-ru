@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4c785c419ead31ad90e2b20ae7f48af778598bb6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176560"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Практическое руководство. Указание версии платформы .NET Framework для отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60042770"
   
 6. Дважды щелкните **CLRVersionForDebugging**.  
   
-7. В поле **Изменение строки** введите номер версии платформы .NET Framework в поле **Значение**. Пример: V1.1.4322  
+7. В поле **Изменение строки** введите номер версии платформы .NET Framework в поле **Значение**. Например: V1.1.4322  
   
 8. Нажмите кнопку **ОК**.  
   

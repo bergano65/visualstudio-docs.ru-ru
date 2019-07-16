@@ -14,11 +14,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184708"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Элемент Assembly (шаблоны Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60112368"
   
  Данный текст задает сборку, чтобы добавить в проект при создании экземпляра шаблона элемента. Имя сборки необходимо указать в одном из следующих способов:  
   
-- Как полное имя сборки. Пример:  
+- Как полное имя сборки. Например:  
   
     ```  
     <Assembly>  
@@ -65,7 +65,7 @@ ms.locfileid: "60112368"
     </Assembly>  
     ```  
   
-- Простой текст справки. Пример:  
+- Простой текст справки. Например:  
   
     ```  
     <Assembly> System </Assembly>  
