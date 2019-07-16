@@ -12,11 +12,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6131e27dbe4018fa1db415ba1690870c4bffa10c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203976"
 ---
 # <a name="ide-guids"></a>Идентификаторы GUID среды IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "58980949"
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.SubProject_guid>|EA6618E8-6E24-4528-94BE-6889FE16485C|  
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.VirtualFolder_guid>|6bb5f8f0-4483-11d3-8bcf-00c04f8ec28c|  
   
-## <a name="ui-contexts"></a>UI Contexts  
+## <a name="ui-contexts"></a>Контексты пользовательского интерфейса  
   
 |Константа|Идентификатор GUID|  
 |--------------|----------|  

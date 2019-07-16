@@ -7,11 +7,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147948"
 ---
 # <a name="vsix-color-compiler"></a>Компилятор цветов VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -149,9 +149,9 @@ ms.locfileid: "60063677"
   
  **Примеры**  
   
-- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- D:\pkgdef\colors.pkgdef VsixColorCompiler D:\xml\colors.xml  
   
-- VsixColorCompiler D:\xml\colors.xml /noLogo  
+- / Nologo VsixColorCompiler D:\xml\colors.xml  
   
 ## <a name="notes"></a>Примечания  
   

@@ -1,127 +1,125 @@
 - name: Средства XML в Visual Studio
+  href: xml-tools-in-visual-studio.md
+- name: Редактор XML
   items:
     - name: Обзор
-      href: xml-tools-in-visual-studio.md
-    - name: Редактор XML
+      displayName: XML editor
+      href: xml-editor.md
+    - name: Проверка XML-документа
+      href: xml-document-validation.md
+    - name: Функции IntelliSense редактора XML
+      href: xml-editor-intellisense-features.md
+    - name: XML-фрагменты
       items:
         - name: Обзор
-          displayName: XML editor
-          href: xml-editor.md
-        - name: Проверка XML-документа
-          href: xml-document-validation.md
-        - name: Функции IntelliSense редактора XML
-          href: xml-editor-intellisense-features.md
-        - name: XML-фрагменты
-          items:
-            - name: Обзор
-              displayName: XML snippets overview
-              href: xml-snippets.md
-            - name: Использование фрагментов XML
-              href: how-to-use-xml-snippets.md
-            - name: Создание фрагмента из схемы XML
-              href: how-to-generate-an-xml-snippet-from-an-xml-schema.md
-            - name: Создание фрагментов XML
-              href: how-to-create-xml-snippets.md
-        - name: Изменение таблиц стилей XSLT
-          href: editing-xslt-style-sheets.md
-        - name: Кэш схем
-          href: schema-cache.md
-        - name: Задачи редактора XML
-          items:
-            - name: Пошаговое руководство. Использование функций редактора XML
-              href: walkthrough-using-xml-editor-features.md
-            - name: Выбор используемых схем XML
-              href: how-to-select-the-xml-schemas-to-use.md
-            - name: Создание схемы XML из XML-документа
-              href: how-to-create-an-xml-schema-from-an-xml-document.md
-            - name: Выполнение преобразования XSLT в редакторе XML
-              href: how-to-execute-an-xslt-transformation-from-the-xml-editor.md
-            - name: Изменение XML-файлов
-              href: how-to-edit-xml-files.md
-            - name: Пошаговые руководства XSLT
-              items:
-                - name: XSLT IntelliSense
-                  href: walkthrough-using-xslt-intellisense.md
-                - name: Иерархия XSLT
-                  href: walkthrough-using-xslt-hierarchy.md
-        - name: Свойства XML-файлов
-          href: xml-document-properties-properties-window.md
-        - name: Диалоговое окно "Схемы XML"
-          href: xml-schemas-dialog-box.md
-    - name: Конструктор схемы XML
+          displayName: XML snippets overview
+          href: xml-snippets.md
+        - name: Использование фрагментов XML
+          href: how-to-use-xml-snippets.md
+        - name: Создание фрагмента из схемы XML
+          href: how-to-generate-an-xml-snippet-from-an-xml-schema.md
+        - name: Создание фрагментов XML
+          href: how-to-create-xml-snippets.md
+    - name: Изменение таблиц стилей XSLT
+      href: editing-xslt-style-sheets.md
+    - name: Кэш схем
+      href: schema-cache.md
+    - name: Задачи редактора XML
       items:
-        - name: Обзор
-          displayName: XML Schema Designer overview
-          href: xml-schema-designer.md
+        - name: Пошаговое руководство. Использование функций редактора XML
+          href: walkthrough-using-xml-editor-features.md
+        - name: Выбор используемых схем XML
+          href: how-to-select-the-xml-schemas-to-use.md
+        - name: Создание схемы XML из XML-документа
+          href: how-to-create-an-xml-schema-from-an-xml-document.md
+        - name: Выполнение преобразования XSLT в редакторе XML
+          href: how-to-execute-an-xslt-transformation-from-the-xml-editor.md
+        - name: Изменение XML-файлов
+          href: how-to-edit-xml-files.md
+        - name: Пошаговые руководства XSLT
+          items:
+            - name: XSLT IntelliSense
+              href: walkthrough-using-xslt-intellisense.md
+            - name: Иерархия XSLT
+              href: walkthrough-using-xslt-hierarchy.md
+    - name: Свойства XML-файлов
+      href: xml-document-properties-properties-window.md
+    - name: Диалоговое окно "Схемы XML"
+      href: xml-schemas-dialog-box.md
+- name: Конструктор схемы XML
+  items:
+    - name: Обзор
+      displayName: XML Schema Designer overview
+      href: xml-schema-designer.md
+    - name: Обозреватель схемы XML
+      items:
         - name: Обозреватель схемы XML
-          items:
-            - name: Обозреватель схемы XML
-              href: xml-schema-explorer.md
-            - name: Поиск набора схем
-              href: searching-the-schema-set.md
-            - name: 'Сортировка, фильтрация и группировка'
-              href: sorting-filtering-and-grouping-xml-schema-explorer.md
-            - name: Контекстные меню
-              href: context-menus-xml-schema-explorer.md
-            - name: Интеграция литералов XML
-              href: integration-of-xml-literals-with-xml-schema-explorer.md
-        - name: Рабочая область
-          items:
-            - name: Общие сведения о представлениях
-              href: xml-schema-designer-workspace.md
-            - name: Начальное представление
-              href: start-view.md
-            - name: Представление модели содержимого
-              href: content-model-view.md
-            - name: Представление диаграммы
-              href: graph-view.md
-        - name: Интеграция с редактором XML
-          href: integration-with-xml-editor.md
-        - name: Задачи конструктора схем XML
-          items:
-            - name: Создание и изменение файла схемы XSD
-              href: how-to-create-and-edit-an-xsd-schema-file.md
-            - name: Создание XML-документа на основе схемы XSD
-              href: how-to-create-an-xml-document-based-on-an-xsd-schema.md
-            - name: 'Добавление в рабочую область узлов, полученных в результате поиска набора схем'
-              href: how-to-add-schema-set-search-result-nodes-to-the-workspace.md
-            - name: Переключение между представлениями и редактором XML
-              href: how-to-switch-between-views-and-the-xml-editor.md
-            - name: Добавление узлов в рабочую область в обозревателе схем XML
-              href: how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md
-            - name: Добавление узлов в рабочую область из начального представления
-              href: how-to-add-nodes-to-the-workspace-from-the-start-view.md
-            - name: Общие сведения о наборе схем
-              href: how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md
-            - name: Изучение модели содержимого узлов
-              href: how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md
-            - name: Использование конструктора схем XML с литералами XML
-              href: how-to-use-the-xml-schema-designer-with-xml-literals.md
-            - name: Диаграммы печати
-              href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
-            - name: Образец XSD-файлов
-              items:
-                - name: Простая схема
-                  displayName: Sample XSD files
-                  href: sample-xsd-file-simple-schema.md
-                - name: Схема заказа на покупку
-                  href: sample-xsd-file-purchase-order-schema.md
-                - name: Отношения
-                  href: sample-xsd-file-relationships.md
-    - name: Отладка XSLT
+          href: xml-schema-explorer.md
+        - name: Поиск набора схем
+          href: searching-the-schema-set.md
+        - name: 'Сортировка, фильтрация и группировка'
+          href: sorting-filtering-and-grouping-xml-schema-explorer.md
+        - name: Контекстные меню
+          href: context-menus-xml-schema-explorer.md
+        - name: Интеграция литералов XML
+          href: integration-of-xml-literals-with-xml-schema-explorer.md
+    - name: Рабочая область
       items:
-        - name: Обзор
-          displayName: XSLT debugging
-          href: debugging-xslt.md
-        - name: Пошаговое руководство. Отладка таблицы стилей XSLT
-          href: walkthrough-debug-an-xslt-style-sheet.md
-        - name: Вычисление выражения XPath
-          href: how-to-evaluate-an-xpath-expression.md
-        - name: Пользовательский интерфейс отладчика XSLT
-          href: debugger-user-interface-xslt.md
-        - name: Шаблон XSLT по умолчанию
-          href: xslt-default-templates.md
-        - name: Профилировщик XSLT
-          href: xslt-profiler.md
-    - name: Вопросы безопасности для XML
-      href: security-considerations-when-working-with-xml-data.md
+        - name: Общие сведения о представлениях
+          href: xml-schema-designer-workspace.md
+        - name: Начальное представление
+          href: start-view.md
+        - name: Представление модели содержимого
+          href: content-model-view.md
+        - name: Представление диаграммы
+          href: graph-view.md
+    - name: Интеграция с редактором XML
+      href: integration-with-xml-editor.md
+    - name: Задачи конструктора схем XML
+      items:
+        - name: Создание и изменение файла схемы XSD
+          href: how-to-create-and-edit-an-xsd-schema-file.md
+        - name: Создание XML-документа на основе схемы XSD
+          href: how-to-create-an-xml-document-based-on-an-xsd-schema.md
+        - name: 'Добавление в рабочую область узлов, полученных в результате поиска набора схем'
+          href: how-to-add-schema-set-search-result-nodes-to-the-workspace.md
+        - name: Переключение между представлениями и редактором XML
+          href: how-to-switch-between-views-and-the-xml-editor.md
+        - name: Добавление узлов в рабочую область в обозревателе схем XML
+          href: how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md
+        - name: Добавление узлов в рабочую область из начального представления
+          href: how-to-add-nodes-to-the-workspace-from-the-start-view.md
+        - name: Общие сведения о наборе схем
+          href: how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md
+        - name: Изучение модели содержимого узлов
+          href: how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md
+        - name: Использование конструктора схем XML с литералами XML
+          href: how-to-use-the-xml-schema-designer-with-xml-literals.md
+        - name: Диаграммы печати
+          href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
+        - name: Образец XSD-файлов
+          items:
+            - name: Простая схема
+              displayName: Sample XSD files
+              href: sample-xsd-file-simple-schema.md
+            - name: Схема заказа на покупку
+              href: sample-xsd-file-purchase-order-schema.md
+            - name: Отношения
+              href: sample-xsd-file-relationships.md
+- name: Отладка XSLT
+  items:
+    - name: Обзор
+      displayName: XSLT debugging
+      href: debugging-xslt.md
+    - name: Пошаговое руководство. Отладка таблицы стилей XSLT
+      href: walkthrough-debug-an-xslt-style-sheet.md
+    - name: Вычисление выражения XPath
+      href: how-to-evaluate-an-xpath-expression.md
+    - name: Пользовательский интерфейс отладчика XSLT
+      href: debugger-user-interface-xslt.md
+    - name: Шаблон XSLT по умолчанию
+      href: xslt-default-templates.md
+    - name: Профилировщик XSLT
+      href: xslt-profiler.md
+- name: Вопросы безопасности для XML
+  href: security-considerations-when-working-with-xml-data.md

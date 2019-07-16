@@ -60,7 +60,7 @@ Python — это популярный язык программирования
 
 - [Руководство по установке](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
 - [Короткие видеоролики по началу работы и углубленному рассмотрению](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
-- Демонстрация установки и возможностей (27 минут)])https://www.youtube.com/watch?v=JNNAOypc6Ek)  
+- Демонстрация установки и возможностей (27 минут)](https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Документация](https://github.com/Microsoft/PTVS/wiki)  
 
 Обратите внимание, что Visual Studio в настоящее время предоставляет средства для создания отдельный исполняемый файл с помощью Python, который по сути означает, что программа с внедренным интерпретатором Python. Но предназначенные для выполнения этой задачи средства можно найти в сообществе Python, как описано на сайте [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython также можно внедрять в приложение машинного кода. Об этом можно узнать в записи блога [Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Использование внедряемого ZIP-файла CPython).

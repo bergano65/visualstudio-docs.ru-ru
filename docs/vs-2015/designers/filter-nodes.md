@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 32b25b1febea59cc8ab4bc668196e60e7ccf5004
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205331"
 ---
 # <a name="filter-nodes"></a>Фильтрация узлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: MT
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67256613"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143523"
 ---
 Веб-развертывание версии 3.6 для серверов размещения реализует дополнительные возможности конфигурации, позволяющие создавать файл параметров публикации из пользовательского интерфейса.
 

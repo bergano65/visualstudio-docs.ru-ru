@@ -11,11 +11,11 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201957"
 ---
 # <a name="walkthrough-outlining"></a>Пошаговое руководство. Структуризация
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,4 +134,4 @@ ms.locfileid: "60054709"
 4. Должна существовать область структуры, включающий как фигурные скобки. Можно щелкнуть знак «минус» слева от открывающую фигурную скобку, чтобы свернуть область структуры. Если область свернута, символ многоточия (...) должен находиться слева от свернутой области, а всплывающее окно, содержащее текст **текст при наведении** должно появляться при перемещении указателя мыши на многоточие.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Пошаговое руководство: связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

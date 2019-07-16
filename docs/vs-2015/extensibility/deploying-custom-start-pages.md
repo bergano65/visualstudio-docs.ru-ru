@@ -12,11 +12,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162102"
 ---
 # <a name="deploying-custom-start-pages"></a>Развертывание настраиваемой начальной страницы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60039146"
   
 - Путем добавления пользовательских файлов начальной страницы в пустой проект VSIX. Дополнительные сведения см. в разделе [шаблоном проекта VSIX](../extensibility/vsix-project-template.md).  
   
-- Создав файл VSIX вручную. Дополнительные сведения см. в разделе [Как Упаковка расширения (развертывания VSIX) вручную](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Создав файл VSIX вручную. Дополнительные сведения см. в разделе [Практическое руководство. Упаковка расширения (развертывания VSIX) вручную](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
   Для Visual Studio мог распознать начальной страницы `Content Element` манифест VSIX должна содержать `CustomExtension Element` с `Type` атрибут `"StartPage"`. Расширение начальная страница, которая была установлена с помощью развертывания VSIX отображается в **настроить начальную страницу** списке **запуска** страница параметров как **[установленных расширений]** *Имя расширения*.  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60039146"
   
 4. Изменить .pkgdef для задания начальной страницы по умолчанию в разделе HKLM, добавив следующую команду, где *MyStartPage.xaml* имя XAML-файл, содержащий к начальной странице.  
   
-     [$RootKey$\StartPage\Default]  
+     [$RootKey$ \StartPage\Default]  
   
      «Uri «=» $PackageFolder$\\*MyStartPage.xaml*"  
   

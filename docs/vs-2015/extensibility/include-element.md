@@ -14,11 +14,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1bdc56c9d0b488bdbe24a8534ab516cc0fc831df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58978841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203935"
 ---
 # <a name="include-element"></a>Элемент Include
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58978841"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|href|Обязательный. Путь к файлу заголовка:<br /><br /> href="stdidcmd.h"|  
+|href|Обязательный. Путь к файлу заголовка:<br /><br /> href="stdidcmd.h»|  
 |Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
