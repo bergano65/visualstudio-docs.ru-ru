@@ -11,11 +11,11 @@ caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e8e3bebc82ffc2f714a6418afdb73de9092aab55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158203"
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Пример расширения закодированного теста пользовательского интерфейса для Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "54757236"
 ### <a name="propertyprovider"></a>PropertyProvider  
  Наследуется от класса <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> и обеспечивает базовый класс для поддержки свойств элементов пользовательского интерфейса для записи и воспроизведения тестов. Дополнительные сведения см. в разделе [Класс PropertyProvider](../test/sample-excel-extension-propertyprovider-class.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   

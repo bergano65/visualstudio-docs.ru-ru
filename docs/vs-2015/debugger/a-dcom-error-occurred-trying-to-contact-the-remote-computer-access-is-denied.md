@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0157b1ade2c38a2c10920b9674d7c9a58ac036b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156533"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>При попытке обращения к удаленному компьютеру произошла непредвиденная ошибка DCOM. Отказано в доступе.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58993584"
   
 - Отключите  **собственный режим совместимости** и **режим совместимости управляемого кода**.  
   
-- В Visual Studio 2013 отключите **Включить собственную операцию "Изменить и продолжить"**.  
+- В Visual Studio 2013 отключите **Включить собственную операцию "Изменить и продолжить"** .  
   
 - Перезагрузите оба компьютера.  
   

@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158067"
 ---
 # <a name="opening-and-saving-project-items"></a>Открытие и сохранение элементов проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58989029"
  [Практическое руководство. Открытие редакторов соответствующих проектов](../../extensibility/how-to-open-project-specific-editors.md)  
  Содержит пошаговые инструкции для указания, что файлы определенного типа в проекте должен быть открыт с помощью редактора определенного проекта.  
   
- [Практическое руководство. Стандартные редакторы](../../extensibility/how-to-open-standard-editors.md)  
+ [Практическое руководство. Открытие стандартных редакторов](../../extensibility/how-to-open-standard-editors.md)  
  Содержит пошаговые инструкции по указанию Включение интегрированной среды разработки открыть стандартный редактор для файлов в тип проекта.  
   
  [Практическое руководство. Открытие редакторов для открытых документов](../../extensibility/how-to-open-editors-for-open-documents.md)  

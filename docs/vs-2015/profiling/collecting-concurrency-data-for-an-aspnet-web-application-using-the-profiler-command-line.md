@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73270acd97ac4555ade609601d92327235a2f3c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144898"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Сбор данных параллелизма для веб-приложений ASP.NET с помощью командной строки профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54752360"
   
 ## <a name="common-tasks"></a>Общие задачи  
   
-|Задача|Связанное содержимое|  
+|Задача|См. также|  
 |----------|---------------------|  
 |Присоединение профилировщика к выполняющемуся приложению ASP.NET|-   [Практическое руководство. Присоединение профилировщика к приложению ASP.NET для сбора данных параллелизма](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
@@ -37,7 +37,7 @@ ms.locfileid: "54752360"
   
 ### <a name="profiling-aspnet-applications"></a>Профилирование приложений ASP.NET  
   
-|Задача|Связанное содержимое|  
+|Задача|См. также|  
 |----------|---------------------|  
 |**Профилирование с помощью метода выборки**|-   [Использование метода выборки для сбора статистики приложения](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
 |**Профилирование с помощью метода инструментирования**|-   [Сбор подробных сведений о времени с помощью инструментирования](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
@@ -45,7 +45,7 @@ ms.locfileid: "54752360"
   
 ### <a name="profiling-concurrency-issues"></a>Профилирование проблем параллелизма  
   
-|Задача|Связанное содержимое|  
+|Задача|См. также|  
 |----------|---------------------|  
 |**Профилирование автономных (клиентских) приложений**|-   [Сбор данных параллелизма](../profiling/collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**Профилирование служб**|-   [Сбор данных параллелизма](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  

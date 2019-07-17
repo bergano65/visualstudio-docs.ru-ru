@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0d58a8b98cb27527f3d4c464119fb5543f88e8ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182835"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Создание файлов на основе модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -314,7 +314,7 @@ namespace Test{
   
 - **Профили**. Даже в пределах одной бизнес-области интерпретация типа элемента может варьироваться. Например, на схеме веб-сайта некоторые классы могут представлять веб-страницы, а другие — блоки содержимого. Чтобы облегчить регистрацию этих различий пользователями, определяются стереотипы. Кроме того, стереотипы позволяют прикреплять дополнительные свойства, применимые к элементам соответствующего вида. Стереотипы упакованы в профили. Дополнительные сведения см. в разделе [определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md).  
   
-     В коде шаблона можно легко получить доступ к определенным для объекта стереотипам. Пример:  
+     В коде шаблона можно легко получить доступ к определенным для объекта стереотипам. Например:  
   
     ```  
     public bool HasStereotype(IClass c, string profile, string stereo)  

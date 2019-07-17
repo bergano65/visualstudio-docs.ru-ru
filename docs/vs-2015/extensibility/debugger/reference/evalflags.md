@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9e6ee00402c13b2a79e4e6757a127211eda9c3c0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149384"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ public enum enum_EVALFLAGS {
  Эти флаги могут быть объединены с помощью побитового логического Сложения.  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

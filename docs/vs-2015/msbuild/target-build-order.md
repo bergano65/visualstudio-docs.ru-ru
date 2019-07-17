@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144280"
 ---
 # <a name="target-build-order"></a>Порядок построения целевого объекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60054448"
   
  Импортированные проекты могут иметь собственные атрибуты `InitialTargets`. Все начальные целевые объекты собираются вместе и выполняются по порядку.  
   
- Дополнительные сведения см. в разделе [Как Выбор цели для сборки первого](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Дополнительные сведения см. в разделе [Практическое руководство. Выбор цели для сборки первого](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="default-targets"></a>Целевые объекты по умолчанию  
  Атрибут `DefaultTargets` элемента [Project](../msbuild/project-element-msbuild.md) указывает, какой целевой объект или целевые объекты создаются, если целевой объект не задан явным образом в командной строке.  
@@ -65,7 +65,7 @@ ms.locfileid: "60054448"
   
  Импортированные проекты могут иметь собственные атрибуты `DefaultTargets`. Первый атрибут `DefaultTargets` определяет, какие целевые объекты по умолчанию будут выполняться.  
   
- Дополнительные сведения см. в разделе [Как Выбор цели для сборки первого](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Дополнительные сведения см. в разделе [Практическое руководство. Выбор цели для сборки первого](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="first-target"></a>Первый целевой объект  
  Если начальные целевые объекты, целевые объекты по умолчанию или целевые объекты командной строки отсутствуют, MSBuild сначала выполняет первый обнаруженный целевой объект в файле проекта или любом импортированном файле проекта.  

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: db6225f8bf8055edb0fb5b6f3cdea98de79b4bcc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159408"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>Вставка изображений, видео- и аудиоклипов в конструкторе XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,5 +34,5 @@ ms.locfileid: "54774144"
 |Импорт файла Adobe Photoshop|![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Импорт файла Photoshop в Blend](https://www.youtube.com/watch?v=ekYyhirFKs0)|  
 |Вставка аудиоклипов|![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Добавление аудиоклипов](https://www.youtube.com/watch?v=7qW9l0tmkAI&index=52&list=PLBDF977B2F1DAB358)|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

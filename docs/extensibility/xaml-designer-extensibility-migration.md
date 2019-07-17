@@ -9,16 +9,16 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784476"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890315"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Миграция расширяемость конструктора XAML
 
-Начиная с версии 16.1 в общедоступной предварительной версии 2019 г. Visual Studio, конструктор XAML поддерживает две различные архитектуры: архитектура конструктора изоляции и более новой архитектуры поверхности изоляции. Этот переход архитектура необходима для поддержки целевыми средами выполнения, который не может быть размещен в процессе .NET Framework. Перемещение в архитектуре поверхности изоляции вводятся принципиальные изменения в модель расширяемости сторонних. В этой статье перечислены изменения.
+В Visual Studio 2019 г., конструктор XAML поддерживает две различные архитектуры: архитектура конструктора изоляции и более новой архитектуры поверхности изоляции. Этот переход архитектура необходима для поддержки целевыми средами выполнения, который не может быть размещен в процессе .NET Framework. Перемещение в архитектуре поверхности изоляции вводятся принципиальные изменения в модель расширяемости сторонних. В этой статье описаны эти изменения, которые доступны в канале предварительной версии Visual Studio 2019 16.2.
 
 **Конструктора изоляции** используется в конструкторе WPF для проектов, предназначенных для .NET Framework и поддерживает *. design.dll* расширения. Пользовательский код, библиотеки элементов управления и сторонние расширения загружаются во внешнем процессе (*XDesProc.exe*) вместе с фактический код конструктора и панели конструктора.
 
@@ -47,7 +47,7 @@ ms.locfileid: "67784476"
 
 Модель расширяемости поверхности изоляции не допускает для расширений, чтобы он зависел от библиотеки фактического элемента управления, и таким образом, расширения не может ссылаться на типы из библиотеки элементов управления. Например *MyLibrary.designtools.dll* следует не зависят от *MyLibrary.dll*.
 
-Такие зависимости были наиболее распространенных при регистрации метаданных для типов с помощью таблиц атрибутов. Типы код расширения, который ссылается на библиотеки элементов управления напрямую через [typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) в Visual Basic), подставляется в новых интерфейсов API с помощью имен строковых типов:
+Такие зависимости были наиболее распространенных при регистрации метаданных для типов с помощью таблиц атрибутов. Типы код расширения, который ссылается на библиотеки элементов управления напрямую через [typeof](/dotnet/csharp/language-reference/keywords/typeof) или [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) подставляется в новых интерфейсов API с помощью имен строковых типов:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -62,7 +62,7 @@ public class AttributeTableProvider : IProvideAttributeTable
   {
     get
     {
-      AttributeTableBuilder builder = new AttributeTableBuilder();
+      var builder = new AttributeTableBuilder();
       builder.AddCustomAttributes("MyLibrary.MyControl", new DescriptionAttribute(Strings.MyControlDescription);
       builder.AddCustomAttributes("MyLibrary.MyControl", new FeatureAttribute(typeof(MyControlDefaultInitializer));
       return builder.CreateTable();
@@ -96,6 +96,14 @@ End Class
 
 Поставщики функций реализуются в сборках, расширение и загруженных в процесс Visual Studio. `FeatureAttribute` продолжат ссылаться на типы поставщика функцию напрямую с помощью [typeof](/dotnet/csharp/language-reference/keywords/typeof).
 
+В настоящее время поддерживаются следующие поставщики функций:
+
+* `DefaultInitializer`
+* `AdornerProvider`
+* `ContextMenuProvider`
+* `ParentAdapter`
+* `PlacementAdapter`
+
 Так как поставщики функций теперь загружаются в процесс, отличается от библиотеки времени исполнения кода и управления, они больше не может получить доступ непосредственно к объекты среды выполнения. Вместо этого все взаимодействия необходимо преобразовать для использования соответствующие API на основе моделей. API модели была обновлена, а доступ к <xref:System.Type> или <xref:System.Object> либо более недоступны или были заменены `TypeIdentifier` и `TypeDefinition`.
 
 `TypeIdentifier` Представляет строку без определения типа имя сборки. Объект `TypeIdenfifier` можно привести к `TypeDefinition` для запроса дополнительных сведений о типе. `TypeDefinition` экземпляры не может кэшироваться в коде расширения.
@@ -105,7 +113,7 @@ TypeDefinition type = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("MyLibrary.MyControl"));
 TypeDefinition buttonType = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("System.Windows.Controls.Button"));
-if (type != null && buttonType != type.IsSubclassOf(buttonType))
+if (type?.IsSubclassOf(buttonType) == true)
 {
 }
 ```
@@ -203,6 +211,8 @@ Public Class MyControlDefaultInitializer
     End Sub
 End Class
 ```
+
+Дополнительные примеры кода доступны в [xaml конструктор--примеры расширяемости](https://github.com/microsoft/xaml-designer-extensibility-samples) репозитория.
 
 ## <a name="limited-support-for-designdll-extensions"></a>Ограниченная поддержка. design.dll расширений
 

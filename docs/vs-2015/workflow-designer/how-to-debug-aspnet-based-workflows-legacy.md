@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a8fc6c951f1da3fc37fe8e1189a3ec8de9609a48
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144655"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Практическое руководство. Отладка рабочих процессов, основанных на ASP.NET (для прежних версий)
 В этом разделе описывается отладка основанных на [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] приложений [!INCLUDE[wf](../includes/wf-md.md)], которые ориентируются на работу с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] в средстве [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий.  

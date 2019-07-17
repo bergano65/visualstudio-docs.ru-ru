@@ -12,11 +12,11 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bbe65d1615603e4dc7546dbfe3530093c62528e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155028"
 ---
 # <a name="creating-project-types"></a>Создание типов проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58994299"
  [Проектные решения для проекта решений](../../extensibility/internals/project-type-design-decisions.md)  
  Описание элемента, сохранение файла проекта и обязательства механику проектные решения, которые необходимо принять, прежде чем создавать новый тип проекта.  
   
- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)  
  Обзор шагов, которые необходимо выполнить, чтобы создать новый тип проекта, который поддерживает задачи программирования, как редактирование кода и компиляция, построения, отладки и развертывания приложений в вашем проекте.  
   
  [Создание экземпляров проекта с помощью фабрик проектов](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  

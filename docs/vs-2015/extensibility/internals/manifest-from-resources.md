@@ -7,11 +7,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192624"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60112836"
   
 - ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
-- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
   
 - ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   

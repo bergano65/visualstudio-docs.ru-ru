@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cabc32d33b1d68b96ae074a8bceac0f759b67447
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152939"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ IDebugThread2 : IUnknown
  При возникновении исключения или точка останова, событие передается с помощью [событий](../../../extensibility/debugger/reference/idebugeventcallback2-event.md). Один из аргументов в этот метод имеет `IDebugThread2` интерфейс, представляющий текущий поток. [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) используется для получения [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) интерфейс для текущего кадра стека.  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

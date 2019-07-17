@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 82caf285d73ab1b9b49b9546012bbb45f25c3320
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153436"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ typedef struct _BP_LOCATION_DATA_STRING { 
  Эта структура является членом [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) структуру как часть объединения.  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

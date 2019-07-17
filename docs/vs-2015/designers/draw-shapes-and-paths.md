@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c30b0a190d2a2abfed56004e167f6ee5ef5ecf97
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195370"
 ---
 # <a name="draw-shapes-and-paths"></a>Рисование фигур и контуров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60046077"
   
  Для фигур и контуров используется векторная графика, поэтому их легко масштабировать для дисплеев с высоким разрешением. Если вы хотите узнать больше о векторной графике, ознакомьтесь с видео о том, [что такое векторная графика](https://www.youtube.com/watch?v=MoCSwF0n-io) , или статьей о [векторной графике](http://www.webopedia.com/TERM/V/vector_graphics.html).  
   
- **Содержание раздела**  
+ **В этом разделе:**  
   
 - [Рисование фигуры](#Shape)  
   

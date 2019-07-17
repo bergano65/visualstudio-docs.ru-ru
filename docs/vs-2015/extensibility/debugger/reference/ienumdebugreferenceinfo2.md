@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 21c39c553a153707bad707d50cf5a13ae87973fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147753"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ IEnumDebugReferenceInfo2 : IUnknown
  Ссылка — по существу тип и адрес, а свойство — имя, тип и адрес. Ссылка сохраняется до тех пор, пока объект называется существует в памяти. См. в разделе [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) для получения дополнительных сведений.  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

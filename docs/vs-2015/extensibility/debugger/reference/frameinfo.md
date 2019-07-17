@@ -13,11 +13,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c0fa2299e47924a10a6d0b02a982535865164191
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160161"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ public struct FRAMEINFO { 
  Эта структура передается [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) метод для заполнения. Эта структура также содержится в списке, который содержится в [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) интерфейс, который, в свою очередь, возвращается из вызова [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) метод.  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   

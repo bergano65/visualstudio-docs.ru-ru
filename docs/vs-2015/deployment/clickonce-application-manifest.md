@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adf5e160ec334859062311fae947ce34e79850d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157428"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Application Manifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58993452"
 |-------------|-----------------|----------------|  
 |[Элемент \<assembly>](../deployment/assembly-element-clickonce-application.md)|Обязательный. Это элемент верхнего уровня.|`manifestVersion`|  
 |[Элемент \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-application.md)|Обязательный. Определяет основную сборку из [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[Элемент \<trustInfo>](../deployment/trustinfo-element-clickonce-application.md)|Определяет требования к безопасности приложения.|Нет|  
+|[Элемент \<trustInfo>](../deployment/trustinfo-element-clickonce-application.md)|Определяет требования к безопасности приложения.|None|  
 |[Элемент \<entryPoint>](../deployment/entrypoint-element-clickonce-application.md)|Обязательный. Определяет точку входа в код приложения.|`name`|  
-|[Элемент \<dependency>](../deployment/dependency-element-clickonce-application.md)|Обязательный. Определяет все зависимости, необходимые для выполнения приложения. При необходимости определяет сборки, которые требуется установить предварительно.|Нет|  
+|[Элемент \<dependency>](../deployment/dependency-element-clickonce-application.md)|Обязательный. Определяет все зависимости, необходимые для выполнения приложения. При необходимости определяет сборки, которые требуется установить предварительно.|None|  
 |[Элемент \<file>](../deployment/file-element-clickonce-application.md)|Необязательный параметр. Идентифицирует каждого файла не являющиеся сборками, который используется приложением. Может включать данные изоляции модели COM, связанные с этим файлом.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
 |[Элемент \<fileAssociation>](../deployment/fileassociation-element-clickonce-application.md)|Необязательный параметр. Определяет расширение файла, нужно связать с приложением.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   

@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b6d9c3f8b45affd192d4109db08454345dcd0814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188222"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugPortSupplier2 : IUnknown
  Пользовательский порт поставщик реализует этот интерфейс для представления поставщика порта.  
   
 ## <a name="notes-for-callers"></a>Заметки о вызывающих объектов  
- Вызов `CoCreateInstance` с поставщика порта `GUID` возвращает этот интерфейс (это типичный способ получения этого интерфейса). Пример:  
+ Вызов `CoCreateInstance` с поставщика порта `GUID` возвращает этот интерфейс (это типичный способ получения этого интерфейса). Например:  
   
 ```cpp#  
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)  
@@ -76,7 +76,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
  Поставщика порта можно идентифицировать себя имя и идентификатор, добавить и удалить порты и перечислить все порты, которые предоставляет поставщик порта.  
   
 ## <a name="requirements"></a>Требования  
- Header: msdbg.h  
+ Заголовок: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
