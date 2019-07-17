@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d8a5a91a0300f256b66970403a3431edf0fe757e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189530"
 ---
 # <a name="scccheckin-function"></a>Функция SccCheckin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ SCCRTN SccCheckin (
 |SCC_E_ACCESSFAILURE|Возникла проблема с доступом к системе управления версиями, возможно, из-за проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
 |SCC_E_NONSPECIFICERROR|Обнаружена неспецифическая ошибка. Файл не был возвращен.|  
 |SCC_E_NOTCHECKEDOUT|Пользователь не извлечен файл, поэтому не может проверить его.|  
-|SCC_E_CHECKINCONFLICT|Не удалось выполнить Checkin, так как:<br /><br /> -Другой пользователь внес вперед и `bAutoReconcile` была ошибочной.<br /><br /> - или -<br /><br /> -Автообъединение невозможно (например, когда файлы являются двоичными).|  
+|SCC_E_CHECKINCONFLICT|Не удалось выполнить Checkin, так как:<br /><br /> -Другой пользователь внес вперед и `bAutoReconcile` была ошибочной.<br /><br /> -или-<br /><br /> -Автообъединение невозможно (например, когда файлы являются двоичными).|  
 |SCC_E_VERIFYMERGE|Файл был автоматически объединены, но еще не возвращен ожидающие проверки пользователя.|  
 |SCC_E_FIXMERGE|Файл был автоматически объединены, но еще не возвращен из-за конфликта слияния, который необходимо разрешить вручную.|  
 |SCC_E_NOTAUTHORIZED|Пользователю запрещено для этой операции.|  

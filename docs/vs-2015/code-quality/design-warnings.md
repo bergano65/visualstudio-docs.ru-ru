@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 58c5866e9aa78884aac89bbfab5894394116e79f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152184"
 ---
 # <a name="design-warnings"></a>Предупреждения конструктора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ ms.locfileid: "58992646"
 |[CA1060: Переместите P/Invokes в класс NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Платформа вызова, например методов, отмеченные <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> или методы, определенные с помощью ключевого слова Declare в [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], доступ к неуправляемому коду. Эти методы должны относиться к классу NativeMethods, SafeNativeMethods или UnsafeNativeMethods.|  
 |[CA1061: Не следует скрывать методы базового класса](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Метод в базовом типе скрыт методом с таким же именем в производном типе. Сигнатура параметра производного метода отличается только типами, которые являются более слабыми, чем соответствующие типы в сигнатуре параметра базового метода.|  
 |[CA1062: Проверьте аргументы открытых методов](../code-quality/ca1062-validate-arguments-of-public-methods.md)|Все ссылочные аргументы, передаваемые в видимые для внешнего кода методы, должны проверяться на равенство значению NULL.|  
-|[CA1063: Правильно реализуйте IDisposable](../code-quality/ca1063-implement-idisposable-correctly.md)|Все типы IDisposable должны правильно реализовывать шаблон "Dispose".|  
+|[CA1063: СЛЕДУЕТ Правильно реализуйте IDisposable](../code-quality/ca1063-implement-idisposable-correctly.md)|Все типы IDisposable должны правильно реализовывать шаблон "Dispose".|  
 |[CA1064: Исключения должны быть открытыми](../code-quality/ca1064-exceptions-should-be-public.md)|Внутреннее исключение видно только внутри своей внутренней области. После выхода исключения за пределы внутренней области для перехвата исключения можно использовать только базовое исключение. Если внутренне исключение унаследовано от <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, или <xref:System.ApplicationException?displayProperty=fullName>, внешний код не будет иметь достаточно сведений, чтобы знать, что делать с исключением.|  
 |[CA1065: Не вызывайте исключения в непредвиденных местах](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Метод вызывает исключение, хотя не должен этого делать.|  
 |[CA2210: Сборки должны иметь допустимые строгие имена](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Строгое имя защищает клиентов от случайной загрузки сборки, которая была подменена. Сборки без строгих имен следует развертывать лишь в крайне небольшом числе случаев. При обмене или распространении сборок без правильной подписи сборки могут быть подменены, среда CLR может не загрузить сборку или пользователь может быть вынужден отключить проверку на своем компьютере.|

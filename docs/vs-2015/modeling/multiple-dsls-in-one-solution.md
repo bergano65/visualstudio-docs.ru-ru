@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159011"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Несколько доменных языков в одном решении
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60050144"
   
 2. Объедините манифесты VSIX доменных языков:  
   
-   1. Open _YourVsixProject_**\source.extension.manifest**.  
+   1. Откройте _YourVsixProject_ **\source.extension.manifest**.  
   
    2. Для каждого доменного языка выберите **добавить содержимое** и добавьте:  
   
@@ -59,7 +59,7 @@ ms.locfileid: "60050144"
   
 3. Постройте решение.  
   
-   Получившийся проект VSIX установит оба доменных языка. Можно протестировать с помощью клавиши F5 или развернуть _YourVsixProject_**\bin\Debug\\\*.vsix**.  
+   Получившийся проект VSIX установит оба доменных языка. Можно протестировать с помощью клавиши F5 или развернуть _YourVsixProject_ **\bin\Debug\\\*.vsix**.  
   
 ## <a name="see-also"></a>См. также  
  [Интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

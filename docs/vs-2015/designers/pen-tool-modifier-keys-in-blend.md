@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fc4f5e798e5ae675a04e7df701d08210a83062d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185071"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Клавиши-модификаторы инструмента «Перо» в Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "54764188"
 |Создание сглаженного угла при соединении двух контуров|Выберите два контура, щелкните инструмент **Перо**, щелкните конечную точку одного из контуров и перетащите конечную точку другого контура|![](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png "bd12dfa4-112e-4f37-9765-3479e6b69894")<br /><br /> Указатель объединения пера|  
 |Создание нового контура|Удерживая клавишу CTRL, щелкните за пределами предыдущего контура, чтобы к нему больше не добавлялись точки, а затем щелкните или перетащите указатель в место создания нового контура|![](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png "69758176-5f53-465b-808c-f13fd1a0b3f2")<br /><br /> Указатель начала пера|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Сочетания клавиш и клавиши-модификаторы](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)   
  [Клавиши-модификаторы области рисования](../designers/artboard-modifier-keys-in-blend.md)   
  [Клавиши-модификаторы инструмента "Прямой выбор"](../designers/direct-selection-tool-modifier-keys-in-blend.md)   

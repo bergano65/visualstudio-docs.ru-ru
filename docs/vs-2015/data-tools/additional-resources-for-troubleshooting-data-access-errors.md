@@ -232,13 +232,13 @@ ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 851a1f87cce5f4030a9ba5a4701b6c0055859f10
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143096"
 ---
-# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Дополнительные ресурсы для устранения ошибки доступа к данным
+# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Дополнительные ресурсы для устранения неполадок, связанных с ошибками доступа к данным
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. В следующей таблице перечислены данные ссылки на форумы в сети MSDN.  

@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201840"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Практическое руководство. Создание многофайловых шаблонов элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "60056912"
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Создание шаблона многофайлового элемента вручную  
   
-1. Создайте шаблон элемента, как если бы вы создавали шаблон однофайлового элемента. Дополнительные сведения см. в разделе [Как Создание шаблонов элементов](../ide/how-to-create-item-templates.md).  
+1. Создайте шаблон элемента, как если бы вы создавали шаблон однофайлового элемента. Дополнительные сведения см. в разделе [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md).  
   
-2. Добавьте атрибуты `TargetFileName` в каждый элемент `ProjectItem`. Присвойте атрибутам `TargetFileName` значения $входное_имя_файла$.*расширение_файла*, где *расширение_файла* — это расширение файла, включенное в шаблоне. Пример:  
+2. Добавьте атрибуты `TargetFileName` в каждый элемент `ProjectItem`. Присвойте атрибутам `TargetFileName` значения $входное_имя_файла$.*расширение_файла*, где *расширение_файла* — это расширение файла, включенное в шаблоне. Например:  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -55,7 +55,7 @@ ms.locfileid: "60056912"
   
 3. Выберите файлы, которые нужно включить в шаблон, щелкните выбранное правой кнопкой мыши, выберите пункт **Отправить**, а затем пункт **Сжатая ZIP-папка**. Выбранные файлы будут сжаты в ZIP-файл.  
   
-4. Поместите ZIP-файл в расположение, где находится пользовательский шаблон элемента. По умолчанию это каталог \My Documents\Visual Studio *версия*\Templates\ItemTemplates\\. Дополнительные сведения см. в разделе [Как Размещение и упорядочение шаблонов](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+4. Поместите ZIP-файл в расположение, где находится пользовательский шаблон элемента. По умолчанию это каталог \My Documents\Visual Studio *версия*\Templates\ItemTemplates\\. Дополнительные сведения см. в разделе [Практическое руководство. Размещение и упорядочение шаблонов](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="example"></a>Пример  
  Приведенный ниже пример показывает шаблон Windows Forms [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Когда на основе этого шаблона создается элемент, имена трех созданных файлов будут соответствовать имени, введенному в диалоговом окне **Добавление нового элемента**.  

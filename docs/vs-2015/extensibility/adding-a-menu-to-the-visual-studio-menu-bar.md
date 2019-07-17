@@ -12,11 +12,11 @@ caps.latest.revision: 52
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64ab627d785e8b00b5159969a01dc1102df30359
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184928"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Добавление меню в строку меню Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60117581"
 
 ## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>Создание проекта VSIX, содержащего шаблон элемента настраиваемой команды
 
-1. Создайте проект VSIX с именем `TopLevelMenu`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C#** / **расширяемости**.  Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Создайте проект VSIX с именем `TopLevelMenu`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C#**  / **расширяемости**.  Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 2. При открытии проекта, Добавление пользовательской команды шаблона элемента с именем **тестовую команду**. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить / новый элемент**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C# / Extensibility** и выберите **настраиваемой команды**. В **имя** в нижней части окна, измените имя командного файла для **TestCommand.cs**.
 

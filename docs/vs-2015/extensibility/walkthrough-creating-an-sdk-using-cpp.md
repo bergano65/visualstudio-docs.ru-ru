@@ -9,11 +9,11 @@ caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1312d61b2d287a5dd8cb757b73e818a9e9cb2241
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202073"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Пошаговое руководство. Создание пакета SDK с помощью C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +109,7 @@ ms.locfileid: "60110041"
   
      Скопируйте DebugNativeMathWRTNativeMathWRT.winmd и вставьте его в папке ReferencesCommonConfigurationNeutral.  
   
-     Copy DebugNativeMathWRTNativeMathWRT.pri and paste it in the ReferencesCommonConfigurationNeutral folder.  
+     Скопируйте DebugNativeMathWRTNativeMathWRT.pri и вставьте его в папке ReferencesCommonConfigurationNeutral.  
   
 12. В папке \DesignTime\Debug\x86\ создайте текстовый файл с именем NativeMathSDK.props и вставьте в него следующее содержимое:  
   

@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c129ddf016e02fe6c29d5cf63fe57ba07fbd4e95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176643"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Сбор подробных сведений о времени с помощью инструментирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60087980"
   
   В задачах в приведенной ниже таблице описываются параметры, которые можно задать в диалоговом окне _Сеанс производительности_**страницы свойств** при профилировании с помощью метода инструментирования.  
   
-|Задача|Связанное содержимое|  
+|Задача|См. также|  
 |----------|---------------------|  
 |На странице **Общие** добавьте данные по выделению памяти .NET и времени существования и укажите сведения об именовании для создаваемого файла данных профилирования (VSP).|-   [Сбор данных о выделении памяти для объектов .NET и времени их жизни](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Практическое руководство. Настройка параметров имени файла с данными о производительности](../profiling/how-to-set-performance-data-file-name-options.md)|  
 |При наличии в решении нескольких проектов исполняемых файлов (EXE) выберите на странице **Запуск** запускаемое приложение и порядок запуска.|-   [Практическое руководство. Определение двоичного файла для запуска](../profiling/how-to-specify-the-binary-to-start.md)|  

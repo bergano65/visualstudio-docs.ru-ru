@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5d1fe2191dadd0972dcde6f38b9697e29f05ab8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190460"
 ---
 # <a name="clickonce-deployment-manifest"></a>Манифест развертывания ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58992883"
 |[Элемент \<compatibleFrameworks>](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Обязательный. Идентифицирует версии платформы .NET Framework, где можно установить и выполнять это приложение.|`SupportUrl`|  
 |[Элемент \<dependency>](../deployment/dependency-element-clickonce-deployment.md)|Обязательный. Идентифицирует устанавливаемую версию приложения для развертывания и местоположение манифеста приложения.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
 |[Элемент \<publisherIdentity>](../deployment/publisheridentity-element-clickonce-deployment.md)|Является обязательным для манифестов с подписью. Содержит сведения об издателе, подписавшем этот манифест развертывания.|`Name`<br /><br /> `issuerKeyHash`|  
-|[Элемент \<Signature>](../deployment/signature-element-clickonce-deployment.md)|Необязательный параметр. Содержит сведения, необходимые для того, чтобы подписать этот манифест развертывания с помощью цифровой подписи.|Нет|  
+|[Элемент \<Signature>](../deployment/signature-element-clickonce-deployment.md)|Необязательный параметр. Содержит сведения, необходимые для того, чтобы подписать этот манифест развертывания с помощью цифровой подписи.|None|  
 |[Элемент \<customErrorReporting>](../deployment/customerrorreporting-element-clickonce-deployment.md)|Необязательный параметр. Задает отображаемый в случае ошибки URI.|URI|  
   
 ## <a name="remarks"></a>Примечания  
