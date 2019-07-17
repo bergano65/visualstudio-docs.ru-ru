@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b39ac28776b1af71e2cccb601776f5518ff9e99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176624"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Сбор подробных сведений о времени для автономного приложения с помощью командной строки профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54803953"
   
 ### <a name="profiling-stand-alone-applications"></a>Профилирование автономных приложений  
   
-|Задача|Связанное содержимое|  
+|Задача|См. также|  
 |----------|---------------------|  
 |**Профилирование приложений с помощью выборки**|-   [Использование метода выборки для сбора статистики приложения](../profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
 |**Профилирование выделения памяти .NET и сбора мусора**|-   [Сбор данных об использовании памяти .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
@@ -44,7 +44,7 @@ ms.locfileid: "54803953"
   
 ### <a name="profiling-by-using-the-instrumentation-method"></a>Профилирование с помощью метода инструментирования  
   
-|Задача|Связанное содержимое|  
+|Задача|См. также|  
 |----------|---------------------|  
 |**Профилирование приложений ASP.NET**|-   [Сбор подробных сведений о времени с помощью инструментирования](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**Профилирование служб**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  

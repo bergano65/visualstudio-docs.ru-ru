@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201620"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225. Для перегрузок операторов существуют варианты с именами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "58992233"
 |&|и|&|BitwiseAnd|
 |&=|И =|&=|BitwiseAnd|
 |&#124;|Или|&#124;|BitwiseOr|
-|&#124;=|Или =|&#124;=|BitwiseOr|
+||=|Или =||=|BitwiseOr|
 |--|Н/Д|--|Decrement|
 |/|/|/|Divide|
 |/=|/=|/=|Divide|
@@ -76,7 +76,7 @@ ms.locfileid: "58992233"
 |-=|Н/Д|-=|Subtract|
 |true|IsTrue|Н/Д|IsTrue (свойство)|
 |— (унарные)|Н/Д|-|Инверсия|
-|+ (унарный)|Н/Д|+|Plus|
+|+ (унарный)|Н/Д|+|плюс|
 |False|IsFalse|False|IsTrue (свойство)|
 
  Н/д == не могут быть перегружены на выбранном языке.

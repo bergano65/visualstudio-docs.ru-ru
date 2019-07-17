@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151028"
 ---
 # <a name="create-an-android-native-activity-app"></a>Создание приложения Android Native Activity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60115644"
   
 1. Запустите Visual Studio. В строке меню выберите **Файл**, **Создать**, **Проект**.  
   
-2. В диалоговом окне **Новый проект** в меню **Шаблоны**щелкните пункт **Visual C++**, **Кроссплатформенное приложение**, а затем выберите шаблон **Приложение Native-Activity (Android)** .  
+2. В диалоговом окне **Новый проект** в меню **Шаблоны**щелкните пункт **Visual C++** , **Кроссплатформенное приложение**, а затем выберите шаблон **Приложение Native-Activity (Android)** .  
   
 3. Назначьте приложению имя, например `MyAndroidApp`, а затем нажмите кнопку **ОК**.  
   

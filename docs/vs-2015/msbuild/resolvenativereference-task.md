@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 137ab6c54176c7c95c13c4b3e4defb3924937bc7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205641"
 ---
 # <a name="resolvenativereference-task"></a>Задача ResolveNativeReference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "59650321"
   
 |Параметр|Описание|  
 |---------------|-----------------|  
-|`AdditionalSearchPaths`|(Требуется [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]` параметра.<br /><br /> Получает или задает пути поиска для разрешения идентификаторов сборок для собственных ссылок.|  
+|`AdditionalSearchPaths`|(Требуется [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]` параметр.<br /><br /> Получает или задает пути поиска для разрешения идентификаторов сборок для собственных ссылок.|  
 |`ContainedComComponents`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Получает или задает компоненты COM машинной сборки.|  
 |`ContainedLooseEtcFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Возвращает или задает свободные ETC-файлы, перечисленные в собственном манифесте.|  
 |`ContainedLooseTlbFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Получает или задает свободные TLB-файлы машинной сборки.|  

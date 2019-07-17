@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 4741b30d1429a1a179328c8fb4b150fc4f920612
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154385"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105. Поля массивов не должны быть доступны только для чтения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

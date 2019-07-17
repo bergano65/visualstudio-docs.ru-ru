@@ -11,13 +11,13 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203910"
 ---
-# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Создание экземпляра базового редактора с помощью API прежних версий
+# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Создание экземпляра основного редактора с помощью API прежних версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Редактор несет ответственность за изменения функции, такие как вставки, удаления, копирования и вставки текста. Оно объединяет эти функции с образы, предоставляемые службы языка, такие как выделение цветом текста, отступы и завершение операторов IntelliSense.  
@@ -69,4 +69,4 @@ ms.locfileid: "58989541"
 ## <a name="see-also"></a>См. также  
  [В редакторе](../extensibility/inside-the-core-editor.md)   
  [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)   
- [Пошаговое руководство: Создание базового редактора и регистрация файла тип редактора](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [Пошаговое руководство: создание основного редактора и регистрация типов файлов в редакторе](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

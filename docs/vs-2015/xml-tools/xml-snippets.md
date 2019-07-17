@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5e2fbba9006c1621b8f98084d4ffd4c637be1127
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147150"
 ---
 # <a name="xml-snippets"></a>XML-фрагменты
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ XML Editor содержит возможность, называемую *XML-ф
   
  Существует два способа вставки фрагментов. **Вставить фрагмент** команда вставляет фрагмент кода XML в позиции курсора. **Окружить** команда создает оболочку для XML-фрагмент вокруг выбранного текста. Обе команды доступны либо из **IntelliSense** подменю **изменить** меню или в контекстном меню редактора.  
   
- Дополнительные сведения см. в разделе [Как Использовать XML-фрагменты](../xml-tools/how-to-use-xml-snippets.md).  
+ Дополнительные сведения см. в разделе [Практическое руководство. Использовать XML-фрагменты](../xml-tools/how-to-use-xml-snippets.md).  
   
 ## <a name="schema-generated-xml-snippets"></a>XML-фрагменты, сформированные схемой  
  XML Editor также может создавать XML-фрагменты из XML-схем. Эта функция позволяет заполнять элементы XML-элементами, созданными из информации схемы для этого элемента.  
   
- Дополнительные сведения см. в разделе [Как Создание XML-фрагмент из схемы XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).  
+ Дополнительные сведения см. в разделе [Практическое руководство. Создание XML-фрагмент из схемы XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).  
   
 ## <a name="create-new-xml-snippets"></a>Создание новых XML-фрагментов  
  Кроме фрагментов, которые входят в состав [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio по умолчанию, можно также создать и использовать собственные XML-фрагменты.  
   
- Дополнительные сведения см. в разделе [Как Создание XML-фрагментов](../xml-tools/how-to-create-xml-snippets.md).  
+ Дополнительные сведения см. в разделе [Практическое руководство. Создание XML-фрагментов](../xml-tools/how-to-create-xml-snippets.md).  
   
 ## <a name="see-also"></a>См. также  
  [XML-редактор](../xml-tools/xml-editor.md)

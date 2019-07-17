@@ -18,19 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c394e909ec7ff51a7c6baf0bac85df3d2fce7b78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a050724733ad87d0c583639fe3b0acfd2d6299f7
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928481"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890573"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Практическое руководство. задание режима установки ClickOnce: автономного или через Интернет
 `Install Mode` Для [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения определяет, будут ли приложения доступны в автономном или интерактивном режиме. При выборе **приложение доступно только из сети**, пользователь должен иметь доступ к [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] расположение публикации (веб-страницы или общей папки) для запуска приложения. При выборе **приложение будет доступно в автономном режиме**, оно добавляет элементы к **запустить** меню и **Установка и удаление программ** диалоговое окно; пользователь — может запустить приложение, когда они не подключены.
 
- `Install Mode` Может устанавливаться на **публикации** странице **конструктор проектов**.
+`Install Mode` Может устанавливаться на **публикации** странице **конструктор проектов**.
 
- **Примечание** `Install Mode` также можно задать с помощью мастера публикации. Дополнительные сведения см. в разделе [Как опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+> [!NOTE]
+> `Install Mode` Также можно задать с помощью мастера публикации. Дополнительные сведения см. в разделе [Практическое руководство. опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>Чтобы сделать приложение ClickOnce доступным через Интернет только
 

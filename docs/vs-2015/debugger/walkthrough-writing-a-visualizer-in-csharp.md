@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688153"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890466"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Пошаговое руководство. Написание визуализатора на C\#
 
@@ -39,7 +39,7 @@ ms.locfileid: "65688153"
 
 1. На **файл** меню, выберите **New** и нажмите кнопку **новый проект**.
 
-2. В **новый проект** диалогового **тип проекта**выберите **Visual C#**.
+2. В **новый проект** диалогового **тип проекта**выберите **Visual C#** .
 
 3. В **шаблоны** выберите **библиотеки классов**.
 
@@ -196,7 +196,8 @@ ms.locfileid: "65688153"
 
 2. Измените имя c Program.cs на что-нибудь более понятное, например на TestConsole.cs.
 
-    **Примечание** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] автоматически изменяет объявление класса в TestConsole.cs в соответствии с новым именем файла.
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] автоматически изменяет объявление класса в TestConsole.cs так, чтобы оно соответствовало новому имени файла.
 
 3. В TestConsole.cs добавьте следующий код к инструкциям `using`:
 
@@ -234,7 +235,7 @@ ms.locfileid: "65688153"
 
 1. В меню **Файл** выберите команду **Добавить**, а затем **Новый проект**.
 
-2. В **Добавление нового проекта** диалогового **тип проекта**выберите **Visual C#**.
+2. В **Добавление нового проекта** диалогового **тип проекта**выберите **Visual C#** .
 
 3. В **шаблоны** выберите **библиотеки классов**.
 

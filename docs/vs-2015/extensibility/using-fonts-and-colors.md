@@ -15,13 +15,13 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177225"
 ---
-# <a name="using-fonts-and-colors"></a>С помощью шрифтов и цветов
+# <a name="using-fonts-and-colors"></a>Использование шрифтов и цветов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Обеспечивает поддержку использования шрифты и цвета для отображения текста.  
@@ -41,7 +41,7 @@ ms.locfileid: "58980093"
   
  Этот подход требует VSPackage для реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> интерфейс и соответствующие интерфейсы.  
   
- [Практическое руководство. Доступ к встроенной шрифтов и цветовой схемы](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [Практическое руководство. Доступ к встроенным шрифтам и цветовой схеме](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Описывает, как определить категорию с помощью встроенных шрифты и цвета, и начала работы для системных шрифтов и цветов.  
   
 ## <a name="reference"></a>Ссылка  

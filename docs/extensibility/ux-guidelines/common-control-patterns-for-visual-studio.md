@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312301"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890972"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Шаблоны стандартных элементов управления для Visual Studio
 ## <a name="BKMK_CommonControls"></a> Стандартные элементы управления
@@ -252,7 +252,7 @@ ms.locfileid: "66312301"
 
 ### <a name="common-buttons"></a>Стандартные кнопки
 
-#### <a name="text"></a>Текста
+#### <a name="text"></a>Текст
 Следуйте указаниям, изложенным записи [пользовательского интерфейса текст и терминология](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology).
 
 #### <a name="visual-style"></a>Визуальный стиль
@@ -296,7 +296,8 @@ ms.locfileid: "66312301"
 #### <a name="graphical-buttons"></a>Графические кнопки
 Некоторые кнопки следует всегда использовать графическое изображение и никогда не включать текст, чтобы сэкономить место и избежать проблем локализации. Часто они используются в поле выбора и других сортировки списков.
 
-> **Примечание.** Пользователи должны переместиться на эти кнопки (отсутствуют ключи доступа), поэтому размещайте их в порядке, разумно. Карта `name` свойства кнопки действие, необходимое, чтобы средства чтения с экрана правильно интерпретировать действие кнопки.
+> [!NOTE]
+> Пользователи должны переместиться на эти кнопки (отсутствуют ключи доступа), поэтому размещайте их в порядке, разумно. Карта `name` свойства кнопки действие, необходимое, чтобы средства чтения с экрана правильно интерпретировать действие кнопки.
 
 | Функция | Кнопка |
 | --- | --- |

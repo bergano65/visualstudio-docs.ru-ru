@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee0cb763cdfcd049ac389b54a2348c0a733b907d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158218"
 ---
 # <a name="getting-started-with-performance-tools"></a>Приступая к работе со средствами производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60078984"
   
 ## <a name="common-tasks"></a>Общие задачи  
   
-|Задача|Связанное содержимое|  
+|Задача|См. также|  
 |----------|---------------------|  
 |**Быстрое профилирование приложения или веб-сайта:** Используйте мастер производительности, чтобы настроить и запустить сеанс профилирования для решения Visual Studio или веб-сайта.|-   [Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Практическое руководство. Сбор данных о производительности для веб-сайта](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
 |**Профилирование приложения без мастера:** Узнайте, как использовать страницы свойств сеанса анализа производительности для создания сеанса анализа производительности.|-   [Практическое руководство. Создание сеансов анализа производительности вручную](../profiling/how-to-manually-create-performance-sessions.md)|  

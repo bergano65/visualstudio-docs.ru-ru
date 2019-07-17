@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176962"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Цвета и стили для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 #### <a name="helper-classes-and-methods-for-managed-code"></a>Вспомогательные классы и методы для управляемого кода
  Для управляемого кода библиотека Managed Package Framework оболочки (Microsoft.VisualStudio.Shell.12.0.dll) содержит несколько вспомогательных классов использует цвета темы.
 
- Вспомогательные методы в **Microsoft.VisualStudio.Shell.VsColors** включить класс в MPF **GetThemedGDIColor()** и **GetThemedWPFColor()**. Эти вспомогательные методы возвращают значение цвета темы записи как System.Drawing.Color или System.Windows.Media.Color, для использования в Windows Forms или пользовательского интерфейса WPF.
+ Вспомогательные методы в **Microsoft.VisualStudio.Shell.VsColors** включить класс в MPF **GetThemedGDIColor()** и **GetThemedWPFColor()** . Эти вспомогательные методы возвращают значение цвета темы записи как System.Drawing.Color или System.Windows.Media.Color, для использования в Windows Forms или пользовательского интерфейса WPF.
 
 ```
 IVsUIShell5 shell5;
@@ -367,7 +367,7 @@ protected override void Dispose(bool disposing)
 
  Служба, указанная в реестр необходимо предоставить реализацию **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** для соответствующей группы.
 
- ![IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a-fontandcolorgroup.png "0304-a_FontAndColorGroup")
+ ![IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a-fontandcolorgroup.png "0304 a_FontAndColorGroup")
 
 ### <a name="to-implement-ide-support"></a>Для реализации поддержки интегрированной среды разработки
  Реализуйте [GetObject](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject.aspx), который возвращает либо [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) интерфейс или **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** интерфейс в интегрированную среду разработки для каждой категории или группы указан GUID.
