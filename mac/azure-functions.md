@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: ca5c3133e3f03d4e68449156b35d6643c637a11b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692831"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825552"
 ---
 # <a name="introduction-to-azure-functions"></a>Введение в функции Azure
 
@@ -138,14 +138,14 @@ Visual Studio для Mac создаст проект .NET Standard, содерж
 ## <a name="available-function-templates"></a>Доступные шаблоны функций
 
 - **Триггер GitHub** — реагирует на события, происходящие в репозиториях GitHub. Дополнительные сведения см. в [статье о работе с GitHub в функциях Azure](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - Комментатор GitHub — функция, которая будет запускаться и добавлять комментарий при получении веб-перехватчика GitHub для проблемы или запроса на вытягивание.
-    - Веб-перехватчик GitHub — функция, которая будет запускаться при получении веб-перехватчика GitHub.
+  - Комментатор GitHub — функция, которая будет запускаться и добавлять комментарий при получении веб-перехватчика GitHub для проблемы или запроса на вытягивание.
+  - Веб-перехватчик GitHub — функция, которая будет запускаться при получении веб-перехватчика GitHub.
 
 - **HTTP** — запускает выполнение кода с помощью HTTP-запроса. Существует явные шаблоны для следующих триггеров HTTP:
-    - Триггер HTTP
-    - Http GET CRUD
-    - Http POST CRUD
-    - Триггер HTTP с параметрами
+  - Триггер HTTP
+  - Http GET CRUD
+  - Http POST CRUD
+  - Триггер HTTP с параметрами
 
 - **Таймер** — выполняет очистку или другие пакетные задачи по предопределенному расписанию. Этот шаблон имеет два поля: имя и расписание, которое представляет собой выражение CRON из шести полей. Дополнительные сведения см. в [статье о работе с таймерами в функциях Azure](/azure/azure-functions/functions-create-scheduled-function)
 

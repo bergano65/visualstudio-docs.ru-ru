@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о преимуществе CloudPilot, доступном в некоторых подписках Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032579"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825916"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Преимущество CloudPilot в подписках Visual Studio
 
@@ -76,9 +75,9 @@ ms.locfileid: "67032579"
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 - Нужна помощь с использованием CloudPilot?  Ознакомьтесь со следующими ресурсами:
-    - [Обратитесь в UnifyCloud](https://www.unifycloud.com/contacts/) по вопросам о продуктах UnifyCloud.
-    - [Руководство пользователя CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-    - [Отправка запроса на получение поддержки](https://support.datacamp.com/hc/requests/new)
+  - [Обратитесь в UnifyCloud](https://www.unifycloud.com/contacts/) по вопросам о продуктах UnifyCloud.
+  - [Руководство пользователя CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
+  - [Отправка запроса на получение поддержки](https://support.datacamp.com/hc/requests/new)
 
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

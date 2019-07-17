@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a3875e508105bbe23b1d5cbdcd863a058592537
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414699"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852185"
 ---
 # <a name="msbuild-transforms"></a>Преобразования MSBuild
 Преобразование — это однозначное преобразование одного списка элементов в другой. Помимо возможности преобразования списков элементов в проекте, преобразование позволяет целевому объекту определить прямое сопоставление входных и выходных данных. Этот раздел описывает преобразования и то, как [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] использует их для более эффективной сборки проектов.
@@ -63,7 +63,7 @@ ms.locfileid: "63414699"
 
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>Описание
+### <a name="description"></a>ОПИСАНИЕ
  Следующий пример показывает файл проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], использующий преобразования. В этом примере предполагается, что в каталоге *c:\sub0\sub1\sub2\sub3* есть только один *XSD-файл*, а рабочим каталогом является *c:\sub0*.
 
 ### <a name="code"></a>Код
@@ -92,11 +92,11 @@ ms.locfileid: "63414699"
 
 ```
 rootdir: C:\
-fullpath: C:\xmake\sub1\sub2\sub3\myfile.xsd
-rootdir + directory + filename + extension: C:\xmake\sub1\sub2\sub3\myfile.xsd
+fullpath: C:\sub0\sub1\sub2\sub3\myfile.xsd
+rootdir + directory + filename + extension: C:\sub0\sub1\sub2\sub3\myfile.xsd
 identity: sub1\sub2\sub3\myfile.xsd
 filename: myfile
-directory: xmake\sub1\sub2\sub3\
+directory: sub0\sub1\sub2\sub3\
 relativedir: sub1\sub2\sub3\
 extension: .xsd
 ```

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: Сведения о том, как найти и скачать продукты Майкрософт, входящее в вашу подписку Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5124217334418ea68b5dee6cb222e92e509ee5f5
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697774"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784823"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Использование скачиваемых файлов подписчика в подписках Visual Studio
 Ваши преимущества подписчика включают в себя доступ к обширному спектру скачиваемого программного обеспечения.

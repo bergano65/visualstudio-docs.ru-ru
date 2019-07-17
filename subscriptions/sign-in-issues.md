@@ -6,13 +6,12 @@ manager: lank
 ms.date: 11/07/2018
 ms.topic: conceptual
 description: Сведения о проблемах, которые могут возникнуть при входе в подписки Visual Studio
-searchscope: VS Subscription
-ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0687d08503389826b4c23b6add2a56f68e6a483
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008065"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784942"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Проблемы при входе в подписки Visual Studio
 Чтобы использовать свою подписку Visual Studio, вам сначала нужно войти в систему.  В зависимости от подписки вы можете настроить ее с помощью учетной записи Майкрософт (MSA) или удостоверения Azure Active Directory (AAD).  В этой статье рассматриваются некоторые проблемы, которые могут возникнуть при входе в подписку.

@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 811565d6e4189eb04b33ce07fe04718def905922
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746931"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250642"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Создание и настройка членов типа в конструкторе классов
 
@@ -122,7 +122,8 @@ ms.locfileid: "66746931"
 
 4. Дополнительно укажите другие сведения об элементе, например его тип.
 
-     **Примечание.** Для создания элементов также можно использовать сочетания клавиш. Дополнительные сведения см. в разделе [Сочетания клавиш и кнопок мыши в диаграмме классов и окне "Сведения о классах"](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+    > [!NOTE]
+    > Для создания элементов также можно использовать сочетания клавиш. Дополнительные сведения см. в разделе [Сочетания клавиш и кнопок мыши в диаграмме классов и окне "Сведения о классах"](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Изменение членов типов
 
@@ -150,7 +151,7 @@ ms.locfileid: "66746931"
 
 - **Модификатор члена**
 
-     Измените модификатор видимости члена на `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`) или `Default`.
+     Измените модификатор видимости члена на `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected Friend` (`protected internal`) или `Default`.
 
 - **\<добавить член>**
 

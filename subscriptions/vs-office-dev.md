@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Узнайте о преимуществе для разработчиков Office 365, предусмотренном подпиской Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 12851dcb19824ceccb16bacbba2fdeec29c7df47
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 9b31b1d1195e47dcf1f38351306a0c59a4472298
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032719"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250807"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Преимущество подписки разработчика Office 365 в подписках Visual Studio
 

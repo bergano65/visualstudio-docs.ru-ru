@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26290a5e70a9f4b0f6eeb8df5727ef4f04662136
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998228"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890636"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Расширение Visual Studio для Mac
 
@@ -28,7 +28,7 @@ Visual Studio для Mac состоит из набора модулей, наз
 Преимуществом такой модульной конструкции является расширяемость Visual Studio для Mac — существует множество точек расширения, которые можно использовать в пользовательских пакетах расширения. К примерам текущих пакетов расширения относится поддержка C# и F#, инструментов отладчика и шаблонов проектов.
 
 > [!NOTE]
-> **Примечание**. Если у вас есть проект Add-in Maker, созданный в версии, предшествующей Add-in Maker 1.2, нужно перенести этот проект согласно приведенному [здесь](https://mhut.ch/addinmaker/1.2) описанию.
+> Если у вас есть проект Add-in Maker, созданный в версии, предшествующей Add-in Maker 1.2, нужно перенести этот проект согласно приведенному [здесь](https://mhut.ch/addinmaker/1.2) описанию.
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 

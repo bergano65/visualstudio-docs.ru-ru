@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
-searchscope: VS Subscription
-ms.openlocfilehash: 3dc72dbc801679e9baa4bc54b0343270d2f00a29
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 557f23a6ffa4af39dce2e9716a56ea0e99875f82
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586899"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891059"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
 
@@ -28,7 +27,7 @@ ms.locfileid: "67586899"
 * Для выставления счетов за покупки требуется [подписка Azure](https://azure.microsoft.com/pricing/purchase-options/). [Зарегистрироваться](https://portal.azure.com) можно перед совершением первой покупки или в процессе ее совершения в Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Кто может приобрести облачные подписки на Visual Studio?
-Облачные подписки может приобрести любой пользователь с доступом к подписке Azure уровня [владельца](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [администратора службы](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription) или [соадминистратора](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator).
+Облачные подписки может приобрести любой пользователь с доступом к подписке Azure уровня [владельца](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [администратора службы](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) или [соадминистратора](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription).
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Как купить облачные подписки
 

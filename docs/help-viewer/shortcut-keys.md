@@ -6,17 +6,17 @@ helpviewer_keywords:
 - shortcut keys [Help Viewer]
 - Help Viewer, shortcut keys
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da8de5c392862c196fa03a69806ffb877af881c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da8a90be59199abd569c37b43a61728c00695fa9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975624"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821960"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Сочетания клавиш (в окне справки (Майкрософт)
 
@@ -59,7 +59,7 @@ ms.locfileid: "62975624"
 |Раздел|**CTRL**+**TAB**|Переключение между вкладками слева направо|
 |Раздел|**CTRL**+**SHIFT**+**TAB**|Переключение между вкладками справа налево|
 |Раздел|**CTRL**+**W**|Закрытие текущей вкладки|
-|Раздел|**CTRL**+**_Цифра_**|Переход к конкретной вкладке, где **_цифра_** находится в диапазоне от 1 до 9 и указывает порядковый номер вкладки.|
+|Раздел|**CTRL**+ **_Цифра_**|Переход к конкретной вкладке, где **_цифра_** находится в диапазоне от 1 до 9 и указывает порядковый номер вкладки.|
 |Раздел|**CTRL**+**ALT**+**F4**|Закрытие других вкладок содержимого|
 |Раздел|**CTRL**+**SHIFT**+**знак "плюс"**|Увеличение масштаба на 10 %|
 |Раздел|**CTRL**+**знак "минус"**|Уменьшение масштаба на 10 %|

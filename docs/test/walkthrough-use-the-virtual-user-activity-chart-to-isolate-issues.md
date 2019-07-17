@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6811365023f7030d46bf6c611ecb09a5990a7492
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976219"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825773"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Пошаговое руководство. Изоляция неисправностей с помощью диаграммы активности виртуальных пользователей
 
@@ -30,9 +30,9 @@ ms.locfileid: "62976219"
 
 - Выполните следующие процедуры:
 
-    - [Запись и выполнение веб-теста производительности](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
+  - [Запись и выполнение веб-теста производительности](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
 
-    - [Создание и запуск нагрузочного теста](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+  - [Создание и запуск нагрузочного теста](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Открытие решения ColorWebApp, созданного в предыдущем пошаговом руководстве
 
@@ -69,7 +69,7 @@ ms.locfileid: "62976219"
 
 3. С помощью инструмента **Масштабировать на период времени** под **диаграммой активности виртуальных пользователей** переместите левый и правый ползунки так, чтобы они оказались рядом со значком нарушения порогового значения. При этом изменится шкала времени на **диаграмме активности виртуальных пользователей**.
 
-4. На панели **Условные обозначения сведений** установите флажок **(Выделите ошибки)**. Обратите внимание, что выделен виртуальный пользователь, ставший причиной нарушения порогового значения.
+4. На панели **Условные обозначения сведений** установите флажок **(Выделите ошибки)** . Обратите внимание, что выделен виртуальный пользователь, ставший причиной нарушения порогового значения.
 
 5. На панели **Фильтрация результатов** снимите флажки **Показать результаты без ошибок** и **HttpError**, но оставьте флажок **ValidationRuleError**.
 

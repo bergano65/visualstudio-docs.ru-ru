@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения об активации подписки Parasoft Virtualize/SOA Test Professional, входящей в вашу подписку Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: ce0c1e3d00e73bfdfee5e2fbe2bea8adddc2d305
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032749"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824640"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop в подписках Visual Studio
 
@@ -86,7 +85,7 @@ ms.locfileid: "67032749"
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 - Нужна помощь с продуктами Parasoft?  Ознакомьтесь со следующими ресурсами:
-    - Техническая поддержка: https://www.parasoft.com/support/
-    - Центр ресурсов Parasoft: https://www.parasoft.com/resources/
+  - Техническая поддержка: https://www.parasoft.com/support/
+  - Центр ресурсов Parasoft: https://www.parasoft.com/resources/
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

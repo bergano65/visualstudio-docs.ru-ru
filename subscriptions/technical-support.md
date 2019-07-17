@@ -6,13 +6,12 @@ manager: lank
 ms.date: 08/01/2018
 ms.topic: conceptual
 description: Сведения о преимуществах технической поддержки, которая прилагается к подпискам Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 94c8ac818fbdee17c75c508f509e93b50c3871ec
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 6f16e2a23d193e25e2d1d324b0e249c87a9d1a9a
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033107"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784807"
 ---
 # <a name="technical-support-benefits-included-with-visual-studio-subscriptions"></a>Преимущества технической поддержки, которая прилагается к подпискам Visual Studio
 
