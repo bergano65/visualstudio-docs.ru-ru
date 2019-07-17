@@ -11,13 +11,13 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cedb95ccd98c3d5bd5e05086cfd1b53b0f97cd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186388"
 ---
-# <a name="tool-windows-in-the-registry"></a>Средство Windows в реестре
+# <a name="tool-windows-in-the-registry"></a>Окно инструментов в реестре
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Необходимо зарегистрировать пакетов VSPackage, предоставляющих окон инструментов [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] как средство поставщиков окна. Окна инструментов, созданные с помощью шаблона пакета Visual Studio для этого по умолчанию. Поставщиков окна инструментов, используют разделы реестра системы, которые указывают атрибуты видимости, такие как размер окна инструментов по умолчанию и расположение, идентификатор GUID окна, который служит в качестве область окна инструментов, а также стиль закрепления.  

@@ -12,11 +12,11 @@ caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 692f2a9f34edd41839179f7229e079ec8e791800
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185820"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Регистрация и выбор (пакет VSPackage системы управления версиями)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ ms.locfileid: "58992827"
   
 |Имя раздела|Записи|  
 |--------------|-------------|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(default) = rg_sz:{ID_SccProvider}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(по умолчанию) = rg_sz:\<понятное имя пакета ><br /><br /> Service = rg_sz:{SID_SccPkgService}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(по умолчанию) = rg_sz: #\<идентификатор ресурса для локализованного имени ><br /><br /> Package = rg_sz:{ID_Package}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(по умолчанию) = rg_sz: {ID_SccProvider}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(по умолчанию) = rg_sz:\<понятное имя пакета ><br /><br /> Служба = rg_sz: {SID_SccPkgService}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(по умолчанию) = rg_sz: #\<идентификатор ресурса для локализованного имени ><br /><br /> Пакет = rg_sz: {ID_Package}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Обратите внимание, что имя ключа, `SourceCodeControl`, уже используется [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и недоступно в списках \<имя пакета >.)|(по умолчанию) = rg_sz: {ID_Package}|  
   
 ## <a name="selecting-a-source-control-package"></a>Выбор пакета системы управления версиями  

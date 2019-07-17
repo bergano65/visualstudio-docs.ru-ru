@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 37f84bff4802c703bb61b36e9c1933a31cd6c5e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142364"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240. Правильно реализуйте ISerializable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "60045451"
 
  [CA2229: реализуйте конструкторы сериализации](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2238: Правильно реализовывать методы сериализации](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+ [CA2238: СЛЕДУЕТ Правильно реализовывать методы сериализации](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
  [CA2235. Пометьте все несериализуемые поля](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 

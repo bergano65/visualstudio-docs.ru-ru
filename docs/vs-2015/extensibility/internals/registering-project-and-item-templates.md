@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185839"
 ---
 # <a name="registering-project-and-item-templates"></a>Регистрация шаблонов проектов и элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "58989841"
 ### <a name="registering-file-filters"></a>Регистрация фильтры файлов  
  При желании вы можете зарегистрировать фильтры, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] использует при запросе у имен файлов. Например [!INCLUDE[csprcs](../../includes/csprcs-md.md)] фильтрации для **открыть файл** используется диалоговое окно:  
   
- **Visual C# Files (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl);\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
+ **Файлы Visual C# (\*.cs,\*.resx,\*.settings,\*XSD-файл,\*.wsdl);\*. CS,\*.resx,\*.settings,\*XSD-файл,\*.wsdl)**  
   
  Для поддержки регистрации несколько фильтров, каждый фильтр регистрируется в свой собственный подраздел в разделе HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*версии*> \Projects\\{} \< *ProjectGUID*>} \Filters\\<*подраздел*>. Имя подраздела может быть произвольным. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] игнорирует имя подраздела и использует только его значения.  
   
