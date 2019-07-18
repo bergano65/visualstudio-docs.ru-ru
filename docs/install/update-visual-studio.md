@@ -2,7 +2,7 @@
 title: Обновление Visual Studio
 titleSuffix: ''
 description: Пошаговые инструкции по обновлению Visual Studio до последней версии.
-ms.date: 06/19/2019
+ms.date: 07/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,17 +10,19 @@ ms.technology: vs-installation
 helpviewer_keywords:
 - update [Visual Studio]
 - change [Visual Studio]
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.ProductUpdates
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290660"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250583"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio
 
@@ -257,6 +259,27 @@ ms.locfileid: "67290660"
 1. В диалоговом окне **Обновление скачано и готово к установке** выберите **Обновить**.
 
    Visual Studio обновляется, закрывается и снова открывается.
+
+## <a name="customize-update-settings"></a>Настройка параметров обновления
+
+В Visual Studio параметры обновления можно настроить несколькими способами, например изменив режим установки или выбрав автоматическое скачивание.
+
+Доступно два режима установки:
+
+* **Установить при скачивании**;
+* **Скачать все и установить**.
+
+Вы также можете выбрать параметр **автоматического скачивания обновлений**, чтобы скачивать обновления, когда компьютером не пользуются.
+
+Это делается так.
+
+1. В строке меню выберите **Сервис** > **Параметры**.
+
+2. Разверните пункт **Среда** и выберите элемент **Обновления продукта**.
+
+    ![Настройки обновлений в Visual Studio](media/vs-2019/update-settings-options.png)
+
+3. Выберите режим установки и требуемые параметры автоматического скачивания обновлений для Visual Studio.
 
 ::: moniker-end
 

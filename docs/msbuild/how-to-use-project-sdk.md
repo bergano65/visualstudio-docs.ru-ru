@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Ссылка на пакет SDK проекта MSBuild | Документация Майкрософт
+title: Практическое руководство. Ссылка на пакет SDK проекта MSBuild | Документация Майкрософт
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 172dfae63fbfb95432a1635490ac703f7bbd9021
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977325"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852238"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>Как выполнить Информация об использовании пакетов SDK проекта MSBuild
+# <a name="how-to-use-msbuild-project-sdks"></a>Практическое руководство. Информация об использовании пакетов SDK проекта MSBuild
 
 В версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 представлена новая концепция "пакет SDK проекта", которая упрощает применение пакетов разработки программного обеспечения, требующих импортировать свойства и целевые объекты.
 
@@ -56,7 +56,15 @@ ms.locfileid: "62977325"
     </Project>
     ```
 
-    При этом в начале и конце кода проекта добавляются неявные директивы импорта, как описано выше.  Значение атрибута `Sdk` задается в формате `Name[/Version]`, где Version обозначает необязательное значение версии.  Например, так: `My.Custom.Sdk/1.2.3`.
+    При этом в начале и конце кода проекта добавляются неявные директивы импорта, как описано выше.
+    
+    Чтобы указать определенную версию пакета SDK, ее можно добавить в атрибут `Sdk`.
+
+    ```xml
+    <Project Sdk="My.Custom.Sdk/1.2.3">
+        ...
+    </Project>
+    ```
 
     > [!NOTE]
     > Сейчас это единственный способ добавить ссылку на пакет SDK для проекта в Visual Studio для Mac.

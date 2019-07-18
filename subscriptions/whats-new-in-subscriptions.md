@@ -3,17 +3,16 @@ title: Новые возможности подписок Visual Studio
 description: Узнайте о новых и обновленных функциях, которые можно использовать для управления подписками Visual Studio.
 ms.custom: ''
 ms.date: 06/27/2019
-searchscope: VS Subscription
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465123"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891075"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Новые возможности в подписках Visual Studio
 
@@ -21,7 +20,7 @@ ms.locfileid: "67465123"
 
 ## <a name="2019-q1-january-march"></a>1-й квартал 2019 г. (январь — март)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>На [портале администрирования подписок](https://manage.visualstuido.com) появилась функция "Максимальное использование"
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>На [портале администрирования подписок](https://manage.visualstudio.com) появилась функция "Максимальное использование"
 Новая функция на портале администрирования подписок Visual Studio помогает отслеживать, сколько подписок вы приобрели и назначили, и определяет максимальное число назначенных подписок каждого уровня, как в прошлом году, так и в период действия ваших соглашений. Эта функция позволяет понять, как используется ваша текущая подписка, и планировать покупки на будущее. 
 
   > [!div class="mx-imgBorder"]
@@ -34,7 +33,7 @@ ms.locfileid: "67465123"
 ## <a name="2019-q2-april-june"></a>Второй квартал 2019 г. (апрель — июнь)
 
 ### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Подписки Visual Studio с GitHub Enterprise
-На конференции Build в мае корпорация Майкрософт объявила, что клиенты с Соглашением Enterprise теперь могут приобрести подписки Visual Studio, которые включают GitHub Enterprise.  Это простой способ получить подписки Visual Studio и GitHub Enterprise по одной более низкой цене.  
+На конференции Build в мае корпорация Майкрософт объявила, что клиенты с Соглашением Enterprise теперь могут приобрести подписки Visual Studio, которые включают GitHub Enterprise.  Это простой способ получить подписки Visual Studio и GitHub Enterprise по одной цене дешевле.  
 
 Предложение GitHub Enterprise доступно с подписками Visual Studio Enterprise и Visual Studio Professional, приобретенными в рамках Соглашения Enterprise. Доступно также предложение более высокого уровня, которое позволяет добавить GitHub Enterprise, даже если Соглашение Enterprise пока не требуется продлевать.
 
