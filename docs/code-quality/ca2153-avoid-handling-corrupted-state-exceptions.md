@@ -1,21 +1,20 @@
 ---
-title: CA2153. Не используйте обработку исключений поврежденного состояния
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: CA2153 правила анализа кода для поврежденного состояния
+ms.date: 02/19/2019
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b789a4580c3787a4504d730e694308341657eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b75e45b8a199265eaefe3a2b3c37ed62039e0eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62542161"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153. Не используйте обработку исключений поврежденного состояния
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153. Избежать обработки поврежденного состояния
 
 |||
 |-|-|
@@ -26,25 +25,25 @@ ms.locfileid: "53821864"
 
 ## <a name="cause"></a>Причина
 
-[Исключения сбоя состояния (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) указывают на то, что в процессе имеется повреждение памяти. Если перехватывать их вместо того, чтобы позволить процессу завершиться сбоем, это может привести к уязвимостям в системе безопасности, если злоумышленнику удастся поместить эксплойт в поврежденную область памяти.
+[Исключений поврежденного состояния (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) указать, что память в процессе имеется повреждение. Если перехватывать их вместо того, чтобы позволить процессу завершиться сбоем, это может привести к уязвимостям в системе безопасности, если злоумышленнику удастся поместить эксплойт в поврежденную область памяти.
 
 ## <a name="rule-description"></a>Описание правила
 
-Исключение CSE указывает на то, что состояние процесса было повреждено, и не перехватывается системой. В случае повреждения состояния общий обработчик перехватывает это исключение, только если вы пометили метод соответствующим атрибутом `HandleProcessCorruptedStateExceptions` . По умолчанию [среда CLR](/dotnet/standard/clr) не вызывает обработчики catch для исключений CSE.
+Исключение CSE указывает на то, что состояние процесса было повреждено, и не перехватывается системой. В случае повреждения состояния общий обработчик только перехватывает исключение, если вы пометили метод <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName> атрибута. По умолчанию [Common Language Runtime (CLR)](/dotnet/standard/clr) не вызывает обработчики catch для исключений CSE.
 
-Позволить процессу завершиться сбоем безопаснее, чем перехватывать исключения этого типа, так как даже код ведения журнала может дать злоумышленникам возможность воспользоваться ошибками, приводящими к повреждению памяти.
+Самое надежное — в том, чтобы разрешить процессу завершиться сбоем без перехвата таких исключений. Даже код ведения журнала может дать злоумышленникам возможность воспользоваться ошибки повреждения памяти.
 
-Это предупреждение срабатывает при перехвате исключений CSE с помощью общего обработчика, который перехватывает все исключения, такого как catch(исключение) или catch(без указания исключения).
+Это предупреждение срабатывает при перехвате исключений CSE с помощью общего обработчика, который перехватывает все исключения, например, `catch (System.Exception e)` или `catch` без параметра исключения.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
 Чтобы устранить это предупреждение, выполните одно из следующих действий.
 
-- Удалите атрибут `HandleProcessCorruptedStateExceptions`. При этом восстанавливается поведение среды выполнения по умолчанию, при котором исключения CSE не передаются в обработчики catch.
+- Удалите атрибут <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>. При этом восстанавливается поведение среды выполнения по умолчанию, при котором исключения CSE не передаются в обработчики catch.
 
-- Удалите общий обработчик catch и используйте обработчики, перехватывающие исключения определенных типов. Сюда могут входить CSE при условии, что можно безопасно обрабатывать код обработчика (такие случаи редки).
+- Удалите общий обработчик catch и используйте обработчики, перехватывающие исключения определенных типов. Сюда могут входить CSE, при условии, что можно безопасно обрабатывать код обработчика (такие случаи редки).
 
-- Заново создать CSE в обработчике catch, что гарантирует исключение передается вызывающему объекту и вызвать завершение выполняющегося процесса.
+- Заново создать CSE в обработчике catch, который передает исключение вызывающему объекту и следует вызвать завершение выполняющегося процесса.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 
@@ -58,7 +57,7 @@ ms.locfileid: "53821864"
 
 ```csharp
 [HandleProcessCorruptedStateExceptions]
-// Method to handle and log CSE exceptions.
+// Method that handles CSE exceptions.
 void TestMethod1()
 {
     try
@@ -67,14 +66,14 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error.
+        // Handle exception.
     }
 }
 ```
 
-### <a name="solution-1"></a>Решение 1
+### <a name="solution-1---remove-the-attribute"></a>Решение 1 - удалите атрибут
 
-Удаление атрибута HandleProcessCorruptedExceptions приводит к тому, что исключения не обрабатываются.
+Удаление <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибут гарантирует, что поврежденного состояния данного метода не обрабатываются.
 
 ```csharp
 void TestMethod1()
@@ -83,18 +82,14 @@ void TestMethod1()
     {
         FileStream fileStream = new FileStream("name", FileMode.Create);
     }
-    catch (IOException e)
+    catch (Exception e)
     {
-        // Handle error.
-    }
-    catch (UnauthorizedAccessException e)
-    {
-        // Handle error.
+        // Handle exception.
     }
 }
 ```
 
-### <a name="solution-2"></a>Решение 2
+### <a name="solution-2---catch-specific-exceptions"></a>Решение 2 — перехватывать определенные исключения
 
 Удалите общий обработчик catch и перехватывайте только исключения определенных типов.
 
@@ -107,20 +102,21 @@ void TestMethod1()
     }
     catch (IOException e)
     {
-        // Handle error.
+        // Handle IOException.
     }
     catch (UnauthorizedAccessException e)
     {
-        // Handle error.
+        // Handle UnauthorizedAccessException.
     }
 }
 ```
 
-### <a name="solution-3"></a>Решение 3
+### <a name="solution-3---rethrow"></a>Решение 3 — rethrow
 
 Заново создать исключение.
 
 ```csharp
+[HandleProcessCorruptedStateExceptions]
 void TestMethod1()
 {
     try
@@ -129,7 +125,7 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error.
+        // Rethrow the exception.
         throw;
     }
 }

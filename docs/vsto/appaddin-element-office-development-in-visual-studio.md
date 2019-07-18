@@ -2,7 +2,6 @@
 title: '&lt;appAddin&gt; элемент (Разработка решений Office в Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdba74f7022ec73cfd6d52c386e8a4594aa6ca7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2116576acb06e6291749d9c0176fcf4ebb426739
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953248"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; элемент (Разработка решений Office в Visual Studio)
   **AppAddin** элемент `vstov4` пространство имен хранит сведения о настройках для надстроек VSTO.
@@ -42,7 +41,7 @@ ms.locfileid: "53905443"
 
  **AppAddin** элемент имеет следующие атрибуты.
 
-|Атрибут|Описание:|
+|Атрибут|Описание|
 |---------------|-----------------|
 |**Приложения**|Обязательный. Идентифицирует приложение Microsoft Office. Он может иметь одно из следующих значений: Excel, InfoPath, Outlook, PowerPoint, Project, Visio или Word.|
 |**loadBehavior**|Необязательный параметр. По умолчанию **loadBehavior** можно включить, задав этого значения. Для отладки надстройку VSTO можно отключить, задав значение 2. Дополнительные сведения см. в таблице, в [записи реестра для надстроек VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|
@@ -61,7 +60,7 @@ ms.locfileid: "53905443"
 
 ## <a name="vsto-add-in-example"></a>Пример надстройки VSTO
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В следующем примере кода показано **appAddin** элементов в решении Outlook, развернутом с помощью [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера, приведенного в [манифесты приложений для решений Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Код

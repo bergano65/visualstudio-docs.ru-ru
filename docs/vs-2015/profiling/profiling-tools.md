@@ -1,27 +1,22 @@
 ---
 title: Средства профилирования | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnosticshub.overview
 ms.assetid: 0fb6cd5d-e16a-4526-84a5-19e63c625bc5
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 380e98a8cd52fe77486dae245eee910a65a41057
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782106"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686283"
 ---
 # <a name="profiling-tools"></a>Средства профилирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "51782106"
 ## <a name="memory-usage"></a>Использование памяти  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- С помощью средства **Использование памяти** вы сможете находить утечки памяти и выявлять неэффективное использование памяти во время отладки. Это средство можно использовать для создания снимков управляемой и собственной памяти в куче. Это средство работает с классическими приложениями, универсальными приложениями Windows и приложениями ASP.NET. Средство **Использование памяти** можно запустить из окна **Средства диагностики** во время отладки (**Отладка / Windows / Показать средства диагностики**) или вне отладчика (**Отладка / Профилировщик производительности...**). Дополнительные сведения см. в статьях [Memory Usage](../profiling/memory-usage.md) (Использование памяти) и [Memory Usage without Debugging](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) (Использование памяти без отладки).  
+ С помощью средства **Использование памяти** вы сможете находить утечки памяти и выявлять неэффективное использование памяти во время отладки. Это средство можно использовать для создания снимков управляемой и собственной памяти в куче. Это средство работает с классическими приложениями, универсальными приложениями Windows и приложениями ASP.NET. Средство **Использование памяти** можно запустить из окна **Средства диагностики** во время отладки (**Отладка / Windows / Показать средства диагностики**) или вне отладчика (**Отладка / Профилировщик производительности...**). Дополнительные сведения см. в статьях [Memory Usage](../profiling/memory-usage.md) (Использование памяти) и [Memory Usage without Debugging](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) (Использование памяти без отладки).  
   
 ## <a name="cpu-usage"></a>Использование ЦП  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
@@ -84,7 +79,7 @@ ms.locfileid: "51782106"
  [IntelliTrace](../debugger/intellitrace.md) позволяет записывать определенные события, проверять данные в окне **Локальные** во время событий отладчика и вызовов функций, а также отлаживать трудновоспроизводимые ошибки.  IntelliTrace является главным образом средством отладки, однако оно также предоставляет сведения, которые можно использовать для анализа производительности. Это средство можно использовать только в Visual Studio Enterprise с классическими приложениями, универсальными приложениями Windows и приложениями ASP.NET C#. IntelliTrace можно открыть из окна **Средства диагностики** во время отладки (**Отладка / Windows / Показать средства диагностики**).  
   
 ## <a name="profiling-in-production"></a>Профилирование в рабочей среде  
- Для сбора сведений о профиле ЦП профилирование в рабочей среде рекомендуется выполнять из [командной строки с помощью vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) . В целях поддержки удаленного профилирования в службе приложений Azure профилирование выполняется через [обозреватель серверов или портал Kudu](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/).  
+ Для сбора сведений о профиле ЦП профилирование в рабочей среде рекомендуется выполнять из [командной строки с помощью vsperf.exe](../profiling/using-the-profiling-tools-from-the-command-line.md) . В целях поддержки удаленного профилирования в службе приложений Azure профилирование выполняется через [обозреватель серверов или портал Kudu](https://azure.microsoft.com/blog/remote-profiling-support-in-azure-app-service/).  
   
 ## <a name="which-tool-should-i-use"></a>Какие средства следует использовать?  
  Ниже приведена таблица со списком различных средств, предлагаемых в Visual Studio, и различных типов проектов, в которых эти средства можно использовать.  
@@ -101,8 +96,5 @@ ms.locfileid: "51782106"
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Нет|да для HTML, нет для XAML|Нет|  
 |[Память JavaScript](../profiling/javascript-memory.md)|Нет|да для HTML, нет для XAML|Нет|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)
-
-
-

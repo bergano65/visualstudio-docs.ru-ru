@@ -1,47 +1,50 @@
 ---
 title: IDebugReference2::GetSize | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugReference2::GetSize
 helpviewer_keywords:
 - IDebugReference2::GetSize
 ms.assetid: a404ddd9-d940-4513-97cd-f52b8ab6a560
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c475c1ecbcf6ff0dbabe498fa69c25178054c589
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5512a9d07c859dc548f91611bfc8d0c05621c0ff
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920197"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329779"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
-Получает размер в байтах, значение ссылки. Зарезервировано для будущего использования.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT GetSize (   
-   DWORD* pdwSize  
-);  
-```  
-  
-```csharp  
-int GetSize (   
-   out uint pdwSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pdwSize`  
- [out] Возвращает размер в байтах, значение ссылки.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Всегда возвращает значение `E_NOTIMPL`.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
+Получает размер в байтах, значение ссылки. Зарезервировано для будущего использования.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetSize ( 
+   DWORD* pdwSize
+);
+```
+
+```csharp
+int GetSize ( 
+   out uint pdwSize
+);
+```
+
+## <a name="parameters"></a>Параметры
+`pdwSize`\
+[out] Возвращает размер в байтах, значение ссылки.
+
+## <a name="return-value"></a>Возвращаемое значение
+ Всегда возвращает значение `E_NOTIMPL`.
+
+## <a name="see-also"></a>См. также
+- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

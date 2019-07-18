@@ -1,7 +1,6 @@
 ---
 title: Сочетания клавиш и кнопок мыши в конструкторе классов
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.classdetails.window
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5cce869c2dacb0b6b4bc3e4031860b6772a9a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37c56a14e5ac4358be53baa41094c23253608bbb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826738"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043036"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Сочетания клавиш и кнопок мыши в схеме классов и окне "Сведения о классах"
 
@@ -29,7 +28,7 @@ ms.locfileid: "53826738"
 
 В схемах классов поддерживаются следующие действия мыши.
 
-|Комбинации мыши|Контекст|Описание|
+|Комбинации мыши|Контекст|ОПИСАНИЕ|
 | - |-------------|-----------------|
 |Двойной щелчок|Shape - элементы|Открывает редактор исходного кода.|
 |Двойной щелчок|Соединитель без описания операций|Интерфейс развертывания и свертывания без описания операций.|
@@ -57,7 +56,7 @@ ms.locfileid: "53826738"
 
 В схемах классов поддерживаются следующие действия клавиатуры.
 
-|Ключ|Контекст|Описание|
+|Ключ|Контекст|ОПИСАНИЕ|
 |---------|-------------|-----------------|
 |**Клавиши со стрелками**|Внутри фигур типа|Древовидная навигация по содержимому фигуры (поддерживается обтекание фигуры). Клавиши влево и вправо развертывают и свертывают текущий элемент, если это возможно, перемещают пользователя к родительскому элементу, если нет (подробные сведения см. в описании дерева навигации).|
 |**Клавиши со стрелками**|Фигуры верхнего уровня|Перемещение фигур на схеме.|
@@ -104,3 +103,6 @@ ms.locfileid: "53826738"
 ## <a name="see-also"></a>См. также
 
 - [Создание и настройка членов типа](creating-and-configuring-type-members.md)
+- [Практическое руководство. Работа только с клавиатуры](../reference/how-to-use-the-keyboard-exclusively.md)
+- [Сочетания клавиш по умолчанию в Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md)
+- [Сочетания клавиш в Blend](../../designers/keyboard-shortcuts-in-blend.md)

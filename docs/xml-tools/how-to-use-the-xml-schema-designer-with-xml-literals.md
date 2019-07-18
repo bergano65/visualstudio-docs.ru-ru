@@ -1,46 +1,47 @@
 ---
-title: Как выполнить Использование конструктора схем XML с XML-литералами
+title: Практическое руководство. Использование конструктора схем XML с XML-литералами
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1483077142d1c60d3309458aedbe1abd7e2e2b00
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e92cbdca3ac2c5c366ec054ba79f2e7324986c1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001816"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Как выполнить Использовать конструктор XML-схем с XML-литералами
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Практическое руководство. Использование конструктора схем XML с литералами XML
 
 В этом разделе описывается процесс просмотра схемы, связанной с XML-литералом в проекте Visual Basic.
 
-## <a name="to-create-a-new-visual-basic-console-application-project"></a>Создание нового проекта приложения командной строки Visual Basic
+## <a name="create-a-new-visual-basic-project"></a>Создайте новый проект Visual Basic
 
-1.  Запустите Visual Studio.
+1. Запустите Visual Studio.
 
-2.  Из **файл** меню, выберите **New**, а затем выберите **проекта**. Откроется диалоговое окно **Новый проект** . Для **типы проектов**выберите **другие языки** , а затем выберите **Visual Basic**. Для **шаблоны**, выберите консольное приложение. Затем введите `XMLLiterals` в **имя** поля и расположение проекта в **расположение** поля. Нажмите кнопку **ОК**.
+2. Создать новый Visual Basic **консольное приложение** проект с именем **XMLLiterals**.
 
-     Создан новый проект. Проект XMLLiterals содержит один исходный файл Visual Basic, *Module1.vb*.
+     Новый проект содержит один исходный файл Visual Basic, *Module1.vb*.
 
-## <a name="to-add-an-existing-xsd-file-to-the-project"></a>Добавление существующего XSD-файла в проект
+## <a name="add-an-existing-xsd-file"></a>Добавление существующего XSD-файла
 
-1.  Откройте новый текстовый файл в блокноте. Скопируйте образец кода XML-схемы из [схема заказа на покупку](../xml-tools/sample-xsd-file-simple-schema.md) и вставьте его в файл.
+1. Откройте новый текстовый файл в блокноте. Скопируйте образец кода XML-схемы из [схема заказа на покупку](../xml-tools/sample-xsd-file-simple-schema.md) и вставьте его в файл.
 
-2.  Сохраните файл в любом местоположении под именем *PurchaseOrderSchema.xsd*.
+2. Сохраните файл в любом местоположении под именем *PurchaseOrderSchema.xsd*.
 
-3.  В **обозревателе решений**, щелкните правой кнопкой мыши имя проекта, выберите **добавить**, а затем выберите **существующий элемент**. **Добавить существующий элемент** откроется диалоговое окно. Перейдите к *PurchaseOrderSchema.xsd* файл, выберите его и нажмите кнопку **добавить**.
+3. В **обозревателе решений**, щелкните правой кнопкой мыши имя проекта, выберите **добавить**, а затем выберите **существующий элемент**. **Добавить существующий элемент** откроется диалоговое окно. Перейдите к *PurchaseOrderSchema.xsd* файл, выберите его и нажмите кнопку **добавить**.
 
      Проект XMLLiterals теперь содержит два файла: *Module1.vb* и *PurchaseOrderSchema.xsd*.
 
-## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Добавление кода Visual Basic с XML-литералом на основе XSD-файла, включенного в проект
+## <a name="add-code"></a>Добавление кода
+
+Добавление кода Visual Basic с помощью XML-литерала, на основании XSD-файл, включенный в проект:
 
 1. Замените код в *Module1.vb* файла следующим кодом:
 
@@ -73,4 +74,4 @@ ms.locfileid: "53863398"
 
 2. Щелкните правой кнопкой мыши любой узел XML в XML-литерале или импорте пространства имен XML и выберите **Показать в обозревателе схем**.
 
-    **Обозреватель XML-схем** будет отображен файл Visual Basic с XML-литерал, связанный с набором схемы XML.
+   **Обозреватель XML-схем** будет отображен файл Visual Basic с XML-литерал, связанный с набором схемы XML.

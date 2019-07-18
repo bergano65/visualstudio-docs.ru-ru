@@ -1,22 +1,21 @@
 ---
 title: Создание и изменение файла схемы XSD
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 91b10cd7-c0cd-4e5a-a46b-4fed60dff542
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 015523e35f3593523ee362faeb6aa544139e1103
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e89b09c3f868a3a1c67a0ca1dd9a42f73639d598
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948934"
 ---
-# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Как выполнить Создание и изменение файла схемы XSD
+# <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Практическое руководство. Создание и изменение файла схемы XSD
 
 Данный раздел описывает процесс создания нового файла XML-схемы (XSD) и добавления содержимого в XSD-файл.
 
@@ -30,14 +29,10 @@ ms.locfileid: "53855511"
 
 ## <a name="to-edit-a-file"></a>Редактирование файла
 
-1. Выберите **использование редактора XML для просмотра и изменения базового файла XML-схемы** ссылку в начальном представлении.
+1. Выберите **редактор XML используется для просмотра и изменения базового файла XML-схемы** ссылку в начальном представлении.
 
-   Откроется редактор XML с новым файлом.
+   Откроется редактор XML новому открытому файлу.
 
 2. Скопируйте образец кода XML-схемы из [схемы заказа на покупку](../xml-tools/sample-xsd-file-simple-schema.md) и вставьте его вместо кода, который был добавлен новый XSD-файл по умолчанию.
 
    **Обозреватель XML-схем** обновляется с новым набором схем.
-
-## <a name="see-also"></a>См. также
-
-- [Работа с XML-данных](../xml-tools/working-with-xml-data.md)

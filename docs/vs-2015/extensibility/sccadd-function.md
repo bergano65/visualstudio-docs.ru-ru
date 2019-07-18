@@ -1,14 +1,9 @@
 ---
 title: Функция SccAdd | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 29703be15369649df2208c1521a6636e5ccbefb9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: daac15bbb7829d510db17ba02057a2dc86c55990
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432509"
 ---
 # <a name="sccadd-function"></a>Функция SccAdd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Добавить операция выполнена успешно.|  
 |SCC_E_FILEALREADYEXISTS|Выбранный файл уже существует в системе управления версиями.|  
@@ -85,7 +80,7 @@ SCCRTN SccAdd(
  Обычные `fOptions` здесь заменяются массива, `pfOptions`, с одним `LONG` параметр спецификации каждого файла. Это потому, что тип файла может отличаться от файла к файлу.  
   
 > [!NOTE]
->  Не допускается указывать оба `SCC_FILETYPE_TEXT` и `SCC_FILETYPE_BINARY` параметры для одного файла, но допускается указывать ни одного. Установка не совпадает со значением параметра `SCC_FILETYPE_AUTO`, в этом случае система управления подключаемый модуль автоматически определяют тип файла.  
+> Не допускается указывать оба `SCC_FILETYPE_TEXT` и `SCC_FILETYPE_BINARY` параметры для одного файла, но допускается указывать ни одного. Установка не совпадает со значением параметра `SCC_FILETYPE_AUTO`, в этом случае система управления подключаемый модуль автоматически определяют тип файла.  
   
  Ниже приведен список флагов, используемых в `pfOptions` массива:  
   
@@ -102,4 +97,3 @@ SCCRTN SccAdd(
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля системы управления версиями](../extensibility/source-control-plug-in-api-functions.md)
-

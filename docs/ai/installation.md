@@ -7,16 +7,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5101d6b6ddca4a86e635fff70b52429888001a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821105"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821410"
 ---
 # <a name="installation"></a>Установка
 
@@ -26,7 +24,7 @@ ms.locfileid: "53821105"
 
 Это расширение работает с Visual Studio 2015 и Visual Studio 2017 выпуска Community или более высокого уровня.
 
-Скачать эти средства можно с сайта [Visual Studio Marketplace](http://aka.ms/vstoolsforai) или из Visual Studio.
+Скачать эти средства можно с сайта [Visual Studio Marketplace](https://aka.ms/vstoolsforai) или из Visual Studio.
 
 1. Выберите **Сервис** > **Расширения и обновления**.
 
@@ -89,26 +87,28 @@ Python является основным языком программирова
 Затем необходимо проверить, правильно ли установлен Python 3.5, и обновить систему pip до последней версии, выполнив в терминале следующие команды:
 
 - **Windows**
-    ```cmd
-    C:\Users\test>python -V
-    Python 3.5.4
 
-    C:\Users\test>pip3.5 -V
-    pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+  ```cmd
+  C:\Users\test>python -V
+  Python 3.5.4
 
-    C:\Users\test>python -m pip install -U pip
-    ```
+  C:\Users\test>pip3.5 -V
+  pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+
+  C:\Users\test>python -m pip install -U pip
+  ```
 
 - **macOS**
-    ```bash
-    MyMac:~ test$ python3.5 -V
-    Python 3.5.4
 
-    MyMac:~ test$ pip3.5 -V
-    pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+  ```bash
+  MyMac:~ test$ python3.5 -V
+  Python 3.5.4
 
-    MyMac:~ test$ python3.5 -m pip install -U pip
-    ```
+  MyMac:~ test$ pip3.5 -V
+  pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+
+  MyMac:~ test$ python3.5 -m pip install -U pip
+  ```
 
 ### <a name="python-on-visual-studio"></a>Python в Visual Studio
 
@@ -128,7 +128,7 @@ pip3.5 install -U numpy scipy
 ```
 
 > [!NOTE]
-> Приведенная выше команда обновляет существующие старые и неофициальные пакеты NumPy и SciPy (например, пакеты сторонних разработчиков для Windows со страницы http://www.lfd.uci.edu/~gohlke/pythonlibs/) до последних официальных версий пакетов.
+> Приведенная выше команда обновляет существующие старые и неофициальные пакеты NumPy и SciPy (например, пакеты сторонних разработчиков для Windows со страницы http://www.lfd.uci.edu/~gohlke/pythonlibs/ ) до последних официальных версий пакетов.
 
 ### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft Cognitive Toolkit (CNTK)
 
@@ -161,13 +161,16 @@ pip3.5 install -U numpy scipy
 Чтобы установить MXNet, выполните в терминале следующую команду:
 
 - С GPU:
-    ```bash
-    pip3.5 install mxnet-cu80==0.12.0
-    ```
+
+  ```bash
+  pip3.5 install mxnet-cu80==0.12.0
+  ```
+
 - Без GPU:
-    ```bash
-    pip3.5 install mxnet==0.12.0
-    ```
+
+  ```bash
+  pip3.5 install mxnet==0.12.0
+  ```
 
 ### <a name="keras"></a>Keras
 
@@ -199,23 +202,34 @@ pip3.5 install Theano==0.9.0
 Чтобы установить PyTorch, выполните в терминале следующую команду:
 
 - **Windows**
-    - Официального пакета wheel пока нет. Вы можете скачать [пакет PyTorch Anaconda](https://anaconda.org/pytorch/repo?type=all) сторонних разработчиков.
-    - Распакуйте его в домашнем каталоге, например "C:\Users\test\pytorch".
-    - Добавьте каталог "C:\Users\test\pytorch\Lib\site-packages" в переменную среды %PYTHONPATH%.
+
+  Официального пакета wheel пока нет. Можно загрузить сторонний пакет из [Anaconda](https://anaconda.org/pytorch/repo?type=all) или [Калифорнийского университета](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
+
+  - Распакуйте его в домашнем каталоге, например *C:\Users\test\pytorch*.
+  - Добавьте каталог *C:\Users\test\pytorch\Lib\site-packages* в переменную среды %PYTHONPATH%.
+
+    ```bash
+    pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+    pip3 install torchvision
+    ```
 
 - **macOS**
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
-    ```
-    > [!NOTE]
-    > Двоичные файлы macOS не поддерживают CUDA. Если требуется CUDA, выполните установку из источника.
+
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
+  ```
+
+  > [!NOTE]
+  > Двоичные файлы macOS не поддерживают CUDA. Если требуется CUDA, выполните установку из источника.
 
 - **Linux**
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
-    ```
-    > [!NOTE]
-    > Этот пакет поддерживает как GPU, так и ЦП.
+
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
+  ```
+
+  > [!NOTE]
+  > Этот пакет поддерживает как GPU, так и ЦП.
 
 Наконец, установите torchvision в ОС, отличных от Windows:
 

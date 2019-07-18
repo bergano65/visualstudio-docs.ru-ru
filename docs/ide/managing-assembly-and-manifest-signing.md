@@ -1,7 +1,6 @@
 ---
 title: Управление подписыванием сборок и манифестов
 ms.date: 02/17/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3795c2887e9d7516f3e9f781e42a2629e2a0b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538245"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Управление подписыванием сборок и манифестов
 
@@ -32,7 +31,7 @@ ms.locfileid: "53927575"
 Сведения о подписи сборок в проектах Visual C++ см. в разделе [Сборки со строгими именами (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
-> Подписывание с использованием строгих имен не защищает от реконструирования сборки. Сведения о защите от реконструирования см. в статье о программе [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
+> Подписывание с использованием строгих имен не защищает от реконструирования сборки. Сведения о защите от реконструирования см. в статье о программе [Dotfuscator Community](dotfuscator/index.md).
 
 ## <a name="asset-types-and-signing"></a>Типы активов и подписывание
 
@@ -58,7 +57,7 @@ ms.locfileid: "53927575"
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Практическое руководство. Подписывание сборки в Visual Studio
 
-Для подписи приложения или компонента используется вкладка **Подписывание** окна свойств проекта (щелкните правой кнопкой мыши узел проекта в **обозревателе решений** и выберите пункт **Свойства**, введите **свойства проекта** в окне **Быстрый запуск** либо нажмите клавиши **ALT**+**ВВОД** в **обозревателе решений**). Выберите вкладку **Подписывание**, а затем установите флажок **Подписать сборку**.
+Для подписи приложения или компонента используется вкладка **Подписывание** окна свойств проекта (в **обозревателе решений** щелкните правой кнопкой мыши узел проекта и выберите пункт **Свойства**). Выберите вкладку **Подписывание**, а затем установите флажок **Подписать сборку**.
 
 Укажите файл ключа. Если вы решили создать файл ключа, новые файлы ключей всегда имеют формат *PFX*. Вам нужно ввести имя пользователя и пароль для нового файла.
 

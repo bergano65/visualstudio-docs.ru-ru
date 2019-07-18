@@ -1,5 +1,5 @@
 ---
-title: Фиксация внутрипроцессных изменений в элементах управления с привязкой к данным до сохранения данных
+title: Фиксация внутрипроцессных изменений в элементах управления с привязкой к данным перед сохранением
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,16 +15,15 @@ helpviewer_keywords:
 ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c548cd7a91683da88a760e28831a0b13af433c5
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
-ms.translationtype: MTE95
+ms.openlocfilehash: 129ab5be6264f566de284b2736664c8c0d8c07d7
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154209"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261842"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Фиксация внутрипроцессных изменений в элементах управления с привязкой к данным до сохранения данных
 
@@ -41,12 +40,12 @@ ms.locfileid: "54154209"
 
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>Для вызова EndEdit для всех компонентов BindingSource в форме
 
-1.  Добавьте следующий код в форму, которая содержит <xref:System.Windows.Forms.BindingSource> компонентов.
+1. Добавьте следующий код в форму, которая содержит <xref:System.Windows.Forms.BindingSource> компонентов.
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.vb)]
 
-2.  Добавьте следующую строку кода непосредственно перед любыми вызовами, чтобы сохранить данные формы ( `TableAdapterManager.UpdateAll()` метод):
+2. Добавьте следующую строку кода непосредственно перед любыми вызовами, чтобы сохранить данные формы ( `TableAdapterManager.UpdateAll()` метод):
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]

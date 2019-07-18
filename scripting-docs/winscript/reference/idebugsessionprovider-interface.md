@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IDebugSessionProvider | Документы Microsoft
+title: Интерфейс IDebugSessionProvider | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e61b1e5e794c68e34250f958cdda0f50b68334c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fe73901d92cb42675ff9ec981bd9b90dcca5d546
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979052"
 ---
 # <a name="idebugsessionprovider-interface"></a>Интерфейс IDebugSessionProvider
-Это основной интерфейс, предоставляемый отладчиком интегрированной среды разработки для узла и языка инициировал отладки. Он устанавливает сеанс отладки для выполняемого приложения. Этот интерфейс реализуется диспетчера отладки.  
+Основной интерфейс, предоставленный с помощью отладчика интегрированной среды разработки для реализации узлов и языка инициировать отладки. Он устанавливает сеанс отладки для запущенного приложения. Этот интерфейс реализуется диспетчером отладки.  
   
  Помимо методов, наследуемых от `IUnknown`, `IDebugSessionProvider` интерфейс предоставляет следующие методы.  
   

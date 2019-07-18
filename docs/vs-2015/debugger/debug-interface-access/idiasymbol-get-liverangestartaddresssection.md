@@ -1,14 +1,9 @@
 ---
 title: IDiaSymbol::get_liveRangeStartAddressSection | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 892b80ff-5957-4233-b4d7-6144167be289
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: db95230f87d13f116b2fadbff23a43af497c0918
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: df3faba1309b5a26316b615042492f96b9401a01
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788866"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64791449"
 ---
 # <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_liveRangeStartAddressSection ( 
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
   
 > [!NOTE]
->  Возвращен код ошибки означает, что символ не имеет сведения о динамической диапазона.  
+> Возвращен код ошибки означает, что символ не имеет сведения о динамической диапазона.  
   
 ## <a name="remarks"></a>Примечания  
  Адрес, образованное раздела и смещение — это начало диапазона, в котором символ является допустимой.  
@@ -54,14 +49,11 @@ HRESULT get_liveRangeStartAddressSection ( 
  Чтобы получить смещения часть адреса, используйте [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: Dia2.h  
+ Заголовок: dia2.h  
   
  Библиотека: diaguids.lib  
   
- Библиотеки DLL: msdia100.dll  
+ DLL: msdia100.dll  
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

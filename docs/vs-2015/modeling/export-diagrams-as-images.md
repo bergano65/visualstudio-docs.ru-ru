@@ -1,12 +1,9 @@
 ---
 title: Экспорт схем в виде изображений | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
@@ -15,13 +12,13 @@ ms.assetid: 0df68943-4c60-4f00-b1e8-b1cdee13762e
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 31b7527484bf377433a7fd80b6ccb8e87722c40d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da424c2250c327a04a9f878e6bd953a664dcc4d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181747"
 ---
 # <a name="export-diagrams-as-images"></a>Экспорт схем в виде изображений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,29 +29,26 @@ ms.locfileid: "51794432"
   
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Копирование схемы или ее части в другое приложение  
   
-1.  Выделите на схеме некоторые или все фигуры.  
+1. Выделите на схеме некоторые или все фигуры.  
   
-2.  Щелкните правой кнопкой мыши выбранные параметры и нажмите кнопку **копирования**.  
+2. Щелкните правой кнопкой мыши выбранные параметры и нажмите кнопку **копирования**.  
   
-3.  Вставьте выделенные элементы в нужное приложение.  
+3. Вставьте выделенные элементы в нужное приложение.  
   
 ### <a name="to-export-an-image-as-part-of-an-automated-process"></a>Экспорт изображения в рамках автоматического процесса  
   
--   См. в разделе [Экспорт UML-схемы в файлы изображений](../modeling/export-uml-diagrams-to-image-files.md).  
+- См. в разделе [Экспорт UML-схемы в файлы изображений](../modeling/export-uml-diagrams-to-image-files.md).  
   
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Сохранение схемы моделирования в виде XPS-файла  
   
-1.  На **файл** меню, щелкните **печати** открыть **печати** диалоговое окно.  
+1. На **файл** меню, щелкните **печати** открыть **печати** диалоговое окно.  
   
-2.  В **имя** выберите **средство записи документов XPS Microsoft**, а затем нажмите кнопку **ОК**.  
+2. В **имя** выберите **средство записи документов XPS Microsoft**, а затем нажмите кнопку **ОК**.  
   
-3.  В **сохраните файл как** » диалогового окна «Сохранить файл как **документ XPS (\*.xps)** файл.  
+3. В **сохраните файл как** » диалогового окна «Сохранить файл как **документ XPS (\*.xps)** файл.  
   
 ## <a name="net-framework-security"></a>Безопасность платформы .NET Framework  
   
 ## <a name="see-also"></a>См. также  
  [Создание моделей для приложения](../modeling/create-models-for-your-app.md)   
  [Общий доступ к моделям и экспорт схем](../modeling/share-models-and-exporting-diagrams.md)
-
-
-

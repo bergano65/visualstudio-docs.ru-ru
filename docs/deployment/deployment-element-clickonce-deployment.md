@@ -18,48 +18,47 @@ helpviewer_keywords:
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3165337a7386d90d674b42e7fd7e6f29822b284
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 90168dd760ba5619e2d50c864f54122b01ed66fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928932"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;развертывание&gt; элемент (развертывание ClickOnce)
-Идентифицирует атрибуты, используемые для развертывания обновлений и доступа к системе.  
+Идентифицирует атрибуты, используемые для развертывания обновлений и доступа к системе.
 
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Синтаксис
 
-```xml  
+```xml
 
-      <deployment   
-   install  
-   minimumRequiredVersion  
-   mapFileExtensions  
-   disallowUrlActivation  
-   trustUrlParameters  
->   
-   <subscription>   
-         <update>   
-            <beforeApplicationStartup/>   
-            <expiration  
-               maximumAge  
-               unit  
-            />  
-         </update>    
-   </subscription>   
-   <deploymentProvider   
-      codebase   
-   />   
-</deployment>  
-```  
+      <deployment
+   install
+   minimumRequiredVersion
+   mapFileExtensions
+   disallowUrlActivation
+   trustUrlParameters
+>
+   <subscription>
+         <update>
+            <beforeApplicationStartup/>
+            <expiration
+               maximumAge
+               unit
+            />
+         </update>
+   </subscription>
+   <deploymentProvider
+      codebase
+   />
+</deployment>
+```
 
-## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- Элемент `deployment` является обязательным и находится в пространстве имен `urn:schemas-microsoft-com:asm.v1` . Элемент имеет перечисленные ниже атрибуты.  
-
+## <a name="elements-and-attributes"></a>Элементы и атрибуты
+ Элемент `deployment` является обязательным и находится в пространстве имен `urn:schemas-microsoft-com:asm.v1` . Элемент имеет перечисленные ниже атрибуты.
 
 | Атрибут | Описание |
 |--------------------------| - |
@@ -69,59 +68,58 @@ ms.locfileid: "53906934"
 | `disallowUrlActivation` | Необязательный параметр. По умолчанию — `false`. Если `true`, предотвращает установленного приложения при запуске, щелкнув URL-адрес или введя URL-адреса в Internet Explorer. Если `install` атрибут не задан, этот атрибут игнорируется. |
 | `trustURLParameters` | Необязательный параметр. По умолчанию — `false`. Если `true`, позволяет URL-адрес должен содержать параметры строки запроса, которые передаются в приложение, много like аргументы командной строки передаются в приложение командной строки. Дополнительные сведения см. в разделе [Как извлечь сведения строки запроса в интернет-приложении ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Если `disallowUrlActivation` атрибут `true`, `trustUrlParameters` должен быть исключен из манифеста, либо явно задано значение `false`. |
 
- `deployment` Элемент также содержит следующие дочерние элементы.  
+ `deployment` Элемент также содержит следующие дочерние элементы.
 
-## <a name="subscription"></a>subscription  
- Необязательный параметр. Содержит `update` элемент. У элемента `subscription` нет атрибутов. Если `subscription` элемент не существует, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения никогда не будет проверять наличие обновлений. Если `install` атрибут `deployment` элемент является `false`, `subscription` элемент обрабатывается, так как [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение, запускаемое из сети, всегда использует последнюю версию.  
+## <a name="subscription"></a>subscription
+ Необязательный параметр. Содержит `update` элемент. У элемента `subscription` нет атрибутов. Если `subscription` элемент не существует, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения никогда не будет проверять наличие обновлений. Если `install` атрибут `deployment` элемент является `false`, `subscription` элемент обрабатывается, так как [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение, запускаемое из сети, всегда использует последнюю версию.
 
-## <a name="update"></a>обновить  
- Обязательный. Этот элемент является дочерним элементом `subscription` элемент и содержит либо `beforeApplicationStartup` или `expiration` элемент. `beforeApplicationStartup` и `expiration` невозможно указать одновременно в одном манифесте развертывания.  
+## <a name="update"></a>обновить
+ Обязательный. Этот элемент является дочерним элементом `subscription` элемент и содержит либо `beforeApplicationStartup` или `expiration` элемент. `beforeApplicationStartup` и `expiration` невозможно указать одновременно в одном манифесте развертывания.
 
- У элемента `update` нет атрибутов.  
+ У элемента `update` нет атрибутов.
 
-## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
- Необязательный параметр. Этот элемент является дочерним элементом `update` элемента и не имеет атрибутов. Когда `beforeApplicationStartup` существует элемент, приложение будет заблокирован при [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] проверяет наличие обновлений, если клиент находится в сети. Если этот элемент не существует, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] будет проверять наличие обновлений, основываясь на значениях, заданных для `expiration` элемент. `beforeApplicationStartup` и `expiration` невозможно указать одновременно в одном манифесте развертывания.  
+## <a name="beforeapplicationstartup"></a>beforeApplicationStartup
+ Необязательный параметр. Этот элемент является дочерним элементом `update` элемента и не имеет атрибутов. Когда `beforeApplicationStartup` существует элемент, приложение будет заблокирован при [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] проверяет наличие обновлений, если клиент находится в сети. Если этот элемент не существует, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] будет проверять наличие обновлений, основываясь на значениях, заданных для `expiration` элемент. `beforeApplicationStartup` и `expiration` невозможно указать одновременно в одном манифесте развертывания.
 
-## <a name="expiration"></a>expiration  
- Необязательный параметр. Этот элемент является дочерним элементом `update` элемент, и не имеет дочерних элементов. `beforeApplicationStartup` и `expiration` невозможно указать одновременно в одном манифесте развертывания. Когда происходит проверка обновлений и обнаружении обновленной версии, новая версия кэшируется во время выполнения существующей версии. Затем устанавливает новую версию при следующем запуске [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.  
+## <a name="expiration"></a>expiration
+ Необязательный параметр. Этот элемент является дочерним элементом `update` элемент, и не имеет дочерних элементов. `beforeApplicationStartup` и `expiration` невозможно указать одновременно в одном манифесте развертывания. Когда происходит проверка обновлений и обнаружении обновленной версии, новая версия кэшируется во время выполнения существующей версии. Затем устанавливает новую версию при следующем запуске [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения.
 
- `expiration` Элемент поддерживает следующие атрибуты.  
+ `expiration` Элемент поддерживает следующие атрибуты.
 
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|`maximumAge`|Обязательный. Определяет, как старый текущее обновление станет прежде чем приложение выполняет проверку обновлений. Единица времени определяется `unit` атрибута.|  
-|`unit`|Обязательный. Указывает единицу времени для `maximumAge`. Допустимые единицы измерения: `hours`, `days`, и `weeks`.|  
+|Атрибут|Описание|
+|---------------|-----------------|
+|`maximumAge`|Обязательный. Определяет, как старый текущее обновление станет прежде чем приложение выполняет проверку обновлений. Единица времени определяется `unit` атрибута.|
+|`unit`|Обязательный. Указывает единицу времени для `maximumAge`. Допустимые единицы измерения: `hours`, `days`, и `weeks`.|
 
-## <a name="deploymentprovider"></a>deploymentProvider  
- Для .NET Framework 2.0, этот элемент является обязательным, если манифест развертывания содержит `subscription` раздел. Для платформы .NET Framework 3.5 и более поздних версиях этот элемент является необязательным и по умолчанию для сервера и путь к файлу, в котором была обнаружена манифеста развертывания.  
+## <a name="deploymentprovider"></a>deploymentProvider
+ Для .NET Framework 2.0, этот элемент является обязательным, если манифест развертывания содержит `subscription` раздел. Для платформы .NET Framework 3.5 и более поздних версиях этот элемент является необязательным и по умолчанию для сервера и путь к файлу, в котором была обнаружена манифеста развертывания.
 
- Этот элемент является дочерним по отношению к элементу `deployment` и содержит следующий атрибут.  
-
+ Этот элемент является дочерним по отношению к элементу `deployment` и содержит следующий атрибут.
 
 | Атрибут | Описание |
 |------------| - |
 | `codebase` | Обязательный. Указывает расположение, как универсальный код ресурса (URI), манифест развертывания, который используется для обновления [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения. Этот элемент также позволяет переадресовывать расположение обновлений для установок на основе компакт-диска. Должен быть допустимым URI. |
 
-## <a name="remarks"></a>Примечания  
- Можно настроить ваш [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение для проверки на наличие обновлений при запуске, проверять наличие обновлений после запуска или никогда не проверять наличие обновлений. Чтобы проверить наличие обновлений при запуске, убедитесь, что `beforeApplicationStartup` элемент существует в группе `update` элемент. Сканирование на наличие обновлений после запуска, убедитесь, что `expiration` элемент существует в группе `update` элемент, и что предоставлены интервалов обновления.  
+## <a name="remarks"></a>Примечания
+ Можно настроить ваш [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложение для проверки на наличие обновлений при запуске, проверять наличие обновлений после запуска или никогда не проверять наличие обновлений. Чтобы проверить наличие обновлений при запуске, убедитесь, что `beforeApplicationStartup` элемент существует в группе `update` элемент. Сканирование на наличие обновлений после запуска, убедитесь, что `expiration` элемент существует в группе `update` элемент, и что предоставлены интервалов обновления.
 
- Чтобы отключить, проверка наличия обновлений, удалите `subscription` элемент. При указании в манифесте развертывания, никогда не проверять наличие обновлений, можно по-прежнему вручную проверить наличие обновлений с помощью <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> метод.  
+ Чтобы отключить, проверка наличия обновлений, удалите `subscription` элемент. При указании в манифесте развертывания, никогда не проверять наличие обновлений, можно по-прежнему вручную проверить наличие обновлений с помощью <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> метод.
 
- Дополнительные сведения о связи deploymentProvider для обновлений, см. в разделе [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
+ Дополнительные сведения о связи deploymentProvider для обновлений, см. в разделе [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
-## <a name="examples"></a>Примеры  
- В следующем примере кода показано `deployment` элемент [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания. В примере используется `deploymentProvider` элемент, чтобы указать расположение предпочтительный обновлений.  
+## <a name="examples"></a>Примеры
+ В следующем примере кода показано `deployment` элемент [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] манифест развертывания. В примере используется `deploymentProvider` элемент, чтобы указать расположение предпочтительный обновлений.
 
-```xml  
-<deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">  
-    <subscription>  
-      <update>  
-        <expiration maximumAge="6" unit="hours" />  
-      </update>  
-    </subscription>  
-    <deploymentProvider codebase="http://www.adatum.com/MyApplication.application" />  
-  </deployment>  
-```  
+```xml
+<deployment install="true" minimumRequiredVersion="2.0.0.0" mapFileExtension="true" trustUrlParameters="true">
+    <subscription>
+      <update>
+        <expiration maximumAge="6" unit="hours" />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="http://www.adatum.com/MyApplication.application" />
+  </deployment>
+```
 
-## <a name="see-also"></a>См. также  
- [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)
+## <a name="see-also"></a>См. также
+- [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)

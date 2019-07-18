@@ -1,21 +1,20 @@
 ---
-title: Создание управляемого данными закодированного теста пользовательского интерфейса
+title: Учебник по управляемому данными закодированному тесту пользовательского интерфейса
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6202a8287232c0226104be59bdab6a15fd00d95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785450"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Создание управляемого данными закодированного теста пользовательского интерфейса
 
@@ -51,7 +50,7 @@ ms.locfileid: "53968609"
 
 4. Сложите 1 и 2, приостановите средство записи и создайте метод теста. Позже эти значения ввода пользователя будут заменены значениями из файла данных.
 
-    ![Создание метода тестирования](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![Создание метода теста](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
     Закройте построитель теста. Метод добавляется в тест.
 
@@ -59,12 +58,13 @@ ms.locfileid: "53968609"
    [TestMethod]
    public void CodedUITestMethod1()
    {
-       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       // To generate code for this test, select "Generate Code for Coded UI Test"
+       // from the shortcut menu and select one of the menu items.
        this.UIMap.AddNumbers();
    }
    ```
 
-5. С помощью метода `AddNumbers()` проверьте, выполняется ли тест. Поместите курсор в метод теста, показанный выше, откройте контекстное меню и выберите пункт **Запуск тестов**. (Сочетание клавиш: **CTRL**+**R**,**T**.)
+5. С помощью метода `AddNumbers()` проверьте, выполняется ли тест. Поместите курсор в метод теста, показанный выше, откройте контекстное меню и выберите пункт **Выполнить тесты**. (Сочетание клавиш: **CTRL**+**R**,**T**.)
 
     В окне **обозревателя тестов** отображается результат теста, показывающий, пройден тест или нет. Чтобы открыть окно обозревателя тестов, в меню **Тест** выберите пункт **Windows**, а затем пункт **Обозреватель тестов**.
 
@@ -87,23 +87,22 @@ ms.locfileid: "53968609"
    ```csharp
    public void CodedUITestMethod1()
    {
-       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
        this.UIMap.AddNumbers();
        this.UIMap.ValidateSum();
    }
    ```
 
-9. Убедитесь, что тест выполняется, с помощью метода `ValidateSum()`. Поместите курсор в метод теста, показанный выше, откройте контекстное меню и выберите пункт **Запуск тестов**. (Сочетание клавиш: **CTRL**+**R**,**T**.)
+9. Убедитесь, что тест выполняется, с помощью метода `ValidateSum()`. Поместите курсор в метод теста, показанный выше, откройте контекстное меню и выберите пункт **Выполнить тесты**. (Сочетание клавиш: **CTRL**+**R**,**T**.)
 
      На этом этапе все значения параметров заданы в соответствующих методах как константы. Теперь давайте создадим набор данных, чтобы сделать наш тест управляемым данными.
 
 ### <a name="step-2---create-a-data-set"></a>Шаг 2. Создание набора данных
 
-1.  Добавьте текстовый файл в проект dataDrivenSample с именем *data.csv*.
+1. Добавьте текстовый файл в проект dataDrivenSample с именем *data.csv*.
 
      ![Добавление в проект файла с разделителями-запятыми](../test/media/cuit_datadriven_addcsvfile.png)
 
-2.  Заполните *CSV*-файл следующими данными:
+2. Заполните *CSV*-файл следующими данными:
 
     |Num1|Num2|Sum|
     |-|-|-|
@@ -115,9 +114,9 @@ ms.locfileid: "53968609"
 
      ![Заполнение CSV-файла данными](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3.  Важно сохранить этот *CSV*-файл в правильной кодировке. В меню **File** выберите **Дополнительные параметры сохранения** и выберите в качестве кодировки **Юникод (UTF-8 без сигнатуры) — кодовая страница 65001**.
+3. Важно сохранить этот *CSV*-файл в правильной кодировке. В меню **File** выберите **Дополнительные параметры сохранения** и выберите в качестве кодировки **Юникод (UTF-8 без сигнатуры) — кодовая страница 65001**.
 
-4.  Этот *CSV*-файл необходимо скопировать в выходной каталог, иначе не удается запустить тест. Скопируйте его с помощью окна **Свойства**.
+4. Этот *CSV*-файл необходимо скопировать в выходной каталог, иначе не удается запустить тест. Скопируйте его с помощью окна **Свойства**.
 
      ![Развертывание CSV-файла](../test/media/cuit_datadriven_deploycsvfile.png)
 
@@ -125,13 +124,12 @@ ms.locfileid: "53968609"
 
 ### <a name="step-3---add-data-source-binding"></a>Шаг 3. Добавление привязки источника данных
 
-1.  Чтобы привязать источник данных, добавьте атрибут `DataSource` в существующий атрибут `[TestMethod]`, который находится сразу над методом теста.
+1. Чтобы привязать источник данных, добавьте атрибут `DataSource` в существующий атрибут `[TestMethod]`, который находится сразу над методом теста.
 
     ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
     public void CodedUITestMethod1()
     {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
         this.UIMap.AddNumbers();
         this.UIMap.ValidateSum();
     }
@@ -142,7 +140,7 @@ ms.locfileid: "53968609"
     > [!TIP]
     > Примеры использования других типов источников данных, таких как XML, SQL Express и Excel, см. в разделе [Примеры атрибутов источников данных](#CreateDataDrivenCUIT_QA_DataSourceAttributes).
 
-2.  Запустите тест.
+2. Запустите тест.
 
      Обратите внимание, что тест выполняется в три итерации. Это происходит потому, что привязанный источник данных содержит три строки данных. Однако можно также заметить, что тест по-прежнему использует константные значения параметров и каждый раз складывает 1 и 2, получая сумму 3.
 
@@ -150,7 +148,7 @@ ms.locfileid: "53968609"
 
 ### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Шаг 4. Использование данных в закодированном тесте пользовательского интерфейса
 
-1.  Добавьте `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` в верхнюю часть файла *CodedUITest.cs*:
+1. Добавьте `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` в верхнюю часть файла *CodedUITest.cs*:
 
     ```csharp
     using System;
@@ -166,66 +164,66 @@ ms.locfileid: "53968609"
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
     ```
 
-2.  Добавьте `TestContext.DataRow[]` в метод `CodedUITestMethod1()`, который будет применять значения из источника данных. Значения из источника данных переопределяют константы, назначенные элементам управления UIMap, с помощью элементов управления `SearchProperties`:
+2. Добавьте `TestContext.DataRow[]` в метод `CodedUITestMethod1()`, который будет применять значения из источника данных. Значения из источника данных переопределяют константы, назначенные элементам управления UIMap, с помощью элементов управления `SearchProperties`:
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();this.UIMap.UICalculatorWindow.UIItemWindow21.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSumExpectedValues.UIItem2TextDisplayText = TestContext.DataRow["Sum"].ToString();
-        this.UIMap.ValidateSum();
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();
+       this.UIMap.UICalculatorWindow.UIItemWindow2.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSumExpectedValues.UIItem3TextDisplayText = TestContext.DataRow["Sum"].ToString();
+       this.UIMap.ValidateSum();
     }
     ```
 
      Чтобы понять, в какие свойства поиска следует кодировать данные, используйте редактор закодированных тестов пользовательского интерфейса.
 
-    -   Откройте файл *UIMap.uitest*.
+    - Откройте файл *UIMap.uitest*.
 
          ![Открытие редактора закодированного тестирования пользовательского интерфейса](../test/media/cuit_datadriven_opentesteditor.png)
 
-    -   Выберите действие пользовательского интерфейса и просмотрите соответствующее сопоставление элементов управления пользовательского интерфейса. Обратите внимание, как сопоставление соответствует коду, например, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
+    - Выберите действие пользовательского интерфейса и просмотрите соответствующее сопоставление элементов управления пользовательского интерфейса. Обратите внимание, как сопоставление соответствует коду, например, `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
          ![Использование редактора закодированного тестирования пользовательского интерфейса для поддержки при кодировании](../test/media/cuit_datadriven_testeditor.png)
 
-    -   В окне **свойств** откройте **свойства поиска**. Значение **Имя** свойств поиска — это то, что обрабатывается в коде с помощью источника данных. Например, `SearchProperties` назначаются значения в первом столбце каждой строки данных: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. В рамках трех итераций этот тест изменит значение **Имя** для свойства поиска на 3, затем на 5 и, наконец, на 6.
+    - В окне **свойств** откройте **свойства поиска**. Значение **Имя** свойств поиска — это то, что обрабатывается в коде с помощью источника данных. Например, `SearchProperties` назначаются значения в первом столбце каждой строки данных: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. В рамках трех итераций этот тест изменит значение **Имя** для свойства поиска на 3, затем на 5 и, наконец, на 6.
 
          ![Использование свойств поиска для поддержки при кодировании](../test/media/cuit_datadriven_searchproperties.png)
 
-3.  Сохраните решение.
+3. Сохраните решение.
 
 ### <a name="step-5---run-the-data-driven-test"></a>Шаг 5. Запуск управляемого данными теста
 
-1.  Убедитесь, что тест теперь управляется данными, запустив его еще раз.
+Убедитесь, что тест теперь управляется данными, запустив его еще раз.
 
-     Вы должны увидеть, как тест проходит по трем итерациям, используя значения из *CSV*-файла. Проверка также должна работать, и тест в обозревателе тестов должен отображаться как пройденный.
+Вы должны увидеть, как тест проходит по трем итерациям, используя значения из *CSV*-файла. Проверка также должна работать, и тест в обозревателе тестов должен отображаться как пройденный.
 
 ## <a name="q--a"></a>Вопросы и ответы
 
-###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Что такое атрибуты источника данных для других типов источников данных, таких как SQL Express или XML?
+### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Что такое атрибуты источника данных для других типов источников данных, таких как SQL Express или XML?
 
-Можно использовать строки примеров источников данных из таблицы ниже, скопировав их в код, и внести необходимые настройки.
+**Ответ.** Можно использовать строки примеров источников данных из таблицы ниже, скопировав их в код, и внести необходимые настройки.
 
 **Типы и атрибуты источников данных**
 
--   CSV
+- CSV
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`
 
--   Excel
+- Excel
 
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`
 
--   Тестовый случай в Team Foundation Server
+- Тестовый случай в Team Foundation Server
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`
 
--   XML
+- XML
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\data.xml", "Iterations", DataAccessMethod.Sequential), DeploymentItem("data.xml"), TestMethod]`
 
--   SQL Express
+- SQL Express
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 

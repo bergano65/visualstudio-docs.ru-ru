@@ -5,16 +5,15 @@ ms.topic: reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ef63abe36a5880305f522d75d9e1cb1d7f6995fa
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
-ms.translationtype: MTE95
+ms.openlocfilehash: b270290c948807ff0f66d3d142312245475cd33c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204207"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460607"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>Строка подключения содержит учетные данные с текстовым паролем и не использует встроенную систему безопасности
 
@@ -37,5 +36,4 @@ ms.locfileid: "54204207"
 
 ## <a name="see-also"></a>См. также
 
-- [Сообщения реляционного конструктора объектов](../data-tools/o-r-designer-messages.md)
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

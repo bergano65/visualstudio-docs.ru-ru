@@ -1,42 +1,36 @@
 ---
 title: Серверы (пакет SDK для Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - servers, debugging
 - debugging [Debugging SDK], servers
 ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 20b1550773be903f3f5a0482d2971a4f5b30fabc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ed2ce924b22827a82a67664e3e473f0930a87e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199404"
 ---
 # <a name="servers-visual-studio-sdk"></a>Серверы (пакет SDK для Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 С точки зрения архитектуры отладчика **server**:  
   
--   Представляет контейнер портов и поставщикам портов и используется для передачи порты и поставщикам портов диспетчер отладки сеансов (SDM) и модули отладки.  
+- Представляет контейнер портов и поставщикам портов и используется для передачи порты и поставщикам портов диспетчер отладки сеансов (SDM) и модули отладки.  
   
--   Можно перечислить его порты и поставщикам портов и идентификации по имени.  
+- Можно перечислить его порты и поставщикам портов и идентификации по имени.  
   
--   Представленный [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) интерфейс, который реализуется только с Visual Studio (один экземпляр сервера для каждого экземпляра работы Visual Studio).  
+- Представленный [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) интерфейс, который реализуется только с Visual Studio (один экземпляр сервера для каждого экземпляра работы Visual Studio).  
   
 ## <a name="see-also"></a>См. также  
  [Порты](../../extensibility/debugger/ports.md)   
  [Поставщики портов](../../extensibility/debugger/port-suppliers.md)   
  [Отладчик: основные понятия](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)
-

@@ -2,7 +2,6 @@
 title: Продукты и службы корпорации Майкрософт, поддерживающие специальные возможности
 description: Ознакомьтесь с дополнительными сведениями о продуктах и услугах корпорации Майкрософт, которые повысят доступность наших операционных систем, программ и приложений для всех пользователей, включая людей с ограниченными возможностями.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -17,35 +16,35 @@ helpviewer_keywords:
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793088"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Продукты и службы корпорации Майкрософт, поддерживающие специальные возможности
 
 > [!TIP]
-> Дополнительные сведения о новых специальных возможностях Visual Studio см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
+> Дополнительные сведения о новых специальных возможностях Visual Studio см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
 
 Корпорация Microsoft стремится к тому, чтобы сделать использование своих продуктов и служб простым и удобным для каждого. В следующих разделах содержатся сведения о возможностях, продуктах и службах, облегчающих работу с Microsoft Windows для людей с ограниченными возможностями.
 
--   [Специальные возможности Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
+- [Специальные возможности Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
 
--   [Документация в альтернативных форматах](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
+- [Документация в альтернативных форматах](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
 
--   [Служба технической поддержки для людей с нарушениями слуха](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
+- [Служба технической поддержки для людей с нарушениями слуха](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
 
--   [Дополнительные сведения](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
+- [Дополнительные сведения](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
 
 > [!NOTE]
 > Информация в этом разделе предназначена только для пользователей, которые приобрели лицензию на продукты корпорации Microsoft в США. Если вы приобрели продукт за пределами США, можно ознакомиться с информационной картой подразделения, которая входит в пакет программного обеспечения, или просмотреть список адресов и телефонных номеров службы технической поддержки корпорации Майкрософт на веб-сайте [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431). Можно обратиться в представительство, чтобы узнать, доступен тип продуктов и услуг, описанных в этом разделе, в определенном регионе. Информация о специальных возможностях доступна на других языках, включая японский и французский.
 
-##  <a name="windows"></a> Специальные возможности Windows
+## <a name="windows"></a> Специальные возможности Windows
 
  Операционная система Windows обладает большим количеством встроенных специальных возможностей, полезных для людей, испытывающих затруднения при наборе текста или использовании мыши, слепых или имеющих нарушения зрения, глухих или слабослышащих. Данные возможности устанавливаются в процессе установки. Дополнительные сведения об этих возможностях см. в справке по Windows и на веб-сайте [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
 
@@ -61,7 +60,7 @@ ms.locfileid: "53886323"
 
  Перед обновлением программного обеспечения или оборудования с использованием продукта с поддержкой специальных возможностей свяжитесь с поставщиком данного продукта для получения сведений о возможных проблемах с совместимостью.
 
-##  <a name="altfortmats"></a> Документация в альтернативных форматах
+## <a name="altfortmats"></a> Документация в альтернативных форматах
 
 Если при чтении или обработке печатного материала возникают сложности, документацию по большинству продуктов корпорации Microsoft можно получить в более доступных форматах. Указатель доступной документации по продуктам можно просмотреть на веб-сайте [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
 
@@ -73,7 +72,7 @@ ms.locfileid: "53886323"
 
 Веб-адреса могут меняться, поэтому подключение к веб-сайту или сайтам, указанным в данном разделе, может быть невозможно.
 
-##  <a name="hearing"></a> Служба технической поддержки для людей с нарушениями слуха
+## <a name="hearing"></a> Служба технической поддержки для людей с нарушениями слуха
 
 Для глухих или слабослышащих пользователей полный доступ к службе технической и информационной поддержки по продуктам корпорации Microsoft возможен посредством службы передачи текста по телефону (TTY/TDD).
 
@@ -83,7 +82,7 @@ ms.locfileid: "53886323"
 
 Стоимость обращения в службу технической поддержки корпорации Microsoft определяется на основе цен и условий, действующих на момент обращения.
 
-##  <a name="moreinfo"></a> Дополнительные сведения
+## <a name="moreinfo"></a> Дополнительные сведения
 
 Дополнительные сведения о том, как поддержка специальных возможностей помогает улучшить жизнь людей с ограниченными возможностями, см. на веб-сайте [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
 

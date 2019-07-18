@@ -1,8 +1,7 @@
 ---
-title: IDebugApplication110::CallableWaitForHandles | Документы Microsoft
+title: IDebugApplication110::CallableWaitForHandles | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b259f5296f8e0b32def793a81e4c2e1069643306
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: f74e3faa57e9ee4a38f77110334383bc2c72fe2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446392"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-Ожиданий для любого указанного дескрипторов в целях сигнализировать, обеспечив при этом межпоточные вызовы должны быть учтены данного потока. Этот метод должен вызываться из потока отладчика.  
+Ожиданий для любого из указанных маркеров, который должен получить сигнал при этом межпоточные вызовы публикуемый этим потоком. Этот метод должен вызываться из потока отладчика.  
   
 > [!IMPORTANT]
->  [Idebugapplication110 — интерфейс](../../winscript/reference/idebugapplication110-interface.md) — реализованный PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> [Интерфейс IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -41,7 +40,7 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
  Набор дескрипторов ожидания.  
   
  `pIndex`  
- Если значение HRESULT равно S_OK, индекс в `pHandles` для дескриптора, которое было указано.  
+ Если значение HRESULT равно S_OK, индекс в `pHandles` для дескриптора, который получил сигнал.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md)

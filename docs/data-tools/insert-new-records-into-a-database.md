@@ -14,16 +14,15 @@ helpviewer_keywords:
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9025f854b79e46ce3756916bd133a8a0380c82a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 64fc4735fd95c611dd1c2d905be6fa5b45c84664
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824253"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715015"
 ---
 # <a name="insert-new-records-into-a-database"></a>Вставка новых записей в базу данных
 
@@ -81,7 +80,7 @@ ms.locfileid: "53824253"
 [!code-vb[VbRaddataSaving#16](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_3.vb)]
 [!code-csharp[VbRaddataSaving#16](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_3.cs)]
 
-## <a name="net-framework-security"></a>безопасность платформы .NET Framework
+## <a name="net-security"></a>Безопасность .NET
 
 Необходимо иметь доступ для базы данных, которую вы пытаетесь подключиться, а также разрешение на вставку в нужную таблицу.
 

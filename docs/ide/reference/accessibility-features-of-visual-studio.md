@@ -2,7 +2,6 @@
 title: Специальные возможности Visual Studio
 description: Дополнительные сведения о специальных возможностях и служебных программ, которые упрощают работу с операционной системой Windows и пакетом разработчика Visual Studio для всех пользователей, включая людей с ограниченными возможностями.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -10,32 +9,32 @@ helpviewer_keywords:
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28a4d386dcaa6525acb450bcabb2f459637a8cbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793161"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Специальные возможности Visual Studio
 
 > [!TIP]
-> Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
+> Дополнительные сведения о новых специальных возможностях см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
 
 Помимо специальных возможностей и служебных программ Windows, следующие функции повышают удобство работы с Visual Studio для людей с ограниченными возможностями:
 
--   увеличение кнопок на панели инструментов и текста;
+- увеличение кнопок на панели инструментов и текста;
 
--   настройка размера текста в редакторах;
+- настройка размера текста в редакторах;
 
--   настройка цвета в редакторах;
+- настройка цвета в редакторах;
 
--   настройка сочетаний клавиш;
+- настройка сочетаний клавиш;
 
--   автозавершение методов и параметров.
+- автозавершение методов и параметров.
 
 > [!NOTE]
 > Этот раздел относится к Visual Studio в Windows. Информацию о Visual Studio для Mac см. в статье [Специальные возможности в Visual Studio для Mac](/visualstudio/mac/accessibility).
@@ -45,15 +44,15 @@ ms.locfileid: "53866482"
 
 Дополнительные сведения см. в следующих разделах:
 
--   [Практическое руководство. Настройка специальных возможностей в интегрированной среде разработки](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Практическое руководство. Настройка специальных возможностей в интегрированной среде разработки](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Практическое руководство. Работа только с клавиатуры](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Практическое руководство. Работа только с клавиатуры](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+- [Сочетания клавиш по умолчанию](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [Специальные возможности. Советы и рекомендации](../../ide/reference/accessibility-tips-and-tricks.md)
+- [Специальные возможности. Советы и рекомендации](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Практическое руководство. Изменение шрифтов и цветов](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Практическое руководство. Изменение шрифтов и цветов](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>См. также
 

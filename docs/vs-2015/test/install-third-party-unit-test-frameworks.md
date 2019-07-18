@@ -1,24 +1,19 @@
 ---
 title: Установка платформ модульного тестирования сторонних поставщиков | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6798106eda43be42e3149160a797e6bf469f9d42
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 23d347d43918661ca65019862f476f1d636d5d06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147163"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Установка платформ модульного тестирования сторонних поставщиков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ ms.locfileid: "49900908"
   
  **Требования**  
   
--   Visual Studio Enterprise, Visual Studio Professional  
+- Visual Studio Enterprise, Visual Studio Professional  
   
 ## <a name="acquiring-third-party-frameworks"></a>Приобретение сторонних платформ  
  Вы можете скачать и установить множество сторонних платформ модульного тестирования, используя диспетчер расширений Visual Studio, или сделать это в коллекции Visual Studio на веб-сайте MSDN. Платформы можно также скачать с других сайтов, например с веб-сайта платформы.  
@@ -47,7 +42,7 @@ ms.locfileid: "49900908"
 ### <a name="installing-from-the-web"></a>Установка из Интернета  
  Если вы знаете интересующую вас платформу:  
   
-1. Откройте [галерею Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) на веб-сайте MSDN.  
+1. Откройте [Visual Studio Marketplace](https://marketplace.visualstudio.com).  
   
 2. Введите имя платформы в поле **Найти**.  
   
@@ -55,7 +50,7 @@ ms.locfileid: "49900908"
   
    Чтобы открыть список платформ с другими средствами тестирования:  
   
-4. Откройте [галерею Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) на веб-сайте MSDN.  
+4. Откройте [Visual Studio Marketplace](https://marketplace.visualstudio.com).  
   
 5. Щелкните **Обзор**.  
   
@@ -65,6 +60,3 @@ ms.locfileid: "49900908"
   
 ## <a name="see-also"></a>См. также  
  [Модульное тестирование кода](../test/unit-test-your-code.md)
-
-
-

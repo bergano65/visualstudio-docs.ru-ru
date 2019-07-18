@@ -1,10 +1,9 @@
 - name: Инструменты Visual Studio для сценариев ИИ
-  href: index.yml
   items:
+    - name: Инструменты Visual Studio для сценариев ИИ
+      href: index.yml
     - name: Обзор
-      items:
-        - name: Обзор Инструментов Visual Studio для сценариев ИИ
-          href: about-ai-tools.md
+      href: about-ai-tools.md
     - name: Установка
       href: installation.md
     - name: Краткие руководства

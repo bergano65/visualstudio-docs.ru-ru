@@ -1,14 +1,9 @@
 ---
 title: Функция SccPopulateList | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fccf5ba354a99eaef6968c5d5027e8540762af75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5efdddc448dc8e04ee963eaa1b342a93666d9b62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446780"
 ---
 # <a name="sccpopulatelist-function"></a>Функция SccPopulateList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ SCCRTN SccPopulateList (
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Выполнено.|  
 |SCC_E_NONSPECIFICERROR|Обнаружена неспецифическая ошибка.|  
@@ -86,7 +81,7 @@ SCCRTN SccPopulateList (
  Подключаемый модуль по-прежнему вызывать `pfnPopulate` функцию, которая добавляет и удаляет файлы, до его завершения, а затем возвращает из `SccPopulateList` функции. IDE можно затем отобразить его список. `lpStatus` Массив представляет все файлы из исходного списка, переданного в Интегрированной средой разработки. Подключаемый модуль заполняет состояние всех этих файлов в дополнение к принятию использовать функции обратного вызова.  
   
 > [!NOTE]
->  Подключаемый модуль системы управления версиями, всегда имеет возможность просто немедленно возвращаются из этой функции, выходя из списка, так как это. Если подключаемый модуль реализует эту функцию, его можно указать, задав `SCC_CAP_POPULATELIST` возможность битовые флажки в первом вызове [SccInitialize](../extensibility/sccinitialize-function.md). По умолчанию подключаемый модуль должен всегда предполагается, что все элементы, передаваемые в — файлы. Тем не менее если интегрированная среда разработки задает `SCC_PL_DIR` флаг в `fOptions` параметр, все элементы, передаваемые в должны считаться каталоги. Подключаемый модуль следует добавить все файлы, которые принадлежат, в каталогах. Файлы и каталоги, и никогда не передают интегрированной среды разработки.  
+> Подключаемый модуль системы управления версиями, всегда имеет возможность просто немедленно возвращаются из этой функции, выходя из списка, так как это. Если подключаемый модуль реализует эту функцию, его можно указать, задав `SCC_CAP_POPULATELIST` возможность битовые флажки в первом вызове [SccInitialize](../extensibility/sccinitialize-function.md). По умолчанию подключаемый модуль должен всегда предполагается, что все элементы, передаваемые в — файлы. Тем не менее если интегрированная среда разработки задает `SCC_PL_DIR` флаг в `fOptions` параметр, все элементы, передаваемые в должны считаться каталоги. Подключаемый модуль следует добавить все файлы, которые принадлежат, в каталогах. Файлы и каталоги, и никогда не передают интегрированной среды разработки.  
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
@@ -94,4 +89,3 @@ SCCRTN SccPopulateList (
  [POPLISTFUNC](../extensibility/poplistfunc.md)   
  [Битовые флаги, используемые конкретными командами](../extensibility/bitflags-used-by-specific-commands.md)   
  [Код команды](../extensibility/command-code-enumerator.md)
-

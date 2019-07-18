@@ -1,27 +1,22 @@
 ---
 title: Элемент VisibilityItem | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VisibilityItem element (VSCT XML schema)
 - VSCT XML schema elements, VisibilityItem
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ab4d1fef60ce8b11a23a9d3afd30bcf6b89715d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6f71e145282d1d6e340060b9798ca54c9af9f4e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584843"
 ---
 # <a name="visibilityitem-element"></a>Элемент VisibilityItem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +43,19 @@ ms.locfileid: "51779259"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|guid|Обязательно. Идентификатор GUID идентификатор GUID и идентификатора команды.|  
-|id|Обязательно. Идентификатор GUID и идентификатора идентификатор команды.|  
-|контекст|Обязательно. Контекст пользовательского интерфейса, в котором отображается команда.|  
-|Условие|Необязательный. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Обязательный. Идентификатор GUID идентификатор GUID и идентификатора команды.|  
+|id|Обязательный. Идентификатор GUID и идентификатора идентификатор команды.|  
+|контекст|Обязательный. Контекст пользовательского интерфейса, в котором отображается команда.|  
+|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
  Нет  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints` Элемент определяет видимость статических групп, команд и панелей инструментов.|  
   
@@ -84,4 +79,3 @@ ms.locfileid: "51779259"
  <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>   
  [Элемент VisibilityConstraints](../extensibility/visibilityconstraints-element.md)   
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

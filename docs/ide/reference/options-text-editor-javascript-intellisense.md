@@ -1,7 +1,6 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", JavaScript, IntelliSense"
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
@@ -10,15 +9,15 @@ f1_keywords:
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 688360e117863b6a1e5e3b06ad23a8835d878bd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778581"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>"Параметры", "Текстовый редактор", JavaScript, IntelliSense
 Страница **IntelliSense** диалогового окна **Параметры** служит для изменения параметров, влияющих на поведение IntelliSense для JavaScript. Чтобы открыть страницу **IntelliSense**, выберите **Сервис**  >  **Параметры** в строке меню, а затем разверните **Текстовый редактор**  >  **JavaScript**  >  **IntelliSense.**
@@ -60,7 +59,6 @@ ms.locfileid: "53843013"
 > [!CAUTION]
 > Если определен объект определен безусловно в двух или более неявных ссылках, для определения объекта будет использоваться последняя ссылка в этом списке.
 
-
 **Добавить ссылку на текущую группу**
 
 Этот параметр обеспечивает способ добавления дополнительных JS-файлов IntelliSense путем просмотра соответствующих файлов.
@@ -71,8 +69,6 @@ ms.locfileid: "53843013"
 
 > [!NOTE]
 > Для веб-проектов удаленные файлы, ссылки на которые указаны в проекте, загружаются по умолчанию.
-
-
 
 ## <a name="see-also"></a>См. также раздел
 

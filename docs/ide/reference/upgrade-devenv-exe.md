@@ -1,7 +1,6 @@
 ---
 title: -Upgrade (devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - /upgrade Devenv switch
@@ -10,48 +9,56 @@ helpviewer_keywords:
 ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46e549dfdc661819dac00d0aa965616462130ad0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0fa2e2eaa583f7da0437907fdaa3e7af2fe4a0e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789307"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
-Обновляет файл решения и все его файлы проектов либо указанный файл проекта до текущих форматов [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] для этих файлов.
+
+Обновляет файл решения и все его файлы проектов либо указанный файл проекта до текущих форматов Visual Studio для этих файлов.
 
 ## <a name="syntax"></a>Синтаксис
 
-```cmd
-devenv SolutionFile | ProjectFile /upgrade
+```shell
+devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 ```
 
 ## <a name="arguments"></a>Аргументы
- `SolutionFile`
 
- Требуется при обновлении всего решения и его проектов. Путь и имя для файла решения Можно ввести только имя файла решения или полный путь и имя файла решения. Если папка или файл еще не существуют, они будут созданы.
+- *SolutionFile*
 
- `ProjectFile`
+  Требуется при обновлении всего решения и его проектов. Путь и имя для файла решения Можно ввести только имя файла решения или полный путь и имя файла решения. Если папка или файл еще не существуют, они будут созданы.
 
- Требуется при обновлении одного проекта. Путь и имя для файла проекта в решении. Можно ввести только имя файла проекта или полный путь и имя файла проекта. Если папка или файл еще не существуют, они будут созданы.
+- *ProjectFile*
+
+  Требуется при обновлении одного проекта. Путь и имя для файла проекта в решении. Можно ввести только имя файла проекта или полный путь и имя файла проекта. Если папка или файл еще не существуют, они будут созданы.
+
+- `/Out` *OutputFilename*
+
+  Необязательный параметр. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
 
 ## <a name="remarks"></a>Примечания
- Резервные копии автоматически создаются и копируются в каталог с именем Backup, который создается в текущем каталоге.
 
- Решения или проекты в системе управления версиями необходимо получать для изменения, прежде чем их можно будет обновить.
+Резервные копии автоматически создаются и копируются в каталог с именем Backup, который создается в текущем каталоге.
 
- Использование параметра `/upgrade` не приводит к запуску [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Результаты обновления можно просмотреть в отчете об обновлении для языка разработки конкретного решения или проекта. Сведения об ошибках или использовании не возвращаются. Дополнительные сведения об обновлении проектов в [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] см. в разделе [Перенос, миграция и обновление проектов Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Решения или проекты в системе управления версиями необходимо получать для изменения, прежде чем их можно будет обновить.
+
+Использование параметра `/Upgrade` не приводит к запуску Visual Studio. Результаты обновления можно просмотреть в отчете об обновлении для языка разработки конкретного решения или проекта. Сведения об ошибках или использовании не возвращаются. См. дополнительные сведения о [переносе, миграции и обновлении проектов Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ## <a name="example"></a>Пример
- В этом примере выполняется обновление файла решения с именем MyProject.sln в папке по умолчанию для решений [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-```cmd
-devenv "MyProject.sln" /upgrade
+В этом примере выполняется обновление файла решения с именем MyProject.sln.
+
+```shell
+devenv "%USERPROFILE%\source\repos\MyProject\MyProject.sln" /upgrade
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)

@@ -1,27 +1,22 @@
 ---
 title: Проверка точек останова в языковой службе прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0868e516720fd32a445f60f05f345936d24d6d7a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f54dc683aa4287145a27e22d49397241b395f69f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163680"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Проверка точек останова в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +27,13 @@ ms.locfileid: "51734979"
   
 ## <a name="implementing-support-for-validating-breakpoints"></a>Реализация поддержки для проверки точек останова  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Метод получает позицию точки останова. Реализация необходимо решить, ли расположение является допустимым и указать это, возвращая диапазон текста, который определяет код, связанный с позицию в строке точку останова.  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Метод получает позицию точки останова. Реализация необходимо решить, ли расположение является допустимым и указать это, возвращая диапазон текста, который определяет код, связанный с позицию в строке точку останова.  
   
--   Вернуть <xref:Microsoft.VisualStudio.VSConstants.S_OK> Если расположение является допустимым, или <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> если оно является недопустимым.  
+- Вернуть <xref:Microsoft.VisualStudio.VSConstants.S_OK> Если расположение является допустимым, или <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> если оно является недопустимым.  
   
--   Если точка останова задана в допустимый диапазон текста выделяются точки останова.  
+- Если точка останова задана в допустимый диапазон текста выделяются точки останова.  
   
--   Если точка останова является недопустимым, появится сообщение об ошибке в строке состояния.  
+- Если точка останова является недопустимым, появится сообщение об ошибке в строке состояния.  
   
 ### <a name="example"></a>Пример  
  В этом примере показана реализация <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> метод, который вызывает средство синтаксического анализа, чтобы получить диапазон кода (если таковые имеются) в указанном расположении.  
@@ -107,4 +102,3 @@ namespace TestLanguagePackage
   
 ## <a name="see-also"></a>См. также  
  [Функции языковой службы прежних версий](../../extensibility/internals/legacy-language-service-features1.md)
-

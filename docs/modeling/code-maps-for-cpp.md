@@ -4,16 +4,15 @@ ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5fc8e84100d8b7ceb2b529e7b1630e644ebc9f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3904ff08496257d18589e36e5878f49404bbdf7c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422192"
 ---
 # <a name="code-maps-for-c-projects"></a>Карты кода для проектов C++
 

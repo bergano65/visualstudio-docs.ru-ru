@@ -17,21 +17,21 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], IntelliTrace
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846378"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Возможности IntelliTrace (C#, Visual Basic, C++)
 
 IntelliTrace можно использовать для записи событий и вызовов методов, что позволяет проверять состояние приложения (стек вызовов и значения локальных переменных) на различных этапах выполнения. Просто запустите отладку обычным образом — средство IntelliTrace включено по умолчанию — и просматривайте данные, записываемые IntelliTrace в новом окне **Средства диагностики** на вкладке **События**. Выберите событие и щелкните **Активировать журнал отладки**, чтобы увидеть стек вызовов и локальные переменные, записанные для этого события.
 
-Пошаговое описание см. в разделе [Пошаговое руководство: Использование IntelliTrace
+Пошаговое описание см. в разделе [Пошаговое руководство: С помощью IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
 Средство IntelliTrace доступно в выпуске Visual Studio Enterprise, но не в выпусках Visual Studio Professional или Community.
 
@@ -56,7 +56,7 @@ IntelliTrace можно использовать для записи событ�
 
 Эта возможность не включена по умолчанию, но IntelliTrace может записывать вызовы методов вместе с событиями. Чтобы включить сбор данных метод вызовы к **Инструменты > Параметры > IntelliTrace > Общие**и выберите **события IntelliTrace и (только управляемый код) сведений о вызовах**.
 
-Сведения о вызовах не доступен для приложений .NET Core и ASP.NET Core. 
+Сведения о вызовах не доступен для приложений .NET Core и ASP.NET Core.
 
 Это позволит увидеть журнал стека вызовов и переходить по вызовам в вашем коде. IntelliTrace записывает такие данные, как имена методов, точки входа и выхода методов и определенные значения параметров, а также возвращаемые значения.
 
@@ -105,21 +105,21 @@ IntelliTrace можно настроить для автоматического
 
 ## <a name="blogs"></a>Блоги
 
-[IntelliTrace в Visual Studio Enterprise 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+[IntelliTrace в Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
 
-[Пошаговое руководство по отладке в реальном времени с помощью IntelliTrace в Visual Studio 2015 (текстовый редактор)](https://blogs.msdn.microsoft.com/devops/2015/01/16/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
+[Пошаговое руководство по отладке в реальном времени с помощью IntelliTrace в Visual Studio 2015 (текстовый редактор)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
 
-[Пошаговое руководство по отладке в реальном времени с помощью IntelliTrace в Visual Studio 2015 (социальные Club)](https://blogs.msdn.microsoft.com/devops/2015/04/29/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
+[Пошаговое руководство по отладке в реальном времени с помощью IntelliTrace в Visual Studio 2015 (социальные Club)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
 
-[Теперь IntelliTrace в Visual Studio Enterprise 2015 поддерживает возможность прикрепления!](https://blogs.msdn.microsoft.com/devops/2015/05/14/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
+[Теперь IntelliTrace в Visual Studio Enterprise 2015 поддерживает возможность прикрепления!](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
 
-[Сбор данных из службы windows с помощью автономного сборщика IntelliTrace](https://blogs.msdn.microsoft.com/devops/2015/05/14/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
+[Сбор данных из службы windows с помощью автономного сборщика IntelliTrace](https://devblogs.microsoft.com/devops/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
 
-[Изменение плана сбора IntelliTrace](https://blogs.msdn.microsoft.com/devops/2015/03/09/editing-the-intellitrace-collection-plan/)
+[Изменение плана сбора IntelliTrace](https://devblogs.microsoft.com/devops/editing-the-intellitrace-collection-plan)
 
-[Пользовательский TraceSource и отладка с помощью IntelliTrace](https://blogs.msdn.microsoft.com/devops/2014/12/16/custom-tracesource-and-debugging-using-intellitrace/)
+[Пользовательский TraceSource и отладка с помощью IntelliTrace](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
 
-[Автономный сборщик данных IntelliTrace и пулы приложений под управлением учетными записями Active Directory](https://blogs.msdn.microsoft.com/devops/2014/12/22/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
+[Автономный сборщик данных IntelliTrace и пулы приложений под управлением учетными записями Active Directory](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
 
 ## <a name="forums"></a>Форумы
 
@@ -129,4 +129,4 @@ IntelliTrace можно настроить для автоматического
 
 [Работа IntelliTrace](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
 
-Отладка с ведением журнала с помощью IntelliTrace в Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)
+[Отладка с ведением журнала с помощью IntelliTrace в Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)

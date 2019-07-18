@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4786b0ba6ee981ce14b60b1af87252e3d9582a0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414817"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 Доменный язык (DSL) создана с пакет SDK моделирования и визуализации Visual Studio можно изменить, что происходит, когда пользователь копирует и вставляет элементы.
@@ -233,7 +232,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  Многие аспекты поведения Доменного языка в отношении копирования, вставки, создания и удаления объектов определяются экземпляром <xref:Microsoft.VisualStudio.Modeling.ElementOperations> который соединен в схему. Можно изменить поведение Доменного языка путем наследования класса из <xref:Microsoft.VisualStudio.Modeling.ElementOperations> и переопределение <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> свойство класса схемы.
 
 > [!TIP]
->  Дополнительные сведения о настройке модели с помощью программного кода, см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> Дополнительные сведения о настройке модели с помощью программного кода, см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
  ![Схема последовательностей для операции копирования](../modeling/media/dslcopyseqdiagram.png)
 
@@ -285,9 +284,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Определите два метода в классе ElementOperations:
 
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` который определяет, можно ли перетаскивать на целевой фигуры, соединителя или схемы исходного элемента.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` который определяет, можно ли перетаскивать на целевой фигуры, соединителя или схемы исходного элемента.
 
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` который объединяет исходный элемент в целевой объект.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` который объединяет исходный элемент в целевой объект.
 
 ### <a name="canmerge"></a>CanMerge()
  `CanMerge()` вызывается для определения обратной связи, которая должна быть предоставлена пользователю при перемещении мыши по схеме. Для метода используются следующие параметры: элемент, на который наводится указатель мыши, и данные об источнике, из которого была выполнена операция перетаскивания. Пользователь может перетащить элемент из любого места экрана, поэтому исходный объект может быть разных типов и сериализован в разных форматах. Если источник является доменным языком или моделью UML, параметр данных является сериализацией <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Операции перетаскивания, копирования и панели инструментов используют ElementGroupPrototypes для представления фрагментов моделей.
@@ -556,8 +555,7 @@ namespace Company.MyDsl
 ## <a name="see-also"></a>См. также
 
 - [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md)
-- [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [Настройка функции удаления](../modeling/customizing-deletion-behavior.md)
+- [Практическое руководство. Добавление обработчика перетаскивания](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Пример. Пример принципиальной схемы VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

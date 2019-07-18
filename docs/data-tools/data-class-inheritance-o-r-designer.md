@@ -5,16 +5,15 @@ ms.topic: conceptual
 ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e554561598086193b4862f5962435b25a1ae4d47
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: a8df3d39e44bf1d40f3abfd4d6218d2c9a72b690
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567810"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Наследование классов данных (реляционный конструктор объектов)
 
@@ -28,7 +27,7 @@ ms.locfileid: "53935766"
 
 В следующей таблице содержится список свойств наследования и их описания.
 
-|Свойство.|Описание|
+|Свойство|Описание|
 |--------------|-----------------|
 |**Свойство дискриминатора**|Свойство (сопоставляемое столбцу), которое определяет какому классу принадлежит текущая запись.|
 |**Значение дискриминатора базового класса**|Значение (в столбце, назначенном в качестве **свойства дискриминатора**), которое определяет, что запись относится к базовому классу.|

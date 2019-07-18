@@ -2,7 +2,6 @@
 title: IActiveScript::GetScriptDispatch | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a18d6781ca2b7820686b317ad0be5da425ade1f
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: c329a4dbf42461369441b86f6d9ba18992916366
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935606"
 ---
 # <a name="iactivescriptgetscriptdispatch"></a>IActiveScript::GetScriptDispatch
 Извлекает `IDispatch` интерфейс для методов и свойств, связанных с текущего выполняемого сценария.  

@@ -1,8 +1,7 @@
 ---
-title: Iactivescripterror — | Документы Microsoft
+title: Iactivescripterror — | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a403bf412a0c93a5c435e1a3184202ed68d406ea
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954997"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
-Объект, реализующий этот интерфейс передается [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) метод всякий раз, когда обработчик скриптов сталкивается с необработанной ошибкой. Затем основное приложение вызывает методы этого объекта для получения информации о возникшей ошибки.  
+Объект, реализующий этот интерфейс передается [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) метод всякий раз, когда обработчик скриптов сталкивается с необработанной ошибкой. Затем узел вызывает методы этого объекта для получения сведений о возникшей ошибке.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   

@@ -1,27 +1,22 @@
 ---
 title: Настраиваемые цветные элементы | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 272d16b9f5f8fb33b68c911c5e7bd27923f4c2db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24a4db907ec859c6075c06956f86939047379897
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409367"
 ---
 # <a name="custom-colorable-items"></a>Настраиваемые цветные элементы
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +30,11 @@ ms.locfileid: "51796952"
  Так как среда IDE обрабатывает переопределений пользователя цветных элементов в **шрифты и цвета** диалоговое окно, необходимо только указать каждого настраиваемого цветного элемента с именем. Это имя отображается в **отображаемые элементы** списка. Цветные элементы отображаются в алфавитном порядке. Чтобы сгруппировать службы вашего языка пользовательских цветных элементов, можно начать каждое имя именем своего языка, например **NewLanguage - комментарий** и **NewLanguage - ключевое слово**.  
   
 > [!CAUTION]
->  Имя языка следует включить в имя цветного элемента, чтобы избежать конфликтов с существующими именами цветного элемента. Если изменить имя одного из цветных элементов во время разработки, необходимо сбросить кэш, который был создан в первый раз обращается к вашей цветных элементов. Вы можете Сбросить экспериментальный кэша с помощью средства CreateExpInstance, который устанавливается вместе с Visual Studio SDK, обычно в каталоге  
+> Имя языка следует включить в имя цветного элемента, чтобы избежать конфликтов с существующими именами цветного элемента. Если изменить имя одного из цветных элементов во время разработки, необходимо сбросить кэш, который был создан в первый раз обращается к вашей цветных элементов. Вы можете Сбросить экспериментальный кэша с помощью средства CreateExpInstance, который устанавливается вместе с Visual Studio SDK, обычно в каталоге  
 >   
->  **C:\Program файлы (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+> **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
->  Чтобы сбросить кэш, вызовите `CreateExpInstance /Reset`. Дополнительные сведения о CreateExpInstance, см. в разделе [CreateExpInstance Utility](../../extensibility/internals/createexpinstance-utility.md).  
+> Чтобы сбросить кэш, вызовите `CreateExpInstance /Reset`. Дополнительные сведения о CreateExpInstance, см. в разделе [CreateExpInstance Utility](../../extensibility/internals/createexpinstance-utility.md).  
   
  Первый элемент в список цветных элементов никогда не указывается. Первый элемент соответствует индекс цветного элемента, равный 0, и [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] всегда предоставляет цвета текста по умолчанию и атрибуты этого элемента. Для предоставления заполнитель цветного элемента в списке как первый элемент является самый простой способ работы с этим элементом, на которые нет ссылок.  
   
@@ -77,4 +72,3 @@ ms.locfileid: "51796952"
  [Цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Реализация цветовой маркировки синтаксиса](../../extensibility/internals/implementing-syntax-coloring.md)   
  [Практическое руководство. Использование встроенных цветных элементов](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
-

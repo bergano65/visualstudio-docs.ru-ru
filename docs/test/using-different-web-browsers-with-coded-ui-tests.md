@@ -1,19 +1,18 @@
 ---
 title: Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 77af6795e8c00a9226c54ee8d9c0de09c9154065
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973023"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
 
@@ -25,13 +24,13 @@ ms.locfileid: "53986145"
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Что поддерживается во всех браузерах?
 
--   [Добавление пользовательского кода для управления компонентами](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/), такими как свойства, поиск и ожидающие объекты воспроизведения.
+- [Добавление пользовательского кода для управления компонентами](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/), такими как свойства, поиск и ожидающие объекты воспроизведения.
 
--   Всплывающие окна и диалоговые окна
+- Всплывающие окна и диалоговые окна
 
--   [Выполнение базового JavaScript без возвращаемого типа](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [Выполнение базового JavaScript без возвращаемого типа](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Надежный поиск (с помощью интеллектуального сопоставления) и [повышенная производительность](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- Надежный поиск (с помощью интеллектуального сопоставления) и [повышенная производительность](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Зачем нужно использовать закодированные тесты пользовательского интерфейса в нескольких типах веб-браузеров?
 
@@ -52,11 +51,23 @@ ms.locfileid: "53986145"
 
 ### <a name="install-selenium-components"></a>Установка компонентов Selenium
 
-1.  В меню **Сервис** щелкните пункт **Расширения и обновления**.
+::: moniker range="vs-2017"
 
-2.  В диалоговом окне **Расширения и обновления** выполните поиск `Selenium components for Cross Browser Testing`.
+1. В меню **Сервис** щелкните пункт **Расширения и обновления**.
 
-3.  Выберите расширение и нажмите кнопку **Скачать**.
+2. В диалоговом окне **Расширения и обновления** выполните поиск `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. В меню **Расширения** выберите **Управление расширениями**.
+
+2. В диалоговом окне **Управление расширениями** выполните поиск `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+3. Выберите расширение и нажмите кнопку **Скачать**.
 
     > [!TIP]
     > Кроме того, компоненты Selenium для выполнения закодированных тестов пользовательского интерфейса можно скачать [здесь](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
@@ -67,17 +78,17 @@ ms.locfileid: "53986145"
 
 Чтобы включить отладку веб-приложения, необходимо указать следующие параметры конфигурации.
 
-1.  Включить только мой код:
+1. Включить только мой код:
 
-    1.  В меню **Сервис** выберите **Параметры** и затем **Отладка**.
+    1. В меню **Сервис** выберите **Параметры** и затем **Отладка**.
 
-    2.  Выберите **Включить только мой код**.
+    2. Выберите **Включить только мой код**.
 
-2.  Отключить исключения CLR:
+2. Отключить исключения CLR:
 
-    1.  В меню **Отладка** выберите **Исключения**.
+    1. В меню **Отладка** выберите **Исключения**.
 
-    2.  В поле **Исключения среды CLR** снимите флажок **Не обработанное пользовательским кодом**.
+    2. В поле **Исключения среды CLR** снимите флажок **Не обработанное пользовательским кодом**.
 
 Если в закодированном тесте пользовательского интерфейса отсутствует параметр для изменения `BrowserWindow.CurrentBrowser`, возможно, ваша версия Visual Studio не поддерживает закодированные тесты пользовательского интерфейса с использованием различных веб-браузеров. Чтобы использовать такие закодированные тесты пользовательского интерфейса, необходимо использовать выпуск Visual Studio Enterprise.
 

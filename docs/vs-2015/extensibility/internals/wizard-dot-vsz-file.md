@@ -1,14 +1,9 @@
 ---
 title: Мастер (. Файл VSZ) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsz files
 - vsz files
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 428a2faf85180b9239f128dde5a9dadca04139af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ab1adde4c7018f136f47769e16a8ce2fedf72c93
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786451"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687668"
 ---
 # <a name="wizard-vsz-file"></a>Файл мастера (VSZ-файл)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,13 +37,13 @@ Param="WIZARDUI = FALSE"
   
  Ниже приведены компоненты в VSZ-файле.  
   
-|Отделение|Описание:|  
+|Отделение|Описание|  
 |----------|-----------------|  
 |VSWizard|Первый параметр в файле — это номер версии формата файла шаблона. Этот номер версии должен быть 6.0, 7.0, 7.1 или 8.0. Другие номера не удается запустить и привести к ошибке Недопустимый формат.|  
 |Мастер|Это поле содержит OLE идентификатор ProgID мастера, или строковое представление GUID CLSID мастер, который создается в интегрированной среде разработки.|  
 |Param|Эти части являются необязательными. Вы можете добавить сколько угодно.|  
   
- Параметры позволяют передавать дополнительные пользовательские параметры для мастера VSZ-файл. Каждое значение передается как элемент строку в массив типа Variant в мастер. Дополнительные сведения см. в разделе [пользовательских параметров](../../extensibility/internals/custom-parameters.md). Сведения об использовании VSZ-файл в разработке пользовательские мастера, см. в разделе [. VSZ-файле (элемент управления проекта)](http://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
+ Параметры позволяют передавать дополнительные пользовательские параметры для мастера VSZ-файл. Каждое значение передается как элемент строку в массив типа Variant в мастер. Дополнительные сведения см. в разделе [пользовательских параметров](../../extensibility/internals/custom-parameters.md). Сведения об использовании VSZ-файл в разработке пользовательские мастера, см. в разделе [. VSZ-файле (элемент управления проекта)](https://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
   
  Чтобы добавить идентификатор языкового стандарта по умолчанию VSZ-файла, укажите `FALLBACK_LCID`= xxxx, где xxxx — идентификатор языка, например, 1033 для английского языка. Когда `FALLBACK_LCID` определен параметр, мастер использует идентификатор предоставленного резервного языкового стандарта, если текущий идентификатор не найден.  
   
@@ -56,4 +51,3 @@ Param="WIZARDUI = FALSE"
  [Пользовательские параметры](../../extensibility/internals/custom-parameters.md)   
  [Мастеры](../../extensibility/internals/wizards.md)   
  [Файлы описания каталога шаблона (VSDIR-файлы)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
-

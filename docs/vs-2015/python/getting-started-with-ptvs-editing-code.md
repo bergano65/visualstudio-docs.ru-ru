@@ -1,25 +1,20 @@
 ---
-title: 'Начало работы с PTVS: редактирование кода | Документация Майкрософт'
-ms.custom: ''
+title: Начало работы с PTVS. Редактирование кода | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: b412c87c-2f09-4e25-9cc8-ab54f4c44412
 caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: ef0a84523a2d828e696fb50f641f392ab7bbd39f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550916"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>Начало работы с PTVS. Редактирование кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ from math import sin
   
 ```  
   
- Если при написании кода вы используете идентификатор, который не привязан, но может быть обнаружен в библиотеках, PTVS выдает всплывающее окно быстрого исправления для добавления соответствующей инструкции импорта.  Например, если вы ввели `cos`, то будет **Импорт из математических** предлагаемых.  
+ Если при написании кода вы используете идентификатор, который не привязан, но может быть обнаружен в библиотеках, PTVS выдает всплывающее окно быстрого исправления для добавления соответствующей инструкции импорта.  Например, если вы ввели `cos`, то будет предложен вариант **импорт из math**.  
   
- Для создания кода можно использовать фрагменты.  В меню «Правка» выберите IntelliSense, а затем «Вставить фрагмент».  Выберите Python, а затем def.  Вызовите функцию `make_dot_string` и добавьте один параметр `x`.  Теперь можно добавить в файл утверждения для управляемой тестами разработки: PTVS выведет новые предложения функций в списке вариантов завершения.  
+ Для создания кода можно использовать фрагменты.  В меню «Правка» выберите IntelliSense, а затем «Вставить фрагмент».  Выберите Python, а затем def.  Вызовите функцию `make_dot_string` и добавьте один параметр `x`.  Теперь можно добавить в файл утверждения для разработки на основе тестирования: PTVS выведет новые предложения функций в списке вариантов завершения.  
   
 ```python  
 assert make_dot_string(90) == '          o'  
@@ -71,7 +66,6 @@ def main ():
   
  Эти инструкции можно просмотреть в очень коротком [видеоролике в Youtube](https://www.youtube.com/watch?v=uZGZNEyyeKs&index=3&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Документация на вики-сайте](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
  [Видеоролики по началу работы и углубленному рассмотрению PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-

@@ -1,14 +1,9 @@
 ---
-title: Ожидалось число | Документы Microsoft
-ms.custom: ''
+title: Ожидалось число | Документация Майкрософт
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5001
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b272f51a-97c2-4398-8b46-9cc49a5c0bd6
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46e6525a79ed866b9c714913f11fcbbe13066208
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e07b9e55ddfff54d0668433137079a38c0ddd296
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007427"
 ---
 # <a name="number-expected"></a>Ожидалось число
-Предпринята попытка вызвать **Number.prototype.toString** или **Number.prototype.valueOf** метода объекта типа, отличного от **номер**. Объект вызова этого типа должен иметь тип **номер**.  
+Предпринята попытка вызова **Number.prototype.toString** или **Number.prototype.valueOf** метод на объект типа, отличных от **номер**. Объект этого типа вызова должен иметь тип **номер**.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Вызывать только **Number.prototype.toString** или **Number.prototype.valueOf** методов для объектов типа **номер**.  
+- Вызывается только **Number.prototype.toString** или **Number.prototype.valueOf** методов в объектах типа **номер**.  
   
 ## <a name="see-also"></a>См. также  
  [Объект Number](../../javascript/reference/number-object-javascript.md)   

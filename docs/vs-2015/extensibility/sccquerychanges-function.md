@@ -1,14 +1,9 @@
 ---
 title: Функция SccQueryChanges | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccQueryChanges
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 86403d04c84a8a298d38359a919a5b5b0e9e399c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baa6059a1668be5507994921cb96ac3ed1cfd5fe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200017"
 ---
 # <a name="sccquerychanges-function"></a>Функция SccQueryChanges
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ SCCRTN SccQueryChanges(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Процесс запроса успешно завершена.|  
 |SCC_E_PROJNOTOPEN|Проект не был открыт в системе управления версиями.|  
@@ -74,4 +69,3 @@ SCCRTN SccQueryChanges(
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
  [Коды ошибок](../extensibility/error-codes.md)
-

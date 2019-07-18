@@ -1,34 +1,29 @@
 ---
 title: Расширение проектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8ad4218447e6cc910ff98970d14a53d83ccc8497
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 72841d1f0bbc812d80528858384b14ced2048857
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204489"
 ---
 # <a name="extending-projects"></a>Расширение проектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Проекты и решения, способы, с помощью Visual Studio файлы кода и ресурсов организованы по единицы компиляции и развертывания. Можно найти дополнительные сведения о проектах в [проектов (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Можно создать собственные типы проектов с помощью Visual Studio SDK и Managed Package Framework для проектов, которые можно загрузить на [Managed Package Framework для проектов](http://mpfproj12.codeplex.com/). Чтобы понять способ реализации пользовательских проектов, см. в разделе [Создание нового проекта: под капот, часть первая](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) и [Создание нового проекта: под капот, второй части](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Можно создать собственные типы проектов с помощью Visual Studio SDK и Managed Package Framework для проектов, которые можно загрузить на [Managed Package Framework для проектов](http://mpfproj12.codeplex.com/). Чтобы понять способ реализации пользовательских проектов, см. в разделе [Создание нового проекта: Это работает, часть один](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) и [Создание нового проекта: За кулисами, часть вторая](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  В этом разделе описываются способы создания пользовательских проектов и как управлять различными типами решение Visual Studio.  
   
@@ -58,4 +53,3 @@ ms.locfileid: "51796575"
  В этой статье описывается управление универсальных проектов.  
   
 ## <a name="related-sections"></a>Связанные разделы
-

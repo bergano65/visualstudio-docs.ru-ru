@@ -1,25 +1,20 @@
 ---
 title: Использование сети | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3dd68bec55b53d1b4618e8ae1679603577daf295
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726851"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673824"
 ---
 # <a name="network-usage"></a>Использование сети
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +24,14 @@ ms.locfileid: "51726851"
  Средство «Сеть» поддерживает только приложения универсальной платформы для Windows. Другие платформы в настоящее время не поддерживаются.  
   
 > [!NOTE]
->  Более полное описание средства "Сеть" см. в разделе [Introducing Visual Studio’s network tool](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx) (Введение в средство "Сеть" Visual Studio).  
+> Более полное описание средства "Сеть" см. в разделе [Introducing Visual Studio’s network tool](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx) (Введение в средство "Сеть" Visual Studio).  
   
 ## <a name="collecting-network-tool-data"></a>Сбор данных средством «Сеть»  
  Средство **Сеть** следует запускать с открытым проектом Visual Studio на компьютере Visual Studio.  
   
 1. Откройте проект в Visual Studio.  
   
-2. В меню выберите **Отладка, Профилировщик производительности**. Выберите Сеть и нажмите кнопку **Запуск**.  
+2. В меню выберите **Отладка, Профилировщик производительности**. Выберите **Сеть** и нажмите кнопку **Запуск**.  
   
 3. Средство «Сеть» начнет сбор HTTP-трафика вашего приложения.  
   
@@ -72,16 +67,13 @@ ms.locfileid: "51726851"
 ### <a name="analysis-tips"></a>Советы по анализу  
  Это средство предоставляет информацию об определенных областях, которые могут оказаться полезными при выполнении анализа сети.  
   
-1.  Запросы, ответы на которые полностью предоставляются из кэша, отображаются как **(из кэша)** в столбце **Полученные**. Это поможет определить, насколько эффективно вы используете кэш для экономии пропускной способности, потребляемой пользователями, и не кэшируете ли ответы по ошибке и предоставляете пользователям приложения устаревшие данные.  
+1. Запросы, ответы на которые полностью предоставляются из кэша, отображаются как **(из кэша)** в столбце **Полученные**. Это поможет определить, насколько эффективно вы используете кэш для экономии пропускной способности, потребляемой пользователями, и не кэшируете ли ответы по ошибке и предоставляете пользователям приложения устаревшие данные.  
   
-2.  Ответы с ошибками (4xx или 5xx) отображаются в столбце **Результаты** с красным кодом состояния; они также отмечены в строке сводки. Это позволяет легко отслеживать ошибки среди многочисленных других запросов приложения.  
+2. Ответы с ошибками (4xx или 5xx) отображаются в столбце **Результаты** с красным кодом состояния; они также отмечены в строке сводки. Это позволяет легко отслеживать ошибки среди многочисленных других запросов приложения.  
   
-3.  Ответ кнопки «Качественная печать» (на вкладке «Текст») поможет проанализировать полезные данные ответов JSON, XML, HTML, CSS, JavaScript и TypeScript и повысит удобочитаемость содержимого.  
+3. Ответ кнопки «Качественная печать» (на вкладке «Текст») поможет проанализировать полезные данные ответов JSON, XML, HTML, CSS, JavaScript и TypeScript и повысит удобочитаемость содержимого.  
   
 ## <a name="see-also"></a>См. также  
- [Запуск средств профилирования без отладки](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Блог о Visual Studio: Знакомство с Visual Studio в инспектор сети](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Channel 9 Video: VS Diagnostics tools – New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Видео на Channel 9: Средства диагностики VS — новый профилировщик сети)
-
-
-
+ [Запуск средств профилирования без отладки](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Блог о Visual Studio. Введение в инспектор сети Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Видео на Channel 9. Средства диагностики VS — новый Profiler сети](http://channel9.msdn.com/Series/ConnectOn-Demand/206)

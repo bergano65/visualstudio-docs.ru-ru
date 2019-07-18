@@ -2,7 +2,6 @@
 title: IActiveScriptErrorDebug110::GetExceptionThrownKind | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce3a164f3ee4d81ca849db7c4745948ffe17d56e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: a58add60560f22681f18225d844814e3547b671f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436073"
 ---
 # <a name="iactivescripterrordebug110getexceptionthrownkind"></a>IActiveScriptErrorDebug110::GetExceptionThrownKind
 Возвращает значение, показывающее вид созданного исключения.  
   
 > [!IMPORTANT]
->  [Интерфейс IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) реализуется в PDM версии 11.0 или более поздней. Обнаружено в activdbg100.h.  
+> [Интерфейс IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) реализуется в PDM версии 11.0 или более поздней. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   

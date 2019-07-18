@@ -1,7 +1,6 @@
 ---
 title: CA1060. Переместите методы P/Invoke в класс NativeMethods
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 06686c8c-6ad3-42f7-a355-cbaefa347cfc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e1dc9cf738e74390ea1867966d20f4246d0b1f8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a01c8ca81ab469d578d58e6195171c2e3b07704b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788678"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060. Переместите методы P/Invoke в класс NativeMethods
 
@@ -70,7 +69,7 @@ ms.locfileid: "53874236"
 
 ## <a name="nativemethods-example"></a>Пример NativeMethods
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Так как **NativeMethods** класс не должен быть помечен с помощью **SuppressUnmanagedCodeSecurityAttribute**, потребует P/Invoke, помещаются в ней **UnmanagedCode** разрешение. Так как большинство приложений выполняются с локального компьютера и работать с полным доверием, обычно это не проблема. Тем не менее, если при разработке повторно используемых библиотек, следует определить **SafeNativeMethods** или **UnsafeNativeMethods** класса.
 
  В следующем примере показан **Interaction.Beep** метод, который создает оболочку для **MessageBeep** функции из user32.dll. **MessageBeep** P/Invoke помещается в **NativeMethods** класса.
@@ -81,7 +80,7 @@ ms.locfileid: "53874236"
 
 ## <a name="safenativemethods-example"></a>Пример SafeNativeMethods
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Методы P/Invoke, можно безопасно предоставить любое приложение, и, не имеющие никаких побочных эффектов, которые должны быть помещены в класс, который называется **SafeNativeMethods**. У вас нет разрешения запросу, и вам не нужно платить за меньше внимания, когда они вызываются из.
 
  В следующем примере показан **Environment.TickCount** свойство, которое создает оболочку **GetTickCount** функции из kernel32.dll.
@@ -92,7 +91,7 @@ ms.locfileid: "53874236"
 
 ## <a name="unsafenativemethods-example"></a>Пример UnsafeNativeMethods
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Методы P/Invoke не может вызываться безопасно и может привести к побочным эффектам, которые должны быть помещены в класс, который называется **UnsafeNativeMethods**. Эти методы должны быть тщательно проверены, чтобы убедиться в том, что они не доступны пользователь непреднамеренно. Правило [CA2118: Проверьте использование SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) могут помочь в этом. Кроме того, методы должны иметь другое разрешение, требуемое вместо **UnmanagedCode** при их использовании.
 
  В следующем примере показан **Cursor.Hide** метод, который создает оболочку для **функция ShowCursor** функции из user32.dll.

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - IntelliTrace step-back
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebaacc2b3d90821605c804bec390c887a27cec0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 767181ce917e4cbef69001e07a018e20c89a01f8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915579"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676436"
 ---
-# <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Просмотр моментальных снимков с помощью возврата на шаг назад в IntelliTrace (Visual Studio Enterprise)
+# <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise-c-visual-basic-c"></a>Просмотр моментальных снимков с помощью возврата на шаг назад в IntelliTrace (Visual Studio Enterprise; C#, Visual Basic, C++)
 
 **Функция возврата на шаг назад в IntelliTrace** автоматически создает моментальный снимок вашего приложения для каждого события точки останова и шага отладчика. Используя записанные моментальные снимки, вы можете возвращаться к этим точкам останова и шагам, просматривая предыдущее состояние приложения. Возможность возврата на шаг назад в IntelliTrace позволяет сэкономить время в тех случаях, когда вам нужно просмотреть предыдущее состояние приложения, но не требуется перезапускать отладку или воссоздавать необходимое состояние приложения.
 

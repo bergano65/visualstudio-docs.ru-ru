@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Перемещение инструментированных двоичных файлов | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Перемещение инструментированных двоичных файлов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.binaries
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 258f49e8-4b09-477e-a132-8fad685b66f4
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 012236c9d3d02f498843f7a185efdd07c6e96a4d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 00b39b91b0a776438199d1df3c212cb9fe40f338
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155519"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Практическое руководство. Перемещение инструментированных двоичных файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,21 +30,18 @@ ms.locfileid: "51770860"
   
  **Требования**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-relocate-instrumented-binary"></a>Перемещение инструментированного двоичного файла  
   
-1.  В **обозревателе производительности**щелкните правой кнопкой мыши сеанс производительности, а затем выберите **Свойства**.  
+1. В **обозревателе производительности**щелкните правой кнопкой мыши сеанс производительности, а затем выберите **Свойства**.  
   
-2.  На **страницах свойств**щелкните пункт **Двоичный файл** .  
+2. На **страницах свойств**щелкните пункт **Двоичный файл** .  
   
-3.  Установите флажок **Переместить инструментированные двоичные файлы** .  
+3. Установите флажок **Переместить инструментированные двоичные файлы** .  
   
-4.  Укажите расположение для инструментированного двоичного файла.  
+4. Укажите расположение для инструментированного двоичного файла.  
   
 ## <a name="see-also"></a>См. также  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [VSInstr](../profiling/vsinstr.md)
-
-
-

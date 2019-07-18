@@ -9,26 +9,24 @@ helpviewer_keywords:
 - SelectionContainer class
 - SelectableObjects property
 ms.assetid: 1e925025-3d21-4cdb-a917-78db7bb78fe9
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce0a3f760f3ac34b602b236064dee80923d65845
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50f403c6bb92dbd11b53c5814fb6c9c7f512be42
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880342"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313054"
 ---
 # <a name="extend-properties-and-the-property-window"></a>Расширение свойств и окна свойств
-**Свойства** окно используется для просмотра и изменения свойств времени разработки и события выбранных объектов.  
-  
- При выборе объекта в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], открытые свойства этого объекта отображаются в **свойства** окна. Дополнительные сведения см. в разделе [Общие сведения об окне свойств](../extensibility/internals/properties-window-overview.md).  
-  
-## <a name="in-this-section"></a>Содержание раздела  
- [Свойств в окне «Свойства»](../extensibility/exposing-properties-to-the-properties-window.md)  
- Объясняет, как может иметь пользовательских свойств в окне свойств.  
-  
- [Получение свойств проекта](../extensibility/getting-project-properties.md)  
- В этой статье описывается получение свойств проекта.
+**Свойства** окно используется для просмотра и изменения свойств времени разработки и события выбранных объектов.
+
+ При выборе объекта в [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], открытые свойства этого объекта отображаются в **свойства** окна. Дополнительные сведения см. в разделе [Общие сведения об окне свойств](../extensibility/internals/properties-window-overview.md).
+
+## <a name="in-this-section"></a>Содержание раздела
+- [Свойств в окне «Свойства»](../extensibility/exposing-properties-to-the-properties-window.md) объясняет, как может иметь пользовательских свойств в окне свойств.
+
+- [Получение свойств проекта](../extensibility/getting-project-properties.md) объясняется, как получить свойства проекта.

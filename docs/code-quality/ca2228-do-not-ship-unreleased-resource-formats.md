@@ -1,7 +1,6 @@
 ---
 title: CA2228. Не поставляйте предварительные форматы ресурсов
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotShipUnreleasedResourceFormats
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2c614edc-4e94-4b4f-8067-eea677a75cd9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e6f2216d26315491e7e187acdd31530c0bcf013
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f8a672056c8663c2e27ec730e542083aee9738f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829080"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714976"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228. Не поставляйте предварительные форматы ресурсов
 
@@ -32,13 +31,17 @@ ms.locfileid: "53829080"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Файл ресурсов был создан с помощью версии .NET Framework, в настоящее время не поддерживается.
+
+Файл ресурсов был создан с помощью версии платформы .NET, которая в настоящее время не поддерживается.
 
 ## <a name="rule-description"></a>Описание правила
- Файлы ресурсов, которые были созданы с помощью предварительных версий платформы .NET Framework может стать недоступной в поддерживаемых версиях платформы .NET Framework.
+
+Файлы ресурсов, которые были созданы с помощью предварительных версий .NET может не работать в поддерживаемых версиях платформы .NET.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, ресурс сборки с помощью поддерживаемой версии платформы .NET Framework.
+
+Чтобы устранить нарушение этого правила, ресурс сборки с помощью поддерживаемой версии .NET.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+
+Для этого правила отключать вывод предупреждений не следует.

@@ -1,23 +1,24 @@
 ---
 title: Редактор XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5c1c81abbbc2f252744c465adf1cb99b3396d54
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002484"
 ---
 # <a name="xml-editor"></a>Редактор XML
 
-Редактор XML основан на текстовом редакторе Visual Studio и включает дополнительную поддержку языков XML. Редактор XML включает в себя следующие компоненты:
+Редактор XML в Visual Studio основана на текстовом редакторе и включает дополнительную поддержку языков XML. При открытии файла XML в Visual Studio, он открывается в редакторе XML.
+
+Редактор XML включает в себя следующие компоненты:
 
 - Проверка синтаксиса XML 1.0.
 
@@ -33,13 +34,13 @@ ms.locfileid: "53873775"
 
 - Преобразование определения DTD или XDR-схемы в XML-схему.
 
-- Проверка синтаксиса XSLT 1.0.
+- Проверка синтаксиса XSLT.
 
 - Структурирование документов, позволяющее разворачивать и сворачивать элементы.
 
 - Интеграция с [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md). Это обеспечивает иерархическое представление XML-схем.
 
-Редактор XML вызывается для распространенных расширений файлов, таких как *.xml*, *.xsd*, *.xsl*, и *.config*. Также это приложение вызывается для неизвестных расширений имен файлов, если есть основания полагать, что файл содержит код XML. Также можно открыть любой файл в редакторе XML с помощью **открыть с помощью** параметр и выбрав в списке редактора XML.
+Редактор XML вызывается для распространенных расширений файлов, таких как *.xml*, *.xsd*, *.xsl*, и *.config*. Также это приложение вызывается для неизвестных расширений имен файлов, если есть основания полагать, что файл содержит код XML.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
@@ -47,14 +48,16 @@ ms.locfileid: "53873775"
 
 ## <a name="xslt-profiler"></a>Профилировщик XSLT
 
-[Профилировщик XSLT](../xml-tools/walkthrough-xslt-profiler.md) создает подробные сведения о производительности XSLT, отчеты, которые помогают измерять, оценивать и исправлять проблемы, связанные с производительностью, в код XSLT. Профилировщик XSLT также содержит полезные подсказки по оптимизации таблиц стилей XSL и XSLT.
+[Профилировщик XSLT](../xml-tools/xslt-profiler.md) создает подробные сведения о производительности XSLT, отчеты, которые помогают измерять, оценивать и исправлять проблемы, связанные с производительностью, в код XSLT. Профилировщик XSLT также содержит полезные подсказки по оптимизации таблиц стилей XSL и XSLT.
 
-## <a name="xslt-hierarchy"></a>XSLT иерархии
+## <a name="xslt-hierarchy"></a>Иерархия XSLT
 
 [Средство XSLT иерархии](../xml-tools/walkthrough-using-xslt-hierarchy.md) позволяет добавлять точки останова в включаемая таблицы стилей и/или встроенные правила шаблона.
 
 ## <a name="see-also"></a>См. также
 
-- [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md) предоставляет сведения о текстовом редакторе.
-- [Справочник по стандартам XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) содержит сведения о технологиях XML, включая XML, определение типа документа (DTD), язык определения схемы XML (XSD) и XSLT.
+- [Параметры редактора XML - форматирование](../ide/reference/options-text-editor-xml-formatting.md)
+- [Параметры редактора XML - Разное](../ide/reference/options-text-editor-xml-miscellaneous.md)
+- [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Справочник по стандартам XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
 - [Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

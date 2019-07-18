@@ -1,14 +1,9 @@
 ---
 title: Диалоговое окно "События сборки" (Visual Basic) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesBuildEvents
 helpviewer_keywords:
@@ -21,31 +16,30 @@ ms.assetid: 3a81a7c7-39f9-47a8-ba5a-b351227f380e
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4d0ad4235a309fafd025c4c205b9fa150f47af5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5eb4473056e8d9c42fedf781ed0f5d1189f42fca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442664"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Диалоговое окно "События построения" (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
-В диалоговом окне **События сборки** можно задать инструкции по конфигурации сборки. Здесь же можно указать условия, при которых будут выполняться события, предшествующие сборке и следующие после нее. Дополнительные сведения см. в статье [Практическое руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
+В диалоговом окне **События сборки** можно задать инструкции по конфигурации сборки. Здесь же можно указать условия, при которых будут выполняться события, предшествующие сборке и следующие после нее. Дополнительные сведения см. в разделе [Как Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
   
  **Командная строка события перед сборкой**  
  Определяет команды, выполняемые перед началом сборки. Для ввода длинных команд нажмите кнопку **Изменить событие "Перед сборкой"**, чтобы открыть диалоговое окно ["Командная строка события перед сборкой" или "Командная строка события после сборки"](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).  
   
 > [!NOTE]
->  События перед сборкой не выполняются, если проект актуален и сборка не запускается.  
+> События перед сборкой не выполняются, если проект актуален и сборка не запускается.  
   
  **Командная строка события после сборки**  
  Определяет все команды, выполняемые после завершения сборки. Для ввода длинных команд нажмите кнопку **Изменить событие "После сборки"**, чтобы открыть диалоговое окно **"Командная строка события перед сборкой" или "Командная строка события после сборки"**.  
   
 > [!NOTE]
->  Добавьте оператор `call` перед всеми командами после сборки, запускающими BAT-файлы. Например, `call C:\MyFile.bat` или `call C:\MyFile.bat call C:\MyFile2.bat`.  
+> Добавьте оператор `call` перед всеми командами после сборки, запускающими BAT-файлы. Например, `call C:\MyFile.bat` или `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
  **Выполнить событие после сборки**  
  Определяет условия для выполнения события после сборки, как показано в приведенной ниже таблице.  
@@ -60,6 +54,3 @@ ms.locfileid: "49189102"
  [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Практическое руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Диалоговое окно "Командная строка события перед сборкой" или "Командная строка события после сборки"](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-
-
-

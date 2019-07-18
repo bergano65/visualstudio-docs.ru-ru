@@ -2,7 +2,6 @@
 title: Обзор отладки активных скриптов | Документы Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975790"
 ---
 # <a name="active-script-debugging-overview"></a>Обзор отладки активных скриптов
 Интерфейсы отладки активных скриптов обеспечивают не зависящую от языка и узла отладку, а также поддерживают широкий спектр сред разработки.  
@@ -292,5 +291,5 @@ ms.locfileid: "50220226"
   [Интерфейс ISimpleConnectionPoint](../winscript/reference/isimpleconnectionpoint-interface.md)  
   Предоставляет простой способ для описания и перечисление событий, произошедших в конкретной точке подключения, для модулей скриптов.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Интерфейсы отладчика активных скриптов](../winscript/reference/active-script-debugger-interfaces.md)

@@ -1,44 +1,39 @@
 ---
 title: Поддержка категорий параметров | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - settings, supporting with Visual Studio SDK
 - Visual Studio SDK, supporting settings
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
-manager: douge
-ms.openlocfilehash: 53abd3c9f35f16c2f2ae62e2c4f339a86477a8b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244937"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689099"
 ---
 # <a name="support-for-settings-categories"></a>Поддержка категорий параметров
-Категория параметров состоит из группы параметров, предназначенных для настройки интегрированной среды разработки (IDE). Например, параметры позволяют управлять макетом окон [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и содержимым меню. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Категория параметров состоит из группы параметров, предназначенных для настройки интегрированной среды разработки (IDE). Например, параметры позволяют управлять макетом окон [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и содержимым меню. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  В меню **Сервис** щелкните элемент **Импорт и экспорт параметров** , чтобы запустить **Мастер импорта и экспорта параметров**. Мастер предлагает три варианта: экспорт, импорт или сброс параметров. Например, при выборе экспорта открывается мастер **Выбор параметров для экспорта** .  
   
  Элемент управления деревом на панели навигации этой страницы перечисляет категории. Категория — это группа связанных параметров, которые отображаются в виде "точки настраиваемых параметров", то есть в виде флажка. Используйте эти флажки для выбора категорий, сохраняемых в файле VSETTINGS. Мастер позволяет задать имя для файла VSETTINGS и указать путь к нему.  
   
 > [!NOTE]
->  Параметры сохраняются и восстанавливаются в составе категории — имена отдельных параметров в мастере не отображаются.  
+> Параметры сохраняются и восстанавливаются в составе категории — имена отдельных параметров в мастере не отображаются.  
   
  Платформа Managed Package Framework (MPF) поддерживает создание категорий параметров с минимальным объемом дополнительного кода.  
   
--   Для получения пакета VSPackage, используемого в качестве контейнера для категории, можно создать подкласс класса <xref:Microsoft.VisualStudio.Shell.Package>.  
+- Для получения пакета VSPackage, используемого в качестве контейнера для категории, можно создать подкласс класса <xref:Microsoft.VisualStudio.Shell.Package>.  
   
--   Вы создаете саму категорию, сделав ее производной от класса <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+- Вы создаете саму категорию, сделав ее производной от класса <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
--   Для соединения этих двух компонентов используется <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+- Для соединения этих двух компонентов используется <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## <a name="support-for-settings-categories"></a>Поддержка категорий параметров  
  Класс <xref:Microsoft.VisualStudio.Shell.Package> обеспечивает поддержку для создания категорий. Класс <xref:Microsoft.VisualStudio.Shell.DialogPage> реализует категорию. Реализация по умолчанию <xref:Microsoft.VisualStudio.Shell.DialogPage> предлагает пользователю свои общие свойства в виде категории. Для получения дополнительной информации см. [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  
@@ -53,7 +48,7 @@ ms.locfileid: "49244937"
  Путь реестра для категории параметров определяется объединением <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, слова, UserSettings, категории параметров и имени точки настраиваемых параметров. Имена категории параметров и точки настраиваемых параметров объединяются и разделяются символом подчеркивания для формирования канонического нелокализованного имени, которое отображается в реестре. Например, если категория параметров называется "My Category", имя точки настраиваемых параметров имеет значение "My Settings", а ApplicationRegistryRoot — HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, то эта категория параметров имеет раздел реестра HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My Settings.  
   
 > [!NOTE]
->  Каноническое имя не отображается в пользовательском интерфейсе. Оно используется для сопоставления считываемого имени с категорией параметров, что во многом аналогично программному идентификатору (ProgID).  
+> Каноническое имя не отображается в пользовательском интерфейсе. Оно используется для сопоставления считываемого имени с категорией параметров, что во многом аналогично программному идентификатору (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Атрибут категории параметров  
  <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Определяет сопоставление категорий с точками настраиваемых параметров в **мастер импорта и экспорта параметров** путем связывания категории с пакетом VSPackage, который его предоставляет. Рассмотрим следующий фрагмент кода:  
@@ -69,4 +64,4 @@ ms.locfileid: "49244937"
  [Создание страницы параметров](../extensibility/creating-an-options-page.md)   
  [Примеры VSSDK](../misc/vssdk-samples.md)   
  [Состояние VSPackage](../misc/vspackage-state.md)   
- [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

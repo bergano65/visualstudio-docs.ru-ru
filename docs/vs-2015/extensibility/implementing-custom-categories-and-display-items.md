@@ -1,27 +1,22 @@
 ---
 title: Реализация пользовательских категорий и отображаемые элементы | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 394f8f99539ab49c1201fa61ce612aee22ff2064
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 474d5c66507b56bea609568b6acfe9f5eff75e9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414610"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Реализация пользовательских категорий и отображаемые элементы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ VSPackage может предоставить контроль над шрифт
   
 - Добавить в реестр с двумя значениями:  
   
-  |name|Тип|Данные|Описание:|  
+  |name|Тип|Данные|Описание|  
   |----------|----------|----------|-----------------|  
   |Категория|REG_SZ|Идентификатор GUID|Идентификатор GUID, созданный для идентификации категории.|  
   |Пакет|REG_SZ|Идентификатор GUID|Идентификатор GUID VSPackage службы, которая поддерживает категории.|  
@@ -73,7 +68,7 @@ VSPackage может предоставить контроль над шрифт
   
 - Добавить в реестр с двумя значениями:  
   
-  |name|Тип|Данные|Описание:|  
+  |name|Тип|Данные|Описание|  
   |----------|----------|----------|-----------------|  
   |Категория|REG_SZ|Идентификатор GUID|Идентификатор GUID, созданный для идентификации группы.|  
   |Пакет|REG_SZ|Идентификатор GUID|Идентификатор GUID службы, которая поддерживает категории.|  
@@ -88,24 +83,24 @@ VSPackage может предоставить контроль над шрифт
   
 - Методы реализуется через <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> необходимо указать с помощью интегрированной среды разработки:  
   
-  -   Списки **отображаемые элементы** в **категории.**  
+  - Списки **отображаемые элементы** в **категории.**  
   
-  -   Локализуемые имена для **отображаемые элементы**.  
+  - Локализуемые имена для **отображаемые элементы**.  
   
-  -   Отображаемые сведения для каждого члена **категории**.  
+  - Отображаемые сведения для каждого члена **категории**.  
   
   > [!NOTE]
-  >  Каждый **категории** должен содержать по крайней мере один **отображаемым элементом**.  
+  > Каждый **категории** должен содержать по крайней мере один **отображаемым элементом**.  
   
 - Интегрированная среда разработки использует `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` интерфейса позволяет определить объединение несколько категорий.  
   
    Его реализация предоставляет интегрированную среду разработки с помощью:  
   
-  -   Список **категории** , относятся к данной группе.  
+  - Список **категории** , относятся к данной группе.  
   
-  -   Доступ к экземплярам <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> поддержки каждого **категории** в пределах группы.  
+  - Доступ к экземплярам <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> поддержки каждого **категории** в пределах группы.  
   
-  -   Имена локализуемых групп.  
+  - Имена локализуемых групп.  
   
 - Обновление интегрированной среды разработки:  
   
@@ -116,18 +111,18 @@ VSPackage может предоставить контроль над шрифт
 ## <a name="to-handle-font-and-color-changes"></a>Для обработки шрифт и цвет изменяется.  
  Для правильной поддержки цветовое выделение текста, который отображает VSPackage, выделение цветом служба, поддерживающая VSPackage должен отвечать на инициированного пользователем изменения, внесенные через **шрифты и цвета** страница «свойства». VSPackage достигается путем:  
   
--   Обработка события, вызываемые IDE путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> интерфейс.  
+- Обработка события, вызываемые IDE путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> интерфейс.  
   
      Интегрированная среда разработки вызывает соответствующий метод следующие пользовательские изменения из **шрифты и цвета** страницы. Например, он вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> метод, если выбран новый шрифт.  
   
-     - или -  
+     -или-  
   
--   Опрос для изменения интегрированной среды разработки.  
+- Опрос для изменения интегрированной среды разработки.  
   
      Это можно сделать через реализовать систему <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс. Несмотря на то что в основном для поддержки сохраняемости, <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> метод может быть использован для получения данные шрифта и цвета для **отображаемые элементы**. Дополнительные сведения см. в разделе [параметры доступа к хранятся шрифта и цвета](../extensibility/accessing-stored-font-and-color-settings.md).  
   
     > [!NOTE]
-    >  Чтобы обеспечить правильность результатов, полученных опроса, часто бывает полезно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> интерфейс, чтобы определить необходимость сброса кэша и обновления перед вызовом методов извлечения <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.  
+    > Чтобы обеспечить правильность результатов, полученных опроса, часто бывает полезно использовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> интерфейс, чтобы определить необходимость сброса кэша и обновления перед вызовом методов извлечения <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> интерфейс.  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>   
@@ -138,6 +133,5 @@ VSPackage может предоставить контроль над шрифт
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  [Начало шрифт и цвет шрифта для цветовое выделение текста](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [Доступ к хранимой шрифтов и цветов](../extensibility/accessing-stored-font-and-color-settings.md)   
- [Практическое: доступ к встроенной шрифтов и цветовой схемы](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
+ [Практическое руководство. Доступ к встроенной шрифтов и цветовой схемы](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
  [Общие сведения о шрифтах и цветах](../extensibility/font-and-color-overview.md)
-

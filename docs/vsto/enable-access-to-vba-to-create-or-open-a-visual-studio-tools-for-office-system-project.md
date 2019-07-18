@@ -1,10 +1,9 @@
 ---
-title: Включение доступа к коду VBA, чтобы создать или открыть Visual Studio Tools для системы Microsoft Office проекта
+title: VBA доступа, чтобы создать или открыть проект VSTO system
 decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-titleSuffix: ''
+titleSuffix: Visual Studio Tools for Microsoft Office
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vst.project.vbawrongversion
@@ -17,15 +16,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0404498490569d3c9edee5b9e190535eafcb105b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c85a907b057118c28ea35b8a920337ecdad5ad01
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933493"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177653"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Включение доступа к коду VBA, чтобы создать или открыть Visual Studio Tools для системы Microsoft Office проекта
 
@@ -41,8 +40,6 @@ ms.locfileid: "53933493"
  Важно отметить, что отключение доступа к системе проектов Visual Basic для приложений само по себе не защитит вас от вирусов, оно просто помогает предотвратить распространение некоторых вирусов в другие документы в случае заражения компьютера макровирусом. Эта возможность отключена по умолчанию, что обеспечивает дополнительный уровень защиты компьютера. Однако ее включение не делает ваш компьютер более подверженным атакам, если вы выполняете рекомендации по обеспечению безопасности.
 
  Лучший способ защиты от макровирусов Office — выполнение приложений Office с высоким или очень высоким уровнем безопасности, доверять макросам только из проверенных и известных источников и будьте в курсе обновлений и антивирусных программ.
-
- Дополнительные сведения о защите компьютера от вирусов и другого вредоносного кода, см. в разделе [ http://www.microsoft.com/protect ](http://www.microsoft.com/protect).
 
  Можно включить или отключить параметр **Доверять доступ к Visual Basic Project** вручную.
 
@@ -127,5 +124,4 @@ ms.locfileid: "53933493"
 5. Выберите **найти и исправить ошибки в установке Office**, а затем нажмите кнопку **установить**.
 
 ## <a name="see-also"></a>См. также
-
- [Безопасные решения Office](../vsto/securing-office-solutions.md)
+- [Безопасные решения Office](../vsto/securing-office-solutions.md)

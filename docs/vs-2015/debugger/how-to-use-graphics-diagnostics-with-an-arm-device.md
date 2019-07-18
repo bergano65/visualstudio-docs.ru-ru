@@ -1,25 +1,20 @@
 ---
-title: 'Практическое: использование диагностики графики с устройством ARM | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Использование диагностики графики с устройством ARM | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 346fd3c0-9e92-4ab8-bb3b-1aa9000a2483
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c5122cb009b3624388ff8825b34cae8ca44a546
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5bbe12449849b656af2658c5bab667b0e611515e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728683"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685875"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Практическое руководство. Использование диагностики графики с устройством ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,26 +28,23 @@ ms.locfileid: "51728683"
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>Включение удаленной отладки на устройстве с архитектурой ARM  
   
-1.  Установка [политику комплектов ARM](http://msdn.microsoft.com/windows/desktop/dn469188) на устройстве на основе ARM.  
+1. Установка [политику комплектов ARM](https://msdn.microsoft.com/windows/desktop/dn469188) на устройстве на основе ARM.  
   
-2.  Установка [инструменты удаленной отладки](http://go.microsoft.com/fwlink/?LinkId=393086) на устройстве на основе ARM.  
+2. Установка [инструменты удаленной отладки](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) на устройстве на основе ARM.  
   
 > [!IMPORTANT]
->  В случае с устройствами Windows Phone 8.1 необходимо зарегистрировать телефон для разработки. Для этого вы должны быть зарегистрированным разработчиком. Дополнительные сведения см. в разделе [как развернуть и запустить приложение для Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
+> В случае с устройствами Windows Phone 8.1 необходимо зарегистрировать телефон для разработки. Для этого вы должны быть зарегистрированным разработчиком. Дополнительные сведения см. в разделе [как развернуть и запустить приложение для Windows Phone 8](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
   
  Включив удаленную отладку на устройстве, сделайте его целевым объектом отладки и запустите диагностику графики.  
   
 #### <a name="to-configure-and-start-graphics-diagnostics-on-your-device"></a>Настройка и запуск диагностики графики на устройстве  
   
-1.  На **платформ решения** стрелку раскрывающегося списка выберите **ARM** таким образом, чтобы устройства на базе ARM будут доступны как цели удаленной отладки.  
+1. На **платформ решения** стрелку раскрывающегося списка выберите **ARM** таким образом, чтобы устройства на базе ARM будут доступны как цели удаленной отладки.  
   
-2.  На **целевой объект отладки** раскрывающемся списке выберите устройство ARM.  
+2. На **целевой объект отладки** раскрывающемся списке выберите устройство ARM.  
   
-3.  В меню, выберите **Отладка**, **графики**, **Начать диагностику**. (Или нажмите клавиши ALT + F5.)  
+3. В меню, выберите **Отладка**, **графики**, **Начать диагностику**. (Клавиатура: ALT + F5)  
   
 ## <a name="see-also"></a>См. также  
  [Запустите Windows Store apps на удаленном компьютере](../debugger/run-windows-store-apps-on-a-remote-machine.md)   
  [Практическое руководство. Изменение машины воспроизведения диагностики графики](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)
-
-
-

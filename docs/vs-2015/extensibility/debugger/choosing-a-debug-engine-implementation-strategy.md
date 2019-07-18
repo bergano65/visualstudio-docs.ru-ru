@@ -1,26 +1,21 @@
 ---
 title: Выбор стратегии реализации модуля отладки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9d2f4d4f907dcabb2aff5457abbbe215507d7601
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6b03e69892da217d84d56b39b7df61784907d2b0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183460"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Выбор стратегии реализации модуля отладки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +29,9 @@ ms.locfileid: "51734630"
   
  В противном случае можно выбрать между созданием DE внутри процесса на SDM или в процессе для отлаживаемой программы. Очень важно определить, должен ли в вычислителе выражений DE частый доступ к хранилищу символов программы и в хранилище символов могут загружаться в память для быстрого доступа. Также необходимо учитывайте следующее:  
   
--   При отсутствии большого числа вызовов между вычислитель выражений и в хранилище символов или в хранилище символов можно считать в памяти SDM, создайте ДЕ в процесс для SDM. CLSID для обработчика отладки, необходимо вернуться к SDM, когда он присоединяется к программе. Для создания экземпляра в процессе DE SDM использует этот идентификатор CLSID.  
+- При отсутствии большого числа вызовов между вычислитель выражений и в хранилище символов или в хранилище символов можно считать в памяти SDM, создайте ДЕ в процесс для SDM. CLSID для обработчика отладки, необходимо вернуться к SDM, когда он присоединяется к программе. Для создания экземпляра в процессе DE SDM использует этот идентификатор CLSID.  
   
--   Если DE необходимо вызвать программу для доступа к хранилищу символов, создайте ДЕ в работе с программой. В этом случае программа создает экземпляр DE.  
+- Если DE необходимо вызвать программу для доступа к хранилищу символов, создайте ДЕ в работе с программой. В этом случае программа создает экземпляр DE.  
   
 ## <a name="see-also"></a>См. также  
  [Расширяемость отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Параметры шаблона | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 1b567143-08c6-4d7a-b484-49f0671754fe
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ed7dd478f63cf4d5dba38f6d721d4b728e1856b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419625"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +27,21 @@ ms.locfileid: "49238905"
 С помощью параметров в шаблонах вы можете заменить значения в ключевых частях шаблона, например имена классов и пространства имен, при создании экземпляра шаблона. Эти параметры заменяются с помощью мастера шаблонов, запускающегося в фоновом режиме, когда пользователь нажимает кнопку **ОК** в диалоговом окне **Новый проект** или **Добавление нового элемента**.  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>Объявление и включение параметров шаблона  
- Параметры шаблона объявляются в формате $*параметр*$. Пример:  
+ Параметры шаблона объявляются в формате $*параметр*$. Например:  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>Включение подстановки параметров в шаблонах  
   
-1.  В VSTEMPLATE-файле шаблона найдите элемент `ProjectItem`, соответствующий элементу, для которого требуется включить замену параметров.  
+1. В VSTEMPLATE-файле шаблона найдите элемент `ProjectItem`, соответствующий элементу, для которого требуется включить замену параметров.  
   
-2.  Задайте атрибуту `ReplaceParameters` элемента `ProjectItem` значение `true`.  
+2. Задайте атрибуту `ReplaceParameters` элемента `ProjectItem` значение `true`.  
   
-3.  В файле кода для элемента проекта укажите соответствующие параметры. Например, следующий параметр указывает, что безопасное имя проекта следует использовать для пространства имен в файле:  
+3. В файле кода для элемента проекта укажите соответствующие параметры. Например, следующий параметр указывает, что безопасное имя проекта следует использовать для пространства имен в файле:  
   
     ```  
     namespace $safeprojectname$  
@@ -56,7 +51,7 @@ ms.locfileid: "49238905"
  В таблице ниже перечислены параметры зарезервированного шаблона, которые могут использоваться любым шаблоном.  
   
 > [!NOTE]
->  Параметры шаблонов зависят от регистра символов.  
+> Параметры шаблонов зависят от регистра символов.  
   
 |Параметр|Описание|  
 |---------------|-----------------|  
@@ -128,8 +123,5 @@ namespace $safeprojectname$
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
-
-
-

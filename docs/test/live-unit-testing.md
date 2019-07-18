@@ -1,7 +1,6 @@
 ---
 title: Live Unit Testing
-ms.date: 2017-03-07
-ms.prod: visual-studio-dev15
+ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,49 +9,32 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a443eddc56b3aa5af6e4ce1cb8cab958d2be621
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786552"
 ---
-# <a name="live-unit-testing-with-visual-studio-2017"></a>Функция Live Unit Testing в Visual Studio 2017
+# <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing в Visual Studio
 
 В процессе разработки приложения функция Live Unit Testing автоматически выполняет все затронутые модульные тесты в фоновом режиме и отображает результаты и объем протестированного кода в интегрированной среде разработки Visual Studio в режиме реального времени. При изменении кода эта функция предоставляет отчет о том, как внесенные изменения повлияли на имеющиеся и покрывается ли новый добавленный код одним или несколькими имеющимися тестами. За счет этого вы не забудете написать модульные тесты при исправлении ошибок или добавлении новых функций.
 
 > [!NOTE]
-> Функция Live Unit Testing доступна в проектах C# и Visual Basic, предназначенных для .NET Core или .NET Framework, в выпуске Visual Studio 2017 Enterprise.
+> Функция Live Unit Testing доступна в проектах C# и Visual Basic, предназначенных для .NET Core или .NET Framework, в выпуске Visual Studio Enterprise.
 
 Используемая для тестирования функция Live Unit Testing сохраняет данные о состоянии тестов. Благодаря этой возможности функция Live Unit Testing обеспечивает высокую производительность наряду с динамическим выполнением тестов в ответ на изменения в коде.
 
 ## <a name="supported-test-frameworks"></a>Поддерживаемые тестовые платформы
 Функция Live Unit Testing работает на трех известных платформах модульного тестирования, приведенных в таблице ниже. В этой таблице также приведены сведения о минимальной поддерживаемой версии адаптеров и платформ. Платформы модульного тестирования доступны на сайте NuGet.org.
 
-<table>
-<tr>
-   <th>Тестовая платформа</th>
-   <th>Минимальная версия адаптера Visual Studio</th>
-   <th>Минимальная версия платформы</th>
-</tr>
-<tr>
-   <td>xUnit.net</td>
-   <td> xunit.runner.visualstudio версии 2.2.0-beta3-build1187</td>
-   <td>xunit 1.9.2</td>
-</tr>
-<tr>
-   <td>NUnit</td>
-   <td>NUnit3TestAdapter версии 3.5.1</td>
-   <td>NUnit версии 3.5.0</td>
-</tr>
-<tr>
-   <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-preview</td>
-   <td>MSTest.TestFramework 1.0.5-preview</td>
-</tr>
-</table>
+|Тестовая платформа  |Минимальная версия адаптера Visual Studio  |Минимальная версия платформы  |
+|---------|---------|---------|
+|xUnit.net |xunit.runner.visualstudio версии 2.2.0-beta3-build1187 |xunit 1.9.2 |
+|NUnit |NUnit3TestAdapter версии 3.5.1 |NUnit версии 3.5.0 |
+|MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
-Если у вас есть старые тестовые проекты на основе MSTest, которые ссылаются на `Microsoft.VisualStudio.QualityTools.UnitTestFramework`, и вы не хотите переходить на более новые пакеты NuGet MSTest, выполните обновление до Visual Studio 2017 версии 15.4.
+Если у вас есть старые тестовые проекты на основе MSTest, которые ссылаются на `Microsoft.VisualStudio.QualityTools.UnitTestFramework`, и вы не хотите переходить на более новые пакеты NuGet MSTest, выполните обновление до Visual Studio 2017 версии 15.4 или более поздней.
 
 В некоторых случаях, чтобы обеспечить работу Live Unit Testing, вам потребуется явным образом восстановить пакеты NuGet, на которые ссылается проект в решении. Это можно сделать, выполнив сборку решения явным образом (в меню верхнего уровня Visual Studio выберите **Пересобрать решение** > **Собрать**) или восстановив пакеты в решении (щелкните решение правой кнопкой мыши и выберите пункт **Восстановить пакеты NuGet**) перед включением Living Unit Testing.
 
@@ -179,8 +161,8 @@ ms.locfileid: "53892852"
 
 Чтобы выбрать отдельные проекты в модульных тестах, запустите Live Unit Testing и выполните следующие действия:
 
-1.  В **обозревателе решений** щелкните решение правой кнопкой мыши и выберите **Динамические тесты** > **Исключить**, чтобы исключить все решение.
-1.  Щелкните правой кнопкой мыши каждый тестовый проект, который вы хотите добавить в тесты, и выберите **Динамические тесты** > **Включить**.
+1. В **обозревателе решений** щелкните решение правой кнопкой мыши и выберите **Динамические тесты** > **Исключить**, чтобы исключить все решение.
+1. Щелкните правой кнопкой мыши каждый тестовый проект, который вы хотите добавить в тесты, и выберите **Динамические тесты** > **Включить**.
 
 **Исключение отдельных тестов в окне редактора кода**
 
@@ -201,4 +183,4 @@ ms.locfileid: "53892852"
 - [Средства тестирования кода](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Блог о функции Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Динамическое модульное тестирование: вопросы и ответы](live-unit-testing-faq.md)
-- [Видео на Channel 9. Функция Live Unit Testing в Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Видео на Channel 9. Функция Live Unit Testing в Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

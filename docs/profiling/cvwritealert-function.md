@@ -15,64 +15,61 @@ helpviewer_keywords:
 ms.assetid: 937aa9d6-278a-4df3-bef7-151441df16d5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 743cec7c632bbfca7faf3659ffba5b337553ecee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b7cc2316168d14c6c996c4d55065771c85ffdfc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62989772"
 ---
 # <a name="cvwritealert-function"></a>Функция CvWriteAlert
-Записывает оповещение в файл трассировки визуализатора параллелизма.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C  
-HRESULT CvWriteAlertW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ PCWSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteAlertA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ PCSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteAlertVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ PCWSTR pMessage,  
-    _In_ va_list argList);  
-  
-HRESULT CvWriteAlertVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ PCSTR pMessage,  
-    _In_ va_list argList);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `argList`  
- Список аргументов.  
-  
- `pMarkerSeries`  
- Допустимый контекст набора маркеров. Не может принимать значение NULL.  
-  
- `pMessage`  
- Строка формата сообщений. Не может принимать значение NULL.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Значение S_OK, если сообщение успешно записано. Код ошибки в том случае, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.  
-  
-## <a name="requirements"></a>Требования  
- **Заголовок:** *cvmarkers.h*  
-  
- **Юникод:** CvWriteAlertW, CvWriteAlertVW  
-  
- **ANSI:** CvWriteAlertA, CvWriteAlertVA  
-  
-## <a name="see-also"></a>См. также  
- [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)
+Записывает оповещение в файл трассировки визуализатора параллелизма.
+
+## <a name="syntax"></a>Синтаксис
+
+```C
+HRESULT CvWriteAlertW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteAlertA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteAlertVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvWriteAlertVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList);
+```
+
+#### <a name="parameters"></a>Параметры
+ `argList` Список аргументов.
+
+ `pMarkerSeries` Допустимый контекст набора маркеров. Не может принимать значение NULL.
+
+ `pMessage` Строка формата сообщений. Не может принимать значение NULL.
+
+## <a name="return-value"></a>Возвращаемое значение
+ Значение S_OK, если сообщение успешно записано. Код ошибки в том случае, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.
+
+## <a name="requirements"></a>Требования
+ **Заголовок:** *cvmarkers.h*
+
+ **Юникод:** CvWriteAlertW, CvWriteAlertVW
+
+ **ANSI:** CvWriteAlertA, CvWriteAlertVA
+
+## <a name="see-also"></a>См. также
+- [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)

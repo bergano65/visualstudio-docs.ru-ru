@@ -1,27 +1,22 @@
 ---
 title: Поддержка панели навигации в языковой службе прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 81d2217be730803c1daedc37c3bac1a8d4154eea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6cef18951a6ac5494f74c150c4251bafd9597686
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154094"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Поддержка панели навигации в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,25 +70,24 @@ namespace TestLanguagePackage
   
   Реализация <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метода обычно выполняет следующие действия:  
   
-1.  Получение списка текущие объявления для исходного файла.  
+1. Получение списка текущие объявления для исходного файла.  
   
      Существует ряд способов для заполнения списков. Один подход заключается в создании пользовательского метода в версии <xref:Microsoft.VisualStudio.Package.LanguageService> класса, который вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод с причиной пользовательского синтаксического анализа, который возвращает список всех объявлений. Другой подход может быть вызов <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> напрямую из <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метода с указанием причины пользовательского синтаксического анализа. Третий подход может быть кэшировать объявления в <xref:Microsoft.VisualStudio.Package.AuthoringScope> возвращается с последней операции полного синтаксического анализа в <xref:Microsoft.VisualStudio.Package.LanguageService> класса и извлечения, из <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод.  
   
-2.  Заполнить или обновить список типов.  
+2. Заполнить или обновить список типов.  
   
      Содержимое списка типов могут обновляться при изменении источника или если вы собираетесь изменить стиль текста из типов, в зависимости от текущей позиции курсора. Обратите внимание, что эта позиция передается <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> метод.  
   
-3.  Определите тип для выбора в списке типов, в зависимости от текущей позиции курсора.  
+3. Определите тип для выбора в списке типов, в зависимости от текущей позиции курсора.  
   
      Можно искать объявления, которые были получены на шаге 1, чтобы найти тип, который содержит текущее положение курсора и найдите в списке типов для этого типа определить его индекс в списке типов.  
   
-4.  Заполнить или обновить список членов, в зависимости от выбранного типа.  
+4. Заполнить или обновить список членов, в зависимости от выбранного типа.  
   
      Отражает список элементов, отображаемых в **члены** раскрывающегося списка. Содержимое списка членов может потребоваться обновляться в случае изменения источника или если отображаются только элементы выбранного типа и выбранного типа изменилось. Если выбрано для отображения всех элементов в исходном файле, стиль текста каждого элемента в списке должен обновляться, если текущий выбранный тип был изменен.  
   
-5.  Определите элемент для выбора в списке элементов, в зависимости от текущей позиции курсора.  
+5. Определите элемент для выбора в списке элементов, в зависимости от текущей позиции курсора.  
   
      Поиск объявлений, которые были получены на шаге 1 элемента, который содержит текущее положение курсора, а затем найдите в списке членов для этого элемента определить его индекс в списке членов.  
   
-6.  Вернуть `true` Если внесены изменения в списки или выбранные элементы в любом из списков.
-
+6. Вернуть `true` Если внесены изменения в списки или выбранные элементы в любом из списков.

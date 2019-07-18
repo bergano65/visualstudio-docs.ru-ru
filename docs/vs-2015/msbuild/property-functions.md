@@ -1,77 +1,71 @@
 ---
 title: Функции свойств | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0194de0a9f14186dc02b17564c77b1b2bc7441be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920193"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826176"
 ---
 # <a name="property-functions"></a>Функции свойств
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В версиях 4 и 4.5 платформы .NET Framework можно оценивать скрипты MSBuild с помощью функции свойства. Функции свойства можно использовать во всех случаях, где появляются свойства. В отличие от задач, функции свойства можно использовать за пределами целей и оценивать до запуска целей.  
   
  Без использования задач MSBuild вы можете читать системное время, сравнивать строки, сопоставлять регулярные выражения и выполнять другие действия в скрипте построения. MSBuild попытается преобразовать строку в число и число в строку и при необходимости выполнит другие преобразования.  
   
  **Содержание раздела**  
   
--   [Синтаксис функции свойства](#BKMK_Syntax)  
+- [Синтаксис функции свойства](#BKMK_Syntax)  
   
-    -   [Функции свойства строки](#BKMK_String)  
+  - [Функции свойства строки](#BKMK_String)  
+
+  - [Функции статического свойства](#BKMK_Static)  
+
+  - [Вызов методов экземпляра в статических свойствах](#BKMK_InstanceMethods)  
+
+  - [Функции свойства MSBuild](#BKMK_PropertyFunctions)  
   
-    -   [Функции статического свойства](#BKMK_Static)  
+- [Вложенные функции свойства](#BKMK_Nested)  
   
-    -   [Вызов методов экземпляра в статических свойствах](#BKMK_InstanceMethods)  
+- [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
   
-    -   [Функции свойства MSBuild](#BKMK_PropertyFunctions)  
+- [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
   
--   [Вложенные функции свойства](#BKMK_Nested)  
+- [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
   
--   [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
+- [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
   
--   [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
+- [MSBuild MakeRelative](#BKMK_MakeRelative)  
   
--   [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
+- [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
   
--   [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
-  
--   [MSBuild MakeRelative](#BKMK_MakeRelative)  
-  
--   [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
-  
-##  <a name="BKMK_Syntax"></a> Синтаксис функции свойства  
+## <a name="BKMK_Syntax"></a> Синтаксис функции свойства  
  Существуют три типа функций свойства, каждая из которых имеет свой синтаксис.  
   
--   Функции свойства строки (экземпляра)  
+- Функции свойства строки (экземпляра)  
   
--   Функции статичного свойства  
+- Функции статичного свойства  
   
--   Функции свойства MSBuild  
+- Функции свойства MSBuild  
   
-###  <a name="BKMK_String"></a> Функции свойства строки  
+### <a name="BKMK_String"></a> Функции свойства строки  
  Все значения свойства построения являются значениями строки. Для управления значением свойства можно использовать методы строки (экземпляра). Например, можно извлечь имя диска (первые три символа) из свойства построения, которое представляет собой полный путь, с помощью следующего кода.  
   
  `$(ProjectOutputFolder.Substring(0,3))`  
   
-###  <a name="BKMK_Static"></a> Функции статического свойства  
+### <a name="BKMK_Static"></a> Функции статического свойства  
  В скрипте построения можно получить доступ к статическим свойствам и методам многих системных классов. Чтобы получить значение статического свойства, используйте следующий синтаксис, где *Class* — это имя системного класса, а *Property* — это имя свойства.  
   
  `$([Class]::Property)`  
@@ -172,7 +166,7 @@ ms.locfileid: "49920193"
   
 - System.IO.File::ReadAllText  
   
-###  <a name="BKMK_InstanceMethods"></a> Вызов методов экземпляра в статических свойствах  
+### <a name="BKMK_InstanceMethods"></a> Вызов методов экземпляра в статических свойствах  
  При доступе к статическому свойству, которое возвращает экземпляр объектов, можно вызывать методы экземпляра этого объекта. Чтобы вызвать метод экземпляра, используйте следующий синтаксис, где *Class* — это имя системного класса, *Property* — это имя свойства, *Method* — это имя метода, а *(Parameters)* — это список параметров метода.  
   
  `$([Class]::Property.Method(Parameters))`  
@@ -183,7 +177,7 @@ ms.locfileid: "49920193"
   
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
   
-###  <a name="BKMK_PropertyFunctions"></a> Функции свойства MSBuild  
+### <a name="BKMK_PropertyFunctions"></a> Функции свойства MSBuild  
  Для обеспечения арифметической побитовой логической поддержки escape-символов можно использовать несколько статических методов из вашего построения. Получить доступ к этим методам можно с помощью следующего синтаксиса, где *Method* — это имя метода, а *Parameters* — это список параметров метода.  
   
  `$([MSBuild]::Method(Parameters))`  
@@ -194,7 +188,7 @@ ms.locfileid: "49920193"
   
  Приведем список функций свойства MSBuild.  
   
-|Подпись функции|Описание|  
+|Подпись функции|ОПИСАНИЕ|  
 |------------------------|-----------------|  
 |Сложение double(double a, double b)|Сложение двух значений double.|  
 |Сложение long(long a, long b)|Сложение двух значений long.|  
@@ -213,7 +207,7 @@ ms.locfileid: "49920193"
 |Целое значение BitwiseXor(первое целое значение, второе целое значение)|Примените побитовый параметр `XOR` к первому и второму значению (первое ^ второе).|  
 |Целое значение BitwiseNot(первое целое значение)|Примените побитовый параметр `NOT` (~первое значение).|  
   
-##  <a name="BKMK_Nested"></a> Вложенные функции свойства  
+## <a name="BKMK_Nested"></a> Вложенные функции свойства  
  Функции свойства можно объединять для формирования более сложных функций, как показано в следующем примере.  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
@@ -222,7 +216,7 @@ ms.locfileid: "49920193"
   
  Во вложенных функциях свойства могут также появляться метаданные. Дополнительные сведения см. в статье [Пакетная обработка](../msbuild/msbuild-batching.md).  
   
-##  <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
+## <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
  Функция свойства `DoesTaskHostExist` в MSBuild возвращает сведения об установленном сервере задач для указанной среды выполнения и значение архитектуры.  
   
  Эта функция свойства использует следующий синтаксис.  
@@ -231,7 +225,7 @@ ms.locfileid: "49920193"
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
   
-##  <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
+## <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
  Функция свойства `GetDirectoryNameOfFileAbove` в MSBuild выполняет поиск файла в каталогах выше текущего каталога в пути.  
   
  Эта функция свойства использует следующий синтаксис.  
@@ -246,19 +240,19 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
   
-##  <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
+## <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
  Функция свойства `GetRegistryValue` в MSBuild возвращает значение раздела реестра. Она принимает два аргумента — имя раздела и имя значения — и возвращает значение в реестр. Если не указано имя значения, возвращается значение по умолчанию.  
   
  В следующих примерах показано, как используется эта функция.  
   
 ```  
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value  
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value  
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))  
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value  
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value  
   
 ```  
   
-##  <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
+## <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
  Функция свойства `GetRegistryValueFromView` в MSBuild получает данные системного реестра с учетом раздела реестра, значения и одного или нескольких упорядоченных представлений реестра. Раздел и значения ищутся в каждом представлении реестра по порядку, пока не будут найдены.  
   
  Синтаксис функции свойства.  
@@ -283,7 +277,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
  Получение данных SLRuntimeInstallPath из раздела ReferenceAssemblies, поиск сначала в 64-разрядном, а затем в 32-разрядном представлении реестра.  
   
-##  <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
+## <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
  Функция свойства `MakeRelative` в MSBuild возвращает путь второго пути относительно первого пути. Каждый путь может быть файлом или папкой.  
   
  Эта функция свойства использует следующий синтаксис.  
@@ -312,7 +306,7 @@ Output:
 -->  
 ```  
   
-##  <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
+## <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
  Функция свойства `ValueOrDefault` в MSBuild возвращает первый аргумент, если он не нулевой или пустой. Если первый аргумент нулевой, функция возвращает второй аргумент.  
   
  В следующем примере показано, как используется эта функция.  
@@ -341,5 +335,3 @@ Output:
 ## <a name="see-also"></a>См. также
 [MSBuild Properties](msbuild-properties1.md)  (Свойства MSBuild)  
 [MSBuild Overview](msbuild.md) (Общие сведения о MSBuild)
-
-

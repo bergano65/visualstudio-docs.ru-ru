@@ -1,41 +1,35 @@
 ---
 title: Параметры форматирования, XML, текстовый редактор, диалоговое окно | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5c8379393dd5327359789f8621cf67ed55e89209
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 588bf415a801a9244cd9a046e0c503c0b238db58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417420"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Диалоговое окно «Форматирование», «XML», «Текстовый редактор», «Свойства»
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 При помощи этого диалогового окна можно задать настройки форматирования для XML Editor. Вы можете получить доступ к **параметры** диалоговое окно, в **средства** меню.  
   
 > [!NOTE]
->  Эти параметры доступны при выборе **текстовый редактор** папке **XML** папку, а затем **форматирование** параметр из **параметры** диалоговое окно.  
+> Эти параметры доступны при выборе **текстовый редактор** папке **XML** папку, а затем **форматирование** параметр из **параметры** диалоговое окно.  
   
 ## <a name="attributes"></a>Атрибуты  
  **Сохранить ручное форматирование атрибутов**  
  Атрибуты не переформатированы. Это значение по умолчанию.  
   
 > [!NOTE]
->  Если атрибуты расположены на нескольких строках, редактор обозначает отступом каждую строку атрибутов в соответствии с обозначениями отступами родительского элемента.  
+> Если атрибуты расположены на нескольких строках, редактор обозначает отступом каждую строку атрибутов в соответствии с обозначениями отступами родительского элемента.  
   
  **Выравнивание каждого из атрибутов на строке**  
  Выравнивает второй и последующий атрибуты по вертикали в соответствии с обозначением отступом первого атрибута. Следующий XML-текст является примером того, как выравниваются атрибуты.  
@@ -70,6 +64,3 @@ ms.locfileid: "49256676"
 ## <a name="see-also"></a>См. также  
  [Свойства XML-документа, окно "Свойства"](../xml-tools/xml-document-properties-properties-window.md)   
  [Компоненты редактора XML](../xml-tools/xml-editor-components.md)
-
-
-

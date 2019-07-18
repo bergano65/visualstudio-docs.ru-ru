@@ -18,69 +18,69 @@ helpviewer_keywords:
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ad76eb01e17f76bff0f1f81941675ad670a24ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 42756b21e631ec14e9c590833f6f0e95a317cc22
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967389"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747461"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; элемент (установщик)
-`RelatedProducts` Элемент определяет другие продукты, которые зависят от или включены в текущий продукт.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```xml  
-<RelatedProducts>  
-    <DependsOnProduct  
-        Code  
-    />  
-    <EitherProducts>  
-        <DependsOnProduct  
-            Code  
-        />  
-    </EitherProducts>  
-    <IncludesProduct  
-        Code  
-    />  
-</RelatedProducts>  
-```  
-  
-## <a name="elements-and-attributes"></a>Элементы и атрибуты  
- `RelatedProducts` Элемент является дочерним элементом `Product` элемент. Он не имеет атрибутов.  
-  
-## <a name="dependsonproduct"></a>DependsOnProduct  
- `DependsOnProduct` Элемент указывает, что текущий продукт зависит от данного продукта, и что данного продукта должно быть установлено перед текущим объектом. Он является дочерним элементом `RelatedProducts` элемент. Объект `RelatedProducts` элемент может иметь один или несколько `DependsOnProduct` элементов.  
-  
- `DependsOnProduct` содержит следующий атрибут.  
-  
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|  
-  
-## <a name="eitherproducts"></a>EitherProducts  
- `EitherProducts` Элемент определяет ноль или более `DependsOnProduct` элементов, и не имеет атрибутов. По крайней мере один `DependsOnProduct` в рамках этого курса необходимо установить перед текущего продукта. Объект `RelatedProducts` элемент может иметь ноль или более `EitherProducts` элементов.  
-  
-## <a name="includesproduct"></a>IncludesProduct  
- `IncludesProduct` Элемент указывает, что продукт входит в состав текущей установки и не требует отдельной установки. Он является дочерним элементом `RelatedProducts` элемент. Объект `RelatedProducts` элемент может иметь один или несколько `IncludesProduct` элементов.  
-  
- `IncludesProduct` содержит следующий атрибут.  
-  
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|  
-  
-## <a name="example"></a>Пример  
- В следующем примере кода указывает, что установщик Microsoft устанавливается вместе с [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]и поэтому не требует отдельной установки.  
-  
-```xml  
-<RelatedProducts>  
-    <IncludesProduct Code="Microsoft.Windows.Installer.2.0" />  
-</RelatedProducts>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [\<Продукт > элемент](../deployment/product-element-bootstrapper.md)
+`RelatedProducts` Элемент определяет другие продукты, которые зависят от или включены в текущий продукт.
+
+## <a name="syntax"></a>Синтаксис
+
+```xml
+<RelatedProducts>
+    <DependsOnProduct
+        Code
+    />
+    <EitherProducts>
+        <DependsOnProduct
+            Code
+        />
+    </EitherProducts>
+    <IncludesProduct
+        Code
+    />
+</RelatedProducts>
+```
+
+## <a name="elements-and-attributes"></a>Элементы и атрибуты
+ `RelatedProducts` Элемент является дочерним элементом `Product` элемент. Он не имеет атрибутов.
+
+## <a name="dependsonproduct"></a>DependsOnProduct
+ `DependsOnProduct` Элемент указывает, что текущий продукт зависит от данного продукта, и что данного продукта должно быть установлено перед текущим объектом. Он является дочерним элементом `RelatedProducts` элемент. Объект `RelatedProducts` элемент может иметь один или несколько `DependsOnProduct` элементов.
+
+ `DependsOnProduct` содержит следующий атрибут.
+
+|Атрибут|Описание|
+|---------------|-----------------|
+|`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|
+
+## <a name="eitherproducts"></a>EitherProducts
+ `EitherProducts` Элемент определяет ноль или более `DependsOnProduct` элементов, и не имеет атрибутов. По крайней мере один `DependsOnProduct` в рамках этого курса необходимо установить перед текущего продукта. Объект `RelatedProducts` элемент может иметь ноль или более `EitherProducts` элементов.
+
+## <a name="includesproduct"></a>IncludesProduct
+ `IncludesProduct` Элемент указывает, что продукт входит в состав текущей установки и не требует отдельной установки. Он является дочерним элементом `RelatedProducts` элемент. Объект `RelatedProducts` элемент может иметь один или несколько `IncludesProduct` элементов.
+
+ `IncludesProduct` содержит следующий атрибут.
+
+|Атрибут|Описание|
+|---------------|-----------------|
+|`Code`|Кодовое имя включенного продукта, в соответствии с `ProductCode` атрибут `Product` элемента. Дополнительные сведения см. в разделе [ \<продукта > элемент](../deployment/product-element-bootstrapper.md).|
+
+## <a name="example"></a>Пример
+ В следующем примере кода указывает, что установщик Microsoft устанавливается вместе с .NET Framework и поэтому не требует отдельной установки.
+
+```xml
+<RelatedProducts>
+    <IncludesProduct Code="Microsoft.Windows.Installer.2.0" />
+</RelatedProducts>
+```
+
+## <a name="see-also"></a>См. также
+- [\<Продукт > элемент](../deployment/product-element-bootstrapper.md)

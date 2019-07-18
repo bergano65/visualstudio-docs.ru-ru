@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Разделение класса на разделяемые классы (конструктор классов)
+title: Практическое руководство. Разделение класса на разделяемые классы (конструктор классов)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
@@ -9,20 +8,20 @@ helpviewer_keywords:
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a0a90315ec906874c94445e904e7dc1274a23e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1426b1ad9799984f7b14604a1d8b685e9ce8813
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826249"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615410"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Как выполнить Разделение класса на разделяемые классы в конструкторе классов
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Практическое руководство. Разделение класса на разделяемые классы в конструкторе классов
 
 Объявление класса или структуры можно распределить по нескольким объявлениям с помощью ключевого слова `partial` (`Partial` в Visual Basic). Можно использовать неограниченное количество разделяемых объявлений.
 
@@ -37,7 +36,7 @@ ms.locfileid: "53826249"
 Следующий пример разделяет определение класса `Employee` на два объявления, в каждом из которых определяется отдельная процедура. Два частичных определения в предыдущих примерах могут находиться в одном или двух исходных файлах.
 
 > [!NOTE]
-> Visual Basic использует определения разделяемых классов для отделения автоматически созданного кода от кода, созданного пользователем. Этот код разбивается на отдельные исходные файлы. Например, **конструктор форм Windows Forms** определяет разделяемые классы для элементов управления, таких как `Form`. Не следует изменять код, созданный в этих элементах управления.
+> Visual Basic использует определения разделяемых классов для отделения автоматически созданного Visual Studio кода от кода, созданного пользователем. Этот код разбивается на отдельные исходные файлы. Например, **конструктор форм Windows Forms** определяет разделяемые классы для элементов управления, таких как `Form`. Не следует изменять код, созданный в этих элементах управления.
 
 Дополнительные сведения о разделяемых типах в Visual Basic см. в статье [Partial](/dotnet/visual-basic/language-reference/modifiers/partial).
 

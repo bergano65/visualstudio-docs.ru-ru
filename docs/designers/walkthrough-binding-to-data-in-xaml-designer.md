@@ -1,7 +1,6 @@
 ---
 title: Привязка к данным в конструкторе XAML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
@@ -10,19 +9,19 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f0d9ccd32c8f616e6f998bcd1f31773460c89a20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892863"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Пошаговое руководство. Привязка к данным в конструкторе XAML
 
-В конструкторе XAML можно задать свойства привязки данных с помощью области рисования и в окне "Свойства". В примере в этом пошаговом руководстве показано, как привязать данные к элементу управления. В частности, это пошаговое руководство показывает, как создать простой класс корзины для покупок, имеющий [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) с именем `ItemCount`, а затем привязать свойство `ItemCount` к свойству **Text** элемента управления [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
+В конструкторе XAML можно задать свойства привязки данных с помощью монтажной панели и окна свойств. В примере в этом пошаговом руководстве показано, как привязать данные к элементу управления. В частности, это пошаговое руководство показывает, как создать простой класс корзины для покупок, имеющий [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) с именем `ItemCount`, а затем привязать свойство `ItemCount` к свойству **Text** элемента управления [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Создание класса для использования в качестве источника данных
 
@@ -96,7 +95,7 @@ ms.locfileid: "53866128"
 
 1. Нажмите клавишу **F5** для запуска приложения.
 
-     Элемент управления `TextBlock` должен показать значение по умолчанию 0 в виде текста.
+     Элемент управления `TextBlock` должен отображать значение по умолчанию 0 как текст.
 
 ## <a name="see-also"></a>См. также
 

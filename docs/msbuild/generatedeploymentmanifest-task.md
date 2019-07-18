@@ -14,15 +14,15 @@ helpviewer_keywords:
 - GenerateDeploymentManifest task [MSBuild]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d8f6f45b0a02922f3c91b9d1443000a385eb240
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8a2f4810c8a485d6b9013f658e221db39d8071f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003342"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest - задача
 
@@ -31,7 +31,6 @@ ms.locfileid: "53932383"
 ## <a name="parameters"></a>Параметры
 
 В следующей таблице приводятся параметры для задачи `GenerateDeploymentManifest`.
-
 
 | Параметр | Описание |
 |--------------------------| - |
@@ -67,7 +66,7 @@ ms.locfileid: "53932383"
 
 ## <a name="see-also"></a>См. также
 
-[Задачи](../msbuild/msbuild-tasks.md)  
-[Задача GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)  
-[Задача SignFile](../msbuild/signfile-task.md)  
-[Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Задача GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)
+- [Задача SignFile](../msbuild/signfile-task.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

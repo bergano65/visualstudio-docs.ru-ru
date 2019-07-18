@@ -1,12 +1,9 @@
 ---
 title: Написание текстового шаблона T4 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
@@ -15,13 +12,13 @@ ms.assetid: 94328da7-953b-4e92-9587-648543d1f732
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1e2f40421c2b59e61de1560619422491a37ed8d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897801"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684704"
 ---
 # <a name="writing-a-t4-text-template"></a>Написание текстового шаблона T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +100,7 @@ Hello!
  Можно вставить блок текста в любое место кода, где допускается вставка оператора `Write();`.  
   
 > [!NOTE]
->  При внедрении блока текста в составной оператор, такой как цикл или условный, всегда используйте фигурные скобки {...} Чтобы задать текстового блока.  
+> При внедрении блока текста в составной оператор, такой как цикл или условный, всегда используйте фигурные скобки {...} Чтобы задать текстового блока.  
   
 ### <a name="expression-control-blocks"></a>Блоки управления выражениями  
  Блок управления выражением оценивает выражение и преобразует его в строку, которая вставляется в выходной файл.  
@@ -116,7 +113,7 @@ Hello!
 <#= 2 + 3 #>  
 ```  
   
- Обратите внимание, что открывающий символ включает три знака: "<#=".  
+ Обратите внимание на то, что открывающий символ включает три символа «< #=».  
   
  Это выражение может включать любую переменную в области. Например, этот блок печатает строки цифр:  
   
@@ -164,7 +161,7 @@ private int Square(int i)
  Дополнительные сведения о блоках управления, см. в разделе [управляющие блоки текстовых шаблонов](../modeling/text-template-control-blocks.md).  
   
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Блоки возможностей класса могут содержать текстовые блоки  
- Вы можете написать метод, создающий текст. Например:  
+ Вы можете написать метод, создающий текст. Пример:  
   
 ```  
 List of Squares:  
@@ -200,7 +197,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
 ```  
   
- Список макросов, см. в разделе [стандартные макросы для команд и свойств построения](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).  
+ Список макросов, см. в разделе [стандартные макросы для команд и свойств построения](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).  
   
  Директива assembly не оказывает влияния в [предварительно обработанного текстового шаблона](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
@@ -217,7 +214,7 @@ private void WriteSquareLine(int i)
   
  Дополнительные сведения см. в разделе [директива Import T4](../modeling/t4-import-directive.md).  
   
-###  <a name="Include"></a> Включение кода и текста  
+### <a name="Include"></a> Включение кода и текста  
  Директива `include` вставляет текст из другого файла шаблона. Например, эта директива вставляет содержимое файла `test.txt`:  
   
  `<#@ include file="c:\test.txt" #>`  
@@ -267,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- Можно также получить другие службы, предоставляемые узлом. Дополнительные сведения см. в разделе [доступ к Visual Studio или другие узлы на основе шаблона](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+ Можно также получить другие службы, предоставляемые узлом. Дополнительные сведения см. в разделе [доступ к Visual Studio или другие узлы на основе шаблона](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Текстовые шаблоны времени разработки выполняются в отдельном домене приложения  
  Следует иметь в виду, [текстовом шаблоне времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md) выполняется в домене приложения, отдельном от основного приложения. В большинстве случаев это неважно, однако вы можете столкнуться с ограничениями в некоторых сложных случаях. Например, если нужно передать данные в шаблон или из него, используя отдельную службу, эта служба должна предоставить сериализуемый API.  
@@ -287,6 +284,3 @@ Content of MyFile.txt is:
 |Запуск создания текста за пределами [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|[Создание файлов с помощью служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|  
 |Преобразование данных в форме доменного языка.|[Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Написание процессоров директив для преобразования собственных источников данных.|[Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md)|
-
-
-

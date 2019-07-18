@@ -9,41 +9,42 @@ helpviewer_keywords:
 ms.assetid: 2dff3fd9-097d-4645-bc1b-cb65ecbc42a6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 348574da112314c7418761137c53e89cbb699651
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 77a1554e749e6f5186f7c99844cb793814b0129b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839840"
 ---
 # <a name="idialinenumbergetlinenumber"></a>IDiaLineNumber::get_lineNumber
-Получает номер строки в исходном файле.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_lineNumber (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает номер строки в исходном файле.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="example"></a>Пример  
-  
-```C++  
-CComPtr< IDiaLineNumber> pLine;  
-DWORD linenum;  
-pLine->get_lineNumber( &linenum );  
-```  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Получает номер строки в исходном файле.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_lineNumber ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает номер строки в исходном файле.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="example"></a>Пример
+
+```C++
+CComPtr< IDiaLineNumber> pLine;
+DWORD linenum;
+pLine->get_lineNumber( &linenum );
+```
+
+## <a name="see-also"></a>См. также
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

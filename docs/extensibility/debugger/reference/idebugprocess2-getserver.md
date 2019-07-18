@@ -1,51 +1,54 @@
 ---
 title: IDebugProcess2::GetServer | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProcess2::GetServer
 helpviewer_keywords:
 - IDebugProcess2::GetServer
 ms.assetid: 8f73c530-cceb-4f1f-8c63-1cc0ccd4a310
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec901ea79c89c18655ddee3f71565fd2437818a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 20eed8cb3689ac58b1303f4dec7359d75d0c0f40
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934720"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343642"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
-Возвращает сервер, на котором этот процесс выполняется на.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT GetServer(   
-   IDebugCoreServer2** ppServer  
-);  
-```  
-  
-```csharp  
-int GetServer(   
-   out IDebugCoreServer2 ppServer  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `ppServer`  
- [out] Возвращает [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) , представляющий сервер, на котором выполняется этот процесс.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Более одного сервера может выполняться на одном компьютере.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
+Возвращает сервер, на котором этот процесс выполняется на.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetServer( 
+   IDebugCoreServer2** ppServer
+);
+```
+
+```csharp
+int GetServer( 
+   out IDebugCoreServer2 ppServer
+);
+```
+
+## <a name="parameters"></a>Параметры
+`ppServer`\
+[out] Возвращает [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) , представляющий сервер, на котором выполняется этот процесс.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Более одного сервера может выполняться на одном компьютере.
+
+## <a name="see-also"></a>См. также
+- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
+- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

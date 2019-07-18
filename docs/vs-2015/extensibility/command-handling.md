@@ -1,26 +1,21 @@
 ---
 title: Обработка команд | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - command handling
 ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d26350e9b0465b3a175cb135509f85cf69da21f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 563f38cd2dc3854918fe637fdc11afe1d1a49b64
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184375"
 ---
 # <a name="command-handling"></a>Обработка команд
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +27,11 @@ ms.locfileid: "51778817"
  Языковая служба можно контролировать, какие контекстные меню отображаются в редакторе, перехватывая <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> перечисления. Кроме того можно управлять отдельно для каждого маркера в контекстном меню. Дополнительные сведения см. в разделе [важные команды для фильтров языковой службы](../extensibility/internals/important-commands-for-language-service-filters.md).  
   
 ## <a name="adding-commands-to-the-editor-context-menu"></a>Добавление команд в контекстное меню редактора  
- Добавление команды в контекстное меню, необходимо сначала определить набор команд меню, принадлежащих к определенной группе. Следующий пример взят из vsct-файл, созданный в ходе этого пошагового руководства [Пошаговое руководство: добавление функций в специализированный редактор](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
+ Добавление команды в контекстное меню, необходимо сначала определить набор команд меню, принадлежащих к определенной группе. Следующий пример взят из vsct-файл, созданный в ходе этого пошагового руководства [Пошаговое руководство: Добавление функций в специализированный редактор](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Guid меню = «guidCustomEditorCmdSet» id = «IDMX_RTF» priority = «0x0000» type = «Контекст» >  
+ \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
   
- \<Идентификатор guid родительского = «guidCustomEditorCmdSet» id = «0» / >  
+ \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
   
  \<Строки >  
   
@@ -56,4 +51,3 @@ ms.locfileid: "51778817"
   
 ## <a name="see-also"></a>См. также  
  [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
-

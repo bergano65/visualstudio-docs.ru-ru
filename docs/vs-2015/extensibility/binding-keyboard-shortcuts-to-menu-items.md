@@ -1,14 +1,9 @@
 ---
 title: Привязка сочетания клавиш к пунктам меню | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - keyboard command
 - keyboards
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5fd5ab9b09956c41620947ad1bcf529550db4aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405627"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Привязка сочетаний клавиш к пунктам меню
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51752909"
 4. Попробуйте различные сочетания клавиш, пока не найдете не сопоставлен.  
   
    > [!NOTE]
-   >  Сочетания клавиш, нажмите клавиши ALT может открыть меню и не непосредственно выполнить команду. Таким образом **в настоящий момент используется** поле может быть пустым, при вводе ярлык, который включает в себя ALT. Убедитесь, что ярлык не открывается меню, закрывая **параметры** диалоговое окно и нажав клавиши.  
+   > Сочетания клавиш, нажмите клавиши ALT может открыть меню и не непосредственно выполнить команду. Таким образом **в настоящий момент используется** поле может быть пустым, при вводе ярлык, который включает в себя ALT. Убедитесь, что ярлык не открывается меню, закрывая **параметры** диалоговое окно и нажав клавиши.  
   
    В следующей процедуре предполагается, что у вас есть существующие VSPackage с командой меню. Если вам нужна помощь, сделать это, рассмотрим [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -60,7 +55,7 @@ ms.locfileid: "51752909"
 2. Создать пустой `<KeyBindings>` разделе после `<Commands>` если его еще нет.  
   
    > [!WARNING]
-   >  Дополнительные сведения о привязки клавиш, см. в разделе [сочетание клавиш](../extensibility/keybinding-element.md).  
+   > Дополнительные сведения о привязки клавиш, см. в разделе [сочетание клавиш](../extensibility/keybinding-element.md).  
   
     В `<KeyBindings>` разделе, создайте `<KeyBinding>` запись.  
   
@@ -114,4 +109,3 @@ ms.locfileid: "51752909"
   
 ## <a name="see-also"></a>См. также  
  [Расширение меню и команд](../extensibility/extending-menus-and-commands.md)
-

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - remote debugging, unblock download
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc212dff46cea4de494f46a439026c7d5a851bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a243033bf5831952d83fdf688302651e02b76b7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903032"
 ---
-# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Как выполнить Разблокировать загрузки инструментов удаленной отладки на Windows Server
+# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Практическое руководство. Разблокировать загрузки инструментов удаленной отладки на Windows Server
 
 Параметры безопасности по умолчанию в Internet Explorer в Windows Server может быть слишком много времени загрузки компонентов, таких как инструменты удаленной отладки.
 
@@ -43,13 +43,13 @@ ms.locfileid: "53905349"
   * download.microsoft.com
   * my.visualstudio.com
   * login.microsoftonline.com
-  * Login.Live.com
+  * login.live.com
   * secure.aadcdn.microsoftonline-p.com
   * MSFT.STS.Microsoft.com
   * AUTH.gfx.MS
   * app.vssps.visualstudio.com
-  * vlscppe.Microsoft.com
-  * Query.PROD.cms.RT.Microsoft.com
+  * vlscppe.microsoft.com
+  * query.prod.cms.rt.microsoft.com
 
     Если вы решили такие домены необходимо добавить во время загрузки инструментов удаленной отладки, а затем выберите **добавить** при появлении запроса.
 

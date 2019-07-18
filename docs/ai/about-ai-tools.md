@@ -1,5 +1,6 @@
 ---
 title: Инструменты Visual Studio для сценариев ИИ
+titleSuffix: ''
 description: Общие сведения об инструментах Visual Studio для сценариев ИИ
 keywords: искусственный интеллект, visual studio
 author: lisawong19
@@ -7,16 +8,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: bb68e1b7b109b762f11410194076ab2b2eb30bb5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39d562509a62874a32e8442e18dece8e3c26fbfc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430449"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Инструменты Visual Studio для сценариев ИИ
 
@@ -30,7 +29,7 @@ ms.locfileid: "53908557"
 ![интегрированная среда разработки для глубинного обучения](media/about/ide.png)
 
 ## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>Быстрое начало работы с помощью коллекции образцов Машинного обучения Azure
-Благодаря интеграции инструментов Visual Studio для сценариев ИИ со службой Машинного обучения Azure вы можете легко просматривать коллекцию образцов экспериментов на основе CNTK, TensorFlow, MMLSpark и других платформ.
+Расширение Visual Studio Tools for AI интегрировано со службой Машинного обучения Azure, что упрощает просмотр коллекций примеров экспериментов на основе CNTK, TensorFlow, MMLSpark и других платформ.
 
 ![обозреватель образцов](media/about/gallery.png)
 
@@ -44,7 +43,7 @@ ms.locfileid: "53908557"
 [Дополнительные сведения об обучении моделей в облаке](tensorflow-vm.md)
 
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
-В настоящее время это расширение поддерживает 64-разрядные операционные системы Windows
+В настоящее время это расширение поддерживает 64-разрядные операционные системы Windows.
 
-# <a name="support"></a>Поддержка
-Поддержка расширения оказывается в [средстве отслеживания проблем GitHub](http://github.com/Microsoft/vs-tools-for-ai/issues). Вы можете отправить сообщение об ошибке, предложить новую функцию или принять участие в обсуждении.
+## <a name="support"></a>Поддержка
+Поддержка расширения оказывается в [средстве отслеживания проблем GitHub](http://github.com/Microsoft/vs-tools-for-ai/issues). Вы можете отправить сообщение об ошибке, предложить новую возможность или принять участие в обсуждении.

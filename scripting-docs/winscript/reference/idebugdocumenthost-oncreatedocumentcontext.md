@@ -1,8 +1,7 @@
 ---
-title: IDebugDocumentHost::OnCreateDocumentContext | Документация Майкрософт
+title: IDebugDocumentHost::OnCreateDocumentContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0f8ce73e05fa8dd163564184361254fd58163ee
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a3b614cdc6aad17ab3a4f6e83927b59390005ac2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971099"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
 Уведомляет ведущее приложение, что контекст документа, создается и позволяет узлу, чтобы при необходимости вернуть управление Неизвестный новым контекстом.  

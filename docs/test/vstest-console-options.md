@@ -1,22 +1,21 @@
 ---
 title: Параметры командной строки для VSTest.Console.exe
 ms.date: 07/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
 - command-line tests
 ms.author: gewarren
 author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c185622baeb3ad00bf5139190fe5c4fe627ba5e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eef81a2075f05acf8ea6ab8b42f77797425a3abd
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870759"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559603"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Параметры командной строки для VSTest.Console.exe
 
@@ -31,7 +30,7 @@ ms.locfileid: "53870759"
 
 В следующей таблице перечислены все параметры *VSTest.Console.exe* и приведено их краткое описание. Аналогичные данные можно получить, введя `VSTest.Console/?` в командной строке.
 
-| Параметр | Описание |
+| Параметр | ОПИСАНИЕ |
 |---|---|
 |**[*тестовых*]**|Запускает тесты из указанных файлов. Для разделения имен тестовых файлов используйте пробелы.<br />Примеры: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*имя файла*]**|Запуск тестов с дополнительными параметрами, например со сборщиками данных.<br />Пример: `/Settings:Local.RunSettings`|
@@ -42,10 +41,10 @@ ms.locfileid: "53870759"
 |**/UseVsixExtensions**|Процесс *vstest.console.exe* будет использовать или пропускать установленные расширения VSIX (если они имеются) при запуске тестов.<br />Этот параметр использовать не рекомендуется. Уже в следующем основном выпуске Visual Studio этот параметр может быть удален. Переходите на использование расширений, доступных в виде пакета NuGet.<br />Пример: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*путь*]**|Процесс *vstest.console.exe* в тестовом запуске будет использовать адаптеры пользовательских тестов по указанному пути (если они там есть).<br />Пример: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*тип платформы*]**|Архитектура целевой платформы, которая должна использоваться для выполнения тестов.<br />Допустимые значения — x86, x64 и ARM.|
-|**/Framework: [*версия платформы*]**|Целевая версия .NET Framework, которую следует использовать для выполнения тестов.<br />Допустимые значения — Framework35, Framework40, Framework45 и FrameworkUap10.<br />Если целевая версия платформы задана как **Framework35**, тесты выполняются в "режиме совместимости" среды CLR 4.0.<br />Пример: `/Framework:framework40`|
+|**/Framework: [*версия платформы*]**|Целевая версия .NET, которую следует использовать для выполнения тестов.<br />Допустимые значения — Framework35, Framework40, Framework45 и FrameworkUap10.<br />Если целевая версия платформы задана как **Framework35**, тесты выполняются в "режиме совместимости" среды CLR 4.0.<br />Пример: `/Framework:framework40`|
 |**/TestCaseFilter:[*выражение*]**|Запуск тестов, соответствующих заданному выражению.<br /><Выражение\> формата <свойство\>=<значение\>[\|<Выражение\>].<br />Пример: `/TestCaseFilter:"Priority=1"`<br />Пример: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Параметр командной строки **/TestCaseFilter** нельзя использовать с параметром командной строки **/Tests**. <br />Сведения о создании и использовании выражений см. в разделе [Фильтр TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Отображает сведения об использовании.|
-|**/Logger:[*uri/понятное имя*]**|Укажите средство ведения журнала результатов тестирования.<br />Пример чтобы регистрировать результаты в файле результатов теста Visual Studio (TRX), используйте **/Logger:trx**.<br />Пример чтобы опубликовать результаты теста в TFS, используйте TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url проекта\>;**<br />**BuildName=<имя сборки\>;**<br />**TeamProject=< имя проекта\>;**<br />**[;Platform=<"Any CPU" по умолчанию>]**<br />**[;Flavor=<"Debug" по умолчанию>]**<br />**[;RunTitle=<заголовок\>]**|
+|**/Logger:[*uri/понятное имя*]**|Укажите средство ведения журнала результатов тестирования.<br />Пример чтобы регистрировать результаты в файле результатов теста Visual Studio (TRX), используйте **/Logger:trx**.<br />Пример чтобы опубликовать результаты теста в TFS, используйте TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url проекта\>;**<br />**BuildName=<имя сборки\>;**<br />**TeamProject=< имя проекта\>;**<br />**[;Platform=\<"Любой ЦП" по умолчанию>]**<br />**[;Flavor=\<"Отладка" по умолчанию>]**<br />**[;RunTitle=<заголовок\>]**|
 |**/ListTests:[*имя файла*]**|Перечисление обнаруженных тестов из указанного контейнера тестов.|
 |**/ListDiscoverers**|Перечисление установленных средств обнаружения тестов.|
 |**/ListExecutors**|Перечисление установленных исполнителей тестов.|

@@ -2,21 +2,20 @@
 title: Шаблон веб-проекта Django для Python
 description: В Visual Studio представлен комплексный шаблон, с помощью которого вы можете быстро создавать веб-приложения Django с использованием Python.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3512e67ed7a97c4f8cb4c6aa0be256c32087de40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 136c03ef11071e5d548e36e45a6a541cffce1469
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784889"
 ---
 # <a name="django-web-project-template"></a>Шаблон веб-проекта Django
 
@@ -38,7 +37,7 @@ Visual Studio предоставляет полную поддержку тех�
 
     ![IntelliSense для JavaScript](media/template-django-intellisense-js.png)
 
-Также Visual Studio предоставляет полную [поддержку отладки](debugging-python-in-visual-studio.md) для проектов Django: 
+Также Visual Studio предоставляет полную [поддержку отладки](debugging-python-in-visual-studio.md) для проектов Django:
 
 ![Точки останова](media/template-django-debugging.png)
 

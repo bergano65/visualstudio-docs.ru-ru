@@ -1,14 +1,9 @@
 ---
 title: Задача RemoveDir | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RemoveDir
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 7ab214be-26b2-4bcd-9de8-c1b2091c0b74
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: adbb598e9caf0dec7738ba11834cf92cb35a2771
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 70bd6623d86ecfa76d3e09de09a8dcfad3d5da20
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191533"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648619"
 ---
 # <a name="removedir-task"></a>Задача RemoveDir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Удаляет указанные каталоги и все содержащиеся в них файлы и подкаталоги.  
   
 ## <a name="parameters"></a>Параметры  
@@ -67,9 +61,6 @@ ms.locfileid: "49191533"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

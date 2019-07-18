@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IDebugApplicationNodeEvents | Документы Microsoft
+title: Интерфейс IDebugApplicationNodeEvents | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20d0fac68bb7cdb3d7f5cb6aac6b0ab67e373c84
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7412e258c7f67f44bde6f69b593a1eecb1d84e07
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822279"
 ---
 # <a name="idebugapplicationnodeevents-interface"></a>Интерфейс IDebugApplicationNodeEvents
-Предоставляет интерфейс событий `IDebugApplicationNode` интерфейса.  
+Предоставляет интерфейс событий для интерфейса `IDebugApplicationNode`.  
   
  Помимо методов, наследуемых от `IUnknown`, `IDebugApplicationNodeEvents` интерфейс предоставляет следующие методы.  
   
@@ -31,7 +30,7 @@ ms.locfileid: "24726574"
 |Метод|Описание|  
 |------------|-----------------|  
 |[IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)|Обрабатывает событие, когда дочерний узел добавляется в объект узла отладки приложения.|  
-|[IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)|Обрабатывает событие, когда дочерний узел удаляется из объекта узла отладки приложения.|  
+|[IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)|Обрабатывает событие, когда дочерний узел удаляется из объект узла отладки приложения.|  
 |[IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)|Обрабатывает событие, которое означает, что объект узла отладки приложения была отсоединена от родительского узла.|  
 |[IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)|Обрабатывает событие, которое означает, что объект узла отладки приложения был присоединен к родительскому узлу.|  
   

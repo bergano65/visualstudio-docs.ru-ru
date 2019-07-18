@@ -9,15 +9,15 @@ helpviewer_keywords:
 - performance tools, portable CPU counters
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab80ba010a91df11efac21366a812015defa3b23
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c607263c6b6f6472258aaeab1c3187efaf30a120
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973985"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Как выполнить Сбор данных счетчиков производительности ЦП
 
@@ -60,7 +60,7 @@ ms.locfileid: "53897239"
 
 ## <a name="see-also"></a>См. также
 
-[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)  
-[Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)  
-[Счетчики ЦП и Windows](../profiling/cpu-and-windows-counters.md)  
+[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
+[Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)
+[Счетчики ЦП и Windows](../profiling/cpu-and-windows-counters.md)
 [Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md)

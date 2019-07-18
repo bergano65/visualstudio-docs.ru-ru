@@ -18,17 +18,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 - SharePoint development in Visual Studio, troubleshooting
 - SharePoint development in Visual Studio, deployment conflict resolution
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a12e24ea0db662931651feb3031ec0da71926f24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008404"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Устранение неполадок SharePoint упаковки и развертывания
   В разделе рассмотрены различные проблемы, которые могут возникнуть при упаковке и развертывании решений SharePoint.
@@ -47,7 +47,7 @@ ms.locfileid: "53878709"
 
  В следующей таблице показаны параметры для **Устранение конфликта развертывания** свойство.
 
-|Значение|Описание:|
+|Значение|Описание|
 |-----------|-----------------|
 |Автоматический|Обнаруживает и разрешает конфликты автоматически.|
 |Запрашивать|Обнаруживает и выводит отчет о конфликтах для разработчика перед их разрешением.|
@@ -73,9 +73,9 @@ ms.locfileid: "53878709"
 ### <a name="resolution"></a>Решение
  Чтобы решить эту проблему, выполните следующие действия:
 
-1.  Установите обновление кв967535, как описано в статье службы поддержки Майкрософт [ИСПРАВЛЕНИЯ: Доступно исправление для решения двух проблем ASP.NET в IIS 7.0 для Windows Vista и Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1. Установите обновление кв967535, как описано в статье службы поддержки Майкрософт [ИСПРАВЛЕНИЯ: Доступно исправление для решения двух проблем ASP.NET в IIS 7.0 для Windows Vista и Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
-2.  Добавьте следующую строку в файл Web.config:
+2. Добавьте следующую строку в файл Web.config:
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">

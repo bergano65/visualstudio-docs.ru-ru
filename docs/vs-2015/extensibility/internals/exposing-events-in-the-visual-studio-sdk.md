@@ -1,27 +1,22 @@
 ---
 title: Предоставление доступа к событиям в Visual Studio SDK | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4c65220114328f1630ef9c9457a3c971b730957b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7056497c505bbb355287416e468e411b4e5a2a62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196681"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Предоставление доступа к событиям в пакете SDK для Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "51761486"
   
  «AutomationProjectItemEvents «=» возвращает объект AutomationProjectItemsEvents»  
   
-|name|Тип|Диапазон|Описание:|  
+|name|Тип|Диапазон|Описание|  
 |----------|----------|-----------|-----------------|  
 |По умолчанию (@)|REG_SZ|неиспользуемые|Не используется. Поля данных можно использовать для документации.|  
 |AutomationProjectsEvents|REG_SZ|Имя объекта события.|Относится только имя ключа. Поля данных можно использовать для документации.<br /><br /> Этот пример взят из образца базовый проект.|  
@@ -76,7 +71,7 @@ ms.locfileid: "51761486"
   
  AutomationEvents.h и AutomationEvents.cpp содержат объявления и реализации классов в следующей таблице.  
   
-|Класс|Описание:|  
+|Класс|Описание|  
 |-----------|-----------------|  
 |`CAutomationEvents`|Реализует объект корневого события, полученные из `DTE.Events` объекта.|  
 |`CProjectsEventsContainer` и `CProjectItemsEventsContainer`|Реализации объектов источника событий, которые инициируют соответствующие события.|  
@@ -119,4 +114,3 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>   
  [Примеры VSSDK](../../misc/vssdk-samples.md)
-

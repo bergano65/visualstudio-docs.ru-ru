@@ -6,29 +6,38 @@ ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 683e0cae09144777cbb27ef294676cc44dc0a1a1
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: 48c5d365c632deb4d654d5115a141ba9933d7a6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53830837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410242"
 ---
-# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Удаленная отладка ASP.NET Core на удаленном компьютере IIS в Visual Studio 2017
+# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Удаленная отладка ASP.NET Core на удаленном компьютере IIS в Visual Studio
 Чтобы отладить приложение ASP.NET, который был развернут в службах IIS, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение затем прикрепление к выполняемому приложению из Visual Studio.
 
 ![Компоненты удаленной отладки](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-В этом руководстве объясняется, как установить и настроить Visual Studio 2017 ASP.NET Core, развертывания в IIS и подключить удаленный отладчик из Visual Studio. Удаленная отладка ASP.NET 4.5.2, см. в разделе [удаленной отладке ASP.NET на компьютере со службами IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Кроме того, можно также развернуть и отладить в IIS с помощью Azure. Для службы приложений Azure, можно легко развернуть и отладить предварительно настроенного экземпляра IIS и удаленный отладчик с помощью [Snapshot Debugger](../debugger/debug-live-azure-applications.md) или [подключения отладчика с помощью обозревателя сервера](../debugger/remote-debugging-azure.md).
+В этом руководстве объясняется, как установить и настроить Visual Studio ASP.NET Core, развертывания в IIS и подключить удаленный отладчик из Visual Studio. Удаленная отладка ASP.NET 4.5.2, см. в разделе [удаленной отладке ASP.NET на компьютере со службами IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Кроме того, можно также развернуть и отладить в IIS с помощью Azure. Для службы приложений Azure, можно легко развернуть и отладить предварительно настроенного экземпляра IIS и удаленный отладчик с помощью [Snapshot Debugger](../debugger/debug-live-azure-applications.md) или [подключения отладчика с помощью обозревателя сервера](../debugger/remote-debugging-azure.md).
+
+## <a name="prerequisites"></a>Предварительные требования
+
+::: moniker range=">=vs-2019"
+2019 г. Visual Studio требуется выполнить действия, приведенные в этой статье.
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017 необходим для выполнения действий, описанных в этой статье.
+::: moniker-end
 
 Эти процедуры протестированы на эти конфигурации сервера:
 * Windows Server 2012 R2 и служб IIS 8
 * Windows Server 2016 и IIS 10
 
-## <a name="requirements"></a>Требования
+## <a name="network-requirements"></a>Требования к сети
 
 Отладка между двумя компьютерами, подключенными через прокси-сервер не поддерживается. Отладка в различных странах высокой задержкой или низкой пропускной способностью, таких как удаленный доступ к Интернету, или через Интернет не рекомендуется и может произойти сбой или неприемлемо медленно. Полный список требований см. в разделе [требования](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -40,15 +49,16 @@ ms.locfileid: "53830837"
 
 * Если вам требуется помощь, чтобы убедиться в том, что приложение настройки, развертывания и неправильной работе в IIS, чтобы выполнять отладку, выполните действия, описанные в этом разделе.
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Создание приложения ASP.NET Core на компьютере Visual Studio 2017 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Создание приложения ASP.NET Core на компьютере с Visual Studio
 
-1. Создайте новое приложение ASP.NET Core. (**Файл > Создать > проект**, а затем выберите **Visual C# > Web > веб-приложение ASP.NET Core**).
+1. Создайте новое веб-приложение ASP.NET Core. 
 
-    В **ASP.NET Core** выберите шаблоны **веб-приложение**.
-
-2. Убедитесь, что **ASP.NET Core 2.0** выбран, **Включение поддержки Docker** — **не** выбранного и что **проверки подлинности** имеет значение **Без проверки подлинности**.
-
-3. Назовите проект **MyASPApp** и нажмите кнопку **ОК** для создания нового решения.
+    ::: moniker range=">=vs-2019"
+    В Visual Studio 2019 г., введите **Ctrl + Q** для открытия окна поиска, введите **asp.net**, выберите **шаблоны**, затем выберите **создать новый веб-приложение ASP.NET Core** . В появившемся диалоговом окне, назовите проект **MyASPApp**, а затем выберите **создать**. Затем выберите **веб-приложение (Model-View-Controller)**, а затем выберите **создать**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    В Visual Studio 2017, выберите **файл > Создать > проект**, а затем выберите **Visual C# > Web > веб-приложение ASP.NET Core**. В разделе шаблонов ASP.NET Core, выберите **веб-приложение (Model-View-Controller)**. Убедитесь, что выбран ASP.NET Core 2.1, **Включение поддержки Docker** не выбран и что **проверки подлинности** присваивается **без проверки подлинности**. Назовите проект **MyASPApp**.
+    ::: moniker-end
 
 4. Откройте файл About.cshtml.cs и установите точку останова в `OnGet` метод (в старые шаблоны, откройте файл HomeController.cs вместо и установить точку останова `About()` метод).
 
@@ -144,10 +154,10 @@ ms.locfileid: "53830837"
 
 ## <a name="BKMK_msvsmon"></a> Скачайте и установите инструменты удаленной отладки на Windows Server
 
-В этом руководстве мы используем Visual Studio 2017.
+Скачайте версию инструментов удаленной отладки, которая соответствует вашей версии Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Настройка удаленного отладчика в Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -163,9 +173,20 @@ ms.locfileid: "53830837"
 2. В Visual Studio щелкните **Отладка > присоединение к процессу** (Ctrl + Alt + P).
 
     > [!TIP]
-    > В Visual Studio 2017, можно подключить с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** (Shift + Alt + P). 
+    > В Visual Studio 2017 и более поздних версий, можно подключить с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** (Shift + Alt + P).
 
-3. В поле "Описатель" задайте значение **\<имя удаленного компьютера>:4022**.
+3. Установите в поле квалификатор  **\<имя удаленного компьютера >** и нажмите клавишу **ввод**.
+
+    Убедитесь, что Visual Studio добавляет требуемый порт имя компьютера, которое отображается в формате:  **\<имя удаленного компьютера >: порт**
+
+    ::: moniker range=">=vs-2019"
+    В Visual Studio 2019 г., вы должны увидеть  **\<имя удаленного компьютера >: 4024**
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    В Visual Studio 2017, вы должны увидеть  **\<имя удаленного компьютера >: 4022**
+    ::: moniker-end
+    Порт является обязательным. Если вы не видите номер порта, добавьте его вручную.
+
 4. Нажмите кнопку **Обновить**.
     В окне **Доступные процессы** должен появиться ряд процессов.
 
@@ -174,33 +195,49 @@ ms.locfileid: "53830837"
     Если вы хотите использовать **найти** кнопку, может потребоваться [откройте порт UDP 3702](#bkmk_openports) на сервере.
 
 5. Установите флажок  **Показать процессы, запущенные всеми пользователями**.
-6. Введите первую букву имени процесса, чтобы быстро найти **dotnet.exe** (для ASP.NET Core).
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
+6. Введите первую букву имени процесса для быстрого поиска приложения.
+
+    * Выберите **dotnet.exe**.
+
+      При наличии нескольких процессов отображение **dotnet.exe**, проверьте **имя пользователя** столбца. В некоторых сценариях **имя пользователя** столбце отображается имя пула приложений, таких как **IIS APPPOOL\DefaultAppPool**. Если вы увидите, что пул приложений, чтобы правильно настроить процесс удобно для создания нового с именем пула приложений для экземпляра приложения, необходимо выполнить отладку и затем его можно найти простые способы **имя пользователя** столбца.
+
+    * В некоторых сценариях IIS, возможно, имя вашего приложения в список процессов, таких как **MyASPApp.exe**. Можно присоединить к этому процессу вместо этого.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. Нажмите кнопку **Присоединить**.
 
 8. Откройте веб-сайт удаленного компьютера. В браузере перейдите по адресу **http://\<имя удаленного компьютера>**.
-    
+
     Должна открыться веб-страница ASP.NET.
 
 9. В работающем приложении ASP.NET, щелкните ссылку, чтобы **о** страницы.
 
     В Visual Studio должна быть достигнута точка останова.
 
-## <a name="bkmk_openports">Устранение неполадок</a> Откройте необходимые порты на Windows Server
+## <a name="bkmk_openports"></a> Устранение неполадок: Откройте необходимые порты на Windows Server
 
 В большинстве установок необходимые порты открыты при установке ASP.NET и удаленным отладчиком. Тем не менее может потребоваться проверить, что порты открыты.
 
 > [!NOTE]
-> На виртуальной Машине Azure, необходимо открыть порты, через [группы безопасности сети](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic).
+> На виртуальной Машине Azure, необходимо открыть порты, через [группы безопасности сети](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Требуемые порты:
 
-- 80 - необходимые для службы IIS
-- 4022 - required для удаленной отладки из Visual Studio 2017 (см. в разделе [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) подробные сведения.
-- 8172 — (необязательно.) требуется для веб-развертывания для развертывания приложения из Visual Studio.
-- UDP 3702 - порта (необязательно) обнаружения позволяет **найти** кнопку при присоединении удаленного отладчика в Visual Studio.
+* 80 - необходимые для службы IIS
+::: moniker range=">=vs-2019"
+* 4024 - required для удаленной отладки из Visual Studio 2019 г. (см. в разделе [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) Дополнительные сведения).
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022 - required для удаленной отладки из Visual Studio 2017 (см. в разделе [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) Дополнительные сведения).
+::: moniker-end
+* UDP 3702 - порта (необязательно) обнаружения позволяет **найти** кнопку при присоединении удаленного отладчика в Visual Studio.
 
 1. Чтобы открыть порт на сервере Windows, откройте **запустить** меню, и выполните поиск **брандмауэр Windows в режиме повышенной безопасности**.
 

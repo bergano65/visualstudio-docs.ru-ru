@@ -1,14 +1,9 @@
 ---
 title: Настройка редактора | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editors, Code Editor customization
 - Code Editor, customizing
@@ -16,13 +11,13 @@ ms.assetid: 7f4eee2a-586f-49ae-a763-4d9c0ac5bc71
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f0b9d01c6582d1bf67b0b33e5372d94700a62587
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 54e2e44650179cafb4fd4cc9169ac27810bbdf91
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183348"
 ---
 # <a name="customizing-the-editor"></a>Настройка редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ ms.locfileid: "49259333"
  [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../ide/reference/general-environment-options-dialog-box.md)   
  [Страница "Документы", папка "Среда", диалоговое окно "Параметры"](../ide/reference/documents-environment-options-dialog-box.md)   
  [Страница "Шрифты и цвета", папка "Среда", диалоговое окно "Параметры"](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
-
-
-

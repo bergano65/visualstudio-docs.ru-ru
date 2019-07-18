@@ -1,27 +1,22 @@
 ---
 title: Изолированная параметры точки входа оболочки (C++) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], isolated mode%2C Start entry point
 - Visual Studio shell, isolated mode%2C Start entry point
 ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 270a5c932429a518447d0029b05d3c9522db7387
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439807"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Параметры точки входа изолированной оболочки (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,21 +75,21 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
  Чтобы переопределить один или несколько параметров, передайте строку Юникода, содержащий параметры для переопределения. Строка является разделенный точками с запятой список пар "имя значение". Каждая пара содержит имя параметра для переопределения, следуют знак равенства (=), а затем значение, которое применяется к параметру.  
   
 > [!NOTE]
->  Не используйте пробелы в строках Юникода.  
+> Не используйте пробелы в строках Юникода.  
   
  Для логических параметров следующие строки представляют значение true; все другие строки представляют значение false. Эти строки не учитывается регистр.  
   
--   \+  
+- \+  
   
--   1  
+- 1  
   
--   -1  
+- -1  
   
--   вкл.  
+- вкл.  
   
--   true  
+- true  
   
--   да  
+- да  
   
 ## <a name="example"></a>Пример  
  Чтобы отключить надстройки или изменение расположения проектов по умолчанию для вашего приложения, можно задать последний параметр «AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp».  
@@ -102,4 +97,3 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
 ## <a name="see-also"></a>См. также  
  [Настройка изолированной оболочки](../extensibility/customizing-the-isolated-shell.md)   
  [Файлы .Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
-

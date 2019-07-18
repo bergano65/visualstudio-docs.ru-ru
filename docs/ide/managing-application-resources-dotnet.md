@@ -1,7 +1,6 @@
 ---
 title: Управление ресурсами приложения (.NET)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -15,15 +14,15 @@ helpviewer_keywords:
 - application resources [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c689de00c5c5f37d47cb0ecc9f802be4b51a9ab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1681484500c382b296a03e78661b808825768a5b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538113"
 ---
 # <a name="manage-application-resources-net"></a>Управление ресурсами приложения (.NET)
 
@@ -39,7 +38,7 @@ ms.locfileid: "53966814"
 В проекте управляемого кода откройте окно свойств проекта. Для этого вы можете:
 
 - щелкнуть правой кнопкой мыши узел проекта в **обозревателе решений** и выбрать пункт **Свойства**;
-- ввести фразу "свойства проекта" в окне **Быстрый запуск**;
+- ввести фразу **свойства проекта** в поле поиска, открытого с помощью **CTRL**+**Q**;
 - нажать клавиши **ALT**+**ВВОД** в **обозревателе решений**.
 
 Перейдите на вкладку **Ресурсы** . Вы можете добавить файл *RESX*, если проект его еще не содержит, добавить и удалить различные типы ресурсов, а также изменить существующие ресурсы.

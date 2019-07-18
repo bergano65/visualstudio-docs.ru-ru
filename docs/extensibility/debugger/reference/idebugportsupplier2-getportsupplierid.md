@@ -1,47 +1,50 @@
 ---
 title: IDebugPortSupplier2::GetPortSupplierId | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPortSupplier2::GetPortSupplierId
 helpviewer_keywords:
 - IDebugPortSupplier2::GetPortSupplierId
 ms.assetid: 741d0829-0943-49bf-b56e-61e836043006
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d22ab3bd39ab5604ecd7a5446d394f5d24d4369
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2fd7d6cf1dd41d27bedf2a409e850bf73a5e5dc2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947378"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340127"
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
-Возвращает идентификатор поставщика порта.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT GetPortSupplierId(   
-   GUID* pguidPortSupplier  
-);  
-```  
-  
-```csharp  
-HRESULT GetPortSupplierId(   
-   out Guid pguidPortSupplier  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pguidPortSupplier`  
- [out] Возвращает идентификатор GUID поставщика порта.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
+Возвращает идентификатор поставщика порта.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetPortSupplierId( 
+   GUID* pguidPortSupplier
+);
+```
+
+```csharp
+HRESULT GetPortSupplierId( 
+   out Guid pguidPortSupplier
+);
+```
+
+## <a name="parameters"></a>Параметры
+`pguidPortSupplier`\
+[out] Возвращает идентификатор GUID поставщика порта.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

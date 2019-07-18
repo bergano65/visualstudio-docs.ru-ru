@@ -1,35 +1,29 @@
 ---
 title: Поиск набора схем | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 885797e319652aaf9573b0c171318506518f82df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145180"
 ---
 # <a name="searching-the-schema-set"></a>Поиск набора схем
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Обозреватель XML-схем позволяет искать набор схем следующим образом.  
   
--   Поиск по ключевому слову.  
+- Поиск по ключевому слову.  
   
--   Поиск определенной схемы.  
+- Поиск определенной схемы.  
   
 ## <a name="keyword-search"></a>Поиск по ключевому слову  
  Выполните поиск по ключевым словам посредством ввода подстроки в **SchemaSet поиска** текстовое поле на панели инструментов обозревателя XML-схем.  
@@ -38,11 +32,11 @@ ms.locfileid: "49204208"
   
  Обозреватель XML-схем выполнит поиск набора схем по следующим параметрам:  
   
--   Атрибутам `name` или `ref`, удовлетворяющим указанному ключевому слову. Это позволяет находить элементы, атрибуты, типы и т. д. по имени.  
+- Атрибутам `name` или `ref`, удовлетворяющим указанному ключевому слову. Это позволяет находить элементы, атрибуты, типы и т. д. по имени.  
   
--   Атрибуты `schemaLocation` инструкций включения.  
+- Атрибуты `schemaLocation` инструкций включения.  
   
--   Атрибуты `namespace` инструкций импорта.  
+- Атрибуты `namespace` инструкций импорта.  
   
 ## <a name="schema-specific-search"></a>Поиск определенной схемы  
  Обозреватель XML-схем также включает встроенные поиски, к которым можно получить доступ с помощью контекстного меню обозревателя XML-схем. Дополнительные сведения о доступных контекстных меню см. в разделе [контекстные меню](../xml-tools/context-menus-xml-schema-explorer.md). Можно также выполнить поиск определенной схемы из начального представления; Дополнительные сведения см. в разделе «Сведения о наборе схем» в [начальное представление](../xml-tools/start-view.md) раздела.  
@@ -59,6 +53,3 @@ ms.locfileid: "49204208"
   
 ## <a name="see-also"></a>См. также  
  [Обозреватель схемы XML](../xml-tools/xml-schema-explorer.md)
-
-
-

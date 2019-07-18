@@ -1,27 +1,22 @@
 ---
 title: Настраиваемый пользовательский интерфейс (пакет VSPackage управления версиями) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 237a79fe0225f54bd8be1f779f241bc54f13cd09
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f03713213ec2e54ed8d82d7528dae12cefab7ebc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154977"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Настраиваемый пользовательский интерфейс (пакет VSPackage системы управления версиями)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ VSPackage объявляет элементами меню и состояние
   
   В следующей таблице описаны конкретные сведения о том, как [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE скрывает различных элементов пользовательского интерфейса.  
   
-|Элемент пользовательского интерфейса|Описание:|  
+|Элемент пользовательского интерфейса|Описание|  
 |-------------|-----------------|  
 |Меню и панели инструментов|Пакет системы управления версиями необходимо задать начальное состояние видимости меню и панель инструментов идентификатора источника пакета в [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) раздел файла .vsct. Это позволяет [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки для задания состояния пунктов меню, соответствующим образом без загрузки VSPackage и вызова реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> метод.|  
 |Окна инструментов|Пакет VSPackage системы управления версиями скрывает все окна инструментов, которыми он владеет, когда он становится неактивным.|  
@@ -69,4 +64,3 @@ VSPackage объявляет элементами меню и состояние
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>   
  <xref:EnvDTE.Constants.vsContextNoSolution>   
  [Управление пакетами VSPackage](../../extensibility/managing-vspackages.md)
-

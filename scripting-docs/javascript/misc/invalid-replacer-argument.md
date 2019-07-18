@@ -1,14 +1,9 @@
 ---
-title: Недопустимый аргумент замены | Документы Microsoft
-ms.custom: ''
+title: Недопустимый аргумент замены | Документация Майкрософт
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5035
 dev_langs:
@@ -20,19 +15,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 588909bae9c5cf198d3108490111b36d5a2d182b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007318"
 ---
-# <a name="invalid-replacer-argument"></a>Недопустимый аргумент функции замены
-Была предпринята попытка вызова `JSON.stringify` с аргументом, который не является допустимым. `replacer` Аргумент должен быть функцией или массивом.  
+# <a name="invalid-replacer-argument"></a>Недопустимый аргумент замены
+Предпринята попытка вызвать `JSON.stringify` с аргументом, который является недопустимым. `replacer` Аргумент должен быть функцией или массивом.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Изменение `replacer` аргумент для функции или массив.  
+- Изменение `replacer` аргумент к функции или массив.  
   
 ## <a name="example"></a>Пример  
  В данном примере кода приводит к ошибке времени выполнения, поскольку `memberfilter` — это объект, а не функция или массив.  

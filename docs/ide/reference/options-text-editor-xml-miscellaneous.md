@@ -1,24 +1,23 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", XML, \"Прочее\""
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Miscellaneous
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 85f37f4266f4c05d4de016caa07e8cc6e3cf43a4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969219"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>"Параметры", "Текстовый редактор", XML, "Прочее"
 
-Используйте страницу свойств **Прочее**, чтобы изменить параметры автозаполнения и схемы для редактора XML. Чтобы открыть диалоговое окно **Параметры**, в меню **Сервис** выберите пункт **Параметры**. Чтобы открыть страницу свойств **Прочее**, разверните узел **Текстовый редактор**  >  **XML**  >  **Прочее**.
+Используйте страницу параметров **Прочее**, чтобы изменить параметры автозаполнения и схемы для редактора XML. Чтобы получить доступ к прочим параметрам XML, выберите **Сервис** > **Параметры** > **Текстовый редактор** > **XML**, а затем выберите **Прочее**.
 
 ## <a name="auto-insert"></a>Автоматическая вставка
 
@@ -44,7 +43,7 @@ ms.locfileid: "53905628"
 
 Схемы и определения DTD загружаются автоматически с адресов HTTP. В этой возможности используется System.Net в режиме автоматического определения прокси-сервера. Это флажок установлен по умолчанию.
 
-## <a name="outlining"></a>структуризация
+## <a name="outlining"></a>Структуризация
 
 **Переходить в режим структурирования после открытия файлов**
 
@@ -54,9 +53,9 @@ ms.locfileid: "53905628"
 
 **Схемы**
 
-Определяет местоположение кэша схемы. Кнопка обзора (...) открывает текущее расположение кэша схем в новом окне. Расположение по умолчанию — *\<каталог установки Management Studio >* \Xml\Schemas.
+Определяет местоположение кэша схемы. Кнопка **обзора** открывает текущее расположение кэша схем в новом окне. Расположение по умолчанию — *%VsInstallDir%\xml\Schemas*.
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. создание XML-документации (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Создание кода](../code-generation-in-visual-studio.md)
+- [Параметры XML — форматирование](options-text-editor-xml-formatting.md)
+- [Средства XML в Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

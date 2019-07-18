@@ -4,17 +4,14 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Дополнительные сведения об управлении подписками
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: 04b2170e38954f4806a35bd960a2d4d41080d212
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 02f7dd98e183801a47b88759f817a20917997acb
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283423"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784817"
 ---
 # <a name="learn-about-subscription-management"></a>Сведения об управлении подписками
 

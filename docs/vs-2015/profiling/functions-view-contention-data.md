@@ -1,27 +1,22 @@
 ---
 title: Представление "Функции" — данные о конфликтах | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4ada92736312501d05504cf7b69ad07b549f31df
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1aaab824f40c0cd6ba0a240a6f3035d7ebcccd00
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765270"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54762993"
 ---
 # <a name="functions-view---contention-data"></a>Представление "Функции" — данные о конфликтах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51765270"
   
  В таблице ниже приведено объяснение значений в представлении "Функции" файла данных профилирования, которые были получены с помощью метода параллелизма.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Эксклюзивное время блокировки**|Время блокировки выполнения функцией кода в теле функции. Время блокирования в функциях, которые были вызваны данной функцией, не включается.|  
 |**Эксклюзивное время блокировки %**|Процент общего времени блокировки в ходе сеанса профилирования, которое являлось эксклюзивным временем блокировки указанной функции.|  
@@ -49,13 +44,10 @@ ms.locfileid: "51765270"
 |**Имя процесса**|Имя процесса.|  
 |**Исходный файл**|Исходный файл, содержащий определение данной функции.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
  [Представление "Функции"](../profiling/functions-view.md)   
  [Представление "Функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Представление "Функции" — выборка](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Представление "Функции"](../profiling/functions-view-instrumentation-data.md)   
  [Представление "Функции"](../profiling/functions-view-sampling-data.md)
-
-
-

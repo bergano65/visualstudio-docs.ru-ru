@@ -13,15 +13,15 @@ helpviewer_keywords:
 - MarkupCompilePass2 task [WPF MSBuild], parameters
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a119f3217f8e867dfa4539972cdb2d3d6715b597
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d929abc6581bf77dfd6ff5cf8b23d450a78a6f6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817359"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 - задача
 
@@ -56,11 +56,11 @@ ms.locfileid: "53857949"
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask 
-    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass2" 
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass2"
     AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
   <Target Name="MarkupCompilePass2Task">
-    <MarkupCompilePass2 
+    <MarkupCompilePass2
       AssemblyName="WPFMSBuildSample"
       Language="C#"
       OutputType="WinExe"
@@ -72,9 +72,9 @@ ms.locfileid: "53857949"
 
 ## <a name="see-also"></a>См. также
 
-[Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)  
-[Справочные сведения о задачах WPF для MSBuild](../msbuild/wpf-msbuild-task-reference.md)  
-[Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)  
-[Справочник по задачам MSBuild](../msbuild/msbuild-task-reference.md)  
-[Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[Общие сведения о приложениях браузера WPF XAML](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Справочные сведения о задачах WPF для MSBuild](../msbuild/wpf-msbuild-task-reference.md)
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+- [Справочник по задачам MSBuild](../msbuild/msbuild-task-reference.md)
+- [Создание приложения WPF](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Общие сведения о приложениях браузера WPF XAML](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

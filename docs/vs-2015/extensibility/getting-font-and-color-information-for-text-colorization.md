@@ -1,27 +1,22 @@
 ---
 title: Начало шрифт и цвет шрифта для цветовое выделение текста | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - text, coloring
 - font and color control [Visual Studio SDK], coloring
 ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 41fc6ac7ba20bc552ebdfde2cab69dd28867ee7f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8724c31accb26e478c2726dfe791256994fc95ca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741308"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696860"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Начало шрифт и цвет шрифта для цветовое выделение текста
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51741308"
  Большинство реализаций, которые отображают цветом текст требуется `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` и связанные интерфейсы для параметры отображения представления, получение и сохранение текста.  
   
 > [!NOTE]
->  При настройке базового редактора (который поддерживает **EditorCategory текст**), настоятельно рекомендуется использовать технологию выделение цветом в языковой службе. Дополнительные сведения см. в разделе [шрифт и цвет Обзор](../extensibility/font-and-color-overview.md).  
+> При настройке базового редактора (который поддерживает **EditorCategory текст**), настоятельно рекомендуется использовать технологию выделение цветом в языковой службе. Дополнительные сведения см. в разделе [шрифт и цвет Обзор](../extensibility/font-and-color-overview.md).  
   
 ## <a name="getting-default-font-and-color-information"></a>Начало стандартный шрифт и цвет шрифта  
  Все **шрифты и цвета** следует указать параметры окна, отображающие текст в **отображаемые элементы** одного **категории**. Дополнительные сведения см. в разделе [шрифты и цвета, среда, диалоговое окно параметров](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
@@ -51,7 +46,6 @@ ms.locfileid: "51741308"
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
- [Шрифты и текст](http://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
- [Работа с цветом](http://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
- [GDI (интерфейс графических устройств)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)
-
+ [Шрифты и текст](https://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
+ [Работа с цветом](https://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
+ [GDI (интерфейс графических устройств)](https://msdn.microsoft.com/7e1d4540-bb2e-4257-8eee-eee376acba83)

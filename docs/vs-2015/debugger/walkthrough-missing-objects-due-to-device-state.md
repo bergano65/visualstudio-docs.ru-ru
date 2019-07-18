@@ -1,25 +1,20 @@
 ---
-title: 'Пошаговое руководство: Отсутствие объектов вследствие состояния устройства | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отсутствие объектов вследствие состояния устройства | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5c0ad6017dd6ff660dfbd47977e1a53346cf6c55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773734"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58993556"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Пошаговое руководство. Отсутствие объектов вследствие состояния устройства
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,6 +108,3 @@ ms.locfileid: "51773734"
    Определив, что причиной проблемы отрисовки может быть неправильно настроенная функция глубины, можно использовать эту информацию совместно со знанием кода для поиска места, где функция глубины задана неправильно, и устранить проблему. Если вы не знакомы с кодом, можно выполнить поиск проблемы с помощью данных, собранных при отладке. Например, на основе **описания трафарета глубины** в этом сценарии можно в коде искать слово depth (глубина) или GREATER (больше). Внеся исправления в код, можно заново собрать его и еще раз запустить приложение, чтобы убедиться, что проблема с отрисовкой решена.  
   
    ![Приложение после устранения проблемы](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")
-
-
-

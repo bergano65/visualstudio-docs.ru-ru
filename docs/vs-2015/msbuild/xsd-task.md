@@ -1,14 +1,9 @@
 ---
 title: Задача XSD | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.xsd
 - VC.Project.VCXMLDataGeneratorTool.Namespace
@@ -25,42 +20,41 @@ ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd1aed6537d4fb49bafa34ce09dcb191c9475357
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182641"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826247"
 ---
 # <a name="xsd-task"></a>Задача XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Создает оболочку инструмента определения схемы XML (xsd.exe), который создает файлы схемы или класса из источника.  
   
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описываются параметры задачи **XSD**.  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      Необязательный параметр типа **String**.  
   
-     Список параметров, как указано в командной строке. Например, "*/параметр1 /параметр2 /параметр#*". Этот параметр используется для задания параметров, не представленных другими параметрами задачи **XSD**.  
+     Список параметров, как указано в командной строке. Например, " */параметр1 /параметр2 /параметр#* ". Этот параметр используется для задания параметров, не представленных другими параметрами задачи **XSD**.  
   
--   **GenerateFromSchema**  
+- **GenerateFromSchema**  
   
-     Необязательный параметр типа **String**.  
+  Необязательный параметр типа **String**.  
+
+  Задает типы, которые создаются из указанной схемы.  
+
+  Укажите одно из следующих значений, каждое из которых соответствует параметру XSD.  
+
+  - **classes** -  **/classes**  
+
+  - **dataset** -  **/dataset**  
   
-     Задает типы, которые создаются из указанной схемы.  
-  
-     Укажите одно из следующих значений, каждое из которых соответствует параметру XSD.  
-  
-    -   **classes** - **/classes**  
-  
-    -   **dataset** - **/dataset**  
-  
--   **Язык**  
+- **Язык**  
   
      Необязательный параметр типа **String**.  
   
@@ -68,25 +62,25 @@ ms.locfileid: "49182641"
   
      Доступные варианты: **CS** (C#, по умолчанию), **VB** (Visual Basic) или **JS** (JScript). Также можно указать полное имя класса, реализующего `System.CodeDom.Compiler.CodeDomProvider Class`.  
   
--   **Namespace**  
+- **Namespace**  
   
      Необязательный параметр типа **String**.  
   
      Определяет пространство имен среды выполнения для создаваемых типов.  
   
--   **Sources**  
+- **Sources**  
   
      Обязательный параметр `ITaskItem[]` .  
   
      Определяет массив элементов исходного файла MSBuild, который может использоваться и создаваться задачами.  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      Необязательный параметр **Boolean** .  
   
      Если задано значение `true`, запрещается отображение сообщения о номере версии и авторских правах при запуске задачи.  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      Необязательный параметр типа **String**.  
   
@@ -94,6 +88,3 @@ ms.locfileid: "49182641"
   
 ## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

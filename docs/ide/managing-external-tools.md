@@ -1,7 +1,6 @@
 ---
 title: Управление внешними инструментами
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535688"
 ---
 # <a name="manage-external-tools"></a>Управление внешними инструментами
 
@@ -25,13 +24,24 @@ ms.locfileid: "54154067"
 
 ## <a name="tools-available-on-the-tools-menu"></a>Инструменты, доступные в меню "Сервис"
 
-В меню **Сервис** содержится несколько встроенных команд:
+В меню **Инструменты** содержится несколько встроенных команд, в том числе следующие:
+
+::: moniker range="vs-2017"
 
 * **Расширения и обновления** для [управления расширениями Visual Studio](finding-and-using-visual-studio-extensions.md).
 * **Диспетчер фрагментов кода** для [организации фрагментов кода](code-snippets.md).
-* **PreEmptive Protection — Dotfuscator** для запуска [Dotfuscator Community Edition (CE)](dotfuscator/index.md) (если эта программа [установлена](dotfuscator/install.md)).
 * **Настройка** для [настройки меню и панелей инструментов](how-to-customize-menus-and-toolbars-in-visual-studio.md).
 * **Параметры** для [задания различных параметров интегрированной среды разработки Visual Studio и других инструментов](reference/options-dialog-box-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+* **Диспетчер фрагментов кода** для [организации фрагментов кода](code-snippets.md).
+* **Настройка** для [настройки меню и панелей инструментов](how-to-customize-menus-and-toolbars-in-visual-studio.md).
+* **Параметры** для [задания различных параметров интегрированной среды разработки Visual Studio и других инструментов](reference/options-dialog-box-visual-studio.md).
+
+::: moniker-end
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Добавление новых инструментов в меню "Сервис"
 

@@ -1,24 +1,20 @@
 ---
 title: Общие элементы пользовательского интерфейса | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: bc67652d-1001-4979-ba71-d57147d21928
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9222a03b9df8997298e473c7248307341d89409f
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: a510ad25e741fc5924597d4b26841518c63f83a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53931188"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690962"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Общие элементы пользовательского интерфейса (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,11 +45,11 @@ ms.locfileid: "53931188"
 
  [Параметры, текстовый редактор, C/C++, Дополнительно](../../ide/reference/options-text-editor-c-cpp-advanced.md) позволяет задать дополнительные параметры для файлов C и C++.
 
- [Параметры, текстовый редактор, C#, форматирования](../../ide/reference/options-text-editor-csharp-formatting.md) позволяет задавать параметры форматирования для C# файлов.
+ [Параметры, текстовый редактор, C#, форматирование](../../ide/reference/options-text-editor-csharp-formatting.md) позволяет задавать параметры форматирования для файлов C#.
 
- [Параметры, текстовый редактор, C#, расширенные](../../ide/reference/options-text-editor-csharp-advanced.md) позволяет задать дополнительные параметры для C# файлов.
+ [Дополнительные параметры, текстовый редактор, C#,](../../ide/reference/options-text-editor-csharp-advanced.md) можно указать дополнительные параметры для файлов C#.
 
- [Параметры, текстовый редактор, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) позволяет задавать параметры IntelliSense для C# файлов.
+ [Параметры, текстовый редактор, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) позволяет задавать параметры IntelliSense для файлов C#.
 
  [Параметры, текстовый редактор, XAML, форматирование](../../ide/reference/options-text-editor-xaml-formatting.md) позволяет задавать параметры форматирования для файлов XAML.
 
@@ -73,6 +69,6 @@ ms.locfileid: "53931188"
 
  [Панель элементов, вкладка "HTML"](../../ide/reference/toolbox-html-tab.md) позволяет добавлять HTML-теги в рабочую область конструирования.
 
- [Общие, CSS, текстовый редактор, диалоговое окно "Параметры"](http://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) позволяет задавать параметры для файлов CSS.
+ [Общие, CSS, текстовый редактор, диалоговое окно "Параметры"](https://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) позволяет задавать параметры для файлов CSS.
 
- [Проверка, HTML, текстовый редактор, диалоговое окно "Параметры"](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) позволяет указать параметры для HTML-страниц.
+ [Проверка, HTML, текстовый редактор, диалоговое окно "Параметры"](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) позволяет указать параметры для HTML-страниц.

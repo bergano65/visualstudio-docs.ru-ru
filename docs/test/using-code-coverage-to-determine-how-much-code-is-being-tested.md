@@ -1,7 +1,6 @@
 ---
 title: Проверка объема протестированного кода
 ms.date: 09/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -11,15 +10,15 @@ dev_langs:
 - CPP
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff77dc6c434a58ee916ea1eb4ffcab932d7a675
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973117"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Использование покрытия кода для определения объема протестированного кода
 
@@ -259,7 +258,17 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 1. Запустите командную строку разработчика Visual Studio.
 
+   ::: moniker range="vs-2017"
+
    В ОС Windows в меню **Пуск** выберите **Visual Studio 2017** > **Командная строка разработчика для VS 2017**.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   В ОС Windows в меню **Пуск** выберите **Visual Studio 2019** > **Командная строка разработчика для VS 2019**.
+
+   ::: moniker-end
 
 2. В командной строке выполните следующую команду:
 

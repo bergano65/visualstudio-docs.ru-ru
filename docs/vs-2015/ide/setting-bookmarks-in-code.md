@@ -1,27 +1,22 @@
 ---
 title: Установка закладок в коде | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbb6775411af7bc93cd8168af460974fb5c18d3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b9a5612a9d6fd04850134a51f62a02496deb1708
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441928"
 ---
 # <a name="setting-bookmarks-in-code"></a>Установка закладок в коде
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +29,10 @@ ms.locfileid: "49219756"
  Чтобы добавить закладку, поместите курсор на строку, которую необходимо отметить. Нажмите кнопку **Переключатель** или сочетание клавиш CTRL+K. Закладка будет добавлена. Если нажать кнопку "Переключатель" (или сочетание клавиш CTRL+K) еще раз, закладка удаляется. Удалять закладки можно также с помощью кнопки **Удалить** в окне закладок.  
   
 > [!IMPORTANT]
->  Закладка задается номеру строки, а не коду. При изменении кода закладки сохраняется на номере строки и не перемещается вместе с кодом.  
+> Закладка задается номеру строки, а не коду. При изменении кода закладки сохраняется на номере строки и не перемещается вместе с кодом.  
   
  Перемещение между закладками можно осуществлять с помощью кнопок **Следующая закладка** и **Предыдущая закладка** в окне закладок.  
   
  Закладки можно упорядочить в виртуальных папках, щелкнув **Создать папку** в окне закладок, а затем перетащив выбранные закладки в новую папку.  
   
  Чтобы отключить закладки (без их удаления), нажмите кнопку **Выключить все закладки** в окне закладок. Чтобы снова включить закладки, нажмите ту же кнопку (которая теперь будет называться **Включить все закладки**).
-
-
-

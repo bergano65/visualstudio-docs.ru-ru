@@ -2,7 +2,6 @@
 title: IDispError::QueryErrorInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01c33ab9ef187f5bf9d6146e23c4534a33844cec
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: 828497eac8bb2751baeca8b1fe19b5aeb5aae6a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446806"
 ---
 # <a name="idisperrorqueryerrorinfo"></a>IDispError::QueryErrorInfo
 Извлекает определенный тип сведений об ошибке.  
@@ -47,7 +46,7 @@ HRESULT QueryErrorInfo(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   
@@ -55,7 +54,7 @@ HRESULT QueryErrorInfo(
  `QueryErrorInfo` Метод извлекает определенный тип сведений об ошибке.  
   
 > [!NOTE]
->  Этот метод не реализован.  
+> Этот метод не реализован.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDispError](../../winscript/reference/idisperror-interface.md)

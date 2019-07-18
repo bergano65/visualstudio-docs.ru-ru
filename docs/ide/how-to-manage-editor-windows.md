@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Управление окнами редактора
+title: Практическое руководство. Управление окнами редактора
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
@@ -11,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9134e7dcaddebbc63ad7fcb5650d5c24a00c6db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a8b6d1d4c39f09382dd0e4a12660bed31ad9b2d
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866180"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531944"
 ---
-# <a name="how-to-manage-editor-windows"></a>Как выполнить Управление окнами редактора
+# <a name="how-to-manage-editor-windows"></a>Практическое руководство. Управление окнами редактора
 
 Вы можете работать с кодом сразу в нескольких расположениях. Для этого можно разделить окно редактора или открыть несколько его экземпляров.
 
@@ -34,9 +33,9 @@ ms.locfileid: "53866180"
 
 ### <a name="to-split-a-pane"></a>Разделение области
 
-1.  Щелкните в окне редактора, чтобы сделать его активным.
+1. Щелкните в окне редактора, чтобы сделать его активным.
 
-2.  В меню **Окно** выберите команду **Разделить**.
+2. В меню **Окно** выберите команду **Разделить**.
 
      Область редактирования разбивается на две области, отделенные линией разделения. Эти области можно прокручивать независимо друг от друга, чтобы просматривать и изменять разные части активного документа одновременно. Любые изменения, внесенные в одной области, отражаются и в другой.
 
@@ -45,7 +44,7 @@ ms.locfileid: "53866180"
 
 ### <a name="to-return-to-single-pane-view"></a>Возврат к представлению с одной областью
 
--   В меню **Окно** выберите команду **Снять разделение**.
+- В меню **Окно** выберите команду **Снять разделение**.
 
 ## <a name="create-new-windows"></a>Создание новых окон
 
@@ -57,6 +56,5 @@ ms.locfileid: "53866180"
 
 ## <a name="see-also"></a>См. также
 
-- [Настройка редактора](../ide/customizing-the-editor.md)
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Настройка макетов окон](../ide/customizing-window-layouts-in-visual-studio.md)

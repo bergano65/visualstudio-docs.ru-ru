@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: Include a Data File in a ClickOnce Application | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Включение файла данных в приложении ClickOnce | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e4d5be3628cd9653bfc713caea426c91a205419
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153769"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>How to: Include a Data File in a ClickOnce Application
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Практическое руководство. Включение файла данных в приложение ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Каждый [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение, которое установить назначается каталог данных на локальном диске конечного компьютера где приложения могут управлять собственными данными. Файлы данных могут содержать файлы любого типа: текстовые файлы, XML-файлы или даже файлы Microsoft Access (MDB-файл). Ниже показано, как добавить файл данных любого типа в вашей [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения.  
@@ -70,30 +65,27 @@ ms.locfileid: "49884918"
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Чтобы включить файл данных с помощью MageUI.exe  
   
-1.  Добавьте в файл данных в каталог приложения с остальными файлами приложения.  
+1. Добавьте в файл данных в каталог приложения с остальными файлами приложения.  
   
-2.  Как правило, каталог приложения будет каталог с текущей версии развертывания, например, v1.0.0.0.  
+2. Как правило, каталог приложения будет каталог с текущей версии развертывания, например, v1.0.0.0.  
   
-3.  На **файл** меню, щелкните **откройте** открыть манифест приложения.  
+3. На **файл** меню, щелкните **откройте** открыть манифест приложения.  
   
-4.  Выберите **файлы** вкладки.  
+4. Выберите **файлы** вкладки.  
   
-5.  В текстовом поле в верхней части вкладки введите каталог, содержащий файлы приложения и нажмите кнопку **заполнить**.  
+5. В текстовом поле в верхней части вкладки введите каталог, содержащий файлы приложения и нажмите кнопку **заполнить**.  
   
      Файл данных будет отображаться в сетке.  
   
-6.  Задайте **тип файла** значение файла данных для **данных**.  
+6. Задайте **тип файла** значение файла данных для **данных**.  
   
-7.  Сохраните манифест приложения и повторной подписи файла.  
+7. Сохраните манифест приложения и повторной подписи файла.  
   
      MageUI.exe предложит повторной подписи файла.  
   
-8.  Повторно подпишите манифест развертывания  
+8. Повторно подпишите манифест развертывания  
   
      Необходимо повторно подписать манифест развертывания из-за изменения ее хэш-код манифеста приложения.  
   
 ## <a name="see-also"></a>См. также  
  [Доступ к локальным и удаленным данным в приложениях ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
-
-
-

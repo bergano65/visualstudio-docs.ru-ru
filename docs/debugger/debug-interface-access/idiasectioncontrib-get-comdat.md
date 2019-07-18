@@ -9,36 +9,37 @@ helpviewer_keywords:
 ms.assetid: 8bd9be8d-59ee-4698-b055-daba354b8dcc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ba0e015ae4383a0d8bb215d565635570f04daa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 49502c0d693c7a309da9756f73c34df361b7d7bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832530"
 ---
 # <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
-Получает флаг, указывающий, является ли раздел записи COMDAT.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_comdat (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает `TRUE` Если раздел записи COMDAT; в противном случае возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Запись COMDAT — распространенные объекта файла формат COFF запись, которая делает видимой компоновщику упакованные функции.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Получает флаг, указывающий, является ли раздел записи COMDAT.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_comdat ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает `TRUE` Если раздел записи COMDAT; в противном случае возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Запись COMDAT — распространенные объекта файла формат COFF запись, которая делает видимой компоновщику упакованные функции.
+
+## <a name="see-also"></a>См. также
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

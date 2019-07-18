@@ -1,27 +1,22 @@
 ---
 title: Развертывание настраиваемой начальной страницы | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162102"
 ---
 # <a name="deploying-custom-start-pages"></a>Развертывание настраиваемой начальной страницы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51795119"
   
 - VSIX-файл можно поместить в общей сетевой папке или на общедоступном веб-сайте. При открытии файла начальной страницы устанавливается автоматически.  
   
-- Можно отправить VSIX-файл на [коллекции Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) веб-сайт, чтобы пользователи могут установить его с помощью **Диспетчер расширений**.  
+- Можно отправить VSIX-файл на [Visual Studio Marketplace](https://marketplace.visualstudio.com/) веб-сайт, чтобы пользователи могут установить его с помощью **Диспетчер расширений**.  
   
   Шаблон проекта начальной страницы создает копию начальной страницы Visual Studio по умолчанию, чтобы вы могли изменить копию и сохраняет исходные.  
   
@@ -46,7 +41,7 @@ ms.locfileid: "51795119"
   
 - Путем добавления пользовательских файлов начальной страницы в пустой проект VSIX. Дополнительные сведения см. в разделе [шаблоном проекта VSIX](../extensibility/vsix-project-template.md).  
   
-- Создав файл VSIX вручную. Дополнительные сведения см. в разделе [как: упаковка расширения (развертывания VSIX) вручную](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Создав файл VSIX вручную. Дополнительные сведения см. в разделе [Практическое руководство. Упаковка расширения (развертывания VSIX) вручную](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
   Для Visual Studio мог распознать начальной страницы `Content Element` манифест VSIX должна содержать `CustomExtension Element` с `Type` атрибут `"StartPage"`. Расширение начальная страница, которая была установлена с помощью развертывания VSIX отображается в **настроить начальную страницу** списке **запуска** страница параметров как **[установленных расширений]** *Имя расширения*.  
   
@@ -62,9 +57,9 @@ ms.locfileid: "51795119"
   
 ##### <a name="to-create-an-all-users-deployment"></a>Для создания развертывания все пользователи  
   
-1.  Откройте файл extension.vsixmanifest в представлении кода.  
+1. Откройте файл extension.vsixmanifest в представлении кода.  
   
-2.  В `Identifier` манифеста vsix, добавить `AllUsers` элемент, имеющий значение `true`.  
+2. В `Identifier` манифеста vsix, добавить `AllUsers` элемент, имеющий значение `true`.  
   
     ```  
     <AllUsers>true</AllUsers>  
@@ -72,9 +67,9 @@ ms.locfileid: "51795119"
   
      В этом случае установщик vsix, чтобы запрашивать разрешения администратора, а затем установить файлы \Common7\IDE\Extensions.  
   
-3.  Откройте файл pkgdef.  
+3. Откройте файл pkgdef.  
   
-4.  Изменить .pkgdef для задания начальной страницы по умолчанию в разделе HKLM, добавив следующую команду, где *MyStartPage.xaml* имя XAML-файл, содержащий к начальной странице.  
+4. Изменить .pkgdef для задания начальной страницы по умолчанию в разделе HKLM, добавив следующую команду, где *MyStartPage.xaml* имя XAML-файл, содержащий к начальной странице.  
   
      [$RootKey$ \StartPage\Default]  
   
@@ -89,13 +84,12 @@ ms.locfileid: "51795119"
   
 #### <a name="to-manually-install-a-custom-start-page"></a>Чтобы вручную установить настраиваемой начальной страницы  
   
-1.  Скопируйте XAML-файл, содержащий разметку начальной страницы, а также все вспомогательные файлы, отличные от сборки и вставьте их в папки \StartPages\.  
+1. Скопируйте XAML-файл, содержащий разметку начальной страницы, а также все вспомогательные файлы, отличные от сборки и вставьте их в папки \StartPages\.  
   
-2.  Если начальная страница требует сборок, скопируйте их и вставьте их в... \\ *Папка установки visual Studio*\Common7\IDE\PrivateAssemblies\\.  
+2. Если начальная страница требует сборок, скопируйте их и вставьте их в... \\ *Папка установки visual Studio*\Common7\IDE\PrivateAssemblies\\.  
   
-3.  В **настроить начальную страницу** списке **запуска** параметры выберите Новая начальная страница. Дополнительные сведения см. в разделе [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md).  
+3. В **настроить начальную страницу** списке **запуска** параметры выберите Новая начальная страница. Дополнительные сведения см. в разделе [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md).  
   
 ## <a name="see-also"></a>См. также  
  [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Добавление пользовательского элемента на начальную страницу](../extensibility/adding-user-control-to-the-start-page.md)
-

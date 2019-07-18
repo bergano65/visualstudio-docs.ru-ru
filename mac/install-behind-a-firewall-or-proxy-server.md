@@ -1,25 +1,25 @@
 ---
 title: Установка и использование Visual Studio для Mac в среде, защищенной брандмауэром или прокси-сервером
-description: Этот документ содержит список узлов, которые нужно включить в список разрешений в брандмауэре, чтобы обеспечить работу Visual Studio для Mac (и соответствующих рабочих нагрузок, включая Xamarin) в корпоративной среде.
+description: Этот документ содержит список узлов, которые должны быть разрешены в брандмауэре, чтобы Visual Studio для Mac (и соответствующие рабочие нагрузки, включая Xamarin) работали в корпоративной среде.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: 70ac8defdcea9cccd8a3b3f9be71d38fb78c9c50
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 7e7e8c3cd5f3ffded3387deb896df18d5b2ec705
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295199"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586885"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Установка и использование Visual Studio для Mac в среде, защищенной брандмауэром или прокси-сервером
 
-Если вы или ваша организация используете средства обеспечения безопасности, например брандмауэр или прокси-сервер, значит есть URL-адреса доменов, которые нужно добавить в список разрешений, а также порты и протоколы, которые нужно открыть, чтобы обеспечить оптимальные установку и использование Visual Studio для Mac и служб Azure.
+Если вы или ваша организация используете средства обеспечения безопасности, например брандмауэр или прокси-сервер, значит есть домены, которые нужно добавить в список разрешений, а также порты и протоколы, которые нужно открыть, чтобы обеспечить оптимальную установку и использование Visual Studio для Mac и служб Azure.
 
-- [**Установка Visual Studio для Mac**](#install-visual-studio-for-mac). Эти таблицы содержат URL-адреса, которые нужно добавить в список разрешений, чтобы получить доступ ко всем функциям и рабочим нагрузкам Visual Studio для Mac.
+- [**Установка Visual Studio для Mac**](#install-visual-studio-for-mac). Эти таблицы содержат данные о доменах, для которых нужно разрешить подключения, чтобы вы могли получить доступ ко всем функциям и рабочим нагрузкам Visual Studio для Mac.
 
-- [**Использование Visual Studio для Mac**](#use-visual-studio-for-mac). Эти таблицы содержат URL-адреса, которые нужно добавить в список разрешений, чтобы получить доступ ко всем нужным службам и функциям.
+- [**Использование Visual Studio для Mac**](#use-visual-studio-for-mac). Эти таблицы содержат данные о доменах, для которых нужно разрешить подключения, чтобы вы могли получить доступ к соответствующим функциям.
 
 ## <a name="install-visual-studio-for-mac"></a>Установка Visual Studio для Mac
 
@@ -38,6 +38,8 @@ ms.locfileid: "51295199"
 | download.visualstudio.microsoft.com | Пакеты установщика|
 | xamarin.azureedge.net | Пакеты установщика|
 | developer.xamarin.com | Пакеты установщика|
+| static.xamarin.com | Пакеты установщика|
+| dl.xamarin.com | Пакеты установщика|
 | dc.services.visualstudio.com| Отчеты о сбоях |
 
 ### <a name="third-party-domains"></a>Сторонние домены
@@ -89,5 +91,5 @@ ms.locfileid: "51295199"
 
 ## <a name="see-also"></a>См. также
 
-- [Установка и использование Visual Studio 2017 и служб Azure, расположенных за брандмауэром или прокси-сервером](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
+- [Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
 - [Исправление схожих ошибок в Windows](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

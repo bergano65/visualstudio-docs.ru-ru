@@ -1,11 +1,8 @@
 ---
 title: Диалоговое окно CorrelatesOn Definition | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - CorrelatesOnDefinition.UI
@@ -13,13 +10,13 @@ ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 3171efb985eec54d0e935d2e8499c69631c6dfc8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fd03e1a8615e75d3f00f79eb10b7a7ff97f0eb33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977376"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Диалоговое окно «Корреляция по определению»
 **CorrelatesOn** диалоговое окно используется в [!INCLUDE[wfd1](../includes/wfd1-md.md)] изменение <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> свойство <xref:System.ServiceModel.Activities.Receive> действия. [!INCLUDE[crdefault](../includes/crdefault-md.md)] [Receive](../workflow-designer/receive-activity-designer.md) раздела.  
@@ -39,5 +36,4 @@ ms.locfileid: "49285822"
 ## <a name="see-also"></a>См. также  
  <xref:System.ServiceModel.Activities.Receive>   
  [Добавление инициализаторов корреляции диалогового окна](../workflow-designer/add-correlationinitializers-dialog-box.md)   
- [Добавление диалогового окна корреляции](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)   
  [Диалоговое окно "Инициализация корреляции"](../workflow-designer/initialize-correlation-dialog-box.md)

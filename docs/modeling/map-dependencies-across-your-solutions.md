@@ -13,16 +13,15 @@ helpviewer_keywords:
 - dependency graphs
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 084518e27924c714b2e1ca7982389fb93ff274cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937708"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Сопоставление зависимостей с помощью карт кода
 
@@ -48,7 +47,7 @@ ms.locfileid: "53861628"
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Схема установки кода и Динамическая проверка зависимостей
 
-Чтобы создать карту кода в Visual Studio 2017, сначала нужно установить **карта кода** и **динамическую проверку зависимостей** компоненты:
+Чтобы создать карту кода в Visual Studio, сначала нужно установить **карта кода** и **динамическую проверку зависимостей** компоненты:
 
 1. Откройте **установщик Visual Studio**. Его можно открыть из меню Windows Пуск или в среде Visual Studio, выбрав **средства** > **получить средства и компоненты**.
 
@@ -105,7 +104,7 @@ ms.locfileid: "53861628"
 
    ![Развертывание узла на карте кода](../modeling/media/dependencygraph_containment.png)
 
-   Также можно выбрать нужный элемент с помощью клавиатуры и нажать клавишу**+**. Чтобы изучить более глубокие уровни кода, проделайте то же самое для пространств имен, типов и членов.
+   Также можно выбрать нужный элемент с помощью клавиатуры и нажать клавишу **+**. Чтобы изучить более глубокие уровни кода, проделайте то же самое для пространств имен, типов и членов.
 
    > [!TIP]
    > Дополнительные сведения о работе с кодом сопоставляется с помощью мыши, клавиатуры и жестов см. раздел [Просмотр и реорганизация карт кода](../modeling/browse-and-rearrange-code-maps.md).
@@ -239,7 +238,7 @@ ms.locfileid: "53861628"
 
 ## <a name="see-also"></a>См. также
 
-- [Видео: Понимание разработки из кода с помощью карт кода Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
+- [Видео. Понимание разработки из кода с помощью карт кода Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Сопоставление методов в стеке вызовов при отладке](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)

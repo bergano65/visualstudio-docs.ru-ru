@@ -7,21 +7,20 @@ helpviewer_keywords:
 - walkthroughs [text templates], directive processor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 44eb71a4bbb209453ee7deef6adf3b10c561e8af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935364"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского процессора директив
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Пошаговое руководство. Создание пользовательского обработчика директив
 
 *Процессоры директив* работают путем добавления кода в *генерируемый класс преобразования*. При вызове метода *директива* из *текстового шаблона*, остальной код, записанный в текстовый шаблон можно использовать предоставленную директивой функциональность.
 
@@ -35,7 +34,7 @@ ms.locfileid: "53951830"
 
 - Тестирование процессора директив
 
-## <a name="create-a-custom-directive-processor"></a>Создание пользовательского процессора директив
+## <a name="create-a-custom-directive-processor"></a>Создание пользовательского обработчика директив
 
 В данном пошаговом руководстве вы создадите пользовательский процессор директив. Вы добавите пользовательскую директиву, которая считывает XML-файл, сохраняет его в переменной <xref:System.Xml.XmlDocument> и предоставляет доступ к нему через свойство. В разделе "Тестирование процессора директив" вы используете это свойство в текстовом шаблоне для доступа к XML-файлу.
 
@@ -332,7 +331,7 @@ End Property
             {
                 XmlDocument d = new XmlDocument();
 
-                using (XmlTextReader reader = new XmlTextReader(fileName))
+                using (XmlReader reader = XmlReader.Create(fileName))
                 {
                     try
                     {
@@ -582,7 +581,7 @@ End Property
 
                 Dim d As XmlDocument = New XmlDocument()
 
-                Using reader As XmlTextReader = New XmlTextReader(fileName)
+                Using reader As XmlReader = XmlReader.Create(fileName)
 
                     Try
                         d.Load(reader)
@@ -655,7 +654,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      Ваш раздел реестра должен содержать следующие значения:
 
-
    | name | Тип | Данные |
    |-|-|-|
    | (Значение по умолчанию) | REG_SZ | (значение не задано) |
@@ -664,13 +662,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      Если вы поместили сборку в глобальный кэш сборок, эти значения должны выглядеть так:
 
-
    | name | Тип | Данные |
    |-|-|-|
    | (Значение по умолчанию) | REG_SZ | (значение не задано) |
    | Класс | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
-
 
 6. Перезапустите Visual Studio.
 

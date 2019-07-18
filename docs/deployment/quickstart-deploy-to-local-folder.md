@@ -1,27 +1,30 @@
 ---
 title: Развертывание в локальную папку
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4dff7adb3942fce20b7b6cb5b09c29965320399
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcf17504f5ae057e68544d26e071bb74cc7b83bf
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854039"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263524"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Развертывание приложения в локальную папку с помощью Visual Studio
 
 Вы можете использовать средство **публикации** для публикации приложений ASP.NET, ASP.NET Core, .NET Core и Python в локальную папку из Visual Studio. Для Node.js эти действия поддерживаются, однако отличается пользовательский интерфейс.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
+
+> [!NOTE]
+> Если вам нужно опубликовать классическое приложение Windows в локальную папку, см. раздел [Развертывание классического приложения с помощью ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# или Visual Basic). Для C + +/ CLR см. раздел [Развертывание собственного приложения с помощью ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications). Для C/C++ см. раздел [Развертывание собственного приложения с помощью проекта установки](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Развертывание в локальную папку
 
@@ -33,7 +36,7 @@ ms.locfileid: "53854039"
 
 1. В открывшемся диалоговом окне **Выберите целевой объект публикации** и укажите **Папка**.
 
-    ![Выбор локальной папки в качестве цели публикации](../deployment/media/quickstart-publish-folder.png "Выбор параметра \"Папка\"")
+    ![Выбор локальной папки в качестве целевого объекта публикации](../deployment/media/quickstart-publish-folder.png "Выбор папки")
 
 1. Введите путь или выберите **Обзор**, чтобы указать локальную папку.
 

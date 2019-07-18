@@ -28,15 +28,15 @@ helpviewer_keywords:
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 339fb8b46a72f44428e9a3b177e194dfb484bbb3
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
-ms.translationtype: MTE95
+ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847699"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Настройка конфигураций отладки и выпуска в Visual Studio
 
@@ -44,7 +44,7 @@ ms.locfileid: "54204351"
 
 В конфигурации отладки программы компилируется с полной символической отладочной информацией и без оптимизации. Оптимизация усложняет отладку, поскольку усложняется связь между исходным кодом и сгенерированными инструкциями.
 
-Конфигурация программы для выпуска полностью оптимизируется и его не содержит символической отладочной информации. Для управляемого кода и кода C++, могут создаваться отладочной информации в PDB-файлы, [в зависимости от параметров компилятора](#BKMK_symbols_release) , которые используются. Создание PDB-файлов может оказаться полезным в том случае, если позднее возникнет необходимость в отладке версии выпуска.
+Конфигурация программы для выпуска полностью оптимизируется и его не содержит символической отладочной информации. Для управляемого кода и C++ кода, отладочная информация может быть создана в PDB-файлы, [в зависимости от параметров компилятора](#BKMK_symbols_release) , которые используются. Создание PDB-файлов может оказаться полезным в том случае, если позднее возникнет необходимость в отладке версии выпуска.
 
 Дополнительные сведения о конфигурациях сборки см. в статье [Общие сведения о конфигурациях сборки](../ide/understanding-build-configurations.md).
 
@@ -71,9 +71,9 @@ ms.locfileid: "54204351"
 
 Каждый тип проекта может иметь другим способом настройки этих параметров.
 
-### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Создать файлы символов для C#, ASP.NET или проекта Visual Basic
+### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Создать файлы символов для проекта C#, ASP.NET или Visual Basic
 
-Подробные сведения о параметрах проекта для конфигураций отладки в C# или Visual Basic, см. в разделе [параметры для проекта C# конфигурации отладки](../debugger/project-settings-for-csharp-debug-configurations.md) или [параметры для отладки Visual Basic проекта конфигурации](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+Подробные сведения о параметры проекта для конфигураций отладки в C# или Visual Basic, см. в разделе [параметры проекта для C# конфигурации отладки](../debugger/project-settings-for-csharp-debug-configurations.md) или [параметры проекта для Visual Basic отладки конфигурации](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
 
 1. Выберите проект в Обозревателе решений.
 
@@ -87,9 +87,9 @@ ms.locfileid: "54204351"
 
 6. В **отладочную информацию** списка (или **создать отладочную информацию** списка в Visual Basic), выберите **полный**, **только Pdb**, или **Переносимой**.
 
-   Переносимый формат является самой последней кросс платформенных для .NET Core. Дополнительные сведения о параметрах см. в разделе [диалоговое окно «Дополнительные параметры построения» (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
+   Переносимый формат является самой последней кросс платформенных для .NET Core. Дополнительные сведения о параметрах см. в разделе [диалоговое окно Дополнительные параметры построения (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
-   ![Создать файл PDB для сборок в C# ](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   ![Создать файл PDB для сборок в C#](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
 7. Построить проект.
 
@@ -118,10 +118,10 @@ ms.locfileid: "54204351"
    Компилятор создает файлы символов в той же папке, как исполняемый файл или основного выходного файла.
 
 ## <a name="see-also"></a> См. также
- 
-[Указание файлов символов (.pdb) и исходных файлов в отладчике Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
-[Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)<br/>
-[Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
-[Параметры проекта для конфигурации отладки C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
-[Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
-[Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md)
+
+- [Указание файлов символов (.pdb) и исходных файлов в отладчике Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
+- [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)<br/>
+- [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
+- [Параметры проекта для конфигурации отладки C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
+- [Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
+- [Практическое руководство. Создание и изменение конфигураций](../ide/how-to-create-and-edit-configurations.md)

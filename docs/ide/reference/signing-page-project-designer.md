@@ -1,7 +1,6 @@
 ---
 title: Страница "Подписывание" в конструкторе проектов
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -17,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d59f81a8bedd62e7127d5541f943f0b0c26b8905
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 862f2ca7da96e7d084d2af7bfa53a5640bed22d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950544"
 ---
 # <a name="signing-page-project-designer"></a>Страница "Подписывание" в конструкторе проектов
 Используйте страницу **Подписывание** **конструктора проектов** для подписи манифестов приложения и развертывания, а также сборок (подпись с помощью строгих имен).
@@ -94,7 +93,6 @@ ms.locfileid: "53856648"
 
 > [!NOTE]
 > При подписи сборки у вас не всегда может быть доступ к закрытому ключу. Например, организация может использовать тщательно охраняемую пару ключей, не предоставляемую разработчикам для повседневного использования. Открытый ключ может быть доступен, однако доступ к закрытому ключу может предоставляться лишь нескольким сотрудникам. В этом случае можно использовать *отложенную* или *частичную подпись* для предоставления открытого ключа, отложив добавление закрытого ключа до передачи сборки.
-
 
 ## <a name="see-also"></a>См. также
 

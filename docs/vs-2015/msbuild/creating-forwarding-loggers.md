@@ -1,14 +1,9 @@
 ---
 title: Создание средства ведения журнала переадресации | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, forwarding loggers
 - MSBuild, logging
@@ -16,18 +11,17 @@ ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 46cff57e8238e00f914f8437fbc81d1887e7d629
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281246"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648225"
 ---
 # <a name="creating-forwarding-loggers"></a>Создание средства ведения журнала переадресации
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Средства ведения журнала переадресации повышают эффективность ведения журналов, позволяя выбрать события, которые требуется отслеживать при сборке проектов в многопроцессорной системе. Включив эти средства ведения журнала переадресации, можно предотвратить переполнение центрального средства ведения журнала нежелательными событиями, замедление сборки и загромождение журнала.  
   
  Чтобы создать средство ведения журнала переадресации, можно либо реализовать интерфейс <xref:Microsoft.Build.Framework.IForwardingLogger> и вручную реализовать его методы либо использовать класс <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> и его предварительно настроенные методы. (Последний вариант подойдет для большинства приложений.)  
@@ -47,10 +41,7 @@ ms.locfileid: "49281246"
 ## <a name="multi-processor-aware-loggers"></a>Средства ведения журнала с поддержкой многопроцессорности  
  При сборке проекта в многопроцессорной системе сообщения о сборке от каждого процессора не чередуются автоматически в определенной последовательности. Вместо этого нужно назначить приоритет группирования сообщений с помощью класса <xref:Microsoft.Build.Framework.BuildEventContext>, который присоединяется к каждому сообщению. Дополнительные сведения о сборке в многопроцессорной среде см. в разделе [Ведение журнала в многопроцессорной среде](../msbuild/logging-in-a-multi-processor-environment.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Средства ведения журнала сборки](../msbuild/build-loggers.md)   
  [Ведение журнала в многопроцессорной среде](../msbuild/logging-in-a-multi-processor-environment.md)
-
-
-

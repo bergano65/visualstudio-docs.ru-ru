@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IMachineDebugManagerCookie | Документы Microsoft
+title: Интерфейс IMachineDebugManagerCookie | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,19 +13,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a03b959a7eb09f3b85530bbba07d1d2dc7f8948a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fdc02498360f2e3900012166474c5d1e35abd6ee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977689"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>Интерфейс IMachineDebugManagerCookie
-Аналогично `IMachineDebugManager` интерфейс, `IMachineDebugManagerCookie` интерфейс поддерживает файлы cookie отладки.  
+Аналогичную `IMachineDebugManager` интерфейс, `IMachineDebugManagerCookie` интерфейс поддерживает файлы cookie отладки.  
   
  Этот интерфейс (вместе с `IDebugCookie` интерфейса) для запуска в процессе отладчика сценариев без необходимости, что отладчик хранить список этих скриптов сценариев.  
   
- Вызывает отладчик сценариев `IDebugCookie::SetDebugCookie` метод на процесс отладки Manager (PDM). Затем PDM отправляет этот файл cookie, а также любой запрос на добавление или удаление приложения сценария в или из Machine Debug Manager (MDM), с помощью методов `IMachineDebugManagerCookie` интерфейса. Затем MDM уведомляет каждый отладчик изменения, за исключением того, который имеет этому файлу cookie.  
+ Вызывает отладчик сценариев `IDebugCookie::SetDebugCookie` метод на процесс отладки Manager (PDM). Затем PDM отправляет этот файл cookie, а также любой запрос, чтобы добавить или удалить приложение сценария для или от машины отладка Manager (MDM), с помощью методов `IMachineDebugManagerCookie` интерфейс. MDM уведомляет каждый отладчик изменения, за исключением того, который содержит этот файл cookie.  
   
  Помимо методов, наследуемых от `IUnknown`, `IMachineDebugManagerCookie` интерфейс предоставляет следующие методы.  
   
@@ -34,9 +33,9 @@ ms.locfileid: "24729624"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Добавляет приложение с запуском список приложений.|  
-|[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Возвращает перечислитель для текущего списка запущенных приложений.|  
-|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Удаляет приложение с запуском список приложений.|  
+|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Добавляет приложению выполнения список приложений.|  
+|[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Возвращает перечислитель текущего списка выполняющихся приложений.|  
+|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Удаляет приложение из выполняемого список приложений.|  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)   

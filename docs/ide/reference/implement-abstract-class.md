@@ -1,19 +1,18 @@
 ---
 title: Реализация абстрактного класса
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 551efd07e3e62764c71a6bc4e2a9683517139966
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e5e1d05e0142a0185909ff590ff507fb53c7dc0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823201"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Реализация абстрактного класса в Visual Studio
 
@@ -47,8 +46,8 @@ ms.locfileid: "53840412"
       - Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
    - **Мышь**
       - Щелкните правой кнопкой мыши и выберите меню **Быстрые действия и рефакторинг**.
-      - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![Значок лампочки](media/bulb-cs.png) , который отображается.
-      - Нажмите кнопку ![Значок лампочки](media/bulb-cs.png) , который отображается в левом поле, если текстовый курсор уже находится в строке выбора с красной волнистой линией.
+      - Наведите указатель мыши на красную волнистую линию и щелкните появившийся значок ![лампочка с ошибкой](media/error-bulb.png) , который отображается.
+      - Нажмите кнопку ![лампочка с ошибкой](media/error-bulb.png) , который отображается в левом поле, если текстовый курсор уже находится в строке выбора с красной волнистой линией.
 
    ![Предварительный просмотр реализации класса](media/abstract-preview-cs.png)
 

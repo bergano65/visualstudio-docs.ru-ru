@@ -1,7 +1,6 @@
 ---
 title: CA2217. Не помечайте перечисляемые типы с помощью FlagsAttribute
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -16,15 +15,15 @@ dev_langs:
 ms.assetid: 1b6f626c-66bf-45b0-a3e2-7c41ee9ceda7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8afe63de8630b3fa7466e8c0784c26ba00bb1ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abe9b53a02f5a2c12b734c793557c69868a973e8
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852483"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841504"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217. Не помечайте перечисляемые типы с помощью FlagsAttribute
 
@@ -37,7 +36,9 @@ ms.locfileid: "53852483"
 
 ## <a name="cause"></a>Причина
 
-Видимый извне перечисление помечено <xref:System.FlagsAttribute>и он имеет один или несколько значений, не являющиеся степенями двух или сочетание этих определенных значений в перечислении.
+Перечисление помечено <xref:System.FlagsAttribute> и он имеет один или несколько значений, не являющиеся степенями двух или сочетание этих определенных значений в перечислении.
+
+По умолчанию это правило считывает только видимое извне перечисления, но это [можно настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
 
@@ -51,17 +52,25 @@ ms.locfileid: "53852483"
 
 Для этого правила отключать вывод предупреждений не следует.
 
-## <a name="example-that-should-not-have-the-attribute"></a>Пример, в котором не должен быть атрибут
+## <a name="configurability"></a>Возможность настройки
 
-В следующем примере показано перечисление, `Color`, который содержит значение 3. 3 не является степенью числа два или несколько определенных значений. `Color` Перечисления не должны быть помечены атрибутом <xref:System.FlagsAttribute>.
+Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+
+```ini
+dotnet_code_quality.ca2217.api_surface = private, internal
+```
+
+В этой категории (использование), можно настроить этот параметр для только что это правило, для всех правил или для всех правил. Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
+
+## <a name="examples"></a>Примеры
+
+В следующем коде показано перечисление, `Color`, который содержит значение 3. 3 не является степенью числа два или несколько определенных значений. `Color` Перечисления не должны быть помечены атрибутом <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-## <a name="example-that-should-have-the-attribute"></a>Пример, в котором должен быть атрибут
-
-В следующем примере показано перечисление, `Days`, который соответствует требованиям для с атрибутом <xref:System.FlagsAttribute>.
+В следующем коде показано перечисление, `Days`, который соответствует требованиям для с атрибутом <xref:System.FlagsAttribute>:
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]

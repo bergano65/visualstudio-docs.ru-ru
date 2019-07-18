@@ -9,30 +9,30 @@ helpviewer_keywords:
 ms.assetid: 63b67a93-2910-4fff-aa70-6b2eaa08e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8238469232656d4fa32b71fbfb7704afd6870b54
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 24317ff7a79815e5af2306b09cc8d2aa3bfdde0d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832680"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
-Определяет, если может найти отладочную информацию из DBG-файлы.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT RestrictDBGAccess();  
-```  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Любое возвращаемое значение, отличное от `S_OK` во избежание найти отладочную информацию из DBG-файлы.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+Определяет, если может найти отладочную информацию из DBG-файлы.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT RestrictDBGAccess();
+```
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Любое возвращаемое значение, отличное от `S_OK` во избежание найти отладочную информацию из DBG-файлы.
+
+## <a name="see-also"></a>См. также
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

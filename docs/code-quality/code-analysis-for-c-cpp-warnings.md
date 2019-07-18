@@ -1,7 +1,6 @@
 ---
 title: Анализ кода для предупреждений C/C++
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, warnings for C/C++ code
@@ -19,12 +18,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 369aee6e9d94aa1f2f25029022609d11aac9d7a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc3f09575085039986a0b2fbbf3eb386ee5f5e1b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540785"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Анализ кода для предупреждений C/C++
 В этом разделе перечислены предупреждения анализа кода C/C++, за исключением тех, которые вызываются [программы правила C++ Core](code-analysis-for-cpp-corecheck.md). Сведения об анализе кода см. в разделе [/ analyze (анализ кода)](/cpp/build/reference/analyze-code-analysis) и [быстрого запуска: Анализ кода для C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).

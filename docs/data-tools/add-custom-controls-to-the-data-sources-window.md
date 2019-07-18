@@ -14,16 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b4cd6004519573064683d87a35d1b3c49711edb6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: defc1605d15fcc9ce616212b48faa7674abc87e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824672"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Добавление пользовательских элементов управления в окно "Источники данных"
 

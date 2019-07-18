@@ -1,8 +1,7 @@
 ---
-title: IDebugApplicationThread110::GetActiveThreadRequestCount | Документы Microsoft
+title: IDebugApplicationThread110::GetActiveThreadRequestCount | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb4d19bb77a4380c3c0a04f7e7808b82ca3f6ae4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 3df2f0c44e42cf9e2c2aa846db4b88821fd73996
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440571"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
-Возвращает число потоков запросов из потока PDM переключение механизмы, обрабатываемых в данный момент. Это число обычно 0 или 1. Тем не менее, число может быть выше, если один вызов поток начинает обработку, но активирует синхронный вызов из потока, или в противном случае приостанавливает работу потока и позволяет повторной обработки входящих вызовов (например, путем активации [ Интерфейс IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md) событие, которое выдается в потоке отладчика).  
+Возвращает число потоков запросов из потока PDM переключение механизмы, которые сейчас обрабатываются. Это число обычно 0 или 1. Тем не менее, число может быть выше, если один вызов поток начинает обработку, но вызывает синхронный вызов из потока, или в противном случае приостанавливает поток и разрешает входящие вызовы для повторной обработки (например, отключая [ Интерфейс IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md) событие, которое выдается в потоке отладчика).  
   
 > [!IMPORTANT]
->  [Idebugapplicationthread110 — интерфейс](../../winscript/reference/idebugapplicationthread110-interface.md) — реализованный PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> [Интерфейс IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   

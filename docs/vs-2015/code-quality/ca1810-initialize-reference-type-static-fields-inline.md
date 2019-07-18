@@ -1,14 +1,9 @@
 ---
-title: 'CA1810: Ссылку инициализируйте статические поля типа встроенными | Документация Майкрософт'
-ms.custom: ''
+title: CA1810. Инициализируйте статические поля ссылочного типа встроенными | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InitializeReferenceTypeStaticFieldsInline
 - CA1810
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4d7ffbe4fc821ffd70b0bb299b2a4738d63873b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538919"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: инициализируйте статические поля ссылочного типа встроенными средствами
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810. Инициализируйте статические поля ссылочных типов при объявлении
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -47,9 +42,9 @@ ms.locfileid: "49862688"
 
  Проверки статических конструкторов могут привести к снижению производительности. Часто статический конструктор используется только для инициализации статических полей, в которых необходимо только убедиться в том статическая инициализация происходит до первого обращения статического поля. `beforefieldinit` Поведение подходит для этих и большинства других типов. Он не только может использоваться, когда статическая инициализация влияет на глобальное состояние и одно из следующих условий верно:
 
--   Воздействие на глобальное состояние ресурсоемких и не является обязательным, если тип не используется.
+- Воздействие на глобальное состояние ресурсоемких и не является обязательным, если тип не используется.
 
--   Изменение глобального состояния может осуществляться без доступа к любой статические поля типа.
+- Изменение глобального состояния может осуществляться без доступа к любой статические поля типа.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение данного правила, выполните инициализацию всех статических данных при их объявлении и удалите статический конструктор.
@@ -72,7 +67,4 @@ ms.locfileid: "49862688"
  **{** 
  **} / / end класса NoStaticConstructor**
 ## <a name="related-rules"></a>Связанные правила
- [CA2207: инициализируйте статические поля типа значений встроенными средствами](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
-
-
-
+ [CA2207: Инициализируйте статические поля типа значений встроенными средствами](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

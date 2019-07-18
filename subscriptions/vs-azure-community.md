@@ -4,17 +4,14 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Сведения о преимуществе сообщества Azure, включенном в некоторые подписки Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: f3e0890d6b8f5e64535deea52670877d3c356f8d
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 9cd166d2e6be64713e6e79569133eea887568da1
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739391"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250826"
 ---
 # <a name="azure-community"></a>Сообщество Azure
 
@@ -30,8 +27,6 @@ ms.locfileid: "53739391"
 | [Портал управления Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [виртуальные машины Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc);                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-
-
 ## <a name="activation-steps"></a>Процедура активации
 Вы можете очень легко начать взаимодействие с сообществом Azure.
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -44,34 +39,30 @@ ms.locfileid: "53739391"
     > [!div class="mx-imgBorder"]
     > ![Форумы сообщества Azure](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  На форуме вы можете просмотреть темы и ответы, поискать ответы на свой вопрос или опубликовать новый вопрос.
+4. На форуме вы можете просмотреть темы и ответы, поискать ответы на свой вопрос или опубликовать новый вопрос.
     > [!div class="mx-imgBorder"]
     > ![Пример сообщества Azure](_img/vs-azure-community/vs-azure-community-example.png)
 
 ## <a name="eligibility"></a>Право на участие
 Доступность преимущества сообщества Azure зависит от уровня подписки, как показано ниже.
 
-
 |                                          Уровень подписки                                           |     Каналы      |    Преимущество    | Возможность возобновления |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (ценовая категория "Стандартный")                           | Корпоративная лицензия, Azure, розничная версия |   Один год    |    Да     |
-|                          Visual Studio Professional (ценовая категория "Стандартный")                          | Корпоративная лицензия, Azure, розничная версия |   Один год    |    Да     |
-|                              Visual Studio Test Professional (стандартная)                               |    Корпоративная лицензия, розничная версия     |   Один год    |    Да     |
-|                                       MSDN Platforms (стандартная)                                       |    Корпоративная лицензия, розничная версия     |   Один год    |    Да     |
+|                           Visual Studio Enterprise (ценовая категория "Стандартный")                           | Корпоративная лицензия, Azure, розничная версия |   Один год    |    Yes     |
+|                          Visual Studio Professional (ценовая категория "Стандартный")                          | Корпоративная лицензия, Azure, розничная версия |   Один год    |    Yes     |
+|                              Visual Studio Test Professional (стандартная)                               |    Корпоративная лицензия, розничная версия     |   Один год    |    Yes     |
+|                                       MSDN Platforms (стандартная)                                       |    Корпоративная лицензия, розничная версия     |   Один год    |    Yes     |
 | Visual Studio Enterprise (ежемесячная облачная), Visual Studio Professional (ежемесячная облачная), не для перепродажи (NFR) <sup>1</sup> |        Все        | Недоступно |     Нет     |
-|                                     Visual Studio Dev Essentials                                      |        Н/Д        | Недоступно |     Нет     |
-|                                                                                                       |                   |               |            |
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), Microsoft FTE, Microsoft Valued Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT).*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), Microsoft FTE, Most Valuable Professional (MVP), региональный директор (RD), отраслевой партнер Visual Studio (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT).*
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
-
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Другие ресурсы сообщества Azure представлены на [странице поддержки](https://azure.microsoft.com/support/forums/) сообщества Azure.
--  [Документация по Azure](/azure/).
--  Вам нужна помощь по вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio?  Обратитесь в [службу поддержки по подпискам на Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
--  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+- Другие ресурсы сообщества Azure представлены на [странице поддержки](https://azure.microsoft.com/support/forums/) сообщества Azure.
+- [Документация по Azure](/azure/).
+- Вам нужна помощь по вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio?  Обратитесь в [службу поддержки по подпискам на Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+- У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

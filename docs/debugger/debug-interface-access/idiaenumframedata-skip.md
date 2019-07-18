@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: 67140b4c-7125-4895-932d-42412326da29
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b12926fb1fb79ee02dc934f808b6e5ba8f742e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d747149e18f831b9f57249503a64c37141c4daa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833602"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
-Пропускает указанное число кадров данных элементов в последовательности перечисления.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- celt  
- [in] Номер кадра данных элементов в последовательности перечисления для пропуска.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если отсутствуют дополнительные записи для пропуска.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+Пропускает указанное число кадров данных элементов в последовательности перечисления.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ celt
+
+[in] Номер кадра данных элементов в последовательности перечисления для пропуска.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если отсутствуют дополнительные записи для пропуска.
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

@@ -8,30 +8,39 @@ ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: ba255d1d1e906e8fe7bacd05d1f4afd4b7bf413b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407847"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на удаленном компьютере со службами IIS
 Чтобы отладить приложение ASP.NET, который был развернут в службах IIS, установки и запуска инструментов удаленной отладки на компьютере, на котором развертывается приложение затем прикрепление к выполняемому приложению из Visual Studio.
 
 ![Компоненты удаленной отладки](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-В этом руководстве объясняется, как установить и настроить приложение Visual Studio 2017 ASP.NET MVC 4.5.2 развертывания в IIS и подключить удаленный отладчик из Visual Studio.
+В этом руководстве объясняется, как установить и настроить приложение Visual Studio ASP.NET MVC 4.5.2 развертывания в IIS и подключить удаленный отладчик из Visual Studio.
 
 > [!NOTE]
 > На удаленный компьютер отладки ASP.NET Core, вместо этого, см. в разделе [удаленной отладки ASP.NET Core на компьютере со службами IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Для службы приложений Azure, можно легко развернуть и отладить предварительно настроенного экземпляра IIS, с помощью [Snapshot Debugger](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 необходимые) или с помощью [подключения отладчика с помощью обозревателя сервера](../debugger/remote-debugging-azure.md).
 
+## <a name="prerequisites"></a>Предварительные требования
+
+::: moniker range=">=vs-2019"
+2019 г. Visual Studio требуется выполнить действия, приведенные в этой статье.
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017 необходим для выполнения действий, описанных в этой статье.
+::: moniker-end
+
 Эти процедуры протестированы на эти конфигурации сервера:
 * Windows Server 2012 R2 и служб IIS 8 (для Windows Server 2008 R2, server, шаги будут отличаться)
 
-## <a name="requirements"></a>Требования
+## <a name="network-requirements"></a>Требования к сети
 
 Удаленный отладчик поддерживается на Windows Server, начиная с пакета обновления 2 для Windows Server 2008. Полный список требований см. в разделе [требования](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -47,8 +56,15 @@ ms.locfileid: "53829200"
 * Если вам требуется помощь, чтобы убедиться в том, что приложение настройки, развертывания и неправильной работе в IIS, чтобы выполнять отладку, выполните действия, описанные в этом разделе.
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Создавать приложения ASP.NET 4.5.2 приложения на компьютере с Visual Studio
-  
-1. Создайте приложение MVC ASP.NET. (**Файл > Создать > проект**, а затем выберите <strong>Visual C# > Web > веб-приложение ASP.NET. В разделе шаблонов ASP.NET 4.5.2 выберите шаблон MVC</strong>. Убедитесь, что **Включение поддержки Docker** не выбран и что **проверки подлинности** присваивается **без проверки подлинности**. Назовите проект **MyASPApp**.)
+
+1. Создайте приложение MVC ASP.NET.
+
+    ::: moniker range=">=vs-2019"
+    В Visual Studio 2019 г., введите **Ctrl + Q** для открытия окна поиска, введите **asp.net**, выберите **шаблоны**, затем выберите **создавать новые приложения Web ASP.NET (.NET Платформа)** . В появившемся диалоговом окне, назовите проект **MyASPApp**, а затем выберите **создать**. Выберите **MVC** и выберите **создать**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Для этого в Visual Studio 2017, выберите **файл > Создать > проект**, а затем выберите **Visual C# > Web > веб-приложение ASP.NET**. В разделе шаблонов **ASP.NET 4.5.2** выберите шаблон **MVC**. Убедитесь, что **Включение поддержки Docker** не выбран и что **проверки подлинности** присваивается **без проверки подлинности**. Назовите проект **MyASPApp**.)
+    ::: moniker-end
 
 2. Откройте файл HomeController.cs и установите точку останова в методе `About()` .
 
@@ -80,7 +96,7 @@ ms.locfileid: "53829200"
     > [!NOTE]
     > Если вы используете Windows Server 2008 R2, установите ASP.NET 4, вместо этого с помощью следующей команды:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Перезапустите систему (или выполните в командной строке команду **net stop was /y**, а затем команду **net start w3svc**, чтобы изменение системной переменной PATH вступило в силу).
 
@@ -147,7 +163,7 @@ ms.locfileid: "53829200"
 Также можно опубликовать и развернуть приложение с помощью файловой системы или других средств.
 
 1. (ASP.NET 4.5.2) Убедитесь, что в файле web.config указана правильная версия .NET Framework.  Например если вы используете ASP.NET 4.5.2, убедитесь, что это версия, указанная в файле web.config.
-  
+
     ```xml
     <system.web>
       <compilation debug="true" targetFramework="4.5.2" />
@@ -156,7 +172,7 @@ ms.locfileid: "53829200"
         <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" />
       </httpModules>
     </system.web>
-  
+
     ```
 
     Например версия должна быть 4.0 при установке ASP.NET 4 вместо 4.5.2.
@@ -165,10 +181,10 @@ ms.locfileid: "53829200"
 
 ## <a name="BKMK_msvsmon"></a> Скачайте и установите инструменты удаленной отладки на Windows Server
 
-В этом руководстве мы используем Visual Studio 2017.
+Скачайте версию инструментов удаленной отладки, которая соответствует вашей версии Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> Настройка удаленного отладчика в Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -184,41 +200,64 @@ ms.locfileid: "53829200"
 2. В Visual Studio щелкните **Отладка > присоединение к процессу** (Ctrl + Alt + P).
 
     > [!TIP]
-    > В Visual Studio 2017, можно подключить с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** SHIFT+ALT+P 
+    > В Visual Studio 2017 и более поздних версий, можно подключить с тем же процессом, уже присоединена к с помощью **Отладка > повторно подключиться к процессу...** (Shift + Alt + P).
 
-3. В поле "Описатель" задайте значение **\<имя удаленного компьютера>:4022**.
+3. Установите в поле квалификатор  **\<имя удаленного компьютера >** и нажмите клавишу **ввод**.
+
+    Убедитесь, что Visual Studio добавляет требуемый порт имя компьютера, которое отображается в формате:  **\<имя удаленного компьютера >: порт**
+
+    ::: moniker range=">=vs-2019"
+    В Visual Studio 2019 г., вы должны увидеть  **\<имя удаленного компьютера >: 4024**
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    В Visual Studio 2017, вы должны увидеть  **\<имя удаленного компьютера >: 4022**
+    ::: moniker-end
+    Порт является обязательным. Если вы не видите номер порта, добавьте его вручную.
+
 4. Нажмите кнопку **Обновить**.
     В окне **Доступные процессы** должен появиться ряд процессов.
 
     Если вы не видите все процессы, попробуйте использовать IP-адрес вместо имени удаленного компьютера (порт является обязательным). Можно использовать `ipconfig` в командной строке, чтобы получить адрес IPv4.
 
 5. Установите флажок  **Показать процессы, запущенные всеми пользователями**.
+
 6. Введите первую букву имени процесса, чтобы быстро найти **w3wp.exe** для ASP.NET 4.5.
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess.png "RemoteDBG_AttachToProcess")
+    При наличии нескольких процессов отображение **w3wp.exe**, проверьте **имя пользователя** столбца. В некоторых сценариях **имя пользователя** столбце отображается имя пула приложений, таких как **IIS APPPOOL\DefaultAppPool**. Если вы увидите, что пул приложений, чтобы правильно настроить процесс удобно для создания нового с именем пула приложений для экземпляра приложения, необходимо выполнить отладку и затем его можно найти простые способы **имя пользователя** столбца.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. Нажмите кнопку **Присоединить**
 
-8. Откройте веб-сайт удаленного компьютера. В браузере перейдите по адресу **http://\<имя удаленного компьютера>**.
-    
+8. Откройте веб-сайт удаленного компьютера. В браузере перейдите по адресу **http://\<имя удаленного компьютера>** .
+
     Должна открыться веб-страница ASP.NET.
 9. В работающем приложении ASP.NET, щелкните ссылку, чтобы **о** страницы.
 
     В Visual Studio должна быть достигнута точка останова.
 
-## <a name="bkmk_openports">Устранение неполадок</a> Откройте необходимые порты на Windows Server
+## <a name="bkmk_openports"></a> Устранение неполадок: Откройте необходимые порты на Windows Server
 
 В большинстве установок необходимые порты открыты при установке ASP.NET и удаленным отладчиком. Тем не менее может потребоваться проверить, что порты открыты.
 
 > [!NOTE]
-> На виртуальной Машине Azure, необходимо открыть порты, через [группы безопасности сети](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic). 
+> На виртуальной Машине Azure, необходимо открыть порты, через [группы безопасности сети](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 Требуемые порты:
 
-- 80 - необходимые для службы IIS
-- 8172 — (необязательно.) требуется для веб-развертывания для развертывания приложения из Visual Studio
-- 4022 - required для удаленной отладки из Visual Studio 2017 (см. в разделе [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) подробные сведения.
-- UDP 3702 - порта (необязательно) обнаружения позволяет **найти** кнопку при присоединении удаленного отладчика в Visual Studio.
+* 80 - необходимые для службы IIS
+::: moniker range=">=vs-2019"
+* 4024 - required для удаленной отладки из Visual Studio 2019 г. (см. в разделе [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) Дополнительные сведения).
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022 - required для удаленной отладки из Visual Studio 2017 (см. в разделе [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md) Дополнительные сведения).
+::: moniker-end
+* UDP 3702 - порта (необязательно) обнаружения позволяет **найти** кнопку при присоединении удаленного отладчика в Visual Studio.
 
 1. Чтобы открыть порт на сервере Windows, откройте **запустить** меню, и выполните поиск **брандмауэр Windows в режиме повышенной безопасности**.
 

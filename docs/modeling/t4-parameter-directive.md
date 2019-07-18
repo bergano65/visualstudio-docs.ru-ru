@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 42853082ef5de6027bdfb897e85f04d2bc37ad7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 4252ad81747576366c0873f2ad65646ee7af7f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422945"
 ---
 # <a name="t4-parameter-directive"></a>Директива Parameter T4
 
@@ -100,4 +99,4 @@ string resultText = t.TransformText();
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>Получение аргументов из TextTemplate.exe
 
 > [!IMPORTANT]
->  `parameter` Директива не извлекает значения, заданные в `-a` параметр `TextTransform.exe` служебной программы. Чтобы получить эти значения, задайте `hostSpecific="true"` в `template` директивы и используйте `this.Host.ResolveParameterValue("","","argName")`.
+> `parameter` Директива не извлекает значения, заданные в `-a` параметр `TextTransform.exe` служебной программы. Чтобы получить эти значения, задайте `hostSpecific="true"` в `template` директивы и используйте `this.Host.ResolveParameterValue("","","argName")`.

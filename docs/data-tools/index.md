@@ -1,24 +1,25 @@
 ---
 title: Разработка решений данных
-description: Дополнительные сведения о различных средствах разработки решений для данных в Visual Studio, в том числе средствах .NET Framework, SQL Server Data Tools, Azure Data Lake, Azure HDInsight и Azure Streaming Analytics.
+description: Узнайте о разнообразных средствах разработки решений для работы с данными в Visual Studio, в том числе средствах .NET, SQL Server Data Tools, Azure Data Lake, Azure HDInsight и Azure Streaming Analytics.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
-ms.prod: visual-studio-dev15
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 854cb5287aef6500e80d34fbccac8b343da73fc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 768d3d1f130c3ef7b81da9706559e9d6b5f159ee
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890554"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715041"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Использование средств для работы с данными в Visual Studio для разработки решений по обработке данных
 
 Узнайте, как с помощью средств для работы с данными в Visual Studio разрабатывать и тестировать решения по обработке данных с помощью SQL Server, Azure Data Lake или Hadoop.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -28,11 +29,11 @@ ms.locfileid: "53890554"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET framework tooling to develop your data applications" />
+                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET tooling to develop your data applications" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Сведения об инструментах Visual Studio и .NET Framework, а также о поддержке API при разработке приложений для работы с данными</h3>
+                        <h3>Сведения об инструментах Visual Studio и .NET, а также о поддерживаемых API при разработке приложений для работы с данными.</h3>
                     </div>
                 </div>
             </div>
@@ -124,7 +125,7 @@ ms.locfileid: "53890554"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Access data in Visual Studio></p>
+                        <p>Доступ к данным в Visual Studio</p>
                     </div>
                 </div>
             </div>

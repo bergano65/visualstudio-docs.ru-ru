@@ -2,7 +2,6 @@
 title: Перечисление BREAKREASON | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5c0dc03d8d24014e28ecf9510fa3d5faa21dba2
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 939d9f36c9838f02e58bc433d1a7bb9bef43c28d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955412"
 ---
 # <a name="breakreason-enumeration"></a>Перечисление BREAKREASON
 Показывает, что вызвало прерывание.  
@@ -43,9 +42,9 @@ typedef enum tagBREAKREASON {
 } BREAKREASON;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
-|Член|Описание:|  
+|Член|Описание|  
 |------------|-----------------|  
 |BREAKREASON_STEP|Модуль языка находится в пошаговом режиме.|  
 |BREAKREASON_BREAKPOINT|Модуль языка произошла явная точка останова.|  

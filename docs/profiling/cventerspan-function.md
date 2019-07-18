@@ -21,114 +21,108 @@ helpviewer_keywords:
 ms.assetid: 91689e9c-6733-44b9-b36a-8b9b2eef7d1d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b757d02f5a0da520f4bcb929b8c4f9eff4b4419
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d501f7c1e75f5b63c82c34f2dc0a4913d7a88c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552636"
 ---
 # <a name="cventerspan-function"></a>Функция CvEnterSpan
-Отмечает начало нового диапазона.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C  
-HRESULT CvEnterSpanW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCWSTR pMessage,  
-    ...   
-    );   
-  
-HRESULT CvEnterSpanA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCSTR pMessage,   
-    ...   
-    );   
-  
-HRESULT CvEnterSpanVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCWSTR pMessage,  
-    _In_ va_list argList  
-    );   
-  
-HRESULT CvEnterSpanVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCSTR pMessage,   
-    _In_ va_list argList  
-    );   
-  
-HRESULT CvEnterSpanExW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _In_ CV_IMPORTANCE level,   
-    _In_ int category,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCWSTR pMessage,   
-    ...   
-    );   
-  
-HRESULT CvEnterSpanExA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _In_ CV_IMPORTANCE level,   
-    _In_ int category,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCSTR pMessage,   
-    ...   
-    );   
-  
-HRESULT CvEnterSpanExVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _In_ CV_IMPORTANCE level,   
-    _In_ int category,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCWSTR pMessage,   
-    _In_ va_list argList);   
-  
-HRESULT CvEnterSpanExVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
-    _In_ CV_IMPORTANCE level,   
-    _In_ int category,   
-    _Out_ PCV_SPAN* ppSpan,   
-    _In_ PCSTR pMessage,   
-    _In_ va_list argList);  
-  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `argList`  
- Список аргументов.  
-  
- `category`  
- Категория диапазона.  
-  
- `level`  
- Уровень важности диапазона.  
-  
- `pMarkerSeries`  
- Допустимый контекст набора маркеров. Не может принимать значение NULL.  
-  
- `pMessage`  
- Строка формата сообщения. Не может принимать значение NULL.  
-  
- `ppSpan`  
- Адрес переменной, в которой будет храниться результирующий объект диапазона. Адрес не может принимать значение NULL, переменная может содержать любое значение.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Значение S_OK, если сообщение успешно записано. Код ошибки в том случае, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.  
-  
-## <a name="requirements"></a>Требования  
- **Заголовок:** *cvmarkers.h*  
-  
- **Юникод:** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW  
-  
- **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW  
-  
-## <a name="see-also"></a>См. также  
- [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)
+Отмечает начало нового диапазона.
+
+## <a name="syntax"></a>Синтаксис
+
+```C
+HRESULT CvEnterSpanW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvEnterSpanA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvEnterSpanVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList
+    );
+
+HRESULT CvEnterSpanVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList
+    );
+
+HRESULT CvEnterSpanExW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvEnterSpanExA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvEnterSpanExVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvEnterSpanExVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _Out_ PCV_SPAN* ppSpan,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList);
+
+```
+
+#### <a name="parameters"></a>Параметры
+ `argList` Список аргументов.
+
+ `category` Категория диапазона.
+
+ `level` Уровень важности диапазона.
+
+ `pMarkerSeries` Допустимый контекст набора маркеров. Не может принимать значение NULL.
+
+ `pMessage` Строка формата сообщения. Не может принимать значение NULL.
+
+ `ppSpan` Адрес переменной, в которой будет храниться результирующий объект диапазона. Адрес не может принимать значение NULL, переменная может содержать любое значение.
+
+## <a name="return-value"></a>Возвращаемое значение
+ Значение S_OK, если сообщение успешно записано. Код ошибки в том случае, если были какие-либо ошибки. Для проверки условия ошибки используйте макрос SUCCEEDED/FAILED.
+
+## <a name="requirements"></a>Требования
+ **Заголовок:** *cvmarkers.h*
+
+ **Юникод:** CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW
+
+ **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW
+
+## <a name="see-also"></a>См. также
+- [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)

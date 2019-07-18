@@ -1,7 +1,7 @@
 ---
-title: Отладка C++ нарушение доступа | Документация Майкрософт
+title: Отладка C++ нарушение прав доступа | Документация Майкрософт
 ms.custom: seodec18
-ms.date: 05/23/2017
+ms.date: 02/05/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.access
@@ -16,59 +16,68 @@ helpviewer_keywords:
 ms.assetid: 9311d754-0ce9-4145-b147-88b6ca77ba63
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe15813489fbdc0f3a9506468f56773fb3f35deb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 2be6c13e2a3c83d31540399dd3387addb08e8686
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895134"
 ---
-# <a name="how-can-i-debug-a-c-access-violation"></a>Как отладить нарушение доступа C++?
-## <a name="problem-description"></a>Описание проблемы  
- Программа порождает нарушение доступа. Как это отладить?  
-  
-## <a name="solution"></a>Решение  
- Если вы получаете нарушение прав доступа в строке кода, которая разыменовывает несколько указателей, может быть трудно определить указатель, который вызвал нарушение прав доступа. Начиная с Visual Studio 2015 с обновлением 1 диалоговое окно исключения теперь явно называет указатель, который вызвал нарушение прав доступа.  
-  
- Например, если имеется следующий код, вы должны получить нарушение прав доступа:  
-  
-```C++  
-#include <iostream>  
-using namespace std;  
-  
-class ClassB {  
-public:  
-        ClassC* C;  
-        ClassB() {  
-                C = new ClassC();  
-        }  
-     void printHello() {  
-                cout << "hello world";  
-        }  
-};  
-  
-class ClassA {  
-public:  
-    ClassB* B;  
-      ClassA() {  
-                B = nullptr;  
-        }  
-};  
-  
-int main() {  
-    ClassA* A = new ClassA();  
-      A->B->printHello();  
-}  
-```  
-  
- При выполнении этого кода в Visual Studio 2015 с обновлением 1 вы увидите следующее диалоговое окно исключения:  
-  
- ![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
-  
- Если не удается определить, почему указатель вызвал нарушение прав доступа, выполните трассировку кода, чтобы проверить правильность назначения указателя, ставшего причиной проблемы.  Если он передается как параметр, убедитесь, что он передается правильно и вы не создаете случайно [неполную копию](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Затем проверьте, не изменяются ли непреднамеренно значения где-нибудь в программе путем создания точки останова по данным для рассматриваемого указателя, чтобы убедиться, что он не изменяется в другом месте программы. Дополнительные сведения о точках останова по данным см. в разделе, посвященном точкам останова по данным, в статье [Using Breakpoints](../debugger/using-breakpoints.md).  
-  
-## <a name="see-also"></a>См. также раздел  
- [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)
+# <a name="how-can-i-debug-a-c-access-violation"></a>Как отладить C++ нарушение прав доступа?
+
+## <a name="problem-description"></a>Описание проблемы
+
+Программа порождает нарушение доступа. Как это отладить?
+
+## <a name="solution"></a>Решение
+
+Если вы получаете нарушение прав доступа в строке кода, которая разыменовывает несколько указателей, может быть трудно определить указатель, который вызвал нарушение прав доступа. Начиная с Visual Studio 2015 с обновлением 1 диалоговое окно исключения теперь явно называет указатель, который вызвал нарушение прав доступа.
+
+Например, если имеется следующий код, вы должны получить нарушение прав доступа:
+
+```C++
+#include <iostream>
+using namespace std;
+
+class ClassC {
+public:
+  void printHello() {
+    cout << "hello world";
+  }
+};
+
+class ClassB {
+public:
+  ClassC* C;
+  ClassB() {
+    C = new ClassC();
+  }
+};
+
+class ClassA {
+public:
+  ClassB* B;
+  ClassA() {
+    // Uncomment to fix
+    // B = new ClassB();
+  }
+};
+
+int main() {
+  ClassA* A = new ClassA();
+  A->B->C->printHello();
+
+}
+```
+
+При выполнении этого кода в Visual Studio 2015 с обновлением 1 вы увидите следующее диалоговое окно исключения:
+
+![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
+
+Если не удается определить, почему указатель вызвал нарушение прав доступа, выполните трассировку кода, чтобы проверить правильность назначения указателя, ставшего причиной проблемы.  Если он передается как параметр, убедитесь, что он передается правильно и вы не создаете случайно [неполную копию](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Затем проверьте, не изменяются ли непреднамеренно значения где-нибудь в программе путем создания точки останова по данным для рассматриваемого указателя, чтобы убедиться, что он не изменяется в другом месте программы. Дополнительные сведения о точках останова по данным см. в разделе, посвященном точкам останова по данным, в статье [Using Breakpoints](../debugger/using-breakpoints.md).
+
+## <a name="see-also"></a>См. также
+- [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)

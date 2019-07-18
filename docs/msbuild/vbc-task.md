@@ -15,22 +15,21 @@ helpviewer_keywords:
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b186f5be27bb1457b7d9beb1a056bec90821f45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 247d7c5a204418fdddf41e906a12ef2ef1fb232f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62577776"
 ---
 # <a name="vbc-task"></a>Vbc - задача
-Использует программу-оболочку для файла *vbc.exe*, который создает исполняемые файлы (*EXE-файлы*), библиотеки динамической компоновки (*DLL-файлы*) или модули кода (*.netmodule*). Дополнительные сведения о файле *vbc.exe* см. в разделе [Компилятор Visual Basic с интерфейсом командной строки](/dotnet/visual-basic/reference/command-line-compiler/index).  
+Использует программу-оболочку для файла *vbc.exe*, который создает исполняемые файлы (*EXE-файлы*), библиотеки динамической компоновки (*DLL-файлы*) или модули кода (*.netmodule*). Дополнительные сведения о файле *vbc.exe* см. в разделе [Компилятор Visual Basic с интерфейсом командной строки](/dotnet/visual-basic/reference/command-line-compiler/index).
 
-## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры задачи `Vbc` .  
-
+## <a name="parameters"></a>Параметры
+ В следующей таблице приводятся параметры задачи `Vbc` .
 
 | Параметр | Описание |
 |------------------------------| - |
@@ -51,7 +50,7 @@ ms.locfileid: "53956157"
 | `Imports` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Импорт пространства имен из указанных коллекций элементов. Этот параметр соответствует параметру [-imports](/dotnet/visual-basic/reference/command-line-compiler/imports) компилятора *vbc.exe*. |
 | `KeyContainer` | Необязательный параметр `String` .<br /><br /> Задает имя контейнера криптографического ключа. Этот параметр соответствует параметру [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) компилятора *vbc.exe*. |
 | `KeyFile` | Необязательный параметр `String` .<br /><br /> Задает имя файла, содержащего криптографический ключ. Дополнительные сведения см. в разделе [-keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile). |
-| `LangVersion` | Необязательный параметр <xref:System.String?displayProperty=fullName> .<br /><br /> Задает используемую версию языка ("9" или "10"). |
+| `LangVersion` | Необязательный параметр <xref:System.String?displayProperty=fullName> .<br /><br /> Задает используемую [версию языка](/dotnet/visual-basic/language-reference/configure-language-version) (например, 15.5). |
 | `LinkResources` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Создается ссылка на ресурс .NET Framework в выходном файле. Файл ресурса не помещается в выходной файл. Этот параметр соответствует параметру [-linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) компилятора *vbc.exe*. |
 | `MainEntryPoint` | Необязательный параметр `String` .<br /><br /> Задает класс или модуль, содержащий процедуру `Sub Main`. Этот параметр соответствует параметру [-main](/dotnet/visual-basic/reference/command-line-compiler/main) компилятора *vbc.exe*. |
 | `ModuleAssemblyName` | Необязательный параметр `String` .<br /><br /> Задает сборку, частью которой будет этот модуль. |
@@ -88,21 +87,21 @@ ms.locfileid: "53956157"
 | `Win32Icon` | Необязательный параметр `String` .<br /><br /> Вставляет файл *ICO* в сборку, которая придает выходному файлу необходимый вид в **проводнике**. Этот параметр соответствует параметру [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) компилятора *vbc.exe*. |
 | `Win32Resources` | Необязательный параметр `String` .<br /><br /> Вставляет файл ресурсов Win32 (*RES-файл*) в выходной файл. Этот параметр соответствует параметру [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) компилятора *vbc.exe*. |
 
-## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Примечания
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Пример  
- В следующем примере компилируется проект Visual Basic.  
+## <a name="example"></a>Пример
+ В следующем примере компилируется проект Visual Basic.
 
-```xml  
-<VBC  
-   Sources="@(sources)"  
-   Resources="strings.resources"  
-   Optimize="true"  
-   OutputAssembly="out.exe"/>  
-```  
+```xml
+<VBC
+   Sources="@(sources)"
+   Resources="strings.resources"
+   Optimize="true"
+   OutputAssembly="out.exe"/>
+```
 
-## <a name="see-also"></a>См. также  
- [Компилятор Visual Basic с интерфейсом командной строки](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>См. также
+- [Компилятор Visual Basic с интерфейсом командной строки](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

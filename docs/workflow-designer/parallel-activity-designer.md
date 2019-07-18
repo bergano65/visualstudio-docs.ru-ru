@@ -2,21 +2,20 @@
 title: Конструктор рабочих процессов - конструктор действия Parallel
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ad0d0d44c18c17dd1602c51954a7c529b84d114
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79e1e7e48f7ed7e8cd4084805dfae2018a886a82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002771"
 ---
 # <a name="parallel-activity-designer"></a>Конструктор действия Parallel
 
@@ -43,11 +42,11 @@ ms.locfileid: "53843610"
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Указывает понятное отображаемое имя действия конструктора в заголовке. Значение по умолчанию — **параллельных**. Можно при необходимости изменить значение в **свойства** сетки или напрямую в заголовке конструктора действий.|
-|<xref:System.Activities.Statements.Parallel.Branches%2A>|Да|Содержит коллекцию дочерних действий, которые должны быть выполнены.|
+|<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Содержит коллекцию дочерних действий, которые должны быть выполнены.|
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Вычисляется после завершения какой-либо ветви. Если результат вычисления равен **True**, то запланированные ожидающие выполнения ветви отменяются. Если это свойство не задано или имеет значение **False**, то действие завершается после завершения всех его дочерних действий. Значение по умолчанию — **null**.|
 
 ## <a name="see-also"></a>См. также
 
 - [Sequence](../workflow-designer/sequence-activity-designer.md)
-- [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)
+- [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [Поток управления](../workflow-designer/control-flow-activity-designers.md)

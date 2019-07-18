@@ -1,7 +1,6 @@
 ---
 title: CA1504. Проверьте имена полей, которые могут ввести в заблуждение
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ReviewMisleadingFieldNames
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 94136ff1-4aaf-4dc2-9170-48c171ab7499
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4823eb7f41f99ca8af5a91c80341a51a196e1615
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c58a0a27c11aea2954d4950b742a8928f98732e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546327"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504. Проверьте имена полей, которые могут ввести в заблуждение
 

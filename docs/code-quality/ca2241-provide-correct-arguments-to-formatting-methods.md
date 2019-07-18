@@ -1,7 +1,6 @@
 ---
 title: CA2241. Задайте правильные аргументы для методов форматирования
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2241
@@ -13,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 83639bc4-4c91-4a07-a40e-dc5e49a84494
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: df71a51336f559f293faad86c161b9939a3a8014
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9f48f9cba146251aee1a58ffc7a3403ed899c4a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541471"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241. Задайте правильные аргументы для методов форматирования
 

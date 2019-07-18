@@ -1,26 +1,21 @@
 ---
 title: Уведомление порта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c3cfcc4ee357301aa0e38468b13b983c3d5ca55a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8cf3969dda783882f24d02a748f345cdb66fe413
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410075"
 ---
 # <a name="notifying-the-port"></a>Уведомление порта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,12 +33,12 @@ ms.locfileid: "51763362"
    Программным образом, когда порт сначала получает новый узел программы, он создает [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) интерфейс для представления программы.  
   
 > [!NOTE]
->  Это не следует путать с `IDebugProgram2` интерфейса, созданного в более поздней версии ядром отладки (DE).  
+> Это не следует путать с `IDebugProgram2` интерфейса, созданного в более поздней версии ядром отладки (DE).  
   
  Отправляет порт [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) события создания программы диспетчеру сеанса отладки (SDM) с помощью COM `IConnectionPoint` интерфейс.  
   
 > [!NOTE]
->  Это не следует путать с `IDebugProgramCreateEvent2` интерфейс, который отправляется DE позже.  
+> Это не следует путать с `IDebugProgramCreateEvent2` интерфейс, который отправляется DE позже.  
   
  А также сам интерфейс событий, отправляет порт [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), и [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) интерфейсы, которые представляют порт, обрабатывать, и Программа, соответственно. Вызовы SDM [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) для получения идентификатора GUID DE, который можно отлаживать программы. Идентификатор GUID, первоначально полученную из [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс.  
   
@@ -55,4 +50,3 @@ ms.locfileid: "51763362"
  [Запуск программы](../../extensibility/debugger/launching-a-program.md)   
  [Присоединение после запуска](../../extensibility/debugger/attaching-after-a-launch.md)   
  [Задачи отладки](../../extensibility/debugger/debugging-tasks.md)
-

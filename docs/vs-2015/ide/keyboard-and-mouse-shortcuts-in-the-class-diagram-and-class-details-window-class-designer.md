@@ -1,14 +1,9 @@
 ---
 title: Сочетания клавиш и кнопок мыши в схеме классов и окне "Сведения о классах" (конструктор классов) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.window
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f607046609208804f349eb06e927ab8e72e28992
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 861ce1cf40dd5c56c043399387ef51fa3b4efee2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412259"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Сочетания клавиш и кнопок мыши в схеме классов и окне "Сведения о классе" (конструктор классов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +28,15 @@ ms.locfileid: "49247914"
   
  **Содержание раздела**  
   
--   [Использование мыши в конструкторе классов](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [Использование мыши в конструкторе классов](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [Использование мыши в окне "Сведения о классах"](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [Использование мыши в окне "Сведения о классах"](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [Использование клавиатуры в конструкторе классов](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [Использование клавиатуры в конструкторе классов](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [Использование клавиатуры в окне "Сведения о классах"](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [Использование клавиатуры в окне "Сведения о классах"](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> Использование мыши в конструкторе классов  
+## <a name="MouseClassDesigner"></a> Использование мыши в конструкторе классов  
  В схемах классов поддерживаются следующие действия мыши.  
   
 |Комбинации мыши|Контекст|Описание|  
@@ -54,20 +49,20 @@ ms.locfileid: "49247914"
 |CTRL + колесико мыши|Схема классов|Изменение масштаба.|  
 |CTRL + SHIFT + щелчок|Схема классов|Изменение масштаба.|  
   
-##  <a name="MouseClassDetails"></a> Использование мыши в окне "Сведения о классах"  
+## <a name="MouseClassDetails"></a> Использование мыши в окне "Сведения о классах"  
  С помощью мыши можно изменить внешний вид окна сведений о классе и данные, которые в нем отображаются, следующими способами.  
   
--   Если щелкнуть любую изменяемую ячейку, можно изменить ее содержимое. Изменения будут отражены во всех местах, где данные хранятся или отображаются, в том числе в окне свойств и в исходном коде.  
+- Если щелкнуть любую изменяемую ячейку, можно изменить ее содержимое. Изменения будут отражены во всех местах, где данные хранятся или отображаются, в том числе в окне свойств и в исходном коде.  
   
--   Если щелкнуть любую ячейку строки, в окне свойств появятся свойства элемента, представленного этой строкой.  
+- Если щелкнуть любую ячейку строки, в окне свойств появятся свойства элемента, представленного этой строкой.  
   
--   Чтобы изменить ширину столбца, перетащите границу справа от заголовка столбца до требуемой ширины столбца.  
+- Чтобы изменить ширину столбца, перетащите границу справа от заголовка столбца до требуемой ширины столбца.  
   
--   Можно развернуть или свернуть узлы секции или свойств, щелкнув символы со стрелками слева от строки.  
+- Можно развернуть или свернуть узлы секции или свойств, щелкнув символы со стрелками слева от строки.  
   
--   В окне сведений о классе есть несколько кнопок для создания членов в текущем классе и для перехода между секциями членов в таблице окна сведений о классе. Дополнительные сведения см. в разделе «Кнопки окна сведений о классе».  
+- В окне сведений о классе есть несколько кнопок для создания членов в текущем классе и для перехода между секциями членов в таблице окна сведений о классе. Дополнительные сведения см. в разделе «Кнопки окна сведений о классе».  
   
-##  <a name="KeyboardClassDesigner"></a>Использование клавиатуры в конструкторе классов  
+## <a name="KeyboardClassDesigner"></a>Использование клавиатуры в конструкторе классов  
  В схемах классов поддерживаются следующие действия клавиатуры.  
   
 |Ключ|Контекст|Описание|  
@@ -94,10 +89,10 @@ ms.locfileid: "49247914"
 |SHIFT+TAB|Все контексты|Переход к предыдущему дочернему элементу того же родительского элемента (поддерживает обтекание).|  
 |ПРОБЕЛ|Все контексты|Переключает выбор в текущем элементе.|  
   
-##  <a name="KeyboardClassDetails"></a> Использование клавиатуры в окне "Сведения о классах"  
+## <a name="KeyboardClassDetails"></a> Использование клавиатуры в окне "Сведения о классах"  
   
 > [!NOTE]
->  Следующие настраиваемые сочетания клавиш были выбраны специально для имитации ввода кода.  
+> Следующие настраиваемые сочетания клавиш были выбраны специально для имитации ввода кода.  
   
  Используйте следующие клавиши для перемещения в окне сведений о классе.  
   
@@ -114,8 +109,5 @@ ms.locfileid: "49247914"
 |Стрелка влево|Если курсор находится в столбце «Имя», нажатие клавиши со стрелкой влево сворачивает текущий узел в иерархии (если он открыт).|  
 |Стрелка вправо|Если курсор находится в столбце «Имя», нажатие клавиши со стрелкой вправо разворачивает текущий узел в иерархии (если он свернут).|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Создание и настройка членов типов (конструктор классов)](../ide/creating-and-configuring-type-members-class-designer.md)
-
-
-

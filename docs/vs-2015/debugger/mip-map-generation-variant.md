@@ -1,25 +1,20 @@
 ---
 title: Вариант создания MIP карты | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c567f68abb5b67022bb2decd64ed23e35bf6d5d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383963"
 ---
 # <a name="mip-map-generation-variant"></a>Вариант создания MIP-карты
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51723086"
   Если для текстуры были автоматически созданы MIP-карты, вызовы метода `ID3D11Device::CreateShaderResourceView` изменяются во время воспроизведения так, что при дискретизации текстуры используется MIP-цепочка.  
   
 ## <a name="example"></a>Пример  
- **Mip-карты** можно воспроизвести с помощью следующего кода:  
+ Вариант **Создание MIP-карт** можно воспроизвести с помощью следующего кода:  
   
 ```  
 D3D11_TEXTURE2D_DESC texture_description;  
@@ -75,10 +70,7 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
  Помните, что при предоставлении исходных данных методу `CreateTexture2D` необходимо предоставить объект D3D11_SUBRESOURCE_DATA для каждого уровня MIP.  
   
 > [!NOTE]
->  Если вы хотите предоставить собственное содержимое уровня MIP вместо автоматического его создания, вам необходимо создать текстуры с помощью редактора изображений, который поддерживает текстуры с MIP-картами, а затем загрузить файл и передать уровни MIP в `CreateTexture2D`.  
+> Если вы хотите предоставить собственное содержимое уровня MIP вместо автоматического его создания, вам необходимо создать текстуры с помощью редактора изображений, который поддерживает текстуры с MIP-картами, а затем загрузить файл и передать уровни MIP в `CreateTexture2D`.  
   
 ## <a name="see-also"></a>См. также  
  [Вариант размера текстур: половина/четверть](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

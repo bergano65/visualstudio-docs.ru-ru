@@ -2,19 +2,18 @@
 title: Разметка R
 description: Практическое руководство по созданию документов R Markdown в Visual Studio и составлению качественных отчетов, презентаций и панелей мониторинга.
 ms.date: 11/16/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 6394dcedc8c29f517d502d1a4e5475667f9b1f9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8f87f831c8076b22a61d7032d16be8d13f21b62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998647"
 ---
 # <a name="create-r-markdown-documents"></a>Создание документов R Markdown
 
@@ -34,6 +33,7 @@ ms.locfileid: "53938476"
     install.packages("rmarkdown")
 
     ```
+
 1. Создайте файл R Markdown, последовательно выбрав команды **Файл** > **Создать** > **Файл**, а затем выбрав **R** > **R Markdown** в списке. Находясь в контексте проекта, щелкните проект правой кнопкой мыши в обозревателе решений и выберите **Добавить разметку R Markdown** (или **Добавить** > **Новый элемент**, а затем выберите **R Markdown** в списке).
 
 1. Содержимое по умолчанию в новом файле выглядит следующим образом.

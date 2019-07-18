@@ -16,23 +16,22 @@ helpviewer_keywords:
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 260ea65af041e6a50afb163f697d5ff366cff825
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: f0047ee38a6fda4738c773c36a85e14cba1e37fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835988"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745545"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Заполнение наборов данных с помощью адаптеров таблицы
 
 Компонент адаптера таблицы заполняет набор данных данными из базы данных, на основе один или несколько запросов или хранимых процедур, которые можно указать. Адаптеры таблиц можно также выполнить добавляет, обновления и удаления в базе данных, чтобы сохранить изменения, внесенные в набор данных. Можно также выполнять глобальные команды, которые не связаны с любой конкретной таблицы.
 
 > [!NOTE]
-> Адаптеры таблиц создаются конструкторами Visual Studio. Если вы создаете наборы данных программными средствами, используйте DataAdapter, который представляет собой класс .NET Framework.
+> Адаптеры таблиц создаются конструкторами Visual Studio. Если вы создаете наборы данных программными средствами, используйте DataAdapter, который представляет собой класс .NET.
 
 Подробные сведения об операциях адаптера таблицы можно пропустить непосредственно к одному из следующих разделов:
 
@@ -53,7 +52,7 @@ ms.locfileid: "53835988"
 
 ![Поток данных в клиентском приложении](../data-tools/media/clientdatadiagram.gif)
 
-Если адаптеры таблиц создаются с помощью **конструктор наборов данных**, классы адаптеров таблиц не создаются как вложенные классы <xref:System.Data.DataSet>. Они находятся в отдельных пространствах имен, характерные для каждого набора данных. Например, если у вас есть набор данных с именем `NorthwindDataSet`, адаптеры таблиц, связанные с <xref:System.Data.DataTable>s в `NorthwindDataSet` в `NorthwindDataSetTableAdapters` пространства имен. Для программного доступа к конкретному адаптеру таблиц, необходимо объявить новый экземпляр адаптера таблицы. Например:
+Если адаптеры таблиц создаются с помощью **конструктор наборов данных**, классы адаптеров таблиц не создаются как вложенные классы <xref:System.Data.DataSet>. Они находятся в отдельных пространствах имен, характерные для каждого набора данных. Например, если у вас есть набор данных с именем `NorthwindDataSet`, адаптеры таблиц, связанные с <xref:System.Data.DataTable>s в `NorthwindDataSet` в `NorthwindDataSetTableAdapters` пространства имен. Для программного доступа к конкретному адаптеру таблиц, необходимо объявить новый экземпляр адаптера таблицы. Пример:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -86,7 +85,7 @@ ms.locfileid: "53835988"
 
 ## <a name="tableadapter-methods-and-properties"></a>Свойства и методы адаптера таблицы
 
-Класс TableAdapter не является частью [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Это означает, что вы не удается найти в документации или **обозреватель объектов**. Она создается во время разработки, при использовании одного из мастеров, упомянутых ранее. Имя, которое назначается адаптера таблицы при ее создании основан на имени таблицы, в которой вы работаете. Например, при создании TableAdapter, основанный на таблице в базе данных с именем `Orders`, называется TableAdapter `OrdersTableAdapter`. Имя класса адаптера таблицы можно изменить с помощью **имя** свойство в **конструктор наборов данных**.
+Класс TableAdapter не является типом .NET. Это означает, что вы не удается найти в документации или **обозреватель объектов**. Она создается во время разработки, при использовании одного из мастеров, упомянутых ранее. Имя, которое назначается адаптера таблицы при ее создании основан на имени таблицы, в которой вы работаете. Например, при создании TableAdapter, основанный на таблице в базе данных с именем `Orders`, называется TableAdapter `OrdersTableAdapter`. Имя класса адаптера таблицы можно изменить с помощью **имя** свойство в **конструктор наборов данных**.
 
 Ниже приведены часто используемые методы и свойства TableAdapters.
 
@@ -115,7 +114,7 @@ TableAdapters команды данных для чтения и записи и
 
 ## <a name="tableadapter-support-for-nullable-types"></a>Поддержка TableAdapter обнуляемые типы
 
-Адаптеры таблиц поддерживает типы nullable `Nullable(Of T)` и `T?`. Дополнительные сведения о типах, допускающих значение NULL, в Visual Basic см. в разделе [Типы значений, допускающие значение NULL](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Дополнительные сведения о типах, допускающие значения NULL в C#, см. в разделе [используют обнуляемые типы](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
+Адаптеры таблиц поддерживает типы nullable `Nullable(Of T)` и `T?`. Дополнительные сведения о типах, допускающих значение NULL, в Visual Basic см. в разделе [Типы значений, допускающие значение NULL](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Дополнительные сведения о допускающих значение NULL типов в C#, см. в разделе [используют обнуляемые типы](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
 
 <a name="tableadaptermanager-reference"></a>
 
@@ -123,16 +122,16 @@ TableAdapters команды данных для чтения и записи и
 
 По умолчанию класс TableAdapterManager создает при создании набора данных, содержащего связанные таблицы. Чтобы предотвратить создание класса, измените значение `Hierarchical Update` свойства набора данных значение false. При перетаскивании таблицы, имеющей отношение в область конструктора WPF страницы или формы Windows, Visual Studio объявляет переменную-член класса. Если вы не используете привязки данных, необходимо вручную объявить переменную.
 
-Класс TableAdapterManager не является частью [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Таким образом вы не удается найти в документации. Она создается во время разработки, как часть процесса создания набора данных.
+Класс TableAdapterManager не является типом .NET. Таким образом вы не удается найти в документации. Она создается во время разработки, как часть процесса создания набора данных.
 
 Ниже перечислены часто используемые методы и свойства `TableAdapterManager` класса:
 
 |Член|Описание|
 |------------|-----------------|
 |Метод `UpdateAll`|Сохраняет все данные из всех таблиц данных.|
-|Свойство`BackUpDataSetBeforeUpdate` |Определяет, следует ли создавать резервную копию набора данных перед выполнением `TableAdapterManager.UpdateAll` метод. Логическое значение.|
+|Свойство `BackUpDataSetBeforeUpdate`|Определяет, следует ли создавать резервную копию набора данных перед выполнением `TableAdapterManager.UpdateAll` метод. Логическое значение.|
 |*tableName* `TableAdapter` свойство|Представляет адаптер таблицы. Созданный TableAdapterManager содержит свойство для каждого `TableAdapter` он управляет. Например, создает набор данных с таблицей Customers и Orders с TableAdapterManager, содержащий `CustomersTableAdapter` и `OrdersTableAdapter` свойства.|
-|Свойство`UpdateOrder` |Управляет порядком отдельные инструкции insert, update и команд delete. Задайте одно из значений в `TableAdapterManager.UpdateOrderOption` перечисления.<br /><br /> По умолчанию `UpdateOrder` присваивается **InsertUpdateDelete**. Это означает, что операции вставки, а затем обновляет, а затем удаляет выполняются для всех таблиц в наборе данных.|
+|Свойство `UpdateOrder`|Управляет порядком отдельные инструкции insert, update и команд delete. Задайте одно из значений в `TableAdapterManager.UpdateOrderOption` перечисления.<br /><br /> По умолчанию `UpdateOrder` присваивается **InsertUpdateDelete**. Это означает, что операции вставки, а затем обновляет, а затем удаляет выполняются для всех таблиц в наборе данных.|
 
 ## <a name="security"></a>Безопасность
 

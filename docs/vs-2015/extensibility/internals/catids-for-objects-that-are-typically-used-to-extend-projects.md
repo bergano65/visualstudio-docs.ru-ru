@@ -1,14 +1,9 @@
 ---
 title: CATID для объектов, которые обычно используются для расширения проектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, CATIDs
 - GUIDs, VSPackages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0c7fdb66-ed96-4b36-89f6-021bca573572
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 57af657c888963dc9f33fc729678c0d8c82e0f0a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1cf5bd504bb5f7090dc07bea32e73333c0f182d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162084"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID для объектов, которые обычно используются для расширения проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -103,4 +98,3 @@ const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 ## <a name="see-also"></a>См. также  
  [Добавление проекта и шаблоны элементов проекта](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md)
-

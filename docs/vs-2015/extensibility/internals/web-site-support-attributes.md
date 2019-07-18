@@ -1,26 +1,21 @@
 ---
 title: Атрибуты поддержки веб-сайта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - web site projects, registration
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 312d8a760cc7005afc4308b637b12a292bd20329
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 75401eb0d5acd5d363d05aec57909eef5b9855e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144299"
 ---
 # <a name="web-site-support-attributes"></a>Атрибуты поддержки веб-сайтов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "51756699"
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute  
  Этот атрибут следует поместить в проекте языка. Он позволяет проекту веб-сайта вкладывать один тип файла (связанный) под другой тип файла (основной) в **обозревателе решений**.  
   
- Пример:  
+ Например:  
   
 ```  
 [WebSiteProjectRelatedFiles("aspx", "py")]public class PythonProjectPackage : ProjectPackage  
@@ -52,7 +47,7 @@ ms.locfileid: "51756699"
 ## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute  
  Этот атрибут следует поместить в пакет языка проекта. Он выбирает поставщика Intellisense для языка.  
   
- Пример:  
+ Например:  
   
 ```  
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]public class PythonPackage : Package, IOleComponent  
@@ -64,4 +59,3 @@ ms.locfileid: "51756699"
   
 ## <a name="see-also"></a>См. также  
  [Поддержка веб-сайтов](../../extensibility/internals/web-site-support.md)
-

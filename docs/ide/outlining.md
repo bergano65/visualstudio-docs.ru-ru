@@ -1,7 +1,6 @@
 ---
 title: Свертывание и развертывание областей кода
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining
@@ -13,17 +12,17 @@ helpviewer_keywords:
 - outlining code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee657cdf0c7046021a3589378926b086caf504ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6451e835e44af23fbd41c9c1573e0bc5daed115
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811920"
 ---
-# <a name="outlining"></a>структуризация
+# <a name="outlining"></a>Структуризация
 
 Можно скрыть часть кода из представления, свернув область кода так, чтобы она отображалась со знаком "плюс" (**+**). Чтобы развернуть свернутую область, нужно щелкнуть знак "плюс". Если вы предпочитаете использовать клавиатуру, то можете нажать клавиши **CTRL**+**M**+**M** для свертывания и развертывания. Можно также свернуть область структуры, дважды щелкнув любую строку в области в поле структуры, которая появляется слева от кода. Содержимое свернутой области отображается в виде всплывающей подсказки при наведении указателя мыши на эту область.
 

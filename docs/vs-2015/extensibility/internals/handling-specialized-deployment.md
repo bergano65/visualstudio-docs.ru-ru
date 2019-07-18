@@ -1,27 +1,22 @@
 ---
 title: Обработка специализированного развертывания | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploying applications [Visual Studio SDK]
 - specialized deployment
 ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 236acfbad0d5c49710f4c7eb8b20a7572b209212
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bfd5d4d1a5a94662c2fe3fb9d406cc098014f6e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436296"
 ---
 # <a name="handling-specialized-deployment"></a>Обработка специализированного развертывания
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "51736774"
   
 #### <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Обработка специализированного развертывания с подтип проекта  
   
--   Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> метод, чтобы зарегистрировать среду для получения уведомлений о событиях состояния развертывания.  
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> метод, чтобы зарегистрировать среду для получения уведомлений о событиях состояния развертывания.  
   
     ```vb  
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()  
@@ -83,7 +78,7 @@ ms.locfileid: "51736774"
   
     ```  
   
--   Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> метод, чтобы отменить регистрацию среды для получения уведомлений о событиях состояния развертывания.  
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> метод, чтобы отменить регистрацию среды для получения уведомлений о событиях состояния развертывания.  
   
     ```vb  
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer  
@@ -101,7 +96,7 @@ ms.locfileid: "51736774"
   
     ```  
   
--   Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> метод для выполнения операции фиксации к конкретному приложению.  Этот метод используется главным образом для развертывания базы данных.  
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> метод для выполнения операции фиксации к конкретному приложению.  Этот метод используется главным образом для развертывания базы данных.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -119,7 +114,7 @@ ms.locfileid: "51736774"
   
     ```  
   
--   Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> метод, чтобы выполнить откат. При вызове этого метода проекта развертывания необходимо выполнить соответствующие действия для отката изменения и восстановить состояние проекта. Этот метод используется главным образом для развертывания базы данных.  
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> метод, чтобы выполнить откат. При вызове этого метода проекта развертывания необходимо выполнить соответствующие действия для отката изменения и восстановить состояние проекта. Этот метод используется главным образом для развертывания базы данных.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -137,7 +132,7 @@ ms.locfileid: "51736774"
   
     ```  
   
--   Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> метод, чтобы определить, способен ли проект запускать операцию развертывания.  
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> метод, чтобы определить, способен ли проект запускать операцию развертывания.  
   
     ```vb  
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer  
@@ -170,7 +165,7 @@ ms.locfileid: "51736774"
   
     ```  
   
--   Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> метод, чтобы определить, была ли успешно завершена операция развертывания.  
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> метод, чтобы определить, была ли успешно завершена операция развертывания.  
   
     ```vb  
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer  
@@ -193,7 +188,7 @@ ms.locfileid: "51736774"
   
     ```  
   
--   Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> метод начать операцию развертывания в отдельном потоке. Поместите код для развертывания приложения внутри `Deploy` метод.  
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> метод начать операцию развертывания в отдельном потоке. Поместите код для развертывания приложения внутри `Deploy` метод.  
   
     ```vb  
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer  
@@ -250,7 +245,7 @@ ms.locfileid: "51736774"
   
     ```  
   
--   Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> метод, чтобы остановить операцию развертывания. Этот метод вызывается, когда пользователь нажимает **отменить** кнопки во время развертывания.  
+- Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> метод, чтобы остановить операцию развертывания. Этот метод вызывается, когда пользователь нажимает **отменить** кнопки во время развертывания.  
   
     ```vb  
     Public Function StopDeploy(ByVal fSync As Integer) As Integer  
@@ -296,8 +291,7 @@ ms.locfileid: "51736774"
     ```  
   
 > [!NOTE]
->  Все примеры кода, приведенные в этом разделе являются частью более крупного примера [примеры VSSDK](../../misc/vssdk-samples.md).  
+> Все примеры кода, приведенные в этом разделе являются частью более крупного примера [примеры VSSDK](../../misc/vssdk-samples.md).  
   
 ## <a name="see-also"></a>См. также  
  [Подтипы проектов](../../extensibility/internals/project-subtypes.md)
-

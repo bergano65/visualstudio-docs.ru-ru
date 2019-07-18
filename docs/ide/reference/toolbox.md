@@ -1,7 +1,6 @@
 ---
 title: Окно "Панель элементов"
 ms.date: 01/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a3a0a415af9cddcba63040fd445de7869921e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb101dc1f272ae56ceb0058afb2806aec4154936
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918616"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747682"
 ---
 # <a name="toolbox"></a>Панель элементов
 
@@ -34,7 +33,7 @@ ms.locfileid: "53918616"
 > [!NOTE]
 > Для некоторых типов проектов **панель элементов** не содержит никаких элементов.
 
-Целевая версия .NET Framework проекта также влияет на набор элементов управления, отображаемых на панели элементов. Целевую версию платформы .NET Framework вы можете настроить на странице свойств проекта. Выберите узел проекта в **обозревателе решений**, а затем в строке меню выберите **Проект** > **Свойства имя_проекта**. На вкладке **Приложение** выберите нужное значение в выпадающем списке **Целевая платформа**.
+Целевая версия .NET проекта также влияет на набор элементов управления, отображаемых на панели элементов. При необходимости вы можете изменить требуемую версию .NET Framework на страницах свойств проекта. Выберите узел проекта в **обозревателе решений**, а затем в строке меню выберите **Проект** > **Свойства имя_проекта**. На вкладке **Приложение** выберите нужное значение в выпадающем списке **Целевая платформа**.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Управление окном панели элементов и элементами управления в нем
 

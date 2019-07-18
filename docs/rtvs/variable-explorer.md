@@ -2,19 +2,18 @@
 title: Обозреватель переменных для R
 description: В обозревателе переменных в Visual Studio отображаются все переменные в заданной области текущего сеанса R.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 8969379727da2f7e01e15fcb10150195bc32749e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809874"
 ---
 # <a name="variable-explorer"></a>Обозреватель переменных
 

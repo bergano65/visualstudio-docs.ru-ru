@@ -1,25 +1,20 @@
 ---
-title: Практическое руководство. Настройка параметров имени файла с данными о производительности | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Настройка параметров имени файла с данными о производительности | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 06751d510c38f055036865a8f368c4e0c3298a30
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205783"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Практическое руководство. Настройка параметров имени файла с данными о производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51801993"
   
  **Требования**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 |||  
 |-|-|  
@@ -43,11 +38,11 @@ ms.locfileid: "51801993"
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>Изменение синтаксиса именования файлов данных профилирования сеанса анализа производительности  
   
-1.  В **обозревателе производительности** щелкните правой кнопкой мыши имя сеанса производительности, а затем выберите **Свойства**.  
+1. В **обозревателе производительности** щелкните правой кнопкой мыши имя сеанса производительности, а затем выберите **Свойства**.  
   
-2.  Щелкните **Общие**.  
+2. Щелкните **Общие**.  
   
-3.  В разделе **Отчет** настройте любые из указанных ниже параметров.  
+3. В разделе **Отчет** настройте любые из указанных ниже параметров.  
   
     |||  
     |-|-|  
@@ -56,6 +51,3 @@ ms.locfileid: "51801993"
     |**Автоматически добавлять новые отчеты к сеансу**|Установите этот флажок для автоматического добавления файла данных в сеанс анализа производительности.|  
     |**Добавлять номер с приращением к созданным отчетам**|Установите этот флажок, чтобы добавлять возрастающий номер к имени файла, если существует несколько файлов с тем же именем. Снимите флажок, чтобы перезаписывать существующий файл.|  
     |**Использовать отметку времени для номера**|Установите этот флажок для добавления метки даты к имени файла.|
-
-
-

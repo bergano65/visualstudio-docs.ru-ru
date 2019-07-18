@@ -1,25 +1,20 @@
 ---
 title: IntelliSense для Visual C++ | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9d7c6414-4e6c-4889-a74c-a6033795eccc
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2754a8ea663d888bb8ba2e2ff0276911976ff0af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881681"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696559"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense для Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,14 +80,14 @@ ms.locfileid: "49881681"
   
   Обратите внимание на следующее:  
   
-- Ветвь #ifdef в строке 6 неактивна неактивный регион, так как *_ANDROID\\*  \_ не определен для проекта iOS.  
+- Ветвь #ifdef в строке 6 неактивна, что указывает на неактивный регион, так как параметр *_ANDROID\\*\_ не определен для проекта iOS.  
   
 - Переменная приветствия в строке 11 инициализируется с идентификатором HELLO, теперь подчеркнутым красной волнистой линией. Это вызвано тем, что идентификатор HELLO не определен в активном на данный момент проекте iOS.  
   
 - Идентификатор BYE в строке 12 подчеркнут фиолетовой волнистой линией. Этот идентификатор не определен в неактивном на данный момент проекте Android.NativeActivity.  
   
 ## <a name="single-file-intellisense"></a>IntelliSense для одного файла  
- При открытии одного файла за пределами любого проекта функции IntelliSense по-прежнему остаются доступными. Вы можете включить или отключить определенные возможности, последовательно выбрав **"Текстовый редактор", "C/C++", "Дополнительно"**, чтобы включить или выключить возможности IntelliSense. Чтобы настроить IntelliSense для одиночных файлов, которые не входят в проект, найдите **IntelliSense и обзор файлов, не входящих в проект** в разделе **Дополнительно**. См. [Интерактивный учебник по Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
+ При открытии одного файла за пределами любого проекта функции IntelliSense по-прежнему остаются доступными. Вы можете включить или отключить определенные возможности, последовательно выбрав **"Текстовый редактор", "C/C++", "Дополнительно"**, чтобы включить или выключить возможности IntelliSense. Чтобы настроить IntelliSense для одиночных файлов, которые не входят в проект, найдите **IntelliSense и обзор файлов, не входящих в проект** в разделе **Дополнительно**. См. [Интерактивный учебник по Visual C++](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
   
  ![IntelliSense для одного файла Visual C&#43;&#43;](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   
@@ -102,6 +97,3 @@ ms.locfileid: "49881681"
   
 ## <a name="see-also"></a>См. также  
  [Использование технологии IntelliSense](../ide/using-intellisense.md)
-
-
-

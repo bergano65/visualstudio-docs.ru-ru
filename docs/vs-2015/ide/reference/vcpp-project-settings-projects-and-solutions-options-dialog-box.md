@@ -1,14 +1,9 @@
 ---
 title: Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VCBuild
 helpviewer_keywords:
@@ -23,25 +18,24 @@ ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a1491d639ace0cba80530ea1613525480bad07f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 65115be12d00f335272c65083be4a323a604b646
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238866"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689354"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 В этом диалоговом окне можно определять параметры проекта [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], связанные с файлами журналов сборки и другими вспомогательными файлами.  
   
 ### <a name="to-access-this-dialog-box"></a>Вызов диалогового окна  
   
-1.  В меню **Сервис** выберите пункт **Параметры**.  
+1. В меню **Сервис** выберите пункт **Параметры**.  
   
-2.  Выберите **Проекты и решения**, а затем **Параметры проекта VC++**.  
+2. Выберите **Проекты и решения**, а затем **Параметры проекта VC++**.  
   
 ## <a name="build-customization-search-path"></a>Путь поиска настройки сборки  
  Задает список каталогов, содержащих файлы с расширением Rules, которые определяют правила сборки проектов.  
@@ -83,9 +77,6 @@ ms.locfileid: "49238866"
  **Показывать все файлы**  
  В **обозревателе решений** отображаются файлы проекта, а также файлы из папки проекта на диске.  
   
-## <a name="see-also"></a>См. также  
- [Сборка программ C/C++](http://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008)   
- [Справочные сведения о сборке C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)
-
-
-
+## <a name="see-also"></a>См. также раздел  
+ [Сборка программ C/C++](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008)   
+ [Справочные сведения о сборке C/C++](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)

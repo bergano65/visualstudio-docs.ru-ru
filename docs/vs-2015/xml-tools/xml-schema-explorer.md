@@ -1,30 +1,24 @@
 ---
 title: Обозреватель XML-схем | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198042"
 ---
 # <a name="xml-schema-explorer"></a>Обозреватель схемы XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Обозреватель XML-схем интегрирован с Microsoft Visual Studio, а редактор XML позволяет работать со схемами языка определения схемы XML (XSD). При открытии файла схемы XML **набора схем** узел отображается в обозревателе XML-схем. Все включенные, импортированные или переопределенные схемы для конечного файла, а также любые файлы, которые указаны через инструкцию `include` или `import`, также появляются в обозревателе XML-схемы.  
   
  Обозреватель XML-схем позволяет:  
@@ -73,11 +67,11 @@ ms.locfileid: "49845879"
   
  Для активации узла, дважды щелкните его, или нажмите клавишу **ввод** при выборе узла.  
   
--   Активация узла открывает файл, в котором определен данный узел (если файл еще не открыт), и выбирает узел из файла.  
+- Активация узла открывает файл, в котором определен данный узел (если файл еще не открыт), и выбирает узел из файла.  
   
--   Активация узла файла открывает выбранный файл (если файл еще не открыт) и выделяет узел `<schema>`.  
+- Активация узла файла открывает выбранный файл (если файл еще не открыт) и выделяет узел `<schema>`.  
   
--   Активация SchemaSet или узла пространства имен не выполняет никаких действий  
+- Активация SchemaSet или узла пространства имен не выполняет никаких действий  
   
 ## <a name="draging-and-dropping-nodes"></a>Перетаскивание узлов  
  Глобальные узлы, узлы файлов и узлы пространства имен можно перетаскивать в представление конструктора XSD. Если текущим представлением является [начальное представление](../xml-tools/start-view.md), перетаскивание узла представления будет открываться [представление графика](../xml-tools/graph-view.md). Если текущим представлением является [представления модели содержимого](../xml-tools/content-model-view.md) или представление графика, представление не изменится при удалении в него узел.  
@@ -88,20 +82,13 @@ ms.locfileid: "49845879"
   
 ## <a name="in-this-section"></a>В этом разделе  
   
--   [Поиск набора схем](../xml-tools/searching-the-schema-set.md)  
+- [Поиск набора схем](../xml-tools/searching-the-schema-set.md)  
   
--   [Сортировка, фильтрация и группирование данных](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [Сортировка, фильтрация и группирование данных](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [Контекстные меню](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [Контекстные меню](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [Интеграция XML-литералов с обозревателем XML-схем](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [Интеграция XML-литералов с обозревателем XML-схем](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>См. также  
- [Как добавлять узлы в рабочую область в обозревателе XML-схем](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
-
-
-
-
-
-
-
+ [Практическое руководство. Добавление узлов в рабочую область из обозревателя схем XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

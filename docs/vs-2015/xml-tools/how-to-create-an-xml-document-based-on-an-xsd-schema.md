@@ -1,30 +1,24 @@
 ---
-title: 'Практическое: Создание XML-документа на основе схемы XSD | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создание XML-документа на основе схемы XSD | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 623da37807e0fd61041bfeb9ab411ce0cb96d4b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164488"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Как создать XML-документ на основе XSD-схемы
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Практическое руководство. Создание XML-документа на основе схемы XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 **Создание образца XML** функция создает пример XML-файла, на базе файла схемы XML (XSD).  
   
  Этот пункт можно использовать в следующих случаях.  
@@ -35,7 +29,7 @@ ms.locfileid: "49884229"
   
   **Создание образца XML** компонент доступен только для глобальных элементов и требует допустимый набор схем XML.  
   
-  С помощью этой возможности обычно создаются допустимые XML-документы. Однако, если схема содержит одно или несколько из следующих ограничений, образец может быть недопустимым.  
+  С помощью этой функции обычно создаются допустимые XML-документы. Однако, если схема содержит одно или несколько из следующих ограничений, образец может быть недопустимым.  
   
 - Ограничения удостоверения `xs:key`, `xs:keyref` и `xs:unique`.  
   
@@ -49,9 +43,9 @@ ms.locfileid: "49884229"
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Создание экземпляра XML-документа на основе XSD-файла.  
   
-1.  Выполните действия, описанные в [как: Создание и изменение файла схемы XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1. Выполните действия, описанные в [как: Создание и изменение файла схемы XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  В [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md), щелкните правой кнопкой мыши `PurchaseOrder` глобального элемента. Выберите **Создание образца XML**.  
+2. В [обозреватель XML-схем](../xml-tools/xml-schema-explorer.md), щелкните правой кнопкой мыши `PurchaseOrder` глобального элемента. Выберите **Создание образца XML**.  
   
      Если выбран данный параметр, файл PurchaseOrder.xml со следующим образцом XML-содержимого будет создан и открыт в редакторе XML:  
   
@@ -84,6 +78,3 @@ ms.locfileid: "49884229"
   
 ## <a name="see-also"></a>См. также  
  [Работа с XML-данными](../xml-tools/working-with-xml-data.md)
-
-
-

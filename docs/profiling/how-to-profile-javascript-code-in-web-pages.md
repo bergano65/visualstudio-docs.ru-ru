@@ -8,22 +8,22 @@ helpviewer_keywords:
 - web site performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc3c83e81608d671db8bad655c4853e5262ea467
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539375"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Как выполнить Профилирование кода JavaScript в веб-страницах
 
 Средства профилирования Visual Studio могут собирать данные о производительности для кода JavaScript, который выполняется в веб-приложении [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], на произвольной веб-странице или в приложении JavaScript с использованием профилирования инструментирования. Требуется Internet Explorer 8 или более поздней версии.
 
 > [!WARNING]
-> Сведения о профилировании JavaScript в приложениях универсальной платформы Windows см. в разделе [Память JavaScript](../profiling/javascript-memory.md). 
+> Сведения о профилировании JavaScript в приложениях универсальной платформы Windows см. в разделе [Память JavaScript](../profiling/javascript-memory.md).
 
 Вы можете использовать мастер профилирования для создания сеанса производительности. Укажите способ инструментирования, а затем выберите вариант профилирования JavaScript на странице "Инструментирование" диалогового окна свойств для сеанса производительности.
 

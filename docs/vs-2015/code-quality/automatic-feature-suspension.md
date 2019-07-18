@@ -1,12 +1,8 @@
 ---
 title: Автоматическая приостановка функции | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 - performance
@@ -16,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c8aee8f4ef46d3621bf569b260d943180abd7ad5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d406d200864a3c79dcd568b3c9411a1635ce116
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178182"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704024"
 ---
 # <a name="automatic-feature-suspension"></a>Автоматическая приостановка функции
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +29,17 @@ ms.locfileid: "49178182"
 
  В случае нехватки памяти происходит следующее:
 
--   Полный анализ решения для Visual C# и Visual Basic будет отключен.
+- Полный анализ решения для Visual C# и Visual Basic будет отключен.
 
--   [Сборка мусора](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) режиме с малым временем задержки (GC) для Visual C# и Visual Basic будут отключены.
+- [Сборка мусора](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) режиме с малым временем задержки (GC) для Visual C# и Visual Basic будут отключены.
 
--   Visual Studio кэшей будут сброшены.
+- Visual Studio кэшей будут сброшены.
 
 ## <a name="improve-visual-studio-performance"></a>Повышения производительности Visual Studio
  Советы и рекомендации по повышению производительности Visual Studio при работе с большими решениями или условия нехватки памяти, см. в разделе [особенности производительности для крупных решений](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 ## <a name="full-solution-analysis-suspended"></a>Полный анализ решения приостановлено
- По умолчанию полный анализ решения включена для Visual Basic и отключена для Visual C#. Тем не менее в случае нехватки памяти, полный анализ решения автоматически отключается для Visual Basic и Visual C#, независимо от параметров в диалоговом окне параметров. Тем не менее, вы можете повторно включить полный анализ решения, выбрав **повторно включить** кнопку сведений панели при его отображении, выбрав **включить полный анализ решения** флажок в окне параметров или перезапуск Visual Studio. Диалоговое окно параметров всегда отображает текущее полное решение параметры анализа. Дополнительные сведения см. в разделе [как: Включение и отключение анализа всего решения](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+ По умолчанию полный анализ решения включена для Visual Basic и отключена для Visual C#. Тем не менее в случае нехватки памяти, полный анализ решения автоматически отключается для Visual Basic и Visual C#, независимо от параметров в диалоговом окне параметров. Тем не менее, вы можете повторно включить полный анализ решения, выбрав **повторно включить** кнопку сведений панели при его отображении, выбрав **включить полный анализ решения** флажок в окне параметров или перезапуск Visual Studio. Диалоговое окно параметров всегда отображает текущее полное решение параметры анализа. Дополнительные сведения см. в разделе [Практическое руководство. Включение и отключение полного анализа решения](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>Сборщик Мусора низкой задержкой отключена
  Чтобы снова включить режим сборки Мусора малым временем задержки, перезапустите Visual Studio.  По умолчанию Visual Studio включает режим сборки Мусора низкой задержкой при каждом вводе убедитесь, что текст не блокируют все операции сборки Мусора. Тем не менее если условие нехватки памяти приводит к Visual Studio, чтобы отображать предупреждение автоматической приостановки, режим сборки Мусора малым временем задержки отключен для данного сеанса. Перезапуск Visual Studio будет повторно включить сборщик Мусора по умолчанию. Дополнительные сведения см. в разделе <xref:System.Runtime.GCLatencyMode>.
@@ -52,11 +48,11 @@ ms.locfileid: "49178182"
 
 Все кэши Visual Studio очищаются немедленно, но начинает повторно заполнить, если вы по-прежнему текущего сеанса, разработки или перезапустите Visual Studio. Кэши записаны на диск включить кэшей для следующих компонентов.
 
--   Найти все ссылки
+- Найти все ссылки
 
--   Функция "Перейти к"
+- Функция "Перейти к"
 
--   Добавление директивы Using
+- Добавление директивы Using
 
 Кроме того кэш, используемый для внутренних операций Visual Studio, также будут удалены.
 
@@ -66,5 +62,5 @@ ms.locfileid: "49178182"
 ## <a name="see-also"></a>См. также
 
 - [Практическое руководство. Включение и отключение полного анализа решения](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [Основы сборки мусора](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
+- [Основы сборки мусора](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Особенности производительности для крупных решений](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

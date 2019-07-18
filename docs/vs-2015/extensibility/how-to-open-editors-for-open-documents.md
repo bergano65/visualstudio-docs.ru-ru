@@ -1,28 +1,23 @@
 ---
-title: 'Как: открытие редакторов для открытых документов | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Открытие редакторов для открытых документов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4bb21def7e9d283c287c375bd9b8b4cc6bd30c3c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ae6e565e026ca49825a7b00a82e4e5c62a2f6c3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204145"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>Как: открытие редакторов для открытых документов
+# <a name="how-to-open-editors-for-open-documents"></a>Практическое руководство. Открытие редакторов для открытых документов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Еще до открытия проекта окно документа проекта сначала следует определить ли файл уже открыт в окне документа для другого редактора. Файл можно открыть в редакторе конкретного проекта или воспользоваться одним из стандартных редакторов зарегистрировано [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -53,14 +48,13 @@ ms.locfileid: "51750981"
   
 #### <a name="to-open-a-standard-editor-for-an-open-file"></a>Чтобы открыть стандартный редактор для открытого файла  
   
-1.  Вызовите метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. Вызовите метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
      Этот метод сначала проверяет, что документ не открыт, вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Если документ уже открыт, а затем передается его окно редактора.  
   
-2.  Если документ не открыт, выполните действия, описанные в [как: открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md).  
+2. Если документ не открыт, выполните действия, описанные в [как: Открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md).  
   
 ## <a name="see-also"></a>См. также  
  [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)   
- [Как: открытие редакторов соответствующих проектов](../extensibility/how-to-open-project-specific-editors.md)   
+ [Практическое руководство. Открытие редакторов соответствующих проектов](../extensibility/how-to-open-project-specific-editors.md)   
  [Практическое руководство. Открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md)
-

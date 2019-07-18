@@ -1,42 +1,37 @@
 ---
-title: Шаг 6. Добавление задачи на вычитание | Документы Майкрософт
-ms.custom: ''
+title: Шаг 6. Добавить задачу на вычитание | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 793204bf4a08d09d7ce6e48e37254dd311ac6a08
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178673"
 ---
-# <a name="step-6-add-a-subtraction-problem"></a>Шаг 6. Добавление задачи на вычитание
+# <a name="step-6-add-a-subtraction-problem"></a>Шаг 6. Добавление задачи на вычитание
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В шестой части этого учебника вам предстоит добавить задачу на вычитание и научиться выполнять следующие задачи:  
   
--   Хранение значений, которые участвуют в операции вычитания.  
+- Хранение значений, которые участвуют в операции вычитания.  
   
--   Создание случайных чисел для задачи (а также гарантия, что ответ лежит в диапазоне от 0 до 100).  
+- Создание случайных чисел для задачи (а также гарантия, что ответ лежит в диапазоне от 0 до 100).  
   
--   Обновление метода, который проверяет ответы, таким образом, чтобы он также проверял новую задачу на вычитание.  
+- Обновление метода, который проверяет ответы, таким образом, чтобы он также проверял новую задачу на вычитание.  
   
--   Обновление обработчика событий таймера Tick таким образом, чтобы этот обработчик событий заполнял корректный ответ после истечения времени.  
+- Обновление обработчика событий таймера Tick таким образом, чтобы этот обработчик событий заполнял корректный ответ после истечения времени.  
   
 ### <a name="to-add-a-subtraction-problem"></a>Добавление задачи на вычитание  
   
-1.  Добавьте в форму две целочисленные переменные для задачи на вычитание — между целочисленными переменными для задачи на сложение и для таймера. Код должен выглядеть следующим образом.  
+1. Добавьте в форму две целочисленные переменные для задачи на вычитание — между целочисленными переменными для задачи на сложение и для таймера. Код должен выглядеть следующим образом.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#12](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#12)]
      [!code-vb[VbExpressTutorial3Step5_6#12](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#12)]  
@@ -45,7 +40,7 @@ ms.locfileid: "49229246"
   
      Затем необходимо изменить метод `StartTheQuiz()`, чтобы получить случайные значения для задачи на вычитание.  
   
-2.  Добавьте после комментария "Fill in the subtraction problem" (Заполнение задачи на вычитание) следующий код.  
+2. Добавьте после комментария "Fill in the subtraction problem" (Заполнение задачи на вычитание) следующий код.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#13)]
      [!code-vb[VbExpressTutorial3Step5_6#13](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#13)]  
@@ -60,26 +55,26 @@ ms.locfileid: "49229246"
      ![Подсказка окна Intellisense](../ide/media/express-overloads.png "Express_Overloads")  
 Подсказка окна Intellisense  
   
-     В подсказке сказано **(+2 перегрузки)**, что означает, что вызвать метод `Next()` можно еще двумя способами. Перегрузки методов содержат разное количество или типы аргументов, поэтому работают слегка по-разному. Например, метод может принимать один целочисленный аргумент, тогда как одна из его перегрузок может принимать целое число и строку. Выбирайте подходящую перегрузку в зависимости от того, что требуется сделать. При добавлении кода в метод `StartTheQuiz()` в окне Intellisense появляется дополнительная информация, как только вы введете `randomizer.Next(`. Нажимайте клавиши СТРЕЛКА ВВЕРХ и СТРЕЛКА ВНИЗ для перебора перегрузок, как показано на следующем рисунке.  
+     В подсказке сказано **(+2 перегрузки)** , что означает, что вызвать метод `Next()` можно еще двумя способами. Перегрузки методов содержат разное количество или типы аргументов, поэтому работают слегка по-разному. Например, метод может принимать один целочисленный аргумент, тогда как одна из его перегрузок может принимать целое число и строку. Выбирайте подходящую перегрузку в зависимости от того, что требуется сделать. При добавлении кода в метод `StartTheQuiz()` в окне Intellisense появляется дополнительная информация, как только вы введете `randomizer.Next(`. Нажимайте клавиши СТРЕЛКА ВВЕРХ и СТРЕЛКА ВНИЗ для перебора перегрузок, как показано на следующем рисунке.  
   
      ![Перегрузка метода Next() в IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload")  
 Перегрузка метода Next() в IntelliSense  
   
      В данном случае необходимо выбрать последнюю перегрузку, чтобы можно было задать минимальное и максимальное значения.  
   
-3.  Для проверки правильного ответа для задачи на вычитание, измените метод `CheckTheAnswer()`.  
+3. Для проверки правильного ответа для задачи на вычитание, измените метод `CheckTheAnswer()`.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#14](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#14)]
      [!code-vb[VbExpressTutorial3Step5_6#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#14)]  
   
      В Visual C# `&&` — это оператор `logical and` . Эквивалентный оператор в языке Visual Basic — `AndAlso`. Эти операторы означают, что "Если addend1 плюс addend2 равно значению NumericUpDown с именем sum и если minuend минус subtrahend равно значению NumericUpDown с именем difference". Метод `CheckTheAnswer()` возвращает значение `true`, только если игрок дал правильные ответы и на задачу на сложение, и на задачу на вычитание.  
   
-4.  Замените последнюю часть обработчика событий таймера Tick следующим кодом, чтобы по истечении времени этот обработчик событий проставлял правильный ответ.  
+4. Замените последнюю часть обработчика событий таймера Tick следующим кодом, чтобы по истечении времени этот обработчик событий проставлял правильный ответ.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#22](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#22)]
      [!code-vb[VbExpressTutorial3Step5_6#22](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#22)]  
   
-5.  Сохраните и выполните код.  
+5. Сохраните и выполните код.  
   
      Теперь программа включает в себя задачу на вычитание, как показано на следующем рисунке.  
   
@@ -88,9 +83,6 @@ ms.locfileid: "49229246"
   
 ### <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал  
   
--   Следующий шаг руководства см. в разделе [Step 7: Add Multiplication and Division Problems](../ide/step-7-add-multiplication-and-division-problems.md) (Шаг 7. Добавление задач на умножение и деление).  
+- Следующий раздел руководства: [Шаг 7. Добавление задач на умножение и деление](../ide/step-7-add-multiplication-and-division-problems.md).  
   
--   Предыдущий шаг руководства см. в разделе [Step 5: Add Enter Event Handlers for the NumericUpDown Controls](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md) (Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown).
-
-
-
+- Предыдущий раздел руководства: [Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

@@ -1,14 +1,9 @@
 ---
 title: Продукты и службы корпорации Майкрософт, поддерживающие специальные возможности | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -23,32 +18,31 @@ ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8d1991ad3b99e3ab46e6ebea527ff839ef960ac7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441110"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Продукты и службы корпорации Майкрософт, поддерживающие специальные возможности
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Корпорация Microsoft стремится к тому, чтобы сделать использование своих продуктов и служб простым и удобным для каждого. В следующих разделах содержатся сведения о возможностях, продуктах и службах, облегчающих работу с Microsoft Windows для людей с ограниченными возможностями.  
   
--   [Специальные возможности Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  
+- [Специальные возможности Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  
   
--   [Документация в альтернативных форматах](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)  
+- [Документация в альтернативных форматах](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)  
   
--   [Служба технической поддержки для людей с нарушениями слуха](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)  
+- [Служба технической поддержки для людей с нарушениями слуха](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)  
   
--   [Дополнительные сведения](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
+- [Дополнительные сведения](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
   
 > [!NOTE]
->  Информация в этом разделе предназначена только для пользователей, которые приобрели лицензию на продукты корпорации Microsoft в США. Если вы приобрели продукт за пределами США, можно ознакомиться с информационной картой подразделения, которая входит в пакет программного обеспечения, или просмотреть список адресов и телефонных номеров службы технической поддержки корпорации Microsoft на веб-сайте [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) . Можно обратиться в представительство, чтобы узнать, доступен тип продуктов и услуг, описанных в этом разделе, в определенном регионе. Информация о специальных возможностях доступна на других языках, включая японский и французский.  
+> Информация в этом разделе предназначена только для пользователей, которые приобрели лицензию на продукты корпорации Microsoft в США. Если вы приобрели продукт за пределами США, можно ознакомиться с информационной картой подразделения, которая входит в пакет программного обеспечения, или просмотреть список адресов и телефонных номеров службы технической поддержки корпорации Microsoft на веб-сайте [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) . Можно обратиться в представительство, чтобы узнать, доступен тип продуктов и услуг, описанных в этом разделе, в определенном регионе. Информация о специальных возможностях доступна на других языках, включая японский и французский.  
   
-##  <a name="windows"></a> Специальные возможности Windows  
+## <a name="windows"></a> Специальные возможности Windows  
  Операционная система Windows обладает большим количеством встроенных специальных возможностей, полезных для людей, испытывающих затруднения при наборе текста или использовании мыши, слепых или имеющих нарушения зрения, глухих или слабослышащих. Данные возможности устанавливаются в процессе установки. Дополнительные сведения об этих возможностях см. в справке по Windows и на веб-сайте [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  
   
 ### <a name="free-step-by-step-tutorials"></a>Бесплатные пошаговые учебники  
@@ -61,18 +55,18 @@ ms.locfileid: "49826990"
   
  Перед обновлением программного обеспечения или оборудования с использованием продукта с поддержкой специальных возможностей свяжитесь с поставщиком данного продукта для получения сведений о возможных проблемах с совместимостью.  
   
-##  <a name="altfortmats"></a> Документация в альтернативных форматах  
+## <a name="altfortmats"></a> Документация в альтернативных форматах  
  Если при чтении или обработке печатного материала возникают сложности, документацию по большинству продуктов корпорации Microsoft можно получить в более доступных форматах. Указатель доступной документации по продуктам можно просмотреть на веб-сайте [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  
   
  Кроме того, дополнительную документацию корпорации Microsoft можно получить в компании Recording for the Blind & Dyslexic, Inc (RFB&D). RFB&D распространяет эти документы среди зарегистрированных правомочных членов службы распределения. Для получения дополнительных сведений о доступности документации по продуктам корпорации Microsoft и книг издательства Microsoft Press обратитесь по следующему адресу.  
   
-|Recording for the Blind & Dyslexic, Inc.|  
+|Learning Ally|  
 |----------------------------------------------|  
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Телефон для звонков в США: (800) 221-4792<br /><br /> Телефон для звонков за пределами США и Канады: (609) 452-0606<br /><br /> Факс: (609) 987-8116<br /><br /> Веб-сайт Recording for the Blind & Dyslexic: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|  
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Сайт Learning Ally: [http://www.learningally.org](http://www.learningally.org/).|  
   
  Веб-адреса могут меняться, поэтому подключение к веб-сайту или сайтам, указанным в данном разделе, может быть невозможно.  
   
-##  <a name="hearing"></a> Служба технической поддержки для людей с нарушениями слуха  
+## <a name="hearing"></a> Служба технической поддержки для людей с нарушениями слуха  
  Для глухих или слабослышащих пользователей полный доступ к службе технической и информационной поддержки по продуктам корпорации Microsoft возможен посредством службы передачи текста по телефону (TTY/TDD).  
   
 - Для получения информационной поддержки свяжитесь с центром информации по продажам корпорации Microsoft (Microsoft Sales Information Center) по телефону (800) 892-5234 в рабочие дни с 6:30 до 17:30 по тихоокеанскому времени с понедельника по пятницу (кроме праздничных дней).  
@@ -81,15 +75,9 @@ ms.locfileid: "49826990"
   
   Стоимость обращения в службу технической поддержки корпорации Microsoft определяется на основе цен и условий, действующих на момент обращения.  
   
-##  <a name="moreinfo"></a> Дополнительные сведения  
+## <a name="moreinfo"></a> Дополнительные сведения  
  Дополнительные сведения о том, как поддержка специальных возможностей помогает улучшить жизнь людей с ограниченными возможностями, см. на веб-сайте [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Ресурсы для создания приложений со специальными возможностями](../../ide/reference/resources-for-designing-accessible-applications.md)   
  [Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Импорт в редакторе | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1fc32d0126d912acab104ecefe3cb62d80b8513f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759029"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690322"
 ---
 # <a name="editor-imports"></a>Импорт в редакторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51759029"
  Чтобы использовать редактор импорта, импортируйте его как поля или свойства класса, который экспортирует в компоненте Managed Extensibility Framework.  
   
 > [!NOTE]
->  Дополнительные сведения о Managed Extensibility Framework, см. в разделе [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Дополнительные сведения о Managed Extensibility Framework, см. в разделе [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ## <a name="import-syntax"></a>Синтаксис импорта  
  Приведенный ниже показано, как импортировать редактора параметры фабрики служб.  
@@ -49,19 +44,19 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Дополнительные примеры использования imports см. в разделе ниже пошаговых руководства:  
   
- [Пошаговое руководство. Создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Пошаговое руководство: создание глифа поля](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [Пошаговое руководство. Настройка представления текста](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [Пошаговое руководство: настройка представления текста](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Пошаговое руководство. Выделение текста](../extensibility/walkthrough-highlighting-text.md)  
+ [Пошаговое руководство: выделение текста](../extensibility/walkthrough-highlighting-text.md)  
   
- [Пошаговое руководство. Отображение всплывающих подсказок для кратких сведений](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Пошаговое руководство: отображение всплывающих подсказок для кратких сведений](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Пошаговое руководство. Отображение справки сигнатуры](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Пошаговое руководство: отображение справки по цифровым подписям](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Пошаговое руководство. Отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [Пошаговое руководство. Отображение смарт-тегов](../misc/walkthrough-displaying-smarttags.md)  
+ [Пошаговое руководство: Отображение смарт-тегов](../misc/walkthrough-displaying-smarttags.md)  
   
 ## <a name="importing-the-service-provider"></a>Импорт поставщика услуг  
  Можно также импортировать <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (найдено в сборке Microsoft.VisualStudio.Shell.Immutable.10.0) таким же образом, чтобы получить доступ к службам Visual Studio:  
@@ -71,7 +66,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- См. в разделе [Пошаговое руководство: доступ к объекту DTE из расширения редактора](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) Дополнительные сведения.  
+ См. [Пошаговое руководство: Доступ к объекту DTE из расширения редактора](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) Дополнительные сведения.  
   
 ## <a name="services"></a>Службы  
  Редактор службы — обычно одной сущности, которые предоставляют службы и являются общими для нескольких компонентов.  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>См. также  
  [Языковая служба и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md)
-

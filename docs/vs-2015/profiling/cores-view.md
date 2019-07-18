@@ -1,14 +1,9 @@
 ---
 title: Представление "Ядра" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cores
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: e47af672-9785-4899-bd45-4d9dda3c396f
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c609745e0df5ece6d3de9be718851b45110d4fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 869980fe7bbb773d566dffd38088b003e3a97a3d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746316"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54763012"
 ---
 # <a name="cores-view"></a>Представление "Ядра"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +29,7 @@ ms.locfileid: "51746316"
   
  Область легенды содержит запись для каждого цвета в графе. Каждая запись показывает цвет потока и имя, количество переключений контекста между ядрами, общее количество переключений контекста и процент переключений контекста между ядрами. Легенда сортируется по количеству переключений контекста между ядрами в порядке убывания. В ней указаны только потоки, которые выполнялись в течение указанного диапазона.  Список обновляется при масштабировании или панорамировании.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Визуализатор параллелизма](../profiling/concurrency-visualizer.md)   
  [Представление "Использование"](../profiling/utilization-view.md)   
  [Представление потоков](../profiling/threads-view-parallel-performance.md)
-
-
-

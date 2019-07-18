@@ -7,16 +7,18 @@ helpviewer_keywords:
 - text templates, transforming by using msbuild
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 11ff8764395f10a4937143d6f51d220f970193af
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: d790110d76a8500d127e34842c63648ce5169914
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270236"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821415"
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
 
@@ -26,7 +28,7 @@ ms.locfileid: "54270236"
 
 Это означает, что вы не может получить доступ к таких вещей, как имена файлов проекта таким же образом при сборке текстового шаблона в MSBuild. Тем не менее, вы можете [передать данные среды в текстовые шаблоны и процессоры директив с помощью параметров сборки](#parameters).
 
-##  <a name="buildserver"></a> Настройка компьютеров
+## <a name="buildserver"></a> Настройка компьютеров
 
 Чтобы включить задачи сборки на компьютере разработчика, установите пакет SDK моделирования для Visual Studio.
 
@@ -36,23 +38,23 @@ ms.locfileid: "54270236"
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    - Microsoft.TextTemplating.Build.Tasks.dll
+  - Microsoft.TextTemplating.Build.Tasks.dll
 
-    - Microsoft.TextTemplating.targets
+  - Microsoft.TextTemplating.targets
 
 - $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    - Microsoft.VisualStudio.TextTemplating.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
+  - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
 
-    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
 - $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>Изменение файла проекта
 
@@ -77,8 +79,8 @@ ms.locfileid: "54270236"
 ```xml
 <!-- Optionally make the import portable across VS versions -->
   <PropertyGroup>
-    <!-- Get the Visual Studio version - defaults to 10: -->
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- Get the Visual Studio version: -->
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
     <!-- Keep the next element all on one line: -->
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
@@ -214,7 +216,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Передача данных контекста сборки в шаблоны
+## <a name="parameters"></a> Передача данных контекста сборки в шаблоны
 
 Можно задать значения параметров в файле проекта. Например, можно передать [построения](../msbuild/msbuild-properties.md) свойства и [переменные среды](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -248,7 +250,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue` получает данные из `T4ParameterValues` только при использовании MSBuild. При преобразовании шаблона с помощью Visual Studio параметры будут иметь значения по умолчанию.
 
-##  <a name="msbuild"></a> Использование свойств проекта в сборки и директивы #include
+## <a name="msbuild"></a> Использование свойств проекта в сборки и директивы #include
 
 Макросы Visual Studio, такие как **$(SolutionDir)** не работают в MSBuild. Вместо этого можно использовать свойства проекта.
 
@@ -295,5 +297,16 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 ## <a name="see-also"></a>См. также
 
+::: moniker range="vs-2017"
+
 - Есть хорошее руководство в шаблоне T4 MSbuild в *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Есть хорошее руководство в шаблоне T4 MSbuild в *% ProgramFiles (x86) %\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets*
+
+::: moniker-end
+
 - [Запись текстового шаблона T4](../modeling/writing-a-t4-text-template.md)

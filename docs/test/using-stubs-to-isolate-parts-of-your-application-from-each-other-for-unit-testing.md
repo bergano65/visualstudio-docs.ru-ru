@@ -1,22 +1,21 @@
 ---
-title: Использование заглушек для изоляции частей приложений при модульном тестировании
+title: Использование заглушек для изоляции частей приложений при тестировании
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c832853470fb4aa3adad9719ddbbe35123f04772
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b88905df0c99eb66c64e529610d6713801fceece
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902767"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401719"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Использование заглушек для изоляции частей приложений друг от друга при модульном тестировании
 
@@ -229,9 +228,9 @@ class TestMyComponent
     public void TestVariableContosoPrice()
     {
         // Arrange:
-        int priceToReturn;
-        string companyCodeUsed;
-        var componentUnderTest = new StockAnalyzer(new StubIStockFeed()
+        int priceToReturn = 345;
+        string companyCodeUsed = "";
+        var componentUnderTest = new StockAnalyzer(new StockAnalysis.Fakes.StubIStockFeed()
             {
                GetSharePriceString = (company) =>
                   {
@@ -241,8 +240,6 @@ class TestMyComponent
                      return priceToReturn;
                   };
             };
-        // Set the value that will be returned by the stub:
-        priceToReturn = 345;
 
         // Act:
         int actualResult = componentUnderTest.GetContosoPrice();
@@ -264,7 +261,7 @@ Class TestMyComponent
     <TestMethod()> _
     Public Sub TestVariableContosoPrice()
         ' Arrange:
-        Dim priceToReturn As Integer
+        Dim priceToReturn As Integer = 345
         Dim companyCodeUsed As String = ""
         Dim stockFeed As New StockAnalysis.Fakes.StubIStockFeed()
         With stockFeed
@@ -279,8 +276,6 @@ Class TestMyComponent
         End With
         ' Create an object to test:
         Dim componentUnderTest As New StockAnalyzer(stockFeed)
-        ' Set the value that will be returned by the stub:
-        priceToReturn = 345
 
         ' Act:
         Dim actualResult As Integer = componentUnderTest.GetContosoPrice()
@@ -317,7 +312,7 @@ var stub = new StubIMyInterface ();
 stub.MyMethodString = (value) => 1;
 ```
 
-Если не предоставить заглушку для функции, Fakes создаст функцию, возвращающую значение по умолчанию возвращаемого типа. Для чисел значением по умолчанию является 0, а для типов классов — `null` (C#) или `Nothing` (Visual Basic).
+Если не предоставить заглушку для функции, Fakes создает функцию, возвращающую значение по умолчанию возвращаемого типа. Для чисел значением по умолчанию является 0, а для типов классов — `null` (C#) или `Nothing` (Visual Basic).
 
 ### <a name="properties"></a>Свойства
 
@@ -341,7 +336,7 @@ stub.ValueGet = () => i;
 stub.ValueSet = (value) => i = value;
 ```
 
-Если не предоставить методы-заглушки для метода получения или задания свойства, Fakes создаст заглушку, хранящую значения, чтобы свойство заглушки выступало в роли простой переменной.
+Если не предоставить методы-заглушки для метода получения или задания свойства, Fakes создает заглушку, хранящую значения, чтобы свойство заглушки выступало в роли простой переменной.
 
 ### <a name="events"></a>События
 
@@ -409,7 +404,7 @@ public void TestGetValue()
     }
 ```
 
-В заглушке, созданной из этого класса, можно задать методы делегата для DoAbstract() и DoVirtual(), но не DoConcrete().
+В заглушке, созданной из этого класса, можно задать методы делегата для `DoAbstract()` и `DoVirtual()`, но не для `DoConcrete()`.
 
 ```csharp
 // unit test
@@ -438,13 +433,13 @@ Assert.AreEqual(43,stub.DoVirtual(1));
 
 ## <a name="stub-limitations"></a>Ограничения заглушки
 
-1. Сигнатуры методов с указателями не поддерживаются.
+- Сигнатуры методов с указателями не поддерживаются.
 
-2. Запечатанные классы или статические методы не могут быть заменены заглушками, поскольку типы заглушек зависят от диспетчеризации виртуальных методов. В таких случаях используйте типы оболочек, которые описываются в статье [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+- Запечатанные классы или статические методы не могут быть заменены заглушками, поскольку типы заглушек зависят от диспетчеризации виртуальных методов. В таких случаях используйте типы оболочек, которые описываются в статье [Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="change-the-default-behavior-of-stubs"></a>Изменение поведения заглушек по умолчанию
 
-Каждый созданный тип заглушки содержит экземпляр интерфейса `IStubBehavior` (через свойство `IStub.InstanceBehavior`). Поведение вызывается каждый раз, когда клиент вызывает член без присоединенного пользовательского делегата. Если поведение не задано, будет использоваться экземпляр, возвращаемый свойством `StubsBehaviors.Current`. По умолчанию это свойство возвращает поведение, вызывающее исключение `NotImplementedException`.
+Каждый созданный тип заглушки содержит экземпляр интерфейса `IStubBehavior` (через свойство `IStub.InstanceBehavior`). Поведение вызывается каждый раз, когда клиент вызывает член без присоединенного пользовательского делегата. Если поведение не задано, используется экземпляр, возвращаемый свойством `StubsBehaviors.Current`. По умолчанию это свойство возвращает поведение, вызывающее исключение `NotImplementedException`.
 
 Это поведение можно изменить в любое время, задав свойство `InstanceBehavior` в любом экземпляре заглушки. Например, в следующем фрагменте кода изменяется поведение, которое ничего не делает или возвращает значение по умолчанию для возвращаемого типа `default(T)`.
 

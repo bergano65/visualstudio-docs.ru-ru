@@ -1,14 +1,9 @@
 ---
 title: Throw может стоять выражение на той же строке кода | Документация Майкрософт
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1035
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7179a22d2713c9ddc894618bd6921f3f873f2ad8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c8ed951fb30b84f114f8f44a60e94b88f0f1d0f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005945"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>throw требует после себя выражение на той же строке
 Вы использовали `throw` ключевое слово, но не соответствует его с помощью выражения в той же строке кода. Объект `throw` оператор состоит из двух частей: `throw` ключевое слово, и выражение исключение. Пример:  
@@ -40,7 +34,7 @@ if (denominator == 0) {
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Убедитесь, что `throw` ключевое слово и выражение исключение появляется в той же строке.  
+- Убедитесь, что `throw` ключевое слово и выражение исключение появляется в той же строке.  
   
 ## <a name="see-also"></a>См. также  
  [Объект ошибки](../../javascript/reference/error-object-javascript.md)   

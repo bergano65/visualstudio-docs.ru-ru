@@ -1,12 +1,9 @@
 ---
 title: Изменение данных в наборах данных | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,18 +16,17 @@ ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7cbc9519c86b2bf4967e567b29355eb6d8a176a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699771"
 ---
 # <a name="edit-data-in-datasets"></a>Изменение данных в наборах данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Изменение данных в таблицах данных, примерно так же, что изменения данных в таблице в любой базе данных. Процесс может включать Вставка, обновление и удаление записей в таблице. В форме привязкой к данным можно указать, какие поля являются изменяемых пользователем. В этом случае инфраструктура привязки данных обрабатывает все отслеживания изменений, чтобы изменения могли быть отправлены в базу данных более поздней версии. Если предполагается передавать эти изменения в базе данных программным способом внесения изменений в данных, необходимо использовать объекты и методы, выполняющие отслеживание изменений для вас.  
   
  Помимо изменения фактических данных, можно также выполнить запрос <xref:System.Data.DataTable> позволит возвращать конкретные строки данных. Например вы может запрашивать отдельных строк, определенных версий строк (исходное и предложенное), строк, которые были изменены или строки, содержащие ошибки.  
@@ -49,7 +45,7 @@ ms.locfileid: "49949296"
  [!code-vb[VbRaddataEditing#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#5)]  
   
 ## <a name="to-insert-new-rows-into-a-dataset"></a>Для вставки новых строк в набор данных  
- Приложения, использующие элементы управления с привязкой к данным обычно Добавление новых записей с помощью **Add New** кнопку [элемент управления BindingNavigator](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
+ Приложения, использующие элементы управления с привязкой к данным обычно Добавление новых записей с помощью **Add New** кнопку [элемент управления BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
   
  Чтобы вручную добавить новые записи в набор данных, создания новой строки данных путем вызова метода в таблице. Затем добавьте строки <xref:System.Data.DataRow> коллекции (<xref:System.Data.DataTable.Rows%2A>) из <xref:System.Data.DataTable>:  
   
@@ -62,12 +58,12 @@ ms.locfileid: "49949296"
   
 #### <a name="to-delete-records-from-a-data-table"></a>Для удаления записей из таблицы данных  
   
--   Вызовите <xref:System.Data.DataRow.Delete%2A> метод <xref:System.Data.DataRow>.  
+- Вызовите <xref:System.Data.DataRow.Delete%2A> метод <xref:System.Data.DataRow>.  
   
      Этот метод не удаляет записи физически. Вместо этого он помечает записи для удаления.  
   
     > [!NOTE]
-    >  Если вы получаете свойство count <xref:System.Data.DataRowCollection>, результирующее значение включает записи, которые были помечены для удаления. Чтобы получить точное число записей, которые не помечены для удаления, можно организовать цикл по коллекции, просмотрев <xref:System.Data.DataRow.RowState%2A> свойство каждой записи. (Имеют помеченные на удаление записи <xref:System.Data.DataRow.RowState%2A> из <xref:System.Data.DataRowState>.) Кроме того можно создать представление данных набора данных, фильтры на основе состояния строки и получить свойство count оттуда.  
+    > Если вы получаете свойство count <xref:System.Data.DataRowCollection>, результирующее значение включает записи, которые были помечены для удаления. Чтобы получить точное число записей, которые не помечены для удаления, можно организовать цикл по коллекции, просмотрев <xref:System.Data.DataRow.RowState%2A> свойство каждой записи. (Имеют помеченные на удаление записи <xref:System.Data.DataRow.RowState%2A> из <xref:System.Data.DataRowState>.) Кроме того можно создать представление данных набора данных, фильтры на основе состояния строки и получить свойство count оттуда.  
   
      В следующем примере показан вызов <xref:System.Data.DataRow.Delete%2A> метод, чтобы пометить первую строку в `Customers` таблицу как удаленный:  
   
@@ -81,13 +77,13 @@ ms.locfileid: "49949296"
   
 - Каждая строка данных содержит сведения, относящиеся к его <xref:System.Data.DataRow.RowState%2A> (например, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, или <xref:System.Data.DataRowState>).  
   
-- Каждая строка измененных данных содержит несколько версий этой строки (<xref:System.Data.DataRowVersion>), исходной версии (до изменений) и текущей версии (после изменений). В течение периода, если ожидается изменение (время, когда можно ответить на <xref:System.Data.DataTable.RowChanging> событий) третья версия — предложенная — также доступен. Дополнительные сведения см. в разделе [как: получение определенных версий объекта DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md).  
+- Каждая строка измененных данных содержит несколько версий этой строки (<xref:System.Data.DataRowVersion>), исходной версии (до изменений) и текущей версии (после изменений). В течение периода, если ожидается изменение (время, когда можно ответить на <xref:System.Data.DataTable.RowChanging> событий) третья версия — предложенная — также доступен.
   
-  <xref:System.Data.DataSet.HasChanges%2A> Метод набора данных возвращает `true` Если были внесены изменения в наборе данных. После определения существования измененных строк, можно вызвать `GetChanges` метод <xref:System.Data.DataSet> или <xref:System.Data.DataTable> для возвращения набора измененных строк. Дополнительные сведения см. в разделе [как: получение строк изменен](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  <xref:System.Data.DataSet.HasChanges%2A> Метод набора данных возвращает `true` Если были внесены изменения в наборе данных. После определения существования измененных строк, можно вызвать `GetChanges` метод <xref:System.Data.DataSet> или <xref:System.Data.DataTable> для возвращения набора измененных строк. Дополнительные сведения см. в разделе [Практическое руководство. Получение измененных строк](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Чтобы определить, были ли внесены изменения в строки  
   
--   Вызовите <xref:System.Data.DataSet.HasChanges%2A> метод набора данных для проверки измененных строк.  
+- Вызовите <xref:System.Data.DataSet.HasChanges%2A> метод набора данных для проверки измененных строк.  
   
      Приведенный ниже показано, как проверить значение, возвращаемое <xref:System.Data.DataSet.HasChanges%2A> метод для выявления измененных строк в наборе данных с именем `NorthwindDataset1`:  
   
@@ -99,7 +95,7 @@ ms.locfileid: "49949296"
   
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Чтобы определить тип изменений были внесены в строку  
   
--   Передайте <xref:System.Data.DataRowState> значение <xref:System.Data.DataSet.HasChanges%2A> метод.  
+- Передайте <xref:System.Data.DataRowState> значение <xref:System.Data.DataSet.HasChanges%2A> метод.  
   
      В следующем примере показано, как проверить набор данных с именем `NorthwindDataset1` для определения того, если к нему были добавлены все новые строки:  
   
@@ -109,10 +105,9 @@ ms.locfileid: "49949296"
 ## <a name="to-locate-rows-that-have-errors"></a>Чтобы найти строки, содержащие ошибки  
  При работе с отдельных столбцов и строк данных, могут возникнуть ошибки. Вы можете проверить `HasErrors` свойства, чтобы определить наличие ошибок <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, или <xref:System.Data.DataRow>.  
   
-1.  Проверьте `HasErrors` свойство, чтобы увидеть, если в наборе данных имеются ошибки.  
+1. Проверьте `HasErrors` свойство, чтобы увидеть, если в наборе данных имеются ошибки.  
   
-2.  Если `HasErrors` свойство `true`, итерации по коллекции таблиц, а затем через строки, чтобы найти строку с ошибкой.  
+2. Если `HasErrors` свойство `true`, итерации по коллекции таблиц, а затем через строки, чтобы найти строку с ошибкой.  
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]
-

@@ -1,7 +1,6 @@
 ---
 title: Команда Replace In Files
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - edit.replaceinfiles
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f24005473780591a89afcf97eae234976ff81a85
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a87b4dcff0bd626947a0d98822150d03fc7c7059
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945572"
 ---
 # <a name="replace-in-files-command"></a>Команда Replace In Files
 Заменяет текст в файлах с использованием подмножества параметров, доступных на вкладке **Заменить в файлах** окна **Поиск и замена**.

@@ -6,23 +6,22 @@ helpviewer_keywords:
 - text templates, security
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: bb5ad4348d681a2b7bc59c588bb74e0a27813e73
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66159516c6b1360203130dedb56c0e6c192a118a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824024"
 ---
 # <a name="security-of-text-templates"></a>Безопасность текстовых шаблонов
 Текстовые шаблоны имеют следующие рекомендации по безопасности:
 
--   Текстовые шаблоны уязвимы для произвольного кода.
+- Текстовые шаблоны уязвимы для произвольного кода.
 
--   Если механизм, используемый узлом для поиска процессор директив не является безопасным, может быть запущен вредоносный процессор директив.
+- Если механизм, используемый узлом для поиска процессор директив не является безопасным, может быть запущен вредоносный процессор директив.
 
 ## <a name="arbitrary-code"></a>Произвольный код
  При написании шаблона, можно поместить код в пределах \<## > теги. Это позволяет произвольный код, выполняемый из текстового шаблона.

@@ -1,20 +1,19 @@
 ---
 title: Пошаговое руководство. Создание реалистичного трехмерного бильярдного шара
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b7b405ba9e25a94c8db22c4ddf5e4a0aedad09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844708"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Пошаговое руководство. Создание реалистичного трехмерного бильярдного шара
 
@@ -24,11 +23,11 @@ ms.locfileid: "53913495"
 
 Для выполнения инструкций данного пошагового руководства необходимы следующие компоненты и навыки.
 
--   Средство сбора текстур в кубические карты, например средство текстуры DirectX, которое включается в DirectX SDK за июнь 2010 г.
+- Средство сбора текстур в кубические карты, например средство текстуры DirectX, которое включается в DirectX SDK за июнь 2010 г.
 
--   Навыки работы с редактором изображений в Visual Studio.
+- Навыки работы с редактором изображений в Visual Studio.
 
--   Навыки работы с конструктором шейдеров в Visual Studio.
+- Навыки работы с конструктором шейдеров в Visual Studio.
 
 ## <a name="create-the-basic-appearance-with-shape-and-texture"></a>Создание основного внешнего вида с помощью фигуры и текстуры
 

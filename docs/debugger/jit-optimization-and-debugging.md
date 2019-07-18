@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917c9bab910b8f3153af46dc9d1d1a64ec6e529d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 7346b6fd8fbd483021437638f9e134ead88a0b93
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846327"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT-отладка и оптимизация
 **Принципы оптимизации работы в .NET:** Если вы пытаетесь отладить код, проще при что код является **не** оптимизированных для операций. Это обусловлено тем, когда код оптимизирован, компилятор и среда выполнения внесите изменения порожденного кода ЦП, что он выполняется быстрее, но имеет менее прямое сопоставление для исходного кода. Это означает, что отладчики часто не даст значение локальных переменных и пошаговое выполнение кода, и точки останова не может работать должным образом.
@@ -46,8 +46,8 @@ ms.locfileid: "53841269"
 1. В ситуациях, где для присоединения отладчика к уже запущенному процессу этот параметр не повлияет на модули, которые уже были загружены во время отладчик был подключен.
 2. Этот параметр не влияет на библиотеки DLL, которые были предварительно скомпилированы (называемые также технология Ngen) в машинный код. Тем не менее использование предварительно скомпилированного кода можно отключить, запустив процесс со средой, присваиваемого переменной «COMPlus_ZapDisable» "1".
 
-## <a name="see-also"></a>См. также раздел  
- [Отладка управляемого кода](../debugger/debugging-managed-code.md)   
- [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md)   
- [Подключение к выполняющимся процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Процесс управляемого выполнения](/dotnet/standard/managed-execution-process)
+## <a name="see-also"></a>См. также
+- [Отладка управляемого кода](../debugger/debugging-managed-code.md)
+- [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md)
+- [Подключение к выполняющимся процессам](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Процесс управляемого выполнения](/dotnet/standard/managed-execution-process)

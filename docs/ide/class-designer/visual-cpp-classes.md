@@ -1,7 +1,6 @@
 ---
 title: Классы Visual C++ в конструкторе классов
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b768fa059d3933ef75c5ff58e050c8c1521f770a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975051"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Классы Visual C++ в конструкторе классов
 
@@ -129,7 +128,6 @@ typedef struct
 ## <a name="template-classes"></a>Классы шаблона
 
 **Конструктор классов** поддерживает визуализацию классов шаблона. Поддерживаются вложенные объявления. В следующей таблице показаны некоторые типичные объявления.
-
 
 | Code, элемент | Представление конструктора классов |
 | - | - |

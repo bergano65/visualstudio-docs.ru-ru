@@ -1,23 +1,22 @@
 ---
 title: Настройка модульных тестов с помощью RUNSETTINGS-файла
-ms.date: 02/28/2018
-ms.prod: visual-studio-dev15
+ms.date: 06/14/2019
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 06cd85291b63ddd7c31136e24cf622f510849775
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961904"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160197"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Настройка модульных тестов с помощью файла *.runsettings*
 
-Модульные тесты в Visual Studio можно настроить с помощью файла *.runsettings*. Например, можно изменить версию платформы .NET Framework, на которой выполняются тесты, каталог для результатов теста и данные, собранные во время тестового запуска.
+Модульные тесты в Visual Studio можно настроить с помощью файла *.runsettings*. Например, можно изменить версию платформы .NET, на которой выполняются тесты, каталог для результатов теста и данные, собранные во время тестового запуска.
 
 Файлы параметров запуска являются необязательными. Если вам не требуется специальная конфигурация, файл *.runsettings* не нужен. Чаще всего файл *.runsettings* используют для настройки [анализа объема протестированного кода](../test/customizing-code-coverage-analysis.md).
 
@@ -25,24 +24,42 @@ ms.locfileid: "53961904"
 
 Файлы параметров запуска можно использовать для настройки тестов, которые запускаются из [командной строки](vstest-console-options.md), в интегрированной среде разработки или в [рабочем процессе сборки](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) с помощью Azure Test Plans или Team Foundation Server (TFS).
 
-### <a name="specify-a-run-settings-file-in-the-ide"></a>Указание файла параметров запуска в интегрированной среде разработки
+### <a name="ide"></a>IDE
 
-Последовательно выберите **Тест** > **Параметры тестирования** > **Выбрать файл параметров тестирования**, а затем файл *.runsettings*. В меню **Параметры тестирования** появится файл, который можно выбрать или отменить. Если файл параметров запуска выбран, он применяется при каждом выборе функции **Анализ объема протестированного кода**.
+Чтобы указать файл параметров запуска в интегрированной среде разработки, выберите **Тест** > **Параметры тестирования** > **Выбрать файл параметров тестирования**, а затем файл *.runsettings*.
 
 ![Выбор файла параметров тестирования в Visual Studio](media/select-test-settings-file.png)
 
-### <a name="specify-a-run-settings-file-at-the-command-line"></a>Указание файла параметров тестирования в командной строке
+В меню **Параметры тестирования** появится файл, который можно выбрать или отменить. Если файл параметров запуска выбран, он применяется при каждом выборе функции **Анализ объема протестированного кода**.
+
+### <a name="command-line"></a>Командная строка
 
 Для запуска тестов из командной строки используйте *vstest.console.exe* и укажите файл параметров с помощью параметра **/Settings**.
 
 1. Запустите командную строку разработчика Visual Studio.
 
-   В меню **Пуск** Windows выберите **Visual Studio 2017** > **Командная строка разработчика VS 2017**.
+   ::: moniker range="vs-2017"
+
+   В ОС Windows в меню **Пуск** выберите **Visual Studio 2017** > **Командная строка разработчика для VS 2017**.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   В ОС Windows в меню **Пуск** выберите **Visual Studio 2019** > **Командная строка разработчика для VS 2019**.
+
+   ::: moniker-end
 
 2. Введите команду, подобную следующей:
 
    ```cmd
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
+   ```
+
+   или
+
+   ```cmd
+   vstest.console.exe --settings:test.runsettings test.dll
    ```
 
 Дополнительные сведения см. в статье [Параметры командной строки для VSTest.Console.exe](vstest-console-options.md).
@@ -73,11 +90,11 @@ ms.locfileid: "53961904"
   <!-- Configurations that affect the Test Framework -->
   <RunConfiguration>
     <MaxCpuCount>1</MaxCpuCount>
-    <!-- Path relative to solution directory -->
+    <!-- Path relative to directory that contains .runsettings file-->
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from menu Test > Test Settings > Default Processor Architecture -->
+    <!-- You can also change it from the top-level menu Test > Test Settings > Processor Architecture for AnyCPU Projects -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -86,7 +103,7 @@ ms.locfileid: "53961904"
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
 
-    <!-- TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+    <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
@@ -114,7 +131,7 @@ ms.locfileid: "53961904"
       </DataCollector>
 
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
-        <!--Video data collector is only available with Visual Studio 2017 version 15.5 and higher -->
+        <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
       </DataCollector>
 
     </DataCollectors>
@@ -165,7 +182,7 @@ ms.locfileid: "53961904"
 |Узел|По умолчанию|Значения|
 |-|-|-|
 |**ResultsDirectory**||Каталог для сохранения результатов тестов.|
-|**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Этот параметр указывает, какая версия платформы модульных тестов используется для поиска и выполнения тестов. Эта версия может отличаться от версии платформы .NET, указанной в свойствах сборки проекта модульного теста.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` для источников .NET Core, `FrameworkUap10` для источников на основе UWP, `Framework45` для .NET Framework 4.5 и более поздней версии, `Framework40` для .NET Framework 4.0 и `Framework35` для .NET Framework 3.5.<br /><br />Этот параметр указывает, какая версия платформы модульных тестов используется для поиска и выполнения тестов. Эта версия может отличаться от версии платформы .NET, указанной в свойствах сборки проекта модульного теста.<br /><br />Если опустить элемент `TargetFrameworkVersion` в файле *.runsettings*, платформа автоматически определит версию .NET на основе двоичных файлов сборки.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|False|false, true|
 |**TestAdaptersPaths**||Один или несколько путей к каталогу, где находятся адаптеры TestAdapters|
@@ -239,7 +256,7 @@ public void HomePageTest()
 
 Эти параметры относятся к адаптеру тестов, выполняющему методы теста, которые имеют атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>.
 
-|Конфигурация|Значение по умолчанию|Значения|
+|Параметр Configuration|Значение по умолчанию|Значения|
 |-|-|-|
 |**ForcedLegacyMode**|False|В Visual Studio 2012 адаптер MSTest был оптимизирован для повышения скорости и масштабируемости. Некоторое поведение, в частности порядок, в котором выполняются тесты, может немного отличаться от поведения в предыдущих выпусках Visual Studio. Чтобы использовать старый адаптер теста, установите для этого параметра значение **true**.<br /><br />Например, этот параметр можно использовать при наличии файла *app.config*, указанного для модульного теста.<br /><br />Рекомендуется рассмотреть возможность рефакторинга тестов для включения возможности использования более нового адаптера.|
 |**IgnoreTestImpact**|False|Функция влияния на тесты определяет приоритет тестов, на которые повлияли последние изменения, при выполнении в MSTest или из Microsoft Test Manager. Этот параметр деактивирует функцию. Дополнительные сведения см. в разделе [Какие тесты следует выполнить с момента предыдущей сборки](https://msdn.microsoft.com/library/dd286589).|
@@ -254,5 +271,6 @@ public void HomePageTest()
 
 ## <a name="see-also"></a>См. также
 
+- [Настройка тестового запуска](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Настройка анализа объема протестированного кода](../test/customizing-code-coverage-analysis.md)
 - [Задача теста Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

@@ -5,23 +5,19 @@ ms.date: 03/27/2018
 ms.topic: overview
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60a37a7c970fdbf2ed428741cb21221429d4026d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d99a6ae3d2b1a2c0acfe4aee160801181c72cbe7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994919"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Обзор средств для измерения производительности в Visual Studio
 
 Средства профилирования и диагностики позволяют разработчикам диагностировать использование памяти и ЦП и выявлять другие проблемы на уровне приложения. С помощью этих средств можно накапливать данные (например, значения переменных, вызовы функций и события) в течение некоторого периода времени, например времени выполнения приложения. Вы можете просматривать состояние приложения в различные моменты времени в процессе выполнения кода или проводить анализ производительности приложения после завершения выполнения.
-
-| | |
-|---------|---------|
-| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | Просмотрите [видео об использовании средств диагностики](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171), где показано, как можно анализировать загрузку ЦП и использование памяти. |
 
 ## <a name="next-steps"></a>Следующие шаги
 
@@ -29,4 +25,4 @@ ms.locfileid: "53921809"
 
 * [Анализируйте загрузку ЦП](../profiling/cpu-usage.md) для получения более подробных сведений о загрузке ЦП.
 
-* [Анализируйте использование памяти](../profiling/memory-usage.md) для выявления узких мест производительности. 
+* [Анализируйте использование памяти](../profiling/memory-usage.md) для выявления узких мест производительности.

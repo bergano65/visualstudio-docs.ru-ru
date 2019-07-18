@@ -1,23 +1,20 @@
 ---
 title: Обновление модели UML из фонового потока | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 42c06b0b-b681-4e19-b5f3-6116dd2a4072
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4173b70cda9df39ce8a4500817fff199ed1a2996
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d5a7ad318b5bd9fac41d5e8835169e4075d1da67
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183910"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Обновление модели UML из фонового потока
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +23,9 @@ ms.locfileid: "51750013"
   
  Однако следует помнить, что хранилище UML не является потокобезопасным. Важно принять указанные ниже меры предосторожности.  
   
--   Каждое обновление модели или схемы должно выполняться в потоке пользовательского интерфейса. Фоновый поток должен использовать метод <xref:System.Windows.Forms.Control.Invoke%2A> или `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A>, чтобы поток пользовательского интерфейса выполнил текущие обновления.  
+- Каждое обновление модели или схемы должно выполняться в потоке пользовательского интерфейса. Фоновый поток должен использовать метод <xref:System.Windows.Forms.Control.Invoke%2A> или `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A>, чтобы поток пользовательского интерфейса выполнил текущие обновления.  
   
--   При группировке последовательности изменений в одной транзакции рекомендуется исключить для пользователя возможность изменять модель во время выполнения транзакции. В противном случае все изменения, совершенные пользователем, станут частью одной транзакции. Предотвратить вмешательство пользователя можно, вызвав модальное диалоговое окно. Можно предоставить в диалоговом окне кнопку "Отмена". Пользователь может видеть изменения по мере того, как они происходят.  
+- При группировке последовательности изменений в одной транзакции рекомендуется исключить для пользователя возможность изменять модель во время выполнения транзакции. В противном случае все изменения, совершенные пользователем, станут частью одной транзакции. Предотвратить вмешательство пользователя можно, вызвав модальное диалоговое окно. Можно предоставить в диалоговом окне кнопку "Отмена". Пользователь может видеть изменения по мере того, как они происходят.  
   
 ## <a name="example"></a>Пример  
  В этом примере используется фоновый поток для внесения нескольких изменений в модель. Диалоговое окно используется, чтобы исключить вмешательство пользователя во время работы потока. В этом простом примере диалоговое окно не содержит кнопки "Отмена". Однако добавить эту функцию несложно.  
@@ -39,17 +36,17 @@ ms.locfileid: "51750013"
   
 2. Убедитесь в том, что проект включает ссылки на следующие сборки:  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.[версия]  
+   - Microsoft.VisualStudio.Modeling.Sdk.[версия]  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[версия]  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[версия]  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces  
+   - Microsoft.VisualStudio.Uml.Interfaces  
   
-   -   System.ComponentModel.Composition  
+   - System.ComponentModel.Composition  
   
-   -   System.Windows.Forms.  
+   - System.Windows.Forms.  
   
 3. Добавьте в проект форму Windows с именем **ProgressForm**. Она должна показывать сообщение о том, что идет процесс обновления. Она не должна содержать других элементов управления.  
   
@@ -165,9 +162,9 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
 #### <a name="to-allow-the-user-to-cancel-the-thread-in-the-example"></a>Как разрешить пользователю отменить поток из примера  
   
-1.  Добавьте кнопку отмены в диалоговое окно с индикатором хода выполнения.  
+1. Добавьте кнопку отмены в диалоговое окно с индикатором хода выполнения.  
   
-2.  Добавьте в диалоговое окно приведенный ниже код.  
+2. Добавьте в диалоговое окно приведенный ниже код.  
   
      `public event MethodInvoker Cancel;`  
   
@@ -179,7 +176,7 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
      `}`  
   
-3.  В метод Execute() после конструкции формы добавьте следующую строку:  
+3. В метод Execute() после конструкции формы добавьте следующую строку:  
   
      `form.Cancel += delegate() { worker.CancelAsync(); };`  
   
@@ -193,6 +190,3 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
 ## <a name="see-also"></a>См. также  
  [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)
-
-
-

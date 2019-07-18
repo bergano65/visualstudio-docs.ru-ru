@@ -1,7 +1,6 @@
 ---
 title: CA1052. Типы со статическими заполнителями должны быть запечатаны
-ms.date: 11/09/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 51a3165d-781e-4a55-aa0d-ea25fee7d4f2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ec090fd11c122699bafb3d72ca1eeab13ecb830
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825949"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744593"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052. Типы со статическими заполнителями должны быть запечатаны
 
@@ -37,7 +36,9 @@ ms.locfileid: "53825949"
 
 ## <a name="cause"></a>Причина
 
-Открытый или защищенный, неабстрактный тип содержит только статические члены и не объявлен с [запечатанный](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) модификатор.
+Неабстрактный тип содержит только статические члены и не объявлен с [запечатанный](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) модификатор.
+
+По умолчанию это правило считывает только типы, видимые извне, но это [можно настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
 
@@ -45,15 +46,25 @@ CA1052 правило предполагает, что тип, который с
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, пометьте тип как `sealed` или `NotInheritable`. Если целевой платформой является .NET Framework 2.0 или более поздней версии, лучшим подходом является пометить тип как `static` или `Shared`. Таким образом не нужно объявить закрытый конструктор для предотвращения создания класса.
+Чтобы устранить нарушение этого правила, пометьте тип как `sealed` или `NotInheritable`. Если проект предназначен для платформы .NET Framework 2.0 или более поздней версии, лучшим подходом является пометить тип как `static` или `Shared`. Таким образом не нужно объявить закрытый конструктор для предотвращения создания класса.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 
 Отключайте предупреждение из этого правила, только в том случае, если тип должен наследоваться. Отсутствие `sealed` или `NotInheritable` модификатор предполагает, что тип является полезным в качестве базового типа.
 
+## <a name="configurability"></a>Возможность настройки
+
+Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+
+```ini
+dotnet_code_quality.ca1052.api_surface = private, internal
+```
+
+В этой категории (структуры) можно настроить этот параметр для только что это правило, для всех правил или для всех правил. Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
+
 ## <a name="example-of-a-violation"></a>Пример нарушения
 
-В примере показан тип, который нарушает правило.
+В следующем примере показано тип, который нарушает правило:
 
 [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
 [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
@@ -61,10 +72,10 @@ CA1052 правило предполагает, что тип, который с
 
 ## <a name="fix-with-the-static-modifier"></a>Исправление с модификатором static
 
-В следующем примере показано, как устранить нарушение этого правила, пометив тип с `static` модификатор в C#.
+В следующем примере показано, как устранить нарушение этого правила, пометив тип с `static` модификатор в C#:
 
 [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
 
-[CA1053: Типы со статическими заполнителями не должны иметь конструкторы](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+- [CA1053: Типы со статическими заполнителями не должны иметь конструкторы](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

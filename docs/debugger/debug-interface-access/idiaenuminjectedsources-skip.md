@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: 4aad6a51-f2d3-4064-b216-60d830d0a560
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e5e3525e39fe8eea0614f18067922f6efa3ba11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 807ed82a68089cb656f68c8cc1881dce683bb8a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829723"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
-Пропускает заданное число источников, внедренного в последовательности перечисления.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- celt  
- [in] Число источников, внедренного в последовательности перечисления, чтобы пропустить.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если существует больше нет внедренного источника для пропуска.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+Пропускает заданное число источников, внедренного в последовательности перечисления.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ celt
+
+[in] Число источников, внедренного в последовательности перечисления, чтобы пропустить.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` Если существует больше нет внедренного источника для пропуска.
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

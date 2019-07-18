@@ -1,12 +1,9 @@
 ---
 title: Свойства типов на UML схемах классов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 6e1ef2d0-d67a-401a-bd64-d5e034decd2c
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8baad41658cc6144f08d0b6b4d415aa4ff6e499
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 996f2f75499a54e0d5514590f2b087130b73ffb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387778"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Свойства типов на схемах классов UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,27 +26,27 @@ ms.locfileid: "51750105"
 В схеме классов UML *тип* — это класс, интерфейс или перечисление.  
   
 > [!NOTE]
->  В этом разделе описываются свойства типов на схемах классов UML. Дополнительные сведения см. в следующих разделах:  
+> В этом разделе описываются свойства типов на схемах классов UML. Дополнительные сведения см. в следующих разделах:  
   
--   [UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)  
+- [Схемы классов UML: справочник](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML-схемы классов: правила работы](../modeling/uml-class-diagrams-guidelines.md)  
+- [Схемы классов UML: рекомендации](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [Свойства атрибутов на схемах классов UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Свойства атрибутов на схемах классов UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Свойства операций на схемах классов UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Свойства операций на схемах классов UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Свойства ассоциаций на схемах классов UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [Свойства ассоциаций на схемах классов UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
 ## <a name="properties"></a>Свойства  
  Это свойства класса, интерфейса или перечисления.  
   
  Чтобы просмотреть свойства типа, щелкните правой кнопкой мыши тип на схеме или в **Обозреватель моделей UML**, а затем нажмите кнопку **свойства**. Свойства отображаются в **свойства** окна.  
   
-|**Property**|**Default**|Место присутствия|Описание:|  
+|**Property**|**Default**|Место присутствия|Описание|  
 |------------------|-----------------|----------------|-----------------|  
 |**Name**|Имя по умолчанию|Все элементы|Идентифицирует элемент.|  
-|**Полное имя**|Содержащий пакет :: Имя типа|Все элементы|Уникально идентифицирует элемент. Перед именем элемента указывается полное имя пакета, содержащего его.|  
+|**Полное имя**|Содержащий пакет:: Имя типа|Все элементы|Уникально идентифицирует элемент. Перед именем элемента указывается полное имя пакета, содержащего его.|  
 |**Цвет**|По умолчанию для данного типа|Все элементы|Цвет этой фигуры. В отличие от других свойств не является свойством базового элемента модели. Различные представления одного типа могут иметь разные цвета.|  
 |**Является абстрактным**|False|Класс|Если значение true, невозможно создать экземпляр класса и класс предназначен для использования в качестве базового.|  
 |**Является листом**|False|Класс, интерфейс|Если значение true, производные типы для этого типа не предусмотрены.|  
@@ -64,7 +61,4 @@ ms.locfileid: "51750105"
  [Свойства атрибутов на UML-схемах классов](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Свойства операций на UML-схемах классов](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Свойства ассоциаций на UML-схемах классов](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [UML-схемы классов: правила работы](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Схемы классов UML: рекомендации](../modeling/uml-class-diagrams-guidelines.md)

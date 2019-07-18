@@ -1,14 +1,9 @@
 ---
-title: Ожидалась строка | Документы Microsoft
-ms.custom: ''
+title: Требуется строка | Документация Майкрософт
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5005
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 4c214c4b-9cd7-473b-8d90-2344c0375c25
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2dabf754b2bfb4b20555b41457df04d54a5c31c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f6853d92608859e41fd7d8001ca6e350f5830504
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006461"
 ---
-# <a name="string-expected"></a>Ожидалась строка
-Предпринята попытка вызвать **String.prototype.toString** или **String.prototype.valueOf** метода объекта типа, отличного от `String`. Объект вызова этого типа должен иметь тип `String`.  
+# <a name="string-expected"></a>Требуется строка
+Предпринята попытка вызова **String.prototype.toString** или **String.prototype.valueOf** метод на объект типа, отличных от `String`. Объект этого типа вызова должен иметь тип `String`.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Вызывать только **String.prototype.toString** или **String.prototype.valueOf** методов для объектов типа `String`.  
+- Вызывается только **String.prototype.toString** или **String.prototype.valueOf** методов в объектах типа `String`.  
   
 ## <a name="see-also"></a>См. также  
  [Объект String](../../javascript/reference/string-object-javascript.md)   

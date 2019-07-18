@@ -10,28 +10,28 @@ dev_langs:
 ms.assetid: f7f08402-610e-47f0-ba10-575dd395a0f0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5273a80864af9253414e37df0ff290fbb374bbaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 3b918559742e9570ba3ad0ad1233ab643d087fdd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852250"
 ---
 # <a name="debugging-applications"></a>Отладка приложений
-В следующих разделах выполняется отладка приложений определенных типов. Для разных типов приложений и для разных языков требуются разные параметры и методы, а также в них возникают разные проблемы, которые требуют отладки.  
-  
-## <a name="debugging-for-different-types-of-applications"></a>Отладка приложений разных типов  
-  
-|||  
-|-|-|  
-|[Отладка приложений UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|В этой статье описывается отладка приложений UWP.|  
-|[Отладка управляемого кода](../debugger/debugging-managed-code.md)|Способы отладки управляемого кода (Visual C#, Visual Basic и F3).|  
-|[Отладка машинного кода](../debugger/debugging-native-code.md)|Способы отладки разных приложений с машинным кодом C++.|  
-|[Отладка кода GPU](../debugger/debugging-gpu-code.md)|Способы отладки кода C++, выполняющегося в GPU.|  
-|[Диагностика графики (отладка графики DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Способы отладки графики DirectX.|  
-|[Отладка приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|В этой статье описывается отладка приложений ASP.NET.| 
-|[Отладка веб-приложений](../debugger/debugging-web-applications.md)|Описывает, как выполнить отладку веб-приложений.|  
+В следующих разделах выполняется отладка приложений определенных типов. Для разных типов приложений и для разных языков требуются разные параметры и методы, а также в них возникают разные проблемы, которые требуют отладки.
+
+## <a name="debugging-for-different-types-of-applications"></a>Отладка приложений разных типов
+
+|||
+|-|-|
+|[Отладка приложений UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|В этой статье описывается отладка приложений UWP.|
+|[Отладка управляемого кода](../debugger/debugging-managed-code.md)|Способы отладки управляемого кода (Visual C#, Visual Basic и F3).|
+|[Отладка машинного кода](../debugger/debugging-native-code.md)|Способы отладки разных приложений с машинным кодом C++.|
+|[Отладка кода GPU](../debugger/debugging-gpu-code.md)|Способы отладки кода C++, выполняющегося в GPU.|
+|[Диагностика графики (отладка графики DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Способы отладки графики DirectX.|
+|[Отладка приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|В этой статье описывается отладка приложений ASP.NET.|
+|[Отладка веб-приложений](../debugger/debugging-web-applications.md)|Описывает, как выполнить отладку веб-приложений.|
 |[Отладка служб WCF](../debugger/debugging-wcf-services.md)|Способы отладки служб Windows Communication Foundation.|

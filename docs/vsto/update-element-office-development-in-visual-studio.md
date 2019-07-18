@@ -9,17 +9,17 @@ helpviewer_keywords:
 - update element
 - <update> element
 - application manifests [Office development in Visual Studio], <update> element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 661aa9c0c1a590e78d20e52b6321294d59e70c63
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 461fae79e3af346d64017166b6dae3ace67599e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967537"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Обновить&gt; элемент (Разработка решений Office в Visual Studio)
   `update` Элемент указывает интервал, с которым решение будет проверять наличие обновлений.
@@ -47,7 +47,7 @@ ms.locfileid: "53988992"
 
  Элемент `update` имеет указанные ниже дочерние элементы.
 
-### <a name="expiration"></a>истечение срока действия
+### <a name="expiration"></a>expiration
  Элемент `expiration` является обязательным и находится в пространстве имен `vstav3` . Этот элемент задает интервал, с которой решение проверяет наличие обновлений.
 
  Элемент `expiration` имеет перечисленные ниже атрибуты.
@@ -59,7 +59,7 @@ ms.locfileid: "53988992"
 
 ## <a name="example-of-always-checking-for-updates"></a>Пример всегда проверки на наличие обновлений
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В следующем примере кода показано `update` элемент, который имеет значение всегда проверять наличие обновлений в решениях Office.
 
 ### <a name="code"></a>Код

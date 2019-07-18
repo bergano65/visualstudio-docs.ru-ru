@@ -1,14 +1,9 @@
 ---
 title: Задача WriteLinesToFile | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#WriteLinesToFile
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 9c8862ac-8da5-4437-9430-ecc30421f1c9
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4af63679437e0b128472d084a55f1ef24a93bc4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f530648c7dd772fb60148f4d755d4a4ffb420cbb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419963"
 ---
 # <a name="writelinestofile-task"></a>Задача WriteLinesToFile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Записывает пути указанных элементов в заданный текстовый файл.  
   
 ## <a name="task-parameters"></a>Параметры задачи  
@@ -74,9 +68,6 @@ ms.locfileid: "49301851"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

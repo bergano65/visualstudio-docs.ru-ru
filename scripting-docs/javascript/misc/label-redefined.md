@@ -1,14 +1,9 @@
 ---
-title: Метка переопределена | Документы Microsoft
-ms.custom: ''
+title: Метка переопределена | Документация Майкрософт
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1025
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aff2415c08718e8b4ee82f817de337c9cda80f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a5c6f44124ff49982d3821b1441eacf8dec7a666
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006997"
 ---
 # <a name="label-redefined"></a>Метка переопределена
-Создать новую метку, но ему было присвоено имя существующей метки. Метки могут использоваться для пометки блоков кода, но в пределах указанной области, должны быть уникальными.  
+Вы создали новую метку, но ему было присвоено имя существующей метки. Метки могут использоваться для обозначения блоки кода, но в пределах указанной области, они должны быть уникальными.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Убедитесь, уникальный в своих областях все метки, которые использовать в программах.  
+- Убедитесь, что все метки, которые можно использовать в программах уникальны в соответствующих областях.  
   
 ## <a name="see-also"></a>См. также  
  [Оператор с меткой](../../javascript/reference/labeled-statement-javascript.md)   

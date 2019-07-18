@@ -1,24 +1,20 @@
 ---
-title: Персонализация интегрированной среды разработки | Документация Майкрософт
-ms.custom: ''
+title: Настройка интегрированной среды разработки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c2fec4ce-3885-4c4c-ace2-14c197e11079
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e38c7c578fd23e1f141721868a111e796afc9365
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: dbdeb2188580c9be67cbca992a8513c509d5514e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540229"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Персонализация интегрированной среды разработки Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +36,10 @@ ms.locfileid: "53916784"
  Сведения о создании настраиваемой начальной страницы для пользователя и команды см. в статье [Настройка начальной страницы](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ### <a name="environment-color-themes"></a>Цветовые темы среды
- Чтобы изменить цветовую тему на светлую, темную или синюю, введите "environment" на панели **Быстрый запуск** и выберите **Среда | Общие**. Чтобы изменить параметры раскраски в редакторе, введите `environment` на панели **Быстрый запуск** и выберите **Среда | Шрифты и цвета**. См. также [Практическое руководство. Изменение шрифтов и цветов](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+ Чтобы изменить цветовую тему на светлую, темную или синюю, введите "environment" на панели **Быстрый запуск** и выберите **Среда | Общие**. Чтобы изменить параметры раскраски в редакторе, введите `environment` на панели **Быстрый запуск** и выберите **Среда | Шрифты и цвета**. См. [Практическое руководство. Изменение шрифтов и цветов](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="menus-and-toolbars"></a>Меню и панели инструментов
- Сведения о добавлении или удалении элементов меню или панели инструментов см. в разделе [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Сведения о добавлении или удалении элементов меню или панели инструментов см. в статье [Практическое руководство. Настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Регистр главного меню
  Регистр главного меню можно переключать в режимы **Начинать с прописных** и **ВСЕ ПРОПИСНЫЕ**. Для этого введите `environment` на панели **Быстрый запуск** и выберите **Среда | Общие**.

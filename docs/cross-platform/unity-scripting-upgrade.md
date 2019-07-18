@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 294f3efe5e541a316a8bb90da07d75e9319e7983
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 82556ea0ed043c11cb9098383daf912ff17372ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818434"
 ---
 # <a name="using-net-4x-in-unity"></a>Использование .NET 4.x в Unity
 
@@ -24,7 +24,7 @@ C# и .NET, технологии, лежащие в основе базовых 
 ## <a name="prerequisites"></a>Предварительные требования
 
 * [Unity 2017.1 или более поздней версии](https://unity3d.com/) (рекомендуется 2018.2)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ## <a name="enabling-the-net-4x-scripting-runtime-in-unity"></a>Включение среды выполнения сценариев .NET 4.x в Unity
 

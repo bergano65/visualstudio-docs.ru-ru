@@ -1,7 +1,6 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", \"Расширение файла\""
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.File_Extension
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a15484883128e138621795a903d036f3e4804a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 412a8489c3d7092aa87803f7dd3af5c7495b17a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778623"
 ---
 # <a name="options-text-editor-file-extension"></a>"Параметры", "Текстовый редактор", "Расширение файла"
 

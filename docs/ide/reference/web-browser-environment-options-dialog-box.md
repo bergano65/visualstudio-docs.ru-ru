@@ -1,7 +1,6 @@
 ---
 title: Страница "Браузер", папка "Среда", диалоговое окно "Параметры"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
@@ -10,7 +9,6 @@ f1_keywords:
 helpviewer_keywords:
 - browsers, customizing
 - searching, search page for Web browser
-- Visual Studio Start page, default URL
 - Web browsers, customizing
 - searches, default Web browser search page
 - URLs, specifying VS home page
@@ -20,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bdfc727e3214292aade933abde6d6671c4b02fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788958"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Страница "Браузер", папка "Среда", диалоговое окно "Параметры"
+# <a name="options-dialog-box-environment--web-browser"></a>Диалоговое окно "Параметры": Страница "Веб-браузер" \> папка "Среда"
 
 Задает параметры для внутреннего веб-браузера и для Internet Explorer. Для доступа к этому диалоговому окну щелкните элемент **Параметры** в меню **Сервис**, разверните папку **Среда** и выберите **Веб-браузер**.
 
@@ -52,11 +50,11 @@ ms.locfileid: "53955163"
 
 Задает редактор, используемый для открытия веб-страницы при выборе команды **Просмотреть исходный код** на странице из внутреннего веб-браузера.
 
--   **Редактор исходного текста**. Выберите для просмотра исходного кода в [редакторе](../../ide/writing-code-in-the-code-and-text-editor.md).
+- **Редактор исходного текста**. Выберите для просмотра исходного кода в [редакторе](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Редактор HTML**. Выберите для просмотра исходного кода в [конструкторе HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Используйте этот вариант, чтобы изменить веб-страницу в одном из двух представлений: представление конструктора или стандартное текстовое представление исходного кода.
+- **Редактор HTML**. Выберите для просмотра исходного кода в [конструкторе HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Используйте этот вариант, чтобы изменить веб-страницу в одном из двух представлений: представление конструктора или стандартное текстовое представление исходного кода.
 
--   **Внешний редактор**. Выберите для просмотра источника в другом редакторе. Укажите путь к любому редактору, например Notepad.exe.
+- **Внешний редактор**. Выберите для просмотра источника в другом редакторе. Укажите путь к любому редактору, например Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Параметры Internet Explorer
 

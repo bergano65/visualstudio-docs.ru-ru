@@ -1,14 +1,9 @@
 ---
 title: Функция SccGetCommandOptions | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetCommandOptions
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 10f47a193a3ff47412249e094c1c9364653350ae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 55d4d2cae73dd77fc601ca85ab45d969fc0e4de8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432413"
 ---
 # <a name="sccgetcommandoptions-function"></a>Функция SccGetCommandOptions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Выполнено.|  
 |SCC_I_ADV_SUPPORT|Подключаемый модуль системы управления версиями поддерживает дополнительные параметры для команды.|  
@@ -80,9 +75,8 @@ SCCRTN SccGetCommandOptions(
  Наконец, когда пользователь щелкает **ОК** в интегрированной среде разработки **получить** диалоговое окно, интегрированная среда разработки вызывает [SccGet](../extensibility/sccget-function.md), передачи структуры, возвращаемые в `ppvOptions` , содержащий Дополнительные параметры.  
   
 > [!NOTE]
->  Команда `SCC_COMMAND_OPTIONS` используется, когда интегрированная среда разработки отображает **параметры** диалоговое окно, которое позволяет пользователю задать параметры, определяющие работы интеграции. Если указать собственное диалоговое окно установки подключаемого модуля системы управления версиями, его можно отобразить из **Дополнительно** кнопку в диалоговое окно настроек интегрированной среды разработки. Подключаемый модуль не отвечает за получение и сохранять эти данные; Интегрированная среда разработки не использовать его, или измените ее.  
+> Команда `SCC_COMMAND_OPTIONS` используется, когда интегрированная среда разработки отображает **параметры** диалоговое окно, которое позволяет пользователю задать параметры, определяющие работы интеграции. Если указать собственное диалоговое окно установки подключаемого модуля системы управления версиями, его можно отобразить из **Дополнительно** кнопку в диалоговое окно настроек интегрированной среды разработки. Подключаемый модуль не отвечает за получение и сохранять эти данные; Интегрированная среда разработки не использовать его, или измените ее.  
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
  [Код команды](../extensibility/command-code-enumerator.md)
-

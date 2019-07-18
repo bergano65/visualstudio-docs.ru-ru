@@ -1,14 +1,9 @@
 ---
-title: 'CA2219: Не вызывайте исключения в предложениях исключений | Документация Майкрософт'
-ms.custom: ''
+title: CA2219. Не вызывайте исключения в предложениях исключений | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotRaiseExceptionsInExceptionClauses
 - CA2219
@@ -20,14 +15,14 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2b5f08043985b6a2eb2b5fe0267fefb58ad00587
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 506b9d243ef83242b7e17c295dfc13ef9039d1f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201625"
 ---
-# <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: не создавайте исключения в предложениях исключений
+# <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219. В предложениях с исключениями не должны порождаться исключения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -54,10 +49,7 @@ ms.locfileid: "49891184"
  Не отключайте предупреждение для этого правила. Существуют не сценарии, при которых исключения, возникающие в предложении исключения предоставляет преимущество в исполняемый код.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1065: не вызывайте исключения в непредвиденных местах](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
+ [CA1065: Не вызывайте исключения в непредвиденных местах](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
 ## <a name="see-also"></a>См. также
  [Предупреждения конструктора](../code-quality/design-warnings.md)
-
-
-

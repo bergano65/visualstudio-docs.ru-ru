@@ -1,14 +1,9 @@
 ---
 title: Создание и использование политик возврата с анализом кода | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: 3fa5a849-e05f-4e31-8ba3-b014c889d94d
@@ -16,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a8015eb672e87431a1d225221ff2321c41e041a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238359"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697049"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Создание и использование политик возврата с анализом кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,12 +26,12 @@ ms.locfileid: "49238359"
  Политика выполняется, если локальное построение актуально и анализ кода был выполнен в самым последним исходным файлам. Как минимум правила анализа кода, которые включены в проект кода может содержать те же правила, которые определены в политике возврата проекта team. Правила, которые были указаны как ошибки в параметрах командного проекта также должен быть указан как ошибки в проекте кода  
   
 > [!IMPORTANT]
->  Политик возврата с анализом кода нельзя применять к проектам веб-сайта. Они могут применяться для проектов веб-приложений.  
+> Политик возврата с анализом кода нельзя применять к проектам веб-сайта. Они могут применяться для проектов веб-приложений.  
   
  Создание кода политик возврата с анализом, используя параметры командного проекта [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Политики возврата задаются и применяются для командного проекта, но выполнение анализа кода настраиваются и запускаются для отдельных проектов кода на локальных компьютерах разработчиков. В этом разделе описывается, как указать возврат политик с анализом кода для командного проекта и как реализовать пользовательские политики анализа управляемого кода.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Практическое руководство. Создание или обновление стандартных политик возврата с анализом кода](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)  
+ [Практическое руководство. Создание или обновление стандартных политик анализом кода возврата](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)  
  Описание действий, которые позволяют устанавливать и изменять политики анализа кода для командного проекта.  
   
  [Реализация пользовательских политик возврата для управляемого кода](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)  
@@ -49,9 +44,6 @@ ms.locfileid: "49238359"
  Описание способов добавления слов и токенов в словарь, упоминаемый в правилах именования анализа кода.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Установка и внедрение системы контроля качества](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
+ [Установка и внедрение системы контроля качества](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
   
  [Улучшение качества кода с помощью политик возврата командного проекта](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)
-
-
-

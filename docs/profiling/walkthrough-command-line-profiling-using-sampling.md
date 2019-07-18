@@ -8,15 +8,15 @@ helpviewer_keywords:
 - performance tools, command-line tools
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433616"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Пошаговое руководство. Профилирование из командной строки с помощью выборки
 
@@ -41,7 +41,7 @@ ms.locfileid: "53886813"
 Выборка — это метод профилирования, при котором конкретный процесс периодически опрашивается с целью определения активной функции. Полученные данные показывают, как часто функция находилась на вершине стека вызовов при выборочном опросе процесса.
 
 > [!NOTE]
->  Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.  
+> Сведения о пути к Средствам профилирования см. в статье [Указание пути к программам командной строки средств профилирования](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). На 64-разрядных компьютерах доступны 64- и 32-разрядные версии этих программ. Для использования программ командной строки профилировщика необходимо добавить путь к программам в переменную среды PATH окна командной строки или в саму команду.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Профилирование приложения PeopleTrax с помощью метода выборки
 
@@ -99,8 +99,8 @@ ms.locfileid: "53886813"
 
 ## <a name="see-also"></a>См. также
 
-[Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)  
-[Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)  
-[VSPerfCmd](../profiling/vsperfcmd.md)  
-[Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)  
+[Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)
+[Профиль из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[VSPerfCmd](../profiling/vsperfcmd.md)
+[Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)
 [Представления отчетов о производительности](../profiling/performance-report-views.md)

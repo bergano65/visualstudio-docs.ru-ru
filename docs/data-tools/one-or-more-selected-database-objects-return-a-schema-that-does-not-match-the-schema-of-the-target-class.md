@@ -5,16 +5,15 @@ ms.topic: reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 47ccdd1f79930fe29e5a213158462139c15bf0f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 1b9f10c171d8369adfe460424b9b6abe047b1a24
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944130"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458257"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Один или несколько выбранных объектов базы данных возвращает схему, не соответствующую схеме целевого класса
 
@@ -30,5 +29,4 @@ ms.locfileid: "53944130"
 
 ## <a name="see-also"></a>См. также
 
-- [Сообщения реляционного конструктора объектов](../data-tools/o-r-designer-messages.md)
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

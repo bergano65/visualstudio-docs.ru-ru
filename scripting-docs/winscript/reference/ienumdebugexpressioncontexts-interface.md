@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IEnumDebugExpressionContexts | Документы Microsoft
+title: Интерфейс IEnumDebugExpressionContexts | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f48a9bcf42b0aadd3716924e120bff403d87769d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0c257fe12f27bb5e6ffd5835986d0c7cac6193a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807378"
 ---
 # <a name="ienumdebugexpressioncontexts-interface"></a>Интерфейс IEnumDebugExpressionContexts
-Перечисляет коллекцию `IDebugExpressionContexts` объектов.  
+Перечисляет коллекцию объектов `IDebugExpressionContexts`.  
   
  Помимо методов, наследуемых от `IUnknown`, `IEnumDebugExpressionContexts` интерфейс предоставляет следующие методы.  
   
@@ -31,6 +30,6 @@ ms.locfileid: "24728364"
 |Метод|Описание|  
 |------------|-----------------|  
 |[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|Возвращает указанное количество сегментов в последовательности перечисления.|  
-|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|Пропускает указанное число сегментов в последовательности перечисления.|  
-|[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|Сбрасывает последовательность перечисления в начало.|  
-|[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|Создает перечислитель, который содержит том же состоянии, как у текущего перечислителя.|
+|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|Пропускает заданное число сегментов в последовательности перечисления.|  
+|[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|Сбрасывает последовательность перечислений в начало.|  
+|[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|Создает перечислитель с тем же состоянием, что и текущий перечислитель.|

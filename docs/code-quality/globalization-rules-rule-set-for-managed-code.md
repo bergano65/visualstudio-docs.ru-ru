@@ -1,20 +1,19 @@
 ---
 title: Набор правил "Правила глобализации" для управляемого кода
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 3c4032ee-0805-4581-8c48-b1827cd6b213
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a0c0eb4edfb58d740692f2afff187659a665b234
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28199eb9fa09e2096939ffa8e678eb9812a61b1f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816404"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Набор правил "Правила глобализации" для управляемого кода
 Можно использовать правила глобализации корпорации Майкрософт набора правил в основное внимание уделяется проблемам, которые могут препятствовать данных в приложении неправильно отображалось в разных языках, регионов и языков и региональных параметров. Следует включать этот набор, если приложение выполняется локализация, глобализация, правил или оба.

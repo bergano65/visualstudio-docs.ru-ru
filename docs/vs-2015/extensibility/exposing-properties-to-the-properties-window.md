@@ -1,14 +1,9 @@
 ---
 title: Предоставление доступа к свойствам, окно "Свойства" | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], exposing in Property Browser
 - properties [Visual Studio SDK]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 026e7de7d56cb907682be52db2dbd32782822d9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432132"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Предоставление свойств в окно свойств
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +32,11 @@ ms.locfileid: "51756914"
   
 #### <a name="to-expose-properties-to-the-properties-window"></a>Экспорт свойств в окне «Свойства»  
   
-1.  Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проект VSIX с именем `MyObjectPropertiesExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C# / Extensibility**.  
+1. Все расширения Visual Studio начинается с проект развертывания VSIX, который будет содержать средств расширения. Создание [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] проект VSIX с именем `MyObjectPropertiesExtension`. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C# / Extensibility**.  
   
-2.  Добавление окна инструментов, добавив шаблон элемента пользовательского окна инструментов с именем `MyToolWindow`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить / новый элемент**. В **диалоговое окно Add New Item**, перейдите в меню **элементы Visual C# / Extensibility** и выберите **пользовательского окна инструментов**. В **имя** в нижней части диалогового окна, измените имя файла для `MyToolWindow.cs`. Дополнительные сведения о создании пользовательского окна инструментов см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Добавление окна инструментов, добавив шаблон элемента пользовательского окна инструментов с именем `MyToolWindow`. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить / новый элемент**. В **диалоговое окно Add New Item**, перейдите в меню **элементы Visual C# / Extensibility** и выберите **пользовательского окна инструментов**. В **имя** в нижней части диалогового окна, измените имя файла для `MyToolWindow.cs`. Дополнительные сведения о создании пользовательского окна инструментов см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Откройте MyToolWindow.cs и добавьте следующий оператор using:  
+3. Откройте MyToolWindow.cs и добавьте следующий оператор using:  
   
     ```  
     using System.Collections;  
@@ -49,7 +44,7 @@ ms.locfileid: "51756914"
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-4.  Теперь добавьте следующие поля в `MyToolWindow` класса.  
+4. Теперь добавьте следующие поля в `MyToolWindow` класса.  
   
     ```csharp  
     private ITrackSelection trackSel;  
@@ -57,7 +52,7 @@ ms.locfileid: "51756914"
   
     ```  
   
-5.  Добавьте следующий код к классу MyToolWindow.  
+5. Добавьте следующий код к классу MyToolWindow.  
   
     ```csharp  
     private ITrackSelection TrackSelection  
@@ -96,11 +91,11 @@ ms.locfileid: "51756914"
   
      `TrackSelection` Используется в свойстве `GetService` для получения `STrackSelection` службу, которая обеспечивает <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> интерфейс. `OnToolWindowCreated` Обработчик событий и `SelectList` метод вместе создаст список выбранных объектов, содержащий только средство окно области самого объекта. `UpdateSelection` Метод указывает **свойства** окно для отображения открытых свойств панели окна инструментов.  
   
-6.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр Visual Studio.  
+6. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр Visual Studio.  
   
-7.  Если **свойства** окно не отображается, откройте его, нажав клавишу F4.  
+7. Если **свойства** окно не отображается, откройте его, нажав клавишу F4.  
   
-8.  Откройте **MyToolWindow** окна. Его можно найти в **представления / Other Windows**.  
+8. Откройте **MyToolWindow** окна. Его можно найти в **представления / Other Windows**.  
   
      Открывается окно и общедоступного свойства области окна в **свойства** окна.  
   
@@ -113,7 +108,7 @@ ms.locfileid: "51756914"
   
 #### <a name="to-expose-tool-window-properties"></a>Для предоставления свойства окна инструментов  
   
-1.  Откройте MyToolWindow.cs и добавьте в класс MyToolWindow открытый логическое свойство IsChecked.  
+1. Откройте MyToolWindow.cs и добавьте в класс MyToolWindow открытый логическое свойство IsChecked.  
   
     ```csharp  
     [Category("My Properties")]  
@@ -132,7 +127,7 @@ ms.locfileid: "51756914"
   
      Это свойство получает свое состояние из WPF флажок, который будет создан позже.  
   
-2.  Откройте MyToolWindowControl.xaml.cs и замените следующий код в конструктор MyToolWindowControl.  
+2. Откройте MyToolWindowControl.xaml.cs и замените следующий код в конструктор MyToolWindowControl.  
   
     ```vb  
     private MyToolWindow pane;  
@@ -146,19 +141,19 @@ ms.locfileid: "51756914"
   
      Это дает `MyToolWindowControl` доступ к `MyToolWindow` области.  
   
-3.  В MyToolWindow.cs, измените `MyToolWindow` конструктор следующим образом:  
+3. В MyToolWindow.cs, измените `MyToolWindow` конструктор следующим образом:  
   
     ```csharp  
     base.Content = new MyToolWindowControl(this);  
     ```  
   
-4.  Изменить в режиме конструктора MyToolWindowControl.  
+4. Изменить в режиме конструктора MyToolWindowControl.  
   
-5.  Кнопка "Удалить" и добавьте типа "флажок" из **элементов** верхний левый угол.  
+5. Кнопка "Удалить" и добавьте типа "флажок" из **элементов** верхний левый угол.  
   
-6.  Добавьте Checked и Unchecked события. Установите флажок в режиме конструктора. В **свойства** окно, нажмите кнопку обработчики событий (в верхней правой части **свойства** окна). Найти **Checked** и тип **checkbox_Checked** в текстовом поле, затем найдите **Unchecked** и тип **checkbox_Unchecked** в текстовом поле.  
+6. Добавьте Checked и Unchecked события. Установите флажок в режиме конструктора. В **свойства** окно, нажмите кнопку обработчики событий (в верхней правой части **свойства** окна). Найти **Checked** и тип **checkbox_Checked** в текстовом поле, затем найдите **Unchecked** и тип **checkbox_Unchecked** в текстовом поле.  
   
-7.  Добавление обработчиков событий флажок:  
+7. Добавление обработчиков событий флажок:  
   
     ```csharp  
     private void checkbox_Checked(object sender, RoutedEventArgs e)  
@@ -173,7 +168,7 @@ ms.locfileid: "51756914"
     }  
     ```  
   
-8.  Выполните сборку решения и запустите отладку.  
+8. Выполните сборку решения и запустите отладку.  
   
 9. В экспериментальном экземпляре откройте **MyToolWindow** окна.  
   
@@ -182,14 +177,14 @@ ms.locfileid: "51756914"
 10. Установите флажок **MyToolWindow** окна. **IsChecked** в **свойства** окна изменяется на **True**. Снимите флажок в **MyToolWindow** окна. **IsChecked** в **свойства** окна изменяется на **False**. Измените значение свойства **IsChecked** в **свойства** окна. Флажок в **MyToolWindow** окна меняется в соответствии с новым значением.  
   
     > [!NOTE]
-    >  Если необходимо уничтожить объект, который отображается в **свойства** окна, вызовите `OnSelectChange` с `null` контейнер выделения первой. После удаления, свойство или объект, можно изменить для контейнера выделения, который был обновлен <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> и <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> перечислены.  
+    > Если необходимо уничтожить объект, который отображается в **свойства** окна, вызовите `OnSelectChange` с `null` контейнер выделения первой. После удаления, свойство или объект, можно изменить для контейнера выделения, который был обновлен <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> и <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> перечислены.  
   
 ## <a name="changing-selection-lists"></a>Изменение списков выбора  
  В этом разделе добавьте список выбора для основных свойств класса и используйте интерфейс окна инструментов, чтобы выбрать список выбора для отображения.  
   
 #### <a name="to-change-selection-lists"></a>Чтобы изменить списки выбора  
   
-1.  Откройте MyToolWindow.cs и добавьте открытый класс с именем `Simple`.  
+1. Откройте MyToolWindow.cs и добавьте открытый класс с именем `Simple`.  
   
     ```csharp  
     public class Simple  
@@ -214,7 +209,7 @@ ms.locfileid: "51756914"
     }  
     ```  
   
-2.  Добавить свойство SimpleObject класс MyToolWindow, а также два метода для переключения **свойства** выбора окна между область окна и `Simple` объекта.  
+2. Добавить свойство SimpleObject класс MyToolWindow, а также два метода для переключения **свойства** выбора окна между область окна и `Simple` объекта.  
   
     ```csharp  
     private Simple simpleObject = null;  
@@ -242,7 +237,7 @@ ms.locfileid: "51756914"
     }  
     ```  
   
-3.  Замените обработчики "флажок" в файл MyToolWindowControl.cs, эти строки кода:  
+3. Замените обработчики "флажок" в файл MyToolWindowControl.cs, эти строки кода:  
   
     ```csharp  
     private void checkbox_Checked(object sender, RoutedEventArgs e)  
@@ -259,14 +254,14 @@ ms.locfileid: "51756914"
     }  
     ```  
   
-4.  Выполните сборку решения и запустите отладку.  
+4. Выполните сборку решения и запустите отладку.  
   
-5.  В экспериментальном экземпляре откройте **MyToolWindow** окна.  
+5. В экспериментальном экземпляре откройте **MyToolWindow** окна.  
   
-6.  Установите флажок в **MyToolWindow** окна. **Свойства** окно отображает `Simple` объект свойства, **SomeText** и **ReadOnly**. Снимите флажок. Открытые свойства окна отображаются в **свойства** окна.  
+6. Установите флажок в **MyToolWindow** окна. **Свойства** окно отображает `Simple` объект свойства, **SomeText** и **ReadOnly**. Снимите флажок. Открытые свойства окна отображаются в **свойства** окна.  
   
     > [!NOTE]
-    >  Отображаемое имя **SomeText** — **текст моего**.  
+    > Отображаемое имя **SomeText** — **текст моего**.  
   
 ## <a name="best-practice"></a>Рекомендации  
  В этом пошаговом руководстве <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> реализуется так, доступный для выбора объект коллекции и коллекции выбранного объекта и той же коллекции. Только выбранный объект отображается в списке обозревателя свойств. Более полная реализация ISelectionContainer см. в примерах Reference.toolwindow на языке.  
@@ -275,4 +270,3 @@ ms.locfileid: "51756914"
   
 ## <a name="see-also"></a>См. также  
  [Расширение свойств и окна свойств](../extensibility/extending-properties-and-the-property-window.md)
-

@@ -2,38 +2,51 @@
 title: Создание первого консольного приложения на C# в Visual Studio
 titleSuffix: ''
 description: Ознакомьтесь с пошаговыми инструкциями по созданию простого консольного приложения "Hello World" на C# в Visual Studio.
-ms.date: 09/21/2018
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
+ms.date: 03/23/2019
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b36051f3a316f2b00ebdd08110f22346a910512
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 34e943984755ff1f36f8a28134e1e2abde4312d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954133"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Краткое руководство. Создание первого консольного приложения на C# в Visual Studio
 
 Изучение этого ознакомительного руководства по возможностям интегрированной среды разработки Visual Studio (IDE) займет 5–10 минут. В его рамках вы создадите простое приложение на C#, выполняющееся в консоли.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+::: moniker range="vs-2017"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Создание проекта
 
 Сначала вы создадите проект приложения на C#. Для этого типа проекта уже имеются все нужные файлы шаблонов, что избавляет вас от лишней работы.
 
+::: moniker range="vs-2017"
+
 1. Откройте Visual Studio 2017.
 
-2. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
+2. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
 3. В левой области диалогового окна **Новый проект** разверните узел **C#** и выберите **.NET Core**. На средней панели выберите **Консольное приложение (.NET Core)**. Назовите проект *HelloWorld*.
 
@@ -47,11 +60,56 @@ ms.locfileid: "53853922"
 
      ![Рабочая нагрузка "Кроссплатформенная разработка .NET Core" в Visual Studio Installer](../ide/media/dot-net-core-xplat-dev-workload.png)
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Запустите Visual Studio 2019.
+
+1. На начальном экране выберите **Создать проект**.
+
+   ![Окно "Создание проекта"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. В поле поиска окна **Создание проекта** введите *консоль*. Затем выберите **C#** в списке языков и **Windows** в списке платформ. 
+
+   Применив фильтры языка и платформы, выберите шаблон **Консольное приложение (.NET Core)** и нажмите кнопку **Далее**.
+
+   ![Выбор шаблона C# для консольного приложения (.NET Framework)](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Если шаблон **Консольное приложение (.NET Core)** отсутствует, его можно установить из окна **Создание проекта**. В сообщении **Не нашли то, что искали?** выберите ссылку **Установка других средств и компонентов**.
+   >
+   > ![Ссылка "Установка других средств и компонентов" из сообщения "Не нашли то, что искали?" в окне "Создание проекта"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > После этого в Visual Studio Installer выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core**.
+   >
+   > ![Рабочая нагрузка "Кроссплатформенная разработка .NET Core" в Visual Studio Installer](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Затем нажмите кнопку **Изменить** в Visual Studio Installer. Вам может быть предложено сохранить результаты работы; в таком случае сделайте это. Выберите **Продолжить**, чтобы установить рабочую нагрузку. После этого вернитесь к шагу 2 в процедуре [Создание проекта](#create-a-project).
+
+1. В поле **Имя проекта** окна **Настроить новый проект** введите *HelloWorld*. Затем нажмите **Создать**.
+
+   ![В окне "Настроить новый проект" назовите проект "HelloWorld"](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
+
+   Новый проект открывается в Visual Studio.
+   
+::: moniker-end
+
 ## <a name="create-the-application"></a>Создание приложения
 
-Когда вы выберете шаблон проекта на C# и зададите имя проекта, Visual Studio создаст простое приложение "Hello World". 
+::: moniker range="vs-2017"
 
-(Visual Studio вызывает метод <xref:System.Console.WriteLine%2A> для отображения строкового литерала "Hello World!" в окне консоли.)
+Когда вы выберете шаблон проекта на C# и зададите имя проекта, Visual Studio создаст простое приложение "Hello World".
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio включает код по умолчанию "Hello World" в проект.
+
+::: moniker-end
+
+(Для этого Visual Studio вызывает метод <xref:System.Console.WriteLine%2A> для отображения строкового литерала "Hello World!" в окне консоли.)
 
    ![Просмотр кода "Hello World" по умолчанию на основе шаблона](../ide/media/csharp-console-helloworld-template.png)
 

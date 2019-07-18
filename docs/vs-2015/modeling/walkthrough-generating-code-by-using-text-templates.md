@@ -1,12 +1,9 @@
 ---
-title: 'Пошаговое руководство: Создание кода с помощью текстовых шаблонов | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание кода с помощью текстовых шаблонов | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -14,13 +11,13 @@ ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446701"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Пошаговое руководство. Создание кода с помощью текстовых шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +30,7 @@ ms.locfileid: "49932557"
  В данном примере проекта шаблон считывает пример файла XML и создает классы, соответствующие каждому типу узла. В написанном вручную коде эти классы можно использовать для перехода по XML-файлу. Можно также запустить приложение для любых других файлов, использующих те же типы узлов. Пример XML-файла служит для предоставления примеров всех типов узлов, с которыми должно работать ваше приложение.  
   
 > [!NOTE]
->  Приложение [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), входящее в состав [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], может создавать строго типизированные классы из XML-файлов. Показанный здесь шаблон представлен в качестве примера.  
+> Приложение [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), входящее в состав [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], может создавать строго типизированные классы из XML-файлов. Показанный здесь шаблон представлен в качестве примера.  
   
  Ниже приведен пример файла:  
   
@@ -89,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>Создание проекта  
   
-1.  В меню **Файл** последовательно выберите пункты **Создать** и **Проект**.  
+1. В меню **Файл** последовательно выберите пункты **Создать** и **Проект**.  
   
-2.  Выберите узел **Visual C#** а затем в области **Шаблоны** щелкните **Консольное приложение**.  
+2. Выберите узел **Visual C#** а затем в области **Шаблоны** щелкните **Консольное приложение**.  
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Добавление XML-файла прототипа в проект  
  Этот файл служит для предоставления примеров всех типов узлов XML, которые ваше приложение должно уметь считывать. Это может быть файл, который будет использоваться для тестирования приложения. Шаблон создаст класс C# для каждого типа узла в этом файле.  
@@ -145,7 +142,7 @@ namespace MyProject
 2. В диалоговом окне **Добавление нового элемента** выберите в области **Шаблоны** элемент **Текстовый шаблон**.  
   
    > [!NOTE]
-   >  Убедитесь, что добавляется именно текстовый шаблон, а не предварительно преобразованный текстовый шаблон.  
+   > Убедитесь, что добавляется именно текстовый шаблон, а не предварительно преобразованный текстовый шаблон.  
   
 3. В директиве template файла измените значение атрибута `hostspecific` на `true`.  
   
@@ -426,6 +423,3 @@ namespace MyProject
 ## <a name="see-also"></a>См. также  
  [Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)
-
-
-

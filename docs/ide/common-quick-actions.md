@@ -1,22 +1,21 @@
 ---
 title: Распространенные быстрые действия
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2491ba0968f60f5e67e9829a19994b7d4cbe7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6f8872fa9acb2ca79010a87168c629dcbc3ac6e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976515"
 ---
 # <a name="common-quick-actions"></a>Распространенные быстрые действия
 
@@ -449,7 +448,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Преобразование в интерполированную строку
 
-[Интерполированные строки](/dotnet/csharp/language-reference/keywords/interpolated-strings) позволяют легко выразить строки с внедренными переменными по аналогии с методом **[String.Format](/dotnet/api/system.string.format#overloads)**.  Это быстрое действие распознает использование сцепленных строк или оператора **String.Format** и переключается на использование интерполированной строки.
+[Интерполированные строки](/dotnet/csharp/language-reference/keywords/interpolated-strings) позволяют легко выразить строки с внедренными переменными по аналогии с методом **[String.Format](/dotnet/api/system.string.format#overloads)** .  Это быстрое действие распознает использование сцепленных строк или оператора **String.Format** и переключается на использование интерполированной строки.
 
 ```csharp
 // Before

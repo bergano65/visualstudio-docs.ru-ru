@@ -1,0 +1,110 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: "Документация по Visual\_Studio для Mac"
+metadata:
+  description: "Эта статья знакомит с возможностями Visual\_Studio 2017 для\_Mac."
+  author: conceptdev
+  ms.author: crdun
+  ms.date: 02/06/2019
+  ms.topic: landing-page
+  ms.prod: visual-studio-mac
+  ms.technology: vs-ide-general
+sections:
+  - title: Начало работы с Visual Studio для Mac
+    items:
+      - type: paragraph
+        text: "Установка и использование интегрированной среды разработки\_(IDE) Visual\_Studio для\_Mac."
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: installation.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: Установка Visual Studio для Mac
+          - href: ide-tour.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vs-mac.svg'
+            title: "Обзор Visual\_Studio для\_Mac"
+  - title: Какие приложения я могу создавать?
+    items:
+      - type: paragraph
+        text: "В Visual\_Studio для\_Mac вы можете создавать веб-сайты с помощью ASP.NET\_Core, приложения с использованием .NET\_Core, игры на базе Unity и мобильные приложения для Android и iOS на базе\_Xamarin. При этом любые приложения поддерживают интеграцию с\_Azure."
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
+            text: ASP.NET Core
+            href: asp-net-core.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
+            text: Azure
+            href: azure-workload.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_unity.svg'
+            text: Unity
+            href: unity-tools.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_xamarin.svg'
+            text: Xamarin
+            href: xamarin.md
+  - title: Какие языки я могу использовать?
+    items:
+      - type: paragraph
+        text: "Visual\_Studio для\_Mac поддерживает написание кода на C#, F#, Razor, HTML5, CSS, Javascript, Typescript, XAML и XML."
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Csharp.svg'
+            text: 'C#'
+            href: /dotnet/csharp/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_Fsharp.svg'
+            text: 'F#'
+            href: /dotnet/fsharp/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_js.svg'
+            text: JavaScript
+            href: javascript.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_TS.svg'
+            text: TypeScript
+            href: javascript.md
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_html5.svg'
+            text: HTML/Razor
+            href: razor.md
+  - title: "Написание кода в Visual\_Studio для\_Mac"
+    items:
+      - type: paragraph
+        text: "Сведения о написании, компиляции, отладке и хранении кода в Visual\_Studio."
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: source-editor.md
+            html: '<p>Используйте IntelliSense, рефакторинг и выделение синтаксиса для вашего любимого языка.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+            title: Написание кода
+          - href: compiling-and-building.md
+            html: <p>Настройте компилятор и создайте приложение.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: Компиляция и сборка
+          - href: debugging.md
+            html: <p>Запустите приложение в отладчике для анализа проблем.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
+            title: Отладка
+          - href: version-control.md
+            html: "<p>Доступ к репозиториям исходного кода Azure\_DevOps, Git или Subversion.</p>"
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
+            title: Управление версиями

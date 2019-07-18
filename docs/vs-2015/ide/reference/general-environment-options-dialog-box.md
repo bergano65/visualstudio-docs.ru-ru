@@ -1,14 +1,9 @@
 ---
 title: Страница "Общие", папка "Среда", диалоговое окно "Параметры" | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -31,28 +26,27 @@ ms.assetid: 90fc2e6f-572f-4384-96d8-5678299ce58e
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 967036aa0aedef2f789a1352e213079270f70339
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0725b2bdd14a89103b2695c7e4f1d3b0bbf77b7c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206886"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676462"
 ---
 # <a name="general-environment-options-dialog-box"></a>Страница "Общие", папка "Среда", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Используйте эту страницу для изменения цветовых тем, параметров строки состояния, сопоставлений расширений файлов и т. д. для интегрированной среды разработки (IDE). Чтобы открыть диалоговое окно **Параметры**, щелкните меню **Сервис**, выберите **Параметры**, откройте папку **Среда** и выберите страницу **Общие**. Если этой страницы нет в списке, установите флажок **Показать все параметры** в диалоговом окне **Параметры**.  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров**. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="visual-experience"></a>Визуальное представление  
  **Цветовая тема**  
  Для интегрированной среды разработки можно выбрать **синюю**, **светлую** или **темную** цветовую тему.  
   
- Можно установить дополнительные предопределенные темы и создать пользовательские темы, загрузив и установив **редактор цветовых тем Visual Studio 2015** из [коллекции Visual Studio](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools). После установки этого средства в списке «Цветовая тема» появятся дополнительные темы.  
+ Вы можете устанавливать дополнительные предопределенные темы и создавать пользовательские темы, скачав и установив **редактор цветовых тем Visual Studio 2015** из [Visual Studio Marketplace](https://marketplace.visualstudio.com). После установки этого средства в списке «Цветовая тема» появятся дополнительные темы.  
   
  Применение регистра заголовков в строке меню  
  По умолчанию меню в Visual Studio 2015 используют **регистр заголовков**. Отмените этот параметр, чтобы задать **ВСЕ ПРОПИСНЫЕ БУКВЫ**.  
@@ -90,6 +84,3 @@ ms.locfileid: "49206886"
 ## <a name="see-also"></a>См. также  
  [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)   
  [Настройка макетов окон](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
-title: Практическое руководство. Выборка данных на уровне строк | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Выборка данных на уровне строк | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 21ef50736e00bd835b4e1bc88530d2aaef30ee82
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185954"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Практическое руководство. Выборка данных на уровне строк
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +52,12 @@ ms.locfileid: "51767546"
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Отключение выборки на уровне строк для управляемого кода  
  По умолчанию выборка на уровне строк включена. Сбор данных на уровне строк для управляемого кода можно отключить, выполнив одно из следующих действий.  
   
--   Перед профилированием введите команду **VSPerfCLREnv /samplelineoff**. Это влияет на приложения и службы.  
+- Перед профилированием введите команду **VSPerfCLREnv /samplelineoff**. Это влияет на приложения и службы.  
   
      Или...  
   
--   При запуске приложения введите команду **VSPerfCmd /lineoff \<другие аргументы>**.  
+- При запуске приложения введите команду **VSPerfCmd /lineoff \<другие аргументы>** .  
   
 ## <a name="see-also"></a>См. также  
  [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)   
  [Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)
-
-
-

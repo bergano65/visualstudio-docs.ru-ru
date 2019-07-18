@@ -2,7 +2,6 @@
 title: Интерфейсы отладчика активных скриптов | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -15,18 +14,18 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f260df5a23ef6b5ef6ef7253726b1fea7bc00269
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422460"
 ---
 # <a name="active-script-debugger-interfaces"></a>Интерфейсы отладчика активных скриптов
 Файлы заголовков activdbg.h и activdbg100.h предоставляют интерфейсы, перечисления и структуры, перечисленные в этом разделе. Они предназначены для отладки скрипта.  
   
 > [!NOTE]
->  `IJSDebug*` Интерфейсы и `IEnumJsStackFrames` интерфейс сначала были выпущены в Internet Explorer 11 для отладки машинного кода с помощью скрипта. Файл заголовка для этих интерфейсов является jscript9diag.h.  
+> `IJSDebug*` Интерфейсы и `IEnumJsStackFrames` интерфейс сначала были выпущены в Internet Explorer 11 для отладки машинного кода с помощью скрипта. Файл заголовка для этих интерфейсов является jscript9diag.h.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  Следующие интерфейсы отладки не зависящий от языка, зависящий от узла:  

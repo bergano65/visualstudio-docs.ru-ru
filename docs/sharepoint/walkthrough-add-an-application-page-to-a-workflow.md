@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, adding applications page to workflow
 - application page [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409547"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Пошаговое руководство. Добавление страницы приложения в рабочий процесс
   В этом пошаговом руководстве демонстрируется добавление страницы приложения, отображаются данные, извлекаемые из рабочего процесса в проект рабочего процесса. Оно основано на проекте, описанную в разделе [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -38,22 +38,22 @@ ms.locfileid: "53938203"
 ## <a name="prerequisites"></a>Предварительные требования
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
--   Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.
+- Поддерживаемые выпуски [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] и SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   Необходимо также выполнить для завершения проекта в разделе [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+- Необходимо также выполнить для завершения проекта в разделе [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend код рабочего процесса
  Во-первых добавьте строку кода в рабочий процесс, чтобы задать значение столбца результата к объему отчета о расходах. Это значение используется далее в сводки отчета о расходах.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Чтобы задать значение столбца результата в рабочем процессе
 
-1.  Загрузите проект из раздела [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Загрузите проект из раздела [Пошаговое руководство: Создание рабочего процесса с формами связывания и запуска](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Откройте код *Workflow1.cs* или *Workflow1.vb* (в зависимости от используемого языка программирования).
+2. Откройте код *Workflow1.cs* или *Workflow1.vb* (в зависимости от используемого языка программирования).
 
-3.  В нижнюю часть `createTask1_MethodInvoking` метод, добавьте следующий код:
+3. В нижнюю часть `createTask1_MethodInvoking` метод, добавьте следующий код:
 
     ```vb
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =
@@ -70,11 +70,11 @@ ms.locfileid: "53938203"
 
 #### <a name="to-add-an-application-page-to-the-project"></a>Добавление страницы приложения в проект
 
-1.  Выберите проект ExpenseReport, а затем в строке меню выберите **проекта** > **Добавление нового элемента**.
+1. Выберите проект ExpenseReport, а затем в строке меню выберите **проекта** > **Добавление нового элемента**.
 
-2.  В **шаблоны** панели выберите **страницы приложения** шаблона, используйте имя по умолчанию для элемента проекта (**ApplicationPage1.aspx**) и выберите **Добавить** кнопки.
+2. В **шаблоны** панели выберите **страницы приложения** шаблона, используйте имя по умолчанию для элемента проекта (**ApplicationPage1.aspx**) и выберите **Добавить** кнопки.
 
-3.  В [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx, замените `PlaceHolderMain` раздел со следующими:
+3. В [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ApplicationPage1.aspx, замените `PlaceHolderMain` раздел со следующими:
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -88,7 +88,7 @@ ms.locfileid: "53938203"
 
      Этот код добавляет таблицу на страницу с заголовком.
 
-4.  Добавление заголовка к странице приложения, заменив `PlaceHolderPageTitleInTitleArea` раздел со следующими:
+4. Добавление заголовка к странице приложения, заменив `PlaceHolderPageTitleInTitleArea` раздел со следующими:
 
     ```aspx-csharp
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >
@@ -101,9 +101,9 @@ ms.locfileid: "53938203"
 
 #### <a name="to-code-the-application-page"></a>Код страницы приложения
 
-1.  Выберите **ApplicationPage1.aspx** узел, а затем в строке меню выберите **представление** > **кода** для отображения кода страницы приложения.
+1. Выберите **ApplicationPage1.aspx** узел, а затем в строке меню выберите **представление** > **кода** для отображения кода страницы приложения.
 
-2.  Замените **с помощью** или **импорта** инструкций (в зависимости от используемого языка программирования) в верхней части класса на следующее:
+2. Замените **с помощью** или **импорта** инструкций (в зависимости от используемого языка программирования) в верхней части класса на следующее:
 
     ```vb
     Imports System
@@ -131,7 +131,7 @@ ms.locfileid: "53938203"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  Добавьте следующий код в метод `Page_Load`:
+3. Добавьте следующий код в метод `Page_Load`:
 
     ```vb
     Try
@@ -295,7 +295,7 @@ ms.locfileid: "53938203"
     ```
 
     > [!WARNING]
-    >  Обязательно замените "TestServer" в коде на допустимое имя сервера с SharePoint.
+    > Обязательно замените "TestServer" в коде на допустимое имя сервера с SharePoint.
 
 ## <a name="test-the-application-page"></a>Тестирование страницы приложения
  Затем определите ли на странице приложения правильно отображает данные о затратах.
@@ -343,9 +343,9 @@ ms.locfileid: "53938203"
 
  Дополнительные сведения о разработке содержимого страниц SharePoint с помощью Visual Web Designer в Visual Studio в следующих разделах:
 
--   [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
+- [Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
--   [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
+- [Создание многократно используемых элементов управления для веб-частей или страниц приложений](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
 ## <a name="see-also"></a>См. также
 

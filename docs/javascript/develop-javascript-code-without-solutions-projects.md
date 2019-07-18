@@ -8,33 +8,32 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960582"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Разработка кода JavaScript и TypeScript в Visual Studio без решений или проектов
 
-Visual Studio 2017 представляет возможность [разрабатывать код без проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md). Вы можете открыть папку кода и сразу же приступить к работе в полнофункциональном редакторе, используя IntelliSense, поиск, рефакторинг, отладку и многое другое.
-Помимо этих функций, в инструменты Node.js для Visual Studio добавлена поддержка сборки файлов TypeScript, управления пакетами npm и выполнения сценариев npm.
+Начиная с Visual Studio 2017 вы можете [разрабатывать код без проектов и решений](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md). Вы можете открыть папку кода и сразу же приступить к работе в полнофункциональном редакторе, используя IntelliSense, поиск, рефакторинг, отладку и многое другое. Помимо этих функций, в инструменты Node.js для Visual Studio добавлена поддержка сборки файлов TypeScript, управления пакетами npm и выполнения сценариев npm.
 
-Чтобы приступить к работе, нажмите **Открыть папку** на начальной странице, которая отображается при открытии Visual Studio, или выберите **Файл** > **Открыть** > **Папка** на панели инструментов. Обозреватель решений отображает все файлы в папке, и можно открыть любой из файлов, чтобы начать редактирование. В фоновом режиме Visual Studio индексирует файлы, предоставляя функции npm, сборки и отладки.
+Чтобы приступить к работе, выберите **Файл** > **Открыть** > **Папку** на панели инструментов. Обозреватель решений отображает все файлы в папке, и можно открыть любой из файлов, чтобы начать редактирование. В фоновом режиме Visual Studio индексирует файлы, предоставляя функции npm, сборки и отладки.
 
 > [!IMPORTANT]
-> Многие функции, описанные в этой статье, включая интеграцию npm, требуют Visual Studio 2017 версии 15.8.
+> Многие функции, описанные в этой статье, включая интеграцию npm, требуют Visual Studio 2017 версии 15.8 или более поздней.
 
 ## <a name="npm-integration"></a>Интеграция npm
 
-Если открытая папка содержит файл *package.json*, щелкните правой кнопкой мыши *package.json*, чтобы открыть контекстное меню для npm. 
+Если открытая папка содержит файл *package.json*, щелкните правой кнопкой мыши *package.json*, чтобы открыть контекстное меню для npm.
 
-![меню npm в обозревателе решений](../javascript/media/solution-explorer-npm-ctx.png) 
+![меню npm в обозревателе решений](../javascript/media/solution-explorer-npm-ctx.png)
 
 В контекстном меню вы можете управлять пакетами, установленными npm, так же, как вы [управляете пакетами npm](npm-package-management.md) при использовании файла проекта.
 
@@ -43,7 +42,8 @@ Visual Studio 2017 представляет возможность [разраб
 ## <a name="build-and-debug"></a>Сборка и отладка
 
 ### <a name="packagejson"></a>package.json
-Если *package.json* в папке указывает элемент `main`, команда **отладки** будет доступна в контекстном меню для *package.json*. При нажатии этой кнопки запускается *node.exe* с указанным скриптом в качестве аргумента.
+Если *package.json* в папке указывает элемент `main`, команда **отладки** будет доступна в контекстном меню для *package.json*.
+При нажатии этой кнопки запускается *node.exe* с указанным скриптом в качестве аргумента.
 
 ### <a name="javascript-files"></a>Файлы JavaScript
 Вы можете отлаживать файлы JavaScript, щелкнув файл правой кнопкой мыши и выбрав **Отладка** в контекстном меню. Запустится *node.exe* с этим файлом JavaScript в качестве аргумента.

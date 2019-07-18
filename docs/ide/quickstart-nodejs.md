@@ -1,29 +1,47 @@
 ---
-title: Краткое руководство. Создание первого приложения Node.js с помощью Visual Studio
+title: Краткое руководство. Создание первого веб-приложения Node.js с помощью Visual Studio
 description: В этом кратком руководстве вы создадите приложение Node.js в Visual Studio.
 ms.date: 06/27/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-nodejs
+ms.technology: vs-javascript
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e18f1e2063fd4007eba13d76473d634265b6a51f
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 000d5f3cccdfda10ef90f5c752ec49ba29681435
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953487"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Краткое руководство. Создание первого приложения Node.js с помощью Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Краткое руководство. Создание первого веб-приложения Node.js с помощью Visual Studio
 
-В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки (IDE) Visual Studio вы создадите простое веб-приложение Node.js. Установите Visual Studio 2017 бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+В рамках этого краткого (на 5–10 минут) знакомства с возможностями интегрированной среды разработки (IDE) Visual Studio вы создадите простое веб-приложение Node.js.
+
+## <a name="prerequisites"></a>Предварительные требования
+
+* У вас должна быть установлена среда Visual Studio и должна иметься рабочая нагрузка "Разработка Node.js".
+
+    ::: moniker range=">=vs-2019"
+    Установите Visual Studio 2019 бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) , если вы еще не сделали этого.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Установите Visual Studio 2017 бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , если вы еще не сделали этого.
+    ::: moniker-end
+
+    Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...**, после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.
+
+    ![Рабочая нагрузка Node.js в установщике Visual Studio](../ide/media/quickstart-nodejs-workload.png)
+
+* У вас должна быть установлена среда выполнения Node.js.
+
+    Если она не установлена, установите версию LTS с веб-сайта [Node.js](https://nodejs.org/en/download/). Как правило, Visual Studio автоматически обнаруживает установленную среду выполнения Node.js. Если установленная среда выполнения не обнаружена, вы можете настроить проект так, чтобы он ссылался на установленную среду выполнения, на странице свойств (после создания проекта щелкните его узел правой кнопкой мыши и выберите пункт **Свойства**).
 
 ## <a name="create-a-project"></a>Создание проекта
 
@@ -33,17 +51,19 @@ ms.locfileid: "39131860"
 
     Как правило, Visual Studio автоматически обнаруживает установленную среду выполнения Node.js. Если установленная среда выполнения не обнаружена, вы можете настроить проект так, чтобы он ссылался на установленную среду выполнения, на странице свойств (после создания проекта щелкните его узел правой кнопкой мыши и выберите пункт **Свойства**).
 
-1. Откройте Visual Studio 2017.
+1. Запустите Visual Studio.
 
-1. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
+1. Создайте новый проект.
 
-1. В левой области диалогового окна **Новый проект** разверните узел **JavaScript** и выберите **Node.js**. В средней области выберите **Пустое веб-приложение Node.js** и нажмите кнопку **ОК**.
+    ::: moniker range=">=vs-2019"
+    Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **Node.js** и выберите **Create new Blank Node.js Web application project** (Создать проект: пустое веб-приложение Node.js) (JavaScript). В появившемся диалоговом окне выберите **Создать**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** разверните узел **JavaScript** и выберите **Node.js**. В средней области выберите **Пустое веб-приложение Node.js** и нажмите кнопку **ОК**.
+    ::: moniker-end
+    Если шаблон проекта **Пустое веб-приложение Node.js** отсутствует, необходимо добавить рабочую нагрузку **Разработка Node.js**. Подробные инструкции см. в разделе [с предварительными требованиями](#prerequisites).
 
-     Если шаблон проекта **Пустое веб-приложение Node.js** отсутствует, щелкните ссылку **Открыть установщик Visual Studio** в левой области диалогового окна **Новый проект**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.
-
-     ![Рабочая нагрузка Node.js в установщике Visual Studio](../ide/media/quickstart-nodejs-workload.png)
-
-    После того как вы выберете шаблон **Пустое веб-приложение Node.js** и нажмете **ОК**, Visual Studio создаст решение и откроет проект. Файл *server.js* откроется в редакторе в левой области.
+    Visual Studio создаст решение и откроет проект. Файл *server.js* откроется в редакторе в левой области.
 
 ## <a name="explore-the-ide"></a>Изучение интегрированной среды разработки
 

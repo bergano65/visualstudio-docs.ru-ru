@@ -1,23 +1,20 @@
 ---
 title: Обновление фигур и соединителей в соответствии с моделью | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183923"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Обновление фигур и соединителей в соответствии с моделью
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Установить свойства карты фигур, чтобы управлять видимостью декоратора  
  Можно управлять видимостью декоратора без написания программного кода, настроив сопоставление между фигурой и доменный класс в определении DSL. Дополнительные сведения см. в следующих разделах:  
   
--   [Практическое руководство. Управление видимостью декоратора — перенаправление](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [Практическое руководство. Управление видимостью декоратора — перенаправление](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)  
+- [Определение доменного языка](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Предоставляют цвет и стиль фигуры в виде свойств  
  В определении DSL щелкните класс фигуры правой кнопкой мыши **добавить предоставленный**и выберите один из элементов, таких как **цвет заливки**.  
@@ -93,7 +90,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```  
   
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Использовать OnChildConfigured для инициализации свойства фигуры  
- Чтобы задать свойства фигуры, сразу после создания переопределения `OnChildConfigured()` в частичном определении класса схемы. Класс схемы, указанный в определении DSL, а созданный код находится в **Dsl\Generated Code\Diagram.cs**. Пример:  
+ Чтобы задать свойства фигуры, сразу после создания переопределения `OnChildConfigured()` в частичном определении класса схемы. Класс схемы, указанный в определении DSL, а созданный код находится в **Dsl\Generated Code\Diagram.cs**. Например:  
   
 ```csharp  
 partial class MyLanguageDiagram  
@@ -118,7 +115,7 @@ partial class MyLanguageDiagram
   
  Этот метод может использоваться как для свойства домена и функции вне хранилища, такие как размер фигуры.  
   
-##  <a name="OnAssociatedProperty"></a> Используйте AssociateValueWith(), чтобы обновить некоторые свойства фигуры  
+## <a name="OnAssociatedProperty"></a> Используйте AssociateValueWith(), чтобы обновить некоторые свойства фигуры  
  Для некоторых функций фигуры, например имеет ли она тень или стиль стрелки соединительной линии отсутствует встроенный метод раскрытия компонента, как свойство домена.  Изменения в такие функции, не находятся под контролем системы транзакций. Таким образом, не подходит для их обновления с помощью правил, так как правила, не вызываются, когда пользователь выполняет команду отмены.  
   
  Вместо этого можно обновить с помощью таких функций <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. В следующем примере значение свойства домена в отношение, которое отображает соединитель управляется стиль стрелки соединительной линии:  
@@ -165,6 +162,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()` должен вызываться один раз для каждого свойства домена, который вы хотите зарегистрировать. После его вызова, любые изменения к указанному свойству будет вызывать `OnAssociatedPropertyChanged()` в любые фигуры, которые представляют свойства элемента модели.  
   
  Нет необходимости вызывать `AssociateValueWith()` для каждого экземпляра. Несмотря на то, что InitializeResources является методом экземпляра, он вызывается только один раз для каждого класса фигуры.
-
-
-

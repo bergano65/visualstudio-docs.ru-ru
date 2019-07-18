@@ -1,14 +1,9 @@
 ---
 title: Проект проектные решения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, project file persistence
 - project types, commitment mechanics
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62d1a0e78aebd39c1f305c3480d6a418b382b4fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cd26e08ab153e96fc601e89788008cb0e9ca38c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781794"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704083"
 ---
 # <a name="project-type-design-decisions"></a>Проектные решения для типа проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51781794"
   
  Элементы в проекте может быть файлы, или их можно более абстрактные объекты, такие как объекты в репозиторий или данных подключения к базе данных через Интернет. Если они есть файлы, проект может быть основано на ссылке или проекта на основе каталогов.  
   
- В проектах на основе ссылок элементы могут находиться более одного проекта. Тем не менее фактический файл, который представляет элемент находится в одном каталоге только. В проектах на основе каталогов все элементы проекта существует в структуре каталогов. Дополнительные сведения см. в разделе [NIB: управление элементами в проектах](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ В проектах на основе ссылок элементы могут находиться более одного проекта. Тем не менее фактический файл, который представляет элемент находится в одном каталоге только. В проектах на основе каталогов все элементы проекта существует в структуре каталогов. Дополнительные сведения см. в разделе [NIB: управление элементами в проектах](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  Локальные элементы хранятся на том же компьютере, где установлено приложение. Удаленных элементов могут храниться на отдельном сервере в локальной сети или в другом месте в Интернете.  
   
@@ -64,11 +59,10 @@ ms.locfileid: "51781794"
  При открытии объекты данных с помощью режима транзакций, изменения будут сохранены во временное расположение в памяти и не фиксируются до вручную не выбран для сохранения файла. В этот момент все изменения должны происходить вместе или не будут изменены.  
   
 ## <a name="see-also"></a>См. также  
- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB: управление элементами в проектах](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
+ [Контрольный список. Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [NIB: управление элементами в проектах](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [Открытие и сохранение элементов проекта](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Сохранение проекта](../../extensibility/internals/project-persistence.md)   
  [Элементы модели проекта](../../extensibility/internals/elements-of-a-project-model.md)   
  [Основные компоненты модели проекта](../../extensibility/internals/project-model-core-components.md)   
  [Создание типов проектов](../../extensibility/internals/creating-project-types.md)
-

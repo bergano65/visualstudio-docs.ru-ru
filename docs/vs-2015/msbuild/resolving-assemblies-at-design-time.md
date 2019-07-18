@@ -1,32 +1,26 @@
 ---
 title: Разрешение сборок во время разработки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc10169ac07efdeded41a9bb2990bdc206a17435
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224657"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657107"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Разрешение сборок во время разработки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Когда вы добавляете ссылку на сборку с помощью вкладки .NET или диалога добавления ссылки, эта ссылка указывает на промежуточную ссылочную сборку, которая содержит всю информацию о типах и сигнатурах, но не обязательно включает программный код. На вкладке .NET перечислены все ссылочные сборки, соответствующие сборкам среды выполнения в платформе .NET Framework. Кроме того, в этот список включены ссылочные сборки, соответствующих сборкам среды выполнения в зарегистрированных папках AssemblyFoldersEx, используемых сторонними разработчиками.  
   
 ## <a name="multi-targeting"></a>Нацеливание на несколько версий  
@@ -45,8 +39,5 @@ ms.locfileid: "49224657"
   
  Пакет нацеливания, который теперь поставляется в составе пакета SDK для .NET Framework, перечисляет все сборки среды выполнения для соответствующей версии платформы. Этот список называется списком распространения. Благодаря этому система сборки не будет разрешать типы по неправильным версиям сборок.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Дополнительные возможности](../msbuild/msbuild-advanced-concepts.md)
-
-
-

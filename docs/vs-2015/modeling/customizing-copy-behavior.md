@@ -1,23 +1,20 @@
 ---
 title: Настройка функции копирования | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 87fff01c-60ba-440a-b8a0-185edcef83ac
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b88d3541bc9c3b2f890c2aadf0103c48d3dad865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433299"
 ---
 # <a name="customizing-copy-behavior"></a>Настройка функции копирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +91,7 @@ partial class MyDslClipboardCommandSet
  Переопределить *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` в проекте DslPackage.  
   
  **Сохраните макет фигуры через копирование и вставку.**  
- Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта технология демонстрируется примером в [VMSDK: принципиальной схемы](http://go.microsoft.com/fwlink/?LinkId=213879).  
+ Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта технология демонстрируется примером в [VMSDK: Пример схемы канала](http://go.microsoft.com/fwlink/?LinkId=213879).  
   
  Чтобы достигнуть такого эффекта, добавьте фигуры и соединители в скопированный ElementGroupPrototype. Самый удобный метод переопределения — это ElementOperations.CreateElementGroupPrototype(). Для этого добавьте в проект Dsl следующий код:  
   
@@ -151,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```  
   
  **Вставьте фигуры в выбранное место, например в текущее положение курсора.**  
- Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта технология демонстрируется примером в [VMSDK: принципиальной схемы](http://go.microsoft.com/fwlink/?LinkId=213879).  
+ Если пользователь копирует несколько фигур, можно сделать так, чтобы при вставке их положение относительно друг друга сохранялось. Эта технология демонстрируется примером в [VMSDK: Пример схемы канала](http://go.microsoft.com/fwlink/?LinkId=213879).  
   
  Для достижения такого эффекта переопределите `ClipboardCommandSet.ProcessOnMenuPasteCommand()`, чтобы использовать версию `ElementOperations.Merge()`, зависящую от местоположения. Для этого добавьте в проект DslPackage следующий код:  
   
@@ -218,9 +215,9 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```  
   
  **Разрешите пользователю перетаскивать элементы.**  
- См. в разделе [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+ См. практическое руководство по [ Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a> Настройка поведения копирования связи  
+## <a name="customizeLinks"></a> Настройка поведения копирования связи  
  Когда пользователь копирует элемент, стандартное поведение заключается в том, что также копируются все внедренные элементы. Стандартное поведение копирования можно изменить. В определении DSL, выберите роль с одной стороны отношения и в наборе свойств окна **распространение копирования** значение.  
   
  ![Распространяет свойство копирования роли домена](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
@@ -241,7 +238,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  Многие аспекты поведения доменного языка в отношении копирования, вставки, создания и удаления объектов определяются экземпляром <xref:Microsoft.VisualStudio.Modeling.ElementOperations>, который соединен со схемой. Можно изменить поведение доменного языка, создав собственный производный класс из класса <xref:Microsoft.VisualStudio.Modeling.ElementOperations> и переопределив свойство <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> класса схемы.  
   
 > [!TIP]
->  Дополнительные сведения о настройке модели с помощью программного кода, см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+> Дополнительные сведения о настройке модели с помощью программного кода, см. в разделе [перехода и обновления модели в программном коде](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
  ![Схема последовательностей для операции копирования](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")  
   
@@ -294,9 +291,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
   
  Определите два метода в классе ElementOperations:  
   
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` который определяет, можно ли перетаскивать на целевой фигуры, соединителя или схемы исходного элемента.  
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` который определяет, можно ли перетаскивать на целевой фигуры, соединителя или схемы исходного элемента.  
   
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` который объединяет исходный элемент в целевой объект.  
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` который объединяет исходный элемент в целевой объект.  
   
 ### <a name="canmerge"></a>CanMerge()  
  `CanMerge()` вызывается для определения обратной связи, которая должна быть предоставлена пользователю при перемещении мыши по схеме. Для метода используются следующие параметры: элемент, на который наводится указатель мыши, и данные об источнике, из которого была выполнена операция перетаскивания. Пользователь может перетащить элемент из любого места экрана, поэтому исходный объект может быть разных типов и сериализован в разных форматах. Если источник является доменным языком или моделью UML, параметр данных является сериализацией <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Операции перетаскивания, копирования и панели инструментов используют ElementGroupPrototypes для представления фрагментов моделей.  
@@ -568,9 +565,6 @@ namespace Company.MyDsl
   
 ## <a name="see-also"></a>См. также  
  [Настройка создания и перемещения элементов](../modeling/customizing-element-creation-and-movement.md)   
- [Практическое: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Настройка функции удаления](../modeling/customizing-deletion-behavior.md)   
- [Образец: Пример принципиальной схемы VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
-
-
-
+ [Пример. Пример принципиальной схемы VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)

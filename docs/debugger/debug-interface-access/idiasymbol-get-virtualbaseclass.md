@@ -9,36 +9,37 @@ helpviewer_keywords:
 ms.assetid: 474eddc6-bf16-4731-9145-6db2f2a0b4fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ddc47a28bdd5fc472e46239b51d81c34346d8e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c97290f878a8b3b0835c7e3ac33aa2ebecfb019
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832285"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64799265"
 ---
 # <a name="idiasymbolgetvirtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
-Получает флаг, указывающий, является ли тип пользовательских данных виртуального базового класса.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_virtualBaseClass (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает `TRUE` Если тип пользовательских данных является виртуальным базовым классом; в противном случае возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Получает флаг, указывающий, является ли тип пользовательских данных виртуального базового класса.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_virtualBaseClass ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает `TRUE` Если тип пользовательских данных является виртуальным базовым классом; в противном случае возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="see-also"></a>См. также
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

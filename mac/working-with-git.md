@@ -1,16 +1,17 @@
 ---
 title: Работа с Git
 description: Использование Git в Visual Studio для Mac.
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: 10d5b34ece7d093a42bafc1f0e410b670dd342f1
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: b047222f67d75bbc092a731c8de1ca1ba6d94cf7
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296454"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692160"
 ---
 # <a name="working-with-git"></a>Работа с Git
 
@@ -64,7 +65,7 @@ Git — это распределенная система управления
 
 Пользователи могут создавать любое число ветвей для каждого репозитория, однако рекомендуется удалять неиспользуемые ветви для лучшей упорядоченности репозитория.
 
-Ветви можно просмотреть в Visual Studio для Mac, перейдя в раздел **Управление версиями > Управление ветвями и удаленными ветвями...**:
+Ветви можно просмотреть в Visual Studio для Mac, перейдя в раздел **Управление версиями > Управление ветвями и удаленными ветвями...** :
 
 ![Представление ветвей](media/version-control-gitBranch2.png)
 
@@ -95,6 +96,10 @@ Git — это распределенная система управления
 ![Фиксация файла](media/version-control-gitCommit.png)
 
 После фиксации изменений отправьте их в удаленный репозиторий, чтобы их смогли увидеть другие пользователи.
+
+## <a name="related-video"></a>Связанные видео
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Manage-Projects-with-Git/player]
 
 ## <a name="see-also"></a>См. также
 

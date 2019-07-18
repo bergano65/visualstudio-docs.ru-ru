@@ -1,7 +1,6 @@
 ---
 title: Команда Add New Item
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - project.addnewitem
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c094e30c9491783733e49901fb297c36c1e94f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2bfede96c889a22b181d46cb85e49147bb2f41aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792454"
 ---
 # <a name="add-new-item-command"></a>Команда Add New Item
 Добавляет новый элемент решения, такой как HTM, CSS, TXT или набор фреймов, в текущее решение и открывает его.

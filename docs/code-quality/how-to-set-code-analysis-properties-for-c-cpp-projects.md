@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Установка свойств анализа кода для проектов C/C++
+title: Практическое руководство. Установка свойств анализа кода для проектов C/C++
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native
@@ -19,14 +18,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 000b731bffe6b2fe02e34e98ebfd3ce8a21f5bd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11eb9701c900284ee8021f908263bc5f27ab8206
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815844"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Как выполнить Установка свойств анализа кода для проектов C/C++
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Практическое руководство. Установка свойств анализа кода для проектов C/C++
 Можно настроить средство анализа кода правил для анализа кода для каждой конфигурации проекта. Кроме того можно направить анализ кода, чтобы отключить предупреждения из кода, который был создан и добавлен в проект с помощью стороннего средства.
 
 ## <a name="code-analysis-property-page"></a>Страница свойств анализа кода

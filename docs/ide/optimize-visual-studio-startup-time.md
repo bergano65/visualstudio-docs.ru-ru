@@ -9,18 +9,17 @@ helpviewer_keywords:
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.performancecenter
-ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 39dd45f7b66dfe0966f3a8c62841f591d56a195a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60302646abbf36034756f38183d7be7f0d28c1ca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812519"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Оптимизация времени запуска Visual Studio
 
@@ -28,7 +27,7 @@ ms.locfileid: "53865548"
 
 ## <a name="startup-behavior"></a>Поведение при запуске
 
-Чтобы избежать задержек при запуске, Visual Studio 2017 загружает расширения _по запросу_. Это означает, что расширения открываются не сразу после запуска Visual Studio, а по мере необходимости. Кроме того, поскольку окна инструментов, оставшиеся открытыми в предыдущем сеансе Visual Studio, могут увеличить время запуска, Visual Studio более разумно открывает окна инструментов, чтобы исключить влияние на время запуска.
+Чтобы избежать задержек при запуске, Visual Studio загружает расширения _по запросу_. Это означает, что расширения открываются не сразу после запуска Visual Studio, а по мере необходимости. Кроме того, поскольку окна инструментов, оставшиеся открытыми в предыдущем сеансе Visual Studio, могут увеличить время запуска, Visual Studio более разумно открывает окна инструментов, чтобы исключить влияние на время запуска.
 
 Если Visual Studio обнаружит медленный запуск, появится всплывающее сообщение с предупреждением, указывающим на расширение или окно инструмента, которое является причиной замедления. Сообщение содержит ссылку на диалоговое окно **Управление производительностью Visual Studio**. Его можно открыть, выбрав элементы **Справка** > **Управление производительностью Visual Studio** в строке меню.
 
@@ -67,10 +66,10 @@ ms.locfileid: "53865548"
      ![Представление окон инструментов "Управление производительностью Visual Studio"](../ide/media/vside_perfdialog_toolwindows.png)
 
 > [!NOTE]
-> В версиях Visual Studio, предшествовавших 2017, была представлена функция **загрузки упрощенного решения**. В Visual Studio 2017 версии 15.5 и более поздних эта функция недоступна. В Visual Studio 2017 версии 15.5 и выше крупные решения, содержащие управляемый код, загружаются значительно быстрее, чем раньше, даже без функции загрузки упрощенного решения.
+> В версиях Visual Studio, предшествовавших 2017, была представлена функция **загрузки упрощенного решения**. В текущих версиях крупные решения, содержащие управляемый код, загружаются значительно быстрее, чем раньше, даже без функции загрузки упрощенного решения.
 
 ## <a name="see-also"></a>См. также
 
 - [Оптимизация производительности Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Советы и рекомендации по улучшению работы Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Блог Visual Studio. Ускорение загрузки решений в Visual Studio 2017 версии 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Блог Visual Studio. Ускорение загрузки решений в Visual Studio 2017 версии 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

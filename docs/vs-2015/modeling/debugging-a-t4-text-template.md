@@ -1,12 +1,9 @@
 ---
 title: Отладка текстового шаблона T4 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
@@ -14,13 +11,13 @@ ms.assetid: 0877fdf2-20bf-42da-b3cc-4c5856b80821
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164580"
 ---
 # <a name="debugging-a-t4-text-template"></a>Отладка текстового шаблона T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,6 +81,3 @@ ms.locfileid: "49298913"
 |Возникло исключение при обработке директивы с именем "{0}".|Происходит, когда процессор директив вызовет исключение при обработке директивы.|Убедитесь, что параметры для процессора директив верны.|  
 |Узел вызвал исключение при попытке разрешить ссылку на сборку "{0}".|Происходит, когда узел вызывает исключение при попытке разрешить ссылку на сборку. Сообщение содержит сборки строку ссылки.|Сборка берутся ссылки \<@# assembly #> директивы и из процессоров директив. Убедитесь, что параметр «name», указанные в параметре сборки указано правильно.|  
 |Попытка указать неподдерживаемый {1} значение "{0}" для директивы {2}|Происходит по RequiresProvidesDirectiveProcessor (все созданные процессоры директив являются производными от него), при указании неподдерживаемого требует или предоставляет аргумент.|Убедитесь, что имена в name = «value» в пары требуется и приведены параметры указаны правильно.|
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: Подтипы проекта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f4562eab97c28437d8722eacbb60459bd2732dfa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5ad1e105d43c40782b13d8799b20626e57363c2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421833"
 ---
 # <a name="project-subtypes"></a>Подтипы проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51752696"
 Подтипов проекта позволяют настраивать или flavor поведение системы проектов из [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Настройки включают сохранение дополнительных данных в файле проекта, добавляя или фильтруя элементы в **Добавление нового элемента** » диалогового окна «Управление как сборки, отладки и развертывания и расширение проекта **свойство Страницы** диалоговое окно. Пакеты VSPackage реализовывать подтипов проекта, с помощью COM статистической обработки.  
   
 > [!NOTE]
->  Система проектов Visual C++ не поддерживает подтипов проекта. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] подтипов проекта самой используются для реализации проектов для смарт-устройств и SQL Server.  
+> Система проектов Visual C++ не поддерживает подтипов проекта. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] подтипов проекта самой используются для реализации проектов для смарт-устройств и SQL Server.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Разработка подтипов проекта](../../extensibility/internals/project-subtypes-design.md)  
@@ -65,4 +60,3 @@ ms.locfileid: "51752696"
 ## <a name="related-sections"></a>Связанные разделы  
  [Типы проектов](../../extensibility/internals/project-types.md)  
  Содержит ссылки на разделы с подробным описанием [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] проектов.
-

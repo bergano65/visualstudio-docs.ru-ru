@@ -1,7 +1,6 @@
 ---
 title: Ошибки, возникающие при анализе кода
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 954bce670ea4b8f05f4d9ba88c4a7f09850375e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826066"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745202"
 ---
 # <a name="code-analysis-application-errors"></a>Ошибки, возникающие анализа кода
 
@@ -47,8 +46,8 @@ ms.locfileid: "53826066"
 |[CA0065](ca0065.md)|Неподдерживаемая конструкция метаданных: Тип "*TypeName*«содержит свойство и поле с тем же именем»*PropertyFieldName*"|
 |[CA0066](ca0066.md)|Значение "*VersionID*" для **/targetframeworkversion** не является распознаваемым версией.|
 |[CA0067](ca0067.md)|Каталог не найден.|
-|[CA0068](ca0068.md)|Отладка не удалось найти сведения для целевой сборки *«Имя_сборки»*.|
-|[CA0069](ca0069.md)|Использование альтернативной платформы. *FrameworkVersion1* не найден. С помощью *FrameworkVersion2* вместо этого. Для получения оптимальных результатов анализа убедитесь, что установлена правильная платформа .NET Framework.|
+|[CA0068](ca0068.md)|Отладка не удалось найти сведения для целевой сборки *«Имя_сборки»* .|
+|[CA0069](ca0069.md)|Использование альтернативной платформы. *FrameworkVersion1* не найден. С помощью *FrameworkVersion2* вместо этого. Для получения оптимальных результатов анализа убедитесь, что установлен надлежащей версии .NET framework.|
 |[CA0070](ca0070.md)|Не удается загрузить сборку или тип, из-за разрешений безопасности.|
 |[CA0501](ca0501.md)|Не удалось прочитать отчет о результатах.|
 |[CA0502](ca0502.md)|Язык не поддерживается.|

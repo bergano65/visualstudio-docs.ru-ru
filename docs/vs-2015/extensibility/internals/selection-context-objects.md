@@ -1,27 +1,22 @@
 ---
 title: Объекты контекста выбора | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: beaf1b9c67cdad3237d1ac48b4a8e464b0a203a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7e1a43997d56f8d89f194fb83d20c1f160378873
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187435"
 ---
 # <a name="selection-context-objects"></a>Объекты контекста выбора
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ ms.locfileid: "51769400"
   
   Следующая последовательность действий показывает типичный ход отслеживание выделения.  
   
-1.  Интегрированная среда разработки получает контекст выбора из только что открытого окна и помещает его в контексте глобального выделения. Если контекст выбора с HIERARCHY_DONTPROPAGATE или SELCONTAINER_DONTPROPAGATE, эти сведения не распространяется на глобальном контексте. Дополнительные сведения см. в разделе [обратной связи с пользователем](../../extensibility/internals/feedback-to-the-user.md).  
+1. Интегрированная среда разработки получает контекст выбора из только что открытого окна и помещает его в контексте глобального выделения. Если контекст выбора с HIERARCHY_DONTPROPAGATE или SELCONTAINER_DONTPROPAGATE, эти сведения не распространяется на глобальном контексте. Дополнительные сведения см. в разделе [обратной связи с пользователем](../../extensibility/internals/feedback-to-the-user.md).  
   
-2.  События уведомления отправляются любой пакет VSPackage, который их запросил.  
+2. События уведомления отправляются любой пакет VSPackage, который их запросил.  
   
-3.  Пакет VSPackage, выступает на события, которые оно получает, выполняя действия, такие как обновление иерархии, повторная активация средство или других подобных целей.  
+3. Пакет VSPackage, выступает на события, которые оно получает, выполняя действия, такие как обновление иерархии, повторная активация средство или других подобных целей.  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   
@@ -52,4 +47,3 @@ ms.locfileid: "51769400"
  [Иерархии в Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [Выбор и актуальность в интегрированной среде разработки](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [Типы проектов](../../extensibility/internals/project-types.md)
-

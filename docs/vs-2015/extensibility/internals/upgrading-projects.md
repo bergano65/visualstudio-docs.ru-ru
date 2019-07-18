@@ -1,14 +1,9 @@
 ---
 title: Обновление проектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
 - upgrading applications, strategies
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a3f045d947f968655923df16de8c02aafc12a34b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8e838cb02aa1a620356f96d9e77f1752797ac409
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441241"
 ---
 # <a name="upgrading-projects"></a>Обновление проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,9 +27,9 @@ ms.locfileid: "51783770"
 ## <a name="upgrade-strategies"></a>Стратегии обновления  
  Для поддержки обновления, реализации системы проекта необходимо определить и реализовать стратегию обновления. В определении стратегии, вы можете для поддержки резервного копирования side-by-side (SxS) и резервного копирования.  
   
--   Резервное копирование SxS означает, что проект копирует только те файлы, которые требуется обновление на месте, добавив подходящий файл суффикса имени, например, «расширения» OLD.  
+- Резервное копирование SxS означает, что проект копирует только те файлы, которые требуется обновление на месте, добавив подходящий файл суффикса имени, например, «расширения» OLD.  
   
--   Резервная копия для копирования означает, что проект копирует все элементы проекта папку резервного копирования, предоставляемый пользователем. Затем обновляются соответствующие файлы в исходное расположение проекта.  
+- Резервная копия для копирования означает, что проект копирует все элементы проекта папку резервного копирования, предоставляемый пользователем. Затем обновляются соответствующие файлы в исходное расположение проекта.  
   
 ## <a name="how-upgrade-works"></a>О принципах работы обновления  
  Если решения, созданного в более ранней версии [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] открывается в более новой версии, проверок интегрированной среды разработки, файл решения для определения того, если он должен быть обновлен. Если обновление является обязательным, **мастер обновления** запускается автоматически, чтобы ознакомить пользователя через процесс обновления.  
@@ -51,7 +46,7 @@ ms.locfileid: "51783770"
  После обновления все соответствующие файлы глобального, каждая фабрика проекта можно создать экземпляр проекта. Реализация проекта должна поддерживать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Затем вызывается метод для обновления всех элементов соответствующего проекта.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Метод не предоставляет службу SVsUpgradeLogger. Эту службу можно получить путем вызова <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
+> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Метод не предоставляет службу SVsUpgradeLogger. Эту службу можно получить путем вызова <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
   
 ## <a name="best-practices"></a>Рекомендации  
  Используйте <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> службы, чтобы проверить можно изменить файл, прежде чем изменять его, а затем сохранить их перед сохранением. Это поможет резервного копирования и обновления реализаций обрабатывать файлы проекта в системе управления версиями, файлы с недостаточно разрешений и т. д.  
@@ -64,4 +59,3 @@ ms.locfileid: "51783770"
  [Проекты](../../extensibility/internals/projects.md)   
  [Обновление пользовательских проектов](../../misc/upgrading-custom-projects.md)   
  [Обновление элементов проекта](../../misc/upgrading-project-items.md)
-

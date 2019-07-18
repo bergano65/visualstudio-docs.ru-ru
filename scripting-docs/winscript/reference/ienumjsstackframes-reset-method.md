@@ -2,7 +2,6 @@
 title: Метод IEnumJsStackFrames::Reset | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9d66f6e36284f0627af7fd44f41fafd6b798e50
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: e94331f8b6b9f68c01109ef355a4cba3cc398f4d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963290"
 ---
 # <a name="ienumjsstackframesreset-method"></a>Метод IEnumJsStackFrames::Reset
 Сбрасывает кадр стека в положение перед первым элементом.  

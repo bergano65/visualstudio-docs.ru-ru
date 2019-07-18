@@ -1,37 +1,32 @@
 ---
 title: Сведения о настройке элемента управления источника | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], configuration details
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 55e2364ca096b5329369e51ccdadf07f191720e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5faa0ce575647038ac5ac7839b6dc066b7b51ce6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432068"
 ---
 # <a name="source-control-configuration-details"></a>Сведения о конфигурации системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Чтобы реализовать систему управления версиями, необходимо правильно настроить систему проектов или редактор, выполнив следующие действия:  
   
--   Запрашивать разрешение на переход на измененное состояние  
+- Запрашивать разрешение на переход на измененное состояние  
   
--   Запрашивать разрешение на сохранение файла  
+- Запрашивать разрешение на сохранение файла  
   
--   Запрашивать разрешение на добавление, удаление или переименование файлов в проекте  
+- Запрашивать разрешение на добавление, удаление или переименование файлов в проекте  
   
 ## <a name="request-permission-to-transition-to-changed-state"></a>Запрашивать разрешение на переход на измененное состояние  
  Проект или редактора необходимо запрашивать разрешение на переход на измененное состояние ("грязный"), вызвав <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Каждый редактор, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> необходимо вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> и получать утверждения для изменения документа из среды перед возвратом `True` для `M:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty(System.Int32@)`. Проект — это редактор, для файла проекта и таким образом, несет же ответственность за реализацию отслеживания изменения состояния для файла проекта, как в текстовом редакторе, так и для ее файлов. Эти задачи выполняет среда измененное состояние решения, но необходимо обрабатывать измененное состояние любого объекта, ссылается на решение, но не хранит, таких как файл проекта или его элементов. Как правило если проект или редактор отвечает за управление сохраняемости для элемента, затем он отвечает за реализацию отслеживания изменения состояния.  
@@ -48,7 +43,7 @@ ms.locfileid: "51753710"
  Прежде чем проект или редактор сохраняет файл, он должен вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Для файлов проекта эти вызовы выполняются автоматически с решения, который знает, когда следует сохранить файл проекта. Редакторы несут ответственность за обеспечение этих вызовов, если реализация редактора `IVsPersistDocData2` используется вспомогательная функция <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Если ваш редактор реализует `IVsPersistDocData2` в таким образом, то вызов `IVsQueryEditQuerySave2::QuerySaveFile` или `IVsQueryEditQuerySave2::QuerySaveFiles` выполняется автоматически.  
   
 > [!NOTE]
->  Всегда выполнять эти вызовы заблаговременно — то есть во время, когда может получать отмену редактора.  
+> Всегда выполнять эти вызовы заблаговременно — то есть во время, когда может получать отмену редактора.  
   
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Запрашивать разрешение на добавление, удаление или переименование файлов в проекте  
  Прежде чем проект можно добавить, переименовать или удалить файл или каталог, он должен вызвать соответствующий `IVsTrackProjectDocuments2::OnQuery*` метод для получения разрешения из среды. Если разрешение, то необходимо выполнить операцию и затем вызовите соответствующий проект `IVsTrackProjectDocuments2::OnAfter*` метод для уведомления среды о том, что операция завершена. Проект необходимо вызвать методы <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> интерфейс для всех файлов (например, специальные файлы) и не только родительских файлов. Файл вызовы являются обязательными, но каталог вызовы являются необязательными. Если проект содержит сведения о каталоге, то он должен вызывать соответствующий <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> методы, но если он не поддерживает эти сведения, а затем среде будет выводить сведения о каталоге.  
@@ -65,4 +60,3 @@ ms.locfileid: "51753710"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>   
  [Поддержка системы управления версиями](../../extensibility/internals/supporting-source-control.md)
-

@@ -1,7 +1,6 @@
 ---
 title: CA1701. Правильно используйте прописные и строчные буквы в составных словах строк ресурса
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ResourceStringCompoundWordsShouldBeCasedCorrectly
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4ddbe09f-24b8-4c47-9373-a06f4487ca0d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2cc74bb7d3cc15e593d465a8c8d0d55275954ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fdae06137586f11de1a30a73894c46c7fb18fa6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546288"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701. Правильно используйте прописные и строчные буквы в составных словах строк ресурса
 

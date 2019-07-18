@@ -1,12 +1,9 @@
 ---
-title: 'UML-схемы классов: Ссылаться | Документация Майкрософт'
-ms.custom: ''
+title: 'UML-схемы классов: Справочник по | Документация Майкрософт'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.generalization.properties
 - vs.teamarch.logicalclassdiagram.toolbox
@@ -26,23 +23,23 @@ ms.assetid: b7c88be0-0d86-4d65-af74-f37e8812d20f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4f3a4fe9949236045238688a9edcd5eef911efb8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2be23466642357d19dad52407fcb9bf82e843c5b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424492"
 ---
-# <a name="uml-class-diagrams-reference"></a>UML-схемы классов: справочные материалы
+# <a name="uml-class-diagrams-reference"></a>UML-схемы классов: Ссылка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Схема классов UML описывает структуры объектов и информации, используемые приложением как для внутренних задач, так и в рамках взаимодействия с пользователями. Она описывает информацию без ссылки на какую-либо конкретную реализацию. Ее классы и отношения можно реализовать различными способами, например в виде таблиц базы данных, XML-узлов или композиций программных объектов.  
   
 > [!NOTE]
->  Этот раздел посвящен UML-схемам классов. Существует другой вид схемы классов  схема классов .NET, которая используется для визуализации программного кода. Дополнительные сведения см. в разделе [проектирование и Просмотр классов и типов](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Этот раздел посвящен UML-схемам классов. Существует другой вид схемы классов  схема классов .NET, которая используется для визуализации программного кода. Дополнительные сведения см. в разделе [проектирование и Просмотр классов и типов](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
- Чтобы создать схему классов UML на **архитектура** меню, выберите **создать схему UML или схему слоев**. Дополнительные сведения о рисовании UML-схемах классов см. в разделе [UML-схемы классов: правила](../modeling/uml-class-diagrams-guidelines.md). Дополнительные сведения о способах создания и схем моделирования см. в разделе [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md).  
+ Чтобы создать схему классов UML на **архитектура** меню, выберите **создать схему UML или схему слоев**. Дополнительные сведения о рисовании UML-схемах классов см. в разделе [UML-схемы классов: Рекомендации по](../modeling/uml-class-diagrams-guidelines.md). Дополнительные сведения о способах создания и схем моделирования см. в разделе [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md).  
   
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -86,18 +83,15 @@ ms.locfileid: "51741065"
   
  ![Реализация, показанная с помощью соединителя и без описания операций](../modeling/media/uml-classovrealize.png "UML_ClassOvRealize")  
   
-|Фигура|**Элемент**|Описание:|  
+|Фигура|**Элемент**|Описание|  
 |-----------|-----------------|-----------------|  
 |15|**Реализация**|Класс реализует операции и атрибуты, определенные интерфейсом.<br /><br /> Используйте **наследования** средство, чтобы создать реализацию между классом и интерфейсом.|  
 |16|**Реализация**|Альтернативное представление того же самого отношения. Метка на символе, представляющем собой круг на вертикальной линии, определяет интерфейс.<br /><br /> Чтобы создать это представление, выберите существующее отношение реализации. Рядом с ассоциацией отображается тег действия. Щелкните тег действия и нажмите кнопку **Показывать без описания операций**.|  
   
 ## <a name="see-also"></a>См. также  
  [Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md)   
- [UML-схемы классов: рекомендации](../modeling/uml-class-diagrams-guidelines.md)   
+ [Схемы классов UML: Рекомендации](../modeling/uml-class-diagrams-guidelines.md)   
  [Свойства типов на UML-схемах классов](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Свойства атрибутов на UML-схемах классов](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Свойства операций на UML-схемах классов](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Свойства ассоциаций на схемах классов UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)
-
-
-

@@ -15,22 +15,21 @@ helpviewer_keywords:
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85cd491002881adcde906fc001358ab8cabd49f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39340e268d41207e9b054866ecebe613f7836347
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951284"
 ---
 # <a name="al-assembly-linker-task"></a>Задача AL (компоновщик сборок)
-Задача AL включает *AL.exe* — инструмент, распространяемый с [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Этот компоновщик сборок используется для создания сборки с манифестом из одного или нескольких файлов, являющихся модулями или файлами ресурсов. Компиляторы и среды разработки обеспечивают указанные возможности, в связи с чем необходимость в непосредственном использовании этого задания возникает достаточно редко. Компоновщик сборок особенно полезен, если нужно создать единую сборку из нескольких файлов компонентов, например при разработке на нескольких языках. Эта задача не объединяет модули в один файл сборки. Отдельные модули должны оставаться распределенными и доступными для правильной загрузки результирующей сборки. Дополнительные сведения об инструменте *AL.exe* см. в статье [Al.exe (компоновщик сборок)](/dotnet/framework/tools/al-exe-assembly-linker).  
+Задача AL включает *AL.exe* — инструмент, распространяемый с [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Этот компоновщик сборок используется для создания сборки с манифестом из одного или нескольких файлов, являющихся модулями или файлами ресурсов. Компиляторы и среды разработки обеспечивают указанные возможности, в связи с чем необходимость в непосредственном использовании этого задания возникает достаточно редко. Компоновщик сборок особенно полезен, если нужно создать единую сборку из нескольких файлов компонентов, например при разработке на нескольких языках. Эта задача не объединяет модули в один файл сборки. Отдельные модули должны оставаться распределенными и доступными для правильной загрузки результирующей сборки. Дополнительные сведения об инструменте *AL.exe* см. в статье [Al.exe (компоновщик сборок)](/dotnet/framework/tools/al-exe-assembly-linker).
 
-## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры задачи `AL` .  
-
+## <a name="parameters"></a>Параметры
+ В следующей таблице приводятся параметры задачи `AL` .
 
 | Параметр | Описание |
 |---------------------| - |
@@ -69,29 +68,29 @@ ms.locfileid: "53896153"
 | `Win32Icon` | Необязательный параметр `String` .<br /><br /> Внедряет в сборку *ICO*-файл. *ICO*-файл является изображением значка выходного файла в проводнике. Этот параметр соответствует параметру `/win32icon` в статье [Al.exe (компоновщик сборок)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Win32Resource` | Необязательный параметр `String` .<br /><br /> Вставляет файл ресурсов Win32 (*RES*-файл) в выходной файл. Дополнительные сведения см. в документации по параметру `/win32res` в статье [Al.exe (компоновщик сборок)](/dotnet/framework/tools/al-exe-assembly-linker). |
 
-## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Примечания
+ Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Пример  
- В следующем примере создается сборка с заданными параметрами.  
+## <a name="example"></a>Пример
+ В следующем примере создается сборка с заданными параметрами.
 
-```xml  
-<AL  
-    EmbedResources="@(EmbeddedResource)"  
-    Culture="%(EmbeddedResource.Culture)"  
-    TemplateFile="@(IntermediateAssembly)"  
-    KeyContainer="$(KeyContainerName)"  
-    KeyFile="$(KeyOriginatorFile)"  
-    DelaySign="$(DelaySign)"  
+```xml
+<AL
+    EmbedResources="@(EmbeddedResource)"
+    Culture="%(EmbeddedResource.Culture)"
+    TemplateFile="@(IntermediateAssembly)"
+    KeyContainer="$(KeyContainerName)"
+    KeyFile="$(KeyOriginatorFile)"
+    DelaySign="$(DelaySign)"
 
-    OutputAssembly=  
-       "%(EmbeddedResource.Culture)\$(TargetName).resources.dll">  
+    OutputAssembly=
+       "%(EmbeddedResource.Culture)\$(TargetName).resources.dll">
 
-    <Output TaskParameter="OutputAssembly"  
-        ItemName="SatelliteAssemblies"/>  
-</AL>  
-```  
+    <Output TaskParameter="OutputAssembly"
+        ItemName="SatelliteAssemblies"/>
+</AL>
+```
 
-## <a name="see-also"></a>См. также  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Задачи](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>См. также
+* [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+* [Задачи](../msbuild/msbuild-tasks.md)

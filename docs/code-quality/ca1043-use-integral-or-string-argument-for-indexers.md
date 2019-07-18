@@ -1,7 +1,6 @@
 ---
 title: CA1043. Используйте целый или строковый аргумент для индексаторов
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1043
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: d7f14b9e-2220-4f80-b6b8-48c655a05701
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ae1d75341a857d380f78a2b8c0532fcdad1f5e1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca381d88524535ad042b5bd3efda25f8cc350fa4
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987603"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842125"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043. Используйте целый или строковый аргумент для индексаторов
 
@@ -36,25 +35,42 @@ ms.locfileid: "53987603"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный тип содержит открытый или защищенный индексатор, который использует тип индекса, отличное от <xref:System.Int32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName>, или <xref:System.String?displayProperty=fullName>.
+
+Тип содержит индексатор, который использует тип индекса, отличное от <xref:System.Int32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName>, или <xref:System.String?displayProperty=fullName>.
+
+По умолчанию это правило считывает только открытые и защищенные типы, но это [можно настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
- Индексаторы, то есть индексированные свойства, следует использовать типы integer или string для индекса. Эти типы обычно используются для индексации структур данных и повышения удобства использования библиотеки. Использование <xref:System.Object> тип следует только в том случае, где конкретный тип integer или string не может быть указан во время разработки. Если для разработки требуются другие типы индекса, пересмотрите ли тип логическое хранилище данных. Если он не представляет логическое хранилище данных, используйте метод.
+
+Индексаторы, то есть индексированные свойства, следует использовать типы integer или string для индекса. Эти типы обычно используются для индексации структур данных и повышения удобства использования библиотеки. Использование <xref:System.Object> тип следует только в том случае, где конкретный тип integer или string не может быть указан во время разработки. Если для разработки требуются другие типы индекса, пересмотрите ли тип логическое хранилище данных. Если он не представляет логическое хранилище данных, используйте метод.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, изменить индекс с типом integer или string или использовать метод вместо индексатор.
+
+Чтобы устранить нарушение этого правила, изменить индекс с типом integer или string или использовать метод вместо индексатора.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Отключайте предупреждение из этого правила только после тщательной проверки необходимости использовать нестандартный индексатор.
+
+Отключайте предупреждение из этого правила только после тщательной проверки необходимости использовать нестандартный индексатор.
+
+## <a name="configurability"></a>Возможность настройки
+
+Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+
+```ini
+dotnet_code_quality.ca1043.api_surface = private, internal
+```
+
+В этой категории (структуры) можно настроить этот параметр для только что это правило, для всех правил или для всех правил. Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Пример
- В следующем примере показано индексатор, который использует <xref:System.Int32> индекса.
 
- [!code-csharp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CSharp/ca1043-use-integral-or-string-argument-for-indexers_1.cs)]
- [!code-cpp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CPP/ca1043-use-integral-or-string-argument-for-indexers_1.cpp)]
- [!code-vb[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/VisualBasic/ca1043-use-integral-or-string-argument-for-indexers_1.vb)]
+В следующем примере показано индексатор, который использует <xref:System.Int32> индекса.
+
+[!code-csharp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CSharp/ca1043-use-integral-or-string-argument-for-indexers_1.cs)]
+[!code-cpp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CPP/ca1043-use-integral-or-string-argument-for-indexers_1.cpp)]
+[!code-vb[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/VisualBasic/ca1043-use-integral-or-string-argument-for-indexers_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1023: ИНДЕКСЫ Индексаторы не должны быть многомерными](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
 
- [CA1024: Используйте свойства, если это уместно](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1023: ИНДЕКСЫ Индексаторы не должны быть многомерными](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
+- [CA1024: Используйте свойства, если это уместно](../code-quality/ca1024-use-properties-where-appropriate.md)

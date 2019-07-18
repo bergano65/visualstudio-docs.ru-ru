@@ -1,20 +1,19 @@
 ---
 title: Пошаговое руководство. Пример LinqToXmlDataBinding
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6642981934c764fc2f6d512cb19502a21ac224e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67031266ce9b2ded595ab448d7c45674932b8751
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892549"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Пошаговое руководство. пример LinqToXmlDataBinding
 В этом пошаговом руководстве описывается пример LinqToXmlDataBinding, а также разъясняются наиболее интересные элементы содержимого его главных исходных файлов *L2DBForm.xaml* и *L2DBForm.xaml.cs*.

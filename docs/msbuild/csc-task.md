@@ -15,22 +15,21 @@ helpviewer_keywords:
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59c9c7d092ff5d080baebdc562bbd6b3da436c88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39287eb2b1aec27dcb0c08c40875ce579b3a6bea
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838337"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745785"
 ---
 # <a name="csc-task"></a>Csc - задача
-Использует программу-оболочку для файла *csc.exe* и создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения о программе *csc.exe* см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).  
+Использует программу-оболочку для файла *csc.exe* и создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения о программе *csc.exe* см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).
 
-## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры задачи `Csc` .  
-
+## <a name="parameters"></a>Параметры
+В следующей таблице приводятся параметры задачи `Csc` .
 
 | Параметр | Описание |
 |------------------------------| - |
@@ -38,7 +37,7 @@ ms.locfileid: "53838337"
 | `AddModules` | Необязательный параметр `String` .<br /><br /> Задает один или несколько модулей, которые должны быть частью сборки. Дополнительные сведения см. в разделе [-addmodule (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option). |
 | `AllowUnsafeBlocks` | Необязательный параметр `Boolean` .<br /><br /> Если этот параметр равен `true`, то компилируется код, в котором используется ключевое слово [unsafe](/dotnet/csharp/language-reference/keywords/unsafe). Дополнительные сведения см. в разделе [-unsafe (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option). |
 | `ApplicationConfiguration` | Необязательный параметр `String` .<br /><br /> Задает файл конфигурации приложения, содержащий параметры привязки сборки. |
-| `BaseAddress` | Необязательный параметр `String` .<br /><br /> Указывает предпочтительный базовый адрес для загрузки DLL. Базовый адрес по умолчанию для библиотеки DLL задается в среде CLR [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Дополнительные сведения см. в разделе [-baseaddress (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option). |
+| `BaseAddress` | Необязательный параметр `String` .<br /><br /> Указывает предпочтительный базовый адрес для загрузки DLL. Базовый адрес по умолчанию для библиотеки DLL задается в среде CLR платформы .NET Framework. Дополнительные сведения см. в разделе [-baseaddress (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option). |
 | `CheckForOverflowUnderflow` | Необязательный параметр `Boolean` .<br /><br /> Указывает, должны ли целочисленные арифметические операции, вызывающие переполнение типа данных, вызывать исключение во время выполнения. Дополнительные сведения см. в разделе [-checked (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option). |
 | `CodePage` | Необязательный параметр `Int32` .<br /><br /> Задает кодовую страницу, которая будет использоваться для всех файлов исходного кода при компиляции. Дополнительные сведения см. в разделе [-codepage (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option). |
 | `DebugType` | Необязательный параметр `String` .<br /><br /> Задает тип отладки. `DebugType` может иметь значение `full`или `pdbonly`. По умолчанию задано значение `full`, разрешающее подключение отладчика к исполняемой программе. Значение `pdbonly` разрешает отладку исходного кода при запуске программы в отладчике, но при этом ассемблерный код отображается только при подключении исполняемой программы к отладчику.<br /><br /> Этот параметр переопределяет параметр `EmitDebugInformation`.<br /><br /> Дополнительные сведения см. в разделе [-debug (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option). |
@@ -54,7 +53,7 @@ ms.locfileid: "53838337"
 | `KeyContainer` | Необязательный параметр `String` .<br /><br /> Задает имя контейнера криптографического ключа. Дополнительные сведения см. в разделе [-keycontainer (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/keycontainer-compiler-option). |
 | `KeyFile` | Необязательный параметр `String` .<br /><br /> Задает имя файла, содержащего криптографический ключ. Дополнительные сведения см. в разделе [-keyfile (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/keyfile-compiler-option). |
 | `LangVersion` | Необязательный параметр `String` .<br /><br /> Задает используемую версию языка. Дополнительные сведения см. в разделе [-langversion (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option). |
-| `LinkResources` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Создает ссылку на ресурс [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в выходном файле; файл ресурса не помещается в выходной файл.<br /><br /> Элементы, передаваемые в этот параметр, могут иметь необязательные метаданные `LogicalName` и `Access`. `LogicalName` соответствует аргументу `identifier` параметра `/linkresource`, а `Access` соответствует аргументу `accessibility-modifier`. Дополнительные сведения см. в разделе [-linkresource (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option). |
+| `LinkResources` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Создается ссылка на ресурс .NET Framework в выходном файле. Файл ресурса не помещается в выходной файл.<br /><br /> Элементы, передаваемые в этот параметр, могут иметь необязательные метаданные `LogicalName` и `Access`. `LogicalName` соответствует аргументу `identifier` параметра `/linkresource`, а `Access` соответствует аргументу `accessibility-modifier`. Дополнительные сведения см. в разделе [-linkresource (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option). |
 | `MainEntryPoint` | Необязательный параметр `String` .<br /><br /> Указывает расположение метода `Main`. Дополнительные сведения см. в разделе [-main (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option). |
 | `ModuleAssemblyName` | Необязательный параметр `String` .<br /><br /> Задает имя сборки, частью которой будет этот модуль. |
 | `NoConfig` | Необязательный параметр `Boolean` .<br /><br /> Значение `true` предписывает компилятору не использовать файл *csc.rsp*. Дополнительные сведения см. в разделе [-noconfig (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option). |
@@ -67,7 +66,7 @@ ms.locfileid: "53838337"
 | `PdbFile` | Необязательный параметр `String` .<br /><br /> Задает имя файла отладочной информации. По умолчанию используется имя файла выходных данных с расширением *.pdb*. |
 | `Platform` | Необязательный параметр `String` .<br /><br /> Указывает целевую платформу процессора для выходного файла. Этот параметр может иметь значение `x86`, `x64` или `anycpu`. Значение по умолчанию — `anycpu`. Дополнительные сведения см. в разделе [-platform (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option). |
 | `References` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Вызывает импорт задачей информации об открытых типах из заданных элементов в текущий проект. Дополнительные сведения см. в разделе [-reference (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Вы можете задать псевдоним ссылки [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] в файле [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], добавив метаданные `Aliases` к исходному элементу Reference. Например, требуется установить псевдоним LS1 в следующей командной строке CSC.<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> Для этого используется следующий код.<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>` |
-| `Resources` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Внедряет ресурс [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] в выходной файл.<br /><br /> Элементы, передаваемые в этот параметр, могут иметь необязательные метаданные `LogicalName` и `Access`. `LogicalName` соответствует аргументу `identifier` параметра `/resource`, а `Access` соответствует аргументу `accessibility-modifier`. Дополнительные сведения см. в разделе [-resource (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option). |
+| `Resources` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Внедряет ресурс .NET Framework в выходной файл.<br /><br /> Элементы, передаваемые в этот параметр, могут иметь необязательные метаданные `LogicalName` и `Access`. `LogicalName` соответствует аргументу `identifier` параметра `/resource`, а `Access` соответствует аргументу `accessibility-modifier`. Дополнительные сведения см. в разделе [-resource (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option). |
 | `ResponseFiles` | Необязательный параметр `String` .<br /><br /> Задает файл ответов, содержащий команды для этой задачи. Дополнительные сведения см. в документации синтаксиса [@ (указание файла ответа)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option). |
 | `Sources` | Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает один или несколько файлов исходного кода [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | `TargetType` | Необязательный параметр `String` .<br /><br /> Задает формат выходного файла. Этот параметр может принимать одно из следующих значений: `library` (создается библиотека кода), `exe` (создается консольное приложение), `module` (создается модуль) или `winexe` (создается программа Windows). Значение по умолчанию — `library`. Дополнительные сведения см. в разделе [-target (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option). |
@@ -81,19 +80,19 @@ ms.locfileid: "53838337"
 | `Win32Manifest` | Необязательный параметр `String` .<br /><br /> Задает манифест Win32, который требуется включить. |
 | `Win32Resource` | Необязательный параметр `String` .<br /><br /> Вставляет файл ресурсов Win32 (*RES-файл*) в выходной файл. Дополнительные сведения см. в разделе [-win32res (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
-## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса `Microsoft.Build.Tasks.ManagedCompiler`, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, наследующего от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Примечания
+Помимо перечисленных выше параметров, эта задача наследует параметры от класса `Microsoft.Build.Tasks.ManagedCompiler`, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, наследующего от класса <xref:Microsoft.Build.Utilities.ToolTask>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Пример  
- В следующем примере задача `Csc` используется для компиляции исполняемого файла из исходных файлов в коллекции элементов `Compile`.  
+## <a name="example"></a>Пример
+В следующем примере задача `Csc` используется для компиляции исполняемого файла из исходных файлов в коллекции элементов `Compile`.
 
-```xml  
-<CSC  
-    Sources="@(Compile)"  
-    OutputAssembly="$(AppName).exe"  
-    EmitDebugInformation="true" />  
-```  
+```xml
+<CSC
+    Sources="@(Compile)"
+    OutputAssembly="$(AppName).exe"
+    EmitDebugInformation="true" />
+```
 
-## <a name="see-also"></a>См. также  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Задачи](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>См. также
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Задачи](../msbuild/msbuild-tasks.md)

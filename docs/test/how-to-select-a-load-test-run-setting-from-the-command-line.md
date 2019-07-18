@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 47caaa39a1783588994277ba079e64e353a167a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 466ea9a7e0b877af55219be497eefde963e80853
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949907"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Как выполнить выбор параметров запуска нагрузочного теста из командной строки
 
@@ -27,11 +26,11 @@ ms.locfileid: "53925109"
 
 ## <a name="to-change-the-run-setting-from-the-command-line"></a>Изменение параметров запуска из командной строки
 
-1.  Если требуется применять разные параметры запуска из командной строки, чтобы воспользоваться преимуществами стратегии использования контекстных параметров, выполните следующую команду:
+1. Если требуется применять разные параметры запуска из командной строки, чтобы воспользоваться преимуществами стратегии использования контекстных параметров, выполните следующую команду:
 
     `Set Test.UseRunSetting= CorporateStagingWebServer`
 
-2.  Запуск нагрузочного теста с помощью программы mstest:
+2. Запуск нагрузочного теста с помощью программы mstest:
 
     `mstest /testcontainer:loadtest1.loadtest`
 

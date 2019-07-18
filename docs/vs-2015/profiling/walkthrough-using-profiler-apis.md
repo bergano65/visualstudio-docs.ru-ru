@@ -1,14 +1,9 @@
 ---
-title: Пошаговое руководство. Использование интерфейсов API профилировщика | Документы Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Использование API-интерфейсов профилировщика | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
 - performance tools, walkthroughs
@@ -16,15 +11,15 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3ab545d338defb3876145c8ac648574484fbf89a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6bcb7be3e2db3d8a48f03d971e104f1e64e1153c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435662"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. Использование API-интерфейсов профилировщика
+# <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. С помощью интерфейсов API Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом пошаговом руководстве для демонстрации возможностей интерфейсов API Средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] используется приложение на C#. Интерфейсы API профилировщика используются для ограничения объема данных, собираемых во время профилирования с инструментированием.  
@@ -62,12 +57,12 @@ DataCollection.CurrentId);
   
 #### <a name="to-create-the-code-to-profile"></a>Создание кода для профилирования  
   
-1.  Создайте проект C# в Visual Studio или используйте сборку из командной строки в зависимости от ваших предпочтений.  
+1. Создайте проект C# в Visual Studio или используйте сборку из командной строки в зависимости от ваших предпочтений.  
   
     > [!NOTE]
-    >  При сборке должна использоваться библиотека Microsoft.VisualStudio.Profiler.dll, расположенная в каталоге Microsoft Visual Studio 9\Team Tools\Performance Tools.  
+    > При сборке должна использоваться библиотека Microsoft.VisualStudio.Profiler.dll, расположенная в каталоге Microsoft Visual Studio 9\Team Tools\Performance Tools.  
   
-2.  Скопируйте и вставьте в проект следующий код:  
+2. Скопируйте и вставьте в проект следующий код:  
   
     ```  
     using System;  
@@ -146,23 +141,23 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Сбор и просмотр данных из командной строки  
   
-1.  Скомпилируйте отладочную версию примера кода, созданного ранее в процедуре "Создание кода для профилирования" этого пошагового руководства.  
+1. Скомпилируйте отладочную версию примера кода, созданного ранее в процедуре "Создание кода для профилирования" этого пошагового руководства.  
   
-2.  В случае профилирования управляемого приложения установите соответствующие переменные среды с помощью следующей команды:  
+2. В случае профилирования управляемого приложения установите соответствующие переменные среды с помощью следующей команды:  
   
      **VsPefCLREnv /traceon**  
   
-3.  Введите следующую команду: **VSInstr \<имя_файла>.exe**  
+3. Введите следующую команду: **VSInstr \<имя_файла>.exe**  
   
-4.  Введите следующую команду: **VSPerfCmd /start:trace /output:\<имя_файла>.vsp**  
+4. Введите следующую команду: **VSPerfCmd /start:trace /output:\<имя_файла>.vsp**  
   
-5.  Введите следующую команду: **VSPerfCmd /globaloff**  
+5. Введите следующую команду: **VSPerfCmd /globaloff**  
   
-6.  Выполните программу.  
+6. Выполните программу.  
   
-7.  Введите следующую команду: **VSPerfCmd /shutdown**  
+7. Введите следующую команду: **VSPerfCmd /shutdown**  
   
-8.  Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**  
+8. Введите следующую команду: **VSPerfReport /calltrace:\<имя_файла>.vsp**  
   
      В текущем каталоге создается CSV-файл, содержащий результирующие данные производительности.  
   
@@ -171,6 +166,3 @@ DataCollection.CurrentId);
  [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Начало работы](../profiling/getting-started-with-performance-tools.md)   
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Указание обработчиков файлов для расширений имен файлов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d0a4f0547da10a4d519d315000a0f35a19a56287
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0fe2f26a959fc6a185bf244bfa4571846b7991a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447189"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Указание обработчиков файлов для расширений имен файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```  
   
 > [!NOTE]
->  Ключи, указание приложений, в списке HKEY_CLASSES_ROOT\Applications.  
+> Ключи, указание приложений, в списке HKEY_CLASSES_ROOT\Applications.  
   
  Добавление ключа OpenWithList, объявляется, что оно поддерживает расширение файла, даже если другое приложение принимает владельца модуля. Это может быть следующей версии приложения или другое приложение.  
   
@@ -57,7 +52,7 @@ HKEY_CLASSES_ROOT\
  Вы можете зарегистрировать различных приложений, которые способны для открытия файлов с определенным расширением, добавив с контролем версий идентификаторы ProgID в качестве значения для HKEY_CLASSES_ROOT\\*\<расширения >* \OpenWithProgids ключ. Этот раздел реестра со списком альтернативных идентификаторы ProgID, связанный с расширением файла. Приложения, связанные с перечисленных идентификаторы ProgID отображаются в **открыть с помощью**_название продукта_ подменю. Если же приложение, указанных в свойствах `OpenWithList` и `OpenWithProgids` ключи, операционная система объединяет дубликаты.  
   
 > [!NOTE]
->  `OpenWithProgids` Ключ поддерживается только в Windows XP. Так как в других операционных систем игнорировать этот ключ, не используйте его как только регистрация для обработчиков файлов. Этот ключ используется для повышения удобства работы пользователя в Windows XP.  
+> `OpenWithProgids` Ключ поддерживается только в Windows XP. Так как в других операционных систем игнорировать этот ключ, не используйте его как только регистрация для обработчиков файлов. Этот ключ используется для повышения удобства работы пользователя в Windows XP.  
   
  Добавьте нужный идентификаторы ProgID в качестве значения типа REG_NONE. Ниже приведен пример регистрации идентификаторы ProgID для расширения файла (. *ext*).  
   
@@ -87,4 +82,3 @@ HKEY_CLASSES_ROOT\
 ## <a name="see-also"></a>См. также  
  [О расширения имен файлов](../extensibility/about-file-name-extensions.md)   
  [Регистрация команд для расширений имен файлов](../extensibility/registering-verbs-for-file-name-extensions.md)
-

@@ -1,13 +1,9 @@
 ---
 title: Команда псевдонимов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - aliases, Visual Studio commands
 - Visual Studio, commands
@@ -20,17 +16,16 @@ ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 346225b43cd7a08d00501500f596545d10ccd3ed
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53962286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160882"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Псевдонимы предоставляют средства для ввода команд в **Найти** или в окне **Команда**, сокращая текст, необходимый для набора выполняемых команд. Например, чтобы не вводить `>File.OpenFile` для отображения диалогового окна **Открытие файла**, можно использовать стандартный псевдоним `>of`.
 
@@ -76,7 +71,7 @@ ms.locfileid: "53962286"
 |[Команда Start](../../ide/reference/start-command.md)|н|Debug.Start|
 |[Команда "Перейти"](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Перейти к скобке|GotoBrace|Edit.GotoBrace|
-|F1Help|Справка|Help.F1Help|
+|F1Help|Help|Help.F1Help|
 |Режим интерпретации|immed|Tools.ImmediateMode|
 |Вставить файл как текст|InsertFile|Edit.InsertFileAsText|
 |[Команда "Вывести стек вызовов"](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -132,5 +127,5 @@ ms.locfileid: "53962286"
 |Вывести процессы|&#124;|Debug.ListProcesses|
 |[Команда "Вывести потоки"](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md) [командное окно](../../ide/reference/command-window.md) [найти/команда-окно](../../ide/find-command-box.md)

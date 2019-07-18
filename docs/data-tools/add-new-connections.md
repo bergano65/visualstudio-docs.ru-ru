@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 73b09384bd57fd4ea0890d107ce641e4b615559f
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
-ms.translationtype: MTE95
+ms.openlocfilehash: b01af2aa269cbaddbd84d24827b1a77e97d52d8a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818538"
 ---
 # <a name="add-new-connections"></a>Добавление новых подключений
 
@@ -25,7 +24,7 @@ ms.locfileid: "54154222"
 
 - Cloud Explorer
 
-   Установить это окно вручную как расширение Visual Studio, выбрав **средства** > **расширения и обновления** > **Online**  >  **Visual Studio Marketplace**. Предоставляет специализированные функции для просмотра и подключение к службам Azure.
+   Установить это окно вручную, как расширение Visual Studio из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS). Предоставляет специализированные функции для просмотра и подключение к службам Azure.
 
 - Обозреватель объектов SQL Server
 

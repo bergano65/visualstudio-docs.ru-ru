@@ -1,25 +1,22 @@
 ---
 title: Связывание обновлений модели UML с использованием транзакций | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, transactions
 ms.assetid: a1df6c38-a3d1-4a3f-82bc-c8f363ab916e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb8bb5dfd5238871324b786f120d618d70f14b43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191719"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Связывание обновлений модели UML с использованием транзакций
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,15 +62,15 @@ ms.locfileid: "51800410"
   
  Обратите внимание на следующее:  
   
--   Необходимо всегда включать `Commit()` в конце транзакции. В случае ликвидации транзакции без фиксации выполняется ее откат. То есть модель будет восстановлена в том состоянии, которое предшествовало началу транзакции.  
+- Необходимо всегда включать `Commit()` в конце транзакции. В случае ликвидации транзакции без фиксации выполняется ее откат. То есть модель будет восстановлена в том состоянии, которое предшествовало началу транзакции.  
   
--   Если возникает исключение, не перехватываемое внутри транзакции, выполняется ее откат. Часто блок `using` транзакции заключается внутрь блока `try…catch`.  
+- Если возникает исключение, не перехватываемое внутри транзакции, выполняется ее откат. Часто блок `using` транзакции заключается внутрь блока `try…catch`.  
   
--   Вы можете вкладывать транзакции.  
+- Вы можете вкладывать транзакции.  
   
--   Для `BeginTransaction()` можно указать любое непустое имя.  
+- Для `BeginTransaction()` можно указать любое непустое имя.  
   
--   Эти транзакции затрагивают только хранилище моделей UML. Транзакции моделирования не затрагивают следующее: переменные, внешние хранилища, такие как файлы и базы данных, схемы слоев и модели кода.  
+- Эти транзакции затрагивают только хранилище моделей UML. Транзакции моделирования не затрагивают следующее: переменные, внешние хранилища, такие как файлы и базы данных, схемы слоев и модели кода.  
   
 ## <a name="example"></a>Пример  
   
@@ -115,6 +112,3 @@ ms.locfileid: "51800410"
  [Программирование с UML API](../modeling/programming-with-the-uml-api.md)   
  [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

@@ -1,19 +1,18 @@
 ---
 title: Режим полосы и режим карты для полосы прокрутки
 ms.date: 09/25/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5fc435f2fe350c177cbff0e526d2f0221a93b89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77f7db396b814eb9163c055b8fadb8793432acee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548361"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Как выполнить Настройка полосы прокрутки
 
@@ -27,7 +26,7 @@ ms.locfileid: "53965075"
 
    2. Установите флажок **Показывать примечания над вертикальной полосой прокрутки**, а затем выберите нужные заметки. Доступны следующие заметки:
 
-      - изменена
+      - изменения
       - метки
       - ошибки
       - положение курсора.

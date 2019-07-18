@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8ed24958d0f8bf214aa701261df3dacea56107c6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: e5dfb9a6489fed2c21d05799e9196c813a224571
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422956"
 ---
 # <a name="t4-assembly-directive"></a>Директива Assembly T4
 
@@ -22,7 +21,7 @@ ms.locfileid: "53844279"
  Общие сведения о создании текстовых шаблонов, см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
->  В текстовом шаблоне времени выполнения (предварительно обработанном) директива `assembly` не требуется. Вместо этого добавить нужные сборки **ссылки** проекта Visual Studio.
+> В текстовом шаблоне времени выполнения (предварительно обработанном) директива `assembly` не требуется. Вместо этого добавить нужные сборки **ссылки** проекта Visual Studio.
 
 ## <a name="using-the-assembly-directive"></a>Использование директивы Assembly
  Синтаксис директивы таков:

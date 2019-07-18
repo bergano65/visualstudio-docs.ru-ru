@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IDebugFormatter | Документы Microsoft
+title: Интерфейс IDebugFormatter | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97f95aa1ecb91f6caca187939a79a6f09cd2108f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f35d1b811a017895ca40f3325bd0ac456070184f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979231"
 ---
 # <a name="idebugformatter-interface"></a>Интерфейс IDebugFormatter
-Позволяет языка или интегрированной среды разработки, чтобы настроить преобразование значения типа VARIANT или типов VARTYPE и строки.  
+Позволяет языку или интегрированной среде разработки настроить преобразование значениями VARIANT или типами VARTYPE и строками.  
   
  Помимо методов, наследуемых от `IUnknown`, `IDebugFormatter` интерфейс предоставляет следующие методы.  
   
@@ -31,5 +30,5 @@ ms.locfileid: "24729174"
 |Метод|Описание|  
 |------------|-----------------|  
 |[IDebugFormatter::GetStringForVariant](../../winscript/reference/idebugformatter-getstringforvariant.md)|Возвращает строку, представляющую заданного значения типа VARIANT.|  
-|[IDebugFormatter::GetVariantForString](../../winscript/reference/idebugformatter-getvariantforstring.md)|Возврат свойства типа VARIANT, содержащего заданную строку.|  
-|[IDebugFormatter::GetStringForVarType](../../winscript/reference/idebugformatter-getstringforvartype.md)|Возвращает строку, представляющую указанное значение VARTYPE.|
+|[IDebugFormatter::GetVariantForString](../../winscript/reference/idebugformatter-getvariantforstring.md)|Возвращает значение VARIANT, содержащая заданную строку.|  
+|[IDebugFormatter::GetStringForVarType](../../winscript/reference/idebugformatter-getstringforvartype.md)|Возвращает строку, представляющую данное значение VARTYPE.|

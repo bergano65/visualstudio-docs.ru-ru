@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1887f1e5eb2ac77520f54c50d0f4ab16772f5e17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 86ed8346a27a02eb7e04c1f7a9fa361b0e03431a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785960"
 ---
 # <a name="load-test-scenario-properties"></a>Свойства сценария тестовой нагрузки
 
@@ -49,7 +48,7 @@ ms.locfileid: "53843623"
 |**Доля новых пользователей**|Численное значение, задающее процент новых пользователей (впервые посещающих веб-сайт) в сценарии.<br /><br />Дополнительные сведения см. в разделе [Как Задание процента виртуальных пользователей, которые могут использовать данные веб-кэша](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
 |**Профиль обработки**|Указывает, будет ли в сценарии использоваться **Нормальное распределение**, или же профиль обработки может принимать значение **Вкл** или **Выкл**.<br /><br />Дополнительные сведения см. в статье [Изменение значений времени обработки для имитации задержек действий человека на веб-сайте](../test/edit-think-times-in-load-test-scenarios.md).|
 
-## <a name="timing"></a>Расписание
+## <a name="timing"></a>Временные свойства
 
 |Свойство.|Определение|
 |-|----------------|

@@ -1,9 +1,8 @@
 ---
 title: Устранение ошибок установки или обновления
 description: Иногда возникают проблемы. Если происходит сбой установки или обновления Visual Studio, эта страница может помочь решить проблему.
-ms.date: 08/01/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -11,17 +10,19 @@ helpviewer_keywords:
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 413c8a9874669e180a6436bf817704919da48049
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997437"
 ---
-# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Устранение неполадок при установке и обновлении Visual Studio 2017
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Устранение неполадок при установке и обновлении Visual Studio
 
 > [!IMPORTANT]
 > Возможно, у вас возникли проблемы с установкой? Мы готовы помочь. Мы предлагаем для поддержки [**чат в реальном времени**](https://visualstudio.microsoft.com/vs/support/#talktous) (только на английском языке).
@@ -34,7 +35,17 @@ ms.locfileid: "53910117"
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Шаг 1. Проверьте, не связана ли эта ошибка с известными проблемами
 
+::: moniker range="vs-2017"
+
 Существуют несколько известных проблем с установщиком Visual Studio, и корпорация Майкрософт работает над их устранением. Чтобы найти способ обойти эту проблему, проверьте [раздел известных проблем в заметках о выпуске](/visualstudio/releasenotes/vs2017-relnotes#-known-issues).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Существуют несколько известных проблем с установщиком Visual Studio, и корпорация Майкрософт работает над их устранением. Чтобы найти способ обойти эту проблему, проверьте [раздел известных проблем в заметках о выпуске](/visualstudio/releases/2019/release-notes#-known-issues).
+
+::: moniker-end
 
 ### <a name="step-2---check-with-the-developer-community"></a>Шаг 2. Обратитесь к сообществу разработчиков
 
@@ -47,20 +58,47 @@ ms.locfileid: "53910117"
 > [!NOTE]
 > С помощью следующей процедуры можно переустановить файлы Visual Studio Installer и сбросить метаданные установки.
 
+::: moniker range="vs-2017"
+
 1. Закройте установщик Visual Studio.
 2. Удалите каталог установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Запустите загрузчик установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/downloads/), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
+3. Запустите загрузчик установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
 4. Снова попробуйте установить или обновить Visual Studio. Если запуск установщика снова завершится ошибкой, переходите к следующему шагу.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Закройте установщик Visual Studio.
+2. Удалите каталог установщика Visual Studio. Как правило, это каталог `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
+3. Запустите загрузчик установщика Visual Studio. Файл загрузчика с именем в формате `vs_[Visual Studio edition]__*.exe` можно найти в папке загрузок. Если вы не найдете это приложение, можно заново скачать загрузчик со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), нажав кнопку **Скачать** для нужного выпуска Visual Studio. Запустите этот исполняемый файл, чтобы сбросить метаданные установки.
+4. Снова попробуйте установить или обновить Visual Studio. Если запуск установщика снова завершится ошибкой, переходите к следующему шагу.
+
+::: moniker-end
 
 ### <a name="step-4---report-a-problem"></a>Шаг 4. Сообщите о проблеме
 
 В некоторых случаях, например при повреждении файлов, требуется частный подход. Чтобы нам было проще помочь вам, выполните следующее:
+
+::: moniker range="vs-2017"
 
 1. Соберите файлы журналов установки. Подробные сведения см. в разделе [Как получить журналы установки Visual Studio](#how-to-get-visual-studio-installation-logs).
 2. Откройте установщик Visual Studio и нажмите кнопку **Сообщить о проблеме**, чтобы открыть средство обратной связи Visual Studio.
 ![Чтобы открыть средство обратной связи, можно перейти к кнопе "Предоставление отзыва" с помощью клавиши табуляции](media/report-a-problem.png)
 3. Присвойте заголовок вашему отчету об ошибке и опишите все важные сведения. Нажмите кнопку **Далее**, чтобы перейти к разделу **Вложения**, а затем вложите созданный файл журнала (обычно этот файл находится по пути `%TEMP%\vslogs.zip`).
 4. Щелкните **Далее**, чтобы просмотреть свой отчет об ошибках, а затем нажмите кнопку **Отправить**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Соберите файлы журналов установки. Подробные сведения см. в разделе [Как получить журналы установки Visual Studio](#how-to-get-visual-studio-installation-logs).
+2. Откройте установщик Visual Studio и нажмите кнопку **Сообщить о проблеме**, чтобы открыть средство обратной связи Visual Studio.
+![Чтобы открыть средство обратной связи, можно перейти к кнопе "Предоставление отзыва" с помощью клавиши табуляции](media/vs-2019/vs-installer-report-problem.png)
+3. Присвойте заголовок вашему отчету об ошибке и опишите все важные сведения. Нажмите кнопку **Далее**, чтобы перейти к разделу **Вложения**, а затем вложите созданный файл журнала (обычно этот файл находится по пути `%TEMP%\vslogs.zip`).
+4. Щелкните **Далее**, чтобы просмотреть свой отчет об ошибках, а затем нажмите кнопку **Отправить**.
+
+::: moniker-end
 
 ### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>Шаг 5. Выполнение программы InstallCleanup.exe для удаления файлов установки
 
@@ -85,9 +123,9 @@ ms.locfileid: "53910117"
 
 ## <a name="how-to-get-visual-studio-installation-logs"></a>Получение журналов установки Visual Studio
 
-Для устранения большинства неполадок при установке необходимы журналы установки. При отправке проблемы с помощью средства [сообщения о проблеме](../ide/how-to-report-a-problem-with-visual-studio-2017.md) в Visual Studio Installer эти журналы автоматически включаются в отчет.
+Для устранения большинства неполадок при установке необходимы журналы установки. При отправке проблемы с помощью средства [сообщения о проблеме](../ide/how-to-report-a-problem-with-visual-studio.md) в Visual Studio Installer эти журналы автоматически включаются в отчет.
 
-Если вы обращаетесь в службу поддержки Майкрософт, для отправки этих журналов установки может понадобиться [средство сбора журналов для Microsoft Visual Studio и .NET Framework](https://aka.ms/vscollect). Средство сбора журналов собирает журналы установки для всех компонентов, устанавливаемых программой Visual Studio 2017, включая .NET Framework, пакет SDK для Windows и SQL Server. Оно также собирает сведения о компьютере, данные инвентаризации установщика Windows и сведения журнала событий Windows для Visual Studio Installer, установщика Windows и восстановления системы.
+Если вы обращаетесь в службу поддержки Майкрософт, для отправки этих журналов установки может понадобиться [средство сбора журналов для Microsoft Visual Studio и .NET Framework](https://aka.ms/vscollect). Средство сбора журналов собирает журналы установки для всех компонентов, устанавливаемых Visual Studio, включая .NET Framework, Windows SDK и SQL Server. Оно также собирает сведения о компьютере, данные инвентаризации установщика Windows и сведения журнала событий Windows для Visual Studio Installer, установщика Windows и восстановления системы.
 
 Чтобы собрать журналы, выполните указанные ниже действия.
 
@@ -105,7 +143,7 @@ ms.locfileid: "53910117"
 
 ## <a name="see-also"></a>См. также
 
-* [Удаление Visual Studio 2017](remove-visual-studio.md)
+* [Удаление Visual Studio](remove-visual-studio.md)
 * [Установка и использование Visual Studio и служб Azure, расположенных за брандмауэром или прокси-сервером](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Средства для обнаружения экземпляров Visual Studio и управления ими](tools-for-managing-visual-studio-instances.md)
 * [Руководство администратора Visual Studio](visual-studio-administrator-guide.md)

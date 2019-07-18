@@ -1,26 +1,21 @@
 ---
 title: Команда реализации | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: be1bcecb740fb0c375d0f461639a8b0d5e40669a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195063"
 ---
 # <a name="command-implementation"></a>Реализация команд
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -74,23 +69,23 @@ if ( null != mcs )
   
 - Если реализации любого из этих методов распознает как идентификатор GUID, так и команды, то метод должен настроить поле флаги команды каждой из команд (в `prgCmds` параметр), используя следующие флаги:  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Если команда поддерживается.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Если команда поддерживается.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Если команда не должны быть видимыми.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Если команда не должны быть видимыми.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Если команда включена и отображается для были проверены.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Если команда включена и отображается для были проверены.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Если команда включена.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Если команда включена.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Если команда должен быть скрыт, если он отображается в контекстном меню.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Если команда должен быть скрыт, если он отображается в контекстном меню.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Если команда выполняется в контроллере меню и не включен, но его раскрывающееся меню списка не является пустым и по-прежнему доступна. (Этот флаг используется редко.)  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Если команда выполняется в контроллере меню и не включен, но его раскрывающееся меню списка не является пустым и по-прежнему доступна. (Этот флаг используется редко.)  
   
 - Если команда был определен в vsct-файл с `TextChanges` флаг, задайте следующие параметры:  
   
-  -   Задайте `rgwz` элемент `pCmdText` параметр новый текст команды.  
+  - Задайте `rgwz` элемент `pCmdText` параметр новый текст команды.  
   
-  -   Задайте `cwActual` элемент `pCmdText` размер командной строки.  
+  - Задайте `cwActual` элемент `pCmdText` размер командной строки.  
   
   Также убедитесь, что текущий контекст не функцию автоматизации, если команда специально предназначен для обработки функций автоматизации.  
   
@@ -144,4 +139,3 @@ public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pv
   
 ## <a name="see-also"></a>См. также  
  [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

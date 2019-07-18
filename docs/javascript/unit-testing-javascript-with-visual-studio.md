@@ -1,24 +1,24 @@
 ---
-title: Модульное тестирование в Node.js
-description: Visual Studio поддерживает код JavaScript для модульного тестирования с помощью инструментов Node.js для Visual Studio
+title: Модульное тестирование JavaScript и TypeScript
+description: Visual Studio поддерживает код JavaScript и TypeScript для модульного тестирования с помощью инструментов Node.js для Visual Studio
 ms.date: 06/06/2018
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a65fc53f72e2e7a90b03f376ced55fffbe9ecbf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ad0105cffc99894134dc58af7c71c9f95bceace
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840580"
 ---
-# <a name="unit-testing-in-nodejs"></a>Модульное тестирование в Node.js
+# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Модульное тестирование JavaScript и TypeScript в Visual Studio
 
 Инструменты Node.js для Visual Studio позволяют писать и выполнять модульные тесты с помощью самых популярных платформ JavaScript без необходимости переключаться на командную строку.
 

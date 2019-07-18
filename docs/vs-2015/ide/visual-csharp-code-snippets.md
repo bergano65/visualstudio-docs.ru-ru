@@ -1,14 +1,9 @@
 ---
 title: Фрагменты кода Visual C# | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
@@ -19,13 +14,13 @@ ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4655ea7160d353fc8735a9025f36de368f247ba8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297418"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698183"
 ---
 # <a name="visual-c-code-snippets"></a>Фрагменты кода Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,52 +36,49 @@ ms.locfileid: "49297418"
   
 |Имя (или сокращенное имя)|Описание|Допустимые места для вставки фрагмента|  
 |--------------------------|-----------------|---------------------------------------|  
-|#if|Создает директивы [#if](http://msdn.microsoft.com/library/48cabbff-ca82-491f-a56a-eeccd528c7c2) и [#endif](http://msdn.microsoft.com/library/6a5fca55-5aee-441f-86f6-1c99fbe9ec05).|В любом месте.|  
-|#region|Создает директивы [#region](http://msdn.microsoft.com/library/672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4) и [#endregion](http://msdn.microsoft.com/library/16099660-91b2-49e5-9646-77f9ef069526).|В любом месте.|  
+|#if|Создает директивы [#if](https://msdn.microsoft.com/library/48cabbff-ca82-491f-a56a-eeccd528c7c2) и [#endif](https://msdn.microsoft.com/library/6a5fca55-5aee-441f-86f6-1c99fbe9ec05).|В любом месте.|  
+|#region|Создает директивы [#region](https://msdn.microsoft.com/library/672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4) и [#endregion](https://msdn.microsoft.com/library/16099660-91b2-49e5-9646-77f9ef069526).|В любом месте.|  
 |~|Создает деструктор для включающего класса.|Внутри класса.|  
 |Атрибут|Создает объявление класса, производного от <xref:System.Attribute>.|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
-|checked|Создает блок [checked](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|checked|Создает блок [checked](https://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
 |класс|Создает объявление класса.|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
 |ctor|Создает конструктор для включающего класса.|Внутри класса.|  
 |cw|Создает вызов <xref:System.Console.WriteLine%2A>.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|do|Создает [сделать](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb) `while` цикла.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|else|Создает [else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2) блок.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|перечисление|Создает объявление типа [enum](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
+|do|Создает цикл [do](https://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|else|Создает [else](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2) блок.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|перечисление|Создает объявление типа [enum](https://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
 |equals|Создает объявление метода, которое переопределяет метод <xref:System.Object.Equals%2A>, определенный в классе <xref:System.Object>.|Внутри класса или структуры.|  
 |exception|Создает объявление класса, производного от исключения (по умолчанию <xref:System.Exception>).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
-|for|Создает цикл [for](http://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|foreach|Создает цикл [foreach](http://msdn.microsoft.com/library/5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|forr|Создает цикл [for](http://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8), уменьшающий переменную цикла после каждой итерации.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|if|Создает блок [if](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|for|Создает цикл [for](https://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|foreach|Создает цикл [foreach](https://msdn.microsoft.com/library/5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|forr|Создает цикл [for](https://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8), уменьшающий переменную цикла после каждой итерации.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|if|Создает блок [if](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
 |индексатор|Создает объявление индексатора.|Внутри класса или структуры.|  
-|интерфейс|Создает объявление [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
+|интерфейс|Создает объявление [interface](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
 |invoke|Создает блок, который безопасно вызывает событие.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
 |iterator|Создает итератор.|Внутри класса или структуры.|  
 |iterindex|Создает именованную пару из итератора и индексатора с помощью вложенного класса.|Внутри класса или структуры.|  
-|lock|Создает блок [lock](http://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|lock|Создает блок [lock](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
 |mbox|Создает вызов <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Также может потребоваться добавить ссылку на библиотеку System.Windows.Forms.dll.|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|namespace|Создает объявление [namespace](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f).|Внутри пространства имен (включая глобальное пространство имен).|  
-|prop|Создает объявление [автоматически реализуемого свойства](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).|Внутри класса или структуры.|  
+|namespace|Создает объявление [namespace](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f).|Внутри пространства имен (включая глобальное пространство имен).|  
+|prop|Создает объявление [автоматически реализуемого свойства](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).|Внутри класса или структуры.|  
 |propfull|Создает объявление свойства с методами доступа get и set.|Внутри класса или структуры.|  
-|propg|Создает доступное только для чтения [автоматически реализуемое свойство](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7) с закрытым методом доступа set.|Внутри класса или структуры.|  
-|sim|Создает объявление метода [static](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[int](http://msdn.microsoft.com/library/212447b4-5d2a-41aa-88ab-84fe710bdb52) Main.|Внутри класса или структуры.|  
-|структура|Создает объявление [struct](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
-|svm|Создает объявление метода [static](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[void](http://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4) Main.|Внутри класса или структуры.|  
-|switch|Создает блок [switch](http://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|try|Создает блок [try-catch](http://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|tryf|Создает блок [try-finally](http://msdn.microsoft.com/library/c27623fb-7261-4464-862c-7a369d3c8f0a).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|unchecked|Создает блок [unchecked](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|unsafe|Создает блок [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
-|использование|Создает директиву [using](http://msdn.microsoft.com/library/b42b8e61-5e7e-439c-bb71-370094b44ae8).|Внутри пространства имен (включая глобальное пространство имен).|  
-|while|Создает цикл [while](http://msdn.microsoft.com/library/72a0765c-6852-4aca-b327-4a11cb7f5c59).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|propg|Создает доступное только для чтения [автоматически реализуемое свойство](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7) с закрытым методом доступа set.|Внутри класса или структуры.|  
+|sim|Создает объявление метода [static](https://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[int](https://msdn.microsoft.com/library/212447b4-5d2a-41aa-88ab-84fe710bdb52) Main.|Внутри класса или структуры.|  
+|структура|Создает объявление [struct](https://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c).|Внутри пространства имен (включая глобальное пространство имен), класса или структуры.|  
+|svm|Создает объявление метода [static](https://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[void](https://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4) Main.|Внутри класса или структуры.|  
+|switch|Создает блок [switch](https://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|try|Создает блок [try-catch](https://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|tryf|Создает блок [try-finally](https://msdn.microsoft.com/library/c27623fb-7261-4464-862c-7a369d3c8f0a).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|unchecked|Создает блок [unchecked](https://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|unsafe|Создает блок [unsafe](https://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
+|использование|Создает директиву [using](https://msdn.microsoft.com/library/b42b8e61-5e7e-439c-bb71-370094b44ae8).|Внутри пространства имен (включая глобальное пространство имен).|  
+|while|Создает цикл [while](https://msdn.microsoft.com/library/72a0765c-6852-4aca-b327-4a11cb7f5c59).|Внутри метода, индексатора, метода доступа к свойству или событию.|  
   
 ## <a name="see-also"></a>См. также  
  [Функции фрагмента кода](../ide/code-snippet-functions.md)   
  [Фрагменты кода](../ide/code-snippets.md)   
- [Практическое руководство. Создание нового фрагмента кода с подстановочными параметрами](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
+ [Практическое руководство. Создание нового фрагмента кода с помощью замены](https://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Параметры шаблона](../ide/template-parameters.md)   
- [Практическое: Использование окружающих фрагментов кода](../ide/how-to-use-surround-with-code-snippets.md)   
- [Практическое руководство. Восстановление фрагментов кода для оптимизации в C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
-
-
-
+ [Практическое руководство. Использование окружающих фрагментов кода](../ide/how-to-use-surround-with-code-snippets.md)   
+ [Практическое руководство. Восстановление фрагментов кода для рефакторинга в C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

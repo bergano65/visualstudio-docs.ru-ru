@@ -1,24 +1,23 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", XML, \"Форматирование\""
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Formatting
 ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0d8420df205d49df3c6799e62adbc4e759a4aed2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969271"
 ---
 # <a name="options-text-editor-xml-formatting"></a>"Параметры", "Текстовый редактор", XML, "Форматирование"
 
-Используйте страницу свойств **Форматирование** для настройки форматирования элементов и атрибутов в документах XML. Чтобы открыть диалоговое окно **Параметры**, в меню **Сервис** выберите пункт **Параметры**. Чтобы открыть страницу свойств **Форматирование**, разверните узел **Текстовый редактор**  >  **XML**  >  **Форматирование**.
+Используйте страницу параметров **Форматирование** для настройки форматирования элементов и атрибутов в документах XML. Чтобы получить доступ к параметрам форматирования XML, выберите **Сервис** > **Параметры** > **Текстовый редактор** > **XML**, а затем выберите **Форматирование**.
 
 ## <a name="attributes"></a>Атрибуты
 
@@ -31,7 +30,7 @@ ms.locfileid: "53826524"
 
 **Выравнивать атрибуты, чтобы каждый был на отдельной строке**
 
-Выравнивает второй и последующий атрибуты по вертикали в соответствии с отступом первого атрибута. Следующий XML-текст является примером того, как выравниваются атрибуты.
+Выравнивает второй и последующий атрибуты по вертикали в соответствии с отступом первого атрибута. Следующий XML-текст является примером того, как выравниваются атрибуты:
 
 ```xml
 <item id = "123-A"
@@ -67,5 +66,5 @@ ms.locfileid: "53826524"
 
 ## <a name="see-also"></a>См. также
 
-- [Практическое руководство. создание XML-документации (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Создание кода](../code-generation-in-visual-studio.md)
+- [Параметры HTML — прочее](options-text-editor-xml-miscellaneous.md)
+- [Средства XML в Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

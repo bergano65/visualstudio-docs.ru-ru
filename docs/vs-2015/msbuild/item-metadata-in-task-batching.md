@@ -1,14 +1,9 @@
 ---
 title: Метаданные элементов в пакетной обработке задач | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
@@ -18,18 +13,17 @@ ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436796"
 ---
 # <a name="item-metadata-in-task-batching"></a>Метаданные элементов в пакетной обработке задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] может разделять списки элементов на разные категории или пакеты на основе метаданных элементов и поочередно выполнять задачи с использованием каждого пакета. Не так просто понять, какие именно элементы передаются с каким пакетом. В этом разделе рассматриваются наиболее распространенные сценарии, в которых используется пакетная обработка.  
   
 - Разделение списка элементов на пакеты  
@@ -92,7 +86,7 @@ ms.locfileid: "49923788"
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] может разделить несколько списков элементов на пакеты на основе одинаковых метаданных. Это упрощает деление различных списков элементов на пакеты для создания нескольких сборок. Например, у вас может быть список элементов с CS-файлами, разделенный на пакет приложения и пакет сборки, и список элементов с файлами ресурсов, разделенный на пакет приложения и пакет сборки. Затем, используя пакетную обработку, можно передать эти списки элементов одной задаче и создать приложение и сборку.  
   
 > [!NOTE]
->  Если в передаваемом задаче списке элементов нет элементов с указанными метаданными, каждый элемент из этого списка передается во все пакеты.  
+> Если в передаваемом задаче списке элементов нет элементов с указанными метаданными, каждый элемент из этого списка передается во все пакеты.  
   
  В следующем примере показано, как разделить несколько списков элементов на пакеты на основе метаданных элементов. Списки элементов `ExampColl` и `ExampColl2` делятся на три пакета на основе метаданных элементов `Number`. Если в атрибуте `Text` есть `%(Number)`, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] получает уведомление о том, что необходимо выполнить пакетную обработку. Списки элементов `ExampColl` и `ExampColl2` делятся на три пакета на основе метаданных `Number`, а каждый пакет отдельно передается задаче.  
   
@@ -226,13 +220,10 @@ Identity: "Item6" -- Items in ExampColl: Item6
 Items in ExampColl: Item2;Item5  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Общеизвестные метаданные элементов MSBuild](../msbuild/msbuild-well-known-item-metadata.md)   
  [Элемент Item (MSBuild)](../msbuild/item-element-msbuild.md)   
  [Элемент ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Пакетная обработка](../msbuild/msbuild-batching.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
-
-
-

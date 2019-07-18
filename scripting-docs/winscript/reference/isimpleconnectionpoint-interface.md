@@ -1,8 +1,7 @@
 ---
-title: Интерфейс ISimpleConnectionPoint | Документы Microsoft
+title: Интерфейс ISimpleConnectionPoint | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de40f66a9e5721b8dacac634c6fb77982017c155
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0d18c8f9eef6ddb1a38473eb19984bd9cf7dbd96
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001505"
 ---
 # <a name="isimpleconnectionpoint-interface"></a>Интерфейс ISimpleConnectionPoint
-Предоставляет простой способ для описания и перечисление событий, произошедших в точке конкретного соединения. Этот интерфейс также позволяет легко подключать `IDispatch` объекта на эти события. Этот интерфейс реализован, процесс отладки Manager (PDM) и используемые обработчиков сценариев.  
+Предоставляет простой способ для описания и перечисление событий, произошедших в конкретной точке подключения. Этот интерфейс также позволяет легко подключить `IDispatch` объекта на эти события. Этот интерфейс реализуется путем процесс отладки Manager (PDM) и потребляемых обработчиков сценариев.  
   
  Этот интерфейс доступен из `IDebugHelper::CreateSimpleConnectionPoint`.  
   
@@ -32,7 +31,7 @@ ms.locfileid: "24733914"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[ISimpleConnectionPoint::Advise](../../winscript/reference/isimpleconnectionpoint-advise.md)|Устанавливает соединение между объектом точки простого подключения и приемником клиента.|  
+|[ISimpleConnectionPoint::Advise](../../winscript/reference/isimpleconnectionpoint-advise.md)|Устанавливает соединение между объектом точки простого подключения и приемника клиента.|  
 |[ISimpleConnectionPoint::DescribeEvents](../../winscript/reference/isimpleconnectionpoint-describeevents.md)|Возвращает идентификатор DISPID и имя для каждого события в указанном диапазоне событий.|  
 |[ISimpleConnectionPoint::GetEventCount](../../winscript/reference/isimpleconnectionpoint-geteventcount.md)|Возвращает количество событий, предоставленных на этом интерфейсе.|  
 |[ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)|Завершает вспомогательное соединение, установленное ранее при помощи `ISimpleConnectionPoint::Advise`.|  

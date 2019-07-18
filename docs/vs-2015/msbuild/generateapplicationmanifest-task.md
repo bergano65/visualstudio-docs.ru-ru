@@ -1,14 +1,9 @@
 ---
 title: Задача GenerateApplicationManifest | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
 dev_langs:
@@ -24,18 +19,17 @@ ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5c9cb78ff4d3d9542c956a377f6342945d11a0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3493c487c446bb66e99bf98a7c3f5599599801fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424132"
 ---
 # <a name="generateapplicationmanifest-task"></a>Задача GenerateApplicationManifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Создает манифест приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] или собственный манифест. Собственный манифест описывает компонент, определяя для него уникальный идентификатор, а также идентифицируя все составляющие компонент сборки и файлы. Манифест приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] расширяет собственный манифест, задавая точку входа приложения и его уровень безопасности.  
   
 ## <a name="parameters"></a>Параметры  
@@ -50,10 +44,10 @@ ms.locfileid: "49245574"
 |`Dependencies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает список элементов, который определяет набор независимых сборок для созданного манифеста. Каждый элемент может быть дополнительно описан в метаданных, чтобы указать дополнительное состояние развертывания и тип зависимости. Дополнительные сведения см. в разделе "Метаданные элементов" ниже.|  
 |`Description`|Необязательный параметр `String` .<br /><br /> Указывает описание для приложения или компонента.|  
 |`EntryPoint`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Задает отдельный элемент, указывающий точку входа для создаваемой сборки манифеста.<br /><br /> Для манифеста приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] этот параметр указывает сборку, которая выполняется при запуске приложения.|  
-|`ErrorReportUrl`|Необязательный [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Указывает URL-адрес веб-страницы, который отображается в диалоговых окнах отчетов об ошибках во время установок ClickOnce.|  
+|`ErrorReportUrl`|Дополнительный (строковый<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметр.<br /><br /> Указывает URL-адрес веб-страницы, который отображается в диалоговых окнах отчетов об ошибках во время установок ClickOnce.|  
 |`FileAssociations`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Задает список из одного или нескольких типов файлов, сопоставленных с манифестом развертывания ClickOnce.<br /><br /> Сопоставления файлов действительны только при ориентации на платформу .NET Framework 3.5 или более поздней версии.|  
 |`Files`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Включаемые в манифест файлы. Укажите полный путь для каждого файла.|  
-|`HostInBrowser`|Необязательный [логическое значение] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Если `true`, приложение размещается в браузере (как приложения веб-браузера WPF).|  
+|`HostInBrowser`|Необязательный (логический<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) параметр.<br /><br /> Если `true`, приложение размещается в браузере (как приложения веб-браузера WPF).|  
 |`IconFile`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает файл значка приложения. Значок приложения задается в создаваемом манифесте приложения и используется для меню "Пуск" и диалогового окна "Установка и удаление программ". Если этот входной параметр не указан, используется значок по умолчанию. Если задача создает собственный манифест, этот параметр игнорируется.|  
 |`InputManifest`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает входной XML-документ, который служит основой для генератора манифеста. Это позволяет структурированным данным, например определениям безопасности приложений или пользовательским определениям манифестов, отражаться в выходном манифесте. Корневой элемент в XML-документе должен быть узлом сборки в пространстве имен asmv1.|  
 |`IsolatedComReferences`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает COM-компоненты, которые нужно изолировать в создаваемом манифесте. Этот параметр позволяет изолировать COM-компоненты для развертывания "COM без регистрации". Это работает за счет автоматического создания манифеста со стандартными определениями регистрации COM. Однако для правильной работы этой функции COM-компоненты нужно регистрировать на компьютере сборки.|  
@@ -66,12 +60,12 @@ ms.locfileid: "49245574"
 |`Publisher`|Необязательный параметр `String` .<br /><br /> Указывает имя издателя приложения. Если этот параметр не задан, имя выводится из имени зарегистрированного пользователя или из идентификатора создаваемого манифеста. Это имя используется для имени папки в меню "Пуск" и является частью имени, которое отображается в диалоговом окне "Установка и удаление программ".|  
 |`RequiresMinimumFramework35SP1`|Необязательный параметр `Boolean` .<br /><br /> Если задано значение true, приложению требуется платформа .NET Framework 3.5 с пакетом обновления 1 (SP1) или более поздней версии.|  
 |`TargetCulture`|Необязательный параметр `String` .<br /><br /> Идентифицирует язык и региональные параметры приложения и указывает поле `Language` удостоверения сборки для создаваемого манифеста. Если этот параметр не задан, то предполагается, что в приложении не изменяются язык и региональные параметры.|  
-|`TargetFrameworkMoniker`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает моникер целевой платформы.|  
-|`TargetFrameworkProfile`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает профиль целевой платформы.|  
-|`TargetFrameworkSubset`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает имя целевого подмножества платформы .NET Framework.|  
-|`TargetFrameworkVersion`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Задает целевую платформу .NET Framework проекта.|  
+|`TargetFrameworkMoniker`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Задает моникер целевой платформы.|  
+|`TargetFrameworkProfile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Задает профиль целевой платформы.|  
+|`TargetFrameworkSubset`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Задает имя целевого подмножества платформы .NET Framework.|  
+|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Задает целевую платформу .NET Framework проекта.|  
 |`TrustInfoFile`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Задает XML-документ, указывающий уровень безопасности приложения. Корневой элемент в XML-документе должен быть узлом trustInfo в пространстве имен asmv2. Если задача создает собственный манифест, этот параметр игнорируется.|  
-|`UseApplicationTrust`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Если задано значение true, свойства `Product`, `Publisher` и `SupportUrl` записываются в манифест приложения.|  
+|`UseApplicationTrust`|Optional <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Если задано значение true, свойства `Product`, `Publisher` и `SupportUrl` записываются в манифест приложения.|  
   
 ## <a name="remarks"></a>Примечания  
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.GenerateManifestBase>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список параметров класса Task см. в статье [Базовый класс Task](../msbuild/task-base-class.md).  
@@ -96,10 +90,10 @@ ms.locfileid: "49245574"
  Это иллюстрирует самый простой сценарий создания манифестов, где манифесты [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] создаются для одной программы. Для манифеста удостоверение и имя по умолчанию наследуются от сборки.  
   
 > [!NOTE]
->  В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+> В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
 > [!NOTE]
->  Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).  
+> Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -149,10 +143,10 @@ ms.locfileid: "49245574"
  Этот пример похож на предыдущий, за исключением того, что имя и удостоверение манифестов указываются явно. Кроме того, этот пример настраивается как интерактивное, а не установленное приложение.  
   
 > [!NOTE]
->  В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+> В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
 > [!NOTE]
->  Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).  
+> Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -207,10 +201,10 @@ ms.locfileid: "49245574"
  Этот пример использует задачи `GenerateApplicationManifest` и `GenerateDeploymentManifest`, чтобы создать манифесты развертывания и приложения [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] для приложения с несколькими сборками.  
   
 > [!NOTE]
->  В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+> В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
 > [!NOTE]
->  Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).  
+> Дополнительные сведения о свойстве `Thumbprint`, используемом для задачи `SignFile` в этом примере, см. в разделе [Задача SignFile](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -327,7 +321,7 @@ ms.locfileid: "49245574"
  Этот пример создает Test.exe.manifest, делая приложение развертываемым посредством XCOPY с помощью преимущества COM без регистрации.  
   
 > [!NOTE]
->  В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+> В приведенном ниже примере все двоичные файлы приложения собраны заранее, чтобы сосредоточить внимание на создании манифестов. В этом примере создается полностью работоспособное развертывание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -363,6 +357,3 @@ ms.locfileid: "49245574"
  [Задача GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)   
  [Задача SignFile](../msbuild/signfile-task.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

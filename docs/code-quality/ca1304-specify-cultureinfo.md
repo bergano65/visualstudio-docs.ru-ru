@@ -1,7 +1,6 @@
 ---
 title: CA1304. Указывайте CultureInfo
 ms.date: 06/30/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - SpecifyCultureInfo
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b912d76a-54fd-4c93-b25d-16491e0ae319
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 564180330380a7076b091e0b2f793ea575606d53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968489"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714360"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304. Указывайте CultureInfo
 
@@ -41,7 +40,7 @@ ms.locfileid: "53968489"
 
 ## <a name="rule-description"></a>Описание правила
 
-Когда <xref:System.Globalization.CultureInfo> или <xref:System.IFormatProvider?displayProperty=nameWithType> не предоставляется значение по умолчанию, поставляемое перегруженным членом, возможно, не нужных во всех языковых стандартах. Кроме того члены .NET Framework выберите язык и региональные параметры по умолчанию и исходя из предположения, которые могут быть неправильными в коде. Чтобы убедиться, что код работает правильно для сценариев, необходимо предоставить сведения об особенностях языка и региональных параметров в соответствии с приведенным ниже рекомендациям:
+Когда <xref:System.Globalization.CultureInfo> или <xref:System.IFormatProvider?displayProperty=nameWithType> не предоставляется значение по умолчанию, поставляемое перегруженным членом, возможно, не нужных во всех языковых стандартах. Кроме того члены .NET выберите язык и региональные параметры по умолчанию и исходя из предположения, которые могут быть неправильными в коде. Чтобы убедиться, что код работает правильно для сценариев, необходимо предоставить сведения об особенностях языка и региональных параметров в соответствии с приведенным ниже рекомендациям:
 
 - Если значение будет отображаться для пользователя, используйте текущий язык и региональные параметры. См. раздел <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
@@ -87,4 +86,4 @@ ms.locfileid: "53968489"
 
 ## <a name="see-also"></a>См. также
 
-- [С помощью класса CultureInfo](/dotnet/standard/globalization-localization/globalization#Cultures)
+- [С помощью класса CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

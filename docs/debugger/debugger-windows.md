@@ -1,22 +1,22 @@
 ---
-title: Окна отладчика | Документация Майкрософт
+title: Проверьте данные, используя окна отладчика | Документация Майкрософт
 ms.custom: seodec18
-ms.date: 04/25/2017
+ms.date: 04/25/2018
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c546bd408d1c4c91ec19962536e1e4fe774dbd84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: e14f1864452edd00237164e14af74330e3c209f7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875810"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033006"
 ---
-# <a name="learn-about-debugger-windows-in-visual-studio"></a>Дополнительные сведения о Windows отладчика в Visual Studio
+# <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Проверьте данные, используя окна отладчика в Visual Studio
 
 В процессе отладки программы можно открывать большинство окон отладчика. Чтобы просмотреть список окон отладчика, установите точку останова и начните отладку. Когда точка останова будет достигнута и выполнение остановится, выберите пункт **Отладка > Окна**.
 
@@ -48,6 +48,6 @@ ms.locfileid: "53875810"
 |Дизассемблированный код|CTRL+ALT+D|[Практическое руководство. Использование окна дизассемблирования](../debugger/how-to-use-the-disassembly-window.md)|
 |Регистры|CTRL+ALT+G|[Практическое руководство. Использование окна регистров](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

@@ -1,8 +1,7 @@
 ---
-title: Код ошибки Script_e_reported | Документы Microsoft
+title: Код ошибки Script_e_reported | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 018cdb5c5fef4e12dc62cf4a06ef0e2b52a98216
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4466869f4da6a0efe20955af6e6ef35ca9479f6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840269"
 ---
 # <a name="scriptereported-error-code"></a>Код ошибки SCRIPT_E_REPORTED
-Обработчик скриптов обнаружил необрабатываемое исключение до узла через [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). Эту ошибку можно игнорировать узла.  
+Обработчик скриптов обнаружил необработанное исключение до узла через [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). Эту ошибку можно игнорировать узла.  
   
 ## <a name="syntax"></a>Синтаксис  
   

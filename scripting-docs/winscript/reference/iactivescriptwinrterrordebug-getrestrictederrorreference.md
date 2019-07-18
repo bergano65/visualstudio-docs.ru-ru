@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference | Документы Microsoft
+title: IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36d1fecfa1069836a3a1eb41adc8fb58a16e1dbc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: d4696c66ec331c08f3419d79f0f48feb3bf9d80f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432958"
 ---
 # <a name="iactivescriptwinrterrordebuggetrestrictederrorreference"></a>IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference
-Возвращает среды выполнения Windows ограничен Ошибка ссылки, если он доступен.  
+Возвращает среды выполнения Windows только Ошибка ссылки, если он доступен.  
   
 > [!IMPORTANT]
->  [Iactivescriptwinrterrordebug — интерфейс](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) — реализованный PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> [Интерфейс IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   

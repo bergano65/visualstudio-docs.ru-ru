@@ -2,22 +2,21 @@
 title: Python в Visual Studio. Руководство. Шаг 1 — создание проекта
 titleSuffix: ''
 description: Общие сведения и шаг 1 базового пошагового руководства, посвященного возможностям Python в Visual Studio. Здесь приведены предварительные требования и описано создание проекта Python.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430748"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Учебник. Работа с Python в Visual Studio
 
@@ -61,7 +60,7 @@ Visual Studio обеспечивает первоклассную поддерж
 
     (1) Полужирным шрифтом выделен ваш проект, имя которого вы указали в окне **Создание проекта**. На диске этот проект представлен файлом *.pyproj* в папке проекта.
 
-    (2) На верхнем уровне находится *решение*, имя которого по умолчанию совпадает с именем проекта. Решение, представленное на диске файлом *SLN*, является контейнером для одного или нескольких связанных проектов. Например, если вы создаете расширение C++ для приложения Python, этот проект C++ может входить в то же решение. Решение также может включать в себя проект веб-службы и проекты специальных тестовых программ. 
+    (2) На верхнем уровне находится *решение*, имя которого по умолчанию совпадает с именем проекта. Решение, представленное на диске файлом *SLN*, является контейнером для одного или нескольких связанных проектов. Например, если вы создаете расширение C++ для приложения Python, этот проект C++ может входить в то же решение. Решение также может включать в себя проект веб-службы и проекты специальных тестовых программ.
 
     (3) В проекте можно увидеть файлы исходного кода. В нашем примере это один файл *.py*. При выборе файла его свойства приводятся в окне **Свойства**. Если дважды щелкнуть файл, он откроется в соответствующем средстве.
 
@@ -79,5 +78,3 @@ Visual Studio обеспечивает первоклассную поддерж
 - [Проекты Python в Visual Studio](managing-python-projects-in-visual-studio.md)
 - [Сведения о языке Python на сайте python.org](https://www.python.org)
 - [Python для начинающих](https://www.python.org/about/gettingstarted/) (python.org)
-- [Бесплатные курсы Python в Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Наиболее популярные вопросы о Python в Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

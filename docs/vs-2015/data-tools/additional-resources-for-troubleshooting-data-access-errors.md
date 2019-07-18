@@ -1,12 +1,9 @@
 ---
 title: Дополнительные ресурсы для устранения неполадок данных с ошибками доступа к | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
 - vbdata.ParameterizeFormDialog_NoDataSource
@@ -232,19 +229,18 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 851a1f87cce5f4030a9ba5a4701b6c0055859f10
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143096"
 ---
-# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Дополнительные ресурсы для устранения ошибки доступа к данным
+# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Дополнительные ресурсы для устранения неполадок, связанных с ошибками доступа к данным
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 На открытых форумах Microsoft Developer Network (MSDN) можно получить помощь в устранении ошибок и предупреждений. В следующей таблице перечислены данные ссылки на форумы в сети MSDN.  
   
  [Элементы управления данными и привязка данных Windows Forms](http://go.microsoft.com/fwlink/?LinkId=160179)  
@@ -253,7 +249,7 @@ ms.locfileid: "49263027"
  [Форум по наборам данных ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160180)  
  Форум для вопросов и общих обсуждений наборов данных.  
   
- [ADO.NET Entity Framework и LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520)  
+ [ADO.NET — платформа Entity Framework и LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520)  
  Форум для вопросов и общих обсуждений приложений Entity Framework и LINQ to Entities языка.  
   
  [Форум по WCF Data Services](http://go.microsoft.com/fwlink/?LinkId=160181)  
@@ -272,4 +268,3 @@ ms.locfileid: "49263027"
   
 ## <a name="see-also"></a>См. также  
  [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

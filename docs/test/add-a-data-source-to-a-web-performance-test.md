@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 52a6289d6b17528d31d66e26df2f15b85749aac3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62835126"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Добавление источника данных в веб-тест производительности
 
@@ -35,7 +34,9 @@ ms.locfileid: "53823546"
 
 ## <a name="create-a-sql-database"></a>Создание базы данных SQL
 
-1. Если у вас нет Visual Studio Enterprise, вы можете загрузить ее на странице [Загрузки Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+::: moniker range="vs-2017"
+
+1. Если у вас нет Visual Studio Enterprise, вы можете загрузить ее на странице [Загрузки Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 2. Создайте базу данных SQL.
 
@@ -60,6 +61,38 @@ ms.locfileid: "53823546"
 7. Добавьте данные в поля.
 
      ![Добавление данных в поля](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Если у вас нет Visual Studio Enterprise, вы можете загрузить ее на странице [Загрузки Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+
+2. Создайте базу данных SQL.
+
+     ![Добавление новой базы данных SQL](../test/media/web_test_databinding_sql_addnewdb.png)
+
+3. Создайте проект базы данных.
+
+     ![Создание нового проекта из базы данных](../test/media/web_test_databinding_sql_addnewdbproject.png)
+
+4. Добавьте таблицу в проект базы данных.
+
+     ![Добавление новой таблицы в проект базы данных](../test/media/web_test_databinding_sql_addnewdbtablename.png)
+
+5. Добавьте поля в таблицу.
+
+     ![Добавление полей в таблицу](../test/media/web_test_databinding_sql_addnewdbaddfields.png)
+
+6. Опубликуйте проект базы данных.
+
+     ![Публикация проекта базы данных из обозревателя решений](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+
+7. Добавьте данные в поля.
+
+     ![Добавление данных в поля](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
 
 ## <a name="add-the-data-source"></a>Добавление источника данных
 

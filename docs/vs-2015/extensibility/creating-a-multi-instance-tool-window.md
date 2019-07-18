@@ -1,27 +1,22 @@
 ---
 title: Создание многоэкземплярного окна инструментов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2dc658024447b433b8bc0b5a8dac59234554509f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0dcdfe3f6e488514bb2ee1ca950e952b16039b42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433842"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Создание многоэкземплярного окна инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,14 +27,14 @@ ms.locfileid: "51794582"
   
 ## <a name="creating-a-basic-single-instance-tool-window"></a>Создание окна инструментов Basic (экземпляра)  
   
-1.  Создайте проект с именем **MultiInstanceToolWindow** с помощью шаблона VSIX и добавление шаблона элемента окна пользовательского инструмента с именем **MIToolWindow**.  
+1. Создайте проект с именем **MultiInstanceToolWindow** с помощью шаблона VSIX и добавление шаблона элемента окна пользовательского инструмента с именем **MIToolWindow**.  
   
     > [!NOTE]
-    >  Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Дополнительные сведения о создании расширения с окном инструментов, см. в разделе [создания расширения с окном инструментов](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="making-a-tool-window-multi-instance"></a>Создание нескольких экземпляр окна инструментов  
   
-1.  Откройте **MIToolWindowPackage.cs** файл и найдите `ProvideToolWindow` атрибута. и `MultiInstances=true` параметра, как показано в следующем примере.  
+1. Откройте **MIToolWindowPackage.cs** файл и найдите `ProvideToolWindow` атрибута. и `MultiInstances=true` параметра, как показано в следующем примере.  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -51,15 +46,15 @@ ms.locfileid: "51794582"
     {. . .}  
     ```  
   
-2.  В файле MIToolWindowCommand.cs найдите метод ShowToolWindos(). В этом методе, вызывать <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> метод и набор его `create` флаг `false` таким образом, чтобы он будет использовать перебор существующих экземпляров окна инструментов до является доступным `id` найден.  
+2. В файле MIToolWindowCommand.cs найдите метод ShowToolWindos(). В этом методе, вызывать <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> метод и набор его `create` флаг `false` таким образом, чтобы он будет использовать перебор существующих экземпляров окна инструментов до является доступным `id` найден.  
   
-3.  Чтобы создать экземпляр окна инструментов, вызовите <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> метод и задайте его `id` доступное значение и его `create` флаг `true`.  
+3. Чтобы создать экземпляр окна инструментов, вызовите <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> метод и задайте его `id` доступное значение и его `create` флаг `true`.  
   
      По умолчанию значение `id` параметр <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> метод `0`. Это делает окно инструментов с единственным экземпляром. Для более чем один экземпляр для размещения, каждый экземпляр должен иметь свой собственный уникальный `id`.  
   
-4.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> объект, возвращаемый <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> свойства экземпляра окна инструментов.  
+4. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> метод <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> объект, возвращаемый <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> свойства экземпляра окна инструментов.  
   
-5.  По умолчанию `ShowToolWindow` метод, который создается с помощью шаблона элемента окна инструментов создает окно инструментов с единственным экземпляром. В следующем примере показано, как изменить `ShowToolWindow` метод для создания нескольких экземпляров.  
+5. По умолчанию `ShowToolWindow` метод, который создается с помощью шаблона элемента окна инструментов создает окно инструментов с единственным экземпляром. В следующем примере показано, как изменить `ShowToolWindow` метод для создания нескольких экземпляров.  
   
     ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  
@@ -83,4 +78,3 @@ ms.locfileid: "51794582"
         }  
     }  
     ```
-

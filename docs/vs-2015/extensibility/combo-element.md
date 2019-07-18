@@ -1,32 +1,27 @@
 ---
 title: Элемент поля со списком | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0ab350133813f32b87570ea17df50060f93bc300
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: daa89266d653743a743f42e5f0b8e11c954adc1a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184414"
 ---
 # <a name="combo-element"></a>Элемент Combo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Определяет команды, которые отображаются в поле со списком. Существует четыре типа со списком, следующим образом: DropDownCombo, DynamicCombo, IndexCombo и MRUCombo.  
+Определяет команды, которые отображаются в поле со списком. Существует четыре вида со списком, следующим образом: DropDownCombo, DynamicCombo, IndexCombo и MRUCombo.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -43,28 +38,28 @@ ms.locfileid: "51788941"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|guid|Обязательно. Идентификатор GUID идентификатора GUID и идентификатора команды.|  
-|id|Обязательно. Идентификатор GUID и идентификатора идентификатор команды.|  
-|defaultWidth|Обязательно. Целое число, указывающее ширину точек для поля со списком.|  
-|idCommandList|Обязательно. Идентификатор, который отправляется в целевой активные команды для получения списка элементов, отображаемых в поле со списком. Идентификатор будет находиться в той же области GUID, что элемент управления.|  
-|priority|Необязательный. Числовое значение, указывающее приоритет.|  
-|type|Необязательный. Значение перечисления, которое указывает тип кнопки.<br /><br /> Если не указан, используется кнопка.<br /><br /> DropDownCombo<br /> VSPackage несет ответственность за заполнение содержимое для этого поля со списком. Пользователь не может вводить ничего в текстовом поле этом раскрывающемся списке.<br /><br /> DynamicCombo<br /> VSPackage несет ответственность за заполнение содержимое этого поля со списком. Пользователь может изменить поля со списком и также выбрать элементы в нем.<br /><br /> IndexCombo<br /> Так же, как DynamicCombo, за исключением того, он вызывает индекс элемента, а не его текст.<br /><br /> MRUCombo<br /> Заполнить по интегрированной среде разработки (IDE) от имени пакета VSPackage.  Пользователь может редактировать в этом поле со списком. Интегрированная среда разработки запоминает до 16 последних записей в поле со списком.<br /><br /> Когда пользователь выбирает что-то в поле со списком или вводит что-то новое, интегрированной среды разработки уведомляет соответствующие VSPackage.|  
-|Условие|Необязательный. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Обязательный. Идентификатор GUID идентификатора GUID и идентификатора команды.|  
+|id|Обязательный. Идентификатор GUID и идентификатора идентификатор команды.|  
+|defaultWidth|Обязательный. Целое число, указывающее ширину точек для поля со списком.|  
+|idCommandList|Обязательный. Идентификатор, который отправляется в целевой активные команды для получения списка элементов, отображаемых в поле со списком. Идентификатор будет находиться в той же области GUID, что элемент управления.|  
+|priority|Необязательный параметр. Числовое значение, указывающее приоритет.|  
+|type|Необязательный параметр. Значение перечисления, которое указывает тип кнопки.<br /><br /> Если не указан, используется кнопка.<br /><br /> DropDownCombo<br /> VSPackage несет ответственность за заполнение содержимое для этого поля со списком. Пользователь не может вводить ничего в текстовом поле этом раскрывающемся списке.<br /><br /> DynamicCombo<br /> VSPackage несет ответственность за заполнение содержимое этого поля со списком. Пользователь может изменить поля со списком и также выбрать элементы в нем.<br /><br /> IndexCombo<br /> Так же, как DynamicCombo, за исключением того, он вызывает индекс элемента, а не его текст.<br /><br /> MRUCombo<br /> Заполнить по интегрированной среде разработки (IDE) от имени пакета VSPackage.  Пользователь может редактировать в этом поле со списком. Интегрированная среда разработки запоминает до 16 последних записей в поле со списком.<br /><br /> Когда пользователь выбирает что-то в поле со списком или вводит что-то новое, интегрированной среды разработки уведомляет соответствующие VSPackage.|  
+|Условие|Необязательный параметр. См. в разделе [условные атрибуты](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
-|Родительский|Необязательный. Родительский элемент кнопки.|  
-|CommandFlag|Обязательно. См. в разделе [команду флаг элемент](../extensibility/command-flag-element.md). Ниже приведены допустимые значения CommandFlag для кнопки.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Фильтрации<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
-|Строки|Обязательно. См. в разделе [строки элемента](../extensibility/strings-element.md). Дочерний элемент ButtonText должны быть определены.|  
+|Родительский|Необязательный параметр. Родительский элемент кнопки.|  
+|CommandFlag|Обязательный. См. в разделе [команду флаг элемент](../extensibility/command-flag-element.md). Ниже приведены допустимые значения CommandFlag для кнопки.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Фильтрации<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|Строки|Обязательный. См. в разделе [строки элемента](../extensibility/strings-element.md). Дочерний элемент ButtonText должны быть определены.|  
 |Комментарий|Дополнительный комментарий.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент Commands](../extensibility/commands-element.md)|Представляет коллекцию команд на панели инструментов для VSPackage.|  
   
@@ -92,4 +87,3 @@ ms.locfileid: "51788941"
   
 ## <a name="see-also"></a>См. также  
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

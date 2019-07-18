@@ -9,16 +9,15 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 1126117cb1fc26c4f61bfb0f6ed0e19e86ce9323
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564926"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Пошаговое руководство. Создание таблиц данных в конструкторе наборов данных
 
@@ -28,7 +27,7 @@ ms.locfileid: "53824838"
 
 1. В Visual Studio на **файл** меню, выберите **New** > **проекта**.
 
-2. Разверните **Visual C#**  или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
+2. Разверните **Visual C#** или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
 
 3. В средней области выберите **приложения Windows Forms** тип проекта.
 
@@ -38,33 +37,33 @@ ms.locfileid: "53824838"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Добавить новый набор данных в приложение
 
-1.  В меню **Проект** выберите пункт **Добавить новый элемент**.
+1. В меню **Проект** выберите пункт **Добавить новый элемент**.
 
      Откроется диалоговое окно **Добавление нового элемента**.
 
-2.  В области слева выберите **данных**, а затем выберите **набора данных** в средней области.
+2. В области слева выберите **данных**, а затем выберите **набора данных** в средней области.
 
-3.  Выберите **Добавить**.
+3. Выберите **Добавить**.
 
      Visual Studio добавляет в файл с именем **DataSet1.xsd** в проект и открывает его в **конструктор наборов данных**.
 
 ## <a name="add-a-new-datatable-to-the-dataset"></a>Добавить новую таблицу данных к набору данных
 
-1.  Перетащите **DataTable** из **набора данных** вкладке **элементов** на **конструктор наборов данных**.
+1. Перетащите **DataTable** из **набора данных** вкладке **элементов** на **конструктор наборов данных**.
 
      Таблица с именем **DataTable1** добавляется к набору данных.
 
-2.  Щелкните заголовок **DataTable1** и переименуйте его `Music`.
+2. Щелкните заголовок **DataTable1** и переименуйте его `Music`.
 
 ## <a name="add-columns-to-the-datatable"></a>Добавление столбцов к таблице DataTable
 
-1.  Щелкните правой кнопкой мыши **музыки** таблицы. Пункты **добавить**, а затем нажмите кнопку **столбец**.
+1. Щелкните правой кнопкой мыши **музыки** таблицы. Пункты **добавить**, а затем нажмите кнопку **столбец**.
 
-2.  Присвойте столбцу имя `SongID`.
+2. Присвойте столбцу имя `SongID`.
 
-3.  В окне **Свойства** присвойте свойству <xref:System.Data.DataColumn.DataType%2A> значение <xref:System.Int16?displayProperty=fullName>.
+3. В окне **Свойства** присвойте свойству <xref:System.Data.DataColumn.DataType%2A> значение <xref:System.Int16?displayProperty=fullName>.
 
-4.  Повторите эту процедуру и добавьте следующие столбцы:
+4. Повторите эту процедуру и добавьте следующие столбцы:
 
      `SongTitle`: <xref:System.String?displayProperty=fullName>
 

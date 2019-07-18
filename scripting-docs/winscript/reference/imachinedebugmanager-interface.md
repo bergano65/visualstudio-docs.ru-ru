@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IMachineDebugManager | Документы Microsoft
+title: Интерфейс IMachineDebugManager | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74c092edc4ed437926c28c19bd331b3b50f8cd4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6db8989fc6c932723a9b95017854635396b0deda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977647"
 ---
 # <a name="imachinedebugmanager-interface"></a>Интерфейс IMachineDebugManager
-Это основной интерфейс для диспетчера отладки. Этот интерфейс аналогичен `IMachineDebugManagerCookie` интерфейса.  
+Основной интерфейс для диспетчера отладки. Этот интерфейс аналогичен `IMachineDebugManagerCookie` интерфейс.  
   
  Помимо методов, наследуемых от `IUnknown`, `IMachineDebugManager` интерфейс предоставляет следующие методы.  
   
@@ -30,9 +29,9 @@ ms.locfileid: "24728804"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Добавляет приложение с запуском список приложений.|  
-|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Удаляет приложение с запуском список приложений.|  
-|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Возвращает перечислитель для текущего списка запущенных приложений.|  
+|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Добавляет приложению выполнения список приложений.|  
+|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Удаляет приложение из выполняемого список приложений.|  
+|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Возвращает перечислитель текущего списка выполняющихся приложений.|  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)

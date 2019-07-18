@@ -3,11 +3,8 @@ title: Использование параметров командной стр
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - command-line parameters
 - switches
@@ -16,26 +13,27 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: e81e9f7fad5976ad853254e04289d89d09b87ac6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180252"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Использование параметров командной строки для установки Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Последние версии документации Visual Studio 2017, см. в разделе [использование параметров командной строки для установки Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
+Самая актуальная документация по Visual Studio, см. в разделе [использование параметров командной строки для установки Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio).
 
 При установке Visual Studio 2015 из командной строки вы можете использовать параметры командной строки, которые перечислены ниже.
 
 > [!NOTE]
->  Убедитесь, что используется сам установщик, а не файл начального загрузчика. Например, убедитесь, что используется **`vs_enterprise.exe`** вместо vs_enterprise_*GUID*.exe. Можно загрузить установщик [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
+> Убедитесь, что используется сам установщик, а не файл начального загрузчика. Например, убедитесь, что используется **`vs_enterprise.exe`** вместо vs_enterprise_*GUID*.exe. Можно загрузить установщик [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015).
 
 ## <a name="list-of-command-line-parameters"></a>Список параметров командной строки
- В параметрах командной строки для Visual Studio регистр не учитывается.
+
+В параметрах командной строки для Visual Studio регистр не учитывается.
 
 |Параметр|Описание|
 |---------------|-----------------|
@@ -44,7 +42,7 @@ ms.locfileid: "53922188"
 |**/ AdminFile** *AdminDeployment.xml*|Установка Visual Studio с использованием файла данных, который был указан для административной установки.|
 |**/ ChainingPackage** *BundleName*|Задание набора, следующего за этим набором. Также может использоваться для указания группы Программы улучшения качества программного обеспечения.|
 |**/ CreateAdminFile \<имя файла >**|Указание расположения для создания файла управления, который можно использовать с помощью параметра /AdminFile.|
-|**/ CustomInstallPath** *InstallationDirectory*|Установка всех пакетов, поддерживающих изменение целевой платформы, в указанный каталог.|
+|**/CustomInstallPath** *InstallationDirectory*|Установка всех пакетов, поддерживающих изменение целевой платформы, в указанный каталог.|
 |**/ ForceRestart**|Компьютер всегда перезапускается после установки.|
 |**/full**|Установка всех компонентов продукта.|
 |**/ InstallSelectableItems \<имя_элемента_1 > [;\< Имя элемента 2 >]**|Список элементов в дереве выбора для выбора на экране выбора мастера установки.|
@@ -60,9 +58,10 @@ ms.locfileid: "53922188"
 |**/q**<br /><br /> **/quiet**<br /><br /> **/s**<br /><br /> **/silent**|Отключение пользовательского интерфейса для приложения установки. Если ПО Visual Studio уже установлено и не указаны другие параметры, кроме этого, приложение установки работает в режиме обслуживания.|
 |**/qb**<br /><br /> **/passive**|Отображение хода выполнения без запроса ввода данных пользователем.|
 |**/repair**|Восстановление Visual Studio.|
-|**/SuppressRefreshPrompt**|Блокировка отображения диалогового окна "Доступно обновление" в мастере установки: таким образом обеспечивается автоматическое принятие мастером установки любых обязательных или рекомендуемых обновленных версий.|
+|**/SuppressRefreshPrompt**|Блокировка отображения диалогового окна «Доступно обновление» в мастере установки: таким образом обеспечивается автоматическое принятие мастером установки любых обязательных или рекомендуемых обновленных версий.|
 |**/u**<br /><br /> **/Uninstall**|Удаляет [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |**/ Uninstall/force**<br /><br /> **/ Force /u**|Удаление ПО Visual Studio и всех его компонентов, используемых совместно с другими продуктами. **Предупреждение.**  При использовании этого параметра могут перестать правильно работать другие продукты, установленные на этом компьютере.|
 
-## <a name="see-also"></a>См. также раздел
- [Руководство администратора Visual Studio](../install/visual-studio-administrator-guide.md)
+## <a name="see-also"></a>См. также
+
+- [Руководство администратора Visual Studio](../install/visual-studio-administrator-guide.md)

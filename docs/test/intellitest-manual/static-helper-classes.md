@@ -1,21 +1,20 @@
 ---
 title: Статические вспомогательные классы | Инструмент тестирования для разработчиков Microsoft IntelliTest
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 09799a4625791efa137dc9b97b7c3ad9a041feae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f7d1fe7213bff39f83f315b472f29cb06eda06ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939073"
 ---
 # <a name="static-helper-classes"></a>Статические вспомогательные классы
 
@@ -125,13 +124,12 @@ public static class MathEx {
      public static int Square(int value) { return value * value; }
 }
 
-
 // fixture
 [TestClass]
 public partial class MathExTests {
      [PexMethod]
      public int SquareTest(int a) {
-        int result = MathEx.Square(a); 
+        int result = MathEx.Square(a);
         // storing result
         return result;
      }
@@ -149,7 +147,8 @@ public partial class MathExTests {
 
 **Пример**
 
-Этот пример показывает реализацию метода **PexAssume.Arrays.ElementsAreNotNull**. В этом методе игнорируются ограничения, накладываемые на длину массива, чтобы помешать IntelliTest создать различные размеры массива. Ограничения игнорируются только здесь. Если тестируемый код ведет себя по-разному для разных длин массива, IntelliTest не может создавать массивы разного размера из ограничений тестируемого кода.
+Этот пример показывает реализацию метода **PexAssume.Arrays.ElementsAreNotNull**.
+В этом методе игнорируются ограничения, накладываемые на длину массива, чтобы помешать IntelliTest создать различные размеры массива. Ограничения игнорируются только здесь. Если тестируемый код ведет себя по-разному для разных длин массива, IntelliTest не может создавать массивы разного размера из ограничений тестируемого кода.
 
 ```csharp
 public static void AreElementsNotNull<T>(T[] value)

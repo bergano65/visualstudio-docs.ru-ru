@@ -1,8 +1,7 @@
 ---
-title: Интерфейсы активных скриптов | Документы Microsoft
+title: Интерфейсы активных скриптов | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -15,52 +14,52 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc3bc5ed2b78f2577fdd5a9a715a210240e91e96
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 54ab774b5c30529173f1acfc68b649d9f21c5589
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979940"
 ---
 # <a name="active-script-interfaces"></a>Интерфейсы активных скриптов
 Файл заголовка ActivScp.h предоставляет интерфейсы, перечисления и коды ошибок, перечисленные в этом разделе.  
   
-## <a name="in-this-section"></a>Содержание  
+## <a name="in-this-section"></a>В этом разделе  
   
--   [Константы, перечисления и коды ошибок активных скриптов](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)  
+- [Константы, перечисления и коды ошибок активных скриптов](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)  
   
--   [IActiveScript — интерфейс](../../winscript/reference/iactivescript.md)  
+- [IActiveScript — интерфейс](../../winscript/reference/iactivescript.md)  
   
--   [Iactivescripterror — интерфейс](../../winscript/reference/iactivescripterror.md)  
+- [Iactivescripterror — интерфейс](../../winscript/reference/iactivescripterror.md)  
   
--   [IActiveScriptGarbageCollector Interface](../../winscript/reference/iactivescriptgarbagecollector-interface.md)  
+- [IActiveScriptGarbageCollector Interface](../../winscript/reference/iactivescriptgarbagecollector-interface.md)  
   
--   [Iactivescriptparse — интерфейс](../../winscript/reference/iactivescriptparse.md)  
+- [Iactivescriptparse — интерфейс](../../winscript/reference/iactivescriptparse.md)  
   
--   [Интерфейс IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)  
+- [Интерфейс IActiveScriptParse32](../../winscript/reference/iactivescriptparse32.md)  
   
--   [Iactivescriptparseprocedure — интерфейс](../../winscript/reference/iactivescriptparseprocedure.md)  
+- [Iactivescriptparseprocedure — интерфейс](../../winscript/reference/iactivescriptparseprocedure.md)  
   
--   [Интерфейс IActiveScriptParseProcedure32](../../winscript/reference/iactivescriptparseprocedure32.md)  
+- [Интерфейс IActiveScriptParseProcedure32](../../winscript/reference/iactivescriptparseprocedure32.md)  
   
--   [Интерфейс IActiveScriptParseProcedureOld](../../winscript/reference/iactivescriptparseprocedureold-interface.md)  
+- [Интерфейс IActiveScriptParseProcedureOld](../../winscript/reference/iactivescriptparseprocedureold-interface.md)  
   
--   [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)  
+- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)  
   
--   [Iactivescriptsite — интерфейс](../../winscript/reference/iactivescriptsite.md)  
+- [Iactivescriptsite — интерфейс](../../winscript/reference/iactivescriptsite.md)  
   
--   [Интерфейс IActiveScriptSiteInterruptPoll](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)  
+- [Интерфейс IActiveScriptSiteInterruptPoll](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)  
   
--   [IActiveScriptSiteTraceInfo Interface](../../winscript/reference/iactivescriptsitetraceinfo-interface.md)  
+- [IActiveScriptSiteTraceInfo Interface](../../winscript/reference/iactivescriptsitetraceinfo-interface.md)  
   
--   [Интерфейс IActiveScriptSiteUIControl](../../winscript/reference/iactivescriptsiteuicontrol-interface.md)  
+- [Интерфейс IActiveScriptSiteUIControl](../../winscript/reference/iactivescriptsiteuicontrol-interface.md)  
   
--   [Iactivescriptsitewindow — интерфейс](../../winscript/reference/iactivescriptsitewindow.md)  
+- [Iactivescriptsitewindow — интерфейс](../../winscript/reference/iactivescriptsitewindow.md)  
   
--   [Интерфейс IActiveScriptStats](../../winscript/reference/iactivescriptstats-interface.md)  
+- [Интерфейс IActiveScriptStats](../../winscript/reference/iactivescriptstats-interface.md)  
   
--   [Интерфейс IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md)  
+- [Интерфейс IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md)  
   
--   [Интерфейс IActiveScriptTraceInfo](../../winscript/reference/iactivescripttraceinfo-interface.md)  
+- [Интерфейс IActiveScriptTraceInfo](../../winscript/reference/iactivescripttraceinfo-interface.md)  
   
--   [Интерфейс IBindEventHandler](../../winscript/reference/ibindeventhandler-interface.md)
+- [Интерфейс IBindEventHandler](../../winscript/reference/ibindeventhandler-interface.md)

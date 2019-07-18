@@ -1,14 +1,9 @@
 ---
 title: Возможности более отладки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,15 +13,15 @@ ms.assetid: a41166d7-e03e-42ef-862e-dd025ef600b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9b3375e97aa356b9c22f29bcf7bf696607cd30de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2e6140b10b9f0c9a540144ca70bb081ac2d3e7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157457"
 ---
-# <a name="more-debugging-features"></a>Дополнительные возможности отладки
+# <a name="more-debugging-features"></a>Дополнительные функции отладки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом разделе содержится описание дополнительных функций, которые можно использовать с отладчиком Visual Studio.  
@@ -46,7 +41,7 @@ ms.locfileid: "51729327"
  [JIT-отладка](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Описание JIT–отладки, способной автоматически запускать отладчик при аварийном завершении программы во время выполнения вне Visual Studio.  
   
- [Пошаговое руководство. Отладка во время разработки](../debugger/walkthrough-debugging-at-design-time.md)  
+ [Пошаговое руководство: Debug at design time in Visual Studio (C#, C++, Visual Basic, F#)](../debugger/walkthrough-debugging-at-design-time.md) (Пошаговое руководство. Отладка во время разработки в Visual Studio (C#, C++, Visual Basic, F#)  
  Использование окна интерпретации Visual Studio для выполнения функции или подпрограммы, когда приложение не запущено. 
   
  [Изменить и продолжить](../debugger/edit-and-continue.md)  
@@ -56,6 +51,3 @@ ms.locfileid: "51729327"
   
  [Практическое руководство. Восстановление скрытых команд отладчика](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Описание способов сделать видимыми команды отладчика, скрытые параметрами IDE по умолчанию.
-
-
-

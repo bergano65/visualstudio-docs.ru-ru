@@ -1,16 +1,16 @@
 ---
 title: Темы редактора
 description: В этой статье рассказывается, как изменить тему редактора или добавить собственную тему в Visual Studio для Mac
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.openlocfilehash: 0b9b9ba5697b68aab87133d05a8f8112decb3b09
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 0c9c58f8da76b09055c1f2b70cd05a44890ce22c
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948872"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691630"
 ---
 # <a name="editor-themes"></a>Темы редактора
 
@@ -28,7 +28,7 @@ ms.locfileid: "51948872"
 
 Когда вы найдете или создадите новую тему и скачаете ее на локальный компьютер, добавьте ее следующим образом:
 
-1. Нажмите кнопку **Добавить** в диалоговом окне параметров цветовой темы: ![добавление цветовой темы](media/source-editor-image20.png)
+1. Нажмите кнопку **Добавить** в диалоговом окне параметров цветовой темы:  ![Добавление цветовой темы](media/source-editor-image20.png)
 2. Перейдите к теме на локальном компьютере и нажмите кнопку **Открыть**.
 3. Тема добавляется в конец списка предустановленных тем. Для предварительного просмотра темы выберите ее: ![Предварительный просмотр цветовой темы](media/source-editor-image21.png)
 4. Чтобы применить тему, нажмите кнопку **ОК**.

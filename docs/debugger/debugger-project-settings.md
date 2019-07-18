@@ -13,49 +13,40 @@ helpviewer_keywords:
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d10cac5cec53440da687717e6737bd38ff35f8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852694"
 ---
 # <a name="debugger-project-settings"></a>Параметры проекта отладчика
-Определенные параметры проекта также влияют на отладку. Определяются такие элементы, как каталоги, которые просматривает отладчик; команда и параметры команды, используемые для запуска программы; тип отладочных данных, создаваемых для программы. Эти параметры можно изменить в диалоговом окне **Страницы свойств** .  
-  
- В этом разделе описываются доступные параметры и способы их установки.  
-  
-## <a name="in-this-section"></a>В этом разделе  
- [Практическое руководство. Установка параметров отладчика](../debugger/how-to-specify-debugger-settings.md)  
- Описание параметров отладчика в диалоговом окне **Параметры** .  
-  
- [Практическое руководство. Настройка конфигураций отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md)  
- Описание параметров версий **Отладка** и **Выпуск** , а также способов переключения между ними.  
-  
- [Параметры проекта для конфигурации отладки C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
- Список свойств, доступных в диалоговом окне **Страницы свойств** для проектов C или C++.  
-  
- [Параметры проекта для конфигураций отладки C#](../debugger/project-settings-for-csharp-debug-configurations.md)  
- Список свойств, доступных в диалоговом окне **Страницы свойств** для проектов C#.  
-  
- [Параметры страниц свойств для веб-проектов](../debugger/property-pages-settings-for-web-projects.md)  
- Список свойств, доступных в диалоговом окне **Страницы свойств** для веб-проектов.  
-  
- [Параметры проекта для конфигурации отладки Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
- Список свойств, доступных в диалоговом окне **Страницы свойств** для проектов [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] .  
-  
-## <a name="related-sections"></a>Связанные разделы  
- [Указание файлов символов (.pdb) и файлов с исходным кодом](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
- В этом разделе описывается, как отладчик использует файлы символов и исходные файлы для отображения отладочной информации.  
-  
- [Отладка приложений в Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
- В этой статье описывается отладка приложений UWP. (Центр разработки для Windows).  
-  
- [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)  
- Описание параметров отладчика и подготовки, необходимой для отладки программы отладчиком [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
-  
-## <a name="see-also"></a>См. также раздел  
+Определенные параметры проекта также влияют на отладку. Определяются такие элементы, как каталоги, которые просматривает отладчик; команда и параметры команды, используемые для запуска программы; тип отладочных данных, создаваемых для программы. Эти параметры можно изменить в диалоговом окне **Страницы свойств** .
+
+ В этом разделе описываются доступные параметры и способы их установки.
+
+## <a name="in-this-section"></a>В этом разделе
+ [Практическое руководство. Установка параметров отладчика](../debugger/how-to-specify-debugger-settings.md) описание параметров отладчика в **параметры** диалоговое окно.
+
+ [Практическое руководство. Набор конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md) описывает **Отладка** и **выпуска** параметры и способы переключения между ними.
+
+ [Параметры для проекта C++ конфигурации отладки](../debugger/project-settings-for-a-cpp-debug-configuration.md) список свойств, доступных в **страницы свойств** диалоговое окно для C или C++ проектов.
+
+ [Параметры для проекта C# конфигурации отладки](../debugger/project-settings-for-csharp-debug-configurations.md) список свойств, доступных в **страницы свойств** диалоговое окно для C# проектов.
+
+ [Параметры страниц свойств для веб-проектов](../debugger/property-pages-settings-for-web-projects.md) список свойств, доступных в **страницы свойств** диалоговое окно для веб-проектов.
+
+ [Параметры для конфигурации отладки Visual Basic проекта](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) список свойств, доступных в **страницы свойств** диалоговое окно для [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] проектов.
+
+## <a name="related-sections"></a>Связанные разделы
+ [Указание файлов символов (.pdb) и исходных файлов](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) описывается, как отладчик использует файлы символов и исходных файлов для отображения отладочной информации.
+
+ [Отладка приложений в Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps) способы отладки приложений универсальной платформы Windows. (Центр разработки для Windows).
+
+ [Отладчик, параметры и Подготовка](../debugger/debugger-settings-and-preparation.md) описывает параметры отладчика и необходимую подготовку для отладки программы [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] отладчика.
+
+## <a name="see-also"></a>См. также
  [Безопасность отладчика](../debugger/debugger-security.md)

@@ -9,36 +9,37 @@ helpviewer_keywords:
 ms.assetid: 4ba3d9e4-b205-4ee6-a41d-6996972f1f85
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dea0b3e717187bb79525fde0be02d0482e53243
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829060"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
-Получает область памяти, в котором должно основываться изображение.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_imageBase (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает базовое значение предлагаемые образа.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Из-за конфликтов базовый образ образ может изменения перемещены из автоматически опции неиспользуемой памяти при загрузке. Этот метод возвращает базовый указание (Рекомендуемый объем памяти расположение), которое было сохранено в модуле во время компиляции.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
+Получает область памяти, в котором должно основываться изображение.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_imageBase ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает базовое значение предлагаемые образа.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Из-за конфликтов базовый образ образ может изменения перемещены из автоматически опции неиспользуемой памяти при загрузке. Этот метод возвращает базовый указание (Рекомендуемый объем памяти расположение), которое было сохранено в модуле во время компиляции.
+
+## <a name="see-also"></a>См. также
+- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

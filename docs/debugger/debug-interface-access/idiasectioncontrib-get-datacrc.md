@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: 33b7488f-dc9c-47b3-b08c-737e0eb1bf7d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a11d36a92c2b2251a2313ba627012904457d354
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 6c652460e401396a8f7316b5ef300b3c2915f2e4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828245"
 ---
 # <a name="idiasectioncontribgetdatacrc"></a>IDiaSectionContrib::get_dataCrc
-Извлекает циклическую проверку избыточности (CRC) данных в разделе.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_dataCrc (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает контрольную СУММУ данных в разделе.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Извлекает циклическую проверку избыточности (CRC) данных в разделе.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_dataCrc ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает контрольную СУММУ данных в разделе.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

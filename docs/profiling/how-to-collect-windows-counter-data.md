@@ -11,15 +11,15 @@ helpviewer_keywords:
 - profiling tools, using windows counters
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc551fd84197e936ef0f6069ecbc4beaecdf25a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973855"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Как выполнить Сбор данных счетчиков производительности Windows
 
@@ -48,6 +48,6 @@ ms.locfileid: "53961378"
 
 ## <a name="see-also"></a>См. также
 
-[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)  
-[Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)  
+[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
+[Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)
 [Счетчики ЦП и Windows](../profiling/cpu-and-windows-counters.md)

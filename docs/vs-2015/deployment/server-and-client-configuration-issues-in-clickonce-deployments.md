@@ -1,14 +1,9 @@
 ---
 title: Вопросы настройки клиента в развертываниях ClickOnce сервера и | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8b8f81f22ffe566524e45a62330bc95c8ce00016
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948945"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686371"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Вопросы настройки сервера и клиента в развертываниях ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ ms.locfileid: "49948945"
   
 - .deploy  
   
-  Тем не менее, этот параметр можно отключить, сняв **использовать расширение файла «.deploy»** параметр [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), в этом случае необходимо настроить веб-сервер, чтобы разблокировать все расширения файлов используемые в приложении.  
+  Тем не менее, этот параметр можно отключить, сняв **использовать расширение файла «.deploy»** параметр [Publish Options Dialog Box](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), в этом случае необходимо настроить веб-сервер, чтобы разблокировать все расширения файлов используемые в приложении.  
   
   Вы должны будете настроить .manifest .application и .deploy, например, если используются службы IIS, где не установлена [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], или если вы используете другой веб-сервер (например, Apache).  
   
@@ -59,13 +54,13 @@ ms.locfileid: "49948945"
   
  Можно также применить исправление для .NET Framework 2.0, чтобы включить эту функцию. Дополнительные сведения см. в разделе http://go.microsoft.com/fwlink/?LinkId=158730.  
   
- Дополнительные сведения см. в разделе [ \<defaultProxy > (сетевые параметры)](http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
+ Дополнительные сведения см. в разделе [ \<defaultProxy > (сетевые параметры)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
 ## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce и веб-браузере совместимость  
  В настоящее время [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] установок запускаются только в том случае, если URL-адрес манифеста развертывания открывается с помощью Internet Explorer. Развертывание, URL-адрес которого открывается из другого приложения, такие как Microsoft Office Outlook, успешно запускаются только в том случае, если Internet Explorer устанавливается как веб-браузер по умолчанию.  
   
 > [!NOTE]
->  Mozilla Firefox поддерживается в том случае, если поставщик развертывания не является пустым или установке расширения Microsoft .NET Framework Assistant. Это расширение поставляется в комплекте с .NET Framework 3.5 SP1. Для поддержки XBAP подключаемый модуль NPWPF активируется при необходимости.  
+> Mozilla Firefox поддерживается в том случае, если поставщик развертывания не является пустым или установке расширения Microsoft .NET Framework Assistant. Это расширение поставляется в комплекте с .NET Framework 3.5 SP1. Для поддержки XBAP подключаемый модуль NPWPF активируется при необходимости.  
   
 ## <a name="activating-clickonce-applications-through-browser-scripting"></a>Активация приложений ClickOnce с помощью обозревателя сценариев  
  Если вы разработали пользовательской веб-страницы, которая запускает [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения с помощью активных сценариев, вы обнаружите, что приложение не будет запускаться на некоторых компьютерах. Internet Explorer содержит параметр **автоматический запрос загрузки файла**, что негативно влияет на это поведение. Этот параметр можно найти в **безопасности** вкладке его **параметры** меню, которое влияет на это поведение. Он называется **автоматический запрос загрузки файла**, и содержится **загружает** категории. Свойство имеет значение **включить** по умолчанию для веб-страниц интрасети, а также **отключить** по умолчанию для веб-страниц Интернета. Если присвоить этот параметр **отключить**, любая попытка активировать [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения программным способом (например, назначив его URL-адреса `document.location` свойство) будут заблокированы. В этих условиях пользователи могут, запускать приложения только через загрузки, инициированного пользователем, щелкнув гиперссылку, задать URL-адрес приложения.  
@@ -83,7 +78,7 @@ ms.locfileid: "49948945"
 ```  
   
 > [!NOTE]
->  Можно сделать проверку подлинности NTLM (NT запрос ответ) работать, если узел запрашивает учетные данные, отличные от учетные данные по умолчанию, а в диалоговом окне "Безопасность" нажмите кнопку **ОК** при появлении запроса, если вы хотите сохранить предоставленного учетные данные для будущих сеансов. Тем не менее это решение не будет работать для обычной проверки подлинности.  
+> Можно сделать проверку подлинности NTLM (NT запрос ответ) работать, если узел запрашивает учетные данные, отличные от учетные данные по умолчанию, а в диалоговом окне "Безопасность" нажмите кнопку **ОК** при появлении запроса, если вы хотите сохранить предоставленного учетные данные для будущих сеансов. Тем не менее это решение не будет работать для обычной проверки подлинности.  
   
 ## <a name="using-third-party-web-servers"></a>С помощью сторонних веб-серверов  
  Если вы развертываете [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложение из веб-сервера, отличные от IIS, проблема может возникнуть, если сервер возвращает неверный тип содержимого для ключа [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] файлы, такие как манифест развертывания и манифест приложения. Чтобы устранить эту проблему, см. в разделе документации о том, как добавить новые типы содержимого на сервере и убедитесь, что все сопоставления расширений имен файлов, перечисленных в следующей таблице у вас есть справки веб-сервере.  
@@ -97,19 +92,19 @@ ms.locfileid: "49948945"
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce и подключенные диски  
- Если вы используете Visual Studio для публикации приложения ClickOnce, нельзя указать подключенный диск размещения установки. Тем не менее можно изменить приложение ClickOnce для установки с подключенного диска, с помощью создания и редактирования манифеста (Mage.exe и MageUI.exe). Дополнительные сведения см. в разделе [Mage.exe (средство редактирования и Manifest Generation)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) и [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+ Если вы используете Visual Studio для публикации приложения ClickOnce, нельзя указать подключенный диск размещения установки. Тем не менее можно изменить приложение ClickOnce для установки с подключенного диска, с помощью создания и редактирования манифеста (Mage.exe и MageUI.exe). Дополнительные сведения см. в разделе [Mage.exe (средство редактирования и Manifest Generation)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) и [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Протокол FTP не поддерживается для установки приложений  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] поддерживает установку приложений с любого файлового сервера или 1.1 веб-сервера HTTP. FTP, протокол передачи файлов не поддерживается для установки приложений. FTP можно использовать только для публикации приложений. В следующей таблице перечислены эти различия:  
   
 |Тип URL-адреса|Описание|  
 |--------------|-----------------|  
-|FTP: / /|Вы можете опубликовать [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений с помощью этого протокола.|  
+|ftp://|Вы можете опубликовать [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений с помощью этого протокола.|  
 |http://|Вы можете установить [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений с помощью этого протокола.|  
 |https://|Вы можете установить [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений с помощью этого протокола.|  
 |file://|Вы можете установить [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений с помощью этого протокола.|  
   
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Брандмауэр Windows  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP с пакетом обновления 2 (SP2): Брандмауэр Windows  
  По умолчанию в Windows XP с пакетом обновления 2 включает брандмауэр Windows. Если вы разрабатываете приложение на компьютере с установленной операционной системой Windows XP, вы по-прежнему публикации и запуску [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений с локального сервера, где работают службы IIS. Тем не менее не может получить доступ к этом сервере, где работают службы IIS с другого компьютера, если не открыть брандмауэр Windows. Инструкции по управлению брандмауэром Windows содержатся в справке Windows.  
   
 ## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Включить серверные расширения FrontPage  
@@ -117,7 +112,7 @@ ms.locfileid: "49948945"
   
  По умолчанию в Windows Server нет установлены серверные расширения FrontPage. Если вы хотите использовать [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для публикации на сервере Windows Server Web, который использует протокол HTTP с помощью серверных расширений FrontPage, вам сначала необходимо установить серверные расширения FrontPage. Установку можно выполнить с помощью средства администрирования Управление данным сервером в Windows Server.  
   
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Типы содержимого заблокированное устройство  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: Заблокированная типы содержимого  
  Службы IIS на [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] блокируют все типы файлов, за исключением определенных известных типов содержимого (например, .htm, .html, .txt и т. д.). Чтобы включить развертывание [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложений, использующих этот сервер, необходимо изменить параметры служб IIS для разрешения загрузки файлов типа .application .manifest и любых других типов пользовательских файлов, используемых приложением.  
   
  Если развертывание выполняется с помощью сервера IIS, запустите inetmgr.exe и добавить новые типы файлов для веб-страницы по умолчанию:  
@@ -144,6 +139,3 @@ ms.locfileid: "49948945"
  [Устранение неполадок развертывания ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [Обязательные требования к развертыванию приложений](../deployment/application-deployment-prerequisites.md)
-
-
-

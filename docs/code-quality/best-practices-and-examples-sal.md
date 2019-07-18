@@ -1,19 +1,18 @@
 ---
 title: Рекомендации и примеры (SAL)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d9526cb9778dd7f4fde61cca5667c7eaece2f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560037"
 ---
 # <a name="best-practices-and-examples-sal"></a>Рекомендации и примеры (SAL)
 Ниже приведены несколько способов получить доступ к большинству из языка заметки исходного кода (SAL) и избежать возникновения некоторых распространенных проблем.
@@ -239,7 +238,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 ## <a name="see-also"></a>См. также
 
-[Использование аннотаций SAL для сокращения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+[Использование аннотаций SAL для сокращения C /C++ дефектов кода](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 [основные сведения о SAL](../code-quality/understanding-sal.md)
 [Аннотация параметров функции и возвращаемые значения](../code-quality/annotating-function-parameters-and-return-values.md) 
  [Аннотация поведения функций](../code-quality/annotating-function-behavior.md)

@@ -2,22 +2,21 @@
 title: Python в Visual Studio. Учебник. Шаг 6. Работа с Git
 titleSuffix: ''
 description: Шаг 6 базового пошагового руководства по работе с Python в Visual Studio. Здесь описаны возможности Visual Studio, связанные с Git.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 87a4e8c67d7d0f6f1fecabad87d7c2b9ebf7a422
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810512"
 ---
 # <a name="step-6-work-with-git"></a>Шаг 6. Работа с Git
 

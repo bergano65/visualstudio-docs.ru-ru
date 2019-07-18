@@ -1,23 +1,20 @@
 ---
 title: T4 Директива Template | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcd11416bc067acaab8855b51969c7e1068e2c97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 38831d0f647ce423dc62fb51823a6757a1ac0872
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248228"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695879"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +36,7 @@ ms.locfileid: "49248228"
  `compilerOptions="optimize+"`  
   
  Допустимые значения:  
- Любые допустимые параметры компилятора. Дополнительные сведения см. в разделе [C# параметры компилятора, упорядоченные по категориям](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) и [Visual Basic параметры компилятора, упорядоченные по категориям](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
+ Любые допустимые параметры компилятора. Дополнительные сведения см. в разделе [C# параметры компилятора, упорядоченные по категориям](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) и [Visual Basic параметры компилятора, упорядоченные по категориям](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
   
  Игнорируется для шаблонов времени выполнения (предварительно обработанных).  
   
@@ -58,7 +55,8 @@ ms.locfileid: "49248228"
   
 ## <a name="debug-attribute"></a>атрибут debug  
  Пример  
- ```  
+
+```  
 debug="true"  
 ```  
   
@@ -73,18 +71,19 @@ debug="true"
   
 ## <a name="hostspecific-attribute"></a>атрибут hostspecific  
  Пример  
- ```  
+
+```  
 hostspecific="true"  
 ```  
   
  Допустимые значения:  
  `true, false, trueFromBase`. Значение по умолчанию — false.  
   
- Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. Это свойство представляет собой ссылку на узел модуля преобразования и объявляется как <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Если определено пользовательское ведущее приложение, можно выполнить его приведение к типу пользовательского ведущего приложения.  
+ Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. Это свойство представляет собой ссылку на узел модуля преобразования и объявляется как <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Если определено пользовательское основное приложение, можно выполнить его приведение к типу пользовательского основного приложения.  
   
- Поскольку тип данного свойства зависит от типа ведущего приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным ведущим приложением. Он применим к [шаблоны времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не [шаблонам времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+ Поскольку тип данного свойства зависит от типа основного приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным основным приложением. Он применим к [шаблоны времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не [шаблонам времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
- Когда свойство `hostspecific` имеет значение `true` и вы используете [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], можно привести `this.Host` к типу IServiceProvider для доступа к возможностям [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Пример:  
+ Когда свойство `hostspecific` имеет значение `true` и вы используете [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], можно привести `this.Host` к типу IServiceProvider для доступа к функциям [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Пример:  
   
 ```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
@@ -147,7 +146,8 @@ Squares of numbers:
  Как правило, в качестве базового класса указывается другой предварительно обработанный шаблон. Базовый шаблон предоставляет общие блоки текста, которые могут чередоваться с текстом из производных шаблонов. Можно использовать блоки возможностей класса `<#+ ... #>`, чтобы определить методы, содержащие фрагменты текста. Например, можно поместить структуру выходного текста в базовый шаблон и предоставить виртуальные методы, которые могут переопределяться в производных шаблонах:  
   
  Текстовый шаблон времени выполнения (предварительно обработанный) BaseTemplate.tt:  
- ```scr  
+
+```scr  
 This is the common header.  
 <#   
   SpecificFragment1();   
@@ -166,7 +166,8 @@ This is the common footer.
 ```  
   
  Текстовый шаблон времени выполнения (предварительно обработанный) DerivedTemplate1.tt:  
- ```csharp  
+
+```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -191,12 +192,14 @@ protected override void SpecificFragment2()
 ```  
   
  Код приложения для вызова DerivedTemplate1:  
- ```csharp  
+
+```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
  Полученные выходные данные:  
- ```  
+
+```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
 A common central text.  
@@ -209,7 +212,7 @@ This is the common footer.
  Кроме того, в качестве базового класса можно использовать обычный, созданный вручную класс. Базовый класс должен предоставлять методы, используемые производным классом.  
   
 > [!WARNING]
->  Если атрибуты `inherits` и `hostspecific` используются совместно, укажите hostspecific="trueFromBase" в производном классе и host="true" в базовом классе. Это позволит избежать двойного определения свойства `Host` в созданном коде.  
+> Если атрибуты `inherits` и `hostspecific` используются совместно, укажите hostspecific="trueFromBase" в производном классе и host="true" в базовом классе. Это позволит избежать двойного определения свойства `Host` в созданном коде.  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>Наследование в текстовом шаблоне времени разработки  
  Во время разработки текстовый шаблон является файл, для которого **пользовательское средство** присваивается **TextTemplatingFileGenerator**. Этот шаблон позволяет создать выходной файл кода или текста, формирующего часть проекта [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. При создании выходного файла шаблон сначала преобразуется в промежуточный файл программного кода, который обычно не видно пользователю. Атрибут `inherits` задает базовый класс для данного промежуточного кода.  
@@ -241,6 +244,3 @@ This is the common footer.
  `internal`  
   
  В текстовом шаблоне времени выполнения задает атрибут видимости созданного класса. По умолчанию класс является частью открытого API кода, но если задать значение `visibility="internal"`, только ваш код сможет использовать класс, создающий текст.
-
-
-

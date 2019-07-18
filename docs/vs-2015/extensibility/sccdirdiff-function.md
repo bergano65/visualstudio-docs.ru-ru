@@ -1,14 +1,9 @@
 ---
 title: Функция SccDirDiff | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccDirDiff
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7d2c45773a9d45c69cfed4f773bc5cdfcfa1c305
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81279e0fdb0df6600686adc57bb1c5489e8e7aab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432459"
 ---
 # <a name="sccdirdiff-function"></a>Функция SccDirDiff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Каталог на диске совпадает со значением в проект в системе управления версиями.|  
 |SCC_I_FILESDIFFER|Каталог на диске отличается от проекта в системе управления версиями.|  
@@ -85,8 +80,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|Если поддерживается подключаемый модуль, автоматически сравнивает каталогу с помощью по метке времени или, если не поддерживается, возвращается обратно SCC_DIFF_QD_CHECKSUM или SCC_DIFF_QD_CONTENTS.|  
   
 > [!NOTE]
->  Эта функция использует те же флаги команды, как [SccDiff](../extensibility/sccdiff-function.md). Тем не менее подключаемый модуль системы управления версиями, можно не поддерживает операцию «quick-diff» для каталогов.  
+> Эта функция использует те же флаги команды, как [SccDiff](../extensibility/sccdiff-function.md). Тем не менее подключаемый модуль системы управления версиями, можно не поддерживает операцию «quick-diff» для каталогов.  
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля системы управления версиями](../extensibility/source-control-plug-in-api-functions.md)
-

@@ -6,42 +6,41 @@ helpviewer_keywords:
 - automation [Visual Studio SDK], about automation
 - extensibility
 ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb9176ce0341ff50bb59a9666d18ae5054dad872
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42b1237825eaa3fe2dec9ffa0142b78bc4693976
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821851"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326318"
 ---
 # <a name="automation-model-overview"></a>Общие сведения о модели автоматизации
-Модель автоматизации состоит из набора объектов, для которых можно написать надстройки Visual Studio или расширения. Надстройка — это приложение, можно управлять в среду Visual Studio и автоматизации общих задач. Расширение Visual Studio можно создавать пользовательские компоненты Visual Studio или добавить функциональные возможности стандартных компонентов, таких как текстовый редактор.  
-  
-## <a name="objects-in-the-automation-model"></a>Объекты в модели автоматизации  
- Модель автоматизации состоит из связанные группы объектов, которые управляют важнейшими областями среде. В примере ниже показан широкий набор объектов Visual Studio, из которых состоит модель автоматизации.  
-  
- ![Таблица объекта анимации Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
-  
- Дополнительные сведения см. в разделе [расширения среды Visual Studio](https://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  
-  
- Среда предоставляет модель для различных функциональных областей. Например имеется модель кода для различных элементов, которые могут оказаться в коде. Имеется модель документа для различных элементов документа. Одной области, области проекта представляет интерес к поставщикам VSPackage. Вероятно, стоит на новых типов проектов, добавляемого в модели автоматизации так же, как [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] участвовать в модели автоматизации. Что процесс описан по [обеспечивают автоматизацию для пакетов VSPackage](../../extensibility/internals/providing-automation-for-vspackages.md).  
-  
- Места, где можно рассмотреть расширение модели автоматизации среды:  
-  
--   Проект  
-  
--   Document  
-  
--   Код  
-  
--   Построить  
+Модель автоматизации состоит из набора объектов, для которых можно написать надстройки Visual Studio или расширения. Надстройка — это приложение, можно управлять в среду Visual Studio и автоматизации общих задач. Расширение Visual Studio можно создавать пользовательские компоненты Visual Studio или добавить функциональные возможности стандартных компонентов, таких как текстовый редактор.
 
-  
-Дополнительные сведения об автоматизации см. в разделе [Автоматизация и расширение среды для Visual Studio](../extensibility-in-visual-studio.md). В этом документе и документы также предоставляет ссылки на, помогают принимать решения о том, как следует предоставить автоматизации для VSPackage.  
-  
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Создание надстройки](https://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
+## <a name="objects-in-the-automation-model"></a>Объекты в модели автоматизации
+ Модель автоматизации состоит из связанные группы объектов, которые управляют важнейшими областями среде. В примере ниже показан широкий набор объектов Visual Studio, из которых состоит модель автоматизации.
+
+ ![Таблица объекта анимации Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")
+
+ Дополнительные сведения см. в разделе [расширения среды Visual Studio](https://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).
+
+ Среда предоставляет модель для различных функциональных областей. Например имеется модель кода для различных элементов, которые могут оказаться в коде. Имеется модель документа для различных элементов документа. Одной области, области проекта представляет интерес к поставщикам VSPackage. Вероятно, стоит на новых типов проектов, добавляемого в модели автоматизации так же, как [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] и [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] участвовать в модели автоматизации. Что процесс описан по [обеспечивают автоматизацию для пакетов VSPackage](../../extensibility/internals/providing-automation-for-vspackages.md).
+
+ Места, где можно рассмотреть расширение модели автоматизации среды:
+
+- Проект
+
+- Document
+
+- Код
+
+- Построить
+
+Дополнительные сведения об автоматизации см. в разделе [Автоматизация и расширение среды для Visual Studio](../extensibility-in-visual-studio.md). В этом документе и документы также предоставляет ссылки на, помогают принимать решения о том, как следует предоставить автоматизации для VSPackage.
+
+## <a name="see-also"></a>См. также
+- [Практическое руководство. Создание надстройки](https://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

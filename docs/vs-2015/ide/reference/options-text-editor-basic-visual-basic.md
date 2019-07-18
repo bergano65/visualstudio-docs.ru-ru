@@ -1,14 +1,9 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", Basic (Visual Basic) | Документы Майкрософт"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
 - VS.ToolsOptionsPages.Text_Editor.Basic.Editor
@@ -22,22 +17,21 @@ ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 461af4c3c8e811c989bc296b6f8f55f398bc5bd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902481"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674513"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>"Параметры", "Текстовый редактор", Basic (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Страница свойств **Только для VB** в папке **Basic** внутри папки **Текстовый редактор** диалогового окна **Параметры** (меню **Сервис**) содержит следующие свойства:  
   
  **Автоматическая вставка завершающих конструкций**  
- Когда вы вводите, например, первую строку объявления процедуры, `Sub Main—`и нажмите клавишу ВВОД, текстовый редактор добавляет соответствующую строку `End Sub`. Аналогичным образом, при добавлении цикла [For](http://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9) текстовый редактор добавляет соответствующий оператор `Next`. Если этот параметр выбран, редактор кода автоматически добавляет завершающие конструкции.  
+ Когда вы вводите, например, первую строку объявления процедуры, `Sub Main—`и нажмите клавишу ВВОД, текстовый редактор добавляет соответствующую строку `End Sub`. Аналогичным образом, при добавлении цикла [For](https://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9) текстовый редактор добавляет соответствующий оператор `Next`. Если этот параметр выбран, редактор кода автоматически добавляет завершающие конструкции.  
   
  **Автоматическое форматирование кода**  
  Текстовый редактор переформатирует код соответствующим образом. Когда этот параметр выбран, редактор кода делает следующее:  
@@ -77,9 +71,6 @@ ms.locfileid: "49902481"
  **Включить выделение ссылок и ключевых слов**  
  Текстовый редактор может выделить все экземпляры символа или все ключевые слова в предложении, например `If..Then`, `While...End While` или `Try...Catch...Finally`. Вы можете перемещаться между выделенными ссылками и ключевыми словами, нажимая клавиши CTRL+SHIFT+СТРЕЛКА ВНИЗ или CTRL+SHIFT+СТРЕЛКА ВВЕРХ.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)   
  ["Параметры", "Текстовый редактор", "Все языки", "Вкладки"](../../ide/reference/options-text-editor-all-languages-tabs.md)
-
-
-

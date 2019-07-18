@@ -1,14 +1,9 @@
 ---
 title: Элемент LocationField (шаблоны проектов Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9d7d1abef8213ea06e04d35c05b38295e0b01bd9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b28fe0e696b23724758bd877b6031287290f879e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194463"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Элемент LocationField (шаблоны проектов Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "51778648"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет, как отображается ли он в категорию шаблона и **новый проект**.|  
   
@@ -59,11 +54,11 @@ ms.locfileid: "51778648"
   
  Ниже перечислены значения допустимый текст.  
   
--   `Enabled`, который указывает на то, что **расположение** поле **новый проект** становится доступным поле диалогового окна.  
+- `Enabled`, который указывает на то, что **расположение** поле **новый проект** становится доступным поле диалогового окна.  
   
--   `Disabled`, который указывает на то, что **расположение** поле **новый проект** диалоговое окно отключено.  
+- `Disabled`, который указывает на то, что **расположение** поле **новый проект** диалоговое окно отключено.  
   
--   `Hidden`, который указывает на то, что **расположение** поле **новый проект** диалоговое окно является скрытым.  
+- `Hidden`, который указывает на то, что **расположение** поле **новый проект** диалоговое окно является скрытым.  
   
 ## <a name="remarks"></a>Примечания  
  Значение по умолчанию — `Enabled`.  
@@ -103,4 +98,3 @@ ms.locfileid: "51778648"
 ## <a name="see-also"></a>См. также  
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-

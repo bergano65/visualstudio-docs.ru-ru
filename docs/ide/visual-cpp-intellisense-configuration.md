@@ -7,18 +7,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fef5f63d8c3fd843ed6f92a313102a9c9879003f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864878"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715371"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Настройка проекта C++ для IntelliSense
 
 Иногда может понадобиться вручную настроить проект C++ для правильной работы функции IntelliSense. Для проектов MSBuild (на основе файлов с расширением .vcxproj) можно настроить параметры в свойствах проекта. Для других типов проектов нужно настроить параметры в файле CppProperties.json, находящемся в корневом каталоге проекта. Иногда требуется создать файл указаний, чтобы помочь IntelliSense понять определения макросов. Интегрированная среда разработки Visual Studio помогает найти и исправить проблемы с функцией IntelliSense.
-
-
 
 ## <a name="single-file-intellisense"></a>IntelliSense для одного файла
 
@@ -48,11 +46,9 @@ ms.locfileid: "53864878"
 
 ![Пути включаемых файлов в проекте Makefile](media/vcpp-intellisense-makefile-include-paths.png)
 
-Дополнительные сведения см. в разделе [Как Использование IntelliSense для проектов Makefile](/cpp/ide/how-to-enable-intellisense-for-makefile-projects).
-
 ### <a name="open-folder-projects"></a>Проекты в виде папок
 
-При работе с проектами CMake убедитесь, что пути #include в файле CMakeLists.txt указаны правильно для всех конфигураций. Для других типов проектов возможно, потребуется использовать файл CppProperties.json. Дополнительные сведения см. в статье о [настройке IntelliSense с помощью файла CppProperties.json](/cpp/ide/non-msbuild-projects#cppproperties). Убедитесь, что пути указаны правильно для всех конфигураций, определенных в этом файле.
+При работе с проектами CMake убедитесь, что пути #include в файле CMakeLists.txt указаны правильно для всех конфигураций. Для других типов проектов возможно, потребуется использовать файл CppProperties.json. Дополнительные сведения см. в статье о [настройке IntelliSense с помощью файла CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Убедитесь, что пути указаны правильно для всех конфигураций, определенных в этом файле.
 
 Если в файле CppProperties.json есть синтаксическая ошибка, функция IntelliSense для затронутых файлов будет работать неправильно. В окне вывода Visual Studio будет отображаться ошибка.
 
@@ -72,9 +68,9 @@ ms.locfileid: "53864878"
 
    ![Анализатор тегов предлагает определить существующую функцию](media/vcpp-intellisense-tag-parser-function.png)
 
-Чтобы устранить подобные проблемы, создайте файл с именем **cpp.hint** в корневом каталоге решения. Дополнительные сведения см. в статье [Файлы подсказок](/cpp/ide/hint-files).
+Чтобы устранить подобные проблемы, создайте файл с именем **cpp.hint** в корневом каталоге решения. Дополнительные сведения см. в статье [Файлы подсказок](/cpp/build/reference/hint-files).
 
-**Visual Studio 2017 версии 15.7.** Ошибки анализатора тегов отображаются в окне "Список ошибок".
+Ошибки анализатора тегов отображаются в окне **Список ошибок**.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Проверка параметров проекта с помощью журнала ведения диагностики
 
@@ -107,7 +103,7 @@ Visual Studio использует выделенный компилятор C++
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>Устранение ошибок компиляции IntelliSense
 
-При компиляции IntelliSense не создаются двоичные файлы, но она также может завершиться с ошибкой. Одна из возможных причин ошибки — использование пользовательских файлов с расширениями .props или .targets. В Visual Studio 2017 версии 15.6 ошибки компиляции только для IntelliSense отображаются в окне вывода. Чтобы их увидеть, в раскрывающемся списке **Показать выходные данные из** выберите **Решение**:
+При компиляции IntelliSense не создаются двоичные файлы, но она также может завершиться с ошибкой. Одна из возможных причин ошибки — использование пользовательских файлов с расширениями .props или .targets. В Visual Studio 2017 версии 15.6 и более поздней ошибки сборки только для IntelliSense отображаются в окне вывода. Чтобы их увидеть, в раскрывающемся списке **Показать выходные данные из** выберите **Решение**:
 
 ![Окно вывода для ошибок решения](media/vcpp-intellisense-output-window.png)
 

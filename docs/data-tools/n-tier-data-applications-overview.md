@@ -10,16 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a47ce13b907d393fae156737a4f20fffe0cddc65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 995328205e99117f68050833853ada76f06eb4c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907181"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821905"
 ---
 # <a name="n-tier-data-applications-overview"></a>Общие сведения об n-уровневых приложениях
 *N-уровневых* данных приложения, данные приложения, разделенные на несколько *уровни*. Также называется «распределенные приложения» и «многоуровневыми приложениями», n уровневые приложения разделяют обработку на несколько отдельных уровней, которые распределяются между клиентом и сервером. При разработке приложений, работающих с данными, должен иметь четкое разделение между различными уровнями, составляющих приложение.
@@ -28,33 +27,33 @@ ms.locfileid: "53907181"
 
 Visual Studio содержит несколько функций, которые помогут разработчикам создавать многоуровневые приложения:
 
--   Набор данных предоставляет **проект DataSet** свойство, которое позволяет разделить набор данных (уровень данных сущности) и адаптеров таблиц (уровень доступа к данным) на отдельные проекты.
+- Набор данных предоставляет **проект DataSet** свойство, которое позволяет разделить набор данных (уровень данных сущности) и адаптеров таблиц (уровень доступа к данным) на отдельные проекты.
 
--   [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляет параметры для формирования классов DataContext и данные по отдельным пространствам имен. Это позволяет логическое разделение доступа к данным и уровни данных сущности.
+- [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) предоставляет параметры для формирования классов DataContext и данные по отдельным пространствам имен. Это позволяет логическое разделение доступа к данным и уровни данных сущности.
 
--   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) предоставляет <xref:System.Data.Linq.Table%601.Attach%2A> метод, который позволяет объединять DataContext из различных уровней в приложении. Дополнительные сведения см. в разделе [N-уровневые и удаленные приложения и LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) предоставляет <xref:System.Data.Linq.Table%601.Attach%2A> метод, который позволяет объединять DataContext из различных уровней в приложении. Дополнительные сведения см. в разделе [N-уровневые и удаленные приложения и LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
 ## <a name="presentation-tier"></a>Уровень представления
 *Уровень представления* является уровнем, на котором пользователи взаимодействуют с приложением. Он часто содержит дополнительную логику приложения также. Ниже приведены компоненты уровня представления обычно:
 
--   Привязка компоненты, такие как данных <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator>.
+- Привязка компоненты, такие как данных <xref:System.Windows.Forms.BindingSource> и <xref:System.Windows.Forms.BindingNavigator>.
 
--   Объектное представление данных, таких как [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) классы сущностей для использования на уровне представления.
+- Объектное представление данных, таких как [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) классы сущностей для использования на уровне представления.
 
 Уровень представления обычно обращается к среднего уровня с помощью ссылки на службу (например, [службы Windows Communication Foundation и WCF Data Services в Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) приложения). Уровень представления не напрямую обращаться к уровню данных. Уровень представления взаимодействует с уровнем данных посредством компонента доступа к данным на среднем уровне.
 
 ## <a name="middle-tier"></a>Средний уровень
 *Среднего уровня* слоем, который уровни представления и данных используется для взаимодействия друг с другом. Ниже приведены типичные среднего уровня компонентов:
 
--   Бизнес-логику, например бизнес-правил и данных проверок.
+- Бизнес-логику, например бизнес-правил и данных проверок.
 
--   Компоненты доступа к данным и логику, например следующие:
+- Компоненты доступа к данным и логику, например следующие:
 
-    -   [Адаптеры таблиц](create-and-configure-tableadapters.md) и [объекты DataAdapter и DataReader](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+  - [Адаптеры таблиц](create-and-configure-tableadapters.md) и [объекты DataAdapter и DataReader](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-    -   Объектное представление данных, таких как [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) классов сущностей.
+  - Объектное представление данных, таких как [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) классов сущностей.
 
-    -   Общих служб приложений, таких как проверка подлинности, авторизации и персонализации.
+  - Общих служб приложений, таких как проверка подлинности, авторизации и персонализации.
 
 Ниже показан возможности и технологии, доступные в Visual Studio и где они могут по размеру n уровневого приложения на среднем уровне.
 

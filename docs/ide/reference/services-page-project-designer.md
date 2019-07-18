@@ -1,7 +1,6 @@
 ---
 title: Страница "Службы" в конструкторе проектов
 ms.date: 01/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
@@ -10,15 +9,15 @@ helpviewer_keywords:
 - Project Designer, Services page
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c3e40108f6bca3226e6f39eb2eb4b09437a4f1e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c439a981573934215ecad8796e7980a5f9c8c2f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934936"
 ---
 # <a name="services-page-project-designer"></a>Страница "Службы" в конструкторе проектов
 

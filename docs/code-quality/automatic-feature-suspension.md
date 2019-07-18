@@ -9,16 +9,15 @@ helpviewer_keywords:
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46df354cf860aa1aa08fd8d738711dad41fd6741
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbe86e085e50dc0e72c00b7bbe7a313e689e0ee5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571539"
 ---
 # <a name="automatic-feature-suspension"></a>Автоматическая приостановка функции
 

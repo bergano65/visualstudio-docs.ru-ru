@@ -1,14 +1,9 @@
 ---
-title: 'CA1021: Не используйте параметры out | Документация Майкрософт'
-ms.custom: ''
+title: CA1021. Не используйте параметры out | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1021
 - AvoidOutParameters
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3f90b4487824695fe0045c06638679607e4464b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b52d5a97fc3c2e3a6bf5b4bb938bad9da50d3a7d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144829"
 ---
-# <a name="ca1021-avoid-out-parameters"></a>CA1021: не используйте параметры out
+# <a name="ca1021-avoid-out-parameters"></a>CA1021. Не используйте параметры out
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -79,13 +74,13 @@ ms.locfileid: "49917677"
 
  В этом примере формируются следующие данные:
 
- **Указатель Changing - передаются по значению:**
+ **Указатель Changing - передаются по значению:** 
 **12345**
 **12345**
 **Changing указатель - передается по ссылке:** 
- ** 12345**
+**12345**
 **12345 ABCDE**
-**передача по возвращаемое значение:**
+**передача по возвращаемое значение:** 
 **12345 ABCDE**
 ## <a name="try-pattern-methods"></a>Попробуйте методы шаблона
 
@@ -96,7 +91,4 @@ ms.locfileid: "49917677"
  [!code-csharp[FxCop.Design.TryPattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TryPattern/cs/FxCop.Design.TryPattern.cs#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1045: не передавайте типы по ссылке](../code-quality/ca1045-do-not-pass-types-by-reference.md)
-
-
-
+ [CA1045: Не передавайте типы по ссылке](../code-quality/ca1045-do-not-pass-types-by-reference.md)

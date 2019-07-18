@@ -4,17 +4,14 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Сведения о том, как найти и скачать продукты Майкрософт, входящее в вашу подписку Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: f8bfc394c2c40ee18df8a741f5101105cc2e189e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 5124217334418ea68b5dee6cb222e92e509ee5f5
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803218"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784823"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Использование скачиваемых файлов подписчика в подписках Visual Studio
 Ваши преимущества подписчика включают в себя доступ к обширному спектру скачиваемого программного обеспечения.
@@ -33,7 +30,7 @@ ms.locfileid: "53803218"
 - **Избыточное программное обеспечение.** Скачиваемые файлы и ключи для некоторых наборов Office и отдельных продуктов Office более не будут доступны в подписках, включающих Office. Скачиваемые файлы и ключи продуктов доступны для соответствующего наивысшего набора Office этой же версии.  Например, поиск PowerPoint 2010 не даст никаких результатов.  Но можно найти набор Office 2010, содержавший PowerPoint 2010, и скачать его.
 
 ## <a name="what-do-i-get"></a>Что я получаю?
-Число и тип скачиваемых файлов зависит от вашего уровня подписки и членства в программах.  Например, подписчикам со стандартными подписками Visual Studio Enterprise доступно больше разнообразных файлов для скачивания, а подписчикам, получающим подписки по программе Microsoft Partner Network или BizSpark, — меньше.  Чтобы узнать, какие именно скачиваемые файлы доступны для каждого уровня подписки, скачайте список [продуктов, упорядоченных по уровню преимущества](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
+Число и тип скачиваемых файлов зависит от вашего уровня подписки и членства в программах.  Например, подписчикам со стандартными подписками Visual Studio Enterprise доступно больше разнообразных файлов для скачивания, а подписчикам, получающим подписки по программе Microsoft Partner Network или BizSpark, — меньше.  Чтобы узнать, какие именно скачиваемые файлы доступны для каждого уровня подписки, скачайте список [продуктов, упорядоченных по уровню преимущества](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx).
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 

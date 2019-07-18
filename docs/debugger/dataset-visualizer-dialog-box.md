@@ -9,8 +9,6 @@ dev_langs:
 - VB
 - FSharp
 - C++
-- JScript
-- SQL
 helpviewer_keywords:
 - datasets [Visual Studio], Dataset Visualizer dialog box
 - visualizers, Dataset Visualizer dialog box
@@ -18,27 +16,27 @@ helpviewer_keywords:
 ms.assetid: dfbede03-805b-4f88-a645-b479450e6cb0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29cbefaa2993b894b9868b6719ecf5fde1d832e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563550"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Средство визуализации наборов данных - диалоговое окно
-Средство визуализации наборов данных позволяет просматривать содержимое объектов DataSet, DataTable, DataView и DataViewManager. Доступ к этому визуализатору можно получить, щелкнув значок лупы рядом со значением одного из указанных объектов в окне переменных отладчика или в окне подсказки данных.  
-  
- В этом визуализаторе можно внести изменения в объекты. Изменения сохраняются сразу при фиксации строки.  
-  
-## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
- Таблица  
- Используйте этот раскрывающийся список для выбора таблицы в наборе данных, которую необходимо визуализировать.  
-  
-## <a name="see-also"></a>См. также раздел  
- [Безопасность отладчика](../debugger/debugger-security.md)   
- [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)   
- [Окна отладчика](../debugger/debugger-windows.md)   
- [Просмотр значений данных в подсказках по данным](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
+Средство визуализации наборов данных позволяет просматривать содержимое объектов DataSet, DataTable, DataView и DataViewManager. Доступ к этому визуализатору можно получить, щелкнув значок лупы рядом со значением одного из указанных объектов в окне переменных отладчика или в окне подсказки данных.
+
+ В этом визуализаторе можно внести изменения в объекты. Изменения сохраняются сразу при фиксации строки.
+
+## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
+ Таблицы используйте этот раскрывающийся список для выбора таблицы в наборе данных, которую требуется визуализировать.
+
+## <a name="see-also"></a>См. также
+
+- [Безопасность отладчика](../debugger/debugger-security.md)
+- [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)
+- [Окна отладчика](../debugger/debugger-windows.md)
+- [Просмотр значений данных в подсказках по данным](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

@@ -1,27 +1,22 @@
 ---
 title: Вкладка «Windows», диалоговое окно "Параметры сообщения" | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message options, Windows
 ms.assetid: 6e9cc5ca-24cc-49cf-aa22-c89733828f8c
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 18c4df45b05ded298243797382be3793a205e640
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ec09bbd08fb8c92d5c61a2eda7c9961d09c78195
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159706"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Вкладка "Окна" диалогового окна "Параметры сообщения"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +37,14 @@ ms.locfileid: "51779558"
  **Дочернее окно**  
  Отображать сообщения для выбранного окна и всех его дочерних окон, включая вложенные дочерние окна.  
   
- **Windows одного потока**  
+ **Окна одного потока**  
  Отображать сообщения для выбранного окна и всех других окон, владельцем в том же потоке.  
   
- **Windows одного процесса**  
+ **Окна одного процесса**  
  Отображать сообщения для выбранного окна и всех других окон, владельцем тот же процесс.  
   
- **Все Windows в системе**  
+ **Все окна в системе**  
  Отображать сообщения для всех окон.  
   
- **Сохранить параметры по умолчанию**  
+ **Сохранить в качестве параметров по умолчанию**  
  Сохраните указанные выше параметры для новых окон потоков сообщений. Эти параметры также сохраняются при выходе из Spy ++.
-
-
-

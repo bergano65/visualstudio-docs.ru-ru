@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IRemoteDebugApplication | Документы Microsoft
+title: Интерфейс IRemoteDebugApplication | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea91afdc44b70a91846d7b1a3dc4c017c0c4c80e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2a231818def210f7c88ab031059f8561c67b33d1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944239"
 ---
 # <a name="iremotedebugapplication-interface"></a>Интерфейс IRemoteDebugApplication
-Представляет работающее приложение. Он не соответствуют процесса операционной системы. Как правило отладчик обращается приложение для отладки. Как правило, диспетчер отладки процессов реализует объект приложения.  
+Представляет выполняющееся приложение. Он не должен соответствуют это процесс операционной системы. Как правило отладчик обращается приложение для отладки. Диспетчер отладки процессов обычно реализует объект приложения.  
   
  Помимо методов, наследуемых от `IUnknown`, `IRemoteDebugApplication` интерфейс предоставляет следующие методы.  
   
@@ -30,14 +29,14 @@ ms.locfileid: "24729604"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|Продолжает работу приложения, которое в данный момент точку останова.|  
-|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|В результате приложения, чтобы переключиться в режим отладчика при первой возможности.|  
+|[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|По-прежнему приложение, которое в настоящее время находится в точке останова.|  
+|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Предписывает приложению переключиться в режим отладчика при первой возможности.|  
 |[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)|Отладчик подключается к этому приложению.|  
-|[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|Отключает текущий отладчик из приложения.|  
-|[IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)|Возвращает текущий отладчик подключается приложение.|  
-|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Предоставляет механизм для отладчика интегрированной среды разработки, выполняется вне процесса для приложения, для создания объектов в процессе приложения.|  
-|[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|Указывает, является ли скорость реагирования приложения.|  
-|[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|Перечисляет все потоки, известно, связанных с приложением.|  
+|[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|Отключает текущий отладчик от приложения.|  
+|[IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)|Возвращает текущий отладчик подключен к приложению.|  
+|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Предоставляет механизм для отладчика интегрированной среды разработки, работает вне процесса для приложения, для создания объектов в процессе приложения.|  
+|[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|Указывает, является ли отвечает приложение.|  
+|[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|Перечисляет все потоки, известно, связанного с приложением.|  
 |[IRemoteDebugApplication::GetName](../../winscript/reference/iremotedebugapplication-getname.md)|Возвращает имя этого узла приложения.|  
-|[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|Возвращает узел приложения, в которой добавляются все узлы, связанные с приложением.|  
-|[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|Перечисляет контекстов глобальные выражения для всех языков, работающих в данном приложении.|
+|[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|Возвращает узел приложения, под которой добавляются все узлы, связанные с приложением.|  
+|[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|Перечисляет контексты глобальное выражение для всех языков, работающих в этом приложении.|

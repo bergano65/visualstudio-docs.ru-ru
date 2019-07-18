@@ -1,14 +1,9 @@
 ---
 title: Продукт и справочник по схемам пакета | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -30,13 +25,13 @@ ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188958"
 ---
 # <a name="product-and-package-schema-reference"></a>Справочные сведения о схеме пакетов и продуктов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,13 +42,13 @@ ms.locfileid: "49271041"
   
 |Элемент|Описание|Атрибуты|  
 |-------------|-----------------|----------------|  
-|[\<Продукт > элемент](../deployment/product-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файла продукта.|Нет|  
-|[\<Пакет > элемент](../deployment/package-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файлов пакета.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > элемент](../deployment/relatedproducts-element-bootstrapper.md)|Необязательный элемент, для файла продукта. Другие продукты, устанавливает или зависит от этого продукта.|Нет|  
-|[\<InstallChecks > элемент](../deployment/installchecks-element-bootstrapper.md)|Обязательный элемент. Список проверок зависимостей для выполнения на локальном компьютере во время установки.|Нет|  
-|[\<Команды > элемент](../deployment/commands-element-bootstrapper.md)|Обязательный элемент.  Выполняет одну или несколько проверок установки согласно `InstallChecks`и указывает, какой пакет следует установить проверка завершилась ошибкой.|Нет|  
-|[\<PackageFiles > элемент](../deployment/packagefiles-element-bootstrapper.md)|Обязательный элемент. Список пакетов, которые могут быть установлены в процессе установки.|Нет|  
-|[\<Строки > элемент](../deployment/strings-element-bootstrapper.md)|Обязательный элемент. Сохраняет локализованную версию строки имени и ошибка продукта.|Нет|  
+|[Элемент \<Product>](../deployment/product-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файла продукта.|None|  
+|[Элемент \<Package>](../deployment/package-element-bootstrapper.md)|Обязательный элемент верхнего уровня для файлов пакета.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[Элемент \<RelatedProducts>](../deployment/relatedproducts-element-bootstrapper.md)|Необязательный элемент, для файла продукта. Другие продукты, устанавливает или зависит от этого продукта.|None|  
+|[Элемент \<InstallChecks>](../deployment/installchecks-element-bootstrapper.md)|Обязательный элемент. Список проверок зависимостей для выполнения на локальном компьютере во время установки.|None|  
+|[Элемент \<Commands>](../deployment/commands-element-bootstrapper.md)|Обязательный элемент.  Выполняет одну или несколько проверок установки согласно `InstallChecks`и указывает, какой пакет следует установить проверка завершилась ошибкой.|None|  
+|[Элемент \<PackageFiles>](../deployment/packagefiles-element-bootstrapper.md)|Обязательный элемент. Список пакетов, которые могут быть установлены в процессе установки.|None|  
+|[Элемент \<Strings>](../deployment/strings-element-bootstrapper.md)|Обязательный элемент. Сохраняет локализованную версию строки имени и ошибка продукта.|None|  
   
 ## <a name="remarks"></a>Примечания  
  Схема пакета, используемая Setup.exe, программу-заглушку, созданный задачей начальной загрузки MS Build, которая содержит немного логики жестко свои собственные. Схема управляет всеми аспектами процесса установки.  
@@ -168,6 +163,3 @@ ms.locfileid: "49271041"
 ## <a name="see-also"></a>См. также  
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

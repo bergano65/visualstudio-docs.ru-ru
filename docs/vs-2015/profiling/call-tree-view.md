@@ -1,14 +1,9 @@
 ---
 title: Представление "Дерево вызовов" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.calltree
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8f09b85c20d84cb25d6a1fdbbd8493c47056318a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439336"
 ---
 # <a name="call-tree-view"></a>Представление "Дерево вызовов"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +36,10 @@ ms.locfileid: "51738751"
   
  Представление "Дерево вызовов" можно настроить, удалив или добавив столбцы. Щелкните правой кнопкой мыши заголовок **Имя столбца** и выберите в контекстном меню команду **Добавить или удалить столбцы**.  
   
- Представление "Дерево вызовов" можно настроить для снижения шума, сократив объем представляемых данных. Благодаря снижению шума проблемы производительности в представлении становятся более наглядными. Возможность более простого выявления проблем повышает эффективность анализа. Дополнительные сведения см. в разделе [Практическое руководство. Настройка подавления шума для представлений отчетов](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
+ Представление "Дерево вызовов" можно настроить для снижения шума, сократив объем представляемых данных. Благодаря снижению шума проблемы производительности в представлении становятся более наглядными. Возможность более простого выявления проблем повышает эффективность анализа. Дополнительные сведения см. в разделе [Как Настройка представлений отчетов снижение шума](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
   
 > [!NOTE]
->  Если снижение шума настроено для отображения предупреждений при их появлении, в отчете появится информационная панель.  
+> Если снижение шума настроено для отображения предупреждений при их появлении, в отчете появится информационная панель.  
   
  Дополнительные сведения об определениях столбцов в представлении "Дерево вызовов" см. в следующих разделах:  
   
@@ -60,6 +55,3 @@ ms.locfileid: "51738751"
  [Представления отчетов о производительности](../profiling/performance-report-views.md)   
  [Общие сведения о значениях данных инструментирования](../profiling/understanding-instrumentation-data-values.md)   
  [Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)
-
-
-

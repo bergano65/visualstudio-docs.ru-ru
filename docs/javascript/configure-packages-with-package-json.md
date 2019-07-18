@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f2712545659d66b421de78d8f8835a613563fdd0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 652ff7b0380fc03a3f9c8155a2f8696d9dfee5b9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857096"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692376"
 ---
 # <a name="packagejson-configuration"></a>Конфигурация package.json
 
@@ -24,7 +24,9 @@ ms.locfileid: "53857096"
 
 Система управления версиями пакета npm имеет строгие правила. Версии имеют следующий формат:
 
-    [major].[minor].[patch]
+```
+[major].[minor].[patch]
+```
 
 Предположим, у вас есть пакет в приложении с версией 5.2.1. Основная версия — 5, дополнительная версия — 2, версия исправления — 1.
 

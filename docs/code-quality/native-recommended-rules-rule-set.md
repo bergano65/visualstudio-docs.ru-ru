@@ -1,19 +1,18 @@
 ---
 title: Набор правил "Рекомендуемые правила для машинного кода"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12e9e271e0fd6881ae19581a1678f131719c4b34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a63abd92ae7791bbed107862a736cbd5fc5c649
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820354"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Набор правил "Рекомендуемые правила для машинного кода"
 

@@ -7,49 +7,48 @@ helpviewer_keywords:
 - user settings [Visual Studio SDK], registering persistence support
 - persistence, registering settings
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4394d101ffb158392d8c8e3ed1c9365b6c68ef7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90f04d5657fb6f680139ee6de5a47625304b5dbd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930912"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309758"
 ---
 # <a name="support-for-user-settings"></a>Поддержка параметров пользователя
-VSPackage может определять одну или несколько категорий параметров, которые представляют собой группы переменных состояния, которые сохраняются, когда пользователь выбирает **параметры импорта и экспорта** команды **средства** меню. Чтобы включить этот сохраняемость, используйте API параметров в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
+VSPackage может определять одну или несколько категорий параметров, которые представляют собой группы переменных состояния, которые сохраняются, когда пользователь выбирает **параметры импорта и экспорта** команды **средства** меню. Чтобы включить этот сохраняемость, используйте API параметров в [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
- Запись реестра, который называется точки настраиваемых параметров и GUID определяет категорию параметров VSPackage. VSPackage может поддерживать несколько категорий параметров, каждый из которых определяется точки настраиваемых параметров.  
+ Запись реестра, который называется точки настраиваемых параметров и GUID определяет категорию параметров VSPackage. VSPackage может поддерживать несколько категорий параметров, каждый из которых определяется точки настраиваемых параметров.
 
--   Реализации параметров, которые основаны на сборки взаимодействия (с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> интерфейс) необходимо создать точки настраиваемых параметров путем редактирования реестра или с помощью скрипта регистратора (RGS-файл). Для получения дополнительной информации см. [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).  
+- Реализации параметров, которые основаны на сборки взаимодействия (с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> интерфейс) необходимо создать точки настраиваемых параметров путем редактирования реестра или с помощью скрипта регистратора (RGS-файл). Для получения дополнительной информации см. [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts).
 
--   Код, использующий Managed Package Framework (MPF) необходимо создать точках настраиваемых параметров, подключив <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> объекту VSPackage для каждой точки настраиваемых параметров.  
+- Код, использующий Managed Package Framework (MPF) необходимо создать точках настраиваемых параметров, подключив <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> объекту VSPackage для каждой точки настраиваемых параметров.
 
-     Если один пакет VSPackage поддерживает несколько точках настраиваемых параметров, каждой точки настраиваемых параметров реализуется отдельный класс и каждый регистрируется с уникальный экземпляр <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> класса. Следовательно параметры, реализация класса может поддерживать более чем одной категории параметров.  
+     Если один пакет VSPackage поддерживает несколько точках настраиваемых параметров, каждой точки настраиваемых параметров реализуется отдельный класс и каждый регистрируется с уникальный экземпляр <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> класса. Следовательно параметры, реализация класса может поддерживать более чем одной категории параметров.
 
-## <a name="custom-settings-point-registry-entry-details"></a>Подробные сведения о записи реестра точки настраиваемых параметров  
- Точках настраиваемых параметров создаются в записи реестра в следующем расположении: HKLM\Software\Microsoft\VisualStudio\\*\<версии >* \UserSettings\\`<CSPName>`, где `<CSPName>` поддерживает VSPackage — это имя точки настраиваемых параметров и  *\<версии >* — это версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], например 8.0.  
+## <a name="custom-settings-point-registry-entry-details"></a>Подробные сведения о записи реестра точки настраиваемых параметров
+ Точках настраиваемых параметров создаются в записи реестра в следующем расположении: HKLM\Software\Microsoft\VisualStudio\\ *\<версии >* \UserSettings\\`<CSPName>`, где `<CSPName>` поддерживает VSPackage — это имя точки настраиваемых параметров и  *\<версии >* — это версия [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], например 8.0.
 
 > [!NOTE]
->  Путь к корневому каталогу HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<версии >* может быть переопределено с помощью альтернативного корневой при [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированная среда разработки (IDE) инициализирован. Дополнительные сведения см. в разделе [переключателей командной строки](../../extensibility/command-line-switches-visual-studio-sdk.md).  
+> Путь к корневому каталогу HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<версии >* может быть переопределено с помощью альтернативного корневой при [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] интегрированная среда разработки (IDE) инициализирован. Дополнительные сведения см. в разделе [переключателей командной строки](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
- Структура записи реестра как показано ниже:  
+ Структура записи реестра как показано ниже:
 
- HKLM\Software\Microsoft\VisualStudio\\*\<версии >* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\
 
- `<CSPName`> = «#12345"s  
+ `<CSPName`> = «#12345"s
 
- Пакет = «{XXXXXX XXXX XXXX XXXX XXXXXXXXX}»  
+ Пакет = «{XXXXXX XXXX XXXX XXXX XXXXXXXXX}»
 
- Категория = «{гггг ГГГГГГ гггг гггг YYYYYYYYY}»  
+ Категория = «{гггг ГГГГГГ гггг гггг YYYYYYYYY}»
 
- ResourcePackage = «{ZZZZ ПППППП ZZZZ ZZZZ ZZZZZZZZZ}»  
+ ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'
 
- AlternateParent = CategoryName  
-
+ AlternateParent = CategoryName
 
 | name | Тип | Данные | Описание |
 |-----------------|--------| - | - |

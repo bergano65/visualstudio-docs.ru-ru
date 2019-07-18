@@ -9,29 +9,32 @@ helpviewer_keywords:
 ms.assetid: 9ff61542-9be7-4e81-bfe5-5d2c6eb112c1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6662dca4abdb39b229ef9f78eed8767c2bb4084
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b7174418267a77cc668ab0a79092fc7daefbf58
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979670"
 ---
 # <a name="spanspan-destructor"></a>Деструктор span::~span
-Уничтожает объект `span` и высвобождает его ресурсы.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-~span();  
-```  
-  
-## <a name="requirements"></a>Требования  
- **Заголовок:** *cvmarkersobj.h*  
-  
- **Пространство имен:** Concurrency::diagnostic
- 
- ## <a name="see-also"></a>См. также
- [Класс span](../profiling/span-class.md)
+
+Уничтожает объект `span` и высвобождает его ресурсы.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+~span();
+```
+
+## <a name="requirements"></a>Требования
+
+**Заголовок:** *cvmarkersobj.h*
+
+**Пространство имен:** Concurrency::diagnostic
+
+## <a name="see-also"></a>См. также
+
+- [Класс span](../profiling/span-class.md)

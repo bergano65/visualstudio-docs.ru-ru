@@ -5,41 +5,41 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 73aff964cfb66d33e308aef6448fc0f0b1b27c09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a71adf5371275fbbdc19cdf09be96ef900ec073d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583767"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Интерфейс IWefDebuggingSupport
-  Реализуется отладочной среде, такой как Visual Studio, чтобы упростить отладку приложений для Office. Приложение Office, например Word или Excel, получает этот интерфейс из Visual Studio и затем вызывает методы в интерфейсе в определенных точках во время сеанса отладки.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```csharp 
-[  
-    uuid(ccaf1a90-ce1c-4199-9cd6-b40c5c57a671),  
-    oleautomation  
-]  
-interface IWefDebuggingSupport : IUnknown  
-{  
-    HRESULT SetWefProcessId(  
-        [in] DWORD dwProcessId);  
-    HRESULT GetAutoInsertExtensions(  
-        [out, retval] SAFEARRAY(BSTR)* psaExtensionNames);  
-}  
-```  
-  
-## <a name="methods"></a>Методы  
- В следующей таблице перечислены методы, которые определяет этот интерфейс IWefDebuggingSupport.  
-  
-|name|Описание:|  
-|----------|-----------------|  
-|[Метод GetAutoInsertExtensions](../vsto/getautoinsertextensions-method.md)|Получает сведения о приложениях для Office, который автоматически вставляются во время отладки.|  
-|[Метод SetWefProcessId](../vsto/setwefprocessid-method.md)|Предоставляет идентификатор процесса, в которой выполняются расширения Framework Web (WEF) содержимое.|  
+  Реализуется отладочной среде, такой как Visual Studio, чтобы упростить отладку приложений для Office. Приложение Office, например Word или Excel, получает этот интерфейс из Visual Studio и затем вызывает методы в интерфейсе в определенных точках во время сеанса отладки.
+
+## <a name="syntax"></a>Синтаксис
+
+```csharp
+[
+    uuid(ccaf1a90-ce1c-4199-9cd6-b40c5c57a671),
+    oleautomation
+]
+interface IWefDebuggingSupport : IUnknown
+{
+    HRESULT SetWefProcessId(
+        [in] DWORD dwProcessId);
+    HRESULT GetAutoInsertExtensions(
+        [out, retval] SAFEARRAY(BSTR)* psaExtensionNames);
+}
+```
+
+## <a name="methods"></a>Методы
+ В следующей таблице перечислены методы, которые определяет этот интерфейс IWefDebuggingSupport.
+
+|name|Описание|
+|----------|-----------------|
+|[Метод GetAutoInsertExtensions](../vsto/getautoinsertextensions-method.md)|Получает сведения о приложениях для Office, который автоматически вставляются во время отладки.|
+|[Метод SetWefProcessId](../vsto/setwefprocessid-method.md)|Предоставляет идентификатор процесса, в которой выполняются расширения Framework Web (WEF) содержимое.|

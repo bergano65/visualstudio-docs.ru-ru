@@ -1,7 +1,6 @@
 ---
 title: Диалоговое окно "Дополнительные параметры компилятора" (C#)
 ms.date: 06/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83dc69bb3856a7fe98e35cf66b0a6325c97a0651
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 908f79b40b17eba5c0e3f518e6d7f2f3ae58e9c7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930154"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745011"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Диалоговое окно "Дополнительные параметры компилятора" (C#)
 
@@ -76,7 +75,7 @@ ms.locfileid: "53930154"
 
    Разрешает отладку исходного кода при запуске программы в отладчике, но при этом ассемблерный код отображается только при подключении исполняемой программы к отладчику.
 
--  **portable**
+- **portable**
 
    Создает не зависящий от платформы PDB-файл, который предоставляет другим инструментам, особенно отладчикам, сведения о том, что содержится в основном исполняемом файле и как он был создан. Дополнительные сведения см. в статье [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md).
 
@@ -92,7 +91,7 @@ ms.locfileid: "53930154"
 
 **Базовый адрес библиотеки**
 
-Указывает предпочтительный базовый адрес для загрузки DLL. Базовый адрес по умолчанию для библиотеки DLL задается в среде CLR [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]. Дополнительные сведения см. в разделе [/baseaddress (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
+Указывает предпочтительный базовый адрес для загрузки DLL. Базовый адрес по умолчанию для библиотеки DLL задается в среде CLR платформы .NET Framework. Дополнительные сведения см. в разделе [/baseaddress (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
 ## <a name="see-also"></a>См. также раздел
 

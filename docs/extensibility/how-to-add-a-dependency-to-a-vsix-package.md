@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Добавление зависимости в пакет VSIX | Документация Майкрософт
+title: Практическое руководство. Добавление зависимости в пакет VSIX | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - package dll
 - vsix reference
 ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ce21c10f1a64bf8edad9181d66b83291d0405c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee6ebeb776e6aa85d5fba200ac357a7375fa2b99
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902484"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341049"
 ---
-# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Как выполнить Добавление зависимости в пакет VSIX
+# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Практическое руководство. Добавление зависимости в пакет VSIX
 
 Можно настроить развертывание пакета VSIX, который устанавливает все зависимости, которых еще нет на целевом компьютере. Для этого необходимо включить файл с зависимостями VSIX для *source.extension.vsixmanifest* файл.
 
@@ -46,9 +46,8 @@ ms.locfileid: "53902484"
 
 Установщик VSIX обнаружит более ранних версиях Visual Studio и информировать пользователей о том, что более позднее обновление является обязательным.
 
-
 ## <a name="see-also"></a>См. также
 
- [Справочник по схеме 1.0 расширение VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Подготовка расширения для развертывания установщика Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+- [Справочник по схеме 1.0 расширение VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)
+- [Подготовка расширения для развертывания установщика Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

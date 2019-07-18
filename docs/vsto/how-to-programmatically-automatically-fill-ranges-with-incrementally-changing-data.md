@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Программным образом автоматически заполнить диапазонов с постепенным изменением данных
+title: Автозаполнение постепенным изменением диапазоны данных программными средствами
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,49 +12,49 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 867f59c04e9d0f99b36e6a067ad9a5cbc1041f46
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a514f83d12cd00c4a7792ae0bf2483fdd916897a
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088326"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177700"
 ---
-# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Как выполнить Программным образом автоматически заполнить диапазонов с постепенным изменением данных
-  <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Метод <xref:Microsoft.Office.Interop.Excel.Range> позволяет также автоматического заполнения диапазона на листе значениями. Чаще всего <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод используется для хранения постепенно увеличения или уменьшения значения в диапазоне. Можно указать поведение, необязательную константу из <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> перечисления.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
- При использовании необходимо указать два диапазона <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:  
-  
--   Диапазон, который вызывает <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод, который указывает начальную точку заливки и содержит начальное значение.  
-  
--   Диапазон, который требуется заполнить, переданный в качестве параметра <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод. Целевой диапазон должен включать диапазон, содержащий исходное значение.  
-  
-    > [!NOTE]  
-    >  Невозможно передать <xref:Microsoft.Office.Tools.Excel.NamedRange> управления вместо <xref:Microsoft.Office.Interop.Excel.Range>. Дополнительные сведения см. в разделе [программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
-  
-## <a name="example"></a>Пример  
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Практическое руководство. Программным образом автоматически заполнить диапазонов с постепенным изменением данных
+  <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> Метод <xref:Microsoft.Office.Interop.Excel.Range> позволяет также автоматического заполнения диапазона на листе значениями. Чаще всего <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод используется для хранения постепенно увеличения или уменьшения значения в диапазоне. Можно указать поведение, необязательную константу из <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> перечисления.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+ При использовании необходимо указать два диапазона <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:
+
+- Диапазон, который вызывает <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод, который указывает начальную точку заливки и содержит начальное значение.
+
+- Диапазон, который требуется заполнить, переданный в качестве параметра <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> метод. Целевой диапазон должен включать диапазон, содержащий исходное значение.
+
+    > [!NOTE]
+    > Невозможно передать <xref:Microsoft.Office.Tools.Excel.NamedRange> управления вместо <xref:Microsoft.Office.Interop.Excel.Range>. Дополнительные сведения см. в разделе [программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+
+## <a name="example"></a>Пример
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
- [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]  
-  
-## <a name="compile-the-code"></a>Компиляция кода  
- Может содержать начальное значение первой ячейки диапазона, который требуется заполнить.  
-  
- В примере вам понадобится ввести три области:  
-  
--   Столбец B предназначен для хранения пяти дней недели. Начальное значение, введите **понедельник** в ячейке В1.  
-  
--   Столбец C является включение пять месяцев. Начальное значение, введите **января** в ячейке C1.  
-  
--   Столбец D является включение ряд чисел, увеличивая время на два для каждой строки. Начальные значения, введите **4** в ячейке D1 и **6** в ячейке D2.  
-  
-## <a name="see-also"></a>См. также  
- [Работа с диапазонами](../vsto/working-with-ranges.md)   
- [Практическое руководство. Ссылки на диапазоны листов в коде программными средствами](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Практическое руководство. Программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Практическое руководство. Программное выполнение вычислений Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
- [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)   
- [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]
+
+## <a name="compile-the-code"></a>Компиляция кода
+ Может содержать начальное значение первой ячейки диапазона, который требуется заполнить.
+
+ В примере вам понадобится ввести три области:
+
+- Столбец B предназначен для хранения пяти дней недели. Начальное значение, введите **понедельник** в ячейке В1.
+
+- Столбец C является включение пять месяцев. Начальное значение, введите **января** в ячейке C1.
+
+- Столбец D является включение ряд чисел, увеличивая время на два для каждой строки. Начальные значения, введите **4** в ячейке D1 и **6** в ячейке D2.
+
+## <a name="see-also"></a>См. также
+- [Работа с диапазонами](../vsto/working-with-ranges.md)
+- [Практическое руководство. Ссылки на диапазоны листов в коде программными средствами](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
+- [Практическое руководство. Программное применение стилей к диапазонам в книгах](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
+- [Практическое руководство. Программное выполнение вычислений Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
+- [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)
+- [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

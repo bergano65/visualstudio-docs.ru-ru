@@ -1,14 +1,9 @@
 ---
-title: 'CA2233: Операции не должно быть переполнений | Документация Майкрософт'
-ms.custom: ''
+title: CA2233. Операции не должно быть переполнений | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperationsShouldNotOverflow
 - CA2233
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5f6690f6577d936757ae3bbe8b725b4434b6bee1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0531a739ec00c3e6224ef5caa7b1c0bf71f0e4e4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836662"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697948"
 ---
-# <a name="ca2233-operations-should-not-overflow"></a>CA2233: в операциях не должно быть переполнений
+# <a name="ca2233-operations-should-not-overflow"></a>CA2233. В операциях не должно быть переполнений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -112,14 +107,11 @@ End Sub
 
  **Чтобы включить проверенное арифметические переполнения и потери точности в C#**
 
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши проект и выберите пункт **свойства**.
+1. В **обозревателе решений**, щелкните правой кнопкой мыши проект и выберите пункт **свойства**.
 
-2.  Перейдите на вкладку **Сборка** и нажмите кнопку **Дополнительно**.
+2. Перейдите на вкладку **Сборка** и нажмите кнопку **Дополнительно**.
 
-3.  Выберите **Проверять арифметические переполнения и потери точности** и нажмите кнопку **ОК**.
+3. Выберите **Проверять арифметические переполнения и потери точности** и нажмите кнопку **ОК**.
 
 ## <a name="see-also"></a>См. также
- <xref:System.OverflowException?displayProperty=fullName> [Операторы в C#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked и Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
-
-
-
+ <xref:System.OverflowException?displayProperty=fullName> [Операторы в C#](https://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked и Unchecked](https://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

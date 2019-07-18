@@ -1,7 +1,6 @@
 ---
 title: Вкладка "Компоненты", панель элементов
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.CHOOSEITEMS.FrameworkComponents
@@ -11,19 +10,19 @@ helpviewer_keywords:
 - Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3324063e80bdb33ec928135ef8760c5e15c7a8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17f040b9bb64c2192bc6b376f5d0397ee5438071
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967074"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747750"
 ---
 # <a name="toolbox-components-tab"></a>Панель элементов, вкладка "Компоненты"
 
-Отображает компоненты, которые можно добавить в конструкторы Visual Basic и C# для Windows Forms. В дополнение к компонентам .NET Framework, которые входят в состав Visual Studio (например, <xref:System.Messaging.MessageQueue> и <xref:System.Diagnostics.EventLog>), на этой вкладке можно добавить собственные или сторонние компоненты.
+Отображает компоненты, которые можно добавить в конструкторы Visual Basic и C# для Windows Forms. В дополнение к компонентам .NET, которые входят в состав Visual Studio (например, <xref:System.Messaging.MessageQueue> и <xref:System.Diagnostics.EventLog>), на этой вкладке можно добавить собственные или сторонние компоненты.
 
 Чтобы отобразить эту вкладку, откройте конструктор Windows Forms. Выберите **Представление** > **Панель элементов**. На **панели элементов** выберите вкладку **Компоненты**.
 

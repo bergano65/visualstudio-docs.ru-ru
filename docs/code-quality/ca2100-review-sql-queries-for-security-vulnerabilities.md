@@ -1,7 +1,6 @@
 ---
 title: CA2100. Проверьте запросы SQL на наличие уязвимостей системы безопасности
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Review SQL queries for security vulnerabilities
@@ -13,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 79670604-c02a-448d-9c0e-7ea0120bc5fe
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a09567184ab1f02cba8ff55157a2d506989c98ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869077"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744806"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100. Проверьте запросы SQL на наличие уязвимостей системы безопасности
 
@@ -37,7 +36,8 @@ ms.locfileid: "53869077"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Задает метод <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> свойства с помощью строки, составленное из строкового аргумента метода.
+
+Задает метод <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> свойства с помощью строки, составленное из строкового аргумента метода.
 
 ## <a name="rule-description"></a>Описание правила
 
@@ -49,7 +49,7 @@ ms.locfileid: "53869077"
 
 - Проверьте входные данные пользователя для типа и содержимое, прежде чем построить строку команды.
 
-Следующие типы .NET Framework реализуют <xref:System.Data.IDbCommand.CommandText%2A> свойство или конструкторы, свойства с помощью строкового аргумента.
+Следующие типы .NET реализуют <xref:System.Data.IDbCommand.CommandText%2A> свойство или конструкторы, свойства с помощью строкового аргумента.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> и <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -61,32 +61,36 @@ ms.locfileid: "53869077"
 
 Обратите внимание на то, что это правило нарушается при использовании метода ToString типа явно или неявно для создания строки запроса. Пример.
 
-```
+```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
- Правило нарушается, так как пользователь-злоумышленник может переопределить метод ToString().
+Правило нарушается, так как пользователь-злоумышленник может переопределить метод ToString().
 
- Правило также нарушается, если метод ToString используется неявно.
+Правило также нарушается, если метод ToString используется неявно.
 
-```
+```csharp
 int x = 10;
 string query = String.Format("SELECT TOP {0} FROM Table", x);
 ```
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, используйте параметризованный запрос.
+
+Чтобы устранить нарушение этого правила, используйте параметризованный запрос.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из этого правила, если текст команды не содержит вводимых пользователем.
+
+Его можно безопасно подавить предупреждение из этого правила, если текст команды не содержит вводимых пользователем.
 
 ## <a name="example"></a>Пример
- В примере показан метод, `UnsafeQuery`, который нарушает правило и метод, `SaferQuery`, выполняет правила, используя строку параметризованные команды.
 
- [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
- [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
- [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
+В примере показан метод, `UnsafeQuery`, который нарушает правило и метод, `SaferQuery`, выполняет правила, используя строку параметризованные команды.
+
+[!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
+[!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
+[!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
 
 ## <a name="see-also"></a>См. также
- [Общие сведения о безопасности](/dotnet/framework/data/adonet/security-overview)
+
+- [Общие сведения о безопасности](/dotnet/framework/data/adonet/security-overview)

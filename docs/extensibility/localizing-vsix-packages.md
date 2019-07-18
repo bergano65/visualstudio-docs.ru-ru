@@ -7,17 +7,17 @@ helpviewer_keywords:
 - localize extension
 - localized deployment
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d554819c8c615dc9f8fcd41bb4b460482e21fde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e0ef2cc0c2404a2148f471d12f313b158f3bd64
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956937"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344559"
 ---
 # <a name="localizing-vsix-packages"></a>Локализация пакетов VSIX
 
@@ -27,7 +27,7 @@ ms.locfileid: "53956937"
 
 ## <a name="directory-structure"></a>Структура каталогов
 
- Когда пользователь устанавливает расширение, **расширения и обновления** проверяет верхний уровень пакета VSIX для папки, имя которого соответствует языку Visual Studio конечного компьютера. Если **расширения и обновления** находит *.vsixlangpack* файл в папке, он подставляет локализованные значения в соответствующие значения в этом файле *.vsixmanifest*файл. Эти значения отображаются при установке расширения. В следующем примере структуру каталогов для пакета VSIX, который локализован на испанский (es-ES) и французского (fr-FR).  
+ Когда пользователь устанавливает расширение, **расширения и обновления** проверяет верхний уровень пакета VSIX для папки, имя которого соответствует языку Visual Studio конечного компьютера. Если **расширения и обновления** находит *.vsixlangpack* файл в папке, он подставляет локализованные значения в соответствующие значения в этом файле *.vsixmanifest*файл. Эти значения отображаются при установке расширения. В следующем примере структуру каталогов для пакета VSIX, который локализован на испанский (es-ES) и французского (fr-FR).
 
 ```text
 .
@@ -53,17 +53,17 @@ ms.locfileid: "53956937"
 
 1. В **обозревателе решений**, щелкните правой кнопкой мыши файл Extension.vsixlangpack и нажмите кнопку **свойства**.
 
-2.  В **сетки свойств**, нажмите кнопку **включить в Vsix**и присвойте ему значение `true`.
+2. В **сетки свойств**, нажмите кнопку **включить в Vsix**и присвойте ему значение `true`.
 
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
 
 В следующем примере показано нужные части *Extension.vsixmanifest* файла. В этом файле содержится соответствующий *Extension.vsixlangpack* файл для испанского языка. Значения из языкового пакета замените значения из манифеста, если задано значение испанский языковой стандарт Visual Studio для конечного компьютера.
 
 ### <a name="code"></a>Код
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ ms.locfileid: "53956937"
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

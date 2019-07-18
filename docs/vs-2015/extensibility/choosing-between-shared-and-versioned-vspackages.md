@@ -1,14 +1,9 @@
 ---
 title: Выбор между общих и с контролем версий пакетов VSPackage | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - SxS
 - side-by-side installation
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9fcae5b736310424f220d08aefa4e061e1f6c860
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 289e506d3cd404bba9a3a63d97179b89a948d381
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756831"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821980"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Выбор между общими пакетами VSPackage и пакетами с контролем версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +31,21 @@ ms.locfileid: "51756831"
 ## <a name="shared-vspackages"></a>Общие пакеты VSPackage  
  С помощью общего VSPackage подходит при использовании же VSPackage в нескольких версиях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Чтобы реализовать общий VSPackage, выполните следующие действия.  
   
--   Обеспечить совместимость с несколькими версиями VSPackage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Оба способа выполнения задачи таким образом доступны:  
+- Обеспечить совместимость с несколькими версиями VSPackage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Оба способа выполнения задачи таким образом доступны:  
   
-    -   Ограничить VSPackage с помощью только за компонентами самую раннюю версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , вы поддерживаете.  
+  - Ограничить VSPackage с помощью только за компонентами самую раннюю версию [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , вы поддерживаете.  
+
+  - Программирование VSPackage для адаптации к версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в котором он выполняется. При сбое запросов для новых служб VSPackage может предложить другие службы, которые поддерживаются в более старых версиях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-    -   Программирование VSPackage для адаптации к версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в котором он выполняется. При сбое запросов для новых служб VSPackage может предложить другие службы, которые поддерживаются в более старых версиях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Регистрация VSPackage соответствующим образом. Дополнительные сведения см. в разделе [регистрации VSPackage](../extensibility/internals/vspackage-registration.md) и [регистрации управляемого VSPackage](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
--   Регистрация VSPackage соответствующим образом. Дополнительные сведения см. в разделе [регистрации VSPackage](../extensibility/internals/vspackage-registration.md) и [регистрации управляемого VSPackage](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+- Регистрация расширений файлов соответствующим образом. Дополнительные сведения см. в разделе [Регистрация расширений имен файлов для развертываний Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   
--   Регистрация расширений файлов соответствующим образом. Дополнительные сведения см. в разделе [Регистрация расширений имен файлов для развертываний Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
+- Создать установщик, который развертывает VSPackage для соответствующих версий [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [Установка пакетов VSPackage с помощью установщика Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) и [Управление компонентами](../extensibility/internals/component-management.md).  
   
--   Создать установщик, который развертывает VSPackage для соответствующих версий [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [Установка пакетов VSPackage с помощью установщика Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) и [Управление компонентами](../extensibility/internals/component-management.md).  
+- Решить проблему регистрации конфликтов. Дополнительные сведения см. в разделе [регистрации VSPackage](../extensibility/internals/vspackage-registration.md).  
   
--   Решить проблему регистрации конфликтов. Дополнительные сведения см. в разделе [регистрации VSPackage](../extensibility/internals/vspackage-registration.md).  
-  
--   Убедитесь, что файлы как общих, так и с контролем версий учитывают подсчет ссылок, чтобы разрешить безопасный установки и удаления нескольких версий. Дополнительные сведения см. в разделе [Управление компонентами](../extensibility/internals/component-management.md).  
+- Убедитесь, что файлы как общих, так и с контролем версий учитывают подсчет ссылок, чтобы разрешить безопасный установки и удаления нескольких версий. Дополнительные сведения см. в разделе [Управление компонентами](../extensibility/internals/component-management.md).  
   
 ## <a name="versioned-vspackages"></a>Управление версиями пакетов VSPackage  
  В разделе с версиями стратегии VSPackage, создайте один VSPackage для каждой версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , которую поддерживаете. Это удобно, если вы планируете использовать преимущества службы, предоставляемые более поздних версиях [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], так как для каждого пакета VSPackage может развиваться, не затрагивая остальные. Тем не менее с версиями стратегии с созданием несколько двоичных файлов, из единой базой кода или из нескольких независимых баз кода, может требовать дополнительные начальной разработки, чем общей стратегии. Кроме того, работа по дополнительной настройке могут быть необходимы, так как необходимо создать отдельные настройки для каждой версии либо единую программу установки, который определяет версии [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , устанавливаемые и поддерживает VSPackage.  
@@ -71,4 +66,3 @@ ms.locfileid: "51756831"
 ## <a name="see-also"></a>См. также  
  [Установка пакетов VSPackage с помощью установщика Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)   
  [Управление компонентами](../extensibility/internals/component-management.md)
-

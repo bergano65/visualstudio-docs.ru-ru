@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Исключение файлов из сборки | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Исключение файлов из сборки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
 - MSBuild, excluding files
@@ -17,22 +12,21 @@ ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 114c973246c325604c79ca248cc3487fd495a19a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230614"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821618"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Практическое руководство. Исключение файлов из построения
+# <a name="how-to-exclude-files-from-the-build"></a>Практическое руководство. Исключение файлов из сборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В файле проекта можно использовать подстановочные знаки, чтобы включить все файлы из одного каталога или набора вложенных каталогов в качестве входных данных для сборки. Однако может присутствовать один файл в каталоге или один каталог в наборе вложенных каталогов, который не требуется включать в качестве входных данных для сборки. Этот файл или каталог можно явным образом исключить из списка входных данных. Кроме того, в проекте может быть файл, который требуется включить только при определенных условиях. Можно явно объявить условия, при которых файл включается в сборку.  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>Исключение файла или каталога из входных данных для сборки  
- Списки элементов являются входными файлами для сборки. Элементы, которые требуется включить, объявляются отдельно или в составе группы с помощью атрибута `Include`. Пример:  
+ Списки элементов являются входными файлами для сборки. Элементы, которые требуется включить, объявляются отдельно или в составе группы с помощью атрибута `Include`. Например:  
   
 ```  
 <CSFile Include="Form1.cs"/>  
@@ -45,13 +39,13 @@ ms.locfileid: "49230614"
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Включение всех файлов с расширением CS или VB, кроме Form2  
   
--   Используйте один из следующих атрибутов `Include` и `Exclude`:  
+- Используйте один из следующих атрибутов `Include` и `Exclude`:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     - или  
+     \- или -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
@@ -59,13 +53,13 @@ ms.locfileid: "49230614"
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Включение всех файлов с расширением CS или VB, кроме Form2 и Form3  
   
--   Используйте один из следующих атрибутов `Include` и `Exclude`:  
+- Используйте один из следующих атрибутов `Include` и `Exclude`:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     - или  
+     \- или -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  
@@ -73,7 +67,7 @@ ms.locfileid: "49230614"
   
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Включение всех JPG-файлов в подкаталогах каталога Images, кроме файлов из каталога Version2  
   
--   Используйте следующие атрибуты `Include` и `Exclude`:  
+- Используйте следующие атрибуты `Include` и `Exclude`:  
   
     ```  
     <JPGFile  
@@ -82,14 +76,14 @@ ms.locfileid: "49230614"
     ```  
   
     > [!NOTE]
-    >  Нужно указать путь для обоих атрибутов. Если вы используете абсолютный путь для указания расположения файлов в атрибуте `Include`, нужно использовать абсолютный путь и в атрибуте `Exclude`. Если же вы используете относительный путь в атрибуте `Include`, такой путь нужно использовать и в атрибуте `Exclude`.  
+    > Нужно указать путь для обоих атрибутов. Если вы используете абсолютный путь для указания расположения файлов в атрибуте `Include`, нужно использовать абсолютный путь и в атрибуте `Exclude`. Если же вы используете относительный путь в атрибуте `Include`, такой путь нужно использовать и в атрибуте `Exclude`.  
   
 ## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Использование условий для исключения файла или каталога из входных данных для сборки  
  Если имеются элементы, которые требуется включить, например, в отладочную сборку, но не в сборку выпуска, можно использовать атрибут `Condition`, чтобы указать условия для включения элемента.  
   
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Включение файла Formula.vb только в сборки выпуска  
   
--   Используйте атрибута `Condition` по аналогии со следующей процедурой:  
+- Используйте атрибута `Condition` по аналогии со следующей процедурой:  
   
     ```  
     <Compile  
@@ -133,6 +127,4 @@ ms.locfileid: "49230614"
   
 ## <a name="see-also"></a>См. также  
  [Элементы](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [Практическое руководство. Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md)
-
-
+ [MSBuild](msbuild.md) [как: Выбор файлов для сборки](../msbuild/how-to-select-the-files-to-build.md)

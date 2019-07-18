@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814241"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Переопределение и расширение созданных классов
 
@@ -55,9 +54,9 @@ public partial class Book
 
 Например, в образце Library.dsl `CirculationBook` имеет доменный класс `Generates``Double Derived` свойство значение `true`. Созданный код для этого класса домена содержит два класса:
 
--   `CirculationBookBase`, который является абстрактным, и который содержит все методы и свойства.
+- `CirculationBookBase`, который является абстрактным, и который содержит все методы и свойства.
 
--   `CirculationBook`, который является производным от `CirculationBookBase`. Он пуст, за исключением конструкторов.
+- `CirculationBook`, который является производным от `CirculationBookBase`. Он пуст, за исключением конструкторов.
 
 Чтобы переопределить любой метод, создайте частичное определение производного класса например `CirculationBook`. Вы можете переопределить созданные методы и методы, унаследованные от платформа моделирования.
 
@@ -91,6 +90,6 @@ public partial class Book
 
 Можно подписаться на события на фигурах. Например можно прослушивать щелчков мыши на фигуре. Вам нужно написать код, который подписывается на событие для каждого объекта. Этот код могут быть написаны на переопределение InitializeInstanceResources().
 
-Некоторые события создаются на которым ShapeFields, используемый для рисования декораторов для фигуры. Например, см. в разделе [как: Перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Некоторые события создаются на которым ShapeFields, используемый для рисования декораторов для фигуры. Пример см. в статье [Практическое руководство. Перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Обычно эти события не происходят внутри транзакции. Следует создать транзакцию, если вы хотите внести изменения в хранилище.

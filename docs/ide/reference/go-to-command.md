@@ -1,7 +1,6 @@
 ---
 title: Команда Go To
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - edit.goto
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f23c0dafcee52e3b4a9c38cc562aa1e428e06a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789835"
 ---
 # <a name="go-to-command"></a>Команда Go To
 Перемещение курсор на указанную строку.

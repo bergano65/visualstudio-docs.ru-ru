@@ -3,21 +3,20 @@ title: 'Руководство по Django в Visual Studio, шаг 3: стат�
 titleSuffix: ''
 description: Пошаговое руководство по основам Django в контексте проектов Visual Studio, в частности демонстрация обработки статических файлов, добавление страниц в приложение и использование наследования шаблонов
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c53001d31e6ef4ee32aaef2093e04be6fcaac29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958259"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Шаг 3. Обработка статических файлов, добавление страниц и использование наследования шаблонов
 

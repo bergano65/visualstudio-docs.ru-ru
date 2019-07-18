@@ -1,29 +1,24 @@
 ---
 title: Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a6cd7efa12fc87c5de4bd82bcfb789d50193dbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ddbcac3073dec1e7f21d381d30978589f1cdd792
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185737"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Использование оболочек совместимости для изоляции приложения от других сборок при модульном тестировании
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Типы оболочек совместимости ** — это один из двух технологий Microsoft Fakes Framework, используемых для простой изоляции тестируемых компонентов от среды. Оболочки отвлекают вызовы к отдельным методам в коде, написанным в рамках теста. Множество методов возвращает различные результаты в зависимости от внешних условиях, но оболочка находится под контролем теста и может возвращать последовательные результаты при каждом вызове. Это позволяет создавать тесты намного проще.  
+Типы оболочек** — одна из двух технологий Microsoft Fakes Framework, используемых для простой изоляции тестируемых компонентов от окружения. Оболочки отвлекают вызовы к отдельным методам в коде, написанным в рамках теста. Множество методов возвращает различные результаты в зависимости от внешних условиях, но оболочка находится под контролем теста и может возвращать последовательные результаты при каждом вызове. Это позволяет создавать тесты намного проще.  
   
  Используйте оболочки, чтобы изолировать код из сборок, которые не входят в состав решения. Чтобы изолировать компоненты решения друг от друга, рекомендуется использовать заглушки.  
   
@@ -33,52 +28,9 @@ ms.locfileid: "49904420"
   
 - Visual Studio Enterprise  
   
-  См. видео (1 ч. 16 мин.): [Тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
+  См. в разделе [видео (1: 16): Тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
   
-## <a name="in-this-topic"></a>Содержание раздела  
- Ниже перечислены темы, рассматриваемые в этом разделе.  
-  
- [Пример. Ошибка 2000 года](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
-  
- [Использование оболочек](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Fakes_requirements)  
-  
-- [Добавление сборки Fakes](#AddFakes)  
-  
-- [Использование ShimsContext](#ShimsContext)  
-  
-- [Создание тестов с оболочками](#WriteTests)  
-  
-  [Оболочки для методов различных типов](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
-  
-- [Статические методы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_methods)  
-  
-- [Методы экземпляра (для всех экземпляров)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_all_instances_)  
-  
-- [Методы экземпляра (для одного экземпляра)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_one_instance_)  
-  
-- [Конструкторы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Constructors)  
-  
-- [Базовые члены](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Base_members)  
-  
-- [Статические конструкторы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_constructors)  
-  
-- [Методы завершения](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Finalizers)  
-  
-- [Закрытые методы](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Private_methods)  
-  
-- [Привязка интерфейсов](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Binding_interfaces)  
-  
-  [Изменение поведения по умолчанию](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Changing_the_default_behavior)  
-  
-  [Обнаружение событий доступа к среде](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Detecting_environment_accesses)  
-  
-  [Параллелизм](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
-  
-  [Вызов исходного метода из метода оболочки совместимости](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
-  
-  [Ограничения](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
-  
-##  <a name="BKMK_Example__The_Y2K_bug"></a> Пример. Ошибка 2000 года  
+## <a name="BKMK_Example__The_Y2K_bug"></a> Пример: Ошибка 2000 года  
  Рассмотрим метод, который создает исключение 1 января 2000 г.  
   
 ```csharp  
@@ -87,7 +39,7 @@ public static class Y2KChecker {
     public static void Check() {  
         if (DateTime.Now == new DateTime(2000, 1, 1))  
             throw new ApplicationException("y2kbug!");  
-    }  
+    }
 }  
   
 ```  
@@ -110,19 +62,19 @@ using (ShimsContext.Create()
   
 ```  
   
-##  <a name="BKMK_Fakes_requirements"></a> Использование оболочек  
+## <a name="BKMK_Fakes_requirements"></a> Использование оболочек  
   
-###  <a name="AddFakes"></a> Добавление сборок Fakes  
+### <a name="AddFakes"></a> Добавление сборок Fakes  
   
-1.  В обозревателе решений разверните список **Ссылки** проекта модульного теста.  
+1. В обозревателе решений разверните список **Ссылки** проекта модульного теста.  
   
-    -   При работе в Visual Basic необходимо выбрать **Показать все файлы** на панели инструментов обозревателя решений, чтобы просмотреть список "Ссылки".  
+    - При работе в Visual Basic необходимо выбрать **Показать все файлы** на панели инструментов обозревателя решений, чтобы просмотреть список "Ссылки".  
   
-2.  Выделите сборку, которая содержит определения классов, для которых необходимо создать оболочки. Например, если требуется создать оболочку для DateTime, выберите System.dll  
+2. Выделите сборку, которая содержит определения классов, для которых необходимо создать оболочки. Например, если требуется создать оболочку для DateTime, выберите System.dll  
   
-3.  В контекстном меню щелкните **Добавить сборку имитаций**.  
+3. В контекстном меню щелкните **Добавить сборку имитаций**.  
   
-###  <a name="ShimsContext"></a> Использование ShimsContext  
+### <a name="ShimsContext"></a> Использование ShimsContext  
  При использовании типов оболочек в среде модульного тестирования необходимо заключить код теста в контекст `ShimsContext` для управления временем существования оболочек совместимости. Если это не требуется, оболочки будут существовать до завершения работы домена приложения. Самый простой способ создания `ShimsContext` — использование статического метода `Create()`, как показано в следующем коде.  
   
 ```csharp  
@@ -138,8 +90,8 @@ public void Y2kCheckerTest() {
   
  Очень важно правильно ликвидировать каждый контекст оболочки. Как правило, следует всегда вызывать `ShimsContext.Create` внутри оператора `using`, чтобы гарантировать правильный сброс зарегистрированных оболочек. Например, можно зарегистрировать оболочку для метода теста, заменяющего метод `DateTime.Now` делегатом, который всегда возвращает 1 января 2000 г. Если вы забудете сбросить зарегистрированную оболочку в методе теста, остальная часть тестового запуска всегда будет возвращать в качестве значения DateTime.Now 1 января 2000 г. Это может быть неожиданно и неудобно.  
   
-###  <a name="WriteShims"></a> Создание теста с оболочками  
- В коде теста вставьте *обход* для метода, который требуется имитировать. Пример:  
+### <a name="WriteShims"></a> Создание теста с оболочками  
+ В коде теста вставьте *обход* для метода, который требуется имитировать. Например:  
   
 ```csharp  
 [TestClass]  
@@ -207,10 +159,10 @@ End Class
   
  Можно увидеть ошибку сборки, утверждающую, что пространство имен Fakes не существует. Иногда эта ошибка появляется, когда есть другие ошибки компиляции. Устраните остальные ошибки, и она исчезнет.  
   
-##  <a name="BKMK_Shim_basics"></a> Оболочки для методов различных типов  
+## <a name="BKMK_Shim_basics"></a> Оболочки для методов различных типов  
  Типы оболочки позволяют заменить любой метод .NET, включая статические методы или невиртуальные методы собственными делегатами.  
   
-###  <a name="BKMK_Static_methods"></a> Статические методы  
+### <a name="BKMK_Static_methods"></a> Статические методы  
  Свойства для присоединения оболочек совместимости к статическим методам помещаются в тип оболочки. Каждое свойство имеет только метод задания, который можно использовать для присоединения делегата к целевому методу. Например, имеется класс `MyClass` со статическим методом `MyMethod`.  
   
 ```csharp  
@@ -229,7 +181,7 @@ public static class MyClass {
 ShimMyClass.MyMethod = () =>5;  
 ```  
   
-###  <a name="BKMK_Instance_methods__for_all_instances_"></a> Методы экземпляра (для всех экземпляров)  
+### <a name="BKMK_Instance_methods__for_all_instances_"></a> Методы экземпляра (для всех экземпляров)  
  Аналогично статическим методам для методов экземпляра можно создать оболочки для всех экземпляров. Свойства для присоединения этих оболочек помещаются во вложенный тип с именем AllInstances, чтобы избежать путаницы. Например, имеется класс `MyClass` с методом экземпляра `MyMethod`.  
   
 ```csharp  
@@ -265,7 +217,7 @@ public class ShimMyClass : ShimBase<MyClass> {
   
  Обратите внимание, что Fakes в этом случае передает экземпляр среды выполнения в качестве первого аргумента делегата.  
   
-###  <a name="BKMK_Instance_methods__for_one_instance_"></a> Методы экземпляра (для одного экземпляра)  
+### <a name="BKMK_Instance_methods__for_one_instance_"></a> Методы экземпляра (для одного экземпляра)  
  Для методов экземпляра можно также создать оболочки совместимости, используя разные делегаты в зависимости от получателя вызова. Это позволяет задать для одного метода экземпляра разные варианты поведения в зависимости от экземпляра типа. Свойства для настройки этих оболочек являются методами экземпляра самого типа оболочки. Каждый экземпляр типа оболочки также связан с необработанным экземпляром типа с оболочкой совместимости.  
   
  Например, имеется класс `MyClass` с методом экземпляра `MyMethod`.  
@@ -325,7 +277,7 @@ MyClass instance = shim; // implicit cast retrieves the runtime
                          // instance  
 ```  
   
-###  <a name="BKMK_Constructors"></a> Конструкторы  
+### <a name="BKMK_Constructors"></a> Конструкторы  
  Для конструкторов также можно создать оболочки совместимости для присоединения типов оболочки к будущим объектам. Каждый конструктор предоставляется как статический метод конструктора в типе оболочки совместимости. Например, имеется класс `MyClass` с конструктором, принимающим целое число.  
   
 ```csharp  
@@ -375,7 +327,7 @@ public class ShimMyClass : ShimBase<MyClass>
 }  
 ```  
   
-###  <a name="BKMK_Base_members"></a> Базовые члены  
+### <a name="BKMK_Base_members"></a> Базовые члены  
  Доступ к свойствам оболочки совместимости базовых членов может осуществляться путем создания оболочки для базового типа и передачи дочернего экземпляра в качестве параметра в конструктор базового класса оболочки.  
   
  Например, имеется класс `MyBase` с методом экземпляра `MyMethod` и подтипом `MyChild`.  
@@ -418,16 +370,16 @@ public class ShimMyBase : ShimBase<MyBase> {
 }  
 ```  
   
-###  <a name="BKMK_Static_constructors"></a> Статические конструкторы  
+### <a name="BKMK_Static_constructors"></a> Статические конструкторы  
  Типы оболочек совместимости предоставляют статический метод `StaticConstructor`, чтобы создать оболочку для статического конструктора типа. Поскольку статические конструкторы выполняются только один раз, необходимо убедиться, что оболочка настроена перед получением доступа к любому члену типа.  
   
-###  <a name="BKMK_Finalizers"></a> Методы завершения  
+### <a name="BKMK_Finalizers"></a> Методы завершения  
  Методы завершения не поддерживаются в Fakes.  
   
-###  <a name="BKMK_Private_methods"></a> Закрытые методы  
+### <a name="BKMK_Private_methods"></a> Закрытые методы  
  Генератор кода Fakes создает свойства оболочки для закрытых методов, которые имеют только видимые типы в сигнатуре, например видимые типы параметров и типы возвращаемого значения.  
   
-###  <a name="BKMK_Binding_interfaces"></a> Привязка интерфейсов  
+### <a name="BKMK_Binding_interfaces"></a> Привязка интерфейсов  
  Когда тип с оболочкой совместимости реализует интерфейс, генератор кода создает метод, позволяющий ему привязать все члены из этого интерфейса за один раз.  
   
  Например, имеется класс `MyClass`, реализующий интерфейс `IEnumerable<int>`.  
@@ -463,7 +415,7 @@ public class ShimMyClass : ShimBase<MyClass> {
   
 ```  
   
-##  <a name="BKMK_Changing_the_default_behavior"></a> Изменение поведения по умолчанию  
+## <a name="BKMK_Changing_the_default_behavior"></a> Изменение поведения по умолчанию  
  Каждый созданный тип оболочки содержит экземпляр интерфейса `IShimBehavior` через свойство `ShimBase<T>.InstanceBehavior`. Это поведение используется, когда клиент вызывает член экземпляра, для которого оболочка не создана явно.  
   
  Если поведение не задано явно, будет использоваться экземпляр, возвращаемый статическим свойством `ShimsBehaviors.Current`. По умолчанию это свойство возвращает поведение, вызывающее исключение `NotImplementedException`.  
@@ -489,7 +441,7 @@ ShimsBehaviors.Current =
   
 ```  
   
-##  <a name="BKMK_Detecting_environment_accesses"></a> Обнаружение событий доступа к среде  
+## <a name="BKMK_Detecting_environment_accesses"></a> Обнаружение событий доступа к среде  
  Можно назначить поведение всем членам (включая статические методы) определенного типа, назначив поведение `ShimsBehaviors.NotImplemented` статическому свойству `Behavior` соответствующего типа оболочки.  
   
 ```csharp  
@@ -501,10 +453,10 @@ ShimMyClass.BehaveAsNotImplemented();
   
 ```  
   
-##  <a name="BKMK_Concurrency"></a> Параллелизм  
+## <a name="BKMK_Concurrency"></a> Параллелизм  
  Типы оболочек совместимости применяются ко всем потокам в домене приложения, и к ним не применяется сходство потоков. Это важный аспект, если вы планируете использовать средства выполнения тестов, которые поддерживают параллельность: тесты, включающие типы оболочек, нельзя запускать одновременно. Это свойство не применяется средой выполнения Fakes принудительно.  
   
-##  <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Вызов исходного метода из метода оболочки совместимости  
+## <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Вызов исходного метода из метода оболочки совместимости  
  Предположим, мы хотим фактически записать текст в файловую систему после проверки имени файла, переданного в метод. В этом случае нам потребуется вызвать исходный метод в середине метода оболочки.  
   
  Первый подход для решения этой проблемы — заключить вызов исходного метода в оболочку с помощью делегата и `ShimsContext.ExecuteWithoutShims()`, как показано в следующем примере кода.  
@@ -546,18 +498,15 @@ ShimFile.WriteAllTextStringString = shim;
   
 ```  
   
-##  <a name="BKMK_Limitations"></a> Ограничения  
+## <a name="BKMK_Limitations"></a> Ограничения  
  Оболочки совместимости нельзя использовать для всех типов из библиотеки базовых классов .NET **mscorlib** и **System**.  
   
 ## <a name="external-resources"></a>Внешние ресурсы  
   
 ### <a name="guidance"></a>Руководство  
- [Тестирование непрерывной доставки с Visual Studio 2012 — глава 2. Модульное тестирование. Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Тестирование непрерывной доставки с Visual Studio 2012 — Глава 2: Модульное тестирование: Внутреннее тестирование](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>См. также  
  [Изоляция тестируемого кода с помощью Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   
- [Блог Питера Провоста (Peter Provost): оболочки Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
- [Видео (1 ч. 16 мин.): тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
-
-
-
+ [Блог Питера Провоста: Оболочки Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)   
+ [Видео (1 ч. 16 мин): Тестирование нетестируемого кода с помощью Fakes в Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)

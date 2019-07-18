@@ -1,7 +1,6 @@
 ---
 title: Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34880d96effb9c1c77c1d88c22f61967741b693e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792235"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)
 
@@ -26,13 +25,13 @@ ms.locfileid: "53878277"
 
 ## <a name="to-access-this-dialog-box"></a>Вызов диалогового окна
 
-1.  В **обозревателе решений** выберите узел проекта (не узел **Решение**).
+1. В **обозревателе решений** выберите узел проекта (не узел **Решение**).
 
-2.  В меню **Проект** выберите пункт **Свойства**. После открытия окна **Конструктор проектов** перейдите на вкладку **Компиляция** .
+2. В меню **Проект** выберите пункт **Свойства**. После открытия окна **Конструктор проектов** перейдите на вкладку **Компиляция** .
 
-3.  На [странице компиляции в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) выберите **Конфигурация** и **Платформа**. В упрощенных конфигурациях сборки списки **Конфигурация** и **Платформа** не отображаются. Дополнительные сведения см. в разделе [Как Настройка конфигураций отладки и выпуска](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. На [странице компиляции в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) выберите **Конфигурация** и **Платформа**. В упрощенных конфигурациях сборки списки **Конфигурация** и **Платформа** не отображаются. Дополнительные сведения см. в разделе [Как Настройка конфигураций отладки и выпуска](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-4.  Щелкните **Дополнительные параметры компиляции**.
+4. Щелкните **Дополнительные параметры компиляции**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

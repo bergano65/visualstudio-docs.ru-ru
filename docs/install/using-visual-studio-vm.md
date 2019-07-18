@@ -2,9 +2,8 @@
 title: Использование Visual Studio на виртуальной машине Azure
 titleSuffix: ''
 description: Узнайте, как использовать Visual Studio на виртуальной машине Azure.
-ms.date: 09/12/2018
+ms.date: 06/24/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
@@ -13,33 +12,35 @@ helpviewer_keywords:
 - visual studio
 author: PhilLee-MSFT
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f139c93eeb64a56f0bd422137417e5ad6e36cb11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: bc73c2d280f22c82f0efe76d9e5b1d343e386409
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836628"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365268"
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 
-Применение Visual Studio на предварительно настроенной виртуальной машине Azure — это простой и быстрый способ использования налаженной среды разработки. Образы системы с различными конфигурациями Visual Studio доступны в [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1).
+Применение Visual Studio на предварительно настроенной виртуальной машине Azure — это простой и быстрый способ использования налаженной среды разработки. Образы системы с различными конфигурациями Visual Studio доступны в [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure).
 
 Вы еще не работали в Azure? [Создайте бесплатную учетную запись Azure](https://azure.microsoft.com/free).
 
 ## <a name="what-configurations-and-versions-are-available"></a>Доступные конфигурации и версии
 
-Образы большинства последних основных версий (Visual Studio 2017 и Visual Studio 2015) можно найти в Azure Marketplace.  Недавно мы добавили поддержку предварительной версии для новой основной версии Visual Studio 2019.  Для каждой выпущенной основной версии доступна исходная версия (RTW) и последние обновленные версии.  Каждая из этих версий включает выпуски Visual Studio Enterprise и Visual Studio Community.  Эти образы обновляются по крайней мере раз в месяц и включают последние обновления Visual Studio и Windows.  Названия образов не изменяются. В описании каждого из них содержится версия установленного продукта и дата выпуска образа.
+Образы большинства последних основных версий (Visual Studio 2019, Visual Studio 2017 и Visual Studio 2015) можно найти в Azure Marketplace.  Для каждой выпущенной основной версии доступна исходная версия "выпущено для веб" (RTW) и последние обновленные версии.  Каждая из этих версий включает выпуски Visual Studio Enterprise и Visual Studio Community.  Эти образы обновляются по крайней мере раз в месяц и включают последние обновления Visual Studio и Windows.  Названия образов не изменяются. В описании каждого из них содержится версия установленного продукта и дата выпуска образа.
 
-| Версия выпуска                                              | Выпуски                     |     Версия продукта      |
-|:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019: предварительная версия 1                   |           Предприятие         | Версия 16.0.0 предварительная версия 1 |
-| Visual Studio 2017: Последняя версия (версия 15.9)                    |    Enterprise, Community     |      Версия 15.9.4      |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Версия 15.0.20     |
-|   Visual Studio 2015: Последняя версия (обновление 3)                      |    Enterprise, Community     |  Версия 14.0.25431.01   |
-|         Visual Studio 2015: RTW                              |             Нет             | Срок действия обслуживания истек  |
+| Версия выпуска                                                                                                                                          | Выпуски              |    Версия продукта    |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
+| [Visual Studio 2019. Последняя версия (версия 16.1)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Версия 16.1.3    |
+| [Visual Studio 2019. RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise, Community | Версия 16.0.5    |
+| [Visual Studio 2017. Последняя версия (версия 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Версия 15.9.13   |
+| [Visual Studio 2017. RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Версия 15.0.24   |
+| [Visual Studio 2015. Последняя версия (обновление 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Версия 14.0.25431.01 |
 
 > [!NOTE]
 > В соответствии с политикой обслуживания корпорации Майкрософт обслуживание изначально выпущенной версии Visual Studio 2015 (RTW) завершено. Обновление 3 — это последняя версия семейства продуктов Visual Studio 2015.
@@ -52,7 +53,7 @@ ms.locfileid: "53836628"
 
 * Все доступные рабочие нагрузки, в том числе дополнительные рекомендуемые компоненты каждой рабочей нагрузки.
 * Пакеты SDK .NET 4.6.2 и .NET 4.7, Targeting Pack и средства разработчика.
-* Visual F#
+* Visual F#;
 * Расширение GitHub для Visual Studio
 * Инструменты LINQ to SQL.
 
@@ -76,13 +77,13 @@ ms.locfileid: "53836628"
 
 Azure предлагает разные размеры виртуальных машин. Так как Visual Studio — это мощное, многопоточное приложение, необходимо использовать виртуальную машину по крайней мере с 2 процессорами и 7 ГБ памяти. Мы рекомендуем следующие размеры виртуальных машин для образов Visual Studio:
 
-   * Standard_D2_v3
-   * Standard_D2s_v3
-   * Standard_D4_v3
-   * Standard_D4s_v3
-   * Standard_D2_v2
-   * Standard_D2S_v2
-   * Standard_D3_v2
+* Standard_D2_v3
+* Standard_D2s_v3
+* Standard_D4_v3
+* Standard_D4s_v3
+* Standard_D2_v2
+* Standard_D2S_v2
+* Standard_D3_v2
 
 Дополнительные сведения о последних размерах виртуальных машин Windows в Azure см. в [этой статье](/azure/virtual-machines/windows/sizes).
 
@@ -102,7 +103,9 @@ Azure предлагает разные размеры виртуальных м
 
 Краткое описание: запустите средство System Preparation Tool (Sysprep), завершите работу виртуальной машины, а затем запишите *(рис. 1)* ее в качестве образа с помощью пользовательского интерфейса портала Azure. Azure сохраняет `.vhd`-файл образа в выбранную учетную запись хранения. Затем новый образ появится в списке ресурсов подписки в виде ресурса "Образ".
 
-<img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*Рис. 1. Запись образа через пользовательский интерфейс портала Azure.*</center>
+![Запись образа через пользовательский интерфейс портала Azure](media/capture-vm.png)
+
+*Рис. 1. Запись образа через пользовательский интерфейс портала Azure.*
 
 Дополнительные сведения см. в статье [Создание управляемого образа универсальной виртуальной машины в Azure](/azure/virtual-machines/windows/capture-image-resource).
 

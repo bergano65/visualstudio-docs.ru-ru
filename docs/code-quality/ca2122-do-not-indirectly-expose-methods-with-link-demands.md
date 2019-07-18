@@ -1,7 +1,6 @@
 ---
 title: CA2122. Не используйте косвенное представление методов с требованиями ссылки
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2122
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3eda58e7-c6ec-41c3-8112-ae0841109c6a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e0408969d5f14681c2640b71894aa6c7d9b65f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8239b27cd92f66ae8f74ddb1accd95535bf56f93
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62542341"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122. Не используйте косвенное представление методов с требованиями ссылки
 

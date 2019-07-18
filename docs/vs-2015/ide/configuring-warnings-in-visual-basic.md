@@ -1,14 +1,9 @@
 ---
 title: Настройка предупреждений в Visual Basic | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
@@ -17,13 +12,13 @@ ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c3b28bea858c867bd7fae8e1b4045d79d5e4b513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3fb723097a3b61508d9f9023d3a2ea1dcdb5f8f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297613"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701418"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,15 +120,10 @@ ms.locfileid: "49297613"
  Идентификатор: 42029, 42031  
   
 ## <a name="see-also"></a>См. также  
- [Помощник по диалоговое окно исключения](../debugger/exception-assistant-dialog-box.md)   
- [Типы ошибок](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
- [Оператор Try... Catch... Finally (Visual Basic)](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
- [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
- [/warnaserror (Visual Basic)](http://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
+ [Диалоговое окно "Помощник по исключениям"](../debugger/exception-assistant-dialog-box.md)   
+ [Типы ошибок](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
+ [Оператор Try... Catch... Finally (Visual Basic)](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
+ [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
+ [/warnaserror (Visual Basic)](https://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
  [Страница "Компиляция" в конструкторе проектов (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [Выключенные по умолчанию предупреждения компилятора](http://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)
-
-
-
-
-
+ [Выключенные по умолчанию предупреждения компилятора](https://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)

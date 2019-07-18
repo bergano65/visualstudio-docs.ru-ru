@@ -1,14 +1,9 @@
 ---
 title: Рефакторинг (C#) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.csharp.refactoring.preview
 - vs.csharp.refactoring.issues
@@ -22,13 +17,13 @@ ms.assetid: a39e656a-f81f-4c87-b484-a23168ff1dfc
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: b4f74017a067d4681eb14ba4eb826df504497430
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444530"
 ---
 # <a name="refactoring-c"></a>Рефакторинг (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +32,17 @@ ms.locfileid: "49262318"
   
  Visual C# предоставляет следующие команды на **Refactoring** меню:  
   
--   [Рефакторинг для извлечения метода (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [Рефакторинг для извлечения метода (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [Переименование рефакторинга (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [Переименование рефакторинга (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [Рефакторинг для инкапсуляции поля (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [Рефакторинг для инкапсуляции поля (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [Рефакторинг для извлечения интерфейса (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [Рефакторинг для извлечения интерфейса (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [Рефакторинг для удаления параметров (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [Рефакторинг для удаления параметров (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [Рефакторинг для изменения порядка параметров (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [Рефакторинг для изменения порядка параметров (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>Рефакторинг для нескольких проектов  
  Visual Studio поддерживает многопроектная оптимизация для проектов, которые находятся в одном решении. Все операции рефакторинга, исправляющие ссылки между файлами исправление ссылок во все проекты, на том же языке. Это подходит для любой ссылки проекта на проект. Например, если у вас есть консольное приложение, которое ссылается на библиотеку классов, при переименовании типа в библиотеке классов (с помощью `Rename` операция рефакторинга), также обновляются ссылки на тип в библиотеке классов в консольном приложении.  
@@ -59,7 +54,7 @@ ms.locfileid: "49262318"
  Если компилятор не имеет полного понимания программы, а возможно, что подсистема рефакторинга не может обновить все соответствующие ссылки, откроется диалоговое окно предупреждения. Это диалоговое окно предупреждения также дает возможность выполнить предварительный просмотр кода в **Просмотр изменений** диалоговое окно, прежде чем зафиксировать изменения.  
   
 > [!NOTE]
->  Если метод содержит синтаксическую ошибку (указывающий интегрированной среды разработки с красной волнистой линией), подсистема оптимизации не обновит все ссылки на элемент в этом методе. Это показано в следующем примере.  
+> Если метод содержит синтаксическую ошибку (указывающий интегрированной среды разработки с красной волнистой линией), подсистема оптимизации не обновит все ссылки на элемент в этом методе. Это показано в следующем примере.  
   
  По умолчанию при выполнении операции рефакторинга без предварительного просмотра ссылки изменений и в программе обнаруживается ошибка компиляции, то среда разработки отображает это диалоговое окно предупреждения.  
   
@@ -113,4 +108,4 @@ class Example
   
 ## <a name="see-also"></a>См. также  
  [Использование среды разработки Visual Studio для C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
- [Практическое руководство. Восстановление фрагментов кода для оптимизации в C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Практическое руководство. Восстановление фрагментов кода для рефакторинга в C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

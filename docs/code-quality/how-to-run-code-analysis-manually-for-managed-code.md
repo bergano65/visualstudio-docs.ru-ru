@@ -1,28 +1,27 @@
 ---
-title: Как выполнить Запуск анализа кода вручную для управляемого кода
+title: Практическое руководство. Запуск анализа кода вручную для управляемого кода
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, running
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5324ba78b5a571d6ffd7812a9d3dd766ad060db7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75b518e1bf59ebd0e92d7cef311277ccf7d98c82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815856"
 ---
-# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Как выполнить Запуск анализа кода вручную для управляемого кода
+# <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Практическое руководство. Запуск анализа кода вручную для управляемого кода
 Средство анализа кода предоставляет сведения для вас о возможных дефектах в исходном коде. Можно выполнить анализ кода автоматически при каждой сборке проекта кода, а также можно выполнить анализ кода вручную. Правила, которые проверяются при выполнении анализа кода указаны на странице "Анализ кода" на страницах свойств проекта. Дополнительные сведения см. в разделе [Как Настройка анализа кода для проекта управляемого кода](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 
 ### <a name="to-run-code-analysis-manually"></a>Чтобы запустить анализ кода вручную
 
-1.  В **обозревателе решений**, щелкните проект.
+1. В **обозревателе решений**, щелкните проект.
 
-2.  На **анализ** меню, щелкните **выполнить анализ кода в** *имя_проекта*.
+2. На **анализ** меню, щелкните **выполнить анализ кода в** *имя_проекта*.

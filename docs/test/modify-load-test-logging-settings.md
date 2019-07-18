@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 88819e8858a57a16e327e8e7b04f69c74fe5045a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9751ce3b08a0ac963cccdf091ccb99001c6f2c9f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785777"
 ---
 # <a name="modify-load-test-logging-settings"></a>Изменение параметров ведения журнала для нагрузочного теста
 
@@ -27,7 +26,7 @@ ms.locfileid: "53900786"
 |Задача|Связанные разделы|
 |-|-----------------------|
 |**Сохранение журналов в случае неудачного завершения нагрузочного теста**. Можно указать, требуется ли сохранять журнал тестирования в случае сбоя нагрузочного теста.|-   [Практическое руководство. Включение и отключение записи сбоев тестов в журнал тестирования](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Задание максимального размера файла журнала**. Вы можете изменить XML-файл конфигурации, связанный со службой контроллера тестирования, указав максимальный размер, который может иметь файл журнала.|[Практическое руководство. Указание максимального размера файла журнала](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**Задание максимального размера файла журнала**. Вы можете изменить XML-файл конфигурации, связанный со службой контроллера тестирования, указав максимальный размер, который может иметь файл журнала.|Измените `<add key="LogSizeLimitInMegs" value="20"/>` в XML-файле конфигурации *QTCcontroller.exe.config*.|
 
 ## <a name="see-also"></a>См. также
 

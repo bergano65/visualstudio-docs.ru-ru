@@ -19,23 +19,23 @@ helpviewer_keywords:
 ms.assetid: 9e67a308-1c81-42ab-966b-7fc3c1d2bf7a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bd259dd5acb542211fe57b0741c2e28d0baaca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 11bd61cda8c92721fb42c640b0b5100b8054acdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894870"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Как использовать окна отладчика при отладке активной программы?
-## <a name="problem-description"></a>Описание проблемы  
- Выполняются попытки отладить проблему отображения на экране. Для этого приходится держать программу активной, а это означает, что отсутствует доступ к окнам отладчика. Что можно сделать?  
-  
-## <a name="solution"></a>Решение  
- Если есть второй компьютер, используйте удаленную отладку. С двумя компьютерами можно посмотреть отображение на экране на удаленном компьютере, работая в отладчике на основном узле. Дополнительные сведения об удаленной отладке см. в разделе [удаленной отладки](../debugger/remote-debugging.md).  
-  
-## <a name="see-also"></a>См. также раздел  
- [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)   
- [Отладка машинного кода](../debugger/debugging-native-code.md)
+## <a name="problem-description"></a>Описание проблемы
+ Выполняются попытки отладить проблему отображения на экране. Для этого приходится держать программу активной, а это означает, что отсутствует доступ к окнам отладчика. Что можно сделать?
+
+## <a name="solution"></a>Решение
+ Если есть второй компьютер, используйте удаленную отладку. С двумя компьютерами можно посмотреть отображение на экране на удаленном компьютере, работая в отладчике на основном хосте. Дополнительные сведения об удаленной отладке см. в разделе [удаленной отладки](../debugger/remote-debugging.md).
+
+## <a name="see-also"></a>См. также
+- [Вопросы и ответы по отладке машинного кода](../debugger/debugging-native-code-faqs.md)
+- [Отладка машинного кода](../debugger/debugging-native-code.md)

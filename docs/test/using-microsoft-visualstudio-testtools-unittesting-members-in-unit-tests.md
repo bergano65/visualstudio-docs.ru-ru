@@ -1,19 +1,18 @@
 ---
-title: Использование членов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
+title: Использование Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
 ms.date: 03/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 13fb1fb6b0b78ffbb2e89b80180260f14b695282
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: ae7cbddb3ea7d7f94b23d723f6641a95dd28ed40
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53902793"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820338"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Использование платформы MSTest в модульных тестах
 
@@ -82,6 +81,8 @@ ms.locfileid: "53902793"
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>
+
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert>
@@ -91,8 +92,6 @@ ms.locfileid: "53902793"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
-
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>
 
 ## <a name="the-testcontext-class"></a>Класс TestContext
 

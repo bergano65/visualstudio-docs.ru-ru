@@ -1,21 +1,20 @@
 ---
 title: Установка анализаторов FxCop
 ms.date: 08/03/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: be213d25ca406a8532f00ad88b006c36d369e1a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e2fc29723f66fce0fda72a9af1fe40888bd2ce3
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893789"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820641"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Установка анализаторы FxCop в Visual Studio
 
@@ -44,14 +43,17 @@ ms.locfileid: "53893789"
 
 | Версия Visual Studio | Версия пакета анализатора FxCop |
 | - | - |
-| Visual Studio 2017 версии 15.5 и более поздние версии | 2.6.2, например https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2 |
-| Visual Studio 2017 версии 15.3 для 15.4 | 2.3.0-Beta1, например https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1 |
-| Visual Studio 2017 версии 15.0 для 15.2 | 2.0.0-Beta2, например https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2 |
-| Visual Studio 2015 с обновлением 2 и 3 | 1.2.0-beta2 версии, например https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2 |
-| Visual Studio 2015 с обновлением 1 | Версии 1.1.0, например https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1. |
-| Visual Studio 2015 RTW | Версии 1.0.1, например https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1 |
+| Visual Studio 2019 (все версии)<br />Visual Studio 2017 версии 15,8 и более поздние версии | [2.9.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.3) |
+| Visual Studio 2017 версии 15.5 для версии 15.7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
+| Visual Studio 2017 версии 15.3 для 15.4 | [2.3.0-Beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
+| Visual Studio 2017 версии 15.0 для 15.2 | [2.0.0-Beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
+| Visual Studio 2015 с обновлением 2 и 3 | [1.2.0-Beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2) |
+| Visual Studio 2015 с обновлением 1 | [1.1.0](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1.0) |
+| Visual Studio 2015 RTW | [1.0.1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1) |
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>Чтобы установить анализаторы FxCop как VSIX
+
+::: moniker range="vs-2017"
 
 В Visual Studio 2017 версии 15.5 и более поздних версий, можно установить [Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) расширение, которое содержит все анализаторы FxCop для управляемых проектов.
 
@@ -62,29 +64,64 @@ ms.locfileid: "53893789"
    > [!NOTE]
    > Кроме того, чтобы скачать расширение непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
 
-1. Разверните **Online** в левой области, а затем выберите **Visual Studio Marketplace**.
+2. Разверните **Online** в левой области, а затем выберите **Visual Studio Marketplace**.
 
-1. В поле поиска введите «анализ кода» и проверьте наличие **Microsoft Code Analysis 2017** расширения.
+3. В поле поиска введите «анализ кода» и проверьте наличие **Microsoft Code Analysis 2017** расширения.
 
-   ![Расширение Microsoft Code Analysis](media/extensions-and-updates-code-analysis.png)
+   ![Расширение Microsoft Code Analysis 2017](media/extensions-and-updates-code-analysis.png)
 
-1. Выберите **загрузить**.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+[Microsoft Code Analysis 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019) расширения содержит все анализаторы FxCop для управляемых проектов. Чтобы установить это расширение:
+
+1. В Visual Studio выберите **расширения** > **Управление расширениями**.
+
+   **Управление расширениями** откроется диалоговое окно.
+
+   > [!NOTE]
+   > Кроме того, чтобы скачать расширение непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019).
+
+2. Разверните **Online** в левой области, а затем выберите **Visual Studio Marketplace**.
+
+3. В поле поиска введите «анализ кода» и проверьте наличие **Microsoft Code Analysis 2019** расширения.
+
+   ![Расширение Microsoft Code Analysis 2019](media/manage-extensions-code-analysis.png)
+
+::: moniker-end
+
+4. Выберите **загрузить**.
 
    Расширение загружается.
 
-1. Выберите **ОК** чтобы закрыть диалоговое окно, а затем закройте все экземпляры Visual Studio для запуска **установщик VSIX**.
+5. Выберите **ОК** чтобы закрыть диалоговое окно, а затем закройте все экземпляры Visual Studio для запуска **установщик VSIX**.
 
    **Установщик VSIX** откроется диалоговое окно.
 
+   ::: moniker range="vs-2017"
+
    ![Установщик VSIX для анализа кода Microsoft](media/vsix-installer-code-analysis.png)
 
-1. Выберите **изменить** чтобы начать установку.
+   ::: moniker-end
 
-1. После одну-две минуты не завершит установку. Выберите **закрыть**.
+6. Выберите **изменить** чтобы начать установку.
 
-1. Снова откройте Visual Studio.
+   После одну-две минуты не завершит установку.
+
+7. Выберите **закрыть**, затем снова откройте Visual Studio.
+
+::: moniker range="vs-2017"
 
 Если вы хотите проверить, является ли расширение установлена, выберите **средства** > **расширения и обновления**. В **расширения и обновления** выберите **установленные** категории слева и выполните поиск расширения по имени.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Если вы хотите проверить, является ли расширение установлена, выберите **расширения** > **Управление расширениями**. В **Управление расширениями** выберите **установленные** категории слева и выполните поиск расширения по имени.
+
+::: moniker-end
 
 ## <a name="see-also"></a>См. также
 

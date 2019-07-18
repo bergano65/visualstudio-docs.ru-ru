@@ -1,26 +1,21 @@
 ---
 title: Конфигурации для выходных данных проекта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c23f9210175b848bfdf3ddab56776092e39212c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443880"
 ---
 # <a name="project-configuration-for-output"></a>Конфигурация проекта для вывода
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51740893"
  Конструкция разработанная реализация `IVsOutputGroup` разрешает проектам группировать вывод по использованию. Например библиотеки DLL могут быть сгруппированы с его базы данных программы (PDB).  
   
 > [!NOTE]
->  PDB-файл содержит сведения об отладке и создается при указании параметра «Создавать отладочные сведения» при построении .dll или .exe. PDB-файл, как правило, создаются для отладки только в конфигурации проекта.  
+> PDB-файл содержит сведения об отладке и создается при указании параметра «Создавать отладочные сведения» при построении .dll или .exe. PDB-файл, как правило, создаются для отладки только в конфигурации проекта.  
   
  Проект должен возвращать одинаковое количество групп для каждой конфигурации, которую она поддерживает, несмотря на то, что количество выходов, содержащихся в группе может отличаться от конфигурации для конфигурации. Например, проекта Мэтт DLL может включать mattd.dll и mattd.pdb в конфигурации отладки, но только включить matt.dll в розничную конфигурацию.  
   
@@ -56,4 +51,3 @@ ms.locfileid: "51740893"
  [Конфигурация проекта для сборки](../../extensibility/internals/project-configuration-for-building.md)   
  [Объект конфигурации проекта](../../extensibility/internals/project-configuration-object.md)   
  [Конфигурация решения](../../extensibility/internals/solution-configuration.md)
-

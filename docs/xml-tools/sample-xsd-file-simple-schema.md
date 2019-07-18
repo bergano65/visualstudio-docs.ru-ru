@@ -1,20 +1,19 @@
 ---
 title: 'Образец XSD-файла: Простая схема'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3c07e6668f7805a6ed044258b6767764e63e1b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0228ab75da15099aad3a6f60feca3d71f644b4ff
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922299"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455093"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Образец XSD-файла: Простая схема
 
@@ -46,3 +45,6 @@ ms.locfileid: "53922299"
  </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> Использованные в примерах компании, организации, продукты, доменные имена, адреса электронной почты, эмблемы, имена людей, географические названия и события являются вымышленными. Любые совпадения с реальными предприятиями, организациями, товарами, именами доменов, адресами электронной почты, эмблемами, лицами, местами и событиями являются случайными и непреднамеренными.

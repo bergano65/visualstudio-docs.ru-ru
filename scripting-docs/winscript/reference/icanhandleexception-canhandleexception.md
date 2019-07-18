@@ -2,7 +2,6 @@
 title: ICanHandleException::CanHandleException | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 784463f9e465aac005f5454be28a0043069dcb69
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 406787d5ee6811b80f9e6831e5a67cab8367e7d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991387"
 ---
 # <a name="icanhandleexceptioncanhandleexception"></a>ICanHandleException::CanHandleException
 Определяет, если вызывающий объект обработчика сценариев может обрабатывать указанное исключение.  
@@ -47,7 +46,7 @@ HRESULT CanHandleException(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Вызывающий объект может обработать исключение|  
 |`E_FAIL`|Вызывающий объект не может обработать исключение.|  

@@ -1,14 +1,9 @@
 ---
 title: Настройка параметров языка редактора | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - editor options
 - configure editor
@@ -17,18 +12,17 @@ ms.assetid: ba64d517-a60d-409b-9860-5d75065a5bb7
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f2f8b540d61191b436c5d030729777dad8f84dc1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c17bbb0989df9bf186652335cee6f77b047854fb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299095"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689490"
 ---
 # <a name="setting-language-specific-editor-options"></a>Настройка параметров языка редактора
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] предлагает различные параметры текстового редактора, которые можно применить к определенным языкам программирования.  
   
 ## <a name="in-this-section"></a>В этом разделе  
@@ -50,10 +44,10 @@ ms.locfileid: "49299095"
  ["Параметры", "Текстовый редактор", C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
  Описание параметров, определяющих поведение списка завершения IntelliSense при работе с кодом C# и J#.  
   
- ["Проверка", "CSS", "Текстовый редактор", диалоговое окно "Параметры"](http://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
+ ["Проверка", "CSS", "Текстовый редактор", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
  Описание параметров завершения операторов и исправления ошибок для каскадных таблиц стилей (CSS).  
   
- ["Проверка", "HTML", "Текстовый редактор", диалоговое окно "Параметры"](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
+ ["Проверка", "HTML", "Текстовый редактор", диалоговое окно "Параметры"](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
  Описание параметров проверки синтаксиса HTML на основе выбранной схемы.  
   
  ["Параметры", "Текстовый редактор", XAML, "Форматирование"](../../ide/reference/options-text-editor-xaml-formatting.md)  
@@ -63,8 +57,5 @@ ms.locfileid: "49299095"
  [Настройка редактора](../../ide/customizing-the-editor.md)  
  Ссылки на разделы, рассматривающие многие аспекты редактора, для которых можно изменять настройки.  
   
- [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
  Ссылки на разделы с описанием порядка настройки параметров, настраиваемого сочетания клавиш и других функций интегрированной среды разработки (IDE).
-
-
-

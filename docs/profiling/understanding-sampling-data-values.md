@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Profiling Tools, sampling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98a34abcd0e17f7b453ab3bd6e706665a9379bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2668d5b60fba429613975cc24e751dbe07f87b7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830877"
 ---
 # <a name="understand-sampling-data-values"></a>Общие сведения о выборке значений данных
 
@@ -51,5 +51,5 @@ ms.locfileid: "53863476"
 
 ## <a name="see-also"></a>См. также
 
-[Практическое руководство. Выбор методов сбора данных](../profiling/how-to-choose-collection-methods.md)  
-[Анализ данных из средств производительности](../profiling/analyzing-performance-tools-data.md)
+[Практическое руководство. Выбор методов сбора](../profiling/how-to-choose-collection-methods.md)
+[Анализ данных из средств оценки производительности](../profiling/analyzing-performance-tools-data.md)

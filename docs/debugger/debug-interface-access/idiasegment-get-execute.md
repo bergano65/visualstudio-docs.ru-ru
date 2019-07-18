@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: 746cdf8e-9097-415d-ba10-069854153185
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27cacaaed95c0ab37ec4d7567de2fd9f0c777537
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 7851d379793ee21562b2993c89442a7fb728ec00
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839399"
 ---
 # <a name="idiasegmentgetexecute"></a>IDiaSegment::get_execute
-Получает флаг, указывающий, является ли сегмент исполняемого файла.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_execute (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает `TRUE` Если сегмент помечен как исполняемый файл; в противном случае — значение, возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Получает флаг, указывающий, является ли сегмент исполняемого файла.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_execute ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает `TRUE` Если сегмент помечен как исполняемый файл; в противном случае — значение, возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

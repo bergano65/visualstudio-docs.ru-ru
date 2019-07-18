@@ -1,14 +1,9 @@
 ---
 title: Разработка языковой службы прежних | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
 - vs.vsip.LangServWiz.welcome
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 801a349b588a1dd7612b573fcc97b4b344a69452
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 36ff8335bfaf99b5826d217a48910bfd581321e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440115"
 ---
 # <a name="developing-a-legacy-language-service"></a>Разработка языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51746798"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы подробнее узнать о новых способах реализации языковой службы, см. в разделе [редактора и языковой службы расширения](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Модель языковой службы прежних версий](../../extensibility/internals/model-of-a-legacy-language-service.md)  
@@ -54,7 +49,7 @@ ms.locfileid: "51746798"
  [Поддержка языковой службы для отладки](../../extensibility/internals/language-service-support-for-debugging.md)  
  Описывает, как служба языка может предоставлять функциональные возможности для поддержки отладчика.  
   
- [Контрольный список. Создание языковой службы прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
+ [Контрольный список. создание языковой службы прежних версий](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
  Содержит пошаговые инструкции для создания и интеграции службы языка для базового редактора.  
   
 ## <a name="related-sections"></a>Связанные разделы  
@@ -72,4 +67,3 @@ ms.locfileid: "51746798"
   
  [Практическое руководство. Расширенная поддержка структурирования в языковой службе прежних версий](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Описание двух параметров, расширения структуры поддержки для вашего языка, чем поддержка *свернуть в определения* команды.
-

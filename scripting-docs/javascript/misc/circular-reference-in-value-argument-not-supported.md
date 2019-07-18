@@ -1,14 +1,9 @@
 ---
 title: Циклическая ссылка в аргументе значения не поддерживается | Документация Майкрософт
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5034
 dev_langs:
@@ -20,19 +15,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a31b56b4b2d568b3bc3fd59f876f5052b9f6faff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946372"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Циклическая ссылка в аргументе значения не поддерживается
 Предпринята попытка вызвать `JSON.stringify` со значением, которое является недопустимым. `value` Аргументов, массив или объект, содержит циклическую ссылку.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Удалите циклическую ссылку из аргумента.  
+- Удалите циклическую ссылку из аргумента.  
   
 ## <a name="example"></a>Пример  
  В данном примере кода приводит к ошибке времени выполнения, поскольку `john` содержит ссылку на `mary` и `mary` содержит ссылку на `john`. Чтобы удалить циклическую ссылку, либо удалите или свойство `brother` из `mary` объекта или `sister` свойства из `john` объекта.  

@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IDebugExtendedProperty | Документы Microsoft
+title: Интерфейс IDebugExtendedProperty | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,23 +13,23 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11edca1fbce6b7dab755a25dfc3e192225b5f6e5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1e042f75cf0ab0d8c4807c0c0db6ce04e8423f9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945878"
 ---
 # <a name="idebugextendedproperty-interface"></a>Интерфейс IDebugExtendedProperty
-Расширяет `IDebugProperty` интерфейса.  
+Расширяет `IDebugProperty` интерфейс.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
- Помимо методов, наследуемых из `IDebugProperty`, этот интерфейс предоставляет следующие методы.  
+ Помимо методов, наследуемых от `IDebugProperty`, этот интерфейс предоставляет следующие методы.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|Возвращает `ExtendedDebugPropertyInfo` , описывающий это`IDebugExtendedProperty``.`|  
-|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|Перечисляет члены коллекции расширенное свойство.|  
+|[IDebugExtendedProperty::GetExtendedPropertyInfo](../../winscript/reference/idebugextendedproperty-getextendedpropertyinfo.md)|Получает `ExtendedDebugPropertyInfo` , описывающий это `IDebugExtendedProperty``.`|  
+|[IDebugExtendedProperty::EnumExtendedMembers](../../winscript/reference/idebugextendedproperty-enumextendedmembers.md)|Перечисляет члены коллекции расширенного свойства.|  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: dbgprop.h  

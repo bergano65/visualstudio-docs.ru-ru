@@ -1,14 +1,9 @@
 ---
 title: Написание средств ведения журнала с поддержкой многопроцессорности | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, multi-proc aware loggers
 - multi-proc loggers
@@ -17,18 +12,17 @@ ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2b05c0f1782382f437a5e1d90bf19c724a05ca6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425883"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Написание средств ведения журнала с поддержкой многопроцессорности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Поддержка нескольких процессоров в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] позволяет сократить время сборки проекта, но усложняет ведение журнала событий сборки. В среде с одним процессором события, сообщения, предупреждения и ошибки поступают в средство ведения журнала последовательно и вполне предсказуемо. Однако в многопроцессорной среде события из различных источников могут поступать одновременно или не по порядку. Для обеспечения такого сценария платформа [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] предоставляет средство ведения журнала с поддержкой многопроцессорности и новую модель ведения журнала, а также позволяет создавать пользовательские средства ведения журнала с перенаправлением.  
   
 ## <a name="multi-processor-logging-challenges"></a>Проблемы ведения журналов в многопроцессорной среде  
@@ -87,7 +81,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 ```  
   
 > [!NOTE]
->  В параметре `/dl` имена двух средств ведения журнала необходимо отделить звездочкой (*).  
+> В параметре `/dl` имена двух средств ведения журнала необходимо отделить звездочкой (*).  
   
  ConfigurableForwardingLogger используется точно так же, как и любое другое средство ведения журнала (см. описание в разделе [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)), с той лишь разницей, что вместо обычного средства ведения журнала [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] подключается средство ведения журнала ConfigurableForwardingLogger и в качестве параметров указываются события, которые ConfigurableForwardingLogger будет передавать в центральный узел.  
   
@@ -120,8 +114,5 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|  
 |SHOWCOMMANDLINE|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Создание средства ведения журнала переадресации](../msbuild/creating-forwarding-loggers.md)
-
-
-

@@ -1,25 +1,24 @@
 ---
 title: Набор правил "Минимальные правила для смешанного кода"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4cc4ddb6a8d6ceb7fd6d7f0874f9f0fdfd66981
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a7bf9830e71abef04348307af4d841e7029afc4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820602"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Набор правил "Минимальные правила для смешанного кода"
 Минимальные правила Майкрософт для смешанного сосредоточиться на наиболее важными проблемами в проектах C++, которые поддерживают среда CLR, включая возможные уязвимости безопасности и сбои приложения. Следует включать этот набор правил во все пользовательские наборы правил, создаваемые для проектов C++, которые поддерживают среда CLR.
 
-|Правило|Описание:|
+|Правило|Описание|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|Использование неинициализированной памяти|
 |[C6011](../code-quality/c6011.md)|Разыменование пустого (NULL) указателя|

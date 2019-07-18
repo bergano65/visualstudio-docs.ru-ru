@@ -11,16 +11,15 @@ helpviewer_keywords:
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e90287711d23a3560ddd97280a8a51e591ce40e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 7ca5f71d386f48b36fcb1126a1e0467b40ef8d73
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963519"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745560"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Настроить ссылку на службу - диалоговое окно
 
@@ -99,7 +98,7 @@ ms.locfileid: "53963519"
  Откроется диалоговое окно **Добавление веб-ссылки**.
 
 > [!NOTE]
-> Этот параметр следует использовать только для проектов, предназначенных для версии 2.0 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+> Этот параметр должен использоваться только для проектов, предназначенных для версии 2.0 платформы .NET Framework.
 >
 > [!NOTE]
 > **Add Web Reference** кнопка доступна только тогда, когда **настроить ссылку на службу** диалоговое окно открыто из **Add Service Reference Dialog Box**.

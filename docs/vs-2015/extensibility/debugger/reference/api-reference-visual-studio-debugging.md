@@ -1,26 +1,21 @@
 ---
 title: Справочник по API (Отладка Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c45f89a6deafad5317f4cde704b73d9d4a1f30a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f3e95200cf29c8561798c858635c3864d635fb40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424515"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Справочник API (отладка Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51771702"
   
  В следующей таблице приведены распространенные `HRESULT` значения, возвращаемые методами.  
   
-|name|Описание:|Значение|  
+|name|Описание|Значение|  
 |----------|-----------------|-----------|  
 |S_OK|Выполнено.|0x00000000|  
 |E_UNEXPECTED|Непредвиденная ошибка.|0x8000FFFF|  
@@ -44,10 +39,10 @@ ms.locfileid: "51771702"
 |E_ACCESSDENIED|Ошибка доступа.|0x80070005|  
   
 > [!NOTE]
->  Когда [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] отладки метод возвращает `S_OK`, предполагается, что все указатели параметра являются допустимыми, то есть проверка не проводится на out параметр указателей при `S_OK` возвращается.  
+> Когда [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] отладки метод возвращает `S_OK`, предполагается, что все указатели параметра являются допустимыми, то есть проверка не проводится на out параметр указателей при `S_OK` возвращается.  
   
 > [!NOTE]
->  Недопустимый или `NULL` [параметров out] может привести к сбою в работе интегрированной среды разработки.  
+> Недопустимый или `NULL` [параметров out] может привести к сбою в работе интегрированной среды разработки.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   
@@ -55,4 +50,3 @@ ms.locfileid: "51771702"
  [Структуры и объединения](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [Вспомогательные пакеты SDK для отладки](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [Расширяемость отладчика Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Счетчики ЦП и Windows | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: d2c45c6a-f975-45ab-b8a5-4768ddd518fb
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f79eeae8539657f6556b87d917f991113c5de807
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434303"
 ---
 # <a name="cpu-and-windows-counters"></a>Счетчики ЦП и Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +28,10 @@ ms.locfileid: "51801697"
   
  **Требования**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="windows-counters"></a>Счетчики Windows  
  Счетчики Windows являются компонентом инфраструктуры диагностики Windows, которая позволяет получать информацию о производительности операционной системы, приложения, службы или драйвера. Счетчики Windows определяются конфигурацией текущего компьютера, некоторые счетчики могут быть недоступны на других компьютерах. Счетчики производительности Windows собираются в файлах данных профилирования как метки профилирования, которые затем могут использоваться для фильтрования представлений и отчетов.  
@@ -101,7 +96,7 @@ ms.locfileid: "51801697"
   
       **Примечание.** Нажмите кнопку **Отмена**, чтобы вернуться к предыдущей конфигурации выборки.  
   
-     - или -  
+     -или-  
   
    - Выберите **Счетчики ЦП**, а затем — **Сбор данных счетчиков ЦП**. Счетчики ЦП отображаются в списке **Доступные счетчики**.  
   
@@ -109,13 +104,13 @@ ms.locfileid: "51801697"
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Просмотр списка счетчиков ЦП, поддерживаемых на текущей платформе  
   
-1.  В обозревателе производительности щелкните правой кнопкой мыши сеанс анализа производительности, а затем выберите **Свойства**.  
+1. В обозревателе производительности щелкните правой кнопкой мыши сеанс анализа производительности, а затем выберите **Свойства**.  
   
-2.  Щелкните **Счетчики Windows**.  
+2. Щелкните **Счетчики Windows**.  
   
-3.  Выберите **Сбор счетчиков Windows**.  
+3. Выберите **Сбор счетчиков Windows**.  
   
-4.  В списке **Категория счетчика** выберите группу счетчиков. В списке отображается счетчик Windows для группы.  
+4. В списке **Категория счетчика** выберите группу счетчиков. В списке отображается счетчик Windows для группы.  
   
      **Примечание.** Нажмите кнопку **Отмена**, чтобы вернуться к предыдущей конфигурации коллекции счетчиков.  
   
@@ -124,9 +119,9 @@ ms.locfileid: "51801697"
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Создание списка счетчиков ЦП, поддерживаемых на текущей платформе  
   
-1.  Откройте окно командной строки.  
+1. Откройте окно командной строки.  
   
-2.  Тип  
+2. Тип  
   
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**,  
   
@@ -137,8 +132,5 @@ ms.locfileid: "51801697"
 ## <a name="see-also"></a>См. также  
  [Разделы общих сведений](../profiling/overviews-performance-tools.md)   
  [Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md)   
- [Практическое руководство. Сбор данных счетчиков производительности ЦП](../profiling/how-to-collect-cpu-counter-data.md)   
+ [Практическое руководство. Сбор данных счетчиков ЦП](../profiling/how-to-collect-cpu-counter-data.md)   
  [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)
-
-
-

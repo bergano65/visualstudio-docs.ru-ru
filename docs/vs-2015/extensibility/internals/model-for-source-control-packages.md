@@ -1,26 +1,21 @@
 ---
 title: Модель для пакетов управления исходным кодом | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], model
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 27bac56b862d4a3dfd0495420ee20920801faaae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 811cdfa2cbae85d6509e7cd883c5675b81639fa0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198434"
 ---
 # <a name="model-for-source-control-packages"></a>Модель для пакетов системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51734136"
  ![SCC&#95;примеры ТРОЙКИ](../../extensibility/internals/media/scc-tup.gif "SCC_TUP")  
 Проекта системы управления версиями пример  
   
-## <a name="interfaces"></a>интерфейсов,  
+## <a name="interfaces"></a>Интерфейсы  
  Вы можете реализовать систему управления версиями для новых типов проекта в Visual Studio, используя список интерфейсов, показано в следующей таблице.  
   
 |Интерфейс|Использовать|  
@@ -49,4 +44,3 @@ ms.locfileid: "51734136"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>   
  [Поддержка системы управления версиями](../../extensibility/internals/supporting-source-control.md)
-

@@ -16,43 +16,43 @@ helpviewer_keywords:
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f04a3d8e960b63dec4771c749ab6404cf1c01d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c69d010f9a4e834f9435616747c2776786706445
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999340"
 ---
 # <a name="project-element-msbuild"></a>Элемент Project (MSBuild)
-Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .  
+Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .
 
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Синтаксис
 
-```xml  
-<Project InitialTargets="TargetA;TargetB"  
-         DefaultTargets="TargetC;TargetD"  
-         TreatAsLocalProperty="PropertyA;PropertyB"  
+```xml
+<Project InitialTargets="TargetA;TargetB"
+         DefaultTargets="TargetC;TargetD"
+         TreatAsLocalProperty="PropertyA;PropertyB"
          ToolsVersion=<version number>
          Sdk="name[/version]"
-         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <Sdk... />
-    <Choose>... </Choose>  
-    <PropertyGroup>... </PropertyGroup>  
-    <ItemGroup>... </ItemGroup>  
-    <Target>... </Target>  
-    <UsingTask.../>  
-    <ProjectExtensions>... </ProjectExtensions>  
-    <Import... />  
-</Project>  
-```  
+    <Choose>... </Choose>
+    <PropertyGroup>... </PropertyGroup>
+    <ItemGroup>... </ItemGroup>
+    <Target>... </Target>
+    <UsingTask.../>
+    <ProjectExtensions>... </ProjectExtensions>
+    <Import... />
+</Project>
+```
 
-## <a name="attributes-and-elements"></a>Элементы и атрибуты  
- В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
-### <a name="attributes"></a>Атрибуты  
+### <a name="attributes"></a>Атрибуты
 
 | Атрибут | Описание |
 |------------------------| - |
@@ -61,9 +61,9 @@ ms.locfileid: "53841373"
 | `Sdk` | Необязательный атрибут. <br /><br /> Имя и (необязательно) версия пакета SDK для создания неявных операторов import, которые добавляются в PROJ-файл. Если версия не указана, MSBuild будет пытаться использовать версию по умолчанию.  Например, `<Project Sdk="Microsoft.NET.Sdk" />` или `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Необязательный атрибут.<br /><br /> Версия набора инструментов MSBuild используется для определения значений $(MSBuildBinPath) и $(MSBuildToolsPath). |
 | `TreatAsLocalProperty` | Необязательный атрибут.<br /><br /> Имена свойств, которые не будут относиться к глобальным. Этот атрибут запрещает определенным свойствам командной строки переопределять значения свойств, заданные в файле проекта или целевых объектов и всех последующих операциях импорта. Несколько свойств разделяются точкой с запятой (;).<br /><br /> Как правило, глобальные свойства переопределяют значения свойств, заданных в файле проекта или целевых объектов. Если свойство указано в значении `TreatAsLocalProperty`, значение глобального свойства не переопределяет значения свойств, заданные в этом файле и всех последующих операциях импорта. Дополнительные сведения см. в разделе [Как Построение одинаковых исходных файлов с различными параметрами](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Примечание.**  Чтобы задать глобальные свойства из командной строки, используйте параметр **-property** (или **-p**). Кроме того, вы можете задать или изменить глобальные свойства для дочерних проектов в сборках нескольких проектов, используя атрибут `Properties` задачи MSBuild. Дополнительные сведения см. в разделе [Задача MSBuild](../msbuild/msbuild-task.md). |
-| `Xmlns` | Необязательный атрибут.<br /><br /> Если он указан, атрибут `xmlns` должен иметь значение `http://schemas.microsoft.com/developer/msbuild/2003`. |
+| `xmlns` | Необязательный атрибут.<br /><br /> Если он указан, атрибут `xmlns` должен иметь значение `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
-### <a name="child-elements"></a>Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы
 
 | Элемент | Описание |
 | - | - |
@@ -78,11 +78,11 @@ ms.locfileid: "53841373"
 | [Целевой объект](../msbuild/target-element-msbuild.md) | Необязательный элемент.<br /><br /> Содержит набор задач для [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для последовательного выполнения. Задачи указываются с помощью элемента [Task](../msbuild/task-element-msbuild.md). Проект может содержать любое число элементов `Target`, включая ноль. |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Необязательный элемент.<br /><br /> Предоставляет способ регистрации задач в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Проект может содержать любое число элементов `UsingTask`, включая ноль. |
 
-### <a name="parent-elements"></a>Родительские элементы  
- Отсутствует.  
+### <a name="parent-elements"></a>Родительские элементы
+ Отсутствует.
 
-## <a name="see-also"></a>См. также  
- [Практическое руководство. Выбор цели для первого построения](../msbuild/how-to-specify-which-target-to-build-first.md)   
- [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)   
- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)   
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>См. также
+- [Практическое руководство. Выбор целевого объекта для первой сборки](../msbuild/how-to-specify-which-target-to-build-first.md)
+- [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)
+- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

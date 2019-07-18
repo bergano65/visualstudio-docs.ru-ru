@@ -1,14 +1,9 @@
 ---
 title: Ресурсы для устранения неполадок интегрированной среды разработки | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x00005A89
 - VS.Message.0x00005A8E
@@ -98,18 +93,17 @@ ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 269806ea71794f1b328fd94e147dbf055b78ca1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 97edc5419cb552f853a75817564a69dd175ec54b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203676"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ресурсы для устранения неполадок интегрированной среды разработки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Не все сообщения об ошибках имеют отдельный соответствующий раздел справки. Если описание сообщения об ошибке не помогло решить проблему, вы можете обратиться к другим ресурсам, таким как статьи базы знаний, сообщество разработчиков или служба технической поддержки.  
   
 ## <a name="knowledge-base-articles"></a>Статьи базы знаний  
@@ -118,10 +112,7 @@ ms.locfileid: "49232665"
 ## <a name="the-developer-community"></a>Сообщество разработчиков  
  Форумы позволяют взаимодействовать с другими разработчиками, а также с сотрудниками корпорации Майкрософт. Если вы столкнулись с ошибкой и не можете найти решение, можно задать вопрос о ней на форуме. Можно также выполнить поиск по группам новостей, чтобы узнать, не публиковал ли кто-то другой материалы о подобной проблеме.  
   
- На веб-сайте [Microsoft Technical Communities](http://go.microsoft.com/fwlink/?LinkID=144922) вы можете найти форумы, блоги, чаты и другие ресурсы.  
+ На веб-сайте [Microsoft Technical Communities](https://techcommunity.microsoft.com/) вы можете найти форумы, блоги, чаты и другие ресурсы.  
   
 ## <a name="product-support"></a>Поддержка продуктов  
  Если у вас остались вопросы после обращения к другим ресурсам, вы можете обратиться в службу поддержки Майкрософт, посетив веб-сайт [поддержки Майкрософт](http://go.microsoft.com/fwlink/?linkid=1782). Сведения о поддержке продуктов, доступной в вашем регионе, см. в разделе [Обращайтесь к нам](../../ide/talk-to-us.md).
-
-
-

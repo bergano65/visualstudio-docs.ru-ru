@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Profiling Tools, profiling methods
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bde4e313b9baf4975f5bff247fac248f3a090ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821238"
 ---
 # <a name="understand-performance-collection-methods"></a>Общие сведения о методах сбора данных о производительности
 
@@ -131,5 +131,5 @@ ms.locfileid: "53825793"
 
 ## <a name="see-also"></a>См. также
 
-[Практическое руководство. Сбор данных о производительности для веб-сайта](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
+[Практическое руководство. Сбор данных производительности для веб-сайта](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 [Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)

@@ -15,64 +15,64 @@ helpviewer_keywords:
 ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865e291e24bfb161f43e8fb5192a08e93cdb75d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c22e2465b79faa68f8789cefeeb181c2e15b73b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539711"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath - задача
-Определяет, какие элементы в указанной коллекции имеют пути в указанной папке или на более низком уровне.  
-  
-## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры задачи `FindUnderPath` .  
-  
-|Параметр|Описание|  
-|---------------|-----------------|  
-|`Files`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает файлы, пути которых следует сравнивать с путем, заданным в параметре `Path`.|  
-|`InPath`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит элементы, найденные по указанному пути.|  
-|`OutOfPath`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит элементы, не найденные по указанному пути.|  
-|`Path`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает путь к папке для использования в качестве ссылки.|  
-|`UpdateToAbsolutePaths`|Необязательный параметр `Boolean` .<br /><br /> Если имеет значение true, пути к выходным элементам изменяются на абсолютные.|  
-  
-## <a name="remarks"></a>Примечания  
- Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Пример  
- В этом примере задача `FindUnderPath` используется для определения наличия в файлах, содержащихся в элементе `MyFiles`, путей ниже указанного в свойстве `SearchPath`. После выполнения задачи элемент `FilesNotFoundInPath` содержит файл *File1.txt*, а элемент `FilesFoundInPath` содержит файл *File2.txt*.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <MyFiles Include="C:\File1.txt" />  
-        <MyFiles Include="C:\Projects\MyProject\File2.txt" />  
-    </ItemGroup>  
-  
-    <PropertyGroup>  
-        <SearchPath>C:\Projects\MyProject</SearchPath>  
-    </PropertyGroup>  
-  
-    <Target Name="FindFiles">  
-        <FindUnderPath  
-            Files="@(MyFiles)"  
-            Path="$(SearchPath)">  
-            <Output  
-                TaskParameter="InPath"  
-                ItemName="FilesFoundInPath" />  
-            <Output  
-                TaskParameter="OutOfPath"  
-                ItemName="FilesNotFoundInPath" />  
-        </FindUnderPath>  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
+Определяет, какие элементы в указанной коллекции имеют пути в указанной папке или на более низком уровне.
+
+## <a name="parameters"></a>Параметры
+В следующей таблице приводятся параметры задачи `FindUnderPath` .
+
+|Параметр|Описание|
+|---------------|-----------------|
+|`Files`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает файлы, пути которых следует сравнивать с путем, заданным в параметре `Path`.|
+|`InPath`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит элементы, найденные по указанному пути.|
+|`OutOfPath`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит элементы, не найденные по указанному пути.|
+|`Path`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает путь к папке для использования в качестве ссылки.|
+|`UpdateToAbsolutePaths`|Необязательный параметр `Boolean` .<br /><br /> Если имеет значение true, пути к выходным элементам изменяются на абсолютные.|
+
+## <a name="remarks"></a>Примечания
+Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Пример
+В этом примере задача `FindUnderPath` используется для определения наличия в файлах, содержащихся в элементе `MyFiles`, путей ниже указанного в свойстве `SearchPath`. После выполнения задачи элемент `FilesNotFoundInPath` содержит файл *File1.txt*, а элемент `FilesFoundInPath` содержит файл *File2.txt*.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <MyFiles Include="C:\File1.txt" />
+        <MyFiles Include="C:\Projects\MyProject\File2.txt" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <SearchPath>C:\Projects\MyProject</SearchPath>
+    </PropertyGroup>
+
+    <Target Name="FindFiles">
+        <FindUnderPath
+            Files="@(MyFiles)"
+            Path="$(SearchPath)">
+            <Output
+                TaskParameter="InPath"
+                ItemName="FilesFoundInPath" />
+            <Output
+                TaskParameter="OutOfPath"
+                ItemName="FilesNotFoundInPath" />
+        </FindUnderPath>
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>См. также
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)

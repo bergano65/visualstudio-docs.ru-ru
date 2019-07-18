@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: 5d92e394-649b-49f2-bce7-12dd9d666d85
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8bdc986ef0a603872c04cbcf05675afc7e548bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: e7f559c76bdaf4ca363a374566f4f820cc47dc14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839489"
 ---
 # <a name="idiasegmentgetlength"></a>IDiaSegment::get_length
-Возвращает число байтов в сегменте.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_ length (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает число байтов в сегменте.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Возвращает число байтов в сегменте.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_ length ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает число байтов в сегменте.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

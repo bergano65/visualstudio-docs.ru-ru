@@ -1,14 +1,9 @@
 ---
 title: Знакомство с международными приложениями на платформе .NET Framework | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - strings [Visual Studio], localizing
 - Web applications [.NET Framework], globalization
@@ -30,18 +25,18 @@ ms.assetid: b0788993-e62d-4f68-8235-5f87b1d48525
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3d1539d832b67a160e29b22b71066f72609e35b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e56c48468b6890f9c51e3ac79ac6167fd8647903
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270046"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675151"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Знакомство с международными приложениями на платформе .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] предусмотрено два компонента для создания международных приложений: глобализация — процесс разработки приложений, которые можно применять в различных культурах, и локализация — процесс перевода ресурсов для определенного языка и региональных параметров. Общие сведения о разработке приложений для международной аудитории см. в разделе [Рекомендации по разработке международных приложений](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
+В [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] предусмотрено два компонента для создания международных приложений: глобализация — процесс разработки приложений, которые можно применять в различных культурах, и локализация — процесс перевода ресурсов для определенного языка и региональных параметров. Общие сведения о разработке приложений для международной аудитории см. в разделе [Рекомендации по разработке международных приложений](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
   
  Модель локализации [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] состоит из главной сборки, которая содержит код приложения и резервные ресурсы — строки, изображения и другие объекты для языка, на котором изначально разрабатывается приложение. Каждое локализованное приложение будет иметь вспомогательные сборки или сборки, содержащие только локализованные ресурсы. Так как основная сборка всегда содержит исходные резервные ресурсы, если ресурс не найден в локализованной вспомогательной сборке, <xref:System.Resources.ResourceManager> попытается загрузить его в виде иерархии, в конце концов добравшись до ресурсов в основной сборке. Система резервного использования ресурсов рассмотрена более подробно в разделе [Иерархическая организация ресурсов для локализации](../ide/hierarchical-organization-of-resources-for-localization.md).  
   
@@ -53,9 +48,8 @@ ms.locfileid: "49270046"
   
  При выполнении локализованного приложения его внешний вид определяется двумя значениями языка и региональных параметров. (*Язык и региональные параметры* — это набор информации о предпочтениях пользователя, относящихся к языку пользователя, среде и правилам культуры.) Параметр языка и региональных параметров пользовательского интерфейса определяет, какие ресурсы будут загружаться. Язык и региональные параметры пользовательского интерфейса задаются как `UICulture` в файлах Web.config и директивах страниц, а также как <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> в коде Visual Basic или Visual C#. Параметр языка и региональных параметров определяет формат значений, таких как даты, числа, валюта и так далее. Язык и региональные параметры задаются как `Culture` в файлах Web.config и директивах страниц и как <xref:System.Globalization.CultureInfo.CurrentCulture%2A> в коде Visual Basic или Visual C#.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  <xref:System.Globalization>   
  <xref:System.Resources>   
  [Глобализация и локализация приложений](../ide/globalizing-and-localizing-applications.md)   
  [Безопасность и локализованные вспомогательные сборки](../ide/security-and-localized-satellite-assemblies.md)
-

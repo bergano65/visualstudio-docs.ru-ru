@@ -1,14 +1,9 @@
 ---
 title: Сведения о параметрах в языковой службы прежних версий2 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Parameter Info tool tip
 - language services [managed package framework], IntelliSense Parameter Info
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a540a2e5b282e1242109edd67a5dfbc95067e183
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d1fddc99c40e2472688a25ade121c2c762ade5da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437934"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Сведения о параметрах в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51781326"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
   
 ## <a name="implementation"></a>Реализация  
  Средство синтаксического анализа следует задать значение триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> устанавливается при обнаружении начального символа параметр списка (часто открывающая скобка). Она должна задать <xref:Microsoft.VisualStudio.Package.TokenTriggers> активировать при нахождении разделителя параметров (часто запятая). В этом случае сведения о параметрах всплывающей подсказки для обновления и отображения следующего параметра полужирным шрифтом. Средство синтаксического анализа следует задать значение триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> при если находит конечный символ списка параметров (часто закрывающая круглая скобка).  
@@ -42,7 +37,7 @@ ms.locfileid: "51781326"
  <xref:Microsoft.VisualStudio.Package.TokenTriggers> Значение триггера инициирует вызов <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> метод, который в свою очередь вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> средство синтаксического анализа метод синтаксического анализа причину <xref:Microsoft.VisualStudio.Package.ParseReason>. Если средство синтаксического анализа определяет, что перед списком параметров начального символа идентификатора является именем распознанных метод, он возвращает список сопоставлении сигнатур методов в <xref:Microsoft.VisualStudio.Package.AuthoringScope> объекта. Если найдены все подписи метода, сведения о параметрах всплывающей подсказки отображается с подписью, первой в списке. Этой подсказкой обновляется, как введено несколько подписи. При вводе конечный символ списка параметров, сведения о параметрах всплывающей подсказки удаляется из представления.  
   
 > [!NOTE]
->  Чтобы убедиться, что сведения о параметрах всплывающей подсказки имеет правильный формат, необходимо переопределить свойства на <xref:Microsoft.VisualStudio.Package.Methods> классе, чтобы предоставить соответствующие символы. Базовый <xref:Microsoft.VisualStudio.Package.Methods> предполагается, что класс C#-стиль сигнатуру метода. См. в разделе <xref:Microsoft.VisualStudio.Package.Methods> класс Дополнительные сведения о том, как это можно сделать.  
+> Чтобы убедиться, что сведения о параметрах всплывающей подсказки имеет правильный формат, необходимо переопределить свойства на <xref:Microsoft.VisualStudio.Package.Methods> классе, чтобы предоставить соответствующие символы. Базовый <xref:Microsoft.VisualStudio.Package.Methods> предполагается, что класс C#-стиль сигнатуру метода. См. в разделе <xref:Microsoft.VisualStudio.Package.Methods> класс Дополнительные сведения о том, как это можно сделать.  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>Включение поддержки для сведения о параметрах  
  Для поддержки сведения о параметрах подсказки, необходимо задать `ShowCompletion` именованный параметр из <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> для `true`. Языковая служба считывает значение этой записи реестра из <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> свойство.  
@@ -118,11 +113,10 @@ testfunc("a string",3);
   
  Ниже описаны шаги, которые средство синтаксического анализа принимает:  
   
-1.  Вызывает средство синтаксического анализа <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> с текстом «testfunc».  
+1. Вызывает средство синтаксического анализа <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> с текстом «testfunc».  
   
-2.  Вызывает средство синтаксического анализа <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
+2. Вызывает средство синтаксического анализа <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
   
-3.  Вызывает средство синтаксического анализа <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
+3. Вызывает средство синтаксического анализа <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
   
-4.  Вызывает средство синтаксического анализа <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
-
+4. Вызывает средство синтаксического анализа <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.

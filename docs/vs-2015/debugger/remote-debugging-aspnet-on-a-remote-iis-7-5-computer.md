@@ -1,25 +1,20 @@
 ---
 title: Удаленная отладка ASP.NET на удаленном IIS 7.5 компьютера | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c43f392cddfd5ea36180d9b2675db82469f86ce0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446078"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Удаленная отладка ASP.NET на удаленном компьютере IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +59,11 @@ ms.locfileid: "51764070"
 
     ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg-iis-aspnet-45.png "RemoteDBG_IIS_AspNet_45")
 
-    На Windows Server 2008 R2, установите ASP.NET 4, вместо этого с помощью следующей команды: **C:\Windows\Microsoft.NET\Framework (64) \v4.0.30319\aspnet_regiis.exe - ir**
+    В Windows Server 2008 R2 установите ASP.NET 4, вместо этого с помощью следующей команды:   **C:\Windows\Microsoft.NET\Framework(64)\v4.0.30319\aspnet_regiis.exe -ir**
 1. Скопируйте каталог проекта ASP.NET с компьютера Visual Studio в локальный каталог (который мы назовем **C:\Publish**) на компьютере Windows Server. Можно скопировать проект вручную, с помощью Xcopy, веб-развертывания, Robocopy, Powershell или другие параметры.
 
     > [!CAUTION]
-    >  Если вам нужно внести изменения в код или перестроение, необходимо повторно опубликовать и повторите этот шаг. Исполняемый файл, скопированный на удаленный компьютер, должен в точности совпадать с локальным исходным кодом и символами.
+    > Если вам нужно внести изменения в код или перестроение, необходимо повторно опубликовать и повторите этот шаг. Исполняемый файл, скопированный на удаленный компьютер, должен в точности совпадать с локальным исходным кодом и символами.
 1. Убедитесь в том, что в файле web.config указана правильная версия .NET Framework.  Например, по умолчанию устанавливается на Windows Server 2008 R2 версии платформы .NET Framework 4.0.30319, но мы создали приложение ASP.NET 4.5.2 версии. Если приложение ASP.NET 4.0 выполняется на компьютере с Windows Server, вам потребуется изменить версию.
   
     ```xml
@@ -79,6 +74,7 @@ ms.locfileid: "51764070"
       </system.web>
   
     ```
+
 1. Откройте **Диспетчер служб IIS** и перейдите к разделу **Сайты**.
 1. Щелкните правой кнопкой мыши узел **Веб-сайт по умолчанию** и выберите команду **Добавить приложение**.
 1. Задайте **псевдоним** поле **MyMVC** и поле пула приложения **ASP.NET v4.0** (ASP.NET 4.5 не допускаются для пула приложений). В поле **Физический путь** укажите значение **C:\Publish** (это каталог, в который вы скопировали каталог проекта ASP.NET).
@@ -107,12 +103,9 @@ ms.locfileid: "51764070"
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. Откройте веб-сайт удаленного компьютера. В браузере, перейдите к **http://\<имя удаленного компьютера >**.
+1. Откройте веб-сайт удаленного компьютера. В браузере перейдите по адресу **http://\<имя удаленного компьютера>** .
     
     Должна открыться веб-страница ASP.NET.
 1. В веб-страницы ASP.NET, щелкните ссылку, чтобы **о** страницы.
 
     В Visual Studio должна быть достигнута точка останова.
-
-
-

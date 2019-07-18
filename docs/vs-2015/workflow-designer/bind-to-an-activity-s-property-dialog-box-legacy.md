@@ -1,11 +1,8 @@
 ---
 title: Привязать к действию&#39;диалоговое окно свойств s (для прежних версий) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ActivityBindForm.UI
@@ -15,13 +12,13 @@ ms.assetid: 19ebb207-e0a9-4642-8f5f-a5e31395c683
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: bbc9c36bec7c01e7a7e771e7f7145da40b84b177
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 82582936f2d9165a0aebea9e6000af24baf59941
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977428"
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Привязать к действию&#39;диалоговое окно свойств s (для прежних версий)
 Здесь описывается, как использовать **привязки к свойству действия** диалогового окна в прежних версий [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

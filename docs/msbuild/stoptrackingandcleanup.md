@@ -12,30 +12,30 @@ helpviewer_keywords:
 ms.assetid: 9f8c5994-2dfc-43c3-a5fb-89b2f8990429
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf9f27acf0cebbf6a0e1d00da961f1733a66f4d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56f4fb82ab0e9792cadbeeea05499744e4c8ce46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939027"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
-Останавливает все отслеживание и освобождает память, используемую сеансом отслеживания.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp 
-HRESULT WINAPI StopTrackingAndCleanup(void);  
-```  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Возвращает **HRESULT** с установленным битом **SUCCEEDED**, если отслеживание было остановлено.  
-  
-## <a name="requirements"></a>Требования  
- **Заголовок.** *FileTracker.h*  
-  
-## <a name="see-also"></a>См. также  
- [StartTrackingContext](../msbuild/starttrackingcontext.md)
+Останавливает все отслеживание и освобождает память, используемую сеансом отслеживания.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT WINAPI StopTrackingAndCleanup(void);
+```
+
+## <a name="return-value"></a>Возвращаемое значение
+ Возвращает **HRESULT** с установленным битом **SUCCEEDED**, если отслеживание было остановлено.
+
+## <a name="requirements"></a>Требования
+ **Заголовок.** *FileTracker.h*
+
+## <a name="see-also"></a>См. также
+- [StartTrackingContext](../msbuild/starttrackingcontext.md)

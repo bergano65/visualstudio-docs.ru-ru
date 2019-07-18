@@ -1,14 +1,9 @@
 ---
-title: 'CA2232: Точки входа Марк Windows Forms STAThread | Документация Майкрософт'
-ms.custom: ''
+title: CA2232. Точки входа Windows Forms Марк STAThread | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkWindowsFormsEntryPointsWithStaThread
 - CA2232
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ef67681bcb0f16e8d7f75ebfcad079c85d47ab4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6e8b7242fcd82db1a0cfb82cf6cd6df5a9f75084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435415"
 ---
-# <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: отметьте точки входа Windows Forms меткой STAThread
+# <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232. Отметьте точки входа Windows Forms меткой STAThread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -44,7 +39,7 @@ ms.locfileid: "49919290"
  <xref:System.STAThreadAttribute> Указывает, что потоковой моделью COM для приложения является однопотоковое подразделение. Данный атрибут должен находиться в точке входа любого приложения, использующего Windows Forms; если он отсутствует, компоненты Windows могут работать неправильно. Если атрибут отсутствует, приложение использует модель многопотокового подразделения, которая не поддерживается для Windows Forms.
 
 > [!NOTE]
->  [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] проекты, использующие платформы приложений нет необходимости пометить **Main** метод с STAThread. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Компилятор делает это автоматически.
+> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] проекты, использующие платформы приложений нет необходимости пометить **Main** метод с STAThread. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Компилятор делает это автоматически.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, добавьте <xref:System.STAThreadAttribute> атрибута к точке входа. Если <xref:System.MTAThreadAttribute?displayProperty=fullName> присутствует атрибут, удалите ее.
@@ -57,6 +52,3 @@ ms.locfileid: "49919290"
 
  [!code-csharp[FxCop.Usage.StaThread#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.StaThread/cs/FxCop.Usage.StaThread.cs#1)]
  [!code-vb[FxCop.Usage.StaThread#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.StaThread/vb/FxCop.Usage.StaThread.vb#1)]
-
-
-

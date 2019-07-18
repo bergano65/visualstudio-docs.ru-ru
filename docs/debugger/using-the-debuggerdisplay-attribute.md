@@ -1,5 +1,5 @@
 ---
-title: Использование атрибута DebuggerDisplay | Документация Майкрософт
+title: Отобразить пользовательские сведения, с помощью DebuggerDisplay | Документация Майкрософт
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,176 +9,178 @@ helpviewer_keywords:
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
-ms.translationtype: MTE95
+ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54228062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929608"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>Использование атрибута DebuggerDisplay (C#, Visual Basic, C + +/ CLI)
-<xref:System.Diagnostics.DebuggerDisplayAttribute> управляет тем, как объект, свойство или поле отображаются в окнах переменных отладчика. Этот атрибут можно применять для типов, делегатов, свойств, полей и сборок.  
-  
- Атрибут `DebuggerDisplay` имеет один аргумент, определяющий строку, которая должна отображаться в столбце "Значение" для экземпляров типа. Эта строка может содержать фигурные скобки (`{` и `}`). Текст, заключенный в фигурные скобки, вычисляется как поле, свойство или метод.  
-  
- Если класс содержит переопределенный метод `ToString()` , отладчик использует этот метод вместо значения по умолчанию `{<typeName>}`. Таким образом, если имеется переопределенный метод `ToString()` , отладчик использует его вместо значения по умолчанию`{<typeName>}`и нет необходимости использовать `DebuggerDisplay`. Если используется и то и другое, то атрибут `DebuggerDisplay` будет иметь более высокий приоритет по отношению к переопределенному методу `ToString()` .  
-  
- Будет ли отладчик выполнять неявный вызов метода `ToString()` , зависит от заданных пользователем параметров в диалоговом окне **Сервис &gt; Параметры &gt; Отладка** . В Visual Basic неявный вызов метода `ToString()` не производится.  
-  
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Указать отладчику, что нужно показывать использование атрибута DebuggerDisplay (C#, Visual Basic, F#, C++выполняет)
+<xref:System.Diagnostics.DebuggerDisplayAttribute> управляет тем, как объект, свойство или поле отображаются в окнах переменных отладчика. Этот атрибут можно применять для типов, делегатов, свойств, полей и сборок.
+
+Атрибут `DebuggerDisplay` имеет один аргумент, определяющий строку, которая должна отображаться в столбце "Значение" для экземпляров типа. Эта строка может содержать фигурные скобки (`{` и `}`). Текст, заключенный в фигурные скобки, вычисляется как поле, свойство или метод.
+
+Если класс содержит переопределенный метод `ToString()` , отладчик использует этот метод вместо значения по умолчанию `{<typeName>}`. Таким образом, если имеется переопределенный метод `ToString()` , отладчик использует его вместо значения по умолчанию`{<typeName>}`и нет необходимости использовать `DebuggerDisplay`. Если используется и то и другое, то атрибут `DebuggerDisplay` будет иметь более высокий приоритет по отношению к переопределенному методу `ToString()`.
+
+Будет ли отладчик выполнять неявный вызов метода `ToString()` , зависит от заданных пользователем параметров в диалоговом окне **Сервис &gt; Параметры &gt; Отладка** . В Visual Basic неявный вызов метода `ToString()` не производится.
+
 > [!IMPORTANT]
->  Если в диалоговом окне **Сервис &gt; Параметры &gt; Отладка** установлен флажок **Показывать базовую структуру объектов в окнах переменных** , то атрибут `DebuggerDisplay` игнорируется.  
+> Если в диалоговом окне **Сервис &gt; Параметры &gt; Отладка** установлен флажок **Показывать базовую структуру объектов в окнах переменных** , то атрибут `DebuggerDisplay` игнорируется.
 
 > [!NOTE]
-> Для машинного кода, этот атрибут поддерживается только в C + +/ CLI кода.
-  
- В следующей таблице показано несколько примеров возможного использования атрибута `DebuggerDisplay` для вывода строк удобочитаемого вида.  
-  
-|Атрибут|Строка, выводимая в столбце "Значение"|  
-|---------------| - |  
-|`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Применение для типа с полями `x` и `y`.|`x = 5 y = 18`|  
-|`[DebuggerDisplay("String value is {getString()}")]`Синтаксис параметра может различаться в зависимости от языка. Будьте внимательны при его использовании.|`String value is [5, 6, 6]`|  
-  
- Атрибут`DebuggerDisplay` также может принимать именованные параметры.  
-  
-|Параметры|Цель|  
-|----------------|-------------|  
-|`Name`, `Type`|Эти параметры влияют на столбцы **Имя** и **Тип** окон переменных. (Для них также может быть задан вывод строк с использованием того же синтаксиса, что и для конструктора.) Злоупотребление этими параметрами или их неправильное использование может, однако, привести к выводу неудобочитаемых или недостоверных данных.|  
-|`Target`, `TargetTypeName`|Указывает конечный тип, когда атрибут используется на уровне сборки.|  
-  
- Файл autoexp.cs использует атрибут DebuggerDisplay на уровне сборки. Файл autoexp.cs определяет расширения по умолчанию, которые Visual Studio использует для объектов .NET. В файле autoexp.cs можно просмотреть примеры использования атрибута DebuggerDisplay. При необходимости в файл autoexp.cs можно внести изменения и скомпилировать его, чтобы изменить расширения по умолчанию. Прежде чем изменять файл autoexp.cs, следует обязательно сделать его резервную копию.  
-  
- Чтобы создать файл autoexp.cs, откройте командную строку разработчика для VS 2015 и выполните следующие команды.  
-  
+> Для машинного кода, этот атрибут поддерживается только в C++выполняет код.
+
+В следующей таблице показано несколько примеров возможного использования атрибута `DebuggerDisplay` для вывода строк удобочитаемого вида.
+
+|Атрибут|Строка, выводимая в столбце "Значение"|
+|---------------| - |
+|`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Применение для типа с полями `x` и `y`.|`x = 5 y = 18`|
+|`[DebuggerDisplay("String value is {getString()}")]`Синтаксис параметра может различаться в зависимости от языка. Будьте внимательны при его использовании.|`String value is [5, 6, 6]`|
+
+Атрибут`DebuggerDisplay` также может принимать именованные параметры.
+
+|Параметры|Цель|
+|----------------|-------------|
+|`Name`, `Type`|Эти параметры влияют на столбцы **Имя** и **Тип** окон переменных. (Для них также может быть задан вывод строк с использованием того же синтаксиса, что и для конструктора.) Злоупотребление этими параметрами или их неправильное использование может, однако, привести к выводу неудобочитаемых или недостоверных данных.|
+|`Target`, `TargetTypeName`|Указывает конечный тип, когда атрибут используется на уровне сборки.|
+
+Файл autoexp.cs использует атрибут DebuggerDisplay на уровне сборки. Файл autoexp.cs определяет расширения по умолчанию, которые Visual Studio использует для объектов .NET. В файле autoexp.cs можно просмотреть примеры использования атрибута DebuggerDisplay. При необходимости в файл autoexp.cs можно внести изменения и скомпилировать его, чтобы изменить расширения по умолчанию. Прежде чем изменять файл autoexp.cs, следует обязательно сделать его резервную копию.
+
+Чтобы создать файл autoexp.cs, откройте командную строку разработчика для VS 2015 и выполните следующие команды.
+
 ```cmd
-cd <directory containing autoexp.cs>  
-csc /t:library autoexp.cs  
-```  
-  
- Изменения в файле autoexp.dll будут учтены в следующем сеансе отладки.  
-  
-## <a name="using-expressions-in-debuggerdisplay"></a>Использование выражений в атрибуте DebuggerDisplay  
- Хотя в атрибуте DebuggerDisplay допускается использовать общее выражение внутри фигурных скобок, делать это не рекомендуется.  
-  
- Общее выражение внутри атрибута DebuggerDisplay имеет неявный доступ к указателю `this` только для текущего экземпляра конечного типа. Выражение не имеет доступа к псевдонимам, локальным переменным или указателям. Если выражение ссылается на свойства, то атрибуты для этих свойств не обрабатываются. Например, код C# `[DebuggerDisplay("Object {count - 2}")]`  отобразил бы `Object 6` , если бы поле `count` имело значение 8.  
-  
- Использование выражений в атрибуте DebuggerDisplay может привести к следующим проблемам:  
-  
-- Вычисление выражений является наиболее ресурсоемкой операцией в отладчике, причем выражение вычисляется при каждом его отображении. Это может вызвать проблемы производительности при пошаговом выполнении кода. Например, сложное выражение, используемое для отображения значений в коллекции или в списке, при большом количестве элементов может вычисляться очень медленно.  
-  
-- Выражения вычисляются с помощью вычислителя выражений языка текущего кадра стека, а не языка, на котором было написано выражение. Это может привести к непредсказуемым результатам, если языки различаются.  
-  
-- Вычисление выражения может изменить состояние приложения. Например, выражение, которое задает значение свойства, изменяет значение свойства в выполняемом коде.  
-  
-  Одним из способов сократить возможные проблемы вычисления выражения является создание закрытого свойства, которое выполняет операцию и возвращает строку. Атрибут DebuggerDisplay сможет отобразить значение этого закрытого свойства. Ниже показан пример реализации этого способа.  
-  
-```csharp  
-[DebuggerDisplay("{DebuggerDisplay,nq}")]  
-public sealed class MyClass   
-{      
-    public int count { get; set; }      
-    public bool flag { get; set; }      
-    private string DebuggerDisplay  
-   {         
-        get  
-        {  
-             return string.Format("Object {0}", count - 2);  
-        }      
-    }  
-}  
-```  
-«, Nq» суффикс ull вычислитель выражений для удаления кавычек, при отображении конечное значение (nq = без кавычек). 
-  
-## <a name="example"></a>Пример  
- Следующий пример демонстрирует способ использования атрибута `DebuggerDisplay`совместно с атрибутами `DebuggerBrowseable` и `DebuggerTypeProxy`. При работе данного кода в окна переменных отладчика, например в окно **Контрольные значения** , выводится расширенная информация, а именно:  
-  
-|**Name**|**Значение**|**Type**|  
-|--------------|---------------|--------------|  
-|Ключ|"три"|object {string}|  
-|Значение|3|object {int}|  
-  
-```csharp  
-[DebuggerDisplay("{value}", Name = "{key}")]  
-internal class KeyValuePairs  
-{  
-    private IDictionary dictionary;  
-    private object key;  
-    private object value;  
-    public KeyValuePairs(IDictionary dictionary, object key, object value)  
-    {  
-        this.value = value;  
-        this.key = key;  
-        this.dictionary = dictionary;  
-    }  
-  
-    public object Key  
-    {  
-        get { return key; }  
-        set  
-        {  
-            object tempValue = dictionary[key];  
-            dictionary.Remove(key);  
-            key = value;  
-            dictionary.Add(key, tempValue);  
-        }  
-    }  
-  
-    public object Value  
-    {  
-        get { return this.value; }  
-        set  
-        {  
-            this.value = value;  
-            dictionary[key] = this.value;  
-        }  
-    }  
-}  
-  
-[DebuggerDisplay("{DebuggerDisplay,nq}")]  
-[DebuggerTypeProxy(typeof(HashtableDebugView))]  
-class MyHashtable  
-{  
-    public Hashtable hashtable;  
-  
-    public MyHashtable()  
-    {  
-        hashtable = new Hashtable();    
+cd <directory containing autoexp.cs>
+csc /t:library autoexp.cs
+```
+
+Изменения в файле autoexp.dll будут учтены в следующем сеансе отладки.
+
+## <a name="using-expressions-in-debuggerdisplay"></a>Использование выражений в атрибуте DebuggerDisplay
+Хотя в атрибуте DebuggerDisplay допускается использовать общее выражение внутри фигурных скобок, делать это не рекомендуется.
+
+Общее выражение внутри атрибута DebuggerDisplay имеет неявный доступ к указателю `this` только для текущего экземпляра конечного типа. Выражение не имеет доступа к псевдонимам, локальным переменным или указателям. Если выражение ссылается на свойства, то атрибуты для этих свойств не обрабатываются. Например, код C# `[DebuggerDisplay("Object {count - 2}")]` отобразил бы `Object 6`, если бы поле `count` имело значение 8.
+
+Использование выражений в атрибуте DebuggerDisplay может привести к следующим проблемам:
+
+- Вычисление выражений является наиболее ресурсоемкой операцией в отладчике, причем выражение вычисляется при каждом его отображении. Это может вызвать проблемы производительности при пошаговом выполнении кода. Например, сложное выражение, используемое для отображения значений в коллекции или в списке, при большом количестве элементов может вычисляться очень медленно.
+
+- Выражения вычисляются с помощью вычислителя выражений языка текущего кадра стека, а не языка, на котором было написано выражение. Это может привести к непредсказуемым результатам, если языки различаются.
+
+- Вычисление выражения может изменить состояние приложения. Например, выражение, которое задает значение свойства, изменяет значение свойства в выполняемом коде.
+
+  Одним из способов сократить возможные проблемы вычисления выражения является создание закрытого свойства, которое выполняет операцию и возвращает строку. Атрибут DebuggerDisplay сможет отобразить значение этого закрытого свойства. Ниже показан пример реализации этого способа.
+
+```csharp
+[DebuggerDisplay("{DebuggerDisplay,nq}")]
+public sealed class MyClass
+{
+    public int count { get; set; }
+    public bool flag { get; set; }
+    private string DebuggerDisplay
+    {
+        get
+        {
+            return string.Format("Object {0}", count - 2);
+        }
     }
-    
-    private string DebuggerDisplay    {        get { return "Count = " + hashtable.Count); }    }  
-  
-    private class HashtableDebugView  
-    {  
-        private MyHashtable myhashtable;  
-        public HashtableDebugView(MyHashtable myhashtable)  
-        {  
-            this.myhashtable = myhashtable;  
-        }  
-  
-        [DebuggerBrowsable(DebuggerBrowsableState.RootHidden)]  
-        public KeyValuePairs[] Keys  
-        {  
-            get  
-            {  
-                KeyValuePairs[] keys = new KeyValuePairs[myhashtable.hashtable.Count];  
-  
-                int i = 0;  
-                foreach (object key in myhashtable.hashtable.Keys)  
-                {  
-                    keys[i] = new KeyValuePairs(myhashtable.hashtable, key, myhashtable.hashtable[key]);  
-                    i++;  
-                }  
-                return keys;  
-            }  
-        }  
-    }  
-}  
-```  
-  
-## <a name="see-also"></a>См. также раздел  
- [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
- [Создание настраиваемых представлений управляемых объектов](../debugger/create-custom-views-of-dot-managed-objects.md)   
- [Определители формата в C#](../debugger/format-specifiers-in-csharp.md)   
- [Повышение эффективности отладки с помощью атрибутов просмотра отладчика](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+}
+```
+
+«, Nq» суффикс ull вычислитель выражений для удаления кавычек, при отображении конечное значение (nq = без кавычек).
+
+## <a name="example"></a>Пример
+Следующий пример демонстрирует способ использования атрибута `DebuggerDisplay`совместно с атрибутами `DebuggerBrowseable` и `DebuggerTypeProxy`. При работе данного кода в окна переменных отладчика, например в окно **Контрольные значения** , выводится расширенная информация, а именно:
+
+|**Name**|**Значение**|**Type**|
+|--------------|---------------|--------------|
+|Ключ|"три"|object {string}|
+|Значение|3|object {int}|
+
+```csharp
+[DebuggerDisplay("{value}", Name = "{key}")]
+internal class KeyValuePairs
+{
+    private IDictionary dictionary;
+    private object key;
+    private object value;
+    public KeyValuePairs(IDictionary dictionary, object key, object value)
+    {
+        this.value = value;
+        this.key = key;
+        this.dictionary = dictionary;
+    }
+
+    public object Key
+    {
+        get { return key; }
+        set
+        {
+            object tempValue = dictionary[key];
+            dictionary.Remove(key);
+            key = value;
+            dictionary.Add(key, tempValue);
+        }
+    }
+
+    public object Value
+    {
+        get { return this.value; }
+        set
+        {
+            this.value = value;
+            dictionary[key] = this.value;
+        }
+    }
+}
+
+[DebuggerDisplay("{DebuggerDisplay,nq}")]
+[DebuggerTypeProxy(typeof(HashtableDebugView))]
+class MyHashtable
+{
+    public Hashtable hashtable;
+
+    public MyHashtable()
+    {
+        hashtable = new Hashtable();
+    }
+
+    private string DebuggerDisplay { get { return "Count = " + hashtable.Count; } }
+
+    private class HashtableDebugView
+    {
+        private MyHashtable myhashtable;
+        public HashtableDebugView(MyHashtable myhashtable)
+        {
+            this.myhashtable = myhashtable;
+        }
+
+        [DebuggerBrowsable(DebuggerBrowsableState.RootHidden)]
+        public KeyValuePairs[] Keys
+        {
+            get
+            {
+                KeyValuePairs[] keys = new KeyValuePairs[myhashtable.hashtable.Count];
+
+                int i = 0;
+                foreach (object key in myhashtable.hashtable.Keys)
+                {
+                    keys[i] = new KeyValuePairs(myhashtable.hashtable, key, myhashtable.hashtable[key]);
+                    i++;
+                }
+                return keys;
+            }
+        }
+    }
+}
+```
+
+## <a name="see-also"></a>См. также
+
+- [Использование атрибута DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
+- [Создание настраиваемых представлений управляемых объектов](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Определители формата в C#](../debugger/format-specifiers-in-csharp.md)
+- [Повышение эффективности отладки с помощью атрибутов просмотра отладчика](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

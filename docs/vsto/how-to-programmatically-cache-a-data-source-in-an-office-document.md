@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Программное кэширование источника данных в документах Office
+title: Кэширование источника данных в документ Office программным способом
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46411ef1827f6a5adead8ff58e42eaf68e6c58ae
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 5e63b478fb16965f639a76dad0cbc3b2715bc7e2
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088495"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401404"
 ---
-# <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Как выполнить Программное кэширование источника данных в документах Office
+# <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Практическое руководство. Программное кэширование источника данных в документах Office
   Можно программно добавить объект данных в кэш данных в документе путем вызова `StartCaching` метода ведущего элемента, такого как <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, или <xref:Microsoft.Office.Tools.Excel.Worksheet>. Удаляет объект данных из кэша данных, вызвав `StopCaching` метод ведущего элемента.
 
  `StartCaching` Метод и `StopCaching` метод являются частными, но они отображаются в IntelliSense.
@@ -34,25 +34,25 @@ ms.locfileid: "54088495"
 
 ## <a name="to-programmatically-cache-a-data-object"></a>Объект данных в кэш программным образом
 
-1.  Объявите объект данных на уровне класса, а не внутри метода. В этом примере предполагается, что вы объявляете <xref:System.Data.DataSet> с именем `dataSet1` , необходимо поместить в кэш программным способом.
+1. Объявите объект данных на уровне класса, а не внутри метода. В этом примере предполагается, что вы объявляете <xref:System.Data.DataSet> с именем `dataSet1` , необходимо поместить в кэш программным способом.
 
      [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]
      [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]
 
-2.  Создайте экземпляр объекта данных, а затем вызовите `StartCaching` метод экземпляра документа или листа и передайте имя объекта данных.
+2. Создайте экземпляр объекта данных, а затем вызовите `StartCaching` метод экземпляра документа или листа и передайте имя объекта данных.
 
      [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]
      [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]
 
 ## <a name="to-stop-caching-a-data-object"></a>Для прекращения кэширования объекта данных
 
-1.  Вызовите `StopCaching` метод экземпляра документа или листа и передайте имя объекта данных. В этом примере предполагается, что у вас есть <xref:System.Data.DataSet> с именем `dataSet1` , вы хотите остановить кэширование.
+1. Вызовите `StopCaching` метод экземпляра документа или листа и передайте имя объекта данных. В этом примере предполагается, что у вас есть <xref:System.Data.DataSet> с именем `dataSet1` , вы хотите остановить кэширование.
 
      [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    >  Не вызывайте `StopCaching` из обработчика событий для `Shutdown` события документа или листа. К моменту `Shutdown` события, уже слишком поздно для изменения кэша данных. Дополнительные сведения о `Shutdown` событий, см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).
+    > Не вызывайте `StopCaching` из обработчика событий для `Shutdown` события документа или листа. К моменту `Shutdown` события, уже слишком поздно для изменения кэша данных. Дополнительные сведения о `Shutdown` событий, см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).
 
 ## <a name="see-also"></a>См. также
 

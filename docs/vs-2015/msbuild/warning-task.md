@@ -1,14 +1,9 @@
 ---
 title: Задача Warning | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Warning
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0447c3803de6845dcfb02a30270cfe9b96b96f0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: adbddc2fb36e5036e535dfc1049945187fe14ed0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558493"
 ---
 # <a name="warning-task"></a>Задача Warning
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Регистрирует в журнале предупреждение в процессе сборки на основе вычисленного условного оператора.  
   
 ## <a name="parameters"></a>Параметры  
@@ -71,9 +65,6 @@ ms.locfileid: "49213603"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

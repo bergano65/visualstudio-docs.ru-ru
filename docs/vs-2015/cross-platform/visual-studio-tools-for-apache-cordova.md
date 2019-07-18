@@ -1,22 +1,18 @@
 ---
 title: Средства Visual Studio для Apache Cordova | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 21dcf46e-5d6d-439c-90e3-3d678e50c5a6
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: f439fdedd1be094eb2f1b437b2abeed2c49bc8b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0d0903db05b193b3318dc30c250bfdb21e76b093
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155279"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Средства Visual Studio для Apache Cordova
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +29,6 @@ ms.locfileid: "51735485"
   
 - полная совместимость проекта с интерфейсом командной строки.  
   
-  Если вас интересуют эти инструменты, но вы еще не готовы попробовать их в работе, посетите нашу страницу с [описанием возможностей](https://www.visualstudio.com/explore/cordova-vs) , и мы расскажем вам о них подробнее.  
+Если вас интересуют эти инструменты, но вы еще не готовы попробовать их в работе, посетите нашу страницу с [описанием возможностей](https://www.visualstudio.com/explore/cordova-vs) , и мы расскажем вам о них подробнее.  
   
-  Если вы готовы начать работу, посетите наш [веб-сайт](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/).
-
-
-
+Если вы готовы начать, см. в разделе [разработки мобильных приложений на JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017).

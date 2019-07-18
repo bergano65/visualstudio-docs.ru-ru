@@ -1,20 +1,19 @@
 ---
 title: Общие сведения о привязке данных WPF с помощью LINQ to XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc67ec6beb42c3bce82f3a32f6e40f052f8ad0ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 400686710e09c19a806493232d471a1c946a630d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850730"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715066"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Общие сведения о привязке данных WPF с помощью LINQ to XML
 
@@ -22,7 +21,7 @@ ms.locfileid: "53850730"
 
 ## <a name="xaml-and-linq-to-xml"></a>XAML и LINQ to XML
 
-Язык XAML является диалектом XML, созданным в корпорации Майкрософт для поддержки технологий .NET Framework 3.0. Он используется в WPF для представления элементов пользовательского интерфейса и связанных с этим возможностей, таких как события и привязка данных. В Windows Workflow Foundation язык XAML используется для представления структуры программ, например в виде средств управления программой (*потоков операций*). XAML позволяет отделить декларативные аспекты технологии от связанного с ними процедурного кода, определяющего более индивидуализированное поведение программы.
+Язык XAML является диалектом XML, созданным в корпорации Майкрософт для поддержки технологий .NET. Он используется в WPF для представления элементов пользовательского интерфейса и связанных с этим возможностей, таких как события и привязка данных. В Windows Workflow Foundation язык XAML используется для представления структуры программ, например в виде средств управления программой (*потоков операций*). XAML позволяет отделить декларативные аспекты технологии от связанного с ними процедурного кода, определяющего более индивидуализированное поведение программы.
 
 Существует два общих способа взаимодействия XAML и LINQ to XML.
 

@@ -1,14 +1,9 @@
 ---
 title: Написание задач | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing tasks
 - tasks, creating for MSBuild
@@ -17,18 +12,17 @@ ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445388"
 ---
 # <a name="task-writing"></a>Написание задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Задачи содержат код, который выполняется в процессе сборки. Задачи содержатся в целевых объектах. В [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] включена библиотека типичных задач, но также можно создавать собственные задачи. Дополнительные сведения о библиотеке задач, включенных в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], см. в разделе [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="tasks"></a>Задачи  
@@ -111,7 +105,7 @@ namespace MyTasks
  Файл Microsoft.Common.Tasks в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] — это файл проекта, который содержит список элементов `UsingTask`, регистрирующих все задачи, предоставленные вместе с [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Этот файл включается автоматически при сборке каждого проекта. Если задача, зарегистрированная в файле Microsoft.Common.Tasks, зарегистрирована также в текущем файле проекта, текущий файл проекта имеет приоритет. Таким образом можно переопределить задачу по умолчанию собственной задачей с тем же именем.  
   
 > [!TIP]
->  Чтобы увидеть список задач, предоставленных вместе с [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], просмотрите содержимое файла Microsoft.Common.Tasks.  
+> Чтобы увидеть список задач, предоставленных вместе с [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], просмотрите содержимое файла Microsoft.Common.Tasks.  
   
 ## <a name="raising-events-from-a-task"></a>Создание событий из задачи  
  Если задача является производной от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>, вы можете использовать любой из следующих вспомогательных методов класса <xref:Microsoft.Build.Utilities.Task> для создания событий, которые будут перехватываться и отображаться зарегистрированными средствами ведения журнала:  
@@ -274,9 +268,6 @@ namespace SimpleTask2
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

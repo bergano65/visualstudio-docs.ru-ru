@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9e4c80dee056d559822006627c86f4b4884942c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960492"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Добавление расширений в определения предметно-ориентированных языков
 
@@ -21,15 +20,15 @@ ms.locfileid: "53991140"
 
 Расширения DSL могут включать следующие возможности:
 
--   Свойства для элементов модели и презентации
+- Свойства для элементов модели и презентации
 
--   Декораторы для фигур и соединителей
+- Декораторы для фигур и соединителей
 
--   Классы, отношения, фигуры и соединители
+- Классы, отношения, фигуры и соединители
 
--   Ограничения проверки
+- Ограничения проверки
 
--   Элементы панели элементов и вкладок
+- Элементы панели элементов и вкладок
 
 Пользователь расширенных DSL можно создать и сохранить модель, которая содержит экземпляры дополнительные возможности. Модель может быть прочитан другим пользователям, установившим соответствующим расширением. Пользователи, которых не установлены расширения не могут использовать дополнительные функции, но их можно обновить и сохранения модели без потери дополнительные возможности.
 
@@ -37,4 +36,4 @@ ms.locfileid: "53991140"
 
 ## <a name="see-also"></a>См. также
 
-- [Связанные записи в блогах](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+- [Связанные записи в блогах](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

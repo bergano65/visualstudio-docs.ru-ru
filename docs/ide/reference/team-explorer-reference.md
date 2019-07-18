@@ -1,17 +1,16 @@
 ---
 title: Справка по Team Explorer
 ms.date: 12/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
-ms.openlocfilehash: c4feda1f01e08807041efb9ae9b3d0bbe84d24b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.manager: jillfra
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945092"
 ---
 # <a name="team-explorer-reference"></a>Справка по Team Explorer
 
@@ -34,7 +33,7 @@ ms.locfileid: "53840756"
 
 | **Домашняя** страница при подключении к Git | **Домашняя** страница при подключении к TFVC |
 | - | - |
-| ![Домашняя страница Team Explorer при подключении к Git в Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Домашняя страница Team Explorer при подключении к TFVC в Visual Studio 2017](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Домашняя страница Team Explorer при подключении к Git в Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Домашняя страница Team Explorer при подключении к TFVC в Visual Studio](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>Страница "Изменения" (Git)
 
@@ -80,8 +79,12 @@ ms.locfileid: "53840756"
 - [Отправка списка результатов запроса по электронной почте с помощью Outlook](/azure/devops/boards/queries/share-plans)
 - [Создание отчетов из запроса в Excel](/azure/devops/report/excel/create-status-and-trend-excel-reports) (только для TFS)
 
+::: moniker range=">= vs-2019"
+
 > [!NOTE]
-> В Visual Studio 2019 (предварительная версия 1) представлена новая [система управления рабочими элементами](/azure/devops/boards/work-items/set-work-item-experience-vs). Дополнительные сведения о просмотре рабочих элементов в Visual Studio 2019 (предварительная версия 1) см. в статье [Просмотр и добавление рабочих элементов](/azure/devops/boards/work-items/view-add-work-items).
+> В Visual Studio 2019 представлена новая [система управления рабочими элементами](/azure/devops/boards/work-items/set-work-item-experience-vs). Дополнительные сведения о просмотре рабочих элементов в Visual Studio 2019 см. в статье [Просмотр и добавление рабочих элементов](/azure/devops/boards/work-items/view-add-work-items).
+
+::: moniker-end
 
 ## <a name="builds-page"></a>Страница "Сборки"
 

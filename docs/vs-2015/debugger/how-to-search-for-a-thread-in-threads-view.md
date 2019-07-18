@@ -1,29 +1,24 @@
 ---
-title: 'Практическое: поиск потока в представлении "Потоки" | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Поиск потока в представлении "Потоки" | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - threads, searching
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fb1c3979b0505305fd4f6a600e3352c0d08955de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d5974bc962faf439af8de5d50bf51bad3d824647
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766905"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64827354"
 ---
-# <a name="how-to-search-for-a-thread-in-threads-view"></a>Практическое руководство. Поиск потока в представлении потоков
+# <a name="how-to-search-for-a-thread-in-threads-view"></a>Практическое руководство. поиск потока в представлении потоков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Конкретным потоком в представление "Потоки" можно найти с помощью его поток идентификатор или строку модуля в качестве критерия поиска. Можно также указать исходное направление поиска. Поля в диалоговом окне отобразятся атрибуты потока, выбранного в дереве потоков.  
@@ -41,13 +36,10 @@ ms.locfileid: "51766905"
 4. Очистите все поля, для которых вы не хотите указать значения.  
   
    > [!TIP]
-   >  Чтобы найти все потоки, принадлежащие модулю, снимите **потоков** текстовое поле и введите модуль имя в **модуль** поле. Затем с помощью **Найти далее** для продолжения поиска потоков.  
+   > Чтобы найти все потоки, принадлежащие модулю, снимите **потоков** текстовое поле и введите модуль имя в **модуль** поле. Затем с помощью **Найти далее** для продолжения поиска потоков.  
   
 5. Выберите **вверх** или **вниз** для исходное направление поиска.  
   
 6. Нажмите кнопку **ОК**.  
   
    Если найден соответствующий поток, то он выделяется в окне представления потоков.
-
-
-

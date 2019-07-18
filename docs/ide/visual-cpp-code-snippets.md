@@ -1,21 +1,20 @@
 ---
 title: Фрагменты кода Visual C++
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5069d1b92b9c4f73fdb8eca50eabce170f42cef1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de27b201dadb23bb8209ebee24b34386f8fa5127
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581764"
 ---
 # <a name="visual-c-code-snippets"></a>Фрагменты кода Visual C++
 

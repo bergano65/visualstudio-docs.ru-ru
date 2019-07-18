@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IProcessDebugManager | Документы Microsoft
+title: Интерфейс IProcessDebugManager | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26c97fda6fc8657164e22d51eb041017a6239d98
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d68c044cdc3d523841cc56814b8ca34bcd8aa037
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944788"
 ---
 # <a name="iprocessdebugmanager-interface"></a>Интерфейс IProcessDebugManager
-Основной интерфейс для диспетчера отладки процессов. Этот интерфейс можно создать, добавить или удалить виртуального приложения из процесса. Его можно перечислить кадры стека и потоки приложения.  
+Основной интерфейс для диспетчера отладки процессов. Этот интерфейс может создать, добавить или удалить виртуальное приложение в процессе. Его можно перечислить кадров стека и потоки приложения.  
   
  Помимо методов, наследуемых от `IUnknown`, `IProcessDebugManager` интерфейс предоставляет следующие методы.  
   
@@ -30,8 +29,8 @@ ms.locfileid: "24729224"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IProcessDebugManager::CreateApplication](../../winscript/reference/iprocessdebugmanager-createapplication.md)|Создает новый объект приложения отладки для этого приложения.|  
+|[IProcessDebugManager::CreateApplication](../../winscript/reference/iprocessdebugmanager-createapplication.md)|Создает новый объект отладки приложения для этого приложения.|  
 |[IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)|Возвращает объект приложения по умолчанию для текущего процесса.|  
-|[IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)|Добавляет приложение в список диспетчера отладки компьютера запущенные приложения.|  
-|[IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)|Удаляет приложение с запуском список приложений.|  
-|[IProcessDebugManager::CreateDebugDocumentHelper](../../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md)|Создает новый вспомогательный документ отладки для этого приложения.|
+|[IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)|Добавляет приложение диспетчера отладки компьютера список выполняемых приложений.|  
+|[IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)|Удаляет приложение из выполняемого список приложений.|  
+|[IProcessDebugManager::CreateDebugDocumentHelper](../../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md)|Создает новый документ вспомогательное средство отладки для этого приложения.|

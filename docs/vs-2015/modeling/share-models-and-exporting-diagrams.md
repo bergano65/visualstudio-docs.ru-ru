@@ -1,12 +1,9 @@
 ---
 title: Совместное использование моделей и экспорт схем | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
@@ -14,13 +11,13 @@ ms.assetid: 22e47b4d-c185-478c-9535-56d292b45984
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f59ac9d96a9f001b54c86bbf51819ecf2efb40c9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4d2fd2af8a68ee72ec26b52a4c26a829d94376ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199841"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Общий доступ к моделям и экспорт схем
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +51,7 @@ ms.locfileid: "51798460"
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Работа с моделями и схемами в системе управления версиями](../modeling/manage-models-and-diagrams-under-version-control.md)|Пользователи Visual Studio могут работать с общей моделью.|  
 |[Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)|Совместно используйте модели в рамках проекта большого или среднего размера.|  
@@ -66,6 +63,3 @@ ms.locfileid: "51798460"
 ## <a name="see-also"></a>См. также  
  [Создание моделей для приложения](../modeling/create-models-for-your-app.md)   
  [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)
-
-
-

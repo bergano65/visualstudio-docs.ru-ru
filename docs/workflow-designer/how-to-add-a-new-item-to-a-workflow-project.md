@@ -1,27 +1,25 @@
 ---
-title: 'Конструктор рабочих процессов - как: Добавление нового элемента в проект рабочего процесса'
+title: 'Конструктор рабочих процессов: Добавить новый элемент в проект рабочего процесса'
 ms.date: 06/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65a3e9f9bcfbc1200321d2399afbba1585e5c8d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29e4c03eef2a276995890bbd6b723fa457aefde2
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950586"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432032"
 ---
-# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Как выполнить Добавить новый элемент в проект рабочего процесса
+# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Практическое руководство. Добавить новый элемент в проект рабочего процесса
 
 После создания проекта рабочего процесса, можно добавить действия рабочего процесса, конструкторы и другие знакомые элементы Visual Studio в проект.
 
 В следующей таблице перечислены элементы Windows Workflow Foundation (WF), которые можно добавить в проект рабочего процесса:
-
 
 | name | Описание |
 |-| - |
@@ -39,7 +37,7 @@ ms.locfileid: "53950586"
 1. В области слева выберите **рабочего процесса** категории, а затем выберите шаблон элемента рабочего процесса.
 
    > [!NOTE]
-   > Если вы не видите **рабочего процесса** категории, сначала установить **Windows Workflow Foundation** компонент Visual Studio 2017. Подробные инструкции см. в разделе [установки Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Если вы не видите **рабочего процесса** категории, сначала установить **Windows Workflow Foundation** компонент Visual Studio. Подробные инструкции см. в разделе [установки Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 1. Введите имя для элемента в **имя** внизу диалогового окна.
 

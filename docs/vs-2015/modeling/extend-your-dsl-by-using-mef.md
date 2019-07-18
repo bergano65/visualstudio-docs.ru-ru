@@ -1,23 +1,20 @@
 ---
 title: Расширение доменного языка с помощью MEF | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 3e7be79a-53ab-4d79-863a-bef8d27839bd
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a1b90f37dcdadc53b6f2a81b9b4e9a860dd6a529
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930648"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692523"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Расширение доменного языка с помощью MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +23,7 @@ ms.locfileid: "49930648"
   
  Кроме того при включении MEF в DSL, он может быть проще писать некоторые функции вашего DSL, даже если все они создаются вместе с DSL.  
   
- Дополнительные сведения о MEF см. в разделе [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+ Дополнительные сведения о MEF см. в разделе [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Чтобы включить вашего DSL, который необходимо расширить платформой MEF  
   
@@ -35,7 +32,7 @@ ms.locfileid: "49930648"
     Имя файла: `CommandExtensionVSCT.tt`  
   
    > [!IMPORTANT]
-   >  Задайте идентификатор GUID в этом файле, чтобы совпадал с CommandSetId GUID, который определен в DslPackage\GeneratedCode\Constants.tt  
+   > Задайте идентификатор GUID в этом файле, чтобы совпадал с CommandSetId GUID, который определен в DslPackage\GeneratedCode\Constants.tt  
   
    ```  
    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -134,23 +131,23 @@ ms.locfileid: "49930648"
   
    - Эта сборка обычно имеет имя, которое заканчивается на «. DSL.dll».  
   
-   - Если у вас есть доступ к проекту DSL, можно найти файл сборки в каталоге **Dsl\bin\\\\***  
+   - Если у вас есть доступ к проекту DSL, можно найти файл сборки в каталоге **Dsl\\bin\\\***  
   
    - Если у вас есть доступ к DSL VSIX-файлу, вы можете найти сборку, изменив расширение VSIX-файл на «ZIP». Распакуйте ZIP-файл.  
   
 3. Добавьте ссылки на следующие сборки .NET:  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
   
-   -   System.ComponentModel.Composition.dll  
+   - System.ComponentModel.Composition.dll  
   
-   -   System.Windows.Forms.dll  
+   - System.Windows.Forms.dll  
   
-4. Создайте проект VSIX в одном решении. Для этого в **новый проект** диалогового окна последовательно раскройте элементы **Visual Basic** или **Visual C#**, нажмите кнопку **расширяемости**, а затем выберите  **Проект VSIX**.  
+4. Создайте проект VSIX в одном решении. Для этого в **новый проект** диалогового окна последовательно раскройте элементы **Visual Basic** или **Visual C#** , нажмите кнопку **расширяемости**, а затем выберите  **Проект VSIX**.  
   
 5. В обозревателе решений щелкните правой кнопкой мыши проект VSIX и нажмите кнопку **Назначить запускаемым проектом**.  
   
@@ -162,7 +159,7 @@ ms.locfileid: "49930648"
   
    1. В **source.extension.vsixmanifest**, нажмите кнопку **добавить ссылку**  
   
-   2. В диалоговом окне щелкните **полезных данных, добавить** и найдите VSIX-файл DSL. VSIX-файл создается в решение DSL в ** DslPackage\bin\\\\***.  
+   2. В диалоговом окне щелкните **полезных данных, добавить** и найдите VSIX-файл DSL. VSIX-файл создается в решение DSL в **DslPackage\\bin\\\*** .  
   
        Это позволяет пользователям устанавливать DSL и расширения, в то же время. Если пользователь уже установил DSL, будет устанавливаться только расширения.  
   
@@ -250,7 +247,7 @@ namespace MyMefExtension
 ### <a name="gesture-handlers"></a>Обработчики жестов  
  Обработчик жестов умеет работать с объектами при перетаскивании на схему, в любом месте внутри или за пределами [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Следующий пример позволяет пользователю перетаскивать файлы из проводника Windows в схеме. Он создает элементы, которые содержат имена файлов.  
   
- Вы можете написать обработчики для обработки перетаскивания с другими моделями DSL и UML-модели. Дополнительные сведения см. в разделе [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+ Вы можете написать обработчики для обработки перетаскивания с другими моделями DSL и UML-модели. Дополнительные сведения см. в разделе [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ```  
   
@@ -379,9 +376,6 @@ namespace MefExtension
   
 ## <a name="see-also"></a>См. также  
  [Доставка расширений Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
- [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
- [Практическое: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
+ [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md)
-
-
-

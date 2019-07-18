@@ -1,14 +1,9 @@
 ---
 title: Выбор фрагмента кода | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: f0862d48-fbbc-4cfe-b228-24492d5c89c4
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 913594f47288715e0050643f365f9225810f6ded
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845307"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682352"
 ---
 # <a name="code-snippet-picker"></a>выбор фрагмента кода
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 В редакторе кода [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] имеется **средство выбора фрагмента кода**, которое позволяет несколькими щелчками мыши вставлять готовые блоки кода в активный документ.  
   
  Порядок открытия **средства выбора фрагмента кода** зависит от используемого языка.  
@@ -51,7 +45,7 @@ ms.locfileid: "49845307"
   
 - SQL — щелкните правой кнопкой мыши в нужном месте редактора кода и в открывшемся контекстном меню выберите пункт **Вставить фрагмент**.  
   
-  В большинстве языков разработки Visual Studio можно использовать **диспетчер фрагментов кода** для добавления папок в **список папок**, в которых **средство выбора фрагмента кода** проверяет наличие файлов фрагментов XML. Также можно создавать собственные фрагменты кода для добавления в список. Подробнее см. в разделе [Пошаговое руководство. Создание фрагмента кода](../../ide/walkthrough-creating-a-code-snippet.md).  
+  В большинстве языков разработки Visual Studio можно использовать **диспетчер фрагментов кода** для добавления папок в **список папок**, в которых **средство выбора фрагмента кода** проверяет наличие файлов фрагментов XML. Также можно создавать собственные фрагменты кода для добавления в список. Дополнительные сведения см. в разделе [Пошаговое руководство: Создание фрагмента кода](../../ide/walkthrough-creating-a-code-snippet.md).  
   
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
  Имя элемента  
@@ -62,9 +56,6 @@ ms.locfileid: "49845307"
   
 ## <a name="see-also"></a>См. также  
  [Рекомендации по использованию фрагментов кода](../../ide/best-practices-for-using-code-snippets.md)   
- [Фрагменты кода IntelliSense в Visual Basic](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Фрагменты кода IntelliSense в Visual Basic](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Установка закладок в коде](../../ide/setting-bookmarks-in-code.md)   
  [Практическое руководство. Использование окружающих фрагментов кода](../../ide/how-to-use-surround-with-code-snippets.md)
-
-
-

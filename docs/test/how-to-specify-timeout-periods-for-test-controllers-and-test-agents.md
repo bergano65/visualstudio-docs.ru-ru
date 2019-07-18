@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 49d81090a0db94fe0215d01a1194f3eb4fabfcad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 5e703ca3e1770d92a2dc01402acaaba0b4988e92
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970642"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Как выполнить задание периодов ожидания для контроллеров тестирования и агентов тестирования
 
@@ -27,7 +26,7 @@ ms.locfileid: "53870457"
 
 Чтобы изменить различные параметры времени ожидания контроллера или агента тестирования, изменить следующие файлы конфигурации, используя имена и значения разделов, указанные в представленных ниже таблицах.
 
--   Контроллер тестирования: *QTController.exe.config*
+- Контроллер тестирования: *QTController.exe.config*
 
     |Имя раздела|Описание|Значение|
     |-|-----------------|-|
@@ -36,7 +35,7 @@ ms.locfileid: "53870457"
     |AgentInitializeTimeout|Период времени (в секундах), в течение которого все агенты и их сборщики данных должны ожидать инициализации в начале тестового запуска, прежде чем прервать запуск. Если используются сборщики данных, данное значение должно быть достаточно большим.|"n" секунд. По умолчанию: "120" (две минуты).|
     |AgentCleanupTimeout|Период времени (в секундах), в течение которого все агенты и их сборщики данных должны ожидать очистки, прежде чем завершить тестовый запуск. Если используются сборщики данных, данное значение должно быть достаточно большим.|"n" секунд. По умолчанию: "120" (две минуты).|
 
--   Агент тестирования: *QTAgentService.exe.config*
+- Агент тестирования: *QTAgentService.exe.config*
 
     |Имя раздела|Описание|Значение|
     |-|-----------------|-|
@@ -118,5 +117,4 @@ ms.locfileid: "53870457"
 - [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md)
 - [Изменение параметров ведения журнала для нагрузочного теста](../test/modify-load-test-logging-settings.md)
 - [Настройка портов для контроллеров и агентов тестирования](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Практическое руководство. Указание максимального размера файла журнала](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Практическое руководство. Привязка контроллера тестирования или агента тестирования к сетевому адаптеру](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

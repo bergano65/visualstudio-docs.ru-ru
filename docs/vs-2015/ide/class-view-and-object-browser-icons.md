@@ -1,14 +1,9 @@
 ---
 title: Значки представления классов и обозревателя объектов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons, in Object Browser
 - signal icons
@@ -22,24 +17,24 @@ ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ef14396e681f77eca469f40b2253c8a64296423d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422844"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Значки представления классов и обозревателя объектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Класс представления ** и **обозреватель объектов** отображать значки, представляющие сущности кода, например, пространства имен, классы, функции и переменные. Эти значки описаны в приведенной ниже таблице.  
+Представление классов** и **обозреватель объектов** отображают значки, представляющие сущности кода, например пространства имен, классы, функции и переменные. Эти значки описаны в приведенной ниже таблице.  
   
 |Значок|Описание|Значок|Описание|  
 |----------|-----------------|----------|-----------------|  
 |![Символ пространства имен](../ide/media/vxnamespace-icon.gif "vxNamespace_Icon")|Пространство имен|![Символ объявления](../ide/media/vxmethod-icon.gif "vxMethod_Icon")|Метод или функция|  
 |![Значок класса](../ide/media/vxclass-icon.gif "vxClass_Icon")|Класс|![Символ оператора](../ide/media/vxoperator-icon.gif "vxOperator_Icon")|Оператор|  
-|![Символ интерфейса без описания операций](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|Интерфейс|![Символ свойства](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|Свойство.|  
+|![Символ интерфейса без описания операций](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|Интерфейс|![Символ свойства](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|Свойство|  
 |![Символ структуры](../ide/media/vxstruct-icon.gif "vxStruct_Icon")|Структура|![Значок поля](../ide/media/vxfield-icon.gif "vxField_Icon")|Поле или переменная|  
 |![Символ объединения](../ide/media/vxunion-icon.gif "vxUnion_Icon")|Объединение|![Символ события](../ide/media/vxevent-icon.gif "vxEvent_Icon")|событие|  
 |![Символ перечисления](../ide/media/vxenum-icon.gif "vxEnum_Icon")|Enum|![Значок константы](../ide/media/vxconstant-icon.gif "vxConstant_Icon")|Константа|  
@@ -55,7 +50,7 @@ ms.locfileid: "49279744"
  Приведенные ниже сигнальные значки применяются ко всем перечисленным выше значкам и указывают их доступность.  
   
 > [!NOTE]
->  Если ваш проект включен в базу данных управления версиями, могут отображаться дополнительные сигнальные значки, указывающие состояние управления версиями, например, возвращено или извлечено.  
+> Если ваш проект включен в базу данных управления версиями, могут отображаться дополнительные сигнальные значки, указывающие состояние управления версиями, например, возвращено или извлечено.  
   
 |Значок|Описание|  
 |----------|-----------------|  
@@ -68,6 +63,3 @@ ms.locfileid: "49279744"
   
 ## <a name="see-also"></a>См. также  
  [Просмотр структуры кода](../ide/viewing-the-structure-of-code.md)
-
-
-

@@ -8,18 +8,19 @@ f1_keywords:
 ms.assetid: 27d2f303-e3ed-4219-9009-345a0d849506
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36feec786ba0bba71723073fb990054cc0206847
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896023"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>Графические API и статистика использования памяти
-<!-- VERSIONLESS --> Visual Studio 2017 и более поздней версии поддерживает средства графики Статистика использования API и статистика использования памяти.  Эти два средства позволяют просматривать различные части сведения об использовании Direct3D API, а также потребление памяти GPU из различных ресурсов.
+<!-- VERSIONLESS -->
+Visual Studio 2017 и более поздней версии поддерживает средства графики Статистика использования API и статистика использования памяти.  Эти два средства позволяют просматривать различные части сведения об использовании Direct3D API, а также потребление памяти GPU из различных ресурсов.
 
 ## <a name="graphics-api-statistics"></a>Статистика использования API графики
 Статистика использования API графики в модуле диагностики графики Visual Studio позволяет просматривать все вызовы Direct3D, которые были внесены и счетчик для каждого вызова.  Чтобы открыть окно, выберите **Вид > Статистика использования API** пункта меню.
@@ -39,7 +40,7 @@ ms.locfileid: "53916683"
 
 Как и в случае со средством Статистика использования API, можно щелкнуть правой кнопкой мыши в окне, чтобы копировать все данные как CSV-ФАЙЛ, который может быть вставлено в нечто вроде Excel для дальнейшего анализа.
 
-## <a name="see-also"></a>См. также раздел  
-[Диагностика графики (отладка графики DirectX)](visual-studio-graphics-diagnostics.md)   
-[Журнал ресурсов](graphics-event-list.md#resource-history)
+## <a name="see-also"></a>См. также
+- [Диагностика графики (отладка графики DirectX)](visual-studio-graphics-diagnostics.md)
+- [Журнал ресурсов](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

@@ -1,26 +1,21 @@
 ---
 title: Приступая к работе с расширениями редактора и языковой службы | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f09056d184256e2d62387af08c61186c6ff57c02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735215"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703759"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Начало работы с расширениями редактора и языковой службы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,18 +25,18 @@ ms.locfileid: "51735215"
  Чтобы приступить к созданию расширения редактора, используйте редактор шаблоны проектов, которые устанавливаются как часть пакета SDK для Visual Studio. Пакет SDK для Visual Studio — это загружаемый набор средств, которые упрощают процесс разработки расширений Visual Studio, либо с помощью пакетов VSPackage, либо с помощью Managed Extensibility Framework (MEF).  
   
 > [!NOTE]
->  Дополнительные сведения о Visual Studio SDK, см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
+> Дополнительные сведения о Visual Studio SDK, см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
   
  Мы рекомендуем изучить следующие основные понятия и технологии прежде чем писать собственные расширения редактора.  
   
 ## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>В Windows Presentation Foundation (WPF) и расширения редактора  
- Пользовательский интерфейс (UI) редактора Visual Studio реализуется с помощью Windows Presentation Foundation (WPF). WPF предоставляет богатые возможности visual и согласованную модель программирования, которая отделяет визуальных характеристик элемента кода от бизнес-логики. Можно использовать множество элементов WPF и функций при создании расширения редактора. Дополнительные сведения см. в разделе [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
+ Пользовательский интерфейс (UI) редактора Visual Studio реализуется с помощью Windows Presentation Foundation (WPF). WPF предоставляет богатые возможности visual и согласованную модель программирования, которая отделяет визуальных характеристик элемента кода от бизнес-логики. Можно использовать множество элементов WPF и функций при создании расширения редактора. Дополнительные сведения см. в разделе [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
   
 ## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Managed Extensibility Framework (MEF) и расширения редактора  
  В редакторе Visual Studio использует Managed Extensibility Framework (MEF) для управления компонентами и расширения. MEF также позволяет разработчикам легко создавать расширения для ведущего приложения, такие как Visual Studio. В этом варианте определить расширение в соответствии с контракт MEF и экспортировать его в качестве компонента MEF. Ведущее приложение управляет компонентов, их поиск, их регистрация и убедившись, что они применяются в правильном контексте.  
   
 > [!NOTE]
->  Дополнительные сведения о MEF в редакторе, см. в разделе [Managed Extensibility Framework в редакторе](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+> Дополнительные сведения о MEF в редакторе, см. в разделе [Managed Extensibility Framework в редакторе](../extensibility/managed-extensibility-framework-in-the-editor.md).  
   
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Точки расширения редактора Visual Studio и расширения  
  Точки расширения редактора, компоненты MEF, которые можно настраивать и расширять. В некоторых случаях вы расширить эта точка расширения, реализовав интерфейс и экспортировав ее вместе с правильными метаданными. В других случаях просто объявить, что расширение и экспортируйте его как определенный тип.  
@@ -66,7 +61,7 @@ ms.locfileid: "51735215"
  При установке расширения на компьютере, включить двоичные файлы и манифест во вложенной папке, известно, что Visual Studio.  
   
 > [!WARNING]
->  У вас нет беспокоиться о манифесты и всех местах развертывания, если вы используете один из шаблонов расширяемости редактора, включенные в Visual Studio. Шаблоны содержат все необходимое для регистрации и развертывания расширения.  
+> У вас нет беспокоиться о манифесты и всех местах развертывания, если вы используете один из шаблонов расширяемости редактора, включенные в Visual Studio. Шаблоны содержат все необходимое для регистрации и развертывания расширения.  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>Запуск расширений в экспериментальном экземпляре  
  При разработке расширения, развернув ее в папке экспериментальные (в Windows Vista и Windows 7), можно изолировать вашей рабочей версии Visual Studio:  
@@ -89,10 +84,9 @@ ms.locfileid: "51735215"
   
  Также можно создать редактор компонентов MEF из расширения пакета Visual Studio. См Дополнительные сведения:  
   
--   [Пошаговое руководство. Использование командной оболочки в расширении редактора](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [Пошаговое руководство: использование командной оболочки в расширении редактора](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [Пошаговое руководство. Использование сочетания клавиш в расширении редактора](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [Пошаговое руководство: использование сочетаний клавиш в редакторе расширений](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>См. также  
  [Языковая служба и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md)
-

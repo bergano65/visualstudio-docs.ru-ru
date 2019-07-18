@@ -1,24 +1,19 @@
 ---
 title: Предупреждения криптографии | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: d96723ea-a293-488d-b9db-adb437e50cdd
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4d795d9c6b6cefcf15c19867cc954ab898215a36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c573d461b477bbcdc7e988ea66f03d5a7cc0fdb6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201450"
 ---
 # <a name="cryptography-warnings"></a>Предупреждения криптографии
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,8 +22,5 @@ ms.locfileid: "49201504"
   
 |Правило|Описание|  
 |----------|-----------------|  
-|[CA5350: не используйте ненадежные алгоритмы шифрования](../code-quality/ca5350-do-not-use-weak-cryptographic-algorithms.md)|Ненадежные алгоритмы шифрования и функции хэширования еще используются сегодня по ряду причин, но они не должны использоваться для обеспечения конфиденциальности или целостности данных, которые они защищают.        Это правило срабатывает при обнаружении в коде алгоритмов TripleDES, SHA1 или RIPEMD160.|  
+|[CA5350. Не используйте ненадежные алгоритмы шифрования](../code-quality/ca5350-do-not-use-weak-cryptographic-algorithms.md)|Ненадежные алгоритмы шифрования и функции хэширования еще используются сегодня по ряду причин, но они не должны использоваться для обеспечения конфиденциальности или целостности данных, которые они защищают.        Это правило срабатывает при обнаружении в коде алгоритмов TripleDES, SHA1 или RIPEMD160.|  
 |[CA5351: не используйте ослабленные алгоритмы шифрования](../code-quality/ca5351-do-not-use-broken-cryptographic-algorithms.md)|Ослабленные алгоритмы шифрования не считаются безопасными, и их использование настоятельно не рекомендуется. Это правило срабатывает при обнаружении в коде хэш-алгоритма MD5 или алгоритмов шифрования RC2 или DES.|
-
-
-

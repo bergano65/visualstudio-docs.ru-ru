@@ -1,7 +1,6 @@
 ---
 title: Панель элементов, вкладка "Данные"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Data tab
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9e23cd79510d789c8c8f8b426fb3196f1845745
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952965"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747700"
 ---
 # <a name="toolbox-data-tab"></a>Панель элементов, вкладка "Данные"
 
@@ -29,7 +28,7 @@ ms.locfileid: "53952965"
 
 ## <a name="ui-element-list"></a>Список элементов пользовательского интерфейса
 
-Чтобы перейти непосредственно на страницу справочника по .NET Framework для конкретного компонента, нажмите клавишу **F1** для элемента на **панели элементов** или для элемента компонента в области конструктора.
+Чтобы перейти непосредственно на страницу справочника по .NET для конкретного компонента, нажмите клавишу **F1** для элемента на **панели элементов** или для элемента компонента в области конструктора.
 
 |name|Описание|
 |----------|-----------------|
@@ -38,7 +37,7 @@ ms.locfileid: "53952965"
 |<xref:System.Windows.Forms.BindingSource>|Упрощает процесс привязки элементов управления к базовому источнику данных.|
 |<xref:System.Windows.Forms.BindingNavigator>|Представляет пользовательский интерфейс для перехода и обработки для элементов управления в форме, которые привязываются к данным.|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Доступ к данным в Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
 - [Visual Studio Data Tools для .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)

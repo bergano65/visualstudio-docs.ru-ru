@@ -1,14 +1,9 @@
 ---
 title: Создание моделей для приложения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
 - vs.teamarch.UMLModelExplorer.dependency
@@ -41,30 +36,30 @@ ms.assetid: b69d9d91-c7e7-4dee-8eb6-706076eecb85
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9e3aa389441914121493148ecb8fa45b9f86beed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03f525d3b996875097ddee433d0e9ad887ee728f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745131"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679469"
 ---
 # <a name="create-models-for-your-app"></a>Создание моделей для приложения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Схемы моделирования помогают понять, уточнить и передать другим сведения о коде и пользовательских требованиях, которым должна удовлетворять ваша программная система. Например, для описания и передачи пользовательских требований можно использовать схемы UML вариантов использования, деятельности, классов и последовательностей. Для описания функциональных возможностей системы и передачи сведений о них можно использовать схемы UML компонентов, классов, деятельности и последовательностей.  
   
- См. в разделе [видео Channel 9: Совершенствование архитектуры путем моделирования](http://go.microsoft.com/fwlink/?LinkID=252078).  
+ См. в разделе [видео на Channel 9: Совершенствование архитектуры путем моделирования](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
  В этом выпуске можно создавать следующие UML-схемы:  
   
 |**Схема**|**Что показывает**|  
 |-----------------|---------------|  
-|[UML-схемы деятельности: справочные материалы](../modeling/uml-activity-diagrams-reference.md)|Рабочий процесс между действиями и участниками в рамках бизнес-процесса|  
-|[Схемы компонентов UML: справочные материалы](../modeling/uml-component-diagrams-reference.md)|Компоненты системы, их интерфейсы, порты и отношения|  
-|[UML-схемы классов: справочные материалы](../modeling/uml-class-diagrams-reference.md)|Типы, используемые для хранения данных  и их отношений и обмена ими в системе|  
-|[UML-схемы последовательностей: справочные материалы](../modeling/uml-sequence-diagrams-reference.md)|Последовательности взаимодействий между объектами, компонентами, системами или субъектами|  
-|[UML-схемы вариантов использования: справочные материалы](../modeling/uml-use-case-diagrams-reference.md)|Цели и задачи пользователей, поддерживаемые системой|  
+|[Схемы активности UML: справочник](../modeling/uml-activity-diagrams-reference.md)|Поток работы между действиями и участниками в рамках бизнес-процесса|  
+|[Схемы компонентов UML: справочник](../modeling/uml-component-diagrams-reference.md)|Компоненты системы, их интерфейсы, порты и отношения|  
+|[Схемы классов UML: справочник](../modeling/uml-class-diagrams-reference.md)|Типы, используемые для хранения данных  и их отношений и обмена ими в системе|  
+|[Схемы последовательностей UML: справочник](../modeling/uml-sequence-diagrams-reference.md)|Последовательности взаимодействий между объектами, компонентами, системами или субъектами|  
+|[Схемы вариантов использования UML: справочник](../modeling/uml-use-case-diagrams-reference.md)|Цели и задачи пользователей, поддерживаемые системой|  
   
  Чтобы узнать, какие версии Visual Studio поддерживают разные типы схем, см. в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -72,7 +67,7 @@ ms.locfileid: "51745131"
   
 |**Схема**|**Что показывает**|  
 |-----------------|---------------|  
-|[Схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Схемы слоев: справочные материалы](../modeling/layer-diagrams-reference.md)|Высокоуровневая архитектура системы|  
+|[Схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Схемы слоев: справочник](../modeling/layer-diagrams-reference.md)|Высокоуровневая архитектура системы|  
 |Карты кода<br /><br /> [Сопоставление зависимостей во всех решениях](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)|Зависимости и другие отношения в имеющемся коде|  
 |Схемы классов, созданные кодом<br /><br /> [Работа со схемами классов (конструктор классов)](../ide/working-with-class-diagrams-class-designer.md)|Типы и их отношения в коде .NET|  
   
@@ -96,7 +91,7 @@ ms.locfileid: "51745131"
 |[Моделирование требований пользователей](../modeling/model-user-requirements.md)|Используйте модели для уточнения потребностей пользователей и передачи информации о них.|  
 |[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|Используйте модели, чтобы описать общую структуру и поведение системы, а также обеспечить ее соответствие потребностям пользователей.|  
 |[Проверка системы в ходе разработки](../modeling/validate-your-system-during-development.md)|Убедитесь, что программное обеспечение соответствует потребностям пользователей и общей архитектуре системы.|  
-|[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)<br /><br /> [Использование моделей в гибкой разработке](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Используйте модели, чтобы изучить и изменить систему во время разработки.|  
+|[Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)<br /><br /> [Использование моделей в гибкой разработке](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Используйте модели, чтобы изучить и изменить систему во время разработки.|  
 |[Разработка структуры решения моделирования](../modeling/structure-your-modeling-solution.md)|Упорядочивайте модели в рамках проекта большого или среднего размера.|  
   
 ## <a name="external-resources"></a>Внешние ресурсы  
@@ -104,6 +99,3 @@ ms.locfileid: "51745131"
 |**Категория**|**Links**|  
 |------------------|---------------|  
 |**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-
-
-

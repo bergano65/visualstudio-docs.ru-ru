@@ -1,26 +1,21 @@
 ---
-title: 'Пошаговое руководство: Отображение завершения операторов | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отображение завершения операторов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097cb671e15b75edd7e61f7860cf3a0c03123c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202011"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Пошаговое руководство. Отображение завершения операторов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +33,13 @@ ms.locfileid: "51733037"
   
 #### <a name="to-create-a-mef-project"></a>Создание проекта MEF  
   
-1.  Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `CompletionTest`.  
+1. Создайте проект VSIX C#. (В **новый проект** диалоговом окне выберите **Visual C# / Extensibility**, затем **проект VSIX**.) Назовите решение `CompletionTest`.  
   
-2.  Добавьте в проект шаблон элемента классификатора редактора. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Добавьте в проект шаблон элемента классификатора редактора. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Удалите файлы существующих классов.  
+3. Удалите файлы существующих классов.  
   
-4.  Добавьте следующие ссылки в проект и убедитесь, что **CopyLocal** присваивается `false`:  
+4. Добавьте следующие ссылки в проект и убедитесь, что **CopyLocal** присваивается `false`:  
   
      Microsoft.VisualStudio.Editor  
   
@@ -63,39 +58,39 @@ ms.locfileid: "51733037"
   
 #### <a name="to-implement-the-completion-source"></a>Для реализации источник завершения  
   
-1.  Добавьте файл класса с именем `TestCompletionSource`.  
+1. Добавьте файл класса с именем `TestCompletionSource`.  
   
-2.  Добавьте эти объекты импорта:  
+2. Добавьте эти объекты импорта:  
   
      [!code-csharp[VSSDKCompletionTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#1)]
      [!code-vb[VSSDKCompletionTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#1)]  
   
-3.  Измените объявление класса для `TestCompletionSource` таким образом, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:  
+3. Измените объявление класса для `TestCompletionSource` таким образом, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:  
   
      [!code-csharp[VSSDKCompletionTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#2)]
      [!code-vb[VSSDKCompletionTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#2)]  
   
-4.  Добавьте закрытые поля для поставщика источника, текстовый буфер и список <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> объектов (соответствующие идентификаторы, которые будут участвовать в сеанс завершения):  
+4. Добавьте закрытые поля для поставщика источника, текстовый буфер и список <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> объектов (соответствующие идентификаторы, которые будут участвовать в сеанс завершения):  
   
      [!code-csharp[VSSDKCompletionTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#3)]
      [!code-vb[VSSDKCompletionTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#3)]  
   
-5.  Добавьте конструктор, который задает поставщик источника и буфера. `TestCompletionSourceProvider` Класс определен в следующих шагах:  
+5. Добавьте конструктор, который задает поставщик источника и буфера. `TestCompletionSourceProvider` Класс определен в следующих шагах:  
   
      [!code-csharp[VSSDKCompletionTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#4)]
      [!code-vb[VSSDKCompletionTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#4)]  
   
-6.  Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> метод путем добавления набора завершений, который содержит завершения требуется предоставить в контексте. Каждый набор завершения содержит набор <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> завершений и соответствует вкладке окна завершения. (В проектах Visual Basic, имеют имена вкладкам окна завершения **распространенных** и **все**.) Метод FindTokenSpanAtPosition определяется на следующем шаге.  
+6. Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> метод путем добавления набора завершений, который содержит завершения требуется предоставить в контексте. Каждый набор завершения содержит набор <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> завершений и соответствует вкладке окна завершения. (В проектах Visual Basic, имеют имена вкладкам окна завершения **распространенных** и **все**.) Метод FindTokenSpanAtPosition определяется на следующем шаге.  
   
      [!code-csharp[VSSDKCompletionTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#5)]
      [!code-vb[VSSDKCompletionTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#5)]  
   
-7.  Следующий метод используется для поиска текущего слова начиная с позиции курсора:  
+7. Следующий метод используется для поиска текущего слова начиная с позиции курсора:  
   
      [!code-csharp[VSSDKCompletionTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#6)]
      [!code-vb[VSSDKCompletionTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#6)]  
   
-8.  Реализуйте `Dispose()` метод:  
+8. Реализуйте `Dispose()` метод:  
   
      [!code-csharp[VSSDKCompletionTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#7)]
      [!code-vb[VSSDKCompletionTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#7)]  
@@ -105,17 +100,17 @@ ms.locfileid: "51733037"
   
 #### <a name="to-implement-the-completion-source-provider"></a>Реализация поставщика источника завершения  
   
-1.  Добавьте класс с именем `TestCompletionSourceProvider` , реализующий <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Экспорт этого класса с <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текста» и <xref:Microsoft.VisualStudio.Utilities.NameAttribute> «завершения теста».  
+1. Добавьте класс с именем `TestCompletionSourceProvider` , реализующий <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Экспорт этого класса с <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текста» и <xref:Microsoft.VisualStudio.Utilities.NameAttribute> «завершения теста».  
   
      [!code-csharp[VSSDKCompletionTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#8)]
      [!code-vb[VSSDKCompletionTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#8)]  
   
-2.  Импорт <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, который используется для поиска в источнике завершения текущего слова.  
+2. Импорт <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, который используется для поиска в источнике завершения текущего слова.  
   
      [!code-csharp[VSSDKCompletionTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#9)]
      [!code-vb[VSSDKCompletionTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#9)]  
   
-3.  Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> метод для создания экземпляра источника завершения.  
+3. Реализуйте <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> метод для создания экземпляра источника завершения.  
   
      [!code-csharp[VSSDKCompletionTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#10)]
      [!code-vb[VSSDKCompletionTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#10)]  
@@ -125,24 +120,24 @@ ms.locfileid: "51733037"
   
 #### <a name="to-implement-the-completion-command-handler-provider"></a>Реализация поставщика обработчик завершения команды  
   
-1.  Добавьте в файл с именем `TestCompletionCommandHandler`.  
+1. Добавьте в файл с именем `TestCompletionCommandHandler`.  
   
-2.  Добавьте следующие операторы using:  
+2. Добавьте следующие операторы using:  
   
      [!code-csharp[VSSDKCompletionTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#11)]
      [!code-vb[VSSDKCompletionTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#11)]  
   
-3.  Добавьте класс с именем `TestCompletionHandlerProvider` , реализующий <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Экспорт этого класса с <xref:Microsoft.VisualStudio.Utilities.NameAttribute> «обработчика маркера завершения», <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текста» и <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> из <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.  
+3. Добавьте класс с именем `TestCompletionHandlerProvider` , реализующий <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Экспорт этого класса с <xref:Microsoft.VisualStudio.Utilities.NameAttribute> «обработчика маркера завершения», <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> «текста» и <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> из <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.  
   
      [!code-csharp[VSSDKCompletionTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#12)]
      [!code-vb[VSSDKCompletionTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#12)]  
   
-4.  Импорт <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, который включает преобразование из <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>и <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> , разрешающий доступ к стандартным службам Visual Studio.  
+4. Импорт <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, который включает преобразование из <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> для <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>и <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> , разрешающий доступ к стандартным службам Visual Studio.  
   
      [!code-csharp[VSSDKCompletionTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#13)]
      [!code-vb[VSSDKCompletionTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#13)]  
   
-5.  Реализуйте <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> метод для создания экземпляра обработчика команды.  
+5. Реализуйте <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> метод для создания экземпляра обработчика команды.  
   
      [!code-csharp[VSSDKCompletionTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#14)]
      [!code-vb[VSSDKCompletionTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#14)]  
@@ -200,14 +195,13 @@ ms.locfileid: "51733037"
   
 #### <a name="to-build-and-test-the-completiontest-solution"></a>Построение и тестирование решения CompletionTest  
   
-1.  Постройте решение.  
+1. Постройте решение.  
   
-2.  При запуске этого проекта в отладчике создается второй экземпляр Visual Studio.  
+2. При запуске этого проекта в отладчике создается второй экземпляр Visual Studio.  
   
-3.  Создайте текстовый файл и введите текст, который включает слово «добавить».  
+3. Создайте текстовый файл и введите текст, который включает слово «добавить».  
   
-4.  При вводе сначала «a» и затем «d», должен отображаться список, содержащий «сложение» и «адаптации». Обратите внимание на то, что выбран сложения. При вводе другой «d», этот список должен содержать только «дополнение», который теперь можно выбрать. Можно зафиксировать «дополнение», нажав клавишу ПРОБЕЛ, Tab или ввод или закрыть список, введя Esc или любую другую клавишу.  
+4. При вводе сначала «a» и затем «d», должен отображаться список, содержащий «сложение» и «адаптации». Обратите внимание на то, что выбран сложения. При вводе другой «d», этот список должен содержать только «дополнение», который теперь можно выбрать. Можно зафиксировать «дополнение», нажав клавишу ПРОБЕЛ, Tab или ввод или закрыть список, введя Esc или любую другую клавишу.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Пошаговое руководство: связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

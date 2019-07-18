@@ -1,7 +1,6 @@
 ---
 title: Страница публикации в конструкторе проектов
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
@@ -10,15 +9,15 @@ helpviewer_keywords:
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ff0600efbb591e8646c5369aa255e7ce153b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968894"
 ---
 # <a name="publish-page-project-designer"></a>Страница публикации в конструкторе проектов
 Страница **Публикация** **конструктора проектов** используется для настройки свойств развертывания ClickOnce.
@@ -27,7 +26,6 @@ ms.locfileid: "53911420"
 
 > [!NOTE]
 > Некоторые описанные здесь свойства ClickOnce можно также задать в **мастере публикаций**, доступном в меню **Сборка**, либо нажав кнопку **Мастер публикаций** на этой странице.
-
 
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
  **Расположение папки публикации**

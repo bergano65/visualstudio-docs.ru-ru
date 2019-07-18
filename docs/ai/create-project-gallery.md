@@ -1,5 +1,5 @@
 ---
-title: Создание проекта в инструментах Visual Studio для сценариев ИИ
+title: Создание проекта
 description: Создание проекта с помощью образца из коллекции Машинного обучения Azure
 keywords: ии, visual studio, машинное обучение azure
 author: lisawong19
@@ -7,18 +7,16 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5694bfe49e88d0ea5911e72abba842e98f54e373
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538072"
 ---
-## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Создание проекта ИИ с помощью коллекции машинного обучения Azure в Visual Studio
+# <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Создание проекта ИИ с помощью коллекции машинного обучения Azure в Visual Studio
 
 Машинное обучение Azure интегрировано с инструментами Visual Studio для сценариев ИИ. Вы можете использовать его для отправки заданий машинного обучения на удаленные целевые вычислительные ресурсы, например виртуальные машины Azure, кластеры Spark и т. д. Дополнительные сведения об [экспериментировании в машинном обучении Azure](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration)
 

@@ -1,7 +1,6 @@
 ---
 title: CA2105. Поля массивов не должны быть доступны только для чтения
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2105
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0bdc3421-3ceb-4182-b30c-a992fbfcc35d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0969147ce4f454f7720f26f72b46cab6e91c37bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f8a02ae357dbf36cb4d3e4bd21aaad0fed3a320
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937984"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586576"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105. Поля массивов не должны быть доступны только для чтения
 
@@ -75,6 +74,10 @@ ms.locfileid: "53937984"
 Before tampering: Grades: 90, 90, 90 Private Grades: 90, 90, 90  Secure Grades, 90, 90, 90
 After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades, 90, 90, 90
 ```
+
+## <a name="related-rules"></a>Связанные правила
+
+- [CA2104: Не объявляйте чтения только изменяемые ссылочные типы](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)
 
 ## <a name="see-also"></a>См. также
 

@@ -1,25 +1,20 @@
 ---
 title: Исходный код L2DBForm.xaml.cs | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 5a40dad3-6763-4576-b3ad-874df3f2c8d9
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6ac13d8998972ddf60576537f8b0af55d832d820
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ba6262ef3174428dc14c5f747c4346b5f04e35ee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428005"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +24,9 @@ ms.locfileid: "49817541"
 ## <a name="data-members"></a>Элементы данных  
  Для обеспечения связи этого класса с ресурсами окна из L2DBForm.xaml используются два закрытых элемента данных.  
   
--   Переменная пространства имен `myBooks` инициализируется значением `"http://www.mybooks.com"`.  
+- Переменная пространства имен `myBooks` инициализируется значением `"http://www.mybooks.com"`.  
   
--   Элемент `bookList` инициализируется в конструкторе строкой CDATA из L2DBForm.xaml с помощью следующего кода:  
+- Элемент `bookList` инициализируется в конструкторе строкой CDATA из L2DBForm.xaml с помощью следующего кода:  
   
     ```  
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;  
@@ -40,11 +35,11 @@ ms.locfileid: "49817541"
 ## <a name="onaddbook-event-handler"></a>Обработчик события OnAddBook  
  В этом методе содержатся следующие три инструкции.  
   
--   Первая условная инструкция используется для проверки правильности ввода.  
+- Первая условная инструкция используется для проверки правильности ввода.  
   
--   Во второй инструкции создается элемент <xref:System.Xml.Linq.XElement> из строковых значений, введенных пользователем в разделе пользовательского интерфейса **Add New Book**.  
+- Во второй инструкции создается элемент <xref:System.Xml.Linq.XElement> из строковых значений, введенных пользователем в разделе пользовательского интерфейса **Add New Book**.  
   
--   В третьей инструкции происходит добавление этого нового элемента в поставщик данных L2DBForm.xaml. Следовательно, благодаря динамической привязке данных происходит автоматическое обновление пользовательского интерфейса с учетом этого нового элемента, поэтому дополнительный пользовательский код не требуется.  
+- В третьей инструкции происходит добавление этого нового элемента в поставщик данных L2DBForm.xaml. Следовательно, благодаря динамической привязке данных происходит автоматическое обновление пользовательского интерфейса с учетом этого нового элемента, поэтому дополнительный пользовательский код не требуется.  
   
 ## <a name="onremove-event-handler"></a>Обработчик события OnRemove  
  Обработчик события `OnRemove` сложнее обработчика события `OnAddBook` по двум причинам. Во-первых, необработанный код XML содержит сохраненные пробелы, поэтому в записи книги следует также удалить соответствующие символы перевода строки. Во-вторых, выделение, которое относилось к удаленному элементу, для удобства переустанавливается на предыдущий элемент в списке.  
@@ -143,8 +138,5 @@ namespace LinqToXmlDataBinding {
  Сведения о связанном источнике данных XAML для этих обработчиков см. в статье [L2DBForm.xaml Source Code](../designers/l2dbform-xaml-source-code.md) (Исходный код L2DBForm.xaml)  
   
 ## <a name="see-also"></a>См. также  
- [Walkthrough: LinqToXmlDataBinding Example](../designers/walkthrough-linqtoxmldatabinding-example.md)  (Пошаговое руководство. Пример LinqToXmlDataBinding)  
+ [Пошаговое руководство: Пример LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [Исходный код L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)
-
-
-

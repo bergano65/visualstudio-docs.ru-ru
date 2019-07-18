@@ -1,14 +1,9 @@
 ---
-title: Недопустимый символ (JavaScript) | Документы Microsoft
-ms.custom: ''
+title: Недопустимый символ (JavaScript) | Документация Майкрософт
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1014
 dev_langs:
@@ -16,29 +11,28 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c91e755b9a52deade5d5d5d24c0a7f28310c4425
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6ec548ff629663e647d2d153ff87caa4edb1dd21
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007143"
 ---
 # <a name="invalid-character-javascript"></a>Недопустимый символ (JavaScript)
-Композицию идентификатора с помощью символ (или символы) не является допустимым путем [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] компилятора. Допустимые символы используются следующие правила:  
+Созданные идентификатор с помощью символа (или символы) не является допустимым значением, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] компилятора. Допустимые символы используйте следующие правила:  
   
--   Первый символ должен быть буквой ASCII (в верхнем или нижнем регистре) или символ подчеркивания (_).  
+- Первый символ должен быть буквой ASCII (в верхнем или нижнем регистре) или символ подчеркивания (_).  
   
--   Последующие символы могут быть ASCII буквы, цифры и знаки подчеркивания.  
+- Последующие символы могут быть ASCII буквы, цифры и символы подчеркивания.  
   
--   Имя идентификатора не может быть зарезервированным словом.  
+- Имя идентификатора не может быть зарезервированным словом.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Старайтесь не использовать символы, которые не являются частью [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] определение языка.  
+- Старайтесь не использовать символы, которые не являются частью [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] определение языка.  
   
 ## <a name="see-also"></a>См. также  
  [Переменные](../../javascript/variables-javascript.md)   

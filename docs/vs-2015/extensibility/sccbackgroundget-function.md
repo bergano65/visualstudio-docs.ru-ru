@@ -1,14 +1,9 @@
 ---
 title: Функция SccBackgroundGet | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccBackgroundGet
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a2b56f2a094a736e93d9bef7074939855d0e60ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 118d8458fd9581a87baea08452d0011d4d66c9a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432477"
 ---
 # <a name="sccbackgroundget-function"></a>Функция SccBackgroundGet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ SCCRTN SccBackgroundGet(
  [in, out] Массив имен файлов, которые требуется получить.  
   
 > [!NOTE]
->  Имена должны быть полное локальные имена файлов.  
+> Имена должны быть полное локальные имена файлов.  
   
  dwFlags  
  [in] Команда флаги (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
@@ -63,7 +58,7 @@ SCCRTN SccBackgroundGet(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Операция успешно завершена.|  
 |SCC_E_BACKGROUNDGETINPROGRESS|Получение фона уже выполняется (подключаемый модуль системы управления версиями вы получите это только в том случае, если он не поддерживает одновременное пакетных операций).|  
@@ -77,4 +72,3 @@ SCCRTN SccBackgroundGet(
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGet](../extensibility/sccget-function.md)
-

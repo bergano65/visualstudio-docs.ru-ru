@@ -1,7 +1,6 @@
 ---
 title: Как выполнить Добавление комментариев в диаграммы классов (конструктор классов)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff9069392fe3c5a3505128788458916ed78c01f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975532"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Как выполнить Добавление комментариев в диаграммы классов
 
@@ -32,9 +31,9 @@ ms.locfileid: "53916378"
 
 ## <a name="to-add-a-comment"></a>Добавление комментария
 
-1.  Перетащите комментарий из **панели инструментов конструктора классов** на схему классов.
+1. Перетащите комментарий из **панели инструментов конструктора классов** на схему классов.
 
-2.  Щелкните новую фигуру комментария на схеме и введите нужный текст.
+2. Щелкните новую фигуру комментария на схеме и введите нужный текст.
 
 ## <a name="see-also"></a>См. также
 

@@ -1,16 +1,17 @@
 ---
 title: Практическое руководство. Открытие нескольких решений в Visual Studio для Mac
 description: Узнайте, как открыть несколько решений в Visual Studio для Mac и несколько экземпляров приложения.
-author: conceptdev
-ms.author: crdun
-ms.date: 07/19/2018
+author: heiligerdankgesang
+ms.author: dominicn
+ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
-ms.openlocfilehash: 76a536f621a3c715a62b9e132dc661a2bcf8eb07
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 479ef72d2f14d0d1f9de5d193ca76ae2c6128daa
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294933"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691385"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Открытие нескольких решений или экземпляров Visual Studio для Mac
 
@@ -20,11 +21,9 @@ ms.locfileid: "51294933"
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Открытие еще одного экземпляра Visual Studio для Mac
 
-Чтобы открыть еще один экземпляр интегрированной среды разработки (IDE), откройте приложение **Терминал** и введите следующую строку:
+Чтобы открыть второй экземпляр интегрированной среде разработки (IDE), щелкните правой кнопкой мыши значок Visual Studio в закрепленном элементе или папке **Приложения** и выберите **Новый экземпляр**.
 
-```bash
-open -n "/Applications/Visual Studio.app"
-```
+![Снимок экрана: пункт меню "Новый экземпляр" при щелчке правой кнопкой мыши на значке Visual Studio](media/open-new-instance.png)
 
 ## <a name="open-a-second-solution-inside-a-single-instance"></a>Открытие еще одного решения в одном экземпляре
 
@@ -44,8 +43,12 @@ open -n "/Applications/Visual Studio.app"
 
 Кроме того, если решение открывалось недавно, можно выполнить указанные ниже действия.
 
-1. Выберите **File (Файл)** > **Recent Solutions (Последние решения)**.
+1. Выберите **File (Файл)**  > **Recent Solutions (Последние решения)** .
 
     ![Снимок экрана меню Recent Solutions (Последние решения)](media/open-multiple-solutions-image2.png)
 
 1. Удерживайте клавишу **CTRL** и выберите решение. В результате на Панели решения откроется еще одно решение.
+
+## <a name="related-video"></a>Связанные видео
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Work-With-Multiple-Solutions/player]

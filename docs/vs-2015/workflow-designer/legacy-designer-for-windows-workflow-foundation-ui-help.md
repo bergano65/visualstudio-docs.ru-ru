@@ -1,11 +1,8 @@
 ---
 title: Конструктор прежних версий для Справка по пользовательскому Интерфейсу Windows Workflow Foundation | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - UI reference
@@ -15,13 +12,13 @@ ms.assetid: b3a0104f-4485-45ac-9794-82d54e45fb09
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 069c9e8947ec7095c701e560343d37077b060a2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c24816e84be2ef8f3460a04f689ecfda5400518e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000139"
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Справка по интерфейсу пользователя конструктора прежних версий для Windows Workflow Foundation
 В этом разделе содержатся разделы контекстной Справки, относящиеся к средству [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий в [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Используйте конструктор прежних версий, если приложение ориентируется на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

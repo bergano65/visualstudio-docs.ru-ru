@@ -13,64 +13,62 @@ helpviewer_keywords:
 ms.assetid: c3275e69-a427-4889-bc1d-51bff2c285fa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a531073ba6f2f55272b719a116caad724d29e53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d10b2e08b6e3f3c94c0a1f0cc1c24d239675c53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999773"
 ---
 # <a name="parametergroup-element"></a>Элемент ParameterGroup
-Содержит необязательный список параметров, которые будут присутствовать в задаче, созданной `UsingTask` `TaskFactory`. Дополнительные сведения см. в статье [Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+Содержит необязательный список параметров, которые будут присутствовать в задаче, созданной `UsingTask` `TaskFactory`. Дополнительные сведения см. в статье [Элемент UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project>  
- \<UsingTask>  
- \<ParameterGroup>  
+ \<Project> \<UsingTask> \<ParameterGroup>
 
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Синтаксис
 
-```xml  
-<ParameterGroup />  
-```  
+```xml
+<ParameterGroup />
+```
 
-## <a name="attributes-and-elements"></a>Элементы и атрибуты  
- В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
-### <a name="attributes"></a>Атрибуты  
- Отсутствует.  
+### <a name="attributes"></a>Атрибуты
+ Отсутствует.
 
-### <a name="child-elements"></a>Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание|  
-|-------------|-----------------|  
-|[Параметр](../msbuild/parameter-element.md)|Содержит сведения о конкретном параметре для задачи, созданной `UsingTask` `TaskFactory`. Имя элемента — это имя параметра.|  
+|Элемент|Описание|
+|-------------|-----------------|
+|[Параметр](../msbuild/parameter-element.md)|Содержит сведения о конкретном параметре для задачи, созданной `UsingTask` `TaskFactory`. Имя элемента — это имя параметра.|
 
-### <a name="parent-elements"></a>Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы
 
 | Элемент | Описание |
 | - | - |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Предоставляет способ регистрации задач в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Проект может содержать любое число элементов `UsingTask`, включая ноль. |
 
-## <a name="example"></a>Пример  
- В следующем примере показано использование элемента `ParameterGroup`.  
+## <a name="example"></a>Пример
+ В следующем примере показано использование элемента `ParameterGroup`.
 
-```xml  
-<UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">  
-       <ParameterGroup>  
-              <Parameter1 ParameterType="System.String" Required="False" Output="False"/>  
-              <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>  
-             ...  
-</ParameterGroup>  
-       <TaskBody Evaluate="true">  
-      ... Task factory-specific data ...  
-       </TaskBody>  
-</UsingTask>  
-```  
+```xml
+<UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">
+       <ParameterGroup>
+              <Parameter1 ParameterType="System.String" Required="False" Output="False"/>
+              <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
+             ...
+</ParameterGroup>
+       <TaskBody Evaluate="true">
+      ... Task factory-specific data ...
+       </TaskBody>
+</UsingTask>
+```
 
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>См. также
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

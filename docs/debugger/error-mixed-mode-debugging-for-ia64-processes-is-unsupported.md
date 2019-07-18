@@ -11,22 +11,22 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56df416b7142e0ff9f7e96b8c1b2cba6e73b65a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c4414651249aa7622e7f7be59e6150a4925f1b8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850862"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Ошибка: Для процессов IA64 отладка в смешанном режиме не поддерживается
-Отладчик [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не поддерживает отладку смеси управляемого и неуправляемого кода для процессов на базе Itanium.  
-  
-### <a name="to-correct-this-error"></a>Исправление ошибки  
-  
--   Постройте для отладки 32-разрядную версию приложения.  
-  
-## <a name="see-also"></a>См. также раздел  
- [Remote Debugging](../debugger/remote-debugging.md)
+Отладчик [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] не поддерживает отладку смеси управляемого и неуправляемого кода для процессов на базе Itanium.
+
+### <a name="to-correct-this-error"></a>Исправление ошибки
+
+- Постройте для отладки 32-разрядную версию приложения.
+
+## <a name="see-also"></a>См. также
+- [Remote Debugging](../debugger/remote-debugging.md)

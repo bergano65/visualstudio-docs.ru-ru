@@ -2,7 +2,6 @@
 title: Краткое руководство. Создание веб-службы ASP.NET Core в F#
 description: Пошаговые инструкции по созданию веб-службы ASP.NET Core в Visual Studio на F#.
 ms.date: 08/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: cartermp
 ms.author: phcart
@@ -12,26 +11,38 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9cdd97349732b4e228c77ce59990e47a396a0112
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c24803f3817aa8461f9445e390fe44853d2d27c5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953346"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Краткое руководство. Создание первой веб-службы ASP.NET Core на F# с помощью Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Краткое руководство. Создание первой веб-службы ASP.NET Core на F\# с помощью Visual Studio
 
 В этом кратком руководстве по F# в Visual Studio рассматривается создание веб-приложения ASP.NET Core на F#.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+::: moniker range="vs-2017"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Создание проекта
 
 Сначала вы создадите проект веб-API ASP.NET Core. Для этого типа проекта имеются файлы шаблонов, составляющие рабочую веб-службу, — пока вам даже не пришлось ничего делать!
 
-1. Откройте Visual Studio 2017.
+::: moniker range="vs-2017"
 
-2. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
+1. Запустите Visual Studio.
+
+2. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
 3. В левой области диалогового окна **Новый проект** разверните узел **Visual F#** и выберите **Веб**. В средней области выберите **Веб-приложение ASP.NET Core** и нажмите кнопку **ОК**.
 
@@ -40,6 +51,22 @@ ms.locfileid: "53961875"
      ![Рабочая нагрузка ASP.NET в установщике Visual Studio](../ide/media/quickstart-aspnet-workload.png)
 
 4. В верхнем раскрывающемся меню диалогового окна **Создать веб-приложение ASP.NET Core** выберите **ASP.NET Core 2.1**. (Если вы не видите **ASP.NET Core 2.1** в списке, установите его, пройдя по ссылке **скачивание**, которая должна появиться на желтой панели в верхней части диалогового окна.) Нажмите кнопку **ОК**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Запустите Visual Studio.
+
+2. На начальном экране выберите **Создать проект**.
+
+3. На странице **Создание нового проекта** выполните поиск по запросу **f # web** и в результатах выберите шаблон проекта **Веб-приложение ASP.NET Core**. Нажмите кнопку **Далее**.
+
+4. На странице **Настроить новый проект** введите имя и нажмите кнопку **Создать**.
+
+5. В верхнем раскрывающемся меню страницы **Создать веб-приложение ASP.NET Core** выберите **ASP.NET Core 2.1** и нажмите **Создать**.
+
+::: moniker-end
 
 ## <a name="explore-the-ide"></a>Изучение интегрированной среды разработки
 

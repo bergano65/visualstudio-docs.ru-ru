@@ -1,7 +1,6 @@
 ---
 title: Разработка кода без использования проектов и решений
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -9,19 +8,19 @@ helpviewer_keywords:
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1275a5c0ada3ddc12fe4257880e16d130243d0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962486"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Разработка кода в Visual Studio без использования проектов и решений
 
-В Visual Studio 2017 вы можете открыть код практически из любого типа проекта на основе каталога без необходимости в решении или файле проекта. Это значит, что вы можете, например, клонировать репозиторий GitHub, сразу открыть его в Visual Studio и начать разработку, не создавая решение или проект. Если потребуется, вы можете указать настраиваемые задачи сборки и параметры запуска, используя простые файлы JSON.
+Вы можете открыть код практически из любого типа проекта на основе каталога без необходимости в решении или файле проекта. Это значит, что вы можете, например, клонировать репозиторий GitHub, сразу открыть его в Visual Studio и начать разработку, не создавая решение или проект. Если потребуется, вы можете указать настраиваемые задачи сборки и параметры запуска, используя простые файлы JSON.
 
 Когда вы открываете в Visual Studio файлы кода, в **обозревателе решений** отображаются все имеющиеся в папке файлы. Щелкните любой из них, чтобы приступить к изменению. В фоновом режиме Visual Studio индексирует файлы для поддержки функций навигации, рефакторинга и IntelliSense. Когда вы изменяете, создаете и удаляете файлы, Visual Studio автоматически отслеживает эти изменения и постоянно обновляет индекс IntelliSense. Код отображается с цветной маркировкой синтаксиса, и в большинстве случаев поддерживается базовое завершение операторов IntelliSense.
 
@@ -30,9 +29,19 @@ ms.locfileid: "53968476"
 Вы можете открыть в Visual Studio любой код одним из следующих способов:
 
 - В строке меню Visual Studio выберите **Файл** > **Открыть** > **Папка** и перейдите в расположение кода.
+
 - В контекстном меню папки с кодом выберите команду **Открыть в Visual Studio**.
+
+::: moniker range="vs-2017"
 - На **начальной странице** Visual Studio щелкните ссылку **Открыть папку**.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Выберите ссылку **Открыть папку** в начальном окне.
+::: moniker-end
+
 - Если вы предпочитаете работать с клавиатурой, нажмите клавиши **Ctrl**+**Shift**+**Alt**+**O** в Visual Studio.
+
 - Откройте код из клонированного репозитория GitHub.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>Открытие кода из клонированного репозитория GitHub
@@ -62,10 +71,6 @@ ms.locfileid: "53968476"
    ![Показать представление папки](./media/VSIDE_Code_Clone3_show.png)
 
    Теперь вы можете просмотреть папки и файлы в клонированном репозитории, а также просмотреть код и выполнить поиск по нему в редакторе кода Visual Studio, где доступна цветовая маркировка синтаксиса и другие возможности.
-
-| | |
-|---------|---------|
-| ![Значок кинокамеры для видео](../install/media/video-icon.png)| [Посмотрите видео](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) о том, как клонировать и открывать код из репозитория GitHub в Visual Studio. |
 
 ## <a name="run-and-debug-your-code"></a>Выполнение и отладка кода
 
@@ -98,7 +103,7 @@ ms.locfileid: "53968476"
 
 ### <a name="codebases-that-contain-c-code"></a>Базы кода с кодом C++
 
-Сведения о том, как открыть код C++ в Visual Studio без создания решений или проектов, вы найдете в статье [Open Folder projects for C++](/cpp/ide/non-msbuild-projects) (Проекты "Открыть папку" для C++).
+Сведения о том, как открыть код C++ в Visual Studio без создания решений или проектов, вы найдете в статье [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Проекты "Открыть папку" для C++).
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Базы кода, содержащие проект Visual Studio
 
@@ -113,6 +118,6 @@ ms.locfileid: "53968476"
 ## <a name="see-also"></a>См. также
 
 - [Настройка задач сборки и отладки для режима разработки "Открытая папка"](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Open Folder projects for C++](/cpp/ide/non-msbuild-projects) (Проекты "Открыть папку" для C++)
-- [CMake projects in C++](/cpp/ide/cmake-tools-for-visual-cpp) (Проекты CMake в C++)
+- [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Проекты "Открыть папку" для C++)
+- [CMake projects in C++](/cpp/build/cmake-projects-in-visual-studio) (Проекты CMake в C++)
 - [Написание кода в редакторе кода и текста](../ide/writing-code-in-the-code-and-text-editor.md)

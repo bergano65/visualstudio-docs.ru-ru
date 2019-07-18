@@ -1,14 +1,9 @@
 ---
 title: Проекты вложения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project nesting
 - nested projects
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b4ccf51dd492a32990718ffe84bfe78cd736a42c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0e3a0fae42dc7bf1497e3d0d4a9d23f9cab50675
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180410"
 ---
 # <a name="nesting-projects"></a>Проекты вложения
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,13 +36,12 @@ ms.locfileid: "51805214"
 Пример вложенных проектов  
   
 ## <a name="see-also"></a>См. также  
- [Практическое: реализация вложенных проектов](../../extensibility/internals/how-to-implement-nested-projects.md)   
+ [Практическое руководство. Реализация вложенных проектов](../../extensibility/internals/how-to-implement-nested-projects.md)   
  [Рекомендации по выгрузке и перезагрузке вложенных проектов](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
  [Поддержка мастера для вложенных проектов](../../extensibility/internals/wizard-support-for-nested-projects.md)   
  [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Реализация обработки команд для вложенных проектов](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)   
  [Фильтрация диалогового окна AddItem для вложенных проектов](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Контрольный список. Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Параметры контекста](../../extensibility/internals/context-parameters.md)   
  [Файл мастера (VSZ-файл)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

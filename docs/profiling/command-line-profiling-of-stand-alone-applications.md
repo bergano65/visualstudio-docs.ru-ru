@@ -8,20 +8,20 @@ helpviewer_keywords:
 ms.assetid: a47f2bf2-186d-4120-bb79-34e2f3a1ee42
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ef097ca9151b2b318165a7c63ed84c0f85d9322
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcd48f421dcae74e82b0d9249a958f2a834f0a45
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831685"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Профилирование автономных приложений из командной строки
-В этом разделе описываются процедуры и параметры сбора данных о производительности для автономных (клиентских) приложений с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] из командной строки.  
+В этом разделе описываются процедуры и параметры сбора данных о производительности для автономных (клиентских) приложений с помощью средств профилирования [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] из командной строки.
 
-## <a name="common-tasks"></a>Типичные задачи  
+## <a name="common-tasks"></a>Типичные задачи
 
 | Задача | Связанная информация |
 | - | - |
@@ -32,9 +32,9 @@ ms.locfileid: "53820375"
 | **Добавление данных взаимодействия между уровнями.** Можно добавлять данные производительности о синхронных вызовах ADO.NET, выполняемых приложением к базе данных Microsoft [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]. Добавление данных об уровневом взаимодействии в сеанс профилирования требует определенных процедур со средствами профилирования командной строки. | -   [Сбор данных о взаимодействии уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md) |
 | **Экспериментальная проверка.** Использование пошаговых процедур для профилирования примера клиентского приложения с помощью метода выборки или инструментирования. | -   [Пошаговое руководство: Профилирование из командной строки с помощью метода выборки](../profiling/walkthrough-command-line-profiling-using-sampling.md)<br />-   [Пошаговое руководство: Профилирование из командной строки с помощью метода инструментирования](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications) |
 
-## <a name="related-tasks"></a>Связанные задачи  
+## <a name="related-tasks"></a>Связанные задачи
 
-|Задача|Связанное содержимое|  
-|----------|---------------------|  
-|**Профилирование приложений ASP.NET**|-   [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)|  
+|Задача|Связанное содержимое|
+|----------|---------------------|
+|**Профилирование приложений ASP.NET**|-   [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
 |**Профилирование служб**|-   [Профилирование служб](../profiling/command-line-profiling-of-services.md)|

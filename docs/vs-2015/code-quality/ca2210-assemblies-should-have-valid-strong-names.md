@@ -1,14 +1,9 @@
 ---
-title: 'CA2210: Сборки должны иметь допустимые строгие имена | Документация Майкрософт'
-ms.custom: ''
+title: CA2210. Сборки должны иметь допустимые строгие имена | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AssembliesShouldHaveValidStrongNames
 - CA2210
@@ -20,14 +15,14 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1551cccb11fc33a21503e7030cfd671c953ee17d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f94183c6051ed0c2603bbfe35484fabb83a2160f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865821"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697989"
 ---
-# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: сборки должны иметь допустимые строгие имена
+# <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210. Сборки должны иметь допустимые строгие имена
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -72,7 +67,7 @@ ms.locfileid: "49865821"
 
 - Для [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v1.0 и v1.1, используйте либо <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> или <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> атрибута.
 
-- Для [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], либо использовать `/keyfile` или `/keycontainer` параметр компилятора [/keyfile (определение ключа или пары ключей для подписи сборки)](http://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) или  [ /keycontainer (определение контейнера ключей для подписи сборки)](http://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) параметров компоновщика с ++).
+- Для [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], либо использовать `/keyfile` или `/keycontainer` параметр компилятора [/keyfile (определение ключа или пары ключей для подписи сборки)](https://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06) или  [ /keycontainer (определение контейнера ключей для подписи сборки)](https://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) параметров компоновщика с ++).
 
   **Чтобы подписать сборку строгим именем в Visual Studio**
 
@@ -94,14 +89,11 @@ ms.locfileid: "49865821"
 
    **Чтобы подписать сборку строгим именем вне Visual Studio**
 
--   Используйте средство строгих имен (Sn.exe), предоставляемый [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Дополнительные сведения см. на странице [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) (Sn.exe: средство строгих имен).
+- Используйте средство строгих имен (Sn.exe), предоставляемый [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Дополнительные сведения см. на странице [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) (Sn.exe: средство строгих имен).
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Только подавить предупреждение из этого правила, если сборка используется в среде, где незаконное содержимое не имеет значения.
 
 ## <a name="see-also"></a>См. также
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
- [Практическое: Подписание сборки строгим именем](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (средство строгих имен)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)
-
-
-
+ [Практическое руководство. Подписать сборку строгим именем](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [Sn.exe (средство строгих имен)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)

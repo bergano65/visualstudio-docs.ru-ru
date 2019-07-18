@@ -1,25 +1,22 @@
 ---
 title: Служебные методы для текстовых шаблонов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, utility methods
 ms.assetid: 8c11f9f7-678b-4f0c-b634-dc78fda699d1
 caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4a9c5a0b4b6c85a301c5d3a0e12ad3687f54aeb0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e69bd59782c2caa1dcb878df4e5316df798b0f21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186307"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680979"
 ---
 # <a name="text-template-utility-methods"></a>Служебные методы для текстовых шаблонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +24,7 @@ ms.locfileid: "49186307"
 Существует несколько методов, которые всегда доступны для вас при написании кода [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] текстового шаблона. Эти методы определяются в <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
->  Можно также использовать другие методы и служб, предоставляемых средой узла в шаблоне регулярных (без предварительной обработки) текста. Например, можно разрешить пути к файлам, ведения журнала ошибок и получить службы, предоставляемые [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и любой загруженных пакетов.  Дополнительные сведения см. в разделе [доступ к Visual Studio из текстового шаблона](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Можно также использовать другие методы и служб, предоставляемых средой узла в шаблоне регулярных (без предварительной обработки) текста. Например, можно разрешить пути к файлам, ведения журнала ошибок и получить службы, предоставляемые [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и любой загруженных пакетов.  Дополнительные сведения см. в разделе [доступ к Visual Studio из текстового шаблона](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ## <a name="write-methods"></a>Написание методов  
  Можно использовать `Write()` и `WriteLine()` методы можно добавлять текст в стандартный блок кода, вместо использования блока кода выражения. В следующих блоках кода функционально эквивалентны.  
@@ -136,6 +133,3 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 ```  
   
  Используйте `assembly` директива для ссылки на сборку, где находится скомпилированный класс.
-
-
-

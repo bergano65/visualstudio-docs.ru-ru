@@ -1,26 +1,27 @@
 ---
 title: Сочетания клавиш по умолчанию для часто используемых команд
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4efad136af68b290465b614fef7877538938852f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 72e010d76188be1ebe07eb9400b7cde60c2bf0a6
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889860"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043326"
 ---
-# <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Сочетания клавиш по умолчанию для часто используемых команд в Visual Studio
+# <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Популярные сочетания клавиш в Visual Studio
 
 Для доступа к часто используемым командам Visual Studio можно использовать следующие сочетания клавиш по умолчанию. Полный список команд, которые имеют сочетания клавиш по умолчанию, см. в статье [Сочетания клавиш по умолчанию](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
+*Глобальный* контекст означает, что сочетание применяется в любом окне инструментов в Visual Studio.
+
 > [!NOTE]
-> Сочетание клавиш для той или иной команды можно определить, открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**.
+> Сочетание клавиш для той или иной команды можно [определить](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md), открыв диалоговое окно **Параметры**, развернув узел **Среда** и выбрав элемент **Клавиатура**.
 
 ## <a name="build"></a>Построить
 
@@ -39,7 +40,7 @@ ms.locfileid: "53889860"
 |Debug.BreakAll|**CTRL+ALT+BREAK** [глобальный]|
 |Debug.DeleteAllBreakpoints|**CTRL+SHIFT+F9** [глобальный]|
 |Debug.Exceptions|**CTRL+ALT+E** [глобальный]|
-|Debug.QuickWatch|**CTRL+ALT+Q** [глобальный]<br /><br /> или **SHIFT+F9** [глобальный]|
+|Debug.QuickWatch|**CTRL+ALT+Q** [глобальный]<br /><br />или **SHIFT+F9** [глобальный]|
 |Debug.Restart|**CTRL+SHIFT+F5** [глобальный]|
 |Debug.RunToCursor|**CTRL+F10** [глобальный]|
 |Debug.SetNextStatement|**CTRL+SHIFT+F10** [глобальный]|
@@ -55,13 +56,13 @@ ms.locfileid: "53889860"
 
 |Команды|Сочетания клавиш [контексты]|
 |--------------| - |
-|Edit.BreakLine|**ВВОД** [текстовый редактор, конструктор отчетов, конструктор Windows Forms]<br /><br /> или **SHIFT+ВВОД** [текстовый редактор]|
+|Edit.BreakLine|**ВВОД** [текстовый редактор, конструктор отчетов, конструктор Windows Forms]<br /><br />или **SHIFT+ВВОД** [текстовый редактор]|
 |Edit.CollapseToDefinitions|**CTRL+M**, **CTRL+O** [текстовый редактор]|
 |Edit.CommentSelection|**CTRL+K**, **CTRL+C** [текстовый редактор]|
-|Edit.CompleteWord|**ALT+СТРЕЛКА ВПРАВО** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+ПРОБЕЛ** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+K**, **W** [конструктор рабочих процессов]<br /><br /> или **CTRL+K, CTRL+W** [конструктор рабочих процессов]|
-|Edit.Copy|**CTRL+C** [глобальный]<br /><br /> или **CTRL+INSERT** [глобальный]|
-|Edit.Cut|**CTRL+X** [глобальный]<br /><br /> или **SHIFT+DELETE** [глобальный]|
-|Edit.Delete|**DELETE** [глобальный, Team Explorer]<br /><br /> или **SHIFT+DELETE** [схема последовательностей, схема действий UML, схема слоев]<br /><br /> или **CTRL+DELETE** [схема классов]|
+|Edit.CompleteWord|**ALT+СТРЕЛКА ВПРАВО** [текстовый редактор, конструктор рабочих процессов]<br /><br />или **CTRL+ПРОБЕЛ** [текстовый редактор, конструктор рабочих процессов]<br /><br />или **CTRL+K**, **W** [конструктор рабочих процессов]<br /><br />или **CTRL+K, CTRL+W** [конструктор рабочих процессов]|
+|Edit.Copy|**CTRL+C** [глобальный]<br /><br />или **CTRL+INSERT** [глобальный]|
+|Edit.Cut|**CTRL+X** [глобальный]<br /><br />или **SHIFT+DELETE** [глобальный]|
+|Edit.Delete|**DELETE** [глобальный, Team Explorer]<br /><br />или **SHIFT+DELETE** [схема последовательностей, схема действий UML, схема слоев]<br /><br />или **CTRL+DELETE** [схема классов]|
 |Edit.Find|**CTRL+F** [глобальный]|
 |Edit.FindAllReferences|**SHIFT+F12** [глобальный]|
 |Edit.FindinFiles|**CTRL+SHIFT+F** [глобальный]|
@@ -79,14 +80,14 @@ ms.locfileid: "53889860"
 |Edit.LineCut|**CTRL+L** [текстовый редактор]|
 |Edit.LineDownExtendColumn|**SHIFT+ALT+СТРЕЛКА ВНИЗ** [текстовый редактор]|
 |Edit.LineOpenAbove|**CTRL+ВВОД** [текстовый редактор]|
-|Edit.ListMembers|**CTRL+J** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+K, CTRL+L** [конструктор рабочих процессов]<br /><br /> или **CTRL+K, L** [конструктор рабочих процессов]|
+|Edit.ListMembers|**CTRL+J** [текстовый редактор, конструктор рабочих процессов]<br /><br />или **CTRL+K, CTRL+L** [конструктор рабочих процессов]<br /><br />или **CTRL+K, L** [конструктор рабочих процессов]|
 |Edit.NavigateTo|**CTRL+,** [глобальный]|
 |Edit.OpenFile|**CTRL+SHIFT+G** [глобальный]|
 |Edit.OvertypeMode|**INSERT** [текстовый редактор]|
-|Edit.ParameterInfo|**CTRL+SHIFT+ПРОБЕЛ** [текстовый редактор, конструктор рабочих процессов]<br /><br /> или **CTRL+K, CTRL+P** [конструктор рабочих процессов]<br /><br /> или **CTRL+K, P** [конструктор рабочих процессов]|
-|Edit.Paste|**CTRL+V** [глобальный]<br /><br /> или **SHIFT+INSERT** [глобальный]|
+|Edit.ParameterInfo|**CTRL+SHIFT+ПРОБЕЛ** [текстовый редактор, конструктор рабочих процессов]<br /><br />или **CTRL+K, CTRL+P** [конструктор рабочих процессов]<br /><br />или **CTRL+K, P** [конструктор рабочих процессов]|
+|Edit.Paste|**CTRL+V** [глобальный]<br /><br />или **SHIFT+INSERT** [глобальный]|
 |Edit.PeekDefinition|**ALT+F12** [текстовый редактор]|
-|Edit.Redo|**CTRL+Y** [глобальный]<br /><br /> или **SHIFT+ALT+BACKSPACE** [глобальный]<br /><br /> или **CTRL+SHIFT+Z** [глобальный]|
+|Edit.Redo|**CTRL+Y** [глобальный]<br /><br />или **SHIFT+ALT+BACKSPACE** [глобальный]<br /><br />или **CTRL+SHIFT+Z** [глобальный]|
 |Edit.Replace|**CTRL+H** [глобальный]|
 |Edit.SelectAll|**CTRL+A** [глобальный]|
 |Edit.SelectCurrentWord|**CTRL+W** [текстовый редактор]|
@@ -98,7 +99,7 @@ ms.locfileid: "53889860"
 |Edit.ToggleCompletionMode|**CTRL+ALT+ПРОБЕЛ** [текстовый редактор]|
 |Edit.ToggleOutliningExpansion|**CTRL+M, CTRL+M** [текстовый редактор]|
 |Edit.UncommentSelection|**CTRL+K, CTRL+U** [текстовый редактор]|
-|Edit.Undo|**CTRL+Z** [глобальный]<br /><br /> или **ALT+BACKSPACE** [глобальный]|
+|Edit.Undo|**CTRL+Z** [глобальный]<br /><br />или **ALT+BACKSPACE** [глобальный]|
 |Edit.WordDeleteToEnd|**CTRL+DELETE** [текстовый редактор]|
 |Edit.WordDeleteToStart|**CTRL+BACKSPACE** [текстовый редактор]|
 
@@ -143,7 +144,7 @@ ms.locfileid: "53889860"
 |--------------| - |
 |View.ClassView|**CTRL+SHIFT+C** [глобальный]|
 |View.EditLabel|**F2** [глобальный]|
-|View.ErrorList|**CTRL+\\, CTRL+E** [глобальный]<br /><br /> или **CTRL+\\, E** [глобальный]|
+|View.ErrorList|**CTRL+\\, CTRL+E** [глобальный]<br /><br />или **CTRL+\\, E** [глобальный]|
 |View.NavigateBackward|**CTRL+-** [глобальный]|
 |View.NavigateForward|**CTRL+SHIFT+-** [глобальный]|
 |View.ObjectBrowser|**CTRL+ALT+J** [глобальный]|
@@ -151,11 +152,11 @@ ms.locfileid: "53889860"
 |View.PropertiesWindow|**F4**|
 |View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**CTRL+ALT+S** [глобальный]|
-|View.ShowSmartTag|**CTRL+.** [Global]<br /><br /> или **SHIFT+ALT+F10** [глобальный, HTML-редактор в конструкторе]|
+|View.ShowSmartTag|**CTRL+.** [Global]<br /><br />или **SHIFT+ALT+F10** [глобальный, HTML-редактор в конструкторе]|
 |View.SolutionExplorer|**CTRL+ALT+L** [глобальный]|
 |View.TfsTeamExplorer|**CTRL+\\, CTRL+M** [глобальный]|
 |View.Toolbox|**CTRL+ALT+X** [глобальный]|
-|View.ViewCode|**ВВОД** [схема классов]<br /><br /> или **F7** [конструктор параметров]|
+|View.ViewCode|**ВВОД** [схема классов]<br /><br />или **F7** [конструктор параметров]|
 |View.ViewDesigner|**SHIFT+F7** [HTML-редактор в представлении кода]|
 
 ## <a name="window"></a>Окно
@@ -171,3 +172,4 @@ ms.locfileid: "53889860"
 ## <a name="see-also"></a>См. также
 
 - [Определение и настройка сочетаний клавиш в Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Все сочетания клавиш в Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

@@ -9,55 +9,59 @@ helpviewer_keywords:
 ms.assetid: a215dc21-b316-40d7-9923-55bfa014976b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b010b60ef911dea970bf68567fc75a8c29e04f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 729b3c323ce2128b18af516ecbffb7b5157f0274
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839372"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
-Извлекает исходные файлы, компилируемого объекта и имя.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT findFile (   
-   IDiaSymbol*           pCompiland,  
-   LPCOLESTR             name,  
-   DWORD                 option,  
-   IDiaEnumSourceFiles** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pCompiland`  
- [in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий единице компиляции для использования в качестве контекста для поиска. Присвойте этому параметру значение `NULL` поиска исходных файлов во всех компилируемых объектах.  
-  
- `name`  
- [in] Задает имя исходного файла, который требуется получить. Присвойте этому параметру значение `NULL` для всех исходных файлов требуется получить.  
-  
- `option`  
- [in] Задает параметры сравнения, который применяется для поиска имени. Значения из [перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) перечисления можно использовать отдельно или в сочетании.  
-  
- `ppResult`  
- [out] Возвращает [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) извлечь объект, содержащий список исходных файлов.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="example"></a>Пример  
-  
-```C++  
-IDiaEnumSourceFiles* pEnum;  
-pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );  
-```  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)
+Извлекает исходные файлы, компилируемого объекта и имя.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT findFile ( 
+   IDiaSymbol*           pCompiland,
+   LPCOLESTR             name,
+   DWORD                 option,
+   IDiaEnumSourceFiles** ppResult
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pCompiland`
+
+[in] [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий единице компиляции для использования в качестве контекста для поиска. Присвойте этому параметру значение `NULL` поиска исходных файлов во всех компилируемых объектах.
+
+ `name`
+
+[in] Задает имя исходного файла, который требуется получить. Присвойте этому параметру значение `NULL` для всех исходных файлов требуется получить.
+
+ `option`
+
+[in] Задает параметры сравнения, который применяется для поиска имени. Значения из [перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) перечисления можно использовать отдельно или в сочетании.
+
+ `ppResult`
+
+[out] Возвращает [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) извлечь объект, содержащий список исходных файлов.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="example"></a>Пример
+
+```C++
+IDiaEnumSourceFiles* pEnum;
+pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );
+```
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Перечисление NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)

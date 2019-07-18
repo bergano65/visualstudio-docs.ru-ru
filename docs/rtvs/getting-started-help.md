@@ -2,19 +2,18 @@
 title: Окно справки для R
 description: Справка по R встроена непосредственно в интерактивное окно в Visual Studio (знак "?") .
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: cd8be6e0b89ae0e110e16bcad9975108fa69bd5b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af6c6156b1d88c1d015f7700fc7bed061bbe9a76
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950603"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Справка в инструментах R для Visual Studio
 

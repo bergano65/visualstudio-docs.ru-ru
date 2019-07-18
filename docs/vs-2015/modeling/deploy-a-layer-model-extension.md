@@ -1,12 +1,9 @@
 ---
 title: Развертывание расширения модели слоев | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, deploying extensions
 - layer models, deploying extensions
@@ -14,13 +11,13 @@ ms.assetid: 00a4675b-d20e-487e-8fd5-be2b1e0ba238
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a31413f5332ddfec8dc6021da85e2135d691f930
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a58adf1be92655a6ca7846e8c1d7ea41515b7109
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422667"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Развертывание расширения модели слоев
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,43 +39,40 @@ ms.locfileid: "51735126"
   
 #### <a name="to-uninstall-the-extension"></a>Удаление расширения  
   
-1.  В Visual Studio на **средства** меню, щелкните **расширения и обновления**.  
+1. В Visual Studio на **средства** меню, щелкните **расширения и обновления**.  
   
-2.  Щелкните имя расширения и нажмите кнопку **удаления**.  
+2. Щелкните имя расширения и нажмите кнопку **удаления**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Установка расширения на сервере Team Foundation Build  
  Как правило, на серверах [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] не установлена среда Visual Studio, поэтому установить VSIX двойным щелчком мыши невозможно. Установка [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] включает несколько компонентов для запуска расширения VSIX, но установка расширения выполняется вручную.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>Установка расширения слоев на сервере [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]  
   
-1.  Копировать **.vsix** файлы с компьютера разработки на [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] компьютера.  
+1. Копировать **.vsix** файлы с компьютера разработки на [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] компьютера.  
   
      Поместите VSIX-файл в одно из указанных ниже мест.  
   
-    -   Установка для всех пользователей и служб:  
+    - Установка для всех пользователей и служб:  
   
          %ProgramFiles%\Microsoft Visual Studio [версия]\Common7\IDE\Extensions\Microsoft  
   
-    -   Установка только для сетевой службы, в которой выполняется [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:  
+    - Установка только для сетевой службы, в которой выполняется [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:  
   
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
-    -   Если сервер [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] настроен на выполнение в интерактивном режиме от имени определенного пользователя, установить расширение можно только для этого пользователя:  
+    - Если сервер [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] настроен на выполнение в интерактивном режиме от имени определенного пользователя, установить расширение можно только для этого пользователя:  
   
          %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
-        >  % LocalAppData % — *DriveName*: пользователи*UserName*AppDataLocal.  
+        > % LocalAppData % — *DriveName*: пользователи*UserName*AppDataLocal.  
   
-2.  Разверните каждый VSIX-файл в папке в том же местоположении.  
+2. Разверните каждый VSIX-файл в папке в том же местоположении.  
   
-    1.  Измените расширение имени файла с **.vsix** для **ZIP-файл**.  
+    1. Измените расширение имени файла с **.vsix** для **ZIP-файл**.  
   
-    2.  Извлеките содержимое ZIP-файла в папку.  
+    2. Извлеките содержимое ZIP-файла в папку.  
   
-    3.  Удалите ZIP-файл.  
+    3. Удалите ZIP-файл.  
   
-3.  Перезапустите [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
-
-
-
+3. Перезапустите [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].

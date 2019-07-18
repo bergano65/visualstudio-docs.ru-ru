@@ -1,14 +1,9 @@
 ---
 title: Набор инструментов MSBuild (ToolsVersion) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, multitargeting
 - targeting a specific .NET framework [MSBuild]
@@ -18,18 +13,17 @@ ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
 caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426305"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Набор инструментов MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В платформе MSBuild используется набор задач, целей и инструментов для построения приложения. Обычно в набор инструментов MSBuild входит файл microsoft.common.tasks, файл microsoft.common.targets и такие компиляторы, как csc.exe и vbc.exe. Большинство наборов инструментов позволяют компилировать приложения сразу для нескольких версий платформы .NET Framework и различных системных платформ. При этом набор инструментов MSBuild 2.0 можно использовать только для платформы .NET Framework 2.0.  
   
 ## <a name="toolsversion-attribute"></a>Атрибут ToolsVersion  
@@ -77,7 +71,7 @@ ms.locfileid: "49851833"
   
 - с помощью методов <xref:Microsoft.Build.Utilities.ToolLocationHelper>.  
   
-  Свойства набора инструментов указывают на пути к инструментам. В соответствии со значением атрибута `ToolsVersion` в файле проекта MSBuild определяет местоположение соответствующего раздела реестра, а затем использует сведения из раздела реестра для настройки свойств набора инструментов. Например, если атрибут `ToolsVersion` имеет значение `12.0`, то MSBuild задает свойства набора инструментов в соответствии со следующим разделом реестра: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  Свойства набора инструментов указывают на пути к инструментам. В соответствии со значением атрибута `ToolsVersion` в файле проекта MSBuild определяет местоположение соответствующего раздела реестра, а затем использует сведения из раздела реестра для настройки свойств набора инструментов. Например, если атрибут `ToolsVersion` имеет значение `12.0`, MSBuild задает свойства набора инструментов в соответствии с разделом реестра HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
   Свойства набора инструментов:  
   
@@ -103,7 +97,7 @@ ms.locfileid: "49851833"
  Как говорилось выше в этом разделе, для указания пути к основным инструментам в MSBuild используется раздел реестра. Если в разделе имеется подраздел, то он используется в MSBuild для указания пути к поднабору инструментов, в котором содержатся дополнительные инструменты. В этом случае набор инструментов определяется комбинацией определений свойств, которые настраиваются в двух разделах.  
   
 > [!NOTE]
->  Если имена свойств набора инструментов конфликтуют, то значение, определенное для пути подраздела, заменяет значение, установленное для пути корневого раздела.  
+> Если имена свойств набора инструментов конфликтуют, то значение, определенное для пути подраздела, заменяет значение, установленное для пути корневого раздела.  
   
  Поднаборы инструментов становятся активными в настоящем свойства построения `VisualStudioVersion`. Это свойство может принимать одно из следующих значений:  
   
@@ -124,6 +118,3 @@ ms.locfileid: "49851833"
 ## <a name="see-also"></a>См. также  
  [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md)   
  [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

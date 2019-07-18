@@ -1,27 +1,22 @@
 ---
 title: Представление "Строки" — данные о конфликтах | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d85173dcf2ab5632fdb18233f9f27f329ddd3769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8cb6b8191b39bfc79615bf0bbcd4fb469395f8d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583162"
 ---
 # <a name="lines-view---contention-data"></a>Представление "Строки" — данные о конфликтах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51773201"
   
   В следующей таблице описаны столбцы в отчете представления "Строки".  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Эксклюзивное время блокировки**|Время, в течение которого из-за конфликта блокируется выполнение кода оператора. Время блокировки выполнения функций, которые были вызваны оператором, не включается.|  
 |**Эксклюзивное время блокировки %**|Процент от общего времени блокировки в ходе выполнения, которое являлось эксклюзивным временем блокировки оператора.|  
@@ -70,11 +65,8 @@ ms.locfileid: "51773201"
 |**Начало исходной строки**|Номер строки исходного файла, с которой начинается оператор.|  
 |**Конец исходной строки**|Номер строки исходного файла, которой заканчивается оператор.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Настройка столбцов представления отчета](../profiling/how-to-customize-report-view-columns.md)   
  [Представление "Строки"](../profiling/lines-view.md)   
  [Представление "Строки" — выборка](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Представление "Строки"](../profiling/lines-view-sampling-data.md)
-
-
-

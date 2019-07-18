@@ -1,25 +1,20 @@
 ---
-title: Практическое руководство. Создание простейшего шейдера цвета | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Создание простейшего шейдера цвета | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3bcbbb8ede9f30ed1c0340098ffb358cf5715487
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 59259d8186803d966e79f27012e6be6c22b47dd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414707"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Практическое руководство. Создание простейшего шейдера цвета
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +23,13 @@ ms.locfileid: "49813221"
   
  В этом документе описаны следующие действия.  
   
--   Удаление узлов из графа  
+- Удаление узлов из графа  
   
--   Добавление узлов в граф  
+- Добавление узлов в граф  
   
--   Задание свойств узла  
+- Задание свойств узла  
   
--   Соединение узлов  
+- Соединение узлов  
   
 ## <a name="creating-a-flat-color-shader"></a>Создание шейдера с простым цветом  
  Шейдер с простым цветом можно реализовать, записав значение константы цвета RGB в окончательный выходной цвет.  
@@ -56,7 +51,7 @@ ms.locfileid: "49813221"
    Ниже показан готовый граф шейдера и предварительный просмотр шейдера, примененного к кубу.  
   
 > [!NOTE]
->  На рисунке был указан оранжевый цвет для лучшей демонстрации эффекта шейдера.  
+> На рисунке был указан оранжевый цвет для лучшей демонстрации эффекта шейдера.  
   
  ![Граф шейдера и его результаты на трехмерной модели](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")  
   
@@ -67,6 +62,3 @@ ms.locfileid: "49813221"
  [Практическое руководство. Экспорт шейдера](../designers/how-to-export-a-shader.md)   
  [Конструктор шейдеров](../designers/shader-designer.md)   
  [Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)
-
-
-

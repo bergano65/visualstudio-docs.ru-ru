@@ -2,7 +2,6 @@
 title: IDebugDocumentHelper::AddDBCSText | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86d4ac5cb7371f35edb84a44159e589c898bfa3d
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: 2d346f3877574c45aaff6dcef8ca99f699a42552
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446649"
 ---
 # <a name="idebugdocumenthelperadddbcstext"></a>IDebugDocumentHelper::AddDBCSText
 Добавляет строку (DBCS) в конце этого документа.  
@@ -52,7 +51,7 @@ HRESULT AddDBCSText(
  Этот метод создает `IDebugDocumentTextEvents` уведомления.  
   
 > [!NOTE]
->  Если этот метод вызывается после `IDebugDocumentHelper::AddDeferredText` был вызван, `E_FAIL` возвращается.  
+> Если этот метод вызывается после `IDebugDocumentHelper::AddDeferredText` был вызван, `E_FAIL` возвращается.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   

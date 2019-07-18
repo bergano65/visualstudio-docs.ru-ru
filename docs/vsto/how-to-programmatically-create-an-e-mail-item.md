@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Программное создание элемента электронной почты
+title: Практическое руководство. Программное создание элемента электронной почты
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,24 +11,24 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c763e597b192ffe0ae7efdce04c3aba05ab2fa5a
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: dd7a90853b22579557078dc0a407873e5401c36d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575173"
 ---
-# <a name="how-to-programmatically-create-an-email-item"></a>Как выполнить Программное создание элемента электронной почты
-  В этом примере создает сообщение электронной почты в Microsoft Office Outlook.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Пример  
- [!code-csharp[Trin_OL_CreateMailItem#1](../vsto/codesnippet/CSharp/Trin_OL_CreateMailItem/thisaddin.cs#1)]  
-  
-## <a name="see-also"></a>См. также  
- [Работа с элементами почты](../vsto/working-with-mail-items.md)   
- [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+# <a name="how-to-programmatically-create-an-email-item"></a>Практическое руководство. Программное создание элемента электронной почты
+  В этом примере создает сообщение электронной почты в Microsoft Office Outlook.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Пример
+ [!code-csharp[Trin_OL_CreateMailItem#1](../vsto/codesnippet/CSharp/Trin_OL_CreateMailItem/thisaddin.cs#1)]
+
+## <a name="see-also"></a>См. также
+- [Работа с элементами почты](../vsto/working-with-mail-items.md)
+- [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

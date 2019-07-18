@@ -1,14 +1,9 @@
 ---
-title: 'CA1065: Не вызывайте исключения в непредвиденных местах | Документация Майкрософт'
-ms.custom: ''
+title: CA1065. Не вызывайте исключения в непредвиденных местах | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1065
 - DoNotRaiseExceptionsInUnexpectedLocations
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200403"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: не вызывайте исключения в непредвиденных местах
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065. Не вызывайте исключения в непредвиденных местах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -70,24 +65,24 @@ ms.locfileid: "49887611"
 
  Следующие исключения могут вызываться из метода получения свойства.
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> и все производные
+- <xref:System.NotSupportedException?displayProperty=fullName> и все производные
 
--   <xref:System.ArgumentException?displayProperty=fullName> (только на индексированный метод получения)
+- <xref:System.ArgumentException?displayProperty=fullName> (только на индексированный метод получения)
 
--   <xref:System.Collections.Generic.KeyNotFoundException> (только на индексированный метод получения)
+- <xref:System.Collections.Generic.KeyNotFoundException> (только на индексированный метод получения)
 
 ### <a name="event-accessor-methods"></a>Методы доступа к событиям
  К событиям должно быть простые операции, которые не вызывают исключений. Событие не должны вызывать исключение при попытке добавить или удалить обработчик событий.
 
  Следующие исключения могут быть созданы из к событию.
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> и все производные (включая <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> и все производные
+- <xref:System.NotSupportedException?displayProperty=fullName> и все производные
 
--   <xref:System.ArgumentException> и производные
+- <xref:System.ArgumentException> и производные
 
 ### <a name="equals-methods"></a>Методов Equals
  Следующие **равно** методы не должны вызывать исключения:
@@ -138,10 +133,7 @@ ms.locfileid: "49887611"
  Его можно безопасно подавить предупреждение из этого правила, если нарушение было вызвано объявления исключения вместо исключения.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2219: не создавайте исключения в предложениях исключений](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+ [CA2219: Не вызывайте исключения в предложениях исключений](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
 ## <a name="see-also"></a>См. также
  [Предупреждения конструктора](../code-quality/design-warnings.md)
-
-
-

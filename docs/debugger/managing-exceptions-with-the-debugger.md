@@ -30,15 +30,15 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
-ms.translationtype: MTE95
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846678"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Управление исключениями с помощью отладчика в Visual Studio
 
@@ -100,7 +100,7 @@ ms.locfileid: "54204422"
 
   но не отображает `here` строки.
 
-- Объект C# консольное приложение ссылается на библиотеку классов с классом, который имеет два метода. Один метод вызывает исключение и обрабатывает его, а второй метод создает исключение, но не может обработать его.
+- Консольное приложение C# ссылается на библиотеку классов с классом, который имеет два метода. Один метод вызывает исключение и обрабатывает его, а второй метод создает исключение, но не может обработать его.
 
   ```csharp
   public class Class1
@@ -204,7 +204,7 @@ public class GenericException<T> : Exception
 Используйте **параметры исключений** окно, чтобы задать условия для исключения. В настоящее время поддерживаются такие условия включают имена модулей для включения или исключения для исключения. Установив имена модулей в качестве условий, можно прерывать выполнение для исключения только в определенных модулей кода. Вы также можете во избежание прерывания из-за конкретных модулей.
 
 > [!NOTE]
-> Добавление условий в исключение возможности [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Добавление условия к исключению поддерживается начиная с версии [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Добавление условного исключения:
 
@@ -222,8 +222,8 @@ public class GenericException<T> : Exception
 
 ## <a name="see-also"></a>См. также
 
-[Возобновление выполнения после исключения](../debugger/continuing-execution-after-an-exception.md)<br/>
-[Практическое руководство. Анализ системного кода после исключения](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[Практическое руководство. Проверки времени выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[Использование проверки кода во время выполнения без библиотеки среды выполнения языка C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)
+- [Возобновление выполнения после исключения](../debugger/continuing-execution-after-an-exception.md)<br/>
+- [Практическое руководство. Анализ системного кода после исключения](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Практическое руководство. Проверки времени выполнения машинного кода](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Использование проверки кода во время выполнения без библиотеки среды выполнения языка C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+- [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

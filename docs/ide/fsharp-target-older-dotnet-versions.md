@@ -2,19 +2,19 @@
 title: Указание предыдущих версий в качестве целевой платформы .NET Framework для F#
 description: Узнайте об указании более старой версии .NET Framework в качестве целевой платформы при использовании F# в Visual Studio.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f5ef4e8b46681cc102a6678fcd4cb38f3e6f069
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+monikerRange: vs-2017
+ms.openlocfilehash: 2e0d580ac18142010a306d3fb4de19eb69b0b91b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888080"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746704"
 ---
 # <a name="target-older-versions-of-net-f"></a>Указание предыдущих версий в качестве целевой платформы .NET (F#)
 
@@ -54,7 +54,7 @@ ms.locfileid: "53888080"
 
 ### <a name="to-install-the-f-20-runtime"></a>Установка среды выполнения F# 2.0
 
-Выполните [действия для восстановления Visual Studio 2017](../install/repair-visual-studio.md).
+Выполните [действия для восстановления Visual Studio](../install/repair-visual-studio.md).
 
 ## <a name="see-also"></a>См. также
 

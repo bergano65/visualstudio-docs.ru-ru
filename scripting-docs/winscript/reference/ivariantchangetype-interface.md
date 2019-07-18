@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IVariantChangeType | Документы Microsoft
+title: Интерфейс IVariantChangeType | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95b1b761195a3b004ddaf13d17eafd2c8fe9982b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7273b92c591d71834859500da78abe23fe19f194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945654"
 ---
 # <a name="ivariantchangetype-interface"></a>Интерфейс IVariantChangeType
-Позволяет вызывающему объекту преобразовать значение типа VARIANT из одного типа в другой.  
+Вызывающий объект для преобразования значения типа VARIANT из одного типа в другой.  
   
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IVariantChangeType` интерфейс предоставляет следующие методы.  

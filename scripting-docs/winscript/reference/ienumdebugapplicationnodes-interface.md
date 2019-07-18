@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IEnumDebugApplicationNodes | Документы Microsoft
+title: Интерфейс IEnumDebugApplicationNodes | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf9c4fe6a8d789b1988a9a47b17adcba64b28827
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d23f8a8eaa8e10c503d7ec73f4cd5d4f6ea24404
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951740"
 ---
 # <a name="ienumdebugapplicationnodes-interface"></a>Интерфейс IEnumDebugApplicationNodes
-Перечисляет дочерние узлы узла, связанная с приложением.  
+Перечисляет дочерние узлы узла, связанного с приложением.  
   
  Помимо методов, наследуемых от `IUnknown`, `IEnumDebugApplicationNodes` интерфейс предоставляет следующие методы.  
   
@@ -31,6 +30,6 @@ ms.locfileid: "24727654"
 |Метод|Описание|  
 |------------|-----------------|  
 |[IEnumDebugApplicationNodes::Next](../../winscript/reference/ienumdebugapplicationnodes-next.md)|Возвращает указанное количество сегментов в последовательности перечисления.|  
-|[IEnumDebugApplicationNodes::Skip](../../winscript/reference/ienumdebugapplicationnodes-skip.md)|Пропускает указанное число сегментов в последовательности перечисления.|  
-|[IEnumDebugApplicationNodes::Reset](../../winscript/reference/ienumdebugapplicationnodes-reset.md)|Сбрасывает последовательность перечисления в начало.|  
-|[IEnumDebugApplicationNodes::Clone](../../winscript/reference/ienumdebugapplicationnodes-clone.md)|Создает перечислитель, который содержит том же состоянии, как у текущего перечислителя.|
+|[IEnumDebugApplicationNodes::Skip](../../winscript/reference/ienumdebugapplicationnodes-skip.md)|Пропускает заданное число сегментов в последовательности перечисления.|  
+|[IEnumDebugApplicationNodes::Reset](../../winscript/reference/ienumdebugapplicationnodes-reset.md)|Сбрасывает последовательность перечислений в начало.|  
+|[IEnumDebugApplicationNodes::Clone](../../winscript/reference/ienumdebugapplicationnodes-clone.md)|Создает перечислитель с тем же состоянием, что и текущий перечислитель.|

@@ -1,14 +1,9 @@
 ---
 title: Управление каналами | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.managechannels
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dba4def686f97bd3169eb5816630c272dc61d8e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443722"
 ---
 # <a name="manage-channels"></a>Управление каналами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ ms.locfileid: "51726016"
  Используйте этот элемент управления, если вы хотите скрыть каналы. Например, если поток — на 100 процентов синхронизирован в течение времени выполнения управляемого процесса, вы можете скрыть его при анализе других потоков.  
   
 > [!NOTE]
->  При скрытии потока он также удаляется из времени расчета, которое отображается в активной легенде и отчетах о профиле.  
+> При скрытии потока он также удаляется из времени расчета, которое отображается в активной легенде и отчетах о профиле.  
   
 ## <a name="show-all-channels"></a>Показ всех каналов  
  Этот элемент управления активен, когда один или несколько каналов скрыты. При его выборе все скрытые элементы отображаются и возвращаются в расчет времени.  
@@ -66,10 +61,7 @@ ms.locfileid: "51726016"
 ## <a name="group-markers-by-thread"></a>Группировать маркеры по потокам  
  Если трассировка содержит события маркеров, эту команду можно использовать, чтобы группировать каналы маркеров в потоке, создавшем события маркеров.  Каналы диска перемещаются в верхнюю строку списка каналов, а каналы GPU — в нижнюю.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Элемент управления масштабом (представление "Потоки")](../profiling/zoom-control-threads-view.md)   
  [Режим измерения (вкл./выкл.)](../profiling/measure-mode-on-off.md)   
  [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)
-
-
-

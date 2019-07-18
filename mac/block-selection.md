@@ -1,16 +1,16 @@
 ---
 title: Выбор блока
 description: В этой статье объясняется использование функции выбора блока в Visual Studio для Mac
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 11/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: f4aa0283bc2dc950ce1c3f6573176f75b6a3da8f
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: be5a19b48355b871018684400f3f4a7b2e3135b6
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948808"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692870"
 ---
 # <a name="block-selection"></a>Выбор блоков
 
@@ -20,6 +20,6 @@ Visual Studio для Mac позволяет проще выбирать, выр�
 
 ![Выделение блоков и добавление текста](media/source-editor-image16.png)
 
-# <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также
 
 - [Выбор нескольких фрагментов для Visual Studio (в Windows)](/visualstudio/ide/finding-and-replacing-text#multi-caret-selection)

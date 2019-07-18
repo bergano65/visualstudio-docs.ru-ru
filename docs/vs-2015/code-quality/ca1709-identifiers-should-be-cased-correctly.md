@@ -1,14 +1,9 @@
 ---
-title: 'CA1709: Идентификаторы должны иметь правильный регистр | Документация Майкрософт'
-ms.custom: ''
+title: CA1709. Идентификаторы должны иметь правильный регистр | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
 - CA1709
@@ -20,17 +15,17 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 795bf9c307862195cd9ec70bb2de1f89ca4d1e17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b447b111cedc30aa23f3aaad0fbc964a5d8a2bd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189164"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: идентификаторы должны иметь правильный регистр
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio 2017, см. в разделе [CA1709: идентификаторы должны иметь правильный регистр](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly) на сайте docs.microsoft.com.  
+Самая актуальная документация по Visual Studio, см. в разделе [CA1709: Идентификаторы должны иметь правильный регистр](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).  
   
 |||  
 |-|-|  
@@ -67,8 +62,7 @@ ms.locfileid: "49199554"
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
  Это безопасно отключить это предупреждение, если у вас есть собственные соглашения об именовании или идентификатор представляет имя собственное, например, имя компании или технологии.  
   
- Можно также добавить конкретных терминов, сокращений и акронимов, в пользовательский словарь анализа кода. Термины, указанные в пользовательский словарь не вызовет нарушение этого правила. Дополнительные сведения см. в разделе [как: Настройка словаря анализа кода](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ Можно также добавить конкретных терминов, сокращений и акронимов, в пользовательский словарь анализа кода. Термины, указанные в пользовательский словарь не вызовет нарушение этого правила. Дополнительные сведения см. в разделе [Практическое руководство. Настройка словаря анализа кода](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
   
 ## <a name="related-rules"></a>Связанные правила  
- [CA1708: идентификаторы должны отличаться не только регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-
+ [CA1708: Идентификаторы должны отличаться регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

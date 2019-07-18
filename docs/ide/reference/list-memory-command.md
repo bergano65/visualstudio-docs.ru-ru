@@ -1,7 +1,6 @@
 ---
 title: Команда List Memory
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.listmemory
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0c2512bd6b446c35aa01e9f56711bb39cd85b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9120b3076dff1620f6ec5b9ff77041126932481a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557103"
 ---
 # <a name="list-memory-command"></a>Команда List Memory
 Отображает содержимое указанного диапазона памяти.

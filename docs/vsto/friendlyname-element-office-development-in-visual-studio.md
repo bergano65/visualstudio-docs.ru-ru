@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <friendlyName> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30355920b2ee41ca3b31216101cb2dc46e608b77
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d038e825173f95ddfe4106022c7c9924090b3a5f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972360"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName&gt; элемент (Разработка решений Office в Visual Studio)
   Элемент `friendlyName` пространства имен `vstov4` хранит имя, которое отображается в списке установленных программ.

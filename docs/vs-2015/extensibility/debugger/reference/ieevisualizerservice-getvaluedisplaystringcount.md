@@ -1,64 +1,59 @@
 ---
 title: IEEVisualizerService::GetValueDisplayStringCount | Документация Майкрософт
-ms.custom: ''
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.date: 11/04/2016
+ms.topic: reference
 helpviewer_keywords:
 - IEEVisualizerService::GetValueDisplayStringCount
 - GetValueDisplayStringCount
 ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
-caps.latest.revision: 11
+author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 412a2585a35c7503f99207050d07d3b27d434e99
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6785be367430443f92a9cc54a2d636582053228e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192099"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Возвращает номер строки значение указанного свойства или поля.
 
-Возвращает номер строки значение указанного свойства или поля.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp#  
-HRESULT GetValueDisplayStringCount (  
-   DWORD         displayKind,   
-   IDebugField * propertyOrField,   
-   ULONG *       pcelt  
-);  
-```  
-  
-```csharp  
-int GetValueDisplayStringCount (  
-   uint        displayKind,   
-   IDebugField propertyOrField,   
-   out ulong   pcelt  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `displayKind`  
- [in] Значение из [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) перечисления.  
-  
- `propertyOrField`  
- [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, который представляет свойство или поле.  
-  
- `pcelt`  
- [out] Возвращает число строк, значение для отображения.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также  
- [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
+## <a name="syntax"></a>Синтаксис
 
+```cpp
+HRESULT GetValueDisplayStringCount (
+   DWORD         displayKind,
+   IDebugField * propertyOrField,
+   ULONG *       pcelt
+);
+```
+
+```csharp
+int GetValueDisplayStringCount (
+   uint        displayKind,
+   IDebugField propertyOrField,
+   out ulong   pcelt
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `displayKind`
+
+ [in] Значение из [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) перечисления.
+
+ `propertyOrField`
+
+ [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) интерфейс, который представляет свойство или поле.
+
+ `pcelt`
+
+ [out] Возвращает число строк, значение для отображения.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

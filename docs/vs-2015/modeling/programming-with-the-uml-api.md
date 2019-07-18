@@ -1,12 +1,9 @@
 ---
 title: Программирование с UML API | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, API
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: c5937139-49d0-4439-8a9f-89f5e0474618
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d5670b0c0806d59119e1a1af87bae5642255c5a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e85fc0add84f6f6097355d1fc7a58cc954c8e538
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158877"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +28,7 @@ UML API Visual Studio позволяет написать код для созд
   
 |Раздел|Примеры описываемых типов и методов|Описываемые функции|  
 |-----------|-----------------------------------------|------------------------|  
-|[Переход по отношениям с помощью UML API](../modeling/navigate-relationships-with-the-uml-api.md)|UML-элементы, их свойства и ассоциации. Например, IElement и его потомки, включая IClass, IActivity, IUseCase, IComponent, IInteraction, IModel и IPackage.|В Visual Studio модели UML соответствуют версии 2.1.2 спецификации UML, который можно получить в [странице ресурсов UML](http://go.microsoft.com/fwlink/?LinkId=160796). Каждый тип является интерфейсом, имя которого совпадает с именем типа UML с префиксом "I".|  
+|[Переход по отношениям с помощью UML API](../modeling/navigate-relationships-with-the-uml-api.md)|UML-элементы, их свойства и ассоциации. Например IElement и его потомки, включая: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel и IPackage|В Visual Studio модели UML соответствуют версии 2.1.2 спецификации UML, который можно получить в [странице ресурсов UML](http://go.microsoft.com/fwlink/?LinkId=160796). Каждый тип является интерфейсом, имя которого совпадает с именем типа UML с префиксом "I".|  
 |[Создание элементов и отношений в моделях UML](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|Каждый тип элемента имеет методы для создания дочерних элементов.|  
 |[Отображение модели UML на схемах](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|Каждый элемент в модели может быть представлен в виде фигуры на схеме. В некоторых случаях можно создавать новые фигуры для каждого объекта. Эти фигуры можно перемещать, сворачивать или разворачивать, а также изменять их размер и цвет.|  
 |[Навигация по модели UML](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|Модель хранится в хранилище моделей.<br /><br /> Контекст схемы предоставляет доступ к текущей схеме и хранилищу.|  
@@ -47,14 +44,14 @@ UML API Visual Studio позволяет написать код для созд
   
  Типы из этой платформы видны в некоторых сборках, на которые дается ссылка при создании UML-расширений. Несмотря на то что расширения для инструментов UML можно создавать, обращаясь к API [!INCLUDE[dsl](../includes/dsl-md.md)], необходимо помнить о следующем.  
   
--   Может оказаться, что некоторые кажущиеся простыми изменения вызывают несоответствия и дают непредвиденные результаты.  
+- Может оказаться, что некоторые кажущиеся простыми изменения вызывают несоответствия и дают непредвиденные результаты.  
   
--   В будущем реализация может измениться, и изменения, внесенные с помощью API [!INCLUDE[dsl](../includes/dsl-md.md)] окажутся недействительными.  
+- В будущем реализация может измениться, и изменения, внесенные с помощью API [!INCLUDE[dsl](../includes/dsl-md.md)] окажутся недействительными.  
   
 ## <a name="the-api-assemblies"></a>Сборки API  
  В этой таблице представлены сборки, позволяющие расширять инструменты UML, и пространства имен, которые рекомендуется использовать.  
   
-|Сборка|Пространства имен|К чему предоставляет доступ|  
+|Assembly|Пространства имен|К чему предоставляет доступ|  
 |--------------|----------------|-------------------------|  
 |Microsoft.VisualStudio.Uml.Interfaces|(Все)|Типы UML.|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml>|[Методы создания](../modeling/create-elements-and-relationships-in-uml-models.md)|  
@@ -74,6 +71,3 @@ UML API Visual Studio позволяет написать код для созд
 ## <a name="see-also"></a>См. также  
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Справочник по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

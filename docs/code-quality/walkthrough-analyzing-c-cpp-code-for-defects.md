@@ -1,7 +1,6 @@
 ---
 title: Пошаговое руководство. Анализ кода C/C++ на наличие дефектов
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
@@ -13,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a35bc07c9fe6478107162b625a824b6344898f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820341"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Пошаговое руководство. Анализ кода C/C++ на наличие дефектов
 
@@ -68,7 +67,7 @@ ms.locfileid: "53829515"
 
      Предупреждение C6230: Неявное приведение между семантически различными типами: использование HRESULT в логическом контексте.
 
-     В редакторе кода отображается строка, вызвавшая предупреждение в функции `bool``ProcessDomain()`. Это предупреждение означает, что значение HRESULT используется в операторе «if» в там, где ожидается логическое значение.
+     В редакторе кода отображается строка, вызвавшая предупреждение в функции `bool ProcessDomain()`. Это предупреждение означает, что значение HRESULT используется в операторе «if» в там, где ожидается логическое значение.
 
 3. Устраните это предупреждение с помощью макроса SUCCEEDED. Ваш код должен выглядеть следующим образом:
 

@@ -1,7 +1,6 @@
 ---
 title: CA1021. Не используйте параметры out
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1021
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 970f2304-842c-4fb7-9734-f3871da8d479
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10ee8312a0861e65e0717cc6d9bec3d2530a8c80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea570ff50ea48286bcb52b56acdd108516b02022
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779400"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021. Не используйте параметры out
 
@@ -86,7 +85,7 @@ Passing by return value:
 
 ## <a name="try-pattern-methods"></a>Попробуйте методы шаблона
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Методы, которые реализуют **попробуйте\<что-то >** шаблонов, такого как <xref:System.Int32.TryParse%2A?displayProperty=fullName>, не вызывают это нарушение. Следующий пример показывает структуру (тип значения), который реализует <xref:System.Int32.TryParse%2A?displayProperty=fullName> метод.
 
 ### <a name="code"></a>Код

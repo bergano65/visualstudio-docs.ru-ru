@@ -15,73 +15,72 @@ helpviewer_keywords:
 ms.assetid: 4e9fb04b-5148-4ae5-a394-42861dd62371
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89fba35aeef3b4e71494081dd1776c7a4248a05e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 130683b114c4601de209ec5f86b7b6f3e8bed027
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001191"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Элемент ItemDefinitionGroup (MSBuild)
-Элемент `ItemDefinitionGroup` позволяет определить набор определений элементов, которые представляют собой значения метаданных, по умолчанию применяемых ко всем элементам проекта. ItemDefinitionGroup пришел на смену использованию задач [CreateItem](../msbuild/createitem-task.md) и [CreateProperty](../msbuild/createproperty-task.md). Дополнительные сведения см. в разделе [Определения элементов](../msbuild/item-definitions.md).  
+Элемент `ItemDefinitionGroup` позволяет определить набор определений элементов, которые представляют собой значения метаданных, по умолчанию применяемых ко всем элементам проекта. ItemDefinitionGroup пришел на смену использованию задач [CreateItem](../msbuild/createitem-task.md) и [CreateProperty](../msbuild/createproperty-task.md). Дополнительные сведения см. в разделе [Определения элементов](../msbuild/item-definitions.md).
 
- \<Project>  
- \<ItemDefinitionGroup>  
+\<Project> \<ItemDefinitionGroup>
 
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Синтаксис
 
-```xml  
-<ItemDefinitionGroup Condition="'String A' == 'String B'">  
-    <Item1>... </Item1>  
-    <Item2>... </Item2>  
-</ItemDefinitionGroup>  
-```  
+```xml
+<ItemDefinitionGroup Condition="'String A' == 'String B'">
+    <Item1>... </Item1>
+    <Item2>... </Item2>
+</ItemDefinitionGroup>
+```
 
-## <a name="attributes-and-elements"></a>Элементы и атрибуты  
- В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты
+В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
-### <a name="attributes"></a>Атрибуты  
+### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|`Condition`|Необязательный атрибут. Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
+|Атрибут|Описание|
+|---------------|-----------------|
+|`Condition`|Необязательный атрибут. Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание|  
-|-------------|-----------------|  
-|[Элемент](../msbuild/item-element-msbuild.md)|Входные данные для процесса сборки. Любое количество элементов `Item` (может быть ни одного) может содержаться в `ItemDefinitionGroup`.|  
+|Элемент|Описание|
+|-------------|-----------------|
+|[Элемент](../msbuild/item-element-msbuild.md)|Входные данные для процесса сборки. Любое количество элементов `Item` (может быть ни одного) может содержаться в `ItemDefinitionGroup`.|
 
-### <a name="parent-elements"></a>Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы
 
 | Элемент | Описание |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
-## <a name="example"></a>Пример  
- Следующий пример кода определяет два элемента метаданных (m и n) для ItemDefinitionGroup. В этом примере к элементу i применяются метаданные по умолчанию m, так как метаданные m не определены явным образом элементом i. Однако к элементу i не применяются метаданные по умолчанию n, так как метаданные n уже определены элементом i.  
+## <a name="example"></a>Пример
+Следующий пример кода определяет два элемента метаданных (m и n) для ItemDefinitionGroup. В этом примере к элементу i применяются метаданные по умолчанию m, так как метаданные m не определены явным образом элементом i. Однако к элементу i не применяются метаданные по умолчанию n, так как метаданные n уже определены элементом i.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemDefinitionGroup>  
-        <i>  
-            <m>m1</m>  
-            <n>n1</n>  
-        </i>        
-    </ItemDefinitionGroup>  
-    <ItemGroup>  
-        <i Include="a">  
-            <o>o1</o>  
-            <n>n2</n>  
-        </i>  
-    </ItemGroup>  
-    ...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemDefinitionGroup>
+        <i>
+            <m>m1</m>
+            <n>n1</n>
+        </i>
+    </ItemDefinitionGroup>
+    <ItemGroup>
+        <i Include="a">
+            <o>o1</o>
+            <n>n2</n>
+        </i>
+    </ItemGroup>
+    ...
+</Project>
+```
 
-## <a name="see-also"></a>См. также  
- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)   
- [Элементы](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>См. также
+- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
+- [Элементы](../msbuild/msbuild-items.md)

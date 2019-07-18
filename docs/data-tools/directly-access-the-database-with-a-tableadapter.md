@@ -20,16 +20,15 @@ helpviewer_keywords:
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31019f696c54ad0933a0adc458c9b257768605e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 26bcab8d589c1fedcbbc4eb1f8b06bb1c04cac53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567026"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Непосредственный доступ к базе данных с помощью адаптера таблицы TableAdapter
 
@@ -43,7 +42,7 @@ ms.locfileid: "53880291"
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>Для вставки новых записей непосредственно в базу данных
 
--   Вызов метода `Insert` метод, передав значения для каждого столбца в качестве параметров. В следующей процедуре используется `Region` таблицы в базе данных "Борей" в качестве примера.
+- Вызов метода `Insert` метод, передав значения для каждого столбца в качестве параметров. В следующей процедуре используется `Region` таблицы в базе данных "Борей" в качестве примера.
 
     > [!NOTE]
     > Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.
@@ -53,7 +52,7 @@ ms.locfileid: "53880291"
 
 ### <a name="to-update-records-directly-in-a-database"></a>Для обновления записей непосредственно в базе данных
 
--   Вызов метода `Update` , передавая в новых и исходные значения для каждого столбца в качестве параметров.
+- Вызов метода `Update` , передавая в новых и исходные значения для каждого столбца в качестве параметров.
 
     > [!NOTE]
     > Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.
@@ -63,7 +62,7 @@ ms.locfileid: "53880291"
 
 ### <a name="to-delete-records-directly-from-a-database"></a>Для удаления записей непосредственно из базы данных
 
--   Вызов метода `Delete` метод, передав значения для каждого столбца в качестве параметров `Delete` метод. В следующей процедуре используется `Region` таблицы в базе данных "Борей" в качестве примера.
+- Вызов метода `Delete` метод, передав значения для каждого столбца в качестве параметров `Delete` метод. В следующей процедуре используется `Region` таблицы в базе данных "Борей" в качестве примера.
 
     > [!NOTE]
     > Если у вас нет экземпляра, создайте экземпляр TableAdapter, который вы хотите использовать.

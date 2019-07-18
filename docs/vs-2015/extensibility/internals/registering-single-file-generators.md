@@ -1,27 +1,22 @@
 ---
 title: Регистрация генераторов одного файла | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8e601b3fcf8bd702c1bc6cde427766d0f107e6bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6afcd708ac50a46ceb3359f0d2c0821e3b788f47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780988"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696105"
 ---
 # <a name="registering-single-file-generators"></a>Регистрация генераторов одного файла
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51780988"
   
 ### <a name="to-register-a-custom-tool"></a>Чтобы зарегистрировать пользовательский инструмент  
   
-1.  Либо зарегистрировать настраиваемый инструмент DLL в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] локальный реестр или в системном реестре, в разделе HKEY_CLASSES_ROOT.  
+1. Либо зарегистрировать настраиваемый инструмент DLL в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] локальный реестр или в системном реестре, в разделе HKEY_CLASSES_ROOT.  
   
      Например, вот регистрационные данные для управляемого MSDataSetGenerator пользовательский инструмент, который поставляется вместе с [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -43,22 +38,22 @@ ms.locfileid: "51780988"
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Создайте раздел реестра в нужной [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive в разделе генераторы\\*GUID* где *GUID* GUID определяется конкретного языка системы проекта или службы. Имя ключа становится программное имя удаляемого пользовательского средства. Пользовательский инструмент ключ имеет следующие значения:  
+2. Создайте раздел реестра в нужной [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive в разделе генераторы\\*GUID* где *GUID* GUID определяется конкретного языка системы проекта или службы. Имя ключа становится программное имя удаляемого пользовательского средства. Пользовательский инструмент ключ имеет следующие значения:  
   
-    -   (Значение по умолчанию)  
+    - (Значение по умолчанию)  
   
-         Необязательный. Понятное описание пользовательского инструмента. Этот параметр является обязательным, но рекомендуется.  
+         Необязательный параметр. Понятное описание пользовательского инструмента. Этот параметр является обязательным, но рекомендуется.  
   
-    -   CLSID  
+    - CLSID  
   
-         Обязательно. Задает идентификатор для библиотеки классов из COM-компонент, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
+         Обязательный. Задает идентификатор для библиотеки классов из COM-компонент, который реализует <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
-         Обязательно. Указывает ли типы из файлов, созданных этим настраиваемым инструментом становятся доступными для визуальных конструкторов. Значение этого параметра должно быть (нуль) 0 для типов, не доступен для визуальных конструкторов или 1 (один) для типов, доступных для визуальных конструкторов.  
+         Обязательный. Указывает ли типы из файлов, созданных этим настраиваемым инструментом становятся доступными для визуальных конструкторов. Значение этого параметра должно быть (нуль) 0 для типов, не доступен для визуальных конструкторов или 1 (один) для типов, доступных для визуальных конструкторов.  
   
     > [!NOTE]
-    >  Необходимо зарегистрировать пользовательский инструмент отдельно для каждого языка, для которого требуется пользовательский инструмент доступен.  
+    > Необходимо зарегистрировать пользовательский инструмент отдельно для каждого языка, для которого требуется пользовательский инструмент доступен.  
   
      Например MSDataSetGenerator регистрируется один раз для каждого языка:  
   
@@ -84,5 +79,4 @@ ms.locfileid: "51780988"
  [Реализация генераторов одного файла](../../extensibility/internals/implementing-single-file-generators.md)   
  [Определение пространства имен по умолчанию проекта](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Предоставление типов конструкторам визуальных элементов](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [Знакомство с объектом BuildManager](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
-
+ [Знакомство с объектом BuildManager](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

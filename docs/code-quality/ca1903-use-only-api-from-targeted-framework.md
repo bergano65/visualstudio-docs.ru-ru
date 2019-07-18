@@ -1,7 +1,6 @@
 ---
 title: CA1903. Используйте API только из целевой рабочей среды
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: efdb5cc7-bbd8-4fa7-9fff-02b91e59350e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eb85029cb9c3c419b88a31be88d8e1cfbd16142
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e57607cdfa8790c9b9fd4e692956f7bb823981a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908987"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744860"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903. Используйте API только из целевой рабочей среды
 
@@ -47,7 +46,7 @@ ms.locfileid: "53908987"
 |.NET Framework 3,5|.NET Framework 3.5 SP1|
 |.NET Framework 4|Н/Д|
 
- Для изменения целевой платформы проекта см. в разделе [предназначенных для определенной версии .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+ Для изменения целевой платформы проекта см. в разделе [как: Определение целевой версии .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы удалить зависимость от пакета обновления, удалите все случаи использования нового члена или типа. Если это зависимость добавлена специально отключить предупреждение, или отключить это правило.
@@ -68,4 +67,4 @@ ms.locfileid: "53908987"
 ## <a name="see-also"></a>См. также
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [Настройка конкретной версии платформы .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Framework, предназначенных для обзора](../ide/visual-studio-multi-targeting-overview.md)

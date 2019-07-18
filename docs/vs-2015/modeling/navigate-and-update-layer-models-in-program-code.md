@@ -1,12 +1,9 @@
 ---
 title: Переход и обновление моделей слоев в коде программы | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
@@ -14,18 +11,18 @@ ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ec36aa78ce5ed90098587092207806444681146a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 05a7b50c15c3bc1953e4be3d13809fd9db64f052
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435013"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Перемещение по моделям слоев в коде программы и их обновление
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В этом разделе рассматриваются элементы и отношения в моделях слоев, к которым можно перейти и которые можно обновить с помощью программного кода. Дополнительные сведения о схемах слоев с точки зрения пользователя см. в разделе [схемы слоев: ссылка](../modeling/layer-diagrams-reference.md) и [схемы слоев: рекомендации по](../modeling/layer-diagrams-guidelines.md).  
+В этом разделе рассматриваются элементы и отношения в моделях слоев, к которым можно перейти и которые можно обновить с помощью программного кода. Дополнительные сведения о схемах слоев с точки зрения пользователя см. в разделе [схемы слоев: Справочник по](../modeling/layer-diagrams-reference.md) и [схемы слоев: Рекомендации по](../modeling/layer-diagrams-guidelines.md).  
   
  Модель <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer>, описываемая в этом разделе, является интерфейсом более общей модели <xref:Microsoft.VisualStudio.GraphModel>. Если вы создаете [расширение команды или жеста меню](../modeling/add-commands-and-gestures-to-layer-diagrams.md), использовать `Layer` модели. Если вы создаете [расширения проверки слоев](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), проще использовать `GraphModel`.  
   
@@ -77,7 +74,7 @@ IEnumerable<ILayerComment> comments =
 ```  
   
 > [!CAUTION]
->  Свойство `Comments` слоя `ILayer` получает комментарии, вложенные в `ILayer`. Оно не получает комментарии, связанные с ним.  
+> Свойство `Comments` слоя `ILayer` получает комментарии, вложенные в `ILayer`. Оно не получает комментарии, связанные с ним.  
   
  Создайте комментарий, вызвав метод `CreateComment()` в соответствующем контейнере.  
   
@@ -134,9 +131,6 @@ public void ... (...)
  [Добавление команд и жестов в схемы слоев](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
  [Добавление пользовательской проверки архитектуры в схемы слоев](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Добавление пользовательских свойств в схемы слоев](../modeling/add-custom-properties-to-layer-diagrams.md)   
- [Схемы слоев: ссылка](../modeling/layer-diagrams-reference.md)   
- [Схемы слоев: рекомендации](../modeling/layer-diagrams-guidelines.md)   
+ [Схемы слоев: Справочник по](../modeling/layer-diagrams-reference.md)   
+ [Схемы слоев: Рекомендации](../modeling/layer-diagrams-guidelines.md)   
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

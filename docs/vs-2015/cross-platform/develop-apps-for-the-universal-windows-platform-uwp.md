@@ -1,30 +1,24 @@
 ---
 title: Разработка приложений для универсальной платформы Windows (UWP) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24dfca5d4ac8432cbe659bb42ca54d0398c47c04
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 8af5414b1c775a17421b87b9c18d58c34f544405
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766477"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698650"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Разработка приложений для универсальной платформы Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Благодаря универсальной платформе Windows и единому ядру Windows одно и то же приложение можно запускать на любом устройстве Windows 10 — от телефонов и до настольных компьютеров. Используйте Visual Studio 2015 с универсальными средствами разработки приложений Windows для создания этих приложений.  
   
  ![Универсальная платформа Windows](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")  
@@ -37,7 +31,7 @@ ms.locfileid: "51766477"
   
  **Что такое универсальная платформа Windows?**  
   
- Это просто коллекция контрактов и версий. Они позволяют нацеливаться на среду, в которой может работать приложение. Больше не нужно нацеливаться на операционную систему. Теперь приложение можно нацеливать на одно или несколько семейств устройств. Более подробную информацию можно получить в этом [руководстве по платформе](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
+ Это просто коллекция контрактов и версий. Они позволяют нацеливаться на среду, в которой может работать приложение. Больше не нужно нацеливаться на операционную систему. Теперь приложение можно нацеливать на одно или несколько семейств устройств. Более подробную информацию можно получить в этом [руководстве по платформе](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
 ## <a name="requirements"></a>Требования  
  Средства разработки универсальных приложений Windows поставляются с эмуляторами, которые можно использовать для просмотра своих приложений на разных устройствах. Чтобы использовать эти эмуляторы, необходимо установить соответствующее программное обеспечение на физическом компьютере. Физический компьютер должен работать под управлением версии Windows 8.1 Профессиональная (x64) или более поздней и иметь процессор, который поддерживает клиент Hyper-V и преобразование адресов второго уровня (SLAT). Если на виртуальной машине выполнена установка Visual Studio, эмуляторы на ней работать не могут.  
@@ -54,16 +48,15 @@ ms.locfileid: "51766477"
   
   Разработка универсальных приложений Windows с помощью Visual Studio 2015 на платформе, отличной от Windows 10, связана со следующими ограничениями.  
   
-- Windows 8.1. Приложение нельзя запускать локально (только на удаленном устройстве Windows 10). В Visual Studio можно использовать эмуляторы, но не имитаторы.  
+- Windows 8.1: Не удается запустить приложение локально (только на удаленном устройстве Windows 10). В Visual Studio можно использовать эмуляторы, но не имитаторы.  
   
-- Windows 7. Приложение нельзя запускать локально (только на удаленном устройстве Windows 10). В Visual Studio нельзя использовать ни эмуляторы, ни имитаторы.  
+- Windows 7: Не удается запустить приложение локально (только на удаленном устройстве Windows 10). В Visual Studio нельзя использовать ни эмуляторы, ни имитаторы.  
   
   Конструктор XAML можно использовать только на платформе разработки Windows 10.  
   
 ## <a name="universal-windows-apps"></a>Универсальные приложения Windows  
- Выберите предпочтительный язык разработки (C#, Visual Basic, C++ или JavaScript), чтобы [создать универсальное приложение Windows для устройств Windows 10](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Или просмотрите [этот видеоролик о начале работы](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
+ Выберите предпочтительный язык разработки (C#, Visual Basic, C++ или JavaScript), чтобы [создать универсальное приложение Windows для устройств Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Или просмотрите [этот видеоролик о начале работы](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
   
- При наличии существующих приложений Магазина Windows 8.1, приложений для Windows Phone 8.1 или универсальных приложений Windows, созданных с помощью версии-кандидата Visual Studio 2015, [перенесите эти существующие приложения](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) , чтобы использовать последнюю версию универсальной платформы Windows.  
+ При наличии существующих приложений Магазина Windows 8.1, приложений для Windows Phone 8.1 или универсальных приложений Windows, созданных с помощью версии-кандидата Visual Studio 2015, [перенесите эти существующие приложения](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) , чтобы использовать последнюю версию универсальной платформы Windows.  
   
  После создания универсального приложения Windows необходимо [упаковать его](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) , чтобы установить его на устройстве Windows 10 или отправить в Магазин Windows.
-

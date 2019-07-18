@@ -1,7 +1,6 @@
 ---
 title: Как выполнить Создание ассоциаций между типами (конструктор классов)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.associationline
@@ -14,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f957e112835c138a84accbdc7070f1217fc963
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 723d1565dae55852829daf0038201d0c8685b3ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975389"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>Как выполнить Создание ассоциаций между типами (конструктор классов)
 

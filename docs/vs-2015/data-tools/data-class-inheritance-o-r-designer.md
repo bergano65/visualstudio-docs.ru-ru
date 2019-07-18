@@ -1,33 +1,29 @@
 ---
 title: Данные класса наследования (реляционный конструктор объектов) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ae36d6aac3ea9a4ff4de73dea57207b6f03abc72
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f2c1f5328abd8ea814e1175b17129dd8a89040ef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180522"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697933"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Наследование классов данных (реляционный конструктор объектов)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Подобно другим объектам, [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] классы могут использовать наследование и выводиться из других классов. В коде можно определить отношения наследования между объектами, объявляя, что один класс наследует от другого. В базе данных, отношения наследования создаются несколькими способами. [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) поддерживает концепцию наследования одиночных таблиц, так как именно она обычно осуществляется в реляционных системах.  
   
  При наследовании единственной таблицы, имеется единственная таблица базы данных, которая содержит столбцы как для базового, так и для полученных классов. С реляционными данными столбец дискриминатора содержит значение, которое определяет, какому классу любая данная запись принадлежит. Например, рассмотрим таблицу Persons, которая содержит данные всех сотрудников компании. Некоторые лица являются служащими, а некоторые - менеджерами. Таблица Persons содержит столбец с именем Type, который имеет значение 1 для менеджеров и значения 2 для служащих. Столбец Type является столбцом дискриминатора. В этом сценарии можно создать подкласс служащих и заполнить класс только записями, которые имеют в столбце Type значение 2.  
   
- Когда для решения этой задачи вы конфигурируете наследование в классах сущностей с помощью [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], перетащите единственную таблицу, которая содержит данные наследования, в конструктор в два раза: один раз для каждого класса в иерархии наследования. После добавления таблицы в конструктор, подключите их к элементу наследование из **реляционный конструктор объектов** панели элементов, а затем задайте четыре свойства наследования в **свойства** окна.  
+ Когда вы конфигурируете наследование в классах сущностей, используя [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], перетащите единственную таблицу, которая содержит данные наследования, на область конструктора два раза: один раз на каждый класс в иерархии наследования. После того как вы добавите таблицы в конструктор, подключите их к элементу "Наследование" из панели элементов **Реляционного конструктора объектов** и потом задайте четыре свойства наследования в окне **Свойства**.  
   
 ## <a name="inheritance-properties"></a>Свойства наследования  
  В следующей таблице содержится список свойств наследования и их описания.  
@@ -43,12 +39,11 @@ ms.locfileid: "49180522"
   
 |Раздел|Описание|  
 |-----------|-----------------|  
-|[Практическое руководство. Настройка наследования с помощью реляционного конструктора объектов](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Описывает способы конфигурирования классов сущностей, использующих наследование одной таблицы при помощи [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|  
-|[Пошаговое руководство. Создание классов LINQ to SQL с использованием наследования с одной таблицей (реляционный конструктор объектов)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Предоставляет пошаговые инструкции по конфигурированию классов сущностей, использующих наследование одной таблицы, при помощи [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|  
+|[Практическое руководство. Настройка наследования с использованием реляционного конструктора объектов](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Описывает способы конфигурирования классов сущностей, использующих наследование одной таблицы при помощи [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|  
+|[Пошаговое руководство: Создание Классов LINQ to SQL с помощью однотабличного наследования (реляционный конструктор объектов)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Предоставляет пошаговые инструкции по конфигурированию классов сущностей, использующих наследование одной таблицы, при помощи [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].|  
   
 ## <a name="see-also"></a>См. также  
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Пошаговое руководство: Создание классов LINQ to SQL (реляционный конструктор объектов)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [Пошаговое руководство: Создание классов LINQ to SQL (реляционный конструктор объектов)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [Пошаговое руководство: Создание классов LINQ to SQL с помощью однотабличного наследования (реляционный конструктор объектов)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
- [Начало работы](http://msdn.microsoft.com/library/db8a557a-fef8-4f4f-bb91-8cff7250ee25)
-
+ [Начало работы](https://msdn.microsoft.com/library/db8a557a-fef8-4f4f-bb91-8cff7250ee25)

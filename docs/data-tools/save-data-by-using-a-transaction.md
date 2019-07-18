@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Сохранение данных с помощью транзакции
+title: Практическое руководство. Сохранение данных с помощью транзакции
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,18 +13,17 @@ helpviewer_keywords:
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: daf589eeabbdf753512cc31ca00b6a88e001c0db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: bf5864d25e78b6050da5c13097503b2998dda44a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566320"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Как выполнить Сохранение данных с помощью транзакции
+# <a name="how-to-save-data-by-using-a-transaction"></a>Практическое руководство. Сохранение данных с помощью транзакции
 
 Сохранение данных в транзакции с помощью <xref:System.Transactions> пространства имен. Используйте <xref:System.Transactions.TransactionScope> объекту участвовать в транзакции, которая автоматически осуществляется автоматически.
 
@@ -38,15 +37,15 @@ ms.locfileid: "53918756"
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Чтобы добавить ссылку на файл System.Transactions.dll
 
-1.  На **проекта** меню, выберите **добавить ссылку**.
+1. На **проекта** меню, выберите **добавить ссылку**.
 
-2.  На **.NET** вкладке (**SQL Server** вкладку для проектов SQL Server), выберите **System.Transactions**, а затем выберите **ОК**.
+2. На **.NET** вкладке (**SQL Server** вкладку для проектов SQL Server), выберите **System.Transactions**, а затем выберите **ОК**.
 
      Ссылку на *System.Transactions.dll* добавляется в проект.
 
 ## <a name="to-save-data-in-a-transaction"></a>Чтобы сохранить данные в транзакции
 
--   Добавьте код для сохранения данных с помощью инструкции, содержащей транзакции. Ниже показано, как создать и создание экземпляра <xref:System.Transactions.TransactionScope> объекта в с помощью инструкции:
+- Добавьте код для сохранения данных с помощью инструкции, содержащей транзакции. Ниже показано, как создать и создание экземпляра <xref:System.Transactions.TransactionScope> объекта в с помощью инструкции:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]

@@ -2,7 +2,6 @@
 title: Структура TEXT_DOCUMENT_ARRAY | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ff283b52d15310304fb60c322bdb51c33ed33ac
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 9d188729b68f8086da62d40ca28fc29945c8be7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840061"
 ---
 # <a name="textdocumentarray-structure"></a>TEXT_DOCUMENT_ARRAY — структура
 Массив [интерфейс IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md) объектов. Элементы выделяются с помощью функции CoTaskMemAlloc.  
@@ -30,7 +29,7 @@ ms.locfileid: "54096945"
 typedef struct tagTEXT_DOCUMENT_ARRAY{    DWORD dwCount;    [size_is(dwCount)] IDebugDocumentText **Members;} TEXT_DOCUMENT_ARRAY;  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
  `dwCount`  
  Число документов.  
   

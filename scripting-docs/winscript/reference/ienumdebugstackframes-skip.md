@@ -2,7 +2,6 @@
 title: IEnumDebugStackFrames::Skip | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 28821d90bc27d23d51db00e871807a2ccef885b7
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a1548784de8ad2cfc9d6368691da1b68a1bc1e3f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963316"
 ---
 # <a name="ienumdebugstackframesskip"></a>IEnumDebugStackFrames::Skip
 Пропускает заданное число сегментов в последовательности перечисления.  
@@ -43,7 +42,7 @@ HRESULT Skip(
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Метод успешно выполнен.|  
   

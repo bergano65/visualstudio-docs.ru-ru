@@ -1,14 +1,9 @@
 ---
 title: Ожидалась функция | Документация Майкрософт
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5002
 dev_langs:
@@ -16,18 +11,17 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa2db3e95d4baece288c9f984a7a9cf7a82c9d1d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4442143b2766ed3608a852d0f811a6b943fd19df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007110"
 ---
-# <a name="function-expected"></a>Ожидалась функция
+# <a name="function-expected"></a>Требуется функция
 Либо была предпринята попытка вызвать один из **прототип функции** методов на объекте, который не был `Function` объекта или использовать объект в контексте вызова функции. Например, следующий код создает эту ошибку, так как **пример** не является функцией.  
   
 ```JavaScript  
@@ -37,9 +31,9 @@ var x = example();           // Try and call example as if it were a function.
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Вызывать только **прототип функции** методы `Function` объектов.  
+- Вызывать только **прототип функции** методы `Function` объектов.  
   
--   Убедитесь, что используется оператор вызова функции `()` вызывать только функции.  
+- Убедитесь, что используется оператор вызова функции `()` вызывать только функции.  
   
 ## <a name="see-also"></a>См. также  
  [Объект функции](../../javascript/reference/function-object-javascript.md)   

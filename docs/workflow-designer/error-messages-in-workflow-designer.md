@@ -2,7 +2,6 @@
 title: Сообщения об ошибках в конструкторе рабочего процесса
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - WFDErrorMessages.UI
 - System.Activities.Presentation.ErrorActivity.UI
@@ -10,15 +9,15 @@ f1_keywords:
 ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 393157c11029a36038b3fea0fa78af413d650ef3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949707"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Сообщения об ошибках в конструкторе рабочего процесса
 
@@ -28,13 +27,13 @@ ms.locfileid: "53871399"
 
 Ошибки в конструкторе рабочих процессов, возникают в следующих ситуациях:
 
-1.  В выражении имеется ошибка.
+1. В выражении имеется ошибка.
 
-2.  Не удовлетворены проверочные ограничения для действия.
+2. Не удовлетворены проверочные ограничения для действия.
 
-3.  В файле XAML имеются ошибки, которые не позволяют загрузить действие.
+3. В файле XAML имеются ошибки, которые не позволяют загрузить действие.
 
-4.  В файле XAML имеются ошибки, которые не позволяют загрузить рабочий процесс.
+4. В файле XAML имеются ошибки, которые не позволяют загрузить рабочий процесс.
 
 Недопустимые выражения и неудовлетворенные проверочные ограничения не препятствуют сборке рабочего процесса. Сборка рабочего процесса завершается успешно, но во время выполнения вызывается исключение <xref:System.Activities.InvalidWorkflowException>. При наличии ошибок в файле XAML сборка завершается с ошибкой.
 

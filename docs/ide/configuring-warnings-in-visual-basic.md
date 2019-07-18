@@ -1,7 +1,6 @@
 ---
 title: Configuring Warnings in Visual Basic
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83ba1314f23ecc2d9166aac6fdc5d722a4fefe95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 022ba767a7d1952b659d66532d5542c42fa2f9bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976569"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Настройка предупреждений в Visual Basic
 

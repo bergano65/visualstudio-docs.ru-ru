@@ -4,28 +4,25 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Сведения о преимуществе Office 365, входящем в состав некоторых подписок Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: d68c8847dc9ab6f4daeaceb07dbd4023ca2148f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 625d9ccf24c17b96afc9c79cc3b280c009e80fec
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968395"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250767"
 ---
-# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 профессиональный плюс в подписках Visual Studio
+# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 профессиональный плюс в подписках Visual Studio
 
-Создайте лучшие условия работы. Работайте только с последними версиями приложений из любого расположения. Подписка Office 365 профессиональный плюс поставляется с приложениями категории "Премиум", такими как Word, Excel, PowerPoint, OneNote, Outlook, Publisher и Access (последние два доступны только на компьютере). Приложения можно установить на нескольких устройствах, включая персональные компьютеры, компьютеры Mac, устройства iPad, устройства iPhone, планшеты и телефоны с Android. Кроме того, в подписке Office 365 предоставляются 1 ТБ хранилища OneDrive, 60 минут Skype в месяц, а также поддерживаемые Майкрософт службы чата и телефонных звонков. С этой подпиской вы получите последние версии приложений. Кроме того вам будут автоматически предоставляться обновления, когда они будут доступны.
+Создайте лучшие условия работы. Работайте только с последними версиями приложений из любого расположения. Подписка Office 365 профессиональный плюс поставляется с приложениями категории "Премиум", такими как Word, Excel, PowerPoint, OneNote, Outlook, Publisher и Access (последние два доступны только на компьютере). Приложения можно установить на нескольких устройствах, включая персональные компьютеры, компьютеры Mac, устройства iPad, устройства iPhone, планшеты и телефоны с Android. С этой подпиской вы получите последние версии приложений. Кроме того вам будут автоматически предоставляться обновления, когда они будут доступны.
 
-## <a name="getting-started-with-office-365-pro-plus"></a>Начало работы с Office 365 профессиональный плюс
+## <a name="getting-started-with-office-365-proplus"></a>Начало работы с Office 365 профессиональный плюс
 
 Чтобы скачать и активировать Office 365 профессиональный плюс, сделайте следующее:
-1. Войдите в подписку Visual Studio Enterprise.  
+1. Войдите в подписку Visual Studio Enterprise.
 2. Щелкните вкладку **Загрузки**.
-3. Вы увидите список файлов для загрузки. В списке Office выберите **Office 365**. 
+3. Вы увидите список файлов для загрузки. В списке Office выберите **Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Скачиваемые файлы для Office 365](_img/vs-office365/vs-office365-downloads.png)
 0. Для установки Office 365 вам потребуется ключ продукта.  Щелкните ссылку **Получить ключ** под продуктом Office 365.
@@ -36,7 +33,7 @@ ms.locfileid: "53968395"
    > ![Запрос ключа продукта Office 365](_img/vs-office365/vs-office365-claim-key.png)
 0. Запишите ключ, который вы только что запросили. (Вы всегда можете вернуться к этому списку и просмотреть ключ.)
 0. Закройте всплывающее окно.
-0. Нажмите кнопку **Скачать**. 
+0. Нажмите кнопку **Скачать**.
    > [!div class="mx-imgBorder"]
    > ![Начало скачивания Office 365](_img/vs-office365/vs-office365-download-button.png)
 0. Выполните вход со своей учетной записью Майкрософт. (Если вы уже выполнили вход, нажмите кнопку **Далее**.)
@@ -44,35 +41,32 @@ ms.locfileid: "53968395"
    > [!div class="mx-imgBorder"]
    > ![Ввод ключа продукта Office 365](_img/vs-office365/vs-office365-enter-key.png)
 0. Нажмите кнопку **Далее** еще раз.
-0. Нажмите кнопку **Установить**, чтобы установить приложения Office. 
+0. Нажмите кнопку **Установить**, чтобы установить приложения Office.
 
 ## <a name="next-steps"></a>Следующие шаги
 
 Если вы планируете разрабатывать приложения для Office, вам потребуется активировать [подписку разработчика Office](vs-office-dev.md).
 
-
 ## <a name="eligibility"></a>Право на участие
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия| Доступно       |  Да          |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия| Доступно       |  Yes          |
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Не для перепродажи (NFR) <sup>1</sup> | Недоступно       |  Н/Д          |
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | Недоступно                                                            |  Н/Д          |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Недоступно                                             |  Н/Д          |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              |  Н/Д          |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
-| Visual Studio Dev Essentials | Н/Д  | Недоступно |Н/Д |
+|  |
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Microsoft Valued Professional (MVP), региональный директор (RD), ПО и службы MCT, Imagine, Microsoft Partner Network.*
-
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Most Valuable Professional (MVP), региональный директор (RD), ПО и службы MCT, Imagine, Microsoft Partner Network.*
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
-
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Для получения технической поддержки по любому компоненту EMS посетите страницу https://support.microsoft.com/allproducts и выберите продукт.
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о среде IDE Visual Studio, Azure DevOps или других продуктах либо службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+- Для получения технической поддержки по любому компоненту EMS посетите страницу https://support.microsoft.com/allproducts и выберите продукт.
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- У вас есть вопросы о среде IDE Visual Studio, Azure DevOps или других продуктах либо службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

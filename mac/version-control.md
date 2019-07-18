@@ -1,16 +1,16 @@
 ---
 title: Управление версиями
 description: Использование Git и Subversion в Visual Studio для Mac.
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: 0505177e01afd701fe5506df7dd0fc2a2e1f859c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 33d4fa8b641f71094930d5eac39164916b41f4b4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294725"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692227"
 ---
 # <a name="version-control"></a>Управление версиями
 

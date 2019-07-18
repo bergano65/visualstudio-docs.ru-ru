@@ -1,14 +1,9 @@
 ---
 title: Диалоговое окно "Параметры текстового редактора" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Miscellaneous
@@ -25,18 +20,17 @@ ms.assetid: 90d4e522-6391-4571-927d-b466a9766342
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 939438c2506a95c98005144dde395028d18cc481
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163230"
 ---
 # <a name="text-editor-options-dialog-box"></a>Диалоговое окно "Параметры текстового редактора"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Параметры редактора в диалоговом окне **Параметры** позволяют настраивать внешний вид и поведение редактора.  
   
 ## <a name="in-this-section"></a>В этом разделе  
@@ -97,6 +91,3 @@ ms.locfileid: "49260239"
 ## <a name="related-sections"></a>Связанные разделы  
  [Создание кода](../../ide/writing-code-in-the-code-and-text-editor.md)  
  Описываются различные способы использования редактора кода.
-
-
-

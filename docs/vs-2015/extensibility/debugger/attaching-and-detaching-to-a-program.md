@@ -1,27 +1,22 @@
 ---
 title: Присоединение и отсоединение программы | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 - debug engines, detaching from programs
 ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b6bba6600d3ea32073a908199f5cd6ddaa33ef9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6e232a6f7fcb8813670ca6d949fdb6b3287bb79c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146449"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Присоединение к программе и отсоединение от нее
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +33,11 @@ ms.locfileid: "51762798"
   
     Если `S_OK` возвращается, DE является должен быть загружен в тот же процесс, что SDM. SDM выполняет следующие задачи:  
   
-   1.  Вызовы [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) получить сведения из DE.  
+   1. Вызовы [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) получить сведения из DE.  
   
-   2.  Совместно создает DE.  
+   2. Совместно создает DE.  
   
-   3.  Вызовы [присоединить](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+   3. Вызовы [присоединить](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
 2. Отправляет DE [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) для SDM с `EVENT_SYNC` атрибута.  
   
@@ -58,4 +53,3 @@ ms.locfileid: "51762798"
   
 ## <a name="see-also"></a>См. также  
  [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)
-

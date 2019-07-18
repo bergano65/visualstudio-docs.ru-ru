@@ -1,25 +1,22 @@
 ---
 title: Создание элементов и отношений в моделях UML | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: cae81d32-8cc7-4f7c-9f00-20119952bc51
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5ed918bc96168196400dd34d87ec65574fdfc5b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159633"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Создание элементов и отношений в моделях UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>Вызов метода создания для владельца  
- Имя метода имеет форму: `Create` *OwnedType*`()`. Пример:  
+ Имя метода имеет вид: `Create`*OwnedType*`()`. Например:  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -90,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>Создание ассоциации  
   
-1.  Получите владельца ассоциации. Как правило, это пакет или модель, которые содержат исходное окончание отношения.  
+1. Получите владельца ассоциации. Как правило, это пакет или модель, которые содержат исходное окончание отношения.  
   
-2.  Вызовите для владельца требуемый метод создания.  
+2. Вызовите для владельца требуемый метод создания.  
   
-3.  Задайте свойства отношения, такие как имя.  
+3. Задайте свойства отношения, такие как имя.  
   
      Например:  
   
@@ -103,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  Задайте свойства каждого окончания отношения. Параметров `MemberEnds` всегда два. Например:  
+4. Задайте свойства каждого окончания отношения. Параметров `MemberEnds` всегда два. Например:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -128,13 +125,10 @@ anElement.Delete();
   
  При удалении элемента из модели происходит следующее:  
   
--   Удаляется каждое связанное с ним отношение.  
+- Удаляется каждое связанное с ним отношение.  
   
--   Удаляется каждая фигура, которая представляет его на схеме.  
+- Удаляется каждая фигура, которая представляет его на схеме.  
   
 ## <a name="see-also"></a>См. также  
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Отображение модели UML на схемах](../modeling/display-a-uml-model-on-diagrams.md)
-
-
-

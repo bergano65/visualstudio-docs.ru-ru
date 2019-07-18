@@ -12,15 +12,15 @@ helpviewer_keywords:
 - sessions, setting multiple
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba98d1d2a4a427632487e2b96663c5c40ad0a052
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad917a67ab03a4cb6c1e265ec2dafcbe6e2ee421
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823573"
 ---
 # <a name="how-to-set-the-current-session"></a>Как выполнить Настройка текущего сеанса
 
@@ -36,7 +36,7 @@ ms.locfileid: "53841811"
 
 ## <a name="see-also"></a>См. также
 
-[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)  
-[Окно "Обозреватель производительности"](../profiling/performance-explorer-window.md)  
-[Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)  
+[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
+[Окно обозревателя производительности](../profiling/performance-explorer-window.md)
+[Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)
 [Общие сведения о сеансе анализа производительности](../profiling/performance-session-overview.md)

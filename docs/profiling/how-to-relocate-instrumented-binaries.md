@@ -11,15 +11,15 @@ helpviewer_keywords:
 - profiling tools, instrumented binaries
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8b50c5b76ea5b22bc9d734d32e433db1c7594d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96faf382145d7c4541f1fe66f872ad3622f64631
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539307"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Как выполнить Перемещение инструментированных двоичных файлов
 
@@ -37,5 +37,5 @@ ms.locfileid: "53893082"
 
 ## <a name="see-also"></a>См. также
 
-[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)  
+[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
 [VSInstr](../profiling/vsinstr.md)

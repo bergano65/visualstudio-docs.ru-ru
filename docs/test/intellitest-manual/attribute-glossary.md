@@ -1,21 +1,20 @@
 ---
 title: Глоссарий атрибутов | Инструмент тестирования для разработчиков Microsoft IntelliTest
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Attribute glossary
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e858c85c81e23fc460e858a0d2001c65b4877838
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aada3c1053ed30521d8c7116c887061650a083dc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834390"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825313"
 ---
 # <a name="attribute-glossary"></a>Глоссарий атрибутов
 
@@ -26,17 +25,17 @@ ms.locfileid: "53834390"
   * [PexClass](#pexclass)
   * [PexGenericArguments](#pexgenericarguments)
   * [PexMethod](#pexmethod)
-     - [PexExplorationAttributeBase](#pexexplorationattributebase)<p />
+    * [PexExplorationAttributeBase](#pexexplorationattributebase)
 
 * **Microsoft.Pex.Framework.Settings**
-  * [PexAssemblySettings](#pexassemblysettings)<p />
+  * [PexAssemblySettings](#pexassemblysettings)
 
 * **Microsoft.Pex.Framework.Instrumentation**
   * [PexAssemblyUnderTest](#pexassemblyundertest)
-  * [PexInstrumentAssembly](#pexinstrumentassemblyattribute)<p />
+  * [PexInstrumentAssembly](#pexinstrumentassemblyattribute)
 
 * **Microsoft.Pex.Framework.Using**
-  * [PexUseType](#pexusetype)<p />
+  * [PexUseType](#pexusetype)
 
 * **Microsoft.Pex.Framework.Validation**
   * [PexAllowedException](#pexallowedexception)
@@ -153,13 +152,13 @@ public partial class MyTests {
 ```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
-[assembly: PexAssemblySettings(TestFramework = "Naked")]
+[assembly: PexAssemblySettings(TestFramework = "MSTestv2")]
 ```
 
 <a name="pexassemblyundertest"></a>
 ## <a name="pexassemblyundertest"></a>PexAssemblyUnderTest
 
-Этот атрибут указывает сборку, проверяемую текущим тестовым проектом. 
+Этот атрибут указывает сборку, проверяемую текущим тестовым проектом.
 
 ```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")]

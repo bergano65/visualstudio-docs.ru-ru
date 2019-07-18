@@ -9,15 +9,14 @@ f1_keywords:
 author: mikeblome
 ms.author: mblome
 manager: wpickett
-ms.prod: visual-studio-dev15
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c27673b8e6a5e0acce8f37fe20d675f56a62bbc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f4705b6326a3a2968084ecbd1bd385954528017
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817769"
 ---
 # <a name="options-text-editor-cc-view"></a>"Параметры", "Текстовый редактор", C/C++, "Представление"
 
@@ -47,7 +46,7 @@ ms.locfileid: "53846572"
 
 - **Выделение совпадающих токенов**. Выделение вмещающих скобок или синтаксиса, который совпадает с фрагментом, где находится курсор.
 
-## <a name="outlining"></a>структуризация
+## <a name="outlining"></a>Структуризация
 
 - **Включить структуру**. Входить в режим структуры при открытии файлов.
 

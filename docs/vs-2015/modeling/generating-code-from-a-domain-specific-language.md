@@ -1,23 +1,20 @@
 ---
 title: Создание кода из доменного языка | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e3706cc9-2afd-456a-a879-68425a248ebc
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5edc6e267957f08837399ae5c2e56bce3cc26cce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 63e1b48a7582294c200b1e30147d85a9b26165d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182802"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Создание кода из доменного языка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +42,11 @@ Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] предоставляет эф
   
  Содержит основные сведения о ссылке на предметно ориентированного языка в текстовых шаблонах.  
   
- [Пошаговое руководство. Отладка текстового шаблона, обращающегося к модели](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)  
+ [Пошаговое руководство: Отладка текстового шаблона, обращающегося к модели](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)  
   
  В этой статье описывается устранение неполадок и отладка в текстовый шаблон, который ссылается на предметно ориентированного языка.  
   
- [Пошаговое руководство. Связывание основного приложения с генерируемым обработчиком директив](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)  
+ [Пошаговое руководство: Связывание основного приложения с генерируемым обработчиком директив](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)  
   
  В этой статье описывается подключение пользовательского ведущего приложения с генерируемым обработчиком директив.  
   
@@ -70,6 +67,3 @@ Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] предоставляет эф
  [Создание кода в процессе сборки](../modeling/code-generation-in-a-build-process.md)  
   
  В этом разделе, при создании файлов из доменного языка на сервере сборки.
-
-
-

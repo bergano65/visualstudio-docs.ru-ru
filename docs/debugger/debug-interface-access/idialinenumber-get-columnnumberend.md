@@ -9,36 +9,37 @@ helpviewer_keywords:
 ms.assetid: 02fa56c1-87b6-405a-adee-3bb6bc62de2d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbf8a7b7e7d71172f93fee3d6548c69254301a98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 567df436093b53432e44e21fb96f0d092b71c81d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839853"
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
-Получает номер столбца источника от единицы, которой заканчивается выражения или оператора.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_columnNumberEnd (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает номер столбца, в которой заканчивается выражения или оператора. Если значение равно нулю, сведения о столбце окончания отсутствует.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Значение столбца, возвращаемого этим методом является байтовое смещение в строку в позицию после последнего символа в строке инструкции.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Получает номер столбца источника от единицы, которой заканчивается выражения или оператора.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_columnNumberEnd ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает номер столбца, в которой заканчивается выражения или оператора. Если значение равно нулю, сведения о столбце окончания отсутствует.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Значение столбца, возвращаемого этим методом является байтовое смещение в строку в позицию после последнего символа в строке инструкции.
+
+## <a name="see-also"></a>См. также
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -2,19 +2,18 @@
 title: IntelliSense для кода R
 description: Visual Studio IntelliSense позволяет при вводе кода R просмотреть сведения о функциях и завершениях, а также элементы объекта и фрагменты кода.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: eaa56759476a2cecc557c4610a6b9e321b9b91ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999111"
 ---
 # <a name="intellisense"></a>IntelliSense
 

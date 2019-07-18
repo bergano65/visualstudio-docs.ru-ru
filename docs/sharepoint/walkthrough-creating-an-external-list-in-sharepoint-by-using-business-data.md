@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных | Документация Майкрософт
+title: Создание внешнего списка в SharePoint, с помощью бизнес-данных
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +14,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf9c7d13e6aaac85d3bac4254247a3c07b39b5c3
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918788"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401069"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Пошаговое руководство. Создание внешнего списка в SharePoint с помощью бизнес-данных
 
@@ -70,13 +70,13 @@ ms.locfileid: "53918788"
 
      Откроется диалоговое окно **Добавление нового элемента**.
 
-8. В **шаблоны** панели выберите **Business Data Connectivity Model (только для решения фермы)**, назовите проект **AdventureWorksContacts**, а затем выберите **Добавить** кнопки.
+8. В **шаблоны** панели выберите **Business Data Connectivity Model (только для решения фермы)** , назовите проект **AdventureWorksContacts**, а затем выберите **Добавить** кнопки.
 
 ## <a name="add-data-access-classes-to-the-project"></a>Добавьте в проект классы доступа к данным
 
 1. В строке меню выберите **средства** > **подключение к базе данных**.
 
-     **Добавить подключение** откроется диалоговое окно.
+     Откроется диалоговое окно **Добавление соединения**.
 
 2. Добавьте подключение к базе данных SQL Server AdventureWorks.
 
@@ -186,7 +186,7 @@ ms.locfileid: "53918788"
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
-    |Номер телефона|System.String|
+    |Телефон|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
@@ -276,7 +276,7 @@ ms.locfileid: "53918788"
 
 ## <a name="see-also"></a>См. также
 
-[Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[Создание модели подключения к бизнес-данных](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[Обзор средств проектирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md)  
-[Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+[Проектирование модели подключения к бизнес-данным](../sharepoint/designing-a-business-data-connectivity-model.md)
+[Создание модели подключения к бизнес-данным](../sharepoint/creating-a-business-data-connectivity-model.md)
+[Обзор средства конструирования модели BDC](../sharepoint/bdc-model-design-tools-overview.md) 
+ [ Интеграция бизнес-данных в SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

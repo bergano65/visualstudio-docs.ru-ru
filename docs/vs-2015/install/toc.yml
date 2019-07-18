@@ -1,0 +1,34 @@
+- name: "Установка Visual Studio\_2015"
+  items:
+    - name: "Установка Visual Studio\_2015"
+      href: install-visual-studio-2015.md
+    - name: Создание автономной установки Visual Studio
+      href: create-an-offline-installation-of-visual-studio.md
+    - name: Параллельная установка версий Visual Studio
+      href: install-visual-studio-versions-side-by-side.md
+    - name: Использование параметров командной строки для установки Visual Studio
+      href: use-command-line-parameters-to-install-visual-studio.md
+    - name: Удаление Visual Studio
+      href: uninstall-visual-studio.md
+    - name: Visual Studio Administrator Guide
+      items:
+        - name: Visual Studio Administrator Guide
+          href: visual-studio-administrator-guide.md
+        - name: Установка определенного выпуска Visual Studio
+          href: how-to-install-a-specific-release-of-visual-studio.md
+        - name: Создание и запуск автоматической установки Visual Studio
+          href: how-to-create-and-run-an-unattended-installation-of-visual-studio.md
+        - name: Автоматическое применение ключей продуктов при развертывании Visual Studio
+          href: how-to-automatically-apply-product-keys-when-deploying-visual-studio.md
+    - name: Установка нескольких языковых версий Visual Studio
+      items:
+        - name: Установка нескольких языковых версий Visual Studio
+          href: install-multiple-language-versions-of-visual-studio.md
+        - name: Пакеты интерфейса пользователя (Microsoft LIP) и Visual Studio
+          href: microsoft-language-interface-packs-lips-and-visual-studio.md
+    - name: Обновление с пробного выпуска Visual Studio
+      href: how-to-upgrade-from-a-trial-edition-of-visual-studio.md
+    - name: Расположение ключа продукта Visual Studio
+      href: how-to-locate-the-visual-studio-product-key.md
+    - name: Исключения политики жизненного цикла Visual Studio
+      href: visual-studio-lifecycle-policy-exceptions.md

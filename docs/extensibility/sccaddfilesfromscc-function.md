@@ -7,75 +7,84 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b650810ea0c3a7df32d6a058947d83fb8842b7f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfe58c3eef4b09fccb5cd21b714e5987ae1e08aa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818969"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333966"
 ---
 # <a name="sccaddfilesfromscc-function"></a>Функция SccAddFilesFromSCC
-Эта функция добавляет список файлов из системы управления версиями в настоящее время открытый проект.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-SCCRTN SccAddFilesFromSCC(  
-   LPVOID  pContext,  
-   HWND    hWnd,  
-   LPSTR   lpUser,  
-   LPSTR   lpAuxProjPath,  
-   LONG    cFiles,  
-   LPCSTR* lpFilePaths,  
-   LPCSTR  lpDestination,  
-   LPCSTR  lpComment,  
-   LPBOOL  pbResults  
-);  
-```  
-  
-### <a name="parameters"></a>Параметры  
- pContext  
- [in] Подключаемый модуль Контекстный указатель исходного элемента управления.  
-  
- hWnd  
- [in] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для любой диалоговых окон, которые он предоставляет.  
-  
- lpUser  
- [in, out] Имя пользователя (до SCC_USER_SIZE, включая завершающий символ null).  
-  
- lpAuxProjPath  
- [in, out] Вспомогательный строка, определяющая проекта (до `SCC_PRJPATH_`размер, включая завершающий символ null).  
-  
- cFiles  
- [in] Число файлов, предоставляемых `lpFilePaths`.  
-  
- lpFilePaths  
- [in, out] Массив имен файлов, чтобы добавить в текущий проект.  
-  
- lpDestination  
- [in] Целевой путь, в которой находятся файлы должны быть записаны.  
-  
- lpComment  
- [in] Комментарий, который будет применяться к каждой из добавленных файлов.  
-  
- pbResults  
- [in, out] Массив флагов, которые являются набора в случае успеха (ненулевое значение или TRUE) или ошибка ("ноль" или "FALSE") для каждого файла (размер массива должен быть по крайней мере `cFiles` long).  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
-  
-|Значение|Описание:|  
-|-----------|-----------------|  
-|SCC_E_PROJNOTOPEN|Проект не открыт.|  
-|SCC_E_OPNOTPERFORMED|Соединение не тот же проект, в соответствии с `lpAuxProjPath.`|  
-|SCC_E_NOTAUTHORIZED|Пользователь не авторизован для обновления базы данных.|  
-|SCC_E_NONSPECIFICERROR|Неизвестная ошибка.|  
-|SCC_I_RELOADFILE|Файл или проект должен быть перезагружен.|  
-  
-## <a name="see-also"></a>См. также  
- [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)
+Эта функция добавляет список файлов из системы управления версиями в настоящее время открытый проект.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+SCCRTN SccAddFilesFromSCC(
+   LPVOID  pContext,
+   HWND    hWnd,
+   LPSTR   lpUser,
+   LPSTR   lpAuxProjPath,
+   LONG    cFiles,
+   LPCSTR* lpFilePaths,
+   LPCSTR  lpDestination,
+   LPCSTR  lpComment,
+   LPBOOL  pbResults
+);
+```
+
+### <a name="parameters"></a>Параметры
+ pContext
+
+[in] Подключаемый модуль Контекстный указатель исходного элемента управления.
+
+ hWnd
+
+[in] Дескриптор окна интегрированной среды разработки, подключаемый модуль системы управления версиями можно использовать в качестве родительского для любой диалоговых окон, которые он предоставляет.
+
+ lpUser
+
+[in, out] Имя пользователя (до SCC_USER_SIZE, включая завершающий символ null).
+
+ lpAuxProjPath
+
+[in, out] Вспомогательный строка, определяющая проекта (до `SCC_PRJPATH_`размер, включая завершающий символ null).
+
+ cFiles
+
+[in] Число файлов, предоставляемых `lpFilePaths`.
+
+ lpFilePaths
+
+[in, out] Массив имен файлов, чтобы добавить в текущий проект.
+
+ lpDestination
+
+[in] Целевой путь, в которой находятся файлы должны быть записаны.
+
+ lpComment
+
+[in] Комментарий, который будет применяться к каждой из добавленных файлов.
+
+ pbResults
+
+[in, out] Массив флагов, которые являются набора в случае успеха (ненулевое значение или TRUE) или ошибка ("ноль" или "FALSE") для каждого файла (размер массива должен быть по крайней мере `cFiles` long).
+
+## <a name="return-value"></a>Возвращаемое значение
+ Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:
+
+|Значение|Описание|
+|-----------|-----------------|
+|SCC_E_PROJNOTOPEN|Проект не открыт.|
+|SCC_E_OPNOTPERFORMED|Соединение не тот же проект, в соответствии с `lpAuxProjPath.`|
+|SCC_E_NOTAUTHORIZED|Пользователь не авторизован для обновления базы данных.|
+|SCC_E_NONSPECIFICERROR|Неизвестная ошибка.|
+|SCC_I_RELOADFILE|Файл или проект должен быть перезагружен.|
+
+## <a name="see-also"></a>См. также
+- [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)

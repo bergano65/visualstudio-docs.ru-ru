@@ -1,25 +1,20 @@
 ---
 title: Сбор подробных данных по времени для служб с использованием метода инструментирования из командной строки профилировщика | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 396fe5511e1ef027b8dff1af350e2fa5b883e980
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 8946d57b2aecaeef167579275ccedd6ce984e2f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200773"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Сбор подробных данных о времени для служб с использованием метода инструментирования из командной строки профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "53845503"
   
 ## <a name="common-tasks"></a>Общие задачи  
   
-|Задача|Связанное содержимое|  
+|Задача|См. также|  
 |----------|---------------------|  
 |**Профилирование службы .NET**|-   [Практическое руководство. Инструментирование службы .NET и сбор подробных данных об использовании времени](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
 |**Добавление данных взаимодействия между уровнями**|-   [Сбор данных взаимодействия уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
@@ -38,7 +33,7 @@ ms.locfileid: "53845503"
   
 ### <a name="profiling-windows-services"></a>Профилирование служб Windows  
   
-|Задача|Связанное содержимое|  
+|Задача|См. также|  
 |----------|---------------------|  
 |**Профилирование с помощью метода выборки**|-   [Использование метода выборки для сбора статистики приложения](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
 |**Профилирование выделения памяти .NET и сбора мусора**|-   [Сбор данных об использовании памяти .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
@@ -46,13 +41,10 @@ ms.locfileid: "53845503"
   
 ### <a name="profiling-by-using-the-instrumentation-method"></a>Профилирование с помощью метода инструментирования  
   
-|Задача|Связанное содержимое|  
+|Задача|См. также|  
 |----------|---------------------|  
 |**Профилирование автономных (клиентских) приложений**|-   [Сбор подробных сведений о времени с помощью инструментирования](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
 |**Профилирование веб-приложений ASP.NET**|-   [Сбор подробных сведений о времени с помощью инструментирования](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Анализ данных инструментирования представлений и отчетов  
  [Представление данных метода инструментирования](../profiling/instrumentation-method-data-views.md)
-
-
-

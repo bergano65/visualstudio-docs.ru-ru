@@ -1,14 +1,9 @@
 ---
 title: Средство масштабирования представления "Ядра" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.zoom
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f7d48602-ba32-4487-b51a-89e596124108
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d3d902c2642171fdfa27f20a764c5414daa3ccf3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183783"
 ---
 # <a name="cores-view-zoom-tool"></a>Средство масштабирования представления "Ядра"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +27,9 @@ ms.locfileid: "51727797"
   
 ## <a name="other-ways-to-zoom"></a>Другие способы масштабирования  
   
--   Увеличение: перетащите, чтобы выбрать область в представлении временной шкалы. Когда кнопка мыши будет отпущена, представление временной шкалы увеличится по выбранному диапазону.  
+- Увеличение: перетащите, чтобы выбрать область в представлении временной шкалы. Когда кнопка мыши будет отпущена, представление временной шкалы увеличится по выбранному диапазону.  
   
--   Увеличение и уменьшение: наведите указатель мыши на временную шкалу и, нажав и удерживая клавишу CTRL, перемещайте колесико мыши.  
+- Увеличение и уменьшение: Наведите указатель мыши на временной шкале и нажмите клавишу CTRL при перемещении колесика мыши.  
   
 ## <a name="see-also"></a>См. также  
  [Представление "Ядра"](../profiling/cores-view.md)
-
-
-

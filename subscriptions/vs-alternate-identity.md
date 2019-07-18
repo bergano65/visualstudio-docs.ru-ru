@@ -6,15 +6,12 @@ manager: evelynp
 ms.date: 04/10/2018
 ms.topic: conceptual
 description: Как добавить альтернативный идентификатор для подписки Visual Studio, который будет использоваться для Azure DevOps и Azure
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: vs subscription
-ms.openlocfilehash: 68ce5c2a19797b827f1ed6304107ac62ef82623f
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: bec00f6e49ce04781ad69a56b30637b375000b6e
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858156"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784713"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Идентификаторы для подписчиков Visual Studio
 
@@ -35,9 +32,7 @@ ms.locfileid: "47858156"
 
 Для всех подписок можно добавить рабочую или учебную учетную запись, чтобы использовать ее с преимуществами, для которых требуется вход (IDE Visual Studio, Azure DevOps и Azure).
 
-
 ### <a name="add-the-alternate-account"></a>Добавление альтернативной учетной записи
-
 
 1. Войдите на портал подписчика Visual Studio с помощью учетной записи Майкрософт (https://my.visualstudio.com).
 
@@ -62,7 +57,7 @@ ms.locfileid: "47858156"
 
 ## <a name="faq"></a>часто задаваемые вопросы
 
-### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>Вопрос. Почему Azure DevOps не распознает меня как подписчика Visual Studio?
+### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>Вопрос:  Почему Azure DevOps не распознает меня как подписчика Visual Studio?
 
 Ответ. Служба Azure DevOps должна автоматически распознавать вашу подписку при входе с основным или альтернативным идентификатором. Если этого не происходит, попробуйте выполнить следующее.
 

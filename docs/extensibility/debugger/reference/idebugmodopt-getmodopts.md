@@ -1,56 +1,59 @@
 ---
 title: IDebugModOpt::GetModOpts | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugModOpt::GetModOpts
 - GetModOpts
 ms.assetid: cb513fa9-d521-4a65-b968-f55f53a368df
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ef054e35fe136b0b3280494b3dfd43cd58a53d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f5ebced053b80af8dce81d41e6614e89e4ffbf3a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908245"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324012"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
-Возвращает список необязательных модификаторов.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT GetModOpts(  
-   ULONG  celt,  
-   BSTR*  rgelt,  
-   ULONG* pceltFetched  
-);  
-```  
-  
-```csharp  
-int GetModOpts(  
-   uint         celt,  
-   out string[] rgelt,  
-   ref uint     pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `celt`  
- [in] Число элементов, которые должны быть возвращены.  
-  
- `rgelt`  
- [out] Возвращает массив, содержащий параметры.  
-  
- `pceltFetched`  
- [in, out] Количество элементов, возвращаемых в `rgelt` массива.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugModOpt](../../../extensibility/debugger/reference/idebugmodopt.md)
+Возвращает список необязательных модификаторов.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetModOpts(
+   ULONG  celt,
+   BSTR*  rgelt,
+   ULONG* pceltFetched
+);
+```
+
+```csharp
+int GetModOpts(
+   uint         celt,
+   out string[] rgelt,
+   ref uint     pceltFetched
+);
+```
+
+## <a name="parameters"></a>Параметры
+`celt`\
+[in] Число элементов, которые должны быть возвращены.
+
+`rgelt`\
+[out] Возвращает массив, содержащий параметры.
+
+`pceltFetched`\
+[in, out] Количество элементов, возвращаемых в `rgelt` массива.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDebugModOpt](../../../extensibility/debugger/reference/idebugmodopt.md)

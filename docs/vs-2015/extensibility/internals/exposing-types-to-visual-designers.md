@@ -1,14 +1,9 @@
 ---
 title: Предоставление типов конструкторам визуальных элементов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
 - designers [Visual Studio SDK], exposing types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c19fe00713bd328574e5a05cc6f6f3a60f18ddf9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f4d6c0e163b751f1873fdb941e85c273dcc4fde5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791557"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691206"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Предоставление типов конструкторам визуальных элементов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,25 +29,24 @@ ms.locfileid: "51791557"
  Система проектов обеспечивает полную поддержку для отслеживания изменений в выходном файле файлом настраиваемого средства, при условии, что эти изменения являются результатом работы пользовательского инструмента. Каждый раз выполняется настраиваемый инструмент, создается новый временный PE, и соответствующие уведомления отправляются для конструкторов.  
   
 > [!NOTE]
->  Так как файл исполняемого файла создания временной происходит в фоновом режиме, ошибки не выводятся пользователю, если компиляция завершается с ошибкой.  
+> Так как файл исполняемого файла создания временной происходит в фоновом режиме, ошибки не выводятся пользователю, если компиляция завершается с ошибкой.  
   
  Пользовательские инструменты, использующие преимущества поддержки временного PE должна соответствовать следующим правилам:  
   
--   `GeneratesDesignTimeSource` должно быть установлено в 1 в реестре.  
+- `GeneratesDesignTimeSource` должно быть установлено в 1 в реестре.  
   
      Без компиляции исполняемый файл программы происходит без этого параметра.  
   
--   Созданный код должен быть на том же языке, что в качестве глобальных проектов.  
+- Созданный код должен быть на том же языке, что в качестве глобальных проектов.  
   
      Независимо от того, что именно пользовательское средство сообщает о запрошенное расширение в компилируется временного PE <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> условии, что `GeneratesDesignTimeSource` имеет значение 1 в реестре. Расширение не нужно быть .vb, .cs или расширением JSL; Это может быть любое расширение.  
   
--   Код, созданный с помощью пользовательского средства должен быть допустимым, и его необходимо скомпилировать в свой собственный набор ссылок в проекте одновременно используют <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> завершения выполнения.  
+- Код, созданный с помощью пользовательского средства должен быть допустимым, и его необходимо скомпилировать в свой собственный набор ссылок в проекте одновременно используют <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> завершения выполнения.  
   
      При компиляции временного PE только исходный файл, предоставленный компилятору является выходные данные пользовательского инструмента. Таким образом пользовательское средство, которое использует временный PE необходимо создать выходные файлы, которые могут быть скомпилированы независимо от других файлов в проекте.  
   
 ## <a name="see-also"></a>См. также  
- [Знакомство с объектом BuildManager](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [Знакомство с объектом BuildManager](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [Реализация генераторов одного файла](../../extensibility/internals/implementing-single-file-generators.md)   
  [Определение пространства имен по умолчанию проекта](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Регистрация генераторов одного файла](../../extensibility/internals/registering-single-file-generators.md)
-

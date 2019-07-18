@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
 author: gregg-miskelly
 ms.author: greggm
-manager: douge
+manager: jillfra
 ms.workload:
 - greggm
-ms.openlocfilehash: 0b81d0dc38e4fb6c6bb14860634d41d85aa4dee9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74fbb959f8272be001aad8a576724d5eb1ad6157
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433699"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>Миграция на 64-разрядного отладчика регистрации классов COM
 

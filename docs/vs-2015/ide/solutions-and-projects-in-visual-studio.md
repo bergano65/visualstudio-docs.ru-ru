@@ -1,13 +1,9 @@
 ---
 title: Проекты и решения
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.savedeferredsaveprojectonclose
 - vs.untrustedtemplateopeningdocuments
@@ -53,13 +49,13 @@ ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a4e50e386be097338207a2ef66904347f9170d3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905245"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679880"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Решения и проекты в Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +75,7 @@ ms.locfileid: "53905245"
  Вы можете также создать пользовательские шаблоны проектов и элементов. Дополнительные сведения см. в статье [Creating Project and Item Templates](../ide/creating-project-and-item-templates.md) (Создание шаблонов проектов и элементов).
 
 ## <a name="creating-new-projects"></a>Создание новых проектов
- Самый простой способ создать новый проект — начать с существующего шаблона проекта, который состоит из базового набора предварительно созданных файлов кода, файлов конфигурации, активов и параметров для создания приложения или веб-сайта определенного типа на конкретном языке программирования. Эти шаблоны отображаются в **диалоговом окне "Новый проект"**, если последовательно выбрать пункты **Файл | Создать | Проект** или **Файл | Создать | Веб-сайт** в главном меню. Дополнительные сведения см. в статьях [Создание решений и проектов](../ide/creating-solutions-and-projects.md) и [NIB Создание проектов из шаблонов](http://msdn.microsoft.com/en-us/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ Самый простой способ создать новый проект — начать с существующего шаблона проекта, который состоит из базового набора предварительно созданных файлов кода, файлов конфигурации, активов и параметров для создания приложения или веб-сайта определенного типа на конкретном языке программирования. Эти шаблоны отображаются в **диалоговом окне "Новый проект"**, если последовательно выбрать пункты **Файл | Создать | Проект** или **Файл | Создать | Веб-сайт** в главном меню. Дополнительные сведения см. в статьях [Создание решений и проектов](../ide/creating-solutions-and-projects.md) и [NIB Создание проектов из шаблонов](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Управление проектами в обозревателе решений
  После создания нового проекта вы используете **обозреватель решений** для просмотра проектов и решений, их связанных элементов, а также для управления ими. На следующем рисунке показан обозреватель серверов с решением C#, включающим два проекта.
@@ -88,23 +84,23 @@ ms.locfileid: "53905245"
 
 ## <a name="in-this-section"></a>В этом разделе
 
--   [Создание решений и проектов](../ide/creating-solutions-and-projects.md)
+- [Создание решений и проектов](../ide/creating-solutions-and-projects.md)
 
--   [Добавление и удаление элементов проекта](../ide/adding-and-removing-project-items.md)
+- [Добавление и удаление элементов проекта](../ide/adding-and-removing-project-items.md)
 
--   [Управление свойствами проектов и решений](../ide/managing-project-and-solution-properties.md)
+- [Управление свойствами проектов и решений](../ide/managing-project-and-solution-properties.md)
 
--   [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)
+- [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)
 
--   [Свойства приложения](../ide/application-properties.md)
+- [Свойства приложения](../ide/application-properties.md)
 
--   [Управление сборками и подписывание манифестов](../ide/managing-assembly-and-manifest-signing.md)
+- [Управление сборками и подписывание манифестов](../ide/managing-assembly-and-manifest-signing.md)
 
--   [Практическое руководство. Задание значка приложения (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Практическое руководство. Задание значка приложения (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
--   [Настройка конкретной версии платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Настройка конкретной версии платформы .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
 
--   [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
+- [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
 
 ## <a name="see-also"></a>См. также раздел
  [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)

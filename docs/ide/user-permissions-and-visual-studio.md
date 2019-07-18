@@ -1,7 +1,6 @@
 ---
 title: Запуск от имени администратора
 ms.date: 06/05/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -10,15 +9,15 @@ helpviewer_keywords:
 - permissions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d82825d9f1db2cd95222f4722d19b2f9347186
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1d012c0902aa82eb057f9d69c0b85b13262e847a
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833595"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66747625"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
 
@@ -34,7 +33,7 @@ ms.locfileid: "53833595"
 |Установка|Установка Visual Studio.|[Установка Visual Studio](../install/install-visual-studio.md)|
 ||Установка, обновление или удаление содержимого локальной справки.|[Установка содержимого локальной справки и управление им](../help-viewer/install-manage-local-content.md)|
 |Панель элементов|Добавление классических элементов управления COM в **панель элементов**.|[Панель элементов](../ide/reference/toolbox.md)|
-|Сборка|Использование выполняющихся после сборки событий, которые регистрируют компонент.|[Сведения о настраиваемых этапах сборки и событиях сборки](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+|Сборка|Использование выполняющихся после сборки событий, которые регистрируют компонент.|[Сведения о настраиваемых этапах сборки и событиях сборки](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||Включение этапа регистрации при сборке проектов С++.||
 |Отладка|Отладка приложений с повышенными разрешениями.|[Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)|
 ||Отладка приложений, выполняемых под другой учетной записью пользователя, например веб-сайтов ASP.NET.|[Отладка приложений ASP.NET и AJAX](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
@@ -51,11 +50,25 @@ ms.locfileid: "53833595"
 > [!NOTE]
 > Эти инструкции предназначены для Windows 10. Для других версий Windows они аналогичны.
 
+::: moniker range="vs-2017"
+
 1. Откройте меню **Пуск** и перейдите к Visual Studio 2017.
 
-1. При помощи щелчка правой кнопкой или контекстного меню **Visual Studio 2017** выберите **More (Дополнительно)** > **Запуск от имени администратора**.
+1. При помощи щелчка правой кнопкой или контекстного меню **Visual Studio 2017** выберите **Дополнительно** > **Запуск от имени администратора**.
 
-   После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)**.
+   После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)** .
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Откройте меню **Пуск** и перейдите к Visual Studio 2019.
+
+1. При помощи щелчка правой кнопкой или контекстного меню **Visual Studio 2019** выберите **Дополнительно** > **Запуск от имени администратора**.
+
+   После запуска Visual Studio в заголовке окна после имени продукта будет указано **(Администратор)** .
+
+::: moniker-end
 
 Можно также изменить ярлык приложения, чтобы всегда запускать его с правами администратора.
 

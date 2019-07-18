@@ -1,7 +1,6 @@
 ---
 title: Как выполнить Экспорт диаграмм классов как изображений (конструктор классов)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.exportdialog
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe46216957f6104869e9cad7e95ce46769fb2a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3fb8f735478da16989830a1a68c239b9a2a98496
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975207"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Как выполнить Экспорт диаграмм классов в виде изображений
 
@@ -26,15 +25,15 @@ ms.locfileid: "53873834"
 
 ## <a name="export-a-diagram"></a>Экспорт схем
 
-1.  Откройте файл со схемой классов (*.cd*).
+1. Откройте файл со схемой классов (*.cd*).
 
-2.  В меню **Схема классов** или в контекстном меню области схемы выберите пункт **Экспортировать схему как рисунок**.
+2. В меню **Схема классов** или в контекстном меню области схемы выберите пункт **Экспортировать схему как рисунок**.
 
-3.  Выберите схему.
+3. Выберите схему.
 
-4.  Выберите нужный формат.
+4. Выберите нужный формат.
 
-5.  Выберите **Экспорт**, чтобы завершить экспорт.
+5. Выберите **Экспорт**, чтобы завершить экспорт.
 
 Чтобы автоматически обновить экспортированные изображения, на которые есть ссылки в других документах, еще раз экспортируйте схему в Visual Studio.
 

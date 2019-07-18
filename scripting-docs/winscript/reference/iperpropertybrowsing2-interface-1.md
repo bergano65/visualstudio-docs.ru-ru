@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IPerPropertyBrowsing2 1 | Документы Microsoft
+title: Интерфейс IPerPropertyBrowsing2 1 | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,24 +17,24 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75a0a7ef30bca2205789a63ea577808c11582791
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 156cf9a1e104b8a2d7ffe4e48bd39642ef1abbd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944901"
 ---
 # <a name="iperpropertybrowsing2-interface-1"></a>Интерфейс IPerPropertyBrowsing2 1
-Обращается к предлагаются сведения на страницах свойств объекта.  
+Обращается к сведения на страницах свойств, предлагаемых объекта.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|`GetDisplayString`|Возвращает текстовую строку, описывающую указанное свойство.|  
-|`MapPropertyToPage`|Возвращает CLSID страницы свойств, позволяющая управлять указанного свойства.|  
-|`GetPredefinedStrings`|Возвращает инвентаризации массив строк (`LPOLESTR` указатели) со списком допустимых значений, которые может принимать указанное свойство описания.|  
-|`SetPredefinedValue`|Задает значение свойства стандартных значение определяется маркером`dwCookie.`|  
+|`GetDisplayString`|Возвращает текстовую строку, описывающую указанного свойства.|  
+|`MapPropertyToPage`|Возвращает идентификатор CLSID страницы свойств, позволяющая управлять указанное свойство.|  
+|`GetPredefinedStrings`|Возвращает сосчитанный массив строк (`LPOLESTR` указатели) списков описаний допустимых значений, которые может принять указанное свойство.|  
+|`SetPredefinedValue`|Задает значение свойства с предопределенным значением, определенный токеном `dwCookie.`|  
   
 ## <a name="requirements"></a>Требования  
  Заголовок: dbgprop.h

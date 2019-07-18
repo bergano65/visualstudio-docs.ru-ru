@@ -1,30 +1,24 @@
 ---
 title: Диалоговом окне схем XML | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f97bfca4623a826130e68a5399cc2ab86f784cbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 82247c2510d64f712cc4b703154ea16a4bb7e7e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150659"
 ---
 # <a name="xml-schemas-dialog-box"></a>Диалоговое окно «XML-схемы»
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 **XML-схем** диалоговое окно используется для выбора какие схем XML схеме определения языка XSD для связывания с XML-документа. Можно выбрать схему из кэша схем или указать схему, которая не находится в кэше. Выбранные схемы считаются частью набора схем. Наборы схем применяются в технологии IntelliSense, а также служат для проверки правильности XML-документов.  
   
  Вы можете получить доступ к **XML-схем** диалоговое окно, либо нажав **схемы** кнопки в окне свойств документа или выбрав **схемы** из **XML** меню.  
@@ -53,8 +47,5 @@ ms.locfileid: "49899595"
   
 ## <a name="see-also"></a>См. также  
  [Компоненты редактора XML](../xml-tools/xml-editor-components.md)   
- [Как: выберите схему XML для использования](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
+ [Практическое руководство. Выбрать схему XML для использования](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
  [Кэш схем](../xml-tools/schema-cache.md)
-
-
-

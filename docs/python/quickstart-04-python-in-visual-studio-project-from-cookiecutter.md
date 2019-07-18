@@ -1,44 +1,43 @@
 ---
 title: Краткое руководство. Создание проекта Python с помощью Cookiecutter
 description: При помощи этого краткого руководства вы создадите проект Visual Studio для Python с помощью шаблона Cookiecutter.
-ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/25/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4712a5dd73c899e82a8fc6e07331be5b6e6c46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f3e7f56f4a36a7958cba9bd7092f38d735123d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954516"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Краткое руководство. Создание проекта из шаблона Cookiecutter
 
-После [установки поддержки Python в Visual Studio 2017](installing-python-support-in-visual-studio.md) можно легко создать проект на основе шаблона Cookiecutter, включая множество шаблонов, опубликованных в GitHub. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) предоставляет графический пользовательский интерфейс для поиска шаблонов, ввода их параметров и создания проектов и файлов. В Visual Studio 2017 этот компонент уже встроен. В ранних версиях Visual Studio этот компонент нужно устанавливать отдельно.
+После [установки поддержки Python в Visual Studio](installing-python-support-in-visual-studio.md) можно легко создать проект на основе шаблона Cookiecutter, включая множество шаблонов, опубликованных в GitHub. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) предоставляет графический пользовательский интерфейс для поиска шаблонов, ввода их параметров и создания проектов и файлов. В Visual Studio 2017 и более поздних версий этот компонент уже встроен. В более ранних версиях Visual Studio его нужно устанавливать отдельно.
 
 1. Для этого краткого руководства сначала установите дистрибутив Python Anaconda3, который включает в себя необходимые пакеты Python для приведенного здесь шаблона Cookiecutter. Запустите установщик Visual Studio, выберите **Изменить**, разверните параметры **разработки Python** в правой части экрана и выберите **Anaconda3** (32- или 64-разрядную версию). Имейте в виду, что установка может занять некоторое время в зависимости от скорости Интернета, но это самый простой способ установить необходимые пакеты.
 
 1. Запустите Visual Studio.
 
-1. Выберите **Файл** > **Создать** > **Из Cookiecutter**. При выборе этой команды в Visual Studio открывается окно с шаблонами. 
+1. Выберите **Файл** > **Создать** > **Из Cookiecutter**. При выборе этой команды в Visual Studio открывается окно с шаблонами.
 
     ![Создание проекта на основе шаблона Cookiecutter](media/projects-from-cookiecutter1.png)
 
-1. Выберите шаблон **Microsoft/python-sklearn-classifier-cookiecutter** и щелкните **Далее**. (При первом использовании Cookiecutter процесс может занять несколько минут.)
+1. Выберите шаблон **Microsoft/python-sklearn-classifier-cookiecutter** и щелкните **Далее**. (Этот процесс может занять несколько минут при первом использовании конкретного шаблона, так как Visual Studio устанавливает необходимые пакеты Python.)
 
-1. В следующим шаге укажите расположение для нового проекта в поле **Создать в** и нажмите кнопку **Создать**.
+1. В следующим шаге укажите расположение для нового проекта в поле **Создать в** и нажмите **Создать и открыть проект**.
 
     ![Второй этап работы с Cookiecutter, настройка свойств проекта](media/projects-from-cookiecutter2.png)
 
-1. По завершении процесса появится сообщение **Файлы успешно созданы**. Выберите команду **Открыть в обозревателе решений**, чтобы открыть проект.
+1. По завершении процесса появится сообщение **Файлы успешно созданы с помощью шаблона...**. Проект автоматически открывается в обозревателе решений.
 
-1. Чтобы запустить программу, нажмите клавиши **CTRL**+**F5** или последовательно выберите **Отладка** > **Запустить без отладки**. 
+1. Чтобы запустить программу, нажмите клавиши **CTRL**+**F5** или последовательно выберите **Отладка** > **Запустить без отладки**.
 
     ![Выходные данные проекта шаблона python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 

@@ -2,25 +2,24 @@
 title: Отладка кода R
 description: Visual Studio предоставляет полный набор функций отладки для R, в том числе точки останова, присоединение, стек вызовов и отслеживание состояния переменных.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 93e2887b15ff3f53634d68774ab31d3b4bfb7aaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 98dcbaaeb6f330cda3a14cf8c32afe403b50aa85
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939287"
 ---
 # <a name="debug-r-in-visual-studio"></a>Отладка R в Visual Studio
 
 Инструменты R для Visual Studio (RTVS) интегрируются с полным набором функций отладки Visual Studio (см. раздел [Отладка в Visual Studio](/visualstudio/debugger/debugger-feature-tour)). Эта поддержка включает точки останова, присоединение к выполняемым процессам, проверку и контроль значений переменных и проверку стека вызовов. В этой статье рассматриваются эти аспекты отладки, уникальные для R и RTVS.
 
-Запуск отладчика для запуска R в проекте R осуществляется так же, как и для проектов других типов: выберите **Отладка** > **Начать отладку**, нажмите клавишу **F5** или выберите **Source startup file** (Исходный файл запуска) на панели инструментов отладки: 
+Запуск отладчика для запуска R в проекте R осуществляется так же, как и для проектов других типов: выберите **Отладка** > **Начать отладку**, нажмите клавишу **F5** или выберите **Source startup file** (Исходный файл запуска) на панели инструментов отладки:
 
 ![Кнопка запуска отладчика для R](media/debugger-start-button.png)
 

@@ -7,30 +7,31 @@ dev_langs:
 ms.assetid: 46cde656-059b-4c20-9476-3ca68ccc9912
 author: mikejo5000
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 413952e516a7beb9a9371a3fe8c7c4517135d470
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: f8b245879a6b574c3f82b12d14b4fab637c2ecd7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935948"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62836301"
 ---
 # <a name="idiasymbolgetissingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
-Указывает, является ли `this` указатель указывает на элемент данных с помощью одиночного наследования.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_isSingleInheritance(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Указатель на `BOOL` , указывает ли `this` указатель указывает на элемент данных с помощью одиночного наследования.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Указывает, является ли `this` указатель указывает на элемент данных с помощью одиночного наследования.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_isSingleInheritance(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Указатель на `BOOL` , указывает ли `this` указатель указывает на элемент данных с помощью одиночного наследования.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

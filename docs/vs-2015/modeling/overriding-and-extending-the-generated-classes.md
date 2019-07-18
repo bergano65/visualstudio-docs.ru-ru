@@ -1,25 +1,22 @@
 ---
 title: Переопределение и расширение созданных классов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 ms.assetid: 30baa60d-a8ea-4611-96c1-8fcc3317cf21
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a7b9733a47b4763a0f28ee4b24b54fdfd44bf066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435005"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Переопределение и расширение созданных классов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +46,7 @@ ms.locfileid: "49933434"
  `} }`  
   
 > [!NOTE]
->  Для переопределения методов в созданном классе, следует всегда писать код в файле, который отделен от созданных файлов. Как правило файл хранится в папке с именем значение CustomCode. При внесении изменений в созданный код, они будут потеряны при повторном создании кода из определения DSL.  
+> Для переопределения методов в созданном классе, следует всегда писать код в файле, который отделен от созданных файлов. Как правило файл хранится в папке с именем значение CustomCode. При внесении изменений в созданный код, они будут потеряны при повторном создании кода из определения DSL.  
   
  Чтобы узнать, какие методы можно переопределить, введите **переопределить** в классе, разделенных пробелами. Подсказка IntelliSense поможет определить, какие методы можно переопределить.  
   
@@ -91,9 +88,6 @@ ms.locfileid: "49933434"
 ### <a name="net-events"></a>События .NET  
  Можно подписаться на события на фигурах. Например можно прослушивать щелчков мыши на фигуре. Вам нужно написать код, который подписывается на событие для каждого объекта. Этот код могут быть написаны на переопределение InitializeInstanceResources().  
   
- Некоторые события создаются на которым ShapeFields, используемый для рисования декораторов для фигуры. Например, см. в разделе [как: перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+ Некоторые события создаются на которым ShapeFields, используемый для рисования декораторов для фигуры. Пример см. в статье [Практическое руководство. Перехват щелчка фигуры или декоратора](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
  Обычно эти события не происходят внутри транзакции. Следует создать транзакцию, если вы хотите внести изменения в хранилище.
-
-
-

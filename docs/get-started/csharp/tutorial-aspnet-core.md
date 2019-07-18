@@ -3,25 +3,25 @@ title: Учебник. Начало работы с C# и ASP.NET Core
 titleSuffix: ''
 description: Пошаговые инструкции по созданию веб-приложения ASP.NET Core в Visual Studio на C#.
 ms.custom: seodec18, get-started
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 05/29/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 020d8dee31fbb2b1358ecefceef4859db93ecd3d
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 00423f3affa5c882137ee19c355252acbf23c976
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442000"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402119"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Учебник. Начало работы с C# и ASP.NET Core в Visual Studio
 
@@ -31,11 +31,21 @@ ms.locfileid: "53442000"
 
 ### <a name="install-visual-studio"></a>Установка Visual Studio
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+::: moniker range="vs-2017"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+
+::: moniker-end
 
 ### <a name="update-visual-studio"></a>Обновление Visual Studio
 
-Если вы уже установили Visual Studio, убедитесь, что используется самый последний выпуск среды. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio 2017](../../install/update-visual-studio.md).
+Если вы уже установили Visual Studio, убедитесь, что используется самый последний выпуск среды. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio](../../install/update-visual-studio.md).
 
 ### <a name="choose-your-theme-optional"></a>Выбор темы (необязательно)
 
@@ -45,11 +55,13 @@ ms.locfileid: "53442000"
 
 Сначала создадим проект ASP.NET Core. Проект этого типа содержит все файлы шаблонов, необходимые для полнофункционального веб-сайта, что избавляет вас от лишней работы.
 
+::: moniker range="vs-2017"
+
 1. Откройте Visual Studio 2017.
 
-2. В верхней строке меню выберите **Файл** > **Создать** > **Проект**. 
+2. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
-3. В левой области диалогового окна **Новый проект** разверните узел **Visual C#**, затем разверните узел **Веб** и выберите **.NET Core**. В средней области выберите **Веб-приложение ASP.NET Core**. Назовите файл *MyCoreApp* и нажмите **ОК**.
+3. В левой области диалогового окна **Новый проект** разверните узел **Visual C#** , затем разверните узел **Веб** и выберите **.NET Core**. В средней области выберите **Веб-приложение ASP.NET Core**. Назовите файл *MyCoreApp* и нажмите **ОК**.
 
    ![Шаблон проекта "Веб-приложение ASP.NET Core" в диалоговом окне "Новый проект" в интегрированной среде разработки Visual Studio](media/csharp-aspnet-choose-template-name-razor-mycoreapp-file.png)
 
@@ -86,11 +98,48 @@ ms.locfileid: "53442000"
    ![Диалоговое окно "Создать веб-приложение ASP.NET Core"](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > Если **ASP.NET Core 2.0** или более поздняя версия не отображается в верхнем раскрывающемся меню, убедитесь, что вы используете самый последний выпуск Visual Studio. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio 2017](../../install/update-visual-studio.md).
+   > Если в верхнем раскрывающемся меню не отображается **ASP.NET Core 2.1**, убедитесь, что используется самый последний выпуск Visual Studio. Дополнительные сведения об обновлении установки см. на странице [Обновление до последнего выпуска Visual Studio](../../install/update-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. На начальном экране выберите **Создать проект**.
+
+   ![Просмотр окна "Создание проекта"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. В поле поиска окна **Создание проекта** введите *ASP.NET*. Затем выберите **C#** в списке языков и **Windows** в списке платформ.
+
+   Применив фильтры языка и платформы, выберите шаблон **Веб-приложение ASP.NET Core** и нажмите кнопку **Далее**.
+
+   ![Выбор шаблона C# для веб-приложения ASP.NET Core](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+
+   > [!NOTE]
+   > Если шаблона **Веб-приложение ASP.NET Core** нет, его можно установить из окна **Создание проекта**. В сообщении **Не нашли то, что искали?** выберите ссылку **Установка других средств и компонентов**.
+   >
+   > ![Ссылка "Установка других средств и компонентов" из сообщения "Не нашли то, что искали?" в окне "Создание проекта"](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
+   > После этого в Visual Studio Installer выберите рабочую нагрузку **ASP.NET и разработка веб-приложений**.
+   >
+   > ![Рабочая нагрузка "Кроссплатформенная разработка .NET Core" в Visual Studio Installer](../../get-started/media/aspnet-core-web-dev-workload.png)
+   >
+   > Затем нажмите кнопку **Изменить** в Visual Studio Installer. Сохраните результаты работы, когда появится такой запрос. Выберите **Продолжить**, чтобы установить рабочую нагрузку. После этого вернитесь к шагу 2 в процедуре [Создание проекта](#create-a-project).
+
+1. В поле **Имя проекта** окна **Настроить новый проект** введите *MyCoreApp*. Затем нажмите **Создать**.
+
+   ![В окне "Настроить новый проект" назовите проект "MyCoreApp"](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
+
+1. Убедитесь, что в верхнем раскрывающемся меню диалогового окна **Создать веб-приложение ASP.NET Core** отображается **ASP.NET Core 2.1**. Выберите **Веб-приложение**, включающее примеры Razor Pages. Затем выберите **Создать**.
+
+   ![Окно "Create a new ASP.NET Core Web Application" (Создание веб-приложения ASP.NET Core)](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+
+   Новый проект открывается в Visual Studio.
+
+::: moniker-end
 
 ### <a name="about-your-solution"></a>Сведения о решении
 
-Это решение основано на конструктивном шаблоне **Страница Razor**. Он отличается от конструктивного шаблона [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) тем, что содержит код модели и код контролера в самой странице Razor.
+Это решение основано на конструктивном шаблоне **Страница Razor**. Он отличается от конструктивного шаблона [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) тем, что содержит код модели и управляющий код в самой странице Razor.
 
 ## <a name="tour-your-solution"></a>Обзор решения
 
@@ -131,7 +180,9 @@ ms.locfileid: "53442000"
      ![Нажмите кнопку "IIS Express" в Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
-     > Если появляется сообщение об ошибке **Не удается подключиться к веб-серверу "IIS Express"**, закройте среду Visual Studio и откройте ее с помощью пункта **Запуск от имени администратора** в контекстном меню. Затем снова запустите приложение.
+     > Если появляется сообщение об ошибке **Не удается подключиться к веб-серверу "IIS Express"** , закройте среду Visual Studio и откройте ее с помощью пункта **Запуск от имени администратора** в контекстном меню. Затем снова запустите приложение.
+     >
+     > Может также появиться запрос о том, хотите ли вы принять сертификат IIS SSL Express. Чтобы просмотреть код в веб-браузере, выберите **Да**, а затем снова **Да**, если появится предупреждение системы безопасности о дальнейшей обработке.
 
 1. Visual Studio откроет окно браузера. В строке меню вы должны увидеть названия страниц **Home** (Главная), **About** (О программе) и **Contact** (Контакты). (Если названия страниц не отображаются, нажмите кнопку меню, напоминающую гамбургер, чтобы их увидеть.)
 
@@ -145,7 +196,7 @@ ms.locfileid: "53442000"
 
    ![Просмотр текста на странице "About"](media/csharp-aspnet-razor-browser-page-about.png)
 
-1. Не закрывая окно браузера, вернитесь в Visual Studio.
+1. Вернитесь в Visual Studio и нажмите клавиши **SHIFT+F5**, чтобы выйти из режима отладки. Также после этого закроется проект в окне браузера.
 
 1. В Visual Studio выберите файл **About.cshtml**. Затем удалите слово _additional_, заменив его словами _file и directory_.
 
@@ -168,6 +219,7 @@ ms.locfileid: "53442000"
      Message = String.Format("Your directory is {0}.", directory);
      }
     ```
+
 1. Обратите внимание, что **Environment** (Среда) и **String** (Строка) подчеркнуты волнистой линией. Подчеркивание волнистой линией появилось, потому что эти типы находятся за пределами области.
 
    ![Ошибки, подчеркнутые волнистой линией, в методе OnGet](media/csharp-aspnet-razor-add-new-on-get-method.png)
@@ -176,11 +228,11 @@ ms.locfileid: "53442000"
 
    ![Список ошибок в Visual Studio](media/csharp-aspnet-razor-error-list.png)
 
-1. Давайте исправим это. В редакторе кода установите курсор в любую строку с ошибкой, а затем в поле слева выберите меню "Быстрые действия" (значок лампочки). В раскрывающемся меню выберите **using System;**, чтобы добавить эту директиву в начало файла и устранить ошибки.
+1. Давайте исправим это. В редакторе кода установите курсор в любую строку с ошибкой, а затем в поле слева выберите меню "Быстрые действия" (значок лампочки). В раскрывающемся меню выберите **using System;** , чтобы добавить эту директиву в начало файла и устранить ошибки.
 
    ![Добавление директивы using System;](media/csharp-aspnet-razor-add-usings.png)
 
-1. Нажмите клавиши **CTRL**+**S**, чтобы сохранить изменения, и обновите приложение в веб-браузере.
+1. Нажмите клавиши **CTRL**+**S**, чтобы сохранить изменения, и нажмите клавишу **F5**, чтобы открыть проект в веб-браузере.
 
 1. В верхней части веб-сайта выберите пункт **About** (О программе), чтобы просмотреть изменения.
 

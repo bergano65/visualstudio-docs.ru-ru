@@ -1,28 +1,23 @@
 ---
-title: 'Практическое: реализовать механизмы управления отменой | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Реализуйте механизмы управления отменой | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
 ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f7eb3e3a1bbda905b2f5c5819835b10513d444fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0f3d56ae02718f5dfdf373eeeb6aff774d11931e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435958"
 ---
-# <a name="how-to-implement-undo-management"></a>Практическое: реализовать механизмы управления отменой
+# <a name="how-to-implement-undo-management"></a>Практическое руководство. Реализуйте механизмы управления отменой
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Основным интерфейсом для управления отката является <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, который реализуется с помощью среды. Для поддержки управления отменой, реализации единиц отката отдельные (то есть <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, который может содержать несколько отдельных шагов.  
@@ -34,9 +29,9 @@ ms.locfileid: "51806104"
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>Для поддержки управления отменой для редактора одним представлением  
   
-1.  Вызовите `QueryInterface` на `IServiceProvider` интерфейса на фрейм окна для `IOleUndoManager`, из объекта представления документа, чтобы открыть диспетчер отмены (`IID_IOLEUndoManager`).  
+1. Вызовите `QueryInterface` на `IServiceProvider` интерфейса на фрейм окна для `IOleUndoManager`, из объекта представления документа, чтобы открыть диспетчер отмены (`IID_IOLEUndoManager`).  
   
-2.  При размещении представления в рамку окна, он получает указатель сайта, который он может использовать для вызова `QueryInterface` для `IServiceProvider`.  
+2. При размещении представления в рамку окна, он получает указатель сайта, который он может использовать для вызова `QueryInterface` для `IServiceProvider`.  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Случаи, когда редактор поддерживает несколько представлений  
  Если у вас есть Разделение документа и представления, то есть обычно один диспетчер отмены связан сам документ. Все блоки отмены помещаются на один диспетчер отмены связанный с объектом данных документа.  
@@ -53,17 +48,17 @@ ms.locfileid: "51806104"
   
 3. Ретрансляции вашей <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> и <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> вызывает сохраненную `IOleCommandTarget` интерфейса для следующих команд StandardCommandSet97:  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. Вызовите `QueryInterface` на `IOleUndoManager` для `IID_IVsChangeTrackingUndoManager`. Указатель на Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   
@@ -82,10 +77,9 @@ ms.locfileid: "51806104"
    `OleUndoManager` Класс представляет экземпляр стека одной операции отката. Таким образом только один объект диспетчера отмены на сущность данных отслеживается для отмены или повтора.  
   
 > [!NOTE]
->  Объект диспетчера отмены широко применяется в текстовом редакторе, это общий компонент, который не имеет определенного поддержки для текстового редактора. Если вы хотите поддерживать многоуровневые операции отмены или повтора, для этого можно использовать этот объект.  
+> Объект диспетчера отмены широко применяется в текстовом редакторе, это общий компонент, который не имеет определенного поддержки для текстового редактора. Если вы хотите поддерживать многоуровневые операции отмены или повтора, для этого можно использовать этот объект.  
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
  [Практическое руководство. Очистка стека отмены](../extensibility/how-to-clear-the-undo-stack.md)
-

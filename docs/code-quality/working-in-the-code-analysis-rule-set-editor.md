@@ -1,22 +1,21 @@
 ---
 title: Использование редактора набора правил анализа кода
 ms.date: 04/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548f50b3d348c520ed7746b7dc3d123ffeb4c6aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820318"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Использование редактора набора правил анализа кода
 
@@ -24,7 +23,7 @@ ms.locfileid: "53826040"
 
 В следующей таблице показаны параметры серьезности:
 
-|Действие (уровень серьезности)|Описание:|
+|Действие (уровень серьезности)|Описание|
 |-|-|
 |Предупреждение|Создает предупреждение в **список ошибок** и также во время сборки.|
 |Error|Приводит к ошибке в **список ошибок** и также во время сборки.|
@@ -49,7 +48,7 @@ ms.locfileid: "53826040"
 
 В следующей таблице описаны элементы управления на панели инструментов редактора набора правил.
 
-|Элемент управления ToolBar|Описание:|
+|Элемент управления ToolBar|Описание|
 |---------------------|-----------------|
 |**Развернуть все**|Показывает правила во всех группах.|
 |**Свернуть все**|Скрытие правил во всех группах.|

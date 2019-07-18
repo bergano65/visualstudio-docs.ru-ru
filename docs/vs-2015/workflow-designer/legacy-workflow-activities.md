@@ -1,11 +1,8 @@
 ---
 title: Действия рабочего процесса прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activities
@@ -15,13 +12,13 @@ ms.assetid: 4af7a06b-1e82-43c8-aec8-0dc5fb63d08a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fa5a6da8d45435fc7c755905a19e95e90a98ad57
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000150"
 ---
 # <a name="legacy-workflow-activities"></a>Действия с рабочими процессами для прежних версий
 [!INCLUDE[wf](../includes/wf-md.md)] включает набор действий по умолчанию, которые предоставляют функции работы с потоками управления, условиями, обработки событий, управления состоянием и взаимодействия с приложениями и службами. При разработке рабочих процессов можно использовать действия, предоставляемые системой [!INCLUDE[wfd1](../includes/wfd1-md.md)], или создавать собственные пользовательские действия.  
@@ -74,19 +71,19 @@ ms.locfileid: "49205420"
  [Представления действий (для прежних версий)](../workflow-designer/activity-views-legacy.md)  
  Описание различных представлений конструктора действий.  
   
- [Как добавить действия в область элементов (для прежних версий)](../workflow-designer/how-to-add-activities-to-the-toolbox-legacy.md)  
+ [Практическое руководство. Добавление действий на панель инструментов (для прежних версий)](../workflow-designer/how-to-add-activities-to-the-toolbox-legacy.md)  
  Рассматривается добавление действий на панель инструментов.  
   
- [Как создать условие декларативного правила (для прежних версий)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)  
+ [Практическое руководство. Создание условия декларативного правила (для прежних версий)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)  
  Последовательность действий для создания условия декларативного правила.  
   
- [Как создать набор правил PolicyActivity (для прежних версий)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
+ [Практическое руководство. Создание набора правил PolicyActivity (для прежних версий)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
  Последовательность действий для создания набора правила PolicyActivity.  
   
- [Как реализовать операцию контракта WCF (для прежних версий)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Практическое руководство. Реализация операции контракта WCF (для прежних версий)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  
  Последовательность действий для реализации операции контракта [!INCLUDE[indigo2](../includes/indigo2-md.md)].  
   
- [Как вызвать операцию контракта WCF (для прежних версий)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
+ [Практическое руководство. Вызов операции контракта WCF (для прежних версий)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)  
  Последовательность действий для вызова операции контракта [!INCLUDE[indigo2](../includes/indigo2-md.md)].  
   
 ## <a name="see-also"></a>См. также  

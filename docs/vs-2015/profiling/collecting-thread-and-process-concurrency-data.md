@@ -1,14 +1,9 @@
 ---
 title: Сбор данных о параллелизме потоков и процессов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
 - Profiling Tools, concurrency method
@@ -16,13 +11,13 @@ ms.assetid: fa03d381-a9ee-408c-876d-05111e29225b
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: df473bea51edd157e3856d274663b72dcc11bc23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cf8a9de5f2a7e520a745fab81197016d6e1bd15d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568191"
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>Сбор данных о параллелизме потоков и процессов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +46,7 @@ ms.locfileid: "51762621"
 |Задача|Связанное содержимое|  
 |----------|---------------------|  
 |На странице **Общие** задайте сведения об имени создаваемого файла данных профилирования (VSP).|-   [Практическое руководство. Настройка параметров имени файла с данными о производительности](../profiling/how-to-set-performance-data-file-name-options.md)|  
-|На странице **Запуск** укажите приложение для запуска, если в решении с кодом содержится несколько проектов исполняемых файлов (EXE).|-   [Практическое руководство. Указание двоичного файла для запуска](../profiling/how-to-specify-the-binary-to-start.md)|  
+|На странице **Запуск** укажите приложение для запуска, если в решении с кодом содержится несколько проектов исполняемых файлов (EXE).|-   [Практическое руководство. Определение двоичного файла для запуска](../profiling/how-to-specify-the-binary-to-start.md)|  
 |На странице **Взаимодействие уровней** добавьте данные вызова ADO.NET в сеанс профилировщика.|-   [Сбор данных взаимодействия уровней](../profiling/collecting-tier-interaction-data.md)|  
 |На странице **Счетчики Windows** выберите один или несколько счетчиков производительности операционной системы, значения которых будут добавляться в данные профилирования в качестве меток.|-   [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)|  
 |На странице **Дополнительно** укажите версию среды выполнения .NET Framework для профилирования, если модули приложения используют несколько версий. По умолчанию профилируется первая загруженная версия.|-   [Практическое руководство. Определение среды выполнения .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
-
-
-

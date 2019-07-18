@@ -1,26 +1,21 @@
 ---
 title: Проект подтипы разработки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96ab44df6512b4288cf01f4c1f99d435a9c24bd5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430553"
 ---
 # <a name="project-subtypes-design"></a>Разработка подтипов проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,11 +24,11 @@ ms.locfileid: "51806130"
   
  Следующие разделы подробно описаны основные проектирование и реализацию подтипов проекта.  
   
--   Структура подтип проекта.  
+- Структура подтип проекта.  
   
--   Многоуровневые статистической обработки.  
+- Многоуровневые статистической обработки.  
   
--   Поддержка интерфейсов.  
+- Поддержка интерфейсов.  
   
 ## <a name="project-subtype-design"></a>Проектирование подтип проекта  
  Инициализация подтипом проекта достигается за счет объединения основной <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> объектов. Объединение позволяет подтипа проекта для переопределения или изменения большинство возможностей базового проекта. Подтипов проекта получить первый шанс обработки свойств с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, команд с использованием <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>и проект элемента управления с помощью <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Также можно расширить подтипов проекта:  
@@ -76,11 +71,11 @@ ms.locfileid: "51806130"
 ## <a name="multi-level-aggregation"></a>Многоуровневые статистической обработки  
  Реализация подтип проекта, который заключает в оболочку подтипом нижнего уровня проекта должен быть создается совместно, чтобы позволить внутреннего подтипа проекта для правильной. Включает список программирования обязанности:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Должны делегировать реализацию подтипа проекта, который является оболочкой внутренний подтип <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> реализацию внутреннего подтипа проекта для обоих <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> методы.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Должны делегировать реализацию подтипа проекта, который является оболочкой внутренний подтип <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> реализацию внутреннего подтипа проекта для обоих <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> и <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> методы.  
   
--   <xref:EnvDTE80.IInternalExtenderProvider> Реализации оболочки подтипа проекта следует делегировать, его внутренний подтип проекта. В частности, реализации <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> необходимо получить строку имен из внутреннего подтипа проекта, а затем выполнит объединение строк, необходимо добавить в качестве расширения.  
+- <xref:EnvDTE80.IInternalExtenderProvider> Реализации оболочки подтипа проекта следует делегировать, его внутренний подтип проекта. В частности, реализации <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> необходимо получить строку имен из внутреннего подтипа проекта, а затем выполнит объединение строк, необходимо добавить в качестве расширения.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Реализации оболочки подтипа проекта необходимо создать экземпляр <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> объекта его внутренний подтип проекта и удерживайте его как закрытый делегат, так как только объект конфигурации проекта базового проекта непосредственно знает, что оболочка существует объект конфигурации подтипа проекта. Внешним подтипом проекта можно сначала выберите интерфейсов конфигурации, оно может обработать напрямую, а затем делегирует rest для реализации внутреннего подтипа проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> Реализации оболочки подтипа проекта необходимо создать экземпляр <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> объекта его внутренний подтип проекта и удерживайте его как закрытый делегат, так как только объект конфигурации проекта базового проекта непосредственно знает, что оболочка существует объект конфигурации подтипа проекта. Внешним подтипом проекта можно сначала выберите интерфейсов конфигурации, оно может обработать напрямую, а затем делегирует rest для реализации внутреннего подтипа проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
   
 ## <a name="supporting-interfaces"></a>Поддержка интерфейсов  
  Базовый проект делегирует вызовы поддержка интерфейсов, добавленные подтипом проекта, чтобы расширить различные аспекты его реализации. Это включает в себя расширение объектов конфигурации проекта и различных свойств обозревателя объектов. Эти интерфейсы извлекаются путем вызова `QueryInterface` на `punkOuter` (указатель на `IUnknown`) агрегатора подтип внешний проект.  
@@ -97,4 +92,3 @@ ms.locfileid: "51806130"
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>
-

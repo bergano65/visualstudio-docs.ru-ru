@@ -1,23 +1,20 @@
 ---
 title: Экспорт схем UML в файлы изображений | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: b29ce2a5-0ee3-4ab7-9aa3-13ca9c6b37a2
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd80ea5ce8cc1ee3778b3fc185746ee95ad3eacf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7c04b8bd4ab956fe60191237910db35e2e463d3e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442952"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Экспорт схем UML в файлы изображений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +27,7 @@ ms.locfileid: "51771548"
  Следующий код определяет команду контекстного меню, которая сохраняет изображение в файл.  
   
 > [!NOTE]
->  Чтобы этот код работал как команда меню, его необходимо включить в компонент MEF. Дополнительные сведения см. в разделе [определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+> Чтобы этот код работал как команда меню, его необходимо включить в компонент MEF. Дополнительные сведения см. в разделе [определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
  Сначала в коде используется <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape.GetObject%2A> для получения <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> базовой реализации. Этот тип имеет метод <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.  
   
@@ -147,6 +144,3 @@ namespace SaveToImage
 ## <a name="see-also"></a>См. также  
  [Экспорт схем в виде изображений](../modeling/export-diagrams-as-images.md)   
  [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

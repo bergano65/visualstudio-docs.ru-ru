@@ -9,8 +9,9 @@
 - name: Окно журнала графики
   href: graphics-log-document.md
 - name: Анализ кадров графики
-  href: graphics-frame-analysis.md
   items:
+    - name: Анализ кадров графики
+      href: graphics-frame-analysis.md
     - name: Вариант размера окна просмотра (1x1)
       href: 1x1-viewport-size-variant.md
     - name: Варианты 0x/2x/4x MSAA
@@ -46,9 +47,10 @@
 - name: Программа командной строки для захвата
   href: command-line-capture-tool.md
 - name: Примеры диагностики графики
-  href: graphics-diagnostics-examples.md
   items:
-    - name: Пошаговое руководство. Запись графических сведений
+    - name: Примеры диагностики графики
+      href: graphics-diagnostics-examples.md
+    - name: Пошаговое руководство. Захват графической информации
       href: walkthrough-capturing-graphics-information.md
     - name: Пошаговое руководство. Запись графических сведений программными средствами
       href: walkthrough-capturing-graphics-information-programmatically.md
@@ -62,14 +64,16 @@
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
     - name: Пошаговое руководство. Использование диагностики графики для отладки вычислительного шейдера
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: Практическое руководство. Изменение машины воспроизведения диагностики графики
+    - name: Практическое руководство. изменение компьютера воспроизведения диагностики графики
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Справочник (программный захват)
-  href: reference-programmatic-capture.md
   items:
+    - name: Справочник (программный захват)
+      href: reference-programmatic-capture.md
     - name: Класс VsgDbg
-      href: vsgdbg-class.md
       items:
+        - name: Класс VsgDbg
+          href: vsgdbg-class.md
         - name: 'VsgDbg::VsgDbg (конструктор)'
           href: vsgdbg-vsgdbg-constructor.md
         - name: 'VsgDbg::~VsgDbg (деструктор)'

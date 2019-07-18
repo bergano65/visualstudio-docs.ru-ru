@@ -1,26 +1,21 @@
 ---
 title: Основные интерфейсы | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea9a80bf469d0555b07d48ca48b158027c90abb7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 94703f13eba0c58aad24597bc65beeea862e79e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179219"
 ---
 # <a name="core-interfaces"></a>Базовые интерфейсы
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -72,10 +67,10 @@ ms.locfileid: "51764801"
   
 - Visual Studio (VS)  
   
-##  <a name="Breakpoints"></a> Точки останова  
+## <a name="Breakpoints"></a> Точки останова  
  Эти интерфейсы, относящиеся к реализации и отслеживания точек останова.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)|DE|Представляет точку останова, привязанным к точке памяти.|  
 |[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|Отправленные DE при привязке точку останова на адрес памяти.|  
@@ -93,10 +88,10 @@ ms.locfileid: "51764801"
 |[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Представляет перечисление по набору связанных точек останова.|  
 |[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Представляет перечисление через набор точек останова, которые не удалось выполнить привязку на адрес памяти.|  
   
-##  <a name="Contexts"></a> Контексты  
+## <a name="Contexts"></a> Контексты  
  Эти интерфейсы представляют различные контексты в отлаживаемой программы.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|Представляет начальную позицию инструкции кода.|  
 |[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|Расширяет [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) интерфейс, чтобы обеспечить получение модулей и процессов.|  
@@ -107,18 +102,18 @@ ms.locfileid: "51764801"
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Представляет контекст кадра стека в точки останова или исключение.|  
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Представляет перечисление через набор контекстов кода.|  
   
-##  <a name="CoreServer"></a> Core Server  
+## <a name="CoreServer"></a> Core Server  
  Эти интерфейсы являются компьютера, на котором выполняется отладка программы. Они реализованы с [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] , но могут быть вызваны в отладчиков.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Предоставляет доступ к портам и поставщикам портов, а также сведения о компьютере.|  
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Представляет [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) , поддерживает удаленную отладку.|  
   
-##  <a name="DebugEngines"></a> Модули отладки  
+## <a name="DebugEngines"></a> Модули отладки  
  Эти интерфейсы являются обработчикам отладки и связанные с ними события.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)|DE|Представляет пользовательского модуля отладки.|  
 |[IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)|DE|Представляет пользовательского модуля отладки, поддерживает загрузку символов, JustMyCode и исключения.|  
@@ -127,10 +122,10 @@ ms.locfileid: "51764801"
 |[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Представляет узел программы, который обрабатывает несколько ядер отладки.|  
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|Предоставляет способ для SDM получить интерфейс для обработчика отладки из потока, программы или кадр стека.|  
   
-##  <a name="Documents"></a> Документы  
+## <a name="Documents"></a> Документы  
  Эти интерфейсы представления документов (исходные файлы) и связанных с ними элементов.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Отправленные DE запрос документа должны быть открыты.|  
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|Представляет поток Дизассемблированный инструкции из документа.|  
@@ -142,10 +137,10 @@ ms.locfileid: "51764801"
 |[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|Представляет текстовый документ, предоставляемые DE (производный от [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)), указав действительный текст.|  
 |[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|Отправляет DE определяют изменения в исходный файл, находящийся в памяти.|  
   
-##  <a name="Events"></a> События  
+## <a name="Events"></a> События  
  Эти интерфейсы являются все события, которые передаются между DE и диспетчер отладки сеансов (SDM).  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Отправленные DE запрос документа должны быть открыты.|  
 |[IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)|DE|Модуль отладки (DE) отправляет этот интерфейс диспетчер отладки сеансов (SDM), чтобы задать состояние панели сообщения во время загрузки символов.|  
@@ -187,27 +182,27 @@ ms.locfileid: "51764801"
 |[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Посылается элементом DE, в то время когда поток был удален.|  
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Отправленные DE при изменении имени потока.|  
   
-##  <a name="Expressions"></a> Выражения  
+## <a name="Expressions"></a> Выражения  
  Эти интерфейсы являются выражения, вычисляемое в указанном контексте.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|Представляет выражение для оценки. Полученный из [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) интерфейс.|  
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Представляет контекст, в котором вычисляется выражение. Полученный из [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) интерфейс.|  
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Отправленные DE после завершения вычисления асинхронные выражения.|  
   
-##  <a name="Memory"></a> Память  
+## <a name="Memory"></a> Память  
  Эти интерфейсы являются последовательности байтов в памяти.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|Представляет последовательность байтов в памяти, чтения или записи.|  
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|Представляет расположение в памяти последовательности байтов.|  
   
-##  <a name="Modules"></a> Модули  
+## <a name="Modules"></a> Модули  
  Эти интерфейсы являются модуль, который соответствует исполняемый файл или. DLL-файл.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)|DE|Представляет один исполняемый файл или DLL.|  
 |[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)|DE|Представляет [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) , поддерживает символы.|  
@@ -215,10 +210,10 @@ ms.locfileid: "51764801"
 |[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|Представляет сведения об исходном сервере, содержащийся в PDB-файл.|  
 |[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Представляет собой перечисление на наборе модулей, которые известны по [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md).|  
   
-##  <a name="Ports"></a> Порты  
+## <a name="Ports"></a> Порты  
  Эти интерфейсы являются порты и поставщикам портов.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)|VS, PS|Представляет порт по умолчанию на локальном компьютере.|  
 |[IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md)|VS|Включает отладчик, который использует DCOM попросить [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] пользовательского интерфейса, чтобы убедиться в том, что брандмауэр не блокирует удаленную отладку.|  
@@ -235,10 +230,10 @@ ms.locfileid: "51764801"
 |[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)|VS, PS|Представляет перечисление через набор портов.|  
 |[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)|VS|Представляет перечисление по набору поставщикам портов.|  
   
-##  <a name="Processes"></a> Процессы  
+## <a name="Processes"></a> Процессы  
  Эти интерфейсы представления процессов, один исполняемый файл, который содержит один или несколько программ.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, DE|Представляет процесс, который выполняется на компьютере.|  
 |[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, DE|Представляет процесс, который активно поддерживает отладки (используется для замены шаг, продолжить и выполнение методов на [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) интерфейс).|  
@@ -247,10 +242,10 @@ ms.locfileid: "51764801"
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Представляет процесс, который необходимо отслеживать, какой сеанс подключен к нему.|  
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Представляет перечисление набор процессов на порте.|  
   
-##  <a name="Programs"></a> Программы  
+## <a name="Programs"></a> Программы  
  Эти интерфейсы являются программы, логические единицы выполнения, которые не обязательно соответствуют физической исполняемый файл или модуль.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)|DE|Представляет [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) , который необходимо работать совместно с другими программами, отлаживаемого в то же время.|  
 |[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|DE, PS|Представляет логическую единицу выполнения.|  
@@ -266,10 +261,10 @@ ms.locfileid: "51764801"
 |[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE, PS|Представляет [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) , может выполнить маршалинг интерфейсы через границы потоков или процессов.|  
 |[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE, PS|Представляет перечисление набор программ.|  
   
-##  <a name="Properties"></a> Свойства  
+## <a name="Properties"></a> Свойства  
  Эти интерфейсы представляют свойства, значение, связанное с конкретным контекстом, обычно это результат вычисления выражения.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)|EE|Представляет [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) , можно отобразить ее значение любым способом.|  
 |[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)|DE|Представляет значение кадр стека, документа или результат вычисления выражения.|  
@@ -280,20 +275,20 @@ ms.locfileid: "51764801"
 |[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Представляет перечисление по набору [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) структур, которые описывают переменные, регистры, параметров и выражений.|  
 |[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Представляет перечисление по набору [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) структуры.|  
   
-##  <a name="StackFrames"></a> Кадры стека  
+## <a name="StackFrames"></a> Кадры стека  
  Эти интерфейсы являются кадр стека, контекст, в которой произошла точки останова или исключение.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|Представляет контекст, в которой произошла точки останова или исключение.|  
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Представляет [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) который может обрабатывать перехват исключения.|  
 |[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|Представляет перечисление по набору [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) структур, которые определяют функцию вызвать последовательность, используемая для получения определенный кадр стека.|  
 |[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|Представляет перечисление по набору [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) структуры, которые описывают кадров стека.|  
   
-##  <a name="Threads"></a> Потоки  
+## <a name="Threads"></a> Потоки  
  Эти интерфейсы являются потоками и связанные с ними события.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|DE|Представляет поток выполнения.|  
 |[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|Отправленные DE, когда был создан поток.|  
@@ -301,10 +296,10 @@ ms.locfileid: "51764801"
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Отправленные DE при изменении имени потока.|  
 |[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|Представляет перечисление через набор потоков.|  
   
-##  <a name="TypeVisualizers"></a> Визуализаторы типа  
+## <a name="TypeVisualizers"></a> Визуализаторы типа  
  Эти интерфейсы обеспечивают поддержку визуализаторами типов. Эти интерфейсы обычно реализуются путем вычислитель выражений.  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)|EE|Представляет массив байтов, которые будут отображаться для типа визуализатора.|  
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|Предоставляет методы для получения доступа к данным, передается тип визуализатора.|  
@@ -313,4 +308,3 @@ ms.locfileid: "51764801"
 ## <a name="see-also"></a>См. также  
  [Справочник по API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [Создание пользовательского модуля отладки](../../../extensibility/debugger/creating-a-custom-debug-engine.md)
-

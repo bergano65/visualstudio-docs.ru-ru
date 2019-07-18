@@ -1,14 +1,9 @@
 ---
 title: Визуализатор параллелизма | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.viewnavigation
 - vs.cv.overview
@@ -20,22 +15,22 @@ ms.assetid: ae5879a0-1e1a-455a-ba72-148e57f59289
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 91fd9e0872529c61ffbfee42d1f3517c106340e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e9735f6ab6a44041deabdae0d57782da6f8c98b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434334"
 ---
 # <a name="concurrency-visualizer"></a>Визуализатор параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-ПРИМЕЧАНИЕ.]
->  Визуализатор параллелизма — это дополнительное расширение Visual Studio. Загрузите визуализатор параллелизма и средства сбора данных визуализатора параллелизма по следующим ссылкам:  
+ПРИМЕЧАНИЕ
+> Визуализатор параллелизма — это дополнительное расширение Visual Studio. Загрузите визуализатор параллелизма и средства сбора данных визуализатора параллелизма по следующим ссылкам:  
 > 
 > - Скачать расширение              [Визуализатор параллелизма](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) .  
->   -   Скачайте              [средства сбора данных визуализатора параллелизма для Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103).  
+>   - Скачайте              [средства сбора данных визуализатора параллелизма для Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103).  
 > 
 >   С помощью [служебной программы командной строки "Визуализатор параллелизма" (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) можно собирать трассировки из командной строки, чтобы просматривать их в визуализаторе параллелизма для Visual Studio 2015. Это средство можно использовать на компьютерах без установленной среды Visual Studio.  
   
@@ -44,11 +39,11 @@ ms.locfileid: "51733823"
  Визуализатор параллелизма основывается на функции [Трассировка событий Windows](http://go.microsoft.com/fwlink/?LinkId=234579) .  
   
 > [!NOTE]
->  Визуализатор параллелизма не поддерживает веб-проекты.  
+> Визуализатор параллелизма не поддерживает веб-проекты.  
   
-## <a name="related-topics"></a>Связанные разделы  
+## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Представление "Использование"](../profiling/utilization-view.md)|Содержит описание процедуры просмотра и анализа системных действий для всех процессоров.|  
 |[Представление потоков](../profiling/threads-view-parallel-performance.md)|Содержит описание процедуры анализа взаимодействия между потоками программы.|  
@@ -61,6 +56,3 @@ ms.locfileid: "51733823"
   
 ## <a name="see-also"></a>См. также  
  [Средства профилирования](../profiling/profiling-tools.md)
-
-
-

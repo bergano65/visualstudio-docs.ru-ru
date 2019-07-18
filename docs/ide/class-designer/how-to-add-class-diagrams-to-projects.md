@@ -1,7 +1,6 @@
 ---
-title: Как выполнить Добавление диаграмм классов в проекты (конструктор классов)
+title: Практическое руководство. Добавление диаграмм классов в проекты (конструктор классов)
 ms.date: 05/08/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
@@ -9,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df2047109ebd89b7dee621373bf30b9f55747a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06432ac0e882df506e4379a2f2cbffcf52c79f42
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866456"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332761"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>Как выполнить Добавление диаграмм классов в проекты
+# <a name="how-to-add-class-diagrams-to-projects"></a>Практическое руководство. Добавление диаграмм классов в проекты
 
 Для проектирования, изменения и рефакторинга классов и других типов добавьте в проект C# , Visual Basic или C++ диаграмму классов. Для визуализации различных частей кода в проекте добавьте в проект несколько диаграмм классов.
 
@@ -27,7 +26,7 @@ ms.locfileid: "53866456"
 
 ## <a name="install-the-class-designer-component"></a>Установка компонента "Конструктор классов"
 
-Если вы работаете в Visual Studio 2017 и у вас не установлен компонент **Конструктор классов**, выполните следующие действия, чтобы установить его.
+Если у вас не установлен компонент **Конструктор классов**, выполните следующие действия, чтобы установить его.
 
 1. Откройте **Visual Studio Installer** из меню "Пуск" или выбрав в строке меню Visual Studio **Инструменты** > **Получить инструменты и функции**.
 
@@ -72,6 +71,9 @@ ms.locfileid: "53866456"
 В **обозревателе решений** или в представлении классов щелкните проект правой кнопкой мыши и выберите **Просмотр**, а затем — **Просмотр схемы класса**.
 
 Будет создана автоматически заполняемая диаграмма классов.
+
+> [!NOTE]
+> Конструктор классов пока недоступен в проектах .NET Core.
 
 ## <a name="see-also"></a>См. также
 

@@ -1,14 +1,9 @@
 ---
 title: Функция SccGetExtendedCapabilities | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetExtendedCapabilities
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b84565713edda09c029d6565e0fdbfdfa11e7d42
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f02591eac6a3f69ae5513aa9dc0abed381cd1c8a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200099"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>Функция SccGetExtendedCapabilities
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ SCCRTN SccGetExtendedCapabilities(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Операция получения возможностей, успешно завершена.|  
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Произошла ошибка неизвестен или не задан.|  
@@ -64,4 +59,3 @@ SCCRTN SccGetExtendedCapabilities(
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
  [Коды ошибок](../extensibility/error-codes.md)   
  [Флаги возможностей](../extensibility/capability-flags.md)
-

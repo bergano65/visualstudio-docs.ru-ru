@@ -1,14 +1,9 @@
 ---
 title: Пошаговое руководство. Создание среды построения из нескольких компьютеров | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
@@ -16,13 +11,13 @@ ms.assetid: ae5391b1-3eec-42f5-beb3-f28630615a9e
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1422a126f88e72d0eca662aaa5348a6af500b8bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a33911ffe8c28dd84166e3e16ac6b7f0f48f583c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820698"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263019"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Пошаговое руководство. Создание среды построения из нескольких компьютеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,22 +68,22 @@ ms.locfileid: "49820698"
   
 ## <a name="prerequisites"></a>Предварительные требования  
   
--   Лицензированная копия Visual Studio Ultimate, Visual Studio Premium или Visual Studio Professional.  
+- Лицензированная копия Visual Studio Ultimate, Visual Studio Premium или Visual Studio Professional.  
   
--   Копия .NET Framework 4.5.1, которую можно скачать с веб-сайта [Visual Studio](http://www.microsoft.com/visualstudio/eng/downloads#d-additional-software).  
+- Копия .NET Framework 4.5.1, которую можно скачать с веб-сайта [Майкрософт](https://www.microsoft.com/download/details.aspx?id=40779).  
   
-##  <a name="InstallingSoftware"></a> Установка программного обеспечения на компьютеры  
+## <a name="InstallingSoftware"></a> Установка программного обеспечения на компьютеры  
  Сначала необходимо настроить главный компьютер, а затем компьютер построения.  
   
  При установке Visual Studio на главный компьютер создаются файлы и параметры, которые впоследствии необходимо скопировать на компьютер построения. Visual Studio можно установить на компьютер с архитектурой x86 или x64, но при этом главный компьютер и компьютер построения должны иметь одинаковые архитектуры.  
   
 #### <a name="to-install-software-on-the-computers"></a>Установка программного обеспечения на компьютеры  
   
-1.  Установите Visual Studio на главный компьютер.  
+1. Установите Visual Studio на главный компьютер.  
   
-2.  Установите .NET Framework 4.5 на компьютер построения. Чтобы проверить правильность установки, убедитесь, что значение в разделе реестра HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version начинается с "4.5".  
+2. Установите .NET Framework 4.5 на компьютер построения. Чтобы проверить правильность установки, убедитесь, что значение в разделе реестра HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version начинается с "4.5".  
   
-##  <a name="CopyingFiles"></a> Копирование файлов с главного компьютера на компьютер построения  
+## <a name="CopyingFiles"></a> Копирование файлов с главного компьютера на компьютер построения  
  В этом разделе описывается копирование необходимых файлов, компиляторов, средств построения, ресурсов MSBuild и параметров реестра с главного компьютера на компьютер построения. При разработке этих инструкций подразумевалось, что решение Visual Studio установлено на главном компьютере в каталоге по умолчанию. Если установка выполнена в другом месте, внесите соответствующие изменения.  
   
 - На компьютере с архитектурой x86 установка по умолчанию производится в папку C:\Program Files\Microsoft Visual Studio 11.0\  
@@ -98,7 +93,7 @@ ms.locfileid: "49820698"
   Обратите внимание, что имя папки Program Files зависит от установленной операционной системы. На компьютере с архитектурой x86 она называется \Program Files\\. На компьютере с архитектурой x64 эта папка называется \Program Files (x86)\\. Независимо от архитектуры системы в этом пошаговом руководстве папка Program Files называется %ProgramFiles%.  
   
 > [!NOTE]
->  На компьютере построения все соответствующие файлы должны находиться на том же диске. При этом буква диска может отличаться от буквы диска на главном компьютере, на котором находится Visual Studio. В любом случае необходимо учитывать расположение файлов при создании записей реестра, как описано далее в этом документе.  
+> На компьютере построения все соответствующие файлы должны находиться на том же диске. При этом буква диска может отличаться от буквы диска на главном компьютере, на котором находится Visual Studio. В любом случае необходимо учитывать расположение файлов при создании записей реестра, как описано далее в этом документе.  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>Копирования файлов пакета SDK для Windows на компьютер построения  
   
@@ -130,97 +125,97 @@ ms.locfileid: "49820698"
   
 2. Скопируйте рекурсивно следующие папки с главного компьютера на компьютер построения:  
   
-   -   %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
+   - %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
   
-   -   %ProgramFiles%\Common Files\Merge Modules\  
+   - %ProgramFiles%\Common Files\Merge Modules\  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\VC\  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\VC\  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
   
-   -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
+   - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
   
-   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
+   - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
   
-   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
+   - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
   
 3. Скопируйте следующие файлы с главного компьютера на компьютер построения:  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
   
-   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
+   - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
   
 4. Следующие библиотеки среды выполнения Visual C++ необходимы только в том случае, если вы запускаете сборку на компьютере построения, например в рамках автоматизированного тестирования. Эти файлы, как правило, находятся во вложенных папках %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86\ или %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64\, в зависимости от архитектуры системы. В системах с архитектурой x86 скопируйте двоичные файлы x86 в папку \Windows\System32\. В системах x64 скопируйте двоичные файлы x86 в папку Windows\SysWOW64\, а двоичные файлы x64 в папку Windows\System32\.  
   
-   -   \Microsoft.VC110.ATL\atl110.dll  
+   - \Microsoft.VC110.ATL\atl110.dll  
   
-   -   \Microsoft.VC110.CRT\msvcp110.dll  
+   - \Microsoft.VC110.CRT\msvcp110.dll  
   
-   -   \Microsoft.VC110.CRT\msvcr110.dll  
+   - \Microsoft.VC110.CRT\msvcr110.dll  
   
-   -   \Microsoft.VC110.CXXAMP\vcamp110.dll  
+   - \Microsoft.VC110.CXXAMP\vcamp110.dll  
   
-   -   \Microsoft.VC110.MFC\mfc110.dll  
+   - \Microsoft.VC110.MFC\mfc110.dll  
   
-   -   \Microsoft.VC110.MFC\mfc110u.dll  
+   - \Microsoft.VC110.MFC\mfc110u.dll  
   
-   -   \Microsoft.VC110.MFC\mfcm110.dll  
+   - \Microsoft.VC110.MFC\mfcm110.dll  
   
-   -   \Microsoft.VC110.MFC\mfcm110u.dll  
+   - \Microsoft.VC110.MFC\mfcm110u.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110chs.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110chs.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110cht.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110cht.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110deu.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110deu.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110enu.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110enu.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110esn.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110esn.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110fra.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110fra.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110ita.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110ita.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110jpn.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110jpn.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110kor.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110kor.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110rus.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110rus.dll  
   
-   -   \Microsoft.VC110.OPENMP\vcomp110.dll  
+   - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Скопируйте только следующие файлы из папки \Debug_NonRedist\x86\ или \Debug_NonRedist\x64\ на компьютере построения, как описывается в разделе [Подготовка тестового компьютера для запуска исполняемого файла отладки](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Другие файлы не копируются.  
+5. Скопируйте только следующие файлы из папки \Debug_NonRedist\x86\ или \Debug_NonRedist\x64\ на компьютере построения, как описывается в разделе [Подготовка тестового компьютера для запуска исполняемого файла отладки](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Другие файлы не копируются.  
   
-   -   \Microsoft.VC110.DebugCRT\msvcp110d.dll  
+   - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
-   -   \Microsoft.VC110.DebugCRT\msvcr110d.dll  
+   - \Microsoft.VC110.DebugCRT\msvcr110d.dll  
   
-   -   \Microsoft.VC110.DebugCXXAMP\vcamp110d.dll  
+   - \Microsoft.VC110.DebugCXXAMP\vcamp110d.dll  
   
-   -   \Microsoft.VC110.DebugMFC\mfc110d.dll  
+   - \Microsoft.VC110.DebugMFC\mfc110d.dll  
   
-   -   \Microsoft.VC110.DebugMFC\mfc110ud.dll  
+   - \Microsoft.VC110.DebugMFC\mfc110ud.dll  
   
-   -   \Microsoft.VC110.DebugMFC\mfcm110d.dll  
+   - \Microsoft.VC110.DebugMFC\mfcm110d.dll  
   
-   -   \Microsoft.VC110.DebugMFC\mfcm110ud.dll  
+   - \Microsoft.VC110.DebugMFC\mfcm110ud.dll  
   
-   -   \Microsoft.VC110.DebugOpenMP\vcomp110d.dll  
+   - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll  
   
-##  <a name="CreatingRegistry"></a> Создание параметров реестра  
+## <a name="CreatingRegistry"></a> Создание параметров реестра  
  Необходимо создать записи реестра для настройки параметров для MSBuild.  
   
 #### <a name="to-create-registry-settings"></a>Создание параметров реестра  
@@ -228,7 +223,7 @@ ms.locfileid: "49820698"
 1. Определите родительскую папку для записей реестра. Все записи реестра создаются в одном родительском разделе. На компьютере с архитектурой x86 родительским является раздел HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. На компьютере с архитектурой x64 родительским является раздел HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. Независимо от архитектуры системы в этом пошаговом руководстве родительский раздел называется %RegistryRoot%.  
   
    > [!NOTE]
-   >  Если архитектура главного компьютера отличается от компьютера построения, убедитесь, что используется соответствующий родительский раздел на каждом компьютере. Это особенно важно, если вы осуществляете автоматизацию процесса экспорта.  
+   > Если архитектура главного компьютера отличается от компьютера построения, убедитесь, что используется соответствующий родительский раздел на каждом компьютере. Это особенно важно, если вы осуществляете автоматизацию процесса экспорта.  
    >   
    >  Кроме того, если на компьютере построения буква диска отличается от той, которая используется на главном компьютере, соответствующим образом измените значения записей реестра.  
   
@@ -282,12 +277,12 @@ ms.locfileid: "49820698"
   
    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
   
-##  <a name="SettingEnvVariables"></a> Задание переменных среды для компьютера построения  
+## <a name="SettingEnvVariables"></a> Задание переменных среды для компьютера построения  
  Чтобы использовать MSBuild на компьютере построения, необходимо задать переменные среды PATH. Вы можете задать переменные с помощью файла vcvarsall.bat или настроить их вручную.  
   
 #### <a name="to-use-vcvarsallbat-to-set-environment-variables"></a>Использование файла vcvarsall.bat для установки переменных среды  
   
--   Откройте окно командной строки на компьютере построения и запустите файл %Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat. С помощью аргумента командной строки укажите набор средств, который вы хотите использовать — x86, собственный x64 или кроссплатформенный компилятор x64. Если аргумент командной строки не указан, используется набор средств x86.  
+- Откройте окно командной строки на компьютере построения и запустите файл %Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat. С помощью аргумента командной строки укажите набор средств, который вы хотите использовать — x86, собственный x64 или кроссплатформенный компилятор x64. Если аргумент командной строки не указан, используется набор средств x86.  
   
      В этой таблице описываются поддерживаемые аргументы для файла vcvarsall.bat:  
   
@@ -303,7 +298,7 @@ ms.locfileid: "49820698"
   
 1. Чтобы вручную настроить среду командной строки, необходимо добавить следующий путь к переменной среды PATH:  
   
-   -   %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE  
+   - %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE  
   
 2. При необходимости можно также добавить следующие пути в переменную PATH, чтобы упростить использование MSBuild для построения решений.  
   
@@ -319,29 +314,29 @@ ms.locfileid: "49820698"
   
    - %windir%\Microsoft.NET\Framework64\v4.0.30319  
   
-##  <a name="InstallingMSBuildToGAC"></a> Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере построения  
+## <a name="InstallingMSBuildToGAC"></a> Установка сборок MSBuild в глобальный кэш сборок (GAC) на компьютере построения  
  Для работы MSBuild на компьютере построения необходимо установить дополнительные сборки в глобальный кэш сборок.  
   
 #### <a name="to-copy-assemblies-from-the-host-computer-and-install-them-on-the-build-computer"></a>Копирование сборок с главного компьютера и их установка на компьютере построения  
   
-1.  Скопируйте рекурсивно следующие сборки с главного компьютера на компьютер построения. Они будут установлены в глобальный кэш сборок, поэтому место их расположения на компьютере построения не имеет значения.  
+1. Скопируйте рекурсивно следующие сборки с главного компьютера на компьютер построения. Они будут установлены в глобальный кэш сборок, поэтому место их расположения на компьютере построения не имеет значения.  
   
-    -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll  
+    - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll  
+    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll  
+    - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll  
   
-2.  Чтобы установить сборки в глобальный кэш сборок, найдите gacutil.exe на компьютере построения, используйте программу gacutil.exe на компьютере построения. Как правило, соответствующий файл находится в папке %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Если вы не можете найти эту папку, повторите действия, описываемые в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) этого пошагового руководства.  
+2. Чтобы установить сборки в глобальный кэш сборок, найдите gacutil.exe на компьютере построения, используйте программу gacutil.exe на компьютере построения. Как правило, соответствующий файл находится в папке %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Если вы не можете найти эту папку, повторите действия, описываемые в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) этого пошагового руководства.  
   
      Откройте окно командной строки с правами администратора и выполните следующую команду для каждого файла:  
   
      **gacutil -i \<file>**  
   
     > [!NOTE]
-    >  Для полной установки сборки в глобальный кэш сборок может потребоваться перезагрузка.  
+    > Для полной установки сборки в глобальный кэш сборок может потребоваться перезагрузка.  
   
-##  <a name="BuildingProjects"></a> Сборка проектов  
+## <a name="BuildingProjects"></a> Сборка проектов  
  Для построения проектов и решений [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] можно использовать средство Team Foundation Build или командную строку. Если вы используете Team Foundation Build, это средство вызывает исполняемый файл MSBuild, соответствующий архитектуре системы.  В командной строке можно использовать 32- и 64-разрядную версию MSBuild. Кроме того, можно выбрать версию архитектуры MSBuild, задав переменную среды PATH или напрямую вызвав исполняемый файл MSBuild, соответствующий архитектуре.  
   
  Чтобы использовать средство msbuild.exe в командной строке, выполните следующую команду, где вместо *solution.sln* следует указать имя вашего решения.  
@@ -351,29 +346,29 @@ ms.locfileid: "49820698"
  Дополнительные сведения об использовании средства MSBuild в командной строке см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Для построения проектов [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] необходимо использовать набор инструментов платформы "v110". Если вы не хотите изменять файлы проекта [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], можно задать набор инструментов платформы с помощью следующего аргумента командной строки:  
+> Для построения проектов [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] необходимо использовать набор инструментов платформы "v110". Если вы не хотите изменять файлы проекта [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], можно задать набор инструментов платформы с помощью следующего аргумента командной строки:  
 >   
->  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
+> **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
-##  <a name="CreatingForSourceControl"></a> Создание среды построения с возможностью возврата в систему управления версиями  
+## <a name="CreatingForSourceControl"></a> Создание среды построения с возможностью возврата в систему управления версиями  
  Вы можете создать среду построения, которая может развертываться на различных компьютерах и не требует установки файлов в глобальный кэш сборок или изменения параметров реестра. Ниже приведен один из способов сделать это. Внесите в эту процедуру изменения в соответствии с характеристиками вашей среды построения.  
   
 > [!NOTE]
->  Чтобы избежать ошибок tracker.exe во время построения, необходимо отключить добавочное построение. Чтобы отключить добавочное построение, задайте следующий параметр сборки:  
+> Чтобы избежать ошибок tracker.exe во время построения, необходимо отключить добавочное построение. Чтобы отключить добавочное построение, задайте следующий параметр сборки:  
 >   
->  **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
+> **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>Создание среды построения с возможностью возврата в систему управления версиями  
   
-1.  Создайте каталог "Depot" на главном компьютере.  
+1. Создайте каталог "Depot" на главном компьютере.  
   
      В рамках этой процедуры этот каталог называется %Depot%.  
   
-2.  Скопируйте каталоги и файлы, которые описываются в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) этого пошагового руководства, и вставьте их в созданный только что каталог %Depot%. Например, скопируйте файлы из каталога %ProgramFiles%\Windows Kits\8.0\bin\ в %Depot%\Windows Kits\8.0\bin\\.  
+2. Скопируйте каталоги и файлы, которые описываются в разделе [Копирование файлов с главного компьютера на компьютер построения](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) этого пошагового руководства, и вставьте их в созданный только что каталог %Depot%. Например, скопируйте файлы из каталога %ProgramFiles%\Windows Kits\8.0\bin\ в %Depot%\Windows Kits\8.0\bin\\.  
   
-3.  После вставки файлов в каталог %Depot% внесите следующие изменения:  
+3. После вставки файлов в каталог %Depot% внесите следующие изменения:  
   
-    -   В файлах %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ и \Microsoft.CppCommon.targets\\ замените каждый экземпляр.  
+    - В файлах %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ и \Microsoft.CppCommon.targets\\ замените каждый экземпляр.  
   
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
@@ -383,7 +378,7 @@ ms.locfileid: "49820698"
   
          Первое имя относится к сборке, установленной в глобальный кэш сборок.  
   
-    -   В файле %Depot% \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets замените каждый экземпляр.  
+    - В файле %Depot% \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets замените каждый экземпляр.  
   
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
@@ -391,7 +386,7 @@ ms.locfileid: "49820698"
   
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".  
   
-4.  Создайте файл с расширением PROPS (например, Partner.AutoImports.props) и поместите его в корень папки, которая содержит ваши проекты. Этот файл служит для установки переменных, которые используются средством MSBuild для поиска различных ресурсов. Если переменные не заданы в этом файле, они устанавливаются в других файлах с расширением PROPS и TARGETS, в которых используются значения из реестра. Так как мы не устанавливаем значения реестра, эти переменные будут пустыми и построение завершится сбоем. Вместо этого необходимо добавить следующий код в файл Partner.AutoImports.props:  
+4. Создайте файл с расширением PROPS (например, Partner.AutoImports.props) и поместите его в корень папки, которая содержит ваши проекты. Этот файл служит для установки переменных, которые используются средством MSBuild для поиска различных ресурсов. Если переменные не заданы в этом файле, они устанавливаются в других файлах с расширением PROPS и TARGETS, в которых используются значения из реестра. Так как мы не устанавливаем значения реестра, эти переменные будут пустыми и построение завершится сбоем. Вместо этого необходимо добавить следующий код в файл Partner.AutoImports.props:  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -414,23 +409,20 @@ ms.locfileid: "49820698"
     </Project>  
     ```  
   
-5.  Добавьте следующую строку в начало каждого файла проекта после строки `<Project Default Targets…>`.  
+5. Добавьте следующую строку в начало каждого файла проекта после строки `<Project Default Targets…>`.  
   
     ```  
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>  
     ```  
   
-6.  Измените среду командной строки следующим образом:  
+6. Измените среду командной строки следующим образом:  
   
-    -   Set Depot=*расположение каталога Depot, созданного на шаге 1*  
+    - Set Depot=*расположение каталога Depot, созданного на шаге 1*  
   
-    -   Set path=%path%;*расположение MSBuild на компьютере*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 11.0\Common7\IDE\  
+    - Set path=%path%;*расположение MSBuild на компьютере*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 11.0\Common7\IDE\  
   
          Для собственной 64-разрядной архитектуры построения задайте ссылку на 64-разрядную версию MSBuild.  
   
-## <a name="see-also"></a>См. также  
- [Подготовка тестового компьютера для выполнения исполняемого файла отладки](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+## <a name="see-also"></a>См. также раздел  
+ [Подготовка тестового компьютера для выполнения исполняемого файла отладки](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)   
  [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)
-
-
-

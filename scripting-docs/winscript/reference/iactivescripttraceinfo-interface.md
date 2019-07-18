@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IActiveScriptTraceInfo | Документы Microsoft
+title: Интерфейс IActiveScriptTraceInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb286b60bb3c883ae0809882a04b8be96fd9a560
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 260ee42db6ae0fb743c170cf84aa0793721dffd5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991207"
 ---
 # <a name="iactivescripttraceinfo-interface"></a>Интерфейс IActiveScriptTraceInfo
 Предоставляет методы для запуска и остановки трассировки.  

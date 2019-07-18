@@ -1,25 +1,22 @@
 ---
 title: Интеграция моделей UML с другими моделями и средствами | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, references to models
 ms.assetid: 9e75e7d1-93cf-4196-baa3-bd10b9af16d3
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1cc5a26a9c2febb0dd1dff3c0d14ba3786dde9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a8b67e5c784e24b1af71089d33e7db60cb1f92c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190389"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Интеграция моделей UML с другими моделями и средствами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +40,7 @@ ms.locfileid: "51764138"
   
    Дополнительные сведения см. в разделе [определение профиля для расширения UML](../modeling/define-a-profile-to-extend-uml.md).  
   
-   Пример проекта, где профиль развернут вместе с командами меню и обработчиками жестов, см. в разделе [пример: профили UML](http://go.microsoft.com/fwlink/?LinkID=213811).  
+   Пример проекта, где профиль развернут вместе с командами меню и обработчиками жестов, см. в разделе [пример: Профили UML](http://go.microsoft.com/fwlink/?LinkID=213811).  
   
 - **Ссылки.** Набор строк можно присоединить к любому элементу UML. Можно написать код, который хранит данные, такие как имя файла или GUID другого элемента. Это можно сделать без задания дополнительных определений. Ссылки не отображаются непосредственно пользователю.  
   
@@ -68,7 +65,7 @@ ms.locfileid: "51764138"
   
 2. **События VMSDK** можно использовать для распространения изменений за пределами модели — например, чтобы изменить имя файла связанного документа или изменения элемента в другой модели.  
   
-   Сведения об обоих этих механизмах см. в разделе [как: реагирование на изменения в UML-модели](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+   Сведения об обоих этих механизмах см. в разделе [как: Реагирование на изменения в UML-модели](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
    Перетащите элементы, чтобы скопировать их из одной модели в другую  
    Можно позволить пользователю создавать элементы путем перетаскивания элементов на схему UML. Созданный элемент необязательно должен быть копией исходного. Например, можно разрешить пользователю перетаскивать схему деятельности из обозревателя решений на другую схему деятельности для создания нового действия.  
@@ -88,7 +85,7 @@ ms.locfileid: "51764138"
   
    В этом примере добавляется декоратор изображения для фигур UML.  
   
-- [Практическое руководство. Реагирование на изменения в UML-модели](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
+- [Практическое руководство. Реагирование на изменения в модели UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)  
   
    В примере показано, как определить правило, реагирующее на новые фигуры на схеме.  
   
@@ -103,10 +100,7 @@ ms.locfileid: "51764138"
 ## <a name="see-also"></a>См. также  
  [Определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Определение обработчика жестов на схеме моделирования](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)   
- [Практическое: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Практическое: реагирование на изменения в модели UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
- [Пример: Профили UML](http://go.microsoft.com/fwlink/?LinkID=213811)   
+ [Практическое руководство. Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Практическое руководство. Реагирование на изменения в модели UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)   
+ [Пример. Профили UML](http://go.microsoft.com/fwlink/?LinkID=213811)   
  [Связывание элементов UML со схемами или другими файлами](http://go.microsoft.com/fwlink/?LinkId=213813)
-
-
-

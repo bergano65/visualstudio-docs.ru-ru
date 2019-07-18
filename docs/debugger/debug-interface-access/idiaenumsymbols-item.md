@@ -9,38 +9,40 @@ helpviewer_keywords:
 ms.assetid: 2bd1ec04-e677-4e32-8e32-33334f1eed77
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4be73de8540d89a4c45737aa6bdc2e24c704cd1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 91c230f641612c099495c54db67da9c7e755cbdc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829437"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
-Получает символ с помощью индекса.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Item (   
-   DWORD        index,  
-   IDiaSymbol** symbol  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- индекс  
- [in] Индекс [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) извлекаемый объект. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md) метод.  
-  
- символ  
- [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий нужный знак.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Получает символ с помощью индекса.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Item ( 
+   DWORD        index,
+   IDiaSymbol** symbol
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ индекс
+
+[in] Индекс [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) извлекаемый объект. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md) метод.
+
+ символ
+
+[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) объект, представляющий нужный знак.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,27 +1,22 @@
 ---
 title: Команды, определенные в интегрированной среде разработки, для расширения систем проектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, project systems
 - project systems, environment-defined commands
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a58525c9b3bcbcd1bbe4792ecc9427812b62f1e1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3b5de061449844b87d60d7a700b1e1c22e1e1282
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195034"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Команды, определенные в интегрированной среде разработки, для расширения систем проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51789750"
 ## <a name="command-menus"></a>Команды меню  
  В следующей таблице показаны команды меню, которые являются полезные расположений применить высокого уровня команды, которые вызывают расширитель проекта.  
   
-|Команда меню|Описание:|  
+|Команда меню|Описание|  
 |------------------|-----------------|  
 |IDM_VS_MENU_PROJECT|**Проекта** меню верхнего уровня.|  
 |IDM_VS_TOOL_PROJWIN|**Обозревателе решений** панели инструментов.|  
@@ -41,7 +36,7 @@ ms.locfileid: "51789750"
 ## <a name="shortcut-menus"></a>Контекстные меню  
  В следующей таблице показаны контекстные меню, которые применяются при выборе одного узла в **обозревателе решений**, или при наличии однородных множественный в **обозревателе решений**, когда это все выбранные узлы имеют тот же тип.  
   
-|Контекстное меню|Описание:|  
+|Контекстное меню|Описание|  
 |-------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|Применяется, если выбран узел проекта.|  
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|Применяется, когда выбран файл.|  
@@ -52,7 +47,7 @@ ms.locfileid: "51789750"
   
  В следующей таблице показаны контекстные меню, которые применяются, когда выделение в **обозревателе решений** охватывает несколько иерархий  
   
-|Контекстное меню|Описание:|  
+|Контекстное меню|Описание|  
 |-------------------|-----------------|  
 |IDM_VS_CTXT_XPROJ_SLNPROJ|Применяется, если текущее выделение содержит узел решения и проекта корневые узлы.|  
 |IDM_VS_CTXT_XPROJ_SLNITEM|Применяется, если текущее выделение содержит элементы узла и проект решения.|  
@@ -63,7 +58,7 @@ ms.locfileid: "51789750"
 ## <a name="command-groups"></a>Группы команд  
  В следующей таблице показаны группы команд, которые можно использовать при расширении проекты, и для доступа к <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> контекстное меню.  
   
-|Группа команд|Описание:|  
+|Группа команд|Описание|  
 |-------------------|-----------------|  
 |IDG_VS_CTXT_PROJECT_BUILD|Команды для создания, повторного построения и развертывания проекта.|  
 |IDG_VS_CTXT_COMPILELINK|Команды для компиляции и компоновки проекта.|  
@@ -80,4 +75,3 @@ ms.locfileid: "51789750"
  [Как добавить элементы пользовательского интерфейса в пакеты VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Команды MenuCommand и OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)   
  [Создание повторно используемых групп кнопок](../../extensibility/creating-reusable-groups-of-buttons.md)
-

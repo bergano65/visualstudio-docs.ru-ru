@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IActiveScriptSiteUIControl | Документы Microsoft
+title: Интерфейс IActiveScriptSiteUIControl | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,18 +11,18 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8563137c855a9c602b817967e610be6a7e4f5e27
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 985ccfe2f3b46ea8317abb91b82aec252f626ec3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992191"
 ---
 # <a name="iactivescriptsiteuicontrol-interface"></a>Интерфейс IActiveScriptSiteUIControl
-Предоставляет метод, чтобы получить поведение элементов управления пользовательского интерфейса.  
+Предоставляет метод, чтобы получить поведение элемента управления пользовательского интерфейса.  
   
 ## <a name="methods"></a>Методы  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[Метод IActiveScriptSiteUIControl::GetUIBehavior](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md)|Возвращает [перечисление SCRIPTUICHANDLING](../../winscript/reference/scriptuichandling-enumeration.md) , представляющее порядок обработки элемент управления пользовательского интерфейса.|
+|[Метод IActiveScriptSiteUIControl::GetUIBehavior](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md)|Получает [перечисление SCRIPTUICHANDLING](../../winscript/reference/scriptuichandling-enumeration.md) , представляющий способ обработки элемент управления пользовательского интерфейса.|

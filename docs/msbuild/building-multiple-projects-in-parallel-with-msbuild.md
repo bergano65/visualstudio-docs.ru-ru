@@ -9,67 +9,67 @@ helpviewer_keywords:
 ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 700a9e8e32a9846de3ee9f64424430bfe10c6778
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822993"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Параллельное построение нескольких проектов с помощью MSBuild
-С помощью MSBuild вы можете ускорить сборку нескольких проектов, выполняя ее параллельно. Для параллельного выполнения сборки используйте следующие параметры на компьютере с несколькими процессорами или многоядерным процессором:  
-  
--   параметр `-maxcpucount` в командной строке;  
-  
--   Параметр задачи <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> в задаче MSBuild.  
-  
-> [!NOTE]
->  На производительность сборки также может влиять параметр командной строки **-verbosity** (**-v**). Производительность сборки снижается, если установлен "подробный" или "диагностический" уровень детализации журнала сборки (обычно используются для устранения неполадок). Дополнительные сведения см. в [статье о получении журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md) и [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
-  
-## <a name="-maxcpucount-switch"></a>Параметр -maxcpucount  
- Если вы используете параметр `-maxcpucount` (или его короткую версию `-m`), MSBuild может создать заданное число процессов *MSBuild.exe*, которые будут выполняться параллельно. Эти процессы называются рабочими процессами. Каждый рабочий процесс использует отдельное ядро или процессор, если они доступны, и выполняет сборку проекта. Параллельно с этим другие доступные процессоры работают над другими проектами. Например, если для этого параметра задано значение 4, MSBuild создаст четыре рабочих процесса для сборки проекта.  
-  
- Если параметр `-maxcpucount` включается в командную строку без указания значения, MSBuild использует значение, соответствующее числу процессоров в компьютере.  
-  
- Дополнительные сведения об этом параметре, который появился в версии MSBuild 3.5, см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).  
-  
- Следующий пример сообщает MSBuild, что нужно использовать три рабочих процесса. С этой конфигурацией MSBuild сможет одновременно выполнять сборку трех проектов.  
-  
-```cmd  
-msbuild.exe myproj.proj -maxcpucount:3   
-```  
+С помощью MSBuild вы можете ускорить сборку нескольких проектов, выполняя ее параллельно. Для параллельного выполнения сборки используйте следующие параметры на компьютере с несколькими процессорами или многоядерным процессором:
 
-## <a name="buildinparallel-task-parameter"></a>Параметр задачи BuildInParallel  
- `BuildInParallel` является необязательным логическим параметром задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Если для `BuildInParallel` установлено значение `true` (значение по умолчанию — `false`), создается несколько рабочих процессов для одновременной сборки максимально возможного числа проектов. Для надлежащего выполнения параметр `-maxcpucount` должен иметь значение больше 1, а компьютер должен быть оснащен по меньшей мере двухъядерным процессором или минимум двумя процессорами.  
-  
- Следующий пример из *microsoft.common.targets* демонстрирует использование параметра `BuildInParallel`.  
-  
-```xml  
-<PropertyGroup>  
-    <BuildInParallel Condition="'$(BuildInParallel)' ==   
-        ''">true</BuildInParallel>  
-</PropertyGroup>  
-<MSBuild  
-    Projects="@(_MSBuildProjectReferenceExistent)"  
-    Targets="GetTargetPath"  
-    BuildInParallel="$(BuildInParallel)"  
-    Properties="%(_MSBuildProjectReferenceExistent.SetConfiguration);   
-        %(_MSBuildProjectReferenceExistent.SetPlatform)"  
-    Condition="'@(NonVCProjectReference)'!='' and   
-        ('$(BuildingSolutionFile)' == 'true' or   
-        '$(BuildingInsideVisualStudio)' == 'true' or   
-        '$(BuildProjectReferences)' != 'true') and     
-        '@(_MSBuildProjectReferenceExistent)' != ''"  
-    ContinueOnError="!$(BuildingProject)">  
-    <Output TaskParameter="TargetOutputs"   
-        ItemName="_ResolvedProjectReferencePaths"/>  
-</MSBuild>  
-```  
-  
-## <a name="see-also"></a>См. также  
- [Использование нескольких процессоров при построении проектов](../msbuild/using-multiple-processors-to-build-projects.md)   
- [Написание средств ведения журнала с поддержкой многопроцессорности](../msbuild/writing-multi-processor-aware-loggers.md)   
- [Блог о настройке параллелизма сборки в C++](http://go.microsoft.com/fwlink/?LinkId=251457)
+- параметр `-maxcpucount` в командной строке;
+
+- Параметр задачи <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> в задаче MSBuild.
+
+> [!NOTE]
+> На производительность сборки также может влиять параметр командной строки **-verbosity** (**-v**). Производительность сборки снижается, если установлен "подробный" или "диагностический" уровень детализации журнала сборки (обычно используются для устранения неполадок). Дополнительные сведения см. в [статье о получении журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md) и [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).
+
+## <a name="-maxcpucount-switch"></a>Параметр -maxcpucount
+Если вы используете параметр `-maxcpucount` (или его короткую версию `-m`), MSBuild может создать заданное число процессов *MSBuild.exe*, которые будут выполняться параллельно. Эти процессы называются рабочими процессами. Каждый рабочий процесс использует отдельное ядро или процессор, если они доступны, и выполняет сборку проекта. Параллельно с этим другие доступные процессоры работают над другими проектами. Например, если для этого параметра задано значение 4, MSBuild создаст четыре рабочих процесса для сборки проекта.
+
+Если параметр `-maxcpucount` включается в командную строку без указания значения, MSBuild использует значение, соответствующее числу процессоров в компьютере.
+
+Дополнительные сведения об этом параметре, который появился в версии MSBuild 3.5, см. в [справочнике по командной строке](../msbuild/msbuild-command-line-reference.md).
+
+Следующий пример сообщает MSBuild, что нужно использовать три рабочих процесса. С этой конфигурацией MSBuild сможет одновременно выполнять сборку трех проектов.
+
+```cmd
+msbuild.exe myproj.proj -maxcpucount:3
+```
+
+## <a name="buildinparallel-task-parameter"></a>Параметр задачи BuildInParallel
+`BuildInParallel` является необязательным логическим параметром задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Если для `BuildInParallel` установлено значение `true` (значение по умолчанию — `false`), создается несколько рабочих процессов для одновременной сборки максимально возможного числа проектов. Для надлежащего выполнения параметр `-maxcpucount` должен иметь значение больше 1, а компьютер должен быть оснащен по меньшей мере двухъядерным процессором или минимум двумя процессорами.
+
+Следующий пример из *microsoft.common.targets* демонстрирует использование параметра `BuildInParallel`.
+
+```xml
+<PropertyGroup>
+    <BuildInParallel Condition="'$(BuildInParallel)' ==
+        ''">true</BuildInParallel>
+</PropertyGroup>
+<MSBuild
+    Projects="@(_MSBuildProjectReferenceExistent)"
+    Targets="GetTargetPath"
+    BuildInParallel="$(BuildInParallel)"
+    Properties="%(_MSBuildProjectReferenceExistent.SetConfiguration);
+        %(_MSBuildProjectReferenceExistent.SetPlatform)"
+    Condition="'@(NonVCProjectReference)'!='' and
+        ('$(BuildingSolutionFile)' == 'true' or
+        '$(BuildingInsideVisualStudio)' == 'true' or
+        '$(BuildProjectReferences)' != 'true') and
+        '@(_MSBuildProjectReferenceExistent)' != ''"
+    ContinueOnError="!$(BuildingProject)">
+    <Output TaskParameter="TargetOutputs"
+        ItemName="_ResolvedProjectReferencePaths"/>
+</MSBuild>
+```
+
+## <a name="see-also"></a>См. также
+- [Использование нескольких процессоров при сборке проектов](../msbuild/using-multiple-processors-to-build-projects.md)
+- [Запись средств ведения журнала с поддержкой многопроцессорности](../msbuild/writing-multi-processor-aware-loggers.md)
+- [Блог о настройке параллелизма сборки в C++](http://go.microsoft.com/fwlink/?LinkId=251457)

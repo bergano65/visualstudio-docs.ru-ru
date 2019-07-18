@@ -1,7 +1,6 @@
 ---
 title: Указание пользовательских событий сборки
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c5bde6b6dce7655043f3dc766a5faa81fa944e
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53055132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430886"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Указание настраиваемых событий сборки в Visual Studio
 
@@ -25,11 +24,11 @@ ms.locfileid: "53055132"
 
  Конкретные сведения об используемом языке программирования см. в следующих разделах.
 
--   Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic — [Практическое руководство. Указание событий сборки (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C#и F# — [Практическое руководство. Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C#и F# — [Практическое руководство. Указание событий сборки (C#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++ — [Указание событий сборки](/cpp/ide/specifying-build-events).
+- Visual C++ — [Указание событий сборки](/cpp/ide/specifying-build-events).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -54,7 +53,7 @@ ms.locfileid: "53055132"
    Пример: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
   > [!NOTE]
-  >  Команда `%I` в коде выше должна быть `%%I` в пакетных скриптах.
+  > Команда `%I` в коде выше должна быть `%%I` в пакетных скриптах.
 
 ## <a name="see-also"></a>См. также
 

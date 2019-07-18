@@ -1,25 +1,22 @@
 ---
 title: Редактирование схем последовательностей UML с помощью UML API | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f68cf87a7f45b906c6de43e0a837d49132b7a3e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442959"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Редактирование схем последовательностей UML с помощью API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +55,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
  Дополнительные сведения см. в разделе [определение команды меню на схеме моделирования](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
 ### <a name="getting-the-context"></a>Получение контекста  
- При редактировании взаимодействия как части команды или обработчика жестов на схеме последовательностей вы можете получить ссылку на контекст. Например:  
+ При редактировании взаимодействия как части команды или обработчика жестов на схеме последовательностей вы можете получить ссылку на контекст. Пример:  
   
 ```  
 [SequenceDesignerExtension]  
@@ -78,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  Существует два вида схем последовательностей: те, которые были созданы вручную в UML-проекте моделирования, и те, которые были созданы из кода программы. Используйте свойство `UmlMode` для определения имеющейся схемы последовательностей.  
   
 > [!NOTE]
->  Это свойство возвращает значение false только для схем последовательностей, созданных из кода с помощью Visual Studio 2013 и более ранних версий. Сюда входят созданные из кода схемы последовательностей, перенесенные из Visual Studio 2013 и более ранних версий. Эта версия Visual Studio не поддерживает создание новых схем последовательностей.  
+> Это свойство возвращает значение false только для схем последовательностей, созданных из кода с помощью Visual Studio 2013 и более ранних версий. Сюда входят созданные из кода схемы последовательностей, перенесенные из Visual Studio 2013 и более ранних версий. Эта версия Visual Studio не поддерживает создание новых схем последовательностей.  
   
  Например, если нужно создать команду меню, видимую только на схемах последовательностей UML, метод `QueryStatus()` может включать в себя следующий оператор:  
   
@@ -127,7 +124,7 @@ public void Execute (IMenuCommand command)
   
   Это особенно важно при вставке новых элементов или перемещении существующих элементов. Они не будут находиться в правильном положении на схеме, пока вы не выполните одну из этих операций. Одну из этих операций необходимо вызывать лишь однократно в конце последовательности изменений.  
   
-  Чтобы не вводить в заблуждение пользователя, выполняющего отмену после данной команды, используйте `ILinkedUndoTransaction` для ограничения изменений, а в конце используйте операцию `Layout()` или `UpdateShapePositions()`. Например:  
+  Чтобы не вводить в заблуждение пользователя, выполняющего отмену после данной команды, используйте `ILinkedUndoTransaction` для ограничения изменений, а в конце используйте операцию `Layout()` или `UpdateShapePositions()`. Пример:  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  
@@ -187,7 +184,7 @@ System.Diagnostics.Debug.Assert(
 ```  
   
 ### <a name="to-create-messages"></a>Создание сообщений  
- Чтобы создать сообщение, необходимо определить точки вставки в исходном и целевом жизненных циклах. Например:  
+ Чтобы создать сообщение, необходимо определить точки вставки в исходном и целевом жизненных циклах. Пример:  
   
 ```  
 interaction.CreateMessage( sourceInsertionPoint,   
@@ -256,6 +253,3 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
  [Определение настраиваемого элемента панели элементов моделирования](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Программирование с UML API](../modeling/programming-with-the-uml-api.md)
-
-
-

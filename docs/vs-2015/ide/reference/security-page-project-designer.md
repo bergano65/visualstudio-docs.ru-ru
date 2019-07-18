@@ -1,14 +1,9 @@
 ---
 title: Страница "Безопасность" в конструкторе проектов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
 - vb.XBAPProjectPropertiesSecurity
@@ -23,18 +18,17 @@ ms.assetid: 641d9cd3-fa07-498a-8568-3c169bb4d3d5
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 967ce9221313c88b10a792f15ffaec80da99de03
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 91b438e8646a215aeed3390e87ce9c20ca923fae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441281"
 ---
 # <a name="security-page-project-designer"></a>Страница "Безопасность" в конструкторе проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Страница **Безопасность** в **конструкторе проектов** позволяет настроить параметры управления доступом для кода для приложений, развертываемых с помощью развертывания [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)]. Дополнительные сведения см. в статье [Управление доступом для кода для приложения ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).  
   
  Чтобы открыть страницу **Безопасность**, выберите узел проекта в **обозревателе решений**, а затем в меню **Проект** щелкните пункт **Свойства**. Когда откроется окно **Конструктор проектов**, перейдите на вкладку **Безопасность**.  
@@ -44,7 +38,7 @@ ms.locfileid: "49267817"
  Определяет, включены ли параметры безопасности во время разработки. Если этот флажок не установлен, все остальные параметры на странице **Безопасность** будут недоступны.  
   
 > [!NOTE]
->  При публикации приложения с помощью мастера **публикации** этот флажок устанавливается автоматически.  
+> При публикации приложения с помощью мастера **публикации** этот флажок устанавливается автоматически.  
   
  При выборе этого параметра можно установить один из двух переключателей: **Это приложение с полным доверием** или **Это приложение с частичным доверием**.  
   
@@ -80,13 +74,10 @@ ms.locfileid: "49267817"
  <xref:System.Security.Permissions.WebBrowserPermission>   
  <xref:System.Security.Permissions.MediaPermission>   
  [Управление доступом для кода для приложения ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)   
- [Практическое руководство. Включение параметров безопасности ClickOnce-приложений.](../../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Практическое руководство. Включить параметры безопасности ClickOnce-приложений](../../deployment/how-to-enable-clickonce-security-settings.md)   
  [Практическое руководство. Установка зоны безопасности для ClickOnce-приложения](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Практическое руководство. Установка пользовательских разрешений для ClickOnce-приложения](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Практическое руководство. Отладка ClickOnce-приложения с ограниченными разрешениями](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Развертывание и безопасность технологии ClickOnce](../../deployment/clickonce-security-and-deployment.md)   
  [Справочник по свойствам проектов](../../ide/reference/project-properties-reference.md)   
  [Диалоговое окно "Дополнительные параметры безопасности"](../../ide/reference/advanced-security-settings-dialog-box.md)
-
-
-

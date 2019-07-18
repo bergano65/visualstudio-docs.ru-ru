@@ -1,14 +1,9 @@
 ---
-title: 'Ca1824: следует Помечать сборки атрибутом NeutralResourcesLanguageAttribute | Документация Майкрософт'
-ms.custom: ''
+title: CA1824. Помечать сборки атрибутом NeutralResourcesLanguageAttribute | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1824
 - MarkAssembliesWithNeutralResourcesLanguage
@@ -20,14 +15,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 13f635398ecab7c0bd9436a86a43a15d4908b163
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203086"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: следует помечать сборки атрибутом NeutralResourcesLanguageAttribute
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824. Помечайте сборки с помощью NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -50,16 +45,13 @@ ms.locfileid: "49892601"
 
 #### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>Чтобы задать язык ресурсов нейтрального языка и региональных параметров
 
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши проект и нажмите кнопку **свойства**.
+1. В **обозревателе решений**, щелкните правой кнопкой мыши проект и нажмите кнопку **свойства**.
 
-2.  На панели навигации слева выберите **приложения**, а затем нажмите кнопку **сведения о сборке**.
+2. На панели навигации слева выберите **приложения**, а затем нажмите кнопку **сведения о сборке**.
 
-3.  В **сведения о сборке** диалоговом окне выберите язык из **нейтральный язык** стрелку раскрывающегося списка.
+3. В **сведения о сборке** диалоговом окне выберите язык из **нейтральный язык** стрелку раскрывающегося списка.
 
-4.  Нажмите кнопку **ОК**.
+4. Нажмите кнопку **ОК**.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Допускается, чтобы подавить предупреждение из этого правила. Тем не менее может снизить производительность при запуске.
-
-
-

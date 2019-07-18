@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Сборка конкретных целевых объектов в решениях с помощью MSBuild.exe | Документация Майкрософт
+title: Сборка конкретных целевых объектов в решениях с помощью MSBuild.exe
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,28 +9,28 @@ helpviewer_keywords:
 ms.assetid: f46feb9b-4c16-4fec-b6e1-36a959692ba3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12405ef76955c9200fd5a83a079b7e0155f3dd09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 34c04d12ccc17424a2f938c04751d4e3d4c9f05f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924011"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263788"
 ---
-# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Как выполнить Сборка конкретных целевых объектов в решениях с помощью MSBuild.exe
-Можно использовать *MSBuild.exe* для создания конкретных целевых объектов определенных проектов в решении.  
-  
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Создание конкретного целевого объекта определенного проекта в решении  
-  
-1.  В командной строке введите `MSBuild.exe <SolutionName>.sln`, где `<SolutionName>` соответствует имени файла решения, содержащего целевой объект, который требуется выполнить.  
-  
+# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Практическое руководство. Сборка конкретных целевых объектов в решениях с помощью MSBuild.exe
+Можно использовать *MSBuild.exe* для создания конкретных целевых объектов определенных проектов в решении.
+
+#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Создание конкретного целевого объекта определенного проекта в решении
+
+1. В командной строке введите `MSBuild.exe <SolutionName>.sln`, где `<SolutionName>` соответствует имени файла решения, содержащего целевой объект, который требуется выполнить.
+
 2. Укажите целевой объект после параметра `-target:` в формате \<имя_проекта>:\<имя_целевого_объекта>. Если в имени проекта содержатся символы `%`, `$`, `@`, `;`, `.`, `(`, `)` или `'`, замените их на `_` в указанном имени целевого объекта.
-  
-## <a name="example"></a>Пример  
- В следующем примере выполняется целевой объект `Rebuild` проекта `NotInSlnFolder`, а затем выполняется целевой объект `Clean` проекта `InSolutionFolder`, который находится в папке решения *Новая_папка*.  
-  
+
+## <a name="example"></a>Пример
+ В следующем примере выполняется целевой объект `Rebuild` проекта `NotInSlnFolder`, а затем выполняется целевой объект `Clean` проекта `InSolutionFolder`, который находится в папке решения *Новая_папка*.
+
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
@@ -41,8 +41,8 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 Не выполняйте сборку с этой заданной переменной среды, пока вам не потребуется этом внутреннее представление. Этот параметр может вызвать проблемы сборки в решении.
 
-## <a name="see-also"></a>См. также  
- [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)   
- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
- [MSBuild](../msbuild/msbuild.md)  
- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>См. также
+- [Справочник по командной строке](../msbuild/msbuild-command-line-reference.md)
+- [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)

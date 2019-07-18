@@ -18,21 +18,21 @@ helpviewer_keywords:
 ms.assetid: 8ec5160a-6408-4f47-8d41-f0e20e79a3b9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 717e57a4c4ba739236fa3b66a444dd854d357dcc
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
-ms.translationtype: MTE95
+ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903945"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Параметры страниц свойств для веб-проектов
-Можно изменить значения свойств для конфигурации отладки веб-узла в диалоговом окне **Окна свойств**, как описано в разделе [Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где в диалоговом окне **Страницы свойств** можно найти параметры, связанные с отладчиком.  
-  
+Можно изменить значения свойств для конфигурации отладки веб-узла в диалоговом окне **Окна свойств**, как описано в разделе [Конфигурации отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md). В следующих таблицах показано, где в диалоговом окне **Страницы свойств** можно найти параметры, связанные с отладчиком.
+
 ### <a name="start-options-category"></a>Категория параметров запуска
-  
+
 | **Параметр** | **Описание** |
 | - | - |
 | **Действие при запуске** | Заголовок, группирующий параметры запуска приложения. |
@@ -51,6 +51,6 @@ ms.locfileid: "54204298"
 | **Отладка машинного кода** | Разрешает отлаживать вызовы машинного (неуправляемого) кода Win32 из управляемого приложения. |
 | **Отладка SQL Server** | Разрешает отладку объектов базы данных SQL Server. |
 | **Отладка Silverlight** | Обеспечивает отладку компонентов Silverlight. |
-  
-## <a name="see-also"></a>См. также раздел  
- [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)
+
+## <a name="see-also"></a>См. также
+- [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)

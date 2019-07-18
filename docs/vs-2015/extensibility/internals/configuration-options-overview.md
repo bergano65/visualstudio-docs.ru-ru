@@ -1,27 +1,22 @@
 ---
 title: Общие сведения о вариантах конфигурации | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44c5f424ec36d3c04403f62547920f59622208a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441515"
 ---
 # <a name="configuration-options-overview"></a>Общие сведения о параметрах конфигурации
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,11 +34,11 @@ ms.locfileid: "51747991"
 |Имя конфигурации|Платформа — Win32|Платформы — Win64|  
 |------------------------|----------------------|----------------------|  
 |Отладка|\<Win32 параметров отладки >|\<Win64 параметров отладки >|  
-|выпуска|\<Параметры Win32 выпуска >|\<Параметры Win64 выпуска >|  
+|Выпуск|\<Параметры Win32 выпуска >|\<Параметры Win64 выпуска >|  
 |MyConfig|Н/Д|\<Параметры MyConfig Win64 >|  
   
 > [!NOTE]
->  Не удается создать конфигурацию решения «MyConfig», которая исключает платформы «Win32», если проект, который вы используете не поддерживает Win32.  
+> Не удается создать конфигурацию решения «MyConfig», которая исключает платформы «Win32», если проект, который вы используете не поддерживает Win32.  
   
  Изменение активной конфигурации решения выбирает набор конфигурации проекта, которые являются сборки, запуска, отладки или развертывания в этом решении. Например при изменении активной конфигурации решения с выпуска для отладки, все проекты в этом решении будет автоматически создана с конфигурацией проекта, указанного в конфигурации отладки решения. Конфигурации проектов обычно также именованный отладки, если пользователь внес изменения, вносимые вручную в среде Configuration Manager.  
   
@@ -80,4 +75,3 @@ ms.locfileid: "51747991"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   
  [Конфигурация проекта для сборки](../../extensibility/internals/project-configuration-for-building.md)   
  [Конфигурация решения](../../extensibility/internals/solution-configuration.md)
-

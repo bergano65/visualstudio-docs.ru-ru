@@ -1,14 +1,9 @@
 ---
 title: Функция SccAddFromScc | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b366c6c80dc52436743da0f69266105cc0ba5db8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ccf3a25bda14cf98fdba4a58b0032444badc4c4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432497"
 ---
 # <a name="sccaddfromscc-function"></a>Функция SccAddFromScc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ SCCRTN SccAddFromScc (
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Файлы были успешно расположенный и добавлен в проект.|  
 |SCC_I_OPERATIONCANCELED|Операция была отменена без влияния.|  
@@ -72,9 +67,8 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` является `char ***` указатель. Подключаемый модуль системы управления версиями помещает указатель на массив указателей на имена файлов, тем самым передав списка обычным образом для этого API.  
   
 > [!NOTE]
->  Начальной версии VSSCI API не предоставил возможность указать проект назначения для добавленных файлов. Для этого, семантика `lplpFIleNames` параметра были усовершенствованы, чтобы сделать его параметр in/out, а не параметром output. Если только один файл указан, то есть значение, на которые указывают `lpnFiles` = 1, то первый элемент `lplpFileNames` содержит целевую папку. Для использования этих новую семантику вызовов IDE `SccSetOption` функционировать с `nOption`параметру присвоить `SCC_OPT_SHARESUBPROJ`. Если подключаемый модуль системы управления версиями не поддерживает семантику, он возвращает `SCC_E_OPTNOTSUPPORTED`. Это так отключает использование **добавить из системы управления версиями** функции. Если подключаемый модуль поддерживает **добавить из системы управления версиями** функция (`SCC_CAP_ADDFROMSCC`), то он должен поддерживать новую семантику и вернуть `SCC_I_SHARESUBPROJOK`.  
+> Начальной версии VSSCI API не предоставил возможность указать проект назначения для добавленных файлов. Для этого, семантика `lplpFIleNames` параметра были усовершенствованы, чтобы сделать его параметр in/out, а не параметром output. Если только один файл указан, то есть значение, на которые указывают `lpnFiles` = 1, то первый элемент `lplpFileNames` содержит целевую папку. Для использования этих новую семантику вызовов IDE `SccSetOption` функционировать с `nOption`параметру присвоить `SCC_OPT_SHARESUBPROJ`. Если подключаемый модуль системы управления версиями не поддерживает семантику, он возвращает `SCC_E_OPTNOTSUPPORTED`. Это так отключает использование **добавить из системы управления версиями** функции. Если подключаемый модуль поддерживает **добавить из системы управления версиями** функция (`SCC_CAP_ADDFROMSCC`), то он должен поддерживать новую семантику и вернуть `SCC_I_SHARESUBPROJOK`.  
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)
-

@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Замена параметров в шаблоне | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Замена параметров в шаблоне | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - template parameters, substituting
 - Visual Studio templates, using parameters
@@ -16,13 +11,13 @@ ms.assetid: a62924a7-4ba0-413d-b606-fdbe1fcf2807
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bab1d1fd7cd08813dadefbcbec27dbd84bd7b66b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3c0a710bc3ad504c6654528db33b9a6698f4f7ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435160"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Практическое руководство. Замена параметров в шаблоне
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +29,18 @@ ms.locfileid: "49279751"
   
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>Использование параметра для замены имени пространства имен именем проекта  
   
-1.  Вставьте параметр в один или несколько файлов кода в шаблоне. Пример:  
+1. Вставьте параметр в один или несколько файлов кода в шаблоне. Пример:  
   
     ```  
     namespace $safeprojectname$  
     ```  
   
     > [!NOTE]
-    >  Параметры шаблона записываются в формате $*параметр*$.  
+    > Параметры шаблона записываются в формате $*параметр*$.  
   
-2.  В VSTEMPLATE-файле шаблона найдите элемент `ProjectItem`, содержащий этот файл.  
+2. В VSTEMPLATE-файле шаблона найдите элемент `ProjectItem`, содержащий этот файл.  
   
-3.  Задайте для атрибута `ReplaceParameters` элемента `ProjectItem` значение `true`. Пример:  
+3. Задайте для атрибута `ReplaceParameters` элемента `ProjectItem` значение `true`. Пример:  
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  
@@ -56,6 +51,3 @@ ms.locfileid: "49279751"
  [Параметры шаблона](../ide/template-parameters.md)   
  [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Элемент ProjectItem (шаблоны элементов Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-
-
-

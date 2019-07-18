@@ -2,16 +2,16 @@
 title: Сообщение о проблеме в Visual Studio для Mac
 description: Сведения о том, как отправить предложение или сообщить о проблеме, возникшей при использовании Visual Studio для Mac.
 ms.topic: troubleshooting
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 11/16/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 510bdac23b29289687441b8a82620a1cede7542b
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 2b5fd2fd115c4461659ba1b4f211e645367851d2
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948833"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691230"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Как сообщить о проблеме в Visual Studio для Mac
 
@@ -43,9 +43,6 @@ ms.locfileid: "51948833"
 
 1. Если вы не нашли возникшую у вас проблему, выберите элемент **Сообщить о новой проблеме** в боковой части экрана.
 
-   > [!NOTE]
-   > Кнопка **Сообщить о новой проблеме** отображается только в интерфейсе Visual Studio для Mac для сообщества разработчиков. Вы не сможете сообщить о проблеме напрямую на сайте [сообщества разработчиков](https://developercommunity.visualstudio.com/).
-
 1. Создайте описательное название проблемы, чтобы мы передали этот случай соответствующей команде разработчиков Visual Studio для Mac.
 
 1. Укажите дополнительные сведения и, если возможно, перечислите действия для воспроизведения проблемы.
@@ -58,7 +55,7 @@ ms.locfileid: "51948833"
 
 1. Нажмите кнопку **Отправить** для отправки отчета вместе с изображениями и файлами журнала.
 
-   Сведения о собираемых данных см. в разделе [Собираемые данные](/visualstudio/ide/developer-community-privacy.md#data-we-collect).
+   Сведения о собираемых данных см. в разделе [Собираемые данные](/visualstudio/ide/developer-community-privacy#data-we-collect).
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Поиск решений или предоставление отзыва
 

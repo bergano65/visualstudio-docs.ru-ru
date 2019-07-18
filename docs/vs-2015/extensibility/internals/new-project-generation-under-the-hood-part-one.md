@@ -1,44 +1,39 @@
 ---
-title: 'Создание нового проекта: Взгляд изнутри, часть 1 | Документация Майкрософт'
-ms.custom: ''
+title: 'Создание проекта: За кулисами, часть 1 | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184160"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Создание нового проекта. Как это работает, часть 1
+# <a name="new-project-generation-under-the-hood-part-one"></a>Создание проекта: как это работает, часть 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Когда-нибудь думали о том, как создать собственный тип проекта? Интересно, что произойдет при создании нового проекта? Давайте взглянуть изнутри и что происходит в действительности.  
   
  Существует несколько задач, которые координирует Visual Studio для вас:  
   
--   Он отображает дерево из всех доступных типов проектов.  
+- Он отображает дерево из всех доступных типов проектов.  
   
--   Он отображает список шаблонов приложений для каждого типа проекта и позволяет выбрать одну.  
+- Он отображает список шаблонов приложений для каждого типа проекта и позволяет выбрать одну.  
   
--   Он собирает сведения о проекте для приложения, например имя и путь проекта.  
+- Он собирает сведения о проекте для приложения, например имя и путь проекта.  
   
--   Эти сведения передаются на фабрику проектов.  
+- Эти сведения передаются на фабрику проектов.  
   
--   Он создает элементы проекта и папки в текущем решении.  
+- Он создает элементы проекта и папки в текущем решении.  
   
 ## <a name="the-new-project-dialog-box"></a>Диалоговое окно нового проекта  
  Все начинается с выбора типа проекта для нового проекта. Давайте начнем, щелкнув **новый проект** на **файл** меню. **Новый проект** откроется диалоговое окно, которым нужен примерно так:  
@@ -60,7 +55,7 @@ ms.locfileid: "51792933"
 devenv /setup  
 ```  
   
- или  
+ или диспетчер конфигурации служб  
   
 ```  
 devenv /installvstemplates  
@@ -85,7 +80,7 @@ devenv /installvstemplates
   
  \<Путь установки Visual Studio > \VC#\VCSPackages\1033\csprojui.dll  
   
- Чтобы проверить это, откройте файл в проводнике и перетащите csprojui.dll в каталоге Visual Studio... В строке таблице показано, что resource #2345 заголовок **Visual C#**.  
+ Чтобы проверить это, откройте файл в проводнике и перетащите csprojui.dll в каталоге Visual Studio... В строке таблице показано, что resource #2345 заголовок **Visual C#** .  
   
 ##### <a name="sortpriority"></a>SortPriority  
  Этот параметр определяет положение корневого узла в **типы проектов** дерева.  
@@ -97,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  При наличии этого подраздела положение корневого узла управляется диалоговом окне параметров разработчика. Например, примененная к объекту директива  
   
- REG_SZ DeveloperActivity VC #  
+ DeveloperActivity REG_SZVC#  
   
  Показывает, что Visual C# корневой узел Если Visual Studio для [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] разработки. В противном случае он будет дочерним для узла **другие языки**.  
   
@@ -121,14 +116,14 @@ devenv /installvstemplates
   
  Когда **новый проект** откроется диалоговое окно [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] проходит через папку Шаблоны_проекта и воссоздает его структуру в **типы проектов** дерева с определенными изменениями:  
   
--   Корневой узел в **типы проектов** дерева определяется данный шаблон приложения.  
+- Корневой узел в **типы проектов** дерева определяется данный шаблон приложения.  
   
--   Имя узла можно локализовать и может содержать специальные символы.  
+- Имя узла можно локализовать и может содержать специальные символы.  
   
--   Можно изменить порядок сортировки.  
+- Можно изменить порядок сортировки.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Поиск корневой узел для типа проекта  
- Когда Visual Studio проходит через Шаблоны_проекта папок, открывает все ZIP-файлов и извлекает любые VSTEMPLATE-файлах. VSTEMPLATE-файл использует XML для описания шаблон приложения. Дополнительные сведения см. в разделе [Создание нового проекта: под капот, второй части](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Когда Visual Studio проходит через Шаблоны_проекта папок, открывает все ZIP-файлов и извлекает любые VSTEMPLATE-файлах. VSTEMPLATE-файл использует XML для описания шаблон приложения. Дополнительные сведения см. в разделе [Создание нового проекта: За кулисами, часть вторая](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  \<ProjectType > тег определяет тип проекта для приложения. Например файл \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip содержит файл EmptyProject.vstemplate с этим тегом:  
   
@@ -220,5 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** отображается как дочерний узел Visual C# просто узле Windows.  
   
 ## <a name="see-also"></a>См. также  
- [Создание нового проекта. Как это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-
+ [Создание проекта: как это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

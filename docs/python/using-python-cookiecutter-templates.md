@@ -1,26 +1,25 @@
 ---
 title: Использование шаблонов CookieCutter с Python
 description: Благодаря поддержке графического расширения Cookiecutter в Visual Studio можно искать шаблоны кода Python и на их основе создавать проекты.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832197"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Использование расширения Cookiecutter
 
-[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) предоставляет графический пользовательский интерфейс для поиска шаблонов, ввода их параметров и создания проектов и файлов. В Visual Studio 2017 этот компонент уже встроен. В ранних версиях Visual Studio этот компонент нужно устанавливать отдельно.
+[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) предоставляет графический пользовательский интерфейс для поиска шаблонов, ввода их параметров и создания проектов и файлов. В Visual Studio 2017 и более поздних версий этот компонент уже встроен. В более ранних версиях Visual Studio его нужно устанавливать отдельно.
 
 Для Cookiecutter требуется Python 3.3 или более поздней версии (32- или 64-разрядная), Anaconda 3 4.2 или более поздней версии (32- или 64-разрядная). Если подходящий интерпретатор Python недоступен, в Visual Studio отображается предупреждение. Если вы устанавливаете интерпретатор Python в процессе выполнения Visual Studio, нажмите на панели инструментов Cookiecutter кнопку **Home** (Домой), чтобы обнаружить установленный интерпретатор. (Дополнительные общие сведения о средах см. в разделе [Среды Python](managing-python-environments-in-visual-studio.md).)
 
@@ -60,7 +59,7 @@ ms.locfileid: "53958239"
 
 ![Страница параметров Cookiecutter](media/cookiecutter-template-options.png)
 
-Для каждого шаблона Cookiecutter определяется свой набор параметров и устанавливается значение по умолчанию (предложенный текст в каждом поле ввода). Значением по умолчанию может быть фрагмент кода, особенно если это динамическое значение, использующее другие параметры. 
+Для каждого шаблона Cookiecutter определяется свой набор параметров и устанавливается значение по умолчанию (предложенный текст в каждом поле ввода). Значением по умолчанию может быть фрагмент кода, особенно если это динамическое значение, использующее другие параметры.
 
 Для определенных параметров можно настроить значения по умолчанию с помощью файла конфигурации пользователя. Когда расширение Cookiecutter обнаруживает файл конфигурации пользователя, значения по умолчанию для шаблона заменяются на значения по умолчанию в этом файле. Дополнительные сведения см. в разделе документации Cookiecutter о [пользовательской конфигурации](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html).
 

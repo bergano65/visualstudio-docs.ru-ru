@@ -1,7 +1,6 @@
 ---
 title: CA1413. Не используйте неоткрытые поля в типах значений, видимых для COM
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1413
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 1352e7eb-fefc-4239-8847-25edc7804a54
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dab50ec607e92222e0d14ed8f6afeeeb1515e61b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac998d8a0e3a8c1883afa07c2cfe16098a2461af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546099"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413. Не используйте неоткрытые поля в типах значений, видимых для COM
 

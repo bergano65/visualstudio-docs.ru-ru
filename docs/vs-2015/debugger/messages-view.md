@@ -1,14 +1,9 @@
 ---
 title: Представлением "сообщения" | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3f896650d7979365346d493c5aac06340007cbb7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157492"
 ---
 # <a name="messages-view"></a>Представление сообщений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,21 +34,21 @@ ms.locfileid: "51784381"
   
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Открытие представления сообщений для окна, процесса или потока  
   
-1.  Перемещение фокуса к [представление Windows](../debugger/windows-view.md), [представление процессов](../debugger/processes-view.md), или [представление "Потоки"](../debugger/threads-view.md) окна.  
+1. Перемещение фокуса к [представление Windows](../debugger/windows-view.md), [представление процессов](../debugger/processes-view.md), или [представление "Потоки"](../debugger/threads-view.md) окна.  
   
-2.  Найти узел для элемента, сообщения которого необходимо просмотреть и выберите его.  
+2. Найти узел для элемента, сообщения которого необходимо просмотреть и выберите его.  
   
-3.  Из **Spy** меню, выберите **сообщений журнала**.  
+3. Из **Spy** меню, выберите **сообщений журнала**.  
   
      [Диалоговое окно "Параметры сообщения"](../debugger/message-options-dialog-box.md) открывает.  
   
-4.  Выберите параметры сообщения, которые вы хотите отобразить.  
+4. Выберите параметры сообщения, которые вы хотите отобразить.  
   
-5.  Нажмите клавишу **ОК** чтобы начать ведение журнала сообщений.  
+5. Нажмите клавишу **ОК** чтобы начать ведение журнала сообщений.  
   
      Откроется окно представления сообщений, а также **сообщений** меню добавляется на панель инструментов Spy ++. В зависимости от выбранных параметров сообщения начнут передаваться потоком в активное окно представления сообщений.  
   
-6.  При наличии достаточного количества сообщений, выберите **остановить ведение журнала** из **сообщений** меню.  
+6. При наличии достаточного количества сообщений, выберите **остановить ведение журнала** из **сообщений** меню.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Управление представлениями сообщений](../debugger/how-to-control-messages-view.md)  
@@ -89,6 +84,3 @@ ms.locfileid: "51784381"
   
  [Справочник по Spy++](../debugger/spy-increment-reference.md)  
  Содержит разделы, описывающие каждый Spy ++ меню и диалоговое окно.
-
-
-

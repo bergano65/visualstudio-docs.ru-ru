@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IDebugAsyncOperationCallBack | Документы Microsoft
+title: Интерфейс IDebugAsyncOperationCallBack | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,19 +13,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a776592ba09031e633a82f10e8d0ed9852db4b6e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 664c09a8262f2be474ea51a4e36cff40414e1cd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821774"
 ---
 # <a name="idebugasyncoperationcallback-interface"></a>Интерфейс IDebugAsyncOperationCallBack
-Предоставляет состояние события, связанные с ходом `IDebugAsyncOperation` интерфейс оценки.  
+Предоставляет состояния события, связанные с ходом оценки интерфейса `IDebugAsyncOperation`.  
   
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IDebugAsyncOperationCallBack` интерфейс предоставляет следующие методы.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDebugAsyncOperationCallBack::onComplete](../../winscript/reference/idebugasyncoperationcallback-oncomplete.md)|Сигналы, результат становится доступен из отладки асинхронной операции.|
+|[IDebugAsyncOperationCallBack::onComplete](../../winscript/reference/idebugasyncoperationcallback-oncomplete.md)|Сообщает, что результат доступен из операции асинхронной отладки.|

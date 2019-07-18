@@ -1,0 +1,38 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Cognitive Services в Visual Studio
+metadata:
+  title: Microsoft Cognitive Services | Документация Майкрософт
+  meta.description: Tutorials and conceptual articles about connecting apps and services to cognitive services in Azure.
+  ms.custom: seohack18
+  author: ghogen
+  manager: jillfra
+  ms.prod: visual-studio-windows
+  ms.technology: vs-azure
+  ms.topic: landing-page
+  ms.date: 10/09/2018
+  ms.author: ghogen
+sections:
+  - title: Подключение приложений к Cognitive Services с помощью подключенных служб Visual Studio
+    items:
+      - type: paragraph
+        text: 'Visual Studio предоставляет удобный способ подключить проект приложения или службы к различным службам Azure, включая Cognitive Services, которые предоставляют мощный набор функций искусственного интеллекта. Подключенные службы Visual Studio значительно упрощают процесс разработки, так как все настройки выполняются автоматически. Для учебника выберите, какие службы вы хотите добавить в проект:'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
+            text: Анализ текста
+            href: /azure/cognitive-services/text-analytics/vs-text-connected-service
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
+            text: API Bing для поиска новостей
+            href: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
+            text: API распознавания лиц
+            href: /azure/cognitive-services/face/vs-face-connected-service
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
+            text: Компьютерное зрение
+            href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service

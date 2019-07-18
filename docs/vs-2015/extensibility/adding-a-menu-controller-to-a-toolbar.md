@@ -1,14 +1,9 @@
 ---
 title: Добавление контроллера меню на панель инструментов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding menu controllers
 - menus, adding menu controllers to toolbars
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 13dec4b907b52e35b5b2377aafa511e50dc5cc48
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184899"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Добавление контроллера меню на панель инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,7 +114,7 @@ ms.locfileid: "51771536"
   
 ## <a name="implementing-the-menu-controller-commands"></a>Реализация команды меню контроллера  
   
-1.  В TWTestCommandPackageGuids.cs добавьте идентификаторы команд для трех меню элементов после существующей команды идентификаторы.  
+1. В TWTestCommandPackageGuids.cs добавьте идентификаторы команд для трех меню элементов после существующей команды идентификаторы.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -127,13 +122,13 @@ ms.locfileid: "51771536"
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  В TWTestCommand.cs добавьте следующий код в верхней части класса TWTestCommand.  
+2. В TWTestCommand.cs добавьте следующий код в верхней части класса TWTestCommand.  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  В конструкторе TWTestCommand после последнего вызова `AddCommand` метод, добавьте код для маршрутизации для каждой команды с помощью тех же обработчиков событий.  
+3. В конструкторе TWTestCommand после последнего вызова `AddCommand` метод, добавьте код для маршрутизации для каждой команды с помощью тех же обработчиков событий.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -154,7 +149,7 @@ ms.locfileid: "51771536"
     }  
     ```  
   
-4.  Добавьте обработчик событий к классу TWTestCommand Пометить выбранные команды в виде checked.  
+4. Добавьте обработчик событий к классу TWTestCommand Пометить выбранные команды в виде checked.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -167,7 +162,7 @@ ms.locfileid: "51771536"
     }  
     ```  
   
-5.  Добавление обработчика событий, который отображает окно MessageBox, когда пользователь выбирает команду на контроллере меню:  
+5. Добавление обработчика событий, который отображает окно MessageBox, когда пользователь выбирает команду на контроллере меню:  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -219,13 +214,13 @@ ms.locfileid: "51771536"
   
 ## <a name="testing-the-menu-controller"></a>Тестирование контроллера меню  
   
-1.  Выполните сборку решения и запустите отладку. Вы должны увидеть экспериментальный экземпляр.  
+1. Выполните сборку решения и запустите отладку. Вы должны увидеть экспериментальный экземпляр.  
   
-2.  Откройте **окно инструментов тестирования** на **представления / Other Windows** меню.  
+2. Откройте **окно инструментов тестирования** на **представления / Other Windows** меню.  
   
      Контроллер меню отображается на панели инструментов в окне инструментов и отображает **MC элемент 1**.  
   
-3.  Слева от стрелки, нажмите кнопку меню контроллера.  
+3. Слева от стрелки, нажмите кнопку меню контроллера.  
   
      Вы должны увидеть три элемента, первая из которых установлен и имеет выделенный прямоугольник вокруг его значок. Нажмите кнопку **MC элемент 3**.  
   
@@ -234,4 +229,3 @@ ms.locfileid: "51771536"
 ## <a name="see-also"></a>См. также  
  [Добавление панели инструментов в окно инструментов](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [Добавление панели инструментов](../extensibility/adding-a-toolbar.md)
-

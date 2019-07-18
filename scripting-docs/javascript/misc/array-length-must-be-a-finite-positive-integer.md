@@ -1,14 +1,9 @@
 ---
 title: Длина массива должна быть конечным положительным числом | Документация Майкрософт
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5029
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 1a467040-4702-4178-848f-418a5974e907
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6589bd2e9bb4acbec5f169087a49e64417dfae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818128"
 ---
-# <a name="array-length-must-be-a-finite-positive-integer"></a>Длина массива должна быть конечным положительным числом
+# <a name="array-length-must-be-a-finite-positive-integer"></a>Длина массива должна быть выражена конечным положительным числом
 При вызове **массива** конструктор с аргументом, который не является целым числом (целые числа состоят из нуля, а также набор положительные целые числа).  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Использовать положительные целые числа, только в том случае, при создании нового `Array` объекта. Если вы хотите создать массив с единственным элементом, который не является целым числом, сделайте это в два этапа. Сначала создайте массив с одним элементом, а затем поместить значение в первом элементе (array[0]). Ниже приведен пример, который создает эту ошибку.  
+- Использовать положительные целые числа, только в том случае, при создании нового `Array` объекта. Если вы хотите создать массив с единственным элементом, который не является целым числом, сделайте это в два этапа. Сначала создайте массив с одним элементом, а затем поместить значение в первом элементе (array[0]). Ниже приведен пример, который создает эту ошибку.  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  

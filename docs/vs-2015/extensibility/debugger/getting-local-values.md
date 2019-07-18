@@ -1,14 +1,9 @@
 ---
 title: Получение локальных значений | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], local values
@@ -16,31 +11,31 @@ helpviewer_keywords:
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 471a01ff1e3e7519f25e77cedca12700b0a6222b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2c01e090ff3459d2d70281ab4fce95d3e6f68759
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436375"
 ---
 # <a name="getting-local-values"></a>Получение локальных значений
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Чтобы получить значения локальной переменной, Visual Studio вызывает [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) для этого локального. В данном случае класс `CFieldProperty` реализует интерфейс IDebugProperty2 для каждого локального.  
   
  Эта реализация `IDebugProperty2::GetPropertyInfo` выполняет следующие задачи:  
   
-1.  Получает имя локальной переменной, свойства и атрибуты из [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) структура заполнена, если класс был создан и инициализирован.  
+1. Получает имя локальной переменной, свойства и атрибуты из [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) структура заполнена, если класс был создан и инициализирован.  
   
-2.  Получает тип локальной переменной из [IDebugField](../../extensibility/debugger/reference/idebugfield.md) объекта.  
+2. Получает тип локальной переменной из [IDebugField](../../extensibility/debugger/reference/idebugfield.md) объекта.  
   
-3.  Получает значение локальной переменной из `IDebugField` объекта. Это поле привязано к расположении в памяти локального с помощью [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) объект и значение получается из результирующего [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объекта.  
+3. Получает значение локальной переменной из `IDebugField` объекта. Это поле привязано к расположении в памяти локального с помощью [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) объект и значение получается из результирующего [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объекта.  
   
-4.  Возвращает все запрошенные свойства в [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) структуры.  
+4. Возвращает все запрошенные свойства в [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) структуры.  
   
 ## <a name="managed-code"></a>Управляемый код  
  В этом примере показана реализация `IDebugProperty2::GetPropertyInfo` для локальной в управляемом коде метод. Он также показывает вспомогательную функцию, `Field.GetType`, который позволяет получить тип поля. `Field.GetValue` отображается в [оценки "Локальные"](../../extensibility/debugger/evaluating-locals.md). Вспомогательная функция `Field.MapModifiersToAttributes` (не показано) просто преобразует поля [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) флаги для [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) значения.  
@@ -449,4 +444,3 @@ HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )
  [Пример реализации локальных переменных](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [Получение локальных свойств](../../extensibility/debugger/getting-local-properties.md)   
  [Контекст вычислений](../../extensibility/debugger/evaluation-context.md)
-

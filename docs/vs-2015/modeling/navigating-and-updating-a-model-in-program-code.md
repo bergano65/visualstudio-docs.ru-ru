@@ -1,25 +1,22 @@
 ---
 title: Переход и обновление модели в программный код | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 260d726ef9f6478292fe80c7fd90ffc4a807265d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158951"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Перемещение по модели и обновление модели в коде программы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +54,9 @@ ms.locfileid: "49863169"
   
  [DocView и DocData](#docdata)  
   
- Фигуры, соединители и схемы и их связи с элементами модели описаны в отдельной статье. Дополнительные сведения см. в разделе [как: перейдите схеме и ее обновление](../misc/how-to-navigate-and-update-a-diagram.md).  
+ Фигуры, соединители и схемы и их связи с элементами модели описаны в отдельной статье. Дополнительные сведения см. в разделе [Практическое руководство. Перейдите схеме и ее обновление](../misc/how-to-navigate-and-update-a-diagram.md).  
   
-##  <a name="example"></a> Примере рассмотрено определение DSL  
+## <a name="example"></a> Примере рассмотрено определение DSL  
  Это основная часть DslDefinition.dsl в примерах этого раздела:  
   
  ![Схема определения DSL &#45; семейного древа Тюдор](../modeling/media/familyt-person.png "FamilyT_Person")  
@@ -79,7 +76,7 @@ ms.locfileid: "49863169"
   
  Кроме того при написании кода в виде отдельного проекта, от того, в которой определен доменный язык, следует импортировать сборки, построенные проектом Dsl.  
   
-##  <a name="navigation"></a> Перемещение модели  
+## <a name="navigation"></a> Перемещение модели  
   
 ### <a name="properties"></a>Свойства  
  Свойства домена, определенные в определении DSL становятся свойствами, которые доступны в программном коде:  
@@ -123,7 +120,7 @@ ms.locfileid: "49863169"
   
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`  
   
- Кроме того, существуют также другие методы для доступа к ссылкам. Пример:  
+ Кроме того, существуют также другие методы для доступа к ссылкам. Например:  
   
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`  
   
@@ -146,8 +143,8 @@ ms.locfileid: "49863169"
   
  `store.ElementDirectory.GetElement(elementId);`  
   
-##  <a name="metadata"></a> Доступ к сведениям о классе  
- Можно получить сведения о классов, отношения и другие аспекты определения DSL. Пример:  
+## <a name="metadata"></a> Доступ к сведениям о классе  
+ Можно получить сведения о классов, отношения и другие аспекты определения DSL. Например:  
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
   
@@ -163,11 +160,11 @@ ms.locfileid: "49863169"
   
  Ниже приведены классы предка элементов модели.  
   
--   ModelElement - все элементы и отношения являются ModelElements  
+- ModelElement - все элементы и отношения являются ModelElements  
   
--   ElementLink - все связи представляют ElementLinks  
+- ElementLink - все связи представляют ElementLinks  
   
-##  <a name="transaction"></a> Внести изменения в транзакции  
+## <a name="transaction"></a> Внести изменения в транзакции  
  При каждом изменении кода программы в Store, его необходимо делать это внутри транзакции. Это относится к всех элементов модели, отношения, фигуры, схемы и их свойства. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Modeling.Transaction>.  
   
  Является наиболее удобным способом управления транзакции с `using` инструкция заключена в `try...catch` инструкции:  
@@ -200,7 +197,7 @@ catch (Exception ex)
   
  Для внесения постоянных изменений, вы должны `Commit` транзакции до ее удаления. При возникновении исключения, не перехватываемое внутри транзакции, Store будут сброшены в состояние до изменения.  
   
-##  <a name="elements"></a> Создание элементов модели  
+## <a name="elements"></a> Создание элементов модели  
  Этот пример добавляет элемент к существующей модели:  
   
 ```  
@@ -229,42 +226,42 @@ using (Transaction t =
   
 - Задайте свойства нового элемента, особенно свойства, для которого `IsName` имеет значение true, если в DslDefinition. Этот флаг помечает свойство, которое служит для идентификации элемента уникально в пределах его владельцем. В этом случае свойство Name имеет флага.  
   
-- Определение DSL этот DSL должен быть загружен в Store. Если вы создаете расширения, такие как команды меню, оно обычно представлено уже true. В других случаях можно явно загрузить модель в Store, или использовать <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> загружать его. Дополнительные сведения см. в разделе [как: открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+- Определение DSL этот DSL должен быть загружен в Store. Если вы создаете расширения, такие как команды меню, оно обычно представлено уже true. В других случаях можно явно загрузить модель в Store, или использовать <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> загружать его. Дополнительные сведения см. в разделе [Практическое руководство. Открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
   При создании элемента, таким образом, фигуры создается автоматически (если DSL со схемой). Он отображается в расположении, автоматически назначаемый, выполнив стандартную форму, цвет и другие функции. Если вы хотите управлять, где и как связанные фигуры отображается, см. в разделе [Создание элемента и его фигура](#merge).  
   
-##  <a name="links"></a> Создание связей  
+## <a name="links"></a> Создание связей  
  Существуют две связи, определенные в примере определения DSL. Каждое отношение определяет *свойства роли* класса на каждом конце связи.  
   
  Существует три способа, в которых можно создать экземпляр отношения. Каждый из этих трех методов имеет тот же эффект:  
   
-- Установите свойство исходный исполнитель роли. Пример:  
+- Установите свойство исходный исполнитель роли. Например:  
   
-  -   `familyTree.People.Add(edward);`  
+  - `familyTree.People.Add(edward);`  
   
-  -   `edward.Parents.Add(henry);`  
+  - `edward.Parents.Add(henry);`  
   
-- Свойства целевого исполнителя роли. Пример:  
+- Свойства целевого исполнителя роли. Например:  
   
-  -   `edward.familyTreeModel = familyTree;`  
+  - `edward.familyTreeModel = familyTree;`  
   
        Кратность этой роли будет `1..1`, поэтому установим значение.  
   
-  -   `henry.Children.Add(edward);`  
+  - `henry.Children.Add(edward);`  
   
        Кратность этой роли будет `0..*`, поэтому мы добавим в коллекцию.  
   
-- Явно создайте экземпляр связи. Пример:  
+- Явно создайте экземпляр связи. Например:  
   
-  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
+  - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
-  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
+  - `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
   
   Последний метод полезно в том случае, если вы хотите задать свойства самого отношения.  
   
   При создании элемента, таким образом, соединитель на схеме автоматически создается, но оно содержит фигуры по умолчанию, цвета и другие функции. Чтобы контролировать, как создается связанный соединителя, см. в разделе [Создание элемента и его фигура](#merge).  
   
-##  <a name="deleteelements"></a> Удаление элементов  
+## <a name="deleteelements"></a> Удаление элементов  
  Удаление элемента, вызвав `Delete()`:  
   
  `henry.Delete();`  
@@ -287,7 +284,7 @@ using (Transaction t =
   
   В некоторых случаях удаление запрещена существование блокировку, в элементе или в элементе, который может удалить распространения. Можно использовать `element.CanDelete()` для проверки, может ли быть удален элемент.  
   
-##  <a name="deletelinks"></a> Удаление ссылок связи  
+## <a name="deletelinks"></a> Удаление ссылок связи  
  Вы можете удалить ссылки связи путем удаления элемента из свойства роли:  
   
  `henry.Children.Remove(edward); // or:`  
@@ -306,7 +303,7 @@ using (Transaction t =
   
  `edward.FamilyTreeModel = anotherFamilyTree;`  
   
-##  <a name="reorder"></a> Изменение порядка ссылок связи  
+## <a name="reorder"></a> Изменение порядка ссылок связи  
  Ссылки определенного отношения, являются источником или предназначенные для определенного элемента модели имеют определенной последовательности. Они отображаются в порядке, в котором они были добавлены. Например Эта инструкция всегда будет давать дочерние элементы в том же порядке:  
   
  `foreach (Person child in henry.Children) ...`  
@@ -323,12 +320,12 @@ using (Transaction t =
   
  `link.MoveBefore(role, nextLink);`  
   
-##  <a name="locks"></a> Блокировки  
+## <a name="locks"></a> Блокировки  
  Изменения можно предотвратить, блокировку. Можно задать блокировки на отдельные элементы, на секции и хранилище. Если какой-либо из этих уровней имеет блокировка, предотвращающая тип изменения, которое вы хотите сделать, может быть исключение при попытке его. Вы можете узнать, установлены ли блокировки с помощью элемента. GetLocks(), который является методом расширения, который определен в пространстве имен <xref:Microsoft.VisualStudio.Modeling.Immutability>.  
   
  Дополнительные сведения см. в разделе [Определение политики блокировки для создания сегментов только для чтения](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).  
   
-##  <a name="copy"></a> Копирование и вставка  
+## <a name="copy"></a> Копирование и вставка  
  Можно скопировать элементы или группы элементов для <xref:System.Windows.Forms.IDataObject>:  
   
 ```  
@@ -353,7 +350,7 @@ using (Transaction t = targetDiagram.Store.
   
  `Merge ()` может принимать либо `PresentationElement` или `ModelElement`. Если вы обеспечите `PresentationElement`, можно также указать позицию на целевую схему в качестве третьего параметра.  
   
-##  <a name="diagrams"></a> Переход и обновление схемы  
+## <a name="diagrams"></a> Переход и обновление схемы  
  В DSL элемент модели домена, который представляет это концепция, например лица или музыкальной, отделен от элемента фигуры, который представляет, отображаемые на диаграмме. Элемент модели домена хранит важные свойства и отношения между основные понятия. Элемент фигуры хранит размер, положение и цвет объекта представления на диаграмме, а также макет его компонентов.  
   
 ### <a name="presentation-elements"></a>Элементы представления  
@@ -375,7 +372,7 @@ using (Transaction t = targetDiagram.Store.
   
  Фигуры может иметь дочерние фигуры в двух наборов. Фигуры в `NestedChildShapes` набора сводится к ограничивающего прямоугольника родительского. Фигуры в `RelativeChildShapes` списка может отображаться за пределами или частично за пределами границ родительского — например, метку или порт. Не имеет схемы `RelativeChildShapes` и не `Parent`.  
   
-###  <a name="views"></a> Переходы между фигур и элементов  
+### <a name="views"></a> Переходы между фигур и элементов  
  Элементы модели домена и элементы фигуры связаны с <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> связи.  
   
 ```csharp  
@@ -447,22 +444,22 @@ FamilyTreeDiagram diagram =
   
  --------- *YourConnector*  
   
-###  <a name="shapeProperties"></a> Свойства фигур и соединителей  
+### <a name="shapeProperties"></a> Свойства фигур и соединителей  
  В большинстве случаев он необязателен для явного изменения фигуры. При изменении элементов модели правил «исправить» обновление фигур и соединителей. Дополнительные сведения см. в разделе [реагирование на события и распространение изменений](../modeling/responding-to-and-propagating-changes.md).  
   
  Тем не менее рекомендуется внести некоторые изменения явные фигур в свойствах, которые не зависят от элементов модели. Например можно изменить эти свойства:  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> -Определяет высоту и ширину фигуры.  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> -Определяет высоту и ширину фигуры.  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -положение относительно родительской фигуры или схемы  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -положение относительно родительской фигуры или схемы  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> -набор перья и кисти, используемый для рисования фигуры или соединителя  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> -набор перья и кисти, используемый для рисования фигуры или соединителя  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> — делает невидимым фигуры  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> — делает невидимым фигуры  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> — делает видимым после фигуры `Hide()`  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> — делает видимым после фигуры `Hide()`  
   
-###  <a name="merge"></a> Создание элемента и его фигуры  
+### <a name="merge"></a> Создание элемента и его фигуры  
  При создании элемента и связать его в дереве отношений внедрения, фигуры автоматически создается и связанные с ней. Для этого правила «исправления», которые выполняются в конце транзакции. Тем не менее фигура будет отображаться в расположении, автоматически назначается, и его форму, цвет и другие функции будет иметь значения по умолчанию. Чтобы контролировать, как создается фигуры, можно использовать функцию слияния. Необходимо сначала добавить элементы, которые вы хотите добавить в ElementGroup и затем объединять группы в диаграмме.  
   
  Этот метод:  
@@ -513,9 +510,9 @@ partial class MyDiagram
  Можно также задать цвет и другие свойства, предоставляемого соединителей с помощью этого метода.  
   
 ### <a name="use-transactions"></a>Использование транзакций  
- Фигуры, соединители и схемы являются подтипами <xref:Microsoft.VisualStudio.Modeling.ModelElement> и в реальном времени в Store. Таким образом, необходимо внести изменения в них только внутри транзакции. Дополнительные сведения см. в разделе [как: использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).  
+ Фигуры, соединители и схемы являются подтипами <xref:Microsoft.VisualStudio.Modeling.ModelElement> и в реальном времени в Store. Таким образом, необходимо внести изменения в них только внутри транзакции. Дополнительные сведения см. в разделе [Практическое руководство. Использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
-##  <a name="docdata"></a> Просмотр документа и документа данных  
+## <a name="docdata"></a> Просмотр документа и документа данных  
  ![Схема классов стандартных типов схем](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
   
 ## <a name="store-partitions"></a>Store секций  
@@ -525,9 +522,6 @@ partial class MyDiagram
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
  [Проверка в доменных языках](../modeling/validation-in-a-domain-specific-language.md)   
  [Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)   
- [Практическое: использования транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md)   
+ [Практическое руководство. Использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [Интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)
-
-
-

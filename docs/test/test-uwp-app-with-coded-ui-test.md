@@ -1,22 +1,21 @@
 ---
 title: Тестирование приложения UWP с помощью закодированного теста пользовательского интерфейса
 ms.date: 05/31/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ee648a11c04f9ff6da2f7113c37424b4f1f6388
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430267"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Создание закодированного теста пользовательского интерфейса для тестирования приложения UWP
 
@@ -30,7 +29,11 @@ ms.locfileid: "53842048"
 
 1. В Visual Studio создайте проект UWP с помощью шаблона **Пустое приложение (универсальное приложение)** для Visual C# или Visual Basic.
 
-     ![Пустое приложение (универсальное приложение Windows)](../test/media/blank-uwp-app-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Пустое приложение (универсальное приложение Windows)](../test/media/blank-uwp-app-template.png)
+
+   ::: moniker-end
 
 1. В диалоговом окне **Новый проект универсальной платформы Windows** нажмите кнопку **ОК**, чтобы принять версию платформы по умолчанию.
 
@@ -62,16 +65,20 @@ ms.locfileid: "53842048"
 
 1. Чтобы добавить тестовый проект в решение, в **обозревателе решений** щелкните решение правой кнопкой мыши и выберите пункты **Добавить** > **Новый проект**.
 
-1. В диалоговом окне **Новый проект** выберите шаблон **Проект закодированного теста пользовательского интерфейса (универсальное приложение для Windows)**. Шаблон можно найти в категории **Универсальное приложение для Windows** в папке **Visual C#** или **Visual Basic**.
+1. Найдите и выберите шаблон **Проект закодированного теста пользовательского интерфейса (универсальное приложение для Windows)**.
 
-     ![Новый проект закодированного теста пользовательского интерфейса](../test/media/coded-ui-test-project-uwp-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Новый проект закодированного теста пользовательского интерфейса](../test/media/coded-ui-test-project-uwp-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Если вы не видите шаблон **Проект закодированного теста пользовательского интерфейса (универсальное приложение для Windows)**, необходимо [установить компонент закодированного теста пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 1. В диалоговом окне **Формирование кода для кодированного теста пользовательского интерфейса** выберите **Редактировать тест вручную**.
 
-     ![Диалоговое окно "Формирование кода для кодированного теста пользовательского интерфейса"](../test/media/manually-edit-the-test.png)
+   ![Диалоговое окно "Формирование кода для кодированного теста пользовательского интерфейса"](../test/media/manually-edit-the-test.png)
 
 1. Если приложение UWP еще не запущено, запустите его, нажав клавишу **Ctrl**+**F5**.
 
@@ -129,6 +136,7 @@ ms.locfileid: "53842048"
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
+
 1. Затем нам нужно получить **AutomationId** из тестируемого [приложения](#create-a-uwp-app-to-test) UWP. Откройте меню **Пуск** Windows, чтобы увидеть плитку приложения. Затем перетащите перекрестье ![Целевой значок](media/target-icon.png) из диалогового окна **Построитель кодированных тестов ИП** в плитку для приложения. Когда вокруг плитки появится голубая рамка, отпустите кнопку мыши.
 
    ![Инструмент "Перекрестие"](media/cross-hair-tool.png)

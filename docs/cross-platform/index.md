@@ -6,20 +6,21 @@ ms.date: 10/31/2018
 author: jasongroce
 ms.author: jasgro
 ms.topic: landing-page
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 3db198017d15961cf10e30caa1fd860804b9ad3a
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: f52b537a5e6a02dbaccb02f275c380d0ec355fdf
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154008"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160121"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Документация по разработке мобильных приложений на C++
 
 Создавайте в Visual Studio приложения на C++ непосредственно для устройств с iOS, Android и Windows.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsF">
     <li>
@@ -91,7 +92,7 @@ ms.locfileid: "54154008"
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">Интегрированная среда разработки и средства разработки Visual C++</a><p>
+                        <p><a href="/cpp/ide/read-and-understand-code-cpp">Чтение и написание кода</a><p>
                     </div>
                 </div>
             </div>
@@ -103,7 +104,7 @@ ms.locfileid: "54154008"
                 <div class="card">
                     <div class="cardText">
                         <h3>Платформы</h3>
-                        <p><a href="/cpp/windows/universal-windows-apps-cpp">Документация по универсальной платформе Windows (UWP)</a></p>
+                        <p><a href="/cpp/cppcx/universal-windows-apps-cpp">Документация по универсальной платформе Windows (UWP)</a></p>
                         <p><a href="https://developer.apple.com/reference">Документация по API для iOS</a></p>
                         <p><a href="https://developer.android.com/guide/index.html">Документация по API для Android</a></p>
                     </div>

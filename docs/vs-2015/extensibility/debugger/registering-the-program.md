@@ -1,42 +1,37 @@
 ---
 title: Регистрация программы | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e26e15e17e69e8bf182d23161cb17ddbd5de0035
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 31d03f12a31953cbc0e20d06820dd49b5f9827e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441973"
 ---
 # <a name="registering-the-program"></a>Регистрация программы
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 После модуля отладки приобрела порт, представленный [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) интерфейс, следующим шагом Включение программы для отладки — для его регистрации в порт. После регистрации, эта программа доступна для отладки, одно из следующих способов:  
   
--   Процесс присоединения, который позволяет отладчику получить полное управление отладки запущенного приложения.  
+- Процесс присоединения, который позволяет отладчику получить полное управление отладки запущенного приложения.  
   
--   Just-in-time (JIT) отладки, позволяющий after фактов отладки программы, которая выполняется независимо от отладчика. При архитектура среды выполнения перехватывает ошибку, отладчик уведомляется перед операционной системы или среды выполнения освобождает память и ресурсы программу виновный.  
+- Just-in-time (JIT) отладки, позволяющий after фактов отладки программы, которая выполняется независимо от отладчика. При архитектура среды выполнения перехватывает ошибку, отладчик уведомляется перед операционной системы или среды выполнения освобождает память и ресурсы программу виновный.  
   
 ## <a name="registering-procedure"></a>Процедура регистрации  
   
 #### <a name="to-register-your-program"></a>Для регистрации программы  
   
-1.  Вызовите [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) метод, реализованный порт.  
+1. Вызовите [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) метод, реализованный порт.  
   
      `IDebugPortNotify2::AddProgramNode` требуется указатель на [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) интерфейс.  
   
@@ -45,7 +40,7 @@ ms.locfileid: "51797108"
      Пример обработчика отладки, запуска программы и зарегистрировав его с портом.  
   
     > [!NOTE]
-    >  Это не единственный способ запуска и возобновления процесса; Это главным образом пример регистрации программы с портом.  
+    > Это не единственный способ запуска и возобновления процесса; Это главным образом пример регистрации программы с портом.  
   
     ```cpp#  
     // This is an IDebugEngineLaunch2 method.  
@@ -114,4 +109,3 @@ ms.locfileid: "51797108"
 ## <a name="see-also"></a>См. также  
  [Получение порта](../../extensibility/debugger/getting-a-port.md)   
  [Включение программы для отладки](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
-

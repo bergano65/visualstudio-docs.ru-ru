@@ -1,49 +1,50 @@
 ---
-title: Новые возможности для разработки
+title: Новые возможности разработки в Visual Studio 2017
+titleSuffix: ''
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
-- architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- what's new [Visual Studio], architecture and modeling
+- architecture [Visual Studio], modeling
+- modeling software [Visual Studio], What's New
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdea0b8e24347e608ad0e1736b55e34acb4e5854
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+monikerRange: vs-2017
+ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956027"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476536"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Новые возможности разработки в Visual Studio
+# <a name="whats-new-for-design-in-visual-studio-2017"></a>Новые возможности разработки в Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Динамическая проверка зависимостей
 
-Удаление нежелательных зависимостей является важной частью управления за техническими компромиссами. Динамическая проверка зависимостей теперь включены, предоставляя точную информацию о проблемах и полностью пользоваться преимуществами новые функции в редакторе и списке ошибок.
+Удаление нежелательных зависимостей является важной частью управления за техническими компромиссами. Visual Studio предоставляет Динамическая проверка зависимостей, включая точную информацию о таких проблемах, где они находятся. Динамических зависимостей проверки принимает полный преимущества новых возможностей в редакторе и списке ошибок.
 
 ![Динамическая проверка зависимостей в действии](media/dep-validation-whatsnew-01.png)
 
-Возможности разработки было изменено на сделать проверка зависимостей, более доступными и более, изменив терминологию из «Схемы слоев», «Схема зависимостей».
+Чтобы сделать проверка зависимостей, более доступными и был изменен возможности разработки. Терминология был изменен с «Схемы слоев» на «Схема зависимостей».
 
 **Архитектура** меню теперь содержит команду, чтобы напрямую создать схему зависимостей:
 
 ![Элемент динамических зависимостей в меню «архитектура»](media/dep-validation-whatsnew-02.png)
 
-... и были изменены имена свойств слоя в схеме зависимостей с описаниями, чтобы сделать их более понятным:
+Чтобы сделать их более значимое были изменены имена свойств слоя и описания:
 
 ![Имена свойств обновлены динамических зависимостей](media/dep-validation-whatsnew-03.png)
 
-Теперь отображается последствия изменения немедленно в результатах анализа ввести текущий код в решении каждый раз при сохранении схемы. У вас нет больше ожидать завершения команды «Проверить зависимости».
+Немедленно появится последствия изменения результатов анализа для текущего кода в решении каждый раз при сохранении схемы. Вам не нужно ждать завершения **проверить зависимости** команды.
 
-Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Дополнительные сведения см. в разделе [этой записи блога](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Будут удалены конструкторов UML
 
-Конструкторов UML были удалены из данной версии Visual Studio Enterprise.
+Конструкторов UML были удалены из Visual Studio.
 
 * UML-схемы теперь представлены в виде XML-файлов
 * Больше не существует в обозревателе моделей UML
@@ -56,17 +57,17 @@ ms.locfileid: "53956027"
 * Ссылка назад с DSL или слоя больше не поддерживается
 * Расширения UML пакет SDK моделирования больше не поддерживается
 
-Однако поддержка визуализации архитектуры кода .NET и C++ доступна через [карты кода](map-dependencies-across-your-solutions.md)и значительные усовершенствования, внесенные для проверки зависимостей, описанных выше.
+Поддержка для визуализации архитектуры .NET и C++ код доступен через [карты кода](map-dependencies-across-your-solutions.md).
 
 Если вы являетесь пользователем значительные конструкторов UML, можно продолжать использовать Visual Studio 2015 или более ранних версий, хотя необходимо выбрать средство для ваших потребностей UML.
 
-Дополнительные сведения см. в разделе [этой записи блога](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Дополнительные сведения см. в разделе [этой записи блога](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Поддержка выпуска для инструментов моделирования и архитектуры
 
-Visual Studio 2017 доступны в предыдущих версиях. Не все они обеспечивают поддержку для инструментов моделирования и архитектуры. Следующая таблица содержит сведения о доступности каждого средства.
+Visual Studio доступны в предыдущих версиях. Не все они обеспечивают поддержку для инструментов моделирования и архитектуры. Следующая таблица содержит сведения о доступности каждого средства.
 
 |**Возможность**|**Выпуск Enterprise edition**|**Профессиональный выпуск**|**Community edition**|
 |-|-|-|-|

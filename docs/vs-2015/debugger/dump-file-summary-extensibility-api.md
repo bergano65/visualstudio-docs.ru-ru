@@ -1,14 +1,9 @@
 ---
 title: API расширяемости сводки файла дампа | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,26 +13,23 @@ ms.assetid: bf008cdc-03f8-496b-868d-4c2644f1d7ee
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d1d0f6bef5ebadaa01dbf451954cb8e9cabeb806
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e2986e1d529af8fad8f5d4ee49f3df69dcda7a8f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156056"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API расширяемости сводки файла дампа
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-С помощью интерфейсов API расширяемости в этом разделе, можно расширить. Система проектов EXE-файла и **Сводка дампа** страницы для использования с помощью собственного пользовательского модуля отладки.  
+С помощью интерфейсов API расширяемости в этом разделе можно расширить систему EXE-проекта и страницу **Сводка дампа** для использования со своим собственным модулем отладки.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- API-интерфейсы для расширения **Сводка дампа** страницы и. Система проектов exe, доступны в следующее пространство имен:  
+ Интерфейсы API для расширения страницы **Сводка дампа** и системы EXE-проекта доступны в следующих пространствах имен:  
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  
   
 ## <a name="see-also"></a>См. также  
  [Использование файлов дампа](../debugger/using-dump-files.md)
-
-
-

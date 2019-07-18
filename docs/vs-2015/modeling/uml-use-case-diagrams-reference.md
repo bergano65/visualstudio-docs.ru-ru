@@ -1,12 +1,9 @@
 ---
-title: 'UML-схемы вариантов использования: Ссылаться | Документация Майкрософт'
-ms.custom: ''
+title: 'UML-схемы вариантов использования: Справочник по | Документация Майкрософт'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.usecasediagram.toolbox
 - vs.teamarch.usecasediagram.diagram
@@ -21,15 +18,15 @@ ms.assetid: aa15772b-eb67-4366-b145-b559112817df
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 64eece28fc46fce799eff01e7ed1e7302e939dbc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 45f8d742af1cd6a0ed73f3beda24e829b417e81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424320"
 ---
-# <a name="uml-use-case-diagrams-reference"></a>UML-схемы вариантов использования: справочные материалы
+# <a name="uml-use-case-diagrams-reference"></a>UML-схемы вариантов использования: Ссылка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В Visual Studio *схема вариантов использования* обобщает, кто использует приложение или систему, и их возможности с ним. Для создания схемы UML вариантов использования, на **архитектура** меню, щелкните **создать схему UML или схему слоев**.  
@@ -39,7 +36,7 @@ ms.locfileid: "51791773"
  Чтобы узнать, какие версии Visual Studio поддерживают эту функцию, см. раздел [Поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  В этом разделе описаны элементы, доступные в схемах вариантов использования. Дополнительные сведения о рисовании схем вариантов использования см. в разделе [схем вариантов использования UML: рекомендации по](../modeling/uml-use-case-diagrams-guidelines.md). Дополнительные сведения о способах создания и схем моделирования см. в разделе [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md).  
+> В этом разделе описаны элементы, доступные в схемах вариантов использования. Дополнительные сведения о рисовании схем вариантов использования см. в разделе [UML-схемы вариантов использования: Рекомендации по](../modeling/uml-use-case-diagrams-guidelines.md). Дополнительные сведения о способах создания и схем моделирования см. в разделе [моделей и схем UML, изменить](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-use-case-diagrams"></a>Чтение схем вариантов использования  
  В таблицах в следующих разделах описаны элементы, которые можно использовать на схеме вариантов использования, и их основные свойства. Полный список свойств, см. в разделе [схемы вариантов использования свойства элементов на UML](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).  
@@ -57,7 +54,7 @@ ms.locfileid: "51791773"
 ### <a name="structuring-use-cases"></a>Структурирование вариантов использования  
  ![Варианты использования с include, расширять и обобщения](../modeling/media/uml-ucovstructure.png "UML_UCOvStructure")  
   
-|Фигура|**Элемент**|Описание:|  
+|Фигура|**Элемент**|Описание|  
 |-----------|-----------------|-----------------|  
 |5|**включить**|Включающий вариант использования вызывает включенный. Включение используется для демонстрации того, как вариант использования разбивается на более мелкие шаги. Включенный вариант использования находится на конце стрелки с наконечником.<br /><br /> Обратите внимание, что схема не показывает порядок шагов. Для описания этих сведений можно использовать схему деятельности, схему последовательностей или другой документ.|  
 |6|**Расширить**|Расширяющий вариант использования добавляет цели и шаги в расширяемый вариант использования. Расширения работают только при определенных условиях. Расширяемый вариант использования находится на конце стрелки с наконечником.<br /><br /> Обратите внимание, что схема не показывает конкретные условия, при которых применяются расширения: их можно записать в комментариях или другом документе.|  
@@ -68,12 +65,9 @@ ms.locfileid: "51791773"
 |11 (не показано)|**Пакеты**|Варианты использования, субъекты и подсистемы могут содержаться внутри пакетов. Фигуры пакетов не отображаются на схеме, но можно задать **LinkedPackage** свойства схемы. Элементы, которые впоследствии создаются на схеме, помещаются в пакет. Дополнительные сведения см. в разделе [определение пакетов и пространств имен](../modeling/define-packages-and-namespaces.md).|  
   
 ## <a name="see-also"></a>См. также  
- [UML-схемы вариантов использования: рекомендации](../modeling/uml-use-case-diagrams-guidelines.md)   
+ [Схемы вариантов использования UML: Рекомендации](../modeling/uml-use-case-diagrams-guidelines.md)   
  [Изменение моделей и схем UML](../modeling/edit-uml-models-and-diagrams.md)   
  [Схемы последовательностей UML: Справочник по](../modeling/uml-sequence-diagrams-reference.md)   
- [UML-схемы классов: ссылка](../modeling/uml-class-diagrams-reference.md)   
+ [Схемы классов UML: Справочник по](../modeling/uml-class-diagrams-reference.md)   
  [Схемы компонентов UML: Справочник по](../modeling/uml-component-diagrams-reference.md)   
- [Схемы компонентов UML: справочные материалы](../modeling/uml-component-diagrams-reference.md)
-
-
-
+ [Схемы компонентов UML: справочник](../modeling/uml-component-diagrams-reference.md)

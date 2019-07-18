@@ -1,14 +1,9 @@
 ---
-title: 'CA1720: Идентификаторы не должны содержать имен типов | Документация Майкрософт'
-ms.custom: ''
+title: CA1720. Идентификаторы не должны содержать имен типов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1720
 - IdentifiersShouldNotContainTypeNames
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576732"
 ---
-# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: идентификаторы не должны содержать имен типов
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720. Идентификаторы не должны содержать имена типов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,7 +35,7 @@ ms.locfileid: "49862343"
 ## <a name="cause"></a>Причина
  Имя параметра в доступном члене содержит имя типа данных.
 
- - или -
+ -или-
 
  Имя видимого элемента содержит имя типа данных для конкретного языка.
 
@@ -146,13 +141,10 @@ ms.locfileid: "49862343"
  Иногда использование имен параметров и элементов, основанные на типах может быть целесообразным. Тем не менее, для новых разработок, нет известной сценарии возникнуть, когда необходимо подавить предупреждение из этого правила. Для библиотек, ранее поставлявшихся возможно подавить предупреждение из этого правила.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1709: идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: идентификаторы должны отличаться не только регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Идентификаторы должны отличаться регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: идентификаторы не должны содержать знак подчеркивания](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707: Идентификаторы не должны содержать знак подчеркивания](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1719: имена параметров не должны совпадать с именами элементов](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
-
-
-
+ [CA1719: Имена параметров не должны совпадать с именами элементов](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

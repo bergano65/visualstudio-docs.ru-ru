@@ -9,38 +9,40 @@ helpviewer_keywords:
 ms.assetid: 08efbeaf-22f7-49e9-96a8-bb906dfe4fd8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c7ef6bd9292c9f730731383cb4474915c17985
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: b25825d4a0c7e3253e1461a163c8211c3e3bdcda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829749"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
-Получает номер строки с помощью индекса.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Item (   
-   DWORD            index,  
-   IDiaLineNumber** lineNumber  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- индекс  
- [in] Индекс [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) извлекаемый объект. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) метод.  
-  
- lineNumber  
- [out] Возвращает [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) объект, представляющий номер требуемой строки.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Получает номер строки с помощью индекса.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Item ( 
+   DWORD            index,
+   IDiaLineNumber** lineNumber
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ индекс
+
+[in] Индекс [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) извлекаемый объект. Индекс находится в диапазоне от 0 до `count`-1, где `count` возвращается [IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) метод.
+
+ lineNumber
+
+[out] Возвращает [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) объект, представляющий номер требуемой строки.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

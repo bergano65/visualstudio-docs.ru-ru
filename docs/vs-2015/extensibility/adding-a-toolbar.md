@@ -1,27 +1,22 @@
 ---
 title: Добавление панели инструментов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding to IDE
 - IDE, adding toolbars
 ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 038b8e8503a89dd0ec565d3d1b5acf20e6437600
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184871"
 ---
 # <a name="adding-a-toolbar"></a>Добавление панели инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51787956"
   
 ## <a name="creating-a-toolbar-for-the-ide"></a>Создание панели инструментов для интегрированной среды разработки  
   
-1.  В ToolbarTestCommandPackage.vsct найдите в разделе "символы". В GuidSymbol элемент с именем guidToolbarTestCommandPackageCmdSet добавьте объявления для панели инструментов и группу инструментов, следующим образом.  
+1. В ToolbarTestCommandPackage.vsct найдите в разделе "символы". В GuidSymbol элемент с именем guidToolbarTestCommandPackageCmdSet добавьте объявления для панели инструментов и группу инструментов, следующим образом.  
   
     ```xml  
     <IDSymbol name="Toolbar" value="0x1000" />  
@@ -50,7 +45,7 @@ ms.locfileid: "51787956"
   
     ```  
   
-2.  В верхней части области команд создайте раздел меню. Добавьте элемент меню в раздел меню для определения панели инструментов.  
+2. В верхней части области команд создайте раздел меню. Добавьте элемент меню в раздел меню для определения панели инструментов.  
   
     ```xml  
     <Menus>  
@@ -67,7 +62,7 @@ ms.locfileid: "51787956"
   
      Панели инструментов не могут быть вложенными как подменю. Таким образом у вас нет для назначения родительской группы. Кроме того у вас нет установить приоритет, поскольку пользователь может перемещать панели инструментов. Как правило исходное размещение панель инструментов определяется программным способом, но последующие изменения пользователем, сохраняются.  
   
-3.  В [группы](../extensibility/groups-element.md) разделе после существующую запись группы, определить [группы](../extensibility/group-element.md) элемент, который будет содержать команды для панели инструментов.  
+3. В [группы](../extensibility/groups-element.md) разделе после существующую запись группы, определить [группы](../extensibility/group-element.md) элемент, который будет содержать команды для панели инструментов.  
   
     ```xml  
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"  
@@ -76,7 +71,7 @@ ms.locfileid: "51787956"
     </Group>  
     ```  
   
-4.  Кнопка на панели инструментов. В разделе кнопки замените родительского блока кнопки панели инструментов. Полученные кнопки должны выглядеть следующим образом:  
+4. Кнопка на панели инструментов. В разделе кнопки замените родительского блока кнопки панели инструментов. Полученные кнопки должны выглядеть следующим образом:  
   
     ```xml  
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">  
@@ -90,12 +85,11 @@ ms.locfileid: "51787956"
   
      По умолчанию если нет команд на панели инструментов он не отображается.  
   
-5.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
+5. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
-6.  Щелкните правой кнопкой мыши в строке меню Visual Studio, чтобы получить список панелей инструментов. Выберите **тестирования инструментов**.  
+6. Щелкните правой кнопкой мыши в строке меню Visual Studio, чтобы получить список панелей инструментов. Выберите **тестирования инструментов**.  
   
-7.  Теперь вы увидите на панели инструментов значок справа от Find в значок файлов. Если щелкнуть значок, появится окно сообщения с текстом **ToolbarTestCommandPackage. Внутри IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+7. Теперь вы увидите на панели инструментов значок справа от Find в значок файлов. Если щелкнуть значок, появится окно сообщения с текстом **ToolbarTestCommandPackage. Внутри IDEToolbar.ToolbarTestCommand.MenuItemCallback()** .  
   
 ## <a name="see-also"></a>См. также  
  [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
-

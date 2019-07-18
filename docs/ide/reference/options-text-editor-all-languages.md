@@ -1,12 +1,34 @@
 ---
 title: Параметры, текстовый редактор, все языки
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.General
+- VS.ToolsOptionsPages.Text_Editor.Basic.General
+- VS.ToolsOptionsPages.Text_Editor.CSharp.General
+- VS.ToolsOptionsPages.Text_Editor.C/C++.General
+- VS.ToolsOptionsPages.Text_Editor.CoffeeScript.General
+- VS.ToolsOptionsPages.Text_Editor.CSS.General
+- VS.ToolsOptionsPages.Text_Editor.Dockerfile.General
+- VS.ToolsOptionsPages.Text_Editor.F#.General
+- VS.ToolsOptionsPages.Text_Editor.Fsharp.General
+- VS.ToolsOptionsPages.Text_Editor.HQL.General
+- VS.ToolsOptionsPages.Text_Editor.HTML.General
+- VS.ToolsOptionsPages.Text_Editor.HTML_(Web_Forms).General
+- VS.ToolsOptionsPages.Text_Editor.JavaScript.General
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.General
+- VS.ToolsOptionsPages.Text_Editor.JSON.General
+- VS.ToolsOptionsPages.Text_Editor.LESS.General
+- VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
+- VS.ToolsOptionsPages.Text_Editor.SCSS.General
+- VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
+- VS.ToolsOptionsPages.Text_Editor.StreamAnalytics.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
+- VS.ToolsOptionsPages.Text_Editor.U-SQL.General
+- VS.ToolsOptionsPages.Text_Editor.XAML.General
+- VS.ToolsOptionsPages.Text_Editor.XML.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - statement completion
@@ -17,15 +39,15 @@ helpviewer_keywords:
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b8e0322a34d2f846f6db96cad372ebbe329f57b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817862"
 ---
 # <a name="options-text-editor-all-languages"></a>Параметры, текстовый редактор, все языки
 
@@ -93,9 +115,9 @@ ms.locfileid: "53987918"
 
 Этот параметр задает поведение редактора в ситуации, когда пользователь помещает курсор в пустую строку, ничего не выбирает и затем пытается что-либо скопировать или вырезать.
 
--   Если флажок установлен, то копируется или вырезается пустая строка. Если затем произвести вставку, будет вставлена новая пустая строка.
+- Если флажок установлен, то копируется или вырезается пустая строка. Если затем произвести вставку, будет вставлена новая пустая строка.
 
--   Если этот флажок снят, команды вырезания удаляет пустые строки. Тем не менее, данные сохраняются в буфере обмена. Таким образом, если затем используется команда "Вставить", вставляется последнее содержимое, скопированное в буфер обмена. Если ничего не было ранее скопировано, вставка не произойдет.
+- Если этот флажок снят, команды вырезания удаляет пустые строки. Тем не менее, данные сохраняются в буфере обмена. Таким образом, если затем используется команда "Вставить", вставляется последнее содержимое, скопированное в буфер обмена. Если ничего не было ранее скопировано, вставка не произойдет.
 
 Этот параметр не влияет на команды "Копировать" и "Вырезать", если строка не пуста. Если ничего не выделено, копируется или вырезается вся строка. Если затем произвести вставку, будет вставлен текст всей строки и ее завершающий символ.
 

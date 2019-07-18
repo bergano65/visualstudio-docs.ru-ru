@@ -1,36 +1,39 @@
 ---
-title: Как выполнить Распространение фрагментов кода
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: Распространение фрагментов кода в качестве расширения
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429551"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Как выполнить Распространение фрагментов кода
 
-Фрагменты кода можно передать другим пользователям для установки на других компьютерах с помощью **диспетчера фрагментов кода**. Однако если нужно распространить несколько фрагментов или распространить фрагмент более широко, файл фрагмента можно включить в расширение Visual Studio. Пользователи Visual Studio могут установить это расширение.
+Фрагменты кода можно передать другим пользователям для установки на других компьютерах с помощью **диспетчера фрагментов кода**. Однако если нужно распространить несколько фрагментов или распространить фрагмент более широко, файл фрагмента можно включить в расширение Visual Studio. Пользователи Visual Studio могут установить это расширение, чтобы получить фрагменты кода.
 
-Для создания расширений Visual Studio необходимо установить пакет Visual Studio SDK. Найти версию пакета VSSDK, соответствующую вашей версии Visual Studio, можно на странице [Файлы Visual Studio для скачивания](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+## <a name="prerequisites"></a>Предварительные требования
+
+Установите рабочую нагрузку **Разработка расширений Visual Studio**, чтобы получить доступ к шаблонам проектов **Проект VSIX**.
+
+![Рабочая нагрузка "Разработка расширений Visual Studio"](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>Настройка расширения
 
-В этой процедуре будет использоваться фрагмент кода Hello World, созданный в статье [Пошаговое руководство. создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md). Текст файла *SNIPPET* будет предоставлен, так что вам не придется возвращаться к этому разделу.
+В этой процедуре будет использоваться фрагмент кода Hello World, созданный в статье [Пошаговое руководство. создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md). Эта статья содержит XML-код фрагмента, поэтому вам не придется возвращаться и создавать его.
 
-1. Создайте проект VSIX с именем **TestSnippet**. (**Файл** > **Создать** > **Проект** > **Visual C# (Visual Basic)** > **Расширение среды**.)
+1. Создайте проект из шаблона **Пустой проект VSIX** и назовите его **TestSnippet**.
 
 2. Добавьте в проект **TestSnippet** новый XML-файл и присвойте ему имя *VBCodeSnippet.snippet*. Замените содержимое следующим кодом XML:
 
@@ -68,7 +71,17 @@ ms.locfileid: "53836066"
 
 ### <a name="add-the-pkgdef-file"></a>Добавление файла PKGDEF
 
+::: moniker range="vs-2017"
+
 1. Добавьте в папку *HelloWorldVB* текстовый файл и присвойте ему имя *HelloWorldVB.pkgdef*. Этот файл служит для добавления ряда разделов в реестр. В этом случае новый подраздел добавляется в раздел **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Добавьте в папку *HelloWorldVB* текстовый файл и присвойте ему имя *HelloWorldVB.pkgdef*. Этот файл служит для добавления ряда разделов в реестр. В этом случае новый подраздел добавляется в раздел **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Languages\CodeExpansions\Basic**.
+
+::: moniker-end
 
 2. Добавьте в файл указанные ниже строки.
 
@@ -102,7 +115,9 @@ ms.locfileid: "53836066"
 
 4. Протестируйте фрагмент кода. В экспериментальном экземпляре откройте проект Visual Basic, а затем откройте один из файлов кода. Поместите курсор где-либо в коде, щелкните правой кнопкой мыши и в контекстном меню выберите пункт **Вставить фрагмент**.
 
-5. В списке папок должна быть папка *HelloWorldVB*. Дважды щелкните его. Должно появиться всплывающее окно **Вставить фрагмент: HelloWorldVB >** с раскрывающимся списком **HelloWorldVB**. Откройте раскрывающийся список **HelloWorldVB**. В файл должна добавиться следующая строка:
+5. В списке папок должна быть папка *HelloWorldVB*. Дважды щелкните его. Должно появиться всплывающее окно **Вставить фрагмент: HelloWorldVB >** с раскрывающимся списком **HelloWorldVB**. Откройте раскрывающийся список **HelloWorldVB**.
+
+   В файл кода добавляется следующая строка:
 
     ```vb
     Console.WriteLine("Hello, World!")

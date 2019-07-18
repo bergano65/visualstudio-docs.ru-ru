@@ -14,26 +14,26 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], projects
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2b8b142c7950ee45a5c870c30658d795fe44c89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 8b48335ccaa8bd21cf9f6e108d043ecf706903bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441886"
 ---
 # <a name="debug-office-projects"></a>Отладка проектов Office
   Для отладки проектов Office можно использовать такие же инструменты Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , как и для других проектов [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Функциональные возможности отладчика[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , такие как возможность вставлять точки останова и просматривать переменные в окне **Локальные** , доступны и при отладке проектов Office. Дополнительные сведения о [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] средства отладки, см. в разделе [отладки в Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 > [!TIP]
->  Чтобы упростить процесс отладки, перед выполнением сборки и отладки закройте все открытые экземпляры приложения Office.
+> Чтобы упростить процесс отладки, перед выполнением сборки и отладки закройте все открытые экземпляры приложения Office.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.
+> Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с надстройками VSTO и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.
 
 ## <a name="start-and-stop-the-debugger"></a>Запуск и остановка отладчика
  Вы можете начать отладку проекта Office, так же, как отладку любых других [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] проектов; например, можно нажать клавишу **F5** ключ. При запуске отладки проекта надстройки VSTO, запускается новый процесс для целевого приложения Office и загружается надстройка VSTO.
@@ -73,7 +73,7 @@ ms.locfileid: "53958401"
  При каждой сборке проекта набор данных опустошается и создается заново. Чтобы отладить кэшированный набор данных, откройте документ вне Visual Studio, а затем присоедините отладчик.
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Проектов документов Word отладки, на основе документа Word 97-2003 (* .doc) формата
- Для отладки проекта документа Word на основе документа Word 97-2003 (*/*.doc *) формат, необходимо добавить в папку проекта в список надежных папок. Дополнительные сведения о том, как это сделать, см. в разделе [предоставления доверия к документам](../vsto/granting-trust-to-documents.md).
+ Для отладки проекта документа Word на основе документа Word 97-2003 ( */* .doc *) формат, необходимо добавить в папку проекта в список надежных папок. Дополнительные сведения о том, как это сделать, см. в разделе [предоставления доверия к документам](../vsto/granting-trust-to-documents.md).
 
 ## <a name="debug-disabled-add-ins"></a>Надстройки отладка отключена
  Приложения Microsoft Office могут отключать надстройки VSTO, которые ведут себя непредсказуемым образом. Это делается для того, чтобы предотвратить загрузку неисправного кода при каждом запуске приложения. В то же время, непредвиденное поведение может возникать и в процессе обычной отладки. Сведения о повторном включении надстроек VSTO, см. в разделе [как: Повторное включение надстройки VSTO, которая была отключена](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).

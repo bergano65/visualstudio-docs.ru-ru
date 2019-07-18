@@ -7,34 +7,34 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30a116993535e3b99b4e91edf07752c00a020859
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b975a4b4b2c1b4ae3f6ef0f1d6d23769bb4c77c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788700"
 ---
 # <a name="getvalidcompatibleframework-function"></a>Функция GetValidCompatibleFramework
-  Этот API поддерживает инфраструктуру Office и не предназначен для использования непосредственно из программного кода.  
+  Этот API поддерживает инфраструктуру Office и не предназначен для использования непосредственно из программного кода.
 
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Синтаксис
 
-```csharp 
-HRESULT WINAPI GetValidCompatibleFramework(  
-    LPCWSTR lpwszCompatibleFrameworksXML,  
-    BSTR* pbstrValidFrameworkTag  
-);  
-```  
+```csharp
+HRESULT WINAPI GetValidCompatibleFramework(
+    LPCWSTR lpwszCompatibleFrameworksXML,
+    BSTR* pbstrValidFrameworkTag
+);
+```
 
-### <a name="parameters"></a>Параметры  
+### <a name="parameters"></a>Параметры
 
-|Параметр|Описание:|  
-|---------------|-----------------|  
-|*lpwszCompatibleFrameworksXML*|Не следует использовать.|  
-|*pbstrValidFrameworkTag*|Не следует использовать.|  
+|Параметр|Описание|
+|---------------|-----------------|
+|*lpwszCompatibleFrameworksXML*|Не следует использовать.|
+|*pbstrValidFrameworkTag*|Не следует использовать.|
 
-## <a name="return-value"></a>Возвращаемое значение  
- Если функция завершается успешно, возвращается **S_OK**. Если функция завершается с ошибкой, возвращается код ошибки.  
+## <a name="return-value"></a>Возвращаемое значение
+ Если функция завершается успешно, возвращается **S_OK**. Если функция завершается с ошибкой, возвращается код ошибки.

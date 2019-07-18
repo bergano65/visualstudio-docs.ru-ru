@@ -9,15 +9,15 @@ helpviewer_keywords:
 - performance tools, Performance Explorer
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01aae2cc3ed447f608992df11b72136d418bd5a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8ffa5340ceaa00adb5e86100d8e58c307f41d40
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794438"
 ---
 # <a name="performance-explorer-window"></a>Окно "Обозреватель производительности"
 
@@ -51,6 +51,6 @@ ms.locfileid: "53869470"
 
 ## <a name="see-also"></a>См. также
 
-[Разделы общих сведений](../profiling/overviews-performance-tools.md)  
-[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)  
+[Обзоры](../profiling/overviews-performance-tools.md)
+[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
 [Управление сбором данных](../profiling/controlling-data-collection.md)

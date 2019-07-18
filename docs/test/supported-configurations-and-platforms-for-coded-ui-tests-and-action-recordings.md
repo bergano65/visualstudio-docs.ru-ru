@@ -1,21 +1,20 @@
 ---
 title: Конфигурации и платформы для закодированных тестов пользовательского интерфейса
-ms.date: 2015-10-04
-ms.prod: visual-studio-dev15
+ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ebac25b0269d5c5bc1d0bd674b41d35ab91cc7b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431254"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий
 
@@ -28,11 +27,11 @@ ms.locfileid: "53893040"
 
 **Требования**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 ## <a name="supported-configurations"></a>Поддерживаемые конфигурации
 
-| Конфигурация | Поддерживается |
+| Параметр Configuration | Поддерживается |
 |-| - |
 | Операционные системы | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | Поддержка 32–разрядной и 64–разрядной архитектур | 32-разрядные приложения можно тестировать в 32-разрядных ОС Windows с установленным приложением [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] .<br /><br /> В 64-разрядной ОС Windows, в которой выполняется 32-разрядное приложение [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] , можно тестировать 32-разрядные приложения WOW с синхронизацией пользовательского интерфейса.<br /><br /> В 64-разрядных ОС Windows, в которых выполняется 32-разрядное приложение [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] , можно тестировать 64-разрядные приложения Windows Forms и WPF без синхронизации пользовательского интерфейса. |
@@ -41,7 +40,6 @@ ms.locfileid: "53893040"
 
 > [!NOTE]
 > *Синхронизация пользовательского интерфейса* — это функция проверки воспроизведения в очереди сообщений каждого элемента управления. Если элемент управления не отвечает на отправленное ему событие, это событие отправляется еще раз.
-
 
 ## <a name="platform-support"></a>Поддержка платформ
 

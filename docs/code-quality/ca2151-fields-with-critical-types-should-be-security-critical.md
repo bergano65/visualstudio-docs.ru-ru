@@ -1,20 +1,19 @@
 ---
 title: CA2151. Поля с критическими типами должны быть критическими с точки зрения безопасности
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 279e3d134af967467f195f155373bba725b031e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b75425d35e51125b0cfe1f76c8c18d7f155a12c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796747"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151. Поля с критическими типами должны быть критическими с точки зрения безопасности
 
@@ -27,7 +26,7 @@ ms.locfileid: "53895224"
 
 ## <a name="cause"></a>Причина
 
-Объявлено прозрачное для безопасности поле или поле, надежное с точки зрения безопасности. Его тип определяется как критический с точки зрения безопасности. Например:
+Объявлено прозрачное для безопасности поле или поле, надежное с точки зрения безопасности. Его тип определяется как критический с точки зрения безопасности. Пример:
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]

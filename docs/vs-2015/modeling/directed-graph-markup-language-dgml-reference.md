@@ -1,23 +1,20 @@
 ---
 title: Справочник по языку разметки графов (DGML) направлены | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 ms.assetid: cc3e4ae7-60fa-4e22-9227-98020b480b73
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f352d87975bf2c9705b348b465215a0a9fe72f2a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0de96057326a9e4b6a64865ef34972d5542aff30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443001"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Справочник по языку DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +24,9 @@ ms.locfileid: "51790894"
  Обратите внимание, что некоторые версии Visual Studio поддерживают только некоторые возможности DGML см. в разделе [поддержка версий для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  При редактировании DGML-файла IntelliSense показывает атрибуты, доступные для данного элемента, и их значения. Задавая цвет с помощью атрибута, можно использовать имена для обычных цветов, например "Blue", или шестнадцатеричные значения ARGB, например "#ffa0b1c3". DGML использует небольшое подмножество форматов определения цветов Windows Presentation Foundation (WPF). Дополнительные сведения см. в разделе [цвета классе](http://go.microsoft.com/fwlink/?LinkId=182345).  
+> При редактировании DGML-файла IntelliSense показывает атрибуты, доступные для данного элемента, и их значения. Задавая цвет с помощью атрибута, можно использовать имена для обычных цветов, например "Blue", или шестнадцатеричные значения ARGB, например "#ffa0b1c3". DGML использует небольшое подмножество форматов определения цветов Windows Presentation Foundation (WPF). Дополнительные сведения см. в разделе [цвета классе](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a> Синтаксис DGML  
+## <a name="DGML"></a> Синтаксис DGML  
  В следующей таблице описаны виды элементов, используемых в языке DGML.  
   
 - `<DirectedGraph></DirectedGraph>`  
@@ -42,7 +39,7 @@ ms.locfileid: "51790894"
   
    `BackgroundImage` — местоположение файла изображения, используемого в качестве фона карты.  
   
-   `GraphDirection` — если для карты выбрана древовидная структура (`Sugiyama`), расположите узлы таким образом, чтобы большинство ссылок было упорядочены в определенном направлении: `TopToBottom`, `BottomToTop`, `LeftToRight` или `RightToLeft`. См. в разделе [изменение макета карты](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+   `GraphDirection` — если для карты выбрана древовидная структура (`Sugiyama`), расположите узлы таким образом, чтобы большинство ссылок было упорядочены в определенном направлении: `TopToBottom`, `BottomToTop`, `LeftToRight` или `RightToLeft`. См. в разделе [изменение макета карты](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
    `Layout` — организует карту в одну из следующих структур: `None`, `Sugiyama` (древовидная структура), `ForceDirected` (быстрые кластеры) или `DependencyMatrix`. См. в разделе [изменение макета карты](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
@@ -73,7 +70,7 @@ ms.locfileid: "51790894"
    Необязательный элемент содержит список элементов `<Node/>`, задающих узлы карты. Дополнительные сведения см. в описании элемента `<Node/>`.  
   
   > [!NOTE]
-  >  Если сослаться в элементе `<Link/>` на несуществующий элемент карты, она создаст элемент `<Node/>` автоматически.  
+  > Если сослаться в элементе `<Link/>` на несуществующий элемент карты, она создаст элемент `<Node/>` автоматически.  
   
    Пример  
   
@@ -154,7 +151,7 @@ ms.locfileid: "51790894"
    Этот элемент определяет единичную ссылку, соединяющую исходный узел с целевым узлом. Он отображается внутри списка элементов `<Links></Links>`.  
   
   > [!NOTE]
-  >  Если данный элемент ссылается на неопределенный узел, документ карты автоматически создаст узел с заданными атрибутами, если таковые имеются.  
+  > Если данный элемент ссылается на неопределенный узел, документ карты автоматически создаст узел с заданными атрибутами, если таковые имеются.  
   
    Этот элемент в обязательном порядке включает следующие атрибуты.  
   
@@ -305,7 +302,7 @@ ms.locfileid: "51790894"
   </DirectedGraph>  
   ```  
   
-###  <a name="AddAlias"></a> Псевдонимы для часто используемых путей  
+### <a name="AddAlias"></a> Псевдонимы для часто используемых путей  
  Замена часто используемых путей псевдонимами уменьшает размер DGML-файла и время, требуемое на загрузку или сохранение файла. Для создания псевдонима добавьте раздел `<Paths></Paths>` в конце DGML-файла. В этом разделе добавьте элемент `<Path/>` для того, чтобы определить псевдоним для пути.  
   
 ```xml  
@@ -329,6 +326,3 @@ ms.locfileid: "51790894"
  [Сопоставление зависимостей во всех решениях](../modeling/map-dependencies-across-your-solutions.md)   
  [Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Поиск потенциальных проблем с помощью анализаторов карт кода](../modeling/find-potential-problems-using-code-map-analyzers.md)
-
-
-

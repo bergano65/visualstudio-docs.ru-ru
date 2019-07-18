@@ -1,22 +1,21 @@
 ---
 title: Конфиденциальные данные для отчетов о проблемах
 ms.date: 06/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c98747a4ad1d37d7a8b0d8cc51b4e1ddbd851663
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895770"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823374"
 ---
 # <a name="developer-community-data-privacy"></a>Конфиденциальность данных сообщества разработчиков
 
@@ -65,26 +64,26 @@ ms.locfileid: "53895770"
 
 - Файлы журнала веб-отладчика, если они существуют:
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+  - *%TEMP%\vscode-chrome-debug.txt*
 
-   - *%TEMP%\vscode-node-debug2.txt*
+  - *%TEMP%\vscode-node-debug2.txt*
 
-   - *%TEMP%\vscode-edge-debug.txt*
+  - *%TEMP%\vscode-edge-debug.txt*
 
 - Снимок экрана, если вы решили включить его
 
 - Данные записи, если вы решили включить ее, включая:
 
-   - Шаги по воспроизведению проблемы
+  - Шаги по воспроизведению проблемы
 
-   - Файл трассировки извлечения, преобразования и загрузки
+  - Файл трассировки извлечения, преобразования и загрузки
 
-   - Файл дампа
+  - Файл дампа
 
-    > [!NOTE]
-    > Перед отправкой отчета вы можете удалить любые данные записи, которые не хотите передавать.
+  > [!NOTE]
+  > Перед отправкой отчета вы можете удалить любые данные записи, которые не хотите передавать.
 
 ## <a name="see-also"></a>См. также
 
-- [Как сообщить о проблеме с Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md)
+- [Как сообщить о проблеме с Visual Studio 2017](how-to-report-a-problem-with-visual-studio.md)
 - [Конфиденциальность данных отчета о проблемах C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

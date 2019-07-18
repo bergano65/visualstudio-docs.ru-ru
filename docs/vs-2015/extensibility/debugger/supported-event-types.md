@@ -1,26 +1,21 @@
 ---
 title: Поддерживаемые типы событий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd6f8f5b7c2782bb908538426cb531db216b72fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446438"
 ---
 # <a name="supported-event-types"></a>Поддерживаемые типы событий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "51781469"
     Интерфейсы [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) и [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) являются примерами событий остановки.  
   
   > [!NOTE]
-  >  Остановка асинхронных событий не поддерживаются. Это ошибка для отправки события асинхронной остановки.  
+  > Остановка асинхронных событий не поддерживаются. Это ошибка для отправки события асинхронной остановки.  
   
 ## <a name="discussion"></a>Обсуждение  
  Фактическую реализацию событий зависит от структуры вашей DE. Тип каждое событие, отправленное определяется его атрибутов, которые настраиваются при создании DE. Например, может отправить один DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) как событие асинхронной, то время как другой может отправлять как событие остановки.  
@@ -58,7 +53,7 @@ ms.locfileid: "51781469"
  В следующей таблице указано, какие программы и поток параметры являются обязательными для какие события, а также типы событий. Любое событие может быть синхронным. Событие не должен быть синхронными.  
   
 > [!NOTE]
->  [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) он необходим для всех событий.  
+> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) он необходим для всех событий.  
   
 |событие|IDebugProgram2|IDebugThread2|События остановки|  
 |-----------|--------------------|-------------------|---------------------|  
@@ -69,8 +64,8 @@ ms.locfileid: "51781469"
 |[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Нет|  
 |[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|Обязательно|Обязательно|Да|  
 |[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|Обязательно|Обязательно|Нет|  
-|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|Не допускается|Не допускается|Нет|  
-|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|Не допускается|Не допускается|Нет|  
+|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|Нельзя использовать|Нельзя использовать|Нет|  
+|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|Нельзя использовать|Нельзя использовать|Нет|  
 |[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|Обязательно|Обязательно|Да|  
 |[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|Разрешено, хотя и не требуется|Разрешено, хотя и не требуется|Может быть|  
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|Обязательно|Обязательно|Да|  
@@ -94,4 +89,3 @@ ms.locfileid: "51781469"
   
 ## <a name="see-also"></a>См. также  
  [Отправка событий](../../extensibility/debugger/sending-events.md)
-

@@ -9,33 +9,33 @@ helpviewer_keywords:
 ms.assetid: bb6baa40-fece-4a4c-aba9-f4b41f418f8b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75ae1f3244e20d4f1fa49ec316f3e1edf85c08c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 1fb132b4cf36eb686424e0f756ffe0387a432eb0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827636"
 ---
 # <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
-Получает флаг, указывающий, может ли быть оповещен разделе не хватает памяти.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_notPaged (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out, retval] Возвращает `TRUE` Если раздел может быть оповещен; в противном случае — значение, возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Получает флаг, указывающий, может ли быть оповещен разделе не хватает памяти.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_notPaged ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+- [out, retval] Возвращает `TRUE` Если раздел может быть оповещен; в противном случае — значение, возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

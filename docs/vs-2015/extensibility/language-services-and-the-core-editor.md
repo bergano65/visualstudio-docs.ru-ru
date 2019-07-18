@@ -1,28 +1,23 @@
 ---
 title: Языковые службы и базовый редактор | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language services
 ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 503924f435dda2d4432c915f9566846f0f4dd964
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180303"
 ---
-# <a name="language-services-and-the-core-editor"></a>Языковые службы и базовым редактором
+# <a name="language-services-and-the-core-editor"></a>Языковые службы и основной редактор
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Редакторы в среде Visual Studio часто связаны с языковой службой. Помимо прочего языковая служба предоставляет Цветовая подсветка синтаксиса, завершение операторов, IntelliSense и форматированием текста.  
@@ -32,7 +27,7 @@ ms.locfileid: "51727304"
   
  Дополнительные сведения см. в разделе [определить, какой редактор открывает файл в проекте](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## <a name="language-services-and-the-core-editor"></a>Языковые службы и базовым редактором  
+## <a name="language-services-and-the-core-editor"></a>Языковые службы и основной редактор  
  Путем реализации языковой службы, можно управлять отображением данных в представление документа. Служба языка предоставляет информацию и поведение, характерное для данного языка, например Visual C++. При создании текстового буфера и определить расширение имени файла документа, который открывается, текстовый буфер определяет языковой службы, связанный с расширением имени файла из раздела реестра, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors \\\Extensions {YourLanguageService GUID}. Стандартный пакет VSPackage, загрузка процедура затем загружает VSPackage и создается экземпляр службы языка.  
   
  На следующем рисунке показан базовый языковой службы.  
@@ -52,4 +47,3 @@ ms.locfileid: "51727304"
  [Размещение IntelliSense](../extensibility/intellisense-hosting.md)   
  [Содержащихся языков](../extensibility/contained-languages.md)   
  [Разработка языковой службы прежних версий](../extensibility/internals/developing-a-legacy-language-service.md)
-

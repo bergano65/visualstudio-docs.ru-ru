@@ -2,21 +2,20 @@
 title: Конструктор рабочих процессов - конструктор действия Receive
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c2d67d3922679096a3b3980a928a234515b78e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcab59a631b1dbf9c85c7bff2454a42e97accff8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969336"
 ---
 # <a name="receive-activity-designer"></a>Конструктор действия Receive
 
@@ -38,7 +37,6 @@ ms.locfileid: "53859000"
 
 В следующей таблице показаны свойства <xref:System.ServiceModel.Activities.Receive> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств или в рабочей области конструктора рабочих процессов. Свойство <xref:System.ServiceModel.Activities.Receive.OperationName%2A> является единственным обязательным свойством.
 
-
 | Имя свойства | Обязательно | Использование |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | Указывает понятное имя действия <xref:System.ServiceModel.Activities.Receive>. Значение по умолчанию - Receive.<br /><br /> Несмотря на то, что использовать значение, отличное от значения по умолчанию, для понятного имени <xref:System.Activities.Activity.DisplayName%2A> не требуется, его все же рекомендуется использовать. |
@@ -52,7 +50,7 @@ ms.locfileid: "53859000"
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | Указывает коллекцию известных типов для операции службы, реализуемой этим действием <xref:System.ServiceModel.Activities.Receive>. Это свойство должно использоваться вместе со свойством <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>, установленным в значение <xref:System.Runtime.Serialization.DataContractSerializer>. Не учитывается, если используется <xref:System.Xml.Serialization.XmlSerializer>.<br /><br /> Выберите кнопку с многоточием рядом с **KnownTypes** в таблице свойств для отображения **редактор коллекции типов** диалоговое окно, с помощью которого можно добавить необходимые типы. Дополнительные сведения об использовании это окно, см. в разделе [диалоговое окно редактора коллекции типа](../workflow-designer/type-collection-editor-dialog-box.md) раздела. |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | Задает <xref:System.Net.Security.ProtectionLevel> для сообщения.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> означает только проверку подлинности.<br />2. <xref:System.Net.Security.ProtectionLevel> означает необходимость подписи данных для обеспечения целостности передаваемых данных.<br />3. <xref:System.Net.Security.ProtectionLevel> означает необходимость шифрования и подписи данных для обеспечения конфиденциальности и целостности передаваемых данных. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | Указывает тип используемого сериализатора для операции службы, реализуемой действием <xref:System.ServiceModel.Activities.Receive>. Значение по умолчанию равно <xref:System.Runtime.Serialization.DataContractSerializer>, при котором выполняется сериализация и десериализация экземпляра типа в XML-поток или документ, который использует переданный контракт данных. <xref:System.Xml.Serialization.XmlSerializer> также может быть использован в том случае, если необходим больший контроль над XML. |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Указывает заголовок действия сообщения. Если оно не задано явно, его значение по умолчанию: https://tempuri.org/{service контракта пространство имен} / {имя контракта службы} / {имя операции}. |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Указывает заголовок действия сообщения. Если оно не задано явно, его значение по умолчанию: `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`. |
 
 ## <a name="see-also"></a>См. также
 

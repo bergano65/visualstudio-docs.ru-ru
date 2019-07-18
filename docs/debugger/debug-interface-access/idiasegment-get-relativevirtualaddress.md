@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: b6a573a1-3671-4c1c-a5c2-2ab8f07fd510
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c223e22b0b4d147da64a450c0a46ac12e370304c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: e6387b4e7cbf3ab100b641fe8694505c5e326fc8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827666"
 ---
 # <a name="idiasegmentgetrelativevirtualaddress"></a>IDiaSegment::get_relativeVirtualAddress
-Возвращает относительный виртуальный адрес (RVA) в начале раздела.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_relativeVirtualAddress (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает относительный виртуальный адрес начала раздела.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+Возвращает относительный виртуальный адрес (RVA) в начале раздела.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_relativeVirtualAddress ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает относительный виртуальный адрес начала раздела.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

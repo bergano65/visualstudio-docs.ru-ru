@@ -1,14 +1,9 @@
 ---
-title: DA0502. Максимальное использование ЦП профилируемым процессом | Документы Майкрософт
-ms.custom: ''
+title: DA0502. Максимальное использование ЦП профилируемым процессом | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0502
 - vs.performance.DA0502
@@ -17,21 +12,21 @@ ms.assetid: 1ee53df5-b0dc-4265-9d4f-527830d08725
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dd2665e9b8055812678fc1a17c0b9df0f0405e42
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a47a9c5964ccf15d2c609233eb600f39bc3ad2d1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205928"
 ---
-# <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502. Максимальное использование ЦП профилируемым процессом
+# <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502. Максимальная загрузка ЦП профилируемым процессом
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ИД правила | DA0502 |  
 | Категория | Наблюдение за ресурсами |  
 | Метод профилирования | Все |  
-| Сообщение | Это правило предназначено только для информации. Счетчик времени процессора Process()\\% измеряет использование ЦП профилируемого процесса. Полученное значение является максимальным по всем интервалам измерения. |  
+| Сообщение | Это правило предназначено только для информации. Счетчик времени процессора Process()\\% измеряет использование ЦП профилируемого процесса. Полученное значение является максимальным значением, зафиксированным в течение всех интервалов измерения.|  
 | Тип правила | Информационное |  
   
  При профилировании с помощью выборки, памяти .NET или методов разрешения конфликтов ресурсов необходимо собрать минимум 10 выборок, чтобы активировать это правило.  
@@ -41,6 +36,3 @@ ms.locfileid: "51731251"
   
 ## <a name="how-to-use-the-rule-data"></a>Использование данных правила  
  Значение правила используется для сравнения производительности разных версий или сборок программы или для анализа производительности приложения в различных сценариях профилирования.
-
-
-

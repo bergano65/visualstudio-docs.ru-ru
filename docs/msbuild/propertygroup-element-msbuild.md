@@ -15,63 +15,62 @@ helpviewer_keywords:
 ms.assetid: ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da16e2042ebd74684f7775fb41bc62242592e71a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 607c5f2c3cda64e7407203b0c45287a58342b807
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974687"
 ---
 # <a name="propertygroup-element-msbuild"></a>Элемент PropertyGroup (MSBuild)
-Содержит набор определенных пользователем элементов [Property](../msbuild/property-element-msbuild.md). Каждый элемент `Property`, используемый в проекте [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], должен быть потомком элемента `PropertyGroup`.  
+Содержит набор определенных пользователем элементов [Property](../msbuild/property-element-msbuild.md). Каждый элемент `Property`, используемый в проекте [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], должен быть потомком элемента `PropertyGroup`.
 
- \<Project>  
- \<PropertyGroup>  
+ \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>Синтаксис  
+## <a name="syntax"></a>Синтаксис
 
-```xml  
-<PropertyGroup Condition="'String A' == 'String B'">  
-    <Property1>...</Property1>  
-    <Property2>...</Property2>  
-</PropertyGroup>  
-```  
+```xml
+<PropertyGroup Condition="'String A' == 'String B'">
+    <Property1>...</Property1>
+    <Property2>...</Property2>
+</PropertyGroup>
+```
 
-## <a name="attributes-and-elements"></a>Элементы и атрибуты  
- В следующих разделах описаны атрибуты, дочерние и родительские элементы.  
+## <a name="attributes-and-elements"></a>Элементы и атрибуты
+ В следующих разделах описаны атрибуты, дочерние и родительские элементы.
 
-### <a name="attributes"></a>Атрибуты  
+### <a name="attributes"></a>Атрибуты
 
-|Атрибут|Описание|  
-|---------------|-----------------|  
-|Условие|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
+|Атрибут|Описание|
+|---------------|-----------------|
+|Условие|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|
 
-### <a name="child-elements"></a>Дочерние элементы  
+### <a name="child-elements"></a>Дочерние элементы
 
-|Элемент|Описание|  
-|-------------|-----------------|  
-|[Property](../msbuild/property-element-msbuild.md)|Необязательный элемент.<br /><br /> Имя определяемого пользователем свойства, которое содержит значение свойства. Элемент `PropertyGroup` может содержать любое число элементов *Property*, включая нуль.|  
+|Элемент|Описание|
+|-------------|-----------------|
+|[Property](../msbuild/property-element-msbuild.md)|Необязательный элемент.<br /><br /> Имя определяемого пользователем свойства, которое содержит значение свойства. Элемент `PropertyGroup` может содержать любое число элементов *Property*, включая нуль.|
 
-### <a name="parent-elements"></a>Родительские элементы  
+### <a name="parent-elements"></a>Родительские элементы
 
 | Элемент | Описание |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
-## <a name="example"></a>Пример  
- В следующем примере кода показано, как задать свойства на основе условия. В этом примере если свойство `CompileConfig` имеет значение `DEBUG`, задаются свойства `Optimization`, `Obfuscate` и `OutputPath` внутри элемента `PropertyGroup`.  
+## <a name="example"></a>Пример
+ В следующем примере кода показано, как задать свойства на основе условия. В этом примере если свойство `CompileConfig` имеет значение `DEBUG`, задаются свойства `Optimization`, `Obfuscate` и `OutputPath` внутри элемента `PropertyGroup`.
 
-```xml  
-<PropertyGroup Condition="'$(CompileConfig)' == 'DEBUG'" >  
-    <Optimization>false</Optimization>  
-    <Obfuscate>false</Obfuscate>  
-    <OutputPath>$(OutputPath)\debug</OutputPath>  
-</PropertyGroup>  
-```  
+```xml
+<PropertyGroup Condition="'$(CompileConfig)' == 'DEBUG'" >
+    <Optimization>false</Optimization>
+    <Obfuscate>false</Obfuscate>
+    <OutputPath>$(OutputPath)\debug</OutputPath>
+</PropertyGroup>
+```
 
-## <a name="see-also"></a>См. также  
- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)  
- [Свойства MSBuild](../msbuild/msbuild-properties.md)
+## <a name="see-also"></a>См. также
+- [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
+- [Свойства MSBuild](../msbuild/msbuild-properties.md)

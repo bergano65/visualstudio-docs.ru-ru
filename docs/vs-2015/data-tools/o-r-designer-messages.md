@@ -1,38 +1,34 @@
 ---
 title: Объектно-реляционного конструктора сообщений | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c055321c3936f92c21d5bff6ac63ecbeb7c982e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5435b500d79640a944238ea3de6dfc0088a617f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217652"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693554"
 ---
 # <a name="or-designer-messages"></a>Сообщения реляционного конструктора объектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В этом разделе перечисляются сообщения, с которыми можно столкнуться при работе с реляционным конструктором объектов.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Не удалось создать ассоциацию \<имя ассоциации > — то же свойство перечислено дважды](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
+ [Не удалось создать ассоциацию \<имя ассоциации> — одно и то же свойство перечислено дважды](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
   
- [Не удалось создать ассоциацию \<имя ассоциации > — типы свойств не совпадают](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
+ [Не удалось создать ассоциацию \<имя ассоциации> — не совпадают типы свойств](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
   
  [Операция изменения типа возвращаемого значения метода DataContext не может быть отменена.](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)  
   
- [Не удалось получить сведения о схеме для объекта базы данных \<имя объекта >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
+ [Не удалось получить схему объекта базы данных \<имя объекта>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
   
  [Один или несколько объектов базы данных возвратили схему, не совпадающую со схемой целевого класса](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
   
@@ -44,9 +40,9 @@ ms.locfileid: "49217652"
   
  [Подключение к данным, используемое для добавляемого в конструктор объекта, отличается от подключения, используемого конструктором в настоящий момент](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
   
- [Свойство \<имя свойства > не может быть удалена](../data-tools/the-property-property-name-cannot-be-deleted.md)  
+ [Не удается удалить свойство\<<имя свойства>](../data-tools/the-property-property-name-cannot-be-deleted.md)  
   
- [Свойство \<имя свойства > невозможно удалить, так как оно участвует в ассоциации \<имя ассоциации >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
+ [Нельзя удалить свойство \<имя свойства>, поскольку оно участвует в ассоциации \<имя ассоциации>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
   
  [Выбранный класс невозможно удалить, потому что он используется как тип возвращаемого значения одного или нескольких методов DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
   
@@ -64,5 +60,4 @@ ms.locfileid: "49217652"
 ## <a name="related-sections"></a>Связанные разделы  
  [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
-
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

@@ -7,44 +7,47 @@ dev_langs:
 ms.assetid: 024ccd78-5867-4ca7-bc26-548758e9ac53
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c084bf3bb9b28a6af0ddc1aa53c0707d8876966
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 673ca8137244fed933df0be3fa0221115951a9c1
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827982"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62839001"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-Учитывая соответствующее значение тега, этот метод возвращает перечисление символов, содержащихся в этой функции заглушки в указанный относительный виртуальный адрес.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
-   DWORD             tagValue,  
-   DWORD             rva,  
-   IDiaEnumSymbols** ppResult);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `tagValue`  
- [in] Значение тега указатель, для которого находятся pointee символьные записи.  
-  
- `rva`  
- [in] RVA-адрес, используемый для фильтрации символы, которые соответствуют pointee переменную с указанным значением тега.  
-  
- `ppResult`  
- [out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Этот метод следует вызывать только в `IDiaSymbol` интерфейс, который соответствует функции заглушки сочетаний клавиш.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Учитывая соответствующее значение тега, этот метод возвращает перечисление символов, содержащихся в этой функции заглушки в указанный относительный виртуальный адрес.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT findSymbolsByRVAForAcceleratorPointerTag (
+   DWORD             tagValue,
+   DWORD             rva,
+   IDiaEnumSymbols** ppResult);
+```
+
+#### <a name="parameters"></a>Параметры
+ `tagValue`
+
+[in] Значение тега указатель, для которого находятся pointee символьные записи.
+
+ `rva`
+
+[in] RVA-адрес, используемый для фильтрации символы, которые соответствуют pointee переменную с указанным значением тега.
+
+ `ppResult`
+
+[out] Указатель на `IDiaEnumSymbols` указатель интерфейса, который инициализируется с результатом.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Этот метод следует вызывать только в `IDiaSymbol` интерфейс, который соответствует функции заглушки сочетаний клавиш.
+
+## <a name="see-also"></a>См. также
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

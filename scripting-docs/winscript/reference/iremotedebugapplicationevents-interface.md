@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IRemoteDebugApplicationEvents | Документы Microsoft
+title: Интерфейс IRemoteDebugApplicationEvents | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04d40d3e03cfb9582075ec1be7abace963d1377f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 052a408d6e92066c14617f46f722d3e603985195
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943808"
 ---
 # <a name="iremotedebugapplicationevents-interface"></a>Интерфейс IRemoteDebugApplicationEvents
-`IRemoteDebugApplicationEvents` Интерфейс — интерфейс события, предоставляемые приложение отладки. Этот интерфейс всегда вызывается из потока отладчика.  
+`IRemoteDebugApplicationEvents` Это интерфейс событий, предоставленные приложением отладки. Этот интерфейс всегда вызывается из потока отладчика.  
   
  Помимо методов, наследуемых от `IUnknown`, `IRemoteDebugApplicationEvents` интерфейс предоставляет следующие методы.  
   
@@ -30,13 +29,13 @@ ms.locfileid: "24729644"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IRemoteDebugApplicationEvents::OnConnectDebugger](../../winscript/reference/iremotedebugapplicationevents-onconnectdebugger.md)|Событие подключить отладчик обрабатывает.|  
+|[IRemoteDebugApplicationEvents::OnConnectDebugger](../../winscript/reference/iremotedebugapplicationevents-onconnectdebugger.md)|Мероприятие connect обрабатывает отладчика.|  
 |[IRemoteDebugApplicationEvents::OnDisconnectDebugger](../../winscript/reference/iremotedebugapplicationevents-ondisconnectdebugger.md)|Отладчик обрабатывает события отключения.|  
 |[IRemoteDebugApplicationEvents::OnSetName](../../winscript/reference/iremotedebugapplicationevents-onsetname.md)|Обрабатывает событие имя набора.|  
 |[IRemoteDebugApplicationEvents::OnDebugOutput](../../winscript/reference/iremotedebugapplicationevents-ondebugoutput.md)|Обрабатывает событие вывода отладчика.|  
 |[IRemoteDebugApplicationEvents::OnClose](../../winscript/reference/iremotedebugapplicationevents-onclose.md)|Обрабатывает событие закрытия приложения.|  
-|[IRemoteDebugApplicationEvents::OnEnterBreakPoint](../../winscript/reference/iremotedebugapplicationevents-onenterbreakpoint.md)|Обрабатывает событие для ввода точки останова.|  
-|[IRemoteDebugApplicationEvents::OnLeaveBreakPoint](../../winscript/reference/iremotedebugapplicationevents-onleavebreakpoint.md)|Обрабатывает событие, чтобы оставить точки останова.|  
+|[IRemoteDebugApplicationEvents::OnEnterBreakPoint](../../winscript/reference/iremotedebugapplicationevents-onenterbreakpoint.md)|Обрабатывает событие ввода точку останова.|  
+|[IRemoteDebugApplicationEvents::OnLeaveBreakPoint](../../winscript/reference/iremotedebugapplicationevents-onleavebreakpoint.md)|Обрабатывает событие для выхода из точки останова.|  
 |[IRemoteDebugApplicationEvents::OnCreateThread](../../winscript/reference/iremotedebugapplicationevents-oncreatethread.md)|Обрабатывает событие создания потока.|  
-|[IRemoteDebugApplicationEvents::OnDestroyThread](../../winscript/reference/iremotedebugapplicationevents-ondestroythread.md)|Обрабатывает событие уничтожения потока.|  
-|[IRemoteDebugApplicationEvents::OnBreakFlagChange](../../winscript/reference/iremotedebugapplicationevents-onbreakflagchange.md)|Обрабатывает событие при изменении флаги приостановки выполнения.|
+|[IRemoteDebugApplicationEvents::OnDestroyThread](../../winscript/reference/iremotedebugapplicationevents-ondestroythread.md)|Обрабатывает событие удаления потока.|  
+|[IRemoteDebugApplicationEvents::OnBreakFlagChange](../../winscript/reference/iremotedebugapplicationevents-onbreakflagchange.md)|Обрабатывает событие при изменении флаги break.|

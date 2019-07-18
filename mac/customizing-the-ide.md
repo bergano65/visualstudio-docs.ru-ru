@@ -1,16 +1,17 @@
 ---
 title: Настройка интегрированной среды разработки
 description: Visual Studio для Mac можно настраивать различными способами, позволяя пользователям разрабатывать приложения в среде, которая соответствует их требованиям к эффективности и внешнему виду. В этом разделе рассматриваются различные способы адаптировать Visual Studio для Mac под конкретные потребности.
-author: conceptdev
-ms.author: crdun
+author: alanjclark
+ms.author: alcl
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: 58ad6f41528fd11510d55c4062cdd9a6ae678989
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.custom: video
+ms.openlocfilehash: ff0c7a2970a9ecfdfb9de08f487ad7dfbe768249
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349615"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691843"
 ---
 # <a name="customizing-the-ide"></a>Настройка интегрированной среды разработки
 
@@ -126,6 +127,10 @@ Visual Studio для Mac позволяет открыть текстовые р
 ![Два столбца рядом с дополнительными вкладками](media/customizing-the-ide-sbs2.png)
 
 Чтобы вернуться к одному открытому редактору, выберите **Вид > Столбцы редактора > 1 столбец**.
+
+## <a name="related-video"></a>Связанные видео
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
 ## <a name="see-also"></a>См. также
 

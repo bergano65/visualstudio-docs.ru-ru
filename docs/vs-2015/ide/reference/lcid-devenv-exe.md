@@ -1,14 +1,9 @@
 ---
 title: -LCID (devenv.exe) | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - language default
 - locale IDs, setting for IDE
@@ -21,18 +16,17 @@ ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 242e0055e59312cba616859e08a2a61a45064e66
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0b1d83cca1da917a08b8765dae66fb240ca1dc75
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301916"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661013"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Задает язык по умолчанию, используемый для текста, валюты и других значений в интегрированной среде разработки (IDE).  
   
 ## <a name="syntax"></a>Синтаксис  
@@ -43,7 +37,7 @@ devenv {/LCID|/l} LocaleID
   
 ## <a name="arguments"></a>Аргументы  
  `LocaleID`  
- Обязательно. Код языка (LCID) для заданного вами языка.  
+ Обязательный. Код языка (LCID) для заданного вами языка.  
   
 ## <a name="remarks"></a>Примечания  
  Загружает интегрированную среду разработки и устанавливает естественный язык по умолчанию для среды. Это изменение сохраняется между сеансами и отражается в области **Язык интерфейса** параметров **Среда** диалогового окна **Параметры** в интегрированной среде разработки.  
@@ -71,10 +65,7 @@ devenv {/LCID|/l} LocaleID
 devenv /LCID 1033  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)   
  [Страница "Язык интерфейса", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/international-settings-environment-options-dialog-box.md)   
  [Настройка макетов окон](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

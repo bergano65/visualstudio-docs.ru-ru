@@ -1,14 +1,9 @@
 ---
-title: 'CA1726: Используйте предпочтительные термины | Документация Майкрософт'
-ms.custom: ''
+title: CA1726. Используйте предпочитаемые термины | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143160"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726: используйте предпочтительные термины
+# <a name="ca1726-use-preferred-terms"></a>CA1726. Используйте предпочтительные термины
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio 2017, см. в разделе [CA1726: используйте предпочитаемые термины](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) на сайте docs.microsoft.com.  
+Самая актуальная документация по Visual Studio, см. в разделе [CA1726: Используйте предпочитаемые термины](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).  
   
 |||  
 |-|-|  
@@ -46,30 +41,30 @@ ms.locfileid: "49220523"
   
 |Устаревшее название|Предпочтительный термин|  
 |-------------------|--------------------|  
-|не|Не|  
-|Отменено|Отменено|  
-|Не удается|Не удается|  
-|ComPlus|EnterpriseServices|  
-|Тестовых|Невозможно|  
-|Didnt|DidNot|  
-|Doesnt|Не|  
-|Запрет|Не подключать|  
-|Flag или Flags|Есть слово для замены. Не используется.|  
-|не|HadNot|  
-|Не|HasNot|  
-|еще не|HaveNot|  
-|Индексы|Indexes|  
-|не|IsNot|  
-|Имя входа|Вход в систему|  
-|Выход из системы|Выход из системы|  
-|Shouldnt|ShouldNot|  
-|Единого входа|Для входа|  
-|Утверждения|Выход|  
-|Wasnt|WasNot|  
-|не были|WereNot|  
-|Не|WillNot|  
-|Wouldnt|WouldNot|  
-|Для записи|Для записи|  
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` или `Flags`|Есть слово для замены. Не используется.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
  Чтобы устранить нарушение этого правила, замените термин предпочтительный термин для альтернативных.  
@@ -79,4 +74,3 @@ ms.locfileid: "49220523"
   
 ## <a name="related-rules"></a>Связанные правила  
  [Предупреждения именования](../code-quality/naming-warnings.md)
-

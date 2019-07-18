@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66456257e72609183feb5f331c6d5d384c040a61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901640"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Пошаговое руководство. Отладка веб-формы
 Шаги данного руководства иллюстрируют способ отладки веб-приложений [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], также известных как веб-формы. Оно содержит описание запуска и остановки выполнения, определения точек останова и проверки значений переменных в окне **Контрольное значение**.
@@ -68,7 +68,7 @@ ms.locfileid: "53822182"
 
 11. Дважды щелкните сброшенный в конструктор элемент управления Button.
 
-     Появится страница кода. Default.aspx.cs для C# или Default.aspx.vb для [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Курсор должен находиться в тексте функции `Button1_Click`.
+     Это приведет к кодовой странице: Default.aspx.cs для C# или Default.aspx.vb для [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Курсор должен находиться в тексте функции `Button1_Click`.
 
 12. В функции `Button1_Click` добавьте следующий код:
 

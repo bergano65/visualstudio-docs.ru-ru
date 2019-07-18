@@ -1,14 +1,9 @@
 ---
-title: 'CA2002: Не блокировать объекты со слабой идентификацией | Документация Майкрософт'
-ms.custom: ''
+title: CA2002. Не блокировать объекты со слабой идентификацией | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
 - CA2002
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c8ddcd20275dc84cc1c575e00f539c2a436139c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 39d233c126d35f303a30a955310859dd9a678c56
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907876"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681366"
 ---
-# <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: не блокировать объекты со слабой идентификацией
+# <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002. Не блокируйте объекты с ненадежными удостоверениями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,21 +38,21 @@ ms.locfileid: "49907876"
 ## <a name="rule-description"></a>Описание правила
  К объекту со слабой идентификацией может быть получен прямой доступ через границы домена приложения. Поток пытается получить блокировку объекта со слабой идентификацией, который может быть заблокирован вторым потоком в другом домене приложения, имеющим блокировку того же объекта. Следующие типы со слабой идентификацией и помечены этим правилом.
 
--   <xref:System.MarshalByRefObject>
+- <xref:System.MarshalByRefObject>
 
--   <xref:System.ExecutionEngineException>
+- <xref:System.ExecutionEngineException>
 
--   <xref:System.OutOfMemoryException>
+- <xref:System.OutOfMemoryException>
 
--   <xref:System.StackOverflowException>
+- <xref:System.StackOverflowException>
 
--   <xref:System.String>
+- <xref:System.String>
 
--   <xref:System.Reflection.MemberInfo>
+- <xref:System.Reflection.MemberInfo>
 
--   <xref:System.Reflection.ParameterInfo>
+- <xref:System.Reflection.ParameterInfo>
 
--   <xref:System.Threading.Thread>
+- <xref:System.Threading.Thread>
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, используйте объект с типом, который не входит в список в разделе описания.
@@ -76,7 +71,4 @@ ms.locfileid: "49907876"
 
 ## <a name="see-also"></a>См. также
  <xref:System.Threading.Monitor> <xref:System.AppDomain>
- [Оператор lock](http://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [оператор SyncLock](http://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)
-
-
-
+ [Оператор lock](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [оператор SyncLock](https://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)

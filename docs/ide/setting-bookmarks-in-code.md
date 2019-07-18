@@ -1,22 +1,21 @@
 ---
 title: Установка закладок в коде
 ms.date: 02/23/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72f1a9f6ba6732ee5815ae6df8ceefa4322b96b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6369aab354e3362c3ac3f1d9320203f930497c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961114"
 ---
 # <a name="set-bookmarks-in-code"></a>Установка закладок в коде
 

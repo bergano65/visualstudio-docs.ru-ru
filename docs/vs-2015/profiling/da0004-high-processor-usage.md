@@ -1,14 +1,9 @@
 ---
-title: DA0004. Потребление значительных ресурсов процессора | Документы Майкрософт
-ms.custom: ''
+title: DA0004. Потребление значительных ресурсов процессора | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAHighProcessorUsage
 - vs.performance.rules.DA0004
@@ -18,21 +13,21 @@ ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a942a26bb4cd8ccca94fd442250fe8a239cba4ed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a0e14a7400b937c56c2aac49a43d1d59cf96eba0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158695"
 ---
-# <a name="da0004-high-processor-usage"></a>DA0004: потребление значительных ресурсов процессора
+# <a name="da0004-high-processor-usage"></a>DA0004. Потребление значительных ресурсов процессора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ИД правила | DA0004 ПОТРЕБЛЕНИЕ ЗНАЧИТЕЛЬНЫХ РЕСУРСОВ |  
 | Категория | Использование средств профилирования |  
 | Методы профилирования | Выборки, инструментирования |  
-| Сообщение | Использование процессора постоянно превышает 75%. Рекомендуется использовать режим выборки для приложений, связанных с ЦП. |  
+| Сообщение | Использование процессора постоянно превышает 75%. Рекомендуется использовать режим выборки для приложений, сильно загружающих процессор.|  
 | Тип правила | Сведения |  
   
  При профилировании с помощью выборки, памяти .NET или методов разрешения конфликтов ресурсов необходимо собрать минимум 10 выборок, чтобы активировать это правило.  
@@ -45,7 +40,3 @@ ms.locfileid: "51764031"
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
  Рекомендуется выполнить профилирование приложения еще раз с помощью метода выборки вместо метода инструментирования, если вам не нужно определить время выполнения функций и если вас больше интересует, как происходят операции ввода вывода, чем обнаружение узких мест в работе процессора.
-
-
-
-

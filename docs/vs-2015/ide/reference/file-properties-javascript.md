@@ -1,14 +1,9 @@
 ---
 title: Свойства файлов (JavaScript) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
 - javascript.project.property.expandedsdknode.uri
@@ -30,18 +25,17 @@ ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 00527cf13d978da5a10e7745049df63f24e7a15c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909737"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688755"
 ---
 # <a name="file-properties-javascript"></a>Свойства файлов (JavaScript)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Свойства файлов можно использовать, чтобы указать, какие действия с файлами должны выполняться системой проекта. Например, можно задать свойства файла, чтобы указать, что файл необходимо добавить в пакет как файл ресурсов.  
   
  Можно выбрать любой файл в обозревателе решений, а затем просмотреть его свойства в окне "Свойства". Файлы JavaScript имеют четыре свойства: **Копировать в выходной каталог**, **Действие пакета**, **Имя файла** и **Путь к файлу**.  
@@ -59,7 +53,7 @@ ms.locfileid: "49909737"
   
 - **Содержимое** — файл включается в манифест пакета. Например этот параметр является значением по умолчанию для HTM-, JS-, CSS-файлов и файлов изображения, аудио или видео.  
   
-- **Манифест** — файл не включается в манифест пакета. Вместо этого файл используется в качестве входных данных при создании манифеста пакета. Это значение по умолчанию для файла package.appxmanifest.  
+- **Манифест** — файл не включается в манифест пакета. Вместо этого файл используется в качестве входных данных при создании манифеста пакета. Это значение по умолчанию для файла package.appxmanifest.  
   
 - **Ресурс** — файл не включается в манифест пакета. Вместо этого содержимое файла индексируется в индексе ресурсов пакета, который входит в манифест пакета. Обычно используется для файлов ресурсов.  
   
@@ -96,13 +90,10 @@ ms.locfileid: "49909737"
  Отображает путь к файлу пакета SDK, на который указывает ссылка.  
   
 ### <a name="uri"></a>URI  
- Отображает URI, который должен быть включен в файлы HTML или JavaScript проекта для включения файла в качестве исходного файла.  
+ Отображает URI, который должен быть включен в файлы HTML или JavaScript проекта для включения файла в качестве исходного.  
   
 ### <a name="version"></a>Версия  
  Отображает версию, на которую указывает ссылка.  
   
 ## <a name="see-also"></a>См. также  
- [NIB: Свойства проекта (Visual Studio)](http://msdn.microsoft.com/en-us/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
-
-
-
+ [NIB: Свойства проекта (Visual Studio)](https://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

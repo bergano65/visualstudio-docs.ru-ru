@@ -1,148 +1,151 @@
-items:
 - name: Python в Visual Studio
   href: index.yml
 - name: Обзор
   items:
-  - name: Общие сведения о поддержке Python
-    href: overview-of-python-tools-for-visual-studio.md
-  - name: Обзор интегрированной среды разработки Visual Studio
-    href: visual-studio-ide.md
+    - name: Общие сведения о поддержке Python
+      href: overview-of-python-tools-for-visual-studio.md
+    - name: Обзор интегрированной среды разработки Visual Studio
+      href: visual-studio-ide.md
+    - name: Рабочая нагрузка "Приложения для обработки и анализа данных и аналитические приложения"
+      href: data-science-and-analytical-applications-workload.md
 - name: Установка
-  href: installing-python-support-in-visual-studio.md
   items:
-  - name: Установка интерпретаторов Python
-    href: installing-python-interpreters.md
+    - name: Установка
+      href: installing-python-support-in-visual-studio.md
+    - name: Установка интерпретаторов Python
+      href: installing-python-interpreters.md
 - name: Краткие руководства
   items:
-  - name: Создание веб-приложения на Flask
-    href: ../ide/quickstart-python.md
-    maintainContext: true
-  - name: Создание проекта из шаблона
-    href: quickstart-02-python-in-visual-studio-project-from-template.md
-  - name: Создание проекта на основе имеющегося кода
-    href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
-  - name: Создание проекта из репозитория
-    href: quickstart-03-python-in-visual-studio-project-from-repository.md
-  - name: Создание проекта из шаблона Cookiecutter
-    href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
+    - name: Создание веб-приложения на Flask
+      href: ../ide/quickstart-python.md
+      maintainContext: true
+    - name: Создание проекта из шаблона
+      href: quickstart-02-python-in-visual-studio-project-from-template.md
+    - name: Открытие и выполнение кода Python в папке
+      href: quickstart-05-python-visual-studio-open-folder.md
+    - name: Создание проекта на основе имеющегося кода
+      href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
+    - name: Создание проекта из репозитория
+      href: quickstart-03-python-in-visual-studio-project-from-repository.md
+    - name: Создание проекта из шаблона Cookiecutter
+      href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
 - name: Учебники
   items:
-  - name: Python в Visual Studio
-    items:
-    - name: 0. Установка средств поддержки Python
-      href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-    - name: 1. Создание проекта Python
-      href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-    - name: 2. Написание и выполнение кода
-      href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
-    - name: 3. Использование интерактивного окна REPL
-      href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
-    - name: 4. Выполнение кода в отладчике
-      href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
-    - name: 5. Установка пакетов и управление средами Python
-      href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
-    - name: 6. Работа с Git
-      href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
-  - name: Сведения о Django в Visual Studio
-    items:
-    - name: 1. Создание проекта и решения
-      href: learn-django-in-visual-studio-step-01-project-and-solution.md
-    - name: 2. Создание приложения Django
-      href: learn-django-in-visual-studio-step-02-create-an-app.md
-    - name: 3. Обработка статических файлов и добавление страниц
-      href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
-    - name: 4. Использование шаблона веб-проекта Django
-      href: learn-django-in-visual-studio-step-04-full-django-project-template.md
-    - name: 5. Аутентификация пользователей
-      href: learn-django-in-visual-studio-step-05-django-authentication.md
-    - name: 6. Использование шаблона веб-проекта Django для опросов
-      href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
-  - name: Знакомство с Flask в Visual Studio
-    items:
-    - name: 1. Создание проекта и решения
-      href: learn-flask-visual-studio-step-01-project-solution.md
-    - name: 2. Создание приложения Flask
-      href: learn-flask-visual-studio-step-02-create-app.md
-    - name: 3. Обработка статических файлов и добавление страниц
-      href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
-    - name: 4. Использование шаблона веб-проекта Flask
-      href: learn-flask-visual-studio-step-04-full-flask-project-template.md
-    - name: 5. Использование шаблона веб-проекта опроса Flask
-      href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
+    - name: Python в Visual Studio
+      items:
+        - name: 0. Установка средств поддержки Python
+          href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+        - name: 1. Создание проекта Python
+          href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
+        - name: 2. Написание и выполнение кода
+          href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
+        - name: 3. Использование интерактивного окна REPL
+          href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
+        - name: 4. Выполнение кода в отладчике
+          href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: 5. Установка пакетов и управление средами Python
+          href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
+        - name: 6. Работа с Git
+          href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Сведения о Django в Visual Studio
+      items:
+        - name: 1. Создание проекта и решения
+          href: learn-django-in-visual-studio-step-01-project-and-solution.md
+        - name: 2. Создание приложения Django
+          href: learn-django-in-visual-studio-step-02-create-an-app.md
+        - name: 3. Обработка статических файлов и добавление страниц
+          href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
+        - name: 4. Использование шаблона веб-проекта Django
+          href: learn-django-in-visual-studio-step-04-full-django-project-template.md
+        - name: 5. Аутентификация пользователей
+          href: learn-django-in-visual-studio-step-05-django-authentication.md
+        - name: 6. Использование шаблона веб-проекта Django для опросов
+          href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
+    - name: "Знакомство с\_Flask в Visual\_Studio"
+      items:
+        - name: 1. Создание проекта и решения
+          href: learn-flask-visual-studio-step-01-project-solution.md
+        - name: "2. Создание приложения\_Flask"
+          href: learn-flask-visual-studio-step-02-create-app.md
+        - name: 3. Обработка статических файлов и добавление страниц
+          href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
+        - name: "4. Использование шаблона веб-проекта\_Flask"
+          href: learn-flask-visual-studio-step-04-full-flask-project-template.md
+        - name: "5. Использование шаблона веб-проекта опроса\_Flask"
+          href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
 - name: Основные понятия
   items:
-  - name: Проекты Python
-    href: managing-python-projects-in-visual-studio.md
-    items:
-    - name: Шаблоны веб-проектов
-      href: python-web-application-project-templates.md
-    - name: Шаблон веб-проекта Django
-      href: python-django-web-application-project-template.md
-    - name: Шаблон облачной службы Azure
-      href: python-azure-cloud-service-project-template.md
-  - name: Пакет Azure SDK для Python
-    href: azure-sdk-for-python.md
+    - name: Проекты Python
+      items:
+        - name: Проекты Python
+          href: managing-python-projects-in-visual-studio.md
+        - name: Шаблоны веб-проектов
+          href: python-web-application-project-templates.md
+        - name: Шаблон веб-проекта Django
+          href: python-django-web-application-project-template.md
+        - name: Шаблон облачной службы Azure
+          href: python-azure-cloud-service-project-template.md
+    - name: Пакет Azure SDK для Python
+      href: /python/azure/?view=azure-python
 - name: Практические руководства
   items:
-  - name: Управление средами Python
-    href: managing-python-environments-in-visual-studio.md
-    items:
-    - name: Выбор интерпретатора для проекта
-      href: selecting-a-python-environment-for-a-project.md
-    - name: Использование файла requirements.txt для зависимостей
-      href: managing-required-packages-with-requirements-txt.md
-    - name: Пути поиска
-      href: search-paths.md
-    - name: Справочник по окну "Среда"
-      href: python-environments-window-tab-reference.md
-    - name: Настройка веб-приложений для работы с IIS
-      href: configure-web-apps-for-iis-windows.md
-  - name: Редактирование кода Python
-    href: editing-python-code-in-visual-studio.md
-    items:
-    - name: Код формата
-      href: formatting-python-code.md
-    - name: Рефакторинг кода
-      href: refactoring-python-code.md
-    - name: Использование PyLint
-      href: linting-python-code.md
-  - name: Задание пользовательских команд меню
-    href: defining-custom-python-project-commands.md
-  - name: Интерактивный Python (REPL)
-    href: python-interactive-repl-in-visual-studio.md
-    items:
-    - name: Использование IPython REPL
-      href: interactive-repl-ipython.md
-  - name: Отладка
-    href: debugging-python-in-visual-studio.md
-    items:
-    - name: Отладка кода на удаленных компьютерах с Linux
-      href: debugging-python-code-on-remote-linux-machines.md
-  - name: Публикация в службу приложений Azure в Linux
-    href: publishing-python-web-applications-to-azure-from-visual-studio.md
-  - name: Взаимодействие с C++
-    items:
-    - name: Создание расширения C++ для Python
-      href: working-with-c-cpp-python-in-visual-studio.md
-    - name: Отладка в смешанном режиме для Python и C++
-      href: debugging-mixed-mode-c-cpp-python-in-visual-studio.md
-    - name: Символы для отладки в смешанном режиме
-      href: debugging-symbols-for-mixed-mode-c-cpp-python.md
-  - name: Профилирование
-    href: profiling-python-code-in-visual-studio.md
-  - name: Модульное тестирование
-    href: unit-testing-python-in-visual-studio.md
-  - name: Использование расширения Cookiecutter
-    href: using-python-cookiecutter-templates.md
+    - name: Управление средами Python
+      items:
+        - name: Управление средами Python
+          href: managing-python-environments-in-visual-studio.md
+        - name: Выбор интерпретатора для проекта
+          href: selecting-a-python-environment-for-a-project.md
+        - name: Использование файла requirements.txt для зависимостей
+          href: managing-required-packages-with-requirements-txt.md
+        - name: Пути поиска
+          href: search-paths.md
+        - name: Справочник по окну "Среда"
+          href: python-environments-window-tab-reference.md
+        - name: Настройка веб-приложений для работы с IIS
+          href: configure-web-apps-for-iis-windows.md
+    - name: "Редактирование кода\_Python"
+      items:
+        - name: "Редактирование кода\_Python"
+          href: editing-python-code-in-visual-studio.md
+        - name: Код формата
+          href: formatting-python-code.md
+        - name: Рефакторинг кода
+          href: refactoring-python-code.md
+        - name: "Использование\_PyLint"
+          href: linting-python-code.md
+    - name: Задание пользовательских команд меню
+      href: defining-custom-python-project-commands.md
+    - name: Интерактивный Python (REPL)
+      items:
+        - name: Интерактивный Python (REPL)
+          href: python-interactive-repl-in-visual-studio.md
+        - name: Использование IPython REPL
+          href: interactive-repl-ipython.md
+    - name: Отладка
+      items:
+        - name: Отладка
+          href: debugging-python-in-visual-studio.md
+        - name: Отладка кода на удаленных компьютерах с Linux
+          href: debugging-python-code-on-remote-linux-machines.md
+    - name: Публикация в службу приложений Azure в Linux
+      href: publishing-python-web-applications-to-azure-from-visual-studio.md
+    - name: Взаимодействие с C++
+      items:
+        - name: Создание расширения C++ для Python
+          href: working-with-c-cpp-python-in-visual-studio.md
+        - name: Отладка в смешанном режиме для Python и C++
+          href: debugging-mixed-mode-c-cpp-python-in-visual-studio.md
+        - name: Символы для отладки в смешанном режиме
+          href: debugging-symbols-for-mixed-mode-c-cpp-python.md
+    - name: Профилирование
+      href: profiling-python-code-in-visual-studio.md
+    - name: Модульное тестирование
+      href: unit-testing-python-in-visual-studio.md
+    - name: Использование расширения Cookiecutter
+      href: using-python-cookiecutter-templates.md
 - name: Ссылка
   items:
-  - name: Шаблоны элементов
-    href: python-item-templates.md
-  - name: Параметры
-    href: python-support-options-and-settings-in-visual-studio.md
-ms.openlocfilehash: e295581bbb60c5febc98cde837f6e498aa93d042
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441591"
+    - name: Шаблоны элементов
+      href: python-item-templates.md
+    - name: Параметры
+      href: python-support-options-and-settings-in-visual-studio.md

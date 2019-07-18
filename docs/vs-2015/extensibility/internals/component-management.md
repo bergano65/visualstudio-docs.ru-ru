@@ -1,27 +1,22 @@
 ---
 title: Управление компонентами | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 626717ed559257d04cb0bbcca3c76283aac22d63
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 56a110f382d0b182eed0ea1a95cd4dabf2877037
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191853"
 ---
 # <a name="component-management"></a>Управление компонентами
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,27 +29,26 @@ ms.locfileid: "51743300"
   
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Рекомендации по разработке программы установки для установки Side-by-side  
   
--   Автор файлы и разделы реестра, которые являются общими для версий в собственных компонентах.  
+- Автор файлы и разделы реестра, которые являются общими для версий в собственных компонентах.  
   
      Это позволяет легко использовать их в следующей версии. Например библиотеки типов, зарегистрированные глобально, расширения файлов, которые, других элементов, зарегистрированных в HKEY_CLASSES_ROOT и т. д.  
   
--   Группирование общих компонентов в отдельные модули.  
+- Группирование общих компонентов в отдельные модули.  
   
      Это позволяет автору правильно для side-by-side двигаться вперед.  
   
--   Установка общих файлов и разделов реестра, используя те же компоненты установщика Windows в разных версиях.  
+- Установка общих файлов и разделов реестра, используя те же компоненты установщика Windows в разных версиях.  
   
      Если вы используете другой компонент, файлы и параметры реестра удаляются при удалении одной версии VSPackage, но все еще установлен другой пакет VSPackage.  
   
--   Не следует смешивать с контролем версий и общие элементы в том же компоненте.  
+- Не следует смешивать с контролем версий и общие элементы в том же компоненте.  
   
      Это делает невозможным установки для общих элементов глобального расположения и с контролем версий элементов в изолированных расположения.  
   
--   Нет общего реестра, которые указывают на файлы.  
+- Нет общего реестра, которые указывают на файлы.  
   
      В противном случае общие ключи будут перезаписаны при установке другого с версиями пакета VSPackage. После удаления второй версии файла, на которую указывает ключ отсутствует.  
   
 ## <a name="see-also"></a>См. также  
  [Выбор между общих и с контролем версий пакетов VSPackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Сценарии установки VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)
-

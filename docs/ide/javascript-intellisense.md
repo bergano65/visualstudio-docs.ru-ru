@@ -1,8 +1,8 @@
 ---
 title: IntelliSense для JavaScript
 ms.date: 06/28/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
+ms.technology: vs-javascript
 helpviewer_keywords:
 - IntelliSense [JavaScript]
 - <reference> JavaScript XML tag
@@ -20,31 +20,31 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikejo5000
+ms.author: mikejo
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de5470f0c48e76d972cd78fd84b7629b8f2426d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538178"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense для JavaScript
 
-[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] обеспечивает эффективное редактирование JavaScript. Система Visual Studio, основанная на языковой службе TypeScript, расширяет возможности IntelliSense, поддерживает современные компоненты JavaScript, а также улучшенные функции для повышения эффективности работы, такие как "Перейти к определению", рефакторинг и многое другое.
+Visual Studio обеспечивает эффективное редактирование JavaScript без дополнительной подготовки. Система Visual Studio, основанная на языковой службе TypeScript, расширяет возможности IntelliSense, поддерживает современные компоненты JavaScript, а также улучшенные функции для повышения эффективности работы, такие как "Перейти к определению", рефакторинг и многое другое.
 
 > [!NOTE]
-> Языковая служба JavaScript в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] использует новый механизм языковой службы ("сальса"). Дополнительные сведения можно получить в этом разделе, а также в этой [записи блога](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc/). Новые возможности редактирования в основном относятся к Visual Studio Code. Дополнительные сведения см. в [документах о VS Code](https://code.visualstudio.com/docs/languages/javascript).
+> Начиная с Visual Studio 2017 языковая служба JavaScript использует новый механизм языковой службы ("сальса"). Дополнительные сведения можно получить в этой статье, а также в этой [записи блога](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). Новые возможности редактирования в основном относятся к Visual Studio Code. Дополнительные сведения см. в [документах о VS Code](https://code.visualstudio.com/docs/languages/javascript).
 
 Дополнительные сведения об общих функциональных возможностях IntelliSense в Visual Studio см. в разделе [Использование технологии IntelliSense](../ide/using-intellisense.md).
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Новые возможности JavaScript Language Service в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>Новые возможности JavaScript Language Service в Visual Studio 2017
 
-Начиная с [!include[vs_dev15](../misc/includes/vs_dev15_md.md)], JavaScript IntelliSense отображает гораздо больше информации в списках членов и параметров.
-Эта новая информация предоставляется языковой службой TypeScript, которая использует статический анализ, чтобы помочь вам лучше понять код.
+Начиная с Visual Studio 2017 JavaScript IntelliSense отображает гораздо больше информации в списках членов и параметров. Эта новая информация предоставляется языковой службой TypeScript, которая использует статический анализ, чтобы помочь вам лучше понять код.
+
 Для формирования такой информации TypeScript использует несколько источников.
 
 - [IntelliSense на основе определения типа](#TypeInference)
@@ -53,6 +53,7 @@ ms.locfileid: "53849678"
 - [Автоматическое получение определений типов](#Auto)
 
 <a name="TypeInference"></a>
+
 ### <a name="intellisense-based-on-type-inference"></a>IntelliSense на основе определения типа
 
 В большинстве случаев явные сведения о типах в JavaScript недоступны. Но тип обычно довольно легко вывести из контекста кода.
@@ -90,6 +91,7 @@ exports.Foo = Foo;
 ```
 
 <a name="JsDoc"></a>
+
 ### <a name="intellisense-based-on-jsdoc"></a>IntelliSense на основе JSDoc
 
 Когда определение типа не предоставляет нужные сведения о типе (или требуется вести документацию), их можно предоставить явно с помощью заметок JSDoc.  Например, чтобы назначить определенный тип частично объявленному объекту, можно использовать тег `@type`, как показано ниже:
@@ -123,7 +125,7 @@ function Foo(param1) {
 
 Ниже показан простой пример файла определения TypeScript, предоставляющий подробные сведения о типе (через интерфейс) файлу JavaScript в том же проекте (с помощью тега `JsDoc`).
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
+![Файл определения TypeScript](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Автоматическое получение определений типов

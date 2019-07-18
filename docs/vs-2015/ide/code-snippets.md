@@ -1,14 +1,9 @@
 ---
 title: Фрагменты кода | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -23,13 +18,13 @@ ms.assetid: 85976ad9-4c9a-4e7b-896e-66ec6f955199
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 317471f73c9e7507768b9b600ce995a35b000c23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188855"
 ---
 # <a name="code-snippets"></a>Фрагменты кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ finally
   
 ```  
   
- Чтобы вставить этот фрагмент, выберите в контекстном меню окна кода команду **Вставить фрагмент**, затем команду **Visual C#**, после чего введите `tryf` и нажмите клавишу TAB или введите `tryf` и нажмите клавишу TAB+TAB.  
+ Чтобы вставить этот фрагмент, выберите в контекстном меню окна кода команду **Вставить фрагмент**, затем команду **Visual C#** , после чего введите `tryf` и нажмите клавишу TAB или введите `tryf` и нажмите клавишу TAB+TAB.  
   
  Пример фрагмента окружения. В C++ ярлык `if` может использоваться для вставки фрагмента или для добавления фрагмента обрамления. Если выбрать строку кода (например, `return FALSE;`) и последовательно выбрать команды **Разместить во фрагменте** и **if**, фрагмент кода будет развернут около этой строки:  
   
@@ -91,13 +86,10 @@ End Property
  Вы можете добавлять и удалять каталоги фрагментов с помощью кнопок **Добавить** и **Удалить** в диалоговом окне **Диспетчер фрагментов кода**. Чтобы добавить отдельные фрагменты, используйте кнопку **Импорт**.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md)   
+ [Пошаговое руководство: Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md)   
  [Практическое руководство. Распространение фрагментов кода](../ide/how-to-distribute-code-snippets.md)   
  [Рекомендации по использованию фрагментов кода](../ide/best-practices-for-using-code-snippets.md)   
  [Устранение неполадок, связанных с использованием фрагментов](../ide/troubleshooting-snippets.md)   
  [Фрагменты кода Visual C#](../ide/visual-csharp-code-snippets.md)   
  [Фрагменты кода Visual C++](../ide/visual-cpp-code-snippets.md)   
  [Справочник по схеме фрагментов кода](../ide/code-snippets-schema-reference.md)
-
-
-

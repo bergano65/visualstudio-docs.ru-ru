@@ -1,7 +1,6 @@
 ---
 title: Справочник по схеме фрагментов кода
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 02/25/2019
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 94598cd14b25fa598cdfde4e3033bb2877bcbe40
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315596"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836114"
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 
@@ -118,6 +117,7 @@ $selected$ is a great color. I love $selected$.
    |`CPP`|Определяет фрагмент кода C++.|
    |`XML`|Определяет фрагмент кода XML.|
    |`JavaScript`|Определяет фрагмент кода JavaScript.|
+   |`TypeScript`|Определяет фрагмент кода TypeScript.|
    |`SQL`|Определяет фрагмент кода SQL.|
    |`HTML`|Определяет фрагмент кода HTML.|
 
@@ -320,9 +320,6 @@ $selected$ is a great color. I love $selected$.
 
 Задает импортируемые пространства имен, используемые фрагментом кода IntelliSense.
 
-> [!NOTE]
-> Элемент `Import` поддерживается только в проектах Visual Basic.
-
 ```xml
 <Import>
     <Namespace>... </Namespace>
@@ -340,9 +337,6 @@ $selected$ is a great color. I love $selected$.
 ## <a name="imports-element"></a>Элемент Imports
 
 Группирует отдельные элементы `Import`.
-
-> [!NOTE]
-> Элемент `Imports` поддерживается только в проектах Visual Basic.
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ $selected$ is a great color. I love $selected$.
 
 ## <a name="namespace-element"></a>Элемент Namespace
 
-Задает пространство имен, которое требуется импортировать для компиляции и запуска фрагмента кода. Пространство имен, заданное в элементе `Namespace`, автоматически добавляется в оператор `Imports` в начале кода в том случае, если оно еще не существует.
-
-> [!NOTE]
-> Элемент `Namespace` поддерживается только в проектах Visual Basic.
+Задает пространство имен, которое требуется импортировать для компиляции и запуска фрагмента кода. Пространство имен, заданное в элементе `Namespace`, автоматически добавляется в директиву `using` или в инструкцию `Imports` в начале кода в том случае, если оно еще не существует.
 
 ```xml
 <Namespace>
@@ -569,11 +560,11 @@ $selected$ is a great color. I love $selected$.
 
 Текстовое значение должно принадлежать к следующему списку:
 
--   `SurroundsWith`позволяет расположить фрагмент кода вокруг выбранного отрывка кода.
+- `SurroundsWith`позволяет расположить фрагмент кода вокруг выбранного отрывка кода.
 
--   `Expansion` позволяет вставить фрагмент кода в то место, где находится курсор.
+- `Expansion` позволяет вставить фрагмент кода в то место, где находится курсор.
 
--   `Refactoring` указывает, что фрагмент кода используется во время рефакторинга C#. `Refactoring` не может использоваться в пользовательских фрагментах кода.
+- `Refactoring` указывает, что фрагмент кода используется во время рефакторинга C#. `Refactoring` не может использоваться в пользовательских фрагментах кода.
 
 ## <a name="snippettypes-element"></a>Элемент SnippetTypes
 
@@ -641,7 +632,11 @@ $selected$ is a great color. I love $selected$.
 | - |-----------------|
 |[Элемент Object](../ide/code-snippets-schema-reference.md#object-element)|Определяет доступные для редактирования поля объектов фрагмента кода.|
 
- Текстовое значение является обязательным. Данный текст задает тип объекта.
+Текстовое значение является обязательным. Данный текст задает тип объекта. Например:
+
+```xml
+<Type>System.Data.SqlClient.SqlConnection</Type>
+```
 
 ## <a name="url-element"></a>Элемент Url
 

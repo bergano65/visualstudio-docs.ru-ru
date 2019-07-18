@@ -12,16 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54269921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824855"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Привязка элементов управления WPF к службе данных WCF
 
@@ -51,7 +50,7 @@ ms.locfileid: "54269921"
 
 Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.
 
-- Службы данных WCF. Дополнительные сведения см. в разделе [Обзор](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Модели данных в [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
@@ -61,21 +60,9 @@ ms.locfileid: "54269921"
 
 ## <a name="create-the-service-project"></a>Создание проекта службы
 
-В этом пошаговом руководстве начните с создания проекта для службы данных WCF:
+1. Начните с создания в этом пошаговом руководстве C# или Visual Basic **веб-приложение ASP.NET** проекта. Назовите проект **AdventureWorksService**.
 
-1. Запустите Visual Studio.
-
-2. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
-
-3. Разверните **Visual C#** или **Visual Basic** и выберите **Веб-сайт**.
-
-4. Выберите шаблон проекта **Веб-приложение ASP.NET**.
-
-5. В поле **Имя** введите **AdventureWorksService** и нажмите кнопку **ОК**.
-
-     Visual Studio создает проект **AdventureWorksService**.
-
-6. В **обозревателе решений** щелкните правой кнопкой мыши **Default.aspx** и выберите пункт **Удалить**. Этот файл для прохождения данного руководства не требуется.
+2. В **обозревателе решений** щелкните правой кнопкой мыши **Default.aspx** и выберите пункт **Удалить**. Этот файл необязательно для данного пошагового руководства.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Создание модели EDM для службы
 

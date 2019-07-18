@@ -1,25 +1,24 @@
 ---
 title: Набор правил "Минимальные правила для машинного кода"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd988bae2f9fd2776785202a1e632735f989f7ab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b358821705c87767fcb05f45f06b83e8b1e60049
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820665"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Набор правил "Минимальные правила для машинного кода"
 Минимальные правила Microsoft для машинного кода связаны с наиболее важными проблемами в машинном коде, включая возможные уязвимости безопасности и случаи аварийного завершения работы приложений. Этот набор правил можно включить в любой настраиваемый набор правил, созданный для собственных проектов машинного кода.
 
-|Правило|Описание:|
+|Правило|Описание|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|Использование неинициализированной памяти|
 |[C6011](../code-quality/c6011.md)|Разыменование пустого (NULL) указателя|

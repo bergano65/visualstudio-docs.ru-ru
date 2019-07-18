@@ -3,29 +3,39 @@ title: Общие сведения о редактировании для раз
 description: В этом 10-минутном вводном руководстве по редактору кода Visual Studio мы продемонстрируем несколько методов, которые упрощают написание, понимание кода C# и навигацию по нему в Visual Studio.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eda81f5d10a8c7b116d9be690de71017735bf45
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5abd287533f2489346b41cdbae5526ed946aa746
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971073"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
 В этом 10-минутном введении, посвященном редактору кода в Visual Studio, мы добавим код в файл, чтобы рассмотреть некоторые способы, упрощающие написание, понимание кода и навигацию по нему в Visual Studio.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+
+::: moniker-end
 
 В этой статье предполагается, что вы уже знакомы с C#. Если это не так, мы рекомендуем сначала изучить руководство по [началу работы с C# и ASP.NET Core в Visual Studio](tutorial-aspnet-core.md).
 
@@ -36,9 +46,21 @@ ms.locfileid: "53442085"
 
 Для начала создайте файл и добавьте в него код.
 
-1. Откройте Visual Studio, а затем в меню **Файл** в строке меню выберите пункты **Создать** > **Файл**.
+::: moniker range="vs-2017"
 
-1. В диалоговом окне **Новый файл** в разделе **Общие** выберите **Класс Visual C#** и нажмите кнопку **Открыть**.
+1. Запустите Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Запустите Visual Studio. Нажмите клавишу **ESC** или нажмите **Продолжить без кода** в окне запуска, чтобы открыть среду разработки.
+
+::: moniker-end
+
+2. В меню **Файл** в строке меню выберите пункты **Создать** > **Файл**.
+
+3. В диалоговом окне **Новый файл** в разделе **Общие** выберите **Класс Visual C#** и нажмите кнопку **Открыть**.
 
    Новый файл открывается в редакторе с каркасом класса C#. (Обратите внимание, что нам не нужно создавать полный проект Visual Studio, чтобы получить некоторые преимущества редактора кода. Вам нужен только файл кода!)
 
@@ -110,7 +132,7 @@ Visual Studio предоставляет удобные *фрагменты ко
 
 ## <a name="view-symbol-definitions"></a>Просмотр определений символов
 
-В редакторе Visual Studio можно легко проверить определение типа, метода и т. д. Один из способов заключается в том, чтобы перейти к файлу, который содержит определение, например, выбрав **Перейти к определению** в любом месте, где указана ссылка на этот символ. Сделать это еще быстрее и даже без перемещения фокуса с рабочего файла можно с помощью команды [Показать определение](../../ide/go-to-and-peek-definition.md#peek-definition). Давайте посмотрим определение типа `string`.
+В редакторе Visual Studio можно легко проверить определение типа, метода и т. д. Один из способов заключается в том, чтобы перейти к файлу, который содержит определение, например, выбрав **Перейти к определению** или нажав **F12** в любом месте, где указана ссылка на этот символ. Сделать это еще быстрее и даже без перемещения фокуса с рабочего файла можно с помощью команды [Показать определение](../../ide/go-to-and-peek-definition.md#peek-definition). Давайте посмотрим определение типа `string`.
 
 1. Щелкните правой кнопкой мыши любой из экземпляров `string` и выберите пункт **Показать определение** в контекстном меню. Или нажмите **Alt**+**F12**.
 

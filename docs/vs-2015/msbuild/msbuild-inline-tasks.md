@@ -1,32 +1,26 @@
 ---
 title: Встроенные задачи MSBuild | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f210aa8e33859f41046edc8e524cbfbeaf5417b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439363"
 ---
 # <a name="msbuild-inline-tasks"></a>Встроенные задачи MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Задачи MSBuild обычно создаются путем компиляции класса, реализующего интерфейс <xref:Microsoft.Build.Framework.ITask>. Дополнительные сведения см. в разделе [Задачи](../msbuild/msbuild-tasks.md).  
   
  Начиная с версии 4 .NET Framework, вы можете создавать встроенные задачи в файле проекта. Для размещения задачи не нужно создавать отдельную сборку. Это упрощает как отслеживание исходного кода, так и развертывание задачи. Исходный код встроен в скрипт.  
@@ -73,7 +67,7 @@ ms.locfileid: "49898620"
   Элементы `Reference` и `Using` подходят для любого языка. Встроенные задачи можно написать на любом из поддерживаемых языков .NET CodeDom, например Visual Basic или Visual C#.  
   
 > [!NOTE]
->  Элементы, содержащиеся в элементе `Task`, характерны для фабрики задачи, в этом случае для фабрики кода задачи.  
+> Элементы, содержащиеся в элементе `Task`, характерны для фабрики задачи, в этом случае для фабрики кода задачи.  
   
 ### <a name="code-element"></a>Элемент Code  
  Последний дочерний элемент в элементе `Task` — `Code`. Элемент `Code` содержит код, который нужно скомпилировать в задачу, или определяет его местонахождение. Содержимое в элементе `Code` зависит от того, каким образом вы хотите написать задачу.  
@@ -93,7 +87,7 @@ ms.locfileid: "49898620"
   Вы также можете использовать атрибут `Source` элемента `Code`, чтобы указать расположение файла, содержащего код для задачи. Код в исходном файле должен иметь тип, заданный атрибутом `Type`. Если есть атрибут `Source`, тогда по умолчанию значением атрибута `Type` является `Class`. Если атрибут `Source` отсутствует, значением по умолчанию будет `Fragment`.  
   
 > [!NOTE]
->  При определении класса задачи в исходном файле имя класса должно быть согласовано с атрибутом `TaskName` соответствующего элемента [UsingTask](../msbuild/usingtask-element-msbuild.md).  
+> При определении класса задачи в исходном файле имя класса должно быть согласовано с атрибутом `TaskName` соответствующего элемента [UsingTask](../msbuild/usingtask-element-msbuild.md).  
   
 ## <a name="hello-world"></a>Hello World  
  Рассмотрим более сложную встроенную задачу. Задача HelloWorld отображает приветствие "Hello, world!". Оно отображается на устройстве регистрации ошибок по умолчанию. Как правило, это системная консоль или окно **вывода** Visual Studio. В примере элемент `Reference` используется просто для наглядности.  
@@ -199,7 +193,4 @@ File.WriteAllText(Path, content);
   
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
- [Пошаговое руководство. Создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)
-
-
-
+ [Пошаговое руководство: создание встроенной задачи](../msbuild/walkthrough-creating-an-inline-task.md)

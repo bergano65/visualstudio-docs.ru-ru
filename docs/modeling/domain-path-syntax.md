@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain path
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 13a8ab293a6a18856ba98edc7aa04154bc876d40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47c2adc2894cc67b337243c30f4a62bc3642ff39
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834180"
 ---
 # <a name="domain-path-syntax"></a>Синтаксис пути домена
 В определениях доменного языка для поиска определенных элементов в модели используется синтаксис типа XPath.
@@ -24,7 +23,7 @@ ms.locfileid: "53834936"
 
  Путь домена имеет следующий вид:
 
- *RelationshipName.PropertyName/! Роли*
+ *RelationshipName.PropertyName/!Role*
 
  ![Связь типа “Ссылка" CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 

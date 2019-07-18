@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cc7673ad7f7542595a883e81a8064964dd054729
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 6df80340f57ba40597af67d57ba1bda3da778f4b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949965"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Как выполнить Создание пользовательских графиков в результатах нагрузочного теста
 
@@ -27,7 +26,7 @@ ms.locfileid: "53958005"
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>Создание настраиваемой диаграммы результатов нагрузочного теста
 
-1.  На панели инструментов **нагрузочных тестов** нажмите кнопку **Добавить новую диаграмму**.
+1. На панели инструментов **нагрузочных тестов** нажмите кнопку **Добавить новую диаграмму**.
 
      \- или -
 
@@ -35,11 +34,11 @@ ms.locfileid: "53958005"
 
      Откроется диалоговое окно **Ввод имени диаграммы**.
 
-2.  В поле **Имя диаграммы** введите имя диаграммы и нажмите кнопку **ОК**.
+2. В поле **Имя диаграммы** введите имя диаграммы и нажмите кнопку **ОК**.
 
      В **анализаторе тестовой нагрузки** появится новая диаграмма. Она появится в выбранной в настоящий момент области диаграммы и заменит ранее отображавшуюся диаграмму.
 
-3.  Настройте новую диаграмму, добавив в нее счетчики. Дополнительные сведения см. в разделе [Как добавлять и удалять счетчики на графах](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3. Настройте новую диаграмму, добавив в нее счетчики. Дополнительные сведения см. в разделе [Как добавлять и удалять счетчики на графах](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>См. также
 

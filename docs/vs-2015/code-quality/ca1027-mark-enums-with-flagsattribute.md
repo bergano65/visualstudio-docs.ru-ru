@@ -1,14 +1,9 @@
 ---
-title: 'Ca1027: следует Помечать перечисления атрибутом FlagsAttribute | Документация Майкрософт'
-ms.custom: ''
+title: CA1027. Помечать перечисления атрибутом FlagsAttribute | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkEnumsWithFlags
 - CA1027
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b8cebc05fa58c589f07beed70ab222d31bc8553a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6603e0869a9eb7947735c52a4c438b39d64b9140
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157710"
 ---
-# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: следует помечать перечисления атрибутом FlagsAttribute
+# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027. Пометьте перечисляемые типы с помощью FlagsAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,15 +47,12 @@ ms.locfileid: "49879224"
  Отключайте предупреждение из этого правила, если не хотите, чтобы быть в виде комбинируемых значения перечисления.
 
 ## <a name="example"></a>Пример
- В следующем примере `DaysEnumNeedsFlags` является перечислением, который соответствует требованиям по использованию <xref:System.FlagsAttribute>, но не поддерживает его. `ColorEnumShouldNotHaveFlag` Перечисление не имеет значения, являющиеся степенями двух, но неправильно указывает <xref:System.FlagsAttribute>. Это нарушает правило [CA2217: не следует помечать перечисления атрибутом FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
+ В следующем примере `DaysEnumNeedsFlags` является перечислением, который соответствует требованиям по использованию <xref:System.FlagsAttribute>, но не поддерживает его. `ColorEnumShouldNotHaveFlag` Перечисление не имеет значения, являющиеся степенями двух, но неправильно указывает <xref:System.FlagsAttribute>. Это нарушает правило [CA2217: Не следует помечать перечисления атрибутом FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumFlags/cs/FxCop.Design.EnumFlags.cs#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2217: не следует помечать перечисления атрибутом FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: Не следует помечать перечисления атрибутом FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>См. также
  <xref:System.FlagsAttribute?displayProperty=fullName>
-
-
-

@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IActiveScriptSiteDebug | Документы Microsoft
+title: Интерфейс IActiveScriptSiteDebug | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9b36054deeceb0528fb7ea399cc41d8edbbb47e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3cd8043648586ed3c614cbb137e51d992d7ae29b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992468"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>Интерфейс IActiveScriptSiteDebug
-Промежуточные узлы реализовать `IActiveScriptSiteDebug` интерфейс для управления документами и участвовать в отладке. `IActiveScriptSite` Объект обычно предоставляет реализацию `IActiveScriptSiteDebug` интерфейса. Если это сделано, вызовите `IActiveScriptSite::QueryInterface` метод, чтобы получить `IActiveScriptSiteDebug` интерфейса.  
+Реализовать промежуточных узлов `IActiveScriptSiteDebug` интерфейс для выполнения управления документами и участвовать в отладке. `IActiveScriptSite` Объект обычно содержит реализацию `IActiveScriptSiteDebug` интерфейс. Если это сделано, вызовите `IActiveScriptSite::QueryInterface` метод, чтобы получить `IActiveScriptSiteDebug` интерфейс.  
   
  Помимо методов, наследуемых от `IUnknown`, `IActiveScriptSiteDebug` интерфейс предоставляет следующие методы.  
   
@@ -30,7 +29,7 @@ ms.locfileid: "24724744"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|Использовать обработчик языка для делегирования `IDebugCodeContext::GetSourceContext`.|  
-|[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|Возвращает объект отладки приложения, связанный с этим узлом скрипта.|  
-|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Возвращает узел приложения, в какой скрипт документы должны быть добавлены.|  
-|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Позволяет промежуточных узлов определить способ обработки ошибок во время выполнения.|
+|[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|Используемый модуль языка делегировать `IDebugCodeContext::GetSourceContext`.|  
+|[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|Возвращает объект отладки приложения, связанные с этим сайтом скрипта.|  
+|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|Получает узел приложения, в области какой сценарий следует добавить документы.|  
+|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|Позволяет промежуточный узел определить способ обработки ошибок времени выполнения.|

@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Отладка в смешанном режиме | Документация Майкрософт
+title: Практическое руководство. Отладка в смешанном режиме | Документация Майкрософт
 ms.date: 11/05/2018
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 2859067d-7fcc-46b0-a4df-8c2101500977
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db26a3a68b15dcd6252f6bd02a540e105c993b54
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894382"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Как выполнить Отладка в смешанном режиме (C#, C++, Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Практическое руководство. Отладка в смешанном режиме (C#, C++, Visual Basic)
 
 Следующие процедуры описывают, как включить отладку для управляемого и машинного кода вместе, также известный как смешанный режим отладки. Существует два сценария отладки смешанного режима:
 
@@ -53,7 +53,7 @@ ms.locfileid: "53896062"
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>Включение смешанного режима отладки для управляемого вызывающего приложения
 
-1. Выберите C# или проекта Visual Basic в **обозревателе решений** и выберите **свойства** значок, нажмите клавишу **Alt**+**ввод**, или щелкните правой кнопкой мыши и выберите **свойства**.
+1. Выберите проект C# или Visual Basic в **обозревателе решений** и выберите **свойства** значок, нажмите клавишу **Alt**+**ввод**, или щелкните правой кнопкой мыши и выберите **свойства**.
 
 1. Выберите **Отладка** , а затем выберите **включить отладку машинного кода**.
 
@@ -62,7 +62,7 @@ ms.locfileid: "53896062"
    ![Включить отладку машинного кода](../debugger/media/dbg-mixed-mode-from-csharp.png "включить отладку машинного кода")
 
 > [!NOTE]
-> В большинстве версий Visual Studio 2017 для включения смешанного режима отладки машинного кода в приложении .NET Core необходимо использовать файл *launchSettings.json* вместо свойств проекта. Дополнительные сведения см. в разделе [отлаживать управляемый и машинный код](../debugger/how-to-debug-managed-and-native-code.md).
+> В большинстве версий Visual Studio, начиная с Visual Studio 2017, для включения смешанного режима отладки машинного кода в приложении .NET Core необходимо использовать файл *launchSettings.json* вместо свойств проекта. Дополнительные сведения см. в разделе [отлаживать управляемый и машинный код](../debugger/how-to-debug-managed-and-native-code.md).
 
 ## <a name="see-also"></a>См. также
 

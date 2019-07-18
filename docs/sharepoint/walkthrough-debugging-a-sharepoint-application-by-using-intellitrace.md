@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Отладка приложения SharePoint с помощью IntelliTrace | Документация Майкрософт
+title: Отладка приложения SharePoint с помощью IntelliTrace
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, IntelliTrace
 - data collector
 - IntelliTrace
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c36d2781e34f85e46fc8a1a56d384bad713399
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59407696743b15262db83f915feb075a10e22225
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865470"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401042"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Пошаговое руководство. Отладка приложения SharePoint с помощью IntelliTrace
 
@@ -33,15 +33,15 @@ ms.locfileid: "53865470"
 
  В данном пошаговом руководстве рассмотрены следующие задачи:
 
-- [Создание приемника компонента](#BKMK_CreateReceiver)
+- [Создание приемника компонента](#create-a-feature-receiver)
 
-- [Добавление кода в приемник компонента](#BKMK_AddCode)
+- [Добавление кода в приемник компонента](#add-code-to-the-feature-receiver)
 
-- [Тестирование проекта](#BKMK_Test1)
+- [Тестирование проекта](#test-the-project)
 
-- [Сбор данных IntelliTrace с помощью Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)
+- [Сбор данных IntelliTrace с помощью Microsoft Monitoring Agent](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [Отладка и исправление решения SharePoint](#BKMK_DebugSolution)
+- [Отладка и исправление решения SharePoint](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -295,7 +295,7 @@ ms.locfileid: "53865470"
 
 3. В окне PowerShell выполните [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) команду, чтобы создать ITRACE-файл, остановки отслеживания и перезапуска решения SharePoint.
 
-     **STOP-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*
+     **Stop-WebApplicationMonitoring**  *"\<SharePointSite>\\<SharePointAppName\>"*
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>Отладка и исправление решения SharePoint
 

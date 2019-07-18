@@ -1,14 +1,9 @@
 ---
 title: Пользовательский интерфейс свойств проекта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties [Visual Studio], user interface
 - projects [Visual Studio SDK], properties UI
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e295bff2f8398765f90c3fd537ca4f546208ce4b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 31840c40f2a494ffd32f5241e2770938138877e9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768297"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704098"
 ---
 # <a name="project-property-user-interface"></a>Пользовательский интерфейс свойств проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,11 +41,11 @@ ms.locfileid: "51768297"
   
 - Подтип проекта можно определить соответствующие идентификаторы CATID для различных объектов являются расширяемыми базового проекта во время выполнения путем извлечения следующие <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> значения:  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
   Чтобы определить CATID для проекта области, подтипа проекта извлекает выше свойства <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> из `VSITEMID``typedef`. Подтип проекта также может потребоваться указать, какие **страницы свойств** страницах диалогового окна отображаются для проекта, зависящие от конфигурации и конфигурации независимо. Некоторые подтипов проекта может потребоваться удалить встроенные страницы и добавить определенные страницы подтип проекта. Для этого проекта управляемый клиент вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> метод для следующих свойств:  
   
@@ -60,9 +55,8 @@ ms.locfileid: "51768297"
   
   Так как статистические выражения подтипа проекта <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> объекта, его можно переопределить эти свойства контроля, позволяющий определить **страницы свойств** диалоговое окно. Подтип проекта можно получить из внутреннего базового проекта эти свойства и затем добавить или удалить CLSID при необходимости.  
   
-  Новые страницы свойств, добавленные подтипом проекта, передаются в объект обзора конфигурации проекта от реализации базового проекта. Этот объект обзора конфигурации проекта поддерживает расширителей автоматизации. Дополнительные сведения о AutomationExtenders, см. в разделе [реализация и использование расширителей автоматизации](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). На страницах свойств, реализуемый вызов подтип проекта <xref:EnvDTE.Project.Extender%2A> извлекаемого собственные объект конфигурации подтипа проекта обзора, расширяющий объект обзора конфигурации базового проекта.  
+  Новые страницы свойств, добавленные подтипом проекта, передаются в объект обзора конфигурации проекта от реализации базового проекта. Этот объект обзора конфигурации проекта поддерживает расширителей автоматизации. Дополнительные сведения о AutomationExtenders, см. в разделе [реализация и использование расширителей автоматизации](https://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). На страницах свойств, реализуемый вызов подтип проекта <xref:EnvDTE.Project.Extender%2A> извлекаемого собственные объект конфигурации подтипа проекта обзора, расширяющий объект обзора конфигурации базового проекта.  
   
 ## <a name="see-also"></a>См. также  
  <xref:EnvDTE.IFilterProperties>   
- [Диалоговое окно страниц свойств](http://msdn.microsoft.com/en-us/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)
-
+ [Диалоговое окно страниц свойств](https://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)

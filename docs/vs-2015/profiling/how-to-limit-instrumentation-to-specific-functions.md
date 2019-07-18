@@ -1,27 +1,22 @@
 ---
-title: Практическое руководство. Ограничение инструментирования указанными функциями | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Ограничение инструментирования указанными функциями | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c7fa666c42d31035bd42841a2bbb41221bc16b5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 8923323a3aed96a9dd441a4a36b2084ffd8197e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432654"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Практическое руководство. Ограничение инструментирования указанными функциями
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51782574"
   Ограничение сбора данных таким образом поддерживается, только если выбран метод профилирования "Инструментирование".  
   
 > [!NOTE]
->  Вы можете также использовать страницу **Дополнительно** страниц свойств **сеанса анализа производительности**, чтобы задать другие параметры, доступные для программы командной строки средств профилирования [VSInstr](../profiling/vsinstr.md).  
+> Вы можете также использовать страницу **Дополнительно** страниц свойств **сеанса анализа производительности**, чтобы задать другие параметры, доступные для программы командной строки средств профилирования [VSInstr](../profiling/vsinstr.md).  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>Ограничение инструментирования указанными функциями в сеансе производительности  
   
@@ -52,7 +47,7 @@ ms.locfileid: "51782574"
     `FuncSpec` — пространство имен и имя функции. Этот параметр имеет следующий формат: `Namespace`**::**`FunctionName`. Для разделения нескольких функций используйте точку с запятой. В качестве подстановочного знака для одного или нескольких символов можно использовать звездочку (\*). Например, **/include:MyNS::\\*** указывает все функции в пространстве имен MyNS.  
   
    > [!NOTE]
-   >  Чтобы получить список функций в двоичном файле, откройте окно командной строки в каталоге установки средств профилирования (как правило, каталог \Team Tools\Performance Tools под каталогом установки [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]), а затем введите команду **vsinstr /DumpFuncs**.  
+   > Чтобы получить список функций в двоичном файле, откройте окно командной строки в каталоге установки средств профилирования (как правило, каталог \Team Tools\Performance Tools под каталогом установки [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]), а затем введите команду **vsinstr /DumpFuncs**.  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Ограничение инструментирования указанными функциями в двоичном файле  
   
@@ -71,12 +66,9 @@ ms.locfileid: "51782574"
     `FuncSpec` — пространство имен и имя функции. Этот параметр имеет следующий формат: `Namespace`**::**`FunctionName`. Для разделения нескольких функций используйте точку с запятой. В качестве подстановочного знака для одного или нескольких символов можно использовать звездочку (\*). Например, **/include:MyNS::\\*** указывает все функции в пространстве имен MyNS.  
   
    > [!NOTE]
-   >  Чтобы получить список функций в двоичном файле, откройте окно командной строки в каталоге установки средств профилирования (как правило, каталог \Team Tools\Performance Tools под каталогом установки [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]), а затем введите команду **vsinstr /DumpFuncs**.  
+   > Чтобы получить список функций в двоичном файле, откройте окно командной строки в каталоге установки средств профилирования (как правило, каталог \Team Tools\Performance Tools под каталогом установки [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]), а затем введите команду **vsinstr /DumpFuncs**.  
   
 ## <a name="see-also"></a>См. также  
  [Управление сбором данных](../profiling/controlling-data-collection.md)   
  [Практическое руководство. Ограничение инструментирования указанными библиотеками DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [Практическое руководство. Указание дополнительных параметров инструментирования](../profiling/how-to-specify-additional-instrumentation-options.md)
-
-
-

@@ -8,20 +8,20 @@ dev_langs:
 helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], developing
 - application pages [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22f53a59119ed10055decdd5c055edf378838c72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778636"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Пошаговое руководство. Создание страницы приложения SharePoint
- 
+
 Страница приложения — это разновидность страницы ASP.NET. Страницы приложения содержат содержимое, объединенное с эталонной страницей SharePoint. Дополнительные сведения см. в разделе [Создание страниц приложений для SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 В этом пошаговом руководстве показано, как создать страницу приложения и выполнить его отладку с помощью локального сайта SharePoint. На этой странице отображаются все элементы, которые каждый пользователь создал или изменил на всех сайтах фермы серверов.
@@ -153,5 +153,5 @@ ms.locfileid: "53867843"
 
 ## <a name="see-also"></a>См. также
 
-[Практическое руководство. Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)  
-[Тип страниц приложений _layouts](http://go.microsoft.com/fwlink/?LinkID=169274)
+[Практическое руководство. Создание страницы приложения](../sharepoint/how-to-create-an-application-page.md)
+[Application _layouts Page Type](http://go.microsoft.com/fwlink/?LinkID=169274)

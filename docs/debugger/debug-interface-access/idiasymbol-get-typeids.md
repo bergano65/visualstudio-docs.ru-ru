@@ -9,44 +9,47 @@ helpviewer_keywords:
 ms.assetid: 5166e647-fde5-4efe-92bf-77f8ae3fbc9b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d038c0be6f023206c6a96ec59389ec4063d975fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: c7b32ab5b1965ea7a641cfac470addd2aae0ede0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880092"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64791761"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
-Извлекает массив значений типа специфичные для компилятора идентификатор для этого символа.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_typeIds (   
-   DWORD  cTypeIds,  
-   DWORD* pcTypeIds,  
-   DWORD  typeIds[]  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `cTypeIds`  
- [in] Размер буфера для хранения данных.  
-  
- `pcTypeIds`  
- [out] Возвращает количество `typeIds` записаны, или, если `typeIds` является `NULL`, затем общее число доступных идентификаторов типов.  
-  
- `typeIds[]`  
- [out] Массив, заполненный идентификаторы типа.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Извлекает массив значений типа специфичные для компилятора идентификатор для этого символа.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_typeIds ( 
+   DWORD  cTypeIds,
+   DWORD* pcTypeIds,
+   DWORD  typeIds[]
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `cTypeIds`
+
+[in] Размер буфера для хранения данных.
+
+ `pcTypeIds`
+
+[out] Возвращает количество `typeIds` записаны, или, если `typeIds` является `NULL`, затем общее число доступных идентификаторов типов.
+
+ `typeIds[]`
+
+[out] Массив, заполненный идентификаторы типа.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="see-also"></a>См. также
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

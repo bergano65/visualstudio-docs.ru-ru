@@ -1,25 +1,20 @@
 ---
 title: Управление свойствами проекта и решения | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: d727efc0-1096-4ede-84b6-31a65da22ac0
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 43b46fc40da93352c4748662b66df91f0d25802b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dc27bd0cb93ab142d2a82758c72b27d14032d04e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290554"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674978"
 ---
 # <a name="managing-project-and-solution-properties"></a>Управление свойствами проекта и решения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49290554"
  ![Узел свойств в дереве обозревателя решений](../ide/media/vs2015-props-se.png "VS2015_Props_SE")  
   
 > [!TIP]
->  У решений есть несколько свойств, как и у элементов проекта. Эти свойства доступны в [окне свойств](../ide/reference/properties-window.md), а не в **конструкторе проектов**.  
+> У решений есть несколько свойств, как и у элементов проекта. Эти свойства доступны в [окне свойств](../ide/reference/properties-window.md), а не в **конструкторе проектов**.  
   
 ## <a name="project-properties"></a>Свойства проекта  
  Свойства проекта упорядочены по группам, у каждой из которых есть собственная страница свойств. При этом могут использоваться различные страницы для разных языков и типов проектов.  
@@ -50,13 +45,10 @@ ms.locfileid: "49290554"
   
  ![Свойства проекта Visual C++](../ide/media/vs2015-projprops-cpp.png "VS2015_ProjProps_cpp")  
   
- Сведения о свойствах проекта C++ см. в разделе [Работа со свойствами проектов](http://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd). Дополнительные сведения о свойствах JavaScript см. в разделе [Страницы свойств (JavaScript)](../ide/reference/property-pages-javascript.md).  
+ Сведения о свойствах проекта C++ см. в разделе [Работа со свойствами проектов](https://msdn.microsoft.com/library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd). Дополнительные сведения о свойствах JavaScript см. в разделе [Страницы свойств (JavaScript)](../ide/reference/property-pages-javascript.md).  
   
 ## <a name="solution-properties"></a>Свойства решения  
  Для доступа к свойствам решения щелкните правой кнопкой мыши узел решения в **обозревателе решений** и выберите пункт **Свойства**. В открывшемся диалоговом окне можно задать параметры проекта для сборки отладки или выпуска, указать, какие проекты должны запускаться при нажатии клавиши F5, а также задать параметры анализа кода.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Решения и проекты в Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
-
-
-

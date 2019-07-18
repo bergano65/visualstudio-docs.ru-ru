@@ -1,14 +1,9 @@
 ---
 title: Конструктор манифеста VSIX | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 72639c3fbef6b8e297d9e81a7383b2ee8220d896
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 450d306718906c3b76bf05982594045e7fd215f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387571"
 ---
 # <a name="vsix-manifest-designer"></a>Конструктор манифеста VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51796445"
  Чтобы открыть **конструктор манифеста VSIX**, найдите файл source.extension.vsixmanifest в **обозревателе решений**и откройте файл. Если файл не содержит допустимый XML-код, конструкторе манифеста не будет открыт.  
   
 > [!NOTE]
->  Source.Extension.vsixmanifest выводится extension.vsixmanifest при сборке пакета.  
+> Source.Extension.vsixmanifest выводится extension.vsixmanifest при сборке пакета.  
   
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса  
  **Конструктор манифеста VSIX** содержит четыре раздела, которые соответствуют следующие элементы верхнего уровня схемы:  
@@ -158,4 +153,3 @@ ms.locfileid: "51796445"
 ## <a name="see-also"></a>См. также  
  [Справочник по схеме 2.0 расширения VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Составляющие пакета VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-

@@ -9,41 +9,42 @@ helpviewer_keywords:
 ms.assetid: 3b9fb747-670b-4da7-bb70-612f7b911786
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc7029ab515f1e47f52eb086aa0f099c13fc65c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 457f446af4a91141962fbbd3055d9ce4980c719a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990624"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64808787"
 ---
 # <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
-Получает флаг, указывающий, содержит ли функция вызов `alloca` (который используется для выделения памяти в стеке).  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-[C++]HRESULT get_hasAlloca(   BOOL *pFlag);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pFlag`  
- [out] Возвращает `TRUE` Если функция содержит вызов `alloca`; в противном случае возвращает `FALSE`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
+Получает флаг, указывающий, содержит ли функция вызов `alloca` (который используется для выделения памяти в стеке).
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT get_hasAlloca(   BOOL *pFlag);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pFlag`
+
+[out] Возвращает `TRUE` Если функция содержит вызов `alloca`; в противном случае возвращает `FALSE`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
-  
-## <a name="requirements"></a>Требования  
-  
-|Требование|Описание|  
-|-----------------|-----------------|  
-|Заголовок:|dia2.h|  
-|Версия:|ПАКЕТ SDK для версии 8.0|  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.
+
+## <a name="requirements"></a>Требования
+
+|Требование|Описание|
+|-----------------|-----------------|
+|Заголовок:|dia2.h|
+|Версия:|ПАКЕТ SDK для версии 8.0|
+
+## <a name="see-also"></a>См. также
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

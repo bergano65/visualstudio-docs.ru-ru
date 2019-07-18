@@ -1,7 +1,6 @@
 ---
 title: Специальные возможности в проектах Office
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,15 +12,15 @@ helpviewer_keywords:
 - accessibility [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32d44c33192d9d4e4fdcf1b8db8cb47102a1df61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945223"
 ---
 # <a name="accessibility-in-office-projects"></a>Специальные возможности в проектах Office
 
@@ -41,21 +40,21 @@ Microsoft Visual Studio и Microsoft Office включают множество 
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Чтобы просмотреть сочетания клавиш для вкладок и элементов ленты в конструкторе
 
-1.  В Visual Studio на **средства** меню, щелкните **параметры**.
+1. В Visual Studio на **средства** меню, щелкните **параметры**.
 
-2.  Разверните **средств Office** узел и выберите **Microsoft Office Excel клавиатуры** или **Microsoft Office Word клавиатуры**, соответствующим образом.
+2. Разверните **средств Office** узел и выберите **Microsoft Office Excel клавиатуры** или **Microsoft Office Word клавиатуры**, соответствующим образом.
 
-3.  Выберите **Инамическая схема клавиатуры**.
+3. Выберите **Инамическая схема клавиатуры**.
 
      Появится сообщение о том, что необходимо перезапустить Visual Studio, чтобы изменения вступили в силу.
 
-4.  Нажмите кнопку **ОК**.
+4. Нажмите кнопку **ОК**.
 
-5.  Перезапустите Visual Studio и повторно откройте проект.
+5. Перезапустите Visual Studio и повторно откройте проект.
 
-6.  Откройте конструктор документ или книгу для вашего проекта.
+6. Откройте конструктор документ или книгу для вашего проекта.
 
-7.  Нажмите клавишу **F6** для отображения сочетания клавиш для ленты.
+7. Нажмите клавишу **F6** для отображения сочетания клавиш для ленты.
 
 ## <a name="accessibility-at-runtime"></a>Специальные возможности во время выполнения
 

@@ -1,31 +1,26 @@
 ---
-title: 'Пошаговое руководство: Сохранение пользовательских параметров на начальной странице | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Сохранение пользовательских параметров на начальной странице | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bdba9506b15b0d11f2c741c8651af2098b2f9da4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8976d329f6303d60cc00609bc9ed9471456c1b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408762"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Пошаговое руководство. Сохранение пользовательских параметров на начальной странице
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Можно сохранить пользовательские параметры для начальной страницы. Перечисленные в этом пошаговом руководстве, можно создать элемент управления, который сохраняет параметр в реестр, когда пользователь нажимает кнопку и затем получает задание каждый раз при загрузке страницы запуска. Шаблон проекта начальной страницы включает настраиваемый пользовательский элемент управления, и запустить страницу XAML по умолчанию вызывает этот элемент управления, у вас нет сам изменение начальной страницы.  
   
- Хранилище параметров, экземпляр которого создается в этом пошаговом руководстве является экземпляром класса <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> интерфейс, который считывает и записывает в следующий раздел реестра при вызове: HKCU\Software\Microsoft\VisualStudio\14.0\\  *CollectionName*  
+ Хранилище параметров, экземпляр которого создается в этом пошаговом руководстве является экземпляром класса <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> интерфейс, который считывает и записывает в следующий раздел реестра при вызове: HKCU\Software\Microsoft\VisualStudio\14.0\\*CollectionName*  
   
  При работе в экспериментальном экземпляре Visual Studio, в хранилище параметров считывает и записывает HKCU\Software\Microsoft\VisualStudio\14.0Exp\\*CollectionName.*  
   
@@ -34,43 +29,43 @@ ms.locfileid: "51763293"
 ## <a name="prerequisites"></a>Предварительные требования  
   
 > [!NOTE]
->  Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
+> Для выполнения этого пошагового руководства необходимо установить пакет SDK для Visual Studio. Дополнительные сведения см. в разделе [пакет SDK для Visual Studio](../extensibility/visual-studio-sdk.md).  
 >   
->  Шаблон проекта начальной страницы можно загрузить с помощью **Диспетчер расширений**.  
+> Шаблон проекта начальной страницы можно загрузить с помощью **Диспетчер расширений**.  
   
 ## <a name="setting-up-the-project"></a>Настройка проекта  
   
 #### <a name="to-configure-the-project-for-this-walkthrough"></a>Чтобы настроить проект для этого пошагового руководства  
   
-1.  Создайте проект начальной страницы с помощью шаблона проекта начальной страницы, как описано в [создания вашей собственной начальной страницы](../misc/creating-your-own-start-page.md). Назовите проект **SaveMySettings**.  
+1. Создайте проект начальной страницы с помощью шаблона проекта начальной страницы, как описано в [создания вашей собственной начальной страницы](../misc/creating-your-own-start-page.md). Назовите проект **SaveMySettings**.  
   
-2.  В **обозревателе решений**, добавьте следующие ссылки на сборки в проект StartPageControl:  
+2. В **обозревателе решений**, добавьте следующие ссылки на сборки в проект StartPageControl:  
   
-    -   EnvDTE  
+    - EnvDTE  
   
-    -   EnvDTE80  
+    - EnvDTE80  
   
-    -   Microsoft.VisualStudio.OLE.Interop  
+    - Microsoft.VisualStudio.OLE.Interop  
   
-    -   Microsoft.VisualStudio.Shell.Interop.11.0  
+    - Microsoft.VisualStudio.Shell.Interop.11.0  
   
-3.  Откройте файл MyControl.xaml.  
+3. Откройте файл MyControl.xaml.  
   
-4.  XAML, в области верхнего уровня <xref:System.Windows.Controls.UserControl> определение элемента, добавьте следующее объявление события после объявления пространств имен.  
+4. XAML, в области верхнего уровня <xref:System.Windows.Controls.UserControl> определение элемента, добавьте следующее объявление события после объявления пространств имен.  
   
     ```  
     Loaded="OnLoaded"  
     ```  
   
-5.  В области конструктора щелкните основную область элемента управления и нажмите клавишу DELETE.  
+5. В области конструктора щелкните основную область элемента управления и нажмите клавишу DELETE.  
   
      При этом удаляются <xref:System.Windows.Controls.Border> элемент и все содержимое и оставляет только верхнего уровня <xref:System.Windows.Controls.Grid> элемент.  
   
-6.  Из **элементов**, перетащите <xref:System.Windows.Controls.StackPanel> элемента управления в сетку.  
+6. Из **элементов**, перетащите <xref:System.Windows.Controls.StackPanel> элемента управления в сетку.  
   
-7.  Теперь перетащите <xref:System.Windows.Controls.TextBlock>, <xref:System.Windows.Controls.TextBox>и кнопка для <xref:System.Windows.Controls.StackPanel>.  
+7. Теперь перетащите <xref:System.Windows.Controls.TextBlock>, <xref:System.Windows.Controls.TextBox>и кнопка для <xref:System.Windows.Controls.StackPanel>.  
   
-8.  Добавить **x: Name** для атрибута <xref:System.Windows.Controls.TextBox>и `Click` событие для <xref:System.Windows.Controls.Button>, как показано в следующем примере.  
+8. Добавить **x: Name** для атрибута <xref:System.Windows.Controls.TextBox>и `Click` событие для <xref:System.Windows.Controls.Button>, как показано в следующем примере.  
   
     ```xml  
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">  
@@ -84,15 +79,15 @@ ms.locfileid: "51763293"
   
 #### <a name="to-implement-the-user-control"></a>Для реализации пользовательского элемента управления  
   
-1.  Щелкните правой кнопкой мыши в области XAML `Click` атрибут <xref:System.Windows.Controls.Button> элемент, а затем щелкните **к обработчику событий**.  
+1. Щелкните правой кнопкой мыши в области XAML `Click` атрибут <xref:System.Windows.Controls.Button> элемент, а затем щелкните **к обработчику событий**.  
   
      Эта команда открывает MyControl.xaml.cs и создает обработчик заглушки для `Button_Click` событий.  
   
-2.  Добавьте следующий `using` инструкции в начало файла.  
+2. Добавьте следующий `using` инструкции в начало файла.  
   
      [!code-csharp[StartPageDTE#11](../snippets/csharp/VS_Snippets_VSSDK/startpagedte/cs/startpagecontrol/mycontrol.xaml.cs#11)]  
   
-3.  Добавьте закрытый `SettingsStore` свойства, как показано в следующем примере.  
+3. Добавьте закрытый `SettingsStore` свойства, как показано в следующем примере.  
   
     ```csharp  
     private IVsWritableSettingsStore _settingsStore = null;  
@@ -126,7 +121,7 @@ ms.locfileid: "51763293"
   
      Во-первых, это свойство возвращает ссылку на <xref:EnvDTE80.DTE2> интерфейс, который содержит модель объектов автоматизации, из <xref:System.Windows.FrameworkElement.DataContext%2A> пользовательский элемент управления, а затем использует DTE для получения экземпляра <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> интерфейс. Затем он использует этот экземпляр для возвращения параметры текущего пользователя.  
   
-4.  Заполните `Button_Click` событие следующим образом.  
+4. Заполните `Button_Click` событие следующим образом.  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -143,7 +138,7 @@ ms.locfileid: "51763293"
   
      Записывает содержимое текстового поля к полю «MySetting» в коллекции «Мои параметры» в реестре. Если коллекция не существует, он создается.  
   
-5.  Добавьте следующий обработчик для `OnLoaded` событий пользовательского элемента управления.  
+5. Добавьте следующий обработчик для `OnLoaded` событий пользовательского элемента управления.  
   
     ```csharp  
     private void OnLoaded(Object sender, RoutedEventArgs e)  
@@ -157,11 +152,11 @@ ms.locfileid: "51763293"
   
      Это текущее значение «MySetting» задает текст текстового поля.  
   
-6.  Создание пользовательского элемента управления.  
+6. Создание пользовательского элемента управления.  
   
-7.  В **обозревателе решений**, откройте source.extension.vsixmanifest.  
+7. В **обозревателе решений**, откройте source.extension.vsixmanifest.  
   
-8.  В редакторе манифеста задайте **название продукта** для **сохранить мои параметры начальной страницы**.  
+8. В редакторе манифеста задайте **название продукта** для **сохранить мои параметры начальной страницы**.  
   
      Таким образом задается имя начальной страницы как в **настроить начальную страницу** в списке **параметры** диалоговое окно.  
   
@@ -171,27 +166,27 @@ ms.locfileid: "51763293"
   
 #### <a name="to-test-the-user-control"></a>Для тестирования пользовательского элемента управления  
   
-1.  Нажмите клавишу F5.  
+1. Нажмите клавишу F5.  
   
      Откроется экспериментальный экземпляр Visual Studio.  
   
-2.  В экспериментальном экземпляре на **средства** меню, щелкните **параметры**.  
+2. В экспериментальном экземпляре на **средства** меню, щелкните **параметры**.  
   
-3.  В **среды** узел, щелкните **запуска**, а затем в **настроить начальную страницу** выберите **[установленных расширений] сохранить мои параметры начальной страницы** .  
+3. В **среды** узел, щелкните **запуска**, а затем в **настроить начальную страницу** выберите **[установленных расширений] сохранить мои параметры начальной страницы** .  
   
      Нажмите кнопку **ОК**.  
   
-4.  Закройте начальной страницы, если он открыт, а затем на **представление** меню, щелкните **начальная страница**.  
+4. Закройте начальной страницы, если он открыт, а затем на **представление** меню, щелкните **начальная страница**.  
   
-5.  На начальной странице щелкните **MyControl** вкладки.  
+5. На начальной странице щелкните **MyControl** вкладки.  
   
-6.  В текстовом поле введите **Cat**, а затем нажмите кнопку **сохранить Мои параметр**.  
+6. В текстовом поле введите **Cat**, а затем нажмите кнопку **сохранить Мои параметр**.  
   
-7.  Закройте начальной страницы и откройте его снова.  
+7. Закройте начальной страницы и откройте его снова.  
   
      Слово «Cat» должно отображаться в текстовом поле.  
   
-8.  Замените слово «Cat» слово «Dog». Не нажимайте кнопку.  
+8. Замените слово «Cat» слово «Dog». Не нажимайте кнопку.  
   
 9. Закройте начальной страницы и откройте его снова.  
   
@@ -210,4 +205,3 @@ ms.locfileid: "51763293"
  <xref:EnvDTE80.DTE2?displayProperty=fullName>   
  [Создание начальной страницы](../misc/creating-your-own-start-page.md)   
  [Добавление команд Visual Studio на начальную страницу](../extensibility/adding-visual-studio-commands-to-a-start-page.md)
-

@@ -1,19 +1,18 @@
 ---
 title: Назначение уникального свойства автоматизации элементам управления универсальной платформы Windows для тестирования
 ms.date: 05/31/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 1498da202cb6964ced513c6fa42804ac6841c0ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd939162ff4063a66ac0afe1e6830a0d3b32bab2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429395"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Назначение уникального свойства автоматизации элементам управления универсальной платформы Windows для тестирования
 

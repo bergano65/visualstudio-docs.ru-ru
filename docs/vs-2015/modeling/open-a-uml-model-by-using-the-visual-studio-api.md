@@ -1,25 +1,22 @@
 ---
 title: Открытие модели UML с помощью Visual Studio API | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, opening models in Visual Studio
 ms.assetid: 38423682-f2a7-4d2a-a2cd-fd680e9b4b4d
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 62b8700e85ccab271dbfdc4f9bac504ee64197a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5baa2168eeae12f1a85fdce0b2981e267dcd6fbc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158889"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Открытие модели UML с помощью API Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +25,11 @@ ms.locfileid: "51779623"
   
  Если нужно только прочитать модель в программном коде, не показывая ее пользователю, можно воспользоваться указанными ниже методами.  
   
--   Шина модели Visual Studio позволяет получить доступ к моделям и элементам внутри них, а также предоставляет стандартный метод создания связей между моделями. Дополнительные сведения см. в разделе [интеграция моделей UML с другими моделями и средствами](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- Шина модели Visual Studio позволяет получить доступ к моделям и элементам внутри них, а также предоставляет стандартный метод создания связей между моделями. Дополнительные сведения см. в разделе [интеграция моделей UML с другими моделями и средствами](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   Модель можно открыть в режиме только для чтения. Дополнительные сведения см. в разделе [чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).  
+- Модель можно открыть в режиме только для чтения. Дополнительные сведения см. в разделе [чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).  
   
-##  <a name="Showing"></a> Открытие моделей и схем в Visual Studio  
+## <a name="Showing"></a> Открытие моделей и схем в Visual Studio  
  Чтобы открыть модель в пользовательском интерфейсе, воспользуйтесь стандартным API-интерфейсами Visual Studio `EnvDTE.DTE`. Существует два полезных приведения, которые можно применять к элементам проекта моделирования.  
   
 - `EnvDTE.Project` можно привести к `IModelingProject` и наоборот, если проект является проектом моделирования, а также если проект загружен в текущем домене приложения.  
@@ -121,6 +118,3 @@ foreach (ProjectItem item in project.ProjectItems)
 ## <a name="see-also"></a>См. также  
  [Программирование с UML API](../modeling/programming-with-the-uml-api.md)   
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

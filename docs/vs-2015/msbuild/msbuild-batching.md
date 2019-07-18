@@ -1,14 +1,9 @@
 ---
 title: Пакетная обработка MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
@@ -16,18 +11,17 @@ ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 24baafbaf213e90999a5e4e0eea030f2ef608501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439374"
 ---
 # <a name="msbuild-batching"></a>Пакетная обработка в MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] может разделять списки элементов на разные категории или пакеты на основе метаданных элементов и поочередно выполнять целевой объект или задачу с использованием каждого пакета.  
   
 ## <a name="task-batching"></a>Пакетная обработка задач  
@@ -36,7 +30,7 @@ ms.locfileid: "49304178"
  Укажите, что [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] нужно выполнить пакетную обработку с помощью задачи, используя нотацию %(*имя_метаданных_элемента*) в одном из атрибутов задачи. Следующий пример разделяет элемент `Example` на пакеты на основе значения метаданных элемента `Color` и передает их в задачу `MyTask` по отдельности.  
   
 > [!NOTE]
->  Если вы не ссылаетесь на список элементов в других атрибутах задачи или имя метаданных может быть неоднозначным, можно использовать нотацию %(*коллекция_элементов.имя_метаданных_элемента*), чтобы полностью определить значение метаданных элемента для использования при пакетной обработке.  
+> Если вы не ссылаетесь на список элементов в других атрибутах задачи или имя метаданных может быть неоднозначным, можно использовать нотацию %(*коллекция_элементов.имя_метаданных_элемента*), чтобы полностью определить значение метаданных элемента для использования при пакетной обработке.  
   
 ```  
 <Project  
@@ -108,11 +102,8 @@ ms.locfileid: "49304178"
   
  Дополнительные сведения о функциях свойств см. в разделе [Функции свойств](../msbuild/property-functions.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Элемент ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
  [Дополнительные возможности](../msbuild/msbuild-advanced-concepts.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Отправка событий запуска после запуска | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0cc0642c085510e69fe7cd16abe195095c993219
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: caf36e6713e49bb1470cd720ba2d04f689abba43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436668"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Отправка событий запуска после запуска
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "51769116"
 - Событие завершения загрузки, когда код будет загружен и готов к выполнению, а также перед выполнением любого кода  
   
   > [!NOTE]
-  >  Когда это событие продолжает выполнение, инициализируются глобальные переменные и запустите программы запуска.  
+  > Когда это событие продолжает выполнение, инициализируются глобальные переменные и запустите программы запуска.  
   
 - Возможные других потоков, создания и события загрузки модулей.  
   
@@ -53,4 +48,3 @@ ms.locfileid: "51769116"
 ## <a name="see-also"></a>См. также  
  [Элемент управления выполнения](../../extensibility/debugger/control-of-execution.md)   
  [Задачи отладки](../../extensibility/debugger/debugging-tasks.md)
-

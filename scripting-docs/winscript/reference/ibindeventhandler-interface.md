@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IBindEventHandler | Документы Microsoft
+title: Интерфейс IBindEventHandler | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,19 +13,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 600981f2b395627e5ece597c637da500072ff94f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6c65a659f333de282f380b9b6a6e462b40ec6c4d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991331"
 ---
 # <a name="ibindeventhandler-interface"></a>Интерфейс IBindEventHandler
-Позволяет вызывающему объекту предоставить объект, обрабатывающий указанный обработчик события.  
+Позволяет вызывающему объекту указать объект, который обрабатывает заданный обработчик событий.  
   
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IBindEventHandler` интерфейс предоставляет следующие методы.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IBindEventHandler::BindHandler](../../winscript/reference/ibindeventhandler-bindhandler.md)|Привязывает событие объекта.|
+|[IBindEventHandler::BindHandler](../../winscript/reference/ibindeventhandler-bindhandler.md)|Связывает событие объекта.|

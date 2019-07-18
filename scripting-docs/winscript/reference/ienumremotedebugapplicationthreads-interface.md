@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IEnumRemoteDebugApplicationThreads | Документы Microsoft
+title: Интерфейс IEnumRemoteDebugApplicationThreads | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d261e9dfaaf06145554eb80e2e9f63e8d429082d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d57e945593641036bbfbbecc90b790251c12075f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807216"
 ---
 # <a name="ienumremotedebugapplicationthreads-interface"></a>Интерфейс IEnumRemoteDebugApplicationThreads
-Перечисляет выполняющиеся потоки в приложении.  
+Перечисляет запущенные потоки в приложении.  
   
  Помимо методов, наследуемых от `IUnknown`, `IEnumRemoteDebugApplicationThreads` интерфейс предоставляет следующие методы.  
   
@@ -31,6 +30,6 @@ ms.locfileid: "24729114"
 |Метод|Описание|  
 |------------|-----------------|  
 |[IEnumRemoteDebugApplicationThreads::Next](../../winscript/reference/ienumremotedebugapplicationthreads-next.md)|Возвращает указанное количество сегментов в последовательности перечисления.|  
-|[IEnumRemoteDebugApplicationThreads::Skip](../../winscript/reference/ienumremotedebugapplicationthreads-skip.md)|Пропускает указанное число сегментов в последовательности перечисления.|  
-|[IEnumRemoteDebugApplicationThreads::Reset](../../winscript/reference/ienumremotedebugapplicationthreads-reset.md)|Сбрасывает последовательность перечисления в начало.|  
-|[IEnumRemoteDebugApplicationThreads::Clone](../../winscript/reference/ienumremotedebugapplicationthreads-clone.md)|Создает перечислитель, который содержит том же состоянии, как у текущего перечислителя.|
+|[IEnumRemoteDebugApplicationThreads::Skip](../../winscript/reference/ienumremotedebugapplicationthreads-skip.md)|Пропускает заданное число сегментов в последовательности перечисления.|  
+|[IEnumRemoteDebugApplicationThreads::Reset](../../winscript/reference/ienumremotedebugapplicationthreads-reset.md)|Сбрасывает последовательность перечислений в начало.|  
+|[IEnumRemoteDebugApplicationThreads::Clone](../../winscript/reference/ienumremotedebugapplicationthreads-clone.md)|Создает перечислитель с тем же состоянием, что и текущий перечислитель.|

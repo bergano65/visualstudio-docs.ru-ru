@@ -1,25 +1,20 @@
 ---
 title: Вариант формата отображения глубиной цвета 16 бит | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf00bf536e5f1ee140a818ee59c66703906860f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157574"
 ---
 # <a name="16bpp-render-target-format-variant"></a>Вариант формата однобуферной прорисовки 16 бит/пкс
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +37,11 @@ ms.locfileid: "51727640"
 ## <a name="remarks"></a>Примечания  
  Формат целевого объекта отрисовки DXGI_FORMAT_B5G6R5_UNORM устанавливается при каждом вызове метода `ID3D11Device::CreateTexture2D`, который создает целевой объект отрисовки. В частности, формат переопределяется, когда объект D3D11_TEXTURE2D_DESC, передаваемый в параметре pDesc, описывает целевой объект отрисовки, то есть:  
   
--   Для члена BindFlags установлен флаг D3D11_BIND_REDNER_TARGET.  
+- Для члена BindFlags установлен флаг D3D11_BIND_REDNER_TARGET.  
   
--   Для члена BindFlags снят флаг D3D11_BIND_DEPTH_STENCIL.  
+- Для члена BindFlags снят флаг D3D11_BIND_DEPTH_STENCIL.  
   
--   Для члена Usage установлен флаг D3D11_USAGE_DEFAULT.  
+- Для члена Usage установлен флаг D3D11_USAGE_DEFAULT.  
   
 ## <a name="restrictions-and-limitations"></a>Ограничения  
  Так как формат B5G6R5 не имеет альфа-канала, альфа-содержимое не сохраняется при использовании этого варианта. Если приложение требует наличия альфа-канала в целевом объекте отрисовки, можно переключиться на формат B5G6R5.  
@@ -61,6 +56,3 @@ target_description.BindFlags = D3D11_BIND_RENDER_TARGET;
 target_description.Format = DXGI_FORMAT_B5G6R5_UNORM;  
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);  
 ```
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Диалоговое окно "Командная строка события после сборки/перед сборкой"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
 - vb.ProjectPropertiesBuildEventsBuilder
@@ -38,29 +33,28 @@ ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f4c2f0297195dc1a9be23a1dd8aca980a6e32958
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 213535d983f95f304b8e0fba3241fa502577f0f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438059"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Диалоговое окно "Командная строка события "После построения"" или "Командная строка события "До построения""
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Вы можете ввести события до или после сборки для [страницы "События сборки" в конструкторе проектов (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) прямо в поле ввода или выбрать макросы, выполняемые до или после сборки, в списке доступных макросов.  
   
 > [!NOTE]
->  События перед сборкой не выполняются, если проект актуален и сборка не запускается.  
+> События перед сборкой не выполняются, если проект актуален и сборка не запускается.  
   
 ## <a name="ui-element-list"></a>Список элементов пользовательского интерфейса  
  **Поле ввода командной строки**  
  Содержит события для запуска до или после сборки.  
   
 > [!NOTE]
->  Добавьте оператор `call` перед всеми командами после сборки, запускающими BAT-файлы. Например, `call C:\MyFile.bat` или `call C:\MyFile.bat call C:\MyFile2.bat`.  
+> Добавьте оператор `call` перед всеми командами после сборки, запускающими BAT-файлы. Например, `call C:\MyFile.bat` или `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
  **Макросы**  
  Развертывает поле ввода, чтобы отобразить список макросов для вставки в поле ввода командной строки.  
@@ -100,7 +94,4 @@ ms.locfileid: "49202518"
  [Указание настраиваемых событий сборки в Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)   
  [Страница "События построения" в конструкторе проектов (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)   
  [Практическое руководство. Указание событий сборки (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Практическое руководство. Назначение событий построения (C#)](../../ide/how-to-specify-build-events-csharp.md)
-
-
-
+ [Практическое руководство. Указание событий сборки (C#)](../../ide/how-to-specify-build-events-csharp.md)

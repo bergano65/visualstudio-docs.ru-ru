@@ -1,27 +1,22 @@
 ---
 title: Конфигурации для построения проекта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ef43fe505e859cb32f7c0fbe407bcc73c4f4e0e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 953a02c27f40e92c41d2e43bc818727118eb0a27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434848"
 ---
 # <a name="project-configuration-for-building"></a>Конфигурация проекта для сборки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51725515"
  Если пользователь создает новую конфигурацию решения с именем MyConfig2, Project1 привязывает конфигурацию отладки для конфигурации решения по умолчанию. Project2 также привязывает MyConfig2 конфигурации по умолчанию для конфигурации решения.  
   
 > [!NOTE]
->  Привязки не учитывает регистр.  
+> Привязки не учитывает регистр.  
   
  Когда пользователь выбирает **Выбор нескольких элементов** элемент в раскрывающемся списке конфигурации среды отображается диалоговое окно, которое предоставляет список доступных конфигураций.  
   
@@ -52,7 +47,7 @@ ms.locfileid: "51725515"
  Зависимости проекта определяют порядок, в котором построение проектов. Вкладка порядок построения в диалоговом окне Просмотр точный порядок, в котором будет создавать проекты в решении и использовать вкладку "зависимости" для изменения порядок построения.  
   
 > [!NOTE]
->  В списке проектов, которые установленными флажками, но недоступны для изменения были добавлены в среде, из-за явных зависимостей, определяемое <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> интерфейсы и его нельзя изменить. Например, при добавлении ссылки из проекта [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] проекта в другой автоматически добавляет зависимость сборки, которые можно удалить, удалив ссылку. Не удается установить проекты, флажки сняты и недоступны, поскольку это создаст цикл зависимостей (например, Project1 будет находиться в зависимости от Project2 и Project2 будет находиться в зависимости от Project1), который бы блокировке построения.  
+> В списке проектов, которые установленными флажками, но недоступны для изменения были добавлены в среде, из-за явных зависимостей, определяемое <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> или <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> интерфейсы и его нельзя изменить. Например, при добавлении ссылки из проекта [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] проекта в другой автоматически добавляет зависимость сборки, которые можно удалить, удалив ссылку. Не удается установить проекты, флажки сняты и недоступны, поскольку это создаст цикл зависимостей (например, Project1 будет находиться в зависимости от Project2 и Project2 будет находиться в зависимости от Project1), который бы блокировке построения.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] процессы сборки включают типичные компиляции и выполнения операций, которые вызываются с помощью одной команды сборки. Также поддерживаются два других процесса построения: операции очистки, чтобы удалить все выходные элементы из предыдущей сборки, а также проверку обновлений, чтобы определить, изменилась ли выходные данные элемента в конфигурации.  
   
@@ -68,4 +63,3 @@ ms.locfileid: "51725515"
  [Управление параметрами конфигурации](../../extensibility/internals/managing-configuration-options.md)   
  [Конфигурация проекта для управления развертыванием](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
  [Конфигурация проекта для вывода](../../extensibility/internals/project-configuration-for-output.md)
-

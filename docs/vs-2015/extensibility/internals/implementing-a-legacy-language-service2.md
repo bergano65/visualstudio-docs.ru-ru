@@ -1,26 +1,21 @@
 ---
 title: Реализация языковой службы прежних версий2 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], implementing
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b6c84a848d75302f5744e812e43a1bd7979472e7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a5f419b3b4c55538e8aa46d5aefb3f7e21369be
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192711"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Реализация языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +24,9 @@ ms.locfileid: "51753920"
   
 - метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> ;  
   
-- метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>;  
+- метод <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> ;  
   
-- метод <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>;  
+- метод <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> ;  
   
 - Свойство <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>.  
   
@@ -200,7 +195,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-languageservice-class"></a>В классе LanguageService  
   
-|Метод|Возвращается|Описание:|  
+|Метод|Возвращается|Описание|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|Для поддержки пользовательских дополнения к текстовому представлению.|  
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|Для поддержки настраиваемых свойств документа.|  
@@ -217,7 +212,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-source-class"></a>В классе источника  
   
-|Метод|Возвращается|Описание:|  
+|Метод|Возвращается|Описание|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|Для настройки внешнего вида списки завершения IntelliSense (этот метод обычно не переопределяется).|  
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|Для поддержки маркеров в списке задач Список ошибок; в частности поддержка возможности, недоступные при открытии файла и переход к строке, которая вызвала ошибку.|  
@@ -227,7 +222,7 @@ namespace TestLanguagePackage
   
 ### <a name="in-the-authoringscope-class"></a>В классе AuthoringScope  
   
-|Метод|Возвращается|Описание:|  
+|Метод|Возвращается|Описание|  
 |------------|--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|Список объявлений, такие как члены или типы. Этот метод должен быть реализован, но также может возвращать значение null. Если этот метод возвращает допустимый объект, объект должен представлять собой экземпляр версии <xref:Microsoft.VisualStudio.Package.Declarations> класса.|  
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|Предоставляет список сигнатур метода в данном контексте. Этот метод должен быть реализован, но также может возвращать значение null. Если этот метод возвращает допустимый объект, объект должен представлять собой экземпляр версии <xref:Microsoft.VisualStudio.Package.Methods> класса.|  
@@ -370,4 +365,3 @@ public enum IconImageIndex
  [Общие сведения о службе устаревшего языка](../../extensibility/internals/legacy-language-service-overview.md)   
  [Регистрация языковой службы прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Средство синтаксического анализа и сканер языковой службы прежних версий](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
-

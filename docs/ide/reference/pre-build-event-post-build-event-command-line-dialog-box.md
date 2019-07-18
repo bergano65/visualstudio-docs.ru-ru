@@ -1,7 +1,6 @@
 ---
 title: Диалоговое окно "Командная строка события перед сборкой" или "Командная строка события после сборки"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -31,22 +30,21 @@ helpviewer_keywords:
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cc93b398791d01cc29025772a6cd086f0d0c740
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 977bd72b478d2106f687d3666aad574a63ca68ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969063"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Диалоговое окно "Командная строка события "После построения"" или "Командная строка события "До построения""
 Вы можете ввести события до или после сборки для [страницы "События сборки" в конструкторе проектов (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) прямо в поле ввода или выбрать макросы, выполняемые до или после сборки, в списке доступных макросов.
 
 > [!NOTE]
 > События перед сборкой не выполняются, если проект актуален и сборка не запускается.
-
 
 ## <a name="ui-element-list"></a>Список элементов пользовательского интерфейса
  **Поле ввода командной строки**
@@ -55,7 +53,6 @@ ms.locfileid: "53877907"
 
 > [!NOTE]
 > Добавьте оператор `call` перед всеми командами после сборки, запускающими BAT-файлы. Например, `call C:\MyFile.bat` или `call C:\MyFile.bat call C:\MyFile2.bat`.
-
 
  **Макросы**
 

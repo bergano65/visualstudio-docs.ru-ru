@@ -5,15 +5,16 @@ ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3712f009262abd9590653af3f3ef4e4e81c87e84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+monikerRange: vs-2017
+ms.openlocfilehash: 718ef14fda76df87dc4627dc518e993058896471
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777988"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Новые возможности в MSBuild 15
 
@@ -23,7 +24,7 @@ MSBuild теперь предоставляется в составе [осно�
 
  Теперь MSBuild устанавливается в папку в пути установки каждой версии Visual Studio. Например, *C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild*. Для поиска MSBuild можно использовать следующий модуль PowerShell: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
- Теперь MSBuild не регистрируется в глобальном кэше сборок. Чтобы обратиться к MSBuild программным образом, используйте пакеты NuGet.
+ Теперь MSBuild не регистрируется в глобальном кэше сборок. Чтобы обратиться к MSBuild программным образом, используйте пакеты NuGet. См. подробнее об [обновлении существующего приложения для использования MSBuild 15.0](../msbuild/updating-an-existing-application.md).
 
 ## <a name="changed-properties"></a>Измененные свойства
 
@@ -51,4 +52,4 @@ MSBuild теперь предоставляется в составе [осно�
 - `GetPathOfFileAbove` возвращает путь к файлу, непосредственно предшествующему данному. Она функционально эквивалентна вызову такой инструкции: `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`
 
 ## <a name="see-also"></a>См. также
-[MSBuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)

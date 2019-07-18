@@ -9,34 +9,34 @@ helpviewer_keywords:
 ms.assetid: c62a0fda-17b8-4cf6-b321-6014ce581096
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8236090d6520bf62cafb795eed9c3546c0ed2541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: eac1b6d88917ca94db82a3e4e8c20c4be3060560
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833201"
 ---
 # <a name="idiaenumsegmentsgetcount"></a>IDiaEnumSegments::get_Count
-Извлекает число сегментов.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_Count (   
-   LONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- pRetVal  
- [out, retval] Возвращает число сегментов.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   
- [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)
+Извлекает число сегментов.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_Count ( 
+   LONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ pRetVal
+- [out, retval] Возвращает число сегментов.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
+- [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)

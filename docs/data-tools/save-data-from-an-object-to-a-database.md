@@ -12,16 +12,15 @@ helpviewer_keywords:
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76b2673e81bcf15227195a299711848100bcd499
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: b15776b67ded2fc813f1b8bcf82d8aa91f212346
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968596"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715029"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Сохранение данных из объекта в базе данных
 
@@ -42,7 +41,7 @@ ms.locfileid: "53968596"
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>Для сохранения новых записей из объекта в базе данных
 
--   Создайте записи путем передачи значения `TableAdapter.Insert` метод.
+- Создайте записи путем передачи значения `TableAdapter.Insert` метод.
 
      В следующем примере создается новая запись клиента в `Customers` таблицы, передав значения в `currentCustomer` объект `TableAdapter.Insert` метод.
 
@@ -51,7 +50,7 @@ ms.locfileid: "53968596"
 
 ## <a name="to-update-existing-records-from-an-object-to-a-database"></a>Чтобы обновить существующие записи из объекта в базе данных
 
--   Изменить записи путем вызова `TableAdapter.Update` метод, передав новые значения для обновления записи и передачи в исходные значения для поиска записи.
+- Изменить записи путем вызова `TableAdapter.Update` метод, передав новые значения для обновления записи и передачи в исходные значения для поиска записи.
 
     > [!NOTE]
     > Необходимо, чтобы сохранить исходные значения для передачи их в объект `Update` метод. В этом примере используются свойства с `orig` префикс для хранения оригинальных значений.
@@ -63,7 +62,7 @@ ms.locfileid: "53968596"
 
 ## <a name="to-delete-existing-records-from-a-database"></a>Для удаления существующих записей из базы данных
 
--   Удалить записи путем вызова `TableAdapter.Delete` и передав исходные значения для поиска записи.
+- Удалить записи путем вызова `TableAdapter.Delete` и передав исходные значения для поиска записи.
 
     > [!NOTE]
     > Необходимо, чтобы сохранить исходные значения для передачи их в объект `Delete` метод. В этом примере используются свойства с `orig` префикс для хранения оригинальных значений.
@@ -73,7 +72,7 @@ ms.locfileid: "53968596"
      [!code-csharp[VbRaddataSaving#25](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_3.cs)]
      [!code-vb[VbRaddataSaving#25](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_3.vb)]
 
-## <a name="net-framework-security"></a>безопасность платформы .NET Framework
+## <a name="net-security"></a>Безопасность .NET
 
 Необходимо иметь разрешение на выполнение выбранного `INSERT`, `UPDATE`, или `DELETE` для таблицы в базе данных.
 

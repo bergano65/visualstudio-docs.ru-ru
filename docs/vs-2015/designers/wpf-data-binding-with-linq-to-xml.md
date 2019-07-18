@@ -1,25 +1,20 @@
 ---
 title: Привязка данных WPF с помощью LINQ to XML | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 356c2cef-3468-495d-b4bd-f6b7f883446b
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 78e30d010621397d12c5580fdc6089aea0d2f5e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 196a4f7dc141fdab30ffbee33b5aa5a858a7d21f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176947"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689878"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml"></a>Привязка данных WPF с помощью LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,8 +36,5 @@ ms.locfileid: "49176947"
   
  <xref:System.Xml.Linq.XAttribute>  
   
-## <a name="see-also"></a>См. также  
- [Сложные методы программирования в LINQ to XML](http://msdn.microsoft.com/library/88c4a6ea-700b-4468-9a29-0ea18fc63dd0)
-
-
-
+## <a name="see-also"></a>См. также раздел  
+ [Сложные методы программирования в LINQ to XML](https://msdn.microsoft.com/library/88c4a6ea-700b-4468-9a29-0ea18fc63dd0)

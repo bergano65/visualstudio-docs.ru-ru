@@ -1,22 +1,21 @@
 ---
-title: Пошаговое руководство. Сборка приложения
+title: Пошаговое руководство. Создание приложения
 ms.date: 09/25/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7f767f254119e1f9820c72a12e2aac7b4c141f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583032"
 ---
-# <a name="walkthrough-build-an-application"></a>Пошаговое руководство. Сборка приложения
+# <a name="walkthrough-build-an-application"></a>Пошаговое руководство. Создание приложения
 
 Выполнив это пошаговое руководство, вы ознакомитесь с несколькими параметрами, которые можно настроить при создании приложений с помощью Visual Studio. Вы создадите настраиваемую конфигурацию сборки, скроете определенные предупреждения и расширите выходные данные сборки для примера приложения.
 
@@ -26,7 +25,7 @@ ms.locfileid: "49942222"
 
 ## <a name="create-a-custom-build-configuration"></a>Создание настраиваемой конфигурации сборки
 
-При создании решения конфигурации отладочной сборки и сборки выпуска и их целевые платформы по умолчанию определяются для решения автоматически. Затем вы можете настроить эти конфигурации или создать собственные. Конфигурации указывают тип сборки. Целевые платформы указывают операционную систему, на которое ориентировано приложение для этой конфигурации. См. дополнительные сведения о [конфигурациях сборки](../ide/understanding-build-configurations.md), [платформах сборки](../ide/understanding-build-platforms.md) и [конфигурациях отладки и выпуска проекта](../debugger/how-to-set-debug-and-release-configurations.md).
+При создании решения конфигурации отладочной сборки и сборки выпуска и их целевые платформы по умолчанию определяются для решения автоматически. Затем вы можете настроить эти конфигурации или создать собственные. Конфигурации указывают тип сборки. Целевые платформы указывают операционную систему, на которое ориентировано приложение для этой конфигурации. Дополнительные сведения см. в разделах [Общие сведения о конфигурациях сборок](../ide/understanding-build-configurations.md), [Общие сведения о платформах сборки](../ide/understanding-build-platforms.md) и [Практическое руководство. Настройка конфигураций отладки и выпуска](../debugger/how-to-set-debug-and-release-configurations.md).
 
 Конфигурации и параметры платформы можно изменять или создавать с помощью диалогового окна **Диспетчер конфигураций**. В этой процедуре вы создадите конфигурацию сборки для тестирования.
 
@@ -66,7 +65,7 @@ ms.locfileid: "49942222"
 
 ### <a name="build-the-solution"></a>Построение решения
 
--   В строке меню последовательно выберите **Сборка**  >  **Собрать решение**.
+- В строке меню последовательно выберите **Сборка**  >  **Собрать решение**.
 
     Окно **Вывод** отображает результат сборки. Сборка успешно завершена.
 
@@ -100,7 +99,7 @@ ms.locfileid: "49942222"
 
 1. Выберите страницу **Сборка** и затем в поле **Отключить предупреждения** укажите номер предупреждения **0168**.
 
-     ![Страница построения, конструктор проектов](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![Страница построения, конструктор проектов](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      Дополнительные сведения см. в разделе [Страница "Сборка" в конструкторе проектов (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -120,7 +119,7 @@ ms.locfileid: "49942222"
 
 3. На странице **Компиляция** установите флажок **Выключить все предупреждения**.
 
-     ![Страница компиляции, конструктор проектов](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![Страница компиляции, конструктор проектов](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      Дополнительные сведения см. в статье [Настройка предупреждений в Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -130,7 +129,7 @@ ms.locfileid: "49942222"
 
    ![Окно выходных данных, предупреждения построения Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   Дополнительные сведения см. в разделе [Практическое руководство. Отключение предупреждений компилятора](../ide/how-to-suppress-compiler-warnings.md).
+   Дополнительные сведения см. в разделе [Как отключить предупреждения компилятора](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Отображение дополнительных сведений о сборке в окне вывода
 
@@ -162,13 +161,13 @@ ms.locfileid: "49942222"
     > [!TIP]
     > В окне **Вывод** можно искать содержимое, отобразив диалоговое окно **Найти** нажатием клавиш **CTRL**+**F**.
 
-Дополнительные сведения см. в статье [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md).
+Дополнительные сведения см. в разделе [Как Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="create-a-release-build"></a>Создание сборки выпуска
 
 Вы можете создать версию примера приложения, оптимизированную для поставки. Для сборки выпуска вы указываете, что исполняемый файл копируется в общую сетевую папку перед запуском сборки.
 
-Дополнительные сведения см. в разделах [Практическое руководство. Изменение выходного каталога сборки](../ide/how-to-change-the-build-output-directory.md) и [Сборка и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
+Дополнительные сведения см. в разделе [Как изменить выходной каталог сборки](../ide/how-to-change-the-build-output-directory.md) и [Сборка и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>Указание сборки выпуска для Visual Basic
 
@@ -193,7 +192,7 @@ ms.locfileid: "49942222"
 
      ![Команда "Построить решение" в меню "Построение"](../ide/media/exploreide-buildsolution.png)
 
-### <a name="specify-a-release-build-for-c"></a>Указание сборки выпуска для C# #
+### <a name="specify-a-release-build-for-c"></a>Указание сборки выпуска для C\#
 
 1. Открывается **Конструктор проектов**.
 
@@ -224,6 +223,6 @@ ms.locfileid: "49942222"
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство. Сборка проекта (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
-- [Общие сведения о предварительной компиляции проектов веб-приложений ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
-- [Пошаговое руководство. Использование MSBuild](../msbuild/walkthrough-using-msbuild.md)
+- [Пошаговое руководство: сборка проекта (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [Общие сведения о предварительной компиляции проектов веб-приложений ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
+- [Пошаговое руководство: использование MSBuild](../msbuild/walkthrough-using-msbuild.md)

@@ -2,18 +2,17 @@
 title: Рабочие области в Visual Studio | Документация Майкрософт
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 3489592a-dc0c-4cd3-9b08-cd367626980a
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d55b773a586d5cb0128599e225dabbadf21d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952767"
 ---
 # <a name="workspaces"></a>Рабочие области
 
@@ -176,9 +175,21 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>SourceExplorerPackage пакет не был правильно загружен
 
-Расширяемость рабочей области во многом на основе MEF, и ошибок композиции приведет размещение открыть папку, чтобы не удалось загрузить пакет. Например, если расширение экспортирует тип с `ExportFileContextProviderAttribute`, но тип реализует только `IWorkspaceProviderFactory<IFileContextActionProvider>`, произойдет ошибка при попытке открыть папку в Visual Studio. Сведения об ошибке можно найти в _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Устраните все ошибки, для типов, реализованная в расширении.
+Расширяемость рабочей области во многом на основе MEF, и ошибок композиции приведет размещение открыть папку, чтобы не удалось загрузить пакет. Например, если расширение экспортирует тип с `ExportFileContextProviderAttribute`, но тип реализует только `IWorkspaceProviderFactory<IFileContextActionProvider>`, произойдет ошибка при попытке открыть папку в Visual Studio.
+
+::: moniker range="vs-2017"
+
+Сведения об ошибке можно найти в _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Устраните все ошибки, для типов, реализованная в расширении.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Сведения об ошибке можно найти в _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Устраните все ошибки, для типов, реализованная в расширении.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Следующие шаги
 
-* [Файл контексты](workspace-file-contexts.md) -поставщики контекста файлов перевести код аналитики для рабочих областей, открыть папку. 
+* [Файл контексты](workspace-file-contexts.md) -поставщики контекста файлов перевести код аналитики для рабочих областей, открыть папку.
 * [Индексирование](workspace-indexing.md) -индексирования рабочей области собирает и сохраняет сведения о рабочем пространстве.

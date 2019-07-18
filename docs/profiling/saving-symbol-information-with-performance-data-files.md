@@ -7,15 +7,15 @@ helpviewer_keywords:
 - profiling tools, packsymbols
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4cc39f8e07ed0947bedc31ba39d74fc8cee742a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0bf78c94f8982af78d0f393c9cb5b878bef27d87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939532"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Сохранение символьной информации с файлами данных профилировщика
 
@@ -61,6 +61,6 @@ VsPerfReport -packsymbols -summary:all имя_файла.vsp
 
 ## <a name="see-also"></a>См. также
 
-[Сохранение и экспорт данных средств производительности](../profiling/saving-and-exporting-performance-tools-data.md)  
-[Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+[Сохранение и экспорт данных средств производительности](../profiling/saving-and-exporting-performance-tools-data.md)
+[Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)
 [VSPerfReport](../profiling/vsperfreport.md)

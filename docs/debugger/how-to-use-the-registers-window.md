@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: afcada407060af2072e3cf1c30e86153762890b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53867583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906005"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Представление значения регистров в окно "Регистры" (C#, C++, Visual Basic, F#)
 
-**Регистрирует** окне отображается содержимое регистров во время отладки Visual Studio. Высокоуровневые введение в принципы использования регистров и **регистрирует** окно, см. в разделе [основы отладки: окно регистров
+**Регистрирует** окне отображается содержимое регистров во время отладки Visual Studio. Высокоуровневые введение в принципы использования регистров и **регистрирует** окно, см. в разделе [основы отладки: Регистрирует окно](../debugger/debugging-basics-registers-window.md).
 
 > [!NOTE]
 > Сведения о регистрах не доступно для скриптов и приложений SQL.
@@ -41,6 +41,8 @@ ms.locfileid: "53867583"
 Во время отладки, зарегистрируйте изменении значений, так как выполняется код в приложении. Значения, которые были изменены, недавно отображаться красным цветом на **регистрирует** окна.
 
 Для упорядочивания регистры в окне **Регистры** объединены в группы, которые зависят от платформы и типа процессора. Можно отобразить или скрыть группы регистров. Дополнительные сведения см. в разделе [Как отображать и скрывать группы регистров](../debugger/how-to-display-and-hide-register-groups.md).
+
+Сведения о флагах, появится в **регистрирует** окно, см. в разделе [о регистрирует окно](../debugger/debugging-basics-registers-window.md)
 
 Значения регистров можно изменять. Дополнительные сведения см. в разделе [Как изменить значение регистра](../debugger/how-to-edit-a-register-value.md).
 

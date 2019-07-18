@@ -1,14 +1,9 @@
 ---
-title: 'CA2115: Вызывайте GC. KeepAlive при использовании машинных ресурсов | Документация Майкрософт'
-ms.custom: ''
+title: CA2115. Вызовите GC. KeepAlive при использовании машинных ресурсов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CallGCKeepAliveWhenUsingNativeResources
 - CA2115
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e8f45b188945febcd3c81fc4be6a9427d8fe94ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c035c05480279012fba1101c3a60b020d34b1890
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948750"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687344"
 ---
-# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: вызывайте GC.KeepAlive при использовании собственных ресурсов
+# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115. Вызывайте GC.KeepAlive при использовании собственных ресурсов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -61,7 +56,7 @@ ms.locfileid: "49948750"
  В следующем примере `BadMethod` не включает вызов `GC.KeepAlive` и таким образом нарушает правило. `GoodMethod` содержит Исправленный код.
 
 > [!NOTE]
->  В этом примере приведен код, несмотря на то, что код компилируется и выполняется, предупреждение не возникает, так как неуправляемый ресурс не при создании или освобождении.
+> В этом примере приведен код, несмотря на то, что код компилируется и выполняется, предупреждение не возникает, так как неуправляемый ресурс не при создании или освобождении.
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 
@@ -69,7 +64,4 @@ ms.locfileid: "49948750"
  <xref:System.GC.KeepAlive%2A?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName>
  <xref:System.Object.Finalize%2A?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>
- [Шаблон ликвидации](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-
+ [Шаблон ликвидации](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

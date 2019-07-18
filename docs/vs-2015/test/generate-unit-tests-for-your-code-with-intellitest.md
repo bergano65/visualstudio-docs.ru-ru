@@ -1,26 +1,21 @@
 ---
 title: Создание модульных тестов для кода с помощью IntelliTest | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6743db0b10d8df4f131f8125b3e2f83bca262054
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 304b26f8724413dceef8126434861bd7128d588c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147290"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Создание модульных тестов для кода с помощью IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +32,9 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 ### <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Изучение. Использование IntelliTest для изучения кода и создания модульных тестов  
  Для формирования модульных тестов типы должны быть открытыми. В противном случае [создайте модульные тесты](#NoRun) перед их формированием.  
   
-1.  Откройте решение в Visual Studio. Затем откройте файл класса с методами, которые следует протестировать.  
+1. Откройте решение в Visual Studio. Затем откройте файл класса с методами, которые следует протестировать.  
   
-2.  Щелкните правой кнопкой мыши метод в коде и выберите пункт **Запустить IntelliTest** , чтобы создать модульные тесты для кода в используемом методе.  
+2. Щелкните правой кнопкой мыши метод в коде и выберите пункт **Запустить IntelliTest** , чтобы создать модульные тесты для кода в используемом методе.  
   
      ![Щелкните правой кнопкой мыши поле в методе, чтобы создать модульные тесты](../test/media/runpex.png "RunPEX")  
   
@@ -55,7 +50,7 @@ IntelliTest изучает код .NET, чтобы создать тестовы
   
 ### <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Сохранение. Сохранение модульных тестов в виде набора регрессий  
   
-1.  Выберите строки данных, которые следует сохранить с параметризованным модульным тестом в тестовый проект.  
+1. Выберите строки данных, которые следует сохранить с параметризованным модульным тестом в тестовый проект.  
   
      ![Выберите тесты; щелкните правой кнопкой мыши и выберите пункт "Сохранить"](../test/media/savepextests.png "SavePEXTests")  
   
@@ -69,13 +64,13 @@ IntelliTest изучает код .NET, чтобы создать тестовы
   
 ### <a name="assist-use-intellitest-to-focus-code-exploration"></a>Помощь. Использование IntelliTest для просмотра кода  
   
-1.  Если у вас имеется более сложный код, IntelliTest поможет сконцентрироваться на просмотре кода. Например, при наличии метода с интерфейсом в виде параметра и более одного класса, который реализует этот интерфейс, IntelliTest обнаружит эти классы и выдаст предупреждение.  
+1. Если у вас имеется более сложный код, IntelliTest поможет сконцентрироваться на просмотре кода. Например, при наличии метода с интерфейсом в виде параметра и более одного класса, который реализует этот интерфейс, IntelliTest обнаружит эти классы и выдаст предупреждение.  
   
      Просмотрите предупреждения, чтобы решить, что следует сделать.  
   
      ![Просмотр предупреждений](../test/media/pexviewwarning.png "PEXViewWarning")  
   
-2.  После изучения кода и выбора цели тестирования можно исправить предупреждение, чтобы выбрать классы для тестирования интерфейса.  
+2. После изучения кода и выбора цели тестирования можно исправить предупреждение, чтобы выбрать классы для тестирования интерфейса.  
   
      ![Щелкните предупреждение правой кнопкой мыши и выберите пункт "Исправить"](../test/media/pexfixwarning.png "PEXFixWarning")  
   
@@ -83,47 +78,47 @@ IntelliTest изучает код .NET, чтобы создать тестовы
   
      `[assembly: PexUseType(typeof(Camera))]`  
   
-3.  Теперь можно перезапустить IntelliTest, чтобы создать параметризованный модульный тест и данные теста c использованием одного только исправленного класса.  
+3. Теперь можно перезапустить IntelliTest, чтобы создать параметризованный модульный тест и данные теста c использованием одного только исправленного класса.  
   
      ![Перезапустите IntelliTest, чтобы создать данные теста](../test/media/pexwarningsfixed.png "PEXWarningsFixed")  
   
 ### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Указание. Использование IntelliTest для проверки правильности свойств, указанных в коде  
  Укажите общую связь между входными и выходными данными, которые должны быть проверены созданными модульными тестами. Эта спецификация инкапсулируется в метод, который подобен методу тестирования, но связан квантором общности. Это метод параметризованного модульного теста, и все утверждения должны сохраняться для всех возможных входных значений, создаваемых IntelliTest.  
   
-##  <a name="QandALink"></a> Вопросы и ответы  
+## <a name="QandALink"></a> Вопросы и ответы  
   
-### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Вопрос. Можно ли использовать IntelliTest для неуправляемого кода?  
+### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Вопрос: Можно ли использовать IntelliTest для неуправляемого кода?  
  **Ответ.** Нет. IntelliTest работает только с управляемым кодом.  
   
-### <a name="q-when-does-a-generated-test-pass-or-fail"></a>Вопрос. Каковы условия выполнения или сбоя созданного теста?  
+### <a name="q-when-does-a-generated-test-pass-or-fail"></a>Вопрос: Каковы условия выполнения или сбоя созданного теста?  
  **Ответ.** Он, как и любой модульный тест, выполняется в случае отсутствия исключений. Сбой происходит при сбое утверждений или если код в тесте вызывает необработанное исключение.  
   
  Если у вас есть тест, который может быть выполнен при возникновении определенных исключений, можно задать один из следующих атрибутов на основе требований в методе тестирования, тестовом классе и уровне сборки:  
   
--   **PexAllowedExceptionAttribute**  
+- **PexAllowedExceptionAttribute**  
   
--   **PexAllowedExceptionFromTypeAttribute**  
+- **PexAllowedExceptionFromTypeAttribute**  
   
--   **PexAllowedExceptionFromTypeUnderTestAttribute**  
+- **PexAllowedExceptionFromTypeUnderTestAttribute**  
   
--   **PexAllowedExceptionFromAssemblyAttribute**  
+- **PexAllowedExceptionFromAssemblyAttribute**  
   
-### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>Вопрос. Можно ли добавить допущения в параметризованный модульный тест?  
+### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>Вопрос: Можно ли добавить допущения в параметризованный модульный тест?  
  **Ответ.** Да, используйте допущения, чтобы указать, какие данные теста не нужны для модульного теста при использовании определенного метода. Используйте класс <xref:Microsoft.Pex.Framework.PexAssume> для добавления допущений. Например, можно добавить допущение, что переменная длин не является NULL в отличие от этой.  
   
  `PexAssume.IsNotNull(lengths);`  
   
  Если добавляется допущение и перезапускается IntelliTest, тестовые данные, которые больше не нужны, будут удалены.  
   
-### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>Вопрос. Можно ли добавить утверждения в параметризованный модульный тест?  
+### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>Вопрос: Можно ли добавить утверждения в параметризованный модульный тест?  
  **Ответ.** Да, IntelliTest проверит правильность утверждения в операторе при запуске модульных тестов. Для добавления утверждений используйте класс <xref:Microsoft.Pex.Framework.PexAssert> или API утверждения, входящий в состав платформы тестирования. Например, можно добавить утверждение о равенстве двух переменных.  
   
  `PexAssert.AreEqual(a, b);`  
   
  Если добавляется допущение и перезапускается IntelliTest, инструмент проверяет допустимость утверждения. Если утверждение недопустимо, происходит сбой теста.  
   
-###  <a name="NoRun"></a> В. Можно ли создавать параметризованные модульные тесты, не запуская предварительно IntelliTest?  
- **О** . Да, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**.  
+### <a name="NoRun"></a> Вопрос. Можно ли создавать параметризованные модульные тесты, не запуская предварительно IntelliTest?  
+ **Ответ.** Да, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**.  
   
  ![Щелкните редактор правой кнопкой мыши и выберите пункт "Создать IntelliTest"](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  
   
@@ -131,15 +126,12 @@ IntelliTest изучает код .NET, чтобы создать тестовы
   
  ![Создание IntelliTest с MSTest по умолчанию](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
   
-### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>В. Можно ли использовать другие платформы модульного тестирования с IntelliTest?  
- **О** . Да, выполните инструкции по [поиску и установке других платформ](../test/install-third-party-unit-test-frameworks.md). Перезапустив Visual Studio и открыв решение повторно, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**. Выберите установленную платформу здесь:  
+### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Вопрос: Можно ли использовать другие платформы модульного тестирования с IntelliTest?  
+ **Ответ.** Да, выполните инструкции по [поиску и установке других платформ](../test/install-third-party-unit-test-frameworks.md). Перезапустив Visual Studio и открыв решение повторно, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**. Выберите установленную платформу здесь:  
   
  ![Выбор другой платформы модульного тестирования для IntelliTest](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")  
   
  Затем запустите IntelliTest, чтобы сформировать отдельные модульные тесты в соответствующих файлах G.CS.  
   
-### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Вопрос. Можно получить более подробную информацию о создании тестов?  
- **О** . Да, общий обзор приведен в этой [записи блога](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).
-
-
-
+### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Вопрос: Можно получить более подробную информацию о создании тестов?  
+ **Ответ.** Да, общий обзор приведен в этой [записи блога](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).

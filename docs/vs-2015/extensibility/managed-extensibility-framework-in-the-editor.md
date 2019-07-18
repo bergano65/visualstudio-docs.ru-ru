@@ -1,26 +1,21 @@
 ---
 title: Managed Extensibility Framework в редакторе | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - using MEF for extensions
 ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 41d5768c8cfddc3474616d7a2eee16b84cd24d56
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f19b71c86d972b59a9d46f379bf7ec93f63aeb9a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754702"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679958"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework в редакторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51754702"
   
  MEF содержится в сборке .NET Framework версии 4 System.ComponentModel.Composition.dll.  
   
- Дополнительные сведения о MEF см. в разделе [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+ Дополнительные сведения о MEF см. в разделе [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ### <a name="component-parts-and-composition-containers"></a>Компоненты и контейнеры композиций  
  В компоненте — это класс или член класса, который можно выполнить один (или оба) из следующих:  
@@ -89,26 +84,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
   
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Для использования функциональных от части компонентов MEF  
   
-1.  Добавьте ссылки System.Composition.ComponentModel.dll, располагающийся в глобальный кэш сборок (GAC), и редактор сборок.  
+1. Добавьте ссылки System.Composition.ComponentModel.dll, располагающийся в глобальный кэш сборок (GAC), и редактор сборок.  
   
-2.  Добавьте соответствующую операторы using.  
+2. Добавьте соответствующую операторы using.  
   
     ```  
     using System.ComponentModel.Composition;  
     using Microsoft.VisualStudio.Text;  
     ```  
   
-3.  Добавление `[Import]` атрибут интерфейсу службы, следующим образом.  
+3. Добавление `[Import]` атрибут интерфейсу службы, следующим образом.  
   
     ```  
     [Import]  
     ITextBufferFactoryService textBufferService;  
     ```  
   
-4.  Когда вы получили службу, вы можете использовать один из его компонентов.  
+4. Когда вы получили службу, вы можете использовать один из его компонентов.  
   
-5.  При компиляции сборки, поместите его... \Common7\IDE\Components\ папка установки Visual Studio.  
+5. При компиляции сборки, поместите его... \Common7\IDE\Components\ папка установки Visual Studio.  
   
 ## <a name="see-also"></a>См. также  
  [Языковая служба и точки расширения редактора](../extensibility/language-service-and-editor-extension-points.md)
-

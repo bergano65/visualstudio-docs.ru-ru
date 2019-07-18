@@ -1,30 +1,25 @@
 ---
 title: Выполнение быстрых действий с лампочками | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 990ee487-cf9a-4b89-9784-e7b47c220e8c
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3eff05df37dd1d15774fb059396f3f94b0fff2a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 74237b42ebafb82e82705d42174efb6f6a4d3661
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203730"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Выполнение быстрых действий с лампочками
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Лампочки являются новой возможностью повышения производительности в Visual Studio 2015. Они представляют собой значки, которые отображаются в редакторе Visual Studio и которые можно щелкнуть для выполнения быстрых действий, включая рефакторинг и исправление ошибок. Лампочки облегчают исправление ошибок и рефакторинг в одной фокальной точке — часто непосредственно в строке, где выполняется ввод текста.  
+Лампочки являются новой функцией повышения производительности в Visual Studio 2015. Они представляют собой значки, которые отображаются в редакторе Visual Studio и которые можно щелкнуть для выполнения быстрых действий, включая рефакторинг и исправление ошибок. Лампочки облегчают исправление ошибок и рефакторинг в одной фокальной точке — часто непосредственно в строке, где выполняется ввод текста.  
   
  ![Маленький значок лампочки](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")  
   
@@ -47,6 +42,3 @@ ms.locfileid: "49883462"
  Вы все еще можете выполнить рефакторинг, вызвав контекстное меню щелчком правой кнопки мыши или нажав клавиши CTRL + . для отображения параметров рефакторинга. На следующем изображении предлагается выполнить рефакторинг метода извлечения после нажатия клавиш CTRL + . в любом месте строки, содержащей вызов `Math.Abs`:  
   
  ![Лампочка с отображением параметров рефакторинга](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")
-
-
-

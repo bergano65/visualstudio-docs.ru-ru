@@ -1,24 +1,23 @@
 ---
-title: Возможности оболочки конструктора рабочих процессов
+title: Функции оболочки конструктора рабочих процессов
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aaac9c6148aee2b39d0231f7b893bcfaf89e301
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4519be8ec5c5d4ba8a611df1880ae770a83cf981
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433868"
 ---
-# <a name="workflow-designer-shell-features"></a>Возможности оболочки конструктора рабочих процессов
+# <a name="workflow-designer-shell-features"></a>Функции оболочки конструктора рабочих процессов
 
 Конструктор рабочих процессов состоит из трех основных областей пользовательского интерфейса: область конструктора, строкой навигатора над ней и оболочкой под ней. Строка навигатора, размещенная в верхней части экрана, используется для отображения предков текущего корневого действия. Дополнительные сведения см. в разделе [Как Использовать Навигатор](../workflow-designer/how-to-use-breadcrumb-navigation.md). Область конструктора, расположенная в центре экрана, используется для создания рабочих процессов. Оболочка, расположенная в нижней части экрана, содержит несколько кнопок, предназначенных для управления текущим представлением.
 

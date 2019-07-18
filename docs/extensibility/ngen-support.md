@@ -3,17 +3,17 @@ title: Поддержка NGen в VSIX v3 | Документация Майкр�
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf5f6366514fb18074d253b788c9cf67f1d297a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24f1b0a26875bbbf8dfc4ac7db1049f7309d9aa2
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835056"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891118"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Поддержка NGen в VSIX v3
 
@@ -55,9 +55,10 @@ ms.locfileid: "53835056"
     <NgenArchitecture>X86</NgenArchitecture>
     <NgenPriority>2</NgenPriority>
 </ProjectReference>
- ```
+```
 
- >**Примечание.** Можно изменить CSPROJ-файл напрямую, если вы предпочитаете.
+> [!NOTE]
+> Можно изменить CSPROJ-файл напрямую, если вы предпочитаете.
 
 ## <a name="extra-information"></a>Дополнительные сведения
 

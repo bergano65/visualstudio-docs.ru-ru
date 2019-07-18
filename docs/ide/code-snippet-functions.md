@@ -1,7 +1,6 @@
 ---
 title: Функции фрагмента кода
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cf31fed530447af986d96418d06cf46f02b14b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60453b6842dd321b7c85c2837e12b1208adb18f9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974973"
 ---
 # <a name="code-snippet-functions"></a>Функции фрагмента кода
 
@@ -30,11 +29,11 @@ ms.locfileid: "53907817"
 
 |Функция|Описание|Язык|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Формирует оператор switch и набор операторов case для членов перечисления, заданных параметром `EnumerationLiteral`. Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|C#|
+|`GenerateSwitchCases(EnumerationLiteral)`|Формирует оператор switch и набор операторов case для членов перечисления, заданных параметром `EnumerationLiteral`. Параметр `EnumerationLiteral` должен быть ссылкой на литерал перечисления или тип перечисления.|C#|
 |`ClassName()`|Возвращает имя класса, содержащего вставленный фрагмент кода.|C#|
-|`SimpleTypeName(` `TypeName` `)`|Редуцирует параметр *TypeName* до его простейшей формы в контексте, в котором был вызван фрагмент.|C#|
+|`SimpleTypeName(TypeName)`|Редуцирует параметр *TypeName* до его простейшей формы в контексте, в котором был вызван фрагмент.|C#|
 
-## <a name="example"></a>Пример
+## <a name="generateswitchcases-example"></a>Пример GenerateSwitchCases
 
 В следующем примере показано, как использовать функцию `GenerateSwitchCases`. При вставке данного фрагмента и вводе перечисления в литерал `$switch_on$` литерал `$cases$` создает оператор `case` для каждого значения в перечислении.
 
@@ -76,7 +75,7 @@ ms.locfileid: "53907817"
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Пример
+## <a name="classname-example"></a>Пример ClassName
 
 В следующем примере показано, как использовать функцию `ClassName`. При вставке этого фрагмента литерал `$classname$` заменяется именем включающего класса в этом месте файла кода.
 
@@ -123,7 +122,7 @@ ms.locfileid: "53907817"
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Пример
+## <a name="simpletypename-example"></a>Пример SimpleTypeName
 
 Этот пример показывает, как использовать функцию `SimpleTypeName`. При вставке этого фрагмента в файл кода литерал `$SystemConsole$` заменяется простейшей формой типа <xref:System.Console> в контексте, в котором фрагмент был вызван.
 

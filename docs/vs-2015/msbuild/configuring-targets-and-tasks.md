@@ -1,30 +1,24 @@
 ---
 title: Настройка целевых объектов и задач | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1bb82483b0adef6343423984e3b0d6fa21d0d678
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9d3ed6456ecf4ca226368338078247a10d80cee3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196596"
 ---
 # <a name="configuring-targets-and-tasks"></a>Настройка целевых платформ и задач
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Целевые объекты и задачи MSBuild можно настроить для внепроцессного выполнения с помощью MSBuild, чтобы можно было определять целевые контексты, отличные от того, в котором идет выполнение. Например, на компьютере с 64-разрядной операционной системой и .NET Framework 4.5 можно создать приложение .NET Framework 2.0, предназначенное для 32-разрядной платформы. Вы также можете ориентироваться на компьютеры, где запущена платформа .NET Framework 4 или более ранней версии. Сочетание 32- или 64-разрядности и конкретной версии .NET Framework называется *целевым контекстом*.  
   
 ## <a name="installation"></a>Установка  
@@ -39,6 +33,3 @@ ms.locfileid: "49263520"
   
 ## <a name="see-also"></a>См. также  
  [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

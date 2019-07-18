@@ -1,14 +1,9 @@
 ---
 title: Пользовательские инструменты | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, custom tools
 - tools [Visual Studio], custom
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98dce865af4dd1f8498dcd697b53abdb8608abed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 594d564cf4a18eb0b673abd9b45b7d70e20381b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196922"
 ---
 # <a name="custom-tools"></a>Настраиваемые средства
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,4 +57,3 @@ ms.locfileid: "51793429"
 ## <a name="related-sections"></a>Связанные разделы  
  [Расширение проектов](../../extensibility/extending-projects.md)  
  Описывается использование проектов и решений [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] для организации файлов кода и файлов ресурсов, а также реализация системы управления версиями.
-

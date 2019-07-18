@@ -1,28 +1,22 @@
 ---
 title: Создание вложенных фигур | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 53066a5d-5b0c-4f60-adf1-60ac81cb9ab1
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56bb1d8ae0fb55abac98776a8bc158ff6adbd5d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d955f5df46b93c3d0bbd407424bdfd3e9d633d6b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158908"
 ---
 # <a name="nesting-shapes"></a>Создание вложенных фигур
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 См. в разделе [Jean-Marc Prieur блог](http://blogs.msdn.com/b/jmprieur/archive/2008/09/03/dsl-tools-support-of-nested-shapes-in-visual-studio-2008-sp1.aspx)
-
-
-

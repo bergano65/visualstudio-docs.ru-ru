@@ -2,19 +2,18 @@
 title: Часто задаваемые вопросы об инструментах R в Visual Studio
 description: Часто задаваемые вопросы об R в Visual Studio.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 1da67a213ed1add0ce670ca133163538e2cde1b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b67a82a286e3772d87c4cc1ad06a6b8099205c73
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550531"
 ---
 # <a name="frequently-asked-questions"></a>Вопросы и ответы
 

@@ -1,17 +1,17 @@
 ---
 title: Отладка — визуализации данных
 description: Отладка — это типичная и неотъемлемая часть программирования. Visual Studio для Mac предоставляет обширный набор функций для облегчения отладки. Эта статья рассматривает различные визуализации данных, которые можно просматривать при проверке объектов в отладчике.
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349443"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691734"
 ---
 # <a name="data-visualizations"></a>Визуализации данных
 
@@ -48,7 +48,7 @@ Rectangle/RectangleF или CGRect в iOS и Mac отображает разме
 
 ![Визуализация цветов](media/data-visualizations-image14.png)
 
-## <a name="images"></a>Изображения
+## <a name="images"></a>Образы
 
 Носитель отрисовывается в масштабе вплоть до максимального размера 250 пикселей, после чего масштабируется для сохранения размера:
 
@@ -88,18 +88,18 @@ IEnumerable перечисляет все значения, каждое из к
 
 ![Другая визуализация](media/data-visualizations-image23.png)
 
-*   **Примитивы**
-    *   Показывает необработанное значение типа примитива.
-*   **Enum**
-    *   Отображает значение поля без квалификатора Type перечисления.
-*   **Tuple**
-    *   Отображается в формате (,).
-*   **Null**
-    *   Отображает значение "null".
-*   **URL**
-    *   Отображает активную гиперссылку.
-*   **IntPtr**
-    *   Отображает шестнадцатеричное представление IntPtr.
+* **Примитивы**
+  * Показывает необработанное значение типа примитива.
+* **Enum**
+  * Отображает значение поля без квалификатора Type перечисления.
+* **Tuple**
+  * Отображается в формате (,).
+* **Null**
+  * Отображает значение "null".
+* **URL**
+  * Отображает активную гиперссылку.
+* **IntPtr**
+  * Отображает шестнадцатеричное представление IntPtr.
 
 ## <a name="see-also"></a>См. также
 

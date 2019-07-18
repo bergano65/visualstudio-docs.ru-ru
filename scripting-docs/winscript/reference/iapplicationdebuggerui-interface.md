@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IApplicationDebuggerUI | Документы Microsoft
+title: Интерфейс IApplicationDebuggerUI | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbaa04f6790ffc4d80447a6745ca82cc8dba6802
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f138492e5b0a465bb0f101c15457ed1021ab3d5a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991094"
 ---
 # <a name="iapplicationdebuggerui-interface"></a>Интерфейс IApplicationDebuggerUI
-Реализуемый отладчик интегрированной среды разработки (IDE) (в дополнение к `IApplicationDebugger`) для предоставления больший контроль над пользовательского интерфейса (UI) отладчик внешнего компонента.  
+Реализуемый отладчик интегрированной среде разработки (IDE) (в дополнение к `IApplicationDebugger`) для предоставления внешнего компонента больший контроль над пользовательский интерфейс (UI) отладчика.  
   
  Помимо методов, наследуемых от `IUnknown`, `IApplicationDebuggerUI` интерфейс предоставляет следующие методы.  
   
@@ -30,5 +29,5 @@ ms.locfileid: "24725144"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Переводит окно, содержащее документ указанный отладки отладчик в верхнюю часть пользовательского интерфейса.|  
-|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Переводит окно, содержащее контекст данного документа в верхнюю часть пользовательского интерфейса отладчика и Прокручивает окно до контекста.|
+|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Открывает окно, содержащее документ указанный отладки отладчик в верхнюю часть пользовательского интерфейса.|  
+|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Предоставляет окно, содержащее контекст заданного документа в верхнюю часть пользовательского интерфейса отладчика и прокрутка окна к контексту.|

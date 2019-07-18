@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Программное отображение строки в ячейке листа
+title: Практическое руководство. Программное отображение строки в ячейке листа
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -8,46 +8,46 @@ dev_langs:
 helpviewer_keywords:
 - text [Office development in Visual Studio], adding to worksheets
 - worksheets, displaying text in cells
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 021fe02e501fc5a8921ec8f2a50329653ca45401
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9760d019fa80d4ecae63633c38ac9df60932202
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813027"
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Как выполнить Программное отображение строки в ячейке листа
-  В этом примере показано, как для отображения текста в ячейке программными средствами. Для отображения текста в ячейке, используйте <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="use-a-namedrange-control"></a>Использование элемента управления NamedRange  
- В этом примере используется <xref:Microsoft.Office.Tools.Excel.NamedRange> управления с именем `message`. Элемент управления необходимо добавить в настройку уровня документа во время разработки. Следующий код должен быть помещен в классе листа, не в `ThisWorkbook` класса.  
-  
-### <a name="to-display-text-in-a-namedrange-control"></a>Для отображения текста в элементе управления NamedRange  
-  
-1.  Установите для параметра <xref:Microsoft.Office.Tools.Excel.NamedRange> управления **Hello World**.  
-  
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Практическое руководство. Программное отображение строки в ячейке листа
+  В этом примере показано, как для отображения текста в ячейке программными средствами. Для отображения текста в ячейке, используйте <xref:Microsoft.Office.Tools.Excel.NamedRange> элемента управления или собственный объект диапазона Excel.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="use-a-namedrange-control"></a>Использование элемента управления NamedRange
+ В этом примере используется <xref:Microsoft.Office.Tools.Excel.NamedRange> управления с именем `message`. Элемент управления необходимо добавить в настройку уровня документа во время разработки. Следующий код должен быть помещен в классе листа, не в `ThisWorkbook` класса.
+
+### <a name="to-display-text-in-a-namedrange-control"></a>Для отображения текста в элементе управления NamedRange
+
+1. Установите для параметра <xref:Microsoft.Office.Tools.Excel.NamedRange> управления **Hello World**.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
-     [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]  
-  
-## <a name="use-a-native-excel-range"></a>Используйте собственный диапазон Excel  
- Следующий код создает новый диапазон программным образом и присваивает ему значение.  
-  
-### <a name="to-display-text-in-an-excel-range"></a>Для отображения текста в диапазон Excel  
-  
-1.  Получить диапазон в ячейку **A1** на `Sheet1` и задайте значение **Hello World**.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]
+
+## <a name="use-a-native-excel-range"></a>Используйте собственный диапазон Excel
+ Следующий код создает новый диапазон программным образом и присваивает ему значение.
+
+### <a name="to-display-text-in-an-excel-range"></a>Для отображения текста в диапазон Excel
+
+1. Получить диапазон в ячейку **A1** на `Sheet1` и задайте значение **Hello World**.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
-     [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]  
-  
-## <a name="see-also"></a>См. также  
- [Пошаговое руководство: Сбор данных с использованием формы Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
- [Устранение неполадок решений Office](../vsto/troubleshooting-office-solutions.md)   
- [Элемент управления NamedRange](../vsto/namedrange-control.md)   
- [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)   
- [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
+
+## <a name="see-also"></a>См. также
+- [Пошаговое руководство: Сбор данных с использованием формы Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
+- [Устранение неполадок решений Office](../vsto/troubleshooting-office-solutions.md)
+- [Элемент управления NamedRange](../vsto/namedrange-control.md)
+- [Глобальный доступ к объектам в проектах Office](../vsto/global-access-to-objects-in-office-projects.md)
+- [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], troubleshooting
 - Office development in Visual Studio, troubleshooting
 - deploying applications [Office development in Visual Studio], troubleshooting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d6dc3a871389b8b7624b31a4f2a4d3e4e185865
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947261"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821300"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Устранение неполадок с развертыванием решения Office
   В этом разделе содержатся сведения об устранении неполадок, которые могут возникнуть при развертывании решений Office.
@@ -43,11 +43,11 @@ ms.locfileid: "53947261"
 
 #### <a name="to-set-the-time-out-value"></a>Установка значения времени ожидания.
 
-1.  В реестре перейдите в следующий раздел:
+1. В реестре перейдите в следующий раздел:
 
      **HKEY_CURRENT_USER\Software\Microsoft\VSTA**
 
-2.  В подразделе **AddInTimeout** задайте значение времени ожидания в миллисекундах.
+2. В подразделе **AddInTimeout** задайте значение времени ожидания в миллисекундах.
 
      Если подраздел **AddInTimeout** не существует, создайте его как DWORD.
 
@@ -73,9 +73,12 @@ ms.locfileid: "53947261"
 
 2. На странице **Приложения** выберите **Сведения о сборке**.
 
-3. В первом **версии сборки** введите звездочку (\*), а затем выберите **ОК** кнопки.
+3. Номер редакции, третье поле набор **версии сборки**, чтобы подстановочного знака (\*). Например «1.0. *».  Затем выберите **ОК** кнопки.
 
    После изменения версии сборки вы можете продолжить подписывать сборку строгим именем, и Fusion будет загружать последнюю версию настройки.
+
+ [!NOTE]
+> Начиная с Visual Studio 2017, если вы попытаетесь использовать подстановочные знаки в версии сборки ошибку построения будет выполняться.  Это обусловлено подстановочных знаков в версии сборки приведет к разрыву MSBuild детерминированные функции. Вам будет предложено удалить подстановочные знаки из версии сборки, либо отключите детерминизм.  Чтобы узнать больше о детерминированные функции см. в разделе: [Общие свойства проектов MSBuild](../msbuild/common-msbuild-project-properties.md) и [Настройка сборки](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Если в URI входят символы, которые не являются US-ASCII, происходит сбой установки
  При публикации решения Office в расположении HTTP, HTTPS и FTP путь не может содержать какие-либо символы Юникода, не входящие в набор US-ASCII. Такие символы могут привести к непредсказуемому поведению программы установки. Используйте для пути установки только символы US-ASCII.
@@ -118,11 +121,11 @@ ms.locfileid: "53947261"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>Не удается установить решение Office путем открытия манифеста развертывания из Интернета
  Пользователи могут установить решение Office путем открытия манифеста развертывания из Интернета. Однако в некоторых установках Internet Information Services (IIS) блокирует *.vsto* расширение имени файла. Прежде чем использовать его для развертывания решения Office, необходимо определить тип MIME в IIS.
 
- Сведения о том, как задать тип MIME в IIS 7, см. в разделе [Добавление типа MIME (IIS7)](http://technet.microsoft.com/library/cc725608(WS.10).aspx).
+ Сведения о том, как задать тип MIME в IIS 7, см. в разделе [Добавление типа MIME (IIS7)](https://technet.microsoft.com/library/cc725608(WS.10).aspx).
 
  Установите **.vsto** в качестве расширения и **application/x-ms-vsto**в качестве типа MIME.
 
 ## <a name="see-also"></a>См. также
 
-- [Устранение неполадок развертывания ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+- [Устранение неполадок развертываний ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Развертывание решения Office](../vsto/deploying-an-office-solution.md)

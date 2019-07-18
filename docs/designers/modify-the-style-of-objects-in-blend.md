@@ -1,19 +1,18 @@
 ---
 title: Изменение стиля объектов в Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd8b8d9b3f9a12fa69cf708b0f7a3b16bae83d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845308"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Изменение стиля объектов в Blend
 
@@ -79,13 +78,13 @@ ms.locfileid: "53906791"
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Применение стиля или шаблона к элементу управления
 
-Щелкните правой кнопкой мыши объект на панели [Объекты и временная шкала](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-objects-and-timeline-panel), выберите элемент **Изменить шаблон**, а затем нажмите кнопку **Применить ресурс**.
+Щелкните правой кнопкой мыши объект в окне [Объекты и временная шкала](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), выберите элемент **Изменить шаблон**, а затем нажмите кнопку **Применить ресурс**.
 
 ![Меню "Применить ресурс"](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Восстановление стиля или шаблона элемента управления по умолчанию
 
-Выберите элемент управления и на панели [Свойства](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) найдите свойство **Стиль** или **Шаблон**. Выберите **Дополнительные параметры**, а затем выберите в контекстном меню пункт **Сброс**.
+Выберите элемент управления и в окне [Свойства](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window), найдите свойство **Стиль** или **Шаблон**. Выберите **Дополнительные параметры**, а затем выберите в контекстном меню пункт **Сброс**.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Визуальные состояния. Изменение внешнего вида элемента управления в зависимости от его состояния
 

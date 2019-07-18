@@ -1,24 +1,19 @@
 ---
-title: Пример расширения Excel. Класс TechnologyManager | Документы Майкрософт
-ms.custom: ''
+title: Пример расширения Excel. Класс TechnologyManager | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64632c175b44a370d7dcaf48e7c0a8cee766a4ab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192508"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Пример расширения Excel. Класс TechnologyManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +38,15 @@ ms.locfileid: "49190584"
 ## <a name="methods-to-get-an-element"></a>Методы получения элемента  
  Платформа закодированных тестов пользовательского интерфейса использует несколько важных методов для получения относящегося к технологии элемента путем указания дескриптора, точки на экране или элемента из другой технологии. Код этих методов понятен без объяснений. Базовые методы перечислены ниже.  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
   
 ## <a name="parsequeryid-method"></a>Метод ParseQueryId  
  При создании закодированного теста пользовательского интерфейса можно указать значения свойств для некоторых или всех элементов управления в тесте. Эти значения используются средой тестирования для создания пар "имя-значение", которые называются свойствами поиска и применяются для поиска определенных элементов управления пользовательского интерфейса в процессе выполнения теста. Это переопределение метода <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> возвращает число, обозначающее уровень поддержки, который диспетчер технологий обеспечивает для элемента управления, представленного указанным дескриптором. Так как поиск элемента управления может выполняться несколько раз в течение теста, этот метод предоставляет диспетчеру технологий способ оптимизации синтаксического анализа свойств поиска для данного элемента управления. Этот метод также возвращает файл cookie, который может использоваться платформой для последующих поисков элемента управления. В этой реализации метода для синтаксического анализа свойств поиска используется метод <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName>.  
@@ -72,6 +67,3 @@ ms.locfileid: "49190584"
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A>   
  [Расширение закодированных тестов пользовательского интерфейса и записей действий для поддержки Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

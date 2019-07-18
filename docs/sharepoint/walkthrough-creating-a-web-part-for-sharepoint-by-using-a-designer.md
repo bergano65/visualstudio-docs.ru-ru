@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора | Документация Майкрософт
+title: Создание веб-части для SharePoint с помощью конструктора
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designer
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 146a1722f240895e0f508b0474df72f6f5f84ece
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9963c2f7e829e9d295ca254aa651e37e3ad08efd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870918"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401148"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Пошаговое руководство. Создание веб-части для SharePoint с помощью конструктора
 
@@ -81,7 +81,7 @@ ms.locfileid: "53870918"
 
 5. В конструкторе выберите **Button1** кнопки.
 
-6. В строке меню выберите **представление** > **окно "Свойства"**.
+6. В строке меню выберите **представление** > **окно "Свойства"** .
 
      **Свойства** откроется окно.
 
@@ -187,6 +187,6 @@ ms.locfileid: "53870918"
 
 ## <a name="see-also"></a>См. также
 
-[Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Практическое руководство. Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Создание веб-частей для SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+[как: Создание веб-части SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
 [Пошаговое руководство: Создание веб-части для SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

@@ -1,25 +1,20 @@
 ---
 title: Вариант сжатия текстур BC | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 818998511a4ef8b7f10b8225e71b414edafd9769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161701"
 ---
 # <a name="bc-texture-compression-variant"></a>Вариант сжатия текстур BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +31,13 @@ ms.locfileid: "51736564"
   
 - Объект `D3D11_TEXTURE2D_DESC`, передаваемый в `pDesc`, описывает неизменяемый ресурс шейдера, то есть:  
   
-  -   Для члена BindFlags установлен только флаг D3D11_BIND_SHADER_RESOURCE.  
+  - Для члена BindFlags установлен только флаг D3D11_BIND_SHADER_RESOURCE.  
   
-  -   Для члена Usage установлен флаг D3D11_USAGE_DEFAULT или D3D11_USAGE_IMMUTABLE.  
+  - Для члена Usage установлен флаг D3D11_USAGE_DEFAULT или D3D11_USAGE_IMMUTABLE.  
   
-  -   Член CPUAccessFlags имеет значение 0 (нет доступа к ЦП).  
+  - Член CPUAccessFlags имеет значение 0 (нет доступа к ЦП).  
   
-  -   Для члена SamplerDesc член Count имеет значение 1 (многовыборочное сглаживание (MSAA) не применяется).  
+  - Для члена SamplerDesc член Count имеет значение 1 (многовыборочное сглаживание (MSAA) не применяется).  
   
 - Исходные данные передаются в вызов метода `CreateTexture2D`.  
   
@@ -70,6 +65,3 @@ ms.locfileid: "51736564"
   
 ## <a name="see-also"></a>См. также  
  [Вариант размера текстур: половина/четверть](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

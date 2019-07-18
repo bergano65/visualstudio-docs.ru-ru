@@ -1,20 +1,19 @@
 ---
 title: Отображение данных в Blend
 ms.date: 03/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cae026f0b4a7be3a0ed9a389f3f6d9b8a6a911f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a17f3db9aac8128218f82d3faa3ff1b62f9822a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898015"
 ---
 # <a name="display-data-in-blend"></a>Отображение данных в Blend
 

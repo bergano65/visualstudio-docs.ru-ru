@@ -8,15 +8,15 @@ helpviewer_keywords:
 - performance tools, performance session properties
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a6cf897d0181717439f7ae3ac6afccb469b06f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798376"
 ---
 # <a name="performance-session-properties"></a>Свойства сеанса анализа производительности
 
@@ -38,7 +38,7 @@ ms.locfileid: "53961917"
 
 [Сбор данных о выделении памяти для объектов .NET и времени их жизни](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Практическое руководство. Настройка параметров имени файла с данными о производительности](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Практическое руководство. Настройка параметров имени файла с данными о производительности](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Launch
 
@@ -111,6 +111,6 @@ ms.locfileid: "53961917"
 
 ## <a name="see-also"></a>См. также
 
-[Разделы общих сведений](../profiling/overviews-performance-tools.md)  
-[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)  
+[Обзоры](../profiling/overviews-performance-tools.md)
+[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
 [Управление сбором данных](../profiling/controlling-data-collection.md)

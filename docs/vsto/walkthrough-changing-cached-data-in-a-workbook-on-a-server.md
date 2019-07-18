@@ -11,17 +11,17 @@ helpviewer_keywords:
 - server-side data access [Office development in Visual Studio]
 - data [Office development in Visual Studio], accessing on server
 - documents [Office development in Visual Studio], server-side data access
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8977267ba8acadf1105fc0f1608339301b737476
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f9bd70b2f89f748e1af9f4b291ecf1bddb4cc6c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881332"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824285"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Пошаговое руководство. Изменение кэшированных данных в книгу на сервере
   В этом пошаговом руководстве показано, как изменить набор данных, который кэшируется в книге Microsoft Office Excel без запуска Excel с помощью <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> класса.
@@ -43,41 +43,41 @@ ms.locfileid: "53881332"
   Несмотря на то, что в этом пошаговом руководстве предполагается, что код выполняется на компьютере разработчика, код, рассмотренные в этом пошаговом руководстве можно использовать на сервере, который не установлен Excel.
 
 > [!NOTE]
->  Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Отображаемые на компьютере имена или расположения некоторых элементов пользовательского интерфейса Visual Studio могут отличаться от указанных в следующих инструкциях. Это зависит от имеющегося выпуска Visual Studio и используемых параметров. Дополнительные сведения см. в разделе [Персонализация интегрированной среды разработки Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Предварительные требования
  Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Доступ к запущенному экземпляру Microsoft SQL Server или Microsoft SQL Server Express, имеющий пример базы данных AdventureWorksLT, подключенные к ней. Можно загрузить базу данных AdventureWorksLT с [веб-сайте CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Дополнительные сведения о подключении базы данных см. в следующих разделах:
+- Доступ к запущенному экземпляру Microsoft SQL Server или Microsoft SQL Server Express, имеющий пример базы данных AdventureWorksLT, подключенные к ней. Можно загрузить базу данных AdventureWorksLT с [веб-сайте CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Дополнительные сведения о подключении базы данных см. в следующих разделах:
 
-    -   Присоединение базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express, см. в разделе [как: Присоединение базы данных (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Присоединение базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express, см. в разделе [как: Присоединение базы данных (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Присоединение базы данных с помощью командной строки, см. в разделе [как: Добавить файл базы данных для SQL Server Express](/previous-versions/sql/).
+  - Присоединение базы данных с помощью командной строки, см. в разделе [как: Добавить файл базы данных для SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Создайте проект библиотеки классов, который определяет набор данных
  Чтобы использовать тот же набор данных в проекте книги Excel и консольное приложение, необходимо определить набор данных в отдельной сборке, на который ссылается оба проекта. В этом пошаговом руководстве необходимо определите набор данных в проекте библиотеки классов.
 
 ### <a name="to-create-the-class-library-project"></a>Чтобы создать проект библиотеки классов
 
-1.  Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Запустите [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
+2. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.
 
-3.  В области шаблонов разверните узел **Visual C#** или **Visual Basic**, а затем нажмите кнопку **Windows**.
+3. В области шаблонов разверните узел **Visual C#** или **Visual Basic**, а затем нажмите кнопку **Windows**.
 
-4.  В списке шаблонов проектов выберите **библиотеки классов**.
+4. В списке шаблонов проектов выберите **библиотеки классов**.
 
-5.  В **имя** введите **AdventureWorksDataSet**.
+5. В **имя** введите **AdventureWorksDataSet**.
 
-6.  Нажмите кнопку **Обзор**, перейдите к вашей *документов %UserProfile%\My* (для Windows XP и более ранних версий) или *%UserProfile%\Documents* (для Windows Vista) папки, а затем нажмите кнопку **Выберите папку**.
+6. Нажмите кнопку **Обзор**, перейдите к вашей *документов %UserProfile%\My* (для Windows XP и более ранних версий) или *%UserProfile%\Documents* (для Windows Vista) папки, а затем нажмите кнопку **Выберите папку**.
 
-7.  В **новый проект** диалоговое окно, убедитесь, что **создать каталог для решения** флажок не установлен.
+7. В **новый проект** диалоговое окно, убедитесь, что **создать каталог для решения** флажок не установлен.
 
-8.  Нажмите кнопку **ОК**.
+8. Нажмите кнопку **ОК**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **AdventureWorksDataSet** проект **обозревателе решений** и открывает **Class1.cs** или **Class1.vb** файл кода.
 
@@ -104,7 +104,7 @@ ms.locfileid: "53881332"
 
 6. На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.
 
-7. В **Choose Your Database Objects** странице, разверните узел **таблиц** и выберите **продукт (SalesLT)**.
+7. В **Choose Your Database Objects** странице, разверните узел **таблиц** и выберите **продукт (SalesLT)** .
 
 8. Нажмите кнопку **Готово**.
 
@@ -125,21 +125,21 @@ ms.locfileid: "53881332"
 
 ### <a name="to-create-the-excel-workbook-project"></a>Создание проекта книги Excel
 
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши **AdventureWorksDataSet** решение, выберите пункт **добавить**, а затем нажмите кнопку **новый проект**.
+1. В **обозревателе решений**, щелкните правой кнопкой мыши **AdventureWorksDataSet** решение, выберите пункт **добавить**, а затем нажмите кнопку **новый проект**.
 
-2.  В области шаблонов разверните узел **Visual C#** или **Visual Basic**, а затем разверните **Office**.
+2. В области шаблонов разверните узел **Visual C#** или **Visual Basic**, а затем разверните **Office**.
 
-3.  В развернутом **Office** выберите **2010** узла.
+3. В развернутом **Office** выберите **2010** узла.
 
-4.  В списке шаблонов проектов выберите проект книги Excel.
+4. В списке шаблонов проектов выберите проект книги Excel.
 
-5.  В **имя** введите **AdventureWorksReport**. Не изменяйте расположение.
+5. В **имя** введите **AdventureWorksReport**. Не изменяйте расположение.
 
-6.  Нажмите кнопку **ОК**.
+6. Нажмите кнопку **ОК**.
 
      Откроется **Мастер проектов набора средств Visual Studio для Office** .
 
-7.  Убедитесь, что **создания документа** выбран и нажмите кнопку **ОК**.
+7. Убедитесь, что **создания документа** выбран и нажмите кнопку **ОК**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Открывает **AdventureWorksReport** книгу в конструкторе и добавляет **AdventureWorksReport** проект **обозревателе решений**.
 
@@ -148,21 +148,21 @@ ms.locfileid: "53881332"
 
 ### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Добавление набора данных к источникам данных в проекте книги Excel
 
-1.  В **обозревателе решений**, дважды щелкните **Sheet1.cs** или **Sheet1.vb** под **AdventureWorksReport** проекта.
+1. В **обозревателе решений**, дважды щелкните **Sheet1.cs** или **Sheet1.vb** под **AdventureWorksReport** проекта.
 
      Книга откроется в конструкторе.
 
-2.  В меню **Данные** выберите команду **Добавить новый источник данных**.
+2. В меню **Данные** выберите команду **Добавить новый источник данных**.
 
      Открывается **мастер настройки источника данных**.
 
-3.  Нажмите кнопку **объект**, а затем нажмите кнопку **Далее**.
+3. Нажмите кнопку **объект**, а затем нажмите кнопку **Далее**.
 
-4.  В **Выбор объекта для привязки к** щелкните **добавить ссылку**.
+4. В **Выбор объекта для привязки к** щелкните **добавить ссылку**.
 
-5.  На **проекты** щелкните **AdventureWorksDataSet** и нажмите кнопку **ОК**.
+5. На **проекты** щелкните **AdventureWorksDataSet** и нажмите кнопку **ОК**.
 
-6.  В разделе **AdventureWorksDataSet** пространство имен **AdventureWorksDataSet** сборки, щелкните **AdventureWorksLTDataSet** и нажмите кнопку **Готово** .
+6. В разделе **AdventureWorksDataSet** пространство имен **AdventureWorksDataSet** сборки, щелкните **AdventureWorksLTDataSet** и нажмите кнопку **Готово** .
 
      **Источников данных** откроется окно, и **AdventureWorksLTDataSet** добавляется в список источников данных.
 
@@ -171,13 +171,13 @@ ms.locfileid: "53881332"
 
 ### <a name="to-create-a-listobject-that-is-bound-to-an-instance-of-the-dataset"></a>Чтобы создать элемент управления ListObject, привязанного к экземпляру набора данных
 
-1.  В **источников данных** окне разверните **AdventureWorksLTDataSet** узле **AdventureWorksDataSet**.
+1. В **источников данных** окне разверните **AdventureWorksLTDataSet** узле **AdventureWorksDataSet**.
 
-2.  Выберите **продукта** узел, щелкните стрелку раскрывающегося списка, который отображается и выберите **ListObject** в раскрывающемся списке.
+2. Выберите **продукта** узел, щелкните стрелку раскрывающегося списка, который отображается и выберите **ListObject** в раскрывающемся списке.
 
      Если стрелку раскрывающегося списка не отображается, убедитесь, что книга открыта в конструкторе.
 
-3.  Перетащите **продукта** таблицы в ячейку A1.
+3. Перетащите **продукта** таблицы в ячейку A1.
 
      Объект <xref:Microsoft.Office.Tools.Excel.ListObject> управления с именем `productListObject` создается на листе с началом в ячейку A1. Одновременно в проект добавляется объект набора данных `adventureWorksLTDataSet` и объект <xref:System.Windows.Forms.BindingSource> с именем `productBindingSource` . Объект <xref:Microsoft.Office.Tools.Excel.ListObject> привязан к объекту <xref:System.Windows.Forms.BindingSource>, который в свою очередь привязан к объекту набора данных.
 
@@ -186,20 +186,20 @@ ms.locfileid: "53881332"
 
 ### <a name="to-add-the-dataset-to-the-data-cache"></a>Добавление набора данных в кэше данных
 
-1.  В конструкторе щелкните **adventureWorksLTDataSet**.
+1. В конструкторе щелкните **adventureWorksLTDataSet**.
 
-2.  В **свойства** окне **модификаторы** свойства **открытый**.
+2. В **свойства** окне **модификаторы** свойства **открытый**.
 
-3.  Задайте **CacheInDocument** свойства **True**.
+3. Задайте **CacheInDocument** свойства **True**.
 
 ## <a name="initialize-the-dataset-in-the-workbook"></a>Инициализации набора данных в книге
  Прежде чем можно получить данные из кэшированный набор данных с помощью консольного приложения, необходимо заполнить кэшированный набор данных с данными.
 
 ### <a name="to-initialize-the-dataset-in-the-workbook"></a>Для инициализации набора данных в книге
 
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши **Sheet1.cs** или **Sheet1.vb** файл и нажмите кнопку **Просмотр кода**.
+1. В **обозревателе решений**, щелкните правой кнопкой мыши **Sheet1.cs** или **Sheet1.vb** файл и нажмите кнопку **Просмотр кода**.
 
-2.  Замените обработчик событий `Sheet1_Startup` следующим кодом. Этот код использует экземпляр `ProductTableAdapter` класс, который определен в **AdventureWorksDataSet** проекта для заполнения кэшированный набор данных с данными, если он пуст.
+2. Замените обработчик событий `Sheet1_Startup` следующим кодом. Этот код использует экземпляр `ProductTableAdapter` класс, который определен в **AdventureWorksDataSet** проекта для заполнения кэшированный набор данных с данными, если он пуст.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]
      [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]
@@ -209,32 +209,32 @@ ms.locfileid: "53881332"
 
 ### <a name="to-build-and-run-the-project"></a>Построение и запуск проекта
 
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши **AdventureWorksReport** проекта, выберите **Отладка**, а затем нажмите кнопку **запустить новый экземпляр**.
+1. В **обозревателе решений**, щелкните правой кнопкой мыши **AdventureWorksReport** проекта, выберите **Отладка**, а затем нажмите кнопку **запустить новый экземпляр**.
 
      Проект будет собран и книга откроется в Excel. Проверьте следующее.
 
-    -   <xref:Microsoft.Office.Tools.Excel.ListObject> Заполняется данными.
+    - <xref:Microsoft.Office.Tools.Excel.ListObject> Заполняется данными.
 
-    -   Значение в **ListPrice** столбец для первой строки <xref:Microsoft.Office.Tools.Excel.ListObject> равно 1431,5. Далее в этом пошаговом руководстве будет использовать консольное приложение для изменения значений во **ListPrice** столбца.
+    - Значение в **ListPrice** столбец для первой строки <xref:Microsoft.Office.Tools.Excel.ListObject> равно 1431,5. Далее в этом пошаговом руководстве будет использовать консольное приложение для изменения значений во **ListPrice** столбца.
 
-2.  Сохраните книгу. Не изменяйте имя файла или расположение книги.
+2. Сохраните книгу. Не изменяйте имя файла или расположение книги.
 
-3.  Закройте Excel.
+3. Закройте Excel.
 
 ## <a name="create-a-console-application-project"></a>Создайте проект консольного приложения
  Создайте проект консольного приложения для использования для изменения данных в кэшированный набор данных в книге.
 
 ### <a name="to-create-the-console-application-project"></a>Чтобы создать проект консольного приложения
 
-1.  В **обозревателе решений**, щелкните правой кнопкой мыши **AdventureWorksDataSet** решение, выберите пункт **добавить**, а затем нажмите кнопку **новый проект**.
+1. В **обозревателе решений**, щелкните правой кнопкой мыши **AdventureWorksDataSet** решение, выберите пункт **добавить**, а затем нажмите кнопку **новый проект**.
 
-2.  В **типы проектов** панели разверните **Visual C#** или **Visual Basic**, а затем нажмите кнопку **Windows**.
+2. В **типы проектов** панели разверните **Visual C#** или **Visual Basic**, а затем нажмите кнопку **Windows**.
 
-3.  В **шаблоны** области выберите **консольное приложение**.
+3. В **шаблоны** области выберите **консольное приложение**.
 
-4.  В **имя** введите **DataWriter**. Не изменяйте расположение.
+4. В **имя** введите **DataWriter**. Не изменяйте расположение.
 
-5.  Нажмите кнопку **ОК**.
+5. Нажмите кнопку **ОК**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Добавляет **DataWriter** проект **обозревателе решений** и открывает **Program.cs** или **Module1.vb** файл кода.
 
@@ -269,7 +269,7 @@ ms.locfileid: "53881332"
    - Объект <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> , который используется для доступа к кэшу данных в книге.
 
      > [!NOTE]
-     >  В следующем коде предполагается, что вы используете книге, в которой *.xlsx* расширение файла. Если книгу в проекте с расширением другой файл, измените путь соответственно.
+     > В следующем коде предполагается, что вы используете книге, в которой *.xlsx* расширение файла. Если книгу в проекте с расширением другой файл, измените путь соответственно.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#6)]
      [!code-vb[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#6)]
@@ -296,17 +296,17 @@ ms.locfileid: "53881332"
 
 ### <a name="to-test-the-workbook"></a>Тестирование книги
 
-1.  Закрытие книги AdventureWorksReport в конструкторе Visual Studio, если он по-прежнему открыт.
+1. Закрытие книги AdventureWorksReport в конструкторе Visual Studio, если он по-прежнему открыт.
 
-2.  Откройте книгу AdventureWorksReport, находится в папке построения **AdventureWorksReport** проекта. По умолчанию папке сборки находится в одном из следующих расположений:
+2. Откройте книгу AdventureWorksReport, находится в папке построения **AdventureWorksReport** проекта. По умолчанию папке сборки находится в одном из следующих расположений:
 
-    -   *%USERPROFILE%\My Documents\AdventureWorksReport\bin\Debug* (для Windows XP и более ранних версий)
+    - *%USERPROFILE%\My Documents\AdventureWorksReport\bin\Debug* (для Windows XP и более ранних версий)
 
-    -   *%USERPROFILE%\Documents\AdventureWorksReport\bin\Debug* (для Windows Vista)
+    - *%USERPROFILE%\Documents\AdventureWorksReport\bin\Debug* (для Windows Vista)
 
-3.  Убедитесь, что значение в **ListPrice** столбец для первой строки <xref:Microsoft.Office.Tools.Excel.ListObject> равно 1574,65.
+3. Убедитесь, что значение в **ListPrice** столбец для первой строки <xref:Microsoft.Office.Tools.Excel.ListObject> равно 1574,65.
 
-4.  Закройте книгу.
+4. Закройте книгу.
 
 ## <a name="see-also"></a>См. также
 

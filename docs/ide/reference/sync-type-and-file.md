@@ -1,22 +1,21 @@
 ---
 title: Изменение имени файла в соответствии с типом
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42e1d3cad1752649446a35abd863390166a57271
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90783dcd609094659517d994c3a4d4e0610b7735
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945197"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Рефакторинг для синхронизации типа с именем файла или имени файла с типом
 
@@ -31,6 +30,9 @@ ms.locfileid: "53834585"
 **Когда?** Вы переименовали файл или тип и еще не обновили их в соответствии с их именами.
 
 **Зачем?** Если поместить тип в файл с другим именем (или наоборот), вам трудно будет найти нужный файл или тип. Если переименовать тип или файл, будет проще читать код и удобнее переходить по нему.
+
+> [!NOTE]
+> Этот рефакторинг пока недоступен для проектов .NET Standard и .NET Core.
 
 ## <a name="how-to"></a>Практические советы
 
@@ -62,8 +64,6 @@ ms.locfileid: "53834585"
    - Visual Basic: В примере ниже файл **Employee.cs** был переименован в **Person.cs**, чтобы его имя совпадало с именем типа.
 
        ![Встроенный результат — Visual Basic](media/synctype-result-vb.png)
-
-> ![ПРИМЕЧАНИЕ] Этот рефакторинг пока не доступен для проектов .NET Standard и .NET Core.
 
 ## <a name="see-also"></a>См. также
 

@@ -1,20 +1,19 @@
 ---
 title: Рисование фигур и контуров
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29cd9da26b632d8ed8b1d09b0803f27599dba95e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942649"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820433"
 ---
 # <a name="draw-shapes-and-paths"></a>Рисование фигур и контуров
 
@@ -22,7 +21,7 @@ ms.locfileid: "53942649"
 
 Для фигур и контуров используется векторная графика, поэтому их легко масштабировать для дисплеев с высоким разрешением. Если вы хотите узнать больше о векторной графике, ознакомьтесь с видео о том, [что такое векторная графика](https://www.youtube.com/watch?v=MoCSwF0n-io) , или статьей о [векторной графике](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
-##  <a name="Shape"></a> Рисование фигуры
+## <a name="Shape"></a> Рисование фигуры
  Фигуры можно найти на панели **Ресурсы** .
 
  ![Категория фигур на панели ресурсов](../designers/media/b4_shapes_assetspanel.png)
@@ -31,7 +30,7 @@ ms.locfileid: "53942649"
 
  ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
-##  <a name="Path"></a> Рисование контура
+## <a name="Path"></a> Рисование контура
  Контур — это последовательность соединенных линий и кривых. Используйте контур для создания интересных фигур, которые недоступны на панели **Ресурсы** .
 
  Контур можно нарисовать с помощью линии, пера или карандаша. Эти инструменты доступны на панели **Средства** .
@@ -81,12 +80,12 @@ ms.locfileid: "53942649"
 
  Используйте инструмент **выделения** ![Инструмент выделения](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png), чтобы выбрать контур. С помощью **пера** ![Перо](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) щелкните в любом месте контура, где необходимо добавить точку.
 
-##  <a name="Convert"></a> Преобразование фигуры в контур
+## <a name="Convert"></a> Преобразование фигуры в контур
  Чтобы изменить фигуру теми же способами, которые вы использовали для изменения контура, преобразуйте фигуру в контур.
 
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами. Преобразование фигуры в контур](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-##  <a name="Combine"></a> Объединение контуров
+## <a name="Combine"></a> Объединение контуров
  Контуры и фигуры можно объединить в один контур.
 
  ![Объединение контуров](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
@@ -94,12 +93,12 @@ ms.locfileid: "53942649"
 |||||
 |-|-|-|-|
 |![Две фигуры до объединения](../designers/media/b1_1.png)|Две фигуры до объединения|![Пересечение](../designers/media/b1_4.png)|Пересечение|
-|![Исключение наложения](../designers/media/b1_2.png)|Объединение|![](../designers/media/b1_5.png)|Исключение перекрытия|
-|![Subtract](../designers/media/b1_3.png)|Divide|![](../designers/media/b1_6.png)|Subtract|
+|![Объединение](../designers/media/b1_2.png)|Объединение|![Исключение наложения](../designers/media/b1_5.png)|Исключение перекрытия|
+|![Divide](../designers/media/b1_3.png)|Divide|![Subtract](../designers/media/b1_6.png)|Subtract|
 
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами. Объединение контуров](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-##  <a name="Compound"></a> Создание составного пути
+## <a name="Compound"></a> Создание составного пути
  При создании составного контура все пересекающиеся части контуров исключаются из результата, и результирующий контур принимает визуальные свойства нижнего контура.
 
  В любой момент после создания составного пути он может быть разбит на составляющие части.
@@ -108,7 +107,7 @@ ms.locfileid: "53942649"
 
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.png) [Работа с контурами. Создание составного контура](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-##  <a name="Clipping"></a> Создание контура кадрирования
+## <a name="Clipping"></a> Создание контура кадрирования
  Контур обрезки — это контур или фигура, применяемая к другому объекту, чтобы скрыть части маскируемого объекта за пределами контура обрезки.
 
  ![Контур кадрирования](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)

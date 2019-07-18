@@ -1,14 +1,9 @@
 ---
 title: Цветовая маркировка синтаксиса в языковой службе прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], syntax highlighting
 - colorization, supporting in language services [managed package framework]
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 20655534439fa187488087e1ae819a7ffca4c27a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64e57ebc80320ccc133261781eb8ee6611c8e2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441231"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Цветовая маркировка синтаксиса в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51730285"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Дополнительные сведения см. в разделе [расширение редактора и языковых служб](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
   
 ## <a name="implementation"></a>Реализация  
  Для поддержки Раскраска, managed package framework (MPF) включает <xref:Microsoft.VisualStudio.Package.Colorizer> класса, который реализует <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> интерфейс. Этот класс взаимодействует с <xref:Microsoft.VisualStudio.Package.IScanner> для определения маркера и цвета. Дополнительные сведения о сканеры, см. в разделе [средства синтаксического анализа службы языка для прежних версий и сканер](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). <xref:Microsoft.VisualStudio.Package.Colorizer> Класс помечает каждый символ токена с сведения о цвете и затем возвращает эту информацию в редактор, отображающий исходный файл.  
@@ -44,10 +39,10 @@ ms.locfileid: "51730285"
  Для предоставления собственных пользовательских цветных элементов, необходимо переопределить <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> и <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> метод <xref:Microsoft.VisualStudio.Package.LanguageService> класса. Первый метод возвращает количество пользовательских цветных элементов, поддерживаемых службой языка, а второй возвращает настраиваемого цветного элемента по индексу. Создается по умолчанию список пользовательских цветных элементов. В конструкторе класса службы языка все, что нужно сделать, — указать каждого цветного элемента с именем. Visual Studio автоматически обрабатывает случай, когда пользователь выбирает другой набор цветных элементов. Это имя отображается в **шрифты и цвета** страницу свойств на **параметры** диалоговое окно (доступные из Visual Studio **средства** меню) и определяет, какие это имя цвет пользователь переопределен. Выборы пользователя хранятся в кэше в реестре и доступен по имени цвета. **Шрифты и цвета** свойство странице перечислены названия цветов в алфавитном порядке, чтобы их можно группировать пользовательские цвета, отделяя каждое имя цвета на название языка; например, "**TestLanguage - комментарий**«и»**TestLanguage - ключевое слово**«. Или можно сгруппировать цветных элементов по типу, "**комментария (TestLanguage)**«и»**ключевое слово (TestLanguage)**«. Группирование по имени языка является предпочтительным.  
   
 > [!CAUTION]
->  Настоятельно рекомендуется включить имя языка в имя цветного элемента, чтобы избежать конфликтов с существующими именами цветного элемента.  
+> Настоятельно рекомендуется включить имя языка в имя цветного элемента, чтобы избежать конфликтов с существующими именами цветного элемента.  
   
 > [!NOTE]
->  Если изменить имя одного цветов во время разработки, необходимо сбросить кэш, созданную Visual Studio в первый раз обращается к цвета. Это можно сделать, выполнив **Сбросить экспериментальный куст** команду в меню программы Visual Studio SDK.  
+> Если изменить имя одного цветов во время разработки, необходимо сбросить кэш, созданную Visual Studio в первый раз обращается к цвета. Это можно сделать, выполнив **Сбросить экспериментальный куст** команду в меню программы Visual Studio SDK.  
   
  Обратите внимание на то, что первый элемент в список цветных элементов никогда не указывается. Visual Studio всегда предоставляет цвета текста по умолчанию и атрибуты этого элемента. Самый простой способ работы с этим является для предоставления цветного элемента заполнителя как первый элемент.  
   
@@ -155,4 +150,3 @@ namespace TestLanguagePackage
  [Функции службы устаревшего языка](../../extensibility/internals/legacy-language-service-features1.md)   
  [Средство синтаксического анализа устаревший языковой службы и средства проверки](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)   
  [Регистрация языковой службы прежних версий](../../extensibility/internals/registering-a-legacy-language-service1.md)
-

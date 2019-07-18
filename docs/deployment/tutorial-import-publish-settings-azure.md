@@ -7,21 +7,21 @@ helpviewer_keywords:
 - deployment, publish settings
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0af5732e80098cabeda8f11901e968ebb3d4a9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd040b613a5b982050d651f341456c5fafc2954b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853948"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679190"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Публикация приложения в Службу приложений Azure посредством импорта параметров публикации в Visual Studio
 
 Вы можете использовать средство **публикации** для импорта параметров публикации, а затем развернуть приложение. В этой статье мы используем параметры публикации для Службы приложений Azure, однако аналогичные действия можно использовать, чтобы импортировать параметры публикации из [IIS](../deployment/tutorial-import-publish-settings-iis.md). В некоторых случаях использование профиля параметров публикации может оказаться быстрее, чем ручная настройка развертывания в службу для каждой установки Visual Studio.
 
-Эти шаги применимы к приложениям ASP.NET, ASP.NET Core и .NET Core в Visual Studio. Вы также можете импортировать параметры публикации для приложений [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md). Эти действия соответствуют Visual Studio 2017 версии 15.6.
+Эти шаги применимы к приложениям ASP.NET, ASP.NET Core и .NET Core в Visual Studio. Вы также можете импортировать параметры публикации для приложений [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 В этом руководстве рассмотрены следующие задачи:
 
@@ -37,19 +37,31 @@ ms.locfileid: "53853948"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* У вас должна быть установлена среда Visual Studio 2017 и иметься рабочая нагрузка **ASP.NET** и **.NET Framework**. Для приложения .NET Core также требуется рабочая нагрузка **.NET Core**.
+::: moniker range=">=vs-2019"
 
-    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) , если вы еще не сделали этого.
+* У вас должны быть установлены решение Visual Studio 2019 и рабочая нагрузка **ASP.NET и разработка веб-приложений**.
+
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+* У вас должна быть установлена среда Visual Studio 2017 и рабочая нагрузка **ASP.NET и разработка веб-приложений**.
+
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
+::: moniker-end
 
 * Создайте Службу приложений Azure. Подробные инструкции см. в разделе [Развертывание веб-приложения ASP.NET Core в Azure с помощью Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Создание проекта ASP.NET в Visual Studio
 
-1. На компьютере, где выполняется Visual Studio, последовательно выберите **Файл** > **Создать проект**.
+1. На компьютере, где выполняется Visual Studio, создайте новый проект.
 
-1. В разделе **Visual C#** или **Visual Basic** выберите **Интернет**, а затем в средней области выберите **Веб-приложение ASP.NET (.NET Framework)** или (только C#) **Веб-приложение ASP.NET Core** и нажмите кнопку **ОК**.
+    Выберите подходящий шаблон. В этом примере выберите **Веб-приложение ASP.NET (.NET Framework)** или (только для C#) **Веб-приложение ASP.NET Core** и нажмите кнопку **ОК**.
 
-    Если указанные шаблоны проекта отсутствуют, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Ознакомьтесь с предварительными требованиями в этой статье, чтобы определить рабочие нагрузки Visual Studio, которые необходимо установить.
+    Если указанные шаблоны проекта отсутствуют, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Установите рабочую нагрузку **ASP.NET и веб-разработка**.
+
+    Выбранный шаблон проекта (ASP.NET или ASP.NET Core) должен соответствовать версии ASP.NET, установленной на веб-сервере.
 
 1. Выберите **MVC** (.NET Framework) или **Веб-приложение (модель-представление-контроллер)** (для .NET Core), убедитесь, что выбран параметр **Без проверки подлинности**, а затем нажмите кнопку **ОК**.
 
@@ -88,6 +100,7 @@ ms.locfileid: "53853948"
       </publishProfile>
     </publishData>
     ```
+
     Обычно предыдущий файл PUBLISHSETTINGS содержит два профиля публикации, которые можно использовать в Visual Studio — один для развертывания с помощью веб-развертывания, а другой для развертывания с помощью протокола FTP. Предыдущий код показывает профиль веб-развертывания. Оба профиля будут импортированы позже при импорте профиля.
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Импорт параметров публикации в Visual Studio и развертывание

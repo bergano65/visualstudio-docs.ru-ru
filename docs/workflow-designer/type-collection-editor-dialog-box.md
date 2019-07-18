@@ -2,21 +2,20 @@
 title: Конструктор рабочих процессов - диалоговое окно редактора коллекций типов
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - TypeCollectionEditor.UI
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2c172517dd9e1945ee55fb6ab9ce576b4676ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433933"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Диалоговое окно редактора коллекций типов
 
@@ -32,16 +31,16 @@ ms.locfileid: "53820190"
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Отображение редактора коллекций типов для действий Send и Receive
 
-1.  Выберите **отправки** или **Receive** действий в представлении конструктора.
+1. Выберите **отправки** или **Receive** действий в представлении конструктора.
 
-2.  Нажмите клавишу **F4** откроется **свойства** окна.
+2. Нажмите клавишу **F4** откроется **свойства** окна.
 
-3.  В **свойства** окно, нажмите кнопку с многоточием, расположенную рядом с полем **KnownTypes** свойство.
+3. В **свойства** окно, нажмите кнопку с многоточием, расположенную рядом с полем **KnownTypes** свойство.
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Отображение редактора коллекций типов для действия InvokeMethod
 
-1.  Выберите **InvokeMethod** действий в представлении конструктора.
+1. Выберите **InvokeMethod** действий в представлении конструктора.
 
-2.  Нажмите клавишу **F4** откроется **свойства** окна.
+2. Нажмите клавишу **F4** откроется **свойства** окна.
 
-3.  В **свойства** окно, нажмите кнопку с многоточием, расположенную рядом с полем **GenericTypeArguments** свойство.
+3. В **свойства** окно, нажмите кнопку с многоточием, расположенную рядом с полем **GenericTypeArguments** свойство.

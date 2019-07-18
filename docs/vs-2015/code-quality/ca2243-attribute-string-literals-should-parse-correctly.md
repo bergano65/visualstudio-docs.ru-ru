@@ -1,14 +1,9 @@
 ---
-title: 'CA2243: Атрибут синтаксический анализ строковых литералов правильно | Документация Майкрософт'
-ms.custom: ''
+title: CA2243. Синтаксический анализ строковых литералов атрибута должен правильно | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2243
 - AttributeStringLiteralsShouldParseCorrectly
@@ -20,14 +15,14 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3155006ecfc0e65365f23a6e09f6ec23e9d0e12d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f23db8a9674de621090be70067a555ef4fca2b99
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201498"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: синтаксический анализ строковых литералов атрибута должен осуществляться правильно
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243. Синтаксический разбор строковых литералов должен осуществляться правильно
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -60,14 +55,11 @@ ms.locfileid: "49914740"
 
  Запускается следующее правило:
 
--   Параметры, которые содержат «version» и не может быть приведено к System.Version.
+- Параметры, которые содержат «version» и не может быть приведено к System.Version.
 
--   Параметры, которые содержат «guid» и не может быть приведено к System.Guid.
+- Параметры, которые содержат «guid» и не может быть приведено к System.Guid.
 
--   Параметры, которые содержат «uri», «urn» или «url» и не поддается на System.Uri.
+- Параметры, которые содержат «uri», «urn» или «url» и не поддается на System.Uri.
 
 ## <a name="see-also"></a>См. также
- [CA1054: параметры URI не должны быть строками](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-
-
-
+ [CA1054: Параметры URI не должны быть строками](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

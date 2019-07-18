@@ -1,14 +1,9 @@
 ---
 title: Задачи MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
@@ -16,18 +11,17 @@ ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dff7c0ce45c71340f3b931e32843adb6a90ea075
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176707"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650608"
 ---
 # <a name="msbuild-tasks"></a>Задачи MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Платформе построения требуется возможность выполнения любого числа действий во время процесса построения. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] использует *задачи* для выполнения этих действий. Задача — это блок исполняемого кода, с помощью которого [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] выполняет атомарные операции построения.  
   
 ## <a name="task-logic"></a>Алгоритмы задач  
@@ -73,10 +67,8 @@ ms.locfileid: "49176707"
 ## <a name="overridden-tasks"></a>Переопределенные задачи  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] обнаруживает задачи в нескольких местах. Во первых, в файлах с расширением OverrideTasks, которые хранятся в каталогах .NET Framework. Задачи в этих файлах переопределяют любые другие задачи с теми же именами, в том числе задачи в файле проекта. Второе место — файлы с расширением Tasks, расположенные в каталогах .NET Framework. Если задача не найдена ни в одном из этих расположений, выполняется задача из файла проекта.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
  [Написание задач](../msbuild/task-writing.md)   
  [Встроенные задачи](../msbuild/msbuild-inline-tasks.md)
-
-

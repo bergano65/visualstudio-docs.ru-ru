@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: fcd2479a-8ff7-4aba-a737-06123c280d54
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c5f027d3ccc2347e73b1c6e5caa096144b446ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: bd9dd34bd75199f2af3e14a96a12af663b2ba1f9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829697"
 ---
 # <a name="idiaenumlinenumbersclone"></a>IDiaEnumLineNumbers::Clone
-Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumLineNumbers** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `ppenum`  
- [out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий копию перечислителя. Номер строки, числа не дублируются, только перечислитель...  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumLineNumbers** ppenum
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `ppenum`
+
+[out] Возвращает [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) , содержащий копию перечислителя. Номер строки, числа не дублируются, только перечислитель...
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

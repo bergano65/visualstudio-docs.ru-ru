@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: 57a149e1584b666d2fadbb522220ea512898bd39
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54316092"
----
 # [Visual Studio для Mac](/visualstudio/mac/)
 # [Обзор интегрированной среды разработки](ide-tour.md)
 
@@ -13,16 +5,15 @@ ms.locfileid: "54316092"
 ## [Установка и использование в среде, защищенной брандмауэром или прокси-сервером](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 ## [Установка предварительной версии](/visualstudio/mac/install-preview)
 ## [Обновление](/visualstudio/mac/update)
+## [Обновление до Visual Studio 2019 для Mac](/visualstudio/mac/update-vsmac-8.0)
 ## [Удаление](/visualstudio/mac/uninstall)
-
 
 # [Учетные записи пользователей](/visualstudio/mac/user-accounts)
 ## [Вход](/visualstudio/mac/signing-in)
-## [Активация](/visualstudio/mac/activation)
+## [Активация](/visualstudio/mac/enable-subscription)
 
 # [Настройка интегрированной среды разработки](/visualstudio/mac/customizing-the-ide)
 ## [Расширение Visual Studio для Mac](/visualstudio/mac/extending-visual-studio-mac)
-
 
 # [Проекты и решения](/visualstudio/mac/projects-and-solutions)
 ## [Создание новых проектов](/visualstudio/mac/create-new-projects)
@@ -61,6 +52,10 @@ ms.locfileid: "54316092"
 ## [Настройка репозитория Subversion](/visualstudio/mac/set-up-subversion-repository)
 ## [Работа с Subversion](/visualstudio/mac/working-with-subversion)
 
+# [Развертывание веб-приложения](/visualstudio/mac/web-app-deployment.md)
+## [Публикация в службу приложений Azure](/visualstudio/mac/publish-app-svc.md)
+## [Публикация в папку](/visualstudio/mac/publish-folder.md)
+
 # [Рабочие нагрузки](/visualstudio/mac/workloads)
 ## [ASP.NET Core](/visualstudio/mac/asp-net-core)
 ### [Razor](/visualstudio/mac/razor)
@@ -74,10 +69,11 @@ ms.locfileid: "54316092"
 ### [Использование инструментов Unity](/visualstudio/mac/using-vsmac-tools-unity)
 ### [Использование .NET 4.x в Unity](/visualstudio/mac//visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Журнал изменений (набор средств Visual Studio для Unity)](/visualstudio/mac//visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
-## [Использование мобильных приложений и Xamarin](/xamarin/)
+## [Использование мобильных приложений и Xamarin](/visualstudio/mac/xamarin)
 
 # [Специальные возможности](/visualstudio/mac/accessibility)
 
 # [Устранение неполадок](/visualstudio/mac/troubleshooting)
 ## [Программа улучшения качества программного обеспечения Visual Studio](/visualstudio/mac/visual-studio-experience-improvement-program)
 ## [Сообщить о проблеме](/visualstudio/mac/report-a-problem)
+## [Устранение неполадок. Сбой средства обновления при получении сведений](updater-troubleshooting.md)

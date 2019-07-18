@@ -1,5 +1,6 @@
 ---
 title: Новые возможности отладчика в Visual Studio 2017 | Документация Майкрософт
+titleSuffix: ''
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -15,21 +16,22 @@ helpviewer_keywords:
 ms.assetid: 2aed9caa-2384-4e49-8595-82d8b06cf271
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbc48fdc93feebf2f78b6d11ae2b7cc744c46f98
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
-ms.translationtype: MTE95
+monikerRange: vs-2017
+ms.openlocfilehash: 9c6f2eb4be56be8cf5e25c3238a91819df3bc574
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901404"
 ---
-# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Новые возможности отладчика в [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Новые возможности отладчика в Visual Studio 2017
 
 Отладчик включает следующие новые возможности:
 
-- Новая возможность в версии 15.5: средство **Snapshot Debugger** создает моментальный снимок рабочих приложений при выполнении интересующего вас кода. Чтобы указать отладчику на необходимость создать моментальный снимок, следует установить точки прикрепления и точки ведения в коде. Отладчик позволяет увидеть источник ошибки, не затрагивая трафик рабочего приложения. Средство Snapshot Debugger позволяет значительно сократить затраты времени на устранение проблем, возникающих в рабочих средах.
+- Новые возможности в версии 15.5, **Snapshot Debugger** создается моментальный снимок в рабочих приложениях при выполнении кода, которые вас интересуют. Чтобы указать отладчику на необходимость создать моментальный снимок, следует установить точки прикрепления и точки ведения в коде. Отладчик позволяет увидеть источник ошибки, не затрагивая трафик рабочего приложения. Средство Snapshot Debugger позволяет значительно сократить затраты времени на устранение проблем, возникающих в рабочих средах.
 
     Коллекция моментальных снимков доступна для следующих веб-приложений, выполняющихся в службе приложений Azure App:
 
@@ -66,7 +68,7 @@ ms.locfileid: "54269739"
 
     ![Поиск в присоединение к процессу](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Дополнительные сведения об этих новых функциях см. в разделе [заметки о выпуске [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
+Дополнительные сведения об этих новых функциях см. в разделе [заметки о выпуске [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>См. также
 

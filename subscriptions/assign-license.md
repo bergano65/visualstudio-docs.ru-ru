@@ -2,19 +2,16 @@
 title: Назначение лицензий для подписок Visual Studio | Документы Майкрософт
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: Сведения о том, как администраторы могут назначать лицензии для подписчиков.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: 6f0bbded7682bd8f7162ae415c6c83711df04a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e9eb19ce4f9947f730bcd32be5ddcc931770bde
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931237"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783541"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Назначение лицензий на портале администратора подписок Visual Studio
 
@@ -46,7 +43,7 @@ ms.locfileid: "49931237"
 
     Добавить в подписку свои примечания к ссылке можно в разделе **Добавить ссылку**.
    > [!div class="mx-imgBorder"]
-   > ![Добавление собственных примечаний к каждой подписке](media/add-subscriber-reference-notes.png) 
+   > ![Добавление собственных примечаний к каждой подписке](media/add-subscriber-reference-notes.png)
 
     Когда вы выберете все параметры и введете данные для подписчика, нажмите **Добавить** в нижней части окна **Добавить подписчика**.
    > [!div class="mx-imgBorder"]
@@ -54,7 +51,7 @@ ms.locfileid: "49931237"
 
 4. После добавления подписчику автоматически отправляется сообщение электронной почты о назначении, содержащее дальнейшие инструкции. Сообщение о назначении можно переотправить в любое время, выбрав подписчика и нажав кнопку **Отправить заново** в верхнем меню.
    > [!div class="mx-imgBorder"]
-   > ![Возможность в любое время повторно отправить электронное письмо для активации одному пользователю или их группе](media/resend-subscriber-activation-emails.png) 
+   > ![Возможность в любое время повторно отправить электронное письмо для активации одному пользователю или их группе](media/resend-subscriber-activation-emails.png)
 
 ## <a name="bulk-assignments"></a>Массовые назначения
 
@@ -65,7 +62,7 @@ ms.locfileid: "49931237"
 2. Массовое назначение использует шаблон Microsoft Excel для отправки подписчиков. В диалоговом окне "Upload Multiple Subscribers" (Отправка нескольких подписчиков) нажмите кнопку **Скачать**, чтобы скачать этот шаблон.
    > [!div class="mx-imgBorder"]
    > ![Скачивание шаблона Excel для загрузки множества подписчиков](media/download-template-upload-subscribers.png)
-   > 
+   >
    > [!NOTE]
    > Всегда скачивайте последнюю версию шаблона. При использовании более старой версии массовая отправка может завершиться ошибкой.
 

@@ -8,39 +8,37 @@ helpviewer_keywords:
 - UML diagrams, saving
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2d0f6681c90d3aba37080e5ac49d406af662e4f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54e36b942780f9efd4ddb3612d9631188b17d791
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842180"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744514"
 ---
 # <a name="export-diagrams-as-images"></a>Экспорт схем в виде изображений
+
 В Visual Studio можно сохранить схем моделирования в форматах только для чтения таким образом, вы можете использовать их с заинтересованными лицами, пользователями или участниками группы проекта, не используйте ту же версию Visual Studio.
 
- Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. в разделе [Edition поддержка для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Чтобы узнать, какие выпуски Visual Studio поддерживают эту функцию, см. в разделе [Edition поддержка для инструментов моделирования и архитектуры](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Копирование схемы или ее части в другое приложение
+## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Копирование схемы или ее часть схемы в другое приложение
 
-1.  Выделите на схеме некоторые или все фигуры.
+1. Выделите на схеме некоторые или все фигуры.
 
-2.  Щелкните правой кнопкой мыши выбранные параметры и нажмите кнопку **копирования**.
+2. Щелкните правой кнопкой мыши выбранные параметры и нажмите кнопку **копирования**.
 
-3.  Вставьте выделенные элементы в нужное приложение.
+3. Вставьте выделенные элементы в нужное приложение.
 
-### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Сохранение схемы моделирования в виде XPS-файла
+## <a name="save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Сохранение схемы моделирования в виде файла XML Paper Specification (.xps)
 
-1.  На **файл** меню, щелкните **печати** открыть **печати** диалоговое окно.
+1. На **файл** меню, щелкните **печати** открыть **печати** диалоговое окно.
 
-2.  В **имя** выберите **средство записи документов XPS Microsoft**, а затем нажмите кнопку **ОК**.
+2. В **имя** выберите **средство записи документов XPS Microsoft**, а затем нажмите кнопку **ОК**.
 
-3.  В **сохраните файл как** » диалогового окна «Сохранить файл как **документ XPS (\*.xps)** файл.
-
-## <a name="net-framework-security"></a>Безопасность платформы .NET Framework
+3. В **сохраните файл как** » диалогового окна «Сохранить файл как **документ XPS (\*.xps)** файл.
 
 ## <a name="see-also"></a>См. также
 

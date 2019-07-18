@@ -1,14 +1,9 @@
 ---
 title: Сбор данных взаимодействия уровней | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.tierinteraction
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 47a944c2-3098-497c-8fc7-e1f43d750bbc
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 31e2d46992b48b987966bac7d7dc68787f4016c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568051"
 ---
 # <a name="collecting-tier-interaction-data"></a>Сбор данных взаимодействия уровней
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,14 +42,11 @@ ms.locfileid: "51761188"
   
 ### <a name="to-add-tier-interaction-data-to-a-profiling-run-by-using-the-performance-session-property-pages"></a>Добавление данных взаимодействия уровней в сеанс профилирования с помощью страниц свойств сеанса анализа производительности  
   
-1.  В обозревателе производительности в контекстном меню выберите пункт **Свойства**.  
+1. В обозревателе производительности в контекстном меню выберите пункт **Свойства**.  
   
-2.  Выберите страницу **Взаимодействия уровня** и установите флажок **Включить профилирование взаимодействия уровней**.  
+2. Выберите страницу **Взаимодействия уровня** и установите флажок **Включить профилирование взаимодействия уровней**.  
   
-3.  В обозревателе производительности выделите узел **Целевые объекты**, а затем укажите проект, исполняемый файл или веб-сайт, который необходимо профилировать.  
+3. В обозревателе производительности выделите узел **Целевые объекты**, а затем укажите проект, исполняемый файл или веб-сайт, который необходимо профилировать.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Представление "Взаимодействия уровня"](../profiling/tier-interactions-view.md)
-
-
-

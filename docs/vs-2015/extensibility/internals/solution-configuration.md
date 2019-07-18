@@ -1,26 +1,21 @@
 ---
 title: Конфигурация решения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53d8e3d33a81e20d553e6a5c97eb6e6f33339079
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bbd47969a7a48be817e8e2f5359705e03b5d0dc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432097"
 ---
 # <a name="solution-configuration"></a>Конфигурация решения
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51801613"
  Стандартная панель инструментов Visual Studio содержит кнопку "Пуск" и конфигурация решения раскрывающегося списка справа от "Пуск". Этот список позволяет пользователям выбрать конфигурацию, чтобы запускаться при нажатии клавиши F5, создать свои собственные конфигурации решения или изменять имеющиеся конфигурации.  
   
 > [!NOTE]
->  Существуют не интерфейсы расширения для создания или изменения конфигураций решения. Необходимо использовать `DTE.SolutionBuilder`. Тем не менее существуют интерфейсы API расширяемости для управления сборки решения. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
+> Существуют не интерфейсы расширения для создания или изменения конфигураций решения. Необходимо использовать `DTE.SolutionBuilder`. Тем не менее существуют интерфейсы API расширяемости для управления сборки решения. Дополнительные сведения см. в разделе <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
   
  Вот, как можно реализовать решение конфигурациях, поддерживаемых типа проекта:  
   
@@ -38,7 +33,7 @@ ms.locfileid: "51801613"
   
    Имена проектов, найденных в текущем решении.  
   
-- Конфигурация  
+- Параметр Configuration  
   
    Укажите список конфигураций, поддерживаемых типа проекта и отображаются на страницах свойств, реализация <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>.  
   
@@ -56,7 +51,7 @@ ms.locfileid: "51801613"
   
    Указывает, создается ли проект в текущей конфигурации решения. Невыбранные проекты не были собраны при вызове команды построения на уровне решения несмотря на все зависимости проекта, которые они содержат. Не выбрано для построения проектов по-прежнему включаются в отладке, running, упаковки и развертывания решения.  
   
-- Развертывание  
+- Развернуть  
   
    Указывает, будет ли проект развернут при выполнении команд запуска или развертывания для выбранной конфигурации. Флажок для этого поля будут доступны в том случае, если проект поддерживает развертывание путем реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> интерфейс в его <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> объекта.  
   
@@ -66,4 +61,3 @@ ms.locfileid: "51801613"
  [Управление параметрами конфигурации](../../extensibility/internals/managing-configuration-options.md)   
  [Конфигурация проекта для сборки](../../extensibility/internals/project-configuration-for-building.md)   
  [Объект конфигурации проекта](../../extensibility/internals/project-configuration-object.md)
-

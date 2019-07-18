@@ -1,22 +1,21 @@
 ---
 title: Форматирование кода Python
 description: Visual Studio может автоматически переформатировать код Python, в том числе интервалы, операторы, переносы и комментарии.
-ms.date: 10/28/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b830640284fe5b44a76b5f7d2424e2c1ccd24ea0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957543"
 ---
 # <a name="format-python-code"></a>Форматирование кода Python
 
@@ -44,8 +43,8 @@ Visual Studio позволяет быстро переформатировать
 В следующих таблицах приведены примеры для различных параметров:
 
 | Параметр определения класса | Помечено | Флажок снят |
-| --- | --- | --- | 
-| **Вставлять пробелы между именем и списком базовых классов в объявлении класса** | `class X (object): pass` | `class X(object): pass` | 
+| --- | --- | --- |
+| **Вставлять пробелы между именем и списком базовых классов в объявлении класса** | `class X (object): pass` | `class X(object): pass` |
 | **Вставлять пробелы внутри скобок списка баз** | `class X( object ): pass` | `class X(object): pass` |
 | **Вставлять пробелы внутри скобок пустого списка баз** | `class X( ): pass` | `class X(): pass` |
 
@@ -53,7 +52,7 @@ Visual Studio позволяет быстро переформатировать
 
 | Параметр определения функций | Помечено | Флажок снят |
 | --- | --- | --- |
-| **Вставлять пробелы между именем и списком параметров в объявлении функции** | `def X (): pass` | `def X(): pass` | 
+| **Вставлять пробелы между именем и списком параметров в объявлении функции** | `def X (): pass` | `def X(): pass` |
 | **Вставлять пробелы внутри скобок списка параметров** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **Вставлять пробелы внутри скобок пустого списка параметров** | `def X( ): pass` | `def X(): pass` |
 | **Вставлять пробелы вокруг "=" в значениях параметров по умолчанию** | `includes X(a = 42): pass` | `includes X(a=42): pass` |

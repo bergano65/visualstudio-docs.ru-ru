@@ -1,14 +1,9 @@
 ---
 title: Создание настраиваемых визуализаторов данных | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d8433af07b5f1315e73e6916e58123fcd14bddf0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 50df868f0e01d49d4c49bccae32d743d5291a066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434900"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Создание настраиваемых визуализаторов данных
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,19 +38,19 @@ ms.locfileid: "51792864"
  Отладчик [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] включает шесть стандартных визуализаторов. Это текст, HTML, XML и JSON визуализаторы, которые работают со строковыми объектами; Визуализатор дерева WPF для отображения свойств визуального дерева объекта WPF; и средство визуализации наборов данных, который работает с объектами DataSet, DataView и DataTable. В будущем могут появиться дополнительные визуализаторы, которые будут доступны для загрузки из корпорации Майкрософт, а также сайтов сторонних компаний и сообщества. Кроме того, вы можете создавать собственные визуализаторы и устанавливать их в отладчик [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 > [!NOTE]
->  В **Store** приложений, только стандартные текстовые визуализаторы HTML, XML и JSON поддерживаются. Пользовательские визуализаторы (то есть, созданные пользователем) не поддерживаются.  
+> В **Store** приложений, только стандартные текстовые визуализаторы HTML, XML и JSON поддерживаются. Пользовательские визуализаторы (то есть, созданные пользователем) не поддерживаются.  
   
  В отладчике для обозначения визуализаторов используется значок лупы. Когда появится значок лупы в **DataTip**, в окне переменных или в **"Быстрая проверка"** диалоговом окне щелкните лупу, чтобы выбрать визуализатор, подходящий для типа данных соответствующего объекта.  
   
  Визуализаторы не поддерживаются в Compact Framework.  
   
 > [!NOTE]
->  Визуализаторы отладчика требуют больше прав, чем разрешено приложениям частичного доверия. В результате визуализатор не загрузится, если остановка произошла в коде с частичным доверием. Чтобы отлаживать, используя визуализатор, необходимо запустить код с полным доверием.  
+> Визуализаторы отладчика требуют больше прав, чем разрешено приложениям частичного доверия. В результате визуализатор не загрузится, если остановка произошла в коде с частичным доверием. Чтобы отлаживать, используя визуализатор, необходимо запустить код с полным доверием.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Практическое руководство. Написание визуализатора](../debugger/how-to-write-a-visualizer.md)  
   
- [Пошаговое руководство. Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Пошаговое руководство: Написание визуализатора на C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
   
  [Практическое руководство. Установка визуализатора](../debugger/how-to-install-a-visualizer.md)  
   
@@ -65,6 +60,3 @@ ms.locfileid: "51792864"
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Просмотр данных в отладчике](../debugger/viewing-data-in-the-debugger.md)
-
-
-

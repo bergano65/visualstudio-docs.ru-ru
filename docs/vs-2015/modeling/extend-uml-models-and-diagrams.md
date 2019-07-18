@@ -1,14 +1,9 @@
 ---
 title: Расширение моделей и схем UML | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -16,13 +11,13 @@ ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182872"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Расширение моделей и схем UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +30,13 @@ ms.locfileid: "51794768"
   
  Команда специалистов по инструментам Fabrikam вносит ряд усовершенствований, облегчающих работу команд разработчиков. В следующих разделах описываются разные виды расширений, которые вы можете определить. Несколько таких методов можно объединить в одно расширение Visual Studio.  
   
- Дополнительные сведения см. в этом видео: ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo")[MSDN практические руководства: средства UML и расширяемость](http://go.microsoft.com/fwlink/?LinkId=214467).  
+ Дополнительные сведения см. в этом видео: ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo")[MSDN практические руководства: Средства UML и расширяемость](http://go.microsoft.com/fwlink/?LinkId=214467).  
   
-##  <a name="Requirements"></a> Требования  
+## <a name="Requirements"></a> Требования  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
--   [Пакет SDK моделирования для Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
+- [Пакет SDK моделирования для Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
   
 ## <a name="profiles"></a>Профили  
  Профили позволяют определять стереотипы и дополнительные свойства элементов UML.  
@@ -81,10 +76,10 @@ ms.locfileid: "51794768"
   
  Разработчики Fabrikam создают код, который автоматически задает цвет элемента в зависимости от его стереотипа. Это помогает пользователям различать назначение элементов в моделях.  
   
- Дополнительные сведения см. в разделе [как: реагирование на изменения в UML-модели](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+ Дополнительные сведения см. в разделе [Практическое руководство. Реагирование на изменения в UML-модели](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
 ## <a name="model-bus"></a>Шина модели  
- Шина модели позволяет осуществлять доступ к схеме или модели из другой схемы или другого расширения [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Помимо прочего, это позволяет распространять сведения в рамках нескольких моделей, чтобы над объединенной моделью одновременно могло работать несколько пользователей.  
+ Шина модели позволяет осуществлять доступ к схеме или модели из другой схемы или другого расширения [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] . Помимо прочего, это позволяет распространять сведения в рамках нескольких моделей, чтобы над объединенной моделью одновременно могло работать несколько пользователей.  
   
  Fabrikam использует элементы на схемах деятельности для представления оборудования обработки багажа. Каждая единица оборудования может иметь более подробную спецификацию на другой схеме, которая может находиться в другой модели. Ограничения проверки на схеме потока багажа могут извлекать соответствующие свойства оборудования из других схем. Ссылки на другие схемы хранятся в дополнительных свойствах, определенных в стереотипах.  
   
@@ -118,7 +113,7 @@ ms.locfileid: "51794768"
   
 |**Категория**|**Ссылки**|  
 |------------------|---------------|  
-|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [MSDN практические руководства: средства UML и расширяемость](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML в Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
+|**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [MSDN практические руководства: Средства UML и расширяемость](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Использование UML в Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**Форумы**|-   [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Блоги**|[Блог по Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -126,6 +121,3 @@ ms.locfileid: "51794768"
 ## <a name="see-also"></a>См. также  
  [Создание моделей для приложения](../modeling/create-models-for-your-app.md)   
  [Справочник по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

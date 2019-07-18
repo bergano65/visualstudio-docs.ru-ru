@@ -1,25 +1,20 @@
 ---
 title: XSLT Profiler | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 8e852628-99fc-4e6e-8602-e1c13dde3b95
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03e72ab9b1050bd63804f2695a6547524e555fa1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c42405a4c4fc850c80aa473dd846ededa281d66c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438840"
 ---
 # <a name="xslt-profiler"></a>Профилировщик XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +28,7 @@ ms.locfileid: "49306845"
  Профилировщик XSLT впервые был представлен в виде надстройки для Visual Studio 2008. Дополнительные сведения см. в разделе «Дополнительные ресурсы» на [XSLT Profiler for Visual Studio Feb 08 Community Technology Preview](http://go.microsoft.com/fwlink/?LinkId=142987) страницы.  
   
 > [!NOTE]
->  Внешний вид некоторых окон в Visual Studio 2010 может отличаться от изображенного в этих документах, так как некоторые визуальные элементы были изменены по сравнению с версией Visual Studio 2008.  
+> Внешний вид некоторых окон в Visual Studio 2010 может отличаться от изображенного в этих документах, так как некоторые визуальные элементы были изменены по сравнению с версией Visual Studio 2008.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Профилировщик XSLT](../xml-tools/walkthrough-xslt-profiler.md)
-
+ [Пошаговое руководство: Профилировщик XSLT](../xml-tools/walkthrough-xslt-profiler.md)

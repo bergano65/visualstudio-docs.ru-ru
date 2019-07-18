@@ -1,24 +1,19 @@
 ---
 title: Установка пакета SDK для Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- visual-studio-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: visual-studio-sdk
+ms.topic: conceptual
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9e5546b07ef9917590daa573efd99377339412c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 88a6266a3f5910def0bf5041a37f89c2b3d67416
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414465"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Установка пакета SDK для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,28 +24,28 @@ ms.locfileid: "51793559"
  Если вы хотите включить в установку Visual Studio на СТРАНИЦЕ, необходимо выполнить выборочную установку.  
   
 > [!NOTE]
->  В исполняемый файл установки называется Visual Studio SDK **средств расширения Visual Studio**.  
+> В исполняемый файл установки называется Visual Studio SDK **средств расширения Visual Studio**.  
   
-1.  Запустите программу установки Visual Studio 2015. Вы можете установить любой выпуск Visual Studio, кроме Express.  
+1. Запустите программу установки Visual Studio 2015. Вы можете установить любой выпуск Visual Studio, кроме Express.  
   
-2.  На первом экране выберите **Custom**, а не **по умолчанию**. Нажмите кнопку **Далее**.  
+2. На первом экране выберите **Custom**, а не **по умолчанию**. Нажмите кнопку **Далее**.  
   
-3.  Вы увидите древовидное представление пользовательских функций. Откройте **Общие средства**. Вы должны увидеть **средств расширения Visual Studio** .  
+3. Вы увидите древовидное представление пользовательских функций. Откройте **Общие средства**. Вы должны увидеть **средств расширения Visual Studio** .  
   
      ![VSSDKInstall](../extensibility/media/vssdkinstall.png "VSSDKInstall")  
   
-4.  Проверьте **средств расширения Visual Studio** , затем нажмите кнопку **Далее** и продолжить установку.  
+4. Проверьте **средств расширения Visual Studio** , затем нажмите кнопку **Далее** и продолжить установку.  
   
 ## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>Установка пакета SDK для Visual Studio после установки Visual Studio  
  Если вы решили установить пакет SDK для Visual Studio после завершения установки Visual Studio, необходимо выполнить следующую процедуру:  
   
-1.  Перейдите к **панель управления / программы / программы и компоненты**и найдите **Visual Studio 2015**. Вы можете установить Visual Studio SDK для любого выпуска Visual Studio 2015, кроме Express.  
+1. Перейдите к **панель управления / программы / программы и компоненты**и найдите **Visual Studio 2015**. Вы можете установить Visual Studio SDK для любого выпуска Visual Studio 2015, кроме Express.  
   
-2.  Щелкните правой кнопкой мыши **Visual Studio 2015**, а затем нажмите кнопку **изменение**. Вы увидите страницу установки.  
+2. Щелкните правой кнопкой мыши **Visual Studio 2015**, а затем нажмите кнопку **изменение**. Вы увидите страницу установки.  
   
-3.  Выполните ту же процедуру, как показано на **установка Visual Studio SDK как часть установки Visual Studio** выше.  
+3. Выполните ту же процедуру, как показано на **установка Visual Studio SDK как часть установки Visual Studio** выше.  
   
-4.  Нажмите кнопку **средств расширения Visual Studio** ссылку, чтобы установить пакет SDK для Visual Studio.  
+4. Нажмите кнопку **средств расширения Visual Studio** ссылку, чтобы установить пакет SDK для Visual Studio.  
   
 ## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>Установка пакета SDK для Visual Studio из решения  
  При открытии решения с проектом расширения без предварительной установки на СТРАНИЦЕ, вам будет предложено полосой выделенные сведения выше в обозревателе решений. Он должен выглядеть примерно следующим образом:  
@@ -67,10 +62,3 @@ vs_community.exe /s /installSelectableItems VS_SDK_GROUPV1
 ```  
   
  Обратите внимание на то, что необходимо использовать установщик Visual Studio, который соответствует установленной версии Visual Studio. Например если у вас есть Visual Studio Enterprise, установленной на компьютере, необходимо запустить установщик Visual Studio Enterprise (vs_enterprise.exe).
-
-
-
-
-
-
-

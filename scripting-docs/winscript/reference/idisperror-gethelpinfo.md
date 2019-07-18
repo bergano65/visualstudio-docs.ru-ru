@@ -2,7 +2,6 @@
 title: IDispError::GetHelpInfo | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c2c8ae3a3cff2485c50901bb94ced83098e6000
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: fa831ff511ea507e03ca858b93383ff38ead9039
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446910"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 Возвращает путь к файлу справки и идентификатор раздела справки, который описывает ее, если это возможно.  
@@ -58,7 +57,7 @@ HRESULT GetHelpInfo(
  Этот метод возвращает путь к файлу справки, а также идентификатор контекста в разделе, который описывает ее, если это возможно.  
   
 > [!NOTE]
->  Этот метод не реализован.  
+> Этот метод не реализован.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDispError](../../winscript/reference/idisperror-interface.md)

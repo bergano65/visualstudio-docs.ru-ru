@@ -1,28 +1,23 @@
 ---
-title: 'Пошаговое руководство: Структурирование | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Структурирование | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 897ff6a39716f424c40fa587d905847a0dbb3682
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201957"
 ---
-# <a name="walkthrough-outlining"></a>Пошаговое руководство. Структурирование
+# <a name="walkthrough-outlining"></a>Пошаговое руководство. Структуризация
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете реализовать функции на основе языка, такие как структурирование, определив типы областей текста, которые вы хотите развернуть или свернуть. Можно определить регионы в контексте службы языка, можно определить тип имени собственного файла расширения и содержимого и применить определение области только этот тип или определения области можно применить в существующий тип содержимого (например, «text»). В этом пошаговом руководстве показано, как для определения и отображения областей структуры.  
@@ -34,11 +29,11 @@ ms.locfileid: "51805272"
   
 #### <a name="to-create-a-mef-project"></a>Создание проекта MEF  
   
-1.  Создайте проект VSIX. Назовите решение `OutlineRegionTest`.  
+1. Создайте проект VSIX. Назовите решение `OutlineRegionTest`.  
   
-2.  Добавьте в проект шаблон элемента классификатора редактора. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Добавьте в проект шаблон элемента классификатора редактора. Дополнительные сведения см. в разделе [создание расширения с помощью шаблона элемента редактора](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Удалите файлы существующих классов.  
+3. Удалите файлы существующих классов.  
   
 ## <a name="implementing-an-outlining-tagger"></a>Реализация структуры средство создания тегов  
  Отметить областей структуры типа тегов (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Этот тег содержит стандартный структурирование поведение. Области можно разворачивать и сворачивать. Области помечается знак "плюс", если он свернут, или минус, если он развернут и развернутой области, обозначенного вертикальной линией.  
@@ -47,39 +42,39 @@ ms.locfileid: "51805272"
   
 #### <a name="to-implement-an-outlining-tagger"></a>Для реализации структуры средство создания тегов  
   
-1.  Добавьте файл класса с именем `OutliningTagger`.  
+1. Добавьте файл класса с именем `OutliningTagger`.  
   
-2.  Импортируйте следующие пространства имен.  
+2. Импортируйте следующие пространства имен.  
   
      [!code-csharp[VSSDKOutlineRegionTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#1)]
      [!code-vb[VSSDKOutlineRegionTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#1)]  
   
-3.  Создайте класс с именем `OutliningTagger`, и его реализация <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
+3. Создайте класс с именем `OutliningTagger`, и его реализация <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
   
      [!code-csharp[VSSDKOutlineRegionTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#2)]
      [!code-vb[VSSDKOutlineRegionTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#2)]  
   
-4.  Добавьте поля для отслеживания текстового буфера и моментальных снимков и накапливать наборы строк, которые должны использоваться как области структуры. Этот код включает список объектов области (должна определяться более поздней версии), представляющие области структуры.  
+4. Добавьте поля для отслеживания текстового буфера и моментальных снимков и накапливать наборы строк, которые должны использоваться как области структуры. Этот код включает список объектов области (должна определяться более поздней версии), представляющие области структуры.  
   
      [!code-csharp[VSSDKOutlineRegionTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#3)]
      [!code-vb[VSSDKOutlineRegionTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#3)]  
   
-5.  Добавьте конструктор средство создания тегов, который инициализирует поля, анализирует буфера, и добавляет обработчик событий для <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> событий.  
+5. Добавьте конструктор средство создания тегов, который инициализирует поля, анализирует буфера, и добавляет обработчик событий для <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> событий.  
   
      [!code-csharp[VSSDKOutlineRegionTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#4)]
      [!code-vb[VSSDKOutlineRegionTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#4)]  
   
-6.  Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> распространяется на метод, который создает экземпляр тега. В этом примере предполагается, что диапазоны <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> переданный в метод являются смежными, несмотря на то, что это не всегда может быть так. Этот метод создает новый диапазон с тегом для каждой из областей структуры.  
+6. Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> распространяется на метод, который создает экземпляр тега. В этом примере предполагается, что диапазоны <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> переданный в метод являются смежными, несмотря на то, что это не всегда может быть так. Этот метод создает новый диапазон с тегом для каждой из областей структуры.  
   
      [!code-csharp[VSSDKOutlineRegionTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#5)]
      [!code-vb[VSSDKOutlineRegionTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#5)]  
   
-7.  Объявите `TagsChanged` обработчик событий.  
+7. Объявите `TagsChanged` обработчик событий.  
   
      [!code-csharp[VSSDKOutlineRegionTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#6)]
      [!code-vb[VSSDKOutlineRegionTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#6)]  
   
-8.  Добавить `BufferChanged` обработчик событий, который отвечает на <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> события путем синтаксического анализа текстового буфера.  
+8. Добавить `BufferChanged` обработчик событий, который отвечает на <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> события путем синтаксического анализа текстового буфера.  
   
      [!code-csharp[VSSDKOutlineRegionTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#7)]
      [!code-vb[VSSDKOutlineRegionTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#7)]  
@@ -109,12 +104,12 @@ ms.locfileid: "51805272"
   
 #### <a name="to-implement-a-tagger-provider"></a>Реализация поставщика разметчика  
   
-1.  Создайте класс с именем `OutliningTaggerProvider` , реализующий <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>и экспортировать его с ContentType и TagType атрибутами.  
+1. Создайте класс с именем `OutliningTaggerProvider` , реализующий <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>и экспортировать его с ContentType и TagType атрибутами.  
   
      [!code-csharp[VSSDKOutlineRegionTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#12)]
      [!code-vb[VSSDKOutlineRegionTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#12)]  
   
-2.  Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> метод путем добавления `OutliningTagger` к свойствам буфера.  
+2. Реализуйте <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> метод путем добавления `OutliningTagger` к свойствам буфера.  
   
      [!code-csharp[VSSDKOutlineRegionTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#13)]
      [!code-vb[VSSDKOutlineRegionTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#13)]  
@@ -124,11 +119,11 @@ ms.locfileid: "51805272"
   
 #### <a name="to-build-and-test-the-outlineregiontest-solution"></a>Построение и тестирование решения OutlineRegionTest  
   
-1.  Постройте решение.  
+1. Постройте решение.  
   
-2.  При запуске этого проекта в отладчике создается второй экземпляр Visual Studio.  
+2. При запуске этого проекта в отладчике создается второй экземпляр Visual Studio.  
   
-3.  Создание текстового файла. Введите текст, который включает в себя открывающей фигурной скобки и закрывающей фигурной скобки.  
+3. Создание текстового файла. Введите текст, который включает в себя открывающей фигурной скобки и закрывающей фигурной скобки.  
   
     ```  
     [  
@@ -136,8 +131,7 @@ ms.locfileid: "51805272"
     ]  
     ```  
   
-4.  Должна существовать область структуры, включающий как фигурные скобки. Можно щелкнуть знак «минус» слева от открывающую фигурную скобку, чтобы свернуть область структуры. Если область свернута, символ многоточия (...) должен находиться слева от свернутой области, а всплывающее окно, содержащее текст **текст при наведении** должно появляться при перемещении указателя мыши на многоточие.  
+4. Должна существовать область структуры, включающий как фигурные скобки. Можно щелкнуть знак «минус» слева от открывающую фигурную скобку, чтобы свернуть область структуры. Если область свернута, символ многоточия (...) должен находиться слева от свернутой области, а всплывающее окно, содержащее текст **текст при наведении** должно появляться при перемещении указателя мыши на многоточие.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство. Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Пошаговое руководство: связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

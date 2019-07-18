@@ -1,7 +1,6 @@
 ---
 title: Команда Alias
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - tools.alias
@@ -14,22 +13,21 @@ helpviewer_keywords:
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa8b14618085ddae67616f5ef3e30fb1b030e45a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791849"
 ---
 # <a name="alias-command"></a>Команда Alias
 Создает псевдоним для полной команды, полной команды с аргументами или для другого псевдонима.
 
 > [!TIP]
 > Если ввести `>alias` без аргументов, отображается текущий список псевдонимов и их определений.
-
 
 ## <a name="syntax"></a>Синтаксис
 

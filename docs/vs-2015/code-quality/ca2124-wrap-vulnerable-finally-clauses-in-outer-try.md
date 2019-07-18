@@ -1,14 +1,9 @@
 ---
-title: 'CA2124: Помещайте уязвимые предложения finally во внешний блок try | Документация Майкрософт'
-ms.custom: ''
+title: CA2124. Помещайте уязвимые предложения finally во внешний блок try | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2124
 - WrapVulnerableFinallyClausesInOuterTry
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 77f58fbf79bb5d78b753acc3809d0d18803cf11a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de2bd0bfbf60ef717e00daaa668475cb43a9d35c
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899504"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890937"
 ---
-# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: помещайте уязвимые предложения finally во внешний блок try
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124. Ограничьте уязвимые предложения finally во внешних блоках try
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -44,7 +39,7 @@ ms.locfileid: "49899504"
  Это правило находит `try` / `finally` блоков в код, предназначенный для версий 1.0 и 1.1 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , могут быть раскрыты фильтры вредоносных исключений в стеке вызовов. Если конфиденциальные операции, такие как олицетворение возникает в блоке try, и возникает исключение, фильтр может быть выполнен до `finally` блока. В случае это означает, что фильтр будет выполнен от имени олицетворенного пользователя. Фильтры, в настоящее время может быть реализован только в Visual Basic.
 
 > [!WARNING]
->  **Примечание** в версиях 2.0 и более поздних версий [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], среда выполнения автоматически защищает `try` / `catch` /  `finally` заблокировать фильтры вредоносных исключений, если происходит сброс непосредственно в метод, содержащий блок исключений.
+> В версиях 2.0 и более поздних версий [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], среда выполнения автоматически защищает `try` / `catch` /  `finally` заблокировать фильтры вредоносных исключений, если происходит сброс непосредственно в методе, содержит блок исключений.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Поместите без оболочки `try` / `finally` в внешнем блоке try. См. во втором примере ниже. Это заставляет `finally` до кода фильтра.
@@ -88,6 +83,3 @@ catch()
     throw;
 }
 ```
-
-
-

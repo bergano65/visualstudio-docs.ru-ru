@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IDebugHelper | Документы Microsoft
+title: Интерфейс IDebugHelper | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f0f70ecb8ead264d0d4b074f8fc1d9e3a6091eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d1708b742a484a2e7d6d48cf759f15c08711e13d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979192"
 ---
 # <a name="idebughelper-interface"></a>Интерфейс IDebugHelper
-Служит в качестве фабрики для браузерах объектов и точек простого подключения. Диспетчер отладки процессов (PDM) реализует этот интерфейс, который используется обработчиков сценариев.  
+Служит в качестве фабрики для обозревателей объектов и простых точек подключения. Диспетчер отладки процессов (PDM) реализует этот интерфейс, который используются обработчиками скриптов.  
   
  Помимо методов, наследуемых от `IUnknown`, `IDebugHelper` интерфейс предоставляет следующие методы.  
   
@@ -30,6 +29,6 @@ ms.locfileid: "24727314"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)|Возвращает свойства браузера, являющийся оболочкой для типа VARIANT.|  
-|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|Возвращает обозреватель свойств, который создает оболочку для типа VARIANT и обеспечивает пользовательские преобразования значений типа VARIANT или типов VARTYPE в строки.|  
+|[IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)|Возвращает браузер свойств, который создает оболочку для типа VARIANT.|  
+|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|Возвращает браузер свойств, который заключает в оболочку типа VARIANT и позволяет выполнять пользовательские преобразование значениями VARIANT или типами VARTYPE в строки.|  
 |[IDebugHelper::CreateSimpleConnectionPoint](../../winscript/reference/idebughelper-createsimpleconnectionpoint.md)|Возвращает интерфейс событий, который создает оболочку для заданного `IDispatch` объекта.|

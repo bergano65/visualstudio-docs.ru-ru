@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: использование визуализатора | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Использование визуализатора | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
 - vs.debug.stringviewer
@@ -27,13 +22,13 @@ helpviewer_keywords:
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0f981b76d471658fe82e874901ad784a17841891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446431"
 ---
 # <a name="how-to-use-a-visualizer"></a>Практическое руководство. Использование визуализатора
 С помощью визуализатора можно отобразить содержимое переменной или объекта способом, отвечающим типу данных. Можно использовать визуализаторам из **подсказок по данным**, **Watch** окне **"Видимые"** окна, или **"Локальные"** окно.  
@@ -41,30 +36,30 @@ ms.locfileid: "51721925"
  Визуализаторы не поддерживаются в Compact Framework.  
   
 > [!NOTE]
->  В **Store** приложений, только стандартные текстовые визуализаторы HTML, XML и JSON поддерживаются. Пользовательские визуализаторы (то есть, созданные пользователем) не поддерживаются.  
+> В **Store** приложений, только стандартные текстовые визуализаторы HTML, XML и JSON поддерживаются. Пользовательские визуализаторы (то есть, созданные пользователем) не поддерживаются.  
   
 ### <a name="to-open-a-visualizer"></a>Чтобы открыть визуализатор  
   
-1.  Щелкните значок лупы рядом с именем переменной в **подсказок по данным**, **Watch** окне или в **"Видимые"**, **"Локальные"**, или **Контрольное значение** окна.  
+1. Щелкните значок лупы рядом с именем переменной в **подсказок по данным**, **Watch** окне или в **"Видимые"**, **"Локальные"**, или **Контрольное значение** окна.  
   
      Откроется список визуализаторов.  
   
-2.  Щелкните визуализатор, который необходимо использовать.  
+2. Щелкните визуализатор, который необходимо использовать.  
   
 ### <a name="to-use-a-visualizer-for-managed-code-during-remote-debugging"></a>Использование визуализатора для управляемого кода при удаленной отладке  
   
--   Скопируйте библиотеку DLL визуализатора на удаленный компьютер, прежде чем начать сеанс отладки.  
+- Скопируйте библиотеку DLL визуализатора на удаленный компьютер, прежде чем начать сеанс отладки.  
   
      Путь к библиотеке DLL на удаленном и локальном компьютерах должен быть одинаковым. Этот путь может быть одним из следующих:  
   
      *Путь установки Visual Studio* `\Common7\Packages\Debugger\Visualizers`  
   
-     - или -  
+     -или-  
   
      `My Documents\Visual Studio 2010\Visualizers` *Версия Visual Studio* `\Visualizers`  
   
 ## <a name="see-also"></a>См. также  
  [Создание настраиваемых визуализаторов](../debugger/create-custom-visualizers-of-data.md)   
- [Практическое: Установка визуализатора](../debugger/how-to-install-a-visualizer.md)   
- [Практическое: Написание визуализатора](../debugger/how-to-write-a-visualizer.md)   
+ [Практическое руководство. Установка визуализатора](../debugger/how-to-install-a-visualizer.md)   
+ [Практическое руководство. Написание визуализатора](../debugger/how-to-write-a-visualizer.md)   
  [Просмотр значений данных в подсказках по данным](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

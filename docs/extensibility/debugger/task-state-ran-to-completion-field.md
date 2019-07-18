@@ -5,35 +5,35 @@ ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_RAN_TO_COMPLETION field, Task class [.NET Framework debug engines]
 ms.assetid: 0f4830af-fe0c-4141-b768-817f4e426b8c
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4af0b4a2b3ef106aeb57e88440638d2b4a4c904
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a7108a9f17ee308c781e652fddc2c0fc6277e1d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830746"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331440"
 ---
 # <a name="taskstaterantocompletion-field"></a>Поле TASK_STATE_RAN_TO_COMPLETION
-Задача успешно завершена.  
-  
- **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Сборка:** mscorlib (в *mscorlib.dll*)  
-  
- Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```csharp  
-.field static assembly literal int32 TASK_STATE_RAN_TO_COMPLETION = int32(0x02000000)  
-```  
-  
-## <a name="remarks"></a>Примечания  
- Если [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) поле содержит это значение <xref:System.Threading.Tasks.Task.Status%2A> возвращает <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
-  
-## <a name="see-also"></a>См. также  
- [Класс Task](../../extensibility/debugger/task-class-internal-members.md)
+Задача успешно завершена.
+
+ **Пространство имен:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Сборка:** mscorlib (в *mscorlib.dll*)
+
+ Так как не удается получить доступ к внутреннему элементу из .NET Framework, следующий синтаксис предоставляется общего промежуточного языка (CIL).
+
+## <a name="syntax"></a>Синтаксис
+
+```csharp
+.field static assembly literal int32 TASK_STATE_RAN_TO_COMPLETION = int32(0x02000000)
+```
+
+## <a name="remarks"></a>Примечания
+ Если [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) поле содержит это значение <xref:System.Threading.Tasks.Task.Status%2A> возвращает <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.
+
+## <a name="see-also"></a>См. также
+- [Класс Task](../../extensibility/debugger/task-class-internal-members.md)

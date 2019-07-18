@@ -1,14 +1,9 @@
 ---
 title: Отладка веб-приложений | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4a20b83c5470f5184ab85f76904bd66756cf6ea2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d11969ecfbe9a7e3fd02ad289b0de95512b0b8f4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177496"
 ---
 # <a name="debugging-web-applications"></a>Отладка веб-приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51774062"
  [Отладка клиентского скрипта](../debugger/client-side-script-debugging.md)  
  Описаны скрипты тестирования и клиентские скрипты на страницах [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
- [Пошаговое руководство. Отладка веб-формы](../debugger/walkthrough-debugging-a-web-form.md)  
+ [Пошаговое руководство: Отладка веб-формы](../debugger/walkthrough-debugging-a-web-form.md)  
  Показано, как выполнить отладку веб-приложения [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
  [Практическое руководство. Отладка исключений ASP.NET](../debugger/how-to-debug-aspnet-exceptions.md)  
@@ -64,6 +59,3 @@ ms.locfileid: "51774062"
  [Параметры отладчика и подготовка](../debugger/debugger-settings-and-preparation.md)   
  [Основы отладки](../debugger/debugger-basics.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

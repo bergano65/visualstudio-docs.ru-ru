@@ -1,39 +1,34 @@
 ---
 title: Пакет SDK для окна справки (Майкрософт) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d56d71dd8c8e144c8a2267ed4571b661cca378c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 226762ef355a83a2539fa1402a4369398f9f52a4
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794703"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263154"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Пакет SDK окна справки (Майкрософт)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Эта статья содержит следующие задачи для интеграторов окна справки Visual Studio:
 
--   Создание раздела (поддержка F1)
+- Создание раздела (поддержка F1)
 
--   Создание пакета фирменной символики содержимого средства просмотра справки
+- Создание пакета фирменной символики содержимого средства просмотра справки
 
--   Развертывание набора статей
+- Развертывание набора статей
 
--   Добавление справочных для оболочки Visual Studio (изолированная или интегрированная)
+- Добавление справочных для оболочки Visual Studio (изолированная или интегрированная)
 
--   Дополнительные ресурсы
+- Дополнительные ресурсы
 
 ### <a name="creating-a-topic-f1-support"></a>Создание раздела (поддержка F1)
  Этот раздел содержит обзор компонентов, представленных раздела, требования раздела, приводится краткое описание способов создания раздела (в том числе требования к поддержке F1) и наконец, пример раздела с его результат.
@@ -66,7 +61,7 @@ ms.locfileid: "51794703"
 
   Поддерживаемые строки языка (без учета регистра):
 
-- JavaScript
+- javascript
 
 - c# или c#
 
@@ -137,20 +132,20 @@ ms.locfileid: "51794703"
 
  Текст (не включая верхний и нижний колонтитул) раздела будет содержать ссылки на страницы, раздел примечание, сворачиваемой области, фрагмент кода и раздел текста определенного языка.  Сведения об этих областях раздела, представленных в разделе фирменной символики.
 
-1.  Добавьте тег заголовка раздела:  `<div class="title">Contoso Topic 4</div>`
+1. Добавьте тег заголовка раздела:  `<div class="title">Contoso Topic 4</div>`
 
-2.  Добавьте раздел Примечание: `<div class="alert"> add your table tag and text </div>`
+2. Добавьте раздел Примечание: `<div class="alert"> add your table tag and text </div>`
 
-3.  Добавьте сворачиваемой области:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Добавьте сворачиваемой области:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  Добавьте фрагмент кода:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Добавьте фрагмент кода:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Добавить определенный текст кода языка: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Обратите внимание, что devLangnu = можно ввести другие языки. Например, devLangnu = «Fortran» будет отображаться Fortran при фрагмента кода DisplayLanguage = Fortran
+5. Добавьте код языка, определенный текст:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Обратите внимание, что devLangnu = можно ввести другие языки. Например, devLangnu = «Fortran» будет отображаться Fortran при фрагмента кода DisplayLanguage = Fortran
 
-6.  Добавьте ссылки на страницы: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Добавьте ссылки на страницы: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  Примечание: для неподдерживаемых new «Язык» (пример, F#, Кобол, ФОРТРАН) выделение кода цветом в фрагменте кода будет монохромная.
+> Примечание: для неподдерживаемых new «Язык» (пример, F#, Кобол, ФОРТРАН) выделение кода цветом в фрагменте кода будет монохромная.
 
  **Пример в справке средства просмотра** код иллюстрирует способ определения метаданных, фрагмент кода, сворачиваемой области и определенного текста с письмом.
 
@@ -289,11 +284,11 @@ some F# code
 
 - Возможности Visual Studio партнера (VSP) выдавать значение в наборе свойств F1 (prefix.keyword контейнер свойств и online URL-адрес для префикса, найден в реестре): F1 отправляет URL-адрес VSP + параметров браузера.
 
-- Функции Visual Studio (редактор языка, элементы меню Visual Studio, и т.д.): F1 отправляет URL-адрес Visual Studio в браузер.
+- Функции Visual Studio (редактор языка, элементы меню Visual Studio, и т.д.):  F1 отправляет URL-адрес Visual Studio в браузер.
 
   Если источник содержимого справки по умолчанию средство просмотра справки присвоить локальной справки (запустить в средстве просмотра справки):
 
-- Функции VSP, где ключевое слово F1 контейнер свойств и совпадают индекс локального хранилища (то есть контейнер prefix.keyword свойство = значение, найденное в локальном хранилище индекса): F1 отображает раздел в средстве просмотра справки.
+- Функции VSP, где ключевое слово F1 контейнер свойств и совпадают индекс локального хранилища (то есть контейнер prefix.keyword свойство = значение, найденное в локальном хранилище индекса):  F1 отображает раздел в средстве просмотра справки.
 
 - Функции Visual Studio (разверткой VSP-ФАЙЛЕ для переопределения контейнер свойств, извлекаемыми из возможностей Visual Studio): F1 отображает раздел в средстве просмотра справки Visual Studio.
 
@@ -301,17 +296,17 @@ some F# code
 
 1. Задайте **VendorContent** значение раздела реестра справки 2.1:
 
-   -   Для 32-разрядных операционных системах:
+   - Для 32-разрядных операционных системах:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-        «VendorContent» = DWORD: 00000001
+        "VendorContent"=dword:00000001
 
-   -   Для 64-разрядных операционных системах:
+   - Для 64-разрядных операционных системах:
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-        «VendorContent» = DWORD: 00000001
+        "VendorContent"=dword:00000001
 
 2. Зарегистрируйте пространство имен партнера в разделе реестра справки 2.1:
 
@@ -323,7 +318,7 @@ some F# code
 
    - Для 64-разрядных операционных системах:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\< пространство имен\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       «расположение «=» вне сети»
 
@@ -347,7 +342,7 @@ some F# code
 
   Добавьте следующий раздел реестра и значение:
 
-  Клавиша справки HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic: отображение вывода данных отладки в розничной: Да
+  HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic Help key: Для отображения вывода данных отладки в Розничная стоимость: да
 
   В интегрированной среде разработки, в пункте меню справки выберите «Отладка контекста справки»
 
@@ -364,7 +359,7 @@ some F# code
 |\< name="Microsoft.Help.Id meta» content = «[аргумент TopicID]» / >|Задает идентификатор для этого раздела. Этот тег является обязательным и должен использоваться только один раз в разделе. Идентификатор должен быть уникальным среди всех разделов в каталоге, которые имеют один и тот же параметр языкового стандарта. В другом разделе можно создать ссылку на этот раздел с помощью этого идентификатора.|
 |\< Meta name="Microsoft.Help.F1» content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ >|Указывает ключевое слово F1 для этого раздела. Можно указать несколько ключевых слов F1 для раздела, или этот тег можно опустить, если не хотите, чтобы в этом разделе, отображаемый, когда пользователь приложения нажимает клавишу F1. Как правило для раздела указывается только одно ключевое слово F1. Ключевые слова «F» из более ранних версиях справки можно преобразовать к этому свойству.|
 |\< Meta name = «Description» content = «[Описание раздела]» / >|Предоставляет краткое описание содержимого в этом разделе. Если этот тег используется в разделе, он должен использоваться только один раз. Это свойство осуществляется непосредственно в библиотеке запроса; не сохраняется в файле индекса.|
- name="Microsoft.Help.TocParent meta» content = «[parent_Id]» / >|Указывает своим родительским разделом этого раздела в содержании. Этот тег является обязательным и должен использоваться только один раз в разделе. Значение равно Microsoft.Help.Id родительского элемента. Раздел может иметь только в одном месте в таблице содержимое. «-1» считается идентификатор раздела для корневого Оглавления. В [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)], эта страница является домашней страницей справки. Это же причине, в частности мы добавим TocParent =-1 на некоторые разделы, чтобы убедиться, что они отображаются в верхнем уровне. Домашняя страница справки является страницей системы и таким образом. Если VSP пытается добавить страницу с Идентификатором -1, он может получить добавлен в набор содержимого, но окно справки всегда использует страницу системы – начальная страница окна справки|
+ meta name="Microsoft.Help.TocParent" content="[parent_Id]"/>|Указывает своим родительским разделом этого раздела в содержании. Этот тег является обязательным и должен использоваться только один раз в разделе. Значение равно Microsoft.Help.Id родительского элемента. Раздел может иметь только в одном месте в таблице содержимое. «-1» считается идентификатор раздела для корневого Оглавления. В [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)], эта страница является домашней страницей справки. Это же причине, в частности мы добавим TocParent =-1 на некоторые разделы, чтобы убедиться, что они отображаются в верхнем уровне. Домашняя страница справки является страницей системы и таким образом. Если VSP пытается добавить страницу с Идентификатором -1, он может получить добавлен в набор содержимого, но окно справки всегда использует страницу системы – начальная страница окна справки|
 |\< name="Microsoft.Help.TocOrder meta» content = «[положительное целое число]» / >|Указывает, где в оглавление в этом разделе отображается относительно его разделов однорангового узла. Этот тег является обязательным и должен использоваться только один раз в разделе. Значение представляет собой целое число. Указывает, является целым числом с меньшим значением в этом разделе отображается над на раздел, который указывает, является целым числом более высокого значения.|
 |\< name="Microsoft.Help.Product meta» content = «[product code]» / >|Указывает продукт, описанной в этом разделе. Если этот тег используется в разделе, он должен использоваться только один раз. Эта информация может также предоставляться как параметр, передаваемый индексатор справки.|
 |\< name="Microsoft.Help.ProductVersion meta» content = «[номер версии]» / >|Указывает версию продукта, описанной в этом разделе. Если этот тег используется в разделе, он должен использоваться только один раз. Эта информация может также предоставляться как параметр, передаваемый индексатор справки.|
@@ -377,7 +372,7 @@ some F# code
 
  Пакеты устанавливаются на продукт, содержащий средства просмотра справки.  Для продуктов Visual Studio:
 
-- Резервный пакет фирменной символики (Branding_\<языкового стандарта > .mshc) устанавливается в корне приложения средства просмотра справки 2.1 (пример: C:\Program Files (x86) \Microsoft Help Viewer\v2.1), языковой пакет средства просмотра справки.  Это используется для случаев, где не установлен продукт, фирменная символика пакета (содержимое не установлен) или где поврежден установленный пакет фирменной символики.  Элементы Visual Studio (логотип и обратная связь) учитываются при использовании приложения корневой резервный фирменной настройки пакета.
+- Резервный пакет фирменной символики (Branding_\<языкового стандарта > .mshc) устанавливается в корне приложения средства просмотра справки 2.1 (пример: C:\Program \Microsoft Help Viewer\v2.1 файлы (x86)), языковой пакет средства просмотра справки.  Это используется для случаев, где не установлен продукт, фирменная символика пакета (содержимое не установлен) или где поврежден установленный пакет фирменной символики.  Элементы Visual Studio (логотип и обратная связь) учитываются при использовании приложения корневой резервный фирменной настройки пакета.
 
 - При установке Visual Studio содержимое из службы содержимого пакета (для первого сценария установки содержимого времени) также устанавливается пакет фирменной символики.  Есть ли обновление для пакета фирменной символики, обновление устанавливается в случае следующего обновления содержимого или действия установки дополнительных пакетов.
 
@@ -447,7 +442,7 @@ some F# code
 |ExpandText|Expand|
 |CollapseText|Свернуть|
 |Функция:|**CodeSnippet**|
-|Использовать:|Текст элемента управления фрагмента кода.  Примечание: Содержимого фрагмента кода с местом «Не критическое» изменится на место.|
+|Использовать:|Текст элемента управления фрагмента кода.  Примечание. Пространство изменится содержимого фрагмента кода с местом «Не критическое».|
 |**Элемент**|**Значение**|
 |CopyToClipboard|Копировать в буфер обмена|
 |ViewColorizedText|Цветной вид|
@@ -562,22 +557,22 @@ some F# code
 |-|-|-|
 |**Файл**|**Используйте**|**Отображаемый источник содержимого**|
 |HomePage.htm|Это страница, на которой отображаются установленные содержимое и все остальные сообщения, подходящие для предоставления пользователю об их содержимое.  Этот файл содержит дополнительное содержимое «Microsoft.Help.Id» данных атрибута meta-«1", который помещает это содержимое в верхней части локального содержимого Оглавление.||
-||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, тег \<HomePageTitle >|
-||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, тег \<HomePageIntroduction >|
-||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.XML, тег \<HomePageContentInstallText >|
-||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Заголовок раздела тега Branding.xml\<HomePageInstalledBooks >, данные, созданные из приложения, \<HomePageNoBooksInstalled > Если никакие книги не установлены.|
-||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|Заголовок раздела тега Branding.xml \<HomePageHelpSettings >, раздел текста \<HomePageHelpSettingsText >.|
+||<META_HOME_PAGE_TITLE_ADD />|Branding.XML, тег \<HomePageTitle >|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding.XML, тег \<HomePageIntroduction >|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.XML, тег \<HomePageContentInstallText >|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|Заголовок раздела тега Branding.xml\<HomePageInstalledBooks >, данные, созданные из приложения, \<HomePageNoBooksInstalled > Если никакие книги не установлены.|
+||<HOME_PAGE_SETTINGS_SECTION_ADD />|Заголовок раздела тега Branding.xml \<HomePageHelpSettings >, раздел текста \<HomePageHelpSettingsText >.|
 |topiccorrupted.htm|Если существует раздел в локальном наборе, но для какой-либо причине не могут отображаться (повреждения содержимого).||
-||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.XML, тег \<TopicCorruptedTitle >|
-||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.XML, тег \<TopicCorruptedViewOnlineText >|
+||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.XML, тег \<TopicCorruptedTitle >|
+||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.XML, тег \<TopicCorruptedViewOnlineText >|
 |topicnotfound.htm|Если раздел не найден в локальное содержимое задано и недоступна online||
-||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.XML, тег \<TopicNotFoundTitle >|
-||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.XML, тег \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
-||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.XML, тег \<TopicNotFoundText >|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.XML, тег \<TopicNotFoundTitle >|
+||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.XML, тег \<TopicNotFoundText >|
 |contentnotinstalled.htm|Если нет локального содержимого, установленный для продукта.||
-||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.XML, тег \<ContentNotInstalledTitle >|
-||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.XML, тег \<ContentNotInstalledDownloadContentText >|
-||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.XML, тег \<ContentNotInstalledText >|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.XML, тег \<ContentNotInstalledTitle >|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.XML, тег \<ContentNotInstalledDownloadContentText >|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD />|Branding.XML, тег \<ContentNotInstalledText >|
 
  **CSS-файлов**
 
@@ -617,7 +612,7 @@ some F# code
 
  Примечание: в следующем примере реализация, мы добавили пакет фирменной символики. Это крайне важно для включения, чтобы получить необходимые элементы визуализация содержимого облегчают использование Visual Studio и поведение содержимого.
 
- Файл HelpContentSetup.msha пример: (Замените «содержимое имя набора 1» и «содержимого, имя набора 2» и т.д. с помощью имен файлов.)
+ Пример файла HelpContentSetup.msha. (Замените «содержимое имя набора 1» и «содержимого, имя набора 2» и т.д. с помощью имен файлов.)
 
 ```
 <html>
@@ -699,9 +694,9 @@ some F# code
 
 1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]
 
-2. [Visual Studio 2013 изолированной оболочки Redist](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)
+2. [Visual Studio 2013 изолированной оболочки Redist](https://aka.ms/VS2013/IsoShell-LP/all)
 
-   **Обзор набора средств Visual Studio для Unity**
+   **Обзор**
 
    [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Оболочки — это версия [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] интегрированной среды разработки, на котором можно построить приложение. Такие приложения содержат изолированной оболочки, а также расширения, создаваемые. Используйте шаблоны проектов изолированной оболочки, которые входят в состав [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] пакета SDK для создания расширений.
 
@@ -715,7 +710,7 @@ some F# code
 
    Создание хранилища содержимого Visual Studio. Сценарии интегрированной оболочки измените Visual Studio12 имя каталога продукта следующим образом:
 
-- Создайте папку C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12.
+- Create folder C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12.
 
 - Создайте файл с именем CatalogType.xml и добавьте его в папку. Файл должен содержать следующие строки кода:
 
@@ -728,11 +723,11 @@ some F# code
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
-   Ключ: LocationPath строковое значение: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\
+   Ключ LocationPath строковое значение: C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12\en-US
 
-   Ключ: CatalogName строковое значение: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] документации
+   Ключ CatalogName строковое значение: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Документация по
 
   **Создание проекта**
 
@@ -809,7 +804,7 @@ some F# code
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-США
 
-     Ключ: CatalogName строковое значение: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] документации. Для оболочки ISO это имя вашего каталога.
+     Ключ CatalogName строковое значение: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] документация. Для оболочки ISO это имя вашего каталога.
 
 15. Скопируйте содержимое (файлы CAB или MSHC и MSHA) в локальную папку.
 
@@ -825,7 +820,7 @@ some F# code
 
 ### <a name="additional-resources"></a>Дополнительные ресурсы
 
-API среды выполнения, см. в разделе [API справки Windows](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).
+API среды выполнения, см. в разделе [API справки Windows](https://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).
 
 Дополнительные сведения о том, как использовать API-Интерфейс справки см. в разделе [справки примеры кода средства просмотра](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e).
 

@@ -1,14 +1,9 @@
 ---
 title: Представление "Сведения о ресурсах" — сведения о состязаниях | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcedetails
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 98cc1d3f281108ef23f073ceae69d97fa3c0c32a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 922edcd45dd42c8da5a9ec4dc8d3e8f450ceea09
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782470"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823603"
 ---
 # <a name="resource-details-view---contention-data"></a>Представление "Сведения о ресурсах" — сведения о состязаниях
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,21 +31,21 @@ ms.locfileid: "51782470"
   
 #### <a name="to-magnify-a-timeline-segment"></a>Увеличение отрезка временной шкалы  
   
--   Перетащите указатель мыши по области временной шкалы.  
+- Перетащите указатель мыши по области временной шкалы.  
   
      Отпустите кнопку мыши, чтобы изменить соответствующим образом масштаб выбранных в представлении отрезков времени. Для дополнительного увеличения отрезка можно повторить процесс. Ползунок полосы прокрутки времени указывает относительный размер отрезка времени, отображаемого в представлении.  
   
 #### <a name="to-zoom-out-on-a-timeline"></a>Уменьшение масштаба временной шкалы  
   
--   Выполните одно из следующих действий.  
+- Выполните одно из следующих действий.  
   
-    -   Чтобы вернуться к прежнему масштабу, щелкните **Уменьшить**.  
-  
-    -   Чтобы в представлении отобразилась вся временная шкала, щелкните **Сброс масштаба**.  
-  
+  - Чтобы вернуться к прежнему масштабу, щелкните **Уменьшить**.  
+
+  - Чтобы в представлении отобразилась вся временная шкала, щелкните **Сброс масштаба**.  
+
 #### <a name="to-view-the-call-stack-of-an-event"></a>Просмотр стека вызовов события  
   
--   На временной шкале щелкните полосу события.  
+- На временной шкале щелкните полосу события.  
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Просмотр или правка исходного кода функции в стеке вызовов  
   
@@ -60,15 +55,12 @@ ms.locfileid: "51782470"
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>Просмотр дерева вызовов событий состязания для ресурса  
   
--   На временной шкале щелкните **Итого**.  
+- На временной шкале щелкните **Итого**.  
   
      Для ресурса отобразится представление "Состязания". Дополнительные сведения см. в разделе [Представление "Конфликты обращения к ресурсам"](../profiling/resource-contentions-view-contention-data.md).  
   
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>Просмотр всех событий состязания в потоке  
   
--   На временной шкале щелкните имя или идентификатор потока.  
+- На временной шкале щелкните имя или идентификатор потока.  
   
      Для выбранного потока отобразится представление "Сведения о потоке". Дополнительные сведения см. в разделе [Представление "Сведения о потоке"](../profiling/thread-details-view-contention-data.md).
-
-
-

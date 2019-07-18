@@ -7,28 +7,31 @@ helpviewer_keywords:
 - performance [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.performancecenter
-ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f60acd8e31f9a549406b4b8c40aacdd5327f335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569853"
 ---
 # <a name="optimize-visual-studio-performance"></a>Оптимизация производительности Visual Studio
 
 В этой статье предлагается ряд действий, которые можно попытаться выполнить, если среда Visual Studio работает медленно. Дополнительные рекомендации по повышению производительности можно найти в статье [Советы и рекомендации по улучшению работы Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md).
 
-## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Обновление до Visual Studio 2017 версии 15.6 или более поздней
+## <a name="upgrade-visual-studio"></a>Обновление Visual Studio
 
-Если в настоящее время вы используете Visual Studio 2015, скачайте [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) бесплатно, чтобы ознакомиться с улучшенными возможностями этой версии. В Visual Studio 2017 решения загружаются в два-три раза быстрее. Помимо этого, оптимизирована производительность и в других областях. Версия Visual Studio 2017 совместима с Visual Studio 2015, поэтому вы не потеряете ничего при пробном использовании.
+Если в настоящее время вы используете Visual Studio 2015, скачайте [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) или [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) бесплатно, чтобы ознакомиться с улучшенными возможностями этой версии. Решения загружаются в два-три раза быстрее, чем в Visual Studio 2015. Помимо этого, оптимизирована производительность и в других областях. Visual Studio 2017 и Visual Studio 2019 совместимы с Visual Studio 2015, поэтому вы не потеряете ничего при пробном использовании.
 
-Если в настоящее время вы используете Visual Studio 2017, убедитесь в том, что у вас установлена версия 15.6 или более поздняя. По данным тестирования, в версии 15.6 решения загружаются в два–три раза быстрее. Скачать эту версию можно [здесь](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+::: moniker range="vs-2017"
+
+Если вы уже используете Visual Studio 2017, убедитесь в том, что у вас установлена версия 15.6 или более поздняя. По данным тестирования, в версии 15.6 решения загружаются в два–три раза быстрее. Скачать эту версию можно [здесь](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
+
+::: moniker-end
 
 ## <a name="extensions-and-tool-windows"></a>Расширения и окна инструментов
 
@@ -46,9 +49,9 @@ ms.locfileid: "53832626"
 
 ## <a name="help-us-improve"></a>Помогите нам улучшить службу
 
-Ваши отзывы помогают нам улучшить качество наших продуктов. Используйте функцию **Сообщить о проблеме** чтобы записать данные трассировки и отправить их нам. Щелкните значок отзыва рядом с кнопкой **быстрого запуска** или выберите в строке меню **Справка** > **Отправить отзыв** > **Сообщить о проблеме**. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+Ваши отзывы помогают нам улучшить качество наших продуктов. Используйте функцию **Сообщить о проблеме** чтобы записать данные трассировки и отправить их нам. Щелкните значок отзыва рядом с кнопкой **быстрого запуска** или выберите в строке меню **Справка** > **Отправить отзыв** > **Сообщить о проблеме**. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>См. также
 
 - [Советы и рекомендации по производительности](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Блог Visual Studio. Ускорение загрузки решений в Visual Studio 2017 версии 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Блог Visual Studio. Ускорение загрузки решений в Visual Studio 2017 версии 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

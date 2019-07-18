@@ -1,25 +1,22 @@
 ---
 title: Навигация по модели UML | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158985"
 ---
 # <a name="navigate-the-uml-model"></a>Навигация по модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +30,9 @@ ms.locfileid: "51727775"
   
  Все типы, кроме IElement, наследуют свойства от одного или нескольких супертипов.  
   
--   Краткое описание типов модели, см. в разделе [типы элементов модели UML](../modeling/uml-model-element-types.md).  
+- Краткое описание типов модели, см. в разделе [типы элементов модели UML](../modeling/uml-model-element-types.md).  
   
--   Полные сведения об API см. в разделе [Справочник по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
+- Полные сведения об API см. в разделе [Справочник по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
   
 ### <a name="relationships"></a>Отношения  
  Свойства и связи, определенные в спецификации UML, реализуются в виде свойств .NET.  
@@ -48,7 +45,7 @@ ms.locfileid: "51727775"
   
  При удалении элемента из модели все связи, в которых он был задействован, автоматически удаляются с обновлением свойства на другом конце.  
   
- Если в спецификации UML для свойства задается кратность 0..1, оно может иметь значение `null`. Больше 1 означает, что свойство .NET имеет тип максимальная кратность: `IEnumerable<` *тип*`>`.  
+ Если в спецификации UML для свойства задается кратность 0..1, оно может иметь значение `null`. Максимальное значение кратности больше 1 означает, что свойство .NET имеет тип: `IEnumerable<`*Тип*`>`.  
   
  Дополнительные сведения о просмотре связей см. в разделе [переход по отношениям с помощью UML API](../modeling/navigate-relationships-with-the-uml-api.md).  
   
@@ -61,7 +58,7 @@ ms.locfileid: "51727775"
   
  Каждый элемент модели создается с владельцем. Дополнительные сведения см. в разделе [создание элементов и отношений в моделях UML](../modeling/create-elements-and-relationships-in-uml-models.md).  
   
- ![Схема классов: модель, схема, фигура и элемент](../modeling/media/uml-mm1.png "UML_MM1")  
+ ![Схема классов: Модель, схема, фигура и элемент](../modeling/media/uml-mm1.png "UML_MM1")  
   
 ## <a name="shapes-and-diagrams"></a>Фигуры и схемы  
  В модели UML элементы можно отобразить на схемах. На разных типах схем могут отображаться различные подтипы IElement.  
@@ -123,17 +120,14 @@ foreach (IShape<IInterface> in
 ```  
   
 ## <a name="accessing-another-model-or-diagrams"></a>Доступ к другой модели или схемам  
- Можно выполнить следующие действия.  
+ Можно выполнить следующие действия:  
   
--   Используйте шину модели [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для создания ссылок между элементами в разных моделях. Дополнительные сведения см. в разделе [интеграция моделей UML с другими моделями и средствами](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- Используйте шину модели [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для создания ссылок между элементами в разных моделях. Дополнительные сведения см. в разделе [интеграция моделей UML с другими моделями и средствами](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   Загружайте проект и схемы моделирования в режиме только для чтения, не делая их видимыми в пользовательском интерфейсе [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).  
+- Загружайте проект и схемы моделирования в режиме только для чтения, не делая их видимыми в пользовательском интерфейсе [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Дополнительные сведения см. в разделе [чтение модели UML в программном коде](../modeling/read-a-uml-model-in-program-code.md).  
   
--   Откройте проект моделирования и его схемы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и начните работу с содержимым. Дополнительные сведения см. в разделе [Открытие модели UML с помощью Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
+- Откройте проект моделирования и его схемы в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и начните работу с содержимым. Дополнительные сведения см. в разделе [Открытие модели UML с помощью Visual Studio API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
   
 ## <a name="see-also"></a>См. также  
  [Расширение моделей и схем UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Программирование с UML API](../modeling/programming-with-the-uml-api.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: Присоединение после запуска | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 416c05a7592d9f036a76a5d96537b4be917a0651
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 693cf6d746f51862415f2f30e46d48a998047f14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437437"
 ---
 # <a name="attaching-after-a-launch"></a>Присоединение после запуска
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,12 +25,12 @@ ms.locfileid: "51774709"
 ## <a name="design-decisions"></a>Проектные решения  
  Поскольку взаимодействие происходит проще в общих адресных пространств, необходимо решить, ли смысл для упрощения взаимодействия между сеанса отладки и DE или между DE и программой. Выберите один из следующих:  
   
--   Если более разумно для упрощения взаимодействия между сеанса отладки и DE, сеанс отладки совместно создает DE и запрашивает DE для присоединения к программе. При этом сеанс отладки и DE вместе в одно адресное пространство и среды выполнения и программы в другой.  
+- Если более разумно для упрощения взаимодействия между сеанса отладки и DE, сеанс отладки совместно создает DE и запрашивает DE для присоединения к программе. При этом сеанс отладки и DE вместе в одно адресное пространство и среды выполнения и программы в другой.  
   
--   Если смысл для упрощения взаимодействия между DE и программой, среда выполнения совместно создает DE. Это оставляет SDM в одно адресное пространство и DE, среды выполнения и программы в другой. Это характерно для DE, который реализуется с помощью интерпретатора для запуска сценария языков.  
+- Если смысл для упрощения взаимодействия между DE и программой, среда выполнения совместно создает DE. Это оставляет SDM в одно адресное пространство и DE, среды выполнения и программы в другой. Это характерно для DE, который реализуется с помощью интерпретатора для запуска сценария языков.  
   
     > [!NOTE]
-    >  Как DE присоединяется к программе зависит от реализации. Обмен данными между DE и программы также зависит от реализации.  
+    > Как DE присоединяется к программе зависит от реализации. Обмен данными между DE и программы также зависит от реализации.  
   
 ## <a name="implementation"></a>Реализация  
  Программным образом, когда диспетчер отладки сеансов (SDM) сначала получает [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) объект, представляющий программу для запуска, он вызывает [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) метод, передав ему [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) объект, который затем используется для передачи событий отладки SDM. `IDebugProgram2::Attach` Затем вызывает метод [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) метод. Дополнительные сведения о том, как получает SDM `IDebugProgram2` интерфейсом, см. в разделе [уведомление порта](../../extensibility/debugger/notifying-the-port.md).  
@@ -62,4 +57,3 @@ ms.locfileid: "51774709"
  [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   
  [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
  [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)
-

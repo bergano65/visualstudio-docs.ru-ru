@@ -1,27 +1,22 @@
 ---
 title: Создание экземпляров проекта с помощью фабрик проектов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 358c13bdc8bc312a479b9c316fa516ad68b10630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f26b11aaf74b73535c82ebcd6422f3be0bba3f22
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736248"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697207"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Создание экземпляров проекта с помощью фабрик проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51736248"
   
  Вы можете реализовать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> интерфейса в класс в проекте. Как правило он располагается в свой собственный модуль.  
   
- Пример реализации `IVsProjectFactory` интерфейсом, см. в разделе PrjFac.cpp, содержащийся в [базовый проект](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) каталог образцов.  
+ Пример реализации `IVsProjectFactory` интерфейсом, см. в разделе PrjFac.cpp, содержащийся в [базовый проект](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) каталог образцов.  
   
  Проекты, поддерживающие статистически владелец должен сохранять ключ владельца в своем файле проекта. При <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> был вызван над проектом с помощью ключа владельца, принадлежащий проект преобразует его владелец ключа в фабрику проекта, затем вызывает GUID `CreateProject` метод данной фабрикой проекта, чтобы сделать фактическое создание.  
   
@@ -57,5 +52,4 @@ ms.locfileid: "51736248"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
- [Контрольный список. Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)
-
+ [Контрольный список. Создание новых типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)

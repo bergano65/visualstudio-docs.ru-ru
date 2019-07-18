@@ -1,14 +1,9 @@
 ---
 title: Функция SccQueryInfo | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7093f712ab520502e36094ec571c0ee1a3ded18
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f951e7ef29fbba7225997276b31bd9f32731efc8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199988"
 ---
 # <a name="sccqueryinfo-function"></a>Функция SccQueryInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Запрос выполнен успешно.|  
 |SCC_E_ACCESSFAILURE|Возникла проблема с доступом к системе управления версиями, возможно, причиной проблемы с сетью или конфликтов. Рекомендуется повторить операцию.|  
@@ -70,15 +65,14 @@ SCCRTN SccQueryInfo(
   
  При использовании этой функции для извлечения файлов, обратите внимание на следующие `MSSCCI` состояние требований:  
   
--   `SCC_STATUS_OUTBYUSER` задается, если текущий пользователь извлек файл.  
+- `SCC_STATUS_OUTBYUSER` задается, если текущий пользователь извлек файл.  
   
--   `SCC_STATUS_CHECKEDOUT` нельзя назначить Если `SCC_STATUS_OUTBYUSER` имеет значение.  
+- `SCC_STATUS_CHECKEDOUT` нельзя назначить Если `SCC_STATUS_OUTBYUSER` имеет значение.  
   
--   `SCC_STATUS_CHECKEDOUT` задается только если файл извлечен в указанный рабочий каталог.  
+- `SCC_STATUS_CHECKEDOUT` задается только если файл извлечен в указанный рабочий каталог.  
   
--   Если файл извлечен текущим пользователем в каталоге, отличном от рабочем каталоге, `SCC_STATUS_OUTBYUSER` устанавливается, но `SCC_STATUS_CHECKEDOUT` не является.  
+- Если файл извлечен текущим пользователем в каталоге, отличном от рабочем каталоге, `SCC_STATUS_OUTBYUSER` устанавливается, но `SCC_STATUS_CHECKEDOUT` не является.  
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля управления источника](../extensibility/source-control-plug-in-api-functions.md)   
  [Код состояния файла](../extensibility/file-status-code-enumerator.md)
-

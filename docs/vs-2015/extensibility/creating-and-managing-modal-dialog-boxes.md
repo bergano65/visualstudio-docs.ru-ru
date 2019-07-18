@@ -1,26 +1,21 @@
 ---
 title: Создание и управление ими модальные диалоговые окна | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4ef32fa43a1242ce8220f9e6454dbac03f0f5ad7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29b0066f201fbb791d471d5cfb433d9a335aa775
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431580"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Создание модальных диалоговых окон и управление ими
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,32 +28,32 @@ ms.locfileid: "51736625"
   
 ## <a name="creating-a-dialog-box-derived-from-dialogwindow"></a>Создание диалогового окна производным от DialogWindow  
   
-1.  Создайте проект VSIX с именем **OpenDialogTest** и добавьте команду меню с именем **OpenDialog**. Дополнительные сведения о том, как это сделать, см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Создайте проект VSIX с именем **OpenDialogTest** и добавьте команду меню с именем **OpenDialog**. Дополнительные сведения о том, как это сделать, см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Чтобы использовать <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> класса, необходимо добавить ссылки на следующие сборки (на вкладке «платформы» **добавить ссылку** диалоговое окно):  
+2. Чтобы использовать <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> класса, необходимо добавить ссылки на следующие сборки (на вкладке «платформы» **добавить ссылку** диалоговое окно):  
   
-    -   PresentationCore  
+    - PresentationCore  
   
-    -   PresentationFramework  
+    - PresentationFramework  
   
-    -   WindowsBase  
+    - WindowsBase  
   
-    -   System.Xaml  
+    - System.Xaml  
   
-3.  В OpenDialog.cs, добавьте следующий `using` инструкции:  
+3. В OpenDialog.cs, добавьте следующий `using` инструкции:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
     ```  
   
-4.  Объявите класс с именем **TestDialogWindow** , наследуемый от класса <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
+4. Объявите класс с именем **TestDialogWindow** , наследуемый от класса <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
   
     ```csharp  
     class TestDialogWindow : DialogWindow  
     {. . .}  
     ```  
   
-5.  Чтобы обеспечить свернуть или развернуть окно, задайте <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> и <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> значение true:  
+5. Чтобы обеспечить свернуть или развернуть окно, задайте <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> и <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> значение true:  
   
     ```csharp  
     internal TestDialogWindow()  
@@ -68,40 +63,40 @@ ms.locfileid: "51736625"
     }  
     ```  
   
-6.  В **OpenDialog.ShowMessageBox** метод, замените существующий код следующим:  
+6. В **OpenDialog.ShowMessageBox** метод, замените существующий код следующим:  
   
     ```csharp  
     TestDialogWindow testDialog = new TestDialogWindow();  
     testDialog.ShowModal();  
     ```  
   
-7.  Выполните сборку и запуск приложения. Откроется экспериментальный экземпляр Visual Studio. На **средства** меню экспериментального экземпляра вы увидите команду с именем **вызвать OpenDialog**. При выполнении этой команды вы увидите диалоговое окно. Можно свести к минимуму и полностью развернуть окно.  
+7. Выполните сборку и запуск приложения. Откроется экспериментальный экземпляр Visual Studio. На **средства** меню экспериментального экземпляра вы увидите команду с именем **вызвать OpenDialog**. При выполнении этой команды вы увидите диалоговое окно. Можно свести к минимуму и полностью развернуть окно.  
   
 ## <a name="creating-and-managing-a-dialog-box-not-derived-from-dialogwindow"></a>Создание и управление ими диалоговое окно, не являющиеся производными DialogWindow  
   
-1.  Для выполнения этой процедуры можно использовать **OpenDialogTest** решение, созданное в предыдущей процедуре, с тем же ссылки на сборки.  
+1. Для выполнения этой процедуры можно использовать **OpenDialogTest** решение, созданное в предыдущей процедуре, с тем же ссылки на сборки.  
   
-2.  Добавьте следующий `using` объявления:  
+2. Добавьте следующий `using` объявления:  
   
     ```csharp  
     using System.Windows;  
     using Microsoft.Internal.VisualStudio.PlatformUI;  
     ```  
   
-3.  Создайте класс с именем **TestDialogWindow2** , наследуемый от класса <xref:System.Windows.Window>:  
+3. Создайте класс с именем **TestDialogWindow2** , наследуемый от класса <xref:System.Windows.Window>:  
   
     ```csharp  
     class TestDialogWindow2 : Window  
     {. . .}  
     ```  
   
-4.  Добавьте ссылку на закрытый <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+4. Добавьте ссылку на закрытый <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```  
     private IVsUIShell shell;  
     ```  
   
-5.  Добавьте конструктор, который задает ссылку на <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+5. Добавьте конструктор, который задает ссылку на <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```csharp  
     public TestDialogWindow2(IVsUIShell uiShell)  
@@ -110,7 +105,7 @@ ms.locfileid: "51736625"
     }  
     ```  
   
-6.  В **OpenDialog.ShowMessageBox** метод, замените существующий код следующим:  
+6. В **OpenDialog.ShowMessageBox** метод, замените существующий код следующим:  
   
     ```csharp  
     IVsUIShell uiShell = (IVsUIShell)ServiceProvider.GetService(typeof(SVsUIShell));  
@@ -132,5 +127,4 @@ ms.locfileid: "51736625"
     }  
     ```  
   
-7.  Выполните сборку и запуск приложения. На **средства** меню вы увидите команду с именем **вызвать OpenDialog**. При выполнении этой команды вы увидите диалоговое окно.
-
+7. Выполните сборку и запуск приложения. На **средства** меню вы увидите команду с именем **вызвать OpenDialog**. При выполнении этой команды вы увидите диалоговое окно.

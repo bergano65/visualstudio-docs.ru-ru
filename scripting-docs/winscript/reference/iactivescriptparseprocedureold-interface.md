@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IActiveScriptParseProcedureOld | Документы Microsoft
+title: Интерфейс IActiveScriptParseProcedureOld | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,25 +17,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99cff9cd4d04c5d25489b6cc4c9b9af93792dc2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 520d3f1414447abfc7c018d36853b72aefbbf15f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386170"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>Интерфейс IActiveScriptParseProcedureOld
-Позволяет исходный текст кода для процедуры для добавления в скрипт. Интерпретируемые языки сценариев, которые не имеют независимые среду разработки, таких как VBScript, это предоставляет альтернативный механизм (отличного от `IActiveScriptParse` или `IPersist*`) для добавления скрипта процедуры пространства имен.  
+Позволяет текстом исходного кода для процедуры для добавления в скрипт. Интерпретируемые языки сценариев, у которых нет независимых среду разработки, таких как VBScript, это предоставляет альтернативный механизм (отличное от `IActiveScriptParse` или `IPersist*`) Добавление процедуры с помощью сценариев в пространстве имен.  
   
 > [!NOTE]
->  Этот интерфейс является устаревшим для `IActiveScriptParseProcedure` интерфейса.  
+> Этот интерфейс устарел, вместо него используется `IActiveScriptParseProcedure` интерфейс.  
   
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IActiveScriptParseProcedureOld` интерфейс предоставляет следующие методы.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Выполняет синтаксический анализ кода данной процедуры и добавляет процедуру в пространство имен.|  
+|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Выполняет синтаксический анализ данного кода процедуры и добавляет процедуру в пространстве имен.|  
   
 ## <a name="see-also"></a>См. также  
  [IActiveScriptParseProcedure](../../winscript/reference/iactivescriptparseprocedure.md)

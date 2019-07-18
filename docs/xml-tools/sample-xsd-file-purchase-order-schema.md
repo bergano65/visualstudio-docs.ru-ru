@@ -1,20 +1,19 @@
 ---
 title: 'Образец XSD-файла: Схема заказа на покупку'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7b26fdef946d37824c0595821541b3cb2adce20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bea23307c5d35e997f41e4ec9cbfd41fa41bdee
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941483"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455112"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Образец XSD-файла: схема заказа на покупку
 
@@ -87,3 +86,6 @@ ms.locfileid: "53941483"
   </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> Использованные в примерах компании, организации, продукты, доменные имена, адреса электронной почты, эмблемы, имена людей, географические названия и события являются вымышленными. Любые совпадения с реальными предприятиями, организациями, товарами, именами доменов, адресами электронной почты, эмблемами, лицами, местами и событиями являются случайными и непреднамеренными.

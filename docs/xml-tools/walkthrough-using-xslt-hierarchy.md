@@ -1,17 +1,16 @@
 ---
 title: Пошаговое руководство. Использование XSLT иерархии
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 65af5f973f9440ac781a8af1042700cf89acee1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808163"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Пошаговое руководство. Использование XSLT иерархии
 
@@ -70,7 +69,7 @@ ms.locfileid: "53834728"
     </xsl:stylesheet>
     ```
 
-3.  Добавьте следующий *xslinclude.xsl* файла:
+3. Добавьте следующий *xslinclude.xsl* файла:
 
     ```xml
     <?xml version='1.0'?>
@@ -104,12 +103,12 @@ ms.locfileid: "53834728"
     </xsl:stylesheet>
     ```
 
-4.  Добавьте точку останова в инструкцию `<xsl:include href="xslincludefile.xsl" />`.
+4. Добавьте точку останова в инструкцию `<xsl:include href="xslincludefile.xsl" />`.
 
-5.  Приступите к отладке.
+5. Приступите к отладке.
 
-6.  Когда отладчик останавливается в инструкцию `<xsl:include href="xslincludefile.xsl" />`, нажмите клавишу **шаг с заходом** кнопки. Отладка может быть продолжена в таблице стилей, на который указывает ссылка. Иерархия видима, а конструктор отображает верный путь.
+6. Когда отладчик останавливается в инструкцию `<xsl:include href="xslincludefile.xsl" />`, нажмите клавишу **шаг с заходом** кнопки. Отладка может быть продолжена в таблице стилей, на который указывает ссылка. Иерархия видима, а конструктор отображает верный путь.
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство: Профилировщик XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+- [Профилировщик XSLT](../xml-tools/xslt-profiler.md)

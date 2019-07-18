@@ -1,21 +1,43 @@
 ---
 title: Диалоговое окно "Параметры", папка "Текстовый редактор", параметры "Все языки", "Полосы прокрутки"
 ms.date: 10/25/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.Basic.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.CSharp.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.CoffeeScript.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.CSS.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.Dockerfile.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.F%2523.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.HQL.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.HTML.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.HTMLX.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.JavaScript.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.JSON.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.LESS.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.Plain_Text.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.ResJSON.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.SCSS.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.SQL_Server_Tools.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.StreamAnalytics.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.T-SQL90.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.U-SQL.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.XAML.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881f995dc8f4c675691f7eaa63d26acefd4b3d01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a753574e883872780446929f7c2349b0d726c71a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817588"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Диалоговое окно "Параметры", папка "Текстовый редактор", параметры "Все языки", "Полосы прокрутки"
 Это диалоговое окно позволяет изменять стандартное поведение полосы прокрутки редактора кода. Чтобы отобразить эти параметры, выберите в меню **Сервис** пункт **Параметры**. В папке **Текстовый редактор** разверните вложенную папку **Все языки**, а затем выберите **Полосы прокрутки**.
@@ -37,7 +59,7 @@ ms.locfileid: "53876790"
 
 Выберите, будет ли вертикальная полоса прокрутки отображать следующие заметки:
 
-- изменена
+- изменения
 - метки
 - ошибки
 - положение курсора.

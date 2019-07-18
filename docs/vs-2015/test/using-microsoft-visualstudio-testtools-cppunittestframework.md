@@ -1,24 +1,19 @@
 ---
 title: Использование пространства имен Microsoft.VisualStudio.TestTools.CppUnitTestFramework | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 68f083bf6aa99177f6b9e697be8affa5d29804a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 77bf44460bf9670cc53703fbf3b4836016135999
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889611"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705872"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Использование пространства имен Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,18 +24,18 @@ ms.locfileid: "49889611"
   
  Файлы библиотек расположены в папке _папка_установки_Visual_Studio_2012[x86]_**\VC\UnitTest\lib**.  
   
-##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
+## <a name="BKMK_In_this_topic"></a> Содержание раздела  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
 - [Создание тестовых классов и методов](#BKMK_Create_test_classes_and_methods)  
   
 - [Инициализация и очистка](#BKMK_Initialize_and_cleanup)  
   
-  -   [Методы тестов](#BKMK_Test_methods)  
+  - [Методы тестов](#BKMK_Test_methods)  
   
-  -   [Тестовые классы](#BKMK_Test_classes)  
+  - [Тестовые классы](#BKMK_Test_classes)  
   
-  -   [Модули тестов](#BKMK_Test_modules)  
+  - [Модули тестов](#BKMK_Test_modules)  
   
 - [Создание атрибутов тестов](#BKMK_Create_test_attributes)  
   
@@ -56,37 +51,37 @@ ms.locfileid: "49889611"
   
   - [Общие утверждения](#BKMK_General_Asserts)  
   
-    -   [Проверка на равенство](#BKMK_General_Are_Equal)  
+    - [Проверка на равенство](#BKMK_General_Are_Equal)  
   
-    -   [Проверка на неравенство](#BKMK_General_Are_Not_Equal)  
+    - [Проверка на неравенство](#BKMK_General_Are_Not_Equal)  
   
-    -   [Ссылаются на один и тот же объект](#BKMK_General_Are_Same)  
+    - [Ссылаются на один и тот же объект](#BKMK_General_Are_Same)  
   
-    -   [Не ссылаются на один и тот же объект](#BKMK_General_Are_Not_Same)  
+    - [Не ссылаются на один и тот же объект](#BKMK_General_Are_Not_Same)  
   
-    -   [Имеет значение Null](#BKMK_General_Is_Null)  
+    - [Имеет значение Null](#BKMK_General_Is_Null)  
   
-    -   [Имеет значение не Null](#BKMK_General_Is_Not_Null)  
+    - [Имеет значение не Null](#BKMK_General_Is_Not_Null)  
   
-    -   [Условие имеет значение true](#BKMK_General_Is_True)  
+    - [Условие имеет значение true](#BKMK_General_Is_True)  
   
-    -   [Условие имеет значение false](#BKMK_General_Is_False)  
+    - [Условие имеет значение false](#BKMK_General_Is_False)  
   
-    -   [Не пройден](#BKMK_General_Fail)  
+    - [Не пройден](#BKMK_General_Fail)  
   
   - [Утверждения среды выполнения Windows](#BKMK_WinRT_Asserts)  
   
-    -   [Проверка на равенство](#BKMK_WinRT_Are_Equal)  
+    - [Проверка на равенство](#BKMK_WinRT_Are_Equal)  
   
-    -   [Ссылаются на один и тот же объект](#BKMK_WinRT_Are_Same)  
+    - [Ссылаются на один и тот же объект](#BKMK_WinRT_Are_Same)  
   
-    -   [Проверка на неравенство](#BKMK_WinRT_Are_Not_Equal)  
+    - [Проверка на неравенство](#BKMK_WinRT_Are_Not_Equal)  
   
-    -   [Не ссылаются на один и тот же объект](#BKMK_WinRT_Are_Not_Same)  
+    - [Не ссылаются на один и тот же объект](#BKMK_WinRT_Are_Not_Same)  
   
-    -   [Имеет значение Null](#BKMK_WinRT_Is_Null)  
+    - [Имеет значение Null](#BKMK_WinRT_Is_Null)  
   
-    -   [Имеет значение не Null](#BKMK_WinRT_Is_Not_Null)  
+    - [Имеет значение не Null](#BKMK_WinRT_Is_Not_Null)  
   
   - [Утверждения об исключениях](#BKMK_Exception_Asserts)  
   
@@ -98,9 +93,9 @@ ms.locfileid: "49889611"
   
     - [Запись сообщения](#BKMK_Write_Message)  
   
-##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
+## <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   
-###  <a name="BKMK_Create_test_classes_and_methods"></a> Создание тестовых классов и методов  
+### <a name="BKMK_Create_test_classes_and_methods"></a> Создание тестовых классов и методов  
   
 ```cpp  
 TEST_CLASS(className)  
@@ -118,9 +113,9 @@ TEST_METHOD(methodName)
   
  Определяет *methodName* как метод теста. `TEST_METHOD` необходимо объявить в области класса метода.  
   
-###  <a name="BKMK_Initialize_and_cleanup"></a> Инициализация и очистка  
+### <a name="BKMK_Initialize_and_cleanup"></a> Инициализация и очистка  
   
-####  <a name="BKMK_Test_methods"></a> Методы тестов  
+#### <a name="BKMK_Test_methods"></a> Методы тестов  
   
 ```cpp  
 TEST_METHOD_INITIALIZE(methodName)   
@@ -142,7 +137,7 @@ TEST_METHOD_CLEANUP(methodName)
   
  Определяет *methodName* в качестве метода, который выполняется после выполнения каждого метода теста. `TEST_METHOD_CLEANUP` может быть определен только один раз в тестовом классе и должен быть определен в его области.  
   
-####  <a name="BKMK_Test_classes"></a> Тестовые классы  
+#### <a name="BKMK_Test_classes"></a> Тестовые классы  
   
 ```cpp  
 TEST_CLASS_INITIALIZE(methodName)   
@@ -164,7 +159,7 @@ TEST_CLASS_CLEANUP(methodName)
   
  Определяет *methodName* в качестве метода, который выполняется после создания каждого тестового класса. `TEST_CLASS_CLEANUP` может быть определен только один раз в тестовом классе и должен быть определен в его области.  
   
-####  <a name="BKMK_Test_modules"></a> Модули тестов  
+#### <a name="BKMK_Test_modules"></a> Модули тестов  
   
 ```cpp  
 TEST_MODULE_INITIALIZE(methodName)  
@@ -181,9 +176,9 @@ TEST_MODULE_CLEANUP(methodName)
   
  Определяет метод *methodName*, который выполняется, когда модуль выгружается. `TEST_MODULE_CLEANUP` может быть определен только один раз в модуле теста и должен быть объявлен в области пространства имен.  
   
-###  <a name="BKMK_Create_test_attributes"></a> Создание атрибутов тестов  
+### <a name="BKMK_Create_test_attributes"></a> Создание атрибутов тестов  
   
-####  <a name="BKMK_Test_method_attributes"></a> Атрибуты метода теста  
+#### <a name="BKMK_Test_method_attributes"></a> Атрибуты метода теста  
   
 ```cpp  
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)   
@@ -196,7 +191,7 @@ END_TEST_METHOD_ATTRIBUTE()
   
  Макрос `TEST_METHOD_ATTRIBUTE` определяет атрибут с именем *attributeName* и значением *attributeValue*.  
   
-####  <a name="BKMK_Test_class_attributes"></a> Атрибуты тестового класса  
+#### <a name="BKMK_Test_class_attributes"></a> Атрибуты тестового класса  
   
 ```cpp  
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)   
@@ -209,7 +204,7 @@ END_TEST_CLASS_ATTRIBUTE()
   
  Макрос `TEST_CLASS_ATTRIBUTE` определяет атрибут с именем *attributeName* и значением *attributeValue*.  
   
-####  <a name="BKMK_Test_module_attributes"></a> Атрибуты модуля теста  
+#### <a name="BKMK_Test_module_attributes"></a> Атрибуты модуля теста  
   
 ```cpp  
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)   
@@ -222,7 +217,7 @@ END_TEST_MODULE_ATTRIBUTE()
   
  Макрос `TEST_MODULE_ATTRIBUTE` определяет атрибут с именем *attributeName* и значением *attributeValue*.  
   
-####  <a name="BKMK_Pre_defined_attributes"></a> Стандартные атрибуты  
+#### <a name="BKMK_Pre_defined_attributes"></a> Стандартные атрибуты  
  Стандартные макросы атрибутов можно заменить макросами `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE` или `TEST_MODULE_ATTRIBUTE`, описанными выше.  
   
 ```cpp  
@@ -255,11 +250,11 @@ TEST_IGNORE()
   
  Определите атрибут с именем `Ignore` и значением `true`.  
   
-##  <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h  
+## <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h  
   
-###  <a name="BKMK_General_Asserts"></a> Общие утверждения  
+### <a name="BKMK_General_Asserts"></a> Общие утверждения  
   
-####  <a name="BKMK_General_Are_Equal"></a> Проверка на равенство  
+#### <a name="BKMK_General_Are_Equal"></a> Проверка на равенство  
  Проверяет, равны ли два объекта.  
   
 ```cpp  
@@ -315,7 +310,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Not_Equal"></a> Проверка на неравенство  
+#### <a name="BKMK_General_Are_Not_Equal"></a> Проверка на неравенство  
  Проверяет неравенство двух объектов типа double.  
   
 ```cpp  
@@ -371,7 +366,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Same"></a> Ссылаются на один и тот же объект  
+#### <a name="BKMK_General_Are_Same"></a> Ссылаются на один и тот же объект  
  Проверяет, указывают ли две ссылки на один и тот же экземпляр объекта (идентификатор).  
   
 ```cpp  
@@ -383,7 +378,7 @@ static void AreSame(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Not_Same"></a> Не ссылаются на один и тот же объект  
+#### <a name="BKMK_General_Are_Not_Same"></a> Не ссылаются на один и тот же объект  
  Проверяет, что две ссылки не указывают на один и тот же экземпляр объекта (идентификатор).  
   
 ```cpp  
@@ -395,7 +390,7 @@ static void AreNotSame (
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_Null"></a> Имеет значение Null  
+#### <a name="BKMK_General_Is_Null"></a> Имеет значение Null  
  Проверяет, имеет ли указатель значение NULL.  
   
 ```cpp  
@@ -406,7 +401,7 @@ static void IsNull(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_Not_Null"></a> Имеет значение не Null  
+#### <a name="BKMK_General_Is_Not_Null"></a> Имеет значение не Null  
  Проверяет, что указатель не равен NULL.  
   
 ```cpp  
@@ -417,7 +412,7 @@ static void IsNotNull(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_True"></a> Условие имеет значение true  
+#### <a name="BKMK_General_Is_True"></a> Условие имеет значение true  
  Проверяет, имеет ли условие значение true.  
   
 ```cpp  
@@ -427,7 +422,7 @@ static void IsTrue(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_False"></a> Условие имеет значение false  
+#### <a name="BKMK_General_Is_False"></a> Условие имеет значение false  
  Проверяет, имеет ли условие значение alse.  
   
 ```cpp  
@@ -437,7 +432,7 @@ static void IsFalse(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Fail"></a> Не пройден  
+#### <a name="BKMK_General_Fail"></a> Не пройден  
  Принудительно вернуть ошибку в тесте.  
   
 ```cpp  
@@ -446,9 +441,9 @@ static void Fail(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-###  <a name="BKMK_WinRT_Asserts"></a> Утверждения среды выполнения Windows  
+### <a name="BKMK_WinRT_Asserts"></a> Утверждения среды выполнения Windows  
   
-####  <a name="BKMK_WinRT_Are_Equal"></a> Проверка на равенство  
+#### <a name="BKMK_WinRT_Are_Equal"></a> Проверка на равенство  
  Проверяет, равны ли два указателя среды выполнения Windows.  
   
 ```  
@@ -471,7 +466,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Same"></a> Ссылаются на один и тот же объект  
+#### <a name="BKMK_WinRT_Are_Same"></a> Ссылаются на один и тот же объект  
  Проверяет, указывают ли две ссылки среды выполнения Windows на один объект.  
   
 ```  
@@ -483,7 +478,7 @@ static void AreSame(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Not_Equal"></a> Проверка на неравенство  
+#### <a name="BKMK_WinRT_Are_Not_Equal"></a> Проверка на неравенство  
  Проверяет неравенство двух указателей среды выполнения Windows.  
   
 ```  
@@ -506,7 +501,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Not_Same"></a> Не ссылаются на один и тот же объект  
+#### <a name="BKMK_WinRT_Are_Not_Same"></a> Не ссылаются на один и тот же объект  
  Проверяет, что две ссылки среды выполнения Windows не указывают на один объект.  
   
 ```  
@@ -518,7 +513,7 @@ static void AreNotSame(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Is_Null"></a> Имеет значение Null  
+#### <a name="BKMK_WinRT_Is_Null"></a> Имеет значение Null  
  Проверяет, равен ли указатель среды выполнения Windows nullptr.  
   
 ```  
@@ -529,7 +524,7 @@ static void IsNull(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Is_Not_Null"></a> Имеет значение не Null  
+#### <a name="BKMK_WinRT_Is_Not_Null"></a> Имеет значение не Null  
  Проверяет, что указатель среды выполнения Windows не равен nullptr.  
   
 ```  
@@ -540,9 +535,9 @@ static void IsNotNull(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-###  <a name="BKMK_Exception_Asserts"></a> Утверждения об исключениях  
+### <a name="BKMK_Exception_Asserts"></a> Утверждения об исключениях  
   
-####  <a name="BKMK_Expect_Exception"></a> Ожидается исключение  
+#### <a name="BKMK_Expect_Exception"></a> Ожидается исключение  
  Проверяет, вызывает ли функция исключение.  
   
 ```  
@@ -563,16 +558,16 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-##  <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h  
+## <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h  
   
-###  <a name="BKMK_Logger"></a> Ведение журнала  
+### <a name="BKMK_Logger"></a> Ведение журнала  
  Класс Logger содержит статические методы для записи.  
   
 ```  
 class Logger  
 ```  
   
-###  <a name="BKMK_Write_Message"></a> Запись сообщения  
+### <a name="BKMK_Write_Message"></a> Запись сообщения  
   
 ```  
 static void   
@@ -657,8 +652,5 @@ public:
   
 ## <a name="see-also"></a>См. также  
  [Модульное тестирование кода](../test/unit-test-your-code.md)   
- [Модульное тестирование машинного кода с использованием обозревателя тестов](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)   
+ [Модульное тестирование машинного кода с использованием обозревателя тестов](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)   
  [Модульное тестирование существующих приложений C++ с использованием обозревателя тестов](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
-
-
-

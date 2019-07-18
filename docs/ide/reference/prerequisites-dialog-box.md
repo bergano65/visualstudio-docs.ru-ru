@@ -1,7 +1,6 @@
 ---
 title: Диалоговое окно «Необходимые компоненты»
 ms.date: 06/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3425573d1ee60ce5a4f96d5762b353afa18dc9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 925f36f2ed82f65afcc0eef9622cab1a8c9542b5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827105"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746491"
 ---
 # <a name="prerequisites-dialog-box"></a>Диалоговое окно «Необходимые компоненты»
 
@@ -43,7 +42,7 @@ ms.locfileid: "53827105"
 
 |Элемент|Описание|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Этот пакет устанавливает следующие компоненты:<br /><br /> — .NET Framework версий 2.0, 3.0 и 3.5.<br />— Поддержка всех версий платформы .NET Framework в 32-разрядных (x86) и 64-разрядных (x64) операционных системах.<br />— Языковые пакеты для каждой версии платформы .NET Framework, устанавливаемой с помощью пакета.<br />— Пакеты обновления платформы .NET Framework 2.0 и 3.0.<br /><br /> Платформа NET Framework 3.0 включена в операционную систему Windows Vista, а платформа .NET Framework 3.5 — в Visual Studio. Платформа .NET Framework 3.5 требуется для всех проектов Visual Basic и C#, которые компилируются для 32-разрядных операционных систем и для которых целевой платформой является **.NET Framework 3.5**, а также для проектов Visual Basic и C#, компилируемых для 64-разрядных операционных систем. (платформа IA64 не поддерживается). Обратите внимание, что по умолчанию проекты Visual Basic и C# компилируются для любой архитектуры ЦП. Дополнительные сведения см. в разделах [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md) и [Развертывание необходимых компонентов для 64-разрядных приложений](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**.NET Framework 3.5 SP1**|Этот пакет устанавливает следующие компоненты:<br /><br /> — .NET Framework версий 2.0, 3.0 и 3.5.<br />— Поддержка всех версий платформы .NET Framework в 32-разрядных (x86) и 64-разрядных (x64) операционных системах.<br />— Языковые пакеты для каждой версии платформы .NET Framework, устанавливаемой с помощью пакета.<br />— Пакеты обновления платформы .NET Framework 2.0 и 3.0.<br /><br /> Платформа NET Framework 3.0 включена в операционную систему Windows Vista, а платформа .NET Framework 3.5 — в Visual Studio. Платформа .NET Framework 3.5 требуется для всех проектов Visual Basic и C#, которые компилируются для 32-разрядных операционных систем и для которых целевой платформой является **.NET Framework 3.5**, а также для проектов Visual Basic и C#, компилируемых для 64-разрядных операционных систем. (платформа IA64 не поддерживается). Обратите внимание, что по умолчанию проекты Visual Basic и C# компилируются для любой архитектуры ЦП. Дополнительные сведения см. в статьях [Общие сведения о настройке для платформы](../../ide/visual-studio-multi-targeting-overview.md) и [Развертывание необходимых компонентов для 64-разрядных приложений](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Этот пакет устанавливает платформу .NET Framework 4.х для платформ x86 и x64.|
 |**Microsoft System CLR Types для SQL Server 2014 (x64 и x86)**|Этот пакет устанавливает Microsoft System CLR Types для SQL Server 2014 для платформ x86 и x64.|
 |**SQL Server 2008 R2, экспресс-выпуск**|Этот пакет устанавливает SQL Server 2008 R2, экспресс-выпуск — бесплатный выпуск Microsoft SQL Server 2008 R2, который является идеальной базой данных для небольших веб-приложений, серверных или классических приложений. Его можно использоваться бесплатно для разработки и эксплуатации.|
@@ -58,4 +57,4 @@ ms.locfileid: "53827105"
 - [Страница публикации в конструкторе проектов](../../ide/reference/publish-page-project-designer.md)
 - [Обязательные требования к развертыванию приложений](../../deployment/application-deployment-prerequisites.md)
 - [Предварительные условия для развертывания 64-разрядных приложений](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
-- [Обзор настройки для различных версий в Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
+- [Общие сведения о настройке для платформы](../../ide/visual-studio-multi-targeting-overview.md)

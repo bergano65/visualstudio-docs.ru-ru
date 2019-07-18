@@ -10,15 +10,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af052f2851e8fa79e60d57aa771d914b3aa2fdd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888157"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263305"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Общие сведения о развертывании в Visual Studio
 
@@ -35,7 +35,7 @@ ms.locfileid: "53888157"
 - [служба приложений Azure](#azure-app-service);
 - [виртуальные машины Azure](#azure-virtual-machines);
 - [файловая система](#file-system);
-- [пользовательские целевые объекты (IIS, FTP и т. д.)](#custom-targets), к которым относятся все произвольные веб-серверы.
+- [пользовательские целевые объекты (IIS, FTP и т. д.)](#custom-targets-iis-ftp), к которым относятся все произвольные веб-серверы.
 
 На вкладке **Публикация** можно выбрать существующий профиль публикации, импортировать существующий или создать новый с помощью параметров, описанных здесь. См. [общие сведения о развертывании и параметрах публикации в IDE для разных типов приложений](../deployment/deploying-applications-services-and-components.md).
 
@@ -118,7 +118,7 @@ ms.locfileid: "53888157"
 
 - [Развертывание приложения .NET Core с помощью средства публикации](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Публикация приложения ASP.NET Core в Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Развертывание в Visual C++](/cpp/ide/deployment-in-visual-cpp)
+- [Развертывание в Visual C++](/cpp/windows/deployment-in-visual-cpp)
 - [Отладка приложений UWP](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Публикация приложения Node.js в Azure с помощью веб-развертывания](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Публикация приложения Python в Службе приложений Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

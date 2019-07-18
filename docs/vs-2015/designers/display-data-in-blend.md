@@ -1,25 +1,20 @@
 ---
 title: Отображение данных в Blend | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 96784fbd5fa4934246a58aa76e4938ceea1bc826
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 72af15a510fffedf4986f292058377989bb20973
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231274"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695595"
 ---
 # <a name="display-data-in-blend"></a>Отображение данных в Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +23,15 @@ ms.locfileid: "49231274"
   
  **Содержание раздела**  
   
--   [Создание демонстрационных данных](#Scratch)  
+- [Создание демонстрационных данных](#Scratch)  
   
--   [Создание демонстрационных данных из класса](#Existing)  
+- [Создание демонстрационных данных из класса](#Existing)  
   
--   [Отображение динамических данных в приложении WPF](#LiveWPF)  
+- [Отображение динамических данных в приложении WPF](#LiveWPF)  
   
--   [Отображение динамических данных в приложении Магазина или в приложении для телефона](#LiveStore)  
+- [Отображение динамических данных в приложении Магазина или в приложении для телефона](#LiveStore)  
   
-##  <a name="Scratch"></a> Создание демонстрационных данных  
+## <a name="Scratch"></a> Создание демонстрационных данных  
  Чтобы создать демонстрационные данные, откройте XAML-документ. На панели **Данные** нажмите кнопку **Создать демонстрационные данные**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") и выберите **Новые демонстрационные данные**.  
   
  Определить структуру данных можно на панели **Данные** , а затем привязать ее к элементам пользовательского интерфейса на любой странице.  
@@ -49,27 +44,22 @@ ms.locfileid: "49231274"
   
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание демонстрационных данных с нуля](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Объединение привязок к данным с помощью Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [объединение привязок к данным с помощью Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
-##  <a name="Existing"></a> Создание демонстрационных данных из класса  
+## <a name="Existing"></a> Создание демонстрационных данных из класса  
  Если вы уже создали классы, которые описывают структуру данных, вы можете создать демонстрационные данные на их основе.  
   
  Чтобы создать демонстрационные данные на основе класса, откройте XAML-документ и на панели **Данные** нажмите кнопку **Создать демонстрационные данные**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f"), а затем щелкните **Создать демонстрационные данные из класса**.  
   
  **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание демонстрационных данных из класса](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg).  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Объединение привязок к данным с помощью Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [объединение привязок к данным с помощью Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
-##  <a name="LiveWPF"></a> Отображение динамических данных в приложении WPF  
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание источника данных объекта](http://www.bing.com/videos/watch/video/using-an-objectdatasource-in-expression-blend/qmavx0xg).  
+## <a name="LiveWPF"></a> Отображение динамических данных в приложении WPF  
+ **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [создать источник данных XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
- **Ознакомьтесь с коротким видео.** ![Настройка установленных компонентов](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Создание источника данных XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
-  
-##  <a name="LiveStore"></a> Отображение динамических данных в приложении Магазина или в приложении для телефона  
- См. раздел [Работа с данными и файлами (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
+## <a name="LiveStore"></a> Отображение динамических данных в приложении Магазина или в приложении для телефона  
+ См. раздел [Работа с данными и файлами (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
   
 ## <a name="see-also"></a>См. также  
  [Создание пользовательского интерфейса с помощью Blend для Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

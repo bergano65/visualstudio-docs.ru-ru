@@ -1,42 +1,37 @@
 ---
-title: Пошаговое руководство. Привязка к данным в конструкторе XAML | Документы Майкрософт
-ms.custom: ''
+title: Пошаговое руководство. Привязка к данным в конструкторе XAML | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 ms.assetid: 1a99aeae-c3ef-407d-ba79-b8055489a43d
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 597145da912c8d80508b67f4ff47c901f5ccac1d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c839350dd37f71d4f3368e077f4d9afe1b2bb2f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298770"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701925"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Пошаговое руководство. Привязка к данным в конструкторе XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-В конструкторе XAML можно задать свойства привязки данных с помощью области рисования и в окне "Свойства". В примере в этом пошаговом руководстве показано, как привязать данные к элементу управления. В частности, это пошаговое руководство показывает, как создать простой класс корзины для покупок, имеющий [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) с именем `ItemCount`, а затем привязать свойство `ItemCount` к свойству **Text** элемента управления [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx).  
+В конструкторе XAML можно задать свойства привязки данных с помощью монтажной панели и окна свойств. В примере в этом пошаговом руководстве показано, как привязать данные к элементу управления. В частности, это пошаговое руководство показывает, как создать простой класс корзины для покупок, имеющий [DependencyProperty](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) с именем `ItemCount`, а затем привязать свойство `ItemCount` к свойству **Text** элемента управления [TextBlock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx).  
   
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Создание класса для использования в качестве источника данных  
   
-1.  В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.  
+1. В меню **Файл** последовательно выберите пункты **Создать**и **Проект**.  
   
-2.  В диалоговом окне **Новый проект** разверните узел **Visual C#** или **Visual Basic**, разверните узел **Классическое приложение Windows** и выберите шаблон **Приложение WPF**.  
+2. В диалоговом окне **Новый проект** разверните узел **Visual C#** или **Visual Basic**, разверните узел **Классическое приложение Windows** и выберите шаблон **Приложение WPF**.  
   
-3.  Укажите **BindingTest** в качестве имени проекта и нажмите кнопку **ОК**.  
+3. Укажите **BindingTest** в качестве имени проекта и нажмите кнопку **ОК**.  
   
-4.  Откройте файл MainWindow.xaml.cs (или MainWindow.xaml.vb) и добавьте следующий код. В C# добавьте код в пространстве имен `BindingTest` (перед последней закрывающей скобкой в файле). В Visual Basic просто добавьте новый класс.  
+4. Откройте файл MainWindow.xaml.cs (или MainWindow.xaml.vb) и добавьте следующий код. В C# добавьте код в пространстве имен `BindingTest` (перед последней закрывающей скобкой в файле). В Visual Basic просто добавьте новый класс.  
   
     ```csharp  
     public class ShoppingCart : DependencyObject  
@@ -71,41 +66,38 @@ ms.locfileid: "49298770"
     End Class  
     ```  
   
-     Этот код задает значение 0 как число элементов по умолчанию с помощью объекта [PropertyMetadata](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx).  
+     Этот код задает значение 0 как число элементов по умолчанию с помощью объекта [PropertyMetadata](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx).  
   
-5.  В меню **Файл** выберите **Сборка** и **Построить решение**.  
+5. В меню **Файл** выберите **Сборка** и **Построить решение**.  
   
 ### <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Привязка свойства ItemCount к элементу управления TextBlock  
   
-1.  В обозревателе решений откройте контекстное меню файла MainWindow.xaml и выберите **Конструктор представлений**.  
+1. В обозревателе решений откройте контекстное меню файла MainWindow.xaml и выберите **Конструктор представлений**.  
   
-2.  На панели элементов выберите элемент управления [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), чтобы добавить его на форму.  
+2. На панели элементов выберите элемент управления [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), чтобы добавить его на форму.  
   
-3.  Выбрав `Grid`, в окне "Свойства" нажмите кнопку **Создать** рядом со свойством **DataContext**.  
+3. Выбрав `Grid`, в окне "Свойства" нажмите кнопку **Создать** рядом со свойством **DataContext**.  
   
-4.  В диалоговом окне **Выбор объекта** убедитесь, что флажок **Показать все сборки** снят, выберите **ShoppingCart** в пространстве имен **BindingTest** и нажмите кнопку **ОК**.  
+4. В диалоговом окне **Выбор объекта** убедитесь, что флажок **Показать все сборки** снят, выберите **ShoppingCart** в пространстве имен **BindingTest** и нажмите кнопку **ОК**.  
   
      На следующем рисунке показано диалоговое окно **Выбор объекта** с выбранным объектом **ShoppingCart**.  
   
      ![Диалоговое окно "Выбор объекта"](../designers/media/blendselectobject.PNG "BlendSelectObject")  
   
-5.  В **области элементов** выберите элемент управления `TextBlock`, чтобы добавить его на форму.  
+5. В **области элементов** выберите элемент управления `TextBlock`, чтобы добавить его на форму.  
   
-6.  После выбора элемента управления `TextBlock` в окне "Свойства" выберите метку свойства справа от свойства **Text**, а затем выберите **Создать привязку данных**. (Метка свойства выглядит как небольшой квадрат.)  
+6. После выбора элемента управления `TextBlock` в окне "Свойства" выберите метку свойства справа от свойства **Text**, а затем выберите **Создать привязку данных**. (Метка свойства выглядит как небольшой квадрат.)  
   
-7.  В диалоговом окне "Создание привязки данных" в поле **Путь** выберите свойство **ItemCount: (int32)** и нажмите кнопку **ОК**.  
+7. В диалоговом окне "Создание привязки данных" в поле **Путь** выберите свойство **ItemCount: (int32)** и нажмите кнопку **ОК**.  
   
      На следующем рисунке показано диалоговое окно **Создание привязки данных** с выбранным свойством **ItemCount**.  
   
      ![Диалоговое окно "Создание привязки данных"](../designers/media/xaml-create-data-binding.png "xaml_create_data_binding")  
   
-8.  Нажмите клавишу F5 для запуска приложения.  
+8. Нажмите клавишу F5 для запуска приложения.  
   
-     Элемент управления `TextBlock` должен показать значение по умолчанию 0 в виде текста.  
+     Элемент управления `TextBlock` должен отображать значение по умолчанию 0 как текст.  
   
 ## <a name="see-also"></a>См. также  
  [Создание пользовательского интерфейса с помощью Конструктора XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB: Добавление преобразователя значений-диалоговое окно](http://msdn.microsoft.com/en-us/c5f3d110-a541-4b55-8bca-928f77778af8)
-
-
-
+ [NIB: Добавить преобразователь значений-диалоговое окно](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

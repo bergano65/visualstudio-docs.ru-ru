@@ -1,45 +1,40 @@
 ---
 title: Внутри основной редактор | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203956"
 ---
-# <a name="inside-the-core-editor"></a>В редакторе
+# <a name="inside-the-core-editor"></a>Компоненты основного редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Базовый редактор — это набор из нескольких компонентов, которые позволяют изменять и запрашивать текстовую информацию. Если вы настраивали базовый редактор, используя старый API, могут продолжать использовать эти настройки, которые будут направляться через редактора адаптеров. Рекомендуется, однако адаптации настройки в новый редактор API.  
   
  Следующие области приведены некоторые важные аспекты базовым редактором.  
   
--   Текстовый буфер  
+- Текстовый буфер  
   
--   Представление текста  
+- Представление текста  
   
--   Окно кода  
+- Окно кода  
   
--   Текстовые метки  
+- Текстовые метки  
   
--   Диспетчер текста  
+- Диспетчер текста  
   
--   Интеграция со службами языка  
+- Интеграция со службами языка  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Создание экземпляра основного редактора с помощью API прежних версий](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
@@ -70,7 +65,7 @@ ms.locfileid: "51798551"
  Описывает создание экземпляров языковой службы для оформления кода элемента управления.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Пошаговое руководство. Создание основного редактора и регистрация типов файлов в редакторе](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [Пошаговое руководство: создание основного редактора и регистрация типов файлов в редакторе](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  Содержит пошаговые инструкции о том, как запустить редактор core из управляемого кода.  
   
  [Раскрывающаяся панель](../extensibility/drop-down-bar.md)  
@@ -84,4 +79,3 @@ ms.locfileid: "51798551"
   
  [Практическое руководство. Создание пользовательских текстовых маркеров](../extensibility/how-to-create-custom-text-markers.md)  
  Содержит пошаговые инструкции о том, как создать пользовательский текстовый маркер и обеспечить тип маркера как услуга.
-

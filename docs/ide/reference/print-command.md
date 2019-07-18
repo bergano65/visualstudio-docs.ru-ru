@@ -1,7 +1,6 @@
 ---
-title: Команда Print
+title: Debug.Print
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.print
@@ -12,49 +11,52 @@ helpviewer_keywords:
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31f604d6df45cb22d18401b5925867d5ab0e02b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df609011250cebc097d3d356242302dbe41f8007
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969089"
 ---
 # <a name="print-command"></a>Команда Print
+
 Вычисляет выражение или отображает указанный текст.
 
 ## <a name="syntax"></a>Синтаксис
 
 ```cmd
-Debug.Print text
+>Debug.Print text
 ```
 
 ## <a name="arguments"></a>Аргументы
- `text`
 
- Обязательный. Вычисляемое выражение или отображаемый текст.
+`text`
+
+Обязательный. Вычисляемое выражение или отображаемый текст.
 
 ## <a name="remarks"></a>Примечания
- Вы можете использовать вопросительный знак (?) в качестве псевдонима для этой команды. Таким образом, команда
+
+Вы можете использовать вопросительный знак (?) в качестве псевдонима для этой команды. Таким образом, команда
 
 ```cmd
 >Debug.Print expA
 ```
 
- может быть записана в виде
+может быть записана в виде
 
 ```cmd
->? expA
+? expA
 ```
 
- Обе версии этой команды возвращают текущее значение выражения `expA`.
+Обе версии этой команды возвращают текущее значение выражения `expA`.
 
 ## <a name="example"></a>Пример
 
 ```cmd
->Debug.Print varA
+>Debug.Print DateTime.Now.Day
 ```
 
 ## <a name="see-also"></a>См. также раздел

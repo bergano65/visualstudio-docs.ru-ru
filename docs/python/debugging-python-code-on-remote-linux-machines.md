@@ -2,21 +2,20 @@
 title: Отладка кода Python на удаленных компьютерах Linux
 description: Используйте Visual Studio, чтобы отладить код Python, выполняющийся на удаленных компьютерах Linux, в том числе здесь приведены необходимые этапы настройки, обеспечения безопасности и устранения неполадок.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eaeb13a087723b10098c9cfe6f75f3be2aad351e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962557"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Удаленная отладка кода Python в Linux
 
@@ -66,7 +65,7 @@ Visual Studio позволяет локально и удаленно запус
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Установите в своей среде пакет `ptvsd` с помощью команды `pip3 install ptvsd`. 
+1. Установите в своей среде пакет `ptvsd` с помощью команды `pip3 install ptvsd`.
    >[!NOTE]
    >Рекомендуется записать устанавливаемую версию ptvsd на случай необходимости устранения неполадок. Доступные версии также можно найти в [списке ptvsd](https://pypi.python.org/pypi/ptvsd).
 

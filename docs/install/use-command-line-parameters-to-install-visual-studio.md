@@ -2,9 +2,8 @@
 title: Использование параметров командной строки для установки Visual Studio
 titleSuffix: ''
 description: Узнайте, как использовать параметры командной строки для управления установкой Visual Studio или ее настройки.
-ms.date: 11/14/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -13,19 +12,21 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 8e999df4fc1269025c9adc038c1a17dd586a3081
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951319"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Использование параметров командной строки для установки Visual Studio 2017
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Использование параметров командной строки для установки Visual Studio
 
-При установке Visual Studio 2017 из командной строки вы можете использовать различные параметры командной строки, позволяющие настраивать процесс установки и управлять им. В командной строке вы можете выполнить следующие действия:
+При установке Visual Studio из командной строки вы можете использовать различные параметры командной строки, позволяющие настраивать процесс установки и управлять им. В командной строке вы можете выполнить следующие действия:
 
 - запустить установку с заранее выбранными параметрами;
 - автоматизировать процесс установки;
@@ -33,11 +34,23 @@ ms.locfileid: "53869665"
 
 Параметры командной строки используются в сочетании с программой начальной загрузки установщика. Она представляет собой файл небольшого размера (примерно 1 МБ), который инициирует процесс скачивания. Эта программа запускается в первую очередь при скачивании с сайта Visual Studio. Последние версии программы начальной загрузки для устанавливаемого вами выпуска продукта доступны по следующим ссылкам:
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+::: moniker range="vs-2017"
 
-## <a name="list-of-command-line-parameters"></a>Список параметров командной строки
+- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
+- [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
+- [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
+
+::: moniker-end
+
+## <a name="command-line-parameters"></a>Параметры командной строки
 
  В параметрах командной строки для Visual Studio не учитывается регистр символов.
 
@@ -46,7 +59,7 @@ ms.locfileid: "53869665"
 (Замените `vs_enterprise.exe` в соответствии с выпуском продукта, который вы устанавливаете.
 
 >[!TIP]
-> Дополнительные примеры использования командной строки для установки Visual Studio 2017 см. на странице с [примерами параметров командной строки](command-line-parameter-examples.md).)
+> Дополнительные примеры использования командной строки для установки Visual Studio см. в статье [Примеры параметров командной строки для установки Visual Studio 2017](command-line-parameter-examples.md).
 
 | **Команда** | **Описание** |
 | ----------------------- | --------------- |
@@ -55,7 +68,9 @@ ms.locfileid: "53869665"
 | `update` | Обновляет установленный продукт. |
 | `repair` | Восстанавливает установленный продукт. |
 | `uninstall` | Удаляет установленный продукт. |
-| `export` | **Новая возможность в 15.9:** экспорт выбранного компонента установки в файл конфигурации установки. **Примечание**. Может использоваться только с vs_installer.exe. |
+| `export` | **Новые возможности в версии 15.9**: экспорт выбранного компонента установки в файл конфигурации установки. **Примечание**. Может использоваться только с vs_installer.exe. |
+
+## <a name="install-options"></a>Параметры установки
 
 | **Параметр установки** | **Описание** |
 | ----------------------- | --------------- |
@@ -77,7 +92,10 @@ ms.locfileid: "53869665"
 | `--help, --?, -h, -?` | Отображает автономную версию этой страницы. |
 | `--config <path>` | **Необязательно** и **новая возможность в 15.9**: во время операции установки или изменения этот параметр определяет добавляемые рабочие нагрузки и компоненты на основе ранее сохраненного файла конфигурации установки. Эта операция является аддитивной и не удаляет никакие рабочие нагрузки или компоненты, отсутствующие в файле. Кроме того, элементы, которые не относятся к этому продукту, не добавляются. Во время операции экспорта этот параметр определяет расположение для сохранения файла конфигурации установки. |
 
-> Примечание. При указании нескольких рабочих нагрузок и компонентов требуется повторять параметр командной строки `--add` или `--remove` для каждого элемента.
+> [!IMPORTANT]
+> При указании нескольких рабочих нагрузок и компонентов требуется повторять параметр командной строки `--add` или `--remove` для каждого элемента.
+
+## <a name="layout-options"></a>Параметры макета
 
 | **Параметры макета** | **Описание** |
 | ----------------------- | --------------- |
@@ -103,7 +121,7 @@ ms.locfileid: "53869665"
 | `--cache` | **Новая возможность версии 15.2, необязательно**: если указан этот параметр, пакеты будут храниться после установки для последующего восстановления. Это значение переопределяет глобальную политику, настроенную для последующих установок, восстановлений или изменений. По умолчанию кэш пакетов используется. Этот параметр игнорируется для команды удаления. Дополнительные сведения см. в статье об [отключении или перемещении кэша пакетов](disable-or-move-the-package-cache.md). |
 | `--nocache` | **Новая возможность версии 15.2, необязательно**: при наличии этого параметра после установки или восстановления пакеты удаляются. Они будут загружены только в том случае, если потребуются еще раз, и снова удалены после использования. Это значение переопределяет глобальную политику, настроенную для последующих установок, восстановлений или изменений. По умолчанию кэш пакетов используется. Этот параметр игнорируется для команды удаления. Дополнительные сведения см. в статье об [отключении или перемещении кэша пакетов](disable-or-move-the-package-cache.md). |
 | `--noUpdateInstaller` | **Новая возможность версии 15.2, необязательно**: при наличии не позволяет установщику обновлять самого себя при указании параметра quiet. Программа установки завершает команду со сбоем и возвращает ненулевой код выхода, если noUpdateInstaller с параметром quiet указан, когда требуется обновление установщика. |
-| `--noWeb` | **Новая возможность версии 15.3, необязательно**: программа установки теперь скачивает любое содержимое, которое устанавливается из Интернета.  Все устанавливаемое содержимое должно быть доступно в автономном макете.  Если в макете нет содержимого, установка не выполняется.  Подробнее см. в разделе [Развертывание из сетевой установки](create-a-network-installation-of-visual-studio.md). |
+| `--noWeb` | **Новая возможность версии 15.3, необязательно**: если присутствует, установщик Visual Studio использует файлы в каталоге макета для установки Visual Studio. Если пользователь пытается установить компоненты, отсутствующие в макете, установка завершается ошибкой.  Подробнее см. в разделе [Развертывание из сетевой установки](create-a-network-installation-of-visual-studio.md). <br/><br/> **Важно**. Этот параметр не отключает проверку наличия обновлений при установке Visual Studio. Дополнительные сведения см. в статье [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md).|
 | `--path <name>=<path>` | **Новая возможность в версии 15.7, необязательно**: используется для указания путей выборочной установки. Поддерживаемые имена пути используются совместно, кэшируются и устанавливаются. |
 | `--path cache=<path>` | **Новая возможность в версии 15.7, необязательно**: для загрузки установочных файлов используется заданное расположение. Расположение можно задать только при первой установке Visual Studio. Пример: `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **Новая возможность в версии 15.7, необязательно**: содержит общие файлы для параллельных установок Visual Studio. Некоторые средства и пакеты SDK устанавливаются на этот диск. Этот параметр можно переопределить, чтобы установить другие средства и пакеты SDK на другой диск. Пример: `--path shared="C:\VS\shared"` <br><br>Внимание! Этот параметр можно задать только один раз — при первой установке Visual Studio. |
@@ -111,7 +129,7 @@ ms.locfileid: "53869665"
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Список идентификаторов рабочих нагрузок и компонентов
 
-Список идентификаторов рабочих нагрузок и компонентов, отсортированный по продуктам Visual Studio, см. на странице [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md).
+Список идентификаторов рабочих нагрузок и компонентов, отсортированный по продуктам Visual Studio, см. на странице [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md).
 
 ## <a name="list-of-language-locales"></a>Список языковых стандартов
 
@@ -151,7 +169,7 @@ ms.locfileid: "53869665"
 
 ## <a name="see-also"></a>См. также
 
-- [Примеры параметров командной строки для установки Visual Studio 2017](command-line-parameter-examples.md)
-- [Создание автономной установки Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+- [Примеры параметров командной строки для установки Visual Studio 2017](command-line-parameter-examples.md)
+- [Создание автономной установки Visual Studio](create-an-offline-installation-of-visual-studio.md)
 - [Автоматизация установки Visual Studio с помощью файла ответов](automated-installation-with-response-file.md)
-- [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md)
+- [Идентификаторы рабочих нагрузок и компонентов Visual Studio](workload-and-component-ids.md)

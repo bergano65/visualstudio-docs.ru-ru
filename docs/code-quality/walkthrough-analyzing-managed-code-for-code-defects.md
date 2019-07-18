@@ -1,28 +1,27 @@
 ---
 title: Пошаговое руководство Проверка управляемого кода на наличие дефектов кода | Документация Майкрософт
 ms.date: 01/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikadumont
+ms.author: midumont
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d9b4631b320138d045e910c612c1fa4558a07e56
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269228"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195294"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Пошаговое руководство. Анализ управляемого кода для дефектов кода
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Пошаговое руководство. Используйте статический анализ кода для поиска дефектов кода
 
 В этом пошаговом руководстве будет анализировать управляемого проекта для дефектов кода с помощью средства анализа кода.
 
-В этом пошаговом руководстве представлены шаги по процесс с помощью функций анализа кода для анализа вашей сборок управляемого кода .NET на соответствие рекомендациям по Microsoft .NET Framework.
+В этом пошаговом руководстве представлены шаги по с помощью функций анализа статического кода для анализа вашей сборок управляемого кода .NET на соответствие рекомендациям по .NET.
 
 ## <a name="create-a-class-library"></a>Создание библиотеки классов
 
@@ -30,7 +29,7 @@ ms.locfileid: "54269228"
 
 1. В меню **Файл** последовательно выберите пункты **Создать** > **Проект**.
 
-1. В **новый проект** диалоговое окно последовательно раскройте элементы **установленные** > **Visual C#**, а затем выберите **Windows Desktop**.
+1. В **новый проект** диалоговое окно последовательно раскройте элементы **установленные** > **Visual C#** , а затем выберите **Windows Desktop**.
 
 1. Выберите **библиотека классов (.NET Framework)** шаблона.
 
@@ -142,7 +141,7 @@ ms.locfileid: "54269228"
 
    1. Выберите **подписать сборку** "флажок".
 
-   1. В **выберите файл ключа строгого имени** выберите  **\<создать... >**.
+   1. В **выберите файл ключа строгого имени** выберите  **\<создать... >** .
 
       **Создание ключа строгого имени** откроется диалоговое окно.
 
@@ -152,7 +151,7 @@ ms.locfileid: "54269228"
 
    1. На **файл** меню, выберите **сохранить выбранные элементы**, а затем закройте окно свойств.
 
-   [CA2237: Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Добавьте атрибут [Serializable] к типу «demo», так как этот тип реализует ISerializable.
+   [CA2237. Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Добавьте атрибут [Serializable] к типу «demo», так как этот тип реализует ISerializable.
 
    1. Добавить `[Serializable ()]` классу атрибут `demo`.
 

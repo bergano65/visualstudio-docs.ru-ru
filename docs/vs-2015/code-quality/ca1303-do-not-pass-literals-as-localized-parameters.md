@@ -1,14 +1,9 @@
 ---
-title: 'CA1303: Не следует передавать литералы в локализованных параметров | Документация Майкрософт'
-ms.custom: ''
+title: CA1303. Не следует передавать литералы в локализованных параметров | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - Do not pass literals as localized parameters
 - DoNotPassLiteralsAsLocalizedParameters
@@ -21,14 +16,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d900abe23dab4d950b5790798916fe728a44af4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fafcf113f5f40da3bcc4666778330865dcdfb84c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886569"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686811"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: не следует передавать литералы в виде локализованных параметров
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303. Не передавайте литералы в качестве локализованных параметров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,11 +38,11 @@ ms.locfileid: "49886569"
 
  Это предупреждение возникает в том случае, если строковый литерал передается как значение параметра или свойства, а также один или несколько из следующих условий верно:
 
--   <xref:System.ComponentModel.LocalizableAttribute> Установлен атрибут параметра или свойства в значение true.
+- <xref:System.ComponentModel.LocalizableAttribute> Установлен атрибут параметра или свойства в значение true.
 
--   Имя параметра или свойства содержит «Text», «Message» или «Заголовок».
+- Имя параметра или свойства содержит «Text», «Message» или «Заголовок».
 
--   Строковый параметр, который передается методу Console.Write и Console.WriteLine называется «value» или «format».
+- Строковый параметр, который передается методу Console.Write и Console.WriteLine называется «value» или «format».
 
 ## <a name="rule-description"></a>Описание правила
  Строковые литералы, внедренные в исходный код, сложно локализировать.
@@ -68,7 +63,4 @@ ms.locfileid: "49886569"
  [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.DoNotPassLiterals/vb/FxCop.Globalization.DoNotPassLiterals.vb#1)]
 
 ## <a name="see-also"></a>См. также
- [Ресурсы в приложениях для настольных систем](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
-
-
-
+ [Ресурсы в приложениях для настольных систем](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)

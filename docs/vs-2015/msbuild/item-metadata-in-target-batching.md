@@ -1,14 +1,9 @@
 ---
 title: Метаданные элементов в пакетной обработке целевых объектов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, target batching
@@ -17,18 +12,17 @@ ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 011bb9b738aa135fd14c4dbddfb26f9cea2f7bd1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9dd6c297e00a305fbd1b13cf0fe0bd4a4f151f6b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192873"
 ---
 # <a name="item-metadata-in-target-batching"></a>Метаданные элементов в пакетной обработке целевых объектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] может анализировать зависимости для входных и выходных данных целевого объекта сборки. Если определено, что входные или выходные данные целевого объекта актуальны, он пропускается, а сборка продолжается. Элементы `Target` используют атрибуты `Inputs` и `Outputs`, чтобы задать элементы, обрабатываемые во время анализа зависимостей.  
   
  Если целевой объект содержит задачу, которая использует пакетные элементы в качестве входных и выходных данных, элемент `Target` целевого объекта должен использовать пакетную обработку в своих атрибутах `Inputs` или `Outputs`, чтобы позволить [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] пропускать уже актуальные пакеты элементов.  
@@ -75,10 +69,7 @@ ms.locfileid: "49232692"
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Практическое руководство. Инкрементная сборка](../msbuild/how-to-build-incrementally.md)   
+ [Практическое руководство. Инкрементное построение](../msbuild/how-to-build-incrementally.md)   
  [Пакетная обработка](../msbuild/msbuild-batching.md)   
  [Элемент Target (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Метаданные элементов в пакетной обработке задач](../msbuild/item-metadata-in-task-batching.md)
-
-
-

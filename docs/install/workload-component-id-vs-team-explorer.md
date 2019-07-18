@@ -1,64 +1,46 @@
 ---
-title: Идентификаторы рабочих нагрузок и компонентов для Visual Studio Team Explorer 2017
+title: Идентификаторы рабочих нагрузок и компонентов для Visual Studio Team Explorer
 titleSuffix: ''
 description: Идентификаторы рабочих нагрузок и компонентов Visual Studio можно использовать для создания интегрированных средств тестирования для инженеров-испытателей
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.date: 11/13/2018
+manager: jillfra
+ms.date: 05/22/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
-ms.workload:
-- multiple
-ms.openlocfilehash: 694085412a674731934ac75d62bd2c904e3c7176
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: f2ffd7b021e3ca3a699acfb136c14e8b53c9a87d
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860222"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037487"
 ---
-# <a name="visual-studio-team-explorer-2017-component-directory"></a>Каталог компонентов для Visual Studio Team Explorer 2017
+# <a name="visual-studio-team-explorer-component-directory"></a>Каталог компонентов для Visual Studio Team Explorer
 
-В таблицах на этой странице перечислены идентификаторы, которые можно использовать для установки Visual Studio с помощью командной строки или в качестве зависимости в манифесте VSIX. Обратите внимание, что по мере выхода обновлений для Visual Studio здесь будут появляться новые компоненты.
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-Также обратите внимание на следующие моменты:
+::: moniker range="vs-2017"
 
-* Каждая рабочая нагрузка имеет свой раздел, за которым приводится идентификатор рабочей нагрузки и таблица компонентов, доступных для этой рабочей нагрузки.
-* По умолчанию при установке рабочей нагрузки устанавливаются только **обязательные** компоненты.
-* По вашему желанию вы можете включить в установку **рекомендованные** и (или) **дополнительные** компоненты.
-* Мы также добавили отдельный раздел для дополнительных компонентов, которые не связаны с конкретными рабочими нагрузками.
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-Когда вы включаете зависимости в манифест VSIX, достаточно указать только идентификаторы компонентов. Таблицы на этой странице позволяют определить минимальный набор зависимостей компонентов. В некоторых сценариях нужно указать лишь один компонент из рабочей нагрузки. В других случаях потребуется несколько компонентов из одной рабочей нагрузки или несколько компонентов из нескольких рабочих нагрузок. Дополнительные сведения см. в разделе [Практическое руководство. Перенос проектов расширяемости в Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+[!include[Visual Studio Team Explorer 2017](includes/vs-2017/workload-component-id-vs-team-explorer.md)]
 
-Дополнительные сведения об использовании идентификаторов см. в статье [Использование параметров командной строки для установки версии-кандидата Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Список идентификаторов рабочих нагрузок и компонентов для других продуктов вы найдете в статье [Идентификаторы рабочих нагрузок и компонентов Visual Studio 2017](workload-and-component-ids.md).
+::: moniker-end
 
-## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Основной редактор Visual Studio (включен в Visual Studio Team Explorer 2017)
+::: moniker range=">= vs-2019"
 
-**Идентификатор:** Microsoft.VisualStudio.Workload.CoreEditor
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**Описание.** Основные возможности оболочки Visual Studio, включая редактирование кода с учетом синтаксиса, управление исходным кодом и рабочими элементами.
+[!include[Visual Studio Team Explorer 2019](includes/vs-2019/workload-component-id-vs-team-explorer.md)]
 
-### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
-
-Идентификатор компонента | name | Версия | Тип зависимости
---- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Основной редактор Visual Studio | 15.8.27729.1 | Обязательно
-Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Начальная страница Visual Studio для пользователей C++ | 15.0.27128.1 | Optional
-
-## <a name="unaffiliated-components"></a>Самостоятельные компоненты
-
-Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
-
-Идентификатор компонента | name | Версия
---- | --- | ---
-Н/Д | Н/Д | Н/Д
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

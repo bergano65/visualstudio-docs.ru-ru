@@ -5,16 +5,15 @@ ms.topic: reference
 ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: db36f6e15a219109fa60ffaed13a01890833ea82
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: fcc2a7322397537c9585d0aaa2674e1d3ab3c656
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910861"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460700"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Не удалось создать ассоциацию &lt;имя ассоциации&gt; — одно и то же свойство перечислено дважды
 
@@ -36,6 +35,5 @@ ms.locfileid: "53910861"
 
 ## <a name="see-also"></a>См. также
 
-- [Сообщения реляционного конструктора объектов](../data-tools/o-r-designer-messages.md)
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Практическое руководство. Создание ассоциации между классами LINQ to SQL (реляционный конструктор объектов)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

@@ -1,45 +1,40 @@
 ---
 title: Вычисление локальных переменных | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 88b9fdd5ac8451056454b80ad0262b8aa9bf951b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444768"
 ---
 # <a name="evaluating-locals"></a>Вычисление локальных переменных
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) вызывается для получения значений локально, а также имя локальной переменной и тип. Поскольку значения локальной переменной зависит текущее состояние программы, значение локальной переменной необходимо получить из памяти. [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) объект используется для привязки [IDebugField](../../extensibility/debugger/reference/idebugfield.md) объект, представляющий локальный в соответствующее место в памяти, содержащий значение. Это расположение в памяти, представленного [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) объекта.  
   
  Эта функция получения значения локальной переменной инкапсулируется в вспомогательная функция, которая выполняет следующие задачи:  
   
-1.  Привязывает `IDebugField` объект памяти, чтобы получить `IDebugObject` объекта.  
+1. Привязывает `IDebugField` объект памяти, чтобы получить `IDebugObject` объекта.  
   
-2.  Получает значение из памяти. Это значение будет представлено в виде последовательности байтов.  
+2. Получает значение из памяти. Это значение будет представлено в виде последовательности байтов.  
   
-3.  Форматирует значение на основе типа локальной переменной.  
+3. Форматирует значение на основе типа локальной переменной.  
   
-4.  Возвращает универсальный объект, содержащий значение локальной переменной. В C# это `object`, и в C++, это `VARIANT`.  
+4. Возвращает универсальный объект, содержащий значение локальной переменной. В C# это `object`, и в C++, это `VARIANT`.  
   
 ## <a name="managed-code"></a>Управляемый код  
  Это реализация функции, которая извлекает значения локальной переменной в управляемом коде.  
@@ -200,4 +195,3 @@ HRESULT FieldGetPrimitiveValue(
  [Пример реализации локальных переменных](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [Получение локальных значений](../../extensibility/debugger/getting-local-values.md)   
  [Контекст вычислений](../../extensibility/debugger/evaluation-context.md)
-

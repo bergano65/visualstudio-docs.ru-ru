@@ -1,24 +1,19 @@
 ---
 title: Настройка анализа покрытия кода | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686441"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Настройка анализа покрытия кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,10 +69,10 @@ ms.locfileid: "49890170"
 ```  
   
 > [!WARNING]
->  Разрешение символов может занять время, особенно при использовании удаленного расположения файлов со множеством сборок. Поэтому рекомендуется скопировать удаленные PDB-файлы в то же локальное расположение, в котором находятся двоичные файлы (DLL и EXE).  
+> Разрешение символов может занять время, особенно при использовании удаленного расположения файлов со множеством сборок. Поэтому рекомендуется скопировать удаленные PDB-файлы в то же локальное расположение, в котором находятся двоичные файлы (DLL и EXE).  
   
 ### <a name="excluding-and-including"></a>Исключение и включение  
- Можно исключить указанные сборки из анализа покрытия кода. Например:  
+ Можно исключить указанные сборки из анализа покрытия кода. Пример:  
   
 ```minterastlib  
 <ModulePaths>  
@@ -106,7 +101,7 @@ ms.locfileid: "49890170"
 ### <a name="regular-expressions"></a>Регулярные выражения  
  Узлы включения и исключения используют регулярные выражения. Дополнительные сведения см. в разделе [Using Regular Expressions in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md) (Использование регулярных выражений в Visual Studio). Регулярные выражения не равнозначны подстановочным знакам. В частности:  
   
-1. **\.\\*** соответствует строке любых символов  
+1. **\.\\** * соответствует строке любых символов  
   
 2. **\\.** соответствует точке (".")  
   
@@ -120,7 +115,7 @@ ms.locfileid: "49890170"
   
    Все соответствия не учитывают регистр.  
   
-   Например:  
+   Пример:  
   
 ```xml  
 <ModulePaths>  
@@ -139,7 +134,7 @@ ms.locfileid: "49890170"
 ```  
   
 > [!WARNING]
->  Если в регулярном выражении есть ошибка, например круглые скобки без escape-последовательности или непарные круглые скобки, то анализ покрытия кода не выполняется.  
+> Если в регулярном выражении есть ошибка, например круглые скобки без escape-последовательности или непарные круглые скобки, то анализ покрытия кода не выполняется.  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Другие способы включения или исключения элементов  
  См. [пример в конце этого раздела](#sample).  
@@ -158,7 +153,7 @@ ms.locfileid: "49890170"
   
   **Соответствие имени функции**  
   
-  Ваше регулярное выражение должно соответствовать полному имени функции, включая пространство имен, имя класса, имя метода и список параметров. Например:  
+  Ваше регулярное выражение должно соответствовать полному имени функции, включая пространство имен, имя класса, имя метода и список параметров. Например, примененная к объекту директива  
   
 - C# или Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
@@ -186,13 +181,13 @@ ms.locfileid: "49890170"
  В меню **Тест** выберите **Параметры тестирования**, щелкните **Выбрать файл параметров теста** и выберите RUNSETTINGS-файл. В меню "Параметры тестирования" отобразится файл, который можно выбрать или отменить. Если RUNSETTINGS-файл выбран, он применяется при каждом выполнении команды **Анализ покрытия кода**.  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Настройка параметров запуска в тесте командной строки  
- Для выполнения тестов из командной строки используйте vstest.console.exe. Файл параметров является параметром этой служебной программы. Дополнительные сведения см. в статье [Использование VSTest.console из командной строки](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
+ Для выполнения тестов из командной строки используйте vstest.console.exe. Файл параметров является параметром этой служебной программы. Дополнительные сведения см. в статье [Использование VSTest.console из командной строки](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
-1.  Запустите командную строку разработчика Visual Studio.  
+1. Запустите командную строку разработчика Visual Studio.  
   
      В меню **Пуск** последовательно выберите **Все программы**, **Microsoft Visual Studio**, **Инструменты Visual Studio**, **Командная строка разработчика**.  
   
-2.  Выполните следующий файл.  
+2. Выполните следующий файл.  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -207,13 +202,13 @@ ms.locfileid: "49890170"
   
 3. На странице **Процесс** разверните **Автоматизированные тесты**, **Исходный код теста**, **Параметры запуска**. Выберите файл **.runsettings**.  
   
-   - <em>Но **тестовая сборка</em>* появляется вместо параметра **исходный код теста**. При попытке настроить поле Параметры запуска** для выбора доступны только TESTSETTINGS-файлы.*  
+   - <em>Параметр **Тестовая сборка</em>* появляется вместо параметра **Исходный код теста**. При попытке настроить поле **Параметры запуска** для выбора доступны только TESTSETTINGS-файлы.*  
   
       В разделе **Автоматизированные тесты** выберите **Тестовая сборка** и затем щелкните **[...]** в конце строки. В диалоговом окне **Добавление/изменение тестового запуска** установите для параметра **Средство выполнения тестов** значение **Средство выполнения тестов Visual Studio**.  
   
    Результаты отображаются в сводном разделе отчета о сборке.  
   
-##  <a name="sample"></a> Пример RUNSETTINGS-файла  
+## <a name="sample"></a> Пример RUNSETTINGS-файла  
  Скопируйте этот код и измените его в соответствии с собственными требованиями. Это RUNSETTINGS-файл по умолчанию.  
   
  (Другие варианты применения RUNSETTINGS-файла см. в разделе [Настройка модульных тестов с помощью файла .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  
@@ -242,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  
@@ -333,6 +328,3 @@ Included items must then not match any entries in the exclude list to remain inc
 ## <a name="see-also"></a>См. также  
  [Использование покрытия кода для определения объема протестированного кода](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [Модульное тестирование кода](../test/unit-test-your-code.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Подавление предупреждений при помощи атрибута SuppressMessage | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCFxCopTool.InputAssemblyFileName
 - VC.Project.VCFxCopTool.FxCopModuleSuppressionsFile
@@ -24,12 +19,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 91ae1c5d15ddbb364aeba16c2c4de49ce19d09c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aaeedb0784a8e5deaf8c3ddb0dd306fddf4a9ecf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550205"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Подавление предупреждений при помощи атрибута SuppressMessage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +36,7 @@ ms.locfileid: "49205963"
 |||  
 |-|-|  
 |[Общие сведения о подавлении в исходном коде](../code-quality/in-source-suppression-overview.md)|Узнайте о ISS и способы ее использования в коде.|  
-|[Практическое руководство. Отключение предупреждений при помощи пункта меню](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|Узнайте, как отключить предупреждения в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки с помощью контекстного меню.|  
+|[Практическое руководство. Подавление предупреждений при помощи пункта меню](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|Узнайте, как отключить предупреждения в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки с помощью контекстного меню.|  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-
-
-

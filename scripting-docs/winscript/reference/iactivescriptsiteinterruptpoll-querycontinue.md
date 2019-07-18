@@ -2,7 +2,6 @@
 title: IActiveScriptSiteInterruptPoll::QueryContinue | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b43211dca57a404d5625cfc2d7ede67a70a0a40
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 63ce45c0973d65d240136d7b42aef0c078b00c9a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992296"
 ---
 # <a name="iactivescriptsiteinterruptpollquerycontinue"></a>IActiveScriptSiteInterruptPoll::QueryContinue
 Позволяет ведущему приложению указать, что следует прервать сценарий.  
@@ -40,7 +39,7 @@ HRESULT QueryContinue();
 ## <a name="return-value"></a>Возвращаемое значение  
  Метод возвращает `HRESULT`. Допустимые значения включают, но не ограничиваются, значения, приведенные в следующей таблице.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`S_OK`|Вызов завершился успешно, и основное приложение разрешает сценарий продолжать работу.|  
 |`S_FALSE`|Вызов успешно и узла запросов, приводящих к прекращению скрипт.|  

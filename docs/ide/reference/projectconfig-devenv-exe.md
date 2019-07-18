@@ -1,70 +1,82 @@
 ---
-title: Параметр DevEnv ProjectConfig
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: -ProjectConfig (devenv.exe)
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
-- /projectconfig Devenv switch
+- /ProjectConfig Devenv switch
 - configurations, rebuilding
 - deployment projects, creating
 - configurations, cleaning
 - deployment projects, specifying
 - deployment projects, adding
 - build configurations, specifying
-- Devenv, /projectconfig switch
-- projectconfig Devenv switch (/projectconfig)
+- Devenv, /ProjectConfig switch
+- ProjectConfig Devenv switch (/ProjectConfig)
 - projects [Visual Studio], build configuration
 - projects [Visual Studio], cleaning
 ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ca481d23757cc9022042db42a6d4be477880367
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6127be41e4b791fa03182b65ab78c9814e16d30
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968907"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 
-Указывает конфигурацию сборки проекта, применяемую при сборке, очистке, перестроении или развертывании проекта, указанного в аргументе **/project**.
+Указывает конфигурацию сборки проекта, применяемую при сборке, очистке, перестроении или развертывании проекта, указанного в аргументе `/Project`.
 
 ## <a name="syntax"></a>Синтаксис
 
-```cmd
-devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
+```shell
+devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Аргументы
 
-|||
-|-|-|
-|/build|Выполняет сборку проекта, заданного аргументом **/project**.|
-|/clean|Удаляет все промежуточные файлы и выходные каталоги, созданные во время сборки.|
-|/rebuild|Очищает, а затем собирает проект, заданный аргументом **/project**.|
-|/deploy|Указывает, что проект должен быть развернут после сборки или перестроения.|
-|*SolnConfigName*|Обязательный. Имя конфигурации решения, которая будет применяться для решения с именем *SolutionName*. Если доступно несколько платформ решений, необходимо также указать платформу, например **"Debug\|Win32"**.|
-|*SolutionName*|Обязательный. Полный путь и имя для файла решения.|
-|/project *ProjName*|Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки *SolutionName* к файлу проекта, отображаемое имя проекта или полный путь и имя для файла проекта.|
-|/projectconfig *ProjConfigName*|Необязательный параметр. Имя конфигурации сборки проекта, которая применяется к проекту, указанному аргументом **/project**. Если доступно несколько платформ решений, необходимо также указать платформу, например **"Debug\|Win32"**.|
+- *SolutionName*
+
+  Обязательный. Полный путь и имя для файла решения.
+
+- {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
+
+  Обязательный. [Создает](build-devenv-exe.md), [очищает](clean-devenv-exe.md), [развертывает](deploy-devenv-exe.md) или [повторно создает](rebuild-devenv-exe.md) проект.
+
+- *SolnConfigName*
+
+  Необязательный параметр. Имя конфигурации решения (например, `Debug` или `Release`) для применения в решении, указанном в *SolutionName*. Если доступно несколько платформ решений, необходимо также указать платформу (например, `Debug|Win32`). Если этот аргумент не определен или является пустой строкой (`""`), используется действующая конфигурация решения.
+
+- `/Project` *ProjName*
+
+  Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести отображаемое имя проекта или относительный путь из папки *SolutionName* к файлу проекта. Можно также ввести полный путь и имя файла проекта.
+
+- `/ProjectConfig` *ProjConfigName*
+
+  Необязательный параметр. Имя конфигурации сборки проекта (например, `Debug` или `Release`) для применения к указанному проекту `/Project`. Если доступно несколько платформ решений, необходимо также указать платформу (например, `Debug|Win32`).
+
+- `/Out` *OutputFilename*
+
+  Необязательный параметр. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
 
 ## <a name="remarks"></a>Примечания
 
-Параметр **/projectconfig** должен использоваться с параметром **/project** в команде **/build**, **/clean**, **/rebuild** или **/deploy**.
+Параметры `/ProjectConfig` и `/Project` следует использовать вместе в составе команды `/Build`, /`Clean`, `/Deploy` или `/Rebuild`.
 
 Строки с пробелами заключаются в двойные кавычки.
 
-Сводные данные для сборок, включая ошибки, могут отображаться в окне команд или в любом файле журнала, указанном с помощью параметра **/out**.
+Сводные данные по сборкам, включая ошибки, могут отображаться в окне команд или в любом файле журнала, указанном с помощью параметра `/Out`.
 
 ## <a name="example"></a>Пример
 
-Следующая команда создает проект CSharpConsoleApp, используя конфигурацию сборки проекта Debug в конфигурации решения Debug в MySolution:
+Следующая команда выполняет сборку проекта `CSharpWinApp` с использованием конфигурации сборки проекта `Debug` в решении `MySolution`.
 
-```cmd
-devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>См. также

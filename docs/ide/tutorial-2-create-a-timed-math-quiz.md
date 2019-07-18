@@ -1,32 +1,31 @@
 ---
 title: Учебник 2. Создание ограниченной по времени математической головоломки
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6dc353f7c296dce86bd2b410cfef09683576943
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ececa58d04ea7cfebe6178faae724038e353f06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821632"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Учебник 2. Создание ограниченной по времени математической головоломки
 
 В этом учебнике вам предстоит создать головоломку, в которой игрок должен решить четыре арифметические задачи со случайными числами за определенное время. Вы научитесь:
 
--   Создавать случайные числа с помощью класса <xref:System.Random>.
+- Создавать случайные числа с помощью класса <xref:System.Random>.
 
--   Активировать события, чтобы они происходили в определенное время, с помощью элемента управления <xref:System.Windows.Forms.Timer>.
+- Активировать события, чтобы они происходили в определенное время, с помощью элемента управления <xref:System.Windows.Forms.Timer>.
 
--   Управлять выполнением программы с помощью операторов `if else`.
+- Управляйте потоком выполнения программы с помощью операторов `if else`.
 
--   Выполнять простые арифметические операции в коде.
+- Выполнять простые арифметические операции в коде.
 
 По завершении урока задача будет выглядеть так, как показано на следующем рисунке, только с другими цифрами:
 

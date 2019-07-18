@@ -1,28 +1,23 @@
 ---
-title: 'Практическое: отключить уведомления об изменении файла | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Подавлять уведомления об изменении файла | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
 ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4f82fd90d95a595d39403d2ee131285034b95d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204081"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Практическое: отключить уведомления об изменении файла
+# <a name="how-to-suppress-file-change-notifications"></a>Практическое руководство. Отключение уведомлений об изменении файла
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 При изменении физического файла, представляющий текстовый буфер, откроется диалоговое окно с сообщением **вы хотите сохранить изменения следующих элементов?** Это называется уведомления об изменении файла. Если много изменений будут в файл, тем не менее, это диалоговое окно, отображающее снова и снова может быстро стать раздражает.  
@@ -31,19 +26,19 @@ ms.locfileid: "51808262"
   
 ### <a name="to-suppress-file-change-notification"></a>Чтобы отключить уведомления об изменении файла  
   
-1.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> метод, чтобы определить, какой объект текстового буфера связан с открытым файлом.  
+1. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> метод, чтобы определить, какой объект текстового буфера связан с открытым файлом.  
   
-2.  Прямой <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект, который в памяти, чтобы игнорировать отслеживает изменения в файлах, получая <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> интерфейс из <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект (document data), а затем реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> метод с `fIgnore` параметр значение `true`.  
+2. Прямой <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект, который в памяти, чтобы игнорировать отслеживает изменения в файлах, получая <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> интерфейс из <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект (document data), а затем реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> метод с `fIgnore` параметр значение `true`.  
   
-3.  Вызывать методы в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> интерфейсы для обновления в памяти <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект с изменения файла (например, когда поле добавляется в компонент).  
+3. Вызывать методы в <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> и <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> интерфейсы для обновления в памяти <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объект с изменения файла (например, когда поле добавляется в компонент).  
   
-4.  Обновите файл на диске с учетом изменений, без учета все ожидающие изменения, которые пользователь может иметь в процессе выполнения.  
+4. Обновите файл на диске с учетом изменений, без учета все ожидающие изменения, которые пользователь может иметь в процессе выполнения.  
   
      Таким образом, когда <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> уведомления об изменении объекта для возобновления наблюдения за файл, текстовый буфер в памяти отражает изменения, которые вы создали, а также все незафиксированные изменения. Файл на диске отражают последние код, созданный вами и любые сохраненные изменения пользователем в коде изменить пользователя.  
   
-5.  Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> метод для уведомления <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объекта для возобновления наблюдения за уведомления об изменении файла, задав `fIgnore` параметр `false`.  
+5. Вызовите <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> метод для уведомления <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> объекта для возобновления наблюдения за уведомления об изменении файла, задав `fIgnore` параметр `false`.  
   
-6.  Если вы планируете внести несколько изменений в файл, как в случае управления исходным кодом (SCC), необходимо сообщить службе изменение глобальных файлов временно остановить уведомления об изменении файла.  
+6. Если вы планируете внести несколько изменений в файл, как в случае управления исходным кодом (SCC), необходимо сообщить службе изменение глобальных файлов временно остановить уведомления об изменении файла.  
   
      Например если переписать файл и затем измените метку времени, необходимо приостановить уведомления об изменении файла, как операции перезаписи и timestample каждого учитываются, так как события изменения в отдельном файле. Для включения уведомлений об изменении глобального файла, следует вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> метод.  
   
@@ -121,4 +116,3 @@ void CSuspendFileChanges::Resume()
   
 ## <a name="robust-programming"></a>Отказоустойчивость  
  Если ваш вариант подразумевает несколько изменений в файл, как в случае SCC, затем важно для возобновления уведомления об изменении глобального файла перед уведомлением данные документа для возобновления наблюдения за изменения файлов.
-

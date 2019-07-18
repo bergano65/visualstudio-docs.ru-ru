@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: b9977075-8fd1-4b11-bfff-d87e9f2586dc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a6cbaaf3594e7d4e708d5f70bcc3c75cb88718
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ad241532454cf1a086f8e85c4f2e16c29c76b26
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828399"
 ---
 # <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
-Получает имя, присвоенное не являющимся файлами исходного кода; то есть код, который был вызван.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_virtualFilename (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает имя, присвоенное внедренного не являющимся файлами исходного кода.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+Получает имя, присвоенное не являющимся файлами исходного кода; то есть код, который был вызван.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_virtualFilename ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает имя, присвоенное внедренного не являющимся файлами исходного кода.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

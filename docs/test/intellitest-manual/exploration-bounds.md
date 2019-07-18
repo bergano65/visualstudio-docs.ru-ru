@@ -1,21 +1,20 @@
 ---
 title: Границы исследования | Инструмент тестирования для разработчиков Microsoft IntelliTest
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978553"
 ---
 # <a name="exploration-bounds"></a>Границы исследования
 
@@ -30,17 +29,17 @@ public partial class FooTest {...}
 
 * **Границы поиска решения для ограничений**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime) — период в секундах, в течение которого функция [поиска решения для ограничений](input-generation.md#constraint-solver) должна обнаружить входные данные, позволяющие проследовать по новому и другому пути выполнения.
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) — объем памяти в мегабайтах, доступный функции [поиска решения для ограничений](input-generation.md#constraint-solver) при обнаружении входных данных.<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) — объем памяти в мегабайтах, доступный функции [поиска решения для ограничений](input-generation.md#constraint-solver) при обнаружении входных данных.
 * **Границы исследования путей**
   * [MaxBranches](#maxbranches) — максимальное число ветвей, которые могут быть использованы вдоль одного пути выполнения.
   * [MaxCalls](#maxcalls) — максимальное число вызовов, которые могут быть выполнены вдоль одного пути выполнения.
   * [MaxStack](#maxstack) — максимальный размер стека в любой точке одного пути выполнения, измеряемый количеством кадров активного вызова.
-  * [MaxConditions](#maxconditions) — максимальное количество условий для входных данных, которые можно проверить в рамках одного пути выполнения.<p />
+  * [MaxConditions](#maxconditions) — максимальное количество условий для входных данных, которые можно проверить в рамках одного пути выполнения.
 * **Границы исследования**
   * [MaxRuns](#maxruns) — максимальное количество попыток запуска во время просмотра.
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) —максимальное количество последовательных выполнений без выдачи нового теста.
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) — максимальное количество попыток запуска с уникальными путями выполнения во время просмотра.
-  * [MaxExceptions](#maxexceptions) — максимальное число исключений, которые можно найти для всех обнаруженных путей выполнения.<p />
+  * [MaxExceptions](#maxexceptions) — максимальное число исключений, которые можно найти для всех обнаруженных путей выполнения.
 * **Параметры создания кода для набора тестов**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded) — когда задано значение true, пути выполнения, выходящие за любые границы путей ([MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), [MaxConditions](#maxconditions)), игнорируются.
   * [TestEmissionFilter](#testemissionfilter) — указывает, при каких обстоятельствах IntelliTest должен выдавать тесты.
@@ -106,7 +105,7 @@ for (int i=0; i<100; i++) { }
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -144,10 +143,10 @@ void ParameterizedTest(int n)
 
 Эта граница исследования связана с тем, что любой код, содержащий циклы или рекурсию, может иметь неограниченное число путей выполнения, из-за чего появляется потребность ограничивать IntelliTest во время [создания входных данных](input-generation.md).
 
-Параметры **MaxRuns** и **MaxRunsWithUniquePaths** связаны следующим образом: 
+Параметры **MaxRuns** и **MaxRunsWithUniquePaths** связаны следующим образом:
 
 * IntelliTest будет вызывать метод параметризованного теста до **MaxRuns** раз с различными входными параметрами теста.
-* Если выполняемый код является детерминированным, IntelliTest будет каждый раз использовать другой путь выполнения. Однако при некоторых условиях выполняемый код может следовать по уже использованному ранее пути выполнения с новыми входными параметрами. 
+* Если выполняемый код является детерминированным, IntelliTest будет каждый раз использовать другой путь выполнения. Однако при некоторых условиях выполняемый код может следовать по уже использованному ранее пути выполнения с новыми входными параметрами.
 * IntelliTest подсчитывает число обнаруженных уникальных путей выполнения, которое ограничивается параметром **MaxRunsWithUniquePaths**.
 
 <a name="maxexceptions"></a>

@@ -2,25 +2,24 @@
 title: Краткое руководство. Клонирование репозитория с кодом Python
 description: С помощью этого краткого руководства вы создадите проект Python в Visual Studio, клонировав репозиторий Python Koans с использованием Visual Studio Team Explorer
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a98b236d12954d5707df7fa4933c1f31150c7a0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 446c2622c01e1b127347a668e199e3e6e6e0b1c5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430683"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Краткое руководство. Клонирование репозитория с кодом Python в Visual Studio
 
-[Установив поддержку Python в Visual Studio 2017](installing-python-support-in-visual-studio.md), можно добавить расширение GitHub для Visual Studio. Оно позволяет легко клонировать репозиторий с кодом Python и создать на его основе проект из среды IDE. Кроме того, вы в любое время можете клонировать репозитории в командной строке и затем работать с ними в Visual Studio.
+[Установив поддержку Python в Visual Studio](installing-python-support-in-visual-studio.md), можно добавить расширение GitHub для Visual Studio. Оно позволяет легко клонировать репозиторий с кодом Python и создать на его основе проект из среды IDE. Кроме того, вы в любое время можете клонировать репозитории в командной строке и затем работать с ними в Visual Studio.
 
 ## <a name="install-the-github-extension-for-visual-studio"></a>Установите расширение GitHub для Visual Studio
 

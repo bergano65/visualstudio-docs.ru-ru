@@ -1,11 +1,8 @@
 ---
 title: Использование конструктора действия для прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - activities, configuring
@@ -18,13 +15,13 @@ ms.assetid: 2fea8a05-6e58-423d-94bf-a822b15ffb80
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855769"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Использование конструктора действия для прежних версий
 В данном разделе описано использование конструктора действий в средстве [!INCLUDE[wfd1](../includes/wfd1-md.md)] более ранней версии. Используйте конструктор более ранней версии, если приложение должно ориентироваться на [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -38,13 +35,13 @@ ms.locfileid: "49843435"
   
 2. Выберите **действия** или **действие (с разделением кода)** шаблона.  
   
-   1.  Используйте **действия** шаблон для создания действия с определением действия и пользовательским кодом в одном файле кода.  
+   1. Используйте **действия** шаблон для создания действия с определением действия и пользовательским кодом в одном файле кода.  
   
-   2.  Используйте **действие (с разделением кода)** шаблон, чтобы создать действие с определением действия, выраженные в виде разметки рабочего процесса и пользовательским кодом в отдельном файле кода.  
+   2. Используйте **действие (с разделением кода)** шаблон, чтобы создать действие с определением действия, выраженные в виде разметки рабочего процесса и пользовательским кодом в отдельном файле кода.  
   
 3. Введите имя действия или оставьте имя по умолчанию и нажмите кнопку **добавить**.  
   
-   Можно также создать набор пользовательских действий, создав новый проект типа **Workflow Activity Library**. Дополнительные сведения об этом типе проекта см. в разделе [как: создать библиотеку действий рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
+   Можно также создать набор пользовательских действий, создав новый проект типа **Workflow Activity Library**. Дополнительные сведения об этом типе проекта см. в разделе [как: Создать библиотеку действий рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
 ## <a name="configuring-an-activity"></a>Настройка действия  
  Пока конструктор действия активен, для настройки свойств, перечисленных в следующей таблицы, можно использовать браузер свойств.  
@@ -64,5 +61,5 @@ ms.locfileid: "49843435"
  [Создание настраиваемых действий](http://go.microsoft.com/fwlink?LinkID=65021)   
  [Действия рабочего процесса прежних версий](../workflow-designer/legacy-workflow-activities.md)   
  [Примеры настраиваемых действий](http://go.microsoft.com/fwlink?LinkID=65022)   
- [Практическое: создать библиотеку действий рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
+ [Практическое руководство. Создать библиотеку действий рабочих процессов (для прежних версий)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
  [Использование конструктора рабочих процессов для прежних версий](../workflow-designer/using-the-legacy-workflow-designer.md)

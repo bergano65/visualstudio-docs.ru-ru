@@ -1,7 +1,6 @@
 ---
 title: Преобразование текста в верхний или нижний регистр
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, text case
@@ -9,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: b04d1327-a45e-4c12-a0d0-67672b3fa855
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a239c601032a21cd34636ed79871cd108b853e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33d4f0cce0699c27068152827382eb7d8627b715
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879271"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531952"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Как выполнить изменение регистра текста в редакторе
+# <a name="how-to-change-text-case-in-the-editor"></a>Практическое руководство. изменение регистра текста в редакторе
 
 Для переключения регистра выбранного текста можно использовать команды меню или сочетания клавиш.
 
@@ -28,11 +27,11 @@ ms.locfileid: "53879271"
 
 ## <a name="to-switch-text-to-upper-case"></a>Переключение текста в верхний регистр
 
-1.  Выделите текст, который требуется преобразовать.
+1. Выделите текст, который требуется преобразовать.
 
-2.  В меню **Правка** выберите **Дополнительно**.
+2. В меню **Правка** выберите **Дополнительно**.
 
-3.  Чтобы преобразовать все буквы в прописные, выберите **Все прописные** или нажмите клавиши **CTRL**+**SHIFT**+**U**.
+3. Чтобы преобразовать все буквы в прописные, выберите **Все прописные** или нажмите клавиши **CTRL**+**SHIFT**+**U**.
 
     Или...
 
@@ -43,6 +42,5 @@ ms.locfileid: "53879271"
 
 ## <a name="see-also"></a>См. также
 
-- [Настройка редактора](../ide/customizing-the-editor.md)
 - [Диалоговое окно "Параметры текстового редактора"](../ide/reference/text-editor-options-dialog-box.md)
 - [Возможности редактора кода](../ide/writing-code-in-the-code-and-text-editor.md)

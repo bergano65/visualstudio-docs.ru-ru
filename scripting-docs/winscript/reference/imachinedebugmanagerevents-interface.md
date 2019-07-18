@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IMachineDebugManagerEvents | Документы Microsoft
+title: Интерфейс IMachineDebugManagerEvents | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 369dc8d182efe7bf9697454d0e4b1c9c1a10c027
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fcfcc2aed0fedefdc149b83e911d33cd3b54cdef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977634"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>Интерфейс IMachineDebugManagerEvents
-Указывает изменения в работе приложения списка, поддерживаемого диспетчера отладки. Этот интерфейс можно использовать отладчик интегрированной среды разработки для отображения динамического списка приложений.  
+Сигнализирует об изменениях в списке запущенных приложений, формируемом диспетчером отладки. Этот интерфейс может использоваться отладчиком интегрированной среды разработки для отображения динамического списка приложений.  
   
  Помимо методов, наследуемых от `IUnknown`, `IMachineDebugManagerEvents` интерфейс предоставляет следующие методы.  
   
@@ -30,5 +29,5 @@ ms.locfileid: "24727634"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Обрабатывает событие, при добавлении приложения с запуском список приложений.|  
-|[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Обрабатывает событие, когда приложение удаляется из выполнения список приложений.|
+|[IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)|Обрабатывает событие при добавлении приложения с запуском список приложений.|  
+|[IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)|Обрабатывает событие, когда приложение удаляется из выполняемого список приложений.|

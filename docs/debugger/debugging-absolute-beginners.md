@@ -7,15 +7,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35f9e866f58d52b7f74ac0a136b0eeb49382c612
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f5cfe112aff36910ca4b4861d3a65cc7ea61655
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927328"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679388"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Принципы отладки для начинающих
 
@@ -64,7 +64,7 @@ ms.locfileid: "53927328"
 
 При выполнении приложения в отладчике (в так называемом *режиме отладки*) осуществляется активный мониторинг всего, что происходит во время работы программы. Кроме того, вы можете в любой точке приостановить работу приложения, исследовать его состояние и при необходимости перейти в режим пошагового выполнения, чтобы изучить необходимые строки кода более детально.
 
-Чтобы перейти в режим отладки в Visual Studio, необходимо нажать клавишу **F5** (также вы можете выбрать пункт меню **Отладка** > **Начать отладку** или нажать кнопку **Начать отладку** ![Начать отладку](../debugger/media/dbg-tour-start-debugging.png "Начать отладку") в панели инструментов "Отладка"). Если возникает исключение, помощник по исправлению ошибок Visual Studio направит вас к точке его появления и предоставит другую необходимую информацию.
+Чтобы перейти в режим отладки в Visual Studio, необходимо нажать клавишу **F5** (также вы можете выбрать пункт меню **Отладка** > **Начать отладку** или нажать кнопку **Начать отладку** ![Начать отладку](../debugger/media/dbg-tour-start-debugging.png "Начать отладку") в панели инструментов "Отладка"). Если возникает исключение, помощник по исправлению ошибок Visual Studio направит вас к точке его появления и предоставит другую необходимую информацию. См. дополнительные сведения об обработке исключений в коде в разделе [Приемы и инструменты отладки](../debugger/write-better-code-with-visual-studio.md).
 
 Если исключение не возникает, возможно, вам следует проанализировать определенные места в коде, которые могут являться источником проблемы. На этом этапе следует использовать *точки останова* в отладчике, благодаря которым вы сможете исследовать код более внимательно. Точки останова — это один из самых простых и важных компонентов надежной отладки. Точка останова указывает, где Visual Studio следует приостановить выполнение кода, чтобы вы могли проверить значения переменных, поведение памяти или последовательность выполнения кода.
 
@@ -78,21 +78,20 @@ ms.locfileid: "53927328"
 
 1. Для этого вам потребуется установленная среда Visual Studio с рабочими нагрузками **Разработка классических приложений .NET** или **Кроссплатформенная разработка .NET Core** (в зависимости от того, приложение какого типа вы создаете).
 
-    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) , если вы еще не сделали этого.
+    Установите Visual Studio бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
 
     Если у вас уже установлена среда Visual Studio без нужных рабочих нагрузок, щелкните **Сервис** > **Получить средства и компоненты**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений .NET** или **Кроссплатформенная разработка .NET Core**, а затем щелкните **Изменить**.
 
-1. Откройте Visual Studio и последовательно выберите **Файл** > **Создать** > **Проект**.
+1. Запустите Visual Studio.
 
-1. Выберите шаблон кода приложения.
+    ::: moniker range=">=vs-2019"
+    На начальном экране выберите **Создать проект**. Введите **консоль** в поле поиска и выберите **Консольное приложение (.NET Framework)** или **Консольное приложение (.NET Core)**. Нажмите кнопку **Далее**. Введите имя проекта, например **ConsoleApp-FirstApp**, и нажмите кнопку **Создать**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** в разделе **Visual C#** выберите **Консольное приложение**, а затем в средней области выберите **Консольное приложение (.NET Framework)** или **Консольное приложение (.NET Core)**. Введите такое имя, как **ConsoleApp-FirstApp**, и нажмите кнопку **ОК**.
+    ::: moniker-end
 
-    Для .NET Framework в диалоговом окне **Новый проект** выберите в разделе установленных шаблонов **Visual C#**, **Классические приложения Windows**, после чего в центральной области выберите **Консольное приложение (.NET Framework)**.
-
-    Для .NET Core в диалоговом окне **Новый проект** выберите в разделе установленных шаблонов **Visual C#**, **.NET Core**, после чего в центральной области выберите **Консольное приложение (.NET Core)**.
-
-    Если эти шаблоны отсутствуют, необходимо установить соответствующую рабочую нагрузку (см. выше).
-
-1. В поле **Имя** введите **ConsoleApp-FirstApp** и нажмите кнопку **ОК**.
+    Если шаблон проекта **Консольное приложение (.NET Framework)** или **Консольное приложение (.NET Core)** отсутствует, перейдите в меню **Сервис** > **Получить средства и компоненты**, после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений .NET** или **Кроссплатформенная разработка .NET Core**, а затем выберите **Изменить**.
 
     Visual Studio создаст консольный проект и откроет его в обозревателе решений (правая область).
 
@@ -101,7 +100,7 @@ ms.locfileid: "53927328"
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -112,7 +111,7 @@ ms.locfileid: "53927328"
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -124,33 +123,33 @@ ms.locfileid: "53927328"
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -188,8 +187,8 @@ ms.locfileid: "53927328"
     По результатам запуска приложения отладчик не демонстрирует никаких исключений. Тем не менее данные, выводимые в окно консоли, не соответствуют ожиданиям. Вот, что мы должны были увидеть.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -199,8 +198,8 @@ ms.locfileid: "53927328"
     Вместо этого выводятся следующие данные.
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -217,7 +216,7 @@ ms.locfileid: "53927328"
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     В месте установки точки останова в левом поле появится красный круг.
@@ -247,13 +246,13 @@ ms.locfileid: "53927328"
 1. Анализируя код, в котором задается тип галактики, вы можете увидеть, что свойство `GalaxyType` класса `Galaxy` задается как `object` вместо `GType`.
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. Измените предшествующий код на следующий.
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. Нажмите кнопку **Перезапустить** ![Перезапустить приложение](../debugger/media/dbg-tour-restart.png "Перезапустить приложение") на панели инструментов отладки (**CTRL** + **SHIFT** + **F5**), чтобы выполнить повторную компиляцию кода и снова запустить его.
@@ -265,8 +264,8 @@ ms.locfileid: "53927328"
     Приложение запускается и отображает выходные данные. Теперь все работает правильно, однако вы можете заметить еще одну неточность. Для галактики Small Magellanic Cloud, которая имеет тип Irregular, в консоли не выводится никакой тип.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -283,7 +282,7 @@ ms.locfileid: "53927328"
 
 1. Нажмите кнопку **Перезапустить** ![Перезапустить приложение](../debugger/media/dbg-tour-restart.png "Перезапустить приложение") на панели инструментов отладки (**CTRL** + **SHIFT** + **F5**), чтобы запустить приложение снова.
 
-    Отладчик приостановит работу в строке кода, где вы задали точку останова.  
+    Отладчик приостановит работу в строке кода, где вы задали точку останова.
 
 1. Наведите указатель мыши на переменную `type`. Отображается значение `S` (после кода символа). Вас интересует значение `I`, поскольку эта галактика должна иметь тип Irregular.
 
@@ -323,7 +322,7 @@ ms.locfileid: "53927328"
 * Проверьте, выполняет ли ваше приложение код, который вы ожидаете. (Так, в примере приложения должна была выполняться инструкция switch, устанавливающая тип галактики Irregular, однако нужный код был пропущен из-за опечатки.)
 
 > [!TIP]
-> Отладчик представляет собой эффективное средства для выявления ошибок. Средство отладки может искать ошибки *вместо вас* в том случае, если ему известно предназначение кода. Для этого вы должны указать предназначение. Этого можно добиться с помощью [модульных тестов](../test/improve-code-quality.md). 
+> Отладчик представляет собой эффективное средства для выявления ошибок. Средство отладки может искать ошибки *вместо вас* в том случае, если ему известно предназначение кода. Для этого вы должны указать предназначение. Этого можно добиться с помощью [модульных тестов](../test/improve-code-quality.md).
 
 ## <a name="next-steps"></a>Следующие шаги
 

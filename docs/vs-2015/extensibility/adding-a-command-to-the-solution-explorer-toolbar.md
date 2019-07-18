@@ -1,14 +1,9 @@
 ---
 title: Добавление команды на панели инструментов обозревателя решений | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding buttons
 - buttons [Visual Studio], adding to Solution Explorer
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52e963a202d75c29c65521729e70e062a579d479
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ac07a2c6becd46a2536e6a9b3340d075d5f078f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403243"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Добавление команды на панель инструментов обозревателя решений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51753645"
  Дополнительные сведения о меню, панели инструментов команды и vsct-файлы, см. в разделе [команд, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md).  
   
 > [!NOTE]
->  Используются файлы таблицы команд XML (vsct-) вместо командные файлы конфигурации (.ctc) таблицы для определения того, как меню и команды отображаются в пакетов VSPackage. Дополнительные сведения см. в разделе [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+> Используются файлы таблицы команд XML (vsct-) вместо командные файлы конфигурации (.ctc) таблицы для определения того, как меню и команды отображаются в пакетов VSPackage. Дополнительные сведения см. в разделе [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="prerequisites"></a>Предварительные требования  
  Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -45,13 +40,13 @@ ms.locfileid: "51753645"
 ## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>Добавление кнопки на панели инструментов обозревателя решений  
  В этом разделе пошагового руководства показано, как добавить кнопку **обозревателе решений** панели инструментов. При нажатии кнопки выполняется код в метод обратного вызова.  
   
-1.  В файле ToolbarButtonPackage.vsct, перейдите в раздел `<Symbols>` раздел. `<GuidSymbol>` Узел содержит группы меню и команды, который был создан с помощью шаблона пакета. Добавление `<IDSymbol>` элемент в этот узел, чтобы объявить группу, которая будет содержать команду.  
+1. В файле ToolbarButtonPackage.vsct, перейдите в раздел `<Symbols>` раздел. `<GuidSymbol>` Узел содержит группы меню и команды, который был создан с помощью шаблона пакета. Добавление `<IDSymbol>` элемент в этот узел, чтобы объявить группу, которая будет содержать команду.  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2.  В `<Groups>` разделе после существующую запись группы, определить новую группу, объявленного на предыдущем шаге.  
+2. В `<Groups>` разделе после существующую запись группы, определить новую группу, объявленного на предыдущем шаге.  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -62,7 +57,7 @@ ms.locfileid: "51753645"
   
      Установив пару GUID: ID в качестве родительского `guidSHLMainMenu` и `IDM_VS_TOOL_PROJWIN` помещает эту группу в **обозревателе решений** панели инструментов, а также задать значение высоким приоритетом помещает его после других группы команд.  
   
-3.  В `<Buttons>` измените идентификатор родительского объекта, созданного `<Button>` запись группы, определенные на предыдущем шаге. Измененный `<Button>` элемент должен выглядеть следующим образом:  
+3. В `<Buttons>` измените идентификатор родительского объекта, созданного `<Button>` запись группы, определенные на предыдущем шаге. Измененный `<Button>` элемент должен выглядеть следующим образом:  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -74,11 +69,11 @@ ms.locfileid: "51753645"
     </Button>  
     ```  
   
-4.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
+4. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
      **Обозревателе решений** панель инструментов должна отображать новые кнопки справа от существующих кнопок. Значок кнопки, зачеркивания.  
   
-5.  Нажмите кнопку "Создать".  
+5. Нажмите кнопку "Создать".  
   
      Диалоговое окно, которое содержит сообщение **ToolbarButtonPackage внутри SolutionToolbar.ToolbarButton.MenuItemCallback()** должны отображаться.  
   
@@ -125,4 +120,3 @@ ms.locfileid: "51753645"
   
 ## <a name="see-also"></a>См. также  
  [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
-

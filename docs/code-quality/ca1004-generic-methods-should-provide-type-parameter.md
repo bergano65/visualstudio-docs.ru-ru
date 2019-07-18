@@ -1,7 +1,6 @@
 ---
 title: CA1004. Универсальные методы должны предоставлять параметр типа
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1004
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 38755f6a-fb45-4bf2-932e-0354ad826499
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fe40093253cb57d60c2a06239b47b5f3141f76c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 94c21a81a7473e1697609ff3e46eb054ad304540
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779893"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004. Универсальные методы должны предоставлять параметр типа
 

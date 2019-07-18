@@ -1,7 +1,6 @@
 ---
 title: Страница "Безопасность" в конструкторе проектов
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - Security page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30b09fee21dd7f028615612c27c3aab468a22055
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945496"
 ---
 # <a name="security-page-project-designer"></a>Страница "Безопасность" в конструкторе проектов
 
@@ -35,7 +34,6 @@ ms.locfileid: "53987957"
 
 > [!NOTE]
 > При публикации приложения с помощью мастера **публикации** этот флажок устанавливается автоматически.
-
 
  При выборе этого параметра можно установить один из двух переключателей: **Это приложение с полным доверием** или **Это приложение с частичным доверием**.
 

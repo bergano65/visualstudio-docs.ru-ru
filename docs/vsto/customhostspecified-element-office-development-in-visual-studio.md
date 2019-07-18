@@ -13,15 +13,15 @@ helpviewer_keywords:
 - customHostSpecified element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0880e0ddf4763cf2c67c10871992a24b76f59ef2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26597796c99d3ab8740812819cf3aa5568e2985b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956183"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified&gt; элемент (Разработка решений Office в Visual Studio)
   `customHostSpecified` Элемент указывает, что это решение не является автономным. Решения Office содержат компоненты, которые размещаются в приложениях Microsoft Office.

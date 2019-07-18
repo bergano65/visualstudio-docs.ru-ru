@@ -1,27 +1,22 @@
 ---
 title: Библиография по вопросам безопасности | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio], additional information
 ms.assetid: 3e839007-c388-4fc4-a6d1-8127cd207750
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b0634c07d18fc9bac782eb2ccd2407afd86089e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 454e71026eeee3cbd76c95038ba59fb709b8d88f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203515"
 ---
 # <a name="security-bibliography"></a>Библиография по вопросам безопасности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +24,11 @@ ms.locfileid: "49178715"
 Ниже представлены избранные электронные и печатные ресурсы, посвященные вопросам разработки безопасных приложений и настройки безопасных сред.  
   
 ## <a name="microsoft-web-sites"></a>Веб-узлы корпорации Microsoft  
- [Центр безопасности Майкрософт](http://go.microsoft.com/fwlink/?LinkId=55529)  
+ [Центр безопасности Майкрософт](https://www.microsoft.com/security)  
  Описание деятельности Microsoft в сфере защиты приложений и систем разных уровней (от настольных до сетевых), а также ссылки на ресурсы по вопросам безопасности для специалистов в области информационных технологий, разработчиков и домашних пользователей.  
   
- [Источники информации по безопасности на сайте MSDN](http://go.microsoft.com/fwlink/?LinkID=25440)  
+ [Источники информации по безопасности на сайте MSDN](https://www.microsoft.com/msrc?rtc=1)  
  Ссылки на документацию для разработчиков, примеры кода, технические статьи и другие ресурсы, посвященные разработке безопасных приложений.  
   
- [Центр безопасности Microsoft TechNet](http://go.microsoft.com/fwlink/?LinkId=67991)  
+ [Центр безопасности Microsoft TechNet](https://www.microsoft.com/securityengineering)  
  Ссылки на важную техническую информацию о безопасности для специалистов в области информационных технологий и опытных пользователей.
-
-
-

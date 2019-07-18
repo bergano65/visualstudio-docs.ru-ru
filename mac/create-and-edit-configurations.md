@@ -1,16 +1,17 @@
 ---
 title: Создание и изменение конфигураций сборки
 description: В этой статье описывается создание конфигураций сборки в Visual Studio для Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.openlocfilehash: 49a64f7752bc5f6b3dbbb0dcfed385bfdd5ef9be
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 09591cb4feee4e9dc673f925bf3917eb3d07319b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296103"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693076"
 ---
 # <a name="creating-and-editing-build-configurations"></a>Создание и изменение конфигураций сборки
 
@@ -59,6 +60,10 @@ ms.locfileid: "51296103"
 Нажмите кнопку **Переименовать**.
 
 ![Диалоговое окно переименования](media/create-and-edit-configurations-image5.png)
+
+## <a name="related-video"></a>Связанные видео
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Launch-Multiple-Projects/player]
 
 ## <a name="see-also"></a>См. также
 

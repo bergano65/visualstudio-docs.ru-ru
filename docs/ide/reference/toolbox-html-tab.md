@@ -1,7 +1,6 @@
 ---
 title: Вкладка HTML, панель элементов
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.html
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - HTML tab in Toolbox
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f51ce6b1aee945bb368f3206d136bf7f4d1565
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 420a65fb8b91495c5fbba228e190b5589019c99f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576978"
 ---
 # <a name="toolbox-html-tab"></a>Вкладка HTML, панель элементов
 
@@ -144,7 +143,7 @@ ms.locfileid: "53862930"
 
 **Ввод (скрытое поле)**
 
-![Скрытый элемент страницы HTML](../../ide/reference/media/vxhidden.gif)
+![Сокрытый элемент страницы HTML](../../ide/reference/media/vxhidden.gif)
 
 Вставляет элемент `input` объекта `type="hidden"`. По умолчанию `id="Hidden1"` вставляется для первого скрытого поля, `id="Hidden2"` для второго и т. д.
 
@@ -195,7 +194,7 @@ ms.locfileid: "53862930"
 
 **Выбрать**
 
-![Открывающаяся панель элементов страницы HTML](../../ide/reference/media/vxdropdown.gif)
+![Раскрывающаяся панель элементов страницы HTML](../../ide/reference/media/vxdropdown.gif)
 
 Вставляет элемент `select` раскрывающегося списка (без атрибута `size`). По умолчанию `id="select1"` вставляется для первого списка, `id="select2"` для второго и т. д.
 

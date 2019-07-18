@@ -1,28 +1,23 @@
 ---
-title: 'Практическое: регистрация типов файлов в редакторе | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Регистрация типов файлов в редакторе | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
 ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 39b1cde8dec71df9cb85bf737c23c883fbdcd615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204116"
 ---
-# <a name="how-to-register-editor-file-types"></a>Практическое: регистрация редактор типов файлов
+# <a name="how-to-register-editor-file-types"></a>Практическое руководство. Регистрация типов файлов в редакторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Самый простой способ зарегистрировать редактор типов файлов — с помощью регистрации атрибутов, предоставляемых в составе [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] классы managed package framework (MPF). При реализации пакета в машинный код [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], можно также написать скрипт реестра, который регистрирует редактора и связанные расширения.  
@@ -31,7 +26,7 @@ ms.locfileid: "51777270"
   
 #### <a name="to-register-editor-file-types-using-mpf-classes"></a>Чтобы зарегистрировать редактор типов файлов, используя классы MPF  
   
-1.  Укажите <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> класс с необходимыми параметрами для редактора в классе вашего VSPackage.  
+1. Укажите <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> класс с необходимыми параметрами для редактора в классе вашего VSPackage.  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -48,7 +43,7 @@ ms.locfileid: "51777270"
   
      `NameResourceID` определяется в файле Resources.h BasicEditorUI проекта и определяющее редактор редактором «My».  
   
-2.  Переопределите метод <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .  
+2. Переопределите метод <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .  
   
      В реализации <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> мы вызываем метод <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> метод и передайте экземпляр фабрикой редактора, как показано ниже.  
   
@@ -66,7 +61,7 @@ ms.locfileid: "51777270"
   
      Этот шаг регистрирует фабрику редактора и файл расширения редактора.  
   
-3.  Отмена регистрации фабрики редакторов.  
+3. Отмена регистрации фабрики редакторов.  
   
      Фабрики редакторов отменяется автоматически, при удалении пакета VSPackage. Если объект фабрики редактора реализует <xref:System.IDisposable> интерфейс, его `Dispose` метод вызывается после фабрики были его регистрацию с помощью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
@@ -75,7 +70,7 @@ ms.locfileid: "51777270"
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>Чтобы зарегистрировать редактор типов файлов, с помощью скрипта реестра  
   
-1.  В скрипте реестра определить фабрику редактора и строка идентификатора GUID фабрики редактора как показано в `GUID_BscEditorFactory` части следующий скрипт реестра. Кроме того определите, расширение и приоритет расширения редактора.  
+1. В скрипте реестра определить фабрику редактора и строка идентификатора GUID фабрики редактора как показано в `GUID_BscEditorFactory` части следующий скрипт реестра. Кроме того определите, расширение и приоритет расширения редактора.  
   
     ```  
   
@@ -97,9 +92,9 @@ ms.locfileid: "51777270"
   
      Расширение редактора в этом примере определяется как «.rtf» и его приоритет равен «50». Строки GUID определяются в файле Resource.h BscEdit примера проекта.  
   
-2.  Регистрация пакета VSPackage.  
+2. Регистрация пакета VSPackage.  
   
-3.  Регистрация фабрики редактора.  
+3. Регистрация фабрики редактора.  
   
      Фабрика редакторов регистрируется в <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> реализации.  
   
@@ -133,4 +128,3 @@ ms.locfileid: "51777270"
     ```  
   
      Строки GUID определяются в файле Resource.h BscEdit проекта.
-

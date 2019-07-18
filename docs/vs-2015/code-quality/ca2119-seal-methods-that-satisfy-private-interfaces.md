@@ -1,14 +1,9 @@
 ---
-title: 'CA2119: Запечатайте методы, соответствующие частным интерфейсам | Документация Майкрософт'
-ms.custom: ''
+title: CA2119. Запечатайте методы, соответствующие частным интерфейсам | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
 - CA2119
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c6d3e102cde1fc010f777006d629fa2d19add894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56b08d1b842e65e1c1c29a7409813c314cbf014d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825403"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687278"
 ---
-# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: запечатайте методы, соответствующие частным интерфейсам
+# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119. Запечатайте методы, соответствующие частным интерфейсам
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -46,15 +41,15 @@ ms.locfileid: "49825403"
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, предотвратить метода переопределение за пределы данной сборки с помощью одного из следующих:
 
--   Сделайте объявляющий тип `sealed` (`NotInheritable` в Visual Basic).
+- Сделайте объявляющий тип `sealed` (`NotInheritable` в Visual Basic).
 
--   Изменить доступность объявляющий тип для `internal` (`Friend` в Visual Basic).
+- Изменить доступность объявляющий тип для `internal` (`Friend` в Visual Basic).
 
--   Удалите все открытые конструкторы из объявляющего типа.
+- Удалите все открытые конструкторы из объявляющего типа.
 
--   Реализуйте метод без использования `virtual` модификатор.
+- Реализуйте метод без использования `virtual` модификатор.
 
--   Реализуйте метод явным образом.
+- Реализуйте метод явным образом.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Его можно безопасно подавить предупреждение из этого правила, если после тщательной проверки безопасности проблемы отсутствуют, могли бы быть использованы в том случае, если переопределен метод за пределы данной сборки.
@@ -74,7 +69,4 @@ ms.locfileid: "49825403"
  [!code-vb[FxCop.Security.SealMethods2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.SealMethods2/vb/FxCop.Security.SealMethods2.vb#1)]
 
 ## <a name="see-also"></a>См. также
- [Интерфейсы](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [интерфейсы](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)
-
-
-
+ [Интерфейсы](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [интерфейсы](https://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)

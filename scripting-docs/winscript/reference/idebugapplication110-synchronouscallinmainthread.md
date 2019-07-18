@@ -1,8 +1,7 @@
 ---
-title: IDebugApplication110::SynchronousCallInMainThread | Документы Microsoft
+title: IDebugApplication110::SynchronousCallInMainThread | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef52ebfe8bfccecc0eea2383787a5b2698a5ce5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: d98f28f441096886c9ef7f26e63d876455a264e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446366"
 ---
 # <a name="idebugapplication110synchronouscallinmainthread"></a>IDebugApplication110::SynchronousCallInMainThread
-Делает синхронный вызов в основном потоке.  
+Выполняет синхронный вызов в основном потоке.  
   
 > [!IMPORTANT]
->  [Idebugapplication110 — интерфейс](../../winscript/reference/idebugapplication110-interface.md) — реализованный PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> [Интерфейс IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,7 +34,7 @@ HRESULT SynchronousCallInMainThread([in] IDebugThreadCall* pptc, [in] DWORD_PTR 
   
 #### <a name="parameters"></a>Параметры  
  `pptc`  
- [Интерфейс IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md) для вызова.  
+ [Интерфейс IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md) объект для вызова.  
   
  `dwParam1`  
  Первый параметр вызова.  

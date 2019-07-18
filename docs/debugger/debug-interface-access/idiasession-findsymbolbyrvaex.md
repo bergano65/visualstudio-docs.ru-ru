@@ -9,55 +9,59 @@ helpviewer_keywords:
 ms.assetid: 61344966-fed4-4c02-9e27-20356ec2ef7c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 166a5cd0de9980a72cdcf83a4e4cd12f02642d90
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 0c6c8e3523a49bd4fc22a86c9ec86b1e8cd2038e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839255"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
-Возвращает тип указанного символа, который содержит, или ближайший к указанным относительный виртуальный адрес (RVA) и смещение.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT findSymbolByRVAEx (   
-   DWORD        rva,  
-   SymTagEnum   symtag,  
-   IDiaSymbol** ppSymbol,  
-   LONG*        displacement  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `rva`  
- [in] Указывает RVA.  
-  
- `symtag`  
- [in] Найти тип символа. Значения берутся из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления.  
-  
- `ppSymbol`  
- [out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) извлечь объект, представляющий символ.  
-  
- `displacement`  
- [out] Возвращает значение, указывающее смещение относительно относительный виртуальный адрес, указанный в `rva`.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="example"></a>Пример  
-  
-```C++  
-IDiaSymbol* pFunc;  
-LONG disp = 0;  
-pSession->findSymbolByRVAEx( rva, SymTagFunction, &pFunc, &disp );  
-```  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
+Возвращает тип указанного символа, который содержит, или ближайший к указанным относительный виртуальный адрес (RVA) и смещение.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT findSymbolByRVAEx ( 
+   DWORD        rva,
+   SymTagEnum   symtag,
+   IDiaSymbol** ppSymbol,
+   LONG*        displacement
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `rva`
+
+[in] Указывает RVA.
+
+ `symtag`
+
+[in] Найти тип символа. Значения берутся из [перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) перечисления.
+
+ `ppSymbol`
+
+[out] Возвращает [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) извлечь объект, представляющий символ.
+
+ `displacement`
+
+[out] Возвращает значение, указывающее смещение относительно относительный виртуальный адрес, указанный в `rva`.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="example"></a>Пример
+
+```C++
+IDiaSymbol* pFunc;
+LONG disp = 0;
+pSession->findSymbolByRVAEx( rva, SymTagFunction, &pFunc, &disp );
+```
+
+## <a name="see-also"></a>См. также
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

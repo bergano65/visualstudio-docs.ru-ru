@@ -13,16 +13,15 @@ helpviewer_keywords:
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79a6432da32733b5cdc45e9f191c866b7fce1c02
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968314"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805327"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Добавление поддержки редактора Visual Studio для других языков
 
@@ -34,7 +33,7 @@ ms.locfileid: "53968314"
 
 ![Раскраска синтаксиса в скрипте Perl](../ide/media/vside_perledit.png)
 
-Сейчас Visual Studio поддерживает раскраску синтаксиса и завершение базовых операторов для следующих языков с помощью [грамматик TextMate](https://manual.macromates.com/en/language_grammars). Если предпочитаемый вами язык отсутствует в таблице, его можно добавить.
+Сейчас Visual Studio поддерживает раскраску синтаксиса и завершение базовых операторов для следующих языков с помощью [грамматик TextMate](https://manual.macromates.com/en/language_grammars). Если предпочитаемый вами язык отсутствует в таблице, &mdash;его можно добавить.
 
 |||||||
 |-|-|-|-|-|-|
@@ -47,45 +46,49 @@ ms.locfileid: "53968314"
 
 Помимо раскраски синтаксиса и завершения основных операторов в Visual Studio также имеется функция [Перейти к](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Она позволяет быстро выполнять поиск в файлах кода, путях к файлам и символах кода. Visual Studio предоставляет поддержку функции "Перейти к" для указанных далее языков.
 
--   Go
+- C#
 
--   Java
+- C++
 
--   JavaScript
+- TypeScript
 
--   PHP
+- JavaScript
 
--   TypeScript
+- Visual Basic
 
--   Visual Basic
+- Go
 
--   Visual C++
+- Java
 
--   C#
+- PHP
 
 Все эти типы файлов имеют описанные ранее функции, даже если поддержка для данного языка еще не была установлена. Установка специальной поддержки для некоторых языков может обеспечить дополнительную поддержку, например IntelliSense и другие расширенные языковые функции, такие как лампочки.
 
 ## <a name="add-support-for-non-supported-languages"></a>Добавление поддержки для неподдерживаемых языков
 
-Visual Studio 2015 с обновлением 1 и более поздние версии предоставляют языковую поддержку в редакторе с помощью [грамматики TextMate](https://manual.macromates.com/en/language_grammars). Если предпочитаемый вами язык программирования в настоящее время не поддерживается в редакторе Visual Studio, выполните поиск в Интернете — пакет TextMate для языка уже может существовать. Если вы не можете найти пакет, добавьте для него поддержку в Visual Studio 2015 с обновлением 1 или более поздней версии самостоятельно, создав модель пакета TextMate для грамматики языка и фрагментов кода.
+Visual Studio предоставляет языковую поддержку в редакторе с помощью [грамматики TextMate](https://manual.macromates.com/en/language_grammars). Если предпочитаемый вами язык программирования в настоящее время не поддерживается в редакторе Visual Studio, выполните поиск в Интернете. Пакет TextMate для этого языка уже может существовать. Если вы не можете найти пакет, добавьте для него поддержку самостоятельно, создав модель пакета TextMate для грамматики языка и фрагментов кода.
 
 Добавьте новые грамматики TextMate для Visual Studio в следующую папку:
 
 *%userprofile%\\.vs\Extensions*
 
-По этому базовому пути добавьте следующие папки, если они допускаются в вашем случае.
+По этому базовому пути добавьте следующие папки, если они применимы в вашем случае.
 
 |Имя папки|Описание|
 |-----------------|-----------------|
-|\\*\<имя языка>*|Папка языка. Замените *\<имя_языка>* на имя нужного языка. Например, *\Matlab*.|
+|\\ *\<имя языка>*|Папка языка. Замените *\<имя_языка>* на имя нужного языка. Например, *\Matlab*.|
 |*\Syntaxes*|Папка грамматики. Содержит файлы *JSON* грамматики для языка, например *Matlab.json*.|
 |*\Snippets*|Папка фрагментов кода. Содержит фрагменты кода для языка.|
 
-В Windows *%userprofile%* разрешается в путь *c:\Users\\\<имя пользователя>*. Если папка расширений не существует в системе, ее необходимо создать. Если папка уже существует, она будет скрыта.
+В Windows *%userprofile%* разрешается в путь *c:\Users\\\<имя пользователя>* . Если в системе папки *Расширение* не существует, ее необходимо создать. Если папка уже существует, она будет скрыта.
 
-Дополнительные сведения о создании грамматик TextMate см. в разделе [TextMate — общие сведения о грамматиках языка. Добавление встроенных функций выделения синтаксиса исходного кода в HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) и [Примечания о создании грамматики языка и настраиваемой темы для пакета Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+> [!TIP]
+> Если у вас есть файлы, открытые в редакторе, вам нужно закрыть и снова открыть их, чтобы увидеть выделение синтаксических конструкций после добавления грамматик TextMate.
+
+Дополнительные сведения о создании грамматик TextMate см. в статьях [TextMate - Introduction to Language Grammars](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate. Введение в грамматику языка) и [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Заметки о создании грамматики языка и пользовательской темы для пакета Textmate).
 
 ## <a name="see-also"></a>См. также
 
+- [Добавление расширения протокола языкового сервера](../extensibility/adding-an-lsp-extension.md)
 - [Пошаговое руководство: создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md)
 - [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)

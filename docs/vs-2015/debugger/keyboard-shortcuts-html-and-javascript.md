@@ -1,14 +1,9 @@
 ---
 title: Сочетания клавиш (HTML и JavaScript) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 8d44425a-6584-477d-932e-4e10d5e79511
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7313869648a22a2c455f06b73981d788b9f678cc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199684"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Сочетания клавиш (HTML и JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "51807209"
 |Обновление приложения Windows|CTRL+SHIFT+R|  
 |Перезапуск приложения Windows|Ctrl+Shift+F5|  
 |Остановка отладки|SHIFT+F5|  
-|Открытие раздела "Производительность и диагностика"|ALT+F2|  
+|Открытие раздела "Производительность и диагностика"|Alt+F2|  
   
 ## <a name="javascript-console-shortcuts"></a>Сочетания клавиш консоли JavaScript  
  Используйте эти сочетания клавиш в окне консоли JavaScript.  
@@ -58,15 +53,12 @@ ms.locfileid: "51807209"
 |Действие|Сочетание клавиш|  
 |------------|--------------|  
 |Выбор элемента|Ctrl+B|  
-|Переключение между отображением и скрытием рамок выделения веб-страницы, при использовании **Выбор элемента**|Ctrl+Shift+I|  
-|Подтверждение изменений с помощью **изменить как HTML**|Ctrl+ВВОД|  
-|Отмена изменений с помощью **изменить как HTML**|ESC|  
+|Переключение между отображением и скрытием рамок выделения веб-страницы при использовании кнопки **Выбор элемента**|Ctrl+Shift+I|  
+|Подтверждение изменений с помощью **Изменить как HTML**|Ctrl+ВВОД|  
+|Отмена изменений с помощью **Изменить как HTML**|ESC|  
 |Увеличение выбранного значения CSS на 1|Стрелка вверх|  
 |Уменьшение выбранного значения CSS на 1|Стрелка вниз|  
   
 ## <a name="see-also"></a>См. также  
- [Краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
-
-
-

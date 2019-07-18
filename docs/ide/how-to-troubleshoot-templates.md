@@ -1,19 +1,18 @@
 ---
 title: Устранение неполадок, связанных с загрузкой шаблона проекта и шаблона элемента
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4908716ce5f984aef6dbd3d482a26e1aeb94623d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 70782646a52a5bca5741a864eee1f965941bb34b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547597"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Как выполнить Устранение неполадок, связанных с шаблонами
 
@@ -21,7 +20,17 @@ ms.locfileid: "53890921"
 
 ## <a name="validate-the-vstemplate-file"></a>Проверка файла VSTEMPLATE
 
+::: moniker range="vs-2017"
+
 Если файл *VSTEMPLATE* в шаблоне не соответствует схеме шаблона Visual Studio, шаблон может не отображаться в диалоговом окне **Новый проект**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Если файл *VSTEMPLATE* в шаблоне не соответствует схеме шаблона Visual Studio, шаблон может не отображаться в диалоговом окне создания проектов.
+
+::: moniker-end
 
 ### <a name="to-validate-the-vstemplate-file"></a>Процедура проверки файла VSTEMPLATE
 

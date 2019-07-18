@@ -1,7 +1,6 @@
 ---
 title: CA1819. Свойства не должны возвращать массивы
-ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6159d6b9a2d8d3dc02cd5f0690f3b1360b4461fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2824be0ecc29965abb68519aaa8eb8a83af8e688
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949460"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841384"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819. Свойства не должны возвращать массивы
 
@@ -36,7 +35,9 @@ ms.locfileid: "53949460"
 
 ## <a name="cause"></a>Причина
 
-Открытый или защищенный свойство в открытом типе возвращает массив.
+Свойство возвращает массив.
+
+По умолчанию это правило считывает только видимое извне свойств и типов, но это [можно настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
 
@@ -53,6 +54,16 @@ ms.locfileid: "53949460"
 Можно отключить предупреждение, если свойство является частью [объект передачи данных (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) класса.
 
 В противном случае не отключайте предупреждение из этого правила.
+
+## <a name="configurability"></a>Возможность настройки
+
+Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+
+```ini
+dotnet_code_quality.ca1819.api_surface = private, internal
+```
+
+В этой категории (производительность), можно настроить этот параметр для только что это правило, для всех правил или для всех правил. Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Пример нарушения
 

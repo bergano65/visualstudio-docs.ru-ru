@@ -3,21 +3,20 @@ title: 'Руководство по Flask в Visual Studio, шаг 4: шабло
 titleSuffix: ''
 description: Пошаговое руководство по основам Flask в контексте проектов Visual Studio с описанием функций, предоставляемых в шаблонах веб-проекта Flask и веб-проекта Flask/Jade.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957321"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Шаг 4. Использование полного шаблона веб-проекта Flask
 
@@ -163,13 +162,14 @@ def about():
 
 Как уже отмечалось в начале этой статьи, Visual Studio предоставляет шаблон "Веб-проект Flask/Jade", который создает приложение, визуально идентичное результату шаблона "Веб-проект Flask". Основное различие заключается в использовании модуля шаблонов Jade, который является расширением Jinja, реализующим те же принципы с помощью более краткого кода. В частности, Jade использует ключевые слова, а не теги, заключенные в разделители {% %}, и позволяет ссылаться на стили CSS и HTML-элементы с помощью ключевых слов.
 
-Чтобы можно было включить Jade, шаблон проекта должен включать пакет pyjade в файле *requirements.txt*. 
+Чтобы можно было включить Jade, шаблон проекта должен включать пакет pyjade в файле *requirements.txt*.
 
 Файл *\_\_init\_\_.py* приложения содержит строку для
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 В папке *templates* вы видите файлы *JADE* вместо шаблонов *HTML*, и представления в *views.py* ссылаются на эти файлы в вызовах к `flask.render_template`. В противном случае код представлений будет тем же.
 
 Открыв один из файлов *JADE*, можно увидеть более короткое выражение шаблона. Например, вот содержимое *templates/layout.jade*, созданное с помощью шаблона "Веб-проект Flask/Jade":

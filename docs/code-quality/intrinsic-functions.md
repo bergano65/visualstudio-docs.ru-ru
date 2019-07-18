@@ -1,7 +1,6 @@
 ---
 title: Встроенные функции
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _String_length_
@@ -16,12 +15,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7781a1ac48945b2c272d5234ac7f4dcbd923b309
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41ac8e38f501152d329e788572c500f68a8d2214
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820724"
 ---
 # <a name="intrinsic-functions"></a>Встроенные функции
 Выражение в SAL может быть выражением C/C++ при условии, что выражение не имеет побочных эффектов, например, ++, -- и все вызовы функций имеют побочные эффекты в этом контексте.  Однако некоторые объекты функций и некоторые зарезервированные символы, которые могут использоваться в выражениях SAL предоставляет SAL. Они называются *встроенные функции*.

@@ -1,14 +1,9 @@
 ---
 title: Настройка сеансов анализа производительности | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - common tasks, performance
 - common tasks, profiling tools
@@ -18,13 +13,13 @@ ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 280d9023167b4d83dfb8b0137301219a518521b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d67801cedded1ccf66544e21257866feda828e31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434333"
 ---
 # <a name="configuring-performance-sessions"></a>Настройка сеансов анализа производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51790400"
 Средства профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] позволяют собирать большой объем данных о производительности для приложений различных типов. В данном разделе описывается, как использовать мастер производительности и свойства сеанса анализа производительности и целевого двоичного файла для настройки средств профилирования для сбора интересующих вас данных. Свойства конфигурации средств профилирования могут также использоваться для управления объемом данных, собираемых в ходе сеанса профилирования. Дополнительные сведения см. в статье [Controlling Data Collection](../profiling/controlling-data-collection.md) (Управление сбором данных).  
   
 > [!NOTE]
->  Во многих случаях использование свойств по умолчанию мастера производительности обеспечивает эффективный сбор данных профилирования. Дополнительные сведения см. в статьях [Beginners Guide to Performance Profiling](../profiling/beginners-guide-to-performance-profiling.md) (Руководство по профилированию производительности для начинающих) и [Начало работы](../profiling/getting-started-with-performance-tools.md).  
+> Во многих случаях использование свойств по умолчанию мастера производительности обеспечивает эффективный сбор данных профилирования. Дополнительные сведения см. в статьях [Beginners Guide to Performance Profiling](../profiling/beginners-guide-to-performance-profiling.md) (Руководство по профилированию производительности для начинающих) и [Начало работы](../profiling/getting-started-with-performance-tools.md).  
   
 ## <a name="common-tasks"></a>Общие задачи  
   
@@ -45,8 +40,5 @@ ms.locfileid: "51790400"
 ## <a name="related-sections"></a>Связанные разделы  
  [Управление сбором данных](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Обозреватель производительности](../profiling/performance-explorer.md)
-
-
-

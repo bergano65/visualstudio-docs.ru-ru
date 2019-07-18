@@ -1,14 +1,9 @@
 ---
 title: Глобализация и локализация приложений | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Visual Studio]
 - Visual Basic code, international applications
@@ -20,13 +15,13 @@ ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 66634bf6c14e316140e001fd8bb147504736981b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fe8671142aeda4972f9ac218fe536b4a991649a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246107"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704371"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Глобализация и локализация приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,10 +47,10 @@ ms.locfileid: "49246107"
  [Глобализация приложения (приложения для Магазина Windows на C#, VB, C++ и XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
  Содержит инструкции и рекомендации по глобализации и локализации вашего приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], созданного с помощью XAML и Visual C#, Visual Basic или Visual C++.  
   
- [Рекомендации по разработке международных приложений](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Рекомендации по разработке международных приложений](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Содержит общие сведения о программировании для международной аудитории.  
   
- [Общие сведения о библиотеке классов](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
+ [Общие сведения о библиотеке классов](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
  Представляет классы, интерфейсы и типы значений, которые облегчают и оптимизируют процесс разработки, а также обеспечивают доступ к функциям системы.  
   
  <xref:System.Globalization>  
@@ -63,4 +58,3 @@ ms.locfileid: "49246107"
   
  <xref:System.Resources>  
  Указывает классы и интерфейсы в этом пространстве имен, позволяющие разработчикам создавать различные ресурсы для конкретного языка и региональных параметров, используемые в приложениях, сохранять эти ресурсы и управлять ими.
-

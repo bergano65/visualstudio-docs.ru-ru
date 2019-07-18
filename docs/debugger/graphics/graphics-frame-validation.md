@@ -7,23 +7,23 @@ f1_keywords:
 ms.assetid: 1e639182-1301-4e28-9c1e-b5df732f3f1b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2add8032a1fa5da983c66ab5cfabede78f4c65c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: ce283e5cbab30b612a02ec447113ad11e206a7f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895874"
 ---
 # <a name="graphics-frame-validation"></a>Проверка кадра графики
-<!-- VERSIONLESS --> Visual Studio 2017 и расширенную поддержку **проверка кадра** средство.  Проверка кадра окна отображаются ошибки и предупреждения, связанные со списком событий.  Чтобы открыть это окно, выберите **Вид > Проверка кадра** меню.
+<!-- VERSIONLESS -->
+Visual Studio 2017 и расширенную поддержку **проверка кадра** средство.  Проверка кадра окна отображаются ошибки и предупреждения, связанные со списком событий.  Чтобы открыть это окно, выберите **Вид > Проверка кадра** меню.
 
 ![Проверка кадра](media/gfx_diag_frame_validation.png)
 
 Нажмите кнопку **выполнить проверку** кнопку в левом верхнем углу, чтобы начать анализ.  Может занять несколько минут в зависимости от сложности кадра.  Данных, которое отображается здесь представляет собой комбинацию из двух источников: сообщения, D3D себя выдает, когда [уровней SDK](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers) включена и данные, собранные из этого инструмента собственные внутреннее состояние отслеживания. После завершения вы увидите несколько столбцов данных:
-
 
 | **Столбец** | **Описание** |
 |------------| - |
@@ -33,6 +33,6 @@ ms.locfileid: "53891778"
 | Сообщение | Сообщение, связанное с событием. |
 | событие | Событие, связанное с ошибкой или предупреждением. |
 
-## <a name="see-also"></a>См. также раздел  
-[Диагностика графики (отладка графики DirectX)](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>См. также
+[Диагностика графики (отладка графики DirectX)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

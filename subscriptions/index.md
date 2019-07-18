@@ -6,16 +6,13 @@ Manager: lank
 layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
-Description: Welcome to Visual Studio Subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 083522aae47abdfdec37d5add756457f18590953
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+Description: Добро пожаловать в подписки Visual Studio
+ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856838"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784388"
 ---
 # <a name="visual-studio-subscriptions"></a>Подписки Visual Studio
 
@@ -26,6 +23,7 @@ ms.locfileid: "49856838"
 Администраторам нужно войти в систему на сайте [https://manage.visualstudio.com](https://manage.visualstudio.com), чтобы назначить подписки команде.<br>
 Подписчикам нужно войти в систему на сайте [https://my.visualstudio.com](https://my.visualstudio.com), чтобы получить доступ к преимуществам подписок.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">
@@ -157,7 +155,7 @@ ms.locfileid: "49856838"
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio для Mac</li>
-                            <li>Team Foundation Server и клиентская лицензия TFS</li>
+                            <li>Azure DevOps Server и клиентская лицензия (CAL)</li>
                         </ul>
                     </div>
                 </div>
@@ -170,7 +168,7 @@ ms.locfileid: "49856838"
                 <div class="card">
                     <div class="cardText">
                         <h3>Облачные службы</h3>
-                        <p>С подпиской Visual Studio вы можете получить                         ежемесячный кредит Azure и бесплатный доступ к службам Azure,                         а также тарифы на разработку и тестирование со скидкой и эксклюзивный                            доступ к коллекции образов с предварительно                                  настроенными виртуальными машинами, доступной только подписчикам. В зависимости от                               подписки облачные службы могут включать следующее.</p>
+                        <p>С подпиской Visual Studio вы можете получить                         ежемесячный кредит Azure и для доступа к службам Azure,                         а также тарифы на разработку и тестирование со скидкой и эксклюзивный                            доступ к коллекции образов с предварительно                                  настроенными виртуальными машинами, доступной только подписчикам. В зависимости от                               подписки облачные службы могут включать следующее.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Центр приложений Visual Studio</a></li>
@@ -195,7 +193,6 @@ ms.locfileid: "49856838"
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (бизнес, технологии и творчество)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (облако, разработка, мобильные технологии и данные)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (обработка и анализ данных, ИИ)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a> (мобильная разработка)</li>
                             <li><a href="/visualstudio/subscriptions/vs-opsgility">Обучение Opsgility</a> (облачные технологии)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Обращения в службу профессиональной технической поддержки Майкрософт</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Чат с Помощником по Azure</a></li>

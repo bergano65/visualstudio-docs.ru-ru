@@ -1,33 +1,28 @@
 ---
 title: Представления одной и несколькими вкладками | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8231581761199be4df9c368494fb27bdc7926c51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205562"
 ---
 # <a name="single-and-multi-tab-views"></a>Представления с одной и несколькими вкладками
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Редактор можно создавать различные типы представлений. Одним из примеров является окном редактора кода, другой — это конструктор форм.  
   
- Представление с несколькими вкладками — представление, которое содержится несколько вкладок. Например, в редакторе HTML есть две вкладки в нижней: **разработки** и **источника**, каждая логическое представление. В конструкторе отображаются готовой веб-страницы, а другой код HTML, который состоит из веб-страницы.  
+ Представление с несколькими вкладками — представление, которое содержится несколько вкладок. Например в редакторе HTML есть две вкладки в нижней: **Проектирование** и **источника**, каждая логическое представление. В конструкторе отображаются готовой веб-страницы, а другой код HTML, который состоит из веб-страницы.  
   
 ## <a name="accessing-physical-views"></a>Доступ к физической представлениям  
  Физические представления разместить объекты представления документа, каждый из которых представляет представление данных в буфере, например код или формы. Соответственно каждый объект представления документа имеет физического представления, (определяется по что-нибудь, известный как строка физического представления) и обычно одно логическое представление.  
@@ -121,6 +116,5 @@ Error:
   
 ## <a name="see-also"></a>См. также  
  [Поддержка представления нескольких документов](../extensibility/supporting-multiple-document-views.md)   
- [Практическое: вложение представлений в данные документа](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Практическое руководство. Присоединение представлений в данные документа](../extensibility/how-to-attach-views-to-document-data.md)   
  [Создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)
-

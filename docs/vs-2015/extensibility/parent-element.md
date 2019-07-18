@@ -1,27 +1,22 @@
 ---
 title: Родительский элемент | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
 - Parent element (VSCT XML schema)
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62096a713e84353ab79206c5edc7003ab443adbb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2086473bc484fed4e8e351f0c3838074557586c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194080"
 ---
 # <a name="parent-element"></a>Элемент Parent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,17 +34,17 @@ ms.locfileid: "51765879"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание:|  
+|Атрибут|Описание|  
 |---------------|-----------------|  
-|guid|Обязательно. Идентификатор GUID из идентификатора GUID и идентификатора команды.|  
-|id|Обязательно. Идентификатор команды идентификатор из GUID и идентификатора.|  
+|guid|Обязательный. Идентификатор GUID из идентификатора GUID и идентификатора команды.|  
+|id|Обязательный. Идентификатор команды идентификатор из GUID и идентификатора.|  
   
 ### <a name="child-elements"></a>Дочерние элементы  
- Нет  
+ None  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |[Элемент CommandTable](../extensibility/commandtable-element.md)|Определяет все элементы, которые представляют команды, предоставляемых VSPackage интегрированной среды разработки (IDE). Например пункты меню, меню, панелей инструментов и поля со списком.|  
 |[Элемент Buttons](../extensibility/buttons-element.md)|Группы [элемент Button](../extensibility/button-element.md) элементов.|  
@@ -58,4 +53,3 @@ ms.locfileid: "51765879"
   
 ## <a name="see-also"></a>См. также  
  [Файлы таблицы команд Visual Studio (VSCT-файлы)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

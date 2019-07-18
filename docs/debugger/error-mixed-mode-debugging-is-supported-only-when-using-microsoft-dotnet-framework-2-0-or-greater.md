@@ -11,22 +11,22 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d63cde2fff8f02d2e628ad737fb2c25dad79af8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 0fd30fb1b181224b61b96670553ef5aa6ff0f721
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914735"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745283"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Ошибка: Смешанный режим отладки поддерживается только при использовании Microsoft.NET Framework 2.0 или выше
-Чтобы выполнить отладку смешанного собственного и управляемого кода, необходимо наличие [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] версии 2.0, 3.0., 3.5 или 4. Отладка в смешанном режиме не поддерживается в более ранних версиях [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
-  
-### <a name="to-correct-this-error"></a>Исправление ошибки  
-  
-- Обновите [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] до версии 2.0, 3.0, 3.5 или 4.  
-  
-## <a name="see-also"></a>См. также раздел  
- [Remote Debugging](../debugger/remote-debugging.md)
+Чтобы выполнить отладку смешанного собственного и управляемого кода, необходимо иметь .NET Framework версии 2.0, 3.0. 3.5 или 4. Смешанный режим отладки с более ранними версиями платформы .NET Framework не поддерживается.
+
+### <a name="to-correct-this-error"></a>Исправление ошибки
+
+- Обновление .NET Framework до версии 2.0, 3.0, 3.5 или 4.0.
+
+## <a name="see-also"></a>См. также
+- [Remote Debugging](../debugger/remote-debugging.md)

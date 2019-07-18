@@ -1,7 +1,6 @@
 ---
 title: Как выполнить Копирование элементов диаграммы классов в документ Microsoft Office (конструктор классов)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, copying elements to Office documents
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c43061ad-d258-46b1-be66-f97a312e86d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c29a3c167f6bf8f0588f94f3ed843d15bc02bc5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19fbcc3db88cd020e1a4541f6cfb7f5f3acd18b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975492"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Как выполнить Копирование элементов диаграммы классов в документ Microsoft Office
 
@@ -29,15 +28,15 @@ ms.locfileid: "53916297"
 
 ## <a name="copy-several-elements"></a>Копирование нескольких элементов
 
-1.  Выберите на схеме фигуры, которые требуется скопировать.
+1. Выберите на схеме фигуры, которые требуется скопировать.
 
-2.  Щелкните выбранные фигуры правой кнопкой мыши и выберите пункт **Копировать изображение**.
+2. Щелкните выбранные фигуры правой кнопкой мыши и выберите пункт **Копировать изображение**.
 
 ## <a name="copy-all-the-elements-in-a-class-diagram"></a>Копирование всех элементов в схеме классов
 
-1.  Щелкните область схемы правой кнопкой мыши и выберите пункт **Выбрать все** или нажмите сочетание клавиш **CTRL + A**.
+1. Щелкните область схемы правой кнопкой мыши и выберите пункт **Выбрать все** или нажмите сочетание клавиш **CTRL + A**.
 
-2.  В меню **Правка** выберите **Копировать изображение**.
+2. В меню **Правка** выберите **Копировать изображение**.
 
 Можно также выбрать команду **Копировать** вместо **Копировать изображение**. Команда **Копировать** копирует изображение как обычный точечный рисунок. Команда **Копировать изображение** копирует изображение как векторное изображение, что лучше подходит для большинства приложений Office.
 

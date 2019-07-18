@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: e601fbc9-b10b-41c7-8180-959e57efabe8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 492748dc54f68d4f888b8cfb6ad8e27ec44435d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: ea2b1ea99eb2801259d58a12c359e9fffd887a64
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830440"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
-Пропускает заданное число символов в последовательности перечисления.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- celt  
- [in] Количество символов в последовательности перечисления для пропуска.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` при наличии дополнительные символы, не нужно пропустить.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Пропускает заданное число символов в последовательности перечисления.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ celt
+
+[in] Количество символов в последовательности перечисления для пропуска.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` при наличии дополнительные символы, не нужно пропустить.
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

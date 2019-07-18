@@ -1,14 +1,9 @@
 ---
 title: Шаг с заходом в режиме приостановки выполнения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - break mode, stepping
 - stepping, in break mode
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4400bcbecce322185ec514e6d05ac9a37e27fdde
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 482d7131692c1e22483c80f4b4bb22e07a6caf1a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423365"
 ---
 # <a name="stepping-in-break-mode"></a>Пошаговое выполнение в режиме приостановки выполнения
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,10 +26,9 @@ ms.locfileid: "51749100"
   
 ## <a name="stepping-process"></a>Пошаговое выполнение процесса  
   
-1.  Вызовите [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) с [STEPKIND](../../extensibility/debugger/reference/stepkind.md) и [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) аргументы для выполнения шага.  
+1. Вызовите [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) с [STEPKIND](../../extensibility/debugger/reference/stepkind.md) и [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) аргументы для выполнения шага.  
   
-2.  По завершении шага отправки [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) как событие остановки.  
+2. По завершении шага отправки [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) как событие остановки.  
   
 ## <a name="see-also"></a>См. также  
  [Вызов событий отладчика](../../extensibility/debugger/calling-debugger-events.md)
-

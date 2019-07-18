@@ -1,14 +1,9 @@
 ---
 title: Запуск таблицы документов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bd7b8cd44c72ea058f71575bdd1774efafa86731
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155556"
 ---
 # <a name="running-document-table"></a>Запуск таблицы документов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51746301"
 ## <a name="elements-of-the-running-document-table"></a>Элементы запуск таблицы документов  
  В таблице выполняющихся документов содержит следующие записи.  
   
-|Элемент|Описание:|  
+|Элемент|Описание|  
 |-------------|-----------------|  
 |Моникер документа|Строка, однозначно определяющее объект данных документа. Это будет абсолютный путь к файлу для система проектов, которая управляет файлами (например, C:\MyProject\MyFile). Эта строка также используется для проектов, сохраненные в хранилищах, отличных от файловых систем, например хранимые процедуры в базе данных. В этом случае система проекта может изобрести уникальная строка, она способна распознавать и возможно синтаксический анализ для определения способа сохранения документа.|  
 |Владелец иерархии|Объект иерархии, который является владельцем документа, представленные как <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> интерфейс.|  
@@ -59,11 +54,10 @@ ms.locfileid: "51746301"
   
  Интегрированная среда разработки также использует RDT для resurface (переместить на передний план) открытого документа, если пользователь запрашивает этого документа. Дополнительные сведения см. в разделе [отображение файлов с помощью команды откройте файл](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Чтобы определить, открыт ли файл в RDT, выполните одно из следующих.  
   
--   Запрос моникер документа (то есть полный путь к документу) узнать, открыт ли элемент.  
+- Запрос моникер документа (то есть полный путь к документу) узнать, открыт ли элемент.  
   
--   Используйте идентификатор иерархия или элемент для попросите система проектов путь полный документ, а затем найдите элемент в RDT.  
+- Используйте идентификатор иерархия или элемент для попросите система проектов путь полный документ, а затем найдите элемент в RDT.  
   
 ## <a name="see-also"></a>См. также  
  [Использование RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)   
  [Сохранение состояния и запуск таблицы документов](../../extensibility/internals/persistence-and-the-running-document-table.md)
-

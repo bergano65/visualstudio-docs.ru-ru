@@ -9,15 +9,15 @@ helpviewer_keywords:
 - autosave
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0529876ab7a055e455fbe53b379afc4db43e0fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826687"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Как эта функция влияет на решения Office
 
@@ -27,5 +27,4 @@ ms.locfileid: "53932974"
 > Автосохранение для Windows Desktop Word, Excel и PowerPoint была введена в 2017 г. и сейчас доступна для подписчиков Office 365. Если вы приобрели бессрочную лицензию для Office 2016 или более ранней версии, у вас нет в настоящее время доступ к компоненту совместного редактирования. (Excel Online, Excel для Android, Excel для iOS и Excel Mobile в Windows Store поддерживают эту функцию, хотя.)
 
 ## <a name="see-also"></a>См. также
-
-[Разработка решений Office](./developing-office-solutions.md)
+- [Разработка решений Office](./developing-office-solutions.md)

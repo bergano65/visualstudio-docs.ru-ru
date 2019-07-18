@@ -1,67 +1,80 @@
 ---
 title: -Clean (devenv.exe)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], cleaning files
-- clean Devenv switch
-- /clean Devenv switch
-- Devenv, /clean switch
+- Clean Devenv switch
+- /Clean Devenv switch
+- Devenv, /Clean switch
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 051485646b7ff19ddae40518215c410d05fa4849
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 810f05b0838f27004bee983dc0acf7a3009e22a0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62573096"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
+
 Удаляет все промежуточные файлы и выходные каталоги.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
-devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
+```shell
+devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Аргументы
- `FileName`
 
- Обязательный. Полный путь и имя для файла решения или файла проекта.
+- *SolutionName*
 
- /project `ProjName`
+  Обязательный. Полный путь и имя для файла решения.
 
- Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести относительный путь из папки `SolutionName` к файлу проекта, отображаемое имя проекта либо полный путь и имя для файла проекта.
+- *Config*
 
- /projectconfig `ProjConfigName`
+  Необязательный параметр. Конфигурация (например, `Debug` или `Release`) для удаления промежуточных файлов из решения с именем, указанным в *SolutionName*. Если доступно несколько платформ решений, необходимо также указать платформу (например, `Debug|Win32`). Если этот аргумент не определен или является пустой строкой (`""`), используется действующая конфигурация решения.
 
- Необязательный параметр. Имя конфигурации сборки проекта, которая применяется при очистке указанного `/project`.
+- `/Project` *ProjName*
+
+  Необязательный параметр. Путь и имя для файла проекта в решении. Можно ввести отображаемое имя проекта или относительный путь из папки *SolutionName* к файлу проекта. Можно также ввести полный путь и имя файла проекта.
+
+- `/ProjectConfig` *ProjConfigName*
+
+  Необязательный параметр. Имя конфигурации сборки проекта, например `Debug` или `Release`, для использования при очистке указанного проекта `/Project`. Если доступно несколько платформ решений, необходимо также указать платформу (например, `Debug|Win32`). Если этот параметр задан, он переопределяет аргумент *Config*.
+
+- `/Out` *OutputFilename*
+
+  Необязательный параметр. Имя файла, в который вы хотите отправить выходные данные средства. Если файл уже существует, средство добавляет в его конец выходные данные.
 
 ## <a name="remarks"></a>Примечания
- Этот параметр выполняет те же функции, что и команда меню **Очистить решение** в интегрированной среде разработки (IDE).
 
- Строки с пробелами заключаются в двойные кавычки.
+Этот параметр выполняет ту же функцию, что и команда меню **Очистить решение** в интегрированной среде разработки.
 
- Сводные данные для удаления и сборки, включая ошибки, могут отображаться в окне **Команда** или любом файле журнала, указанном с помощью параметра `/out`.
+Строки с пробелами заключаются в двойные кавычки.
+
+Сводные данные по очистке и сборке, включая ошибки, можно вывести в окне **Команда** или файле журнала, указанном параметром [/Out](out-devenv-exe.md).
+
+Если параметр `/Project` не задан, операция очистки выполняется для всех проектов в решении, даже при выборе *FileName* в качестве файла проекта.
 
 ## <a name="example"></a>Пример
- Первый пример очищает решение `MySolution` с использованием конфигурации по умолчанию, указанной в файле решения.
 
- Второй пример очищает проект `CSharpConsoleApp` с использованием конфигурации сборки проекта `Debug` в пределах конфигурация решения `Debug` для `MySolution`.
+Первый пример очищает решение `MySolution` с использованием конфигурации по умолчанию, указанной в файле решения.
 
+Второй пример очищает проект `CSharpWinApp` с использованием конфигурации сборки проекта `Debug` в решении `MySolution`.
+
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean
+
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean "Debug" /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
 ```
-Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean
 
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
-```
-
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Параметры командной строки для devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)

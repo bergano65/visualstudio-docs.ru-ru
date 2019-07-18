@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856386"
 ---
 # <a name="t4-template-directive"></a>Директива Template T4
 
@@ -36,7 +35,7 @@ ms.locfileid: "53885292"
 `compilerOptions="optimize+"`
 
 Допустимые значения:
- 
+
 Любые допустимые параметры компилятора.
 
 Игнорируется для шаблонов времени выполнения (предварительно обработанных).
@@ -46,11 +45,11 @@ ms.locfileid: "53885292"
 ## <a name="culture-attribute"></a>атрибут culture
 
 Пример
- 
+
 `culture="de-CH"`
 
 Допустимые значения:
- 
+
 "", инвариантные язык и региональные параметры, используемые по умолчанию.
 
 Язык и региональные параметры задаются как строка в форме xx-XX. Например: en-US, ja-JP, de-CH, de-DE. Дополнительные сведения см. в разделе <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
@@ -66,11 +65,11 @@ debug="true"
 ```
 
 Допустимые значения:
- 
+
 `true`
- 
+
 `false` (по умолчанию)
- 
+
 Если атрибут `debug` имеет значение `true`, промежуточный файл кода содержит сведения, позволяющие отладчику точнее определить положение прерывания или исключения в шаблоне.
 
 Для шаблонов времени разработки записывается промежуточный файл кода вашей **% TEMP %** каталога.
@@ -88,14 +87,14 @@ hostspecific="true"
 Допустимые значения:
 
 `true`
- 
+
 `false` (по умолчанию)
- 
+
 `trueFromBase`
 
-Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. Это свойство представляет собой ссылку на узел модуля преобразования и объявляется как <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Если определено пользовательское ведущее приложение, можно выполнить его приведение к типу пользовательского ведущего приложения.
+Если задать для этого атрибута значение `true`, свойство с именем `Host` будет добавлено в класс, сгенерированный текстовым шаблоном. Это свойство представляет собой ссылку на узел модуля преобразования и объявляется как <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Если определено пользовательское основное приложение, можно выполнить его приведение к типу пользовательского основного приложения.
 
-Поскольку тип данного свойства зависит от типа ведущего приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным ведущим приложением. Он применим к [шаблоны времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не [шаблонам времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Поскольку тип данного свойства зависит от типа основного приложения, оно полезно, только если пишется текстовый шаблон, работающий с конкретным основным приложением. Он применим к [шаблоны времени разработки](../modeling/design-time-code-generation-by-using-t4-text-templates.md), но не [шаблонам времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 Когда `hostspecific` — `true` и вы используете Visual Studio, можно привести `this.Host` для IServiceProvider для доступа к функциям Visual Studio. Кроме того, можно воспользоваться `Host.ResolvePath(filename)` для получения абсолютного пути к файлу в проекте. Пример:
 
@@ -207,13 +206,15 @@ protected override void SpecificFragment2()
 #>
 ```
 
- Код приложения для вызова DerivedTemplate1:
- ```csharp
+Код приложения для вызова DerivedTemplate1:
+
+```csharp
 Console.WriteLine(new DerivedTemplate().TransformText());
 ```
 
- Полученные выходные данные:
- ```
+Полученные выходные данные:
+
+```
 This is the common header.
    Fragment 1 for DerivedTemplate1
 A common central text.

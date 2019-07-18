@@ -1,16 +1,16 @@
 ---
 title: Создание и очистка проектов и решений в Visual Studio для Mac
 description: В этой статье описывается создание проектов в Visual Studio для Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 74a78c5cb4e9583db1eb99bb6eeb5691cb4adcfd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 6ebe7bb7310129a666422dff5c5e7b86558f96d8
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294244"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693150"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Сборка и очистка проектов и решений
 

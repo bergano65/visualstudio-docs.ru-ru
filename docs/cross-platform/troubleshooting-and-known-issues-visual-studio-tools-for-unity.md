@@ -1,5 +1,5 @@
 ---
-title: Устранение неполадок и известные проблемы (инструменты Visual Studio для Unity) | Документы Майкрософт
+title: Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027293"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261118"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Устранение неполадок и известные проблемы (набор средств Visual Studio для Unity)
 
@@ -54,7 +54,7 @@ ms.locfileid: "53027293"
 
 Некоторые подключаемые модули Unity, такие как Parse, FMOD, UMP (Universal Media Player), ZFBrowser или Embedded Browser, используют собственные потоки. Эта проблема возникает, когда подключаемый модуль подключает собственный поток к среде выполнения, что блокирует вызовы ОС. Это означает, что Unity не может прервать этот поток для отладчика (или перезагрузить домен) и перестает отвечать на запросы.
 
-Для FMOD существует обходной путь. Вы можете передать [флаг](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) инициализации `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE`, чтобы отключить асинхронную обработку и выполнять всю обработку в основном потоке.
+Для FMOD существует обходной путь. Вы можете передать [флаг](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) инициализации `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE`, чтобы отключить асинхронную обработку и выполнять всю обработку в основном потоке.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Несовместимый проект в Visual Studio
 
@@ -62,7 +62,7 @@ ms.locfileid: "53027293"
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Дополнительные перезагрузки или закрытие всех открытых окон в Visual Studio
 
-Никогда не работайте с файлами проектов непосредственно из обработчика ресурсов или иного средства. Если вам действительно необходимо совершить операции с файлом проекта, мы предоставляем для этого интерфейс API. См. раздел [Проблемы со ссылками на сборку](#Assembly-reference-issues).
+Никогда не работайте с файлами проектов непосредственно из обработчика ресурсов или иного средства. Если вам действительно необходимо совершить операции с файлом проекта, мы предоставляем для этого интерфейс API. См. раздел [Проблемы со ссылками на сборку](#assembly-reference-issues).
 
 Если происходят лишние перезагрузки или если при перезагрузке в Visual Studio закрываются все открытые окна, убедитесь в том, что установлены все необходимые целевые пакеты .NET. Дополнительные сведения см. ниже в разделе, посвященном платформам.
 

@@ -1,28 +1,27 @@
 ---
 title: Обозреватель XML-схем - поиск набора схем
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb4a680fc2bbfc9a55d93d17f9ef95d45fc6186
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784576"
 ---
 # <a name="search-the-schema-set"></a>Поиск набора схем
 
 **Обозреватель XML-схем** позволяет искать набор схем в следующих способов:
 
--   Поиск по ключевому слову.
+- Поиск по ключевому слову.
 
--   Поиск определенной схемы.
+- Поиск определенной схемы.
 
 ## <a name="keyword-search"></a>Поиск по ключевому слову
 
@@ -32,11 +31,11 @@ ms.locfileid: "54270077"
 
  **Обозреватель XML-схем** выполняет поиск набора схем по следующие атрибуты:
 
--   Атрибутам `name` или `ref`, удовлетворяющим указанному ключевому слову. Элементы, атрибуты, типы и т. д., можно найти по имени.
+- Атрибутам `name` или `ref`, удовлетворяющим указанному ключевому слову. Элементы, атрибуты, типы и т. д., можно найти по имени.
 
--   Атрибуты `schemaLocation` инструкций включения.
+- Атрибуты `schemaLocation` инструкций включения.
 
--   Атрибуты `namespace` инструкций импорта.
+- Атрибуты `namespace` инструкций импорта.
 
 ## <a name="schema-specific-search"></a>Поиск определенной схемы
 

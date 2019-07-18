@@ -1,26 +1,21 @@
 ---
 title: Свойства Window Fields and Interfaces | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b9e7705af131bdc8c81b6cbeeac3ed4dda80aa4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b58314d64536ecf33cc5589609ee5524a9352629
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721034"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700826"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51721034"
   
 3. Вызов <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> и передавая ему элементы выбранной иерархии в `VSHPROPID_BrowseObject` заполняет параметр <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> объекта.  
   
-4. Объект, производный от [интерфейса IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) возвращается для <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> запрошенный элемент и среде помещает его в <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (см. следующий шаг). Если вызов завершается сбоем, среда предоставляет второй вызов `IVsHierarchy::GetProperty`, передав его в контейнере выделения <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> , указать или несколько элементов иерархии.  
+4. Объект, производный от [интерфейса IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) возвращается для <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> запрошенный элемент и среде помещает его в <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (см. следующий шаг). Если вызов завершается сбоем, среда предоставляет второй вызов `IVsHierarchy::GetProperty`, передав его в контейнере выделения <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> , указать или несколько элементов иерархии.  
   
     Проект VSPackage не приводит к созданию <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> так, как окно предоставляемую среду пакет VSPackage, реализующий его (например, **обозревателе решений**) создает <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> от его имени.  
   
@@ -52,4 +47,3 @@ ms.locfileid: "51721034"
   
 ## <a name="see-also"></a>См. также  
  [Расширение свойств](../../extensibility/internals/extending-properties.md)
-

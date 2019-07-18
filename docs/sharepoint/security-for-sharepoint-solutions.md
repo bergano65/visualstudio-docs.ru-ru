@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - security [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, security
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae284cd05e173f271bff3b0a3ef7d9cba3fadfc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009809"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Безопасность решений SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] включает в себя следующие функции для повышения безопасности приложений SharePoint.
@@ -46,42 +46,42 @@ ms.locfileid: "53904907"
 ## <a name="sharepoint-permissions-considerations"></a>Разрешения безопасности SharePoint
  Для разработки решений SharePoint, необходимо иметь достаточные разрешения для запуска и отладки решений SharePoint. Перед тестированием решения SharePoint, выполните следующие действия, чтобы убедиться, что имеются необходимые разрешения.
 
-1.  Добавьте учетную запись пользователя с правами администратора в системе.
+1. Добавьте учетную запись пользователя с правами администратора в системе.
 
-2.  Добавьте учетную запись пользователя как администратора фермы на сервере SharePoint.
+2. Добавьте учетную запись пользователя как администратора фермы на сервере SharePoint.
 
-    1.  В центре администрирования SharePoint 2010 выберите **управление группой администраторов фермы** ссылку.
+    1. В центре администрирования SharePoint 2010 выберите **управление группой администраторов фермы** ссылку.
 
-    2.  На **Администраторы фермы** выберите **New** пункт меню
+    2. На **Администраторы фермы** выберите **New** пункт меню
 
-3.  Добавить вашу учетную запись пользователя в группу WSS_ADMIN_WPG.
+3. Добавить вашу учетную запись пользователя в группу WSS_ADMIN_WPG.
 
 ## <a name="additional-security-resources"></a>Дополнительные материалы по безопасности
  Дополнительные сведения о проблемах безопасности см. в разделе ниже.
 
 ### <a name="visual-studio-security"></a>безопасность Visual Studio
 
--   [Безопасность и разрешения пользователей](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [Безопасность и разрешения пользователей](http://go.microsoft.com/fwlink/?LinkId=177503)
 
--   [Безопасность в машинном коде и коде .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [Безопасность в машинном коде и коде .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177504)
 
--   [Безопасность в .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [Безопасность в .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
 
 ### <a name="sharepoint-security"></a>Безопасность SharePoint
 
--   [Администрирование SharePoint Foundation и безопасность](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [Администрирование SharePoint Foundation и безопасность](http://go.microsoft.com/fwlink/?LinkId=177501)
 
--   [Центр ресурсов безопасности SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [Центр ресурсов безопасности SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
 
--   [Защита веб-частей в SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [Защита веб-частей в SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [Повышение безопасности веб-приложений. Угрозы и меры противодействия](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [Повышение безопасности веб-приложений. Угрозы и меры противодействия](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>Общая безопасность
 
--   [Жизненный цикл разработки безопасности MSDN](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [Жизненный цикл разработки безопасности MSDN](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [Разработка безопасных приложений ASP.NET: Проверка подлинности, авторизация и безопасный обмен данными](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [Разработка безопасных приложений ASP.NET: Проверка подлинности, авторизация и безопасный обмен данными](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>См. также
 

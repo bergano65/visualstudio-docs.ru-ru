@@ -5,22 +5,24 @@ ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 556f82d99fd6ea811f4198dc7abffb3ab32d47fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: eace6e7f3d970de5aa0ab0e74530d3182af0e177
+ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821261"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412286"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Средства платформы Entity Framework в Visual Studio
 
 Платформа Entity Framework — это технология объектно реляционного сопоставления, который позволяет разработчикам .NET работать с реляционными данными с помощью специфических для домена объектов. Это устраняет необходимость в большей части кода для доступа к данным, который разработчикам обычно приходится писать. Entity Framework является рекомендуемые объектно реляционного сопоставления (ORM), моделирование технологии для новых приложений .NET.
 
-Средства платформы Entity Framework предназначены для построения приложений Entity Framework (EF). Полная документация по Entity Framework находится здесь: [EF Core и EF 6](/ef/).
+Средства платформы Entity Framework предназначены для построения приложений Entity Framework (EF). Полная документация по Entity Framework находится здесь: [Обзор — EF 6](/ef/ef6/).
+
+  > [!NOTE]
+  > Инструменты Entity Framework, описанных на этой странице используются для создания *.edmx* файлы, которые не поддерживаются в EF Core. Чтобы создать модель EF Core на основе существующей базы данных, см. в разделе [реконструирование — EF Core](/ef/core/managing-schemas/scaffolding). Дополнительные сведения о различиях между EF 6 и EF Core см. в разделе [сравнение EF 6 и EF Core](/ef/efcore-and-ef6/).
 
 С помощью средства платформы Entity Framework, можно создавать *концептуальной модели* из существующей базы данных графически визуализировать и внести нужные изменения. Либо можно сначала создать концептуальную модель с помощью графических средств, а затем создать базу данных, которая поддерживает эту модель. В любом случае можно автоматически обновлять модель при изменении основной базы данных и автоматически создавать код объектного уровня для приложения. Процессы создания базы данных и создания кода объектного уровня допускают настройку.
 

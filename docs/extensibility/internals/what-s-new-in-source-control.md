@@ -1,51 +1,55 @@
 ---
-title: Что&#39;возможности системы управления версиями | Документация Майкрософт
+title: Новые возможности системы управления версиями в Visual Studio SDK 2015 г. | Документация Майкрософт
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c373e061ba7aa057babccd178354f4577b2c74fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e12776c21d345d60992eeff4963498bcd7d56678
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937974"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323254"
 ---
-# <a name="what39s-new-in-source-control"></a>Что&#39;возможности системы управления версиями
-В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] может обеспечить решение управления интегрирована источника путем реализации пакета VSPackage системы управления версиями. В этом разделе описаны возможности системы управления версиями пакетов VSPackage и общие сведения о реализации действий.  
-  
-## <a name="the-source-control-vspackage"></a>Пакет VSPackage управления версиями  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] поддерживает два типа решений управления версиями. Во всех версиях [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], по-прежнему можно интегрировать, основанная на API подключаемых модулей управления источника подключаемого модуля. Вы также можете создать VSPackage для системы управления версиями, который предоставляет глубокого интеграции [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] подходит для решений управления версиями, для которых требуется высокий уровень квалификации и независимость.  
-  
- VSPackage может добавлять практически любые функциональные возможности для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Пакет VSPackage системы управления версиями обеспечивает средства управления полный исходный для [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], с помощью пользовательского интерфейса, представленные пользователю обмена данными между серверной части с системой управления версиями.  
-  
- Для реализации пакета VSPackage системы управления версиями требуется стратегию «все или ничего». Создатель пакета VSPackage системы управления версиями необходимо инвестировать значительный объем трудозатрат на применение нескольких интерфейсов управления источника и новых элементов пользовательского интерфейса (диалоговые окна, меню и панелей инструментов) для охвата всей системы управления версиями, а также интерфейсы требуется для успешной интеграции с любой пакет [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
- Следующие действия предоставляют общие сведения о необходимых для реализации пакет системы управления версиями. Дополнительные сведения см. в разделе [Создание пакета VSPackage управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md).  
-  
-1. Создайте пакет VSPackage, который предоставляет определенную службу частного исходного элемента управления.  
-  
-2. Реализовывать интерфейсы в связанные с управлением версиями службы источника, которые являются предлагаемых [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (например, <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> интерфейс).  
-  
-3. Регистрация пакета VSPackage системы управления версиями.  
-  
-4. Реализуйте все системы управления версиями пользовательского интерфейса, включая элементы меню, диалоговых окон, панелей инструментов и контекстные меню.  
-  
-5. Все источника события, связанные с управлением версиями передаются VSackage системы управления версиями, когда он активен и должны обрабатываться VSPackage.  
-  
-6. Пакет VSPackage системы управления версиями необходимо прослушивать событий, например реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> интерфейс, а также события отслеживания проекта документа (TPD) (как реализованный <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> интерфейс) и выполните необходимые действия.  
-  
-## <a name="see-also"></a>См. также  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
- [Обзор](../../extensibility/internals/source-control-integration-overview.md)   
- [Создание пакета VSPackage системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)
+# <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Новые возможности в систему управления версиями для пакета SDK для Visual Studio 2015
+
+В [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], может обеспечить решение управления интегрирована источника путем реализации пакета VSPackage системы управления версиями. В этом разделе описаны возможности системы управления версиями пакетов VSPackage и общие сведения о реализации действий.
+
+## <a name="the-source-control-vspackage"></a>Пакет VSPackage управления версиями
+
+Visual Studio поддерживает два типа решений управления версиями. Во всех версиях Visual Studio, можно интегрировать основанная на API подключаемых модулей управления источник подключаемого модуля. Вы также можете создать VSPackage для системы управления версиями, предоставляющий глубокого интеграции [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] подходит для решений управления версиями, для которых требуется высокий уровень квалификации и независимость.
+
+VSPackage может добавлять практически любые функциональные возможности для Visual Studio. Пакет VSPackage системы управления версиями предоставляет возможность управления полный исходный для Visual Studio с помощью пользовательского интерфейса, представленные пользователю обмена данными между серверной части с системой управления версиями.
+
+Для реализации пакета VSPackage системы управления версиями требуется стратегию «все или ничего». Создатель пакета VSPackage системы управления версиями необходимо инвестировать значительный объем трудозатрат на применение нескольких интерфейсов управления источника и новых элементов пользовательского интерфейса (диалоговые окна, меню и панелей инструментов) для охвата всей системы управления версиями, а также интерфейсы для успешной интеграции с Visual Studio требуется любого пакета.
+
+Следующие действия предоставляют общие сведения о необходимых для реализации пакет системы управления версиями. Дополнительные сведения см. в разделе [Создание пакета VSPackage управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md).
+
+1. Создайте пакет VSPackage, который предоставляет определенную службу частного исходного элемента управления.
+
+2. Реализовывать интерфейсы в связанные с управлением версиями службы источника, которые являются окраски, предлагаемых Visual Studio (например, <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> и <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> интерфейс).
+
+3. Регистрация пакета VSPackage системы управления версиями.
+
+4. Реализуйте все системы управления версиями пользовательского интерфейса, включая элементы меню, диалоговых окон, панелей инструментов и контекстные меню.
+
+5. Все источника события, связанные с управлением версиями передаются VSackage системы управления версиями, когда он активен и должны обрабатываться VSPackage.
+
+6. Пакет VSPackage системы управления версиями необходимо прослушивать событий, например реализации <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> интерфейс, а также события отслеживания проекта документа (TPD) (как реализованный <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> интерфейс) и выполните необходимые действия.
+
+## <a name="see-also"></a>См. также
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>
+- [Обзор](../../extensibility/internals/source-control-integration-overview.md)
+- [Создание пакета VSPackage системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)

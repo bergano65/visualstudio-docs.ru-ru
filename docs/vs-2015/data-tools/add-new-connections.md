@@ -1,27 +1,24 @@
 ---
 title: Добавление новых подключений | Документация Майкрософт
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8a93c287-2834-4a83-a590-bdc3fe8d293f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03407962b4ea8160d492971367f121835fa39aae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ff1ec43d6faec329db6138598d84e47db009113e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192516"
 ---
 # <a name="add-new-connections"></a>Добавление новых подключений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Можно проверить подключение к базе данных или службы, а также исследовать содержимое баз данных и схем, с помощью **обозревателя серверов**, **Cloud Explorer**, или **обозреватель объектов SQL Server**. В некоторой степени пересекается функциональные возможности из этих окон. Ниже приведены основные различия.  
   
  обозревателя серверов  
@@ -47,7 +44,7 @@ ms.locfileid: "49218514"
   
  ![Изменить поставщика данных AD0.NET](../data-tools/media/raddata-change-ad0-net-data-provider.png "raddata поставщик данных AD0.NET изменений")  
   
-## <a name="test-the-connection"></a>Проверить подключение  
+## <a name="test-the-connection"></a>Проверка подключения  
  После выбора источника данных, нажмите кнопку **проверить подключение**. Если не удается вызвать, необходимо будет Устранение зависимости в документации поставщика.  
   
  ![Проверка соединения](../data-tools/media/raddata-test-connection.png "raddata проверить подключение")  
@@ -56,4 +53,3 @@ ms.locfileid: "49218514"
   
 ## <a name="see-also"></a>См. также  
  [Visual Studio Data Tools для .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

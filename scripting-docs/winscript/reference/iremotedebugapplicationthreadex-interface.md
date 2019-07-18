@@ -1,8 +1,7 @@
 ---
-title: Iremotedebugapplicationthreadex — интерфейс | Документы Microsoft
+title: Интерфейс IRemoteDebugApplicationThreadEx | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4d9998a412aa3ecc9316a2595ac9daf707fd873
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b7496b79569d25a747527965f97d61544c8a7c3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787896"
 ---
 # <a name="iremotedebugapplicationthreadex-interface"></a>IRemoteDebugApplicationThreadEx — интерфейс
-Класс, представляющий поток исполнения в конкретном приложении.  
+Представляет поток исполнения в определенном приложении.  
   
  Помимо методов, наследуемых от `IUnknown`, `IRemoteDebugApplicationThreadEx` интерфейс предоставляет следующие методы.  
   
@@ -30,4 +29,4 @@ ms.locfileid: "24728624"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IRemoteDebugApplicationThreadEx:EnumGlobalContexts](../../winscript/reference/iremotedebugapplicationthreadex-enumglobalcontexts.md)|Перечисляет контекстов глобальные выражения для всех языков, работающих в этом потоке.|
+|[IRemoteDebugApplicationThreadEx:EnumGlobalContexts](../../winscript/reference/iremotedebugapplicationthreadex-enumglobalcontexts.md)|Перечисляет контексты глобальное выражение для всех языков, работающих в этом потоке.|

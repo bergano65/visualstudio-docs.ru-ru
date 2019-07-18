@@ -1,37 +1,32 @@
 ---
 title: Завершение операторов в языковой службе прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d88ebe84ec3ec5efb1d7c4ac04ebaee50ac65b97
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 163eb0f23716fa2f036d07612b741c0c9419b92e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408471"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Завершение операторов в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Завершение операторов — это процесс, по которому служба языка помогает пользователям, которые Готово ключевое слово языка или элемент, начатую ввода в редакторе. Здесь описывается, как работает завершение операторов и как реализовать его в службе языка.  
   
- Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы узнать больше о новый способ реализовать завершение операторов, см. в разделе [Пошаговое руководство: отображение завершения операторов](../../extensibility/walkthrough-displaying-statement-completion.md).  
+ Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы узнать больше о новый способ реализовать завершение операторов, см. в разделе [Пошаговое руководство: Отображение завершения операторов](../../extensibility/walkthrough-displaying-statement-completion.md).  
   
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
   
 ## <a name="implementing-statement-completion"></a>Реализация завершение операторов  
  В редакторе завершение операторов активирует специальный пользовательский Интерфейс, который интерактивно поможет вам более легко и быстро писать код. Завершение операторов помогает, отображая соответствующие объектов или классов при необходимости, что позволяет избежать, нужно находить их в справочного раздела справки или необходимости запоминать конкретные элементы.  
@@ -45,4 +40,3 @@ ms.locfileid: "51796497"
   
 ## <a name="see-also"></a>См. также  
  [Перехват команд языковой службы прежних версий](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
-

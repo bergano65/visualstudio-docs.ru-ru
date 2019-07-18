@@ -1,26 +1,21 @@
 ---
 title: Элементы изолированной оболочки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e567fc212b9981d925fc11e8e0ae48132b3b05bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204602"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Элементы изолированной оболочки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +27,15 @@ ms.locfileid: "51816818"
   
  При запуске приложения, параметры реестра определены в следующей последовательности:  
   
-1.  Создать раздел реестра для приложения.  
+1. Создать раздел реестра для приложения.  
   
-2.  Обновляется реестр из pkgdef-файл приложения путем определения указанного разделы и записи.  
+2. Обновляется реестр из pkgdef-файл приложения путем определения указанного разделы и записи.  
   
-3.  Для каждого пакета, который является частью приложения обновляется реестр из pkgdef-файл этого пакета. Каждый пакет определяется в pkgdef-файл приложения $RootKey$ \Packages\\{*vsPackageGuid*} ключа для пакета.  
+3. Для каждого пакета, который является частью приложения обновляется реестр из pkgdef-файл этого пакета. Каждый пакет определяется в pkgdef-файл приложения $RootKey$ \Packages\\{*vsPackageGuid*} ключа для пакета.  
   
-4.  Обновить реестр из AppEnvConfig.pkgdef и BaseConfig.pkgdef в *путь установки Visual Studio SDK*\Common7\IDE\ShellExtensions\Platform каталога. Эти файлы являются частью Visual Studio, а также частью распространяемый пакет оболочки Visual Studio (изолированный режим).  
+4. Обновить реестр из AppEnvConfig.pkgdef и BaseConfig.pkgdef в *путь установки Visual Studio SDK*\Common7\IDE\ShellExtensions\Platform каталога. Эти файлы являются частью Visual Studio, а также частью распространяемый пакет оболочки Visual Studio (изолированный режим).  
   
-5.  Обновляется реестр из файла .pkgundef приложения путем удаления указанного разделы и записи.  
+5. Обновляется реестр из файла .pkgundef приложения путем удаления указанного разделы и записи.  
   
 ## <a name="run-time-settings"></a>Параметры времени выполнения  
  Когда пользователь запускает приложение изолированной оболочки, она вызывает начальную точку входа оболочки Visual Studio. Определенные параметры приложения при запуске приложения, следующим образом:  
@@ -82,4 +77,3 @@ ms.locfileid: "51816818"
 </dependentAssembly>  
   
 ```
-

@@ -1,40 +1,43 @@
 ---
 title: IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked | Документация Майкрософт
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - EnsureDCOMUnblocked
 - IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
 ms.assetid: acf54d27-32a6-47e7-aba6-3cc0004edc7f
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7a916395ab6fa83c8da30cdc6fb5b510069cbe3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee3a3abe0c5e0282aae5f85bfac5cd969e3e3003
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887296"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337509"
 ---
 # <a name="idebugfirewallconfigurationcallback2ensuredcomunblocked"></a>IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
-Запросы, что брандмауэр не блокирует удаленную отладку.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-HRESULT EnsureDCOMUnblocked(   
-    Void  
-);  
-```  
-  
-```csharp  
-public int EnsureDCOMUnblocked();  
-```  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md)
+Запросы, что брандмауэр не блокирует удаленную отладку.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT EnsureDCOMUnblocked(
+    Void
+);
+```
+
+```csharp
+public int EnsureDCOMUnblocked();
+```
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md)

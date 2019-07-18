@@ -18,22 +18,21 @@ helpviewer_keywords:
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 95aa29fc9856777912afa2efac2551ec4a703506
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: a15daaf5ac98bc2efc4ce83bb2370b94e9f59123
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892706"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745461"
 ---
 # <a name="hierarchical-update"></a>Иерархическое обновление
 
 *Иерархическое обновление* — это процесс сохранения обновленных данных (из набора данных двух или более связанных таблиц) обратно в базу данных, сохраняя ограничения ссылочной целостности. *Ссылочная целостность* ссылается на правила целостности, заданные с помощью ограничений в базе данных, которые управляют поведением вставки, обновления и удаления связанных записей. Например это целостность данных обеспечивает создание записи клиента перед предоставлением заказы, должен быть создан для этого клиента.  Дополнительные сведения о связях в наборах данных см. в разделе [отношения в наборах данных](../data-tools/relationships-in-datasets.md).
 
-Использует функцию иерархическое обновление `TableAdapterManager` для управления `TableAdapter`s в типизированный набор данных. `TableAdapterManager` Компонентом является класс создаются в Visual Studio, поэтому не входит [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. При перетаскивании таблицы из **источников данных** окна на форму Windows или WPF страницу, в Visual Studio добавляет переменную типа TableAdapterManager формы или страницы, а также см. в конструкторе в области компонентов. Подробные сведения о `TableAdapterManager` класса см. в разделе справочной TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+Использует функцию иерархическое обновление `TableAdapterManager` для управления `TableAdapter`s в типизированный набор данных. `TableAdapterManager` Компонентом является класс создаются в Visual Studio, не является типом .NET. При перетаскивании таблицы из **источников данных** окна на форму Windows или WPF страницу, в Visual Studio добавляет переменную типа TableAdapterManager формы или страницы, а также см. в конструкторе в области компонентов. Подробные сведения о `TableAdapterManager` класса см. в разделе справочной TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 По умолчанию набор данных рассматривает связанных таблиц как «только для отношения», это означает, что он не применить ограничения внешнего ключа. Можно изменить эту настройку во время разработки с помощью **конструктор наборов данных**. Выберите линию связи между двумя таблицами, чтобы открыть **отношения** диалоговое окно. Определяет изменения, внесенные здесь как `TableAdapterManager` ведет себя, если отправить изменения в связанных таблицах в базе данных.
 
@@ -88,9 +87,9 @@ ms.locfileid: "53892706"
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Обновление кода для фиксации изменений в связанных таблицах перед сохранением
 
-1.  Дважды нажмите кнопку **Сохранить** на <xref:System.Windows.Forms.BindingNavigator>, чтобы открыть **Form1** в редакторе кода.
+1. Дважды нажмите кнопку **Сохранить** на <xref:System.Windows.Forms.BindingNavigator>, чтобы открыть **Form1** в редакторе кода.
 
-2.  Добавьте строку кода для вызова метода `OrdersBindingSource.EndEdit` после строки, вызывающей метод `CustomersBindingSource.EndEdit`. Код в событии нажатия кнопки **Сохранить** должен выглядеть примерно следующим образом:
+2. Добавьте строку кода для вызова метода `OrdersBindingSource.EndEdit` после строки, вызывающей метод `CustomersBindingSource.EndEdit`. Код в событии нажатия кнопки **Сохранить** должен выглядеть примерно следующим образом:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
@@ -102,11 +101,11 @@ ms.locfileid: "53892706"
 
 ### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Добавление кода для фиксации родительских записей в наборе данных перед добавлением новых дочерних записей
 
-1.  Создайте обработчик событий для события `OrdersBindingSource.AddingNew`.
+1. Создайте обработчик событий для события `OrdersBindingSource.AddingNew`.
 
-    -   Откройте **Form1** в режиме конструктора выберите **OrdersBindingSource** в области компонентов выберите **события** в **свойства** окно, и Дважды щелкните **AddingNew** событий.
+    - Откройте **Form1** в режиме конструктора выберите **OrdersBindingSource** в области компонентов выберите **события** в **свойства** окно, и Дважды щелкните **AddingNew** событий.
 
-2.  Добавьте строку кода в обработчик событий, который вызывает `CustomersBindingSource.EndEdit` метод. Код в обработчике событий `OrdersBindingSource_AddingNew` должен выглядеть примерно следующим образом:
+2. Добавьте строку кода в обработчик событий, который вызывает `CustomersBindingSource.EndEdit` метод. Код в обработчике событий `OrdersBindingSource_AddingNew` должен выглядеть примерно следующим образом:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
@@ -115,16 +114,16 @@ ms.locfileid: "53892706"
 
 По умолчанию `TableAdapterManager` класс создается при создании набора данных, содержащего связанные таблицы. Чтобы предотвратить создание класса, измените значение `Hierarchical Update` свойства набора данных значение false. При перетаскивании таблицы, имеющей отношение в область конструктора WPF страницы или формы Windows, Visual Studio объявляет переменную-член класса. Если вы не используете привязки данных, необходимо вручную объявить переменную.
 
-`TableAdapterManager` Класс не является частью [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Таким образом вы не удается найти в документации. Она создается во время разработки, как часть процесса создания набора данных.
+`TableAdapterManager` Класс не является типом .NET. Таким образом вы не удается найти в документации. Она создается во время разработки, как часть процесса создания набора данных.
 
 Ниже перечислены часто используемые методы и свойства `TableAdapterManager` класса:
 
 |Член|Описание|
 |------------|-----------------|
 |Метод `UpdateAll`|Сохраняет все данные из всех таблиц данных.|
-|Свойство`BackUpDataSetBeforeUpdate` |Определяет, следует ли создавать резервную копию набора данных перед выполнением `TableAdapterManager.UpdateAll` метод. Логическое значение.|
+|Свойство `BackUpDataSetBeforeUpdate`|Определяет, следует ли создавать резервную копию набора данных перед выполнением `TableAdapterManager.UpdateAll` метод. Логическое значение.|
 |*tableName* `TableAdapter` свойство|Представляет `TableAdapter`. Созданный `TableAdapterManager` содержит свойство для каждого `TableAdapter` он управляет. Например, набор данных с таблицей Customers и Orders создается с `TableAdapterManager` , содержащий `CustomersTableAdapter` и `OrdersTableAdapter` свойства.|
-|Свойство`UpdateOrder` |Управляет порядком отдельные инструкции insert, update и команд delete. Задайте одно из значений в `TableAdapterManager.UpdateOrderOption` перечисления.<br /><br /> По умолчанию `UpdateOrder` присваивается **InsertUpdateDelete**. Это означает, что операции вставки, а затем обновляет, а затем удаляет выполняются для всех таблиц в наборе данных.|
+|Свойство `UpdateOrder`|Управляет порядком отдельные инструкции insert, update и команд delete. Задайте одно из значений в `TableAdapterManager.UpdateOrderOption` перечисления.<br /><br /> По умолчанию `UpdateOrder` присваивается **InsertUpdateDelete**. Это означает, что операции вставки, а затем обновляет, а затем удаляет выполняются для всех таблиц в наборе данных.|
 
 ## <a name="see-also"></a>См. также
 

@@ -1,13 +1,9 @@
 ---
 title: Команды | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, commands
 - commands, Visual Studio
@@ -16,17 +12,16 @@ ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bfcac20d0facea28734e27cbb60966717cdcdc2
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53869811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160870"
 ---
 # <a name="visual-studio-commands"></a>Команды Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Команды Visual Studio позволяют вызвать команду из окна **Команды** , окна **Интерпретация** или поля **Поиск/команда** . В каждом случае знак "больше" (`>`) используется для указания того, что дальше будет следовать команда, а не операция поиска или отладки.
 
@@ -82,5 +77,5 @@ ms.locfileid: "53869811"
 |[Точка останова](../../ide/reference/toggle-breakpoint-command.md)|Включает или отключает точку останова в зависимости от ее текущего состояния и текущей позиции в файле.|
 |[Команда Watch](../../ide/reference/watch-command.md)|Создает и открывает указанный экземпляр окна **Контрольное значение** .|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
  [Командное окно](../../ide/reference/command-window.md) [поле Найти/Команда](../../ide/find-command-box.md) [псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,12 +1,9 @@
 ---
 title: Проверка модели UML | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, constraints
 - UML, validation
@@ -14,13 +11,13 @@ ms.assetid: deed5092-c11d-4431-a801-1e866a103075
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fea958a20e5eee78f79f324ad19ef646f7920951
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437461"
 ---
 # <a name="validate-your-uml-model"></a>Проверка модели UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ ms.locfileid: "51739972"
 - **Команда проверки.** Чтобы вызвать проверку в любое время, щелкните **проверить модель UML** на **архитектура** меню.  
   
   > [!NOTE]
-  >  Эта команда отображается только в том случае, если установлены ограничения проверки.  
+  > Эта команда отображается только в том случае, если установлены ограничения проверки.  
   
 - **При сохранении модели.** Ограничения проверки можно применять при сохранении модели. Они не позволяют пользователю сохранить модель, недопустимую с точки зрения интерпретации проекта.  
   
@@ -52,29 +49,26 @@ ms.locfileid: "51739972"
   
 #### <a name="to-install-a-visual-studio-extension"></a>Установка расширения Visual Studio  
   
-1.  Дважды щелкните **.vsix** файл в проводнике Windows (или проводника).  
+1. Дважды щелкните **.vsix** файл в проводнике Windows (или проводника).  
   
-2.  Перезапустите уже запущенный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Перезапустите уже запущенный экземпляр [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>Отключение и удаление ограничений проверки  
  Для работы с моделью, к которой ограничения не применяются , можно временно отключить расширение, в котором они содержатся.  Таким образом, включая и отключая различные ограничения, можно в разное время работать разными видами моделей.  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Отключение и удаление расширения Visual Studio  
   
-1.  На [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **средства** меню, щелкните **расширения и обновления**.  
+1. На [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **средства** меню, щелкните **расширения и обновления**.  
   
-2.  Вместе с расширением, нажмите кнопку **отключить** временно отключить расширения. Вы можете повторно включить ее позже, вернувшись к **расширения и обновления** окна.  
+2. Вместе с расширением, нажмите кнопку **отключить** временно отключить расширения. Вы можете повторно включить ее позже, вернувшись к **расширения и обновления** окна.  
   
      \- или -  
   
      Нажмите кнопку **удаления** удалить расширение.  
   
-3.  Перезапустите [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Перезапустите [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>См. также  
  [Определение ограничений проверки для моделей UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Создание моделей для приложения](../modeling/create-models-for-your-app.md)   
  [Использование моделей в процессе разработки](../modeling/use-models-in-your-development-process.md)
-
-
-

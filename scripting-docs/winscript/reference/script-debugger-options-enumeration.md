@@ -2,7 +2,6 @@
 title: Перечисление SCRIPT_DEBUGGER_OPTIONS | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e35d90a3750c759282d86c7383bf25204fbf4fcd
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: 404d3939e0a328beb5e2413d25885fddf8478ead
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443649"
 ---
 # <a name="scriptdebuggeroptions-enumeration"></a>Перечисление SCRIPT_DEBUGGER_OPTIONS
 Указывает набор параметров и/или возможности, которые применяются к подключенному отладчику. Используется в [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) и [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
->  Эти константы реализованы в PDM v10.0 и больше. Обнаружено в activdbg100.h.  
+> Эти константы реализованы в PDM v10.0 и больше. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -33,7 +32,7 @@ ms.locfileid: "54088599"
 typedef SCRIPT_DEBUGGER_OPTIONS  
 ```  
   
-## <a name="members"></a>Члены  
+## <a name="members"></a>Участники  
   
 |Член|Значение|Описание|  
 |------------|-----------|-----------------|  

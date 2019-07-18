@@ -1,14 +1,9 @@
 ---
 title: Справочник по свойствам проектов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - user interface [Visual Studio], projects
 - projects [Visual Studio], user interface
@@ -16,18 +11,17 @@ ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 497afd9c7fb6f1449d8d9c2227c7ae1ee7af44b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d36a521db2c82ed207b3f77a51908ca7fad3d27
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297535"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696003"
 ---
 # <a name="project-properties-reference"></a>Справочник по свойствам проектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Вы можете ознакомиться с дополнительными сведениями о способах настройки и изменения свойств проекта.  
   
 ## <a name="project-properties-pages"></a>Страницы свойств проекта  
@@ -50,9 +44,6 @@ ms.locfileid: "49297535"
 |||  
 |||  
   
-## <a name="see-also"></a>См. также  
- [Знакомство с конструктором проектов](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+## <a name="see-also"></a>См. также раздел  
+ [Знакомство с конструктором проектов](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Решения и проекты](../../ide/solutions-and-projects-in-visual-studio.md)
-
-
-

@@ -7,21 +7,23 @@ helpviewer_keywords:
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb006506b479b98710059e8c4d40f0b1af4682c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a92d5a593c67f54b50649a48b8f973bbfbff8958
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911095"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694947"
 ---
 # <a name="property-functions"></a>Функции свойств
 
 В версиях 4 и 4.5 платформы .NET Framework можно оценивать скрипты MSBuild с помощью функции свойства. Функции свойства можно использовать во всех случаях, где появляются свойства. В отличие от задач, функции свойства можно использовать за пределами целей и оценивать до запуска целей.
 
  Без использования задач MSBuild вы можете читать системное время, сравнивать строки, сопоставлять регулярные выражения и выполнять другие действия в скрипте построения. MSBuild попытается преобразовать строку в число и число в строку и при необходимости выполнит другие преобразования.
+ 
+В строковых значениях, возвращаемых из функций свойства, [специальные символы](msbuild-special-characters.md) преобразованы в escape-символы. Если нужно, чтобы значение обрабатывалось как значение непосредственно в файле проекта, воспользуйтесь функцией `$([MSBuild]::Unescape())`, чтобы преобразовать специальные символы в обычный формат.
 
 ## <a name="property-function-syntax"></a>Синтаксис функции свойства
 
@@ -128,7 +130,7 @@ $([Class]::Property.Method(Parameters))
 Например, чтобы задать свойство построения на текущую дату, можно использовать следующий код.
 
 ```xml
-<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>
+<Today>$([System.DateTime]::Now.ToString('yyyy.MM.dd'))</Today>
 ```
 
 ### <a name="msbuild-property-functions"></a>Функции свойства MSBuild
@@ -166,7 +168,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |Целое значение BitwiseXor(первое целое значение, второе целое значение)|Примените побитовый параметр `XOR` к первому и второму значению (первое ^ второе).|
 |Целое значение BitwiseNot(первое целое значение)|Примените побитовый параметр `NOT` (~первое значение).|
 |bool IsOsPlatform(строка platformString)|Указание того, является ли текущая платформа ОС `platformString`. `platformString` должен быть элементом <xref:System.Runtime.InteropServices.OSPlatform>.|
-|bool IsOSUnixLike|Значение true, если текущая операционная система — это система Unix.|
+|bool IsOSUnixLike()|Значение true, если текущая операционная система — это система Unix.|
 |Строка NormalizePath(параметры строка[] путь)|Возвращает канонический полный путь для предоставленного пути и проверяет правильность знаков разделения для каталогов, используемых в текущей операционной системе.|
 |Строка NormalizeDirectory(параметры строка[] путь)|Возвращает канонический полный путь для предоставленного каталога и проверяет правильность знаков разделения для каталогов, используемых в текущей операционной системе, а также наличие косой черты в конце.|
 |Строка EnsureTrailingSlash(строка путь)|Если в конце заданного пути нет косой черты, она добавляется. Если путь является пустой строкой, он не изменяется.|
@@ -175,7 +177,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |Строка MakeRelative(строка basePath, строка путь)|Делает `path` относительным для `basePath`. `basePath` должен быть абсолютным каталогом. Если `path` невозможно сделать относительным, он возвращается дословно. Аналогично `Uri.MakeRelativeUri`.|
 |Строка ValueOrDefault(стока conditionValue, строка defaultValue)|Возвращение строки в параметре "defaultValue" только в том случае, если параметр "conditionValue" пуст; в противном случае возвращается значение conditionValue.|
 
-##  <a name="nested-property-functions"></a>Вложенные функции свойства
+## <a name="nested-property-functions"></a>Вложенные функции свойства
 
 Функции свойства можно объединять для формирования более сложных функций, как показано в следующем примере.
 
@@ -319,8 +321,8 @@ Output:
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <PropertyGroup>
-        <Value1>$([MSBuild]::ValueOrDefault(`$(UndefinedValue)`, `a`))</Value1>
-        <Value2>$([MSBuild]::ValueOrDefault(`b`, `$(Value1)`))</Value2>
+        <Value1>$([MSBuild]::ValueOrDefault('$(UndefinedValue)', 'a'))</Value1>
+        <Value2>$([MSBuild]::ValueOrDefault('b', '$(Value1)'))</Value2>
     </PropertyGroup>
 
     <Target Name="MyTarget">
@@ -338,6 +340,6 @@ Output:
 
 ## <a name="see-also"></a>См. также
 
-[Свойства MSBuild](../msbuild/msbuild-properties.md)
+- [Свойства MSBuild](../msbuild/msbuild-properties.md)
 
-[Общие сведения о MSBuild](../msbuild/msbuild.md)
+- [Общие сведения о MSBuild](../msbuild/msbuild.md)

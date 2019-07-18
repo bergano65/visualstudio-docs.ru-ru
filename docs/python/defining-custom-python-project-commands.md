@@ -2,21 +2,20 @@
 title: Определение пользовательских команд меню для проектов Python
 description: Редактируя проекты и целевые файлы, вы можете добавлять настраиваемые команды в контекстное меню проекта Python в Visual Studio, чтобы вызывать исполняемые программы, скрипты, модули, встроенные фрагменты кода и команды pip.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3cf0e0984c8051c0301ccb20c5f8dce2850c1514
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957708"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Определение пользовательских команд для проектов Python
 

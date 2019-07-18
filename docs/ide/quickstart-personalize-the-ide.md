@@ -1,29 +1,38 @@
 ---
 title: Настройка цветовой темы и шрифтов
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f81c04c06d8e016ef62a41d2e3083a1daafb3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eccbc834f4038ec18c2f84244488b81a59ecbfbf
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919723"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531536"
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Краткое руководство. Персонализация интегрированной среды разработки и редактора Visual Studio
+# <a name="personalize-the-visual-studio-ide-and-editor"></a>Персонализация интегрированной среды разработки и редактора Visual Studio
 
-В этом кратком (на 5–10 минут) руководстве мы настроим для Visual Studio цветовую тему, выбрав темную тему. Мы также настроим цвета для двух разных типов текста в текстовом редакторе.
+В этом кратком (на 5 –10 минут) учебнике мы настроим для Visual Studio цветовую тему, выбрав темную тему. Мы также настроим цвета для двух разных типов текста в текстовом редакторе.
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+::: moniker range="vs-2017"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+
+::: moniker-end
 
 ## <a name="set-the-color-theme"></a>Настройка цветовой темы
 
-По умолчанию в пользовательском интерфейсе Visual Studio 2017 установлена тема **Синяя**. Давайте изменим ее на тему **Темная**.
+По умолчанию в пользовательском интерфейсе Visual Studio установлена тема **Синяя**. Давайте изменим ее на тему **Темная**.
 
 1. В строке меню, где расположены разделы **Файл** и **Изменить**, выберите **Средства** > **Параметры**.
 
@@ -31,7 +40,17 @@ ms.locfileid: "53919723"
 
    Цветовая тема для всей среды разработки (IDE) Visual Studio изменяется на **Темная**.
 
-   ![VS с темной темой](media/quickstart-personalize-dark-theme.png)
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio 2017 в темной теме](media/quickstart-personalize-dark-theme.png)
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ![Visual Studio 2019 в темной теме](media/vs-2019/dark-theme.png)
+
+   ::: moniker-end
 
 > [!TIP]
 > Вы можете выбрать дополнительные предопределенные темы, установив **редактор цветовых тем Visual Studio** из [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Когда вы установите это средство, в раскрывающемся списке **Цветовая тема** появятся дополнительные темы.
@@ -98,5 +117,5 @@ ms.locfileid: "53919723"
 
 ## <a name="see-also"></a>См. также
 
-- [Настройка редактора](../ide/customizing-the-editor.md)
+- [Настройка редактора](../ide/how-to-change-text-case-in-the-editor.md)
 - [Обзор интегрированной среды разработки Visual Studio IDE](../get-started/visual-studio-ide.md)

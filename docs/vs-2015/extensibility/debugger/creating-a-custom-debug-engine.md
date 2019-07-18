@@ -1,14 +1,9 @@
 ---
 title: Создание пользовательского модуля отладки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementing
 - debug engines, custom
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 516fda63a1a36e407a71cd6711ecdfabdc1e5e58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b2a73dfae7772d8edec076238704aa1b52c9b028
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383449"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Создание пользовательского модуля отладки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,21 +25,21 @@ ms.locfileid: "51784704"
 Отладчик (DE) — это компонент, позволяет выполнить отладку конкретного архитектур во время выполнения. Обычно имеется только одна реализация DE каждой среды выполнения.  
   
 > [!NOTE]
->  Несмотря на наличие отдельных реализаций DE Transact-SQL и JScript, VBScript и JScript совместно используют один DE.  
+> Несмотря на наличие отдельных реализаций DE Transact-SQL и JScript, VBScript и JScript совместно используют один DE.  
   
  DE работает с интерпретатором или операции система могла предоставлять такие операции отладки, как выполнение элемента управления, точки останова и оценки выражений. Эти службы реализуются с помощью интерфейсов DE и может вызвать отладчик для перехода между различные рабочие режимы. Дополнительные сведения см. в разделе [рабочие режимы](../../extensibility/debugger/operational-modes.md).  
   
  Создание DE состоит из следующих действий:  
   
-1.  Регистрация Развернутой с помощью Visual Studio  
+1. Регистрация Развернутой с помощью Visual Studio  
   
-2.  Включение программы для отладки  
+2. Включение программы для отладки  
   
-3.  Выполнение управления и состояние оценки  
+3. Выполнение управления и состояние оценки  
   
-4.  Отправка событий  
+4. Отправка событий  
   
-5.  Завершение и отсоединение  
+5. Завершение и отсоединение  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Регистрация пользовательского модуля отладки](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
@@ -70,4 +65,3 @@ ms.locfileid: "51784704"
   
 ## <a name="see-also"></a>См. также  
  [Расширяемость отладчика Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

@@ -1,14 +1,9 @@
 ---
 title: '&lt;publisherIdentity&gt; элемент (развертывание ClickOnce) | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 34c579db-d2f2-4b66-b9c8-47207f33d950
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1d25b9ff6c4d8a3eb43d18d5c9849ba7199ffe79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 486e0bc5059e041f02e8dac4836c5ff59b27f63e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157630"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; элемент (развертывание ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +43,8 @@ ms.locfileid: "49226945"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`name`|Обязательно. Описывает удостоверение стороны, публикации этого приложения.|  
-|`issuerKeyHash`|Обязательно. Содержит хэш SHA-1 открытого ключа издателя сертификата.|  
+|`name`|Обязательный. Описывает удостоверение стороны, публикации этого приложения.|  
+|`issuerKeyHash`|Обязательный. Содержит хэш SHA-1 открытого ключа издателя сертификата.|  
   
 #### <a name="parameters"></a>Параметры  
   
@@ -62,6 +57,3 @@ ms.locfileid: "49226945"
 ## <a name="requirements"></a>Требования  
   
 ## <a name="subhead"></a>Подзаголовок
-
-
-

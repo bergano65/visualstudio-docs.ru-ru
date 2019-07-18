@@ -7,32 +7,33 @@ dev_langs:
 ms.assetid: aa9b5599-9602-41be-ab50-d84b90bee72f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9e712c0b48fc0ae0815dde66b4ae21970ee946
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: b666aa19e574702655178790b8aa0463a0d5c2d5
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818813"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62836551"
 ---
 # <a name="idiasymbolgetispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
-Указывает, является ли этот символ указателя на функцию-член.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_isPointerToMemberFunction(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Указатель на `BOOL` , указывающий, является ли этот символ указателя на функцию-член.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Указывает, является ли этот символ указателя на функцию-член.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_isPointerToMemberFunction(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Указатель на `BOOL` , указывающий, является ли этот символ указателя на функцию-член.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

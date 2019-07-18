@@ -1,14 +1,9 @@
 ---
 title: Справочник по MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,18 +15,17 @@ ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
 caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b99a082355742ad81ee2ac2e7280a17cfd233a2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292309"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683016"
 ---
 # <a name="msbuild-reference"></a>Справочные сведения о MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] — это система сборки для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Далее приведены ссылки на разделы, содержащие справочную информацию по [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
 ## <a name="in-this-section"></a>В этом разделе  
@@ -78,7 +72,7 @@ ms.locfileid: "49292309"
  Список символов, которые должны использоваться в составе "escape-последовательностей" для обеспечения их правильной интерпретации. Escape-последовательность — это ряд символов, который означает, что следующие за ним символы должны интерпретироваться по-другому.  
   
 ## <a name="related-sections"></a>Связанные разделы  
- [Общие сведения о MSBuild](http://msdn.microsoft.com/en-us/e39f13f7-1e1d-4435-95ca-0c222bca071c) представляет [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] и ссылки на разделы, в которых объясняется, как использовать его для построения проектов.  
+ [Общие сведения о MSBuild. ](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Представляет [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] и ссылки на разделы, в которых объясняется, как использовать его для создания проектов.  
   
  <xref:Microsoft.Build.Conversion>  
  Содержит ссылку на пространство имен Conversion.  
@@ -100,6 +94,3 @@ ms.locfileid: "49292309"
   
  <xref:Microsoft.Build.Utilities>  
  Содержит ссылку на пространство имен Utilities.
-
-
-

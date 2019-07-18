@@ -1,39 +1,33 @@
 ---
 title: Специальные возможности. Советы и рекомендации | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f4fe4f45f6c858ede7bebc7cbbf3a5e734130000
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7e8de7cf7cbdc58e14cfc72c5317a765f46e67ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241024"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674808"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Специальные возможности. Советы и рекомендации
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 В [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] встроена поддержка специальных возможностей, что позволяет облегчить работу с клавиатурой, использовать программы чтения с экрана или другие вспомогательные технологические устройства. Раздел включает в себя ряд предложений по оптимизации [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] для специальных возможностей, а также некоторые полезные сочетания клавиш.  
   
 > [!NOTE]
->  Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="save-your-ide-settings"></a>Сохранение параметров интегрированной среды разработки  
- Вы можете настроить интегрированную среду разработки на своем компьютере, сохранив макет окна, схему назначений клавиш и другие настройки. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Вы можете настроить интегрированную среду разработки на своем компьютере, сохранив макет окна, схему назначений клавиш и другие настройки. Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="common-windows-shortcut-key-combinations"></a>Стандартные сочетания клавиш Windows  
  Для выполнения задач в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] можно использовать многие стандартные сочетания клавиш Windows. Ниже приведены примеры нескольких сочетаний клавиш.  
@@ -57,8 +51,5 @@ ms.locfileid: "49241024"
 |Все окна инструментов|Выбор первой кнопки на панели инструментов в окне|**SHIFT** + **ALT**|  
 |Панели инструментов IDE|Выбор первой кнопки на панели инструментов "Стандартная"|**ALT**, **CTRL** + **TAB** **Примечание.** Нажмите **CTRL** + **TAB** еще раз для выбора первой кнопки на следующей панели интерфейса IDE.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-

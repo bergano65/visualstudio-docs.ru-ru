@@ -1,12 +1,8 @@
 ---
 title: Обращайтесь к нам | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
 - Help [Visual Studio], product support
@@ -14,20 +10,18 @@ ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d046603919c0639427b29cb23cdfa6f8ea74337c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b91eeff74df839836a380db3d2005c7823494581
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428486"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Самая актуальная документация по Visual Studio 2017, см. в разделе [обращайтесь к нам](https://docs.microsoft.com/visualstudio/ide/talk-to-us) на сайте docs.microsoft.com.  
-
-  
+Самая актуальная документация по Visual Studio, см. в разделе [обращайтесь к нам](https://docs.microsoft.com/visualstudio/ide/talk-to-us).  
 
 Нас интересуют ваши идеи по улучшению нашей документации. Мы не можем ответить вам лично, но обязательно передадим ваши отзывы нужному специалисту.  
   
@@ -35,7 +29,7 @@ ms.locfileid: "49289839"
  Используйте кнопку обратной связи (**Была ли эта страница полезной?**) в нижней части страницы. Эта кнопка имеется на всех страницах MSDN. Если вы ищете ответ, но не можете его найти, сообщите нам, какую информацию вы ищете.  
   
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Я хочу сообщить о проблеме с Visual Studio  
- Если при возникновении проблем, с помощью Visual Studio, такие как сбои, низкая производительность, непредвиденное поведение и т. д., сообщите о проблеме с нами, щелкнув правой кнопкой мыши значок отзыва рядом с полем **быстрого запуска**, или выбрав  **Справка &#124; отправить отзыв &#124; сообщить о проблеме** в главном меню. Дополнительные сведения см. в разделе [как сообщить о проблеме с Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).  
+ Если при возникновении проблем, с помощью Visual Studio, такие как сбои, низкая производительность, непредвиденное поведение и т. д., сообщите о проблеме с нами, щелкнув правой кнопкой мыши значок отзыва рядом с полем **быстрого запуска**, или выбрав  **Справка &#124; отправить отзыв &#124; сообщить о проблеме** в главном меню. Дополнительные сведения см. в статье [Как сообщить о проблеме с Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).  
   
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Я хочу внести предложение по поводу возможностей Visual Studio  
  Если мы можем что-то сделать лучше, сообщите нам об этом! Выберите пункт **Внести предложение** , чтобы предложить функцию или изменение группе Visual Studio. Ваше предложение будет автоматически опубликовано в [UserVoice](https://visualstudio.uservoice.com), где другие смогут проголосовать за него.  

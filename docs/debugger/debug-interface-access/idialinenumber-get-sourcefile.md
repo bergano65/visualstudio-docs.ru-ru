@@ -9,34 +9,35 @@ helpviewer_keywords:
 ms.assetid: 86fc4411-375e-4b99-8f96-4da2c3f68190
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf68651cf94341176de6c15b704a22d291d6dd12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 2e026b837205a8bf62f5d33dc2f5449d40cc485e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828622"
 ---
 # <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
-Извлекает ссылку на исходный файл.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_sourceFile (   
-   IDiaSourceFile** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) объект, представляющий исходный файл.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Извлекает ссылку на исходный файл.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_sourceFile ( 
+   IDiaSourceFile** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) объект, представляющий исходный файл.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

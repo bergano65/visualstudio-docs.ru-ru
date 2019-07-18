@@ -1,27 +1,22 @@
 ---
 title: Оболочка Visual Studio | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7ebe79d8ee93206e8d7950112386793a65812d38
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180369"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,17 +40,17 @@ ms.locfileid: "51748917"
   
 - Выбор отслеживания всей оболочки, контекст и валюты. Оболочка отслеживает следующие элементы:  
   
-  -   Текущий проект  
+  - Текущий проект  
   
-  -   Текущий элемент проекта или ItemID текущего <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - Текущий элемент проекта или ItemID текущего <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   Текущее выделение для **свойства** окна или `SelectionContainer`  
+  - Текущее выделение для **свойства** окна или `SelectionContainer`  
   
-  -   Контекст пользовательского интерфейса, идентификаторы или CmdUIGuids, управлять видимостью этих команд, меню и панелей инструментов  
+  - Контекст пользовательского интерфейса, идентификаторы или CmdUIGuids, управлять видимостью этих команд, меню и панелей инструментов  
   
-  -   В настоящее время активных элементов, например активного окна, документа и диспетчер отмены  
+  - В настоящее время активных элементов, например активного окна, документа и диспетчер отмены  
   
-  -   Атрибуты контекста пользователя, которые управляют Динамическая справка  
+  - Атрибуты контекста пользователя, которые управляют Динамическая справка  
   
   Оболочка также включается в процесс взаимодействия между установленных пакетов VSPackage и текущей службы. Он поддерживает все базовые функции оболочки и делает их доступными для всех пакетов VSPackage, интегрированных в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Эти основные возможности включают следующее:  
   
@@ -91,4 +86,3 @@ ms.locfileid: "51748917"
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>   
  [Пакеты VSPackage](../../extensibility/internals/vspackages.md)
-

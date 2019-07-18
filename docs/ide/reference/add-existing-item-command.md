@@ -1,7 +1,6 @@
 ---
 title: Команда Add Existing Item
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - project.addexistingitem
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd74b6af128ee8b624c022cbbf72c5de4edc7997
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8ab2ce6e9f1260172bf0ffbf0aede9138a5115f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792627"
 ---
 # <a name="add-existing-item-command"></a>Команда Add Existing Item
 Добавляет существующий файл в текущее решение и открывает его.

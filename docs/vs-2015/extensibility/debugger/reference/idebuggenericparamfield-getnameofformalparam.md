@@ -1,76 +1,69 @@
 ---
 title: IDebugGenericParamField::GetNameOfFormalParam | Документация Майкрософт
-ms.custom: ''
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.date: 11/04/2016
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetNameOfFormalParam
 - GetNameOfFormalParam
 ms.assetid: 05032a83-49ce-4007-b5d6-7b56945b956c
-caps.latest.revision: 10
+author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a3719a5544f8ed7506f8d144253b2f849cd2afe9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.workload:
+- vssdk
+ms.openlocfilehash: eb18022aa72b0384ce55c6febb0bca2d193c890a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180692"
 ---
 # <a name="idebuggenericparamfieldgetnameofformalparam"></a>IDebugGenericParamField::GetNameOfFormalParam
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Получает имя этого универсального параметра.
 
-Получает имя этого универсального параметра.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp#  
-HRESULT GetNameOfFormalParam (  
-   BSTR* pbstrName  
-);  
-```  
-  
-```csharp  
-int GetNameOfFormalParam (  
-   string pbstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pbstrName`  
- [out] Имя универсального параметра.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="example"></a>Пример  
- В следующем примере показано, как реализовать этот метод для **CDebugGenericParamFieldType** объекта, который предоставляет [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) интерфейс.  
-  
-```cpp#  
-HRESULT CDebugGenericParamFieldType::GetNameOfFormalParam(BSTR *pbstrName)  
-{  
-    HRESULT hr = S_OK;  
-    CComBSTR bstrName;  
-  
-    METHOD_ENTRY( CDebugGenericParamFieldType::GetNameOfFormalParam );  
-  
-    IfFalseGo( pbstrName, E_INVALIDARG );  
-    IfFailGo( this->LoadProps() );  
-    IfNullGo( *pbstrName = SysAllocString(m_bstrName), E_OUTOFMEMORY );  
-  
-Error:  
-  
-    METHOD_EXIT( CDebugGenericParamFieldType::GetNameOfFormalParam, hr );  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>См. также  
- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+## <a name="syntax"></a>Синтаксис
 
+```cpp
+HRESULT GetNameOfFormalParam (
+    BSTR* pbstrName
+);
+```
+
+```csharp
+int GetNameOfFormalParam (
+    string pbstrName
+);
+```
+
+#### <a name="parameters"></a>Параметры
+`pbstrName`
+
+ [out] Имя универсального параметра.
+
+## <a name="return-value"></a>Возвращаемое значение
+В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="example"></a>Пример
+В следующем примере показано, как реализовать этот метод для **CDebugGenericParamFieldType** объекта, который предоставляет [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) интерфейс.
+
+```cpp
+HRESULT CDebugGenericParamFieldType::GetNameOfFormalParam(BSTR *pbstrName)
+{
+    HRESULT hr = S_OK;
+    CComBSTR bstrName;
+
+    METHOD_ENTRY( CDebugGenericParamFieldType::GetNameOfFormalParam );
+
+    IfFalseGo( pbstrName, E_INVALIDARG );
+    IfFailGo( this->LoadProps() );
+    IfNullGo( *pbstrName = SysAllocString(m_bstrName), E_OUTOFMEMORY );
+
+Error:
+
+    METHOD_EXIT( CDebugGenericParamFieldType::GetNameOfFormalParam, hr );
+    return hr;
+}
+```
+
+## <a name="see-also"></a>См. также
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

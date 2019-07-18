@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: отладка серверов COM | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Отладка серверов COM | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -27,15 +22,15 @@ ms.assetid: 9f013c2b-0306-4b34-ba7f-d4445a874da1
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 527356ba788e7e69ba3e1542e3b98ead8efbf331
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205414"
 ---
-# <a name="how-to-debug-com-servers"></a>Практическое руководство. Отладка серверов COM
+# <a name="how-to-debug-com-servers"></a>Практическое руководство. отладку серверов COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Отладка приложений сервера COM создает ряд проблем, которые не всегда легко решить.  
@@ -44,17 +39,14 @@ ms.locfileid: "51727185"
   
 ### <a name="to-debug-a-server-application-without-container-information"></a>Отладка приложения сервера при отсутствии сведений о контейнере  
   
-1.  Начните отладку сервера как обычного приложения.  
+1. Начните отладку сервера как обычного приложения.  
   
-2.  Задайте необходимые точки останова.  
+2. Задайте необходимые точки останова.  
   
-3.  Запустите приложение контейнера.  
+3. Запустите приложение контейнера.  
   
 ## <a name="see-also"></a>См. также  
  [Отладка COM и ActiveX](../debugger/com-and-activex-debugging.md)   
- [Практическое: отладка COM-клиентов и серверов, с помощью отладки RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
- [Отладка COM-сервера и контейнеров](../debugger/com-server-and-container-debugging.md)   
+ [Практическое руководство. Отладка клиентов и серверов COM с помощью отладки RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [Отладка сервера и контейнеров COM](../debugger/com-server-and-container-debugging.md)   
  [Отладка в Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

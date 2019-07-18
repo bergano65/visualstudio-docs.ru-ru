@@ -1,14 +1,9 @@
 ---
 title: IDebugStackFrame2 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bc6a6ea1b1d864c3f14158b9687181e6bdb6bc4a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ae9cad7102fb9a82deb43b2c8820ef52e77deeed
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816675"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "62547007"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ IDebugStackFrame2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
  В следующей таблице показаны методы `IDebugStackFrame2`.  
   
-|Метод|Описание:|  
+|Метод|Описание|  
 |------------|-----------------|  
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|Возвращает контекст кода для этого кадра стека.|  
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|Получает контекст документа для этого кадра стека.|  
@@ -61,7 +56,7 @@ IDebugStackFrame2 : IUnknown
  Этот интерфейс получается, только если отлаживаемая программа остановлена в точке останова (либо из-за заданное пользователем точки останова или исключение). Из этого интерфейса можно получить контексте выражения будут оцениваться выражения, список регистров могут быть возвращены или можно получить и изучить стек вызовов.  
   
 ## <a name="requirements"></a>Требования  
- Заголовок: msdbg.h  
+ Header: msdbg.h  
   
  Пространство имен: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -69,4 +64,3 @@ IDebugStackFrame2 : IUnknown
   
 ## <a name="see-also"></a>См. также  
  [Базовые интерфейсы](../../../extensibility/debugger/reference/core-interfaces.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Задача RC | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
 - vc.task.rc
@@ -27,18 +22,17 @@ ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 04bd592f919ab3ced11b36dceba7ce4178927884
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9bc8b770e654442f14e693fda35d7cf6f5edbd12
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259354"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654833"
 ---
 # <a name="rc-task"></a>Задача RC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Является оболочкой для средства компиляции ресурсов Microsoft Windows (rc.exe). Задача **RC** компилирует ресурсы, такие как курсоры, значки, растровые изображения, диалоговые окна и шрифты, в файл ресурсов (RES). Дополнительные сведения см. в разделе "Компилятор ресурсов" на веб-сайте [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
 ## <a name="parameters"></a>Параметры  
@@ -61,8 +55,5 @@ ms.locfileid: "49259354"
   
 ## <a name="remarks"></a>Примечания  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: включение отладки для приложений ASP.NET | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Включение отладки для приложений ASP.NET | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c199e03af8a21b3134ae0e2afac7bd9b153be2f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 07036fd7c1db7dc8b56502ab9c914f1ba808e876
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749122"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703665"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Практическое руководство. Включение отладки для приложений ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +31,36 @@ ms.locfileid: "51749122"
 Для включения отладки необходимо включить ее на странице **Свойства проекта** и в файле web.config приложения.  
   
 > [!NOTE]  
-> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Отображаемые диалоговые окна и команды меню могут отличаться от описанных в справке в зависимости от текущих параметров или выпуска. Чтобы изменить параметры, выберите в меню **Сервис** пункт **Импорт и экспорт параметров** . Дополнительные сведения см. в статье [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Включение отладки ASP.NET в свойствах проекта (Visual Basic/C#)  
   
-1.  В окне **Обозреватель решений**правой кнопкой мыши щелкните имя веб-проекта и выберите пункт **Свойства**.  
+1. В окне **Обозреватель решений**правой кнопкой мыши щелкните имя веб-проекта и выберите пункт **Свойства**.  
   
-2.  На странице свойств проекта перейдите на вкладку **Веб** .  
+2. На странице свойств проекта перейдите на вкладку **Веб** .  
   
-3.  В окне **Отладчики**установите флажок **ASP.NET** .  
+3. В окне **Отладчики**установите флажок **ASP.NET** .  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>Включение отладки в файле web.config  
   
-1.  Откройте файл web.config с использованием любого стандартного текстового редактора или анализатора XML.  
+1. Откройте файл web.config с использованием любого стандартного текстового редактора или анализатора XML.  
   
     > [!NOTE]  
     > Удаленный доступ к этому файлу с помощью браузера невозможен. Из соображений безопасности настройка служб Microsoft IIS [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] осуществляется ASP.NET таким образом, чтобы предотвратить прямой доступ к файлам Web.config с помощью браузеров. При попытке доступа к файлу конфигурации с помощью браузера будет выдана ошибка доступа HTTP 403.  
   
-2.  Файл Web.config — это XML-файл, поэтому он содержит вложенные разделы, помеченные тегами. Найдите элемент `configuration/system.web/compilation` . Если элемент compilation не существует, создайте его.  
+2. Файл Web.config — это XML-файл, поэтому он содержит вложенные разделы, помеченные тегами. Найдите элемент `configuration/system.web/compilation` . Если элемент compilation не существует, создайте его.  
   
-3.  Если элемент `compilation` не содержит атрибут `debug` , добавьте этот атрибут к элементу.  
+3. Если элемент `compilation` не содержит атрибут `debug` , добавьте этот атрибут к элементу.  
   
-4.  Убедитесь в том, что значение атрибута `debug` равно `true`.  
+4. Убедитесь в том, что значение атрибута `debug` равно `true`.  
   
 Файл Web.config должен выглядеть, как следующий пример. Обратите внимание, что между элементами system.web и configuration могут быть другие разделы  
   
--   разделы элементов между элементами system.web и configuration  
+- разделы элементов между элементами system.web и configuration  
   
--   разделы элементов между элементами system.web и compilation  
+- разделы элементов между элементами system.web и compilation  
   
--   Элемент compilation может содержать другие элементы или атрибуты  
+- Элемент compilation может содержать другие элементы или атрибуты  
   
 ## <a name="example"></a>Пример  
   
@@ -94,8 +89,3 @@ ms.locfileid: "51749122"
   
 ## <a name="see-also"></a>См. также  
 [Отладка приложений ASP.NET и AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  
-  
-
-
-
-

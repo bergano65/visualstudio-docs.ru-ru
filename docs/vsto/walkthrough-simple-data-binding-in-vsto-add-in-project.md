@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], binding data
 - data binding [Office development in Visual Studio], Word
 - data [Office development in Visual Studio], simple binding data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df572f63ec6bb8a77a854144dd2ff4a165148c41
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eccab4b899f3af22d54952d4eb9e8f990932afa4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828424"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825216"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Пошаговое руководство. Простая привязка данных в проект надстройки VSTO
 
@@ -29,11 +29,11 @@ ms.locfileid: "53828424"
 
 В данном пошаговом руководстве рассмотрены следующие задачи:
 
--   Добавление <xref:Microsoft.Office.Tools.Word.ContentControl> в документ во время выполнения.
+- Добавление <xref:Microsoft.Office.Tools.Word.ContentControl> в документ во время выполнения.
 
--   создание объекта <xref:System.Windows.Forms.BindingSource> , соединяющего элемент управления с экземпляром набора данных.
+- создание объекта <xref:System.Windows.Forms.BindingSource> , соединяющего элемент управления с экземпляром набора данных.
 
--   Предоставление пользователю возможности прокручивать записи и просматривать их в элементе управления.
+- Предоставление пользователю возможности прокручивать записи и просматривать их в элементе управления.
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -41,15 +41,15 @@ ms.locfileid: "53828424"
 
 Ниже приведены компоненты, необходимые для выполнения данного пошагового руководства.
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
--   Доступ к запущенному экземпляру SQL Server 2005 или SQL Server 2005 Express с подключенной учебной базой данных `AdventureWorksLT` . Вы можете скачать `AdventureWorksLT` из базы данных [веб-сайте CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Дополнительные сведения о подключении базы данных см. в следующих разделах:
+- Доступ к запущенному экземпляру SQL Server 2005 или SQL Server 2005 Express с подключенной учебной базой данных `AdventureWorksLT` . Вы можете скачать `AdventureWorksLT` из базы данных [веб-сайте CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Дополнительные сведения о подключении базы данных см. в следующих разделах:
 
-    -   Присоединение базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express, см. в разделе [как: Присоединение базы данных (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Присоединение базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express, см. в разделе [как: Присоединение базы данных (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Присоединение базы данных с помощью командной строки, см. в разделе [как: Добавить файл базы данных для SQL Server Express](/previous-versions/sql/).
+  - Присоединение базы данных с помощью командной строки, см. в разделе [как: Добавить файл базы данных для SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Создание нового проекта
 
@@ -57,13 +57,13 @@ ms.locfileid: "53828424"
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1.  Создайте проект надстройки VSTO для Word с именем **Заполнение документов из базы данных**в Visual Basic или C#.
+1. Создайте проект надстройки VSTO для Word с именем **Заполнение документов из базы данных**в Visual Basic или C#.
 
-     Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio открывает *ThisAddIn.vb* или *ThisAddIn.cs* файл и добавляет **заполнение документов данными из базы данных** проект **обозревателе решений** .
 
-2.  Если проект ориентирован [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], добавьте ссылку на *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* сборки. Эта ссылка потребуется для программного добавления элемента управления Windows Forms в документ далее в этом пошаговом руководстве.
+2. Если проект ориентирован [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], добавьте ссылку на *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* сборки. Эта ссылка потребуется для программного добавления элемента управления Windows Forms в документ далее в этом пошаговом руководстве.
 
 ## <a name="create-a-data-source"></a>Создание источника данных
 
@@ -83,7 +83,7 @@ ms.locfileid: "53828424"
 
 5. На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.
 
-6. На странице **Выбор объектов базы данных** разверните узел **Таблицы** и выберите таблицу **Customer (SalesLT)**.
+6. На странице **Выбор объектов базы данных** разверните узел **Таблицы** и выберите таблицу **Customer (SalesLT)** .
 
 7. Нажмите кнопку **Готово**.
 
@@ -103,37 +103,37 @@ ms.locfileid: "53828424"
 
 ### <a name="to-create-the-interface-in-the-document"></a>Создание интерфейса в документе
 
-1.  В классе `ThisAddIn` объявите следующие элементы управления для отображения и прокрутки таблицы `Customer` из базы данных `AdventureWorksLTDataSet` .
+1. В классе `ThisAddIn` объявите следующие элементы управления для отображения и прокрутки таблицы `Customer` из базы данных `AdventureWorksLTDataSet` .
 
      [!code-vb[Trin_WordAddInDatabase#1](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDatabase#1](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#1)]
 
-2.  В метод `ThisAddIn_Startup` добавьте приведенный ниже код для инициализации набора данных и его заполнения сведениями из базы данных `AdventureWorksLTDataSet` .
+2. В метод `ThisAddIn_Startup` добавьте приведенный ниже код для инициализации набора данных и его заполнения сведениями из базы данных `AdventureWorksLTDataSet` .
 
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3.  Добавьте следующий код в метод `ThisAddIn_Startup`. Этот код создает ведущий элемент, расширяющий документ. Дополнительные сведения см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Добавьте следующий код в метод `ThisAddIn_Startup` . Этот код создает ведущий элемент, расширяющий документ. Дополнительные сведения см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]
 
-4.  Определите несколько диапазонов в начале документа. Эти диапазоны указывают место вставки текста и размещения элементов управления.
+4. Определите несколько диапазонов в начале документа. Эти диапазоны указывают место вставки текста и размещения элементов управления.
 
      [!code-vb[Trin_WordAddInDatabase#4](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDatabase#4](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#4)]
 
-5.  Добавьте элементы управления интерфейса в ранее определенные диапазоны.
+5. Добавьте элементы управления интерфейса в ранее определенные диапазоны.
 
      [!code-vb[Trin_WordAddInDatabase#5](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDatabase#5](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#5)]
 
-6.  Привяжите элемент управления содержимым к `AdventureWorksLTDataSet` с помощью <xref:System.Windows.Forms.BindingSource>. Разработчикам C# следует добавить два обработчика событий для элементов управления <xref:Microsoft.Office.Tools.Word.Controls.Button> .
+6. Привяжите элемент управления содержимым к `AdventureWorksLTDataSet` с помощью <xref:System.Windows.Forms.BindingSource>. Разработчикам C# следует добавить два обработчика событий для элементов управления <xref:Microsoft.Office.Tools.Word.Controls.Button> .
 
      [!code-vb[Trin_WordAddInDatabase#6](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#6)]
      [!code-csharp[Trin_WordAddInDatabase#6](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#6)]
 
-7.  Добавьте следующий код для перемещения по записям базы данных.
+7. Добавьте следующий код для перемещения по записям базы данных.
 
      [!code-vb[Trin_WordAddInDatabase#7](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDatabase#7](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#7)]
@@ -144,11 +144,11 @@ ms.locfileid: "53828424"
 
 ### <a name="to-test-the-vsto-add-in"></a>Тестирование надстройки VSTO
 
-1.  Нажмите клавишу **F5**.
+1. Нажмите клавишу **F5**.
 
      Элемент управления содержимым с именем `customerContentControl` создается и заполняется данными. В то же время в проект добавляется объект набора данных с именем `adventureWorksLTDataSet` и объект <xref:System.Windows.Forms.BindingSource> с именем `customerBindingSource` . Объект <xref:Microsoft.Office.Tools.Word.ContentControl> привязан к объекту <xref:System.Windows.Forms.BindingSource>, который в свою очередь привязан к объекту набора данных.
 
-2.  Нажимайте кнопки **Далее** и **Назад** , чтобы прокрутить записи базы данных.
+2. Нажимайте кнопки **Далее** и **Назад** , чтобы прокрутить записи базы данных.
 
 ## <a name="see-also"></a>См. также
 

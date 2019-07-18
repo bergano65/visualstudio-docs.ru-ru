@@ -1,12 +1,9 @@
 ---
-title: 'Пошаговое руководство: Отображение связанных данных в приложении WPF | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Отображение связанных данных в приложении WPF | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,14 +17,14 @@ ms.assetid: 5c48f188-e9c4-40a6-97d9-67cdb2f90127
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 560852fc25a3e00134e4ed8b6bd06205248b208d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913141"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688424"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Пошаговое руководство. Отображение связанных данных в приложении WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,35 +50,35 @@ ms.locfileid: "49913141"
   
   Перед изучением приведенных ниже концепций будет полезно, хотя и не обязательно, ознакомиться со следующим пошаговым руководством.  
   
-- Модели EDM и ADO.NET Entity Framework. Дополнительные сведения см. в разделе [Обзор Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Модели EDM и ADO.NET Entity Framework. Дополнительные сведения см. в разделе [Обзор Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- Работа с Конструктором WPF. Дополнительные сведения см. в разделе [WPF и Silverlight Обзор конструктора](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Работа с Конструктором WPF. Дополнительные сведения см. в разделе [WPF и Silverlight Обзор конструктора](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Привязка данных WPF. Более подробную информацию см. в разделе [Общие сведения о связывании данных](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="creating-the-project"></a>Создание проекта  
  Создайте новый проект WPF для отображения записей заказов.  
   
 #### <a name="to-create-a-new-wpf-project"></a>Создание нового проекта WPF  
   
-1.  Запустите Visual Studio.  
+1. Запустите Visual Studio.  
   
-2.  В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.  
+2. В меню **Файл** выберите пункт **Создать**, а затем команду **Проект**.  
   
-3.  Разверните **Visual C#** или **Visual Basic**, а затем выберите **Windows**.  
+3. Разверните **Visual C#** или **Visual Basic**, а затем выберите **Windows**.  
   
-4.  Убедитесь, что **.NET Framework 4** выбран в поле со списком в верхней части диалогового окна. <xref:System.Windows.Controls.DataGrid> Элемент управления, который используется в этом пошаговом руководстве можно использовать только в .NET Framework 4.  
+4. Убедитесь, что **.NET Framework 4** выбран в поле со списком в верхней части диалогового окна. <xref:System.Windows.Controls.DataGrid> Элемент управления, который используется в этом пошаговом руководстве можно использовать только в .NET Framework 4.  
   
-5.  Выберите **приложение WPF** шаблона проекта.  
+5. Выберите шаблон проекта **Приложение WPF**.  
   
-6.  В поле **Имя файла** введите `AdventureWorksOrdersViewer`.  
+6. В поле **Имя файла** введите `AdventureWorksOrdersViewer`.  
   
-7.  Нажмите кнопку **ОК**.  
+7. Нажмите кнопку **ОК**.  
   
      Visual Studio создает `AdventureWorksOrdersViewer` проекта.  
   
 ## <a name="creating-an-entity-data-model-for-the-application"></a>Создание модели EDM для приложения  
- Перед созданием элементов управления с привязкой к данным, необходимо определить модель данных для вашего приложения и добавьте его в **источников данных** окна. В этом пошаговом руководстве модели данных является моделью EDM.  
+ Перед созданием элементов управления с привязкой к данным нужно определить модель данных для своего приложения и добавить ее в окно **Источники данных**. В этом пошаговом руководстве модели данных является моделью EDM.  
   
 #### <a name="to-create-an-entity-data-model"></a>Создание модели EDM  
   
@@ -97,7 +94,7 @@ ms.locfileid: "49913141"
   
    - Если подключение к учебной базе данных AdventureWorksLT доступно в раскрывающемся списке, то выберите его.  
   
-      - или -  
+      -или-  
   
    - Нажмите кнопку **новое подключение** и создайте подключение к базе данных AdventureWorksLT.  
   
@@ -105,9 +102,9 @@ ms.locfileid: "49913141"
   
 6. На **Choose Your Database Objects** странице, разверните узел **таблиц**, а затем выберите следующие таблицы:  
   
-   -   **SalesOrderDetail**  
+   - **SalesOrderDetail**  
   
-   -   **SalesOrderHeader**  
+   - **SalesOrderHeader**  
   
 7. Нажмите кнопку **Готово**.  
   
@@ -126,7 +123,7 @@ ms.locfileid: "49913141"
   
 3. В **источников данных** окно, щелкните стрелку раскрывающегося меню **SalesOrderHeaders** узел и выберите **сведения**.  
   
-4. Разверните **SalesOrderHeaders** узла.  
+4. Разверните узел **SalesOrderHeaders**.  
   
 5. Щелкните стрелку раскрывающегося меню рядом с **SalesOrderID** и выберите **ComboBox**.  
   
@@ -148,7 +145,7 @@ ms.locfileid: "49913141"
   
    - **Freight**  
   
-   - **столбец ROWGUID**  
+   - **rowguid**  
   
    - **ModifiedDate**  
   
@@ -160,7 +157,7 @@ ms.locfileid: "49913141"
   
 8. В конструкторе щелкните поле со списком рядом **идентификатор заказа на продажу** метки.  
   
-9. В **свойства** окно, выберите флажок рядом с полем **IsReadOnly** свойство.  
+9. В окне **Свойства** установите флажок рядом со свойством **IsReadOnly**.  
   
 ## <a name="creating-a-datagrid-that-displays-the-order-details"></a>Создание элемента управления DataGrid, которая отображает сведения о заказе  
  Создание <xref:System.Windows.Controls.DataGrid> элемент управления, отображающий сведения о заказе, перетащив `SalesOrderDetails` сущность из **источников данных** окно в конструктор WPF.  
@@ -170,7 +167,7 @@ ms.locfileid: "49913141"
 1. В **источников данных** окна, найдите **SalesOrderDetails** узел, который является дочерним объектом **SalesOrderHeaders** узла.  
   
    > [!NOTE]
-   >  Имеется также **SalesOrderDetails** узел, который является одноранговым в отношении **SalesOrderHeaders** узла. Убедитесь, что дочерний узел **SalesOrderHeaders** узла.  
+   > Имеется также **SalesOrderDetails** узел, который является одноранговым в отношении **SalesOrderHeaders** узла. Убедитесь, что дочерний узел **SalesOrderHeaders** узла.  
   
 2. Разверните дочерний **SalesOrderDetails** узла.  
   
@@ -180,7 +177,7 @@ ms.locfileid: "49913141"
   
    - **SalesOrderDetailID**  
   
-   - **столбец ROWGUID**  
+   - **rowguid**  
   
    - **ModifiedDate**  
   
@@ -195,15 +192,15 @@ ms.locfileid: "49913141"
   
 #### <a name="to-test-the-application"></a>Тестирование приложения  
   
-1.  Нажмите клавишу **F5**.  
+1. Нажмите клавишу **F5**.  
   
      Выполняется сборка и запуск приложения. Проверьте следующее.  
   
-    -   **Идентификатор заказа на продажу** отображает поле со списком **71774**. Это первый идентификатор заказа в сущности.  
+    - **Идентификатор заказа на продажу** отображает поле со списком **71774**. Это первый идентификатор заказа в сущности.  
   
-    -   Для каждого заказа, выберите в **идентификатор заказа на продажу** поле со списком отображаются подробные сведения в <xref:System.Windows.Controls.DataGrid>.  
+    - Для каждого заказа, выберите в **идентификатор заказа на продажу** поле со списком отображаются подробные сведения в <xref:System.Windows.Controls.DataGrid>.  
   
-2.  Закройте приложение.  
+2. Закройте приложение.  
   
 ## <a name="next-steps"></a>Следующие шаги  
  После выполнения данного пошагового руководства, сведения об использовании **источников данных** окно в Visual Studio для привязки WPF элементы управления в другие типы источников данных. Дополнительные сведения см. в разделе [элементы управления WPF, привязка к службе данных WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) и [элементы управления WPF, привязка к набору данных](../data-tools/bind-wpf-controls-to-a-dataset.md).  

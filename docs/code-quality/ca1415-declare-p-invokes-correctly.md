@@ -1,7 +1,6 @@
 ---
 title: CA1415. Правильно объявляйте методы P/Invoke
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1415
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 42a90796-0264-4460-bf97-2fb4a093dfdc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41240738c7c303a04cc3d4251ece3efbead14c4d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da6448a414437a07b545a999b35031f82e9a8689
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546190"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415. Правильно объявляйте методы P/Invoke
 

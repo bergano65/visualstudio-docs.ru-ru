@@ -4,22 +4,18 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Зарегистрируйтесь, чтобы получить подписку MSDN Magazine, входящую в состав вашей подписки Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: d108fa34faec04ce2f09e8ab5b55dfe19f0d61d5
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 8bc38545ce497c0f8f85dfe74db841ef1ae4ee78
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739600"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250788"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Преимущество MSDN Magazine в подписках Visual Studio
 
 Исчерпывающая информация о технологиях Майкрософт для практического решения реальных проблем.  В зависимости от подписки вы получаете право на печатную версию журнала или ранний доступ к его электронной версии.
-
 
 ## <a name="activation-steps"></a>Процедура активации
 Процедура активации преимущества зависит от выбранного выпуска.
@@ -27,15 +23,14 @@ ms.locfileid: "53739600"
 ### <a name="digital-edition"></a>Цифровой выпуск
 Цифровой выпуск доступен членам Visual Studio Dev Essentials.
 
-1.  Чтобы получить доступ к цифровому выпуску MSDN Magazine, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2.  Найдите плитку "MSDN Magazine" в категории "Профессиональное развитие" и нажмите кнопку **Получить доступ**.
+1. Чтобы получить доступ к цифровому выпуску MSDN Magazine, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2. Найдите плитку "MSDN Magazine" в категории "Профессиональное развитие" и нажмите кнопку **Получить доступ**.
 
 ### <a name="printed-edition"></a>Печатный выпуск
 1. Чтобы получить подписку на MSDN Magazine, выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Найдите плитку "MSDN Magazine" в категории "Профессиональное развитие" и нажмите кнопку **Подписаться** на плитке. (Щелкните "!" в правом нижнем углу плитки для получения доступа к цифровому выпуску.)
    > [!div class="mx-imgBorder"]
    > ![Плитка преимущества MSDN Magazine](_img/vs-msdn/vs-msdn-tile.png)
-
 
 3. На странице MSDN Magazine выберите предпочитаемый тип подписки.  Вы можете выбрать цифровой выпуск совершенно бесплатно, где бы вы ни проживали.  Печатная версия доступна бесплатно жителям США.  За пересылку печатной версий за пределы США взимается плата.
    > [!div class="mx-imgBorder"]
@@ -56,20 +51,19 @@ ms.locfileid: "53739600"
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Печатный выпуск                                             |  Нет.  Доступно только для новых подписчиков         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Печатный выпуск                                              | Нет.  Доступно только для новых подписчиков         |
 |Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная)   | Azure |Недоступно      |  Н/Д         |
-|Visual Studio Dev Essentials| Н/Д |Цифровой выпуск       |  Да|
+||
 
 <sup>1</sup> *Печатный выпуск:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*
 
-*Цифровой выпуск: ПО и службы MCT, Microsoft Valued Professional (Professional), региональный директор (RD).*
+*Цифровой выпуск: ПО и службы MCT, Most Valuable Professional (MVP), региональный директор (RD).*
 
 *Не включает следующие категории:  Imagine (Standard), BizSpark, разработчик ПО и служб MCT*.
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
-
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

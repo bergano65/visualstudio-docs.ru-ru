@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: Включение автозапуска при установке с компакт-диска | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Включение автозапуска при установке с компакт-диска | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: caaec619-900c-4790-90e3-8c91f5347635
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2fde610731ca5ec315b94d2e46f58edb2a7b56fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153786"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Практическое руководство. Включение автозапуска при установке с компакт-диска
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +33,20 @@ ms.locfileid: "49273147"
   
 ### <a name="to-enable-autostart"></a>Чтобы включить автоматический запуск  
   
-1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Нажмите кнопку **публикации** вкладки.  
+2. Перейдите на вкладку **Публикация**.  
   
-3.  Нажмите кнопку **параметры** кнопки.  
+3. Нажмите кнопку **Параметры**.  
   
      **Параметры публикации** откроется диалоговое окно.  
   
-4.  Нажмите кнопку **развертывания**.  
+4. Нажмите кнопку **развертывания**.  
   
-5.  Выберите **установок для компакт-диска автоматически запускать Setup, когда вставлен ДИСК** "флажок".  
+5. Выберите **установок для компакт-диска автоматически запускать Setup, когда вставлен ДИСК** "флажок".  
   
      Файл Autorun.inf копируются в место публикации при публикации приложения.  
   
 ## <a name="see-also"></a>См. также  
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

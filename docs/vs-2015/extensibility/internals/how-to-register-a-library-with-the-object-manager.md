@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: зарегистрировать библиотеку с помощью диспетчера объектов | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Зарегистрировать библиотеку с помощью диспетчера объектов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
 - IVsLibrary2 interface, registering library with object manager
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ed547d82ccacec44383fed29a0c04bb363b10084
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c40c695a912e97269263ba14747b72382847324d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162039"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>Практическое: зарегистрировать библиотеку с помощью диспетчера объектов
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Практическое руководство. Регистрация библиотеки с помощью диспетчера объектов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Просмотр символы средства, такие как **представление классов**, **обозреватель объектов**, **Обозреватель вызовов** и **результаты поиска символа**, позволяют просматривать символы в проекте или на внешние компоненты. Символы включают пространства имен, классы, интерфейсы, методы и другие элементы языка. Библиотеки отслеживать эти символы и представлять их в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] диспетчера объектов, которое заполняет средства с данными.  
@@ -45,7 +40,7 @@ ms.locfileid: "51732951"
   
 #### <a name="to-register-a-library-with-the-object-manager"></a>Чтобы зарегистрировать библиотеку с диспетчером объектов  
   
-1.  Создание библиотеки.  
+1. Создание библиотеки.  
   
     ```vb  
     Private m_CallBrowserLibrary As CallBrowser.Library = Nothing  
@@ -62,7 +57,7 @@ ms.locfileid: "51732951"
   
     ```  
   
-2.  Получить ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> введите и вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод.  
+2. Получить ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> введите и вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> метод.  
   
     ```vb  
     Private Sub RegisterLibrary()  
@@ -118,7 +113,7 @@ ms.locfileid: "51732951"
   
 #### <a name="to-unregister-a-library-with-the-object-manager"></a>Чтобы отменить регистрацию библиотеки с диспетчером объектов  
   
-1.  Получить ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> введите и вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> метод.  
+1. Получить ссылку на объект <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> введите и вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> метод.  
   
     ```vb  
     Private Sub UnregisterLibrary()  
@@ -175,4 +170,3 @@ ms.locfileid: "51732951"
  [Расширяемость устаревший языковой службы](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Вспомогательные средства просмотра символов](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Практическое руководство. Предоставление списка символов, переданных из библиотеки в диспетчер объектов](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-

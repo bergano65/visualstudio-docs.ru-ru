@@ -1,14 +1,9 @@
 ---
 title: Создание системы базового проекта, часть 2 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b6d44e99b584ec347abd407753f965170658969b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685414"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Создание системы базового проекта. Часть 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,18 +28,18 @@ ms.locfileid: "51753966"
   
  В этом пошаговом руководстве объясняется, как выполнять эти задачи:  
   
--   Создание шаблона Visual Studio.  
+- Создание шаблона Visual Studio.  
   
--   Развертывание шаблона Visual Studio.  
+- Развертывание шаблона Visual Studio.  
   
--   Создать дочерний узел типа проекта в **новый проект** диалоговое окно.  
+- Создать дочерний узел типа проекта в **новый проект** диалоговое окно.  
   
--   Включение подстановки параметров в шаблоне Visual Studio.  
+- Включение подстановки параметров в шаблоне Visual Studio.  
   
--   Создание страницы свойств проекта.  
+- Создание страницы свойств проекта.  
   
 > [!NOTE]
->  Действия, описанные в этом пошаговом руководстве основаны на проекте C#. Тем не менее за исключением особенностей, таких как расширения имен файлов и кода, можно использовать те же действия для проекта Visual Basic.  
+> Действия, описанные в этом пошаговом руководстве основаны на проекте C#. Тем не менее за исключением особенностей, таких как расширения имен файлов и кода, можно использовать те же действия для проекта Visual Basic.  
   
 ## <a name="creating-a-visual-studio-template"></a>Создание шаблона Visual Studio  
  [Создание базовой системы проекта, часть 1](../extensibility/creating-a-basic-project-system-part-1.md) показано, как создать шаблон базовый проект и добавить его в систему проектов. Также показано, как зарегистрировать этот шаблон с помощью Visual Studio с помощью <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> атрибут, который записывает полный путь к папке \Templates\Projects\SimpleProject\ в системном реестре.  
@@ -105,7 +100,7 @@ ms.locfileid: "51753966"
 - \<ProjectType > типа проекта в имена элементов **новый проект** диалоговое окно. Это имя заменяет имя параметра атрибута ProvideProjectFactory проекта.  
   
   > [!NOTE]
-  >  \<ProjectType > должен соответствовать `LanguageVsTemplate` аргумент `ProvideProjectFactory` атрибута в файле SimpleProjectPackage.cs.  
+  > \<ProjectType > должен соответствовать `LanguageVsTemplate` аргумент `ProvideProjectFactory` атрибута в файле SimpleProjectPackage.cs.  
   
   \<TemplateContent > разделе описываются эти файлы, которые создаются при создании нового проекта:  
   
@@ -120,14 +115,14 @@ ms.locfileid: "51753966"
   Дополнительные сведения об элементах в схеме шаблона Visual Studio, см. в разделе [Справочник по схеме для Visual Studio шаблон](../extensibility/visual-studio-template-schema-reference.md).  
   
 > [!NOTE]
->  Если проект имеет более одного шаблона Visual Studio, каждый шаблон находится в отдельной папке. Каждый файл в этой папке должен иметь **действие при построении** присвоено **ZipProject**.  
+> Если проект имеет более одного шаблона Visual Studio, каждый шаблон находится в отдельной папке. Каждый файл в этой папке должен иметь **действие при построении** присвоено **ZipProject**.  
   
 ## <a name="adding-a-minimal-vsct-file"></a>Добавление минимальным vsct-файл  
  Visual Studio должна выполняться в режиме для распознавания нового или измененного шаблона Visual Studio. Режим установки требует vsct-файл должен присутствовать. Таким образом необходимо добавить минимальный vsct-файл в проект.  
   
-1.  Добавьте XML-файл с именем SimpleProject.vsct SimpleProject проект.  
+1. Добавьте XML-файл с именем SimpleProject.vsct SimpleProject проект.  
   
-2.  Замените содержимое файла SimpleProject.vsct следующим кодом.  
+2. Замените содержимое файла SimpleProject.vsct следующим кодом.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -136,25 +131,25 @@ ms.locfileid: "51753966"
     </CommandTable>  
     ```  
   
-3.  Задайте **действие при построении** для этого файла в **VSCTCompile**. Это можно сделать только в CSPROJ-файл, не видны в **свойства** окна. Убедитесь, что **действие при построении** этого файла имеет значение **None** на этом этапе.  
+3. Задайте **действие при построении** для этого файла в **VSCTCompile**. Это можно сделать только в CSPROJ-файл, не видны в **свойства** окна. Убедитесь, что **действие при построении** этого файла имеет значение **None** на этом этапе.  
   
-    1.  Щелкните правой кнопкой мыши папку SimpleProject и нажмите кнопку **изменить SimpleProject.csproj**.  
+    1. Щелкните правой кнопкой мыши папку SimpleProject и нажмите кнопку **изменить SimpleProject.csproj**.  
   
-    2.  В CSPROJ-файл найдите элемент SimpleProject.vsct.  
+    2. В CSPROJ-файл найдите элемент SimpleProject.vsct.  
   
         ```  
         <None Include="SimpleProject.vsct" />  
         ```  
   
-    3.  Изменить действие при построении **VSCTCompile**.  
+    3. Изменить действие при построении **VSCTCompile**.  
   
         ```  
         <VSCTCompile Include="SimpleProject.vsct" />  
         ```  
   
-    4.  файл проекта и закрыть редактор.  
+    4. файл проекта и закрыть редактор.  
   
-    5.  Сохранить SimpleProject узел, а затем в **обозревателе решений** щелкните **перезагрузить проект**.  
+    5. Сохранить SimpleProject узел, а затем в **обозревателе решений** щелкните **перезагрузить проект**.  
   
 ## <a name="examining-the-visual-studio-template-build-steps"></a>Изучение действий построения шаблона Visual Studio  
  В системе сборки проекта VSPackage обычно выполняется Visual Studio в режиме, когда изменяется VSTEMPLATE-файл или перестроить проект, содержащий VSTEMPLATE-файл. Читатели могут проследить, задав уровень детализации MSBuild в нормальное состояние или более поздней версии.  
@@ -193,7 +188,7 @@ ZipProjects:
   
     На [!INCLUDE[win7](../includes/win7-md.md)]: В меню "Пуск", найти **средств Microsoft Visual Studio или Microsoft Visual Studio SDK/** папку, а затем выберите **Сброс Microsoft Visual Studio экспериментального экземпляра**.  
   
-    В более поздних версиях Windows: на начальном экране, введите **Сброс Microsoft Visual Studio \<версии > экспериментальный экземпляр**.  
+    В более поздних версиях Windows: На начальном экране введите **Сброс Microsoft Visual Studio \<версии > экспериментальный экземпляр**.  
   
 2. Появится окно командной строки. Когда появится слова `Press any key to continue`, нажмите клавишу ВВОД. После закрытия окна, откройте Visual Studio.  
   
@@ -214,11 +209,11 @@ ZipProjects:
   
  В этом разделе показано, как создать дочерний узел консоли для типа проекта SimpleProject.  
   
-1.  Задайте для папки \Templates\Projects\SimpleProject\ \Templates\Projects\ConsoleApp\\.  
+1. Задайте для папки \Templates\Projects\SimpleProject\ \Templates\Projects\ConsoleApp\\.  
   
-2.  В **свойства** окно, выберите все пять файлов в папке \Templates\Projects\ConsoleApp\ и убедитесь, что **действие при построении** присваивается **ZipProject**.  
+2. В **свойства** окно, выберите все пять файлов в папке \Templates\Projects\ConsoleApp\ и убедитесь, что **действие при построении** присваивается **ZipProject**.  
   
-3.  В файле SimpleProject.vstemplate, добавьте следующую строку в конце \<TemplateData > раздела, непосредственно перед закрывающим тегом.  
+3. В файле SimpleProject.vstemplate, добавьте следующую строку в конце \<TemplateData > раздела, непосредственно перед закрывающим тегом.  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
@@ -226,11 +221,11 @@ ZipProjects:
   
      В этом случае шаблон консольного приложения в дочернем узле консоли и в родительском узле SimpleProject, который находится на один уровень выше дочерний узел.  
   
-4.  Сохраните файл SimpleProject.vstemplate.  
+4. Сохраните файл SimpleProject.vstemplate.  
   
-5.  Добавьте в CSPROJ-файл, \<OutputSubPath > для каждого элемента ZipProject. Выгрузить проект, что и раньше и в файле проекта.  
+5. Добавьте в CSPROJ-файл, \<OutputSubPath > для каждого элемента ZipProject. Выгрузить проект, что и раньше и в файле проекта.  
   
-6.  Найдите \<ZipProject > элементы. К каждому \<ZipProject > элемента, добавьте \<OutputSubPath > элемент и присвойте ему значение консоли. ZipProject  
+6. Найдите \<ZipProject > элементы. К каждому \<ZipProject > элемента, добавьте \<OutputSubPath > элемент и присвойте ему значение консоли. ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -250,7 +245,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7.  Добавьте этот \<PropertyGroup > в файл проекта:  
+7. Добавьте этот \<PropertyGroup > в файл проекта:  
   
     ```  
     <PropertyGroup>  
@@ -258,7 +253,7 @@ ZipProjects:
     </PropertyGroup>  
     ```  
   
-8.  Сохраните файл проекта и перезагрузить проект.  
+8. Сохраните файл проекта и перезагрузить проект.  
   
 ## <a name="testing-the-project-type-child-node"></a>Тестирование дочерний узел типа проекта  
  Протестировать измененный файл проекта для просмотра ли **консоли** дочерний узел отображается в **новый проект** диалоговое окно.  
@@ -286,19 +281,19 @@ ZipProjects:
   
 - $safeprojectname$ — это имя, указанное пользователем в **новый проект** диалоговое окно, изменить, чтобы удалить все небезопасные символы и пробелы.  
   
-  Полный список параметров шаблона см. в разделе [Параметры шаблона](../ide/template-parameters.md).  Если вы хотите создать собственный пользовательский шаблон параметров, см. в разделе [NIB: Практическое: передать пользовательских параметров в шаблоны](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Полный список параметров шаблона см. в разделе [Параметры шаблона](../ide/template-parameters.md).  Если вы хотите создать собственный пользовательский шаблон параметров, см. в разделе [NIB: Практическое руководство. Передать пользовательские параметры для шаблонов](https://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Для замены параметров шаблона проекта  
   
-1.  В файле SimpleProjectNode.cs удалить `AddFileFromTemplate` метод.  
+1. В файле SimpleProjectNode.cs удалить `AddFileFromTemplate` метод.  
   
-2.  В файле \Templates\Projects\ConsoleApp\SimpleProject.myproj найдите \<RootNamespace > свойства и измените его значение на $safeprojectname$.  
+2. В файле \Templates\Projects\ConsoleApp\SimpleProject.myproj найдите \<RootNamespace > свойства и измените его значение на $safeprojectname$.  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3.  В файле \Templates\Projects\SimpleProject\Program.cs замените содержимое файла следующим кодом:  
+3. В файле \Templates\Projects\SimpleProject\Program.cs замените содержимое файла следующим кодом:  
   
     ```  
     using System;  
@@ -320,11 +315,11 @@ ZipProjects:
     }  
     ```  
   
-4.  Перестройте проект SimpleProject и начните отладку. Откроется экспериментальный экземпляр.  
+4. Перестройте проект SimpleProject и начните отладку. Откроется экспериментальный экземпляр.  
   
-5.  Создайте новое SimpleProject консольное приложение. (В **типы проектов** области выберите **SimpleProject**. В разделе **установленные шаблоны Visual Studio**выберите **консольное приложение**.)  
+5. Создайте новое SimpleProject консольное приложение. (В **типы проектов** области выберите **SimpleProject**. В разделе **установленные шаблоны Visual Studio**выберите **консольное приложение**.)  
   
-6.  В только что созданный проект откройте файл Program.cs. Он должен выглядеть примерно следующим образом (значения GUID в файле будут отличаться.):  
+6. В только что созданный проект откройте файл Program.cs. Он должен выглядеть примерно следующим образом (значения GUID в файле будут отличаться.):  
   
     ```  
     using System;  
@@ -353,11 +348,11 @@ ZipProjects:
   
  На страницу свойств, созданные в этом разделе позволяют изменять и сохранять этих свойств проекта:  
   
--   AssemblyName  
+- AssemblyName  
   
--   OutputType  
+- OutputType  
   
--   RootNamespace.  
+- RootNamespace.  
   
 1. Добавьте в файл SimpleProjectPackage.cs, это `ProvideObject` атрибут `SimpleProjectPackage` класса:  
   
@@ -500,4 +495,3 @@ ZipProjects:
 8. Закройте экспериментальный экземпляр Visual Studio.  
   
    ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
-

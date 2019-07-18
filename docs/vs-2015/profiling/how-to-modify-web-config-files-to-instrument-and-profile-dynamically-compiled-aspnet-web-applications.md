@@ -1,27 +1,22 @@
 ---
-title: Как выполнить Изменение файлов Web.config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET | Документация Майкрософт
-ms.custom: ''
+title: Практическое руководство. Изменение файлов Web.Config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 471f2d2a0413cbf5932c980f195a49504bd975aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432605"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Как выполнить Изменение файлов Web.config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Практическое руководство. Изменение файлов Web.Config для инструментирования и профилирования динамически скомпилированных веб-приложений ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете использовать метод инструментирования средств профилирования [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] для сбора подробных сведений о времени, данных о выделении памяти .NET и данных о времени существования объекта .NET из динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
@@ -29,7 +24,7 @@ ms.locfileid: "53860732"
  В этом разделе описывается внесение изменений в файл конфигурации web.config для включения возможности инструментирования и профилирования веб-приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
 > [!NOTE]
->  Изменять файл web.config не требуется при использовании метода профилирования с выборкой или при инструментировании предварительно скомпилированного модуля [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+> Изменять файл web.config не требуется при использовании метода профилирования с выборкой или при инструментировании предварительно скомпилированного модуля [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
  Корень файла web.config — элемент **configuration**. Для инструментирования и профилирования динамически скомпилированных веб-приложений [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] необходимо добавить или изменить следующие элементы:  
   
@@ -43,27 +38,27 @@ ms.locfileid: "53860732"
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Добавление сборки ASPNetHelper как элемента configuration/runtime/assemblyBinding/dependentAssembly  
   
-1.  При необходимости добавьте элемент **runtime** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.  
+1. При необходимости добавьте элемент **runtime** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.  
   
      У элемента **runtime** нет атрибутов. Элемент **configuration** может иметь только один дочерний элемент **runtime**.  
   
-2.  При необходимости добавьте элемент **assemblyBinding** как дочерний элемент элемента **runtime**; в противном случае переходите к следующему шагу.  
+2. При необходимости добавьте элемент **assemblyBinding** как дочерний элемент элемента **runtime**; в противном случае переходите к следующему шагу.  
   
      Элемент **runtime** может иметь только один элемент **assemblyBinding**.  
   
-3.  Добавьте следующее имя и значение атрибута в элемент **assemblyBinding**:  
+3. Добавьте следующее имя и значение атрибута в элемент **assemblyBinding**:  
   
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
     |**Xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
   
-4.  Добавьте элемент **dependentAssembly** как дочерний элемент элемента **assemblyBinding**.  
+4. Добавьте элемент **dependentAssembly** как дочерний элемент элемента **assemblyBinding**.  
   
      Элемент **dependentAssembly** не имеет атрибутов.  
   
-5.  Добавьте элемент **assemblyIdentity** как дочерний элемент элемента **dependentAssembly**.  
+5. Добавьте элемент **assemblyIdentity** как дочерний элемент элемента **dependentAssembly**.  
   
-6.  Добавьте следующие имена и значения атрибутов в элемент **assemblyIdentity**:  
+6. Добавьте следующие имена и значения атрибутов в элемент **assemblyIdentity**:  
   
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
@@ -71,9 +66,9 @@ ms.locfileid: "53860732"
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
     |**culture**|**Neutral**|  
   
-7.  Добавьте элемент **codeBase** как дочерний элемент элемента **dependentAssembly**.  
+7. Добавьте элемент **codeBase** как дочерний элемент элемента **dependentAssembly**.  
   
-8.  Добавьте следующие имена и значения атрибутов в элемент **codeBase**:  
+8. Добавьте следующие имена и значения атрибутов в элемент **codeBase**:  
   
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
@@ -103,15 +98,15 @@ ms.locfileid: "53860732"
   
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Добавление шага пост-обработки профилировщика в элемент configuration/system.web/compilation  
   
-1.  При необходимости добавьте элемент **system.web** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.  
+1. При необходимости добавьте элемент **system.web** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.  
   
      У элемента **system.web** нет атрибутов. Элемент **configuration** может иметь только один дочерний элемент **system.web**.  
   
-2.  При необходимости добавьте элемент **compilation** как дочерний элемент элемента **system.web**; в противном случае переходите к следующему шагу.  
+2. При необходимости добавьте элемент **compilation** как дочерний элемент элемента **system.web**; в противном случае переходите к следующему шагу.  
   
      Элемент **system.web** может иметь только один дочерний элемент **compilation**.  
   
-3.  Удалите существующие атрибуты из элемента **compilation** и добавьте следующее имя и значение атрибута:  
+3. Удалите существующие атрибуты из элемента **compilation** и добавьте следующее имя и значение атрибута:  
   
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
@@ -135,22 +130,22 @@ ms.locfileid: "53860732"
   
 ### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>Добавление параметров расположения профилировщика в элемент configuration/appSettings  
   
-1.  При необходимости добавьте элемент **appSettings** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.  
+1. При необходимости добавьте элемент **appSettings** как дочерний элемент элемента **configuration**; в противном случае переходите к следующему шагу.  
   
      У элемента **appSettings** нет атрибутов. Элемент **configuration** может иметь только один дочерний элемент **appSettings**.  
   
-2.  Добавьте элемент **add** как дочерний элемент элемента **appSettings**.  
+2. Добавьте элемент **add** как дочерний элемент элемента **appSettings**.  
   
-3.  Добавьте следующие имена и значения атрибутов в элемент **add**:  
+3. Добавьте следующие имена и значения атрибутов в элемент **add**:  
   
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
-4.  Добавьте еще один элемент **add** как дочерний элемент элемента **appSettings**.  
+4. Добавьте еще один элемент **add** как дочерний элемент элемента **appSettings**.  
   
-5.  Добавьте следующие имена и значения атрибутов в этот элемент **add**:  
+5. Добавьте следующие имена и значения атрибутов в этот элемент **add**:  
   
     |Имя атрибута|Значение атрибута|  
     |--------------------|---------------------|  
@@ -229,6 +224,3 @@ ms.locfileid: "53860732"
 ## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Инструментирование динамически скомпилированного приложения ASP.NET и сбор подробных данных о времени](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
  [Практическое руководство. Инструментирование динамически скомпилированного приложения ASP.NET и сбор данных об использовании памяти](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: Ожидалась константа | Документы Microsoft
-ms.custom: ''
+title: Ожидалась константа | Документация Майкрософт
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1031
 dev_langs:
@@ -16,25 +11,24 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7cd9907da27ac07ff9e1c41157c2b2e08ef82ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 10564f34683fec5c38ae069f2fb0c51fb0c8902a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935098"
 ---
 # <a name="expected-constant"></a>Ожидалась константа
-Предпринята попытка использовать переменную (компиляция без условий) в операторах проверки условной компиляции. Операторы тестирования условной компиляции должны оцениваться как константы.  
+Предпринята попытка использовать переменную (компиляция без условий) в операторе условной компиляции теста. Операторы условной компиляции теста должны оцениваться как константы.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Замените переменную литералом.  
+- Замените переменную литерала.  
   
--   Замените переменную переменной условной компиляции.  
+- Замените переменную переменной условной компиляции.  
   
 ## <a name="see-also"></a>См. также  
  [Условная компиляция](../../javascript/advanced/conditional-compilation-javascript.md)   

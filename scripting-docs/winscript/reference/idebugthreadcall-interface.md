@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IDebugThreadCall | Документы Microsoft
+title: Интерфейс IDebugThreadCall | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,19 +13,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2b1b500aec08520166d9092edfa6a58c1df0fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 89f0fba2f5210cdcf4bb8f17443f948cb9ba1f4e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004856"
 ---
 # <a name="idebugthreadcall-interface"></a>Интерфейс IDebugThreadCall
-`IDebugThreadCall` Интерфейс обычно реализуется компонентом, который выполняет вызовы между потоками с `IDebugThread` маршалинг реализацию, предоставляемую диспетчером процесса отладки (PDM).  
+`IDebugThreadCall` Интерфейс обычно реализуется компонентом, который выполняет вызовы между потоками с `IDebugThread` маршалинга предоставляет диспетчер отладки процессов (PDM).  
   
- Вызовы PDM `IDebugThreadCall` интерфейса в нужный поток и `IDebugThreadCall` интерфейс отправляет вызов необходимого внедрения. `IDebugThreadCall` Интерфейс приводит сведения о параметрах, соответствующее верхней, передаваемый в параметрах.  
+ Вызовы PDM `IDebugThreadCall` интерфейс в нужный поток и `IDebugThreadCall` интерфейс перенаправляет вызов необходимого внедрения. `IDebugThreadCall` Интерфейс приводит сведения о параметрах, переданной в параметрах соответствующего наверх.  
   
- `IDebugThreadCall` Интерфейс представляет собой объект свободных потоков.  
+ `IDebugThreadCall` Интерфейс представляет собой свободнопоточный объект.  
   
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IDebugThreadCall` интерфейс предоставляет следующие методы.  

@@ -1,14 +1,9 @@
 ---
 title: Представление "Сводка" — данные выборки | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method, Summary view
 - Summary view
@@ -16,13 +11,13 @@ ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5e470cee87a2d83f72df369d79ac337fce5412ed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c759922fcd28ce0b686745fc917c02f41762cae4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447166"
 ---
 # <a name="summary-view---sampling-data"></a>Представление "Сводка" — данные выборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51775242"
 В представлении "Сводка" приводится информация о создающих наибольшую нагрузку функциях в ходе сеанса профилирования. Дополнительные сведения, включая описание ссылок на уведомления и списков отчетов, см. в разделе [Представление "Сводка"](../profiling/summary-view.md).  
   
 > [!NOTE]
->  Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Возможности расширенной безопасности в Windows 8 и Windows Server 2012 требовали значительных изменений в способе, которым профилировщик Visual Studio собирает данные на этих платформах. Приложениям для магазина Windows также требуются новые методы сбора. См. раздел [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="timeline-graph"></a>Временная шкала  
  Временная шкала представления "Сводка" показывает загрузку ЦП профилируемым приложением за время профилирования. Временная шкала позволяет фильтровать представление в соответствии с заданным интервалом времени. Дополнительные сведения см. в разделе [Практическое руководство. Фильтрация представлений отчетов на сводной временной шкале](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
@@ -40,7 +35,7 @@ ms.locfileid: "51775242"
   
  **Горячий путь** включает следующие данные для каждой функции:  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Name**|Имя функции.|  
 |**Включающие выборки %**|Процент данных выборки, полученных во время выполнения функции или вызванной ею функции.|  
@@ -53,14 +48,11 @@ ms.locfileid: "51775242"
   
  Раздел **Функции, выполняющие максимальную индивидуальную работу** включает следующие данные по каждой функции:  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Name**|Имя функции.|  
 |**% эксклюзивных выборок**|Процент от всех выборок сеанса профилирования, собранных во время выполнения функцией кода в теле функции. Процент не включает выборки, собранные при выполнении функций, вызванных данной функцией.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Представление "Сводка"](../profiling/summary-view-dotnet-memory-data.md)   
  [Представление "Сводка"](../profiling/summary-view-instrumentation-data.md)
-
-
-

@@ -1,39 +1,34 @@
 ---
-title: 'Часто задаваемые вопросы: Преобразование надстроек в расширения VSPackage | Документация Майкрософт'
-ms.custom: ''
+title: Вопросы и ответы Преобразование надстроек в расширения VSPackage | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2318ff719f51660b4cec0eec6b7a051ea54aa67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bc6ed31f96fc2021d0d9e104692f0440cfb78a5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433742"
 ---
-# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Часто задаваемые вопросы. Преобразование надстроек в расширения VSPackage
+# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Вопросы и ответы Преобразование надстроек в расширения VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Надстройки устарели. Чтобы сделать новое расширение Visual Studio, вам потребуется создать расширение VSIX. Ниже приведены ответы на некоторые часто задаваемые вопросы о конвертировании надстройки Visual Studio с расширением VSIX.  
   
 > [!WARNING]
->  Начиная с Visual Studio 2015 для проектов C# и Visual Basic, можно использовать проект VSIX и добавленных шаблонов элементов для команды меню, окна инструментов и пакетов VSPackage. Дополнительные сведения см. в разделе [новые возможности пакета SDK для Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+> Начиная с Visual Studio 2015 для проектов C# и Visual Basic, можно использовать проект VSIX и добавленных шаблонов элементов для команды меню, окна инструментов и пакетов VSPackage. Дополнительные сведения см. в разделе [новые возможности пакета SDK для Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
   
 > [!IMPORTANT]
->  Во многих случаях можно просто передать код надстройки в проект VSIX с элементом проекта VSPackage. Чтобы получить объект автоматизации DTE, следует вызвать <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> в методе <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+> Во многих случаях можно просто передать код надстройки в проект VSIX с элементом проекта VSPackage. Чтобы получить объект автоматизации DTE, следует вызвать <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> в методе <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
 >   
->  `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
+> `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
 >   
->  Дополнительные сведения см. в разделе [как запустить код надстройки в VSPackage?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) ниже.  
+> Дополнительные сведения см. в разделе [как запустить код надстройки в VSPackage?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) ниже.  
   
 ## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>Какое программное обеспечение требуется для разработки расширений VSIX  
  Начиная с Visual Studio 2015, не следует устанавливать пакет SDK для Visual Studio из центра загрузки. Она будет включена в качестве дополнительного компонента в программе установки Visual Studio. VS SDK также можно установить позже. Дополнительные сведения см. в разделе [установка Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -44,22 +39,22 @@ ms.locfileid: "51817351"
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Можно ли преобразовать проект надстройки в проект VSIX  
  Проект надстройки нельзя преобразовать непосредственно в проект VSIX, так как механизмы, используемые в проектах VSIX не совпадают в таблице в проектах надстроек. Шаблон проекта VSIX, а также шаблоны элементов проекта правой много кода, что позволяет относительно легко создавать и запускать расширения VSIX.  
   
-##  <a name="BKMK_StartDeveloping"></a> Как начать разработку расширений VSIX?  
+## <a name="BKMK_StartDeveloping"></a> Как начать разработку расширений VSIX?  
  Ниже приведен порядок выполнения VSIX с командой меню.  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Чтобы создать расширение VSIX, которое есть команда меню  
   
-1.  Создайте проект VSIX. (**Файл**, **New**, **проекта**, или тип **проекта** в **быстрого запуска** окна). В **новый проект** диалогового окна последовательно раскройте элементы **Visual C# / расширяемости** или **Visual Basic / Extensibility** и выберите **проект VSIX**.) Назовите проект **TestExtension** и укажите его расположение.  
+1. Создайте проект VSIX. (**Файл**, **New**, **проекта**, или тип **проекта** в **быстрого запуска** окна). В **новый проект** диалогового окна последовательно раскройте элементы **Visual C# / расширяемости** или **Visual Basic / Extensibility** и выберите **проект VSIX**.) Назовите проект **TestExtension** и укажите его расположение.  
   
-2.  Добавить **настраиваемой команды** шаблона элемента проекта. (Щелкните правой кнопкой мыши узел проекта в **обозревателе решений** и выберите **добавить / новый элемент**. В **новый проект** диалоговое окно для Visual C# или Visual Basic, выберите **расширяемости** узел и выберите **настраиваемой команды**.)  
+2. Добавить **настраиваемой команды** шаблона элемента проекта. (Щелкните правой кнопкой мыши узел проекта в **обозревателе решений** и выберите **добавить / новый элемент**. В **новый проект** диалоговое окно для Visual C# или Visual Basic, выберите **расширяемости** узел и выберите **настраиваемой команды**.)  
   
-3.  Нажмите клавишу F5, чтобы построить проект и запустить его в режиме отладки.  
+3. Нажмите клавишу F5, чтобы построить проект и запустить его в режиме отладки.  
   
      Откроется второй экземпляр Visual Studio. Он называется экспериментальным экземпляром и может содержать не такие настройки, как экземпляр Visual Studio, используемый для написания кода. При первом запуске экспериментального экземпляра будет выдано предложение зайти в VS Online и определить тему и профиль.  
   
-     На **средства** меню (в экспериментальном экземпляре) вы увидите кнопку с именем **мое имя команды**. При нажатии этой кнопки должно появиться сообщение: **внутри TestVSPackagePackage.MenuItemCallback()**.  
+     На **средства** меню (в экспериментальном экземпляре) вы увидите кнопку с именем **мое имя команды**. При нажатии этой кнопки появляется сообщение: **В TestVSPackagePackage.MenuItemCallback()** .  
   
-##  <a name="BKMK_RunAddin"></a> Как запустить код надстройки в VSPackage?  
+## <a name="BKMK_RunAddin"></a> Как запустить код надстройки в VSPackage?  
  Код надстройки можно запустить одним из двух способов.  
   
 - Путем запуска команды меню (код находится в методе `IDTCommandTarget.Exec`).  
@@ -272,4 +267,3 @@ public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)
     string s = "[Event] Renamed " + oldName + " to " + Path.GetFileName(projItem.get_FileNames(1) + " in project " + projItem.ContainingProject.Name;   
 }  
 ```
-

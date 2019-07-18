@@ -1,7 +1,6 @@
 ---
-title: Команда Evaluate Statement
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: EvaluateStatement
+ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -11,54 +10,39 @@ helpviewer_keywords:
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0be6e57c0c741420006d20c0945b9b8c8b77d51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7eff96d1b413ea10b1274eb7d7938148727acbc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790880"
 ---
 # <a name="evaluate-statement-command"></a>Команда Evaluate Statement
+
 Вычисляет и отображает заданный оператор.
 
 ## <a name="syntax"></a>Синтаксис
 
 ```cmd
-Debug.EvaluateStatement text
+>Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>Аргументы
- `text` Обязательный. Вычисляемый оператор.
 
-## <a name="remarks"></a>Примечания
- Окно, используемое для ввода команды **EvaluateStatement**, определяет, интерпретируется ли знак равенства (=) как оператор сравнения или оператор присваивания.
+`text`
 
- В **командном окне** знак равенства (=) интерпретируется как оператор сравнения. Например, если значения переменных `a` и `b` различаются, то команда
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- возвращает значение `false`.
-
- В окне **интерпретации**, напротив, знак равенства (=) интерпретируется как оператор присваивания. Таким образом, команда
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- присвоит переменной `a` значение переменной `b`.
+Обязательный. Вычисляемый оператор.
 
 ## <a name="example"></a>Пример
 
 ```cmd
->Debug.EvaluateStatement(a+b)
+>Debug.EvaluateStatement args.Length
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команда "Печать"](../../ide/reference/print-command.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)

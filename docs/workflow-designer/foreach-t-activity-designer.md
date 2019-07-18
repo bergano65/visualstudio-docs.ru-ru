@@ -2,21 +2,20 @@
 title: Конструктор рабочих процессов - ForEach&lt;T&gt; конструктора действий
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.ForEach`1.UI
 ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 681a89bd9c31cc4682e3ba7f5b9b0762f0ad8983
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e441898973614b6e3e33fc91d5d9688b51aab7fe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949621"
 ---
 # <a name="foreachlttgt-activity-designer"></a>По каждому элементу&lt;T&gt; конструктора действий
 
@@ -30,11 +29,11 @@ ms.locfileid: "53830314"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Понятное имя действия <xref:System.Activities.Statements.ForEach%601>. Значение по умолчанию — ForEach < Int32\>. Несмотря на то, что значение <xref:System.Activities.Activity.DisplayName%2A> не является обязательным, его все же лучше использовать.|
 |<xref:System.Activities.Statements.ForEach%601.Values%2A>|True|Коллекция элементов для итерации. Чтобы задать <xref:System.Activities.Statements.ForEach%601.Values%2A>, введите выражение Visual Basic в **значения** поле **ForEach < T\>**  действие конструктора или в сетке свойств.|
-|*TypeArgument*|Да|Тип элементов в <xref:System.Activities.Statements.ForEach%601.Values%2A> коллекции, указанной в универсальном параметре *T*. По умолчанию *TypeArgument* присваивается **Int32**. Чтобы изменить тип, измените значение *TypeArgument* поле со списком в сетке свойств.|
+|*TypeArgument*|True|Тип элементов в <xref:System.Activities.Statements.ForEach%601.Values%2A> коллекции, указанной в универсальном параметре *T*. По умолчанию *TypeArgument* присваивается **Int32**. Чтобы изменить тип, измените значение *TypeArgument* поле со списком в сетке свойств.|
 
 По умолчанию именем итератора цикла является **элемент**. Можно изменить имя переменной итератора в конструкторе операций <xref:System.Activities.Statements.ForEach%601>. Цикличный итератор можно использовать в выражениях в дочерних действиях действия <xref:System.Activities.Statements.ForEach%601>.
 
 ## <a name="see-also"></a>См. также
 
-- [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)
+- [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [Поток управления](../workflow-designer/control-flow-activity-designers.md)

@@ -1,14 +1,9 @@
 ---
 title: Устранение неполадок, связанных с нацеливанием платформы .NET Framework | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: troubleshooting
 f1_keywords:
 - vs.FrameworkTargetingErrors
 - MSBuild.ResolveAssemblyReference.FailedToResolveReferenceBecausePrimaryAssemblyInExclusionList
@@ -22,18 +17,17 @@ ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: acadd858a1327380fc606bed36994ba0dda47169
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ae55e34f929acca6c708dfc39477f3bd6546f53f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280557"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703786"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Устранение неполадок, связанных с настройкой для определенных версий платформы .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 В этом разделе описаны ошибки MSBuild, которые могут возникнуть из-за проблем со ссылками, и методы устранения этих ошибок.  
   
 ## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Вы используете ссылку на проект или сборку, которая нацелена на другую версию .NET Framework  
@@ -60,13 +54,10 @@ ms.locfileid: "49280557"
 ```  
   
 > [!NOTE]
->  После этого закройте проект, повторно откройте и перестройте его, чтобы все ссылки наверняка разрешились правильно.  
+> После этого закройте проект, повторно откройте и перестройте его, чтобы все ссылки наверняка разрешились правильно.  
   
 ## <a name="see-also"></a>См. также  
- [How to: Target a Version of the .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  (Практическое руководство. Нацеливание на определенную версию .NET Framework)  
- [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)  (Профиль клиента .NET Framework)  
+ [Практическое руководство. Определение целевой версии платформы .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)  (Профиль клиента .NET Framework)  
  [Targeting a Specific .NET Framework Version](../ide/targeting-a-specific-dotnet-framework-version.md)  (Нацеливание на определенную версию .NET Framework)  
  [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

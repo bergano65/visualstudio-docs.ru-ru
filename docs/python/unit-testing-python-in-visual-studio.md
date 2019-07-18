@@ -2,21 +2,20 @@
 title: Модульное тестирование кода Python
 description: Настройте модульное тестирование кода Python в Visual Studio и воспользуйтесь всеми преимуществами функций обнаружения, выполнения и отладки тестов в обозревателе тестов.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5f808314639c72f530e64c4ccac08c49439c6818
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e16612287d1efa76b206de50c6af9f18edab7c8a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002930"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Настройка модульного тестирования для кода Python
 
@@ -25,10 +24,6 @@ ms.locfileid: "53858283"
 В Python модульное тестирование широко используется для проверки скриптов в процессе разработки. Поддержка Python в Visual Studio включает обнаружение, выполнение и отладку модульных тестов непосредственно в контексте процесса разработки, а значит, вам не потребуется выполнять эти тесты отдельно.
 
 Эта статья содержит краткий обзор модульного тестирования в Visual Studio для Python. Общие сведения о модульном тестировании см. в статье о [модульном тестировании кода](../test/unit-test-your-code.md).
-
-|   |   |
-|---|---|
-| ![значок кинокамеры для видео](../install/media/video-icon.png "Просмотреть видео") | [Просмотрите видео (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) о модульном тестировании (2 мин 31 с). |
 
 ## <a name="discover-and-view-tests"></a>Обнаружение и просмотр тестов
 
@@ -91,7 +86,7 @@ ms.locfileid: "53858283"
 
 ![Отладка теста](media/unit-test-debugging.png)
 
-Вы также можете использовать команды **Анализ покрытия кода для выбранных тестов** и **Профилировать тест**, если их поддерживает используемая версия Visual Studio (см. раздел [Матрица возможностей](overview-of-python-tools-for-visual-studio.md#features-matrix)).
+Вы также можете использовать команды **Анализ покрытия кода для выбранных тестов** и **Профилировать тест**.
 
 ### <a name="known-issues"></a>Известные проблемы
 

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - coauthoring, in Excel
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62e73362a04d334027075d5c1fea9cc4c0b5d3bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978189"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Сведения о совместной работе над книгой и Add-ins
 
@@ -26,4 +26,4 @@ ms.locfileid: "53871074"
 Примечание. Соавторство для Windows Desktop Excel была введена в 2017 г. и сейчас доступна для подписчиков Office 365. Пользователи, которые приобрели бессрочную лицензию для Office 2016 или более ранней версии в настоящее время нет доступа к компоненту совместного редактирования. (Excel Online, Excel для Android, Excel для iOS и Excel Mobile в Windows Store также поддерживает совместного редактирования).
 
 ## <a name="see-also"></a>См. также
-[Решения Excel](./excel-solutions.md)
+- [Решения Excel](./excel-solutions.md)

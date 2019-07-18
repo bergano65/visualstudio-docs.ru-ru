@@ -1,14 +1,9 @@
 ---
 title: Задача CallTarget | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fc3c5822732a4ae584500bfe1c48d7ba9e29b038
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9093b35cc444fc0b346f81a91d20afe73bd476cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307681"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667590"
 ---
 # <a name="calltarget-task"></a>Задача CallTarget
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Вызывает указанные целевые объекты в файле проекта.  
   
 ## <a name="task-parameters"></a>Параметры задачи  
@@ -70,9 +64,6 @@ ms.locfileid: "49307681"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Целевые объекты](../msbuild/msbuild-targets.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Свойства элементов на UML схемы последовательностей | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.sequencediagram.combinedfragment.properties
 - vs.teamarch.sequencediagram.shapes.properties
@@ -17,13 +14,13 @@ ms.assetid: 475c10f3-a2d2-4a1e-b366-dc28997d437e
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 01d63e39967df361d87ff0182b1c85b6ecd2fdb6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6008566f71a241fb5daccab8d6a5dcb68882452
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444402"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>Свойства элементов на схемах последовательностей UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +28,14 @@ ms.locfileid: "51793903"
 На схеме последовательностей UML каждый элемент имеет свойства. Чтобы просмотреть свойства элемента, щелкните правой кнопкой мыши элемент на схеме или в **Обозреватель моделей UML** и нажмите кнопку **свойства**. Свойства отображаются в **свойства** окна.  
   
 > [!NOTE]
->  В этом разделе описываются свойства элементов на схемах последовательностей UML. Дополнительные сведения о чтении UML-схемы последовательностей, см. в разделе [схемы последовательностей UML: Справочник по](../modeling/uml-sequence-diagrams-reference.md). Подробнее о рисовании схем последовательностей UML см. в разделе [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).  
+> В этом разделе описываются свойства элементов на схемах последовательностей UML. Дополнительные сведения о чтении UML-схемы последовательностей, см. в разделе [UML-схемы последовательностей: ](../modeling/uml-sequence-diagrams-reference.md) (Создание проектов и схем моделирования UML). Дополнительные сведения о рисовании схем последовательностей UML см. в разделе [UML-схемы последовательностей: Рекомендации по](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Свойства элементов  
   
-|Свойство|По умолчанию|Элемент|Описание:|  
+|Свойство|Значение по умолчанию|Элемент|Описание|  
 |--------------|-------------|-------------|-----------------|  
 |**Name**|Имя по умолчанию|Все|Идентифицирует элемент.|  
-|**Полное имя**|Пакет :: Имя|Все|Уникально идентифицирует элемент. Перед именем элемента указывается полное имя пакета, содержащего его.|  
+|**Полное имя**|Пакет:: name|Все|Уникально идентифицирует элемент. Перед именем элемента указывается полное имя пакета, содержащего его.|  
 |**Рабочие элементы**|0 связанных|Все|Число рабочих элементов, связанных с этим элементом. Чтобы связать рабочие элементы, см. в разделе [связывание элементов модели и рабочими элементами](../modeling/link-model-elements-and-work-items.md).|  
 |**Описание**|(пусто)|Все|Здесь можно делать общие заметки об элементе.|  
 |**Цвет**|(по умолчанию для типа элемента)|Линия жизни, сообщение|Цвет фигуры. Это свойство фигуры, а не отображаемый ею элемент.|  
@@ -55,8 +52,5 @@ ms.locfileid: "51793903"
   
 ## <a name="see-also"></a>См. также  
  [Схемы последовательностей UML: Справочник по](../modeling/uml-sequence-diagrams-reference.md)   
- [UML-схемы последовательностей: рекомендации](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [Схемы последовательностей UML: Рекомендации](../modeling/uml-sequence-diagrams-guidelines.md)   
  [Описание потока управления с использованием фрагментов на схемах последовательностей UML](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md)
-
-
-

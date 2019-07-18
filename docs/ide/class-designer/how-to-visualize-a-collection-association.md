@@ -1,7 +1,6 @@
 ---
 title: Как выполнить Визуализация ассоциации коллекции (конструктор классов)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acf1fd75770888f492833235f09a381d0836be34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09c23b59711a95f0729555acfd0203160bd9995d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975077"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Как выполнить Визуализация ассоциации коллекции в конструкторе классов
 
@@ -29,11 +28,11 @@ ms.locfileid: "53925398"
 
 ## <a name="to-create-a-collection-association"></a>Создание ассоциации набора
 
-1.  В коде создайте свойство или поле, тип которого является строго типизированным набором.
+1. В коде создайте свойство или поле, тип которого является строго типизированным набором.
 
-2.  В схеме классов разверните класс так, чтобы отображались свойства и поля.
+2. В схеме классов разверните класс так, чтобы отображались свойства и поля.
 
-3.  В классе щелкните правой кнопкой мыши поле или свойство и выберите **Показывать как ассоциацию наборов**.
+3. В классе щелкните правой кнопкой мыши поле или свойство и выберите **Показывать как ассоциацию наборов**.
 
 Свойство или поле отображается в виде линии ассоциации, связанной с собранным типом.
 

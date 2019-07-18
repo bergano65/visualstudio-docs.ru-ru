@@ -1,30 +1,29 @@
 ---
 title: Руководство по проектам и решениям (C#)
 ms.date: 12/12/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba7bb7452fd86da4ab449c61c41dc27c865070c3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 652c9480103b902a40635661f597768980244035
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971047"
 ---
-# <a name="learn-about-projects-and-solutions-using-c"></a>Сведения создании проектов и решений на C#
+# <a name="learn-about-projects-and-solutions-using-c"></a>Сведения создании проектов и решений на C\#
 
 В этой вводной статье мы изучим, что означает создание *решения* и *проекта* в Visual Studio. Решение — это контейнер, который используется для упорядочения одного или нескольких связанных проектов, например проекта библиотеки классов и соответствующего тестового проекта. Мы рассмотрим свойства проекта, а также некоторые файлы, которые он может содержать. Мы также создадим ссылку из одного проекта в другой.
 
 > [!TIP]
-> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
 
 В качестве упражнения мы создадим решение и проект с нуля, чтобы понять концепцию проекта. В повседневной работе с Visual Studio вы, скорее всего, будете использовать для создания проекта различные *шаблоны*, доступные в Visual Studio.
 
@@ -39,9 +38,11 @@ ms.locfileid: "53738995"
 
 Обучение мы начнем с создания пустого решения. Когда вы научитесь работать в Visual Studio, скорее всего, создавать пустые решения вам потребуется не слишком часто. При создании проекта в среде Visual Studio она автоматически создает решение для размещения проекта, если никакое решение еще не открыто.
 
+::: moniker range="vs-2017"
+
 1. Запустите Visual Studio.
 
-1. В строке меню, где расположены разделы **Файл** и **Изменить**, выберите **Файл** > **Создать** > **Проект**.
+1. В верхней строке меню выберите **Файл** > **Создать** > **Проект**.
 
    Откроется диалоговое окно **Новый проект** .
 
@@ -50,6 +51,22 @@ ms.locfileid: "53738995"
    ![Шаблон пустого решения в Visual Studio](../media/tutorial-projects-new-solution.png)
 
    **Начальная страница** закрывается, а решение отображается в **обозревателе решений** в правой части окна Visual Studio. Вероятнее всего, вы довольно часто будете использовать **обозреватель решений** для просмотра содержимого проектов.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Запустите Visual Studio.
+
+2. На начальном экране выберите **Создать проект**.
+
+3. На странице **Создание нового проекта** введите **пустое решение** в поле поиска, выберите шаблон **Пустое решение** и нажмите **Далее**.
+
+4. Присвойте решению имя **QuickSolution** и щелкните **Создать**.
+
+   Решение отобразится в **обозревателе решений** в правой части окна Visual Studio. Вероятнее всего, вы довольно часто будете использовать **обозреватель решений** для просмотра содержимого проектов.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Добавление проекта
 

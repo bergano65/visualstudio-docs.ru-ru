@@ -1,14 +1,9 @@
 ---
 title: Условные конструкции MSBuild | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -27,18 +22,17 @@ ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc84f8ec612ff602a615f27489bce617b5b7009a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b7b22f63d5d3d6e0b1f7789561029bbfbfb4cdf4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264151"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667515"
 ---
 # <a name="msbuild-conditional-constructs"></a>Условные конструкции MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] предоставляет механизм для обработки условий "либо-либо" с помощью элементов [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) и [Otherwise](../msbuild/otherwise-element-msbuild.md).  
   
 ## <a name="using-the-choose-element"></a>Использование элемента Choose  
@@ -85,11 +79,8 @@ ms.locfileid: "49264151"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Элемент Choose (MSBuild)](../msbuild/choose-element-msbuild.md)   
  [Элемент When (MSBuild)](../msbuild/when-element-msbuild.md)   
  [Элемент Otherwise (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
-
-
-

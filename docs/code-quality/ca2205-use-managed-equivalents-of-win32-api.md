@@ -1,7 +1,6 @@
 ---
 title: CA2205. Используйте управляемые эквиваленты Win32 API
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - UseManagedEquivalentsOfWin32Api
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 1c65ab59-3e50-4488-a727-3969c7f6cbe4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0b43d328dc122a60d2c397cc59e39426e4c4f4c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99d53296ad72aef1910a39299be64c7cb03dd49a
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860745"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714715"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205. Используйте управляемые эквиваленты Win32 API
 
@@ -36,7 +35,7 @@ ms.locfileid: "53860745"
 
 ## <a name="cause"></a>Причина
 
-Неуправляемого определен метод, и существует метод с эквивалентной функциональностью в библиотеке классов .NET Framework.
+Неуправляемого определен метод, и существует метод с эквивалентной функциональностью в .NET.
 
 ## <a name="rule-description"></a>Описание правила
 
@@ -62,5 +61,5 @@ ms.locfileid: "53860745"
 - [CA1404: Вызывайте GetLastError сразу после P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
 - [CA1060: Переместите P/Invokes в класс NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 - [CA1400: Должны существовать точки входа P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
-- [CA1401: МЕТОДЫ P/Invoke не должны быть видимыми](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+- [CA1401: P/Invoke не должны быть видимыми](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 - [CA2101: Укажите тип маршалинга для строковых аргументов P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

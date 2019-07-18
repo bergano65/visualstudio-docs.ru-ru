@@ -13,15 +13,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2606304ba68530c7ec893dae9cbb4954cae33112
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850409"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Ошибка: Веб-сервер настроен неправильно
 
@@ -44,9 +44,9 @@ ms.locfileid: "53887494"
 4. (IIS) Убедитесь, что на сервере установлена необходимая версия ASP.NET.
 
     Несовпадение версий ASP.NET в IIS и в своем проекте Visual Studio может вызвать эту проблему. Может потребоваться задать версию платформы в файле web.config. Чтобы установить ASP.NET на IIS, используйте [установщика веб-платформы (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Кроме того, см. в разделе [IIS 8.0 с ASP.NET 3.5 и ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) или для ASP.NET Core, [узла в Windows со службами IIS](https://docs.asp.net/en/latest/publishing/iis.html).
-  
+
 4. Если `maxConnection` ограничение в службах IIS, слишком низкое и у вас слишком много подключений, может потребоваться [увеличить лимит подключений](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
-  
-## <a name="see-also"></a>См. также раздел  
- [Удаленная отладка ASP.NET на удаленном компьютере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
- [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+
+## <a name="see-also"></a>См. также
+- [Удаленная отладка ASP.NET на удаленном компьютере IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+- [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

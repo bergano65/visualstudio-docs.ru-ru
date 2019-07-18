@@ -1,16 +1,16 @@
 ---
 title: Действия при сборке
 description: В этой статье описываются различные действия сборки, которые могут использоваться для проектов C#
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 16617f8de15fbef40941c4f9409497da142c9e8a
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 54e341b4e5961623f41963bb90c2e5d60b110cf4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001182"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691200"
 ---
 # <a name="build-actions"></a>Действия при сборке
 

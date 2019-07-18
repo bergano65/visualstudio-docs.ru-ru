@@ -2,7 +2,6 @@
 title: Интерфейсы активных скриптов Profiler | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8532c5f7c490237994332e38b8f6fe97a8235bad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: eeadf0de5563a4882c067960559414167e729173
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422237"
 ---
 # <a name="active-script-profiler-interfaces"></a>Интерфейсы профилировщика активных скриптов
 Интерфейсы Profiler активных скриптов позволяют получать события профилирования [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ядра.  
@@ -48,9 +47,9 @@ ms.locfileid: "49832814"
 - [Константы, перечисления и структуры профилировщика активных скриптов](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
->  Интерфейсы Profiler Active скрипт сначала были выпущены с Internet Explorer 8. `IActiveScriptProfilerControl2` И `IActiveScriptProfilerCallback2` интерфейсы сначала были выпущены с Internet Explorer 9. [Интерфейс IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [интерфейс IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md), и [интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) интерфейсы выпущен с Internet Explorer 10. [Интерфейс IActiveScriptProfilerControl5](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) был впервые выпущен в Internet Explorer 11.  
+> Интерфейсы Profiler Active скрипт сначала были выпущены с Internet Explorer 8. `IActiveScriptProfilerControl2` И `IActiveScriptProfilerCallback2` интерфейсы сначала были выпущены с Internet Explorer 9. [Интерфейс IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [интерфейс IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md), и [интерфейс IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) интерфейсы выпущен с Internet Explorer 10. [Интерфейс IActiveScriptProfilerControl5](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) был впервые выпущен в Internet Explorer 11.  
 >   
->  В Internet Explorer 8 и Internet Explorer 9, только [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] язык использует эти интерфейсы для поддержки профилирования скрипта.  
+> В Internet Explorer 8 и Internet Explorer 9, только [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] язык использует эти интерфейсы для поддержки профилирования скрипта.  
   
 ## <a name="see-also"></a>См. также  
  [Справочник по интерфейсам скриптов Windows](../../winscript/reference/windows-script-interfaces-reference.md)

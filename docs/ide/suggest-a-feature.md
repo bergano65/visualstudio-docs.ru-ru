@@ -2,19 +2,18 @@
 title: Предложение функции
 description: Из этой статьи вы узнаете, что такое предложения в сообществе разработчиков, как предложить функцию и как корпорация Майкрософт использует предложения в стратегии развития Visual Studio
 ms.date: 12/17/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60fce2b9fb14ffcb0975b91991595d1a4a429cb2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951107"
 ---
 # <a name="overview-suggest-a-feature"></a>Общие сведения: Предложение функции
 
@@ -130,4 +129,4 @@ ms.locfileid: "53910585"
 
 ## <a name="see-also"></a>См. также
 
-- [Вводная информация по механизму "Предложить функцию" в сообществе разработчиков (блог по Visual Studio)](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)
+- [Вводная информация по механизму "Предложить функцию" в сообществе разработчиков (блог по Visual Studio)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

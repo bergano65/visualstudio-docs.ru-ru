@@ -1,14 +1,9 @@
 ---
 title: QUERYCHANGESFUNC | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - QUERYCHANGESFUNC
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b9a0bbf3c26f797ec1bbf67ad8439e5f5ba05b11
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42f901fa31b3b682c7e19c98f5707adb3b4fb3f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193851"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +46,13 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>Возвращаемое значение  
  Интегрированная среда разработки возвращает код соответствующее сообщение об ошибке:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Продолжайте обработку.|  
 |SCC_I_OPERATIONCANCELED|Остановите обработку.|  
 |SCC_E_xxx|Любой соответствующее сообщение об ошибке SCC следует остановить обработку.|  
   
-##  <a name="LinkQUERYCHANGESDATA"></a> Структура QUERYCHANGESDATA  
+## <a name="LinkQUERYCHANGESDATA"></a> Структура QUERYCHANGESDATA  
  Структуры, переданной в для каждого файла выглядит следующим образом:  
   
 ```cpp#  
@@ -89,7 +84,7 @@ struct QUERYCHANGESDATA_W
  dwChangeType  
  Код, указывающий состояние файла:  
   
-|Код|Описание:|  
+|Код|Описание|  
 |----------|-----------------|  
 |`SCC_CHANGE_UNKNOWN`|Не удается определить, какие изменения были внесены.|  
 |`SCC_CHANGE_UNCHANGED`|Имя этого файла не изменены.|  
@@ -109,4 +104,3 @@ struct QUERYCHANGESDATA_W
  [Функции обратного вызова, реализованные интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)   
  [Коды ошибок](../extensibility/error-codes.md)
-

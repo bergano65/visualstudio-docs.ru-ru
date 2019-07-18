@@ -1,14 +1,9 @@
 ---
 title: Практическое руководство. Поиск разделов в указателе | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Index tab [Help Viewer 2.0]
 - Help Viewer 2.0, using the index
@@ -20,13 +15,13 @@ ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50c19fdaeaf9842c91e5dd7e9ca1472355b1b3e0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 67eb54d06297458915edfe34718948b085c6e86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416835"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Практическое руководство. Поиск разделов в указателе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,14 +37,11 @@ ms.locfileid: "49815989"
       С помощью кнопки фильтра в верхней части вкладки можно отображать либо все записи, содержащие указанный текст, либо только те записи, которые начинаются с указанного текста.  
   
      > [!NOTE]
-     >  Когда кнопка фильтра отображается на более темном фоне с границей, записи должны содержать указанный текст. Если фон и граница не отображаются, записи должны начинаться с указанного текста.  
+     > Когда кнопка фильтра отображается на более темном фоне с границей, записи должны содержать указанный текст. Если фон и граница не отображаются, записи должны начинаться с указанного текста.  
   
    - Прокрутите указатель и выберите ключевое слово.  
   
      Если указанное ключевое слово связано только с одним разделом, отображается этот раздел. В противном случае отображается список всех разделов, связанных с этим ключевым словом.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Советы по поиску в указателе](../ide/index-search-tips.md)
-
-
-

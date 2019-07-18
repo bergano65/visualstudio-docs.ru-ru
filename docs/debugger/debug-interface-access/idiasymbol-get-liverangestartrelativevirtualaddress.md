@@ -9,45 +9,46 @@ helpviewer_keywords:
 ms.assetid: 1da52539-9872-4c20-8eaa-74b6cb5f3b02
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ccc2fb2bb6c998ed73bf2d834c28cb34babbafa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 338775a2c36415d471d0d59176ce38f6df1827bb
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837866"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64806862"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-Возвращает начало диапазона адресов, в котором локальный символ является допустимой.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_liveRangeStartRelativeVirtualAddress (   
-   DWORD* address  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `address`  
- [out] Возвращает дату начала диапазона адресов.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращается относительный виртуальный адрес — это начало диапазона, в котором символ является допустимой.  
-  
+Возвращает начало диапазона адресов, в котором локальный символ является допустимой.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_liveRangeStartRelativeVirtualAddress ( 
+   DWORD* address
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `address`
+
+[out] Возвращает дату начала диапазона адресов.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки. Возвращается относительный виртуальный адрес — это начало диапазона, в котором символ является допустимой.
+
 > [!NOTE]
->  Возвращен код ошибки означает, что символ не имеет сведения о динамической диапазона.  
-  
-## <a name="remarks"></a>Примечания  
-  
-## <a name="requirements"></a>Требования  
- Заголовок: dia2.h  
-  
- Библиотека: diaguids.lib  
-  
- Библиотеки DLL: msdia100.dll  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Возвращен код ошибки означает, что символ не имеет сведения о динамической диапазона.
+
+## <a name="remarks"></a>Примечания
+
+## <a name="requirements"></a>Требования
+ Заголовок: dia2.h
+
+ Библиотека: diaguids.lib
+
+ DLL: msdia100.dll
+
+## <a name="see-also"></a>См. также
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

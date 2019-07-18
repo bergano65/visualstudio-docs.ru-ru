@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Исключение и включение малых функций при инструментировании | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Исключение и включение малых функций при инструментировании | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, instrument events
 - profiling tools, include short functions
@@ -17,13 +12,13 @@ ms.assetid: eaeead79-aafe-4490-86ff-6ed4cad9c15f
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bd17b5c383736f2c11977e117ee59a1a6fa9e571
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c8bb49e650f2395bac8a3b5eb1d0f52e2e168731
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146107"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Практическое руководство. Исключение и включение малых функций при инструментировании
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,23 +27,20 @@ ms.locfileid: "51742543"
   
 ### <a name="to-exclude-or-include-short-functions-from-instrumentation"></a>Исключение и включение малых функций при инструментировании  
   
-1.  В **обозревателе производительности** выберите **Сеанс производительности**, а затем щелкните его правой кнопкой мыши и выберите **Свойства**.  
+1. В **обозревателе производительности** выберите **Сеанс производительности**, а затем щелкните его правой кнопкой мыши и выберите **Свойства**.  
   
      Откроется диалоговое окно **Страницы свойств**.  
   
-2.  В окне **Страницы свойств** щелкните свойства **Инструментирование**.  
+2. В окне **Страницы свойств** щелкните свойства **Инструментирование**.  
   
-3.  Чтобы исключить малые функции из инструментирования, выберите **Исключить малые функции из инструментирования**. Этот параметр используется по умолчанию.  
+3. Чтобы исключить малые функции из инструментирования, выберите **Исключить малые функции из инструментирования**. Этот параметр используется по умолчанию.  
   
-     - или -  
+     -или-  
   
      Чтобы включить малые функции в инструментирование, выберите **Включить малые функции в инструментирование**.  
   
-4.  Нажмите кнопку **ОК**.  
+4. Нажмите кнопку **ОК**.  
   
 ## <a name="see-also"></a>См. также  
  [Управление сбором данных](../profiling/controlling-data-collection.md)   
  [Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)
-
-
-

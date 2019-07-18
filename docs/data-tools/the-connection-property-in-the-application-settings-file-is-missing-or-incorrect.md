@@ -5,16 +5,15 @@ ms.topic: reference
 ms.assetid: 77724510-ff59-4d43-b933-a0434e1ac597
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bdaf4abfa1c1e931328466cc4fb4c525b47310b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: becbc5032c05af1edf5361a54fd0a80b4a0ff412
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935324"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458306"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Свойство подключения в файле параметров приложения отсутствует или неверно
 
@@ -26,5 +25,4 @@ ms.locfileid: "53935324"
 
 ## <a name="see-also"></a>См. также
 
-- [Сообщения реляционного конструктора объектов](../data-tools/o-r-designer-messages.md)
 - [Средства LINQ to SQL в Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

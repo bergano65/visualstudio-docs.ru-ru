@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cfbd259eb4363041988a7682f0e5ce601c3917cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949948"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Как выполнить Выбор активного параметра запуска для нагрузочного теста
 
@@ -33,11 +32,11 @@ ms.locfileid: "53914505"
 
 ## <a name="select-the-active-run-setting"></a>Выбор активных параметров запуска
 
-1.  Откройте нагрузочный тест.
+1. Откройте нагрузочный тест.
 
-2.  Разверните папку **Параметры запуска**.
+2. Разверните папку **Параметры запуска**.
 
-3.  Щелкните правой кнопкой мыши узел параметров, который нужно сделать активным, и нажмите кнопку **Установить как активный**.
+3. Щелкните правой кнопкой мыши узел параметров, который нужно сделать активным, и нажмите кнопку **Установить как активный**.
 
      В **редакторе тестовой нагрузки** соответствующему узлу параметров запуска присваивается суффикс "[Active]".
 

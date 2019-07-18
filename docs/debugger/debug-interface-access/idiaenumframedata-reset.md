@@ -9,27 +9,27 @@ helpviewer_keywords:
 ms.assetid: 2242165b-096b-4345-b214-4a8941dc5ba5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d1060a1efd9feef6906a299da32d1cf8351dff5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: a92742d1c3286aa8e6fd3bc97254066fab25a55c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833636"
 ---
 # <a name="idiaenumframedatareset"></a>IDiaEnumFrameData::Reset
-Сбрасывает последовательность перечислений в начало.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```  
-HRESULT Reset();  
-```  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK`.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+Сбрасывает последовательность перечислений в начало.
+
+## <a name="syntax"></a>Синтаксис
+
+```
+HRESULT Reset();
+```
+
+## <a name="return-value"></a>Возвращаемое значение
+ Возвращает `S_OK`.
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

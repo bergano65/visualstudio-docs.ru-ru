@@ -9,34 +9,35 @@ helpviewer_keywords:
 ms.assetid: 57deb50a-9c22-43ea-a80c-eab205997bc4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f799e543cfe5c94fb9f17d9a1e994e7fc3a68ab9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 15ebc8296bdf78515b31d38a7543a4f41db84664
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838250"
 ---
 # <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
-Извлекает перечислитель единиц компиляции, номера строки, ссылающиеся на этот файл.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_compilands (   
-   IDiaEnumSymbols** ppRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `ppRetVal`  
- [out] Возвращает [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) , содержащий список всех компилируемых объектах, которые имеют номера строк, ссылающихся на этот файл.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Извлекает перечислитель единиц компиляции, номера строки, ссылающиеся на этот файл.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_compilands ( 
+   IDiaEnumSymbols** ppRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `ppRetVal`
+
+[out] Возвращает [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) , содержащий список всех компилируемых объектах, которые имеют номера строк, ссылающихся на этот файл.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

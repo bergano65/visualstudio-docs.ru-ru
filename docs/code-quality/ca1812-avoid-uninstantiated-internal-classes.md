@@ -1,7 +1,6 @@
 ---
 title: CA1812. Избегайте неиспользуемых внутренних классов
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 05/16/2019
 ms.topic: reference
 f1_keywords:
 - CA1812
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1bb92a42-322a-44cc-98a8-8858212c1e1f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f69e3179ffc61faca2706436444a741a238aa73
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836667"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744700"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812. Избегайте неиспользуемых внутренних классов
 
@@ -33,7 +32,7 @@ ms.locfileid: "53836667"
 
 ## <a name="cause"></a>Причина
 
-Экземпляр типа уровня сборки не создается кодом в сборке.
+Никогда не инициализируется во внутренний тип (на уровне сборки).
 
 ## <a name="rule-description"></a>Описание правила
 
@@ -51,19 +50,17 @@ ms.locfileid: "53836667"
 
 - Типы массивов, определяемые компилятором
 
-- Типы, не может быть создан и определяют `static` (`Shared` в Visual Basic) только для методов.
+- Типы, не может быть создан, и только определяют [ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` в Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) методы.
 
-Если применить <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> к сборке, который анализируется, это правило не будет выполняться на каких-либо конструкторов, которые помечены как `internal` , так как невозможно определить, используется ли поле в другом `friend` сборки.
-
-Несмотря на то, что не может обойти это ограничение в анализе кода Visual Studio, внешний инструмент FxCop автономного возникнет во внутренних конструкторах, если каждый `friend` сборка имеется в анализе.
+Если применить <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> к сборке, который анализируется, это правило не пометит типы, помеченные как [ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` в Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)) потому, что поле может относиться к используемые дружественной сборки.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, удалите тип или добавьте код, который его использует. Если тип содержит только статические методы, добавьте один из следующих к типу, чтобы запретить компилятору выполнять выпуска конструктор открытого экземпляра по умолчанию:
+Чтобы устранить нарушение этого правила, удалите тип или добавьте код, который его использует. Если тип содержит только `static` методы, добавьте один из следующих к типу, чтобы запретить компилятору выполнять выпуска конструктор открытого экземпляра по умолчанию:
+
+- `static` Модификатор для C# типов, предназначенных для .NET Framework 2.0 или более поздней версии.
 
 - Закрытый конструктор для типов, предназначенных для .NET Framework версий 1.0 и 1.1.
-
-- `static` (`Shared` В Visual Basic) модификатор для типов, предназначенных [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 
@@ -71,9 +68,9 @@ ms.locfileid: "53836667"
 
 - Класс создается через методы отражения с поздним связыванием, такие как <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
-- Класс создается автоматически средой выполнения или [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Например, классы, реализующие <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> или <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Класс создается автоматически средой выполнения или ASP.NET. Некоторые примеры автоматически созданных классов: те, которые реализуют <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> или <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
-- Класс передается в качестве параметра универсального типа, имеющего нового ограничения. Например следующий пример вызывает это правило.
+- Класс передается в качестве параметра типа, имеющего [ `new` ограничение](/dotnet/csharp/language-reference/keywords/new-constraint). Следующий пример будут помечены правилом CA1812:
 
     ```csharp
     internal class MyClass
@@ -89,17 +86,13 @@ ms.locfileid: "53836667"
             return new T();
         }
     }
-    // [...]
+
     MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
     mc.Create();
     ```
 
-  В таких случаях мы рекомендуем отключить это предупреждение.
-
 ## <a name="related-rules"></a>Связанные правила
 
-[CA1811: Не используйте Невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)
-
-[CA1801: Проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)
-
-[CA1804: Удалите неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811: Не используйте Невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801: Проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804: Удалите неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)

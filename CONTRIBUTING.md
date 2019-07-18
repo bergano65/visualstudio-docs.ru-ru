@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419847"
+---
 # <a name="contribute-to-visual-studio-documentation"></a>Участие в создании документации по Visual Studio
 
 Благодарим вас за участие в создании документации по Visual Studio.
@@ -25,3 +33,7 @@
 ### <a name="larger-edits"></a>Крупные изменения
 
 Просмотрите руководство по [запросам на вытягивание](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing) в руководстве для участников.
+
+**ПРИМЕЧАНИЕ**.
+
+Мы не работаем с файлами в папке `docs/vs-2015`, так как они предназначены для Visual Studio 2015, более старой версии нашего продукта. Мы не принимаем запросы на вытягивание для простых изменений в этих файлах.

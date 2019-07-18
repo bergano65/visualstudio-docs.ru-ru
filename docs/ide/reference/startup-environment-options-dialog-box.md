@@ -1,26 +1,36 @@
 ---
 title: Начальная страница, папка «Среда», диалоговое окно «Параметры»
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Startup
 ms.assetid: 9d517203-3c62-4660-b7b4-ea7d032dcb1e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e970655f37b02d588064ac57c5dea30bf5b1214e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 27f67c00173db998b32d0a012af55428b87d1eda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950912"
 ---
-# <a name="startup-environment-options-dialog-box"></a>Начальная страница, папка «Среда», диалоговое окно «Параметры»
-Эта страница служит для настройки начальной страницы Visual Studio или для задания другого действия по умолчанию, выполняющегося при запуске Visual Studio. Дополнительные сведения см. в разделе [Настройка начальной страницы](../../ide/customizing-the-start-page-for-visual-studio.md).
+# <a name="options-dialog-box-environment--startup"></a>Диалоговое окно "Параметры": Страница "Запуск" \> папка "Среда"
 
-## <a name="see-also"></a>См. также раздел
+::: moniker range="vs-2017"
+
+Эта страница служит для настройки начальной страницы Visual Studio или для задания другого действия по умолчанию, выполняющегося при запуске Visual Studio. Дополнительные сведения см. в статье [Настройка запуска](../../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+На этой странице можно задать другое действие по умолчанию, выполняющееся при запуске Visual Studio. В списке **При запуске открыть** вы можете выбрать **окно запуска** (в котором можно открыть новый или существующий проект), **последние решения** или **пустую среду**.
+
+::: moniker-end
+
+## <a name="see-also"></a>См. также
 
 - [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

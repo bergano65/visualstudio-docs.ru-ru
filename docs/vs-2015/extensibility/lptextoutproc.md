@@ -1,14 +1,9 @@
 ---
 title: LPTEXTOUTPROC | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 28a48c0d2dbc89295d6c1f8e900ce6219e2c9313
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f14942ffd59ce2c6eacf7da2d0d1ab252d58e2cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194450"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,21 +47,21 @@ typedef LONG (*LPTEXTOUTPROC) (
  mesg_type  
  Тип сообщения. В следующей таблице перечислены поддерживаемые значения для этого параметра.  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Сообщение считается сведения, предупреждение или ошибка.|  
 |`SCC_MSG_STATUS`|Сообщение отображается состояние и могут отображаться в строке состояния.|  
 |`SCC_MSG_DOCANCEL`|Отправить строки без сообщения.|  
 |`SCC_MSG_STARTCANCEL`|Начинается отображение **отменить** кнопки.|  
 |`SCC_MSG_STOPCANCEL`|Останавливает отображение **отменить** кнопки.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Запрашивает интегрированной среды разработки, если фоновая операция — отменить: возвращает IDE `SCC_MSG_RTN_CANCEL` Если операция была отменена; в противном случае возвращает `SCC_MSG_RTN_OK`. `display_string` Приводится параметр [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) структуры, который предоставляется путем подключаемый модуль системы управления версиями.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Запрашивает интегрированной среды разработки, если фоновая операция отменить: Возвращает IDE `SCC_MSG_RTN_CANCEL` Если операция была отменена; в противном случае возвращает `SCC_MSG_RTN_OK`. `display_string` Приводится параметр [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) структуры, который предоставляется путем подключаемый модуль системы управления версиями.|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Среда интегрированной разработки о файле, прежде чем он извлекается из системы управления версиями. `display_string` Приводится параметр [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) структуры, который предоставляется путем подключаемый модуль системы управления версиями.|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Среда интегрированной разработки о файле, после их получения из системы управления версиями. `display_string` Приводится параметр [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) структуры, который предоставляется путем подключаемый модуль системы управления версиями.|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Среда интегрированной разработки текущего состояния фоновой операции. `display_string` Приводится параметр [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) структуры, который предоставляется путем подключаемый модуль системы управления версиями.|  
   
 ## <a name="return-value"></a>Возвращаемое значение  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_MSG_RTN_OK|Строка была отображаться или операция выполнена успешно.|  
 |SCC_MSG_RTN_CANCEL|Пользователю отменить операцию.|  
@@ -76,7 +71,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="structures"></a>Структуры  
   
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
+### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
   
 ```cpp#  
 typedef struct {  
@@ -86,7 +81,7 @@ typedef struct {
   
  Эта структура передается со `SCC_MSG_BACKGROUND_IS_CANCELLED` сообщения. Он используется для обмена данными идентификатор операции фона, который был отменен.  
   
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
+### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -97,7 +92,7 @@ typedef struct {
   
  Эта структура передается со `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` сообщения. Он используется для связи, имя файла будет извлекаться и идентификатор, осуществляющей извлечение фоновой операции.  
   
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
+### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -109,7 +104,7 @@ typedef struct {
   
  Эта структура передается со `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` сообщения. Он используется для обмена данными результат получения указанного файла, а также идентификатор фоновая операция, которую использовали для извлечения. См. в разделе возвращаемые значения для [SccGet](../extensibility/sccget-function.md) для что может быть задан в результате.  
   
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
+### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
  [C++]  
   
 ```  
@@ -147,4 +142,3 @@ LONG SendStatusMessage(
 ## <a name="see-also"></a>См. также  
  [Функции обратного вызова, реализованные интегрированной среды разработки](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)
-

@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Программное создание приглашения на собрание
+title: Практическое руководство. Программное создание приглашения на собрание
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,25 +11,25 @@ helpviewer_keywords:
 - calendars [Office development in Visual Studio], meeting requests
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 339c4c5de89d6ad3000fe721888e292902ddff1c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 62ccf3b170b05e5954bc217f032480ecd1f8a921
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575163"
 ---
-# <a name="how-to-programmatically-create-a-meeting-request"></a>Как выполнить Программное создание приглашения на собрание
-  В этом примере в Microsoft Office Outlook создается приглашение на собрание, которое затем отправляется требуемому участнику.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Пример  
+# <a name="how-to-programmatically-create-a-meeting-request"></a>Практическое руководство. Программное создание приглашения на собрание
+  В этом примере в Microsoft Office Outlook создается приглашение на собрание, которое затем отправляется требуемому участнику.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Пример
  [!code-csharp[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_MeetingRequest/thisaddin.cs#1)]
- [!code-vb[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_MeetingRequest/thisaddin.vb#1)]  
-  
-## <a name="see-also"></a>См. также  
- [Работа с элементами календаря](../vsto/working-with-calendar-items.md)   
- [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [!code-vb[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_MeetingRequest/thisaddin.vb#1)]
+
+## <a name="see-also"></a>См. также
+- [Работа с элементами календаря](../vsto/working-with-calendar-items.md)
+- [Приступить к программированию надстроек VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

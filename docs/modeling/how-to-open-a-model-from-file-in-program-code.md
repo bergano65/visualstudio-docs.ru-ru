@@ -1,61 +1,63 @@
 ---
-title: Как выполнить Открытие модели из файла в коде программы
+title: Практическое руководство. Открытие модели из файла в коде программы
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 52142da504b6dc2e7533a34f381a1243d44a74a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f89c62863aadf4e1f8902799b502c07b9dea528d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938074"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821915"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Как выполнить Открытие модели из файла в коде программы
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Практическое руководство. Открытие модели из файла в коде программы
+
 Модели DSL можно открыть в любом приложении.
 
- Из расширения Visual Studio можно использовать ModelBus для этой цели. ModelBus предоставляет стандартный механизм для ссылки на модель или элементы в модели, а также для поиска в модели, если он перемещен. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+Из расширения Visual Studio можно использовать ModelBus для этой цели. ModelBus предоставляет стандартный механизм для ссылки на модель или элементы в модели, а также для поиска в модели, если он перемещен. Дополнительные сведения см. в разделе [интеграция моделей с помощью Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
-## <a name="target-framework"></a>Требуемая версия .NET Framework
- Задайте **требуемой версии .NET framework** проекта приложения для **.NET Framework 4**.
+## <a name="target-framework"></a>Целевая платформа
 
-#### <a name="to-set-the-target-framework"></a>Чтобы задать требуемую версию .NET framework
+Задайте **требуемой версии .NET framework** проекта приложения для .NET Framework 4 или более поздней версии.
 
-1.  Откройте проект Visual Studio для приложения, в котором вы хотите чтение модели DSL.
+1. Откройте проект Visual Studio для приложения, в котором вы хотите чтение модели DSL.
 
-2.  В **обозревателе решений**, щелкните правой кнопкой мыши проект и нажмите кнопку **свойства**.
+2. В **обозревателе решений**, щелкните правой кнопкой мыши проект и нажмите кнопку **свойства**.
 
-3.  В окне свойств проекта на **приложения** вкладке **требуемой версии .NET framework** поле **.NET Framework 4**.
+3. В окне свойств проекта на **приложения** вкладке **требуемой версии .NET framework** поле **.NET Framework 4** (или более поздней версии).
 
 > [!NOTE]
->  Может потребоваться сделать это, даже если вы выбрали **.NET Framework 4** в диалоговом окне создания проекта. Требуемая версия .NET framework не должно быть **клиентский профиль .NET Framework 4**.
+> Требуемая версия .NET framework не должно быть **клиентский профиль .NET Framework 4**.
 
 ## <a name="references"></a>Ссылки
- Необходимо добавить эти ссылки в проект приложения Visual Studio:
 
--   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
+Добавьте эти ссылки в проект приложения Visual Studio:
 
-    -   Если вы не видите этого в разделе **.NET** вкладке **Add References** диалоговом окне щелкните **Обзор** вкладку и перейдите к `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+- `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
--   Сборки DSL, который находится в папке bin проекта доменного языка. Обычно имя имеет вид: *YourCompany*. *Ваш_проект*`.Dsl.dll`.
+  - Если вы не видите этого в разделе **.NET** вкладке **Add References** диалоговом окне щелкните **Обзор** вкладку и перейдите к `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+
+- Сборки DSL, который находится в папке bin проекта доменного языка. Обычно имя имеет вид: *YourCompany*. *Ваш_проект*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>Важные классы в доменном ЯЗЫКЕ
- Прежде чем можно написать код, считывающий DSL, следует знать имена некоторых классов, созданных с DSL. В решение DSL откройте **Dsl** проекта и папка **GeneratedCode** папки. Можно дважды щелкнуть в проекте сборки DSL **ссылки**и откройте пространство имен DSL в **обозреватель объектов**.
 
- Ниже приведены классы, которые необходимо определить.
+Прежде чем можно написать код, считывающий DSL, следует знать имена некоторых классов, созданных с DSL. В решение DSL откройте **Dsl** проекта и папка **GeneratedCode** папки. Можно дважды щелкнуть в проекте сборки DSL **ссылки**и откройте пространство имен DSL в **обозреватель объектов**.
 
--   *YourDslRootClass* -это имя корневого класса в вашей `DslDefinition.dsl`.
+Ниже приведены классы, которые необходимо определить.
 
--   *Выглядит* `SerializationHelper` -этот класс определен в `SerializationHelper.cs` в проекте DSL.
+- *YourDslRootClass* -это имя корневого класса в вашей `DslDefinition.dsl`.
 
--   *Выглядит* `DomainModel` -этот класс определен в `DomainModel.cs` в проекте DSL.
+- *Выглядит* `SerializationHelper` -этот класс определен в `SerializationHelper.cs` в проекте DSL.
 
-## <a name="reading-from-a-file"></a>Чтение из файла
- Следующий пример разработан для чтения DSL, в котором важные классы являются следующим образом:
+- *Выглядит* `DomainModel` -этот класс определен в `DomainModel.cs` в проекте DSL.
+
+## <a name="read-from-a-file"></a>Считывает данные из файла
+
+Следующий пример разработан для чтения DSL, в котором важные классы являются следующим образом:
 
 - FamilyTreeModel
 
@@ -63,7 +65,7 @@ ms.locfileid: "53938074"
 
 - FamilyTreeDomainModel
 
-  Другой класс домена данного DSL — это пользователь.
+Другой класс домена данного DSL — это пользователь.
 
 ```csharp
 using System;
@@ -101,8 +103,9 @@ namespace StandaloneReadDslConsole
 } } } }
 ```
 
-## <a name="saving-to-a-file"></a>Сохранение в файл
- Следующего дополнения в приведенный выше код вносит изменения в модель и затем сохраняет его в файл.
+## <a name="save-to-a-file"></a>Сохранить в файл
+
+Следующего дополнения в приведенный выше код вносит изменения в модель и затем сохраняет его в файл.
 
 ```csharp
 using (Transaction t =

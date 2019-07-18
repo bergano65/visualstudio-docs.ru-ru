@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Сборка одинаковых исходных файлов с различными параметрами | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - source files, building with different options
 - MSBuild, properties
@@ -18,18 +13,17 @@ ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831007"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821674"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Практическое руководство. Построение одинаковых исходных файлов с различными параметрами
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 При сборке проектов вы часто компилируете одни и те же компоненты с разными параметрами сборки. Например, вы можете создать отладочную сборку с символьной информацией или сборку выпуска без такой информации, но с включенными оптимизациями. Можно также создать проект для выполнения на определенной платформе, например x86 или [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]. Во всех этих случаях основная часть параметров сборки остается без изменений, а управление конфигурацией сборки осуществляется с помощью всего нескольких параметров. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] позволяет использовать свойства и условия для создания различных конфигураций сборки.  
   
 ## <a name="using-properties-to-modify-projects"></a>Использование свойств для изменения проектов  
@@ -39,7 +33,7 @@ ms.locfileid: "49831007"
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Задание группы свойств на основе другого свойства  
   
--   Используйте атрибут `Condition` в элементе `PropertyGroup` по аналогии со следующей процедурой:  
+- Используйте атрибут `Condition` в элементе `PropertyGroup` по аналогии со следующей процедурой:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -50,7 +44,7 @@ ms.locfileid: "49831007"
   
 #### <a name="to-define-a-property-based-on-another-property"></a>Определение свойства на основе другого свойства  
   
--   Используйте атрибут `Condition` в элементе `Property` по аналогии со следующей процедурой:  
+- Используйте атрибут `Condition` в элементе `Property` по аналогии со следующей процедурой:  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -61,13 +55,13 @@ ms.locfileid: "49831007"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Задание свойства проекта в командной строке  
   
--   Используйте параметр **/property** с указанием свойства и его значения. Пример:  
+- Используйте параметр **/property** с указанием свойства и его значения. Например:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - или  
+     \- или -  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -75,19 +69,19 @@ ms.locfileid: "49831007"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Задание нескольких свойств проекта в командной строке  
   
-- Используйте параметр **/property** или **/p** с указанием свойств и их значений либо используйте один параметр **/property** или **/p**, указав несколько свойствами через точку с запятой (;). Пример:  
+- Используйте параметр **/property** или **/p** с указанием свойств и их значений либо используйте один параметр **/property** или **/p**, указав несколько свойствами через точку с запятой (;). Например:  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   - или-  
+   \- или -  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
   ```  
   
-  Переменные среды также обрабатываются как свойства и автоматически внедряются [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Дополнительные сведения об использовании переменных среды см. в разделе [Практическое руководство. Использование переменных среды в сборке](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Переменные среды также обрабатываются как свойства и автоматически внедряются [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Дополнительные сведения об использовании переменных среды см. в разделе [Практическое руководство. Использование переменных среды в построении](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
   Значение свойства, которое указано в командной строке, имеет приоритет над любым значением для того же свойства, заданным в файле проекта, а значение в файле проекта имеет приоритет над значением в переменной среды.  
   
@@ -196,5 +190,3 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
  [Элемент Project (MSBuild)](../msbuild/project-element-msbuild.md)
-
-

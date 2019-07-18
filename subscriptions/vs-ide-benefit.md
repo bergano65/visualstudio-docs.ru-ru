@@ -1,25 +1,21 @@
 ---
 title: Преимущество Studio IDE в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
+ms.topic: conceptual
 description: Сведения о том, как скачать и установить Visual Studio IDE, входящую в вашу подписку Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: deb8a962b18037beb70aaddac8154e506d0f3867
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739803"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824657"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>Использование преимущества Visual Studio 2017
+# <a name="using-the-visual-studio-2019-benefit"></a>Использование преимущества Visual Studio 2019
 
 Как подписчик Visual Studio вы получаете доступ к интегрированной среде разработки Visual Studio.  Версия будет зависеть от уровня подписки.  Преимущество будет отображаться в виде плитки в категории "Сервис" на странице [Преимущества](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) портала подписчика.
-
 
 ## <a name="activation-steps"></a>Процедура активации
 
@@ -31,7 +27,7 @@ ms.locfileid: "53739803"
    > [!div class="mx-imgBorder"]
    > ![Плитка Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Вы будете перенаправлены на страницу "Загрузить результаты" для Visual Studio Enterprise, где сможете загрузить интегрированную среду разработки и получить ключ продукта для ее активации. Вы также можете запросить ключ продукта, нажав синюю ссылку **Получить ключ** или отправив запрос со страницы [Ключи продуктов](https://my.visualstudio.com/productkeys).
+3. Вы будете перенаправлены на страницу Visual Studio "Скачать результаты", где сможете скачать интегрированную среду разработки и получить ключ продукта для ее активации. Вы также можете запросить ключ продукта, нажав синюю ссылку **Получить ключ** или отправив запрос со страницы [Ключи продуктов](https://my.visualstudio.com/productkeys).
 4. На вкладке "Сведения" на странице "Скачать результаты" сделайте следующее:
    - Выберите нужную архитектуру (x86, x64).
    - Выберите предпочитаемый язык.
@@ -55,31 +51,33 @@ ms.locfileid: "53739803"
 
 13. Выберите предпочитаемую тему и щелкните **Запустить Visual Studio**.
 
-14. Открывается начальная страница.  Теперь вы готовы начать работу с Visual Studio.
+14. Открывается Visual Studio. Теперь вы готовы начать работу с Visual Studio.
+
+    ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![Начало работы с Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
+    ::: moniker-end
 
 ## <a name="eligibility"></a>Право на участие
 
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Да          |
-| Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                       | Доступно                                                            |  Да          |
-| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Доступно                                             |  Да         |
+| Visual Studio Enterprise (ценовая категория "Стандартный", ежемесячная облачная подписка)   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Yes          |
+| Visual Studio Professional (ценовая категория "Стандартный", ежемесячная облачная подписка) | Корпоративная лицензия, Azure, розничная версия                                       | Доступно                                                            |  Yes          |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Доступно                                             |  Yes         |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Недоступно                                              |  Н/Д          |
-| Visual Studio Dev Essentials | Н/Д  | Visual Studio Community |Да |
 
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Microsoft Valued Professional (MVP), региональный директор (RD).  Не включает следующие категории: ПО и службы MCT.*
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), отраслевой партнер Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, разработчик ПО и служб MCT, BizSpark, Imagine, Most Valuable Professional (MVP), региональный директор (RD).  Не включает следующие категории: ПО и службы MCT.*
 
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
-
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
-
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Если вам нужна помощь с Visual Studio IDE, ознакомьтесь с этими ресурсами:
-    - Техническая поддержка: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-    - [Документация](/visualstudio/)
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Если вам нужна помощь с Visual Studio IDE, ознакомьтесь с этими ресурсами:
+  - Техническая поддержка: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [Документация](/visualstudio/)
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.

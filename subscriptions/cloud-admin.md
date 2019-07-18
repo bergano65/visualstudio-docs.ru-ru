@@ -4,17 +4,14 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/28/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Настройка администраторов для облачных подписок
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: 861862d964d5ccd8e926730f648a41bc790bc64d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 85371dd77b99fc5013843bb815082cc0f84cff33
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283448"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250694"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Настройка администраторов для облачных подписок Visual Studio
 
@@ -47,7 +44,6 @@ ms.locfileid: "44283448"
 Выбранный вами подписчик будет теперь отображаться в центре страницы, а его роль изменится на "Администратор доступа пользователей".
 
 Новый администратор может теперь войти на [портал управления](https://manage.visualstudio.com), выбрать из списка в верхнем левом углу страницы подписку Azure, которая была использована для приобретения облачных подписок, и начать управлять этими подписками.
-
 
 > [!NOTE]
 > Если пользователи, для которых вы не настраивали права администраторов, могут изменять облачные подписки, возможно, у них есть роли в базовой подписке Azure, позволяющие управлять подписками. Это могут быть следующие роли: владелец, участник, администратор служб или соадминистратор. Дополнительные сведения см. в статье [Добавить менеджеров по выставлению счетов](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts).

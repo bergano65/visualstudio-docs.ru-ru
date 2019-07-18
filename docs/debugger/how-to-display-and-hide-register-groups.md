@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Отображение и скрытие групп регистров | Документация Майкрософт
+title: Практическое руководство. Отображение и скрытие групп регистров | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 6be5dfb4-4cfe-4daf-b538-60405640857d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 839ae628184250e276c27fccc80c6b9f8085fabd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a904bfcf147d72dde16ffe0fbf9e754c2c356bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847791"
 ---
-# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Как выполнить Отображение и скрытие групп регистров (C#, C++, Visual Basic, F#)
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Практическое руководство. Отображение и скрытие групп регистров (C#, C++, Visual Basic, F#)
 
 Окно **Регистры** доступно только при включении отладки на уровне адреса в категории **Общие** узла **Отладка** диалогового окна **Параметры**.
 
@@ -37,9 +37,9 @@ ms.locfileid: "53846799"
 
 ## <a name="display-or-hide-register-groups"></a>Отображение или скрытие групп регистров
 
-1.  Щелкните правой кнопкой мыши окно **Регистры**.
+1. Щелкните правой кнопкой мыши окно **Регистры**.
 
-2.  Выберите в контекстном меню группы регистров, которые нужно показать или скрыть.
+2. Выберите в контекстном меню группы регистров, которые нужно показать или скрыть.
 
      Группы регистров, не поддерживаемые оборудованием, на котором выполняется отладка, недоступны в контекстном меню, поэтому они не могут быть выбраны.
 

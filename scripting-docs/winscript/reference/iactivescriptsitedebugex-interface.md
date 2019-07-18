@@ -1,8 +1,7 @@
 ---
-title: Iactivescriptsitedebugex — интерфейс | Документы Microsoft
+title: Интерфейс IActiveScriptSiteDebugEx | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,20 +13,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cf5849ff1fca282bace97774c6b7ac9e4510226
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 605505d101611dfe39835671b042852eab5ca9cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992387"
 ---
 # <a name="iactivescriptsitedebugex-interface"></a>IActiveScriptSiteDebugEx — интерфейс
-Реализуйте этот интерфейс вместе с `IActiveScriptSiteDebug` интерфейс при создании узла, который необходимо получить уведомление об ошибке времени выполнения в приложении и при необходимости присоедините к приложению для отладки. Диспетчер отладки процессов обеспечивает уведомление через `IActiveScriptDebug` при отладчик сценариев непосредственно в момент находится на компьютере. Если отладчик сценариев не только время будет найден, PDM обеспечивает уведомление через `IActiveScriptDebugEx` вместо него.  
-  
- Чтобы получить уведомление об ошибке времени выполнения, необходимо обрабатывать узла [ActiveScriptSiteDebug::OnScriptErrorDebug](http://msdn.microsoft.com/en-us/cf7639f9-a699-4571-9f3a-82ef52c0b5f4). На основании действий пользователя, затем можно присоединить отладчик внутренних и возврата или возвратить запуск отладчика в OnScriptErrorDebug `pfEnterDebugger` параметра.  
-  
-## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
-  
-|Метод|Описание|  
-|------------|-----------------|  
-|[IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug](../../winscript/reference/iactivescriptsitedebugex-oncannotjitscripterrordebug.md)|Информирует приложение о ошибку во время выполнения сценария при диспетчера отладки процесса не удается найти внешнем только раз в отладчике.|
+
+Реализуйте этот интерфейс, вместе с `IActiveScriptSiteDebug` интерфейс при создании узла, который должен получать уведомление об ошибке времени выполнения в приложении и при необходимости подключения к приложению для отладки. Диспетчер отладки процессов предоставляет уведомления через `IActiveScriptDebug` при отладчик сценариев Just-In-Time находится на компьютере. Если отладчик сценариев не Just-In-Time является найден, PDM обеспечивает уведомление через `IActiveScriptDebugEx` вместо этого.
+
+Чтобы получить уведомление об ошибке времени выполнения, необходимо обрабатывать узла `ActiveScriptSiteDebug::OnScriptErrorDebug`. На основании действий пользователя, затем можно присоединить внутренний отладчик и возврата или возврата его запуск отладчика в OnScriptErrorDebug `pfEnterDebugger` параметра.
+
+## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable
+
+|Метод|Описание|
+|------------|-----------------|
+|[IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug](../../winscript/reference/iactivescriptsitedebugex-oncannotjitscripterrordebug.md)|Информирует приложение о ошибки времени выполнения скрипта при процесс отладки Manager не удается найти во внешнем отладчике Just In Time.|

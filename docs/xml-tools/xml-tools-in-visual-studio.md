@@ -1,7 +1,6 @@
 ---
-title: Средства XML
+title: Редактор XML и конструктор схем
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
@@ -16,7 +15,7 @@ helpviewer_keywords:
 - XML schemas
 - XML [Visual Studio], SGML relationship to
 - CSS, style sheets for XML
-- XML [Visual Studio], .NET Framework classes
+- XML [Visual Studio], .NET classes
 - data [Visual Studio], XML
 - classes [Visual Studio], XML
 - style sheets, for XML
@@ -30,44 +29,53 @@ helpviewer_keywords:
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbd93836cdf5b91bb9f7abb93a95499927fa0b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7493d6c10c83b16ad7579299a49a7747e34c20b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872964"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746515"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Средства XML в Visual Studio
 
-*Расширяемый язык разметки (XML)* — это язык разметки, позволяющий описывать данные. Он упрощает точное объявление контента и помогает получать более значимые результаты поиска на различных платформах. Кроме того, XML позволяет разделять представление от данных. Например, в HTML теги используются, чтобы сообщить браузеру, что данные должны быть выделены полужирным шрифтом или курсивом. В XML теги применяются только для описания данных, например названия города, температуры и атмосферного давления. В XML, используются таблицы стилей например Extensible Stylesheet Language (XSL) и каскадных таблиц стилей (CSS) для представления данных в браузере. XML отделяет данные от представления и обработки. Это позволяет отображать и обрабатывать данные необходимым способом, применяя различные таблицы стилей и приложения.
+*Расширяемый язык разметки (XML)* — это язык разметки, позволяющий описывать данные. XML отделяет данные и их представлением, с помощью связанных таблиц стилей например Extensible Stylesheet Language (XSL) и каскадных таблиц стилей (CSS). Visual Studio включает инструменты и возможности, облегчающие работу с XML, XSLT и XML-схемами.
 
-XML — это подмножество языка SGML, оптимизированное для доставки через Интернет. Его спецификация определяется консорциумом World Wide Web (W3C). Такая стандартизация гарантирует, что структурированные данные будут согласованными и независимыми от приложений и поставщиков.
+## <a name="xml-editor"></a>Редактор XML
 
-XML лежит в основе многих возможностей Visual Studio и .NET Framework. Перечисленные ниже статьи названия, средств и функций, связанных с XML, которые предлагаются в Visual Studio и .NET Framework.
+[Редактор XML](xml-editor.md) используется для редактирования XML-документов. Он предоставляет полный синтаксис XML, проверка, проверка схемы во время ввода, цветовое кодирование и IntelliSense. Если предоставлена схема или определение типа документа, технология IntelliSense выводит список разрешенных элементов и атрибутов.
 
-Дополнительные сведения см. в разделе <xref:System.Xml?displayProperty=fullName> документации.
+Дополнительные возможности:
 
-## <a name="reference"></a>Ссылка
+- Поддержка XML-фрагментов, включая фрагменты, сформированные схемой
 
-[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) предоставляет [редактор XML](http://go.microsoft.com/fwlink/?LinkId=228249) синтаксического анализа дерева через [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) для любых XML-документов.
+- Структурирование документов, можно разворачивать и сворачивать элементы
 
-[Справочник по стандартам XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) содержит сведения о технологиях XML, включая XML, определение типа документа (DTD), язык определения схемы XML (XSD) и XSLT.
+- Возможность выполнять преобразования XSLT и просматривать результаты в виде текста, XML или HTML
 
-<xref:System.Xml?displayProperty=fullName> Описание классов и другие элементы, составляющие <xref:System.Xml> пространства имен и ссылки на более подробные сведения для каждого элемента.
+- Возможность создания схем языка определения схемы XML из экземпляра XML-документа
 
-<xref:System.Xml.Serialization?displayProperty=fullName> Описание классов и другие элементы, составляющие <xref:System.Xml.Serialization> пространства имен и ссылки на более подробные сведения о каждом элементе.
+- Поддержка редактирования таблиц стилей XSLT, включая поддержку технологии IntelliSense
 
-## <a name="related-sections"></a>Связанные разделы
+- Обозреватель схемы XML
 
-[XML объекта модели (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom) описывает как <xref:System.Xml.XmlDocument> и связанные с ним классы соответствуют объектной модели документов W3C (Core) уровня 1 и спецификации пространству имен уровня 2.
+## <a name="xml-schema-designer"></a>Конструктор схемы XML
 
-[Обработка XML-данных с помощью XmlReader и XmlWriter](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc189001\(v\=vs.95\))
+[Конструктор XML-схем](xml-schema-designer.md) интегрирован с Visual Studio и редактором XML, чтобы можно было работать со схемами языка определения схемы XML.
 
-[Преобразования XSLT](/dotnet/standard/data/xml/xslt-transformations) описывает как <xref:System.Xml.Xsl.XslCompiledTransform> класс реализует рекомендации XSLT 1.0.
+## <a name="xslt-debugging"></a>Отладка XSLT
 
-[Обработка XML-данных с помощью модели данных XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) описывает как <xref:System.Xml.XPath.XPathNavigator> класс может обрабатывать XML-данные, хранящиеся в <xref:System.Xml.XPath.XPathDocument> или <xref:System.Xml.XmlDocument> объекта. Класс <xref:System.Xml.XPath.XPathNavigator> основан на XQuery 1.0 и модели данных XPath 2.0 и может использоваться для просмотра и редактирования данных XML.
+Visual Studio поддерживает [отладка таблиц стилей XSLT](../xml-tools/debugging-xslt.md). С помощью отладчика можно задавать точки останова в таблице стилей XSLT, переходить в таблицу стилей XSLT из кода и т. д.
 
-[Объектной модели схемы XML (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som) описаны классы, используемые для создания и обработки XML-схем, предоставляя <xref:System.Xml.Schema.XmlSchema> класс для загрузки и изменения схемы.
+> [!NOTE]
+> Отладчик XSLT доступен только в выпуске Visual Studio Enterprise.
+
+## <a name="see-also"></a>См. также
+
+- <xref:System.Xml?displayProperty=fullName>
+- [Преобразования XSLT](/dotnet/standard/data/xml/xslt-transformations)
+- [Обработка XML-данных с помощью модели данных XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
+- [Модель объектов документов XML (DOM)](/dotnet/standard/data/xml/xml-document-object-model-dom)
+- [Модель объектов схемы XML (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som)

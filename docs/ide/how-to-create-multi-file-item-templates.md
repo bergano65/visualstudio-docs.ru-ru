@@ -1,7 +1,6 @@
 ---
 title: Создание многофайловых шаблонов элементов
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
@@ -9,13 +8,13 @@ helpviewer_keywords:
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0bffe46fa392a09b29eef224aaa50f5e02db826a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428994"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Как выполнить Создание многофайловых шаблонов элементов
 
@@ -29,11 +28,11 @@ ms.locfileid: "53877657"
 
 Многофайловым шаблонам элементов нужны параметры, чтобы при создании элемента использовались правильные расширения имен файлов. Если вы создаете многофайловый шаблон элемента с помощью мастера **экспорта шаблонов**, эти параметры создаются автоматически, а дальнейшая правка не требуется.
 
-## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>Создание многофайлового шаблона элемента с помощью мастера экспорта шаблонов
+## <a name="use-the-export-template-wizard"></a>Использование мастера экспорта шаблонов
 
 Многофайловый шаблон элемента создается аналогично однофайловому шаблону элемента. См. [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md). На странице **Выбор элементов для экспорта** мастера выберите файл, который содержит зависимые файлы (например, файл формы Windows Forms). Мастер автоматически включит в шаблон все зависимые файлы, например файлы ресурсов и конструктора.
 
-## <a name="to-manually-create-a-multi-file-item-template"></a>Создание шаблона многофайлового элемента вручную
+## <a name="manually-create-a-multi-file-item-template"></a>Создание шаблона многофайлового элемента вручную
 
 1. Создайте шаблон элемента так же, как если бы вы создавали однофайловый шаблон элемента вручную, но включите каждый файл, который составляет многофайловый элемент.
 

@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: beb21109-b12c-44d8-8c1f-a332216b3713
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22f322ebfcb001c047dc343741f09a5763eb4e58
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 2f9fc227983818aa1d1c91e147a5dce650844ad8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832829"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
-Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumTables** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `ppenum`  
- [out] Возвращает [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) , содержащий копию перечислителя. Таблицы не повторяются, только перечислитель.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumTables** ppenum
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `ppenum`
+
+[out] Возвращает [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) , содержащий копию перечислителя. Таблицы не повторяются, только перечислитель.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

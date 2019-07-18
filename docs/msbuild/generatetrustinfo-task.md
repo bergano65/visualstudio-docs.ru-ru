@@ -13,33 +13,33 @@ helpviewer_keywords:
 ms.assetid: 3ca60816-4bb0-4fef-ae43-ca0bfb63def3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c4c03eba5d0b154ce219daeea3761a001a2198
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9eda4e54c67a9e9e80b4fd8f59266bc4bc5f27a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62577467"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo - задача
-Создает доверие к приложению из базового манифеста и из параметров `TargetZone` и `ExcludedPermissions`.  
-  
-## <a name="parameters"></a>Параметры  
- В следующей таблице приводятся параметры задачи `GenerateTrustInfo` .  
-  
-|Параметр|Описание|  
-|---------------|-----------------|  
-|`ApplicationDependencies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает зависимые сборки.|  
-|`BaseManifest`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает базовый манифест, на основе которого будет сформировано доверие к приложению.|  
-|`ExcludedPermissions`|Необязательный параметр `String` .<br /><br /> Задает одно или несколько значений идентификаторов разрешений, разделенных точкой с запятой, которые должны быть исключены из набора разрешений зоны по умолчанию.|  
-|`TargetZone`|Необязательный параметр `String` .<br /><br /> Определяет набор разрешений зоны по умолчанию, получаемый из политики компьютера.|  
-|`TrustInfoFile`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает файл, содержащий сведения о безопасности доверия приложения.|  
-  
-## <a name="remarks"></a>Примечания  
- Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).  
-  
-## <a name="see-also"></a>См. также  
- [Задачи](../msbuild/msbuild-tasks.md)   
- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
+Создает доверие к приложению из базового манифеста и из параметров `TargetZone` и `ExcludedPermissions`.
+
+## <a name="parameters"></a>Параметры
+ В следующей таблице приводятся параметры задачи `GenerateTrustInfo` .
+
+|Параметр|Описание|
+|---------------|-----------------|
+|`ApplicationDependencies`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает зависимые сборки.|
+|`BaseManifest`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br /> Указывает базовый манифест, на основе которого будет сформировано доверие к приложению.|
+|`ExcludedPermissions`|Необязательный параметр `String` .<br /><br /> Задает одно или несколько значений идентификаторов разрешений, разделенных точкой с запятой, которые должны быть исключены из набора разрешений зоны по умолчанию.|
+|`TargetZone`|Необязательный параметр `String` .<br /><br /> Определяет набор разрешений зоны по умолчанию, получаемый из политики компьютера.|
+|`TrustInfoFile`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Указывает файл, содержащий сведения о безопасности доверия приложения.|
+
+## <a name="remarks"></a>Примечания
+ Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
+
+## <a name="see-also"></a>См. также
+- [Задачи](../msbuild/msbuild-tasks.md)
+- [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

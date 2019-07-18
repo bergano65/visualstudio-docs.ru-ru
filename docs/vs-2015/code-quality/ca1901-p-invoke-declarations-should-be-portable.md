@@ -1,14 +1,9 @@
 ---
-title: 'CA1901: Объявления P / Invoke должны быть переносимыми | Документация Майкрософт'
-ms.custom: ''
+title: CA1901. Объявления P / Invoke должны быть переносимыми | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1901
 - PInvokeDeclarationsShouldBePortable
@@ -20,14 +15,14 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a44e439ecafaa2e89df8cc93c131dbf2abe2dc30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203069"
 ---
-# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: объявления P/Invoke должны быть переносимыми
+# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901. Объявления P/Invoke должны быть переносимыми
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,9 +38,9 @@ ms.locfileid: "49948139"
 ## <a name="rule-description"></a>Описание правила
  Одно из следующих сценариев это правило не происходит:
 
--   Возвращаемого значения или параметра типизируется как целое число фиксированного размера он должен быть типизированы как `IntPtr`.
+- Возвращаемого значения или параметра типизируется как целое число фиксированного размера он должен быть типизированы как `IntPtr`.
 
--   Имеет тип возвращаемого значения или параметра `IntPtr` при их следует вводить как целое число фиксированного размера.
+- Имеет тип возвращаемого значения или параметра `IntPtr` при их следует вводить как целое число фиксированного размера.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Это нарушение можно подготовить с помощью `IntPtr` или `UIntPtr` для представления дескрипторов вместо `Int32` или `UInt32`.
@@ -85,6 +80,3 @@ internal class NativeMethods{
 
 ## <a name="see-also"></a>См. также
  [Portability Warnings](../code-quality/portability-warnings.md)
-
-
-

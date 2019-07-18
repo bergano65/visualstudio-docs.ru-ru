@@ -1,30 +1,24 @@
 ---
 title: Откройте представление | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8f3ae39fa1b90140794b7dd4c571dabed2c12d95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cb0cc75abced1d94fbedccf46b8953df78db7d28
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150707"
 ---
 # <a name="start-view"></a>Начальное представление
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Начальное представление является точкой запуска конструктора XML-схем (XSD). При создании нового XSD файла перед вами откроется начальное представление.  
   
  Начальное представление имеет два основных раздела *водяного знака* и **сведения о наборе схем** области. Оно также содержит панель инструментов, доступную во всех представлениях конструктора XSD.  
@@ -32,7 +26,7 @@ ms.locfileid: "49234251"
  ![XML начальное представление конструктора схемы](../xml-tools/media/xsddesigner-startview.gif "XSDDesigner_StartView")  
   
 ## <a name="watermark"></a>Водяной знак  
- Область водяного знака содержит список ссылок на все представления конструктора XSD, редактор XML и обозреватель XML-схем. Если набор схем содержит ошибки, в конце списка появится следующий текст: «Воспользуйтесь списком ошибок для просмотра и устранения ошибок в наборе».  
+ Область водяного знака содержит список ссылок на все представления конструктора XSD, редактор XML и обозреватель XML-схем. Если набор схем содержит ошибки, в конец списка отображается следующий текст: «Использование списка ошибок для просмотра и исправления ошибок в наборе.»  
   
 ## <a name="schema-set-details"></a>Сведения о наборе схем  
  **Сведения о наборе схем** панели перечислены типов глобальных узлов схемы и отображает количество экземпляров каждого типа в схеме. Можно использовать **добавить** ссылки рядом с типами узлов для добавления новых узлов в рабочую область.  
@@ -55,6 +49,3 @@ ms.locfileid: "49234251"
  [Представление графика](../xml-tools/graph-view.md)   
  [Представление модели содержимого](../xml-tools/content-model-view.md)   
  [XML-редактор](../xml-tools/xml-editor.md)
-
-
-

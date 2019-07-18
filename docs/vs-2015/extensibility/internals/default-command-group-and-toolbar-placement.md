@@ -1,14 +1,9 @@
 ---
 title: Команды, группы и размещения панели инструментов по умолчанию | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], default groups
 - toolbars [Visual Studio], default
@@ -19,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e91d535697d0e5b9402a7b7eb3bbd4559821c68a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7fc877332f7db7b27c4a30c23f1ac395a4fc22e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196894"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Стандартное размещение команды, группы и панели инструментов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Единообразие продукта и стабильность, пользовательский Интерфейс отображает определенные группы команд по умолчанию и [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] предоставляет определения для команд и группы команд. Пакеты VSPackage также можно использовать стандартные команды и группы команд.  
   
- Группы по умолчанию команды делятся на три категории: интегрированная среда разработки команды, продукт команд и команд редактора.  
+ Группы по умолчанию команды делятся на три категории: Команд интегрированной среды разработки продукта команд и команд редактора.  
   
 ## <a name="default-ide-commands"></a>По умолчанию команд интегрированной среды разработки  
  Панель инструментов интегрированной среды разработки по умолчанию содержит команды, общими для всех продуктов, содержащихся в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Сюда относятся команды, относящиеся к операции универсального проекта, такие как **Сохранить** команды и **Добавление элемента** команды. Пакеты VSPackage не следует добавить или вычесть из этой панели инструментов, за одним исключением: Если продукт или VSPackage добавляет новое окно инструмента, то окна должны добавляться в список доступных инструментов windows **представление** меню. Новые продукты или пакеты VSPackage, можно добавить собственные панели инструментов.  
@@ -50,4 +45,3 @@ ms.locfileid: "51773643"
 ## <a name="see-also"></a>См. также  
  [Команды, определенные в интегрированной среде разработки, меню и групп](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
  [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

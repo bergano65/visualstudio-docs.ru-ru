@@ -1,11 +1,7 @@
 ---
 title: Добавление поддержки редактора для других языков | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax colorization
 - IntelliSense
@@ -18,13 +14,13 @@ ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fa622ddb6d840698d1134e0fec1540d99b44f5e2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148248"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Добавление поддержки редактора Visual Studio для других языков
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,15 +72,15 @@ ms.locfileid: "53049797"
 
  По этому базовому пути добавьте следующие папки, если они допускаются в вашем случае.
 
-|Имя папки|Описание:|
+|Имя папки|Описание|
 |-----------------|-----------------|
-|\\*\<имя языка>*|Папка языка. Замените *\<имя_языка>* на имя нужного языка. Например, **\Matlab**.|
+|\\ *\<имя языка>*|Папка языка. Замените *\<имя_языка>* на имя нужного языка. Например, **\Matlab**.|
 |\Syntaxes|Папка грамматики. Содержит файлы JSON грамматики для языка, например **Matlab.json**.|
 |\Snippets|Папка фрагментов кода. Содержит фрагменты кода для языка.|
 
- В Windows % userprofile % разрешается в путь: c:\Users\\*\<имя_пользователя>*. Если папка расширений не существует в системе, ее необходимо создать. Если папка уже существует, она будет скрыта.
+ В Windows % userprofile % разрешается в путь: c:\Users\\ *\<имя_пользователя>* . Если папка расширений не существует в системе, ее необходимо создать. Если папка уже существует, она будет скрыта.
 
- Дополнительные сведения о создании грамматик TextMate см. в разделе [TextMate – Общие сведения о грамматике языка: Добавление выделения синтаксиса исходного кода, внедренного в формате HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) и [примечания о создании грамматики языка и пользовательской темы для пакета Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+ Дополнительные сведения о создании грамматик TextMate см. в разделе [TextMate – Общие сведения о грамматике языка: Добавление встроенных функций выделения синтаксиса исходного кода в HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) и [Примечания о создании грамматики языка и настраиваемой темы для пакета Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>См. также
- [Visual Studio 2013 перейдите к улучшения](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [Пошаговое руководство: создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md) [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013 перейдите к улучшения](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [Пошаговое руководство: Создание фрагмента кода](../ide/walkthrough-creating-a-code-snippet.md) [Пошаговое руководство: отображение завершения операторов](../extensibility/walkthrough-displaying-statement-completion.md)

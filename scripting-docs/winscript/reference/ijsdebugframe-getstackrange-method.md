@@ -2,7 +2,6 @@
 title: Метод IJsDebugFrame::GetStackRange | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 049be8a665dae396d4e92fe847e757b266dc6025
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 52dd6114d3ec462f91f8bce5e76f73c5487746ed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558220"
 ---
 # <a name="ijsdebugframegetstackrange-method"></a>Метод IJsDebugFrame::GetStackRange
 Возвращает диапазон абсолютных адресов логического фрейма стеков JavaScript.  

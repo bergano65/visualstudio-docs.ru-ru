@@ -16,16 +16,15 @@ helpviewer_keywords:
 ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d89c3a5582ef1c84c455801d3766d65246e34dea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: c6da3f51a249aaf52cf3f20b90f3add6ceeb7aa1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564760"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Работа с наборами данных в n-уровневых приложениях
 

@@ -1,7 +1,6 @@
 ---
 title: CA2210. Сборки должны иметь допустимые строгие имена
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AssembliesShouldHaveValidStrongNames
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8ed33d1c-8ec6-4b47-a692-e22dc8693088
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3d6eb70e22da0b17fff9febce47bcaa5b980269
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89edba30a95d61268aebb26de8d973f6201c0fcf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908357"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714765"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210. Сборки должны иметь допустимые строгие имена
 
@@ -65,11 +64,11 @@ ms.locfileid: "53908357"
 
 Используйте один из следующих процедур.
 
-- Используйте средство компоновщик сборок (Al.exe), предоставляемых .NET Framework SDK.
+- Используйте [средство компоновщик сборок (Al.exe)](/dotnet/framework/tools/al-exe-assembly-linker).
+
+- Для .NET Framework 2.0, используйте `/keyfile` или `/keycontainer` параметр компилятора [/keyfile (определение ключа или пары ключей для подписи сборки)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) или  [ /keycontainer (определение контейнера ключей для подписи сборки)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) параметров компоновщика с C++).
 
 - Для .NET Framework v1.0 и v1.1, использовать <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> или <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> атрибута.
-
-- Для [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], либо использовать `/keyfile` или `/keycontainer` параметр компилятора [/keyfile (определение ключа или пары ключей для подписи сборки)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) или  [ /keycontainer (определение контейнера ключей для подписи сборки)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) параметров компоновщика с ++).
 
 ### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>Подписать сборку строгим именем в Visual Studio
 
@@ -91,7 +90,7 @@ ms.locfileid: "53908357"
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Подписать сборку строгим именем вне Visual Studio
 
-Используйте средство строгих имен (Sn.exe), предоставляемый .NET Framework SDK. Дополнительные сведения см. на странице [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool) (Sn.exe: средство строгих имен).
+Используйте [средство строгих имен (Sn.exe)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 
@@ -101,5 +100,5 @@ ms.locfileid: "53908357"
 
 - <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>
 - <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>
-- [Практическое руководство. Подписать сборку строгим именем](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Практическое руководство. Подписание сборки строгим именем](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Sn.exe (средство строгих имен)](/dotnet/framework/tools/sn-exe-strong-name-tool)

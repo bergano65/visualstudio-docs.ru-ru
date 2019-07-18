@@ -1,24 +1,19 @@
 ---
 title: Создание расширения с помощью VSPackage | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 945ae5b3cf6cd8769795c31a10a4f51e1f7eccb6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ddad7149db75aa662f9427a301c04eaf925146f9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197422"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Создание расширения с помощью VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,20 +25,20 @@ ms.locfileid: "51773305"
   
 ## <a name="creating-a-vspackage"></a>Создание пакета VSPackage  
   
-1.  Создайте проект VSIX с именем **FirstPackage**. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C# / Extensibility**.  
+1. Создайте проект VSIX с именем **FirstPackage**. Вы найдете шаблон проекта VSIX в **новый проект** диалоговое окно, в разделе **Visual C# / Extensibility**.  
   
-2.  При открытии проекта, добавьте элемент шаблона пакета Visual Studio с именем **FirstPackage**. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить / новый элемент**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C# / Extensibility** и выберите **пакета Visual Studio**. В **имя** в нижней части окна, измените имя командного файла для **FirstPackage.cs**.  
+2. При открытии проекта, добавьте элемент шаблона пакета Visual Studio с именем **FirstPackage**. В **обозревателе решений**, щелкните правой кнопкой мыши узел проекта и выберите **добавить / новый элемент**. В **Добавление нового элемента** диалоговое окно, перейдите к **Visual C# / Extensibility** и выберите **пакета Visual Studio**. В **имя** в нижней части окна, измените имя командного файла для **FirstPackage.cs**.  
   
-3.  Выполните сборку решения и запустите отладку.  
+3. Выполните сборку решения и запустите отладку.  
   
      Откроется экспериментальный экземпляр Visual Studio. Дополнительные сведения о экспериментальный экземпляр, см. в разделе [экспериментальный экземпляр](../extensibility/the-experimental-instance.md).  
   
-4.  В экспериментальном экземпляре откройте **средства / расширения и обновления** окна. Вы должны увидеть **FirstPackage** здесь расширения. (Если вы откроете **расширения и обновления** в свой рабочий экземпляр Visual Studio, вы не увидите **FirstPackage**).  
+4. В экспериментальном экземпляре откройте **средства / расширения и обновления** окна. Вы должны увидеть **FirstPackage** здесь расширения. (Если вы откроете **расширения и обновления** в свой рабочий экземпляр Visual Studio, вы не увидите **FirstPackage**).  
   
 ## <a name="loading-the-vspackage"></a>Загрузка VSPackage  
  На этом этапе модуль не загружается, поскольку нет ничего, который используется для загрузки. Как правило, можно загрузить расширение при взаимодействии с его пользовательским Интерфейсом (нажав кнопку команды меню, открытие окна инструментов), либо указать, что VSPackage следует загрузить в определенном контексте пользовательского интерфейса. Дополнительные сведения о загрузке контексты пакетов VSPackage и пользовательского интерфейса, см. в разделе [Загрузка пакетов VSPackage](../extensibility/loading-vspackages.md). Для выполнения этой процедуры мы покажем, как загрузить пакет VSPackage, при открытом решении.  
   
-1.  Откройте файл FirstPackage.cs. Найдите объявление класса FirstPackage. Замените существующие атрибуты следующее:  
+1. Откройте файл FirstPackage.cs. Найдите объявление класса FirstPackage. Замените существующие атрибуты следующее:  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -53,7 +48,7 @@ ms.locfileid: "51773305"
     public sealed class FirstPackage : Package  
     ```  
   
-2.  Давайте добавим сообщение, которое позволит нам загрузку VSPackage. Мы используем метод Initialize() VSPackage для этого, так как службы Visual Studio можно получить только после размещения VSPackage. (Дополнительные сведения о получении службы см. в разделе [как: доступ к службе](../extensibility/how-to-get-a-service.md).) Замените код, который возвращает метод Initialize() FirstPackage <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> служба, которую получает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> интерфейс и вызывает его <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> метод.  
+2. Давайте добавим сообщение, которое позволит нам загрузку VSPackage. Мы используем метод Initialize() VSPackage для этого, так как службы Visual Studio можно получить только после размещения VSPackage. (Дополнительные сведения о получении службы см. в разделе [как: Доступ к службе](../extensibility/how-to-get-a-service.md).) Замените код, который возвращает метод Initialize() FirstPackage <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> служба, которую получает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> интерфейс и вызывает его <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> метод.  
   
     ```csharp  
     protected override void Initialize()  
@@ -78,7 +73,6 @@ ms.locfileid: "51773305"
     }  
     ```  
   
-3.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
+3. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
-4.  Откройте решение в экспериментальном экземпляре. Вы должны увидеть окно сообщения с текстом **первого пакета внутри Initialize()**.
-
+4. Откройте решение в экспериментальном экземпляре. Вы должны увидеть окно сообщения с текстом **первого пакета внутри Initialize()** .

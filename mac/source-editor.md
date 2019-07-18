@@ -1,16 +1,16 @@
 ---
 title: Редактор исходного кода
 description: Использование редактора исходного кода в Visual Studio для Mac
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: b284cde511b17863861908d9967bbea7672e297b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: b8414f50ed420d8fb4b29d4c8a21d3c8dc6cee72
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295700"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691967"
 ---
 # <a name="source-editor"></a>Редактор исходного кода
 

@@ -9,53 +9,55 @@ helpviewer_keywords:
 ms.assetid: d65ab262-10c6-48ce-95a3-b5e4cb2c85af
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6321b6bc651778e9d3aff7257a251eff6493f397
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 03931580f774c29a67771d2251b51825242535c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829383"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
-Возвращает таблицу с помощью индекса или имени.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Item (   
-   VARIANT     index,  
-   IDiaTable** table  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `index`  
- [in] Индекс или имя [IDiaTable](../../debugger/debug-interface-access/idiatable.md) требуется получить. Если используется вариант целое число, он должен быть в диапазоне от 0 до `count`-1, где `count` как возвращаемый [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) метод.  
-  
- `table`  
- [out] Возвращает [IDiaTable](../../debugger/debug-interface-access/idiatable.md) объект, представляющий нужную таблицу.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Если указан вариант строка, строка имен конкретной таблицы. Имя должно быть одно из имен таблицы как определено в [константы (SDK отладки интерфейса доступа)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).  
-  
-## <a name="example"></a>Пример  
-  
-```C++  
-VARIANT var;  
-var.vt = VT_BSTR;  
-var.bstrVal = SysAllocString(DiaTable_Symbols );  
-IDiaTable* pTable;  
-pEnumTables->Item( var, &pTable );  
-```  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
- [Константы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
+Возвращает таблицу с помощью индекса или имени.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Item ( 
+   VARIANT     index,
+   IDiaTable** table
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `index`
+
+[in] Индекс или имя [IDiaTable](../../debugger/debug-interface-access/idiatable.md) требуется получить. Если используется вариант целое число, он должен быть в диапазоне от 0 до `count`-1, где `count` как возвращаемый [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) метод.
+
+ `table`
+
+[out] Возвращает [IDiaTable](../../debugger/debug-interface-access/idiatable.md) объект, представляющий нужную таблицу.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Если указан вариант строка, строка имен конкретной таблицы. Имя должно быть одно из имен таблицы как определено в [константы (SDK отладки интерфейса доступа)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).
+
+## <a name="example"></a>Пример
+
+```C++
+VARIANT var;
+var.vt = VT_BSTR;
+var.bstrVal = SysAllocString(DiaTable_Symbols );
+IDiaTable* pTable;
+pEnumTables->Item( var, &pTable );
+```
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
+- [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)
+- [Константы (SDK для доступа к интерфейсу отладки)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)

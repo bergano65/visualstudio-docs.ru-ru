@@ -1,26 +1,21 @@
 ---
 title: Поддержка веб-сайтов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - web site projects
 ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7215079dbfc8a8c9934f16700c0a7f466f9bc9a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f1a96504783de466551c6fb9d055b95ba38df760
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786084"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687694"
 ---
 # <a name="web-site-support"></a>Поддержка веб-сайтов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51786084"
   
  Системы проектов веб-сайте создаются путем добавления шаблоны и атрибуты регистрации в существующей системе проекта. Один из этих атрибутов выбирает поставщика IntelliSense для языка. Реализация поставщика IntelliSense обрабатывает ссылки и вызывает компилятор языка, когда запрашивается смарт-веб-страницы, не кэшируется.  
   
- Компилятор языка, используемый для компиляции веб-страниц, которые должны быть зарегистрированы в [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]. Можно использовать [ \<компилятор > элемент](http://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823) в файле Web.config, чтобы зарегистрировать компилятор, как показано в следующем примере:  
+ Компилятор языка, используемый для компиляции веб-страниц, которые должны быть зарегистрированы в [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]. Можно использовать [ \<компилятор > элемент](https://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823) в файле Web.config, чтобы зарегистрировать компилятор, как показано в следующем примере:  
   
 ```  
 <system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
@@ -45,4 +40,3 @@ ms.locfileid: "51786084"
 ## <a name="related-sections"></a>Связанные разделы  
  [Веб-проекты](../../extensibility/internals/web-projects.md)  
  Представляет обзор двух типов веб-проектов, проектов веб-сайтов и проектов веб-приложений.
-

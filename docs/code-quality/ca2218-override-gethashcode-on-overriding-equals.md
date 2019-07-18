@@ -1,7 +1,6 @@
 ---
 title: CA2218. Переопределяйте GetHashCode при переопределении Equals
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2218
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 69b020cd-29e8-45a6-952e-32cf3ce2e21d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c57ebb8f808ba98acb673ad3fbbc3ba78bcdc3ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 155d983a68734038220ffb53aa7a5e9504abdb40
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541888"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218. Переопределяйте GetHashCode при переопределении Equals
 
@@ -77,7 +76,7 @@ ms.locfileid: "53860875"
 
 ## <a name="structure-example"></a>Пример структуры
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  В следующем примере структура (тип значения), который нарушает это правило.
 
 ### <a name="code"></a>Код

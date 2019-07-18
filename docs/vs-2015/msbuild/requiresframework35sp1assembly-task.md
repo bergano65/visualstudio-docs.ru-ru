@@ -1,14 +1,9 @@
 ---
 title: Задача RequiresFramework35SP1Assembly | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 755c018a-8a8b-4c94-8aee-3f171fc419e5
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba85c6a1502aa8ebb7a09c6212233feadde1d471
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ada207a619021922b999d0e821ecf27ba48dbb38
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256934"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650646"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>Задача RequiresFramework35SP1Assembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Определяет, требуется ли для приложения платформа .NET Framework 3.5 SP1.  
   
 ## <a name="parameters"></a>Параметры  
@@ -55,9 +49,6 @@ ms.locfileid: "49256934"
 ## <a name="remarks"></a>Примечания  
  Помимо параметров, перечисленных в таблице, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который сам является производным от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -4,17 +4,14 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/15/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Сведения для поставщиков облачных решений о приобретении облачных подписок Visual Studio для клиентов и управлении ими.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: 9e400373d56e494e9292a086c55c07795a75d989
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 4db9211041aca4a49bcd3feb182cfd80423d6960
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739579"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250654"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Покупайте облачные подписки Visual Studio для ваших клиентов и управляйте ими
 
@@ -22,10 +19,8 @@ ms.locfileid: "53739579"
 
 [Сравнение вариантов облачных подписок](https://visualstudio.microsoft.com/vs/pricing)
 
-
 > [!NOTE]
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
-
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -34,11 +29,12 @@ ms.locfileid: "53739579"
 [Дополнительные сведения](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
 ## <a name="who-can-buy-visual-studio-subscriptions"></a>Кто может приобрести подписки Visual Studio?
-Подписки на Visual Studio может приобрести любое лицо с доступом к подписке Azure уровня [владельца или участника](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0). 
+
+Подписки на Visual Studio может приобрести любое лицо с доступом к подписке Azure уровня [владельца или участника](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0).
 
 ## <a name="how-to-buy"></a>Приобретение
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player]
 
 1. Войдите в [партнерский центр Майкрософт](https://partnercenter.microsoft.com).
 0. Нажмите **Клиенты** и выберите клиента, для которого хотите приобрести подписку.
@@ -46,7 +42,7 @@ ms.locfileid: "53739579"
 0. Выберите **Visual Studio Marketplace**.
 0. Убедитесь, что в правом верхнем углу отображается имя вашего клиента.
 0. Нажмите **Подписки**.
-0. Выберите вариант Enterprise или Professional и выберите месячную или годовую подписку на Visual Studio.
+0. Выберите Visual Studio Enterprise или Visual Studio Professional.
 0. Нажмите **Купить**.
 0. Выберите подписку Azure для выставления счета за покупку.
 0. Введите число пользователей, необходимое клиенту.
@@ -59,7 +55,7 @@ ms.locfileid: "53739579"
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Как управлять облачными подписками Visual Studio для ваших клиентов
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player]
 
 1. Войдите в [партнерский центр Майкрософт](https://partnercenter.microsoft.com).
 0. Нажмите **Клиенты** и выберите имя клиента.
@@ -86,19 +82,18 @@ ms.locfileid: "53739579"
 | Visual Studio     | Предприятие             |  Подписка                         | Ежемесячная подписка на Visual Studio Enterprise   |
 | Visual Studio     | Professional           |  Подписка                         | Ежемесячная подписка на Visual Studio Professional |
 
-
 Мы предлагаем скидку 5 % на шестую приобретаемую единицу (для одного клиента) каждый месяц для каждой подписки Visual Studio. Поэтому для каждого варианта подписки существует две строки. В одной строке указано "Минимальное значение" 0, что означает базовую цену за единицы с первой по пятую. В другой строке "Минимальное значение" равно 5, что означает цену со скидкой 5 %, которая применяется к шестой и последующим единицам.
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Вопрос. Как обрабатывается плата за **ежемесячную** облачную подписку?
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Вопрос: Как обрабатывается плата за **ежемесячную** облачную подписку?
 
 Ответ. При первой покупке мы взимаем плату пропорционально оставшемуся количеству дней в текущем месяце. Например, если вы купили 10 ежемесячных облачных подписок Visual Studio Professional 15 апреля, мы взимаем плату за 5 единиц, поскольку в 30-дневном месяце осталось 15 дней, то есть мы сокращаем стоимость на 50 %.
 Первого мая и каждый последующий месяц до отмены подписки мы будем взимать плату за 10 единиц.
 
 Если впоследствии вы увеличите число платных подписок, мы также пропорционально рассчитаем плату за оставшееся количество дней в текущем месяце. Например, если вы покупаете еще одну ежемесячную облачную подписку на Visual Studio Professional 10 мая, мы взимаем плату за 0,677 единиц (до конца месяца остается 21 день).
 
-### <a name="q-how-do-cancellations-work"></a>Вопрос. Как отменить подписку?
+### <a name="q-how-do-cancellations-work"></a>Вопрос: Как отменить подписку?
 
 Ответ. При отмене облачной подписки на Visual Studio вы просто отменяете автоматическое продление. Подписка продолжается до даты продления, а затем истекает.
 По истечении срока действия подписчик Visual Studio больше не сможет пользоваться Visual Studio и другими преимуществами подписки.
@@ -107,7 +102,7 @@ ms.locfileid: "53739579"
 
 Отмена годовой облачной подписки вступает в силу с первого дня месяца, следующего за 12-месячным периодом после покупки или предыдущего продления. Например, если вы приобрели годовую облачную подписку на Visual Studio Enterprise 3 января 2018 года, она будет действовать до 1 февраля 2019 года, а затем будет автоматически продлена на следующий год. Если вы отмените подписку после этой даты и до 1 февраля 2020 года, срок ее действия истечет 1 февраля 2020 года. За отмену подписки до окончания срока действия не предусмотрено возмещение.
 
-### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>Вопрос. Какие скидки существуют для оптовой покупки подписок на Visual Studio?
+### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>Вопрос: Какие скидки существуют для оптовой покупки подписок на Visual Studio?
 
 Ответ.  Вы можете получить скидку 5 % на шестую и все последующие подписки *каждого типа*:
 
@@ -120,10 +115,10 @@ ms.locfileid: "53739579"
 
 Эти скидки отображаются в данных о ценах в [партнерском центре](https://partnercenter.microsoft.com).
 
-### <a name="q-are-there-renewal-discounts"></a>Вопрос. Существуют ли скидки на продление?
+### <a name="q-are-there-renewal-discounts"></a>Вопрос: Существуют ли скидки на продление?
 
 Ответ.  Нет, цены на подписки Visual Studio фиксированы. Покупка и продление подписки стоят одинаково.
 
-### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>Вопрос. Существуют ли специальные цены на средства Azure для разработки и тестирования для поставщиков облачных решений?
+### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>Вопрос: Существуют ли специальные цены на средства Azure для разработки и тестирования для поставщиков облачных решений?
 
-Ответ. Пока что нет. Ваши клиенты могут воспользоваться [расценками на средства для разработки и тестирования Azure](http://aka.ms/azuredevtestpricing), но мы не предлагаем специальные условия для поставщиков облачных решений.
+Ответ. Пока что нет. Ваши клиенты могут воспользоваться [расценками на средства для разработки и тестирования Azure](https://aka.ms/azuredevtestpricing), но мы не предлагаем специальные условия для поставщиков облачных решений.

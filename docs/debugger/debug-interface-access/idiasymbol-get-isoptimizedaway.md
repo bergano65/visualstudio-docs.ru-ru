@@ -7,32 +7,33 @@ dev_langs:
 ms.assetid: c18b1e38-b152-4a13-aba0-59faded5b2e6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 887bcaae0e87aabd3f2ecd9a051d33b0b41ed771
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: b0f8910d35106574912e4a01f7995bfe0f503e3f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917401"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "62836242"
 ---
 # <a name="idiasymbolgetisoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
-Указывает, оптимизирована ли переменная немедленно.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_isOptimizedAway(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Указатель на `BOOL` , указывает ли переменная является отброшено при оптимизации.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Указывает, оптимизирована ли переменная немедленно.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_isOptimizedAway(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Указатель на `BOOL` , указывает ли переменная является отброшено при оптимизации.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

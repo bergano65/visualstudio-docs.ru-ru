@@ -1,21 +1,20 @@
 ---
 title: Использование моделей в процессе разработки
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a507a6995ceb3c04dfc3d9daf57fa341fe6fc7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aced2be4d584fb2ede58527a1d541f24089f220d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907287"
 ---
 # <a name="use-models-in-your-development-process"></a>Использование моделей в процессе разработки
 
@@ -134,7 +133,7 @@ ms.locfileid: "53832822"
 |-|-|
 |**Видеоролики**|![ссылка на видео](../data-tools/media/playvideo.gif) [MSDN видеоролики: Создание и использование моделей и схем UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif) [Channel 9: Использование UML в Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![ссылка на видео](../data-tools/media/playvideo.gif) [MSDN практические руководства: Средства UML и расширяемость (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Форумы**|- [Средства моделирования и визуализации Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Пакет SDK для моделирования и визуализации в Visual Studio (инструменты DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Блоги**|[DevOps от Майкрософт](https://blogs.msdn.microsoft.com/devops/)|
+|**Блоги**|[DevOps от Майкрософт](https://devblogs.microsoft.com/devops/)|
 |**Технические статьи и журналы**|[Центр архитекторов на MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Руководство по средствам проектирования архитектуры Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>См. также

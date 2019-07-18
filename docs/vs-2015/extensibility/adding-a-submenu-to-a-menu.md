@@ -1,14 +1,9 @@
 ---
 title: Добавление подменю в меню | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - context menus
 - submenus, cascading
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 caps.latest.revision: 44
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 14ad9d2daf603dd2ca80a784251f19503fee1cba
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f458d46395c3a902e62ba5dd4ac7d624c326700c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184887"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Добавление подменю в меню
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +34,9 @@ ms.locfileid: "51738319"
   
 ## <a name="adding-a-submenu-to-a-menu"></a>Добавление подменю в меню  
   
-1.  Выполните действия, описанные в [добавлению меню в строке меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) Создание элемента проекта и меню. В этом пошаговом руководстве предполагается, что имя проекта VSIX — `TopLevelMenu`.  
+1. Выполните действия, описанные в [добавлению меню в строке меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) Создание элемента проекта и меню. В этом пошаговом руководстве предполагается, что имя проекта VSIX — `TopLevelMenu`.  
   
-2.  Откройте TestCommandPackage.vsct. В `<Symbols>` добавьте `<IDSymbol>` элемент для подменю, один для подменю группы и одна для команды, все это в `<GuidSymbol>` узел с именем «guidTopLevelMenuCmdSet.» Это связано с тем же узел, содержащий `<IDSymbol>` элемент для меню верхнего уровня.  
+2. Откройте TestCommandPackage.vsct. В `<Symbols>` добавьте `<IDSymbol>` элемент для подменю, один для подменю группы и одна для команды, все это в `<GuidSymbol>` узел с именем «guidTopLevelMenuCmdSet.» Это связано с тем же узел, содержащий `<IDSymbol>` элемент для меню верхнего уровня.  
   
     ```xml  
     <IDSymbol name="SubMenu" value="0x1100"/>  
@@ -49,7 +44,7 @@ ms.locfileid: "51738319"
     <IDSymbol name="cmdidTestSubCommand" value="0x0105"/>  
     ```  
   
-3.  Добавление в только что созданный подменю для `<Menus>` раздел.  
+3. Добавление в только что созданный подменю для `<Menus>` раздел.  
   
     ```xml  
     <Menu guid="guidTestCommandPackageCmdSet" id="SubMenu" priority="0x0100" type="Menu">  
@@ -63,7 +58,7 @@ ms.locfileid: "51738319"
   
      Пара GUID и идентификатора родительского указывает группы меню, который был создан в [добавлению меню в строке меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md), и является дочерним элементом меню верхнего уровня.  
   
-4.  Добавление группы меню, определенных на шаге 2, чтобы `<Groups>` раздела и сделайте его дочерним подменю.  
+4. Добавление группы меню, определенных на шаге 2, чтобы `<Groups>` раздела и сделайте его дочерним подменю.  
   
     ```xml  
     <Group guid="guidTestCommandPackageCmdSet" id="SubMenuGroup" priority="0x0000">  
@@ -71,7 +66,7 @@ ms.locfileid: "51738319"
     </Group>  
     ```  
   
-5.  Добавьте новый `<Button>` элемент `<Buttons>` разделе для определения команды, созданный на шаге 2, как элемент подменю.  
+5. Добавьте новый `<Button>` элемент `<Buttons>` разделе для определения команды, созданный на шаге 2, как элемент подменю.  
   
     ```xml  
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidTestSubCommand" priority="0x0000" type="Button">  
@@ -84,19 +79,19 @@ ms.locfileid: "51738319"
     </Button>  
     ```  
   
-6.  Постройте решение и запустите отладку. Вы должны увидеть экспериментальный экземпляр.  
+6. Постройте решение и запустите отладку. Вы должны увидеть экспериментальный экземпляр.  
   
-7.  Нажмите кнопку **TestMenu** для просмотра с именем подменю **подменю**. Нажмите кнопку **подменю** откройте подменю и новой команды, см. в разделе **теста подкоманда**. Обратите внимание, что нажатие кнопки **теста подкоманда** не выполняет никаких действий.  
+7. Нажмите кнопку **TestMenu** для просмотра с именем подменю **подменю**. Нажмите кнопку **подменю** откройте подменю и новой команды, см. в разделе **теста подкоманда**. Обратите внимание, что нажатие кнопки **теста подкоманда** не выполняет никаких действий.  
   
 ## <a name="adding-a-command"></a>Добавление команды  
   
-1.  Откройте TestCommand.cs и добавьте следующий идентификатор команды после существующий идентификатор команды.  
+1. Откройте TestCommand.cs и добавьте следующий идентификатор команды после существующий идентификатор команды.  
   
     ```csharp  
     public const int cmdidTestSubCmd = 0x105;  
     ```  
   
-2.  Добавление вложенной команды. Найти команду конструктора. Добавьте следующие строки сразу после вызова `AddCommand` метод.  
+2. Добавление вложенной команды. Найти команду конструктора. Добавьте следующие строки сразу после вызова `AddCommand` метод.  
   
     ```csharp  
     CommandID subCommandID = new CommandID(CommandSet, (int)TestCommandPackageGuids.cmdidTestSubCmd);  
@@ -131,7 +126,7 @@ ms.locfileid: "51738319"
                 }  
     ```  
   
-3.  Добавьте SubItemCallback(). Это метод, который вызывается при нажатии новой команды в подменю.  
+3. Добавьте SubItemCallback(). Это метод, который вызывается при нажатии новой команды в подменю.  
   
     ```csharp  
     private void SubItemCallback(object sender, EventArgs e)  
@@ -157,11 +152,10 @@ ms.locfileid: "51738319"
     }  
     ```  
   
-4.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
+4. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
-5.  На **TestMenu** меню, щелкните **подменю** и нажмите кнопку **теста подкоманда**. Появится окно сообщения с отображения текста «Тестирования команду внутри TestCommand.SubItemCallback()».  
+5. На **TestMenu** меню, щелкните **подменю** и нажмите кнопку **теста подкоманда**. Появится окно сообщения с отображения текста «Тестирования команду внутри TestCommand.SubItemCallback()».  
   
 ## <a name="see-also"></a>См. также  
  [Добавление меню в строке меню Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
  [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)
-

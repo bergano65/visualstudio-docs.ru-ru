@@ -1,14 +1,9 @@
 ---
 title: Команды консоли JavaScript | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,25 +17,25 @@ ms.assetid: 359e2b24-6bb7-48e7-8b55-b570df0cb774
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d62754dc881e42b2beada17379def19eb96abcda
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725332"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690583"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
- Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Информация в этом разделе относится к приложениям Магазина Windows, приложениям Магазина Windows Phone и приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova. Информацию о командах консоли, поддерживаемых в приложениях Cordova, см. в разделе [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Информацию об использование консоли в инструментах Internet Explorer, вызываемых кнопкой F12, см. в [этой статье](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Для отправки сообщений и выполнения других задач в окне консоли JavaScript системы Visual Studio можно использовать команды. Примеры использования этого окна см. в разделе [краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Информация в этом разделе относится к приложениям Магазина Windows, приложениям Магазина Windows Phone и приложениям, созданным с помощью инструментов Visual Studio для Apache Cordova. Информацию о командах консоли, поддерживаемых в приложениях Cordova, см. в разделе [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Информацию об использование консоли в инструментах Internet Explorer, вызываемых кнопкой F12, см. в [этой статье](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Если окно консоли JavaScript закрыто, его можно открыть при отладке в Visual Studio, выбрав **Отладка** > **Windows** > **Консоль JavaScript**.  
   
 > [!NOTE]
->  Если во время сеанса отладки окно недоступно, убедитесь, что в свойствах отладки проекта тип отладчика установлен на **Скрипт** .  
+> Если во время сеанса отладки окно недоступно, убедитесь, что в свойствах отладки проекта тип отладчика установлен на **Скрипт** .  
   
 ## <a name="console-object-commands"></a>команды объекта console  
  В этой таблице показан синтаксис для команд объекта `console` , которые можно использовать в окне консоли JavaScript или для отправки сообщений в консоль из кода. Этот объект предоставляет несколько форм, позволяющих при необходимости разделять информационные сообщения и сообщения об ошибках.  
@@ -48,9 +43,9 @@ ms.locfileid: "51725332"
  Чтобы отличить эту консоль от именованной консоли локальных объектов, можно воспользоваться более длинной командой из `window.console.[command]` .  
   
 > [!TIP]
->  Более ранние версии Visual Studio не поддерживают полный набор команд. Для быстрого получения информации о поддерживаемых командах используйте IntelliSense для объекта консоли.  
+> Более ранние версии Visual Studio не поддерживают полный набор команд. Для быстрого получения информации о поддерживаемых командах используйте IntelliSense для объекта консоли.  
   
-|Команда|Описание:|Пример|  
+|Команда|Описание|Пример|  
 |-------------|-----------------|-------------|  
 |`assert(expression, message)`|Отправляет сообщение, если `expression` имеет значение **false**.|`console.assert((x == 1), "assert message: x != 1");`|  
 |`clear()`|Удаляет сообщения из окна консоли (включая сообщения об ошибках в скрипте), а также скрипт, появляющийся в окне консоли. Не удаляет скрипт, введенный после появления на консоли запроса на ввод.|`console.clear();`|  
@@ -76,7 +71,7 @@ ms.locfileid: "51725332"
 ## <a name="miscellaneous-commands"></a>Разные команды  
  Эти команды также доступны в окне консоли JavaScript (но недоступны в коде).  
   
-|Команда|Описание:|Пример|  
+|Команда|Описание|Пример|  
 |-------------|-----------------|-------------|  
 |`$0`, `$1`, `$2`, `$3`, `$4`|Возвращает указанный элемент в окно консоли. `$0` возвращает элемент, выбранный в настоящее время в проводнике DOM, `$1` возвращает элемент, ранее выбранный в проводнике DOM, и так далее до четвертого ранее выбранного элемента.|$3|  
 |`$(id)`|Возвращает элемент по идентификатору. Это команда быстрого доступа к `document.getElementById(id)`, где `id` — это строка, представляющая идентификатор элемента.|`$("contenthost")`|  
@@ -98,7 +93,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Просмотр объектов в окне консоли JavaScript  
  При использовании окна консоли JavaScript можно взаимодействовать с любым объектом, находящимся в области. Чтобы проверить в окне консоли объект вне области, используйте `console.log` , `console.dir`и прочие команды в коде. Кроме того, для взаимодействия в окне консоли с объектом, находящимся в области, можно установить в коде точку останова (**Точка останова** > **Insert Точка останова**).  
   
-##  <a name="ConsoleLog"></a> Форматирование вывода команды console.log  
+## <a name="ConsoleLog"></a> Форматирование вывода команды console.log  
  При передаче множественных аргументов команде `console.log`, консолью обрабатывает их как массив и объединяет вывод.  
   
 ```javascript  
@@ -143,8 +138,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Краткое руководство: Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Краткое руководство. Отладка JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)

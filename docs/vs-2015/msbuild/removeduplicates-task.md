@@ -1,14 +1,9 @@
 ---
 title: Задача RemoveDuplicates | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RemoveDuplicates
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 33bb64dbc7d73bd2c20e3efa7ff3a11510923a1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 73ad829c86305ff4d9a54025467e262d56e24dbc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263684"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654520"
 ---
 # <a name="removeduplicates-task"></a>Задача RemoveDuplicates
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Удаляет повторяющиеся элементы из указанной коллекции элементов.  
   
 ## <a name="parameters"></a>Параметры  
@@ -75,10 +69,7 @@ ms.locfileid: "49263684"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Задачи](../msbuild/msbuild-tasks.md)
-
-
-

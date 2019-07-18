@@ -1,14 +1,9 @@
 ---
 title: '&lt;сборка&gt; элемент (развертывание ClickOnce) | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
 dev_langs:
@@ -21,13 +16,13 @@ ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 5fa45d64956fe1347477abb533e45565f27996f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3b77cfacf3dca2c2cc20d674f79929e9958a16d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155738"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;сборка&gt; элемент (развертывание ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49259952"
   
 ```  
   
-      <assembly    
+      <assembly    
    manifestVersion  
 />  
 ```  
@@ -50,7 +45,7 @@ ms.locfileid: "49259952"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|`manifestVersion`|Обязательно. Этот атрибут должно быть присвоено `1.0`.|  
+|`manifestVersion`|Обязательный. Этот атрибут должно быть присвоено `1.0`.|  
   
 ## <a name="example"></a>Пример  
  В следующем примере кода показано `assembly` элемент в манифест развертывания для приложения, развернутого с помощью [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Данный пример кода является частью большего примера для [манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md) раздела.  
@@ -72,7 +67,4 @@ ms.locfileid: "49259952"
   
 ## <a name="see-also"></a>См. также  
  [Манифест развертывания ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [\<сборка > элемент](../deployment/assembly-element-clickonce-application.md)
-
-
-
+ [Элемент \<assembly>](../deployment/assembly-element-clickonce-application.md)

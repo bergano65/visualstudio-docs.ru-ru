@@ -1,9 +1,8 @@
 ---
 title: Настройка параметров по умолчанию для корпоративного развертывания
 description: Сведения о доменных политиках и других операциях настройки для корпоративного развертывания Visual Studio.
-ms.date: 05/05/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - gpo
@@ -14,17 +13,19 @@ helpviewer_keywords:
 ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55bc436db77b90f30cec39fe2d0d33e3a8c60bb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945018"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Настройка параметров по умолчанию для корпоративного развертывания Visual Studio 2017
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Настройка параметров по умолчанию для корпоративного развертывания Visual Studio
 
 Вы можете задать политики реестра, влияющие на развертывание Visual Studio. Эти политики являются глобальными для нового установщика и изменяют следующие параметры:
 
@@ -63,6 +64,6 @@ ms.locfileid: "53906079"
 
 ## <a name="see-also"></a>См. также
 
- * [Установка Visual Studio](install-visual-studio.md)
- * [Отключение или перемещение кэша пакетов](disable-or-move-the-package-cache.md)
- * [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Установка Visual Studio](install-visual-studio.md)
+- [Отключение или перемещение кэша пакетов](disable-or-move-the-package-cache.md)
+- [Использование параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

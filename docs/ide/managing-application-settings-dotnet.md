@@ -1,7 +1,6 @@
 ---
 title: Управление параметрами приложения (.NET)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - msvse_settingsdesigner.err.nameblank
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - application settings [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f4340f87782573f7330705786d0e4f923eb914
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537309"
 ---
 # <a name="manage-application-settings-net"></a>Управление параметрами приложения (.NET)
 
@@ -85,7 +84,9 @@ ms.locfileid: "53865509"
 
 Настоятельно рекомендуется использовать для доступа к параметрам объект `My.Settings` и файл *SETTINGS* по умолчанию. Это связано с тем, что можно использовать **конструктор параметров** для задания свойств параметрам и, кроме того, настройки пользователей автоматически сохраняются перед завершением работы приложения. Однако приложение Visual Basic может получить доступ к настройкам напрямую. В этом случае необходим доступ к классу `MySettings` и использование настраиваемого файла *SETTINGS* в корневой папке проекта. Нужно сохранить пользовательские параметры до завершения работы приложения, как это было бы сделано для приложения C#. Это описано в следующем разделе.
 
-## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Доступ или изменение параметров приложения во время выполнения в C# #
+<!-- markdownlint-disable MD003 MD020 -->
+## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Доступ или изменение параметров приложения во время выполнения в C#
+<!-- markdownlint-enable MD003 MD020 -->
 
 В языках, отличных от Visual Basic, например C#, доступ к классу `Settings` необходимо осуществлять напрямую, как показано в приведенном ниже примере [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
 

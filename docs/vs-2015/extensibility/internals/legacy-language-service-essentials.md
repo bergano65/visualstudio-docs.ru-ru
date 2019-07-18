@@ -1,14 +1,9 @@
 ---
 title: Основные компоненты службы прежней версией языка | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
 - language services, integrating programming languages
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7c878c4fe124d0443ab5f926a03a378b5b4af014
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a3926ff84f3b2e6415df1ca7333409c05d839685
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436262"
 ---
 # <a name="legacy-language-service-essentials"></a>Основные компоненты языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,11 +28,11 @@ ms.locfileid: "51753634"
  Устаревший языковой службы реализуются как часть пакета VSPackage, но новый способ реализовать функции языковой службы является использование расширений MEF. Чтобы подробнее узнать о новых способах реализации языковой службы, см. в разделе [редактора и языковой службы расширения](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
+> Мы рекомендуем начать использовать новый редактор API как можно скорее. Это улучшит производительность службы языка и позволяют воспользоваться преимуществами новых функций редактора.  
   
  Устаревший языковой службы предоставляют следующие возможности:  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |-------------|-----------------|  
 |Цветовая подсветка синтаксиса|Вызывает редактор представления для отображения различных цветов и стилей шрифтов для различных элементов языка. Этих различий можно упростить чтение и изменение файлов.<br /><br /> Общие сведения см. в разделе [цветовой подсветки синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Сведения об этой функции в managed package framework (MPF), см. в разделе [цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|  
 |Завершение операторов|Выполняет инструкцию или ключевое слово, которое пользователь начинает ввод. Завершение операторов помогает пользователям вводить сложных инструкций, с более короткого запроса и меньше вероятность того, что ошибка.<br /><br /> Общие сведения см. в разделе [завершение операторов в языковой службе прежних версий](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Сведения об этой функции в MPF см. в разделе [завершение слов в языковой службе прежних версий](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|  
@@ -49,8 +44,7 @@ ms.locfileid: "51753634"
   
  Следующие функции относятся к поддержка языков программирования, но не являются частью службы языка:  
   
-|Функция|Описание:|  
+|Функция|Описание|  
 |-------------|-----------------|  
 |Вычислители выражений|Поддерживает [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] отладчика, проверка точек останова и список выражений для отображения в **"Видимые"** окно отладки.<br /><br /> Дополнительные сведения см. в разделе [поддержку языковой службы для отладки](../../extensibility/internals/language-service-support-for-debugging.md).|  
 |Средства просмотра символов|Поддерживает **обозреватель объектов**, **представление классов**, **Обозреватель вызовов**, и **результаты поиска символа**.|
-

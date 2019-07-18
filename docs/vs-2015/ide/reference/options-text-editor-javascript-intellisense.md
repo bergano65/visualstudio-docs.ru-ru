@@ -1,14 +1,9 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", JavaScript, IntelliSense | Документы Майкрософт"
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.General
@@ -16,18 +11,17 @@ ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6aa1f4027746ebf1304362217c16fffa7e68a75d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cc0a254f13c4689dd6526646ddd2ff30b6094411
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432983"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>"Параметры", "Текстовый редактор", JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Страница **IntelliSense** диалогового окна **Параметры** служит для изменения параметров, влияющих на поведение IntelliSense для JavaScript. Страницу **IntelliSense** можно открыть, выбрав в меню **Сервис**пункт **Параметры** , а затем раскрыв узлы **Текстовый редактор**, **JavaScript**, **IntelliSense.**  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
@@ -50,7 +44,7 @@ ms.locfileid: "49822415"
  Если этот флажок установлен и если имеется файл JavaScript, открытый вне контекста проекта, Visual Studio загрузит удаленные файлы JavaScript, на которые имеются ссылки в файле, для предоставления сведений IntelliSense. Если этот параметр установлен, файлы будут загружаться при их включении в качестве ссылки в файле JavaScript.  
   
 > [!NOTE]
->  Для веб-проектов удаленные файлы, ссылки на которые указаны в проекте, загружаются по умолчанию.  
+> Для веб-проектов удаленные файлы, ссылки на которые указаны в проекте, загружаются по умолчанию.  
   
 ## <a name="statement-completion"></a>Завершение операторов  
  С помощью этих параметров можно изменять поведение функции завершения операторов IntelliSense.  
@@ -80,13 +74,10 @@ ms.locfileid: "49822415"
   Этот параметр задает порядок, в котором файлы загружаются в контекст языковой службы. Порядок можно изменять с помощью кнопок **Удалить**, **Вверх**и **Вниз** . Для корректной работы IntelliSense файл, который зависит от другого файла, должен загружаться после этого файла.  
   
 > [!CAUTION]
->  Если определен объект определен безусловно в двух или более неявных ссылках, для определения объекта будет использоваться последняя ссылка в этом списке.  
+> Если определен объект определен безусловно в двух или более неявных ссылках, для определения объекта будет использоваться последняя ссылка в этом списке.  
   
  **Добавить ссылку на текущую группу**  
  Этот параметр обеспечивает способ добавления дополнительных JS-файлов IntelliSense путем просмотра соответствующих файлов.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [IntelliSense для JavaScript](../../ide/javascript-intellisense.md)
-
-
-

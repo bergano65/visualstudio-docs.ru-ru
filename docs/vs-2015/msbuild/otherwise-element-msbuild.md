@@ -1,14 +1,9 @@
 ---
 title: Элемент Otherwise (MSBuild) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Otherwise
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: de3997e9-1595-4263-a886-95530b56a319
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a84284c1378ba5fd2cd4cf953a6d7e15b4f207e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: acf285c895e5160e850b6bc8f20f920279a5e26c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266361"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659284"
 ---
 # <a name="otherwise-element-msbuild"></a>Элемент Otherwise (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Указывает блок кода, который должен быть выполнен, только если условия всех элементов `When` оценены как `false`.  
   
  \<Проект>  
@@ -129,9 +123,6 @@ ms.locfileid: "49266361"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Условные конструкции](../msbuild/msbuild-conditional-constructs.md)   
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

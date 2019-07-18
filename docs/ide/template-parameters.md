@@ -1,7 +1,6 @@
 ---
 title: Параметры шаблонов проектов и элементов
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
@@ -10,19 +9,19 @@ helpviewer_keywords:
 - item templates, parameters
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e945ac065b2c7f5e3a677ae2175b45a94af2910a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950345"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
 Вы можете заменить значения в шаблоне при создании его экземпляра. Чтобы настроить эту функцию, используйте *параметры шаблона*. Они позволяют заменить такие значения, как имена классов и пространства имен в шаблоне. Эти параметры заменяет мастер шаблонов, запускающийся в фоновом режиме, когда пользователь добавляет новый элемент или проект.
 
-## <a name="declaring-and-enabling-template-parameters"></a>Объявление и включение параметров шаблона
+## <a name="declare-and-enable-template-parameters"></a>Объявление и включение параметров шаблона
 
 Параметры шаблона объявляются в формате $*параметр*$. Например:
 
@@ -32,7 +31,7 @@ ms.locfileid: "53935194"
 
 - $guid5$
 
-### <a name="to-enable-parameter-substitution-in-templates"></a>Включение подстановки параметров в шаблонах
+### <a name="enable-parameter-substitution-in-templates"></a>Включение подстановки параметров в шаблонах
 
 1. В *VSTEMPLATE*-файле шаблона найдите элемент `ProjectItem`, соответствующий элементу, для которого требуется включить замену параметров.
 
@@ -46,19 +45,20 @@ ms.locfileid: "53935194"
 
 ## <a name="reserved-template-parameters"></a>Зарезервированные параметры шаблона
 
-В таблице ниже перечислены параметры зарезервированного шаблона, которые могут использоваться любым шаблоном.
+В таблице ниже перечислены параметры зарезервированного шаблона, которые могут использоваться любым шаблоном:
 
 |Параметр|Описание|
 |---------------|-----------------|
 |clrversion|Текущая версия среды CLR.|
+|ext_*|Добавьте префикс `ext_` к любому параметру, чтобы сослаться на переменные родительского шаблона. Например, `ext_safeprojectname`.|
 |guid[1–10]|GUID, используемый для замены GUID проекта в файле проекта. Можно указать до 10 уникальных GUID (например, `guid1`).|
-|itemname|Имя, указанное пользователем в диалоговом окне **Добавление нового элемента**.|
+|itemname|Имя файла, в котором используется параметр.|
 |machinename|Имя текущего компьютера (например, Computer01).|
-|projectname|Имя, указанное пользователем в диалоговом окне **Новый проект**.|
+|projectname|Имя, указанное пользователем при создании проекта.|
 |registeredorganization|Значение раздела реестра из HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Корневое пространство имен для текущего проекта. Этот параметр применяется только к шаблонам элементов.|
-|safeitemname|Имя, указанное пользователем в диалоговом окне **Добавление нового элемента**, с удаленными небезопасными символами и пробелами.|
-|safeprojectname|Имя, указанное пользователем в диалоговом окне **Новый проект**, с удаленными небезопасными символами и пробелами.|
+|safeitemname|Аналогично параметру `itemname`, но с удалением всех небезопасных символов и пробелов.|
+|safeprojectname|Имя, указанное пользователем при создании проекта, но с удаленными небезопасными символами и пробелами.|
 |время|Текущее время в формате ДД/ММ/ГГГГ 00:00:00.|
 |SpecificSolutionName|Имя решения. Если установлен флажок "create solution directory" (Создать каталог решения), `SpecificSolutionName` имеет имя решения. Если флажок "create solution directory" (Создать каталог решения) не установлен, `SpecificSolutionName` пусто.|
 |userdomain|Домен текущего пользователя.|
@@ -118,6 +118,7 @@ namespace $safeprojectname$
 
 ## <a name="see-also"></a>См. также
 
+- [Практическое руководство. замена параметров в шаблоне](how-to-substitute-parameters-in-a-template.md)
 - [Настройка шаблонов](../ide/customizing-project-and-item-templates.md)
 - [Практическое руководство. Создание шаблонов проектов](../ide/how-to-create-project-templates.md)
 - [Справочник по схемам шаблонов](../extensibility/visual-studio-template-schema-reference.md)

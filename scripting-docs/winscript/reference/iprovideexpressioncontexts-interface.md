@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IProvideExpressionContexts | Документы Microsoft
+title: Интерфейс IProvideExpressionContexts | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,24 +13,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 402b439da6f1fa369accacb27f987ac77119e343
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: b6ec0d5e17b0d3527252352c2e789adfac4fa859
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410036"
 ---
 # <a name="iprovideexpressioncontexts-interface"></a>Интерфейс IProvideExpressionContexts
-Предоставляет способ для перечисления контекстами выражения известен, определенных компонентом. Обработчики скриптов обычно реализуют этот интерфейс.  
+Предоставляет способ для перечисления контекстов выражений, известных по определенному компоненту. Этот интерфейс обычно реализуется обработчиков сценариев.  
   
- Диспетчер отладки процессов использует этот интерфейс для поиска всех глобальных выражениях контекстов, связанные с данного потока.  
+ Диспетчер отладки процессов использует этот интерфейс, чтобы найти все контексты глобальное выражение, связанное с помощью данного потока.  
   
 > [!NOTE]
->  Этот интерфейс вызывается из потока, представляющие интерес. Он определяется разработчиком для идентификации текущего потока и возврата соответствующим перечислителем.  
+> Этот интерфейс вызывается из потока интерес. Это зависит от разработчика для идентификации текущего потока и возврата соответствующего перечислителя.  
   
 ## <a name="methods"></a>Методы  
  Помимо методов, наследуемых от `IUnknown`, `IProvideExpressionContexts` интерфейс предоставляет следующие методы.  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IProvideExpressionContexts::EnumExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-enumexpressioncontexts.md)|Возвращает перечислитель контекстами выражения известен этого компонента.|
+|[IProvideExpressionContexts::EnumExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-enumexpressioncontexts.md)|Возвращает перечислитель контекстов выражений, известных этим компонентом.|

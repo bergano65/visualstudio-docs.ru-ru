@@ -1,32 +1,26 @@
 ---
 title: Отслеживание файлов | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, file tracking
 ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 179124c09e0846cbbf649a819bd8c954b5a72e7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d8d999d65b207f72542b732842f6eb984df40764
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156460"
 ---
 # <a name="file-tracking"></a>Отслеживание файлов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Журналы отслеживания файлов отправляют в файловую систему Windows вызов процесса и его дочерних процессов. Вызывая указанные ниже функции, программы управляют включением и отключением ведения журнала, а также задают нужный файл журнала.  
   
 ## <a name="in-this-section"></a>В этом разделе  
@@ -56,6 +50,3 @@ ms.locfileid: "49228193"
   
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)  
  Записывает журнал отслеживания для текущего контекста.
-
-
-

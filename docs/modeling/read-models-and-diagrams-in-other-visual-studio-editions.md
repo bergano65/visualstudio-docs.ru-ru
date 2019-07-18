@@ -7,16 +7,15 @@ helpviewer_keywords:
 - models, versions of Visual Studio
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 06a34bd09c84c3afc4162c4930fc34963b56b8fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823985"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Чтение моделей и схем в других выпусках Visual Studio
 
@@ -35,16 +34,16 @@ ms.locfileid: "53905456"
 
 Чтобы прочитать схему зависимостей, минимальный набор необходимых файлов выглядит следующим образом:
 
--   Два файла схемы, который вы хотите прочитать, например, схемы **MyDiagram.classdiagram и MyDiagram.classdiagram.layout**.
+- Два файла схемы, который вы хотите прочитать, например, схемы **MyDiagram.classdiagram и MyDiagram.classdiagram.layout**.
 
     > [!NOTE]
     > Для схем зависимостей, вам также потребуется файл с именем _Моя_схема_**. layerdiagram.suppressions**.
 
--   Файл проекта моделирования (**MyModel.modelproj**)
+- Файл проекта моделирования (**MyModel.modelproj**)
 
--   Файл корневой модели (**ModelDefinition\MyModel.uml**)
+- Файл корневой модели (**ModelDefinition\MyModel.uml**)
 
--   Файлы пакета для любого пакета, на который ссылается на диаграмме (**ModelDefinition\MyPackage.uml**)
+- Файлы пакета для любого пакета, на который ссылается на диаграмме (**ModelDefinition\MyPackage.uml**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Изменения, которые можно внести в режиме только для чтения
 
@@ -58,5 +57,5 @@ ms.locfileid: "53905456"
 
 ## <a name="see-also"></a>См. также
 
-- [Схемы зависимостей: Справочник по](../modeling/layer-diagrams-reference.md)
+- [Схемы зависимостей: справочник](../modeling/layer-diagrams-reference.md)
 - [Создание моделей для приложения](../modeling/create-models-for-your-app.md)

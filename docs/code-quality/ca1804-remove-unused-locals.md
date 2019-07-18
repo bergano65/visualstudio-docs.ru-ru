@@ -1,7 +1,6 @@
 ---
 title: CA1804. Удалите неиспользуемые локальные переменные
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1804
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 47578cc281334da7eeebeea6eaa5ef0c1c021c8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c94f1b2709f3541692a0dfcd2a92559135639c2a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819865"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744594"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804. Удалите неиспользуемые локальные переменные
 
@@ -41,7 +40,11 @@ ms.locfileid: "53819865"
  Неиспользуемые локальные переменные и ненужные присвоения увеличивают размер сборки и снижают производительность.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, удалите или использовать локальную переменную. Обратите внимание, что компилятор C#, входит в состав [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] удаляет неиспользуемые локальные переменные при `optimize` включен параметр.
+
+Чтобы устранить нарушение этого правила, удалите или использовать локальную переменную.
+
+> [!NOTE]
+> C# Компилятор удаляет неиспользуемые локальные переменные при `optimize` включен параметр.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Отключайте предупреждение из этого правила, если переменная создана компилятором. Можно также безопасно подавить предупреждение из этого правила, или отключить правило, если производительность и обслуживание кода не являются критичными моментами.

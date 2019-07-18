@@ -1,32 +1,27 @@
 ---
 title: Интерфейсы оценки выражения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - expression evaluation, interfaces
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c7365e17749d69d0dc36e06c3d11d053a44e94d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8a710019390120768b665cf3b27174831a67f0cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435042"
 ---
 # <a name="expression-evaluation-interfaces"></a>Интерфейсы вычисления выражений
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Ниже перечислены интерфейсы оценки выражения [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] отладки пакета SDK.  
   
@@ -35,13 +30,13 @@ ms.locfileid: "51774846"
   
  Каждый интерфейс в таблице показан компонент, который можно реализовать из следующего списка:  
   
--   Отладка ядра (DE)  
+- Отладка ядра (DE)  
   
--   Средство оценки выражений (EE)  
+- Средство оценки выражений (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
-|Интерфейс|Реализуется|Описание:|  
+|Интерфейс|Реализуется|Описание|  
 |---------------|--------------------|-----------------|  
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|Представляет числовые псевдоним для переменной.|  
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|Представляет числовые псевдоним для переменной и обеспечивает вычислитель выражений (EE), чтобы получить домен приложения для псевдонима.|  
@@ -70,4 +65,3 @@ ms.locfileid: "51774846"
  [Справочник по API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [Запись вычислителя выражений CLR](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Визуализатор типов и пользовательское средство просмотра](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
-

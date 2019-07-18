@@ -1,7 +1,6 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", XAML, \"Форматирование\""
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Formatting.General
@@ -27,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b5eaddd1170fa1f6f076e79de2038e0089fd4f39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ed364d9c8995a93acb0de8002bafefd603c2d71
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969258"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>"Параметры", "Текстовый редактор", XAML, "Форматирование"
 
@@ -45,13 +44,13 @@ ms.locfileid: "53950242"
 
 Автоматическое форматирование может возникать при обнаружении одного из следующих событий.
 
--   Ввод закрывающего тега или тега в краткой форме записи.
+- Ввод закрывающего тега или тега в краткой форме записи.
 
--   Ввод открывающего тега.
+- Ввод открывающего тега.
 
--   Вставка из буфера обмена.
+- Вставка из буфера обмена.
 
--   Форматирование команд клавиатуры.
+- Форматирование команд клавиатуры.
 
 Можно указать, какие события инициируют автоматическое форматирование.
 
@@ -147,7 +146,6 @@ Width="75">Hello</Button>
 
 ```xml
 <Grid>
-
 
 <Button Name="button1">Hello</Button>
 

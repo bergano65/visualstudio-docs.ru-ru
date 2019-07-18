@@ -1,7 +1,6 @@
 ---
 title: предупреждения переносимости
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.PortabilityRules
@@ -12,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 902e859a-2153-4970-baaa-8a5b4a11806f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f181411d8379c8583057419c2a31f6b27c9d884
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6a3557cffec60de91da46f60040ec675c866cbf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825329"
 ---
 # <a name="portability-warnings"></a>предупреждения переносимости
 Предупреждения переносимости поддерживают возможность переноса для различных операционных систем.
 
 ## <a name="in-this-section"></a>В этом разделе
 
-|Правило|Описание:|
+|Правило|Описание|
 |----------|-----------------|
 |[CA1900: Поля типа значения должны быть переносимыми](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Это правило проверяет правильность выравнивания структур, объявленных с помощью атрибута явной разметкой, при маршалировании в неуправляемый код на 64-разрядных операционных системах.|
 |[CA1901: Объявления P/Invoke должны быть переносимыми](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Это правило вычисляет размер каждого параметра и возвращаемого значения вызова P/Invoke и проверяет правильность их размера при маршалировании в неуправляемый код в 32-разрядных и 64-разрядных операционных системах.|

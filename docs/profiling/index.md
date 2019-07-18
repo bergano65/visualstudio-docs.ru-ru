@@ -1,22 +1,24 @@
 ---
 layout: LandingPage
 title: Измерение производительности приложений с помощью профилирования | Документация Майкрософт
-description: Узнайте, как с помощью Visual Studio 2017 создавать профили производительности для приложений, служб и инструментов на выбранном вами языке.
+description: Узнайте, как с помощью Visual Studio профилировать производительность приложений, служб и инструментов на выбранном вами языке.
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: ced28177670ab33916701858bfae36fa860a357f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e47f44a78fbd8632b834c46c451f5f3106c85fcd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995438"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Измерение производительности приложений в Visual Studio
 
-Средства профилирования и диагностики позволяют разработчикам диагностировать использование памяти и ЦП и выявлять другие проблемы на уровне приложения. С помощью этих средств можно накапливать данные (например, значения переменных, вызовы функций и события) в течение времени выполнения приложения в отладчике. Вы можете просматривать состояние приложения на разных этапах во время выполнения кода. 
+Средства профилирования и диагностики позволяют разработчикам диагностировать использование памяти и ЦП и выявлять другие проблемы на уровне приложения. С помощью этих средств можно накапливать данные (например, значения переменных, вызовы функций и события) в течение времени выполнения приложения в отладчике. Вы можете просматривать состояние приложения на разных этапах во время выполнения кода.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -49,24 +51,6 @@ ms.locfileid: "53886453"
                     </div>
                     <div class="cardText">
                         <h3>Начало работы со средствами диагностики (загрузка ЦП)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="Watch a Video on the Diagnostics Tools">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Видео о средствах диагностики</h3>
                     </div>
                 </div>
             </div>

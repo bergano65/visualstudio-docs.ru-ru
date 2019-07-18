@@ -28,17 +28,17 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], writing code
 - Office applications [Office development in Visual Studio], programming model
 - managed code extensions [Office development in Visual Studio], writing code
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35c78f03cdb537ef5be2fd3b9004ca713485d3bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810788"
 ---
 # <a name="write-code-in-office-solutions"></a>Написание кода в решениях Office
   Написание кода в проектах Office и в проектах других типов в Visual Studio несколько отличается друг от друга. Многие из этих отличий связаны с тем, каким образом объектные модели Office предоставляются управляемому коду. Другие отличия связаны со структурой проектов Office.
@@ -63,9 +63,9 @@ ms.locfileid: "53942977"
 
  Так как типы в сборках Office PIA соответствуют типам в основанных на COM объектных моделях, способ использования этих типов часто отличается от других управляемых типов. Например, способ вызова методов, имеющих необязательные параметры, в основной сборке взаимодействия Office зависит от языка программирования, применяемого в вашем проекте. Дополнительные сведения см. в следующих разделах:
 
--   [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md).
+- [Необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md).
 
--   [Позднее связывание в решениях Office](../vsto/late-binding-in-office-solutions.md).
+- [Позднее связывание в решениях Office](../vsto/late-binding-in-office-solutions.md).
 
 ## <a name="program-model-of-office-projects"></a>Программа модели проектов Office
  Все проекты Office содержат один или несколько созданных классов, которые предоставляют точку входа для кода. Эти классы также обеспечивают доступ к объектной модели ведущего приложения, а также доступ к функциям, например, к панелям действий и настраиваемым областям задач.
@@ -99,10 +99,13 @@ ms.locfileid: "53942977"
 ## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Программа на Visual Basic или. Visual C# в решениях Office
  Решения Office можно создавать с помощью языков Visual Basic или Visual C#. Так как объектные модели Microsoft Office были разработаны для использования с Microsoft Visual Basic для приложений (VBA), разработчики Visual Basic могут комфортно работать с объектами, предоставляемыми приложениями Microsoft Office. Разработчики Visual C# могут использовать большинство тех же функций, что и разработчики Visual Basic. Но в некоторых случаях для использования объектной модели Office им необходимо написать дополнительный код. Основы процедур программирования при разработке решений Office и написание управляемого кода на Visual Basic и C# немного отличаются.
 
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="key-differences-between-visual-basic-and-visual-c"></a>Основные различия между Visual Basic и Visual C#
- В следующей таблице показаны основные различия между Visual Basic и Visual C# при разработке решений Office.
+<!-- markdownlint-enable MD003 MD020 -->
 
-|Функция|Описание:|Поддержка Visual Basic|Поддержка Visual C#|
+В следующей таблице показаны основные различия между Visual Basic и Visual C# при разработке решений Office.
+
+|Функция|Описание|Поддержка Visual Basic|Поддержка Visual C#|
 |-------------|-----------------|--------------------------|------------------------|
 |Необязательные параметры|Многие методы Microsoft Office имеют параметры, которые не являются обязательными при вызове метода. Если для параметра никакое значение не передается, используется значение по умолчанию.|Visual Basic поддерживает необязательные параметры.|Visual C# поддерживает необязательные параметры в большинстве случаев. Дополнительные сведения см. в разделе [необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md).|
 |Передача параметров по ссылке|В большинстве основных сборок взаимодействия Microsoft Office необязательные параметры могут передаваться по значению. Однако в некоторых основных сборках взаимодействия необязательные параметры, которые принимают ссылочные типы, должны передаваться по ссылке.<br /><br /> Дополнительные сведения о параметрах типов значений и ссылочных типов см. в разделе [передачи аргументов по значению и по ссылке &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (для Visual Basic) и [передавать параметры &#40;C&#35; руководство по программированию&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Для передачи параметров по ссылке дополнительные действия не требуются. При необходимости компилятор Visual Basic автоматически передает параметры по ссылке.|В большинстве случаев компилятор Visual C# автоматически передает параметры по ссылке. Дополнительные сведения см. в разделе [необязательные параметры в решениях Office](../vsto/optional-parameters-in-office-solutions.md).|

@@ -2,7 +2,6 @@
 title: Интерфейс IActiveScriptDebug | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e21f4c99da886bc4907acf8b0934e1b46d57689
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6341b5c3763d6e4c836b3bdc0539552fcbe7f980
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955033"
 ---
 # <a name="iactivescriptdebug-interface"></a>Интерфейс IActiveScriptDebug
 Реализуется обработчиков сценариев, поддерживающие отладку. Как правило, объект, реализующий `IActiveScriptDebug` также интерфейс реализует `IActiveScript` интерфейс. Если это так, вызовите `IActiveScript::QueryInterface` метод, чтобы получить `IActiveScriptDebug` интерфейс.  

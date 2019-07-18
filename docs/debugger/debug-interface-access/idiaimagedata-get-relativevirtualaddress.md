@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: e6d6deee-dc12-4b38-af15-f917b2d4368e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf5da983c8971574c4b2ad444b0d63291c3e41f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: c6a0ff03784df581fc2f6c57b51b896096d97bba
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830218"
 ---
 # <a name="idiaimagedatagetrelativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
-Извлекает расположение виртуальной памяти модуля относительно приложения.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_relativeVirtualAddress (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает смещение относительного виртуальной памяти модуля.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
+Извлекает расположение виртуальной памяти модуля относительно приложения.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_relativeVirtualAddress ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает смещение относительного виртуальной памяти модуля.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

@@ -1,14 +1,9 @@
 ---
 title: Задача ResolveComReference | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf70e5c2fe77f275f31ed9966df262d64ed2c23d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439350"
 ---
 # <a name="resolvecomreference-task"></a>Задача ResolveComReference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Принимает список из одного или нескольких имен библиотек типов или TLB-файлов и определяет местоположение этих библиотек типов на диске.  
   
 ## <a name="parameters"></a>Параметры  
@@ -52,10 +46,10 @@ ms.locfileid: "49179365"
 |`ResolvedAssemblyReferences`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает разрешенные ссылки на сборки.|  
 |`ResolvedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает полные имена файлов на диске, соответствующие физическим расположениям библиотек типов, которые были указаны во входных данных задачи.|  
 |`ResolvedModules`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.|  
-|`SdkToolsPath`|Необязательный [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметра.<br /><br /> Если `ExecuteAsTool` имеет значение `true`, в качестве значения этого параметра следует установить путь к инструментам пакета SDK для целевой версии платформы.|  
-|`StateFile`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Указывает файл кэша для меток времени COM-компонентов. Если он отсутствует, при каждом запуске будут повторно создаваться все оболочки.|  
-|`TargetFrameworkVersion`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Указывает версию целевой платформы проекта.<br /><br /> Значение по умолчанию — `String.Empty`. Это означает, что фильтрация по целевой платформе для ссылки не выполняется.|  
-|`TargetProcessorArchitecture`|Необязательный параметр <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Указывает предпочитаемую архитектуру целевого процессора. После преобразования передается во флаг /machine tlbimp.exe.<br /><br /> Значение параметра должно быть элементом <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
+|`SdkToolsPath`|Дополнительный (строковый<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) параметр.<br /><br /> Если `ExecuteAsTool` имеет значение `true`, в качестве значения этого параметра следует установить путь к инструментам пакета SDK для целевой версии платформы.|  
+|`StateFile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Указывает файл кэша для меток времени COM-компонентов. Если он отсутствует, при каждом запуске будут повторно создаваться все оболочки.|  
+|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Указывает версию целевой платформы проекта.<br /><br /> Значение по умолчанию — `String.Empty`. Это означает, что фильтрация по целевой платформе для ссылки не выполняется.|  
+|`TargetProcessorArchitecture`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> параметр.<br /><br /> Указывает предпочитаемую архитектуру целевого процессора. После преобразования передается во флаг /machine tlbimp.exe.<br /><br /> Значение параметра должно быть элементом <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
 |`TypeLibFiles`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает путь к файлу библиотеки типов для COM-ссылок. Элементы, включенные в этот параметр, могут содержать метаданные элементов. Дополнительные сведения см. в разделе "Метаданные элементов TypeLibFiles" ниже.|  
 |`TypeLibNames`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает имена библиотек для разрешения. Элементы, включенные в этот параметр, должны содержать метаданные элементов. Дополнительные сведения см. в разделе "Метаданные элементов TypeLibNames" ниже.|  
 |`WrapperOutputDirectory`|Необязательный параметр `String` .<br /><br /> Расположение на диске, куда помещается созданная сборка взаимодействия. Если эти метаданные элемента не заданы, задача использует абсолютный путь к каталогу, где располагается файл проекта.|  
@@ -81,7 +75,7 @@ ms.locfileid: "49179365"
 |`WrapperTool`|Необязательные метаданные элементов.<br /><br /> Указывает средство-оболочку, используемое для создания сборки-оболочки для этой библиотеки типов. Если эти метаданные элементов не заданы, задача использует программу-оболочку по умолчанию "tlbimp". Доступные и чувствительные к регистру варианты библиотек типов:<br /><br /> -   `Primary`: используйте это средство-оболочку, когда требуется использовать уже созданную основную сборку взаимодействия для COM-компонента. При использовании этого средства-оболочки не указывайте выходной каталог оболочки, иначе произойдет сбой задачи.<br />-   `TLBImp`: используйте это средство-оболочку, когда требуется создать сборку взаимодействия для COM-компонента.<br />-   `AXImp`: используйте это средство-оболочку, когда требуется создать сборку взаимодействия для элемента ActiveX.|  
   
 > [!NOTE]
->  Чем больше сведений вы предоставите для однозначного определения библиотеки типов, тем выше вероятность того, что задача разрешится в нужный файл на диске.  
+> Чем больше сведений вы предоставите для однозначного определения библиотеки типов, тем выше вероятность того, что задача разрешится в нужный файл на диске.  
   
 ## <a name="remarks"></a>Примечания  
  Помимо перечисленных выше параметров эта задача наследует параметры от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Task Base Class](../msbuild/task-base-class.md) (Базовый класс Task).  
@@ -89,6 +83,3 @@ ms.locfileid: "49179365"
 ## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

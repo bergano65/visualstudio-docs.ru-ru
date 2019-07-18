@@ -1,14 +1,9 @@
 ---
-title: 'DA0501: средняя загрузка ЦП профилируемым процессом. | Документы Майкрософт'
-ms.custom: ''
+title: DA0501. Среднее использование ЦП профилируемым процессом. | Документы Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0501
 - vs.performance.DA0501
@@ -17,15 +12,15 @@ ms.assetid: b01946b4-75e3-47d5-a1a1-cebfae66a3af
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 076afd65d356f319357221c0d33489895311dcc3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1462ac73e599b870f015a02998c069f7613be0ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155779"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: средняя загрузка ЦП профилируемым процессом.
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501. Среднее использование ЦП профилируемым процессом.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ИД правила | DA501 |  
@@ -41,6 +36,3 @@ ms.locfileid: "51759550"
   
 ## <a name="how-to-use-rule-data"></a>Использование данных правила  
  Значение правила используется для сравнения производительности разных версий или сборок программы или для анализа производительности приложения в различных сценариях тестирования.
-
-
-

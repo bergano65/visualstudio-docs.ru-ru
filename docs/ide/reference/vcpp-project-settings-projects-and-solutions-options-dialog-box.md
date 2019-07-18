@@ -1,7 +1,6 @@
 ---
-title: Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры"
+title: Параметры проекта C++
 ms.date: 08/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VCBuild
@@ -16,24 +15,24 @@ helpviewer_keywords:
 ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cab1a6841a321489091bcf1e62dbf2d8eeafacdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 186db68e9b69b98a9fe9d9a2a8c8941302304cb2
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855027"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263079"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры"
 В этом диалоговом окне можно определять параметры проекта и сборки [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], связанные с файлами журналов, производительности и другими вспомогательными файлами.
 
 ### <a name="to-access-this-dialog-box"></a>Вызов диалогового окна
 
-1.  В меню **Сервис** выберите пункт **Параметры**.
+1. В меню **Сервис** выберите пункт **Параметры**.
 
-2.  Выберите **Проекты и решения**, а затем **Параметры проекта VC++**.
+2. Выберите **Проекты и решения**, а затем **Параметры проекта VC++** .
 
 ## <a name="build-logging"></a>Журнал сборки
  **Да**
@@ -94,5 +93,5 @@ ms.locfileid: "53855027"
 
 ## <a name="see-also"></a>См. также
 
-- [Сборка программ C/C++](/cpp/build/building-c-cpp-programs)
+- [Сборка программ C/C++](/cpp/build/projects-and-build-systems-cpp)
 - [Справочные сведения о сборке C/C++](/cpp/build/reference/c-cpp-building-reference)

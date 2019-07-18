@@ -1,14 +1,9 @@
 ---
 title: Команды, меню и панелей инструментов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - commands [Visual Studio]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5c9641f788951e79efb392927371bb55b49ec294
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 337bc4de9171d2f98bf0be0068b298b7f600b979
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155837"
 ---
 # <a name="commands-menus-and-toolbars"></a>Команды, меню и панели инструментов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51752583"
   
 - При создании команды необходимо также создать для нее обработчик событий. Обработчик событий определяет, когда команда видна или включена, позволяет изменить ее текст и гарантирует, что команда отвечает соответствующим образом ("маршрутизируется") при активации. В большинстве экземпляров среда IDE обрабатывает команды с помощью интерфейса <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>. Команды в маршруте [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] указаны в виде иерархии, начиная с корневого контекста команды на основе локального выбора и до внешнего контекста на основе глобального выделения. Команды, добавленные в главное меню, становятся сразу доступными для использования в сценариях. Дополнительные сведения см. в разделе [команды MenuCommand и. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md) и [объекты контекста выбора](../../extensibility/internals/selection-context-objects.md).  
   
-  Чтобы задать новые меню и панели инструментов, необходимо описать их в VSCT-файле (Visual Studio Command Table). Шаблон пакета Visual Studio создает этот файл, а также необходимые элементы для поддержки любых команд, панелей инструментов и редакторов, выбранных в шаблоне. Кроме того, вы можете записать собственный VSCT-файл с помощью схемы XML, описанной здесь: [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
+  Чтобы задать новые меню и панели инструментов, необходимо описать их в VSCT-файле (Visual Studio Command Table). Шаблон пакета Visual Studio создает этот файл, а также необходимые элементы для поддержки любых команд, панелей инструментов и редакторов, выбранных в шаблоне. Кроме того можно написать собственный vsct-файл с помощью схемы xml, описанной здесь: [Справочник по схемам VSCT XML](../../extensibility/vsct-xml-schema-reference.md).  
   
   Дополнительные сведения о работе с vsct-файлами, см. в разделе [Visual Studio Command Table (. Файлы Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
@@ -69,4 +64,3 @@ ms.locfileid: "51752583"
 ## <a name="related-sections"></a>Связанные разделы  
  [Маршрутизация команд в пакетах VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)  
  Объясняет, маршрутизация команд в пакетах VSPackage.
-

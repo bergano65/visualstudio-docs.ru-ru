@@ -1,14 +1,9 @@
 ---
-title: 'CA2000: Удалите объекты до потери области действия | Документация Майкрософт'
-ms.custom: ''
+title: CA2000. Ликвидировать объекты перед потерей области | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2000
 - Dispose objects before losing scope
@@ -21,14 +16,14 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 975e1eee68911f8d9d0942e73275fcf521979772
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857865"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681504"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: удалите объекты до того, как будет потеряна область действия
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000. Ликвидируйте объекты перед потерей области
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -51,11 +46,11 @@ ms.locfileid: "49857865"
   
  Ниже приведены некоторые ситуации где с помощью инструкции недостаточно для защиты объектов IDisposable и может выдаваться CA2000 произойти.  
   
--   Возвращает высвобождаемый объект требует, что объект создается в блок try/finally вне using блока.  
+- Возвращает высвобождаемый объект требует, что объект создается в блок try/finally вне using блока.  
   
--   Инициализация членов удаляемого объекта не следует выполнять в конструкторе с помощью инструкции.  
+- Инициализация членов удаляемого объекта не следует выполнять в конструкторе с помощью инструкции.  
   
--   Вложенные конструкторы, которые защищены только одним обработчиком исключений. Например, примененная к объекту директива  
+- Вложенные конструкторы, которые защищены только одним обработчиком исключений. Например, примененная к объекту директива  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -64,7 +59,7 @@ ms.locfileid: "49857865"
   
      вызывает CA2000, поскольку сбой в конструкции объекта StreamReader может привести в объект FileStream никогда не будет закрыт.  
   
--   Динамические объекты должны использовать теневой объект для реализации шаблона удаления объектов IDisposable.  
+- Динамические объекты должны использовать теневой объект для реализации шаблона удаления объектов IDisposable.  
   
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
  Нельзя отключить предупреждения из этого правила, если не будет вызван метод на объекте, который вызывает `Dispose`, например <xref:System.IO.Stream.Close%2A>, или если метод, который вызвал предупреждение, возвращает объект IDisposable, который оборачивает ваш объект.  
@@ -72,7 +67,7 @@ ms.locfileid: "49857865"
 ## <a name="related-rules"></a>Связанные правила  
  [CA2213: следует высвобождать высвобождаемые поля](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2202: не удаляйте объекты несколько раз](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
+ [CA2202: Не удаляйте объекты несколько раз](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
   
 ## <a name="example"></a>Пример  
  При реализации метода, который возвращает удаляемый объект, используйте блок try/finally без блока catch, чтобы убедиться в том, что объект удален. С помощью блока try/finally, разрешить исключения вызывается в момент сбоя, и убедитесь, что удаление объекта.  
@@ -104,4 +99,4 @@ ms.locfileid: "49857865"
   
 ## <a name="see-also"></a>См. также  
  <xref:System.IDisposable>   
- [Шаблон ликвидации](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Шаблон ликвидации](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

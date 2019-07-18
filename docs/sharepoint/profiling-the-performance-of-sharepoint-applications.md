@@ -13,17 +13,17 @@ helpviewer_keywords:
 - performance testing [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, performance testing
 - profiling [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8578a27dc6daceda25667142a3cdccae50a42552
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b59a3de88403300a46b7992a2dad72e3d6b59e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563325"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Профилирование производительности приложений SharePoint
 

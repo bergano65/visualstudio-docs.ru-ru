@@ -4,17 +4,14 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/11/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Как назначать подписки Visual Studio конечным пользователям для партнеров MPN.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: 4a113d88b93b5fe7532a72956ca6129be1773ebe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949114"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823195"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Управление подписками Visual Studio, предоставленными через Microsoft Partner Network (MPN)
 
@@ -22,7 +19,7 @@ ms.locfileid: "49949114"
 
 Дополнительные сведения см. в разделе [Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)](program-mpn.md).
 
-## <a name="high-level-assignment-and-access-flow"></a>Обобщенная процедура назначения и доступа
+## <a name="high-level-assignment-and-access-flow"></a>Обобщенный поток назначения и доступа
 
 ### <a name="microsoft-action-pack-subscribers"></a>Подписчики Microsoft Action Pack
 Подписчик Microsoft Action Pack и подписки Visual Studio
@@ -33,7 +30,7 @@ ms.locfileid: "49949114"
 4. Выберите первое, второе или третье **контактное лицо по техническим вопросам** и **сохраните** данные.
 5. Выберите **Требования**.
 6. Выберите **Привилегии**.
-7. Выберите **подписки Visual Studio**. (Примечание. Ожидается обновление подписок Visual Studio).
+7. Выберите **Подписки Visual Studio** (Примечание. Ожидается обновление подписки Visual Studio)
 8. Выберите нужное **лицо**.
 9. Щелкните **Отправить**.
 10. Выбранное лицо получит сообщение по электронной почте.
@@ -43,7 +40,6 @@ ms.locfileid: "49949114"
     - Фамилия
     - Контактный адрес электронной почты
 13. После этого вход считается завершенным и подписчик получает доступ к преимуществам.
-
 
 ### <a name="competency-partners"></a>Партнеры с компетенциями
 1. Выберите **Требования**.
@@ -64,11 +60,11 @@ ms.locfileid: "49949114"
 - Информация [о подписках Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions) MPN (Microsoft Partner Network).
 
 - [Руководство для администратора программы Microsoft Partner Network по преимуществам программного обеспечения и онлайн-служб](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf).
-    - Стр. 6 — назначение ролей контактных лиц и подписок Visual Studio для Action Pack.
+  - Стр. 6 — назначение ролей контактных лиц и подписок Visual Studio для Action Pack.
 
 > [!NOTE]
 > Роль контактного лица по техническим вопросам является обязательной для подписок Visual Studio.
->     - Стр. 8 — назначение подписок Visual Studio для партнеров с компетенциями.
+> - Стр. 8 — назначение подписок Visual Studio для партнеров с компетенциями.
 
 ## <a name="need-help"></a>Нужна помощь?
 Подписчики и администраторы программ могут обратиться напрямую в службу поддержки Microsoft Partner Network, чтобы устранить любые проблемы, в том числе с доступом к подпискам. Посетите страницу [поддержки для партнеров](https://partner.microsoft.com/support), чтобы получить помощь. (Для входа нужно ввести учетные данные MPN.)

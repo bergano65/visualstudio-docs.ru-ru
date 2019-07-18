@@ -1,14 +1,9 @@
 ---
 title: Средства ведения журнала сборки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing loggers
 - MSBuild, logging
@@ -17,18 +12,17 @@ ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dbf27388013b71945879537dffff1e53a7314e7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2908c8217070196de1b2d3cd4f1c5f8d8f2868a5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853250"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658894"
 ---
 # <a name="build-loggers"></a>Средства ведения журнала построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Средства ведения журнала позволяют настраивать выходные данные сборки и отображать сообщения, ошибки или предупреждения в ответ на определенные события сборки. Каждое средство ведения журнала существует в виде класса .NET, который реализует интерфейс <xref:Microsoft.Build.Framework.ILogger>, определенный в сборке Microsoft.Build.Framework.dll.  
   
  Для средства ведения журнала можно использовать два подхода к реализации:  
@@ -89,9 +83,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="comments"></a>Комментарии  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Получение журналов построения](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)
-
-
-

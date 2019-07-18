@@ -1,7 +1,6 @@
 ---
 title: Общие сведения о платформах сборки
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -15,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 3deab6ab77dabe981ada88d5d960c2fe3c8e2a1f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821459"
 ---
 # <a name="understand-build-platforms"></a>Общие сведения о платформах сборки
 
@@ -37,6 +36,6 @@ ms.locfileid: "32425365"
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство. Сборка приложения](../ide/walkthrough-building-an-application.md)
+- [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md)
 - [Создание и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)

@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Создание модульного теста, управляемого данными | Документы Майкрософт
-ms.custom: ''
+title: 'Как выполнить: Создание управляемого данными модульного теста | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
 - vs.test.testresults.unittest.datadriven.failure
@@ -19,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9d82d2c283ac0266880d92139cb9003b3c401b81
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889364"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686298"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Практическое руководство. Создание модульного теста, управляемого данными
+# <a name="how-to-create-a-data-driven-unit-test"></a>Как выполнить: Создание модульного теста, управляемого данными
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Используя платформу модульного тестирования Майкрософт для управляемого кода, можно настроить метод модульного теста для получения значений из источника данных, которые впоследствии будут использоваться в методе теста. Этот метод последовательно выполняется для каждой строки в источнике данных, что облегчает тестирование разнообразных входных данных с помощью одного метода.  
@@ -42,23 +37,23 @@ ms.locfileid: "49889364"
   
 - [Написание метода теста](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-  -   [Определение DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  - [Определение DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-  -   [Использование TestContext.DataRow для доступа к данным](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  - [Использование TestContext.DataRow для доступа к данным](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
 - [Выполнение теста и просмотр результатов](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
   Создание управляемого данными модульного теста включает в себя указанные ниже шаги.  
   
-1.  Создайте источник данных, в котором содержатся значения, используемые в методе теста. Источник данных может быть любого типа, который зарегистрирован на компьютере, где выполняется тест.  
+1. Создайте источник данных, в котором содержатся значения, используемые в методе теста. Источник данных может быть любого типа, который зарегистрирован на компьютере, где выполняется тест.  
   
-2.  Добавьте частное поле <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> и общее свойство `TestContext` в тестовый класс.  
+2. Добавьте частное поле <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> и общее свойство `TestContext` в тестовый класс.  
   
-3.  Создайте метод модульного теста и добавьте к нему атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.  
+3. Создайте метод модульного теста и добавьте к нему атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.  
   
-4.  Используйте свойство индексатора <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> для получения значений, используемых в тесте.  
+4. Используйте свойство индексатора <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> для получения значений, используемых в тесте.  
   
-##  <a name="BKMK_The_method_under_test"></a> Тестируемый метод  
+## <a name="BKMK_The_method_under_test"></a> Тестируемый метод  
  Например, допустим, что были созданы следующие объекты:  
   
 1. решение с именем `MyBank`, которое принимает и обрабатывает транзакции для различных типов счетов;  
@@ -85,7 +80,7 @@ public int AddIntegers(int first, int second)
 }  
 ```  
   
-##  <a name="BKMK_Creating_a_data_source"></a> Создание источника данных  
+## <a name="BKMK_Creating_a_data_source"></a> Создание источника данных  
  Чтобы проверить метод `AddIntegers`, создадим источник данных, определяющий диапазон значений для параметров и ожидаемую возвращаемую сумму. В нашем примере создадим базу данных SQL Compact с именем `MathsData` и таблицу с именем `AddIntegersData`, которая содержит следующие имена столбцов и значений:  
   
 |FirstNumber|SecondNumber|Sum|  
@@ -94,7 +89,7 @@ public int AddIntegers(int first, int second)
 |1|1|2|  
 |2|-3|-1|  
   
-##  <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Добавление TestContext в тестовый класс  
+## <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Добавление TestContext в тестовый класс  
  Платформа модульного тестирования создает объект `TestContext` для хранения информации из источника данных для теста, управляемого данными. Затем платформа присваивает этому объекту значение свойства `TestContext`, которое мы создаем.  
   
 ```  
@@ -110,7 +105,7 @@ public TestContext TestContext
   
  В методе теста получить доступ к данным можно через свойство индексатора `DataRow` `TestContext`.  
   
-##  <a name="BKMK_Writing_the_test_method"></a> Написание метода теста  
+## <a name="BKMK_Writing_the_test_method"></a> Написание метода теста  
  Метод теста для `AddIntegers` достаточно прост. Для каждой строки в источнике данных вызываем `AddIntegers` со значениями столбцов **FirstNumber** и **SecondNumber** в качестве параметров и сверяем возвращаемое значение со значением столбца **Sum**:  
   
 ```  
@@ -136,7 +131,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Обратите внимание, что метод `Assert` содержит сообщение, которое отображает значения `x` и `y` итерации, в которой произошел сбой. По умолчанию утвержденные значения `expected` и `actual` уже содержатся в сведениях неудачного теста.  
   
-###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Определение DataSourceAttribute  
+### <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Определение DataSourceAttribute  
  Атрибут `DataSource` задает строку подключения для источника данных и имя таблицы, которая используется в методе теста. Точные сведения в строке подключения отличаются в зависимости от типа используемого источника данных. В этом примере используется база данных SqlServerCe.  
   
 ```  
@@ -151,7 +146,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Конструктор с одним параметром использует информацию о подключении, хранящуюся в файле app.config решения. В файле конфигурации XML-элемент с именем *dataSourceSettingsName* содержит в себе информацию о подключении.  
   
- Использование файла app.config позволяет менять расположение источника данных, и при этом не вносить изменения в сам модульный тест. Дополнительные сведения о создании и использовании файла app.config см. в разделе [Пошаговое руководство. Использование файла конфигурации для определения источника данных](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).  
+ Использование файла app.config позволяет менять расположение источника данных и при этом не вносить изменения в сам модульный тест. Сведения о том, как создать и использовать файл app.config, см. в разделе [Пошаговое руководство: использование файла конфигурации для определения источника данных](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
   
 ```  
 [DataSource(connectionString, tableName)]  
@@ -170,7 +165,7 @@ public void AddIntegers_FromDataSourceTest()
     )]  
 ```  
   
-###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Использование TestContext.DataRow для доступа к данным  
+### <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Использование TestContext.DataRow для доступа к данным  
  Для доступа к данным в таблице `AddIntegersData` используйте индексатор `TestContext.DataRow`. `DataRow` является объектом <xref:System.Data.DataRow>, поэтому значения столбца извлекаются по индексу или имени столбца. Так как значения возвращаются в виде объектов, необходимо преобразовать их в соответствующий тип.  
   
 ```  
@@ -178,7 +173,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
   
 ```  
   
-##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Выполнение теста и просмотр результатов  
+## <a name="BKMK_Running_the_test_and_viewing_results"></a> Выполнение теста и просмотр результатов  
  Завершив написание метода теста, выполните сборку тестового проекта. Метод теста приводится в окне обозревателя тестов в группе **Незапускавшиеся тесты**. При запуске, написании и повторном запуске тестов в обозревателе тестов результаты отображаются в группах **Неудачные тесты**, **Пройденные тесты** и **Незапускавшиеся тесты**. Можно выбрать **Запустить все**, чтобы запустить все тесты, или **Запустить**, чтобы выбрать подмножество тестов для выполнения.  
   
  Панель результатов теста в верхней части обозревателя обновляется по мере выполнения тестов. По завершении тестового запуска область становится зеленой, если все тесты пройдены, или красной, если какой-либо из тестов не был пройден успешно. Сводка тестового запуска приводится в области сведений в нижней части окна обозревателя тестов. Выберите тест, чтобы просмотреть детальную информацию по данному тесту в нижней панели.  
@@ -192,10 +187,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [Практическое руководство. Создание и выполнение модульного теста](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
+ [Практическое руководство. Создание и выполнение модульного теста](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
  [Модульное тестирование кода](../test/unit-test-your-code.md)   
  [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)   
  [Написание модульных тестов для платформы .NET Framework с использованием платформы модульного тестирования Майкрософт для управляемого кода](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
-
-
-

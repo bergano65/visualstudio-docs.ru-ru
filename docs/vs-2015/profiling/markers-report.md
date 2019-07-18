@@ -1,27 +1,22 @@
 ---
 title: Отчет о маркерах | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.markers
 ms.assetid: 829ce099-172e-4c7e-bbd0-578b110c59bd
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 044df49c466c98466e15078b38e6240420b0a6fe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 97705dab6f11ca0d9d51c27bfc56d315b454bc52
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809718"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64837695"
 ---
 # <a name="markers-report"></a>Отчет по маркерам
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,4 @@ ms.locfileid: "51809718"
   Нажмите кнопку **Экспорт** для сохранения отчета о маркерах как CSV-файла. Можно использовать данные в CSV-файле с другими приложениями и инструментами.  
   
 > [!NOTE]
->  В отчете о маркерах может отображаться 1000 маркеров. Чтобы просмотреть все маркеры, экспортируйте полный отчет в CSV-файл.
-
-
-
+> В отчете о маркерах может отображаться 1000 маркеров. Чтобы просмотреть все маркеры, экспортируйте полный отчет в CSV-файл.

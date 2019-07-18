@@ -1,25 +1,20 @@
 ---
 title: VSPerf | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 830aa028e8c34beb5fd6818c40ffcfc7f3fa461b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ee221f0c1da32694e869177399981cc16ce901f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099472"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51755258"
   
    Дополнительные сведения о вариантах профилирования см. в разделе [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> Содержание раздела  
+## <a name="BKMK_In_this_topic"></a> Содержание раздела  
  В этом разделе описываются параметры, которые можно использовать с программой командной строки `vsperf.exe`. В нем содержатся следующие подразделы:  
   
  [Только приложения для Магазина Windows](#BKMK_windows_store_apps_only)  
@@ -41,7 +36,7 @@ ms.locfileid: "51755258"
   
  [Все приложения](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a> Только приложения для Магазина Windows  
+## <a name="BKMK_windows_store_apps_only"></a> Только приложения для Магазина Windows  
  Эти параметры применяются только к приложениям Магазина Windows.  
   
 |||  
@@ -49,10 +44,10 @@ ms.locfileid: "51755258"
 |**/app:{имя_приложения}**|Запускает профилировщик и ожидает запуска указанного приложения из меню "Пуск".<br /><br /> Чтобы просмотреть имена и полные имена пакетов для установленных приложений, выполните команду `vsperf /listapps`.|  
 |**/package:{полное_имя_пакета}**|Запускает профилировщик и ожидает запуска указанного приложения из меню "Пуск".<br /><br /> Чтобы просмотреть имена и полные имена пакетов для установленных приложений, выполните команду `vsperf /listapps`.|  
 |**/js**|Требуется для профилирования приложений, написанных на JavaScript.<br /><br /> Соберите данные производительности из приложений, написанных на JavaScript.<br /><br /> Используется только с параметром /package или /attach.|  
-|**/noclr**|Необязательный. Не собирать данные среды CLR.<br /><br /> Используется только с параметром /package или /attach.<br /><br /> Оптимизация, управляемые символы разрешаться не будут.|  
+|**/noclr**|Необязательный параметр. Не собирать данные среды CLR.<br /><br /> Используется только с параметром /package или /attach.<br /><br /> Оптимизация, управляемые символы разрешаться не будут.|  
 |**/listapps**|Вывод списка имен и полных имен пакетов для установленных приложений.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Только классические приложения Windows 8 и приложения Windows Server 2012  
+## <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Только классические приложения Windows 8 и приложения Windows Server 2012  
  Эти параметры не работают в приложениях для Магазина Windows.  
   
 |||  
@@ -61,22 +56,19 @@ ms.locfileid: "51755258"
 |**/args:{аргументы_исполняемого_файла}**|Задает аргументы командной строки для передачи целевому объекту **/launch**.|  
 |**/console**|Запускает целевой объект **/launch** в новом командном окне.|  
   
-##  <a name="BKMK_All_applications"></a> Все приложения  
+## <a name="BKMK_All_applications"></a> Все приложения  
  Этот параметр применяется к любому приложению Windows 8 или Windows Server 2012.  
   
 |||  
 |-|-|  
 |**/attach:{идентификатор_процесса&#124;имя_процесса}[,идентификатор_процесса&#124;имя_процесса]...**|Сбор данных из указанных процессов.<br /><br /> Используйте диспетчер задач Windows для просмотра идентификатора процесса (PID) и обработайте имена запущенных приложений.|  
-|**/file:{имя_отчета}**|Необязательный. Указывает выходной файл (перезаписывает существующий файл).<br /><br /> Используется только с параметром /package или /attach.|  
+|**/file:{имя_отчета}**|Необязательный параметр. Указывает выходной файл (перезаписывает существующий файл).<br /><br /> Используется только с параметром /package или /attach.|  
 |**/pause**|Приостановить сбор данных.|  
 |**/resume**|Возобновить сбор данных.|  
 |**/stop**|Остановить сбор данных и завершить работу целевых процессов.|  
 |**/detach**|Остановить сбор данных без прекращения работы целевых процессов.|  
 |**/status**|Показать состояние профилировщика.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

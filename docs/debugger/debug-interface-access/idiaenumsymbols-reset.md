@@ -9,27 +9,27 @@ helpviewer_keywords:
 ms.assetid: dd3c41a5-ebdf-4a9e-bc84-2fe985be0075
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83bf82ebdf4410a0c38077fd079f6f1f81d6510b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 96ce674e9bfc15913c8b7c142ee36780bf74c7ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833354"
 ---
 # <a name="idiaenumsymbolsreset"></a>IDiaEnumSymbols::Reset
-Сбрасывает последовательность перечислений в начало.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Reset ();  
-```  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK`.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Сбрасывает последовательность перечислений в начало.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Reset ();
+```
+
+## <a name="return-value"></a>Возвращаемое значение
+ Возвращает `S_OK`.
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

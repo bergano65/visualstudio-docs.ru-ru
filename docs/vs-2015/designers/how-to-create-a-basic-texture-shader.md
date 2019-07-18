@@ -1,25 +1,20 @@
 ---
 title: Практическое руководство. Создание простейшего шейдера текстуры | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 18bb4f1ad4dfc3428e8dc30958013438de22e13a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dce20d3e1833659ebfec2e84e6bff7f86dff844e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438435"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Практическое руководство. Создание простейшего шейдера текстуры
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +23,15 @@ ms.locfileid: "49898542"
   
  В этом документе описаны следующие действия.  
   
--   Удаление узлов из графа шейдеров  
+- Удаление узлов из графа шейдеров  
   
--   Добавление узлов в граф  
+- Добавление узлов в граф  
   
--   Задание параметров шейдера  
+- Задание параметров шейдера  
   
--   Задание видимости параметра  
+- Задание видимости параметра  
   
--   Соединение узлов  
+- Соединение узлов  
   
 ## <a name="creating-a-basic-texture-shader"></a>Создание простейшего шейдера текстуры  
  Вы можете создать простейший шейдер из одной текстуры, записав значения цветов и альфа-факторы образца текстуры прям в окончательный цвет вывода.  
@@ -64,17 +59,14 @@ ms.locfileid: "49898542"
    Ниже показан готовый граф шейдера и предварительный просмотр шейдера, примененного к кубу.  
   
 > [!NOTE]
->  На этом рисунке в качестве фигуры для предварительного просмотра используется плоскость, и задана текстура, чтобы лучше продемонстрировать эффект шейдера.  
+> На этом рисунке в качестве фигуры для предварительного просмотра используется плоскость, и задана текстура, чтобы лучше продемонстрировать эффект шейдера.  
   
  ![Граф шейдера и предварительный просмотр его эффекта](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")  
   
  Некоторые фигуры могут лучше подходить для предварительного просмотра некоторых шейдеров. Дополнительные сведения о том, как предварительно просматривать шейдеры в конструкторе шейдеров, см. в разделе [Конструктор шейдеров](../designers/shader-designer.md).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Практическое руководство. Применение шейдера к трехмерной модели](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Редактор изображений](../designers/image-editor.md)   
  [Конструктор шейдеров](../designers/shader-designer.md)   
  [Узлы конструктора шейдеров](../designers/shader-designer-nodes.md)
-
-
-

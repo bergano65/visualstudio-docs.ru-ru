@@ -1,8 +1,7 @@
 ---
-title: Iactivescriptproperty — | Документы Microsoft
+title: Iactivescriptproperty — | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,22 +13,22 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13603bf00d758a99ba421c4ed2ef23ed30f3c25b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62b0d49ea4ebccfe70955c2f5315918807121447
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992779"
 ---
 # <a name="iactivescriptproperty"></a>IActiveScriptProperty
-`IActiveScriptProperty` Интерфейс используется для получения и установки свойств конфигурации.  
+`IActiveScriptProperty` Интерфейс используется для получения и задания свойств конфигурации.  
   
 ## <a name="methods-in-vtable-order"></a>Методы в порядке таблицы Vtable  
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|Возвращает свойство, которое указано в параметре.|  
-|[SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)|Задает свойство, которое указано в параметре.|  
+|[GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|Возвращает свойство, указанное в параметре.|  
+|[SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)|Задает свойство, которое задается параметром.|  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейсы активных скриптов](../../winscript/reference/active-script-interfaces.md)

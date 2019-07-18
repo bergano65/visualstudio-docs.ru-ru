@@ -1,14 +1,9 @@
 ---
-title: 'CA2121: Статические конструкторы должны быть частными | Документация Майкрософт'
-ms.custom: ''
+title: CA2121. Статические конструкторы должны быть частными | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2121
 - StaticConstructorsShouldBePrivate
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24fcd6970d368bfee739e47f9b7e0407f5cd6307
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d7894b4ec0039b28a579239605c22c2397c300f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154342"
 ---
-# <a name="ca2121-static-constructors-should-be-private"></a>CA2121: статические конструкторы должны быть частными
+# <a name="ca2121-static-constructors-should-be-private"></a>CA2121. Статические конструкторы должны быть частными
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,6 +51,3 @@ ms.locfileid: "49918549"
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Не следует отключать эти нарушения. Если программе требуется явный вызов в статическом конструкторе, весьма вероятно, что проект содержит серьезные недостатки и должны быть проверены.
-
-
-

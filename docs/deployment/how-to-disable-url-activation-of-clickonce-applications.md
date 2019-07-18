@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Отключение активации ClickOnce-приложений по URL-адрес | Документация Майкрософт
+title: Практическое руководство. Отключение активации ClickOnce-приложений по URL-адрес | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: db31a16b-960f-4264-91d7-c7c40f876068
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 611bb0d2c3c828be5f8eaa10f3baeaafca1c8f37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 6841b8a91cec24f467f6e3f684cbb27e25c9fa63
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899353"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Как выполнить отключение активации по URL-адресу приложений ClickOnce
+# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Практическое руководство. отключение активации по URL-адресу приложений ClickOnce
 
 Как правило, приложение [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] запускается автоматически сразу после установки с веб-сервера. По соображениям безопасности можно отключить это поведение и сообщить пользователям, что запускать приложение нужно из меню **Пуск**. Следующая процедура описывает процесс отключения активации через URL.
 
@@ -35,13 +35,13 @@ ms.locfileid: "53854780"
 
 ### <a name="to-disable-url-activation-for-your-application"></a>Отключение активации приложения с помощью URL
 
-1.  Откройте манифест развертывания в MageUI.exe. Если еще не создана, выполните действия, описанные в [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Откройте манифест развертывания в MageUI.exe. Если еще не создана, выполните действия, описанные в [Пошаговое руководство: Развертывание вручную приложения ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-2.  Перейдите на вкладку **Параметры развертывания**.
+2. Перейдите на вкладку **Параметры развертывания**.
 
-3.  Снимите флажок **Автоматически запускать приложение после установки**.
+3. Снимите флажок **Автоматически запускать приложение после установки**.
 
-4.  Сохраните и подпишите манифест.
+4. Сохраните и подпишите манифест.
 
 ## <a name="see-also"></a>См. также
 

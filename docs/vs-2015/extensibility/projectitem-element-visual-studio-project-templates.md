@@ -1,14 +1,9 @@
 ---
 title: Элемент ProjectItem (шаблоны проектов Visual Studio) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bca26cba66169758aa882535c07846cfa451d172
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 84fb371460bc697660e176ca9df4c984d2b234bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438373"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>Элемент ProjectItem (шаблоны проектов Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51737068"
 Указывает файл, включенный в шаблон проекта.  
   
 > [!NOTE]
->  `ProjectItem` Элемент принимает различные атрибуты в зависимости от того, является ли шаблон для проекта или элемента. В этом разделе объясняется `ProjectItem` элемент для шаблонов проектов. Объяснение `ProjectItem` элемент для шаблонов элементов, см. в разделе [элемент ProjectItem (шаблоны элементов Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
+> `ProjectItem` Элемент принимает различные атрибуты в зависимости от того, является ли шаблон для проекта или элемента. В этом разделе объясняется `ProjectItem` элемент для шаблонов проектов. Объяснение `ProjectItem` элемент для шаблонов элементов, см. в разделе [элемент ProjectItem (шаблоны элементов Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
   
  \<VSTemplate >  
  \<TemplateContent >  
@@ -95,21 +90,21 @@ ms.locfileid: "51737068"
   
 ### <a name="to-rename-files-with-parameters"></a>Для переименования файлов с параметрами  
   
-1.  Используйте следующий код XML в файле .vstemplate.  
+1. Используйте следующий код XML в файле .vstemplate.  
   
     ```  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  Откройте файл проекта (VBPROJ-файл для [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] проекта) в текстовом редакторе или [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Откройте файл проекта (VBPROJ-файл для [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] проекта) в текстовом редакторе или [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-3.  Найдите строку в файле проекта, который выглядит как в следующем коде XML:  
+3. Найдите строку в файле проекта, который выглядит как в следующем коде XML:  
   
     ```  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  Замените строку кода, приведенный ниже код XML:  
+4. Замените строку кода, приведенный ниже код XML:  
   
     ```  
     <Compile Include="$safeprojectname$.vb">  
@@ -149,4 +144,3 @@ ms.locfileid: "51737068"
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)   
  [Параметры шаблона](../ide/template-parameters.md)   
  [Элемент ProjectItem (шаблоны элементов Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-

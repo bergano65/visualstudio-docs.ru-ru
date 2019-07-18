@@ -1,14 +1,9 @@
 ---
-title: Не найдена метка | Документы Microsoft
-ms.custom: ''
+title: Метка не найдена | Документация Майкрософт
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1026
 dev_langs:
@@ -16,25 +11,24 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df36f35b8e681c22e38f19b00fb25b680c6323ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 72b63c699b09081e843f36daeec3fcc556ebaf4a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007377"
 ---
 # <a name="label-not-found"></a>Метка не найдена
-Ссылка на метку, которая не существует. Метки могут использоваться пометить блоки кода, но в пределах указанной области, должны быть уникальными.  
+Внесенные ссылку на метку, которая не существует. Метки можно использовать для пометки блоки кода, но в пределах указанной области, должно быть уникальным.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Проверьте, чтобы убедиться в правильности написания имени метки.  
+- Проверьте, чтобы убедиться в правильности написания имя метки.  
   
--   Убедитесь, все ссылки указывают на метки, которые были определены в текущей области (включая определения перенаправленных).  
+- Убедитесь, все ссылки указывают на метки, которые были определены в текущей области (включая прямого определения).  
   
 ## <a name="see-also"></a>См. также  
  [Оператор с меткой](../../javascript/reference/labeled-statement-javascript.md)   

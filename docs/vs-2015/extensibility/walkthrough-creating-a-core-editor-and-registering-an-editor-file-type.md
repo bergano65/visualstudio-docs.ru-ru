@@ -1,28 +1,23 @@
 ---
-title: 'Пошаговое руководство: Создание базового редактора и регистрация файла тип редактора | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание базового редактора и регистрация файла тип редактора | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1573709c7ef42e51454ca65103a6faeda78dcc1b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14296aa335ba6710d4d9eac8e5338af7463c0aac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778713"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687637"
 ---
-# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Пошаговое руководство: Создание базового редактора и регистрация файла тип редактора
+# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Пошаговое руководство. Создание базового редактора и регистрация файла тип редактора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом пошаговом руководстве показано, как создать пакет VSPackage, который запускает [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базового редактора при создании файла, который имеет расширение имени файла .myext загружается.  
@@ -33,25 +28,25 @@ ms.locfileid: "51778713"
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Расположения для шаблона проекта пакета Visual Studio  
  Шаблон проекта пакета Visual Studio можно найти в трех разных местах диалогового окна **Создание проекта** .  
   
-1.  В разделе Visual Basic, "Расширяемость". Язык проекта по умолчанию — Visual Basic.  
+1. В разделе Visual Basic, "Расширяемость". Язык проекта по умолчанию — Visual Basic.  
   
-2.  В разделе Visual C#, "Расширяемость". Язык проекта по умолчанию — C#.  
+2. В разделе Visual C#, "Расширяемость". Язык проекта по умолчанию — C#.  
   
-3.  В разделе "Другие типы проектов", "Расширяемость". Язык проекта по умолчанию — C++.  
+3. В разделе "Другие типы проектов", "Расширяемость". Язык проекта по умолчанию — C++.  
   
 ### <a name="to-create-the-vspackage"></a>Чтобы создать VSPackage  
   
--   Запуск [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и создайте [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage с именем `MyPackage`, как описано в [Пошаговое руководство: Создание пакета VSPackage команды меню](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Запуск [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] и создайте [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage с именем `MyPackage`, как описано в [Пошаговое руководство: Создание пакета VSPackage команды меню](https://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Чтобы добавить фабрики редактора  
   
-1.  Щелкните правой кнопкой мыши **MyPackage** проект, выберите пункт **добавить** и нажмите кнопку **класс**.  
+1. Щелкните правой кнопкой мыши **MyPackage** проект, выберите пункт **добавить** и нажмите кнопку **класс**.  
   
-2.  В **Добавление нового элемента** диалогового окна поле, убедитесь, что **класс** выбран шаблон, тип `EditorFactory.cs` имя, а затем нажмите кнопку **добавить** Добавление класса в проект.  
+2. В **Добавление нового элемента** диалогового окна поле, убедитесь, что **класс** выбран шаблон, тип `EditorFactory.cs` имя, а затем нажмите кнопку **добавить** Добавление класса в проект.  
   
      Файл EditorFactory.cs должен быть открыт автоматически.  
   
-3.  Ссылки на следующие сборки из кода.  
+3. Ссылки на следующие сборки из кода.  
   
     ```vb  
     Imports System.Runtime.InteropServices  
@@ -74,7 +69,7 @@ ms.locfileid: "51778713"
   
     ```  
   
-4.  Добавьте идентификатор GUID, `EditorFactory` класса путем добавления `Guid` атрибут непосредственно перед объявлением класса.  
+4. Добавьте идентификатор GUID, `EditorFactory` класса путем добавления `Guid` атрибут непосредственно перед объявлением класса.  
   
      Новый идентификатор GUID можно создать с помощью программы guidgen.exe в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] или командной строке, щелкнув **создать GUID** на **средства** меню. GUID, используемый здесь указано только для примера; не используйте его в проект.  
   
@@ -86,7 +81,7 @@ ms.locfileid: "51778713"
     [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
-5.  В определении класса добавьте две закрытых переменных родительского пакета и поставщика услуг.  
+5. В определении класса добавьте две закрытых переменных родительского пакета и поставщика услуг.  
   
     ```vb  
     Class EditorFactory  
@@ -103,7 +98,7 @@ ms.locfileid: "51778713"
   
     ```  
   
-6.  Добавьте конструктор открытый класс, который принимает один параметр типа <xref:Microsoft.VisualStudio.Shell.Package>:  
+6. Добавьте конструктор открытый класс, который принимает один параметр типа <xref:Microsoft.VisualStudio.Shell.Package>:  
   
     ```vb  
     Public Sub New(ByVal parentPackage As Package)  
@@ -118,7 +113,7 @@ ms.locfileid: "51778713"
     }  
     ```  
   
-7.  Изменить `EditorFactory` объявление для наследования от класса <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейс.  
+7. Изменить `EditorFactory` объявление для наследования от класса <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейс.  
   
     ```vb  
     Class EditorFactory Implements IVsEditorFacto  
@@ -129,7 +124,7 @@ ms.locfileid: "51778713"
   
     ```  
   
-8.  Щелкните правой кнопкой мыши <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, нажмите кнопку **реализовать интерфейс**, а затем нажмите кнопку **реализовать интерфейс явно**.  
+8. Щелкните правой кнопкой мыши <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, нажмите кнопку **реализовать интерфейс**, а затем нажмите кнопку **реализовать интерфейс явно**.  
   
      Это добавляет четыре метода, которые должны быть реализованы в <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> интерфейс.  
   
@@ -325,20 +320,20 @@ ms.locfileid: "51778713"
   
 ### <a name="to-register-the-editor-factory"></a>Регистрация фабрики редактора  
   
-1.  В **обозревателе решений**, дважды щелкните файл Resources.resx, чтобы открыть его в таблице строк, в котором операция **строка1** выбранного.  
+1. В **обозревателе решений**, дважды щелкните файл Resources.resx, чтобы открыть его в таблице строк, в котором операция **строка1** выбранного.  
   
-2.  Измените имя идентификатора, `IDS_EDITORNAME` и текст, который **MyPackage редактора.** Эта строка будет отображаться как имя редактора.  
+2. Измените имя идентификатора, `IDS_EDITORNAME` и текст, который **MyPackage редактора.** Эта строка будет отображаться как имя редактора.  
   
-3.  Откройте файл VSPackage.resx и добавьте новую строку, задайте имя **101** и значение для `IDS_EDITORNAME`. Это обеспечивает пакет с Идентификатором ресурса для доступа к строке, который вы только что создали.  
+3. Откройте файл VSPackage.resx и добавьте новую строку, задайте имя **101** и значение для `IDS_EDITORNAME`. Это обеспечивает пакет с Идентификатором ресурса для доступа к строке, который вы только что создали.  
   
     > [!NOTE]
-    >  Если файл VSPackage.resx содержит другой строкой, которую `name` атрибуту присвоено **101**, заменить другой уникальное числовое значение, здесь и далее.  
+    > Если файл VSPackage.resx содержит другой строкой, которую `name` атрибуту присвоено **101**, заменить другой уникальное числовое значение, здесь и далее.  
   
-4.  В **обозревателе решений**, откройте файл MyPackagePackage.cs.  
+4. В **обозревателе решений**, откройте файл MyPackagePackage.cs.  
   
      Это файл главного пакета.  
   
-5.  Добавьте следующие атрибуты пользователя непосредственно перед `Guid` атрибута.  
+5. Добавьте следующие атрибуты пользователя непосредственно перед `Guid` атрибута.  
   
     ```vb  
     <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
@@ -354,7 +349,7 @@ ms.locfileid: "51778713"
   
      <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> Атрибут связывает расширение файла .myext с вашей фабрикой редактора, чтобы в любое время в файл с расширение загружается, вызывается фабрикой редактора.  
   
-6.  Добавьте частную переменную для `MyPackage` класса просто перед конструктором и присвойте ей тип `EditorFactory`.  
+6. Добавьте частную переменную для `MyPackage` класса просто перед конструктором и присвойте ей тип `EditorFactory`.  
   
     ```vb  
     Private editorFactory As EditorFactory  
@@ -364,7 +359,7 @@ ms.locfileid: "51778713"
     private EditorFactory editorFactory;  
     ```  
   
-7.  Найти `Initialize` метод (возможно открыть `Package Members` скрытой области) и добавьте следующий код после вызова `base.Initialize()`.  
+7. Найти `Initialize` метод (возможно открыть `Package Members` скрытой области) и добавьте следующий код после вызова `base.Initialize()`.  
   
     ```vb  
     'Create our editor factory and register it.   
@@ -379,7 +374,7 @@ ms.locfileid: "51778713"
   
     ```  
   
-8.  Скомпилируйте программу и убедитесь в отсутствии ошибок.  
+8. Скомпилируйте программу и убедитесь в отсутствии ошибок.  
   
      Этот шаг регистрирует фабрику редактора в экспериментальном кусте реестра для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. При появлении в переопределите файл resource.h, нажмите кнопку **ОК**.  
   
@@ -403,4 +398,3 @@ ms.locfileid: "51778713"
 ## <a name="see-also"></a>См. также  
  [В редакторе](../extensibility/inside-the-core-editor.md)   
  [Создание экземпляра основного редактора с помощью API прежних версий](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)
-

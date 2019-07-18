@@ -1,14 +1,9 @@
 ---
 title: Справочник по набору правил анализа кода | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets
 ms.assetid: 5874e854-e298-4d2e-bbe4-95e899d22587
@@ -16,12 +11,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a1f91b352da5a41ec2ef81fb6067976073c787ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576758"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Справочник по набору правил анализа кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ ms.locfileid: "49279166"
 |[Набор правил "Минимальные правила для машинного кода"](../code-quality/native-minimum-rules-rule-set.md)|Эти правила фокусируются на наиболее важными проблемами в машинном коде, включая возможные уязвимости безопасности и сбои приложения. Этот набор правил можно включить в любой настраиваемый набор правил, созданный для собственных проектов машинного кода.|  
 |[Набор правил "Рекомендуемые правила для машинного кода"](../code-quality/native-recommended-rules-rule-set.md)|Эти правила фокусируются с наиболее распространенными и важными проблемами в машинном коде, включая возможные уязвимости безопасности и сбои приложения.  Этот набор правил можно включить в любой настраиваемый набор правил, созданный для собственных проектов машинного кода.  Этот набор правил предназначен для работы с Visual Studio Professional edition и более поздних версий.|  
 |[Набор правил "Правила безопасности" для управляемого кода](../code-quality/security-rules-rule-set-for-managed-code.md)|Этот набор правил содержит все правила безопасности корпорации Майкрософт. Включите это правило, значение максимально увеличить количество потенциальных проблем безопасности, включенные в отчет.|
-
-
-

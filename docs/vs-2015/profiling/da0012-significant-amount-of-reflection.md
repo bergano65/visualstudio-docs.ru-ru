@@ -1,14 +1,9 @@
 ---
-title: DA0012. Слишком много вызовов метода Reflection | Документы Майкрософт
-ms.custom: ''
+title: DA0012. Слишком много вызовов метода Reflection | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAReflection
 - vs.performance.12
@@ -18,13 +13,13 @@ ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9cea0faef4a0ee46b2fba0ea5c5bbbcd91e43bfc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ae0f361d4bbfe48b3133e50c360f66387d555814
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187868"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012. Слишком много вызовов метода Reflection
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51739518"
 ИД правила | DA0012 |  
 | Категория |. Использование .NET Framework |  
 | Методы профилирования | Выборка |  
-| Сообщение | Вы может широко использоваться отражение. Он является ресурсоемкой операцией. |  
+| Сообщение | Вы может широко использоваться отражение. Это ресурсоемкая операция. |  
 | Тип правила | Предупреждение |  
   
 ## <a name="cause"></a>Причина  
@@ -45,6 +40,3 @@ ms.locfileid: "51739518"
   
 ## <a name="how-to-investigate-a-warning"></a>Изучение причин предупреждения  
  Дважды щелкните сообщение в окне "Список ошибок", чтобы перейти к представлению [Сведения о функциях](../profiling/function-details-view.md) данных профилирования. Проверьте вызовы функций методов System.Type и System.Reflection, чтобы найти участки программы, в которых наиболее часто используется API .NET Reflection. Избегайте использования методов, возвращающих метаданные. Если важна производительность приложения, следует избегать позднего связывания и динамического создания типов во время выполнения.
-
-
-

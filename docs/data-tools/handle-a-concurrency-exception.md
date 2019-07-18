@@ -15,16 +15,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b626aa489323d26ef439ade216d1fa97a52a8d13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566746"
 ---
 # <a name="handle-a-concurrency-exception"></a>Обработка исключения параллелизма
 
@@ -70,7 +69,7 @@ ms.locfileid: "53825650"
 
 1. В Visual Studio на **файл** меню, выберите **New** > **проекта**.
 
-2. Разверните **Visual C#**  или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
+2. Разверните **Visual C#** или **Visual Basic** левой панели, а затем выберите **Windows Desktop**.
 
 3. В средней области выберите **приложения Windows Forms** тип проекта.
 
@@ -207,7 +206,7 @@ ms.locfileid: "53825650"
 
 8. В первой записи в форме (**ALFKI**), измените **ContactName** для **Anders1 Мария**.
 
-9. Выберите **Сохранить** кнопки.
+9. Нажмите кнопку **Сохранить**.
 
      Возникает ошибка параллелизма, и появится окно сообщения.
 

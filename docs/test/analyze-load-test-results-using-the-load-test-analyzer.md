@@ -9,14 +9,13 @@ helpviewer_keywords:
 ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 76aa076f4813cf2719f1ecc2d009c44788dae9f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822811"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Анализ результатов нагрузочного теста с помощью анализатора тестовой нагрузки
 
@@ -26,11 +25,11 @@ ms.locfileid: "53900682"
 
 Анализ результатов нагрузочных тестов осуществляется следующими способами.
 
--   Наблюдение за нагрузочным тестом во время его выполнения.
+- Наблюдение за нагрузочным тестом во время его выполнения.
 
--   Анализ нагрузочного теста после его выполнения.
+- Анализ нагрузочного теста после его выполнения.
 
--   Просмотр результатов предыдущего нагрузочного теста.
+- Просмотр результатов предыдущего нагрузочного теста.
 
 Можно также создать отчеты, сравнивающие два или более отчетов для анализа трендов, и использовать эти отчеты совместно с другими заинтересованными лицами. См. статью [Создание отчетов о результатах нагрузочных тестов для сравнения тестов или анализа трендов](../test/compare-load-test-results.md).
 

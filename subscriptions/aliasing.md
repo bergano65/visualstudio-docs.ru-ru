@@ -4,17 +4,14 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Вход может завершиться ошибкой, если используются дополнительные имена (псевдонимы)
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 7285c1ede495a1aa2603216f2a9e9fe9f89331ea
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817442"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783686"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Вход в подписки Visual Studio может быть неудачным при использовании псевдонимов
 
@@ -30,7 +27,7 @@ ms.locfileid: "51817442"
 
 У администратора такой системы есть два способа обеспечить подписчикам успешный вход в систему [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 - Первый вариант — применять в качестве адреса назначения в Volume Licensing Service Center (VLSC) исключительно учетную запись каталога. Рекомендуем использовать именно этот метод. Подробности вы найдете в разделе этой статьи [Назначение подписчиков учетной записи каталога](#assigning-subscribers-to-a-directory-account).
-- Второй вариант (менее безопасный) — предоставить подписчикам право связать рабочий или учебный адрес электронной почты с личной учетной записью (учетной записью Майкрософт, MSA). Подробности вы найдете в разделе этой статьи [Определение рабочей или учебной учетной записи как личной учетной записи](#defining-a-work-or-school-account-as-a-personal-account ).
+- Второй вариант (менее безопасный) — предоставить подписчикам право связать рабочий или учебный адрес электронной почты с личной учетной записью (учетной записью Майкрософт, MSA). Дополнительные сведения см. в разделе [Определение рабочей или учебной учетной записи как личной учетной записи](#defining-a-work-or-school-account-as-a-personal-account) этой статьи.
 
 > [!NOTE]
 > Когда компания выполнит миграцию на новый [портал управления](https://manage.visualstudio.com) подписками Visual Studio, вы сможете воспользоваться преимуществами нового интерфейса администрирования, который позволяет указать в профиле подписчика одновременно и адрес электронной почты, и адрес каталога. Подробнее о миграции см. [здесь](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
@@ -52,7 +49,6 @@ ms.locfileid: "51817442"
 
     > [!div class="mx-imgBorder"]
     > ![Меню "Подписки"](_img//vlsc/vlsc-subscriptions.png)
-
 
 3. Выберите **номер соглашения**, связанный с нужной подпиской Visual Studio.
 
@@ -84,21 +80,23 @@ ms.locfileid: "51817442"
 
 Так как приветственное сообщение не будет доставлено этому подписчику по электронной почте, скопируйте следующий текст, вставьте его в клиент электронной почты и отправьте подписчику. Замените все слова вида %ИНФОРМАЦИЯ% соответствующими сведениями о конкретном подписчике.
 
------------ Скопируйте текст ниже (Ctrl+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Добрый день, %ИМЯ ПОДПИСЧИКА%!
+Hello %SUBSCRIBER NAME%
 
-Вам назначена новая подписка Visual Studio. Откройте страницу https://my.visualstudio.com и выполните вход с адресом %АДРЕС КАТАЛОГА%, чтобы активировать и применить вашу подписку.
+You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
 
-Если у вас возникли проблемы, обратитесь в службу поддержки (https://visualstudio.microsoft.com/subscriptions/support/).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-В нижней части этой страницы выберите следующие параметры:
-   - Accounts, Subscriptions, and Billing Support (Учетные записи, подписки и поддержки выставления счетов);
-   - в поле "Проблема" выберите вариант Subscription sign in support (Поддержка при входе в подписку);
-   - выберите нужную страну;
-   - выберите удобный вариант предоставления технической поддержки.
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ Конец копируемого текста -----------
+----------- End Copy -----------
+```
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Определение рабочей или учебной учетной записи как личной учетной записи
 
@@ -129,35 +127,37 @@ ms.locfileid: "51817442"
 
 В описанном выше сценарии подписчик успешно получат приветственное сообщение по электронной почте, но из-за применения псевдонимов он может столкнуться с проблемами при входе.  Приведенный ниже текст поможет вам известить подписчика о выполненных действиях и предоставить ему сведения о получении поддержки, если она ему потребуется.  Замените все слова вида %ИНФОРМАЦИЯ% соответствующими сведениями о конкретном подписчике.
 
------------ Скопируйте текст ниже (Ctrl+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Добрый день, %ИМЯ ПОДПИСЧИКА%!
+Hello %SUBSCRIBER NAME%
 
-Вам назначена подписка Visual Studio, и вы уже получили приветственное сообщение с предложением войти на страницу https://my.visualstudio.com.  Этот адрес сайта для использования преимуществ указан правильно, но в нашей организации действуют дополнительные требования и вам необходимо выполнить еще несколько действий перед входом на этот сайт.  Выполните приведенные ниже инструкции, которые помогут вам создать учетную запись Майкрософт, привязанную к корпоративному адресу электронной почты.  После этого вы сможете войти на страницу "Преимущества", используя адрес электронной почты.
-1. Откройте страницу https://my.visualstudio.com
+You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
+1. Visit https://my.visualstudio.com
 
-2. Нажмите кнопку "Создать новую учетную запись Microsoft" справа.
+2. Click Create new Microsoft Account on the right hand side
 
-3. Заполните форму:
-   - введите корпоративный адрес электронной почты в поле someone@example.com;
-   - введите пароль;
-   - укажите предпочтения по рекламным акциям;
-   - Нажмите кнопку «Далее».
+3. Complete the Form:
+   - Use your corporate email address in the someone@example.com box
+   - Enter a password
+   - Select your promotional preference
+   - Click Next
 
-4. Выполните действия по проверке учетной записи.
+4. Complete the account validation steps
 
-5. При необходимости заполните профиль Visual Studio.
+5. If necessary, complete the Visual Studio profile
 
-6. Теперь у вас должен быть доступ к преимуществам.
+6. You should now see your benefits
 
-Примечание. При последующих операциях входа на https://my.visualstudio.com, возможно, вам будет предложено выбрать учетную запись для входа (например, рабочую или учебную учетную запись либо личную учетную запись).  Если вы успешно выполнили описанную выше процедуру, всегда используйте вариант "Личная учетная запись".
+Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
 
-Если у вас возникли проблемы, обратитесь в службу поддержки (https://visualstudio.microsoft.com/subscriptions/support/).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-В нижней части этой страницы выберите следующие параметры:
-   - Accounts, Subscriptions, and Billing Support (Учетные записи, подписки и поддержки выставления счетов);
-   - в поле "Проблема" выберите вариант Subscription sign in support (Поддержка при входе в подписку);
-   - выберите нужную страну;
-   - выберите удобный вариант предоставления технической поддержки.
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ Конец копируемого текста -----------
+----------- End Copy -----------
+```

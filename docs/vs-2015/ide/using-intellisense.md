@@ -1,14 +1,9 @@
 ---
 title: Использование IntelliSense | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
@@ -29,13 +24,13 @@ ms.assetid: 9fdb489b-8b46-4b92-9ccc-c8f8cc184081
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 586a0b31166f3b7696865e54f7d2df9c415315f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197201"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54758832"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,11 +101,8 @@ MessageBox( hWnd, "String literal|") )
   
  **Автоматические параметры отключены**. По умолчанию функция IntelliSense работает автоматически, но ее можно отключить. Вы можете вызывать возможность IntelliSense, даже если автоматическое завершение операторов отключено.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Возможности IntelliSense в Visual Basic](../ide/visual-basic-specific-intellisense.md)   
  [IntelliSense для Visual C#](../ide/visual-csharp-intellisense.md)   
  [IntelliSense для JavaScript](../ide/javascript-intellisense.md)   
  [Создание XML-примечаний к коду](../ide/supplying-xml-code-comments.md)
-
-
-

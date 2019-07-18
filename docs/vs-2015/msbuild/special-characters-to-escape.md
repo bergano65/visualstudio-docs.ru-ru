@@ -1,14 +1,9 @@
 ---
 title: Знаки, требующие отключения их специального значения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 5b5172c3-41e4-4f38-a16f-2aeac831a5fc
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c851c6968418356626a69830ea89a918edc2cadf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: beeed84db240ecf57ca18dd9aef08622f14b06fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161356"
 ---
 # <a name="special-characters-to-escape"></a>Знаки, требующие отключения их специального значения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Специальные знаки необходимо экранировать только в том случае, если они имеют особое значение в контексте, в котором используются. Например, звездочка (*) является специальным символом только в атрибутах "Включить" и "Исключить" определения элемента или при вызове <xref:Microsoft.Build.Tasks.CreateItem>. Во всех остальных случаях звездочка считается символом звездочки. Если не требуется экранировать звездочки в файлах проекта, использование их в таком виде не приносит никакого вреда.  
   
  Вместо специального знака используйте нотацию %*xx*, где *xx* представляет собой шестнадцатеричное значение символа ASCII. Например, чтобы использовать символ звездочки (*) как буквенный символ, используйте значение `%2A`.  
@@ -52,8 +46,5 @@ ms.locfileid: "49251229"
 |*|Звездочка — подстановочный знак, используемый при описании файловой спецификации в разделе включение/исключение элемента.|  
   
 ## <a name="see-also"></a>См. также  
- [How to: Escape Special Characters in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)  (Как обеспечить пропуск специальных знаков в MSBuild)  
+ [Практическое руководство. Пропуск специальных знаков в MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)
-
-
-

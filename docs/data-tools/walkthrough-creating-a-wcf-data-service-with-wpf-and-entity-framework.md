@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework
+title: Создание службы данных WCF с помощью WPF и Entity Framework
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,16 +13,15 @@ helpviewer_keywords:
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0353688be3b6fa62a0f33338461eeab78ee33d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 368d92010da062f2883d63161824e528d5d22c84
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888508"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261083"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Пошаговое руководство. Создание службы данных WCF с помощью WPF и Entity Framework
 В этом пошаговом руководстве демонстрируется создание простой службы [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] в веб-приложении [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] и последующий доступ к ней из приложения Windows Forms.
@@ -91,11 +90,11 @@ ms.locfileid: "53888508"
 
 5. На странице **Выбор подключения к базе данных** выполните одно из следующих действий:
 
-    -   Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.
+    - Если подключение к учебной базе данных Northwind доступно в раскрывающемся списке, то выберите его.
 
-         - или -
+         -или-
 
-    -   Нажмите кнопку **Создать подключение** для создания нового подключения к данным. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
+    - Нажмите кнопку **Создать подключение** для создания нового подключения к данным. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
 
 6. Если база данных требует пароль, нажмите кнопку **Да, включить конфиденциальные данные в строку подключения**, а затем нажмите кнопку **Далее**.
 
@@ -105,7 +104,7 @@ ms.locfileid: "53888508"
 7. На странице **Выберите версию** выберите переключатель **Entity Framework 5.0** и нажмите кнопку **Далее**.
 
     > [!NOTE]
-    > Чтобы использовать последнюю версию Entity Framework 6 со службами WCF, нужно установить пакет NuGet WCF Data Services Entity Framework Provider. См. в разделе [использование WCF Data Services 5.6.0 с Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
+    > Чтобы использовать последнюю версию Entity Framework 6 со службами WCF, нужно установить пакет NuGet WCF Data Services Entity Framework Provider. См. в разделе [использование WCF Data Services 5.6.0 с Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8. На странице **Выбор объектов базы данных** разверните узел **Таблицы**, установите флажок **Customers** и нажмите кнопку **Готово**.
 
@@ -155,7 +154,7 @@ ms.locfileid: "53888508"
 
 1. В строке меню выберите файл, **добавить** > **новый проект**.
 
-2. В **новый проект** диалогового окна разверните узел **Visual Basic** или **Visual C#**  узел, выберите **Windows** узел и нажмите кнопку **Windows Forms Application**.
+2. В **новый проект** диалоговое окно последовательно раскройте элементы **Visual Basic** или **Visual C#** узел, выберите **Windows** узел, а затем выберите  **Windows Forms Application**.
 
 3. В текстовом поле **Имя** введите `NorthwindClient` и нажмите кнопку **ОК**.
 

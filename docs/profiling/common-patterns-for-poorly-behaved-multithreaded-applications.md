@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, common patterns for poorly-behaved multithreaded applications
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19f868089c5f8a6187d1bdd36adaf22162b8e2b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788930"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Общие шаблоны для неправильно работающих многопоточных приложений
 
@@ -30,7 +30,7 @@ ms.locfileid: "53878748"
 
 Как показано на следующем рисунке, визуализатор параллелизма может также обнаруживать подобные признаки в представлении использования ЦП, когда, несмотря на наличие нескольких потоков, приложение использует только одно логическое ядро.
 
-Дополнительные сведения см. в публикации "Performance Pattern 1: Identifying Lock Contention" (Шаблон производительности 1. Введение в конфликт блокировок) в блоге Хазима Шафи (Hazim Shafi) [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) (Средства параллельной производительности для Windows) на веб-сайте блогов MSDN.
+Дополнительные сведения см. в разделе "Запуск с помощью раздела проблем" в статье журнала MSDN Magazine [Производительность потоков — профилирование параллелизма на предмет состязания за ресурсы в Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx).
 
 ![Конфликты блокировок](../profiling/media/lockcontention_2.png "LockContention_2")
 

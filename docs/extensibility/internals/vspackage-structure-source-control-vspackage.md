@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e8207ffb52fd41c82eac896611f7454bd7379d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d609efe52955dba53b8c8890a6fcb44bb7f3f352
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874684"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332744"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Структура VSPackage (пакет VSPackage системы управления версиями)
 
@@ -28,23 +28,23 @@ VSPackage объявляет элементами меню и устанавли
 
 Пакет VSPackage системы управления версиями тесно интегрирована в Visual Studio. Семантика VSPackage включают:
 
--   Интерфейс, реализуемый размещению VSPackage ( `IVsPackage` интерфейс)
+- Интерфейс, реализуемый размещению VSPackage ( `IVsPackage` интерфейс)
 
--   Реализация команды пользовательского интерфейса (vsct-файл и реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс)
+- Реализация команды пользовательского интерфейса (vsct-файл и реализации <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс)
 
--   Регистрация VSPackage с помощью Visual Studio.
+- Регистрация VSPackage с помощью Visual Studio.
 
 Система управления версиями VSPackage должны обмениваться данными с этих сущностей Visual Studio:
 
--   Проекты
+- Проекты
 
--   Редакторы
+- Редакторы
 
--   Решения
+- Решения
 
--   Windows
+- Windows
 
--   В таблице выполняющихся документов
+- В таблице выполняющихся документов
 
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Службы среды Visual Studio, которые могут включать
 
@@ -54,7 +54,7 @@ VSPackage объявляет элементами меню и устанавли
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>
 
-Служба SVsRegisterScciProvider
+SVsRegisterScciProvider Service
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>
 

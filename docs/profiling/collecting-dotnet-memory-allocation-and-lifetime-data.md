@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Profiling Tools,.NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2095b06347c577811cdeb91d0a9039a140758c86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dbdc92ff0d8a4020c664de527b60e95ed6113329
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535467"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Сбор данных о выделении памяти для объектов .NET и времени их жизни
 
@@ -79,6 +79,6 @@ ms.locfileid: "53898051"
 
 ## <a name="see-also"></a>См. также
 
-[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)  
-[Практическое руководство. Выбор методов сбора данных](../profiling/how-to-choose-collection-methods.md)  
+[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
+[Практическое руководство. Выбор методов сбора данных](../profiling/how-to-choose-collection-methods.md)
 [Свойства сеанса анализа производительности](../profiling/performance-session-properties.md)

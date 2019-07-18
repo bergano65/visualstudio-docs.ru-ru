@@ -1,20 +1,17 @@
 ---
 title: Управление подписками Visual Studio
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.author: lank
+manager: lank
+ms.date: 06/24/2019
+ms.topic: conceptual
 description: Сведения о максимально эффективном использовании подписок Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d9c5e91f6cd76857bdd5aa4c5398cdde0db41b8
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822167"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67785086"
 ---
 # <a name="managing-subscriptions"></a>Управление подписками
 
@@ -92,18 +89,18 @@ ms.locfileid: "49822167"
 **Стандартные подписки**
 
 - Microsoft Store: если вы приобрели подписку в [Microsoft Store](http://www.microsoft.com/store), ее можно продлить в этом магазине.
-- Корпоративная лицензия: если организация приобретает подписки по программе корпоративного лицензирования, администратор должен обратиться к торговому посреднику, чтобы продлить подписки.
+- Корпоративная лицензия:  если организация приобретает подписки по программе корпоративного лицензирования, администратор должен обратиться к торговому посреднику, чтобы продлить подписки.
 
-**Облачные подписки**. Облачные подписки продлевать не требуется. Пока подписка оплачивается, она будет активной.
+**Облачные подписки:**  облачные подписки продлевать не требуется. Пока подписка оплачивается, она будет активной.
 
-**Подписки, приобретаемые по программам**. Если вы получили подписку по программе, она связана с вашим участием в программе. За дополнительными сведениями обратитесь к контактным лицам программы.
+**Подписки, предлагаемые по программам:**  если вы получили подписку по программе, она связана с вашим участием в программе. За дополнительными сведениями обратитесь к контактным лицам программы.
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials**. Dev Essentials — это бесплатная программа с бессрочным участием.
+**Visual Studio Dev Essentials:**  Dev Essentials — это бесплатная программа с бессрочным участием.
 
 ## <a name="transferring-subscriptions"></a>Передача подписок
 
@@ -127,6 +124,12 @@ ms.locfileid: "49822167"
    > [!div class="mx-imgBorder"]
    > ![Изменение сведений в профиле](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
+### <a name="setting-communications-preferences"></a>Настройка параметров сообщений
+Если вы хотите получать регулярные новости о вашей подписке и преимуществах, включая ежемесячные информационные бюллетени, касающиеся подписок Visual Studio, [измените настройки](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), установив флажки для подписок Visual Studio в своем профиле Visual Studio. Вы можете изменить эти настройки и отменить подписку в любое время. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Настройка параметров](_img/manage-vs-subscriptions/change-prefs.png)
+   
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Связывание подписки с существующими подписками Azure DevOps Services или Azure
 
 Если вы входите в подписку с помощью личной учетной записи Майкрософт и у вас есть подписка, включающая службы Azure DevOps Services или Microsoft Azure, с которой используется рабочая или учебная учетная запись под управлением Azure, вы можете связать эти две подписки. Это называется альтернативной учетной записью и позволяет продолжать входить в подписку с помощью учетной записи Майкрософт, а также иметь доступ к существующим ресурсам Azure, Azure DevOps Services или IDE, которые связаны с рабочей или учебной учетной записью.
@@ -147,7 +150,7 @@ ms.locfileid: "49822167"
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
-### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Вопрос. Если не обновить подписку, как долго корпорация Майкрософт будет хранить мои данные?
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Вопрос: Если не обновить подписку, как долго корпорация Майкрософт будет хранить мои данные?
 
 Ответ. Сроки хранения данных в системах корпорации Майкрософт зависят от канала покупки.
 

@@ -1,14 +1,9 @@
 ---
 title: 'Ошибка: Совместное использование файлов Windows настроено... | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: c45a1b74-61ec-4c64-9e2c-13051a4f50a5
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30a2fd01828d92fadeb901305f56ad8c65b863d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 96d65ae615522bcee43ddf5e8181e96eecc0d958
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157501"
 ---
-# <a name="error-windows-file-sharing-has-been-configured"></a>Ошибка: совместное использование файлов Windows настроено...
+# <a name="error-windows-file-sharing-has-been-configured"></a>Ошибка: Совместное использование файлов Windows настроено...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Совместное использование файлов Windows настроено, поэтому подключение к компьютеру происходит с помощью другого имени пользователя. Это несовместимо с удаленной отладкой  
@@ -41,19 +36,16 @@ ms.locfileid: "51803920"
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
-1.  Войдите на локальный компьютер, из которого выполняется отладка, используя другое имя учетной записи.  
+1. Войдите на локальный компьютер, из которого выполняется отладка, используя другое имя учетной записи.  
   
      —или—  
   
      . Отключитесь от удаленного компьютера, затем измените конфигурацию общего доступа к файлам для подключения к другому компьютеру с вашим именем учетной записи.  
   
-    1.  На **запустить** последовательно выберите пункты **стандартные**, а затем нажмите кнопку **командной**.  
+    1. В меню **Пуск** выберите пункт **Настройка**, затем нажмите пункт **Панель управления**.  
   
-    2.  В командной строке Windows введите:  
+    2. В командной строке Windows введите:  
   
          `net use /delete computer_name`  
   
-    3.  Измените параметры общего доступа к файлам любым из методов, описанных в справочной системе Windows.
-
-
-
+    3. Измените параметры общего доступа к файлам любым из методов, описанных в справочной системе Windows.

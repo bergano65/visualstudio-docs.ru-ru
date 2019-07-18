@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: 18038691-c140-426a-8617-27f0360650f3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a89830fb39786b2e2318f051d5bf25a16a9e8178
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: bb1502c875c04955578686113d8ad491311e800d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554135"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
-Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Clone (   
-   IDiaEnumInjectedSources** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `ppenum`  
- [out] Возвращает [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) , содержащий копию перечислителя. Подставляемый источников не повторяются, только перечислитель.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+Создает перечислитель с тем же состоянием перечисления, что и текущий перечислитель.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumInjectedSources** ppenum
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `ppenum`
+
+[out] Возвращает [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) , содержащий копию перечислителя. Подставляемый источников не повторяются, только перечислитель.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

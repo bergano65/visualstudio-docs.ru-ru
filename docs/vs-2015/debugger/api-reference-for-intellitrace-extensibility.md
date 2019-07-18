@@ -1,27 +1,22 @@
 ---
 title: Справочник по API для расширения IntelliTrace | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTrace, API reference
 ms.assetid: 46e6c648-293b-45c2-a29e-cca9c36cd865
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b7194dfa00ba48cc24989f9b9eefdfca30856739
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1e8cc2613a1fda470bd46951d0a4ffaf2d0eeedd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154233"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Справочник по API для расширения IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,16 +26,11 @@ ms.locfileid: "51760271"
 ## <a name="in-this-section"></a>В этом разделе  
  Эти интерфейсы API расширения IntelliTrace входят в одно пространство имен.  
   
--   <xref:Microsoft.VisualStudio.IntelliTrace>  
+- <xref:Microsoft.VisualStudio.IntelliTrace>  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [IntelliTrace](../debugger/intellitrace.md)  
  Представлены сведения об отладке с помощью IntelliTrace.  
   
- [Коллекция кода MSDN](http://go.microsoft.com/fwlink/?LinkId=166091)  
+ [Коллекция кода MSDN](https://code.msdn.microsoft.com/)  
  Содержит пример приложения, в котором демонстрируется использование расширяемости IntelliTrace.
-
-
-
-
-

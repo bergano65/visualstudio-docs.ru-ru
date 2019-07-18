@@ -1,7 +1,6 @@
 ---
 title: CA2202. Не ликвидируйте объекты несколько раз
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2202
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: fa85349a-cf1e-42c8-a86b-eacae1f8bd96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac1e6aafd9894cd59db1a1d842d560d4b7229860
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed2edd83918a9e4bc89543d1217d51e5e87f00c1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796836"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202. Не ликвидируйте объекты несколько раз
 

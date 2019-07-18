@@ -1,14 +1,9 @@
 ---
-title: 'CA1722: Идентификаторы не должны иметь неверные префиксы | Документация Майкрософт'
-ms.custom: ''
+title: CA1722. Идентификаторы не должны иметь неверные префиксы | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotHaveIncorrectPrefix
 - CA1722
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ca506e853d2f32a7932620ff576a2769574f1cc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0c9aa6600578da0d9868df2ecff9992bff9e818c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191247"
 ---
-# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: идентификаторы не должны иметь неверные префиксы
+# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722. Идентификаторы не должны иметь неправильные префиксы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -54,7 +49,4 @@ ms.locfileid: "49921305"
  Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1715: идентификаторы должны иметь правильные префиксы](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
-
-
-
+ [CA1715: Идентификаторы должны иметь правильные префиксы](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

@@ -1,31 +1,28 @@
 ---
-title: Использование портала для подписчиков — http://my.visualstudio.com | Документы Майкрософт
+title: Использование портала для подписчиков — http://my.visualstudio.com  | Документы Майкрософт
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Сведения о полном наборе преимуществ, доступных на портале подписок Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: 6bd5e0ac308a8644f6428deb7468e00007f7c70b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: eab622c843a7099b5a75ca953d55666be849b246
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859024"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784779"
 ---
-# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Сведения об использовании портала подписчика (my.<span></span>visualstudio<span></span>.com)
+# <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Сведения об использовании портала подписчика (my.visualstudio.com)
 
 Портал подписчика Visual Studio, размещенный по адресу [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), станет для вас единым источником всех преимуществ, предоставляемых подпиской Visual Studio.
 
 Чтобы использовать этот портал, выполните вход с учетными данными для вашей подписки.  Это может быть учетная запись Майкрософт (MSA) или адрес электронной почты, предоставленный организацией, например работодателем или учебным заведением.  Дополнительные сведения [о входе](signing-in.md).
 
-Портал разделен на шесть страниц.  Каждая из них предоставляет доступ к определенным продуктам и (или) услугам, включенным в вашу подписку.  Выделяются следующие категории: преимущества, загрузки, ключи продуктов, подписки, поддержка и Marketplace. 
+Портал разделен на шесть страниц.  Каждая из них предоставляет доступ к определенным продуктам и (или) услугам, включенным в вашу подписку.  Выделяются следующие категории: преимущества, загрузки, ключи продуктов, подписки, поддержка и Marketplace.
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Преимущества](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Средства и службы, включенные в вашу подписку, отображаются в виде плиток на странице "Преимущества".  Не все преимущества предоставляются для всех подписок. Плитки делятся на три категории: "Средства", "Профессиональное развитие" и "Поддержка".  Если вы используете Visual Studio Dev Essentials, здесь будет еще одна категория — "Рекомендованные", — в которую могут входить самые интересные преимущества из любых других категорий.
+Средства и службы, включенные в вашу подписку, отображаются в виде плиток на странице "Преимущества".  Не все преимущества предоставляются для всех подписок. Элементы делятся на три категории:  инструменты, профессиональная разработка и поддержка.  Если вы используете Visual Studio Dev Essentials, здесь будет еще одна категория — "Рекомендованные", — в которую могут входить самые интересные преимущества из любых других категорий.
 
 ### <a name="tools"></a>Инструменты
 Категория "Инструменты" содержит основные средства для разработки, такие как интегрированная среда разработки Visual Studio и Azure DevOps, а также предложения наших партнеров.  Здесь же вы найдете Azure, Центр приложений Visual Studio и другие службы.
@@ -53,4 +50,4 @@ ms.locfileid: "47859024"
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
-Пора обновить облачную подписку Visual Studio?  Нужно скачать свежие версии расширений для семейства продуктов Visual Studio?  Marketplace помогает пользователям найти расширения, средства и службы, дополняющие возможности Azure DevOps, Team Foundation Server и Visual Studio Code. Вы даже можете стать издателем и опубликовать в Marketplace собственные расширения.
+Пора обновить облачную подписку Visual Studio?  Нужно скачать свежие версии расширений для семейства продуктов Visual Studio?  Marketplace помогает пользователям найти расширения, средства и службы, дополняющие возможности Azure DevOps, Azure DevOps Server и Visual Studio Code. Вы даже можете стать издателем и опубликовать в Marketplace собственные расширения.

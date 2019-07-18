@@ -11,26 +11,26 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4098689338d0c0c647964e4d13e59ab860e42e4c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 9ef0daf5fd28bd829edcdce412839b03ed8347bf
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827408"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745437"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Ошибка: Отладка в смешанном режиме для процессов x64 поддерживается только при использовании платформы Microsoft .NET Framework 4 или выше
-Для отладки смеси управляемого и неуправляемого кода в 64-разрядном процессе необходимо использовать версию 4 платформы [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Отладка в смешанном режиме для 64-разрядных процессов при использовании версий [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], предшествующих версии 4, не поддерживается.  
-  
-### <a name="to-correct-this-error"></a>Исправление ошибки  
-  
-- Выполните одно из следующих действий.  
-  
-  - Обновите [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] до версии 4.  
-  
-  - Постройте для отладки 32-разрядную версию приложения.  
-  
-## <a name="see-also"></a>См. также раздел  
- [Remote Debugging](../debugger/remote-debugging.md)
+Чтобы выполнить отладку смешанного собственного и управляемого кода в 64-разрядном процессе, необходимо иметь .NET Framework версии 4. Отладка в смешанном режиме для 64-разрядных процессов при использовании версии платформы .NET Framework 4 или более не поддерживается.
+
+### <a name="to-correct-this-error"></a>Исправление ошибки
+
+- Выполните одно из следующих действий.
+
+  - Обновление .NET Framework до версии 4.
+
+  - Постройте для отладки 32-разрядную версию приложения.
+
+## <a name="see-also"></a>См. также
+- [Remote Debugging](../debugger/remote-debugging.md)

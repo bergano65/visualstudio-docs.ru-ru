@@ -9,15 +9,15 @@ helpviewer_keywords:
 - CPU counters in Profiling Tools
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf173f39accb0bb9d2907349c82accdd4f21b40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553023"
 ---
 # <a name="cpu-and-windows-counters"></a>Счетчики ЦП и Windows
 
@@ -129,7 +129,7 @@ ms.locfileid: "53912640"
 
 ## <a name="see-also"></a>См. также
 
-[Разделы общих сведений](../profiling/overviews-performance-tools.md)  
-[Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md)  
-[Практическое руководство. Сбор данных счетчиков производительности ЦП](../profiling/how-to-collect-cpu-counter-data.md)  
+[Обзоры](../profiling/overviews-performance-tools.md)
+[Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md)
+[Практическое руководство. Сбор данных счетчиков производительности ЦП](../profiling/how-to-collect-cpu-counter-data.md)
 [Практическое руководство. Сбор данных счетчиков производительности Windows](../profiling/how-to-collect-windows-counter-data.md)

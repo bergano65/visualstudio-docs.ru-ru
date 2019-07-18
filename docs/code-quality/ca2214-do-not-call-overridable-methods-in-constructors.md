@@ -1,7 +1,6 @@
 ---
 title: CA2214. Не вызывайте переопределяемые методы в конструкторах
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 05/29/2016
 ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 335b57ca-a6e8-41b4-a20e-57ee172c97c3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ec50272dafde23072f97f22946370dd2fc5d31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e05e6925085b27de3001c8ff62d8a3c6e69a88f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934165"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401315"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214. Не вызывайте переопределяемые методы в конструкторах
 
@@ -42,6 +41,9 @@ ms.locfileid: "53934165"
 
 При вызове виртуального метода фактический тип, который выполняет метод не выбран до времени выполнения. Когда конструктор вызывает виртуальный метод, вполне возможно, что конструктор экземпляра, который вызывает метод не выполнен.
 
+> [!NOTE]
+> Реализация двоичный анализ это правило имеет разные диагностическое сообщение из " **\[имя конструктора] содержит цепочку вызовов, который приводит к вызову виртуального метода, определяемый классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий**«. [Анализаторы FxCop](install-fxcop-analyzers.md) реализации этого правила есть диагностическое сообщение из "**не вызывайте переопределяемые методы в конструкторах**«.
+
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
 Чтобы устранить нарушение этого правила, не следует вызывать виртуальные методы типа из конструкторов типа.
@@ -52,7 +54,7 @@ ms.locfileid: "53934165"
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано влияние нарушения этого правила. Тестовое приложение создает экземпляр класса `DerivedType`, что приводит его базового класса (`BadlyConstructedType`) конструктор для выполнения. `BadlyConstructedType`в конструктор неправильно вызывает виртуальный метод `DoSomething`. Как показывает вывод, `DerivedType.DoSomething()` выполняет и поэтому сначала выполняет `DerivedType`выполняется конструктор.
+В следующем примере показано влияние нарушения этого правила. Тестовое приложение создает экземпляр класса `DerivedType`, что приводит его базового класса (`BadlyConstructedType`) конструктор для выполнения. `BadlyConstructedType`в конструктор неправильно вызывает виртуальный метод `DoSomething`. Как показывает вывод, `DerivedType.DoSomething()` выполняются перед `DerivedType`выполняется конструктор.
 
 [!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
 [!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]

@@ -2,21 +2,20 @@
 title: Анализ кода R
 description: Работа со встроенной поддержкой анализа данных для R в Visual Studio, в том числе параметры анализа.
 ms.date: 07/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 7cbbf0e727269baa0a9e199574afcfee1d8ee687
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aecf9d95fb8a3b2cda659e2694bff145424e150b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970746"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Анализ кода R в Visual Studio
 

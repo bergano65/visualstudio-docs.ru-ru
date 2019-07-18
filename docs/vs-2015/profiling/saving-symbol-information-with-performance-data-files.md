@@ -1,14 +1,9 @@
 ---
 title: Сохранение символьной информации с файлами данных профилировщика | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - packsymbols, in profiling tools reports
 - profiling tools, packsymbols
@@ -16,13 +11,13 @@ ms.assetid: 8b802505-e94d-4ee0-83e4-fdd790a332c1
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dbe05d345e54a900fcdd5568aa898b80417bb68d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160297"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Сохранение символьной информации с файлами данных профилировщика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,9 +51,9 @@ ms.locfileid: "51761268"
   
 - Убедитесь в том, что задан путь к кэшу символов Windows. Чтобы задать путь к кэшу символов, выполните одно из указанных ниже действий.  
   
-  -   Установите в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в качестве значения параметра "Отладчик->Символы" правильный путь.  
+  - Установите в интегрированной среде разработки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] в качестве значения параметра "Отладчик->Символы" правильный путь.  
   
-  -   Добавьте параметр -symbolpath программы командной строки VSPerfReport, чтобы включить символьную информацию.  
+  - Добавьте параметр -symbolpath программы командной строки VSPerfReport, чтобы включить символьную информацию.  
   
 - Если символы не отображаются в [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], убедитесь в том, что сервер символов правильно настроен для сервера ASP.  
   
@@ -73,6 +68,3 @@ ms.locfileid: "51761268"
  [Сохранение и экспорт данных средств производительности](../profiling/saving-and-exporting-performance-tools-data.md)   
  [Практическое руководство. Справочная информация о символах Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

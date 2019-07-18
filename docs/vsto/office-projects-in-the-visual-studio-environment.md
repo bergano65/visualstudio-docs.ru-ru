@@ -36,17 +36,17 @@ helpviewer_keywords:
 - Visual Studio, Office documents in
 - worksheets [Office development in Visual Studio]
 - VST.Designer.ExcelVST.Designer.Word
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9a0ac865dff8ec1eb0fe8a2b97cad9b6ab5e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978062"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Проекты Office в среде Visual Studio
   Разработка проектов Microsoft Office аналогична разработке в Visual Studio проектов других типов, таких как проекты Windows Forms. При создании или открытии проекта Office элементы проекта отображаются в **обозревателе решений**. Для проектов уровня документа документ (документ Word или книга Excel) открывается в среде Visual Studio и используется в качестве визуального конструктора.
@@ -73,7 +73,7 @@ ms.locfileid: "53842723"
 ### <a name="temporary-certificates"></a>Временные сертификаты
  Проекты Office также содержат временный сертификат с именем *имя_проекта*_TemporaryKey.pfx. Этот сертификат служит для подписи манифестов приложения и развертывания проекта во время разработки. Дополнительные сведения см. в разделе [предоставления доверия решениям Office](../vsto/granting-trust-to-office-solutions.md) и [решений Office, защита](../vsto/securing-office-solutions.md).
 
-###  <a name="hiddenfiles"></a> Скрытые файлы проекта
+### <a name="hiddenfiles"></a> Скрытые файлы проекта
  По умолчанию несколько файлов проекта скрыты. Эти файлы создаются средой Visual Studio и зависят от типа проекта. Для отображения скрытых файлов нажмите кнопку **Показать все файлы** в **обозревателе решений**.
 
  Не вносите изменения в скрытые файлы проекта. Изменение этих файлов не поддерживается и может привести к повреждению проекта. Скрытые файлы проекта заново создаются при внесении определенных изменений в документ. Если в скрытый файл проекта внести изменения вручную, эти изменения будут потеряны при следующем создании файла.

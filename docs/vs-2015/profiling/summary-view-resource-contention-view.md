@@ -1,27 +1,22 @@
 ---
 title: Представление "Сводка" — представление "Состязание за ресурсы" | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 45052997e9dd8332518ce5fb7804963f88e97959
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 65f659b64b6a1e29e1e25ae344dd8033e631de09
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157760"
 ---
 # <a name="summary-view---resource-contention-view"></a>Представление "Сводка" — представление "Состязание за ресурсы"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "51791856"
   
  Представление **Ресурсы, за которые происходит больше всего состязаний** содержит указанные ниже данные для каждого ресурса.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**Name**|Имя ресурса.|  
 |**% состязаний**|Процент общего количества состязаний из данных профилирования, относящийся к состязаниям за этот ресурс.|  
@@ -48,11 +43,8 @@ ms.locfileid: "51791856"
   
  Представление **Потоки, за которые происходит больше всего состязаний** содержит указанные ниже данные для каждого потока.  
   
-|Столбец|Описание:|  
+|Столбец|Описание|  
 |------------|-----------------|  
 |**ID**|Идентификатор потока.|  
 |**Name**|Имя процесса — владельца потока.|  
 |**% состязаний**|Процент общего количества состязаний из данных профилирования, относящийся к состязаниям за этот ресурс.|
-
-
-

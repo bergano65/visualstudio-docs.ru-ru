@@ -1,7 +1,6 @@
 ---
-title: Пошаговое руководство. Использование файла конфигурации для определения источника данных
+title: Использование файла конфигурации для определения источника данных
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - data sources, defining with configuration files
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28e8ec57d051a8237a93e59f69f9e46c255a28f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840743"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746765"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Пошаговое руководство. Использование файла конфигурации для определения источника данных
 
@@ -53,7 +52,7 @@ ms.locfileid: "53840743"
 
 3. Выберите шаблон **Файл конфигурации приложения** и нажмите кнопку **Добавить**.
 
-##  <a name="define-a-custom-configuration-section"></a>Определение настраиваемого раздела конфигурации
+## <a name="define-a-custom-configuration-section"></a>Определение настраиваемого раздела конфигурации
 
 Просмотрите файл *app.config*. Он содержит как минимум объявление XML и корневой элемент.
 
@@ -63,16 +62,16 @@ ms.locfileid: "53840743"
 
 2. В элементе **configSections** создайте элемент **section**.
 
-3. В элементе **section** добавьте атрибут с именем `name` и задайте для него значение `microsoft.visualstudio.testtools`. Добавьте еще один атрибут с именем `type` и задайте для него значение `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. В элементе **section** добавьте атрибут с именем `name` и задайте для него значение `microsoft.visualstudio.testtools`. Добавьте еще один атрибут с именем `type` и задайте для него значение `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`.
 
 Элемент **section** должен принять следующий вид:
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> Имя сборки должно соответствовать сборке .NET Framework Microsoft Visual Studio, которую вы используете. При использовании .NET Framework 3.5 Visual Studio задайте в качестве значения версии 9.0.0.0. Если вы используете .NET Framework 2.0 Visual Studio, задайте версию 8.0.0.0.
+> Имя сборки должно соответствовать версии, которую вы используете.
 
 ## <a name="define-connection-strings"></a>Определение строк подключения
 

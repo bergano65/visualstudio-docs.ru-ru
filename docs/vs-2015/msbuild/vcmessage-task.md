@@ -1,14 +1,9 @@
 ---
 title: Задача VCMessage | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.vcmessage
 dev_langs:
@@ -24,22 +19,21 @@ ms.assetid: 956675fd-05dc-40b4-856f-616145103498
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f592160aae4fc1382b36c7331175eb6ab20d3fdc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 508d1fe33046f6051c9c5c1b8e54036e78ae7d2f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243938"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652375"
 ---
 # <a name="vcmessage-task"></a>Задача VCMessage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Заносит в журнал предупреждения и сообщения об ошибках, возникшие при сборке.  
   
 ## <a name="remarks"></a>Примечания  
- Эта задача помогает реализовать MSBuild для Visual C++ и не предназначена для вызова пользователем. Дополнительные сведения см. в разделе <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.  
+ Эта задача помогает реализовать MSBuild для Visual C++ и не предназначена для вызова пользователем. Для получения дополнительной информации см. <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.  
   
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описаны параметры задачи **VCMessage**.  
@@ -50,8 +44,5 @@ ms.locfileid: "49243938"
 |**Код**|Обязательный параметр **string**.<br /><br /> Номер ошибки, определяющий сообщение.|  
 |**Type**|Необязательный параметр типа **String**.<br /><br /> Задает тип выдаваемого сообщения. Укажите `"Warning"`, чтобы выдать предупреждающее сообщение, или `"Error"`, чтобы выдать сообщение об ошибке.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

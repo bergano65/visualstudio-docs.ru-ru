@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3973276b-7b11-4692-a0a2-32bebf0b9c2a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5fd8376cbadd2cc576e0ef3d86c25c53ad98530
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900390"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Примеры и пошаговые руководства по развертыванию ClickOnce
 Этот раздел содержит образцы приложений, пример кода и поэтапные указания иллюстрируют синтаксис, структуру и приемы, используемые для развертывания Windows Forms, WPF и консольных приложений.

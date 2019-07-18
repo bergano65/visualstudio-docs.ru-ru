@@ -1,14 +1,9 @@
 ---
-title: 'CA1030: Используйте события, если это уместно | Документация Майкрософт'
-ms.custom: ''
+title: CA1030. Используйте события, если это уместно | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseEventsWhereAppropriate
 - CA1030
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b1b4989b5b8ca47bc41328c75610cf984926aae2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d00db6f9a00a273198cc50704d65ed6d2e4bb33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157702"
 ---
-# <a name="ca1030-use-events-where-appropriate"></a>CA1030: используйте события, если это уместно
+# <a name="ca1030-use-events-where-appropriate"></a>CA1030. По возможности используйте события
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,13 +35,13 @@ ms.locfileid: "49870137"
 ## <a name="cause"></a>Причина
  Открытый, защищенный или закрытый метод имя начинается с одним из следующих:
 
--   Дополнительный компонент
+- Дополнительный компонент
 
--   RemoveOn
+- RemoveOn
 
--   Fire
+- Fire
 
--   Raise
+- Raise
 
 ## <a name="rule-description"></a>Описание правила
  Данное правило отслеживает методы с именами, которые, как правило, используются для событий. События следуют шаблоне разработки наблюдателя или публикации-подписки; они используются при изменении состояния в один объект необходимо передать другим объектам. Если метод вызывается в ответ на четко определенное изменение состояния, метод должен вызываться с помощью обработчика событий. Объекты, вызывающие методы, должны создавать события, а не вызывать методы напрямую.
@@ -58,6 +53,3 @@ ms.locfileid: "49870137"
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Отключайте предупреждение из этого правила, если метод не работает с [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] модель событий.
-
-
-

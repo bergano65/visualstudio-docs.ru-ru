@@ -1,8 +1,7 @@
 ---
-title: IDebugApplicationThread110::IsSuspendedForBreakPoint | Документы Microsoft
+title: IDebugApplicationThread110::IsSuspendedForBreakPoint | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 377eb51d2cdccd021d04bc1bbfaf2f9ea009624d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 82b8957ae9f2b6674af7addf2239c745115e4e3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440529"
 ---
 # <a name="idebugapplicationthread110issuspendedforbreakpoint"></a>IDebugApplicationThread110::IsSuspendedForBreakPoint
-Определяет, является ли [IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) был вызван для этого потока и еще не завершено.  
+Определяет, является ли [IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md) был вызван для этого потока и еще не завершена.  
   
 > [!IMPORTANT]
->  [Idebugapplicationthread110 — интерфейс](../../winscript/reference/idebugapplicationthread110-interface.md) — реализованный PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> [Интерфейс IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) является реализуется PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -35,7 +34,7 @@ HRESULT IsSuspendedForBreakPoint([out, annotation("_Out_")] BOOL * pfIsSuspended
   
 #### <a name="parameters"></a>Параметры  
  `pfIsSuspended`  
- [out] `true` Если поток приостановлен для точки останова, `false`.  
+ [out] `true` Если выполнение потока приостанавливается для точки останова, `false`.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md)

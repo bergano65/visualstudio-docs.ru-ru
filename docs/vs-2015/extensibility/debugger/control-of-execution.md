@@ -1,26 +1,21 @@
 ---
 title: Элемент управления выполнения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f4fe5259d49424fa1d46ea1ef33c0808dfc7b7be
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d3ce9f3fc810a1f2fd37166d4272b7c57c07927c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203282"
 ---
 # <a name="control-of-execution"></a>Элемент управления выполнения
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,11 +41,11 @@ ms.locfileid: "51776373"
   
 5. Если пользователь вручную выполнять шаги с заходом, более чем или выходом из функции, интегрированной среды разработки в запросах сеанса отладки для вызова программы `Step` метод, передав ему единицы шага (инструкция, оператор или строки) и тип шага — то есть, следует ли выполнять шаги с заходом, более чем , или выходом из функции. После завершения этого шага, DE отправляет событие шаг для завершения сеанса отладки, который является событием остановки.  
   
-    - или -  
+    -или-  
   
     Если пользователь вручную для продолжения выполнения из текущего указателя инструкций, интегрированная среда разработки предлагает сеанса отладки для вызова программы **Execute** метод. Выполнение программы продолжается, пока встретится следующего условия остановки.  
   
-    - или -  
+    -или-  
   
     Если игнорировать событие определенного остановка сеанса отладки, сеанс отладки вызывает программы **Продолжить** метод. Если программа была шаг с заходом в, над или выходом из функции во время обнаружения условие остановки, он продолжает этот шаг.  
   
@@ -68,4 +63,3 @@ ms.locfileid: "51776373"
   
 ## <a name="see-also"></a>См. также  
  [Задачи отладки](../../extensibility/debugger/debugging-tasks.md)
-

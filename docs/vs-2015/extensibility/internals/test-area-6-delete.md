@@ -1,29 +1,24 @@
 ---
-title: 'Область тестирования 6: Удалить | Документация Майкрософт'
-ms.custom: ''
+title: Область тестирования 6. Удалить | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1498566e1afeaf1517b7ae3bd62297444c828888
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ffe786b5bc5f6d0bb0233fbb431988e0145611d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155937"
 ---
-# <a name="test-area-6-delete"></a>Область тестирования 6. Удаление
+# <a name="test-area-6-delete"></a>Область тестирования 6. Оператор delete
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Эта область тестирования подключаемый модуль системы управления версиями охватывает действия удаления.  
@@ -43,13 +38,13 @@ ms.locfileid: "51766305"
 ## <a name="expected-behavior"></a>Ожидаемое поведение  
  Ожидаемым поведением для тестовых случаев в области проверки delete является:  
   
--   Удаленный элемент больше не отображается в **обозревателе решений**.  
+- Удаленный элемент больше не отображается в **обозревателе решений**.  
   
--   Родительский удаленный проект или элемент извлечен, при необходимости (возможно, предлагая.)  
+- Родительский удаленный проект или элемент извлечен, при необходимости (возможно, предлагая.)  
   
--   После удаления checked out или товар добавлен, он не отображается в **Отложенные возвраты** окна.  
+- После удаления checked out или товар добавлен, он не отображается в **Отложенные возвраты** окна.  
   
--   Элемент по-прежнему существует в хранилище системы управления версиями, даже после удаления и должны удаляться вручную.  
+- Элемент по-прежнему существует в хранилище системы управления версиями, даже после удаления и должны удаляться вручную.  
   
 |Действие|Шаги теста|Ожидаемые результаты для проверки|  
 |------------|----------------|--------------------------------|  
@@ -61,4 +56,3 @@ ms.locfileid: "51766305"
   
 ## <a name="see-also"></a>См. также  
  [Руководство по тестированию подключаемых модулей системы управления версиями](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

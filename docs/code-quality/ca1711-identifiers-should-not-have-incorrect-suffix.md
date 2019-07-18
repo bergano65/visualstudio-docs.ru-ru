@@ -1,7 +1,6 @@
 ---
 title: CA1711. Идентификаторы не должны иметь неправильные суффиксы
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1711
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a63359ab-386d-44ae-b381-ee3a983aca29
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86bcd9373fda82c1f650da88a87d905a7ba1e6a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9377dcf03bcbb8087d152ef98986f31c12c94c45
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920437"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841932"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711. Идентификаторы не должны иметь неправильные суффиксы
 
@@ -34,6 +33,8 @@ ms.locfileid: "53920437"
 ## <a name="cause"></a>Причина
 
 Идентификатор имеет неверный суффикс.
+
+По умолчанию это правило считывает только видимое извне идентификаторов, но это [можно настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
 
@@ -73,6 +74,16 @@ ms.locfileid: "53920437"
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
 
 Нельзя отключить предупреждение из этого правила, если суффикс не будет однозначен в домене приложения.
+
+## <a name="configurability"></a>Возможность настройки
+
+Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+
+```ini
+dotnet_code_quality.ca1711.api_surface = private, internal
+```
+
+Этот параметр для только что это правило, для всех правил или для всех правил можно настроить в этой категории (именования). Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Связанные правила
 

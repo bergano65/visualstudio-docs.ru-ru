@@ -1,11 +1,8 @@
 ---
 title: Набор правил диалоговое окно редактора (для прежних версий) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942404"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703198"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Диалоговое окно «Редактор набора правил» (для прежних версий)
 Здесь описывается, как использовать **редактор набора правил** диалогового окна в прежних версий [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -29,12 +26,12 @@ ms.locfileid: "49942404"
  **Редактор набора правил** диалоговое окно используется для создания и изменения [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) наборов, которые будут сериализованы в файл с расширением RULES правил.  
   
 > [!NOTE]
->  Если вы хотите открыть файл с расширением RULES **редактор XML с кодировкой**, необходимо закрыть связанное окно конструктора для рабочего процесса или действия.  
+> Если вы хотите открыть файл с расширением RULES **редактор XML с кодировкой**, необходимо закрыть связанное окно конструктора для рабочего процесса или действия.  
   
- Сведения о доступе к **редактор набора правил** диалоговом окне см. в разделе [как: создание PolicyActivity набора правил (для прежних версий)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
+ Сведения о доступе к **редактор набора правил** диалоговом окне см. в разделе [как: Создать набор правил PolicyActivity (для прежних версий)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
->  Редактор правил [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий, используемый для работы с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], не поддерживает настройку для различных версий.  
+> Редактор правил [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий, используемый для работы с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], не поддерживает настройку для различных версий.  
   
  В следующей таблице описаны элементы пользовательского интерфейса (UI) **редактор набора правил** диалоговое окно.  
   
@@ -73,13 +70,13 @@ ms.locfileid: "49942404"
   
 - Арифметические операторы: +, -, *, /, MOD  
   
-- Логические операторы: И, & &, OR, &#124; &#124;, NOT,!  
+- Логические операторы И, &AMP; &AMP;, OR, &AMP;#124; &AMP;#124;, NOT,!  
   
 - Побитовые операторы: &,&#124;  
   
   Приоритет оператора выражения определяется правилами приоритета операторов языка C#.  
   
-  Дополнительные сведения об условиях см. в разделе [использование условий в рабочих процессах](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Дополнительные сведения об условиях см. в разделе [использование условий в рабочих процессах](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Функции Halt и Update  
  **Действия Then:** и **действия Else:** выражения поддерживают **Halt** и **обновления** функции. Для использования **Halt** функции, введите **Halt** в **действие Then:** или **действие Else:** текстовое поле. **Halt** действие вызывает немедленно прерывает выполнение набора правил и управление возвращается вызывающему коду. Использовании **обновления** функция прямых логических цепочках.  

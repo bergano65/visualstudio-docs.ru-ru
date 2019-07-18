@@ -1,28 +1,23 @@
 ---
 title: Раскрывающийся список | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - drop-down bar
 ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: da48806d6be6b19dc3681b19e95ac7664656eeb0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7db4296a8fa4146a52d167bce3d8b051aa3ca073
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204644"
 ---
-# <a name="drop-down-bar"></a>Раскрывающийся список
+# <a name="drop-down-bar"></a>Раскрывающаяся панель
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В строке раскрывающегося списка предоставляется в верхней части окна кода и два раскрывающихся списков.  
@@ -35,19 +30,19 @@ ms.locfileid: "51791150"
   
  При реализации раскрывающуюся панель, существует четыре интерфейса роль:  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>  
   
      Реализация этого интерфейса позволяет вставить в него содержимое раскрывающейся панелью. Каждой комбинации раскрывающегося списка может содержать обычный текст или затейливого текста (полужирный шрифт, курсив или подчеркнутый), может иметь цвет шрифта текста окна или серым шрифта выделение цветом и при необходимости можно указать небольшое растровое изображение рядом с элементом раскрывающегося списка. Аналогичную <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> интерфейс, растровые изображения предоставляются в списках изображений. Каждое сочетание раскрывающегося списка может иметь другой образ из списка; Тем не менее каждый образ список должен содержать образы имеют одинаковую высоту. Кроме того, с помощью <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient.GetComboTipText%2A> метод, можно предоставить подсказки для каждого сочетания.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>  
   
      Вызовите этот интерфейс, чтобы создать или уничтожить раскрывающейся панелью для окна кода. Этот интерфейс может также использоваться для определения, раскрывающейся панелью уже добавлен ли в окне кода, вызвав <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> метод. Вызовите <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> для <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> из <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>  
   
      Вызовите этот интерфейс для взаимодействия непосредственно с раскрывающейся панелью. Этот интерфейс можно использовать для принудительного обновления в раскрывающемся списке панели содержимого, или чтобы изменить выбор в одном из списков.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>  
   
      Если вы зарегистрировали `ShowDropdownBarOption` в свой ключ реестра службы языка, затем в диспетчер окон кода необходимо отслеживать это событие для синхронизации со предпочтениям пользователя относительно отображение раскрывающейся панелью. Если этот параметр не зарегистрирован в ваш ключ службы языка, то этот параметр для отображения или скрытия раскрывающейся панелью отключен на **параметры** меню.  
   
@@ -57,4 +52,3 @@ ms.locfileid: "51791150"
 ## <a name="see-also"></a>См. также  
  [Настройка кода Windows с помощью API прежних версий](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)   
  [Поддержка панели навигации в языковой службе прежних версий](../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)
-

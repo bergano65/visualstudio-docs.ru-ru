@@ -1,14 +1,9 @@
 ---
 title: Задача Message | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Message
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 2293309d-42b6-46dc-9684-8c146f66bc28
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 29b51a3e51610ee15bf9908e6c0465fbe1fd5cd6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 48e867cd0993106247f7105c1102f4e1407a4fed
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285081"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662742"
 ---
 # <a name="message-task"></a>Задача Message
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Записывает сообщения в журнал в процессе сборки.  
   
 ## <a name="parameters"></a>Параметры  
@@ -67,9 +61,6 @@ ms.locfileid: "49285081"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)
-
-
-

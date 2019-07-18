@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e50855061a69a8d3b5fd6aa068b0f8c1385173e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f91646575fba2df1f48c08adc7a9233bb63f27df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974033"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Как выполнить Сбор данных о производительности для веб-сайта
 
@@ -101,7 +101,7 @@ ms.locfileid: "53864155"
 
 ## <a name="see-also"></a>См. также
 
-[Разделы общих сведений](../profiling/overviews-performance-tools.md)  
-[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)  
-[Общие сведения о значениях данных инструментирования](../profiling/understanding-instrumentation-data-values.md)  
-[Общие сведения о значениях выборочных данных](../profiling/understanding-sampling-data-values.md)
+[Обзоры](../profiling/overviews-performance-tools.md)
+[Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)
+[Общие сведения о значениях данных инструментирования](../profiling/understanding-instrumentation-data-values.md)
+[Общие сведения о значениях данных выборки](../profiling/understanding-sampling-data-values.md)

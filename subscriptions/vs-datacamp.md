@@ -4,17 +4,14 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Сведения о преимуществе DataCamp Training, входящем в некоторые подписки Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
-searchscope: VS Subscription
-ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 5f5b327bb5b1c328fe746fdbafc1a7550eefacd6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802152"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825348"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Преимущество DataCamp Training в подписках Visual Studio
 
@@ -33,7 +30,7 @@ ms.locfileid: "53802152"
 3. На странице DataCamp можно создать учетную запись.  Вы можете ввести адрес электронной почты и пароль либо выбрать вход с помощью существующей учетной записи Facebook, LinkedIn или Google.  Указав данные для входа, нажмите кнопку **Начать работу**.
    > [!div class="mx-imgBorder"]
    > ![Создание учетной записи DataCamp](_img/vs-datacamp/vs-datacamp-create-account.png)
-   > 
+   >
    > [!NOTE]
    > На начальной стадии создания учетной записи вы можете получить следующее сообщение об ошибке: "Ой!  Недействительный промокод, или срок действия промокода истек".  Это связано с тем, что срок действия создаваемого промокода истекает через несколько минут.  Если вы получили это сообщение, просто вернитесь на страницу [Преимущества](https://my.visualstudio.com/benefits) и щелкните ссылку **Активировать** на плитке преимущества DataCamp.
 
@@ -50,7 +47,6 @@ ms.locfileid: "53802152"
    > [!div class="mx-imgBorder"]
    > ![Набор навыков обработки и анализа данных в DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png)
 
-
 6. В зависимости от выбранной схемы и параметров вы увидите ряд карьерных путей.  Нажмите кнопку **Регистрация** для выбранного пути.
    > [!div class="mx-imgBorder"]
    > ![Карьерный путь в DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png)
@@ -62,7 +58,7 @@ ms.locfileid: "53802152"
 
 Вы можете в любой момент остановиться и продолжить обучение в следующем сеансе.  Просто перейдите на сайт [http://www.datacamp.com](http://www.datacamp.com) и выполните вход.  Вы увидите информационную панель и сможете возобновить обучение с того места, на котором остановились. Для этого нажмите **Продолжить путь**.
 
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Продолжение обучения в DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Право на участие
@@ -71,28 +67,22 @@ ms.locfileid: "53802152"
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия | 3 месяца       |  Нет.  Доступно только для новых подписчиков          |
 | Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | 3 месяца                                                            |  Нет.  Доступно только для новых подписчиков           |
-| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | Доступно                                             |  Нет.  Доступно только для новых подписчиков           |
-| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | Доступно                                              |  Нет.  Доступно только для новых подписчиков           |
-| Visual Studio Dev Essentials | Н/Д  | 2 месяца | Нет. Доступно только для новых подписчиков |
+| Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 3 месяца                                             |  Нет.  Доступно только для новых подписчиков           |
+| MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 3 месяца                                              |  Нет.  Доступно только для новых подписчиков           |
 | Visual Studio Enterprise (ценовая категория "Стандартный")  | Не для перепродажи (NFR) <sup>1</sup> |Недоступно  | Н/Д |
 | Visual Studio Enterprise, Visual Studio Professional (ежемесячная облачная) | Azure | Недоступно | Н/Д |
 
-
-
-<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), FTE, Microsoft Valued Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
-
+<sup>1</sup> *Включает следующие категории:  не для перепродажи (NFR), FTE, Most Valuable Professional (MVP), региональный директор (RD), Microsoft Partner Network (MPN), отраслевой партнер Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 > [!NOTE]
-> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках Облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
-
+> Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
-
 ## <a name="support-resources"></a>Ресурсы поддержки
--  Нужна помощь с использованием DataCamp?  Ознакомьтесь со следующими ресурсами:
-    - [Сообщество DataCamp](https://www.datacamp.com/community/tutorials), форумы и руководства.
-    - [Центр справки DataCamp.](https://support.datacamp.com/hc) Поиск вспомогательных тем и просмотр ответов на вопросы пользователей.
-    - [Отправка запроса на получение поддержки](https://support.datacamp.com/hc/requests/new)
--  По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+- Нужна помощь с использованием DataCamp?  Ознакомьтесь со следующими ресурсами:
+  - [Сообщество DataCamp](https://www.datacamp.com/community/tutorials), форумы и руководства.
+  - [Центр справки DataCamp.](https://support.datacamp.com/hc) Поиск вспомогательных тем и просмотр ответов на вопросы пользователей.
+  - [Отправка запроса на получение поддержки](https://support.datacamp.com/hc/requests/new)
+- По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).

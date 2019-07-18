@@ -1,30 +1,29 @@
 ---
-title: Идентификаторы рабочих нагрузок и компонентов для Visual Studio Desktop Express 2017
+title: Идентификаторы рабочих нагрузок и компонентов для Visual Studio Desktop Express
 titleSuffix: ''
 description: Идентификаторы рабочих нагрузок и компонентов позволяют устанавливать Visual Studio с помощью командной строки. Также их можно указать в качестве зависимости в манифесте VSIX.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.workload:
-- multiple
-ms.openlocfilehash: f04e52ed3198c37f19cd5cf1ce9eb334446c6d52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818964"
 ---
-# <a name="visual-studio-2017-desktop-express-component-directory"></a>Каталог компонентов Visual Studio 2017 Express для Desktop
+# <a name="visual-studio-desktop-express-component-directory"></a>Каталог компонентов Visual Studio Desktop Express
 
 В таблицах на этой странице перечислены идентификаторы, которые можно использовать для установки Visual Studio с помощью командной строки или в качестве зависимости в манифесте VSIX. Обратите внимание, что по мере выхода обновлений для Visual Studio здесь будут появляться новые компоненты.
 

@@ -1,7 +1,6 @@
 ---
 title: Безопасность
 ms.date: 06/01/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio], applications
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74643454c4e96f5f4c1faa98b26fa1f26bd2790b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c5b0f4c748cd923ca02cb16ba374747c20d12d7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904634"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747654"
 ---
 # <a name="secure-applications"></a>Обеспечение безопасности приложений
 
@@ -41,7 +40,7 @@ ms.locfileid: "53904634"
 
 ## <a name="see-also"></a>См. также
 
-- [Безопасность в .NET Framework](/dotnet/standard/security/index)
+- [Безопасность в .NET](/dotnet/standard/security/index)
 - [Безопасность в Azure](/azure/security/)
 - [Руководство по безопасности системы Windows 10 Mobile](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Функции безопасности платформы Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)

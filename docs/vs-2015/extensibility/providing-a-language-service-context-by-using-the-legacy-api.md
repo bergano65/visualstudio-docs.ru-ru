@@ -1,33 +1,28 @@
 ---
 title: Предоставляет контекст службы языка с помощью API прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 322dc704524a5b0172797c9351e7beb60d778ab4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4471b71b612008ba7d0733c92286415cd3c3f6b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193866"
 ---
-# <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Предоставляет контекст службы языка с помощью API прежних версий
+# <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Предоставление контекста языковой службы с помощью API прежних версий
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Существует два варианта для языковой службы для предоставления контекста пользователя с помощью [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовый редактор: предоставьте текст маркера контекста, или передайте все контекста пользователя. Здесь описаны различия между ними.  
   
- Дополнительные сведения о предоставлении контекста для языковой службы, которая подключена к собственного редактора см. в разделе [как: предоставляют контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md).  
+ Дополнительные сведения о предоставлении контекста для языковой службы, которая подключена к собственного редактора см. в разделе [как: Предоставить контекст для редакторов](../extensibility/how-to-provide-context-for-editors.md).  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>Предоставить контекст маркеров текстовый редактор  
  Для предоставления контекста для ошибки компилятора, обозначается меток текста в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] основной редактор, реализовывать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> интерфейс. В этом случае служба языка предоставляет контекст, только в том случае, когда курсор находится на текстовой метки. Это позволяет редактор для предоставления ключевое слово в позиции курсора для **динамической справки** окно без атрибутов.  
@@ -56,4 +51,3 @@ ms.locfileid: "51781937"
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>Контекст, касающиеся редакторы и конструкторы  
  Редакторы и конструкторы необходимо указать общее ключевое слово для окна редактора или конструктора. Это делается, чтобы раздел справки универсальный, но соответствующий, будет отображаться для конструктора или редактора, при нажатии клавиши F1. Редактор необходимо Кроме того, предоставить текущего ключевого слова в позиции курсора, либо указать основные термины, на основании текущего выбора. Это позволяет убедиться, что раздел справки для текста или элемента пользовательского интерфейса, на который указывает или выбранные отображается при нажатии клавиши F1. Конструктор предоставляет контекст для элемента, выбранного в конструкторе, например кнопки на форме. Редакторы и конструкторы необходимо также подключаться к службе языка как описано в [основные компоненты языковой службы прежних версий](../extensibility/internals/legacy-language-service-essentials.md).
-

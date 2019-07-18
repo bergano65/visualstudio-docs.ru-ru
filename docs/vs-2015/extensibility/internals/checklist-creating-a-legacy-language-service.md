@@ -1,27 +1,22 @@
 ---
-title: 'Контрольный список: Создание языковой службы прежних версий | Документация Майкрософт'
-ms.custom: ''
+title: Контрольный список. Создание языковой службы прежних версий | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3b79afe64aafac473d4fe5d22464998d0c2f0537
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437615"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Контрольный список. Создание языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,13 +25,13 @@ ms.locfileid: "51782990"
   
 ## <a name="steps-for-creating-a-language-service"></a>Инструкции по созданию языковой службы  
   
-1.  Реализовать интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.  
+1. Реализовать интерфейс <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.  
   
-    -   В пакете VSPackage, реализовывать <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> интерфейс, чтобы предоставить службе языка.  
+    - В пакете VSPackage, реализовывать <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> интерфейс, чтобы предоставить службе языка.  
   
-    -   Опубликовать службу языка в интегрированной среде разработки (IDE) в вашей <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализации.  
+    - Опубликовать службу языка в интегрированной среде разработки (IDE) в вашей <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> реализации.  
   
-2.  Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейса в классе службы основного языка.  
+2. Реализуйте <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> интерфейса в классе службы основного языка.  
   
      <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Интерфейс является начальной точкой взаимодействия между базовым редактором и языковой службы.  
   
@@ -68,7 +63,7 @@ ms.locfileid: "51782990"
     Команды, которые должны быть обработаны зависят от служб, предоставляемых. Дополнительные сведения см. в разделе [важные команды для фильтров языковой службы](../../extensibility/internals/important-commands-for-language-service-filters.md).  
   
   > [!NOTE]
-  >  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Интерфейс должен быть реализован на один и тот же объект как <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс.  
+  > <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> Интерфейс должен быть реализован на один и тот же объект как <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> интерфейс.  
   
 - Завершение операторов  
   
@@ -114,9 +109,9 @@ ms.locfileid: "51782990"
   
    Реализуйте <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskListEvents> интерфейс для прослушивания изменений в список лексем.  
   
-- структуризация  
+- Структуризация  
   
-   Существует несколько вариантов для поддержки структуры. Например, можно поддерживать **свернуть в определения** команды, укажите редактором структурные области или поддержки областей, управляемое клиентом. Дополнительные сведения см. в разделе [как: укажите расширен структурирование поддержки в языковой службе прежних версий](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+   Существует несколько вариантов для поддержки структуры. Например, можно поддерживать **свернуть в определения** команды, укажите редактором структурные области или поддержки областей, управляемое клиентом. Дополнительные сведения см. в разделе [Как Расширенная поддержка структурирования в языковой службе прежних версий](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 - Регистрация языковой службы  
   
@@ -126,11 +121,10 @@ ms.locfileid: "51782990"
   
    Предоставить контекст в редактор в одном из следующих способов:  
   
-  -   Задать контекст для меток текста, можно реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> интерфейс.  
+  - Задать контекст для меток текста, можно реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> интерфейс.  
   
   Задать все контекста пользователя, можно реализовать <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> интерфейс.  
   
 ## <a name="see-also"></a>См. также  
  [Разработка языковой службы прежних версий](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Запись вычислителя выражений CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Практическое руководство. Создание и удаление зависимостей проекта | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ProjectDependenciesDlg
 helpviewer_keywords:
@@ -22,13 +17,13 @@ ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc63ef7159b0f11b3d170e0b4123f337ba413d65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e4b039f514c7d43e768becca8532a05fb14785b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823844"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680366"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Практическое руководство. Создание и удаление зависимостей проекта
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49823844"
     Открывается диалоговое окно **Зависимости проектов**.  
   
    > [!NOTE]
-   >  Параметр **Зависимости проектов** доступен только в решении с несколькими проектами.  
+   > Параметр **Зависимости проектов** доступен только в решении с несколькими проектами.  
   
 3. На вкладке **Зависимости** выберите проект из раскрывающегося меню **Проект**.  
   
@@ -54,24 +49,21 @@ ms.locfileid: "49823844"
   
 ### <a name="to-remove-dependencies-from-projects"></a>Удаление зависимостей проектов  
   
-1.  Выберите проект в Обозревателе решений.  
+1. Выберите проект в Обозревателе решений.  
   
-2.  В меню **Проект** выберите пункт **Зависимости проектов**.  
+2. В меню **Проект** выберите пункт **Зависимости проектов**.  
   
      Открывается диалоговое окно **Зависимости проектов**.  
   
     > [!NOTE]
-    >  Параметр **Зависимости проектов** доступен только в решении с несколькими проектами.  
+    > Параметр **Зависимости проектов** доступен только в решении с несколькими проектами.  
   
-3.  На вкладке **Зависимости** выберите проект из раскрывающегося меню **Проект**.  
+3. На вкладке **Зависимости** выберите проект из раскрывающегося меню **Проект**.  
   
-4.  В поле **Зависит от** снимите флажки для тех проектов, которые более не являются зависимостями данного проекта.  
+4. В поле **Зависит от** снимите флажки для тех проектов, которые более не являются зависимостями данного проекта.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Building and Cleaning Projects and Solutions in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)  (Построение и очистка проектов и решений в Visual Studio)  
  [Компилирование и сборка](../ide/compiling-and-building-in-visual-studio.md)   
  [Общие сведения о конфигурациях построения](../ide/understanding-build-configurations.md)   
- [NIB. Практическое руководство. Изменение свойств проекта и параметров конфигурации](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
-
-
-
+ [NIB. Практическое руководство. Изменение свойств проекта и параметров конфигурации](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

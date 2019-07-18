@@ -1,25 +1,20 @@
 ---
 title: Start | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c2f52a000cdf5eaa1a1ef4b9afeb141500f1911
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724176"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073557"
 ---
 # <a name="start"></a>Запуск
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +31,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  `Method`  
  Должен иметь в качестве значения одно из следующих ключевых слов:  
   
--   **TRACE** — задает метод инструментирования;  
+- **TRACE** — задает метод инструментирования;  
   
--   **SAMPLE** — задает метод выборки;  
+- **SAMPLE** — задает метод выборки;  
   
--   **COVERAGE** — задает объем протестированного кода;  
+- **COVERAGE** — задает объем протестированного кода;  
   
--   **CONCURRENCY** — задает метод состязания за ресурсы.  
+- **CONCURRENCY** — задает метод состязания за ресурсы.  
   
 ## <a name="required-options"></a>Обязательные параметры  
  Если в командной строке задан параметр **Start**, необходимо указать параметр **Output**.  
@@ -79,11 +74,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)
-
-
-

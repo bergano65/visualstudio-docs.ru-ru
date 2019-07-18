@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IDebugExpressionContext | Документы Microsoft
+title: Интерфейс IDebugExpressionContext | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c55a2f270e4c82c578450092e5066b19fe9e606
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5920d644922b15f193ee396ea0c6bddb8a574698
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996876"
 ---
 # <a name="idebugexpressioncontext-interface"></a>Интерфейс IDebugExpressionContext
-Представляет контекст, где для вычисления выражений. Кадр стека реализует этот интерфейс.  
+Представляет контекст, где выражения можно вычислить. Объект кадра стека реализует этот интерфейс.  
   
  Помимо методов, наследуемых от `IUnknown`, `IDebugExpressionContext` интерфейс предоставляет следующие методы.  
   

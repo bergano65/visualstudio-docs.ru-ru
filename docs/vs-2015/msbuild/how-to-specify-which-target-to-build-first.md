@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Выбор цели для первого построения | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Выбор цели для первой сборки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - DefaultTargets attribute [MSBuild]
 - MSBuild, specifying the defalut target
@@ -17,18 +12,17 @@ ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178336"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Практическое руководство. Выбор цели для первого построения
+# <a name="how-to-specify-which-target-to-build-first"></a>Практическое руководство. Выбор цели для первой сборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Файл проекта может содержать один или несколько элементов `Target`, определяющих способ сборки проекта. Модуль [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) выполняет сборку первого найденного проекта, а также всех зависимостей, если только файл проекта не содержит атрибут `DefaultTargets`, атрибут `InitialTargets` или целевой объект не указан в командной строке с помощью параметра **/target**.  
   
 ## <a name="using-the-initialtargets-attribute"></a>Использование атрибута InitialTargets  
@@ -36,7 +30,7 @@ ms.locfileid: "49840705"
   
 #### <a name="to-specify-one-initial-target"></a>Задание одного начального целевого объекта  
   
-- Укажите целевой объект по умолчанию в атрибуте `InitialTargets` элемента `Project`. Пример:  
+- Укажите целевой объект по умолчанию в атрибуте `InitialTargets` элемента `Project`. Например:  
   
    `<Project InitialTargets="Clean">`  
   
@@ -44,7 +38,7 @@ ms.locfileid: "49840705"
   
 #### <a name="to-specify-more-than-one-initial-target"></a>Задание нескольких начальных целевых объектов  
   
--   Укажите начальные целевые объекты, разделенные точкой с запятой, в атрибуте `InitialTargets` элемента `Project`. Например, чтобы выполнить целевой объект `Clean` и затем `Compile`, введите:  
+- Укажите начальные целевые объекты, разделенные точкой с запятой, в атрибуте `InitialTargets` элемента `Project`. Например, чтобы выполнить целевой объект `Clean` и затем `Compile`, введите:  
   
      `<Project InitialTargets="Clean;Compile">`  
   
@@ -53,7 +47,7 @@ ms.locfileid: "49840705"
   
 #### <a name="to-specify-one-default-target"></a>Задание одного целевого объекта по умолчанию  
   
-- Укажите целевой объект по умолчанию в атрибуте `DefaultTargets` элемента `Project`. Пример:  
+- Укажите целевой объект по умолчанию в атрибуте `DefaultTargets` элемента `Project`. Например:  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -61,7 +55,7 @@ ms.locfileid: "49840705"
   
 #### <a name="to-specify-more-than-one-default-target"></a>Задание нескольких целевых объектов по умолчанию  
   
--   Укажите целевые объекты по умолчанию, разделенные точкой с запятой, в атрибуте `DefaultTargets` элемента `Project`. Например, чтобы выполнить целевой объект `Clean` и затем `Compile`, введите:  
+- Укажите целевые объекты по умолчанию, разделенные точкой с запятой, в атрибуте `DefaultTargets` элемента `Project`. Например, чтобы выполнить целевой объект `Clean` и затем `Compile`, введите:  
   
      `<Project DefaultTargets="Clean;Compile">`  
   
@@ -70,13 +64,13 @@ ms.locfileid: "49840705"
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Использование целевого объекта, отличного от заданного по умолчанию, в первую очередь  
   
--   Укажите целевой объект в качестве первого с помощью параметра командной строки **/target**. Пример:  
+- Укажите целевой объект в качестве первого с помощью параметра командной строки **/target**. Например:  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Использование нескольких целевых объектов, отличных от заданных по умолчанию, в первую очередь  
   
--   Задайте целевые объекты, разделяя их точками с запятой или запятыми, с помощью параметра командной строки **/target**. Пример:  
+- Задайте целевые объекты, разделяя их точками с запятой или запятыми, с помощью параметра командной строки **/target**. Например:  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   
@@ -84,5 +78,3 @@ ms.locfileid: "49840705"
   [MSBuild](msbuild.md)  
  [Целевые объекты](../msbuild/msbuild-targets.md)   
  [Практическое руководство. Очистка сборки](../msbuild/how-to-clean-a-build.md)
-
-

@@ -2,7 +2,6 @@
 title: IActiveScriptProperty::SetProperty | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 683041b50002cb926a36e4f10d6758246af91726
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385956"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Задает свойство, которое задается параметром.  
@@ -77,7 +76,7 @@ HRESULT SetProperty(
  Для выбора набора языковых функций, которые должны поддерживаться при [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] инициализации обработчика сценариев, вызывают `SetProperty` и передать значение, которое соответствует наборе должны быть включены SCRIPTPROP_INVOKEVERSIONING функций языка. Если это свойство имеет значение 1 (SCRIPTLANGUAGEVERSION_5_7), доступных языковых функций являются те, которые были доступны в версии 5.7 же [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] обработчика скриптов. Если он имеет значение 2 (SCRIPTLANGUAGEVERSION_5_8), доступных языковых функций, которые были доступны в версии 5.7 помимо новых функций, которые были добавлены в версии 5.8. По умолчанию это свойство имеет значение 0 (SCRIPTLANGUAGEVERSION_DEFAULT), что эквивалентно набор функций языка, которая появилась в версии 5.7, если узел поддерживает поведение по умолчанию. Например, Internet Explorer 8 opts в [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] языковые компоненты, которые поддерживаются в версии 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] обработчик скриптов по умолчанию, если режим документов по умолчанию для Internet Explorer 8 — режим «Internet Explorer 8, стандартный режим». Переключение в режим документов Internet Explorer 8 в стандартный режим Internet Explorer 7 или в режиме совместимости сбрасывает [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] обработчик скриптов, поддерживают только набор функций языка, существовали в версии 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] обработчика скриптов.  
   
 > [!NOTE]
->  SCRIPTPROP_INVOKEVERSIONING должно быть установлено только тогда, когда [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] инициализируемого обработчика скриптов.  
+> SCRIPTPROP_INVOKEVERSIONING должно быть установлено только тогда, когда [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] инициализируемого обработчика скриптов.  
   
 ## <a name="example"></a>Пример  
  Приведенный ниже показано, как заставить обработчик скриптов, используйте оператор целочисленного деления и том, как разрешить перегрузку функции сравнения.  

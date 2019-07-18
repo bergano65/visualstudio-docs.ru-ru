@@ -1,25 +1,20 @@
 ---
 title: Создание отчетов профилировщика из командной строки | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c4cf566affff500d372a980a6f07122c2df33a23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 489ebd4e5aff3ef9b93ef0d8fe18f9ae8cc85011
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537206"
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>Создание отчетов профилировщика из командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ ms.locfileid: "51788593"
 |**Просмотр данных о трассировке вызовов и событий Windows (ETW).** Создайте отчет о трассировке вызовов, содержащий сведения о времени для каждой точки входа и выхода в функциях приложения, а также для каждого вызова других функций вашей функцией. Или создайте подробный список всех событий трассировки событий Windows, собранных в сеансе профилирования.|-   [Практическое руководство. Создание отчета трассировки вызовов](../profiling/how-to-create-a-profiling-tools-call-trace-report.md)|  
 |**Фильтрация отчета.** Ограничьте отчет лишь функциями в коде или определенным временем в файле данных профилирования.|-   [Практическое руководство. Фильтрация отчетов из командной строки](../profiling/how-to-filter-reports-from-the-command-line.md)|  
 |**Создание переносимых файлов данных профилирования.** Чтобы упростить общий доступ к данным профилирования, вы можете внедрить символы для сеанса профилирования в VSP-файл. Вы также можете создать файл предварительно проанализированных данных профилирования (VSPS), который меньше по размеру и открывается быстрее.|-   [Создание переносимых файлов данных профилирования](../profiling/creating-portable-profiling-data-files-from-the-command-line.md)|
-
-
-

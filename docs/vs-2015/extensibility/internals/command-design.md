@@ -1,27 +1,22 @@
 ---
 title: Команды конструктора | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aed86eef616702363a661ece0ab565a768f2f75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a6e9eaf69be62b38a880b07fd8eb51cfc9c256a3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195076"
 ---
 # <a name="command-design"></a>Конструктор команд
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,7 +62,7 @@ ms.locfileid: "51750120"
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Реализация](../../extensibility/internals/command-implementation.md)|В этой статье описывается реализация команд в VSPackage.|  
 |[Доступность](../../extensibility/internals/command-availability.md)|Описывается, как Visual Studio контекст определяет, какие команды доступны.|  
@@ -77,4 +72,3 @@ ms.locfileid: "51750120"
 |[Стандартное размещение команды, группы и панели инструментов](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Описывает, как пакеты VSPackages могут лучше всего использовать команды, которые включены в Visual Studio.|  
 |[Управление пакетами VSPackage](../../extensibility/managing-vspackages.md)|Описывает, как Visual Studio загружает пакеты VSPackage.|  
 |[Файлы таблицы команд Visual Studio (VSCT-файлы)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Сведения о файлах vstc на основе XML, которые используются для описания макета и внешнего вида команды в пакеты VSPackage.|
-

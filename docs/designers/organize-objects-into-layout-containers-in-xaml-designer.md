@@ -1,20 +1,19 @@
 ---
 title: Упорядочивание объектов в макеты-контейнеры в конструкторе XAML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5c56dc477b3c788f8d5ebfee4809067c77e08e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893588"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Упорядочивание объектов в макеты-контейнеры в конструкторе XAML
 
@@ -30,19 +29,7 @@ ms.locfileid: "53829313"
 
 Запустите страницу, выбрав одну из таких панелей макета. Ваша страница может иметь несколько панелей макета. Например, вы можете начать работу с панели макета **Сетка**, а затем добавить в определенную область **Сетки** элемент **StackPanel**, чтобы можно было расположить элементы управления по вертикали в этой области.
 
-Следующие панели макета используются наиболее часто, но существуют и другие. Их можно найти на панели **Ресурсы**.
-
-- [Сетка](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Canvas](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+Следующие панели макета используются наиболее часто, но существуют и другие. Их можно найти на **панели элементов** в Visual Studio или на панели **Ресурсы** в Blend для Visual Studio.
 
 ### <a name="grid"></a>Grid
 
@@ -92,15 +79,7 @@ ms.locfileid: "53829313"
 
 Вы также можете добавить объекты к элементам управления. Они не так многофункциональны, как панель макета, но также могут оказаться полезными в определенных случаях.
 
-Перечисленные ниже элементы управления макета используются наиболее часто, но существуют и другие. Их можно найти на панели **Ресурсы**.
-
-- [Border](#Border)
-
-- [Контекстное меню](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Viewbox](#viewbox)
+Перечисленные ниже элементы управления макета используются наиболее часто, но существуют и другие. Их можно найти на **панели элементов** в Visual Studio или на панели **Ресурсы** в Blend для Visual Studio.
 
 ### <a name="border"></a>Border
 

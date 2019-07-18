@@ -1,12 +1,9 @@
 ---
 title: Создание кода в процессе построения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -14,13 +11,13 @@ ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: f5ecf6f09efb64e521740b74151fc160112fe7a3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281814"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826043"
 ---
 # <a name="code-generation-in-a-build-process"></a>Создание кода в процессе построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,35 +27,35 @@ ms.locfileid: "52281814"
 
 Это означает, что доступ к таким параметрам, как имена файлов проекта, не может производиться таким же образом, как при сборке текстового шаблона в MSBuild. Тем не менее, вы можете [передать данные среды в текстовые шаблоны и процессоры директив с помощью параметров сборки](#parameters).
 
-##  <a name="buildserver"></a> Настройка компьютеров
+## <a name="buildserver"></a> Настройка компьютеров
 
-Задачи сборки на компьютере разработчика, установите [пакет SDK моделирования для Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754).
+Задачи сборки на компьютере разработчика, установите [пакет SDK моделирования для Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
-Если [сервер сборки](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) работает на компьютере, на котором не установлена Visual Studio, скопируйте следующие файлы на компьютер построения с компьютера разработки. Замените символ "*" номером последней версии.
+Если [сервер сборки](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) работает на компьютере, на котором не установлена Visual Studio, скопируйте следующие файлы на компьютер построения с компьютера разработки. Замените символ "*" номером последней версии.
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+  - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+  - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
+  - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+  - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>Изменение файла проекта
 
-Необходимо изменить файл проекта для настройки некоторых возможностей в MSBuild.
+Необходимо изменить файл проекта для настройки некоторых функций в MSBuild.
 
 В обозревателе решений выберите **Unload** в контекстном меню проекта. Это позволит изменить CSPROJ- или VBPROJ-файл в редакторе XML.
 
@@ -93,7 +90,7 @@ ms.locfileid: "52281814"
 
 Предусмотрено несколько свойств, которые можно вставлять в файл проекта для управления задачей преобразования.
 
--   Выполнять задачу преобразования в начале каждой сборки:
+- Выполнять задачу преобразования в начале каждой сборки:
 
     ```xml
     <PropertyGroup>
@@ -101,7 +98,7 @@ ms.locfileid: "52281814"
     </PropertyGroup>
     ```
 
--   Перезаписывать файлы, доступные только для чтения (например, потому что они не извлечены):
+- Перезаписывать файлы, доступные только для чтения (например, потому что они не извлечены):
 
     ```xml
     <PropertyGroup>
@@ -109,7 +106,7 @@ ms.locfileid: "52281814"
     </PropertyGroup>
     ```
 
--   Каждый раз преобразовывать все шаблоны:
+- Каждый раз преобразовывать все шаблоны:
 
     ```xml
     <PropertyGroup>
@@ -216,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Передача данных контекста сборки в шаблоны
+## <a name="parameters"></a> Передача данных контекста сборки в шаблоны
 
 Можно задать значения параметров в файле проекта. Например, можно передать свойства построения и [переменные среды](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -237,7 +234,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-##  <a name="msbuild"></a> Использование свойств проекта в сборке и директив #include
+## <a name="msbuild"></a> Использование свойств проекта в сборке и директив #include
 
 Макросы Visual Studio, такие как $(SolutionDir), не работают в MSBuild. Вместо этого можно использовать свойства проекта.
 
@@ -274,13 +271,13 @@ The project folder is: <#= ProjectFolder #>
 
 **Какие другие варианты есть для преобразования текстовых шаблонов?**
 
--   [Служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) можно использовать в командных сценариев. В большинстве случаев удобнее использовать MSBuild.
+- [Служебной программы TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) можно использовать в командных сценариев. В большинстве случаев удобнее использовать MSBuild.
 
--   [Вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [Вызов преобразования текста в расширении VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [Во время разработки текстовые шаблоны](../modeling/design-time-code-generation-by-using-t4-text-templates.md) преобразуются в Visual Studio.
+- [Во время разработки текстовые шаблоны](../modeling/design-time-code-generation-by-using-t4-text-templates.md) преобразуются в Visual Studio.
 
--   [Текстовые шаблоны времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md) преобразуется во время выполнения в приложении.
+- [Текстовые шаблоны времени выполнения](../modeling/run-time-text-generation-with-t4-text-templates.md) преобразуется во время выполнения в приложении.
 
 ## <a name="read-more"></a>Дополнительные сведения
 
@@ -288,4 +285,4 @@ The project folder is: <#= ProjectFolder #>
 
 - [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)
 - [Визуализации и моделирования пакета SDK для Visual Studio](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Олег Сыч: Основные сведения об интеграции T4:MSBuild](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [Олег Сыч: Основные сведения об интеграции T4:MSBuild](https://github.com/olegsych/T4Toolbox)

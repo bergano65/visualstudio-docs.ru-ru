@@ -1,7 +1,6 @@
 ---
-title: Создание и запуск модульных тестов для управляемого кода
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: Учебник по модульному тестированию в C#
+ms.date: 05/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -10,105 +9,197 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: de50a5ee6e65540b1a2052f61eae211074780417
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989180"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820954"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода
 
 В этой статье приводится подробное описание процесса создания, запуска и настройки набора модульных тестов с помощью платформы модульных тестов Майкрософт для управляемого кода и **обозревателя тестов** Visual Studio. В руководстве производится создание проекта C#, находящегося в стадии разработки, создание тестов для проверки его кода, запуск тестов и изучение результатов. После этого производится изменение кода проекта и повторный запуск тестов.
 
-> [!NOTE]
-> В этом пошаговом руководстве используется платформа модульных тестов Microsoft для управляемого кода. **Обозреватель тестов** также может запускать тесты c платформ модульных тестов стороннего производителя, которые имеют адаптеры для **обозревателя тестов**. Дополнительные сведения см. в разделе [Установка платформ модульного тестирования сторонних поставщиков](../test/install-third-party-unit-test-frameworks.md).
-
-Сведения о запуске тестов из командной строки см. в разделе [Параметры командной строки VSTest.Console.exe](vstest-console-options.md).
-
-## <a name="prerequisites"></a>Предварительные требования
-
-- Проект "Банк". См. раздел [Пример проекта для создания модульных тестов](../test/sample-project-for-creating-unit-tests.md).
-
 ## <a name="create-a-project-to-test"></a>Создайте проект для тестирования
+
+::: moniker range="vs-2017"
 
 1. Запустите Visual Studio.
 
-2. В меню **Файл** выберите пункт **Создать** > **Проект**.
+2. В меню **Файл** выберите **Создать** > **Проект**.
 
    Откроется диалоговое окно **Новый проект** .
 
-3. В области **Установленные шаблоны**выберите шаблон **Visual C#**.
+3. В разделе **Visual C#** > **.NET Core** выберите шаблон проекта **Консольное приложение (.NET Core)** .
 
-4. В списке типов приложения выберите пункт **Библиотека классов**.
+4. Присвойте проекту имя **Bank** и нажмите кнопку **ОК**.
 
-5. В поле **Имя** введите **Bank** и нажмите **OK**.
-
-   Будет создан новый проект Bank. Этот проект отобразится в **обозревателе решений**, а его файл *Class1.cs* откроется в редакторе кода.
+   Будет создан проект Bank. Он отобразится в **обозревателе решений**, а его файл *Program.cs* откроется в редакторе кода.
 
    > [!NOTE]
-   > Если файл *Class1.cs* не откроется в редакторе кода, дважды щелкните *Class1.cs* в **обозревателе решений**, чтобы открыть его.
+   > Если файл *Program.cs* не откроется в редакторе, дважды щелкните *Program.cs* в **обозревателе решений**, чтобы открыть его.
 
-6. Скопируйте исходный текст из раздела [Пример проекта для создания модульных тестов](../test/sample-project-for-creating-unit-tests.md) и замените скопированным текстом исходное содержимое файла *Class1.cs*.
+::: moniker-end
 
-7. Сохранение файла как *BankAccount.cs*.
+::: moniker range=">=vs-2019"
 
-8. В меню **Сборка** выберите **Собрать решение**.
+1. Запустите Visual Studio.
 
-Будет создан проект с именем "Bank". Он содержит исходный код, подлежащий тестированию, и средства для его тестирования. Пространство имен BankAccountNS проекта "Bank", содержит открытый класс "BankAccount", методы которого будут тестироваться в приведенных ниже процедурах.
+2. На начальном экране выберите **Создать проект**.
 
-В этой статье проводится тестирование на примере метода Debit. Метод Debit вызывается, когда денежные средства снимаются со счета. Так выглядит определение метода:
+3. Найдите и выберите шаблон проекта **Консольное приложение (.NET Core)** на C# и нажмите кнопку **Далее**.
 
-```csharp
-// Method to be tested.
-public void Debit(double amount)
-{
-    if(amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount");
-    }
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount");
-    }
-    m_balance += amount;
-}
-```
+4. Присвойте проекту имя **Bank** и нажмите кнопку **Создать**.
+
+   Будет создан проект Bank. Он отобразится в **обозревателе решений**, а его файл *Program.cs* откроется в редакторе кода.
+
+   > [!NOTE]
+   > Если файл *Program.cs* не откроется в редакторе, дважды щелкните *Program.cs* в **обозревателе решений**, чтобы открыть его.
+
+::: moniker-end
+
+5. Замените содержимое файла *Program.cs* следующими кодом на C#, который определяет класс *BankAccount*:
+
+   ```csharp
+   using System;
+
+   namespace BankAccountNS
+   {
+       /// <summary>
+       /// Bank account demo class.
+       /// </summary>
+       public class BankAccount
+       {
+           private readonly string m_customerName;
+           private double m_balance;
+
+           private BankAccount() { }
+
+           public BankAccount(string customerName, double balance)
+           {
+               m_customerName = customerName;
+               m_balance = balance;
+           }
+
+           public string CustomerName
+           {
+               get { return m_customerName; }
+           }
+
+           public double Balance
+           {
+               get { return m_balance; }
+           }
+
+           public void Debit(double amount)
+           {
+               if (amount > m_balance)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               if (amount < 0)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               m_balance += amount; // intentionally incorrect code
+           }
+
+           public void Credit(double amount)
+           {
+               if (amount < 0)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               m_balance += amount;
+           }
+
+           public static void Main()
+           {
+               BankAccount ba = new BankAccount("Mr. Bryan Walton", 11.99);
+
+               ba.Credit(5.77);
+               ba.Debit(11.22);
+               Console.WriteLine("Current balance is ${0}", ba.Balance);
+           }
+       }
+   }
+   ```
+
+6. Переименуйте файл в *BankAccount.cs*, щелкнув его правой кнопкой мыши и выбрав команду **Переименовать** в **обозревателе решений**.
+
+7. В меню **Сборка** выберите **Собрать решение**.
+
+Теперь у вас есть проект с методами, которые можно протестировать. В этой статье тестирование проводится на примере метода `Debit`. Метод `Debit` вызывается, когда денежные средства снимаются со счета.
 
 ## <a name="create-a-unit-test-project"></a>Создание проекта модульного теста
 
 1. В меню **Файл** выберите **Добавить** > **Создать проект**.
 
+   > [!TIP]
+   > В **обозревателе решений** щелкните решение правой кнопкой мыши и выберите пункты **Добавить** > **Создать проект**.
+
+::: moniker range="vs-2017"
+
 2. В диалоговом окне **Новый проект** разверните узлы **Установленные** и **Visual C#** и выберите **Тест**.
 
-3. В списке шаблонов выберите **Проект модульного теста**.
+3. В списке шаблонов выберите **Тестовый проект MSTest (.NET Core)** .
 
 4. В поле **Имя** введите `BankTests`, а затем нажмите кнопку **ОК**.
 
    Проект **BankTests** добавляется в решение **Банк**.
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Найдите и выберите шаблон проекта **Тестовый проект MSTest (.NET Core)** на C# и нажмите кнопку **Далее**.
+
+3. Назовите проект **BankTests**.
+
+4. Нажмите кнопку **Создать**.
+
+   Проект **BankTests** добавляется в решение **Банк**.
+
+::: moniker-end
+
 5. В проекте **BankTests** добавьте ссылку на проект **Банк**.
 
-   В **обозревателе решений** выберите элемент **Ссылки** в проекте **BankTests**, а затем выберите в контекстном меню пункт **Добавить ссылку**.
+   В **обозревателе решений** щелкните **Зависимости** в проекте **BankTests**, а затем выберите в контекстном меню **Добавить ссылку**.
 
-6. В диалоговом окне **Диспетчер ссылок** разверните **Решение** и проверьте элемент **Банк**.
+6. В диалоговом окне **Диспетчер ссылок** разверните **Проекты**, выберите **Решение** и выберите элемент **Банк**.
+
+7. Нажмите кнопку **ОК**.
 
 ## <a name="create-the-test-class"></a>Создание тестового класса
 
-Создание тестового класса, чтобы проверить класс `BankAccount`. Можно использовать *UnitTest1.cs*, созданный в шаблоне проекта, но лучше дать файлу и классу более описательные имена. Можно сделать это за один шаг, переименовав файл в **обозревателе решений**.
+Создание тестового класса, чтобы проверить класс `BankAccount`. Можно использовать *UnitTest1.cs*, созданный в шаблоне проекта, но лучше дать файлу и классу более описательные имена.
 
-### <a name="rename-a-class-file"></a>Переименование файла класса
+### <a name="rename-a-file-and-class"></a>Переименуйте файл и класс
 
-В **обозревателе решений** выберите файл *UnitTest1.cs* в проекте BankTests. В контекстном меню выберите команду **Переименовать**, а затем переименуйте файл в *BankAccountTests.cs*. Выберите **Да** в диалоговом окне, предлагающем переименовать все ссылки на элемент кода `UnitTest1` в проекте.
+1. Чтобы переименовать файл, в **обозревателе решений** выберите файл *UnitTest1.cs* в проекте BankTests. В контекстном меню выберите команду **Переименовать**, а затем переименуйте файл в *BankAccountTests.cs*.
 
-Этот шаг изменяет имя класса на `BankAccountTests`. Файл *BankAccountTests.cs* теперь содержит следующий код:
+::: moniker range="vs-2017"
+
+2. Чтобы переименовать класс, выберите **Да** в открывшемся диалоговом окне, предлагающем также переименовать ссылки на элемент кода.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Чтобы переименовать класс, поместите курсор в `UnitTest1` в редакторе кода, щелкните правой кнопкой мыши и выберите команду **Переименовать**. Введите название **BankAccountTests** и нажмите клавишу **ВВОД**.
+
+::: moniker-end
+
+Файл *BankAccountTests.cs* теперь содержит следующий код:
 
 ```csharp
-using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BankTests
@@ -124,9 +215,9 @@ namespace BankTests
 }
 ```
 
-### <a name="add-a-using-statement-to-the-project-under-test"></a>Добавление оператора using в тестируемый проект
+### <a name="add-a-using-statement"></a>Добавьте оператор using
 
-Можно также добавить оператор `using` в класс, чтобы тестируемый проект можно было вызывать без использования полных имен. Вверху файла класса добавьте:
+Можно также добавить [оператор `using`](/dotnet/csharp/language-reference/keywords/using-statement) в класс, чтобы тестируемый проект можно было вызывать без использования полных имен. Вверху файла класса добавьте:
 
 ```csharp
 using BankAccountNS;
@@ -136,15 +227,15 @@ using BankAccountNS;
 
 Минимальные требования к тестовому классу следующие:
 
-- Атрибут `[TestClass]` является обязательным для платформы модульных тестов Microsoft для управляемого кода в любом классе, содержащем методы модульных тестов, которые необходимо выполнить в обозревателе тестов.
+- Атрибут `[TestClass]` является обязательным в любом классе, содержащем методы модульных тестов, которые необходимо выполнить в обозревателе тестов.
 
 - Каждый метод теста, предназначенный для запуска в обозревателе тестов, должен иметь атрибут `[TestMethod]`.
 
-Можно иметь другие классы в проекте модульного теста, которые не содержат атрибута `[TestClass]` , а также иметь другие методы в тестовых классах, у которых атрибут — `[TestMethod]` . Можно использовать эти другие классы и методы в методах теста.
+Можно иметь другие классы в проекте модульного теста, которые не содержат атрибута `[TestClass]` , а также иметь другие методы в тестовых классах, у которых атрибут — `[TestMethod]` . Можно вызывать эти другие классы и методы в методах теста.
 
 ## <a name="create-the-first-test-method"></a>Создание первого тестового метода
 
-В этой процедуре мы напишем методы модульного теста для проверки поведения метода `Debit` класса `BankAccount`. Метод `Debit` приведен выше в этой статье.
+В этой процедуре мы напишем методы модульного теста для проверки поведения метода `Debit` класса `BankAccount`.
 
 Существует по крайней мере три поведения, которые требуется проверить:
 
@@ -180,7 +271,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 }
 ```
 
-Метод очень прост: он создает новый объект `BankAccount` с начальным балансом, а затем снимает допустимое значение. Он использует метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>, чтобы проверить, что конечный баланс соответствует ожидаемому.
+Метод очень прост: он создает новый объект `BankAccount` с начальным балансом, а затем снимает допустимое значение. Он использует метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=nameWithType>, чтобы проверить, что конечный баланс соответствует ожидаемому.
 
 ### <a name="test-method-requirements"></a>Требования к методу теста
 
@@ -196,26 +287,25 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 1. В меню **Построение** выберите **Построить решение**.
 
-   Если ошибок нет, появится **обозреватель тестов** с элементом **Debit_WithValidAmount_UpdatesBalance** в группе **Незапускавшиеся тесты**.
+2. Откройте **Обозреватель тестов**, выбрав **Тест** > **Windows** > **Обозреватель тестов** в верхней строке меню.
 
-   > [!TIP]
-   > Если **обозреватель тестов** не откроется после успешной сборки, выберите в меню пункт **Тест**, щелкните **Windows**, а затем — **Обозреватель тестов**.
+3. Выберите **Запустить все** , чтобы выполнить тест.
 
-2. Выберите **Запустить все** , чтобы выполнить тест. Во время выполнения теста в верхней части окна отображается анимированная строка состояния. По завершении тестового запуска строка состояния становится зеленой, если все методы теста успешно пройдены, или красной, если какие-либо из тестов не пройдены.
+   Во время выполнения теста в верхней части окна **Обозреватель тестов** отображается анимированная строка состояния. По завершении тестового запуска строка состояния становится зеленой, если все методы теста успешно пройдены, или красной, если какие-либо из тестов не пройдены.
 
-3. В данном случае тест пройден не будет. Метод теста будет перемещен в группу **Неудачные тесты**. Выберите этот метод в **обозревателе тестов** для просмотра сведений в нижней части окна.
+   В данном случае тест пройден не будет.
+
+4. Выберите этот метод в **обозревателе тестов** для просмотра сведений в нижней части окна.
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>Исправление кода и повторный запуск тестов
 
-### <a name="analyze-the-test-results"></a>Анализ результатов теста
-
-Результат теста содержит сообщение, описывающее возникшую ошибку. Для метода `AreEqual` сообщение отражает ожидаемый результат (параметр **Ожидается\<*значение*>**) и фактически полученный (параметр **Фактическое\<*значение*>**). Ожидалось, что баланс уменьшится, а вместо этого он увеличился на сумму списания.
+Результат теста содержит сообщение, описывающее возникшую ошибку. Для метода `AreEqual` выводится сообщение о том, что ожидалось и что было фактически получено. Ожидалось, что баланс уменьшится, а вместо этого он увеличился на сумму списания.
 
 Модульный тест обнаружил ошибку: сумма списания *добавляется* на баланс счета, вместо того чтобы *вычитаться*.
 
 ### <a name="correct-the-bug"></a>Исправление ошибки
 
-Для исправления ошибки замените строку:
+Чтобы исправить эту ошибку, в файле *BankAccount.cs* замените строку:
 
 ```csharp
 m_balance += amount;
@@ -229,7 +319,9 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Повторный запуск теста
 
-В **обозревателе тестов** выберите **Запустить все**, чтобы запустить тест повторно. Красно-зеленая строка состояния станет зеленой, сигнализируя о том, что тест пройден, а сам тест будет перемещен в группу **Пройденные тесты**.
+В **обозревателе тестов** выберите **Запустить все**, чтобы запустить тест повторно. Красно-зеленая строка становится зеленой, чтобы указать, что тест был пройден.
+
+![Обозреватель тестов в Visual Studio 2019 отображает пройденный тест](media/test-explorer-banktests-passed.png)
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Использование модульных тестов для улучшения кода
 
@@ -242,13 +334,12 @@ m_balance -= amount;
 - больше баланса или
 - меньше нуля.
 
-### <a name="create-the-test-methods"></a>Создание методов теста
+### <a name="create-and-run-new-test-methods"></a>Создание и запуск новых методов теста
 
 Создадим метод теста для проверки правильного поведения в случае, когда сумма по дебету меньше нуля:
 
 ```csharp
 [TestMethod]
-[ExpectedException(typeof(ArgumentOutOfRangeException))]
 public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 {
     // Arrange
@@ -256,14 +347,12 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
     double debitAmount = -100.00;
     BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
 
-    // Act
-    account.Debit(debitAmount);
-
-    // Assert is handled by the ExpectedException attribute on the test method.
+    // Act and assert
+    Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => account.Debit(debitAmount));
 }
 ```
 
-Мы используем атрибут <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> для подтверждения правильности созданного исключения. Данный атрибут приводит к тому, что тест не будет пройден, если не возникнет исключения <xref:System.ArgumentOutOfRangeException> . Если временно изменить тестируемый метод для вызова более общего исключения <xref:System.ApplicationException> при значении суммы по дебету меньше нуля, то тест работает правильно &mdash; то есть завершается неудачно.
+Мы используем метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A> для подтверждения правильности созданного исключения. Этот метод приводит к тому, что тест не будет пройден, если не возникнет исключения <xref:System.ArgumentOutOfRangeException>. Если временно изменить тестируемый метод для вызова более общего исключения <xref:System.ApplicationException> при значении суммы по дебету меньше нуля, то тест работает правильно &mdash; то есть завершается неудачно.
 
 Чтобы проверить случай, когда размер списания превышает баланс, выполните следующие действия:
 
@@ -273,15 +362,13 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 3. Присвоить `debitAmount` значение, превышающее баланс.
 
-### <a name="run-the-tests"></a>Запуск тестов
-
-Запуск двух методов теста показывает, что тесты работают правильно.
+Выполните два теста и убедитесь, что они пройдены.
 
 ### <a name="continue-the-analysis"></a>Продолжение анализа
 
-Однако последние два тестовых метода вызывают беспокойство. Нельзя быть уверенным, какое именно условие тестируемого метода создает исключение при запуске любого из тестов. Если каким-либо способом разделить эти два условия, а именно отрицательную сумму по дебету и сумму, большую, чем баланс, то это увеличит достоверность проведения тестов.
+Тестируемый метод можно дополнительно улучшить. При такой реализации мы не можем знать, какое условие (`amount > m_balance` или `amount < 0`) приводят к исключению, возвращаемому в ходе теста. Нам просто известно, что `ArgumentOutOfRangeException` где-то возникает в методе. Было бы лучше знать, какое условие в `BankAccount.Debit` вызвало исключение (`amount > m_balance` или `amount < 0`), чтобы быть уверенными в том, что наш метод правильно проверяет свои аргументы.
 
-Еще раз посмотрев на тестируемый метод и заметив, что оба условных оператора используют конструктор `ArgumentOutOfRangeException`, который просто получает имя аргумента в качестве параметра:
+Еще раз проанализировав тестируемый метод `BankAccount.Debit`, можно заметить, что оба условных оператора используют конструктор `ArgumentOutOfRangeException`, который просто получает имя аргумента в качестве параметра:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");
@@ -291,7 +378,7 @@ throw new ArgumentOutOfRangeException("amount");
 
 ### <a name="refactor-the-code-under-test"></a>Рефакторинг тестируемого кода
 
-Сначала определим две константы для сообщений об ошибках в области видимости класса. Добавьте это в тестируемый класс BankAccount:
+Сначала определим две константы для сообщений об ошибках в области видимости класса. Добавьте это в тестируемый класс (`BankAccount`):
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -301,20 +388,20 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount is less than 
 Затем изменим два условных оператора в методе `Debit`:
 
 ```csharp
-    if (amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
-    }
+if (amount > m_balance)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
+}
 
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
-    }
+if (amount < 0)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
+}
 ```
 
 ### <a name="refactor-the-test-methods"></a>Рефакторинг тестовых методов
 
-Удалим атрибут `ExpectedException` метода теста, и вместо этого будем перехватывать исключение и проверять соответствующее ему сообщение. Метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> обеспечивает возможность сравнения двух строк.
+Выполните рефакторинг методов теста, удалив вызов <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>. Заключите вызов `Debit()` в блок `try/catch`, перехватите конкретное ожидаемое исключение и проверьте соответствующее ему сообщение. Метод <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> обеспечивает возможность сравнения двух строк.
 
 В этом случае метод `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` может выглядеть следующим образом:
 
@@ -332,7 +419,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
@@ -362,7 +449,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
@@ -373,4 +460,13 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
+### <a name="conclusion"></a>Заключение
+
 Усовершенствования тестового кода привели к созданию более надежных и информативных методов теста. Но что более важно, в результате был также улучшен тестируемый код.
+
+> [!TIP]
+> В этом пошаговом руководстве используется платформа модульных тестов Microsoft для управляемого кода. **Обозреватель тестов** также может запускать тесты c платформ модульных тестов стороннего производителя, которые имеют адаптеры для **обозревателя тестов**. Дополнительные сведения см. в разделе [Установка платформ модульного тестирования сторонних поставщиков](../test/install-third-party-unit-test-frameworks.md).
+
+## <a name="see-also"></a>См. также
+
+Сведения о запуске тестов из командной строки см. в разделе [Параметры командной строки VSTest.Console.exe](vstest-console-options.md).

@@ -1,13 +1,8 @@
 ---
 title: Приступая к работе с отладчиком | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -18,21 +13,21 @@ ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 755c4a0b66c91aa37f96d3d6f06972878ee856b8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202316"
 ---
 # <a name="getting-started-with-the-debugger"></a>Начало работы с отладчиком
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Отладчик Visual Studio можно легко использовать на любом языке. Здесь будет показано, как выполнить отладку простой программы C#, но вы можете применить те же действия к коду на других языках, например к C++ и JavaScript.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Отладка простого проекта C#  
- Давайте начнем с простого консольного приложения C# (**файл / создать / проект**, а затем выберите **Visual C#** , а затем выберите **консольное приложение**). Если вы никогда не работали с Visual Studio, см. в разделе [Пошаговое руководство: создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** метод просто добавляет 1 к целочисленной переменной 10 раз и выводит результат на консоль:  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> Отладка простого проекта C#  
+ Давайте начнем с простого консольного приложения C# (**файл / создать / проект**, а затем выберите **Visual C#** , а затем выберите **консольное приложение**). Если вы никогда не работали с Visual Studio, см. в разделе [Пошаговое руководство: Создание простого приложения](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Main** метод просто добавляет 1 к целочисленной переменной 10 раз и выводит результат на консоль:  
   
 ```csharp  
 static void Main(string[] args)  
@@ -56,7 +51,7 @@ static void Main(string[] args)
   
  Дополнительные сведения о точках останова см. в разделе [использование точек останова](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a> Проверка переменных  
+## <a name="BKMK_Inspect_Variables"></a> Проверка переменных  
  Отладка часто предусматривает поиск переменные, которые не содержат значения, которые предполагается, что в определенной точке. Мы продемонстрируем некоторые из способов, что вы можете проверять значения переменных.  
   
  Снова начните отладку. Выполнение остановится перед выполнением кода `Console.WriteLine`. Может вызвать выполнение, перейдя к следующему шагу (щелкните **Отладка | Шаг Over** или **F10**). В этом случае можно выбрать **шаг с заходом** (**F11**) и получить тот же результат; мы различия будут описаны позже. Строка с последней фигурной скобкой метода должна окраситься желтым цветом. Взгляните на окно консоли. Вы должны увидеть **10**.  
@@ -65,7 +60,7 @@ static void Main(string[] args)
   
  ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg-basics-data-tips.png "DBG_Basics_Data_Tips")  
   
- Под окном кода вы должны увидеть **"Видимые"**, **"Локальные"**, и **Watch** windows. В этих окнах отображаются текущие значения переменных во время выполнения. Оба **"Видимые"** и **"Локальные"** windows show **testInt** со значением **10**.  
+ Под окном кода вы должны увидеть **"Видимые"** , **"Локальные"** , и **Watch** windows. В этих окнах отображаются текущие значения переменных во время выполнения. Оба **"Видимые"** и **"Локальные"** windows show **testInt** со значением **10**.  
   
  ![Окно видимых переменных при отладке](../debugger/media/getstartedwindows.png "GetStartedWindows")  
   
@@ -98,8 +93,3 @@ private static void Method1()
  Остановить отладку и снова запустите и когда выполнение остановится в точке останова, щелкните **Отладка | Шаг Over** (или **шаг с обходом** на панели инструментов или **F10**). Выполнение снова остановится в строке `Console.WriteLine("end");`.  
   
  Если вы хотите узнать больше о перемещение по коду с помощью отладчика, см. в разделе [Навигация по коду с помощью отладчика](../debugger/navigating-through-code-with-the-debugger.md).
-
-
-
-
-

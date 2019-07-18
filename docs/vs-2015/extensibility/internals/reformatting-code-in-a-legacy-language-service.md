@@ -1,27 +1,22 @@
 ---
 title: Переформатирование кода в языковой службе прежних версий | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - reformatting code, supporting in language services [managed package framework]
 - language services [managed package framework], reformatting code
 ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 95b878448904c194bd758d266e67599369502fe6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb0dac5e1282d544df9c04bf4c12303fb391739d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436645"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Переформатирование кода в языковой службе прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51779272"
 В [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] исходный код может быть переформатирован, нормализация использование отступов и пробелов. Это могут быть Вставка или удаление пробелы или знаки табуляции в начале каждой строки, добавляя новые между строками или заменив пробелы, символы табуляции или знаки табуляции пробелами.  
   
 > [!NOTE]
->  **Примечание** Вставка или удаление символы новой строки могут повлиять на маркеры, такие как точки останова и закладки, но добавление или удаление пробелы или символы табуляции не влияет на маркеры.  
+> **Примечание** Вставка или удаление символы новой строки могут повлиять на маркеры, такие как точки останова и закладки, но добавление или удаление пробелы или символы табуляции не влияет на маркеры.  
   
  Пользователи могут запускать операцию переформатирования, выбрав **Выбор формата** или **форматировать документ** из **Дополнительно** меню **изменить**меню. Также может запускаться переформатирования операции, при вставке фрагмента кода или определенный символ. Например при вводе закрывающей фигурной скобки в C#, весь код между сопоставления открывающую фигурную скобку и закрывающей фигурной скобки автоматический отступ для правильного выбора уровня.  
   
@@ -186,4 +181,3 @@ namespace MyLanguagePackage
   
 ## <a name="see-also"></a>См. также  
  [Функции языковой службы прежних версий](../../extensibility/internals/legacy-language-service-features1.md)
-

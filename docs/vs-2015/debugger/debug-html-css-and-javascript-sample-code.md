@@ -1,14 +1,9 @@
 ---
 title: Отладка примера кода HTML, CSS и JavaScript | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,23 +13,23 @@ ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9c4793747e85435b63361df03cdb011d38b214e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161474"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>Отладка примера кода HTML, CSS и JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)  
   
- В этом разделе приведен пример файла для [краткое руководство: отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md). Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.  
+ В этом разделе приведен пример файла для [краткое руководство: Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md). Ошибки, намеренно допущенные в кратком руководстве, исправлены в этой версии кода.  
   
 ## <a name="sample-code"></a>Пример кода  
- Следующий код HTML используется в \<текст > кратком руководстве в теге.  
+ Следующий код HTML используется в кратком руководстве в теге \<body>.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -110,7 +105,4 @@ ms.locfileid: "51720784"
 ```  
   
 ## <a name="see-also"></a>См. также  
- [Краткое руководство по отладке HTML и CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Краткое руководство. Отладка HTML и CSS](../debugger/quickstart-debug-html-and-css.md)

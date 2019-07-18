@@ -1,35 +1,30 @@
 ---
 title: Устаревшие интерфейсы в редакторе | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy
 ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45c3de943a1716877fcf33af4d16fd163721d04b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8483068ae03c9a57fc67b528393e5d6830c3ec33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180293"
 ---
-# <a name="legacy-interfaces-in-the-editor"></a>Устаревшие интерфейсы в редакторе
+# <a name="legacy-interfaces-in-the-editor"></a>Интерфейсы прежних версий в редакторе
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В редакторе Visual Studio доступны из устаревшие интерфейсы. Пакет SDK для Visual Studio включает адаптеры, известный как *оболочек*, которые поддерживают эти интерфейсы для взаимодействия с новым редактором. Тем не менее рекомендуется обновить устаревший код, чтобы использовать новый редактор API. Ваш код будет демонстрировать лучшие показатели и использовании новых технологий, таких как Windows Presentation Foundation (WPF) и Managed Extensibility Framework (MEF).  
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Адаптация кода прежних версий для редактора](../extensibility/adapting-legacy-code-to-the-editor.md)|Объясняется, как адаптировать код в новый редактор.|  
 |[Новое или измененное поведение с адаптерами редактора](../extensibility/new-or-changed-behavior-with-editor-adapters.md)|Объясняет, как поведение редактора адаптеров отличается от более ранних версий редактора.|  
@@ -37,7 +32,7 @@ ms.locfileid: "51737508"
 |[Создание экземпляра основного редактора с помощью API прежних версий](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)|Объясняется, как использовать старый API для создания базового редактора.|  
 |[Фабрики редактора](../extensibility/editor-factories.md)|В этой статье описывается использование фабрик редактора с помощью предыдущих версий API.|  
 |[Практическое руководство. Регистрация типов файлов в редакторе](../extensibility/how-to-register-editor-file-types.md)|Объясняется, как связать расширение имени файла в редакторе.|  
-|[Пошаговое руководство. Создание основного редактора и регистрация типов файлов в редакторе](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|Объясняется, как создать основной редактор и связать расширение имени файла к нему.|  
+|[Пошаговое руководство: создание основного редактора и регистрация типов файлов в редакторе](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|Объясняется, как создать основной редактор и связать расширение имени файла к нему.|  
 |[Практическое руководство. Предоставление контекста для редакторов](../extensibility/how-to-provide-context-for-editors.md)|Описание способов предоставления контекста для редактора.|  
 |[Языковые службы и основной редактор](../extensibility/language-services-and-the-core-editor.md)|Описание взаимодействия между языковой службы и редактор.|  
 |[Доступ к текстовому буферу с помощью API прежних версий](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)|Объясняется, как получить доступ к текстового буфера, используя старый API.|  
@@ -52,4 +47,3 @@ ms.locfileid: "51737508"
 |[Создание специализированных редакторов и конструкторов](../extensibility/creating-custom-editors-and-designers.md)|В этой статье описывается создание специализированных редакторов и конструкторов.|  
 |[Разработка языковой службы прежних версий](../extensibility/internals/developing-a-legacy-language-service.md)|Содержит ссылки на документы о функциях, которые предоставляют возможности настройки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] базовым редактором, добавляя поддержку языковой службы.|  
 |[Использование шрифтов и цветов](../extensibility/using-fonts-and-colors.md)|В этой статье описывается использование шрифтов и цветов с устаревшими интерфейсами.|
-

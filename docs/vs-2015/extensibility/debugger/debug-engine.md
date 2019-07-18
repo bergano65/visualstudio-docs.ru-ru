@@ -1,26 +1,21 @@
 ---
 title: Отладка ядра | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bf2335b907601bb17276b06ae1bef033a1641515
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6e81a95cffebc9e26821b9cc6157627100343452
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383366"
 ---
 # <a name="debug-engine"></a>Модуль отладки
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,13 +25,13 @@ ms.locfileid: "51733328"
  Например общеязыковой среды выполнения (CLR) предоставляет механизмы для наблюдения за выполняющейся программе через интерфейсы ICorDebugXXX. DE, который поддерживает среду CLR использует соответствующие интерфейсы ICorDebugXXX для отслеживания отлаживаемой программы управляемого кода. Он передает любые изменения состояния для диспетчер отладки сеансов (SDM), который перенаправляет эти сведения в [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки.  
   
 > [!NOTE]
->  Модуль отладки предназначен для определенной среды выполнения, то есть системы, в котором программа выполняется отладка запусков. CLR — среда выполнения для управляемого кода, а среда выполнения Win32 — для собственных приложений Windows. Если язык создания можно обращаться к одному из этих двух сред выполнения, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] уже предоставляет необходимые отладчики. Необходимо реализовать всего лишь вычислитель выражений.  
+> Модуль отладки предназначен для определенной среды выполнения, то есть системы, в котором программа выполняется отладка запусков. CLR — среда выполнения для управляемого кода, а среда выполнения Win32 — для собственных приложений Windows. Если язык создания можно обращаться к одному из этих двух сред выполнения, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] уже предоставляет необходимые отладчики. Необходимо реализовать всего лишь вычислитель выражений.  
   
 ## <a name="debug-engine-operation"></a>Отладка операции ядра  
  Службы мониторинга реализуются с помощью интерфейсов DE и может привести к перехода между различными режимами оперативной размер пакета отладки. Дополнительные сведения см. в разделе [рабочие режимы](../../extensibility/debugger/operational-modes.md). Обычно имеется только одна реализация DE каждой среды выполнения.  
   
 > [!NOTE]
->  Несмотря на наличие отдельных реализаций DE для Transact-SQL и [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)], VBScript и [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] совместно используют один DE.  
+> Несмотря на наличие отдельных реализаций DE для Transact-SQL и [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)], VBScript и [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] совместно используют один DE.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] отладка включает отладки модулями, выполните одну из двух способов: либо в том же процессе, что [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] оболочки или отлаживаемой в том же процессе, что целевой программы. Последняя форма обычно возникает, когда отлаживаемого процесса является фактически скрипт, выполняемый в интерпретатор, и отладчик должен иметь глубокое знание интерпретатор для мониторинга скрипт. Обратите внимание, что в этом случае интерпретатор фактически среды выполнения; отладчики предназначены для реализации конкретной среде выполнения. Кроме того реализация одной DE можно разделить между процессами и компьютерами (например, удаленная отладка).  
   
@@ -48,4 +43,3 @@ ms.locfileid: "51733328"
  [Компоненты отладчика](../../extensibility/debugger/debugger-components.md)   
  [Вычислитель выражений](../../extensibility/debugger/expression-evaluator.md)   
  [Поставщик символов](../../extensibility/debugger/symbol-provider.md)
-

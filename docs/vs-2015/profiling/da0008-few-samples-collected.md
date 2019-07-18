@@ -1,14 +1,9 @@
 ---
-title: DA0008. Собрано мало выборок | Документы Майкрософт
-ms.custom: ''
+title: DA0008. Собрано мало выборок | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DATooFewSamples
 - vs.performance.8
@@ -18,21 +13,21 @@ ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 291daa031f66cc37e444a41ea085cff65a177b9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03fd9b6fd794320faf76119616900b79d5bf4333
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187859"
 ---
-# <a name="da0008-few-samples-collected"></a>DA0008. Собрано несколько образцов
+# <a name="da0008-few-samples-collected"></a>DA0008. Собрано мало выборок
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ИД правила | DA0008 |  
 | Категория | Использование средств профилирования |  
 | Метод профилирования | Выборка |  
-| Сообщение | Были собраны только небольшое число выборок. Рекомендуется использовать более высокую частоту выборки выполнения или быстрее для получения значительных результатов. |  
+| Сообщение | Были собраны только небольшое число выборок. Для получения значительных результатов рекомендуется использовать более высокую частоту выборки или более долгий запуск.|  
 | Тип правила | Сведения |  
   
 ## <a name="cause"></a>Причина  
@@ -43,6 +38,3 @@ ms.locfileid: "51759382"
   
 ## <a name="how-to-fix-violations"></a>Устранение нарушений  
  Для получения статистически значимых результатов рекомендуется дольше выполнять процедуру профилирования приложения или увеличить частоту выборки. Дополнительные сведения об изменении частоты выборки в интегрированной среде разработки Visual Studio см. в разделе [Практическое руководство. Выбор событий выборки](../profiling/how-to-choose-sampling-events.md). Дополнительные сведения об изменении частоты выборки при использовании командной строки средств профилирования см. в разделе [Таймер](../profiling/timer.md) руководства [VSPerfCmd](../profiling/vsperfcmd.md).
-
-
-

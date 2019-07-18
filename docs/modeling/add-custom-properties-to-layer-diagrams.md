@@ -6,16 +6,15 @@ helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 407db46519872d8f1c4e6eba79ddd5ca84610d70
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c4639b5e2edcfebd05dcc6511102c0369b4b3e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960441"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Добавление пользовательских свойств в схемы зависимостей
 
@@ -23,7 +22,7 @@ ms.locfileid: "53892242"
 
 ## <a name="non-visible-properties"></a>Невидимые свойства
 
-Если необходимо просто код, чтобы вложить значения к любому элементу в схеме зависимостей, не нужно определять компонент MEF. В `Properties` есть словарь <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть диаграмму зависимостей. Дополнительные сведения см. в разделе [Navigate и обновления уровня модели в программном коде](../modeling/navigate-and-update-layer-models-in-program-code.md).
+Если необходимо просто код, чтобы вложить значения к любому элементу в схеме зависимостей, не нужно определять компонент MEF. В `Properties` есть словарь <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Просто добавьте маршалируемые значения в словарь любого элемента слоя. Они будут сохранены как часть диаграмму зависимостей.
 
 ## <a name="editable-properties"></a>Редактируемых свойств
 
@@ -38,6 +37,7 @@ ms.locfileid: "53892242"
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
+>
 > 3. В разделе **средств Visual Studio** части Visual Studio приложения меню «Пуск» откройте **Командная строка разработчика**. Введите следующие команды:
 >
 >      `devenv /rootSuffix /updateConfiguration`
@@ -63,15 +63,15 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Свойства можно определить для класса <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> или любого из его производных классов, которые включают следующие классы:
 
--   `ILayerModel` — модель
+- `ILayerModel` — модель
 
--   `ILayer` — каждый слой
+- `ILayer` — каждый слой
 
--   `ILayerDependencyLink` — ссылки между слоями
+- `ILayerDependencyLink` — ссылки между слоями
 
--   `ILayerComment`
+- `ILayerComment`
 
--   `ILayerCommentLink`
+- `ILayerCommentLink`
 
 ## <a name="example"></a>Пример
 

@@ -1,27 +1,22 @@
 ---
 title: Средство конфигурации отображения окна | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c563888424ae4825f3e5b10fc0592029a29cb84b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186395"
 ---
 # <a name="tool-window-display-configuration"></a>Конфигурация отображения окна инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +37,13 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
 |name|REG_SZ|«Короткое имя место»|Краткое имя, описывающее окна инструментов. Используется только для справки в реестре.|  
 |Float|REG_SZ|«X1, Y1, X2, Y2»|Четыре значения с разделителями-запятыми. X1, Y1, — это координата верхнего левого угла окна инструментов. X2, Y2, — это координата нижний правый угол. Все значения являются в экранных координатах.|  
 |Стиль|REG_SZ|«MDI»<br /><br /> «Плавающей»<br /><br /> «Связанный»<br /><br /> «С вкладками»<br /><br /> «AlwaysFloat»|Ключевое слово, указав первоначального отображения состояния окна инструментов.<br /><br /> «MDI» = прикреплено к окна интерфейса MDI.<br /><br /> «Float» = с плавающей запятой.<br /><br /> «Связанных» = соединенные еще одно окно (заданный в запись в окне).<br /><br /> «С вкладками» = в сочетании с другим окном инструментов.<br /><br /> «AlwaysFloat» = не может быть закреплено.<br /><br /> Дополнительные сведения см. в комментариях.|  
-|Окно|REG_SZ|*\<ИДЕНТИФИКАТОР GUID &GT;*|Идентификатор GUID окна, к которому могут быть связаны или с вкладками окне инструментов. Идентификатор GUID может принадлежать к одному из собственных windows или одно из окон в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки.|  
-|Ориентация|REG_SZ|«Left»<br /><br /> «Right»<br /><br /> «Top»<br /><br /> «Bottom»|Ниже в разделе комментариев.|  
+|Окно|REG_SZ|*\<ИДЕНТИФИКАТОР GUID >*|Идентификатор GUID окна, к которому могут быть связаны или с вкладками окне инструментов. Идентификатор GUID может принадлежать к одному из собственных windows или одно из окон в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] интегрированной среды разработки.|  
+|Orientation|REG_SZ|«Left»<br /><br /> «Right»<br /><br /> «Top»<br /><br /> «Bottom»|Ниже в разделе комментариев.|  
 |DontForceCreate|REG_DWORD|0 или 1|Если эта запись присутствует и его значение не равно нулю, окна загружен, но отображаются не сразу.|  
   
 ### <a name="comments"></a>Комментарии  
@@ -91,10 +86,10 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|name|Тип|Данные|Описание:|  
+|name|Тип|Данные|Описание|  
 |----------|----------|----------|-----------------|  
-|(Значение по умолчанию)|REG_SZ|Нет|Оставьте пустым.|  
-|*\<ИДЕНТИФИКАТОР GUID &GT;*|Параметр DWORD или REG_SZ|0 или описательная строка.|Необязательный. Имя элемента должно быть GUID команды, требующие видимости. Значение содержит только строку информативные. Как правило, значение равно `reg_dword` присвоено значение 0.|  
+|(Значение по умолчанию)|REG_SZ|None|Оставьте пустым.|  
+|*\<ИДЕНТИФИКАТОР GUID >*|Параметр DWORD или REG_SZ|0 или описательная строка.|Необязательный параметр. Имя элемента должно быть GUID команды, требующие видимости. Значение содержит только строку информативные. Как правило, значение равно `reg_dword` присвоено значение 0.|  
   
 ### <a name="example"></a>Пример  
   
@@ -115,4 +110,3 @@ HKEY_LOCAL_MACHINE\
   
 ## <a name="see-also"></a>См. также  
  [Основные сведения о пакетах VSPackage](../misc/vspackage-essentials.md)
-

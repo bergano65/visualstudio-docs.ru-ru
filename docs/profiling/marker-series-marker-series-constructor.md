@@ -9,46 +9,44 @@ helpviewer_keywords:
 ms.assetid: 042c7d23-f1d8-4e09-9e76-a21c30243790
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fad8eec19346273a7ea302da4653faa1bdec032
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5178b2cebdfa4246256aef6334e026ef091fa553
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831417"
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>Конструктор marker_series::marker_series
-Инициализирует новый экземпляр класса `marker_series`.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp  
-marker_series();  
-marker_series(  
-   _In_ LPCTSTR _SeriesName  
-);  
-marker_series(  
-   _In_ const GUID* _ProviderGuid  
-);  
-marker_series(  
-   _In_ const GUID* _ProviderGuid,  
-   _In_ LPCTSTR _SeriesName  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `_SeriesName`  
- Имя создаваемой последовательности.  
-  
- `_ProviderGuid`  
- Идентификатор GUID поставщика последовательности.  
-  
-## <a name="requirements"></a>Требования  
- **Заголовок:** *cvmarkersobj.h*  
-  
- **Пространство имен:** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>См. также  
- [Класс marker_series](../profiling/marker-series-class.md)
+Инициализирует новый экземпляр класса `marker_series`.
+
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+marker_series();
+marker_series(
+   _In_ LPCTSTR _SeriesName
+);
+marker_series(
+   _In_ const GUID* _ProviderGuid
+);
+marker_series(
+   _In_ const GUID* _ProviderGuid,
+   _In_ LPCTSTR _SeriesName
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `_SeriesName` Имя создаваемой последовательности.
+
+ `_ProviderGuid` Идентификатор GUID поставщика последовательности.
+
+## <a name="requirements"></a>Требования
+ **Заголовок:** *cvmarkersobj.h*
+
+ **Пространство имен:** Concurrency::diagnostic
+
+## <a name="see-also"></a>См. также
+- [Класс marker_series](../profiling/marker-series-class.md)

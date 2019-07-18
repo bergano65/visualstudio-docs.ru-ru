@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: поиск процесса в представлении процессов | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Поиск процесса в представлении процессов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Processes view
 - processes, searching for
@@ -16,15 +11,15 @@ ms.assetid: 7cb97b37-4a95-4f1b-9eee-4910aa9c115b
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c187089c8aeec3b2c0409adbab1f262893720d87
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735602"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64799496"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>Практическое руководство. Поиск процесса в представлении процессов
+# <a name="how-to-search-for-a-process-in-processes-view"></a>Практическое руководство. поиск процесса в представлении процессов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Можно найти конкретный процесс в представлении процессов с помощью его процесса идентификатор или строку модуля в качестве критерия поиска. Можно также указать исходное направление поиска. Поля в диалоговом окне будут отображаться атрибуты выбранного процесса в дерево процесса.  
@@ -42,13 +37,10 @@ ms.locfileid: "51735602"
 4. Очистите все поля, для которых вы не хотите указать значения.  
   
    > [!TIP]
-   >  Чтобы найти все процессы, принадлежащие модулю, снимите **процесс** объекта и введите имя модуля в **модуль** поле. Затем с помощью **Найти далее** для продолжения поиска.  
+   > Чтобы найти все процессы, принадлежащие модулю, снимите **процесс** объекта и введите имя модуля в **модуль** поле. Затем с помощью **Найти далее** для продолжения поиска.  
   
 5. Выберите **вверх** или **вниз** для исходное направление поиска.  
   
 6. Нажмите кнопку **ОК**.  
   
    Если найден процесс сопоставления, он выделяется в **представление "процесс"** окна.
-
-
-

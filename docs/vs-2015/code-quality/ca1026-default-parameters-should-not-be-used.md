@@ -1,14 +1,9 @@
 ---
-title: 'CA1026: Не удается использовать параметры по умолчанию | Документация Майкрософт'
-ms.custom: ''
+title: CA1026. Не следует использовать параметры по умолчанию | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1026
 - DefaultParametersShouldNotBeUsed
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5ab5fd842363c39f23981bdec93635974e2b2582
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c20bfce7dd7fe3b2e116b982408afa813ebab25
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894369"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704185"
 ---
-# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: не следует использовать параметры по умолчанию
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026. Не следует использовать параметры по умолчанию
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,7 +38,7 @@ ms.locfileid: "49894369"
 ## <a name="rule-description"></a>Описание правила
  Методы, использующие параметры по умолчанию разрешены в общеязыковой спецификацией (CLS); Однако CLS разрешает компиляторам не учитывать значения, присвоенные этим параметрам. Код, написанный для компиляторов, которые не учитывают значения параметров по умолчанию необходимо явно предоставить аргументы для каждого параметра по умолчанию. Для однородной работы с различными языками программирования, следует заменять методы, использующие параметры по умолчанию перегрузки методов, предоставляющие параметры по умолчанию.
 
- Компилятор игнорирует значения параметров по умолчанию для управляемых расширений для C++, при доступе к управляемым кодом. Компилятор Visual Basic поддерживает методы с параметрами по умолчанию, использующих [необязательно](http://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) ключевое слово.
+ Компилятор игнорирует значения параметров по умолчанию для управляемых расширений для C++, при доступе к управляемым кодом. Компилятор Visual Basic поддерживает методы с параметрами по умолчанию, использующих [необязательно](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) ключевое слово.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
  Чтобы устранить нарушение этого правила, замените метод, который использует параметры по умолчанию с перегрузкой методов, предоставляющих параметры по умолчанию.
@@ -57,10 +52,7 @@ ms.locfileid: "49894369"
  [!code-vb[FxCop.Design.DefaultParameters#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.DefaultParameters/vb/FxCop.Design.DefaultParameters.vb#1)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1025: замените повторяющиеся аргументы массивом параметров](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+ [CA1025: Замените повторяющиеся аргументы массивом параметров](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
 ## <a name="see-also"></a>См. также
- [Независимость от языка и независимые от языка компоненты](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
-
-
-
+ [Независимость от языка и независимые от языка компоненты](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

@@ -1,7 +1,6 @@
 ---
 title: Создание и настройка наборов данных
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - typed datasets, creating
@@ -9,17 +8,17 @@ helpviewer_keywords:
 - datasets, configuring
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3cde629114c56f80f0b70e7ef6641bffa7551577
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 41a7a699506853d6891c7d7b66fef4082814c06a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829239"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460622"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Создание и настройка наборов данных в Visual Studio
+# <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Практическое руководство. Создание и настройка наборов данных в Visual Studio
 
 Набор данных является набор объектов для хранения данных из базы данных в памяти и поддерживает отслеживание изменений для включения создания, чтения, обновления и удаления (CRUD) с этими данными без необходимости всегда необходимо подключение к базе данных. Наборы данных были разработаны для простых *формы поверх данных* бизнес-приложений. Для новых приложений рассмотрите возможность использования Entity Framework для хранения и моделирования данных в памяти. Для работы с наборами данных, должны иметь базовые знания о основными понятиями баз данных.
 
@@ -71,7 +70,7 @@ ms.locfileid: "53829239"
 
 1. Щелкните узел набора данных в **обозревателе решений** перевести **конструктор наборов данных** в фокус.
 
-2. Нажмите кнопку **источников данных** вкладка в левой области Visual Studio, или тип **источников данных** в **быстрого запуска** поле.
+2. Нажмите кнопку **источников данных** вкладка в левой области Visual Studio, или тип **источников данных** в поле поиска.
 
 3. Щелкните правой кнопкой мыши узел набора данных и выберите **Настройка источника данных с помощью мастера**.
 

@@ -1,24 +1,23 @@
 ---
 title: Страница «Вкладки и окна», папка «Среда», диалоговое окно «Параметры»
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.TabsAndWindows
 ms.assetid: f5167564-0a4e-4f98-9580-fc6cb7d9dd8d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c729ac6738eb8a09712ee87b64e1bb6f4eee2b1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 339f6477395bf8d91618298bc1618132d76b3794
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945119"
 ---
-# <a name="tabs-and-windows-environment-options-dialog-box"></a>Страница «Вкладки и окна», папка «Среда», диалоговое окно «Параметры»
+# <a name="options-dialog-box-environment--tabs-and-windows"></a>Диалоговое окно "Параметры": Страница "Вкладки и окна" \> папка "Среда"
 
 Эта страница служит для задания параметров поведения окон с вкладками в области редактора, а также для задания поведения окон инструментов. Дополнительные сведения см. в статье [Настройка макетов окон в Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md).
 

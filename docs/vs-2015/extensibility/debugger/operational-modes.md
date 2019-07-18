@@ -1,26 +1,21 @@
 ---
 title: Рабочие режимы | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, modes
 ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ac99d6022344089c40abb9ae36e94d825db4e3c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c4009ab6268140117c8fd1294adcc52ac347b799
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153719"
 ---
 # <a name="operational-modes"></a>Рабочие режимы
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,32 +30,31 @@ ms.locfileid: "51768473"
   
   Сведения о переходе вашей пользовательского модуля отладки (DE) между этими режимами — реализация решение, которое вы должны быть знакомы с механизмами перехода. DE может или не может напрямую реализовывать этих режимов. Эти режимы на самом деле являются пакета режимы отладки, переключающиеся на основе действий пользователя или события из DE. Например переход из режима выполнения в режим приостановки выполнения сгенерировавший событие остановки из DE. Переход от разрыва запустить режим или режим шаг сгенерировавший, пользователь, выполняющий операции, такие как шаг или Execute. Дополнительные сведения о переходах DE см. в разделе [управление выполнением](../../extensibility/debugger/control-of-execution.md).  
   
-##  <a name="vsconoperationalmodesanchor1"></a> Режим конструктора  
+## <a name="vsconoperationalmodesanchor1"></a> Режим конструктора  
  Режим конструктора — nonrunning состояние отладки Visual Studio, во время которого можно задать отладки функции в приложении.  
   
  Только несколько отладки возможности используются в режиме конструирования. Разработчик может решить задавать точки останова или создавать контрольные значения выражения. DE загрузке или никогда не вызывается, пока интегрированной среды разработки находится в режиме конструктора. DE происходит во время запуска и приостановки выполнения.  
   
-##  <a name="vsconoperationalmodesanchor2"></a> Режим выполнения  
+## <a name="vsconoperationalmodesanchor2"></a> Режим выполнения  
  Режим выполнения происходит при запуске программы в сеансе отладки в интегрированной среде разработки. Приложение выполняется до завершения, до точки останова или возникает исключение. При запуске приложения завершается, DE переходы в режим конструктора. При достижении точки останова или возникает исключение, DE переходит в режим приостановки выполнения.  
   
-##  <a name="vsconoperationalmodesanchor3"></a> Режим приостановки выполнения  
+## <a name="vsconoperationalmodesanchor3"></a> Режим приостановки выполнения  
  Режим приостановки выполнения происходит при приостановке выполнения отладки программы. Режим приостановки выполнения предлагает разработчику моментальный снимок приложения во время паузы и позволяет разработчику для анализа состояния приложения и изменения, как приложение будет запущено. Разработчик может просмотреть и изменить код, проверки или изменения данных, перезапустить приложение, приостановиться или продолжить выполнение из одной точки.  
   
  Режим приостановки выполнения вводятся при DE отправляет событие синхронной остановке. Синхронной остановке событий, также называемый события остановки, уведомлять диспетчер отладки сеансов (SDM) и интегрированной среды разработки, отлаживаемого приложения прекратила выполнение кода. [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) и [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) интерфейсы являются примерами событий остановки.  
   
  Остановка события унаследованные путем вызова одного из следующих методов, которые переход отладчик из режима приостановки выполнения в обычное или пошаговое режиме:  
   
--   [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
+- [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
   
--   [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)  
+- [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)  
   
--   [Continue](../../extensibility/debugger/reference/idebugprocess3-continue.md)  
+- [Continue](../../extensibility/debugger/reference/idebugprocess3-continue.md)  
   
-###  <a name="vsconoperationalmodesanchor4"></a> Режим шаг  
+### <a name="vsconoperationalmodesanchor4"></a> Режим шаг  
  Режим шаг возникает, когда программа шаги на следующую строку кода, или в, над или выходом из функции. Шаг выполняется путем вызова метода [шаг](../../extensibility/debugger/reference/idebugprocess3-step.md). Этот метод требует `DWORD`s, укажите [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) и [STEPKIND](../../extensibility/debugger/reference/stepkind.md) перечисления в качестве входных параметров.  
   
  Когда программа успешно шаги на следующую строку кода или в функцию или оно запускается на курсор, или чтобы задать точку останова, DE автоматически переходит обратно в режим приостановки выполнения.  
   
 ## <a name="see-also"></a>См. также  
  [Элемент управления выполнения](../../extensibility/debugger/control-of-execution.md)
-

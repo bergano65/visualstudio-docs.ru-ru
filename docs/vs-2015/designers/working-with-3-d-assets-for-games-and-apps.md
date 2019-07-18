@@ -1,27 +1,22 @@
 ---
 title: Работа с трехмерными ресурсами для игр и приложений | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 020c934d3427dda77c41fb410143972d6f48656b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438103"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Работа с трехмерными ресурсами для игр и приложений
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "49265242"
  Вы можете использовать конструктор шейдеров [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], который представляет собой основанное на графах средство разработки шейдеров, чтобы создавать настраиваемые визуальные эффекты без навыков HLSL-программирования.  
   
 > [!NOTE]
->  Дополнительные сведения о том, как начать программировать на DirectX, см. в разделе [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Дополнительные сведения об отладке приложений на основе DirectX см. в разделе [Диагностика графики (отладка графики DirectX)](../debugger/visual-studio-graphics-diagnostics.md).  
+> Дополнительные сведения о том, как начать программировать на DirectX, см. в разделе [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Дополнительные сведения об отладке приложений на основе DirectX см. в разделе [Диагностика графики (отладка графики DirectX)](../debugger/visual-studio-graphics-diagnostics.md).  
   
 ## <a name="directx-version-compatibility"></a>Совместимость версий DirectX  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] использует DirectX для отрисовки двумерных и трехмерных ресурсов. Вы можете выбрать отрисовщик DirectX 11 или программный отрисовщик WARP (Windows Advanced Rasterization Platform). Отрисовщик DirectX 11 обеспечивает высокопроизводительную отрисовку с аппаратным ускорением на базе GPU с поддержкой DirectX 11 и DirectX 10 Отрисовщик WARP позволяет убедиться, что ваш ресурс работает на широком спектре компьютеров, включая компьютеры с устаревшим или интегрированным графическим оборудованием. Дополнительные сведения о WARP см. в [руководстве по Windows Advanced Rasterization Platform (WARP)](http://go.microsoft.com/fwlink/p/?LinkId=224634).  
@@ -62,6 +57,3 @@ ms.locfileid: "49265242"
 |[Работа с трехмерными моделями](../designers/working-with-3-d-models.md)|Описывает, как работать с трехмерными моделями в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Работа с шейдерами](../designers/working-with-shaders.md)|Описывает, как создавать и изменять настраиваемые эффекты шейдеров в конструкторе шейдеров [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Использование трехмерных ресурсов в игре или приложении](../designers/using-3-d-assets-in-your-game-or-app.md)|Описывает, как использовать ресурсы, созданные с помощью редактора изображений, редактора моделей или конструктора шейдеров, в игре или приложении.|
-
-
-

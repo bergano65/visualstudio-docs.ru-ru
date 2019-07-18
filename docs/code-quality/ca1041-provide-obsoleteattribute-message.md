@@ -1,7 +1,6 @@
 ---
 title: CA1041. Укажите сообщение ObsoleteAttribute
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1041
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: be5bee69-d2d2-44e1-be2e-3ea451969003
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e8986b2f480b461487d520f59245b80d289dcfc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 354d1d2fe99fa55bba7f8a00bf3e9f760ff1dbaf
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882225"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842185"
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041. Укажите сообщение ObsoleteAttribute
 
@@ -36,23 +35,41 @@ ms.locfileid: "53882225"
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Тип или член помечен с помощью <xref:System.ObsoleteAttribute?displayProperty=fullName> атрибут, который не поддерживает его <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> указанное свойство.
+
+Тип или член помечен с помощью <xref:System.ObsoleteAttribute?displayProperty=fullName> атрибут, который не поддерживает его <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> указанное свойство.
+
+По умолчанию это правило считывает только типы, видимые извне и члены, но это [можно настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.ObsoleteAttribute> используется для пометки устаревшие библиотеки типов и членов. Потребители библиотеки следует избегать использования любого типа или члена, который помечен как устаревший. Это, так как он может не поддерживаться и в конечном итоге будет отсутствовать в более поздних версиях библиотеки. Если тип или член помечен с помощью <xref:System.ObsoleteAttribute> компилируется, <xref:System.ObsoleteAttribute.Message%2A> отображается свойство атрибута. Это предоставляет пользователю сведения об устаревшем типе или члене. Эти сведения обычно содержат как долго устаревший тип или член будет поддерживаться разработчиками и какой компонент для использования.
+
+<xref:System.ObsoleteAttribute> используется для пометки устаревшие библиотеки типов и членов. Потребители библиотеки следует избегать использования любого типа или члена, который помечен как устаревший. Это, так как он может не поддерживаться и в конечном итоге будет отсутствовать в более поздних версиях библиотеки. Если тип или член помечен с помощью <xref:System.ObsoleteAttribute> компилируется, <xref:System.ObsoleteAttribute.Message%2A> отображается свойство атрибута. Это предоставляет пользователю сведения об устаревшем типе или члене. Эти сведения обычно содержат как долго устаревший тип или член будет поддерживаться разработчиками и какой компонент для использования.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, добавьте `message` параметр <xref:System.ObsoleteAttribute> конструктор.
+
+Чтобы устранить нарушение этого правила, добавьте `message` параметр <xref:System.ObsoleteAttribute> конструктор.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Не отключайте предупреждение из этого правила, так как <xref:System.ObsoleteAttribute.Message%2A> свойство предоставляет важные сведения о устаревший тип или член.
+
+Не отключайте предупреждение из этого правила, так как <xref:System.ObsoleteAttribute.Message%2A> свойство предоставляет важные сведения о устаревший тип или член.
+
+## <a name="configurability"></a>Возможность настройки
+
+Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+
+```ini
+dotnet_code_quality.ca1041.api_surface = private, internal
+```
+
+В этой категории (структуры) можно настроить этот параметр для только что это правило, для всех правил или для всех правил. Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Пример
- В следующем примере показано устаревший член, который есть правильно объявленный <xref:System.ObsoleteAttribute>.
 
- [!code-cpp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CPP/ca1041-provide-obsoleteattribute-message_1.cpp)]
- [!code-csharp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CSharp/ca1041-provide-obsoleteattribute-message_1.cs)]
- [!code-vb[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/VisualBasic/ca1041-provide-obsoleteattribute-message_1.vb)]
+В следующем примере показано устаревший член, который есть правильно объявленный <xref:System.ObsoleteAttribute>.
+
+[!code-cpp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CPP/ca1041-provide-obsoleteattribute-message_1.cpp)]
+[!code-csharp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CSharp/ca1041-provide-obsoleteattribute-message_1.cs)]
+[!code-vb[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/VisualBasic/ca1041-provide-obsoleteattribute-message_1.vb)]
 
 ## <a name="see-also"></a>См. также
- <xref:System.ObsoleteAttribute?displayProperty=fullName>
+
+- <xref:System.ObsoleteAttribute?displayProperty=fullName>

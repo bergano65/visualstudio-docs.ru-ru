@@ -9,57 +9,51 @@ helpviewer_keywords:
 ms.assetid: 61e40163-eee0-4c1f-af47-cef3771bdc41
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9a07c961e62870319de10cad77eaee8e12ef1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854834"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
-Указывает тип кадра стека.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-enum StackFrameTypeEnum {  
-   FrameTypeFPO,  
-   FrameTypeTrap,  
-   FrameTypeTSS,  
-   FrameTypeStandard,  
-   FrameTypeFrameData,  
-   FrameTypeUnknown = -1  
-};  
-```  
-  
-## <a name="elements"></a>Элементы  
- `FrameTypeFPO`  
- Указатель на фреймы опустить; FPO сведения недоступны.  
-  
- `FrameTypeTrap`  
- Кадр перехвата ядра.  
-  
- `FrameTypeTSS`  
- Кадр перехвата ядра.  
-  
- `FrameTypeStandard`  
- Стандартный кадр стека EBP.  
-  
- `FrameTypeFrameData`  
- Указатель на фреймы опустить; Кадр данных сведения о доступных.  
-  
- `FrameTypeUnknown`  
- Кадр, который не поддерживает любой отладочной информации.  
-  
-## <a name="remarks"></a>Примечания  
- Значения в этом перечислении возвращаются путем вызова [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) метод.  
-  
-## <a name="requirements"></a>Требования  
- Заголовок: cvconst.h  
-  
-## <a name="see-also"></a>См. также раздел  
- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)
+Указывает тип кадра стека.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+enum StackFrameTypeEnum {
+    FrameTypeFPO,
+    FrameTypeTrap,
+    FrameTypeTSS,
+    FrameTypeStandard,
+    FrameTypeFrameData,
+    FrameTypeUnknown = -1
+};
+```
+
+## <a name="elements"></a>Элементы
+`FrameTypeFPO` Указатель на фреймы опустить; FPO сведения недоступны.
+
+`FrameTypeTrap` Кадр перехвата ядра.
+
+`FrameTypeTSS` Кадр перехвата ядра.
+
+`FrameTypeStandard` Стандартный кадр стека EBP.
+
+`FrameTypeFrameData` Указатель на фреймы опустить; Кадр данных сведения о доступных.
+
+`FrameTypeUnknown` Кадр, который не поддерживает любой отладочной информации.
+
+## <a name="remarks"></a>Примечания
+Значения в этом перечислении возвращаются путем вызова [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) метод.
+
+## <a name="requirements"></a>Требования
+Заголовок: cvconst.h
+
+## <a name="see-also"></a>См. также
+- [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

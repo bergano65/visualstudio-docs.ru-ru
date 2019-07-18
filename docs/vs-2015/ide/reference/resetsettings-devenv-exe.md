@@ -1,14 +1,9 @@
 ---
 title: -ResetSettings (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /ResetSettings switch
 - ResetSettings switch
@@ -17,18 +12,17 @@ ms.assetid: 1d41021c-6f58-4bd5-b122-d1c995812192
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 276205ae2aab3c38ceb3d4f1419e0bac13ae626c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b35026140b424da0f7fa71cb9e70b72c3dba243
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273498"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689647"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Восстанавливает параметры по умолчанию [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и автоматически запускает интегрированную среду разработки [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. При необходимости выполняет сброс параметров в соответствии с указанным файлом VSSETTINGS.  
   
  Параметры по умолчанию определяются по профилю, который был выбран при первом запуске [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
@@ -55,9 +49,6 @@ Devenv /ResetSettings SettingsFile
 Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"  
 ```  
   
-## <a name="see-also"></a>См. также  
- [Настройка параметров разработки в Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+## <a name="see-also"></a>См. также раздел  
+ [Настройка параметров разработки в Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)
-
-
-

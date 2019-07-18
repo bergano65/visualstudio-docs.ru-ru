@@ -2,23 +2,22 @@
 title: Руководство по началу работы с R
 description: Пошаговое руководство по использованию R в Visual Studio, в том числе сведения о создании проектов, работе с интерактивным окном, редактировании кода и отладке.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000461"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Начало работы с Инструментами R для Visual Studio
 
-После установки инструментов R для Visual Studio (RTVS) (см. раздел [Установка](installing-r-tools-for-visual-studio.md)) можно сразу же приступить к работе с этими инструментами. 
+После установки инструментов R для Visual Studio (RTVS) (см. раздел [Установка](installing-r-tools-for-visual-studio.md)) можно сразу же приступить к работе с этими инструментами.
 
 ## <a name="create-an-r-project"></a>Создание проекта R
 
@@ -93,7 +92,7 @@ ms.locfileid: "53944630"
 
 > [!Tip]
 > Изучите схему внесения изменений и нажатия клавиш **CTRL**+**ВВОД** (или выделения всего содержимого с помощью клавиш **CTRL**+**A** и нажатия клавиш **CTRL**+**ВВОД**) для быстрого выполнения кода. Это намного быстрее, чем использовать мышь для выполнения тех же операций.
-> 
+>
 > Кроме того, можно перетащить и окно построений за пределы Visual Studio и поместить его в любом месте на экране. После этого можно масштабировать окно графиков до желаемых размеров и сохранить его в качестве изображения или PDF-файла.
 
 1. Добавьте несколько дополнительных строк кода, чтобы добавить второй график.

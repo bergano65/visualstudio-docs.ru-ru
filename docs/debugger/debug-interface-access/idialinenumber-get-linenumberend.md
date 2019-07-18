@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: b101853e-2bcf-47c1-acef-e13984c7ea9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d20175422a78a2b84c1b969f7a9776a45b2522
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: cb62d8588fdbf439508eed3e5b2cc81a840b9f3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828679"
 ---
 # <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
-Получает номер строки источника от единицы, которой заканчивается оператор или выражение.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT get_lineNumberEnd (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pRetVal`  
- [out] Возвращает номер строки, в которой заканчивается оператор или выражение. Если значение равно нулю, информация окончания отсутствует.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Получает номер строки источника от единицы, которой заканчивается оператор или выражение.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT get_lineNumberEnd ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pRetVal`
+
+[out] Возвращает номер строки, в которой заканчивается оператор или выражение. Если значение равно нулю, информация окончания отсутствует.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успеха возвращает `S_OK`. Возвращает `S_FALSE` Если это свойство не поддерживается. В противном случае возвращается код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

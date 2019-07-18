@@ -1,26 +1,25 @@
 ---
 title: Отключение предупреждений компилятора для проектов и пакетов NuGet
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549315"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Как выполнить Отключение предупреждений компилятора
 
 Отфильтровав предупреждения компилятора одного или нескольких видов, вы сможете убрать лишнюю информацию из журнала сборки. Например, вы можете регулировать объем выходных данных, изменяя уровень детализации журнала сборки: **обычный**, **подробный** или **диагностический**. Дополнительные сведения о детализации см. в разделе [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Отключение некоторых предупреждений для Visual C# и F# #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Отключение некоторых предупреждений для Visual C# и F\#
 
 Используйте страницу свойств **Сборка**, чтобы отключить конкретные предупреждения для проектов C# и F#.
 
@@ -64,7 +63,7 @@ ms.locfileid: "53060369"
 
 1. В строке меню выберите **Проект** > **Выгрузить проект**.
 
-1. В **обозревателе решений** откройте контекстное меню для проекта и выберите пункт **Изменить <ProjectName>.vbproj**.
+1. В **обозревателе решений** откройте контекстное меню или меню правой кнопки мыши для своего проекта и выберите **Изменить \<имя_проекта>.vbproj**.
 
     XML-файл проекта откроется в редакторе кода.
 
@@ -134,5 +133,5 @@ ms.locfileid: "53060369"
 ## <a name="see-also"></a>См. также
 
 - [Пошаговое руководство: сборка приложения](../ide/walkthrough-building-an-application.md)
-- [Практическое руководство: просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Практическое руководство. просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)

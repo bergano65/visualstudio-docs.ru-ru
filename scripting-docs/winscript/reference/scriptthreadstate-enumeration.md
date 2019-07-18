@@ -2,7 +2,6 @@
 title: Перечисление SCRIPTTHREADSTATE | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c66d078effd510b3f64cf1f443926984ff2e282
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 906a309b25a1fe606fb37f8cbab70040e5a4c46f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840191"
 ---
 # <a name="scriptthreadstate-enumeration"></a>Перечисление SCRIPTTHREADSTATE
 Указывает состояние потока в обработчик сценариев. Это перечисление используется с [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) метод.  

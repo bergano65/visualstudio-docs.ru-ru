@@ -1,14 +1,9 @@
 ---
 title: Задача RegisterAssembly | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RegisterAssembly
 dev_langs:
@@ -23,19 +18,18 @@ ms.assetid: ba5f19ac-6764-4d28-9b79-a86de58f8987
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6ca8def8de6a290822a6736f70a401ed7e0cf9bf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 71ef27b61e162fedbf0b8fcaac38d93bedbc77c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230247"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682394"
 ---
 # <a name="registerassembly-task"></a>Задача RegisterAssembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Cчитывает метаданные указанной сборки и добавляет в реестр необходимые записи, что позволяет COM-клиентам прозрачно создавать классы [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Поведение этой задачи близко к поведению [средства регистрации сборок Regasm.exe](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb), но не идентично ему.  
+Cчитывает метаданные указанной сборки и добавляет в реестр необходимые записи, что позволяет COM-клиентам прозрачно создавать классы [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Поведение этой задачи близко к поведению [средства регистрации сборок Regasm.exe](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb), но не идентично ему.  
   
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `RegisterAssembly` .  
@@ -68,9 +62,6 @@ Cчитывает метаданные указанной сборки и доб
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)
-
-
-

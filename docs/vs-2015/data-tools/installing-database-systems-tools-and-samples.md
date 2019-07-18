@@ -1,12 +1,9 @@
 ---
 title: Установка систем баз данных, средства и примеры | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,28 +16,27 @@ ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f18ace9a18eefd0758e581b83001b85c3f48a3da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196066"
 ---
-# <a name="installing-database-systems-tools-and-samples"></a>Установка систем баз данных, средства и примеры
+# <a name="installing-database-systems-tools-and-samples"></a>Установка систем баз данных, средств и примеров
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Сама среда Visual Studio не включает все базы данных системы, отличные от те, которые он использует для внутренних целей. Для разработки приложений, подключенных к данных, в Visual Studio, обычно установка системы базы данных на локальном компьютере разработки и затем развернуть приложение и база данных в рабочей среде, когда они будут готовы. Системы баз данных могут быть недоступны в приложениях .NET и должен отображаться в Visual Studio данные средства windows ей нужен поставщик данных ADO.NET. Поставщик должен поддерживать Entity Framework в частности в том случае, если вы планируете использовать модели EDM в приложении .NET.     Многие поставщики, предлагается через диспетчер пакетов NuGet или с помощью коллекции Visual Studio.  
   
  Для разработки SQL убедитесь, что у вас есть SQL Server Data Tools, установленной в Visual Studio. Нажмите кнопку **представление** меню. Если вы не видите обозреватель объектов SQL Server, откройте панель управления и измените Visual Studio. В установщике выберите **Microsoft SQL Server Data Tools**.  
   
- При использовании API службы хранилища Azure, установите эмуляторы хранилища Azure на локальном компьютере во время разработки, чтобы избежать расходов, пока вы не будете готовы к развертыванию в рабочей среде. Дополнительные сведения см. в разделе [использование эмулятора хранения Azure для разработки и тестирования](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).  
+ При использовании API службы хранилища Azure, установите эмуляторы хранилища Azure на локальном компьютере во время разработки, чтобы избежать расходов, пока вы не будете готовы к развертыванию в рабочей среде. Дополнительные сведения см. в разделе [использование эмулятора хранения Azure для разработки и тестирования](https://azure.microsoft.com/documentation/articles/storage-use-emulator/).  
   
  В следующем списке приведены некоторые из наиболее популярных систем базы данных, которые могут быть использованы в проектах Visual Studio. Список не является исчерпывающим. Перечень сторонних поставщиков, предлагающих поставщиков данных ADO.NET, которые позволяют глубокая интеграция с помощью инструментов Visual Studio, см. в разделе [поставщиков данных ADO.NET](https://msdn.microsoft.com/library/dd363565.aspx).  
   
 ### <a name="microsoft-sql-server"></a>Microsoft SQL Server  
- SQL Server — база данных Microsoft флагманское предложение. SQL Server 2016 предоставляет рекордной производительности, повышенной безопасности и функционально насыщенные, интегрированные отчетов и аналитики. Он поставляется в различных выпусках, предназначенные для разных случаев использования: с высокой степенью масштабируемости, высокой производительности бизнес-аналитики, чтобы использовать на одном компьютере. SQL Server Express — это полнофункциональный выпуск SQL Server, разработанных специально для распространение и внедрение.  LocalDB — это упрощенная версия SQL Server Express, которая не требует настройки и выполняется в процессе приложения. Вы можете скачать одного или обоих этих продуктов из [странице загрузки SQL Server Express](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).    Во многих примерах SQL в этом разделе используется SQL Server LocalDB. SQL Server Management Studio (SSMS) — это приложение управления автономную базу данных, который больше функций, чем доступно в обозревателе объектов SQL Server Visual Studio. По предыдущей ссылке можно получить SSMS.  
+ SQL Server — база данных Microsoft флагманское предложение. SQL Server 2016 предоставляет рекордной производительности, повышенной безопасности и функционально насыщенные, интегрированные отчетов и аналитики. Он поставляется в различных выпусках, предназначенные для разных случаев использования: с высокой степенью масштабируемости, высокой производительности бизнес-аналитики, чтобы использовать на одном компьютере. SQL Server Express — это полнофункциональный выпуск SQL Server, разработанных специально для распространение и внедрение.  LocalDB — это упрощенная версия SQL Server Express, которая не требует настройки и выполняется в процессе приложения. Вы можете скачать одного или обоих этих продуктов из [странице загрузки SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express). Во многих примерах SQL в этом разделе используется SQL Server LocalDB. SQL Server Management Studio (SSMS) — это приложение управления автономную базу данных, который больше функций, чем доступно в обозревателе объектов SQL Server Visual Studio. По предыдущей ссылке можно получить SSMS.  
   
 ### <a name="oracle"></a>Oracle  
  Можно загрузить платную или бесплатную версию базы данных Oracle из [сетевой технологии Oracle](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) страницы. Для поддержки времени разработки для Entity Framework и адаптеров таблиц, вам потребуется [Oracle Developer Tools для Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Другие официальные продукты Oracle, включая Oracle Instant Client, доступны через диспетчер пакетов NuGet.  Можно загрузить образец схем Oracle, следуя инструкциям в [электронной документации Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).  
@@ -58,5 +54,4 @@ ms.locfileid: "49244287"
  Firebird — это система базы данных SQL открытым исходным кодом. Его можно загрузить из [страницу загрузки Firebird](http://firebirdsql.org/en/downloads/). Поставщик данных ADO.NET доступен через диспетчер пакетов NuGet.  
   
 ## <a name="see-also"></a>См. также  
- [Как определить версию и выпуск SQL Server и ее компонентов](http://support.microsoft.com/kb/321185)
-
+ [Определение версии и выпуска системы SQL Server и ее компонентов](http://support.microsoft.com/kb/321185)

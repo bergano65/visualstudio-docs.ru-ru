@@ -1,25 +1,20 @@
 ---
 title: Половина / четверть текстуры измерения Variant | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6ef44ff579fbd96026fcd7c285b173ad19317275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161158"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Вариант размера текстур: половина/четверть
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +47,5 @@ ms.locfileid: "51805987"
  Этот вариант изменяет размеры текстур во время выполнения перед вызовом метода `CreateTexture2D`. Мы не рекомендуем такой подход для рабочего кода, так как полноразмерные текстуры занимают больше места на диске, а дополнительное действие может увеличить время загрузки в приложении, особенно для сжатых текстур, на кодирование которых требуется значительное количество вычислительных ресурсов. Вместо этого мы рекомендуем изменять размер текстур с помощью редактора или обработчика изображений, включенного в процесс сборки. Таким образом можно сократить требования к дисковому пространству, устранить дополнительную нагрузку во время выполнения и получить дополнительное время на обработку, чтобы обеспечить максимальное качество изображения при уменьшении размеров или сжатии текстур.  
   
 ## <a name="see-also"></a>См. также  
- [Вариант создания MIP карты](../debugger/mip-map-generation-variant.md)   
+ [Вариант создания MIP-карты](../debugger/mip-map-generation-variant.md)   
  [Вариант сжатия текстур BC](../debugger/bc-texture-compression-variant.md)
-
-
-

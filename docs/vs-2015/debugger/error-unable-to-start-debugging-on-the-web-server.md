@@ -1,14 +1,9 @@
 ---
 title: 'Ошибка: Не удается запустить отладку на веб-сервере | Документация Майкрософт'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -32,22 +27,22 @@ ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 168aaff6e7165c0566b198dab22174b14dad9949
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185475"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Ошибка. Не удается запустить отладку на веб-сервере
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Ошибка: не удается запустить отладку на веб-сервере
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-При попытке отладить приложение ASP.NET, запущенное на веб-сервере, может появиться следующее сообщение об ошибке: "Не удается запустить отладку на веб-сервере".
+При попытке отладить приложение ASP.NET на веб-сервере, может появиться это сообщение об ошибке: Не удается запустить отладку на веб-сервере.
   
 Во многих случаях эта ошибка возникает, поскольку IIS не настроен правильно.
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Проверьте конфигурацию IIS
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Проверьте конфигурацию IIS
 
 После выполнения действия, чтобы устранить неполадки, описанные здесь и перед повторной попыткой для отладки, может потребоваться сброс IIS. Это можно сделать, открыв командную строку администратора и введя `iisreset`, или это можно сделать в диспетчере служб IIS. 
 
@@ -93,10 +88,6 @@ ms.locfileid: "51779298"
     Ошибка в более старых версий (исправлены позже) требуется привилегий в некоторых ASP.NET, в сценариях отладки.
     
 - Если запущены несколько экземпляров Visual Studio, повторно откройте проект в одном экземпляре Visual Studio и повторите попытку.
-   
-  
+
 ## <a name="see-also"></a>См. также  
  [Отладка веб-приложений: ошибки и устранение неполадок](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-

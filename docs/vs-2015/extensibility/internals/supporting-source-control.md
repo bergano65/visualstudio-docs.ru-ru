@@ -1,26 +1,21 @@
 ---
 title: Поддержка системы управления версиями | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8310a18d9390858256067ba8dd16b61129b819a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1166197a5c79dcb0d1ddf4018227914346a6172
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156075"
 ---
 # <a name="supporting-source-control"></a>Поддержка системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,4 +57,3 @@ ms.locfileid: "51746329"
 ## <a name="related-sections"></a>Связанные разделы  
  [Типы проектов](../../extensibility/internals/project-types.md)  
  Общие сведения о проектах как основные стандартные блоки [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] интегрированной среды разработки (IDE). Приведены ссылки на дополнительные разделы, в которых объясняется, как управлять проектами, создания и компиляции кода.
-

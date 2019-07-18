@@ -1,14 +1,9 @@
 ---
 title: Функция SccRename | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccRename
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 929eff85a5dddb96ad518593a955950052dbced7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e78975acab0bf30f1f188cdd7b6454fd6e74ce6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143723"
 ---
 # <a name="sccrename-function"></a>Функция SccRename
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ SCCRTN SccRename(
 ## <a name="return-value"></a>Возвращаемое значение  
  Подключаемый модуль реализации элемента управления источника этой функции должен возвращать одно из следующих значений:  
   
-|Значение|Описание:|  
+|Значение|Описание|  
 |-----------|-----------------|  
 |SCC_OK|Операция переименования завершена успешно.|  
 |SCC_E_PROJNOTOPEN|Проект не открыт в системе управления версиями.|  
@@ -72,4 +67,3 @@ SCCRTN SccRename(
   
 ## <a name="see-also"></a>См. также  
  [Функции API подключаемого модуля системы управления версиями](../extensibility/source-control-plug-in-api-functions.md)
-

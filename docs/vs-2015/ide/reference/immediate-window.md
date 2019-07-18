@@ -1,14 +1,9 @@
 ---
 title: Окно интерпретации | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ImmediateWindow
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e6bbbd4fa2ad051407ece3e05c1806c1231ef2e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437120"
 ---
 # <a name="immediate-window"></a>окно интерпретации
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Окно **Интерпретация** используется для отладки и вычисления выражений, выполнения операторов, печати значений переменных и других действий. Оно позволяет вводить выражения, которые требуется вычислить или выполнить на языке разработки во время отладки. Чтобы открыть окно **Интерпретация**, откройте проект для редактирования, в меню **Отладка** выберите пункт **Окна** и выберите **Интерпретация** или нажмите клавиши CTRL+ALT+I.  
   
  Это окно можно использовать для выполнения отдельных команд [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. В число доступных команд входит команда `EvaluateStatement`, которую можно использовать для присвоения значений переменным. Окно **Интерпретация** также поддерживает технологию Intellisense.  
@@ -51,7 +45,7 @@ ms.locfileid: "49850429"
  Обе версии этой команды возвращают значение переменной `varA`.  
   
 > [!NOTE]
->  Чтобы выполнить команду [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] в окне **Интерпретация**, необходимо перед командой ввести знак больше (>). Чтобы ввести несколько команд, переключитесь в окно **Команда**.  
+> Чтобы выполнить команду [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] в окне **Интерпретация**, необходимо перед командой ввести знак больше (>). Чтобы ввести несколько команд, переключитесь в окно **Команда**.  
   
 ## <a name="design-time-expression-evaluation"></a>Вычисление выражений в процессе разработки  
  Окно **Интерпретация** можно использовать для выполнения функции или подпрограммы во время разработки.  
@@ -80,7 +74,7 @@ ms.locfileid: "49850429"
   
     Окно **Интерпретация** запустит функцию `MyFunction` и покажет значение `4`.  
   
-   Если в функции или подпрограмме есть точка останова, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] прервет выполнение в соответствующей точке. При этом можно использовать окна отладчика для просмотра состояния программы. Дополнительные сведения см. в разделе [Пример. Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Если в функции или подпрограмме есть точка останова, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] прервет выполнение в соответствующей точке. При этом можно использовать окна отладчика для просмотра состояния программы. Дополнительные сведения см. в статье об [ отладке во время разработки](../../debugger/walkthrough-debugging-at-design-time.md).  
   
    Вычисление выражений во время разработки нельзя использовать в типах проектов, требующих запуска среды выполнения, таких как проекты [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], веб-проекты, проекты для интеллектуальных устройств и проекты SQL.  
   
@@ -124,18 +118,15 @@ ms.locfileid: "49850429"
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Включение или отключение уведомлений о первом этапе обработки исключений в окне интерпретации  
   
-1.  В меню **Вид** выберите пункт **Другие окна**, а затем щелкните **Вывод**.  
+1. В меню **Вид** выберите пункт **Другие окна**, а затем щелкните **Вывод**.  
   
-2.  Щелкните правой кнопкой мыши в текстовой области окна **Вывод** и выберите пункт **Сообщения об исключениях** или отмените его выбор.  
+2. Щелкните правой кнопкой мыши в текстовой области окна **Вывод** и выберите пункт **Сообщения об исключениях** или отмените его выбор.  
   
 ## <a name="see-also"></a>См. также  
  [Навигация по коду с помощью отладчика](../../debugger/navigating-through-code-with-the-debugger.md)   
  [Командное окно](../../ide/reference/command-window.md)   
  [Отладка в Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Основы отладки](../../debugger/debugger-basics.md)   
- [Пример. Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md)   
+ [Пошаговое руководство: Отладка во время разработки](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Псевдонимы команд Visual Studio](../../ide/reference/visual-studio-command-aliases.md)   
  [Использование регулярных выражений в Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

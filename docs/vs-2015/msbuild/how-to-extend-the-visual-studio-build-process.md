@@ -1,13 +1,9 @@
 ---
-title: Как выполнить Расширение процесса построения | Документация Майкрософт
-ms.custom: ''
+title: Как выполнить Расширение процесса сборки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding predefined targets
 - MSBuild, overriding DependsOn properties
@@ -17,23 +13,22 @@ ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a3a530f74e1cf90012f9724d68493b1602b0e6dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108605"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Как выполнить Расширение процесса построения Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-
 Процесс сборки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] определяется рядом TARGETS-файлов [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], которые импортируются в файл проекта. Один из этих импортированных файлов — Microsoft.Common.targets — можно расширить, чтобы выполнять настраиваемые задачи в нескольких точках в процессе сборки. Этот раздел описывает два метода, которые можно использовать для расширения процесса сборки [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
 
--   Переопределение конкретных предварительно заданных целевых объектов, определенных в Microsoft.Common.targets.
+- Переопределение конкретных предварительно заданных целевых объектов, определенных в Microsoft.Common.targets.
 
--   Переопределение свойств "DependsOn", определенных в Microsoft.Common.targets.
+- Переопределение свойств "DependsOn", определенных в Microsoft.Common.targets.
 
 ## <a name="overriding-predefined-targets"></a>Переопределение предопределенных целевых объектов
  Файл Microsoft.Common.targets содержит ряд предопределенных пустых целевых объектов, которые вызываются до и после некоторых основных целевых объектов в процессе сборки. Например, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] вызывает целевой объект `BeforeBuild` перед основным целевым объектом `CoreBuild`, а целевой объект `AfterBuild` — после целевого объекта `CoreBuild`. По умолчанию пустые целевые объекты в Microsoft.Common.targets не выполняют никаких действий, но их поведение по умолчанию можно переопределить, определив нужные целевые объекты в файле проекта, куда импортируется файл Microsoft.Common.targets. Таким образом, вы можете использовать задачи [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], чтобы получить больший контроль над процессом сборки.
@@ -63,7 +58,7 @@ ms.locfileid: "53938725"
 |Целевое имя|Описание|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после основной компиляции. Основная часть настроек выполняется в одном из этих двух целевых объектов.|
-|`BeforeBuild`, `AfterBuild`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после остальной части сборки. **Примечание.**  `BeforeBuild` И `AfterBuild` целевых объектов уже определены в комментариях в конце большинства файлов проекта. Это позволяет легко добавлять в файл проекта события, возникающие до и после сборки.|
+|`BeforeBuild`, `AfterBuild`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после остальной части сборки. **Примечание.**  Целевые объекты `BeforeBuild` и `AfterBuild` уже определены в комментариях в конце большинства файлов проекта. Это позволяет легко добавлять в файл проекта события, возникающие до и после сборки.|
 |`BeforeRebuild`, `AfterRebuild`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после вызова основной функции перестроения. В Microsoft.Common.targets действует следующий порядок выполнения целевых объектов: `BeforeRebuild`, `Clean`, `Build`, а затем `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после вызова основной функции очистки.|
 |`BeforePublish`, `AfterPublish`|Задачи, добавленные в один из этих целевых объектов, выполняются до или после вызова основной функции публикации.|
@@ -114,13 +109,13 @@ ms.locfileid: "53938725"
 
 #### <a name="to-override-a-dependson-property"></a>Переопределение свойства "DependsOn"
 
-1.  Выберите в Microsoft.Common.targets предварительно заданное свойство "DependsOn", которое требуется переопределить. Приведенная ниже таблица содержит список часто переопределяемых свойств "DependsOn".
+1. Выберите в Microsoft.Common.targets предварительно заданное свойство "DependsOn", которое требуется переопределить. Приведенная ниже таблица содержит список часто переопределяемых свойств "DependsOn".
 
-2.  Определите еще один экземпляр свойства или свойств в конце файла проекта. Включите исходное свойство, например `$(BuildDependsOn)`, в новое свойство.
+2. Определите еще один экземпляр свойства или свойств в конце файла проекта. Включите исходное свойство, например `$(BuildDependsOn)`, в новое свойство.
 
-3.  Определите пользовательские целевые объекты до или после определения свойства.
+3. Определите пользовательские целевые объекты до или после определения свойства.
 
-4.  Выполните сборку файла проекта.
+4. Выполните сборку файла проекта.
 
 ### <a name="commonly-overridden-dependson-properties"></a>Часто переопределяемые свойства "DependsOn"
 
@@ -131,4 +126,4 @@ ms.locfileid: "53938725"
 |`CompileDependsOn`|Свойство, которое следует переопределить, если нужно вставить пользовательские процессы до или после этапа компиляции.|
 
 ## <a name="see-also"></a>См. также раздел
- [Интеграция с Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [основные возможности MSBuild](../msbuild/msbuild-concepts.md) [. Файлы целевых объектов](../msbuild/msbuild-dot-targets-files.md)
+ [Интеграция Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [Основные понятия MSBuild](../msbuild/msbuild-concepts.md) [Файлы TARGETS](../msbuild/msbuild-dot-targets-files.md)

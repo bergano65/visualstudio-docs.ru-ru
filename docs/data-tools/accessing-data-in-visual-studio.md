@@ -11,16 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a13efa2335cd0721b71dd61e270e5331d78dede
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 5403803a4da0821978a8c6bbfc31e45c31104640
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936390"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715278"
 ---
 # <a name="access-data-in-visual-studio"></a>Доступ к данным в Visual Studio
 
@@ -28,7 +27,7 @@ ms.locfileid: "53936390"
 
 Для приложений на JavaScript, Python, PHP, Ruby или C++ можно подключаться к данным, как это сделать что-нибудь еще, получение библиотеки и написания кода. Для приложений .NET Visual Studio предоставляет средства, которые можно использовать для исследования источники данных и создавать модели объектов для хранения и обработки данных в памяти и привязка данных к пользовательскому интерфейсу. Microsoft Azure предоставляет пакеты SDK для .NET, Java, Node.js, PHP, Python, Ruby и мобильных приложений и средств в Visual Studio для подключения к службе хранилища Azure.
 
-В следующих списках приведены лишь некоторые из многих системах базы данных и хранилища, которые могут быть использованы из Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) предложения — это службы данных, которые включают все подготовки и администрирования из базового хранилища данных. **Разработки Azure** рабочей нагрузки в [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) позволяет работать с хранилищами данных Azure непосредственно из Visual Studio.
+В следующих списках приведены лишь некоторые из многих системах базы данных и хранилища, которые могут быть использованы из Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) предложения — это службы данных, которые включают все подготовки и администрирования из базового хранилища данных. **Разработки Azure** рабочей нагрузки в [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) позволяет работать с хранилищами данных Azure непосредственно из Visual Studio.
 
 ![Рабочая нагрузка "Разработка для Azure"](media/azure-development-workload.png)
 
@@ -66,10 +65,20 @@ ms.locfileid: "53936390"
 - VelocityDB
 - И многое другое!
 
-Многими поставщиками базы данных и третьим сторонам поддерживается интеграция с Visual Studio, пакеты NuGet. Вы можете изучить предложения на сайте nuget.org или через диспетчер пакетов NuGet в Visual Studio (**средства** > **диспетчер пакетов NuGet** > **управление пакетами NuGet Пакетами для решения**). Другие продукты баз данных интеграции с Visual Studio в качестве расширения. Эти предложения в Visual Studio Marketplace можно просмотреть, перейдя по адресу **средства**, **расширения и обновления** и выбрав **Online** в левой области диалоговое окно. Дополнительные сведения см. в разделе [совместимые системы баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+::: moniker range="vs-2017"
+
+Многими поставщиками базы данных и третьим сторонам поддерживается интеграция с Visual Studio, пакеты NuGet. Вы можете изучить предложения на сайте nuget.org или через диспетчер пакетов NuGet в Visual Studio (**средства** > **диспетчер пакетов NuGet** > **управление пакетами NuGet Пакетами для решения**). Другие продукты баз данных интеграции с Visual Studio в качестве расширения. Вы можете просмотреть эти предложения в [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или перехода к **средства** > **расширения и обновления** и выбрав  **Online** в левой области диалогового окна. Дополнительные сведения см. в разделе [совместимые системы баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Многими поставщиками базы данных и третьим сторонам поддерживается интеграция с Visual Studio, пакеты NuGet. Вы можете изучить предложения на сайте nuget.org или через диспетчер пакетов NuGet в Visual Studio (**средства** > **диспетчер пакетов NuGet** > **управление пакетами NuGet Пакетами для решения**). Другие продукты баз данных интеграции с Visual Studio в качестве расширения. Вы можете просмотреть эти предложения в [Visual Studio Marketplace](https://marketplace.visualstudio.com/) или перехода к **расширения** > **Управление расширениями** и выбрав  **Online** в левой области диалогового окна. Дополнительные сведения см. в разделе [совместимые системы баз данных для Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
 
 > [!NOTE]
-> Расширенная поддержка SQL Server 2005 закончилась 12 апреля 2016 г. Нет никакой гарантии, что данные средства в Visual Studio 2015 и более поздних версий будет продолжать работать с SQL Server 2005, после этой даты. Дополнительные сведения см. в разделе [end-of-support объявление о выпуске для SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> Расширенная поддержка SQL Server 2005 закончилась 12 апреля 2016 г. Нет никакой гарантии, что данные средства в Visual Studio 2015 и более поздних версий будет продолжать работать с SQL Server 2005. Дополнительные сведения см. в разделе [end-of-support объявление о выпуске для SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>Языки .NET
 
@@ -143,6 +152,6 @@ ms.locfileid: "53936390"
 
 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;описывает возможности запросов, встроенных в C# и Visual Basic и общей модели для запроса реляционных баз данных, XML документы, наборы данных и коллекциям в памяти.
 
-[Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;рассматривается работа с возможности .NET Framework XML данные отладки XSLT, XML и архитектура XML-запрос.
+[Средства XML в Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;рассматривается работа с возможности .NET XML данные отладки XSLT, XML и архитектура XML-запрос.
 
-[XML-документы и данные](/dotnet/standard/data/xml/index)&mdash;здесь приводится обзор подробного и интегрированного набора классов, которые работают с XML-документами и данными в .NET Framework.
+[XML-документы и данные](/dotnet/standard/data/xml/index)&mdash;здесь приводится обзор подробного и интегрированного набора классов, которые работают с XML-документами и данными в .NET.

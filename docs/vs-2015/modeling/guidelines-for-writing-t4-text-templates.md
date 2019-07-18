@@ -1,23 +1,20 @@
 ---
 title: Рекомендации по написанию текстовых шаблонов T4 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 04dd3fc4-10e8-488a-bdea-4d615f50f063
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c3ed1415572dc00509abf36e7cb84311f95e4805
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f88666d15293e6900ae99cecdc39853cda8e2f9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546613"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Рекомендации по написанию текстовых шаблонов T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ ms.locfileid: "49812759"
   Перемещение общего материала в включаемых файлов или шаблонов во время выполнения  
   Чтобы избежать повторения похожих блоков текста и кода в нескольких шаблонах, используйте `<#@ include #>` директива. Дополнительные сведения см. в разделе [директива Include T4](../modeling/t4-include-directive.md).  
   
-  Можно также создавать шаблоны текста во время выполнения в отдельном проекте и затем вызывать их из шаблона времени разработки. Чтобы сделать это, используйте `<#@ assembly #>` директиву, чтобы получить доступ к отдельному проекту. Примеры, см. в разделе [наследования в текст» шаблоны «в блоге Гарета Джонса](http://go.microsoft.com/fwlink/?LinkId=208373).  
+  Можно также создавать шаблоны текста во время выполнения в отдельном проекте и затем вызывать их из шаблона времени разработки. Чтобы сделать это, используйте `<#@ assembly #>` директиву, чтобы получить доступ к отдельному проекту.
   
   Рекомендуется переместить большие блоки кода в отдельную сборку.  
   Если у вас есть большие блоки и блоки возможностей класса, можно переместить некоторые из этого кода в методы, которые компилируются в отдельном проекте. Можно использовать `<#@ assembly #>` директива для доступа к коду в шаблоне. Дополнительные сведения см. в разделе [директива Assembly T4](../modeling/t4-assembly-directive.md).  
@@ -160,6 +157,3 @@ Team Members:
 ## <a name="see-also"></a>См. также  
  [Создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md)
-
-
-

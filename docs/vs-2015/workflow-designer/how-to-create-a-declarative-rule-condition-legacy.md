@@ -1,11 +1,8 @@
 ---
-title: 'Практическое: создать условие декларативного правила (для прежних версий) | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Создать условие декларативного правила (для прежних версий) | Документация Майкрософт
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - declarative rule conditions
@@ -15,52 +12,52 @@ ms.assetid: 804b6129-c433-408f-a424-46987967730c
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 2508404840db81f03ba4865a3e5d5af91e5c653b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dbdcc268b71f2926307b500126840391dd5308fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931249"
 ---
-# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Как создать условие декларативного правила (для прежних версий)
+# <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Практическое руководство. Создание условия декларативного правила (для прежних версий)
 В этом разделе описывается объявление условия правила с помощью средства [!INCLUDE[wfd1](../includes/wfd1-md.md)] прежних версий, ориентированного на работу с [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Условный оператор оценивает значение **True** или **False**. Условие декларативного правила-это условный оператор, который создается с помощью [правило условие диалоговое окно редактора (для прежних версий)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) и хранятся в виде XML с рабочим процессом. Он может включать предикаты, которые сравнивают состояние рабочего процесса и булеву алгебру, в которой объединено множество предикатов.  
   
  Условия декларативного правила используются в следующих готовых действиях Windows Workflow Foundation:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Для создания условия декларативного правила используется Редактор условий для правил  
   
-1.  В действии **свойства** окно, нажмите кнопку **условие** свойство или **UntilCondition** свойство зависимости от действия.  
+1. В действии **свойства** окно, нажмите кнопку **условие** свойство или **UntilCondition** свойство зависимости от действия.  
   
-2.  Выберите **условие декларативного правила** из списка для свойства.  
+2. Выберите **условие декларативного правила** из списка для свойства.  
   
-3.  Разверните **условие** или **UntilCondition** свойство.  
+3. Разверните **условие** или **UntilCondition** свойство.  
   
-4.  Нажмите кнопку **ConditionName** свойство.  
+4. Нажмите кнопку **ConditionName** свойство.  
   
-5.  Нажмите кнопку **ConditionName** многоточие **[...]**  открыть **выбрать условие** диалоговое окно.  
+5. Нажмите кнопку **ConditionName** многоточие **[...]**  открыть **выбрать условие** диалоговое окно.  
   
-6.  Нажмите кнопку **новое условие** открыть **редактор условий для правил** диалоговое окно.  
+6. Нажмите кнопку **новое условие** открыть **редактор условий для правил** диалоговое окно.  
   
-7.  Введите выражение для условия в **условие** текстовое поле.  
+7. Введите выражение для условия в **условие** текстовое поле.  
   
      Сведения о создании выражений условия см. в разделе [правило условие диалоговое окно редактора (для прежних версий)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).  
   
-8.  После завершения создания выражения условия нажмите кнопку **ОК** чтобы закрыть диалоговое окно и создать условие правила с назначенным именем.  
+8. После завершения создания выражения условия нажмите кнопку **ОК** чтобы закрыть диалоговое окно и создать условие правила с назначенным именем.  
   
      **Выбрать условие** откроется диалоговое окно.  
   

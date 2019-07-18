@@ -1,22 +1,21 @@
 ---
 title: CA2142. Прозрачный код не должен быть защищен проверками LinkDemands
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2142
 ms.assetid: 6dc59053-5dd9-4583-bf10-5f339107e59f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 508d9606b07798a1aaa788d3d7ee87da4797dcad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b05228ef22dee20506b728164d22976feb662ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545020"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142. Прозрачный код не должен быть защищен проверками LinkDemands
 

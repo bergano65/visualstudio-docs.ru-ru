@@ -1,20 +1,19 @@
 ---
 title: Сочетания клавиш и клавиши-модификаторы в Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c94e471c3a8381a979f1d49ba474aa8e6c7c820
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1bcada6718501594e0dc33880aa0fbbd8c575631
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827264"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457173"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Сочетания клавиш и клавиши-модификаторы в Blend
 
@@ -32,14 +31,14 @@ ms.locfileid: "53827264"
 
    ![Примеры сочетаний клавиш](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png)
 
-Дополнительные сведения о специальных возможностях и функциях см. в разделе [Дополнительные возможности в продуктах Майкрософт](http://go.microsoft.com/fwlink/?LinkId=75069).
+Дополнительные сведения о специальных возможностях и функциях см. в разделе [Дополнительные возможности в продуктах Майкрософт](https://www.microsoft.com/accessibility/).
 
 ## <a name="modifier-keys"></a>Клавиши-модификаторы
 
 Некоторые сочетания клавиш не имеют связанных с ними пунктов меню, то есть обнаружить их в пользовательском интерфейсе [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] нельзя. В следующих разделах перечислены сочетания клавиш, меняющие поведение инструментов или меняющие действие, например изменение размера объекта.
 
--   [Клавиши-модификаторы области рисования](../designers/artboard-modifier-keys-in-blend.md)
+- [Клавиши-модификаторы области рисования](../designers/artboard-modifier-keys-in-blend.md)
 
--   [Клавиши-модификаторы инструмента "Перо"](../designers/pen-tool-modifier-keys-in-blend.md)
+- [Клавиши-модификаторы инструмента "Перо"](../designers/pen-tool-modifier-keys-in-blend.md)
 
--   [Клавиши-модификаторы инструмента "Прямой выбор"](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Клавиши-модификаторы инструмента "Прямой выбор"](../designers/direct-selection-tool-modifier-keys-in-blend.md)

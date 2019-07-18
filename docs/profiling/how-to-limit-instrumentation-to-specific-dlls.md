@@ -6,15 +6,15 @@ helpviewer_keywords:
 - performance tools, runtime profiling control window
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c20dde749f95a24c6d83c7b6693220a5552f89fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980919"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Как выполнить Ограничение инструментирования указанными библиотеками DLL
 
@@ -69,5 +69,5 @@ ms.locfileid: "53885172"
 
 ## <a name="see-also"></a>См. также
 
-[Управление сбором данных](../profiling/controlling-data-collection.md)  
+[Управление сбором данных](../profiling/controlling-data-collection.md)
 [Практическое руководство. Ограничение инструментирования указанными функциями](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

@@ -1,14 +1,9 @@
 ---
 title: Создание кода и текстовые шаблоны T4 | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 74a0a748-5b11-4999-8bea-49572967827d
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4886a23272962d2dee03576504d60d64067faf20
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433407"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Создание кода и текстовые шаблоны T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +93,7 @@ namespace Fabrikam.FirstJob
  Дополнительные сведения см. в разделе [создание кода во время разработки с помощью текстовых шаблонов T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Дополнительные сведения о синтаксисе шаблонов см. в разделе [написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  Термин *модель* иногда используется для описания данных, считываемых одним или несколькими шаблонами. Модель может быть представлена в любой форме, в виде файла или базы данных. Она не должна быть моделью UML или моделью для доменного языка. Слово "модель" просто указывает, что данные можно определить с точки зрения бизнес-концепции, а не в виде кода.  
+> Термин *модель* иногда используется для описания данных, считываемых одним или несколькими шаблонами. Модель может быть представлена в любой форме, в виде файла или базы данных. Она не должна быть моделью UML или моделью для доменного языка. Слово "модель" просто указывает, что данные можно определить с точки зрения бизнес-концепции, а не в виде кода.  
   
  Функция преобразования текстового шаблона называется *T4*.  
   
@@ -115,7 +110,7 @@ namespace Fabrikam.FirstJob
  [Написание текстового шаблона T4](../modeling/writing-a-t4-text-template.md)  
  Синтаксис файла текстового шаблона.  
   
- [Пошаговое руководство. Создание кода с помощью текстовых шаблонов](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
+ [Пошаговое руководство: Создание кода с помощью текстовых шаблонов](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
  Демонстрация одного способа создания кода.  
   
  [Отладка текстового шаблона T4](../modeling/debugging-a-t4-text-template.md)  
@@ -130,6 +125,3 @@ namespace Fabrikam.FirstJob
 ## <a name="see-also"></a>См. также  
  [Создание файлов из модели UML](../modeling/generate-files-from-a-uml-model.md)   
  [Создание кода из доменного языка](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

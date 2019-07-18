@@ -1,27 +1,22 @@
 ---
 title: Предоставление доступа к объектам проекта | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project objects, exposing
 - extensibility, project objects
 ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9c4af521a8c6044742d69a1d71dcf605145d600d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f40c523c058bf215cc4574b3aa4a2e038c833beb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196643"
 ---
 # <a name="exposing-project-objects"></a>Предоставление доступа к объектам проекта
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51731415"
   
 ### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Для передачи объекта определенного VSPackage для проекта  
   
-1.  Добавьте соответствующие ключи для вашего VSPackage pkgdef-файл.  
+1. Добавьте соответствующие ключи для вашего VSPackage pkgdef-файл.  
   
      Например ниже приведены параметры .pkgdef для проекта на языке C++.  
   
@@ -45,7 +40,7 @@ ms.locfileid: "51731415"
     "VCProjectEngineEventsObject"=""  
     ```  
   
-2.  Реализация кода в <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> метод, как показано в следующем примере.  
+2. Реализация кода в <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> метод, как показано в следующем примере.  
   
     ```cpp  
     STDMETHODIMP CVsPackage::GetAutomationObject(  
@@ -99,4 +94,3 @@ ms.locfileid: "51731415"
   
 ## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>
-

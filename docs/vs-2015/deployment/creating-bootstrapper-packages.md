@@ -1,14 +1,9 @@
 ---
 title: Создание пакетов загрузчика | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187810"
 ---
 # <a name="creating-bootstrapper-packages"></a>Создание пакетов загрузчика
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49910931"
  Сначала начальный загрузчик проверяет, установлены ли необходимые компоненты. Если нет, то начальный загрузчик показывает лицензионные соглашения. Как только конечный пользователь примет условия лицензионного соглашения, начнется установка необходимых компонентов. Если все необходимые компоненты обнаружены, начальный загрузчик просто запустит установщик приложения.  
   
 ## <a name="creating-custom-packages"></a>Создание пользовательских пакетов  
- Для создания манифестов можно использовать редактор XML в Visual Studio. Дополнительные сведения см. в разделах [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) и [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Пример создания пакета загрузчика см. в разделе [Пошаговое руководство. Создание пользовательского загрузчика для вывода окна с предупреждением о конфиденциальности](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Для создания манифестов можно использовать редактор XML в Visual Studio. Дополнительные сведения см. в разделе [Практическое руководство. Создание манифеста пакета](../deployment/how-to-create-a-package-manifest.md) и [как: Создание манифеста продукта](../deployment/how-to-create-a-product-manifest.md). Пример создания пакета загрузчика см. в разделе [Пошаговое руководство: Создание пользовательского загрузчика для отображения подсказки заявления о конфиденциальности](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Чтобы создать пакет начального загрузчика, необходимо отправить распространяемый компонент в форме EXE- или MSI-файла в Генератор манифестов начального загрузчика. После этого Генератор манифестов начального загрузчика создаст следующие файлы.  
   
@@ -75,13 +70,13 @@ ms.locfileid: "49910931"
   
   `package.xml`  
   
-  Скопируйте распространяемые файлы в папку начального загрузчика. Для получения дополнительной информации см. [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Скопируйте распространяемые файлы в папку начального загрузчика. Дополнительные сведения см. в разделе [Практическое руководство. Создание локализованного пакета загрузчика](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- или  
+ или диспетчер конфигурации служб  
   
 ```  
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -105,22 +100,22 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  В следующей таблице перечислены свойства, которые заполняются начальным загрузчиком автоматически.  
   
-|Свойство|Описание|  
+|Свойство.|Описание|  
 |--------------|-----------------|  
 |ApplicationName|Имя приложения.|  
-|ProcessorArchitecture|Процессор и количество бит на слово в платформе, для которой предназначен исполняемый файл. В эти значения входят:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
+|ProcessorArchitecture|Процессор и количество бит на слово в платформе, для которой предназначен исполняемый файл. В эти значения входят:<br /><br /> — Intel<br />— IA64<br />— AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Номер версии для операционных систем Microsoft Windows 95, Windows 98 и Windows ME. Синтаксис версии — Major.Minor.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/library/aa372495\(v=vs.140\).xaspx)|Номер версии для операционных систем Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 и Windows 7. Синтаксис версии — Major.Minor.ServicePack.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Номер версии для операционных систем Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 и Windows 7. Синтаксис версии — Major.Minor.ServicePack.|  
 |[VersionMSI](https://msdn.microsoft.com/library/aa372493\(v=vs.140\).aspx)|Версия сборки установщика Windows (msi.dll), который запускается во время установки.|  
 |[AdminUser](https://msdn.microsoft.com/library/aa367545\(v=vs.140\).aspx)|Данное свойство устанавливается, если пользователь имеет права администратора. Значения — true или false.|  
-|InstallMode|Режим установки показывает, откуда должен быть установлен компонент. В эти значения входят:<br /><br /> -HomeSite: необходимые компоненты устанавливаются с веб-сайта поставщика.<br />-SpecificSite: необходимые компоненты устанавливаются из выбранного расположения.<br />-SameSite: необходимые компоненты устанавливаются в том же расположении, что и приложение.|  
+|InstallMode|Режим установки показывает, откуда должен быть установлен компонент. В эти значения входят:<br /><br /> — HomeSite: необходимые компоненты должны устанавливаться с веб-сайта поставщика.<br />— SpecificSite: необходимые компоненты должны устанавливаться из выбранного расположения.<br />— SameSite: необходимые компоненты должны устанавливаться из расположения приложения.|  
   
 ## <a name="separating-redistributables-from-application-installations"></a>Отделение распространяемых компонентов от установок приложения  
  Размещение распространяемых файлов в проектах установки можно предотвратить. Для этого необходимо создать список распространяемых компонентов в папке RedistList каталога .NET Framework:  
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Список распространяемых компонентов — это XML-файл, которому необходимо присвоить имя в следующем формате: *Название компании*.*Название компонента*.RedistList.xml. Например, если компонент называется Datawidgets и разработан компанией Acme, файл необходимо назвать Acme.DataWidgets.RedistList.xml. Пример содержания списка распространяемых компонентов:  
+ Список распространяемых компонентов — это XML файл, которому необходимо присвоить имя в следующем формате. *Название компании*. *Имя компонента*. RedistList.xml. Например, если компонент называется Datawidgets и разработан компанией Acme, файл необходимо назвать Acme.DataWidgets.RedistList.xml. Пример содержания списка распространяемых компонентов:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -134,6 +129,3 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
  [Диалоговое окно «Необходимые компоненты»](../ide/reference/prerequisites-dialog-box.md)   
  [Продукт и справочник по схемам пакета](../deployment/product-and-package-schema-reference.md)   
  [Используйте загрузчик Visual Studio 2005 для запуска вашей установки.](http://go.microsoft.com/fwlink/?LinkId=107537)
-
-
-

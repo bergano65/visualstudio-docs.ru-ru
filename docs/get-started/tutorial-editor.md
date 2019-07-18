@@ -1,30 +1,40 @@
 ---
 title: Общие сведения о редактировании в редакторе кода
 ms.date: 11/30/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c3953f69d263b948e84f0d1aa48d878cd39afe6
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 913a5a08dc467ea23d22c2a08a23abfe70b9a736
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943847"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
 В этом 10-минутном введении, посвященном редактору кода в Visual Studio, мы добавим код в файл, чтобы рассмотреть некоторые способы, упрощающие написание, понимание кода и навигацию по нему в Visual Studio.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого.
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+
+::: moniker-end
 
 Эта статья предполагает, что вы уже знакомы с языком программирования. В противном случае рекомендуется сначала посмотреть одно из кратких руководств по языкам программирования [Python](../ide/quickstart-python.md) или [C#](../get-started/csharp/tutorial-aspnet-core.md) либо по созданию консольного приложения с помощью [Visual Basic](../ide/quickstart-visual-basic-console.md) или [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
@@ -32,9 +42,21 @@ ms.locfileid: "53803337"
 
 Для начала создайте файл и добавьте в него код.
 
-1. Откройте Visual Studio, а затем в меню **Файл** в строке меню выберите пункты **Создать** > **Файл**.
+::: moniker range="vs-2017"
 
-1. В диалоговом окне **Новый файл** в разделе **Общие** выберите **Класс Visual C#** и нажмите кнопку **Открыть**.
+1. Запустите Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Запустите Visual Studio. Нажмите клавишу **ESC** или нажмите **Продолжить без кода** в окне запуска, чтобы открыть среду разработки.
+
+::: moniker-end
+
+2. В меню **Файл** в строке меню выберите пункты **Создать** > **Файл**.
+
+3. В диалоговом окне **Новый файл** в разделе **Общие** выберите **Класс Visual C#** и нажмите кнопку **Открыть**.
 
    Новый файл открывается в редакторе с каркасом класса C#. (Обратите внимание, что нам не нужно создавать полный проект Visual Studio, чтобы получить некоторые преимущества редактора кода. Вам нужен только файл кода!)
 

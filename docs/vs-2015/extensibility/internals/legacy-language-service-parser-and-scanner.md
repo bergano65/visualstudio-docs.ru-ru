@@ -1,27 +1,22 @@
 ---
 title: Средство синтаксического анализа устаревший языковой службы и сканер | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 64f9a9f4d0785f033191ab527084f0dddb1ff104
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434367"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Средство синтаксического анализа и сканер языковой службы прежних версий
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>Типы средств синтаксического анализа  
  Средства синтаксического анализа языка службы не является таким же, как средство синтаксического анализа, используемые в рамках одного компилятора. Тем не менее такого рода средство синтаксического анализа необходимо использовать средство синтаксического анализа и сканер в так же, как средство синтаксического анализа компилятора.  
   
-- Сканер используется для определения типов токенов. Эта информация используется для выделения синтаксиса, а также для быстрого определения типов токенов, вызывать другие операции, например, парные фигурные скобки. После этого средство проверки представленного <xref:Microsoft.VisualStudio.Package.IScanner> интерфейс.  
+- Сканер используется для определения типов токенов. Эти данные используется для выделения синтаксиса и для быстрого определения типов токенов, способных вызывать другие операции, например, проверку соответствия фигурных скобок. После этого средство проверки представленного <xref:Microsoft.VisualStudio.Package.IScanner> интерфейс.  
   
 - Средство синтаксического анализа используется для описания функций и области токенов. Эта информация используется в операции IntelliSense для идентификации элементов языка, таких как методы, переменные, параметры и объявления и приведены списки элементов и подписи методов, на основе контекста. Это средство синтаксического анализа также используется для поиска соответствия пар элементов языка, таких как фигурные скобки и круглые скобки. Это средство синтаксического анализа осуществляется через <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса.  
   
@@ -73,7 +68,7 @@ namespace MyNamespace
  В отличие от средства синтаксического анализа, который используется как часть компилятора, (где маркеры преобразуются в некоторую форму исполняемого кода) средства синтаксического анализа языка службы может быть вызван по разным причинам и во многих разных контекстах. Как реализовать этот подход в <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод в <xref:Microsoft.VisualStudio.Package.LanguageService> класса принимает разработчик. Важно помнить, что <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод может вызываться в фоновом потоке.  
   
 > [!CAUTION]
->  <xref:Microsoft.VisualStudio.Package.ParseRequest> Структура содержит ссылку на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объекта. Это <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объект не может использоваться в фоновом потоке. На самом деле многие базовые классы MPF не может использоваться в фоновом потоке. К ним относятся <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> классов и любой другой класс, который прямо или косвенно взаимодействует с представлением.  
+> <xref:Microsoft.VisualStudio.Package.ParseRequest> Структура содержит ссылку на <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объекта. Это <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> объект не может использоваться в фоновом потоке. На самом деле многие базовые классы MPF не может использоваться в фоновом потоке. К ним относятся <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> классов и любой другой класс, который прямо или косвенно взаимодействует с представлением.  
   
  Это средство синтаксического анализа обычно анализирует источник в момент первой он вызывается или когда синтаксический анализ причин значение <xref:Microsoft.VisualStudio.Package.ParseReason> прав. Последующие вызовы <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод обработки небольшая часть анализируемого кода и могут выполняться гораздо быстрее, используя результаты предыдущей операции полного синтаксического анализа. <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Метод передает результаты операции анализа через <xref:Microsoft.VisualStudio.Package.AuthoringSink> и <xref:Microsoft.VisualStudio.Package.AuthoringScope> объектов. <xref:Microsoft.VisualStudio.Package.AuthoringSink> Объект используется для сбора сведений по определенной причине синтаксического анализа, например, сведения о диапазоны фигурные или сигнатур метода, которые имеют списки параметров. <xref:Microsoft.VisualStudio.Package.AuthoringScope> Предоставляет коллекции, объявления и подписи методов, а также поддержку для перехода к дополнительной изменить параметр (**перейти к определению**, **перейти к объявлению**, **перейти к Ссылаться на**).  
   
@@ -87,29 +82,29 @@ namespace MyNamespace
   
  Предположим, что служба языка поддерживает парные фигурные скобки.  
   
-1.  Пользователь вводит закрывающую фигурную скобку (}).  
+1. Пользователь вводит закрывающую фигурную скобку (}).  
   
-2.  Фигурная скобка вставляется в позиции курсора в исходном файле, и курсор увеличивается на единицу.  
+2. Фигурная скобка вставляется в позиции курсора в исходном файле, и курсор увеличивается на единицу.  
   
-3.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Метод в <xref:Microsoft.VisualStudio.Package.Source> класса вызывается с типизированным закрывающей фигурной скобки.  
+3. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Метод в <xref:Microsoft.VisualStudio.Package.Source> класса вызывается с типизированным закрывающей фигурной скобки.  
   
-4.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Вызовы методов <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> метод в <xref:Microsoft.VisualStudio.Package.Source> класса для получения маркера в позицию непосредственно перед текущей позицией курсора. Этот токен соответствует типизированный закрывающая фигурная скобка).  
+4. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Вызовы методов <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> метод в <xref:Microsoft.VisualStudio.Package.Source> класса для получения маркера в позицию непосредственно перед текущей позицией курсора. Этот токен соответствует типизированный закрывающая фигурная скобка).  
   
-    1.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Вызовы методов <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> метод <xref:Microsoft.VisualStudio.Package.Colorizer> объекта, чтобы получить все токены в текущей строке.  
+    1. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Вызовы методов <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> метод <xref:Microsoft.VisualStudio.Package.Colorizer> объекта, чтобы получить все токены в текущей строке.  
   
-    2.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Вызовы методов <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> метод <xref:Microsoft.VisualStudio.Package.IScanner> с текстом в текущей строке.  
+    2. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Вызовы методов <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> метод <xref:Microsoft.VisualStudio.Package.IScanner> с текстом в текущей строке.  
   
-    3.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Многократно вызывает метод <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> метод <xref:Microsoft.VisualStudio.Package.IScanner> объекта для сбора всех маркеров из текущей строки.  
+    3. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> Многократно вызывает метод <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> метод <xref:Microsoft.VisualStudio.Package.IScanner> объекта для сбора всех маркеров из текущей строки.  
   
-    4.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Метод вызывает закрытый метод <xref:Microsoft.VisualStudio.Package.Source> класса для получения маркера, который содержит нужное место, и передает в списке маркеров получен из <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> метод.  
+    4. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> Метод вызывает закрытый метод <xref:Microsoft.VisualStudio.Package.Source> класса для получения маркера, который содержит нужное место, и передает в списке маркеров получен из <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> метод.  
   
-5.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Метод ищет флаг маркера триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> в маркере, который возвращается из <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> метод, то есть токен, представляющий закрывающая фигурная скобка).  
+5. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> Метод ищет флаг маркера триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> в маркере, который возвращается из <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> метод, то есть токен, представляющий закрывающая фигурная скобка).  
   
-6.  Если флаг триггер <xref:Microsoft.VisualStudio.Package.TokenTriggers> найден, <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> метод в <xref:Microsoft.VisualStudio.Package.Source> класс называется.  
+6. Если флаг триггер <xref:Microsoft.VisualStudio.Package.TokenTriggers> найден, <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> метод в <xref:Microsoft.VisualStudio.Package.Source> класс называется.  
   
-7.  <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> Метод начинает операцию анализа со значением причина синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason>. Эта операция в конечном итоге вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод <xref:Microsoft.VisualStudio.Package.LanguageService> класса. Если асинхронный анализ включена, это вызов <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метода происходит в фоновом потоке.  
+7. <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> Метод начинает операцию анализа со значением причина синтаксического анализа <xref:Microsoft.VisualStudio.Package.ParseReason>. Эта операция в конечном итоге вызывает <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метод <xref:Microsoft.VisualStudio.Package.LanguageService> класса. Если асинхронный анализ включена, это вызов <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> метода происходит в фоновом потоке.  
   
-8.  После завершения операции синтаксического анализа внутренний обработчик завершения (также известный как метод обратного вызова) с именем `HandleMatchBracesResponse` вызывается в <xref:Microsoft.VisualStudio.Package.Source> класса. Этот вызов выполняется автоматически по <xref:Microsoft.VisualStudio.Package.LanguageService> базового класса, не средством синтаксического анализа.  
+8. После завершения операции синтаксического анализа внутренний обработчик завершения (также известный как метод обратного вызова) с именем `HandleMatchBracesResponse` вызывается в <xref:Microsoft.VisualStudio.Package.Source> класса. Этот вызов выполняется автоматически по <xref:Microsoft.VisualStudio.Package.LanguageService> базового класса, не средством синтаксического анализа.  
   
 9. `HandleMatchBracesResponse` Метод получает список диапазонов из <xref:Microsoft.VisualStudio.Package.AuthoringSink> объект, хранящийся в <xref:Microsoft.VisualStudio.Package.ParseRequest> объекта. (Диапазон – это <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> структуры, которое указывает диапазон строк и символов в исходном файле.) Этот список диапазонов обычно содержит два диапазона, по одной для открывающей и закрывающей фигурными скобками.  
   
@@ -120,7 +115,7 @@ namespace MyNamespace
 12. Договорились.  
   
 ### <a name="summary"></a>Сводка  
- Операции сопоставления фигурные скобки обычно ограничена простых пар элементов языка. Более сложные элементы, такие как сопоставления триад («`if(…)`«,»`{`«и»`}`«, или "`else`«,»`{`«и»`}`«), может быть выделен как часть операции завершения слова. Например, после завершения слово «else» сопоставления "`if`" инструкции могут быть выделены. При наличии ряд `if` / `else if` инструкций, то они могут выделяться с помощью того же механизма как парные фигурные скобки. <xref:Microsoft.VisualStudio.Package.Source> Базовый класс уже поддерживает это, следующим образом: сканер должен возвращать значение маркера триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> вместе со значением триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> для токен, который предшествует позиции курсора.  
+ Операции сопоставления фигурные скобки обычно ограничена простых пар элементов языка. Более сложные элементы, такие как сопоставления триад («`if(…)`«,»`{`«и»`}`«, или "`else`«,»`{`«и»`}`«), может быть выделен как часть операции завершения слова. Например, после завершения слово «else» сопоставления "`if`" инструкции могут быть выделены. При наличии ряд `if` / `else if` инструкций, то они могут выделяться с помощью того же механизма как парные фигурные скобки. <xref:Microsoft.VisualStudio.Package.Source> Базовый класс уже поддерживает это, как показано ниже: Сканер должен возвращать значение маркера триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> вместе со значением триггера <xref:Microsoft.VisualStudio.Package.TokenTriggers> для токен, который предшествует позиции курсора.  
   
  Дополнительные сведения см. в разделе [парные фигурные скобки в языковой службе прежних версий](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   
@@ -143,4 +138,3 @@ namespace MyNamespace
  [Общие сведения о службе устаревшего языка](../../extensibility/internals/legacy-language-service-overview.md)   
  [Цветовая маркировка синтаксиса в языковой службе прежних версий](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [Парные фигурные скобки в языковой службе прежних версий](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
-

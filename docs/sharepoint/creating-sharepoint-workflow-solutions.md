@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0a1e4d1e3aa548d51225ac50dacf78b73e1efae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443526"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Создание решений рабочих процессов SharePoint
 
@@ -57,7 +57,7 @@ ms.locfileid: "53820508"
  После создания рабочего процесса, можно изменить его свойства в окне «Свойства». Несмотря на то, что многие свойства можно изменить непосредственно в окне свойств, некоторые потребуется нажать кнопку с многоточием (![эллипс конструктора ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "эллипс конструктора ASP.NET Mobile")) для Измените их значения. Эта кнопка перезапускает **мастер настройки SharePoint**. После внесения значения свойств, выберите **Готово** кнопку, чтобы подтвердить их.
 
 > [!NOTE]
->  **Типа рабочего процесса** свойство только для чтения и не может быть изменено. Если вы хотите изменить тип рабочего процесса, необходимо создать другой рабочий процесс.
+> **Типа рабочего процесса** свойство только для чтения и не может быть изменено. Если вы хотите изменить тип рабочего процесса, необходимо создать другой рабочий процесс.
 
 ## <a name="design-a-sharepoint-workflow"></a>Разработать рабочий процесс SharePoint
  Определив все действия бизнес-процесса, используйте [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] конструктора рабочих процессов для разработки рабочего процесса SharePoint. Чтобы открыть конструктор, дважды щелкните Workflow1.cs или Workflow1.vb в **обозревателе решений**, или откройте контекстное меню для любого из этих файлов и выберите пункт **откройте**.
@@ -119,7 +119,7 @@ ms.locfileid: "53820508"
   Из этих функций [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] имеются шаблоны элементов для формы ассоциации и инициации. Пример *форма сопоставления* один администратор установки рабочего процесса в этом случае введите параметры, связанные с рабочим процессом, например, предельная сумма для рабочего процесса о расходах. Пример *форму инициации* , которое позволяет пользователю рабочего процесса о расходах ввести сумму в рабочий процесс. Дополнительные сведения об этих типах форм см. в разделе [SharePoint проект и проект шаблоны элементов](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 ### <a name="item-properties"></a>Свойства элемента
- Можно также собирать сведения от пользователей с помощью свойств элемента в библиотеке SharePoint или списке. Основной файл кода (Workflow1.cs или Workflow1.vb) объявляет экземпляр с именем класса Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties `workflowProperties`. Используйте `workflowProperties` объекта для доступа к свойствам библиотеки или списка в коде. Например, см. в разделе [Пошаговое руководство: Создание и отладка решения рабочих процессов SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).
+ Можно также собирать сведения от пользователей с помощью свойств элемента в библиотеке SharePoint или списке. Основной файл кода (Workflow1.cs или Workflow1.vb) объявляет экземпляр с именем класса Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties `workflowProperties`. Используйте `workflowProperties` объекта для доступа к свойствам библиотеки или списка в коде. Пример см. в разделе [Пошаговое руководство. Создание и отладка решения рабочих процессов SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).
 
 ## <a name="debug-a-sharepoint-workflow-template"></a>Отладка рабочих процессов SharePoint
  Вы отладка проекта рабочего процесса SharePoint выполняется аналогично отладке других [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] веб-проектов. При запуске [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчик, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] использует параметры, указываемые в **мастер настройки SharePoint** для открытия соответствующего веб-сайт SharePoint и автоматическое связывание шаблона рабочего процесса с помощью соответствующую библиотеку или список. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Кроме того, присоединяет [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] отладчик [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] процесс так называемого *w3wp.exe*.

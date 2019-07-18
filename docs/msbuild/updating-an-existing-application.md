@@ -4,21 +4,21 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0487ee8cdbb89b7c781cb13225d209d840eda134
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836875"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263738"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Обновление существующего приложения для использования MSBuild 15
 
 До версии 15.0 платформа MSBuild загружалась из глобального кэша сборок, а расширения MSBuild устанавливались в реестре. Благодаря этому все приложения использовали одну и ту же версию MSBuild и имели доступ к одним и тем же наборам инструментов, однако это делало невозможной параллельную установку разных версий Visual Studio.
 
-Для более быстрой, меньшей по размеру, а также параллельной установки в Visual Studio 2017 платформа MSBuild больше не помещается в глобальный кэш сборок и реестр не изменяется. Недостатком является то, что приложения, которым необходимо использовать API MSBuild для анализа или сборки проектов, не могут неявно использовать установку Visual Studio.
+Чтобы сделать установку более быстрой, меньшей по размеру и обеспечить ее параллельное выполнение, Visual Studio 2017 и более поздних версий больше не помещает платформу MSBuild в глобальный кэш сборок и не изменяет реестр. Недостатком является то, что приложения, которым необходимо использовать API MSBuild для анализа или сборки проектов, не могут неявно использовать установку Visual Studio.
 
 ## <a name="use-msbuild-from-visual-studio"></a>Использование MSBuild из Visual Studio
 
@@ -42,14 +42,14 @@ ms.locfileid: "53836875"
 
 Измените файлы проекта так, чтобы они ссылались на сборки MSBuild из пакетов NuGet. Задайте тег `ExcludeAssets=runtime`, чтобы сообщить диспетчеру NuGet, что сборки требуются только во время сборки и их не следует копировать в выходной каталог.
 
-Основной и дополнительные номера версии пакетов MSBuild должны быть не выше минимальной версии Visual Studio, которая должна поддерживаться. Чтобы поддерживалась любая версия Visual Studio 2017, следует ссылаться на версию пакетов `15.1.548`.
+Основной и дополнительные номера версии пакетов MSBuild должны быть не выше минимальной версии Visual Studio, которая должна поддерживаться. Например, если вы хотите обеспечить поддержку Visual Studio 2017 и более поздних версий, укажите версию пакета `15.1.548`.
 
 Например, можно использовать следующий код XML:
 
 ```xml
 <ItemGroup>
   <PackageReference Include="Microsoft.Build" Version="15.1.548" ExcludeAssets="runtime" />
-  <PackageReference Include="Microsoft.Build.Utilities" Version="15.1.548" ExcludeAssets="runtime" />
+  <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.1.548" ExcludeAssets="runtime" />
 </ItemGroup>
 ```
 
@@ -71,15 +71,17 @@ ms.locfileid: "53836875"
 
 Выполните сборку проекта и проверьте выходной каталог, чтобы убедиться в том, что в нем нет сборок *Microsoft.Build.\*.dll*, кроме сборки *Microsoft.Build.Locator.dll*, которая будет добавлена в следующем шаге.
 
-### <a name="add-package-reference"></a>Добавление ссылки на пакет
+### <a name="add-package-reference-for-microsoftbuildlocator"></a>Добавление ссылки на пакет Microsoft.Build.Locator
 
 Добавьте ссылку на пакет NuGet [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/).
 
 ```xml
     <PackageReference Include="Microsoft.Build.Locator">
-      <Version>1.0.7-preview-ge60d679b53</Version>
+      <Version>1.1.2</Version>
     </PackageReference>
 ```
+
+Не указывайте `ExcludeAssets=runtime` для пакета Microsoft.Build.Locator.
 
 ### <a name="register-instance-before-calling-msbuild"></a>Регистрация экземпляра перед вызовом MSBuild
 

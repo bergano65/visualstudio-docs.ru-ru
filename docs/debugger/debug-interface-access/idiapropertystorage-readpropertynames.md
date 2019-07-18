@@ -9,44 +9,47 @@ helpviewer_keywords:
 ms.assetid: f8bcab77-afca-4a8f-8710-697842f8a518
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07c9c5d129305d8c3128a081abe8079321043a57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 7492e0eee0523fd102ecd057d075f2672bf3b25b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839580"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
-Извлекает строковые имена соответствующих прав идентификаторов свойств.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT ReadPropertyNames (  
-   ULONG         cpropid,  
-   PROPID const* rgpropid,  
-   BSTR*         rglpwstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `cpropid`  
- [in] Количество идентификаторов свойств в `rgpropid`.  
-  
- `rgpropid`  
- [in] Массив идентификаторов свойств, для которого необходимо получить имена (`PROPID` определяется в файле WTypes.h как `ULONG`).  
-  
- `rglpwstrName`  
- [in, out] Массив имен свойств для указанного свойства идентификаторов. Массив должен быть предварительно выделяются для хранения запрошенное число имен свойств и должен иметь возможность по крайней мере `cpropid``BSTR` строк.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Имя возвращаемого свойства должны быть высвобождены (путем вызова `SysFreeString` функции) когда они больше не нужны.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Извлекает строковые имена соответствующих прав идентификаторов свойств.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT ReadPropertyNames (
+   ULONG         cpropid,
+   PROPID const* rgpropid,
+   BSTR*         rglpwstrName
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `cpropid`
+
+[in] Количество идентификаторов свойств в `rgpropid`.
+
+ `rgpropid`
+
+[in] Массив идентификаторов свойств, для которого необходимо получить имена (`PROPID` определяется в файле WTypes.h как `ULONG`).
+
+ `rglpwstrName`
+
+[in, out] Массив имен свойств для указанного свойства идентификаторов. Массив должен быть предварительно выделяются для хранения запрошенное число имен свойств и должен иметь возможность по крайней мере `cpropid``BSTR` строк.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Имя возвращаемого свойства должны быть высвобождены (путем вызова `SysFreeString` функции) когда они больше не нужны.
+
+## <a name="see-also"></a>См. также
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64faab530e8470ac1efd5ade39f77552371048ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872032"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744756"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Элемент RequiredFrameworkVersion (шаблоны Visual Studio)
 
@@ -26,7 +26,7 @@ ms.locfileid: "53872032"
 > [!IMPORTANT]
 > Начиная с Visual Studio 2017 версии 15.6, **версию целевой платформы** раскрывающийся список больше не является фильтром для отображаемых шаблонов в **шаблоны** раздел **новый проект** диалоговое окно. Вместо этого раскрывающегося списка функционирует как окно выбора платформы, для выбранного шаблона.
 
- \<VSTemplate > \<TemplateData > \<RequiredFrameworkVersion >
+ \<VSTemplate> \<TemplateData> \<RequiredFrameworkVersion>
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,7 +45,7 @@ ms.locfileid: "53872032"
 
 ### <a name="parent-elements"></a>Родительские элементы
 
-|Элемент|Описание:|
+|Элемент|Описание|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Обязательный элемент.<br /><br /> Определяет, как он отображается в любом категорию шаблона и **новый проект** или **Добавление нового элемента** диалоговое окно.|
 
@@ -86,4 +86,4 @@ ms.locfileid: "53872032"
 
 - [Справочник по схеме шаблонов Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)
-- [Использовать конкретную версию платформы .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Framework, предназначенных для обзора](../ide/visual-studio-multi-targeting-overview.md)

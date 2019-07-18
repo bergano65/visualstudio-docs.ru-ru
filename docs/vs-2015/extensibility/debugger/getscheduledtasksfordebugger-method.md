@@ -1,26 +1,21 @@
 ---
 title: Метод GetScheduledTasksForDebugger | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - GetScheduledTasksForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3041d21a19ad276ed51e5fdcb9f11ad5468888bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b4ac6fa753be7672f1e698bda231bd11217c10d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152731"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>Метод GetScheduledTasksForDebugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,4 +42,3 @@ ms.locfileid: "51810069"
   
 ## <a name="see-also"></a>См. также  
  [Класс TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)
-

@@ -13,16 +13,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Bring Tree Here
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2c95d1a096d2b7d90292711ae53117321e54746b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3133c3f37a7ce899575e4e6b0798ce8037b33929
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951241"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Работа со схемой определений доменных языков
 Схема [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] определение — важный инструмент для определения доменного языка. Вы можете добавлять элементы в модель домена, определять отношения на схеме и изменять макет схемы, чтобы сделать ее более удобной для чтения.
@@ -65,7 +64,7 @@ ms.locfileid: "53888430"
 ### <a name="bring-tree-here"></a>Bring Tree Here
  Схему можно консолидировать, щелкнув класс домена заполнителя правой кнопкой мыши и выбрав **перенести дерево сюда**. Класс домена заполнителя станет элементом определения и отобразит деревья наследования и отношений. Если прежний элемент определения является целевым объектом отношения или дочерним элементом в отношении наследования, он станет элементом заполнителя. В противном случае он исчезает.
 
-### <a name="split-tree"></a>Split Tree
+### <a name="split-tree"></a>Разделить дерево
  Деревья наследования или отношений можно разделить, щелкнув правой кнопкой мыши определение класса домена, который отображает их и выбрав **разделить дерево**. Элемент определения станет элементом заполнителя, а класс домена из определения вместе со своими деревьями наследования и отношений появится в нижней части раздела.
 
 ### <a name="show-as-class"></a>Show As Class
@@ -73,4 +72,4 @@ ms.locfileid: "53888430"
 
 ## <a name="see-also"></a>См. также
 
-- [Глоссарий по средствам доменного языка работы](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Глоссарий средств предметно-ориентированных языков](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

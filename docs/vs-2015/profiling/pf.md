@@ -1,25 +1,20 @@
 ---
 title: Параметр PF | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67663c067188a703ff6228a703a71ac8a1a0b355
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 243d5fada7342bc05d8768a7e33cca6f55e309ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442469"
 ---
 # <a name="pf"></a>PF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ ms.locfileid: "51757093"
 Параметр **PF** программы VSPerfCmd.exe задает событие профилирования, выборка которого осуществляется по ошибкам страниц, и при необходимости может изменить заданное по умолчанию число ошибок страницы в интервале выборки, равное 10.  
   
 > [!NOTE]
->  Параметр PF нельзя использовать в 64-разрядных системах.  
+> Параметр PF нельзя использовать в 64-разрядных системах.  
   
  Параметр **PF** не поддерживается на 64-разрядных компьютерах. **PF** можно использовать в командной строке только вместе с параметром **Launch** или **Attach**.  
   
@@ -57,16 +52,16 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="invalid-options"></a>Недопустимые параметры  
  Перечисленные ниже параметры нельзя указывать в одной командной строке с параметром **PF**.  
   
- **Timer**[**:**`Cycles`]  
+ **Timer**[ **:** `Cycles`]  
  Задает для события выборки значение, равное тактовой частоте процессора, и при необходимости задает для интервала выборки значение параметра `Cycles`. Значение этого параметра по умолчанию — 10 000 000.  
   
- **Sys**[**:**`Events`]  
+ **Sys**[ **:** `Events`]  
  Задает для события выборки значение, равное числу вызовов ядра операционной системы (syscalls), поступивших из профилируемого приложения, и при необходимости задает в качестве интервала выборки значение параметра `Events`. Интервал Sys по умолчанию — 10.  
   
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
  Задает в качестве события выборки счетчик производительности ЦП, указанный параметром `Name`, и устанавливает интервал выборки, равный `Reload`.  
   
- **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
  Собирает данные .NET. По умолчанию (**Allocation**) данные собираются для каждого события выделения памяти. Если указан параметр **Lifetime**, данные также собираются для каждого события сборки мусора.  
   
 ## <a name="example"></a>Пример  
@@ -77,11 +72,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /PF:20  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)
-
-
-

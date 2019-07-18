@@ -1,27 +1,22 @@
 ---
 title: Функции обратного вызова, реализованные интегрированной среды разработки | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5d2bf114a22419e5ed4621db52a68d266e2e7d0e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: df2daef11303e85d5fe2d0bf33e3df038081db64
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184535"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Функции обратного вызова, реализуемые интегрированной средой разработки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,4 +59,3 @@ ms.locfileid: "51807549"
   
  [Подключаемые модули системы управления версиями](../extensibility/source-control-plug-ins.md)  
  Описывает содержимое в справочном разделе пакета SDK подключаемого модуля управления источника.
-

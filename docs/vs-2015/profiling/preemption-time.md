@@ -1,14 +1,9 @@
 ---
 title: Время вытеснения | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.preemption
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 6b78f91e-a006-440c-83fb-e7368040951d
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e1ddd0f239317021d38017ec159de46ecbc2aa77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6fd209f65464126650106eb4509cd3de39ad8c25
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721397"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54752643"
 ---
 # <a name="preemption-time"></a>Время вытеснения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,8 +33,5 @@ ms.locfileid: "51721397"
   
   Подсказка к вытесненному сегменту содержит имя процесса или потока, который вызвал это вытеснение. Но это не подразумевает, что вытесненный процесс или поток в действительности выполняются во время периода вытеснения.  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Представление потоков](../profiling/threads-view-parallel-performance.md)
-
-
-

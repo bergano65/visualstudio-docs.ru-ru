@@ -1,181 +1,200 @@
 - name: Разработка приложений с конструктором рабочих процессов
   href: developing-applications-with-the-workflow-designer.md
+- name: Проекты рабочих процессов
   items:
     - name: Создание проекта рабочего процесса
       href: creating-a-workflow-project.md
+    - name: Добавление нового элемента в проект рабочего процесса
+      href: how-to-add-a-new-item-to-a-workflow-project.md
+- name: Добавление действий на панель инструментов
+  href: how-to-add-activities-to-the-toolbox.md
+- name: использовать конструктор аргументов
+  href: how-to-use-the-argument-designer.md
+- name: использовать конструктор переменных
+  href: how-to-use-the-variable-designer.md
+- name: Использование редактора выражений
+  href: how-to-use-the-expression-editor.md
+- name: использовать конструктор импорта
+  href: how-to-use-the-imports-designer.md
+- name: Использование навигатора
+  href: how-to-use-breadcrumb-navigation.md
+- name: Использование поиска
+  href: how-to-use-search-in-the-workflow-designer.md
+- name: Определение и использование делегатов действий
+  href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
+- name: Добавление комментариев к рабочему процессу
+  href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
+- name: Конструкторы действий
+  items:
+    - name: Конструкторы действия управления потоком
       items:
-        - name: Добавление нового элемента в проект рабочего процесса
-          href: how-to-add-a-new-item-to-a-workflow-project.md
-    - name: Добавление действий на панель инструментов
-      href: how-to-add-activities-to-the-toolbox.md
-    - name: использовать конструктор аргументов
-      href: how-to-use-the-argument-designer.md
-    - name: использовать конструктор переменных
-      href: how-to-use-the-variable-designer.md
-    - name: Использование редактора выражений
-      href: how-to-use-the-expression-editor.md
-    - name: использовать конструктор импорта
-      href: how-to-use-the-imports-designer.md
-    - name: Использование навигатора
-      href: how-to-use-breadcrumb-navigation.md
-    - name: Как использовать поиск в конструкторе рабочих процессов
-      href: how-to-use-search-in-the-workflow-designer.md
-    - name: Определение и использование делегатов действий в конструкторе рабочих процессов
-      href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
-    - name: Добавление комментариев в рабочий процесс в конструкторе рабочих процессов
-      href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
-    - name: Конструкторы действий
-      href: using-the-activity-designers.md
-      items:
-        - name: Конструкторы действия управления потоком
+        - name: Общие сведения и справочные материалы
+          displayName: Control flow activity designers
           href: control-flow-activity-designers.md
-          items:
-            - name: Конструктор действия DoWhile
-              href: dowhile-activity-designer.md
-            - name: Конструктор действия ForEach<T>
-              href: foreach-t-activity-designer.md
-            - name: Конструктор действия If
-              href: if-activity-designer.md
-            - name: Конструктор действия Parallel
-              href: parallel-activity-designer.md
-            - name: Конструктор действия ParallelForEach<T>
-              href: parallelforeach-t-activity-designer.md
-            - name: Конструктор действия Pick
-              href: pick-activity-designer.md
-            - name: Конструктор действия PickBranch
-              href: pickbranch-activity-designer.md
-            - name: Конструктор действия Sequence
-              href: sequence-activity-designer.md
-            - name: Конструктор действия Switch<T>
-              href: switch-t-activity-designer.md
-            - name: Конструктор действия While
-              href: while-activity-designer.md
-        - name: Конструктор действия блок-схемы
+        - name: Конструктор действия DoWhile
+          href: dowhile-activity-designer.md
+        - name: Конструктор действия ForEach<T>
+          href: foreach-t-activity-designer.md
+        - name: Конструктор действия If
+          href: if-activity-designer.md
+        - name: Конструктор действия Parallel
+          href: parallel-activity-designer.md
+        - name: Конструктор действия ParallelForEach<T>
+          href: parallelforeach-t-activity-designer.md
+        - name: Конструктор действия Pick
+          href: pick-activity-designer.md
+        - name: Конструктор действия PickBranch
+          href: pickbranch-activity-designer.md
+        - name: Конструктор действия Sequence
+          href: sequence-activity-designer.md
+        - name: Конструктор действия Switch<T>
+          href: switch-t-activity-designer.md
+        - name: Конструктор действия While
+          href: while-activity-designer.md
+    - name: Конструкторы действия блок-схемы
+      items:
+        - name: Общие сведения и справочные материалы
+          displayName: Flow chart activity designers
           href: flowchart-activity-designers.md
-          items:
-            - name: Конструктор действия блок-схемы
-              href: flowchart-activity-designer.md
-            - name: Конструктор действия FlowDecision
-              href: flowdecision-activity-designer.md
-            - name: Конструктор действия FlowSwitch<T>
-              href: flowswitch-t-activity-designer.md
-        - name: Конструкторы действий конечных автоматов
+        - name: Конструктор действия блок-схемы
+          href: flowchart-activity-designer.md
+        - name: Конструктор действия FlowDecision
+          href: flowdecision-activity-designer.md
+        - name: Конструктор действия FlowSwitch<T>
+          href: flowswitch-t-activity-designer.md
+    - name: Конструкторы действий конечных автоматов
+      items:
+        - name: Общие сведения и справочные материалы
+          displayName: State machine activity designers
           href: state-machine-activity-designers.md
-          items:
-            - name: Конструктор действий StateMachine
-              href: statemachine-activity-designer.md
-            - name: Конструктор State Activity
-              href: state-activity-designer.md
-            - name: Конструктор FinalState Activity
-              href: finalstate-activity-designer.md
-            - name: Конструктор действий переходов
-              href: transition-activity-designer.md
-        - name: Конструкторы действий обмена сообщениями
+        - name: Конструктор действий StateMachine
+          href: statemachine-activity-designer.md
+        - name: Конструктор State Activity
+          href: state-activity-designer.md
+        - name: Конструктор FinalState Activity
+          href: finalstate-activity-designer.md
+        - name: Конструктор действий переходов
+          href: transition-activity-designer.md
+    - name: Конструкторы действий обмена сообщениями
+      items:
+        - name: Общие сведения и справочные материалы
+          displayName: Messaging activity designers
           href: messaging-activity-designers.md
-          items:
-            - name: Конструктор действия CorrelationScope
-              href: correlationscope-activity-designer.md
-            - name: Конструктор действия InitializeCorrelation
-              href: initializecorrelation-activity-designer.md
-            - name: Конструктор действия Receive
-              href: receive-activity-designer.md
-            - name: Конструктор шаблона ReceiveAndSendReply
-              href: receiveandsendreply-template-designer.md
-            - name: Конструктор действия Send
-              href: send-activity-designer.md
-            - name: Конструктор шаблона SendAndReceiveReply
-              href: sendandreceivereply-template-designer.md
-            - name: Конструктор действия TransactedReceiveScope
-              href: transactedreceivescope-activity-designer.md
-        - name: Конструкторы действий среды выполнения
+        - name: Конструктор действия CorrelationScope
+          href: correlationscope-activity-designer.md
+        - name: Конструктор действия InitializeCorrelation
+          href: initializecorrelation-activity-designer.md
+        - name: Конструктор действия Receive
+          href: receive-activity-designer.md
+        - name: Конструктор шаблона ReceiveAndSendReply
+          href: receiveandsendreply-template-designer.md
+        - name: Конструктор действия Send
+          href: send-activity-designer.md
+        - name: Конструктор шаблона SendAndReceiveReply
+          href: sendandreceivereply-template-designer.md
+        - name: Конструктор действия TransactedReceiveScope
+          href: transactedreceivescope-activity-designer.md
+    - name: Конструкторы действий среды выполнения
+      items:
+        - name: Общие сведения и справочные материалы
+          displayName: Run-time activity designers
           href: runtime-activity-designers.md
-          items:
-            - name: Конструктор действия Persist
-              href: persist-activity-designer.md
-            - name: Конструктор действия TerminateWorkflow
-              href: terminateworkflow-activity-designer.md
-        - name: Конструкторы действий с базовыми функциями
+        - name: Конструктор действия Persist
+          href: persist-activity-designer.md
+        - name: Конструктор действия TerminateWorkflow
+          href: terminateworkflow-activity-designer.md
+    - name: Конструкторы действий с примитивами
+      items:
+        - name: Общие сведения и справочные материалы
+          displayName: Primitives activity designers
           href: primitives-activity-designers.md
-          items:
-            - name: Конструктор действий Assign
-              href: assign-activity-designer.md
-            - name: Конструктор действия Delay
-              href: delay-activity-designer.md
-            - name: InvokeDelegate
-              href: invokedelegate.md
-            - name: Конструктор действия InvokeMethod
-              href: invokemethod-activity-designer.md
-            - name: Конструктор действия WriteLine
-              href: writeline-activity-designer.md
-        - name: Конструкторы действий транзакций
+        - name: Конструктор действий Assign
+          href: assign-activity-designer.md
+        - name: Конструктор действия Delay
+          href: delay-activity-designer.md
+        - name: InvokeDelegate
+          href: invokedelegate.md
+        - name: Конструктор действия InvokeMethod
+          href: invokemethod-activity-designer.md
+        - name: Конструктор действия WriteLine
+          href: writeline-activity-designer.md
+    - name: Конструкторы действий транзакций
+      items:
+        - name: Общие сведения и справочные материалы
+          displayName: Transaction activity designers
           href: transaction-activity-designers.md
-          items:
-            - name: Конструктор действия CancellationScope
-              href: cancellationscope-activity-designer.md
-            - name: Конструктор действия CompensableActivity
-              href: compensableactivity-activity-designer.md
-            - name: Конструктор действия Compensate
-              href: compensate-activity-designer.md
-            - name: Конструктор действия Confirm
-              href: confirm-activity-designer.md
-            - name: Конструктор действия TransactionScope
-              href: transactionscope-activity-designer.md
-        - name: Конструкторы действий коллекций
+        - name: Конструктор действия CancellationScope
+          href: cancellationscope-activity-designer.md
+        - name: Конструктор действия CompensableActivity
+          href: compensableactivity-activity-designer.md
+        - name: Конструктор действия Compensate
+          href: compensate-activity-designer.md
+        - name: Конструктор действия Confirm
+          href: confirm-activity-designer.md
+        - name: Конструктор действия TransactionScope
+          href: transactionscope-activity-designer.md
+    - name: Конструкторы действий коллекций
+      items:
+        - name: Общие сведения и справочные материалы
+          displayName: Collection activity designers
           href: collection-activity-designers.md
-          items:
-            - name: Конструктор действия AddToCollection<T>
-              href: addtocollection-t-activity-designer.md
-            - name: Конструктор действия ClearCollection<T>
-              href: clearcollection-t-activity-designer.md
-            - name: Конструктор действия ExistsInCollection<T>
-              href: existsincollection-t-activity-designer.md
-            - name: Конструктор действия RemoveFromCollection<T>
-              href: removefromcollection-t-activity-designer.md
-        - name: Конструкторы действий обработки ошибок
+        - name: Конструктор действия AddToCollection<T>
+          href: addtocollection-t-activity-designer.md
+        - name: Конструктор действия ClearCollection<T>
+          href: clearcollection-t-activity-designer.md
+        - name: Конструктор действия ExistsInCollection<T>
+          href: existsincollection-t-activity-designer.md
+        - name: Конструктор действия RemoveFromCollection<T>
+          href: removefromcollection-t-activity-designer.md
+    - name: Конструкторы действий обработки ошибок
+      items:
+        - name: Общие сведения и справочные материалы
+          displayName: Error handling activity designers
           href: error-handling-activity-designers.md
-          items:
-            - name: Конструктор действия Rethrow
-              href: rethrow-activity-designer.md
-            - name: Конструктор действия Throw
-              href: throw-activity-designer.md
-            - name: Конструктор действия «TryCatch»
-              href: trycatch-activity-designer.md
-        - name: Конструкторы действий миграции
+        - name: Конструктор действия Rethrow
+          href: rethrow-activity-designer.md
+        - name: Конструктор действия Throw
+          href: throw-activity-designer.md
+        - name: Конструктор действия «TryCatch»
+          href: trycatch-activity-designer.md
+    - name: Конструкторы действий миграции
+      items:
+        - name: Общие сведения и справочные материалы
+          displayName: Migration activity designers
           href: migration-activity-designers.md
-          items:
-            - name: Конструктор действия Interop
-              href: interop-activity-designer.md
+        - name: Конструктор действия Interop
+          href: interop-activity-designer.md
+- name: Отладка
+  items:
     - name: Отладка рабочих процессов
       href: debugging-workflows-with-the-workflow-designer.md
-      items:
-        - name: Задание точек останова в рабочих процессах
-          href: how-to-set-breakpoints-in-workflows.md
-        - name: выполнить отладку XAML в конструкторе рабочих процессов
-          href: how-to-debug-xaml-with-the-workflow-designer.md
-        - name: Неподдерживаемые сценарии отладки
-          href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: справочник по пользовательскому интерфейсу
-      href: workflow-designer-ui-help.md
-      items:
-        - name: Диалоговое окно "Обзор и выбор типа .NET"
-          href: browse-and-select-a-dotnet-type-dialog-box.md
-        - name: Диалоговое окно «Корреляция по определению»
-          href: correlateson-definition-dialog-box.md
-        - name: Диалоговое окно «Добавление инициализаторов корреляции»
-          href: add-correlationinitializers-dialog-box.md
-        - name: Диалоговые окна «Добавление параметров» и «Добавление аргументов»
-          href: add-parameters-and-add-arguments-dialog-boxes.md
-        - name: Диалоговое окно редактора коллекций типов
-          href: type-collection-editor-dialog-box.md
-        - name: Диалоговое окно «Определение содержимого»
-          href: content-definition-dialog-box.md
-        - name: Диалоговое окно «Инициализация корреляции»
-          href: initialize-correlation-dialog-box.md
-        - name: 'Вкладка «System.Activities», диалоговое окно «Выбор элементов области элементов»'
-          href: system-activities-tab-choose-toolbox-items-dialog-box.md
-        - name: Возможности оболочки конструктора рабочих процессов
-          href: workflow-designer-shell-features.md
-        - name: Сочетания клавиш
-          href: keyboard-shortcuts-in-the-workflow-designer.md
-        - name: Сообщения об ошибках
-          href: error-messages-in-workflow-designer.md
+    - name: Задание точек останова в рабочих процессах
+      href: how-to-set-breakpoints-in-workflows.md
+    - name: выполнить отладку XAML в конструкторе рабочих процессов
+      href: how-to-debug-xaml-with-the-workflow-designer.md
+    - name: Неподдерживаемые сценарии отладки
+      href: unsupported-debugging-scenarios-in-the-workflow-designer.md
+- name: Справочник по пользовательскому интерфейсу
+  items:
+    - name: Диалоговое окно "Обзор и выбор типа .NET"
+      href: browse-and-select-a-dotnet-type-dialog-box.md
+    - name: Диалоговое окно «Корреляция по определению»
+      href: correlateson-definition-dialog-box.md
+    - name: Диалоговое окно «Добавление инициализаторов корреляции»
+      href: add-correlationinitializers-dialog-box.md
+    - name: Диалоговые окна «Добавление параметров» и «Добавление аргументов»
+      href: add-parameters-and-add-arguments-dialog-boxes.md
+    - name: Диалоговое окно редактора коллекций типов
+      href: type-collection-editor-dialog-box.md
+    - name: Диалоговое окно «Определение содержимого»
+      href: content-definition-dialog-box.md
+    - name: Диалоговое окно «Инициализация корреляции»
+      href: initialize-correlation-dialog-box.md
+    - name: 'Вкладка «System.Activities», диалоговое окно «Выбор элементов области элементов»'
+      href: system-activities-tab-choose-toolbox-items-dialog-box.md
+    - name: Функции оболочки конструктора рабочих процессов
+      href: workflow-designer-shell-features.md
+    - name: Сочетания клавиш
+      href: keyboard-shortcuts-in-the-workflow-designer.md
+    - name: Сообщения об ошибках
+      href: error-messages-in-workflow-designer.md

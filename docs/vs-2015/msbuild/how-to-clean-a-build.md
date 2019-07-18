@@ -1,14 +1,9 @@
 ---
 title: Практическое руководство. Очистка сборки | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, cleaning a build
@@ -18,18 +13,17 @@ ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c7b9811785808204fdd776617eec9cdeeaad317
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229675"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075367"
 ---
 # <a name="how-to-clean-a-build"></a>Практическое руководство. Очистка построения
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 При очистке сборки все промежуточные и выходные файлы удаляются, а остаются только файлы проекта и компонентов. Из файлов проекта и компонентов можно собрать новые экземпляры промежуточных и выходных файлов. Библиотека общих задач, предоставляемая вместе с [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], включает в себя задачу [Exec](../msbuild/exec-task.md), позволяющую запускать системные команды. Дополнительные сведения о библиотеке задач см. в разделе [Справочник по задачам](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="creating-a-directory-for-output-items"></a>Создание каталога для выходных элементов  
@@ -37,11 +31,11 @@ ms.locfileid: "49229675"
   
 #### <a name="to-create-a-directory-for-output-items"></a>Создание каталога для выходных элементов  
   
-1.  Используйте элемент `Property` для определения расположения и имени каталога. Например, создайте каталог с именем `BuiltApp` в каталоге, содержащем файлы проекта и исходные файлы:  
+1. Используйте элемент `Property` для определения расположения и имени каталога. Например, создайте каталог с именем `BuiltApp` в каталоге, содержащем файлы проекта и исходные файлы:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Пример:  
+2. Используйте задачу [MakeDir](../msbuild/makedir-task.md) для создания каталога, если он не существует. Например:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -52,14 +46,14 @@ ms.locfileid: "49229675"
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Удаление каталога и всех файлов в нем  
   
--   Используйте задачу `RemoveDir`, чтобы удалить каталог. Пример:  
+- Используйте задачу `RemoveDir`, чтобы удалить каталог. Например:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
 ## <a name="example"></a>Пример  
  Приведенный ниже проект с примером кода содержит новый целевой объект `Clean`, который использует задачу `RemoveDir`, чтобы удалить каталог и все содержащиеся в нем файлы и каталоги. Также в этом примере целевой объект `Compile` создает отдельный каталог для выходных файлов, удаляемых при очистке сборки.  
   
- `Compile` определяется как целевой объект по умолчанию и используется автоматически, пока вы не укажете другой целевой объект или несколько таких объектов. Используйте параметр командной строки **/target**, чтобы указать другой целевой объект. Пример:  
+ `Compile` определяется как целевой объект по умолчанию и используется автоматически, пока вы не укажете другой целевой объект или несколько таких объектов. Используйте параметр командной строки **/target**, чтобы указать другой целевой объект. Например:  
   
  `msbuild <file name>.proj /target:Clean`  
   
@@ -107,12 +101,9 @@ ms.locfileid: "49229675"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Задача Exec](../msbuild/exec-task.md)   
  [Задача MakeDir](../msbuild/makedir-task.md)   
  [Задача RemoveDir](../msbuild/removedir-task.md)   
  [Задача Csc](../msbuild/csc-task.md)   
  [Целевые объекты](../msbuild/msbuild-targets.md)
-
-
-

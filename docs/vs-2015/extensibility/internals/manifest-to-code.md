@@ -1,21 +1,17 @@
 ---
 title: Манифест в код | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192650"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,9 +30,9 @@ ms.locfileid: "51758225"
 |**Имя коммутатора**|**Примечания**|**Обязательный или необязательный**|  
 |/ manifest|Путь к манифесту образа для использования для создания или обновления кода оболочки.|Обязательно|  
 |/ Language|Язык, на котором для создания кода оболочки.<br /><br /> Допустимые значения: CPP, C++, CS, CSharp, C#, VB или VSCT значения регистр не учитывается.<br /><br /> Для языка VSCT параметр, /monikerClass, /classAccess и/Namespace параметры учитываются.|Обязательно|  
-|/imageIdClass|Имя imageIdClass и связанного файла, созданного с помощью средства. Для параметра языка C++ создаются только h-файлов.<br /><br /> Значение по умолчанию — \<путь к манифесту > \MyImageIds.\< Lang Ext >|Optional|  
-|/monikerClass|Имя monikerClass и связанного файла, созданного с помощью средства. Для параметра языка C++ создаются только h-файлов. Этот параметр игнорируется для языка VSCT.<br /><br /> Значение по умолчанию — \<путь к манифесту > \MyMonikers.\< Lang Ext >|Optional|  
-|/classAccess|Модификатор доступа для imageIdClass и monikerClass. Убедитесь, что модификатор доступа является допустимым для данного языка. Этот параметр игнорируется для параметра language VSCT.<br /><br /> По умолчанию: открытый|Optional|  
+|/imageIdClass|Имя imageIdClass и связанного файла, созданного с помощью средства. Для параметра языка C++ создаются только h-файлов.<br /><br /> По умолчанию: \<Путь к манифесту > \MyImageIds. \<Lang Ext >|Optional|  
+|/monikerClass|Имя monikerClass и связанного файла, созданного с помощью средства. Для параметра языка C++ создаются только h-файлов. Этот параметр игнорируется для языка VSCT.<br /><br /> По умолчанию: \<Путь к манифесту > \MyMonikers. \<Lang Ext >|Optional|  
+|/classAccess|Модификатор доступа для imageIdClass и monikerClass. Убедитесь, что модификатор доступа является допустимым для данного языка. Этот параметр игнорируется для параметра language VSCT.<br /><br /> По умолчанию: Public|Optional|  
 |/ Namespace|Пространство имен, определенное в код оболочки. Этот параметр игнорируется для параметра language VSCT. Либо "." или "::" ставятся разделители допустимое пространство имен, независимо от выбранного языка.<br /><br /> По умолчанию: MyImages|Optional|  
 |/nologo|Этот параметр останавливает продукта и авторских правах, возвращенными печати.|Optional|  
 |/?|Выводит справочные сведения.|Optional|  
@@ -44,17 +40,17 @@ ms.locfileid: "51758225"
   
  **Примеры**  
   
--   /Manifest:D:\MyManifest.imagemanifest ManifestToCode/Language: CSharp  
+- /Manifest:D:\MyManifest.imagemanifest ManifestToCode/Language: CSharp  
   
--   / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: My:: /classAccess:friend /monikerClass:MyMonikers /imageIdClass:MyImageIds пространства имен  
+- / Namespace /language:C++ /manifest:D:\MyManifest.imagemanifest ManifestToCode: My:: /classAccess:friend /monikerClass:MyMonikers /imageIdClass:MyImageIds пространства имен  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Примечания  
   
--   Мы рекомендуем использовать это средство с манифестами изображения, которые были созданы манифест из ресурсов средства.  
+- Мы рекомендуем использовать это средство с манифестами изображения, которые были созданы манифест из ресурсов средства.  
   
--   Средство считывает только записи символов для создания кода оболочки. Если манифеста изображения содержит символы не, программы-оболочки сформированного кода будет пустым. Если изображение или набор изображений в манифесте образа, не использующих символы, они будут исключены из кода оболочки.  
+- Средство считывает только записи символов для создания кода оболочки. Если манифеста изображения содержит символы не, программы-оболочки сформированного кода будет пустым. Если изображение или набор изображений в манифесте образа, не использующих символы, они будут исключены из кода оболочки.  
   
 ## <a name="sample-output"></a>Пример полученных результатов  
  **Оболочки C#**  
@@ -236,4 +232,3 @@ End Namespace
   </Symbols>  
 </CommandTable>  
 ```
-

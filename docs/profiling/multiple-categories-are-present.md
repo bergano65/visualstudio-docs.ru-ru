@@ -9,24 +9,24 @@ helpviewer_keywords:
 ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1c366e740b5633e6bcd1db142930a710af4cdff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69b3de3a7f1554bc3ad95874a58b75b809d610a2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794666"
 ---
 # <a name="multiple-categories-are-present"></a>Наличие нескольких категорий
-Выбран раздел, который содержит более одного вида операций за указанный диапазон времени. Обратите внимание на то, что два цвета отображаются вертикально друг над другом. Эти цвета обозначают две наиболее частые операции за указанный диапазон времени. Частота этих двух операций отображается относительно друг друга в виде третей или половин вертикального столбца. Чтобы просмотреть дополнительные сведения, попробуйте увеличить масштаб этого раздела представления потоков.  
-  
-## <a name="see-also"></a>См. также  
- [Время выполнения (представление "Потоки")](../profiling/execution-time-threads-view.md)   
- [Время ввода-вывода (представление "Потоки")](../profiling/i-o-time-threads-view.md)   
- [Время управления памятью](../profiling/memory-management-time.md)   
- [Время вытеснения](../profiling/preemption-time.md)   
- [Время ожидания](../profiling/sleep-time.md)   
- [Время синхронизации](../profiling/synchronization-time.md)   
- [Время обработки пользовательского интерфейса](../profiling/ui-processing-time.md)
+Выбран раздел, который содержит более одного вида операций за указанный диапазон времени. Обратите внимание на то, что два цвета отображаются вертикально друг над другом. Эти цвета обозначают две наиболее частые операции за указанный диапазон времени. Частота этих двух операций отображается относительно друг друга в виде третей или половин вертикального столбца. Чтобы просмотреть дополнительные сведения, попробуйте увеличить масштаб этого раздела представления потоков.
+
+## <a name="see-also"></a>См. также
+- [Время выполнения (представление "Потоки")](../profiling/execution-time-threads-view.md)
+- [Время ввода-вывода (представление "Потоки")](../profiling/i-o-time-threads-view.md)
+- [Время управления памятью](../profiling/memory-management-time.md)
+- [Время вытеснения](../profiling/preemption-time.md)
+- [Время спящего режима](../profiling/sleep-time.md)
+- [Время синхронизации](../profiling/synchronization-time.md)
+- [Время обработки пользовательского интерфейса](../profiling/ui-processing-time.md)

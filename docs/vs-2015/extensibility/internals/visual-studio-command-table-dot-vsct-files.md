@@ -1,27 +1,22 @@
 ---
 title: Visual Studio Command Table (. Файлы Vsct) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, overview
 - Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7a68d9f5dac293cc9048cb4b84aaa487c5079250
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cde3b86e19788c41df6e8f1c79a6bf829f491170
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748827"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675249"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Файлы таблицы команд Visual Studio (VSCT-файлы)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "51748827"
  [Справочник по схемам XML VSCT](../../extensibility/vsct-xml-schema-reference.md)  
  Подробное описание каждого раздела файла конфигурации XML таблицы команд.  
   
- [Конфигурации таблицы команды (. Файлах ctc)](http://msdn.microsoft.com/en-us/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [Конфигурации таблицы команды (. Файлах ctc)](https://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
  Представляет обзор устаревшие .ctc формата файла.  
   
  [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
@@ -52,4 +47,3 @@ ms.locfileid: "51748827"
   
  [Команды, меню и панели инструментов](../../extensibility/internals/commands-menus-and-toolbars.md)  
  Объясняется, как создать пользовательский интерфейс, включающий меню, панели инструментов и поля со списком команд.
-

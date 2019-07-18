@@ -1,7 +1,6 @@
 ---
 title: Страницы свойств (JavaScript)
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
@@ -14,15 +13,15 @@ f1_keywords:
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83c7a2b0d0004b1f96a1c46ab120814179f77d26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c1f725c239df2ffc9683676c4c20a86ce12f873e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969024"
 ---
 # <a name="property-pages-javascript"></a>Страницы свойств (JavaScript)
 На **страницах свойств** можно получить доступ к параметрам проекта. Страницы, которые отображаются на **страницах свойств**, можно использовать для изменения свойств проекта.
@@ -50,7 +49,6 @@ ms.locfileid: "53956535"
 > [!NOTE]
 > Некоторые параметры доступны только в приложениях универсальной платформы Windows.
 
-
  **Путь для создаваемых файлов**
 
  Указывает расположение выходных файлов для конфигурации проекта. Путь является относительным. Если ввести абсолютный путь, он будет сохранен в проекте. Путь по умолчанию — bin\Debug.
@@ -67,16 +65,15 @@ ms.locfileid: "53956535"
 > [!NOTE]
 > Некоторые параметры доступны только в приложениях универсальной платформы Windows.
 
-
  **Отладчик для запуска**
 
  Указывает узел по умолчанию для отладчика.
 
--   Выберите **Локальный компьютер**, чтобы запустить приложения на главном компьютере Visual Studio. Дополнительные сведения см. в разделе [Запуск приложений на локальном компьютере](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+- Выберите **Локальный компьютер**, чтобы запустить приложения на главном компьютере Visual Studio. Дополнительные сведения см. в разделе [Запуск приложений на локальном компьютере](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
--   Выберите **Симулятор**, чтобы запустить приложение в симуляторе. Дополнительные сведения см. в разделе [Запуск приложений в симуляторе](../../debugger/run-windows-store-apps-in-the-simulator.md).
+- Выберите **Симулятор**, чтобы запустить приложение в симуляторе. Дополнительные сведения см. в разделе [Запуск приложений в симуляторе](../../debugger/run-windows-store-apps-in-the-simulator.md).
 
--   Выберите **Удаленный компьютер**, чтобы запустить приложение на удаленном компьютере. Дополнительные сведения об удаленной отладке см. в разделе [Запуск приложений на удаленном компьютере](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
+- Выберите **Удаленный компьютер**, чтобы запустить приложение на удаленном компьютере. Дополнительные сведения об удаленной отладке см. в разделе [Запуск приложений на удаленном компьютере](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 **Запуск приложения**
 

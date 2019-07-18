@@ -2,33 +2,29 @@
 title: Общие сведения о редактировании для разработчиков JavaScript
 description: В этом вводном руководстве по редактору кода Visual Studio мы продемонстрируем несколько методов, которые упрощают написание, понимание кода JavaScript и навигацию по нему в Visual Studio.
 ms.date: 12/13/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840833"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
 В этом кратком руководстве по редактору кода Visual Studio мы рассмотрим несколько методов, которые упрощают написание, понимание кода и навигацию по нему в Visual Studio.
 
 > [!TIP]
-> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), если еще не сделали этого. В зависимости от методов, используемых для разработки приложений, вам может потребоваться установить вместе с Visual Studio рабочую нагрузку **Разработка Node.js**.
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/), если еще не сделали этого. В зависимости от методов, используемых для разработки приложений, вам может потребоваться установить вместе с Visual Studio рабочую нагрузку **Разработка Node.js**.
 
 В этой статье предполагается, что вы уже знакомы с основами разработки на JavaScript. Если это не так, мы рекомендуем сначала изучить руководство по [созданию приложения Node.js и Express](../javascript/tutorial-nodejs.md).
-
-> [!TIP]
-> Чтобы выполнять действия, описанные в этой статье, выберите нужные параметры JavaScript для Visual Studio. Сведения о настройке параметров для интегрированной среды разработки (IDE) вы найдете в [этой статье](../ide/environment-settings.md). При импорте параметров включите в импорт параметры **JavaScript**.
 
 ## <a name="add-a-new-project-file"></a>Добавление нового файла проекта
 
@@ -96,7 +92,7 @@ IntelliSense также может отображать сведения о ти
 
    ![Окно "Показать определение"](../javascript/media/write-code-peek-definition.png)
 
-1. Закройте окно просматриваемого определения, щелкнув небольшое поле со знаком "x" в его правом верхнем углу.
+Закройте окно просматриваемого определения, щелкнув небольшое поле со знаком "x" в его правом верхнем углу.
 
 ## <a name="use-code-snippets"></a>Использование фрагментов кода
 

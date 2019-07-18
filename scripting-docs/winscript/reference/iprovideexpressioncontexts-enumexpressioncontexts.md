@@ -2,7 +2,6 @@
 title: IProvideExpressionContexts::EnumExpressionContexts | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2dd18408235a5621354531a2fd228ff44a19d6a1
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410150"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
 Возвращает перечислитель контекстов выражений, известных этим компонентом.  
@@ -51,7 +50,7 @@ HRESULT EnumExpressionContexts(
  Диспетчер отладки процессов использует этот метод для поиска всех глобальное выражение контекстов, связанных с данного потока.  
   
 > [!NOTE]
->  Этот метод вызывается из потока интерес. Это зависит от разработчика для идентификации текущего потока и возврата соответствующего перечислителя.  
+> Этот метод вызывается из потока интерес. Это зависит от разработчика для идентификации текущего потока и возврата соответствующего перечислителя.  
   
 ## <a name="see-also"></a>См. также  
  [Интерфейс IProvideExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-interface.md)

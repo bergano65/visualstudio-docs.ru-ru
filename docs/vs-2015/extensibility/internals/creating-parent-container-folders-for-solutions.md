@@ -1,27 +1,22 @@
 ---
 title: Создание папок родительского контейнера для решений | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0a65595b7dabc28a6851820141a71460d84a4b73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b756da118943dd94bfd3bc5220dfc398c60e2a9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196926"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Создание папок родительского контейнера для решений
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,10 +47,10 @@ ms.locfileid: "51762531"
   
   В [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] предполагается, что имя папки SUR совпадать с именем решения без расширения. В следующей таблице перечислены поведение в обеих версиях.  
   
-|Функция|tSource управления Plug-in API версии 1.1|Система управления версиями API подключаемого модуля версии 1.2|  
+|Компонент|tSource управления Plug-in API версии 1.1|Система управления версиями API подключаемого модуля версии 1.2|  
 |-------------|----------------------------------------------|---------------------------------------------|  
 |Добавьте решение в SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|Добавление проекта к решению, контролируемого системой управления версиями|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject() **Примечание:** Visual Studio предполагается, что решение сейчас является прямым потомком SUR.|  
+|Добавление проекта к решению, контролируемого системой управления версиями|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject() **Примечание:**  Visual Studio предполагается, что решение сейчас является прямым потомком SUR.|  
   
 ## <a name="examples"></a>Примеры  
  В следующей таблице перечислены два примера. В обоих случаях [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] пользователю предлагается ввести расположение для решения в системе управления версиями до *user_choice* указан в качестве места назначения. При указании user_choice решения и двух проектов добавляются без подтверждения от пользователя для источников управления получателей.  
@@ -73,4 +68,3 @@ ms.locfileid: "51762531"
   
 ## <a name="see-also"></a>См. также  
  [Новые возможности в API версии 1.2 подключаемого модуля системы управления версиями](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
-

@@ -1,16 +1,16 @@
 ---
 title: Управление свойствами проекта и решения
 description: В этих статьях описывается управление свойствами проектов и решений в Visual Studio для Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
-ms.openlocfilehash: 8d6a45f8cdd46483dda5ef252a6235e7eb2f0a04
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 514792804515541b7e4f64359a08e9c6093c5018
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296324"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692874"
 ---
 # <a name="managing-project-and-solution-properties"></a>Управление свойствами проекта и решения
 

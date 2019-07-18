@@ -1,14 +1,9 @@
 ---
 title: Пошаговое руководство. Создание встроенной задачи | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, tutorial
 - MSBuild, tasks
@@ -16,18 +11,17 @@ ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a399e8285b7b041488a4cecdf2007f8fd1647b2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445622"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Пошаговое руководство. Создание встроенной задачи
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Задачи MSBuild обычно создаются путем компиляции класса, реализующего интерфейс <xref:Microsoft.Build.Framework.ITask>. Начиная с .NET Framework 4, в файле проекта можно создавать встроенные задачи. Для размещения задачи не нужно создавать отдельную сборку. Дополнительные сведения см. в статье [Встроенные задачи MSBuild](../msbuild/msbuild-inline-tasks.md).  
   
  В этом пошаговом руководстве показано, как создать и выполнить следующие встроенные задачи:  
@@ -53,15 +47,15 @@ ms.locfileid: "49840722"
   
 #### <a name="to-create-and-modify-a-project-file"></a>Создание и изменение файла проекта  
   
-1.  В меню **Файл** окна Visual Studio выберите команду **Создать** и щелкните **Проект**.  
+1. В меню **Файл** окна Visual Studio выберите команду **Создать** и щелкните **Проект**.  
   
-2.  В диалоговом окне **Создание проекта** выберите тип проекта Visual C#, а затем — шаблон **Приложение Windows Forms**. В поле **Имя файла** введите `InlineTasks`. Введите **расположение** для решения, например `D:\`. Выберите **Создать каталог для решения**, установите флажок **Добавить в систему управления версиями** и задайте для **Имя решения** `InlineTasks`.  
+2. В диалоговом окне **Создание проекта** выберите тип проекта Visual C#, а затем — шаблон **Приложение Windows Forms**. В поле **Имя файла** введите `InlineTasks`. Введите **расположение** для решения, например `D:\`. Выберите **Создать каталог для решения**, установите флажок **Добавить в систему управления версиями** и задайте для **Имя решения** `InlineTasks`.  
   
      Нажмите кнопку **ОК**, чтобы создать файл проекта.  
   
-3.  В **обозревателе решений** щелкните правой кнопкой мыши узел проекта InlineTasks и выберите команду **Выгрузить проект**.  
+3. В **обозревателе решений** щелкните правой кнопкой мыши узел проекта InlineTasks и выберите команду **Выгрузить проект**.  
   
-4.  Еще раз щелкните правой кнопкой мыши узел проекта, а затем выберите **Изменить InlineTasks.csproj**.  
+4. Еще раз щелкните правой кнопкой мыши узел проекта, а затем выберите **Изменить InlineTasks.csproj**.  
   
      Файл проекта откроется в редакторе кода.  
   
@@ -110,7 +104,7 @@ ms.locfileid: "49840722"
     `Hello, world!`  
   
    > [!NOTE]
-   >  Если вы не видите сообщение hello, повторно сохраните файл проекта и выполните задачу Hello.  
+   > Если вы не видите сообщение hello, повторно сохраните файл проекта и выполните задачу Hello.  
   
    Переключаясь между редактором кода и **окном командной строки**, можно изменять файл проекта и сразу же видеть результаты.  
   
@@ -259,10 +253,7 @@ ms.locfileid: "49840722"
   
  `</Code>`  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Встроенные задачи MSBuild](../msbuild/msbuild-inline-tasks.md)   
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Целевые объекты](../msbuild/msbuild-targets.md)
-
-
-

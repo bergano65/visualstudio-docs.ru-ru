@@ -1,14 +1,9 @@
 ---
 title: Получение локальных свойств | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, getting local properties
 - debugging [Debugging SDK], local properties
@@ -16,27 +11,27 @@ helpviewer_keywords:
 ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a96b9abfd215dc297a5b245e0ac670b4822d70c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b174af9e107c13c3d8a79f00493fe5dbdd180ec6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436398"
 ---
 # <a name="getting-local-properties"></a>Получение локальных свойств
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> В Visual Studio 2015 таким образом, реализации вычислители выражений является устаревшим. Сведения о реализации вычислители выражений CLR, см. в разделе [вычислители выражений CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) и [управляемых образец средства оценки выражений](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Visual Studio вызывает [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) для получения [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) объект, предоставляющий доступ ко всем локальным переменным для отображения в **"Локальные"** окна. Visual Studio, затем вызывает [Далее](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) для ввода сведений, отображаемых для каждого локального. В этом примере класс `CEnumPropertyInfo` реализует `IEnumDebugPropertyInfo2` интерфейс.  
   
  Эта реализация `IEnumDebugPropertyInfo2::Next` выполняет следующие задачи:  
   
-1.  Этот массив, где будет храниться информация о очищается.  
+1. Этот массив, где будет храниться информация о очищается.  
   
-2.  Вызовы [Далее](../../extensibility/debugger/reference/ienumdebugfields-next.md) для каждого локального хранения возвращенного [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) в массиве должны быть возвращены. [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) передан объект при этом `CEnumPropertyInfo` создании экземпляра класса.  
+2. Вызовы [Далее](../../extensibility/debugger/reference/ienumdebugfields-next.md) для каждого локального хранения возвращенного [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) в массиве должны быть возвращены. [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) передан объект при этом `CEnumPropertyInfo` создании экземпляра класса.  
   
 ## <a name="managed-code"></a>Управляемый код  
  В этом примере показана реализация `IEnumDebugPropertyInfo2::EnumChildren` для метода "Локальные" в управляемом коде.  
@@ -166,4 +161,3 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 ## <a name="see-also"></a>См. также  
  [Пример реализации локальных переменных](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [Перечисление локальных переменных](../../extensibility/debugger/enumerating-locals.md)
-

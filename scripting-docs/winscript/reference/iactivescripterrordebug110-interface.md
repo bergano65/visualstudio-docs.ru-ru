@@ -1,8 +1,7 @@
 ---
-title: Iactivescripterrordebug110 — интерфейс | Документы Microsoft
+title: Интерфейс IActiveScriptErrorDebug110 | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 152f12154acc59b88fc8b1c9a176ac87a5da847d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 72f545f5a48fc7b8aa3f9250b13a62ba659e94bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436058"
 ---
 # <a name="iactivescripterrordebug110-interface"></a>IActiveScriptErrorDebug110 — интерфейс
 Расширяет его функциональные возможности [интерфейс IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md). Этот интерфейс реализуется обработчиком JavaScript, чтобы определить, почему произошло событие BREAKREASON_ERROR.  
   
 > [!IMPORTANT]
->  Этот интерфейс реализуется в PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
+> Этот интерфейс реализуется в PDM v11.0 и более поздней версии. Обнаружено в activdbg100.h.  
   
 ## <a name="methods"></a>Методы  
  Интерфейс `IActiveScriptErrorDebug110` предоставляет следующие методы.  

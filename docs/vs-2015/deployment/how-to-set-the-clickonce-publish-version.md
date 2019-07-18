@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: Установка ClickOnce версии публикации | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Установка ClickOnce версии публикации | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 06f15504-6385-40a6-b01d-cd90ca36dc73
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b3965e9600fa3ef6a091ae8e32439e8e4f420668
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ec5d5d742b5a0749d1d5d52cee0a0545dd8570f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436208"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Практическое руководство. Установка версии публикации приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,24 +32,21 @@ ms.locfileid: "49271717"
  `Publish Version` Может быть установлено на **публикации** странице **конструктор проектов**.  
   
 > [!NOTE]
->  Имеется параметр проекта, который автоматически увеличивает `Publish Version` свойство каждый раз при публикации приложения; этот параметр включен по умолчанию. Дополнительные сведения см. в разделе [как: автоматическое увеличение версии публикации ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
+> Имеется параметр проекта, который автоматически увеличивает `Publish Version` свойство каждый раз при публикации приложения; этот параметр включен по умолчанию. Дополнительные сведения см. в разделе [Как автоматически увеличить номера версии публикации ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
   
 ### <a name="to-change-the-publish-version"></a>Изменение версии публикации  
   
-1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Нажмите кнопку **публикации** вкладки.  
+2. Перейдите на вкладку **Публикация**.  
   
-3.  В **версия публикации** поле, приращение **основных**, **незначительные**, **построения**, или **редакции** версии номера.  
+3. В **версия публикации** поле, приращение **основных**, **незначительные**, **построения**, или **редакции** версии номера.  
   
     > [!NOTE]
-    >  Вы никогда не следует уменьшения номером версии; Это может привести к непредсказуемым обновления поведение.  
+    > Вы никогда не следует уменьшения номером версии; Это может привести к непредсказуемым обновления поведение.  
   
 ## <a name="see-also"></a>См. также  
  [Выбор стратегии обновления ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Практическое руководство. Автоматическое увеличение номера версии публикации ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
+ [Практическое руководство. Автоматически ClickOnce увеличение номера версии публикации](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

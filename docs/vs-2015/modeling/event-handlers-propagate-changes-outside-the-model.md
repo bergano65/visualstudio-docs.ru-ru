@@ -1,12 +1,9 @@
 ---
 title: Обработчики событий распространяют изменения за пределы модели | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
@@ -14,13 +11,13 @@ ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181757"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Обработчики событий распространяют изменения за пределы модели
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +30,13 @@ ms.locfileid: "49823701"
   
 1. Выберите тип события, которое вы хотите отслеживать. Полный список, просмотрите свойства <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Каждое свойство соответствует типу события. Наиболее часто используемые типы событий:  
   
-   -   `ElementAdded` — активируется, когда элемент модели, ссылка отношения, фигуры или соединителя создается.  
+   - `ElementAdded` — активируется, когда элемент модели, ссылка отношения, фигуры или соединителя создается.  
   
-   -   ElementPropertyChanged — активируется, когда значение `Normal` свойства домена изменяется. Событие срабатывает, только в том случае, если старое и новое значения не равны. Это событие не может использоваться для хранения вычисляемые и пользовательские свойства.  
+   - ElementPropertyChanged — активируется, когда значение `Normal` свойства домена изменяется. Событие срабатывает, только в том случае, если старое и новое значения не равны. Это событие не может использоваться для хранения вычисляемые и пользовательские свойства.  
   
         Он не может применяться к свойствам роли, которые соответствуют связи отношений. Вместо этого используйте `ElementAdded` для наблюдения за доменной связи.  
   
-   -   `ElementDeleted` — активировано после элемента модели, отношения, фигуры или соединителя был удален. Значения свойств элемента по-прежнему доступны, но будет иметь ни одной связи с другими элементами.  
+   - `ElementDeleted` — активировано после элемента модели, отношения, фигуры или соединителя был удален. Значения свойств элемента по-прежнему доступны, но будет иметь ни одной связи с другими элементами.  
   
 2. Добавьте определение разделяемого класса для _YourDsl_**DocData** в отдельном файле кода в **DslPackage** проекта.  
   
@@ -169,11 +166,11 @@ private static void AlbumTitleAdjuster(object sender,
   
  Если вы создаете событие, которое обновляет хранилище:  
   
--   Используйте `store.InUndoRedoOrRollback` избежание внесения изменений с элементами модели в отмены. Диспетчер транзакций установит все, что в хранилище обратно в исходное состояние.  
+- Используйте `store.InUndoRedoOrRollback` избежание внесения изменений с элементами модели в отмены. Диспетчер транзакций установит все, что в хранилище обратно в исходное состояние.  
   
--   Используйте `store.InSerializationTransaction` избежание внесения изменений в модели во время загрузки из файла.  
+- Используйте `store.InSerializationTransaction` избежание внесения изменений в модели во время загрузки из файла.  
   
--   Изменения будут приведут к получению события будут активироваться. Убедитесь, что вам избежать бесконечного цикла.  
+- Изменения будут приведут к получению события будут активироваться. Убедитесь, что вам избежать бесконечного цикла.  
   
 ## <a name="store-event-types"></a>Типы событий Store  
  В коллекцию в Store.EventManagerDirectory соответствует каждого типа события. Можно добавить или удалить обработчики событий в любое время, но обычно добавляются при загрузке документа.  
@@ -194,7 +191,4 @@ private static void AlbumTitleAdjuster(object sender,
   
 ## <a name="see-also"></a>См. также  
  [Реагирование на изменения и их распространение](../modeling/responding-to-and-propagating-changes.md)   
- [Пример кода: пример принципиальной схемы](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [Пример кода: Пример принципиальной схемы](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

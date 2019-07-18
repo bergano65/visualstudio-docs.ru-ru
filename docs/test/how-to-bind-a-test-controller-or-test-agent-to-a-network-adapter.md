@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4d83dcd0d5c791089c2d699517cb75a5a3e24b33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979334"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Как выполнить Привязка контроллера тестирования или агента тестирования к сетевому адаптеру
 
@@ -36,19 +35,19 @@ ms.locfileid: "53891064"
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>Получение IP-адресов сетевых адаптеров
 
-1.  В операционной системе Microsoft Windows нажмите кнопку **Пуск**, перейдите в поле **Начать поиск**, введите команду **cmd** и нажмите клавишу **ВВОД**.
+1. В операционной системе Microsoft Windows нажмите кнопку **Пуск**, перейдите в поле **Начать поиск**, введите команду **cmd** и нажмите клавишу **ВВОД**.
 
-2.  Введите команду **ipconfig /all**.
+2. Введите команду **ipconfig /all**.
 
      Будут отображены IP-адреса для сетевых адаптеров. Запишите IP-адрес сетевого адаптера, к которому требуется привязать контроллер.
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>Привязка сетевого адаптера к контроллеру тестирования
 
-1.  В операционной системе Microsoft Windows нажмите кнопку **Пуск**, перейдите в поле **Начать поиск**, введите **services.msc** и нажмите клавишу **ВВОД**.
+1. В операционной системе Microsoft Windows нажмите кнопку **Пуск**, перейдите в поле **Начать поиск**, введите **services.msc** и нажмите клавишу **ВВОД**.
 
      Откроется диалоговое окно **Службы**.
 
-2.  В столбце **Имя** в области результатов щелкните правой кнопкой мыши службу **Контроллер тестирования Visual Studio** и выберите команду **Остановить**.
+2. В столбце **Имя** в области результатов щелкните правой кнопкой мыши службу **Контроллер тестирования Visual Studio** и выберите команду **Остановить**.
 
      - или -
 
@@ -56,9 +55,9 @@ ms.locfileid: "53891064"
 
      `net stop vsttcontroller`
 
-3.  Откройте XML-файл конфигурации *QTCcontroller.exe.config*, расположенный в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3. Откройте XML-файл конфигурации *QTCcontroller.exe.config*, расположенный в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<выпуск>\Common7\IDE*.
 
-4.  Найдите тег `<appSettings>`.
+4. Найдите тег `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -72,14 +71,14 @@ ms.locfileid: "53891064"
     </appSettings>
     ```
 
-5.  Добавьте ключ `BindTo` для указания сетевого адаптера, который должен использоваться в разделе `<appSettings>`.
+5. Добавьте ключ `BindTo` для указания сетевого адаптера, который должен использоваться в разделе `<appSettings>`.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Запустите службу контроллера тестирования. Для этого выполните в командной строке следующую команду:
+6. Запустите службу контроллера тестирования. Для этого выполните в командной строке следующую команду:
 
     `net start vsttcontroller`
 
@@ -90,11 +89,11 @@ ms.locfileid: "53891064"
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>Привязка сетевого адаптера к агенту тестирования
 
-1.  В операционной системе Microsoft Windows нажмите кнопку **Пуск**, перейдите в поле **Начать поиск**, введите **services.msc** и нажмите клавишу **ВВОД**.
+1. В операционной системе Microsoft Windows нажмите кнопку **Пуск**, перейдите в поле **Начать поиск**, введите **services.msc** и нажмите клавишу **ВВОД**.
 
     Откроется диалоговое окно **Службы**.
 
-2.  В столбце **Имя** в области результатов щелкните правой кнопкой мыши службу **Агент тестирования Visual Studio** и выберите команду **Остановить**.
+2. В столбце **Имя** в области результатов щелкните правой кнопкой мыши службу **Агент тестирования Visual Studio** и выберите команду **Остановить**.
 
      - или -
 
@@ -102,9 +101,9 @@ ms.locfileid: "53891064"
 
      **net stop vsttagent**
 
-3.  Откройте XML-файл конфигурации *QTAgentService.exe.config*, расположенный в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3. Откройте XML-файл конфигурации *QTAgentService.exe.config*, расположенный в папке *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<выпуск>\Common7\IDE*.
 
-4.  Найдите тег `<appSettings>`.
+4. Найдите тег `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -118,14 +117,14 @@ ms.locfileid: "53891064"
     </appSettings>  </appSettings>
     ```
 
-5.  Добавьте ключ `BindTo` для указания сетевого адаптера, который должен использоваться в разделе `<appSettings>`.
+5. Добавьте ключ `BindTo` для указания сетевого адаптера, который должен использоваться в разделе `<appSettings>`.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Запустите службу агента тестирования. Для этого выполните в командной строке следующую команду:
+6. Запустите службу агента тестирования. Для этого выполните в командной строке следующую команду:
 
     `net start vsttagent`
 
@@ -134,5 +133,4 @@ ms.locfileid: "53891064"
 - [Установка и настройка агентов тестирования](../test/lab-management/install-configure-test-agents.md)
 - [Изменение параметров ведения журнала для нагрузочного теста](../test/modify-load-test-logging-settings.md)
 - [Настройка портов для контроллеров и агентов тестирования](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Практическое руководство. Указание максимального размера файла журнала](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Практическое руководство. Задание периодов ожидания для контроллеров тестирования и агентов тестирования](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

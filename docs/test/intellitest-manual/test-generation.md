@@ -1,21 +1,20 @@
 ---
 title: Создание теста | Инструмент тестирования для разработчиков Microsoft IntelliTest
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Test generation
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5f2a63c21a1d2f25f34bda3f27163783d9c96bcd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee6b01e2c154ddebf71f5ae2511ccfe693506db6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812835"
 ---
 # <a name="test-generation"></a>Создание теста
 
@@ -238,8 +237,8 @@ namespace MyTests
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>Дополнительные сведения
 
-* [Привязка теста к коду](https://blogs.msdn.microsoft.com/devops/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)
-* [Один тест на любой случай](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)
+* [Привязка теста к коду](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
+* [Один тест на любой случай](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 
 ## <a name="got-feedback"></a>Хотите оставить отзыв?
 

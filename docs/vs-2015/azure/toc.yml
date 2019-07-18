@@ -1,115 +1,108 @@
-items:
 - name: Разработка в Azure с помощью Visual Studio
   href: index.yml
   expanded: true
 - name: Публикация в Azure
-  items:
-  - name: Публикация облачной службы
-    href: vs-azure-tools-publishing-a-cloud-service.md
-  - name: Публикация с помощью IDE Visual Studio
-    href: vs-azure-tools-publish-azure-application-wizard.md
-  - name: Публикация с помощью скрипта PowerShell
-    href: vs-azure-tools-publishing-using-powershell-scripts.md
-  - name: Публикация веб-приложения ASP.NET в виртуальную машину Azure
-    href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-  - name: Публикация веб-приложения в облачных службах Azure
-    href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
   expanded: true
-- name: Подключение к службам Azure
   items:
-  - name: Добавление Службы хранилища Azure
-    href: vs-azure-tools-connected-services-storage.md
-  - name: Добавление Azure Active Directory (AD)
-    href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-  - name: Добавление мобильных служб
-    href: vs-azure-tools-connected-services-add-mobile-services.md
-  expanded: false
-- name: Разработка облачных служб Azure
-  items:
-  - name: Работа с проектами облачных служб
-    items:
-    - name: Доступ к частным облакам Azure
-      href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
-    - name: Создание проекта облачной службы Azure
-      href: vs-azure-tools-azure-project-create.md
-    - name: Управление ролями в облачных службах Azure
-      href: vs-azure-tools-cloud-service-project-managing-roles.md
-    - name: Подготовка к публикации или развертыванию облачной службы
-      href: vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md
-    - name: Сохранение постоянного виртуального IP-адреса для облачной службы Azure
-      href: vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md
-    - name: Создание проектов Azure из командной строки
-      href: vs-azure-tools-command-line-build.md
-    - name: Настройка ролей облачной службы Azure
-      href: vs-azure-tools-configure-roles-for-cloud-service.md
-    - name: Настройка проекта облачной службы Azure
-      href: vs-azure-tools-configuring-an-azure-project.md
-    - name: Настройка нескольких конфигураций службы в проекте Azure
-      href: vs-azure-tools-multiple-services-project-configurations.md
-    - name: Обновление проектов до текущей версии инструментов Azure
-      href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
-  - name: Тестирование и отладка облачной службы
-    items:
-    - name: Отладка облачной службы или виртуальной машины Azure
-      href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-    - name: Разные способы отладки облачной службы Azure
-      href: vs-azure-tools-debugging-cloud-services-overview.md
-    - name: Настройка системы диагностики для облачных служб и виртуальных машин Azure
-      href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-    - name: Использование Emulator Express для запуска и отладки облачной службы Azure на локальном компьютере
-      href: vs-azure-tools-emulator-express-debug-run.md
-    - name: Отладка опубликованной облачной службы Azure с помощью IntelliTrace
-      href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
-    - name: Тестирование производительности облачной службы
-      href: vs-azure-tools-performance-profiling-cloud-services.md
-    - name: Оптимизация кода Azure
-      href: vs-azure-tools-optimizing-azure-code-in-visual-studio.md
-  - name: Публикация облачной службы в Azure
-    items:
-    - name: Перенос и публикация веб-приложения в облачную службу Azure
-      href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
-    - name: Использование мастера публикации приложений Azure в Visual Studio
-      href: vs-azure-tools-publish-azure-application-wizard.md
-    - name: Публикация облачной службы из Visual Studio
+    - name: Публикация облачной службы
       href: vs-azure-tools-publishing-a-cloud-service.md
-    - name: Использование скриптов Windows PowerShell для публикации в тестовую среду и среду разработки
+    - name: Публикация с помощью IDE Visual Studio
+      href: vs-azure-tools-publish-azure-application-wizard.md
+    - name: Публикация с помощью скрипта PowerShell
       href: vs-azure-tools-publishing-using-powershell-scripts.md
-    - name: Publish-WebApplicationVM (скрипт Windows PowerShell)
-      href: vs-azure-tools-publish-webapplicationvm.md
-    - name: Publish-WebApplicationWebSite (скрипт Windows PowerShell)
-      href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
-    - name: Управление конфигурациями и профилями службы
-      href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
-    - name: Настройка учетных данных для проверки подлинности
-      href: vs-azure-tools-setting-up-named-authentication-credentials.md
-  - name: Работа со Службой хранилища Azure
-    items:
-    - name: Начало работы с Обозревателем службы хранилища
-      href: /azure/vs-azure-tools-storage-manage-with-storage-explorer?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Настройка и использование эмулятора хранения
-      href: /azure/vs-azure-tools-storage-emulator-using?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Создание строк фильтра для конструктора таблиц
-      href: vs-azure-tools-table-designer-construct-filter-strings.md
-    - name: Управление ресурсами хранилища BLOB-объектов Azure с помощью Обозревателя службы хранилища
-      href: /azure/vs-azure-tools-storage-explorer-blobs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Использование Обозревателя службы хранилища с хранилищем файлов Azure
-      href: /azure/vs-azure-tools-storage-explorer-files?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Заметки о выпуске Обозревателя службы хранилища Microsoft Azure
-      href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Доступность Обозревателя службы хранилища
-      href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Публикация веб-приложения ASP.NET в виртуальную машину Azure
+      href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Публикация веб-приложения в облачных службах Azure
+      href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
+- name: Подключение к службам Azure
   expanded: false
+  items:
+    - name: Добавление Службы хранилища Azure
+      href: vs-azure-tools-connected-services-storage.md
+    - name: Добавление Azure Active Directory (AD)
+      href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Добавление мобильных служб
+      href: vs-azure-tools-connected-services-add-mobile-services.md
+- name: Разработка облачных служб Azure
+  expanded: false
+  items:
+    - name: Работа с проектами облачных служб
+      items:
+        - name: Доступ к частным облакам Azure
+          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
+        - name: Создание проекта облачной службы Azure
+          href: vs-azure-tools-azure-project-create.md
+        - name: Управление ролями в облачных службах Azure
+          href: vs-azure-tools-cloud-service-project-managing-roles.md
+        - name: Подготовка к публикации или развертыванию облачной службы
+          href: vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md
+        - name: Сохранение постоянного виртуального IP-адреса для облачной службы Azure
+          href: vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md
+        - name: Создание проектов Azure из командной строки
+          href: vs-azure-tools-command-line-build.md
+        - name: Настройка ролей облачной службы Azure
+          href: vs-azure-tools-configure-roles-for-cloud-service.md
+        - name: Настройка проекта облачной службы Azure
+          href: vs-azure-tools-configuring-an-azure-project.md
+        - name: Настройка нескольких конфигураций службы в проекте Azure
+          href: vs-azure-tools-multiple-services-project-configurations.md
+        - name: Обновление проектов до текущей версии инструментов Azure
+          href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
+    - name: Тестирование и отладка облачной службы
+      items:
+        - name: Отладка облачной службы или виртуальной машины Azure
+          href: vs-azure-tools-debug-cloud-services-virtual-machines.md
+        - name: Узнайте о различных способах отладки облачной службы Azure.
+          href: vs-azure-tools-debugging-cloud-services-overview.md
+        - name: Настройка системы диагностики для облачных служб и виртуальных машин Azure
+          href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
+        - name: Использование Emulator Express для запуска и отладки облачной службы Azure на локальном компьютере
+          href: vs-azure-tools-emulator-express-debug-run.md
+        - name: Отладка опубликованной облачной службы Azure с помощью IntelliTrace
+          href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
+        - name: Тестирование производительности облачной службы
+          href: vs-azure-tools-performance-profiling-cloud-services.md
+        - name: Оптимизация кода Azure
+          href: vs-azure-tools-optimizing-azure-code-in-visual-studio.md
+    - name: Публикация облачной службы в Azure
+      items:
+        - name: Перенос и публикация веб-приложения в облачную службу Azure
+          href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
+        - name: Использование мастера публикации приложений Azure в Visual Studio
+          href: vs-azure-tools-publish-azure-application-wizard.md
+        - name: Публикация облачной службы из Visual Studio
+          href: vs-azure-tools-publishing-a-cloud-service.md
+        - name: Использование скриптов Windows PowerShell для публикации в тестовую среду и среду разработки
+          href: vs-azure-tools-publishing-using-powershell-scripts.md
+        - name: Publish-WebApplicationVM (сценарий Windows PowerShell)
+          href: vs-azure-tools-publish-webapplicationvm.md
+        - name: Publish-WebApplicationWebSite (сценарий Windows PowerShell)
+          href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
+        - name: Управление конфигурациями и профилями службы
+          href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
+        - name: Настройка учетных данных для проверки подлинности
+          href: vs-azure-tools-setting-up-named-authentication-credentials.md
+    - name: Работа со Службой хранилища Azure
+      items:
+        - name: Начало работы с Обозревателем службы хранилища
+          href: /azure/vs-azure-tools-storage-manage-with-storage-explorer?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+        - name: Настройка и использование эмулятора хранения
+          href: /azure/vs-azure-tools-storage-emulator-using?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+        - name: Создание строк фильтра для конструктора таблиц
+          href: vs-azure-tools-table-designer-construct-filter-strings.md
+        - name: Управление ресурсами хранилища BLOB-объектов Azure с помощью Обозревателя службы хранилища
+          href: /azure/vs-azure-tools-storage-explorer-blobs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+        - name: Использование Обозревателя службы хранилища с хранилищем файлов Azure
+          href: /azure/vs-azure-tools-storage-explorer-files?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+        - name: Заметки о выпуске Обозревателя службы хранилища Microsoft Azure
+          href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+        - name: Доступность Обозревателя службы хранилища
+          href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Cloud Explorer
   items:
-  - name: Просмотр и администрирование ресурсов хранилища с помощью обозревателя сервера
-    href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
-  - name: Управление ресурсами, связанными с учетными записями Azure, в Cloud Explorer
-    href: vs-azure-tools-resources-managing-with-cloud-explorer.md
-  - name: Доступ к виртуальным машинам Azure из обозревателя сервера
-    href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-ms.openlocfilehash: 32d3d25dce14c40fb4d080d6467696695e9aec99
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001043"
+    - name: Просмотр и администрирование ресурсов хранилища с помощью обозревателя сервера
+      href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
+    - name: 'Управление ресурсами, связанными с учетными записями Azure, в Cloud Explorer'
+      href: vs-azure-tools-resources-managing-with-cloud-explorer.md
+    - name: Доступ к виртуальным машинам Azure из обозревателя сервера
+      href: vs-azure-tools-virtual-machines-access-from-server-explorer.md

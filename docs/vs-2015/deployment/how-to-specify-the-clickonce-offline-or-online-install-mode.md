@@ -1,14 +1,9 @@
 ---
-title: 'Практическое: укажите ClickOnce в автономный режим или режим Интернет-установки | Документация Майкрософт'
-ms.custom: ''
+title: Практическое руководство. Укажите ClickOnce в автономный режим или режим Интернет-установки | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,38 +18,38 @@ ms.assetid: 0aee5fc1-e966-4bda-9b8f-d9997aeaa779
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: b243811f2c6c36266443cd34e0e37ddd01390f87
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d4111ca5aee4a405a4a797dbfee14a3d4b50435f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149750"
 ---
-# <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Практическое руководство. Задание режима установки ClickOnce: автономного или через Интернет
+# <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Практическое руководство. Задание режима установки ClickOnce: автономно или через Интернет
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 `Install Mode` Для [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] приложения определяет, будут ли приложения доступны в автономном или интерактивном режиме. При выборе **приложение доступно только из сети**, пользователь должен иметь доступ к [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] расположение публикации (веб-страницы или общей папки) для запуска приложения. При выборе **приложение будет доступно в автономном режиме**, оно добавляет элементы к **запустить** меню и **Установка и удаление программ** диалоговое окно; пользователь — может запустить приложение, когда они не подключены.  
   
  `Install Mode` Может устанавливаться на **публикации** странице **конструктор проектов**.  
   
- **Примечание** `Install Mode` также можно задать с помощью мастера публикации. Дополнительные сведения см. в разделе [как: публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+ **Примечание** `Install Mode` также можно задать с помощью мастера публикации. Дополнительные сведения см. в разделе [Практическое руководство. опубликовать приложение ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>Чтобы сделать приложение ClickOnce доступным через Интернет только  
   
-1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Нажмите кнопку **публикации** вкладки.  
+2. Перейдите на вкладку **Публикация**.  
   
-3.  В **режим установки и параметры** область, нажмите кнопку **приложение доступно только из сети** переключатель.  
+3. В **режим установки и параметры** область, нажмите кнопку **приложение доступно только из сети** переключатель.  
   
 ### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>Чтобы сделать приложение ClickOnce доступным сети или автономно  
   
-1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.  
   
-2.  Нажмите кнопку **публикации** вкладки.  
+2. Перейдите на вкладку **Публикация**.  
   
-3.  В **режим установки и параметры** область, нажмите кнопку **приложение будет доступно в автономном режиме** переключатель.  
+3. В **режим установки и параметры** область, нажмите кнопку **приложение будет доступно в автономном режиме** переключатель.  
   
      При установке приложения добавляет записи для **запустить** меню и **Установка и удаление программ** панели управления.  
   
@@ -62,6 +57,3 @@ ms.locfileid: "49266075"
  [Публикация приложений ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [Выбор стратегии развертывания ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
-
-
-

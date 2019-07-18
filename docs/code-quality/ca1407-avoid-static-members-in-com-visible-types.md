@@ -1,7 +1,6 @@
 ---
 title: CA1407. Не используйте статические члены в типах, видимых для COM
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1407
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bebd0776-ad04-453c-bca8-8c124c2d7840
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f72949326cf52455013c20419202b358b06d8b0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b09122aebdc02b9eacb32df596914a0a08a9ea9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546262"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407. Не используйте статические члены в типах, видимых для COM
 
@@ -79,7 +78,7 @@ namespace Samples
 
 ## <a name="example-fix"></a>Пример исправления
 
-### <a name="description"></a>Описание:
+### <a name="description"></a>Описание
  Чтобы устранить нарушение в предыдущем примере, можно изменить метод на метод экземпляра, но, не имеет смысла в данном экземпляре. Лучшим решением является явное применение `ComVisible(false)` в метод, чтобы сделать его снимите флажок, чтобы другие разработчики, что метод не видны из COM.
 
  В следующем примере применяется <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> методу.

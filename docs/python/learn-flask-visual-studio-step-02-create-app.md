@@ -3,21 +3,20 @@ title: Руководство по Flask в Visual Studio. Шаг 2. Предс
 titleSuffix: ''
 description: Пошаговое руководство по основам Flask в контексте проектов Visual Studio, в особенности сведения о создании приложения и использовании представлений и шаблонов.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 85c592145708adf713589d5844861dc8ee3133c8
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961767"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Шаг 2. Создание приложения Flask с представлениями и шаблонами страниц
 
@@ -78,6 +77,7 @@ ms.locfileid: "54060752"
 
         app.run(HOST, PORT)
     ```
+
 6. Структура проекта должна выглядеть следующим образом:
 
     ![Структура проекта после рефакторинга кода](media/flask/step02-project-structure.png)

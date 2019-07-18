@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Заполнение документов данными из объектов
+title: Практическое руководство. Заполнение документов данными из объектов
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5333b3d6f9ba107bde21bbc23566940ee5dbf80d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7cb221715ef1c2a50bc60e1725db3b1d8721f165
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967726"
 ---
-# <a name="how-to-populate-documents-with-data-from-objects"></a>Как выполнить Заполнение документов данными из объектов
+# <a name="how-to-populate-documents-with-data-from-objects"></a>Практическое руководство. Заполнение документов данными из объектов
 
 Доступ к данным в объекте данных в проектах уровня документа Microsoft Office Word осуществляется точно так же, как в проектах Windows Forms. Для получения данных из объекта в решении можно использовать те же средства и компоненты кода. Также можно использовать элементы управления Windows Forms для отображения данных. Кроме того, данные можно показать с помощью элементов управления ведущего приложения. Элементы управления ведущего приложения представляют собой управляемые объекты Microsoft Office Word, дополненные событиями и функциями привязки данных. Дополнительные сведения см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).
 
@@ -28,11 +28,11 @@ ms.locfileid: "53960619"
 
 Чтобы заполнить документ данными из объекта, необходимо выполнить три основных действия:
 
--   добавить в документ элемент управления, который можно привязать к данным;
+- добавить в документ элемент управления, который можно привязать к данным;
 
--   добавить данные из объекта в документ;
+- добавить данные из объекта в документ;
 
--   подключить объект данных к BindingSource.
+- подключить объект данных к BindingSource.
 
 ## <a name="to-add-a-data-object"></a>Добавление объекта данных
 
@@ -48,23 +48,23 @@ ms.locfileid: "53960619"
 
 Для подключения объект данных к BindingSource:
 
-1.  Перетащите нужное поле данных из окна **Источники данных** в документ. При этом автоматически создается элемент управления.
+1. Перетащите нужное поле данных из окна **Источники данных** в документ. При этом автоматически создается элемент управления.
 
-2.  Создайте в коде экземпляр типа объекта, выбранного в качестве источника данных.
+2. Создайте в коде экземпляр типа объекта, выбранного в качестве источника данных.
 
-3.  Присвойте этот экземпляр свойству <xref:System.Windows.Forms.BindingSource.DataSource%2A> объекта <xref:System.Windows.Forms.BindingSource>.
+3. Присвойте этот экземпляр свойству <xref:System.Windows.Forms.BindingSource.DataSource%2A> объекта <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="application-level-projects"></a>Проекты уровня приложения
 
 Для подключения объект данных к BindingSource:
 
-1.  Создайте в коде экземпляр типа объекта, связанного с источником данных.
+1. Создайте в коде экземпляр типа объекта, связанного с источником данных.
 
-2.  Создайте экземпляр класса <xref:System.Windows.Forms.BindingSource>.
+2. Создайте экземпляр класса <xref:System.Windows.Forms.BindingSource>.
 
-3.  Присвойте экземпляр источника данных свойству <xref:System.Windows.Forms.BindingSource.DataSource%2A> объекта <xref:System.Windows.Forms.BindingSource>.
+3. Присвойте экземпляр источника данных свойству <xref:System.Windows.Forms.BindingSource.DataSource%2A> объекта <xref:System.Windows.Forms.BindingSource>.
 
-4.  Добавьте источник данных как привязку данных к элементу управления.
+4. Добавьте источник данных как привязку данных к элементу управления.
 
 ## <a name="see-also"></a>См. также
 

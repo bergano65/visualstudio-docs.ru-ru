@@ -1,14 +1,9 @@
 ---
 title: Лексическая иерархия символьных типов | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0f9fa295a7faa85a0b7a7b3268702c4199869754
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e70b83046c41b13cb51324eb63e81b26a118a81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403505"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Лексическая иерархия символьных типов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51783263"
   
 ## <a name="symbol-types"></a>Типы символов  
   
-|Тип символа|Описание:|  
+|Тип символа|Описание|  
 |-----------------|-----------------|  
 |[Комментарий](../../debugger/debug-interface-access/annotation.md)|Задает расположение с заметками в программном коде.|  
 |[Block](../../debugger/debug-interface-access/block.md)|Задает вложенные области в функции.|  
@@ -51,13 +46,10 @@ ms.locfileid: "51783263"
 |[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Указывает `namespace`идентификатор.|  
   
 > [!NOTE]
->  Дополнительные свойства могут быть доступны в зависимости от типа символа. Эти свойства перечислены в разделах отдельных символов.  
+> Дополнительные свойства могут быть доступны в зависимости от типа символа. Эти свойства перечислены в разделах отдельных символов.  
   
 ## <a name="see-also"></a>См. также  
  [Иерархия классов символьных типов](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
  [Символы и теги символов](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
  [Перечисление SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

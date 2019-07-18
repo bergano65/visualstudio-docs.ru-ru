@@ -12,10 +12,9 @@
 ### [Скачивание программного обеспечения](subscriber-downloads.md)
 #### [Список доступного для скачивания программного обеспечения](software-download-list.md)
 ### [Получение ключей продукта и управление ими](product-keys.md)
-### Visual Studio Dev Essentials
-#### [Присоединение к программе Visual Studio Dev Essentials](join-dev-essentials.md)
-#### [Выход из программы Visual Studio Dev Essentials](leave-vsde.md)
+### [Visual Studio с GitHub Enterprise](access-github.md)
 ### [Преимущества для подписчиков](subscriber-benefits.md)
+### [Visual Studio Dev Essentials](join-dev-essentials.md)
 ## Использование преимуществ для подписчиков
 ### Инструменты
 #### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md)
@@ -30,15 +29,12 @@
 #### [Enterprise Mobility + Security](vs-ems.md)
 #### [Учетная запись разработчика Windows](vs-windows-dev.md)
 #### [Подписка на Office 365](vs-office365.md)
-#### [Power BI Pro ](vs-pbi.md)
-#### [Современные требования для TFS](vs-modernreq.md)
+#### [Power BI Pro](vs-pbi.md)
 #### [Оплата за Azure по мере использования](vs-azure-payg.md)
 ### [Профессиональное развитие](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Skill Me Up](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
-#### [Обучение Xamarin University](vs-xamarin.md)
 #### [Подписка на журнал MSDN](vs-msdn.md)
 ### [Преимущества поддержки](technical-support.md)
 #### [Чат с Помощником по Azure](vs-azure-advisory-chat.md)
@@ -68,8 +64,10 @@
 #### [Поиск подписки](search-license.md)
 #### [Экспорт подписок](exporting-subscriptions.md)
 #### [Превышение доступности](handle-overclaimed-license.md)
+#### [Использование максимума](maximum-usage.md)
 #### [Подписки, срок действия которых истек](handle-expired-license.md)
 #### [Подписчики, которые используют для входа личную электронную почту](personal-email-sign-ins.md)
+### [Управление Visual Studio в GitHub Enterprise](assign-github.md)
 ## Приобретение подписок на Visual Studio
 ### [Сравнение вариантов подписок](https://visualstudio.microsoft.com/vs/pricing)
 ### Приобретение подписок на облачные службы
@@ -81,7 +79,7 @@
 #### [Управление подписками для MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
 ## Ресурсы
-### [Технический документ по лицензированию Visual Studio](http://aka.ms/vslicensing)
+### [Технический документ по лицензированию Visual Studio](https://aka.ms/vslicensing)
 ### [Сравнение вариантов подписок и цен на них](https://visualstudio.microsoft.com/vs/pricing)
 ### [Сравнение возможностей интегрированной среды разработки Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 ### [Поддержка по администрированию и подпискам Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

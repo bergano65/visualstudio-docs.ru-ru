@@ -1,11 +1,10 @@
 ---
 title: Рефакторинг — переименование
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a24c8a44cbd7d3c889d92c34c9eac0c5b015be65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b18f5763d68487e7642f5632c05516d2f1bd9e2
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881014"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500941"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Рефакторинг для переименования символов кода
 
@@ -69,10 +68,13 @@ ms.locfileid: "53881014"
 
 4. Если вы довольны результатами, выберите **Применить** или нажмите клавишу **ВВОД**, чтобы зафиксировать изменения.
 
-> [!NOTE]
-> Если вы использовали уже существующее имя и это привело к конфликту, в диалоговом окне **Переименование** отобразится предупреждение.
->
-> ![Конфликт переименования](media/rename-conflict-cs.png)
+## <a name="remarks"></a>Примечания
+
+- Если вы использовали уже существующее имя и это привело к конфликту, в диалоговом окне **Переименование** отобразится предупреждение.
+
+   ![Конфликт переименования](media/rename-conflict-cs.png)
+
+- Другой способ переименования символа — изменение его имени в редакторе. Наведя курсор на имя символа, нажмите клавишу **Ctrl**+ **.** или просто разверните меню значка лампочки и выберите **Переименовать \<старое имя > на \<новое имя >** .
 
 ## <a name="see-also"></a>См. также
 

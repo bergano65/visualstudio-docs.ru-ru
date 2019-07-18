@@ -1,7 +1,6 @@
 ---
 title: CA1806. Не игнорируйте результаты метода
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1806
@@ -16,13 +15,13 @@ dev_langs:
 - CPP
 - CSharp
 - VB
-manager: douge
-ms.openlocfilehash: 865c4d26758021b0f0200f7834d02cd34f22bc8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: d2a1dd9984601afa34e4aac7fa5ddc24061cf6ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797054"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806. Не игнорируйте результаты метода
 
@@ -54,7 +53,7 @@ ms.locfileid: "53954202"
 
  Если метод A вызывает метод B, но не использует новый экземпляр строки, возвращаемое методом, B. Передайте экземпляр в качестве аргумента другому методу, присвойте экземпляр переменной. Или удалите вызов, если он не нужен.
 
- - или -
+ -или-
 
  Если метод A вызывает метод B, но не использует HRESULT или код ошибки, метод возвращает. Используйте результат в условном операторе, присвоить результат переменной или передайте его в качестве аргумента другому методу.
 

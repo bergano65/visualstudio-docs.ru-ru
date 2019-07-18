@@ -1,25 +1,20 @@
 ---
 title: Создание базовых отчетов профилирования из командной строки | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30361f0f4ae147458252400a5232a657574553d4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5f13921dea810ab2185e626cc2889f339d9d174f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537193"
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Создание базовых отчетов профилирования из командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +54,3 @@ ms.locfileid: "51786771"
 |**Contention**|Состязания за ресурсы.|-   [Состязания за ресурсы](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|Перечисляет проблемы правил производительности.|— Перечисляются идентификатор CheckId, описание и расположение исходного кода, в котором имеется проблема с правилом.|  
 |**ETW**|Перечисляются события трассировки событий Windows, собранные в ходе сеанса профилирования.|-   [Отчет по трассировке событий Windows](../profiling/event-tracing-for-windows-etw-report.md)|
-
-
-

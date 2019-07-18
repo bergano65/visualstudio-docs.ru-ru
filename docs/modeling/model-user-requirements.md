@@ -7,16 +7,15 @@ helpviewer_keywords:
 - stories
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9101c6f264d3f4017581a6732e9b93f78e33215d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814578"
 ---
 # <a name="model-user-requirements"></a>Моделирование требований пользователей
 
@@ -57,7 +56,7 @@ Visual Studio помогает понимать и обсуждать потре
 
 Обратите внимание, что большинство типов схем можно использовать и для других целей. Общие сведения о типах схем см. в разделе [Создание моделей для приложения](../modeling/create-models-for-your-app.md).
 
-##  <a name="BusinessRules"></a> Showing Business Rules
+## <a name="BusinessRules"></a> Showing Business Rules
 
 Бизнес-правило — это требование, не связанное с определенным вариантом использования, которое необходимо соблюдать во всех частях системы.
 
@@ -77,19 +76,19 @@ Visual Studio помогает понимать и обсуждать потре
 |-|-|
 |Разработка кода в соответствии с бизнес-правилами|[Моделирование архитектуры приложения](../modeling/model-your-app-s-architecture.md)|
 
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
 Существует несколько категорий требований к качеству обслуживания. В их число входят следующие.
 
--   Производительность
+- Производительность
 
--   Безопасность
+- Безопасность
 
--   Удобство использования
+- Удобство использования
 
--   Надежность
+- Надежность
 
--   Устойчивость
+- Устойчивость
 
 Некоторые из этих требований можно включить в описания конкретных вариантов использования. Другие требования не относятся к вариантам использования, поэтому рекомендуется записать их в отдельный документ. По возможности рекомендуется придерживаться словаря, определенного в модели требований. Обратите внимание на то, что главные слова, используемые в требованиях, являются названиями субъектов, вариантов применения и классов из предыдущих иллюстраций.
 

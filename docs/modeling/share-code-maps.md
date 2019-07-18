@@ -4,16 +4,15 @@ ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c80c99effebab8d2dffa53621af8f7c60bcad629
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70c4cd238b6e5d31eced6a35ff0c7d24ab85a280
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003112"
 ---
 # <a name="share-code-maps"></a>Совместное использование карт кода
 
@@ -23,7 +22,7 @@ ms.locfileid: "53900812"
 
 Для сохранения карты используйте меню **Файл** .
 
-- или -
+-или-
 
 Чтобы сохранить карту как часть определенного проекта, на панели инструментов карты, выберите **общего ресурса** > **переместить \<Имя_карты_кода > .dgml в**и выберите проект, в котором вы хотите сохранить карта.
 

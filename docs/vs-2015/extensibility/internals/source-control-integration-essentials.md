@@ -1,14 +1,9 @@
 ---
 title: Источника Essentials Интеграция управления | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9893d5525bf66b167dea170c0c5fae8285aa40af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b9189b647baa29d72975f84172696ecb54cd7f87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183434"
 ---
 # <a name="source-control-integration-essentials"></a>Основные элементы интеграции системы управления версиями
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "51780975"
   
 1. Создать библиотеку DLL, который реализует функции, указанные в [подключаемых модулей системы управления версиями](../../extensibility/source-control-plug-ins.md).  
   
-2. Регистрации библиотеки DLL, сделав соответствующие записи в реестр, как описано в разделе [как: установить подключаемый модуль системы управления источника](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
+2. Регистрации библиотеки DLL, сделав соответствующие записи в реестр, как описано в разделе [как: Установка подключаемого модуля системы управления версиями](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
   
 3. Создать вспомогательный объект пользовательского интерфейса и отобразить ее при появлении запроса адаптера пакет системы управления версиями ( [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] компонент, который обрабатывает функции системы управления версиями через подключаемых модулей системы управления версиями).  
   
@@ -61,4 +56,3 @@ ms.locfileid: "51780975"
  [Обзор](../../extensibility/internals/source-control-integration-overview.md)   
  [Создание подключаемого модуля системы управления версиями](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Создание пакета VSPackage системы управления версиями](../../extensibility/internals/creating-a-source-control-vspackage.md)
-

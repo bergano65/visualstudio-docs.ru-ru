@@ -1,8 +1,7 @@
 ---
-title: Интерфейс IObjectIdentity | Документы Microsoft
+title: Интерфейс IObjectIdentity | Документация Майкрософт
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e85c5dac657684cfd3113ba403ebb25a75b49a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3d6b12a1c23886cacc6fa317b86ea925d4bca636
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944905"
 ---
 # <a name="iobjectidentity-interface"></a>Интерфейс IObjectIdentity
 Помимо методов, наследуемых от `IUnknown`, `IObjectIdentity` интерфейс предоставляет следующие методы.  
@@ -28,4 +27,4 @@ ms.locfileid: "24728914"
   
 |Метод|Описание|  
 |------------|-----------------|  
-|[IObjectIdentity::IsEqualObject](../../winscript/reference/iobjectidentity-isequalobject.md)|Определяет, является ли объект равен текущему объекту.|
+|[IObjectIdentity::IsEqualObject](../../winscript/reference/iobjectidentity-isequalobject.md)|Определяет, если объект равен текущему объекту.|

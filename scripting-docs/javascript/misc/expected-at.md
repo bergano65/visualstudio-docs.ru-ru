@@ -1,14 +1,9 @@
 ---
 title: Ожидалось "@" | Документация Майкрософт
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1032
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 191402a9ba265e5acfb15d1931e260f6b366687e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: aa2728306d9e650bf7f8b446b6af5a409a39d0e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935256"
 ---
-# <a name="expected-"></a>Ожидался символ "@"
+# <a name="expected-"></a>Ожидалось "\@"
 Предпринята попытка создать переменную для использования с операторами условной компиляции с помощью `@set` инструкции, но не поместил знак "**@**" перед именем переменной.  
   
 ### <a name="to-correct-this-error"></a>Исправление ошибки  
   
--   Добавьте знак "**@**" непосредственно перед именем переменной. Пример:  
+- Добавьте знак "**@**" непосредственно перед именем переменной. Пример:  
   
     ```JavaScript  
     @set @myvar = 1  

@@ -1,22 +1,24 @@
 ---
 layout: LandingPage
 title: Отладка приложений | Документация Майкрософт
-description: Узнайте, как с помощью Visual Studio 2017 отлаживать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
+description: Узнайте, как с помощью Visual Studio отлаживать приложения, службы и инструменты для платформ и устройств на используемом вами языке.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: 79a3aa8fd2d86b7c64d719dc745138b970b92d3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f3bf5cc1dd11e0062ca849f16fb806fa756e2203
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846359"
 ---
 # <a name="debugging-in-visual-studio"></a>Отладка в Visual Studio
 
 Отладчик Visual Studio позволяет вести наблюдение за поведением программы во время выполнения и выявлять проблемы. Отладчик работает со всеми языками программирования Visual Studio и библиотеками. С помощью отладчика можно прерывать или приостанавливать выполнение программы с целью проверки кода, вычислять и редактировать значения переменных программы, отслеживать состояние регистров, просматривать инструкции, созданные из исходного кода, а также просматривать область памяти, используемую приложением.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -48,25 +50,7 @@ ms.locfileid: "53886641"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Написание кода C# с меньшим количеством ошибок</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_video.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Видео об использовании отладчика</h3>
+                        <h3>Методы и инструменты отладки</h3>
                     </div>
                 </div>
             </div>

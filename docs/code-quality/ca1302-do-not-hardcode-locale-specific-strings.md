@@ -1,7 +1,6 @@
 ---
 title: CA1302. Не указывайте прямо в коде строки, зависящие от языковых стандартов
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotHardcodeLocaleSpecificStrings
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 05ed134a-837d-43d7-bf97-906edeac44ce
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b05f1aa31a38ff4f8e707d53d062abe3d10617fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a52add4453276ebf415b47f7f50e74b51a573306
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546535"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302. Не указывайте прямо в коде строки, зависящие от языковых стандартов
 

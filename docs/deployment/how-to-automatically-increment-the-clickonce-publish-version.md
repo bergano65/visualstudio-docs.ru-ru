@@ -1,5 +1,5 @@
 ---
-title: Как выполнить Автоматически ClickOnce увеличение номера версии публикации | Документация Майкрософт
+title: Практическое руководство. Автоматически ClickOnce увеличение номера версии публикации | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b17a0c54ba0efa7a6eb732de45fa7d1644577041
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: cce9dfe48e34d642b115c8391de73c0350ce515b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928502"
 ---
-# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Как выполнить автоматическое увеличение номера версии публикации ClickOnce
+# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Практическое руководство. автоматическое увеличение номера версии публикации ClickOnce
 
 При публикации [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] приложения, изменив `Publish Version` свойство заставляет приложение публикуется как обновление. По умолчанию Visual Studio автоматически увеличивает `Revision` число `Publish Version` при каждой публикации приложения.
 
@@ -35,11 +35,11 @@ ms.locfileid: "53861401"
 
 ## <a name="to-disable-automatically-incrementing-the-publish-version"></a>Автоматическое отключение увеличения номера версии публикации
 
-1.  Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.
+1. Выберите проект в **обозревателе решений**, а затем в меню **Проект** щелкните **Свойства**.
 
-2.  Перейдите на вкладку **Публикация**.
+2. Перейдите на вкладку **Публикация**.
 
-3.  В **версия публикации** снимите **автоматически увеличивать номер редакции при каждой редакции** "флажок".
+3. В **версия публикации** снимите **автоматически увеличивать номер редакции при каждой редакции** "флажок".
 
 ## <a name="see-also"></a>См. также
 

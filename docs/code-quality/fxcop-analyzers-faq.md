@@ -1,21 +1,20 @@
 ---
 title: Анализ кода FxCop и анализаторы FxCop
 ms.date: 09/06/2018
-ms.prod: visual-studio-dev15
-ms.topic: overview
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83b9fb827ea413952713284073b712594fd26d52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904959"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037265"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Часто задаваемые вопросы, посвященные FxCop и анализаторам FxCop
 
@@ -32,7 +31,7 @@ ms.locfileid: "53904959"
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Запускаются ли анализаторы FxCop с помощью команды "Запустить анализ кода"?
 
-Нет. Если выбрать команду **Анализ** > **Запустить анализ кода** в среде Visual Studio 2017, будет выполнен статический анализ кода (устаревшие функции FxCop). Команда **Запустить анализ кода** не применяется к анализаторам на основе платформы Roslyn, в том числе к анализаторам FxCop на основе Roslyn.
+Нет. Если выбрать команду **Анализ** > **Запустить анализ кода**, будет выполнен статический анализ кода или устаревшие функции FxCop. Команда **Запустить анализ кода** не применяется к анализаторам на основе платформы Roslyn, в том числе к анализаторам FxCop на основе Roslyn.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>Запускаются ли анализаторы с помощью свойства проекта msbuild RunCodeAnalysis?
 
@@ -41,6 +40,18 @@ ms.locfileid: "53904959"
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>Каким образом следует запускать анализаторы FxCop?
 
 Для запуска анализаторов FxCop сначала необходимо [установить соответствующий пакет NuGet](install-fxcop-analyzers.md). После этого следует построить проект или решение из среды Visual Studio или с помощью msbuild. Возвращаемые анализаторами FxCop предупреждения и ошибки выводятся в **списке ошибок** или в окне командной строки.
+
+## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Я получаю предупреждение CA0507 даже после установки пакета NuGet анализаторов FxCop
+
+Если вы установили анализаторы FxCop, но продолжаете получать предупреждение CA0507, **выполнять анализ кода не рекомендуется. Лучше использовать анализаторы FxCop, которые запускаются во время сборки**. Вам может потребоваться установить свойство msbuild **RunCodeAnalysis** в файле проекта в значение **false**. В противном случае анализ статического кода будет выполняться после каждой сборки.
+
+```xml
+<RunCodeAnalysis>false</RunCodeAnalysis>
+```
+
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Какие правила были перенесены анализаторы FxCop?
+
+Сведения о том, какие правила анализа статического кода были перенесены [анализаторы FxCop](install-fxcop-analyzers.md), см. в разделе [состояние порта правила Fxcop](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>См. также
 

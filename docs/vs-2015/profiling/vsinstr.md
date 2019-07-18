@@ -1,14 +1,9 @@
 ---
 title: VSInstr | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, instrumentation
 - instrumentation, VSInstr tool
@@ -22,13 +17,13 @@ ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 caps.latest.revision: 49
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d905a7a6fa99afa0e7d43409ca1d7b53e7fbd9b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 09562c3372a6dd933d3656f1b2f7ccf7ca68109d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773331"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54771040"
 ---
 # <a name="vsinstr"></a>VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ VSInstr [/U] filename [/options]
   
  В приведенной ниже таблице описываются параметры средства VSInstr.  
   
-|Параметры|Описание:|  
+|Параметры|Описание|  
 |-------------|-----------------|  
 |**Help** или **?**|Вывод справки.|  
 |**U**|Запись перенаправленного вывода на консоль в кодировке Юникода. Этот параметр необходимо указывать первым.|  
@@ -63,12 +58,9 @@ VSInstr [/U] filename [/options]
 |**SuspendOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|Прекращает сбор данных в ходе сеанса профилирования. При этом в указанном расположении вставляется API-функция SuspendProfile.<br /><br /> **Before** — непосредственно перед точкой входа целевой функции.<br /><br /> **After** — непосредственно после точки выхода целевой функции.<br /><br /> **Top** — непосредственно после точки входа целевой функции.<br /><br /> **Bottom** — непосредственно перед каждой точкой возврата из целевой функции.<br /><br /> `funcname` — имя целевой функции.<br /><br /> Если целевая функция содержит функцию StartProfile, функция SuspendProfile вставляется перед ней.|  
 |**ResumeOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|Начинает или возобновляет сбор данных в ходе сеанса профилирования.<br /><br /> Обычно используется для возобновления профилирования после его приостановки с помощью параметра **SuspendOnly**. При этом в указанном расположении вставляется API-функция ResumeProfile.<br /><br /> **Before** — непосредственно перед точкой входа целевой функции.<br /><br /> **After** — непосредственно после точки выхода целевой функции.<br /><br /> **Top** — непосредственно после точки входа целевой функции.<br /><br /> **Bottom** — непосредственно перед каждой точкой возврата из целевой функции.<br /><br /> `funcname` — имя целевой функции.<br /><br /> Если целевая функция содержит функцию StopProfile, функция ResumeProfile вставляется после нее.|  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
  [Предупреждения средства VSInstr](../profiling/vsinstr-warnings.md)   
  [Представления отчетов о производительности](../profiling/performance-report-views.md)
-
-
-

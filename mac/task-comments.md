@@ -1,16 +1,16 @@
 ---
 title: Комментарии к задачам
 description: Добавление комментариев к задаче в код
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: 3caef73ba46afd8eaf90826540248cb2d5c4efef
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d88b74ab953f97e061f4be3befc227646006f38b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294283"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692313"
 ---
 # <a name="task-comments"></a>Комментарии к задачам
 
@@ -18,7 +18,7 @@ ms.locfileid: "51294283"
 
 ![Параметры списка задач](media/source-editor-image10.png)
 
-Чтобы добавить новую заметку задачи, добавьте заметку, содержащую ключевое слово этой задачи. Пример:
+Чтобы добавить новую заметку задачи, добавьте заметку, содержащую ключевое слово этой задачи. Например:
 
 ```csharp
 //TODO: Finish this for all properties.

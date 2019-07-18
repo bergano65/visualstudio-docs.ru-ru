@@ -1,20 +1,19 @@
 ---
 title: Как выполнить Создание простейшего шейдера цвета с моделью освещения Фонга
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef3120142b2d6fae7c8ee02c81f6ae76efb0aaaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 131afbaf4fcbdf5456a6276a36c551a47b663eec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897789"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Как выполнить Создание простейшего шейдера цвета с моделью освещения Фонга
 

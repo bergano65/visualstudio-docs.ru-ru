@@ -1,26 +1,21 @@
 ---
 title: Пример расширения закодированного теста пользовательского интерфейса для Excel | Документ Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, extensions for Excel
 ms.assetid: 451e4d14-7fac-42f9-af56-2bdc8414c6c7
 caps.latest.revision: 15
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5ccc315b62ffa2e7c70f992a560e55c80eb86dc8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e8e3bebc82ffc2f714a6418afdb73de9092aab55
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158203"
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Пример расширения закодированного теста пользовательского интерфейса для Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +53,3 @@ ms.locfileid: "49306622"
  [Класс ActionFilter](../test/sample-excel-extension-actionfilter-class.md)   
  [Классы Element](../test/sample-excel-extension-element-classes.md)   
  [Класс PropertyProvider](../test/sample-excel-extension-propertyprovider-class.md)
-
-
-

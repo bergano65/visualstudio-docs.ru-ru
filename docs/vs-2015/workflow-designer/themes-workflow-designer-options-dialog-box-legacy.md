@@ -1,11 +1,8 @@
 ---
 title: Темы, конструктор рабочих процессов, параметры (для прежних версий) | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.WorkflowDesigner.Themes
@@ -16,13 +13,13 @@ ms.assetid: 71150631-4674-4568-bce8-570bef3780ad
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4bbf3b934a58aed06f95ee567795d71adfaf71b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 03b96f80a6b595a3f037bd0b08111540fa5b4ca2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976725"
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Диалоговое окно «Темы, конструктор рабочих процессов, параметры» (для прежних версий)
 Здесь описывается, как использовать **темы, конструктор рабочих процессов, параметры** диалогового окна в прежних версий [!INCLUDE[wfd1](../includes/wfd1-md.md)]. [!INCLUDE[wfd2](../includes/wfd2-md.md)] прежних версий используется при создании приложений для [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] или [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

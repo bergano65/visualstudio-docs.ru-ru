@@ -1,14 +1,9 @@
 ---
-title: 'Исключениями: System.ServiceModel.Security.MessageSecurityException | Документация Майкрософт'
-ms.custom: ''
+title: 'Устранение исключений: System.ServiceModel.Security.MessageSecurityException | Документация Майкрософт'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: troubleshooting
 helpviewer_keywords:
 - System.ServiceModel.Security.MessageSecurityException exception
 - MessageSecurityException exception
@@ -16,22 +11,22 @@ ms.assetid: 61ad69a1-ac50-49de-9a7c-8454a84ec5bd
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7d13f5cc282026b1590f59180ed7f25312bb926
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: db8c0c092ad8bc1435f939c862cf3fa7fc52179e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742481"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689149"
 ---
-# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Разрешение вопросов, связанных с исключениями: System.ServiceModel.Security.MessageSecurityException
+# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Устранение исключений: System.ServiceModel.Security.MessageSecurityException
 Объект <xref:System.ServiceModel.Security.MessageSecurityException> исключение создается, когда [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] определяет, что сообщение не защищено правильно или было изменено. Эта ошибка возникает чаще всего, если выполняются все следующие условия:  
   
--   Для связи веб–узла или проекта веб–приложения со службой WCF (.svc) используется ссылка на службу WCF через удаленное подключение, такое как подключение к удаленному рабочему столу или службы терминалов.  
+- Для связи веб–узла или проекта веб–приложения со службой WCF (.svc) используется ссылка на службу WCF через удаленное подключение, такое как подключение к удаленному рабочему столу или службы терминалов.  
   
--   У вас нет прав администратора на удаленном веб–узле.  
+- У вас нет прав администратора на удаленном веб–узле.  
   
--   Запросы к localhost на удаленном веб–узле обрабатываются [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server.  
+- Запросы к localhost на удаленном веб–узле обрабатываются [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server.  
   
 ## <a name="associated-tips"></a>Полезные советы  
  **Устранение проблем с проверкой подлинности NTLM при использовании ASP.Net Development Server.**  
@@ -40,7 +35,7 @@ ms.locfileid: "51742481"
  Если удаленный пользователь может запустить веб–узел с помощью [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server, а также работать с веб–службой или службой WCF, можно создать пользовательскую привязку службы или отключить безопасность NTLM.  
   
 > [!IMPORTANT]
->  Не рекомендуется отключать безопасность NTLM. Это может представлять угрозу безопасности.  
+> Не рекомендуется отключать безопасность NTLM. Это может представлять угрозу безопасности.  
   
  При создании пользовательской привязки службы по–прежнему выполняется защита с помощью проверки подлинности NTLM.  
   
@@ -79,16 +74,16 @@ ms.locfileid: "51742481"
    Выполните следующие действия для отключения безопасности NTLM при работе со ссылкой на службу WCF.  
   
 > [!IMPORTANT]
->  Не рекомендуется отключать безопасность NTLM. Это может представлять угрозу безопасности.  
+> Не рекомендуется отключать безопасность NTLM. Это может представлять угрозу безопасности.  
   
 #### <a name="to-turn-off-ntlm-security"></a>Чтобы отключить безопасность NTLM  
   
-1.  В **Обозревателе решений**щелкните правой кнопкой мыши имя веб–узла, затем **Страницы свойств**.  
+1. В **Обозревателе решений**щелкните правой кнопкой мыши имя веб–узла, затем **Страницы свойств**.  
   
-2.  Выберите пункт **Параметры запуска**, а затем снимите флажок **Проверка подлинности NTLM** .  
+2. Выберите пункт **Параметры запуска**, а затем снимите флажок **Проверка подлинности NTLM** .  
   
-3.  Нажмите кнопку **ОК**.  
+3. Нажмите кнопку **ОК**.  
   
 ## <a name="see-also"></a>См. также  
  <xref:System.ServiceModel.Security.MessageSecurityException>   
- [Использование помощника по исключениям](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+ [Использование помощника по исключениям](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

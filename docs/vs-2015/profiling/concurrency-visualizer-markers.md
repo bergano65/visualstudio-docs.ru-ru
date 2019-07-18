@@ -1,27 +1,22 @@
 ---
 title: Маркеры визуализатора параллелизма | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.markersui
 ms.assetid: c4692d17-6cd2-4ad1-8590-d7275c771c70
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4fa2a57d08f2b86fec573f02129a326907e3e3a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 43b6115c45f9583b90711ef030834da662106f08
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790452"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704356"
 ---
 # <a name="concurrency-visualizer-markers"></a>Маркеры визуализатора параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +26,11 @@ ms.locfileid: "51790452"
 ## <a name="kinds-of-markers"></a>Типы маркеров  
  Визуализатор параллелизма использует три вида маркеров для представления событий приложения: флаги, сообщения и диапазоны.  
   
-1.  *Флаг* используется для указания интересующего момента времени в приложении.  Например, флаг можно использовать,чтобы показать, что переменная достигла определенного порогового значения или что возникло исключение.  
+1. *Флаг* используется для указания интересующего момента времени в приложении.  Например, флаг можно использовать,чтобы показать, что переменная достигла определенного порогового значения или что возникло исключение.  
   
-2.  *Сообщение* также помечает момент времени, но его можно использовать для стиля трассировки в стиле ведения журнала.  Например, все, что могло быть записано в файл журнала, теперь можно включать в вызов сообщения для отслеживания и просмотра в визуализаторе параллелизма. Можно также использовать визуализатор параллелизма, чтобы экспортировать эти данные в CSV-файл.  
+2. *Сообщение* также помечает момент времени, но его можно использовать для стиля трассировки в стиле ведения журнала.  Например, все, что могло быть записано в файл журнала, теперь можно включать в вызов сообщения для отслеживания и просмотра в визуализаторе параллелизма. Можно также использовать визуализатор параллелизма, чтобы экспортировать эти данные в CSV-файл.  
   
-3.  *Диапазон* представляет интервал времени в приложении, например один из его этапов.  
+3. *Диапазон* представляет интервал времени в приложении, например один из его этапов.  
   
 ## <a name="marker-linkage-to-threads"></a>Компоновка маркеров в потоки  
  Каждый поток, который создает маркеры, имеет отдельный канал временной шкалы.  Идентификатор потока, который отвечает за создание событий маркера, отображается рядом с описанием канала маркера.  Идентификатор, который отображается слева от канала маркера, соответствует идентификатору другого потока в текущем процессе.  
@@ -51,28 +46,25 @@ ms.locfileid: "51790452"
   
 - [Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)  
   
-- [Библиотека параллельных задач (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
+- [Библиотека параллельных задач (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
   
-- [Поток данных](http://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
+- [Поток данных](https://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
   
-- [Parallel LINQ (PLINQ)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
+- [Parallel LINQ (PLINQ)](https://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
   
-- [Среда выполнения с параллелизмом](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
+- [Среда выполнения с параллелизмом](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
   
-- [Поддержка маркеров сценария](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [Поддержка маркеров сценария](https://msdn.microsoft.com/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
-- [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
+- [C++ AMP (C++ Accelerated Massive Parallelism)](https://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
   
   На вкладке "Маркеры" в диалоговом окне [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) можно управлять отображением маркеров из различных источников в визуализаторе параллелизма, а также отфильтровать маркеры по уровню важности и категории.  
   
 ## <a name="markers-from-eventsource"></a>Маркеры из EventSource  
  Визуализатор параллелизма может также отображать события EventSource.  Дополнительные сведения см. в статье [Visualizing EventSource Events as Markers](../profiling/visualizing-eventsource-events-as-markers.md) (Визуализация событий EventSource как маркеров).  
   
-## <a name="see-also"></a>См. также  
+## <a name="see-also"></a>См. также раздел  
  [Flag Markers](../profiling/flag-markers.md)  (Маркеры флагов)  
  [Message Markers](../profiling/message-markers.md)  (Маркеры сообщений)  
  [Span Markers](../profiling/span-markers.md)  (Маркеры диапазонов)  
  [Визуализация событий EventSource как маркеров](../profiling/visualizing-eventsource-events-as-markers.md)
-
-
-

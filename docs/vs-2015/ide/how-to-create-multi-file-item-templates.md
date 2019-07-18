@@ -1,14 +1,9 @@
 ---
-title: Практическое руководство. Создание шаблонов многофайлового элемента | Документы Майкрософт
-ms.custom: ''
+title: Практическое руководство. Создание многофайловых шаблонов элементов | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -17,13 +12,13 @@ ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201840"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Практическое руководство. Создание многофайловых шаблонов элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +35,9 @@ ms.locfileid: "49862181"
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Создание шаблона многофайлового элемента вручную  
   
-1.  Создайте шаблон элемента, как если бы вы создавали шаблон однофайлового элемента. Дополнительные сведения см. в статье [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md).  
+1. Создайте шаблон элемента, как если бы вы создавали шаблон однофайлового элемента. Дополнительные сведения см. в разделе [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md).  
   
-2.  Добавьте атрибуты `TargetFileName` в каждый элемент `ProjectItem`. Присвойте атрибутам `TargetFileName` значения $входное_имя_файла$.*расширение_файла*, где *расширение_файла* — это расширение файла, включенное в шаблоне. Пример:  
+2. Добавьте атрибуты `TargetFileName` в каждый элемент `ProjectItem`. Присвойте атрибутам `TargetFileName` значения $входное_имя_файла$.*расширение_файла*, где *расширение_файла* — это расширение файла, включенное в шаблоне. Например:  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -58,9 +53,9 @@ ms.locfileid: "49862181"
   
      Когда в проект добавляется элемент, производный от этого шаблона, имена файлов будут основаны на имени, которое пользователь ввел в диалоговом окне **Добавление нового элемента**.  
   
-3.  Выберите файлы, которые нужно включить в шаблон, щелкните выбранное правой кнопкой мыши, выберите пункт **Отправить**, а затем пункт **Сжатая ZIP-папка**. Выбранные файлы будут сжаты в ZIP-файл.  
+3. Выберите файлы, которые нужно включить в шаблон, щелкните выбранное правой кнопкой мыши, выберите пункт **Отправить**, а затем пункт **Сжатая ZIP-папка**. Выбранные файлы будут сжаты в ZIP-файл.  
   
-4.  Поместите ZIP-файл в расположение, где находится пользовательский шаблон элемента. По умолчанию это каталог \My Documents\Visual Studio *версия*\Templates\ItemTemplates\\. Дополнительные сведения см. в разделе [Практическое руководство. Размещение и упорядочение шаблонов и элементов](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+4. Поместите ZIP-файл в расположение, где находится пользовательский шаблон элемента. По умолчанию это каталог \My Documents\Visual Studio *версия*\Templates\ItemTemplates\\. Дополнительные сведения см. в разделе [Практическое руководство. Размещение и упорядочение шаблонов](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="example"></a>Пример  
  Приведенный ниже пример показывает шаблон Windows Forms [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Когда на основе этого шаблона создается элемент, имена трех созданных файлов будут соответствовать имени, введенному в диалоговом окне **Добавление нового элемента**.  
@@ -93,6 +88,3 @@ ms.locfileid: "49862181"
  [Практическое руководство. Создание шаблонов элементов](../ide/how-to-create-item-templates.md)   
  [Параметры шаблона](../ide/template-parameters.md)   
  [Практическое руководство. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md)
-
-
-

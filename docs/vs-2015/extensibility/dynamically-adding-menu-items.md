@@ -1,14 +1,9 @@
 ---
 title: Динамическое добавление элементов меню | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - DYNAMICITEMSTART
 - menu items, adding dynamically
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c8f188c71cb1e25364cee34c6a97c87b3a265ee7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 45d435a9c77d63fbd1e92a7615df232c2a0cc117
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555521"
 ---
 # <a name="dynamically-adding-menu-items"></a>Динамическое добавление элементов меню
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,20 +32,20 @@ ms.locfileid: "51809757"
   
 ## <a name="creating-an-extension-with-a-menu-command"></a>Создание расширения с помощью команды меню  
   
-1.  Создайте проект VSIX с именем `DynamicMenuItems`.  
+1. Создайте проект VSIX с именем `DynamicMenuItems`.  
   
-2.  При открытии проекта, Добавление пользовательской команды шаблона элемента и назовите его **DynamicMenu**. Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
+2. При открытии проекта, Добавление пользовательской команды шаблона элемента и назовите его **DynamicMenu**. Дополнительные сведения см. в разделе [создания расширения с помощью команды меню](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 ## <a name="setting-up-the-elements-in-the-vsct-file"></a>Настройка элементов в vsct-файле  
  Чтобы создать контроллер меню с помощью пунктов динамического меню на панели инструментов, необходимо указать следующие элементы:  
   
--   Две команды, группы, той, которая содержит контроллер меню и еще одно, которое содержит элементы меню, в раскрывающемся списке  
+- Две команды, группы, той, которая содержит контроллер меню и еще одно, которое содержит элементы меню, в раскрывающемся списке  
   
--   Элемент меню для одного типа `MenuController`  
+- Элемент меню для одного типа `MenuController`  
   
--   Две кнопки, которая выступает в качестве заполнителя для пунктов меню, а другой, предоставляющий значок и подсказку на панели инструментов.  
+- Две кнопки, которая выступает в качестве заполнителя для пунктов меню, а другой, предоставляющий значок и подсказку на панели инструментов.  
   
-1.  В DynamicMenuPackage.vsct определите идентификаторы команд. Перейдите к разделу символы и замените элемент IDSymbol в **guidDynamicMenuPackageCmdSet** GuidSymbol блока. Необходимо определить элементы IDSymbol для двух групп, контроллер меню, заполнитель команда и команда привязки.  
+1. В DynamicMenuPackage.vsct определите идентификаторы команд. Перейдите к разделу символы и замените элемент IDSymbol в **guidDynamicMenuPackageCmdSet** GuidSymbol блока. Необходимо определить элементы IDSymbol для двух групп, контроллер меню, заполнитель команда и команда привязки.  
   
     ```csharp  
     <GuidSymbol name="guidDynamicMenuPackageCmdSet" value="{ your GUID here }">  
@@ -65,7 +60,7 @@ ms.locfileid: "51809757"
     </GuidSymbol>    
     ```  
   
-2.  В разделе "группы" удалите существующие группы и добавьте две группы, который вы только что определили:  
+2. В разделе "группы" удалите существующие группы и добавьте две группы, который вы только что определили:  
   
     ```  
     <Groups>  
@@ -98,7 +93,7 @@ ms.locfileid: "51809757"
     </Menus>  
     ```  
   
-3.  Добавьте две кнопки: как заполнитель для пунктов динамического меню и как привязку для MenuController.  
+3. Добавьте две кнопки: как заполнитель для пунктов динамического меню и как привязку для MenuController.  
   
      Является родительским для объекта кнопки заполнитель **MyMenuControllerGroup**. Добавьте флаги команды DynamicItemStart DynamicVisibility и TextChanges на кнопку заполнителя. ButtonText не отображается.  
   
@@ -135,9 +130,9 @@ ms.locfileid: "51809757"
     </Buttons>  
     ```  
   
-4.  Добавить значок в проект (в папке ресурсов) и затем добавьте ссылку на него в vsct-файле. В этом пошаговом руководстве мы используем значок стрелки, включенный в шаблон проекта.  
+4. Добавить значок в проект (в папке ресурсов) и затем добавьте ссылку на него в vsct-файле. В этом пошаговом руководстве мы используем значок стрелки, включенный в шаблон проекта.  
   
-5.  Добавьте раздел VisibilityConstraints за пределами раздела команд непосредственно перед разделе "символы". (Может появиться предупреждение при добавлении после символов.) В этом разделе гарантирует, что контроллер меню отображается только при загрузке решения с несколькими проектами.  
+5. Добавьте раздел VisibilityConstraints за пределами раздела команд непосредственно перед разделе "символы". (Может появиться предупреждение при добавлении после символов.) В этом разделе гарантирует, что контроллер меню отображается только при загрузке решения с несколькими проектами.  
   
     ```  
     <VisibilityConstraints>  
@@ -149,7 +144,7 @@ ms.locfileid: "51809757"
 ## <a name="implementing-the-dynamic-menu-command"></a>Реализация динамического меню команды  
  Создайте класс команды динамическое меню, который наследует от <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>. В данном случае конструктор указывает предикат, который необходимо использовать для сопоставления команд. Необходимо переопределить <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> метод, используемый для задания этого предиката <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> свойство, которое определяет команду для вызова.  
   
-1.  Создайте новый класс файл C#, с именем DynamicItemMenuCommand.cs и добавьте класс с именем **DynamicItemMenuCommand** , наследуемый от <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
+1. Создайте новый класс файл C#, с именем DynamicItemMenuCommand.cs и добавьте класс с именем **DynamicItemMenuCommand** , наследуемый от <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
   
     ```csharp  
     class DynamicItemMenuCommand : OleMenuCommand  
@@ -159,7 +154,7 @@ ms.locfileid: "51809757"
   
     ```  
   
-2.  Добавьте следующие операторы using:  
+2. Добавьте следующие операторы using:  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
@@ -167,14 +162,14 @@ ms.locfileid: "51809757"
     using System.ComponentModel.Design;  
     ```  
   
-3.  Добавьте закрытое поле для хранения предикат соответствия:  
+3. Добавьте закрытое поле для хранения предикат соответствия:  
   
     ```csharp  
     private Predicate<int> matches;  
   
     ```  
   
-4.  Добавьте конструктор, который наследует от <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> конструктор и определяет обработчик команд и <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> обработчика. Добавьте предикат для сопоставления команды:  
+4. Добавьте конструктор, который наследует от <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> конструктор и определяет обработчик команд и <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> обработчика. Добавьте предикат для сопоставления команды:  
   
     ```csharp  
     public DynamicItemMenuCommand(CommandID rootId, Predicate<int> matches, EventHandler invokeHandler, EventHandler beforeQueryStatusHandler)  
@@ -189,7 +184,7 @@ ms.locfileid: "51809757"
     }  
     ```  
   
-5.  Переопределить <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> метод, поэтому он вызывает совпадения предиката и наборы <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> свойство:  
+5. Переопределить <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> метод, поэтому он вызывает совпадения предиката и наборы <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> свойство:  
   
     ```csharp  
     public override bool DynamicItemMatch(int cmdId)  
@@ -212,14 +207,14 @@ ms.locfileid: "51809757"
 ## <a name="adding-the-command"></a>Добавление команды  
  Конструктор DynamicMenu является, предназначенный для настройки команды меню, включая динамические меню и пунктов меню.  
   
-1.  В DynamicMenuPackageGuids.cs добавьте идентификатор GUID набора команд и идентификатор команды:  
+1. В DynamicMenuPackageGuids.cs добавьте идентификатор GUID набора команд и идентификатор команды:  
   
     ```csharp  
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     public const uint cmdidMyCommand = 0x104;  
     ```  
   
-2.  В файле DynamicMenu.cs, добавьте следующие операторы using:  
+2. В файле DynamicMenu.cs, добавьте следующие операторы using:  
   
     ```csharp  
     using EnvDTE;  
@@ -227,19 +222,19 @@ ms.locfileid: "51809757"
     using System.ComponentModel.Design;  
     ```  
   
-3.  В классе DynamicMenu добавьте закрытое поле **dte2**.  
+3. В классе DynamicMenu добавьте закрытое поле **dte2**.  
   
     ```csharp  
     private DTE2 dte2;  
     ```  
   
-4.  Добавление частного rootItemId поля:  
+4. Добавление частного rootItemId поля:  
   
     ```csharp  
     private int rootItemId = 0;  
     ```  
   
-5.  В конструкторе DynamicMenu добавьте команду меню. В следующем разделе мы определим обработчик команды `BeforeQueryStatus` обработчик событий, а предикат совпадения.  
+5. В конструкторе DynamicMenu добавьте команду меню. В следующем разделе мы определим обработчик команды `BeforeQueryStatus` обработчик событий, а предикат совпадения.  
   
     ```csharp  
     private DynamicMenu(Package package)  
@@ -270,7 +265,7 @@ ms.locfileid: "51809757"
 ## <a name="implementing-the-handlers"></a>Реализация обработчиков  
  Чтобы реализовать пунктов динамического меню на контроллере меню, необходимо обработать команду при щелчке динамического элемента. Также необходимо реализовать логику, которая задает состояние элемента меню. Добавление обработчиков к классу DynamicMenu.  
   
-1.  Для реализации **установить запускаемый проект** команды, добавьте **OnInvokedDynamicItem** обработчик событий. Он ищет проекта, имя которого совпадает с текст команды, который был вызван и устанавливает его в качестве запускаемого проекта, задав полный путь <xref:EnvDTE.SolutionBuild.StartupProjects%2A> свойство.  
+1. Для реализации **установить запускаемый проект** команды, добавьте **OnInvokedDynamicItem** обработчик событий. Он ищет проекта, имя которого совпадает с текст команды, который был вызван и устанавливает его в качестве запускаемого проекта, задав полный путь <xref:EnvDTE.SolutionBuild.StartupProjects%2A> свойство.  
   
     ```csharp  
     private void OnInvokedDynamicItem(object sender, EventArgs args)  
@@ -293,7 +288,7 @@ ms.locfileid: "51809757"
     }  
     ```  
   
-2.  Добавление `OnBeforeQueryStatusDynamicItem` обработчик событий. Это обработчик вызывается перед `QueryStatus` событий. Он определяет, является ли элемент меню элемент «настоящих», то есть не заполнитель элемента, и установлен ли флажок элемента уже (это означает, что проект уже задан в качестве запускаемого проекта).  
+2. Добавление `OnBeforeQueryStatusDynamicItem` обработчик событий. Это обработчик вызывается перед `QueryStatus` событий. Он определяет, является ли элемент меню элемент «настоящих», то есть не заполнитель элемента, и установлен ли флажок элемента уже (это означает, что проект уже задан в качестве запускаемого проекта).  
   
     ```csharp  
     private void OnBeforeQueryStatusDynamicItem(object sender, EventArgs args)  
@@ -325,7 +320,7 @@ ms.locfileid: "51809757"
   
 ## <a name="implementing-the-command-id-match-predicate"></a>Реализация предикат совпадение идентификатор команды  
   
-1.  Теперь реализуйте предикат совпадения. Нам нужно определить следующее: во-первых, следует ли идентификатор команды является допустимым (это больше или равным идентификатору объявленный команды), а во-вторых, определяет ли проекта (это меньше, чем число проектов в решении).  
+1. Теперь реализуйте предикат совпадения. Нам нужно определить следующее: во-первых, следует ли идентификатор команды является допустимым (это больше или равным идентификатору объявленный команды), а во-вторых, определяет ли проекта (это меньше, чем число проектов в решении).  
   
     ```csharp  
     private bool IsValidDynamicItem(int commandId)  
@@ -353,17 +348,16 @@ public sealed class DynamicMenuItemsPackage : Package
 ## <a name="testing-the-set-startup-project-command"></a>Тестирование команды установить запускаемый проект  
  Теперь можно протестировать код.  
   
-1.  Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
+1. Выполните сборку решения и запустите отладку. Откроется экспериментальный экземпляр.  
   
-2.  В экспериментальном экземпляре откройте решение, включающее несколько проектов.  
+2. В экспериментальном экземпляре откройте решение, включающее несколько проектов.  
   
      Вы увидите значок со стрелкой на **обозревателе решений** панели инструментов. При развертывании, появится меню, которые представляют разные проекты в решении.  
   
-3.  Если выбран один из проектов, он становится запускаемого проекта.  
+3. Если выбран один из проектов, он становится запускаемого проекта.  
   
-4.  При закрытии решения, или открыть решение, которое имеет только один проект, значок панели управления должна исчезнуть.  
+4. При закрытии решения, или открыть решение, которое имеет только один проект, значок панели управления должна исчезнуть.  
   
 ## <a name="see-also"></a>См. также  
  [Команды, меню и панелей инструментов](../extensibility/internals/commands-menus-and-toolbars.md)   
  [Как добавить элементы пользовательского интерфейса с помощью пакетов VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

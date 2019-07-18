@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: gregvanl
-ms.author: gregvanl
-manager: douge
+author: madskristensen
+ms.author: madsk
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 02ef202436e12ae075c41f507577bacaa968c60b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935623"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341583"
 ---
 # <a name="create-a-settings-category"></a>Создание категории параметров
 
@@ -33,9 +33,9 @@ ms.locfileid: "53935623"
 
 ### <a name="to-create-a-settings-category"></a>Чтобы создать категорию параметров
 
-1.  Завершить [создайте страницу параметров](../extensibility/creating-an-options-page.md).
+1. Завершить [создайте страницу параметров](../extensibility/creating-an-options-page.md).
 
-2.  Откройте *VSPackage.resx* файл и добавьте эти три строковых ресурсов:
+2. Откройте *VSPackage.resx* файл и добавьте эти три строковых ресурсов:
 
     |name|Значение|
     |----------|-----------|
@@ -46,9 +46,9 @@ ms.locfileid: "53935623"
      Это создает ресурсы, это имя категории «My Category» объекта «My Settings» и описание категории «OptionInteger и OptionFloat».
 
     > [!NOTE]
-    >  Из этих трех только имя категории не отображается в **Импорт и экспорт параметров** мастера.
+    > Из этих трех только имя категории не отображается в **Импорт и экспорт параметров** мастера.
 
-3.  В *MyToolsOptionsPackage.cs*, добавьте `float` свойство с именем `OptionFloat` для `OptionPageGrid` класса, как показано в следующем примере.
+3. В *MyToolsOptionsPackage.cs*, добавьте `float` свойство с именем `OptionFloat` для `OptionPageGrid` класса, как показано в следующем примере.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -76,41 +76,41 @@ ms.locfileid: "53935623"
     ```
 
     > [!NOTE]
-    >  `OptionPageGrid` Категорию с именем «My Category» теперь состоит из двух свойств, `OptionInteger` и `OptionFloat`.
+    > `OptionPageGrid` Категорию с именем «My Category» теперь состоит из двух свойств, `OptionInteger` и `OptionFloat`.
 
-4.  Добавить <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> для `MyToolsOptionsPackage` класса и присвойте ему CategoryName «My Category», присвойте ему ObjectName «My Settings» и присвоено значение true, isToolsOptionPage. Значение categoryResourceID, objectNameResourceID и DescriptionResourceID соответствующий строковый ресурс, идентификаторы созданные ранее.
+4. Добавить <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> для `MyToolsOptionsPackage` класса и присвойте ему CategoryName «My Category», присвойте ему ObjectName «My Settings» и присвоено значение true, isToolsOptionPage. Значение categoryResourceID, objectNameResourceID и DescriptionResourceID соответствующий строковый ресурс, идентификаторы созданные ранее.
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5.  Выполните сборку решения и запустите отладку. В экспериментальном экземпляре вы увидите, что **мою страницу сетки** теперь имеет целые и десятичные значения.
+5. Выполните сборку решения и запустите отладку. В экспериментальном экземпляре вы увидите, что **мою страницу сетки** теперь имеет целые и десятичные значения.
 
 ## <a name="examine-the-settings-file"></a>Просмотрите файл параметров
  В этом разделе экспорте значения категории свойств в файл параметров. Просмотрите файл и затем импортировать обратно в категорию свойства значения.
 
-1.  Запустите проект в режиме отладки, нажав клавишу **F5**. Запустится экспериментальный экземпляр.
+1. Запустите проект в режиме отладки, нажав клавишу **F5**. Запустится экспериментальный экземпляр.
 
-2.  Откройте **средства** > **параметры** диалоговое окно.
+2. Откройте **средства** > **параметры** диалоговое окно.
 
-3.  В представлении в виде дерева в левой области разверните **My Category** и нажмите кнопку **мою страницу сетки**.
+3. В представлении в виде дерева в левой области разверните **My Category** и нажмите кнопку **мою страницу сетки**.
 
-4.  Измените значение свойства **OptionFloat** для 3,1416 и **OptionInteger** до 12. Нажмите кнопку **ОК**.
+4. Измените значение свойства **OptionFloat** для 3,1416 и **OptionInteger** до 12. Нажмите кнопку **ОК**.
 
-5.  В меню **Сервис** выберите команду **Импорт и экспорт параметров**.
+5. В меню **Сервис** выберите команду **Импорт и экспорт параметров**.
 
      **Импорт и экспорт параметров** откроется мастер.
 
-6.  Убедитесь, что **Экспортировать выбранные параметры среды** выбран, а затем нажмите кнопку **Далее**.
+6. Убедитесь, что **Экспортировать выбранные параметры среды** выбран, а затем нажмите кнопку **Далее**.
 
      **Выбор параметров для экспорта** появится страница.
 
-7.  Нажмите кнопку **"Мои параметры"**.
+7. Нажмите кнопку **"Мои параметры"** .
 
      **Описание** примет **OptionInteger и OptionFloat**.
 
-8.  Убедитесь, что **мои параметры** — это единственная категория, который выбран, а затем нажмите кнопку **Далее**.
+8. Убедитесь, что **мои параметры** — это единственная категория, который выбран, а затем нажмите кнопку **Далее**.
 
      **Имя файла параметров** появится страница.
 

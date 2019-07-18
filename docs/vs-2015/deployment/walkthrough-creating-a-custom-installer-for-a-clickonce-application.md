@@ -1,14 +1,9 @@
 ---
-title: 'Пошаговое руководство: Создание пользовательского установщика для приложения ClickOnce | Документация Майкрософт'
-ms.custom: ''
+title: Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 16686b0bf53f9e1358d96a7abcfe95f8ed6aac82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9ebde75fdf36c84f40ae660a24d469c36e72ceaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386598"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Пошаговое руководство. Создание пользовательского установщика для приложения ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ ms.locfileid: "49222772"
   
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>Чтобы создать пользовательский установщик приложений ClickOnce  
   
-1.  В приложении ClickOnce добавьте ссылки на System.Deployment и System.Windows.Forms.  
+1. В приложении ClickOnce добавьте ссылки на System.Deployment и System.Windows.Forms.  
   
-2.  Добавьте новый класс в приложение и укажите любое имя. В этом пошаговом руководстве используется имя `MyInstaller`.  
+2. Добавьте новый класс в приложение и укажите любое имя. В этом пошаговом руководстве используется имя `MyInstaller`.  
   
-3.  Добавьте следующий `Imports` или `using` инструкции в начало нового класса.  
+3. Добавьте следующий `Imports` или `using` инструкции в начало нового класса.  
   
     ```vb  
     Imports System.Deployment.Application  
@@ -56,17 +51,17 @@ ms.locfileid: "49222772"
     using System.Windows.Forms;  
     ```  
   
-4.  Добавьте следующие методы в класс.  
+4. Добавьте следующие методы в класс.  
   
      Эти методы вызывают <xref:System.Deployment.Application.InPlaceHostingManager> способы загрузки манифеста развертывания, обеспечения соответствующих разрешений, попросите пользователя для разрешения установить, а затем загрузите и установите приложения в кэш ClickOnce. Пользовательский установщик можно указать, что ClickOnce-приложения является предварительно доверенным или отложить решение о доверии <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> вызова метода. Этот код предварительно доверяет приложение.  
   
     > [!NOTE]
-    >  Разрешения, назначенные, предварительно доверять не может превышать разрешения кода пользовательского установщика.  
+    > Разрешения, назначенные, предварительно доверять не может превышать разрешения кода пользовательского установщика.  
   
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
   
-5.  Попытка установки из кода, вызовите `InstallApplication` метод. Например, если класс назван `MyInstaller`, можно назвать `InstallApplication` следующим образом.  
+5. Попытка установки из кода, вызовите `InstallApplication` метод. Например, если класс назван `MyInstaller`, можно назвать `InstallApplication` следующим образом.  
   
     ```vb  
     Dim installer As New MyInstaller()  
@@ -85,7 +80,4 @@ ms.locfileid: "49222772"
   
 ## <a name="see-also"></a>См. также  
  [Манифест приложения ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<entryPoint > элемент](../deployment/entrypoint-element-clickonce-application.md)
-
-
-
+ [Элемент \<entryPoint>](../deployment/entrypoint-element-clickonce-application.md)

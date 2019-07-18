@@ -1,14 +1,9 @@
 ---
 title: IDiaSymbol::get_undecoratedNameEx | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e1902c6300a35924e7fcd626d9b63f69bc5bbc2c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f9c50f5d352d8a52b0eb8b125992b2c325e48234
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745397"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64811866"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,21 +39,21 @@ HRESULT get_undecoratedNameEx( 
  [in] Включение управления, что возвращается сочетание флагов. См. в разделе "Примечания" конкретные значения, и что они делают.  
   
  `pRetVal`  
- [out] Возвращает внешнее имя для C++ декорированное имя.  
+ [out] Возвращает недекорированное имя для C++ декорированное имя.  
   
 ## <a name="return-value"></a>Возвращаемое значение  
  В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает `S_FALSE` или код ошибки.  
   
 > [!NOTE]
->  Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
+> Возвращаемое значение `S_FALSE` означает, что свойство недоступно для символа.  
   
 ## <a name="remarks"></a>Примечания  
  `undecorateOptions` Может представлять собой сочетание следующих флагов.  
   
 > [!NOTE]
->  Помечать имена не определены в пакете SDK для доступа к интерфейсу отладки, поэтому вам нужно добавить объявления в код или использовать необработанные значения.  
+> Помечать имена не определены в пакете SDK для доступа к интерфейсу отладки, поэтому вам нужно добавить объявления в код или использовать необработанные значения.  
   
-|Flag|Значение|Описание:|  
+|Flag|Значение|Описание|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Включает полное undecoration.|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Удаляет начальные символы подчеркивания от корпорации Майкрософт расширить ключевые слова.|  
@@ -83,6 +78,3 @@ HRESULT get_undecoratedNameEx( 
   
 ## <a name="see-also"></a>См. также  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

@@ -1,37 +1,32 @@
 ---
 title: Контексты отладчика | Документация Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b39e53ab06d3ce1633a77fc1fe324206f144dda1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200636"
 ---
 # <a name="debugger-contexts"></a>Контексты отладчика
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 В [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] отладки, отладчик (DE) работает одновременно в нескольких разных контекстах, следующим образом:  
   
--   Контекст кода, который описывает текущее расположение в потоке выполнения программы.  
+- Контекст кода, который описывает текущее расположение в потоке выполнения программы.  
   
--   Документация по контекста или позиции, описывающий текущую позицию внутри документа с исходным.  
+- Документация по контекста или позиции, описывающий текущую позицию внутри документа с исходным.  
   
--   Контекст вычисления выражения, который описывает контекст, в вычисление какого выражения вычислений будет иметь место.  
+- Контекст вычисления выражения, который описывает контекст, в вычисление какого выражения вычислений будет иметь место.  
   
 ## <a name="in-this-section"></a>В этом разделе  
  [Контекст кода](../../extensibility/debugger/code-context.md)  
@@ -55,4 +50,3 @@ ms.locfileid: "51793546"
   
  [Задачи отладки](../../extensibility/debugger/debugging-tasks.md)  
  Содержит ссылки на различные задачи отладки, такие как запуск программы и оценки выражений.
-

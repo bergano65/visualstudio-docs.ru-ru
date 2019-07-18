@@ -1,7 +1,6 @@
 ---
 title: CA1053. Типы со статическими заполнителями не должны иметь конструкторы
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldNotHaveConstructors
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 10302b9a-fa5e-4935-a06a-513d9600f613
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 998d941d0dd0ec06ff7d0f8a727ad3bf50718065
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 52f04355a266f87a039b8197675c2f5377b840ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388316"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053. Типы со статическими заполнителями не должны иметь конструкторы
 
@@ -41,7 +40,7 @@ ms.locfileid: "53928523"
  Чтобы устранить нарушение этого правила, удалите конструктор по умолчанию или сделать ее частной.
 
 > [!NOTE]
->  Некоторые компиляторы автоматически создает открытый конструктор по умолчанию, если тип не определены другие конструкторы. Если это происходит с типом, добавьте закрытый конструктор по умолчанию для устранения нарушения.
+> Некоторые компиляторы автоматически создает открытый конструктор по умолчанию, если тип не определены другие конструкторы. Если это происходит с типом, добавьте закрытый конструктор по умолчанию для устранения нарушения.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
  Для этого правила отключать вывод предупреждений не следует. Наличие конструктора предполагает, что тип не является статическим типом.

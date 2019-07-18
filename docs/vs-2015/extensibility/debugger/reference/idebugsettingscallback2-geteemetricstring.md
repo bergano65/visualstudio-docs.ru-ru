@@ -1,68 +1,64 @@
 ---
 title: IDebugSettingsCallback2::GetEEMetricString | Документация Майкрософт
-ms.custom: ''
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.date: 11/04/2016
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricString
 ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
-caps.latest.revision: 9
+author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f6a9ca8db857caddf3b35ea8d0b03bae7bab273b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7f498bb22c5830434d11a560fa139e77850244b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155178"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Извлекает строковое значение метрики вычислителя выражений, заданную ее именем.
 
-Извлекает строковое значение метрики вычислителя выражений, заданную ее именем.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp#  
-HRESULT GetEEMetricString(  
-   REFGUID guidLang,  
-   REFGUID guidVendor,  
-   LPCWSTR pszMetric,  
-   BSTR*   pbstrValue  
-);  
-```  
-  
-```csharp  
-private int GetEEMetricString(  
-   ref Guid   guidLang,  
-   ref Guid   guidVendor,  
-   string     pszMetric,  
-   out string pbstrValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `guidLang`  
- [in] Уникальный идентификатор языка программирования.  
-  
- `guidVendor`  
- [in] Уникальный идентификатор поставщика.  
-  
- `pszMetric`  
- [in] Имя метрики.  
-  
- `pbstrValue`  
- [out] Возвращает строковое значение метрики.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="see-also"></a>См. также  
- [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
+## <a name="syntax"></a>Синтаксис
 
+```cpp
+HRESULT GetEEMetricString(
+   REFGUID guidLang,
+   REFGUID guidVendor,
+   LPCWSTR pszMetric,
+   BSTR*   pbstrValue
+);
+```
+
+```csharp
+private int GetEEMetricString(
+   ref Guid   guidLang,
+   ref Guid   guidVendor,
+   string     pszMetric,
+   out string pbstrValue
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `guidLang`
+
+ [in] Уникальный идентификатор языка программирования.
+
+ `guidVendor`
+
+ [in] Уникальный идентификатор поставщика.
+
+ `pszMetric`
+
+ [in] Имя метрики.
+
+ `pbstrValue`
+
+ [out] Возвращает строковое значение метрики.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="see-also"></a>См. также
+- [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

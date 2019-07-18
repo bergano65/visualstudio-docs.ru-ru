@@ -2,27 +2,26 @@
 title: Краткое руководство. Создание проекта Python на основе шаблона
 description: При помощи этого краткого руководства вы создадите проект Visual Studio для Python на основе встроенного шаблона для базового приложения Flask.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f01750978527a02d0d67267f550b8a0c0c558435
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429773"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Краткое руководство. Создание проекта Python на основе шаблона в Visual Studio
 
-[Установив поддержку Python в Visual Studio 2017](installing-python-support-in-visual-studio.md), можно легко создать проект Python с помощью различных шаблонов. При помощи этого краткого руководства вы создадите простое приложение Flask на основе шаблона. Полученный проект похож на созданный вручную при помощи [краткого руководства по созданию веб-приложения с использованием Flask](../ide/quickstart-python.md).
+[Установив поддержку Python в Visual Studio](installing-python-support-in-visual-studio.md), можно легко создать проект Python с помощью различных шаблонов. При помощи этого краткого руководства вы создадите простое приложение Flask на основе шаблона. Полученный проект похож на созданный вручную при помощи [краткого руководства по созданию веб-приложения с использованием Flask](../ide/quickstart-python.md).
 
-1. Запустите Visual Studio 2017.
+1. Запустите Visual Studio.
 
 1. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**, а затем в диалоговом окне **Новый проект** выполните поиск по фразе "пустой веб-проект flask", выберите шаблон **Пустой веб-проект Flask** в списке по центру, укажите имя проекта и щелкните **ОК**:
 

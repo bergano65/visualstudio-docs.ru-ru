@@ -1,26 +1,30 @@
 ---
 title: Вставка комментариев XML-документации
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05104b9c734b35226fcd9a964372802f351605df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b258b456aa614c851be138c017b3378cc13984cc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964287"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715381"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Как выполнить вставку XML-комментариев для создания документации
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Практическое руководство. вставку XML-комментариев для создания документации
 
-Visual Studio может помочь вам документировать элементы кода, такие как классы и методы, автоматически формируя стандартную структуру комментариев для XML-документации. Во время компиляции можно создать XML-файл, содержащий комментарии для документации. Созданный компилятором XML-файл можно распространять вместе со сборкой .NET, чтобы Visual Studio и другие интегрированные среды разработки могли использовать IntelliSense для отображения кратких сведений о типах и элементах. Кроме того, XML-файл можно запускать с помощью таких средств, как [DocFX](https://dotnet.github.io/docfx/) и [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526), и создавать веб-сайты со справочными сведениями по API.
+Visual Studio может помочь вам документировать элементы кода, такие как классы и методы, автоматически формируя стандартную структуру комментариев для XML-документации. Во время компиляции можно создать XML-файл, содержащий комментарии для документации.
+
+> [!TIP]
+> Сведения о настройке имени и расположения созданного XML-файла см. в статье [Документирование кода с помощью XML-комментариев](/dotnet/csharp/codedoc).
+
+Созданный компилятором XML-файл можно распространять вместе со сборкой .NET, чтобы Visual Studio и другие интегрированные среды разработки могли использовать IntelliSense для отображения кратких сведений о типах и элементах. Кроме того, XML-файл можно запускать с помощью таких средств, как [DocFX](https://dotnet.github.io/docfx/) и [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526), и создавать веб-сайты со справочными сведениями по API.
 
 > [!NOTE]
-> Команда **Вставить комментарий**, которая автоматически вставляет комментарии XML-документации, доступна в [C#](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) и [Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation). Однако можно вручную вставить [комментарии XML-документации в файлы C++](/cpp/ide/xml-documentation-visual-cpp) и по-прежнему создавать файлы XML-документации во время компиляции.
+> Команда **Вставить комментарий**, которая автоматически вставляет комментарии XML-документации, доступна в [C#](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) и [Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation). Однако можно вручную вставить [комментарии XML-документации в файлы C++](/cpp/build/reference/xml-documentation-visual-cpp) и по-прежнему создавать файлы XML-документации во время компиляции.
 
 ## <a name="to-insert-xml-comments-for-a-code-element"></a>Вставка XML-комментариев для элемента кода
 
@@ -34,7 +38,7 @@ Visual Studio может помочь вам документировать эл
 
    - Щелкните правой кнопкой мыши или вызовите контекстное меню в редакторе кода или над ним и выберите **Фрагмент кода** > **Вставить комментарий**.
 
-   Над элементом кода сразу же создается XML-шаблон. Например, при комментировании метода создается элемент **\<summary\>**, элемент **\<param\>** для каждого параметра и элемент **\<returns\>** для документирования возвращаемого значения.
+   Над элементом кода сразу же создается XML-шаблон. Например, при комментировании метода создается элемент **\<summary\>** , элемент **\<param\>** для каждого параметра и элемент **\<returns\>** для документирования возвращаемого значения.
 
    ![Шаблон для XML-комментариев — C#](media/doc-preview-cs.png)
 
@@ -53,5 +57,5 @@ Visual Studio может помочь вам документировать эл
 - [Документирование кода с помощью XML-комментариев (руководство по C#)](/dotnet/csharp/codedoc)
 - [Практическое руководство. создание XML-документации (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [Комментарии C++](/cpp/cpp/comments-cpp)
-- [XML-документация (C++)](/cpp/ide/xml-documentation-visual-cpp)
+- [XML-документация (C++)](/cpp/build/reference/xml-documentation-visual-cpp)
 - [Создание кода](../code-generation-in-visual-studio.md)

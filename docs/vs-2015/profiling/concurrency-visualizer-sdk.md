@@ -1,27 +1,22 @@
 ---
 title: Пакет SDK визуализатора параллелизма | Документы Майкрософт
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d98a5383a330242110bef860b9dc19a2fb6bef87
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 4fb6543f5e741010ae19e706ee4a87352d678390
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150331"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Пакет SDK визуализатора параллелизма
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +34,11 @@ ms.locfileid: "51754831"
   
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Добавление поддержки пакета SDK в проект C# или Visual Basic  
   
-1.  В строке меню выберите **Анализ**, **Визуализатор параллелизма**, **Добавить пакет SDK в проект**.  
+1. В строке меню выберите **Анализ**, **Визуализатор параллелизма**, **Добавить пакет SDK в проект**.  
   
-2.  Выберите проект, в котором нужно получить доступ к пакету SDK, а затем нажмите кнопку **Добавить пакет SDK в выбранный проект**.  
+2. Выберите проект, в котором нужно получить доступ к пакету SDK, а затем нажмите кнопку **Добавить пакет SDK в выбранный проект**.  
   
-3.  Добавьте в код оператор imports или using.  
+3. Добавьте в код оператор imports или using.  
   
     ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
@@ -58,19 +53,19 @@ ms.locfileid: "51754831"
   
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Добавление поддержки пакета SDK в проект C++ или C  
   
-1.  В строке меню выберите **Анализ**, **Визуализатор параллелизма**, **Добавить пакет SDK в проект**.  
+1. В строке меню выберите **Анализ**, **Визуализатор параллелизма**, **Добавить пакет SDK в проект**.  
   
-2.  Выберите проект, в котором нужно получить доступ к пакету SDK, а затем нажмите кнопку **Добавить пакет SDK в выбранный проект**.  
+2. Выберите проект, в котором нужно получить доступ к пакету SDK, а затем нажмите кнопку **Добавить пакет SDK в выбранный проект**.  
   
-3.  Для C++ включите `cvmarkersobj.h`. Для C включите `cvmarkers.h`.  
+3. Для C++ включите `cvmarkersobj.h`. Для C включите `cvmarkers.h`.  
   
-4.  Добавьте в код оператор using.  
+4. Добавьте в код оператор using.  
   
     ```  
     using namespace Concurrency::diagnostic;  
     ```  
   
-5.  Создайте объект `marker_series` и передайте его в конструктор `span`.  
+5. Создайте объект `marker_series` и передайте его в конструктор `span`.  
   
     ```cpp  
   
@@ -84,19 +79,19 @@ ms.locfileid: "51754831"
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Использование нового поставщика маркера в проекте C# или Visual Basic  
   
-1.  Создание объекта <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Конструктор принимает идентификатор GUID.  
+1. Создание объекта <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Конструктор принимает идентификатор GUID.  
   
-2.  Чтобы зарегистрировать поставщик, откройте диалоговое окно [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) визуализатора параллелизма.  Выберите вкладку **Маркеры** и нажмите кнопку **Добавить новый поставщик**. В диалоговом окне [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) введите идентификатор GUID, который использовался для создания поставщика, и описание поставщика.  
+2. Чтобы зарегистрировать поставщик, откройте диалоговое окно [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) визуализатора параллелизма.  Выберите вкладку **Маркеры** и нажмите кнопку **Добавить новый поставщик**. В диалоговом окне [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) введите идентификатор GUID, который использовался для создания поставщика, и описание поставщика.  
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Использование нового поставщика маркеров в проекте C# или Visual Basic  
   
-1.  Используйте функцию `CvInitProvider` для инициализации PCV_PROVIDER.  Конструктор принимает GUID* и PCV_PROVIDER\*.  
+1. Используйте функцию `CvInitProvider` для инициализации PCV_PROVIDER.  Конструктор принимает GUID* и PCV_PROVIDER\*.  
   
-2.  Чтобы зарегистрировать поставщик, откройте диалоговое окно [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Выберите вкладку **Маркеры** и нажмите кнопку **Добавить новый поставщик**. В диалоговом окне введите идентификатор GUID, который использовался для создания поставщика, и описание поставщика.  
+2. Чтобы зарегистрировать поставщик, откройте диалоговое окно [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Выберите вкладку **Маркеры** и нажмите кнопку **Добавить новый поставщик**. В диалоговом окне введите идентификатор GUID, который использовался для создания поставщика, и описание поставщика.  
   
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Использование набора маркеров в проекте C# или Visual Basic  
   
-1.  Для использования нового <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> сначала создайте его с помощью объекта <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>, а затем сформируйте события маркеров непосредственно из нового набора.  
+1. Для использования нового <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> сначала создайте его с помощью объекта <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>, а затем сформируйте события маркеров непосредственно из нового набора.  
   
     ```csharp  
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries(″Series 1″);  
@@ -110,7 +105,7 @@ ms.locfileid: "51754831"
   
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Использование набора маркеров в проекте C++  
   
-1.  Создание объекта `marker_series`.  События можно создавать из этого нового набора.  
+1. Создание объекта `marker_series`.  События можно создавать из этого нового набора.  
   
     ```scr  
     marker_series series;  
@@ -119,7 +114,7 @@ ms.locfileid: "51754831"
   
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Использование набора маркеров в проекте C  
   
-1.  Используйте функцию `CvCreateMarkerSeries` для создания PCV_MARKERSERIES.  
+1. Используйте функцию `CvCreateMarkerSeries` для создания PCV_MARKERSERIES.  
   
     ```cpp  
     PCV_MARKERSERIES series;  
@@ -129,12 +124,9 @@ ms.locfileid: "51754831"
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание:|  
+|Заголовок|Описание|  
 |-----------|-----------------|  
 |[Справочник по библиотеке C++](../profiling/cpp-library-reference.md)|Описывает API визуализатора параллелизма для C++.|  
 |[Справочник по библиотеке C](../profiling/c-library-reference.md)|Описывает API визуализатора параллелизма для C.|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Описывает API визуализатора параллелизма для управляемого кода.|  
 |[Визуализатор параллелизма](../profiling/concurrency-visualizer.md)|Справочные сведения по представлениям и отчетам файлов данных профилирования, которые создаются с помощью метода параллелизма и включают данные выполнения потоков.|
-
-
-

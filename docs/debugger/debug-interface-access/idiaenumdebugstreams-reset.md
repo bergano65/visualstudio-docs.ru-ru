@@ -9,27 +9,27 @@ helpviewer_keywords:
 ms.assetid: ee40989b-f754-4c10-80d3-7faa16f52ce3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6dae55232e96a566a63ca0553ff51d9594e3981
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 69792da25430c53405e477bf07aadc13dcaa36f2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838175"
 ---
 # <a name="idiaenumdebugstreamsreset"></a>IDiaEnumDebugStreams::Reset
-Сбрасывает последовательность перечислений в начало.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```C++  
-HRESULT Reset ();  
-```  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- Возвращает `S_OK`.  
-  
-## <a name="see-also"></a>См. также раздел  
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+Сбрасывает последовательность перечислений в начало.
+
+## <a name="syntax"></a>Синтаксис
+
+```C++
+HRESULT Reset ();
+```
+
+## <a name="return-value"></a>Возвращаемое значение
+ Возвращает `S_OK`.
+
+## <a name="see-also"></a>См. также
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
