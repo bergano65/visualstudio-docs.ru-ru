@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 24ceb80c0ffd03e7c796b7a5d5abdc93f4c1c78d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179544"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Практическое руководство. Изучение модели содержимого узлов с использованием представления модели содержимого
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60099069"
   
 3. Скопируйте образец кода XML-схемы из [образец XML-схемы: Схема заказа на покупку](../xml-tools/sample-xsd-file-purchase-order-schema.md) и вставьте его вместо кода, который был добавлен новый XSD-файл по умолчанию.  
   
-4. Выберите `purchaseOrder` элемент в обозревателе схем щелкните правой кнопкой мыши `purchaseOrder` элемент в XML-редакторе и выбрав **Показать в обозревателе XML-**.  
+4. Выберите `purchaseOrder` элемент в обозревателе схем щелкните правой кнопкой мыши `purchaseOrder` элемент в XML-редакторе и выбрав **Показать в обозревателе XML-** .  
   
 5. Щелкните правой кнопкой мыши `purchaseOrder` в обозревателе XML и выберите **Показать в представлении модели содержимого**.  
   

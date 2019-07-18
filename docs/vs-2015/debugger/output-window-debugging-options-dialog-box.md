@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9153da163fb30b05e13d9c25f8589d632d64326e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198141"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Окно "Вывод", узел "Отладка", диалоговое окно "Параметры"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58979874"
  **Параметры трассировки WPF**  
  В этой категории содержатся элементы управления, позволяющие определить уровень сообщений трассировки WPF, которые отображаются в **вывода** окна. Здесь можно задать тип отображаемых сообщений и уровень: от значения **Критический** до значения **Все**.  
   
- Дополнительные сведения см. в разделе [Как отобразить данные трассировки WPF](../debugger/how-to-display-wpf-trace-information.md).  
+ Дополнительные сведения см. в разделе [Практическое руководство. отобразить данные трассировки WPF](../debugger/how-to-display-wpf-trace-information.md).  
   
 ## <a name="see-also"></a>См. также  
  [Отладка, диалоговое окно "Параметры"](../debugger/debugging-options-dialog-box.md)   

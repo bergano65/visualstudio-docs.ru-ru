@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978408"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823374"
 ---
 # <a name="developer-community-data-privacy"></a>Конфиденциальность данных сообщества разработчиков
 
@@ -64,24 +64,24 @@ ms.locfileid: "62978408"
 
 - Файлы журнала веб-отладчика, если они существуют:
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+  - *%TEMP%\vscode-chrome-debug.txt*
 
-   - *%TEMP%\vscode-node-debug2.txt*
+  - *%TEMP%\vscode-node-debug2.txt*
 
-   - *%TEMP%\vscode-edge-debug.txt*
+  - *%TEMP%\vscode-edge-debug.txt*
 
 - Снимок экрана, если вы решили включить его
 
 - Данные записи, если вы решили включить ее, включая:
 
-   - Шаги по воспроизведению проблемы
+  - Шаги по воспроизведению проблемы
 
-   - Файл трассировки извлечения, преобразования и загрузки
+  - Файл трассировки извлечения, преобразования и загрузки
 
-   - Файл дампа
+  - Файл дампа
 
-    > [!NOTE]
-    > Перед отправкой отчета вы можете удалить любые данные записи, которые не хотите передавать.
+  > [!NOTE]
+  > Перед отправкой отчета вы можете удалить любые данные записи, которые не хотите передавать.
 
 ## <a name="see-also"></a>См. также
 

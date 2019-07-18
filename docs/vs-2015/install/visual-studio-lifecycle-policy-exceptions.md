@@ -10,11 +10,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b17693523c75dc434fdda258c07a9b17ecfda1b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180238"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Исключения политики жизненного цикла Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,4 +49,4 @@ Visual Studio включает в себя ряд компиляторов, яз
 |[Windows 7](http://support.microsoft.com/lifecycle/?c2=14019)|Пакет SDK для Windows 7|  
 |[Windows 8](http://support.microsoft.com/lifecycle/?c2=16796)|Пакет SDK для Windows 8|  
 |[Windows 8.1](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Пакет SDK для Windows 8.1<br /><br /> Библиотека Windows для JavaScript (WinJS)|  
-|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />См. также [Политика жизненного цикла Online](http://support.microsoft.com/gp/OSSLpolicy)|Пакет SDK для мобильных служб Microsoft Azure<br /><br /> Инструменты мобильных служб Microsoft Azure|
+|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />> См. также: [Политика жизненного цикла Online](http://support.microsoft.com/gp/OSSLpolicy)|Пакет SDK для мобильных служб Microsoft Azure<br /><br /> Инструменты мобильных служб Microsoft Azure|

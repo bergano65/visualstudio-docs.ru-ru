@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: Сведения о том, как администраторы могут изменять назначения подписок.
-searchscope: VS Subscription
-ms.openlocfilehash: d3dbc2e05d85ed8277d7a7c0f530dfa92da7dba6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7245facbaf966593160bc44dc15bc2fd71622347
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946262"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783477"
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Изменение назначений для подписок Visual Studio
 

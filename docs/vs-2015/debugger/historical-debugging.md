@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7db175535e0eebdcf1974f0f85123959ba5a3ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192189"
 ---
 # <a name="historical-debugging"></a>Отладка с ведением журнала
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58994240"
   
  IntelliTrace и режим отладки с ведением журнала позволяют перемещаться по приложению и проверять его состояние (стек вызовов и локальные переменные) без необходимости задания точек останова, перезапуска отладки и многократного выполнения действий по тестированию. Это позволяет сэкономить много времени, особенно если ошибка обнаружена практически в центре тестового сценария, выполнение которого является продолжительным.  
   
-## <a name="how-do-i-start-using-historical-debugging"></a>Как приступить к использованию отладки с ведением журнала?   
+## <a name="how-do-i-start-using-historical-debugging"></a>Как приступить к использованию отладки с ведением журнала?  
  Инструмент IntelliTrace включен по умолчанию. Все, что нужно сделать — решить, какие события и вызовы функций представляют интерес. Дополнительные сведения об определении нужных компонентов см. в разделе [Возможности IntelliTrace](../debugger/intellitrace-features.md). Пошаговые учетной записи отладки с помощью IntelliTrace см. в разделе [Пошаговое руководство: С помощью IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
 ## <a name="navigating-your-code-with-historical-debugging"></a>Перемещение по коду с помощью отладки с ведением журнала  

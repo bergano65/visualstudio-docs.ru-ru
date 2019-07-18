@@ -11,11 +11,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165779"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Пошаговое руководство. Отображение парных скобок
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,4 +125,4 @@ ms.locfileid: "60084938"
 4. Если поместить курсор перед открывающую фигурную скобку, должны быть выделены, фигурную скобку и сопоставления закрывающей фигурной скобки. Если поместить курсор сразу после закрывающей фигурной скобки, должны быть выделены, фигурную скобку и сопоставления открывающую фигурную скобку.  
   
 ## <a name="see-also"></a>См. также  
- [Пошаговое руководство: Связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Пошаговое руководство: связывание типа контента с расширением имени файла](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

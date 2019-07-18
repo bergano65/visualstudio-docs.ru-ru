@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cff60ca7fc76563db73c4fc839688e0fba4ab975
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159651"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Управление цветом, стилем линий и другими свойствами фигур
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58992085"
  Фигура теперь имеет свойство домена, которое можно задать в программном коде или имени пользователя.  
   
 ## <a name="dynamically-updating-an-exposed-property"></a>Динамическое обновление открытого свойства  
- Обычно требуется сделать зависимым от другого свойства открытого свойства. Например может потребоваться фигуру, чтобы включить красный всякий раз, когда определенного свойства домена меньше нуля. Чтобы сделать эту зависимость, создать [правило](../modeling/rules-propagate-changes-within-the-model.md). Пример:  
+ Обычно требуется сделать зависимым от другого свойства открытого свойства. Например может потребоваться фигуру, чтобы включить красный всякий раз, когда определенного свойства домена меньше нуля. Чтобы сделать эту зависимость, создать [правило](../modeling/rules-propagate-changes-within-the-model.md). Например:  
   
 ```csharp  
 using System;  

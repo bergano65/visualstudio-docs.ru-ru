@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 9f5fdd524591a2c1da144886226bd0b48f08021f
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67257955"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143362"
 ---
 Visual Studio Industry Partner (программа VSIP)

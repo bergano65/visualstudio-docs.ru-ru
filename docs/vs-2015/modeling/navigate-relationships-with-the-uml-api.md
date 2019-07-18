@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cb2a02ba27f06ef027001c2de07308c153b21c2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158967"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Переход по отношениям с помощью UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,7 +154,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ## <a name="enumerating-relationships"></a>Перечисление отношений  
  Все свойства модели UML, которые возвращают несколько значений соответствует <> интерфейс IEnumerable. Это означает, что можно использовать [выражения запросов Linq](http://go.microsoft.com/fwlink/?LinkId=168834) и методы расширения, определенные в **System.Linq** пространства имен.  
   
- Пример:  
+ Например:  
   
 ```  
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()  

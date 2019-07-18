@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d23afb98b1818f4f7320041f202857e61873975a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200560"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Руководство по средствам проектирования архитектуры Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

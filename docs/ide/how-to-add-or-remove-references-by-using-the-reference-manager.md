@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160159"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825491"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Практическое руководство. Добавление и удаление ссылок с помощью диспетчера ссылок
 
@@ -105,33 +105,33 @@ ms.locfileid: "67160159"
 
 - Переместите или скопируйте сборку в одно из следующих расположений.
 
-   - Каталог текущего проекта. (Можно найти эти сборки, используя вкладку **Обзор** .)
+  - Каталог текущего проекта. (Можно найти эти сборки, используя вкладку **Обзор** .)
 
-   - Другие каталоги проектов в одном решении. (Можно найти эти сборки, используя вкладку **Проекты**.)
+  - Другие каталоги проектов в одном решении. (Можно найти эти сборки, используя вкладку **Проекты**.)
 
-    \- или -
+  \- или -
 
 - Установите раздел реестра, определяющий положение отображаемых сборок.
 
-   Для 32-разрядной операционной системы добавьте один из следующих разделов реестра.
+  Для 32-разрядной операционной системы добавьте один из следующих разделов реестра.
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   Для 64-разрядной операционной системы добавьте один из следующих разделов реестра в 32-разрядный куст реестра.
+  Для 64-разрядной операционной системы добавьте один из следующих разделов реестра в 32-разрядный куст реестра.
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>* — это минимальная допустимая версия платформы. Если *\<VersionMinimum\>*  — v3.0, папки, указанные в *AssemblyFoldersEx*, относятся к проектам, предназначенным для платформы .NET Framework 3.0 и более поздних версий.
+  *\<VersionMinimum\>* — это минимальная допустимая версия платформы. Если *\<VersionMinimum\>*  — v3.0, папки, указанные в *AssemblyFoldersEx*, относятся к проектам, предназначенным для платформы .NET Framework 3.0 и более поздних версий.
 
-   *\<AssemblyLocation\>*  — это каталог сборок, которые требуется отображать в диалоговом окне **Добавить ссылку**, например *C:\MyAssemblies*.
+  *\<AssemblyLocation\>*  — это каталог сборок, которые требуется отображать в диалоговом окне **Добавить ссылку**, например *C:\MyAssemblies*.
 
-   Создание раздела реестра в узле `HKEY_LOCAL_MACHINE` позволяет всем пользователям видеть сборки в указанном расположении в диалоговом окне **Добавить ссылку**. Создание раздела реестра в узле `HKEY_CURRENT_USER` влияет только на настройки для текущего пользователя.
+  Создание раздела реестра в узле `HKEY_LOCAL_MACHINE` позволяет всем пользователям видеть сборки в указанном расположении в диалоговом окне **Добавить ссылку**. Создание раздела реестра в узле `HKEY_CURRENT_USER` влияет только на настройки для текущего пользователя.
 
-   Снова откройте диалоговое окно **Добавление ссылки**. Эти сборки должны отображаться на вкладке **.NET**. Если это не так, убедитесь, что сборки расположены в указанном каталоге *AssemblyLocation*, перезапустите Visual Studio и повторите попытку.
+  Снова откройте диалоговое окно **Добавление ссылки**. Эти сборки должны отображаться на вкладке **.NET**. Если это не так, убедитесь, что сборки расположены в указанном каталоге *AssemblyLocation*, перезапустите Visual Studio и повторите попытку.
 
 ## <a name="projects-tab"></a>Вкладка "Проекты"
 

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163646"
 ---
 # <a name="t4-include-directive"></a>Директива Include T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60057710"
   
    Эти дополнительные папки включения могут зависеть от расширения включающего файла. Например, папка включения DSL Tools доступна только для включающих файлов с расширением `.tt`.  
   
-- `filePath` может включать переменные среды, отделенные знаком "%". Пример:  
+- `filePath` может включать переменные среды, отделенные знаком "%". Например:  
   
   ```  
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  

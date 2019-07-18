@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b8b3f64a0b5f70067367e98d7e1d1471fc670099
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157066"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Анонимные методы и анализ кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ class Class
   
  Класс может содержать встроенный анонимный метод, который присваивает значение полю, которое имеет несколько конструкторов. В этом случае предупреждения и метрики, связанные со всеми конструкторами, если конструктор связан с другим конструктором, в том же классе.  
   
- Например, в следующем классе все предупреждения, которые находятся в объявлении **anonymousMethod** должен вызываться по отношению **Class(int)** и **Class(string)** , но не для **Class()**.  
+ Например, в следующем классе все предупреждения, которые находятся в объявлении **anonymousMethod** должен вызываться по отношению **Class(int)** и **Class(string)** , но не для **Class()** .  
   
 ```vb  
   

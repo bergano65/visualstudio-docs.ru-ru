@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d5a992751e31f21a7875091b4c8b1be9bd0bd0a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197065"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Ошибка: Вычисление функции &#39;функция&#39; истекло и требуется завершить небезопасным образом
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58992778"
 Сообщение об ошибке сообщает имя функции, которые отладчик попытался вызвать. Если вы можете редактировать эту функцию, можно предотвратить отладчик вызовом метода считывания свойства или метода ToString. Попробуйте выполните одно из следующих:
  
 * Изменить метод к другому типу кода, помимо задания свойства или метода ToString и проблема исчезнет.
-    - или -
+    -или-
 * (Для ToString) Определение атрибута DebuggerDisplay на типе и вы можете оценить, отличные от ToString отладчика.
-    - или -
+    -или-
 * (Для метода считывания свойства) Поместите `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` атрибут в свойстве. Это может быть полезно в том случае, если у вас есть метод, который должен проходить свойство по причинам совместимости API, но он должен быть метод.
  
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Решение #2. У целевой код попросите отладчика для прерывания оценки

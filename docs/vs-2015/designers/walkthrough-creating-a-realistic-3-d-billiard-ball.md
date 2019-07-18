@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187698"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Пошаговое руководство. Создание реалистичного трехмерного Бильярдного шара
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Пошаговое руководство. Создание реалистичного трехмерного бильярдного шара
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В этом пошаговом руководстве демонстрируется создание реалистичного трехмерного бильярдного шара с помощью конструктора шейдеров и редактора изображений в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Объемный внешний вид бильярдного шара достигается путем сочетания нескольких шейдерных методик с соответствующими текстурными ресурсами.  

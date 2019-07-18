@@ -1,52 +1,51 @@
 ---
 title: IEnumDebugPrograms2::GetCount | Документация Майкрософт
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IEnumDebugPrograms2::GetCount
 helpviewer_keywords:
 - IEnumDebugPrograms2::GetCount
 ms.assetid: 84832982-fa68-4090-a5b7-b233817876b7
-caps.latest.revision: 11
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
+ms.workload:
+- vssdk
 ms.openlocfilehash: b1a3f9dd89969e7457fe6838d2a3529d89d8ce72
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58991575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199602"
 ---
 # <a name="ienumdebugprograms2getcount"></a>IEnumDebugPrograms2::GetCount
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Возвращает число элементов в перечислении.
 
-Возвращает число элементов в перечислении.  
-  
-## <a name="syntax"></a>Синтаксис  
-  
-```cpp#  
-HRESULT GetCount(  
-   ULONG* pcelt  
-);  
-```  
-  
-```csharp  
-int GetCount(  
-   out uint pcelt  
-);  
-```  
-  
-#### <a name="parameters"></a>Параметры  
- `pcelt`  
- [out] Возвращает число элементов в перечислении.  
-  
-## <a name="return-value"></a>Возвращаемое значение  
- В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.  
-  
-## <a name="remarks"></a>Примечания  
- Этот метод не является частью обычной интерфейса перечисления модели COM, который указывает, что только `Next`, `Clone`, `Skip`, и `Reset` методы должны быть реализованы.  
-  
-## <a name="see-also"></a>См. также  
- [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)
+## <a name="syntax"></a>Синтаксис
+
+```cpp
+HRESULT GetCount(
+   ULONG* pcelt
+);
+```
+
+```csharp
+int GetCount(
+   out uint pcelt
+);
+```
+
+#### <a name="parameters"></a>Параметры
+ `pcelt`
+
+ [out] Возвращает число элементов в перечислении.
+
+## <a name="return-value"></a>Возвращаемое значение
+ В случае успешного выполнения возвращает `S_OK`; в противном случае возвращает код ошибки.
+
+## <a name="remarks"></a>Примечания
+ Этот метод не является частью обычной интерфейса перечисления модели COM, который указывает, что только `Next`, `Clone`, `Skip`, и `Reset` методы должны быть реализованы.
+
+## <a name="see-also"></a>См. также
+- [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

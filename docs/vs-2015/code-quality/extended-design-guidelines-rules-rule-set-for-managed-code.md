@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 62bd40961a165c8f65886466d2fcf0a3c46e3934
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201418"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Набор правил "Расширенные нормы и правила разработки" для управляемого кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,12 +104,12 @@ ms.locfileid: "58992597"
 |[CA1014](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)|Пометьте сборки с помощью CLSCompliantAttribute|  
 |[CA1017](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)|Пометьте сборки с помощью ComVisibleAttribute|  
 |[CA1018](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)|Пометьте атрибуты с помощью AttributeUsageAttribute|  
-|[CA1019](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|Определите методы доступа для аргументов атрибута|  
+|[CA1019 НЕОБХОДИМО](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|Определите методы доступа для аргументов атрибута|  
 |[CA1023](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)|Индексы не должны быть многомерными|  
 |[CA1024](../code-quality/ca1024-use-properties-where-appropriate.md)|По возможности используйте свойства|  
 |[CA1025](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)|Замените повторяющиеся аргументы массивом параметров|  
 |[CA1026](../code-quality/ca1026-default-parameters-should-not-be-used.md)|Не следует использовать параметры по умолчанию|  
-|[CA1027](../code-quality/ca1027-mark-enums-with-flagsattribute.md)|Пометьте перечисляемые типы с помощью FlagsAttribute|  
+|[CA1027 СЛЕДУЕТ](../code-quality/ca1027-mark-enums-with-flagsattribute.md)|Пометьте перечисляемые типы с помощью FlagsAttribute|  
 |[CA1028](../code-quality/ca1028-enum-storage-should-be-int32.md)|Хранилище перечисляемых типов должно относиться к типу Int32|  
 |[CA1030](../code-quality/ca1030-use-events-where-appropriate.md)|По возможности используйте события|  
 |[CA1031](../code-quality/ca1031-do-not-catch-general-exception-types.md)|Не перехватывайте типы общих исключений|  
@@ -148,7 +148,7 @@ ms.locfileid: "58992597"
 |[CA1812](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)|Избегайте неиспользуемых внутренних классов|  
 |[CA1813](../code-quality/ca1813-avoid-unsealed-attributes.md)|Избегайте незапечатанных атрибутов|  
 |[CA1814](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|Используйте массивы массивов вместо многомерных массивов|  
-|[CA1815](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|Переопределяйте операторы Equals и равенства для типов значений|  
+|[CA1815 СЛЕДУЕТ](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|Переопределяйте операторы Equals и равенства для типов значений|  
 |[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Свойства не должны возвращать массивы|  
 |[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Проверяйте наличие пустых строк, используя длину строки|  
 |[CA1822](../code-quality/ca1822-mark-members-as-static.md)|Пометьте члены как статические|  

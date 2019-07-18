@@ -6,11 +6,11 @@ ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
 ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204023"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Практическое руководство. Использование AsyncPackage для загрузки пакетов VSPackage в фоновом режиме
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60091672"
   
 4. Если у вас есть работы асинхронной инициализации, следует переопределить <xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>. Удалить **Initialize()** метод, предоставленный шаблоном VSIX. ( **Initialize()** метод в **AsyncPackage** является запечатанным). Можно использовать любой из <xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A> методы для добавления асинхронные службы в пакет.  
   
-    ПРИМЕЧАНИЕ. Для вызова **базовый. InitializeAsync()**, можно изменить исходный код для:  
+    ПРИМЕЧАНИЕ. Для вызова **базовый. InitializeAsync()** , можно изменить исходный код для:  
   
    ```csharp  
    await base.InitializeAsync(cancellationToken, progress);  

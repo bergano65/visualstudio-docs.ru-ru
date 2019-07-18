@@ -9,11 +9,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154596"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Общие цвета для Visual Studio
 
@@ -78,7 +78,7 @@ ms.locfileid: "60086433"
 
   Фон
 
-  Нет
+  None
 
   Передний план (текст)
 
@@ -94,7 +94,7 @@ ms.locfileid: "60086433"
 
   Border
 
-  Нет
+  None
 
   **При наведении курсора мыши**
 
@@ -180,7 +180,7 @@ ms.locfileid: "60086433"
 
   Фон
 
-  Нет
+  None
 
   Передний план (текст)
 
@@ -192,7 +192,7 @@ ms.locfileid: "60086433"
 
   Border
 
-  Нет
+  None
 
 #### <a name="menu"></a>Меню
 
@@ -799,7 +799,7 @@ ms.locfileid: "60086433"
 
   Фон
 
-  Нет
+  None
 
   Передний план (глиф)
 
@@ -854,7 +854,7 @@ ms.locfileid: "60086433"
 
   Фон
 
-  Нет
+  None
 
   Передний план (глиф)
 
@@ -1044,7 +1044,7 @@ ms.locfileid: "60086433"
 
   Фон
 
-  Нет
+  None
 
   Передний план (текст)
 
@@ -1643,7 +1643,7 @@ ms.locfileid: "60086433"
 
   Цвет совпадает с цветом фона.
 
-  **Фоновая вкладка предварительного просмотра: Hover**
+  **Фоновая вкладка предварительного просмотра: При наведении курсора мыши**
 
   Компонент
 
@@ -2232,7 +2232,7 @@ ms.locfileid: "60086433"
 
 - "Отключено" означает, что функция поиска в текущем контексте отключена.
 
-  ![Search box redline](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")
+  ![Красная линия окна поиска](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")
 
   Используйте:
   при разработке пользовательского поля поиска.
@@ -2250,7 +2250,7 @@ ms.locfileid: "60086433"
 
   Имя токена: Category.Color
 
-  ![Search input field focused](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")
+  ![Поле ввода окна поиска с фокусом ввода](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")
 
   **Поле ввода**
 
@@ -2276,7 +2276,7 @@ ms.locfileid: "60086433"
 
   Фон
 
-  Нет
+  None
 
   Передний план (глиф поиска)
 
@@ -2460,7 +2460,7 @@ ms.locfileid: "60086433"
 
   Border
 
-  Нет
+  None
 
   Separator
 
@@ -2474,7 +2474,7 @@ ms.locfileid: "60086433"
 
   Имя токена: Category.Color
 
-  ![Search input field disabled](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")
+  ![Поле ввода окна поиска отключена](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")
 
   **Поле ввода**
 
@@ -2500,7 +2500,7 @@ ms.locfileid: "60086433"
 
   Фон
 
-  Нет
+  None
 
   Передний план (глиф)
 
@@ -2508,7 +2508,7 @@ ms.locfileid: "60086433"
 
   Border
 
-  Нет
+  None
 
   ![Search drop&#45;вниз неактивная кнопка](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")
 
@@ -2516,7 +2516,7 @@ ms.locfileid: "60086433"
 
   Фон
 
-  Нет
+  None
 
   Передний план (глиф)
 
@@ -2524,7 +2524,7 @@ ms.locfileid: "60086433"
 
   Border
 
-  Нет
+  None
 
 #### <a name="search-drop-down-lists"></a>Раскрывающиеся списки поиска
 
@@ -2568,7 +2568,7 @@ ms.locfileid: "60086433"
 
   Имя токена: Category.Color
 
-  ![Search suggested](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")
+  ![Предлагаемый поиск](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")
 
   **Предлагаемые запросы поиска**
 
@@ -2706,7 +2706,7 @@ ms.locfileid: "60086433"
 
   `SearchControl.PopupButtonMouseDownText`
 
-### <a name="hyperlink"></a>Гиперссылка
+### <a name="hyperlink"></a>Hyperlink
  Гиперссылка — это один из элементов управления, для которого нет пары цветов переднего плана и фона. Во всех случаях используйте основной цвет гиперссылки, который будет правильно отображаться на темном, сером и белом фоне. Если вы не используете токен цвета для элемента управления "гиперссылка", то будет применяться системный цвет по умолчанию для состояния "активно", то есть гиперссылка будет мигать красным. Это означает, что для элемента управления используется неправильный токен цвета среды.
 
  ![Красная линия гиперссылки](../../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303 133_HyperlinkRedline")
@@ -2767,7 +2767,7 @@ ms.locfileid: "60086433"
 
  Имя токена: Category.Color
 
- ![Hyperlink disabled](../../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303-137_HyperlinkDisabled")
+ ![Неактивная гиперссылка](../../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303 137_HyperlinkDisabled")
 
  Передний план (текст)
 
@@ -2956,7 +2956,7 @@ ms.locfileid: "60086433"
 
   Border
 
-  Нет
+  None
 
   **При наведении курсора мыши**
 
@@ -2982,7 +2982,7 @@ ms.locfileid: "60086433"
 
   Border
 
-  Нет
+  None
 
   **Перетащите**
 
@@ -3008,7 +3008,7 @@ ms.locfileid: "60086433"
 
   Border
 
-  Нет
+  None
 
   **Выбранные**
 
@@ -3056,7 +3056,7 @@ ms.locfileid: "60086433"
 
   Border
 
-  Нет
+  None
 
   **Наведите указатель мыши выбранные**
 
@@ -3104,7 +3104,7 @@ ms.locfileid: "60086433"
 
   Border
 
-  Нет
+  None
 
 ### <a name="button-controls"></a>Элементы управления "Кнопка"
  ![Красная линия управления "Кнопка"](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303 155_ButtonControlRedline")
@@ -3232,7 +3232,7 @@ ms.locfileid: "60086433"
 
  `CommonControls.CheckBoxBorder`
 
- Текста
+ Текст
 
  `CommonControls.CheckBoxText`
 
@@ -3258,7 +3258,7 @@ ms.locfileid: "60086433"
 
  `CommonControls.CheckBoxBorderDisabled`
 
- Текста
+ Текст
 
  `CommonControls.CheckBoxTextDisabled`
 
@@ -3284,7 +3284,7 @@ ms.locfileid: "60086433"
 
  `CommonControls.CheckBoxBorderHover`
 
- Текста
+ Текст
 
  `CommonControls.CheckBoxTextHover`
 
@@ -3310,7 +3310,7 @@ ms.locfileid: "60086433"
 
  `CommonControls.CheckBoxBorderPressed`
 
- Текста
+ Текст
 
  `CommonControls.CheckBoxTextPressed`
 
@@ -3336,7 +3336,7 @@ ms.locfileid: "60086433"
 
  `CommonControls.CheckBoxBorderFocused`
 
- Текста
+ Текст
 
  `CommonControls.CheckBoxTextFocused`
 
@@ -3374,7 +3374,7 @@ ms.locfileid: "60086433"
 
   `CommonControls.ComboBoxBorder`
 
-  Текста
+  Текст
 
   `CommonControls.ComboBoxText`
 
@@ -3408,7 +3408,7 @@ ms.locfileid: "60086433"
 
   `CommonControls.ComboBoxBorderDisabled`
 
-  Текста
+  Текст
 
   `CommonControls.ComboBoxTextDisabled`
 
@@ -3442,7 +3442,7 @@ ms.locfileid: "60086433"
 
   `CommonControls.ComboBoxBorderHover`
 
-  Текста
+  Текст
 
   `CommonControls.ComboBoxTextHover`
 
@@ -3476,7 +3476,7 @@ ms.locfileid: "60086433"
 
   `CommonControls.ComboBoxBorderPressed`
 
-  Текста
+  Текст
 
   `CommonControls.ComboBoxTextPressed`
 
@@ -3510,7 +3510,7 @@ ms.locfileid: "60086433"
 
   `CommonControls.ComboBoxBorderFocused`
 
-  Текста
+  Текст
 
   `CommonControls.ComboBoxTextFocused`
 
@@ -3673,7 +3673,7 @@ ms.locfileid: "60086433"
 
  Border
 
- Нет
+ None
 
  Выбран (активен)
 
@@ -3687,7 +3687,7 @@ ms.locfileid: "60086433"
 
  Border
 
- Нет
+ None
 
  Выбран (неактивен)
 
@@ -3701,7 +3701,7 @@ ms.locfileid: "60086433"
 
  Border
 
- Нет
+ None
 
 ## <a name="manifest-designer"></a>Конструктор манифеста
 
@@ -3729,7 +3729,7 @@ ms.locfileid: "60086433"
 
   По умолчанию (выбрано)
 
-  Tab
+  Вкладка
 
   Фон
 
@@ -3737,7 +3737,7 @@ ms.locfileid: "60086433"
 
   Border
 
-  Нет
+  None
 
   Панель описания
 
@@ -3759,7 +3759,7 @@ ms.locfileid: "60086433"
 
   Не выбрано
 
-  Tab
+  Вкладка
 
   Фон
 
@@ -3767,7 +3767,7 @@ ms.locfileid: "60086433"
 
   Наведение
 
-  Tab
+  Вкладка
 
   Фон
 
@@ -3776,7 +3776,7 @@ ms.locfileid: "60086433"
 ## <a name="tagging"></a>Добавление тегов
  Visual Studio поддерживает добавление тегов, что позволяет пользователю объявлять доступные для поиска ключевые слова в целях отслеживания. Например, руководители проектов и разработчики могут использовать Team Foundation Server (TFS) для добавления тегов к рабочим элементам. В приведенных ниже таблицах представлены имена цветов как для самого тега, так и для глифа (значка закрытия), который появляется при наведении указателя и в некоторых состояниях.
 
- ![Tagging redline](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303-176_TaggingRedline")
+ ![Красная линия пометки тегами](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303 176_TaggingRedline")
 
  Используйте:
 для пользовательского интерфейса, который поддерживает добавление тегов.
@@ -4071,7 +4071,7 @@ ms.locfileid: "60086433"
 ## <a name="toolbox"></a>Панель элементов
  Панель элементов — одно из стандартных окон инструментов, которое чаще всего используется в Visual Studio. По сути, это элемент управления типа "Дерево" с примененной к нему специальной темой и стилем.
 
- ![Toolbox redline](../../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303-189_ToolboxRedline")
+ ![Красная линия панели инструментов](../../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303 189_ToolboxRedline")
 
  Используйте:
 при разработке окна инструментов, которое всегда должно быть согласовано с панелью элементов оболочки.
@@ -4107,7 +4107,7 @@ ms.locfileid: "60086433"
 
  Border
 
- Нет
+ None
 
  Передний план (глиф)
 
@@ -4137,7 +4137,7 @@ ms.locfileid: "60086433"
 
  Border
 
- Нет
+ None
 
  Передний план (текст)
 
@@ -4201,7 +4201,7 @@ ms.locfileid: "60086433"
 
  Border
 
- Нет
+ None
 
  Передний план (глиф)
 

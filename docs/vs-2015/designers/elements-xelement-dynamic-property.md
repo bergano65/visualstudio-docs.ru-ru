@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 158e200a33b4783df9f63f42a1eca7bb8957d449
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145685"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (динамическое свойство XElement)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ elem.Elements[{namespaceName}localName]
   
  В данном свойстве используется отложенное выполнение.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [XElement Class Dynamic Properties](../designers/xelement-class-dynamic-properties.md)  (Динамические свойства класса XElement)  
  [Elements (XElement Dynamic Property)](../designers/element-xelement-dynamic-property.md)  (Elements (Динамическое свойство XElement))  
  [Descendants (динамическое свойство XElement)](../designers/descendants-xelement-dynamic-property.md)

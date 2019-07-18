@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6567b4ff4ee7c798ac82c5d33ea50ac206fcd692
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146175"
 ---
 # <a name="customizing-project-and-item-templates"></a>Настройка шаблонов проектов и элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "60039050"
   
 - Вы можете изменить и экспортировать существующий шаблон в виде пользовательского шаблона.  
   
-     Дополнительные сведения см. в разделе [Как Обновление существующих шаблонов](../ide/how-to-update-existing-templates.md).  
+     Дополнительные сведения см. в разделе [Практическое руководство. Обновление существующих шаблонов](../ide/how-to-update-existing-templates.md).  
   
 - Вы можете передать пользовательские параметры в шаблон для замены существующих значений.  
   
-     Дополнительные сведения см. в разделе [Как Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).  
+     Дополнительные сведения см. в разделе [Практическое руководство. Замена параметров в шаблоне](../ide/how-to-substitute-parameters-in-a-template.md).  
   
 - Вы можете настроить мастеры, создающие проекты из шаблонов.  
   
-     Дополнительные сведения см. в разделе [Как Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md).  
+     Дополнительные сведения см. в разделе [Практическое руководство. Использование мастеров для шаблонов проектов](../extensibility/how-to-use-wizards-with-project-templates.md).  
   
 ## <a name="related-sections"></a>Связанные разделы  
  [Создание шаблонов проектов и элементов](../ide/creating-project-and-item-templates.md)  

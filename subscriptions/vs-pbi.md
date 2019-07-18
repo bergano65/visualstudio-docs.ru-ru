@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о подписке на Power BI Pro, входящей в некоторые подписки Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031969"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824634"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro в подписках Visual Studio
 
@@ -111,9 +110,9 @@ ms.locfileid: "67031969"
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 - Нужна помощь с Power BI Pro?
-    - См. [нашу документацию](/power-bi/).
-    - Проблемы с регистрацией?  См. руководство по [регистрации в Power BI в качестве отдельного пользователя](/power-bi/service-self-service-signup-for-power-bi)
-    - Изучите важные вопросы, получите помощь от сообщества или отправьте запрос на поддержку на [странице поддержки](https://powerbi.microsoft.com/support/).
+  - См. [нашу документацию](/power-bi/).
+  - Проблемы с регистрацией?  См. руководство по [регистрации в Power BI в качестве отдельного пользователя](/power-bi/service-self-service-signup-for-power-bi)
+  - Изучите важные вопросы, получите помощь от сообщества или отправьте запрос на поддержку на [странице поддержки](https://powerbi.microsoft.com/support/).
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
 

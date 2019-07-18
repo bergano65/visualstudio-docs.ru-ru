@@ -12,11 +12,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 19d82f006bb1c37981f60e1a0b2710588eb0053c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204779"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Глоссарий отладчика Visual Studio
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "58980004"
   кадр стека  
   Представляет состояние процесса вычисления на определенный кадр и определенного уровня вложенных вызовов функций.  
   
-  thread  
+  поток  
   Обобщенный понятие выполнения команд на основе стека, под управлением по крайней мере одной программы.  
   
   Предупреждение точки останова  

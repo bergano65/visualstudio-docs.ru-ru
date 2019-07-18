@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 48f1b0c0860f8dfc38a83856570cdcdfa6f6ffc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58992304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201737"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819. Свойства не должны возвращать массивы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "58992304"
  Чтобы устранить нарушение этого правила, сделайте свойство метод или измените свойства для возврата коллекции.
 
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Атрибуты могут содержать свойства, которые возвращают массивы, но не могут содержать свойства, которые возвращают коллекции. Можно подавить предупреждение, которое возникает для свойства атрибута, который является производным от [System.Attribute] (<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) класс. В противном случае не отключайте предупреждение из этого правила.
+ Атрибуты могут содержать свойства, которые возвращают массивы, но не могут содержать свойства, которые возвращают коллекции. Можно подавить предупреждение, вызываемое для свойства атрибута, который является производным от ([System.Attribute]<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) класса. В противном случае не отключайте предупреждение из этого правила.
 
 ## <a name="example-violation"></a>Пример нарушения
 

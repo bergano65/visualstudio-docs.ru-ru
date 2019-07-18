@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 679c12eb99e3cad7486384999a2393e09dbd277f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142102"
 ---
 # <a name="usage-warnings"></a>предупреждения использования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "59002187"
 |[CA2235. Пометьте все несериализуемые поля](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Экземпляр поля несериализуемого типа объявлен в сериализуемом типе.|  
 |[CA2236: Вызывайте методы базового класса для типов ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Чтобы устранить нарушение этого правила, вызовите метод базового типа GetObjectData или конструктор сериализации из соответствующего метода производного типа или конструктора.|  
 |[CA2237. Пометьте типы ISerializable атрибутом SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Распознаваемых среда CLR как сериализуемый, типы должны быть помечены атрибутом SerializableAttribute даже если тип использует пользовательскую процедуру сериализации посредством реализации интерфейса ISerializable.|  
-|[CA2238: Правильно реализовывать методы сериализации](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Метод, обрабатывающий событие сериализации, не имеет правильной сигнатуры, типа возвращаемого значения или отображения.|  
+|[CA2238: СЛЕДУЕТ Правильно реализовывать методы сериализации](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Метод, обрабатывающий событие сериализации, не имеет правильной сигнатуры, типа возвращаемого значения или отображения.|  
 |[CA2239: Предоставляйте методы десериализации для необязательных полей](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|Тип имеет поле, помеченное атрибутом System.Runtime.Serialization.OptionalFieldAttribute, и тип не предоставляет методы обработки событий десериализации.|  
 |[CA2240: Правильно реализуйте ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)|Чтобы устранить нарушение этого правила, сделайте метод GetObjectData и переопределяемым и убедитесь, что все поля экземпляра включены в процессе сериализации или явно помечены атрибутом NonSerializedAttribute.|  
 |[CA2241: Предоставьте правильные аргументы методам форматирования](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|Аргумент формата, переданный методу System.String.Format не содержит элемент форматирования, соответствующий каждому аргументу объекта, или наоборот.|  

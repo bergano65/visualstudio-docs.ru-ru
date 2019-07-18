@@ -12,11 +12,11 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197407"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Создание специализированных редакторов и конструкторов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,10 +72,10 @@ ms.locfileid: "60064392"
      Если может быть внедрен, следует создать главное окно для внешнего редактора и затем вызвать <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> метод и набор <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> значение перечисления для `DP_External`. Если редактор не может быть внедрен, интегрированной среды разработки автоматически создаст в отдельном окне для него.  
   
 ## <a name="in-this-section"></a>В этом разделе  
- [Пошаговое руководство: Создание специализированного редактора](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [Пошаговое руководство: создание специализированного редактора](../extensibility/walkthrough-creating-a-custom-editor.md)  
  В этой статье описывается создание пользовательского редактора.  
   
- [Пошаговое руководство: Добавление функций в специализированный редактор](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [Пошаговое руководство: добавление функций в специализированный редактор](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  В этой статье описывается добавление компонентов в специализированный редактор.  
   
  [Инициализация конструктора и конфигурация метаданных](../extensibility/designer-initialization-and-metadata-configuration.md)  

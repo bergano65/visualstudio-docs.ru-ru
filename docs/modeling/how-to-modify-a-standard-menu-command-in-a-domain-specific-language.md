@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 120696fe335245775c6ea7188efc059ae9e71342
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 466df3030793603319cf73085910a164fd222e29
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263697"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890596"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Практическое руководство. Изменение стандартной команды меню в предметно-ориентированном языке
 
@@ -55,7 +55,7 @@ ms.locfileid: "66263697"
 
 2. В **DslPackage**, создайте папку с именем **пользовательский код**. В этой папке создайте новый файл класса с именем `CommandSet.cs`.
 
-3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Пример:
+3. В новом файле напишите частичное объявление, используя то же пространство имен и имя, что и в созданном частичном классе. Например:
 
     ```csharp
     using System;
@@ -65,7 +65,8 @@ ms.locfileid: "66263697"
     { internal partial class Language1CommandSet { ...
     ```
 
-     **Примечание** Если для создания нового файла использовался шаблон файла класса, необходимо откорректировать пространство имен и имя класса.
+    > [!NOTE]
+    > Если для создания нового файла использовался шаблон файла класса, необходимо откорректировать пространство имен и имя класса.
 
 ## <a name="override-the-command-methods"></a>Переопределение методов команд
 

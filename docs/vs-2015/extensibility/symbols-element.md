@@ -12,18 +12,18 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c8d28d225bd3a8d5c105bf54b9c63574002aed15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160462"
 ---
 # <a name="symbols-element"></a>Элемент Symbols
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Определяет идентификаторы GUID и идентификаторы, которые используются другими элементами VSCT. Для неуправляемого кода, эти сведения обычно берутся из файлов заголовков, которые определяются [элемент Extern](../extensibility/extern-element.md). Управляемый код использует дочерние элементы элемента символы для определения этой информации.  
   
- При создании vsct-файл из существующего файла cto, символы будут создаваться как дочерние элементы элемента символы. Дополнительные сведения см. в разделе [Как Создать. Vsct-файл из существующего. Руководитель технологического отдела компании файл](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+ При создании vsct-файл из существующего файла cto, символы будут создаваться как дочерние элементы элемента символы. Дополнительные сведения см. в разделе [Практическое руководство. Создать. Vsct-файл из существующего. Руководитель технологического отдела компании файл](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
  Элемент Symbols не следует путать с [определить элемент](../extensibility/define-element.md), который определяет пары имя значение для использования препроцессором.  
   
@@ -43,7 +43,7 @@ ms.locfileid: "58991875"
   
 |Атрибут|Описание|  
 |---------------|-----------------|  
-|Нет||  
+|None||  
   
 ### <a name="child-elements"></a>Дочерние элементы  
   

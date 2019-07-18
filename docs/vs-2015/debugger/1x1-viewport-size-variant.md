@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 74e3bc706cb2df12aacddf9fbb77dec598bfc17a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157556"
 ---
 # <a name="1x1-viewport-size-variant"></a>Вариант размера окна просмотра (1x1)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

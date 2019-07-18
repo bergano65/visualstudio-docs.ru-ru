@@ -18,11 +18,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: f7820947921e584d96d7f9e7299b70410b3d0587
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58980356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157142"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Анализ качества кода C/C++ с помощью метода анализа кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58980356"
 |||  
 |-|-|  
 |[Общие сведения об анализе кода в C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)|Дополнительные сведения о функциях, средство анализа кода.|  
-|[Краткое руководство: Анализ кода для C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)|Изучите основы анализа кода для C/C++.|  
+|[Краткое руководство. Анализ кода для C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)|Изучите основы анализа кода для C/C++.|  
 |[Использование наборов правил для задания выполняемых правил C++](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)|Укажите правила для запуска в проекте или решении.|  
 |[Использование средств проверки на соответствие рекомендациям C++ Core Guidelines](../code-quality/using-the-cpp-core-guidelines-checkers.md)|Добавьте в проект средства проверки C++ Core Guidelines.|  
 |[Практическое руководство. Задание свойств анализа кода для проектов C/C++](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md)|Описываются параметры конфигурации для анализа кода.|  

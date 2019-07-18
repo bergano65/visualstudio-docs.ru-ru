@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156855"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Навигация по сеансу отладки в Visual Studio (XAML и C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "60059881"
 
  **Выполните шаг с заходом метода.** На **Отладка** меню, выберите **шаг с заходом** (клавиатуры: КЛАВИША F11).
 
- ![Current line](../debugger/media/dbg-basics-currentline.png "DBG_Basics_CurrentLine")
+ ![Текущая строка](../debugger/media/dbg-basics-currentline.png "DBG_Basics_CurrentLine")
 
  Обратите внимание, что отладчик переходит на следующую строку, которая представляет собой вызов метода Example1. Снова выберите шаг с заходом. Отладчик перемещается на точку входа метода Example1. Это означает, что метод был загружен в стеке вызовов и была выделена память для локальных переменных.
 
@@ -108,7 +108,7 @@ ms.locfileid: "60059881"
 
   **Добавьте контрольное значение для переменной methodTrack.** Переменная `methodWatch` используется на протяжении быстрого запуска для отображения методов, вызываемых в примерах. Чтобы упростить просмотр значения переменной, добавьте его в окно контрольных значений. Щелкните правой кнопкой мыши имя переменной в окне «Локальные», а затем выберите **Добавить контрольное значение**.
 
-  ![Watch window](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")
+  ![Окно контрольных значений](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")
 
   В окне контрольных значений можно отслеживать несколько переменных. Значения контролируемых переменных, например значения локальных переменных и значения в окнах подсказок, обновляются при каждой приостановке выполнения. Можно также добавить переменные в окно контрольного значения из редактора кода. Выберите переменную для контроля, щелкните правой кнопкой мыши и выберите **Добавить контрольное значение**.
 

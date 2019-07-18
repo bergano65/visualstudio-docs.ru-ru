@@ -1,5 +1,5 @@
 ---
-title: DA0008. Собрано мало выборок | Документы Майкрософт
+title: DA0008. Собрано мало выборок | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03fd9b6fd794320faf76119616900b79d5bf4333
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187859"
 ---
-# <a name="da0008-few-samples-collected"></a>DA0008. Собрано несколько образцов
+# <a name="da0008-few-samples-collected"></a>DA0008. Собрано мало выборок
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ИД правила | DA0008 |  

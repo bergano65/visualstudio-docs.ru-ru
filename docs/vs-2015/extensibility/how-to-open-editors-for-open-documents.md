@@ -11,11 +11,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae6e565e026ca49825a7b00a82e4e5c62a2f6c3c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204145"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Практическое руководство. Открытие редакторов для открытых документов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,4 +57,4 @@ ms.locfileid: "60092335"
 ## <a name="see-also"></a>См. также  
  [Открытие и сохранение элементов проекта](../extensibility/internals/opening-and-saving-project-items.md)   
  [Практическое руководство. Открытие редакторов соответствующих проектов](../extensibility/how-to-open-project-specific-editors.md)   
- [Практическое руководство. Стандартные редакторы](../extensibility/how-to-open-standard-editors.md)
+ [Практическое руководство. Открытие стандартных редакторов](../extensibility/how-to-open-standard-editors.md)

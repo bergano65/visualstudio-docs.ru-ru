@@ -11,12 +11,12 @@ ms.author: ronpet
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 96ac53900806cc37e215342573f998be995289f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86ed90e6a4fe211d162f12785b0f3f555802ad17
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785888"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823754"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Новые возможности Live Unit Testing для Visual Studio 2017
 
@@ -28,9 +28,9 @@ ms.locfileid: "62785888"
 
 - **Улучшенные возможности обнаружения**. Для тех пользователей, которые не знают о существовании функции Live Unit Testing, в интегрированной среде разработки Visual Studio выводится золотистая панель с напоминанием о Live Unit Testing каждый раз, когда пользователь открывает решение, в котором есть модульные тесты, но функция Live Unit Testing в котором не включена. Представленные на ней сведения позволяют пользователю узнать больше о функции Live Unit Testing и о том, как включить ее. Если предварительные требования для использования Live Unit Testing не соблюдены, это также указывается на этой панели. Сюда входит следующее.
 
-   - Отсутствуют адаптеры тестов.
-   - Установлены старые версии адаптеров тестов.
-   - Необходимо восстановить пакеты NuGet, на которые ссылается решение.
+  - Отсутствуют адаптеры тестов.
+  - Установлены старые версии адаптеров тестов.
+  - Необходимо восстановить пакеты NuGet, на которые ссылается решение.
 
 - **Интеграция с уведомлениями центра задач**. В интегрированной среде разработки Visual Studio в центре задач теперь выводится уведомление Live Unit Testing об обработке в фоновом режиме. Оно позволяет пользователям легко узнать, что происходит при включении функции Live Unit Testing. Это уведомление решает основную проблему при запуске Live Unit Testing в большом решении. Ранее пользователи несколько минут не знали, была ли включена функция Live Unit Testing и работала ли она, пока не появлялись значки покрытия. Теперь все иначе.
 
@@ -60,9 +60,9 @@ ms.locfileid: "62785888"
 
 - Теперь с помощью следующих атрибутов можно определить в исходном коде необходимость исключения целевых методов теста из Live Unit Testing.
 
-   - Для xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
-   - Для NUnit: `[Category("SkipWhenLiveUnitTesting")]`
-   - Для MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
+  - Для xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+  - Для NUnit: `[Category("SkipWhenLiveUnitTesting")]`
+  - Для MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>См. также
 

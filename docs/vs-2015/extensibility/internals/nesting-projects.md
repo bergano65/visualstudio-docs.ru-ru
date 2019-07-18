@@ -14,11 +14,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e3a0fae42dc7bf1497e3d0d4a9d23f9cab50675
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180410"
 ---
 # <a name="nesting-projects"></a>Проекты вложения
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,6 +42,6 @@ ms.locfileid: "58979325"
  [Регистрация шаблонов проектов и элементов](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Реализация обработки команд для вложенных проектов](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)   
  [Фильтрация диалогового окна AddItem для вложенных проектов](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
- [Контрольный список: Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Контрольный список. Создание типов проектов](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Параметры контекста](../../extensibility/internals/context-parameters.md)   
  [Файл мастера (VSZ-файл)](../../extensibility/internals/wizard-dot-vsz-file.md)

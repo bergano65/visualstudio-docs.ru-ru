@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196860"
 ---
 # <a name="delayed-document-loading"></a>Отложенная загрузка документов
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ ms.locfileid: "60116931"
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Тестирование расширения, чтобы увидеть, если они принудительно инициализации  
  Нет не обозначена указать документ был ли инициализирован, чтобы он может быть трудно узнать, если расширение после инициализации. Можно задать раздел реестра, который упрощает проверку подлинности, так как вызывает Заголовок каждого документа, который не был инициализирован полностью текста `[Stub]` в заголовке.  
   
- В **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**, задайте **StubTabTitleFormatString** для  **{0} [заглушка]**.
+ В **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** , задайте **StubTabTitleFormatString** для  **{0} [заглушка]** .

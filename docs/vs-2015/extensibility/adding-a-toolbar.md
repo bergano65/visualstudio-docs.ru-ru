@@ -12,11 +12,11 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184871"
 ---
 # <a name="adding-a-toolbar"></a>Добавление панели инструментов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ ms.locfileid: "60077723"
   
 6. Щелкните правой кнопкой мыши в строке меню Visual Studio, чтобы получить список панелей инструментов. Выберите **тестирования инструментов**.  
   
-7. Теперь вы увидите на панели инструментов значок справа от Find в значок файлов. Если щелкнуть значок, появится окно сообщения с текстом **ToolbarTestCommandPackage. Внутри IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+7. Теперь вы увидите на панели инструментов значок справа от Find в значок файлов. Если щелкнуть значок, появится окно сообщения с текстом **ToolbarTestCommandPackage. Внутри IDEToolbar.ToolbarTestCommand.MenuItemCallback()** .  
   
 ## <a name="see-also"></a>См. также  
  [Команды, меню и панели инструментов](../extensibility/internals/commands-menus-and-toolbars.md)

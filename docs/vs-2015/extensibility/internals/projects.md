@@ -15,11 +15,11 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a251af12ccf4be5f0f48f789ac59fedaed3299b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58991534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183938"
 ---
 # <a name="projects"></a>Проекты
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58991534"
  [Веб-проекты](../../extensibility/internals/web-projects.md)  
  Описание веб-проект, который в свою очередь создают веб-приложений.  
   
- [Создание нового проекта. Это работает, часть один](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) и [Создание нового проекта: Это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ [Создание проекта: Это работает, часть один](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) и [Создание нового проекта: как это работает, часть 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
  Объясняет, что фактически происходит при создании нового проекта.  
   
  [Примеры VSSDK](../../misc/vssdk-samples.md)  

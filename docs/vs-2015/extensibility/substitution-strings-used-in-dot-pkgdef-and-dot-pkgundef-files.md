@@ -11,13 +11,13 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47434d9d1dfcedeeaea330b1d65645d7a632c6e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160535"
 ---
-# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Строки подстановки, используемые в. Pkgdef и. Файлы Pkgundef
+# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Строки подстановки, используемые в PKGDEF- и PKGUNDEF-файлах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Вы можете использовать строки подстановки, перечислены ниже в .pkgdef и .pkgundef файлы определения для Visual Studio приложения isolated shell.  

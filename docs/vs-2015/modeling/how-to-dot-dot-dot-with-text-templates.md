@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c31e1d17137fd0e801bb506c280a83285c311b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181575"
 ---
 # <a name="how-to--with-text-templates"></a>Практическое руководство по текстовым шаблонам
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "60093024"
   
 ### <a name="generate-files-from-a-complex-model"></a>Создание файлов из сложной модели  
   
-- Рассмотрите возможность создания доменного языка (DSL) для представления модели. Это упрощает создание шаблонов, так как использовать типы и свойства, которые отражают имена элементов в модели. У вас нет синтаксический анализ файла или перемещения по узлам XML. Пример:  
+- Рассмотрите возможность создания доменного языка (DSL) для представления модели. Это упрощает создание шаблонов, так как использовать типы и свойства, которые отражают имена элементов в модели. У вас нет синтаксический анализ файла или перемещения по узлам XML. Например:  
   
      `foreach (Book book in this.Library) { ... }`  
   
@@ -87,7 +87,7 @@ ms.locfileid: "60093024"
      Дополнительные сведения см. в разделе [Создание моделей для приложения](../modeling/create-models-for-your-app.md) и [Создание файлов из модели UML](../modeling/generate-files-from-a-uml-model.md).  
   
 ### <a name="get-data-from-includevsprvsincludesvsprvs-mdmd"></a>Получение данных из [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
- Для использования служб, предоставляемых в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], набором `hostSpecific` атрибут и нагрузки `EnvDTE` сборки. Пример:  
+ Для использования служб, предоставляемых в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], набором `hostSpecific` атрибут и нагрузки `EnvDTE` сборки. Например:  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  

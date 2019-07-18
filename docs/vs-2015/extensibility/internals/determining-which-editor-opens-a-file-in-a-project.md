@@ -14,11 +14,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1c79860f770a6b04a17786cfb281fc3c0e4dffda
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58993885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196758"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Определение редактора, с помощью которого откроется файл в проекте
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58993885"
   
  Проект прочих файлов утверждений все файлы, которые не полученное в других проектах. Таким образом, пользовательских редакторов можно открывать документы, прежде чем стандартные редакторы открыть их. Если проект прочих файлов утверждений файл, среда вызывает <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> метод, чтобы открыть файл с помощью стандартного редактора. Среда проверяет свой внутренний список зарегистрированных редакторы для, обрабатывающий RTF-файлы. Этот список находится в реестре по адресу следующий раздел:  
   
- [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`>\Editors\\{<`editor factory guid`>}\Extensions]  
+ [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`> \Editors\\{<`editor factory guid`>} \Extensions]  
   
  Среда также проверяет идентификаторы класса в ключе HKEY_CLASSES_ROOT\CLSID для объектов, имеющих подпараметр DocObject. Если обнаруживается расширение файла, встроенную версию приложения, например Microsoft Word создается на месте в Visual Studio. Эти объекты документа должен быть составные файлы, которые реализуют <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> необходимо реализовать интерфейс, либо этого объекта <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> интерфейс.  
   

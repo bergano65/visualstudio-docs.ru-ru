@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180303"
 ---
-# <a name="language-services-and-the-core-editor"></a>Языковые службы и базовым редактором
+# <a name="language-services-and-the-core-editor"></a>Языковые службы и основной редактор
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Редакторы в среде Visual Studio часто связаны с языковой службой. Помимо прочего языковая служба предоставляет Цветовая подсветка синтаксиса, завершение операторов, IntelliSense и форматированием текста.  
@@ -27,7 +27,7 @@ ms.locfileid: "58979252"
   
  Дополнительные сведения см. в разделе [определить, какой редактор открывает файл в проекте](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## <a name="language-services-and-the-core-editor"></a>Языковые службы и базовым редактором  
+## <a name="language-services-and-the-core-editor"></a>Языковые службы и основной редактор  
  Путем реализации языковой службы, можно управлять отображением данных в представление документа. Служба языка предоставляет информацию и поведение, характерное для данного языка, например Visual C++. При создании текстового буфера и определить расширение имени файла документа, который открывается, текстовый буфер определяет языковой службы, связанный с расширением имени файла из раздела реестра, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors \\\Extensions {YourLanguageService GUID}. Стандартный пакет VSPackage, загрузка процедура затем загружает VSPackage и создается экземпляр службы языка.  
   
  На следующем рисунке показан базовый языковой службы.  

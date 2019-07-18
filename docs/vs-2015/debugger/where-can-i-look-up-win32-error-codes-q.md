@@ -21,18 +21,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d403315a2320589f69174109d55c8726ffd5f673
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58990941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149404"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Где можно найти коды ошибок Win32?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 WINERROR.H в папке INCLUDE стандартного дистрибутива содержит определения кодов ошибок для функций Win32 API.  
   
- Кроме того, код ошибки можно посмотреть, введя код в окно **Контрольные значения** или в диалоговом окне **Быстрая проверка**. Пример:  
+ Кроме того, код ошибки можно посмотреть, введя код в окно **Контрольные значения** или в диалоговом окне **Быстрая проверка**. Например:  
   
 ```  
 0x80000004,hr  

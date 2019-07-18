@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6a0b46a4aaa780357faa38a9ee4b01d04b1a0ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178864"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Практическое руководство. Исключение проектов из сборки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60110938"
   
 1. В строке меню последовательно выберите пункты **Сборка**и **Диспетчер конфигураций**.  
   
-2. В списке **Активная конфигурация решения** выберите **\<Создать>**.  
+2. В списке **Активная конфигурация решения** выберите **\<Создать>** .  
   
 3. В поле **Имя** введите имя конфигурации решения.  
   

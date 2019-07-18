@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182872"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Расширение моделей и схем UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60054616"
   
  Разработчики Fabrikam создают код, который автоматически задает цвет элемента в зависимости от его стереотипа. Это помогает пользователям различать назначение элементов в моделях.  
   
- Дополнительные сведения см. в разделе [Как Реагирование на изменения в UML-модели](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+ Дополнительные сведения см. в разделе [Практическое руководство. Реагирование на изменения в UML-модели](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
 ## <a name="model-bus"></a>Шина модели  
  Шина модели позволяет осуществлять доступ к схеме или модели из другой схемы или другого расширения [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] . Помимо прочего, это позволяет распространять сведения в рамках нескольких моделей, чтобы над объединенной моделью одновременно могло работать несколько пользователей.  

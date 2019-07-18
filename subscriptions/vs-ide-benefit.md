@@ -6,13 +6,12 @@ manager: lank
 ms.date: 04/03/2019
 ms.topic: conceptual
 description: Сведения о том, как скачать и установить Visual Studio IDE, входящую в вашу подписку Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 1614df094c043c4b3a758409c1cff3c73b56abf6
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586938"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824657"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Использование преимущества Visual Studio 2019
 
@@ -79,6 +78,6 @@ ms.locfileid: "67586938"
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 - Если вам нужна помощь с Visual Studio IDE, ознакомьтесь с этими ресурсами:
-    - Техническая поддержка: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-    - [Документация](/visualstudio/)
+  - Техническая поддержка: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [Документация](/visualstudio/)
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.

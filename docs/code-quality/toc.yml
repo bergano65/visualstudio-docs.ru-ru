@@ -156,7 +156,7 @@
           href: how-to-generate-code-metrics-data.md
         - name: Работа с данными метрик кода
           href: working-with-code-metrics-data.md
-    - name: Ссылка
+    - name: Справочники
       items:
         - name: Наборы правил
           items:
@@ -690,6 +690,14 @@
                   href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
                 - name: CA3147. Присвоение метки ValidateAntiForgeryToken обработчикам команд
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
+                - name: CA5361. Не отключайте стойкое шифрование в защищенном канале
+                  href: ca5361.md
+                - name: CA5364. Не используйте нерекомендуемые протоколы безопасности
+                  href: ca5364.md
+                - name: CA5378. Не отключайте ServicePointManagerSecurityProtocols
+                  href: ca5378.md
+                - name: CA5386. Не встраивайте значение SecurityProtocolType
+                  href: ca5386.md
             - name: 'Предупреждения, связанные с использованием'
               items:
                 - name: Обзор

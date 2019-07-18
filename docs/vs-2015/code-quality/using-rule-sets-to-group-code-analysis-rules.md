@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 1da32bd3626af60de56c0a8544753f95988773e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58979547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201225"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Использование наборов правил для группировки правил анализа кода
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58979547"
   
 ## <a name="common-tasks"></a>Общие задачи  
   
-|Задача|Связанное содержимое|  
+|Задача|См. также|  
 |----------|---------------------|  
 |**Получите практические рекомендации:** Использование средств анализа кода для указания набора настраиваемых правил для поиска и устранения проблем в простом приложении .NET Framework.|-   [Пошаговое руководство: Настройка и использование настраиваемого правила задайте](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)|  
 |**Настройка анализа кода для проекта:** Выберите существующий набор правил для проекта, веб-сайта или решения.|-   [Практическое руководство. Настройка анализа кода для проекта управляемого кода](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)<br />-   [Использование наборов правил для задания выполняемых правил C++](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)<br />-   [Практическое руководство. Настройка анализа кода для веб-приложения ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)<br />-   [Практическое руководство. Определение набора правил для нескольких проектов в решении](../code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md)|  

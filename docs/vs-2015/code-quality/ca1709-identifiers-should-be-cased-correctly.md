@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b447b111cedc30aa23f3aaad0fbc964a5d8a2bd2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189164"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709. Идентификаторы должны иметь правильное сочетание прописных и строчных букв
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "59669358"
 ## <a name="when-to-suppress-warnings"></a>Отключение предупреждений  
  Это безопасно отключить это предупреждение, если у вас есть собственные соглашения об именовании или идентификатор представляет имя собственное, например, имя компании или технологии.  
   
- Можно также добавить конкретных терминов, сокращений и акронимов, в пользовательский словарь анализа кода. Термины, указанные в пользовательский словарь не вызовет нарушение этого правила. Дополнительные сведения см. в разделе [Как Настройка словаря анализа кода](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ Можно также добавить конкретных терминов, сокращений и акронимов, в пользовательский словарь анализа кода. Термины, указанные в пользовательский словарь не вызовет нарушение этого правила. Дополнительные сведения см. в разделе [Практическое руководство. Настройка словаря анализа кода](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
   
 ## <a name="related-rules"></a>Связанные правила  
  [CA1708: Идентификаторы должны отличаться регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

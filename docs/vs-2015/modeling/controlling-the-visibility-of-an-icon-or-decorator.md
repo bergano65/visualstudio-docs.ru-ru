@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159625"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Управление видимостью значка или декоратора
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ ms.locfileid: "60107183"
   
 1. Добавьте в класс домена рассчитываемое свойство домена. В **свойства** окна, задайте следующие значения:  
   
-     **IsBrowsable =**`False`**-это скрывает свойство от пользователя**  
+     **IsBrowsable =** `False` **-это скрывает свойство от пользователя**  
   
-     **Тип =**`Calculated`**-это означает, что будет предоставлять код, который вычисляет его значение**  
+     **Тип =** `Calculated` **-это означает, что будет предоставлять код, который вычисляет его значение**  
   
      **Имя** например **DecoratorControl**  
   
@@ -92,7 +92,7 @@ ms.locfileid: "60107183"
   
 6. Обратите внимание на то, пространство имен, класс и метод, отсутствуют.  Например, Company.FamilyTree.Person.GetDecoratorControlValue().  
   
-7. В отдельном файле кода напишете определение разделяемого класса, содержащего метод отсутствует. Пример:  
+7. В отдельном файле кода напишете определение разделяемого класса, содержащего метод отсутствует. Например:  
   
     ```  
     namespace Company.FamilyTree  

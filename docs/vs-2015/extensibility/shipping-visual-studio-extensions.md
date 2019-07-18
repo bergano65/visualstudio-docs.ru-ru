@@ -13,11 +13,11 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c7154395be43f6a0b07e9f2557d94fa594ef5ba4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150794"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Доставка расширений Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

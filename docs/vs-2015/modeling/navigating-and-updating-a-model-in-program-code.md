@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 260d726ef9f6478292fe80c7fd90ffc4a807265d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158951"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Перемещение по модели и обновление модели в коде программы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60110808"
   
  [DocView и DocData](#docdata)  
   
- Фигуры, соединители и схемы и их связи с элементами модели описаны в отдельной статье. Дополнительные сведения см. в разделе [Как Перейдите схеме и ее обновление](../misc/how-to-navigate-and-update-a-diagram.md).  
+ Фигуры, соединители и схемы и их связи с элементами модели описаны в отдельной статье. Дополнительные сведения см. в разделе [Практическое руководство. Перейдите схеме и ее обновление](../misc/how-to-navigate-and-update-a-diagram.md).  
   
 ## <a name="example"></a> Примере рассмотрено определение DSL  
  Это основная часть DslDefinition.dsl в примерах этого раздела:  
@@ -120,7 +120,7 @@ ms.locfileid: "60110808"
   
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`  
   
- Кроме того, существуют также другие методы для доступа к ссылкам. Пример:  
+ Кроме того, существуют также другие методы для доступа к ссылкам. Например:  
   
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60110808"
  `store.ElementDirectory.GetElement(elementId);`  
   
 ## <a name="metadata"></a> Доступ к сведениям о классе  
- Можно получить сведения о классов, отношения и другие аспекты определения DSL. Пример:  
+ Можно получить сведения о классов, отношения и другие аспекты определения DSL. Например:  
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
   
@@ -226,7 +226,7 @@ using (Transaction t =
   
 - Задайте свойства нового элемента, особенно свойства, для которого `IsName` имеет значение true, если в DslDefinition. Этот флаг помечает свойство, которое служит для идентификации элемента уникально в пределах его владельцем. В этом случае свойство Name имеет флага.  
   
-- Определение DSL этот DSL должен быть загружен в Store. Если вы создаете расширения, такие как команды меню, оно обычно представлено уже true. В других случаях можно явно загрузить модель в Store, или использовать <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> загружать его. Дополнительные сведения см. в разделе [Как Открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+- Определение DSL этот DSL должен быть загружен в Store. Если вы создаете расширения, такие как команды меню, оно обычно представлено уже true. В других случаях можно явно загрузить модель в Store, или использовать <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> загружать его. Дополнительные сведения см. в разделе [Практическое руководство. Открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
   При создании элемента, таким образом, фигуры создается автоматически (если DSL со схемой). Он отображается в расположении, автоматически назначаемый, выполнив стандартную форму, цвет и другие функции. Если вы хотите управлять, где и как связанные фигуры отображается, см. в разделе [Создание элемента и его фигура](#merge).  
   
@@ -235,13 +235,13 @@ using (Transaction t =
   
  Существует три способа, в которых можно создать экземпляр отношения. Каждый из этих трех методов имеет тот же эффект:  
   
-- Установите свойство исходный исполнитель роли. Пример:  
+- Установите свойство исходный исполнитель роли. Например:  
   
   - `familyTree.People.Add(edward);`  
   
   - `edward.Parents.Add(henry);`  
   
-- Свойства целевого исполнителя роли. Пример:  
+- Свойства целевого исполнителя роли. Например:  
   
   - `edward.familyTreeModel = familyTree;`  
   
@@ -251,7 +251,7 @@ using (Transaction t =
   
        Кратность этой роли будет `0..*`, поэтому мы добавим в коллекцию.  
   
-- Явно создайте экземпляр связи. Пример:  
+- Явно создайте экземпляр связи. Например:  
   
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
@@ -510,7 +510,7 @@ partial class MyDiagram
  Можно также задать цвет и другие свойства, предоставляемого соединителей с помощью этого метода.  
   
 ### <a name="use-transactions"></a>Использование транзакций  
- Фигуры, соединители и схемы являются подтипами <xref:Microsoft.VisualStudio.Modeling.ModelElement> и в реальном времени в Store. Таким образом, необходимо внести изменения в них только внутри транзакции. Дополнительные сведения см. в разделе [Как Использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).  
+ Фигуры, соединители и схемы являются подтипами <xref:Microsoft.VisualStudio.Modeling.ModelElement> и в реальном времени в Store. Таким образом, необходимо внести изменения в них только внутри транзакции. Дополнительные сведения см. в разделе [Практическое руководство. Использование транзакций для обновления модели](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
 ## <a name="docdata"></a> Просмотр документа и документа данных  
  ![Схема классов стандартных типов схем](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  

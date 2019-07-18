@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2279a193b173924b45f42172281e106370131023
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157734"
 ---
 # <a name="editing-xslt-style-sheets"></a>Редактирование таблиц стилей XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59648178"
  Код в блоках скриптов поддерживается отладчиком XSLT, поэтому можно установить точки останова и пошагово выполнить код блока скрипта.  
   
  **Просмотр выходных данных XSLT**  
- Можно выполнить преобразование XSL и просмотреть выходные данные в редакторе XML. Дополнительные сведения см. в разделе [Как Выполнение преобразования XSLT в редакторе XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).  
+ Можно выполнить преобразование XSL и просмотреть выходные данные в редакторе XML. Дополнительные сведения см. в разделе [Практическое руководство. Выполнение преобразования XSLT в редакторе XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).  
   
  **Отладка XSLT**  
  Можно запустить отладчик XSLT из XSLT-файла в редакторе XML. Отладчик поддерживает установку точек останова в XSLT-файле, просмотр состояния выполнения XSLT и т. д. При проведении указателя над переменной XSLT появляется подсказка со значением переменной. Отладчик можно использовать для отладки таблицы стилей или отладки преобразования скомпилированного XSL-файла, вызванного из другого приложения. Дополнительные сведения см. в разделе [отладки XSLT](../xml-tools/debugging-xslt.md).  
