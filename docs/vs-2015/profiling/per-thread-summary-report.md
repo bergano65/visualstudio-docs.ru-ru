@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195518"
 ---
 # <a name="per-thread-summary-report"></a>Сводный отчет по каждому потоку
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 На этой гистограмме показана доля времени, которую тратит каждый нескрытый поток в каждой категории в течение видимого в данный момент диапазона времени. "Выполнение" означает, что поток выполняется; все остальные категории означают, что поток находится в состоянии ожидания какого-либо события.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Время выполнения (представление "Потоки")](../profiling/execution-time-threads-view.md)   
  [Время ввода-вывода (представление "Потоки")](../profiling/i-o-time-threads-view.md)   
  [Время управления памятью](../profiling/memory-management-time.md)   

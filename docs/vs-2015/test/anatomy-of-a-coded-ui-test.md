@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 46226d241db04cad0f4859650dc2aff855b72f08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155610"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Составляющие закодированного теста пользовательского интерфейса
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ ms.locfileid: "60102033"
 |Файл|Описание|Редактируемый?|  
 |----------|--------------|---------------|  
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Раздел объявлений](#UIMapDesignerFile)<br /><br /> [Класс UIMap](#UIMapClass) (разделяемый, автоматически создаваемый)<br /><br /> [Методы](#UIMapMethods)<br /><br /> [Свойства](#UIMapProperties)|Нет|  
-|[UIMap.cs](#UIMapCS)|[Класс UIMap](#UIMapCS) (разделяемый)|Да|  
-|[CodedUITest1.cs](#CodedUITestCS)|[Класс CodedUITest1](#CodedUITestCS)<br /><br /> [Методы](#CodedUITestMethods)<br /><br /> [Свойства](#CodedUITestProperties)|Да|  
+|[UIMap.cs](#UIMapCS)|[Класс UIMap](#UIMapCS) (разделяемый)|Yes|  
+|[CodedUITest1.cs](#CodedUITestCS)|[Класс CodedUITest1](#CodedUITestCS)<br /><br /> [Методы](#CodedUITestMethods)<br /><br /> [Свойства](#CodedUITestProperties)|Yes|  
 |[UIMap.uitest](#UIMapuitest)|XML-карта пользовательского интерфейса для теста.|Нет|  
   
 ### <a name="UIMapDesignerFile"></a> UIMap.Designer.cs  
@@ -161,7 +161,7 @@ public virtual AddItemsParams AddItemsParams
   
  Обратите внимание, что это свойство использует закрытую локальную переменную с именем `mAddItemsParams` для хранения значения перед его возвратом. Имя свойства и имя класса для возвращаемого объекта одинаковы. Этот класс определяется позднее в файле `UIMap.cs`.  
   
- Все классы, возвращаемые свойством, имеют аналогичную структуру. Далее следует класс `AddItemsParams`   
+ Все классы, возвращаемые свойством, имеют аналогичную структуру. Далее следует класс `AddItemsParams`  
   
 ```  
 /// <summary>  
@@ -267,7 +267,7 @@ public void MyTestCleanup()
   
  Файл `UIMap.uitest` нельзя редактировать непосредственно. Но можно использовать построитель закодированных тестов пользовательского интерфейса, который автоматически изменяет файл `UIMap.uitest` и файл [UIMap.Designer.cs](#UIMapDesignerFile).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   

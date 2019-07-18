@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147244"
 ---
 # <a name="blocking-time-profile-report"></a>Отчет профиля времени блокировки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "54782298"
 ## <a name="blocking-time-report-columns"></a>Столбцы отчета о времени блокировки  
  В приведенной ниже таблице показаны столбцы каждого из отчетов о времени блокировки.  
   
-|Имя столбца|Описание|  
+|Имя столбца|ОПИСАНИЕ|  
 |-----------------|-----------------|  
 |name|Имя функции для каждого уровня стека вызова.|  
 |Экземпляры|Количество экземпляров блокирующего вызова для видимого периода времени.|  
@@ -61,5 +61,5 @@ ms.locfileid: "54782298"
 ### <a name="ui-processing"></a>Обработка UI  
  В отчете об обработке пользовательского интерфейса отображаются вызовы, отвечающие за сегменты, которые блокируют блоки обработки пользовательского интерфейса, с указанием совокупного времени блокировки каждого стека вызовов. Дополнительные сведения см. в статье [UI Processing Time](../profiling/ui-processing-time.md) (Время обработки пользовательского интерфейса).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Представление потоков](../profiling/threads-view-parallel-performance.md)

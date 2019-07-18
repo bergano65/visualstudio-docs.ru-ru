@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac4e3bf3c5dfa20729fe2270121b7649041d9e59
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159605"
 ---
 # <a name="instrumentation-method-data-views"></a>Представление данных метода инструментирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "54801796"
  [Представление "Функции"](../profiling/functions-view-instrumentation-data.md)  
  Содержит перечень данных профилирования по функциям.  
   
-## <a name="reference"></a>Ссылка  
+## <a name="reference"></a>Справочники  
  [Представление "Сведения о функции"](../profiling/function-details-view.md)  
  Отображает графическую схему связей между выбранной функцией и функциями, которые вызывали выбранную функцию и вызывались ею.  
   
@@ -57,5 +57,5 @@ ms.locfileid: "54801796"
  [Представления данных о конфликтах ресурсов](../profiling/resource-contention-data-views.md)  
  Справочные сведения, касающиеся представлений и отчетов по файлам данных профилировщика, которые создаются с помощью метода конфликтов потоков.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Общие сведения о значениях данных инструментирования](../profiling/understanding-instrumentation-data-values.md)

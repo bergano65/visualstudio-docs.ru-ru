@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2a69fc64c3371a2970c03ec0129d4c733f5ae9cd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201756"
 ---
 # <a name="exec-task"></a>Задача Exec
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59660519"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры для задачи `Exec`.  
   
-|Параметр|Описание|  
+|Параметр|ОПИСАНИЕ|  
 |---------------|-----------------|  
 |`Command`|Обязательный параметр `String` .<br /><br /> Выполняемые команды. Это могут быть системные команды (например, attrib) или исполняемые файлы (например, program.exe, runprogram.bat или setup.msi).<br /><br /> Этот параметр может содержать несколько строк с командами. Кроме того, можно поместить несколько команд в пакетный файл и запустить его с помощью этого параметра.|  
 |`CustomErrorRegularExpression`|Необязательный параметр `String` .<br /><br /> Указывает регулярное выражение, которое используется для выявления ошибочных строк в выходных данных средства. Это полезно при работе со средствами, которые создают нестандартно отформатированные выходные данные.|  
@@ -71,6 +71,6 @@ ms.locfileid: "59660519"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

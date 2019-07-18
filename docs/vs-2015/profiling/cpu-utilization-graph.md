@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8058995c8ae45c40f202aaa1e788891da3eb985d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180491"
 ---
 # <a name="cpu-utilization-graph"></a>Граф использования ЦП
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,6 +35,6 @@ ms.locfileid: "60086791"
   
 - Белый цвет обозначает доступность неиспользуемых логических ядер в системе. Эти ядра доступны для данного процесса, если можно найти дополнительные возможности для параллелизма.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Представление "Использование"](../profiling/utilization-view.md)   
  [Среднее использование ЦП](../profiling/average-cpu-utilization.md)

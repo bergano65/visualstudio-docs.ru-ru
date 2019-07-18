@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 94e8e87f4440644f76906a70ea09a46282b109c2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163366"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ devenv /SafeMode
 ## <a name="remarks"></a>Примечания  
  Этот параметр запрещает загрузку пакетов VSPackage сторонних производителей при запуске [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], обеспечивая надежность работы.  
   
-## <a name="description"></a>Описание  
+## <a name="description"></a>ОПИСАНИЕ  
  В приведенном ниже примере [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] запускается в безопасном режиме.  
   
 ## <a name="code"></a>Код  
@@ -43,5 +43,5 @@ devenv /SafeMode
 Devenv.exe /SafeMode  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)

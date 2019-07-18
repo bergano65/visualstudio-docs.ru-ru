@@ -575,6 +575,8 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Работа с файлами XML и XSLT
           href: xml-tools/xml-tools-in-visual-studio.md
+        - name: Разработка с помощью контейнеров
+          href: containers/index.yml
         - name: Разработка инклюзивных приложений
           items:
             - name: Разработка приложений с поддержкой специальных возможностей

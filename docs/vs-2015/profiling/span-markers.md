@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f733ccec12e422a11532b8012836422d14d93b9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198333"
 ---
 # <a name="span-markers"></a>Маркеры диапазонов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,6 +38,6 @@ ms.locfileid: "54798037"
  ![Маркер объединенных диапазонов в визуализаторе параллелизма](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
 Маркер объединенных диапазонов  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Маркеры визуализатора параллелизма](../profiling/concurrency-visualizer-markers.md)   
  [Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)

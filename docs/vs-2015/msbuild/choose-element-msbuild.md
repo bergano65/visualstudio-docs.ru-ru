@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 642a4996b9b7cb24ead5b58e8f3f98b8abf7657c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187002"
 ---
 # <a name="choose-element-msbuild"></a>Элемент Choose (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ ms.locfileid: "59650620"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|ОПИСАНИЕ|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|Необязательный элемент.<br /><br /> Указывает блок кода `PropertyGroup` и элементы `ItemGroup` для оценки, если условия всех элементов `When` оценены как `false`. Элемент `Choose` может содержать ноль элементов `Otherwise` или один такой элемент, который должен быть последним.|  
 |[When](../msbuild/when-element-msbuild.md)|Обязательный элемент.<br /><br /> Указывает один из возможных блоков кода, который может выбрать элемент `Choose`. Элемент `When` может содержать один или несколько элементов `Choose`.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|ОПИСАНИЕ|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|Указывает блок кода, который должен быть выполнен, если условия всех элементов `When` оценены как `false`.|  
 |[Project](../msbuild/project-element-msbuild.md)|Обязательный корневой элемент файла проекта [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
@@ -121,6 +121,6 @@ ms.locfileid: "59650620"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Условные конструкции](../msbuild/msbuild-conditional-constructs.md)   
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

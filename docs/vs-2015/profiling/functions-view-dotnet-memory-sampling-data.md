@@ -12,18 +12,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e77c6c2b3bf079e8aae88c9779c3b487ff97fe7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68141877"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Представление "Функции" — данные выборки памяти .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 В представлении "Функции" данных профилирования выделения памяти .NET, собранных с помощью методов выборки, представлены функции, выделявшие память в процессе профилирования, а также указан размер и количество выделенных блоков.  
   
-|Столбец|Описание|  
+|Столбец|ОПИСАНИЕ|  
 |------------|-----------------|  
 |**Идентификатор процесса**|Идентификатор процесса (PID) сеанса профилирования.|  
 |**Имя процесса**|Имя процесса.|  
@@ -42,7 +42,7 @@ ms.locfileid: "54769117"
 |**Исключающие байты**|Число байтов памяти, которые были выделены данной функцией, но не ее дочерними функциями.|  
 |**% эксклюзивных байтов**|Процент от общего числа байтов памяти, выделенных при профилировании, которые являются эксклюзивными байтами для данной функции.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Представление "Функции" — инструментирование](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Представление "Функции"](../profiling/functions-view-sampling-data.md)   
  [Представление "Функции"](../profiling/functions-view-instrumentation-data.md)

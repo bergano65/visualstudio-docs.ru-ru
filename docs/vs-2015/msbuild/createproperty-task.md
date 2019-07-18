@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ea16950e47760e89204503413fd98811e781d059
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184057"
 ---
 # <a name="createproperty-task"></a>Задача CreateProperty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59649762"
 ## <a name="attributes"></a>Атрибуты  
  В следующей таблице приводятся параметры задачи `CreateProperty` .  
   
-|Параметр|Описание|  
+|Параметр|ОПИСАНИЕ|  
 |---------------|-----------------|  
 |`Value`|Необязательный выходной параметр `String`.<br /><br /> Указывает значение для копирования в новое свойство.|  
 |`ValueSetByTask`|Необязательный выходной параметр `String`.<br /><br /> Содержит то же значение, что и параметр `Value`. Используйте этот параметр только в том случае, если вы не хотите, чтобы [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] задавал выходное свойство при пропуске вложенного целевого объекта из-за актуальных выходных данных.|  
@@ -69,6 +69,6 @@ ms.locfileid: "59649762"
   
  После запуска проекта значение свойства `NewFile` равно `Module1.vb`.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Задачи](../msbuild/msbuild-tasks.md)

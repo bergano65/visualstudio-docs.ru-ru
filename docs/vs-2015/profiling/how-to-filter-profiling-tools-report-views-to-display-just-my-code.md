@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f47ddbadc5decaa292d34cd2becbff69e69b51a9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146094"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Практическое руководство. Фильтрация представлений отчетов средств профилирования для отображения в режиме "Только мой код"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,5 +37,5 @@ Visual Studio 2010 Premium предоставляет для отчетов о �
   
 3. В разделе **Общие параметры** снимите флажок **Включить только мой код**.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Настройка представлений отчетов средств производительности](../profiling/customizing-performance-tools-report-views.md)

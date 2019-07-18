@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 981b37fe1ebaad5e45f0308143ab0384ef1d559b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145608"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,16 +49,16 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 ## <a name="invalid-options"></a>Недопустимые параметры  
  Следующие параметры не могут быть указаны в одной командной строке с параметром **Sys**.  
   
- **PF**[**:**`Events`]  
+ **PF**[ **:** `Events`]  
  Задает в качестве события выборки ошибку выгрузки и при необходимости устанавливает интервал выборки, равный `Events`. Интервал PF по умолчанию — 10.  
   
- **Timer**[**:**`Cycles`]  
+ **Timer**[ **:** `Cycles`]  
  Задает для события выборки значение, равное тактовой частоте процессора, и при необходимости задает для интервала выборки значение параметра `Cycles`. Значение этого параметра по умолчанию — 10 000 000.  
   
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
  Задает в качестве события выборки счетчик производительности ЦП, указанный параметром `Name`, и устанавливает интервал выборки, равный `Reload`.  
   
- **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
  Собирает данные .NET. По умолчанию (**Allocation**) данные собираются для каждого события выделения памяти. Если указан параметр **Lifetime**, данные также собираются для каждого события сборки мусора.  
   
 ## <a name="example"></a>Пример  
@@ -69,7 +69,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Sys:20  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

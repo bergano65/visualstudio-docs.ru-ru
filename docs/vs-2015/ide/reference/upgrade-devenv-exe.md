@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b2ba3caf7931449e2c1657270838a45505fd5d92
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176931"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,6 +52,6 @@ devenv SolutionFile | ProjectFile /upgrade
 devenv "MyProject.sln" /upgrade  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Практическое руководство. Устранение неполадок, связанных с неудачными обновлениями проектов Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)   
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)

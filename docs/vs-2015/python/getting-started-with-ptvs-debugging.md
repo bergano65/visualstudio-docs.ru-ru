@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: b636dd4f3a5c5265231898573bfdf52de2dff84e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197717"
 ---
 # <a name="getting-started-with-ptvs-debugging"></a>Начало работы с PTVS. Отладка
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,6 +54,6 @@ if __name__ == "__main__":
   
  Эти инструкции можно просмотреть в очень коротком [видеоролике в Youtube](https://www.youtube.com/watch?v=bO7wpzgy74A&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=4).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Документация на вики-сайте](https://github.com/Microsoft/PTVS/wiki/Debugging)   
  [Видеоролики по началу работы и углубленному рассмотрению PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

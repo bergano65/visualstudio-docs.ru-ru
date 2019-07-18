@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a590d3dc3053c5b857917dc358e32a2c7d5247c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192865"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Использование нескольких процессоров при построении проектов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +41,6 @@ ms.locfileid: "59651760"
   
  Чтобы эта особенность позволяла использовать несколько процессоров для сборки, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] прибегает к изоляции процессов. Изоляция процессов позволяет [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] создавать вплоть до `n` процессов, где `n` равно числу процессоров, доступных в системе. Например если [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] собирает решение в системе с двумя процессорами, он создает только два процесса сборки. Эти процессы используются многократно для сборки всех проектов, входящих в решение.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Building Multiple Projects in Parallel](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  (Параллельная сборка нескольких проектов)  
  [Задачи](../msbuild/msbuild-tasks.md)

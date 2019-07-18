@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee221f0c1da32694e869177399981cc16ce901f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145289"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,6 +69,6 @@ ms.locfileid: "60099472"
 |**/detach**|Остановить сбор данных без прекращения работы целевых процессов.|  
 |**/status**|Показать состояние профилировщика.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Средства производительности в приложениях Windows 8 и Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)

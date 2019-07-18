@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155506"
 ---
 # <a name="performance-explorer"></a>Обозреватель производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,5 +48,5 @@ ms.locfileid: "54784104"
 |**Программное управление профилированием:** узнайте, как использовать управляемые и собственные API средств профилирования для управления сбором данных прямо из исходного кода.|[Интерфейсы API средств профилирования](../profiling/profiling-tools-apis.md)|  
 |**Устранение неполадок профилирования**|[Диагностика проблем со средствами производительности](../profiling/troubleshooting-performance-tools-issues.md)|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Средства профилирования](../profiling/profiling-tools.md)

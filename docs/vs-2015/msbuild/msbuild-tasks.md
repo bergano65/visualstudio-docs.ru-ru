@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154814"
 ---
 # <a name="msbuild-tasks"></a>Задачи MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "59650608"
 ## <a name="overridden-tasks"></a>Переопределенные задачи  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] обнаруживает задачи в нескольких местах. Во первых, в файлах с расширением OverrideTasks, которые хранятся в каталогах .NET Framework. Задачи в этих файлах переопределяют любые другие задачи с теми же именами, в том числе задачи в файле проекта. Второе место — файлы с расширением Tasks, расположенные в каталогах .NET Framework. Если задача не найдена ни в одном из этих расположений, выполняется задача из файла проекта.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
  [Написание задач](../msbuild/task-writing.md)   

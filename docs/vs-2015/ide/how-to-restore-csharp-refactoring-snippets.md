@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9f81514db881ad26a5fa827b0bde11df2467f23d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186282"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Практическое руководство. Восстановление фрагментов кода для оптимизации в C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "60050816"
   
 6. Нажмите кнопку **Открыть** в диалоговом окне **Каталог фрагментов кода** и затем нажмите кнопку **ОК** в диспетчере фрагментов кода.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Фрагменты кода Visual C#](../ide/visual-csharp-code-snippets.md)   
  [Рефакторинг (C#)](../csharp-ide/refactoring-csharp.md)   
  [Фрагменты кода](../ide/code-snippets.md)

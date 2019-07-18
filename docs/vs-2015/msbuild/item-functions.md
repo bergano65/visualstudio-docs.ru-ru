@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192896"
 ---
 # <a name="item-functions"></a>Функции элементов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "59670268"
 ## <a name="intrinsic-item-functions"></a>Встроенные функции элементов  
  В следующей таблице перечислены доступные для элементов встроенные функции.  
   
-|Функция|Пример|Описание|  
+|Функция|Пример|ОПИСАНИЕ|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Возвращает количество элементов.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Возвращает эквивалент `Path.DirectoryName` для каждого элемента.|  
@@ -102,5 +102,5 @@ ms.locfileid: "59670268"
   -->  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Элементы](../msbuild/msbuild-items.md)

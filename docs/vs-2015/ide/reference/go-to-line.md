@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d047980a6d0b33dbe74182eec23b55aa4487799e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199236"
 ---
 # <a name="go-to-line"></a>Переход к строке
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "59664574"
  Номер строки (1–`n`)  
  Позволяет ввести номер строки активного документа, на которую нужно перейти. Этот номер должен находиться в диапазоне от 1 до `n` (число строк в текущем документе).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Установка закладок в коде](../../ide/setting-bookmarks-in-code.md)   
  [Поиск и замена текста](../../ide/finding-and-replacing-text.md)   
  [Создание кода](../../ide/writing-code-in-the-code-and-text-editor.md)

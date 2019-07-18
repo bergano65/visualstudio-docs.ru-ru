@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 289aff1025570d0840eb4f0815b88d9023033a7c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149254"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
   
  Указывает уровень профилирования, к которому можно применить сбор данных по производительности. Для указания одного из трех уровней, к которому можно применить сбор данных по производительности, следует использовать представленные ниже перечислители **PROFILE_CONTROL_LEVEL**:  
   
-|Перечислитель|Описание|  
+|Перечислитель|ОПИСАНИЕ|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Установка глобального уровня оказывает влияние на все процессы и потоки при выполнении профилирования.|  
 |PROFILE_PROCESSLEVEL|Установка уровня процесса оказывает влияние на все потоки, являющиеся частью указанного процесса.|  
@@ -49,7 +49,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 ## <a name="property-valuereturn-value"></a>Значение свойства, возвращаемое значение  
  Функция информирует об успехе или неудаче с помощью перечисления **PROFILE_COMMAND_STATUS**. Может возвращаться одно из следующих значений:  
   
-|Перечислитель|Описание|  
+|Перечислитель|ОПИСАНИЕ|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|Идентификатор элемента профилирования не существует.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|Заданный уровень профилирования не существует.|  
@@ -105,5 +105,5 @@ void ExerciseResumeProfile()
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)

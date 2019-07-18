@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19fa9c35011e42905c1f26ed34da405be61d0aba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181076"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Зарезервированные и стандартные свойства MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59649567"
 ## <a name="reserved-and-well-known-properties"></a>Зарезервированные и известные свойства  
  В следующей таблице приведены предопределенные свойства, предусмотренные в [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-|Свойство.|Описание|Зарезервированное или известное|  
+|Свойство.|ОПИСАНИЕ|Зарезервированное или известное|  
 |--------------|-----------------|-----------------------------|  
 |`MSBuildBinPath`|Абсолютный путь к папке, где находятся используемые в данный момент двоичные файлы [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] (например, C:\Windows\Microsoft.Net\Framework\\*versionNumber*). Этим свойством удобно пользоваться в случае, когда требуется сослаться на файлы в каталоге [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].<br /><br /> Не включайте в это свойство завершающую обратную косую черту.|Зарезервированное|  
 |`MSBuildExtensionsPath`|Введено в .NET Framework 4: разницы между значениями по умолчанию `MSBuildExtensionsPath` и `MSBuildExtensionsPath32` нет. Переменной среды `MSBUILDLEGACYEXTENSIONSPATH` можно присвоить значение, отличное от null, чтобы включить поведение, соответствующее значению по умолчанию `MSBuildExtensionsPath` в предыдущих версиях.<br /><br /> В .NET Framework 3.5 и более ранних версиях значение по умолчанию `MSBuildExtensionsPath` указывает на путь к вложенной папке MSBuild в папке \Program Files или \Program Files (x86), в зависимости от разрядности текущего процесса. Например, для 32-разрядного процесса на 64-разрядном компьютере это свойство указывает папку на \Program Files (x86). Для 64-разрядного процесса на 64-разрядном компьютере это свойство указывает на папку \Program Files.<br /><br /> Не включайте в это свойство завершающую обратную косую черту.<br /><br /> Это расположение хорошо подходит для хранения пользовательских файлов целей. Например, файлы целей можно установить в папку \Program Files\MSBuild\MyFiles\Northwind.targets, а затем импортировать в файлы проекта с помощью следующего XML-кода:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|Известное|  
@@ -59,5 +59,5 @@ ms.locfileid: "59649567"
 |`MSBuildToolsPath`|Путь установки версии [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], связанной со значением `MSBuildToolsVersion`.<br /><br /> Не включайте в путь завершающую обратную косую черту.<br /><br /> Это свойство нельзя переопределить.|Зарезервированное|  
 |`MSBuildToolsVersion`|Версия набора инструментов [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], используемая для сборки проекта.<br /><br /> Примечание. Набор инструментов [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] состоит из задач, целей и средств, используемых для сборки приложения. Средства включают компиляторы csc.exe и vbc.exe. Дополнительные сведения см. в разделах [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) и [Стандартные и настраиваемые конфигурации наборов инструментов](../msbuild/standard-and-custom-toolset-configurations.md).|Зарезервированное|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочник по MSBuild](../msbuild/msbuild-reference.md) [Свойства MSBuild](msbuild-properties1.md)

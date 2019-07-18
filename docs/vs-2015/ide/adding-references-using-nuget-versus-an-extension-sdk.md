@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e89b677113a04f286be3201a6b76d78fd5d191c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148320"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Добавление ссылок с использованием NuGet или расширения SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,5 +70,5 @@ ms.locfileid: "60044022"
 |Механизм доступен для всех выпусков Visual Studio.|Y|Пакет SDK поддерживает все выпуски Visual Studio — от Visual Studio Express до [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|Y|NuGet поддерживает все выпуски Visual Studio — от Visual Studio Express до [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|  
 |Механизм доступен для всех типов проектов.|в|Пакет SDK поддерживает приложения [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], начиная с [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|в|Можно просмотреть список доступных проектов.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Управление ссылками в проекте](../ide/managing-references-in-a-project.md)

@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165449"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>Установка нескольких языковых версий Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59652281"
 
 - Можно удалять языковые пакеты с помощью режима обслуживания установки Visual Studio. Откройте **Панель управления**, затем откройте **Программы и компоненты**, выберите ваш выпуск Visual Studio, а затем выберите **Удалить/Изменить**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Пакеты интерфейса пользователя (Microsoft LIP) и Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md)
 - [Установка Visual Studio](../install/install-visual-studio-2015.md)

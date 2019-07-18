@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 793b0e49a8e2dcb38b5b2421f09bd2b2ad3d7eed
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160323"
 ---
 # <a name="report-based-on-visible-time-range"></a>Отчет на основе видимого временного диапазона
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54774592"
   
  Здесь можно найти дополнительные сведения о данных в таблицах.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Нет активности потоков для отображения](../profiling/no-thread-activity-to-show-threads-view.md)   
  [Отчет о профиле выполнения](../profiling/execution-profile-report.md)   
  [Время синхронизации](../profiling/synchronization-time.md)   
