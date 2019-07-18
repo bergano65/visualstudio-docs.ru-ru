@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0ba7820bfa6df7273f170b2222d6a55e685e445e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203692"
 ---
 # <a name="add-new-item-command"></a>Команда Add New Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Командное окно](../../ide/reference/command-window.md)   
  [Поле "Поиск/Команда"](../../ide/find-command-box.md)   

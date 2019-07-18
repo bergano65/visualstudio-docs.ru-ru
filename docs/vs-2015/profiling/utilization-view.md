@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145371"
 ---
 # <a name="utilization-view"></a>Представление использования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +51,6 @@ ms.locfileid: "54795836"
 ## <a name="zooming"></a>Масштабирование  
  Для увеличения диаграммы использования ЦП или диаграммы активности GPU выберите раздел или воспользуйтесь ползунком масштаба над диаграммой. Масштаб сохраняется при переходе к другим представлениям. Для уменьшения масштаба воспользуйтесь ползунком масштаба. Кроме того, чтобы изменить масштаб, можно прокрутить колесико мыши, нажав и удерживая клавишу CTRL.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Визуализатор параллелизма](../profiling/concurrency-visualizer.md)   
  [Представление "Ядра"](../profiling/cores-view.md)

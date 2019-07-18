@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73ad829c86305ff4d9a54025467e262d56e24dbc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159241"
 ---
 # <a name="removeduplicates-task"></a>Задача RemoveDuplicates
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59654520"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `RemoveDuplicates` .  
   
-|Параметр|Описание|  
+|Параметр|ОПИСАНИЕ|  
 |---------------|-----------------|  
 |`Filtered`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит коллекцию элементов, из которой удалены все повторяющиеся элементы.|  
 |`Inputs`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Коллекция элементов, из которой нужно удалить повторяющиеся элементы.|  
@@ -69,7 +69,7 @@ ms.locfileid: "59654520"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Задачи](../msbuild/msbuild-tasks.md)

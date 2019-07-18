@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: acf285c895e5160e850b6bc8f20f920279a5e26c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154780"
 ---
 # <a name="otherwise-element-msbuild"></a>Элемент Otherwise (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "59659284"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|ОПИСАНИЕ|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Необязательный элемент.<br /><br /> Вычисляет дочерние элементы, чтобы выбрать один раздел кода для выполнения. Элемент `Otherwise` может содержать любое число элементов `Choose`, включая ноль.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Необязательный элемент.<br /><br /> Содержит набор определенных пользователем элементов [Item](../msbuild/item-element-msbuild.md). Элемент `Otherwise` может содержать любое число элементов `ItemGroup`, включая ноль.|  
@@ -66,7 +66,7 @@ ms.locfileid: "59659284"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|ОПИСАНИЕ|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Вычисляет дочерние элементы, чтобы выбрать один раздел кода для выполнения.|  
   
@@ -123,6 +123,6 @@ ms.locfileid: "59659284"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Условные конструкции](../msbuild/msbuild-conditional-constructs.md)   
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

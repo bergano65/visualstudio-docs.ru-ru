@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d1f17de6df465408e9bec3b6db4e1620f0181fd9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177772"
 ---
 # <a name="cvleavespan-function"></a>Функция CvLeaveSpan
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,5 +43,5 @@ HRESULT CvLeaveSpan(
 ## <a name="requirements"></a>Требования  
  **Заголовок:** cvmarkers.h  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочник по библиотеке C++](../profiling/cpp-library-reference.md)

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c910ef1519181f1402cbec1d31686492e30f343d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154754"
 ---
 # <a name="launch"></a>Launch
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>Параметры выборки  
  В командной строке с параметром **Launch** можно задать один из указанных ниже параметров интервала выборки. Интервал выборки по умолчанию равен 10 000 000 циклам тактовой частоты процессора.  
   
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**]  
+ **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**]  
  Задает числовое значение и тип интервала выборки.  
   
 - **Timer** — осуществляет выборку через каждые `Cycles` циклов тактовой частоты процессора без остановок. Если параметр `Cycles` не задан, используется значение 10 000 000 циклов.  
@@ -84,7 +84,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

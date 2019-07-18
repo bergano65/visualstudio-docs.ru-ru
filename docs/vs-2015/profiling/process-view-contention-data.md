@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e43541ddb75b067faa23437d315ce5f239256b1a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180233"
 ---
 # <a name="process-view---contention-data"></a>Представление "Процесс" — данные о состязаниях
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54796782"
   
  В следующей таблице описаны значения столбцов в представлении "Процесс".  
   
-|Столбец|Описание|  
+|Столбец|ОПИСАНИЕ|  
 |------------|-----------------|  
 |**Время начала**|Количество миллисекунд или циклов процессора от начала профилирования до запуска процесса или потока.|  
 |**Время блокировки**|Общее время, в течение которого выполнение функций процесса или потока заблокировано.|  
@@ -41,6 +41,6 @@ ms.locfileid: "54796782"
 |**Name**|Имя процесса или потока.|  
 |**Уникальный идентификатор**|Созданный профилировщиком идентификатор, уникальным образом определяющий процесс или поток.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Практическое руководство. Настройка столбцов представлений отчета](../profiling/how-to-customize-report-view-columns.md)   
  [Представление "Процесс"](../profiling/process-view.md)

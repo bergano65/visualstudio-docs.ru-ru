@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ea89855a83cdf01255cacc7c8c639c6fcfe1cc4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187068"
 ---
 # <a name="additional-resources-for-msbuild"></a>Дополнительные ресурсы для MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59660467"
  [Форум Visual Studio MSBuild](http://go.microsoft.com/fwlink/?LinkId=48931)  
  Форум сообщества [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [MSBuild](msbuild.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)

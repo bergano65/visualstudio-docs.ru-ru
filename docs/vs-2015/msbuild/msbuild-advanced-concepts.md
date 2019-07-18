@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e7aade87e0e1f6fe6a07269a585b35f52d4a9e5d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191551"
 ---
 # <a name="msbuild-advanced-concepts"></a>Дополнительные возможности MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "59663931"
   
 ## <a name="related-topics"></a>См. также  
   
-|Заголовок|Описание|  
+|Заголовок|ОПИСАНИЕ|  
 |-----------|-----------------|  
 |[Пакетная обработка в MSBuild](../msbuild/msbuild-batching.md)|Описывает процедуру пакетной обработки целевых объектов и задач сборки на основе метаданных элементов.|  
 |[Преобразования](../msbuild/msbuild-transforms.md)|Рассказывает, как использовать преобразования для анализа зависимостей.|  
@@ -34,6 +34,6 @@ ms.locfileid: "59663931"
 |[Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)|Описывает процедуру компиляции приложения для запуска на любой из нескольких версий платформы .NET Framework.|  
 |[Рекомендации](../msbuild/msbuild-best-practices.md)|Содержит рекомендации по составлению скриптов MSBuild.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Ведение журнала в MSBuild](../msbuild/logging-in-msbuild.md)

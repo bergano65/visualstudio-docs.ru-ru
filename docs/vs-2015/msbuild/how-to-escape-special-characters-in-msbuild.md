@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94fc8d858e2db9bd1e00bb8770cf52672a900ab0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178343"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Как обеспечить пропуск специальных знаков в MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +45,6 @@ ms.locfileid: "60065004"
   
 - Вместо специального знака используйте нотацию %*xx*, где *xx* представляет собой шестнадцатеричное значение символа ASCII. Например, чтобы использовать символ звездочки (*) как буквенный символ, используйте значение `%2A`.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Элементы](../msbuild/msbuild-items.md) [MSBuild](msbuild.md)

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5a57f02a7c1b9845f4248daf2282b6f285f95489
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193374"
 ---
 # <a name="toggle-breakpoint-command"></a>Команда Toggle Breakpoint
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Debug.ToggleBreakpoint [text]
 >Debug.ToggleBreakpoint  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Командное окно](../../ide/reference/command-window.md)   
  [Поле "Поиск/Команда"](../../ide/find-command-box.md)   

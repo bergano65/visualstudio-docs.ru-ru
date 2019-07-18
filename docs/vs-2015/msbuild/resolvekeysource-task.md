@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd5cbe2f4998ab78ce39cde4b26a38b13c70b2f8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193719"
 ---
 # <a name="resolvekeysource-task"></a>Задача ResolveKeySource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59649295"
 ## <a name="task-parameters"></a>Параметры задачи  
  В следующей таблице приводятся параметры задачи `ResolveKeySource`.  
   
-|Параметр|Описание|  
+|Параметр|ОПИСАНИЕ|  
 |---------------|-----------------|  
 |`AutoClosePasswordPromptShow`|Необязательный параметр `Int32` .<br /><br /> Возвращает или задает длительность (в секундах) отображения сообщения с обратным отсчетом.|  
 |`AutoClosePasswordPromptTimeout`|Необязательный параметр `Int32` .<br /><br /> Получает или задает интервал времени в секундах перед закрытием диалогового окна запроса пароля.|  
@@ -50,6 +50,6 @@ ms.locfileid: "59649295"
 ## <a name="remarks"></a>Примечания  
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

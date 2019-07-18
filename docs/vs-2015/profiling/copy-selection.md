@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a1e9a4f3451e7ca5c4cb242ecef9374a07213373
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163585"
 ---
 # <a name="copy-selection"></a>Копирование выбранного
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Чтобы скопировать весь стек вызовов на вкладке отчета, щелкните **Копировать**. Затем стек вызовов можно вставить в любую программу, поддерживающую это действие.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Представление потоков](../profiling/threads-view-parallel-performance.md)

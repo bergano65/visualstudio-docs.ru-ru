@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fe9e8d3dbd1e7395287cd7241f1e6145dffca7e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145399"
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Использование методов профилирования для сбора данных о производительности из командной строки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ ms.locfileid: "60078204"
 ## <a name="BKMK_Adding_tier_interaction_data_to_a_profiling_run"></a> Добавление данных уровневого взаимодействия в сеанс профилирования  
  Добавление данных об уровневом взаимодействии в сеанс профилирования требует определенных процедур со средствами профилирования командной строки. См. раздел [Сбор данных взаимодействия уровней](../profiling/adding-tier-interaction-data-from-the-command-line.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Профилирование служб](../profiling/command-line-profiling-of-services.md)

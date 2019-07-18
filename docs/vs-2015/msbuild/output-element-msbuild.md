@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 52b8ef11e295d60e71a59820a48bca5e477c639d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163602"
 ---
 # <a name="output-element-msbuild"></a>Элемент Output (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "59648822"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|ОПИСАНИЕ|  
 |---------------|-----------------|  
 |`TaskParameter`|Обязательный атрибут.<br /><br /> Имя выходного параметра задачи.|  
 |`PropertyName`|Должен быть задан атрибут `PropertyName` или `ItemName`.<br /><br /> Свойство, которое получает значение от выходного параметра задачи. Проект может ссылаться на это свойство, используя синтаксис `$(`*PropertyName*`)`. В качестве имени для этого свойства можно использовать новое имя свойства или имя, которое уже определено в проекте.<br /><br /> Этот атрибут нельзя использовать вместе с атрибутом `ItemName`.|  
@@ -61,7 +61,7 @@ ms.locfileid: "59648822"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|ОПИСАНИЕ|  
 |-------------|-----------------|  
 |[Задача](../msbuild/task-element-msbuild.md)|Создает и выполняет экземпляр задачи [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
   
@@ -85,6 +85,6 @@ ms.locfileid: "59648822"
 </Target>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)   
  [Задачи](../msbuild/msbuild-tasks.md)

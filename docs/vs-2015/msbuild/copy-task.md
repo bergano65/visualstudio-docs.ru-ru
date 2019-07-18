@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08442d6044ca978e69f199e76c4668db63c319da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196593"
 ---
 # <a name="copy-task"></a>Задача Copy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60086277"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице приводятся параметры задачи `Copy` .  
   
-|Параметр|Описание|  
+|Параметр|ОПИСАНИЕ|  
 |---------------|-----------------|  
 |`CopiedFiles`|Необязательный выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Содержит успешно скопированные элементы.|  
 |`DestinationFiles`|Необязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]` .<br /><br /> Указывает список, в который будут скопированы исходные файлы. Предполагается, что этот список будет взаимно-однозначно сопоставляться со списком в параметре `SourceFiles`. То есть первый файл из списка `SourceFiles` будет скопирован с использованием первого пути, заданного в списке `DestinationFiles`, и т. д.|  
@@ -113,6 +113,6 @@ ms.locfileid: "60086277"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

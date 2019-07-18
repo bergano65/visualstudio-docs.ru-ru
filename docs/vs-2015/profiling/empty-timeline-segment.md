@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0291cfe93492c357401ce371d58683c6815aa12b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179050"
 ---
 # <a name="empty-timeline-segment"></a>Пустой сегмент временной шкалы
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,6 +33,6 @@ ms.locfileid: "60052822"
   
 - Для канала маркеров это означает, что маркеры не создавались.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Представление "Потоки"](../profiling/threads-view-parallel-performance.md)   
  [Элемент управления масштабом (представление "Потоки")](../profiling/zoom-control-threads-view.md)

@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b528d0a4971d1d070c69d12cdb9a693d9a30f20
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149496"
 ---
 # <a name="getframeworkpath-task"></a>Задача GetFrameworkPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59663132"
 ## <a name="task-parameters"></a>Параметры задачи  
  В следующей таблице приводятся параметры задачи `GetFrameworkPath`.  
   
-|Параметр|Описание|  
+|Параметр|ОПИСАНИЕ|  
 |---------------|-----------------|  
 |`FrameworkVersion11Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 1.1, если они есть. В противном случае возвращает значение `null`.|  
 |`FrameworkVersion20Path`|Необязательный выходной параметр `String`.<br /><br /> Содержит путь к сборкам платформы .NET Framework версии 2.0, если они есть. В противном случае возвращает значение `null`.|  
@@ -63,6 +63,6 @@ ms.locfileid: "59663132"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Задачи](../msbuild/msbuild-tasks.md)   
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

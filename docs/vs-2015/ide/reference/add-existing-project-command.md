@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4778efc4a50ceb63e72d4283644537345510e833
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194963"
 ---
 # <a name="add-existing-project-command"></a>Команда Add Existing Project
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ File.AddExistingProject filename
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Командное окно](../../ide/reference/command-window.md)   
  [Поле "Поиск/Команда"](../../ide/find-command-box.md)   

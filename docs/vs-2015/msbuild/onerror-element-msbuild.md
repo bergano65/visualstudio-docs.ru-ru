@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 46f6907bea5954cffae92b41398717a8247350e0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195663"
 ---
 # <a name="onerror-element-msbuild"></a>Элемент OnError (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "59667252"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|ОПИСАНИЕ|  
 |---------------|-----------------|  
 |`Condition`|Необязательный атрибут.<br /><br /> Проверяемое условие. Дополнительные сведения см. в разделе [Условия](../msbuild/msbuild-conditions.md).|  
 |`ExecuteTargets`|Обязательный атрибут.<br /><br /> Целевые объекты, которые следует выполнить при сбое задачи. Если целевых объектов несколько, разделите их точкой с запятой. Если целевых объектов несколько, они выполняются в указанном порядке.|  
@@ -57,7 +57,7 @@ ms.locfileid: "59667252"
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|ОПИСАНИЕ|  
 |-------------|-----------------|  
 |[Целевой объект](../msbuild/target-element-msbuild.md)|Элемент контейнера для задач [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
   
@@ -79,6 +79,6 @@ ms.locfileid: "59667252"
 </Target>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)   
  [Целевые объекты](../msbuild/msbuild-targets.md)

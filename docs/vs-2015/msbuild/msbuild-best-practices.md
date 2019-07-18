@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e597b10913ad495193545ab304b3b324d8f66b41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181117"
 ---
 # <a name="msbuild-best-practices"></a>Рекомендации по MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,5 +34,5 @@ ms.locfileid: "60043425"
   
 - При выборе элементов избегайте подстановочных знаков. Файлы необходимо указывать явным образом. Это упрощает процесс отслеживания ошибок, которые могут возникнуть при добавлении или удалении файлов.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Дополнительные возможности](../msbuild/msbuild-advanced-concepts.md)

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e531d2d2a41cc9ceaa3b6ba39c6d77a166cfae83
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193666"
 ---
 # <a name="flag-markers"></a>Маркеры флагов
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +49,6 @@ ms.locfileid: "54755303"
  ![Объединяющие флаги, показывающие четыре уровня важности](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 Объединяющие флаги по степени важности  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Маркеры визуализатора параллелизма](../profiling/concurrency-visualizer-markers.md)   
  [Пакет SDK визуализатора параллелизма](../profiling/concurrency-visualizer-sdk.md)

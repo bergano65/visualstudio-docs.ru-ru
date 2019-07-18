@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4de6750b7497e971af1096a0970495f3d4363a5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160020"
 ---
 # <a name="cores-view-logical-cores"></a>Логические ядра представления "Ядра"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Каждое имя канала представляет одно из логических ядер, существующих в профилируемой системе. При именовании нумерация производится от 0 и до общего количества логических ядер. Например, четырехъядерная система будет включать логические ядра с номерами от 0 до 3.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Представление "Ядра"](../profiling/cores-view.md)

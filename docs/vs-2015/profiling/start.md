@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192816"
 ---
 # <a name="start"></a>Запуск
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **CrossSession**&#124;**CS**  
  Включает профилирование в нескольких процессах. Поддерживаются оба имени параметра: **CrossSession** и **CS**.  
   
- **User:**[`domain\`]`username`  
+ **User:** [`domain\`]`username`  
  Позволяет клиентам получать доступ к монитору с помощью указанной учетной записи.  
   
  **WinCounter:** `Path` [**Automark**:`n`]  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **Status**  
  Параметр **Status** применяется к процессам, для которых выполняется профилирование. Этот параметр перечисляет процессы и потоки и их текущее состояние профилирования (On/Off). Например, если процесс остановлен, параметр **Status** не отразит это в отчете. **Status** показывает, выполняется ли профилирование для процесса или нет.  
   
- **Shutdown**[**:**`Timeout`]  
+ **Shutdown**[ **:** `Timeout`]  
  Отключает профилировщик.  
   
 ## <a name="example"></a>Пример  
@@ -74,7 +74,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Профилирование автономных приложений](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Профилирование веб-приложений ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

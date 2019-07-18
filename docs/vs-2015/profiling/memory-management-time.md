@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48cbdd523f4527af84c52366a439a18330e1828c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157347"
 ---
 # <a name="memory-management-time"></a>Время управления памятью
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,5 +27,5 @@ ms.locfileid: "54752065"
   
  Проанализируйте соответствующие стеки вызова и отчеты профилирования, чтобы лучше разобраться с основными причинами блокировок, которые относятся к категории управления памятью.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Представление потоков](../profiling/threads-view-parallel-performance.md)

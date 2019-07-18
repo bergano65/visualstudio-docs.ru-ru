@@ -21,16 +21,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 48f1543bcecf64a37f98de3edddf2c57dbf46f5c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176921"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Запускает [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и загружает переменные среды в диалоговом окне **Каталоги VC++**.  
+Запускает [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и загружает переменные среды в диалоговом окне **Каталоги VC++** .  
   
 ## <a name="syntax"></a>Синтаксис  
   
@@ -39,11 +39,11 @@ Devenv /useenv
 ```  
   
 ## <a name="example"></a>Пример  
- Приведенный ниже пример запускает [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и загружает переменные среды в диалоговом окне **Каталоги VC++**.  
+ Приведенный ниже пример запускает [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] и загружает переменные среды в диалоговом окне **Каталоги VC++** .  
   
 ```  
 Devenv.exe /useenv  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Параметры командной строки для команды Devenv](../../ide/reference/devenv-command-line-switches.md)

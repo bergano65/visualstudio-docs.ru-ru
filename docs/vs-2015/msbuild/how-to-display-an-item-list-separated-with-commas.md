@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156628"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Практическое руководство. Отображение списка элементов, разделенных запятыми
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60059361"
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Пример  
- В этом примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле Phrases.txt. В команде findstr искомые литеральные строки обозначены параметром **/c:**, поэтому между элементами в списке `@(Phrase)` вставляется разделитель элементов `/c:`.  
+ В этом примере задача [Exec](../msbuild/exec-task.md) запускает средство findstr для поиска указанных текстовых строк в файле Phrases.txt. В команде findstr искомые литеральные строки обозначены параметром **/c:** , поэтому между элементами в списке `@(Phrase)` вставляется разделитель элементов `/c:`.  
   
  Для этого примера эквивалентная команда в командной строке имеет вид:  
   
@@ -69,6 +69,6 @@ ms.locfileid: "60059361"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   
  [Элементы](../msbuild/msbuild-items.md)

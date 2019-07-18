@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 41ac1db7348ff993671623214b59113d6210b83e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193336"
 ---
 # <a name="tooltaskextension-base-class"></a>Базовый класс ToolTaskExtension
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "59670281"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описываются параметры базовых классов.  
   
-|Параметр|Описание|  
+|Параметр|ОПИСАНИЕ|  
 |---------------|-----------------|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|Необязательный параметр <xref:Microsoft.Build.Framework.IBuildEngine> .<br /><br /> Задает интерфейс подсистемы сборки, доступный для задач. Подсистема сборки автоматически устанавливает этот параметр, чтобы разрешить задачам обратный вызов.|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|Необязательный параметр <xref:Microsoft.Build.Framework.IBuildEngine2> .<br /><br /> Задает интерфейс подсистемы сборки, доступный для задач. Подсистема сборки автоматически устанавливает этот параметр, чтобы разрешить задачам обратный вызов.<br /><br /> Это свойство предусмотрено для удобства, чтобы разработчикам, наследующим из этого класса, не приходилось приводить значение из `IBuildEngine` в `IBuildEngine2`.|  
@@ -50,6 +50,6 @@ ms.locfileid: "59670281"
 |<xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A>|Необязательный параметр `bool` .<br /><br /> Если задано значение `true`, эта задача создает пакетный файл для командной строки и выполняет его с помощью командного процессора вместо непосредственного выполнения команды.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A>|Необязательный параметр `bool` .<br /><br /> Если задано значение `true`, эта задача создает узел при выполнении его задачи.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Задачи](../msbuild/msbuild-tasks.md)

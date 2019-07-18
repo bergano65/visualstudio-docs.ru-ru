@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192605"
 ---
 # <a name="item-element-msbuild"></a>Элемент Item (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "59650770"
   
 ### <a name="attributes"></a>Атрибуты  
   
-|Атрибут|Описание|  
+|Атрибут|ОПИСАНИЕ|  
 |---------------|-----------------|  
 |`Include`|Обязательный атрибут.<br /><br /> Файл или подстановочный знак, включаемый в список элементов.|  
 |`Exclude`|Необязательный атрибут.<br /><br /> Файл или подстановочный знак, исключаемый из списка элементов.|  
@@ -62,13 +62,13 @@ ms.locfileid: "59650770"
   
 ### <a name="child-elements"></a>Дочерние элементы  
   
-|Элемент|Описание|  
+|Элемент|ОПИСАНИЕ|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Определяемый пользователем ключ метаданных элемента, содержащий значение метаданных элемента. Элемент может содержать любое число элементов `ItemMetadata`, включая ноль.|  
   
 ### <a name="parent-elements"></a>Родительские элементы  
   
-|Элемент|Описание|  
+|Элемент|ОПИСАНИЕ|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Группирующий элемент для элементов.|  
   
@@ -91,7 +91,7 @@ ms.locfileid: "59650770"
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Элементы](../msbuild/msbuild-items.md)   
  [Свойства MSBuild](msbuild-properties1.md)   
  [Справочник по схеме файла проекта](../msbuild/msbuild-project-file-schema-reference.md)

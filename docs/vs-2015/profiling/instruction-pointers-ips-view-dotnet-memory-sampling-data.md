@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd06bc09114785c4359d05e3cda70c3ce7646c9e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143674"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Представление указателей инструкций — данные выборки памяти .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54804251"
   
  Перечисляются только эксклюзивные значения.  
   
-|Столбец|Описание|  
+|Столбец|ОПИСАНИЕ|  
 |------------|-----------------|  
 |**Идентификатор процесса**|Идентификатор процесса (PID) сеанса профилирования.|  
 |**Имя процесса**|Имя процесса.|  
@@ -45,5 +45,5 @@ ms.locfileid: "54804251"
 |**Исключающие байты**|Количество байтов памяти, выделенных инструкцией в ходе сеанса профилирования.|  
 |**% эксклюзивных байтов**|Процент от общего числа байтов памяти, выделенных инструкцией в ходе сеанса профилирования.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Представление "Указатели инструкций"](../profiling/instruction-pointers-ips-view-sampling-data.md)
