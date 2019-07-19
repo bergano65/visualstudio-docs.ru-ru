@@ -31,7 +31,7 @@ ms.locfileid: "62975915"
 |----------|-----------------|----------|-----------------|
 |![Символ пространства имен](../ide/media/vxnamespace_icon.gif)|Пространство имен|![Символ объявления](../ide/media/vxmethod_icon.gif)|Метод или функция|
 |![Значок класса](../ide/media/vxclass_icon.gif)|Класс|![Символ оператора](../ide/media/vxoperator_icon.gif)|Оператор|
-|![Символ интерфейса без описания операций](../ide/media/vxinterface_icon.gif)|Интерфейс|![Символ свойства](../ide/media/vxproperty_icon.gif)|Свойство.|
+|![Символ интерфейса без описания операций](../ide/media/vxinterface_icon.gif)|Интерфейс|![Символ свойства](../ide/media/vxproperty_icon.gif)|Свойство|
 |![Символ структуры](../ide/media/vxstruct_icon.gif)|Структура|![Значок поля](../ide/media/vxfield_icon.gif)|Поле или переменная|
 |![Символ объединения](../ide/media/vxunion_icon.gif)|Объединение|![Символ события](../ide/media/vxevent_icon.gif)|событие|
 |![Символ перечисления](../ide/media/vxenum_icon.gif)|Enum|![Значок константы](../ide/media/vxconstant_icon.gif)|Константа|
