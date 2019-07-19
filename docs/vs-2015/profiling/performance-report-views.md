@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3390a2b38e82fc89a73a5ced82ef96d7c638a95a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161988"
 ---
 # <a name="performance-report-views"></a>Представления отчетов о производительности
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,5 +47,5 @@ ms.locfileid: "54785678"
  [Представление "Взаимодействия уровня"](../profiling/tier-interactions-view.md)  
  Справочные сведения по представлению и отчету взаимодействия файлов данных профилирования, которые включают данные взаимодействия уровней.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Анализ данных средств производительности](../profiling/analyzing-performance-tools-data.md)
