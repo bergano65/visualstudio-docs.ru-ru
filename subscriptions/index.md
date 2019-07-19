@@ -7,12 +7,12 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Добро пожаловать в подписки Visual Studio
-ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 25337098dded67d28df1cea03a47ec8c28646763
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784388"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315225"
 ---
 # <a name="visual-studio-subscriptions"></a>Подписки Visual Studio
 
@@ -193,7 +193,6 @@ ms.locfileid: "67784388"
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (бизнес, технологии и творчество)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (облако, разработка, мобильные технологии и данные)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (обработка и анализ данных, ИИ)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Обучение Opsgility</a> (облачные технологии)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Обращения в службу профессиональной технической поддержки Майкрософт</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Чат с Помощником по Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Сообщество Azure</a></li>
