@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 02a4c36f3969ca0f9ef61e817afb82eb8247f041
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203488"
 ---
 # <a name="ltsignaturegt-javascript"></a>&lt;подпись&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "54780321"
  Необязательный параметр. Ключевое слово для справки F1.  
   
  `locid`  
- Необязательный параметр. Идентификатор для локализации информацию о поле. Идентификатор является либо член идентификатор или он соответствует `name` значение в набор сообщений, определяется альянсе метаданных атрибута. Тип идентификатора зависит от формата, указанного в [ \<loc >](../ide/loc-javascript.md) тега.  
+ Необязательный параметр. Идентификатор для локализации информацию о поле. Идентификатор является идентификатором члена или соответствует значению атрибута `name` в наборе сообщений, определенном метаданными OpenAjax. Тип идентификатора зависит от формата, указанного в теге [\<loc>](../ide/loc-javascript.md).  
   
 ## <a name="remarks"></a>Примечания  
  Используйте один `<signature>` для каждого элемента перегружены описание функции в JS-файл или использовать один `<signature>` элемент для каждого идентификатора внешнего члена, указанного.  
@@ -51,7 +51,7 @@ ms.locfileid: "54780321"
  `<signature>` Элемент должен быть помещен в тело функции до всех операторов. При использовании [ \<summary >](../ide/summary-javascript.md), [ \<param >](../ide/param-javascript.md), или [ \<возвращает >](../ide/returns-javascript.md) элементов при помощи `<signature>` элемент, расположение других элементов внутри `<signature>` блока.  
   
 ## <a name="example"></a>Пример  
- В следующем примере кода показано, как использовать `<signature>` элемент.  
+ В следующем примере кода показано использование элемента `<signature>`.  
   
 ```javascript  
 // Use of <signature> with externalid.  
@@ -93,5 +93,5 @@ function add(a, b) {
 }  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Комментарии XML-документации](../ide/xml-documentation-comments-javascript.md)
