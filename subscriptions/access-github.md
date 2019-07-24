@@ -3,15 +3,15 @@ title: Пакет Visual Studio с GitHub | Документация Майкр
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/15/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Сведения о новом пакете Visual Studio с GitHub
-ms.openlocfilehash: 6f14a484c365bcbede89c1cc4ac056a97f9ec013
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783442"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377651"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Общие сведения о подписках Visual Studio с GitHub Enterprise  
 
@@ -62,15 +62,12 @@ ms.locfileid: "67783442"
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
 ### <a name="q--where-is-my-github-subscription"></a>Вопрос:  Где находится моя подписка GitHub?
-
 Ответ.  Настройка подписки GitHub занимает некоторое время.  Если вы ждете достаточное время и не получали никаких уведомлений, обратитесь к своему администратору GitHub.  Возможно, администратор по-прежнему выполняет подготовку вашей подписки или принял решение не назначать вам подписку GitHub. 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>Вопрос:  Как связаться со своим администратором GitHub?
-
 Ответ.  Если вы используете GitHub Enterprise Server, для связи с администратором щелкните ссылку **Поддержка**, расположенную в нижней части клиента.
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>Вопрос: Получу ли я полную подписку Visual Studio (Professional или Enterprise) или только интегрированную среду разработки с этим предложением?
-
 Ответ.  Вместе с подпиской GitHub Enterprise вы получаете полную подписку Visual Studio.  При этом вы получите те же преимущества этих подписок, что и в случае их отдельного приобретения, в том числе скачиваемые файлы программного обеспечения, облачные службы, техническую поддержку и преимущества для партнеров.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
@@ -81,5 +78,4 @@ ms.locfileid: "67783442"
 - Обратитесь в [службу технической поддержки](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) для GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Следующие шаги
-
 Если вы ранее не работали с GitHub, ознакомьтесь с [обучающей лабораторией по GitHub](https://lab.github.com/), в рамках которой вы сможете изучить ряд интересных и практически применимых проектов, работа с которыми будет сопровождаться полезными комментариями.

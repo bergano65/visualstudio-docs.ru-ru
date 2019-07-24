@@ -9,19 +9,19 @@ helpviewer_keywords:
 - debug builds
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee2ecb5e501390dfc82d895bf6a81706f4297a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b422b1844ffb30c1c6f2f8fa8845995c98c794e4
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430299"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416842"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Как выполнить Управление конфигурациями сборок с применением параметров разработчика Visual Basic
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Практическое руководство. Управление конфигурациями сборок с применением параметров разработчика Visual Basic
 
 По умолчанию все расширенные параметры сборки скрыты при применении параметров разработчика Visual Basic. В этой статье объясняется, как включить эти параметры сборки вручную.
 

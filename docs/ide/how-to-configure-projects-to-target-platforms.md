@@ -1,5 +1,5 @@
 ---
-title: Как выполнить настройку целевых платформ в проектах
+title: Практическое руководство. настройку целевых платформ в проектах
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - CPUs, targeting specific
 - 64-bit applications [Visual Studio]
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: faef9f55a88385953a121574f761193cc8c11ea9
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438193"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416832"
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Как выполнить настройку целевых платформ в проектах
+# <a name="how-to-configure-projects-to-target-platforms"></a>Практическое руководство. настройку целевых платформ в проектах
 
 Visual Studio позволяет настраивать приложения для различных платформ, включая 64-разрядные платформы. Дополнительные сведения о поддержке 64-разрядных платформ в Visual Studio см. в статье [64-разрядные приложения](/dotnet/framework/64-bit-apps).
 

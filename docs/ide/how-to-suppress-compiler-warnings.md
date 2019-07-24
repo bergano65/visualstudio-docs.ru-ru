@@ -3,19 +3,19 @@ title: Отключение предупреждений компилятора 
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 764c488b659418dd409a5d83b1efcaac502f1e5e
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549315"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415788"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Как выполнить Отключение предупреждений компилятора
+# <a name="how-to-suppress-compiler-warnings"></a>Практическое руководство. Отключение предупреждений компилятора
 
 Отфильтровав предупреждения компилятора одного или нескольких видов, вы сможете убрать лишнюю информацию из журнала сборки. Например, вы можете регулировать объем выходных данных, изменяя уровень детализации журнала сборки: **обычный**, **подробный** или **диагностический**. Дополнительные сведения о детализации см. в разделе [Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки](../ide/how-to-view-save-and-configure-build-log-files.md).
 

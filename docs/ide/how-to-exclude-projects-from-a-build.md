@@ -1,22 +1,22 @@
 ---
-title: Как выполнить Исключение проектов из сборки
+title: Практическое руководство. Исключение проектов из сборки
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ca736d65a889c0bbada24412ebedecbe6970ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54e65c411afe9815696112dfbcc99bcb9433c4db
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428980"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416863"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Как выполнить Исключение проектов из сборки
+# <a name="how-to-exclude-projects-from-a-build"></a>Практическое руководство. Исключение проектов из сборки
 
 Вы можете создать решение без сборки всех проектов, которые оно содержит. Например, можно исключить проект, который прерывает сборку. После исследования и разрешения проблем можно будет построить этот проект.
 
@@ -42,7 +42,7 @@ ms.locfileid: "62428980"
 
 1. В строке меню последовательно выберите пункты **Сборка** > **Диспетчер конфигураций**.
 
-2. В списке **Активная конфигурация решения** выберите **\<Создать>**.
+2. В списке **Активная конфигурация решения** выберите **\<Создать>** .
 
 3. В поле **Имя** введите имя конфигурации решения.
 
