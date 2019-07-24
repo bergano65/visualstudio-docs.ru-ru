@@ -1,22 +1,22 @@
 ---
-title: Как выполнить просмотр, сохранение и настройку файлов журнала сборки | Документация Майкрософт
+title: Практическое руководство. просмотр, сохранение и настройку файлов журнала сборки | Документация Майкрософт
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e40f414b3b3ea6bc151ef036deb0b5d80464ba46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429149"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415578"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Как выполнить Просмотр, сохранение и настройка файлов журнала сборки
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки
 
 После сборки проекта в интегрированной среде разработки Visual Studio вы можете просмотреть сведения об этой сборке в окне **Вывод**. С помощью этих сведений можно, например, найти и устранить сбой при сборке. 
 
@@ -50,7 +50,7 @@ ms.locfileid: "62429149"
 
 3. В списке **Степень подробности сообщений при построении проекта MSBuild** выберите одно из указанных ниже значений, а затем нажмите кнопку **ОК**.
 
-    |Уровень детализации|Описание|
+    |Уровень детализации|ОПИСАНИЕ|
     | - |-----------------|
     |**Тихий**|Отображает только сводку по сборке.|
     |**Минимальное**|Отображает сводку по сборке, а также ошибки, предупреждения и сообщения с высокой важностью.|
