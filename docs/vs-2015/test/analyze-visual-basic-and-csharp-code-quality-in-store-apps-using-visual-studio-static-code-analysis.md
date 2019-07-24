@@ -1,5 +1,5 @@
 ---
-title: Анализ Visual Basic и C# кода качества в приложениях Store, с помощью функций анализа статического кода
+title: Анализ Visual Basic и C# качества кода в приложениях магазина с помощью статического анализа кода
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,21 +8,21 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686556"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416642"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Анализ качества кода Visual Basic и C# в приложениях Магазина с помощью функций анализа статического кода Visual Studio
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.PNG «windows_and_phone_content»)
+Применяется к Windows и Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
 
  Средство анализа кода в Visual Studio Express анализирует код с целью найти общие дефекты и нарушения рекомендаций программирования. Предупреждения, возникающие в ходе анализа кода, отличаются от ошибок и предупреждений компилятора, потому что средство анализа кода выполняет поиск конкретных шаблонов кода, которые являются допустимыми, но, тем не менее, могут вызвать проблемы при использовании кода вами или другими специалистами. Анализ кода позволяет находить дефекты в коде, которые невозможно обнаружить в процессе тестирования. Регулярный запуск средства анализа кода в процессе разработки позволяет создать приложение более высокого качества.
 
@@ -51,7 +51,7 @@ ms.locfileid: "65686556"
 
 1. В обозревателе решений щелкните правой кнопкой мыши имя проекта и выберите пункт **Свойства**.
 
-2. На странице свойств проекта выберите **Анализ кода** и установите флажок **Включить анализ кода в построении (определяет константу CODEANALYSIS)**.
+2. На странице свойств проекта выберите **Анализ кода** и установите флажок **Включить анализ кода в построении (определяет константу CODEANALYSIS)** .
 
    Решение компилируется, и запускается анализ кода. Результаты выводятся в окне "Анализ кода".
 
