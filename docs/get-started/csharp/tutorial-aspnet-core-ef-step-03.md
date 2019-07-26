@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e27155cd6504ab66cf52c4ddb0659a84936037a0
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553945"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300587"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Шаг 3. Работа с данными с использованием Entity Framework
 
@@ -54,7 +54,7 @@ public class Game
 
 Теперь мы готовы к созданию страниц, которые будем использовать для управления библиотекой игр. Это может звучать устрашающе, но на самом деле это совсем просто. Сначала необходимо решить, где в нашем приложении мы пропишем эту функцию. Откройте в веб-проекте папку Pages и добавьте новую папку. Назовите ее *Games*.
 
-Теперь щелкните правой кнопкой папку Games и выберите **Добавить** > **Создать шаблонный элемент**. Выберите Razor Pages на основе параметра **Entity Framework (CRUD)**. CRUD (Create, Read, Update, Delete) означает "создание, чтение, обновление и удаление". Этот шаблон создаст страницы для каждой из этих операций (в том числе страницу "список всех" и страницу "просмотреть подробности об элементе").
+Теперь щелкните правой кнопкой папку Games и выберите **Добавить** > **Создать шаблонный элемент**. Выберите Razor Pages на основе параметра **Entity Framework (CRUD)** . CRUD (Create, Read, Update, Delete) означает "создание, чтение, обновление и удаление". Этот шаблон создаст страницы для каждой из этих операций (в том числе страницу "список всех" и страницу "просмотреть подробности об элементе").
 
 ![Visual Studio 2019. ASP.NET Core. Добавление шаблонных страниц](media/vs-2019/vs2019-add-scaffold.png)
 
@@ -92,7 +92,7 @@ public static void Main(string[] args)
 
         try
         {
-            var context = services.GetRequiredService<SchoolContext>();
+            var context = services.GetRequiredService<AppDbContext>();
             context.Database.EnsureCreated();
         }
         catch (Exception ex)
@@ -105,6 +105,15 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
+Чтобы разрешить имя TypeName в приведенном выше коде, добавьте следующие операторы using в *Program.cs* в конце существующего блока операторов using:
+
+```csharp
+using Microsoft.Extensions.DependencyInjection;
+using WebApplication1.Models;
+```
+
+Не забудьте указать имя проекта вместо WebApplication1 в коде.
 
 Большая часть кода — это только обработка ошибок, а также предоставление доступа к EF Core `AppDbContext` до начала работы приложения. Важная строка — та, в которой указано `context.Database.EnsureCreated()`, благодаря чему будет создана база данных, если она еще не существует. Теперь приложение готово к запуску.
 

@@ -9,14 +9,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+helpviewer_keywords:
+- add missing usings
+ms.openlocfilehash: d971bcdaca4efdf587c7e441f1b0b28d21388dee
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531633"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416481"
 ---
-# <a name="generate-usings-in-visual-studio"></a>Создание директив using в Visual Studio
+# <a name="add-missing-usings-in-visual-studio"></a>Добавление пропущенных директив using в Visual Studio
 
 Область применения этого формирования кода:
 
@@ -28,7 +30,7 @@ ms.locfileid: "65531633"
 
 **Зачем?** Так как это быстрое действие автоматически добавляет необходимые импортируемые элементы, вам не нужно вручную копировать операторы `using`, которые должны присутствовать в коде.
 
-## <a name="generate-usings-refactoring"></a>Рефакторинг "Создание операторов using"
+## <a name="add-missing-usings-refactoring"></a>Добавление пропущенного рефакторинга операторов using
 
 1. Скопируйте код в одном файле и вставьте его в другой, не включая необходимые операторы `using`. Итоговая ошибка сопровождается исправлением кода, которое добавляет отсутствующие операторы `using`.
 
@@ -39,7 +41,7 @@ ms.locfileid: "65531633"
 
     ![Создание директив using](media/generate-using-codefix.png)
 
-3. Выберите **using \<ваша ссылка\>;**, чтобы добавить отсутствующую ссылку.
+3. Выберите **using \<ваша ссылка\>;** , чтобы добавить отсутствующую ссылку.
 
     ![Результат создания директив using](media/generate-using-result.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Соглашения о форматировании в среде .NET для EditorConfig
-ms.date: 06/17/2019
+ms.date: 07/17/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3218e819d8f94cf760cdc75d6bfa6d29d0a29568
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ccebfc38d5170920fe3f3c37ee77aabaf660a3b8
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823342"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345663"
 ---
 # <a name="formatting-conventions"></a>Соглашения по форматированию
 
-Соглашения о форматировании для EditorConfig в Visual Studio разделяются на две категории:
+Соглашения о форматировании для EditorConfig в Visual Studio разделяются на следующие категории:
 
 - [параметры форматирования .NET](#net-formatting-settings);
 
@@ -122,20 +122,32 @@ using Octokit;
   - csharp_indent_case_contents
   - csharp_indent_switch_labels
   - csharp_indent_labels
+  - csharp_indent_block_contents
+  - csharp_indent_braces
+  - csharp_indent_case_contents_when_block
 - [Параметры интервалов](#spacing-options)
   - csharp_space_after_cast
   - csharp_space_after_keywords_in_control_flow_statements
-  - csharp_space_between_method_declaration_parameter_list_parentheses
-  - csharp_space_between_method_call_parameter_list_parentheses
   - csharp_space_between_parentheses
   - csharp_space_before_colon_in_inheritance_clause
   - csharp_space_after_colon_in_inheritance_clause
   - csharp_space_around_binary_operators
+  - csharp_space_between_method_declaration_parameter_list_parentheses
   - csharp_space_between_method_declaration_empty_parameter_list_parentheses
-  - csharp_space_between_method_call_name_and_opening_parenthesis
+  - csharp_space_between_method_declaration_name_and_open_parenthesis
+  - csharp_space_between_method_call_parameter_list_parentheses
   - csharp_space_between_method_call_empty_parameter_list_parentheses
+  - csharp_space_between_method_call_name_and_opening_parenthesis
   - csharp_space_after_comma
+  - csharp_space_before_comma
   - csharp_space_after_dot
+  - csharp_space_before_dot
+  - csharp_space_after_semicolon_in_for_statement
+  - csharp_space_before_semicolon_in_for_statement
+  - csharp_space_around_declaration_statements
+  - csharp_space_before_open_square_brackets
+  - csharp_space_between_empty_square_brackets
+  - csharp_space_between_square_brackets
 - [Параметры переноса](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
@@ -371,6 +383,9 @@ var q = from a in e from b in e
 csharp_indent_case_contents = true
 csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents_when_block = true
 ```
 
 #### <a name="csharpindentcasecontents"></a>csharp\_indent\_case_contents
@@ -509,6 +524,83 @@ class C
 }
 ```
 
+#### <a name="csharpindentblockcontents"></a>csharp_indent_block_contents
+
+|||
+|-|-|
+| **Имя правила** | csharp_indent_block_contents |
+| **Применимые языки** | C# |
+| **Значения** | `true` - <br /><br />`false` -  |
+| **Значение по умолчанию в Visual Studio** | `true` |
+
+Примеры кода:
+
+```csharp
+// csharp_indent_block_contents = true
+static void Hello()
+{
+    Console.WriteLine("Hello");
+}
+
+// csharp_indent_block_contents = false
+static void Hello()
+{
+Console.WriteLine("Hello");
+}
+```
+
+#### <a name="csharpindentbraces"></a>csharp_indent_braces
+
+|||
+|-|-|
+| **Имя правила** | csharp_indent_braces |
+| **Применимые языки** | C# |
+| **Значения** | `true` - <br /><br />`false` -  |
+| **Значение по умолчанию в Visual Studio** | `false` |
+
+Примеры кода:
+
+```csharp
+// csharp_indent_braces = true
+static void Hello()
+    {
+    Console.WriteLine("Hello");
+    }
+
+// csharp_indent_braces = false
+static void Hello()
+{
+    Console.WriteLine("Hello");
+}
+```
+
+#### <a name="csharpindentcasecontentswhenblock"></a>csharp_indent_case_contents_when_block
+
+|||
+|-|-|
+| **Имя правила** | csharp_indent_case_contents_when_block |
+| **Применимые языки** | C# |
+| **Значения** | `true` - <br /><br />`false` -  |
+| **Значение по умолчанию в Visual Studio** | `true` |
+
+Примеры кода:
+
+```csharp
+// csharp_indent_case_contents_when_block = true
+case 0:
+    {
+        Console.WriteLine("Hello");
+        break;
+    }
+
+// csharp_indent_case_contents_when_block = false
+case 0:
+{
+    Console.WriteLine("Hello");
+    break;
+}
+```
+
 ### <a name="spacing-options"></a>Параметры интервалов
 
 Эти правила форматирования относятся к использованию пробелов для форматирования кода.
@@ -520,17 +612,26 @@ class C
 [*.cs]
 csharp_space_after_cast = true
 csharp_space_after_keywords_in_control_flow_statements = true
-csharp_space_between_method_declaration_parameter_list_parentheses = true
-csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
 csharp_space_before_colon_in_inheritance_clause = true
 csharp_space_after_colon_in_inheritance_clause = true
 csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_parameter_list_parentheses = true
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
-csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_after_comma = true
+csharp_space_before_comma = false
 csharp_space_after_dot = false
+csharp_space_before_dot = false
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_around_declaration_statements = false
+csharp_space_before_open_square_brackets = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_square_brackets = false
 ```
 
 #### <a name="csharpspaceaftercast"></a>csharp\_space\_after_cast
@@ -540,7 +641,7 @@ csharp_space_after_dot = false
 | **Имя правила** | csharp_space_after_cast |
 | **Применимые языки** | C# |
 | **Представленные версии** | Visual Studio 2017 версия 15.3 |
-| **Значения** | `true` — требовать наличие пробела между типом и значением в приведении.<br /><br />`false` — требовать _отсутствие_ пробела между типом и значением в приведении. |
+| **Значения** | `true` — разместить пробел между типом и значением в приведении<br /><br />`false` — удалить пробел между типом и значением в приведении |
 | **Значение по умолчанию в Visual Studio** | `false` |
 
 Примеры кода:
@@ -560,7 +661,7 @@ int y = (int)x;
 | **Имя правила** | csharp_space_after_keywords_in_control_flow_statements |
 | **Применимые языки** | C# |
 | **Представленные версии** | Visual Studio 2017 версия 15.3 |
-| **Значения** | `true` — требовать наличие пробела после ключевого слова в операторе потока управления, например цикле `for`.<br /><br />`false` — требовать _отсутствие_ пробела после ключевого слова в операторе потока управления, например цикле `for`. |
+| **Значения** | `true` — поместить пробел после ключевого слова в операторе потока управления, например цикле `for`<br /><br />`false` — удалить пробел после ключевого слова в операторе потока управления, например цикле `for` |
 | **Значение по умолчанию в Visual Studio** | `true` |
 
 Примеры кода:
@@ -571,46 +672,6 @@ for (int i;i<x;i++) { ... }
 
 // csharp_space_after_keywords_in_control_flow_statements = false
 for(int i;i<x;i++) { ... }
-```
-
-#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
-
-|||
-|-|-|
-| **Имя правила** | csharp_space_between_method_declaration_parameter_list_parentheses |
-| **Применимые языки** | C# |
-| **Представленные версии** | Visual Studio 2017 версия 15.3 |
-| **Значения** | `true` — размещать пробел после открывающей скобки и перед закрывающей скобкой в списке параметров объявления метода.<br /><br />`false` — не размещать пробел после открывающей скобки и перед закрывающей скобкой в списке параметров объявления метода. |
-| **Значение по умолчанию в Visual Studio** | `false` |
-
-Примеры кода:
-
-```csharp
-// csharp_space_between_method_declaration_parameter_list_parentheses = true
-void Bark( int x ) { ... }
-
-// csharp_space_between_method_declaration_parameter_list_parentheses = false
-void Bark(int x) { ... }
-```
-
-#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
-
-|||
-|-|-|
-| **Имя правила** | csharp_space_between_method_call_parameter_list_parentheses |
-| **Применимые языки** | C# |
-| **Представленные версии** | Visual Studio 2017 версия 15.3 |
-| **Значения** | `true` — размещать пробел после открывающей скобки и перед закрывающей скобкой в вызове метода.<br /><br />`false` — не размещать пробел после открывающей скобки и перед закрывающей скобкой в вызове метода. |
-| **Значение по умолчанию в Visual Studio** | `false` |
-
-Примеры кода:
-
-```csharp
-// csharp_space_between_method_call_parameter_list_parentheses = true
-MyMethod( argument );
-
-// csharp_space_between_method_call_parameter_list_parentheses = false
-MyMethod(argument);
 ```
 
 #### <a name="csharpspacebetweenparentheses"></a>csharp_space_between_parentheses
@@ -645,7 +706,7 @@ int y = ( int )x;
 | **Имя правила** | csharp_space_before_colon_in_inheritance_clause |
 | **Применимые языки** | C# |
 | **Представленные версии** | Visual Studio 2017 версии 15.7 |
-| **Значения** | `true` — требовать наличие пробела перед двоеточием для баз или интерфейсов в объявлении типа.<br /><br />`false` — требовать _отсутствие_ пробела перед двоеточием для баз или интерфейсов в объявлении типа. |
+| **Значения** | `true` — поместить пробел перед двоеточием для баз или интерфейсов в объявлении типа<br /><br />`false` — удалить пробел перед двоеточием для баз или интерфейсов в объявлении типа |
 | **Значение по умолчанию в Visual Studio** | `true` |
 
 Примеры кода:
@@ -681,7 +742,7 @@ class C: I
 | **Имя правила** | csharp_space_after_colon_in_inheritance_clause |
 | **Применимые языки** | C# |
 | **Представленные версии** | Visual Studio 2017 версии 15.7 |
-| **Значения** | `true` — требовать наличие пробела после двоеточия для баз или интерфейсов в объявлении типа.<br /><br />`false` — требовать _отсутствие_ пробела после двоеточия для баз или интерфейсов в объявлении типа. |
+| **Значения** | `true` — поместить пробел после двоеточия для баз или интерфейсов в объявлении типа<br /><br />`false` — удалить пробел после двоеточия для баз или интерфейсов в объявлении типа |
 | **Значение по умолчанию в Visual Studio** | `true` |
 
 Примеры кода:
@@ -735,6 +796,26 @@ return x*(x-y);
 return x  *  (x-y);
 ```
 
+#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
+
+|||
+|-|-|
+| **Имя правила** | csharp_space_between_method_declaration_parameter_list_parentheses |
+| **Применимые языки** | C# |
+| **Представленные версии** | Visual Studio 2017 версия 15.3 |
+| **Значения** | `true` — размещать пробел после открывающей скобки и перед закрывающей скобкой в списке параметров объявления метода.<br /><br />`false` — удалить пробел после открывающей скобки и перед закрывающей скобкой в списке параметров объявления метода |
+| **Значение по умолчанию в Visual Studio** | `false` |
+
+Примеры кода:
+
+```csharp
+// csharp_space_between_method_declaration_parameter_list_parentheses = true
+void Bark( int x ) { ... }
+
+// csharp_space_between_method_declaration_parameter_list_parentheses = false
+void Bark(int x) { ... }
+```
+
 #### <a name="csharpspacebetweenmethoddeclarationemptyparameterlistparentheses"></a>csharp_space_between_method_declaration_empty_parameter_list_parentheses
 
 |||
@@ -760,6 +841,81 @@ void Goo(int x)
 }
 
 // csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+#### <a name="csharpspacebetweenmethoddeclarationnameandopenparenthesis"></a>csharp_space_between_method_declaration_name_and_open_parenthesis
+
+|||
+|-|-|
+| **Имя правила** | csharp_space_between_method_declaration_name_and_open_parenthesis |
+| **Применимые языки** | C# |
+| **Значения** | `true` — поместить пробел между именем метода и открывающей круглой скобкой в объявлении метода<br /><br />`false` — удалить пробелы между именем метода и открывающей круглой скобкой в объявлении метода |
+| **Значение по умолчанию в Visual Studio** | `false` |
+
+Примеры кода:
+
+```csharp
+// csharp_space_between_method_declaration_name_and_open_parenthesis = true
+void M () { }
+
+// csharp_space_between_method_declaration_name_and_open_parenthesis = false
+void M() { }
+```
+
+#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
+
+|||
+|-|-|
+| **Имя правила** | csharp_space_between_method_call_parameter_list_parentheses |
+| **Применимые языки** | C# |
+| **Представленные версии** | Visual Studio 2017 версия 15.3 |
+| **Значения** | `true` — размещать пробел после открывающей скобки и перед закрывающей скобкой в вызове метода.<br /><br />`false` — удалять пробел после открывающей скобки и перед закрывающей скобкой в вызове метода |
+| **Значение по умолчанию в Visual Studio** | `false` |
+
+Примеры кода:
+
+```csharp
+// csharp_space_between_method_call_parameter_list_parentheses = true
+MyMethod( argument );
+
+// csharp_space_between_method_call_parameter_list_parentheses = false
+MyMethod(argument);
+```
+
+#### <a name="csharpspacebetweenmethodcallemptyparameterlistparentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
+
+|||
+|-|-|
+| **Имя правила** | csharp_space_between_method_call_empty_parameter_list_parentheses |
+| **Применимые языки** | C# |
+| **Представленные версии** | Visual Studio 2017 версии 15.7 |
+| **Значения** | `true` — вставлять пробел между скобками в пустом списке аргументов.<br /><br />`false` — удалять пробел между скобками в пустом списке аргументов. |
+| **Значение по умолчанию в Visual Studio** | `false` |
+
+Примеры кода:
+
+```csharp
+// csharp_space_between_method_call_empty_parameter_list_parentheses = true
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo( );
+}
+
+// csharp_space_between_method_call_empty_parameter_list_parentheses = false
 void Goo()
 {
     Goo(1);
@@ -807,42 +963,6 @@ void Goo(int x)
 }
 ```
 
-#### <a name="csharpspacebetweenmethodcallemptyparameterlistparentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
-
-|||
-|-|-|
-| **Имя правила** | csharp_space_between_method_call_empty_parameter_list_parentheses |
-| **Применимые языки** | C# |
-| **Представленные версии** | Visual Studio 2017 версии 15.7 |
-| **Значения** | `true` — вставлять пробел между скобками в пустом списке аргументов.<br /><br />`false` — удалять пробел между скобками в пустом списке аргументов. |
-| **Значение по умолчанию в Visual Studio** | `false` |
-
-Примеры кода:
-
-```csharp
-// csharp_space_between_method_call_empty_parameter_list_parentheses = true
-void Goo()
-{
-    Goo(1);
-}
-
-void Goo(int x)
-{
-    Goo( );
-}
-
-// csharp_space_between_method_call_empty_parameter_list_parentheses = false
-void Goo()
-{
-    Goo(1);
-}
-
-void Goo(int x)
-{
-    Goo();
-}
-```
-
 #### <a name="csharpspaceaftercomma"></a>csharp_space_after_comma
 
 |||
@@ -862,6 +982,25 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 int[] x = new int[] { 1,2,3,4,5 }
 ```
 
+#### <a name="csharpspacebeforecomma"></a>csharp_space_before_comma
+
+|||
+|-|-|
+| **Имя правила** | csharp_space_before_comma |
+| **Применимые языки** | C# |
+| **Значения** | `true` — вставлять пробел перед запятой<br /><br />`false` — удалять пробел перед запятой |
+| **Значение по умолчанию в Visual Studio** | `false` |
+
+Примеры кода:
+
+```csharp
+// csharp_space_before_comma = true
+int[] x = new int[] { 1 , 2 , 3 , 4 , 5 };
+
+// csharp_space_before_comma = false
+int[] x = new int[] { 1, 2, 3, 4, 5 };
+```
+
 #### <a name="csharpspaceafterdot"></a>csharp_space_after_dot
 
 |||
@@ -879,6 +1018,139 @@ this. Goo();
 
 // csharp_space_after_dot = false
 this.Goo();
+```
+
+#### <a name="csharpspacebeforedot"></a>csharp_space_before_dot
+
+|||
+|-|-|
+| **Имя правила** | csharp_space_before_dot |
+| **Применимые языки** | C# |
+| **Значения** | `true` — вставлять пробел перед точкой <br /><br />`false` — удалять пробел перед точкой |
+| **Значение по умолчанию в Visual Studio** | `false` |
+
+Примеры кода:
+
+```csharp
+// csharp_space_before_dot = true
+this .Goo();
+
+// csharp_space_before_dot = false
+this.Goo();
+```
+
+#### <a name="csharpspaceaftersemicoloninforstatement"></a>csharp_space_after_semicolon_in_for_statement
+
+|||
+|-|-|
+| **Имя правила** | csharp_space_after_semicolon_in_for_statement |
+| **Применимые языки** | C# |
+| **Значения** | `true` — вставлять пробел после каждой точки с запятой в операторах `for`<br /><br />`false` — удалять пробел после каждой точки с запятой в операторах `for` |
+| **Значение по умолчанию в Visual Studio** | `true` |
+
+Примеры кода:
+
+```csharp
+// csharp_space_after_semicolon_in_for_statement = true
+for (int i = 0; i < x.Length; i++)
+
+// csharp_space_after_semicolon_in_for_statement = false
+for (int i = 0;i < x.Length;i++)
+```
+
+##### <a name="csharpspacebeforesemicoloninforstatement"></a>csharp_space_before_semicolon_in_for_statement
+
+|||
+|-|-|
+| **Имя правила** | csharp_space_before_semicolon_in_for_statement |
+| **Применимые языки** | C# |
+| **Значения** | `true` — вставлять пробел перед каждой точкой с запятой в операторах `for` <br /><br />`false` — удалять пробел перед каждой точкой с запятой в операторах `for` |
+| **Значение по умолчанию в Visual Studio** | `false` |
+
+Примеры кода:
+
+```csharp
+// csharp_space_before_semicolon_in_for_statement = true
+for (int i = 0 ; i < x.Length ; i++)
+
+// csharp_space_before_semicolon_in_for_statement = false
+for (int i = 0; i < x.Length; i++)
+```
+
+#### <a name="csharpspacearounddeclarationstatements"></a>csharp_space_around_declaration_statements
+
+|||
+|-|-|
+| **Имя правила** | csharp_space_around_declaration_statements |
+| **Применимые языки** | C# |
+| **Значения** | `ignore` — не удалять лишние пробелы в операторах объявления<br /><br />`false` — удалять лишние пробелы в операторах объявления |
+| **Значение по умолчанию в Visual Studio** | `false` |
+
+Примеры кода:
+
+```csharp
+// csharp_space_around_declaration_statements = ignore
+int    x    =    0   ;
+
+// csharp_space_around_declaration_statements = false
+int x = 0;
+```
+
+#### <a name="csharpspacebeforeopensquarebrackets"></a>csharp_space_before_open_square_brackets
+
+|||
+|-|-|
+| **Имя правила** | csharp_space_before_open_square_brackets |
+| **Применимые языки** | C# |
+| **Значения** | `true` — вставлять пробел перед открывающей квадратной скобкой `[` <br /><br />`false` — удалять пробел перед открывающей квадратной скобкой `[` |
+| **Значение по умолчанию в Visual Studio** | `false` |
+
+Примеры кода:
+
+```csharp
+// csharp_space_before_open_square_brackets = true
+int [] numbers = new int [] { 1, 2, 3, 4, 5 };
+
+// csharp_space_before_open_square_brackets = false
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+```
+
+#### <a name="csharpspacebetweenemptysquarebrackets"></a>csharp_space_between_empty_square_brackets
+
+|||
+|-|-|
+| **Имя правила** | csharp_space_between_empty_square_brackets |
+| **Применимые языки** | C# |
+| **Значения** | `true` — вставлять пробел перед пустыми квадратными скобками `[ ]` <br /><br />`false` — удалять пробел перед пустыми квадратными скобками `[]` |
+| **Значение по умолчанию в Visual Studio** | `false` |
+
+Примеры кода:
+
+```csharp
+// csharp_space_between_empty_square_brackets = true
+int[ ] numbers = new int[ ] { 1, 2, 3, 4, 5 };
+
+// csharp_space_between_empty_square_brackets = false
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+```
+
+#### <a name="csharpspacebetweensquarebrackets"></a>csharp_space_between_square_brackets
+
+|||
+|-|-|
+| **Имя правила** | csharp_space_between_square_brackets |
+| **Применимые языки** | C# |
+| **Значения** | `true` — вставлять пробел в непустых квадратных скобках `[ 0 ]` <br /><br />`false` — удалять пробел в непустых квадратных скобках `[0]` |
+| **Значение по умолчанию в Visual Studio** | `false` |
+
+Примеры кода:
+
+```csharp
+// csharp_space_between_square_brackets = true
+int index = numbers[ 0 ];
+
+// csharp_space_between_square_brackets = false
+int index = numbers[0];
 ```
 
 ### <a name="wrap-options"></a>Параметры переноса
