@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 9bbd0aa8ea3d98077154225fb3a35aec5545ccfa
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415730"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493320"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Отладка интерактивных приложений ASP.NET Azure с использованием Snapshot Debugger
 
@@ -109,7 +109,6 @@ ms.locfileid: "68415730"
 ## <a name="take-a-snapshot"></a>Сделайте моментальный снимок
 
 После установки точка прикрепления можно либо создать моментальный снимок вручную, перейдя в представление веб-сайта в браузере и выполнив строку кода с пометкой или дождаться, когда пользователи будут создавать его на основе использования сайта.
-
 
 ## <a name="inspect-snapshot-data"></a>Проверка данных моментальных снимков
 

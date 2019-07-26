@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fbe1a4decebd68b80e6cbe8728c5de84a44c641
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff4d3566dcfb4b40f1008eed09371e42459c3a5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377749"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493123"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Создание пользовательских шаблонов проектов и элементов
 
@@ -35,7 +35,6 @@ ms.locfileid: "68377749"
      Шаблон создает файл класса, значок, *VSTEMPLATE* -файл, редактируемый файл проекта с именем *ProjectTemplate. vbproj* или *ProjectTemplate. csproj*, а также некоторые файлы, которые обычно создаются другими типами проектов, например  *Resources. resx* , файл *AssemblyInfo* и файл *параметров* . Каждый файл кода содержит общие подстановки параметров, если это уместно.
 
 ![Выбор проекта шаблона проекта](media/project-template-selection.png)
-
 
 2. Добавление и удаление элементов проекта в соответствии с требованиями проекта. Не удаляйте файл редактируемого проекта, файл *AssemblyInfo* или *VSTEMPLATE* .
 

@@ -1,17 +1,17 @@
 ---
 title: Как активировать подписки Visual Studio, приобретенные в Microsoft Store | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/25/2018
+ms.author: lank
+manager: lank
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Сведения о том, как активировать подписки Visual Studio, приобретенные в Microsoft Store.
-ms.openlocfilehash: 2f06804d33b55c83c5d2a3e8a3c1fb273c55093f
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: d03b5137a904b68fc848e4058069c89252b94d38
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784850"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377777"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Как активировать подписку, приобретенную через Microsoft Store?
 Если вы приобрели подписку Visual Studio в Microsoft Store, активацию можно инициировать на странице подтверждения оплаты или через сообщение электронной почты, которое вы получили после покупки.
@@ -19,7 +19,7 @@ ms.locfileid: "67784850"
 > [!NOTE]
 > Если вы не получили сообщение с подтверждением, проверьте, правильно ли введен адрес электронной почты и не попало ли письмо в папку со спамом.
 
-## <a name="activate-your-subscription"></a>Активация подписки:
+## <a name="activate-your-subscription"></a>Активация подписки
 1. Выберите ссылку **Щелкните здесь, чтобы выполнить вход** в подтверждении по электронной почте или на странице подтверждения покупки.
 2. Произойдет перенаправление на страницу [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
 3. Введите адрес электронной почты, для которого нужен доступ к подписке Visual Studio, и нажмите кнопку **Продолжить**.
@@ -30,3 +30,6 @@ ms.locfileid: "67784850"
 6. После успешного входа появится окно активации подписки Visual Studio.
 7. Введите ключ продукта, который вы можете получить на странице подтверждения оплаты или в сообщении электронной почты с подтверждением, а затем щелкните **Активировать**.
 8. Теперь эта подписка появится на странице [Подписки](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), и вы сможете воспользоваться любым из ее преимуществ.
+
+## <a name="next-steps"></a>Следующие шаги
+Посетите страницу [Преимущества](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), чтобы просмотреть все средства, службы, возможности обучения и поддержки, входящие в вашу подписку.  Мы рекомендуем настроить [Visual Studio](vs-ide-benefit.md) и [Azure DevOps](vs-azure-devops.md), чтобы приступить к работе. 
