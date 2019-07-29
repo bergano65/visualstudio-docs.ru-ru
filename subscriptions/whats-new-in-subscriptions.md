@@ -2,17 +2,17 @@
 title: Новые возможности подписок Visual Studio
 description: Узнайте о новых и обновленных функциях, которые можно использовать для управления подписками Visual Studio.
 ms.custom: ''
-ms.date: 06/27/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: b6922e5a2b14186afd1f3fa9294bbb24c2e7d649
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891075"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377946"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Новые возможности в подписках Visual Studio
 
@@ -43,6 +43,4 @@ ms.locfileid: "67891075"
 
 Вот и все!
 
-## <a name="see-also"></a>См. также
 
-* [Преимущества для подписчиков](subscriber-benefits.md)

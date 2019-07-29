@@ -2,18 +2,21 @@
 title: Шаг 6. Присвоение имен элементам управления "Кнопка"
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dbee780f2153003e870dbe0dbbb15b721a009df
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2051ac669c52480d62ee0d0a79c5a165bff502fc
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442024"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416607"
 ---
 # <a name="step-6-name-your-button-controls"></a>Шаг 6. Присвоение имен элементам управления "Кнопка"
 В форме существует только один элемент управления <xref:System.Windows.Forms.PictureBox>. Когда он был добавлен, интегрированная среда разработки автоматически присвоила ему имя **pictureBox1**. Существует только один элемент управления <xref:System.Windows.Forms.CheckBox> с именем **checkBox1**. Скоро будет написан некоторый код. В этом коде будет обращение к элементам управления CheckBox и PictureBox. Так как существуют только по одному экземпляру каждого компонента, то становится ясно, что означает упоминание имен **pictureBox1** или **checkBox1** в коде.
@@ -27,7 +30,7 @@ ms.locfileid: "63442024"
 
 ## <a name="to-name-your-button-controls"></a>Присвоение имен элементам управления "Кнопка"
 
-1. В форме нажмите кнопку **Закрыть** . (Если все кнопки все еще выделены, для отмены выделения нажмите клавишу **ESC**.) Прокрутите содержимое окна **Свойства**, пока не появится свойство **(Name)**. (Свойство **(Name)** расположено в верхней части, когда свойства расположены в алфавитном порядке.) Измените имя на **closeButton**, как показано на рисунке ниже.
+1. В форме нажмите кнопку **Закрыть** . (Если все кнопки все еще выделены, для отмены выделения нажмите клавишу **ESC**.) Прокрутите содержимое окна **Свойства**, пока не появится свойство **(Name)** . (Свойство **(Name)** расположено в верхней части, когда свойства расположены в алфавитном порядке.) Измените имя на **closeButton**, как показано на рисунке ниже.
 
      ![Properties window with closeButton name](../ide/media/express_setnameproperty.png)
 Окно **Свойства** с именем **closeButton**

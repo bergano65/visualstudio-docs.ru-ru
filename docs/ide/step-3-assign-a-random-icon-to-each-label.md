@@ -2,18 +2,21 @@
 title: Шаг 3. Назначение каждому элементу управления Label случайного значка
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adad85955805aa9349a3655ec9b817e17fd3c712
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ae4b635f86eb67f04db3ba6243e7b0ba4634bfb4
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430758"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416676"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Шаг 3. Назначение каждому элементу управления Label случайного значка
 Если значки оказываются в одной и той же ячейке каждую игру, игра становится слишком простой. Чтобы избежать этого, назначайте значки элементам управления Label случайным образом, используя для этого метод `AssignIconsToSquares()`.

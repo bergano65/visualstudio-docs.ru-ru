@@ -1,6 +1,6 @@
 ---
 title: CA2202. Не ликвидируйте объекты несколько раз
-ms.date: 11/04/2016
+ms.date: 07/16/2019
 ms.topic: reference
 f1_keywords:
 - CA2202
@@ -14,47 +14,47 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed2edd83918a9e4bc89543d1217d51e5e87f00c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5fb70baa17bee484dc3c31d7c6ce9b302019403
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796836"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300603"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202. Не ликвидируйте объекты несколько раз
 
 |||
 |-|-|
-|TypeName|DoNotDisposeObjectsMultipleTimes|
+|TypeName|донотдиспосеобжектсмултиплетимес|
 |CheckId|CA2202|
-|Категория|Microsoft.Usage|
+|Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
 
-Реализация метода содержит пути кода, которые могут стать причиной многократного вызова <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> или эквивалентного метода Dispose, например, метода Close() для некоторых типов, на тот же объект.
+Реализация метода содержит пути кода, которые могут вызвать несколько вызовов <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> или эквивалента Dispose, например метод Close () для некоторых типов, для одного и того же объекта.
 
 ## <a name="rule-description"></a>Описание правила
 
-Объект правильно реализована <xref:System.IDisposable.Dispose%2A> метод может вызываться несколько раз без вызова исключения. Тем не менее, это не гарантируется и для предотвращения создания <xref:System.ObjectDisposedException?displayProperty=fullName> не следует вызывать <xref:System.IDisposable.Dispose%2A> более чем один раз для объекта.
+Правильно реализованный <xref:System.IDisposable.Dispose%2A> метод можно вызывать несколько раз, не вызывая исключение. Однако это не гарантируется, и чтобы избежать создания, <xref:System.ObjectDisposedException?displayProperty=fullName> не следует вызывать <xref:System.IDisposable.Dispose%2A> более одного раза для объекта.
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA2000: Ликвидировать объекты перед потерей области](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+- [CA2000: Удалить объекты до потери области](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, измените реализацию таким образом, независимо от того, путь кода, <xref:System.IDisposable.Dispose%2A> вызывается только один раз для объекта.
+Чтобы устранить нарушение этого правила, измените реализацию так, чтобы независимо от пути <xref:System.IDisposable.Dispose%2A> кода вызывался только один раз для объекта.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Для этого правила отключать вывод предупреждений не следует. Даже если <xref:System.IDisposable.Dispose%2A> для объекта известно, можно безопасно вызывать несколько раз, его реализация может измениться в будущем.
+Для этого правила отключать вывод предупреждений не следует. Даже если <xref:System.IDisposable.Dispose%2A> известно, что для объекта безопасно вызываться несколько раз, реализация может измениться в будущем.
 
 ## <a name="example"></a>Пример
 
-Вложенные `using` инструкций (`Using` в Visual Basic) может вызвать нарушения CA2202 предупреждения. Если ресурс IDisposable вложенного внутреннего `using` инструкция содержит ресурс внешнего `using` инструкции `Dispose` метод вложенного ресурса освобождает содержимом ресурсе. При возникновении такой ситуации, `Dispose` метод, внешнего `using` оператор пытается ликвидировать свой ресурс еще раз.
+Вложенные `using` инструкции`Using` (в Visual Basic) могут вызвать нарушения предупреждения CA2202. Если ресурс IDisposable вложенного внутреннего `using` оператора содержит ресурс внешней `using` инструкции, `Dispose` метод вложенного ресурса освобождает автономный ресурс. При возникновении `Dispose` такой ситуации метод внешней `using` инструкции пытается освободить свой ресурс во второй раз.
 
-В следующем примере <xref:System.IO.Stream> объект, создаваемый во внешнем инструкцией освобождается в конце внутреннего использования оператора в методе Dispose <xref:System.IO.StreamWriter> , содержащий `stream` объекта. В конце внешний `using` инструкции `stream` объект освобождается во второй раз. Второй выпуск является нарушением CA2202.
+В следующем примере <xref:System.IO.Stream> объект, созданный во внешнем операторе using, освобождается в конце внутреннего оператора using в методе <xref:System.IO.StreamWriter> Dispose объекта, содержащего `stream` объект. В конце внешней `using` инструкции `stream` объект освобождается второй раз. Второй выпуск является нарушением CA2202.
 
 ```csharp
 using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
@@ -68,7 +68,7 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
 
 ## <a name="example"></a>Пример
 
-Чтобы устранить эту проблему, используйте `try` / `finally` блока вместо внешнего `using` инструкции. В `finally` block, убедитесь, что `stream` ресурс не имеет значение null.
+Чтобы устранить `try` эту проблему, используйте / `finally` блок, а не внешний `using` оператор. В блоке убедитесь, что `stream` ресурс не равен null. `finally`
 
 ```csharp
 Stream stream = null;
@@ -83,10 +83,12 @@ try
 }
 finally
 {
-    if(stream != null)
-        stream.Dispose();
+    stream?.Dispose();
 }
 ```
+
+> [!TIP]
+> Приведенный выше [](/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-) синтаксиспредставляетсобойусловныйоператорсозначением`?.` null.
 
 ## <a name="see-also"></a>См. также
 
