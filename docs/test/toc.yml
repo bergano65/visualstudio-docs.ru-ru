@@ -54,9 +54,9 @@
       items:
         - name: Пошаговое руководство. Создание и запуск модульных тестов для управляемого кода
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: Краткое руководство. Разработка на основе тестирования с помощью обозревателя тестов
+        - name: Пошаговое руководство. Разработка на основе тестирования
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: Использование элементов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
+        - name: Использование API MSTest в модульных тестах
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Использование классов assert
           href: using-the-assert-classes.md
@@ -72,13 +72,13 @@
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
         - name: Модульные тесты на основе данных
           items:
-            - name: 'Создание модульного теста, управляемого данными'
+            - name: 'создание модульного теста, управляемого данными'
               href: how-to-create-a-data-driven-unit-test.md
-            - name: Пошаговое руководство. Использование файла конфигурации для определения источника данных
+            - name: Использование файла конфигурации для определения источника данных
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Модульные тесты для универсальных методов
           href: unit-tests-for-generic-methods.md
-        - name: "Настройка модульных тестов для предыдущей версии .NET\_Framework"
+        - name: Настройка модульных тестов для предыдущей версии .NET
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: "Модульные тесты для кода\_C/C++"
       items:
