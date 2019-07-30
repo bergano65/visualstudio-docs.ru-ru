@@ -1,6 +1,6 @@
 ---
 title: Создание файлов с помощью служебной программы TextTransform
-ms.date: 03/22/2018
+ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55ebaaa05670cdea0685b7d337c7f3b3a9733cb0
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: f224419cd92b760d71045859a13887a83115b987
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493091"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606091"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Создание файлов с помощью служебной программы TextTransform
 
@@ -24,21 +24,37 @@ TextTransform.exe является средством командной стр�
 > [!NOTE]
 > Если вы хотите выполнить преобразование текста в процессе сборки, рассмотрите возможность использования задачи преобразования текста MSBuild. Дополнительные сведения см. в разделе [создание кода в процессе построения](../modeling/code-generation-in-a-build-process.md). На компьютере, на котором установлена Visual Studio можно также написать приложение или расширение Visual Studio, которое может выполнять преобразование текстовых шаблонов. Дополнительные сведения см. в разделе [обработки текстовых шаблонов с помощью пользовательского хост-](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- TextTransform.exe находится в следующем каталоге:
+TextTransform.exe находится в следующем каталоге:
+ 
+::: moniker range=">=vs-2019"
 
- **\Program Files (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
+**\Program Files (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
 
-для Professional edition или
+для выпуска Professional Edition или
 
- **\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
+**\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
 
- для выпуска Enterprise edition.
+для выпуска Enterprise Edition.
+
+::: moniker-end
+ 
+::: moniker range="vs-2017"
+
+**\Program файлы (x86) \Microsoft Visual Studio\2017\Professional\Common7\IDE**
+
+для выпуска Professional Edition или
+
+**\Program файлы (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+
+для выпуска Enterprise Edition.
 
 В предыдущих версиях Visual Studio этот файл находится в следующем расположении:
 
 **\Program файлы (x86) \Common Files\Microsoft Shared\TextTemplating\{версии}**
 
 где {версия} зависит от установленной предыдущей версии.
+
+::: moniker-end
 
 ## <a name="syntax"></a>Синтаксис
 
