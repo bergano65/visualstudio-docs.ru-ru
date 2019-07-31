@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Узнайте, как использовать ключи продуктов для поддержки интернет-демонстраций в службах терминалов и включения доступа RDS
-ms.openlocfilehash: 34fa32f22582ccde69cbc54c86a3442ad92a7c96
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 19faa64b7eeaebc1b92ca965f686795b31e00e7e
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377971"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493387"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Интернет-демонстрации в службах терминалов
 Подписка Visual Studio позволяет вам предоставлять конечным пользователям доступ к интернет-демонстрациям программ через службы терминалов (Windows Server 2003 или Windows Server 2008) или службы удаленного рабочего стола (Windows Server 2008 R2 и более поздней версии). Это обеспечивает одновременный доступ к демонстрации до 200 анонимных пользователей. В демонстрации не должны использоваться производственные данные. Подписчики Visual Studio могут демонстрировать свои приложения конечным пользователям. Интернет-демонстрация с использованием служб терминалов или служб удаленного рабочего стола — это единственная возможность конечных пользователей без подписок Visual Studio взаимодействовать с демонстрационным приложением, если программное обеспечение предоставляется по подпискам Visual Studio.
@@ -38,4 +38,3 @@ ms.locfileid: "68377971"
 Если вам нужны рекомендации по развертыванию RDS, ознакомьтесь с серией статей по **развертыванию сеансов службы удаленных рабочих столов (RDS) 2012** на странице https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf. 
 
 Если у вас возникли вопросы, посетите [форум служб удаленных рабочих столов Майкрософт](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
-
