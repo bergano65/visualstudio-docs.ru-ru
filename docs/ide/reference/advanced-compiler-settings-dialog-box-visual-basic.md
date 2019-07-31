@@ -1,23 +1,24 @@
 ---
 title: Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792235"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461467"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Диалоговое окно "Дополнительные параметры компилятора" (Visual Basic)
 
@@ -29,7 +30,7 @@ ms.locfileid: "62792235"
 
 2. В меню **Проект** выберите пункт **Свойства**. После открытия окна **Конструктор проектов** перейдите на вкладку **Компиляция** .
 
-3. На [странице компиляции в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) выберите **Конфигурация** и **Платформа**. В упрощенных конфигурациях сборки списки **Конфигурация** и **Платформа** не отображаются. Дополнительные сведения см. в разделе [Как Настройка конфигураций отладки и выпуска](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. На [странице компиляции в конструкторе проектов (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) выберите **Конфигурация** и **Платформа**. В упрощенных конфигурациях сборки списки **Конфигурация** и **Платформа** не отображаются. Дополнительные сведения см. в разделе [Практическое руководство. Настройка конфигураций отладки и выпуска](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 4. Щелкните **Дополнительные параметры компиляции**.
 
@@ -71,7 +72,7 @@ ms.locfileid: "62792235"
 
  **Настраиваемые константы**
 
- В это текстовое поле вы можете ввести любые настраиваемые константы для своего приложения. Записи нужно разделять запятыми в следующем формате: **Имя1="Значение1",Имя2="Значение2",Имя3="Значение3"**.
+ В это текстовое поле вы можете ввести любые настраиваемые константы для своего приложения. Записи нужно разделять запятыми в следующем формате: **Имя1="Значение1",Имя2="Значение2",Имя3="Значение3"** .
 
 ## <a name="other-settings"></a>Другие параметры
 

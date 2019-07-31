@@ -1,25 +1,27 @@
 ---
 title: Страница публикации в конструкторе проектов
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa33f3adc4fe05bd0df5c24bcb1fa769f93682cc
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968894"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461644"
 ---
 # <a name="publish-page-project-designer"></a>Страница публикации в конструкторе проектов
+
 Страница **Публикация** **конструктора проектов** используется для настройки свойств развертывания ClickOnce.
 
  Чтобы открыть страницу **Опубликовать** , выберите узел проекта в **обозревателе решений**и затем в меню **Проект** щелкните команду **Свойства**. После того как откроется окно **Конструктор проектов** , перейдите на вкладку **Публикация** .
@@ -28,6 +30,7 @@ ms.locfileid: "62968894"
 > Некоторые описанные здесь свойства ClickOnce можно также задать в **мастере публикаций**, доступном в меню **Сборка**, либо нажав кнопку **Мастер публикаций** на этой странице.
 
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
+
  **Расположение папки публикации**
 
  Указывает расположение публикации приложения. Это может быть путь к диску (`C:\deploy\myapplication`), общая папка (`\\server\myapplication`) или FTP-сервер (`ftp://ftp.microsoft.com/myapplication`). Обратите внимание, что для работы кнопки обзора ( **...** ) в поле**Расположение публикации**должен присутствовать текст.
@@ -76,7 +79,7 @@ ms.locfileid: "62968894"
 
  Приложение публикуется с использованием текущих параметров. Этот параметр эквивалентен кнопке **Готово** в **мастере публикаций**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Публикация приложений ClickOnce](../../deployment/publishing-clickonce-applications.md)
 - [Практическое руководство. Публикация приложения ClickOnce с помощью мастера публикации](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

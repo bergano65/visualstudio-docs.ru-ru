@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03d9d48ca098932a09e42116deb3ba7ee14a623
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 63a44407c891464f39693a2d69e5a32d22b6e993
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531654"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605689"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Практическое руководство. Отображение URL-адресов как ссылок в редакторе
 
@@ -45,5 +45,4 @@ ms.locfileid: "65531654"
 
 ## <a name="see-also"></a>См. также
 
-- [Диалоговое окно "Параметры текстового редактора"](../../ide/reference/text-editor-options-dialog-box.md)
 - [Возможности редактора кода](../../ide/writing-code-in-the-code-and-text-editor.md)
