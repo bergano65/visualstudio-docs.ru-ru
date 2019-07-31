@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Узнайте об обязанностях администраторов по управлению подписками для больших рабочих групп, а также сторонних подрядчиков.
-ms.openlocfilehash: 0f304d4858658c4540e38c6fa250e08c127713ae
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 91e507358084bcb878d2a9afc7aad4fe4a2b869c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420575"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493337"
 ---
 # <a name="large-teams-and-external-contractors"></a>Большие рабочие группы и внешние подрядчики
 Администраторы подписок на Visual Studio отвечают за наличие соответствующей подписки на Visual Studio у всех пользователей, которые взаимодействуют с программным обеспечением с лицензией Visual Studio.
@@ -39,5 +39,3 @@ ms.locfileid: "68420575"
 - [Инвентаризация подготовительной среды](admin-inventory.md)
 - [Отслеживание назначений пользователей и обработка заказов](assignments-orders.md)
 - Используйте [Максимальное использование](maximum-usage.md) для учета обязательств по покупке
-
-

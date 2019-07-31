@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Сведения о максимально эффективном использовании подписок Visual Studio
-ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378053"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493356"
 ---
 # <a name="managing-subscriptions"></a>Управление подписками
 
@@ -73,7 +73,6 @@ ms.locfileid: "68378053"
 3. На вкладке **Сведения** можно изменить имя, адрес электронной почты, страну или регион, изображение профиля и контактные предпочтения. На вкладке **Предпочтения** можно выбрать предпочтительный язык, шаблоны даты и времени, часовой пояс и тему пользовательского интерфейса.
 4. Завершив внесение изменений, нажмите кнопку **Сохранить**.
 5. Нажмите в браузере кнопку **Назад**, чтобы вернуться на страницу "Преимущества".
-
 
 ### <a name="setting-communications-preferences"></a>Настройка параметров сообщений
 Если вы хотите получать регулярные новости о вашей подписке и преимуществах, включая ежемесячные информационные бюллетени, касающиеся подписок Visual Studio, [измените настройки](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), установив флажки для подписок Visual Studio в своем профиле Visual Studio. Вы можете изменить эти настройки и отменить подписку в любое время. 
