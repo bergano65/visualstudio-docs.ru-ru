@@ -1,5 +1,5 @@
 ---
-title: NameSearchOptions | Документация Майкрософт
+title: Намесеарчоптионс | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855153"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661808"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
-Указывает параметры поиска для символов и имена файлов.
+Задает параметры поиска для символов и имен файлов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,18 +45,18 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Элементы
 `nsNone` Параметры не указаны.
 
-`nsfCaseSensitive` Применяет совпадения имени, с учетом регистра.
+`nsfCaseSensitive`Применяет совпадение имен с учетом регистра.
 
-`nsfCaseInsensitive` Применяет совпадение имя без учета регистра.
+`nsfCaseInsensitive`Применяет совпадение имен без учета регистра.
 
-`nsfFNameExt` Обрабатывает имена как пути и применяет имяфайла.расширение совпадения имени.
+`nsfFNameExt`Обрабатывает имена как пути и применяет совпадение имен filename. ext.
 
-`nsfRegularExpression` Применяется на совпадение имени с учетом регистра, с помощью звездочки (*) и вопросительные знаки (?) в качестве символов-шаблонов.
+`nsfRegularExpression`Применяет совпадение имен с учетом регистра, используя звездочки (*) и вопросительные знаки (?) в качестве подстановочных знаков. (Другие распространенные символы регулярных выражений не поддерживаются.)
 
-`nsfUndecoratedName` Применяется только к символам, которые внешних и внутренних имен.
+`nsfUndecoratedName`Применяется только к символам, имеющим недекорированные и декорированные имена.
 
 ## <a name="remarks"></a>Примечания
-Значения из этого перечисления передаются следующие методы:
+Значения из этого перечисления передаются следующим методам:
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 
@@ -65,7 +65,7 @@ enum NameSearchOptions {
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
 ## <a name="requirements"></a>Требования
-Заголовок: dia2.h
+Заголовок: dia2. h
 
 ## <a name="see-also"></a>См. также
 - [Перечисления и структуры](../../debugger/debug-interface-access/enumerations-and-structures.md)
