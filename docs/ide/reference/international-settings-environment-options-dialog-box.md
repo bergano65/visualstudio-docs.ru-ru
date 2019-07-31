@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e65894fffd9c6786c19a337fc386f45fb9d203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 146aef659290df4302cc3bbb3d24a5bf6f1f01c8
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540671"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605645"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>Диалоговое окно "Параметры": Страница "Выбор языка" \> папка "Среда"
 
@@ -38,4 +38,3 @@ ms.locfileid: "62540671"
 ### <a name="see-also"></a>См. также
 
 - [Установка языковых пакетов](../../install/install-visual-studio.md#step-6---install-language-packs-optional)
-- [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)

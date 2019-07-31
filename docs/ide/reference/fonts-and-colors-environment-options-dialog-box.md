@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b05d6651f865a300a0c065c5e0a275cb29fd309
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790212"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605416"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Страница "Шрифты и цвета", папка "Среда", диалоговое окно "Параметры"
 
@@ -99,7 +99,7 @@ ms.locfileid: "62790212"
 
 К отображаемым элементам относятся следующие:
 
-|Отображаемый элемент|Описание|
+|Отображаемый элемент|ОПИСАНИЕ|
 |------------------|-----------------|
 |**Обычный текст**|Текст в редакторе.|
 |**Выделенный текст**|Текст, который включается в текущее выделение, когда редактор имеет фокус.|
@@ -253,6 +253,5 @@ ms.locfileid: "62790212"
 
 ## <a name="see-also"></a>См. также
 
-- [Диалоговое окно "Параметры среды"](../../ide/reference/environment-options-dialog-box.md)
 - [Диалоговое окно "Параметры"](../../ide/reference/options-dialog-box-visual-studio.md)
 - [Практическое руководство. изменение шрифтов и цветов](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

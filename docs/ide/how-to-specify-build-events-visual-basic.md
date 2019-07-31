@@ -1,6 +1,7 @@
 ---
-title: Как выполнить Указание событий сборки (Visual Basic)
+title: Практическое руководство. Указание событий сборки (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -9,19 +10,19 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c516b6fc412d393d0528536afe0bb69629c87c44
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549337"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461508"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Как выполнить Указание событий сборки (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Практическое руководство. Указание событий сборки (Visual Basic)
 
 События сборки в Visual Basic можно использовать для выполнения скриптов, макросов или других действий в составе процесса компиляции. События перед сборкой происходят до компиляции; события после сборки происходят после компиляции.
 

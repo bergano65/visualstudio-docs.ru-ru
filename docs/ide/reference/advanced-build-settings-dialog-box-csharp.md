@@ -1,23 +1,24 @@
 ---
 title: Диалоговое окно "Дополнительные параметры компилятора" (C#)
 ms.date: 06/20/2017
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 908f79b40b17eba5c0e3f518e6d7f2f3ae58e9c7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745011"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461884"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Диалоговое окно "Дополнительные параметры компилятора" (C#)
 
@@ -93,7 +94,7 @@ ms.locfileid: "66745011"
 
 Указывает предпочтительный базовый адрес для загрузки DLL. Базовый адрес по умолчанию для библиотеки DLL задается в среде CLR платформы .NET Framework. Дополнительные сведения см. в разделе [/baseaddress (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Параметры компилятора C# ](/dotnet/csharp/language-reference/compiler-options/index)
 - [Страница "Сборка" в конструкторе проектов (C#)](../../ide/reference/build-page-project-designer-csharp.md)
