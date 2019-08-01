@@ -62,9 +62,7 @@
 #### [Предварительная инвентаризация](admin-inventory.md)
 #### [Управление большими рабочими группами и сторонними подрядчиками](manage-teams.md)
 #### [Отслеживание назначений пользователей и обработка заказов](assignments-orders.md)
-### [Корпоративное лицензирование](volume-license-admins.md)
 ### Подключение организации
-#### [Подключение после миграции](post-migration-onboarding.md)
 #### [Переход на Open и Open License](open-migration.md)
 #### [MPSA](mpsa.md)
 #### [Облачные подписки](cloud-admin.md)
