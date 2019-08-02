@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 08/02/2019
 ms.locfileid: "65705858"
 ---
 # <a name="convert-dialog-box"></a>Диалоговое окно "Преобразование"
@@ -39,6 +39,6 @@ ms.locfileid: "65705858"
   
 2. Выберите средство, которое подходит для вашего приложения.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [(NOTINBUILD) Практическое руководство. Обновление проекта Visual Basic 6.0](https://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
  [Перенос, миграция и обновление проектов Visual Studio](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
