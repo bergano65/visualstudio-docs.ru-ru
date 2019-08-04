@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 13029e05e4f29e532918562afd2fee520b387464
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7ac637c478b5bb105b48abeb1d0ec074122e3dda
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821628"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739688"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "67821628"
   Можно написать код в интегрированной среде разработки Visual Studio, но запускать сборку с помощью MSBuild. В качестве альтернативы можно выполнять сборку кода в интегрированной среде разработки на компьютере разработчика, но использовать командную строку MSBuild для сборки и интеграции кода, полученного от нескольких разработчиков.  
   
 > [!NOTE]
-> С помощью Team Foundation Build можно автоматически компилировать, тестировать и развертывать приложение. Система сборки может автоматически запускать сборку, когда разработчики возвращают код (например, как часть стратегии непрерывной интеграции) или по расписанию (например, выполнять ежедневную ночную тестовую сборку). Team Foundation Build компилирует код с использованием MSBuild. Дополнительные сведения см. в разделе [Сборка приложения](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+> С помощью Team Foundation Build можно автоматически компилировать, тестировать и развертывать приложение. Система сборки может автоматически запускать сборку, когда разработчики возвращают код (например, как часть стратегии непрерывной интеграции) или по расписанию (например, выполнять ежедневную ночную тестовую сборку). Team Foundation Build компилирует код с использованием MSBuild. Дополнительные сведения см. в разделе [Сборка приложения](/azure/devops/pipelines/index).  
   
  В этом разделе представлен обзор MSBuild. Вводную информацию см. в статье [Пошаговое руководство. в Visual Studio](../msbuild/walkthrough-using-msbuild.md).  
   

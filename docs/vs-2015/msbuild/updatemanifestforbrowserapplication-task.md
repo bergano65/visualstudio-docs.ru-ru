@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0a6dff6c9e10312241f1d95128febbd5dabb6c5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6dffa98a8abbf74bd6eee8761d91f09a7c022666
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696950"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740222"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>Задача UpdateManifestForBrowserApplication
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "65696950"
   
 ## <a name="task-parameters"></a>Параметры задачи  
   
-|Параметр|Описание|  
+|Параметр|ОПИСАНИЕ|  
 |---------------|-----------------|  
-|`ApplicationManifest`|Обязательный параметр **ITaskItem[]**.<br /><br /> Задает путь и имя файла манифеста приложения, в который необходимо добавить элемент `<hostInBrowser />`.|  
-|`HostInBrowser`|Обязательный параметр **Boolean**.<br /><br /> Указывает, следует ли изменить манифест приложения для включения элемента **\<hostInBrowser />**. Если задано значение **true**, новый элемент `<`**hostInBrowser />** включается в элемент **\<entryPoint />**. Обратите внимание, что включение элемента является накопительным: если элемент **\<hostInBrowser />** уже существует, он не удаляется и не перезаписывается. Вместо этого создается дополнительный элемент **\<hostInBrowser />**. Если указано значение **false**, манифест приложения не изменяется.|  
+|`ApplicationManifest`|Обязательный параметр **ITaskItem[]** .<br /><br /> Задает путь и имя файла манифеста приложения, в который необходимо добавить элемент `<hostInBrowser />`.|  
+|`HostInBrowser`|Обязательный параметр **Boolean**.<br /><br /> Указывает, следует ли изменить манифест приложения для включения элемента **\<hostInBrowser />** . Если задано значение **true**, новый элемент `<`**hostInBrowser />** включается в элемент **\<entryPoint />** . Обратите внимание, что включение элемента является накопительным: если элемент **\<hostInBrowser />** уже существует, он не удаляется и не перезаписывается. Вместо этого создается дополнительный элемент **\<hostInBrowser />** . Если указано значение **false**, манифест приложения не изменяется.|  
   
 ## <a name="remarks"></a>Примечания  
- [!INCLUDE[TLA2#tla_xbap#plural](../includes/tla2sharptla-xbapsharpplural-md.md)] запускаются с помощью развертывания [!INCLUDE[TLA#tla_clickonce](../includes/tlasharptla-clickonce-md.md)] и, следовательно, должны публиковаться с поддерживающими манифестами развертывания и приложения. [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] создает манифест приложения с помощью задачи [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx).  
+ [!INCLUDE[TLA2#tla_xbap#plural](../includes/tla2sharptla-xbapsharpplural-md.md)] запускаются с помощью развертывания [!INCLUDE[TLA#tla_clickonce](../includes/tlasharptla-clickonce-md.md)] и, следовательно, должны публиковаться с поддерживающими манифестами развертывания и приложения. [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] создает манифест приложения с помощью задачи [GenerateApplicationManifest](/dotnet/api/microsoft.build.tasks.generateapplicationmanifest).  
   
- Затем, чтобы настроить приложение для размещения из браузера, необходимо добавить в манифест приложения дополнительный элемент **\<hostInBrowser />**, как показано в следующем примере.  
+ Затем, чтобы настроить приложение для размещения из браузера, необходимо добавить в манифест приложения дополнительный элемент **\<hostInBrowser />** , как показано в следующем примере.  
   
 ```  
 <!--MyXBAPApplication.exe.manifest-->  
@@ -75,7 +75,7 @@ ms.locfileid: "65696950"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о WPF для MSBuild](../msbuild/wpf-msbuild-reference.md)   
  [Справочные сведения о задачах](../msbuild/wpf-msbuild-task-reference.md)   
  [Справочные сведения о MSBuild](../msbuild/msbuild-reference.md)   

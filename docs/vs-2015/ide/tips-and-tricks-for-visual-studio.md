@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5358c7e001a993c637cc4ac2dc267a668a7d6e13
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430319"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740129"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Советы и рекомендации по работе в Visual Studio
 
@@ -132,7 +132,7 @@ ms.locfileid: "62430319"
 |Задать следующий оператор|Ctrl+Shift+F10|
 |Задать и переключить состояние точки останова|F9|
 |Отключить точку останова|Ctrl+F9|
-|окно интерпретации|Ctrl+Alt+I|
+|Окно интерпретации|Ctrl+Alt+I|
 |Режим команд окна интерпретации|Ввести ">"|
 |Очистить буфер окна интерпретации|>cls|
 |Значение печати окна интерпретации|?varname|
@@ -141,9 +141,8 @@ ms.locfileid: "62430319"
 
 См. статью [Keyboard shortcuts: Visual Studio Online, TFS web portal, and Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts) (Сочетания клавиш: Visual Studio Online, веб-портал TFS и Team Explorer).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Блог о Visual Studio](http://blogs.msdn.com/b/visualstudio)
 - [Блог с советами и рекомендации по Visual Studio](http://blogs.msdn.com/b/zainnab)
 - [Видео о панели инструментов Visual Studio на канале Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
