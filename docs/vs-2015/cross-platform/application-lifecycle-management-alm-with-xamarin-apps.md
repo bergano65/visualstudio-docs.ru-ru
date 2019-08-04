@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 258b9fcb8b36be1d179d9f907ef2da16ff1c3037
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c72d37e34afe65378a1ddebe1c5b9be560b4d173
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696253"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740184"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Управление жизненным циклом приложений (ALM) для приложений Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "65696253"
  В таблицах ниже указано, какие возможности Visual Studio ALM будут эффективно работать в проекте Xamarin, а какие имеют ограничения. Дополнительные сведения о самих функциях см. в документации по ссылкам.  
   
 ## <a name="agile-tools"></a>Средства Agile  
- Ссылка для справки: **[Рабочие](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (с помощью Visual Studio Team Services или TFS, включая Team Explorer Everywhere)  
+ Ссылка для справки: **[Работа](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (с помощью Visual Studio Team Services или TFS, включая Team Explorer Everywhere)  
   
  Общий комментарий: все возможности планирования и отслеживания не зависят от типа проекта и языков программирования.  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |Управление невыполненной работой и спринтами|Да||  
 |Отслеживание трудозатрат|Да||  
@@ -42,11 +42,11 @@ ms.locfileid: "65696253"
 |Визуализация хода выполнения и отчеты о ходе выполнения|Да||  
   
 ## <a name="modeling"></a>Моделирование  
- Ссылка для справки: **[Анализ и моделирование архитектуры](../modeling/analyze-and-model-your-architecture.md)**  
+ Ссылка для справки: **[Архитектура анализа и моделирования](../modeling/analyze-and-model-your-architecture.md)**  
   
  Функции разработки не зависят от языка программирования или работы с языками .NET, такими как C#. Аспекты, связанные с кодом, описаны в статье [Роли архитектуры и схем моделирования в разработке программного обеспечения](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools).  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |Схемы последовательностей|Да||  
 |Графы зависимости|Да||  
@@ -59,7 +59,7 @@ ms.locfileid: "65696253"
   
 ## <a name="code"></a>Код  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |[Используйте управление версиями в Team Foundation](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) или Visual Studio Team Services|Да||  
 |[Приступая к работе с Git в Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Да||  
@@ -68,9 +68,9 @@ ms.locfileid: "65696253"
 |[Использование карт кода для отладки приложений](../modeling/use-code-maps-to-debug-your-applications.md)|Да||  
   
 ## <a name="build"></a>Построить  
- Ссылка для справки: **[Сборки](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Ссылка для справки: **[Строит](/azure/devops/pipelines/index)**  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |Локальный сервер TFS|Да|На компьютерах для сборки должна быть установлена платформа Xamarin; кроме того, они могут быть связаны с компьютером OSX для сборки приложений для iOS. См. раздел [Настройка TFS для Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (веб-сайт Xamarin)|  
 |Локальный сервер сборки, связанный с Visual Studio Team Services|Да|Инструкции см. в разделе [Сервер сборки](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
@@ -81,7 +81,7 @@ ms.locfileid: "65696253"
 ## <a name="testing"></a>Тестирование  
  Ссылка для справки: **[Тестирование приложения](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |Планирование тестов, создание тестовых случаев и организация наборов тестов|Да||  
 |Тестирование вручную|Да||  
@@ -93,7 +93,7 @@ ms.locfileid: "65696253"
 ## <a name="improve-code-quality"></a>Улучшите качество кода  
  Ссылка для справки: **[Улучшение качества кода](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |[Анализ качества управляемого кода](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Да||  
 |[Поиск повторяющегося кода с помощью обнаружения клонов кода](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Да||  
@@ -102,9 +102,9 @@ ms.locfileid: "65696253"
 |[Анализ проблем с памятью .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Нет|Инструменты Visual Studio не имеют обработчиков в платформе Mono для профилирования.|  
   
 ## <a name="release-management"></a>Управление выпуском  
- Ссылка для справки: **[Автоматизирование развертываний с помощью Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+ Ссылка для справки: **[Автоматизация развертываний с помощью Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |Управление процессами выпуска|Да||  
 |Развертывание на серверах для загрузки неопубликованных приложений через сценарии|Да||  
@@ -113,6 +113,6 @@ ms.locfileid: "65696253"
 ## <a name="monitor-with-hockeyapp"></a>Мониторинг с HockeyApp  
  Ссылка для справки: **[Мониторинг с HockeyApp](https://www.hockeyapp.net/features/)**  
   
-|Функция|Поддерживается в Xamarin|Дополнительные комментарии|  
+|Компонент|Поддерживается в Xamarin|Дополнительные комментарии|  
 |-------------|----------------------------|-------------------------|  
 |Анализ сбоев, телеметрия и бета-распределение|Да||
