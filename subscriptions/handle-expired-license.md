@@ -1,26 +1,29 @@
 ---
 title: Работа с подписками с истекшим сроком действия | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
 description: Сведения о том, как администраторы могут обрабатывать подписки Visual Studio с истекшим сроком действия
-ms.openlocfilehash: 0b47c18ffc826a755aeafbfc2621aef890afaf37
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: b4abf236842d9970234bdb5085722a27aae2e4a4
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250391"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605549"
 ---
-# <a name="handling-expired-subscriptions"></a>Работа с подписками с истекшим сроком действия
-
+# <a name="expired-subscriptions"></a>Подписки с истекшим сроком действия
 Когда срок действия подписки пользователя истекает, рядом с его именем на портале в списке подписок появляется красная полоска. Чтобы такой пользователь мог продолжать пользоваться преимуществами подписки Visual Studio, необходимо продлить его лицензию.
 > [!div class="mx-imgBorder"]
 > ![Список подписок с истекшим сроком действия](_img/expired-subscriptions/expired-list.png)
 
-**Для продления подписок**
+## <a name="renew-subscriptions"></a>Продление подписок
 1. Обратитесь к торговому посреднику по программе корпоративного лицензирования или продавцу продуктов Майкрософт.
-2. Сообщите ему номер соглашения и номер счета покупки.
+2. Сообщите ему номер соглашения и номер счета покупки. 
 
 Торговый посредник или продавец продуктов Майкрософт предоставит вам инструкции по продлению или приобретению дополнительных подписок. После размещения заказа или продления контракта новые подписки станут доступны и их можно будет [назначить пользователям](assign-license.md).
+
+## <a name="next-steps"></a>Следующие шаги
+- Чтобы получить справку по использованию портала администрирования, обратитесь в [службу поддержки администрирования и подписок Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- Найти [поставщика решений Майкрософт](https://www.microsoft.com/solution-providers/home)

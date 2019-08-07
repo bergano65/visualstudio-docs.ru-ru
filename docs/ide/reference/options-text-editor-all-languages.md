@@ -42,14 +42,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e15357220c9a9d74d4b08fdd97d4f808ff770b9a
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817862"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606061"
 ---
-# <a name="options-text-editor-all-languages"></a>Параметры, текстовый редактор, все языки
+# <a name="options-dialog-box-text-editor--all-languages"></a>Диалоговое окно "Параметры": Текстовый редактор \> "Все языки"
 
 Это диалоговое окно позволяет изменять стандартное поведение редактора кода. Эти параметры также применяются к другим редакторам, основанным на редакторе кода, таким как представление исходного кода в конструкторе HTML. Чтобы открыть это диалоговое окно, выберите в меню **Сервис** пункт **Параметры**. В папке **Текстовый редактор** разверните подпапку **Все языки**, а затем выберите **Общие**.
 
@@ -124,7 +124,7 @@ ms.locfileid: "62817862"
 > [!TIP]
 > Чтобы отображались индикаторы для пробелов, знаков табуляции и символов конца строки, что позволяет отличать строки, обозначенные отступом, от полностью пустых строк, выберите **Дополнительно** в меню **Правка** и задайте **Показать пустое пространство**.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - ["Параметры", "Текстовый редактор", "Все языки", "Вкладки"](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Страница "Общие", папка "Среда", диалоговое окно "Параметры"](../../ide/reference/general-environment-options-dialog-box.md)

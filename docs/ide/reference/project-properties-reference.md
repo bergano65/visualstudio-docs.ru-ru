@@ -11,19 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d998eee1965b9b28c1b8fde26c9232770d69f751
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e6a21278670a477bdd30e28a6f0cc4cac04757
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969232"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461368"
 ---
 # <a name="project-properties-reference"></a>Справочник по свойствам проектов
+
 Вы можете ознакомиться с дополнительными сведениями о способах настройки и изменения свойств проекта.
 
 ## <a name="project-properties-pages"></a>Страницы свойств проекта
 
-| Заголовок | Описание |
+| Заголовок | ОПИСАНИЕ |
 | - | - |
 | [Страница "Приложение" в конструкторе проектов (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Эта страница используется для указания параметров и свойств приложения для проекта [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
 | [Страница "Приложение" в конструкторе проектов (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Эта страница используется для указания параметров и свойств приложения для проекта [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |
@@ -37,6 +38,6 @@ ms.locfileid: "62969232"
 | [Страница "Безопасность" в конструкторе проектов](../../ide/reference/security-page-project-designer.md) | Эта страница позволяет настроить параметры управления доступом для кода для приложений, развертываемых с помощью развертывания [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. |
 | [Страница "Подписывание" в конструкторе проектов](../../ide/reference/signing-page-project-designer.md) | Эта страница позволяет подписывать манифесты приложения и развертывания, а также подписывать сборки. |
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Решения и проекты](../../ide/solutions-and-projects-in-visual-studio.md)

@@ -1,28 +1,28 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", JavaScript, \"Проект\""
 ms.date: 1/15/2019
-ms.technology: vs-ide-general
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ed64d6bffaa4453c3294229ee48fd0a065eb74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778177"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605928"
 ---
 # <a name="options-text-editor-javascript-project"></a>"Параметры", "Текстовый редактор", JavaScript, "Проект"
 
-В диалоговом окне **Параметры** перейдите на страницу **Проект**, чтобы определить параметры проекта JavaScript в редакторе кода. Чтобы открыть эту страницу, выберите в строке меню **Инструменты** > **Параметры** и перейдите к разделу **Текстовый редактор** > **JavaScript** > **Проект**.
+В диалоговом окне **Параметры** перейдите на страницу **Проект**, чтобы определить параметры проекта JavaScript и TypeScript в редакторе кода. Чтобы открыть эту страницу, выберите в строке меню **Сервис** > **Параметры**, затем разверните **Текстовый редактор** > **JavaScript/TypeScript** > **Проект**.
 
 ## <a name="project-analysis-options"></a>Параметры анализа проекта
 
@@ -60,7 +60,7 @@ ms.locfileid: "62778177"
 
 ### <a name="uielement-list"></a>Список элементов пользовательского интерфейса
 
-|Параметр|Описание|
+|Параметр|ОПИСАНИЕ|
 |------------|-----------------|
 |**Платформа React**|Если выбран этот параметр, текстовый редактор добавляет файлу расширение *.js*.|
 |**Preserve**|Если выбран этот параметр, текстовый редактор сохраняет JSX как часть выходных данных и добавляет файлу расширение *.jsx*.|

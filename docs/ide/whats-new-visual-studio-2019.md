@@ -2,7 +2,7 @@
 title: Новые возможности Visual Studio 2019
 titleSuffix: ''
 description: Сведения о новых возможностях Visual Studio 2019.
-ms.date: 06/29/2019
+ms.date: 07/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552868"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493332"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
-**Обновлено для [выпуска 16.1](/visualstudio/releases/2019/release-notes/)**
+**Обновлено для [выпуска 16.2](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Скачивание Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -102,6 +102,12 @@ ms.locfileid: "67552868"
 
 Дополнительные сведения см. в записи блога [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Улучшенная работа с несколькими мониторами в Visual Studio 2019).
 
+### <a name="test-explorer"></a>Обозреватель тестов
+
+**Новые возможности в 16.2**: Мы обновили обозреватель тестов и улучшили работу с крупными наборами тестирования, упростили фильтрацию, упростили обнаружение команд, добавили представления списка воспроизведения со вкладками и настраиваемые столбцы, с помощью которых можно настраивать отображение информации о тестах.
+
+   ![Снимок экрана, показывающий улучшения пользовательского интерфейса в обозревателе тестов](media/vs-2019/test-explorer-ui.png)
+
 ## <a name="collaborate"></a>Совместная работа
 
 Посмотрите видео ниже, чтобы узнать, как решать проблемы совместно с другими специалистами. <br><br>*Длительность видео: 4:22 мин.*
@@ -178,6 +184,12 @@ ms.locfileid: "67552868"
 
 Дополнительные сведения см. в статье [Отладка интерактивных приложений ASP.NET Azure с использованием Snapshot Debugger](../debugger/debug-live-azure-applications.md) и записи блога [Introducing Time Travel Debugging for Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) (Представление отладки перехода по времени для Visual Studio Enterprise 2019).
 
+### <a name="microsoft-edge-insider-support"></a>Поддержка Microsoft Edge Insider
+
+**Новые возможности в 16.2**: Вы можете задать точку останова в приложении JavaScript и начать сеанс отладки с помощью браузера [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/). При этом в Visual Studio откроется новое окно браузера с включенной отладкой, с помощью которого можно пошагово выполнять приложения JavaScript в Visual Studio.
+
+   ![Снимок экрана, показывающий отрисовку кода JavaScript в браузере](media/vs-2019/edge-chromium-breakpoint.png)
+
 ## <a name="whats-next"></a>Дальнейшие действия
 
 Мы часто добавляем в Visual Studio 2019 новые функции, облегчающие разработку. Узнать подробнее о последних новшествах можно из [блога о Visual Studio](https://devblogs.microsoft.com/visualstudio/). Ретроспективный список нововведений, появившихся в предварительных версиях, можно посмотреть в разделе [Заметки о предварительных выпусках](/visualstudio/releases/2019/release-notes-preview/).
@@ -194,9 +206,8 @@ ms.locfileid: "67552868"
 
 ## <a name="see-also"></a>См. также
 
-* [Объявление о выходе Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Заметки о выпуске Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Новые возможности пакета SDK для Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Объявление о выходе Visual Studio 2019 для Mac](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Заметки о выпуске Visual Studio 2019 для Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Конференция Microsoft Build 2019](https://www.microsoft.com/build)
 * [Конференция Microsoft Connect(); 2018](https://www.microsoft.com/connectevent)

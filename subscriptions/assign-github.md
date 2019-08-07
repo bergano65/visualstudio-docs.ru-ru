@@ -1,26 +1,24 @@
 ---
-title: Пакет Visual Studio с GitHub | Документация Майкрософт
+title: Пакет Visual Studio с GitHub Enterprise | Документация Майкрософт
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/23/2019
+ms.date: 07/28/2019
 ms.topic: conceptual
-description: Управление подписками в пакете Visual Studio с GitHub
-ms.openlocfilehash: 875f91f19aee33d290933e6a5455a4dead78d6f0
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Управление подписками в пакете Visual Studio с GitHub Enterprise
+ms.openlocfilehash: 0f297eac1d6b2bc5fe322be305fab7f268f3d041
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783639"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605399"
 ---
-# <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>Управление подписками Visual Studio с GitHub Enterprise
-
+# <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Управление подписками Visual Studio с GitHub Enterprise
 Клиенты, заключившие с корпорацией Майкрософт соглашения Enterprise (EA), имеют право приобрести новый пакет, в котором объединены стандартные подписки Visual Studio и подписки GitHub Enterprise. Таким образом, подписчики Visual Studio смогут снизить затраты на приобретение GitHub Enterprise. 
 
 Управление подписками Visual Studio с GitHub Enterprise, которые приобретает ваша организация, осуществляется в два этапа.
 
-## <a name="managing-visual-studio-subscriptions"></a>Управление подписками Visual Studio
-
+## <a name="manage-visual-studio-subscriptions"></a>Управление подписками Visual Studio
 Если ваша организация приобрела подписки Visual Studio с GitHub Enterprise, относящаяся к Visual Studio часть подписки предоставляется незамедлительно, а подписки становятся доступны для назначения и управления на [портале администрирования подписок](https://manage.visualstudio.com) Visual Studio. 
 
 Дополнительные сведения об управлении подписками см. в следующих разделах:
@@ -35,8 +33,7 @@ ms.locfileid: "67783639"
 >
 > В целях соблюдения требований лицензионных соглашений в отношении подписки клиент отвечает за проверку того, что для каждой назначенной таким образом подписки GitHub присутствует соответствующая подписка Visual Studio с GitHub, назначенная на портале управления.
 
-## <a name="managing-github-enterprise-subscriptions"></a>Управление подписками GitHub Enterprise
-
+## <a name="manage-github-enterprise-subscriptions"></a>Управление подписками GitHub Enterprise
 При приобретении подписок GitHub Enterprise клиенты получают со стороны GitHub помощь в создании и настройке организаций, которые будут получать доступ к GitHub, а также в определении администраторов.  Пользователи, назначенные в качестве администраторов, получат соответствующие уведомления.  
 
 Из-за более высокой сложности процесса полная настройка организаций и администраторов может занимать несколько дней с момента приобретения подписок.
@@ -44,7 +41,6 @@ ms.locfileid: "67783639"
 Доступ к GitHub реализуется посредством облака через веб-сайт GitHub.com или с помощью локального сервера GitHub Enterprise Server.  Процессы управления для этих двух версий различаются.  GitHub предлагает множество разделов справки и руководств для администраторов, посвященных управлению подписками GitHub Enterprise.  Ссылки на некоторые из этих ресурсов приводятся ниже.  
 
 ### <a name="githubcom"></a>GitHub.com 
-
 Подробные сведения об управлении на веб-сайте GitHub.com см. в следующих разделах [справки GitHub](https://help.github.com/en).
 - [Полный список разделов справки](https://help.github.com/en)
 - [Управление членством в вашей организации](https://help.github.com/en/articles/managing-membership-in-your-organization)
@@ -56,7 +52,6 @@ ms.locfileid: "67783639"
 - [Управление доступом к репозиториям вашей организации](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
 
 ### <a name="github-enterprise-server"></a>GitHub Enterprise Server
-
 В справке по GitHub представлено множество руководств для администраторов, содержащих ответы на вопросы и рекомендации, которые связаны с управлением сервером GitHub Enterprise Server, внедренным в вашей организации.
 
 - [Посмотреть все руководства для администраторов](https://help.github.com/en/enterprise/2.16/admin)
@@ -70,7 +65,6 @@ ms.locfileid: "67783639"
 - [Установка и настройка GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>Ресурсы поддержки
-
 - В [справке по GitHub](https://help.github.com/en) вы можете найти ответы на самые разные вопросы, связанные с GitHub.
 - Кроме того, вы можете воспользоваться помощью других пользователей GitHub, посетив [форум сообщества GitHub](https://github.community/).
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
@@ -78,5 +72,4 @@ ms.locfileid: "67783639"
 - Обратитесь в [службу технической поддержки](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) для GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Следующие шаги
-
 Дополнительные сведения об управлении подписками Visual Studio с GitHub Enterprise см. также на [портале администрирования подписок](https://visualstudio.microsoft.com/subscriptions-administration/) Visual Studio.

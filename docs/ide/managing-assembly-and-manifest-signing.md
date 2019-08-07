@@ -1,6 +1,7 @@
 ---
 title: Управление подписыванием сборок и манифестов
 ms.date: 02/17/2017
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -8,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538245"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461501"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Управление подписыванием сборок и манифестов
 
@@ -37,13 +38,13 @@ ms.locfileid: "62538245"
 
 Подписывать можно манифесты приложений и сборки .NET.
 
-- исполняемые файлы (*.exe*);
+- исполняемые файлы ( *.exe*);
 
-- манифесты приложений (*.exe.manifest*);
+- манифесты приложений ( *.exe.manifest*);
 
-- манифесты развертывания (*.application*);
+- манифесты развертывания ( *.application*);
 
-- сборки общих компонентов (*.dll*).
+- сборки общих компонентов ( *.dll*).
 
 Подпишите следующие типы активов:
 

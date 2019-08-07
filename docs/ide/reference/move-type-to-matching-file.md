@@ -1,5 +1,6 @@
 ---
 title: Рефакторинг для перемещения типа в соответствующий файл
+description: Переместите тип в отдельный файл с таким же именем. Щелкните тип правой кнопкой мыши, выберите "Быстрые действия и рефакторинг" и щелкните "Переместить тип в <TypeName>.cs".
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e3b12f6a19ea64e43f7a5e00e3c795cc7358e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3021e08d3cfb601a67f51e53c97d2eba60c397a5
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540759"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483656"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Рефакторинг для перемещения типа в соответствующий файл
 
@@ -45,7 +46,7 @@ ms.locfileid: "62540759"
 
 2. Затем выполните одно из следующих действий:
 
-   - Нажмите клавиши **CTRL**+**.**
+   - Нажмите клавиши **CTRL**+ **.**
    - Щелкните правой кнопкой мыши имя типа и выберите **Quick Actions and Refactorings** (Быстрые действия и рефакторинг).
 
 1. Выберите в меню **перемещение типа в *имя_типа*.cs**, где *имя_типа* — имя выбранного типа.

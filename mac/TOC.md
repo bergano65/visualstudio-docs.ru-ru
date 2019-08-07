@@ -104,3 +104,11 @@
 
 # [Заметки о выпуске](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [Предварительные заметки о выпуске](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
+# Примеры
+## [Подборка примеров](samples.yml)
+## [Все примеры ASP.NET Core](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
+## [Все примеры .NET Core](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
+## [Все примеры Xamarin.Forms](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)
+## [Все образцы Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/samples/)
+## [Все примеры Xamarin.Android](https://docs.microsoft.com/xamarin/android/samples/)
+## [Все образцы Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/samples/)

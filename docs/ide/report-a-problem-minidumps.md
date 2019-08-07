@@ -14,16 +14,16 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: eefcbefa8b728afa677e7bd04fd538633ae117f0
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 7d0580e04968a01dc8e447a9ee35f2b1c5934ccf
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518180"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461661"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Создание минидампов со всеми стеками вызовов для процесса Visual Studio
 
-В некоторых случаях специалисты Майкрософт могут запросить минидамп запущенного процесса Visual Studio со сведениями обо всех стеках вызовов. Чтобы собрать эти сведения, выполните описанные ниже действия.
+В некоторых случаях специалисты Майкрософт могут запросить минидамп запущенного процесса Visual Studio со сведениями обо всех стеках вызовов. Чтобы собрать эти сведения, выполните описанные ниже действия.
 
 ## <a name="create-the-minidump-file"></a>Создание файла минидампа
 
@@ -40,7 +40,6 @@ ms.locfileid: "67518180"
 ## <a name="get-the-call-stacks-from-the-minidump"></a>Получение стека вызовов из минидампа
 
 1. Откройте файл дампа в Visual Studio.
-
 1. Выберите **Средства** > **Параметры** > **Отладка** > **Символы** и установите флажок **Серверы символов (Майкрософт)** в разделе **Расположение файлов символов (PDB)** .
 1. Откройте окно **Команда** (**Вид** > **Другие окна** > **Окно команд**).
 1. Введите "~*k". В окне отобразятся все стеки вызовов потоков.
