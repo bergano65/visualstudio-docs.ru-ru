@@ -1,17 +1,17 @@
 ---
 title: Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: Сведения о предлагаемых подписках, применяемых правилах и количестве подписок, предлагаемых в MPN.
-ms.openlocfilehash: 133b9561b6276329e17104b17f0687172b94a574
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: e7cbb8e7d3fd28c9537ddcab84d5c38869c283e0
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250675"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605769"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)
 Партнеры, получившие компетенцию или купившие Action Pack в MPN, имеют право на использование подписок Visual Studio. Эти подписки выдаются каждому пользователю отдельно и действуют только при назначении конкретному пользователю, который работает в партнерской организации.
@@ -20,13 +20,11 @@ ms.locfileid: "68250675"
 Когда партнер получает компетенцию уровня Gold или Silver, он зарабатывает базовое число подписок Visual Studio Enterprise. Это базовое преимущество меняется, когда партнер получает хотя бы одну компетенцию уровня Gold. Подписка на Visual Studio Enterprise — это индивидуальное предложение, которое примерно соответствует [подписке на Visual Studio Enterprise цен. категории "Стандартный"](https://visualstudio.microsoft.com/vs/pricing/), но без некоторых преимуществ (многие из которых предлагаются партнерам отдельно как общие преимущества MPN, а не в рамках подписки на Visual Studio Enterprise, предлагаемой через MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Базовое преимущество Visual Studio за получение одной компетенции любого уровня
-
 | Компетенции, полученные только на уровне Silver               | По крайней мере одна компетенция, полученная на уровне Gold   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 подписок на Visual Studio Enterprise                   | 10 подписок на Visual Studio Enterprise          |
 
 ### <a name="additional-visual-studio-benefit-for-select-competencies"></a>Дополнительное преимущество Visual Studio для некоторых компетенций
-
 | Компетенция                                  | Дополнительные подписки, полученные за компетенцию уровня **Silver** | Дополнительные подписки, полученные за компетенцию уровня **Gold** |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | Разработка приложений                     | 5 подписок на Visual Studio Enterprise                  | 25 подписок на Visual Studio Enterprise               |
@@ -38,7 +36,6 @@ ms.locfileid: "68250675"
 Независимо от количества полученных компетенций, число подписок Visual Studio ограничено:
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Ограничения для подписок Visual Studio, полученных за компетенции
-
 | Максимальное преимущество для партнеров с компетенциями только уровня Silver                   | Максимальное преимущество для партнеров хотя бы с одной компетенцией уровня Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 подписок на Visual Studio Enterprise в стране; 75 во всем мире          | 50 подписок на Visual Studio Enterprise в стране; 150 во всем мире         |
@@ -65,7 +62,9 @@ ms.locfileid: "68250675"
 Для разблокировки продукта не предоставляются ключи. Для запуска Visual Studio необходимо выполнить вход. Подписчик Visual Studio может работать автономно в течение 30 дней, затем Visual Studio прекратит работу. При работе в сети Visual Studio время от времени автоматически обновляет состояние лицензии пользователя, чтобы проверить срок действия подписки.
 
 ## <a name="resources"></a>Ресурсы
-
 - [Руководство администратора программы MPN](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) — содержит инструкции о том, как назначать подписки Visual Studio сотрудникам MPN.
 - [Назначение подписок Visual Studio сотрудникам MPN](manage-mpn-subscriptions.md)
 - [Условия использования](http://www.microsoft.com/useterms/) — на подписки Visual Studio, предоставляемые через MPN, распространяются условия лицензии для подписок Visual Studio, не предназначенных для перепродажи.
+
+## <a name="next-steps"></a>Следующие шаги
+Узнайте, как [управлять подписками Visual Studio](manage-mpn-subscriptions.md), предоставленными через Microsoft Partner Network.

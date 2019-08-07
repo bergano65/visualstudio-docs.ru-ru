@@ -1,17 +1,17 @@
 ---
 title: Преимущество LinkedIn Learning в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: Сведения о преимуществе LinkedIn Learning, которое входит в состав подписки LinkedIn Premium, включенной в некоторые подписки Visual Studio.
-ms.openlocfilehash: 2ae1bd5442a062514525df3d1bada70eba71a81d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 9715c2fb5dd8219e05a6728c7d242aef24e86081
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824800"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787761"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Преимущество LinkedIn Learning в подписках Visual Studio
 
@@ -32,46 +32,26 @@ ms.locfileid: "67824800"
 
 ### <a name="create-a-linkedin-account"></a>Создание учетной записи LinkedIn
 4. Если у вас еще нет учетной записи LinkedIn, нажмите кнопку **Присоединиться**.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning — кнопка "Присоединиться"](_img/vs-linkedin/vs-linkedin-join-now.png)
 
 5. Введите личные данные, выберите имя пользователя и пароль, а затем нажмите кнопку **Присоединиться**.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning — создание учетной записи](_img/vs-linkedin/vs-linkedin-create-account.png)
 
 6. Укажите страну и почтовый индекс, а затем нажмите кнопку **Далее**.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning — указание местонахождения](_img/vs-linkedin/vs-linkedin-set-location.png)
 
 7. Далее необходимо предоставить некоторые сведения о себе, чтобы заполнить профиль.  Укажите, являетесь ли вы учащимся, и сообщите последнюю должность, организацию и отрасль.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning — роль](_img/vs-linkedin/vs-linkedin-role.png)
 
 8. На этом этапе можно указать интересующие вас области.  Чтобы ускорить создание учетной записи, выберите пункт **Not sure yet.  I’m open!** (Пока сомневаюсь. Рассмотрю предложения).  (Определить области интересов можно будет позднее.)
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning — интересы](_img/vs-linkedin/vs-linkedin-interests.png)
 
 9. Вы должны получить сообщение электронной почты с кодом подтверждения на указанный адрес.  Его отправитель — Центр сообщений Linkedin.  Если вы не видите сообщение в папке "Входящие", поищите его в папках нежелательной почты.  Введите код из сообщения и нажмите кнопку **Проверить**.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning — проверка](_img/vs-linkedin/vs-linkedin-verify.png)
 
 10. Если вы хотите импортировать контакты из учетной записи электронной почты, указанной ранее, это можно сделать сейчас.  В противном случае нажмите кнопку **Пропустить**. (Если вы решит пропустить этот шаг, появится запрос на подтверждение.  Выберите **Да**.)
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning — контакты](_img/vs-linkedin/vs-linkedin-contacts.png)
 
 11. Оповещения о вакансиях позволяют вам узнавать о вакансиях в вашей области, которые могут вам подойти.  Вы можете настроить эти оповещения сразу или пропустить этот шаг и продолжить создание учетной записи.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning — оповещения о вакансиях](_img/vs-linkedin/vs-linkedin-job-alerts.png)
 
 12. В зависимости от предоставленных личных данных и выбранных настроек вам будут предложены рекомендованные контакты, что позволит вам приступить к созданию своей сети.  Вы можете добавить контакты или пропустить этот шаг.
 
 13. Чтобы добавить фотографию в профиль, щелкните **Отправить фото**.  Этот шаг также можно пропустить.  (Фотографию можно будет добавить в любой момент.)
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning — отправка фотографии](_img/vs-linkedin/vs-linkedin-photo.png)
 
 14. Вы можете скачать приложение LinkedIn на телефон, чтобы иметь постоянный доступ к своей сети.  Для этого можно отправить ссылку на телефон или скачать приложение непосредственно из App Store или Google Play.  Чтобы пропустить этот шаг и скачать приложение позднее, нажмите кнопку **Далее**.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning — отправка фотографии](_img/vs-linkedin/vs-linkedin-app.png)
 
 ### <a name="activate-your-offer"></a>Активация предложения
 15. После входа в учетную запись LinkedIn или создания новой учетной записи можно активировать подписку Premium и начать пользоваться LinkedIn Learning.  Щелкните **Активировать предложение**.

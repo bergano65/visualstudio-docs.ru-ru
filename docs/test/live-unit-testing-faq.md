@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 41d5248106b831accf4d71f97aeaeb72fdbc5018
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67258131"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662024"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Часто задаваемые вопросы о функции Live Unit Testing
 
@@ -139,7 +139,7 @@ ms.locfileid: "67258131"
 
 - Функция Live Unit Testing не создает домен приложения для выполнения тестов, но при выполнении тестов в окне **обозревателя тестов** этот домен создается.
 
-- Функция Live Unit Testing выполняет тесты из разных сборок последовательно, но если вы выполняете несколько тестов в окне **обозревателя тестов**, а затем нажимаете кнопку **Запустить тесты параллельно**, они будут выполняться параллельно.
+- Live Unit Testing выполняет тесты в каждой тестовой сборке последовательно; в окне **обозревателя тестов** можно выбрать параллельное выполнение нескольких тестов.
 
 - Для обнаружения и выполнения тестов с помощью Live Unit Testing используется `TestPlatform` версии 2, а в окне **обозревателя тестов** — версии 1. В большинстве случаев вы не заметите разницу.
 

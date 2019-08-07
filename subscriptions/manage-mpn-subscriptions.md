@@ -1,29 +1,25 @@
 ---
 title: Управление подписками Visual Studio, предоставленными через Microsoft Partner Network (MPN) | Документы Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/11/2017
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: Как назначать подписки Visual Studio конечным пользователям для партнеров MPN.
-ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 600d7c651e4e4b4396293e8be60a008a6f6d0bf3
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823195"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605462"
 ---
-# <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Управление подписками Visual Studio, предоставленными через Microsoft Partner Network (MPN)
-
+# <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Управление подписками Visual Studio, предоставленными через Microsoft Partner Network (MPN)
 Партнеры, получившие компетенцию или купившие Action Pack в MPN, имеют право на использование подписок Visual Studio. Эти подписки выдаются каждому пользователю отдельно и действуют только при назначении конкретному пользователю, который работает в партнерской организации.
 
-Дополнительные сведения см. в разделе [Подписки Visual Studio для партнеров в Microsoft Partner Network (MPN)](program-mpn.md).
+Дополнительные сведения о подписках Visual Studio для партнеров см. в разделе [Microsoft Partner Network (MPN)](program-mpn.md).
 
-## <a name="high-level-assignment-and-access-flow"></a>Обобщенный поток назначения и доступа
-
-### <a name="microsoft-action-pack-subscribers"></a>Подписчики Microsoft Action Pack
+## <a name="microsoft-action-pack-subscribers"></a>Подписчики Microsoft Action Pack
 Подписчик Microsoft Action Pack и подписки Visual Studio
-
 1. Выполните вход от имени администратора программы в центр Partner Membership Center.
 2. Сопоставьте пользователей, используя раздел **Требования**.
 3. Найдите нужных лиц и **назначьте им роли**.
@@ -41,7 +37,7 @@ ms.locfileid: "67823195"
     - Контактный адрес электронной почты
 13. После этого вход считается завершенным и подписчик получает доступ к преимуществам.
 
-### <a name="competency-partners"></a>Партнеры с компетенциями
+## <a name="competency-partners"></a>Партнеры с компетенциями
 1. Выберите **Требования**.
 2. Выберите **Привилегии**.
 3. Выберите **Подписки MSDN** (Примечание. Вскоре этот элемент будет переименован в "Подписки Visual Studio")
@@ -56,15 +52,12 @@ ms.locfileid: "67823195"
 9. После этого вход считается завершенным и подписчик получает доступ к преимуществам.
 
 ## <a name="resources-and-references"></a>Ресурсы и ссылки
-
 - Информация [о подписках Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions) MPN (Microsoft Partner Network).
-
 - [Руководство для администратора программы Microsoft Partner Network по преимуществам программного обеспечения и онлайн-служб](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf).
   - Стр. 6 — назначение ролей контактных лиц и подписок Visual Studio для Action Pack.
+  > [!NOTE]
+  > Роль контактного лица по техническим вопросам является обязательной для подписок Visual Studio.
+  - Стр. 8 — назначение подписок Visual Studio для партнеров с компетенциями.
 
-> [!NOTE]
-> Роль контактного лица по техническим вопросам является обязательной для подписок Visual Studio.
-> - Стр. 8 — назначение подписок Visual Studio для партнеров с компетенциями.
-
-## <a name="need-help"></a>Нужна помощь?
+## <a name="next-steps"></a>Следующие шаги
 Подписчики и администраторы программ могут обратиться напрямую в службу поддержки Microsoft Partner Network, чтобы устранить любые проблемы, в том числе с доступом к подпискам. Посетите страницу [поддержки для партнеров](https://partner.microsoft.com/support), чтобы получить помощь. (Для входа нужно ввести учетные данные MPN.)

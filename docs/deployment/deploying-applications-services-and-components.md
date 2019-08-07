@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032552"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533362"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Знакомство с возможностями развертывания в Visual Studio
 
@@ -105,7 +105,11 @@ ms.locfileid: "67032552"
 
 Если возможностей [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) недостаточно для установки вашего классического приложения, вы можете создать пакет установщика Windows (файл установки MSI или EXE) или собственный начальный загрузчик.
 
-- Пакет установщика на базе MSI можно создать с помощью [расширения с набором инструментов WiX для Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Это программа командной строки.
+- Пакет установщика на базе MSI можно создать с помощью [расширения с набором инструментов WiX](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset). Это программа командной строки.
+
+   ::: moniker range=">=vs-2019"
+   Для Visual Studio 2019 см. сведения о [расширении набора инструментов WiX для Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension).
+   ::: moniker-end
 
 - Пакет установщика MSI или EXE можно создать, используя [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) из Flexera Software. Вместе с Visual Studio 2017 и последующими версиями можно использовать компонент InstallShield (выпуск Community Edition не поддерживается). Обратите внимание, что версия InstallShield Limited Edition больше не входит в состав среды Visual Studio и не поддерживается в Visual Studio 2017 и последующих версиях. Информацию о ее дальнейшей доступности см. в документации по [программному обеспечению Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio).
 

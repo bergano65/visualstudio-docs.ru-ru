@@ -92,7 +92,7 @@
           items:
             - name: "Подписки на Visual\_Studio: Общие сведения для администраторов"
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: Справочники
+        - name: Справочник
           items:
             - name: Идентификаторы рабочих нагрузок и компонентов Visual Studio
               items:
@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: Добавление и удаление ссылок с помощью диспетчера ссылок
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Добавление ссылок с использованием NuGet или расширения SDK
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: Добавление или удаление импортированных пространств имен (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: Диагностика неработающих ссылок
@@ -352,6 +350,8 @@
                     - name: Обзор
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
+                    - name: Добавление проверки на null для всех параметров
+                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Изменение сигнатуры метода
                       href: ide/reference/change-method-signature.md
                     - name: Преобразование анонимного типа в класс
