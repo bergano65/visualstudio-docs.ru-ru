@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: Добавление и удаление ссылок с помощью диспетчера ссылок
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Добавление ссылок с использованием NuGet или расширения SDK
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: Добавление или удаление импортированных пространств имен (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: Диагностика неработающих ссылок
