@@ -1,5 +1,5 @@
 ---
-title: Обращение к Visual Studio или другим ведущим приложениям из текстового шаблона
+title: Обращение к Visual Studio или другим основным приложениям из текстового шаблона
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a75dc86a45c78f6b57d5a326c8c342eca70b26e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26845b3878a89ea52a3f77f9a0a8d23363877edd
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960467"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870678"
 ---
-# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Обращение к Visual Studio и другим основным приложениям из текстового шаблона
+# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Доступ к Visual Studio или другим узлам из текстового шаблона
 
 В текстовом шаблоне можно использовать методы и свойства, предоставляемые узлом, который выполняет шаблон. Visual Studio приведен пример узла.
 
@@ -24,7 +24,7 @@ ms.locfileid: "62960467"
 
 ## <a name="obtain-access-to-the-host"></a>Получить доступ к узлу
 
-Для доступа к узлу, задайте `hostspecific="true"` в `template` директива. Теперь вы можете использовать `this.Host`, который имеет тип <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> Тип содержит члены, которые можно использовать, например, для разрешения имен файлов и журналов ошибок.
+Для доступа к узлу, задайте `hostspecific="true"` в `template` директива. Теперь можно использовать `this.Host`, который имеет тип [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Тип [итексттемплатинженгинехост](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) содержит члены, которые можно использовать для разрешения имен файлов и регистрации ошибок, например.
 
 ### <a name="resolve-file-names"></a>Разрешения имен файлов
 

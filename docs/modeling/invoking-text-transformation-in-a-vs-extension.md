@@ -7,17 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43f071d73bef7d7b67988ccffb00b7ae7518b916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bf32a1722ec8029840566b7602ba78f84adb7ec
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810571"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870510"
 ---
-# <a name="invoking-text-transformation-in-a-vs-extension"></a>Вызов преобразования текста в расширении VS
-Если вы разрабатываете расширение Visual Studio, такие как команды меню или [предметно ориентированного языка](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), службы текстовых шаблонов можно использовать для преобразования текстовых шаблонов. Получите службу типа <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> и выполните приведение к типу <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+# <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Вызов преобразования текста в расширении Visual Studio
 
-## <a name="getting-the-text-templating-service"></a>Получение службы текстовых шаблонов
+При написании расширения Visual Studio, такого как команда меню или доменный [язык](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), можно использовать службу текстовых шаблонов для преобразования текстовых шаблонов. Получите службу [стексттемплатинг](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110)) и приведите ее к [итексттемплатинг](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+
+## <a name="get-the-text-templating-service"></a>Получение службы текстовых шаблонов
 
 ```csharp
 using Microsoft.VisualStudio.TextTemplating;
@@ -33,16 +34,17 @@ ITextTemplating t4 = serviceProvider.GetService(typeof(STextTemplating)) as ITex
 string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath));
 ```
 
-## <a name="passing-parameters-to-the-template"></a>Передача параметров в шаблоны
+## <a name="pass-parameters-to-the-template"></a>Передача параметров в шаблон
+
  Параметры можно передавать в шаблон. Чтобы получить значения параметров в шаблоне, можно воспользоваться директивой `<#@parameter#>`.
 
- Для этого типа параметра необходимо использовать сериализуемый или маршалируемый тип. Это значит, что тип должен объявляться с типом <xref:System.SerializableAttribute> или наследоваться от типа <xref:System.MarshalByRefObject>. Это ограничение является обязательным, потому что текстовый шаблон выполняется в отдельном домене приложения. Все встроенные типы, такие как **System.String** и **System.Int32** являются сериализуемыми.
+ Для этого типа параметра необходимо использовать сериализуемый или маршалируемый тип. Это значит, что тип должен объявляться с типом <xref:System.SerializableAttribute> или наследоваться от типа <xref:System.MarshalByRefObject>. Это ограничение является обязательным, потому что текстовый шаблон выполняется в отдельном домене приложения. Все встроенные типы, такие как **System. String** и **System. Int32** , являются сериализуемыми.
 
  Для передачи значений параметров вызывающий код может размещать значения либо в словаре `Session`, либо в типе <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
  В следующем примере оба метода использованы для преобразования короткого тестового шаблона:
 
-```
+```csharp
 using Microsoft.VisualStudio.TextTemplating;
 using Microsoft.VisualStudio.TextTemplating.VSHost;
 ...
@@ -74,9 +76,10 @@ string result = t4.ProcessTemplate("",
 ```
 
 ## <a name="error-reporting-and-the-output-directive"></a>Отчеты об ошибках и директива Output
- Любые ошибки, возникающие во время обработки будет отображаться в окне ошибок Visual Studio. Кроме того, чтобы настроить уведомления об ошибках, можно задать обратный вызов, реализующий <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>.
 
- Если необходимо записать строку результатов в файл, полезно знать, какие расширение файла и кодировка были заданы в директиве `<#@output#>` шаблона. Эти сведения также передаются обратному вызову. Дополнительные сведения см. в разделе [директива Output T4](../modeling/t4-output-directive.md).
+Все ошибки, возникающие во время обработки, будут отображаться в окне ошибок Visual Studio. Кроме того, можно получать уведомления об ошибках, указывая обратный вызов, который реализует [итексттемплатингкаллбакк](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110)).
+
+Если необходимо записать строку результатов в файл, полезно знать, какие расширение файла и кодировка были заданы в директиве `<#@output#>` шаблона. Эти сведения также передаются обратному вызову. Дополнительные сведения см. в разделе [директива вывода T4](../modeling/t4-output-directive.md).
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -118,7 +121,7 @@ class T4Callback : ITextTemplatingCallback
 }
 ```
 
- Код можно протестировать с использованием файла шаблона, аналогичного следующему:
+Код можно протестировать с использованием файла шаблона, аналогичного следующему:
 
 ```
 <#@output extension=".htm" encoding="ASCII"#>
@@ -127,14 +130,16 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
- Предупреждение компилятора отображается в окне ошибок Visual Studio, а также создаст вызов `ErrorCallback`.
+Предупреждение компилятора появится в окне ошибок Visual Studio, а также будет создан вызов `ErrorCallback`.
 
 ## <a name="reference-parameters"></a>Параметры ссылок
- Можно передавать значения из текстового шаблона, используя класс параметров, наследуемый от <xref:System.MarshalByRefObject>.
 
-## <a name="related-topics"></a>См. также
- Создание текста из предварительно обработанного текстового шаблона Вызовите метод `TransformText()` сгенерированного класса. Дополнительные сведения см. в разделе [Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Можно передавать значения из текстового шаблона, используя класс параметров, наследуемый от <xref:System.MarshalByRefObject>.
 
- Создание текста за пределами расширения Visual Studio: Определите пользовательское ведущее приложение. Дополнительные сведения см. в разделе [обработки текстовых шаблонов с помощью пользовательского хост-](../modeling/processing-text-templates-by-using-a-custom-host.md).
+## <a name="related-articles"></a>Связанные статьи
 
- Создание исходного кода с возможностью последующей компиляции и выполнения Вызовите метод `t4.PreprocessTemplate()` типа <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+Создание текста из предварительно обработанного текстового шаблона Вызовите метод `TransformText()` сгенерированного класса. Дополнительные сведения см. [в разделе Создание текста во время выполнения с помощью текстовых шаблонов T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+
+Чтобы создать текст за пределами расширения Visual Studio, сделайте следующее: Определите пользовательское ведущее приложение. Дополнительные сведения см. в разделе [обработки текстовых шаблонов с помощью пользовательского хост-](../modeling/processing-text-templates-by-using-a-custom-host.md).
+
+Создание исходного кода с возможностью последующей компиляции и выполнения Вызовите метод [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) объекта [итексттемплатинг](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
