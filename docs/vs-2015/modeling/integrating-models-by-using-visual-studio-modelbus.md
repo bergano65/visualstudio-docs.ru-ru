@@ -1,5 +1,5 @@
 ---
-title: Интеграция моделей с помощью Modelbus | Документация Майкрософт
+title: Интеграция моделей с помощью ModelBus | Документация Майкрософт
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,17 +9,17 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9f0a185ce4f78a81d1ed806e38b102296093f48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84374596d706c23e835bf344d318d57c297aec60
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441005"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871797"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Интеграция моделей с помощью Visual Studio Modelbus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus предоставляет метод для создания ссылок между моделями и из других средств в модели. Например можно связать модели доменного языка (DSL) и моделей UML. или создать интегрированный набор DSL.
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus предоставляет метод для создания ссылок между моделями и из других средств в модели. Например можно связать модели доменного языка (DSL) и моделей UML. или создать интегрированный набор DSL.
 
  ModelBus позволяет создать уникальную ссылку на модель или на определенный элемент внутри модели. Эта ссылка может храниться вне модели, например в элементе другой модели. Если впоследствии средству потребуется доступ к элементу, инфраструктура ModelBus загрузит соответствующую модель и вернет элемент. При необходимости модель можно отобразить для пользователя. Если доступ к файлу в его прежнем расположении невозможен, ModelBus предложит пользователю его найти. Если пользователь найдет файл, ModelBus исправит все ссылки на этот файл.
 
@@ -47,7 +47,7 @@ ms.locfileid: "63441005"
 
 5. Если вам необходимо получить доступ к DSL из текстового шаблона, измените файл AdapterManager.tt в новом проекте. Пропустите этот шаг, если доступ к DSL необходимо получить из другого кода, например из обработчика команд и событий. Дополнительные сведения см. в разделе [с помощью Visual Studio ModelBus в текстовом шаблоне](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
-   1. Измените базовый класс AdapterManagerBase на класс <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.
+   1. Измените базовый класс Адаптерманажербасе на [встексттемплатингмоделингадаптерманажер](/previous-versions/ee844317(v=vs.140)).
 
    2. Ближе к концу файла вставьте перед классом AdapterManager следующий дополнительный атрибут:
 
@@ -127,7 +127,7 @@ ms.locfileid: "63441005"
 
 4. Если выбрана ссылка на элемент в модели, можно добавить список типов, доступных для выбора пользователем, например Company.FamilyTree.Person.
 
-5. Нажмите кнопку **ОК**, а затем нажмите кнопку **преобразовать все шаблоны** на панели инструментов обозревателя решений.
+5. Нажмите кнопку **ОК**, а затем — **преобразовать все шаблоны** на панели инструментов обозревателя решений.
 
     > [!WARNING]
     > Если допустимая модель или сущность не выбрана, нажатие кнопки "ОК" не будет иметь никакого действия, даже если выглядит активной.
@@ -510,4 +510,4 @@ private const string INVALID_REF_FORMAT =
 - В **DslPackage\source.extention.tt**, `|ModelBusAdapter|` добавляется в качестве компонента MEF.
 
 ## <a name="see-also"></a>См. также
- [Практическое руководство. Открытие модели из файла в коде программы](../modeling/how-to-open-a-model-from-file-in-program-code.md) [интеграция моделей UML с другими моделями и средствами](../modeling/integrate-uml-models-with-other-models-and-tools.md) [как: Добавление обработчика перетаскивания и вставки](../modeling/how-to-add-a-drag-and-drop-handler.md) [с помощью Visual Studio ModelBus в текстовом шаблоне](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+ [Практическое руководство. Открытие модели из файла в программном коде](../modeling/how-to-open-a-model-from-file-in-program-code.md) [Интеграция моделей UML с другими моделями и инструментами](../modeling/integrate-uml-models-with-other-models-and-tools.md) [как: Добавление обработчика](../modeling/how-to-add-a-drag-and-drop-handler.md) перетаскивания [с помощью Visual Studio ModelBus в текстовый шаблон](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

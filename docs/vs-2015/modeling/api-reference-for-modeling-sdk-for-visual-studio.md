@@ -9,20 +9,20 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2cbf516b5ed999623c05e7f68656199363906bf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a290227b120958b5bb3407393dcff33b247b20d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408445"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872024"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Справка по API SDK моделирования для Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Пакет SDK моделирования и визуализации Visual Studio предоставляет платформу, на котором строятся на предметно ориентированных языков (DSL) и средства UML.
+Пакет SDK визуализации и моделирования Visual Studio предоставляет платформу, в которой строятся доменные языки (DSL) и средства UML.
 
 > [!NOTE]
-> Сведения об API моделирования UML, см. в разделе [Справочник по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md). Сведения о преобразования текста, см. в разделе [Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md).
+> Дополнительные сведения об API моделирования UML см. в [справочнике по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md). Дополнительные сведения о преобразовании текста см. в разделе [Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md).
 
  Этот раздел содержит справочные сведения о пространствах имен, имена которых начинаются с «Microsoft.VisualStudio.Modeling».
 
@@ -35,18 +35,20 @@ ms.locfileid: "63408445"
 |<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement?displayProperty=fullName>|Жест "и" Выбор методов.|
 |<xref:Microsoft.VisualStudio.Modeling.DslDefinition?displayProperty=fullName>|API конструктора определения DSL.|
 |<xref:Microsoft.VisualStudio.Modeling.DslDefinition.Design?displayProperty=fullName>|Внутренние классы конструктора определения DSL.|
-|<xref:Microsoft.VisualStudio.Modeling.DslDefinition.ExtensionEnablement?displayProperty=fullName>|Атрибуты, которые дают возможность расширение конструктора доменного языка с помощью команд, жестов и проверки.|
+|<xref:Microsoft.VisualStudio.Modeling.DslDefinition.ExtensionEnablement?displayProperty=fullName>|Атрибуты, позволяющие расширить конструктор DSL с помощью команд, жестов и проверки.|
 |<xref:Microsoft.VisualStudio.Modeling.Extensibility?displayProperty=fullName>|Методы расширения для ModelElement, которые реализуют расширения DSL.|
 |<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement?displayProperty=fullName>|Атрибуты расширения|
 |<xref:Microsoft.VisualStudio.Modeling.Immutability?displayProperty=fullName>|Позволяет сделать части модели только для чтения.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration?displayProperty=fullName>|API Modelbus, который поможет вам интегрировать различные модели.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker?displayProperty=fullName>|Диалоговое окно, которое позволяет пользователям переходить к моделям и элементам следует создавать ссылки Modelbus.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting?displayProperty=fullName>|Служба выбора.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell?displayProperty=fullName>|Платформа адаптеров Modelbus для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell.Picker?displayProperty=fullName>|Диалоговое окно Выбор, позволяющий пользователям переходить к моделям и элементам следует создавать ссылки Modelbus.|
+|[Microsoft. VisualStudio. моделирование. Интеграция](/previous-versions/ee904412(v=vs.140))|API Modelbus, который поможет вам интегрировать различные модели.|
+|[Microsoft. VisualStudio. моделирование. Integration. средство выбора](/previous-versions/ee904394(v=vs.140))|Диалоговое окно, которое позволяет пользователям переходить к моделям и элементам следует создавать ссылки Modelbus.|
+|`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|Служба выбора.|
+|[Microsoft. VisualStudio. моделирование. Integration. Shell](/previous-versions/ee869435(v=vs.140))|Платформа адаптера ModelBus для [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Microsoft. VisualStudio. моделирование. Integration. Shell. средство выбора](/previous-versions/ee886769(v=vs.140))|Диалоговое окно Выбор, позволяющий пользователям переходить к моделям и элементам следует создавать ссылки Modelbus.|
 |<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Интерфейс между DSL и [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|Позволяет определить контекстном меню команд.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|Позволяет определить ограничения проверки.|
 
 ## <a name="see-also"></a>См. также
- [Справочник по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md) [Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md)
+
+- [Справочник по API для расширения моделей UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
+- [Настройка преобразования текста T4](../modeling/customizing-t4-text-transformation.md)

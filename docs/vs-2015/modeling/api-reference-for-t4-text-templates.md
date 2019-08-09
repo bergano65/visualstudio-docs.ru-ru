@@ -9,22 +9,22 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07881d247034133c83e64b63f82e5c9e25b42c2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00be275fe36fd453fd3bd1f6bcf5c0911f7bb380
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159066"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871896"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Справочник API по текстовым шаблонам T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-API шаблонов текста позволяет вызывать и настраивать преобразование [текстовые шаблоны](../modeling/code-generation-and-t4-text-templates.md).  
-  
-## <a name="namespaces"></a>Пространства имен  
-  
-|Пространство имен|Цель|  
-|---------------|-------------|  
-|<xref:Microsoft.VisualStudio.TextTemplating>|Содержит классы для функциональности преобразования текстовых шаблонов. Модуль преобразования текстового шаблона интегрирован в Visual Studio и преобразует файлы текстовых шаблонов в сгенерированные выходные текстовые файлы.|  
-|<xref:Microsoft.VisualStudio.TextTemplating.Modeling>|Предоставляет средства преобразования, относящиеся к моделям UML и доменными языками, например доступ к данным текста [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus.|  
-|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Предоставляет доступ к службы текстовых шаблонов в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+API текстовых шаблонов позволяет вызывать и настраивать преобразование [текстовых шаблонов](../modeling/code-generation-and-t4-text-templates.md).
+
+## <a name="namespaces"></a>Пространства имен
+
+|Пространство имен|Цель|
+|---------------|-------------|
+|<xref:Microsoft.VisualStudio.TextTemplating>|Содержит классы для функций преобразования текстовых шаблонов. Модуль преобразования текстовых шаблонов интегрирован в Visual Studio и преобразует файлы текстовых шаблонов в создаваемые текстовые выходные файлы.|
+|[Зависящ](/previous-versions/ee844312(v=vs.140))|Предоставляет средства преобразования текста, связанные с моделями UML и доменными языками, такими как [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] доступ к ModelBus.|
+|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Предоставляет доступ к службе текстовых шаблонов в [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

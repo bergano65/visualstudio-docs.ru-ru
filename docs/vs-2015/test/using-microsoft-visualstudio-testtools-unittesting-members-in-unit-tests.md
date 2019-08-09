@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8bbf75bfe218945453d25440c868a95675168631
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 93a62b6fe5493b78a3c18c1adb87761cdb894670
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705890"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871555"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Использование членов Microsoft.VisualStudio.TestTools.UnitTesting в модульных тестах
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "65705890"
 > `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Элементы, используемые для управляемого данными тестирования
- Для настройки управляемых данными модульных тестов используются перечисленные ниже элементы. Дополнительные сведения см. в разделе [How To: Создание управляемого данными модульного теста](../test/how-to-create-a-data-driven-unit-test.md) и [Пошаговое руководство: С помощью файла конфигурации для определения источника данных](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+ Для настройки управляемых данными модульных тестов используются перечисленные ниже элементы. Дополнительные сведения см. в [разделе как Создание модульного теста](../test/how-to-create-a-data-driven-unit-test.md) , управляемого данными [, и пошаговое руководство. Использование файла конфигурации для определения источника](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)данных.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -106,7 +106,7 @@ ms.locfileid: "65705890"
 
 ## <a name="test-configuration-classes"></a>Классы конфигурации теста
 
-- <xref:Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>
+- [ObjectTypes](/previous-versions/visualstudio/visual-studio-2013/dd987428(v=vs.120))
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection>
 
