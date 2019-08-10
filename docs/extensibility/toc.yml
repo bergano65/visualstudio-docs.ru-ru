@@ -488,8 +488,6 @@
       href: how-to-diagnose-ui-delays-caused-by-extensions.md
     - name: 'Устранение неполадок, связанных с пакетами VSPackage'
       href: troubleshooting-vspackages.md
-- name: Оболочка (изолированная или интегрированная)
-  href: 'https://vspartner.com/pages/vsshells'
 - name: "Поставка расширений Visual\_Studio"
   items:
     - name: "Поставка расширений Visual\_Studio"
