@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3aabd73a3c234be61cecdf68fbc92fc7e52883e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce2da2c1ff5b2f74d8b4d6341050c1895b68955a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797342"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922297"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307. Указывайте StringComparison
 
@@ -27,24 +27,24 @@ ms.locfileid: "62797342"
 |-|-|
 |TypeName|SpecifyStringComparison|
 |CheckId|CA1307|
-|Категория|Microsoft.Globalization|
+|Категория|Microsoft. Globalization|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Операции сравнения строк используется перегрузка метода, которая не задает <xref:System.StringComparison> параметра.
+Операция сравнения строк использует перегрузку метода, которая не задает <xref:System.StringComparison> параметр.
 
 ## <a name="rule-description"></a>Описание правила
- Многие строковые операции, наиболее важных <xref:System.String.Compare%2A> и <xref:System.String.Equals%2A> предоставляют перегрузку, принимающую <xref:System.StringComparison> значение перечисления в качестве параметра.
+Многие операции со <xref:System.String.Compare%2A> строками, наиболее важные <xref:System.String.Equals%2A> методы и, предоставляют перегрузку, <xref:System.StringComparison> которая принимает значение перечисления в качестве параметра.
 
- Каждый раз, когда существует перегрузка, принимающую <xref:System.StringComparison> параметр, он должен использоваться вместо перегрузку, которая не принимает этот параметр. Часто, явно установив этот параметр, код становится более ясным и удобный в сопровождении.
+Всякий раз, когда существует перегрузка <xref:System.StringComparison> , которая принимает параметр, ее следует использовать вместо перегрузки, которая не принимает этот параметр. При явном задании этого параметра код часто становится более четким и простым в обслуживании.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, измените методы сравнения строк на перегрузки, принимающие <xref:System.StringComparison> перечисления в качестве параметра. Например: изменить `String.Compare(str1, str2)` для `String.Compare(str1, str2, StringComparison.Ordinal)`.
+Чтобы устранить нарушение этого правила, измените методы сравнения строк на перегрузки, принимающие <xref:System.StringComparison> перечисление в качестве параметра. Например: измените `String.Compare(str1, str2)` на `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из этого правила, если библиотека или приложение предназначено для ограниченного круга локальных пользователей и поэтому не будет локализовано.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Можно отключить вывод предупреждения из этого правила, если библиотека или приложение предназначено для ограниченной локальной аудитории и, следовательно, не будет локализовано.
 
 ## <a name="see-also"></a>См. также
 
 - [Предупреждения глобализации](../code-quality/globalization-warnings.md)
-- [CA1309: Используйте порядковый параметр StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)
+- [CA1309 Использовать Ordinal StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)

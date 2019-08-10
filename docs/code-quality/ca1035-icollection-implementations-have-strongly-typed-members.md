@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf1db06ba3b78c6033b143b55f41cc203441973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a20feb514b87f2906fd4db32dfb38d3d9b661999
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779070"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922830"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035. В составе реализаций ICollection есть члены со строгим типом
 
@@ -27,34 +27,34 @@ ms.locfileid: "62779070"
 |-|-|
 |TypeName|ICollectionImplementationsHaveStronglyTypedMembers|
 |CheckId|CA1035|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный тип реализует <xref:System.Collections.ICollection?displayProperty=fullName> , но не предоставляет строго типизированный метод для <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. Строго типизированную версию <xref:System.Collections.ICollection.CopyTo%2A> должен принимать два параметра и не может иметь <xref:System.Array?displayProperty=fullName> или массив <xref:System.Object?displayProperty=fullName> как свой первый параметр.
+Открытый или защищенный тип реализует <xref:System.Collections.ICollection?displayProperty=fullName> , но не предоставляет строго типизированный метод для <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. Строго типизированная версия <xref:System.Collections.ICollection.CopyTo%2A> должна принимать два параметра и не может <xref:System.Array?displayProperty=fullName> иметь массив <xref:System.Object?displayProperty=fullName> или в качестве первого параметра.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило требует <xref:System.Collections.ICollection> реализации предоставляли строго типизированные элементы, чтобы пользователям не придется приводить аргументы к <xref:System.Object> введите при использовании функциональных возможностей интерфейса. В этом правиле предполагается, что тип, реализующий <xref:System.Collections.ICollection> делает, поэтому для управления коллекцией экземпляров типа, которое строже, чем <xref:System.Object>.
+Это правило требует <xref:System.Collections.ICollection> реализации строго типизированных членов, чтобы пользователи не применялись для приведения аргументов <xref:System.Object> к типу, если они используют функциональные возможности, предоставляемые интерфейсом. Это правило предполагает, что тип, реализующий <xref:System.Collections.ICollection> , делает это для управления коллекцией экземпляров типа, которые являются более надежными, чем. <xref:System.Object>
 
- Класс <xref:System.Collections.ICollection> реализует интерфейс списка <xref:System.Collections.IEnumerable?displayProperty=fullName>. Если расширение объектов в коллекции <xref:System.ValueType?displayProperty=fullName>, необходимо предоставить строго типизированный элемент для <xref:System.Collections.IEnumerable.GetEnumerator%2A> во избежание снижение производительности, вызванное упаковки-преобразования. Это не требуется, если объекты коллекции имеют ссылочный тип.
+ Класс <xref:System.Collections.ICollection> реализует интерфейс списка <xref:System.Collections.IEnumerable?displayProperty=fullName>. Если объекты в коллекции расширяются <xref:System.ValueType?displayProperty=fullName>, необходимо предоставить строго типизированный <xref:System.Collections.IEnumerable.GetEnumerator%2A> элемент, чтобы избежать снижения производительности, вызванной упаковкой-преобразованием. Это необязательно, если объекты коллекции являются ссылочным типом.
 
- Чтобы реализовать строго типизированную версию член интерфейса, реализовать члены интерфейса явно с помощью имен в виде `InterfaceName.InterfaceMemberName`, такие как <xref:System.Collections.ICollection.CopyTo%2A>. К явным членам интерфейса используйте типы данных, которые объявлены в интерфейсе. Реализовать строго типизированные элементы, используя имена членов интерфейса, такие как <xref:System.Collections.ICollection.CopyTo%2A>. Объявите строго типизированные члены как открытые и объявления параметров и возвращаемых значений строгого типа, который управляется в коллекции. Строгие типы замените слабый типы, такие как <xref:System.Object> и <xref:System.Array> , объявленные в интерфейсе.
+Чтобы реализовать строго типизированную версию члена интерфейса, реализуйте члены интерфейса явным образом с помощью имен в форме `InterfaceName.InterfaceMemberName`, <xref:System.Collections.ICollection.CopyTo%2A>например. Явные члены интерфейса используют типы данных, объявленные интерфейсом. Реализуйте строго типизированные члены с помощью имени члена интерфейса, например <xref:System.Collections.ICollection.CopyTo%2A>. Объявите строго типизированные члены как открытые и объявите параметры и возвращаемые значения строгим типом, который управляется коллекцией. Строгие типы заменяют более слабые <xref:System.Object> типы <xref:System.Array> , такие как и, объявленные интерфейсом.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, реализовать член интерфейса, явным образом (он объявляется как <xref:System.Collections.ICollection.CopyTo%2A>). Добавьте открытый строго типизированный член, объявленный как `CopyTo`, и в качестве ее первый параметр строго типизированный массив.
+Чтобы устранить нарушение этого правила, реализуйте член интерфейса явным образом (объявите его как <xref:System.Collections.ICollection.CopyTo%2A>). Добавьте открытый строго типизированный член, объявленный `CopyTo`как, и получите строго типизированный массив в качестве своего первого параметра.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Отключайте предупреждение из этого правила, если вы реализуете новую коллекцию на базе объектов, например двоичное дерево, где типы, расширяющие новую коллекцию, определяют строгий тип. Эти типы должны соответствуют данному правилу и предоставлять строго типизированные члены.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Подавлять предупреждение из этого правила, если реализуется новая коллекция на основе объектов, например двоичное дерево, где типы, расширяющие новую коллекцию, определяют строгий тип. Эти типы должны соответствовать этому правилу и предоставлять строго типизированные члены.
 
 ## <a name="example"></a>Пример
- В следующем примере показано, как правильно реализовать <xref:System.Collections.ICollection>.
+В следующем примере демонстрируется правильный способ реализации <xref:System.Collections.ICollection>.
 
- [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
+[!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1038: Перечислители должны быть строго типизированы](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+[CA1038: Перечислители должны быть строго типизированными](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
- [CA1039: Списки обладают строгой типизацией](../code-quality/ca1039-lists-are-strongly-typed.md)
+[CA1039: Списки являются строго типизированными](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>См. также
 

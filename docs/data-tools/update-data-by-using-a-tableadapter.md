@@ -18,35 +18,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ca5161d0ddb73a72b88f36e85bda9206839aec3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61ebcd6c833b55f0769365b89274e35136c914f9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565864"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925349"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Обновление данных с помощью адаптера таблицы TableAdapter
 
-После изменения и проверки данных в наборе данных отправки обновленных данных обратно в базу данных, вызвав `Update` метод [TableAdapter](../data-tools/create-and-configure-tableadapters.md). `Update` Метод обновляет в одну таблицу данных и выполняет нужную команду (INSERT, UPDATE или DELETE), на основе <xref:System.Data.DataRow.RowState%2A> каждой строки данных в таблице. Если набор данных имеет связанные таблицы, Visual Studio создает класс TableAdapterManager, которые можно использовать для выполнения обновлений. Класс TableAdapterManager гарантирует, что обновления выполняются в правильном порядке на основе ограничений внешнего ключа, которые определены в базе данных. При использовании элементов управления с привязкой данных, архитектура привязки данных создает переменную-член класса TableAdapterManager tableAdapterManager.
+После изменения и проверки данных в наборе данных можно отправить обновленные данные обратно в базу данных, вызвав `Update` метод [TableAdapter](../data-tools/create-and-configure-tableadapters.md). Метод обновляет одну таблицу данных и выполняет правильную команду (INSERT, UPDATE или DELETE) на основе <xref:System.Data.DataRow.RowState%2A> каждой строки данных в таблице. `Update` Когда набор данных содержит связанные таблицы, Visual Studio создает класс TableAdapterManager, который используется для обновления. Класс TableAdapterManager гарантирует, что обновления выполняются в правильном порядке на основе ограничений внешнего ключа, определенных в базе данных. При использовании привязанных к данным элементов управления архитектура привязки данных создает переменную-член класса TableAdapterManager, именуемую tableAdapterManager.
 
 > [!NOTE]
-> При попытке обновить источник данных с содержимым из набора данных, возможно возникновение ошибок. Чтобы избежать ошибок, мы рекомендуем разместить код, который вызывает адаптера `Update` метод внутри `try` / `catch` блока.
+> При попытке обновить источник данных с помощью содержимого набора данных можно получить ошибки. Чтобы избежать ошибок, рекомендуется разместить код, вызывающий `Update` метод адаптера, `try` / `catch` внутри блока.
 
- Точная процедура для обновления источника данных может изменяться в зависимости от потребностей бизнеса, но включает следующие шаги:
+Точная процедура обновления источника данных может различаться в зависимости от бизнес-потребностей, но включает следующие шаги.
 
-1. Вызовите адаптера `Update` метод в `try` / `catch` блока.
+1. Вызовите `Update` метод адаптера `try` / в`catch` блоке.
 
-2. Если исключение перехватывается, найдите строку данных, которая вызвала ошибку.
+2. Если исключение перехвачено, выберите строку данных, которая вызвала ошибку.
 
-3. Устраните ошибку в данные строк (программно или, предоставляя строку пользователю для изменения), а затем повторите попытку обновления (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
+3. Выверять проблему в строке данных (программным способом, если возможно, или путем представления недействительной строки пользователю для изменения), а затем повторите попытку обновления (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
 
 ## <a name="save-data-to-a-database"></a>Сохранение данных в базе данных
 
-Вызовите `Update` метод адаптера таблицы. Передайте имя таблицы данных, которая содержит значения для записи в базу данных.
+Вызовите `Update` метод TableAdapter. Передайте имя таблицы данных, содержащей значения, записываемые в базу данных.
 
-### <a name="to-update-a-database-by-using-a-tableadapter"></a>Обновление базы данных с помощью адаптера таблицы
+### <a name="to-update-a-database-by-using-a-tableadapter"></a>Обновление базы данных с помощью TableAdapter
 
-- Заключите TableAdapter`Update` метод в `try` / `catch` блока. В следующем примере показано, как обновить содержимое `Customers` в таблицу `NorthwindDataSet` изнутри `try` / `catch` блока.
+- Заключите`Update` метод TableAdapter `try` / в блок.`catch` В следующем примере показано `Customers` , как обновить содержимое таблицы в `NorthwindDataSet` `try` / `catch` блоке.
 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]

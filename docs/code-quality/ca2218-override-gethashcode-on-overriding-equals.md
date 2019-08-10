@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 155d983a68734038220ffb53aa7a5e9504abdb40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5dbd8580f5aaeb88c08d35b50258510cb1a85ba2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541888"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920290"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218. Переопределяйте GetHashCode при переопределении Equals
 
@@ -27,14 +27,14 @@ ms.locfileid: "62541888"
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
-|Категория|Microsoft.Usage|
+|Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Открытый тип переопределяет <xref:System.Object.Equals%2A?displayProperty=fullName> , но не переопределяет <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
+Открытый тип переопределяет <xref:System.Object.Equals%2A?displayProperty=fullName> <xref:System.Object.GetHashCode%2A?displayProperty=fullName>, но не переопределяет.
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.Object.GetHashCode%2A> Возвращает значение, в зависимости от текущего экземпляра, который подходит для алгоритмов хэширования и структур данных, например хэш-таблице. Два объекта, которые имеют одинаковый тип и равны должен возвращать одинаковый хэш-код для обеспечения правильной работы экземпляров следующих типов:
+ <xref:System.Object.GetHashCode%2A>Возвращает значение, основанное на текущем экземпляре, которое подходит для алгоритмов хэширования и структур данных, таких как хэш-таблица. Два объекта, которые относятся к одному типу и равны, должны возвращать один и тот же хэш-код, чтобы убедиться, что экземпляры следующих типов работают правильно:
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -52,52 +52,52 @@ ms.locfileid: "62541888"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- Типы, реализующие <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Типы, реализующие<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, предоставлять реализацию метода <xref:System.Object.GetHashCode%2A>. Для пары объектов одного типа, необходимо убедиться, что реализация возвращает то же значение, если ваша реализация <xref:System.Object.Equals%2A> возвращает `true` для пары.
+Чтобы устранить нарушение этого правила, предоставьте реализацию <xref:System.Object.GetHashCode%2A>. Для пары объектов одного типа необходимо убедиться, что реализация возвращает одно и то же значение, если ваша реализация <xref:System.Object.Equals%2A> возвращает `true` для пары.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="class-example"></a>Пример класса
 
 ### <a name="description"></a>Описание
- В следующем примере класса (ссылочный тип), который нарушает это правило.
+В следующем примере показан класс (ссылочный тип), нарушающий это правило.
 
 ### <a name="code"></a>Код
- [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_1.cs)]
+[!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_1.cs)]
 
 ### <a name="comments"></a>Комментарии
- В следующем примере устраняется нарушение путем переопределения <xref:System.Object.GetHashCode>.
+В следующем примере нарушение устраняется путем переопределения <xref:System.Object.GetHashCode>.
 
 ### <a name="code"></a>Код
- [!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_2.cs)]
+[!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_2.cs)]
 
 ## <a name="structure-example"></a>Пример структуры
 
 ### <a name="description"></a>Описание
- В следующем примере структура (тип значения), который нарушает это правило.
+В следующем примере показана структура (тип значения), которая нарушает данное правило.
 
 ### <a name="code"></a>Код
- [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_3.cs)]
+[!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_3.cs)]
 
 ### <a name="comments"></a>Комментарии
- В следующем примере устраняется нарушение путем переопределения <xref:System.Object.GetHashCode>.
+В следующем примере нарушение устраняется путем переопределения <xref:System.Object.GetHashCode>.
 
 ### <a name="code"></a>Код
- [!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_4.cs)]
+[!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_4.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1046: Не перегружайте оператор равенства для ссылочных типов](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+[CA1046: Не перегружать оператор Equals в ссылочных типах](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: Оператор дополнения с именами](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+[CA2225 Перегрузки операторов имеют именованные варианты](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226: Операторы должны быть симметричны](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+[CA2226: Операторы должны иметь симметричные перегрузки](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Переопределяйте равенство при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+[CA2224: Переопределять Equals при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2231: перегрузите оператор равенства на переопределяющем типе ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+[CA2231: перегрузите оператор равенства на переопределяющем типе ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
 ## <a name="see-also"></a>См. также
 

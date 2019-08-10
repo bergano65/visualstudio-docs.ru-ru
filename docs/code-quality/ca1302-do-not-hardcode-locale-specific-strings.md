@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a52add4453276ebf415b47f7f50e74b51a573306
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b3789b5e786038c2bf1fe5e823a1b0fb4f7a7c9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546535"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922728"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302. Не указывайте прямо в коде строки, зависящие от языковых стандартов
 
@@ -30,28 +30,28 @@ ms.locfileid: "62546535"
 |-|-|
 |TypeName|DoNotHardcodeLocaleSpecificStrings|
 |CheckId|CA1302|
-|Категория|Microsoft.Globalization|
+|Категория|Microsoft. Globalization|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Метод использует строковый литерал, представляющий часть путь к некоторым системным папкам.
+Метод использует строковый литерал, представляющий часть пути к определенным системным папкам.
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.Environment.SpecialFolder?displayProperty=fullName> Перечисление содержит члены, ссылающиеся на специальные системные папки. Расположение этих папок может иметь разные значения в различных операционных системах, пользователь может изменить некоторые из расположений и локализованы. Примером особая папка, которая является системной папке, который является «C:\WINDOWS\system32» на [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] , но «C:\WINNT\system32» на [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]. <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> Метод возвращает расположения, которые связаны с <xref:System.Environment.SpecialFolder> перечисления. Расположения, которые возвращаются <xref:System.Environment.GetFolderPath%2A> локализуются и подходит для текущего компьютера.
+<xref:System.Environment.SpecialFolder?displayProperty=fullName> Перечисление содержит члены, которые ссылаются на специальные системные папки. Расположение этих папок может иметь разные значения в разных операционных системах. пользователь может изменить некоторые расположения, а расположения будут локализованы. Примером особой папки является системная папка, «C:\Windows\System32» [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] , но «C:\Winnt\System32» в. [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)] Метод возвращает расположения, связанные <xref:System.Environment.SpecialFolder> с перечислением. <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> Расположения, возвращаемые <xref:System.Environment.GetFolderPath%2A> , локализуются и подходят для текущего компьютера.
 
- Это правило размечает пути к папкам, которые извлекаются с помощью <xref:System.Environment.GetFolderPath%2A> метод в отдельном каталоге уровни. Каждый строковый литерал сравнивается с токенами. Если соответствие найдено, предполагается, что метод создает строку, ссылающуюся на расположение в системе, связанный с маркером. Для обеспечения переносимости и возможности локализации, используйте <xref:System.Environment.GetFolderPath%2A> метод для извлечения расположения специальные системные папки вместо строковых литералов.
+Это правило разделяет пути к папкам, полученные с помощью <xref:System.Environment.GetFolderPath%2A> метода, на отдельные уровни каталога. Каждый строковый литерал сравнивается с токенами. Если совпадение найдено, предполагается, что метод создает строку, которая ссылается на Системное расположение, связанное с токеном. Для обеспечения переносимости и возможности локализации <xref:System.Environment.GetFolderPath%2A> используйте метод для получения расположений специальных системных папок вместо использования строковых литералов.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, получения расположения указывается с помощью <xref:System.Environment.GetFolderPath%2A> метод.
+Чтобы устранить нарушение этого правила, извлеките расположение с помощью <xref:System.Environment.GetFolderPath%2A> метода.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Это безопасно подавить предупреждение из этого правила, если строковый литерал не используется для ссылки на одну из системных папок, связанных с <xref:System.Environment.SpecialFolder> перечисления.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Можно отключить вывод предупреждения из этого правила, если строковый литерал не используется для ссылки на одно из системных расположений, связанных с <xref:System.Environment.SpecialFolder> перечислением.
 
 ## <a name="example"></a>Пример
- Следующий пример создает путь к общей папке приложений, выдает три предупреждения из этого правила. Затем в примере извлекается путь с помощью <xref:System.Environment.GetFolderPath%2A> метод.
+В следующем примере создается путь к общей папке Application Data, которая создает три предупреждения из этого правила. Затем в примере извлекается путь с помощью <xref:System.Environment.GetFolderPath%2A> метода.
 
- [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
- [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
+[!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
+[!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1303: Не следует передавать литералы в виде локализованных параметров](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)
+[CA1303 Не передавайте литералы в качестве локализованных параметров](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)

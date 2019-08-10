@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef3afd9dda70d02698abec5459b36e6acc2c5ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08a45219eb2fceeaa9c58a140990ea577c941ff7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779620"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923039"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023. Индексы не должны быть многомерными
 
@@ -31,29 +31,29 @@ ms.locfileid: "62779620"
 |-|-|
 |TypeName|IndexersShouldNotBeMultidimensional|
 |CheckId|CA1023|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный тип содержит открытый или защищенный индексатор, использующий более одного индекса.
+Открытый или защищенный тип содержит открытый или защищенный индексатор, использующий более одного индекса.
 
 ## <a name="rule-description"></a>Описание правила
- Индексаторы, то есть индексированные свойства, должны использовать один индекс. Многомерные индексаторы могут существенно снизить удобство использования библиотеки. Если в программе требуется несколько индексов, пересмотрите ли тип логическое хранилище данных. В противном случае используется метод.
+Индексаторы, то есть индексированные свойства, должны использовать один индекс. Многомерные Индексаторы могут значительно снизить удобство использования библиотеки. Если для проектирования требуется несколько индексов, проверьте, представляет ли тип логическое хранилище данных. В противном случае используйте метод.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, изменить структуру использовать единственный целочисленный или строковый индекс или использовать метод вместо индексатора.
+Чтобы устранить нарушение этого правила, измените структуру, чтобы она использовала одиночное целое число или индекс строки, или используйте вместо индексатора метод.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Отключайте предупреждение из этого правила только после тщательной проверки необходимости использовать нестандартный индексатор.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Подавлять предупреждение из этого правила только после тщательного рассмотрения необходимости в нестандартном индексаторе.
 
 ## <a name="example"></a>Пример
- В следующем примере показано типом, `DayOfWeek03`, с помощью многомерных индексатора, которое нарушает правило. Индексатор можно рассматривать как тип преобразования и поэтому более качественной представляется как метод. Изменен механизм функционирования тип в `RedesignedDayOfWeek03` в соответствии с правилом.
+В следующем примере показан тип `DayOfWeek03`с многомерным индексатором, нарушающим правило. Индексатор может рассматриваться как тип преобразования и, таким образом, более соответствующим образом представлен как метод. Тип перерабатывается в `RedesignedDayOfWeek03` для удовлетворения правила.
 
- [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
- [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]
- [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]
+[!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
+[!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]
+[!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1043: Используйте целый или строковый аргумент для индексаторов](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
+[CA1043 Использование целочисленного или строкового аргумента для индексаторов](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
 
- [CA1024: Используйте свойства, если это уместно](../code-quality/ca1024-use-properties-where-appropriate.md)
+[CA1024 Используйте свойства там, где это уместно](../code-quality/ca1024-use-properties-where-appropriate.md)

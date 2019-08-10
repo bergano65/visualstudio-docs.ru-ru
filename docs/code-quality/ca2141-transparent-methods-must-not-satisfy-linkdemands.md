@@ -10,37 +10,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdd8ee4633cdc254bcfc5237391120ef887753da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24723559988974c51798c3e099ff8c1d86a15db9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806975"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920509"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141: прозрачные методы не должны удовлетворять требования LinkDemand
 
 |||
 |-|-|
-|TypeName|TransparentMethodsMustNotSatisfyLinkDemands|
+|TypeName|транспарентмесодсмустнотсатисфилинкдемандс|
 |CheckId|CA2141|
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Прозрачный с точки безопасности метод вызывает метод в сборке, которая не помечен атрибутом <xref:System.Security.AllowPartiallyTrustedCallersAttribute> атрибут (APTCA), или прозрачный метод безопасности удовлетворяет <xref:System.Security.Permissions.SecurityAction> `.LinkDemand` для типа или метода.
+Прозрачный с помощью безопасности метод вызывает метод в сборке, которая не помечена <xref:System.Security.AllowPartiallyTrustedCallersAttribute> атрибутом (APTCA), или прозрачный `.LinkDemand` для безопасности метод удовлетворяет <xref:System.Security.Permissions.SecurityAction> типу или методу.
 
 ## <a name="rule-description"></a>Описание правила
- Удовлетворение требования LinkDemand является важной операцией безопасности, может привести к непреднамеренному повышению уровня привилегий. Прозрачный код безопасности не должны удовлетворять требования LinkDemand, так как он не распространяются те же требования аудита безопасности, что и критический код безопасности. Прозрачные методы в сборках уровня 1 набор правил безопасности приведет все требования LinkDemand, они удовлетворяют для преобразования в полные требования во время выполнения, что может привести к снижению производительности. В сборках уровня 2 набора правил безопасности прозрачные методы не удастся скомпилировать в компилятор just-in-time (JIT), если они пытаются выполнить удовлетворяет требованию LinkDemand.
+Соблюдение требований LinkDemand — это операция, учитывающая безопасность, которая может привести к непреднамеренному повышению привилегий. Прозрачный для системы безопасности код не должен удовлетворять требования LinkDemand, так как он не подчиняется тем же требованиям аудита безопасности, что и критически важный для безопасности код. Прозрачные методы в сборках уровня 1 набора правил безопасности приведут к тому, что все LinkDemands, удовлетворяющие требованиям, будут преобразованы в полные требования во время выполнения, что может вызвать проблемы с производительностью. В сборках набора правил безопасности для сборок уровня 2 прозрачные методы не будут компилироваться в JIT-компиляторе, если они пытаются удовлетворить требования LinkDemand.
 
- В сборках, использующих безопасность уровня 2, вызывает попытки прозрачного безопасности метод удовлетворяет требованию LinkDemand или вызвать метод в сборке, отличный от APTCA <xref:System.MethodAccessException>; в сборках уровня 1 LinkDemand, становятся полными требованиями.
+В сборках, использующих безопасность уровня 2, попытки метода, прозрачного для безопасности, отвечают требованиям LinkDemand или вызывают метод в сборке, не <xref:System.MethodAccessException>являющейся сборкой APTCA, вызывают a; в сборках уровня 1 требование LinkDemand станет полным требованием.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, пометьте доступ к метод <xref:System.Security.SecurityCriticalAttribute> или <xref:System.Security.SecuritySafeCriticalAttribute> атрибут, или удалите LinkDemand из метода доступа.
+Чтобы устранить нарушение этого правила, пометьте метод <xref:System.Security.SecurityCriticalAttribute> доступа атрибутом или <xref:System.Security.SecuritySafeCriticalAttribute> или удалите LinkDemand из метода доступа.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В этом примере прозрачный метод пытается вызвать метод, который имеет LinkDemand. Это правило срабатывает на этот код.
+В этом примере прозрачный метод пытается вызвать метод, имеющий LinkDemand. Это правило будет срабатывать в этом коде.
 
- [!code-csharp[FxCop.Security.CA2141.TransparentMethodsMustNotSatisfyLinkDemands#1](../code-quality/codesnippet/CSharp/ca2141-transparent-methods-must-not-satisfy-linkdemands_1.cs)]
+[!code-csharp[FxCop.Security.CA2141.TransparentMethodsMustNotSatisfyLinkDemands#1](../code-quality/codesnippet/CSharp/ca2141-transparent-methods-must-not-satisfy-linkdemands_1.cs)]

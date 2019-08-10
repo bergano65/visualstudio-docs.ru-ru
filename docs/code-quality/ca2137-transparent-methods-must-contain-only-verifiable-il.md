@@ -10,37 +10,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f74b539d9382bf8b5f5fe319ff319cdf6f372340
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98b75a9f67a24fd8bea1ecc3a8782b6bd9e6b34b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806962"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920609"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137. Прозрачные методы должны содержать только поддающийся проверке промежуточный язык
 
 |||
 |-|-|
-|TypeName|TransparentMethodsMustBeVerifiable|
+|TypeName|транспарентмесодсмустбеверифиабле|
 |CheckId|CA2137|
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Метод содержит непроверяемый код или возвращает тип по ссылке.
+Метод содержит непроверяемый код или возвращает тип по ссылке.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило срабатывает при попытках прозрачного кода безопасности выполнить непроверяемый MSIL. Однако это правило не содержит полную проверку IL, и вместо нее использует эвристику для выявления большинства нарушений проверки MSIL.
+Это правило срабатывает при попытках прозрачного кода безопасности выполнить непроверяемый MSIL. Однако это правило не содержит полную проверку IL, и вместо нее использует эвристику для выявления большинства нарушений проверки MSIL.
 
- Чтобы быть уверенным, что ваш код содержит только проверяемый код MSIL, запустите [Peverify.exe (средство PEVerify)](/dotnet/framework/tools/peverify-exe-peverify-tool) для сборки. Запустите PEVerify с **/ прозрачного** параметр, который ограничивает выходные данные только непроверяемый прозрачные методы которых приведет к ошибке. Если / прозрачного параметр не используется, PEVerify также проверяет критические методы, которые могут содержать непроверяемый код.
+Чтобы убедиться, что код содержит только проверяемый MSIL, запустите сборку с помощью команды [Peverify. exe (peverify)](/dotnet/framework/tools/peverify-exe-peverify-tool) . Выполните PEVerify с параметром **/Транспарент** , который ограничивает выходные данные только непроверяемыми прозрачными методами, которые могут вызвать ошибку. Если параметр/Транспарент не используется, PEVerify также проверяет критические методы, которые могут содержать непроверяемый код.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, пометьте метод <xref:System.Security.SecurityCriticalAttribute> или <xref:System.Security.SecuritySafeCriticalAttribute> атрибут, или удалите непроверяемый код.
+Чтобы устранить нарушение этого правила, пометьте метод <xref:System.Security.SecurityCriticalAttribute> атрибутом или <xref:System.Security.SecuritySafeCriticalAttribute> или удалите непроверяемый код.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В данном примере метод использует непроверяемый код и должны быть помечены <xref:System.Security.SecurityCriticalAttribute> или <xref:System.Security.SecuritySafeCriticalAttribute> атрибута.
+Метод в этом примере использует непроверяемый код и должен быть помечен <xref:System.Security.SecurityCriticalAttribute> атрибутом или. <xref:System.Security.SecuritySafeCriticalAttribute>
 
- [!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]
+[!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]

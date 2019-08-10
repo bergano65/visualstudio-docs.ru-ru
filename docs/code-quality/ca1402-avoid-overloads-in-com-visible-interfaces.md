@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f1bd825d2e2a74178c9ec03a0abc51d3385ba29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa45a54a994d19b1a04bc0785f21b88dfeef4475
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546561"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922123"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402. Избегайте перегрузок в видимых COM-интерфейсах
 
@@ -30,14 +30,14 @@ ms.locfileid: "62546561"
 |-|-|
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
 |CheckId|CA1402|
-|Категория|Microsoft.Interoperability|
+|Категория|Microsoft. взаимодействие|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Компонент модели объектов (COM) отображается интерфейс объявляет перегруженные методы.
+Видимый интерфейс модели COM объявляет перегруженные методы.
 
 ## <a name="rule-description"></a>Описание правила
- Когда перегруженные методы предоставляются клиентам COM, сохраняется имя только первой перегрузки метода. Последующие перегрузки переименовываются уникальным образом путем добавления к имени символ подчеркивания «_» и целое число, соответствующего порядку объявления перегрузки. Например рассмотрим следующие методы:
+Когда перегруженные методы предоставляются клиентам COM, сохраняется имя только первой перегрузки метода. Последующие перегрузки уникально переименовываются путем добавления к имени символа подчеркивания "_" и целого числа, соответствующего порядку объявления перегрузки. Например, рассмотрим следующие методы.
 
 ```csharp
 void SomeMethod(int valueOne);
@@ -45,7 +45,7 @@ void SomeMethod(int valueOne, int valueTwo, int valueThree);
 void SomeMethod(int valueOne, int valueTwo);
 ```
 
-Эти методы предоставляются клиентам COM, следующим образом.
+Эти методы предоставляются клиентам COM следующим образом.
 
 ```csharp
 void SomeMethod(int valueOne);
@@ -53,26 +53,26 @@ void SomeMethod_2(int valueOne, int valueTwo, int valueThree);
 void SomeMethod_3(int valueOne, int valueTwo);
 ```
 
-Клиенты COM Visual Basic 6 не могут реализовывать методы интерфейса с помощью подчеркивания в имени.
+Visual Basic 6 COM-клиенты не могут реализовывать методы интерфейса с помощью символа подчеркивания в имени.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, переименуйте перегруженные методы, чтобы имена являются уникальными. Кроме того, обеспечивает невидимость интерфейс модели COM, изменяя доступность, чтобы `internal` (`Friend` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) либо путем применения <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> атрибут `false`.
+Чтобы устранить нарушение этого правила, переименуйте перегруженные методы, чтобы имена были уникальными. Кроме того, можно сделать интерфейс невидимым для com, изменив уровень [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]доступа на `internal` `Friend` (в) <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> или применив `false`атрибут со значением.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В примере показан интерфейс, который нарушает правило и интерфейс, соответствующий этому правилу.
+В следующем примере показан интерфейс, нарушающий правило, и интерфейс, соответствующий правилу.
 
- [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)]
- [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]
+[!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)]
+[!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1413: Избегайте не открытых полей в видимых типах значений COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+[CA1413 Избегайте использования не открытых полей в видимых типах значений COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
- [CA1407: Не используйте статические члены в видимых COM типах](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+[CA1407 Избегайте статических членов в видимых COM типах](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017: Пометьте сборки атрибутом ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017 Пометка сборок с помощью ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>См. также
 

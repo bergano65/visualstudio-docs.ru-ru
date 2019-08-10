@@ -8,17 +8,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560055"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919559"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Набор правил "Базовые правила определения правильности" для управляемого кода
-Набор правил базовые правила определения правильности посвящена логических ошибок и общие ошибки в использовании API платформы. Базовые правила определения правильности включить правила в наборе правил минимальные правила и рекомендации. Дополнительные сведения см. в разделе [набора правил управляемых рекомендуемые правила для управляемого кода](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) следует включать это правило, задать, чтобы расширить список предупреждений, что минимального набора правил.
+Набор правил "основные правила корректности" предназначен для логических ошибок и распространенных ошибок при использовании API-интерфейсов платформы. Основные правила корректности включают правила, указанные в наборе правил минимально рекомендованных правил. Дополнительные сведения см. в разделе [управляемые Рекомендуемые правила правил для управляемого кода](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) . Этот набор правил необходимо включить, чтобы развернуть список предупреждений, которые должны быть получены с помощью минимального отчета о рекомендуемых правилах.
 
- В следующей таблице описаны все правила в наборе правил базовые правила определения правильности Майкрософт.
+В следующей таблице описаны все правила в наборе правил правил исправления Microsoft Basic.
 
 |Правило|Описание|
 |----------|-----------------|
@@ -62,7 +62,7 @@ ms.locfileid: "62560055"
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Прозрачные методы должны содержать только поддающийся проверке промежуточный язык|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Прозрачный код не должен ссылаться на критические для безопасности элементы|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Прозрачные методы не должны удовлетворять требования LinkDemand|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Прозрачные методы не должны соответствовать требованиям LinkDemand|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Прозрачные методы могут не использовать утверждения безопасности|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Прозрачные методы не должны вызывать машинный код|

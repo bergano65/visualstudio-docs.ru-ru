@@ -10,35 +10,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac1f5840f7a3c80cd5c5c6e3544ddcb301e3966
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6808c5e9b5d35ab6ec8d4012f08e15cba9a159d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806889"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920567"
 ---
 # <a name="ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute"></a>CA2139. Прозрачные методы могут не использовать атрибут HandleProcessCorruptingExceptions
 
 |||
 |-|-|
-|TypeName|TransparentMethodsMustNotHandleProcessCorruptingExceptions|
+|TypeName|транспарентмесодсмустносандлепроцесскорруптинжексцептионс|
 |CheckId|CA2139|
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Прозрачный метод помечен атрибутом <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибута.
+Прозрачный метод помечается <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибутом.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило срабатывает, любой метод, который является прозрачным и пытается обработать исключение повреждения процесса с помощью <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибута. Исключение повреждения процесса — это классификация версии 4.0 среды CLR таких исключений <xref:System.AccessViolationException>. Атрибут HandleProcessCorruptedStateExceptionsAttribute может использоваться только критичными в плане безопасности методами и будет игнорироваться при применении для прозрачного метода. Для обработки исключений повреждения процесса, этот метод должен быть критически важным для безопасности или надежным с точки зрения безопасности.
+Это правило срабатывает для любого метода, который является прозрачным и пытается обработать поврежденное исключение с помощью <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибута. Исключение, приводящее к повреждению процесса, — это классификация CLR версии 4,0 <xref:System.AccessViolationException>исключений, таких как исключения. Атрибут HandleProcessCorruptedStateExceptionsAttribute может использоваться только критичными в плане безопасности методами и будет игнорироваться при применении для прозрачного метода. Для обработки исключений при повреждении процесса этот метод должен стать критически важным для безопасности или безопасным.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, удалите <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибут, или пометьте метод <xref:System.Security.SecurityCriticalAttribute> или <xref:System.Security.SecuritySafeCriticalAttribute> атрибута.
+Чтобы устранить нарушение этого правила, удалите <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибут или пометьте метод <xref:System.Security.SecurityCriticalAttribute> <xref:System.Security.SecuritySafeCriticalAttribute> атрибутом или.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В этом примере помечается прозрачный метод <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибут и правило не удастся. Метод также должен быть помечен атрибутом <xref:System.Security.SecurityCriticalAttribute> или <xref:System.Security.SecuritySafeCriticalAttribute> атрибута.
+В этом примере прозрачный метод помечается <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> атрибутом и не сможет выполнить правило. Метод также должен быть помечен <xref:System.Security.SecurityCriticalAttribute> <xref:System.Security.SecuritySafeCriticalAttribute> атрибутом или.
 
- [!code-csharp[FxCop.Security.CA2139.TransparentMethodsMustNotHandleProcessCorruptingExceptions#1](../code-quality/codesnippet/CSharp/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute_1.cs)]
+[!code-csharp[FxCop.Security.CA2139.TransparentMethodsMustNotHandleProcessCorruptingExceptions#1](../code-quality/codesnippet/CSharp/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute_1.cs)]

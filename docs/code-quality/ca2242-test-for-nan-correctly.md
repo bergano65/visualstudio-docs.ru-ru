@@ -16,36 +16,36 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c2dd1f6a23c3df4d77207efb49531b97b3b381
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8912cb6eeec8009364936a42d572f4f3d83fae5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541406"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919920"
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242. Правильно выполняйте проверку NaN
 
 |||
 |-|-|
-|TypeName|TestForNaNCorrectly|
+|TypeName|тестфорнанкорректли|
 |CheckId|CA2242|
-|Категория|Microsoft.Usage|
+|Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Выражение проверяет значение на <xref:System.Single.NaN?displayProperty=fullName> или <xref:System.Double.NaN?displayProperty=fullName>.
+Выражение проверяет значение относительно <xref:System.Single.NaN?displayProperty=fullName> или. <xref:System.Double.NaN?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.Double.NaN?displayProperty=fullName>, который представляет не является числовым, результаты при арифметической операции не определено. Любое выражение, которое проверяет равенство между значениями и <xref:System.Double.NaN?displayProperty=fullName> всегда возвращает `false`. Любое выражение, которое проверяет неравенство значение и <xref:System.Double.NaN?displayProperty=fullName> всегда возвращает `true`.
+ <xref:System.Double.NaN?displayProperty=fullName>, представляющий нечисловое значение, если арифметическая операция не определена. Любое выражение, которое проверяет равенство между значениями <xref:System.Double.NaN?displayProperty=fullName> и всегда `false`возвращает значение. Любое выражение, которое проверяет неравенство между значениями и <xref:System.Double.NaN?displayProperty=fullName> всегда возвращает `true`значение.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила и точно определить, представляет ли значение <xref:System.Double.NaN?displayProperty=fullName>, использовать <xref:System.Single.IsNaN%2A?displayProperty=fullName> или <xref:System.Double.IsNaN%2A?displayProperty=fullName> для проверки значения.
+Чтобы устранить нарушение этого правила и точно определить, представляет <xref:System.Double.NaN?displayProperty=fullName>ли значение, используйте <xref:System.Single.IsNaN%2A?displayProperty=fullName> или <xref:System.Double.IsNaN%2A?displayProperty=fullName> для проверки значения.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В следующем примере показано два выражения, которые неправильно проверяют значение с <xref:System.Double.NaN?displayProperty=fullName> и выражение, которое правильно использует <xref:System.Double.IsNaN%2A?displayProperty=fullName> для проверки значения.
+В следующем примере показаны два выражения, которые неправильно проверяют значение <xref:System.Double.NaN?displayProperty=fullName> , и выражение, которое правильно <xref:System.Double.IsNaN%2A?displayProperty=fullName> использует для проверки значения.
 
- [!code-vb[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/VisualBasic/ca2242-test-for-nan-correctly_1.vb)]
- [!code-csharp[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/CSharp/ca2242-test-for-nan-correctly_1.cs)]
+[!code-vb[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/VisualBasic/ca2242-test-for-nan-correctly_1.vb)]
+[!code-csharp[FxCop.Usage.TestForNaN#1](../code-quality/codesnippet/CSharp/ca2242-test-for-nan-correctly_1.cs)]

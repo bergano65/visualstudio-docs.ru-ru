@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ac998d8a0e3a8c1883afa07c2cfe16098a2461af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3eb216af1b6cd742aff83b248b6752adea292345
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546099"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921841"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413. Не используйте неоткрытые поля в типах значений, видимых для COM
 
@@ -30,33 +30,33 @@ ms.locfileid: "62546099"
 |-|-|
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
 |CheckId|CA1413|
-|Категория|Microsoft.Interoperability|
+|Категория|Microsoft. взаимодействие|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Тип значения, который специально помечен как видимый для модели объектов компонента (COM) объявляет поле закрытого экземпляра.
+Тип значения, специально помеченный как видимый для модели COM, объявляет Неоткрытое поле экземпляра.
 
 ## <a name="rule-description"></a>Описание правила
- Не являющиеся общедоступными поля экземпляров типов значений, отображаемых для модели COM, отображаются для COM-клиентов. Проверьте содержимое поля сведения, не должны предоставляться, или которые могут оказать непреднамеренное эффект проектирования и безопасности.
+Не являющиеся общедоступными поля экземпляров типов значений, отображаемых для модели COM, отображаются для COM-клиентов. Проверьте содержимое поля на предмет сведений, которые не должны быть предоставлены или которые будут иметь непреднамеренное Оформление или последствия безопасности.
 
- По умолчанию все открытые типы значений являются видимыми для модели COM. Тем не менее чтобы сократить число ложных срабатываний, это правило требует видимость COM типа, чтобы задавать явно. Включающая сборка должны быть отмечены <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> присвоено `false` и тип должен быть помечен атрибутом <xref:System.Runtime.InteropServices.ComVisibleAttribute> присвоено `true`.
+По умолчанию все открытые типы значений видимы для модели COM. Однако для сокращения числа ложных срабатываний это правило требует явного определения видимости типа COM. Включающая сборка должна быть помечена <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> `false` значением, а тип <xref:System.Runtime.InteropServices.ComVisibleAttribute> должен быть `true`помечен значением.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила и сохранить скрытые поля, измените тип значения ссылочного типа, или удалите <xref:System.Runtime.InteropServices.ComVisibleAttribute> атрибут из типа.
+Чтобы устранить нарушение этого правила и сделать поле скрытым, измените тип значения на ссылочный тип или удалите <xref:System.Runtime.InteropServices.ComVisibleAttribute> атрибут из типа.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из этого правила, если допустима раскрытию поля.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Можно отключить вывод предупреждения из этого правила, если доступность поля является общедоступной.
 
 ## <a name="example"></a>Пример
- В примере показан тип, который нарушает правило.
+В следующем примере показан тип, нарушающий правило.
 
- [!code-csharp[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/CSharp/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.cs)]
- [!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]
+[!code-csharp[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/CSharp/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.cs)]
+[!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1407: Не используйте статические члены в видимых COM типах](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+[CA1407 Избегайте статических членов в видимых COM типах](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017: Пометьте сборки атрибутом ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017 Пометка сборок с помощью ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>См. также
 

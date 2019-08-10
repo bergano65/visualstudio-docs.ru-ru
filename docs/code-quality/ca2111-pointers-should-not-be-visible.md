@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46284c37bc40f963253912b4b8b66cd20a871f83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 416e45337dafd11a00e98b9adda9f16b02139f9c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545219"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921656"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111. Указатели не должны быть видимыми
 
@@ -31,28 +31,28 @@ ms.locfileid: "62545219"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный <xref:System.IntPtr?displayProperty=fullName> или <xref:System.UIntPtr?displayProperty=fullName> поле не только для чтения.
+Открытый или защищенный <xref:System.IntPtr?displayProperty=fullName> объект <xref:System.UIntPtr?displayProperty=fullName> или поле не предназначено только для чтения.
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.IntPtr> и <xref:System.UIntPtr> являются типами указателей, которые используются для доступа к неуправляемой памяти. Если указатель не является закрытым, внутренним или доступным только для чтения, вредоносный код может изменить значение указателя, потенциально разрешение доступа к произвольным областям памяти или вызывая сбои приложения или системы.
+ <xref:System.IntPtr>и <xref:System.UIntPtr> являются типами указателей, которые используются для доступа к неуправляемой памяти. Если указатель не является частным, внутренним или предназначенным только для чтения, вредоносный код может изменить значение указателя, потенциально допуская доступ к произвольным расположениям в памяти или вызвать сбои приложения или системы.
 
- Если для защиты доступа к тип, содержащий поле указателя, см. в разделе [CA2112: Защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+Если вы планируете защитить доступ к типу, содержащему поле указателя, см. [раздел CA2112: Защищенные типы не должны предоставлять](../code-quality/ca2112-secured-types-should-not-expose-fields.md)поля.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Обеспечьте безопасность указателя, сделав его только для чтения, внутренний или закрытый.
+Защитите указатель, сделав его предназначенным только для чтения, внутренним или частным.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Отключайте предупреждение из этого правила, если не следует полагаться на значение указателя.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Подавлять предупреждение из этого правила, если не полагаться на значение указателя.
 
 ## <a name="example"></a>Пример
- В следующем коде показано указатели, которые нарушают и удовлетворяют правилу. Обратите внимание на то, что не частных указателей также нарушают правило [CA1051: Не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+В следующем коде показаны указатели, которые нарушают и удовлетворяют правилу. Обратите внимание, что нечастные указатели также нарушают [правило CA1051: Не объявляйте видимые поля](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)экземпляров.
 
- [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
+[!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2112: Защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+[CA2112: Защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA1051: Не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+[CA1051 Не объявляйте видимые поля экземпляров](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>См. также
 
