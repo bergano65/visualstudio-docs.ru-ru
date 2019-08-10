@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571372"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919538"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Набор правил "Базовые нормы и правила разработки" для управляемого кода
-Можно использовать базовые правила и рекомендации по разработке Microsoft набора правил в сосредоточиться на создании кода проще для понимания и использования. Следует включить это правило, если проект содержит библиотечный код или если вы хотите принудительное применение рекомендаций для кода, который легко поддерживать.
+Вы можете использовать набор правил по рекомендациям по проектированию Microsoft Basic, чтобы сосредоточиться на том, как упростить понимание и использование кода. Этот набор правил следует включать, если проект включает в себя код библиотеки или если вы хотите применить рекомендации для кода, который легко поддерживать.
 
- Базовые нормы и правила разработки включают все правила в наборе правил минимальные правила Майкрософт. Список правил в минимальном, см. в разделе [набора правил управляемых рекомендуемые правила для управляемого кода](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+Базовые правила разработки включают в себя все правила набора правил Microsoft Minimum Рекоммедед Rules. Список минимальных правил см. в разделе [управляемые Рекомендуемые правила правил для управляемого кода](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
 
- В следующей таблице описаны все правила в наборе правил Microsoft базовые нормы и правила разработки.
+В следующей таблице описаны все правила набора правил "базовые правила для разработки Microsoft".
 
 |Правило|Описание|
 |----------|-----------------|
@@ -64,7 +64,7 @@ ms.locfileid: "62571372"
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Прозрачные методы должны содержать только поддающийся проверке промежуточный язык|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Прозрачный код не должен ссылаться на критические для безопасности элементы|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Прозрачные методы не должны удовлетворять требования LinkDemand|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Прозрачные методы не должны соответствовать требованиям LinkDemand|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Прозрачные методы могут не использовать утверждения безопасности|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Прозрачные методы не должны вызывать машинный код|
