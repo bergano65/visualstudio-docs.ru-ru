@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b00accdbdb08e4267bbca2b7e5fab8002f539f1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c528266c54bbb2f3f0d9420461d700a46b09bd5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546483"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922283"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309. Используйте порядковый параметр StringComparison
 
@@ -27,25 +27,25 @@ ms.locfileid: "62546483"
 |-|-|
 |TypeName|UseOrdinalStringComparison|
 |CheckId|CA1309|
-|Категория|Microsoft.Globalization|
+|Категория|Microsoft. Globalization|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
 
-Не задает операции сравнения строк, являющаяся лингвистической <xref:System.StringComparison> параметра к **порядковый номер** или **OrdinalIgnoreCase**.
+Нелингвистическая операция сравнения строк не устанавливает <xref:System.StringComparison> параметр в значение **Ordinal** или **OrdinalIgnoreCase**.
 
 ## <a name="rule-description"></a>Описание правила
- Многие строковые операции, что самое важное <xref:System.String.Compare%2A?displayProperty=fullName> и <xref:System.String.Equals%2A?displayProperty=fullName> теперь предоставляют перегрузку, принимающую <xref:System.StringComparison?displayProperty=fullName> значение перечисления в качестве параметра.
+Многие операции со строками, наиболее <xref:System.String.Compare%2A?displayProperty=fullName> важное <xref:System.String.Equals%2A?displayProperty=fullName> из методов и, теперь предоставляют перегрузку <xref:System.StringComparison?displayProperty=fullName> , которая принимает значение перечисления в качестве параметра.
 
- Необходимо указывать оба **StringComparison.Ordinal** или **StringComparison.OrdinalIgnoreCase**, нелингвистического сравнения строк. То есть при сравнение решения принимаются функции, характерные для естественного языка игнорируются. Пропуск функции естественного языка означает, что решения основаны на основе простых байтовых сравнений, а не на регистров или эквивалентности таблиц, которые параметризуются языком и региональными параметрами. Таким образом, путем явного задания для параметра либо **StringComparison.Ordinal** или **StringComparison.OrdinalIgnoreCase**, кода часто скорость, повышает правильность и становится более надежным.
+При указании либо **StringComparison. Ordinal** , либо **StringComparison. OrdinalIgnoreCase**, сравнение строк не является лингвистическим. То есть функции, характерные для естественного языка, игнорируются при принятии решений по сравнению. Игнорирование особенностей естественного языка означает, что решения основаны на простых сравнениях байтов, а не на таблицах с Регистром или эквивалентности, параметризованных культурой. В результате, явно присвоив параметру значение **StringComparison. Ordinal** или **StringComparison. OrdinalIgnoreCase**, ваш код часто получает скорость, увеличивает правильность и становится более надежным.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, измените метод сравнения строк на перегрузку, принимающую <xref:System.StringComparison?displayProperty=fullName> перечисления в качестве параметра и задавать либо **порядковый номер** или **OrdinalIgnoreCase**. Например, измените `String.Compare(str1, str2)` на `String.Compare(str1, str2, StringComparison.Ordinal)`.
+Чтобы устранить нарушение этого правила, измените метод сравнения строк на перегрузку, принимающую <xref:System.StringComparison?displayProperty=fullName> перечисление в качестве параметра, и укажите либо **Ordinal** , либо **OrdinalIgnoreCase**. Например, измените `String.Compare(str1, str2)` на `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из этого правила, если библиотека или приложение предназначено для ограниченной локальной аудитории или следует использовать семантику текущего языка и региональных параметров.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Предупреждение из этого правила можно отключить, если библиотека или приложение предназначены для ограниченной локальной аудитории или если необходимо использовать семантику текущего языка и региональных параметров.
 
 ## <a name="see-also"></a>См. также
 
 - [Предупреждения глобализации](../code-quality/globalization-warnings.md)
-- [CA1307: Укажите StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
+- [CA1307 Укажите StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

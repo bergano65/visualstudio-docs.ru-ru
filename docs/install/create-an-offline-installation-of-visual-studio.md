@@ -1,7 +1,7 @@
 ---
 title: Создание автономной установки
 description: Узнайте, как установить Visual Studio в автономном режиме в случае ненадежного подключения к Интернету или низкой пропускной способности.
-ms.date: 04/16/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: aa728615f74d8422b1e0c7a9cdd531281bc18e32
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 616c27f16b4fca9be6f8dab3cdf70fafae52f193
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365237"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483509"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Создание автономной установки Visual Studio
 
@@ -133,8 +133,19 @@ Visual Studio 2019 поддерживает различные конфигур
     vs_community.exe --layout c:\vslayout --lang en-US
     ```
 
-  > [!NOTE]
-  > Для установки полного макета Visual Studio потребуется как минимум 35 ГБ дискового пространства. См. руководство по [использованию параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md), где описано, как создать макет, содержащий только выбранные компоненты для установки.
+::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Для установки полного макета Visual Studio потребуется как минимум 35 ГБ дискового пространства. Дополнительные сведения см. в статье [Требования к системе](/visualstudio/productinfo/vs2017-system-requirements-vs/). См. руководство по [использованию параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md), где описано, как создать макет, содержащий только выбранные компоненты для установки.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+   > [!NOTE]
+   > Для установки полного макета Visual Studio потребуется как минимум 35 ГБ дискового пространства. Дополнительные сведения см. в статье [Требования к системе](/visualstudio/releases/2019/system-requirements/). См. руководство по [использованию параметров командной строки для установки Visual Studio](use-command-line-parameters-to-install-visual-studio.md), где описано, как создать макет, содержащий только выбранные компоненты для установки.
+
+::: moniker-end
 
 Если вы хотите установить язык, отличный от английского, выберите нужный языковой стандарт вместо `en-US` в поле [List of language locales](#list-of-language-locales) (Список языковых стандартов). Если потребуется, используйте [список доступных компонентов и рабочих нагрузок](workload-and-component-ids.md) для дополнительной настройки кэша установки.
 

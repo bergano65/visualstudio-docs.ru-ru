@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e955eaacd2f290558c5d786439373a9cc8febb35
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158287"
 ---
 # <a name="user-accounts-and-updates"></a>Учетные записи пользователей и обновления
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,5 +31,5 @@ ms.locfileid: "54802607"
 |[Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md)|Описывает способ разблокировки Visual Studio в разных сценариях.|  
 |[Уведомления](../ide/visual-studio-notifications.md)|Описывает, как среда Visual Studio информирует вас о доступности обновлений для компонентов, например пакетов SDK, или непосредственно Visual Studio.|  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01a8a5609394f0dd428066e32fb425a2abb486c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a70e999505bd900a7b3d89693ef4f6a1cef9de7d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542057"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920422"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146. Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы
 
@@ -27,16 +27,16 @@ ms.locfileid: "62542057"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Прозрачный тип является производным от типа, который помечен атрибутом <xref:System.Security.SecuritySafeCriticalAttribute> или <xref:System.Security.SecurityCriticalAttribute>, или тип, отмеченный атрибутом <xref:System.Security.SecuritySafeCriticalAttribute> атрибут является производным от типа, который помечен атрибутом <xref:System.Security.SecurityCriticalAttribute> атрибута.
+Прозрачный тип является производным от типа, <xref:System.Security.SecuritySafeCriticalAttribute> помеченного как <xref:System.Security.SecurityCriticalAttribute>или, или тип, помеченный <xref:System.Security.SecuritySafeCriticalAttribute> атрибутом, является производным <xref:System.Security.SecurityCriticalAttribute> от типа, помеченного атрибутом.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило срабатывает, если у производного типа есть атрибут прозрачности безопасности, не такой критический, как базовый тип или реализованный интерфейс. От критических базовых типов или реализованных критических интерфейсов могут производиться только критические типы, и от критических в плане безопасности базовых типов или реализованных интерфейсов могут производиться только критические в плане безопасности типы. Нарушение этого правила в прозрачность уровня 2 привести <xref:System.TypeLoadException> для производного типа.
+Это правило срабатывает, если у производного типа есть атрибут прозрачности безопасности, не такой критический, как базовый тип или реализованный интерфейс. От критических базовых типов или реализованных критических интерфейсов могут производиться только критические типы, и от критических в плане безопасности базовых типов или реализованных интерфейсов могут производиться только критические в плане безопасности типы. Нарушения этого правила в прозрачности уровня 2 приводят к <xref:System.TypeLoadException> созданию производного типа.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить это нарушение, пометьте тип производного или реализации атрибутом транспарентности, по крайней мере настолько критичными, как базовый тип или интерфейс.
+Чтобы устранить это нарушение, пометьте производный или реализующий тип атрибутом прозрачности, который не менее важен, чем базовый тип или интерфейс.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- [!code-csharp[FxCop.Security.CA2146.TypesMustBeAtLeastAsCriticalAsBaseTypes#1](../code-quality/codesnippet/CSharp/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces_1.cs)]
+[!code-csharp[FxCop.Security.CA2146.TypesMustBeAtLeastAsCriticalAsBaseTypes#1](../code-quality/codesnippet/CSharp/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces_1.cs)]

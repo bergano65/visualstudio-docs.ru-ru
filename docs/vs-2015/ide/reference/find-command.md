@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ee744a8ab3a22d640f3d48e7291b546f36415d24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199306"
 ---
 # <a name="find-command"></a>Команда Find
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 >Edit.Find somestring /sel /case  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Командное окно](../../ide/reference/command-window.md)   
  [Поле "Поиск/Команда"](../../ide/find-command-box.md)   
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   

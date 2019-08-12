@@ -10,18 +10,16 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58f83616985556d762ae05a0a97c6263e2e6d7a4
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892863"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821555"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Пошаговое руководство. Привязка к данным в конструкторе XAML
 
-В конструкторе XAML можно задать свойства привязки данных с помощью монтажной панели и окна свойств. В примере в этом пошаговом руководстве показано, как привязать данные к элементу управления. В частности, это пошаговое руководство показывает, как создать простой класс корзины для покупок, имеющий [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) с именем `ItemCount`, а затем привязать свойство `ItemCount` к свойству **Text** элемента управления [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
+В конструкторе XAML можно задать свойства привязки данных с помощью монтажной панели и окна свойств. В примере в этом пошаговом руководстве показано, как привязать данные к элементу управления. В частности, это пошаговое руководство показывает, как создать простой класс корзины для покупок, имеющий [DependencyProperty](xref:Windows.UI.Xaml.DependencyProperty) с именем `ItemCount`, а затем привязать свойство `ItemCount` к свойству **Text** элемента управления [TextBlock](xref:Windows.UI.Xaml.Controls.TextBlock).
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Создание класса для использования в качестве источника данных
 
@@ -65,7 +63,7 @@ ms.locfileid: "62892863"
    End Class
    ```
 
-   Этот код задает значение 0 как число элементов по умолчанию с помощью объекта [PropertyMetadata](/uwp/api/Windows.UI.Xaml.PropertyMetadata).
+   Этот код задает значение 0 как число элементов по умолчанию с помощью объекта [PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata).
 
 1. В меню **Файл** выберите **Сборка** > **Построить решение**.
 
@@ -73,7 +71,7 @@ ms.locfileid: "62892863"
 
 1. В обозревателе решений откройте контекстное меню файла **MainWindow.xaml** и выберите **Конструктор представлений**.
 
-1. На панели элементов выберите элемент управления [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid), чтобы добавить его на форму.
+1. На панели элементов выберите элемент управления [Grid](xref:Windows.UI.Xaml.Controls.Grid), чтобы добавить его на форму.
 
 1. Выбрав `Grid`, в окне "Свойства" нажмите кнопку **Создать** рядом со свойством **DataContext**.
 

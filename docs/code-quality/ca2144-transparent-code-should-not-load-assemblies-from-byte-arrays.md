@@ -10,24 +10,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 971c7e794c5b782c2ba71be868fc2f9e7747fdb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ff77d02ef9778112f5229e8104e9a1c1a1cde87
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542282"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920440"
 ---
 # <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144. Прозрачный код не должен выполнять загрузку сборок из массивов байтов
 
 |||
 |-|-|
-|TypeName|TransparentMethodsShouldNotLoadAssembliesFromByteArrays|
+|TypeName|транспарентмесодсшаулднотлоадассемблиесфромбитеаррайс|
 |CheckId|CA2144|
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Прозрачный метод загружает сборку из массива байтов с помощью одного из следующих методов:
+Прозрачный метод загружает сборку из массива байтов с помощью одного из следующих методов:
 
 - <xref:System.Reflection.Assembly.Load%2A>
 
@@ -36,15 +36,15 @@ ms.locfileid: "62542282"
 - <xref:System.Reflection.Assembly.Load%2A>
 
 ## <a name="rule-description"></a>Описание правила
- Проверка безопасности для прозрачного кода не так тщательна, как проверка безопасности для критического кода, поскольку прозрачный код не может выполнять действия, требующие особых мер безопасности. Сборки, загруженные из массива байтов, могут остаться незамеченными в прозрачном коде, и этот массив байтов может содержать критичный или, что более важно, критичный в плане безопасности код, который подлежит аудиту. Таким образом прозрачный код не должен загружать сборки из массива байтов.
+Проверка безопасности для прозрачного кода не так тщательна, как проверка безопасности для критического кода, поскольку прозрачный код не может выполнять действия, требующие особых мер безопасности. Сборки, загруженные из массива байтов, могут остаться незамеченными в прозрачном коде, и этот массив байтов может содержать критичный или, что более важно, критичный в плане безопасности код, который подлежит аудиту. Таким образом, прозрачный код не должен загружать сборки из массива байтов.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, отметьте метод, который загружает сборку с <xref:System.Security.SecurityCriticalAttribute> или <xref:System.Security.SecuritySafeCriticalAttribute> атрибута.
+Чтобы устранить нарушение этого правила, пометьте метод, который загружает сборку, с <xref:System.Security.SecurityCriticalAttribute> <xref:System.Security.SecuritySafeCriticalAttribute> атрибутом или.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- Это правило срабатывает на следующий код, поскольку прозрачный метод загружает сборку из массива байтов.
+Правило срабатывает для следующего кода, поскольку прозрачный метод загружает сборку из массива байтов.
 
- [!code-csharp[FxCop.Security.CA2144.TransparentMethodsShouldNotLoadAssembliesFromByteArrays#1](../code-quality/codesnippet/CSharp/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays_1.cs)]
+[!code-csharp[FxCop.Security.CA2144.TransparentMethodsShouldNotLoadAssembliesFromByteArrays#1](../code-quality/codesnippet/CSharp/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays_1.cs)]

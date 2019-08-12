@@ -92,7 +92,7 @@
           items:
             - name: "Подписки на Visual\_Studio: Общие сведения для администраторов"
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: Справочники
+        - name: Справочник
           items:
             - name: Идентификаторы рабочих нагрузок и компонентов Visual Studio
               items:
@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: Добавление и удаление ссылок с помощью диспетчера ссылок
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Добавление ссылок с использованием NuGet или расширения SDK
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: Добавление или удаление импортированных пространств имен (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: Диагностика неработающих ссылок
@@ -352,6 +350,8 @@
                     - name: Обзор
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
+                    - name: Добавление проверки на null для всех параметров
+                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Изменение сигнатуры метода
                       href: ide/reference/change-method-signature.md
                     - name: Преобразование анонимного типа в класс
@@ -575,6 +575,8 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Работа с файлами XML и XSLT
           href: xml-tools/xml-tools-in-visual-studio.md
+        - name: Разработка с помощью контейнеров
+          href: containers/index.yml
         - name: Разработка инклюзивных приложений
           items:
             - name: Разработка приложений с поддержкой специальных возможностей
@@ -832,13 +834,13 @@
           href: ide/reference/call-hierarchy.md
         - name: Просмотреть изменения
           href: ide/preview-changes.md
-        - name: 'Выбор элементов панели элементов, компоненты WPF'
+        - name: Выбор элементов панели элементов — компоненты WPF
           href: ide/reference/choose-toolbox-items-wpf-components.md
-        - name: Выбор фрагмента кода
+        - name: Средство выбора фрагментов кода
           href: ide/reference/code-snippet-picker.md
         - name: Командное окно
           href: ide/reference/command-window.md
-        - name: Преобразование - диалоговое окно
+        - name: Диалоговое окно "Преобразование"
           href: ide/reference/convert-dialog-box.md
         - name: Окно "Список ошибок"
           href: ide/reference/error-list-window.md
@@ -846,137 +848,157 @@
           href: ide/reference/file-properties-javascript.md
         - name: Переход к строке
           href: ide/reference/go-to-line.md
-        - name: Окно интерпретации
+        - name: окно интерпретации
           href: ide/reference/immediate-window.md
         - name: Прочие файлы
           href: ide/reference/miscellaneous-files.md
         - name: Параметры
           items:
-            - name: Диалоговое окно "Параметры"
+            - name: Параметры - диалоговое окно
               href: ide/reference/options-dialog-box-visual-studio.md
-            - name: Параметры среды
+            - name: Среда
               items:
-                - name: Диалоговое окно "Параметры среды"
-                  href: ide/reference/environment-options-dialog-box.md
-                - name: 'Страница "Общие", папка "Среда"'
+                - name: Общие
                   href: ide/reference/general-environment-options-dialog-box.md
-                - name: 'Страница "Автовосстановление", папка "Среда"'
-                  href: ide/reference/autorecover-environment-options-dialog-box.md
-                - name: 'Страница "Документы", папка "Среда"'
-                  href: ide/reference/documents-environment-options-dialog-box.md
-                - name: 'Страница "Расширения", папка "Среда"'
-                  href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
-                - name: 'Пункт "Поиск и замена", папка "Среда"'
-                  href: ide/reference/find-and-replace-environment-options-dialog-box.md
-                - name: 'Страница "Шрифты и цвета", папка "Среда"'
-                  href: ide/reference/fonts-and-colors-environment-options-dialog-box.md
-                - name: 'Страница "Импорт и экспорт параметров", папка "Среда"'
-                  href: ide/reference/import-and-export-settings-environment-options-dialog-box.md
-                - name: 'Страница "Выбор языка", папка "Среда"'
-                  href: ide/reference/international-settings-environment-options-dialog-box.md
-                - name: 'Страница "Клавиатура", папка "Среда"'
-                  href: ide/reference/keyboard-environment-options-dialog-box.md
-                - name: 'Страница "Уведомления", папка "Среда"'
-                  href: ide/reference/notifications-environment-options-dialog-box.md
-                - name: 'Страница "Быстрый запуск", папка "Среда"'
-                  href: ide/reference/quick-launch-environment-options-dialog-box.md
-                - name: 'Страница "Запуск", папка "Среда"'
-                  href: ide/reference/startup-environment-options-dialog-box.md
-                - name: "Среда\_— Учетные записи"
+                - name: Учетные записи
                   href: ide/reference/accounts-environment-options-dialog-box.md
-                - name: 'Страница "Вкладки и окна", папка "Среда"'
+                - name: Автовосстановление
+                  href: ide/reference/autorecover-environment-options-dialog-box.md
+                - name: Документы
+                  href: ide/reference/documents-environment-options-dialog-box.md
+                - name: Расширения
+                  href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
+                - name: Поиск и замена
+                  href: ide/reference/find-and-replace-environment-options-dialog-box.md
+                - name: Шрифты и цвета
+                  href: ide/reference/fonts-and-colors-environment-options-dialog-box.md
+                - name: Импорт и экспорт параметров
+                  href: ide/reference/import-and-export-settings-environment-options-dialog-box.md
+                - name: Выбор языка
+                  href: ide/reference/international-settings-environment-options-dialog-box.md
+                - name: Клавиатура
+                  href: ide/reference/keyboard-environment-options-dialog-box.md
+                - name: Функции предварительной версии
+                  href: ide/reference/environment-preview-features-options.md
+                - name: Уведомления
+                  href: ide/reference/notifications-environment-options-dialog-box.md
+                - name: Быстрый запуск
+                  href: ide/reference/quick-launch-environment-options-dialog-box.md
+                - name: Запуск
+                  href: ide/reference/startup-environment-options-dialog-box.md
+                - name: Вкладки и окна
                   href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
-                - name: 'Страница "Список задач", папка "Среда"'
+                - name: список задач
                   href: ide/reference/task-list-environment-options-dialog-box.md
-                - name: 'Страница "Параметры доверия", папка "Среда"'
+                - name: Параметры доверия
                   href: ide/reference/trust-settings.md
-                - name: 'Страница "Веб-браузер", папка "Среда"'
+                - name: Веб-браузер
                   href: ide/reference/web-browser-environment-options-dialog-box.md
-            - name: Параметры текстового редактора
+            - name: Проекты и решения
               items:
-                - name: Диалоговое окно "Параметры текстового редактора"
-                  href: ide/reference/text-editor-options-dialog-box.md
-                - name: Текстовый редактор (параметр "Общие")
-                  href: ide/reference/options-text-editor-general.md
-                - name: Текстовый редактор (параметр "Расширение файла")
-                  href: ide/reference/options-text-editor-file-extension.md
-                - name: Текстовый редактор (параметр "Все языки")
-                  href: ide/reference/options-text-editor-all-languages.md
-                - name: 'Текстовый редактор (параметры "Все языки", "Полосы прокрутки")'
-                  href: ide/reference/options-text-editor-all-languages-scroll-bars.md
-                - name: 'Текстовый редактор (параметры "Все языки", "Вкладки")'
-                  href: ide/reference/options-text-editor-all-languages-tabs.md
-                - name: Текстовый редактор в Basic (Visual Basic; параметр "Дополнительно")
-                  href: ide/reference/options-text-editor-basic-visual-basic.md
-                - name: Текстовый редактор в Basic (Visual Basic; параметр "Стиль кода")
-                  href: ide/code-styles-and-code-cleanup.md
-                - name: 'Текстовый редактор в Basic (Visual Basic), IntelliSense'
-                  href: ide/visual-basic-specific-intellisense.md
-                - name: Текстовый редактор в C/C++ (параметр "Форматирование")
-                  href: ide/reference/options-text-editor-c-cpp-formatting.md
-                - name: Текстовый редактор в C/C++ (параметр "Дополнительно")
-                  href: ide/reference/options-text-editor-c-cpp-advanced.md
-                - name: Текстовый редактор в C/C++ (параметр "Экспериментальный")
-                  href: ide/reference/options-text-editor-c-cpp-experimental.md
-                - name: Текстовый редактор в C/C++ (параметр "Просмотр")
-                  href: ide/reference/options-text-editor-c-cpp-view.md
-                - name: 'Текстовый редактор в C# (параметр "Стиль кода", "Форматирование")'
-                  href: ide/reference/options-text-editor-csharp-formatting.md
-                - name: 'Текстовый редактор в C# (параметр "Дополнительно")'
-                  href: ide/reference/options-text-editor-csharp-advanced.md
-                - name: 'Текстовый редактор в C# (IntelliSense)'
-                  href: ide/reference/options-text-editor-csharp-intellisense.md
-                - name: 'Текстовый редактор в F# ("Дополнительно")'
-                  href: ide/reference/options-text-editor-fsharp-advanced.md
-                - name: 'Текстовый редактор в F# ("Исправления кода")'
-                  href: ide/reference/options-text-editor-fsharp-code-fixes.md
-                - name: 'Текстовый редактор в F# (CodeLens)'
-                  href: ide/reference/options-text-editor-fsharp-codelens.md
-                - name: 'Текстовый редактор в F# (IntelliSense)'
-                  href: ide/reference/options-text-editor-fsharp-intellisense.md
-                - name: "Текстовый редактор\_— HTML (веб-формы), форматирование"
-                  href: ide/reference/options-text-editor-html-formatting.md
-                - name: "Текстовый редактор\_— HTML (веб-формы), прочее"
-                  href: ide/reference/options-text-editor-html-miscellaneous.md
-                - name: "Текстовый редактор\_— HTML (веб-формы), проверка"
-                  href: ide/reference/options-text-editor-html-validation.md
-                - name: Текстовый редактор в JavaScript (параметр "Проверка кода")
-                  href: ide/reference/options-text-editor-javascript-code-validation.md
-                - name: Текстовый редактор в JavaScript (параметр "Форматирование")
-                  href: ide/reference/options-text-editor-javascript-formatting.md
-                - name: Текстовый редактор в JavaScript (IntelliSense)
-                  href: ide/reference/options-text-editor-javascript-intellisense.md
-                - name: "Текстовый редактор\_— JavaScript, анализ кода"
-                  href: ide/reference/options-text-editor-javascript-linting.md
-                - name: "Текстовый редактор\_— JavaScript, проект"
-                  href: ide/reference/options-text-editor-javascript-project.md
-                - name: Текстовый редактор в U-SQL (параметр "Форматирование")
-                  href: ide/reference/options-text-editor-usql-formatting.md
-                - name: Текстовый редактор в U-SQL (IntelliSense)
-                  href: ide/reference/options-text-editor-usql-intellisense.md
-                - name: Текстовый редактор в XAML (параметр "Форматирование")
-                  href: ide/reference/options-text-editor-xaml-formatting.md
-                - name: Текстовый редактор в XAML (параметр "Прочее")
-                  href: ide/reference/options-text-editor-xaml-miscellaneous.md
-                - name: Текстовый редактор в XML (параметр "Форматирование")
-                  href: ide/reference/options-text-editor-xml-formatting.md
-                - name: Текстовый редактор в XML (параметр "Прочее")
-                  href: ide/reference/options-text-editor-xml-miscellaneous.md
-            - name: Параметров проектов и решений
-              items:
-                - name: 'Страница "Проекты и решения", диалоговое окно "Параметры"'
+                - name: Общие
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
-                - name: Проекты и решения ("Сборка и запуск")
+                - name: Сборка и запуск
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
-                - name: Проекты и решения ("Веб-проекты")
-                  href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
-                - name: Проекты и решения ("Параметры VisualBasic по умолчанию")
+                - name: Расположения
+                  href: ide/reference/projects-solutions-locations-options.md
+                - name: Значения по умолчанию для VB
                   href: ide/reference/visual-basic-defaults-projects-options-dialog-box.md
-                - name: Проекты и решения ("Параметры проекта VC++")
+                - name: Параметры проекта VC++
                   href: ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box.md
-            - name: Диалоговое окно "Параметры конструктора XAML"
+                - name: Веб-проекты
+                  href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
+            - name: Текстовый редактор
+              items:
+                - name: Общие
+                  href: ide/reference/options-text-editor-general.md
+                - name: Расширение файла
+                  href: ide/reference/options-text-editor-file-extension.md
+                - name: Все языки
+                  items:
+                    - name: Общие
+                      href: ide/reference/options-text-editor-all-languages.md
+                    - name: Полосы прокрутки
+                      href: ide/reference/options-text-editor-all-languages-scroll-bars.md
+                    - name: Вкладки
+                      href: ide/reference/options-text-editor-all-languages-tabs.md
+                - name: Basic
+                  items:
+                    - name: Дополнительно
+                      href: ide/reference/options-text-editor-basic-visual-basic.md
+                    - name: Стиль кода
+                      href: ide/code-styles-and-code-cleanup.md
+                    - name: IntelliSense
+                      href: ide/visual-basic-specific-intellisense.md
+                - name: 'C#'
+                  items:
+                    - name: Дополнительно
+                      href: ide/reference/options-text-editor-csharp-advanced.md
+                    - name: Стиль кода > Форматирование
+                      href: ide/reference/options-text-editor-csharp-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-csharp-intellisense.md
+                - name: C/C++
+                  items:
+                    - name: Дополнительно
+                      href: ide/reference/options-text-editor-c-cpp-advanced.md
+                    - name: Экспериментальный
+                      href: ide/reference/options-text-editor-c-cpp-experimental.md
+                    - name: Форматирование
+                      href: ide/reference/options-text-editor-c-cpp-formatting.md
+                    - name: Просмотр
+                      href: ide/reference/options-text-editor-c-cpp-view.md
+                - name: 'F#'
+                  items:
+                    - name: Дополнительно
+                      href: ide/reference/options-text-editor-fsharp-advanced.md
+                    - name: Исправления кода
+                      href: ide/reference/options-text-editor-fsharp-code-fixes.md
+                    - name: CodeLens
+                      href: ide/reference/options-text-editor-fsharp-codelens.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-fsharp-intellisense.md
+                - name: HTML (веб-формы)
+                  items:
+                    - name: Форматирование
+                      href: ide/reference/options-text-editor-html-formatting.md
+                    - name: Прочее
+                      href: ide/reference/options-text-editor-html-miscellaneous.md
+                    - name: Проверка
+                      href: ide/reference/options-text-editor-html-validation.md
+                - name: JavaScript/TypeScript
+                  items:
+                    - name: Проверка кода
+                      href: ide/reference/options-text-editor-javascript-code-validation.md
+                    - name: Форматирование
+                      href: ide/reference/options-text-editor-javascript-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-javascript-intellisense.md
+                    - name: Выделение
+                      href: ide/reference/options-text-editor-javascript-linting.md
+                    - name: Проект
+                      href: ide/reference/options-text-editor-javascript-project.md
+                - name: U-SQL
+                  items:
+                    - name: Форматирование
+                      href: ide/reference/options-text-editor-usql-formatting.md
+                    - name: IntelliSense
+                      href: ide/reference/options-text-editor-usql-intellisense.md
+                - name: XAML
+                  items:
+                    - name: Форматирование
+                      href: ide/reference/options-text-editor-xaml-formatting.md
+                    - name: Прочее
+                      href: ide/reference/options-text-editor-xaml-miscellaneous.md
+                - name: XML
+                  items:
+                    - name: Форматирование
+                      href: ide/reference/options-text-editor-xml-formatting.md
+                    - name: Прочее
+                      href: ide/reference/options-text-editor-xml-miscellaneous.md
+            - name: Конструктор XAML
               href: ide/reference/xaml-designer.md
-        - name: Окно выходных данных
+        - name: окно выходных данных
           href: ide/reference/output-window.md
         - name: Свойства проекта
           items:

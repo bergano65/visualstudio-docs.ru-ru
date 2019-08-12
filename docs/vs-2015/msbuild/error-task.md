@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b220d12b872a81cba5f46bd14fdebafaa58cf4a1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201814"
 ---
 # <a name="error-task"></a>Задача Error
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59652882"
 ## <a name="parameters"></a>Параметры  
  В следующей таблице описаны параметры задачи `Error`.  
   
-|Параметр|Описание|  
+|Параметр|ОПИСАНИЕ|  
 |---------------|-----------------|  
 |`Code`|Необязательный параметр `String` .<br /><br /> Код ошибки для связи с ошибкой.|  
 |`File`|Необязательный параметр `String` .<br /><br /> Имя файла, содержащего ошибку. Если имя файла не указано, используется файл, содержащий задачу Error.|  
@@ -65,6 +65,6 @@ ms.locfileid: "59652882"
 </Project>  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)   
  [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)

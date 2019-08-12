@@ -1,5 +1,5 @@
 ---
-title: Пошаговое руководство. Автоматизация приложения с настраиваемой области задач
+title: Пошаговое руководство. Автоматизация приложения с помощью настраиваемой области задач
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38245a3c16c79806f495b76a0ae0d64b55c05623
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f5135e96125192d7ed125287aa47c839031824fe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438725"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871944"
 ---
-# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Пошаговое руководство. Автоматизация приложения с настраиваемой области задач
+# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Пошаговое руководство. Автоматизация приложения с помощью настраиваемой области задач
   В этом пошаговом руководстве рассматриваются способы создания настраиваемой области задач, которая автоматизирует PowerPoint. Настраиваемая область задач вставляет даты в слайд, когда пользователь нажимает элемент управления <xref:System.Windows.Forms.MonthCalendar> в ней.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "63438725"
 
 ### <a name="to-create-a-new-project"></a>Создание нового проекта
 
-1. Создайте проект надстройки VSTO для PowerPoint с именем **MyAddIn**, используя шаблон проекта надстройки PowerPoint. Дополнительные сведения см. в разделе [Как Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Создайте проект надстройки VSTO для PowerPoint с именем **MyAddIn**, используя шаблон проекта надстройки PowerPoint. Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] открывает файл кода **ThisAddIn.cs** или **ThisAddIn.vb** и добавляет проект **MyAddIn** в **обозреватель решений**.
 
@@ -73,7 +73,7 @@ ms.locfileid: "63438725"
 
      Если элемент управления **MonthCalendar** больше поверхности конструктора пользовательского элемента управления, измените размер пользовательского элемента управления в соответствии с размерами элемента управления **MonthCalendar** .
 
-## <a name="automate-powerpoint-from-the-custom-task-pane"></a>Автоматизация PowerPoint в настраиваемой области задач
+## <a name="automate-powerpoint-from-the-custom-task-pane"></a>Автоматизация PowerPoint с помощью настраиваемой области задач
  Задача надстройки VSTO состоит в том, чтобы разместить выбранную дату на первом слайде активной презентации. Используйте событие <xref:System.Windows.Forms.MonthCalendar.DateChanged> элемента управления, чтобы добавить выбранную дату при ее изменении.
 
 ### <a name="to-automate-powerpoint-from-the-custom-task-pane"></a>Автоматизация PowerPoint в настраиваемой области задач
@@ -82,12 +82,12 @@ ms.locfileid: "63438725"
 
      Откроется файл **MyUserControl.cs** или **MyUserControl.vb** , и будет создан обработчик событий <xref:System.Windows.Forms.MonthCalendar.DateChanged> .
 
-2. Добавьте приведенный ниже код в начало файла. В этом коде создаются псевдонимы для пространств имен <xref:Microsoft.Office.Core> и <xref:Microsoft.Office.Interop.PowerPoint> .
+2. Добавьте приведенный ниже код в начало файла. Этот код создает псевдонимы для <xref:Microsoft.Office.Core> пространств имен и в [PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) .
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]
 
-3. Добавьте следующий код в класс `MyUserControl` . Этот код объявляет объект <xref:Microsoft.Office.Interop.PowerPoint.Shape> как член класса `MyUserControl`. На следующем этапе мы будем использовать этот объект <xref:Microsoft.Office.Interop.PowerPoint.Shape> для добавления текстового поля на слайд активной презентации.
+3. Добавьте следующий код в класс `MyUserControl` . Этот код объявляет объект [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) в качестве члена `MyUserControl`. На следующем шаге эта [фигура](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) будет использоваться для добавления текстового поля к слайду в активной презентации.
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]
@@ -123,7 +123,7 @@ ms.locfileid: "63438725"
 
 ### <a name="to-test-your-vsto-add-in"></a>Для тестирования надстройки VSTO выполните следующие действия.
 
-1. Нажмите клавишу **F5** для запуска проекта.
+1. Нажмите клавишу **F5** , чтобы запустить проект.
 
 2. Убедитесь в том, что настраиваемая область задач видна.
 
@@ -134,14 +134,14 @@ ms.locfileid: "63438725"
 ## <a name="next-steps"></a>Следующие шаги
  Дополнительные сведения о создании настраиваемых областей задач см. в следующих разделах:
 
-- Создание настраиваемой области задач в надстройке VSTO для другого приложения. Дополнительные сведения о приложениях, поддерживающих настраиваемые области задач, см. в разделе [настраиваемых панелей задач](../vsto/custom-task-panes.md).
+- Создание настраиваемой области задач в надстройке VSTO для другого приложения. Дополнительные сведения о приложениях, поддерживающих настраиваемые области задач, см. в разделе [настраиваемые области задач](../vsto/custom-task-panes.md).
 
-- Создание кнопки ленты, которая может использоваться для скрытия или отображения настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: Синхронизация настраиваемой области задач с кнопкой на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
+- Создание кнопки ленты, которая может использоваться для скрытия или отображения настраиваемой области задач. Дополнительные сведения см. в разделе [Пошаговое руководство: Синхронизация настраиваемой области задач с помощью кнопки](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)на ленте.
 
-- Создание настраиваемой области задач для каждого сообщения электронной почты, открываемого в Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство: Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).
+- Создание настраиваемой области задач для каждого сообщения электронной почты, открываемого в Outlook. Дополнительные сведения см. в разделе [Пошаговое руководство: Отображение настраиваемых областей задач с сообщениями электронной почты](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)в Outlook.
 
 ## <a name="see-also"></a>См. также
 - [Настраиваемые области задач](../vsto/custom-task-panes.md)
 - [Практическое руководство. Добавление настраиваемой области задач в приложение](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Пошаговое руководство: Синхронизация настраиваемой области задач с кнопкой на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
+- [Пошаговое руководство: Синхронизация настраиваемой области задач с помощью кнопки на ленте](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
 - [Пошаговое руководство: Отображение настраиваемых областей задач с сообщениями электронной почты в Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)

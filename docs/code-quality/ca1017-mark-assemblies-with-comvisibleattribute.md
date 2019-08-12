@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 648c59e2660c0509edfcf65ac50bf8791bc5896e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6bc88d3932baa5bbb4a723d7a16509831d58146
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779436"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923096"
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017. Пометьте сборки с помощью ComVisibleAttribute
 
@@ -31,27 +31,27 @@ ms.locfileid: "62779436"
 |-|-|
 |TypeName|MarkAssembliesWithComVisible|
 |CheckId|CA1017|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Сборка не имеет <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> атрибут, примененный к нему.
+К сборке не <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> применен атрибут.
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.Runtime.InteropServices.ComVisibleAttribute> Атрибут определяет, как COM-клиентам доступ к управляемому коду. Для правильной разработки сборки должны явным образом указывать видимость COM. Видимость COM можно задать для всей сборки и затем переопределить ее для отдельных типов и членов типов. Если атрибут отсутствует, содержимое сборки будет видимым COM-клиентам.
+Атрибут <xref:System.Runtime.InteropServices.ComVisibleAttribute> определяет, как клиенты COM обращаются к управляемому коду. Для правильной разработки сборки должны явным образом указывать видимость COM. Видимость COM может быть задана для всей сборки, а затем переопределена для отдельных типов и членов типов. Если атрибут отсутствует, содержимое сборки становится видимым для клиентов COM.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, добавьте атрибут к сборке. Если вы не хотите, чтобы сборка должна быть видимыми для COM-клиентам, примените атрибут и присвойте ему значение `false`.
+Чтобы устранить нарушение этого правила, добавьте атрибут в сборку. Если вы не хотите, чтобы сборка была видима клиентам COM, примените атрибут и задайте для `false`него значение.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует. Если требуется сборка должна быть видимой, примените атрибут и присвойте ему значение `true`.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует. Если необходимо, чтобы сборка была видимой, примените атрибут и задайте для `true`него значение.
 
 ## <a name="example"></a>Пример
- В следующем примере показано сборку, которая имеет <xref:System.Runtime.InteropServices.ComVisibleAttribute> атрибут, примененный к запрещающий видимыми для COM-клиентам.
+В следующем примере показана сборка с <xref:System.Runtime.InteropServices.ComVisibleAttribute> примененным атрибутом, чтобы предотвратить ее видимость для COM-клиентов.
 
- [!code-cpp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CPP/ca1017-mark-assemblies-with-comvisibleattribute_1.cpp)]
- [!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]
- [!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]
+[!code-cpp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CPP/ca1017-mark-assemblies-with-comvisibleattribute_1.cpp)]
+[!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]
+[!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]
 
 ## <a name="see-also"></a>См. также
 

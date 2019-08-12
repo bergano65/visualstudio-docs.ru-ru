@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Сведения о подписке на Power BI Pro, входящей в некоторые подписки Visual Studio.
-ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 499a4ee168aaab7dfee2527bdbf10cc3b10313b8
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824634"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787961"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro в подписках Visual Studio
 
@@ -33,8 +33,6 @@ ms.locfileid: "67824634"
    > ![Существующая учетная запись для преимущества Power BI Pro](_img/vs-pbi/vs-pbi-existing-account.png)
 
 4. Чтобы создать учетную запись, укажите свои контактные данные, а затем нажмите кнопку **Далее**.
-   > [!div class="mx-imgBorder"]
-   > ![Создание учетной записи для преимущества Power BI Pro](_img/vs-pbi/vs-pbi-create-account-cropped.png)
 
 5. Затем создайте идентификатор пользователя и пароль.  Если у вас уже есть учетная запись и вы создали еще одну, потребуется указать имя организации, отличающееся от имени в существующей учетной записи.  Щелкните **Создать учетную запись**.
    > [!div class="mx-imgBorder"]
@@ -45,8 +43,6 @@ ms.locfileid: "67824634"
    > ![Доказательство того, что вы не робот, для преимущества Power BI Pro](_img/vs-pbi/vs-pbi-robot1-cropped.png)
 
 7. Введите полученный код и нажмите кнопку **Далее**.
-   > [!div class="mx-imgBorder"]
-   > ![Доказательство того, что вы не робот, для преимущества Power BI Pro2](_img/vs-pbi/vs-pbi-robot2-cropped.png)
 
 8. Укажите контактные данные и нажмите кнопку **Далее**.
    > [!div class="mx-imgBorder"]
@@ -59,8 +55,6 @@ ms.locfileid: "67824634"
     > ![Контактные данные для преимущества Power BI Pro](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
 
 11. Следующая страница подтверждает, что у вас все готово к началу работы с Power BI Pro.  На ней должна быть ссылка на страницу входа.  Мы рекомендуем записать ссылку на страницу входа, а также ваш идентификатор пользователя.  (После настройки учетной записи вы также получите приветственное сообщение электронной почты на указанный адрес.)  Может также появиться окно автоматического помощника Office 365, которое можно использовать, если у вас есть вопросы.  Нажмите кнопку **Начало работы** для продолжения.
-    > [!div class="mx-imgBorder"]
-    > ![Все готово к работе с преимуществом Power BI Pro](_img/vs-pbi/vs-pbi-all-set-cropped.png)
 
 12. Теперь, когда ваша учетная запись Power BI Pro настроена, вы увидите Центр администрирования Office 365, где можно управлять пользователями и доменами, устанавливать программное обеспечение Office и изучать возможности Office 365.  Вот и все!  Все готово.
 

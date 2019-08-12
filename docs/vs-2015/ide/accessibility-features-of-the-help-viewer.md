@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 041e83f8d71679ffb26d24be37f353e39fbc08e6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148284"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Специальные возможности средства просмотра справки
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54765848"
 Корпорация Microsoft стремится к тому, чтобы сделать использование своих продуктов и служб простым и удобным для каждого. В этот раздел входит информация о функциях, продуктах и службах, помогающих предоставить окно справки (Майкрософт) 2.2 для людей с разными физическими возможностями.  
   
 ## <a name="keyboard-access"></a>Доступ с клавиатуры  
- Вы можете получить доступ ко всем возможностям окна справки, используя клавиатуру. Дополнительные сведения см. в разделе [Сочетания клавиш (окно справки)](../ide/shortcut-keys-help-viewer.md).  
+ Вы можете получить доступ ко всем функциям окна справки, используя клавиатуру. Дополнительные сведения см. в разделе [Сочетания клавиш (окно справки)](../ide/shortcut-keys-help-viewer.md).  
   
 ## <a name="font-size"></a>Font size  
  Вы можете изменить размер шрифта текста, отображаемого в окне документа. Дополнительные сведения см. в разделе [Настройка окна справки](../ide/customize-the-help-viewer.md).  
@@ -39,5 +39,5 @@ ms.locfileid: "54765848"
 ## <a name="internet-explorer-options"></a>Параметры Internet Explorer  
  Вы можете сделать окно справки более доступным, изменив параметры Internet Explorer, связанные с отображением веб-страниц. Дополнительные сведения см. в разделе [Настройка окна справки](../ide/customize-the-help-viewer.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Окно справки (Майкрософт)](../ide/microsoft-help-viewer.md)

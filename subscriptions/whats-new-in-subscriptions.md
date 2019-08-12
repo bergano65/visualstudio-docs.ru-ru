@@ -2,17 +2,17 @@
 title: Новые возможности подписок Visual Studio
 description: Узнайте о новых и обновленных функциях, которые можно использовать для управления подписками Visual Studio.
 ms.custom: ''
-ms.date: 06/27/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: ba6c17aa6aa1f0a89e53be6b8dba7067e1fdc902
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891075"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493396"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Новые возможности в подписках Visual Studio
 
@@ -42,7 +42,3 @@ ms.locfileid: "67891075"
 Если в вашей организации уже используются подписки Visual Studio с GitHub Enterprise, ознакомьтесь с нашей документацией по [управлению этими подписками](assign-github.md).  
 
 Вот и все!
-
-## <a name="see-also"></a>См. также
-
-* [Преимущества для подписчиков](subscriber-benefits.md)

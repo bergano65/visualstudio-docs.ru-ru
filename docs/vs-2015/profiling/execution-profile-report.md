@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0d95d4593939b878194d2aeef79bdd0a8ad946a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160647"
 ---
 # <a name="execution-profile-report"></a>Выполнение отчета профилирования
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "54756521"
   
   В следующей таблице перечислены столбцы отчета.  
   
-|Столбец|Описание|  
+|Столбец|ОПИСАНИЕ|  
 |------------|-----------------|  
 |name|Имя функции для каждого уровня стека вызова.|  
 |Включающие выборки|Общее количество выборок, собранных для всех стеков, сведенное в этот уровень дерева стека вызовов. Инклюзивное число — это сумма исключающих выборок для данной функции и инклюзивных счетчиков для всех ее дочерних узлов.|  
@@ -42,5 +42,5 @@ ms.locfileid: "54756521"
   
  Эта таблица отчета может отображаться в представлении [Время выполнения (представление "Потоки")](../profiling/execution-time-threads-view.md).  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Представление потоков](../profiling/threads-view-parallel-performance.md)

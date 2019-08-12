@@ -1,21 +1,22 @@
 ---
 title: Пошаговое руководство. Создание среды построения из нескольких компьютеров
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262940"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461539"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Пошаговое руководство. Создание среды построения из нескольких компьютеров
 
@@ -47,7 +48,7 @@ Visual Studio с установленной рабочей нагрузкой **
 
 ## <a name="install-software-on-the-computers"></a>Установка программного обеспечения на компьютеры
 
-Сначала необходимо настроить главный компьютер, а затем компьютер построения.
+Сначала необходимо настроить главный компьютер, а затем компьютер сборки.
 
 При установке Visual Studio на главный компьютер создаются файлы и параметры, которые впоследствии необходимо скопировать на компьютер построения. Visual Studio можно установить на компьютер с архитектурой x86 или x64, но при этом главный компьютер и компьютер построения должны иметь одинаковые архитектуры.
 

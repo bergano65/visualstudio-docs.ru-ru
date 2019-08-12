@@ -1,17 +1,17 @@
 ---
 title: Использование портала для подписчиков — http://my.visualstudio.com  | Документы Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/04/2018
+ms.author: lank
+manager: lank
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Сведения о полном наборе преимуществ, доступных на портале подписок Visual Studio
-ms.openlocfilehash: eab622c843a7099b5a75ca953d55666be849b246
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784779"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377920"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Сведения об использовании портала подписчика (my.visualstudio.com)
 
@@ -51,3 +51,6 @@ ms.locfileid: "67784779"
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
 Пора обновить облачную подписку Visual Studio?  Нужно скачать свежие версии расширений для семейства продуктов Visual Studio?  Marketplace помогает пользователям найти расширения, средства и службы, дополняющие возможности Azure DevOps, Azure DevOps Server и Visual Studio Code. Вы даже можете стать издателем и опубликовать в Marketplace собственные расширения.
+
+## <a name="next-steps"></a>Следующие шаги
+Войдите на портал [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) и ознакомьтесь с вашими преимуществами.  Вы также можете узнать больше о входе на портал с помощью [учетной записи Майкрософт ](sign-in-msa.md)(MSA), [рабочей или учебной учетной записи](sign-in-work.md) и даже [учетной записи GitHub](sign-in-github.md). 

@@ -2,7 +2,9 @@
   href: designing-user-interfaces.md
 - name: XAML
   items:
-    - name: "Проектирование XAML в Visual\_Studio"
+    - name: Общие сведения о XAML
+      href: xaml-overview.md
+    - name: "Проектирование XAML в Visual\_Studio и Blend"
       href: designing-xaml-in-visual-studio.md
     - name: Конструктор XAML
       items:
@@ -15,45 +17,34 @@
           href: organize-objects-into-layout-containers-in-xaml-designer.md
         - name: Создание и применение ресурса
           href: how-to-create-and-apply-a-resource.md
-        - name: "Пошаговое руководство. Привязка к данным в конструкторе\_XAML"
+        - name: Пошаговое руководство. Привязка к данным
           href: walkthrough-binding-to-data-in-xaml-designer.md
-        - name: Сочетания клавиш для конструктора XAML
-          href: keyboard-shortcuts-for-xaml-designer.md
         - name: Отладка или отключение кода проекта
           href: debugging-or-disabling-project-code-in-xaml-designer.md
-        - name: "Ошибки и предупреждения\_XAML"
-          href: xaml-errors-warnings.md
-    - name: Blend для Visual Studio
-      items:
-        - name: Обзор
-          displayName: Blend for Visual Studio
+        - name: Blend для Visual Studio
           href: creating-a-ui-by-using-blend-for-visual-studio.md
-        - name: Вставка элементов управления и изменение их поведения
-          href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
-        - name: 'Вставка изображений, видео- и аудиоклипов'
-          href: insert-images-videos-and-audio-clips-in-xaml-designer.md
-        - name: Рисование фигур и контуров
+        - name: Рисование фигур и контуров (Blend)
           href: draw-shapes-and-paths.md
-        - name: Изменение стиля объектов в Blend
+        - name: Изменение стиля объектов (Blend)
           href: modify-the-style-of-objects-in-blend.md
-        - name: Анимирование объектов
+        - name: Анимирование объектов (Blend)
           href: animate-objects-in-xaml-designer.md
-        - name: Отображение данных
+        - name: Отображение данных (Blend)
           href: display-data-in-blend.md
-        - name: Сочетания клавиш и клавиши-модификаторы
+        - name: Справочник
           items:
-            - name: Обзор
-              href: keyboard-shortcuts-and-modifier-keys-in-blend.md
-            - name: Сочетания клавиш
+            - name: "Ошибки и предупреждения\_XAML"
+              href: xaml-errors-warnings.md
+            - name: Сочетания клавиш для конструктора XAML
+              href: keyboard-shortcuts-for-xaml-designer.md
+            - name: Сочетания клавиш для Blend
               href: keyboard-shortcuts-in-blend.md
-            - name: Клавиши-модификаторы монтажной панели
+            - name: Клавиши-модификаторы области рисования (Blend)
               href: artboard-modifier-keys-in-blend.md
-            - name: Клавиши-модификаторы инструмента "Перо"
+            - name: Клавиши-модификаторы инструмента "перо" (Blend)
               href: pen-tool-modifier-keys-in-blend.md
-            - name: Клавиши-модификаторы инструмента "Непосредственное выделение"
+            - name: Клавиши-модификаторы инструмента "Прямой выбор" (Blend)
               href: direct-selection-tool-modifier-keys-in-blend.md
-        - name: "Продукты и службы для\_Blend со специальными возможностями"
-          href: accessibility-products-and-services-blend.md
 - name: Windows Presentation Foundation (WPF)
   items:
     - name: Начало работы

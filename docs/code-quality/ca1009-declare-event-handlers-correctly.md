@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c5d2df6be4fef281d91794b5b71bfa0c3e653f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a98ec47688f289fadba66401aca9fcee7b602cdc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779679"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923572"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009. Правильно объявляйте обработчики событий
 
@@ -31,32 +31,32 @@ ms.locfileid: "62779679"
 |-|-|
 |TypeName|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Делегат, обрабатывающий событие открытый или защищенный не имеет правильной сигнатуры, возвращаемого типа или имена параметров.
+Делегат, обрабатывающий открытое или защищенное событие, не имеет правильной сигнатуры, возвращаемого типа или имен параметров.
 
 ## <a name="rule-description"></a>Описание правила
- Методы обработчиков событий принимают два параметра. Первый — типа <xref:System.Object?displayProperty=fullName> и называется «отправителя». Это объект, вызвавший событие. Второй параметр имеет тип <xref:System.EventArgs?displayProperty=fullName> и называется «e». Это данные, связанные с событием. Например если событие возникает каждый раз, когда файл открыт, данные события обычно содержит имя файла.
+Методы обработчиков событий принимают два параметра. Первый имеет тип <xref:System.Object?displayProperty=fullName> и имеет имя sender. Это объект, вызвавший событие. Второй параметр имеет тип <xref:System.EventArgs?displayProperty=fullName> и имеет имя "e". Это данные, связанные с событием. Например, если событие возникает при открытии файла, то данные события обычно содержат имя файла.
 
- Методы обработчика событий не должны возвращать значение. В языке C# оно обозначается типом возвращаемого `void`. Обработчик событий может вызывать несколько методов в нескольких объектах. Если методы было разрешено для возврата значения, будет возникать несколькими возвращаемыми значениями для каждого события и только значение последнего метода, вызванного бы быть доступны.
+Методы обработчиков событий не должны возвращать значение. На языке C# программирования это определяется типом `void`возвращаемого значения. Обработчик событий может вызывать несколько методов в нескольких объектах. Если методам было разрешено возвращать значение, для каждого события будет происходить несколько возвращаемых значений, и будет доступно только значение последнего вызванного метода.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение данного правила, исправьте подпись, тип возвращаемого значения или имена параметров делегата. Дополнительные сведения см. следующий пример.
+Чтобы устранить нарушение этого правила, исправьте сигнатуру, возвращаемый тип или имена параметров делегата. Дополнительные сведения см. в следующем примере.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В следующем примере показано делегат, который подходит для обработки событий. Методы, которые могут быть вызваны этот обработчик событий соответствует подписи, который указан в руководствах по разработке. `AlarmEventHandler` — Имя типа делегата. `AlarmEventArgs` является производным от базового класса данных о событиях, <xref:System.EventArgs>, и содержит alarm данные события.
+В следующем примере показан делегат, подходящий для обработки событий. Методы, которые могут вызываться этим обработчиком событий, соответствуют сигнатуре, указанной в руководствах по проектированию. `AlarmEventHandler`имя типа делегата. `AlarmEventArgs`является производным от базового класса для данных события, <xref:System.EventArgs>и содержит данные события будильника.
 
- [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
- [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
- [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
+[!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
+[!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
+[!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2109: Проверьте видимые обработчики событий](../code-quality/ca2109-review-visible-event-handlers.md)
+[CA2109: Просмотр видимых обработчиков событий](../code-quality/ca2109-review-visible-event-handlers.md)
 
 ## <a name="see-also"></a>См. также
 

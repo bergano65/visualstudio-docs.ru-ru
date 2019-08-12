@@ -1,6 +1,7 @@
 ---
 title: Свойства файлов (JavaScript)
 ms.date: 06/21/2017
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -20,19 +21,20 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8bb8bc743aea29219edc8db9c0c52bf839954a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d615a6d805fb9ff63ffd0ac402b115a0e9dc691
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790652"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461830"
 ---
 # <a name="file-properties-javascript"></a>Свойства файлов (JavaScript)
+
 Свойства файлов можно использовать, чтобы указать, какие действия с файлами должны выполняться системой проекта. Например, можно задать свойства файла, чтобы указать, что файл необходимо добавить в пакет как файл ресурсов.
 
  Можно выбрать любой файл в обозревателе решений, а затем просмотреть его свойства в окне "Свойства". Файлы JavaScript имеют четыре свойства: **Копировать в выходной каталог**, **Действие пакета**, **Имя файла** и **Путь к файлу**.
@@ -92,6 +94,6 @@ ms.locfileid: "62790652"
 ### <a name="version"></a>Версия
  Отображает версию, на которую указывает ссылка.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Управление свойствами проектов и решений](../../ide/managing-project-and-solution-properties.md)

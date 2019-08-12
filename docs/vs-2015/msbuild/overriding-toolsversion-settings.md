@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 468561a627a3ad7eb477328b5afef794c7acf2c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199947"
 ---
 # <a name="overriding-toolsversion-settings"></a>Переопределение параметров ToolsVersion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +126,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     4. В противном случае используйте текущий параметр `ToolsVersion`.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Настройка для различных версий](../msbuild/msbuild-multitargeting-overview.md)   
  [Основные понятия MSBuild](../msbuild/msbuild-concepts.md)   
  [Набор инструментов (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   

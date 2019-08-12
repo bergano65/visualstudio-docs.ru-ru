@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d361e5231d72df81fae164818bbe8341442c9f89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199174"
 ---
 # <a name="list-disassembly-command"></a>Команда List Disassembly
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 >Debug.ListDisassembly  
 ```  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Команда "Вывести стек вызовов"](../../ide/reference/list-call-stack-command.md)   
  [Команда List Thread](../../ide/reference/list-threads-command.md)   
  [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)   

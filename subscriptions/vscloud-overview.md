@@ -1,20 +1,19 @@
 ---
 title: Как приобрести облачные подписки на Visual Studio
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
-ms.openlocfilehash: 557f23a6ffa4af39dce2e9716a56ea0e99875f82
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 5844ac1e22346e8001f0a682848b36fdb6b3f8a5
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891059"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606114"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
-
 Вы можете купить [подписки на Visual Studio Professional и Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) в [Visual Studio Marketplace](https://marketplace.visualstudio.com). Это так называемые **облачные подписки**.
 
 [Сравнение преимуществ облачных подписок и цены на них](https://visualstudio.microsoft.com/vs/pricing/)
@@ -23,11 +22,10 @@ ms.locfileid: "67891059"
 > Корпорация Майкрософт больше не предлагает годовые подписки на Visual Studio Professional и Visual Studio Enterprise в рамках облачных подписок. Никаких изменений не предвидится в том, что существующие клиенты могут продлить, изменить или отменить свои подписки. Новым клиентам мы рекомендуем ознакомиться с расценками на Visual Studio и вариантами покупки на этой странице: [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/). Вы по-прежнему можете приобрести ежемесячные облачные подписки.
 
 ## <a name="before-you-start"></a>Перед началом работы
-
-* Для выставления счетов за покупки требуется [подписка Azure](https://azure.microsoft.com/pricing/purchase-options/). [Зарегистрироваться](https://portal.azure.com) можно перед совершением первой покупки или в процессе ее совершения в Visual Studio Marketplace.
+Для выставления счетов за покупки требуется [подписка Azure](https://azure.microsoft.com/pricing/purchase-options/). [Зарегистрироваться](https://portal.azure.com) можно перед совершением первой покупки или в процессе ее совершения в Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Кто может приобрести облачные подписки на Visual Studio?
-Облачные подписки может приобрести любой пользователь с доступом к подписке Azure уровня [владельца](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [администратора службы](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) или [соадминистратора](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription).
+Облачные подписки может приобрести любой пользователь с доступом к подписке Azure уровня [владельца](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [администратора или соадминистратора службы](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription).
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Как купить облачные подписки
 
@@ -70,11 +68,6 @@ ms.locfileid: "67891059"
 
 * Чтобы отменить подписки, измените их число на ноль (0). Они не будут продлены в начале следующего расчетного периода (первое число следующего месяца для ежемесячных облачных подписок и через 12 месяцев для годовых облачных подписок).
 
-## <a name="buy-cloud-subscriptions-now"></a>Купить облачные подписки прямо сейчас
-
-* [Visual Studio Professional — месячная подписка](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
-* [Visual Studio Enterprise — месячная подписка](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
-
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
 
 ### <a name="for-new-customers"></a>Для новых клиентов.
@@ -96,11 +89,9 @@ ms.locfileid: "67891059"
 Ответ.  Нет.  Ваши подписки сохраняются без изменений и вы сможете управлять ими, как обычно.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>Вопрос: Что делать, если мне нужно увеличить количество подписок для моих клиентов?
-
-Ответ. Плата за годовые подписки, приобретенные в течение определенного месяца, взимается сразу за целый год. Эти подписки будут действительны в течение всего года. По этой причине администратор может изменять количество лицензий только в текущем месяце приобретения (лицензии будут действительны в течение 1 года и плата будет взиматься за 1 год). Количество подписок можно увеличивать только в течение месяца приобретения.
+Ответ. Вы можете приобрести дополнительные годовые подписки в любое время.  Плата за годовые подписки взимается сразу за целый год. Эти подписки будут действительны в течение всего года. 
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Вопрос: Что делать, если мне нужно уменьшить количество подписок для моих клиентов?
-
 Ответ. Администратор компании сможет уменьшить количество подписок, открыв страницу https://manage.visualstudio.com и выполнив соответствующие инструкции из этой статьи. Система *не* распределит сумму пропорционально. Чтобы получить возмещение, необходимо обратиться в отдел выставления счетов Azure.
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>Вопрос: Если я отменю подписку, смогу ли я позднее приобрести другую годовую облачную подписку?
@@ -123,8 +114,12 @@ ms.locfileid: "67891059"
 Ответ.  Приобретение новой годовой облачной подписки будет недоступно, но у них есть много других вариантов приобретения подписок на Visual Studio.  Подробная информация собрана на странице [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 ## <a name="related-resources"></a>Связанные ресурсы
+- [Портал администрирования подписок Visual Studio](https://manage.visualstudio.com/)
+- [Поддержка по подписке Visual Studio](https://visualstudio.microsoft.com/vs/support/)
+- [Вопросы и ответы о выставлении счетов за облачные подписки Visual Studio](vscloud-billing-faq.md)
+- [Приобретение облачных подписок Visual Studio для поставщиков облачных решений](vscloud-csp.md)
 
-* [Портал администрирования подписок Visual Studio](https://manage.visualstudio.com/)
-* [Поддержка по подписке Visual Studio](https://visualstudio.microsoft.com/vs/support/)
-* [Вопросы и ответы о выставлении счетов за облачные подписки Visual Studio](vscloud-billing-faq.md)
-* [Приобретение облачных подписок Visual Studio для поставщиков облачных решений](vscloud-csp.md)
+## <a name="next-steps"></a>Следующие шаги
+Купить облачные подписки
+- [Visual Studio Professional — месячная подписка](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
+- [Visual Studio Enterprise — месячная подписка](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)

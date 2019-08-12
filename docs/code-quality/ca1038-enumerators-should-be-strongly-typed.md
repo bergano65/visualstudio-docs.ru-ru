@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61eced11a61b8da92d01d26c0e66ad5d9c49f72d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2dae77bf7783edc165305f9b3ba60969d4f126a8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778776"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922894"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038. Перечислители должны иметь строгие типы
 
@@ -27,11 +27,11 @@ ms.locfileid: "62778776"
 |-|-|
 |TypeName|EnumeratorsShouldBeStronglyTyped|
 |CheckId|CA1038|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный тип реализует <xref:System.Collections.IEnumerator?displayProperty=fullName> , но не предоставляет строго типизированную версию <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> свойство. Типы, которые являются производными от следующих типов будут исключены из этого правила:
+Открытый или защищенный тип реализует <xref:System.Collections.IEnumerator?displayProperty=fullName> , но не предоставляет строго типизированную версию <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> свойства. Из этого правила исключены типы, производные от следующих типов:
 
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
@@ -40,23 +40,23 @@ ms.locfileid: "62778776"
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Описание правила
- Это правило требует <xref:System.Collections.IEnumerator> реализации предоставляли строго типизированную версию <xref:System.Collections.IEnumerator.Current%2A> свойство, чтобы пользователям не придется приводить возвращаемое значение к строгому типу, при использовании функциональных возможностей интерфейса. В этом правиле предполагается, что тип, реализующий <xref:System.Collections.IEnumerator> содержит коллекцию экземпляров типа, которое строже, чем <xref:System.Object>.
+Это правило требует <xref:System.Collections.IEnumerator> , чтобы реализации также предоставляли строго типизированную версию <xref:System.Collections.IEnumerator.Current%2A> свойства, так что пользователям не требуется приводить возвращаемое значение к строгому типу при использовании функций, предоставляемых интерфейсом. Это правило предполагает, что тип, реализующий <xref:System.Collections.IEnumerator> , содержит коллекцию экземпляров типа, которые являются более надежными, чем. <xref:System.Object>
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, реализовать свойство интерфейса явным образом (он объявляется как `IEnumerator.Current`). Добавьте открытый строго типизированную версию свойства, объявленные как `Current`, который будет возвращать строго типизированный объект.
+Чтобы устранить нарушение этого правила, явно реализуйте свойство интерфейса (объявите его как `IEnumerator.Current`). Добавьте открытую строго типизированную версию свойства, объявленную как `Current`, и возвращающую строго типизированный объект.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Отключайте предупреждение из этого правила, при реализации перечислитель объектно ориентированного для использования с коллекцией на базе объектов, например двоичного дерева. Типы, расширяющие новая коллекция будет определять строго типизированный перечислитель и предоставлять строго типизированные свойства.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Подавлять предупреждение из этого правила при реализации перечислителя на основе объектов для использования с коллекцией на основе объектов, такой как двоичное дерево. Типы, расширяющие новую коллекцию, определяют строго типизированный перечислитель и предоставляют строго типизированное свойство.
 
 ## <a name="example"></a>Пример
- В следующем примере показано правильный способ реализации строго типизированный <xref:System.Collections.IEnumerator> типа.
+В следующем примере демонстрируется правильный способ реализации строго типизированного <xref:System.Collections.IEnumerator> типа.
 
- [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
+[!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1035: Реализаций ICollection есть строго типизированные элементы](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+[CA1035: Реализации ICollection имеют строго типизированные члены](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
- [CA1039: Списки обладают строгой типизацией](../code-quality/ca1039-lists-are-strongly-typed.md)
+[CA1039: Списки являются строго типизированными](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>См. также
 

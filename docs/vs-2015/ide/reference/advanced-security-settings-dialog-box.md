@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: afdeda6c18c20af1b7f82e42cedc4aadac13ebcb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178374"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Диалоговое окно "Дополнительные параметры безопасности"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,5 +46,5 @@ ms.locfileid: "59661677"
  **Отладить это приложение как загруженное со следующего URL**  
  Если приложению нужно разрешить доступ к веб-сайту или общему ресурсу сервера, соответствующим значению **URL-адрес установки**, указанному на странице **Публикация**, введите здесь этот URL-адрес. Этот параметр доступен, только если установлен флажок **Предоставить приложению доступ к своему исходному веб-сайту**.  
   
-## <a name="see-also"></a>См. также раздел  
+## <a name="see-also"></a>См. также  
  [Страница "Безопасность" в конструкторе проектов](../../ide/reference/security-page-project-designer.md)

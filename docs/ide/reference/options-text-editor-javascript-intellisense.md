@@ -1,48 +1,54 @@
 ---
 title: "\"Параметры\", \"Текстовый редактор\", JavaScript, IntelliSense"
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.IntelliSense.General
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778581"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605979"
 ---
-# <a name="options-text-editor-javascript-intellisense"></a>"Параметры", "Текстовый редактор", JavaScript, IntelliSense
-Страница **IntelliSense** диалогового окна **Параметры** служит для изменения параметров, влияющих на поведение IntelliSense для JavaScript. Чтобы открыть страницу **IntelliSense**, выберите **Сервис**  >  **Параметры** в строке меню, а затем разверните **Текстовый редактор**  >  **JavaScript**  >  **IntelliSense.**
+# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Диалоговое окно "Параметры": Текстовый редактор \> JavaScript \> IntelliSense
+
+Страница **IntelliSense** диалогового окна **Параметры** служит для изменения параметров, влияющих на поведение IntelliSense для JavaScript. Чтобы открыть страницу **IntelliSense**, выберите **Сервис** > **Параметры** в строке меню, а затем разверните **Текстовый редактор** > **JavaScript/TypeScript** > **IntelliSense.**
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 Страница **IntelliSense** содержит следующие подразделы:
 
 ## <a name="statement-completion"></a>Завершение операторов
- С помощью этих параметров можно изменять поведение функции завершения операторов IntelliSense.
+
+С помощью этих параметров можно изменять поведение функции завершения операторов IntelliSense.
 
 ### <a name="uielement-list"></a>Список элементов пользовательского интерфейса
- **Для фиксации использовать только клавиши TAB и ВВОД**
 
- Если этот флажок установлен, редактор кода JavaScript добавляет к операторам элементы из списка завершения только после нажатия клавиши **TAB** или **ВВОД**. Если этот флажок не установлен, другие символы, такие как точка, запятая, двоеточие, открывающая скобка и открывающая фигурная скобка ({), также могут добавляться к операторам с выбранными элементами.
+**Для фиксации использовать только клавиши TAB и ВВОД**
+
+Если этот флажок установлен, редактор кода JavaScript добавляет к операторам элементы из списка завершения только после нажатия клавиши **TAB** или **ВВОД**. Если этот флажок не установлен, другие символы, такие как точка, запятая, двоеточие, открывающая скобка и открывающая фигурная скобка ({), также могут добавляться к операторам с выбранными элементами.
 
 ## <a name="references"></a>Ссылки
- С помощью этих параметров можно задавать типы JS-файлов IntelliSense, которые находятся в области действия для различных типов проектов JavaScript. Ссылки IntelliSense обычно используются для обеспечения поддержки IntelliSense для глобальных объектов. Кроме того, с помощью этой страницы можно задать порядок загрузки для скриптов, которые должны загружаться во время выполнения, и добавить файлы расширения IntelliSense.
+
+С помощью этих параметров можно задавать типы JS-файлов IntelliSense, которые находятся в области действия для различных типов проектов JavaScript. Ссылки IntelliSense обычно используются для обеспечения поддержки IntelliSense для глобальных объектов. Кроме того, с помощью этой страницы можно задать порядок загрузки для скриптов, которые должны загружаться во время выполнения, и добавить файлы расширения IntelliSense.
 
 ### <a name="uielement-list"></a>Список элементов пользовательского интерфейса
- **Группы ссылок**
 
- Этот параметр задает тип группы ссылок. Поддерживаются три группы ссылок:
+**Группы ссылок**
 
- С помощью заранее определенных групп ссылок можно задавать конкретные типы JS-файлов IntelliSense, которые находятся в области действия для различных проектов JavaScript. Доступны четыре группы ссылок:
+Этот параметр задает тип группы ссылок. Поддерживаются три группы ссылок:
+
+С помощью заранее определенных групп ссылок можно задавать конкретные типы JS-файлов IntelliSense, которые находятся в области действия для различных проектов JavaScript. Доступны четыре группы ссылок:
 
 - Неявные (Windows *версия*) для приложений [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] , использующих JavaScript. Файлы, включенные в эту группу, находятся в области действия для каждого JS-файла, открытого в редакторе кода для приложений [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)], использующих JavaScript.
 
@@ -70,6 +76,6 @@ ms.locfileid: "62778581"
 > [!NOTE]
 > Для веб-проектов удаленные файлы, ссылки на которые указаны в проекте, загружаются по умолчанию.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [IntelliSense для JavaScript](../../ide/javascript-intellisense.md)

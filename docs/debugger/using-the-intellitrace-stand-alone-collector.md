@@ -1,6 +1,6 @@
 ---
-title: Использование автономного сборщика данных IntelliTrace | Документация Майкрософт
-ms.date: 11/04/2016
+title: Использование автономного сборщика IntelliTrace | Документация Майкрософт
+ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -12,33 +12,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746107"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680621"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Использование автономного сборщика данных IntelliTrace (C#, Visual Basic)
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Использование автономного сборщика IntelliTrace (C#, Visual Basic)
 
 **Автономный сборщик IntelliTrace** позволяет собирать диагностические данные IntelliTrace для приложений на производственных серверах или в других средах без установки Visual Studio на целевом компьютере и без изменения среды в целевой системе. Автономный сборщик IntelliTrace работает в веб-приложениях, а также приложениях SharePoint, WPF и Windows Forms. По окончании сбора данных просто удалите сборщик.
 
- Посмотрите IntelliTrace в действии: [Сбор и анализ данных IntelliTrace в производстве для отладки (видео Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
+ Просмотр IntelliTrace в действии: [Сбор и анализ данных IntelliTrace в рабочей среде для отладки (видео на канале 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
 > Те же данные IntelliTrace для веб-приложений и приложений SharePoint, которые выполняются на удаленных компьютерах, также можно собирать с помощью **Microsoft Monitoring Agent** в режиме **трассировки** .
 >
-> События, связанные с производительностью, можно собирать в данных IntelliTrace путем запуска агента в режиме **монитора** . Режим**монитора** влияет на производительность в меньшей степени, чем режим **трассировки** или **Intelliтрассировки stand-alone collector**. После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе. См. в разделе [с помощью Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
-> Автономный сборщик IntelliTrace не поддерживает процесс моментальных снимков.
+> События, связанные с производительностью, можно собирать в данных IntelliTrace путем запуска агента в режиме **монитора** . Режим**монитора** влияет на производительность в меньшей степени, чем режим **трассировки** или **Intelliтрассировки stand-alone collector**. После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе. См. раздел [использование Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> Изолированный сборщик IntelliTrace не поддерживает обработку моментальных снимков.
 
  **Требования**
 
-- Платформа .NET Framework 3.5, 4 или 4.5
+- .NET Framework 3,5 или более поздней версии
 
 - Visual Studio Enterprise (не Professional и не Community) на компьютере разработчика или на другом компьютере для открытия ITRACE-файлов
 
   > [!NOTE]
-  > Убедитесь, что файлы символов (.pdb) сохранены. Для отладки с помощью IntelliTrace и пошагового выполнения кода необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. в разделе [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
+  > Убедитесь, что файлы символов (.pdb) сохранены. Для отладки с помощью IntelliTrace и пошагового выполнения кода необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. раздел [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
 
   **FAQ**
 
@@ -52,7 +52,7 @@ ms.locfileid: "66746107"
 
 ## <a name="WhatApps"></a> Какие приложения работают со сборщиком?
 
-- Веб-приложения ASP.NET, размещенные в службах IIS, версия 7.0, 7.5 и 8.0
+- ASP.NET веб-приложения, размещенные на службы IIS (IIS) версии 7,0, 7,5, 8,0, 12,0 и 16,0
 
 - Приложения SharePoint 2010 и SharePoint 2013
 
@@ -80,9 +80,9 @@ ms.locfileid: "66746107"
 
 1. На сервере приложения создайте каталог сборщика, например: **C:\IntelliTraceCollector**
 
-2. Скачайте сборщик из Центра загрузки Майкрософт или из папки установки Visual Studio 2013 с обновлением 3. [IntelliTrace Collector для Visual Studio 2013 с обновлением 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
+2. Получите сборщик из [центра загрузки Майкрософт](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019), [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017)или из папки установки Visual Studio 2013 обновление 3. [IntelliTrace Collector для Visual Studio 2013 с обновлением 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
 
-   - **Центр загрузки Майкрософт**:
+   - **Центр загрузки Майкрософт** или **My.VisualStudio.com**:
 
      1. Рядом с **IntelliTraceCollector.exe**выберите **Загрузка**.
 
@@ -94,7 +94,11 @@ ms.locfileid: "66746107"
 
    - **Папка установки Visual Studio**:
 
-     1. Скопируйте файл IntelliTraceCollection.cab из следующей папки:
+     1. Скопируйте IntelliTraceCollection. cab из папки, в которой установлен сборщик, например:
+
+          **.. \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace**
+
+          или для предыдущих версий Visual Studio:
 
           **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
@@ -117,21 +121,21 @@ ms.locfileid: "66746107"
 
 1. На сервере приложения откройте окно командной строки с правами администратора.
 
-2. С помощью Windows-команды **icacls** предоставьте администратору полные права на каталог сборщика на сервере. Пример:
+2. С помощью Windows-команды **icacls** предоставьте администратору полные права на каталог сборщика на сервере. Например:
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *Домаин\администраторид\<>* `":F`
 
 3. Для сбора данных для веб-приложения или приложения SharePoint:
 
     1. Предоставьте пользователю, который будет выполнять командлеты IntelliTrace PowerShell, полные права на каталог сборщика.
 
-         Пример:
+         Например:
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. Предоставьте пулу приложений для веб-приложения или приложения SharePoint права на чтение и выполнение для каталога сборщика.
 
-         Пример:
+         Например:
 
         - Для веб-приложения в пуле приложений **DefaultAppPool** введите:
 
@@ -145,7 +149,7 @@ ms.locfileid: "66746107"
 
 1. На сервере приложения убедитесь, что компонент PowerShell включен. Для большинства версий Windows Server эту функцию можно добавить в средство администрирования **Server Manager** .
 
-     ![Добавление PowerShell с помощью диспетчера сервера](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
+     ![Добавление PowerShell с помощью Диспетчер сервера](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
 
 2. Установите командлеты IntelliTrace PowerShell.
 
@@ -161,7 +165,7 @@ ms.locfileid: "66746107"
 
     2. В окне командной строки PowerShell с помощью команды **Import-Module** импортируйте файл **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
-         Пример:
+         Например:
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
@@ -179,7 +183,7 @@ ms.locfileid: "66746107"
 
 2. Для веб-приложения или приложения SharePoint предоставьте для его пула приложений полный доступ к каталогу с ITRACE-файлами. Это можно сделать с помощью команды **icacls** в Windows или проводника Windows.
 
-    Пример:
+    Например:
 
    - Чтобы настроить разрешения с помощью команды **icacls** в Windows:
 
@@ -234,7 +238,7 @@ ms.locfileid: "66746107"
 
 2. Воспроизведите проблему.
 
-3. Чтобы создать контрольную точку того ITRACE-файл, используйте следующий синтаксис:
+3. Чтобы создать контрольную точку для iTrace-файла, используйте следующий синтаксис:
 
      `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
@@ -275,16 +279,16 @@ ms.locfileid: "66746107"
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Откройте файл ITRACE в Visual Studio Enterprise.
 
 > [!NOTE]
-> Для отладки с помощью IntelliTrace и пошагового выполнения кода необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. в разделе [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
+> Для отладки с помощью IntelliTrace и пошагового выполнения кода необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. раздел [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
 
 1. Переместите ITRACE-файл или скопируйте его на компьютер с Visual Studio Enterprise (не Professional и не Community).
 
 2. Двойным щелчком откройте ITRACE-файл вне Visual Studio или откройте его из Visual Studio.
 
-     В Visual Studio отображается страница **Сводка IntelliTrace** . В большинстве разделов можно просматривать события или другие элементы, выбрать элемент и начать процесс отладки с помощью IntelliTrace в той точке, где и когда произошло событие. См. в разделе [использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md).
+     В Visual Studio отображается страница **Сводка IntelliTrace** . В большинстве разделов можно просматривать события или другие элементы, выбрать элемент и начать процесс отладки с помощью IntelliTrace в той точке, где и когда произошло событие. См. раздел [использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
-    > Для отладки с помощью IntelliTrace и пошагового выполнения кода на компьютере разработки необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. в разделе [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
+    > Для отладки с помощью IntelliTrace и пошагового выполнения кода на компьютере разработки необходимо иметь соответствующие друг другу исходные файлы и файлы символов. См. раздел [Диагностика проблем после развертывания](../debugger/diagnose-problems-after-deployment.md).
 
 ## <a name="Minimizing"></a> Как получить подробные данные, не замедляя работу приложения?
  IntelliTrace может собирать большой объем данных, поэтому степень влияния на производительность приложения зависит от данных, собираемых с помощью IntelliTrace, а также типа кода, который данная программа анализирует. См. раздел [Оптимизация сбора данных IntelliTrace на рабочих серверах](http://go.microsoft.com/fwlink/?LinkId=255233).
@@ -371,13 +375,13 @@ ms.locfileid: "66746107"
 
    Тип `Employee` имеет следующие атрибуты: `Id`, `Name`и `HomeAddress`. Между типом `Employee` и типом `Address` существует отношение ассоциации.
 
-   ![Связь между Employee и Address](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+   ![Отношение между сотрудником и адресом](../debugger/media/employeeaddressrelationship.png "Емплойиаддрессрелатионшип")
 
    Сборщик записывает значения для `id`, `Employee.Id`, `Employee.Name` и объекта `Employee` , возвращаемого из метода `AlterEmployee` . Однако он не записывает какую-либо информацию об объекте `Address` , а просто указывает, имеет он значение NULL или нет. Также сборщик не записывает данные о локальных переменных в методе `AlterEmployee` , за исключением случаев, когда эти локальные переменные используются в качестве параметров других методов. Тогда они записываются как параметры метода.
 
 ## <a name="WhereElse"></a> Где еще можно получить данные IntelliTrace?
 
-Можно получить данные IntelliTrace из IntelliTrace сеанса отладки в Visual Studio Enterprise. См. в разделе [возможности IntelliTrace](../debugger/intellitrace-features.md).
+Данные IntelliTrace можно получить из сеанса отладки IntelliTrace в Visual Studio Enterprise. См. раздел [функции IntelliTrace](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>Где можно получить дополнительные сведения?
  [Использование сохраненных данных IntelliTrace](../debugger/using-saved-intellitrace-data.md)
@@ -391,7 +395,7 @@ ms.locfileid: "66746107"
 
  [Оптимизация сбора данных IntelliTrace на рабочих серверах](http://go.microsoft.com/fwlink/?LinkId=255233)
 
- [DevOps от Майкрософт](https://devblogs.microsoft.com/devops/)
+ [Microsoft DevOps](https://devblogs.microsoft.com/devops/)
 
 ### <a name="forums"></a>Форумы
  [Отладчик Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)

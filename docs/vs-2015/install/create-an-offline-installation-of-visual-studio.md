@@ -14,11 +14,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186013"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Создание автономной установки Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60077944"
 |-|-|
 | Dotfuscator и Analytics Community Edition версии 5.19.1 (для таких выпусков Visual Studio как Community, Professional и Enterprise, установленных на ОС **Windows 7 SP1** и **Windows Server 2008 R2**) | Если на компьютере, который не подключен к сети, установлена ОС **Windows 7 SP1** или **Windows Server 2008 R2**, то для установки Visual Studio 2015 необходимо выполнить следующие действия.<br /><br /> 1.  Чтобы скачать CTL-файлы, настройте файловый или веб-сервер.<br /><br /> 2.    Перенаправьте URL-адрес автоматического обновления Майкрософт для среды, в которой отсутствует подключение.<br /><br /> Дополнительные сведения см. на сайте TechNet Майкрософт в статье [Configure Trusted Roots and Disallowed Certificates](https://technet.microsoft.com/library/dn265983.aspx) (Настройка доверенных корневых сертификатов и запрещенных сертификатов). |
 | Программа установки Android SDK (уровень API) | Для установки пакетов Android SDK (уровень API) требуется подключение к Интернету. Если вы находитесь в сети с ограниченным доступом, при установке Visual Studio необходимо разрешить доступ к следующим URL-адресам:<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />Дополнительные сведения об устранении возможных проблем с параметрами прокси-сервера см. в записи блога [Сбои установки Visual Studio 2015 (программа установки Android SDK) при использовании прокси-сервера](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/). |
-| Шаблоны элементов расширяемости Visual Studio<br /><br /> Расширение GitHub для Visual Studio<br /><br /> Инструменты PowerShell для Visual Studio | Если во время установки Visual Studio 2015 отсутствует подключение к Интернету, то для создания макета автономной установки можно использовать отдельный автономный канал. **Примечание.**  В этот отдельный канал включены последние обновления Visual Studio 2015. <br /><br /> Чтобы создать отдельный автономный канал, выполните следующую команду: /layout *Drive:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml*.<br /><br /> Например, для отдельного автономного канала Visual Studio 2015 Enterprise на английском языке выполните следующие команды.<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Чтобы получить полный список URL-адресов, которые можно использовать для создания отдельного автономного канала на выбранном языке, см. таблицу ниже. |
+| Шаблоны элементов расширяемости Visual Studio<br /><br /> Расширение GitHub для Visual Studio<br /><br /> Инструменты PowerShell для Visual Studio | Если во время установки Visual Studio 2015 отсутствует подключение к Интернету, то для создания макета автономной установки можно использовать отдельный автономный канал. **Примечание.** В этот отдельный канал включены последние обновления Visual Studio 2015. <br /><br /> Чтобы создать отдельный автономный канал, выполните следующую команду: /layout *Drive:* \VisualStudio2015 /overridefeeduri *URL-to-feed-xml*.<br /><br /> Например, для отдельного автономного канала Visual Studio 2015 Enterprise на английском языке выполните следующие команды.<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Чтобы получить полный список URL-адресов, которые можно использовать для создания отдельного автономного канала на выбранном языке, см. таблицу ниже. |
 
  Чтобы создать отдельный автономный канал для выбранного языка, используйте следующие URL-адреса и сведения из таблицы, приведенной выше.
 
@@ -84,6 +84,6 @@ ms.locfileid: "60077944"
 |        Русский        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
 |        Турецкий        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Установка Visual Studio](install-visual-studio-2015.md)

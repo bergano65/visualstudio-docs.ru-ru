@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e57607cdfa8790c9b9fd4e692956f7bb823981a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744860"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921289"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903. Используйте API только из целевой рабочей среды
 
@@ -27,44 +27,44 @@ ms.locfileid: "66744860"
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|Категория|Microsoft.Portability|
-|Критическое изменение|Критическое — цифровой подписи видимого члена или типа.<br /><br /> Не критическое — при возникновении в теле метода.|
+|Категория|Microsoft. переносимость|
+|Критическое изменение|Критическое — при срабатывании сигнатуры видимого извне члена или типа.<br /><br /> Не критическое — при срабатывании в теле метода.|
 
 ## <a name="cause"></a>Причина
- Член или тип использует член или тип, который появился в пакете обновления, не был включен в целевой версии .NET framework проекта.
+Элемент или тип использует член или тип, который появился в пакете обновления, который не был включен в целевую платформу проекта.
 
 ## <a name="rule-description"></a>Описание правила
- Новые элементы и типы были включены в .NET Framework 2.0 с пакетом обновления 1 и 2, .NET Framework 3.0 с пакетом обновления 1 и 2 и .NET Framework 3.5 с пакетом обновления 1. Проекты, предназначенные для основных версий платформы .NET Framework, могут непреднамеренно иметь зависимости от этих новых интерфейсов API. Чтобы предотвратить эту зависимость, это правило срабатывает при обнаружении новых членов и типов, которые не были включены по умолчанию с целевой платформой проекта.
+Новые члены и типы были добавлены в .NET Framework 2,0 с пакетом обновления 1 (SP1) и 2, .NET Framework 3,0 с пакетом обновления 1 и 2 и .NET Framework 3,5 с пакетом обновления 1 (SP1). Проекты, предназначенные для основных версий .NET Framework, могут непреднамеренно принимать зависимости от этих новых API. Чтобы предотвратить эту зависимость, это правило срабатывает при использовании любых новых элементов и типов, которые не были включены по умолчанию в целевой платформе проекта.
 
- **Целевая рабочая среда и зависимостей пакета службы**
+**Зависимости целевой платформы и пакета обновления**
 
 |||
 |-|-|
-|Целевая платформа|Активируется при обнаружении членов, появившихся в|
-|.NET Framework 2.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2|
-|.NET Framework 3.0|.NET framework 2.0 SP1, SP2 .NET Framework 2.0, .NET Framework 3.0 с пакетом обновления 1, .NET Framework 3.0 с пакетом обновления 2|
+|Когда Целевая платформа|Срабатывает при использовании членов, появившихся в|
+|.NET Framework 2.0|.NET Framework 2,0 с пакетом обновления 1 (SP1), .NET Framework 2,0 SP2|
+|.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
 |.NET Framework 3,5|.NET Framework 3.5 SP1|
 |.NET Framework 4|Н/Д|
 
- Для изменения целевой платформы проекта см. в разделе [как: Определение целевой версии .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Чтобы изменить целевую платформу проекта, см. [раздел как Определение целевой версии .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы удалить зависимость от пакета обновления, удалите все случаи использования нового члена или типа. Если это зависимость добавлена специально отключить предупреждение, или отключить это правило.
+Чтобы удалить зависимость от пакета обновления, удалите все случаи использования нового члена или типа. Если эта зависимость заменяется намеренно, отключите предупреждение или выключите это правило.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Не отключайте предупреждение из этого правила, если это не было намеренным зависимость от указанного пакета обновления. В этом случае приложение может не работать на системах, не установлен пакет обновления. Вывод предупреждений или отключить это правило, если это была зависимость добавлена специально.
-
-## <a name="example"></a>Пример
- В следующем примере класс, который использует тип DateTimeOffset, доступна только в пакете обновления 1 для .NET 2.0. В этом примере требуется, что .NET Framework 2.0 был выбран в раскрывающемся списке требуемой версии .NET Framework в свойствах проекта.
-
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Не отключайте предупреждение из этого правила, если это не является преднамеренной зависимостью от указанного пакета обновления. В этом случае приложение может не запуститься в системах без установленного пакета обновления. Подавление предупреждения или отключение этого правила, если это была преднамеренная зависимость.
 
 ## <a name="example"></a>Пример
- В следующем примере устраняется нарушение, описанное выше, заменив случаи использования типа DateTimeOffset с типом DateTime.
+В следующем примере показан класс, который использует тип DateTimeOffset, доступный только в пакете обновления 1 (SP1) для .NET 2,0. В этом примере требуется, чтобы .NET Framework 2,0 был выбран в раскрывающемся списке Целевая платформа в свойствах проекта.
 
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
+[!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
+
+## <a name="example"></a>Пример
+В следующем примере исправляется ранее описанное нарушение путем замены использования типа DateTimeOffset типом DateTime.
+
+[!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
 
 ## <a name="see-also"></a>См. также
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [Framework, предназначенных для обзора](../ide/visual-studio-multi-targeting-overview.md)
+- [Общие сведения о настройке для платформы](../ide/visual-studio-multi-targeting-overview.md)
