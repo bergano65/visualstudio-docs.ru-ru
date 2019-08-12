@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd721edab080de7708ac395e2a7d7e486c504fba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f6f40308255e0496b2bcccddf4299e83ea93100
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546379"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922041"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411. Методы регистрации COM не должны быть видимыми
 
@@ -30,30 +30,30 @@ ms.locfileid: "62546379"
 |-|-|
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |CheckId|CA1411|
-|Категория|Microsoft.Interoperability|
+|Категория|Microsoft. взаимодействие|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
 
-Метод, отмеченный атрибутом <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> или <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> атрибута видим извне.
+Метод, помеченный <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> атрибутом или, является внешним видимым.
 
 ## <a name="rule-description"></a>Описание правила
- Когда сборка регистрируется с помощью модели объектов компонента (COM), записи добавляются в реестр для каждого видимым COM-типа в сборке. Методы, помеченные атрибутом <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> и <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> атрибуты называются во время регистрации и отмены регистрации, соответственно, для выполнения пользовательского кода, характерное для регистрации или ее отмены из этих типов. Этот код не должен вызываться за пределами этих процессов.
+Когда сборка регистрируется с помощью модели COM, записи добавляются в реестр для каждого типа, видимого для COM, в сборке. Методы, помеченные <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> атрибутами и <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> , вызываются во время регистрации и отмены регистрации, соответственно, для выполнения пользовательского кода, относящегося к регистрации или отмене регистрации этих типов. Этот код не должен вызываться за пределами этих процессов.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, изменить доступность метода `private` или `internal` (`Friend` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Чтобы устранить нарушение этого правила, измените уровень доступа метода `private` на или `internal` (`Friend` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- Следующий пример показывает два метода, которые нарушают данное правило.
+В следующем примере показаны два метода, которые нарушают правило.
 
- [!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
- [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1410: Методы регистрации COM должны быть соответствующими](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+[CA1410 Методы регистрации COM должны быть сопоставлены](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>См. также
 

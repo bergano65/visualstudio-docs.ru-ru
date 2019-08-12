@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e2f7bba8f86ed1a2877fd622c5fd93560a9c5fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6e300edf07aa98facbe6059ba9574e238ec8f3e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779825"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923257"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002. Не предоставляйте универсальные списки
 
@@ -27,14 +27,14 @@ ms.locfileid: "62779825"
 |-|-|
 |TypeName|DoNotExposeGenericLists|
 |CheckId|CA1002|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Тип содержит видимое извне элемент, который <xref:System.Collections.Generic.List%601?displayProperty=fullName> введите возвращает <xref:System.Collections.Generic.List%601?displayProperty=fullName> типа, либо, сигнатура которого содержит <xref:System.Collections.Generic.List%601?displayProperty=fullName> параметра.
+Тип содержит видимый извне член, который является <xref:System.Collections.Generic.List%601?displayProperty=fullName> типом, <xref:System.Collections.Generic.List%601?displayProperty=fullName> Возвращает тип или сигнатура, в <xref:System.Collections.Generic.List%601?displayProperty=fullName> которой содержится параметр.
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.Collections.Generic.List%601?displayProperty=fullName> является универсальной коллекцией, предназначенный для повышения производительности и не для наследования. <xref:System.Collections.Generic.List%601?displayProperty=fullName> не содержит виртуальных членов, которые упрощают процесс изменить поведение унаследованного класса. Следующие универсальные коллекции предназначены для наследования и должны предоставляться вместо <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName>— Это универсальная коллекция, предназначенная для повышения производительности и без наследования. <xref:System.Collections.Generic.List%601?displayProperty=fullName>не содержит виртуальные члены, упрощающие изменение поведения унаследованного класса. Следующие универсальные коллекции предназначены для наследования и должны быть предоставлены вместо <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
@@ -43,25 +43,25 @@ ms.locfileid: "62779825"
 - <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, измените <xref:System.Collections.Generic.List%601?displayProperty=fullName> типа к одному из универсальных коллекций, которые разработаны для наследования.
+Чтобы устранить нарушение этого правила, измените <xref:System.Collections.Generic.List%601?displayProperty=fullName> тип на одну из универсальных коллекций, предназначенных для наследования.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Не отключайте предупреждение из этого правила, если сборку, которая выдает следующее предупреждение не должен быть многократно используемой библиотеки. Например можно с уверенностью отключить это предупреждение в приложении производительность где выигрыш от использования универсальные списки выигрыш в производительности.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Не отключайте предупреждение из этого правила, если только сборка, вызывающая это предупреждение, не является повторно используемой библиотекой. Например, можно было бы отключить это предупреждение в приложении, настроенном для производительности, в котором было получено выигрыш в производительности от использования универсальных списков.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1005: Избегайте слишком много параметров в универсальных типах](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+[CA1005: Избегайте чрезмерных параметров в универсальных типах](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1010: Коллекции должны реализовывать универсальный интерфейс](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+[CA1010 Коллекции должны реализовывать универсальный интерфейс](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1000: Не объявляйте статические элементы в универсальных типах](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+[CA1000: Не объявляйте статические члены в универсальных типах](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
- [CA1006: Не вкладывайте универсальные типы в сигнатурах членов](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+[CA1006 Не вкладывать универсальные типы в сигнатуры членов](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004: Универсальные методы должны предоставлять параметр типа](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+[CA1004 Универсальные методы должны предоставлять параметр типа](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
- [CA1003: Используйте экземпляры обработчика универсальных событий](../code-quality/ca1003-use-generic-event-handler-instances.md)
+[CA1003: Использование экземпляров универсальных обработчиков событий](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007: Используйте универсальные типы в том случае, если это уместно](../code-quality/ca1007-use-generics-where-appropriate.md)
+[CA1007: Используйте универсальные шаблоны там, где это уместно](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>См. также
- [Универсальные шаблоны](/dotnet/csharp/programming-guide/generics/index)
+[Универсальные шаблоны](/dotnet/csharp/programming-guide/generics/index)

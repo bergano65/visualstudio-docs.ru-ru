@@ -26,6 +26,8 @@
           href: hosting-web-apps-in-docker.md
         - name: Развертывание в службе приложений Azure
           href: deploy-app-service.md
+        - name: Развертывание в Docker Hub
+          href: deploy-docker-hub.md
         - name: Просмотр и диагностика контейнеров
           href: view-and-diagnose-containers.md
         - name: Настройка инструментов для контейнеров
@@ -36,7 +38,7 @@
           href: container-build.md
     - name: Устранение неполадок
       href: troubleshooting-docker-errors.md
-    - name: Справочники
+    - name: Справочник
       items:
         - name: Свойства MSBuild для проектов контейнеров
           href: container-msbuild-properties.md

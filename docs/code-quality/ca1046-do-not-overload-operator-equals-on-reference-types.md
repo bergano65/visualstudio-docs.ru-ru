@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f9304fcd86a9b36a729b1436fe16471b449ac0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d765bfda87fe184256304b86f145f4f02adb7db6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778727"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922632"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046. Не перегружайте оператор равенства для ссылочных типов
 
@@ -27,29 +27,29 @@ ms.locfileid: "62778727"
 |-|-|
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
 |CheckId|CA1046|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытом или вложенном открытый ссылочный тип перегружает оператор равенства.
+Открытый или вложенный открытый ссылочный тип перегружает оператор равенства.
 
 ## <a name="rule-description"></a>Описание правила
- Реализация оператора равенства по умолчанию почти всегда правильно работает для ссылочных типов. По умолчанию две ссылки равны, если они указывают на один объект.
+Реализация оператора равенства по умолчанию почти всегда правильно работает для ссылочных типов. По умолчанию две ссылки равны, если они указывают на один объект.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, удалите реализацию оператора равенства.
+Чтобы устранить нарушение этого правила, удалите реализацию оператора равенства.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из этого правила, если ссылочный тип ведет себя как встроенного типа значения. Если он имеет значение для выполнения сложения или вычитания для экземпляров типа, верно, вероятно, реализует оператор равенства и подавить нарушение.
-
-## <a name="example"></a>Пример
- Следующий пример демонстрирует поведение по умолчанию при сравнении двух ссылок.
-
- [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Можно отключить вывод предупреждений из этого правила, если ссылочный тип ведет себя как встроенный тип значения. Если имеет смысл выполнять сложение или вычитание экземпляров типа, вероятно, необходимо реализовать оператор равенства и устранить нарушение.
 
 ## <a name="example"></a>Пример
+В следующем примере демонстрируется поведение по умолчанию при сравнении двух ссылок.
 
-Следующее приложение сравниваются несколько ссылок.
+[!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
+
+## <a name="example"></a>Пример
+
+В следующем приложении сравниваются некоторые ссылки.
 
 [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
 
@@ -64,7 +64,7 @@ c and a are == ? Yes
 
 ## <a name="related-rules"></a>Связанные правила
 
-[CA1013: Перегружайте оператор равенства при перегрузке Добавление и вычитание](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+[CA1013 Перегруженный оператор равен при перегрузке Add и Subtract](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>См. также
 

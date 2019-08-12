@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f1c8e50acf2aa4d061461ad934dbd61ba9be9644
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4dfcc612e931756b0e3d817556c9b37844bc3cfd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546457"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922037"
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406. Не используйте аргументы Int64 для клиентов Visual Basic 6
 
@@ -30,35 +30,35 @@ ms.locfileid: "62546457"
 |-|-|
 |TypeName|AvoidInt64ArgumentsForVB6Clients|
 |CheckId|CA1406|
-|Категория|Microsoft.Interoperability|
+|Категория|Microsoft. взаимодействие|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Тип, который специально помечен как видимый для модели объектов компонента (COM) объявляет член, принимающую <xref:System.Int64?displayProperty=fullName> аргумент.
+Тип, который специально помечен как видимый для модели COM, объявляет член, принимающий <xref:System.Int64?displayProperty=fullName> аргумент.
 
 ## <a name="rule-description"></a>Описание правила
- Клиенты COM Visual Basic 6 не может получить доступ к 64-разрядных целых чисел.
+Клиенты COM Visual Basic 6 не может получить доступ к 64-разрядных целых чисел.
 
- По умолчанию следующие являются видимыми для COM: сборки, открытые типы, члены открытых экземпляров в открытых типов и все члены открытых типов значения. Тем не менее чтобы сократить число ложных срабатываний, это правило требует видимость COM типа, чтобы задавать явно; включающая сборка должны быть отмечены <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> присвоено `false` и тип должен быть помечен атрибутом <xref:System.Runtime.InteropServices.ComVisibleAttribute> присвоено `true`.
+По умолчанию следующие элементы видимы для COM: сборки, открытые типы, члены открытых экземпляров в открытых типах и все члены открытых типов значений. Однако для сокращения числа ложных срабатываний это правило требует явного определения видимости типа COM. включающая сборка должна быть помечена <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> `false` значением, а тип <xref:System.Runtime.InteropServices.ComVisibleAttribute> должен быть `true`помечен значением.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила для параметра, значение которого всегда может быть выражен как 32-разрядного целого числа, измените тип параметра для <xref:System.Int32?displayProperty=fullName>. Если значение параметра может быть больше, чем может быть выражен как 32-разрядного целого числа, измените тип параметра для <xref:System.Decimal?displayProperty=fullName>. Обратите внимание, что оба <xref:System.Single?displayProperty=fullName> и <xref:System.Double?displayProperty=fullName> потеря точности в верхнем диапазоны <xref:System.Int64> тип данных. Если элемент не должен быть видим для COM, пометьте его с <xref:System.Runtime.InteropServices.ComVisibleAttribute> присвоено `false`.
+Чтобы устранить нарушение этого правила для параметра, значение которого всегда может быть выражено в виде 32-разрядного целого числа, измените тип параметра <xref:System.Int32?displayProperty=fullName>на. Если значение параметра может быть больше, чем может быть выражено в виде 32-разрядного целого числа, измените тип параметра <xref:System.Decimal?displayProperty=fullName>на. Обратите внимание <xref:System.Single?displayProperty=fullName> , <xref:System.Double?displayProperty=fullName> что и, и теряют точность в верхних диапазонах <xref:System.Int64> типа данных. Если элемент не должен быть видимым для com, пометьте его <xref:System.Runtime.InteropServices.ComVisibleAttribute> `false`значением.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из этого правила, если известно, что клиенты COM Visual Basic 6 не затронет тип.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Предупреждение из этого правила можно отключить, если известно, что Visual Basic 6 клиентов COM не будет обращаться к типу.
 
 ## <a name="example"></a>Пример
- В примере показан тип, который нарушает правило.
+В следующем примере показан тип, нарушающий правило.
 
- [!code-csharp[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/CSharp/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.cs)]
- [!code-vb[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/VisualBasic/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.vb)]
+[!code-csharp[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/CSharp/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.cs)]
+[!code-vb[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/VisualBasic/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1413: Избегайте не открытых полей в видимых типах значений COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+[CA1413 Избегайте использования не открытых полей в видимых типах значений COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
- [CA1407: Не используйте статические члены в видимых COM типах](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+[CA1407 Избегайте статических членов в видимых COM типах](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017: Пометьте сборки атрибутом ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017 Пометка сборок с помощью ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>См. также
 

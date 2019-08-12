@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c94f1b2709f3541692a0dfcd2a92559135639c2a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bd3e9c56bb02995d9b99b57bb2799ab69b51a42d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744594"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921569"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804. Удалите неиспользуемые локальные переменные
 
@@ -30,36 +30,36 @@ ms.locfileid: "66744594"
 |-|-|
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
-|Категория|Microsoft.Performance|
+|Категория|Microsoft. Performance|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Метод объявляет локальную переменную, но не использует переменную, за исключением возможно как получатель части оператора присваивания. Для анализа этим правилом протестированных сборки должны быть построены с отладочной информацией и связанный PDB-файл должен быть доступен.
+Метод объявляет локальную переменную, но не использует переменную, кроме случая, когда получатель оператора присваивания. Для анализа по этому правилу тестируемая сборка должна быть построена с отладочной информацией, а соответствующий файл базы данных программы (PDB) должен быть доступен.
 
 ## <a name="rule-description"></a>Описание правила
- Неиспользуемые локальные переменные и ненужные присвоения увеличивают размер сборки и снижают производительность.
+Неиспользуемые локальные переменные и ненужные присвоения увеличивают размер сборки и снижают производительность.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, удалите или использовать локальную переменную.
+Чтобы устранить нарушение этого правила, удалите или используйте локальную переменную.
 
 > [!NOTE]
-> C# Компилятор удаляет неиспользуемые локальные переменные при `optimize` включен параметр.
+> C# Компилятор удаляет неиспользуемые локальные переменные, `optimize` если включен параметр.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Отключайте предупреждение из этого правила, если переменная создана компилятором. Можно также безопасно подавить предупреждение из этого правила, или отключить правило, если производительность и обслуживание кода не являются критичными моментами.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Подавлять предупреждение из этого правила, если переменная была вызвана компилятором. Также можно отключить вывод предупреждений из этого правила или отключать правило, если производительность и обслуживание кода не являются основными проблемами.
 
 ## <a name="example"></a>Пример
- В следующем примере показано несколько неиспользуемые локальные переменные.
+В следующем примере показано несколько неиспользуемых локальных переменных.
 
- [!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)]
- [!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
+[!code-vb[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/VisualBasic/ca1804-remove-unused-locals_1.vb)]
+[!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1809: Избегайте чрезмерного использования локальных переменных](../code-quality/ca1809-avoid-excessive-locals.md)
+[CA1809 Избегайте чрезмерного использования локальных переменных](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811: Не используйте Невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811 Избегайте невызванного закрытого кода](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: Избегайте неиспользуемых внутренних классов](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812 Избегайте использования внутренних классов без экземпляров](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801: Проверка неиспользуемых параметров](../code-quality/ca1801-review-unused-parameters.md)

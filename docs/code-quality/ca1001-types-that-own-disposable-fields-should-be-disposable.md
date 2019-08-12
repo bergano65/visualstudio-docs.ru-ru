@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 581bc75c22326275dcb3657910f60c2977094037
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fae67f8c1ffa3b4e6d7cc2f0fbbaf670733f9ff4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779750"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923312"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001. Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми
 
@@ -30,32 +30,32 @@ ms.locfileid: "62779750"
 |-|-|
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
 |CheckId|CA1001|
-|Категория|Microsoft.Design|
-|Критическое изменение|Non критическое, если тип не видимый за пределами сборки.<br /><br /> Критическое, если тип видим за пределами сборки.|
+|Категория|Microsoft. Design|
+|Критическое изменение|Не критическое значение, если тип не виден за пределами сборки.<br /><br /> Критическое — если тип видим за пределами сборки.|
 
 ## <a name="cause"></a>Причина
- В классе объявляется и реализуется поле экземпляра, который является <xref:System.IDisposable?displayProperty=fullName> типа и класса не реализует <xref:System.IDisposable>.
+Класс объявляет и реализует поле экземпляра, которое является <xref:System.IDisposable?displayProperty=fullName> типом, а класс не реализует. <xref:System.IDisposable>
 
 ## <a name="rule-description"></a>Описание правила
- Класс реализует <xref:System.IDisposable> интерфейс, чтобы освободить неуправляемые ресурсы, удерживаемые им. Поля экземпляра, <xref:System.IDisposable> тип указывает, что поле владеет неуправляемым ресурсом. Класс, который объявляет <xref:System.IDisposable> поле неявно владеет неуправляемым ресурсом и должен реализовывать <xref:System.IDisposable> интерфейс. Если класс не владеет непосредственно неуправляемые ресурсы, он не должен реализовывать метод завершения.
+Класс реализует <xref:System.IDisposable> интерфейс для удаления неуправляемых ресурсов, которыми он владеет. Поле экземпляра, которое является <xref:System.IDisposable> типом, указывает, что поле владеет неуправляемым ресурсом. Класс, объявляющий <xref:System.IDisposable> поле, неявно владеет неуправляемым ресурсом и должен <xref:System.IDisposable> реализовывать интерфейс. Если класс не владеет напрямую какими-либо неуправляемыми ресурсами, он не должен реализовывать метод завершения.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, реализуйте <xref:System.IDisposable> и из <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> вызов метода <xref:System.IDisposable.Dispose%2A> метод поля.
+Чтобы устранить нарушение этого правила, реализуйте <xref:System.IDisposable> и <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> из метода вызовите <xref:System.IDisposable.Dispose%2A> метод поля.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В следующем примере показано, класс, который нарушает правило и класс, соответствующий этому правилу, реализовав <xref:System.IDisposable>. Класс не реализует метод завершения, так как этот класс не владеет неуправляемых ресурсов.
+В следующем примере показан класс, нарушающий правило, и класс, который удовлетворяет правилу путем реализации <xref:System.IDisposable>. Класс не реализует метод завершения, поскольку класс не владеет неуправляемыми ресурсами напрямую.
 
- [!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
- [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
+[!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
+[!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2213: следует высвобождать высвобождаемые поля](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+[CA2213: следует высвобождать высвобождаемые поля](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2216: Высвобождаемые типы должны объявлять метод завершения](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216: Удаляемые типы должны объявлять метод завершения](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA2215: Методы Dispose должны вызывать метод dispose базового класса](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+[CA2215 Методы Dispose должны вызывать базовый класс Dispose](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
 
- [CA1049: Типы, которым принадлежат собственные ресурсы, должны быть освобождаемыми](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049 Типы, владеющие собственными ресурсами, должны быть уничтожены](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)

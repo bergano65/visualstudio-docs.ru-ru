@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fdf92eae202f1ebb80b88e28307e7dacfbc0a39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2be42519f87c3c040c1f80c80d53d490853d986e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542394"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920754"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126. Для требований ссылок на тип необходимы требования наследования
 
@@ -35,32 +35,32 @@ ms.locfileid: "62542394"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый незапечатанный тип защищен требованием ссылки, имеет переопределяемый метод, и ни тип, ни метод защищен требованием наследования.
+Открытый незапечатанный тип защищен с помощью запроса компоновки, имеет переопределяемый метод, и ни тип, ни метод не защищены требованием наследования.
 
 ## <a name="rule-description"></a>Описание правила
- Запрос ссылки на метод или его объявляющий тип требует немедленного вызывающему объекту метода, указанное разрешение. Требование наследования в методе требует метод переопределения для указанного разрешения. Требования наследования в типе требуется для указанное разрешение производного класса.
+Требование ссылки на метод или его объявляющий тип требует, чтобы непосредственно вызывающий объект метода имел указанное разрешение. Требование наследования для метода требует наличия указанного разрешения в переопределяющем методе. Требование наследования для типа требует, чтобы производный класс имел указанное разрешение.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, безопасность типа или метода с помощью требования наследования для те же разрешения, как требование связывания.
+Чтобы устранить нарушение этого правила, обеспечьте безопасность типа или метода с требованием наследования для того же разрешения, что и для запроса компоновки.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Для этого правила отключать вывод предупреждений не следует.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
- В примере показан тип, который нарушает правило.
+В следующем примере показан тип, нарушающий правило.
 
- [!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
- [!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
- [!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]
+[!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
+[!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
+[!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
- [CA2108: Проверьте объявляемые параметры безопасности типов значений](../code-quality/ca2108-review-declarative-security-on-value-types.md)
+[CA2108: Проверка декларативной безопасности для типов значений](../code-quality/ca2108-review-declarative-security-on-value-types.md)
 
- [CA2112: Защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+[CA2112: Защищенные типы не должны предоставлять поля](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA2122: Не используйте косвенное представление методов с запросами компоновки](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
+[CA2122 Не следует косвенно предоставлять методы с запросами компоновки](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
 
- [CA2123: Компоновки переопределения должны быть идентичны базовым](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
+[CA2123 Запросы на переопределение ссылок должны быть идентичны базовым](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>См. также
 

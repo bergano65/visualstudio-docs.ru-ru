@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203fc14097e0c6d2fbdaee1689deffdfe814eb63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f3c118b097dbcd9eba8a5755672bde9c11cb13a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541901"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920311"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215. Метод Dispose должен вызывать базовый класс Dispose
 
@@ -28,30 +28,30 @@ ms.locfileid: "62541901"
 |-|-|
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|
 |CheckId|CA2215|
-|Категория|Microsoft.Usage|
+|Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Тип, реализующий <xref:System.IDisposable?displayProperty=fullName> наследует от типа, который также реализует <xref:System.IDisposable>. <xref:System.IDisposable.Dispose%2A> Не вызывает метод наследующий тип <xref:System.IDisposable.Dispose%2A> метод родительского типа.
+Тип, реализующий <xref:System.IDisposable?displayProperty=fullName> наследование от типа, который также реализует <xref:System.IDisposable>. Метод наследуемого типа не <xref:System.IDisposable.Dispose%2A> вызывает метод родительского типа. <xref:System.IDisposable.Dispose%2A>
 
 ## <a name="rule-description"></a>Описание правила
- Если тип наследуется от уничтожаемого типа, он должен вызвать <xref:System.IDisposable.Dispose%2A> метод из базового типа в собственный <xref:System.IDisposable.Dispose%2A> метод. Вызов метода базового типа Dispose гарантирует, что освобождаются все ресурсы, созданные с базовым типом.
+Если тип наследуется от удаляемого типа, он должен вызывать <xref:System.IDisposable.Dispose%2A> метод базового типа из собственного <xref:System.IDisposable.Dispose%2A> метода. Вызов метода базового типа Dispose гарантирует освобождение всех ресурсов, созданных базовым типом.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, вызовите `base`.<xref:System.IDisposable.Dispose%2A> в вашей <xref:System.IDisposable.Dispose%2A> метод.
+Чтобы устранить нарушение этого правила, вызовите метод `base`.<xref:System.IDisposable.Dispose%2A> <xref:System.IDisposable.Dispose%2A> в методе.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Это безопасно подавить предупреждение из этого правила, если вызов `base`.<xref:System.IDisposable.Dispose%2A> происходит на более глубоком уровне вызывающего, чем правило проверки.
-
-## <a name="example"></a>Пример
- В следующем примере показано типом `TypeA` , реализующий <xref:System.IDisposable>.
-
- [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+При вызове функции можно `base`отключить вывод предупреждений из этого правила.<xref:System.IDisposable.Dispose%2A> происходит на уровне более глубокого вызова по сравнению с проверкой правил.
 
 ## <a name="example"></a>Пример
- В следующем примере показано типом `TypeB` , производный от типа `TypeA` и правильно вызывает его <xref:System.IDisposable.Dispose%2A> метод.
+В следующем примере показан тип `TypeA` , реализующий интерфейс. <xref:System.IDisposable>
 
- [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
+[!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
+
+## <a name="example"></a>Пример
+В следующем примере показан тип `TypeB` , который наследует от типа `TypeA` и правильно вызывает его <xref:System.IDisposable.Dispose%2A> метод.
+
+[!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
 
 ## <a name="see-also"></a>См. также
 

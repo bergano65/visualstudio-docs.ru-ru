@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cac669b96f362d6da73e3eb2f373137c3d9bdd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 869ff99243349ae01c63da0a7d9e6544761cbd39
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778522"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922502"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050. Объявите типы в пространствах имен
 
@@ -30,29 +30,29 @@ ms.locfileid: "62778522"
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
-|Категория|Microsoft.Design|
+|Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
- Открытый или защищенный тип определен вне области именованного пространства имен.
+Открытый или защищенный тип определен вне области именованного пространства имен.
 
 ## <a name="rule-description"></a>Описание правила
- Типы объявляются в пространствах имен во избежание конфликтов имен и с целью упорядочения связанных типов в иерархии объектов. Типы, которые находятся за пределами любого именованного пространства имен находятся в глобальном пространстве имен, нельзя ссылаться в коде.
+Типы объявляются в пространствах имен для предотвращения конфликтов имен, а также как способ организации связанных типов в иерархии объектов. Типы, находящиеся за пределами именованного пространства имен, находятся в глобальном пространстве имен, на которое нельзя ссылаться в коде.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, поместите тип в пространстве имен.
+Чтобы устранить нарушение этого правила, разместите тип в пространстве имен.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Несмотря на то, что вы не отключайте предупреждение из этого правила, можно безопасно использовать, когда сборки не будут использоваться вместе с другими сборками.
-
-## <a name="example"></a>Пример
- Следующий пример показывает это библиотека, которая имеет тип объявлен вне пространства имен и типом, который имеет то же имя, объявленные в пространстве имен.
-
- [!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
- [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+Несмотря на то, что не нужно отключать предупреждение из этого правила, это можно сделать в том случае, если сборка никогда не будет использоваться вместе с другими сборками.
 
 ## <a name="example"></a>Пример
- Следующее приложение использует библиотеку, который был определен ранее. Обратите внимание, что тип, объявивший вне пространства имен создается при имя `Test` не указано пространство имен. Обратите внимание, что для доступа к `Test` введите `Goodspace`, требуется указать имя пространства имен.
+В следующем примере показана библиотека с типом, неверно объявленным вне пространства имен, и типом с тем же именем, объявленным в пространстве имен.
 
- [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
- [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]
+[!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
+[!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
+
+## <a name="example"></a>Пример
+В следующем приложении используется библиотека, определенная ранее. Обратите внимание, что тип, объявленный вне пространства имен, создается, `Test` когда имя не уточняется пространством имен. Обратите внимание, что для `Test` доступа к `Goodspace`типу в необходимо указать имя пространства имен.
+
+[!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
+[!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

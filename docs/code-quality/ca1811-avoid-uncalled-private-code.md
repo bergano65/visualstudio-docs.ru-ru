@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d4a194229ccbe6720f4c8097422691974ab64b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c144db920bfa04055c81227e4cc2c230ed2f097d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545476"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921326"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811. Избегайте невызываемого частного кода
 
@@ -27,11 +27,11 @@ ms.locfileid: "62545476"
 |-|-|
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
-|Категория|Microsoft.Performance|
+|Категория|Microsoft. Performance|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
- Член закрытым или внутренним (на уровне сборки) не поддерживает вызывающих объектов в сборке, не вызывается средой CLR и не вызывается делегат. Это правило не проверяются следующие члены:
+Частный или внутренний член (уровень сборки) не имеет вызывающих объектов в сборке, не вызывается средой CLR и не вызывается делегатом. Следующие члены не проверяются с помощью этого правила:
 
 - Явные члены интерфейса.
 
@@ -39,22 +39,22 @@ ms.locfileid: "62545476"
 
 - Конструкторы сериализации.
 
-- Методы, помеченные как <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> или <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Методы, помеченные <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>как <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> или.
 
-- Члены, которые являются переопределениями.
+- Элементы, которые являются переопределениями.
 
 ## <a name="rule-description"></a>Описание правила
- Это правило можно отчетов ложных положительных результатов, в случае точки входа, не распознаются в настоящее время логике правила. Кроме того компилятор может выдать noncallable кода в сборку.
+Это правило может сообщать ложные срабатывания при возникновении точек входа, которые в настоящее время не определяются логикой правила. Кроме того, компилятор может выдавать невызывающий код в сборку.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
- Чтобы устранить нарушение этого правила, удалите noncallable код или добавьте код, который ее вызывает.
+Чтобы устранить нарушение этого правила, удалите невызывающий код или добавьте код, который его вызывает.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
- Его можно безопасно подавить предупреждение из этого правила.
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+В этом правиле можно отключить вывод предупреждений.
 
 ## <a name="related-rules"></a>Связанные правила
- [CA1812: Избегайте неиспользуемых внутренних классов](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812 Избегайте использования внутренних классов без экземпляров](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801: Проверка неиспользуемых параметров](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Удалите неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804 Удалить неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)

@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c762fb9777af8ac5e24875e879d2f24d0249e0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 766c93bb45380098af984db256d36d1e0948e56f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872120"
+ms.locfileid: "68926715"
 ---
 # <a name="custom-task-panes"></a>Настраиваемые области задач
   Области задач — это панели пользовательского интерфейса, которые обычно прикрепляются к одной стороне окна в приложении Microsoft Office. Настраиваемые области задач позволяют создать собственную область задач и предоставлять пользователям знакомый интерфейс для доступа к возможностям вашего решения. Например, интерфейс может содержать элементы управления, которые выполняют код для изменения документов или отображения данных из источника данных.
@@ -124,7 +124,7 @@ ms.locfileid: "68872120"
 
  Чтобы освободить ресурсы, используемые областью задач, пока надстройка VSTO продолжает работать, используйте методы <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> или <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Эти методы позволяют удалить указанный объект <xref:Microsoft.Office.Tools.CustomTaskPane> из коллекции `CustomTaskPanes` и вызывают метод <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> объекта.
 
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] автоматически освобождает ресурсы, используемые настраиваемой областью задач, при выгрузке надстройки VSTO. Не вызывайте <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> методы или <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> в `ThisAddIn_Shutdown` обработчике событий в проекте. Эти методы создадут исключение <xref:System.ObjectDisposedException>, так как [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] освобождает ресурсы, используемые объектом <xref:Microsoft.Office.Tools.CustomTaskPane> перед вызовом `ThisAddIn_Shutdown`. Дополнительные сведения о `ThisAddIn_Shutdown`см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md) .
+ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] автоматически освобождает ресурсы, используемые настраиваемой областью задач, при выгрузке надстройки VSTO. Не вызывайте <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> методы или <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> в `ThisAddIn_Shutdown` обработчике событий в проекте. Эти методы создадут исключение <xref:System.ObjectDisposedException>, так как [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] освобождает ресурсы, используемые объектом <xref:Microsoft.Office.Tools.CustomTaskPane> перед вызовом `ThisAddIn_Shutdown`. Дополнительные сведения о `ThisAddIn_Shutdown`см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md).
 
 ## <a name="Managing"></a>Управление настраиваемыми областями задач в нескольких окнах приложений
  При создании настраиваемой области задач в приложении, которое использует несколько окон для отображения документов и других элементов, необходимо выполнить дополнительные шаги, чтобы гарантировать, что область задач отображается в нужное для пользователя время.
