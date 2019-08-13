@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42f4d8a06e51c35387d07ecd21fa4970decc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5efcc41a82cab32172aa395b488535f2777b9e13
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817378"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681156"
 ---
 # <a name="message-task"></a>Message - задача
 Записывает сообщения в журнал в процессе сборки.
@@ -31,7 +31,7 @@ ms.locfileid: "62817378"
 ## <a name="parameters"></a>Параметры
  В следующей таблице приводятся параметры задачи `Message` .
 
-|Параметр|Описание|
+|Параметр|ОПИСАНИЕ|
 |---------------|-----------------|
 |`Importance`|Необязательный параметр `String` .<br /><br /> Определяет важность сообщения. Этот параметр может иметь значение `high`, `normal` или `low`. Значение по умолчанию — `normal`.|
 |`Text`|Необязательный параметр `String` .<br /><br /> Текст ошибки для записи в журнал.|
@@ -41,7 +41,7 @@ ms.locfileid: "62817378"
 
  Если параметр `Condition` равен `true`, значение параметра `Text` записывается, а процесс сборки продолжает выполняться. Если параметр `Condition` не существует, текст сообщения записывается в журнал. Дополнительные сведения см. в статье о [получении журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- По умолчанию сообщение отправляется в средство ведения журнала консоли MSBuild. Это поведение можно изменить, присвоив параметру <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> необходимое значение. Средство ведения журнала интерпретирует параметр `Importance`.
+ По умолчанию сообщение отправляется в средство ведения журнала консоли MSBuild. Это поведение можно изменить, присвоив параметру <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> необходимое значение. Средство ведения журнала интерпретирует параметр `Importance`. Как правило, сообщение со свойством `high` отправляется, если для детализации средства ведения журнала задано значение <xref:Microsoft.Build.Framework.LoggerVerbosity>`Minimal` или более высокое. Сообщение со свойством `low` отправляется, если для детализации средства ведения журнала задано значение <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.
 
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 

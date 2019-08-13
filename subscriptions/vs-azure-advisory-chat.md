@@ -1,24 +1,22 @@
 ---
 title: Чат с Помощником по Azure в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Узнайте, как воспользоваться преимуществом "Чат с Помощником по Azure", включенным в подписки Visual Studio.
-ms.openlocfilehash: d3bdcdff9244a0ddab4f7be4fc030a0d4e189583
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: bd5de6c74260ebdb040d16695a180a2eaed8e361
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250842"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681733"
 ---
 # <a name="azure-advisory-chat"></a>Чат с Помощником по Azure
-
 Получите справку по работе с Azure в режиме реального времени! Содержит рекомендации по службам Azure PaaS.  Чат с Помощником по Azure предоставляется в составе подписки Visual Studio Enterprise уровня "Стандартный" и годовой облачной подписки.
 
 ## <a name="activation-steps"></a>Процедура активации
-
 Использовать чат с Помощником по Azure просто.
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Найдите плитку чата с Помощником по Azure в разделе поддержки и щелкните **Начать чат**.
@@ -34,7 +32,6 @@ ms.locfileid: "68250842"
     > ![Чат с Помощником по Azure](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>Право на участие
-
 |                                                      Уровень подписки                                                      |     Каналы      |    Преимущество    | Возможность возобновления |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                                      Visual Studio Enterprise (ценовая категория "Стандартный")                                       | Корпоративная лицензия, Azure, розничная версия |   Один год    |    Yes     |
@@ -57,3 +54,6 @@ ms.locfileid: "68250842"
 ## <a name="support-resources"></a>Ресурсы поддержки
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Следующие шаги
+Многие подписки Visual Studio используют кредиты Azure.  Если вы еще не активировали свою подписку, ознакомьтесь [с преимуществом Azure](vs-azure.md). 

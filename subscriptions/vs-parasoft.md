@@ -1,17 +1,17 @@
 ---
 title: Преимущество Parasoft Virtualize/SOAtest Professional Desktop | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: Сведения об активации подписки Parasoft Virtualize/SOA Test Professional, входящей в вашу подписку Visual Studio.
-ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824640"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787710"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop в подписках Visual Studio
 
@@ -27,7 +27,10 @@ ms.locfileid: "67824640"
 
 3. Вы будете перенаправлены на веб-сайт Parasoft, где вы создадите учетную запись.  Просто укажите контактные данные и нажмите кнопку **Отправить**.
    > [!div class="mx-imgBorder"]
-   > ![Создание учетной записи для преимущества Parasoft](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+   > ![Создание учетной записи для преимущества Parasoft](_img/vs-parasoft/vs-parasoft-new-account.png)
+
+   > [!Note]
+   > В таблице на странице показаны цены на весь год и скидка Visual Studio. Эти цены будут актуальными после использования подписки на шесть месяцев.  
 
 4. Создав учетную запись, вы увидите уведомление о том, что вам отправлено сообщение электронной почты с инструкциями по скачиванию.  (Если этого сообщения нет в папке "Входящие", не забудьте проверить папки нежелательной почты.)
 
@@ -56,14 +59,12 @@ ms.locfileid: "67824640"
 14. Укажите, куда нужно поместить ярлык для приложения, и нажмите кнопку **Далее**.
 
 15. Для некоторых функциональных тестов на сайтах HTTPS требуется сертификат корневого центра сертификации веб-сайта SOAtest.  Выберите, следует ли устанавливать сертификат корневого ЦС, и нажмите кнопку **Далее**.
-    > [!div class="mx-imgBorder"]
-    > ![Сертификат корневого ЦС для преимущества Parasoft](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
+    > [!NOTE]
+    > Для Parasoft настоятельно рекомендуется выбрать установку сертификата.
 
 16. Выберите, следует ли создавать значки рабочего стола и быстрого запуска во время установки, и нажмите кнопку **Далее**.
 
 17. Подтвердите выбранные параметры и нажмите кнопку **Установить** для начала установки программного обеспечения.
-    > [!div class="mx-imgBorder"]
-    > ![Готовность к установке преимущества Parasoft](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
 18. После завершения программы установки нажмите кнопку **Готово**. Теперь вы готовы к началу работы с преимуществом Parasoft Virtualize/SOAtest Professional Desktop.
 
@@ -89,3 +90,6 @@ ms.locfileid: "67824640"
   - Центр ресурсов Parasoft: https://www.parasoft.com/resources/
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Следующие шаги
+Воспользуйтесь собственной песочницей разработки, активировав [деньги на счете в Azure](vs-azure.md). 
