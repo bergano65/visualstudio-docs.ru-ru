@@ -2,7 +2,7 @@
 title: Обновление Visual Studio
 titleSuffix: ''
 description: Пошаговые инструкции по обновлению Visual Studio до последней версии.
-ms.date: 07/11/2019
+ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: 80ee1a568e30a4898c767533a4f592e2301a097a
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250583"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681483"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio
 
@@ -180,7 +180,7 @@ ms.locfileid: "68250583"
 
 1. Запустите установщик.
 
-     ![Откройте Visual Studio Installer](media/vs2019-visual-studio-installer.png "Откройте Visual Studio Installer")
+     ![Открытие Visual Studio Installer из Windows](media/vs-2019/vs-installer-windows-start.png "Open the Visual Studio Installer")
 
    Для продолжения работы может потребоваться обновление самого установщика. Если это так, следуйте инструкциям на экране.
 
@@ -188,15 +188,17 @@ ms.locfileid: "68250583"
 
    Например, если вы ранее установили Visual&nbsp;Studio Community&nbsp;2019 и для этого выпуска есть обновление, в установщике будет отображаться сообщение **Доступно обновление**.
 
-     ![Выберите выпуск Visual Studio 2019, который вы хотите обновить](media/vs2019-update-visual-studio-community-rc.png "Выберите выпуск Visual Studio 2019, который вы хотите обновить")
+     ![Выберите выпуск Visual Studio 2019, который вы хотите обновить](media/vs-2019/vs-installer-update-visual-studio-community.png "Выберите выпуск Visual Studio 2019, который вы хотите обновить")
 
 1. Чтобы установить обновления, нажмите кнопку **Обновить**.
 
-    ![Нажмите кнопку "Обновить", чтобы установить обновления](media/vs2019-choose-update-visual-studio-community-rc.png "Нажмите кнопку \"Обновить\", чтобы установить обновления")
+    ![Нажмите кнопку "Обновить", чтобы установить обновления](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "Нажмите кнопку \"Обновить\", чтобы установить обновления")
 
-1. После завершения обновления выберите **Запуск** для запуска Visual Studio.
+1. Когда обновление завершится, может появиться запрос на перезагрузку компьютера. В таком случае перезагрузите компьютер, а затем запустите Visual Studio, как обычно.
 
-    ![Выберите "Запуск", чтобы запустить Visual Studio](media/vs2019-choose-launch-visual-studio-community-rc.png "Выберите \"Запуск\", чтобы запустить Visual Studio")
+   Если вам не будет предложено перезагрузить компьютер, выберите **Запуск**, чтобы запустить Visual Studio из установщика.
+
+    ![Выберите "Запуск", чтобы запустить Visual Studio](media/vs-2019/choose-launch-visual-studio-community.png "Выберите \"Запуск\", чтобы запустить Visual Studio")
 
 ## <a name="use-the-ide"></a>Использование интегрированной среды разработки
 
@@ -206,7 +208,7 @@ ms.locfileid: "68250583"
 
 1. В меню Windows **Пуск** выберите **Visual Studio 2019**.
 
-    ![Открытие Visual Studio 2019](media/vs2019-visual-studio-rc.png "Открытие Visual Studio 2019 из Windows")
+    ![Открытие Visual Studio 2019](media/vs-2019/vs-installer-visual-studio-2019.png "Открытие Visual Studio 2019 из Windows")
 
 1. В разделе **Приступая к работу** выберите любой параметр, чтобы открыть интегрированную среду разработки.
 
@@ -214,15 +216,15 @@ ms.locfileid: "68250583"
 
     Открывается Visual Studio. В интегрированной среде разработки отображается сообщение **Обновление Visual Studio 2019**.
 
-    ![Сообщение "Обновление Visual Studio 2019" в интегрированной среде разработки](media/vs2019-update-visual-studio-ide-message.png "Сообщение \"Обновление Visual Studio 2019\" в интегрированной среде разработки")
+    ![Сообщение "Обновление Visual Studio 2019" в интегрированной среде разработки](media/vs-2019/update-visual-studio-ide-message.png "Сообщение \"Обновление Visual Studio 2019\" в интегрированной среде разработки")
 
 1. В сообщении **Обновление Visual Studio 2019** выберите **Просмотреть подробности**.
 
-   ![Нажатие кнопки "Просмотреть подробности" в сообщении "Обновление Visual Studio 2019"](media/vs2019-update-visual-studio-ide-view-details.png "Нажатие кнопки \"Просмотреть подробности\" в сообщении \"Обновление Visual Studio 2019\"")
+   ![Нажатие кнопки "Просмотреть подробности" в сообщении "Обновление Visual Studio 2019"](media/vs-2019/update-visual-studio-ide-view-details.png "Нажатие кнопки \"Просмотреть подробности\" в сообщении \"Обновление Visual Studio 2019\"")
 
 1. В диалоговом окне **Обновление скачано и готово к установке** выберите **Обновить**.
 
-     ![Нажатие кнопки "Обновить" в диалоговом окне "Обновление скачано и готово к установке"](media/vs2019-update-visual-studio-community-rc-from-ide.png "Нажатие кнопки \"Обновить\" в диалоговом окне \"Обновление скачано и готово к установке\"")
+     ![Нажатие кнопки "Обновить" в диалоговом окне "Обновление скачано и готово к установке"](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "Нажатие кнопки \"Обновить\" в диалоговом окне \"Обновление скачано и готово к установке\"")
 
    Visual Studio обновляется, закрывается и снова открывается.
 
@@ -235,9 +237,9 @@ ms.locfileid: "68250583"
     > [!NOTE]
     > Для проверки наличия обновлений вы также можете использовать окно поиска в IDE. Нажмите **Ctrl**+**Q**, введите "проверить наличие обновлений" и выберите соответствующий результат поиска.
 
-1. В диалоговом окне **Обновление скачано и готово к установке** выберите **Обновить**.
+1. В диалоговом окне **Доступно обновление** нажмите кнопку **Обновить**.
 
-     ![Нажатие кнопки "Обновить" в диалоговом окне "Обновление скачано и готово к установке"](media/vs2019-update-visual-studio-community-rc-from-ide.png "Нажатие кнопки \"Обновить\" в диалоговом окне \"Обновление скачано и готово к установке\"")
+     ![Нажатие кнопки "Обновить" в диалоговом окне "Обновление скачано и готово к установке"](media/vs-2019/update-visual-studio-community-from-ide.png "Нажатие кнопки \"Обновить\" в диалоговом окне \"Обновление скачано и готово к установке\"")
 
    Visual Studio обновляется, закрывается и снова открывается.
 
@@ -256,7 +258,7 @@ ms.locfileid: "68250583"
       > [!TIP]
       > Обновление для выпуска Visual Studio 2019 является накопительным, поэтому всегда выбирайте для установки то, у которого новейший номер версии.
 
-1. В диалоговом окне **Обновление скачано и готово к установке** выберите **Обновить**.
+1. В диалоговом окне **Доступно обновление** нажмите кнопку **Обновить**.
 
    Visual Studio обновляется, закрывается и снова открывается.
 
@@ -290,6 +292,6 @@ ms.locfileid: "68250583"
 * [Параллельная установка версий Visual Studio](install-visual-studio-versions-side-by-side.md)
 * [Обновление сетевой установки Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Обновление Visual Studio во время обслуживания](update-servicing-baseline.md)
-* [Обновление Visual Studio для Mac](/visualstudio/mac/update)
+* [Управление обновлением сетевых развертываний Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Изменение Visual Studio](modify-visual-studio.md)
 * [Удаление Visual Studio](uninstall-visual-studio.md)

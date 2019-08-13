@@ -1,17 +1,17 @@
 ---
 title: Преимущество Центра приложений Visual Studio в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: Сведения о преимуществе Центра приложений Visual Studio, включенном в подписки Visual Studio.
-ms.openlocfilehash: 1f57f6518c82c0eb60cbea9636c9973d2c9fd624
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1feb4660e52335f838c1e7c80428575aaf7a04cc
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826218"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787831"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Центр приложений Visual Studio в подписках Visual Studio
 
@@ -70,3 +70,6 @@ ms.locfileid: "67826218"
   - Изучите подробную [документацию по Центру приложений](/appcenter/).
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Следующие шаги
+Azure — это ваш личная среда для разработки и тестирования.  Подготавливайте виртуальные машины, облачные службы и другие ресурсы Azure. Активируйте [преимущество Azure](vs-azure.md), если вы еще не сделали этого. 

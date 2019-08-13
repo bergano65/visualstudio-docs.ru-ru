@@ -2,7 +2,7 @@
 title: Удаление Visual Studio
 titleSuffix: ''
 description: Сведения о поэтапном удалении среды Visual Studio.
-ms.date: 03/30/2019
+ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 759a1e2c5ba1c3ecff983e1d2ca3903471b7f5fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e9212bc5dda2ea69f685077eb2cbe86470d4064
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951399"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681353"
 ---
 # <a name="uninstall-visual-studio"></a>Удаление Visual Studio
 
@@ -51,7 +51,7 @@ ms.locfileid: "62951399"
 
 ## <a name="uninstall-visual-studio-installer"></a>Удаление установщика Visual Studio
 
-Чтобы полностью удалить все установки Visual Studio 2017 и установщик Visual Studio с компьютера, удалите их в окне "Программы и компоненты".
+Чтобы полностью удалить все установки Visual Studio 2017 и Visual Studio Installer с компьютера, удалите их в окне "Программы и компоненты".
 
 1. В Windows 10 введите **Программы и компоненты** в поле "Введите текст для поиска".
 1. Найдите **Microsoft Visual Studio 2017** (или **Visual Studio 2017**).
@@ -67,7 +67,7 @@ ms.locfileid: "62951399"
 
      Например, на компьютере с Windows 10 нажмите кнопку **Пуск** и прокрутите список до буквы **V**, где расположен пункт **Visual Studio Installer**.
 
-     ![Откройте Visual Studio Installer](media/vs2019-visual-studio-installer.png "Откройте Visual Studio Installer")
+     ![Откройте Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Откройте Visual Studio Installer")
 
      > [!NOTE]
      > Кроме того, Visual Studio Installer можно найти в следующем расположении:

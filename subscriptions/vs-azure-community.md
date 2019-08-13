@@ -1,21 +1,22 @@
 ---
-title: Преимущество сообщества Azure в подписках Visual Studio | Документация Майкрософт
+title: Преимущество поддержки сообщества Azure в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
-description: Сведения о преимуществе сообщества Azure, включенном в некоторые подписки Visual Studio.
-ms.openlocfilehash: 9cd166d2e6be64713e6e79569133eea887568da1
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+description: Сведения о преимуществе поддержки сообщества Azure, включенном в некоторые подписки Visual Studio.
+ms.openlocfilehash: 0f03d269ab316801a75cbb3b1b618d722ec46b89
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250826"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681253"
 ---
-# <a name="azure-community"></a>Сообщество Azure
-
+# <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Доступ к форуму поддержки сообщества Azure в рамках подписки Visual Studio
 Вы можете получить помощь напрямую от команды Azure на нескольких форумах поддержки в сообществе Azure.  Преимущество сообщества Azure предоставляет доступ к коллекции форумов, посвященных темам, связанным с Azure.
+
+## <a name="available-topics"></a>Доступные статьи
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -27,7 +28,7 @@ ms.locfileid: "68250826"
 | [Портал управления Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [виртуальные машины Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc);                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-## <a name="activation-steps"></a>Процедура активации
+## <a name="get-started"></a>Начало работы
 Вы можете очень легко начать взаимодействие с сообществом Azure.
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
@@ -66,3 +67,6 @@ ms.locfileid: "68250826"
 - [Документация по Azure](/azure/).
 - Вам нужна помощь по вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio?  Обратитесь в [службу поддержки по подпискам на Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Следующие шаги
+Знаете ли вы, что вместе со многими подписками Visual Studio предоставляются деньги на счете в Azure?  Узнайте, [как активировать](vs-azure.md) свои деньги на счете в Azure.

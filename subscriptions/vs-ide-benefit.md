@@ -3,17 +3,17 @@ title: Преимущество Studio IDE в подписках Visual Studio |
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/03/2019
+ms.date: 08/01/2019
 ms.topic: conceptual
 description: Сведения о том, как скачать и установить Visual Studio IDE, входящую в вашу подписку Visual Studio.
-ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824657"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787857"
 ---
-# <a name="using-the-visual-studio-2019-benefit"></a>Использование преимущества Visual Studio 2019
+# <a name="the-visual-studio-2019-benefit"></a>Использование преимущества Visual Studio 2019
 
 Как подписчик Visual Studio вы получаете доступ к интегрированной среде разработки Visual Studio.  Версия будет зависеть от уровня подписки.  Преимущество будет отображаться в виде плитки в категории "Сервис" на странице [Преимущества](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) портала подписчика.
 
@@ -34,7 +34,7 @@ ms.locfileid: "67824657"
 5. Нажмите синюю кнопку "Скачать".
    > [!div class="mx-imgBorder"]
    > ![Сведения о скачивании Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png)
-6. Чтобы выполнить установку, щелкните **Выполнить**.
+6. Дважды щелкните скачанный пакет установщика.  При появлении запроса на установку, щелкните **Запустить**.
 7. В диалоговом окне "Контроль учетных записей пользователей" щелкните **Да**.
 8. Нажмите кнопку **Продолжить**, чтобы принять условия лицензионного соглашения.
 9. При запуске установщика выберите нужные рабочие нагрузки, отдельные компоненты и языковые пакеты на соответствующих вкладках.
@@ -43,9 +43,9 @@ ms.locfileid: "67824657"
 
 10. Нажмите кнопку **Установить**.
 
-11. По завершении установки вы сможете изменить ее или запустить Visual Studio.  Щелкните **Запустить**, чтобы начать работу.
+11. По завершении установки вы сможете изменить ее или запустить Visual Studio.  Щелкните **Запустить**, чтобы начать работу.  Если установлено несколько версий, они будут перечислены в списке.
     > [!div class="mx-imgBorder"]
-    > ![Запуск Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
+    > ![Запуск Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
 
 12. Войдите в учетную запись, связанную с вашей подпиской Visual Studio.
 
@@ -53,12 +53,9 @@ ms.locfileid: "67824657"
 
 14. Открывается Visual Studio. Теперь вы готовы начать работу с Visual Studio.
 
-    ::: moniker range="vs-2017"
-
     > [!div class="mx-imgBorder"]
     > ![Начало работы с Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
-    ::: moniker-end
 
 ## <a name="eligibility"></a>Право на участие
 
@@ -81,3 +78,9 @@ ms.locfileid: "67824657"
   - Техническая поддержка: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [Документация](/visualstudio/)
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+
+## <a name="next-steps"></a>Следующие шаги
+Установив Visual Studio, не забудьте активировать следующие важные преимущества:
+- [Azure DevOps](vs-azure-devops.md)
+- [деньги на счете в Azure](vs-azure.md);
+- [учетная запись разработчика Windows](vs-windows-dev.md).

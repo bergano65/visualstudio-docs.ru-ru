@@ -1,5 +1,6 @@
 ---
-title: Клавиши-модификаторы инструмента «Непосредственное выделение» в Blend
+title: Клавиши-модификаторы инструмента "Непосредственное выделение"
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
@@ -8,14 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b606cbc3857ac1b30713e2c78b9c85045bcb42ff
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 088c66e73c912ef6f282b7addb8debcd73b766e5
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820391"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821822"
 ---
-# <a name="direct-selection-tool-modifier-keys-in-blend"></a>Клавиши-модификаторы инструмента «Непосредственное выделение» в Blend
+# <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Клавиши-модификаторы инструмента "Непосредственное выделение" в Blend для Visual Studio
+
 Следующая таблица содержит быстрые способы изменения фигуры существующего контура с помощью инструмента **прямого выделения** ![Инструмент прямого выделения](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Для добавления или удаления точек на существующем контуре или для объединения двух существующих контуров используйте инструмент **Перо**.
 
 |Операция|Сделайте следующее|Указатель|
@@ -33,7 +35,6 @@ ms.locfileid: "66820391"
 
 ## <a name="see-also"></a>См. также
 
-- [Сочетания клавиш и клавиши-модификаторы](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [Клавиши-модификаторы области рисования](../designers/artboard-modifier-keys-in-blend.md)
 - [Клавиши-модификаторы инструмента "Перо"](../designers/pen-tool-modifier-keys-in-blend.md)
 - [Рисование фигур и контуров](../designers/draw-shapes-and-paths.md)

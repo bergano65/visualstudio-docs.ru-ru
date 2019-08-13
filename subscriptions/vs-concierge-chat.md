@@ -1,21 +1,20 @@
 ---
 title: Преимущество Concierge Chat в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Сведения о преимуществе Concierge Chat, входящем в состав подписок Visual Studio.
-ms.openlocfilehash: 043ced3654c8bf43feebcc584fb46bb033d96e78
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 543fee937437141aa38d53707cb6e5bf84031e94
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784625"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681191"
 ---
-# <a name="concierge-chat"></a>Concierge Chat
-
-Службы Concierge Chat помогают найти сведения о продуктах и техническую документацию, а также предоставляет помощь по использованию преимуществ подписки Visual Studio.
+# <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat в подписках Visual Studio
+Службы Concierge Chat помогают найти сведения о продуктах и техническую документацию, а также предоставляют помощь по использованию преимуществ подписки Visual Studio.
 
 Служба действует круглосуточно и без выходных, но пока только на английском языке (кроме вопросов по учетным записям, выставлению счетов и подпискам).
 
@@ -36,7 +35,6 @@ ms.locfileid: "67784625"
     > ![Сеанс Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Право на участие
-
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия, некоторые версии не для перепродажи <sup>1</sup> | Доступно       |  Yes          |
@@ -53,10 +51,15 @@ ms.locfileid: "67784625"
 Что делать, если вы не знаете свой уровень подписки?  Подключитесь к [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) для просмотра всех подписок, назначенных вашему адресу электронной почты. Если на этой странице отображаются не все подписки, возможно, часть из них назначена другому адресу электронной почты.  Чтобы увидеть их, войдите с соответствующим адресом электронной почты.
 
 ## <a name="frequently-asked-questions"></a>Вопросы и ответы
-
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>Вопрос:  Доступны ли разные языки в службе чата?
    Ответ. Помощь по проблемам с учетными записями, выставлением счетов и подписками доступна на нескольких языках.  Помощь в поиске сведений о продуктах и технической документации доступна только на английском языке.
 
 ## <a name="support-resources"></a>Ресурсы поддержки
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Следующие шаги
+Дополнительные сведения о средствах и службах Майкрософт см. в документации по следующим продуктам:
+- [Azure](/azure/)
+- [Azure DevOps](/azure/devops/)
+- [Интегрированная среда разработки Visual Studio](/visualstudio/)

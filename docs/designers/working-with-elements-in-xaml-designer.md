@@ -6,14 +6,12 @@ ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f80496cb54e8e7f4c99a819ddd3c07fbed5438ca
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823827"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821515"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Работа с элементами в конструкторе XAML
 
@@ -21,7 +19,7 @@ ms.locfileid: "67823827"
 
 ## <a name="add-an-element-to-a-layout"></a>Добавление элемента в макет
 
-*Макет* — это процесс изменения размеров и положения элементов в пользовательском интерфейсе. Для размещения визуальных элементов необходимо поместить их в структуру [Панель](/uwp/api/Windows.UI.Xaml.Controls.Panel). `Panel` имеет дочернее свойство, которое является коллекцией типов [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement). Вы можете использовать различные дочерние элементы `Panel`, такие как [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) и [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid), в качестве контейнеров макета и для размещения и упорядочения элементов на странице.
+*Макет* — это процесс изменения размеров и положения элементов в пользовательском интерфейсе. Для размещения визуальных элементов необходимо поместить их в структуру [Панель](xref:Windows.UI.Xaml.Controls.Panel). `Panel` имеет дочернее свойство, которое является коллекцией типов [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement). Вы можете использовать разные дочерние элементы `Panel`, такие как [Canvas](xref:Windows.UI.Xaml.Controls.Canvas), [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) и [Grid](xref:Windows.UI.Xaml.Controls.Grid), в качестве контейнеров макет, а также для размещения и упорядочения элементов на странице.
 
 По умолчанию панель `Grid` используется в качестве контейнера макета верхнего уровня на странице или форме. Можно добавлять панели макета, элементы управления и другие элементы на верхнем уровне макета страницы.
 
@@ -31,7 +29,7 @@ ms.locfileid: "67823827"
 
 - Перетащите элемент с **панели элементов** в область рисования.
 
-- На **панели элементов** выберите один из инструментов рисования (например, [Эллипс](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) или [Прямоугольник](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle)) и создайте объект на активной панели.
+- На **панели элементов** выберите один из инструментов рисования (например, [Эллипс](xref:Windows.UI.Xaml.Shapes.Ellipse) или [Прямоугольник](xref:Windows.UI.Xaml.Shapes.Rectangle)) и создайте объект на активной панели.
 
 ## <a name="change-the-layering-order-of-elements"></a>Изменение порядка слоев элементов
 
@@ -51,7 +49,7 @@ ms.locfileid: "67823827"
 
   - **На задний план** — чтобы показывать элемент за всеми другими элементами.
 
-  Измените свойство **ZIndex** в разделе **Макет** окна "Свойства". Для перекрывающихся элементов свойство **ZIndex** имеет приоритет над порядком элементов, показанных в окне "Структура документа". Элемент с высшим значением свойства **ZIndex** отображается на переднем плане при перекрытии элементов.
+- Измените свойство **ZIndex** в разделе **Макет** окна "Свойства". Для перекрывающихся элементов свойство **ZIndex** имеет приоритет над порядком элементов, показанных в окне "Структура документа". Элемент с высшим значением свойства **ZIndex** отображается на переднем плане при перекрытии элементов.
 
 ## <a name="change-the-alignment-of-an-element"></a>Изменение выравнивания элемента
 
@@ -88,7 +86,7 @@ ms.locfileid: "67823827"
 Если при открытии графического элемента поля противоположное поле не задано, ему будет присвоено корректное значение в соответствии с расположением элемента в области рисования. Для противоположных полей, например полей **Слева** и **Справа**, всегда будет задано хотя бы одно значение.
 
 > [!IMPORTANT]
-> Элементы, помещенные в некоторые контейнеры макета, например <xref:Windows.UI.Xaml.Controls.Canvas>, лишены графических элементов полей. У элементов, помещенных в <xref:Windows.UI.Xaml.Controls.StackPanel>, имеются графические элементы левого и правого или верхнего и нижнего полей, в зависимости от ориентации `StackPanel`.
+> У элементов, помещенных в некоторые контейнеры макета, например [Canvas](xref:Windows.UI.Xaml.Controls.Canvas), нет графических элементов полей. У элементов, помещенных в [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel), есть графические элементы левого и правого или верхнего и нижнего полей, в зависимости от ориентации `StackPanel`.
 
 ## <a name="group-and-ungroup-elements"></a>Группирование и разгруппировка элементов
 
@@ -101,7 +99,7 @@ ms.locfileid: "67823827"
 2. Щелкните выделенные элементы правой кнопкой, наведите указатель на команду **Сгруппировать в**, а затем выберите тип контейнера макета, в котором будет размещена группа.
 
     > [!TIP]
-    > Если выбрать <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border>, или <xref:Windows.UI.Xaml.Controls.ScrollViewer> для группировки элементов, они размещаются в новой панели <xref:Windows.UI.Xaml.Controls.Grid> в <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> или <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Если необходимо разгруппировать элементы в одном из этих контейнеров макета, удаляются только контейнеры <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> или <xref:Windows.UI.Xaml.Controls.ScrollViewer>, а панель <xref:Windows.UI.Xaml.Controls.Grid> остается. Для удаления панели `Grid` нужно разгруппировать элементы еще раз.
+    > Если для группирования объектов выбран вариант [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) или [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer), объекты размещаются на новой панели макета [Grid](xref:Windows.UI.Xaml.Controls.Grid) в пределах элемента [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) или [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer). Если необходимо разгруппировать элементы в одном из этих контейнеров макета, удаляются только контейнеры [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) или [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer), а панель [Grid](xref:Windows.UI.Xaml.Controls.Grid) остается. Для удаления панели `Grid` нужно разгруппировать элементы еще раз.
 
 Чтобы разгруппировать элементы и удалить макет, щелкните правой кнопкой мыши группу, которую необходимо разгруппировать, и выберите пункт **Разгруппировать**. Также можно группировать и разгруппировывать элементы, щелкнув правой кнопкой мыши выбранные элементы в окне "Структура документа" и выбрав пункт **Сгруппировать в** или **Разгруппировать**.
 

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 435eb2571f709f3ed5df4effbfdf3b5f4970457b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 153624ec6f0bdb13e4d89a92edf977d0badc7e62
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461394"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68712220"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Средства тестирования Visual Studio
 
@@ -28,7 +28,13 @@ ms.locfileid: "65461394"
 
 Окно **Обозреватель тестов** помогает разработчикам создавать и запускать модульные тесты, а также управлять ими. Можно использовать платформу для выполнения модульных тестов Microsoft или одну из нескольких сторонних платформ, в том числе платформы с открытым исходным кодом.
 
+::: moniker range="vs-2017"
 ![Обозреватель тестов Visual Studio](media/devtest-testexplorer.png)
+::: moniker-end
+
+::: moniker range="vs-2019"
+![Обозреватель тестов Visual Studio 16.2](media/vs-2019/test-explorer-16-2.PNG)
+::: moniker-end
 
 * [Приступая к работе с модульным тестированием](unit-test-your-code.md)
 * [Выполнение модульных тестов с помощью обозревателя тестов](run-unit-tests-with-test-explorer.md)
