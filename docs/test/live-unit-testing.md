@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662063"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923754"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing в Visual Studio
 
@@ -151,7 +151,7 @@ ms.locfileid: "68662063"
 
 Если решение содержит 10 и более проектов, когда вы запускаете Live Unit Testing при отсутствии сохраненных данных или выбираете элементы **Тест** > **Live Unit Testing** > **Сброс очистки** в меню верхнего уровня Visual Studio, Visual Studio отображает следующее диалоговое окно. Оно содержит предупреждение о том, что динамическое выполнение большого числа тестов в крупных проектах может повлиять на производительность. Если нажать кнопку **ОК**, Live Unit Testing выполнит все тесты в решении. Если нажать кнопку **Отменить**, можно выбрать тесты для выполнения. Сведения о том, как это сделать, см. в разделе [Добавление и исключение тестовых проектов и методов теста](#include-and-exclude-test-projects-and-test-methods).
 
- ![Диалоговое окно Live Unit Testing для крупных проектов](media/lut-large-project.png)
+![Диалоговое окно Live Unit Testing для крупных проектов](media/lut-large-project.png)
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>Добавление и исключение тестовых проектов и методов теста
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0946efb15758c76c078ff234717af6fd1fac15c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5a511e19394b397096a5a5ba2e339166454138e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792576"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926285"
 ---
 # <a name="add-existing-project-command"></a>Команда Add Existing Project
 Добавляет существующий проект в текущее решение.
@@ -30,23 +30,24 @@ File.AddExistingProject filename
 ```
 
 ## <a name="arguments"></a>Аргументы
- `filename` Необязательный. Полный путь и имя проекта с расширением для проекта, который необходимо добавить в решение.
+`filename`\
+Необязательный параметр. Полный путь и имя проекта с расширением для проекта, который необходимо добавить в решение.
 
- Если аргумент `filename` содержит пробелы, его необходимо заключить в кавычки.
+Если аргумент `filename` содержит пробелы, его необходимо заключить в кавычки.
 
- Если имя файла не указано, при выполнении команды откроется диалоговое окно файла, в котором пользователь может выбрать проект.
+Если имя файла не указано, при выполнении команды откроется диалоговое окно файла, в котором пользователь может выбрать проект.
 
 ## <a name="remarks"></a>Примечания
- Функция автозавершения пытается определить правильный путь и правильное имя файла во время их ввода.
+Функция автозавершения пытается определить правильный путь и правильное имя файла во время их ввода.
 
 ## <a name="example"></a>Пример
- В этом примере в текущее решение добавляется проект [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] с именем TestProject1.
+В этом примере в текущее решение добавляется проект [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] с именем TestProject1.
 
 ```cmd
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fd44fdc7e365bd07f25318740fb2dcc04fe0ea9d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431254"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926458"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Поддерживаемые конфигурации и платформы для закодированных тестов пользовательского интерфейса и записей действий
 
@@ -68,7 +68,7 @@ ms.locfileid: "62431254"
 | Citrix/Службы терминалов | Мы не рекомендуем действия записи на сервере терминалов. Средство записи не поддерживает выполнение нескольких экземпляров одновременно. |
 | PowerBuilder | Поддерживается частично.<br /><br /> Поддержка элементов управления PowerBuilder ограничивается специальными возможностями. |
 
- Сведения о создании расширений для поддержки других платформ см. в статьях [Включение закодированных тестов пользовательского интерфейса для элементов управления](../test/enable-coded-ui-testing-of-your-controls.md) и [Расширение закодированных тестов пользовательского интерфейса и записей действий](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
+Сведения о создании расширений для поддержки других платформ см. в статьях [Включение закодированных тестов пользовательского интерфейса для элементов управления](../test/enable-coded-ui-testing-of-your-controls.md) и [Расширение закодированных тестов пользовательского интерфейса и записей действий](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
 
 ## <a name="see-also"></a>См. также
 

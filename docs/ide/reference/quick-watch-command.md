@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e45a6c63cb1f886c1440b93d58f944458f61290
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75afe1cdd0d1755d2953e6b9e6e3e85a089b3303
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811704"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926126"
 ---
 # <a name="quick-watch-command"></a>Команда Quick Watch
 Отображает выбранный или указанный текст в поле "Выражение" окна [Быстрая проверка](../../debugger/watch-and-quickwatch-windows.md). Это диалоговое окно предназначено для вычисления текущего значения переменной или выражения, распознанного отладчиком, либо содержимого регистра. Кроме того, можно изменить значение любой неконстантной переменной или содержимое регистров.
@@ -30,12 +30,13 @@ Debug.QuickWatchq [text]
 ```
 
 ## <a name="arguments"></a>Аргументы
- `text`
 
- Необязательный параметр. Текст для добавления в диалоговое окно **Быстрая проверка**
+`text`\
+Необязательный параметр. Текст для добавления в диалоговое окно **Быстрая проверка**
 
 ## <a name="remarks"></a>Примечания
- Если параметр `text` опущен, выделенный текст или слово в позиции курсора добавляется в окно контрольных значений.
+
+Если параметр `text` опущен, выделенный текст или слово в позиции курсора добавляется в окно контрольных значений.
 
 ## <a name="example"></a>Пример
 
@@ -43,7 +44,7 @@ Debug.QuickWatchq [text]
 >Debug.QuickWatch
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Установка контрольных значений для переменных с помощью окон "Контрольное значение" и "Быстрая проверка" в Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)

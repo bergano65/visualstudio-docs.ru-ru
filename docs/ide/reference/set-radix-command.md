@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13341d8cb6a708f4e10f211bd47b79a75e1b6e2a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952039"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926043"
 ---
 # <a name="set-radix-command"></a>Команда Set Radix
 Задает или возвращает числовой базовый тип, используемый для отображения целочисленных значений.
@@ -30,18 +30,18 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ```
 
 ## <a name="arguments"></a>Аргументы
- `10` или `16` или `hex` или `dec`
+`10` или `16` или `hex` или `dec`
 
- Необязательный параметр. Указывает десятичную (10 или dec) или шестнадцатеричную (16 или hex) систему счисления. Если аргумент отсутствует, возвращается основание текущей системы счисления.
+Необязательный параметр. Указывает десятичную (10 или dec) или шестнадцатеричную (16 или hex) систему счисления. Если аргумент отсутствует, возвращается основание текущей системы счисления.
 
 ## <a name="example"></a>Пример
- В приведенном примере в среде настраивается отображение целочисленных значений в шестнадцатеричном формате.
+В приведенном примере в среде настраивается отображение целочисленных значений в шестнадцатеричном формате.
 
 ```cmd
 >Debug.SetRadix hex
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)
