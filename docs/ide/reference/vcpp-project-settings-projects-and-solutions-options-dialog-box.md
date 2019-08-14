@@ -18,12 +18,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461564"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918887"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Параметры проекта VC++, страница "Проекты и решения", диалоговое окно "Параметры"
 
@@ -49,11 +49,11 @@ ms.locfileid: "68461564"
 
  **Да**
 
- Выводит все переменные среды в файл журнала сборки. Этот параметр задает вывод всех переменных среды во время сборки проектов C++ в файл журнала сборки.
+Выводит все переменные среды в файл журнала сборки. Этот параметр задает вывод всех переменных среды во время сборки проектов C++ в файл журнала сборки.
 
  **No**
 
- Исключает переменные среды из файла журнала сборки.
+Исключает переменные среды из файла журнала сборки.
 
 ## <a name="build-timing"></a>Время сборки
 
@@ -63,7 +63,7 @@ ms.locfileid: "68461564"
 
  **No**
 
- Отключает регистрацию времени сборки.
+Отключает регистрацию времени сборки.
 
 ## <a name="maximum-concurrent-c-compilations"></a>Максимум одновременных компиляций C++
 

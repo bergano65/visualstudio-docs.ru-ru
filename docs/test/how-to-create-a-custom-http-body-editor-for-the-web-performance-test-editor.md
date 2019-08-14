@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 30ce24b0cb48e88ddb77cf3576d40f95ed022ba0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745829"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926515"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Практическое руководство. Создание пользовательского редактора текста HTTP для редактора веб-тестов производительности
 
@@ -117,9 +117,9 @@ ms.locfileid: "66745829"
 private MessageEditorControl messageEditorControl
 ```
 
- Экземпляр messageEditorControl размещается в диалоговом окне подключаемого модуля, которое создается методом <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>. Кроме того, элемент управления <xref:System.Windows.Forms.RichTextBox> экземпляра messageEditorControl заполняется содержимым в интерфейсе <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Однако создание подключаемого модуля возможно, только если метод <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> возвращает значение `true`. В случае данного редактора метод <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> возвращает значение `true`, если свойство <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> интерфейса <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> содержит значение "xml".
+Экземпляр messageEditorControl размещается в диалоговом окне подключаемого модуля, которое создается методом <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>. Кроме того, элемент управления <xref:System.Windows.Forms.RichTextBox> экземпляра messageEditorControl заполняется содержимым в интерфейсе <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Однако создание подключаемого модуля возможно, только если метод <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> возвращает значение `true`. В случае данного редактора метод <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> возвращает значение `true`, если свойство <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> интерфейса <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> содержит значение "xml".
 
- После того как пользователь завершит изменение основного текста строки и нажмет кнопку **ОК** в диалоговом окне подключаемого модуля, вызывается метод <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> для получения измененного текста в виде строки и обновления **текста строки** запроса в редакторе веб-тестов производительности.
+После того как пользователь завершит изменение основного текста строки и нажмет кнопку **ОК** в диалоговом окне подключаемого модуля, вызывается метод <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> для получения измененного текста в виде строки и обновления **текста строки** запроса в редакторе веб-тестов производительности.
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Создание класса и реализация интерфейса IStringHttpBodyEditorPlugin
 

@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c205a3c8e88603153ec4bfabaa2545d8ae8c62d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 74f6d64d515ac7fab454b123686e671d9bcd1d2d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430787"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918933"
 ---
 # <a name="step-2-run-your-program"></a>Шаг 2. Запуск программы
 При создании нового решения фактически выполняется построение программы, которая в последующем запускается. Она пока ничего не делает — просто открывает пустое окно, у которого в строке заголовка окна надпись **Form1**. Но, как очевидно, она выполняется.
 
- ![Ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этого раздела см. на страницах [Tutorial 1: reate a picture viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 1) или [Tutorial 1: Create a picture viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199) (Руководство 1. Создание приложения для просмотра рисунков на C# —видео 1). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+![Ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этого раздела см. на страницах [Tutorial 1: reate a picture viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 1) или [Tutorial 1: Create a picture viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199) (Руководство 1. Создание приложения для просмотра рисунков на C# —видео 1). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ## <a name="to-run-your-program"></a>Для запуска программы
 

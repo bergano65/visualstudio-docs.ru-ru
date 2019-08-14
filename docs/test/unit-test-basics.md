@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d129d823c662a96a2186ea24989922d4af7442
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 39e5529ae777fe1cee69e669ce20fb919eceb5ef
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661968"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925821"
 ---
 # <a name="unit-test-basics"></a>Основные сведения о модульных тестах
 
@@ -263,7 +263,7 @@ public void My_Test ()
 |-|-|
 |![Кнопка группы обозревателя тестов](../test/media/ute_groupby_btn.png)|Для группировки тестов по категории, нажмите кнопку **Группировать по** .|
 
-Дополнительные сведения см. в разделе [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md)
+Дополнительные сведения см. в разделе [Выполнение модульных тестов с помощью обозревателя тестов](../test/run-unit-tests-with-test-explorer.md).
 
 ## <a name="qa"></a>Вопросы и ответы
 

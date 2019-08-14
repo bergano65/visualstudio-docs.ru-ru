@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a7a59ca23dc444bcdc714ade2fce5bedb87e8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3792f3d6f86faf0b58e8cf8f1b76984ba3bd5d80
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945132"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925999"
 ---
 # <a name="symbol-path-command"></a>Команда Symbol Path
 Задает список каталогов для поиска символов отладчиком.
@@ -31,28 +31,28 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ```
 
 ## <a name="arguments"></a>Аргументы
- `pathname`
+`pathname`
 
- Необязательный параметр. Список путей, разделенных точкой с запятой, для поиска символов отладчиком.
+Необязательный параметр. Список путей, разделенных точкой с запятой, для поиска символов отладчиком.
 
 ## <a name="remarks"></a>Примечания
- Если `pathname` не указан, эта команда выводит список текущих путей к символам.
+Если `pathname` не указан, эта команда выводит список текущих путей к символам.
 
 ## <a name="example"></a>Пример
- Этот пример добавляет два пути в список каталогов символов.
+Этот пример добавляет два пути в список каталогов символов.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
 ## <a name="example"></a>Пример
- Этот пример отображает список текущих путей к символам, разделенных точкой с запятой.
+Этот пример отображает список текущих путей к символам, разделенных точкой с запятой.
 
 ```
 Debug.SymbolPath
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Командное окно](../../ide/reference/command-window.md)
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)

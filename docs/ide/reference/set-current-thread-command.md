@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88ede32645c9fc761c476e9f4d45ddf11a7577a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ea652f04295871f9437d80555254caecab87a48
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934619"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926070"
 ---
 # <a name="set-current-thread-command"></a>Команда Set Current Thread
 Задает указанный поток в качестве текущего.
@@ -30,9 +30,9 @@ Debug.SetCurrentThread index
 ```
 
 ## <a name="arguments"></a>Аргументы
- `index`
+`index`
 
- Обязательный. Выбирает поток по индексу.
+Обязательный. Выбирает поток по индексу.
 
 ## <a name="example"></a>Пример
 
@@ -40,7 +40,7 @@ Debug.SetCurrentThread index
 >Debug.SetCurrentThread 1
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)

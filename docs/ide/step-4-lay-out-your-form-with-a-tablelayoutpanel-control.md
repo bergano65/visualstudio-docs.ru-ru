@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e0c5999f8d8e6bdfbc96a24a1a51b7c093aca1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 269fa26b89ab1ca9165efa8eb8971731f078ec60
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431466"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925937"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel
 На этом шаге в форму добавляется элемент управления <xref:System.Windows.Forms.TableLayoutPanel>. TableLayoutPanel помогает должным образом выровнять элементы управления в форме, которая будет добавлена позднее.
 
- ![Ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этого раздела см. на страницах [Tutorial 1: Create a picture viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) (Руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 2) или [Tutorial 1: Create a picture viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200) (Руководство 1. Создание приложения для просмотра рисунков на C# — видео 2). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
+![Ссылка на видео](../data-tools/media/playvideo.gif)Видеоверсию этого раздела см. на страницах [Tutorial 1: Create a picture viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) (Руководство 1. Создание приложения для просмотра рисунков на Visual Basic — видео 2) или [Tutorial 1: Create a picture viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200) (Руководство 1. Создание приложения для просмотра рисунков на C# — видео 2). Эти видеоролики сняты с использованием более ранней версии Visual Studio, поэтому существуют небольшие различия в некоторых командах меню и других элементах пользовательского интерфейса. Однако концепции и процедуры аналогичны текущей версии Visual Studio.
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Создание макета формы с помощью элемента управления TableLayoutPanel
 

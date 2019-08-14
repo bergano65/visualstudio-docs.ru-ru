@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ef227bb30703a41fe9519114a2bc9904e902f2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714811"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924446"
 ---
 # <a name="wpf-overview"></a>Общие сведения о WPF
 
@@ -239,7 +239,7 @@ End Namespace
 
 Приведенная ниже разметка привязывает элемент управления <xref:System.Windows.Controls.TextBox> к экземпляру настраиваемого объекта `Person`.
 
- ```xaml
+```xaml
  <Window
      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -249,7 +249,7 @@ End Namespace
    <TextBox Name="personNameTextBox" Text="{Binding Path=Name}" />
 
  </Window>
- ```
+```
 
 [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_6.vb)]
 [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_6.cs)]
@@ -597,7 +597,7 @@ WPF предоставляет библиотеку стандартных ве�
 </ResourceDictionary>
 ```
 
- В приведенном ниже примере используется ссылка на библиотеку ресурсов, определенную в предыдущем примере, что позволяет использовать ее в рамках всего приложения.
+В приведенном ниже примере используется ссылка на библиотеку ресурсов, определенную в предыдущем примере, что позволяет использовать ее в рамках всего приложения.
 
 ```xaml
 <Application

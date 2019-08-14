@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046855"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919477"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Советы по повышению продуктивности при работе в Visual Studio
 
@@ -46,7 +46,7 @@ ms.locfileid: "67046855"
 
 ## <a name="navigate-within-your-code"></a>Перемещение по коду
 
- Существует множество способов быстрого поиска нужных мест в коде и перехода к этим местам.
+Существует множество способов быстрого поиска нужных мест в коде и перехода к этим местам.
 
 - **Создание закладок для строк кода**. Для быстрого перехода к определенным строкам кода в файле можно использовать закладки.
 
