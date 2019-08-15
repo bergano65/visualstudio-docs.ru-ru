@@ -93,6 +93,10 @@
                   href: l2dbform-xaml-cs-source-code.md
 - name: Windows Forms
   items:
+    - name: Обзор конструктора Windows Forms
+      href: windows-forms-designer-overview.md
+    - name: Начало работы с конструктором Windows Forms
+      href: walkthrough-windows-forms-designer.md
     - name: "Учебник\_1. Создание средства просмотра рисунков (C#)"
       items:
         - name: Обзор
