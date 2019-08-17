@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ca9c4681cc19917ef965a4c8577e9559d71dd4be
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2a793f0a359cadc58c262861ee0495f92188d0b7
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841962"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547177"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715. Идентификаторы должны иметь правильные префиксы
 
@@ -31,36 +31,36 @@ ms.locfileid: "65841962"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Категория|Microsoft.Naming|
-|Критическое изменение|Критическое, если возникает в интерфейсах.<br /><br /> Не критическое — при возникновении на параметры универсального типа.|
+|Категория|Microsoft. Naming|
+|Критическое изменение|Критическое — при срабатывании интерфейсов.<br /><br /> Не критическое — при возникновении параметров универсального типа.|
 
 ## <a name="cause"></a>Причина
 
-Имя интерфейса не начинается с прописные «I».
+Имя интерфейса не начинается с прописной буквы I.
 
 -или-
 
-Имя [параметр универсального типа](/dotnet/csharp/programming-guide/generics/generic-type-parameters) в типе или методе не начинается с заглавной 'T'.
+Имя [параметра универсального типа](/dotnet/csharp/programming-guide/generics/generic-type-parameters) в типе или методе не начинается с прописной буквы 'T '.
 
-По умолчанию это правило считывает только видимое извне интерфейсы, типы и методы, но это [можно настроить](#configurability).
+По умолчанию это правило рассматривает только внешние видимые интерфейсы, типы и методы, но это можно [настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
 
-По соглашению имена некоторых элементов программирования начинаются с особого префикса.
+По соглашению имена некоторых программных элементов начинаются с определенного префикса.
 
-Интерфейс имена должны начинаться с заглавной, «I» следуют другая прописная буква. Это правило выдает сообщение нарушения для имени интерфейса, такие как «MyInterface» и «IsolatedInterface».
+Имена интерфейсов должны начинаться с прописной буквы "I", за которой следует другая прописная буква. Это правило сообщает о нарушениях имен интерфейсов, таких как "Минтерфаце" и "Исолатединтерфаце".
 
-Имена параметров универсального типа должны начинаться с заглавной 'T' и при необходимости может следовать другая прописная буква. Это правило выдает сообщение нарушения для определения имен параметров универсального типа, таких как «V» и «Тип».
+Имена параметров универсального типа должны начинаться с прописной буквы «'T», а при необходимости может следовать еще одна прописная буква. Это правило сообщает о нарушениях имен параметров универсального типа, таких как "V" и "Type".
 
-Соглашения об именовании обеспечивают единообразие библиотек, предназначенных среда CLR. Это уменьшает обучения, необходимый для новых библиотек программного обеспечения и повышает уверенность клиента в том, что библиотека была разработана тому, кто имеет опыт в разработке управляемого кода.
+Соглашения об именовании обеспечивают общий вид библиотек, предназначенных для среды CLR. Это сокращает кривую обучения, необходимую для новых библиотек программного обеспечения, и повышает уверенность пользователей в том, что библиотека была разработана кем-то, кто имеет опыт разработки управляемого кода.
 
-## <a name="configurability"></a>Возможность настройки
+## <a name="configurability"></a>Возможности настройки
 
-Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части кода это правило анализирует. Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
+Если вы используете это правило из [анализаторов FxCop](install-fxcop-analyzers.md) (а не для анализа прежних версий), можно настроить, какие части кода будет анализировать это правило. Дополнительные сведения см. в статье [Настройка средств FxCop Analyzer](configure-fxcop-analyzers.md).
 
-### <a name="single-character-type-parameters"></a>Параметры типа одного символа
+### <a name="single-character-type-parameters"></a>Параметры типа с одним символом
 
-Вы можете настроить ли исключать параметры типа одного символа из этого правила. Например, чтобы указать, что это правило *не должны* анализ параметров типа одного символа, добавьте один из следующие пары "ключ значение" для файла editorconfig в проект:
+Вы можете указать, следует ли исключать из этого правила параметры типа из одного символа. Например, чтобы указать, что это правило *не должно* анализировать параметры односимвольного типа, добавьте одну из следующих пар "ключ-значение" в editorconfig-файл в проекте:
 
 ```ini
 # Package version 2.9.0 and later
@@ -71,35 +71,35 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 ```
 
 > [!NOTE]
-> Это правило срабатывает, никогда не, для параметра типа с именем `T`, например `Collection<T>`.
+> Это правило никогда не срабатывает для параметра типа с `T`именем, `Collection<T>`например.
 
-### <a name="api-surface"></a>Контактная зона API
+### <a name="api-surface"></a>Поверхность API
 
-Можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+Вы можете настроить, на какие части базы кода следует запускать это правило, в зависимости от их доступности. Например, чтобы указать, что правило должно выполняться только для поверхности API, не являющейся общедоступной, добавьте следующую пару "ключ-значение" в файл. editorconfig в проекте:
 
 ```ini
 dotnet_code_quality.ca1715.api_surface = private, internal
 ```
 
-Этот параметр для только что это правило, для всех правил или для всех правил можно настроить в этой категории (именования).
+Этот параметр можно настроить только для этого правила, для всех правил или для всех правил в этой категории (именование).
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Переименуйте идентификатор, чтобы он правильно добавлен префикс.
+Переименуйте идентификатор таким образом, чтобы он был правильно исправлен.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
 Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="interface-naming-example"></a>Пример именования интерфейса
 
-В следующем фрагменте кода показан интерфейс с неправильным именем:
+В следующем фрагменте кода показан неверно именованный интерфейс:
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
 
-В следующем фрагменте кода предыдущей нарушение устраняется посредством интерфейса префикса «I»:
+Следующий фрагмент кода устраняет предыдущее нарушение, добавляя к интерфейсу префикс "I":
 
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
@@ -107,13 +107,13 @@ dotnet_code_quality.ca1715.api_surface = private, internal
 
 ## <a name="type-parameter-naming-example"></a>Пример именования параметра типа
 
-В следующем фрагменте кода показано, является параметром универсального типа с неправильным именем:
+В следующем фрагменте кода показан неправильно именованный параметр универсального типа:
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
 
-В следующем фрагменте кода предыдущее нарушение устраняется с помощью префикса параметра универсального типа т ":
+Следующий фрагмент кода устраняет предыдущее нарушение, представив префикс параметра универсального типа с помощью 'T ':
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]
@@ -121,4 +121,4 @@ dotnet_code_quality.ca1715.api_surface = private, internal
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1722: Идентификаторы не должны иметь неверные префиксы](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+- [CA1722 Идентификаторы не должны иметь неверный префикс](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

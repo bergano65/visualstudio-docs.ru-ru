@@ -12,47 +12,47 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 3f35e450f17a671b800d003b94ceb5ebc2321c90
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0d3ab899ad660c637492a4c3d229779481184e95
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841393"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547004"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007. Не следует напрямую ожидать Task
 
 |||
 |-|-|
-|TypeName|DoNotDirectlyAwaitATaskAnalyzer|
+|TypeName|донотдиректляваитатасканализер|
 |CheckId|CA2007|
-|Категория|Microsoft.Reliability|
+|Категория|Microsoft. надежность|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
 
-Асинхронный метод [ожидает](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> напрямую.
+Асинхронный метод [ожидает](/dotnet/csharp/language-reference/keywords/await) <xref:System.Threading.Tasks.Task> непосредственного.
 
 ## <a name="rule-description"></a>Описание правила
 
-Когда асинхронный метод ожидает <xref:System.Threading.Tasks.Task> напрямую, продолжение происходит в том же потоке, который создал задачу. Это поведение может быть дорогостоящей с точки зрения производительности и может привести к взаимоблокировке в потоке пользовательского интерфейса. Рассмотрите возможность вызова <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> сигнала вы собираетесь для продолжения.
+Когда асинхронный метод ожидает непосредственного <xref:System.Threading.Tasks.Task> выполнения, продолжение происходит в том же потоке, в котором была создана задача. Такое поведение может быть дорогостоящим в плане производительности и может привести к взаимоблокировке потока пользовательского интерфейса. Рассмотрите <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> возможность вызова, чтобы сообщить о намерении к продолжению.
 
-Это правило входит в состав [анализаторы FxCop](install-fxcop-analyzers.md) и не существует в «традиционные» (анализ статического кода) FxCop.
+Это правило было введено с помощью средств [FxCop Analyzer](install-fxcop-analyzers.md) и не существует в предыдущих анализах FxCop.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушения, вызовите <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> на свою <xref:System.Threading.Tasks.Task>. Можно передать или `true` или `false` для `continueOnCapturedContext` параметра.
+Чтобы устранить нарушения, вызовите <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> в <xref:System.Threading.Tasks.Task>ожидании. Для `false` `true` параметраможно`continueOnCapturedContext` передать значение или.
 
-- Вызов `ConfigureAwait(true)` задачи действует так же, как и вызов явно не <xref:System.Threading.Tasks.Task.ConfigureAwait%2A>. Путем явного вызова этого метода, вы даете читателей о том, что намеренно нужно выполнить продолжение в исходный контекст синхронизации.
+- При `ConfigureAwait(true)` вызове в задаче происходит то же поведение, что <xref:System.Threading.Tasks.Task.ConfigureAwait%2A>и при явном вызове. При явном вызове этого метода читатели узнают, что вы намеренно хотите выполнить продолжение в исходном контексте синхронизации.
 
-- Вызовите `ConfigureAwait(false)` задачи для планирования продолжений в пул потоков, что позволяет избежать взаимоблокировки в потоке пользовательского интерфейса. Передача `false` — хороший вариант для приложений независимых библиотек.
+- Вызовите `ConfigureAwait(false)` задачу, чтобы запланировать продолжение для пула потоков, тем самым избегая взаимоблокировки в потоке пользовательского интерфейса. Передача `false` является хорошим вариантом для библиотек, независимых от приложений.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Вы можете отключить это предупреждение, если вы знаете, что потребитель не в приложении графический пользовательский интерфейс (GUI) или если потребитель не имеет <xref:System.Threading.SynchronizationContext>.
+Это предупреждение можно отключить, если известно, что потребитель не является приложением графического пользовательского интерфейса (GUI) или если потребитель не имеет <xref:System.Threading.SynchronizationContext>.
 
 ## <a name="example"></a>Пример
 
-В следующем фрагменте кода приводит к возникновению предупреждения:
+В следующем фрагменте кода создается предупреждение:
 
 ```csharp
 public async Task Execute()
@@ -62,7 +62,7 @@ public async Task Execute()
 }
 ```
 
-Чтобы устранить нарушение, вызовите <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> на свою <xref:System.Threading.Tasks.Task>:
+Чтобы устранить нарушение, вызовите <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> в <xref:System.Threading.Tasks.Task>ожидаемом виде:
 
 ```csharp
 public async Task Execute()
@@ -72,9 +72,9 @@ public async Task Execute()
 }
 ```
 
-## <a name="configurability"></a>Возможность настройки
+## <a name="configurability"></a>Возможности настройки
 
-Вы можете настроить ли вы хотите исключить асинхронные методы, которые не возвращают значение из этого правила. Чтобы исключить эти типы методов, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+Можно настроить, следует ли исключать асинхронные методы, которые не возвращают значение из этого правила. Чтобы исключить эти типы методов, добавьте следующую пару "ключ-значение" в editorconfig-файл в проекте:
 
 ```ini
 # Package version 2.9.0 and later
@@ -84,15 +84,15 @@ dotnet_code_quality.CA2007.exclude_async_void_methods = true
 dotnet_code_quality.CA2007.skip_async_void_methods = true
 ```
 
-Можно также настроить, какие выходные данные типов сборки для применения данного правила. Например для этого правила применяются только к коду, формирующий консольного приложения или библиотеки динамической компоновки (то есть не, пользовательского интерфейса приложения), добавьте следующую пару "ключ значение" файла editorconfig в проект:
+Можно также настроить типы выходных сборок, к которым применяется это правило. Например, чтобы применить это правило только к коду, который создает консольное приложение или динамически связанную библиотеку (то есть не приложение пользовательского интерфейса), добавьте следующую пару "ключ-значение" в editorconfig-файл в проекте:
 
 ```ini
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
 ```
 
-Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
+Дополнительные сведения см. в статье [Настройка средств FxCop Analyzer](configure-fxcop-analyzers.md).
 
 ## <a name="see-also"></a>См. также
 
-- [Следует ли ожидать задачу с ConfigureAwait(false)?](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md#should-i-await-a-task-with-configureawaitfalse)
-- [Установка анализаторы FxCop в Visual Studio](install-fxcop-analyzers.md)
+- [Следует ли ожидать задачи с ConfigureAwait (false)?](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md#should-i-await-a-task-with-configureawaitfalse)
+- [Установка средств FxCop Analyzer в Visual Studio](install-fxcop-analyzers.md)

@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0152ae9f76ea1318f717c41a70d3d46351c9021a
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300613"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551142"
 ---
 # <a name="configure-fxcop-analyzers"></a>Настройка анализаторов FxCop
 
-[Анализаторы FxCop](install-fxcop-analyzers.md) состоят из наиболее важных правил "FxCop" из статического анализа кода, преобразованных в анализаторы Roslyn. Настроить анализаторы кода FxCop можно двумя способами.
+[Анализаторы FxCop](install-fxcop-analyzers.md) состоят из наиболее важных правил "FxCop" из устаревшего анализа, преобразованных в анализаторы кода на основе .NET Compiler Platform. Настроить анализаторы кода FxCop можно двумя способами.
 
 - С [набором правил](#fxcop-analyzer-rule-sets), который позволяет включить или отключить правило и задать серьезность нарушения индивидуальных правил.
 
 - Начиная с версии 2.6.3 пакета NuGet [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) с помощью [editorconfig-файла](#editorconfig-file). [Настраиваемые параметры](fxcop-analyzer-options.md) позволяют уточнить, какие части базы кода следует анализировать.
 
 > [!TIP]
-> Сведения о различиях между анализом статического кода FxCop и анализаторами FxCop см. в статье [вопросы и ответы по FxCop Analyzer](fxcop-analyzers-faq.md).
+> Сведения о различиях между устаревшим анализом и анализаторами FxCop см. в статье [вопросы и ответы по FxCop Analyzer](fxcop-analyzers-faq.md).
 
 ## <a name="fxcop-analyzer-rule-sets"></a>Наборы правил FxCop Analyzer
 
@@ -42,7 +42,7 @@ ms.locfileid: "68300613"
 - безопасность
 - использования
 
-Дополнительные сведения см. в разделе [наборы правил для анализаторов Roslyn](analyzer-rule-sets.md).
+Дополнительные сведения см. в разделе [наборы правил для анализаторов кода](analyzer-rule-sets.md).
 
 ## <a name="editorconfig-file"></a>Файл EditorConfig
 
@@ -78,7 +78,7 @@ ms.locfileid: "68300613"
    </Project>
    ```
 
-3. Добавьте строку в *CSPROJ* -или *VBPROJ* -файл для импорта файла PROPS  , созданного на предыдущем шаге. Эту строку необходимо поместить перед любыми строками, которые импортируют файлы FxCop Analyzer *. props* . Например, если файл. props имеет имя *editorconfig. props*:
+3. Добавьте строку в *CSPROJ* -или *VBPROJ* -файл для импорта файла PROPS , созданного на предыдущем шаге. Эту строку необходимо поместить перед любыми строками, которые импортируют файлы FxCop Analyzer *. props* . Например, если файл. props имеет имя *editorconfig. props*:
 
    ```xml
    ...
@@ -90,7 +90,7 @@ ms.locfileid: "68300613"
 4. Перезагрузите проект.
 
 > [!NOTE]
-> Нельзя настроить устаревшие правила FxCop (статический анализ кода FxCop) с помощью файла editorconfig.
+> Старые правила FxCop нельзя настроить с помощью файла editorconfig.
 
 ## <a name="option-scopes"></a>Области параметров
 
