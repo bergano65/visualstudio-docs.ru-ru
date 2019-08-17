@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a574f7f77277255acf2150c218c3f4db061e75c
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ba54b9f87fe8c8cd8bfdc86f39e3121135241e92
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604766"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547516"
 ---
 # <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052. Типы со статическими заполнителями должны быть статическими или NotInheritable
 
@@ -59,7 +59,7 @@ ms.locfileid: "68604766"
 
 ## <a name="configurability"></a>Возможности настройки
 
-Если вы используете это правило из [анализаторов FxCop](install-fxcop-analyzers.md) (а не с помощью статического анализа кода), можно настроить, на какие части базы кода следует запускать это правило, в зависимости от их доступности. Например, чтобы указать, что правило должно выполняться только для поверхности API, не являющейся общедоступной, добавьте следующую пару "ключ-значение" в файл EditorConfig в проекте:
+Если вы используете это правило из [анализаторов FxCop](install-fxcop-analyzers.md) (а не для анализа прежних версий), можно настроить, на какие части базы кода следует запускать это правило, в зависимости от их доступности. Например, чтобы указать, что правило должно выполняться только для поверхности API, не являющейся общедоступной, добавьте следующую пару "ключ-значение" в файл EditorConfig в проекте:
 
 ```ini
 dotnet_code_quality.ca1052.api_surface = private, internal

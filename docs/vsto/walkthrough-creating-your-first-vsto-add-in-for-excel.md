@@ -1,6 +1,6 @@
 ---
 title: Пошаговое руководство. Создание первой надстройки VSTO для Excel
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f5de8be3463ff0e96d516c8dec592d0aff3cfc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981439"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548012"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Пошаговое руководство. Создание первой надстройки VSTO для Excel
   В этом вводном пошаговом руководстве показано, как создавать надстройки уровня приложения для Microsoft Office Excel. Функции, создаваемые в подобном решении, доступны для приложения независимо от того, какие книги открыты.
 
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
  В данном пошаговом руководстве рассмотрены следующие задачи:
 
@@ -66,12 +68,12 @@ ms.locfileid: "62981439"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] создает проект **FirstExcelAddIn** и открывает файл кода ThisAddIn в редакторе.
 
-## <a name="write-code-to-add-text-to-the-saved-workbook"></a>Написать код для добавления текста в сохраненную книгу
+## <a name="write-code-to-add-text-to-the-saved-workbook"></a>Написание кода для добавления текста в сохраненную книгу
  Затем добавьте код в файл ThisAddIn. Новый код использует объектную модель Excel для вставки стандартного текста в первую строку активного листа. Активным является лист, открытый в момент сохранения книги пользователем. По умолчанию файл кода ThisAddIn содержит следующий созданный код:
 
-- Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели Excel. Дополнительные сведения см. в разделе [программы VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.
+- Частичное определение класса `ThisAddIn` . Этот класс предоставляет точку входа для кода и обеспечивает доступ к объектной модели Excel. Дополнительные сведения см. в разделе [программирование VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Остальная часть класса `ThisAddIn` определяется в скрытом файле кода, изменять который не следует.
 
-- Обработчики событий `ThisAddIn_Startup` и `ThisAddIn_Shutdown` . Эти обработчики событий вызываются, когда Excel загружает и выгружает надстройку VSTO. Их можно использовать для инициализации надстройки VSTO в процессе ее загрузки, а также для освобождения используемых надбавкой ресурсов при ее выгрузке. Дополнительные сведения см. в разделе [события в проектах Office](../vsto/events-in-office-projects.md).
+- Обработчики событий `ThisAddIn_Startup` и `ThisAddIn_Shutdown` . Эти обработчики событий вызываются, когда Excel загружает и выгружает надстройку VSTO. Их можно использовать для инициализации надстройки VSTO в процессе ее загрузки, а также для освобождения используемых надбавкой ресурсов при ее выгрузке. Дополнительные сведения см. [в разделе события в проектах Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>Добавление строки текста в сохраненную книгу
 
@@ -90,7 +92,7 @@ ms.locfileid: "62981439"
 
 - Поле `Application` класса `ThisAddIn` . Поле `Application` возвращает объект <xref:Microsoft.Office.Interop.Excel.Application> , который представляет текущий экземпляр Excel.
 
-- Параметр `Wb` обработчика событий для события <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> . Параметр `Wb` является объектом <xref:Microsoft.Office.Interop.Excel.Workbook> , который представляет сохраняемую книгу. Дополнительные сведения см. в разделе [обзор объектной модели Excel](../vsto/excel-object-model-overview.md).
+- Параметр `Wb` обработчика событий для события <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> . Параметр `Wb` является объектом <xref:Microsoft.Office.Interop.Excel.Workbook> , который представляет сохраняемую книгу. Дополнительные сведения см. в разделе [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md).
 
 ## <a name="test-the-project"></a>Тестирование проекта
 
@@ -98,7 +100,7 @@ ms.locfileid: "62981439"
 
 1. Нажмите клавишу **F5** для построения и запуска проекта.
 
-     При построении проекта код компилируется в сборку, которая включается в выходную папку сборки для проекта. Visual Studio также создает ряд записей реестра, которые позволяют Excel обнаружить и загрузить надстройку VSTO, и настраивает параметры безопасности на компьютере разработчика, разрешая запуск надстройки VSTO. Дополнительные сведения см. в разделе [решений Office построения](../vsto/building-office-solutions.md).
+     При построении проекта код компилируется в сборку, которая включается в выходную папку сборки для проекта. Visual Studio также создает ряд записей реестра, которые позволяют Excel обнаружить и загрузить надстройку VSTO, и настраивает параметры безопасности на компьютере разработчика, разрешая запуск надстройки VSTO. Дополнительные сведения см. в разделе [Построение решений Office](../vsto/building-office-solutions.md).
 
 2. Сохраните книгу в Excel.
 
@@ -108,7 +110,7 @@ ms.locfileid: "62981439"
 
 4. Закройте Excel.
 
-## <a name="clean-up-the-project"></a>Очистка проекта
+## <a name="clean-up-the-project"></a>Очистить проект
  Завершив разработку проекта, удалите с компьютера сборку надстройки VSTO, записи реестра и параметры безопасности. В противном случае надстройка VSTO будет запускаться при каждом открытии программы Excel на компьютере разработчика.
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Очистка завершенного проекта на компьютере разработчика
@@ -120,21 +122,21 @@ ms.locfileid: "62981439"
 
 - Общие задачи программирования, которые можно выполнять в надстройках VSTO: [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md).
 
-- Программирование задачи, характерные для надстроек VSTO для Excel: [Решения Excel](../vsto/excel-solutions.md).
+- Задачи программирования, характерные для надстроек VSTO для Excel: [Решения Excel](../vsto/excel-solutions.md).
 
-- С помощью объектной модели Excel: [Обзор объектной модели Excel](../vsto/excel-object-model-overview.md).
+- Использование объектной модели Excel: [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md).
 
-- Настройка пользовательского интерфейса (UI) Excel, например, путем добавления настраиваемой вкладки на ленту или создания собственной настраиваемой области задач: [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md).
+- Настройка пользовательского интерфейса Excel, например добавление настраиваемой вкладки на ленту или создание собственной настраиваемой области задач: [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md).
 
-- Построение и отладка надстроек VSTO для Excel: [Создание решений Office](../vsto/building-office-solutions.md).
+- Создание и отладка надстроек VSTO для Excel: [Создание решений Office](../vsto/building-office-solutions.md).
 
 - Развертывание надстроек VSTO для Excel: [Развертывание решения Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>См. также
-- [Общие сведения о разработке решений Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Общие сведения о &#40;разработке решений Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Решения Excel](../vsto/excel-solutions.md)
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
-- [Обзор объектной модели Excel](../vsto/excel-object-model-overview.md)
+- [Общие сведения об объектной модели Excel](../vsto/excel-object-model-overview.md)
 - [Настройка пользовательского интерфейса Office](../vsto/office-ui-customization.md)
 - [Создание решений Office](../vsto/building-office-solutions.md)
 - [Развертывание решения Office](../vsto/deploying-an-office-solution.md)

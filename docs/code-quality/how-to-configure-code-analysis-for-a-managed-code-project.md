@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f3c8fbde60e247ca9ec5fe82c9a16f28aded2abc
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a1b09b77eb051d32a3aabb929e9058786215cfb4
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715058"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551049"
 ---
-# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>Практическое руководство. Настройка статического анализа кода для управляемого кода
+# <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Практическое руководство. Настройка устаревшего анализа управляемого кода
 
-В Visual Studio, можно выбрать из списка анализа кода [наборов правил](../code-quality/rule-set-reference.md) для применения к проекту управляемого кода. По умолчанию **минимальные правила и рекомендации Майкрософт** выбран набор правил, но можно применять при необходимости задайте другое правило. Наборы правил могут применяться для одного или нескольких проектов в решении.
+В Visual Studio можно выбрать [набор правил](../code-quality/rule-set-reference.md) анализа кода для применения к проекту управляемого кода. По умолчанию **минимальные правила и рекомендации Майкрософт** выбран набор правил, но можно применять при необходимости задайте другое правило. Наборы правил могут применяться для одного или нескольких проектов в решении.
 
-Сведения о том, как настроить набор правил для веб-приложений ASP.NET см. в разделе [как: Настройка анализа кода для веб-приложения ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+Сведения о настройке набора правил для веб-приложений ASP.NET см. в разделе [как Настройка анализа кода для веб-приложения](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)ASP.NET.
 
 > [!NOTE]
-> Эта статья относится к статического анализа кода, а не [анализаторов Roslyn](use-roslyn-analyzers.md), который не запустить анализ кода после сборки.
+> Эта статья относится к анализу прежних версий, а не к [анализаторам кода на основе .NET Compiler Platform](use-roslyn-analyzers.md), которые не выполняют анализ кода после сборки.
 
-## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Настроить набор правил для проекта .NET Framework
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Настройка набора правил для проекта .NET Framework
 
 1. Откройте **анализа кода** вкладки на страницах свойств проекта. Это можно сделать одним из следующих способов:
 
