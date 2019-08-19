@@ -1,7 +1,7 @@
 ---
 title: Создание сетевой установки
 description: Узнайте, как создать сетевую точку установки для развертывания Visual Studio на предприятии.
-ms.date: 04/26/2019
+ms.date: 08/06/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365332"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870772"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Создание сетевой установки Visual Studio
 
@@ -85,6 +85,8 @@ ms.locfileid: "67365332"
 ## <a name="copy-the-layout-to-a-network-share"></a>Копирование макета в общую сетевую папку
 
 Разместите макет на общем сетевом ресурсе, чтобы запускать его с других компьютеров.
+
+В следующем примере используется [xcopy](/windows-server/administration/windows-commands/xcopy/). Можно также использовать [robocopy](/windows-server/administration/windows-commands/robocopy/).  
 
 ::: moniker range="vs-2017"
 

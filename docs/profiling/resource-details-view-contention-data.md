@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4c3922f8f41f950ede7065e2e15ece07890ba6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6328ea53c90b5a5a7ba50fde5a00e29fadacaaa7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825857"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924518"
 ---
 # <a name="resource-details-view---contention-data"></a>Представление "Сведения о ресурсах" — сведения о состязаниях
 Представление "Сведения о ресурсах" представляет собой временную шкалу событий блокировки, вызванных состязаниями за выбранный ресурс. Событие блокировки возникает, когда поток вынужден приостановить выполнение, так как другой поток заблокировал доступ к ресурсу.

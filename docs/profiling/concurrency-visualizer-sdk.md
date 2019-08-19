@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33b8f0215e09dd43c265c7eb8ba08613132fabbc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001106"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870310"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Пакет SDK визуализатора параллелизма
 Можно инструментировать свой исходный код с помощью пакета SDK визуализатора параллелизма для отображения дополнительных сведений в визуализаторе параллелизма. Можно связать дополнительные данные с этапами выполнения кода и событиями в коде. Эти дополнительные визуализации известны как *маркеры*.  Ознакомительное пошаговое руководство см. в разделе [Сведения о пакете SDK визуализатора параллелизма](http://go.microsoft.com/fwlink/?LinkId=235405).
@@ -27,7 +27,7 @@ ms.locfileid: "63001106"
  Визуализатор параллелизма предоставляет поставщик по умолчанию, который можно использовать для создания маркеров. Поставщик уже зарегистрирован вместе с визуализатором параллелизма, и никакие дополнительные действия для отображения маркеров в пользовательском интерфейсе не требуются.
 
 ### <a name="c-and-visual-basic"></a>C# и Visual Basic
- В коде на языке C#, Visual Basic или другом управляемом коде используйте поставщик по умолчанию путем вызова <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>. Он предоставляет функции для создания маркеров: <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A> и <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>. Для этих функций есть несколько перегруженных методов, применяемых в зависимости от того, нужно ли использовать значения по умолчанию для свойства.  Простейшая перегрузка принимает только строковый параметр, который указывает описание события. Описание отображается в отчетах визуализатора параллелизма.
+ В коде на языке C#, Visual Basic или другом управляемом коде используйте поставщик по умолчанию путем вызова методов в классе [Markers](/previous-versions/hh694099(v=vs.140)). Он предоставляет четыре метода для создания маркеров: [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140)) и [WriteAlert](/previous-versions/hh694180(v=vs.140)). Для этих функций есть несколько перегруженных методов, применяемых в зависимости от того, нужно ли использовать значения по умолчанию для свойства.  Простейшая перегрузка принимает только строковый параметр, который указывает описание события. Описание отображается в отчетах визуализатора параллелизма.
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Добавление поддержки пакета SDK в проект C# или Visual Basic
 
@@ -76,7 +76,7 @@ ms.locfileid: "63001106"
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Использование нового поставщика маркера в проекте C# или Visual Basic
 
-1. Создание объекта <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Конструктор принимает идентификатор GUID.
+1. Создайте объект [MarkerWriter](/previous-versions/hh694138(v=vs.140)).  Конструктор принимает идентификатор GUID.
 
 2. Чтобы зарегистрировать поставщик, откройте диалоговое окно [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) визуализатора параллелизма.  Выберите вкладку **Маркеры** и нажмите кнопку **Добавить новый поставщик**. В диалоговом окне [Дополнительные параметры](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) введите идентификатор GUID, который использовался для создания поставщика, и описание поставщика.
 
@@ -88,7 +88,7 @@ ms.locfileid: "63001106"
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Использование набора маркеров в проекте C# или Visual Basic
 
-1. Для использования нового <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> сначала создайте его с помощью объекта <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>, а затем сформируйте события маркеров непосредственно из нового набора.
+1. Для использования нового [MarkerSeries](/previous-versions/hh694127(v=vs.140)) сначала создайте его с помощью объекта [MarkerWriter](/previous-versions/hh694138(v=vs.140)), а затем сформируйте события маркеров непосредственно из нового набора.
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");
@@ -121,9 +121,9 @@ ms.locfileid: "63001106"
 
 ## <a name="see-also"></a>См. также
 
-|Заголовок|Описание|
+|Заголовок|ОПИСАНИЕ|
 |-----------|-----------------|
 |[Справочник по библиотеке C++](../profiling/cpp-library-reference.md)|Описывает API визуализатора параллелизма для C++.|
 |[Справочник по библиотеке C](../profiling/c-library-reference.md)|Описывает API визуализатора параллелизма для C.|
-|<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Описывает API визуализатора параллелизма для управляемого кода.|
+|[Инструментирование](/previous-versions/hh694104(v=vs.140))|Описывает API визуализатора параллелизма для управляемого кода.|
 |[Визуализатор параллелизма](../profiling/concurrency-visualizer.md)|Справочные сведения по представлениям и отчетам файлов данных профилирования, которые создаются с помощью метода параллелизма и включают данные выполнения потоков.|

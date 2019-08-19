@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: aa8ffe308f8a1181ed18af52ba7537c46007de94
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317652"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923840"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Создание приложения OpenGL ES в Android и iOS
 
@@ -25,7 +25,7 @@ ms.locfileid: "66317652"
 
 ## <a name="requirements"></a>Требования
 
-Перед созданием приложения OpenGL ES для iOS и Android убедитесь в том, что выполняются все требования к системе. Установите рабочую нагрузку разработки мобильных приложений на языке C++ в Visual Studio Installer, если еще не сделали этого. Чтобы создать приложение для iOS, установите дополнительные средства разработки C++ для iOS. Чтобы создать приложение для Android, установите средства разработки C++ для Android и требуемые сторонние средства: Android NDK, Apache Ant, Google Android Emulator и Intel Hardware Accelerated Execution Manager. После этого настройте Intel HAXM и Android Emulator для запуска в своей системе. Более подробную информацию и инструкции см. в разделе [Установка Visual C++ для разработки кроссплатформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Для сборки и тестирования приложения iOS вам потребуется компьютер Mac, настроенный в соответствии с инструкциями по установке. Более подробную информацию о настройке компьютера для разработки приложений iOS см. в разделе [Установка и настройка средств для разработки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
+Перед созданием приложения OpenGL ES для iOS и Android убедитесь в том, что выполняются все требования к системе. Установите рабочую нагрузку разработки мобильных приложений на языке C++ в Visual Studio Installer, если еще не сделали этого. Чтобы создать приложение для iOS, установите дополнительные средства разработки C++ для iOS. Чтобы создать приложение для Android, установите средства разработки C++ для Android и требуемые сторонние средства: Android NDK, Apache Ant, Google Android Emulator и Intel Hardware Accelerated Execution Manager. После этого настройте Intel HAXM и Android Emulator для запуска в своей системе. Более подробную информацию и инструкции см. в разделе [Установка Visual C++ для разработки кроссплатформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Для сборки и тестирования приложения iOS вам потребуется компьютер Mac, настроенный в соответствии с инструкциями по установке. Дополнительные сведения о настройке компьютера для разработки приложений iOS см. в разделе [Установка и настройка средств для разработки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
 ## <a name="create-a-new-opengles-application-project"></a>Создание проекта приложения OpenGLES
 
@@ -158,7 +158,7 @@ ms.locfileid: "66317652"
 1. Выберите свое устройство iOS на панели инструментов, чтобы запустить приложение на устройстве, подключенном к компьютеру Mac. Если приложение не запускается, проверьте, предоставляет ли устройство развернутому приложению разрешение на запуск. Чтобы предоставить это разрешение, последовательно выберите на устройстве **Параметры** > **Общие** > **Управления устройствами**. Выберите учетную запись для разработки приложений, сделайте ее доверенной и проверьте приложение. Попытайтесь еще раз запустить приложение из Visual Studio.
 
    ![Приложение для iOS на устройстве iOS](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
-   
+
    После запуска приложения можно задать точки останова и использовать отладчик Visual Studio для проверки локальных значений, стека вызовов и контрольных значений.
 
    ![Отладчик в точке останова в приложении iOS](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")

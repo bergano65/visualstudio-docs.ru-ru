@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821410"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918047"
 ---
 # <a name="installation"></a>Установка
 
@@ -37,14 +37,14 @@ ms.locfileid: "67821410"
 
 ## <a name="prepare-your-local-machine"></a>Подготовка локального компьютера
 
-Перед обучением моделей глубокого обучения на локальном компьютере убедитесь в том, что установлены требуемые компоненты. В их число входят последние версии драйверов и библиотек для GPU NVIDIA (если применимо). Необходимо также убедиться в том, что установлены среда и библиотеки Python, такие как NumPy и SciPy, и соответствующие платформы глубокого обучения, такие как Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch и Chainer, которые планируется использовать в проекте.
+Перед обучением моделей глубокого обучения на локальном компьютере убедитесь в том, что установлены требуемые компоненты. В их число входят последние версии драйверов и библиотек для GPU NVIDIA (если применимо). Убедитесь также в том, что установлены среда и библиотеки Python, такие как NumPy и SciPy, и соответствующие платформы глубокого обучения, такие как Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch и Chainer, которые планируется использовать в проекте.
 
 > [!NOTE]
 > Краткие сведения о программном обеспечении в следующих подразделах взяты с домашних страниц соответствующих продуктов.
 
 ### <a name="nvidia-gpu-driver"></a>Драйвер GPU NVIDIA
 
-Платформы глубинного обучения используют GPU NVIDIA, чтобы повысить скорость, точность и масштаб обучения искусственного интеллекта. Если в вашем компьютере установлена видеокарта NVIDIA, перейдите на [эту страницу](http://www.nvidia.com/Download/index.aspx) или попробуйте обновить ОС, чтобы установить последнюю версию драйвера.
+Платформы глубинного обучения используют GPU NVIDIA, чтобы повысить скорость, точность и масштаб обучения искусственного интеллекта. Если на компьютере установлены видеоадаптеры NVIDIA, ознакомьтесь со страницей [скачивания драйверов NVIDIA](http://www.nvidia.com/Download/index.aspx) или попробуйте обновить операционную систему, чтобы установить последнюю версию драйвера.
 
 ### <a name="cuda"></a>CUDA
 
@@ -52,7 +52,7 @@ ms.locfileid: "67821410"
 
 Установка CUDA
 
-- Перейдите на этот [сайт](https://developer.nvidia.com/cuda-80-ga2-download-archive), скачайте CUDA и установите платформу.
+- Перейдите на этот [сайт](https://developer.nvidia.com/cuda-80-ga2-download-archive), скачайте и установите CUDA.
 - Установите библиотеки CUDA времени выполнения, а затем добавьте путь к двоичным файлам CUDA в переменную среды %PATH% или $Path.
 - В Windows путь по умолчанию — "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin".
 
@@ -137,7 +137,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > В настоящее время CNTK не поддерживает macOS.
 
-Сведения об установке пакета CNTK для Python см. в статье [Установка CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine).
+Сведения об установке пакета CNTK для Python см. в этой [статье](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine).
 
 ### <a name="tensorflow"></a>TensorFlow
 
@@ -239,7 +239,7 @@ pip3.5 install torchvision
 
 ### <a name="chainer"></a>Chainer
 
-[Chainer](https://chainer.org/) — это платформа глубинного обучения на основе Python, призванная обеспечить гибкость. Она предоставляет интерфейсы API автоматической дифференциации на основе **подхода define-by-run** (динамические вычислительные графы), а также высокоуровневые объектно-ориентированные интерфейсы API для построения и обучения нейронных сетей.
+[Chainer](https://chainer.org/) — это платформа глубинного обучения на основе Python, призванная обеспечить гибкость. Она предоставляет интерфейсы API автоматической дифференциации на основе подхода define-by-run (динамические вычислительные графы), а также высокоуровневые объектно-ориентированные интерфейсы API для построения и обучения нейронных сетей.
 
 Чтобы включить поддержку CUDA, установите [CuPy](https://github.com/cupy/cupy):
 
