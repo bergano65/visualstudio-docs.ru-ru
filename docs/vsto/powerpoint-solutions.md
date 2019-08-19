@@ -1,6 +1,6 @@
 ---
 title: Решения PowerPoint
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 70968682a8221b88859fd561c9f678aced2911b9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926433"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551473"
 ---
 # <a name="powerpoint-solutions"></a>Решения PowerPoint
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания надстроек VSTO для Microsoft Office PowerPoint. Вы можете использовать надстройки VSTO для автоматизации PowerPoint, расширения и настройки пользовательского интерфейса PowerPoint.
@@ -31,8 +31,7 @@ ms.locfileid: "68926433"
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
-> [!NOTE]
-> Интересуетесь разработкой решений, расширяющих возможности Office на [нескольких платформах](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [моделью надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшой объем по сравнению с надстройками и решениями VSTO, и их можно создавать с помощью практически любой технологии веб-программирования, такой как HTML5, JavaScript, CSS3 и XML.
+[!include[Add-ins note](includes/addinsnote.md)]
 
  ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") Связанные демонстрационные видеоролики см [. в разделе разделы справки: Создаете надстройку для Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).
 
