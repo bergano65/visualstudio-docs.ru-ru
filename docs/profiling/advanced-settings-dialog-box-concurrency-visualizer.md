@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b36c648a0ab1c7df9d4f358d729e7f6b96212f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae0507e75a84f18350817a33abe25d3e59fa9aa2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778001"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926324"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Диалоговое окно "Дополнительные параметры" (визуализатор параллелизма)
 Диалоговое окно **Дополнительные параметры** в визуализаторе параллелизма позволяет управлять сбором трассировки.  В нем содержатся следующие вкладки: "Символы", "Только мой код", "Буферизация", Filtering (Фильтрация), "События CLR", "Маркеры", "Поставщики" и "Файлы".

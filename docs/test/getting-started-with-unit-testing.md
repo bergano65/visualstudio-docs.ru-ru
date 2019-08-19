@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30c67bb85a7cf72090ea37680daa12933c44b0cb
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003163"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870167"
 ---
 # <a name="get-started-with-unit-testing"></a>Приступая к работе с модульным тестированием
 
@@ -165,6 +165,8 @@ ms.locfileid: "63003163"
    ![Зависимости NUnit NuGet в обозревателе решений](media/vs-2019/nunit-nuget-dependencies.png)
 
 4. Добавьте ссылку из проекта тестирования на проект, содержащий код, который вы хотите протестировать.
+
+   В **обозревателе решений** щелкните проект правой кнопкой мыши и выберите **Добавить** > **Ссылка**. (Ссылку также можно добавить из контекстного меню узла **Ссылки** или **Зависимости**.)
 
 5. Добавьте код в метод теста.
 

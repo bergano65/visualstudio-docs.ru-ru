@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a68b22b5a4fedb7d3548ac3aceda7c4dc109bebe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483550"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870859"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Работа с несколькими учетными записями пользователя
 
@@ -33,7 +33,7 @@ ms.locfileid: "68483550"
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Доступ к учетной записи Azure в обозревателе сервера
 
-Нажмите клавиши **CTRL**+**ALT**+**S**, чтобы открыть **обозреватель сервера**. Разверните узел **Azure** и убедитесь, что он содержит все ресурсы, доступные в учетной записи Azure, связанной с учетной записью, которая использовалась для входа в Visual Studio. Это выглядит примерно так:
+Чтобы открыть обозреватель сервера, выберите **Вид** > **Обозреватель сервера** (или, если вы используете [параметры среды](../ide/environment-settings.md) "Общие", нажмите комбинацию клавиш **CTRL**+**ALT**+**S**). Разверните узел **Azure** и убедитесь, что он содержит все ресурсы, доступные в учетной записи Azure, связанной с учетной записью, которая использовалась для входа в Visual Studio. Это выглядит примерно так:
 
 ![Обозреватель сервера с развернутым узлом Azure](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 

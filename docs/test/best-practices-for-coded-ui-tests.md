@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 896531325b3630b97a5cc076955fae6201defac6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826079"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870206"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Рекомендации по выполнению закодированных тестов пользовательского интерфейса
 
@@ -42,11 +42,11 @@ ms.locfileid: "67826079"
 
 - Если пользовательский интерфейс изменяется, перезапишите методы теста или методы утверждений либо перезапишите затронутые разделы существующего метода теста.
 
-- Создайте отдельный файл <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> для каждого модуля в тестируемом приложении. Дополнительные сведения см. в разделе [Тестирование крупного приложения с несколькими картами пользовательского интерфейса](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Создайте отдельный файл [UIMap](/previous-versions/dd580454(v=vs.140)) для каждого модуля в тестируемом приложении. Дополнительные сведения см. в разделе [Тестирование крупного приложения с несколькими картами пользовательского интерфейса](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
 - В тестируемом приложении используйте понятные имена при создании элементов управления пользовательского интерфейса. Это придаст больше смысла и повысит удобство использования автоматически создаваемых имен элементов управления.
 
-- При создании утверждений путем написания кода с помощью API создавайте метод для каждого утверждения в части класса <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>, который находится в файле *UIMap.cs*. Для выполнения утверждения вызывайте этот метод из своего метода теста.
+- При создании утверждений путем написания кода с помощью API создавайте метод для каждого утверждения в части класса [UIMap](/previous-versions/dd580454(v=vs.140)), который находится в файле *UIMap.cs*. Для выполнения утверждения вызывайте этот метод из своего метода теста.
 
 - Если вы программируете напрямую с помощью API, как можно больше используйте в своем коде свойства и методы в классах, создаваемых в файле *UIMap.Designer.cs*. Эти классы сделают работу более простой и надежной и помогут вам повысить производительность.
 
@@ -87,7 +87,7 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 
 ## <a name="see-also"></a>См. также
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
 - [Использование автоматизации пользовательского интерфейса для тестирования кода](../test/use-ui-automation-to-test-your-code.md)
 - [Создание закодированных тестов пользовательского интерфейса](../test/use-ui-automation-to-test-your-code.md)

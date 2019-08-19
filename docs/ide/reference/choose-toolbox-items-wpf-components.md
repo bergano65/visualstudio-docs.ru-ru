@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744980"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869758"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Выбор элементов панели элементов — компоненты WPF
 
@@ -49,7 +49,7 @@ ms.locfileid: "66744980"
 
 **Каталог**
 
-Отображает расположение сборки .NET. По умолчанию все сборки находятся в глобальном кэше сборок. Дополнительные сведения о глобальном кэше сборок см. в разделе [Работа со сборками и глобальным кэшем сборок](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+Отображает расположение сборки .NET. По умолчанию все сборки находятся в глобальном кэше сборок. Дополнительные сведения см. в статье [Работа со сборками и глобальным кэшем сборок](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
 
@@ -77,11 +77,11 @@ ms.locfileid: "66744980"
 
 - Не обновляется надлежащим образом при изменении конфигурации решения с отладки на выпуск или с выпуска на отладку. Это вызвано тем, что ссылка не является ссылкой проекта, а указывает на сборку на диске. Если элемент управления является частью текущего решения, при переключении с отладки на выпуск ваш проект продолжает ссылаться на отладочную версию элемента управления.
 
-Кроме того, если к пользовательскому элементу управления применяются метаданные времени разработки, указывающие, что <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> имеет значение `false`, элемент управления не отображается на панели элементов.
+Кроме того, если к пользовательскому элементу управления применяются метаданные времени разработки, указывающие, что [Microsoft.Windows.Design.ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) имеет значение `false`, элемент управления не отображается на панели элементов.
 
 Вы можете ссылаться на элементы управления прямо в представлении XAML, сопоставляя пространство имен и сборку для элемента управления.
 
 ## <a name="see-also"></a>См. также
 
 - [Панель элементов](../../ide/reference/toolbox.md)
-- [Начало работы с WPF](../../designers/getting-started-with-wpf.md)
+- [Начало работы с WPF](../../designers/getting-started-with-wpf.md)

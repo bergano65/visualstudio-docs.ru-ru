@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ae7cbddb3ea7d7f94b23d723f6641a95dd28ed40
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: a9fcf54abf6227fe020d98d2fdc9aed6de021983
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820338"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869837"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Использование платформы MSTest в модульных тестах
 
@@ -113,7 +113,7 @@ ms.locfileid: "66820338"
 
 ## <a name="test-configuration-classes"></a>Классы конфигурации теста
 
-- <xref:Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>
+- [ObjectTypes](/previous-versions/visualstudio/visual-studio-2013/dd987428(v=vs.120))
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection>
 

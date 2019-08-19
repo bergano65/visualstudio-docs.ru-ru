@@ -1,7 +1,7 @@
 # [Подписки Visual Studio](index.md)
 ## [Новые возможности](whats-new-in-subscriptions.md)
 ## Подписки
-### Покупка подписок
+### Приобретение подписок
 #### [Retail](https://visualstudio.microsoft.com/vs/pricing)
 #### Облако 
 ##### [Обзор](vscloud-overview.md)
@@ -12,7 +12,7 @@
 ##### [Подписки для партнеров](program-mpn.md)
 ##### [Управление подписками для MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
-### Вход 
+### Войти 
 #### [Активация розничных подписок](activate-store-subscriptions.md)
 #### [Вход с помощью учетных записей Майкрософт](sign-in-msa.md)
 #### [Вход с помощью рабочих или учебных учетных записей](sign-in-work.md)

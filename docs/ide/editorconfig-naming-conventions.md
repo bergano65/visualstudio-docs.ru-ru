@@ -1,6 +1,6 @@
 ---
 title: Соглашения об именовании в .NET для файлов EditorConfig
-ms.date: 11/20/2017
+ms.date: 08/07/2019
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 048fb4474caae6b7cc81a8c62061e879e7556c58
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345708"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957431"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Соглашения об именовании в среде .NET для EditorConfig
 
@@ -165,7 +165,8 @@ ms.locfileid: "68345708"
 
 Серьезность | Действие
 ------------ | -------------
-none или silent | Если стиль не соблюдается, пользователь не будет уведомляться об этом, однако автоматически создаваемый код следует этому стилю.
+Нет | Правило подавляется полностью.
+refactoring или silent | Если стиль не соблюдается, пользователь не будет уведомляться об этом, однако автоматически создаваемый код следует этому стилю.
 suggestion | Если этот стиль не соблюдается, он будет показан пользователю как предложение, в виде точек под первыми двумя символами. Это никак не проявляется во время компиляции.
 warning | Если этот стиль не соблюдается, выводится предупреждение компилятора в **списке ошибок**.
 error | Если этот стиль не соблюдается, компилятор выводит ошибку в **списке ошибок**.

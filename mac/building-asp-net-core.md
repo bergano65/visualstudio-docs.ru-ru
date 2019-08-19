@@ -1,18 +1,18 @@
 ---
-title: Создание приложений ASP.NET Core в Visual Studio для Mac
+title: Создание приложений ASP.NET Core
 description: В этой статье описывается начало работы с ASP.NET в Visual Studio для Mac, включая установку и создание нового проекта.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: f0a2e8433877b3eb61228a886280707f3b4a37fe
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 345111144e0e209d91d34e53fefcd7d1207d9a8a
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693141"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872896"
 ---
-# <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Создание приложений ASP.NET Core в Visual Studio для Mac 
+# <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Создание приложений ASP.NET Core в Visual Studio для Mac
 
 ASP.NET Core является основанной на открытом исходном коде кроссплатформенной платформой для создания современных облачных приложений, подключенных к Интернету, таких как веб-приложения и службы, приложения Интернета вещей и мобильные внутренние серверы. Приложения ASP.NET Core могут работать в средах выполнения [.NET Core](https://www.microsoft.com/net/core/platform) или .NET Framework. Он был разработан для предоставления оптимизированной платформы разработки для приложений, развернутых в облаке или локальной среде. Он состоит из модульных компонентов с минимальными издержками, что позволяет сохранить гибкость при построении решений. Приложения ASP.NET Core можно разрабатывать и запускать на различных платформах, включая Windows, Mac и Linux. Код ASP.NET Core открыт для общего доступа в [GitHub](https://github.com/aspnet/home).
 
