@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975905"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585079"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Набор правил "Расширенные нормы и правила разработки" для управляемого кода
 
-Набор правил Майкрософт расширенные нормы и правила разработки расширяет базовые нормы и правила разработки для повышения удобства использования и удобства сопровождения проблемах. Дополнительный акцент делается на рекомендации по именованию. Рекомендуется включить это правило, если проект содержит библиотечный код или если требуется достичь высочайших стандартов в написании кода, который легко поддерживать.
+Набор правил "Расширенные рекомендации по проектированию Microsoft" расширяет базовые правила разработки, чтобы максимально эффективно использовать и поддерживать проблемы, связанные с удобством использования. Особое внимание уделяется рекомендациям по именованию. Следует рассмотреть возможность включения этого набора правил, если проект включает в себя библиотечный код или если требуется применять самые высокие стандарты для написания кода, который легко обслуживать.
 
-Расширенные правила и рекомендации включают все Microsoft базовые нормы и правила разработки. Базовые нормы и правила разработки включают все минимально рекомендуемые правила Майкрософт. Дополнительные сведения см. в разделе [набора правил базовые нормы и правила разработки для управляемого кода](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) и [набора правил управляемых рекомендуемые правила для управляемого кода](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Расширенные правила разработки включают в себя все правила в наборе правил " [базовые рекомендации](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) по проектированию", которые включают правила из набора правил " [управляемые Рекомендуемые правила](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) ".
 
-В следующей таблице описаны все правила в наборе правил Microsoft расширенные нормы и правила разработки.
+В следующей таблице описаны все правила в наборе правил "Расширенные рекомендации по проектированию Microsoft".
 
 |Правило|Описание|
 |----------|-----------------|
@@ -65,7 +65,7 @@ ms.locfileid: "65975905"
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Прозрачные методы должны содержать только поддающийся проверке промежуточный язык|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Прозрачный код не должен ссылаться на критические для безопасности элементы|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Прозрачные методы не должны удовлетворять требования LinkDemand|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Прозрачные методы не должны соответствовать требованиям LinkDemand|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Прозрачные методы могут не использовать утверждения безопасности|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Прозрачные методы не должны вызывать машинный код|

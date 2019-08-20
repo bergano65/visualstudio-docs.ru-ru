@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919538"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585084"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Набор правил "Базовые нормы и правила разработки" для управляемого кода
+
 Вы можете использовать набор правил по рекомендациям по проектированию Microsoft Basic, чтобы сосредоточиться на том, как упростить понимание и использование кода. Этот набор правил следует включать, если проект включает в себя код библиотеки или если вы хотите применить рекомендации для кода, который легко поддерживать.
 
-Базовые правила разработки включают в себя все правила набора правил Microsoft Minimum Рекоммедед Rules. Список минимальных правил см. в разделе [управляемые Рекомендуемые правила правил для управляемого кода](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+Базовые правила разработки включают в себя все правила в наборе правил " [управляемые Рекомендуемые правила](managed-recommended-rules-rule-set-for-managed-code.md) ".
 
 В следующей таблице описаны все правила набора правил "базовые правила для разработки Microsoft".
 

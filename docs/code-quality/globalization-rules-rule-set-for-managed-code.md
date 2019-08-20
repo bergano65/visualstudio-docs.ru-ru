@@ -8,21 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28199eb9fa09e2096939ffa8e678eb9812a61b1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffba6b69e1f67b369f3d99c1b54a88448df8a41b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816404"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69584978"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Набор правил "Правила глобализации" для управляемого кода
-Можно использовать правила глобализации корпорации Майкрософт набора правил в основное внимание уделяется проблемам, которые могут препятствовать данных в приложении неправильно отображалось в разных языках, регионов и языков и региональных параметров. Следует включать этот набор, если приложение выполняется локализация, глобализация, правил или оба.
+
+Используйте набор правил "Правила глобализации Майкрософт", чтобы сосредоточиться на проблемах, которые могут препятствовать правильному отображению данных в приложении на разных языках, языковых стандартах и культурах. Этот набор правил следует включать, если приложение локализовано, глобализовано или и то, и другое.
 
 |Правило|Описание|
 |----------|-----------------|
 |[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|Укажите MessageBoxOptions|
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Избегайте повторяющихся акселераторов|
-|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Не указывайте прямо в коде строки, зависящие от языковых стандартов|
+|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Не кодировать строки, зависящие от языкового стандарта|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Не передавайте литералы в качестве локализованных параметров|
 |[CA1304](../code-quality/ca1304-specify-cultureinfo.md)|Указывайте CultureInfo|
 |[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|Указывайте IFormatProvider|

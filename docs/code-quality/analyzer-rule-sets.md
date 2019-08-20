@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547953"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585133"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Наборы правил для пакетов анализатора
 
 Предопределенные наборы правил включены в некоторые пакеты анализатора NuGet. Например, наборы правил, включенные в пакет анализатора NuGet [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (начиная с версии 2.6.2), включают или отключают правила на основе их категории, такие как безопасность, именование или производительность. Использование наборов правил упрощает просмотр только нарушений правил, относящихся к определенной категории правила.
 
-Если выполняется миграция с устаревшего анализа "FxCop" на анализ кода на основе .NET Compiler Platform, эти наборы правил позволяют продолжить использовать те же конфигурации правил, которые использовались ранее.
+Если вы выполняете миграцию из устаревшего анализа "FxCop" в анализ кода на основе .NET Compiler Platform, эти наборы правил позволяют продолжить использовать аналогичные конфигурации правил для [тех, которые использовались ранее](rule-set-reference.md).
 
 ## <a name="use-analyzer-package-rule-sets"></a>Использование наборов правил пакета анализатора
 
@@ -58,7 +58,7 @@ ms.locfileid: "69547953"
 
 Кроме того, существует два набора правил для каждой категории правил в пакете, например "производительность" или "безопасность". Один набор правил включает все правила для категории, а один набор правил учитывает параметры серьезности и включения по умолчанию для каждого правила в категории.
 
-Пакет анализатора NuGet [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) включает наборы правил для следующих категорий, которые соответствуют наборам правил, доступным для анализа прежних версий:
+Пакет анализатора NuGet [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) включает наборы правил для следующих категорий:
 
 - разработка
 - документация
