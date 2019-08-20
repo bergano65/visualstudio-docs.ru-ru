@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923994"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585112"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Набор правил "Расширенные правила определения правильности" для управляемого кода
+
 Набор правил "Расширенные правила корректности Microsoft" позволяет развернуть логику и ошибки использования платформы, о которых сообщает анализ кода. Особое внимание уделяется конкретным сценариям, например COM-взаимодействию и мобильным приложениям. Следует рассмотреть возможность включения этого набора правил, если один из этих сценариев применяется к проекту или для поиска дополнительных проблем в проекте.
 
-Набор правил "Расширенные правила корректности Microsoft" включает правила, которые входят в набор правил правил корректности Microsoft Basic. Основные правила корректности включают правила, которые находятся в наборе правил минимальных рекомендованных правил Майкрософт. Дополнительные сведения см. в разделе [основные правила правил правильного указания для](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) набора правил "управляемый код" и " [управляемые Рекомендуемые правила" для управляемого кода](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
+Набор правил "Расширенные правила корректности Microsoft" включает правила, которые находятся в наборе правил " [основные правила](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) для правил правильности", который содержит правила, указанные в наборе правил " [управляемые Рекомендуемые правила](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) ".
 
 В следующей таблице описаны все правила в наборе правил "Расширенные правила исправления Microsoft".
 

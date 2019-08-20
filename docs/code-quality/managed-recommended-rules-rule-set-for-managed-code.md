@@ -8,15 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c07471290756acc74289a552fcafde746c020e71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2060c9c2db3dd3d60efb07b1e23c445a47d54b5d
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823547"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585062"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Набор правил "Рекомендуемые правила для управляемого кода"
-Можно использовать Microsoft управляемых рекомендуемые правила набора правил в сосредоточиться на наиболее важными проблемами в управляемом коде, включая возможные уязвимости безопасности, сбои приложения и другие важные ошибки логики и проектирования. Следует включать этот набор правил во все пользовательские наборы правил, создаваемые для проектов.
+
+Используйте набор правил "Рекомендуемые правила Майкрософт", чтобы сосредоточиться на наиболее важных проблемах в управляемом коде, включая потенциальные бреши в системе безопасности, сбои приложений, а также другие важные логики и ошибки проектирования. Этот набор правил включает все правила из набора правил " [управляемые минимальные правила](managed-minimum-rules-rule-set-for-managed-code.md) ".
+
+Включите это правило в набор настраиваемых правил, создаваемых для проектов.
 
 |Правило|Описание|
 |----------|-----------------|
@@ -60,7 +63,7 @@ ms.locfileid: "62823547"
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Прозрачные методы должны содержать только поддающийся проверке промежуточный язык|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Прозрачный код не должен ссылаться на критические для безопасности элементы|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Прозрачные методы не должны удовлетворять требования LinkDemand|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Прозрачные методы не должны соответствовать требованиям LinkDemand|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Прозрачные методы могут не использовать утверждения безопасности|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Прозрачные методы не должны вызывать машинный код|

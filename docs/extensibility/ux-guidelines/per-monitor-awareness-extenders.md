@@ -14,12 +14,12 @@ ms.topic: conceptual
 dev_langs:
 - CSharp
 - CPP
-ms.openlocfilehash: 2686248a087650f6170b72c8ef9b3a77e2ba275c
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 09ec5d82251fa4598096fca8a59c9a1fd29e3f27
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957351"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585367"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Поддержка поддержки по каждому монитору для расширений Visual Studio
 
@@ -29,7 +29,7 @@ ms.locfileid: "68957351"
 
 Дополнительные сведения о терминах и общем сценарии, рассмотренных в этом документе, см. в документации по [разработке приложений для настольных компьютеров с высоким разрешением в Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) .
 
-## <a name="quickstart"></a>Краткое руководство
+## <a name="quickstart"></a>Быстрый старт
 
 - Убедитесь, что Visual Studio работает в режиме ПМА (см. раздел **Включение ПМА**).
 
@@ -215,7 +215,7 @@ VsUI::CDpiAwareness::LogicalToDeviceUnitsY(m_hwnd, &cy);
 
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-public interface IVsDpiAeware
+public interface IVsDpiAware
 {
     [ComAliasName("Microsoft.VisualStudio.Shell.Interop.VSDPIMode")]
     uint Mode {get;}
