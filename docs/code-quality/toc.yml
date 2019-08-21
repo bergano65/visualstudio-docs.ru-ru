@@ -162,31 +162,31 @@
           items:
             - name: Обзор
               href: rule-set-reference.md
-            - name: Набор правил "Все правила"
+            - name: Все правила
               href: all-rules-rule-set.md
-            - name: Набор правил "Базовые правила определения правильности" для управляемого кода
+            - name: Базовые правила определения правильности
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Базовые нормы и правила разработки" для управляемого кода
+            - name: Базовые нормы и правила разработки
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Расширенные правила определения правильности" для управляемого кода
+            - name: Расширенные правила определения правильности
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Расширенные нормы и правила разработки" для управляемого кода
+            - name: Расширенные нормы и правила разработки
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Правила глобализации" для управляемого кода
+            - name: Правила глобализации
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Минимальные правила для управляемого кода"
+            - name: Минимальные правила для управляемого кода
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Рекомендуемые правила для управляемого кода"
+            - name: Рекомендуемые правила для управляемого кода
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Минимальные правила для смешанного кода"
+            - name: Минимальные правила для смешанного кода
               href: mixed-minimum-rules-rule-set.md
-            - name: Набор правил "Рекомендуемые правила для смешанных сред"
+            - name: Рекомендуемые правила для смешанного кода
               href: mixed-recommended-rules-rule-set.md
-            - name: Набор правил "Минимальные правила для машинного кода"
+            - name: Минимальные правила для машинного кода
               href: native-minimum-rules-rule-set.md
-            - name: Набор правил "Рекомендуемые правила для машинного кода"
+            - name: Рекомендуемые правила для машинного кода
               href: native-recommended-rules-rule-set.md
-            - name: Набор правил "Правила безопасности" для управляемого кода
+            - name: Правила безопасности
               href: security-rules-rule-set-for-managed-code.md
         - name: Отключение предупреждений
           href: in-source-suppression-overview.md
