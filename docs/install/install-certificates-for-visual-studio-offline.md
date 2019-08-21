@@ -1,7 +1,7 @@
 ---
 title: Установка сертификатов, необходимых для установки в автономном режиме
 description: Узнайте, как установить сертификаты для автономной установки Visual Studio.
-ms.date: 03/30/2019
+ms.date: 08/08/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 74732249f5a82974f3df66df4b95357cdcf71c79
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c7139234ab9f36842e92ead9e43f8d0a0a71a00e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925798"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551193"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Установка сертификатов, необходимых для установки Visual Studio в автономном режиме
 
