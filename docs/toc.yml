@@ -414,6 +414,8 @@
                       href: ide/reference/use-block-body-lambda.md
                     - name: 'Неиспользуемые назначения, переменные и параметры'
                       href: ide/reference/unused-values-parameters.md
+                    - name: Перенос и выравнивание цепочек вызовов
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: 'Параметры переноса, отступа и выравнивания'
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: Пошаговое руководство. Создание кода в результате использования
