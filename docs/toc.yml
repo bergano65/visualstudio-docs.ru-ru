@@ -350,8 +350,6 @@
                     - name: Обзор
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
-                    - name: Добавление проверки на null для всех параметров
-                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Изменение сигнатуры метода
                       href: ide/reference/change-method-signature.md
                     - name: Преобразование анонимного типа в класс
