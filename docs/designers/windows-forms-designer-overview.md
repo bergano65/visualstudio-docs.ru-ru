@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8280a60f1d265336d427079bdef6612b42ed4330
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 0df8b7ec5955f472d716af2850d2ab0b776c6552
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981640"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585334"
 ---
 # <a name="windows-forms-designer-overview"></a>Обзор конструктора Windows Forms
 
@@ -39,7 +39,7 @@ ms.locfileid: "68981640"
 
 - [Windows Forms overview](/dotnet/framework/winforms/windows-forms-overview) (Общие сведения о Windows Forms)
 - [Элементы управления Windows Forms](/dotnet/framework/winforms/controls/)
-- [Специальные возможности для элементов управления в Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
 - [User input in Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms) (Ввод данных пользователем в Windows Forms)
 - [Data binding in Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding) (Привязка данных Windows Forms)
 - [Enhance Windows Forms apps](/dotnet/framework/winforms/advanced/) (Усовершенствование приложений Windows Forms)
+- Справочник по API <xref:System.Windows.Forms?displayProperty=fullName>

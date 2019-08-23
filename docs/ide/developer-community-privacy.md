@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823374"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634857"
 ---
 # <a name="developer-community-data-privacy"></a>Конфиденциальность данных сообщества разработчиков
 
@@ -54,21 +54,19 @@ ms.locfileid: "67823374"
 
 - Файл журнала для операций в памяти Visual Studio
 
-- Файлы PerfWatson, если включен сбор данных Watson, из папки *VSFeedbackPerfWatsonData*
+- Файлы PerfWatson, если включена коллекция Watson
 
-- Файлы журнала LiveShare, если они существуют, из папки *VSFeedbackVSRTCLogs*
+- Файлы журнала LiveShare, если они существуют
 
-- Файлы журнала Xamarin, если они существуют, из *%LOCALAPPDATA%\Xamarin\Logs*
+- Файлы журнала Xamarin, если они существуют
 
-- Файлы журнала NuGet, если они существуют, из *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
+- Файлы журнала Nuget, если они существуют
 
-- Файлы журнала веб-отладчика, если они существуют:
+- Файлы журнала веб-отладчика, если они существуют
 
-  - *%TEMP%\vscode-chrome-debug.txt*
+- Журналы центра обслуживания и журналы ошибок MEF, если они существуют
 
-  - *%TEMP%\vscode-node-debug2.txt*
-
-  - *%TEMP%\vscode-edge-debug.txt*
+- Журналы Python, если они существуют
 
 - Снимок экрана, если вы решили включить его
 

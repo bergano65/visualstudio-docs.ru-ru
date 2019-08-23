@@ -105,9 +105,9 @@
       href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
     - name: Отключение поддержки DPI для конструктора Windows Forms
       href: disable-dpi-awareness.md
-    - name: Справочник
+    - name: Справочники
       items:
-        - name: API System.Windows.Forms
+        - name: System.Windows.Forms API >>
           href: /dotnet/api/system.windows.forms
     - name: Учебники
       items:

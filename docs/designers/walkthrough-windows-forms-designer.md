@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e54a0957cb6b63c95c1cd914f7fc3eb72e581ac3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 64045221ad9200223264632d4bdbd33ff82d631f
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981650"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585343"
 ---
 # <a name="walkthrough-get-started-with-windows-forms-designer"></a>Пошаговое руководство. Начало работы с конструктором Windows Forms
 
@@ -309,8 +309,10 @@ ms.locfileid: "68981650"
 
 ## <a name="next-steps"></a>Следующие шаги
 
-В этой статье было показано, как создать пользовательский интерфейс для простого калькулятора. В дальнейшем можно расширить его функциональность, реализовав логику калькулятора. Вы также можете ознакомиться с руководством по [созданию средства просмотра рисунков с помощью Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
+В этой статье было показано, как создать пользовательский интерфейс для простого калькулятора. В дальнейшем можно расширить его функциональность, реализовав логику калькулятора, а затем [опубликовать приложение с помощью ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md). Вы также можете ознакомиться с руководством по [созданию средства просмотра рисунков с помощью Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
 
 ## <a name="see-also"></a>См. также
 
+- [Элементы управления Windows Forms](/dotnet/framework/winforms/controls/)
 - [Специальные возможности для элементов управления в Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
+- [Публикация с помощью ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
