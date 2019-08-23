@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Вы можете арендовать Visual Studio Professional или Visual Studio Enterprise на помесячной основе или на год, не заключая долгосрочный контракт.
-ms.openlocfilehash: 5844ac1e22346e8001f0a682848b36fdb6b3f8a5
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: dea2c32c5737cb5f2798b3d0ebdbd3398e1bc20b
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606114"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490690"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Купить облачные подписки на Visual Studio Professional и Visual Studio Enterprise
 Вы можете купить [подписки на Visual Studio Professional и Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) в [Visual Studio Marketplace](https://marketplace.visualstudio.com). Это так называемые **облачные подписки**.
@@ -89,7 +89,7 @@ ms.locfileid: "68606114"
 Ответ.  Нет.  Ваши подписки сохраняются без изменений и вы сможете управлять ими, как обычно.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>Вопрос: Что делать, если мне нужно увеличить количество подписок для моих клиентов?
-Ответ. Вы можете приобрести дополнительные годовые подписки в любое время.  Плата за годовые подписки взимается сразу за целый год. Эти подписки будут действительны в течение всего года. 
+Ответ. Плата за годовые подписки, приобретенные в течение определенного месяца, взимается сразу за целый год. Эти подписки будут действительны в течение всего года. По этой причине вы можете изменять количество лицензий только в текущем месяце приобретения (лицензии будут действительны в течение одного года и плата будет взиматься за один год). Количество подписок можно увеличивать только в течение месяца приобретения.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Вопрос: Что делать, если мне нужно уменьшить количество подписок для моих клиентов?
 Ответ. Администратор компании сможет уменьшить количество подписок, открыв страницу https://manage.visualstudio.com и выполнив соответствующие инструкции из этой статьи. Система *не* распределит сумму пропорционально. Чтобы получить возмещение, необходимо обратиться в отдел выставления счетов Azure.
