@@ -22,6 +22,7 @@
 #### [Анонимизация данных подписчика](anonymization.md)
 ### [Общие сведения о портале подписок](using-the-subscriber-portal.md)
 ### [Управление подписками](manage-vs-subscriptions.md)
+### [Обратитесь к администратору подписок](contact-my-admin.md)
 ### Преимущества
 #### Инструменты
 ##### [Деньги на счете в Azure](vs-azure.md)
@@ -58,17 +59,22 @@
 #### [Поиск и запрашивание ключей](find-keys.md)
 #### [Веб-материалы для демонстрации](internet-demos.md)
 ## Администраторы
-### [Обязанности администратора](admin-responsibilities.md)
+### Обязанности администратора
+#### [Обязанности администратора](admin-responsibilities.md)
 #### [Предварительная инвентаризация](admin-inventory.md)
 #### [Управление большими рабочими группами и сторонними подрядчиками](manage-teams.md)
 #### [Отслеживание назначений пользователей и обработка заказов](assignments-orders.md)
-### Подключение организации
-#### [Переход на Open и Open License](open-migration.md)
+### Доступ к порталу администрирования
+#### [Корпоративная лицензия](volume-license.md)
 #### [MPSA](mpsa.md)
 #### [Облачные подписки](cloud-admin.md)
-#### [Видео по подключению](https://youtu.be/plSu6fpi7UI)
+#### [Партнеры, управляющие от имени клиентов](open-migration.md)
+#### [Видеоучебник. Доступ к порталу администрирования](https://youtu.be/plSu6fpi7UI)
 ### Использование портала администрирования
+#### [Суперадминистраторы и администраторы](admin-roles.md)
+#### [Настройка параметров соглашения](admin-prefs.md)
 #### [Обзор](using-admin-portal.md)
+#### [Видеоучебник. Использование портала администрирования](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 #### Назначение подписок
 ##### [Добавление отдельных пользователей](assign-license.md)
 ##### [Добавление нескольких пользователей](assign-license-bulk.md)
@@ -81,7 +87,7 @@
 #### [Подписки с истекшим сроком действия](handle-expired-license.md)
 #### [Подписчики, использующие псевдонимы](aliasing.md)
 #### [Подписчики, входящие по личным электронным адресам](personal-email-sign-ins.md)
-### [Управление Visual Studio в GitHub Enterprise](assign-github.md)
+#### [Управление Visual Studio в GitHub Enterprise](assign-github.md)
 ## Ресурсы
 ### [Документ по лицензированию Visual Studio](https://aka.ms/vslicensing)
 ### [Сравнение вариантов подписок и цен на них](https://visualstudio.microsoft.com/vs/pricing)
