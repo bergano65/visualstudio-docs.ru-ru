@@ -31,6 +31,7 @@
 # Редактор исходного кода
 ## [Возможности редактора](source-editor.md)
 ## [Рефакторинг](refactoring.md)
+## [IntelliSense](intellisense.md)
 ## [Комментарии](comments.md)
 ## [Работа редактора](editor-behavior.md)
 ## [Комментарии к задачам](task-comments.md)
