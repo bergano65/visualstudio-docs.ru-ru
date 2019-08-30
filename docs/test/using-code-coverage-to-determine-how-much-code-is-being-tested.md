@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416455"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976782"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Использование покрытия кода для определения объема протестированного кода
 
@@ -36,7 +36,12 @@ ms.locfileid: "68416455"
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Анализ покрытия кода в модульных тестах в обозревателе тестов
 
+::: moniker range="vs-2017"
 1. В меню **Тест** щелкните **Анализ покрытия кода**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. В **обозревателе тестов** выберите**Анализ объема протестированного кода** в меню **Запуск**.
+::: moniker-end
 
 2. Чтобы увидеть, какие строки были выполнены, выберите ![Значок "Цвета отображения покрытия кода"](../test/media/codecoverage-showcoloringicon.png) **Цвета отображения покрытия кода**.
 

@@ -1,8 +1,10 @@
 ---
 title: Продукты и службы корпорации Майкрософт, поддерживающие специальные возможности
 description: Ознакомьтесь с дополнительными сведениями о продуктах и услугах корпорации Майкрософт, которые повысят доступность наших операционных систем, программ и приложений для всех пользователей, включая людей с ограниченными возможностями.
-ms.date: 08/22/2017
+ms.date: 08/23/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -19,30 +21,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 87416903b469293d292bfa4414d425c31d0c9154
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926270"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060389"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Продукты и службы корпорации Майкрософт, поддерживающие специальные возможности
 
-> [!TIP]
-> Дополнительные сведения о новых специальных возможностях Visual Studio см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
+Корпорация Microsoft стремится к тому, чтобы сделать использование своих продуктов и служб простым и удобным для каждого. На этой странице содержатся сведения о возможностях, продуктах и службах, облегчающих работу с Microsoft Windows для людей с ограниченными возможностями.
 
-Корпорация Microsoft стремится к тому, чтобы сделать использование своих продуктов и служб простым и удобным для каждого. В следующих разделах содержатся сведения о возможностях, продуктах и службах, облегчающих работу с Microsoft Windows для людей с ограниченными возможностями.
-
-- [Специальные возможности Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
-
-- [Документация в альтернативных форматах](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
-
-- [Служба технической поддержки для людей с нарушениями слуха](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
-
-- [Дополнительные сведения](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
-
-> [!NOTE]
-> Информация в этом разделе предназначена только для пользователей, которые приобрели лицензию на продукты корпорации Microsoft в США. Если вы приобрели продукт за пределами США, можно ознакомиться с информационной картой подразделения, которая входит в пакет программного обеспечения, или просмотреть список адресов и телефонных номеров службы технической поддержки корпорации Майкрософт на веб-сайте [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431). Можно обратиться в представительство, чтобы узнать, доступен тип продуктов и услуг, описанных в этом разделе, в определенном регионе. Информация о специальных возможностях доступна на других языках, включая японский и французский.
+> [!IMPORTANT]
+> Сведения, представленные на этой странице, предназначены только для пользователей, которые приобрели лицензии на продукты корпорации Майкрософт в США. Если вы приобрели продукт за пределами США, можно просмотреть список адресов и телефонных номеров службы технической поддержки корпорации Майкрософт на веб-сайте [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431). Можно обратиться в представительство, чтобы узнать, доступен ли тип продуктов и услуг, описанных на этой странице, в определенном регионе. Информация о специальных возможностях доступна на других языках.
 
 ## <a name="windows"></a> Специальные возможности Windows
 
@@ -66,9 +57,8 @@ ms.locfileid: "68926270"
 
 Кроме того, дополнительную документацию корпорации Майкрософт можно получить в Learning Ally. Learning Ally распространяет эти документы среди зарегистрированных правомочных членов службы распределения. Для получения дополнительных сведений о доступности документации по продуктам корпорации Microsoft и книг издательства Microsoft Press обратитесь по следующему адресу.
 
-|Learning Ally|
-| - |
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Сайт Learning Ally: [http://www.learningally.org](http://www.learningally.org/).|
+> Learning Ally<br />
+> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Сайт Learning Ally: [http://www.learningally.org](http://www.learningally.org/)
 
 Веб-адреса могут меняться, поэтому подключение к веб-сайту или сайтам, указанным в данном разделе, может быть невозможно.
 
@@ -86,7 +76,15 @@ ms.locfileid: "68926270"
 
 Дополнительные сведения о том, как поддержка специальных возможностей помогает улучшить жизнь людей с ограниченными возможностями, см. на веб-сайте [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
 
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Дополнительные сведения о новых специальных возможностях Visual Studio см. в записи блога [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Улучшения специальных возможностей в Visual Studio 2017 версии 15.3).
+
+::: moniker-end
+
 ## <a name="see-also"></a>См. также
 
 * [Ресурсы для создания приложений со специальными возможностями](../../ide/reference/resources-for-designing-accessible-applications.md)
 * [Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Специальные возможности для Visual Studio для Mac](/visualstudio/mac/accessibility)

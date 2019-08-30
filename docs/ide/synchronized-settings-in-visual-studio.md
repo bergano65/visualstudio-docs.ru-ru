@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6f670449be9b416d1c54bc83379bae4a6733d932
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824814"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976728"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Синхронизация параметров Visual Studio на нескольких компьютерах
 
@@ -71,7 +71,7 @@ ms.locfileid: "67824814"
 
 1. Выполните обновление до Visual Studio 2017 версии 15.3 или более поздней.
 
-2. Используйте мастер **импорта и экспорта**, чтобы экспортировать все существующие параметры в папку за пределами папки *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
+2. Используйте **мастер импорта и экспорта**, чтобы экспортировать все существующие параметры в папку за пределами папки *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
 
 3. Откройте **командную строку разработчика для VS 2017** и выполните `devenv /resetuserdata`.
 
@@ -84,6 +84,10 @@ ms.locfileid: "67824814"
 Некоторые параметры, например макет окна инструментов, не используются совместно в разных параллельных установках Visual Studio. Файл *CurrentSettings.vssettings* в *%userprofile%\Documents\Visual Studio 2019\Settings* находится в папке для установки, аналогичной папке *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
 
 ::: moniker-end
+
+## <a name="reset-synchronized-settings"></a>Сброс синхронизированных параметров
+
+Чтобы сбросить все параметры до значений по умолчанию, войдите в Visual Studio и выберите **Сервис** > **Импорт и экспорт параметров**, чтобы открыть **Мастер импорта и экспорта параметров**. Выберите **Сбросить все параметры** и следуйте оставшимся шагам в мастере.
 
 ## <a name="see-also"></a>См. также
 

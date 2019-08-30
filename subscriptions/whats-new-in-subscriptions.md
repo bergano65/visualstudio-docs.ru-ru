@@ -2,21 +2,40 @@
 title: Новые возможности подписок Visual Studio
 description: Узнайте о новых и обновленных функциях, которые можно использовать для управления подписками Visual Studio.
 ms.custom: ''
-ms.date: 07/19/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: ba6c17aa6aa1f0a89e53be6b8dba7067e1fdc902
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493396"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060403"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Новые возможности в подписках Visual Studio
 
 Мы часто обновляем пакет преимуществ подписок, чтобы сделать его более удобным для вас. Мы также улучшаем функции наших порталов управления подписками и подписчиками, чтобы предоставлять оптимальные условия для работы.  Читайте дальше, чтобы узнать о новых функциях и обновлениях, перечисленных поквартально по мере их появления.
+
+## <a name="2019-q3-june-august"></a>3 кв. 2019 г. (июнь–август)
+
+### <a name="contact-my-admin-available-for-subscribers---august-2019"></a>Функция "Обратиться к администратору" доступна для подписчиков — август 2019 г.
+Многие подписчики Visual Studio получают подписки на работе или в учебном заведении, и эти подписки назначаются и управляются администраторами.  В больших или сложных организациях подписчик не всегда знает, к кому обратиться, если ему нужна помощь администратора.  Чтобы помочь подписчикам, мы добавили новую функцию "Обратиться к администратору" на портале подписчиков по адресу https://my.visualstudio.com/subscriptions. Дополнительные сведения см. в статье [Обращение к администратору](contact-my-admin.md). 
+
+### <a name="agreement-preferences-available-for-super-admins---august-2019"></a>Параметры соглашения, доступные для суперадминистраторов — август 2019 г.
+Новая функция на портале администрирования подписок теперь позволяет суперадминистраторам задавать глобальные параметры для своих соглашений.  Благодаря этим параметрам администраторы выполняют меньше работы при назначении подписок и можно строже контролировать такие функции, как возможность создания администратором подписки для пользователей за пределами организации.  Дополнительные сведения см. в статье [Настройка параметров соглашения](admin-prefs.md). 
+
+## <a name="2019-q2-april-june"></a>Второй квартал 2019 г. (апрель — июнь)
+
+### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Подписки Visual Studio с GitHub Enterprise
+На конференции Build в мае корпорация Майкрософт объявила, что клиенты с Соглашением Enterprise теперь могут приобрести подписки Visual Studio, которые включают GitHub Enterprise.  Это простой способ получить подписки Visual Studio и GitHub Enterprise по одной цене дешевле.  
+
+Предложение GitHub Enterprise доступно с подписками Visual Studio Enterprise и Visual Studio Professional, приобретенными в рамках Соглашения Enterprise. Доступно также предложение более высокого уровня, которое позволяет добавить GitHub Enterprise, даже если Соглашение Enterprise пока не требуется продлевать.
+
+Дополнительные сведения о преимуществах, вариантах и ценах см. на странице https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
+
+Если в вашей организации уже используются подписки Visual Studio с GitHub Enterprise, ознакомьтесь с нашей документацией по [управлению этими подписками](assign-github.md).  
 
 ## <a name="2019-q1-january-march"></a>1-й квартал 2019 г. (январь — март)
 
@@ -30,15 +49,8 @@ ms.locfileid: "68493396"
 
 Дополнительные сведения см. в статье о [функции "Максимальное использование"](maximum-usage.md). 
 
-## <a name="2019-q2-april-june"></a>Второй квартал 2019 г. (апрель — июнь)
 
-### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Подписки Visual Studio с GitHub Enterprise
-На конференции Build в мае корпорация Майкрософт объявила, что клиенты с Соглашением Enterprise теперь могут приобрести подписки Visual Studio, которые включают GitHub Enterprise.  Это простой способ получить подписки Visual Studio и GitHub Enterprise по одной цене дешевле.  
 
-Предложение GitHub Enterprise доступно с подписками Visual Studio Enterprise и Visual Studio Professional, приобретенными в рамках Соглашения Enterprise. Доступно также предложение более высокого уровня, которое позволяет добавить GitHub Enterprise, даже если Соглашение Enterprise пока не требуется продлевать.
 
-Дополнительные сведения о преимуществах, вариантах и ценах см. на странице https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
-
-Если в вашей организации уже используются подписки Visual Studio с GitHub Enterprise, ознакомьтесь с нашей документацией по [управлению этими подписками](assign-github.md).  
 
 Вот и все!
