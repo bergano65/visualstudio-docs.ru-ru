@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 89f34d027ec238b1e34724924ffb163267d56dc0
+ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328785"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70026475"
 ---
 # <a name="visual-studio-administrator-guide"></a>Руководство администратора Visual Studio
 
@@ -95,7 +95,7 @@ ms.locfileid: "67328785"
 
 * Также вы можете [применить ключ корпоративной лицензии](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019) в рамках скрипта установки, чтобы освободить пользователей от дополнительных действия для активации программного обеспечения.
 
-* При необходимости обновите структуру сети для [управления передачей обновлений конечным пользователям](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
+* При необходимости обновите структуру сети для [управления временем и источником обновлений для конечных пользователей](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
 
 * При необходимости можно задать политики реестра, влияющие на развертывание Visual Studio, например, место, где установлены некоторые пакеты, используемые совместно с другими версиями или экземплярами, [где кэшируются пакеты](set-defaults-for-enterprise-deployments.md?view=vs-2019) или [кэшируются ли пакеты вообще](disable-or-move-the-package-cache.md?view=vs-2019).
 
@@ -134,7 +134,7 @@ ms.locfileid: "67328785"
 
 * Также вы можете [применить ключ корпоративной лицензии](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017) в рамках скрипта установки, чтобы освободить пользователей от дополнительных действия для активации программного обеспечения.
 
-* При необходимости обновите структуру сети для [управления передачей обновлений конечным пользователям](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
+* При необходимости обновите структуру сети для [управления временем и источником обновлений для конечных пользователей](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
 
 * При необходимости можно задать политики реестра, влияющие на развертывание Visual Studio, например, место, где установлены некоторые пакеты, используемые совместно с другими версиями или экземплярами, [где кэшируются пакеты](set-defaults-for-enterprise-deployments.md?view=vs-2019) или [кэшируются ли пакеты вообще](disable-or-move-the-package-cache.md?view=vs-2017).
 

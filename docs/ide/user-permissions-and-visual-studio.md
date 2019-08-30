@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d012c0902aa82eb057f9d69c0b85b13262e847a
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 97ecddfa317eb522a8ce29a53482df5581912dad
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66747625"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891247"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Разрешения пользователей и Visual Studio
 
@@ -40,7 +40,8 @@ ms.locfileid: "66747625"
 ||Отладка в зоне для приложений XAML-браузера (XBAP).|[Основное приложение WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||Использование эмулятора для отладки проектов облачных служб для Microsoft Azure.|[Отладка облачной службы в Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||Настройка брандмауэра для удаленной отладки.|[Удаленная отладка](../debugger/remote-debugging.md)|
-|Средства производительности|Профилирование приложения.|[Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)|
+|Средства производительности|Подключение к приложению с повышенными правами.|[Руководство по профилированию производительности для начинающих](../profiling/beginners-guide-to-performance-profiling.md)|
+||Используйте профилировщик GPU.|[Профилирование GPU](../profiling/gpu-usage.md)|
 |Развертывание|Развертывание веб-приложения в службах IIS на локальном компьютере.|[Развертывание веб-приложения ASP.NET с помощью Visual Studio](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
 ## <a name="run-visual-studio-as-an-administrator"></a>Запуск Visual Studio от имени администратора

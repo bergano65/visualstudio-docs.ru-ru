@@ -1,20 +1,20 @@
 ---
-title: Управление заказами в Open и Open License | Документация Майкрософт
+title: Партнеры, управляющие подписками Visual Studio для клиентов | Документация Майкрософт
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
-description: Сведения об управлении заказами на подписки с помощью программ Open и Open License.
-ms.openlocfilehash: ecbd5c4b861683742ec8b9e3d9fca571932ae887
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+description: Узнайте, как партнеры управляют подписками Visual Studio для своих клиентов.
+ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
+ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605840"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000902"
 ---
-# <a name="open-and-open-license-management-for-new-orders"></a>Управление Open и Open License для новых заказов
-Для управления подписками на [портале администрирования подписок Visual Studio](https://manage.visualstudio.com) партнерам и клиентам необходимо выполнить несколько действий. Процесс будет выглядеть следующим образом.
+# <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Партнеры, управляющие подписками от имени клиентов
+Для управления подписками на [портале администрирования подписок Visual Studio](https://manage.visualstudio.com) клиентам необходимо выполнить несколько действий. Процесс будет выглядеть следующим образом.
 - Партнеры размещают новый заказ от имени клиента, указав его рабочий адрес электронной почты.
 - Клиент получает уведомление с предложением назначить администраторов и получить доступ к его подпискам на [портале администрирования подписок Visual Studio](https://manage.visualstudio.com).
 - Чтобы партнеры могли управлять подписками от имени клиентов, их необходимо зарегистрировать на портале администрирования. Ниже перечислены различные варианты (по аналогии с процессом add-open).
@@ -38,6 +38,7 @@ ms.locfileid: "68605840"
 
 > [!NOTE]
 > Клиент получает по электронной почте уведомление о том, что партнер был добавлен в Open License. Он может аннулировать доступ партнера по своему желанию.
+
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Новые партнеры, которые заходят на портал администрирования подписок Visual Studio напрямую
 Этот сценарий относится к новым партнерам, которые уже размещали новые заказы на Open License, но еще не зарегистрировались на портале [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) и зашли на [портал администрирования подписок Visual Studio](https://manage.visualstudio.com) напрямую.  Выполните следующие действия.
