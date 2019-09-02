@@ -45,7 +45,6 @@
 ##### [Подписка на журнал MSDN](vs-msdn.md)
 ##### [Pluralsight](vs-pluralsight.md)
 #### Поддержка 
-##### [Чат с Помощником по Azure](vs-azure-advisory-chat.md)
 ##### [Сообщество Azure](vs-azure-community.md)
 ##### [Поддержка Concierge](vs-concierge-chat.md)
 ##### [Техническая поддержка](vs-tech-support.md)
