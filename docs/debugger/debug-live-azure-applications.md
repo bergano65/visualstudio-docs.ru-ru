@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 6944c930ba6357fffeebba417a32cd167bd4debd
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493320"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179823"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Отладка интерактивных приложений ASP.NET Azure с использованием Snapshot Debugger
 
@@ -37,7 +37,7 @@ ms.locfileid: "68493320"
 * Snapshot Debugger доступен только начиная с Visual Studio 2017 Enterprise версии 15,5 или выше с **рабочей нагрузкой разработки Azure**. (На вкладке **Отдельные компоненты** его можно найти в разделе **Отладка и тестирование** > **Отладчик моментальных снимков**.)
 
    ::: moniker range=">=vs-2019"
-   Установите [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если он еще не установлен. Если вы обновляете предыдущую установку Visual Studio, запустите Visual Studio Installer и проверьте компонент Snapshot Debugger в **рабочей нагрузке ASP.NET and Web Development**.
+   Установите [Visual Studio 2019](https://visualstudio.microsoft.com/downloads), если он еще не установлен. Если вы обновляете предыдущую установку Visual Studio, запустите Visual Studio Installer и проверьте компонент Snapshot Debugger в **рабочей нагрузке ASP.NET and Web Development**.
    ::: moniker-end
    ::: moniker range="<=vs-2017"
    Если он еще не установлен, установите [Visual Studio 2017 Enterprise версии 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) или более поздней. Если вы обновляете предыдущую установку Visual Studio 2017, запустите Visual Studio Installer и проверьте компонент Snapshot Debugger в **рабочей нагрузке ASP.NET and Web Development**.
