@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605440"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180282"
 ---
 # <a name="options-dialog-box-environment--general"></a>Диалоговое окно "Параметры": Страница "Общие" \> папка "Среда"
 
@@ -62,7 +62,7 @@ ms.locfileid: "68605440"
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> В Windows 10 есть параметр, в котором указывается: **Let Windows try to fix apps so they're not blurry** (Позволить Windows попробовать исправить работу приложений, чтобы они не были размытыми). **Включение** этого параметра рекомендуется, когда Visual Studio выглядит на мониторе размытым. Попробуйте перейти на [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), в котором значительно повысилась ясность дисплея, поскольку это приложение поддерживает необходимое количество точек на дюйм для каждого монитора.
+> В Windows 10 есть параметр, в котором указывается: **Let Windows try to fix apps so they're not blurry** (Позволить Windows попробовать исправить работу приложений, чтобы они не были размытыми). **Включение** этого параметра рекомендуется, когда Visual Studio выглядит на мониторе размытым. Попробуйте перейти на [Visual Studio 2019](https://visualstudio.microsoft.com/downloads), в котором значительно повысилась ясность дисплея, поскольку это приложение поддерживает необходимое количество точек на дюйм для каждого монитора.
 
 ::: moniker-end
 

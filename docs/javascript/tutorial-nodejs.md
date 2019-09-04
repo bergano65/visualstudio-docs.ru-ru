@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fd1841c406423147082a4dced9d0993d07efaca9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: bfb5f28763e4f95a2713e67543fca35398536fa9
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695856"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180306"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Учебник. Создание приложения Node.js и Express в Visual Studio
 
@@ -30,7 +30,7 @@ ms.locfileid: "65695856"
 
 ::: moniker range="vs-2019"
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads), если еще не сделали этого.
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ Express — это платформа веб-приложений, исполь�
     Установите Visual Studio 2017 бесплатно со страницы  [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/) , если вы еще не сделали этого.
     ::: moniker-end
 
-    Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...**, после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.
+    Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...** , после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **Разработка Node.js**, а затем элемент **Изменить**.
 
     ![Рабочая нагрузка Node.js в установщике Visual Studio](../ide/media/quickstart-nodejs-workload.png)
 

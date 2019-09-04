@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ee1a568e30a4898c767533a4f592e2301a097a
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: b6fc0ab18fea11b2dd4478538a095762fee75d35
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681483"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180367"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Обновление до последнего выпуска Visual Studio
 
@@ -166,7 +166,7 @@ ms.locfileid: "68681483"
 
 Мы рекомендуем выполнить обновление до [последнего выпуска](/visualstudio/releases/2019/release-notes/) Visual Studio 2019, чтобы иметь доступ к новым компонентам, исправлениям и улучшениям.
 
-Установите Visual Studio 2019 бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+Установите Visual Studio 2019 бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads), если еще не сделали этого.
 
 > [!IMPORTANT]
 > Чтобы установить, обновить или изменить среду Visual Studio, необходимо войти в учетную запись с правами администратора. Дополнительные сведения см. в разделе [Разрешения пользователей и Visual Studio](../ide/user-permissions-and-visual-studio.md).

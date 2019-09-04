@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 4619a56bfe052a1fb191af8edfd1cef8b376617b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c031a047a0331eea0f8397a303d2b5cb0af650e6
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976849"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180133"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Создание приложения Windows Forms на Visual Basic в Visual Studio
 
@@ -32,7 +32,7 @@ ms.locfileid: "62976849"
 
 ::: moniker range="vs-2019"
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads), если еще не сделали этого.
 
 > [!NOTE]
 > На некоторых снимках экрана в этом учебнике используется темная тема. Если вы не используете темную тему, но хотите переключиться на нее, см. страницу [Персонализация интегрированной среды разработки и редактора Visual Studio](../ide/quickstart-personalize-the-ide.md).
@@ -49,7 +49,7 @@ ms.locfileid: "62976849"
 
 2. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
-3. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **Рабочий стол Windows**. На средней панели выберите **Приложение Windows Forms (.NET Framework)**. Назовите файл `HelloWorld`.
+3. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **Рабочий стол Windows**. На средней панели выберите **Приложение Windows Forms (.NET Framework)** . Назовите файл `HelloWorld`.
 
      Если шаблон проекта **Приложение Windows Forms (.NET Framework)** отсутствует, закройте диалоговое окно **Новый проект** и в верхней строке меню выберите **Сервис** > **Получить средства и компоненты**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **.Разработка классических приложений .NET** и затем элемент **Изменить**.
 
@@ -146,7 +146,7 @@ ms.locfileid: "62976849"
 
    Будет выполнено несколько операций. В интегрированной среде разработки Visual Studio откроются окна **Средства диагностики** и **Вывод**. Кроме того, вне этой среды откроется диалоговое окно **Form1**. Оно будет содержать вашу кнопку **Нажмите это** и текст **Label1**.
 
-2. Нажмите кнопку **Нажмите это** в диалоговом окне **Form1**. Обратите внимание, что текст **Label1** меняется на **Hello World!**.
+2. Нажмите кнопку **Нажмите это** в диалоговом окне **Form1**. Обратите внимание, что текст **Label1** меняется на **Hello World!** .
 
     ![Диалоговое окно Form1 с текстом Label1 ](../ide/media/vb-form1-dialog-hello-world.png)
 

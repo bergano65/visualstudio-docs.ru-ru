@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 924b3000ffa0648a9086ed4771e921a939859804
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: a7e9269c5de8d95ef66b1633da024c8a46c42758
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043556"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180414"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Учебник. Создание простого приложения с помощью Visual Basic
 
@@ -33,7 +33,7 @@ ms.locfileid: "67043556"
 
 ::: moniker range=">=vs-2019"
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads), если еще не сделали этого.
 
 ::: moniker-end
 

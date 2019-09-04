@@ -3,14 +3,14 @@ title: Настройка репозитория Git
 description: Использование Git и Subversion в Visual Studio для Mac.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 02/15/2018
+ms.date: 02/15/2019
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 4fbee486a2e0263621f501b511d62abddbda8059
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 9b21ed322d2b22be619a71e474a3b5078607bbe5
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692394"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107890"
 ---
 # <a name="set-up-a-git-repository"></a>Настройка репозитория Git
 
@@ -81,7 +81,7 @@ Git — это распределенная система управления
 
     ![Меню "Управление версиями"](media/version-control-git10.png)
 
-10. Начав вносить дополнительные изменения, выберите  **Отправить изменения**,  чтобы отправить изменения в  **удаленный** репозиторий. Это позволит всем соответствующим пользователям просмотреть их на сайте github.com:
+10. Начав вносить дополнительные изменения, выберите **Отправить изменения**, чтобы отправить изменения в **удаленный** репозиторий. Это позволит всем соответствующим пользователям просмотреть их на сайте github.com:
 
     ![Отправка изменений в удаленный репозиторий](media/version-control-git11.png)
 

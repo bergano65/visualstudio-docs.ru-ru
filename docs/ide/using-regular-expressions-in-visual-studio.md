@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: 755554b73fc80df151550f36e1846e07db70bcd8
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345735"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222744"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Использование регулярных выражений в Visual Studio
 
@@ -48,7 +48,7 @@ ms.locfileid: "68345735"
 |Запись и неявная нумерация выражения в скобках|()|`([a-z])X\1` совпадает с "аХа" и "бХб", но не с "аХб". "\1" относится к первой группе выражения "[а–я]". Дополнительные сведения см. в разделе [Группы записи и шаблоны замены](#capture-groups-and-replacement-patterns). |
 |Признание соответствия недействительным|(?!абв)|`real(?!ity)` совпадает со словами "реальный" и "реальность", но не со словом "реальная". Кроме того, находит второй элемент "реальн" (но не первый "реальн") в "реальнаяреальность".|
 |Соответствует любому символу, не входящему в указанный набор. Дополнительные сведения см. в разделе [Отрицательная группа символов](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^абв]|`be[^n-t]` совпадает с "век" в слове "веко", "вел" в слове "велосипед" и "веч" в слове "вечер", но не с "вен" в слове "вена".|
-|Совпадает с выражением до или после символа.|&#124;|`(sponge\|mud) bath` совпадает со строками "хвойный лес" и "лиственный лес".|
+|Совпадает с выражением до или после символа.|&#124;|`(sponge|mud) bath` совпадает со строками "хвойный лес" и "лиственный лес".|
 |[Экранирует символ](/dotnet/standard/base-types/character-escapes-in-regular-expressions), указанный за обратной косой чертой.| \\ |`\^` соответствует символу ^.|
 |Определяет количество вхождений предыдущего символа или группы. Дополнительные сведения см. в разделе [Совпадение ровно n раз: {n}](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, где n обозначает число вхождений.|`x(ab){2}x` соответствует "xababx", а `x(ab){2,3}x` соответствует "xababx" и "xabababx", но не "xababababx".|
 |[Сопоставление текста в категории Юникода](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Дополнительные сведения о классах символов Юникода, см. в документе [о свойствах символов в стандарте Юникода 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, где "X" — число из Юникода.|`\p{Lu}` совпадает с "T" и "D" в "Thomas Doe".|

@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a65534cda2571c36bb0c2caa16bf2f3394a804
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dab237eeb99f4d4d67652dba583bf9851b6d6175
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435059"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180463"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Учебник. Создание первого приложения универсальной платформы Windows в Visual Studio с помощью XAML и C&#35;
 
@@ -29,7 +29,7 @@ ms.locfileid: "63435059"
 Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), если еще не сделали этого.
 ::: moniker-end
 ::: moniker range="vs-2019"
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads), если еще не сделали этого.
 ::: moniker-end
 
 ## <a name="create-a-project"></a>Создание проекта
@@ -41,7 +41,7 @@ ms.locfileid: "63435059"
 
 1. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
-1. В левой панели диалогового окна **Новый проект** разверните узел **Visual C#** и выберите **Универсальные приложения**. В средней панели выберите **Пустое приложение (универсальное приложение Windows)**. Назовите проект *HelloWorld* и нажмите **OK**.
+1. В левой панели диалогового окна **Новый проект** разверните узел **Visual C#** и выберите **Универсальные приложения**. В средней панели выберите **Пустое приложение (универсальное приложение Windows)** . Назовите проект *HelloWorld* и нажмите **OK**.
 
    ![Шаблон проекта "Универсальное приложение Windows" в диалоговом окне "Новый проект" в интегрированной среде разработки Visual Studio](media/new-project-csharp-uwp-helloworld.png)
 
@@ -61,7 +61,7 @@ ms.locfileid: "63435059"
    ![Снимок экрана "Создание проекта"](media/vs-2019/uwp-create-new-project.png)
 
    > [!NOTE]
-   > Если вы не видите здесь шаблон **Пустое приложение (универсальное приложение Windows)**, щелкните ссылку **Установка других средств и компонентов**.<br><br>![Щелкните ссылку "Установка других средств и компонентов"](media/vs-2019/uwp-not-finding.png)<br><br>Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка приложений для универсальной платформы Windows** и выберите **Изменить**.<br><br>![Рабочая нагрузка "Разработка приложений для универсальной платформы Windows" в Visual Studio Installer](media/uwp-dev-workload.png)
+   > Если вы не видите здесь шаблон **Пустое приложение (универсальное приложение Windows)** , щелкните ссылку **Установка других средств и компонентов**.<br><br>![Щелкните ссылку "Установка других средств и компонентов"](media/vs-2019/uwp-not-finding.png)<br><br>Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка приложений для универсальной платформы Windows** и выберите **Изменить**.<br><br>![Рабочая нагрузка "Разработка приложений для универсальной платформы Windows" в Visual Studio Installer](media/uwp-dev-workload.png)
 
 1. Подтвердите значения по умолчанию для параметров **Целевая версия** и **Минимальная версия** в диалоговом окне **Новый проект приложения для универсальной платформы Windows**.
 
