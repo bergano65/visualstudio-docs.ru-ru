@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bfe4b1a172158740705e392c573de7911016583
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819576"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179865"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Разработка приложений для универсальной платформы Windows (UWP)
 
 Благодаря универсальной платформе Windows и единому ядру Windows одно и то же приложение можно запускать на любом устройстве Windows 10 — от телефонов и до настольных компьютеров. Используйте Visual Studio со средствами разработки универсальных приложений Windows для создания этих приложений.
 
-![Универсальная платформа Windows ](../cross-platform/media/uwp_coreextensions.png)
+![Универсальная платформа Windows](../cross-platform/media/uwp_coreextensions.png)
 
 Запускайте приложение в Windows 10 Phone, на настольных компьютерах Windows 10 или в Xbox. Это один и тот же пакет приложения! С появлением единого унифицированного ядра (OneCore) Windows 10, один пакет приложения может работать на всех платформах. Несколько платформ располагают пакетами SDK расширений, которые можно добавить в приложение для реализации конкретных поведений платформы. Например, пакет SDK для расширений для мобильных устройств обрабатывает нажатие кнопки "Назад" в Windows Phone. Если вы ссылаетесь в своем проекте на пакет SDK расширений, просто добавьте проверки времени выполнения, чтобы убедиться, что этот SDK доступен на этой платформе. Таким способом можно иметь один и тот же пакет приложения для каждой платформы!
 
@@ -52,7 +52,7 @@ ms.locfileid: "62819576"
 
 - [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2019 поддерживает разработку UWP только в Windows 10. Дополнительные сведения см. в разделах [Целевые платформы](/visualstudio/releases/2019/compatibility/) и [Системные требования](/visualstudio/releases/2019/system-requirements/) для Visual Studio.
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Вам также потребуется необязательная рабочая нагрузка "Разработка приложений для универсальной платформы Windows".
+- [Visual Studio](https://visualstudio.microsoft.com/downloads). Вам также потребуется необязательная рабочая нагрузка "Разработка приложений для универсальной платформы Windows".
 
      ![Рабочая нагрузка UWP](media/uwp_workload.png)
 

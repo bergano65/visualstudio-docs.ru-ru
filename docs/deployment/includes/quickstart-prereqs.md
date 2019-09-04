@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 983e25e65600a4174c305557b2a58e20b91f63f1
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 034d4c1e528ff33343b6da1dab3a2de96a0228fc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68143615"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70197178"
 ---
 ## <a name="prerequisites"></a>Предварительные требования
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), установленная с соответствующими рабочими нагрузками для выбранного языка:
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads), установленная с соответствующими рабочими нагрузками для выбранного языка:
   * ASP.NET: **ASP.NET и веб-разработка**
   * Python: **Разработка на Python**
   * Node.js: **Разработка для Node.js**
