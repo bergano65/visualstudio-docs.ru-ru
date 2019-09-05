@@ -57,7 +57,6 @@
 
 # Управление версиями
 ## [Обзор](version-control.md)
-## [Система управления версиями TF](tf-version-control.md)
 ## [Настройка репозитория Git](set-up-git-repository.md)
 ## [Работа с Git](working-with-git.md)
 ## [Настройка репозитория Subversion](set-up-subversion-repository.md)
@@ -100,6 +99,7 @@
 ## [Журналы и исключения](troubleshooting.md)
 ## [Программа улучшения качества программного обеспечения Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Сообщить о проблеме](report-a-problem.md)
+## [Устранение неполадок. Поддерживает ли Visual Studio для Mac систему управления версиями Team Foundation?](tf-version-control.md)
 ## [Устранение неполадок. Почему не отображаются все шаблоны?](troubleshooting-no-templates.md)
 ## [Устранение неполадок. Сбой средства обновления при получении сведений](updater-troubleshooting.md)
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924080"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222691"
 ---
 # <a name="code-snippets-schema-reference"></a>Справочник по схеме фрагментов кода
 
@@ -121,7 +121,7 @@ $selected$ is a great color. I love $selected$.
    |`SQL`|Определяет фрагмент кода SQL.|
    |`HTML`|Определяет фрагмент кода HTML.|
 
-- **Kind** - _необязательный_ атрибут, который задает вид кода, содержащийся во фрагменте, и место, в которое должен быть вставлен фрагмент кода для его компиляции. Он может иметь одно из следующих значений:
+- **Kind** — _необязательный_ атрибут, указывающий вид кода, который содержит фрагмент. Он может иметь одно из следующих значений:
 
    |Значение|ОПИСАНИЕ|
    |-----|-----------|
