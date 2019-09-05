@@ -1,6 +1,6 @@
 ---
 title: Практическое руководство. просмотр, сохранение и настройку файлов журнала сборки | Документация Майкрософт
-ms.date: 11/04/2016
+ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415578"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154816"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Практическое руководство. Просмотр, сохранение и настройка файлов журнала сборки
 
@@ -42,6 +42,8 @@ ms.locfileid: "68415578"
 
    В Visual Studio появится запрос на указание расположения для сохранения выходных данных сборки.
 
+Можно также создавать журналы, запустив MSBuild непосредственно из командной строки с помощью параметра командной строки `-fileLogger` (`-fl`). См. статью о [получении журналов сборки с помощью MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).
+
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Изменение объема сведений, включенных в журнал сборки
 
 1. В строке меню выберите **Сервис** > **Параметры**.
@@ -63,8 +65,11 @@ ms.locfileid: "68415578"
     > [!IMPORTANT]
     > Вам нужно перестроить проект, чтобы изменения в окне **Вывод** (все проекты) и файле *\<имя_проекта>.txt* (только проекты C++) вступили в силу.
 
+## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Использование двоичных журналов для упрощения просмотра больших файлов журнала
+
+Двоичные журналы — вспомогательная функция в проектах .NET, упрощающая просмотр журналов и поиск информации в больших журналах. Для просмотра двоичных журналов нужно установить [Project System Tools](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Дополнительные сведения см. на сайте [https://msbuildlog.com](https://msbuildlog.com) и [GitHub](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md).
+
 ## <a name="see-also"></a>См. также
 
-- [Получение журналов сборки](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Создание и очистка проектов и решений в Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Компиляция и сборка](../ide/compiling-and-building-in-visual-studio.md)
