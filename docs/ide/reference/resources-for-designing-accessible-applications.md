@@ -1,8 +1,10 @@
 ---
 title: Ресурсы для создания приложений со специальными возможностями
 description: Узнайте, как создавать приложения со специальными возможностями, чтобы их было проще использовать людям с ограниченными возможностями.
-ms.date: 11/04/2016
+ms.date: 08/27/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -14,16 +16,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811785"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107837"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ресурсы для создания приложений со специальными возможностями
 
-Используйте приведенные ниже ссылки для поиска сведений о технологиях, поддерживающих разработку со специальными возможностями, а также советов и примеров по разработке приложений Windows и веб-сайтов со специальными возможностями. Общие сведения о специальных возможностях можно найти на веб-странице [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).
+Узнайте о технологиях, обеспечивающих реализацию специальных возможностей. Мы также добавили ссылки на руководства по разработке приложений и веб-сайтов Windows со специальными возможностями.
+
+>[!NOTE]
+>Дополнительные сведения о разработке продуктов, доступных для использования всеми пользователями, см. в разделе о [специальных возможностях, реализованных в продуктах Microsoft](https://www.microsoft.com/accessibility/).
 
 ## <a name="technologies"></a>Технологии
 
@@ -35,7 +40,7 @@ ms.locfileid: "62811785"
 
 ## <a name="windows-applications"></a>приложения Windows
 
-* **[Пошаговое руководство: Создание приложения Windows со специальными возможностями](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**. Эта статья содержит пошаговые инструкции по реализации в примере приложения Windows пяти требований по специальным возможностям, необходимых для получения логотипа "Сертифицировано для Windows".
+* **[Пошаговое руководство: Создание приложения Windows со специальными возможностями](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** . Эта статья содержит пошаговые инструкции по реализации в примере приложения Windows пяти требований по специальным возможностям, необходимых для получения логотипа "Сертифицировано для Windows".
 
 * **Рекомендации по разработке пользовательского интерфейса клавиатуры**. В этой технической статье описана разработка пользовательского интерфейса приложения Windows, где пользователи могут осуществлять навигацию с клавиатуры. Дополнительные сведения см. в разделе [Рекомендации по проектированию пользовательского интерфейса клавиатуры](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 
@@ -53,4 +58,5 @@ ms.locfileid: "62811785"
 
 ## <a name="see-also"></a>См. также
 
-[Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Специальные возможности Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Специальные возможности для Visual Studio для Mac](/visualstudio/mac/accessibility/)
