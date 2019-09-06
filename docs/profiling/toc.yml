@@ -88,7 +88,7 @@
               href: how-to-collect-performance-data-for-a-web-site.md
             - name: Создание сеансов анализа производительности вручную
               href: how-to-manually-create-performance-sessions.md
-        - name: Настроить
+        - name: Настройка
           items:
             - name: Настройка сеансов анализа производительности
               href: configuring-performance-sessions.md

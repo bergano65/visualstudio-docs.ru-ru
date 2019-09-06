@@ -1,5 +1,5 @@
 ---
-title: Задачи MSBuild | Документы Майкрософт
+title: Задачи MSBuild | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,7 +18,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63004559"
 ---
-# <a name="msbuild-tasks"></a>задачи MSBuild
+# <a name="msbuild-tasks"></a>Задачи MSBuild
 Платформе построения требуется возможность выполнения любого числа действий во время процесса построения. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] использует *задачи* для выполнения этих действий. Задача — это блок исполняемого кода, с помощью которого [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выполняет атомарные операции построения.
 
 ## <a name="task-logic"></a>Алгоритмы задач
