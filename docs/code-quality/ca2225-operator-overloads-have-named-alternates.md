@@ -49,7 +49,7 @@ ms.locfileid: "69546902"
 |&|и|&|BitwiseAnd|
 |&=|И =|&=|BitwiseAnd|
 |&#124;|Или|&#124;|BitwiseOr|
-||=|Или =||=|BitwiseOr|
+|&#124;=|Или =|&#124;=|BitwiseOr|
 |--|Н/Д|--|Decrement|
 |/|/|/|Divide|
 |/=|/=|/=|Divide|
