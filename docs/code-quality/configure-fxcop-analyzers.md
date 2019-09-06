@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68c175a55c9e60e870a5466a831aaae50d62dced
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551142"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293445"
 ---
 # <a name="configure-fxcop-analyzers"></a>Настройка анализаторов FxCop
 
@@ -46,7 +46,10 @@ ms.locfileid: "69551142"
 
 ## <a name="editorconfig-file"></a>Файл EditorConfig
 
-Правила анализатора можно настроить, добавив пары "ключ-значение" в [editorconfig](https://editorconfig.org) -файл. Файл конфигурации может быть [специфичным для проекта](#per-project-configuration) или может [совместно](#shared-configuration) использоваться двумя или более проектами.
+Правила анализатора FxCop можно настроить, добавив пары "ключ-значение" в [editorconfig](https://editorconfig.org) -файл. Файл конфигурации может быть [специфичным для проекта](#per-project-configuration) или может [совместно](#shared-configuration) использоваться двумя или более проектами.
+
+> [!NOTE]
+> Старые правила FxCop нельзя настроить с помощью файла editorconfig.
 
 ### <a name="per-project-configuration"></a>Конфигурация по проекту
 
@@ -61,7 +64,7 @@ ms.locfileid: "69551142"
 
 ### <a name="shared-configuration"></a>Общая конфигурация
 
-Можно предоставить общий доступ к файлу editorconfig для конфигурации анализатора между двумя или более проектами, но для этого требуется выполнить некоторые дополнительные действия.
+Вы можете предоставить общий доступ к файлу editorconfig для конфигурации анализатора FxCop между двумя или более проектами, но для этого требуется выполнить некоторые дополнительные действия.
 
 1. Сохраните *editorconfig* -файл в общем расположении.
 
@@ -78,7 +81,7 @@ ms.locfileid: "69551142"
    </Project>
    ```
 
-3. Добавьте строку в *CSPROJ* -или *VBPROJ* -файл для импорта файла PROPS , созданного на предыдущем шаге. Эту строку необходимо поместить перед любыми строками, которые импортируют файлы FxCop Analyzer *. props* . Например, если файл. props имеет имя *editorconfig. props*:
+3. Добавьте строку в *CSPROJ* -или *VBPROJ* -файл для импорта файла *PROPS* , созданного на предыдущем шаге. Эту строку необходимо поместить перед любыми строками, которые импортируют файлы FxCop Analyzer *. props* . Например, если файл. props имеет имя *editorconfig. props*:
 
    ```xml
    ...
@@ -90,7 +93,7 @@ ms.locfileid: "69551142"
 4. Перезагрузите проект.
 
 > [!NOTE]
-> Старые правила FxCop нельзя настроить с помощью файла editorconfig.
+> Произвольное общее расположение файла EditorConfig, описанного здесь, применимо только к настройке анализаторов FxCop. Для других параметров, таких как отступ и стиль кода, файл EditorConfig всегда должен быть помещен в папку проекта или в родительскую папку.
 
 ## <a name="option-scopes"></a>Области параметров
 
