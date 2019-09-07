@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e300edf07aa98facbe6059ba9574e238ec8f3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 621bb7292ca467d6d3197636f662a4662712d483
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923257"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766021"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002. Не предоставляйте универсальные списки
 
@@ -31,10 +31,12 @@ ms.locfileid: "68923257"
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
-Тип содержит видимый извне член, который является <xref:System.Collections.Generic.List%601?displayProperty=fullName> типом, <xref:System.Collections.Generic.List%601?displayProperty=fullName> Возвращает тип или сигнатура, в <xref:System.Collections.Generic.List%601?displayProperty=fullName> которой содержится параметр.
+
+Тип содержит видимый извне член, который является <xref:System.Collections.Generic.List%601?displayProperty=fullName> типом, <xref:System.Collections.Generic.List%601> Возвращает тип или сигнатура, в <xref:System.Collections.Generic.List%601> которой содержится параметр.
 
 ## <a name="rule-description"></a>Описание правила
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>— Это универсальная коллекция, предназначенная для повышения производительности и без наследования. <xref:System.Collections.Generic.List%601?displayProperty=fullName>не содержит виртуальные члены, упрощающие изменение поведения унаследованного класса. Следующие универсальные коллекции предназначены для наследования и должны быть предоставлены вместо <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
+
+<xref:System.Collections.Generic.List%601?displayProperty=fullName>— Это универсальная коллекция, предназначенная для повышения производительности, а не для наследования. <xref:System.Collections.Generic.List%601>не содержит виртуальные члены, упрощающие изменение поведения унаследованного класса. Следующие универсальные коллекции предназначены для наследования и должны быть предоставлены вместо <xref:System.Collections.Generic.List%601>.
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
@@ -42,13 +44,20 @@ ms.locfileid: "68923257"
 
 - <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
+
 Чтобы устранить нарушение этого правила, измените <xref:System.Collections.Generic.List%601?displayProperty=fullName> тип на одну из универсальных коллекций, предназначенных для наследования.
 
 ## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
+
 Не отключайте предупреждение из этого правила, если только сборка, вызывающая это предупреждение, не является повторно используемой библиотекой. Например, можно было бы отключить это предупреждение в приложении, настроенном для производительности, в котором было получено выигрыш в производительности от использования универсальных списков.
 
 ## <a name="related-rules"></a>Связанные правила
+
 [CA1005: Избегайте чрезмерных параметров в универсальных типах](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
 [CA1010 Коллекции должны реализовывать универсальный интерфейс](../code-quality/ca1010-collections-should-implement-generic-interface.md)
@@ -64,4 +73,5 @@ ms.locfileid: "68923257"
 [CA1007: Используйте универсальные шаблоны там, где это уместно](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>См. также
+
 [Универсальные шаблоны](/dotnet/csharp/programming-guide/generics/index)
