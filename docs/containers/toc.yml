@@ -42,3 +42,7 @@
       items:
         - name: Свойства MSBuild для проектов контейнеров
           href: container-msbuild-properties.md
+        - name: Параметры для проектов Docker Compose
+          href: docker-compose-properties.md
+        - name: Параметры запуска
+          href: container-launch-settings.md
