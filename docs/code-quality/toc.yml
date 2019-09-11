@@ -692,6 +692,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: CA3012. Проверьте код на наличие уязвимостей к внедрению регулярных выражений
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: CA3061. Не добавлять схему по URL-адресу
+                  href: ca3061.md
                 - name: CA3075. Обработка небезопасных DTD
                   href: ca3075-insecure-dtd-processing.md
                 - name: CA3076. Выполнение небезопасного скрипта XSLT
@@ -702,12 +704,30 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
                 - name: CA5361. Не отключайте стойкое шифрование в защищенном канале
                   href: ca5361.md
+                - name: CA5363. Не отключать проверку запросов
+                  href: ca5363.md
                 - name: CA5364. Не используйте нерекомендуемые протоколы безопасности
                   href: ca5364.md
+                - name: CA5369. Использование XmlReader для десериализации
+                  href: ca5369.md
+                - name: CA5370. Использование XmlReader для проверки модуля чтения
+                  href: ca5370.md
+                - name: CA5371. Использование XmlReader для чтения схемы
+                  href: ca5371.md
+                - name: CA5372. Использование XmlReader для XPathDocument
+                  href: ca5372.md
+                - name: CA5373. Не использовать устаревшую функцию формирования ключа
+                  href: ca5373.md
                 - name: CA5378. Не отключайте ServicePointManagerSecurityProtocols
                   href: ca5378.md
+                - name: CA5380. Не добавлять сертификаты в корневое хранилище
+                  href: ca5380.md
+                - name: 'CA5381. Убедиться, что сертификаты не добавлены в корневое хранилище'
+                  href: ca5381.md
                 - name: CA5386. Не встраивайте значение SecurityProtocolType
                   href: ca5386.md
+                - name: CA5389. Не добавлять путь к элементу архива в путь целевой файловой системы
+                  href: ca5389.md
                 - name: CA5397. Не используйте нерекомендуемые значения SslProtocols
                   href: ca5397.md
                 - name: CA5398. Избегайте жестко зафиксированных значений SslProtocols
