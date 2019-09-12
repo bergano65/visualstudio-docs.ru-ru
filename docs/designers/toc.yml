@@ -105,7 +105,7 @@
       href: /dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time
     - name: Отключение поддержки DPI для конструктора Windows Forms
       href: disable-dpi-awareness.md
-    - name: Справочники
+    - name: Справочник
       items:
         - name: System.Windows.Forms API >>
           href: /dotnet/api/system.windows.forms
@@ -118,7 +118,7 @@
               href: ../ide/tutorial-1-create-a-picture-viewer.md
             - name: "Шаг\_1. Создание проекта приложения Windows Forms"
               href: ../ide/step-1-create-a-windows-forms-application-project.md
-            - name: "Шаг\_2. Запуск программы"
+            - name: "Шаг\_2. Запуск приложения"
               href: ../ide/step-2-run-your-program.md
             - name: Шаг 3. Настройка свойств формы
               href: ../ide/step-3-set-your-form-properties.md
@@ -136,7 +136,7 @@
               href: ../ide/step-9-review-comment-and-test-your-code.md
             - name: "Шаг\_10. Написание кода для дополнительных кнопок и флажка"
               href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-            - name: "Шаг\_11. Запуск программы и изучение других функций"
+            - name: "Шаг\_11. Запуск приложения и изучение других функций"
               href: ../ide/step-11-run-your-program-and-try-other-features.md
         - name: "Учебник\_2. Создание математического теста с ограничением по времени (C#)"
           items:
