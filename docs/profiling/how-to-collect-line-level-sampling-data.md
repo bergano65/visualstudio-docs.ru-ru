@@ -53,7 +53,7 @@ ms.locfileid: "62834592"
 
      Или...
 
-- При запуске приложения введите команду **VSPerfCmd /lineoff \<другие аргументы>**.
+- При запуске приложения введите команду **VSPerfCmd /lineoff \<другие аргументы>** .
 
 ## <a name="see-also"></a>См. также
 - [Настройка сеансов анализа производительности](../profiling/configuring-performance-sessions.md)

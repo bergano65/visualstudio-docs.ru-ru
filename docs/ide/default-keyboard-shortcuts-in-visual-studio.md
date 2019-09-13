@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: f6da512f6322bed074b8009d45e569626afcd996
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160042"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766034"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Сочетания клавиш по умолчанию в Visual Studio
 
@@ -341,9 +341,13 @@ ms.locfileid: "67160042"
 |--------------| - |
 |TestExplorer.DebugAllTests|**CTRL+R, CTRL+A**|
 |TestExplorer.DebugAllTestsInContext|**CTRL+R, CTRL+T**|
+|TestExplorer.DebugLastRun|**CTRL+R, D**|
 |TestExplorer.RepeatLastRun|**CTRL+R, L**|
 |TestExplorer.RunAllTests|**CTRL+R, A**|
 |TestExplorer.RunAllTestsInContext|**CTRL+R, T**|
+|TestExplorer.ShowTestExplorer|**CTRL+E, T**|
+|LiveUnitTesting.OpenTab|**CTRL+E, L**|
+|Test.CodeCoverageResults|**CTRL+E, C**|
 
 ### <a name="bkmk_tools"></a> Инструменты
 
@@ -401,6 +405,7 @@ ms.locfileid: "67160042"
 |View.WebBrowser|**CTRL+ALT+R**|
 |View.ZoomIn|**CTRL+SHIFT+.**|
 |View.ZoomOut|**CTRL+SHIFT+,**|
+|TestExplorer.ShowTestExplorer|**CTRL+E, T**|
 
 ### <a name="bkmk_window"></a> Окно
 

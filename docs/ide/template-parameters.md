@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891269"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766114"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
@@ -61,7 +61,7 @@ ms.locfileid: "69891269"
 |safeitemrootname|Эквивалентно `safeitemname`.|
 |safeprojectname|Имя, указанное пользователем при создании проекта, но с удаленными небезопасными символами и пробелами.|
 |время|Текущее время в формате ДД/ММ/ГГГГ 00:00:00.|
-|SpecificSolutionName|Имя решения. Если установлен флажок "create solution directory" (Создать каталог решения), `SpecificSolutionName` имеет имя решения. Если флажок "create solution directory" (Создать каталог решения) не установлен, `SpecificSolutionName` пусто.|
+|specifiedSolutionName|Имя решения. Если установлен флажок "create solution directory" (Создать каталог решения), `specifiedSolutionName` имеет имя решения. Если флажок "create solution directory" (Создать каталог решения) не установлен, `specifiedSolutionName` пусто.|
 |userdomain|Домен текущего пользователя.|
 |Имя пользователя|Имя текущего пользователя.|
 |webnamespace|Имя текущего веб-сайта. Этот параметр используется в шаблоне веб-формы, чтобы гарантировать уникальные имена классов. Если веб-сайт находится в корневом каталоге веб-сервера, этот параметр шаблона разрешается в корневой каталог веб-сервера.|

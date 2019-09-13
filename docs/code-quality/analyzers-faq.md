@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53bd2139d5b81ed743cdfd92fe76cb575dcc6487
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: ae41d9ac30567a32780af422c3af1e2b0d6a63ae
+ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547888"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70929763"
 ---
 # <a name="code-analysis-faq"></a>Анализ кода: вопросы и ответы
 
@@ -24,7 +24,7 @@ ms.locfileid: "69547888"
 
 **ВОПРОС**. Следует ли использовать анализ кода или EditorConfig для проверки стиля кода?
 
-**Ответ**. Файлы анализа кода и editorconfig работают вручную. При определении стилей кода [в editorconfig-файле](../ide/editorconfig-code-style-settings-reference.md) или на странице [параметров текстового редактора](../ide/code-styles-and-code-cleanup.md) вы фактически настраиваете анализаторы кода, встроенные в Visual Studio. Файлы EditorConfig также можно использовать для настройки некоторых сторонних пакетов анализаторов, таких как [FxCop Analyzer](configure-fxcop-analyzers.md).
+**Ответ**. Файлы анализа кода и editorconfig работают вручную. При определении стилей кода [в editorconfig-файле](../ide/editorconfig-code-style-settings-reference.md) или на странице [параметров текстового редактора](../ide/code-styles-and-code-cleanup.md) вы фактически настраиваете анализаторы кода, встроенные в Visual Studio. Файлы EditorConfig также можно использовать для настройки некоторых пакетов анализатора NuGet, таких как [FxCop Analyzer](configure-fxcop-analyzers.md).
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig и наборы правил
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547888"
 
 **Ответ**. Наборы правил и файлы editorconfig являются взаимоисключающими способами настройки анализаторов. Они могут сосуществовать. [Наборы правил](analyzer-rule-sets.md) позволяют включать и отключать правила и задавать их серьезность. Файлы EditorConfig предлагают другие способы настройки правил. Для средств FxCop Analyzer файлы. editorconfig позволяют [определить типы анализируемого кода](fxcop-analyzer-options.md). Для анализаторов, встроенных в Visual Studio, файлы. editorconfig позволяют [определить предпочтительные стили кода](../ide/editorconfig-code-style-settings-reference.md) для базы кода.
 
-Помимо наборов правил и файлов editorconfig, некоторые сторонние анализаторы настраиваются с помощью текстовых файлов, помеченных как [Дополнительные файлы](../ide/build-actions.md#build-action-values) для компиляторов C# и VB.
+Помимо наборов правил и файлов editorconfig, некоторые анализаторы настраиваются с помощью текстовых файлов, помеченных как [Дополнительные файлы](../ide/build-actions.md#build-action-values) для компиляторов C# и VB.
 
 > [!NOTE]
 > EditorConfig файлы нельзя использовать для настройки анализа прежних версий, тогда как наборы правил могут.
@@ -55,7 +55,7 @@ ms.locfileid: "69547888"
 
 **ВОПРОС**. В чем разница между устаревшим анализом и анализом кода на основе .NET Compiler Platform?
 
-Ответ. анализ кода на основе .NET Compiler Platform анализирует исходный код в режиме реального времени и во время компиляции, в то время как устаревший анализ анализирует двоичные файлы после завершения сборки. Дополнительные сведения см. в статье вопросы и ответы по [анализу на основе .NET Compiler Platform сравнению](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) с устаревшим анализом и [FxCop Analyzer](fxcop-analyzers-faq.md).
+Ответ **. анализ кода на основе**.NET Compiler Platform анализирует исходный код в режиме реального времени и во время компиляции, в то время как устаревший анализ анализирует двоичные файлы после завершения сборки. Дополнительные сведения см. в статье вопросы и ответы по [анализу на основе .NET Compiler Platform сравнению с устаревшим анализом](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) и [FxCop Analyzer](fxcop-analyzers-faq.md).
 
 ## <a name="see-also"></a>См. также
 

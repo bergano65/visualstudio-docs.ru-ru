@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263728"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293704"
 ---
 # <a name="install-visual-studio"></a>Установка Visual Studio
 
@@ -112,7 +112,7 @@ ms.locfileid: "66263728"
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Скачать Visual Studio 2012](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [Скачать Visual Studio 2012](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -165,7 +165,7 @@ ms.locfileid: "66263728"
  ::: moniker-end
 
 > [!TIP]
-> В любой момент после установки можно установить рабочие нагрузки или компоненты, которые не были установлены изначально. Если среда Visual Studio открыта, выберите пункт **Сервис** > **Получить средства и компоненты...**; откроется Visual Studio Installer. **Visual Studio Installer** можно также открыть из меню "Пуск". Здесь можно выбрать рабочие нагрузки или компоненты, которые нужно установить. Затем выберите **Изменить**.
+> В любой момент после установки можно установить рабочие нагрузки или компоненты, которые не были установлены изначально. Если среда Visual Studio открыта, выберите пункт **Сервис** > **Получить средства и компоненты...** ; откроется Visual Studio Installer. **Visual Studio Installer** можно также открыть из меню "Пуск". Здесь можно выбрать рабочие нагрузки или компоненты, которые нужно установить. Затем выберите **Изменить**.
 
 ## <a name="step-5---choose-individual-components-optional"></a>Шаг 5. Выбор отдельных компонентов (необязательно)
 
@@ -236,9 +236,9 @@ ms.locfileid: "66263728"
 
 3. Выберите тип проекта.
 
-   Например, чтобы [создать приложение C++](../ide/getting-started-with-cpp-in-visual-studio.md), нажмите **Установленные**, разверните узел **Visual C++**, а затем выберите тип проекта C++, который нужно создать.
+   Например, чтобы [создать приложение C++](../ide/getting-started-with-cpp-in-visual-studio.md), нажмите **Установленные**, разверните узел **Visual C++** , а затем выберите тип проекта C++, который нужно создать.
 
-   Чтобы [создать приложение C#](../get-started/csharp/tutorial-console.md), нажмите **Установленные**, разверните узел **Visual C#**, а затем выберите тип проекта C#, который нужно создать.
+   Чтобы [создать приложение C#](../get-started/csharp/tutorial-console.md), нажмите **Установленные**, разверните узел **Visual C#** , а затем выберите тип проекта C#, который нужно создать.
 
 ::: moniker-end
 
