@@ -1,7 +1,6 @@
 ---
 title: Публикация в службу приложений Azure
 ms.date: 04/02/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
@@ -12,12 +11,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: c6aa04ceb08daeb303ae6c421fe34465a9ebcda4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4ce4273b72a57a2b9456974a108809dcd73b4e0
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939424"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222733"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Публикация веб-приложения в службу приложений Azure с помощью Visual Studio для Mac
 
@@ -57,7 +56,7 @@ ms.locfileid: "62939424"
 
     Вы можете изменить подписку для службы приложений с помощью раскрывающегося списка **Подписка**.
 
-    Вы можете выбрать существующую **группу ресурсов** с помощью раскрывающегося списка или создать новую, нажав на кнопку **+**.
+    Вы можете выбрать существующую **группу ресурсов** с помощью раскрывающегося списка или создать новую, нажав на кнопку **+** .
 
     В качестве плана службы приложений выберите существующий или создайте новый, выбрав переключатель **Пользовательский**.
 

@@ -1,9 +1,9 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Перенос из двоичный анализ (FxCop) для анализа источника (анализаторы FxCop)
+title: Миграция из двоичного анализа (FxCop) в анализ исходного кода (FxCop Analyzer)
 metadata:
-  title: Документация по переносу FxCop
-  description: 'Сведения о переносе из прежних версий двоичный анализ (FxCop) на источник анализа (анализаторы FxCop), при анализе кода.'
+  title: Документация по миграции FxCop
+  description: 'Узнайте, как перейти от устаревшего двоичного анализа (FxCop) к исходному анализу (FxCop Analyzer) при анализе кода.'
   ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
@@ -14,19 +14,19 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: 'Узнайте, как анализировать код в первый раз или как перенести из двоичный анализ (FxCop) в новый способ анализа управляемого кода с помощью анализа источника (анализаторы FxCop).'
+  description: 'Узнайте, как анализировать код в первый раз или как выполнить миграцию из двоичного анализа (FxCop) к новому способу анализа управляемого кода с помощью анализа источника (FxCop Analyzer).'
   aside:
     image:
-      alt: Распространенные логотип задачи управления
+      alt: Эмблема общих задач управления
       height: 133
       width: 48
       src: 'https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg'
     title: null
 sections:
-  - title: Вопросы и ответы
+  - title: Часто задаваемые вопросы
     items:
-      - html: Получите ответы на некоторые <a href="fxcop-analyzers-faq.md">ответы на вопросы о</a> о различиях между двоичный анализ FxCop и анализ источника с помощью анализаторов FxCop.
-  - title: Если вы еще не работали с анализом кода...
+      - html: Получите ответы на некоторые <a href="fxcop-analyzers-faq.md">часто задаваемые вопросы</a> о различиях между двоичным анализом FxCop и анализом исходного кода с помощью средств FxCop Analyzer.
+  - title: Если вы не знакомы с анализом кода...
     items:
       - type: list
         style: cards
@@ -34,54 +34,54 @@ sections:
         columns: 2
         items:
           - href: roslyn-analyzers-overview.md
-            html: '<p>Узнайте, что такое анализаторы.</p>'
+            html: '<p>Узнайте, какие анализаторы доступны.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: Обзор анализаторов
           - href: install-roslyn-analyzers.md
-            html: <p>Сведения об установке анализаторы как пакет NuGet или расширения Visual Studio.</p>
+            html: '<p>Узнайте, как установить анализаторы как пакет NuGet или расширение Visual Studio.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Установка анализаторов
+            title: Установить анализаторы
           - href: use-roslyn-analyzers.md
-            html: '<p>Узнайте, как использовать анализаторы и запретить для нарушений C# или Visual Basic.</p>'
+            html: '<p>Сведения об использовании анализаторов и подавлении нарушений для C# или Visual Basic кода.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
-            title: Задайте уровень серьезности правила и отключить ошибки
+            title: Установка серьезности правила и отключение ошибок
           - href: 'use-roslyn-analyzers.md#command-line-usage'
-            html: <p>Сведения об использовании анализаторов из командной строки.</p>
+            html: '<p>Узнайте, как использовать анализаторы из командной строки.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: Использование командной строки
-  - title: Если вы сейчас используете двоичный анализ (FxCop)...
+  - title: Если сейчас вы используете двоичный анализ (FxCop)...
     items:
       - type: list
         style: cards
         className: cardsM
         columns: 2
         items:
-          - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>Ознакомьтесь с различиями двоичный анализ (FxCop) и анализ источника (анализаторы FxCop).</p>
+          - href: 'roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis'
+            html: <p>Изучите различия между двоичным анализом (FxCop) и анализом исходного кода (FxCop Analyzer).</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-            title: Чем отличается?
+            title: Что отличается?
           - href: install-fxcop-analyzers.md
             html: '<p>Узнайте, как установить пакет анализатора FxCop.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: "Установка анализаторов\_FxCop"
           - href: fxcop-rule-port-status.md
-            html: '<p>Список правил двоичный анализ (FxCop), которые были перенесены в анализ источника (анализаторы FxCop).</p>'
+            html: '<p>Список правил двоичного анализа (FxCop), перенесенных в анализ исходного кода (FxCop Analyzer).</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
-            title: Правила перенесенном и unported
+            title: Перенесенные и неперенесенные правила
           - href: 'use-roslyn-analyzers.md#command-line-usage'
-            html: '<p>Если обычно выполняется анализ кода из командной строки, сведения об использовании анализаторов из командной строки.</p>'
+            html: '<p>Если вы обычно выполняете анализ кода из командной строки, Узнайте, как использовать анализаторы из командной строки.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: Использование командной строки
           - href: analyzer-rule-sets.md
-            html: <p>Дополнительные сведения о наборах правил анализатора пакетов.</p>
+            html: <p>Сведения о наборах правил пакета анализатора.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
             title: Наборы правил
@@ -93,12 +93,12 @@ sections:
         columns: 2
         items:
           - href: code-analysis-for-c-cpp-overview.md
-            html: '<p>Узнайте, как запустить анализ кода для машинного кода C++. Анализа управляемого кода C++ является устаревшим.</p>'
+            html: '<p>Узнайте, как выполнять анализ кода в машинном C++ коде. Анализ управляемого C++ кода является устаревшим.</p>'
             image:
               src: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
             title: Анализ кода C++
           - href: code-metrics-values.md
-            html: '<p>Узнайте, как получить метрики кода. Взаимодействие с пользователем для метрик кода остается неизменной.</p>'
+            html: '<p>Узнайте, как получить метрики кода. Взаимодействие с пользователем для метрик кода остается неизменным.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_data-collection.svg'
             title: Метрики кода

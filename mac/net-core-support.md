@@ -3,14 +3,14 @@ title: Поддержка .NET Core
 description: В этом документе перечислены версии .NET Core, поддерживаемые Visual Studio для Mac
 author: sayedihashimi
 ms.author: sayedha
-ms.date: 06/13/2019
+ms.date: 08/20/2019
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 325489f243e6942cf02df406937f4d19cd21ed0d
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5939978b7e823f4430fec2f9a73d593b0a15d9ed
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681745"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108044"
 ---
 # <a name="net-core-support"></a>Поддержка .NET Core
 
@@ -24,7 +24,8 @@ ms.locfileid: "68681745"
 |Начиная с версии 2.2.200 |✔︎|✔︎|✔︎|
 |Версия 3.0 (до предварительной версии 3) | | | |
 |Версия 3.0 (предварительная версия 3, 4, 5) |✔︎|✔︎|✔︎|
-|Версия 3.0 (предварительная версия 6+) | |✔︎|✔︎|
+|Версия 3.0 (предварительная версия 6, 7) | |✔︎|✔︎|
+|Версия 3.0 (предварительная версия 8 и выше) | | |✔︎|
 
 > [!IMPORTANT]
 > Если вы ранее использовали .NET Core версии 2.2.1xx с Visual Studio для Mac 8.0, необходимо вручную выполнить обновление до поддерживаемой версии .NET Core, как указано в таблице выше. Рекомендуется версия [2.1.700](https://dotnet.microsoft.com/download/dotnet-core/2.1) или [2.2.300](https://dotnet.microsoft.com/download/dotnet-core/2.2).

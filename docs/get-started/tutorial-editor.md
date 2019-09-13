@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 913a5a08dc467ea23d22c2a08a23abfe70b9a736
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6741b40925f5d9914152d396be4686d166bf222
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943847"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180199"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
@@ -32,7 +32,7 @@ ms.locfileid: "62943847"
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+> Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads), если еще не сделали этого.
 
 ::: moniker-end
 

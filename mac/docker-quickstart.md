@@ -1,15 +1,15 @@
 ---
-title: Начало работы с Docker в Visual Studio для Mac
+title: Начало работы с Docker
 description: Сведения о добавлении Docker в проекты с помощью Visual Studio для Mac
 author: asb3993
 ms.author: amburns
 ms.date: 06/17/2019
-ms.openlocfilehash: b539de8159c1f53543b195f90610017bf2cee873
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: b456b3d285c167f97570c39d9eb6fd1abfc27e45
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691701"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872183"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>Начало работы с Docker в Visual Studio для Mac
 
@@ -73,7 +73,7 @@ ENTRYPOINT ["dotnet", "DockerDemo.dll"]
 
 > [!TIP]
 > Во время первого запуска после установки Docker Desktop может появиться следующая ошибка при попытке отладки: `Cannot start service dockerdemo: Mounts denied`
-> 
+>
 > Добавьте `/usr/local/share/dotnet/sdk/NuGetFallbackFolder` на вкладку общего доступа в Docker Desktop:
 >
 > ![Добавление папки NuGetFallbackFolder в раздел общего доступа](media/docker-quickstart-5.png)

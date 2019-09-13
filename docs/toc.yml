@@ -350,8 +350,6 @@
                     - name: Обзор
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
-                    - name: Добавление проверки на null для всех параметров
-                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Изменение сигнатуры метода
                       href: ide/reference/change-method-signature.md
                     - name: Преобразование анонимного типа в класс
@@ -414,6 +412,8 @@
                       href: ide/reference/use-block-body-lambda.md
                     - name: 'Неиспользуемые назначения, переменные и параметры'
                       href: ide/reference/unused-values-parameters.md
+                    - name: Перенос и выравнивание цепочек вызовов
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: 'Параметры переноса, отступа и выравнивания'
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: Пошаговое руководство. Создание кода в результате использования
@@ -996,6 +996,12 @@
                       href: ide/reference/options-text-editor-xml-formatting.md
                     - name: Прочее
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
+            - name: Конструктор Windows Forms
+              items:
+                - name: Общие
+                  href: ide/reference/options-windows-forms-designer.md
+                - name: Настройка пользовательского интерфейса данных
+                  href: ide/reference/options-windows-forms-designer-data-ui-customization.md
             - name: Конструктор XAML
               href: ide/reference/xaml-designer.md
         - name: окно выходных данных

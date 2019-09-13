@@ -11,40 +11,40 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 284f33d9d7af885958ed13101e1449edc5c8f2be
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820830"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551085"
 ---
-# <a name="install-net-compiler-platform-analyzers"></a>Установка анализаторов .NET Compiler Platform
+# <a name="install-net-compiler-platform-code-analyzers"></a>Установка .NET Compiler Platform анализаторов кода
 
-Visual Studio включает набор базовых платформы компилятора .NET (*Roslyn*) анализаторы. Эти анализаторы всегда включены. Можно установить дополнительные анализаторы как пакеты NuGet или расширения Visual Studio в *VSIX* файлов.
+Visual Studio включает в себя базовый набор анализаторов .NET Compiler Platform (*Roslyn*). Эти анализаторы всегда включены. Дополнительные анализаторы можно установить как в виде пакетов NuGet, так и в виде расширений Visual Studio в *VSIX* Files.
 
-## <a name="to-install-nuget-analyzer-packages"></a>Чтобы установить пакеты NuGet анализатора
+## <a name="to-install-nuget-analyzer-packages"></a>Установка пакетов анализатора NuGet
 
-1. Найти пакет анализатора, который вы хотите установить на www.nuget.org.
+1. Найдите пакет анализатора, который вы хотите установить на www.nuget.org.
 
-   Например, может потребоваться [установить анализаторы Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) по проверке кода для проблем безопасности и производительности, среди прочего. Также можно установить [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) для поиска проблем в базе кода.
+   Например, можно [установить анализаторы Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) для проверки кода на наличие проблем безопасности и производительности, а также для других пользователей. Или установите [стилекопанализерс](https://www.nuget.org/packages/stylecop.analyzers/) , чтобы найти проблемы с стилями в базе кода.
 
-2. Установка пакета в Visual Studio, с помощью [консоль диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) или [пользовательский Интерфейс диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+2. Установите пакет в Visual Studio с помощью [консоли диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) или [пользовательского интерфейса диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
-   > www.nuget.org страницы для каждого пакета анализатора показывает команду, чтобы вставить в **консоль диспетчера пакетов**. Есть даже под рукой кнопку, чтобы скопировать текст в буфер обмена.
+   > [www.nuget.org](www.nuget.org) страницы для каждого пакета анализатора показывает команду, чтобы вставить в **консоль диспетчера пакетов**. Существует даже удобная кнопка для копирования текста в буфер обмена.
 
-   Сборки анализатора установлены и отображаются в **обозревателе решений** под **ссылки** > **анализаторы**.
+   Сборки анализатора устанавливаются и отображаются в **Обозреватель решений** в разделе анализаторы **ссылок** > .
 
-## <a name="to-install-vsix-analyzers"></a>Чтобы установить VSIX анализаторы
+## <a name="to-install-vsix-analyzers"></a>Установка анализаторов VSIX
 
 ::: moniker range="vs-2017"
 
-1. В Visual Studio выберите **средства** > **расширения и обновления**.
+1. В Visual Studio выберите **инструменты** > **расширения и обновления**.
 
    Появится диалоговое окно **Расширения и обновления**.
 
    > [!NOTE]
-   > Кроме того, можно найти и загрузить анализатор расширения непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+   > Кроме того, вы можете найти и скачать расширение анализатора непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
 ::: moniker-end
 
@@ -52,51 +52,51 @@ Visual Studio включает набор базовых платформы ко
 
 1. В Visual Studio выберите **расширения** > **Управление расширениями**.
 
-   **Управление расширениями** откроется диалоговое окно.
+   Откроется диалоговое окно **Управление расширениями** .
 
    > [!NOTE]
-   > Кроме того, можно найти и загрузить анализатор расширения непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+   > Кроме того, вы можете найти и скачать расширение анализатора непосредственно из [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
 ::: moniker-end
 
-2. Разверните **Online** в левой области, а затем выберите **Visual Studio Marketplace**.
+2. В левой области разверните узел в **сети** , а затем выберите **Visual Studio Marketplace**.
 
-3. В поле поиска введите имя анализатора расширения, который вы хотите установить. Например, может потребоваться [установить анализаторы Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) по проверке кода для проблем безопасности и производительности, среди прочего.
+3. В поле поиска введите имя расширения анализатора, которое требуется установить. Например, можно [установить анализаторы Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) для проверки кода на наличие проблем безопасности и производительности, а также для других пользователей.
 
-4. Выберите **загрузить**.
+4. Выберите **скачать**.
 
-   Расширение загружается.
+   Расширение скачивается.
 
-5. Выберите **ОК** чтобы закрыть диалоговое окно, а затем закройте все экземпляры Visual Studio для запуска **установщик VSIX**.
+5. Нажмите кнопку **ОК** , чтобы закрыть диалоговое окно, а затем закройте все экземпляры Visual Studio, чтобы запустить **установщик VSIX**.
 
-   **Установщик VSIX** откроется диалоговое окно.
+   Откроется диалоговое окно **установщик VSIX** .
 
-   ![Установщик VSIX для анализа кода Microsoft](media/vsix-installer-code-analysis.png)
+   ![Установщик VSIX для анализа кода Майкрософт](media/vsix-installer-code-analysis.png)
 
-6. Выберите **изменить** чтобы начать установку.
+6. Нажмите кнопку **изменить** , чтобы начать установку.
 
-7. После одну-две минуты не завершит установку. Нажмите кнопку **Закрыть**.
+7. Через одну или две минуты установка завершается. Нажмите кнопку **Закрыть**.
 
 8. Снова откройте Visual Studio.
 
 ::: moniker range="vs-2017"
 
-Если вы хотите проверить, является ли расширение установлена, выберите **средства** > **расширения и обновления**. В **расширения и обновления** выберите **установленные** категории слева и выполните поиск расширения по имени.
+Если вы хотите проверить, установлено ли расширение, выберите **инструменты** > **расширения и обновления**. В диалоговом окне **расширения и обновления** выберите категорию **установленные** слева и найдите расширение по имени.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Если вы хотите проверить, является ли расширение установлена, выберите **расширения** > **Управление расширениями**. В **Управление расширениями** выберите **установленные** категории слева и выполните поиск расширения по имени.
+Если требуется проверить, установлено ли расширение, выберите **расширения** > **Управление расширениями**. В диалоговом окне **Управление расширениями** выберите категорию **установленные** слева и найдите расширение по имени.
 
 ::: moniker-end
 
 ## <a name="next-steps"></a>Следующие шаги
 
 > [!div class="nextstepaction"]
-> [Использование анализаторов Roslyn в Visual Studio](../code-quality/use-roslyn-analyzers.md)
+> [Использование анализаторов кода в Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
 ## <a name="see-also"></a>См. также
 
-- [Обзор анализаторов Roslyn в Visual Studio](../code-quality/roslyn-analyzers-overview.md)
+- [Обзор анализаторов кода в Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Установка анализаторов FxCop](../code-quality/install-fxcop-analyzers.md)

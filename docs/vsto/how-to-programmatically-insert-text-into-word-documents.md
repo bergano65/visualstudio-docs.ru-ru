@@ -1,6 +1,6 @@
 ---
-title: Практическое руководство. Программная Вставка текста в документы Word
-ms.date: 02/02/2017
+title: Практическое руководство. Программная вставка текста в документы Word
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8ff5e0314e9834bd3d0f048bc82780d7e4af073d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412572"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551814"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Практическое руководство. Программная Вставка текста в документы Word
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Практическое руководство. Программная вставка текста в документы Word
   Существует три основных способа вставки текста в документы Microsoft Office Word:
 
 - вставка текста в диапазон;
@@ -37,7 +37,9 @@ ms.locfileid: "63412572"
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="insert-text-in-a-range"></a>Вставка текста в диапазон
+[!include[Add-ins note](includes/addinsnote.md)]
+
+## <a name="insert-text-in-a-range"></a>Вставить текст в диапазон
  Используйте свойство <xref:Microsoft.Office.Interop.Word.Range.Text%2A> объекта <xref:Microsoft.Office.Interop.Word.Range> для вставки текста в документ.
 
 ### <a name="to-insert-text-in-a-range"></a>Вставка текста в диапазон
@@ -86,7 +88,7 @@ ms.locfileid: "63412572"
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]
 
-## <a name="insert-text-using-typetext"></a>Вставка текста с помощью метода TypeText
+## <a name="insert-text-using-typetext"></a>Вставка текста с помощью TypeText
  Метод <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> вставляет текст в выделение. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> ведет себя по-разному в зависимости от параметров, заданных на компьютере пользователя. Код в следующей процедуре объявляет объектную переменную <xref:Microsoft.Office.Interop.Word.Selection> , а также отключает параметр **Overtype** , если он включен. Если параметр **Overtype** включен, любой текст рядом с курсором будет перезаписан.
 
 ### <a name="to-insert-text-using-the-typetext-method"></a>Вставка текста с помощью метода TypeText
@@ -118,7 +120,7 @@ ms.locfileid: "63412572"
     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]
 
-   Можно также использовать <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> метод <xref:Microsoft.Office.Interop.Word.Selection> объект, который имитирует **Backspace** на клавиатуре. Но когда дело доходит до вставки и изменения текста, объект <xref:Microsoft.Office.Interop.Word.Range> предоставляет больше возможностей для управления.
+   Можно также использовать <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> метод <xref:Microsoft.Office.Interop.Word.Selection> объекта, который имитирует функциональность клавиши **Backspace** на клавиатуре. Но когда дело доходит до вставки и изменения текста, объект <xref:Microsoft.Office.Interop.Word.Range> предоставляет больше возможностей для управления.
 
    В следующем примере показан полный код. Чтобы использовать этот пример, запустите код из класса `ThisDocument` или `ThisAddIn` в своем проекте.
 
@@ -127,5 +129,5 @@ ms.locfileid: "63412572"
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Программное форматирование текста в документах](../vsto/how-to-programmatically-format-text-in-documents.md)
-- [Практическое руководство. Программное определение и выделение диапазонов в документах](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Практическое руководство. Программное расширение диапазонов в документах](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Практическое руководство. Определение и выбор диапазонов в документах программными средствами](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [Практическое руководство. Расширение диапазонов документов программными средствами](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

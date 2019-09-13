@@ -1,26 +1,22 @@
 ---
 title: Повысьте свои навыки обработки и анализа данных, используя преимущество DataCamp в подписках Visual Studio. | Документы Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Сведения о преимуществе DataCamp Training, входящем в некоторые подписки Visual Studio.
-ms.openlocfilehash: 5f5b327bb5b1c328fe746fdbafc1a7550eefacd6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64176f5a58641bf51434c99eee914a8ac176da56
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825348"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681644"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Преимущество DataCamp Training в подписках Visual Studio
-
 К подходящим подпискам Visual Studio относятся подписки на DataCamp.  С помощью DataCamp можно получить все необходимые навыки обработки и анализа данных, работая в браузере. Вы выбираете, когда и чему вы учитесь. Обучаться обработке и анализу данных стало намного проще, так как вам не нужно устанавливать программное обеспечение и выполнять особые требования к оборудованию.
 
-Срок действия преимущества DataCamp зависит от подписки Visual Studio.
-
 ## <a name="activation-steps"></a>Процедура активации
-
 1. Выполните вход на странице [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Найдите плитку преимущества DataCamp в категории "Профессиональное развитие" и нажмите кнопку **Активировать**.
@@ -28,9 +24,7 @@ ms.locfileid: "67825348"
    > ![Плитка преимущества DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. На странице DataCamp можно создать учетную запись.  Вы можете ввести адрес электронной почты и пароль либо выбрать вход с помощью существующей учетной записи Facebook, LinkedIn или Google.  Указав данные для входа, нажмите кнопку **Начать работу**.
-   > [!div class="mx-imgBorder"]
-   > ![Создание учетной записи DataCamp](_img/vs-datacamp/vs-datacamp-create-account.png)
-   >
+
    > [!NOTE]
    > На начальной стадии создания учетной записи вы можете получить следующее сообщение об ошибке: "Ой!  Недействительный промокод, или срок действия промокода истек".  Это связано с тем, что срок действия создаваемого промокода истекает через несколько минут.  Если вы получили это сообщение, просто вернитесь на страницу [Преимущества](https://my.visualstudio.com/benefits) и щелкните ссылку **Активировать** на плитке преимущества DataCamp.
 
@@ -62,11 +56,10 @@ ms.locfileid: "67825348"
 > ![Продолжение обучения в DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Право на участие
-
 | Уровень подписки                                                 |     Каналы                                            | Преимущество                                                          | Возможность возобновления    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия | 3 месяца       |  Нет.  Доступно только для новых подписчиков          |
-| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | 3 месяца                                                            |  Нет.  Доступно только для новых подписчиков           |
+| Visual Studio Enterprise (ценовая категория "Стандартный")   | Корпоративная лицензия, Azure, розничная версия | 3 месяца       |  Нет.  Доступно только для новых подписчиков          |
+| Visual Studio Professional (ценовая категория "Стандартный") | Корпоративная лицензия, Azure, розничная версия                                       | 3 месяца                                                            |  Нет.  Доступно только для новых подписчиков           |
 | Visual Studio Test Professional (стандартная)                         | Корпоративная лицензия, розничная версия                                              | 3 месяца                                             |  Нет.  Доступно только для новых подписчиков           |
 | MSDN Platforms (стандартная)                                          | Корпоративная лицензия, розничная версия                                              | 3 месяца                                              |  Нет.  Доступно только для новых подписчиков           |
 | Visual Studio Enterprise (ценовая категория "Стандартный")  | Не для перепродажи (NFR) <sup>1</sup> |Недоступно  | Н/Д |
@@ -86,3 +79,9 @@ ms.locfileid: "67825348"
   - [Отправка запроса на получение поддержки](https://support.datacamp.com/hc/requests/new)
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о Visual Studio IDE, Azure DevOps Services или других продуктах или службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Следующие шаги
+Ознакомьтесь с другими возможностями профессиональной разработки в вашей подписке:
+- [Pluralsight](vs-pluralsight.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)
+- [Журнал MSDN Magazine](vs-msdn.md)

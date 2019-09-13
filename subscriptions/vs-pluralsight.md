@@ -1,17 +1,17 @@
 ---
 title: Преимущество Pluralsight в подписках Visual Studio | Документация Майкрософт
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/25/2019
+ms.author: lank
+manager: lank
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: Сведения об учебной подписке Pluralsight, входящей в выбранные подписки Visual Studio.
-ms.openlocfilehash: bc80d8d799a0cca92bfa78cb1e96424f227fe9ef
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784881"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787657"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -32,36 +32,27 @@ ms.locfileid: "67784881"
    > **"Обратите внимание:   если вы ранее активировали другое предложение Pluralsight в рамках своей подписки Visual Studio, этот код не дает вам права создавать новую учетную запись Pluralsight".**
 
 2. Вы увидите уведомление о том, что код купона успешно получен.  Щелкните **Активировать**.
-   > [!div class="mx-imgBorder"]
-   > ![Активация преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
 3. Вы перейдете на страницу Pluralsight для преимущества, которое включено в вашу подписку Visual Studio.
    - Введите запрашиваемые на форме контактные данные.
    - Установите флажок, чтобы принять условия политики использования и конфиденциальности.
    - Нажмите кнопку **I agree, activate benefit** (Я принимаю условия активации преимущества).
-     > [!div class="mx-imgBorder"]
-     > ![Активация преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
-     > [!div class="mx-imgBorder"]
-     > ![Условия использования преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-terms.png)
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight — активация преимущества](_img/vs-pluralsight/vs-pluralsight-create-account.png)
 
 5. Настройка вашей учетной записи может занять определенное время.  После ее завершения на странице появится подтверждение, а вам будет направлено сообщение электронной почты с данными для входа.  Это сообщение будет отправлено на псевдоним электронной почты, указанный при создании учетной записи.  Если вы не получаете это сообщение, проверьте папку нежелательной почты.
-   > [!div class="mx-imgBorder"]
-   > ![Подтверждение преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
-   >
+
    > [!NOTE]
    > Если ваша учетная запись не имеет права использовать новые предложения, вы получите сообщение электронной почты о том, что при создании учетной записи возникла проблема, связанная с отсутствием нужных прав.  Также там будут приведены сведения, необходимые для обращения в службу поддержки Pluralsight, специалисты которой смогут ответить на любые ваши вопросы, связанные с учетной записью.
+   
 
 6. После успешного создания учетной записи в полученном вами сообщении электронной почты будет указано ваше имя пользователя и приведен запрос на создание пароля.  Введите пароль и его подтверждение, после чего щелкните **Войти в Pluralsight**.
    > [!div class="mx-imgBorder"]
    > ![Приветственное сообщение для преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
 
 7. Введите имя пользователя, указанное в приветственном сообщении, и созданный пароль, после чего щелкните **Войти**.
-   > [!div class="mx-imgBorder"]
-   > ![Вход в преимущество Pluralsight](_img/vs-pluralsight/vs-pluralsight-login.png)
 
 8. Вот и все!  Теперь вы готовы начать обучение, выбирая нужные курсы Pluralsight среди тысяч доступных!
-   > [!div class="mx-imgBorder"]
-   > ![Главная страница преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>Право на участие
 

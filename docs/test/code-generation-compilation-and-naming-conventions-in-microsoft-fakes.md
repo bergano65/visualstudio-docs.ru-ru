@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432300"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918460"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Формирование и компиляция кода, а также соглашения об именовании в Microsoft Fakes
 
@@ -110,9 +110,9 @@ ms.locfileid: "66432300"
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **Внутренние типы в сборках со строгими именами**
+**Внутренние типы в сборках со строгими именами**
 
- Если сборка с оболочкой совместимости имеет строгое имя и требуется доступ к внутренним типам сборки:
+Если сборка с оболочкой совместимости имеет строгое имя и требуется доступ к внутренним типам сборки:
 
 - Как тестовая сборка, так и сборка Fakes должна иметь строгое имя.
 
@@ -179,11 +179,11 @@ ms.locfileid: "66432300"
 
 В среде Team Build все выходные данные сборки объединяются в одном каталоге. Если Fakes используется в нескольких проектах, может возникнуть ситуация, когда сборки Fakes из разных версий переопределяют друг друга. Например, как сборки Fakes TestProject1 *mscorlib.dll* из .NET Framework 2.0, так и сборки Fakes TestProject2 *mscorlib.dll* для .NET Framework 4 будут выводить данные в сборку *mscorlib.Fakes.dll*.
 
- Чтобы избежать этой проблемы, платформа Fakes должна автоматически создавать учитывающие версию имена сборок Fakes для ссылок, не относящихся к проектам, при добавлении файлов *FAKES*. Учитывающее версию имя сборки Fakes внедряет номер версии при создании имени сборки Fakes:
+Чтобы избежать этой проблемы, платформа Fakes должна автоматически создавать учитывающие версию имена сборок Fakes для ссылок, не относящихся к проектам, при добавлении файлов *FAKES*. Учитывающее версию имя сборки Fakes внедряет номер версии при создании имени сборки Fakes:
 
- В случае со сборкой Fakes MyAssembly и версией 1.2.3.4 имя будет иметь вид MyAssembly.1.2.3.4.Fakes.
+В случае со сборкой Fakes MyAssembly и версией 1.2.3.4 имя будет иметь вид MyAssembly.1.2.3.4.Fakes.
 
- Можно изменить или удалить эту версию, изменив атрибут Version элемента Assembly в файле *FAKES*:
+Можно изменить или удалить эту версию, изменив атрибут Version элемента Assembly в файле *FAKES*:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Соглашения об именовании для типов заглушек и типов оболочек
 
- **Пространства имен**
+**Пространства имен**
 
 - К пространству имен добавляется суффикс .Fakes.
 

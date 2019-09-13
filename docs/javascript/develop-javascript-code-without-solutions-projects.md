@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1541f3608aef33cbd286a8c96257eb191712e245
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960582"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681284"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Разработка кода JavaScript и TypeScript в Visual Studio без решений или проектов
 
@@ -77,6 +77,7 @@ ms.locfileid: "62960582"
 * Mocha ([mochajs.org](http://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
+* Jest ([jestjs.io](https://jestjs.io/))
 
 После открытия обозревателя тестов (выберите **Тест** > **Windows** > **Обозреватель тестов**) Visual Studio обнаруживает и отображает тесты.
 

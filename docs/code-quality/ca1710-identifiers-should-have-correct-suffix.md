@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 154d7d36c949ac361f938aa7d8608251c2a9adee
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 93fd892baaf54d79c3a2387b8961a2f4c1bb2cdb
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841915"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547322"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710. Идентификаторы должны иметь правильные суффиксы
 
@@ -27,85 +27,85 @@ ms.locfileid: "65841915"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
-|Категория|Microsoft.Naming|
+|Категория|Microsoft. Naming|
 |Критическое изменение|Критическое|
 
 ## <a name="cause"></a>Причина
 
-Идентификатор не иметь правильные суффиксы.
+Идентификатор имеет неправильный суффикс.
 
-По умолчанию это правило считывает только видимое извне идентификаторов, но это [можно настроить](#configurability).
+По умолчанию это правило рассматривает только видимые извне идентификаторы, но это можно [настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
 
-По правилам имена типов, расширяющих определенные базовые типы или реализующих определенные интерфейсы, а также типы, производные от этих типов имеют суффикс, связанный с базовым типом или интерфейсом.
+По соглашению имена типов, которые расширяют определенные базовые типы или реализуют определенные интерфейсы, или типы, производные от этих типов, имеют суффикс, связанный с базовым типом или интерфейсом.
 
-Соглашения об именовании обеспечивают единообразие библиотек, предназначенных среда CLR. Это уменьшает обучения, необходимый для новых библиотек программного обеспечения и повышает уверенность клиента в том, что библиотека была разработана тому, кто имеет опыт в разработке управляемого кода.
+Соглашения об именовании обеспечивают общий вид библиотек, предназначенных для среды CLR. Это сокращает кривую обучения, необходимую для новых библиотек программного обеспечения, и повышает уверенность пользователей в том, что библиотека была разработана кем-то, кто имеет опыт разработки управляемого кода.
 
-В следующей таблице перечислены базовые типы и интерфейсы, которые имеют связанные суффиксы.
+В следующей таблице перечислены базовые типы и интерфейсы, имеющие связанные суффиксы.
 
 |Базовый тип или интерфейс|Суффикс|
 |--------------------------|------------|
 |<xref:System.Attribute?displayProperty=fullName>|Атрибут|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|Исключение|
-|<xref:System.Collections.ICollection?displayProperty=fullName>|Коллекция|
+|<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Словарь|
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Коллекция|
-|<xref:System.Collections.Queue?displayProperty=fullName>|Коллекции или очереди|
-|<xref:System.Collections.Stack?displayProperty=fullName>|Коллекции или стека|
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Коллекция|
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
+|<xref:System.Collections.Queue?displayProperty=fullName>|Коллекция или очередь|
+|<xref:System.Collections.Stack?displayProperty=fullName>|Коллекция или стек|
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Словарь|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
-|<xref:System.Data.DataTable?displayProperty=fullName>|Коллекции или DataTable|
+|<xref:System.Data.DataTable?displayProperty=fullName>|Коллекция или DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|Поток|
 |<xref:System.Security.IPermission?displayProperty=fullName>|Разрешение|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Условие|
-|Делегат обработчика событий.|Обработчик событий|
+|Делегат обработчика событий.|EventHandler|
 
-Типы, реализующие <xref:System.Collections.ICollection> и обобщенный тип структуры данных, такие как словарь, стек или очереди, допускаются имена, которые предоставляют понятные сведения об предполагаемое использование типа.
+Типы, реализующие <xref:System.Collections.ICollection> и являются обобщенным типом структуры данных, например словарем, стеком или очередью, допускаются имена, которые предоставляют осмысленные сведения о предполагаемом использовании типа.
 
-Типы, реализующие <xref:System.Collections.ICollection> и коллекцию определенных элементов имеют имена со словом «Collection». Например, коллекция <xref:System.Collections.Queue> объектов будет иметь имя «QueueCollection». Суффикс «Collection» означает, что элементы коллекции могут быть перечислены с помощью `foreach` (`For Each` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) инструкции.
+Типы, реализующие <xref:System.Collections.ICollection> и являющиеся коллекцией конкретных элементов, имеют имена, заканчивающиеся словом "Collection". Например, коллекция <xref:System.Collections.Queue> объектов будет иметь имя "куеуеколлектион". Суффикс Collection означает, что члены коллекции можно перечислить с помощью `foreach` инструкции (`For Each` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
-Типы, реализующие <xref:System.Collections.IDictionary> имена которых заканчиваются словом «Словарь», даже если тип также реализует <xref:System.Collections.IEnumerable> или <xref:System.Collections.ICollection>. Соглашения об именах суффикс «Collection» и «Словарь» позволяют пользователям различать два шаблона перечисления.
+Типы, реализующие <xref:System.Collections.IDictionary> , имеют имена, заканчивающиеся словом "Dictionary", даже если тип также <xref:System.Collections.IEnumerable> реализует <xref:System.Collections.ICollection>или. Соглашения об именовании суффиксов "Collection" и "Dictionary" позволяют пользователям различать следующие два шаблона перечисления.
 
-Типы с суффиксом «Collection» следовать этому шаблону перечисления.
+Типы с суффиксом "Collection" следуют этому шаблону перечисления.
 
 ```
 foreach(SomeType x in SomeCollection) { }
 ```
 
-Типы с суффиксом «Словарь» следовать этому шаблону перечисления.
+Типы с суффиксом "Dictionary" следуют этому шаблону перечисления.
 
 ```
 foreach(SomeType x in SomeDictionary.Values) { }
 ```
 
-Объект <xref:System.Data.DataSet> объект представляет собой коллекцию из <xref:System.Data.DataTable> объекты, которые состоят из наборов <xref:System.Data.DataColumn?displayProperty=fullName> и <xref:System.Data.DataRow?displayProperty=fullName> objects, наряду с другими пользователями. Эти коллекции реализуют <xref:System.Collections.ICollection> через базовый <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> класса.
+Объект состоит из <xref:System.Data.DataTable> коллекции объектов, <xref:System.Data.DataColumn?displayProperty=fullName> которая состоит из коллекций объектов и, а <xref:System.Data.DataRow?displayProperty=fullName> не из других. <xref:System.Data.DataSet> Эти коллекции реализуют <xref:System.Collections.ICollection> через базовый <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> класс.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Переименуйте тип таким образом, чтобы он имел правильный термин.
+Переименуйте тип так, чтобы он был суффиксом с правильным термином.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Его можно безопасно подавить предупреждение, используйте суффикс «Collection», если тип является структурой обобщенных данных, которую можно расширить или который будет содержать произвольный набор различных элементов. В этом случае имя, которое предоставляет важную информацию о реализации, производительности или других характеристик структуры данных может оказаться целесообразным (например, BinaryTree). В случаях, когда тип представляет коллекцию определенного типа (например, StringCollection), не отключайте предупреждение из этого правила, так как суффикс указывает, что тип может быть перечислены с помощью `foreach` инструкции.
+Можно спокойно отключить предупреждение, чтобы использовать суффикс "Collection", если тип представляет собой обобщенную структуру данных, которая может быть расширена или будет содержать произвольный набор различных элементов. В этом случае имя, которое предоставляет осмысленные сведения о реализации, производительности или других характеристиках структуры данных, может быть осмысленным (например, Бинаритри). В случаях, когда тип представляет коллекцию определенного типа (например, StringCollection), не следует отключать предупреждение из этого правила, так как суффикс указывает, что тип можно перечислить с помощью `foreach` инструкции.
 
-Для других суффиксов не отключайте предупреждение из этого правила. Суффикс позволяет быть очевидно из имени типа.
+Для других суффиксов не следует отключать предупреждение из этого правила. Суффикс позволяет очевидное использование из имени типа.
 
-## <a name="configurability"></a>Возможность настройки
+## <a name="configurability"></a>Возможности настройки
 
-Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+Если вы используете это правило из [анализаторов FxCop](install-fxcop-analyzers.md) (а не для анализа прежних версий), можно настроить, на какие части базы кода следует запускать это правило, в зависимости от их доступности. Например, чтобы указать, что правило должно выполняться только для поверхности API, не являющейся общедоступной, добавьте следующую пару "ключ-значение" в файл. editorconfig в проекте:
 
 ```ini
 dotnet_code_quality.ca1710.api_surface = private, internal
 ```
 
-Этот параметр для только что это правило, для всех правил или для всех правил можно настроить в этой категории (именования). Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
+Этот параметр можно настроить только для этого правила, для всех правил или для всех правил в этой категории (именование). Дополнительные сведения см. в статье [Настройка средств FxCop Analyzer](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Связанные правила
 
-[CA1711: Идентификаторы не должны иметь неверных суффиксов](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711: Идентификаторы не должны иметь неправильные суффиксы](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>См. также
 

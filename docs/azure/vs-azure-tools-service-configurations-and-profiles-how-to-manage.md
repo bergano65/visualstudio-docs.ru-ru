@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 353b98ae0ab186a4ff665566a8f3b7600db66274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b91e2df31ae0e188d0d1e0e3076ab410bf8c2296
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569033"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919830"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Управление конфигурациями и профилями службы
 ## <a name="overview"></a>Обзор

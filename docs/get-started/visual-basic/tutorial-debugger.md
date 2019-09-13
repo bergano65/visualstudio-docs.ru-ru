@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 070de03f56f6d9d10a9e6a41516ffcb67837e90e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7e7ddccf321259ff8f4de2522404fdc42617a810
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680310"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180193"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Учебник. Отладка кода Visual Basic с помощью Visual Studio
 
@@ -55,11 +55,11 @@ ms.locfileid: "65680310"
 
 ::: moniker range="vs-2019"
 
-Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), если еще не сделали этого.
+Установите Visual Studio бесплатно со страницы [скачиваемых материалов Visual Studio](https://visualstudio.microsoft.com/downloads), если еще не сделали этого.
 
 ::: moniker-end
 
-Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...**, после чего запустится Visual Studio Installer. Запускается Visual Studio Installer. Выберите рабочую нагрузку **.Разработка классических приложений .NET** и затем элемент **Изменить**.
+Если вам нужно установить рабочую нагрузку, но вы уже используете Visual Studio, выберите пункт **Средства** > **Получить средства и компоненты...** , после чего запустится Visual Studio Installer. Запускается Visual Studio Installer. Выберите рабочую нагрузку **.Разработка классических приложений .NET** и затем элемент **Изменить**.
 
 ## <a name="create-a-project"></a>Создание проекта
 
@@ -69,10 +69,10 @@ ms.locfileid: "65680310"
     Нажмите клавишу **ESC**, чтобы закрыть окно запуска. Нажмите **CTRL+Q**, чтобы открыть поле поиска, введите **visual basic**, выберите **Шаблоны** и затем **Create new Console App (.NET Framework) project** (Создание проекта консольного приложения — .NET Framework). В появившемся диалоговом окне введите такое имя, как **get-started-debugging**, а затем выберите **Создать**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** в разделе **Visual Basic** выберите **Рабочий стол Windows**, а затем в средней области выберите **Консольное приложение (.NET Framework)**. Введите имя, например **get-started-debugging**, и нажмите кнопку **ОК**.
+    В верхней строке меню выберите **Файл** > **Создать** > **Проект**. В левой области диалогового окна **Новый проект** в разделе **Visual Basic** выберите **Рабочий стол Windows**, а затем в средней области выберите **Консольное приложение (.NET Framework)** . Введите имя, например **get-started-debugging**, и нажмите кнопку **ОК**.
     ::: moniker-end
 
-    Если шаблон проекта **Консольное приложение (.NET Framework)** отсутствует, перейдите в меню **Сервис** > **Получить средства и компоненты...**, после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **.Разработка классических приложений .NET** и затем элемент **Изменить**.
+    Если шаблон проекта **Консольное приложение (.NET Framework)** отсутствует, перейдите в меню **Сервис** > **Получить средства и компоненты...** , после чего запустится Visual Studio Installer. Выберите рабочую нагрузку **.Разработка классических приложений .NET** и затем элемент **Изменить**.
 
     Visual Studio создаст проект.
 

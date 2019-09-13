@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: f598ddd3175353103d478dca9828536346e247cd
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: cd19c619eca4505eab4c332783a678bf5e7ba87a
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177261"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179789"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Использование скриптов Windows PowerShell для публикации в средах разработки и тестирования
 
@@ -24,7 +24,7 @@ ms.locfileid: "66177261"
 
 ## <a name="prerequisites"></a>Предварительные требования
 
-* Visual Studio 2015 или последующей версии с установленной **рабочей нагрузкой Azure** или Visual Studio 2013 с пакетом Azure SDK, начиная с версии 2.3. Ознакомьтесь со страницей [скачиваемых компонентов Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). (Пакет Azure SDK не нужен для создания сценариев для веб-проектов. Он предназначен для веб-проектов, а не веб-ролей облачных служб.)
+* Visual Studio 2015 или последующей версии с установленной **рабочей нагрузкой Azure** или Visual Studio 2013 с пакетом Azure SDK, начиная с версии 2.3. Ознакомьтесь со страницей [скачиваемых компонентов Visual Studio](https://visualstudio.microsoft.com/downloads). (Пакет Azure SDK не нужен для создания сценариев для веб-проектов. Он предназначен для веб-проектов, а не веб-ролей облачных служб.)
 * Azure PowerShell, начиная с версии 0.7.4. Ознакомьтесь со статьей [Установка и настройка Azure PowerShell](/powershell/azure/overview).
 * [Windows PowerShell](http://go.microsoft.com/?linkid=9811175) , начиная с версии 3.0.
 

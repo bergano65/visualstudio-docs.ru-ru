@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160061"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551433"
 ---
 # <a name="application-page-project-designer-c"></a>Страница "Приложение" в конструкторе проектов (C#)
 
@@ -105,6 +105,8 @@ ms.locfileid: "67160061"
 
 Для программного доступа к этому свойству см. раздел <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
+Сведения о создании значка см. в статье [Редактор изображений для значков](/cpp/windows/image-editor-for-icons).
+
 **Manifest**
 
 Позволяет выбрать способ создания манифеста при запуске приложения в Windows Vista с включенным контролем учетных записей. Этот параметр может принимать перечисленные ниже значения.
@@ -120,3 +122,5 @@ ms.locfileid: "67160061"
 Установите переключатель в это положение, если проект содержит файл ресурсов. В этом случае параметры **Значок** и **Манифест** будут отключены.
 
 Введите путь и имя или воспользуйтесь кнопкой "Обзор" ( **...** ), чтобы добавить к проекту файл ресурсов Win32.
+
+Дополнительные сведения см. в статье [Создание файлов ресурсов для приложений .NET](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).

@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 605ad454d00387d9a9094a518b4afed279fcc190
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 5c95990eb875c52a66cd0efa5579c9d39eab5469
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461586"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154903"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Настройка проекта C++ для IntelliSense
 
@@ -38,7 +38,7 @@ ms.locfileid: "68461586"
 
 ![Включаемые каталоги VC++](media/vcpp-intellisense-include-paths.png)
 
- Чтобы просмотреть текущие значения макросов сборки, например **VC_IncludePath**, выберите строку "Включаемые каталоги" и щелкните раскрывающийся список справа. Затем выберите **\<Изменить>** и нажмите кнопку **Макросы**.
+Чтобы просмотреть текущие значения макросов сборки, например **VC_IncludePath**, выберите строку "Включаемые каталоги" и щелкните раскрывающийся список справа. Затем выберите **\<Изменить>** и нажмите кнопку **Макросы**.
 
 ### <a name="makefile-projects"></a>Проекты, использующие файл makefile
 
@@ -48,7 +48,7 @@ ms.locfileid: "68461586"
 
 ### <a name="open-folder-projects"></a>Проекты в виде папок
 
-При работе с проектами CMake убедитесь, что пути #include в файле CMakeLists.txt указаны правильно для всех конфигураций. Для других типов проектов возможно, потребуется использовать файл CppProperties.json. Дополнительные сведения см. в статье о [настройке IntelliSense с помощью файла CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Убедитесь, что пути указаны правильно для всех конфигураций, определенных в этом файле.
+При работе с проектами CMake убедитесь, что пути #include в файле CMakeLists.txt указаны правильно для всех конфигураций. Для других типов проектов возможно, потребуется использовать файл CppProperties.json. Дополнительные сведения см. в статье о [настройке IntelliSense с помощью файла CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-code-navigation-with-cpppropertiesjson). Убедитесь, что пути указаны правильно для всех конфигураций, определенных в этом файле.
 
 Если в файле CppProperties.json есть синтаксическая ошибка, функция IntelliSense для затронутых файлов будет работать неправильно. В окне вывода Visual Studio будет отображаться ошибка.
 
@@ -79,18 +79,18 @@ ms.locfileid: "68461586"
 В окне вывода теперь будут показаны командные строки, которые передаются в компилятор IntelliSense. Вот пример выходных данных:
 
 ```output
- [IntelliSense] Configuration Name: Debug|Win32
- [IntelliSense] Toolset IntelliSense Identifier:
- [IntelliSense] command line options:
- /c
- /I.
- /IC:\Repo\Includes
- /DWIN32
- /DDEBUG
- /D_DEBUG
- /Zc:wchar_t-
- /Zc:forScope
- /Yustdafx.h
+[IntelliSense] Configuration Name: Debug|Win32
+[IntelliSense] Toolset IntelliSense Identifier:
+[IntelliSense] command line options:
+/c
+/I.
+/IC:\Repo\Includes
+/DWIN32
+/DDEBUG
+/D_DEBUG
+/Zc:wchar_t-
+/Zc:forScope
+/Yustdafx.h
 ```
 
 Возможно, эти сведения помогут определить, почему IntelliSense выдает неточную информацию. Например, если включаемая папка вашего проекта содержит строку **$(MyVariable)\Include**, а в журнале диагностики в качестве включенного пути отображается **/I\Include**, значит, переменная **$(MyVariable)** не была вычислена и была удалена из окончательного включаемого пути.
@@ -110,10 +110,10 @@ Visual Studio использует выделенный компилятор C++
 Сообщение об ошибке может содержать указание включить трассировку во время разработки:
 
 ```output
- error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
- configuration 'Debug|x64'. IntelliSense might be unavailable.
- Set environment variable TRACEDESIGNTIME=true and restart
- Visual Studio to investigate.
+error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
+configuration 'Debug|x64'. IntelliSense might be unavailable.
+Set environment variable TRACEDESIGNTIME=true and restart
+Visual Studio to investigate.
 ```
 
 Если присвоить переменной среды TRACEDESIGNTIME значение true и перезапустить Visual Studio, вы найдете в каталоге %TEMP% файл журнала, который может помочь при диагностике ошибки компиляции.

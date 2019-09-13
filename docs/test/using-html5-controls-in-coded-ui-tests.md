@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ae861814a7219bfca1d6a074316910d459fc9999
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7087f08743e58426663734295339d9ca6550a0d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973186"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926588"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Использование элементов управления HTML5 в закодированных тестах пользовательского интерфейса
 
@@ -20,7 +20,7 @@ ms.locfileid: "62973186"
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- **Требования**
+**Требования**
 
 - Visual Studio Enterprise
 
@@ -47,17 +47,17 @@ ms.locfileid: "62973186"
 
 Список свойств, для которых можно добавить утверждение, см. в разделе [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement).
 
- **Свойства поиска:** свойства поиска для `HtmlAudio` равны `Id`, `Name` и `Title`.
+**Свойства поиска:** свойства поиска для `HtmlAudio` равны `Id`, `Name` и `Title`.
 
- **Свойства фильтра:** свойства фильтра для `HtmlAudio` равны `Src`, `Class`, `ControlDefinition`, и `TagInstance`.
+**Свойства фильтра:** свойства фильтра для `HtmlAudio` равны `Src`, `Class`, `ControlDefinition`, и `TagInstance`.
 
 > [!NOTE]
 > Период времени для перехода и приостановки может быть значительным. Во время воспроизведения закодированный тест пользовательского интерфейса ожидает время, указанное в `(TimeSpan)` перед приостановкой аудио. Если при каких-то особых обстоятельствах указанное время истечет до обращения к команде приостановки, будет создано исключение.
 
 ## <a name="video-control"></a>Элемент управления видео
- **Элемент управления видео:** действия на элементе управления видео HTML5 правильно записываются и воспроизводятся.
+**Элемент управления видео:** действия на элементе управления видео HTML5 правильно записываются и воспроизводятся.
 
- ![Элемент управления HTML5 Video](../test/media/codedui_html5_video.png)
+![Элемент управления HTML5 Video](../test/media/codedui_html5_video.png)
 
 |Действие|Запись|Созданный код|
 |-|---------------|-|
@@ -70,17 +70,17 @@ ms.locfileid: "62973186"
 
 Список свойств, для которых можно добавить утверждение, см. в разделе [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video).
 
- **Свойства поиска:** свойства поиска для `HtmlVideo` равны `Id`, `Name` и `Title`.
+**Свойства поиска:** свойства поиска для `HtmlVideo` равны `Id`, `Name` и `Title`.
 
- **Свойства фильтра:** свойства фильтра для `HtmlVideo` равны `Src`, `Poster`, `Class`, `ControlDefinition` и `TagInstance`.
+**Свойства фильтра:** свойства фильтра для `HtmlVideo` равны `Src`, `Poster`, `Class`, `ControlDefinition` и `TagInstance`.
 
 > [!NOTE]
 > Если необходимо перемотать видео вперед или назад, используя метки -30s или +30s, данные будут использоваться для перехода к соответствующему времени.
 
 ## <a name="progressbar"></a>ProgressBar
- **Элемент управления ProgressBar:** с элементом управления ProgressBar невозможно взаимодействовать. Вы можете добавить утверждения о свойствах `Value` и `Max` этого элемента управления. Дополнительные сведения см. в разделе [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+**Элемент управления ProgressBar:** с элементом управления ProgressBar невозможно взаимодействовать. Вы можете добавить утверждения о свойствах `Value` и `Max` этого элемента управления. Дополнительные сведения см. в разделе [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
- ![Элемент управления HTML5 ProgressBar](../test/media/codedui_html5_progressbar.png)
+![Элемент управления HTML5 ProgressBar](../test/media/codedui_html5_progressbar.png)
 
 ## <a name="see-also"></a>См. также
 

@@ -1,20 +1,19 @@
 ---
-title: Основы создания игр с Unity в Visual Studio для Mac
+title: Основы создания игр с Unity
 description: Начало работы с Unity в Visual Studio для Mac
 author: asb3993
 ms.author: amburns
 ms.date: 05/20/2019
-ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
-ms.openlocfilehash: 8f14d21468336dba220a76ad8978f136d50f96f1
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: ff8fe1b2b4efe7ff91d3b363c58183be534a1441
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836163"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108432"
 ---
-# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Основы создания игр с Unity в Visual Studio для Mac 
+# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Основы создания игр с Unity в Visual Studio для Mac
 
 Unity — это система для создания игр, которая позволяет разрабатывать игры на C#. В этом пошаговом руководстве показано, как приступить к разработке и отладке игр Unity с помощью Visual Studio для Mac и расширения "Инструменты Visual Studio для Mac для Unity" и среды Unity.
 
@@ -156,7 +155,7 @@ Unity — это система для создания игр, которая 
         public float Speed = 50;
         private Transform _playerTransform;
         private Transform _myTransform;
-        
+
         void Start()
         {
             var player = GameObject.FindGameObjectWithTag("Player");

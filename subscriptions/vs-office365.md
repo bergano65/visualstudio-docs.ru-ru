@@ -3,15 +3,15 @@ title: Преимущество Office 365 | Документация Майкр
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: Сведения о преимуществе Office 365, входящем в состав некоторых подписок Visual Studio.
-ms.openlocfilehash: 625d9ccf24c17b96afc9c79cc3b280c009e80fec
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: ae28df2f66ff976fffd44f42c3063f790db9feb3
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250767"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787922"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 профессиональный плюс в подписках Visual Studio
 
@@ -70,3 +70,9 @@ ms.locfileid: "68250767"
 - Для получения технической поддержки по любому компоненту EMS посетите страницу https://support.microsoft.com/allproducts и выберите продукт.
 - По вопросам продаж, использования подписок, учетных записей и выставления счетов для подписок Visual Studio обратитесь в [службу поддержки подписок](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - У вас есть вопросы о среде IDE Visual Studio, Azure DevOps или других продуктах либо службах Visual Studio?  Перейдите на [страницу поддержки Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Следующие шаги
+Не забудьте активировать эти замечательные преимущества, чтобы максимально эффективно использовать подписку Visual Studio:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Деньги на счете в Azure](vs-azure.md)

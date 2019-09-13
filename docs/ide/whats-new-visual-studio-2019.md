@@ -15,19 +15,19 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 2c9526a0cbf33278bbc3cab8120bb20ab0f5377a
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493332"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293722"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Новые возможности Visual Studio 2019
 
 **Обновлено для [выпуска 16.2](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Скачивание Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+>[Скачивание Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 С помощью Visual Studio 2019 г. вы получите лучшие в своем классе средства и службы для любого разработчика, любого приложения и любой платформы. Независимо от того, сколько времени вы уже используете Visual Studio, в этой новой версии вы найдете много интересного для себя.
 
@@ -65,7 +65,7 @@ ms.locfileid: "68493332"
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) повышает эффективность разработки программного обеспечения с помощью искусственного интеллекта (ИИ). Для создания рекомендаций IntelliCode анализирует 2000 проектов с открытым кодом на GitHub (&mdash;каждый из которых имеет более 100 звезд&mdash;).
 
- ![Анимация IntelliCode в Visual Studio 2019](media/vs-2019/IntelliCode.gif)
+![Анимация IntelliCode в Visual Studio 2019](media/vs-2019/IntelliCode.gif)
 
 Ниже приведено несколько примеров того, как Visual Studio IntelliCode может помочь повысить производительность:
 

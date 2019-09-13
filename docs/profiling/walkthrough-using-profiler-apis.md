@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428132"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870280"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Пошаговое руководство. Использование API-интерфейсов профилировщика
 
@@ -37,7 +37,7 @@ ms.locfileid: "63428132"
  Для машинного кода интерфейсы API профилировщика Visual Studio находятся в файле *VSPerf.dll*. Файл заголовка *VSPerf.h* и библиотека импорта *VSPerf.lib* расположены в каталоге *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Для 64-разрядных приложений используется папка *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*.
  ::: moniker-end
 
- Для управляемого кода интерфейсы API находятся в файле *Microsoft.VisualStudio.Profiler.dll*. Эта библиотека DLL находится в каталоге *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Для 64-разрядных приложений используется папка *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Для получения дополнительной информации см. <xref:Microsoft.VisualStudio.Profiler>.
+ Для управляемого кода интерфейсы API находятся в файле *Microsoft.VisualStudio.Profiler.dll*. Эта библиотека DLL находится в каталоге *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Для 64-разрядных приложений используется папка *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Дополнительные сведения см. в статье о [пространстве имен Microsoft.VisualStudio.Profiler](/previous-versions/ms242704(v=vs.140)).
 
 ## <a name="prerequisites"></a>Предварительные требования
  В этом пошаговом руководстве предполагается, что используемая среда разработки настроена для отладки и выборки. В следующих разделах представлены общие сведения о предварительных требованиях:
@@ -170,7 +170,7 @@ DataCollection.CurrentId);
 
 ## <a name="see-also"></a>См. также
 
-- <xref:Microsoft.VisualStudio.Profiler>
+- [Profiler](/previous-versions/ms242704(v=vs.140))
 - [Справочник по API-интерфейсам профилировщика Visual Studio (машинный код)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [Начало работы](../profiling/getting-started-with-performance-tools.md)
 - [Профилирование из командной строки](../profiling/using-the-profiling-tools-from-the-command-line.md)

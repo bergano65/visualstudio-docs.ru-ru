@@ -3,15 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Продукты Visual Studio | Документация Майкрософт
 description: Изучите семейство продуктов Visual Studio.
-ms.topic: landing-page
+ms.topic: hub-page
 ms.date: 07/02/2019
 searchScope: []
-ms.openlocfilehash: 41dd59cf67be1a476707a7ed3a18a263132fbfca
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: c499b8f1ecf80fefe911d3f9fa2cb918e40f125e
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586801"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107864"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -101,7 +101,7 @@ ms.locfileid: "67586801"
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/subscriptions/" title="Подписки на Visual Studio">
+                                <a href="/visualstudio/subscriptions/" title="Подписки Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -119,49 +119,10 @@ ms.locfileid: "67586801"
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/azure/devops/" title="Azure DevOps Services">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="Azure DevOps Services - formerly Visual Studio Team Services (VSTS)" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure DevOps Services</h3>
-                                                    <p>Повысьте производительность работы участников группы с помощью инструментов и отчетов Agile. Создавайте, тестируйте и развертывайте проекты из системы управления версиями при помощи современных инструментов непрерывной интеграции и развертывания.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/" title="Azure DevOps Server">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="Azure DevOps Server - formerly Team Foundation Server (TFS)" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure DevOps Server</h3>
-                                                    <p>Установка, обновление и управление локальными развертываниями</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
         </ul>
-        <p>Решение Visual Studio Team Services было заменено Azure DevOps Services; решение Team Foundation Server (TFS) переименовано на Azure DevOps Server. Дополнительные сведения см. в статьях о переименовании решений <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">Visual Studio Team Services</a> и <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server</a> на Azure DevOps Server.</p>
     </div>
 </div>

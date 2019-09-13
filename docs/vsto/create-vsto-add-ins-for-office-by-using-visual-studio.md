@@ -2,7 +2,7 @@
 title: Создание надстроек VSTO для Office с помощью Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -12,29 +12,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0411d40a4b156e24fcdf4fb3e9de5353787333f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e64d97b948f38b4c9b5943d5e561aa865d4f765f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445558"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551669"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Создание надстроек VSTO для Office с помощью Visual Studio
   Вы можете использовать инструменты разработчика Microsoft Office в Visual Studio для создания приложений платформы .NET Framework, которые расширяют возможности Office. Эти приложения также называются *решениями Office*.
 
  Инструменты разработчика Office предоставляют функции, помогающие создавать решения Office в соответствии с различными бизнес-требованиями. В состав инструментов входят шаблоны проектов, помогающие создавать решения Office, используя язык программирования Visual Basic или Visual C#, и визуальные конструкторы, помогающие создавать настраиваемые пользовательские интерфейсы для решений Office.
 
-> [!NOTE]
-> Занимаетесь разработкой решений, расширяющих возможности Office по [нескольких платформ](https://dev.office.com/add-in-availability)? Ознакомьтесь с новой [модель надстроек Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Надстройки Office имеют небольшого размера, по сравнению с VSTO Add-ins и решения, и вы можете создавать их с помощью почти любой технологии веб-программирования, таких как HTML5, JavaScript, CSS3 и XML.
+[!include[Add-ins note](includes/addinsnote.md)]
 
  Последние сведения о разработке решений Office см. в следующих центрах разработки в сети MSDN:
 
-- [Разработка решений Office с порталом для разработчиков Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) содержит ссылки на сведения о продукте, примеры кода, видеоролики и ресурсы сообщества, посвященные использованию Visual Studio для настройки приложений Office как часть решения .
+- [Портал разработки решений для Office с Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) содержит ссылки на сведения о продукте, примеры кода, видео и ресурсы сообщества об использовании Visual Studio для настройки приложений Office в рамках ваших решений.
 
-- [Центр разработчиков Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) содержит ссылки на технические статьи, примеры кода, файлы для загрузки, сведения сообщества, поддержки и другую документацию по настройке Office и бизнес-приложений Office (OBA ).
+- [Центр разработчиков Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) содержит ссылки на технические статьи, примеры кода, загрузки, сведения о сообществе, поддержку и другую документацию по настройке Office и Office Business Applications (OBA).
 
 ## <a name="in-this-section"></a>Содержание раздела
-- [Начало работы &#40;разработка решений Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Начало работы &#40;с разработкой Office в Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
  Ссылки на сведения о настройке компьютера разработчика для создания решений Office, первых шагах по созданию решений Office, а также новых возможностях разработки решений Office в Visual Studio.
 
@@ -70,9 +69,9 @@ ms.locfileid: "63445558"
 
  Сведения об автоматизации работы PowerPoint и о создании надстроек VSTO PowerPoint.
 
-- [Решения проектов](../vsto/project-solutions.md)
+- [Решения проекта](../vsto/project-solutions.md)
 
- Сведения о способах автоматизации Microsoft Office project и создайте проект надстройки VSTO.
+ Содержит сведения о том, как автоматизировать Microsoft Office проекта и создать надстройки VSTO для проекта.
 
 - [Решения Visio](../vsto/visio-solutions.md)
 
@@ -98,31 +97,31 @@ ms.locfileid: "63445558"
 
  Сведения о том, как делать решения Office доступными для пользователей, а также об основных аспектах, которые необходимо учитывать при выборе метода развертывания.
 
-- [Примеры разработки решений Office и пошаговые руководства](../vsto/office-development-samples-and-walkthroughs.md)
+- [Примеры и пошаговые руководства по разработке решений Office](../vsto/office-development-samples-and-walkthroughs.md)
 
  Ссылки на примеры приложений и разделы с пошаговыми инструкциями по выполнению типовых задач.
 
-- [Общий справочник &#40;разработка решений Office в Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+- [Общие справочные материалы &#40;по разработке для Office в Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
 
- Ссылки на подробные сведения об основных сборках взаимодействия Office, манифестов, элементы пользовательского интерфейса и сообщения об ошибках.
+ Содержит ссылки на подробные сведения о первичных сборках взаимодействия Office, манифестах, элементах пользовательского интерфейса и сообщениях об ошибках.
 
-- [Управляемый Справочник по &#40;разработка решений Office в Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)
+- [Управляемая &#40;Справочная разработка для Office в Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)
 
- Ссылки на сведения о пространствах имен API и типах, используемые в проектах Office, который предназначены для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. API справочную документацию по пространствам имен и типов, используемых в проектах Office, ориентированных на .NET Framework 3.5, см. в следующем справочном разделе документации по Visual Studio 2008: [Справочник по выбору системы 2007](http://go.microsoft.com/fwlink/?LinkId=160658).
+ Ссылки на сведения о пространствах имен API и типах, используемые в проектах Office, который предназначены для [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Справочную документацию по API о пространствах имен и типах, используемых в проектах Office, предназначенных для .NET Framework 3,5, см. в следующем справочном разделе документации по Visual Studio 2008: [2007. управляемая ссылка на систему](http://go.microsoft.com/fwlink/?LinkId=160658).
 
-- [Справочник по неуправляемым API &#40;разработка решений Office в Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)
+- [Разработка справочника &#40;по неуправляемым API в Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)
 
  Ссылки на сведения об интерфейсах COM, которые можно использовать для выполнения таких действий, как загрузка и выгрузка управляемых надстроек VSTO в приложениях Office.
 
 ## <a name="related-sections"></a>Связанные разделы
-- [Разработка решений Office с порталом для разработчиков Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) предоставляет дополнительные ресурсы, такие как технические статьи, видеоматериалы и блоги.
+- [Разработка решений Office с помощью портала разработчика Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) Предоставляет дополнительные ресурсы, такие как технические статьи, видеоролики и блоги.
 
-- [Центр разработчиков Visual Studio](http://go.microsoft.com/fwlink/?LinkID=99124) представлены дополнительные ресурсы для Visual Studio — технические статьи, видеозаписи и блоги.
+- [Центр разработчиков Visual Studio](http://go.microsoft.com/fwlink/?LinkID=99124) Предоставляет дополнительные ресурсы Visual Studio, такие как технические статьи, видеоролики и блоги.
 
-- [Портал разработчиков бизнес-приложений Office](http://go.microsoft.com/fwlink/?LinkId=99125) содержит сведения о бизнес-приложений Office (OBA) и способы их создания с помощью платформы системы Office.
+- [Портал разработчика Office Business Applications](http://go.microsoft.com/fwlink/?LinkId=99125) Содержит сведения о Office Business Applications (OBA) и о том, как создавать их с помощью платформы системы Office.
 
-- [Microsoft Office разработки раздел библиотеки MSDN](http://go.microsoft.com/fwlink/?LinkId=149870) области в библиотеке MSDN, где можно найти статьи и справочную документацию по разработке решений для нескольких версий Office (не только к разработке с использованием Office Visual Studio).
+- [Раздел "разработка Microsoft Office" библиотеки MSDN](http://go.microsoft.com/fwlink/?LinkId=149870) Область библиотеки MSDN, в которой можно найти статьи и справочную документацию по разработке решений для нескольких версий Office (не только для разработки Office с помощью Visual Studio).
 
-- [Разработка приложений в Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) содержат ссылки на разделы, в которых объясняется, как можно использовать Visual Studio для проектирования, разработки, отладки и развертывания веб-приложений, веб-служб XML и традиционных клиентских приложений.
+- [Разработка приложений в Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Содержит ссылки на разделы, в которых объясняется, как можно использовать Visual Studio для проектирования, разработки, отладки и развертывания веб-приложений, веб-служб XML и традиционных клиентских приложений.
 
-- [Программирование .NET framework в Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) рассматриваются вопросы разработки приложений в .NET Framework в Visual Basic и Visual C#.
+- [.NET Framework программировании в Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Обсуждается разработка приложений с помощью .NET Framework в Visual Basic и Visual C#.

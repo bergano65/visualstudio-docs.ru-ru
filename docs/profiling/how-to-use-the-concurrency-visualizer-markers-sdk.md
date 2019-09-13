@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3db7155a991b1badbdb4ef8dadb8ccfa63817c80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d97ea90963f70d3a06c669f08473bab27fa08bd
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996202"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870333"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Как выполнить: Использование пакета SDK визуализатора параллелизма для создания маркеров
 В этом разделе содержатся сведения об использовании SDK визуализатора параллелизма для создания интервалов и записи флагов, сообщений и оповещений.
@@ -24,17 +24,14 @@ ms.locfileid: "62996202"
 
 2. Добавьте оператор `include` и оператор `using` для пакета SDK.
 
-    ```C++
-
+    ```cpp
     #include <cvmarkersobj.h>
     using namespace Concurrency::diagnostic;
-
     ```
 
 3. Добавьте код для создания трех интервалов в последовательностях маркеров по умолчанию и записи флага, сообщения и оповещения (по одному для каждого диапазона). Методы для написания флагов, сообщений и оповещений являются членами класса [marker_series](../profiling/marker-series-class.md). Конструктору для класса [span](../profiling/span-class.md) требуется объект `marker_series`, чтобы каждый интервал был связан с конкретными последовательностями маркеров. `span` заканчивается, когда он является удаленным.
 
-    ```C++
-
+    ```cpp
     marker_series series;
     span *flagSpan = new span(series, 1, _T("flag span"));
     series.write_flag(_T("Here is the flag."));
@@ -47,7 +44,6 @@ ms.locfileid: "62996202"
     span *alertSpan = new span(series, 3, _T("alert span"));
     series.write_flag(_T("Here is the alert."));
     delete alertSpan;
-
     ```
 
 4. В строке меню выберите **Анализ**, **Визуализатор параллелизма**, **Запустить с текущим проектом**, чтобы запустить приложение и открыть визуализатор параллелизма. На следующем рисунке показаны три интервала и три маркера в визуализаторе параллелизма.
@@ -56,8 +52,7 @@ ms.locfileid: "62996202"
 
 5. Добавьте код для создания дополнительных пользовательских последовательностей маркеров, вызвав конструктор для `marker_series`, который принимает имя строки для последовательностей маркеров.
 
-    ```C++
-
+    ```cpp
     marker_series flagSeries(_T("flag series"));
     span *flagSeriesSpan = new span(flagSeries, 1, _T("flag span"));
     flagSeries.write_flag(1, _T("flag"));
@@ -71,7 +66,6 @@ ms.locfileid: "62996202"
     // Sleep to even out the display in the Concurrency Visualizer.
     Sleep(50);
     delete messageSeriesSpan;
-
     ```
 
 6. Запустите текущий проект, чтобы открыть визуализатор параллелизма. Две последовательности маркеров отображаются на собственных дорожках в представлении потоков. На следующем рисунке показаны два новых интервала.
@@ -84,19 +78,17 @@ ms.locfileid: "62996202"
 
 2. Добавьте оператор `using` или `Imports` для пакета SDK.
 
-    ```VB
+    ```vb
     Imports Microsoft.ConcurrencyVisualizer.Instrumentation
-
     ```
 
     ```csharp
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. Добавьте код для создания трех интервалов в последовательностях маркеров по умолчанию и записи флага, сообщения и оповещения (по одному для каждого диапазона). Объект <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> можно создать путем вызова статического метода `EnterSpan`. Для записи ряда по умолчанию используйте статические методы записи класса <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.
+3. Добавьте код для создания трех интервалов в последовательностях маркеров по умолчанию и записи флага, сообщения и оповещения (по одному для каждого диапазона). Объект [Span](/previous-versions/hh694189(v=vs.140)) можно создать путем вызова статического метода `EnterSpan`. Для записи ряда по умолчанию используйте статические методы записи класса [Markers](/previous-versions/hh694099(v=vs.140)).
 
-    ```VB
-
+    ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
     Markers.WriteFlag("Here is the flag.")
     flagSpan.Leave()
@@ -112,11 +104,9 @@ ms.locfileid: "62996202"
     System.Threading.Thread.Sleep(1)
     Markers.WriteAlert("Here is an alert")
     alertSpan.Leave()
-
     ```
 
     ```csharp
-
     Span flagSpan = Markers.EnterSpan("flag span");
     Markers.WriteFlag("Here is the flag.");
     flagSpan.Leave();
@@ -138,7 +128,7 @@ ms.locfileid: "62996202"
 
      ![Визуализатор параллелизма с маркерами и оповещениями](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. Добавьте код для создания ряда маркеров клиента с помощью статического метода <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>. Класс <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> содержит методы для создания диапазонов и флагов записи, сообщений и предупреждения.
+5. Добавьте код для создания ряда маркеров клиента с помощью статического метода [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)). Класс [MarkerSeries](/previous-versions/hh694127(v=vs.140)) содержит методы для создания диапазонов и флагов записи, сообщений и оповещений.
 
     ```VB
 

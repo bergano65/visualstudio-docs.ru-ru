@@ -31,6 +31,7 @@
 # Редактор исходного кода
 ## [Возможности редактора](source-editor.md)
 ## [Рефакторинг](refactoring.md)
+## [IntelliSense](intellisense.md)
 ## [Комментарии](comments.md)
 ## [Работа редактора](editor-behavior.md)
 ## [Комментарии к задачам](task-comments.md)
@@ -56,7 +57,6 @@
 
 # Управление версиями
 ## [Обзор](version-control.md)
-## [Система управления версиями TF](tf-version-control.md)
 ## [Настройка репозитория Git](set-up-git-repository.md)
 ## [Работа с Git](working-with-git.md)
 ## [Настройка репозитория Subversion](set-up-subversion-repository.md)
@@ -99,13 +99,14 @@
 ## [Журналы и исключения](troubleshooting.md)
 ## [Программа улучшения качества программного обеспечения Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Сообщить о проблеме](report-a-problem.md)
+## [Устранение неполадок. Поддерживает ли Visual Studio для Mac систему управления версиями Team Foundation?](tf-version-control.md)
 ## [Устранение неполадок. Почему не отображаются все шаблоны?](troubleshooting-no-templates.md)
 ## [Устранение неполадок. Сбой средства обновления при получении сведений](updater-troubleshooting.md)
 
 # [Заметки о выпуске](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [Предварительные заметки о выпуске](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
 # Примеры
-## [Подборка примеров](samples.yml)
+## [Подборка примеров](samples/index.yml)
 ## [Все примеры ASP.NET Core](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
 ## [Все примеры .NET Core](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
 ## [Все примеры Xamarin.Forms](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)

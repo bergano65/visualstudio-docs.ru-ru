@@ -1,6 +1,6 @@
 ---
 title: Задача MSBuild | Документы Майкрософт
-ms.date: 11/04/2016
+ms.date: 07/30/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
@@ -18,24 +18,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a58235b724f97e3934ab620677e530fbd9ba9726
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: d2689113da88246470032ed658b2472c3845adcd
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747354"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681370"
 ---
 # <a name="msbuild-task"></a>MSBuild - задача
+
 Выполняет сборку проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] на основе другого проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
 ## <a name="parameters"></a>Параметры
+
  В следующей таблице приводятся параметры задачи `MSBuild` .
 
-| Параметр | Описание |
+| Параметр | ОПИСАНИЕ |
 |-----------------------------------| - |
 | `BuildInParallel` | Необязательный параметр `Boolean` .<br /><br /> Если его значение `true`, то сборка проектов, указанных в параметре `Projects`, выполняется параллельно, по возможности. Значение по умолчанию — `false`. |
 | `Projects` | Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Он определяет файлы проекта, необходимые для сборки. |
-| `Properties` | Необязательный параметр `String` .<br /><br /> Список разделенных точкой с запятой пар имя-значение для применения в качестве глобальных свойств к дочернему проекту. Указание этого параметра функционально эквивалентно заданию значений свойств с помощью параметра **-property** при выполнении сборки с использованием [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Например:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> При передаче проекту свойств с помощью параметра `Properties` [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] создает новый экземпляр проекта даже в том случае, если файл проекта уже загружен. При создании нового экземпляра проекта [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] обрабатывает его как другой проект с другими глобальными свойствами, сборка которого может выполняться параллельно с другими экземплярами проекта. Например, сборка конфигурации выпуска может выполняться в одно время со сборкой конфигурации отладки. |
+| `Properties` | Необязательный параметр `String` .<br /><br /> Список разделенных точкой с запятой пар имя-значение для применения в качестве глобальных свойств к дочернему проекту. Указание этого параметра функционально эквивалентно заданию значений свойств с помощью параметра **-property** при выполнении сборки с использованием [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Например:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> При передаче проекту свойств с помощью параметра `Properties` [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] может создать новый экземпляр проекта даже в том случае, если файл проекта уже загружен. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] создает один экземпляр проекта с использованием заданного пути проекта и уникального набора глобальных свойств. Например, это поведение позволяет создать несколько задач MSBuild, вызывающих *myproject.proj*, с Configuration=Release и получить единственный экземпляр *myproject.proj* (если в задаче не указаны уникальные свойства). Если указать свойство, которое еще не было просмотрено [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] формирует новый экземпляр проекта, который можно создать параллельно с другими экземплярами проекта. Например, сборка конфигурации выпуска может выполняться в одно время со сборкой конфигурации отладки.|
 | `RebaseOutputs` | Необязательный параметр `Boolean` .<br /><br /> Если его значение `true`, то относительные пути целевых выходных элементов из созданных проектов корректируются таким образом, чтобы соответствовать вызывающему проекту. Значение по умолчанию — `false`. |
 | `RemoveProperties` | Необязательный параметр `String` .<br /><br /> Задает набор глобальных свойств для удаления. |
 | `RunEachTargetSeparately` | Необязательный параметр `Boolean` .<br /><br /> Если его значение `true`, то задача [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] вызывает каждый целевой объект из списка, переданного в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], по одному, а не все одновременно. Задание для этого параметра значения `true` гарантирует вызов последующих целевых объектов даже в случае сбоя ранее вызванных объектов. В противном случае из-за сбоя во время сборки какого-то одного объекта вызов всех последующих целевых объектов прекратится. Значение по умолчанию — `false`. |
@@ -49,6 +51,7 @@ ms.locfileid: "66747354"
 | `UseResultsCache` | Необязательный параметр `Boolean` .<br /><br /> Если это значение `true`, будет возвращен кэшированный результат, если он имеется.<br /><br />  Если выполняется задача MSBuild, ее результат будет кэшироваться в области <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> как список элементов сборки |
 
 ## <a name="remarks"></a>Примечания
+
  Помимо перечисленных выше параметров, эта задача наследует параметры от класса <xref:Microsoft.Build.Tasks.TaskExtension>, который, в свою очередь, наследует от класса <xref:Microsoft.Build.Utilities.Task>. Список этих дополнительных параметров и их описания см. в статье [Базовый класс TaskExtension](../msbuild/taskextension-base-class.md).
 
  В отличие от использования [задачи Exec](../msbuild/exec-task.md) для запуска *MSBuild.exe*, эта задача использует тот же процесс [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] для создания дочерних проектов. Список уже собранных целевых объектов, которые могут быть пропущены, доступен как родительским, так и дочерним сборкам. Эта задача выполняется быстрее, так как при этом не создаются новые процессы [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
@@ -60,6 +63,7 @@ ms.locfileid: "66747354"
  Начиная с версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, проекты решения извлекают конечные выходные данные из всех подпроектов, которые он создает.
 
 ## <a name="pass-properties-to-projects"></a>Передача свойств в проекты
+
  В версиях [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] более ранних, чем [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, передачу разных наборов свойств в разные проекты, перечисленные в элементе [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], было непросто осуществить. При использовании атрибута Properties [задачи MSBuild](../msbuild/msbuild-task.md) его значение применялось ко всем создаваемым проектам. Чтобы применить разные значения, [задачу MSBuild](../msbuild/msbuild-task.md) приходилось выполнять в пакетном режиме и условно определять разные свойства для каждого проекта в списке элементов.
 
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 предоставляет два новых зарезервированных элемента метаданных, Properties и AdditionalProperties, позволяющие легко передавать разные свойства в разные проекты, сборка которых выполнена с помощью [задачи MSBuild](../msbuild/msbuild-task.md).
@@ -68,9 +72,13 @@ ms.locfileid: "66747354"
 > Эти новые элементы метаданных применимы только к элементам, переданным с помощью атрибута Projects [задачи MSBuild](../msbuild/msbuild-task.md).
 
 ## <a name="multi-processor-build-benefits"></a>Преимущества сборки в системах с несколькими процессорами
+
  Одно из основных преимуществ использования новых метаданных проявляется при выполнении сборок проектов в параллельном режиме в системах с несколькими процессорами. Метаданные позволяют объединить все проекты в один вызов [задачи MSBuild](../msbuild/msbuild-task.md), вместо того чтобы выполнять пакетную обработку или задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] с разными условиями. При вызове единой [задачи MSBuild](../msbuild/msbuild-task.md) сборка всех проектов, перечисленных в атрибуте Projects, будет выполняться параллельно. (Конечно, в том случае, если атрибут `BuildInParallel=true` определен для задачи [MSBuild](../msbuild/msbuild-task.md).) Дополнительные сведения см. в статье [Параллельное построение нескольких проектов с помощью MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
 
 ## <a name="properties-metadata"></a>Метаданные Properties
+
+ Если указано, метаданные Properties переопределяют параметр Properties задачи, а метаданные [AdditionalProperties](#additionalproperties-metadata) добавляются к определениям параметров.
+
  Чаще всего сборка нескольких файлов решения осуществляется с помощью [задачи MSBuild](../msbuild/msbuild-task.md), выполняемой с использованием разных конфигураций сборки. Например, вам нужно выполнить сборку решения a1 с помощью конфигурации отладки, а решения a2 — с помощью конфигурации выпуска. В версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 такой файл проекта выглядел следующим образом:
 
 > [!NOTE]
@@ -125,6 +133,7 @@ ms.locfileid: "66747354"
 ```
 
 ## <a name="additionalproperties-metadata"></a>Метаданные AdditionalProperties
+
  Рассмотрим сценарий, в котором выполняется сборка двух файлов решения с помощью [задачи MSBuild](../msbuild/msbuild-task.md), того и другого с использованием конфигурации выпуска, но одного из них с архитектурой x86, а другого — с архитектурой ia64. В версии [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 вам потребовалось бы создать несколько экземпляров [задачи MSBuild](../msbuild/msbuild-task.md). Один — для сборки проекта с помощью конфигурации выпуска с архитектурой x86, другой — с помощью конфигурации выпуска с архитектурой ia64. Файл проекта выглядел бы следующим образом:
 
 ### <a name="aproj"></a>a.proj
@@ -164,6 +173,7 @@ ms.locfileid: "66747354"
 ```
 
 ## <a name="example"></a>Пример
+
  В следующем примере используется задача `MSBuild` для сборки проектов, определенных коллекцией элементов `ProjectReferences`. Полученные конечные выходные данные хранятся в коллекции элементов `AssembliesBuiltByChildProjects`.
 
 ```xml
@@ -187,5 +197,6 @@ ms.locfileid: "66747354"
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Задачи](../msbuild/msbuild-tasks.md)
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

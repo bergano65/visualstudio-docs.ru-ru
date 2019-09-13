@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950345"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766114"
 ---
 # <a name="template-parameters"></a>Параметры шаблона
 
@@ -47,7 +47,7 @@ ms.locfileid: "62950345"
 
 В таблице ниже перечислены параметры зарезервированного шаблона, которые могут использоваться любым шаблоном:
 
-|Параметр|Описание|
+|Параметр|ОПИСАНИЕ|
 |---------------|-----------------|
 |clrversion|Текущая версия среды CLR.|
 |ext_*|Добавьте префикс `ext_` к любому параметру, чтобы сослаться на переменные родительского шаблона. Например, `ext_safeprojectname`.|
@@ -57,10 +57,11 @@ ms.locfileid: "62950345"
 |projectname|Имя, указанное пользователем при создании проекта.|
 |registeredorganization|Значение раздела реестра из HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Корневое пространство имен для текущего проекта. Этот параметр применяется только к шаблонам элементов.|
-|safeitemname|Аналогично параметру `itemname`, но с удалением всех небезопасных символов и пробелов.|
+|safeitemname|Аналогично параметру `itemname`, но с удалением всех небезопасных символов и пробелов, которые заменяются символом подчеркивания.|
+|safeitemrootname|Эквивалентно `safeitemname`.|
 |safeprojectname|Имя, указанное пользователем при создании проекта, но с удаленными небезопасными символами и пробелами.|
 |время|Текущее время в формате ДД/ММ/ГГГГ 00:00:00.|
-|SpecificSolutionName|Имя решения. Если установлен флажок "create solution directory" (Создать каталог решения), `SpecificSolutionName` имеет имя решения. Если флажок "create solution directory" (Создать каталог решения) не установлен, `SpecificSolutionName` пусто.|
+|specifiedSolutionName|Имя решения. Если установлен флажок "create solution directory" (Создать каталог решения), `specifiedSolutionName` имеет имя решения. Если флажок "create solution directory" (Создать каталог решения) не установлен, `specifiedSolutionName` пусто.|
 |userdomain|Домен текущего пользователя.|
 |Имя пользователя|Имя текущего пользователя.|
 |webnamespace|Имя текущего веб-сайта. Этот параметр используется в шаблоне веб-формы, чтобы гарантировать уникальные имена классов. Если веб-сайт находится в корневом каталоге веб-сервера, этот параметр шаблона разрешается в корневой каталог веб-сервера.|

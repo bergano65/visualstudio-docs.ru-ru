@@ -4,7 +4,7 @@
   items:
     - name: Обзор
       href: code-analysis-for-managed-code-overview.md
-    - name: Анализаторы Roslyn (анализ источника)
+    - name: Анализ кода
       items:
         - name: Обзор
           displayName: 'roslyn analyzers, source analysis'
@@ -17,32 +17,32 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: часто задаваемые вопросы
           href: analyzers-faq.md
-    - name: Анализатор двоичных файлов (статический анализ кода)
+    - name: Анализ прежних версий
       items:
         - name: Обзор
           displayName: 'static code analysis, binary analysis'
           href: static-code-analysis-for-managed-code-overview.md
-        - name: Пошаговое руководство по статическому анализу кода
+        - name: Пошаговое руководство по анализу прежних версий
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Миграция
           href: fxcop-analyzers.yml
-        - name: Запуск анализа кода вручную
+        - name: Запуск анализа прежних версий вручную
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Параметр Configuration
           items:
-            - name: Настройка анализа кода для анализаторов двоичных файлов
+            - name: Настройка анализа прежних версий
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Включение автоматического анализа кода
+            - name: Включение автоматического анализа прежних версий
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-            - name: Настройка словаря анализа кода
+            - name: Настройка словаря для анализа кода прежних версий
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: Подавление
           items:
-            - name: Отключение предупреждений анализа статического кода для генерируемого кода
+            - name: Отключение предупреждений при анализе прежних версий для генерируемого кода
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: 'Ошибки приложений, возникающие при анализе кода'
+        - name: 'Ошибки приложений, возникающие при анализе прежних версий'
           items:
-            - name: 'Ошибки политик, возникающие при анализе кода'
+            - name: 'Ошибки политик, возникающие при анализе прежних версий'
               href: code-analysis-policy-errors.md
             - name: Обзор
               href: code-analysis-application-errors.md
@@ -104,7 +104,7 @@
           items:
             - name: Создание или обновление политик возврата
               href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-            - name: Реализация политик возврата для анализа кода
+            - name: Реализация политик возврата для анализа прежних версий
               href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
             - name: Обеспечение простоты поддержки кода
               href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
@@ -127,7 +127,7 @@
               href: fxcop-analyzer-options.md
         - name: часто задаваемые вопросы
           href: fxcop-analyzers-faq.md
-    - name: Миграция со статического анализа на анализаторы FxCop
+    - name: Миграция с анализа прежних версий на анализаторы FxCop
       items:
         - name: Обзор
           href: fxcop-analyzers.yml
@@ -162,31 +162,31 @@
           items:
             - name: Обзор
               href: rule-set-reference.md
-            - name: Набор правил "Все правила"
+            - name: Все правила
               href: all-rules-rule-set.md
-            - name: Набор правил "Базовые правила определения правильности" для управляемого кода
+            - name: Базовые правила определения правильности
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Базовые нормы и правила разработки" для управляемого кода
+            - name: Базовые нормы и правила разработки
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Расширенные правила определения правильности" для управляемого кода
+            - name: Расширенные правила определения правильности
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Расширенные нормы и правила разработки" для управляемого кода
+            - name: Расширенные нормы и правила разработки
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Правила глобализации" для управляемого кода
+            - name: Правила глобализации
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Минимальные правила для управляемого кода"
+            - name: Минимальные правила для управляемого кода
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Рекомендуемые правила для управляемого кода"
+            - name: Рекомендуемые правила для управляемого кода
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Набор правил "Минимальные правила для смешанного кода"
+            - name: Минимальные правила для смешанного кода
               href: mixed-minimum-rules-rule-set.md
-            - name: Набор правил "Рекомендуемые правила для смешанных сред"
+            - name: Рекомендуемые правила для смешанного кода
               href: mixed-recommended-rules-rule-set.md
-            - name: Набор правил "Минимальные правила для машинного кода"
+            - name: Минимальные правила для машинного кода
               href: native-minimum-rules-rule-set.md
-            - name: Набор правил "Рекомендуемые правила для машинного кода"
+            - name: Рекомендуемые правила для машинного кода
               href: native-recommended-rules-rule-set.md
-            - name: Набор правил "Правила безопасности" для управляемого кода
+            - name: Правила безопасности
               href: security-rules-rule-set-for-managed-code.md
         - name: Отключение предупреждений
           href: in-source-suppression-overview.md
@@ -658,6 +658,16 @@
                   href: ca2321.md
                 - name: 'CA2322. Убедитесь, что JavaScriptSerializer не был инициализирован с помощью SimpleTypeResolver до десериализации'
                   href: ca2322.md
+                - name: 'CA2326. Не используйте значения TypeNameHandling, отличные от None'
+                  href: ca2326.md
+                - name: CA2327. Не используйте небезопасные JsonSerializerSettings
+                  href: ca2327.md
+                - name: CA2328. Убедитесь в безопасности JsonSerializerSettings
+                  href: ca2328.md
+                - name: 'CA2329. Не выполняйте десериализацию с помощью JsonSerializer, используя небезопасную конфигурацию'
+                  href: ca2329.md
+                - name: 'CA2330. Убедитесь, что в JsonSerializer есть безопасная конфигурация при десериализации'
+                  href: ca2330.md
                 - name: "CA3001. Проверьте код на наличие уязвимостей к внедрению кода\_SQL"
                   href: ca3001-review-code-for-sql-injection-vulnerabilities.md
                 - name: "CA3002. Проверьте код на наличие уязвимостей к межсайтовым сценариям\_(XSS)"
@@ -682,6 +692,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: CA3012. Проверьте код на наличие уязвимостей к внедрению регулярных выражений
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: CA3061. Не добавлять схему по URL-адресу
+                  href: ca3061.md
                 - name: CA3075. Обработка небезопасных DTD
                   href: ca3075-insecure-dtd-processing.md
                 - name: CA3076. Выполнение небезопасного скрипта XSLT
@@ -692,12 +704,34 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
                 - name: CA5361. Не отключайте стойкое шифрование в защищенном канале
                   href: ca5361.md
+                - name: CA5363. Не отключать проверку запросов
+                  href: ca5363.md
                 - name: CA5364. Не используйте нерекомендуемые протоколы безопасности
                   href: ca5364.md
+                - name: CA5369. Использование XmlReader для десериализации
+                  href: ca5369.md
+                - name: CA5370. Использование XmlReader для проверки модуля чтения
+                  href: ca5370.md
+                - name: CA5371. Использование XmlReader для чтения схемы
+                  href: ca5371.md
+                - name: CA5372. Использование XmlReader для XPathDocument
+                  href: ca5372.md
+                - name: CA5373. Не использовать устаревшую функцию формирования ключа
+                  href: ca5373.md
                 - name: CA5378. Не отключайте ServicePointManagerSecurityProtocols
                   href: ca5378.md
+                - name: CA5380. Не добавлять сертификаты в корневое хранилище
+                  href: ca5380.md
+                - name: 'CA5381. Убедиться, что сертификаты не добавлены в корневое хранилище'
+                  href: ca5381.md
                 - name: CA5386. Не встраивайте значение SecurityProtocolType
                   href: ca5386.md
+                - name: CA5389. Не добавлять путь к элементу архива в путь целевой файловой системы
+                  href: ca5389.md
+                - name: CA5397. Не используйте нерекомендуемые значения SslProtocols
+                  href: ca5397.md
+                - name: CA5398. Избегайте жестко зафиксированных значений SslProtocols
+                  href: ca5398.md
             - name: 'Предупреждения, связанные с использованием'
               items:
                 - name: Обзор
@@ -791,7 +825,7 @@
                   href: ca2243-attribute-string-literals-should-parse-correctly.md
             - name: Автоматическая приостановка функции
               href: automatic-feature-suspension.md
-- name: "Анализ кода для\_C/C++"
+- name: Анализ кода С/C++
   items:
     - name: Обзор
       displayName: C++ code analysis

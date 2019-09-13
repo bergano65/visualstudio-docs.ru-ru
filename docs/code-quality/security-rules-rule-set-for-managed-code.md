@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72182607369094781050b94b1003398479dfe2cb
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 1131f9cf0e77fd4fe68e4bc5c033491aa6dd34e1
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459133"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585189"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Набор правил "Правила безопасности" для управляемого кода
-Следует включить правила безопасности корпорации Майкрософт набора правил в максимально увеличить количество потенциальных проблем безопасности, включенные в отчет.
+
+Используйте правило Microsoft Security Rules, установленное для устаревшего анализа кода, чтобы максимально увеличить количество потенциальных проблем безопасности, о которых сообщается.
 
 |Правило|Описание|
 |----------|-----------------|
@@ -54,7 +55,7 @@ ms.locfileid: "65459133"
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Прозрачные методы не должны вызывать методы с атрибутом SuppressUnmanagedCodeSecurity|
 |[CA2139](../code-quality/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)|Прозрачные методы могут не использовать атрибут HandleProcessCorruptingExceptions|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Прозрачный код не должен ссылаться на критические для безопасности элементы|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Прозрачные методы не должны удовлетворять требования LinkDemand|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Прозрачные методы не должны соответствовать требованиям LinkDemand|
 |[CA2142](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)|Прозрачный код не должен быть защищен проверками LinkDemands|
 |[CA2143](../code-quality/ca2143-transparent-methods-should-not-use-security-demands.md)|Прозрачные методы не должны использовать требования безопасности|
 |[CA2144](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|Прозрачный код не должен выполнять загрузку сборок из массивов байтов|
@@ -66,13 +67,13 @@ ms.locfileid: "65459133"
 |[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Не используйте небезопасный десериализатор BinaryFormatter|
 |[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|Не вызывайте BinaryFormatter.Deserialize, не задав предварительно BinaryFormatter.Binder|
 |[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Убедитесь, что BinaryFormatter.Binder задан перед вызовом BinaryFormatter.Deserialize|
-|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|Не используйте небезопасных Десериализатор LosFormatter|
-|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|Не используйте небезопасных десериализатор NetDataContractSerializer|
-|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|Do not deserialize without first setting NetDataContractSerializer.Binder|
-|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|Убедитесь, что NetDataContractSerializer.Binder устанавливается перед десериализацией|
-|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|Не используйте небезопасных десериализатор ObjectStateFormatter|
-|[CA2321](ca2321.md)|Выполняет десериализацию с помощью SimpleTypeResolver JavaScriptSerializer|
-|[CA2322](ca2322.md)|Убедитесь, что JavaScriptSerializer не был инициализирован с SimpleTypeResolver до десериализации|
+|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|Не используйте небезопасный десериализатор LosFormatter|
+|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|Не используйте небезопасный десериализатор NetDataContractSerializer|
+|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|Не десериализируйте, не задав предварительно NetDataContractSerializer.Binder|
+|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|Убедитесь, что NetDataContractSerializer.Binder задан перед десериализацией|
+|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|Не используйте небезопасный десериализатор ObjectStateFormatter|
+|[CA2321](ca2321.md)|Не десериализируйте с помощью JavaScriptSerializer, используя SimpleTypeResolver|
+|[CA2322](ca2322.md)|Убедитесь, что JavaScriptSerializer не был инициализирован с помощью SimpleTypeResolver до десериализации|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению кода SQL|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Проверьте код на наличие уязвимостей к межсайтовым сценариям (XSS)|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению пути к файлу|

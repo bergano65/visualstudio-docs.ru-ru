@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bdc1c97d35b79fec40bbaf8994176cfbb27b8e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789835"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919219"
 ---
 # <a name="go-to-command"></a>Команда Go To
 Перемещение курсор на указанную строку.
@@ -30,16 +30,15 @@ Edit.GoTo [linenumber]
 ```
 
 ## <a name="arguments"></a>Аргументы
- `linenumber`
-
- Необязательный параметр. Целое число, задающее номер строки, к которой нужно перейти.
+`linenumber`\
+Необязательный параметр. Целое число, задающее номер строки, к которой нужно перейти.
 
 ## <a name="remarks"></a>Примечания
- Нумерация строк начинается с единицы. Если значение `linenumber` меньше единицы, отображается первая строка. Если значение `linenumber` больше номера последней строки, отображается последняя строка.
+Нумерация строк начинается с единицы. Если значение `linenumber` меньше единицы, отображается первая строка. Если значение `linenumber` больше номера последней строки, отображается последняя строка.
 
- Если значение `linenumber` не указано, отображается диалоговое окно **Переход на строку**.
+Если значение `linenumber` не указано, отображается диалоговое окно **Переход на строку**.
 
- Эта команда имеет псевдоним GoToLn.
+Эта команда имеет псевдоним GoToLn.
 
 ## <a name="example"></a>Пример
 
@@ -47,7 +46,7 @@ Edit.GoTo [linenumber]
 >Edit.GoTo 125
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)

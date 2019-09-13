@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7ad0105cffc99894134dc58af7c71c9f95bceace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840580"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787979"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Модульное тестирование JavaScript и TypeScript в Visual Studio
 
@@ -26,6 +26,7 @@ ms.locfileid: "62840580"
 * Mocha ([mochajs.org](http://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
+* Jest ([jestjs.io](https://jestjs.io/))
 * Export Runner (это специальная платформа для инструментов Node.js для Visual Studio)
 
 > [!WARNING]
@@ -164,5 +165,11 @@ Test execution time: 1.5731 Seconds
 
 Затем добавьте тесты в указанную папку тестового корня, и они будут доступны для выполнения в окне обозревателя тестов. Если они не отображаются, возможно, потребуется перестроить проект.
 
-> [!NOTE]
-> В настоящее время эта функция не подходит для проектов .NET Standard и .NET Core.
+### <a name="unit-test-net-core-and-net-standard"></a>Модульное тестирование в .NET Core и .NET Standard
+Помимо приведенных выше свойств, вам необходимо также установить пакет NuGet [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) и задать такое свойство:
+
+```xml
+<PropertyGroup>
+    <GenerateProgramFile>false</GenerateProgramFile>
+</PropertyGroup>
+```

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823374"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864682"
 ---
 # <a name="developer-community-data-privacy"></a>Конфиденциальность данных сообщества разработчиков
 
@@ -54,24 +54,28 @@ ms.locfileid: "67823374"
 
 - Файл журнала для операций в памяти Visual Studio
 
-- Файлы PerfWatson, если включен сбор данных Watson, из папки *VSFeedbackPerfWatsonData*
+- Файлы PerfWatson, если включена коллекция Watson
 
-- Файлы журнала LiveShare, если они существуют, из папки *VSFeedbackVSRTCLogs*
+- Файлы журнала LiveShare, если они существуют
 
-- Файлы журнала Xamarin, если они существуют, из *%LOCALAPPDATA%\Xamarin\Logs*
+- Файлы журнала Xamarin, если они существуют
 
-- Файлы журнала NuGet, если они существуют, из *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
+- Файлы журнала Nuget, если они существуют
 
-- Файлы журнала веб-отладчика, если они существуют:
+- Файлы журнала веб-отладчика, если они существуют
 
-  - *%TEMP%\vscode-chrome-debug.txt*
+- Журналы центра обслуживания и журналы ошибок MEF, если они существуют
 
-  - *%TEMP%\vscode-node-debug2.txt*
+- Журналы Python, если они существуют
 
-  - *%TEMP%\vscode-edge-debug.txt*
+- Журналы Windows Forms, если они существуют
+
+> [!NOTE]
+> Файлы журналов отправляются в корпорацию Майкрософт только с вашего разрешения, когда вы отправляете отчет о проблеме, в который они включаются. Увидеть отправляемые файлы можно на этапе "Сводка" в окне "Отчет о проблеме" (см. снимок экрана в этом примечании). Собранные журналы хранятся в папке %temp% и очищаются регулярно, а также после каждой отправки. Если вы не хотите включать журнал в отчет о проблеме, удалите его файл из папки %temp% перед отправкой отчета.  
+  > ![Сообщение о проблеме — сводка собираемых журналов](media/report-a-problem-logs-collected.png)
 
 - Снимок экрана, если вы решили включить его
-
+  
 - Данные записи, если вы решили включить ее, включая:
 
   - Шаги по воспроизведению проблемы

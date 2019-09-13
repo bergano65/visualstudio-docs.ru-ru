@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b7cad6d52dc3fabc182881b99163cf15e1a260c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973023"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926571"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Использование различных веб-браузеров в закодированных тестах пользовательского интерфейса
 
@@ -43,11 +43,11 @@ ms.locfileid: "62973023"
 > [!NOTE]
 > Невозможно записать закодированные тесты пользовательского интерфейса с помощью веб-браузеров Google Chrome или Mozilla Firefox.
 
- **Воспроизведение с помощью Internet Explorer.** Если браузер не указан явно, тесты будут выполняться в Internet Explorer по умолчанию. Можно явно указать браузер для использования, задав свойство **BrowserWindow.CurrentBrowser** в тестовом коде. Для использования Internet Explorer это свойство должно иметь значение **IE** или **Internet Explorer**.
+**Воспроизведение с помощью Internet Explorer.** Если браузер не указан явно, тесты будут выполняться в Internet Explorer по умолчанию. Можно явно указать браузер для использования, задав свойство **BrowserWindow.CurrentBrowser** в тестовом коде. Для использования Internet Explorer это свойство должно иметь значение **IE** или **Internet Explorer**.
 
- **Воспроизведение в веб-браузере, отличном от Internet Explorer.** Для воспроизведения в веб-браузере, отличном от Internet Explorer, измените значение свойства BrowserWindow.CurrentBrowser в тестовом коде на **Firefox** или **Chrome**.
+**Воспроизведение в веб-браузере, отличном от Internet Explorer.** Для воспроизведения в веб-браузере, отличном от Internet Explorer, измените значение свойства BrowserWindow.CurrentBrowser в тестовом коде на **Firefox** или **Chrome**.
 
- Для воспроизведения тестов в веб-браузере, отличном от Internet Explorer, необходимо установить **компоненты Selenium для выполнения закодированных тестов пользовательского интерфейса в различных браузерах**.
+Для воспроизведения тестов в веб-браузере, отличном от Internet Explorer, необходимо установить **компоненты Selenium для выполнения закодированных тестов пользовательского интерфейса в различных браузерах**.
 
 ### <a name="install-selenium-components"></a>Установка компонентов Selenium
 
@@ -120,15 +120,15 @@ ms.locfileid: "62973023"
 
 ## <a name="video-resources"></a>Видеоресурсы
 
- [Запись в IE и воспроизведение в любом браузере](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+[Запись в IE и воспроизведение в любом браузере](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
- [Создание тестов для различных браузеров с помощью построителя закодированных тестов пользовательского интерфейса](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+[Создание тестов для различных браузеров с помощью построителя закодированных тестов пользовательского интерфейса](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
- [Создание тестов для различных браузеров с помощью простой кодировки вручную без карты пользовательского интерфейса](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
+[Создание тестов для различных браузеров с помощью простой кодировки вручную без карты пользовательского интерфейса](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
- [Последовательный запуск тестов для различных браузеров в различных браузерах](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
+[Последовательный запуск тестов для различных браузеров в различных браузерах](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
 
- [Устранение неполадок в случае сбоев тестов для различных браузеров](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
+[Устранение неполадок в случае сбоев тестов для различных браузеров](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ## <a name="see-also"></a>См. также
 

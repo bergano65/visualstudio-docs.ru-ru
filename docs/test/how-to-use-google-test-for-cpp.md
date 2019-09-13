@@ -8,16 +8,16 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 8e918878048eec7dae04b6d9269f664b9e99c567
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 73f62e8b74864af0292a9cc3ab1eb325d679d2ea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226339"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926751"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Использование Google Test для C++ в Visual Studio
 
-В Visual Studio 2017 и более поздних версиях решение Google Test интегрировано в среду Visual Studio как компонент рабочей нагрузки **Разработка классических приложений на C++**. Чтобы проверить, установлен ли этот компонент на компьютере, откройте Visual Studio Installer и найдите Google Test в списке компонентов рабочей нагрузки.
+В Visual Studio 2017 и более поздних версиях решение Google Test интегрировано в среду Visual Studio как компонент рабочей нагрузки **Разработка классических приложений на C++** . Чтобы проверить, установлен ли этот компонент на компьютере, откройте Visual Studio Installer и найдите Google Test в списке компонентов рабочей нагрузки.
 
 ![Установка Google Test](media/cpp-google-component.png)
 
@@ -49,13 +49,13 @@ ms.locfileid: "65226339"
 
 В открывшемся диалоговом окне **Конфигурация тестового проекта** можно выбрать проект, который необходимо тестировать. При выборе проекта Visual Studio добавляет ссылку на него. Если проект не выбран, необходимо вручную добавить ссылки на проекты, которые следует тестировать. При выборе статического или динамического связывания с двоичными файлами Google Test следует учитывать те же факторы, что и в случае с любой другой программой C++. Дополнительные сведения см. в статье [DLL в Visual C++](/cpp/build/dlls-in-visual-cpp).
 
- ![Настройка проекта Google Test](media/cpp-gtest-config.png)
+![Настройка проекта Google Test](media/cpp-gtest-config.png)
 
 ## <a name="set-additional-options"></a>Настройка дополнительных параметров
 
 Чтобы настроить дополнительные параметры, в главном меню выберите **Сервис** > **Параметры** > **Адаптер тестов для Google Test**. Дополнительные сведения об этих параметрах см. в документации по Google Test.
 
- ![Параметры проекта Google Test](media/cpp-gtest-settings.png)
+![Параметры проекта Google Test](media/cpp-gtest-settings.png)
 
 ## <a name="add-include-directives"></a>Добавление директив include
 

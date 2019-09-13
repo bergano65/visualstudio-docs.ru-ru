@@ -3,15 +3,15 @@ title: Удаление Visual Studio для Mac
 description: Инструкции по удалению системы Visual Studio для Mac и связанных с ней инструментов.
 author: asb3993
 ms.author: amburns
-ms.date: 05/06/2018
+ms.date: 08/09/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 65f5dedce42d6f2391c23bc82e37a5228bfe7242
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: bb2da7b181cb8065c310780a27a5f0190971d915
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691906"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108154"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Удаление Visual Studio для Mac
 
@@ -57,7 +57,7 @@ ms.locfileid: "67691906"
     sudo ./uninstall-vsmac.sh
     ```
 
-4. Наконец, удалите этот скрипт удаления.
+4. Наконец, удалите скрипт удаления и Visual Studio для Mac с панели закрепления (если программа там есть).
 
 ### <a name="net-core-script"></a>Скрипт .NET Core
 
@@ -222,6 +222,12 @@ rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
+
+* * * 
+
+
+
+
 
 ## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Удаление Visual Studio 2019 для Mac (предварительная версия)
 

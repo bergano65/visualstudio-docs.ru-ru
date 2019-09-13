@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: e4f238046e671371a1fe83a3f5b9552b3956be8f
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046855"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490670"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Советы по повышению продуктивности при работе в Visual Studio
 
@@ -46,7 +46,7 @@ ms.locfileid: "67046855"
 
 ## <a name="navigate-within-your-code"></a>Перемещение по коду
 
- Существует множество способов быстрого поиска нужных мест в коде и перехода к этим местам.
+Существует множество способов быстрого поиска нужных мест в коде и перехода к этим местам.
 
 - **Создание закладок для строк кода**. Для быстрого перехода к определенным строкам кода в файле можно использовать закладки.
 
@@ -142,6 +142,7 @@ ms.locfileid: "67046855"
 
 ## <a name="see-also"></a>См. также
 
+- [Публикация блога с советами и рекомендациями по Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Сочетания клавиш по умолчанию для часто используемых команд](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Практическое руководство. настройка меню и панелей инструментов](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 - [Пошаговое руководство: создание простого приложения](../get-started/csharp/tutorial-wpf.md)

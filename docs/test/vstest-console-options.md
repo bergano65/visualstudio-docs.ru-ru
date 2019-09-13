@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 147ec9096be430d0bc81be65fdf68f927c0f3dac
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 34b38ca89e33fd1f3ab8d309c6f55822bf8b7107
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661944"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551816"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Параметры командной строки для VSTest.Console.exe
 
@@ -41,7 +41,7 @@ ms.locfileid: "68661944"
 |**/UseVsixExtensions**|Процесс *vstest.console.exe* будет использовать или пропускать установленные расширения VSIX (если они имеются) при запуске тестов.<br />Этот параметр использовать не рекомендуется. Уже в следующем основном выпуске Visual Studio этот параметр может быть удален. Переходите на использование расширений, доступных в виде пакета NuGet.<br />Пример: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*путь*]**|Процесс *vstest.console.exe* в тестовом запуске будет использовать адаптеры пользовательских тестов по указанному пути (если они там есть).<br />Пример: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*тип платформы*]**|Архитектура целевой платформы, которая должна использоваться для выполнения тестов.<br />Допустимые значения — x86, x64 и ARM.|
-|**/Framework: [*версия платформы*]**|Целевая версия .NET, которую следует использовать для выполнения тестов.<br />Допустимые значения — Framework35, Framework40, Framework45 и FrameworkUap10.<br />Если целевая версия платформы задана как **Framework35**, тесты выполняются в "режиме совместимости" среды CLR 4.0.<br />Пример: `/Framework:framework40`|
+|**/Framework: [*версия платформы*]**|Целевая версия .NET, которую следует использовать для выполнения тестов.<br />Примеры значений: `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10`, `.NETCoreApp,Version=v1.1`.<br />Если целевая версия платформы задана как **Framework35**, тесты выполняются в "режиме совместимости" среды CLR 4.0.<br />Пример: `/Framework:framework40`|
 |**/TestCaseFilter:[*выражение*]**|Запуск тестов, соответствующих заданному выражению.<br /><Выражение\> формата <свойство\>=<значение\>[\|<Выражение\>].<br />Пример: `/TestCaseFilter:"Priority=1"`<br />Пример: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Параметр командной строки **/TestCaseFilter** нельзя использовать с параметром командной строки **/Tests**. <br />Сведения о создании и использовании выражений см. в разделе [Фильтр TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Отображает сведения об использовании.|
 |**/Logger:[*uri/понятное имя*]**|Укажите средство ведения журнала результатов тестирования.<br />Пример чтобы регистрировать результаты в файле результатов теста Visual Studio (TRX), используйте **/Logger:trx**.<br />Пример чтобы опубликовать результаты теста в TFS, используйте TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url проекта\>;**<br />**BuildName=<имя сборки\>;**<br />**TeamProject=< имя проекта\>;**<br />**[;Platform=\<"Любой ЦП" по умолчанию>]**<br />**[;Flavor=\<"Отладка" по умолчанию>]**<br />**[;RunTitle=<заголовок\>]**|

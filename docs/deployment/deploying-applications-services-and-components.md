@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533362"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222622"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Знакомство с возможностями развертывания в Visual Studio
 
@@ -96,6 +96,13 @@ ms.locfileid: "68533362"
 - **Классические приложения Windows**. Начиная с версии Visual Studio 2017 15.4, вы можете выполнять развертывание в Microsoft Store, используя мост для классических приложений. Для этого сначала необходимо создать проект упаковки приложений Windows. Дополнительные сведения см. в статье [Упаковка классического приложения для Microsoft Store (мост для классических приложений)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Мост для классических приложений](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>Развертывание пакетов .NET в NuGet.org
+
+Чтобы развернуть упакованный код в "пакеты", содержащие скомпилированный код (в виде библиотек DLL) вместе с другим содержимым, необходимым в проектах, в которых используются эти пакеты, можно использовать Visual Studio для создания пакета NuGet и средство CLI для выполнения команды окончательного развертывания.
+
+- [Создание и публикация пакета .NET Standard](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [Создание и публикация пакета .NET Framework](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>Развертывание на устройство (универсальная платформа Windows)
 

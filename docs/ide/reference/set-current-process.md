@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f4c08147f72168f5207418a51d7a9cfa8a2b51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8d4c23934ddb6a838344eb6252f6002a5ecf10d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934553"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926092"
 ---
 # <a name="set-current-process"></a>Команда Set Current Process
 Задает указанный процесс в качестве активного процесса в отладчике.
@@ -28,12 +28,12 @@ Debug.SetCurrentProcess index
 ```
 
 ## <a name="arguments"></a>Аргументы
- `index`
+`index`
 
- Обязательный. Индекс процесса.
+Обязательный. Индекс процесса.
 
 ## <a name="remarks"></a>Примечания
- Во время отладки можно подключиться к нескольким процессам, но в любой момент времени только один из них будет активным в отладчике. Чтобы задать активный процесс, можно использовать команду `SetCurrentProcess`.
+Во время отладки можно подключиться к нескольким процессам, но в любой момент времени только один из них будет активным в отладчике. Чтобы задать активный процесс, можно использовать команду `SetCurrentProcess`.
 
 ## <a name="example"></a>Пример
 
@@ -41,7 +41,7 @@ Debug.SetCurrentProcess index
 >Debug.SetCurrentProcess 1
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)

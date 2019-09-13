@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5f3bd1dfe66451ceff0b3af334a75aafb2e0b1
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: fafa4782762e18f1ced8c7f929720e995986ac7a
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841625"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546865"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231. Перегрузите оператор равенства на переопределяющем типе ValueType.Equals
 
@@ -31,20 +31,20 @@ ms.locfileid: "65841625"
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|
 |CheckId|CA2231|
-|Категория|Microsoft.Usage|
+|Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
 ## <a name="cause"></a>Причина
 
 Тип значения переопределяет <xref:System.Object.Equals%2A?displayProperty=fullName> , но не реализует оператор равенства.
 
-По умолчанию это правило считывает только типы, видимые извне, но это [можно настроить](#configurability).
+По умолчанию это правило рассматривает только видимые извне типы, но это можно [настроить](#configurability).
 
 ## <a name="rule-description"></a>Описание правила
 
-В большинстве языков программирования отсутствует реализация по умолчанию от оператора равенства (==) для типов значений. Если язык программирования поддерживает перегрузки операторов, следует реализовать оператор равенства. Его поведение должно быть идентично <xref:System.Object.Equals%2A>.
+В большинстве языков программирования отсутствует стандартная реализация оператора равенства (= =) для типов значений. Если ваш язык программирования поддерживает перегрузки операторов, следует рассмотреть возможность реализации оператора равенства. Его поведение должно быть идентично <xref:System.Object.Equals%2A>его поведению.
 
-Оператор проверки на равенство по умолчанию нельзя использовать в перегруженной реализации оператора равенства. Это приведет к переполнению стека. Чтобы реализовать оператор равенства, используйте метод Object.Equals в реализации. Пример:
+Нельзя использовать оператор равенства по умолчанию в перегруженной реализации оператора равенства. Это приведет к переполнению стека. Чтобы реализовать оператор равенства, используйте метод Object. Equals в реализации. Например:
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -64,33 +64,33 @@ return left.Equals(right);
 
 Чтобы устранить нарушение этого правила, реализуйте оператор равенства.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Его можно безопасно подавить предупреждение из этого правила; Тем не менее мы рекомендуем по возможности укажите оператор равенства.
+Можно спокойно отключить предупреждение из этого правила. Однако рекомендуется по возможности указать оператор равенства.
 
-## <a name="configurability"></a>Возможность настройки
+## <a name="configurability"></a>Возможности настройки
 
-Если у вас это правило из [анализаторы FxCop](install-fxcop-analyzers.md) (а не с помощью функций анализа статического кода), можно настроить, какие части вашей базы кода, чтобы применить это правило, в зависимости от их доступности. Например чтобы указать, что правило должно выполняться только для рабочей области не являющийся открытым API, добавьте следующую пару "ключ значение" файла editorconfig в проект:
+Если вы используете это правило из [анализаторов FxCop](install-fxcop-analyzers.md) (а не для анализа прежних версий), можно настроить, на какие части базы кода следует запускать это правило, в зависимости от их доступности. Например, чтобы указать, что правило должно выполняться только для поверхности API, не являющейся общедоступной, добавьте следующую пару "ключ-значение" в файл. editorconfig в проекте:
 
 ```ini
 dotnet_code_quality.ca2231.api_surface = private, internal
 ```
 
-В этой категории (использование), можно настроить этот параметр для только что это правило, для всех правил или для всех правил. Дополнительные сведения см. в разделе [анализаторы FxCop, Настройка](configure-fxcop-analyzers.md).
+Этот параметр можно настроить только для этого правила, для всех правил или для всех правил в этой категории (использование). Дополнительные сведения см. в статье [Настройка средств FxCop Analyzer](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Пример
 
-В следующем примере определяется тип, который нарушает это правило:
+В следующем примере определяется тип, нарушающий это правило:
 
 [!code-csharp[FxCop.Usage.EqualsGetHashCode#1](../code-quality/codesnippet/CSharp/ca2231-overload-operator-equals-on-overriding-valuetype-equals_1.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1046: Не перегружайте оператор равенства для ссылочных типов](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
-- [CA2225: Оператор дополнения с именами](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
-- [CA2226: Операторы должны быть симметричны](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
-- [CA2224: Переопределяйте равенство при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
-- [CA2218: Переопределяйте GetHashCode при переопределении Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+- [CA1046: Не перегружать оператор Equals в ссылочных типах](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+- [CA2225 Перегрузки операторов имеют именованные варианты](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+- [CA2226: Операторы должны иметь симметричные перегрузки](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+- [CA2224: Переопределять Equals при перегрузке оператора равенства](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+- [CA2218: Переопределять GetHashCode при переопределении Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
 ## <a name="see-also"></a>См. также
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f7488353cd4c64b0afca27060c364a1f9ddc6f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f455306a87c82c5cd4fe55ccacdbba070b4467c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950442"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926026"
 ---
 # <a name="start-command"></a>Команда Start
 Начинает отладку запускаемого проекта.
@@ -30,21 +30,21 @@ Debug.Start [address]
 ```
 
 ## <a name="arguments"></a>Аргументы
- `address`
+`address`
 
- Необязательный параметр. Адрес, по которому программа приостанавливает выполнение, сходен с точкой останова в исходном коде. Этот аргумент применяется только в режиме отладки.
+Необязательный параметр. Адрес, по которому программа приостанавливает выполнение, сходен с точкой останова в исходном коде. Этот аргумент применяется только в режиме отладки.
 
 ## <a name="remarks"></a>Примечания
- При запуске команды **Запустить** она выполняет операцию RunToCursor по указанному адресу.
+При запуске команды **Запустить** она выполняет операцию RunToCursor по указанному адресу.
 
 ## <a name="example"></a>Пример
- Этот пример запускает отладчик и игнорирует все возникающие исключения.
+Этот пример запускает отладчик и игнорирует все возникающие исключения.
 
 ```cmd
 >Debug.Start
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 - [Команды Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Командное окно](../../ide/reference/command-window.md)

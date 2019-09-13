@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7dfcc4a01dfd5e9b63dc16afa0c2b3286419c193
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: dc1bddc83e094289eb2364e7d88b56536ab18bd2
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820653"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180225"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Введение в интегрированную среду разработки Visual Studio (Visual Basic)
 
@@ -203,7 +203,7 @@ ms.locfileid: "66820653"
 
 ::: moniker range=">=vs-2019"
 
-Чтобы начать работу, [скачайте](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) и установите Visual Studio. Этот модульный установщик позволяет выбрать и установить *рабочие нагрузки*, которые являются группами функций, необходимыми для предпочитаемого языка программирования или платформы. Выполните следующие инструкции по [созданию программы](#create-a-program) и в процессе установки выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core**.
+Чтобы начать работу, [скачайте](https://visualstudio.microsoft.com/downloads) и установите Visual Studio. Этот модульный установщик позволяет выбрать и установить *рабочие нагрузки*, которые являются группами функций, необходимыми для предпочитаемого языка программирования или платформы. Выполните следующие инструкции по [созданию программы](#create-a-program) и в процессе установки выберите рабочую нагрузку **Кроссплатформенная разработка .NET Core**.
 
 ::: moniker-end
 

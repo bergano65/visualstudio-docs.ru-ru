@@ -1,6 +1,6 @@
 ---
 title: Практическое руководство. настройку целевых платформ в проектах
-ms.date: 11/04/2016
+ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faef9f55a88385953a121574f761193cc8c11ea9
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416832"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634924"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Практическое руководство. настройку целевых платформ в проектах
 
@@ -64,9 +64,60 @@ Visual Studio позволяет настраивать приложения д�
 
 - Для проектов [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] см. статью [/clr (компиляция CLR)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
+## <a name="manually-editing-the-project-file"></a>Изменение файла проекта вручную
+
+Иногда необходимо вручную изменить файл проекта, чтобы выполнить ряд пользовательских настроек. Это бывает нужно сделать, к примеру, при наличии условий, которые не могут быть указаны в интегрированной среде разработки (ссылка, имеющая разный вид для двух разных платформ, как показано в следующем примере).
+
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Пример Ссылки на сборки x86 и x64 и библиотеки DLL
+
+У вас может быть сборка .NET или библиотека DLL с версиями x86 и x64. Чтобы настроить проект для использования этих ссылок, сначала добавьте ссылку, а затем откройте файл проекта и измените его, чтобы добавить `ItemGroup` с условием, которое ссылается как на конфигурацию, так и на целевую платформу.  Например, предположим, что вы ссылаетесь на двоичный файл ClassLibrary1, и существуют разные пути для конфигураций отладки и выпуска, а также версии x86 и x64.  Используйте четыре элемента `ItemGroup` со всеми сочетаниями параметров, как показано далее:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
+```
+
+::: moniker range="vs-2017"
+> [!NOTE]
+> Перед изменением файла проекта в Visual Studio 2017 сначала необходимо выгрузить проект. Для этого щелкните узел проекта правой кнопкой мыши и выберите пункт **Выгрузить проект**. После редактирования сохраните изменения и перезагрузите проект, щелкнув правой кнопкой мыши узел проекта и выбрав пункт **Перезагрузить проект**.
+::: moniker-end
+
+Дополнительные сведения о файле проекта см. в статье [Справочные сведения о схеме файлов проектов MSBuild](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+
 ## <a name="see-also"></a>См. также
 
 - [Общие сведения о платформах построения](../ide/understanding-build-platforms.md)
 - [/platform (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [64-разрядные приложения](/dotnet/framework/64-bit-apps)
 - [Поддержка 64-разрядных сред IDE Visual Studio](../ide/visual-studio-ide-64-bit-support.md)
+- [Общие сведения о файле проекта](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)

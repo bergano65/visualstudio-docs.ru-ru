@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2c95a460f7e3003db5cdec67e5bf142295719a
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416926"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925829"
 ---
 # <a name="understand-build-platforms"></a>Общие сведения о платформах сборки
 
@@ -30,9 +30,11 @@ ms.locfileid: "68416926"
 
 ## <a name="in-this-section"></a>Содержание раздела
 
- [Практическое руководство. Настройка проекта для конкретной платформы](../ide/how-to-configure-projects-to-target-platforms.md) Описание настройки проекта для определенной платформы.
+[Практическое руководство. Настройка целевых платформ в проектах](../ide/how-to-configure-projects-to-target-platforms.md)\
+Описание настройки проекта для определенной платформы.
 
- [Практическое руководство. Настройка проекта для нескольких платформ](../ide/how-to-configure-projects-to-target-multiple-platforms.md) Описание настройки проекта для нескольких платформ.
+[Практическое руководство. Настройка проектов для нескольких платформ](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+Описание настройки проекта для нескольких платформ.
 
 ## <a name="see-also"></a>См. также
 
