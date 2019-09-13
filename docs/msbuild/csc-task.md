@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39287eb2b1aec27dcb0c08c40875ce579b3a6bea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9df54befff79b82703cb363fea92536285c68232
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745785"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888027"
 ---
 # <a name="csc-task"></a>Csc - задача
 Использует программу-оболочку для файла *csc.exe* и создает исполняемые файлы (*EXE*-файлы), библиотеки динамической компоновки (*DLL*-файлы) или модули кода (*NETMODULE*-файлы). Дополнительные сведения о программе *csc.exe* см. в разделе [Параметры компилятора C#](/dotnet/csharp/language-reference/compiler-options/index).
@@ -31,7 +31,7 @@ ms.locfileid: "66745785"
 ## <a name="parameters"></a>Параметры
 В следующей таблице приводятся параметры задачи `Csc` .
 
-| Параметр | Описание |
+| Параметр | ОПИСАНИЕ |
 |------------------------------| - |
 | `AdditionalLibPaths` | Необязательный параметр `String[]` .<br /><br /> Задает дополнительные каталоги для поиска ссылок. Дополнительные сведения см. в разделе [-lib (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option). |
 | `AddModules` | Необязательный параметр `String` .<br /><br /> Задает один или несколько модулей, которые должны быть частью сборки. Дополнительные сведения см. в разделе [-addmodule (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option). |
@@ -42,7 +42,7 @@ ms.locfileid: "66745785"
 | `CodePage` | Необязательный параметр `Int32` .<br /><br /> Задает кодовую страницу, которая будет использоваться для всех файлов исходного кода при компиляции. Дополнительные сведения см. в разделе [-codepage (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option). |
 | `DebugType` | Необязательный параметр `String` .<br /><br /> Задает тип отладки. `DebugType` может иметь значение `full`или `pdbonly`. По умолчанию задано значение `full`, разрешающее подключение отладчика к исполняемой программе. Значение `pdbonly` разрешает отладку исходного кода при запуске программы в отладчике, но при этом ассемблерный код отображается только при подключении исполняемой программы к отладчику.<br /><br /> Этот параметр переопределяет параметр `EmitDebugInformation`.<br /><br /> Дополнительные сведения см. в разделе [-debug (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option). |
 | `DefineConstants` | Необязательный параметр `String` .<br /><br /> Определяет символы препроцессора. Дополнительные сведения см. в разделе [-define (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option). |
-| `DelaySign` | Необязательный параметр `Boolean` .<br /><br /> Значение `true` предписывает создание полностью подписанной сборки. Значение `false` предписывает лишь поместить в сборку открытый ключ.<br /><br /> Этот параметр не оказывает никакого эффекта, если не используется вместе с параметром `KeyFile` или `KeyContainer`.<br /><br /> Дополнительные сведения см. в разделе [-delaysign (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
+| `DelaySign` | Необязательный параметр `Boolean` .<br /><br /> Значение `true` предписывает лишь поместить в сборку открытый ключ. Значение `false` предписывает создание полностью подписанной сборки.<br /><br /> Этот параметр не оказывает никакого эффекта, если не используется вместе с параметром `KeyFile` или `KeyContainer`.<br /><br /> Дополнительные сведения см. в разделе [-delaysign (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
 | `Deterministic` | Необязательный параметр `Boolean` .<br/><br/> Если задано значение `true`, компилятор будет выдавать сборку, чье двоичное содержимое идентично в разных компиляциях, если входные данные идентичны.<br/><br/>Дополнительные сведения см. в разделе [-deterministic (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option). |
 | `DisabledWarnings` | Необязательный параметр `String` .<br /><br /> Задает список предупреждений, которые следует отключить. Дополнительные сведения см. в разделе [-nowarn (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option). |
 | `DocumentationFile` | Необязательный параметр `String` .<br /><br /> Обрабатывает комментарии к документации в XML-файл. Дополнительные сведения см. в разделе [-doc (параметры компилятора C#)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option). |

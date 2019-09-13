@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c3456ab48822873fb51ad8614ff9a6dd5f07598
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.openlocfilehash: f3f9c0f4913c80e1cf2f2fee24dbed5ad910ca75
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976716"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887793"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Практическое руководство. Подписание манифестов приложения и развертывания
 
@@ -71,7 +71,7 @@ ms.locfileid: "69976716"
 4. Введите пароль для доступа к файлу ключа и нажмите клавишу **ВВОД**.
 
 > [!NOTE]
-> *PFX*-файл не может содержать сведения о цепочке сертификатов. Если содержит, произойдет следующая ошибка импорта: **Не удается найти сертификат и закрытый ключ для расшифровки**.
+> *PFX*-файл не может содержать сведения о цепочке сертификатов. Если содержит, произойдет следующая ошибка импорта: **Не удается найти сертификат и закрытый ключ для расшифровки**. Чтобы удалить сведения о цепочке сертификатов, можно использовать *Certmgr.msc* и [отключить параметр](/previous-versions/aa730868(v=vs.80)?redirectedfrom=MSDN#rsvssign_topic3) **Включить все сертификаты** при экспорте файла PFX.
 
 ## <a name="sign-using-a-test-certificate"></a>Вход с использованием тестового сертификата
 
