@@ -126,8 +126,12 @@
               href: edit-and-continue-visual-basic.md
             - name: '"Изменить и продолжить" в режиме приостановки выполнения'
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: Создание и отладка выполняющегося кода XAML
-          href: xaml-hot-reload.md
+        - name: Горячая перезагрузка XAML
+          items:
+            - name: Создание и отладка выполняющегося кода XAML
+              href: xaml-hot-reload.md
+            - name: Устранение неполадок горячей перезагрузки XAML
+              href: xaml-hot-reload-troubleshooting.md
         - name: 'Функция "Изменить и продолжить" не поддерживается для языка F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Просмотр данных отладчика
@@ -664,7 +668,7 @@
           href: dump-file-summary-extensibility-api.md
     - name: Безопасность отладчика
       href: debugger-security.md
-- name: Справочники
+- name: Справочник
   items:
     - name: Справочник по пользовательскому отладочному интерфейсу
       items:
