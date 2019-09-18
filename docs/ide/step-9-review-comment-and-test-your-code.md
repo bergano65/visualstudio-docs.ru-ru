@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34f4b8272494e4d1bdef1f073cf602a6c2397445
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 86f9cd4d5b0f7af2c543c2fdcea8864d092d2971
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887932"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062431"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Шаг 9. Проверка, комментирование и тестирование кода
 
@@ -61,7 +61,7 @@ ms.locfileid: "70887932"
     > Используйте элемент управления языка программирования в правом верхнем углу этой страницы, чтобы просмотреть фрагмент кода на C# или Visual Basic.<br><br>![Элемент управления языка программирования для Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
-     
+
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
 
     Обработчик события <xref:System.Windows.Forms.Control.Click> кнопки **showButton** завершен и работает. Написание кода было начато с оператора `if`. Оператор `if` как будто говорит приложению: "Проверь это условие. Если оно выполняется, выполни эти действия". В данном случае приложению дается указание открыть диалоговое окно **Открыть файл** и, если пользователь выбирает файл и нажимает кнопку **OK**, загрузить этот файл в элемент управления **PictureBox**.
