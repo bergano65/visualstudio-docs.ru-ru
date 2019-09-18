@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b5591d9c05ee0449b9ff77729d73722c18e4d3a
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987655"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012606"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Запись и отладка выполняемого кода XAML с помощью горячей перезагрузки XAML в Visual Studio
 
@@ -66,4 +66,5 @@ ms.locfileid: "70987655"
 
 ## <a name="see-also"></a>См. также
 
-[Устранение неполадок](xaml-hot-reload-troubleshooting.md)при горячей перезагрузке[XAML для Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload) 
+* [Устранение неполадок при горячей загрузке XAML](xaml-hot-reload-troubleshooting.md)
+* [Горячая перезагрузка XAML для Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)

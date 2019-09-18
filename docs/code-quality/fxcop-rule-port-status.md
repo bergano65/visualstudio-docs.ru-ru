@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551069"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062405"
 ---
 # <a name="fxcop-rule-port-status"></a>Состояние порта правила FxCop
 
@@ -69,7 +69,7 @@ ms.locfileid: "69551069"
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Не вызывайте исключения в непредвиденных местах
 CA1066 | Тип {0} должен реализовывать IEquatable\<T > так как он переопределяет Equals
 CA1067 | Переопределить Object. Equals (Object) при реализации\<IEquatable T >
-CA1068 | Параметры CancellationToken должны быть последними
+[CA1068](ca1068.md) | Параметры CancellationToken должны быть последними
 CA1200 | Избегайте использования тегов cref с префиксом
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Не передавайте литералы в качестве локализованных параметров
 [CA1304](ca1304-specify-cultureinfo.md) | Указывайте CultureInfo
