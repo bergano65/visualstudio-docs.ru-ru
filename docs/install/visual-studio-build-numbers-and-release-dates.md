@@ -5,19 +5,19 @@ description: Список выпущенных версий и номеров с
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/10/2019
+ms.date: 09/16/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 79d16498b146a09f22d542423d4b691a2573e80d
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: f489d453e75031ddb9bd26e59cd4af182301c159
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887996"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062387"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Номера сборки и даты выпуска Visual Studio
 
@@ -29,6 +29,7 @@ ms.locfileid: "70887996"
 
 | **Version**| **Канал** | **Дата выпуска** | **Версия сборки** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.0 | Предварительная версия 4 | 16 сентября 2019 г. | 16.3.29311.281 |
 | 16.2.5 | Выпуск | 10 сентября 2019 г. | 16.2.29306.81 |
 | 16.0.8 | Выпуск | 10 сентября 2019 г. | 16.0.28803.584 |
 | 16.2.4 | Выпуск | 5 сентября 2019 г. | 16.2.29230.47 |
@@ -40,7 +41,7 @@ ms.locfileid: "70887996"
 | 16.2.1 | Выпуск | 6 августа 2019 г. | 16.2.29201.188 |
 | 16.2.0 | Выпуск | 24 июля 2019 г. | 16.2.29123.88 |
 | 16.3.0 | Предварительная версия 1 | 24 июля 2019 г. | 16.3.29123.89 |
-| 16.2.0 | Предварительная версия 4 | 16 июля 2019 г. | 16.2.29111.141 |
+| 16.2.0 | Предварительная версия 4 | 16 июля 2019 г. | 16.2.29111.141 |
 | 16.1.6 | Выпуск | 9 июля 2019 г. | 16.1.29102.190 |
 | 16.0.6 | Выпуск | 9 июля 2019 г. | 16.0.28803.540 |
 | 16.1.5 | Выпуск | 2 июля 2019 г. | 16.1.29025.244 |
