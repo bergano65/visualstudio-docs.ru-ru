@@ -42,6 +42,8 @@
       items:
         - name: Использование точек останова
           href: using-breakpoints.md
+        - name: Использование точек трассировки
+          href: using-tracepoints.md
         - name: Устранение неполадок точек останова
           href: troubleshooting-breakpoints.md
     - name: Проверка данных
