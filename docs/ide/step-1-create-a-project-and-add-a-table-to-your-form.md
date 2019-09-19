@@ -1,21 +1,24 @@
 ---
 title: Шаг 1. Создание проекта и добавление таблицы в форму
 ms.date: 05/31/2019
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ebd8469eb763af9565609dd680ba1e256ed6c5
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 0e7d11f023cc239a3aaa4124cb1ac12a4e4ae9eb
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501147"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079605"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Шаг 1. Создание проекта и добавление таблицы в форму
 
@@ -122,9 +125,9 @@ ms.locfileid: "66501147"
    > [!NOTE]
    > Если выполнить команду вставки слишком много раз, интегрированная среда разработки добавит новую строку в TableLayoutPanel, чтобы появилось место для добавления нового элемента управления Label. Можно выполнить откат. Чтобы удалить новую ячейку, нажмите сочетание клавиш **CTRL**+**Z** или в меню выберите **Правка** > **Отменить**.
 
-    Теперь ваша форма готова. Она должна быть такой, как показано на следующем рисунке.
+    Теперь ваша форма готова. Она будет выглядеть примерно так, как показано на рисунке ниже.
 
-    ![Исходная форма игры "Подбери пару!"](../ide/media/express_tut4step1.png)<br/>   Исходная форма игры "Подбери пару!"
+    ![Исходная форма игры на сопоставление](../ide/media/express_tut4step1.png)<br/>*Исходная форма игры на сопоставление*
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 

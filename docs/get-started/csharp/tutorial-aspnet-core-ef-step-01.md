@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6668648668ab71e033d1341d71ecf5c7c2a47554
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
+ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261727"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70977446"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Учебник. Создайте первое приложение ASP.NET Core с помощью Entity Framework в Visual Studio 2019
 
@@ -88,7 +88,7 @@ Visual Studio должен автоматически запуститься п�
 - Рабочие или учебные учетные записи. В этом параметре для идентификации используется Active Directory, Azure AD или Office 365.
 - Проверка подлинности Windows. Подходит для приложений интрасети.
 
-Выберите стандартный шаблон веб-приложения без проверки подлинности и нажмите кнопку **OK**.
+Выберите стандартный шаблон веб-приложения без проверки подлинности и нажмите кнопку **Создать**.
 
 ![Выбор параметров проекта ASP.NET Core в Visual Studio 2019](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 

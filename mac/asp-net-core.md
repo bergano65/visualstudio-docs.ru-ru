@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 9dcd1b65e9d8ea60f082304b4f84a7108efb99a6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692948"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913317"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Начало работы с ASP.NET Core
 
@@ -38,7 +38,7 @@ ms.locfileid: "67692948"
 
 ![Параметры проекта ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 
-Выберите **Пустое веб-приложение ASP.NET Core** и нажмите кнопку **Далее**. Присвойте проекту имя и нажмите кнопку **Создать**. Создается приложение ASP.NET Core, которое выглядит приблизительно следующим образом:
+Выберите **Пустое веб-приложение ASP.NET Core** и нажмите кнопку **Далее**. Присвойте проекту имя и нажмите кнопку **Создать**. Будет создано приложение ASP.NET Core. В левой области панели решения разверните вторую стрелку и выберите файл **Startup.cs**. Он должен выглядеть, как на рисунке ниже.
 
 ![Новое представление пустого проекта ASP.NET Core](media/asp-net-core-2019-empty-project.png)
 

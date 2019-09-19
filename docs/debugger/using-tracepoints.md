@@ -1,6 +1,6 @@
 ---
 title: Использование точек трассировки в отладчике | Документация Майкрософт
-ms.date: 9/4/2019
+ms.date: 9/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9d96290474283164ed9761a0cb9aa7734f1a9d
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
-ms.translationtype: HT
+ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71069034"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095265"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Использование точек трассировки в отладчике Visual Studio
 
@@ -96,7 +96,6 @@ ms.locfileid: "71069034"
 
 ![Условное выражение при изменении](../debugger/media/conditionalexpressionwhenchanged.png "Условное выражение при изменении")
 
-
 Поведение параметра **при изменении** отличается для разных языков программирования.
 
 - Для машинного кода отладчик не учитывает первое вычисление условия как изменение, поэтому не достигает точки трассировки при первом вычислении.
@@ -133,3 +132,11 @@ ms.locfileid: "71069034"
 Иногда при проверке свойства или атрибута объекта его значение может измениться. Это не ошибка, вызванная самой функцией трассировки, но стоит упомянуть, что использование точек отслеживания для проверки объектов не позволяет избежать этих случайных изменений.
 
 Способ вычисления выражений в окне сообщения **действия** может отличаться от языка, который в настоящее время используется для разработки. Например, чтобы вывести строку, не нужно заключать сообщение в кавычки, даже если обычно используется `Debug.WriteLine()` или. `console.log()` Кроме того, синтаксис фигурных скобок (`{ }`) для выражений вывода также может отличаться от соглашения о выводе значений на языке разработки. (Однако содержимое внутри фигурных скобок (`{ }`) должно быть написано с использованием синтаксиса языка разработки).
+
+## <a name="see-also"></a>См. также
+
+- [Что такое отладка?](../debugger/what-is-debugging.md)
+- [Написание C# лучшего кода с помощью Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [Первый взгляд на отладку](../debugger/debugger-feature-tour.md)
+- [Выражения в отладчике](expressions-in-the-debugger.md)
+- [Использование точек останова](../debugger/using-breakpoints.md)

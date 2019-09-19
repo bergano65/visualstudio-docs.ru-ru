@@ -1,6 +1,6 @@
 ---
-title: Шаг 11. Запуск приложения и изучение других функций
-ms.date: 08/30/2019
+title: Шаг 11. Запуск приложения для просмотра изображений и изучение других функций
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e82e0002255a406f02f85cbb2636be1aa249529
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887949"
+ms.locfileid: "70913130"
 ---
-# <a name="step-11-run-your-app-and-try-other-features"></a>Шаг 11. Запуск приложения и изучение других функций
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Шаг 11. Запуск приложения для просмотра изображений и изучение других функций
 
-Разработка приложения завершена, и оно готово для выполнения. Вы можете запустить приложение и задать цвет фона для <xref:System.Windows.Forms.PictureBox>. В качестве дополнительного занятия попробуйте улучшить приложение, изменив цвет формы, настроив кнопки и флажки и изменив свойства формы.
+Разработка приложения для просмотра изображений завершена, и оно готово для выполнения. Вы можете запустить приложение и задать цвет фона для <xref:System.Windows.Forms.PictureBox>. В качестве дополнительного занятия попробуйте улучшить приложение, изменив цвет формы, настроив кнопки и флажки и изменив свойства формы.
 
 ## <a name="how-to-run-your-app-and-set-the-background-color"></a>Запуск приложения и настройка цвета фона
 
