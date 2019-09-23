@@ -1,0 +1,90 @@
+### YamlMime:Landing
+title: Документация по развертыванию Visual Studio
+summary: Сведения о развертывании приложений, служб и компонентов с помощью Visual Studio
+metadata:
+  title: Развертывание в Visual Studio
+  description: Сведения об использовании Visual Studio для развертывания приложений, служб и компонентов.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/17/2019
+  ms.openlocfilehash: e682940552de083c167ac573b37d1ba5b7f10a4a
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71130603"
+landingContent:
+- title: О развертывании
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Общие сведения о развертывании
+      url: deploying-applications-services-and-components-resources.md
+    - text: Первое знакомство с развертыванием
+      url: deploying-applications-services-and-components.md
+- title: Начало работы
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Публикация в службу приложений Azure
+      url: quickstart-deploy-to-azure.md
+    - text: Публикация в службе приложений для Linux
+      url: quickstart-deploy-to-linux.md
+    - text: Публикация на веб-сайте
+      url: quickstart-deploy-to-a-web-site.md
+    - text: Публикация в локальную папку
+      url: quickstart-deploy-to-local-folder.md
+- title: Развертывание приложений .NET
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Развертывание приложений .NET Core
+      url: /dotnet/core/deploying/deploy-with-vs
+    - text: Развертывание классического приложения с помощью ClickOnce
+      url: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
+    - text: Сборка приложений ClickOnce из командной строки
+      url: building-clickonce-applications-from-the-command-line.md
+  - linkListType: how-to-guide
+    links:
+    - text: Упаковка классического приложения для Microsoft Store
+      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+- title: Развертывание пакетов .NET в NuGet.org
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Публикация на NuGet.org (.NET Standard)
+      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
+    - text: Публикация на NuGet.org (.NET Framework)
+      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework
+- title: Развертывание приложений ASP.NET
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Публикация ASP.NET Core в Azure
+      url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vsd
+    - text: Импорт параметров публикации и развертывание в IIS
+      url: tutorial-import-publish-settings-iis.md
+    - text: Публикация с помощью GIT
+      url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
+- title: Развертывание приложений C++
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Развертывание с помощью проекта установки (C/C++)
+      url: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md
+    - text: Упаковка классического приложения для Microsoft Store
+      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+- title: Развертывание приложений Python
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Публикация в службу приложений Linux
+      url: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
+- title: Развертывание приложений Node.js
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Публикация в службу приложений Linux
+      url: ../javascript/publish-nodejs-app-azure.md
