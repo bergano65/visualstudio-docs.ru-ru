@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b918559742e9570ba3ad0ad1233ab643d087fdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63d393e5ab056f16e54382b2295a667f079ede95
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852250"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211169"
 ---
 # <a name="debugging-applications"></a>Отладка приложений
 В следующих разделах выполняется отладка приложений определенных типов. Для разных типов приложений и для разных языков требуются разные параметры и методы, а также в них возникают разные проблемы, которые требуют отладки.
@@ -27,11 +27,13 @@ ms.locfileid: "62852250"
 
 |||
 |-|-|
-|[Отладка приложений UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|В этой статье описывается отладка приложений UWP.|
-|[Отладка управляемого кода](../debugger/debugging-managed-code.md)|Способы отладки управляемого кода (Visual C#, Visual Basic и F3).|
+|[Отладка приложений UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Описание отладки приложений UWP.|
+|[Отладка управляемого кода](../debugger/debugging-managed-code.md)|Описывает отладку управляемого кода (Visual C#, Visual Basic, F#и C++/CLI).|
 |[Отладка машинного кода](../debugger/debugging-native-code.md)|Способы отладки разных приложений с машинным кодом C++.|
 |[Отладка кода GPU](../debugger/debugging-gpu-code.md)|Способы отладки кода C++, выполняющегося в GPU.|
 |[Диагностика графики (отладка графики DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Способы отладки графики DirectX.|
-|[Отладка приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|В этой статье описывается отладка приложений ASP.NET.|
-|[Отладка веб-приложений](../debugger/debugging-web-applications.md)|Описывает, как выполнить отладку веб-приложений.|
+|[Отладка приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Описание отладки приложений ASP.NET.|
+|[Отладка кода Python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Описание отладки кода Python|
+|[Отладка приложений JavaScript и TypeScript](/javascript/debug-nodejs.md)|Описание отладки приложений JavaScript, TypeScript и Node. js|
+|[Отладка веб-приложений](../debugger/debugging-web-applications.md)|Описание отладки веб-приложений и сценариев.|
 |[Отладка служб WCF](../debugger/debugging-wcf-services.md)|Способы отладки служб Windows Communication Foundation.|
