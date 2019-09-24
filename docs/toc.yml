@@ -654,7 +654,7 @@
         - name: Пошаговое руководство. Создание среды построения из нескольких компьютеров
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Отладка >>
-      href: debugger/index.md
+      href: debugger/index.yml
     - name: Тестирование >>
       displayName: Unit testing
       href: test/improve-code-quality.md
