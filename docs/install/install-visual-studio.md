@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293704"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095360"
 ---
 # <a name="install-visual-studio"></a>Установка Visual Studio
 
@@ -236,7 +236,7 @@ ms.locfileid: "70293704"
 
 3. Выберите тип проекта.
 
-   Например, чтобы [создать приложение C++](../ide/getting-started-with-cpp-in-visual-studio.md), нажмите **Установленные**, разверните узел **Visual C++** , а затем выберите тип проекта C++, который нужно создать.
+   Например, чтобы [создать приложение C++](/cpp/get-started/tutorial-console-cpp), нажмите **Установленные**, разверните узел **Visual C++** , а затем выберите тип проекта C++, который нужно создать.
 
    Чтобы [создать приложение C#](../get-started/csharp/tutorial-console.md), нажмите **Установленные**, разверните узел **Visual C#** , а затем выберите тип проекта C#, который нужно создать.
 

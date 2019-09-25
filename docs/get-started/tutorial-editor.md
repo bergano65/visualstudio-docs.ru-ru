@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b6741b40925f5d9914152d396be4686d166bf222
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 0f83304daa0e86bb9d4f999262f827615923fe4d
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180199"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095353"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Узнайте, как использовать редактор кода
 
@@ -36,7 +36,7 @@ ms.locfileid: "70180199"
 
 ::: moniker-end
 
-Эта статья предполагает, что вы уже знакомы с языком программирования. В противном случае рекомендуется сначала посмотреть одно из кратких руководств по языкам программирования [Python](../ide/quickstart-python.md) или [C#](../get-started/csharp/tutorial-aspnet-core.md) либо по созданию консольного приложения с помощью [Visual Basic](../ide/quickstart-visual-basic-console.md) или [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+Эта статья предполагает, что вы уже знакомы с языком программирования. В противном случае рекомендуется сначала посмотреть одно из кратких руководств по языкам программирования [Python](../ide/quickstart-python.md) или [C#](../get-started/csharp/tutorial-aspnet-core.md) либо по созданию консольного приложения с помощью [Visual Basic](../ide/quickstart-visual-basic-console.md) или [C++](/cpp/get-started/tutorial-console-cpp).
 
 ## <a name="create-a-new-code-file"></a>Создание файла кода
 

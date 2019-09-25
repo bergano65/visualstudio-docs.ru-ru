@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 65d6dbd67debc4673173af29e0c92aa57b58c865
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: cbaaa53fe737761fdd938b7861c371e8e5619acc
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703874"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128164"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Краткое руководство. Анализ данных по использованию ЦП в Visual Studio (ASP.NET)
 
@@ -31,7 +31,7 @@ Visual Studio предоставляет множество эффективны
 
 1. В Visual Studio последовательно выберите **Файл** > **Создать проект**.
 
-1. В разделе **Visual C#** выберите **Веб**, а затем в средней области выберите **Веб-приложение ASP.NET (.NET Framework)**.
+1. В разделе **Visual C#** выберите **Веб**, а затем в средней области выберите **Веб-приложение ASP.NET (.NET Framework)** .
 
     Если шаблон проекта **Простое веб-приложение ASP.NET** отсутствует, щелкните ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **ASP.NET и разработка веб-приложений**, а затем щелкните **Изменить**.
 
@@ -228,5 +228,5 @@ Visual Studio предоставляет множество эффективны
 
 ## <a name="see-also"></a>См. также
 
-- [Профилирование в Visual Studio](../profiling/index.md)
+- [Профилирование в Visual Studio](../profiling/index.yml)
 - [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)
