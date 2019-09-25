@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5bb8320a8876582cc325ecf973c83593777193
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ab0f6aaae97a510b0521e10ad607a86988c345a3
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920500"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232085"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142. Прозрачный код не должен быть защищен проверками LinkDemands
 
@@ -26,7 +26,7 @@ ms.locfileid: "68920500"
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Для прозрачного метода требуется <xref:System.Security.Permissions.SecurityAction> или другое требование безопасности.
 
 ## <a name="rule-description"></a>Описание правила

@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2302
 - EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize
-ms.openlocfilehash: 1d7c87921a226b8918bfaa79fda6de85d710baa4
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 90e17211bc30dc65ce78b738dc692d5dbb7aaa69
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891206"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237747"
 ---
 # <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302. Убедитесь, что BinaryFormatter.Binder задан перед вызовом BinaryFormatter.Deserialize
 
@@ -29,7 +29,7 @@ ms.locfileid: "69891206"
 |Категория|Microsoft.Security|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Метод десериализации был вызван или указан <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> , и свойство может иметь значение null. <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>
 
@@ -47,7 +47,7 @@ ms.locfileid: "69891206"
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-Никогда не <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>использовать. Если необходимо использовать сопоставитель типов, ограничьте десериализованные типы до ожидаемого списка.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
   - Newtonsoft Json.NET — используйте Типенамехандлинг. None. Если необходимо использовать другое значение для Типенамехандлинг, ограничьте десериализованные типы до ожидаемого списка с помощью настраиваемого Исериализатионбиндер.
-  - Буферы протоколов
+  - Protocol Buffers
 - Сделайте сериализованные данные несанкционированными. После сериализации криптографически подписывает сериализованные данные. Перед десериализациюм проверьте криптографическую подпись. Защитите криптографический ключ от раскрывать и разрабатывать для смены ключей.
 - Ограничьте десериализованные типы. Реализуйте пользовательский <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>интерфейс. Перед десериализациюм <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>с <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> присвойте свойству экземпляр пользовательского <xref:System.Runtime.Serialization.SerializationBinder>. В переопределенном <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> методе, если тип является непредвиденным, вызовите исключение для отмены десериализации.
   - Убедитесь, что для <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> всех ветвей кода задано свойство.

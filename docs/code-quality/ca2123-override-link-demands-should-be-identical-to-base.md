@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ecc30f3fe16b283c0eb9cc1f369458bb1d7f952
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3b5bd062ca37ae477f5ab7d52d56fd7e4b4fb71b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920813"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232491"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123. Переопределяющие требования ссылки должны быть идентичны базовым
 
@@ -30,8 +30,8 @@ ms.locfileid: "68920813"
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
-Открытый или защищенный метод в открытом типе переопределяет метод или реализует интерфейс и не имеет тех же [запросов](/dotnet/framework/misc/link-demands) на компоновку, что и интерфейс или виртуальный метод.
+## <a name="cause"></a>Причина:
+Открытый или защищенный метод в открытом типе переопределяет метод или реализует интерфейс и не имеет тех же [запросов на компоновку](/dotnet/framework/misc/link-demands) , что и интерфейс или виртуальный метод.
 
 ## <a name="rule-description"></a>Описание правила
 Это правило сравнивает метод с его базовым методом (который является интерфейсом или виртуальным методом другого типа), а затем сравнивает запросы ссылок для каждого из них. Нарушение сообщается, если метод или базовый метод имеют запрос компоновки, а другой — нет.

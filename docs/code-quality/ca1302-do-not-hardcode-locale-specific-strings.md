@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3789b5e786038c2bf1fe5e823a1b0fb4f7a7c9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 69b6256f2c6ae54467eb21cc17d50119b3c67a9f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922728"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235179"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302. Не указывайте прямо в коде строки, зависящие от языковых стандартов
 
@@ -33,7 +33,7 @@ ms.locfileid: "68922728"
 |Категория|Microsoft. Globalization|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Метод использует строковый литерал, представляющий часть пути к определенным системным папкам.
 
 ## <a name="rule-description"></a>Описание правила

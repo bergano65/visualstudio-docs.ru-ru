@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd269b099095326a260da7613bf3c2c402e864be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 746475e60bbe72c4ebfc51f13d0b2d4d0552ff62
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797692"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235196"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300. Укажите MessageBoxOptions
 
@@ -30,28 +30,28 @@ ms.locfileid: "62797692"
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|
 |CheckId|CA1300|
-|Категория|Microsoft.Globalization|
+|Категория|Microsoft. Globalization|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Метод вызывает перегрузку <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> метод, который не принимает <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> аргумент.
+Метод вызывает перегрузку <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> метода, который не <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> принимает аргумент.
 
 ## <a name="rule-description"></a>Описание правила
 
-Чтобы отобразить окно сообщения для языков и региональных параметров, использующих порядок чтения справа налево, передайте [установлены значения MessageBoxOptions.RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) и [MessageBoxOptions.RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) поля <xref:System.Windows.Forms.MessageBox.Show%2A> метод. Изучите <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> свойство содержащегося элемента управления, чтобы определить, следует ли использовать порядок чтения справа налево.
+Чтобы правильно отобразить окно сообщения для языков и региональных параметров, использующих порядок чтения справа налево, передайте в <xref:System.Windows.Forms.MessageBox.Show%2A> метод поля [MessageBoxOptions. RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) и [MessageBoxOptions. RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) . Изучите <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> свойство содержащего элемента управления, чтобы определить, следует ли использовать порядок чтения справа налево.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, вызовите перегрузку <xref:System.Windows.Forms.MessageBox.Show%2A> метода, принимающего <xref:System.Windows.Forms.MessageBoxOptions> аргумент.
+Чтобы устранить нарушение этого правила, вызовите перегрузку <xref:System.Windows.Forms.MessageBox.Show%2A> метода, <xref:System.Windows.Forms.MessageBoxOptions> принимающего аргумент.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Его можно безопасно подавить предупреждение из этого правила, если библиотека кода не будет локализовано для языка и региональных параметров, используется порядок чтения справа налево.
+Можно отключить вывод предупреждения из этого правила, если библиотека кода не будет локализована для языка и региональных параметров, в которых используется порядок чтения справа налево.
 
 ## <a name="example"></a>Пример
 
-Пример метода, который отображает окно сообщения, имеющий параметры, соответствующие порядку чтения языка и региональных параметров. Файл ресурсов, который не показан, необходим для построения примера. Следуйте указаниям в приведенном примере для построения примера без файла ресурсов и тестирование компонента справа налево.
+В следующем примере показан метод, который отображает окно сообщения с параметрами, подходящими для порядка чтения языка и региональных параметров. Для построения примера требуется файл ресурсов, который не отображается. Следуйте комментариям в примере, чтобы создать пример без файла ресурсов и проверить функцию "справа налево".
 
 [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/VisualBasic/ca1300-specify-messageboxoptions_1.vb)]
 [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/CSharp/ca1300-specify-messageboxoptions_1.cs)]

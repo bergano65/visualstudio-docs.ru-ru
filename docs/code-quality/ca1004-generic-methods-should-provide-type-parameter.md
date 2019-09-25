@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a09d06a521c4751e3aea78b72b99a8126f4e7ff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f4c5f9c001505a76f19f2d675d552124c611f3d5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923246"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236629"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004. Универсальные методы должны предоставлять параметр типа
 
@@ -33,7 +33,7 @@ ms.locfileid: "68923246"
 |Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Сигнатура параметра внешнего видимого универсального метода не содержит типов, соответствующих всем параметрам типа метода.
 
 ## <a name="rule-description"></a>Описание правила

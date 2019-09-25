@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 054f809483cf2a9c4647370e2f69187795c5c203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc4504e917daeadc93963c6d6870c00515a5065a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545271"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233165"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002. Не блокируйте объекты с ненадежными удостоверениями
 
@@ -29,22 +29,22 @@ ms.locfileid: "62545271"
 |-|-|
 |TypeName|DoNotLockOnObjectsWithWeakIdentity|
 |CheckId|CA2002|
-|Категория|Microsoft.Reliability|
+|Категория|Microsoft. надежность|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Поток пытается получить блокировку на объекте, который со слабой идентификацией.
+Поток пытается получить блокировку объекта, имеющего слабое удостоверение.
 
 ## <a name="rule-description"></a>Описание правила
 
 К объекту со слабой идентификацией может быть получен прямой доступ через границы домена приложения. Поток пытается получить блокировку объекта со слабой идентификацией, который может быть заблокирован вторым потоком в другом домене приложения, имеющим блокировку того же объекта.
 
-Следующие типы со слабой идентификацией и помечены этим правилом.
+Следующие типы имеют слабую идентификацию и помечаются правилом:
 
 - <xref:System.String>
 
-- Массивы типов значений, включая [целочисленных типов](/dotnet/csharp/language-reference/keywords/integral-types-table), [типов с плавающей запятой](/dotnet/csharp/language-reference/keywords/floating-point-types-table), и <xref:System.Boolean>.
+- Массивы типов значений, включая [целочисленные типы](/dotnet/csharp/language-reference/keywords/integral-types-table), [типы с плавающей запятой](/dotnet/csharp/language-reference/keywords/floating-point-types-table)и <xref:System.Boolean>.
 
 - <xref:System.MarshalByRefObject>
 
@@ -62,9 +62,9 @@ ms.locfileid: "62545271"
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, используйте объект с типом, который не входит в список в разделе описания.
+Чтобы устранить нарушение этого правила, используйте объект из типа, которого нет в списке в разделе Описание.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
 Для этого правила отключать вывод предупреждений не следует.
 
@@ -74,7 +74,7 @@ ms.locfileid: "62545271"
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано несколько блокировок объекта, которые нарушают данное правило.
+В следующем примере показаны некоторые блокировки объектов, которые нарушают правило.
 
 [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
 [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]
@@ -83,5 +83,5 @@ ms.locfileid: "62545271"
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>
-- [lock-оператор (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [Оператор lock (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
 - [Оператор SyncLock (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

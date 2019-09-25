@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70a418b211cd4340dba9c15f0bf52e3cdfdf8e8f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 066b9d013847f5362ee0dd712002cf8578fb57a6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547902"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236445"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010. Коллекции должны реализовать универсальный интерфейс
 
@@ -30,7 +30,7 @@ ms.locfileid: "69547902"
 |Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Тип реализует <xref:System.Collections.IEnumerable?displayProperty=fullName> интерфейс, но не <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> реализует интерфейс, а включающая сборка предназначена для .NET. Это правило игнорирует типы, реализующие <xref:System.Collections.IDictionary?displayProperty=fullName>.
 

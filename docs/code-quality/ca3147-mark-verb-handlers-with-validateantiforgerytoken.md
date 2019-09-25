@@ -9,51 +9,51 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd54f932a99ea79bf792ebe4175ddc6a031ddcb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01b290a4e4656aef079b27ce3abb2a66d7adeb75
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541068"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236985"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147. Присвоение метки ValidateAntiForgeryToken обработчикам команд
 
 |||
 |-|-|
-|TypeName|MarkVerbHandlersWithValidateAntiForgeryToken|
+|TypeName|марквербхандлерсвисвалидатеантифоржеритокен|
 |CheckId|CA3147|
 |Категория|Microsoft.Security|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Метод действия контроллера ASP.NET MVC не отмечены [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)), или указания HTTP-команда, такого как атрибут [HttpGetAttribute](/previous-versions/aspnet/ee470993(v%3dvs.118)) или [ AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29).
+Метод действия контроллера MVC ASP.NET не помечен [валидатеантифоржеритокенаттрибуте](/previous-versions/aspnet/dd492108(v=vs.118))или атрибут, указывающий глагол HTTP, например [хттпжетаттрибуте](/previous-versions/aspnet/ee470993(v%3dvs.118)) или [акцептвербсаттрибуте](/previous-versions/aspnet/dd470553%28v%3dvs.118%29).
 
 ## <a name="rule-description"></a>Описание правила
 
-При разработке контроллера ASP.NET MVC, следует учитывать атак с подделкой межсайтовых запросов. Атак подделки межсайтовых запросов на основе может отправлять вредоносные запросы от пользователя, прошедшего проверку подлинности в контроллер ASP.NET MVC. Дополнительные сведения см. в разделе [защиты от XSRF/CSRF в ASP.NET MVC и веб-страниц](/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages).
+При проектировании контроллера MVC ASP.NET учитывать атаки с подделки межсайтовых запросов. Атака подделки межсайтовых запросов может отправить вредоносные запросы от пользователя, прошедшего проверку подлинности, на контроллер ASP.NET MVC. Дополнительные сведения см. [в разделе XSRF/CSRF предотвращение в ASP.NET MVC и веб-страницах](/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages).
 
-Это правило проверяет этот контроллер ASP.NET MVC методам действий либо:
+Это правило проверяет, что методы действия контроллера MVC ASP.NET:
 
-- У [ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/dd492108%28v%3dvs.118%29) и указать разрешенные команды HTTP, не включая HTTP GET.
+- [Валидатеантифоржеритокенаттрибуте](/previous-versions/aspnet/dd492108%28v%3dvs.118%29) и укажите разрешенные HTTP-команды, не включая HTTP GET.
 
-- Укажите в качестве допустимого глагола HTTP GET.
+- Укажите HTTP GET как разрешенную команду.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-- Для действий контроллеров ASP.NET MVC, которые обрабатывают запросы HTTP GET и не потенциально опасными побочными эффектами, добавить [HttpGetAttribute](/previous-versions/aspnet/ee470993%28v%3dvs.118%29) методу.
+- Для действий контроллера MVC ASP.NET, обрабатывающих HTTP-запросы GET и не имеющих потенциально опасных побочных эффектов, добавьте [хттпжетаттрибуте](/previous-versions/aspnet/ee470993%28v%3dvs.118%29) в метод.
 
-   При наличии ASP.NET MVC запрашивает действие контроллера, обрабатывающий запрос HTTP GET и имеет потенциально опасные побочные эффекты, такие как изменение конфиденциальных данных, приложение становится уязвимым для атак с подделкой межсайтовых.  Вам потребуется изменить структуру приложения, чтобы только запросы HTTP POST, PUT или DELETE выполнять важные операции.
+   Если у вас есть действие контроллера MVC ASP.NET, которое обрабатывает запросы HTTP GET и потенциально вредоносные побочные эффекты, такие как изменение конфиденциальных данных, приложение уязвимо к атакам подделки межсайтовых запросов.  Вам потребуется переконструировать приложение таким образом, чтобы только запросы POST, вставки или удаления запросов HTTP выполняли конфиденциальные операции.
 
-- Для действий контроллеров ASP.NET MVC, которые обрабатывают HTTP POST, PUT или DELETE запрашивает, добавить [ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118)) и атрибуты, указав допустимых HTTP-команд ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29) [HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29), [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29), или [HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29)). Кроме того, необходимо вызвать [HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) метода из представления MVC или веб-страницы Razor. Например, см. в разделе [изучение методов edit и изменять представление](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
+- Для действий контроллера MVC ASP.NET, обрабатывающих запросы HTTP POST, WHERE или DELETE, добавьте [валидатеантифоржеритокенаттрибуте](/previous-versions/aspnet/dd492108(v=vs.118)) и атрибуты, указывающие РАЗРЕШЕНные HTTP-команды ([акцептвербсаттрибуте](/previous-versions/aspnet/dd470553%28v%3dvs.118%29), [хттппостаттрибуте](/previous-versions/aspnet/ee264023%28v%3dvs.118%29), [ Хттппутаттрибуте](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)или [хттпделетеаттрибуте](/previous-versions/aspnet/ee470917%28v%3dvs.118%29)). Кроме того, необходимо вызвать метод [HtmlHelper. AntiForgeryToken ()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29) из представления MVC или веб-страницы Razor. Пример см. в разделе [изучение методов правки и представления редактирования](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view).
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Можно безопасно подавить предупреждение из этого правила, если:
+Предупреждение из этого правила можно отключить, если:
 
-- Действие контроллера ASP.NET MVC не имеет опасные побочных эффектов.
+- Действие контроллера MVC ASP.NET не имеет вредных побочных эффектов.
 
-- Приложение проверяет маркер защиты от подделки по-разному.
+- Приложение проверяет токен защиты от подделки другим способом.
 
 ## <a name="validateantiforgerytoken-attribute-example"></a>Пример атрибута ValidateAntiForgeryToken
 

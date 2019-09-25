@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8d47b73009e0bd742c989ddc0311644453e5d9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 22e62a1e3209399be4b10a3ec28db4afdd6f0f20
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921868"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234673"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414. Пометьте логические аргументы P/Invoke с помощью MarshalAs
 
@@ -34,7 +34,7 @@ ms.locfileid: "68921868"
 |Категория|Microsoft. взаимодействие|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Объявление метода вызова неуправляемого кода <xref:System.Boolean?displayProperty=fullName> включает параметр или возвращаемое значение <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> , но атрибут не применяется к параметру или возвращаемому значению.
 
 ## <a name="rule-description"></a>Описание правила

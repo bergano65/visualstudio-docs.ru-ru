@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c8837c1c95dc5f032a10773645f93a46ec29662
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 3cef71cc5f6c4e25d04e6045be7059d81c06b484
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551209"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254943"
 ---
 # <a name="word-solutions"></a>решения Word
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания настроек на уровне документа и надстроек VSTO для Microsoft Office Word. Эти решения можно использовать для автоматизации Word, расширения функциональных возможностей Word и настройки пользовательского интерфейса Word. Дополнительные сведения о различиях между настройками уровня документа и надстройками VSTO см. в разделе [Общие сведения о &#40;разработке решений Office&#41;VSTO](../vsto/office-solutions-development-overview-vsto.md).

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 42581e632c08550fce3cd685949401a155a060f6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551116"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253180"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Часто задаваемые вопросы, посвященные FxCop и анализаторам FxCop
 
@@ -31,7 +31,7 @@ ms.locfileid: "69551116"
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Запускаются ли анализаторы FxCop с помощью команды "Запустить анализ кода"?
 
-Нет. При выборе > анализа**запустить анализ кода**выполняется анализ прежних версий. Команда **Запустить анализ кода** не применяется к анализаторам на основе платформы Roslyn, в том числе к анализаторам FxCop на основе Roslyn.
+Нет. При **выборе** > анализа**запустить анализ кода**выполняется анализ прежних версий. Команда **Запустить анализ кода** не применяется к анализаторам на основе платформы Roslyn, в том числе к анализаторам FxCop на основе Roslyn.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>Запускаются ли анализаторы с помощью свойства проекта msbuild RunCodeAnalysis?
 
@@ -43,7 +43,7 @@ ms.locfileid: "69551116"
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Я получаю предупреждение CA0507 даже после установки пакета NuGet анализаторов FxCop
 
-Если вы установили анализаторы FxCop, но продолжаете получать предупреждение CA0507, **выполнять анализ кода не рекомендуется. Лучше использовать анализаторы FxCop, которые запускаются во время сборки**. Вам может потребоваться установить свойство msbuild **RunCodeAnalysis** в файле проекта в значение **false**. В противном случае прежний анализ будет выполняться после каждой сборки.
+Если вы установили FxCop Analyzer, но продолжите получать предупреждение CA0507 **"" Запуск анализа кода "не рекомендуется в пользу средств FxCop Analyzer, которые запускаются во время сборки"** , может потребоваться задать свойство MSBuild **рункодеаналисис** в [проекте. файл](../ide/solutions-and-projects-in-visual-studio.md#project-file) в **значение false**. В противном случае прежний анализ будет выполняться после каждой сборки.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>

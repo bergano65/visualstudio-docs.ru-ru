@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260648"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253434"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Настройка проекта Azure в Visual Studio для использования нескольких конфигураций служб
 
 В Visual Studio проект облачной службы Azure включает в себя три файла конфигурации: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg`, `ServiceConfiguration.Cloud.cscfg`.
 
-- Файл `ServiceDefinition.csdef` развертывается в Azure для описания требований к облачной службе и ее ролям, а также для предоставления параметров, применимых ко всем экземплярам. Параметры могут считываться в среде выполнения с помощью API среды выполнения размещения службы Azure. Этот файл можно обновить в Azure, только когда облачная служба остановлена.
+- Файл `ServiceDefinition.csdef` развертывается в Azure для описания требований к облачной службе и ее ролям, а также для предоставления параметров, применимых ко всем экземплярам. Параметры можно считывать во время выполнения с помощью API среды выполнения размещения службы Azure. Этот файл можно обновить в Azure, только когда облачная служба остановлена.
 - Файлы `ServiceConfiguration.Local.cscfg` и `ServiceConfiguration.Cloud.cscfg` предоставляют значения для параметров в файле определения и указывают количество экземпляров для запуска каждой из ролей. В файле Local содержатся значения, используемые в отладке. Файл Cloud предоставляет параметры для среды сервера и развертывается в Azure как `ServiceConfiguration.cscfg`. Этот файл нельзя обновить, пока облачная служба работает в Azure.
 
 Изменение параметров конфигурации и управление ими осуществляется в Visual Studio с помощью страниц свойств применимой роли (щелкните роль правой кнопкой мыши и выберите **Свойства** или дважды щелкните роль). Изменения могут быть распространены на любую конфигурацию, выбранную в раскрывающемся меню **Настройка службы**. Свойства рабочих ролей и веб-ролей схожи, за исключением того, что описано в следующих разделах.
@@ -55,7 +55,7 @@ ms.locfileid: "66260648"
 
 ## <a name="settings-page"></a>Страница "Параметры"
 
-На странице **Параметры** можно добавлять параметры в конфигурацию в виде пары "имя — значение". С помощью кода, который выполняется в роли, и классов, предоставляемых [управляемой библиотекой Azure ](http://go.microsoft.com/fwlink?LinkID=171026), в частности метода [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx), можно считывать значения параметров конфигурации во время его выполнения.
+На странице **Параметры** можно добавлять параметры в конфигурацию в виде пары "имя — значение". Код, выполняемый в роли, может считывать значения параметров конфигурации во время выполнения с помощью классов, предоставляемых [управляемой библиотекой Azure](http://go.microsoft.com/fwlink?LinkID=171026), в частности, метода [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Настройка строки подключения для учетной записи хранения
 

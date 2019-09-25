@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 430ed0b23d62bd46a9764bfb0a3834e0decd476b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: be0e1b4865b19930f8ddf7163a36b71123bb3a55
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922597"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235717"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048. Не объявляйте виртуальные члены в запечатанных типах
 
@@ -30,7 +30,7 @@ ms.locfileid: "68922597"
 |Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Открытый тип запечатан и объявляет метод, который одновременно `virtual` (`Overridable` в Visual Basic) и не является окончательным. Это правило не сообщает о нарушениях типов делегатов, которые должны следовать этому шаблону.
 
 ## <a name="rule-description"></a>Описание правила

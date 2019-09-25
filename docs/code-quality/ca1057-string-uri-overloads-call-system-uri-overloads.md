@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 41d3db6e4807c77236868e3ab5746da971ddce6c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e6bd77a49690979ea7ab3c4619fdd578a80bb77c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922493"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235523"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057. Перегрузки строковых параметров URI вызывают перегрузки System.Uri
 
@@ -34,7 +34,7 @@ ms.locfileid: "68922493"
 |Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Тип объявляет перегрузки метода, которые отличаются только заменой строкового параметра <xref:System.Uri?displayProperty=fullName> параметром, а перегрузка, принимающая строковый параметр, не вызывает перегрузку, которая <xref:System.Uri> принимает параметр.
 

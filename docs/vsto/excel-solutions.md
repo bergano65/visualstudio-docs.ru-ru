@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c9af0a0c90d042d5720423150899971ffca8ec9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 532689afe4e07c3151be6eac923f2b591aa34f46
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551518"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253624"
 ---
 # <a name="excel-solutions"></a>решения Excel
   Visual Studio предоставляет шаблоны проектов, которые можно использовать для создания настроек на уровне документа и надстроек VSTO для Microsoft Office Excel. Эти решения можно использовать для автоматизации Excel, расширения функциональных возможностей Excel и настройки пользовательского интерфейса Excel. Дополнительные сведения о различиях между настройками уровня документа и надстройками VSTO см. в разделе [Общие сведения о &#40;разработке решений Office&#41;VSTO](../vsto/office-solutions-development-overview-vsto.md).
@@ -42,7 +42,7 @@ ms.locfileid: "69551518"
 
  В данном разделе содержатся следующие сведения:
 
-- Автоматизируйте работу с [Excel](#automating).
+- [Автоматизируйте](#automating)работу с Excel.
 
 - [Разработка настроек на уровне документа для Excel](#doclevel).
 
@@ -115,6 +115,6 @@ ms.locfileid: "69551518"
 | [Общие сведения об элементах управления Windows Forms в документах Office](../vsto/windows-forms-controls-on-office-documents-overview.md) | Содержит сведения о добавлении элементов управления Windows Forms на листы Excel. |
 | [Пошаговое руководство: Создание первой настройки уровня документа для Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md) | Содержит сведения о создании базовой настройки на уровне документа для Excel. |
 | [Пошаговое руководство: Создание первой надстройки VSTO для Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md) | Содержит сведения о создании базовой надстройки VSTO для Excel. |
-| [Пошаговое руководство: Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Демонстрирует добавление кнопки Windows Forms, <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Tools.Excel.ListObject> и на лист во время выполнения с помощью надстройки VSTO. |
+| [Пошаговое руководство: Добавление элементов управления на лист во время выполнения в проекте надстройки VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Содержит сведения о добавлении кнопки Windows Forms, <xref:Microsoft.Office.Tools.Excel.NamedRange>, и <xref:Microsoft.Office.Tools.Excel.ListObject> на лист во время выполнения с помощью надстройки VSTO. |
 | [Общие сведения о совместном редактировании и надстройках](./understanding-coauthoring-and-addins.md) | Описывает корректировки, которые могут потребоваться в решениях для совместной разработки. |
 | [Excel 2010 в разработке решений для Office](http://go.microsoft.com/fwlink/?LinkId=199011) | Ссылки на статьи и справочную документацию о разработке решений Excel. Они не относятся к разработке решений Office в Visual Studio. |

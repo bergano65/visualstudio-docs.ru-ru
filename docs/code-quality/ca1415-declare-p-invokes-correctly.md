@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cc12d5d0a62f8d2530f13fcf860aba4e118ca4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 99274abee2c05a1bd33e34c9eb02cc928c1b54b0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921854"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234616"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415. Правильно объявляйте методы P/Invoke
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921854"
 |Категория|Microsoft. взаимодействие|
 |Критическое изменение|Не критическое — если P/Invoke, объявляющий параметр, не может просматриваться за пределами сборки. Критическое — если P/Invoke, объявляющий параметр, может отображаться за пределами сборки.|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Неверно объявлен метод вызова неуправляемого кода.
 
 ## <a name="rule-description"></a>Описание правила

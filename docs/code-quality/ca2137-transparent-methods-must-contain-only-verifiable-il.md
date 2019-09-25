@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98b75a9f67a24fd8bea1ecc3a8782b6bd9e6b34b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8ae8f507f17a1c64cb9fdfc5872ffa22e3c0f170
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920609"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232232"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137. Прозрачные методы должны содержать только поддающийся проверке промежуточный язык
 
@@ -26,7 +26,7 @@ ms.locfileid: "68920609"
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Метод содержит непроверяемый код или возвращает тип по ссылке.
 
 ## <a name="rule-description"></a>Описание правила

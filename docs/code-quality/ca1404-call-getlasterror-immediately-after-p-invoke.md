@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 03add1625c4d59bb180f9f0f08692e67bee8047b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ab789e578dd8603f604cdb00aa5d236250d13670
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922069"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235055"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404. Вызывайте GetLastError сразу после P/Invoke
 
@@ -33,7 +33,7 @@ ms.locfileid: "68922069"
 |Категория|Microsoft. взаимодействие|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Выполняется вызов <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> метода или эквивалентной функции Win32 `GetLastError` , и вызов, который происходит непосредственно перед, не является методом вызова неуправляемого кода.
 

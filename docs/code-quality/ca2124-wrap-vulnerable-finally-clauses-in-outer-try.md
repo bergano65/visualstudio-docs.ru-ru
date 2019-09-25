@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0008767f7d37e2c088dad58a328b025f81090ad8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920805"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232454"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124. Ограничьте уязвимые предложения finally во внешних блоках try
 
@@ -30,7 +30,7 @@ ms.locfileid: "68920805"
 |Категория|Microsoft.Security|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 В версиях 1,0 и 1,1 .NET Framework, `try` открытый или защищенный метод содержит / `catch` / `finally` блок. Блок будет сброшен в состояние безопасности и не заключен `finally` в блок. `finally`
 
 ## <a name="rule-description"></a>Описание правила

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df6ab704c2dfdbf8ebdf8eb42f56d8d64600736f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 31c147c67854dd59f1fb7c9202f553edfb4a77a8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921829"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234509"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504. Проверьте имена полей, которые могут ввести в заблуждение
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921829"
 |Категория|Поддержка Microsoft.|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Имя поля экземпляра начинается с «s_», а имя `static` поля (`Shared` в [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) начинается с «m_».
 
 ## <a name="rule-description"></a>Описание правила

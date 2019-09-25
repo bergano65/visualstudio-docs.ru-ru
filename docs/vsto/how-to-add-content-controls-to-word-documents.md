@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Добавление содержимого элементов управления в документы Word
+title: Практическое руководство. Добавление элементов управления содержимым в документы Word
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -26,15 +26,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c7746137cf10e0146ff68eeb2cec9005b72a670
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c84ae02bd2cafde7b6232c73bc75f0976e81bd0
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427621"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254364"
 ---
-# <a name="how-to-add-content-controls-to-word-documents"></a>Практическое руководство. Добавление содержимого элементов управления в документы Word
-  В проектах уровня документа Word добавляются элементы управления содержимым в документ в проекте во время разработки или во время выполнения. Проекты надстроек VSTO для Word элементы управления содержимым можно добавлять в любой открытый документ во время выполнения.
+# <a name="how-to-add-content-controls-to-word-documents"></a>Практическое руководство. Добавление элементов управления содержимым в документы Word
+  В проектах на уровне документа Word элементы управления содержимым можно добавлять в документ во время разработки или во время выполнения. В проектах надстройки VSTO для Word элементы управления содержимым можно добавлять в любой открытый документ во время выполнения.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -46,16 +46,16 @@ ms.locfileid: "63427621"
 
 - [Добавление элементов управления содержимым во время выполнения в проекте надстройки VSTO](#runtimeaddin)
 
-  Сведения об элементах управления содержимым, см. в разделе [элементы управления содержимым](../vsto/content-controls.md).
+  Дополнительные сведения об элементах управления содержимым см. в разделе [элементы управления содержимым](../vsto/content-controls.md).
 
-## <a name="designtime"></a> Добавление содержимого элементов управления во время разработки
+## <a name="designtime"></a>Добавление элементов управления содержимым во время разработки
  Вы можете добавить элементы управления содержимым в документ Word в проекте на уровне документа во время разработки несколькими способами.
 
 - Добавьте элемент управления содержимым из вкладки **Элементы управления Word** **панели элементов**.
 
 - Добавьте элемент управления содержимым в документ так же, как вы добавляете управляемый элемент управления содержимым в Word.
 
-- Перетащите элемент управления в документ из окна **Источники данных** . Это полезно, если нужно одновременно привязать элемент управления к данным при его создании. Дополнительные сведения см. в разделе [Как Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md) и [как: Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md).
+- Перетащите элемент управления в документ из окна **Источники данных** . Это полезно, если нужно одновременно привязать элемент управления к данным при его создании. Дополнительные сведения см. в разделе [Практическое руководство. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md) и [выполнение следующих действий: Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -71,14 +71,14 @@ ms.locfileid: "63427621"
 
          или
 
-    - Щелкните элемент управления содержимым в **элементов** и нажмите клавишу **ввод** ключ.
+    - Щелкните элемент управления содержимым на **панели элементов** и нажмите клавишу **Ввод** .
 
          или
 
     - Перетащите элемент управления содержимым из **панели элементов** в документ. Элемент управления содержимым добавляется в текущее выделение в документе, а не в позиции указателя мыши.
 
 > [!NOTE]
-> Невозможно добавить <xref:Microsoft.Office.Tools.Word.GroupContentControl> с помощью **панели элементов**. Можно добавлять только <xref:Microsoft.Office.Tools.Word.GroupContentControl> в Word или во время выполнения.
+> Невозможно добавить <xref:Microsoft.Office.Tools.Word.GroupContentControl> с помощью **панели элементов**. <xref:Microsoft.Office.Tools.Word.GroupContentControl> можно добавлять только в Word или во время выполнения.
 
 > [!NOTE]
 > Visual Studio не предоставляет элемент управления содержимым «Флажок» в панели элементов. Чтобы добавить элемент управления содержимым «Флажок» в документ, необходимо создать <xref:Microsoft.Office.Tools.Word.ContentControl> программно. Дополнительные сведения см. в разделе [элементы управления содержимым](../vsto/content-controls.md).
@@ -90,12 +90,12 @@ ms.locfileid: "63427621"
 2. На ленте перейдите на вкладку **Разработчик** .
 
     > [!NOTE]
-    > Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Как Отображение вкладки разработчика на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Если вкладка **Разработчик** не отображается, сделайте ее видимой. Дополнительные сведения см. в разделе [Практическое руководство. Отображение вкладки "Разработчик" на ленте](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. В группе **Элементы управления** щелкните значок элемента управления содержимым, который требуется добавить.
 
-## <a name="runtimedoclevel"></a> Добавление элементов управления содержимым во время выполнения в проекте уровня документа
- Можно добавить элементы управления содержимым программным способом в документ во время выполнения с помощью методов класса <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> свойство `ThisDocument` в своем проекте. У каждого метода есть три перегрузки, которые можно использовать для добавления элемента управления содержимым следующими способами:
+## <a name="runtimedoclevel"></a>Добавление элементов управления содержимым во время выполнения в проекте уровня документа
+ Элементы управления содержимым можно добавить в документ программным образом во время выполнения с помощью методов свойства <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> класса `ThisDocument` в проекте. У каждого метода есть три перегрузки, которые можно использовать для добавления элемента управления содержимым следующими способами:
 
 - добавление элемента управления в текущее выделение;
 
@@ -103,14 +103,14 @@ ms.locfileid: "63427621"
 
 - добавление элемента управления, основанного на управляемом элементе управления содержимым, в документ.
 
-  При закрытии документа динамически созданные элементы управления содержимым не сохраняются в документе. Однако неуправляемый элемент управления содержимым остается в документе. Можно повторно создать элемент управления содержимым, основанный на управляемом элементе управления содержимым, при очередном открытии документа. Дополнительные сведения см. в разделе [добавить элементы управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
+  При закрытии документа динамически созданные элементы управления содержимым не сохраняются в документе. Однако неуправляемый элемент управления содержимым остается в документе. Можно повторно создать элемент управления содержимым, основанный на управляемом элементе управления содержимым, при очередном открытии документа. Дополнительные сведения см. [в разделе Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 > [!NOTE]
 > Чтобы добавить элемент управления содержимым «Флажок» в документ в проекте Word 2010, необходимо создать объект <xref:Microsoft.Office.Tools.Word.ContentControl> . Дополнительные сведения см. в разделе [элементы управления содержимым](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Добавление элемента управления содержимым в текущее выделение
 
-1. Используйте <xref:Microsoft.Office.Tools.Word.ControlCollection> метод с именем `Add` \< *класс элемента управления*> (где *класс элемента управления* — это имя класса элемента управления содержимым, который требуется добавить, например <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), и имеющий один параметр для имени нового элемента управления.
+1. `Add` \< <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>Используйте метод с классом Control name > (где Control class — это имя класса элемента управления содержимым, который требуется добавить, например), и у которого есть единственный параметр для элемента <xref:Microsoft.Office.Tools.Word.ControlCollection> имя нового элемента управления.
 
      Следующий пример кода использует метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> , чтобы добавить новый <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в начало документа. Для выполнения этого кода добавьте код в класс `ThisDocument` в проекте и вызовите метод `AddRichTextControlAtSelection` обработчика событий `ThisDocument_Startup` .
 
@@ -119,7 +119,7 @@ ms.locfileid: "63427621"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>Добавление элемента управления в указанный диапазон
 
-1. Используйте <xref:Microsoft.Office.Tools.Word.ControlCollection> метод с именем `Add` \< *класс элемента управления*> (где *класс элемента управления* — это имя класса элемента управления содержимым, который вы хотите добавить, например <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), и имеет <xref:Microsoft.Office.Interop.Word.Range> параметра.
+1. \< `Add` <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> <xref:Microsoft.Office.Interop.Word.Range>Используйте метод с классом Control name > (где Control class — это имя класса элемента управления содержимым, который вы хотите добавить, например), и у которого есть элемент <xref:Microsoft.Office.Tools.Word.ControlCollection> параметр.
 
      Следующий пример кода использует метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> , чтобы добавить новый <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в начало документа. Для выполнения этого кода добавьте код в класс `ThisDocument` в проекте и вызовите метод `AddRichTextControlAtRange` обработчика событий `ThisDocument_Startup` .
 
@@ -128,15 +128,15 @@ ms.locfileid: "63427621"
 
 ### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Добавление элемента управления содержимым, основанного на управляемом элементе управления содержимым
 
-1. Используйте <xref:Microsoft.Office.Tools.Word.ControlCollection> метод с именем `Add` \< *класс элемента управления*> (где *класс элемента управления* — это имя класса элемента управления содержимым, который вы хотите добавить, например <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), и имеет `Microsoft.Office.Interop.Word.ContentControl` параметра.
+1. \< `Add` <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> `Microsoft.Office.Interop.Word.ContentControl`Используйте метод с классом Control name > (где Control class — это имя класса элемента управления содержимым, который вы хотите добавить, например), и у которого есть элемент <xref:Microsoft.Office.Tools.Word.ControlCollection> параметр.
 
      В следующем примере кода метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> используется для создания нового объекта <xref:Microsoft.Office.Tools.Word.RichTextContentControl> для каждого управляемого элемента управления форматированием текста, который есть в документе. Для выполнения этого кода добавьте код в класс `ThisDocument` в проекте и вызовите метод `CreateRichTextControlsFromNativeControls` обработчика событий `ThisDocument_Startup` .
 
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]
 
-## <a name="runtimeaddin"></a> Добавление элементов управления содержимым во время выполнения в проекте надстройки VSTO
- Можно добавить элементы управления содержимым программным способом в любой открытый документ во время выполнения с помощью надстройки VSTO. Для этого следует создать ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> , основанный на открытом документе, а затем использовать методы свойства <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> этого ведущего элемента. У каждого метода есть три перегрузки, которые можно использовать для добавления элемента управления содержимым следующими способами:
+## <a name="runtimeaddin"></a>Добавление элементов управления содержимым во время выполнения в проекте надстройки VSTO
+ Вы можете добавить элементы управления содержимым программным способом в любой открытый документ во время выполнения с помощью надстройки VSTO. Для этого следует создать ведущий элемент <xref:Microsoft.Office.Tools.Word.Document> , основанный на открытом документе, а затем использовать методы свойства <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> этого ведущего элемента. У каждого метода есть три перегрузки, которые можно использовать для добавления элемента управления содержимым следующими способами:
 
 - добавление элемента управления в текущее выделение;
 
@@ -144,16 +144,16 @@ ms.locfileid: "63427621"
 
 - добавление элемента управления, основанного на управляемом элементе управления содержимым, в документ.
 
-  При закрытии документа динамически созданные элементы управления содержимым не сохраняются в документе. Однако неуправляемый элемент управления содержимым остается в документе. Можно повторно создать элемент управления содержимым, основанный на управляемом элементе управления содержимым, при очередном открытии документа. Дополнительные сведения см. в разделе [сохранение динамических элементов управления в документы Office](../vsto/persisting-dynamic-controls-in-office-documents.md).
+  При закрытии документа динамически созданные элементы управления содержимым не сохраняются в документе. Однако неуправляемый элемент управления содержимым остается в документе. Можно повторно создать элемент управления содержимым, основанный на управляемом элементе управления содержимым, при очередном открытии документа. Дополнительные сведения см. [в разделе Сохранение динамических элементов управления в документах Office](../vsto/persisting-dynamic-controls-in-office-documents.md).
 
-  Дополнительные сведения о создании ведущих элементов в проектах надстройки VSTO, см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+  Дополнительные сведения о создании ведущих элементов в проектах надстроек VSTO см. в разделе [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 > [!NOTE]
 > Чтобы добавить элемент управления содержимым «Флажок», необходимо создать объект <xref:Microsoft.Office.Tools.Word.ContentControl> . Дополнительные сведения см. в разделе [элементы управления содержимым](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Добавление элемента управления содержимым в текущее выделение
 
-1. Используйте <xref:Microsoft.Office.Tools.Word.ControlCollection> метод с именем `Add` \< *класс элемента управления*> (где *класс элемента управления* — это имя класса элемента управления содержимым, который требуется добавить, например <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), и имеющий один параметр для имени нового элемента управления.
+1. `Add` \< <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>Используйте метод с классом Control name > (где Control class — это имя класса элемента управления содержимым, который требуется добавить, например), и у которого есть единственный параметр для элемента <xref:Microsoft.Office.Tools.Word.ControlCollection> имя нового элемента управления.
 
      Следующий пример кода использует метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> , чтобы добавить новый <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в начало активного документа. Для выполнения этого кода добавьте код в класс `ThisAddIn` в проекте и вызовите метод `AddRichTextControlAtSelection` обработчика событий `ThisAddIn_Startup` .
 
@@ -162,7 +162,7 @@ ms.locfileid: "63427621"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>Добавление элемента управления в указанный диапазон
 
-1. Используйте <xref:Microsoft.Office.Tools.Word.ControlCollection> метод с именем `Add` \< *класс элемента управления*> (где *класс элемента управления* — это имя класса элемента управления содержимым, который вы хотите добавить, например <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), и имеет <xref:Microsoft.Office.Interop.Word.Range> параметра.
+1. \< `Add` <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> <xref:Microsoft.Office.Interop.Word.Range>Используйте метод с классом Control name > (где Control class — это имя класса элемента управления содержимым, который вы хотите добавить, например), и у которого есть элемент <xref:Microsoft.Office.Tools.Word.ControlCollection> параметр.
 
      Следующий пример кода использует метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> , чтобы добавить новый <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в начало активного документа. Для выполнения этого кода добавьте код в класс `ThisAddIn` в проекте и вызовите метод `AddRichTextControlAtRange` обработчика событий `ThisAddIn_Startup` .
 
@@ -171,7 +171,7 @@ ms.locfileid: "63427621"
 
 #### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Добавление элемента управления содержимым, основанного на управляемом элементе управления содержимым
 
-1. Используйте <xref:Microsoft.Office.Tools.Word.ControlCollection> метод с именем `Add` \< *класс элемента управления*> (где *класс элемента управления* — это имя класса элемента управления содержимым, который вы хотите добавить, например <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), и имеет `Microsoft.Office.Interop.Word.ContentControl` параметра.
+1. \< `Add` <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> `Microsoft.Office.Interop.Word.ContentControl`Используйте метод с классом Control name > (где Control class — это имя класса элемента управления содержимым, который вы хотите добавить, например), и у которого есть элемент <xref:Microsoft.Office.Tools.Word.ControlCollection> параметр.
 
      В следующем примере кода метод <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> используется для создания нового объекта <xref:Microsoft.Office.Tools.Word.RichTextContentControl> для каждого управляемого элемента управления форматированием текста в документе после его открытия. Для выполнения этого кода добавьте код в класс `ThisAddIn` в проекте.
 
@@ -184,8 +184,8 @@ ms.locfileid: "63427621"
 
 ## <a name="see-also"></a>См. также
 - [Автоматизация Word с помощью расширенных объектов](../vsto/automating-word-by-using-extended-objects.md)
-- [Ведущие элементы и элементы управления](../vsto/host-items-and-host-controls-overview.md)
+- [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Программные ограничения ведущих элементов и элементов управления ведущего приложения](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Программирование надстроек VSTO](../vsto/programming-vsto-add-ins.md)
-- [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)
+- [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)

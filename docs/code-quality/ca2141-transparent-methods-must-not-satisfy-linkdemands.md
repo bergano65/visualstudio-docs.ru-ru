@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24723559988974c51798c3e099ff8c1d86a15db9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0365d82917b8cfbaf291d557a6ac2d95c220562a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920509"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232122"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141: прозрачные методы не должны удовлетворять требования LinkDemand
 
@@ -26,7 +26,7 @@ ms.locfileid: "68920509"
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Прозрачный с помощью безопасности метод вызывает метод в сборке, которая не помечена <xref:System.Security.AllowPartiallyTrustedCallersAttribute> атрибутом (APTCA), или прозрачный `.LinkDemand` для безопасности метод удовлетворяет <xref:System.Security.Permissions.SecurityAction> типу или методу.
 
 ## <a name="rule-description"></a>Описание правила

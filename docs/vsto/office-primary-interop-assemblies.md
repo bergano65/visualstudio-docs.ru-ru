@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1038d0d7e7d20c28cdd0cb52804461376a4e89
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551693"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253740"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office - основные сборки взаимодействия
 
@@ -66,7 +66,7 @@ Visual Studio использует разные наборы основных с
 - (или *% ProgramFiles (x86)% \ Microsoft Visual студио\шаред\висуал Studio Tools for\* оффице\пиа на 64-разрядных операционных системах)
 
 > [!NOTE]
-> Для более старых версий Visual Studio эти сборки PIA будут установлены в папку Инструменты Visual Studio для Оффице\пиа в папке *% ProgramFiles% для этой версии Visual Studio.  
+> Для более старых версий Visual Studio эти сборки PIA будут установлены в папку Инструменты Visual Studio для Оффице\пиа в папке *% ProgramFiles% для этой версии Visual Studio.
 > Например: *% ProgramFiles (x86)% \ Microsoft Visual Studio с параметром ".\n\n-\ Инструменты Visual Studio" для Оффице\пиа\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Основные сборки взаимодействия в глобальном кэше сборок
@@ -121,7 +121,7 @@ Visual Studio использует разные наборы основных с
 
 ### <a name="binding-redirect-assemblies"></a>Привязка сборок перенаправления
 
-При установке и регистрации основных сборок взаимодействия Office в глобальном кэше сборок (вместе с Office или путем установки распространяемого пакета для основных сборок взаимодействия) сборки переадресации привязок также устанавливаются только в глобальном кэше сборок. Эти сборки помогают убедиться, что в среде выполнения загружена правильная версия основных сборок взаимодействия.
+При установке и регистрации основных сборок взаимодействия Office в глобальном кэше сборок (вместе с Office или путем установки распространяемого пакета для основных сборок взаимодействия) сборки переадресации привязок также устанавливаются только в глобальном кэше сборок. Эти сборки помогают обеспечить загрузку правильной версии основных сборок взаимодействия во время выполнения.
 
 Например, когда решение, которое ссылается на сборку [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] , выполняется на компьютере с версией [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] той же основной сборки взаимодействия, сборка переадресации привязки дает среде выполнения [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] указание загрузить версию [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] основной сборки взаимодействия.
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7b693a881aaa1457004c84968ebc80936fc2b2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 4e590514247444d32d0d9a31b2bbc409434cf53c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714845"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234824"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403. Типы с автомакетом не должны быть видимыми для COM
 
@@ -30,39 +30,39 @@ ms.locfileid: "66714845"
 |-|-|
 |TypeName|AutoLayoutTypesShouldNotBeComVisible|
 |CheckId|CA1403|
-|Категория|Microsoft.Interoperability|
+|Категория|Microsoft. взаимодействие|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Тип значений, видимых объектов модели компонентов (COM) помечен с помощью <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> атрибут <xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=fullName>.
+Видимый тип значения модели COM помечен <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> атрибутом, для <xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=fullName>которого задано значение.
 
 ## <a name="rule-description"></a>Описание правила
 
-<xref:System.Runtime.InteropServices.LayoutKind> Типы макета управляет среда CLR. Макеты этих типов можно изменить в разных версиях .NET, который запрещает COM-клиентам, которые ожидают определенного макета. Если <xref:System.Runtime.InteropServices.StructLayoutAttribute> укажите атрибут не указан, компиляторы C#, Visual Basic и C++ [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) для типов значений.
+<xref:System.Runtime.InteropServices.LayoutKind>типы макета управляются средой CLR. Макет этих типов может изменяться в разных версиях .NET, что приводит к нарушению работы клиентов COM, которые предполагают наличие определенного макета. Если атрибут не C#задан, то Visual Basic и C++ компиляторы указывают [LayoutKind. Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) для типов значений. <xref:System.Runtime.InteropServices.StructLayoutAttribute>
 
-Если не указано иное, все общедоступный, не являющегося универсальным типы являются видимыми для COM, и все не являющиеся открытыми и универсальные типы невидимы для модели COM. Тем не менее чтобы сократить число ложных срабатываний, это правило требует видимость COM типа, чтобы задавать явно. Включающая сборка должны быть отмечены <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> присвоено `false` и тип должен быть помечен атрибутом <xref:System.Runtime.InteropServices.ComVisibleAttribute> присвоено `true`.
+Если не указано иное, все открытые, неуниверсальные типы видимы для COM, а все типы, не являющиеся открытыми и универсальные, невидимы для COM. Однако для сокращения числа ложных срабатываний это правило требует явного определения видимости типа COM. Включающая сборка должна быть помечена <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> `false` значением, а тип <xref:System.Runtime.InteropServices.ComVisibleAttribute> должен быть `true`помечен значением.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, измените значение <xref:System.Runtime.InteropServices.StructLayoutAttribute> атрибут [LayoutKind.Explicit](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>) или [LayoutKind.Sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>), или сделайте тип невидимым для COM.
+Чтобы устранить нарушение этого правила, измените значение <xref:System.Runtime.InteropServices.StructLayoutAttribute> атрибута на [LayoutKind. Explicit](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>) или [LayoutKind. Sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>)или сделайте тип невидимым для com.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
 Для этого правила отключать вывод предупреждений не следует.
 
 ## <a name="example"></a>Пример
 
-В примере показан тип, который нарушает правило и тип, соответствующий этому правилу.
+В следующем примере показан тип, нарушающий правило, и тип, соответствующий правилу.
 
 [!code-csharp[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/CSharp/ca1403-auto-layout-types-should-not-be-com-visible_1.cs)]
 [!code-vb[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/VisualBasic/ca1403-auto-layout-types-should-not-be-com-visible_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
 
-[CA1408: Не используйте AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+[CA1408 Не использовать двойное ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>См. также
 
-- [Определения типов .NET для взаимодействия](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+- [Квалифицировать типы .NET для взаимодействия](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
 - [Взаимодействие с неуправляемым кодом](/dotnet/framework/interop/index)

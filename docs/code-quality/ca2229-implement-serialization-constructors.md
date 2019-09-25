@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac8a9201e375877c1b586bd6415dd81764f5d2b
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.openlocfilehash: d148efb87c8516b34342a8c9d16b63364a2eae16
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739239"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231010"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229. Реализуйте конструкторы сериализации
 
@@ -30,7 +30,7 @@ ms.locfileid: "70739239"
 |Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Тип реализует <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейс, не является делегатом или интерфейсом, и одно из следующих условий имеет значение true:
 
 - Тип не имеет конструктора, принимающего <xref:System.Runtime.Serialization.SerializationInfo> объект <xref:System.Runtime.Serialization.StreamingContext> и объект (сигнатура конструктора сериализации).

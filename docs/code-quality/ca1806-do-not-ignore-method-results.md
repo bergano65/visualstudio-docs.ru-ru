@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 - VB
 manager: jillfra
-ms.openlocfilehash: 2e68fb6b4c40c165a09ae2631a2ad0a64bf52fbc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2bf4833aebdb6a92b9bd05294dd314dc2967738e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921557"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233677"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806. Не игнорируйте результаты метода
 
@@ -32,7 +32,7 @@ ms.locfileid: "68921557"
 |Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Это предупреждение может быть вызвано несколькими причинами.
 
@@ -53,7 +53,7 @@ ms.locfileid: "68921557"
 
 Если метод A вызывает метод B, но не использует новый экземпляр строки, возвращаемый методом B. Передайте экземпляр в качестве аргумента другому методу, присвойте экземпляр переменной. Или удалите вызов, если он не нужен.
 
- -или-
+ \- или -
 
 Если метод A вызывает метод B, но не использует HRESULT или код ошибки, возвращаемый методом. Используйте результат в условном операторе, присвойте результат переменной или передайте его в качестве аргумента другому методу.
 

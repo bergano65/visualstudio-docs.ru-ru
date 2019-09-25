@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f13ac29028472384cfadbf9c397e578f6509670
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eacd20dee0758ff481b259807ba52bb78b26f5d2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922429"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235391"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061. Не скрывайте методы базовых классов
 
@@ -30,7 +30,7 @@ ms.locfileid: "68922429"
 |Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Производный тип объявляет метод с тем же именем и с тем же количеством параметров, что и один из его базовых методов. один или несколько параметров являются базовым типом соответствующего параметра в базовом методе. и все остальные параметры имеют типы, идентичные соответствующим параметрам в базовом методе.
 
 ## <a name="rule-description"></a>Описание правила

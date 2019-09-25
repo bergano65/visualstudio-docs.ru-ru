@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d878572c4391805773a9a711ee88e7b58f507c65
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921306"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233298"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901. Объявления P/Invoke должны быть переносимыми
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921306"
 |Категория|Microsoft. переносимость|
 |Критическое изменение|Критическое — если P/Invoke видим за пределами сборки. Не критическое — если P/Invoke не виден за пределами сборки.|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Это правило оценивает размер каждого параметра и возвращаемое значение P/Invoke и проверяет, что их размер при маршалировании в неуправляемый код на 32-разрядных и 64-разрядных платформах является правильным. Наиболее распространенным нарушением этого правила является передача целого числа фиксированного размера, где требуется зависящая от платформы переменная с размером указателя.
 
 ## <a name="rule-description"></a>Описание правила

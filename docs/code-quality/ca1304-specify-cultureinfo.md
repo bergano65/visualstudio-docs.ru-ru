@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 2539cef9e6b2fe20513943f686aeaa1ff7a79013
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714360"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235107"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304. Указывайте CultureInfo
 
@@ -27,12 +27,12 @@ ms.locfileid: "66714360"
 |-|-|
 |TypeName|SpecifyCultureInfo|
 |CheckId|CA1304|
-|Категория|Microsoft.Globalization|
+|Категория|Microsoft. Globalization|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Метод или конструктор вызывает член, имеющий перегрузку, принимающую <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> параметра и этот метод или конструктор не вызывает перегрузку, принимающую <xref:System.Globalization.CultureInfo> параметра. Это правило пропускает вызовы следующих методов:
+Метод или конструктор вызывает член, имеющий перегрузку, принимающую <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> параметр, а метод или конструктор не вызывает перегрузку, которая <xref:System.Globalization.CultureInfo> принимает параметр. Это правило игнорирует вызовы следующих методов:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -40,36 +40,36 @@ ms.locfileid: "66714360"
 
 ## <a name="rule-description"></a>Описание правила
 
-Когда <xref:System.Globalization.CultureInfo> или <xref:System.IFormatProvider?displayProperty=nameWithType> не предоставляется значение по умолчанию, поставляемое перегруженным членом, возможно, не нужных во всех языковых стандартах. Кроме того члены .NET выберите язык и региональные параметры по умолчанию и исходя из предположения, которые могут быть неправильными в коде. Чтобы убедиться, что код работает правильно для сценариев, необходимо предоставить сведения об особенностях языка и региональных параметров в соответствии с приведенным ниже рекомендациям:
+Если объект <xref:System.IFormatProvider?displayProperty=nameWithType> или не указан, то значение по умолчанию, предоставляемое перегруженным членом, может не иметь желаемого результата во всех языковых стандартах. <xref:System.Globalization.CultureInfo> Кроме того, члены .NET выбирают язык и региональные параметры по умолчанию и форматирование на основе допущений, которые могут быть неправильными для вашего кода. Чтобы код правильно работал в ваших сценариях, необходимо предоставить сведения, относящиеся к культуре, в соответствии со следующими рекомендациями.
 
 - Если значение будет отображаться для пользователя, используйте текущий язык и региональные параметры. См. раздел <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Если значение будет храниться и использоваться программой, то есть сохраняется в файл или базу данных, использующие инвариантный язык. См. раздел <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Если значение будет храниться и доступно по программному обеспечению, то есть сохраненному в файле или базе данных, используется инвариантный язык и региональные параметры. См. раздел <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
-- Если вы не знаете назначение значения, у потребителя данных или поставщик указать язык и региональные параметры.
+- Если вы не узнаете назначение значения, укажите в качестве потребителя или поставщика данных культуру.
 
-Даже если перегруженным членом по умолчанию не подходит для ваших потребностей, лучше явно вызвать перегрузку конкретного языка и региональных параметров, чтобы ваш код самодокументируемыми и более простую обслуживаемую.
+Даже если поведение перегруженного элемента по умолчанию подходит для ваших потребностей, лучше вызвать перегрузку, зависящую от языка и региональных параметров, чтобы обеспечить самодокументирование и упростить обслуживание кода.
 
 > [!NOTE]
-> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> используется только для извлечения локализованных ресурсов с помощью экземпляра <xref:System.Resources.ResourceManager?displayProperty=nameWithType> класса.
+> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>используется только для получения локализованных ресурсов с помощью экземпляра <xref:System.Resources.ResourceManager?displayProperty=nameWithType> класса.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, используйте перегрузку, принимающую <xref:System.Globalization.CultureInfo> аргумент.
+Чтобы устранить нарушение этого правила, используйте перегрузку, которая принимает <xref:System.Globalization.CultureInfo> аргумент.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Его можно безопасно подавить предупреждение из этого правила, когда известно, что язык и региональные параметры по умолчанию, является правильным выбором и удобства поддержки кода не является важным разработки приоритет.
+Предупреждение от этого правила можно отключить, если известно, что язык и региональные параметры по умолчанию являются правильным выбором, а поддержка кода не является важным приоритетом разработки.
 
-## <a name="example-showing-how-to-fix-violations"></a>Пример, показывающий, как устранить нарушения
+## <a name="example-showing-how-to-fix-violations"></a>Пример, демонстрирующий устранение нарушений
 
-В следующем примере `BadMethod` вызывает два нарушения этого правила. `GoodMethod` исправляет первое нарушение, передав инвариантного языка и региональных параметров для <xref:System.String.Compare%2A?displayProperty=nameWithType>и исправляет нарушение второй путем передачи текущего языка и региональных параметров для <xref:System.String.ToLower%2A?displayProperty=nameWithType> поскольку `string3` отображается для пользователя.
+В следующем примере `BadMethod` приводит к двум нарушениям этого правила. `GoodMethod`устраняет первое нарушение, передавая инвариантный язык и региональные параметры <xref:System.String.Compare%2A?displayProperty=nameWithType>в и исправляет второе нарушение, передавая текущий язык и региональные <xref:System.String.ToLower%2A?displayProperty=nameWithType> параметры `string3` в, так как отображается для пользователя.
 
 [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]
 
-## <a name="example-showing-formatted-output"></a>Пример демонстрирует Форматированные выходные данные
+## <a name="example-showing-formatted-output"></a>Пример отображения форматированного вывода
 
-В следующем примере показано влияние текущего языка и региональных параметров по умолчанию <xref:System.IFormatProvider> установлен по <xref:System.DateTime> типа.
+В следующем примере показано воздействие текущего языка и региональных параметров на значение <xref:System.IFormatProvider> по умолчанию, выбранное <xref:System.DateTime> типом.
 
 [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_2.cs)]
 
@@ -82,8 +82,8 @@ ms.locfileid: "66714360"
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1305: Укажите IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
+- [CA1305 Указание IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>См. также
 
-- [С помощью класса CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)
+- [Использование класса CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

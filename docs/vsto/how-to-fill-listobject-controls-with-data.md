@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Заполнение элементов управления ListObject с данными
+title: Практическое руководство. Заполнение элементов управления ListObject данными
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +17,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f65f6de7cfb336eb001de47fb6562b7200391419
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0916ca11d4df5f6b69376d7223143afbb407f6e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967990"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255882"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>Практическое руководство. Заполнение элементов управления ListObject с данными
+# <a name="how-to-fill-listobject-controls-with-data"></a>Практическое руководство. Заполнение элементов управления ListObject данными
   Вы можете использовать привязку данных как способ быстрого добавления данных в документ. После привязки данных к объекту-списку можно отключить этот объект-список, чтобы он отображал данные, но не был привязан к источнику данных.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") демонстрационные видеоматериалы см. в разделе [инструкции: Создание списка в Excel, подключенного к списку SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).
+ ![ссылка на видео](../vsto/media/playvideo.gif "ссылка на видео") Связанные демонстрационные видеоролики см [. в разделе разделы справки: Создать список в Excel, подключенный к списку SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).
 
 ### <a name="to-bind-data-to-a-listobject-control"></a>Привязка данных к элементу управления ListObject
 
@@ -62,7 +62,7 @@ ms.locfileid: "62967990"
 - [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Элементы управления в документах Office](../vsto/controls-on-office-documents.md)
 - [Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Практическое руководство. Сопоставления столбцов ListObject с данными](../vsto/how-to-map-listobject-columns-to-data.md)
+- [Практическое руководство. Сопоставьте столбцы ListObject с данными](../vsto/how-to-map-listobject-columns-to-data.md)
 - [Автоматизация Excel с помощью расширенных объектов](../vsto/automating-excel-by-using-extended-objects.md)
 - [Элемент управления ListObject](../vsto/listobject-control.md)
 - [Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md)

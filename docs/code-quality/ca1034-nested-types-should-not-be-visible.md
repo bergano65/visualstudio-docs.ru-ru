@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a086ad80bd13fb18f866769db34d72cae3e67496
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ead932af202bd1a44464025a1b09baa698acb7b1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922865"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236032"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034. Вложенные типы не должны быть видимыми
 
@@ -34,7 +34,7 @@ ms.locfileid: "68922865"
 |Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Видимый извне тип содержит объявление видимого извне типа. Из этого правила исключены вложенные перечисления и защищенные типы.
 

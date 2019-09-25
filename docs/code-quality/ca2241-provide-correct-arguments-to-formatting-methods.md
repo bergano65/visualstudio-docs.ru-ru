@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bdb8ef315c9702cc10352368aba7202a8f29f7f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 10a4cdaa1e2de768cadc569424a490aa4adb7135
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920006"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253215"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241. Задайте правильные аргументы для методов форматирования
 
@@ -34,7 +34,7 @@ ms.locfileid: "68920006"
 |Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Строковый аргумент, передаваемый методу <xref:System.Console.WriteLine%2A>, например <xref:System.Console.Write%2A>, или <xref:System.String.Format%2A?displayProperty=fullName> , не содержит элемент форматирования, соответствующий аргументу объекта, или наоборот. `format`
 
 ## <a name="rule-description"></a>Описание правила
