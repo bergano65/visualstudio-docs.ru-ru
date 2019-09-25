@@ -1,5 +1,5 @@
 - name: Документация по отладчику
-  href: index.md
+  href: index.yml
 - name: Обзор
   items:
     - name: Что такое отладка?
@@ -450,7 +450,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Предварительное получение содержимого для приложений Microsoft Store
               href: prefetch-content-for-windows-store-apps.md
-        - name: Управляемый код
+        - name: 'Управляемый код (C#, Visual Basic, F#)'
           items:
             - name: Отладка управляемого кода
               href: debugging-managed-code.md
@@ -494,7 +494,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: 'Отладка F#'
               href: debugging-f-hash.md
-        - name: Машинный код
+        - name: Код C/C++
           items:
             - name: Отладка машинного кода
               href: debugging-native-code.md
@@ -582,7 +582,7 @@
                   href: com-debugging-tools.md
             - name: Отладка внедренного кода
               href: how-to-debug-injected-code.md
-        - name: Отладка кода GPU
+        - name: Код GPU
           href: debugging-gpu-code.md
         - name: Диагностика графики
           href: graphics/toc.yml
@@ -632,6 +632,10 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Веб-сервер настроен неправильно
                       href: error-the-web-server-is-not-configured-correctly.md
+        - name: Python
+          href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: JavaScript и TypeScript
+          href: ../javascript/debug-nodejs.md
         - name: Веб-приложения
           items:
             - name: Отладка веб-приложений

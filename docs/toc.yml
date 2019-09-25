@@ -1,4 +1,4 @@
-- name: Документация по Visual Studio
+- name: Документация по интегрированной среде разработки Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
 - name: Обзор
