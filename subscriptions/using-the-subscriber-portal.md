@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Сведения о полном наборе преимуществ, доступных на портале подписок Visual Studio
-ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 5ca5d3a2dcdf04e54159c746b93368b7d56be0da
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377920"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095308"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Сведения об использовании портала подписчика (my.visualstudio.com)
 
@@ -21,8 +21,8 @@ ms.locfileid: "68377920"
 
 Портал разделен на шесть страниц.  Каждая из них предоставляет доступ к определенным продуктам и (или) услугам, включенным в вашу подписку.  Выделяются следующие категории: преимущества, загрузки, ключи продуктов, подписки, поддержка и Marketplace.
 
-## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Преимущества](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Средства и службы, включенные в вашу подписку, отображаются в виде плиток на странице "Преимущества".  Не все преимущества предоставляются для всех подписок. Элементы делятся на три категории:  инструменты, профессиональная разработка и поддержка.  Если вы используете Visual Studio Dev Essentials, здесь будет еще одна категория — "Рекомендованные", — в которую могут входить самые интересные преимущества из любых других категорий.
+## <a name="benefitshttpsmyvisualstudiocombenefitswtmc_idomsftdocs"></a>[Преимущества](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+Средства и службы, включенные в вашу подписку, отображаются в виде плиток на странице "Преимущества".  Не все преимущества предоставляются для всех подписок. Элементы делятся на три категории:  инструменты, профессиональная разработка и поддержка.  
 
 ### <a name="tools"></a>Инструменты
 Категория "Инструменты" содержит основные средства для разработки, такие как интегрированная среда разработки Visual Studio и Azure DevOps, а также предложения наших партнеров.  Здесь же вы найдете Azure, Центр приложений Visual Studio и другие службы.
@@ -33,15 +33,15 @@ ms.locfileid: "68377920"
 ### <a name="support"></a>Поддержка
 У вас есть вопрос об Azure?  Обращайтесь в сообщество Azure на форумах или воспользуйтесь чатом с Помощником по Azure (предварительная версия).  Служба Concierge Chat позволит вам найти техническую документацию и сведения о продуктах, а также разобраться в процессах управления подпиской.  Некоторые подписки предоставляют еще и доступ к службе технической поддержки при возникновении неполадок. Служба помогает устранять проблемы с множеством продуктов корпорации Майкрософт для разработки и тестирования.
 
-## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[Скачиваемые файлы](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
+## <a name="downloadshttpsmyvisualstudiocomdownloadswtmc_idomsftdocs"></a>[Скачиваемые файлы](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
 В зависимости от типа используемой подписки или программы, вы можете скачивать различное программное обеспечение — от обновлений и исправлений до обширной библиотеки текущих продуктов, а также более ранние версии для тестирования приложений в разных сценариях.
 
 Для удобства подписчиков, у которых с одной учетной записью связано несколько подписок, на странице загрузок отображаются все файлы, доступные для самого высокого уровня подписки.  Таким образом, все файлы для скачивания доступны всегда, независимо от того, какая подписка используется в настоящий момент.
 
-## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmcidomsftdocs"></a>[Ключи продуктов](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
+## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmc_idomsftdocs"></a>[Ключи продуктов](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
 Откройте страницу ключей продуктов, чтобы получить ключи для установки и активации продуктов или проверить список уже запрошенных ключей.  Вы даже можете экспортировать список ключей для длительного хранения.
 
-## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Подписки](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
+## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmc_idomsftdocs"></a>[Подписки](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 Страница "Подписки" позволяет просматривать подписки, которые вам принадлежат, переключаться между ними, обновлять их и активировать новые подписки. Вы также можете связать подписки, доступные через учетную запись Майкрософт, с другой учетной записью, которая используется для доступа к уже существующим ресурсам Visual Studio IDE, Azure DevOps или Azure.
 
 ## <a name="support"></a>Поддержка
