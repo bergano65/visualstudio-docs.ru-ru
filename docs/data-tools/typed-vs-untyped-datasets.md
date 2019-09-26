@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31933e2045981fd6a0f38fb19a9480787c9f282a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 1c5ae8c665c195a1a50e02afda97ec34ac163297
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925587"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252916"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Типизированные и нетипизированные наборы данных
 Типизированный набор данных — это набор данных, который сначала является производным от базового <xref:System.Data.DataSet> класса, а затем использует сведения из **Конструктор наборов данных**, которые хранятся в XSD-файле, для создания нового строго типизированного класса DataSet. Сведения из схемы (таблицы, столбцы и т. д.) создаются и компилируются в этот новый класс DataSet в виде набора объектов и свойств первого класса. Поскольку типизированный набор данных наследуется от <xref:System.Data.DataSet> базового класса, типизированный класс предполагает все функциональные возможности <xref:System.Data.DataSet> класса и может использоваться с методами, <xref:System.Data.DataSet> принимающими экземпляр класса в качестве параметра.
