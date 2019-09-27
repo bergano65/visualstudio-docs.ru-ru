@@ -95,6 +95,10 @@
 ## [Использование мобильных приложений и Xamarin](/visualstudio/mac/xamarin)
 
 # [Специальные возможности](accessibility.md)
+## [Настройка специальных возможностей в интегрированной среде разработки](accessibility-ide-options.md)
+## [Использование специальных возможностей macOS](accessibility-macos.md)
+### [Использование навигации с помощью клавиатуры](accessibility-keyboard.md)
+### [Использование VoiceOver](accessibility-voiceover.md)
 
 # Устранение неполадок
 ## [Журналы и исключения](troubleshooting.md)

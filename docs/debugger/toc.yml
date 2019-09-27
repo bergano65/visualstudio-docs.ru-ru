@@ -666,6 +666,10 @@
               href: how-to-step-into-wcf-services.md
             - name: Отладка резидентной службы WCF
               href: how-to-debug-a-self-hosted-wcf-service.md
+    - name: Совместная работа
+      items:
+        - name: Написание и отладка кода с помощью Live Share
+          href: /visualstudio/liveshare/use/vs
     - name: Файлы дампа
       items:
         - name: Использование файлов дампа
