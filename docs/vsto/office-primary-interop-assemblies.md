@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6a709a59e85f65cf2e0caa0551610dd496bedda5
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253740"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342507"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office - основные сборки взаимодействия
 
@@ -61,13 +61,13 @@ Visual Studio использует разные наборы основных с
 
 Начиная с Visual Studio 2017 эти копии основных сборок взаимодействия устанавливаются в следующие общие расположения на компьютере разработчика:
 
-- *%ProgramFiles%\Microsoft Visual Студио\шаред\висуал Studio Tools for Оффице\пиа\*
+- `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- (или *% ProgramFiles (x86)% \ Microsoft Visual студио\шаред\висуал Studio Tools for\* оффице\пиа на 64-разрядных операционных системах)
+- (или `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` в 64-разрядных операционных системах)
 
 > [!NOTE]
-> Для более старых версий Visual Studio эти сборки PIA будут установлены в папку Инструменты Visual Studio для Оффице\пиа в папке *% ProgramFiles% для этой версии Visual Studio.
-> Например: *% ProgramFiles (x86)% \ Microsoft Visual Studio с параметром ".\n\n-\ Инструменты Visual Studio" для Оффице\пиа\*
+> Для более ранних версий Visual Studio эти основные сборки взаимодействия будут установлены в папку Инструменты Visual Studio для Оффице\пиа в папке `%ProgramFiles%` для этой версии Visual Studio.
+> Пример: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Основные сборки взаимодействия в глобальном кэше сборок
 
@@ -86,7 +86,7 @@ Visual Studio использует разные наборы основных с
 Если вы установили и зарегистрировали основные сборки взаимодействия в глобальном кэше сборок, эти версии сборок отображаются на вкладке **COM** диалогового окна **Диспетчер ссылок** . Следует избегать добавления ссылок на эти версии сборок, так как имеются несколько проблем разработки, которые могут возникать при их использовании. Например, если вы зарегистрировали разные версии основных сборок взаимодействия в глобальном кэше сборок, проект будет автоматически привязан к версии сборки, которая была зарегистрирована последней, даже если вы укажете другую версию сборки на вкладке **COM** диалогового окна **Диспетчер ссылок** .
 
 > [!NOTE]
-> Некоторые сборки добавляются в проект автоматически при добавлении сборки, которая на них ссылается. Например, ссылки на сборки *Office. dll* и *Microsoft. VBE. Interop. dll* добавляются автоматически при добавлении ссылки на сборки Word, Excel, Outlook, Microsoft Forms или Graph.
+> Некоторые сборки добавляются в проект автоматически при добавлении сборки, которая на них ссылается. Например, ссылки на сборки `Office.dll` и `Microsoft.Vbe.Interop.dll` добавляются автоматически при добавлении ссылки на сборки Word, Excel, Outlook, Microsoft Forms или Graph.
 
 <a name="pialist"></a>
 
