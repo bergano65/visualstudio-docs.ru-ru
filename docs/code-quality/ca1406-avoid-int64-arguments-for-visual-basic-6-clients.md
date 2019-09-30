@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dfcc612e931756b0e3d817556c9b37844bc3cfd
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 82a8b1ea389c37dc63a9fe7366208a2a3028efb8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922037"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234802"
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406. Не используйте аргументы Int64 для клиентов Visual Basic 6
 
@@ -33,7 +33,7 @@ ms.locfileid: "68922037"
 |Категория|Microsoft. взаимодействие|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Тип, который специально помечен как видимый для модели COM, объявляет член, принимающий <xref:System.Int64?displayProperty=fullName> аргумент.
 
 ## <a name="rule-description"></a>Описание правила

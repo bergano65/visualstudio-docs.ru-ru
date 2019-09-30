@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f734d0cf28a5aec28ebbf635dd384efe176b1774
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4bef51c547d4a1614137e0691343bef635aed50d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921319"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233277"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900. Поля типов значений должны быть переносимыми
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921319"
 |Категория|Microsoft. переносимость|
 |Критическое изменение|Критическое — если поле может отображаться за пределами сборки.<br /><br /> Не критическое — если поле не отображается за пределами сборки.|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Это правило проверяет, должны ли структуры, объявленные с явно заданным макетом, правильно выстроиться при маршалировании в неуправляемый код в 64-разрядных операционных системах. IA-64 не допускает несогласованный доступ к памяти, и процесс будет аварийно завершиться, если это нарушение не исправлено.
 
 ## <a name="rule-description"></a>Описание правила

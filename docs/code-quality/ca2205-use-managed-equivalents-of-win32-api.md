@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 99d53296ad72aef1910a39299be64c7cb03dd49a
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ad26dcbbbef5a34796ca0aa134653c3c9df5d763
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714715"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253260"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205. Используйте управляемые эквиваленты Win32 API
 
@@ -30,36 +30,36 @@ ms.locfileid: "66714715"
 |-|-|
 |TypeName|UseManagedEquivalentsOfWin32Api|
 |CheckId|CA2205|
-|Категория|Microsoft.Usage|
+|Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Неуправляемого определен метод, и существует метод с эквивалентной функциональностью в .NET.
+Определен метод вызова неуправляемого кода, и в .NET существует метод с аналогичной функциональностью.
 
 ## <a name="rule-description"></a>Описание правила
 
-Неуправляемого метода используется для вызова неуправляемой функции DLL и определяется с помощью <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> атрибут, или `Declare` в Visual Basic. Это некорректно определенная платформа вызова метода может вызывать исключения среды выполнения из-за проблем, таких как неверно именованные функции, неправильное сопоставление типов данных параметров и возвращаемых значений и неверная спецификация полей, например соглашение о вызовах и символ набор. Если он доступен, это проще и ошибкам для вызова эквивалентного управляемого метода вместо определения и вызова неуправляемого метода напрямую. Вызов платформы вызов метода также может привести к дополнительным проблемам с безопасностью, которые следует учитывать.
+Метод вызова платформы используется для вызова неуправляемой функции DLL и определяется с помощью <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> атрибута `Declare` или ключевого слова в Visual Basic. Неверно определенный метод вызова неуправляемого кода может привести к исключениям во время выполнения из-за таких проблем, как неправильное имя функции, сбой сопоставления типов данных параметров и возвращаемых значений и неверных спецификаций полей, таких как соглашение о вызовах и символ параметр. Если доступно, то проще и менее подвержены ошибкам вызов эквивалентного управляемого метода, чем для определения и непосредственного вызова неуправляемого метода. Вызов метода вызова неуправляемого кода также может привести к дополнительным проблемам безопасности, которые необходимо решить.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, замените вызов неуправляемой функции с помощью вызова его управляемого эквивалента.
+Чтобы устранить нарушение этого правила, замените вызов неуправляемой функции вызовом управляемого эквивалента.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Отключайте предупреждение из этого правила, если метод в качестве замены не предоставляет необходимую функциональность.
+Подавлять предупреждение из этого правила, если предлагаемый метод замены не предоставляет необходимые функции.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показан платформы вызвать определение метода, который нарушает правило. Кроме того вызовы платформы вызова метода и показаны эквивалентные управляемый метод.
+В следующем примере показано определение метода вызова платформы, нарушающее правило. Кроме того, показаны вызовы метода вызова неуправляемого кода и эквивалентного управляемого метода.
 
 [!code-csharp[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/CSharp/ca2205-use-managed-equivalents-of-win32-api_1.cs)]
 [!code-vb[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/VisualBasic/ca2205-use-managed-equivalents-of-win32-api_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1404: Вызывайте GetLastError сразу после P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
-- [CA1060: Переместите P/Invokes в класс NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
-- [CA1400: Должны существовать точки входа P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
-- [CA1401: P/Invoke не должны быть видимыми](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
-- [CA2101: Укажите тип маршалинга для строковых аргументов P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+- [CA1404 Вызывайте GetLastError сразу после P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+- [CA1060: Перемещение P/Invoke в класс NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+- [CA1400 Должны существовать точки входа P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+- [CA1401 Методы P/Invoke не должны быть видимыми](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+- [CA2101 Задание маршалирования для строковых аргументов P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

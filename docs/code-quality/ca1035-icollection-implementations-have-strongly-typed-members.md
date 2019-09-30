@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a20feb514b87f2906fd4db32dfb38d3d9b661999
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8d9e74daa464a55a543b5eb8c189c9ddf1295301
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922830"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236022"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035. В составе реализаций ICollection есть члены со строгим типом
 
@@ -30,7 +30,7 @@ ms.locfileid: "68922830"
 |Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Открытый или защищенный тип реализует <xref:System.Collections.ICollection?displayProperty=fullName> , но не предоставляет строго типизированный метод для <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. Строго типизированная версия <xref:System.Collections.ICollection.CopyTo%2A> должна принимать два параметра и не может <xref:System.Array?displayProperty=fullName> иметь массив <xref:System.Object?displayProperty=fullName> или в качестве первого параметра.
 
 ## <a name="rule-description"></a>Описание правила

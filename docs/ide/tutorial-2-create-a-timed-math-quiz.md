@@ -4,20 +4,17 @@ ms.date: 11/04/2016
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0c7f3695be87f6cb4081b3aa02fc7a129869a4c
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 39550eb3e2d5fe78e50257b51b52642740781600
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293698"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118859"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Учебник 2. Создание ограниченной по времени математической головоломки
 
@@ -31,7 +28,7 @@ ms.locfileid: "70293698"
 
 - Выполнять простые арифметические операции в коде.
 
-По завершении урока задача будет выглядеть так, как показано на следующем рисунке, только с другими цифрами:
+По завершении урока задача будет выглядеть так, как показано на следующем снимке экрана, только с другими цифрами:
 
 ![Математическая головоломка с четырьмя задачами](../ide/media/express_finishedquiz.png)
 
@@ -40,7 +37,7 @@ ms.locfileid: "70293698"
 Скачать готовую версию головоломки можно на странице с [полным примером руководства по созданию математической головоломки](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
-> В этом учебнике приведены примеры как на Visual C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.
+> В этом учебнике приведены примеры как на C#, так и на Visual Basic, поэтому обращайте внимание на информацию, которая относится к используемому вами языку программирования.
 
 ## <a name="related-topics"></a>См. также
 

@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2310
 - DoNotUseInsecureDeserializerNetDataContractSerializer
-ms.openlocfilehash: 09496fd11945ec4d419cc215569a7436f96d71ec
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 5335e72307ea201ad77d6e59b267572d4d9aae56
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891148"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237710"
 ---
 # <a name="ca2310-do-not-use-insecure-deserializer-netdatacontractserializer"></a>CA2310. Не используйте небезопасный десериализатор NetDataContractSerializer
 
@@ -29,7 +29,7 @@ ms.locfileid: "69891148"
 |Категория|Microsoft.Security|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> Был вызван метод десериализации или указана ссылка.
 
@@ -47,7 +47,7 @@ ms.locfileid: "69891148"
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-Никогда не <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>использовать. Если необходимо использовать сопоставитель типов, ограничьте десериализованные типы до ожидаемого списка.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
   - Newtonsoft Json.NET — используйте Типенамехандлинг. None. Если необходимо использовать другое значение для Типенамехандлинг, ограничьте десериализованные типы до ожидаемого списка с помощью настраиваемого Исериализатионбиндер.
-  - Буферы протоколов
+  - Protocol Buffers
 - Сделайте сериализованные данные несанкционированными. После сериализации криптографически подписывает сериализованные данные. Перед десериализациюм проверьте криптографическую подпись. Защитите криптографический ключ от раскрывать и разрабатывать для смены ключей.
 - Ограничьте десериализованные типы. Реализуйте пользовательский <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>интерфейс. Перед десериализациюм <xref:System.Runtime.Serialization.NetDataContractSerializer>с <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> присвойте свойству экземпляр пользовательского <xref:System.Runtime.Serialization.SerializationBinder>. В переопределенном <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> методе, если тип является непредвиденным, вызовите исключение для отмены десериализации.
   - При ограничении десериализованных типов может потребоваться отключить это правило и включить правила [CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md) и [CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md). Правила [CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md) и [CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md) помогают <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> убедиться, что свойство всегда задано перед десериализациям.

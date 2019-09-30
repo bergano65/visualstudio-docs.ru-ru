@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eccab4b899f3af22d54952d4eb9e8f990932afa4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0e174782c46d24b7743d50faa9fac69d38c3d6c6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825216"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255186"
 ---
-# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Пошаговое руководство. Простая привязка данных в проект надстройки VSTO
+# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Пошаговое руководство. Простая привязка данных в проекте надстройки VSTO
 
 В проектах надстроек VSTO можно привязывать данные к элементам управления ведущего приложения и элементам управления Windows Forms. В этом пошаговом руководстве демонстрируется добавление элементов управления в документ Microsoft Office Word и привязка элементов управления к данным во время выполнения.
 
@@ -31,7 +31,7 @@ ms.locfileid: "67825216"
 
 - Добавление <xref:Microsoft.Office.Tools.Word.ContentControl> в документ во время выполнения.
 
-- создание объекта <xref:System.Windows.Forms.BindingSource> , соединяющего элемент управления с экземпляром набора данных.
+- Создание объекта <xref:System.Windows.Forms.BindingSource> , подключающего элемент управления к экземпляру набора данных.
 
 - Предоставление пользователю возможности прокручивать записи и просматривать их в элементе управления.
 
@@ -45,11 +45,11 @@ ms.locfileid: "67825216"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] или [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-- Доступ к запущенному экземпляру SQL Server 2005 или SQL Server 2005 Express с подключенной учебной базой данных `AdventureWorksLT` . Вы можете скачать `AdventureWorksLT` из базы данных [веб-сайте CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Дополнительные сведения о подключении базы данных см. в следующих разделах:
+- Доступ к запущенному экземпляру SQL Server 2005 или SQL Server 2005 Express с подключенной учебной базой данных `AdventureWorksLT` . `AdventureWorksLT` Базу данных можно загрузить с [веб-сайта CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Дополнительные сведения о подключении базы данных см. в следующих разделах:
 
-  - Присоединение базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express, см. в разделе [как: Присоединение базы данных (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Сведения о присоединении базы данных с помощью SQL Server Management Studio или SQL Server Management Studio Express [см. в разделе как Присоединение базы данных (SQL Server Management Studio](/sql/relational-databases/databases/attach-a-database)).
 
-  - Присоединение базы данных с помощью командной строки, см. в разделе [как: Добавить файл базы данных для SQL Server Express](/previous-versions/sql/).
+  - Сведения о присоединении базы данных с помощью командной строки см [. в разделе как Присоединение файла базы данных к](/previous-versions/sql/)SQL Server Express.
 
 ## <a name="create-a-new-project"></a>Создание нового проекта
 
@@ -61,9 +61,9 @@ ms.locfileid: "67825216"
 
      Дополнительные сведения см. в разделе [Практическое руководство. Создание проектов Office в Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio открывает *ThisAddIn.vb* или *ThisAddIn.cs* файл и добавляет **заполнение документов данными из базы данных** проект **обозревателе решений** .
+     Visual Studio открывает файл *ThisAddIn. vb* или *ThisAddIn.CS* и добавляет **заполненные документы из проекта базы данных** в **Обозреватель решений**.
 
-2. Если проект ориентирован [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] или [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], добавьте ссылку на *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* сборки. Эта ссылка потребуется для программного добавления элемента управления Windows Forms в документ далее в этом пошаговом руководстве.
+2. Если проект предназначен [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] для [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]или, добавьте ссылку на сборку *Microsoft. Office. Tools. Word. v 4.0. Utilities. dll* . Эта ссылка потребуется для программного добавления элемента управления Windows Forms в документ далее в этом пошаговом руководстве.
 
 ## <a name="create-a-data-source"></a>Создание источника данных
 
@@ -71,7 +71,7 @@ ms.locfileid: "67825216"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Добавление типизированного набора данных в проект
 
-1. Если **источников данных** окно не отображается, откройте его в строке меню выберите **представление** > **Other Windows**  >   **Источники данных**.
+1. Если окно **Источники данных** не отображается, отобразите его с помощью команды **Просмотреть** > **другие** > **Источники данных**Windows в строке меню.
 
 2. Выберите команду **Добавить новый источник данных** , чтобы запустить **Мастер настройки источника данных**.
 
@@ -79,7 +79,7 @@ ms.locfileid: "67825216"
 
 4. Если подключение к базе данных `AdventureWorksLT` существует, выберите его и нажмите кнопку **Далее**.
 
-    В противном случае нажмите **Создать подключение**и в диалоговом окне **Добавление подключения** создайте новое подключение. Дополнительные сведения см. в разделе [Добавление новых подключений](../data-tools/add-new-connections.md).
+    В противном случае нажмите **Создать подключение**и в диалоговом окне **Добавление подключения** создайте новое подключение. Дополнительные сведения см. в разделе [Добавление новых соединений](../data-tools/add-new-connections.md).
 
 5. На странице **Сохранение подключения в файле конфигурации приложения** нажмите кнопку **Далее**.
 
@@ -87,19 +87,19 @@ ms.locfileid: "67825216"
 
 7. Нажмите кнопку **Готово**.
 
-    *AdventureWorksLTDataSet.xsd* добавляется файл **обозревателе решений**. В этом файле определены следующие элементы:
+    Файл *AdventureWorksLTDataSet. xsd* добавляется в **Обозреватель решений**. В этом файле определены следующие элементы:
 
    - Типизированный набор данных с именем `AdventureWorksLTDataSet`. Этот набор данных представляет содержимое таблицы **Customer (SalesLT)** в базе данных AdventureWorksLT.
 
-   - Адаптер таблицы с именем `CustomerTableAdapter`. Этот адаптер таблицы можно использовать для чтения и записи данных `AdventureWorksLTDataSet`. Дополнительные сведения см. в разделе [TableAdapter overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Адаптер таблицы с `CustomerTableAdapter`именем. Этот TableAdapter можно использовать для чтения и записи данных в `AdventureWorksLTDataSet`. Дополнительные сведения см. в разделе [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Далее в пошаговом руководстве используются оба эти объекта.
 
 ## <a name="create-controls-and-binding-controls-to-data"></a>Создание элементов управления и привязка элементов управления к данным
 
-Базовый интерфейс для просмотра записей базы данных в этом пошаговом руководстве, и создается прямо внутри документа. Один элемент управления <xref:Microsoft.Office.Tools.Word.ContentControl> отображает по одной записи базы данных, а второй элемент управления <xref:Microsoft.Office.Tools.Word.Controls.Button> позволяет прокручивать записи вперед и назад. Элемент управления содержимым использует <xref:System.Windows.Forms.BindingSource> для подключения к базе данных.
+Интерфейс для просмотра записей базы данных в этом пошаговом руководстве является базовым и создается непосредственно внутри документа. Один элемент управления <xref:Microsoft.Office.Tools.Word.ContentControl> отображает по одной записи базы данных, а второй элемент управления <xref:Microsoft.Office.Tools.Word.Controls.Button> позволяет прокручивать записи вперед и назад. Элемент управления содержимым использует <xref:System.Windows.Forms.BindingSource> для подключения к базе данных.
 
-Дополнительные сведения о привязке элементов управления к данным см. в разделе [привязки данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).
+Дополнительные сведения о привязке элементов управления к данным см. [в разделе Привязка данных к элементам управления в решениях Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
 ### <a name="to-create-the-interface-in-the-document"></a>Создание интерфейса в документе
 
@@ -113,7 +113,7 @@ ms.locfileid: "67825216"
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3. Добавьте следующий код в метод `ThisAddIn_Startup` . Этот код создает ведущий элемент, расширяющий документ. Дополнительные сведения см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Добавьте следующий код в метод `ThisAddIn_Startup` . Этот код создает ведущий элемент, расширяющий документ. Дополнительные сведения см. [в разделе Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]
@@ -158,14 +158,14 @@ ms.locfileid: "67825216"
 - [Практическое руководство. Заполнение документов данными из базы данных](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [Практическое руководство. Заполнение документов данными из служб](../vsto/how-to-populate-documents-with-data-from-services.md)
 - [Практическое руководство. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Практическое руководство. Прокрутить записи базы данных на листе](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Практическое руководство. Обновить источник данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Практическое руководство. Прокрутка записей базы данных на листе](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Практическое руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Пошаговое руководство: Простая привязка данных в проекте уровня документа](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [Пошаговое руководство: Сложная привязка данных в проекте уровня документа](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
-- [Использовать файлы локальной базы данных в общие сведения о решений Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
+- [Общие сведения об использовании файлов локальной базы данных в решениях Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [Добавление новых источников данных](../data-tools/add-new-data-sources.md)
 - [Привязка элементов управления Windows Forms к данным в Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Практическое руководство. Заполнение документов данными из объектов](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Практическое руководство. Обновить источник данных с данными из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Использовать файлы локальной базы данных в общие сведения о решений Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
+- [Практическое руководство. Обновление источника данных с помощью данных из элемента управления ведущего приложения](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Общие сведения об использовании файлов локальной базы данных в решениях Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [Общие сведения о компоненте BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)

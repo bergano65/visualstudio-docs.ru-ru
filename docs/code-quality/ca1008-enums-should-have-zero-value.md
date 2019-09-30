@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 502033d2adffd640d2af6ee8d36b0c0f3cd71472
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c9b6e48fb82be5a41c420827a32926630bb725ed
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547929"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236493"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008. Перечисляемые типы должны иметь нулевое значение
 
@@ -34,7 +34,7 @@ ms.locfileid: "69547929"
 |Категория|Microsoft. Design|
 |Критическое изменение|Не критическое — при появлении запроса на добавление значения **None** к перечислению без флага. Критическое — при появлении запроса на переименование или удаление любых значений перечисления.|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Перечисление без примененного <xref:System.FlagsAttribute?displayProperty=fullName> параметра не определяет элемент, имеющий нулевое значение. Или перечисление, имеющее примененное <xref:System.FlagsAttribute> свойство, определяет член, имеющий нулевое значение, но его имя не равно "None". Или перечисление определяет несколько элементов с нулевым значением.
 

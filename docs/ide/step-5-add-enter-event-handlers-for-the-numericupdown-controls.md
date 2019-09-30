@@ -1,29 +1,33 @@
 ---
 title: Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2687c423f6b2facaa2fa1c3504888c65345888
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 8edebff5af7affebf166ea07ca7aa813037c13c2
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263113"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118749"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Шаг 5. Добавление обработчиков событий входа для элементов управления NumericUpDown
 
 В пятой части этого руководства вам предстоит добавить обработчики событий <xref:System.Windows.Forms.Control.Enter>, чтобы сделать ввод ответов на задачи головоломки немного удобнее. Этот код будет выделять и удалять текущее значение в каждом элементе управления <xref:System.Windows.Forms.NumericUpDown>, как только игрок выберет элемент управления и начнет вводить другое значение.
 
 > [!NOTE]
-> Этот раздел входит в серию учебников, посвященных основам написания кода. Общие сведения об учебнике см. в разделе [Руководство 2. Создание ограниченной по времени математической головоломки](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Этот раздел входит в серию учебников, посвященных основам написания кода.
+> - Общие сведения об учебнике см. в разделе [Руководство 2. Создание ограниченной по времени математической головоломки](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Скачать готовую версию кода можно на странице с [полным примером руководства по созданию математической головоломки](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-verify-the-default-behavior"></a>Проверка поведения по умолчанию
 
@@ -58,6 +62,9 @@ ms.locfileid: "66263113"
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
+     > [!IMPORTANT]
+     > Используйте элемент управления языка программирования в правом верхнем углу этой страницы, чтобы просмотреть фрагмент кода на C# или Visual Basic.<br><br>![Элемент управления языка программирования для Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+
      Этот код может показаться сложным, однако в нем легко разобраться, если просмотреть его шаг за шагом. Сначала посмотрите на верхнюю часть метода — `object sender` в C# или `sender As System.Object` в Visual Basic. Этот параметр ссылается на объект, событие которого срабатывает. Он называется отправителем. В данном случае объектом-отправителем является элемент управления NumericUpDown. Поэтому в первой строке метода указывается, что отправителем является не просто какой-либо объект, а именно элемент управления NumericUpDown. (каждый элемент управления NumericUpDown это объект, но не каждый объект, это элемент управления NumericUpDown). Элемент управления NumericUpDown в этом методе называется **answerBox**, поскольку он будет использоваться для всех элементов управления NumericUpDown в форме, а не только для элемента управления NumericUpDown с именем "sum". Поскольку переменная answerBox объявлена в этом методе, ее область действия ограничена этим методом. Иными словами, эту переменную можно использовать только внутри этого метода.
 
      В следующей строке кода выполняется проверка, что answerBox был успешно преобразован из объекта в элемент управления NumericUpDown. Если бы преобразование завершилось неудачей, переменная имела бы значение `null` (C#) или `Nothing` (Visual Basic). Третья строка получает длину ответа, который отображается в элементе управления NumericUpDown, а четвертая строка выделяет текущее значение в элементе управления, основываясь на этой длине. Теперь, когда игрок выбирает элемент управления, Visual Studio запускает это событие, в результате чего текущий ответ выделяется. Как только игрок начинает вводить другой ответ, предыдущий ответ удаляется и заменяется новым ответом.
@@ -74,6 +81,6 @@ ms.locfileid: "66263113"
 
 ## <a name="to-continue-or-review"></a>Продолжить или повторить пройденный материал
 
-- Следующий раздел руководства: [Шаг 6. Добавление задачи на вычитание](../ide/step-6-add-a-subtraction-problem.md).
+- Следующий раздел руководства: **[Шаг 6. Добавление задачи на вычитание](../ide/step-6-add-a-subtraction-problem.md)** .
 
 - Предыдущий раздел руководства: [Шаг 4. Добавление метода CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).

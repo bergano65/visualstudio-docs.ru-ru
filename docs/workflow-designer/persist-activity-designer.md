@@ -1,5 +1,5 @@
 ---
-title: Конструктор рабочих процессов - конструктор действия Persist
+title: Конструктор действий по сохранению конструктор рабочих процессов
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,30 +10,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c97d916d00d1c976b4e27381f55e42cbb7cb0db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7be70d18b1fc8ff12e2d1fb177b41775954334ed
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004121"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254851"
 ---
 # <a name="persist-activity-designer"></a>Конструктор действия Persist
 
-**Persist** конструктора действий используется для создания и настройки <xref:System.Activities.Statements.Persist> действия.
+Конструктор **сохранения** действий используется для создания и настройки <xref:System.Activities.Statements.Persist> действия.
 
 ## <a name="the-persist-activity"></a>Действие Persist
 
-Действие <xref:System.Activities.Statements.Persist> сохраняет рабочий процесс на диск, если это возможно. Действие <xref:System.Activities.Statements.Persist> не может быть выполнено в зоне несохраняемости, например в пределах действия <xref:System.Activities.Statements.TransactionScope>. Если действие <xref:System.Activities.Statements.Persist> все же используется в области несохраняемости, то во время выполнения возникнет исключение.
+Действие <xref:System.Activities.Statements.Persist> сохраняет рабочий процесс на диск, если это возможно. Действие <xref:System.Activities.Statements.Persist> не может быть выполнено в зоне несохраняемости, например в пределах действия <xref:System.Activities.Statements.TransactionScope>. Если вы используете <xref:System.Activities.Statements.Persist> действие в области без сохранения состояния, во время выполнения создается исключение.
 
 ### <a name="using-the-persist-activity-designer"></a>Использование конструктора действия Persist
 
-**Persist** конструктора действий можно найти в **среды выполнения** категории **элементов**, который нажав **элементов** Вкладка (Кроме того, выберите **элементов** из **представление** меню или сочетание клавиш CTRL + ALT + X.)
+Конструктор **хранимых** операций можно найти в категории **Среда выполнения** **панели элементов**, щелкнув вкладку **область элементов** (также можно выбрать **область элементов** в меню **вид** или CTRL + ALT + X).
 
-**Persist** конструктор действия можно перетащить из **элементов** и сбрасываться в область конструктора рабочих процессов, везде, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. При этом создается <xref:System.Activities.Statements.Persist> действие по умолчанию **DisplayName** из Persist. <xref:System.Activities.Activity.DisplayName%2A> Можно изменить в заголовке **Persist** конструктора действий или в **DisplayName** поле таблицы свойств.
+Конструктор действий по **сохранению** можно перетащить из **панели элементов** в конструктор рабочих процессовную область, где обычно размещаются действия, например внутри <xref:System.Activities.Statements.Sequence>. Будет создано <xref:System.Activities.Statements.Persist> действие с **отображаемым значением DisplayName** по умолчанию. Можно изменить в заголовке конструктора **хранимых** операций или в поле DisplayName сетки свойств. <xref:System.Activities.Activity.DisplayName%2A>
 
 ### <a name="the-persist-properties"></a>Свойства Persist
 
-В следующей таблице показаны свойства <xref:System.Activities.Statements.Persist> и описано их использование в конструкторе. Эти свойства можно изменить в таблице свойств, и некоторые из них можно изменить на поверхности конструктора рабочих процессов.
+В следующей таблице показаны свойства <xref:System.Activities.Statements.Persist> и описано их использование в конструкторе. Эти свойства можно изменять в сетке свойств, а некоторые из них можно редактировать на конструктор рабочих процессов поверхности.
 
 |Имя свойства|Обязательно|Использование|
 |-|--------------|-|

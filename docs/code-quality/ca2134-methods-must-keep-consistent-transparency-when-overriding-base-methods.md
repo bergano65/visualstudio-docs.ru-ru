@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ca28f364307d4a2b73235bc6541cb8aa01abd56
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 517588826983613c71a74296914b1dfeb3eaa2b4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920661"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253318"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134. Методы должны сохранять одинаковую прозрачность при переопределении базовых методов
 
@@ -26,7 +26,7 @@ ms.locfileid: "68920661"
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Это правило срабатывает, когда метод, помеченный <xref:System.Security.SecurityCriticalAttribute> атрибутом, переопределяет метод, который является прозрачным или помеченным <xref:System.Security.SecuritySafeCriticalAttribute>атрибутом. Правило также срабатывает, когда метод, прозрачный или помеченный с помощью <xref:System.Security.SecuritySafeCriticalAttribute> переопределения, переопределяет метод, помеченный как. <xref:System.Security.SecurityCriticalAttribute>
 
 Это правило применяется при переопределении виртуального метода или реализации интерфейса.
@@ -40,7 +40,7 @@ ms.locfileid: "68920661"
 Чтобы устранить нарушение этого правила, измените прозрачность метода, переопределяющего виртуальный метод, или реализуйте интерфейс, чтобы он соответствовал прозрачности виртуального метода или интерфейса.
 
 ## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
-Не отключайте вывод предупреждений из этого правила. Нарушение этого правила приведет к тому, что среда <xref:System.TypeLoadException> выполнения будет работать для сборок, использующих прозрачность уровня 2.
+Не отключайте вывод предупреждений из этого правила. Нарушения этого правила приводят к времени <xref:System.TypeLoadException> выполнения сборок, использующих прозрачность уровня 2.
 
 ## <a name="examples"></a>Примеры
 

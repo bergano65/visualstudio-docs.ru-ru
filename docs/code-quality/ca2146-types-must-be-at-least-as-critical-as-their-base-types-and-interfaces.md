@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a70e999505bd900a7b3d89693ef4f6a1cef9de7d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ce7870077cb859a25de70c726c78cad1d50270e5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920422"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231946"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146. Типы должны быть по крайней мере настолько же критическими, как их базовые типы и интерфейсы
 
@@ -26,7 +26,7 @@ ms.locfileid: "68920422"
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Прозрачный тип является производным от типа, <xref:System.Security.SecuritySafeCriticalAttribute> помеченного как <xref:System.Security.SecurityCriticalAttribute>или, или тип, помеченный <xref:System.Security.SecuritySafeCriticalAttribute> атрибутом, является производным <xref:System.Security.SecurityCriticalAttribute> от типа, помеченного атрибутом.
 
 ## <a name="rule-description"></a>Описание правила

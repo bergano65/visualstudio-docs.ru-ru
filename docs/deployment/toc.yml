@@ -1,5 +1,5 @@
 - name: Документация по развертыванию
-  href: index.md
+  href: index.yml
 - name: Обзор
   items:
     - name: Общие сведения о развертывании
@@ -22,8 +22,8 @@
       items:
         - name: Развертывание приложения .NET Core с помощью средства публикации
           href: /dotnet/core/deploying/deploy-with-vs
-        - name: Упаковка классического приложения для Microsoft Store (мост для классических приложений)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: Упаковка классического приложения для Microsoft Store
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Развертывание классического приложения с помощью ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Сборка приложений ClickOnce из командной строки
@@ -38,14 +38,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: Непрерывное развертывание ASP.NET Core в Azure с помощью Git
           href: /aspnet/core/publishing/azure-continuous-deployment
-        - name: "Публикация в Kubernetes с помощью средств Visual\_Studio для\_Kubernetes"
-          href: ../containers/tutorial-kubernetes-tools.md?toc=/visualstudio/deployment/toc.json
     - name: C++
       items:
         - name: Развертывание приложения C/C++
           href: /cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Упаковка классического приложения для Microsoft Store (мост для классических приложений)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: Упаковка классического приложения для Microsoft Store
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Развертывание C++/CLR приложения с помощью ClickOnce...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
@@ -258,7 +256,7 @@
               href: strings-element-bootstrapper.md
             - name: Элемент <Schedules> (загрузчик)
               href: schedules-element-bootstrapper.md
-- name: Ссылка
+- name: Справочник
   items:
     - name: Справочные сведения ClickOnce
       items:

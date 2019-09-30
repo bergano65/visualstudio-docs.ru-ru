@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b17ccfe66875588ac19c587ff6fcbd889d1e6a44
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0ffc12d8d047be1bb13fcac133a61b047152ce3d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922319"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235321"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064. Исключения должны быть общими
 
@@ -30,7 +30,7 @@ ms.locfileid: "68922319"
 |Категория|Microsoft. Design|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Исключение, не являющееся общим, наследуется <xref:System.Exception>непосредственно <xref:System.SystemException>от, <xref:System.ApplicationException>или.
 
 ## <a name="rule-description"></a>Описание правила

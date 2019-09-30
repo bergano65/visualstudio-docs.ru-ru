@@ -1,5 +1,5 @@
 ---
-title: Объединение VBA и настроек уровня документа
+title: Объединение настроек VBA и параметров на уровне документа
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,14 +24,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 33481307ea6065b0421cd3ae20e54ca778ee4fd4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b3bab9c132439c6efa53842f1e13c6c5be31db00
+ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826023"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70977602"
 ---
-# <a name="combine-vba-and-document-level-customizations"></a>Объединение VBA и настроек уровня документа
+# <a name="combine-vba-and-document-level-customizations"></a>Объединение настроек VBA и параметров на уровне документа
   Код Visual Basic для приложений (VBA) можно использовать в документе, который является частью настройки на уровне документа для Microsoft Office Word или Microsoft Office Excel. Код VBA можно вызывать в документе из сборки настройки, или проект можно настроить таким образом, чтобы позволить коду VBA в документе вызывать код в сборке настройки.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
@@ -41,10 +41,10 @@ ms.locfileid: "67826023"
 
  При запуске решения обработчики событий в VBA и сборке настройки получают события, возникающие в документе, и выполняются оба набора кода. Заранее невозможно определить, какой из кодов будет выполнен раньше. Это необходимо определить путем тестирования в каждом конкретном случае. Если два набора кода тщательно не скоординированы и не протестированы, можно получить неожиданные результаты.
 
-## <a name="call-vba-code-from-the-customization-assembly"></a>Код VBA можно вызывать из сборки настройки
+## <a name="call-vba-code-from-the-customization-assembly"></a>Вызов кода VBA из сборки настройки
  В документах Word можно вызывать макросы, а в книгах Excel — функции и макросы. Для этого используйте один из следующих методов:
 
-- Для Word необходимо вызовите метод <xref:Microsoft.Office.Interop.Word._Application.Run%2A>класса <xref:Microsoft.Office.Interop.Word.Application> .
+- Для Word необходимо вызвать метод <xref:Microsoft.Office.Interop.Word._Application.Run%2A> класса <xref:Microsoft.Office.Interop.Word.Application>.
 
 - Для Excel необходимо вызвать метод <xref:Microsoft.Office.Interop.Excel._Application.Run%2A> класса <xref:Microsoft.Office.Interop.Excel.Application> .
 
@@ -69,7 +69,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ```
 
 > [!NOTE]
-> Сведения об использовании глобальной `missing` переменную вместо необязательных параметров в Visual C# см. в разделе [написания кода в решениях Office](../vsto/writing-code-in-office-solutions.md).
+> Сведения об использовании глобальной `missing` переменной вместо необязательных параметров в визуальном C#элементе см. в разделе [написание кода в решениях Office](../vsto/writing-code-in-office-solutions.md).
 
 ## <a name="call-code-in-document-level-customizations-from-vba"></a>Вызов кода в настройках уровня документа из VBA
  Проект на уровне документа для Word или Excel можно настроить таким образом, чтобы код Visual Basic для приложений (VBA) в документе мог вызывать код в сборке настройки. Это полезно в следующих случаях:
@@ -78,7 +78,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - Службы, разрабатываемые в настройке на уровне документа, необходимо сделать доступными для конечных пользователей, которые могут получать доступ к этим службам, путем написания кода VBA в документе.
 
-  Средства разработки решений на базе Office в Visual Studio предоставляют подобную функцию для надстроек VSTO. Если вы разрабатываете надстройку VSTO, то можете вызывать код в надстройке VSTO из других решений Microsoft Office. Дополнительные сведения см. в разделе [вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
+  Средства разработки решений на базе Office в Visual Studio предоставляют подобную функцию для надстроек VSTO. Если вы разрабатываете надстройку VSTO, то можете вызывать код в надстройке VSTO из других решений Microsoft Office. Дополнительные сведения см. [в разделе вызов кода в надстройках VSTO из других решений Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
 
 > [!NOTE]
 > Эту функцию нельзя использовать в проектах шаблонов Word. Ее можно использовать только в проектах документов Word, книг Excel или шаблонов Excel.
@@ -88,9 +88,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - Документ должен иметь одно из следующих расширений имени файла:
 
-  - Для Word: *.docm* или *.doc*
+  - Для Word: *. docm* или *. doc*
 
-  - Для Excel: *.xlsm*, *.xltm*, *.xls*, или *.xlt*
+  - Для Excel: *. xlsm*, *. xltm*, *. xls*или *. xlt*
 
 - Документ должен уже содержать проект VBA, который содержит в себе код VBA.
 
@@ -98,9 +98,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - Проект Office должен содержать по крайней мере один общий класс с одним или несколькими общими членами, которые вы предоставляете коду VBA.
 
-     Коду VBA можно предоставлять методы, свойства и события. Предоставляемым классом может быть класс ведущего элемента (например, `ThisDocument` для Word или `ThisWorkbook` и `Sheet1` для Excel) или другой класс, определенный в проекте. Дополнительные сведения о ведущих элементах см. в разделе [ведущие элементы и размещать элементы управления](../vsto/host-items-and-host-controls-overview.md).
+     Коду VBA можно предоставлять методы, свойства и события. Предоставляемым классом может быть класс ведущего элемента (например, `ThisDocument` для Word или `ThisWorkbook` и `Sheet1` для Excel) или другой класс, определенный в проекте. Дополнительные сведения о ведущих элементах см. в разделе [Общие сведения о ведущих элементах и элементах управления ведущего приложения](../vsto/host-items-and-host-controls-overview.md).
 
-## <a name="enable-vba-code-to-call-into-the-customization-assembly"></a>Код VBA мог вызывать сборку настройки
+## <a name="enable-vba-code-to-call-into-the-customization-assembly"></a>Включение кода VBA для вызова сборки настройки
  Для предоставления членов в сборке настройки коду VBA в документе можно использовать два способа:
 
 - В код VBA можно предоставлять члены класса ведущего элемента в проекте [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] . Для этого установите для свойства **EnableVbaCallers** ведущего элемента значение **True** в окне **Свойства** , когда ведущий элемент (то есть, документ, лист или книга) открыт в конструкторе. Visual Studio автоматически выполнит все необходимые действия, чтобы код VBA мог вызывать члены класса.
@@ -115,14 +115,14 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
   3. Для свойства **ReferenceAssemblyFromVbaProject** любого класса ведущего элемента в проекте установите значение **True**. Это внедряет библиотеку типов сборки настройки в саму сборку и добавляет ссылку на библиотеку типов в проект VBA в документе.
 
-  Подробные инструкции см. в разделе [как: Предоставить доступ к коду, коду VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) и [как: Предоставить доступ к коду, коду VBA в Visual c#&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).
+  Подробные инструкции см. в [разделе как Предоставление кода коду VBA в Visual Basic проекте](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) и [последующее: Предоставление кода VBA в проекте&#35; ](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)Visual C.
 
-  Свойства **EnableVbaCallers** и **ReferenceAssemblyFromVbaProject** доступны в окне **Свойства** только во время разработки. Они не могут использоваться во время выполнения. Для просмотра свойств откройте конструктор для ведущего элемента в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения о конкретных задачах, выполняемых в Visual Studio при задании этих свойств см. в разделе [задачи, выполняемые свойствами ведущих элементов](#PropertyTasks).
+  Свойства **EnableVbaCallers** и **ReferenceAssemblyFromVbaProject** доступны в окне **Свойства** только во время разработки. Они не могут использоваться во время выполнения. Для просмотра свойств откройте конструктор для ведущего элемента в [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Дополнительные сведения о конкретных задачах, выполняемых Visual Studio при задании этих свойств, см. [в разделе задачи, выполняемые свойствами ведущего элемента](#PropertyTasks).
 
 > [!NOTE]
 > Если книга или документ еще не содержит кода VBA, или код VBA в документе не является доверенным для выполнения, при установке для свойства **EnableVbaCallers** или **ReferenceAssemblyFromVbaProject** значения **True**вы получите сообщение об ошибке. Это происходит потому, что в данной ситуации Visual Studio не может изменить проект VBA в документе.
 
-## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>Использовать члены в коде VBA для вызова сборки настройки
+## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>Использование элементов в коде VBA для вызова сборки настройки
  После настройки своего проекта для обеспечения для кода VBA возможности вызывать сборку настройки Visual Studio добавляет в проект VBA в документе следующие члены:
 
 - Для всех проектов Visual Studio добавляет глобальный метод с именем `GetManagedClass`.
@@ -132,9 +132,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   Для доступа к открытым членам класса, который вы предоставляете коду VBA в проекте, можно использовать свойство `CallVSTOAssembly` или метод `GetManagedClass` .
 
 > [!NOTE]
-> Во время разработки и развертывания решения существуют несколько различных копий документа, в которые можно добавить код VBA. Дополнительные сведения см. в разделе [кода рекомендации по добавлению VBA в документ](#Guidelines).
+> Во время разработки и развертывания решения существуют несколько различных копий документа, в которые можно добавить код VBA. Дополнительные сведения см. в разделе [рекомендации по добавлению кода VBA в документ](#Guidelines).
 
-### <a name="use-the-callvstoassembly-property-in-a-visual-basic-project"></a>Использование свойства CallVSTOAssembly в проекте Visual Basic
+### <a name="use-the-callvstoassembly-property-in-a-visual-basic-project"></a>Использование свойства Каллвстоассембли в проекте Visual Basic
  Для доступа к открытым членам, которые вы добавили в класс ведущего элемента, используйте свойство `CallVSTOAssembly` . Например, следующий макрос VBA вызывает метод с именем `MyVSTOMethod` , который определен в классе `Sheet1` в проекте книги Excel.
 
 ```vb
@@ -153,7 +153,7 @@ Property Get CallVSTOAssembly() As ExcelWorkbook1.Sheet1
 End Property
 ```
 
-### <a name="use-the-getmanagedclass-method"></a>Использование метода GetManagedClass
+### <a name="use-the-getmanagedclass-method"></a>Использование метода Жетманажедкласс
  Чтобы использовать глобальный метод `GetManagedClass` , передайте объект VBA, соответствующий классу ведущего элемента, который содержит переопределенный метод **GetAutomationObject** . Затем для доступа к классу, который вы предоставляете коду VBA, используйте возвращенный объект.
 
  Например, следующий макрос VBA вызывает метод с именем `MyVSTOMethod` , который определен в классе ведущего элемента `Sheet1` в проекте книги Excel с именем `ExcelWorkbook1`.
@@ -174,12 +174,12 @@ GetManagedClass(pdispInteropObject Object) As Object
 
  Этот метод возвращает объект, представляющий класс, который вы предоставили коду VBA. Члены и параметры метода возвращенного объекта отображаются в IntelliSense.
 
-## <a name="Guidelines"></a> Рекомендации по добавлению кода VBA в документ
+## <a name="Guidelines"></a>Рекомендации по добавлению кода VBA в документ
  Существует несколько различных копий документа, где можно добавлять код VBA, который вызывает настройку на уровне документа.
 
  В ходе разработки и тестирования решения можно писать код VBA в документе, который открывается при отладке или запуске проекта в Visual Studio (то есть, документе в выходной папке сборки). Тем не менее, любой код VBA, добавляемый в этот документ, будут перезаписан в следующий раз при сборке проекта, так как Visual Studio заменяет документ в выходной папке сборки копией документа из главной папки проекта.
 
- Если необходимо сохранить код VBA, добавляемый в документ при отладке или выполнении решения, скопируйте код VBA в документ в папке проекта. Дополнительные сведения о процессе сборки см. в разделе [создавать решения office](../vsto/building-office-solutions.md).
+ Если необходимо сохранить код VBA, добавляемый в документ при отладке или выполнении решения, скопируйте код VBA в документ в папке проекта. Дополнительные сведения о процессе сборки см. в разделе [Построение решений Office](../vsto/building-office-solutions.md).
 
  Когда вы готовы к развертыванию решения, существует три основных расположения документа, куда можно добавлять код VBA.
 
@@ -199,9 +199,9 @@ GetManagedClass(pdispInteropObject Object) As Object
  Если пользователи устанавливают решение из папки установки, отличной от папки публикации, то добавления кода VBA в документ при каждой публикации решения можно избежать. Если обновление публикации готово для перемещения из папки публикации в папку установки, скопируйте все файлы в папку установки, кроме самого документа.
 
 ### <a name="on-the-end-user-computer"></a>На компьютере конечного пользователя
- Если конечные пользователи являются разработчиками VBA, вызывающими службы, которые вы указываете в настройке на уровне документа, им можно сообщить способ вызова кода с помощью свойства `CallVSTOAssembly` или метода `GetManagedClass` в их копиях документа. При публикации обновлений в решение, код VBA в документе на компьютере конечного пользователя не будет перезаписан, так как документ не изменяется при публикации обновлений.
+ Если конечные пользователи являются разработчиками VBA, вызывающими службы, которые вы указываете в настройке на уровне документа, им можно сообщить способ вызова кода с помощью свойства `CallVSTOAssembly` или метода `GetManagedClass` в их копиях документа. При публикации обновлений в решении код VBA в документе на компьютере конечного пользователя не перезаписывается, поскольку документ не изменяется при публикации обновлений.
 
-## <a name="PropertyTasks"></a> Задачи, выполняемые свойствами ведущих элементов
+## <a name="PropertyTasks"></a>Задачи, выполняемые свойствами ведущего элемента
  Когда вы используете свойства **EnableVbaCallers** и **ReferenceAssemblyFromVbaProject** , Visual Studio выполняет различные наборы задач.
 
 ### <a name="enablevbacallers"></a>EnableVbaCallers
@@ -245,15 +245,15 @@ GetManagedClass(pdispInteropObject Object) As Object
 |Error|Предложение|
 |-----------|----------------|
 |После задания свойства **EnableVbaCallers** или **ReferenceAssemblyFromVbaProject** появляется сообщение об ошибке, указывающее, что документ не содержит проект VBA, или что у вас нет разрешения на доступ к проекту VBA в документе.|Убедитесь, что документ в проекте содержит по крайней мере один макрос VBA, что проекту VBA задан достаточный уровень доверия для выполнения, и что проект VBA не защищен с помощью пароля.|
-|После задания свойства **EnableVbaCallers** или **ReferenceAssemblyFromVbaProject** появляется сообщение об ошибке, указывающее, что объявление <xref:System.Runtime.InteropServices.GuidAttribute> отсутствует или повреждено.|Убедитесь, что <xref:System.Runtime.InteropServices.GuidAttribute> объявление находится в *AssemblyInfo.cs* или *AssemblyInfo.vb* файл в проекте, и что этот атрибут задан допустимый идентификатор GUID.|
-|После задания свойства **EnableVbaCallers** или **ReferenceAssemblyFromVbaProject** появляется сообщение об ошибке, указывающее, что номер версии, указанный в <xref:System.Reflection.AssemblyVersionAttribute> , не является допустимым.|Убедитесь, что <xref:System.Reflection.AssemblyVersionAttribute> объявление в *AssemblyInfo.cs* или *AssemblyInfo.vb* в вашем проекте задан как допустимый номер версии сборки. Сведения о номерах версий сборки см. в классе <xref:System.Reflection.AssemblyVersionAttribute> .|
+|После задания свойства **EnableVbaCallers** или **ReferenceAssemblyFromVbaProject** появляется сообщение об ошибке, указывающее, что объявление <xref:System.Runtime.InteropServices.GuidAttribute> отсутствует или повреждено.|Убедитесь, что <xref:System.Runtime.InteropServices.GuidAttribute> объявление находится в файле *AssemblyInfo.CS* или *AssemblyInfo. vb* в проекте, и для этого атрибута задан допустимый идентификатор GUID.|
+|После задания свойства **EnableVbaCallers** или **ReferenceAssemblyFromVbaProject** появляется сообщение об ошибке, указывающее, что номер версии, указанный в <xref:System.Reflection.AssemblyVersionAttribute> , не является допустимым.|Убедитесь, что <xref:System.Reflection.AssemblyVersionAttribute> в качестве объявления в файле *AssemblyInfo.CS* или *AssemblyInfo. vb* в проекте задан допустимый номер версии сборки. Сведения о номерах версий сборки см. в классе <xref:System.Reflection.AssemblyVersionAttribute> .|
 |После переименования сборки настройки код VBA, вызывающий эту сборку, перестает работать.|Если изменить имя сборки настройки после его предоставления коду VBA, то связь между проектом VBA в документе и сборкой настройки будет нарушена. Чтобы устранить эту проблему, задайте для свойства **ReferenceFromVbaAssembly** в своем проекте значение **False** , а потом снова **True**, и замените все ссылки на старое имя сборки в коде VBA новым именем сборки.|
 
 ## <a name="see-also"></a>См. также
-- [Практическое руководство. Предоставить доступ к коду, коду VBA в проекте Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
-- [Практическое руководство. Предоставить доступ к коду, коду VBA в Visual c#&#35; проекта](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
-- [Пошаговое руководство: Вызов кода из VBA в проекте Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)
-- [Пошаговое руководство: Вызов кода из VBA в Visual c#&#35; проекта](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)
+- [Практическое руководство. Предоставление кода VBA в Visual Basicном проекте](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
+- [Практическое руководство. Предоставление кода VBA в проекте Visual C&#35;](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
+- [Пошаговое руководство: Вызов кода из VBA в Visual Basicном проекте](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)
+- [Пошаговое руководство: Вызов кода из VBA в проекте Visual C&#35;](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)
 - [Разработка и создание решений Office](../vsto/designing-and-creating-office-solutions.md)
-- [Решения VBA и Office в Visual Studio по сравнению с](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)
-- [Программирование настроек уровня документа](../vsto/programming-document-level-customizations.md)
+- [Сравнение решений VBA и Office в Visual Studio](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)
+- [Программы настройки на уровне документа](../vsto/programming-document-level-customizations.md)

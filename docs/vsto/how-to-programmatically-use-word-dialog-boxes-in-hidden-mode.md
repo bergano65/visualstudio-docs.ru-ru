@@ -14,33 +14,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7a422e9548fabefa2066fb439c01e382586cd36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e32c97069e3400b447f8756f9638c9d88d38d99a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961609"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255853"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Практическое руководство. Программное использование диалоговых окон Word в скрытом режиме
-  Можно выполнять сложные операции с помощью одного вызова метода путем вызова встроенных диалоговых окон в Microsoft Office Word без отображения их пользователю. Это можно сделать с помощью <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> метод <xref:Microsoft.Office.Interop.Word.Dialog> объекта без вызова <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> метод.
+  Можно выполнять сложные операции с одним вызовом метода путем вызова встроенных диалоговых окон в Microsoft Office Word без отображения их пользователю. Это можно сделать с помощью <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> метода <xref:Microsoft.Office.Interop.Word.Dialog> объекта, не вызывая <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> метод.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="examples"></a>Примеры
- В следующих примерах кода демонстрируется использование **параметры страницы** диалоговое окно в скрытом режиме для задания свойств нескольких страниц без участия пользователя. В примерах используется <xref:Microsoft.Office.Interop.Word.Dialog> настройте пользовательский размер страницы. Определенные параметры для настройки параметров страницы, такие как верхнее, нижнее поле и т. д., доступны как свойства с поздним связыванием <xref:Microsoft.Office.Interop.Word.Dialog> объекта. Эти свойства динамически создаются в Word во время выполнения.
+ В следующих примерах кода показано, как использовать диалоговое окно « **Параметры страницы** » в скрытом режиме для задания нескольких свойств настройки страницы без ввода данных пользователем. В примерах используется <xref:Microsoft.Office.Interop.Word.Dialog> объект для настройки пользовательского размера страницы. Конкретные параметры настройки страницы, такие как верхнее поле, нижнее поле и т. д., доступны в виде свойств <xref:Microsoft.Office.Interop.Word.Dialog> объекта с поздним связыванием. Эти свойства динамически создаются Word во время выполнения.
 
- В следующем примере показано, как для выполнения этой задачи в проектах Visual Basic где **Option Strict** — off и в проектах Visual C#, предназначенных [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. В этих проектах можно использовать компоненты позднего связывания в компиляторы Visual Basic и Visual C#. Чтобы использовать этот пример, запустите его из `ThisDocument` или `ThisAddIn` в своем проекте.
+ В следующем примере показано, как выполнить эту задачу в Visual Basic проектах, в которых **параметр optioned** имеет значение C# Off, а в [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]визуальных проектах, предназначенных для. В этих проектах можно использовать функции позднего связывания в Visual Basic и визуальных C# компиляторах. Чтобы использовать этот пример, запустите его из `ThisDocument` класса или `ThisAddIn` в проекте.
 
  [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)]
  [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]
 
- В следующем примере показано, как для выполнения этой задачи в проектах Visual Basic где **Option Strict** включен. В этих проектах необходимо использовать отражение для доступа к свойствам с поздним связыванием. Чтобы использовать этот пример, запустите его из `ThisDocument` или `ThisAddIn` в своем проекте.
+ В следующем примере показано, как выполнить эту задачу в Visual Basic проектах, где **параметр Option-on** имеет значение ON. В этих проектах для доступа к свойствам с поздним связыванием необходимо использовать отражение. Чтобы использовать этот пример, запустите его из `ThisDocument` класса или `ThisAddIn` в проекте.
 
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]
 
 ## <a name="see-also"></a>См. также
 - [Практическое руководство. Программное использование встроенных диалоговых окон в Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
-- [Обзор объектной модели Word](../vsto/word-object-model-overview.md)
+- [Общие сведения об объектной модели Word](../vsto/word-object-model-overview.md)
 - [Позднее связывание в решениях Office](../vsto/late-binding-in-office-solutions.md)
 - [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection) (Отражение (C#))
 - [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection) (Отражение (Visual Basic))

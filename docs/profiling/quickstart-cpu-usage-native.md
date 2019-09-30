@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73f8b69b120b1c21de92a8706eab0dbbcbb6e38e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 2f2587d621715e6e04edade779116e22d021072c
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703852"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128186"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Краткое руководство. Анализ данных по использованию ЦП в Visual Studio (C++)
 
@@ -34,7 +34,7 @@ Visual Studio предоставляет множество эффективны
 
 2. В разделе **Visual C++** выберите **Рабочий стол Windows**, а затем в средней области выберите **Консольное приложение Windows**.
 
-    Если шаблон проекта **Приложение консоли Windows** отсутствует, щелкните ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений на C++**, а затем нажмите **Изменить**.
+    Если шаблон проекта **Приложение консоли Windows** отсутствует, щелкните ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений на C++** , а затем нажмите **Изменить**.
 
 3. Введите имя, например **Diagnostics_Get_Started_Native**, и нажмите кнопку **ОК**.
 
@@ -186,5 +186,5 @@ Visual Studio предоставляет множество эффективны
 
 ## <a name="see-also"></a>См. также
 
-- [Профилирование в Visual Studio](../profiling/index.md)
+- [Профилирование в Visual Studio](../profiling/index.yml)
 - [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

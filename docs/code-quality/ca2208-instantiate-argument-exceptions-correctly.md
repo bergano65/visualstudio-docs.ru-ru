@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2110a8d0b58d87a4554971cf00af6441d293aa91
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 9f9425ab1ea9eadd3bd06d950118ce83ba5c35f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975892"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231649"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208. Правильно создавайте экземпляры исключений аргументов
 
@@ -31,22 +31,22 @@ ms.locfileid: "65975892"
 |-|-|
 |TypeName|InstantiateArgumentExceptionsCorrectly|
 |CheckId|CA2208|
-|Категория|Microsoft.Usage|
+|Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Возможны следующие причины следующих ситуациях.
+Возможные причины включают в себя следующие ситуации.
 
-- Выполняется вызов конструктора по умолчанию (без параметров) типа исключения, которое, или унаследованный от него, <xref:System.ArgumentException>.
+- Выполняется вызов конструктора по умолчанию (без параметров) для типа исключения, который является или является производным от класса, <xref:System.ArgumentException>.
 
-- Неправильный аргумент строки передается параметризованному конструктору, или унаследованный от него, тип исключения <xref:System.ArgumentException>.
+- Неверный строковый аргумент передается в параметризованный конструктор типа исключения, который является или является производным от <xref:System.ArgumentException>класса.
 
 ## <a name="rule-description"></a>Описание правила
 
-Вместо вызова конструктора по умолчанию, вызовите одну из перегрузок конструктора, что позволяет более понятное сообщение об исключении, должны быть предоставлены. Сообщение об исключении должно предназначаться разработчикам и понятно объяснить условие ошибки и как исправить или избежать исключения.
+Вместо вызова конструктора по умолчанию вызовите одну из перегрузок конструктора, которая позволяет предоставить более осмысленное сообщение об исключении. Сообщение об исключении должно ориентироваться на разработчика и ясно объяснить состояние ошибки, а также как исправить или избежать исключения.
 
-Сигнатуры двух и строка конструкторы <xref:System.ArgumentException> и его производные типы не соответствуют по отношению к положение `message` и `paramName` параметров. Убедитесь, что эти конструкторы вызываются с правильными аргументами. Сигнатуры выглядят следующим образом:
+Сигнатуры одного и двух конструкторов строк класса <xref:System.ArgumentException> и его производных типов не соответствуют положению `message` и `paramName` параметрам. Убедитесь, что эти конструкторы вызываются с правильными строковыми аргументами. Ниже приведены сигнатуры.
 
 - <xref:System.ArgumentException>(строка `message`)
 - <xref:System.ArgumentException>(строка `message`, строка `paramName`)
@@ -59,11 +59,11 @@ ms.locfileid: "65975892"
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, вызовите конструктор, который принимает сообщение и имя параметра и убедитесь, что аргументы имеют правильный тип <xref:System.ArgumentException> вызова.
+Чтобы устранить нарушение этого правила, вызовите конструктор, принимающий сообщение, имя параметра или оба значения, и убедитесь, что аргументы являются правильными для вызываемого типа <xref:System.ArgumentException> .
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Его можно безопасно подавить предупреждение из этого правила, только в том случае, если параметризованный конструктор вызывается с правильными аргументами.
+Предупреждение из этого правила можно отключить, только если параметризованный конструктор вызывается с правильными строковыми аргументами.
 
 ## <a name="example"></a>Пример
 
@@ -73,7 +73,7 @@ ms.locfileid: "65975892"
 [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_1.cs?range=3-6)]
 [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2208-instantiate-argument-exceptions-correctly_1.vb)]
 
-Следующий код предыдущее нарушение устраняется путем переключения аргументы конструктора.
+Следующий код устраняет предыдущее нарушение, переключая аргументы конструктора.
 
 [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_2.cpp)]
 [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_2.cs?range=3-6)]
@@ -81,4 +81,4 @@ ms.locfileid: "65975892"
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1507: Используйте nameof вместо строки](ca1507.md)
+- [CA1507: Использовать NameOf вместо String](ca1507.md)

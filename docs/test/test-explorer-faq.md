@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 1f51b8d3e75d7db19e1b92e909638cee99303c48
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551858"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079617"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Вопросы и ответы об обозревателе тестов Visual Studio
 ::: moniker range=">=vs-2019"
@@ -115,7 +115,6 @@ ms.locfileid: "69551858"
 
 В Visual Studio 2019 будут удалены некоторые API окон тестов, которые были ранее помечены как общедоступные, но никогда не были официально задокументированы. Они были помечены как "нерекомендуемые" в Visual Studio 2017, чтобы заранее предупредить группы обслуживания расширений. Насколько нам известно, с этими API-интерфейсами работала и была связана лишь незначительная часть расширений. К ним относятся `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` и `SearchFilterTokenType`. Если это изменение влияет на ваше расширение, сообщите нам, отправив сведения об ошибке в [сообщество разработчиков](https://developercommunity.visualstudio.com).
 
-::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>Ссылка NuGet для адаптера теста
 
 **В Visual Studio 2017 версии 15.8 тесты обнаруживаются, но не выполняются.**
@@ -126,6 +125,7 @@ ms.locfileid: "69551858"
 
 Вместо расширений адаптеров тестов проекты должны использовать пакеты NuGet для адаптеров тестов. Это требование значительно повышает производительность и снижает проблемы с непрерывной интеграцией. Дополнительные сведения о прекращении поддержки расширения адаптера теста .NET можно найти в [заметках о выпуске](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Если вы используете адаптер теста NUnit 2 и не можете перейти на адаптер теста NUnit 3, можно отключить это новое поведение обнаружения в версии Visual Studio 15.8 в разделе **Сервис** > **Параметры** > **Тест**.
 

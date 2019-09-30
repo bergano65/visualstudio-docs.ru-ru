@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4196cb91e1b866453de54347b8a67edd3dc2dc96
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 54630b7fba69ef96a2c08486e535ae45d8e614b8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921892"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234767"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409. Видимые для COM типы должны быть создаваемыми
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921892"
 |Категория|Microsoft. взаимодействие|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Ссылочный тип, специально помеченный как видимый для модели COM, содержит открытый параметризованный конструктор, но не содержит открытый конструктор по умолчанию (без параметров).
 
 ## <a name="rule-description"></a>Описание правила

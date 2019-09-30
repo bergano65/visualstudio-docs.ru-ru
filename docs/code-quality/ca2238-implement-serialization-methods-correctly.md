@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ec40eb3317f541bec92f06d8921fc2f545606d1a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b0bbe31f0431b259f60c1fe68a8d9edeffc572d9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920088"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237911"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238. Правильно реализуйте методы сериализации
 
@@ -31,9 +31,9 @@ ms.locfileid: "68920088"
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
 |Категория|Microsoft. Usage|
-|Критическое изменение|Критическое — если метод видим за пределами сборки.<br /><br /> Не критическое, если метод не виден за пределами сборки.|
+|Критическое изменение|Критическое — если метод видим за пределами сборки.<br /><br /> Не критическое значение, если метод не виден за пределами сборки.|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Метод, обрабатывающий событие сериализации, не имеет правильной сигнатуры, типа возвращаемого значения или отображения.
 
 ## <a name="rule-description"></a>Описание правила

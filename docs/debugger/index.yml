@@ -1,0 +1,82 @@
+### YamlMime:Landing
+title: Документация по отладчику Visual Studio
+summary: Отладчик Visual Studio позволяет вести наблюдение за поведением программы во время выполнения и выявлять проблемы.
+metadata:
+  title: Отладка в Visual Studio
+  description: Узнайте, как использовать Visual Studio для отладки приложений и кода.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/20/2019
+  ms.openlocfilehash: be124cf1dc4a594575347d58439902f8ed99b803
+  ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 09/26/2019
+  ms.locfileid: "71301669"
+landingContent:
+- title: Сведения об отладке
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Что такое отладка?
+      url: what-is-debugging.md
+    - text: Методы и инструменты отладки
+      url: write-better-code-with-visual-studio.md
+    - text: Первое знакомство с отладчиком
+      url: debugger-feature-tour.md
+- title: Начало работы
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Отладка для начинающих
+      url: debugging-absolute-beginners.md
+    - text: Обучение отладке кода C#
+      url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: Обучение отладке кода C++
+      url: getting-started-with-the-debugger-cpp.md
+    - text: Обучение отладке кода Visual Basic
+      url: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: Выполнение кода Python в отладчике >>
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+- title: Приостановка и навигация по коду
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Навигация по коду с помощью отладчика
+      url: navigating-through-code-with-the-debugger.md
+    - text: Использование точек останова
+      url: using-breakpoints.md
+    - text: Изменение кода и продолжение отладки
+      url: edit-and-continue.md
+- title: Проверка данных
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Проверка переменных
+      url: autos-and-locals-windows.md
+    - text: Установка контрольных значений для переменных
+      url: watch-and-quickwatch-windows.md
+    - text: Просмотр стека вызовов
+      url: how-to-use-the-call-stack-window.md
+- title: Подробные сведения об отладчике
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Советы и рекомендации по работе с отладчиком
+      url: debugger-tips-and-tricks.md
+    - text: Создание и отладка выполняющегося кода XAML
+      url: xaml-hot-reload.md
+    - text: Отладка живого приложения Azure
+      url: debug-live-azure-applications.md
+    - text: Указание отображаемых сведений для отладчика
+      url: using-the-debuggerdisplay-attribute.md
+    - text: Удаленная отладка
+      url: remote-debugging.md
+- title: Совместная работа
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Написание и отладка кода с помощью Live Share >>
+      url: /visualstudio/liveshare/use/vs

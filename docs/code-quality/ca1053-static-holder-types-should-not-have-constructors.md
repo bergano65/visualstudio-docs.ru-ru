@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fec59e1d683c7867eb1cad9ae4e796a0815200d4
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 44bdb8c12b48a983b88e6a035fc1522856b306be
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604781"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235587"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053. Типы статических владельцев не должны иметь конструкторов по умолчанию
 
@@ -33,7 +33,7 @@ ms.locfileid: "68604781"
 > [!NOTE]
 > Правило CA1053 объединено в [CA1052: Типы со статическими заполнителями должны](ca1052-static-holder-types-should-be-sealed.md) быть запечатаны в [анализаторах FxCop](fxcop-analyzers.yml).
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Открытый или вложенный открытый тип объявляет только статические члены и имеет конструктор по умолчанию.
 

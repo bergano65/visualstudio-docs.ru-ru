@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9333f2fb1bff0fdb8a3f0dac8004f66156b8863d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c288764cf9182bc34233d312546f7915eed5975
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870824"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252182"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Справочник по схеме расширения VSIX 2,0
 Файл манифеста развертывания VSIX описывает содержимое пакета VSIX. Формат файла регулируется схемой. Версия 2,0 этой схемы поддерживает добавление пользовательских типов и атрибутов.  Схема манифеста является расширяемой. Загрузчик манифеста не учитывает XML-элементы и атрибуты, которые он не понимает.

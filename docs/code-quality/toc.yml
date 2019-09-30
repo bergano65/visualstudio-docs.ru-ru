@@ -123,8 +123,10 @@
           items:
             - name: Обзор
               href: configure-fxcop-analyzers.md
-            - name: Параметры EditorConfig
+            - name: 'Область: параметры'
               href: fxcop-analyzer-options.md
+            - name: Предопределенные наборы правил
+              href: analyzer-rule-sets.md
         - name: часто задаваемые вопросы
           href: fxcop-analyzers-faq.md
     - name: Миграция с анализа прежних версий на анализаторы FxCop
@@ -137,8 +139,6 @@
       items:
         - name: Обзор
           href: using-rule-sets-to-group-code-analysis-rules.md
-        - name: Наборы правил для пакетов анализатора
-          href: analyzer-rule-sets.md
         - name: Настройка наборов правил
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
         - name: "Настройка анализа кода для веб-приложения\_ASP.NET"
@@ -332,8 +332,17 @@
                   href: ca1064-exceptions-should-be-public.md
                 - name: CA1065. Не вызывайте исключения в непредвиденных местах
                   href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                - name: 'CA1068: Параметры CancellationToken должны быть последними'
+                  href: ca1068.md
                 - name: CA2210. Сборки должны иметь допустимые строгие имена
                   href: ca2210-assemblies-should-have-valid-strong-names.md
+            - name: Предупреждения по документации
+              items:
+                - name: Обзор
+                  displayName: documentation warnings
+                  href: documentation-warnings.md
+                - name: 'CA1200: Избегайте использования тегов cref с префиксом'
+                  href: ca1200.md
             - name: 'Предупреждения, связанные с глобализацией'
               items:
                 - name: Обзор
@@ -514,6 +523,8 @@
                   href: ca1823-avoid-unused-private-fields.md
                 - name: CA1824. Помечайте сборки с помощью NeutralResourcesLanguageAttribute
                   href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                - name: 'CA1825: Избегайте выделения массивов нулевой длины'
+                  href: ca1825.md
             - name: 'Предупреждения, связанные с переносимостью'
               items:
                 - name: Обзор
@@ -1030,7 +1041,7 @@
           href: c26812.md
         - name: C26814
           href: c26814.md
-    - name: Предупреждения C/C++
+    - name: предупреждения C/C++
       items:
         - name: Обзор
           displayName: C++ warnings

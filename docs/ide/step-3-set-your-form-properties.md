@@ -1,26 +1,23 @@
 ---
-title: Шаг 3. Настройка свойств формы
+title: Шаг 3. Настройка свойств формы
 ms.date: 08/30/2019
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1ca71cb420bcc2bbc6ba00eb1eca5deaa2b2c9
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 870179243f99501cac7aaa68ce9929ae589ba79e
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887898"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118964"
 ---
-# <a name="step-3-set-your-form-properties"></a>Шаг 3. Настройка свойств формы
+# <a name="step-3-set-your-form-properties"></a>Шаг 3. Настройка свойств формы
 
 Далее окно **Свойства** используется для изменения внешнего вида формы.
 
@@ -77,7 +74,7 @@ ms.locfileid: "70887898"
 
 * Следующий раздел руководства: **[Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** .
 
-* Предыдущий раздел руководства: "Шаг 2. Запуск приложения для просмотра изображений(../ide/step-2-run-your-program.md)".
+* Предыдущий раздел руководства: [Шаг 2. Запуск приложения для просмотра изображений](../ide/step-2-run-your-program.md).
 
 ## <a name="see-also"></a>См. также
 

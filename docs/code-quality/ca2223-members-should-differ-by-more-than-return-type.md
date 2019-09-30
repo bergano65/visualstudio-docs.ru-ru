@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de64e0271370a3cdcc6f0963dbf06925621b9b65
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5283c96a484f47fe280a07c5889b8db877db5ffc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920186"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230995"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223. Члены должны различаться не только возвращаемым типом
 
@@ -30,7 +30,7 @@ ms.locfileid: "68920186"
 |Категория|Microsoft. Usage|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Два открытых или защищенных члена имеют сигнатуры, идентичные, за исключением типа возвращаемого значения.
 
 ## <a name="rule-description"></a>Описание правила

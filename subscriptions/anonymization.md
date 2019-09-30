@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Сведения о том, как анонимизируются данные подписчика при потере доступа к подпискам.
-ms.openlocfilehash: 8ba1a462083281c2228f2d6e25c42485ead8aa19
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: d15fce8d5e1a64066a42cea69b770f55c9607f06
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377958"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936914"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Анонимизация данных подписчика Visual Studio
 При возникновении события, блокирующего подписчику возможность пользования подпиской, например при истечении срока действия подписки или удалении учетной записи для входа подписчика, персональные данные пользователя, такие как имя и учетная запись для входа, шифруются, чтобы сделать их непригодными к использованию.  Это позволяет защитить персональные данные подписчика.
@@ -35,6 +35,11 @@ ms.locfileid: "68377958"
 
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Вопрос:  Я являюсь администратором по подпискам организации.  Если данные одного из моих подписчиков анонимизированы, можно ли переназначить эту подписку другому пользователю?
 Ответ.  Да, если срок действия подписки не истек, ее можно переназначить другому подписчику.
+
+### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>Вопрос: Как предотвратить анонимизацию из-за удаления адреса электронной почты для входа?
+Ответ.  Предотвратить эту проблему можно двумя способами:
+- Развертывание системы управления с одним удостоверением — MSA или AAD (но не обоими).  
+- Сопоставление удостоверений AAD и MSA через клиент. 
 
 ## <a name="next-steps"></a>Следующие шаги
 Сведения о запрете анонимизации посредством [связывания удостоверений MSA и AAD](/azure/active-directory/b2b/add-users-administrator).

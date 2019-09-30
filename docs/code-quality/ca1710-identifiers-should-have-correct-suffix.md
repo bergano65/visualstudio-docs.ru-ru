@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93fd892baaf54d79c3a2387b8961a2f4c1bb2cdb
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 50c67c614c4ece8f1925f4133f749a1c5747fe31
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547322"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234170"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710. Идентификаторы должны иметь правильные суффиксы
 
@@ -30,7 +30,7 @@ ms.locfileid: "69547322"
 |Категория|Microsoft. Naming|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Идентификатор имеет неправильный суффикс.
 
@@ -49,12 +49,12 @@ ms.locfileid: "69547322"
 |<xref:System.Attribute?displayProperty=fullName>|Атрибут|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|Исключение|
-|<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
+|<xref:System.Collections.ICollection?displayProperty=fullName>|Коллекция|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Словарь|
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Коллекция|
 |<xref:System.Collections.Queue?displayProperty=fullName>|Коллекция или очередь|
 |<xref:System.Collections.Stack?displayProperty=fullName>|Коллекция или стек|
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Коллекция|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Словарь|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Коллекция или DataTable|

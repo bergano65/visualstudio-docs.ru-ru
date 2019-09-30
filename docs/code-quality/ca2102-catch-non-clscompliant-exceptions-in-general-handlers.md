@@ -13,47 +13,47 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f361720f45a24e561ab2a886537bda02c73c006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f62ad97bbb96f49a7263edd29f0f8a7c263bec4c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545776"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233013"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102. Перехватывайте исключения, не являющиеся CLSCompliant, с помощью общих обработчиков
 
 |||
 |-|-|
-|TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
+|TypeName|катчнонклскомплиантексцептионсинженералхандлерс|
 |CheckId|CA2102|
 |Категория|Microsoft.Security|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Член в сборке, которая не помечен атрибутом <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> или помечен `RuntimeCompatibility(WrapNonExceptionThrows = false)` содержит блок catch, обрабатывающий <xref:System.Exception?displayProperty=fullName> и не содержит сразу после общий блок catch. Это правило не учитывает [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] сборок.
+Член в сборке, не помеченной <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> как или, помечен как `RuntimeCompatibility(WrapNonExceptionThrows = false)` , содержит блок catch, который обрабатывает <xref:System.Exception?displayProperty=fullName> и не содержит сразу следующий общий блок catch. Это правило игнорирует [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] сборки.
 
 ## <a name="rule-description"></a>Описание правила
 
-Блок catch, обрабатывающий <xref:System.Exception> перехватывает все исключения с общеязыковой спецификацией (CLS). Тем не менее она не перехватывает несовместимые с CLS исключения. Несовместимое с CLS исключения могут создаваться из машинного кода или из управляемого кода, который был создан корпорацией Майкрософт промежуточного языка MSIL Assembler. Обратите внимание, что C# и [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] компиляторов не разрешает несовместимые с CLS исключения исключение и [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] не перехватывает несовместимые с CLS исключения. Если предполагается блока catch обрабатывать все исключения, используйте следующий синтаксис блока общего перехвата.
+Блок catch, обрабатывающий <xref:System.Exception> перехват всех исключений, совместимых со спецификацией CLS. Однако он не перехватывает несовместимые с CLS исключения. Исключения, несовместимые с CLS, могут быть вызваны из машинного кода или из управляемого кода, созданного ассемблером MSIL. Обратите внимание C# , [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] что компиляторы и не допускают возникновения исключений, несовместимых с [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] CLS, и не перехватывают несовместимые с CLS исключения. Если цель блока catch заключается в обработке всех исключений, используйте следующий общий синтаксис блока catch.
 
 - В C#: `catch {}`
 
-- C++: `catch(...) {}` или `catch(Object^) {}`
+- C++: `catch(...) {}` или`catch(Object^) {}`
 
-Необработанное несовместимые с CLS исключения, несовместимые с проблемой безопасности при удалении ранее предоставленные разрешения в блоке catch. Так как несовместимые с CLS исключения не перехватываются, с повышенным уровнем разрешений может запустить вредоносный метод, который создает несовместимые с CLS исключение.
+Необработанное исключение, несовместимое с CLS, стало проблемой безопасности, когда ранее разрешенные разрешения удаляются из блока catch. Так как несовместимые с CLS исключения не перехватываются, вредоносный метод, порождающий несовместимое с CLS исключение, может работать с повышенными разрешениями.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, когда цель состоит в том, чтобы перехватывать все исключения, заменить или добавить общий блок catch или пометить сборку `RuntimeCompatibility(WrapNonExceptionThrows = true)`. Если в блоке catch удаляются разрешения, повторяющиеся функциональные возможности в целом блок catch. Если это не должны обрабатывать все исключения, замените блок catch, который обрабатывает <xref:System.Exception> с блоки catch, которые обрабатывают исключения определенных типов.
+Чтобы устранить нарушение этого правила, когда цель заключается в перехвате всех исключений, замените или добавьте общий блок catch или пометьте сборку `RuntimeCompatibility(WrapNonExceptionThrows = true)`. Если разрешения удаляются в блоке catch, они дублируют функциональность в общем блоке catch. Если не нужно обрабатывать все исключения, замените блок catch, обрабатывающий <xref:System.Exception> блоки catch, обрабатывающие определенные типы исключений.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Его можно безопасно подавить предупреждение из этого правила, если в блок try не содержит операторов, которые могут создавать несовместимые с CLS исключение. Так как любой машинный или управляемый код может вызвать несовместимые с CLS исключение, это требует знания весь код, который может выполняться во всех путях кода внутри блока try. Обратите внимание, что несовместимые с CLS исключения не вызываются средой CLR.
+Предупреждение из этого правила можно отключить, если блок try не содержит инструкций, которые могут привести к исключению, не совместимому с CLS. Поскольку любой машинный или управляемый код может вызывать исключение, несовместимое с CLS, для этого требуется знание всего кода, который может быть выполнен во всех путях кода внутри блока try. Обратите внимание, что несовместимые с CLS исключения не вызываются средой CLR.
 
 ## <a name="example-1"></a>Пример 1
 
-Следующий пример показывает класс MSIL, который создает исключение совместимые с CLS.
+В следующем примере показан класс MSIL, который вызывает исключение, не совместимое с CLS.
 
 ```cpp
 .assembly ThrowNonClsCompliantException {}
@@ -71,11 +71,11 @@ ms.locfileid: "62545776"
 
 ## <a name="example-2"></a>Пример 2
 
-Пример метода, содержащего общий блок catch, соответствующий правилу.
+В следующем примере показан метод, содержащий общий блок catch, который удовлетворяет правилу.
 
 [!code-csharp[FxCop.Security.CatchNonClsCompliantException#1](../code-quality/codesnippet/CSharp/ca2102-catch-non-clscompliant-exceptions-in-general-handlers_1.cs)]
 
-Скомпилируйте предыдущих примерах следующим образом.
+Скомпилируйте предыдущие примеры следующим образом.
 
 ```cpp
 ilasm /dll ThrowNonClsCompliantException.il
@@ -84,7 +84,7 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 
 ## <a name="related-rules"></a>Связанные правила
 
-[CA1031: Не перехватывайте типы общих исключений](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+[CA1031 Не перехватывайте типы общих исключений](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>См. также
 

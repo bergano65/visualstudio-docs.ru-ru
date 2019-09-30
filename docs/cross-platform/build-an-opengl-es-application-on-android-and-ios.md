@@ -1,7 +1,7 @@
 ---
 title: Создание приложения OpenGL ES в Android и iOS | Документы Майкрософт
 ms.custom: ''
-ms.date: 05/16/2019
+ms.date: 09/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 259092668c336a90758a669efdc4b154b2097cab
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923840"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079270"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Создание приложения OpenGL ES в Android и iOS
 
@@ -25,17 +25,21 @@ ms.locfileid: "68923840"
 
 ## <a name="requirements"></a>Требования
 
-Перед созданием приложения OpenGL ES для iOS и Android убедитесь в том, что выполняются все требования к системе. Установите рабочую нагрузку разработки мобильных приложений на языке C++ в Visual Studio Installer, если еще не сделали этого. Чтобы создать приложение для iOS, установите дополнительные средства разработки C++ для iOS. Чтобы создать приложение для Android, установите средства разработки C++ для Android и требуемые сторонние средства: Android NDK, Apache Ant, Google Android Emulator и Intel Hardware Accelerated Execution Manager. После этого настройте Intel HAXM и Android Emulator для запуска в своей системе. Более подробную информацию и инструкции см. в разделе [Установка Visual C++ для разработки кроссплатформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Для сборки и тестирования приложения iOS вам потребуется компьютер Mac, настроенный в соответствии с инструкциями по установке. Дополнительные сведения о настройке компьютера для разработки приложений iOS см. в разделе [Установка и настройка средств для разработки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
+Перед созданием приложения OpenGL ES для iOS и Android убедитесь в том, что выполняются все требования к системе. Установите рабочую нагрузку разработки мобильных приложений на языке C++ в Visual Studio Installer, если еще не сделали этого. Чтобы создать приложение для iOS, установите дополнительные средства разработки C++ для iOS. Чтобы создать приложение для Android, установите средства разработки C++ для Android и требуемые сторонние средства: Android NDK, Apache Ant и Google Android Emulator. Чтобы повысить производительность эмулятора на платформах Intel, рекомендуем также установить Intel Hardware Accelerated Execution Manager (HAXM). После этого настройте Intel HAXM и Android Emulator для запуска в своей системе. Более подробную информацию и инструкции см. в разделе [Установка Visual C++ для разработки кроссплатформенных мобильных приложений](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md).
+
+Для сборки и тестирования приложения iOS вам потребуется компьютер Mac, настроенный в соответствии с инструкциями по установке. Дополнительные сведения о настройке компьютера для разработки приложений iOS см. в разделе [Установка и настройка средств для разработки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
 ## <a name="create-a-new-opengles-application-project"></a>Создание проекта приложения OpenGLES
 
-В этом учебном руководстве вы сначала создадите проект приложения OpenGL ES, а затем выполните сборку и запуск приложения по умолчанию в эмуляторе Visual Studio для Android. Затем выполните сборку приложения для iOS и запустите его на устройстве iOS.
+В этом учебнике вы сначала создадите проект приложения OpenGL ES, а затем выполните сборку и запуск приложения по умолчанию в эмуляторе Visual Studio для Android. Затем выполните сборку приложения для iOS и запустите его на устройстве iOS.
 
-1. В Visual Studio последовательно выберите **Файл** > **Создать** > **Проект**.
+::: moniker range="vs-2017"
 
-1. В диалоговом окне **Новый проект** в разделе **Шаблоны** выберите **Visual C++** ,  > **Кроссплатформенный**, а затем выберите шаблон **Приложение OpenGLES (Android, iOS)** .
+1. В Visual Studio последовательно выберите **Файл** > **Создать** > **Проект**.
 
-1. Назначьте приложению имя, например `MyOpenGLESApp`, а затем нажмите кнопку **ОК**.
+1. В диалоговом окне **Новый проект** в разделе **Шаблоны** выберите **Visual C++**  > **Кроссплатформенный**, а затем выберите шаблон **Приложение OpenGLES (Android, iOS)** .
+
+1. Присвойте приложению имя, например *MyOpenGLESApp*, а затем нажмите кнопку **ОК**.
 
    ![Проект нового приложения OpenGLES](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 
@@ -43,7 +47,23 @@ ms.locfileid: "68923840"
 
    ![MyOpenGLESApp в обозревателе решений](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
-   Новое решение приложения OpenGL ES включает в себя три проекта библиотек и два проекта приложений. В папке Libraries находится проект общего кода и два проекта под конкретные платформы, которые ссылаются на общий код.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. В Visual Studio последовательно выберите **Файл** > **Создать** > **Проект**.
+
+1. В диалоговом окне **Создание нового проекта** выберите шаблон **Приложение OpenGLES (Android, iOS)** и нажмите кнопку **Далее**.
+
+1. В диалоговом окне **Настройка нового проекта** введите имя в поле **Имя проекта**, например *MyOpenGLESApp*, и нажмите **Создать**.
+
+   Visual Studio создаст новое решение и откроет обозреватель решений.
+
+   ![MyOpenGLESApp в обозревателе решений](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+
+::: moniker-end
+
+Новое решение приложения OpenGL ES включает в себя три проекта библиотек и два проекта приложений. В папке Libraries находится проект общего кода и два проекта под конкретные платформы, которые ссылаются на общий код.
 
 - `MyOpenGLESApp.Android.NativeActivity` содержит ссылки и связующий код, который реализует приложение в качестве Native Activity для Android. Точки входа из связующего кода реализованы в файле *main.cpp*, который включает общий код из `MyOpenGLESApp.Shared`. Предкомпилированные заголовки находятся в файле *pch.h*. Этот проект приложения Native Activity компилируется в файл общей библиотеки (с расширением *.so*), который передается в проект `MyOpenGLESApp.Android.Packaging`.
 

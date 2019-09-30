@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb5160ef663375ee3dd4b45797e8f4536acdf793
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: b197cacc764f1f5472d3eb074ac89199db508408
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744645"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233419"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820. Проверяйте наличие пустых строк, используя длину строки
 
@@ -27,29 +27,29 @@ ms.locfileid: "66744645"
 |-|-|
 |TypeName|TestForEmptyStringsUsingStringLength|
 |CheckId|CA1820|
-|Категория|Microsoft.Performance|
+|Категория|Microsoft. Performance|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Строка сравнивается с пустой строкой, используя <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
+Строка сравнивается с пустой строкой с помощью <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
 
 ## <a name="rule-description"></a>Описание правила
 
-Сравнение строк с помощью <xref:System.String.Length%2A?displayProperty=nameWithType> свойство или <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> быстрее, чем при использовании <xref:System.Object.Equals%2A>. Это обусловлено <xref:System.Object.Equals%2A> выполняет значительно больше инструкции MSIL, чем любая <xref:System.String.IsNullOrEmpty%2A> или количество выполненных для получения инструкций <xref:System.String.Length%2A> свойство значение и сравнить это значение ноль.
+Сравнение строк с помощью <xref:System.String.Length%2A?displayProperty=nameWithType> свойства <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> или метода выполняется быстрее, чем при <xref:System.Object.Equals%2A>использовании. Это обусловлено <xref:System.Object.Equals%2A> тем, что выполняет значительно больше инструкций MSIL <xref:System.String.IsNullOrEmpty%2A> , чем или количество выполняемых <xref:System.String.Length%2A> инструкций для получения значения свойства и сравнивает его с нулем.
 
-Для строки null <xref:System.Object.Equals%2A> и `<string>.Length == 0` ведут себя по-разному. Если попытаться получить значение <xref:System.String.Length%2A> свойство для строки null, среда CLR создает <xref:System.NullReferenceException?displayProperty=fullName>. Если выполнить сравнение строку null и пустые строки, среда CLR создает исключение и возвращает `false`. Проверка значений null не оказывает существенного влияния относительную производительность этих двух подходов. При нацеливании на .NET Framework 2.0 или более поздней версии, используйте <xref:System.String.IsNullOrEmpty%2A> метод. В противном случае используйте <xref:System.String.Length%2A> == 0 сравнения, когда это возможно.
+Для пустых строк <xref:System.Object.Equals%2A> и `<string>.Length == 0` ведет себя по-разному. Если попытаться получить значение <xref:System.String.Length%2A> свойства в строке null, среда CLR <xref:System.NullReferenceException?displayProperty=fullName>выдаст исключение. При выполнении сравнения между пустой строкой и пустой строкой среда CLR не создает исключение и возвращает `false`. Тестирование на значение NULL не оказывает существенного влияния на относительную производительность этих двух подходов. При нацеливании на <xref:System.String.IsNullOrEmpty%2A> .NET Framework 2,0 или более поздней версии используйте метод. В противном случае <xref:System.String.Length%2A> используйте сравнение = = 0 везде, где это возможно.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, измените выражение, чтобы использовать <xref:System.String.IsNullOrEmpty%2A> метод.
+Чтобы устранить нарушение этого правила, измените сравнение для использования <xref:System.String.IsNullOrEmpty%2A> метода.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Его можно безопасно подавить предупреждение из этого правила, если производительность не является проблемой.
+Вы можете отключить предупреждение из этого правила, если производительность не является проблемой.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано различные методики, которые используются для поиска пустой строкой.
+В следующем примере показаны различные методы, используемые для поиска пустой строки.
 
 [!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]

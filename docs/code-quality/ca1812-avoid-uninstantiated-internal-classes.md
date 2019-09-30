@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f924e9530a7ee43ec2222366141c3af6be2efc29
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744700"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233612"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812. Избегайте неиспользуемых внутренних классов
 
@@ -27,16 +27,16 @@ ms.locfileid: "66744700"
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
 |CheckId|CA1812|
-|Категория|Microsoft.Performance|
+|Категория|Microsoft. Performance|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Никогда не инициализируется во внутренний тип (на уровне сборки).
+Экземпляр внутреннего типа (уровня сборки) никогда не создается.
 
 ## <a name="rule-description"></a>Описание правила
 
-Это правило пытается найти вызова одного из конструкторов типа и приводит к нарушению, если запрос не найден.
+Это правило пытается найти вызов одного из конструкторов типа и сообщает о нарушении, если вызов не найден.
 
 Это правило не проверяет следующие типы:
 
@@ -48,29 +48,29 @@ ms.locfileid: "66744700"
 
 - Делегаты
 
-- Типы массивов, определяемые компилятором
+- Типы массивов, созданные компилятором
 
-- Типы, не может быть создан, и только определяют [ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` в Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) методы.
+- Типы, которые не могут быть созданы и которые определяют [`static`](/dotnet/csharp/language-reference/keywords/static) только методы ([ `Shared` в Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)).
 
-Если применить <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> к сборке, который анализируется, это правило не пометит типы, помеченные как [ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` в Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)) потому, что поле может относиться к используемые дружественной сборки.
+Если применить <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> к анализируемой сборке, это правило не будет помечать типы, помеченные как [`internal`](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` в Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)), так как поле может использоваться дружественной сборкой.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, удалите тип или добавьте код, который его использует. Если тип содержит только `static` методы, добавьте один из следующих к типу, чтобы запретить компилятору выполнять выпуска конструктор открытого экземпляра по умолчанию:
+Чтобы устранить нарушение этого правила, удалите тип или добавьте код, который его использует. Если тип содержит только `static` методы, добавьте в тип один из следующих элементов, чтобы компилятор не выдать конструктор открытого экземпляра по умолчанию:
 
-- `static` Модификатор для C# типов, предназначенных для .NET Framework 2.0 или более поздней версии.
+- Модификатор для типов, C# предназначенных для .NET Framework 2,0 или более поздней версии. `static`
 
-- Закрытый конструктор для типов, предназначенных для .NET Framework версий 1.0 и 1.1.
+- Закрытый конструктор для типов, предназначенных для .NET Framework версий 1,0 и 1,1.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Его можно безопасно подавить предупреждение из этого правила. Мы рекомендуем отключить предупреждение в следующих ситуациях:
+В этом правиле можно отключить вывод предупреждений. Рекомендуется подавлять это предупреждение в следующих ситуациях:
 
-- Класс создается через методы отражения с поздним связыванием, такие как <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- Класс создается с помощью методов отражения с поздним связыванием, <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>таких как.
 
-- Класс создается автоматически средой выполнения или ASP.NET. Некоторые примеры автоматически созданных классов: те, которые реализуют <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> или <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Класс создается автоматически средой выполнения или ASP.NET. Примерами автоматически создаваемых классов являются классы, <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> реализующие <xref:System.Web.IHttpHandler?displayProperty=fullName>или.
 
-- Класс передается в качестве параметра типа, имеющего [ `new` ограничение](/dotnet/csharp/language-reference/keywords/new-constraint). Следующий пример будут помечены правилом CA1812:
+- Класс передается как параметр типа с [ `new` ограничением](/dotnet/csharp/language-reference/keywords/new-constraint). Следующий пример будет помечен правилом CA1812:
 
     ```csharp
     internal class MyClass
@@ -93,6 +93,6 @@ ms.locfileid: "66744700"
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1811: Не используйте Невызываемый закрытый код](../code-quality/ca1811-avoid-uncalled-private-code.md)
-- [CA1801: Проверьте неиспользуемые параметры](../code-quality/ca1801-review-unused-parameters.md)
-- [CA1804: Удалите неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811 Избегайте невызванного закрытого кода](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801: Проверка неиспользуемых параметров](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804 Удалить неиспользуемые локальные переменные](../code-quality/ca1804-remove-unused-locals.md)

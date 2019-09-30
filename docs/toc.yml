@@ -1,4 +1,4 @@
-﻿- name: Документация по Visual Studio
+﻿- name: Документация по интегрированной среде разработки Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
 - name: Обзор
@@ -139,7 +139,7 @@
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
     - name: 'C++: Создание консольного приложения'
-      href: ide/getting-started-with-cpp-in-visual-studio.md
+      href: /cpp/get-started/tutorial-console-cpp
     - name: 'Python: Создание веб-приложения'
       href: ide/quickstart-python.md
     - name: 'Node.js: Создание веб-приложения'
@@ -654,18 +654,18 @@
         - name: Пошаговое руководство. Создание среды построения из нескольких компьютеров
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Отладка >>
-      href: debugger/index.md
+      href: debugger/index.yml
     - name: Тестирование >>
       displayName: Unit testing
       href: test/improve-code-quality.md
     - name: Измерение производительности >>
       displayName: Profiling
-      href: profiling/index.md
+      href: profiling/index.yml
     - name: Анализ качества кода >>
       displayName: Code analysis FxCop Analyzers
       href: code-quality/index.md
     - name: Развертывание >>
-      href: deployment/index.md
+      href: deployment/index.yml
     - name: Расширение Visual Studio >>
       displayName: Visual Studio SDK
       href: extensibility/visual-studio-sdk.md
@@ -767,7 +767,7 @@
           href: ide/reference/add-new-item-command.md
         - name: Команда Alias
           href: ide/reference/alias-command.md
-        - name: Команда Evaluate Statement
+        - name: Вычислить оператор - команда
           href: ide/reference/evaluate-statement-command.md
         - name: Команда Find
           href: ide/reference/find-command.md
@@ -799,7 +799,7 @@
           href: ide/reference/open-file-command.md
         - name: Открыть проект - команда
           href: ide/reference/open-project-command.md
-        - name: Команда Print
+        - name: Печать - команда
           href: ide/reference/print-command.md
         - name: Команда Quick Watch
           href: ide/reference/quick-watch-command.md
@@ -840,7 +840,7 @@
           href: ide/reference/code-snippet-picker.md
         - name: Командное окно
           href: ide/reference/command-window.md
-        - name: Диалоговое окно "Преобразование"
+        - name: Преобразование - диалоговое окно
           href: ide/reference/convert-dialog-box.md
         - name: Окно "Список ошибок"
           href: ide/reference/error-list-window.md
@@ -858,7 +858,7 @@
               href: ide/reference/options-dialog-box-visual-studio.md
             - name: Среда
               items:
-                - name: Общие
+                - name: Общее
                   href: ide/reference/general-environment-options-dialog-box.md
                 - name: Учетные записи
                   href: ide/reference/accounts-environment-options-dialog-box.md
@@ -896,7 +896,7 @@
                   href: ide/reference/web-browser-environment-options-dialog-box.md
             - name: Проекты и решения
               items:
-                - name: Общие
+                - name: Общее
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
                 - name: Сборка и запуск
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
@@ -910,13 +910,13 @@
                   href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
             - name: Текстовый редактор
               items:
-                - name: Общие
+                - name: Общее
                   href: ide/reference/options-text-editor-general.md
                 - name: Расширение файла
                   href: ide/reference/options-text-editor-file-extension.md
                 - name: Все языки
                   items:
-                    - name: Общие
+                    - name: Общее
                       href: ide/reference/options-text-editor-all-languages.md
                     - name: Полосы прокрутки
                       href: ide/reference/options-text-editor-all-languages-scroll-bars.md
@@ -998,7 +998,7 @@
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
             - name: Конструктор Windows Forms
               items:
-                - name: Общие
+                - name: Общее
                   href: ide/reference/options-windows-forms-designer.md
                 - name: Настройка пользовательского интерфейса данных
                   href: ide/reference/options-windows-forms-designer-data-ui-customization.md

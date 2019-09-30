@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 44028caf027191846fa653db06abbe4027fdde8d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 805ceb7abf7096df29894a23be6c8e7b1f6bd5b2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547088"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233906"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721. Имена свойств не должны совпадать с именами методов get
 
@@ -33,7 +33,7 @@ ms.locfileid: "69547088"
 |Категория|Microsoft. Naming|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Имя элемента начинается с "Get", а в противном случае совпадает с именем свойства. Например, тип, содержащий метод с именем "-Color" и свойство с именем "Color", приводит к нарушению правил.
 

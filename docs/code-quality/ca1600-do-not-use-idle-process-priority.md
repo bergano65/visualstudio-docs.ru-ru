@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c37affc585653807912d00c1cfe365853fd6260b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 686929471ee8b6b5d1896f61bcbcd97a59135462
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921812"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234370"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600. Не используйте приоритет процесса простоя
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921812"
 |Категория|Microsoft. Mobility|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Это правило происходит, когда для `ProcessPriorityClass.Idle`процессов задано значение.
 
 ## <a name="rule-description"></a>Описание правила

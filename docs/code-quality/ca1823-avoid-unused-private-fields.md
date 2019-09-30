@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a2ad3b64055584551a63a2333e29286783d8cf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5f0aa23ff93e193ee06509c1cb635404ec827793
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921362"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233363"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823. Избегайте неиспользуемых частных полей
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921362"
 |Категория|Microsoft. Performance|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Это правило сообщается, когда закрытое поле в коде существует, но не используется ни одним из путей кода.
 
 ## <a name="rule-description"></a>Описание правила

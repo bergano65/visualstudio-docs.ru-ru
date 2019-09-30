@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b292c58e666c11130fb25f67c234bfd2282fe463
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5503f00995a4720207ea0ea9c29201d379e70adb
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922259"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234904"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400. Для методов P/Invoke должны существовать точки входа
 
@@ -30,7 +30,7 @@ ms.locfileid: "68922259"
 |Категория|Microsoft. взаимодействие|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Открытый или защищенный метод помечается атрибутом <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Не удается найти неуправляемую библиотеку либо не удается сопоставить метод функции в библиотеке. Если правило не может найти имя метода точно так же, как указано, оно ищет версии метода в кодировке ANSI или расширенных символов, заменяя имя метода на "A" или "W". Если совпадений не найдено, правило пытается найти функцию с помощью формата имени __stdcall (_MyMethod@12, где 12 обозначает длину аргументов). Если совпадений не найдено, а имя метода начинается с символа "#", правило ищет функцию как порядковую ссылку, а не ссылку на имя.
 
 ## <a name="rule-description"></a>Описание правила

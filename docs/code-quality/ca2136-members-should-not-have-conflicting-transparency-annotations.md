@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dcef8fbfd61b8cd8c946f76d6fcb93dc46f1654
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7f9455e83d7cb128a34696ae5e849fd0901f1891
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920634"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232220"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136. Члены не должны иметь противоречащие заметки прозрачности
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920634"
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Это правило срабатывает, если член типа помечен атрибутом <xref:System.Security> безопасности с разной прозрачностью, чем атрибут безопасности контейнера элемента.
 
 ## <a name="rule-description"></a>Описание правила

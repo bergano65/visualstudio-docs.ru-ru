@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40cb2a3674884a9fb4f1449c9afa2e0a2d27050f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df5c0db4e9e141e5833893bbbb447328eab8851e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808564"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233347"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824. Помечайте сборки с помощью NeutralResourcesLanguageAttribute
 
@@ -27,44 +27,44 @@ ms.locfileid: "62808564"
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
-|Категория|Microsoft.Performance|
+|Категория|Microsoft. Performance|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Сборка содержит **ResX**-ресурса на основе, но не имеет <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> примененных к нему.
+Сборка содержит ресурс на основе **RESX**, но не имеет <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> примененного к нему ресурса.
 
 ## <a name="rule-description"></a>Описание правила
 
-<xref:System.Resources.NeutralResourcesLanguageAttribute> Атрибут сообщает диспетчеру ресурсов языка и региональных параметров приложения по умолчанию. Если ресурсы для культуры по умолчанию внедряются в основную сборку приложения, и <xref:System.Resources.ResourceManager> имеет для извлечения ресурсов, принадлежащих языку и региональным параметрам, как по умолчанию язык и региональные параметры, <xref:System.Resources.ResourceManager> автоматически использует ресурсы, находящиеся в основной сборке вместо поиска для вспомогательной сборки. Это обходит проверки обычные сборки, повышается эффективность поиска первого загружаемого ресурса и может сократиться рабочее множество.
+<xref:System.Resources.NeutralResourcesLanguageAttribute> Атрибут информирует диспетчер ресурсов о культуре приложения по умолчанию. Если ресурсы языка и региональных параметров по умолчанию внедряются в основную сборку приложения и <xref:System.Resources.ResourceManager> должны получать ресурсы, принадлежащие к тому же языку и региональным параметрам <xref:System.Resources.ResourceManager> по умолчанию, компонент автоматически использует ресурсы, расположенные в основной сборке. Вместо поиска вспомогательной сборки. Это обходит обычную проверку сборки, улучшает производительность поиска для первого загружаемого ресурса и может сократить рабочий набор.
 
 > [!TIP]
-> См. в разделе [упаковки и развертывания ресурсов](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) для процесса, <xref:System.Resources.ResourceManager> производит поиск файлов ресурсов.
+> См. раздел [Упаковка и развертывание ресурсов](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) для процесса <xref:System.Resources.ResourceManager> , который использует для проверки файлов ресурсов.
 
 ## <a name="fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, добавьте атрибут к сборке и указывает язык, ресурсы нейтрального языка и региональных параметров.
+Чтобы устранить нарушение этого правила, добавьте атрибут в сборку и укажите язык ресурсов нейтрального языка и региональных параметров.
 
-### <a name="to-specify-the-neutral-language-for-resources"></a>Чтобы указать для ресурсов нейтрального языка
+### <a name="to-specify-the-neutral-language-for-resources"></a>Указание нейтрального языка для ресурсов
 
-1. В **обозревателе решений**, щелкните правой кнопкой мыши проект и выберите **свойства**.
+1. В **Обозреватель решений**щелкните правой кнопкой мыши проект и выберите пункт **свойства**.
 
-2. Выберите **приложения** , а затем выберите **сведения о сборке**.
+2. Перейдите на вкладку **приложение** и выберите **сведения о сборке**.
 
    > [!NOTE]
-   > Если проект является проектом .NET Standard или .NET Core, выберите **пакета** вкладки.
+   > Если проект является .NET Standard или проектом .NET Core, выберите вкладку **пакет** .
 
-3. Выберите язык из **нейтрального языка** или **нейтрального языка ассемблера** стрелку раскрывающегося списка.
+3. Выберите язык из раскрывающегося списка **нейтральный язык** или **нейтральный язык сборки** .
 
 4. Нажмите кнопку **ОК**.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Допускается, чтобы подавить предупреждение из этого правила. Тем не менее могут снизить производительность при запуске.
+Предупреждение можно отключить от этого правила. Однако производительность запуска может снизиться.
 
 ## <a name="see-also"></a>См. также
 
 - <xref:System.Resources.NeutralResourcesLanguageAttribute>
 - [Ресурсы в классических приложениях (.NET)](/dotnet/framework/resources/)
-- [CA1703 - строки ресурсов должны иметь правильное правописание](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1701 — строка ресурса, составные слова должны иметь правильный регистр](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1703 — строки ресурсов должны быть написаны правильно](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1701-составные слова в строках ресурсов должны иметь правильный регистр](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)

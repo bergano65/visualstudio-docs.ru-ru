@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f8a672056c8663c2e27ec730e542083aee9738f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: b3c6298c2186b6a73b4a7ef441b5f4c42c90ff6a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714976"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231063"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228. Не поставляйте предварительные форматы ресурсов
 
@@ -27,21 +27,21 @@ ms.locfileid: "66714976"
 |-|-|
 |TypeName|DoNotShipUnreleasedResourceFormats|
 |CheckId|CA2228|
-|Категория|Microsoft.Usage|
+|Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Файл ресурсов был создан с помощью версии платформы .NET, которая в настоящее время не поддерживается.
+Файл ресурсов был создан с использованием версии .NET, которая в настоящее время не поддерживается.
 
 ## <a name="rule-description"></a>Описание правила
 
-Файлы ресурсов, которые были созданы с помощью предварительных версий .NET может не работать в поддерживаемых версиях платформы .NET.
+Файлы ресурсов, созданные с помощью предварительных версий .NET, могут не использоваться поддерживаемыми версиями .NET.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, ресурс сборки с помощью поддерживаемой версии .NET.
+Чтобы устранить нарушение этого правила, создайте ресурс с помощью поддерживаемой версии .NET.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
 Для этого правила отключать вывод предупреждений не следует.

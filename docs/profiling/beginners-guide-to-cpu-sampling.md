@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73e940f6d302d28713c0345f77d6c78c8223e363
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 91b175eec9d17624f2b7225d1aac428926310734
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440280"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128220"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Руководство по выборке циклов ЦП для начинающих
 Средства профилирования Visual Studio можно использовать для анализа проблем с производительностью в приложении. Эта процедура показывает, как использовать данные **выборки**.
@@ -108,7 +108,7 @@ ms.locfileid: "63440280"
 
     - Чтобы просмотреть подробные сведения о предупреждении, щелкните ошибку правой кнопкой мыши и выберите пункт **Показать справочные сведения об ошибке**.
 
-## <a name="step-3-revise-code-and-rerun-a-session"></a>Шаг 3. Пересмотр кода и повторный запуск сеанса
+## <a name="step-3-revise-code-and-rerun-a-session"></a>Шаг 3. Пересмотр кода и повторный запуск сеанса
  После нахождения и оптимизации одной или нескольких функций можно повторить сеанс профилирования и сравнить данные, чтобы определить, как внесенные изменения повлияли на производительность приложения.
 
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Пересмотр кода и повторный запуск сеанса
@@ -127,5 +127,5 @@ ms.locfileid: "63440280"
 - [Обозреватель производительности](../profiling/performance-explorer.md)
 - [Начало работы](../profiling/getting-started-with-performance-tools.md)
 - [Разделы общих сведений](../profiling/overviews-performance-tools.md)
-- [Профилирование в Visual Studio](../profiling/index.md)
+- [Профилирование в Visual Studio](../profiling/index.yml)
 - [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)
