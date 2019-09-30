@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ec01b49ca61fcf295884deafa280c8ee33a2b4c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437446"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255510"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Настройка ленты для InfoPath
   При настройке ленты в Microsoft Office InfoPath необходимо знать, где в приложении отображается пользовательская лента. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] может отображать ленту в окнах приложения InfoPath следующих трех типов.
@@ -29,7 +29,7 @@ ms.locfileid: "63437446"
 
 - Окно предварительного просмотра перед печатью.
 
-  **Область применения:** Сведения этого раздела применяются к проектам надстроек VSTO для InfoPath 2010. Дополнительные сведения см. в разделе [функций по типам приложений и проектов Office](../vsto/features-available-by-office-application-and-project-type.md).
+  **Применимо к:** Сведения в этом разделе относятся к проектам надстроек VSTO для InfoPath 2010. Дополнительные сведения см. в разделе [доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).
 
   Пользователи и разработчики открывают шаблон формы в режиме конструктора, чтобы изменить внешний вид и макет шаблона. Пользователи открывают формы, созданные на основе шаблона формы, для добавления содержимого.
 
@@ -40,8 +40,8 @@ ms.locfileid: "63437446"
 
  Необходимо указать тип ленты для каждого окна, в котором лента должна отображаться.
 
-## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Указать тип ленты в конструкторе лент
- Если вы используете **Лента (визуальный конструктор)** , щелкните **RibbonType** ленты в **свойства** окно и затем выберите один из идентификаторов ленты описанные в следующей таблице.
+## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Указание типа ленты в конструкторе ленты
+ Если вы используете элемент **Лента (визуальный конструктор)** , щелкните свойство **RibbonType** ленты в окне **Свойства** , а затем выберите любой идентификатор ленты, описанный в следующей таблице.
 
 |Идентификатор ленты|Окно, в котором будет отображаться лента при выполнении проекта|
 |---------------|---------------------------------------------------------------------|
@@ -49,7 +49,7 @@ ms.locfileid: "63437446"
 |**Microsoft.InfoPath.Editor**|Окна, отображающие форму, созданную на основе шаблона формы.|
 |**Microsoft.InfoPath.PrintPreview**|Окно предварительного просмотра перед печатью.|
 
- В проект можно добавить несколько лент. Если несколько лент имеют одинаковый идентификатор, переопределите метод `CreateRibbonExtensibilityObject` в классе `ThisAddin` проекта, чтобы указать, какую ленту следует отображать во время выполнения. Дополнительные сведения см. в разделе [Обзор ленты](../vsto/ribbon-overview.md).
+ В проект можно добавить несколько лент. Если несколько лент имеют одинаковый идентификатор, переопределите метод `CreateRibbonExtensibilityObject` в классе `ThisAddin` проекта, чтобы указать, какую ленту следует отображать во время выполнения. Дополнительные сведения см. в статье [Общие сведения о ленте](../vsto/ribbon-overview.md).
 
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Указание типа ленты с помощью XML-ленты
  Если вы используете элемент **Лента (XML)** , проверьте значение параметра *ribbonID* в методе <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> и верните нужную ленту.
@@ -63,6 +63,6 @@ ms.locfileid: "63437446"
 
 ## <a name="see-also"></a>См. также
 - [Доступ к ленте во время выполнения](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Обзор ленты](../vsto/ribbon-overview.md)
-- [Конструктор лент](../vsto/ribbon-designer.md)
+- [Общие сведения о ленте](../vsto/ribbon-overview.md)
+- [Конструктор ленты](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

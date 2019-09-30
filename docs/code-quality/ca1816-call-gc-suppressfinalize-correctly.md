@@ -17,71 +17,71 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c14f9ed8803c02d1570ac2a3dee82fbdfca5f01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fdd20df37586e50b5236872f1d84de48d08c87a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796784"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233532"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816. Вызов GC.SuppressFinalize должен осуществляться правильно
 
 |||
 |-|-|
-|TypeName|CallGCSuppressFinalizeCorrectly|
+|TypeName|каллгксуппрессфинализекорректли|
 |CheckId|CA1816|
-|Категория|Корпорация Майкрософт. Использование|
+|Категория|NNTP. Использование|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Нарушение этого правила может быть вызвано:
+Нарушения этого правила могут быть вызваны следующими причинами.
 
-- Метод, который представляет собой реализацию <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> и не вызывает <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>.
+- Метод, который является реализацией <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> и не вызывает. <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>
 
-- Метод, который не является реализацией <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> и вызывает метод <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>.
+- Метод, который не является реализацией <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> и вызывает. <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>
 
-- Метод, вызываемый <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> и передает что-то отличное от [this (C#)](/dotnet/csharp/language-reference/keywords/this) или [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
+- Метод, который вызывает <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> и передает нечто, отличное от [thisC#()](/dotnet/csharp/language-reference/keywords/this) или [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
 
 ## <a name="rule-description"></a>Описание правила
 
-<xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> Метод позволяет освободить ресурсы в любое время, прежде чем объект становится доступным для сборки мусора. Если <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> вызывается метод, он освобождает ресурсы объекта. Это исключает необходимость в завершении. <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> следует вызывать <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> , сборщик мусора не вызывать метод завершения объекта.
+<xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> Метод позволяет пользователям освобождать ресурсы в любое время, прежде чем объект станет доступным для сборки мусора. При вызове <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> метода он освобождает ресурсы объекта. Это делает завершение ненужным. <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType>должен вызывать <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> , чтобы сборщик мусора не вызывал метод завершения объекта.
 
-Для предотвращения производным типам, используя методы завершения от необходимости повторно реализовать <xref:System.IDisposable> и назовем ее, рекомендуется вызывать незапечатанных типов без использования методов завершения <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>.
+Чтобы не допустить повторной реализации <xref:System.IDisposable> и вызова для производных типов с помощью методов завершения, незапечатанные типы не должны вызывать. <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила:
+Чтобы устранить нарушение этого правила, выполните следующие действия.
 
-- Если метод является реализацией <xref:System.IDisposable.Dispose%2A>, добавьте вызов <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>.
+- Если метод является реализацией <xref:System.IDisposable.Dispose%2A>, добавьте <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>вызов.
 
-- Если метод не является реализация <xref:System.IDisposable.Dispose%2A>, либо удалите вызов <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> или переместите его в тип <xref:System.IDisposable.Dispose%2A> реализации.
+- Если метод не является реализацией <xref:System.IDisposable.Dispose%2A>, удалите <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> вызов или переместите <xref:System.IDisposable.Dispose%2A> его в реализацию типа.
 
-- Изменить все вызовы <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> для передачи [this (C#)](/dotnet/csharp/language-reference/keywords/this) или [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
+- Измените все вызовы <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> на, чтобы передать [thisC#()](/dotnet/csharp/language-reference/keywords/this) или [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Только подавить предупреждение из этого правила, если вы используете намеренно <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> управление временем существования других объектов. Не отключайте предупреждение из этого правила, если реализация <xref:System.IDisposable.Dispose%2A> не вызывает <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>. В этом случае сбой для подавления финализации снижает производительность и не дает преимуществ.
+Отключать предупреждение из этого правила следует только в том случае, если <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> вы намеренно используете для управления временем существования других объектов. Не отключайте предупреждение из этого правила, если реализация <xref:System.IDisposable.Dispose%2A> не вызывает <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>. В этом случае не удается отключить завершение работы, что не дает никаких преимуществ.
 
-## <a name="example-that-violates-ca1816"></a>Пример, который нарушает CA1816
+## <a name="example-that-violates-ca1816"></a>Пример, нарушающий CA1816
 
-Этот код показан метод, который вызывает <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>, но не проходит [this (C#)](/dotnet/csharp/language-reference/keywords/this) или [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me). Таким образом этот код нарушает правило CA1816.
+Этот код показывает метод, который вызывает <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>, но не передает [this (C#)](/dotnet/csharp/language-reference/keywords/this) или [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me). В результате этот код нарушает правило CA1816.
 
 [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../code-quality/codesnippet/VisualBasic/ca1816-call-gc-suppressfinalize-correctly_1.vb)]
 [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_1.cs)]
 
-## <a name="example-that-satisfies-ca1816"></a>Пример, который удовлетворяет CA1816
+## <a name="example-that-satisfies-ca1816"></a>Пример, удовлетворяющий CA1816
 
-В этом примере показан метод, то правильно вызовы <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> , передав [this (C#)](/dotnet/csharp/language-reference/keywords/this) или [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
+В этом примере показан метод, который правильно <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> вызывается путем передачи [этогоC#()](/dotnet/csharp/language-reference/keywords/this) или [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
 
 [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca1816-call-gc-suppressfinalize-correctly_2.vb)]
 [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_2.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA2215: Методы Dispose должны вызывать метод dispose базового класса](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
-- [CA2216: Высвобождаемые типы должны объявлять метод завершения](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+- [CA2215 Методы Dispose должны вызывать базовый класс Dispose](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+- [CA2216: Удаляемые типы должны объявлять метод завершения](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
 ## <a name="see-also"></a>См. также
 
-- [Шаблон ликвидации](/dotnet/standard/design-guidelines/dispose-pattern)
+- [Шаблон удаления](/dotnet/standard/design-guidelines/dispose-pattern)

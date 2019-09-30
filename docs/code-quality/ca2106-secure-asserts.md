@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df19d31abe88c6d12bafc933ba740badb832eb16
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d4495dcbe951edd3e7eaa3b6ff0d2432bc0a7751
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921073"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232880"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106. Обеспечьте безопасность утверждений
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921073"
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Метод утверждает разрешение и не выполняет проверок безопасности вызывающего объекта.
 
 ## <a name="rule-description"></a>Описание правила

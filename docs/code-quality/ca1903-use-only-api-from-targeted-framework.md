@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 704972127130cc7be991213249ff41212fa40676
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921289"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233270"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903. Используйте API только из целевой рабочей среды
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921289"
 |Категория|Microsoft. переносимость|
 |Критическое изменение|Критическое — при срабатывании сигнатуры видимого извне члена или типа.<br /><br /> Не критическое — при срабатывании в теле метода.|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Элемент или тип использует член или тип, который появился в пакете обновления, который не был включен в целевую платформу проекта.
 
 ## <a name="rule-description"></a>Описание правила

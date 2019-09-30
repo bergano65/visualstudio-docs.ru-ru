@@ -9,15 +9,19 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e955eaacd2f290558c5d786439373a9cc8febb35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ecd7a4d237a53a19286790346f790b82b981f60
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MTE95
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158287"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062876"
 ---
 # <a name="user-accounts-and-updates"></a>Учетные записи пользователей и обновления
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+> [!WARNING]
+> Visual Studio 2015 не может получить доступ к ресурсам, настроенным для условного доступа. Для работы с этими ресурсами выполните обновление до Visual Studio 2017 или более поздней версии.
 
 Среда Visual Studio сама по себе является интегрированной средой, связанной с другими средами. С помощью входа в среду вы получаете доступ ко всем службам, связанным с вашей учетной записью пользователя, а также всем учетным записям, связанным с этой учетной записью. Параметры вашей учетной записи переносятся при каждом использовании Visual Studio. Вы можете настроить уровни разрешений в определенном экземпляре Visual Studio для отдельных пользователей. Также Visual Studio сообщает вам о доступности какого-либо обновления для компонента вашей установки, например пакета SDK.  
   
@@ -31,5 +35,6 @@ ms.locfileid: "68158287"
 |[Разблокирование Visual Studio](../ide/how-to-unlock-visual-studio.md)|Описывает способ разблокировки Visual Studio в разных сценариях.|  
 |[Уведомления](../ide/visual-studio-notifications.md)|Описывает, как среда Visual Studio информирует вас о доступности обновлений для компонентов, например пакетов SDK, или непосредственно Visual Studio.|  
   
-## <a name="see-also"></a>См. также  
- [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>См. также
+
+- [Интегрированная среда разработки Visual Studio](../ide/visual-studio-ide.md)

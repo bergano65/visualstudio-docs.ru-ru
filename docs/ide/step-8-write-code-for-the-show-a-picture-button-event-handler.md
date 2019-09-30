@@ -5,23 +5,20 @@ ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2e2a81aa5328167d049a6031015c1c569b2c5e0d
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887966"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118893"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Шаг 8. Написание кода для обработчика событий кнопки "Показать рисунок"
 
@@ -42,6 +39,9 @@ ms.locfileid: "70887966"
 1. Введите `i` в пустой строке между двумя фигурными скобками `{ }` (в Visual Basic введите пустую строку между `Private Sub...` и `End Sub`). Откроется окно **IntelliSense**, как показано на рисунке ниже.
 
     ![IntelliSense с кодом Visual C&#35;](../ide/media/express_ifintellisense.png)
+
+    > [!NOTE]
+    > В вашем коде обработчики событий могут не отображаться в "верблюжьем" стиле.
 
 1. Окно **IntelliSense** должно выделить слово `if` (в противном случае введите в нижнем регистре `f`). Обратите внимание, что рядом с окном **IntelliSense** появляется окно *подсказки* с описанием **Фрагмент кода для оператора if**. (в Visual Basic подсказка также указывает такой фрагмент, но немного с другим содержимым). Необходимо использовать этот фрагмент, поэтому нажмите клавишу **TAB**, чтобы вставить `if` в свой код. Затем снова нажмите клавишу **TAB**, чтобы использовать фрагмент `if`. (Если вы выберете что-то другое и окно **IntelliSense** исчезнет, нажмите клавишу BACKSPACE, чтобы удалить `i`, и повторно введите эту букву, чтобы снова открыть окно **IntelliSense**.)
 

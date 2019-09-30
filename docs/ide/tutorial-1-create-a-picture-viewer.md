@@ -5,20 +5,17 @@ ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32d9d9a874894ab7e3e71d10da3f3cf7b3428d3e
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 7d9a525ef9da6583a37d5e4d26bfec7d0558cde4
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887911"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118667"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Учебник 1. Создание средства просмотра рисунков
 
@@ -51,7 +48,7 @@ ms.locfileid: "70887911"
 
 |Заголовок|ОПИСАНИЕ|
 |-----------|-----------------|
-|[Шаг 1. Создание проекта приложения Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).|Начните с создания проекта приложения Windows Forms.|
+|[Шаг 1. Создание проекта приложения Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Начните с создания проекта приложения Windows Forms.|
 |[Шаг 2. Запуск приложения для просмотра изображений](../ide/step-2-run-your-program.md)|Запустите проект приложения Windows Forms, созданный в предыдущем шаге.|
 |[Шаг 3. Настройка свойств формы](../ide/step-3-set-your-form-properties.md)|Изменение внешнего вида формы с помощью окна **Свойства**.|
 |[Шаг 4. Создание макета формы с помощью элемента управления TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Добавьте элемент управления `TableLayoutPanel` в форму.|
@@ -71,4 +68,4 @@ ms.locfileid: "70887911"
 
 * [Другие руководства по C#](/visualstudio/get-started/csharp/)
 * [Руководства по Visual Basic](/visualstudio/get-started/visual-basic/)
-* [Руководства по C++](../ide/getting-started-with-cpp-in-visual-studio.md)
+* [Руководства по C++](/cpp/get-started/tutorial-console-cpp)

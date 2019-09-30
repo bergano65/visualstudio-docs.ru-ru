@@ -1,5 +1,5 @@
 ---
-title: Отладка COM-клиентов и серверов, с помощью отладки RPC | Документация Майкрософт
+title: Отладка клиентов и серверов COM с помощью отладки RPC | Документация Майкрософт
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c98405b424dd5402a903a236b1c5549a43616d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2cca09e917cddffd0d1d844db14ae8a4ca4f0088
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387519"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211071"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Практическое руководство. Отладка клиентов и серверов COM с помощью отладки RPC
 Для отладки клиент-серверных приложений COM можно использовать отладку удаленного вызова процедур (RPC). Для этого необходимо включить отладку RPC. Если отладка RPC включена, то при заходе в вызов сервера со стороны клиента отладчик подключается к серверу, позволяя выполнить отладку кода. Когда отладчик подключен, все его возможности можно использовать для отладки процессов как на стороне сервера, так и на стороне клиента.
@@ -54,5 +54,5 @@ ms.locfileid: "63387519"
 
 ## <a name="see-also"></a>См. также
 - [Отладка сервера и контейнеров COM](../debugger/com-server-and-container-debugging.md)
-- [Отладка в Visual Studio](../debugger/index.md)
+- [Отладка в Visual Studio](../debugger/index.yml)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

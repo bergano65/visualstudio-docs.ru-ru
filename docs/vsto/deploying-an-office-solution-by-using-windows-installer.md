@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69551713"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Развертывание решения Office с помощью установщик Windows
@@ -49,7 +49,7 @@ ms.locfileid: "69551713"
 
 - [Настройка зависимых компонентов в качестве необходимых компонентов](#Configure)
 
-- [Указание места развертывания решения на компьютере пользователя](#Location)
+- [Specify where you want to deploy the solution on the user's computer](#Location)
 
 - [Настройка надстройки VSTO](#ConfigureRegistry)
 

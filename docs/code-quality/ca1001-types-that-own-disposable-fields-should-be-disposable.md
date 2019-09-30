@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fae67f8c1ffa3b4e6d7cc2f0fbbaf670733f9ff4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3bda8fc80992a2246c30e28582eb93b4624ab81c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923312"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236684"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001. Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми
 
@@ -33,7 +33,7 @@ ms.locfileid: "68923312"
 |Категория|Microsoft. Design|
 |Критическое изменение|Не критическое значение, если тип не виден за пределами сборки.<br /><br /> Критическое — если тип видим за пределами сборки.|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Класс объявляет и реализует поле экземпляра, которое является <xref:System.IDisposable?displayProperty=fullName> типом, а класс не реализует. <xref:System.IDisposable>
 
 ## <a name="rule-description"></a>Описание правила

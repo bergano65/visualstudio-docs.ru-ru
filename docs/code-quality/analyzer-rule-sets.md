@@ -1,6 +1,6 @@
 ---
-title: Наборы правил анализатора
-ms.date: 04/22/2019
+title: Наборы правил FxCop Analyzer
+ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
@@ -10,16 +10,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585133"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185953"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Наборы правил для пакетов анализатора
 
 Предопределенные наборы правил включены в некоторые пакеты анализатора NuGet. Например, наборы правил, включенные в пакет анализатора NuGet [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (начиная с версии 2.6.2), включают или отключают правила на основе их категории, такие как безопасность, именование или производительность. Использование наборов правил упрощает просмотр только нарушений правил, относящихся к определенной категории правила.
+
+Набор правил — это группа правил анализа кода, которая определяет целевые проблемы и конкретные условия. Наборы правил позволяют включать и отключать правила, а также задавать уровень серьезности для отдельных нарушений правил. Пакет NuGet анализатора FxCop включает предопределенные наборы правил для следующих категорий правил:
+
+- разработка
+- документация
+- простота модификации
+- именование
+- производительность
+- надежность
+- безопасность
+- использования
 
 Если вы выполняете миграцию из устаревшего анализа "FxCop" в анализ кода на основе .NET Compiler Platform, эти наборы правил позволяют продолжить использовать аналогичные конфигурации правил для [тех, которые использовались ранее](rule-set-reference.md).
 
@@ -74,5 +85,5 @@ ms.locfileid: "69585133"
 - [Часто задаваемые вопросы по анализаторам](analyzers-faq.md)
 - [Обзор анализаторов на платформе .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Установить анализаторы](install-roslyn-analyzers.md)
-- [Использование анализаторов](use-roslyn-analyzers.md)
+- [Настройка анализаторов](use-roslyn-analyzers.md)
 - [Использование наборов правил для группировки правил анализа кода](using-rule-sets-to-group-code-analysis-rules.md)

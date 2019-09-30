@@ -1,28 +1,25 @@
 ---
-title: Шаг 11. Запуск приложения и изучение других функций
-ms.date: 08/30/2019
+title: Шаг 11. Запуск приложения для просмотра изображений и изучение других функций
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e82e0002255a406f02f85cbb2636be1aa249529
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: ad0489cce76642df0dd069e0a05e1e50b55d5d8f
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887949"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118797"
 ---
-# <a name="step-11-run-your-app-and-try-other-features"></a>Шаг 11. Запуск приложения и изучение других функций
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Шаг 11. Запуск приложения для просмотра изображений и изучение других функций
 
-Разработка приложения завершена, и оно готово для выполнения. Вы можете запустить приложение и задать цвет фона для <xref:System.Windows.Forms.PictureBox>. В качестве дополнительного занятия попробуйте улучшить приложение, изменив цвет формы, настроив кнопки и флажки и изменив свойства формы.
+Разработка приложения для просмотра изображений завершена, и оно готово для выполнения. Вы можете запустить приложение и задать цвет фона для <xref:System.Windows.Forms.PictureBox>. В качестве дополнительного занятия попробуйте улучшить приложение, изменив цвет формы, настроив кнопки и флажки и изменив свойства формы.
 
 ## <a name="how-to-run-your-app-and-set-the-background-color"></a>Запуск приложения и настройка цвета фона
 
@@ -63,4 +60,4 @@ ms.locfileid: "70887949"
 
 * [Другие руководства по C#](/visualstudio/get-started/csharp/)
 * [Другие руководства по Visual Basic](/visualstudio/get-started/visual-basic/)
-* [Руководство по C++](../ide/getting-started-with-cpp-in-visual-studio.md)
+* [Руководство по C++](/cpp/get-started/tutorial-console-cpp)

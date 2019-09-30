@@ -4,14 +4,14 @@ description: Сведения о входе в Visual Studio для Mac и ак�
 ms.topic: overview
 author: asb3993
 ms.author: amburns
-ms.date: 05/06/2018
+ms.date: 09/18/2019
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.openlocfilehash: a956b272c633b357e448cae93c8d759bcede3c54
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: b8aa2a627754b8cbe81da665cadc4ae53ec8430d
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108131"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211491"
 ---
 # <a name="user-accounts"></a>Учетные записи пользователя
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ef4165823f59045dda8c05b5679fdd3b795114
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 48cfcfd4feb794137e1634158b5af632aa976c60
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921080"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232767"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112. Защищенные типы не должны предоставлять поля
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921080"
 |Категория|Microsoft.Security|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Открытый или защищенный тип содержит открытые поля и защищен с помощью [запросов компоновки](/dotnet/framework/misc/link-demands).
 
 ## <a name="rule-description"></a>Описание правила

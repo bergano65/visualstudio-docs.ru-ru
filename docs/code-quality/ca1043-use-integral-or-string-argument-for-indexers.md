@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aeec6e202ccb7f3075b04d29bdef7d171ae545f7
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 298c92263903c3799f1e7e184a554f896366566c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547685"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235842"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043. Используйте целый или строковый аргумент для индексаторов
 
@@ -34,7 +34,7 @@ ms.locfileid: "69547685"
 |Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Тип содержит индексатор, использующий <xref:System.Int32?displayProperty=fullName>тип индекса <xref:System.Object?displayProperty=fullName>, отличный от, <xref:System.Int64?displayProperty=fullName>, или <xref:System.String?displayProperty=fullName>.
 

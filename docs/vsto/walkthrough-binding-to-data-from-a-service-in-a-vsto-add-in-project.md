@@ -14,21 +14,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60aefd40c48dc3789ab84ee5873aa6a53f4ee3fe
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740110"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254060"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Пошаговое руководство. Привязка к данным из службы в проекте надстройки VSTO
   Вы можете привязывать данные к элементам управления ведущего приложения в проектах надстроек VSTO. В этом пошаговом руководстве демонстрируется добавление элементов управления в документ Microsoft Office Word, привязка элементов управления к данным, полученным из службы содержимого MSDN, и реагирование на события во время выполнения.
 
- **Применимо к:** Сведения в этом разделе относятся к проектам уровня приложения для Word 2010. Дополнительные сведения см. в разделе [Доступность функций по типам приложений Office и проектов](../vsto/features-available-by-office-application-and-project-type.md).
+ **Применимо к:** Сведения в этом разделе относятся к проектам уровня приложения для Word 2010. Дополнительные сведения см. в разделе [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
 
  В данном пошаговом руководстве рассмотрены следующие задачи:
 
-- <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Добавление элемента управления в документ во время выполнения.
+- Добавление элемента управления <xref:Microsoft.Office.Tools.Word.RichTextContentControl> в документ во время выполнения.
 
 - <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Привязка элемента управления к данным из веб-службы.
 
@@ -73,8 +73,8 @@ ms.locfileid: "68740110"
 
 6. В диалоговом окне **Мастер добавления ссылок** нажмите кнопку **Готово**.
 
-## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>Добавление элемента управления содержимым и привязка к данным во время выполнения
- В проектах надстроек VSTO во время выполнения добавляются и привязываются элементы управления. Для этого пошагового руководства настройте элемент управления содержимым, чтобы получать данные из веб-службы, когда пользователь щелкает внутри элемента управления.
+## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>Добавление элемента управления содержимым и привязка к данным во время выполнения
+ В проектах надстроек VSTO вы можете добавлять и привязывать элементы управления во время выполнения. Для этого пошагового руководства настройте элемент управления содержимым, чтобы получать данные из веб-службы, когда пользователь щелкает внутри элемента управления.
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>Добавление элемента управления содержимым и привязка к данным
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fa6bfa5b590d330d791eb8c735099e619ffaf3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72bcf01b9c0613bb390ac9adbbba2fb176db13bd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541914"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231221"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224. Переопределяйте Equals при перегрузке оператора равенства
 
@@ -28,30 +28,30 @@ ms.locfileid: "62541914"
 |-|-|
 |TypeName|OverrideEqualsOnOverloadingOperatorEquals|
 |CheckId|CA2224|
-|Категория|Microsoft.Usage|
+|Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
 Открытый тип реализует оператор равенства, но не переопределяет <xref:System.Object.Equals%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Описание правила
 
-Оператор равенства должен быть синтаксически удобный способ доступа к функциям <xref:System.Object.Equals%2A> метод. При реализации оператора равенства, логику необходимо быть идентична <xref:System.Object.Equals%2A>.
+Оператор равенства должен быть синтаксически удобным способом доступа к функциональности <xref:System.Object.Equals%2A> метода. При реализации оператора равенства его логика должна быть идентична этой <xref:System.Object.Equals%2A>.
 
-Компилятор C# выдает предупреждение, если код нарушает это правило.
+Если C# код нарушает это правило, компилятор выдает предупреждение.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, следует либо удалите реализацию оператора равенства, либо переопределить <xref:System.Object.Equals%2A> и иметь два метода возвращает те же значения. Если оператор равенства не вводит непредсказуемому поведению, можно устранить нарушение, предоставляющего реализацию <xref:System.Object.Equals%2A> , который вызывает <xref:System.Object.Equals%2A> метод в базовом классе.
+Чтобы устранить нарушение этого правила, необходимо либо удалить реализацию оператора равенства, либо переопределить <xref:System.Object.Equals%2A> , чтобы два метода возвращали одинаковые значения. Если оператор равенства не приводит к несогласованному поведению, можно устранить нарушение, предоставив реализацию <xref:System.Object.Equals%2A> , которая <xref:System.Object.Equals%2A> вызывает метод в базовом классе.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Это безопасно подавить предупреждение из этого правила, если оператор равенства возвращает то же значение, что унаследованной реализации <xref:System.Object.Equals%2A>. Примеры в этой статье включают тип, который может безопасно подавить предупреждение из этого правила.
+Можно спокойно отключить предупреждение из этого правила, если оператор равенства возвращает то же значение, что и унаследованная реализация <xref:System.Object.Equals%2A>. Примеры в этой статье включают тип, который может безопасно отключить предупреждение из этого правила.
 
-## <a name="examples-of-inconsistent-equality-definitions"></a>Примеры определений несогласованные равенства
+## <a name="examples-of-inconsistent-equality-definitions"></a>Примеры непротиворечивых определений равенства
 
-В примере показан тип с несогласованные определения равенства. `BadPoint` изменяет значение равенства, предоставляя пользовательскую реализацию оператора равенства, но не переопределяет <xref:System.Object.Equals%2A> , чтобы он ведет себя идентично.
+В следующем примере показан тип с непротиворечивыми определениями равенства. `BadPoint`изменяет значение равенства, предоставляя пользовательскую реализацию оператора равенства, но не переопределяет <xref:System.Object.Equals%2A> его таким образом, что он ведет себя одинаково.
 
 [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_1.cs)]
 
@@ -70,7 +70,7 @@ b and bcopy are equal ? No
 b == bcopy ? Yes
 ```
 
-В примере показан тип, который технически нарушает это правило, но не работает должным образом несогласованности.
+В следующем примере показан тип, который технически нарушает данное правило, но не работает в несогласованном режиме.
 
 [!code-csharp[FxCop.Usage.ValueTypeEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_3.cs)]
 
@@ -91,32 +91,32 @@ b == bcopy ? Yes
 
 ## <a name="class-example"></a>Пример класса
 
-В следующем примере класса (ссылочный тип), который нарушает это правило.
+В следующем примере показан класс (ссылочный тип), нарушающий это правило.
 
 [!code-csharp[FxCop.Usage.OverrideEqualsClassViolation#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_5.cs)]
 
-В следующем примере устраняется нарушение путем переопределения <xref:System.Object.Equals%2A?displayProperty=fullName>.
+В следующем примере нарушение устраняется путем переопределения <xref:System.Object.Equals%2A?displayProperty=fullName>.
 
 [!code-csharp[FxCop.Usage.OverrideEqualsClassFixed#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_6.cs)]
 
 ## <a name="structure-example"></a>Пример структуры
 
-В следующем примере структура (тип значения), который нарушает это правило:
+В следующем примере показана структура (тип значения), которая нарушает это правило:
 
 [!code-csharp[FxCop.Usage.OverrideEqualsStructViolation#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_7.cs)]
 
-В следующем примере устраняется нарушение путем переопределения <xref:System.ValueType.Equals%2A?displayProperty=fullName>.
+В следующем примере нарушение устраняется путем переопределения <xref:System.ValueType.Equals%2A?displayProperty=fullName>.
 
 [!code-csharp[FxCop.Usage.OverrideEqualsStructFixed#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_8.cs)]
 
 ## <a name="related-rules"></a>Связанные правила
 
-[CA1046: Не перегружайте оператор равенства для ссылочных типов](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+[CA1046: Не перегружать оператор Equals в ссылочных типах](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
-[CA2225: Оператор дополнения с именами](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+[CA2225 Перегрузки операторов имеют именованные варианты](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
-[CA2226: Операторы должны быть симметричны](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+[CA2226: Операторы должны иметь симметричные перегрузки](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
-[CA2218: Переопределяйте GetHashCode при переопределении Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+[CA2218: Переопределять GetHashCode при переопределении Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
 [CA2231: перегрузите оператор равенства на переопределяющем типе ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

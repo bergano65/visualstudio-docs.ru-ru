@@ -1,5 +1,5 @@
 ---
-title: Практическое руководство. Отладка элемента ActiveX | Документация Майкрософт
+title: Практическое руководство. Отладка элемента управления ActiveX | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1d02cb4d581a7234ad2dd950fa51f46a5d128b2
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894434"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211086"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Практическое руководство. отладку элемента управления ActiveX
 
@@ -42,7 +42,7 @@ ms.locfileid: "62894434"
 
 1. Выберите проект в Обозревателе решений.
 
-2. Из **представление** меню, выберите **страницы свойств**.
+2. В меню **вид** выберите **страницы свойств**.
 
 3. В диалоговом окне **Страницы свойств проекта** откройте папку **Свойства конфигурации** и выберите категорию **Отладка**.
 
@@ -61,5 +61,5 @@ ms.locfileid: "62894434"
 - [Элементы управления ActiveX](/cpp/mfc/activex-controls)
 - [Тестирование свойств и событий с использованием тестового контейнера](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Отладка COM и ActiveX](../debugger/com-and-activex-debugging.md)
-- [Отладка в Visual Studio](../debugger/index.md)
+- [Отладка в Visual Studio](../debugger/index.yml)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

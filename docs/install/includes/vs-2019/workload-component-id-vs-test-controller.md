@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 07/24/2019
+ms.date: 09/23/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 60e161a7241f927dab8f65de0e42d5a53045aa17
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: deac2e490e61dca190cc821b02af0a6213f5620f
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68484830"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71210315"
 ---
 ## <a name="test-controller"></a>Test Controller
 
@@ -25,7 +25,7 @@ ms.locfileid: "68484830"
 
 ### <a name="components-included-by-this-workload"></a>Компоненты, используемые этой рабочей нагрузкой
 
-Идентификатор компонента | name | Версия | Тип зависимости
+Идентификатор компонента | name | Version | Тип зависимости
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Основные функции Test Controller | 16.0.28315.86 | Обязательно
 
@@ -33,6 +33,6 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Основны�
 
 Здесь перечислены компоненты, которые не используются рабочими нагрузками, но могут быть выбраны в качестве отдельного компонента.
 
-Идентификатор компонента | name | Версия
+Идентификатор компонента | name | Version
 --- | --- | ---
 Н/Д | Н/Д | Н/Д

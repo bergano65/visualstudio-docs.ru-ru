@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5fe671b10a701bb355a476ff9bc577bb4cdca71b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680621"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252534"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Использование автономного сборщика IntelliTrace (C#, Visual Basic)
 
@@ -70,7 +70,7 @@ ms.locfileid: "68680621"
 
 5. [Сбор данных из веб-приложения или приложения SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     -или-
+     \- или -
 
      [Сбор данных из управляемого приложения](#BKMK_Collect_Data_from_Executables)
 
@@ -195,7 +195,7 @@ ms.locfileid: "68680621"
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       -или-
+       \- или -
 
    - Чтобы настроить разрешения с помощью проводника Windows:
 
@@ -315,7 +315,7 @@ ms.locfileid: "68680621"
 
   - Время запуска можно сократить путем отключения событий, которые не относятся к приложению. Например, отключите события рабочего процесса Windows для приложений, которые его не используют.
 
-  - Для повышения производительности при запуске и во время выполнения можно отключить события в реестре для приложений, которые обращаются к реестру, но не показывают проблемы с параметрами реестра.
+  - Можно повысить производительность как при запуске, так и во время выполнения, отключив события реестра для приложений, обращающихся к реестру, но не отображая проблем с параметрами реестра.
 
 - Просмотрите модули в плане сбора данных, для которых IntelliTrace собирает данные. Исключите из плана модули, которые вас не интересуют.
 

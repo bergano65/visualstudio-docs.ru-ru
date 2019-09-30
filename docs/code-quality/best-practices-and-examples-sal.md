@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 478efc77bd1fb14f6241e026cfe280355a90746a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 27570e282c230d4bec47e70aa1bcdd053b75597c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919445"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236748"
 ---
 # <a name="best-practices-and-examples-sal"></a>Рекомендации и примеры (SAL)
 Ниже приведены некоторые способы получения максимальной из языка аннотирования исходного кода (SAL) и устранения некоторых распространенных проблем.
@@ -238,11 +238,11 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 ## <a name="see-also"></a>См. также
 
-[Использование аннотаций SAL для сокращения числаC++ дефектов](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
-C/Code, имеющих[представление о](../code-quality/understanding-sal.md)
-[параметрах функции и возвращаемых значениях](../code-quality/annotating-function-parameters-and-return-values.md)
-,[аннотированных поведением функций](../code-quality/annotating-function-behavior.md) 
- [Добавление](../code-quality/annotating-structs-and-classes.md)
-заметок к структурам и классам, заменяя[поведение](../code-quality/annotating-locking-behavior.md)
-блокировки,[указывая, когда и где Заметка](../code-quality/specifying-when-and-where-an-annotation-applies.md)
-применяет[встроенные функции](../code-quality/intrinsic-functions.md) .
+[Использование аннотаций SAL для уменьшения количества дефектов в коде C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
+[Основные сведения о языке SAL](../code-quality/understanding-sal.md)  
+[Создание примечаний к параметрам и возвращаемым значениям функций](../code-quality/annotating-function-parameters-and-return-values.md)  
+[Аннотация поведения функций](../code-quality/annotating-function-behavior.md)  
+[Аннотация структур и классов](../code-quality/annotating-structs-and-classes.md)  
+[Аннотация поведения блокировки](../code-quality/annotating-locking-behavior.md)  
+[Указание времени и места применения примечания](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+[Встроенные функции](../code-quality/intrinsic-functions.md)  

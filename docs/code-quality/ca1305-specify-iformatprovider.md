@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a9f6c8fd44749de43d86bf8037df0130ad682321
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714686"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235037"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305. Указывайте IFormatProvider
 
@@ -29,14 +29,14 @@ ms.locfileid: "66714686"
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
-|Категория|Microsoft.Globalization|
+|Категория|Microsoft. Globalization|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Метод или конструктор вызывает один или несколько членов, которые имеют перегрузки, принимающие <xref:System.IFormatProvider?displayProperty=fullName> параметра и этот метод или конструктор не вызывает перегрузку, принимающую <xref:System.IFormatProvider> параметра.
+Метод или конструктор вызывает один или несколько элементов, которые имеют перегрузки, принимающие <xref:System.IFormatProvider?displayProperty=fullName> параметр, а метод или конструктор не вызывает перегрузку, которая <xref:System.IFormatProvider> принимает параметр.
 
-Это правило не учитывает вызовы методов .NET, задокументированы в качестве пропуск <xref:System.IFormatProvider> параметра. Правило также игнорирует следующие методы:
+Это правило игнорирует вызовы методов .NET, которые задокументированы как пропускают <xref:System.IFormatProvider> параметр. Правило также игнорирует следующие методы.
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,27 +44,27 @@ ms.locfileid: "66714686"
 
 ## <a name="rule-description"></a>Описание правила
 
-Когда <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> или <xref:System.IFormatProvider> не предоставляется значение по умолчанию, поставляемое перегруженным членом, возможно, не нужных во всех языковых стандартах. Кроме того члены .NET выберите язык и региональные параметры по умолчанию и исходя из предположения, которые могут быть неправильными в коде. Чтобы убедиться, что код работает правильно для сценариев, необходимо предоставить сведения об особенностях языка и региональных параметров в соответствии с приведенным ниже рекомендациям:
+Если объект <xref:System.IFormatProvider> или не указан, то значение по умолчанию, предоставляемое перегруженным членом, может не иметь желаемого результата во всех языковых стандартах. <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> Кроме того, члены .NET выбирают язык и региональные параметры по умолчанию и форматирование на основе допущений, которые могут быть неправильными для вашего кода. Чтобы убедиться в том, что код работает правильно для ваших сценариев, необходимо предоставить сведения, относящиеся к культуре, в соответствии со следующими рекомендациями.
 
 - Если значение будет отображаться для пользователя, используйте текущий язык и региональные параметры. См. раздел <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Если значение будет храниться и использоваться программой, (сохраняется в файле или базе данных), использующие инвариантный язык. См. раздел <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Если значение будет сохранено и доступно программное обеспечение (сохраненное в файле или базе данных), используйте инвариантный язык и региональные параметры. См. раздел <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
-- Если вы не знаете назначение значения, у потребителя данных или поставщик указать язык и региональные параметры.
+- Если вы не узнаете назначение значения, укажите в качестве потребителя или поставщика данных культуру.
 
-Даже если перегруженным членом по умолчанию не подходит для ваших потребностей, лучше явно вызвать перегрузку конкретного языка и региональных параметров, чтобы ваш код самодокументируемыми и более простую обслуживаемую.
+Даже если поведение перегруженного элемента по умолчанию подходит для ваших потребностей, лучше вызвать перегрузку, зависящую от языка и региональных параметров, чтобы обеспечить самодокументирование и упростить обслуживание кода.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение этого правила, используйте перегрузку, принимающую <xref:System.IFormatProvider> аргумент. Также можно использовать [C# интерполированную строку](/dotnet/csharp/tutorials/string-interpolation) и передать его в <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> метод.
+Чтобы устранить нарушение этого правила, используйте перегрузку, которая принимает <xref:System.IFormatProvider> аргумент. Или используйте [ C# интерполяцию строки](/dotnet/csharp/tutorials/string-interpolation) и передайте <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> ее в метод.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Его можно безопасно подавить предупреждение из этого правила, когда известно, что формат по умолчанию, является правильным выбором и удобства поддержки кода не является важным разработки приоритет.
+Предупреждение от этого правила можно отключить, если известно, что используется формат по умолчанию, а поддержка кода не является важным приоритетом разработки.
 
 ## <a name="example"></a>Пример
 
-В следующем коде `example1` строки нарушает правило CA1305. `example2` Строка должна соответствовать правило CA1305 путем передачи <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, который реализует <xref:System.IFormatProvider>, <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. `example3` Строка должна соответствовать правило CA1305 путем передачи интерполированной строки в <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>.
+В следующем коде `example1` строка нарушает правило CA1305. Строка удовлетворяет правилу CA1305 путем передачи <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, которая реализует <xref:System.IFormatProvider>, в <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. `example2` Строка удовлетворяет правилу CA1305, передавая строку с интерполяцией в <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>. `example3`
 
 ```csharp
 string name = "Georgette";
@@ -81,8 +81,8 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1304: Укажите CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+- [CA1304 Укажите CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>См. также
 
-- [С помощью класса CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)
+- [Использование класса CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

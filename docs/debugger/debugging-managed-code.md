@@ -1,6 +1,6 @@
 ---
 title: Отладка управляемого кода | Документация Майкрософт
-ms.date: 11/04/2016
+ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851872"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211197"
 ---
-# <a name="debugging-managed-code"></a>Отладка управляемого кода
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Отладка управляемогоC#кода (, F#Visual Basic C++,,/CLI)
 
-В данном разделе приводится описание общих проблем отладки и способов их решения для управляемых приложений или приложений, написанных на языках, предназначенных для общеязыковой среды выполнения, например Visual Basic, C#, и C++). Описанные здесь методики — методики высшего уровня. [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md).
+В этом разделе рассматриваются распространенные проблемы и методы отладки управляемых приложений, а также приложения, написанные на языках, предназначенных для среды CLR, C#например Visual Basic C++, и/CLI.. Описанные здесь методики — методики высшего уровня. [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>В этом разделе
 
@@ -38,7 +38,7 @@ ms.locfileid: "62851872"
 [Оператор Stop в Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
 Описывает оператор `Stop`, который представляет собой альтернативу указанию точки останова. Кроме того, раздел содержит пример кода и сравнение оператора `Stop` с оператором `End`, а также оператора `Stop` с оператором `Assert`.
 
-[Пошаговое руководство: Отладка в Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)\
+[Пошаговое руководство: Отладка формы Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)\
 Пошаговые инструкции по созданию формы Windows Form и ее отладке. Форма Windows Forms - стандартный компонент приложения Windows, — один из наиболее распространенных вариантов управляемых приложений. В данном пошаговом руководстве используются языки Visual C# и Visual Basic, но методика создания форм Windows Forms с помощью C++ во многом аналогична.
 
 [Отладка метода OnStart](../debugger/how-to-debug-the-onstart-method.md)\
@@ -47,7 +47,7 @@ ms.locfileid: "62851872"
 [Отладка в смешанном режиме](../debugger/debugging-mixed-mode-applications.md)\
 Обсуждение отладки приложений в смешанном режиме. Это подразумевает любое приложение, объединяющее машинный код с управляемым кодом.
 
-[Ошибка: Отладка невозможна, поскольку в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[Ошибка: Отладка невозможна, так как в системе включен отладчик ядра](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 Описание сообщения об ошибке, которое появляется при попытке произвести отладку управляемого кода на компьютере, загруженном в режиме отладки под управлением операционной системы [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] или Windows NT.
 
 [JIT-оптимизация и отладка](../debugger/jit-optimization-and-debugging.md)\
@@ -81,7 +81,7 @@ ms.locfileid: "62851872"
 
 ## <a name="see-also"></a>См. также
 
-- [Пошаговое руководство: Отладка элементов управления пользовательского Windows Forms во время разработки](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Пошаговое руководство: Отладка пользовательских элементов управления Windows Forms во время разработки](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Безопасность отладчика](../debugger/debugger-security.md)
-- [Отладка в Visual Studio](../debugger/index.md)
+- [Отладка в Visual Studio](../debugger/index.yml)
 - [Первое знакомство с отладчиком](../debugger/debugger-feature-tour.md)

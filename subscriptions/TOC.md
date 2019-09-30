@@ -35,11 +35,13 @@
 ##### [Подписка на Office 365](vs-office365.md)
 ##### [Parasoft](vs-parasoft.md)
 ##### [Power BI Pro](vs-pbi.md)
+##### [RStudio](vs-rstudio.md)
 ##### [Центр приложений Visual Studio](vs-visual-studio-app-center.md)
 ##### [Интегрированная среда разработки Visual Studio](vs-ide-benefit.md)
 ##### [WhiteSource Bolt](vs-whitesource.md)
 ##### [Учетная запись разработчика Windows](vs-windows-dev.md)
 #### Профессиональное развитие
+##### [Журнал CODE](vs-code-magazine.md)
 ##### [DataCamp](vs-datacamp.md)
 ##### [LinkedIn Learning](vs-linkedin-learning.md)
 ##### [Подписка на журнал MSDN](vs-msdn.md)

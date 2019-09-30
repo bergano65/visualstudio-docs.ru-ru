@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a17c5bdc9e21bdf877206b1dc28596c251049455
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 12371c34c846991a0ec41f5e9d9588c5bde8e4d6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714746"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233594"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813. Избегайте незапечатанных атрибутов
 
@@ -30,36 +30,36 @@ ms.locfileid: "66714746"
 |-|-|
 |TypeName|AvoidUnsealedAttributes|
 |CheckId|CA1813|
-|Категория|Microsoft.Performance|
+|Категория|Microsoft. Performance|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-Открытый тип наследует от <xref:System.Attribute?displayProperty=fullName>, не является абстрактным и не является запечатанным (`NotInheritable` в Visual Basic).
+Открытый тип наследует от <xref:System.Attribute?displayProperty=fullName>, не является абстрактным и не запечатан (`NotInheritable` в Visual Basic).
 
 ## <a name="rule-description"></a>Описание правила
 
-.NET предоставляет методы для извлечения пользовательских атрибутов. По умолчанию эти методы осуществляют поиск иерархии наследования атрибутов. Например <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> производит поиск определенного типа атрибута или любой тип атрибута, который расширяет тип указанного атрибута. Запечатывание атрибута, поиск в иерархии наследования и может повысить производительность.
+.NET предоставляет методы для извлечения пользовательских атрибутов. По умолчанию эти методы осуществляют поиск иерархии наследования атрибутов. Например, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> ищет указанный тип атрибута или любой тип атрибута, который расширяет указанный тип атрибута. Запечатывание атрибута позволяет исключить Поиск через иерархию наследования и повысить производительность.
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Чтобы устранить нарушение данного правила, запечатайте атрибут или сделать абстрактным.
+Чтобы устранить нарушение этого правила, запечатайте тип атрибута или сделайте его абстрактным.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Его можно безопасно подавить предупреждение из этого правила. Подавляет только в том случае, если при определении иерархии атрибутов и нельзя запечатать атрибут или сделать абстрактным.
+В этом правиле можно отключить вывод предупреждений. Подавлять, только если вы определяете иерархию атрибута и не можете запечатывать атрибут или сделать его абстрактным.
 
 ## <a name="example"></a>Пример
 
-В примере показан настраиваемый атрибут, который соответствует данному правилу.
+В следующем примере показан настраиваемый атрибут, который удовлетворяет этому правилу.
 
 [!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
 [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1019: НЕОБХОДИМО Определять методы доступа для аргументов атрибутов](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
-- [CA1018: Пометьте атрибуты с помощью AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+- [CA1019 Определение методов доступа для аргументов атрибутов](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+- [CA1018 Пометка атрибутов с помощью AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>См. также
 

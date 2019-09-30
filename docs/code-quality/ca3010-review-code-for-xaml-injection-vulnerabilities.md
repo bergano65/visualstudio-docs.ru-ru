@@ -10,47 +10,47 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 965e0d800bd7c725236d96499d2bf2d441b40412
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: efd30a783f534d76f7f7f3fa18fd181dbe7e98a1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841092"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237240"
 ---
 # <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010. Проверьте код на наличие уязвимостей к внедрению кода XAML
 
 |||
 |-|-|
-|TypeName|ReviewCodeForXamlInjectionVulnerabilities|
+|TypeName|ревиевкодефорксамлинжектионвулнерабилитиес|
 |CheckId|CA3010|
 |Категория|Microsoft.Security|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 
-HTTP-запрос, потенциально небезопасных входных данных достигает <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> метод Load.
+Потенциально ненадежные входные данные запроса HTTP достигают <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> метода Load.
 
 ## <a name="rule-description"></a>Описание правила
 
-При работе с ненадежных входных данных, следует учитывать атаки путем внедрения кода XAML. XAML — это язык разметки, непосредственно представляющий создание и выполнение объекта. Это означает, что элементы, созданные в XAML можно взаимодействовать с системными ресурсами (например, сетевой доступ и файловой системы ввода-ВЫВОДА). Если злоумышленник может управлять входными данными для <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> загрузить вызова метода, а затем злоумышленник может исполнить код.
+При работе с ненадежными входными данными будьте учитывать атак путем внедрения кода XAML. XAML — это язык разметки, непосредственно представляющий создание и выполнение объекта. Это означает, что элементы, созданные в XAML, могут взаимодействовать с системными ресурсами (например, сетевым доступом и операциями ввода-вывода файловой системы). Если злоумышленник может управлять входными данными для <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> вызова метода Load, злоумышленник может выполнить код.
 
-Это правило пытается найти входные данные из HTTP-запросов, который достигает <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> метод Load.
-
-> [!NOTE]
-> Это правило не может отслеживать данные между сборками. Например если одна сборка считывает входные данные запроса HTTP, а затем передает его в другую сборку, которая загружает XAML, это правило не будет выдавать предупреждение.
+Это правило пытается найти входные данные из HTTP-запросов <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> , которые достигают метода Load.
 
 > [!NOTE]
-> Нет настраиваемое ограничение на глубину это правило будет анализировать поток данных между вызовами метода. См. в разделе [Analyzer Configuration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) по настройке ограничение в файле EditorConfig.
+> Это правило не может отслеживанию данных между сборками. Например, если одна сборка считывает входные данные HTTP-запроса и передает их другой сборке, которая загружает XAML, это правило не выдает предупреждение.
+
+> [!NOTE]
+> Существует настраиваемое ограничение на то, насколько глубоким это правило будет анализировать поток данных между вызовами методов. Сведения о настройке ограничения в файле EditorConfig см. в статье [Конфигурация анализатора](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Устранение нарушений
 
-Не загружать недоверенных XAML.
+Не загружайте недоверенный код XAML.
 
-## <a name="when-to-suppress-warnings"></a>Отключение предупреждений
+## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Не отключить предупреждения из этого правила.
+Не подавлять предупреждения из этого правила.
 
-## <a name="pseudo-code-examples"></a>Примеры псевдокода
+## <a name="pseudo-code-examples"></a>Примеры псевдо-кода
 
 ### <a name="violation"></a>Нарушение
 

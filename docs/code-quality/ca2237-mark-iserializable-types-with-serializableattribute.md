@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a047ec190652e3559e8bf83fe14834ed95d8a69
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 53d049cad426201a8aaa48662061a4a424116b26
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920116"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237931"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237. Пометьте типы ISerializable атрибутом SerializableAttribute
 
@@ -33,7 +33,7 @@ ms.locfileid: "68920116"
 |Категория|Microsoft. Usage|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Тип, видимый извне, реализует <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> интерфейс, а тип не помечен <xref:System.SerializableAttribute?displayProperty=fullName> атрибутом. Правило игнорирует производные типы, базовый тип которых не является сериализуемым.
 
 ## <a name="rule-description"></a>Описание правила

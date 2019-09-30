@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce2da2c1ff5b2f74d8b4d6341050c1895b68955a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e352eea1b7fcf82cb948315affeae6e30690a4aa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922297"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234976"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307. Указывайте StringComparison
 
@@ -30,7 +30,7 @@ ms.locfileid: "68922297"
 |Категория|Microsoft. Globalization|
 |Критическое изменение|Не критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Операция сравнения строк использует перегрузку метода, которая не задает <xref:System.StringComparison> параметр.
 
 ## <a name="rule-description"></a>Описание правила

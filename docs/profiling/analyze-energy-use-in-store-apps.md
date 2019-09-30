@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: e16261020a737651fc79c3fb3eb1da6a539cee34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1259f92b89fc6d83bb0b7296cc07844bf25df705
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777262"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128320"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Анализ энергопотребления в приложениях универсальной платформы Windows
 
@@ -157,5 +157,5 @@ if (performance && performance.mark) {
 
 ## <a name="see-also"></a>См. также
 
-- [Профилирование в Visual Studio](../profiling/index.md)
+- [Профилирование в Visual Studio](../profiling/index.yml)
 - [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

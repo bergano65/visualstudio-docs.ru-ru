@@ -1,5 +1,5 @@
 ---
-title: С помощью Microsoft Monitoring Agent | Документация Майкрософт
+title: Использование Microsoft Monitoring Agent | Документация Майкрософт
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fb7f14b4906d2342c4b190fa00f0da559ecde8c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0e4aaf70925ee0561729cb73d84586c10c07b258
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679140"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252542"
 ---
-# <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>С помощью Microsoft Monitoring Agent (C#, Visual Basic)
+# <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Использование Microsoft Monitoring Agent (C#, Visual Basic)
 
 Вы можете локально проверять размещенные в IIS веб-приложения ASP.NET и приложения SharePoint 2010 и 2013 на наличие ошибок, проблем производительности и других неполадок с помощью агента **Microsoft Monitoring Agent** События диагностики, созданные агентом, можно сохранять в файле журнала IntelliTrace (ITRACE). Открыв журнал в Visual Studio Enterprise (но не в выпуске Professional или Community), можно выполнить отладку с помощью любых диагностических средств Visual Studio. Для сбора диагностических данных IntelliTrace и данных метода можно запустить агент в режиме **трассировки** . Microsoft Monitoring Agent можно интегрировать с [Application Insights](/azure/application-insights/) и [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). После установки агент Microsoft Monitoring Agent изменяет среду в целевой системе.
 
 > [!NOTE]
-> Можно также собирать диагностические данные и данные метода IntelliTrace для веб-приложений, приложений Sharepoint, WPF и Windows Form на удаленных компьютерах без изменения целевой среды с помощью **автономного сборщика IntelliTrace**. Автономный сборщик в меньшей степени влияет на уровень производительности, чем Microsoft Monitoring Agent в режиме **монитора** . См. в разделе [использование автономного сборщика данных IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
+> Можно также собирать диагностические данные и данные метода IntelliTrace для веб-приложений, приложений Sharepoint, WPF и Windows Form на удаленных компьютерах без изменения целевой среды с помощью **автономного сборщика IntelliTrace**. Автономный сборщик в меньшей степени влияет на уровень производительности, чем Microsoft Monitoring Agent в режиме **монитора** . См. раздел [Использование автономного сборщика IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
  Если вы пользуетесь пакетом System Center 2012, то, применяя агент Microsoft Monitoring Agent совместно с Operations Manager, вы можете получать оповещения о проблемах и создавать рабочие элементы Team Foundation Server со ссылками на сохраненные журналы IntelliTrace. Затем можно делегировать отладку рабочих элементов другим разработчикам. См. раздел [Интеграция Operations Manager с процессом разработки](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) и [Отслеживание с помощью Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12)).
 
@@ -30,7 +30,7 @@ ms.locfileid: "65679140"
 
 2. [Шаг 2. Запустите отслеживание приложения](#MonitorEvents)
 
-3. [Шаг 3. Сохраните записанные события](#SaveEvents)
+3. [Шаг 3. Сохранить записанные события](#SaveEvents)
 
 ## <a name="SetUpMonitoring"></a> Шаг 1. Настройте Microsoft Monitoring Agent.
 
@@ -77,7 +77,7 @@ ms.locfileid: "65679140"
 3. Актуальные статьи справки вы найдете на[веб-сайте TechNet](https://technet.microsoft.com/systemcenter/default) .
 
 #### <a name="FullPermissionsITLog"></a> Вопрос. Инструкции по настройке разрешений для пула приложений
- **Ответ.** Это можно сделать с помощью команды **icacls** в Windows или проводника Windows. Пример:
+ **Ответ.** Это можно сделать с помощью команды **icacls** в Windows или проводника Windows. Например:
 
 - Чтобы настроить разрешения с помощью команды **icacls** в Windows:
 
@@ -89,7 +89,7 @@ ms.locfileid: "65679140"
 
      `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-    -или-
+    \- или -
 
 - Чтобы настроить разрешения с помощью проводника Windows:
 
@@ -112,13 +112,13 @@ ms.locfileid: "65679140"
 
 1. На веб-сервере откройте окно командной строки **Windows PowerShell** или **Windows PowerShell ISE** с правами администратора.
 
-     ![Откройте Windows PowerShell от имени администратора](../debugger/media/ffr_powershellrunadmin.png "FFR_PowerShellRunAdmin")
+     ![Открыть Windows PowerShell от имени администратора](../debugger/media/ffr_powershellrunadmin.png "FFR_PowerShellRunAdmin")
 
 2. Выполните команду [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) , чтобы начать наблюдение за приложением. При этом все приложения на веб-сервере будут перезапущены.
 
      Вы можете использовать следующий короткий синтаксис:
 
-     **Start-WebApplicationMonitoring** *"\<имя_приложения >»*  *\<monitoringMode >* *"\<outputPath >»*  *\<UInt32 >* *"\<collectionPlanPathAndFileName >»*
+     **Start-WebApplicationMonitoring** *"\<AppName >"*  *\<мониторингмоде >* *"\<outputPath >"*  *\<UInt32 >* *"\<коллектионпланпасандфиленаме >"*
 
      В следующем примере используется только имя веб-приложения и упрощенный режим **Monitor** :
 
@@ -130,15 +130,15 @@ ms.locfileid: "65679140"
 
      Возможно, когда вы приступите к отслеживанию и приложения будут перезапускаться, работа Microsoft Monitoring Agent приостановится.
 
-     ![Запуск наблюдения за с подтверждением MMA](../debugger/media/ffr_powershellstartmonitoringconfirmation.png "FFR_PowerShellStartMonitoringConfirmation")
+     ![Запуск мониторинга с помощью подтверждения MMA](../debugger/media/ffr_powershellstartmonitoringconfirmation.png "FFR_PowerShellStartMonitoringConfirmation")
 
     |||
     |-|-|
-    |*"\<имя_приложения >»*|Укажите путь к имени веб-сайта и веб-приложения в IIS. При желании можно также указать путь IIS.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> -или-<br /><br /> **«IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Его можно посмотреть в диспетчере IIS. Пример:<br /><br /> ![Путь к веб-сайт IIS и веб-приложение](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Можно также использовать команды [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) и [Get-WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|
-    |*\<monitoringMode >*|Выберите режим отслеживания.<br /><br /> <ul><li>**Монитор**: запись минимальных сведений о событиях исключения и производительности. В этом режиме используется план сбора данных по умолчанию.</li><li>**Трассировка**: запись сведений на уровне функций и отслеживание приложений SharePoint 2010 и приложений SharePoint 2013 с использованием указанного плана сбора данных. При выборе этого режима работа приложения может замедляться.<br /><br /> <ul><li>[Вопрос. Как настроить разрешения для пула приложений?](#FullPermissionsITLog)</li><li>[Вопрос. Как получить подробные данные, не замедляя работу приложения?](#Minimizing)</li></ul><br />     В этом примере записываются события приложения SharePoint, размещенного на сайте SharePoint.<br /><br />     **Start-WebApplicationMonitoring «FabrikamSharePointSite\FabrikamSharePointApp» трассировка «C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml» «C:\IntelliTraceLogs»**</li><li>**Пользовательский**: запись пользовательских сведений с помощью заданного пользовательского плана сбора данных. Если после запуска отслеживания изменить план сбора данных, отслеживание необходимо перезапустить.</li></ul>|
-    |*"\<outputPath >»*|Укажите полный путь к каталогу для сохранения журналов IntelliTrace. Каталог необходимо создать перед началом отслеживания.|
+    |*"\<AppName >"*|Укажите путь к имени веб-сайта и веб-приложения в IIS. При желании можно также указать путь IIS.<br /><br /> *"\<Иисвебситенаме >\\< иисвебаппнаме\>"*<br /><br /> \- или -<br /><br /> **"IIS: \ сайты** *<иисвебситенаме\><иисвебаппнаме\>" \\\\*<br /><br /> Его можно посмотреть в диспетчере IIS. Например:<br /><br /> ![Путь к веб-сайту IIS и веб-приложению](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Можно также использовать команды [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) и [Get-WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|
+    |*\<Мониторингмоде >*|Выберите режим отслеживания.<br /><br /> <ul><li>**Монитор**: запись минимальных сведений о событиях исключения и производительности. В этом режиме используется план сбора данных по умолчанию.</li><li>**Трассировка**: запись сведений на уровне функций и отслеживание приложений SharePoint 2010 и приложений SharePoint 2013 с использованием указанного плана сбора данных. При выборе этого режима работа приложения может замедляться.<br /><br /> <ul><li>[Вопрос. Как настроить разрешения для пула приложений?](#FullPermissionsITLog)</li><li>[Вопрос. Как получить подробные данные, не замедляя работу приложения?](#Minimizing)</li></ul><br />     В этом примере записываются события приложения SharePoint, размещенного на сайте SharePoint.<br /><br />     **Start-WebApplicationMonitoring "Фабрикамшарепоинтсите\фабрикамшарепоинтапп" Трассировка "C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "К:\интеллитрацелогс"**</li><li>**Пользовательский**: запись пользовательских сведений с помощью заданного пользовательского плана сбора данных. Если после запуска отслеживания изменить план сбора данных, отслеживание необходимо перезапустить.</li></ul>|
+    |*"\<outputPath >"*|Укажите полный путь к каталогу для сохранения журналов IntelliTrace. Каталог необходимо создать перед началом отслеживания.|
     |*\<UInt32>*|Укажите максимальный размер журнала IntelliTrace. По умолчанию максимальный размер журнала IntelliTrace — 250 МБ.<br /><br /> Если размер журнала превосходит это ограничение, агент записывает новые записи вместо наиболее старых. Это ограничение можно изменить с помощью параметра **-MaximumFileSizeInMegabytes** или атрибута `MaximumLogFileSize` в плане сбора данных.|
-    |*"\<collectionPlanPathAndFileName >»*|Укажите полный или относительный путь и имя файла плана сбора данных. План представляет собой XML-файл, определяющий параметры агента.<br /><br /> Следующие планы поставляются вместе с агентом и поддерживаются веб-приложениями и приложениями SharePoint.<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Собирает только события, например исключения, события производительности, вызовы базы данных и запросы веб-сервера.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Собирает вызовы на уровне функций, а также все данные, указанные в плане сбора по умолчанию. Этот план позволяет выполнить подробный анализ, но может замедлять работу приложения.<br /><br /> Локализованные версии этих планов находятся во вложенных папках агента. Чтобы предотвратить замедление работы приложения, [настройте имеющиеся планы или создайте собственные](http://go.microsoft.com/fwlink/?LinkId=227871) . Помещайте все пользовательские планы в то же защищенное расположение, где находится агент.<br /><br /> [Вопрос. Как получить подробные данные, не замедляя работу приложения?](#Minimizing)|
+    |*"\<коллектионпланпасандфиленаме >"*|Укажите полный или относительный путь и имя файла плана сбора данных. План представляет собой XML-файл, определяющий параметры агента.<br /><br /> Следующие планы поставляются вместе с агентом и поддерживаются веб-приложениями и приложениями SharePoint.<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Собирает только события, например исключения, события производительности, вызовы базы данных и запросы веб-сервера.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Собирает вызовы на уровне функций, а также все данные, указанные в плане сбора по умолчанию. Этот план позволяет выполнить подробный анализ, но может замедлять работу приложения.<br /><br /> Локализованные версии этих планов находятся во вложенных папках агента. Чтобы предотвратить замедление работы приложения, [настройте имеющиеся планы или создайте собственные](http://go.microsoft.com/fwlink/?LinkId=227871) . Помещайте все пользовательские планы в то же защищенное расположение, где находится агент.<br /><br /> [Вопрос. Как получить подробные данные, не замедляя работу приложения?](#Minimizing)|
 
      Чтобы просмотреть дополнительные сведения о полном синтаксисе и другие примеры, выполните команду **get-help Start-WebApplicationMonitoring -detailed** или **get-help Start-WebApplicationMonitoring -examples**.
 
@@ -151,7 +151,7 @@ ms.locfileid: "65679140"
 
 - Работая с веб-приложениями и приложениями SharePoint, агент записывает данные для каждого приложения из указанного пула. Поэтому, даже если ограничить сбор данных модулями одного приложения, работа других приложений из этого пула может замедляться. Этого можно избежать, если размещать каждое приложение в отдельном пуле.
 
-- Просмотрите в плане сбора события, о которых агент собирает данные. Отключите нерелевантные и не представляющие интереса события. Возможно, это позволит увеличить быстродействие при запуске и выполнении.
+- Просмотрите в плане сбора события, о которых агент собирает данные. Отключите нерелевантные и не представляющие интереса события. Это может повысить производительность при запуске и производительность во время выполнения.
 
    Чтобы отключить событие, задайте атрибуту `enabled` элемента `<DiagnosticEventSpecification>` значение `false`.
 
@@ -159,7 +159,7 @@ ms.locfileid: "65679140"
 
    Если атрибут `enabled` не существует, значит событие включено.
 
-   Пример:
+   Например:
 
   - Отключите события рабочего процесса Windows для приложений, которые его не используют.
 
@@ -206,11 +206,11 @@ ms.locfileid: "65679140"
 
   ```
 
-   **Вопрос. Почему нельзя просто исключить модули?**
+   **Вопрос. Почему не следует просто исключать модули?**
 
    **Ответ.** По умолчанию для исключения модулей из планов сбора данных атрибуту `isExclusionList` требуется задать значение `true`. Однако это не предотвращает сбор данных из модулей, которые не соответствуют критериям списка или не интересуют вас, например из модулей сторонних производителей или модулей с открытым исходным кодом.
 
-#### <a name="q-what-values-does-the-agent-collect"></a>Вопрос: Какие значения собирает агент?
+#### <a name="q-what-values-does-the-agent-collect"></a>Вопрос: Какие значения собираются агентом?
 
 **Ответ.** Чтобы избежать снижения производительности, агент собирает только следующие значения:
 
@@ -224,11 +224,11 @@ ms.locfileid: "65679140"
 
 Тип `Employee` имеет следующие атрибуты: `Id`, `Name`и `HomeAddress`. Между типом `Employee` и типом `Address` существует отношение ассоциации.
 
-![Связь между Employee и Address](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+![Отношение между сотрудником и адресом](../debugger/media/employeeaddressrelationship.png "Емплойиаддрессрелатионшип")
 
 Агент записывает значения `id`, `Employee.Id`, `Employee.Name` и объекта `Employee` , возвращаемого из метода `AlterEmployee` . Однако он не записывает какую-либо информацию об объекте `Address` , а просто указывает, имеет ли он значение NULL или нет. Также агент не записывает данные о локальных переменных в методе `AlterEmployee` , за исключением случаев, когда эти локальные переменные используются в качестве параметров других методов. Тогда они записываются как параметры метода.
 
-## <a name="SaveEvents"></a> Шаг 3. Сохраните записанные события
+## <a name="SaveEvents"></a>Шаг 3. Сохранить записанные события
  Если вы обнаружите ошибку или проблему производительности, сохраните записанные события в журнал IntelliTrace. Агент создает журнал, только если события записывались. Если вы пользуетесь System Center 2012, см. раздел [Отслеживание веб-приложений с помощью Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).
 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Как сохранить записанные события и продолжить отслеживание
@@ -238,17 +238,17 @@ ms.locfileid: "65679140"
 
 2. Выполните команду [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) , чтобы сохранить снимок журнала IntelliTrace:
 
-    **CHECKPOINT-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*
+    **Контрольная точка — WebApplicationMonitoring** *"\<Иисвебситенаме>\\< иисвебаппнаме\>"*
 
     \- или -
 
-    **CHECKPOINT-WebApplicationMonitoring «IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*
+    **Checkpoint-WebApplicationMonitoring "IIS: \ сайты** *<иисвебситенаме\><иисвебаппнаме\>" \\\\*
 
-    Пример:
+    Например:
 
     **PS C:\\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**
 
-    -или-
+    \- или -
 
     **PS C:>Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**
 
@@ -259,7 +259,7 @@ ms.locfileid: "65679140"
    > [!IMPORTANT]
    > Соблюдайте меры предосторожности, предоставляя общий доступ к журналам IntelliTrace, поскольку они могут содержать личные и конфиденциальные данные. Убедитесь, что доступ к журналам имеют только те пользователи, у которых есть разрешение на просмотр этих данных. Уточните политику конфиденциальности своей компании.
 
-   **Далее:** [Диагностика записанных событий в Visual Studio Enterprise, выполните следующие действия.](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
+   **Далее:** [Диагностика записанных событий в Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
 
 ### <a name="save-recorded-events-and-stop-monitoring"></a>Как сохранить записанные события и остановить отслеживание
  Выполните следующие шаги, если требуется просто получить диагностические сведения при воспроизведении определенной ошибки. При этом все приложения на веб-сервере будут перезапущены.
@@ -268,19 +268,19 @@ ms.locfileid: "65679140"
 
 2. Выполните команду [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) , чтобы создать журнал IntelliTrace и остановить отслеживание определенного веб-приложения:
 
-    **STOP-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*
+    **WebApplicationMonitoring** *"\<Иисвебситенаме>\\< иисвебаппнаме\>"*
 
     \- или -
 
-    **STOP-WebApplicationMonitoring «IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*
+    **Останавливает-WebApplicationMonitoring "IIS: \ сайты** *<иисвебситенаме\><иисвебаппнаме\>" \\\\*
 
     Выполните следующую команду, если требуется завершить отслеживание всех веб-приложений:
 
-    **STOP-WebApplicationMonitoring - все**
+    **WebApplicationMonitoring-ALL**
 
-    Пример:
+    Например:
 
-    **PS C:\\> Stop-WebApplicationMonitoring «Fabrikam\iFabrikamFiber.Web»**
+    **PS C:\\>-WebApplicationMonitoring "фабрикам\ифабрикамфибер.веб"**
 
     \- или -
 
@@ -290,7 +290,7 @@ ms.locfileid: "65679140"
 
 3. Скопируйте журнал в защищенную общую папку, а затем откройте журнал на компьютере, где установлена программа Visual Studio Enterprise.
 
-   **Далее:** [Диагностика записанных событий в Visual Studio Enterprise, выполните следующие действия.](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
+   **Далее:** [Диагностика записанных событий в Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
 
 ## <a name="q--a"></a>Вопросы и ответы
 

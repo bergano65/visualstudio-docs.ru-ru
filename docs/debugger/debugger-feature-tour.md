@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c37466ea3f37bca80933cdc069d40f84099790
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679764"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987790"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Знакомство с отладчиком Visual Studio
 
@@ -115,6 +115,16 @@ ms.locfileid: "65679764"
 Кнопка **Перезапустить** позволяет сэкономить время, затрачиваемое на остановку приложения и перезапуск отладчика. Отладчик приостанавливается в первой точке останова, достигнутой при выполнении кода.
 
 Если вы хотите остановить отладчик и вернуться в редактор кода, можно нажать красную кнопку останова ![Остановить отладку](../debugger/media/dbg-tour-stop-debugging.png "Остановить отладку") вместо кнопки **Перезапустить**.
+
+## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Изменение кода и продолжение отладки (C#, VB, C++, XAML)
+
+В большинстве языков, поддерживаемых Visual Studio, можно изменять код во время сеанса отладки, а затем продолжать отладку. Для использования этой функции щелкните код, чтобы установить в нем курсор, когда отладчик приостановлен, внесите изменения и нажмите клавишу **F5**, **F10** или **F11**, чтобы продолжить отладку.
+
+![Режим отладки "Изменить и продолжить"](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+
+Дополнительные сведения об этой функции и ее ограничениях см. в статье [Изменить и продолжить](../debugger/edit-and-continue.md).
+
+Сведения об изменении кода XAML во время сеанса отладки см. в статье [Создание и отладка выполняющегося кода XAML с помощью горячей перезагрузки XAML](xaml-hot-reload.md).
 
 ## <a name="inspect-variables-with-data-tips"></a>Проверка переменных с помощью подсказок по данным
 

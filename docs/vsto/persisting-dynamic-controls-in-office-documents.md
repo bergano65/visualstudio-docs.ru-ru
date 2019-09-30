@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8fd44d535cd8a9920ebc3de37d0c483a19dac8f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976589"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256008"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Сохранение динамических элементов управления в документах Office
 
 Элементы управления, добавленные во время выполнения, не сохраняются при сохранении и закрытии документа или книги. Точное поведение элементов управления ведущего приложения и Windows Forms различается. В обоих случаях можно добавить в решение код для повторного создания элементов управления при повторном открытии документа.
 
-Элементы управления, добавляемые в документы во время выполнения, называются *динамическими элементами управления*. Дополнительные сведения о динамических элементах управления см. в разделе [добавить элементы управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
+Элементы управления, добавляемые в документы во время выполнения, называются *динамическими элементами управления*. Дополнительные сведения о динамических элементах управления см. [в разделе Добавление элементов управления в документы Office во время выполнения](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -47,11 +47,11 @@ ms.locfileid: "62976589"
 |<xref:Microsoft.Office.Tools.Word.Bookmark>|<xref:Microsoft.Office.Interop.Word.Bookmark>|
 |<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DropDownListContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.GroupContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PictureContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|<xref:Microsoft.Office.Interop.Word.ContentControl>|
 
-### <a name="re-create-dynamic-host-controls-when-documents-are-opened"></a>Повторно создать динамические элементы управления при открытии документов
+### <a name="re-create-dynamic-host-controls-when-documents-are-opened"></a>Повторное создание динамических элементов управления ведущего приложения при открытии документов
 
 Динамические элементы управления ведущего приложения можно повторно создавать вместо существующих собственных элементов управления при каждом открытии документа пользователем. Создание элементов управления ведущего приложения при открытии документа имитирует поведение, на которое могут рассчитывать пользователи.
 
-Для повторного создания элемента управления ведущего приложения для Word, или <xref:Microsoft.Office.Tools.Excel.NamedRange> или <xref:Microsoft.Office.Tools.Excel.ListObject> управления ведущего приложения для Excel, используйте `Add` \< *класс элемента управления*> метод <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> или <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> объекта. Используйте метод, имеющий параметр для собственного объекта Office.
+Чтобы повторно создать элемент управления ведущего приложения для Word, <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Tools.Excel.ListObject> или элемент управления ведущего `Add`приложения \<для Excel, используйте *класс элемента управления*> метод <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> объекта или <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> . Используйте метод, имеющий параметр для собственного объекта Office.
 
 Например, если вы хотите создать элемент управления ведущего приложения <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> из существующего собственного <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> при открытии документа, используйте метод <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> и передайте существующий <xref:Microsoft.Office.Interop.Excel.ListObject>. В следующем примере кода показано, как сделать это в проекте уровня документа для Excel. Код повторно создает динамический <xref:Microsoft.Office.Tools.Excel.ListObject> , основанный на существующем <xref:Microsoft.Office.Interop.Excel.ListObject> с именем `MyListObject` в классе `Sheet1` .
 
@@ -60,29 +60,29 @@ ms.locfileid: "62976589"
 
 ### <a name="re-create-chart"></a>Повторное создание диаграммы
 
-Для повторного создания <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> размещения элемента управления, необходимо сначала удалить собственный <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>, а затем повторно создать <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> с помощью <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> метод. Существует не `Add` \< *класс элемента управления*> метод, который позволяет создавать новый <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> на основе существующего <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>.
+Чтобы повторно создать <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> элемент управления ведущего приложения, сначала необходимо удалить машинный код <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>, а <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> затем повторно <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> создать с помощью метода. <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>Отсутствует класс элемента управления > метод, который позволяет создать новый на основе существующего. `Add` \<
 
-Если вы сначала не удалить собственный <xref:Microsoft.Office.Interop.Excel.Chart>, а затем создается вторая диаграмма-дубликат при повторном создании <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName>.
+Если не удалить собственный <xref:Microsoft.Office.Interop.Excel.Chart>объект, то при повторном <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName>создании диаграммы будет создана вторая Повторяющаяся диаграмма.
 
-## <a name="persist-windows-forms-controls-in-documents"></a>Сохранение элементов управления Windows Forms в документах
+## <a name="persist-windows-forms-controls-in-documents"></a>Сохранение Windows Forms элементов управления в документах
 
 Если сохранить и закрыть документ, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] автоматически удалит все динамически созданные элементы управления Windows Forms из документа. При этом на уровне проектов уровня документа и надстроек VSTO поведение отличается.
 
 В настройках уровня документа элементы управления и их базовые оболочки ActiveX (которые используются для размещения элементов управления в документе) удаляются при следующем открытии документа. Признаков присутствия элементов управления не остается.
 
-В надстройках VSTO элементы управления удаляются, но оболочки ActiveX остаются в документе. Когда пользователь откроет документ в следующий раз, оболочки ActiveX останутся видны. В Excel оболочки ActiveX содержат изображения элементов управления в том виде, как они выглядели в момент последнего сохранения документа. В Word оболочки ActiveX невидимы, пока пользователь не щелкнет их. После этого в них отображается пунктирная линия, представляющая границы элементов управления. Существует несколько способов удаления оболочек ActiveX. Дополнительные сведения см. в разделе [удаление оболочек ActiveX в надстройке](#removingActiveX).
+В надстройках VSTO элементы управления удаляются, но оболочки ActiveX остаются в документе. Когда пользователь откроет документ в следующий раз, оболочки ActiveX останутся видны. В Excel оболочки ActiveX содержат изображения элементов управления в том виде, как они выглядели в момент последнего сохранения документа. В Word оболочки ActiveX невидимы, пока пользователь не щелкнет их. После этого в них отображается пунктирная линия, представляющая границы элементов управления. Существует несколько способов удаления оболочек ActiveX. Дополнительные сведения см. [в разделе Удаление оболочек ActiveX в надстройке](#removingActiveX).
 
-### <a name="re-create-windows-forms-controls-when-documents-are-opened"></a>Повторно создать элементы управления Windows Forms при открытии документов
+### <a name="re-create-windows-forms-controls-when-documents-are-opened"></a>Повторное создание Windows Forms элементов управления при открытии документов
 
 Удаленные элементы управления Windows Forms можно повторно создать при повторном открытии документа. Для этого в решении следует выполнять следующие задачи.
 
-1. Сохранять информацию о размере, расположении и состоянии элементов управления при сохранении или закрытии документа. В настройке уровня документа можно сохранить данные в кэш данных в документе. В надстройке VSTO можно сохранить данные пользовательской XML-части в документе.
+1. Сохранять информацию о размере, расположении и состоянии элементов управления при сохранении или закрытии документа. В настройке на уровне документа данные можно сохранить в кэше данных в документе. В надстройке VSTO данные можно сохранить в пользовательской XML-части документа.
 
 2. Повторно создавать элементы управления в событии, которое возникает при открытии документа. В проекте уровня документа это можно сделать в обработчиках `Sheet`*n*`_Startup` или `ThisDocument_Startup` . В проекте надстройки VSTO это можно сделать в обработчиках событий <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> или <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
 
-### <a name="removingActiveX"></a> Удаление оболочек ActiveX в надстройке
+### <a name="removingActiveX"></a>Удаление оболочек ActiveX в надстройке
 
-При добавлении динамических элементов управления Windows Forms в документы с помощью надстройки VSTO, оболочки ActiveX для элементов управления можно не появлялись в документе при следующем открытии одним из следующих способов.
+При добавлении в документы динамических Windows Forms элементов управления с помощью надстройки VSTO можно запретить отображение оболочек ActiveX для элементов управления в документе при следующем его открытии следующим образом.
 
 #### <a name="remove-activex-wrappers-when-the-document-is-opened"></a>Удаление оболочек ActiveX при открытии документа
 
@@ -95,11 +95,11 @@ ms.locfileid: "62976589"
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
-Несмотря на то что `GetVstoObject` метод используется в основном для создания нового ведущего элемента во время выполнения, этот метод также очищает все оболочки ActiveX из документа при первом вызове для определенного документа. Дополнительные сведения об использовании `GetVstoObject` метод, см. в разделе [документов расширения Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+Хотя метод `GetVstoObject` в основном используется для создания нового ведущего элемента во время выполнения, этот метод также удаляет все оболочки ActiveX из документа при первом вызове для определенного документа. Дополнительные сведения об использовании `GetVstoObject` метода см. в разделе [Расширение документов Word и книг Excel в надстройках VSTO во время выполнения](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
-Если Ваша надстройка VSTO создает динамические элементы управления при открытии документа, Ваша надстройка VSTO вызовет `GetVstoObject` метод как часть процесса создания элементов управления. В этом случае не нужно добавлять отдельный вызов метода `GetVstoObject`, чтобы удалить все оболочки ActiveX.
+Если надстройка VSTO создает динамические элементы управления при открытии документа, Надстройка VSTO уже вызовет `GetVstoObject` метод как часть процесса создания элементов управления. В этом случае не нужно добавлять отдельный вызов метода `GetVstoObject`, чтобы удалить все оболочки ActiveX.
 
-#### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>Удаление динамических элементов управления перед закрытием документа
+#### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>Удалить динамические элементы управления перед закрытием документа
 
 Надстройка VSTO может явным образом удалить все динамические элементы управления из документа до его закрытия. Эта процедура полезна для документов, передаваемых другим пользователям, у которых не установлена надстройка VSTO.
 

@@ -1,5 +1,5 @@
 - name: Документация по профилированию
-  href: index.md
+  href: index.yml
 - name: Обзор
   href: profiling-overview.md
 - name: Краткие руководства

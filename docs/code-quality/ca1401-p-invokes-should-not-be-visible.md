@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e26daf68e0031358605427b310bb7284d43baf1b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d4a0a1c001407d947988497c422fdb8e88dd7c83
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922139"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234899"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401. Методы P/Invoke не должны быть видимыми
 
@@ -33,7 +33,7 @@ ms.locfileid: "68922139"
 |Категория|Microsoft. взаимодействие|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Открытый или защищенный метод в открытом типе имеет <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> атрибут (также реализуется `Declare` с помощью ключевого слова [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]в).
 
 ## <a name="rule-description"></a>Описание правила

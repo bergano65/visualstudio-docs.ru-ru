@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f24881d04599677c5d45c93fc940286f115d593
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 97ee4e11ceb3380c204d00203b9e81397a39e362
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922511"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235465"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059. Члены не должны предоставлять определенные конкретные типы
 
@@ -30,7 +30,7 @@ ms.locfileid: "68922511"
 |Категория|Microsoft. Design|
 |Критическое изменение|Критическое|
 
-## <a name="cause"></a>Причина
+## <a name="cause"></a>Причина:
 Внешний видимый член является определенным конкретным типом или предоставляет определенные конкретные типы через один из его параметров или возвращаемое значение. В настоящее время это правило сообщает о раскрытии следующих конкретных типов:
 
 - Тип, производный <xref:System.Xml.XmlNode?displayProperty=fullName>от.
