@@ -1,5 +1,8 @@
 # [Visual Studio для Mac](index.yml)
-# [Обзор интегрированной среды разработки](ide-tour.md)
+
+# Начало работы
+## [Обзор интегрированной среды разработки](ide-tour.md)
+## [Visual Studio для Mac для пользователей Windows](vsmac-for-windows-users.md)
 
 # Установка
 ## [Установка Visual Studio 2019 для Mac](installation.md)
@@ -94,11 +97,15 @@
 ### [Журнал изменений (набор средств Visual Studio для Unity)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 ## [Использование мобильных приложений и Xamarin](/visualstudio/mac/xamarin)
 
-# [Специальные возможности](accessibility.md)
+# Специальные возможности
+## [Обзор](accessibility.md)
 ## [Настройка специальных возможностей в интегрированной среде разработки](accessibility-ide-options.md)
-## [Использование специальных возможностей macOS](accessibility-macos.md)
-### [Использование навигации с помощью клавиатуры](accessibility-keyboard.md)
+## Специальные возможности macOS
+### [Использование специальных возможностей macOS](accessibility-macos.md)
+### [Навигация с помощью клавиатуры](accessibility-keyboard.md)
 ### [Использование VoiceOver](accessibility-voiceover.md)
+
+# [Visual Studio для Mac для пользователей Windows](vsmac-for-windows-users.md)
 
 # Устранение неполадок
 ## [Журналы и исключения](troubleshooting.md)
