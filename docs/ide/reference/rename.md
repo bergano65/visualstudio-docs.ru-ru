@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b18f5763d68487e7642f5632c05516d2f1bd9e2
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500941"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186600"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Рефакторинг для переименования символов кода
 
@@ -70,6 +70,10 @@ ms.locfileid: "66500941"
 
 ## <a name="remarks"></a>Примечания
 
+- Начиная с Visual Studio 2019 версии 16.3, при переименовании типа, совпадающего с именем файла, в котором он находится, появляется флажок, позволяющий одновременно переименовать файл. Он появляется при переименовании класса, интерфейса или перечисления. Этот параметр не поддерживается для разделяемых типов с несколькими определениями.
+
+   ![Анимация, демонстрирующая переименование вместе с файлом, — C#](media/rename-with-file-animated-cs.gif)
+   
 - Если вы использовали уже существующее имя и это привело к конфликту, в диалоговом окне **Переименование** отобразится предупреждение.
 
    ![Конфликт переименования](media/rename-conflict-cs.png)

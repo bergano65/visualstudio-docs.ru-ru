@@ -1,5 +1,5 @@
 ---
-title: Анализ данных по использованию ЦП (управляемый код)
+title: Анализ данных по загрузке ЦП (C#, Visual Basic)
 description: Измерение производительности приложения в C# и Visual Basic с помощью средства диагностики "Загрузка ЦП"
 ms.custom: mvc
 ms.date: 08/06/2018
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05dbbf5bc6e13b36e5918a880d0a767968a78f30
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7d13a97c3fb228cb72040313c98b70e14fc44099
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703857"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128200"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Краткое руководство. Анализ данных по использованию ЦП в Visual Studio (управляемый код)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Краткое руководство. Анализ данных по загрузке ЦП в Visual Studio (C#, Visual Basic)
 
 Visual Studio предоставляет множество эффективных возможностей для анализа проблем с производительностью приложения. В этой статье вы ознакомитесь с некоторыми основными возможностями. Мы рассмотрим средство, позволяющее выявлять узкие места производительности, возникающие из-за высокой загрузки ЦП. Средства диагностики поддерживаются для разработки приложений .NET в Visual Studio, включая ASP.NET, и для разработки машинного кода или кода C++.
 
@@ -31,7 +31,7 @@ Visual Studio предоставляет множество эффективны
 
 1. В Visual Studio последовательно выберите **Файл** > **Создать проект**.
 
-2. В разделе **Visual C#** или **Visual Basic** выберите **Рабочий стол Windows**, а затем в средней области выберите **Консольное приложение (.NET Framework)**.
+2. В разделе **Visual C#** или **Visual Basic** выберите **Рабочий стол Windows**, а затем в средней области выберите **Консольное приложение (.NET Framework)** .
 
     Если шаблон проекта **Консольное приложение** отсутствует, выберите ссылку **Открыть Visual Studio Installer** в левой области диалогового окна **Создать проект**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **Разработка классических приложений .NET** и нажмите **Изменить**.
 
@@ -237,5 +237,5 @@ Visual Studio предоставляет множество эффективны
 
 ## <a name="see-also"></a>См. также
 
-- [Профилирование в Visual Studio](../profiling/index.md)
+- [Профилирование в Visual Studio](../profiling/index.yml)
 - [Первое знакомство со средствами профилирования](../profiling/profiling-feature-tour.md)

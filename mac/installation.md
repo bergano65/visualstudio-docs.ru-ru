@@ -3,16 +3,16 @@ title: Установка Visual Studio для Mac 2019
 description: Инструкции по установке Visual Studio 2019 для Mac и дополнительных компонентов, которые требуются для кроссплатформенной разработки.
 author: asb3993
 ms.author: amburns
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 2086532f0602b4a2509358cbb6d57178a9a1a0d4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 3e4a41567b02807dce280426daf59e30ed1876eb
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691466"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211455"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Установка Visual Studio для Mac 2019
 
@@ -44,7 +44,7 @@ ms.locfileid: "67691466"
 
 5. Появится оповещение, предлагающее принять условия лицензии и заявления о конфиденциальности. Перейдите по ссылкам, чтобы ознакомиться с ними, а затем нажмите клавишу **Продолжить**, если вы согласны с условиями:
 
-    [![Перейдите по ссылкам на заявление о конфиденциальности и условия лицензии, а затем продолжите установку, если вы согласны](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
+    [![Перейдите по ссылкам на заявление о конфиденциальности и условия лицензии, а затем продолжите установку, если вы согласны](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
 6. Появится список доступных рабочих нагрузок. Выберите нужные компоненты:
 
@@ -52,18 +52,29 @@ ms.locfileid: "67691466"
 
    Если вы не хотите устанавливать все платформы, выберите нужные с помощью приведенных ниже рекомендаций.
 
-   * **Приложения, использующие Xamarin**:
-      - Xamarin.Forms — выберите платформы **Android** и **iOS**.
-      - Только iOS — выберите платформу **iOS** (вам нужно также установить [**Xcode**](https://developer.apple.com/xcode/)).
-      - Только Android — выберите платформу **Android** (вам нужно также выбрать соответствующие зависимости).
-      - Только Mac— выберите платформу **macOS** (вам нужно также установить [**Xcode**](https://developer.apple.com/xcode/)).
-      - Полностью кроссплатформенные приложения Xamarin — выберите платформы **Android**, **iOS** и **macOS**.
-   * **Приложения .NET Core** — выберите платформу **.NET Core**.
-   * **Веб-приложения ASP.NET Core** — выберите платформу **.NET Core**.
-   * **Разработка кроссплатформенных игр Unity** — не нужно устанавливать дополнительные платформы, кроме Visual Studio для Mac. Дополнительные сведения об установке расширения Unity вы найдете в [руководстве по установке Unity](/visualstudio/mac/setup-vsmac-tools-unity).
+
+|Тип приложения  |целевого объекта  |Выбранное  |Примечания  |
+|---------|---------|---------|---------|
+|**Приложения, использующие Xamarin**| Xamarin.Forms|Выберите платформы **Android** и **iOS**. |Потребуется установить [**Xcode**](https://developer.apple.com/xcode/). |
+||Только iOS|Выберите платформу **iOS**.|Потребуется установить [**Xcode**](https://developer.apple.com/xcode/).|
+||Только Android|Выберите платформу **Android**.|Обратите внимание, что вам также нужно выбрать соответствующие зависимости.|
+||Только Mac|Выберите платформу **macOS (Cocoa)** .|Потребуется установить [**Xcode**](https://developer.apple.com/xcode/).|
+|**Приложения .NET Core**|         |Выберите платформу **.NET Core**.|         |
+|**Веб-приложения ASP.NET Core**|         |Выберите платформу **.NET Core**.|         |
+|**Функции Azure**|         |Выберите платформу **.NET Core**.|         |
+|**Разработка кроссплатформенных игр Unity**|         |Не нужно устанавливать дополнительные платформы, кроме Visual Studio для Mac.| Дополнительные сведения об установке расширения Unity вы найдете в [руководстве по установке Unity](/visualstudio/mac/setup-vsmac-tools-unity).|
+
 
 7. Выбрав нужные параметры, нажмите кнопку **Установить**.
-8. Установщик будет отображать ход выполнения, по мере загрузки и установки Visual Studio для Mac и выбранных рабочих нагрузок. Может быть предложено ввести пароль, чтобы предоставить привилегии, необходимые для установки.
+8. Установщик будет отображать ход выполнения, по мере загрузки и установки Visual Studio для Mac и выбранных рабочих нагрузок. Вам будет предложено ввести пароль, чтобы предоставить привилегии, необходимые для установки.
+
+    [![Выберите, какие дополнительные функции рабочей нагрузки вы хотите установить](media/installation-progress.png)](media/installation-progress.png#lightbox)
+
+9. После установки Visual Studio для Mac предложит настроить личные параметры, выполнив вход и выбрав нужные настраиваемые сочетания клавиш.
+
+    [![Войдите в интегрированную среду разработки](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
+
+    [![Выберите, какие сочетания клавиш вы хотите использовать](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
 Если при установке в корпоративной среде возникают проблемы с сетью, см. инструкции по [установке за брандмауэром или прокси-сервером](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
 
@@ -78,7 +89,7 @@ ms.locfileid: "67691466"
 
 Настройте сеть, разрешив доступ к следующим расположениям:
 
-- [Конечные точки Visual Studio](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+- [Конечные точки Visual Studio](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 
 ## <a name="next-steps"></a>Следующие шаги
 

@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 4ba419c1dc20b46a08460e20a437e7edf21f2857
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: d8be11a8705686ade370a8107aad826b7cab9851
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253719"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186551"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Параметры соглашений о написании кода .NET в EditorConfig
 
 Вы можете описать и поддерживать согласованный стиль кода в своей базе кода с помощью файла [EditorConfig](../ide/create-portable-custom-editor-options.md). EditorConfig содержит несколько ключевых свойств форматирования, таких как `indent_style` и `indent_size`. В Visual Studio параметры соглашений о написании кода .NET можно настроить в файле EditorConfig. Вы можете включить или отключить отдельные соглашения о написании кода .NET и настроить строгость применения каждого правила с помощью уровней серьезности.
 
 > [!TIP]
-> - При определении соглашения о написании кода в файле .editorconfig вы можете настроить способ анализа вашего кода [анализаторами стиля кода](../code-quality/roslyn-analyzers-overview.md), которые встроены в Visual Studio. Файл .editorconfig — это файл конфигурации для таких анализаторов.
-> - Предпочтения по стилю кода для Visual Studio также можно задать в диалоговом окне [Параметры текстового редактора](code-styles-and-code-cleanup.md). Но при этом параметры в файле .editorconfig имеют приоритет, и предпочтения, заданные вами в меню **Параметры** не связываются с определенным проектом.
+> - При определении соглашений о написании кода в файле EditorConfig вы можете настроить способ анализа вашего кода [анализаторами стиля кода](../code-quality/roslyn-analyzers-overview.md), которые встроены в Visual Studio. Файл EditorConfig — это файл конфигурации для таких анализаторов.
+> - Предпочтения по стилю кода для Visual Studio также можно задать в диалоговом окне [Параметры текстового редактора](code-styles-and-code-cleanup.md). Но при этом параметры в файле EditorConfig имеют приоритет и предпочтения, заданные вами в меню **Параметры**, не связываются с определенным проектом.
 
 ## <a name="convention-categories"></a>Категории соглашений
 

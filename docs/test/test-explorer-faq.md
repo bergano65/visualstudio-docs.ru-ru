@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 1f51b8d3e75d7db19e1b92e909638cee99303c48
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: dca1fbb8f199db56563f4107ec88b832ec445bde
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079617"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254550"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Вопросы и ответы об обозревателе тестов Visual Studio
 ::: moniker range=">=vs-2019"
