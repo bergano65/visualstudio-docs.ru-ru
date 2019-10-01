@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976764"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150113"
 ---
 # <a name="customize-code-coverage-analysis"></a>Настройка анализа объема протестированного кода
 
@@ -63,7 +63,7 @@ ms.locfileid: "69976764"
 
 ::: moniker-end
 
-### <a name="specify-symbol-search-paths"></a>Указание путей поиска символов
+## <a name="symbol-search-paths"></a>Пути поиска символов
 
 Для объема протестированного кода необходимы файлы символов (*PDB*-файлы) в сборках. В случае сборок, созданных в вашем решении, файлы символов обычно предоставляются вместе с двоичными файлами, и объем протестированного кода работает автоматически. В некоторых случаях может потребоваться включить сборки, на которые указывают ссылки, в анализ объема протестированного кода. В таких случаях *PDB*-файлы могут находиться далеко от двоичных файлов, однако путь поиска символов можно указать в *RUNSETTINGS*-файле.
 
@@ -77,9 +77,11 @@ ms.locfileid: "69976764"
 > [!NOTE]
 > Разрешение символов может занять время, особенно при использовании удаленного расположения файлов со множеством сборок. Поэтому рекомендуется скопировать *PDB*-файлы в то же локальное расположение, в котором находятся двоичные файлы (*DLL* и *EXE*).
 
-### <a name="exclude-and-include"></a>Включение и исключение
+## <a name="include-or-exclude-assemblies-and-members"></a>Включение или исключение сборок и членов
 
-Можно исключить указанные сборки из анализа покрытия кода. Например:
+Вы можете включать сборки или определенные типы и члены в анализ объема протестированного кода или исключать их из него. Если раздел **Include** пуст или отсутствует, включаются все загруженные сборки, с которыми связаны PDB-файлы. Если сборка или член соответствует предложению в разделе **Exclude**, то они исключаются из анализа объема протестированного кода. Раздел **Exclude** имеет приоритет над разделом **Include**: если сборка указана как в разделе **Include**, так и в разделе **Exclude**, она не включается в анализ объема протестированного кода.
+
+Например, в следующем коде XML исключается одна сборка, указанная по имени:
 
 ```xml
 <ModulePaths>
@@ -90,7 +92,7 @@ ms.locfileid: "69976764"
 </ModulePaths>
 ```
 
-Либо можно указать, какие сборки должны быть включены. Данный подход имеет недостаток — при добавлении дополнительных сборок в решение их также необходимо добавить в список.
+В следующем примере указывается, что в анализ объема протестированного кода должна включаться только одна сборка:
 
 ```xml
 <ModulePaths>
@@ -101,11 +103,20 @@ ms.locfileid: "69976764"
 </ModulePaths>
 ```
 
-Если параметр **include** пуст, то в обработку объема протестированного кода будут включены все сборки, которые уже загружены и для которых можно найти файлы *PDB*. В объем протестированного кода не включаются элементы, которые соответствуют предложению в списке **Exclude**. **Включение** обрабатывается до **исключения**.
+В приведенной ниже таблице показаны различные способы сопоставления сборок и членов для включения в анализ объема протестированного кода или исключения из него.
+
+| XML-элемент | Соответствие |
+| - | - |
+| ModulePath | Сопоставление со сборками, указанными по имени или пути к файлу. |
+| CompanyName | Сопоставление сборок по атрибуту **Company**. |
+| PublicKeyToken | Сопоставление подписанных сборок по токену открытого ключа. |
+| Исходный код | Сопоставление элементов по имени пути к файлу исходного кода, в котором они определены. |
+| Атрибут | Сопоставление элементов, у которых имеется указанный атрибут. Укажите полное имя атрибута, например `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Если исключить атрибут <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, код, использующий языковые функции, такие как `async`, `await`, `yield return`, и автоматические реализуемые свойства, исключается из анализа объема протестированного кода. Чтобы исключить созданный код, исключите только атрибут <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
+| Функция | Сопоставление процедур, функций или методов по полному имени, включая список параметров. Возможно также сопоставление с частью имени с помощью [регулярного выражения](#regular-expressions).<br/><br/>Примеры<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
 
 ### <a name="regular-expressions"></a>Регулярные выражения
 
-Для включения и исключения узлов используются регулярные выражения, которые не совпадают с подстановочными знаками. Дополнительные сведения см. в статье [Использование регулярных выражений в Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Ниже приведены некоторые примеры.
+Для включения и исключения узлов используются регулярные выражения, которые не совпадают с подстановочными знаками. Все соответствия не учитывают регистр. Ниже приведены некоторые примеры.
 
 - **.\*** соответствует строке любых символов
 
@@ -119,9 +130,7 @@ ms.locfileid: "69976764"
 
 - **$** соответствует концу строки
 
-Все соответствия не учитывают регистр.
-
-Например:
+В следующем коде XML показано, как включать и исключать определенные сборки с помощью регулярных выражений:
 
 ```xml
 <ModulePaths>
@@ -138,48 +147,27 @@ ms.locfileid: "69976764"
 </ModulePaths>
 ```
 
+В следующем коде XML показано, как включать и исключать определенные функции с помощью регулярных выражений:
+
+```xml
+<Functions>
+  <Include>
+    <!-- Include methods in the Fabrikam namespace: -->
+    <Function>^Fabrikam\..*</Function>
+    <!-- Include all methods named EqualTo: -->
+    <Function>.*\.EqualTo\(.*</Function>
+  </Include>
+  <Exclude>
+    <!-- Exclude methods in a class or namespace named UnitTest: -->
+    <Function>.*\.UnitTest\..*</Function>
+  </Exclude>
+</Functions>
+```
+
 > [!WARNING]
 > Если в регулярном выражении есть ошибка, например круглые скобки без escape-последовательности или непарные круглые скобки, то анализ объема протестированного кода не выполняется.
 
-### <a name="other-ways-to-include-or-exclude-elements"></a>Другие способы включения или исключения элементов
-
-- **ModulePath** — сопоставление сборок, указанные путем к файлу сборки.
-
-- **CompanyName** — сопоставление сборок по атрибуту **Company**.
-
-- **PublicKeyToken** — сопоставление подписанных сборок по токену открытого ключа.
-
-- **Source** — сопоставление элементов по имени пути к файлу исходного кода, в котором они определены.
-
-- **Attribute** — сопоставление элементов с определенным атрибутом. Укажите полное имя атрибута, например `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.
-
-  > [!TIP]
-  > Если исключить атрибут <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, код, использующий языковые функции, такие как `async`, `await`, `yield return`, и автоматические реализуемые свойства, исключается из анализа объема протестированного кода. Чтобы исключить созданный код, исключите только атрибут <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>.
-
-- **Function** — сопоставление процедур, функций или методов по полному имени. Чтобы сопоставить имя функции, ваше регулярное выражение должно соответствовать полному имени функции, включая пространство имен, имя класса, имя метода и список параметров. Например:
-
-   ```csharp
-   Fabrikam.Math.LocalMath.SquareRoot(double);
-   ```
-
-   ```cpp
-   Fabrikam::Math::LocalMath::SquareRoot(double)
-   ```
-
-   ```xml
-   <Functions>
-     <Include>
-       <!-- Include methods in the Fabrikam namespace: -->
-       <Function>^Fabrikam\..*</Function>
-       <!-- Include all methods named EqualTo: -->
-       <Function>.*\.EqualTo\(.*</Function>
-     </Include>
-     <Exclude>
-       <!-- Exclude methods in a class or namespace named UnitTest: -->
-       <Function>.*\.UnitTest\..*</Function>
-     </Exclude>
-   </Functions>
-   ```
+Дополнительные сведения о регулярных выражениях см. в статье [Использование регулярных выражений в Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="sample-runsettings-file"></a>Пример RUNSETTINGS-файла
 
@@ -282,9 +270,14 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
+            
+            <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <!-- When set to True, collects coverage information from child processes that are launched by test or production code. -->
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <!-- When set to True, restarts the IIS process and collects coverage information from it. -->
             <CollectAspDotNet>False</CollectAspDotNet>
 
           </CodeCoverage>

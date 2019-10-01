@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e006be2099d5132ce7445f1e8fe74b0f2752c260
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416806"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238187"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Практическое руководство. Изменение выходного каталога сборки
 
@@ -43,6 +43,15 @@ ms.locfileid: "68416806"
    Введите путь (абсолютный или относительный для корневого каталога проекта), по которому будут созданы выходные данные, или нажмите кнопку **Обзор** чтобы перейти к этой папке.
 
    ![Выходной путь для проекта Visual Studio C#](media/output-path.png)
+   
+   > [!NOTE]
+   > Для некоторых проектов в путь сборки по умолчанию включаются платформа и среда выполнения. Чтобы они не включались, в **обозревателе решений** щелкните узел проекта правой кнопкой мыши, выберите команду **Изменить файл проекта** и добавьте следующее:
+   > ```xml
+   > <PropertyGroup>
+   >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+   >   <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+   > </PropertyGroup>
+   > ```
 
 > [!TIP]
 > Если выходные данные не создаются в указанном расположении, убедитесь, что выполняется сборка соответствующей конфигурации (например, **Отладка** или **Выпуск**), выбрав ее в строке меню Visual Studio.

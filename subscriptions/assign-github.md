@@ -1,20 +1,20 @@
 ---
-title: Пакет Visual Studio с GitHub Enterprise | Документация Майкрософт
+title: Предложение Visual Studio с GitHub Enterprise | Документация Майкрософт
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
-description: Управление подписками в пакете Visual Studio с GitHub Enterprise
-ms.openlocfilehash: 0f297eac1d6b2bc5fe322be305fab7f268f3d041
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+description: Управление подписками в предложении Visual Studio с GitHub Enterprise
+ms.openlocfilehash: 29df2d7c43f934e44b7585e975e0f77328305ba5
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605399"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150140"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Управление подписками Visual Studio с GitHub Enterprise
-Клиенты, заключившие с корпорацией Майкрософт соглашения Enterprise (EA), имеют право приобрести новый пакет, в котором объединены стандартные подписки Visual Studio и подписки GitHub Enterprise. Таким образом, подписчики Visual Studio смогут снизить затраты на приобретение GitHub Enterprise. 
+Клиенты, заключившие с корпорацией Майкрософт соглашения Enterprise (EA), имеют право приобрести новое предложение, в котором объединены стандартные подписки Visual Studio и GitHub Enterprise. Таким образом, подписчики Visual Studio смогут снизить затраты на приобретение GitHub Enterprise. 
 
 Управление подписками Visual Studio с GitHub Enterprise, которые приобретает ваша организация, осуществляется в два этапа.
 

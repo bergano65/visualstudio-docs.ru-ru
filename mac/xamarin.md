@@ -5,16 +5,24 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872350"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211470"
 ---
 # <a name="xamarin-mobile-app-development"></a>Разработка мобильных приложений Xamarin
 
 Первоклассная поддержка [Xamarin](/xamarin) позволяет разрабатывать эффективные собственные интерфейсы для Android, macOS, iOS, tvOS и watchOS. Кроссплатформенные приложения Xamarin.Forms позволяют использовать код пользовательского интерфейса на основе XAML в Android, iOS и macOS без ограничения доступ к встроенной функциональности.
+
+## <a name="xamarinforms"></a>Xamarin.Forms
+
+Горячая перезагрузка XAML для Xamarin.Forms встроена в Visual Studio для Mac начиная с версии 8.3. Если эта функция включена, изменения немедленно отражаются в работающем приложении при сохранении файла.
+
+Чтобы включить Горячую перезагрузку XAML, установите флажок **Включить горячую перезагрузку Xamarin** в окне **Visual Studio > Параметры > Проекты > Горячая перезагрузка Xamarin**.
+
+Дополнительные сведения о Горячей перезагрузке см. в [руководстве по Горячей перезагрузке XAML для Xamarin.Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) в этой документации.
 
 ## <a name="android"></a>Android
 

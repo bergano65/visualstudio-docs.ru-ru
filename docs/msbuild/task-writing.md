@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9cf7f82d628c0c093e0d807920b379263c20ff0b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439995"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238196"
 ---
 # <a name="task-writing"></a>Написание задач
 Задачи содержат код, который выполняется в процессе сборки. Задачи содержатся в целевых объектах. В [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] включена библиотека типичных задач, но также можно создавать собственные задачи. Дополнительные сведения о библиотеке задач, включенных в [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], см. в статье [Справочные сведения о задачах MSBuild](../msbuild/msbuild-task-reference.md).
@@ -141,10 +141,35 @@ public string RequiredProperty { get; set; }
 
  Атрибут `[Required]` определяется классом <xref:Microsoft.Build.Framework.RequiredAttribute> в пространстве имен <xref:Microsoft.Build.Framework>.
 
+## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>Вызов задачи платформой [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]
+
+При вызове задачи [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] сначала создает экземпляр класса задачи, а затем вызывает методы задания свойств этого объекта для параметров задачи, указанных в элементе задачи в файле проекта. Если в элементе задачи не указан параметр или если результатом вычисления выражения, указанного в элементе, является пустая строка, метод задания свойства не вызывается.
+
+Например, в проекте
+
+```xml
+<Project>
+ <Target Name="InvokeCustomTask">
+  <CustomTask Input1=""
+              Input2="$(PropertyThatIsNotDefined)"
+              Input3="value3" />
+ </Target>
+</Project>
+```
+
+вызывается только метод задания для `Input3`.
+
+Задача не должна зависеть от относительного порядка, в котором вызываются методы задания свойств.
+
+### <a name="task-parameter-types"></a>Типы параметров задачи
+
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] изначально обрабатывает свойства типов `string`, `bool`, `ITaskItem` и `ITaskItem[]`. Если задача принимает параметр другого типа, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] вызывает <xref:System.Convert.ChangeType%2A> для преобразования `string` (со всеми развернутыми свойствами и ссылками на элементы) в целевой тип. Если преобразование для любого входного параметра завершается неудачно, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] выдает ошибку и не вызывает метод `Execute()` задачи.
+
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>Описание
- В этом классе [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показана задача, производная от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>. Эта задача возвращает значение `true`, указывающее на успешное выполнение.
+### <a name="description"></a>ОПИСАНИЕ
+
+В этом классе [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показана задача, производная от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>. Эта задача возвращает значение `true`, указывающее на успешное выполнение.
 
 ### <a name="code"></a>Код
 
@@ -167,8 +192,9 @@ namespace SimpleTask1
 
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>Описание
- В этом классе [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показана задача, реализующая интерфейс <xref:Microsoft.Build.Framework.ITask>. Эта задача возвращает значение `true`, указывающее на успешное выполнение.
+### <a name="description"></a>ОПИСАНИЕ
+
+В этом классе [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показана задача, реализующая интерфейс <xref:Microsoft.Build.Framework.ITask>. Эта задача возвращает значение `true`, указывающее на успешное выполнение.
 
 ### <a name="code"></a>Код
 
@@ -202,16 +228,19 @@ namespace SimpleTask2
 
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>Описание
- В этом классе [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показана задача, производная от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>. В ней задается обязательное строковое свойство и создается событие, отображаемое всеми зарегистрированными средствами ведения журнала.
+### <a name="description"></a>ОПИСАНИЕ
+
+В этом классе [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] показана задача, производная от вспомогательного класса <xref:Microsoft.Build.Utilities.Task>. В ней задается обязательное строковое свойство и создается событие, отображаемое всеми зарегистрированными средствами ведения журнала.
 
 ### <a name="code"></a>Код
- [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
+
+[!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>Описание
- В этом примере показан файл проекта, в котором вызывается задача из предыдущего примера (SimpleTask3).
+### <a name="description"></a>ОПИСАНИЕ
+
+В этом примере показан файл проекта, в котором вызывается задача из предыдущего примера (SimpleTask3).
 
 ### <a name="code"></a>Код
 
@@ -227,4 +256,5 @@ namespace SimpleTask2
 ```
 
 ## <a name="see-also"></a>См. также
+
 - [Справочные сведения о задачах](../msbuild/msbuild-task-reference.md)

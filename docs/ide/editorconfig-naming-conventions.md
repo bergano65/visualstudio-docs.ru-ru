@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957431"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251691"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Соглашения об именовании в среде .NET для EditorConfig
 

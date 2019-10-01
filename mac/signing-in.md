@@ -3,14 +3,14 @@ title: Вход в Visual Studio для Mac
 description: Вход в Visual Studio для Mac
 author: asb3993
 ms.author: amburns
-ms.date: 08/08/2019
+ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957369"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213662"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Вход в Visual Studio для Mac
 
@@ -29,17 +29,17 @@ ms.locfileid: "68957369"
 > [!TIP]
 > Перед входом в Visual Studio для Mac убедитесь, что установлено подключение к Интернету. > Подписки можно активировать только через Интернет. Если подключение к Интернету отсутствует, выберите "Я сделаю это позже" и выполните вход с помощью меню при наличии подключения.
 
-Чтобы войти в Visual Studio для Mac, выполните следующие действия:
+Чтобы войти в Visual Studio для Mac, выполните указанные ниже действия.
 
 1. Нажмите кнопку **Войдите с помощью учетной записи Майкрософт** в окне входа в систему:
 
-    ![Диалоговое окно учетных записей в Visual Studio для Mac](media/signing-in-image12.png)
+    ![Диалоговое окно учетных записей в Visual Studio для Mac](media/ide-tour-2019-start-signin.png)
 
 2. Введите учетные данные Майкрософт:
 
     ![Диалоговое окно учетных данных Microsoft](media/signing-in-image13.png)
 
-3. После входа вы увидите окно запуска Visual Studio 2019 для Mac. Здесь можно открыть или создать проект:
+4. После входа в систему вам будет предложено выбрать сочетания клавиш. Выберите нужный вариант и нажмите кнопку **Продолжить**. После этого откроется начальное окно Visual Studio 2019 для Mac. Здесь можно открыть или создать проект:
 
     ![Вход успешно выполнен](media/signing-in-image14.png)
 
