@@ -2,8 +2,6 @@
 title: Базовый класс ToolTaskExtension | Документы Майкрософт
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- MSBuild.ToolTask.ToolCommandFailed
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 061d78a1e6415d6e7386fdc4de76aa1dd8ddd6d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7734f852da997836cf2f42fd3f6b96e9decdf8dd
+ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938919"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720559"
 ---
 # <a name="tooltaskextension-base-class"></a>Базовый класс ToolTaskExtension
 Многие задачи наследуют от класса <xref:Microsoft.Build.Tasks.ToolTaskExtension>, наследующего от класса <xref:Microsoft.Build.Utilities.ToolTask>, который в свою очередь наследует от класса <xref:Microsoft.Build.Utilities.Task>. Эта цепочка наследования добавляет несколько параметров в задачи, которые от них происходят. Эти параметры перечислены в настоящем документе.
@@ -28,7 +26,7 @@ ms.locfileid: "62938919"
 ## <a name="parameters"></a>Параметры
  В следующей таблице описываются параметры базовых классов.
 
-| Параметр | Описание |
+| Параметр | ОПИСАНИЕ |
 | - | - |
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine%2A> | Необязательный параметр <xref:Microsoft.Build.Framework.IBuildEngine> .<br /><br /> Задает интерфейс подсистемы сборки, доступный для задач. Подсистема сборки автоматически устанавливает этот параметр, чтобы разрешить задачам обратный вызов. |
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A> | Необязательный параметр <xref:Microsoft.Build.Framework.IBuildEngine2> .<br /><br /> Задает интерфейс подсистемы сборки, доступный для задач. Подсистема сборки автоматически устанавливает этот параметр, чтобы разрешить задачам обратный вызов.<br /><br /> Это свойство предусмотрено для удобства, чтобы разработчикам, наследующим из этого класса, не приходилось приводить значение из `IBuildEngine` в `IBuildEngine2`. |
