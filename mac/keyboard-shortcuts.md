@@ -5,16 +5,16 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3e6ae24ea9e9a5dea263c2449a9b23b6027f7a96
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211319"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273322"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Стандартные сочетания клавиш в Visual Studio для Mac
 
-Сведения о специальных возможностях клавиатуры см. в [руководстве по навигации с помощью клавиатуры](~/accessibility.md#how-to-use-keyboard-navigation).
+Сведения о специальных возможностях клавиатуры см. в [руководстве по навигации с помощью клавиатуры](~/accessibility-keyboard.md).
 
 В Visual Studio для Mac вы можете выполнять с помощью сочетаний клавиш множество команд. В этом документе перечислены стандартные настраиваемые сочетания клавиш в **Visual Studio для Mac**. Сведения о том, как можно изменить настраиваемые сочетания клавиш, см. в руководстве по [настройке IDE](~/customizing-the-ide.md#key-bindings). Вы также можете изменить сочетания клавиш для определенной команды, открыв меню **Visual Studio для Mac** > **Предпочтения** и выбрав **Среда** > **Настраиваемые сочетания клавиш** в окне **Предпочтения**.
 

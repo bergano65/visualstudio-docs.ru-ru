@@ -5,24 +5,20 @@ ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccddc3aef24ba14245dc568ca5f369e38ce8eba0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531637"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301696"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>Преобразование локальной функции в метод
 
 Область применения этого рефакторинга:
 
 - C#
-- Visual Basic
 
 **Что?** Преобразование локальной функции в метод.
 
@@ -36,7 +32,7 @@ ms.locfileid: "65531637"
 
     ![Пример кода для преобразования локальной функции в метод](media/convert-local-function-to-method.png)
 
-2. Нажмите клавиши **CTRL**+**.** чтобы открыть меню **Быстрые действия и рефакторинг**.
+2. Нажмите клавиши **CTRL**+ **.** чтобы открыть меню **Быстрые действия и рефакторинг**.
 
     ![Пример исправления "Преобразование локальной функции в метод"](media/convert-local-function-to-method-codefix.png)
 
