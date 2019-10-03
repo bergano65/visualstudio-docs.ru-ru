@@ -108,7 +108,7 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Регистрация расширений платформы .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Параллельная сборка нескольких проектов
+        - name: Параллельное построение нескольких проектов
           items:
             - name: Параллельное построение нескольких проектов с помощью MSBuild
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -292,6 +292,8 @@
               href: taskextension-base-class.md
             - name: Базовый класс ToolTaskExtension
               href: tooltaskextension-base-class.md
+            - name: Диагностика сбоев задач
+              href: diagnosing-task-failures.md
             - name: Задача AL (компоновщик сборок)
               href: al-assembly-linker-task.md
             - name: Задача AspNetCompiler
