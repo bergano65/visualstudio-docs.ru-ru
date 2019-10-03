@@ -708,7 +708,7 @@
         - name: Поведение при запуске
           displayName: Start page window
           href: ide/customizing-the-start-page-for-visual-studio.md
-        - name: Поиск и использование расширений Visual Studio
+        - name: Управление расширениями
           href: ide/finding-and-using-visual-studio-extensions.md
           displayName: 'marketplace, gallery, vsix'
         - name: Управление внешними инструментами
