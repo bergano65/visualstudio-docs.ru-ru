@@ -6,6 +6,8 @@
       href: what-is-debugging.md
     - name: Методы и инструменты отладки
       href: write-better-code-with-visual-studio.md
+    - name: Поиск задачи отладки
+      href: find-your-debugging-task.md
 - name: Краткие руководства
   items:
     - name: Первое знакомство с отладчиком
@@ -236,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Пользовательские представления (управляемые)
               items:
-                - name: Создание настраиваемых представлений управляемых объектов
+                - name: Создание пользовательских представлений для объектов
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: Указание отображаемых сведений для отладчика
                   href: using-the-debuggerdisplay-attribute.md
@@ -352,9 +354,9 @@
               href: how-to-use-the-gpu-threads-window.md
         - name: Отладка нескольких процессов
           href: debug-multiple-processes.md
-        - name: Пошаговое руководство. Отладка с помощью окна потоков
+        - name: Отладка с помощью окна потоков
           href: how-to-use-the-threads-window.md
-        - name: Пошаговое руководство. Отладка параллельного приложения
+        - name: Отладка параллельного приложения
           href: walkthrough-debugging-a-parallel-application.md
         - name: Переключение на другой поток при отладке
           href: how-to-switch-to-another-thread-while-debugging.md
