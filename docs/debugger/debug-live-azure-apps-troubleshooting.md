@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee8633a9ad58981297f00338cd6c375c5cf721e
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211239"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962934"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Устранение неполадок и известные проблемы отладки моментальных снимков в Visual Studio
 
-Если действия, описанные в этой статье, не помогли устранить проблему, выполните поиск проблемы в [сообществе разработчиков](https://developercommunity.visualstudio.com/spaces/8/index.html) или сообщите о новой проблеме, выбрав **Справка** > **Отправить отзыв** > **сообщить о проблеме** в Visual Studio.
+Если действия, описанные в этой статье, не помогли устранить проблему, выполните поиск проблемы в [сообществе разработчиков](https://developercommunity.visualstudio.com/spaces/8/index.html) или сообщите о новой проблеме, выбрав пункт **Справка** > **Отправить отзыв** > **сообщить о проблеме** в Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Проблема. "Attach Snapshot Debugger" обнаруживает ошибку кода состояния HTTP
 
@@ -34,7 +34,7 @@ ms.locfileid: "71211239"
 
 Выполните следующие шаги.
 
-* Убедитесь, что учетная запись персонализации Visual Studio имеет разрешения на доступ к подписке Azure и ресурсу, к которому вы присоединяетесь. Чтобы быстро определить это, проверьте, доступен ли ресурс в диалоговом окне из раздела **Отладка** > **snapshot Debugger...** Выберите существующий **ресурс** > Azure или в Cloud Explorer.  > 
+* Убедитесь, что учетная запись персонализации Visual Studio имеет разрешения на доступ к подписке Azure и ресурсу, к которому вы присоединяетесь. Чтобы быстро определить это, нужно проверить, доступен ли ресурс в диалоговом окне из раздела **отладка** > **присоединить snapshot Debugger...**  > **ресурс Azure** > **выберите существующий**или в Cloud Explorer.
 * Если эта ошибка продолжает сохраняться, используйте один из каналов обратной связи, описанных в начале этой статьи.
 
 ### <a name="403-forbidden"></a>(403) запрещено
@@ -54,7 +54,8 @@ ms.locfileid: "71211239"
 Выполните следующие шаги.
 
 * Убедитесь, что веб-сайт развернут и работает в ресурсе службы приложений, к которому вы подключаетесь.
-* Убедитесь, что сайт доступен по адресу\<HTTPS://\>Resource. azurewebsites.NET
+* Убедитесь, что сайт доступен по адресу https://@no__t -0resource\>.azurewebsites.net
+* Убедитесь, что правильное выполнение настраиваемого веб-приложения не возвращает код состояния 404 при доступе по адресу https://@no__t -0resource\>.azurewebsites.net
 * Если эта ошибка продолжает сохраняться, используйте один из каналов обратной связи, описанных в начале этой статьи.
 
 ### <a name="406-not-acceptable"></a>(406) неприемлемо
@@ -63,7 +64,7 @@ ms.locfileid: "71211239"
 
 Выполните следующие шаги.
 
-* Убедитесь, что сайт доступен по адресу\<HTTPS://\>Resource. azurewebsites.NET
+* Убедитесь, что сайт доступен по адресу https://@no__t -0resource\>.azurewebsites.net
 * Убедитесь, что сайт не перенесен на новые экземпляры. Snapshot Debugger использует понятие Арраффинити для маршрутизации запросов к конкретным экземплярам, которые могут периодически вызывать эту ошибку.
 * Если эта ошибка продолжает сохраняться, используйте один из каналов обратной связи, описанных в начале этой статьи.
 
@@ -156,11 +157,11 @@ ms.locfileid: "71211239"
 
 Для Visual Studio 2019 требуется более новая версия расширения Snapshot Debugger сайта в службе приложений Azure.  Эта версия несовместима с более старой версией расширения Snapshot Debugger site, используемой в Visual Studio 2017.  При попытке присоединить Snapshot Debugger в Visual Studio 2019 к службе приложений Azure, которая ранее была отлажена Snapshot Debugger в Visual Studio 2017, появится следующее сообщение об ошибке:
 
-![Несовместимое расширение сайта snapshot Debugger Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Несовместимое расширение сайта snapshot Debugger Visual Studio 2019")
+![Несовместимое расширение сайта snapshot Debugger Visual studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "несовместимо с snapshot Debugger расширения сайта Visual Studio 2019")
 
 И наоборот, если вы используете Visual Studio 2017 для подключения Snapshot Debugger к службе приложений Azure, которая ранее была отлажена Snapshot Debugger в Visual Studio 2019, вы получите следующее сообщение об ошибке:
 
-![Несовместимое расширение сайта snapshot Debugger Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Несовместимое расширение сайта snapshot Debugger Visual Studio 2017")
+![Несовместимое расширение сайта snapshot Debugger Visual studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "несовместимо с snapshot Debugger расширения сайта Visual Studio 2017")
 
 Чтобы устранить эту проблему, удалите следующие параметры приложения на портале Azure и подключите Snapshot Debugger повторно.
 
@@ -180,7 +181,7 @@ ms.locfileid: "71211239"
   - Перейдите на сайт Kudu Службы приложений (то есть yourappservice.**scm**.azurewebsites.net), а затем на консоль отладки.
   - Журналы агента хранятся в следующем каталоге:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - Виртуальная машина / Масштабируемые наборы виртуальных машин.
-  - Войдите в свою виртуальную машину, чтобы сохранить журналы агента следующим образом:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<версия > \SnapshotDebuggerAgent_ *. txt
+  - Войдите в свою виртуальную машину, чтобы сохранить журналы агента следующим образом:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics @ no__t-0Version > \SnapshotDebuggerAgent_ *. txt
 - AKS
   - Перейдите к следующему каталогу: /tmp/diag/AgentLogs/*
 
@@ -189,7 +190,7 @@ ms.locfileid: "71211239"
 Журналы инструментирования можно найти в следующей папке.
 
 - Службы приложений.
-  - Журнал ошибок автоматически отправляется в д:\хоме\логфилес\евентлог.ксмл, события помечаются `<Provider Name="Instrumentation Engine" />` с помощью или "рабочие точки останова".
+  - Журнал ошибок автоматически отправляется в Д:\хоме\логфилес\евентлог.ксмл, события помечаются `<Provider Name="Instrumentation Engine" />` или "рабочими точками останова".
 - Виртуальная машина / Масштабируемые наборы виртуальных машин.
   - Войдите на виртуальную машину и откройте "Просмотр событий".
   - Откройте следующее представление: *Журнал Windows > приложение*.

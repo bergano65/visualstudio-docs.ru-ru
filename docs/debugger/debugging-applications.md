@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d393e5ab056f16e54382b2295a667f079ede95
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 9848b666df985ddc7c2c4d0cf56f9ae4cafcb347
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211169"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962902"
 ---
 # <a name="debugging-applications"></a>Отладка приложений
 В следующих разделах выполняется отладка приложений определенных типов. Для разных типов приложений и для разных языков требуются разные параметры и методы, а также в них возникают разные проблемы, которые требуют отладки.
@@ -34,6 +34,6 @@ ms.locfileid: "71211169"
 |[Диагностика графики (отладка графики DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Способы отладки графики DirectX.|
 |[Отладка приложений ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Описание отладки приложений ASP.NET.|
 |[Отладка кода Python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Описание отладки кода Python|
-|[Отладка приложений JavaScript и TypeScript](/javascript/debug-nodejs.md)|Описание отладки приложений JavaScript, TypeScript и Node. js|
+|[Отладка приложений JavaScript и TypeScript](/javascript/debug-nodejs)|Описание отладки приложений JavaScript, TypeScript и Node. js|
 |[Отладка веб-приложений](../debugger/debugging-web-applications.md)|Описание отладки веб-приложений и сценариев.|
 |[Отладка служб WCF](../debugger/debugging-wcf-services.md)|Способы отладки служб Windows Communication Foundation.|
