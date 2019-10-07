@@ -2,7 +2,7 @@
 title: Использование Visual Studio на виртуальной машине Azure
 titleSuffix: ''
 description: Узнайте, как использовать Visual Studio на виртуальной машине Azure.
-ms.date: 06/24/2019
+ms.date: 09/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc73c2d280f22c82f0efe76d9e5b1d343e386409
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 32446e40fa388e72fd12e32dad3a466c0b5823d5
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365268"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273391"
 ---
 # <a id="top"> </a> Образы Visual Studio в Azure
 
@@ -36,10 +36,10 @@ ms.locfileid: "67365268"
 
 | Версия выпуска                                                                                                                                          | Выпуски              |    Версия продукта    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019. Последняя версия (версия 16.1)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Версия 16.1.3    |
-| [Visual Studio 2019. RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise, Community | Версия 16.0.5    |
-| [Visual Studio 2017. Последняя версия (версия 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Версия 15.9.13   |
-| [Visual Studio 2017. RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Версия 15.0.24   |
+| [Visual Studio 2019. Последняя версия (версия 16.3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Версия 16.3.0    |
+| [Visual Studio 2019. RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Предприятие            | Версия 16.0.8    |
+| [Visual Studio 2017. Последняя версия (версия 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Версия 15.9.16   |
+| [Visual Studio 2017. RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Версия 15.0.27   |
 | [Visual Studio 2015. Последняя версия (обновление 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Версия 14.0.25431.01 |
 
 > [!NOTE]

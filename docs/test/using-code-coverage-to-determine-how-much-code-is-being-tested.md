@@ -11,12 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913185"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342430"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Использование покрытия кода для определения объема протестированного кода
 
@@ -46,11 +46,11 @@ ms.locfileid: "70913185"
 
 ::: moniker range=">=vs-2019"
 
-1. В **обозревателе тестов** выберите**Анализ покрытия кода для всех тестов** в меню **Запуск**.
+1. В меню **Тестирование** выберите **Анализ покрытия кода для всех тестов**.
 
    ![Меню анализа покрытия кода в Visual Studio 2019](../test/media/vs-2019/analyze-code-coverage.png)
 
-   Если **обозреватель тестов** не открыт, откройте его, выбрав **Тест** > **Windows** > **Обозреватель тестов** или нажав клавиши **CTRL**+**E**,**T**.
+   Анализ объема протестированного кода также можно запустить из окна средства обозревателя тестов.
 
 ::: moniker-end
 

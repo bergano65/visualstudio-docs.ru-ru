@@ -1,26 +1,24 @@
 ---
 title: API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
-ms.date: 06/13/2019
+ms.date: 09/27/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 36681858506a05d5d8c9f0a5be25a70b833ee022
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 327aa6f79f7eda6ecc3f1c0a7b2576a87287b1c0
+ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926611"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720515"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Справочник по API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 В этом разделе перечислены открытые члены пространства имен `Microsoft::VisualStudio::CppUnitTestFramework`. С помощью этих интерфейсов API можно создавать модульные тесты для C++ на основе собственной платформы модульного тестирования Майкрософт. В конце раздела приводится [пример использования](#example).
 
-Файлы заголовков расположены в папке _папка_установки_Visual_Studio_2012[x86]_ **\VC\UnitTest\include**.
-
-Файлы библиотек расположены в папке _папка_установки_Visual_Studio_2012[x86]_ **\VC\UnitTest\lib**.
+Файлы заголовков и библиотек находятся по пути *\<папка установки Visual Studio>\VC\Auxiliary\VS\UnitTest*.
 
 Пути к заголовкам и библиотекам автоматически настраиваются в собственном тестовом проекте.
 
@@ -126,7 +124,7 @@ TEST_METHOD_INITIALIZE(methodName)
 }
 ```
 
-Определяет *methodName* в качестве метода, который выполняется перед выполнением каждого метода теста. `TEST_METHOD_INITIALIZE` может быть определен только один раз и должен находиться в тестовом классе.
+Определяет *methodName* в качестве метода, который выполняется перед выполнением каждого метода теста. `TEST_METHOD_INITIALIZE` может быть определен только один раз в тестовом классе и должен быть определен в его области.
 
 ```cpp
 TEST_METHOD_CLEANUP(methodName)

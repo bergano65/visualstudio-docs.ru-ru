@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079580"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342473"
 ---
 # <a name="troubleshoot-code-coverage"></a>Устранение неполадок в объеме протестированного кода
 
@@ -29,6 +29,7 @@ ms.locfileid: "71079580"
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Возможные причины отсутствия результатов или отображения старых результатов
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>Вы используете правильный выпуск Visual Studio?
+
 Вам требуется Visual Studio Enterprise.
 
 ### <a name="no-tests-were-executed"></a>Тесты не выполнены
@@ -43,7 +44,7 @@ ms.locfileid: "71079580"
 
 При изменении и повторном выполнении тестов может по-прежнему отображаться предыдущий результат анализа покрытия кода, включая цветовую разметку предыдущего запуска.
 
-1. Выполните команду "Анализ покрытия кода".
+1. Выполните команду **Анализ покрытия кода**.
 
 2. Убедитесь в том, что в окне **Результаты покрытия кода** выбран последний набор результатов.
 

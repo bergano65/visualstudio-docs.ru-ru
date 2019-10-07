@@ -1,28 +1,28 @@
 ---
-title: Создание приложения Windows Forms на Visual Basic
-description: Ознакомьтесь с пошаговыми инструкциями по созданию приложения Windows Forms на Visual Basic в Visual Studio.
-ms.date: 09/27/2019
+title: Создание приложения Windows Forms с помощью C#
+description: Ознакомьтесь с пошаговыми инструкциями по созданию приложения Windows Forms на C# в Visual Studio.
+ms.date: 09/26/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang: vb
+ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 dev_langs:
-- VB
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be3edaaab970dab7ef41bd8bce75c84bac54a2e
+ms.openlocfilehash: 4017ee2da040ccef36c58b17d896abab199c3517
 ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681590"
+ms.locfileid: "71685532"
 ---
-# <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Создание приложения Windows Forms на Visual Basic в Visual Studio
+# <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Создание приложения Windows Forms на C# в Visual Studio
 
-В рамках этого краткого знакомства с возможностями интегрированной среды разработки Visual Studio (IDE) вы создадите простое приложение на Visual Basic с пользовательским интерфейсом на основе Windows.
+В рамках этого краткого знакомства с возможностями интегрированной среды разработки Visual Studio (IDE) вы создадите простое приложение на C# с пользовательским интерфейсом на основе Windows.
 
 ::: moniker range="vs-2017"
 
@@ -41,7 +41,7 @@ ms.locfileid: "71681590"
 
 ## <a name="create-a-project"></a>Создание проекта
 
-Сначала вы создадите проект приложения Visual Basic. Для этого типа проекта уже имеются все нужные файлы шаблонов, что избавляет вас от лишней работы.
+Сначала вы создадите проект приложения на C#. Для этого типа проекта уже имеются все нужные файлы шаблонов, что избавляет вас от лишней работы.
 
 ::: moniker range="vs-2017"
 
@@ -49,7 +49,7 @@ ms.locfileid: "71681590"
 
 1. В верхней строке меню последовательно выберите **Файл** > **Создать** > **Проект**.
 
-1. В левой области диалогового окна **Новый проект** разверните узел **Visual Basic** и выберите **Рабочий стол Windows**. На средней панели выберите **Приложение Windows Forms (.NET Framework)** . Назовите файл `HelloWorld`.
+1. В левой области диалогового окна **Новый проект** разверните узел **Visual C#** и выберите **Рабочий стол Windows**. На средней панели выберите **Приложение Windows Forms (.NET Framework)** . Назовите файл `HelloWorld`.
 
      Если шаблон проекта **Приложение Windows Forms (.NET Framework)** отсутствует, закройте диалоговое окно **Новый проект** и в верхней строке меню выберите **Сервис** > **Получить средства и компоненты**. Запускается Visual Studio Installer. Выберите рабочую нагрузку **.Разработка классических приложений .NET** и затем элемент **Изменить**.
 
@@ -65,11 +65,11 @@ ms.locfileid: "71681590"
 
    ![Просмотр окна "Создание проекта"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. В окне **Создать проект** выберите шаблон **Приложение Windows Forms (.NET Framework)** для Visual Basic.
+1. В окне **Создать проект** выберите шаблон **Приложение Windows Forms (.NET Framework)** для C#.
 
-   (При желании вы можете уточнить условия поиска, чтобы быстро перейти к нужному шаблону. Например, введите *Приложение Windows Forms* в поле поиска. Затем выберите **Visual Basic** в списке языков и **Windows** в списке платформ.)  
+   (При желании вы можете уточнить условия поиска, чтобы быстро перейти к нужному шаблону. Например, введите *Приложение Windows Forms* в поле поиска. Затем выберите **C#** в списке языков и **Windows** в списке платформ.)  
 
-   ![Выбор шаблона Visual Basic для приложения Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Выбор шаблона C# для приложения Windows Forms (.NET Framework)](../get-started/csharp/media/vs-2019/csharp-create-new-winforms-project-nonfiltered.png)
 
    > [!NOTE]
    > Если шаблон **Приложение Windows Forms (.NET Framework)** отсутствует, его можно установить из окна **Создание проекта**. В сообщении **Не нашли то, что искали?** выберите ссылку **Установка других средств и компонентов**.
@@ -84,7 +84,7 @@ ms.locfileid: "71681590"
 
 1. В поле **Имя проекта** окна **Настроить новый проект** введите *HelloWorld*. Затем нажмите **Создать**.
 
-   ![В окне "Настроить новый проект" назовите проект "HelloWorld"](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+   ![В окне "Настроить новый проект" назовите проект "HelloWorld"](../get-started/csharp/media/vs-2019/csharp-name-your-winform-project-helloworld.png)
 
    Новый проект открывается в Visual Studio.
 
@@ -92,13 +92,13 @@ ms.locfileid: "71681590"
 
 ## <a name="create-the-application"></a>Создание приложения
 
-Когда вы выберете шаблон проекта Visual Basic и зададите имя файла, Visual Studio открывает форму. Форма является пользовательским интерфейсом Windows. Мы создадим приложение Hello World, добавив элементы управления на форму, а затем запустим его.
+Когда вы выберете шаблон проекта C# и зададите имя файла, Visual Studio открывает форму. Форма является пользовательским интерфейсом Windows. Мы создадим приложение Hello World, добавив элементы управления на форму, а затем запустим его.
 
 ### <a name="add-a-button-to-the-form"></a>Добавление кнопки на форму
 
 1. Щелкните **Панель элементов**, чтобы открыть всплывающее окно "Панель элементов".
 
-     ![Щелкните "Панель элементов", чтобы открыть окно "Панель элементов"](../ide/media/vb-toolbox-toolwindow.png)
+     ![Выберите "Панель элементов", чтобы открыть окно "Панель элементов"](../ide/media/csharp-toolbox-toolwindow.png)
 
      (Если параметр для всплывающего окна **Панель элементов** отсутствует, его можно открыть в строке меню. Для этого выберите **Вид** > **Панель элементов**. Либо нажмите клавиши **CTRL**+**ALT**+**X**.)
 
@@ -106,15 +106,15 @@ ms.locfileid: "71681590"
 
      ![Щелкните значок "Закрепить", чтобы закрепить окно "Панель элементов" в интегрированной среде разработки](../ide/media/vb-pin-the-toolbox-window.png)
 
-1. Щелкните элемент управления **Кнопка** и перетащите его на форму.
+1. Выберите элемент управления **Кнопка** и перетащите его на форму.
 
-     ![Добавление кнопки на форму](../ide/media/vb-add-a-button-to-form1.png)
+     ![Добавление кнопки на форму](../ide/media/csharp-add-button-form1.png)
 
-1. В разделе **Внешний вид** (или **Шрифты**) окна **Свойства** введите `Click this` и нажмите клавишу **ВВОД**.
+1. В окне **Свойства** найдите элемент**Текст**, измените имя с **Button1** на `Click this`, а затем нажмите клавишу **ВВОД**.
 
      ![Добавление текста для кнопки на форме](../ide/media/vb-button-control-text.png)
 
-     (Если окно **Свойства** не отображается, его можно открыть в строке меню.) Для этого щелкните **Вид** > **Окно свойств**. Или нажмите клавишу **F4**.)
+     (Если окно **Свойства** не отображается, его можно открыть в строке меню.) Для этого выберите **Вид** > **Окно свойств**. Или нажмите клавишу **F4**.)
 
 1. В разделе **Проектирование** окна **Свойства** измените имя с **Button1** на `btnClickThis`, а затем нажмите клавишу **ВВОД**.
 
@@ -133,13 +133,13 @@ ms.locfileid: "71681590"
 
 ### <a name="add-code-to-the-form"></a>Добавление кода на форму
 
-1. В окне **Form1.vb &#91;Design&#93;** дважды щелкните кнопку **Нажмите это**, чтобы открыть окно **Form1.vb**.
+1. В окне **Form1.cs [Проект]** дважды щелкните кнопку **Нажмите это**, чтобы открыть окно **Form1.cs**.
 
-      (Кроме того, можно развернуть узел **Form1.vb** в **обозревателе решений**, а затем выбрать **Form1**.)
+      (Кроме того, можно развернуть узел **Form1.cs** в **обозревателе решений**, а затем выбрать **Form1**.)
 
-1. В окне **Form1.vb** между строками **Private Sub** и **End Sub** введите `lblHelloWorld.Text = "Hello World!"`, как показано на следующем снимке экрана:
+1. В окне **Form1.cs** после строки **private void** введите `lblHelloWorld.Text = "Hello World!";`, как показано на следующем снимке экрана:
 
-     ![Добавление кода на форму](../ide/media/vb-add-code-to-the-form.png)
+     ![Добавление кода на форму](../get-started/csharp/media/csharp-winforms-add-code.png)
 
 ## <a name="run-the-application"></a>Запуск приложения
 
@@ -164,6 +164,6 @@ ms.locfileid: "71681590"
 
 ## <a name="see-also"></a>См. также
 
-* [Другие руководства по Visual Basic](/visualstudio/get-started/visual-basic/)
-* [Руководства по C#](/visualstudio/get-started/csharp/)
+* [Другие руководства по C#](/visualstudio/get-started/csharp/)
+* [Руководства по Visual Basic](/visualstudio/get-started/visual-basic/)
 * [Руководства по C++](/cpp/get-started/tutorial-console-cpp)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891345"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342444"
 ---
 # <a name="unit-test-basics"></a>Основные сведения о модульных тестах
 
@@ -369,7 +369,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 Можно запустить покрытие кода на выбранных тестах или на всех тестах решения. Окно **результатов объема протестированного кода** отображает процент блоков кода продукта, которые были задействованы по строке, функции, классу, пространству имен и модулю.
 
-Для запуска покрытия кода для методов теста в решении выберите в меню Visual Studio пункт **Тесты** , а затем **Анализ покрытия кода**.
+Чтобы запустить анализ объема протестированного кода для методов теста в решении, выберите **Тестирование** > **Анализ покрытия кода для всех тестов**.
 
 Результаты покрытия появляются в окне **Результаты объема протестированного кода**.
 

@@ -12,12 +12,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 6a5fcb489e403ff4297b4e8520346d0cc7be8361
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490604"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342332"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Назначение ролей контроллеру и агенту тестирования
 
@@ -97,13 +97,13 @@ ms.locfileid: "69490604"
 
 ::: moniker range="vs-2017"
 
-8. В меню "Тест" последовательно выберите пункты **Выбрать файл параметров тестирования** и *TestSettingDistributedTestWalkthrough.testsettings*.
+8. В меню **Тестирование** последовательно выберите пункты **Параметры тестирования** > **Выбрать файл параметров тестирования** и файл *TestSettingDistributedTestWalkthrough.testsettings*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. В **обозревателе тестов** щелкните стрелку на кнопке **Параметры**, а затем выберите пункт **Выбрать файл параметров**. Найдите и выберите файл *TestSettingDistributedTestWalkthrough.testsettings*.
+8. В меню **Тестирование** щелкните **Выбрать файл параметров**. Найдите и выберите файл *TestSettingDistributedTestWalkthrough.testsettings*.
 
 ::: moniker-end
 
