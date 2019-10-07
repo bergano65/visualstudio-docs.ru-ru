@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Сведения об учебной подписке Pluralsight, входящей в выбранные подписки Visual Studio.
-ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787657"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342386"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Преимущества обучения Pluralsight в подписках Visual Studio
 
@@ -47,8 +47,6 @@ ms.locfileid: "68787657"
    
 
 6. После успешного создания учетной записи в полученном вами сообщении электронной почты будет указано ваше имя пользователя и приведен запрос на создание пароля.  Введите пароль и его подтверждение, после чего щелкните **Войти в Pluralsight**.
-   > [!div class="mx-imgBorder"]
-   > ![Приветственное сообщение для преимущества Pluralsight](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
 
 7. Введите имя пользователя, указанное в приветственном сообщении, и созданный пароль, после чего щелкните **Войти**.
 

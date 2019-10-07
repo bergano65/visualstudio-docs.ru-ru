@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faf7738019680085020b9650094931d5860bc29b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3acdaabffc35122616cced4113abbc5a43beb9a1
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577366"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481977"
 ---
 # <a name="verifyfilehash-task"></a>Задача VerifyFileHash
 
@@ -32,11 +32,10 @@ ms.locfileid: "62577366"
 
  В следующей таблице приводятся параметры задачи `VerifyFileHash` .
 
-|Параметр|Описание|
+|Параметр|ОПИСАНИЕ|
 |---------------|-----------------|
-|`File`|Обязательный параметр <xref:Microsoft.Build.Framework.ITaskItem> .<br /><br />Файлы, которые требуется хэшировать и проверить.|
+|`File`|Обязательный параметр `String` .<br /><br />Файл, который требуется хэшировать и проверить.|
 |`Hash`|Обязательный параметр `String` .<br /><br />Ожидаемый хэш файла.|
-|`Items`|Выходной параметр <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br />Входные данные `Files` с дополнительными метаданными, заданные для хэша файла.|
 |`Algorithm`|Необязательный параметр `String` .<br /><br />Алгоритм. Допустимые значения: `SHA256`, `SHA384`, `SHA512`. По умолчанию = `SHA256`.|
 |`HashEncoding`|Необязательный параметр `String` .<br /><br />Кодировка, используемая для созданных хэшей. По умолчанию — `hex`. Допустимые значения = `hex`, `base64`.|
 

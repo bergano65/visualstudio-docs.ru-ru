@@ -1,19 +1,19 @@
 ---
 title: Написание модульных тестов для C/C++
 description: Вы можете писать модульные тесты для C++ в Visual Studio с помощью различных платформ тестирования, включая CTest, Boost.Test и Google Test.
-ms.date: 05/06/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160170"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481919"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Написание модульных тестов для C/C++ в Visual Studio
 
@@ -86,6 +86,8 @@ ms.locfileid: "67160170"
 Далее в *CPP*-файле модульного теста добавьте директивы `#include` для всех файлов заголовков, в которых объявляются тестируемые типы и функции. Введите `#include "`, после чего технология IntelliSense поможет вам выбрать файл. Повторите эти действия для всех нужных заголовков.
 
 ![Добавление директив include](media/cpp-add-includes-test-project.png)
+
+Чтобы не вводить полный путь в каждой инструкции include в исходном файле, можно добавить необходимые папки в разделе **Проект** > **Свойства** > **C/C++**  > **Общие** > **Дополнительные каталоги включаемых файлов**.
 
 ### <a name="write-test-methods"></a>Написание методов теста
 
