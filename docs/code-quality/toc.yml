@@ -4,7 +4,8 @@
   items:
     - name: Обзор
       href: code-analysis-for-managed-code-overview.md
-    - name: Анализ кода
+    - name: Анализ исходного кода
+      expanded: true
       items:
         - name: Обзор
           displayName: 'roslyn analyzers, source analysis'
@@ -13,10 +14,35 @@
           href: install-roslyn-analyzers.md
         - name: Параметр Configuration
           href: use-roslyn-analyzers.md
+        - name: Отключить анализ кода
+          href: disable-code-analysis.md
         - name: Включить полный анализ решения
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: часто задаваемые вопросы
           href: analyzers-faq.md
+        - name: Анализаторы FXCop
+          items:
+            - name: Обзор
+              displayName: fxcop analyzers
+              href: fxcop-analyzers.yml
+            - name: Установка
+              href: install-fxcop-analyzers.md
+            - name: Параметр Configuration
+              items:
+                - name: Обзор
+                  href: configure-fxcop-analyzers.md
+                - name: 'Область: параметры'
+                  href: fxcop-analyzer-options.md
+                - name: Предопределенные наборы правил
+                  href: analyzer-rule-sets.md
+            - name: часто задаваемые вопросы
+              href: fxcop-analyzers-faq.md
+        - name: Миграция с анализа прежних версий на анализаторы FxCop
+          items:
+            - name: Обзор
+              href: fxcop-analyzers.yml
+            - name: Перенесенные правила
+              href: fxcop-rule-port-status.md
     - name: Анализ прежних версий
       items:
         - name: Обзор
@@ -112,37 +138,12 @@
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
             - name: Совместимость версий
               href: version-compatibility-for-code-analysis-check-in-policies.md
-    - name: Анализаторы FXCop
-      items:
-        - name: Обзор
-          displayName: fxcop analyzers
-          href: fxcop-analyzers.yml
-        - name: Установка
-          href: install-fxcop-analyzers.md
-        - name: Параметр Configuration
-          items:
-            - name: Обзор
-              href: configure-fxcop-analyzers.md
-            - name: 'Область: параметры'
-              href: fxcop-analyzer-options.md
-            - name: Предопределенные наборы правил
-              href: analyzer-rule-sets.md
-        - name: часто задаваемые вопросы
-          href: fxcop-analyzers-faq.md
-    - name: Миграция с анализа прежних версий на анализаторы FxCop
-      items:
-        - name: Обзор
-          href: fxcop-analyzers.yml
-        - name: Перенесенные правила
-          href: fxcop-rule-port-status.md
     - name: Наборы правил
       items:
         - name: Обзор
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Настройка наборов правил
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
-        - name: "Настройка анализа кода для веб-приложения\_ASP.NET"
-          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: Создание настраиваемого набора правил
           href: how-to-create-a-custom-rule-set.md
         - name: Использование редактора набора правил
@@ -558,6 +559,7 @@
             - name: 'Предупреждения, связанные с безопасностью'
               items:
                 - name: Обзор
+                  displayName: security warnings
                   href: security-warnings.md
                 - name: CA2100. Проверьте запросы SQL на наличие уязвимостей системы безопасности
                   href: ca2100-review-sql-queries-for-security-vulnerabilities.md
