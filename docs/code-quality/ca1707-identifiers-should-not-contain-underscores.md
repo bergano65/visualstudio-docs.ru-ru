@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5ba9e8dda927edca08565b088cbde90d63443908
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234273"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252570"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707. Идентификаторы не должны содержать символы подчеркивания
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234273"
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
-|Категория|Microsoft. Naming|
+|Category|Microsoft. Naming|
 |Критическое изменение|Критическое — при возникновении сборок<br /><br /> Не критическое — при возникновении параметров типа|
 
 ## <a name="cause"></a>Причина:
@@ -46,9 +46,9 @@ ms.locfileid: "71234273"
 
 ## <a name="when-to-suppress-warnings"></a>Когда следует подавлять предупреждения
 
-Для этого правила отключать вывод предупреждений не следует.
+Не отключайте предупреждения для рабочего кода. Однако можно спокойно отключить это предупреждение для кода теста. Вы можете отключить предупреждения из этого правила, задав для его [серьезности](use-roslyn-analyzers.md#rule-severity) значение **None**. 
 
 ## <a name="related-rules"></a>Связанные правила
 
-- [CA1709 Идентификаторы должны иметь правильный регистр](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Идентификаторы должны отличаться более чем регистром](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- @NO__T 0CA1709: Идентификаторы должны иметь правильный регистр @ no__t-0
+- @NO__T 0CA1708: Идентификаторы должны отличаться более чем регистром @ no__t-0
