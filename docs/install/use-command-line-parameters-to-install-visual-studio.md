@@ -2,7 +2,7 @@
 title: Использование параметров командной строки для установки Visual Studio
 titleSuffix: ''
 description: Узнайте, как использовать параметры командной строки для управления установкой Visual Studio или ее настройки.
-ms.date: 09/11/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 306928b7a28465923ae0a5e2cc7773094458594e
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913249"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018801"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Использование параметров командной строки для установки Visual Studio
 
@@ -32,23 +32,30 @@ ms.locfileid: "70913249"
 - автоматизировать процесс установки;
 - создать кэш (структуру) файлов установки для последующего использования.
 
-Параметры командной строки используются в сочетании с начальным загрузчиком программы установки. Это файл небольшого размера (1 МБ), который инициирует процесс скачивания. Эта программа запускается в первую очередь при скачивании с сайта Visual Studio. Последние версии программы начальной загрузки для устанавливаемого вами выпуска продукта доступны по следующим ссылкам:
+Параметры командной строки используются в сочетании с начальным загрузчиком программы установки. Это файл небольшого размера (1 МБ), который инициирует процесс скачивания. Эта программа запускается в первую очередь при скачивании с сайта Visual Studio.
 
 ::: moniker range="vs-2017"
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+Сведения о том, как получить начальный загрузчик для Visual Studio 2017, см. на странице скачиваемых материалов [**Предыдущие версии Visual Studio**](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Последние версии программы начальной загрузки для устанавливаемого вами выпуска продукта доступны по следующим ссылкам:
 
 - [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 
 ::: moniker-end
+
+
+Файл начального загрузчика должен иметь одно из перечисленных ниже имен или похожее на него.
+
+* vs_enterprise.exe
+* vs_professional.exe
+* vs_community.exe
 
 ## <a name="command-line-parameters"></a>Параметры командной строки
 

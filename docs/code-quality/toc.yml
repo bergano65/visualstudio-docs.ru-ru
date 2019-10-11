@@ -532,11 +532,11 @@
                   displayName: portability warnings
                   href: portability-warnings.md
                 - name: CA1900. Поля типов значений должны быть переносимыми
-                  href: ca1900-value-type-fields-should-be-portable.md
+                  href: ca1900.md
                 - name: CA1901. Объявления P/Invoke должны быть переносимыми
-                  href: ca1901-p-invoke-declarations-should-be-portable.md
+                  href: ca1901.md
                 - name: CA1903. Используйте API только из целевой рабочей среды
-                  href: ca1903-use-only-api-from-targeted-framework.md
+                  href: ca1903.md
             - name: 'Предупреждения, связанные с надежностью'
               items:
                 - name: Обзор
@@ -847,7 +847,7 @@
       href: quick-start-code-analysis-for-c-cpp.md
     - name: "Анализ кода\_C/C++ на наличие дефектов"
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
-    - name: Демонстрационный пример
+    - name: Пример проекта
       href: demo-sample.md
     - name: Использование средств проверки на соответствие C++ Core Guidelines
       href: using-the-cpp-core-guidelines-checkers.md
@@ -855,6 +855,8 @@
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
     - name: "Наборы правил для кода\_C++"
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+    - name: Использование Clang-Tidy
+      href: clang-tidy.md
     - name: Использование заметок SAL для сокращения количества дефектов в коде
       items:
         - name: Обзор

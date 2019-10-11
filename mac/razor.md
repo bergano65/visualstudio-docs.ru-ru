@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 791182255448db01a1c43796da72bedeec9f2f96
-ms.sourcegitcommit: 9a227faafdd0bad6f017ace607dc61eb56b32d72
+ms.openlocfilehash: d9a9df56074cde8735b54c12bbbf15a79e727497
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175433"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962928"
 ---
 # <a name="create-razor-web-apps"></a>Создание веб-приложений Razor
 
@@ -47,8 +47,8 @@ Visual Studio для Mac поддерживает редактирование R
 ### <a name="pages-folder"></a>Папка Pages
 
 В этой папке содержатся веб-страницы проекта, а также код программной части для каждой из них:
-* Файл * *.cshtml* для разметки HTML и синтаксиса Razor.
-* Файл * *.cshtml.cs* для кода программной части на C#, который обрабатывает события страниц.
+   - Файл *\*.cshtml* для разметки HTML и синтаксиса Razor.
+   - Файл *\*.cshtml.cs* для кода программной части на C#, который обрабатывает события страниц.
 
 Имена вспомогательных файлов начинаются с символа подчеркивания. Например, файл _Layout.cshtml настраивает элементы пользовательского интерфейса, общие для всех страниц. Этот файл настраивает меню навигации в верхней части страницы и уведомление об авторских правах в нижней. Подробные сведения см. в статье [Макет в ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/layout).
 

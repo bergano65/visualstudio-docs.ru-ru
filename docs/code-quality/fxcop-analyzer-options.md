@@ -7,18 +7,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 27d254ac50b8127ab5cef9ba4cf914d14c0cfba5
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: c6eb32357998f0867b00a5ef0e9119c3c357ed1b
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186381"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172748"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>Параметры области действия правила для средств FxCop Analyzer
 
 Некоторые правила FxCop Analyzer позволяют уточнить, к каким частям базы кода они должны применяться. На этой странице перечислены доступные параметры конфигурации области, их допустимые значения и правила, к которым они могут применяться. Чтобы использовать эти параметры, укажите их в [файле EditorConfig](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
 Эти параметры конфигурации доступны начиная с версии 2.6.3 пакета NuGet [Microsoft. CodeAnalysis. фкскопанализерс](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) .
+
+> [!TIP]
+> Чтобы просмотреть полный список параметров, доступных для данной версии пакета Фкскопанализерс, просмотрите файл *анализатора Configuration.md* в папке *документации* для пакета. Файл находится в папке *% UserProfile% \\. нужет\паккажес\микрософт.кодеаналисис.фкскопанализерс @ no__t-2 @ no__t-3version @ no__t-4\documentation\Analyzer Configuration.md*. Этот файл документации по конфигурации включен в каждую версию пакета, начиная с версии 2.6.5. Ниже приведен пример того, как можно задокументировать параметр в файле *анализатора Configuration.md* :
+>
+> Имя параметра: `sufficient_IterationCount_for_weak_KDF_algorithm` @ no__t-1
+> Значения параметров: целочисленные значения \
+> Значение по умолчанию: Конкретно для каждого настраиваемого правила (по умолчанию — "100000" для большинства правил) \
+> Пример: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
 
 ## <a name="api_surface"></a>api_surface
 
@@ -33,19 +41,19 @@ ms.locfileid: "71186381"
 | Следует ли игнорировать асинхронные методы, которые не возвращают значение | `true`<br/>`false` | `false` | [CA2007](ca2007-do-not-directly-await-task.md) |
 
 > [!NOTE]
-> В версии 2.6.3 и более ранних версиях пакета анализатора этот параметр был `skip_async_void_methods`назван.
+> В версии 2.6.3 и более ранних версиях анализатора этот параметр назывался `skip_async_void_methods`.
 
 ## <a name="exclude_single_letter_type_parameters"></a>exclude_single_letter_type_parameters
 
 | Описание | Допустимые значения | Значение по умолчанию | Настраиваемые правила |
 | - | - | - | - |
-| Следует ли исключить из правила [Параметры типа](/dotnet/csharp/programming-guide/generics/generic-type-parameters) с одним символом, например `S` в`Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
+| Следует ли исключить из правила [Параметры типа](/dotnet/csharp/programming-guide/generics/generic-type-parameters) из одного символа, например `S` в `Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
 
 > [!NOTE]
-> В версии 2.6.3 и более ранних версиях пакета анализатора этот параметр был `allow_single_letter_type_parameters`назван.
+> В версии 2.6.3 и более ранних версиях анализатора этот параметр назывался `allow_single_letter_type_parameters`.
 
 ## <a name="output_kind"></a>output_kind
 
 | Описание | Допустимые значения | Значение по умолчанию | Настраиваемые правила |
 | - | - | - | - |
-| Указывает, что код в проекте, который создает сборку этого типа, должен быть проанализирован | Одно или несколько полей <xref:Microsoft.CodeAnalysis.OutputKind> перечисления<br/><br/>Несколько значений следует разделять запятой (,) | Все типы выходных данных | [CA2007](ca2007-do-not-directly-await-task.md) |
+| Указывает, что код в проекте, который создает сборку этого типа, должен быть проанализирован | Одно или несколько полей перечисления <xref:Microsoft.CodeAnalysis.OutputKind><br/><br/>Несколько значений следует разделять запятой (,) | Все типы выходных данных | [CA2007](ca2007-do-not-directly-await-task.md) |

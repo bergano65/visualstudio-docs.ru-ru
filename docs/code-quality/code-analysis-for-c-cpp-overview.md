@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7b0e29f6a9a502054b59fc7313c3eff0565f938
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: MT
+ms.openlocfilehash: 493db26aed1a4e5f41acdd054dba266577159809
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919887"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018485"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Общие сведения об анализе кода в C/C++
 
@@ -50,7 +50,7 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>Поддержка #pragma
 
-`#pragma` Директиву можно использовать, чтобы обрабатывать предупреждения как ошибки, включать или отключать предупреждения и подавлять предупреждения для отдельных строк кода. Дополнительные сведения см. в разделе [Директивы Pragma и ключевое слово __Pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+Можно использовать директиву `#pragma`, чтобы обрабатывать предупреждения как ошибки; Включение и отключение предупреждений, а также отключение предупреждений для отдельных строк кода. Дополнительные сведения см. в разделе [Директивы Pragma и ключевое слово __Pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Поддержка заметок
 
@@ -58,7 +58,7 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Запуск средства анализа в рамках политики возврата
 
-Вы можете предъявлять определенные требования к возвратам исходного кода. В частности, нужно убедиться, что анализ выполнялся в рамках самой последней локальной сборки. Дополнительные сведения о включении политики возврата с анализом кода см. [в разделе Создание и использование политик возврата](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)с анализом кода.
+Вы можете предъявлять определенные требования к возвратам исходного кода. В частности, нужно убедиться, что анализ выполнялся в рамках самой последней локальной сборки. Дополнительные сведения о включении политики возврата с анализом кода см. [в разделе Создание и использование политик возврата с анализом](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)кода.
 
 ## <a name="team-build-integration"></a>Интеграция Team Build
 
@@ -67,7 +67,7 @@ C:\>cl /analyze Sample.cpp
 ## <a name="see-also"></a>См. также
 
 - [Краткое руководство. Анализ кода для C/C++](quick-start-code-analysis-for-c-cpp.md)
-- [Пошаговое руководство: Анализ кода CC++ /код для дефектов](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [Пошаговое руководство: Анализ C/C++ Code за дефекты @ no__t-1
 - [Анализ кода для предупреждений C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Использование средств проверки на соответствие C++ Core Guidelines](using-the-cpp-core-guidelines-checkers.md)
 - [C++Справочник по проверке основных правил](code-analysis-for-cpp-corecheck.md)

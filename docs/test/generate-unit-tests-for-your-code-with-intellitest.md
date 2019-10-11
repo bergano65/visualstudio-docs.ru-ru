@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c9670182432b1c6bc1e763e014b04b193c399330
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 1d3a86d9ef5823b5935ad99facd6a82bf3af9789
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461221"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018938"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Практическое руководство. Создание модульных тестов с помощью IntelliTest
 
@@ -142,10 +142,7 @@ IntelliTest изучает код .NET, чтобы создать тестовы
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Вопрос: Можно ли использовать другие платформы модульного тестирования с IntelliTest?
 
 **Ответ.** Да, выполните инструкции по [поиску и установке других платформ](../test/install-third-party-unit-test-frameworks.md).
-Расширения платформы тестирования также доступны в Visual Studio Marketplace.
-
-* [Расширение NUnit для генераторов тестов](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
-* [Расширение xUnit.net для генераторов тестов](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
+Расширения платформы тестирования также доступны в Visual Studio Marketplace, например [генератор тестов NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371).
 
 Перезапустив Visual Studio и открыв решение повторно, щелкните правой кнопкой мыши в коде класса или метода и выберите пункт **Создать IntelliTest**. Выберите установленную платформу здесь:
 

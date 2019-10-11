@@ -1,7 +1,7 @@
 ---
 title: Создание автономной установки
 description: Узнайте, как установить Visual Studio в автономном режиме в случае ненадежного подключения к Интернету или низкой пропускной способности.
-ms.date: 07/24/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1c210498b88ab1a4fd149870fc3528ddc869ecd6
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: 28351407e80c723c0b60640b7e56177c85c2a476
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322556"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018846"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Создание автономной установки Visual Studio
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 поддерживает различные конфигурации сети и компьютера. Мы рекомендуем использовать [веб-установщик Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)&mdash; — небольшой файл, в который входят все последние исправления и функции&mdash;, но понимаем, что это не всегда возможно.
+Visual Studio 2017 поддерживает различные конфигурации сети и компьютера. Мы рекомендуем использовать [веб-установщик Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads)&mdash; — небольшой файл, в который входят все последние исправления и функции&mdash;, но понимаем, что это не всегда возможно.
 
 ::: moniker-end
 
@@ -75,20 +75,24 @@ Visual Studio 2019 поддерживает различные конфигур
 
 Для выполнения этого действия необходимо подключение к Интернету.
 
-Прежде всего следует скачать загрузчик Visual Studio для выбранного выпуска Visual Studio. Файл установки &mdash;или загрузчик&mdash; должны иметь одно из перечисленных ниже имен или похожее.
-
 ::: moniker range="vs-2017"
 
-| Выпуск                    | Файл                                                                    |
-|----------------------------|-------------------------------------------------------------------------|
-| Visual Studio Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
-| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
-| Visual Studio Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
+Сведения о том, как получить начальный загрузчик для Visual Studio 2017, см. на странице скачиваемых материалов [Предыдущие версии Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/).
+
+Исполняемый файл программы установки&mdash;а точнее файл начального загрузчика&mdash;должен соответствовать одному из следующих.
+
+| Выпуск | имя_файла |
+|-------------|-----------------------|
+|Visual Studio Community | vs_community.exe |
+|Visual Studio Professional | vs_professional.exe |
+|Visual Studio Enterprise | vs_enterprise.exe |
+|Visual Studio Build Tools   | vs_buildtools.exe |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Прежде всего следует скачать загрузчик Visual Studio для выбранного выпуска Visual Studio. Файл установки &mdash;или загрузчик&mdash; должны иметь одно из перечисленных ниже имен или похожее.
 
 | Выпуск                    | Файл                                                                    |
 |----------------------------|-------------------------------------------------------------------------|

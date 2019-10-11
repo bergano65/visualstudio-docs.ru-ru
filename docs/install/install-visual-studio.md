@@ -2,7 +2,7 @@
 title: Установка Visual Studio
 titleSuffix: ''
 description: Сведения о поэтапной установке среды Visual Studio.
-ms.date: 04/16/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095360"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018850"
 ---
 # <a name="install-visual-studio"></a>Установка Visual Studio
 
@@ -82,7 +82,7 @@ ms.locfileid: "71095360"
 
 1. Перезагрузите систему. Перезагрузка гарантирует, что ожидающие установки или обновления компоненты не будут препятствовать установке Visual Studio.
 
-1. Освободите место. Удалите ненужные файлы и приложения с системного диска. Например, запустите приложение очистки диска. 
+1. Освободите место. Удалите ненужные файлы и приложения с системного диска. Например, запустите приложение очистки диска.
 
 ::: moniker-end
 
@@ -100,16 +100,17 @@ ms.locfileid: "71095360"
 
 ## <a name="step-2---download-visual-studio"></a>Шаг 2.Скачивание Visual Studio
 
-Теперь скачайте файл начального загрузчика Visual Studio. Для этого нажмите кнопку ниже, выберите нужный выпуск Visual Studio, щелкните **Сохранить**, а затем **Открыть папку**.
+Теперь скачайте файл начального загрузчика Visual Studio.
 
 ::: moniker range="vs-2017"
 
- > [!div class="button"]
- > [Скачать Visual Studio 2012](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+Сведения о том, как получить начальный загрузчик для Visual Studio 2017, см. на странице скачиваемых материалов [Предыдущие версии Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Для этого нажмите кнопку ниже, выберите нужный выпуск Visual Studio, щелкните **Сохранить**, а затем **Открыть папку**.
 
  > [!div class="button"]
  > [Скачать Visual Studio 2012](https://visualstudio.microsoft.com/downloads)
@@ -250,7 +251,7 @@ ms.locfileid: "71095360"
 
 1. В поле поиска введите тип приложения, которое вы хотите создать, чтобы просмотреть список доступных шаблонов. Список шаблонов зависит от рабочих нагрузок, выбранных во время установки. Чтобы просмотреть различные шаблоны, выберите разные рабочие нагрузки.
 
-   Можно также фильтровать поиск по определенному языку программирования с помощью раскрывающегося списка **Язык**. Вы также можете выбирать фильтры из списка **Платформа** и **Тип проекта**. 
+   Можно также фильтровать поиск по определенному языку программирования с помощью раскрывающегося списка **Язык**. Вы также можете выбирать фильтры из списка **Платформа** и **Тип проекта**.
 
 1. Новый проект откроется в Visual Studio, и вы можете приступить к написанию кода!
 

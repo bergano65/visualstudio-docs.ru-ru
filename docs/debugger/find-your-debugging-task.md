@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817512"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018780"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Поиск задачи отладки в Visual Studio
 
@@ -34,7 +34,10 @@ ms.locfileid: "71817512"
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>Приостанавливать код только при изменении свойства или значения конкретного объекта
 
-Для C++задайте [точку останова в данных](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus). Для приложений, использующих .NET Core 3, можно также задать [точку останова по данным](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
+Для C++задайте [точку останова в данных](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus). 
+::: moniker range=">= vs-2019"
+Для приложений, использующих .NET Core 3, можно также задать [точку останова по данным](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
+::: moniker-end
 
 В противном C# случае F# , только для и можно [отвести идентификатор объекта с условной точкой останова](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f).
 

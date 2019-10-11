@@ -1,7 +1,7 @@
 ---
 title: Обновление сетевой установки
 description: Сведения об обновлении сетевой установки Visual Studio с помощью команды --layout
-ms.date: 03/30/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd7277c4c42856ceea5e4da0a45d54613bf66c74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2157a6142f95b6ffe34503a8ee80419fcb9ca506
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971372"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018813"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Обновление сетевой установки Visual Studio
 
@@ -42,7 +42,7 @@ ms.locfileid: "62971372"
 
 ::: moniker-end
 
-Если макет размещается на общем файловом ресурсе, следует обновить закрытую копию макета (например, c:\vsoffline) и только после скачивания всех обновлений скопировать обновленные данные в общую папку (например, \\server\products\VS). В противном случае повышается вероятность, что кто-то из пользователей запустит программу установки во время обновления макета и не сможет получить полное содержимое макета, так как его обновление не завершено.
+Если макет размещается в общей папке, следует обновить закрытую копию макета (например, c:\VSLayout) и только после скачивания всех обновлений скопировать обновленные данные в общую папку (например, \\server\products\VS). В противном случае повышается вероятность, что кто-то из пользователей запустит программу установки во время обновления макета и не сможет получить полное содержимое макета, так как его обновление не завершено.
 
 Рассмотрим несколько примеров создания и обновления макета:
 

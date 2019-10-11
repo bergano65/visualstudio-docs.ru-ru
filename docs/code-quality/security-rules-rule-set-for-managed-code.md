@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1131f9cf0e77fd4fe68e4bc5c033491aa6dd34e1
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 85bf4e140b3a379221c3b7e5a05428b29e3a985b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585189"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018378"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Набор правил "Правила безопасности" для управляемого кода
 
@@ -64,25 +64,25 @@ ms.locfileid: "69585189"
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Прозрачные методы могут не использовать утверждения безопасности|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Прозрачные методы не должны вызывать машинный код|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Сборки должны иметь допустимые строгие имена|
-|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Не используйте небезопасный десериализатор BinaryFormatter|
-|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|Не вызывайте BinaryFormatter.Deserialize, не задав предварительно BinaryFormatter.Binder|
-|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Убедитесь, что BinaryFormatter.Binder задан перед вызовом BinaryFormatter.Deserialize|
-|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|Не используйте небезопасный десериализатор LosFormatter|
-|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|Не используйте небезопасный десериализатор NetDataContractSerializer|
-|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|Не десериализируйте, не задав предварительно NetDataContractSerializer.Binder|
-|[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|Убедитесь, что NetDataContractSerializer.Binder задан перед десериализацией|
-|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|Не используйте небезопасный десериализатор ObjectStateFormatter|
+|[CA2300](ca2300.md)|Не используйте небезопасный десериализатор BinaryFormatter|
+|[CA2301](ca2301.md)|Не вызывайте BinaryFormatter.Deserialize, не задав предварительно BinaryFormatter.Binder|
+|[CA2302](ca2302.md)|Убедитесь, что BinaryFormatter.Binder задан перед вызовом BinaryFormatter.Deserialize|
+|[CA2305](ca2305.md)|Не используйте небезопасный десериализатор LosFormatter|
+|[CA2310](ca2310.md)|Не используйте небезопасный десериализатор NetDataContractSerializer|
+|[CA2311](ca2311.md)|Не десериализируйте, не задав предварительно NetDataContractSerializer.Binder|
+|[CA2312](ca2312.md)|Убедитесь, что NetDataContractSerializer.Binder задан перед десериализацией|
+|[CA2315](ca2315.md)|Не используйте небезопасный десериализатор ObjectStateFormatter|
 |[CA2321](ca2321.md)|Не десериализируйте с помощью JavaScriptSerializer, используя SimpleTypeResolver|
 |[CA2322](ca2322.md)|Убедитесь, что JavaScriptSerializer не был инициализирован с помощью SimpleTypeResolver до десериализации|
-|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению кода SQL|
-|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Проверьте код на наличие уязвимостей к межсайтовым сценариям (XSS)|
-|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению пути к файлу|
-|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|Проверьте код на наличие уязвимостей к раскрытию информации|
-|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению LDAP|
-|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению команд процесса|
-|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|Проверьте код на наличие уязвимостей к открытому перенаправлению|
-|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению кода XPath|
-|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению кода XML|
-|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению кода XAML|
-|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению DLL|
-|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|Проверьте код на наличие уязвимостей к внедрению регулярных выражений|
+|[CA3001](../code-quality/ca3001.md)|Проверьте код на наличие уязвимостей к внедрению кода SQL|
+|[CA3002](../code-quality/ca3002.md)|Проверьте код на наличие уязвимостей к межсайтовым сценариям (XSS)|
+|[CA3003](../code-quality/ca3003.md)|Проверьте код на наличие уязвимостей к внедрению пути к файлу|
+|[CA3004](../code-quality/ca3004.md)|Проверьте код на наличие уязвимостей к раскрытию информации|
+|[CA3005](../code-quality/ca3005.md)|Проверьте код на наличие уязвимостей к внедрению LDAP|
+|[CA3006](../code-quality/ca3006.md)|Проверьте код на наличие уязвимостей к внедрению команд процесса|
+|[CA3007](../code-quality/ca3007.md)|Проверьте код на наличие уязвимостей к открытому перенаправлению|
+|[CA3008](../code-quality/ca3008.md)|Проверьте код на наличие уязвимостей к внедрению кода XPath|
+|[CA3009](../code-quality/ca3009.md)|Проверьте код на наличие уязвимостей к внедрению кода XML|
+|[CA3010](../code-quality/ca3010.md)|Проверьте код на наличие уязвимостей к внедрению кода XAML|
+|[CA3011](../code-quality/ca3011.md)|Проверьте код на наличие уязвимостей к внедрению DLL|
+|[CA3012](../code-quality/ca3012.md)|Проверьте код на наличие уязвимостей к внедрению регулярных выражений|
