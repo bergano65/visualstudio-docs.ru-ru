@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: f754d62f95dee9531429f9421571982307af9966
-  ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+  ms.openlocfilehash: 753172144647fcbf699ddc85328dd5e2a94ae87b
+  ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/24/2019
-  ms.locfileid: "71238128"
+  ms.lasthandoff: 10/12/2019
+  ms.locfileid: "72289588"
 highlightedContent:
   items:
   - title: Настройка и установка
@@ -141,7 +141,7 @@ additionalContent:
       url: deployment/index.yml
     - title: Управление версиями
       summary: Совместное использование кода с помощью таких технологий управления версиями, как Git и TFVC.
-      url: version-control/index.md
+      url: /azure/devops/repos/index
     - title: DevOps
       summary: Воспользуйтесь возможностью непрерывной разработки и публикации приложений в облаке и реализуйте принципы Agile с помощью Azure DevOps Services.
       url: /azure/devops
@@ -151,7 +151,7 @@ additionalContent:
     - title: Расширения
       summary: Включение собственных функций в среду разработки Visual Studio для оптимизации разработки.
       url: extensibility/index.md
-    - title: Данные
+    - title: Data
       summary: Создание приложений для обработки данных, которые могут подключаться к любой локальной или облачной базе данных или службе.
       url: data-tools/accessing-data-in-visual-studio.md
     - title: Совместная работа
