@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 13da6cd34df3996fe837aee89ce4f379027dd409
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251691"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000157"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Соглашения об именовании в среде .NET для EditorConfig
 
@@ -48,7 +48,7 @@ ms.locfileid: "71251691"
 - interface
 - enum
 - свойство;
-- метод
+- method
 - поле
 - event
 - delegate
@@ -226,7 +226,7 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Если вы закроете и снова откроете файл с кодом, в нем не будет предложения. Нарушение имени будет подчеркнуто зеленой волнистой линией, а в **списке ошибок** появится предупреждение:
+Если вы закроете и снова откроете файл с кодом, в нем не будет предложения. Нарушение имени будет подчеркнуто зеленой волнистой линией, а в списке ошибок появится предупреждение:
 
 ![Предупреждение правила именования](media/editorconfig-naming-rule-warning.png)
 

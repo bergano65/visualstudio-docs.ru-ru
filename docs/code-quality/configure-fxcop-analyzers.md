@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7619b040343720198e190f551741f565e62fa145
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 62dd64dfe4e801f91731b1ed569e3a809156d0d1
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186402"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172791"
 ---
 # <a name="configure-fxcop-analyzers"></a>Настройка анализаторов FxCop
 
 [Пакет анализаторов FxCop](install-fxcop-analyzers.md) состоит из наиболее важных правил FXCop из устаревшего анализа, преобразованных в анализаторы кода на основе .NET Compiler Platform. Для некоторых правил FxCop можно уточнить, к каким частям базы кода следует применить эти параметры с помощью [настраиваемых параметров](fxcop-analyzer-options.md). Каждый параметр указывается путем добавления пары "ключ-значение" в файл [EditorConfig](https://editorconfig.org) . Файл конфигурации может быть [специфичным для проекта](#per-project-configuration) или может [совместно](#shared-configuration) использоваться двумя или более проектами.
 
 > [!TIP]
-> Вы можете добавить editorconfig-файл в проект, щелкнув правой кнопкой мыши проект в **Обозреватель решений** и выбрав **Добавить** > **новый элемент**. В окне **Добавление нового элемента** введите **editorconfig** в поле поиска. Выберите шаблон **Editorconfig File (по умолчанию)** и нажмите кнопку **Добавить**.
+> Добавьте в проект файл. editorconfig, щелкнув правой кнопкой мыши проект в **Обозреватель решений** и выбрав **Добавить** > **новый элемент**. В окне **Добавление нового элемента** введите **editorconfig** в поле поиска. Выберите шаблон **Editorconfig File (по умолчанию)** и нажмите кнопку **Добавить**.
 >
 > ![Добавление файла editorconfig в проект в Visual Studio](media/add-editorconfig-file.png)
 
 ::: moniker range=">=vs-2019"
 
-Сведения о настройке серьезности правила (например, о том, является ли это сообщение ошибкой или предупреждением) см. [в разделе Установка серьезности правила в файле EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file). Или можно выбрать один из встроенных [наборов правил](analyzer-rule-sets.md) , чтобы быстро включить или отключить категорию правил.
+Сведения о настройке серьезности правила (например, о том, является ли это сообщение ошибкой или предупреждением) см. [в разделе Установка серьезности правила в файле EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file). Также можно выбрать один из встроенных [файлов или наборов правил EditorConfig](analyzer-rule-sets.md) , чтобы быстро включить или отключить категорию правил.
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ ms.locfileid: "71186402"
    </Project>
    ```
 
-3. Добавьте строку в *CSPROJ* -или *VBPROJ* -файл для импорта файла PROPS , созданного на предыдущем шаге. Эту строку необходимо поместить перед любыми строками, которые импортируют файлы FxCop Analyzer *. props* . Например, если файл. props имеет имя *editorconfig. props*:
+3. Добавьте строку в *CSPROJ* -или *VBPROJ* -файл для импорта файла *PROPS* , созданного на предыдущем шаге. Эту строку необходимо поместить перед любыми строками, которые импортируют файлы FxCop Analyzer *. props* . Например, если файл. props имеет имя *editorconfig. props*:
 
    ```xml
    ...

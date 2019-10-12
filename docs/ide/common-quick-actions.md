@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551440"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000144"
 ---
 # <a name="common-quick-actions"></a>Распространенные быстрые действия
 
@@ -30,7 +30,7 @@ ms.locfileid: "69551440"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Исправление опечаток в символах или ключевых словах
 
-Если вы неправильно вводите тип или ключевое слово в Visual Studio, это быстрое действие автоматически исправляет его. В меню лампочки отобразится следующий текст: **Изменить *слово с опечаткой* на *правильное слово*** . Например:
+Если вы неправильно вводите тип или ключевое слово в Visual Studio, это быстрое действие автоматически исправляет его. В меню лампочки отобразится следующий текст: **Изменить "\<слово с опечаткой>" на "\<правильное слово>"** . Например:
 
 ```csharp
 // Before
@@ -58,9 +58,9 @@ Function MyFunction as Integer
 End Function
 ```
 
-| Идентификатор ошибки | Применимые языки | Поддерживаемая версия |
-| ------- | -------------------- | ---------------- |
-| CS0103, BC30002 | C# и Visual Basic | Visual Studio 2015 с обновлением 2 |
+| Идентификатор ошибки | Применимые языки |
+| - | - |
+| CS0103, BC30002 | C# и Visual Basic |
 
 ### <a name="resolve-git-merge-conflict"></a>Разрешение конфликтов слияния Git
 
@@ -90,7 +90,7 @@ private void MyMethod()
 
 | Идентификатор ошибки | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| CS8300, BC37284 | C# и Visual Basic | Visual Studio 2017 версия 15.3 |
+| CS8300, BC37284 | C# и Visual Basic | Visual Studio 2017 версии 15.3 и более поздней |
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Действия для удаления ненужного кода
 
@@ -99,8 +99,8 @@ private void MyMethod()
 Быстрое действие **Удалить ненужные директивы using/импорты** удалит все неиспользуемые операторы `using` и `Import` в текущем файле. При выборе этого элемента удаляются неиспользованные импорты пространства имен.
 
 | Применимые языки | Поддерживаемая версия |
-| -------------------- | ---------------- |
-| C# и Visual Basic | Visual Studio 2015 RTW |
+| - | - |
+| C# и Visual Basic | Visual Studio 2015 и более поздней версии |
 
 ### <a name="remove-unnecessary-cast"></a>Удаление ненужного приведения
 
@@ -128,7 +128,7 @@ Dim number as Integer = 3
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0004 | C# и Visual Basic | Visual Studio 2015 RTW |
+| IDE0004 | C# и Visual Basic | Visual Studio 2015 и более поздней версии |
 
 ### <a name="remove-unused-variables"></a>Удаление неиспользуемых переменных
 
@@ -155,7 +155,7 @@ public MyMethod()
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| CS0219, BC42024 | C# и Visual Basic | Visual Studio 2017 версия 15.3 |
+| CS0219, BC42024 | C# и Visual Basic | Visual Studio 2017 версии 15.3 и более поздней |
 
 ### <a name="remove-type-from-default-value-expression"></a>Удаление типа из выражения значения по умолчанию
 
@@ -173,7 +173,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0034 | C# 7.1+ | Visual Studio 2017 версия 15.3 |
+| IDE0034 | C# 7.1+ | Visual Studio 2017 версии 15.3 и более поздней |
 
 ## <a name="actions-that-add-missing-code"></a>Действия для добавления недостающего кода
 
@@ -210,9 +210,9 @@ Imports System.Diagnostics
 Debug.WriteLine("Hello")
 ```
 
-| ИД диагностики | Применимые языки | Поддерживаемая версия |
-| ------- | -------------------- | ---------------- |
-| CS0103, BC30451 | C# и Visual Basic| Visual Studio 2015 с обновлением 2 |
+| ИД диагностики | Применимые языки |
+| - | - |
+| CS0103, BC30451 | C# и Visual Basic|
 
 ### <a name="add-missing-casesdefault-caseboth"></a>Добавление отсутствующих элементов case и/или case по умолчанию
 
@@ -281,7 +281,7 @@ End Select
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0010 | C# и Visual Basic| Visual Studio 2017 версия 15.3 |
+| IDE0010 | C# и Visual Basic| Visual Studio 2017 версии 15.3 и более поздней |
 
 ### <a name="add-null-checks-for-parameters"></a>Добавление проверки null для параметров
 
@@ -315,7 +315,7 @@ class MyClass
 
 | Применимые языки | Поддерживаемая версия |
 | -------------------- | ---------------- |
-| C# и Visual Basic| Visual Studio 2017 версия 15.3 |
+| C# и Visual Basic| Visual Studio 2017 версии 15.3 и более поздней |
 
 ### <a name="add-argument-name"></a>Добавление имени аргумента
 
@@ -331,7 +331,7 @@ var date = new DateTime(year: 1997, month: 7, day: 8);
 
 | Применимые языки | Поддерживаемая версия |
 | -------------------- | ---------------- |
-| C# и Visual Basic| Visual Studio 2017 версия 15.3 |
+| C# и Visual Basic| Visual Studio 2017 версии 15.3 и более поздней |
 
 ### <a name="add-braces"></a>Добавление фигурных скобок
 
@@ -353,7 +353,7 @@ if (true)
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0011 | C# | Visual Studio 2017 RTW |
+| IDE0011 | C# | Visual Studio 2017 и более поздних версий |
 
 ### <a name="add-and-order-modifiers"></a>Добавление и упорядочивание модификаторов
 
@@ -387,8 +387,8 @@ private static int thisFieldIsPublic;
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0036 | C# и Visual Basic| Visual Studio 2017 версии 15.5 |
-| IDE0040 | C# и Visual Basic| Visual Studio 2017 версии 15.5 |
+| IDE0036 | C# и Visual Basic| Visual Studio 2017 версии 15.5 и более поздних |
+| IDE0040 | C# и Visual Basic| Visual Studio 2017 версии 15.5 и более поздних |
 
 ## <a name="code-transformations"></a>Преобразование кода
 
@@ -445,7 +445,7 @@ End Select
 
 | Применимые языки | Поддерживаемая версия |
 | -------------------- | ---------------- |
-| C# и Visual Basic| Visual Studio 2017 версия 15.3 |
+| C# и Visual Basic| Visual Studio 2017 версии 15.3 и более поздней |
 
 ### <a name="convert-to-interpolated-string"></a>Преобразование в интерполированную строку
 
@@ -477,7 +477,7 @@ Dim s As String = $"My string with {num} in the middle"
 
 | Применимые языки | Поддерживаемая версия |
 | -------------------- | ---------------- |
-| C# 6.0+ и Visual Basic 14+ | Visual Studio 2017 RTW |
+| C# 6.0+ и Visual Basic 14+ | Visual Studio 2017 и более поздних версий |
 
 ### <a name="use-object-initializers"></a>Использование инициализаторов объектов
 
@@ -507,7 +507,7 @@ Dim c = New Customer() With {.Age = 21}
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0017 | C# и Visual Basic | Visual Studio 2017 RTW |
+| IDE0017 | C# и Visual Basic | Visual Studio 2017 и более поздних версий |
 
 ### <a name="use-collection-initializers"></a>Использование инициализаторов набора
 
@@ -541,7 +541,7 @@ Dim list = New List(Of Integer) From {1, 2, 3}
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0028 | C# и Visual Basic | Visual Studio 2017 RTW |
+| IDE0028 | C# и Visual Basic | Visual Studio 2017 и более поздних версий |
 
 ### <a name="convert-auto-property-to-full-property"></a>Преобразование автосвойства в полное свойство
 
@@ -582,7 +582,7 @@ End Property
 
 | Применимые языки | Поддерживаемая версия |
 | -------------------- | ---------------- |
-| C# и Visual Basic | Visual Studio 2017 версии 15.5 |
+| C# и Visual Basic | Visual Studio 2017 версии 15.5 и более поздних |
 
 ### <a name="convert-block-body-to-expression-bodied-member"></a>Преобразование тела блока в элемент с телом выражения
 
@@ -635,7 +635,7 @@ class MyClass4
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0021-27 | C# 6.0+ | Visual Studio 2017 RTW |
+| IDE0021-27 | C# 6.0+ | Visual Studio 2017 и более поздних версий |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>Преобразование анонимной функции в локальную
 
@@ -662,7 +662,7 @@ int fibonacci(int n)
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0041 | C# 7.0+ | Visual Studio 2017 версии 15.5 |
+| IDE0041 | C# 7.0+ | Visual Studio 2017 версии 15.5 и более поздних |
 
 Это быстрое действие предлагает использовать [сопоставление шаблонов](/dotnet/csharp/pattern-matching), а не шаблон кода ```ReferenceEquals```, где это возможно.
 
@@ -686,7 +686,7 @@ if (value is null)
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0039 | C# 7.0+ | Visual Studio 2017 версии 15.5 |
+| IDE0039 | C# 7.0+ | Visual Studio 2017 версии 15. и более поздних версий |
 
 ### <a name="introduce-pattern-matching"></a>Введение сопоставления шаблонов
 
@@ -728,8 +728,8 @@ if (o is string s)
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0020 | C# 7.0+ | Visual Studio 2017 RTW |
-| IDE0019 | C# 7.0+ | Visual Studio 2017 RTW |
+| IDE0020 | C# 7.0+ | Visual Studio 2017 и более поздних версий |
+| IDE0019 | C# 7.0+ | Visual Studio 2017 и более поздних версий |
 
 ### <a name="change-base-for-numeric-literals"></a>Изменение основания для числовых литералов
 
@@ -757,7 +757,7 @@ Dim countdown As Integer = &H200000
 
 | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| C# 7.0 и более поздние версии, Visual Basic 14 и более поздние версии | Visual Studio 2017 версия 15.3 |
+| C# 7.0 и более поздние версии, Visual Basic 14 и более поздние версии | Visual Studio 2017 версии 15.3 и более поздней |
 
 ### <a name="insert-digit-separators-into-literals"></a>Добавление разделителей между цифрами в литералах
 
@@ -785,7 +785,7 @@ Dim countdown As Integer = 1_000_000
 
 | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| C# 7.0 и более поздние версии, Visual Basic 14 и более поздние версии | Visual Studio 2017 версия 15.3 |
+| C# 7.0 и более поздние версии, Visual Basic 14 и более поздние версии | Visual Studio 2017 версии 15.3 и более поздней |
 
 ### <a name="use-explicit-tuple-names"></a>Использование явных имен кортежей
 
@@ -817,7 +817,7 @@ Dim name = customer.name
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0033 | C# 7.0+ и Visual Basic 15+ | Visual Studio 2017 RTW |
+| IDE0033 | C# 7.0+ и Visual Basic 15+ | Visual Studio 2017 и более поздних версий |
 
 ### <a name="use-inferred-names"></a>Использование выводимых имен
 
@@ -845,8 +845,8 @@ var tuple = (age, name);
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0037 | C# | Visual Studio 2017 версии 15.5 |
-| IDE0037 | C# 7.1+ | Visual Studio 2017 версии 15.5 |
+| IDE0037 | C# | Visual Studio 2017 версии 15.5 и более поздних |
+| IDE0037 | C# 7.1+ | Visual Studio 2017 версии 15.5 и более поздних |
 
 ### <a name="deconstruct-tuple-declaration"></a>Деконструирование объявления кортежа
 
@@ -872,7 +872,7 @@ Console.WriteLine($"{x} {y}");
 
 | ИД диагностики | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| IDE0042 | C# 7.0+ | Visual Studio 2017 версии 15.5 |
+| IDE0042 | C# 7.0+ | Visual Studio 2017 версии 15.5 и более поздних |
 
 ### <a name="make-method-synchronous"></a>Превращение метода в синхронный
 
@@ -908,9 +908,9 @@ Function MyAsyncMethod() As Integer
 End Function
 ```
 
-| Идентификатор ошибки | Применимые языки | Поддерживаемая версия |
-| ------- | -------------------- | ---------------- |
-| CS1998, BC42356 | C# и Visual Basic | Visual Studio 2015 с обновлением 2 |
+| Идентификатор ошибки | Применимые языки |
+| ------- | -------------------- |
+| CS1998, BC42356 | C# и Visual Basic |
 
 ### <a name="make-method-asynchronous"></a>Превращение метода в асинхронный
 
@@ -948,7 +948,7 @@ End Function
 
 | Идентификатор ошибки | Применимые языки | Поддерживаемая версия |
 | ------- | -------------------- | ---------------- |
-| CS4032, BC37057 | C# и Visual Basic | Visual Studio 2017 |
+| CS4032, BC37057 | C# и Visual Basic | Visual Studio 2017 и более поздних версий |
 
 ## <a name="see-also"></a>См. также
 

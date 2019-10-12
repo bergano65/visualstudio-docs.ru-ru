@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 28f3fda6-35e8-485b-9755-1991aaccec3f
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc3f09575085039986a0b2fbbf3eb386ee5f5e1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8a1c77a7db2a16b05c1b6b0eeb5e02abef4c9c3
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540785"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018460"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Анализ кода для предупреждений C/C++
-В этом разделе перечислены предупреждения анализа кода C/C++, за исключением тех, которые вызываются [программы правила C++ Core](code-analysis-for-cpp-corecheck.md). Сведения об анализе кода см. в разделе [/ analyze (анализ кода)](/cpp/build/reference/analyze-code-analysis) и [быстрого запуска: Анализ кода для C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+В этом разделе перечислены предупрежденияC++ анализа C/Code, за исключением тех, которые вызываются [ C++ основными проверочными](code-analysis-for-cpp-corecheck.md)анализаторами. Дополнительные сведения об анализе кода см. в разделе [/Analyze (анализ кода)](/cpp/build/reference/analyze-code-analysis) и @no__t 1Quick Start: Анализ кода для C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 ## <a name="see-also"></a>См. также
 
