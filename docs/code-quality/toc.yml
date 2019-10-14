@@ -33,7 +33,7 @@
                   href: configure-fxcop-analyzers.md
                 - name: 'Область: параметры'
                   href: fxcop-analyzer-options.md
-                - name: Предопределенные наборы правил
+                - name: Включение категории правил
                   href: analyzer-rule-sets.md
             - name: часто задаваемые вопросы
               href: fxcop-analyzers-faq.md
