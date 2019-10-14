@@ -120,13 +120,13 @@
     - name: Вступление
       displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
-    - name: Новые возможности в Live Unit Testing
+    - name: Новые возможности
       href: live-unit-testing-whats-new.md
-    - name: Начало работы с Live Unit Testing
+    - name: Начало работы
       href: live-unit-testing-start.md
-    - name: Использование Live Unit Testing в Enterprise Edition
+    - name: Настройка и использование
       href: live-unit-testing.md
-    - name: 'Функция Live Unit Testing: вопросы и ответы'
+    - name: часто задаваемые вопросы
       href: live-unit-testing-faq.md
 - name: Веб-тестирование производительности и нагрузочное тестирование
   items:
