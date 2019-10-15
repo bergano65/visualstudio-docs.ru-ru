@@ -493,37 +493,43 @@
                   displayName: performance warnings
                   href: performance-warnings.md
                 - name: CA1800. Не делайте лишних приведений
-                  href: ca1800-do-not-cast-unnecessarily.md
+                  href: ca1800.md
+                - name: CA1801. Проверьте неиспользуемые параметры
+                  href: ca1801.md
                 - name: CA1802. По возможности используйте литералы
-                  href: ca1802-use-literals-where-appropriate.md
+                  href: ca1802.md
                 - name: CA1804. Удалите неиспользуемые локальные переменные
-                  href: ca1804-remove-unused-locals.md
+                  href: ca1804.md
+                - name: CA1806. Не игнорируйте результаты метода
+                  href: ca1806.md
                 - name: CA1809. Избегайте лишних локальных переменных
-                  href: ca1809-avoid-excessive-locals.md
+                  href: ca1809.md
                 - name: CA1810. Инициализируйте статические поля ссылочных типов при объявлении
-                  href: ca1810-initialize-reference-type-static-fields-inline.md
+                  href: ca1810.md
                 - name: CA1811. Избегайте невызываемого частного кода
-                  href: ca1811-avoid-uncalled-private-code.md
+                  href: ca1811.md
                 - name: CA1812. Избегайте неиспользуемых внутренних классов
-                  href: ca1812-avoid-uninstantiated-internal-classes.md
+                  href: ca1812.md
                 - name: CA1813. Избегайте незапечатанных атрибутов
-                  href: ca1813-avoid-unsealed-attributes.md
+                  href: ca1813.md
                 - name: CA1814. Используйте массивы массивов вместо многомерных массивов
-                  href: ca1814-prefer-jagged-arrays-over-multidimensional.md
+                  href: ca1814.md
                 - name: CA1815. Переопределяйте операторы Equals и равенства для типов значений
-                  href: ca1815-override-equals-and-operator-equals-on-value-types.md
+                  href: ca1815.md
+                - name: CA1816. Вызов GC.SuppressFinalize должен осуществляться правильно
+                  href: ca1816.md
                 - name: CA1819. Свойства не должны возвращать массивы
-                  href: ca1819-properties-should-not-return-arrays.md
+                  href: ca1819.md
                 - name: 'CA1820. Проверяйте наличие пустых строк, используя длину строки'
-                  href: ca1820-test-for-empty-strings-using-string-length.md
+                  href: ca1820.md
                 - name: CA1821. Удалите пустые методы завершения
-                  href: ca1821-remove-empty-finalizers.md
+                  href: ca1821.md
                 - name: CA1822. Пометьте члены как статические
-                  href: ca1822-mark-members-as-static.md
+                  href: ca1822.md
                 - name: CA1823. Избегайте неиспользуемых частных полей
-                  href: ca1823-avoid-unused-private-fields.md
+                  href: ca1823.md
                 - name: CA1824. Помечайте сборки с помощью NeutralResourcesLanguageAttribute
-                  href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                  href: ca1824.md
                 - name: 'CA1825: Избегайте выделения массивов нулевой длины'
                   href: ca1825.md
             - name: 'Предупреждения, связанные с переносимостью'
@@ -751,11 +757,11 @@
                   displayName: usage warnings
                   href: usage-warnings.md
                 - name: CA1801. Проверьте неиспользуемые параметры
-                  href: ca1801-review-unused-parameters.md
+                  href: ca1801.md
                 - name: CA1806. Не игнорируйте результаты метода
-                  href: ca1806-do-not-ignore-method-results.md
+                  href: ca1806.md
                 - name: CA1816. Вызов GC.SuppressFinalize должен осуществляться правильно
-                  href: ca1816-call-gc-suppressfinalize-correctly.md
+                  href: ca1816.md
                 - name: CA2200. Повторно порождайте исключения для сохранения сведений стека
                   href: ca2200-rethrow-to-preserve-stack-details.md
                 - name: CA2201. Не порождайте исключения зарезервированных типов
